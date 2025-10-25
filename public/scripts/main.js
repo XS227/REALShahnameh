@@ -1,7 +1,4 @@
-const yearEl = document.querySelector('[data-year]');
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
-}
+const languageSelect = document.querySelector('[data-language-switcher]');
 
 const tokenSelectors = {
   price: document.querySelector('[data-token-price]'),
@@ -37,53 +34,576 @@ const socialSelectors = {
   link: document.querySelector('[data-dapp-social]'),
 };
 
-const formatterCurrency = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  maximumFractionDigits: 6,
-});
+const staticTextMap = {
+  brandTitle: document.querySelector('[data-i18n="brandTitle"]'),
+  languageLabel: document.querySelector('[data-i18n="languageLabel"]'),
+  tokenOverline: document.querySelector('[data-i18n="tokenOverline"]'),
+  tokenTitle: document.querySelector('[data-i18n="tokenTitle"]'),
+  tokenSummary: document.querySelector('[data-i18n="tokenSummary"]'),
+  tokenPriceLabel: document.querySelector('[data-i18n="tokenPriceLabel"]'),
+  tokenChangeLabel: document.querySelector('[data-i18n="tokenChangeLabel"]'),
+  tokenVolumeLabel: document.querySelector('[data-i18n="tokenVolumeLabel"]'),
+  tokenMarketCapLabel: document.querySelector('[data-i18n="tokenMarketCapLabel"]'),
+  tokenChartTitle: document.querySelector('[data-i18n="tokenChartTitle"]'),
+  tokenChartCaption: document.querySelector('[data-i18n="tokenChartCaption"]'),
+  tokenTransactionsTitle: document.querySelector('[data-i18n="tokenTransactionsTitle"]'),
+  tokenTransactionsCaption: document.querySelector('[data-i18n="tokenTransactionsCaption"]'),
+  tokenFooterLink: document.querySelector('[data-i18n="tokenFooterLink"]'),
+  dappOverline: document.querySelector('[data-i18n="dappOverline"]'),
+  dappTitle: document.querySelector('[data-i18n="dappTitle"]'),
+  dappSummary: document.querySelector('[data-i18n="dappSummary"]'),
+  dappRoadmapTitle: document.querySelector('[data-i18n="dappRoadmapTitle"]'),
+  dappRoadmapCaption: document.querySelector('[data-i18n="dappRoadmapCaption"]'),
+  dappInsightsTitle: document.querySelector('[data-i18n="dappInsightsTitle"]'),
+  dappSocialLink: document.querySelector('[data-i18n="dappSocialLink"]'),
+  dappFooterLink: document.querySelector('[data-i18n="dappFooterLink"]'),
+  footerRights: document.querySelector('[data-i18n="footerRights"]'),
+};
 
-const formatterPercent = new Intl.NumberFormat('en-US', {
-  style: 'percent',
-  maximumFractionDigits: 2,
-});
+const LANGUAGES = {
+  en: {
+    label: 'English',
+    dir: 'ltr',
+    locale: 'en-US',
+    strings: {
+      brandTitle: 'REAL Shahnameh',
+      languageLabel: 'Language',
+      tokenOverline: 'Live token pulse',
+      tokenTitle: 'REAL token on DYOR',
+      tokenSummary:
+        'Direct feed from DYOR keeps the REAL Shahnameh community informed about liquidity, sentiment, and velocity on TON.',
+      tokenPriceLabel: 'Price (USD)',
+      tokenChangeLabel: '24h change',
+      tokenVolumeLabel: '24h volume',
+      tokenMarketCapLabel: 'Market cap',
+      tokenUpdatedWaiting: 'Waiting for the latest DYOR block…',
+      tokenUpdatedSynced: 'Synced {{timestamp}} (DYOR)',
+      tokenUpdatedFallback: 'Synced from DYOR.',
+      tokenUpdatedError: 'Unable to reach the DYOR token feed right now.',
+      tokenDescriptionPlaceholder:
+        'DYOR metrics for the REAL token will populate here as soon as they load. The REAL Shahnameh collective keeps the narrative grounded in verifiable numbers.',
+      tokenDescriptionMissing:
+        'DYOR has not published a narrative for the REAL token. The REAL Shahnameh collective continues to monitor liquidity and governance updates.',
+      tokenDescriptionError:
+        'The REAL Shahnameh collective is retrying the DYOR feed. Refresh to attempt again.',
+      tokenChartTitle: 'Price trajectory',
+      tokenChartCaption: 'Rolling DYOR history for REAL on TON',
+      tokenChartStatusWaiting: 'Waiting for DYOR chart data…',
+      tokenChartStatusRange: 'Covering {{start}} – {{end}} (DYOR feed).',
+      tokenChartStatusEmpty: 'DYOR has not provided price history yet.',
+      tokenChartStatusError: 'Unable to render the DYOR chart right now.',
+      tokenTransactionsTitle: 'Latest transactions',
+      tokenTransactionsCaption: 'Streaming activity straight from DYOR',
+      tokenTransactionsStatusWaiting: 'Loading live flow…',
+      tokenTransactionsStatusLive: 'Live transactions pulled from DYOR.',
+      tokenTransactionsStatusEmpty: 'DYOR has not published recent REAL transactions yet.',
+      tokenTransactionsStatusError: 'Unable to load the latest REAL transactions.',
+      tokenFooterLink: 'View full token dossier on DYOR',
+      dappOverline: 'Shahnameh dossier',
+      dappTitle: 'REAL Shahnameh experience',
+      dappSummary:
+        'Every insight is curated by the REAL Shahnameh team. Data points below are streamed from DYOR’s Shahnameh profile.',
+      dappSummaryLoading: 'Loading the living chronicle…',
+      dappSummaryMissing: 'DYOR has not published a description for this dapp yet.',
+      dappSummaryError: 'The REAL Shahnameh team could not load the DYOR dapp feed. Please refresh to retry.',
+      dappRoadmapTitle: 'Season roadmap',
+      dappRoadmapCaption: 'We are between Season I and II — curated for the REAL Shahnameh community',
+      dappRoadmapLoading: 'Loading Shahnameh timeline…',
+      dappInsightsTitle: 'Key streams watched by the team',
+      dappInsightsLoading: 'Awaiting DYOR highlights…',
+      dappInsightsUnavailable: 'DYOR has not exposed this metric yet.',
+      dappSocialLink: "Explore Shahnameh's DYOR social hub",
+      dappFooterLink: 'Open Shahnameh on DYOR',
+      footerRights: '© {{year}} REAL Shahnameh. All rights reserved.',
+      usdSuffix: 'USD',
+      transactionFallback: 'Transaction',
+      timeJustNow: 'just now',
+      timeMinutesAgo: '{{minutes}}m ago',
+      timeHoursAgo: '{{hours}}h ago',
+      timeDaysAgo: '{{days}}d ago',
+      socialLabelX: 'Follow Shahnameh on X',
+      socialLabelTelegram: 'Join Shahnameh on Telegram',
+      socialLabelDiscord: 'Enter Shahnameh on Discord',
+      socialLabelWebsite: 'Visit Shahnameh website',
+      socialLabelMedium: 'Read Shahnameh updates on Medium',
+      socialLabelGeneric: 'Explore Shahnameh social feed',
+      roadmapFallbackTitle1: 'Season I — Dawn of the Epic',
+      roadmapFallbackDesc1:
+        'Opening season delivered the first playable tales and anchored REAL as the currency of heroic progression.',
+      roadmapFallbackTime1: 'Season I (complete)',
+      roadmapFallbackTitle2: 'Interlude — Between Seasons',
+      roadmapFallbackDesc2:
+        'Community quests, lore drops, and balancing updates bridge the gap as the REAL Shahnameh team curates the transition.',
+      roadmapFallbackTime2: 'Current moment',
+      roadmapFallbackTitle3: 'Season II — Ascending Legends',
+      roadmapFallbackDesc3:
+        'Season two readies fresh sagas, upgraded on-chain rewards, and deeper REAL token integrations.',
+      roadmapFallbackTime3: 'Season II (in development)',
+      insightUsers24h: 'Users 24h',
+      insightVolume24h: 'Volume 24h',
+      insightTransactions24h: 'Transactions 24h',
+      insightTVL: 'TVL',
+    },
+  },
+  fa: {
+    label: 'فارسی',
+    dir: 'rtl',
+    locale: 'fa-IR',
+    strings: {
+      brandTitle: 'REAL شاهنامه',
+      languageLabel: 'زبان',
+      tokenOverline: 'نبض لحظه‌ای توکن',
+      tokenTitle: 'توکن REAL در DYOR',
+      tokenSummary:
+        'فید مستقیم DYOR جامعه REAL شاهنامه را از نقدینگی، احساس بازار و شتاب روی TON باخبر نگه می‌دارد.',
+      tokenPriceLabel: 'قیمت (دلار)',
+      tokenChangeLabel: 'تغییر ۲۴ ساعته',
+      tokenVolumeLabel: 'حجم ۲۴ ساعته',
+      tokenMarketCapLabel: 'ارزش بازار',
+      tokenUpdatedWaiting: 'در انتظار آخرین بلاک DYOR…',
+      tokenUpdatedSynced: 'همگام‌سازی {{timestamp}} (منبع DYOR)',
+      tokenUpdatedFallback: 'از DYOR همگام‌سازی شد.',
+      tokenUpdatedError: 'در حال حاضر دسترسی به فید توکن DYOR ممکن نیست.',
+      tokenDescriptionPlaceholder:
+        'به‌محض بارگذاری داده‌ها، شاخص‌های DYOR برای توکن REAL اینجا نمایش داده می‌شود تا روایت با اعداد موثق پیش برود.',
+      tokenDescriptionMissing:
+        'DYOR هنوز روایت رسمی برای توکن REAL منتشر نکرده است. تیم REAL شاهنامه همچنان نقدینگی و حاکمیت را زیر نظر دارد.',
+      tokenDescriptionError:
+        'تیم REAL شاهنامه دوباره تلاش می‌کند فید DYOR را بازیابی کند. لطفاً صفحه را بازآوری کنید.',
+      tokenChartTitle: 'مسیر قیمت',
+      tokenChartCaption: 'تاریخچه DYOR برای REAL روی TON',
+      tokenChartStatusWaiting: 'در انتظار داده‌های نمودار DYOR…',
+      tokenChartStatusRange: 'پوشش از {{start}} تا {{end}} (منبع DYOR).',
+      tokenChartStatusEmpty: 'DYOR هنوز تاریخچه قیمتی منتشر نکرده است.',
+      tokenChartStatusError: 'نمایش نمودار DYOR ممکن نشد.',
+      tokenTransactionsTitle: 'تراکنش‌های اخیر',
+      tokenTransactionsCaption: 'جریان زنده مستقیماً از DYOR',
+      tokenTransactionsStatusWaiting: 'در حال بارگذاری جریان زنده…',
+      tokenTransactionsStatusLive: 'تراکنش‌های زنده از DYOR واکشی شد.',
+      tokenTransactionsStatusEmpty: 'DYOR هنوز تراکنش تازه‌ای برای REAL منتشر نکرده است.',
+      tokenTransactionsStatusError: 'بارگذاری تازه‌ترین تراکنش‌های REAL ممکن نشد.',
+      tokenFooterLink: 'مشاهده پرونده کامل توکن در DYOR',
+      dappOverline: 'پرونده شاهنامه',
+      dappTitle: 'تجربه REAL شاهنامه',
+      dappSummary:
+        'هر بینش توسط تیم REAL شاهنامه کیوریت شده است. داده‌های زیر از پروفایل شاهنامه در DYOR پخش می‌شود.',
+      dappSummaryLoading: 'وقایع‌نامه زنده در حال بارگذاری است…',
+      dappSummaryMissing: 'DYOR هنوز توضیحی برای این برنامه منتشر نکرده است.',
+      dappSummaryError: 'تیم REAL شاهنامه نتوانست فید dapp DYOR را بارگیری کند. لطفاً دوباره تلاش کنید.',
+      dappRoadmapTitle: 'نقشه‌راه فصل‌ها',
+      dappRoadmapCaption: 'در گذر میان فصل اول و دوم ـ برای جامعه REAL شاهنامه کیوریت شده است',
+      dappRoadmapLoading: 'زمان‌بندی شاهنامه در حال بارگذاری است…',
+      dappInsightsTitle: 'جریان‌های کلیدی زیر نظر تیم',
+      dappInsightsLoading: 'در انتظار هایلایت‌های DYOR…',
+      dappInsightsUnavailable: 'DYOR هنوز این شاخص را منتشر نکرده است.',
+      dappSocialLink: 'مرکز اجتماعی DYOR شاهنامه را ببینید',
+      dappFooterLink: 'شاهنامه را در DYOR باز کنید',
+      footerRights: '© {{year}} REAL شاهنامه. تمام حقوق محفوظ است.',
+      usdSuffix: 'دلار آمریکا',
+      transactionFallback: 'تراکنش',
+      timeJustNow: 'همین حالا',
+      timeMinutesAgo: '{{minutes}} دقیقه پیش',
+      timeHoursAgo: '{{hours}} ساعت پیش',
+      timeDaysAgo: '{{days}} روز پیش',
+      socialLabelX: 'شاهنامه را در ایکس دنبال کنید',
+      socialLabelTelegram: 'به تلگرام شاهنامه بپیوندید',
+      socialLabelDiscord: 'به دیسکورد شاهنامه وارد شوید',
+      socialLabelWebsite: 'وب‌سایت شاهنامه را ببینید',
+      socialLabelMedium: 'به‌روزرسانی‌های شاهنامه در مدیوم',
+      socialLabelGeneric: 'شبکه‌های اجتماعی شاهنامه را مرور کنید',
+      roadmapFallbackTitle1: 'فصل اول ـ طلوع حماسه',
+      roadmapFallbackDesc1:
+        'فصل نخست نخستین داستان‌های قابل بازی را عرضه کرد و REAL را به ارز پیشروی قهرمانان بدل ساخت.',
+      roadmapFallbackTime1: 'فصل اول (تکمیل‌شده)',
+      roadmapFallbackTitle2: 'میان‌پرده ـ بین فصل‌ها',
+      roadmapFallbackDesc2:
+        'ماموریت‌های جامعه، افشای لور و به‌روزرسانی‌های تعادل، پل گذار تیم REAL شاهنامه را رقم می‌زند.',
+      roadmapFallbackTime2: 'لحظه اکنون',
+      roadmapFallbackTitle3: 'فصل دوم ـ افسانه‌های اوج‌گیر',
+      roadmapFallbackDesc3:
+        'فصل دوم با داستان‌های تازه، پاداش‌های درون زنجیره ارتقا یافته و یکپارچگی عمیق‌تر REAL آماده می‌شود.',
+      roadmapFallbackTime3: 'فصل دوم (در حال توسعه)',
+      insightUsers24h: 'کاربران ۲۴ ساعته',
+      insightVolume24h: 'حجم ۲۴ ساعته',
+      insightTransactions24h: 'تراکنش‌های ۲۴ ساعته',
+      insightTVL: 'ارزش قفل‌شده',
+    },
+  },
+};
 
-const compactFormatter = new Intl.NumberFormat('en-US', {
-  notation: 'compact',
-  maximumFractionDigits: 2,
-});
-
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'short',
-  day: 'numeric',
-});
+const DEFAULT_LANGUAGE = 'en';
 
 const tokenAddress = 'EQDhq_DjQUMJqfXLP8K8J6SlOvon08XQQK0T49xon2e0xU8p';
 const tokenNetwork = 'ton';
 
 const FALLBACK_ROADMAP = [
   {
-    title: 'Season I — Dawn of the Epic',
-    description:
-      'Opening season delivered the first playable tales and anchored REAL as the currency of heroic progression.',
-    timeframe: 'Season I (complete)',
+    titleKey: 'roadmapFallbackTitle1',
+    descriptionKey: 'roadmapFallbackDesc1',
+    timeframeKey: 'roadmapFallbackTime1',
     state: 'complete',
   },
   {
-    title: 'Interlude — Between Seasons',
-    description:
-      'Community quests, lore drops, and balancing updates bridge the gap as Khabat Setaei curates the transition.',
-    timeframe: 'Current moment',
+    titleKey: 'roadmapFallbackTitle2',
+    descriptionKey: 'roadmapFallbackDesc2',
+    timeframeKey: 'roadmapFallbackTime2',
     state: 'current',
   },
   {
-    title: 'Season II — Ascending Legends',
-    description:
-      'Season two readies fresh sagas, upgraded on-chain rewards, and deeper REAL token integrations.',
-    timeframe: 'Season II (in development)',
+    titleKey: 'roadmapFallbackTitle3',
+    descriptionKey: 'roadmapFallbackDesc3',
+    timeframeKey: 'roadmapFallbackTime3',
     state: 'upcoming',
   },
 ];
+
+let currentLanguage = DEFAULT_LANGUAGE;
+let formatterCurrency;
+let formatterPercent;
+let compactFormatter;
+let dateFormatter;
+let dateTimeFormatter;
+let integerFormatter;
+
+let cachedTokenEntry = null;
+let cachedTokenHistory = null;
+let cachedTransactions = null;
+let cachedDappEntry = null;
+let cachedDappTags = null;
+let cachedRoadmapItems = null;
+let cachedInsights = null;
+let cachedSocialLink = null;
+
+let tokenUpdatedState = { type: 'waiting' };
+let chartStatusState = { type: 'waiting' };
+let transactionStatusState = { type: 'waiting' };
+let tokenDescriptionState = { type: 'placeholder', content: null };
+let dappSummaryState = { type: 'loading', content: null };
+let insightsState = 'loading';
+
+function getLanguageConfig(language) {
+  return LANGUAGES[language] ?? LANGUAGES[DEFAULT_LANGUAGE];
+}
+
+function configureFormatters(locale) {
+  formatterCurrency = new Intl.NumberFormat(locale, {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 6,
+  });
+
+  formatterPercent = new Intl.NumberFormat(locale, {
+    style: 'percent',
+    maximumFractionDigits: 2,
+  });
+
+  compactFormatter = new Intl.NumberFormat(locale, {
+    notation: 'compact',
+    maximumFractionDigits: 2,
+  });
+
+  dateFormatter = new Intl.DateTimeFormat(locale, {
+    month: 'short',
+    day: 'numeric',
+  });
+
+  dateTimeFormatter = new Intl.DateTimeFormat(locale, {
+    dateStyle: 'medium',
+    timeStyle: 'short',
+  });
+
+  integerFormatter = new Intl.NumberFormat(locale, {
+    maximumFractionDigits: 0,
+  });
+}
+
+function formatNumber(value) {
+  if (value === undefined || value === null || Number.isNaN(value)) return '';
+  try {
+    return integerFormatter ? integerFormatter.format(value) : String(value);
+  } catch (error) {
+    return String(value);
+  }
+}
+
+function translate(key, params) {
+  const config = getLanguageConfig(currentLanguage);
+  const fallback = LANGUAGES[DEFAULT_LANGUAGE];
+  let template = config.strings[key];
+  if (template === undefined) {
+    template = fallback?.strings?.[key];
+  }
+  if (template === undefined) {
+    return key;
+  }
+  if (typeof template === 'function') {
+    return template(params ?? {});
+  }
+  if (!params) {
+    return template;
+  }
+  return template.replace(/{{\s*(\w+)\s*}}/g, (_, token) => {
+    const value = params[token];
+    return value === undefined || value === null ? '' : String(value);
+  });
+}
+
+function applyStaticText() {
+  Object.entries(staticTextMap).forEach(([key, node]) => {
+    if (!node) return;
+    if (key === 'footerRights') {
+      const year = formatNumber(new Date().getFullYear());
+      node.textContent = translate(key, { year });
+      return;
+    }
+    node.textContent = translate(key);
+  });
+}
+
+function updateDocumentLanguage(language) {
+  const config = getLanguageConfig(language);
+  document.documentElement.lang = language;
+  document.documentElement.dir = config.dir ?? 'ltr';
+}
+
+function updateTokenUpdatedText() {
+  if (!tokenSelectors.updated) return;
+  if (tokenUpdatedState.type === 'synced' && tokenUpdatedState.timestamp) {
+    const formatted = dateTimeFormatter.format(new Date(tokenUpdatedState.timestamp));
+    tokenSelectors.updated.textContent = translate('tokenUpdatedSynced', { timestamp: formatted });
+    return;
+  }
+  if (tokenUpdatedState.type === 'fallback') {
+    tokenSelectors.updated.textContent = translate('tokenUpdatedFallback');
+    return;
+  }
+  if (tokenUpdatedState.type === 'error') {
+    tokenSelectors.updated.textContent = translate('tokenUpdatedError');
+    return;
+  }
+  tokenSelectors.updated.textContent = translate('tokenUpdatedWaiting');
+}
+
+function updateChartStatusText() {
+  if (!chartSelectors.status) return;
+  if (chartStatusState.type === 'range' && chartStatusState.start && chartStatusState.end) {
+    const start = dateFormatter.format(new Date(chartStatusState.start));
+    const end = dateFormatter.format(new Date(chartStatusState.end));
+    chartSelectors.status.textContent = translate('tokenChartStatusRange', { start, end });
+    chartSelectors.status.hidden = false;
+    return;
+  }
+  if (chartStatusState.type === 'empty') {
+    chartSelectors.status.textContent = translate('tokenChartStatusEmpty');
+    chartSelectors.status.hidden = false;
+    return;
+  }
+  if (chartStatusState.type === 'error') {
+    chartSelectors.status.textContent = translate('tokenChartStatusError');
+    chartSelectors.status.hidden = false;
+    return;
+  }
+  chartSelectors.status.textContent = translate('tokenChartStatusWaiting');
+  chartSelectors.status.hidden = false;
+}
+
+function updateTransactionStatusText() {
+  if (!transactionSelectors.status) return;
+  if (transactionStatusState.type === 'live') {
+    transactionSelectors.status.textContent = translate('tokenTransactionsStatusLive');
+    transactionSelectors.status.hidden = false;
+    return;
+  }
+  if (transactionStatusState.type === 'empty') {
+    transactionSelectors.status.textContent = translate('tokenTransactionsStatusEmpty');
+    transactionSelectors.status.hidden = false;
+    return;
+  }
+  if (transactionStatusState.type === 'error') {
+    transactionSelectors.status.textContent = translate('tokenTransactionsStatusError');
+    transactionSelectors.status.hidden = false;
+    return;
+  }
+  transactionSelectors.status.textContent = translate('tokenTransactionsStatusWaiting');
+  transactionSelectors.status.hidden = false;
+}
+
+function applyLanguage(language) {
+  const config = getLanguageConfig(language);
+  currentLanguage = language in LANGUAGES ? language : DEFAULT_LANGUAGE;
+  if (languageSelect && languageSelect.value !== currentLanguage) {
+    languageSelect.value = currentLanguage;
+  }
+  updateDocumentLanguage(currentLanguage);
+  configureFormatters(config.locale);
+  applyStaticText();
+  updateTokenUpdatedText();
+  updateChartStatusText();
+  updateTransactionStatusText();
+  renderTokenOverview(cachedTokenEntry);
+  updateTokenDescription();
+  renderTokenChart(cachedTokenHistory);
+  renderTransactions(cachedTransactions);
+  updateDappSummary();
+  renderDappTags(cachedDappTags);
+  renderInsights(cachedInsights);
+  renderRoadmap(cachedRoadmapItems);
+  renderSocialLink(cachedSocialLink);
+  try {
+    localStorage.setItem('preferred-language', currentLanguage);
+  } catch (error) {
+    // ignore storage errors
+  }
+}
+
+function updateTokenDescription() {
+  if (!tokenSelectors.description) return;
+  let html;
+  if (tokenDescriptionState.type === 'content' && tokenDescriptionState.content) {
+    html = `<p>${tokenDescriptionState.content}</p>`;
+  } else if (tokenDescriptionState.type === 'missing') {
+    html = `<p>${translate('tokenDescriptionMissing')}</p>`;
+  } else if (tokenDescriptionState.type === 'error') {
+    html = `<p>${translate('tokenDescriptionError')}</p>`;
+  } else {
+    html = `<p>${translate('tokenDescriptionPlaceholder')}</p>`;
+  }
+  tokenSelectors.description.innerHTML = html;
+}
+
+function renderTokenOverview(entry) {
+  cachedTokenEntry = entry ?? null;
+
+  if (!entry) {
+    setTextContent(tokenSelectors.price, '—');
+    setTextContent(tokenSelectors.change, '—');
+    setTextContent(tokenSelectors.volume, '—');
+    setTextContent(tokenSelectors.cap, '—');
+    if (tokenDescriptionState.type !== 'error') {
+      tokenDescriptionState = { type: 'placeholder', content: null };
+    }
+    return;
+  }
+
+  const price = Number(
+    resolveTokenField(entry, [
+      'price.usd',
+      'priceUsd',
+      'price.priceUsd',
+      'marketData.priceUsd',
+      'metrics.price.usd',
+    ]),
+  );
+
+  const change = Number(
+    resolveTokenField(entry, [
+      'price.change24hPercent',
+      'priceChange24hPercent',
+      'change24hPercent',
+      'metrics.change24hPercent',
+    ]),
+  );
+
+  const volume = Number(
+    resolveTokenField(entry, [
+      'volume.usd24h',
+      'volume24h.usd',
+      'volume24hUsd',
+      'metrics.volume24h.usd',
+    ]),
+  );
+
+  const marketCap = Number(
+    resolveTokenField(entry, [
+      'marketCap.usd',
+      'marketcap.usd',
+      'market_cap.usd',
+      'metrics.marketCap.usd',
+    ]),
+  );
+
+  setTextContent(tokenSelectors.price, formatCurrency(price));
+  setTextContent(tokenSelectors.change, formatPercent(change));
+  setTextContent(tokenSelectors.volume, formatCompact(volume));
+  setTextContent(tokenSelectors.cap, formatCompact(marketCap));
+
+  const rawDescription = resolveTokenField(entry, ['description', 'summary', 'details', 'about']);
+  const description = typeof rawDescription === 'string' ? rawDescription.trim() : '';
+
+  if (description) {
+    tokenDescriptionState = { type: 'content', content: description };
+  } else if (tokenDescriptionState.type !== 'error') {
+    tokenDescriptionState = { type: 'missing', content: null };
+  }
+}
+
+function updateDappSummary() {
+  if (!dappSelectors.summary) return;
+  if (dappSummaryState.type === 'content' && dappSummaryState.content) {
+    dappSelectors.summary.textContent = dappSummaryState.content;
+  } else if (dappSummaryState.type === 'missing') {
+    dappSelectors.summary.textContent = translate('dappSummaryMissing');
+  } else if (dappSummaryState.type === 'error') {
+    dappSelectors.summary.textContent = translate('dappSummaryError');
+  } else {
+    dappSelectors.summary.textContent = translate('dappSummaryLoading');
+  }
+}
+
+function renderDappTags(tags) {
+  cachedDappTags = Array.isArray(tags) && tags.length ? tags.slice(0, 6) : null;
+  if (!dappSelectors.tags) return;
+  dappSelectors.tags.innerHTML = '';
+  if (cachedDappTags) {
+    cachedDappTags.forEach((tag) => {
+      const li = document.createElement('li');
+      li.textContent = tag;
+      dappSelectors.tags.appendChild(li);
+    });
+  }
+}
+
+function renderInsights(insights) {
+  if (Array.isArray(insights)) {
+    cachedInsights = insights;
+    insightsState = insights.length ? 'ready' : 'empty';
+  } else if (insights === null) {
+    cachedInsights = null;
+    insightsState = 'loading';
+  }
+
+  if (!dappSelectors.insights) return;
+  dappSelectors.insights.innerHTML = '';
+
+  if (insightsState === 'loading') {
+    const li = document.createElement('li');
+    li.textContent = translate('dappInsightsLoading');
+    dappSelectors.insights.appendChild(li);
+    return;
+  }
+
+  if (insightsState === 'empty' || !cachedInsights || !cachedInsights.length) {
+    buildList(dappSelectors.insights, null);
+    return;
+  }
+
+  const formatted = cachedInsights.map((item) => {
+    let valueText = '';
+    if (item.format === 'compactCurrency') {
+      valueText = formatCompact(item.value);
+    } else if (item.format === 'number') {
+      valueText = formatNumber(Math.round(item.value));
+    } else if (item.format === 'compact') {
+      valueText = compactFormatter.format(item.value);
+    } else if (item.value !== undefined && item.value !== null) {
+      valueText = String(item.value);
+    }
+    const displayValue = valueText ? valueText : '—';
+    return `${translate(item.key)}: ${displayValue}`;
+  });
+
+  buildList(dappSelectors.insights, formatted);
+}
 
 function resolveTokenField(entry, candidates) {
   for (const key of candidates) {
@@ -104,7 +624,8 @@ function formatCurrency(value) {
   if (typeof value !== 'number' || Number.isNaN(value)) return '—';
   if (value === 0) return formatterCurrency.format(0);
   if (Math.abs(value) < 0.000001) {
-    return `${value.toExponential(2)} USD`;
+    const suffix = translate('usdSuffix');
+    return `${value.toExponential(2)} ${suffix}`.trim();
   }
   return formatterCurrency.format(value);
 }
@@ -116,7 +637,8 @@ function formatPercent(value) {
 
 function formatCompact(value, suffix = 'USD') {
   if (typeof value !== 'number' || Number.isNaN(value)) return '—';
-  return `${compactFormatter.format(value)} ${suffix}`;
+  const translatedSuffix = suffix === 'USD' ? translate('usdSuffix') : suffix;
+  return translatedSuffix ? `${compactFormatter.format(value)} ${translatedSuffix}` : compactFormatter.format(value);
 }
 
 function setTextContent(node, text) {
@@ -314,22 +836,33 @@ function drawPriceChart(canvas, points) {
 
 function renderTokenChart(points) {
   if (!chartSelectors.canvas) return;
+
+  if (!Array.isArray(points)) {
+    cachedTokenHistory = null;
+    chartStatusState = { type: 'waiting' };
+    updateChartStatusText();
+    drawPriceChart(chartSelectors.canvas, []);
+    return;
+  }
+
+  cachedTokenHistory = points;
   drawPriceChart(chartSelectors.canvas, points);
 
-  if (chartSelectors.status) {
-    if (points.length) {
-      const start = new Date(points[0].time);
-      const end = new Date(points[points.length - 1].time);
-      chartSelectors.status.textContent = `Covering ${dateFormatter.format(start)} – ${dateFormatter.format(end)} (DYOR feed).`;
-      setHidden(chartSelectors.status, false);
-    } else {
-      chartSelectors.status.textContent = 'DYOR has not provided price history yet.';
-      setHidden(chartSelectors.status, false);
-    }
+  if (points.length) {
+    chartStatusState = {
+      type: 'range',
+      start: points[0].time,
+      end: points[points.length - 1].time,
+    };
+  } else {
+    chartStatusState = { type: 'empty' };
   }
+  updateChartStatusText();
 }
 
 async function hydrateTokenChart(entry) {
+  chartStatusState = { type: 'waiting' };
+  updateChartStatusText();
   try {
     const localHistory = extractPriceHistory(entry);
     if (localHistory.length) {
@@ -392,10 +925,8 @@ async function hydrateTokenChart(entry) {
     renderTokenChart([]);
   } catch (error) {
     console.error(error);
-    if (chartSelectors.status) {
-      chartSelectors.status.textContent = 'Unable to render the DYOR chart right now.';
-      setHidden(chartSelectors.status, false);
-    }
+    chartStatusState = { type: 'error' };
+    updateChartStatusText();
   }
 }
 
@@ -462,7 +993,7 @@ function formatAddress(address) {
 }
 
 function formatHash(hash) {
-  if (!hash) return 'Transaction';
+  if (!hash) return translate('transactionFallback');
   if (hash.length <= 16) return hash;
   return `${hash.slice(0, 8)}…${hash.slice(-6)}`;
 }
@@ -473,32 +1004,30 @@ function formatTimeAgo(timestamp) {
   const diff = now - timestamp;
   if (diff < 0) return '';
   const minutes = Math.floor(diff / 60000);
-  if (minutes < 1) return 'just now';
-  if (minutes < 60) return `${minutes}m ago`;
+  if (minutes < 1) return translate('timeJustNow');
+  if (minutes < 60) return translate('timeMinutesAgo', { minutes: formatNumber(minutes) });
   const hours = Math.floor(minutes / 60);
-  if (hours < 24) return `${hours}h ago`;
+  if (hours < 24) return translate('timeHoursAgo', { hours: formatNumber(hours) });
   const days = Math.floor(hours / 24);
-  return `${days}d ago`;
+  return translate('timeDaysAgo', { days: formatNumber(days) });
 }
 
 function renderTransactions(transactions) {
+  const items = Array.isArray(transactions) ? transactions : [];
+  cachedTransactions = Array.isArray(transactions) ? transactions : null;
   if (!transactionSelectors.list) return;
   transactionSelectors.list.innerHTML = '';
 
-  if (!transactions.length) {
-    if (transactionSelectors.status) {
-      transactionSelectors.status.textContent = 'DYOR has not published recent REAL transactions yet.';
-      setHidden(transactionSelectors.status, false);
-    }
+  if (!items.length) {
+    transactionStatusState = Array.isArray(transactions) ? 'empty' : 'waiting';
+    updateTransactionStatusText();
     return;
   }
 
-  if (transactionSelectors.status) {
-    transactionSelectors.status.textContent = 'Live transactions pulled from DYOR.';
-    setHidden(transactionSelectors.status, false);
-  }
+  transactionStatusState = 'live';
+  updateTransactionStatusText();
 
-  transactions.forEach((transaction) => {
+  items.forEach((transaction) => {
     const li = document.createElement('li');
     li.className = 'transaction-item';
 
@@ -529,6 +1058,8 @@ function renderTransactions(transactions) {
 }
 
 async function hydrateTokenTransactions(entry) {
+  transactionStatusState = 'waiting';
+  updateTransactionStatusText();
   try {
     const localTransactions = extractTransactions(entry);
     if (localTransactions.length) {
@@ -591,10 +1122,8 @@ async function hydrateTokenTransactions(entry) {
     renderTransactions([]);
   } catch (error) {
     console.error(error);
-    if (transactionSelectors.status) {
-      transactionSelectors.status.textContent = 'Unable to load the latest REAL transactions.';
-      setHidden(transactionSelectors.status, false);
-    }
+    transactionStatusState = 'error';
+    updateTransactionStatusText();
   }
 }
 
@@ -603,7 +1132,7 @@ function buildList(list, items) {
   list.innerHTML = '';
   if (!items || !items.length) {
     const li = document.createElement('li');
-    li.textContent = 'DYOR has not exposed this metric yet.';
+    li.textContent = translate('dappInsightsUnavailable');
     list.appendChild(li);
     return;
   }
@@ -668,7 +1197,16 @@ function extractRoadmap(entry) {
 
 function renderRoadmap(items) {
   if (!roadmapSelectors.list) return;
-  const roadmap = items && items.length ? items : FALLBACK_ROADMAP;
+  const hasItems = Array.isArray(items) && items.length;
+  cachedRoadmapItems = hasItems ? items : null;
+  const roadmap = hasItems
+    ? items
+    : FALLBACK_ROADMAP.map((item) => ({
+        title: translate(item.titleKey),
+        description: translate(item.descriptionKey),
+        timeframe: translate(item.timeframeKey),
+        state: item.state,
+      }));
 
   roadmapSelectors.list.innerHTML = '';
   roadmap.forEach((item) => {
@@ -697,14 +1235,14 @@ function renderRoadmap(items) {
   });
 }
 
-function labelForSocialKey(key) {
+function resolveSocialLabelKey(key) {
   if (!key) return null;
   const value = key.toLowerCase();
-  if (value.includes('twitter') || value === 'x') return "Follow Shahnameh on X";
-  if (value.includes('telegram')) return 'Join Shahnameh on Telegram';
-  if (value.includes('discord')) return 'Enter Shahnameh on Discord';
-  if (value.includes('website') || value.includes('site')) return 'Visit Shahnameh website';
-  if (value.includes('medium')) return 'Read Shahnameh updates on Medium';
+  if (value.includes('twitter') || value === 'x') return 'socialLabelX';
+  if (value.includes('telegram')) return 'socialLabelTelegram';
+  if (value.includes('discord')) return 'socialLabelDiscord';
+  if (value.includes('website') || value.includes('site')) return 'socialLabelWebsite';
+  if (value.includes('medium')) return 'socialLabelMedium';
   return null;
 }
 
@@ -719,7 +1257,7 @@ function extractPrimarySocial(entry) {
       if (typeof value === 'string' && value.trim()) {
         return {
           url: value,
-          label: labelForSocialKey(key) ?? 'Explore Shahnameh social feed',
+          labelKey: resolveSocialLabelKey(key) ?? 'socialLabelGeneric',
         };
       }
     }
@@ -740,7 +1278,7 @@ function extractPrimarySocial(entry) {
       if (typeof item === 'string' && item.trim()) {
         return {
           url: item,
-          label: 'Explore Shahnameh social feed',
+          labelKey: 'socialLabelGeneric',
         };
       }
       if (typeof item === 'object') {
@@ -749,7 +1287,8 @@ function extractPrimarySocial(entry) {
           const key = (item.type ?? item.platform ?? item.label ?? '').toString();
           return {
             url,
-            label: labelForSocialKey(key) ?? (item.label || 'Explore Shahnameh social feed'),
+            labelKey: resolveSocialLabelKey(key) ?? null,
+            label: typeof item.label === 'string' ? item.label : null,
           };
         }
       }
@@ -759,20 +1298,23 @@ function extractPrimarySocial(entry) {
   return null;
 }
 
-function hydrateSocialLink(entry) {
+function renderSocialLink(social) {
+  const fallback = { url: 'https://dyor.io/dapps/games/shahnameh', labelKey: 'dappSocialLink' };
+  cachedSocialLink = social ?? null;
+  const target = social ?? fallback;
+
   if (!socialSelectors.link) return;
-  const social = extractPrimarySocial(entry);
-  if (social) {
-    socialSelectors.link.href = social.url;
-    socialSelectors.link.textContent = social.label;
+  socialSelectors.link.href = target.url;
+  const label = target.labelKey ? translate(target.labelKey) : target.label ?? translate('dappSocialLink');
+  socialSelectors.link.textContent = label;
+  if (socialSelectors.container) {
     setHidden(socialSelectors.container, false);
-  } else {
-    socialSelectors.link.href = 'https://dyor.io/dapps/games/shahnameh';
-    socialSelectors.link.textContent = "Explore Shahnameh's DYOR social hub";
-    if (socialSelectors.container) {
-      setHidden(socialSelectors.container, false);
-    }
   }
+}
+
+function hydrateSocialLink(entry) {
+  const social = extractPrimarySocial(entry);
+  renderSocialLink(social);
 }
 
 async function fetchTokenData() {
@@ -790,90 +1332,32 @@ async function fetchTokenData() {
     if (!entry) {
       throw new Error('Token payload missing');
     }
-
-    const price = Number(
-      resolveTokenField(entry, [
-        'price.usd',
-        'priceUsd',
-        'price.priceUsd',
-        'marketData.priceUsd',
-        'metrics.price.usd',
-      ]),
-    );
-
-    const change = Number(
-      resolveTokenField(entry, [
-        'price.change24hPercent',
-        'priceChange24hPercent',
-        'change24hPercent',
-        'metrics.change24hPercent',
-      ]),
-    );
-
-    const volume = Number(
-      resolveTokenField(entry, [
-        'volume.usd24h',
-        'volume24h.usd',
-        'volume24hUsd',
-        'metrics.volume24h.usd',
-      ]),
-    );
-
-    const marketCap = Number(
-      resolveTokenField(entry, [
-        'marketCap.usd',
-        'marketcap.usd',
-        'market_cap.usd',
-        'metrics.marketCap.usd',
-      ]),
-    );
-
-    const description =
-      resolveTokenField(entry, ['description', 'summary', 'details', 'about']) ??
-      'DYOR has not published a narrative for the REAL token. Khabat Setaei continues to monitor liquidity and governance updates.';
+    renderTokenOverview(entry);
+    updateTokenDescription();
 
     const updatedAt = resolveTokenField(entry, ['updatedAt', 'lastUpdated', 'timestamp']);
-
-    setTextContent(tokenSelectors.price, formatCurrency(price));
-    setTextContent(tokenSelectors.change, formatPercent(change));
-    setTextContent(tokenSelectors.volume, formatCompact(volume));
-    setTextContent(tokenSelectors.cap, formatCompact(marketCap));
-
-    if (tokenSelectors.description) {
-      tokenSelectors.description.innerHTML = `<p>${description}</p>`;
+    const parsedUpdated = parseTime(updatedAt);
+    if (parsedUpdated) {
+      tokenUpdatedState = { type: 'synced', timestamp: parsedUpdated };
+    } else {
+      tokenUpdatedState = { type: 'fallback' };
     }
-
-    if (tokenSelectors.updated) {
-      if (updatedAt) {
-        try {
-          const date = new Date(updatedAt);
-          const formatted = Intl.DateTimeFormat('en-US', {
-            dateStyle: 'medium',
-            timeStyle: 'short',
-          }).format(date);
-          tokenSelectors.updated.textContent = `Synced ${formatted} (DYOR)`;
-        } catch (error) {
-          tokenSelectors.updated.textContent = 'Synced from DYOR.';
-        }
-      } else {
-        tokenSelectors.updated.textContent = 'Synced from DYOR.';
-      }
-    }
+    updateTokenUpdatedText();
 
     return entry;
   } catch (error) {
     console.error(error);
-    if (tokenSelectors.updated) {
-      tokenSelectors.updated.textContent = 'Unable to reach the DYOR token feed right now.';
-    }
-    if (tokenSelectors.description) {
-      tokenSelectors.description.innerHTML = '<p>Khabat Setaei is retrying the DYOR feed. Refresh to attempt again.</p>';
-    }
+    tokenUpdatedState = { type: 'error' };
+    tokenDescriptionState = { type: 'error', content: null };
+    updateTokenUpdatedText();
+    updateTokenDescription();
     return null;
   }
 }
 
 async function fetchDappData() {
+  dappSummaryState = { type: 'loading', content: null };
+  updateDappSummary();
   let entry = null;
   try {
     const payload = await requestTrpc('dapp.bySlug', {
@@ -889,48 +1373,59 @@ async function fetchDappData() {
       throw new Error('Dapp payload missing');
     }
 
-    const summary =
-      entry?.description ?? entry?.summary ?? entry?.about ?? 'DYOR has not published a description for this dapp yet.';
+    cachedDappEntry = entry;
+
+    const summary = entry?.description ?? entry?.summary ?? entry?.about ?? null;
+    if (summary && typeof summary === 'string') {
+      dappSummaryState = { type: 'content', content: summary };
+    } else {
+      dappSummaryState = { type: 'missing', content: null };
+    }
+    updateDappSummary();
 
     const tags = [
       ...resolveArray(entry?.categories),
       ...resolveArray(entry?.chains ?? entry?.networks),
     ];
+    renderDappTags(tags);
 
     const insightCandidates = [
-      { label: 'Users 24h', value: entry?.metrics?.users24h ?? entry?.users24h },
-      { label: 'Volume 24h', value: entry?.metrics?.volume24hUsd ?? entry?.volume24hUsd },
-      { label: 'Transactions 24h', value: entry?.metrics?.tx24h ?? entry?.transactions24h },
-      { label: 'TVL', value: entry?.metrics?.tvlUsd ?? entry?.tvlUsd },
-    ];
+      { key: 'insightUsers24h', value: entry?.metrics?.users24h ?? entry?.users24h, format: 'number' },
+      { key: 'insightVolume24h', value: entry?.metrics?.volume24hUsd ?? entry?.volume24hUsd, format: 'compactCurrency' },
+      { key: 'insightTransactions24h', value: entry?.metrics?.tx24h ?? entry?.transactions24h, format: 'number' },
+      { key: 'insightTVL', value: entry?.metrics?.tvlUsd ?? entry?.tvlUsd, format: 'compactCurrency' },
+    ].filter((item) => typeof item.value === 'number' && !Number.isNaN(item.value));
 
-    const insights = insightCandidates
-      .filter((item) => typeof item.value === 'number' && !Number.isNaN(item.value))
-      .map((item) => `${item.label}: ${formatCompact(item.value)}`);
-
-    setTextContent(dappSelectors.summary, summary);
-
-    if (dappSelectors.tags) {
-      dappSelectors.tags.innerHTML = '';
-      if (tags.length) {
-        tags.slice(0, 6).forEach((tag) => {
-          const li = document.createElement('li');
-          li.textContent = tag;
-          dappSelectors.tags.appendChild(li);
-        });
-      }
-    }
-
-    buildList(dappSelectors.insights, insights.length ? insights : null);
+    renderInsights(insightCandidates.length ? insightCandidates : []);
   } catch (error) {
     console.error(error);
-    setTextContent(dappSelectors.summary, 'Setaei could not load the DYOR dapp feed. Please refresh to retry.');
-    buildList(dappSelectors.insights, null);
+    dappSummaryState = { type: 'error', content: null };
+    updateDappSummary();
+    renderDappTags(null);
+    renderInsights([]);
+    cachedDappEntry = null;
   }
 
   renderRoadmap(entry ? extractRoadmap(entry) : null);
   hydrateSocialLink(entry);
 }
+
+(function initialiseLanguage() {
+  let stored = null;
+  try {
+    stored = localStorage.getItem('preferred-language');
+  } catch (error) {
+    stored = null;
+  }
+  const initialLanguage = stored && stored in LANGUAGES ? stored : DEFAULT_LANGUAGE;
+  if (languageSelect) {
+    languageSelect.value = initialLanguage;
+    languageSelect.addEventListener('change', (event) => {
+      applyLanguage(event.target.value);
+    });
+  }
+  applyLanguage(initialLanguage);
+})();
 
 (async () => {
   const tokenEntry = await fetchTokenData();
