@@ -3,92 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REAL Shahnameh — Khabat Setaei</title>
+    <title>REAL Shahnameh — Live DYOR insights</title>
     <meta
       name="description"
-      content="Live DYOR insights for the REAL token and Shahnameh dapp, curated by Khabat Setaei."
+      content="Live DYOR insights for the REAL token and Shahnameh dapp curated by the REAL Shahnameh community."
     />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <div class="branding">
-          <span class="brand-title">REAL Shahnameh</span>
-          <span class="brand-author">Only Khabat Setaei</span>
+        <div class="site-header__row">
+          <span class="brand-title" data-i18n="brandTitle">REAL Shahnameh</span>
+          <div class="language-switcher">
+            <label class="language-switcher__label" for="language-select" data-i18n="languageLabel">Language</label>
+            <select id="language-select" class="language-switcher__select" data-language-switcher>
+              <option value="en">English</option>
+              <option value="fa">فارسی</option>
+            </select>
+          </div>
         </div>
-        <p class="brand-subtitle">Monochrome intelligence. All copyrights belong to Setaei.</p>
       </header>
 
       <main class="split-layout">
         <section class="panel panel--token" id="token">
           <header class="panel-heading">
-            <p class="panel-overline">Live token pulse</p>
-            <h1 class="panel-title">REAL token on DYOR</h1>
-            <p class="panel-summary">
-              Direct feed from DYOR keeps Khabat Setaei informed about liquidity, sentiment, and velocity on TON.
+            <p class="panel-overline" data-i18n="tokenOverline">Live token pulse</p>
+            <h1 class="panel-title" data-i18n="tokenTitle">REAL token on DYOR</h1>
+            <p class="panel-summary" data-i18n="tokenSummary">
+              Direct feed from DYOR keeps the REAL Shahnameh community informed about liquidity, sentiment, and velocity on TON.
             </p>
           </header>
           <dl class="token-stats">
             <div>
-              <dt>Price (USD)</dt>
+              <dt data-i18n="tokenPriceLabel">Price (USD)</dt>
               <dd data-token-price>—</dd>
             </div>
             <div>
-              <dt>24h change</dt>
+              <dt data-i18n="tokenChangeLabel">24h change</dt>
               <dd data-token-change>—</dd>
             </div>
             <div>
-              <dt>24h volume</dt>
+              <dt data-i18n="tokenVolumeLabel">24h volume</dt>
               <dd data-token-volume>—</dd>
             </div>
             <div>
-              <dt>Market cap</dt>
+              <dt data-i18n="tokenMarketCapLabel">Market cap</dt>
               <dd data-token-cap>—</dd>
             </div>
           </dl>
-          <p class="token-updated" data-token-updated>Waiting for the latest DYOR block…</p>
+          <p class="token-updated" data-token-updated data-i18n="tokenUpdatedWaiting">Waiting for the latest DYOR block…</p>
           <article class="token-description" data-token-description>
-            <p>
-              DYOR metrics for the REAL token will populate here as soon as they load. Khabat Setaei keeps the
+            <p data-i18n="tokenDescriptionPlaceholder">
+              DYOR metrics for the REAL token will populate here as soon as they load. The REAL Shahnameh collective keeps the
               narrative grounded in verifiable numbers.
             </p>
           </article>
           <section class="token-chart" aria-label="REAL price performance">
             <div class="token-chart__header">
-              <h3>Price trajectory</h3>
-              <p class="token-chart__caption">Rolling DYOR history for REAL on TON</p>
+              <h3 data-i18n="tokenChartTitle">Price trajectory</h3>
+              <p class="token-chart__caption" data-i18n="tokenChartCaption">Rolling DYOR history for REAL on TON</p>
             </div>
             <div class="token-chart__surface">
               <canvas data-token-chart width="640" height="320" role="img" aria-label="REAL price chart"></canvas>
-              <p class="token-chart__status" data-token-chart-status>Waiting for DYOR chart data…</p>
+              <p class="token-chart__status" data-token-chart-status data-i18n="tokenChartStatusWaiting">
+                Waiting for DYOR chart data…
+              </p>
             </div>
           </section>
           <section class="token-transactions" aria-label="Latest REAL transactions">
             <div class="token-transactions__header">
-              <h3>Latest transactions</h3>
-              <p class="token-transactions__caption">Streaming activity straight from DYOR</p>
+              <h3 data-i18n="tokenTransactionsTitle">Latest transactions</h3>
+              <p class="token-transactions__caption" data-i18n="tokenTransactionsCaption">
+                Streaming activity straight from DYOR
+              </p>
             </div>
-            <p class="token-transactions__status" data-token-transactions-status>Loading live flow…</p>
+            <p class="token-transactions__status" data-token-transactions-status data-i18n="tokenTransactionsStatusWaiting">
+              Loading live flow…
+            </p>
             <ul class="transaction-list" data-token-transactions></ul>
           </section>
           <footer class="panel-footer">
-            <a class="panel-link" href="https://dyor.io/token/EQDhq_DjQUMJqfXLP8K8J6SlOvon08XQQK0T49xon2e0xU8p" target="_blank" rel="noreferrer">
-              View full token dossier on DYOR
+            <a
+              class="panel-link"
+              href="https://dyor.io/token/EQDhq_DjQUMJqfXLP8K8J6SlOvon08XQQK0T49xon2e0xU8p"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span data-i18n="tokenFooterLink">View full token dossier on DYOR</span>
             </a>
           </footer>
         </section>
 
         <section class="panel panel--dapp" id="dapp">
           <header class="panel-heading">
-            <p class="panel-overline">Shahnameh dossier</p>
-            <h2 class="panel-title">REAL Shahnameh experience</h2>
-            <p class="panel-summary">
-              Every insight is authored by Khabat Setaei. Data points below are streamed from DYOR’s Shahnameh profile.
+            <p class="panel-overline" data-i18n="dappOverline">Shahnameh dossier</p>
+            <h2 class="panel-title" data-i18n="dappTitle">REAL Shahnameh experience</h2>
+            <p class="panel-summary" data-i18n="dappSummary">
+              Every insight is curated by the REAL Shahnameh team. Data points below are streamed from DYOR’s Shahnameh profile.
             </p>
           </header>
           <div class="dapp-meta">
-            <p class="dapp-summary" data-dapp-summary>Loading the living chronicle…</p>
+            <p class="dapp-summary" data-dapp-summary data-i18n="dappSummaryLoading">Loading the living chronicle…</p>
             <ul class="dapp-tags" data-dapp-tags></ul>
           </div>
           <div class="dapp-embed">
@@ -104,34 +120,36 @@
           </div>
           <section class="dapp-roadmap" aria-label="Shahnameh timeline">
             <div class="dapp-roadmap__header">
-              <h3>Season roadmap</h3>
-              <p class="dapp-roadmap__caption">We are between Season I and II — curated by Khabat Setaei</p>
+              <h3 data-i18n="dappRoadmapTitle">Season roadmap</h3>
+              <p class="dapp-roadmap__caption" data-i18n="dappRoadmapCaption">
+                We are between Season I and II — curated for the REAL Shahnameh community
+              </p>
             </div>
             <ol class="roadmap" data-dapp-roadmap>
-              <li>Loading Shahnameh timeline…</li>
+              <li data-i18n="dappRoadmapLoading">Loading Shahnameh timeline…</li>
             </ol>
           </section>
           <section class="dapp-insights">
-            <h3>Key streams watched by Setaei</h3>
+            <h3 data-i18n="dappInsightsTitle">Key streams watched by the team</h3>
             <ul class="insight-list" data-dapp-insights>
-              <li>Awaiting DYOR highlights…</li>
+              <li data-i18n="dappInsightsLoading">Awaiting DYOR highlights…</li>
             </ul>
           </section>
           <aside class="dapp-social" data-dapp-social-container>
             <a class="dapp-social__link" data-dapp-social href="https://dyor.io/dapps/games/shahnameh" target="_blank" rel="noreferrer">
-              Explore Shahnameh's DYOR social hub
+              <span data-i18n="dappSocialLink">Explore Shahnameh's DYOR social hub</span>
             </a>
           </aside>
           <footer class="panel-footer">
             <a class="panel-link" href="https://dyor.io/dapps/games/shahnameh" target="_blank" rel="noreferrer">
-              Open Shahnameh on DYOR
+              <span data-i18n="dappFooterLink">Open Shahnameh on DYOR</span>
             </a>
           </footer>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p>© <span data-year></span> Khabat Setaei. All rights reserved.</p>
+        <p data-i18n="footerRights">© <span data-year></span> REAL Shahnameh. All rights reserved.</p>
       </footer>
     </div>
     <script src="scripts/main.js" type="module"></script>
