@@ -3,251 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REAL Shahnameh — Epic Persian Poetry Reimagined</title>
+    <title>REAL Shahnameh — Khabat Setaei</title>
     <meta
       name="description"
-      content="Explore curated stories, character guides, and immersive timelines inspired by the legendary Persian epic Shahnameh."
+      content="Live DYOR insights for the REAL token and Shahnameh dapp, curated by Khabat Setaei."
     />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="preload" href="styles/main.css" as="style" />
   </head>
   <body>
     <div class="page-shell">
-      <header class="site-header" data-scroll-target>
+      <header class="site-header">
         <div class="branding">
-          <span class="brand-mark" aria-hidden="true">REAL</span>
-          <div class="brand-copy">
-            <span class="brand-title">Shahnameh</span>
-            <span class="brand-subtitle">Epic retold for today</span>
-          </div>
+          <span class="brand-title">REAL Shahnameh</span>
+          <span class="brand-author">Only Khabat Setaei</span>
         </div>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
-          <span class="sr-only">Open navigation</span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-        </button>
-        <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
-          <a href="#curation" class="nav-link">Curation</a>
-          <a href="#timeline" class="nav-link">Timeline</a>
-          <a href="#characters" class="nav-link">Characters</a>
-          <a href="#community" class="nav-link">Community</a>
-        </nav>
-        <a class="ghost-button" href="#cta">Join the journey</a>
+        <p class="brand-subtitle">Monochrome intelligence. All copyrights belong to Setaei.</p>
       </header>
 
-      <main>
-        <section class="hero" id="hero">
-          <div class="hero-copy">
-            <p class="overline">An immersive archive of Persian mythology</p>
-            <h1>Discover the living soul of the <span>Shahnameh</span>.</h1>
-            <p class="lead">
-              REAL Shahnameh celebrates Ferdowsi’s epic with contemporary storytelling—curated summaries,
-              character blueprints, and interactive timelines for modern seekers.
-            </p>
-            <div class="hero-actions">
-              <a class="primary-button" href="#curation">Explore collections</a>
-              <a class="secondary-button" href="#community">See how we collaborate</a>
-            </div>
-            <dl class="hero-stats" aria-label="Community impact statistics">
-              <div>
-                <dt>Stories mapped</dt>
-                <dd>48</dd>
-              </div>
-              <div>
-                <dt>Character arcs</dt>
-                <dd>120+</dd>
-              </div>
-              <div>
-                <dt>Active contributors</dt>
-                <dd>3.2k</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="hero-visual">
-            <div class="hero-glow" aria-hidden="true"></div>
-            <div class="hero-card">
-              <h2>Tonight’s spotlight</h2>
-              <p>Rostam &amp; Sohrab</p>
-              <ul>
-                <li>Interactive battle map</li>
-                <li>Translated excerpts with commentary</li>
-                <li>Audio narration by scholars</li>
-              </ul>
-              <button type="button" class="ghost-button ghost-button--wide">Open experience</button>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="curation" data-scroll-target>
-          <header class="section-heading">
-            <p class="overline">Curated journeys</p>
-            <h2>Expert pathways through ancient verses.</h2>
-            <p class="section-lead">
-              Every track is designed with the guidance of historians, linguists, and storytellers to illuminate
-              the epic’s cultural context.
+      <main class="split-layout">
+        <section class="panel panel--token" id="token">
+          <header class="panel-heading">
+            <p class="panel-overline">Live token pulse</p>
+            <h1 class="panel-title">REAL token on DYOR</h1>
+            <p class="panel-summary">
+              Direct feed from DYOR keeps Khabat Setaei informed about liquidity, sentiment, and velocity on TON.
             </p>
           </header>
-          <div class="card-grid">
-            <article class="info-card">
-              <div class="info-card__icon" aria-hidden="true">Ⅰ</div>
-              <h3>Foundations of the Kingdom</h3>
-              <p>Start with the mythic kings and the birth of Persia’s identity, complete with scene reconstructions.</p>
-              <ul>
-                <li>Illustrated kingdom timelines</li>
-                <li>Guided reading playlists</li>
-                <li>Side-by-side modern Persian</li>
-              </ul>
-            </article>
-            <article class="info-card">
-              <div class="info-card__icon" aria-hidden="true">Ⅱ</div>
-              <h3>The Heroic Cycle</h3>
-              <p>Follow the valor and tragedy of Rostam, Tahmineh, and their lineage, stitched with interactive battle plans.</p>
-              <ul>
-                <li>Battlefield overlays</li>
-                <li>Character motivation maps</li>
-                <li>Conflict audio dramatizations</li>
-              </ul>
-            </article>
-            <article class="info-card">
-              <div class="info-card__icon" aria-hidden="true">Ⅲ</div>
-              <h3>Wisdom &amp; Renewal</h3>
-              <p>Trace the philosophical heart of Shahnameh—its meditations on justice, ethics, and legacy.</p>
-              <ul>
-                <li>Quote compendium</li>
-                <li>Live scholar sessions</li>
-                <li>Comparative literature notes</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section class="timeline" id="timeline" data-scroll-target>
-          <header class="section-heading">
-            <p class="overline">Dynamic timeline</p>
-            <h2>See each era unfold as you scroll.</h2>
-          </header>
-          <div class="timeline-grid">
-            <article class="timeline-event">
-              <span class="timeline-era">Mythic dawn</span>
-              <h3>Creation of Keyumars</h3>
-              <p>The first king ushers light into the world, shaping cosmic order over chaos.</p>
-            </article>
-            <article class="timeline-event">
-              <span class="timeline-era">Rise of heroes</span>
-              <h3>Rostam’s Seven Labors</h3>
-              <p>Epic feats presented through animated storyboards and behind-the-scenes lore.</p>
-            </article>
-            <article class="timeline-event">
-              <span class="timeline-era">Crisis &amp; loss</span>
-              <h3>Sohrab’s Revelation</h3>
-              <p>Feel the tension of destiny with dual-perspective narration and emotional cues.</p>
-            </article>
-            <article class="timeline-event">
-              <span class="timeline-era">Renewal</span>
-              <h3>Rise of Sassanian vision</h3>
-              <p>Interactive maps reveal political shifts and cultural rebirth across centuries.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section characters" id="characters" data-scroll-target>
-          <header class="section-heading">
-            <p class="overline">Character atlas</p>
-            <h2>Understand the motives that shape destiny.</h2>
-          </header>
-          <div class="character-grid">
-            <article class="character-card">
-              <h3>Rostam</h3>
-              <p class="character-trait">The unconquered hero of Zabul.</p>
-              <p>
-                Track Rostam’s tactical brilliance and personal dilemmas through adaptive decision trees that compare
-                alternate endings.
-              </p>
-            </article>
-            <article class="character-card">
-              <h3>Tahmineh</h3>
-              <p class="character-trait">Voice of foresight and compassion.</p>
-              <p>
-                Explore Tahmineh’s letters and hidden counsel, preserved with modern Persian recitations and notes.
-              </p>
-            </article>
-            <article class="character-card">
-              <h3>Zahhak</h3>
-              <p class="character-trait">Tyrant bound by serpents.</p>
-              <p>
-                Visualize the allegory of tyranny through symbolism overlays, ethical debates, and mythic parallels.
-              </p>
-            </article>
-            <article class="character-card">
-              <h3>Simorgh</h3>
-              <p class="character-trait">Guardian of wisdom.</p>
-              <p>
-                Experience animated folios that illuminate Simorgh’s nurturing influence across generations.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section community" id="community" data-scroll-target>
-          <header class="section-heading">
-            <p class="overline">Living community</p>
-            <h2>Built with scholars, artists, and dreamers.</h2>
-            <p class="section-lead">
-              Collaborate through community-driven workshops, digital preservation, and multi-language translation sprints.
-            </p>
-          </header>
-          <div class="community-layout">
-            <article class="community-card">
-              <h3>Monthly Studio</h3>
-              <p>Hands-on design labs where illustrators reimagine pivotal scenes with cultural advisors.</p>
-              <span class="tag">Hybrid</span>
-            </article>
-            <article class="community-card">
-              <h3>Scholars’ Circle</h3>
-              <p>Live seminars featuring academics from Tehran, Dushanbe, and diaspora communities.</p>
-              <span class="tag">Live stream</span>
-            </article>
-            <article class="community-card">
-              <h3>Translation Sprint</h3>
-              <p>Collaborative translation events bridging Persian, Dari, and English with inclusive glossaries.</p>
-              <span class="tag">Open call</span>
-            </article>
-          </div>
-          <aside class="community-testimonial">
-            <p>
-              “REAL Shahnameh is where archival fidelity meets creative exploration. It’s the community we dreamed of for
-              Persian myth lovers.”
-            </p>
+          <dl class="token-stats">
             <div>
-              <span class="testimonial-name">Dr. Leila Mehr</span>
-              <span class="testimonial-role">Literary historian</span>
+              <dt>Price (USD)</dt>
+              <dd data-token-price>—</dd>
             </div>
-          </aside>
+            <div>
+              <dt>24h change</dt>
+              <dd data-token-change>—</dd>
+            </div>
+            <div>
+              <dt>24h volume</dt>
+              <dd data-token-volume>—</dd>
+            </div>
+            <div>
+              <dt>Market cap</dt>
+              <dd data-token-cap>—</dd>
+            </div>
+          </dl>
+          <p class="token-updated" data-token-updated>Waiting for the latest DYOR block…</p>
+          <article class="token-description" data-token-description>
+            <p>
+              DYOR metrics for the REAL token will populate here as soon as they load. Khabat Setaei keeps the
+              narrative grounded in verifiable numbers.
+            </p>
+          </article>
+          <section class="token-chart" aria-label="REAL price performance">
+            <div class="token-chart__header">
+              <h3>Price trajectory</h3>
+              <p class="token-chart__caption">Rolling DYOR history for REAL on TON</p>
+            </div>
+            <div class="token-chart__surface">
+              <canvas data-token-chart width="640" height="320" role="img" aria-label="REAL price chart"></canvas>
+              <p class="token-chart__status" data-token-chart-status>Waiting for DYOR chart data…</p>
+            </div>
+          </section>
+          <section class="token-transactions" aria-label="Latest REAL transactions">
+            <div class="token-transactions__header">
+              <h3>Latest transactions</h3>
+              <p class="token-transactions__caption">Streaming activity straight from DYOR</p>
+            </div>
+            <p class="token-transactions__status" data-token-transactions-status>Loading live flow…</p>
+            <ul class="transaction-list" data-token-transactions></ul>
+          </section>
+          <footer class="panel-footer">
+            <a class="panel-link" href="https://dyor.io/token/EQDhq_DjQUMJqfXLP8K8J6SlOvon08XQQK0T49xon2e0xU8p" target="_blank" rel="noreferrer">
+              View full token dossier on DYOR
+            </a>
+          </footer>
         </section>
 
-        <section class="section cta" id="cta" data-scroll-target>
-          <div class="cta-card">
-            <h2>Preserve the epic. Shape the future.</h2>
-            <p>
-              Get early access to upcoming immersive exhibits, behind-the-scenes art, and collaborative translation tools.
+        <section class="panel panel--dapp" id="dapp">
+          <header class="panel-heading">
+            <p class="panel-overline">Shahnameh dossier</p>
+            <h2 class="panel-title">REAL Shahnameh experience</h2>
+            <p class="panel-summary">
+              Every insight is authored by Khabat Setaei. Data points below are streamed from DYOR’s Shahnameh profile.
             </p>
-            <form class="cta-form" aria-label="Join the community">
-              <label for="cta-email" class="sr-only">Email</label>
-              <input type="email" id="cta-email" name="email" placeholder="you@example.com" required />
-              <button type="submit" class="primary-button">Request invite</button>
-            </form>
-            <p class="cta-disclaimer">We respect privacy. Expect one beautifully crafted update per month.</p>
+          </header>
+          <div class="dapp-meta">
+            <p class="dapp-summary" data-dapp-summary>Loading the living chronicle…</p>
+            <ul class="dapp-tags" data-dapp-tags></ul>
           </div>
+          <div class="dapp-embed">
+            <a href="https://dyor.io/dapps/games/shahnameh?utm_source=dapp-badge" target="_blank" rel="noreferrer">
+              <img
+                alt="Shahnameh Badge"
+                height="64"
+                width="auto"
+                loading="lazy"
+                src="https://dyor.io/client/api/dapp/rank/shahnameh?theme=light"
+              />
+            </a>
+          </div>
+          <section class="dapp-roadmap" aria-label="Shahnameh timeline">
+            <div class="dapp-roadmap__header">
+              <h3>Season roadmap</h3>
+              <p class="dapp-roadmap__caption">We are between Season I and II — curated by Khabat Setaei</p>
+            </div>
+            <ol class="roadmap" data-dapp-roadmap>
+              <li>Loading Shahnameh timeline…</li>
+            </ol>
+          </section>
+          <section class="dapp-insights">
+            <h3>Key streams watched by Setaei</h3>
+            <ul class="insight-list" data-dapp-insights>
+              <li>Awaiting DYOR highlights…</li>
+            </ul>
+          </section>
+          <aside class="dapp-social" data-dapp-social-container>
+            <a class="dapp-social__link" data-dapp-social href="https://dyor.io/dapps/games/shahnameh" target="_blank" rel="noreferrer">
+              Explore Shahnameh's DYOR social hub
+            </a>
+          </aside>
+          <footer class="panel-footer">
+            <a class="panel-link" href="https://dyor.io/dapps/games/shahnameh" target="_blank" rel="noreferrer">
+              Open Shahnameh on DYOR
+            </a>
+          </footer>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p>© <span id="copyright-year"></span> REAL Shahnameh Collective. Crafted in collaboration with cultural stewards.</p>
-        <div class="footer-links">
-          <a href="#hero">Return to top</a>
-          <a href="mailto:hello@realshahnameh.org">Contact</a>
-          <a href="#community">Join a program</a>
-        </div>
+        <p>© <span data-year></span> Khabat Setaei. All rights reserved.</p>
       </footer>
     </div>
     <script src="scripts/main.js" type="module"></script>
