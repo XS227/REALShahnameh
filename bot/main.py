@@ -10,24 +10,27 @@ from .config import load_settings
 from .database import Database
 from .handlers import (
     build_balance_handler,
+    build_faq_handler,
     build_progress_handler,
     build_start_handler,
     help_command,
 )
+from .observability import init_observability, set_active_sessions
 from .session_manager import SessionManager
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
 def main() -> None:
     """Start the Telegram bot application."""
 
+    init_observability()
+
     settings = load_settings()
     database = Database(settings.database_url)
     database.create_all()
 
-    session_manager = SessionManager()
+    session_manager = SessionManager(on_change=set_active_sessions)
 
     application = ApplicationBuilder().token(settings.bot_token).build()
 
@@ -38,6 +41,7 @@ def main() -> None:
     application.add_handler(CommandHandler("help", help_command(session_manager)))
     application.add_handler(CommandHandler("progress", build_progress_handler(session_manager)))
     application.add_handler(CommandHandler("balance", build_balance_handler(session_manager)))
+    application.add_handler(CommandHandler("faq", build_faq_handler(session_manager)))
 
     logger.info("Starting REAL Shahnameh bot")
     application.run_polling()

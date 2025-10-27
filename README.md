@@ -29,6 +29,17 @@ Dette prosjektet inneholder en minimal Telegram-bot bygget med [`python-telegram
 
    Botten kjører med polling. Stopp den med `Ctrl+C`.
 
+   Metrics eksponeres på `http://localhost:9000/metrics` som standard. Sett `METRICS_PORT`
+   for å endre porten.
+
+4. Kjør admin-verktøy lokalt (eksempel):
+
+   ```bash
+   python -m bot.admin_tools list-users
+   ```
+
+   Bruk `show-user` og `list-transactions` for å inspisere detaljer.
+
 ## Datamodeller
 
 SQLite-databasen oppretter følgende tabeller:
@@ -36,6 +47,27 @@ SQLite-databasen oppretter følgende tabeller:
 - `users`: registrerer Telegram-brukere.
 - `progress`: lagrer fremdrift i historien per bruker.
 - `real_balances`: holder REAL-saldo for hver bruker.
+- `transactions`: lager en transaksjonslogg knyttet til hver bruker.
+
+## Observability
+
+- Logging styres av miljøvariabelen `LOG_LEVEL` (default `INFO`).
+- Prometheus-metrics tilgjengelig via `METRICS_PORT` (default `9000`).
+- Følgende metrics er tilgjengelig:
+  - `real_bot_commands_total{command,status}`
+  - `real_bot_command_duration_seconds{command}`
+  - `real_bot_active_sessions`
+
+## Onboarding og hjelp
+
+- `/start` initierer en guidet onboarding for nye brukere.
+- `/help` og `/faq` gir hjelpetekster og svar på vanlige spørsmål.
+- `/progress` og `/balance` viser henholdsvis fremdrift og økonomi med siste transaksjon.
+
+## Dokumentasjon
+
+- [Pilotplan](docs/pilot_plan.md)
+- [Lanserings- og støtteplan](docs/launch_and_support.md)
 
 ## Linting og formatering
 
