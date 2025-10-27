@@ -23,6 +23,7 @@ class User(Base):
 
     progress: Mapped[list["Progress"]] = relationship(back_populates="user")
     real_balance: Mapped["RealBalance" | None] = relationship(back_populates="user", uselist=False)
+    transactions: Mapped[list["Transaction"]] = relationship(back_populates="user")
 
 
 class Progress(Base):
@@ -51,6 +52,19 @@ class RealBalance(Base):
     user: Mapped[User] = relationship(back_populates="real_balance")
 
 
+class Transaction(Base):
+    """Represents a ledger entry for REAL transactions."""
+
+    __tablename__ = "transactions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
+    amount: Mapped[Decimal] = mapped_column(Numeric(10, 2))
+    transaction_type: Mapped[str] = mapped_column(String(50))
+    description: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+    user: Mapped[User] = relationship(back_populates="transactions")
 class TokenTransaction(Base):
     """Audit log of REAL token payouts."""
 
