@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "version": 1
+  },
+  "quests": [
+    {
+      "id": "initiation",
+      "title": "Warrior initiation",
+      "summary": "Revisit the origins of Rostam and his bond with Rakhsh before stepping into quests.",
+      "moduleId": "rostam-foundations",
+      "rewardPoints": 35,
+      "rewardLabel": "Quest complete · Warrior initiation"
+    },
+    {
+      "id": "seven-labours",
+      "title": "Seven Labours quickfire",
+      "summary": "Relive the pivotal trials from Mazandaran in a rapid-fire lore sprint.",
+      "moduleId": "haft-khan",
+      "rewardPoints": 55,
+      "rewardLabel": "Quest complete · Seven Labours"
+    },
+    {
+      "id": "strategist",
+      "title": "Court strategist",
+      "summary": "Untangle alliances across the Shahnameh court to reinforce diplomatic instincts.",
+      "moduleId": "courtly-tactics",
+      "rewardPoints": 45,
+      "rewardLabel": "Quest complete · Court strategist"
+    }
+  ],
+  "modules": [
+    {
+      "id": "rostam-foundations",
+      "title": "Rostam foundations",
+      "steps": [
+        {
+          "id": "rostam-origin",
+          "type": "story",
+          "headline": "The dawn of Rostam",
+          "body": [
+            "Rostam, born to Zāl and Rudabeh, is the mightiest champion of Zabul and the anchor of Iranian resistance.",
+            "From his earliest days, the Simurgh guided his lineage and destiny toward safeguarding the realm."
+          ],
+          "cta": "Continue",
+          "rewardLabel": "Lore unlocked · Rostam's dawn"
+        },
+        {
+          "id": "rostam-rakhsh",
+          "type": "quiz",
+          "question": "How does Rostam recognise the steed Rakhsh as his true companion?",
+          "context": [
+            "Among countless colts, only one stood unbroken and bold enough to match the hero's spirit."
+          ],
+          "options": [
+            {
+              "id": "random",
+              "label": "He draws lots among the royal stables",
+              "feedback": "Luck never forged their bond — Rakhsh chose Rostam as much as Rostam chose him."
+            },
+            {
+              "id": "trial",
+              "label": "He tests each horse, and only one endures his weight and speed",
+              "correct": true,
+              "feedback": "Correct — Rakhsh endures Rostam's trial, proving their fates are entwined.",
+              "points": 20,
+              "rewardLabel": "Quiz mastered · Rostam meets Rakhsh"
+            },
+            {
+              "id": "gift",
+              "label": "The Simurgh delivers the steed as a gift",
+              "feedback": "The Simurgh shapes the family’s destiny, but Rostam earns Rakhsh through discernment."
+            }
+          ],
+          "allowRetry": true
+        },
+        {
+          "id": "white-demon",
+          "type": "story",
+          "headline": "Foreshadowing the White Demon",
+          "body": [
+            "The trials ahead in Mazandaran demand not only strength but insight into the unseen machinations of divs.",
+            "Rostam prepares, knowing that each victory fortifies the Shahnameh's living ledger."
+          ],
+          "cta": "Face the challenge",
+          "rewardLabel": "Lore unlocked · White Demon foreshadow"
+        }
+      ],
+      "completion": {
+        "message": "Initiation complete — Rostam's path is clear for the next quest."
+      }
+    },
+    {
+      "id": "haft-khan",
+      "title": "Seven Labours lore sprint",
+      "steps": [
+        {
+          "id": "haft-khan-story",
+          "type": "story",
+          "headline": "Into Mazandaran",
+          "body": [
+            "The Seven Labours carry Rostam through deserts, mountains, and the lairs of cunning divs.",
+            "Each labour sharpens his resolve and the legend tracked by every REAL Shahnameh chronicle."
+          ],
+          "cta": "Begin the sprint",
+          "rewardLabel": "Lore unlocked · Into Mazandaran"
+        },
+        {
+          "id": "haft-khan-sequence",
+          "type": "sequence",
+          "prompt": "Tap each labour in the order Rostam conquers them to restore the Mazandaran timeline.",
+          "sequence": [
+            {
+              "id": "lion",
+              "label": "Lion of the plains"
+            },
+            {
+              "id": "dragon",
+              "label": "Dragon of the dark"
+            },
+            {
+              "id": "arzhang",
+              "label": "Arzhang the sorcerer"
+            },
+            {
+              "id": "white-demon",
+              "label": "The White Demon"
+            }
+          ],
+          "options": [
+            {
+              "id": "lion",
+              "label": "Lion of the plains"
+            },
+            {
+              "id": "dragon",
+              "label": "Dragon of the dark"
+            },
+            {
+              "id": "arzhang",
+              "label": "Arzhang the sorcerer"
+            },
+            {
+              "id": "white-demon",
+              "label": "The White Demon"
+            }
+          ],
+          "progressMessage": "Good — the legend is aligning. Keep tapping in order.",
+          "resetMessage": "The saga fragments — start the sequence again to restore the lore.",
+          "successMessage": "Timeline restored. Rostam's victories surge through the REAL ledger.",
+          "points": 25,
+          "rewardLabel": "Minigame victory · Seven Labours order"
+        },
+        {
+          "id": "haft-khan-quiz",
+          "type": "quiz",
+          "question": "Who heals Kay Kāvus and his warriors after Rostam defeats the White Demon?",
+          "options": [
+            {
+              "id": "rostam",
+              "label": "Rostam himself",
+              "feedback": "Rostam fights relentlessly, but healing comes through another ally."
+            },
+            {
+              "id": "simurgh",
+              "label": "The Simurgh",
+              "correct": true,
+              "feedback": "Correct — the Simurgh's feathers restore the blinded heroes to strength.",
+              "points": 20,
+              "rewardLabel": "Quiz mastered · Simurgh heals the court"
+            },
+            {
+              "id": "tahmineh",
+              "label": "Tahmineh",
+              "feedback": "Tahmineh's role is vital later, but not in Mazandaran's recovery."
+            }
+          ],
+          "allowRetry": true
+        }
+      ],
+      "completion": {
+        "message": "Mazandaran stands recorded — the Seven Labours pulse within the REAL chronicle."
+      }
+    },
+    {
+      "id": "courtly-tactics",
+      "title": "Courtly tactics",
+      "steps": [
+        {
+          "id": "courtly-briefing",
+          "type": "story",
+          "headline": "Signals from the court",
+          "body": [
+            "Diplomatic ripples cross the Shahnameh as rulers balance alliances with looming threats.",
+            "Reading intent is as critical as wielding strength."
+          ],
+          "cta": "Assess the players",
+          "rewardLabel": "Lore unlocked · Court signals"
+        },
+        {
+          "id": "courtly-quiz",
+          "type": "quiz",
+          "question": "Which ruler seeks Rostam's aid to reclaim Mazandaran after falling to the Divs?",
+          "options": [
+            {
+              "id": "kay-kavus",
+              "label": "Kay Kāvus",
+              "correct": true,
+              "feedback": "Correct — Kay Kāvus calls upon Rostam to break the Divs' hold on Mazandaran.",
+              "points": 20,
+              "rewardLabel": "Quiz mastered · Kay Kāvus plea"
+            },
+            {
+              "id": "zahhak",
+              "label": "Zahhāk",
+              "feedback": "Zahhāk is an ancient tyrant opposed by the heroes, not a petitioner."
+            },
+            {
+              "id": "gudarz",
+              "label": "Gudarz",
+              "feedback": "Gudarz stands among the Iranian commanders but does not send the plea himself."
+            }
+          ],
+          "allowRetry": true
+        },
+        {
+          "id": "courtly-mini",
+          "type": "sequence",
+          "prompt": "Match the sequence of counsel Rostam receives before marching.",
+          "sequence": [
+            {
+              "id": "zal",
+              "label": "Zāl interprets omens"
+            },
+            {
+              "id": "simurgh",
+              "label": "The Simurgh offers guidance"
+            },
+            {
+              "id": "gudarz",
+              "label": "Gudarz coordinates the army"
+            }
+          ],
+          "options": [
+            {
+              "id": "gudarz",
+              "label": "Gudarz coordinates the army"
+            },
+            {
+              "id": "zal",
+              "label": "Zāl interprets omens"
+            },
+            {
+              "id": "simurgh",
+              "label": "The Simurgh offers guidance"
+            }
+          ],
+          "progressMessage": "Insight sequenced — continue aligning counsel.",
+          "resetMessage": "The court falls into disarray. Re-evaluate the counsel order.",
+          "successMessage": "Strategy aligned. Rostam advances with clarity.",
+          "points": 20,
+          "rewardLabel": "Minigame victory · Court counsel order"
+        }
+      ],
+      "completion": {
+        "message": "Diplomatic instincts sharpened — the court looks to you for the next guidance."
+      }
+    }
+  ],
+  "dailyChallenges": {
+    "default": {
+      "questId": "initiation",
+      "bonusPoints": 15
+    },
+    "schedule": [
+      {
+        "weekday": 1,
+        "questId": "seven-labours",
+        "bonusPoints": 25
+      },
+      {
+        "weekday": 3,
+        "questId": "strategist",
+        "bonusPoints": 20
+      },
+      {
+        "weekday": 5,
+        "questId": "initiation",
+        "bonusPoints": 18
+      }
+    ]
+  }
+}

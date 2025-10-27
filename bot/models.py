@@ -65,3 +65,22 @@ class Transaction(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
     user: Mapped[User] = relationship(back_populates="transactions")
+class TokenTransaction(Base):
+    """Audit log of REAL token payouts."""
+
+    __tablename__ = "token_transactions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
+    telegram_id: Mapped[int] = mapped_column(Integer, index=True)
+    amount: Mapped[Decimal] = mapped_column(Numeric(10, 2))
+    reason: Mapped[str] = mapped_column(String(255))
+    status: Mapped[str] = mapped_column(String(50))
+    external_id: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    nonce: Mapped[str] = mapped_column(String(255), unique=True)
+    signature: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    metadata: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    user: Mapped[User | None] = relationship()
