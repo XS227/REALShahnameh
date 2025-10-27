@@ -1,3 +1,5 @@
+import { initialiseLearningExperience } from './learning/ui.js';
+
 const languageSelect = document.querySelector('[data-language-switcher]');
 
 const tokenSelectors = {
@@ -58,6 +60,17 @@ const staticTextMap = {
   dappSocialLink: document.querySelector('[data-i18n="dappSocialLink"]'),
   dappFooterLink: document.querySelector('[data-i18n="dappFooterLink"]'),
   footerRights: document.querySelector('[data-i18n="footerRights"]'),
+  learningOverline: document.querySelector('[data-i18n="learningOverline"]'),
+  learningTitle: document.querySelector('[data-i18n="learningTitle"]'),
+  learningSummary: document.querySelector('[data-i18n="learningSummary"]'),
+  learningProgressTitle: document.querySelector('[data-i18n="learningProgressTitle"]'),
+  learningLevelLabel: document.querySelector('[data-i18n="learningLevelLabel"]'),
+  learningXpLabel: document.querySelector('[data-i18n="learningXpLabel"]'),
+  learningNextLevelLabel: document.querySelector('[data-i18n="learningNextLevelLabel"]'),
+  learningStreakLabel: document.querySelector('[data-i18n="learningStreakLabel"]'),
+  learningTokensLabel: document.querySelector('[data-i18n="learningTokensLabel"]'),
+  learningRewardLogTitle: document.querySelector('[data-i18n="learningRewardLogTitle"]'),
+  learningRewardLogEmpty: document.querySelector('[data-i18n="learningRewardLogEmpty"]'),
 };
 
 const LANGUAGES = {
@@ -139,6 +152,39 @@ const LANGUAGES = {
       roadmapFallbackDesc3:
         'Season two readies fresh sagas, upgraded on-chain rewards, and deeper REAL token integrations.',
       roadmapFallbackTime3: 'Season II (in development)',
+      learningOverline: 'Lore progression',
+      learningTitle: 'REAL Shahnameh training grounds',
+      learningSummary:
+        'Tackle modular quests, quizzes, and mini-games to strengthen your mastery of the Shahnameh.',
+      learningDailyChallengeTitle: 'Daily challenge',
+      learningDailyBonusLabel: 'Bonus {{points}} XP',
+      learningDailyChallengeFallback:
+        'No daily challenge detected. Choose any quest to keep your streak alive.',
+      learningQuestListHeading: 'Available quests',
+      learningDailyChallengeCta: 'Begin daily challenge',
+      learningStartQuest: 'Start {{title}}',
+      learningContentError: 'We could not load the learning modules. Refresh to try again.',
+      learningRetry: 'Retry loading',
+      learningReturnHome: 'Back to quests',
+      learningQuestCompleteTitle: 'Quest complete — {{title}}',
+      learningQuestReward: 'Quest reward: {{points}} XP',
+      learningDailyComplete: 'Daily bonus: {{points}} XP · streak {{streak}}',
+      learningProgressTitle: 'Progress',
+      learningLevelLabel: 'Level',
+      learningXpLabel: 'Total XP',
+      learningNextLevelLabel: 'Next level',
+      learningNextLevelText: '{{xp}} XP to next level',
+      learningStreakLabel: 'Streak',
+      learningStreakValue: '{{count}} day streak',
+      learningTokensLabel: 'REAL tokens earned',
+      learningRewardLogTitle: 'Reward log',
+      learningRewardLogEmpty: 'Rewards will appear here after you earn tokens.',
+      learningRewardFallback: 'Learning reward',
+      learningQuizIncorrect: 'Not quite — try again.',
+      learningQuizCorrect: 'Correct! Continue the flow.',
+      learningSequenceProgress: 'Great — keep following the sequence.',
+      learningSequenceReset: 'Sequence broken. Start again.',
+      learningSequenceComplete: 'Sequence complete!',
       insightUsers24h: 'Users 24h',
       insightVolume24h: 'Volume 24h',
       insightTransactions24h: 'Transactions 24h',
@@ -223,6 +269,38 @@ const LANGUAGES = {
       roadmapFallbackDesc3:
         'فصل دوم با داستان‌های تازه، پاداش‌های درون زنجیره ارتقا یافته و یکپارچگی عمیق‌تر REAL آماده می‌شود.',
       roadmapFallbackTime3: 'فصل دوم (در حال توسعه)',
+      learningOverline: 'پیشرفت روایی',
+      learningTitle: 'باشگاه تمرین REAL شاهنامه',
+      learningSummary:
+        'با ماموریت‌ها، کوییزها و مینی‌گیم‌های ماژولار مهارتت در شاهنامه را تقویت کن.',
+      learningDailyChallengeTitle: 'چالش روزانه',
+      learningDailyBonusLabel: 'امتیاز اضافی {{points}} XP',
+      learningDailyChallengeFallback: 'چالشی برای امروز پیدا نشد؛ یکی از ماموریت‌ها را انتخاب کن تا زنجیره حفظ شود.',
+      learningQuestListHeading: 'ماموریت‌های در دسترس',
+      learningDailyChallengeCta: 'شروع چالش روزانه',
+      learningStartQuest: 'شروع {{title}}',
+      learningContentError: 'امکان بارگذاری ماژول‌های آموزشی نبود. دوباره تلاش کن.',
+      learningRetry: 'تلاش دوباره',
+      learningReturnHome: 'بازگشت به ماموریت‌ها',
+      learningQuestCompleteTitle: 'ماموریت تکمیل شد — {{title}}',
+      learningQuestReward: 'پاداش ماموریت: {{points}} XP',
+      learningDailyComplete: 'پاداش روزانه: {{points}} XP · زنجیره {{streak}}',
+      learningProgressTitle: 'پیشرفت',
+      learningLevelLabel: 'سطح',
+      learningXpLabel: 'مجموع XP',
+      learningNextLevelLabel: 'سطح بعد',
+      learningNextLevelText: '{{xp}} XP تا سطح بعد',
+      learningStreakLabel: 'زنجیره',
+      learningStreakValue: 'زنجیره {{count}} روزه',
+      learningTokensLabel: 'توکن REAL کسب‌شده',
+      learningRewardLogTitle: 'گزارش پاداش',
+      learningRewardLogEmpty: 'پس از دریافت توکن، پاداش‌ها اینجا ثبت می‌شود.',
+      learningRewardFallback: 'پاداش یادگیری',
+      learningQuizIncorrect: 'دقیق نبود — دوباره تلاش کن.',
+      learningQuizCorrect: 'آفرین! ادامه بده.',
+      learningSequenceProgress: 'خوب پیش می‌روی — ترتیب را ادامه بده.',
+      learningSequenceReset: 'ترتیب به‌هم خورد. از نو شروع کن.',
+      learningSequenceComplete: 'ترتیب کامل شد!',
       insightUsers24h: 'کاربران ۲۴ ساعته',
       insightVolume24h: 'حجم ۲۴ ساعته',
       insightTransactions24h: 'تراکنش‌های ۲۴ ساعته',
@@ -280,6 +358,7 @@ let transactionStatusState = { type: 'waiting' };
 let tokenDescriptionState = { type: 'placeholder', content: null };
 let dappSummaryState = { type: 'loading', content: null };
 let insightsState = 'loading';
+let learningExperience = null;
 
 function getLanguageConfig(language) {
   return LANGUAGES[language] ?? LANGUAGES[DEFAULT_LANGUAGE];
@@ -449,6 +528,11 @@ function applyLanguage(language) {
   renderInsights(cachedInsights);
   renderRoadmap(cachedRoadmapItems);
   renderSocialLink(cachedSocialLink);
+  if (learningExperience && typeof learningExperience.setLanguage === 'function') {
+    learningExperience.setLanguage(currentLanguage).catch((error) => {
+      console.error('Learning language sync failed', error);
+    });
+  }
   try {
     localStorage.setItem('preferred-language', currentLanguage);
   } catch (error) {
@@ -1425,6 +1509,7 @@ async function fetchDappData() {
     });
   }
   applyLanguage(initialLanguage);
+  learningExperience = initialiseLearningExperience({ translate, initialLanguage });
 })();
 
 (async () => {

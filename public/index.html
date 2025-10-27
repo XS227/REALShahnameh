@@ -146,6 +146,53 @@
             </a>
           </footer>
         </section>
+
+        <section class="panel panel--learning" id="learning" data-learning-root>
+          <header class="panel-heading">
+            <p class="panel-overline" data-i18n="learningOverline">Lore progression</p>
+            <h2 class="panel-title" data-i18n="learningTitle">REAL Shahnameh training grounds</h2>
+            <p class="panel-summary" data-i18n="learningSummary">
+              Tackle modular quests, quizzes, and mini-games to strengthen your mastery of the Shahnameh.
+            </p>
+          </header>
+          <section class="learning-feed">
+            <div class="learning-feed__narrative" data-learning-narrative></div>
+            <div class="learning-feed__status" data-learning-status aria-live="polite"></div>
+            <div class="learning-feed__actions" data-learning-actions></div>
+          </section>
+          <section class="learning-progress">
+            <h3 class="learning-progress__title" data-i18n="learningProgressTitle">Progress</h3>
+            <ul class="learning-progress__stats">
+              <li>
+                <span data-i18n="learningLevelLabel">Level</span>
+                <strong data-learning-level>1</strong>
+              </li>
+              <li>
+                <span data-i18n="learningXpLabel">Total XP</span>
+                <strong data-learning-xp>0</strong>
+              </li>
+              <li>
+                <span data-i18n="learningNextLevelLabel">Next level</span>
+                <strong data-learning-next>120 XP to next level</strong>
+              </li>
+              <li>
+                <span data-i18n="learningStreakLabel">Streak</span>
+                <strong data-learning-streak>0 day streak</strong>
+              </li>
+              <li>
+                <span data-i18n="learningTokensLabel">REAL tokens earned</span>
+                <strong data-learning-tokens>0.00</strong>
+              </li>
+            </ul>
+          </section>
+          <section class="learning-rewards">
+            <h3 class="learning-rewards__title" data-i18n="learningRewardLogTitle">Reward log</h3>
+            <p class="learning-rewards__empty" data-learning-reward-empty data-i18n="learningRewardLogEmpty">
+              Rewards will appear here after you earn tokens.
+            </p>
+            <ul class="learning-rewards__list" data-learning-reward-log></ul>
+          </section>
+        </section>
       </main>
 
       <footer class="site-footer">
