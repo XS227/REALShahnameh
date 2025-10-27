@@ -1,51 +1,47 @@
-# REAL Shahnameh
+# REAL Shahnameh Telegram Bot
 
-A modern, single-page showcase celebrating Ferdowsi’s *Shahnameh*. The experience blends atmospheric visuals with
-curated journeys, timelines, and community highlights.
+Dette prosjektet inneholder en minimal Telegram-bot bygget med [`python-telegram-bot`](https://python-telegram-bot.org/) for REAL Shahnameh.
 
-## Getting started
+## Kom i gang
 
-This is a static site. You can open `public/index.html` directly in a browser or serve it locally to enjoy smooth
-scroll interactions.
+1. Installer avhengigheter:
+
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -e .
+   ```
+
+2. Lag en `.env`-fil basert på eksempelfilen:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Fyll inn `BOT_TOKEN` med tokenet fra [@BotFather](https://t.me/BotFather).
+   `DATABASE_URL` kan stå som standard (SQLite) eller settes til en PostgreSQL-URL.
+
+3. Start boten lokalt:
+
+   ```bash
+   python -m bot.main
+   ```
+
+   Botten kjører med polling. Stopp den med `Ctrl+C`.
+
+## Datamodeller
+
+SQLite-databasen oppretter følgende tabeller:
+
+- `users`: registrerer Telegram-brukere.
+- `progress`: lagrer fremdrift i historien per bruker.
+- `real_balances`: holder REAL-saldo for hver bruker.
+
+## Linting og formatering
+
+Installer ekstra utvikleravhengigheter og kjør `black`:
 
 ```bash
-# from the repository root
-python -m http.server --directory public 4173
+pip install -e .[dev]
+black bot
 ```
-
-Visit <http://localhost:4173> to browse the site.
-
-## Docker
-
-A lightweight Docker image is available for local previews or deployment. It uses Nginx to serve the static assets.
-
-```bash
-# build the image
-docker build -t real-shahnameh .
-
-# run the container
-docker run --rm -p 8080:80 real-shahnameh
-```
-
-Open <http://localhost:8080> to view the experience.
-
-## Project structure
-
-```
-public/
-  index.html       # Landing page markup
-  styles/main.css  # Design system and layout
-  scripts/main.js  # Progressive enhancements (nav, timeline highlights, form feedback)
-Dockerfile         # Nginx-based static server
-```
-
-## Accessibility & polish checklist
-
-- Semantic landmarks (`header`, `main`, `section`, `footer`) to aid screen readers.
-- Focus-visible states for interactive elements.
-- Reduced-motion friendly animations triggered on scroll with IntersectionObserver fallbacks.
-- Responsive grid layouts covering mobile through desktop widths.
-
-## Screenshot
-
-A fresh UI capture accompanies this update in the attached project artifacts.

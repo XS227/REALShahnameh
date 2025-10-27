@@ -1,0 +1,21 @@
+[project]
+name = "real-telegram-bot"
+version = "0.1.0"
+description = "REAL Shahnameh Telegram bot"
+authors = [{ name = "REALShahnameh" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-telegram-bot>=20.6",
+    "SQLAlchemy>=2.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0",
+]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
