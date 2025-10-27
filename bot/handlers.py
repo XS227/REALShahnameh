@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from decimal import Decimal, InvalidOperation
 from typing import Final
 
 from sqlalchemy import select
@@ -10,6 +11,8 @@ from telegram.ext import ContextTypes
 
 from .models import Progress, RealBalance, User
 from .session_manager import SessionManager
+from .token_service import TokenIssuanceFailed
+from .reports import build_token_report, render_report_text
 
 WELCOME_MESSAGE: Final[str] = (
     "Velkommen til REAL Shahnameh bot!\n"
@@ -104,5 +107,84 @@ def build_balance_handler(_: SessionManager):
             else:
                 text = "Fant ingen REAL-saldo. Bruk /start for å registrere deg."
         await update.message.reply_text(text)
+
+    return handler
+
+
+def build_reward_handler():
+    async def handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        if update.effective_user is None or update.message is None:
+            return
+
+        admins: list[int] = context.bot_data.get("admin_user_ids", [])
+        if update.effective_user.id not in admins:
+            await update.message.reply_text("Du har ikke tilgang til denne kommandoen.")
+            return
+
+        if not context.args or len(context.args) < 3:
+            await update.message.reply_text(
+                "Bruk: /reward <telegram_id> <amount> <reason> [key=value ...]"
+            )
+            return
+
+        try:
+            recipient_id = int(context.args[0])
+            amount = Decimal(context.args[1])
+        except (ValueError, InvalidOperation):
+            await update.message.reply_text("Ugyldige argumenter. Kontroller ID og beløp.")
+            return
+
+        reason = context.args[2]
+        metadata = {"issued_by": str(update.effective_user.id)}
+
+        for pair in context.args[3:]:
+            if "=" not in pair:
+                continue
+            key, value = pair.split("=", 1)
+            metadata[key] = value
+
+        metadata.setdefault("challenge_id", reason)
+
+        token_service = context.bot_data.get("token_service")
+        if token_service is None:
+            await update.message.reply_text("Token-tjenesten er ikke konfigurert.")
+            return
+
+        try:
+            transaction = token_service.reward_user(
+                telegram_id=recipient_id,
+                amount=amount,
+                reason=reason,
+                metadata=metadata,
+            )
+        except TokenIssuanceFailed as exc:
+            await update.message.reply_text(f"Utbetaling feilet: {exc}")
+            return
+
+        await update.message.reply_text(
+            "Utbetaling sendt:\n"
+            f"ID: {transaction.transaction_id}\n"
+            f"Status: {transaction.status}\n"
+            f"Beløp: {transaction.amount} REAL"
+        )
+
+    return handler
+
+
+def build_token_report_handler():
+    async def handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        if update.effective_user is None or update.message is None:
+            return
+
+        admins: list[int] = context.bot_data.get("admin_user_ids", [])
+        if update.effective_user.id not in admins:
+            await update.message.reply_text("Du har ikke tilgang til denne rapporten.")
+            return
+
+        db = context.bot_data["db"]
+        with db.session() as session:
+            report = build_token_report(session)
+
+        await update.message.reply_text(render_report_text(report))
 
     return handler
