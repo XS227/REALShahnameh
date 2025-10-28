@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>REAL — Shahnameh Token Showcase</title>
+    <meta
+      name="description"
+      content="Discover REAL, the utility token powering the Shahnameh game — explore tokenomics, roadmap, and community links."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/landing.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content container">
+        <div class="hero__badge">
+          <img class="hero__logo" data-token-image alt="REAL Shahnameh token" />
+          <div>
+            <p class="hero__overline">Utility token of Shahnameh</p>
+            <h1 class="hero__title">REAL</h1>
+            <p class="hero__subtitle">A dynamic currency linked to the Iranian Rial and grown by the community.</p>
+          </div>
+        </div>
+        <div class="hero__cta">
+          <a class="button button--primary" data-primary-link target="_blank" rel="noreferrer">Launch Shahnameh</a>
+          <a class="button button--ghost" data-dyor-link target="_blank" rel="noreferrer">View on TONScan</a>
+        </div>
+      </div>
+      <div class="hero__background" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section class="section container" id="token" aria-labelledby="token-heading">
+        <header class="section__header">
+          <h2 class="section__title" id="token-heading">Token identity</h2>
+          <p class="section__subtitle">Key parameters and smart-contract address at a glance.</p>
+        </header>
+        <div class="token-grid">
+          <article class="token-card">
+            <h3>Symbol</h3>
+            <p class="token-card__value" data-token-symbol></p>
+          </article>
+          <article class="token-card">
+            <h3>Name</h3>
+            <p class="token-card__value" data-token-name></p>
+          </article>
+          <article class="token-card">
+            <h3>Decimals</h3>
+            <p class="token-card__value" data-token-decimals></p>
+          </article>
+          <article class="token-card token-card--address">
+            <h3>TON address</h3>
+            <code class="token-card__address" data-token-address></code>
+            <button class="copy-button" data-copy-address type="button">Copy address</button>
+            <span class="copy-button__status" aria-live="polite"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--accent" id="about" aria-labelledby="about-heading">
+        <div class="container section__layout">
+          <header class="section__header">
+            <h2 class="section__title" id="about-heading">Why REAL matters</h2>
+            <p class="section__subtitle">Utility, narrative, and how the supply evolves with every quest.</p>
+          </header>
+          <div class="section__content">
+            <p class="lead" data-token-description></p>
+            <ul class="feature-list">
+              <li>
+                <h3>Genesis drop</h3>
+                <p>REAL launched with a scarce 227 token supply, inviting early Shahnameh champions to shape the economy.</p>
+              </li>
+              <li>
+                <h3>Play-to-grow economics</h3>
+                <p>Supply mints alongside player achievements, anchoring growth in real participation.</p>
+              </li>
+              <li>
+                <h3>Rial-pegged utility</h3>
+                <p>The token keeps one foot in the Iranian Rial to stay grounded while empowering global fans.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="ecosystem" aria-labelledby="ecosystem-heading">
+        <header class="section__header">
+          <h2 class="section__title" id="ecosystem-heading">Ecosystem links</h2>
+          <p class="section__subtitle">Follow the channels, verify the contract, and join the updates.</p>
+        </header>
+        <div class="link-grid" data-token-links></div>
+      </section>
+
+      <section class="section section--dark" id="roadmap" aria-labelledby="roadmap-heading">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="roadmap-heading">Momentum &amp; next steps</h2>
+            <p class="section__subtitle section__subtitle--light">
+              From lore-driven quests to DeFi integrations, the team is expanding the Shahnameh universe one season at a time.
+            </p>
+          </header>
+          <div class="timeline">
+            <article class="timeline__item">
+              <h3>Season I — Origins</h3>
+              <p>Launch of the Shahnameh experience, initial REAL mint, and foundational community formation.</p>
+            </article>
+            <article class="timeline__item">
+              <h3>Season II — Arena</h3>
+              <p>Competitive quests, improved token sinks, and collaborations across TON-native guilds.</p>
+            </article>
+            <article class="timeline__item">
+              <h3>Season III — Sovereignty</h3>
+              <p>Staking utilities, cross-chain bridges, and governance opportunities for REAL guardians.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__layout">
+        <div>
+          <p class="footer__title">REAL Shahnameh</p>
+          <p class="footer__copy">Crafted for the community of storytellers, gamers, and builders on TON.</p>
+        </div>
+        <a class="footer__cta" data-primary-link target="_blank" rel="noreferrer">Play Shahnameh</a>
+      </div>
+    </footer>
+
+    <template id="link-template">
+      <a class="link-card" target="_blank" rel="noreferrer">
+        <span class="link-card__label"></span>
+        <span class="link-card__url"></span>
+      </a>
+    </template>
+
+    <script src="scripts/landing.js" type="module"></script>
+  </body>
+</html>
