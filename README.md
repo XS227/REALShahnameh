@@ -1,100 +1,177 @@
 # REAL Shahnameh Telegram Bot
 
-Dette prosjektet inneholder en minimal Telegram-bot bygget med [`python-telegram-bot`](https://python-telegram-bot.org/) for REAL Shahnameh.
+This repository contains a production-ready Telegram bot that delivers the REAL Shahnameh storytelling experience and manages on-chain/REAL token rewards. It is powered by [`python-telegram-bot`](https://python-telegram-bot.org/) and a small SQLite (or PostgreSQL) persistence layer.
 
-## Kom i gang
+## Table of contents
 
-1. Installer avhengigheter:
+- [Prerequisites](#prerequisites)
+- [Project structure](#project-structure)
+- [Local setup](#local-setup)
+  - [1. Clone the repository](#1-clone-the-repository)
+  - [2. Create and activate a virtual environment](#2-create-and-activate-a-virtual-environment)
+  - [3. Install dependencies](#3-install-dependencies)
+  - [4. Configure environment variables](#4-configure-environment-variables)
+- [Running the bot locally](#running-the-bot-locally)
+- [Using the admin tools](#using-the-admin-tools)
+- [Database schema](#database-schema)
+- [Observability](#observability)
+- [Testing and quality checks](#testing-and-quality-checks)
+- [Deployment notes](#deployment-notes)
+- [Troubleshooting](#troubleshooting)
+- [Additional documentation](#additional-documentation)
 
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate
-   pip install -e .
-   ```
+## Prerequisites
 
-2. Lag en `.env`-fil basert på eksempelfilen:
+Before you begin, make sure you have:
 
-   ```bash
-   cp .env.example .env
-   ```
+- Python 3.10 or newer installed.
+- `pip` and `venv` available (bundled with modern Python distributions).
+- A Telegram bot token from [@BotFather](https://t.me/BotFather).
+- (Optional) Access to a PostgreSQL database if you plan to run the bot in production.
 
-   Fyll inn `BOT_TOKEN` med tokenet fra [@BotFather](https://t.me/BotFather).
-   `DATABASE_URL` kan stå som standard (SQLite) eller settes til en PostgreSQL-URL.
-   Følgende variabler styrer REAL-token-integrasjonen:
+## Project structure
 
-   | Variabel | Standard | Beskrivelse |
-   | -------- | -------- | ----------- |
-   | `REAL_MODE` | `mock` | Bruk `production` for ekte utbetalinger. |
-   | `REAL_API_BASE_URL` | `https://api.real-token.example` | Base-URL for produksjons-API. |
-   | `REAL_API_KEY` | – | API-nøkkel for produksjon. Påkrevd når `REAL_MODE=production`. |
-   | `REAL_API_SECRET` | – | Hemmelig nøkkel for signering. Påkrevd når `REAL_MODE=production`. |
-   | `REAL_RATE_LIMIT_PER_MINUTE` | `60` | Hvor mange transaksjoner som er lov per minutt per bruker. |
-   | `REAL_MOCK_MAX_AMOUNT` | `1000` | Maks beløp i mock-modus og terskel for anti-cheat. |
-   | `ADMIN_USER_IDS` | – | Kommaseparert liste over Telegram-ID-er som kan bruke admin-kommandoer. |
+```
+REALShahnameh/
+├── bot/                 # Bot code, handlers, services, and data access
+├── docs/                # Project plans and technical documentation
+├── tests/               # Automated tests (unit + integration)
+├── requirements.txt     # Runtime dependency pins
+├── pyproject.toml       # Build system configuration
+└── README.md            # You are here
+```
 
-3. Start boten lokalt:
+## Local setup
 
-   ```bash
-   python -m bot.main
-   ```
+### 1. Clone the repository
 
-   Botten kjører med polling. Stopp den med `Ctrl+C`.
+```bash
+git clone https://github.com/<your-org>/REALShahnameh.git
+cd REALShahnameh
+```
 
-   Metrics eksponeres på `http://localhost:9000/metrics` som standard. Sett `METRICS_PORT`
-   for å endre porten.
+### 2. Create and activate a virtual environment
 
-4. Kjør admin-verktøy lokalt (eksempel):
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+```
 
-   ```bash
-   python -m bot.admin_tools list-users
-   ```
+### 3. Install dependencies
 
-   Bruk `show-user` og `list-transactions` for å inspisere detaljer.
+Install the package in editable mode so code changes are picked up automatically:
 
-## Datamodeller
+```bash
+pip install -e .
+```
 
-SQLite-databasen oppretter følgende tabeller:
+If you intend to run formatting and linting checks, install the optional developer extras:
 
-- `users`: registrerer Telegram-brukere.
-- `progress`: lagrer fremdrift i historien per bruker.
-- `real_balances`: holder REAL-saldo for hver bruker.
-- `transactions`: lager en transaksjonslogg knyttet til hver bruker.
+```bash
+pip install -e .[dev]
+```
+
+### 4. Configure environment variables
+
+Copy the example environment file and fill in the required values:
+
+```bash
+cp .env.example .env
+```
+
+Populate the following keys inside `.env`:
+
+| Variable | Default | Description |
+| --- | --- | --- |
+| `BOT_TOKEN` | – | Telegram bot token provided by BotFather. Mandatory. |
+| `DATABASE_URL` | `sqlite:///bot.db` | SQLAlchemy connection string. Use PostgreSQL in production (e.g. `postgresql+psycopg://user:pass@host/db`). |
+| `REAL_MODE` | `mock` | Switch to `production` to enable real payouts. |
+| `REAL_API_BASE_URL` | `https://api.real-token.example` | Base URL for REAL production API. |
+| `REAL_API_KEY` | – | API key required in production mode. |
+| `REAL_API_SECRET` | – | Secret used for request signing in production mode. |
+| `REAL_RATE_LIMIT_PER_MINUTE` | `60` | Throttle limit for token transactions per user. |
+| `REAL_MOCK_MAX_AMOUNT` | `1000` | Cap for mock payouts and anti-abuse threshold. |
+| `ADMIN_USER_IDS` | – | Comma-separated Telegram user IDs that can access admin commands. |
+| `METRICS_PORT` | `9000` | Port exposing Prometheus metrics. |
+| `LOG_LEVEL` | `INFO` | Logging verbosity (`DEBUG`, `INFO`, `WARNING`, ...). |
+
+## Running the bot locally
+
+Start the bot after activating the virtual environment and configuring `.env`:
+
+```bash
+python -m bot.main
+```
+
+The bot uses long polling. Stop the process with `Ctrl+C`. Metrics are exposed at `http://localhost:9000/metrics` unless you override `METRICS_PORT`.
+
+## Using the admin tools
+
+The repository ships with CLI tooling to inspect users and payouts:
+
+```bash
+python -m bot.admin_tools list-users
+python -m bot.admin_tools show-user --telegram-id <id>
+python -m bot.admin_tools list-transactions --limit 20
+```
+
+All commands require the same `.env` configuration as the bot.
+
+## Database schema
+
+The default SQLite database defines the following tables:
+
+- `users` – basic Telegram user profile and metadata.
+- `progress` – narrative progress for each user.
+- `real_balances` – REAL token balances associated with users.
+- `transactions` – immutable ledger of payouts and penalties.
 
 ## Observability
 
-- Logging styres av miljøvariabelen `LOG_LEVEL` (default `INFO`).
-- Prometheus-metrics tilgjengelig via `METRICS_PORT` (default `9000`).
-- Følgende metrics er tilgjengelig:
+- Logging level is controlled via `LOG_LEVEL`.
+- Prometheus metrics are exposed on `METRICS_PORT` (defaults to `9000`).
+- Key metrics include:
   - `real_bot_commands_total{command,status}`
   - `real_bot_command_duration_seconds{command}`
   - `real_bot_active_sessions`
 
-## Onboarding og hjelp
+## Testing and quality checks
 
-- `/start` initierer en guidet onboarding for nye brukere.
-- `/help` og `/faq` gir hjelpetekster og svar på vanlige spørsmål.
-- `/progress` og `/balance` viser henholdsvis fremdrift og økonomi med siste transaksjon.
-
-## Dokumentasjon
-
-- [Pilotplan](docs/pilot_plan.md)
-- [Lanserings- og støtteplan](docs/launch_and_support.md)
-- `token_transactions`: audit-logg for alle tokenutbetalinger.
-
-Se også `docs/real_token_contract.md` for detaljer om API-kontrakten og `docs/security_testing.md` for testprosedyrer.
-
-## Kommandoer
-
-I tillegg til standardkommandoene er følgende tilgjengelig for administratorer (`ADMIN_USER_IDS`):
-
-- `/reward <telegram_id> <amount> <reason> [key=value ...]` – utbetal REAL-tokens til en bruker. Ekstra argumenter på format `key=value` lagres som metadata.
-- `/token_report` – genererer en rapport over tokenforbruk med summer og feillogg.
-
-## Linting og formatering
-
-Installer ekstra utvikleravhengigheter og kjør `black`:
+Activate the virtual environment and run:
 
 ```bash
-pip install -e .[dev]
-black bot
+pytest
 ```
+
+To ensure formatting and linting standards:
+
+```bash
+black bot tests
+```
+
+The optional developer dependencies are defined under `[project.optional-dependencies.dev]` in `pyproject.toml`.
+
+## Deployment notes
+
+- For production, prefer running the bot behind a process manager such as `systemd`, `supervisord`, or Docker.
+- When deploying in webhook mode, configure the `TELEGRAM_WEBHOOK_URL` and expose an HTTPS endpoint (not covered in this sample configuration).
+- Switch `REAL_MODE` to `production` only after provisioning valid REAL API credentials and confirming rate limits with the partner team.
+- Use PostgreSQL for durability; update `DATABASE_URL` accordingly and run `alembic` migrations if you introduce schema changes.
+
+## Troubleshooting
+
+- **Bot fails to start with `InvalidToken`:** Double-check that `BOT_TOKEN` is set correctly in `.env`.
+- **Database locked errors on SQLite:** Ensure only one bot process is running locally and the database file is writable.
+- **Metrics endpoint not reachable:** Confirm the process is running and the `METRICS_PORT` you configured is open.
+- **REAL API errors:** In mock mode, responses are simulated. Switch to production only when the external API is reachable and credentials are valid.
+
+## Additional documentation
+
+For deeper technical or operational information, refer to the documents in the `docs/` directory:
+
+- [docs/pilot_plan.md](docs/pilot_plan.md)
+- [docs/launch_and_support.md](docs/launch_and_support.md)
+- [docs/real_token_contract.md](docs/real_token_contract.md)
+- [docs/security_testing.md](docs/security_testing.md)
+
+The `token_transactions` table serves as an immutable audit trail for all REAL token payouts and reversals.
