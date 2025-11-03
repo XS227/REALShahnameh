@@ -49,7 +49,9 @@ class Settings:
     admin_user_ids: list[int]
 
 
-def load_settings(env_file: Optional[str] = None) -> Settings:
+def load_settings(
+    env_file: Optional[str] = None, *, require_bot_token: bool = True
+) -> Settings:
     """Load environment variables from ``.env`` and return ``Settings``.
 
     Parameters
@@ -74,7 +76,9 @@ def load_settings(env_file: Optional[str] = None) -> Settings:
     admin_user_ids = _parse_csv(os.getenv("ADMIN_USER_IDS"))
 
     if not bot_token:
-        raise RuntimeError("BOT_TOKEN must be set in environment variables.")
+        if require_bot_token:
+            raise RuntimeError("BOT_TOKEN must be set in environment variables.")
+        bot_token = ""
 
     if real_mode not in {"mock", "production"}:
         raise RuntimeError("REAL_MODE must be 'mock' or 'production'.")

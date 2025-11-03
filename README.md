@@ -12,6 +12,7 @@ This repository contains a production-ready Telegram bot that delivers the REAL 
   - [3. Install dependencies](#3-install-dependencies)
   - [4. Configure environment variables](#4-configure-environment-variables)
 - [Running the bot locally](#running-the-bot-locally)
+- [Running the FastAPI service](#running-the-fastapi-service)
 - [Using the admin tools](#using-the-admin-tools)
 - [Database schema](#database-schema)
 - [Observability](#observability)
@@ -83,7 +84,7 @@ Populate the following keys inside `.env`:
 
 | Variable | Default | Description |
 | --- | --- | --- |
-| `BOT_TOKEN` | – | Telegram bot token provided by BotFather. Mandatory. |
+| `BOT_TOKEN` | – | Telegram bot token provided by BotFather. Mandatory for the Telegram bot. Use any placeholder when running only the HTTP API. |
 | `DATABASE_URL` | `sqlite:///bot.db` | SQLAlchemy connection string. Use PostgreSQL in production (e.g. `postgresql+psycopg://user:pass@host/db`). |
 | `REAL_MODE` | `mock` | Switch to `production` to enable real payouts. |
 | `REAL_API_BASE_URL` | `https://api.real-token.example` | Base URL for REAL production API. |
@@ -104,6 +105,24 @@ python -m bot.main
 ```
 
 The bot uses long polling. Stop the process with `Ctrl+C`. Metrics are exposed at `http://localhost:9000/metrics` unless you override `METRICS_PORT`.
+
+## Running the FastAPI service
+
+The project also ships with a lightweight HTTP API that exposes user management and payout functionality. After installing dependencies and configuring `.env`, start the server with:
+
+```bash
+uvicorn bot.api:app --reload
+```
+
+Key endpoints include:
+
+- `GET /health` – health probe.
+- `GET /users` – paginated list of registered Telegram users.
+- `POST /users` – provision a new user record matching the `/start` Telegram flow.
+- `POST /users/{telegram_id}/progress` – append a progress checkpoint.
+- `POST /rewards` – issue REAL token payouts via the configured adapter.
+
+Interactive documentation is available at `http://127.0.0.1:8000/docs` once the server is running.
 
 ## Using the admin tools
 
