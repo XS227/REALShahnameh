@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import { LearningContentRepository } from '../public/scripts/learning/content.js';
+import { LearningContentRepository } from '../src/learning/content.js';
 
 const fetcher = async (url) => {
   const relative = url.startsWith('/') ? url.slice(1) : url;

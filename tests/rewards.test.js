@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createRewardLedger } from '../public/scripts/learning/rewards.js';
-import { createMemoryStorage } from '../public/scripts/learning/storage.js';
+import { createRewardLedger } from '../src/learning/rewards.js';
+import { createMemoryStorage } from '../src/learning/storage.js';
 
 test('reward ledger converts points to REAL tokens', () => {
   const ledger = createRewardLedger({ storage: createMemoryStorage(), conversionRate: 0.1, clock: { now: () => 0 } });

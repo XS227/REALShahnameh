@@ -1,3 +1,4 @@
+import './styles/main.css';
 import { initialiseLearningExperience } from './learning/ui.js';
 
 const languageSelect = document.querySelector('[data-language-switcher]');

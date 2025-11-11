@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createProgressionManager } from '../public/scripts/learning/progression.js';
-import { createMemoryStorage } from '../public/scripts/learning/storage.js';
+import { createProgressionManager } from '../src/learning/progression.js';
+import { createMemoryStorage } from '../src/learning/storage.js';
 
 test('awarding points updates level and xp', () => {
   const progression = createProgressionManager({ storage: createMemoryStorage() });
