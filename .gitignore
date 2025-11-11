@@ -10,4 +10,6 @@ venv/
 .mypy_cache/
 .DS_Store
 *.db
+node_modules/
+dist/
 

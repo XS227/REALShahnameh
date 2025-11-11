@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import { LearningContentRepository } from '../public/scripts/learning/content.js';
-import { createProgressionManager } from '../public/scripts/learning/progression.js';
-import { createRewardLedger } from '../public/scripts/learning/rewards.js';
-import { LearningFlowEngine } from '../public/scripts/learning/flow.js';
-import { createMemoryStorage } from '../public/scripts/learning/storage.js';
+import { LearningContentRepository } from '../src/learning/content.js';
+import { createProgressionManager } from '../src/learning/progression.js';
+import { createRewardLedger } from '../src/learning/rewards.js';
+import { LearningFlowEngine } from '../src/learning/flow.js';
+import { createMemoryStorage } from '../src/learning/storage.js';
 
 const fetcher = async (url) => {
   const relative = url.startsWith('/') ? url.slice(1) : url;
