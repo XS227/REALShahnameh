@@ -1,0 +1,43 @@
+<script>
+let token = localStorage.getItem('token');
+
+async function login() {
+  const res = await fetch('/api/chklogin', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({
+      email: email.value,
+      password: password.value,
+      pattern: pattern.value
+    })
+  });
+
+  const data = await res.json();
+
+  if(data.status === 1){
+    localStorage.setItem('token', data.Key);
+    token = data.Key;
+    loginBox.classList.add('hidden');
+    dashboard.classList.remove('hidden');
+    loadUsers();
+  } else {
+    alert('Login failed');
+  }
+}
+
+async function loadUsers() {
+  const res = await fetch('/api/profile', {
+    headers: {
+      'Authorization': token
+    }
+  });
+
+  const data = await res.json();
+
+  document.querySelector('.card').innerHTML = `
+    <b>Logged in as:</b><br>
+    ${data.data.username}<br>
+    ${data.data.ownermail}
+  `;
+}
+</script>

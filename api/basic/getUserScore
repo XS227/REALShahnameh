@@ -1,0 +1,15 @@
+<?php
+header('Content-Type: application/json');
+
+echo json_encode([
+    "status" => true,
+    "userScore" => [
+        "points" => 100,
+        "tap_energy" => 1,
+        "tap_energy_level" => 1,
+        "current_energy" => 100,
+        "combo_profit" => 0,
+        "combo_points" => 0
+    ]
+]);
+
