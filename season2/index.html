@@ -1,82 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>REAL Shahnameh - Season 2</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>REAL Shahnameh - Play</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+  <section class="card gold-edge header">
+    <div class="profile"><div class="avatar">RS</div><div><h1 class="title">Real Shahnameh</h1><div class="muted">Warrior Rank</div><div class="badges"><span class="badge">Season 2</span><span class="badge">Premium</span></div></div></div>
+  </section>
 
-<body>
+  <section class="grid-2">
+    <article class="card stat-card"><div class="stat-label">Balance</div><div class="stat-value">12,840 REAL</div></article>
+    <article class="card stat-card"><div class="stat-label">Profit / hour</div><div class="stat-value">+172 REAL</div></article>
+  </section>
 
-<div class="app">
+  <section class="orb-wrap">
+    <div class="energy-orb" data-energy-orb><div class="core-icon">REAL</div></div>
+    <div class="energy-meta"><div class="energy-line"><span>Energy</span><span>72 / 100</span></div><div class="bar"><div class="fill"></div></div></div>
+  </section>
 
-<header class="topbar">
-  <div class="profile">
-    <div class="avatar"></div>
-    <div>
-      <h3>SETai</h3>
-      <p>King Level I</p>
-    </div>
-  </div>
-
-  <div class="balance-box">
-    <span>Total Balance</span>
-    <h2>124,580</h2>
-  </div>
-</header>
-
-<section class="hero-section">
-  <div class="energy-ring">
-    <button class="energy-core" onclick="spawnTap(event)">
-      <span class="tap-text">TAP TO MINE</span>
-      <h1>+12</h1>
-    </button>
-  </div>
-</section>
-
-<section class="actions">
-  <button class="gold-btn">⚡ Boost</button>
-  <button class="dark-btn" onclick="location.href='earn.html'">👥 Invite</button>
-</section>
-
-<section class="stats">
-  <div class="stat-card">
-    <span>Profit / hour</span>
-    <h3>+1,280</h3>
-  </div>
-
-  <div class="stat-card">
-    <span>Referral Earnings</span>
-    <h3>+8,420</h3>
-  </div>
-</section>
-
-<nav class="bottom-nav">
-  <a href="index.html" class="nav-item active">
-    <span>⚡</span>
-    <small>Play</small>
-  </a>
-
-  <a href="heroes.html" class="nav-item">
-    <span>👑</span>
-    <small>Heroes</small>
-  </a>
-
-  <a href="learn.html" class="nav-item">
-    <span>📚</span>
-    <small>Learn</small>
-  </a>
-
-  <a href="earn.html" class="nav-item">
-    <span>💰</span>
-    <small>Earn</small>
-  </a>
-</nav>
-
-</div>
-
-<script src="app.js"></script>
-
-</body>
-</html>
+  <section class="action-grid">
+    <article class="card action gold-edge"><h4>Boost</h4><p class="muted">Multiply your tap power for 30 minutes.</p><button class="primary-btn">Activate Boost</button></article>
+    <article class="card action"><h4>Invite</h4><p class="muted">Bring allies and earn REAL rewards.</p><button class="secondary-btn">Share Invite</button></article>
+  </section>
+</main>
+<nav class="bottom-nav"><a class="nav-item active" href="index.html">Play</a><a class="nav-item" href="heroes.html">Heroes</a><a class="nav-item" href="learn.html">Learn</a><a class="nav-item" href="earn.html">Earn</a><a class="nav-item" href="social.html">Social</a></nav>
+<script src="app.js"></script></body></html>
