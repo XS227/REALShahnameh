@@ -1,16 +1,228 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>REAL Shahnameh - Heroes</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="app">
-  <section class="page-head"><h2 class="page-title">Heroes Collection</h2><span class="pill">Season 2 Premium</span></section>
-  <div class="tabs"><span class="tab active">All</span><span class="tab">People</span><span class="tab">Creatures</span><span class="tab">Places</span></div>
-  <article class="card premium-banner gold-edge"><div><h3>Premium Hero Forge</h3><p class="muted">Unlock exclusive skins and boost fusion success rates.</p></div><button class="primary-btn">Open Forge</button></article>
-  <section class="list">
-    <article class="card hero-card gold-edge"><div class="hero-row"><div class="portrait"></div><div><h3>Rostam</h3><div class="muted">Level 12 • +38 REAL/hr</div><p class="muted">Upgrade Cost: 1,280 REAL</p><button class="hero-upgrade">Upgrade</button></div></div></article>
-    <article class="card hero-card"><div class="hero-row"><div class="portrait"></div><div><h3>Sohrab</h3><div class="muted">Level 8 • +23 REAL/hr</div><p class="muted">Upgrade Cost: 880 REAL</p><button class="hero-upgrade">Upgrade</button></div></div></article>
-    <article class="card hero-card"><div class="hero-row"><div class="portrait"></div><div><h3>Tahmineh</h3><div class="muted">Level 6 • +17 REAL/hr</div><p class="muted">Upgrade Cost: 640 REAL</p><button class="hero-upgrade">Upgrade</button></div></div></article>
-    <article class="card hero-card"><div class="hero-row"><div class="portrait"></div><div><h3>King Q</h3><div class="muted">Level 4 • +12 REAL/hr</div><p class="muted">Upgrade Cost: 420 REAL</p><button class="hero-upgrade">Upgrade</button></div></div></article>
-    <article class="card hero-card"><div class="hero-row"><div class="portrait"></div><div><h3>Hooshmand</h3><div class="muted">Level 3 • +8 REAL/hr</div><p class="muted">Upgrade Cost: 300 REAL</p><button class="hero-upgrade">Upgrade</button></div></div></article>
-  </section>
-</main>
-<nav class="bottom-nav"><a class="nav-item" href="index.html">Play</a><a class="nav-item active" href="heroes.html">Heroes</a><a class="nav-item" href="learn.html">Learn</a><a class="nav-item" href="earn.html">Earn</a><a class="nav-item" href="social.html">Social</a></nav>
-<script src="app.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Heroes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+
+    <section class="page-head">
+      <div>
+        <h2 class="page-title">Heroes Collection</h2>
+        <p class="page-sub">Each hero grants a passive that bends the game.</p>
+      </div>
+      <span class="pill">7 / 24</span>
+    </section>
+
+    <article class="card premium-banner gold-edge">
+      <div class="crest">⚔</div>
+      <div class="left">
+        <h3>Hero Forge</h3>
+        <p class="muted" style="margin:0; font-size:12px; color:var(--muted);">Fuse fragments into rare and legendary heroes.</p>
+      </div>
+      <button class="primary-btn" data-toast-msg="Forge opens at LVL 20">Forge</button>
+    </article>
+
+    <!-- Tabs -->
+    <div class="tabs" data-hero-tabs>
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="people">People</button>
+      <button class="tab" data-filter="creatures">Creatures</button>
+      <button class="tab" data-filter="places">Places</button>
+    </div>
+
+    <!-- Collection meta -->
+    <article class="card collection-meta">
+      <div class="row">
+        <span style="color:var(--muted); font-size:12px;">Set bonus · Lions of Pars</span>
+        <span style="color:var(--gold); font-weight:700; font-size:13px;">+8% tap power</span>
+      </div>
+      <div class="bar"><span class="fill" style="width:42%; background: linear-gradient(90deg, var(--violet), var(--gold));"></span></div>
+      <div class="row">
+        <span style="font-size:11px; color:var(--muted);">Collect 5 more legendaries to unlock <b style="color:var(--gold);">Mythic frame</b></span>
+      </div>
+    </article>
+
+    <!-- Hero list -->
+    <section class="hero-list" data-hero-list>
+
+      <article class="card hero-card r-mythic" data-cat="people" data-rarity="mythic">
+        <div class="portrait">⚔</div>
+        <div class="body">
+          <h3>Rostam <span class="rarity-tag r-mythic">Mythic</span></h3>
+          <div class="role">Pahlavan · Tap power</div>
+          <div class="stats">
+            <span class="stat">Tap <b>+38%</b></span>
+            <span class="stat">Crit <b>+12%</b></span>
+            <span class="stat">REAL/hr <b>+38</b></span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">LVL 12 / 30</span>
+          <button class="hero-upgrade">Upgrade · 1,280</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-legend" data-cat="creatures" data-rarity="legend">
+        <div class="portrait">🪶</div>
+        <div class="body">
+          <h3>Simorgh <span class="rarity-tag r-legend">Legendary</span></h3>
+          <div class="role">Phoenix · Energy regen</div>
+          <div class="stats">
+            <span class="stat">Energy regen <b>+24%</b></span>
+            <span class="stat">XP boost <b>+10%</b></span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">LVL 9 / 25</span>
+          <button class="hero-upgrade">Upgrade · 980</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-epic" data-cat="people" data-rarity="epic">
+        <div class="portrait">♛</div>
+        <div class="body">
+          <h3>Tahmineh <span class="rarity-tag r-epic">Epic</span></h3>
+          <div class="role">Princess of Samangan · Referrals</div>
+          <div class="stats">
+            <span class="stat">Referral bonus <b>+18%</b></span>
+            <span class="stat">REAL/hr <b>+17</b></span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">LVL 6 / 20</span>
+          <button class="hero-upgrade">Upgrade · 640</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-epic" data-cat="people" data-rarity="epic">
+        <div class="portrait">🐍</div>
+        <div class="body">
+          <h3>Zahhak <span class="rarity-tag r-epic">Epic</span></h3>
+          <div class="role">Risk · High reward</div>
+          <div class="stats">
+            <span class="stat">Tap <b>+55%</b></span>
+            <span class="stat">Energy cost <b>+30%</b></span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">LVL 4 / 20</span>
+          <button class="hero-upgrade">Upgrade · 720</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-rare" data-cat="people" data-rarity="rare">
+        <div class="portrait">⚒</div>
+        <div class="body">
+          <h3>Kaveh <span class="rarity-tag r-rare">Rare</span></h3>
+          <div class="role">Blacksmith · Crit chance</div>
+          <div class="stats">
+            <span class="stat">Crit <b>+8%</b></span>
+            <span class="stat">REAL/hr <b>+11</b></span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">LVL 5 / 15</span>
+          <button class="hero-upgrade">Upgrade · 420</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-rare" data-cat="people" data-rarity="rare">
+        <div class="portrait">☼</div>
+        <div class="body">
+          <h3>Zal <span class="rarity-tag r-rare">Rare</span></h3>
+          <div class="role">Albino prince · XP gain</div>
+          <div class="stats">
+            <span class="stat">Story XP <b>+12%</b></span>
+            <span class="stat">Quiz XP <b>+8%</b></span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">LVL 3 / 15</span>
+          <button class="hero-upgrade">Upgrade · 360</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-common" data-cat="creatures" data-rarity="common">
+        <div class="portrait">🐎</div>
+        <div class="body">
+          <h3>Rakhsh <span class="rarity-tag r-common">Common</span></h3>
+          <div class="role">Companion · Speed regen</div>
+          <div class="stats">
+            <span class="stat">Energy regen <b>+5%</b></span>
+            <span class="stat">REAL/hr <b>+4</b></span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">LVL 2 / 10</span>
+          <button class="hero-upgrade">Upgrade · 180</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-legend locked" data-cat="places" data-rarity="legend">
+        <div class="portrait">🏔</div>
+        <div class="body">
+          <h3>Mount Damavand <span class="rarity-tag r-legend">Legendary</span></h3>
+          <div class="role">Place · Daily drop chance</div>
+          <div class="stats">
+            <span class="stat">Drop chance <b>+22%</b></span>
+            <span class="stat">Locked at LVL 20</span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">Locked</span>
+          <button class="hero-upgrade" disabled style="filter: grayscale(.5); opacity:.7;">Locked</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-mythic locked" data-cat="creatures" data-rarity="mythic">
+        <div class="portrait">🐉</div>
+        <div class="body">
+          <h3>Akvan Div <span class="rarity-tag r-mythic">Mythic</span></h3>
+          <div class="role">Demon · Combo extender</div>
+          <div class="stats">
+            <span class="stat">Combo window <b>+2.5s</b></span>
+            <span class="stat">Fragment 0 / 5</span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">Fragments</span>
+          <button class="hero-upgrade" disabled style="filter: grayscale(.5); opacity:.7;">Locked</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-epic locked" data-cat="places" data-rarity="epic">
+        <div class="portrait">🏛</div>
+        <div class="body">
+          <h3>Persepolis <span class="rarity-tag r-epic">Epic</span></h3>
+          <div class="role">Place · Guild XP</div>
+          <div class="stats">
+            <span class="stat">Guild XP <b>+15%</b></span>
+            <span class="stat">Unlock at chapter 8</span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">Locked</span>
+          <button class="hero-upgrade" disabled style="filter: grayscale(.5); opacity:.7;">Locked</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><span class="ni-ico">⚡</span>Play</a>
+    <a class="nav-item active" href="heroes.html"><span class="ni-ico">⚔</span>Heroes</a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span>Learn</a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span>Earn</a>
+    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span>Social</a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <script src="app.js"></script>
+</body>
+</html>

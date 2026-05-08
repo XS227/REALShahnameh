@@ -1,19 +1,197 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>REAL Shahnameh - Learn</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="app">
-  <section class="page-head"><h2 class="page-title">Shahnameh Journey</h2><span class="pill">Season 2 Premium</span></section>
-  <section class="card progress gold-edge"><div class="chip-row"><span class="chip">Story XP Boost</span><span class="chip">Premium Rewards</span></div><h2 class="section-title">Shahnameh Journey</h2><div class="muted">Progress: 2 / 8 chapters completed • Read → Quiz → Reward → Unlock</div><div class="bar" style="margin-top:10px;"><div class="fill" style="width:25%"></div></div></section>
-  <article class="card story-card gold-edge"><h3>Current Chapter: Episode 3 — Tahmuras</h3><p class="muted">Continue the chronological saga and complete the quiz to unlock Jamshid.</p><button class="primary-btn">Continue Learning</button></article>
-  <section class="list" style="margin-top:12px;">
-    <article class="card story-card"><h4>Episode 1 — Keyumars</h4><div class="muted">Unlocked • Reward claimed</div></article>
-    <article class="card story-card"><h4>Episode 2 — Hushang</h4><div class="muted">Unlocked • Reward claimed</div></article>
-    <article class="card story-card gold-edge"><h4>Episode 3 — Tahmuras</h4><div class="muted">Unlocked • In progress</div></article>
-    <article class="card story-card locked"><h4>Episode 4 — Jamshid</h4><div class="muted">Locked</div></article>
-    <article class="card story-card locked"><h4>Episode 5 — Zahhak</h4><div class="muted">Locked</div></article>
-    <article class="card story-card locked"><h4>Episode 6 — Fereydun</h4><div class="muted">Locked</div></article>
-    <article class="card story-card locked"><h4>Episode 7 — Zal</h4><div class="muted">Locked</div></article>
-    <article class="card story-card locked"><h4>Episode 8 — Rostam</h4><div class="muted">Locked</div></article>
-  </section>
-</main>
-<nav class="bottom-nav"><a class="nav-item" href="index.html">Play</a><a class="nav-item" href="heroes.html">Heroes</a><a class="nav-item active" href="learn.html">Learn</a><a class="nav-item" href="earn.html">Earn</a><a class="nav-item" href="social.html">Social</a></nav>
-<script src="app.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Learn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+
+    <section class="page-head">
+      <div>
+        <h2 class="page-title">Shahnameh Journey</h2>
+        <p class="page-sub">Read · Quiz · Reward · Unlock the next age.</p>
+      </div>
+      <span class="pill">Season 2</span>
+    </section>
+
+    <!-- Progress overview -->
+    <section class="card gold-edge journey-progress">
+      <div class="row">
+        <div>
+          <div class="lbl" style="font-size:11px; color:var(--muted); letter-spacing:.4px; text-transform:uppercase;">Chronicle progress</div>
+          <div style="font-size:14px; font-weight:700; margin-top:4px;">2 of 12 chapters complete</div>
+        </div>
+        <div class="pct">17%</div>
+      </div>
+      <div class="bar"><span class="fill" style="width:17%"></span></div>
+      <div class="chip-row">
+        <span class="chip warm">+50% Story XP</span>
+        <span class="chip">Hero fragments</span>
+        <span class="chip lush">Boost drops</span>
+      </div>
+    </section>
+
+    <!-- Chapter map -->
+    <div class="section-head"><h3>Chronicle</h3><span class="more" style="cursor:default;">Chronological</span></div>
+    <section class="chapter-map" data-chapter-map>
+
+      <article class="card chapter done" data-chapter="1">
+        <span class="node">✓</span>
+        <h4>Keyumars — The First King</h4>
+        <p class="copy">The dawn of mankind. Keyumars rules from the mountain, clad in leopard skin, and the world learns awe.</p>
+        <div class="meta">
+          <span class="chip lush">Completed</span>
+          <span class="reward">⭐ 200 XP claimed</span>
+        </div>
+      </article>
+
+      <article class="card chapter done" data-chapter="2">
+        <span class="node">✓</span>
+        <h4>Hushang — The Spark of Fire</h4>
+        <p class="copy">Hushang strikes flint against serpent and wakes the eternal flame. Sade is born.</p>
+        <div class="meta">
+          <span class="chip lush">Completed</span>
+          <span class="reward">⭐ 250 XP claimed</span>
+        </div>
+      </article>
+
+      <article class="card chapter active" data-chapter="3">
+        <span class="node">3</span>
+        <h4>Tahmuras — Binder of Demons</h4>
+        <p class="copy">The Div-band rides through smoke and chains the demons. The arts of writing are won.</p>
+        <div class="meta">
+          <span class="chip warm">Active chapter</span>
+          <span class="reward">⭐ 300 XP · 🪙 120 REAL</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="4">
+        <span class="node">4</span>
+        <h4>Jamshid — The Golden Throne</h4>
+        <p class="copy">A kingdom of seven crafts and crystal cups — until pride outshines the sun.</p>
+        <div class="meta">
+          <span class="chip">Locked</span>
+          <span class="reward">⭐ 350 XP · 🪙 150 REAL</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="5">
+        <span class="node">5</span>
+        <h4>Zahhak — The Serpent King</h4>
+        <p class="copy">A thousand years of darkness coils on the king's shoulders. Brains are the price of bread.</p>
+        <div class="meta">
+          <span class="chip">Locked</span>
+          <span class="reward">⭐ 400 XP · 🐍 Hero fragment</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="6">
+        <span class="node">6</span>
+        <h4>Fereydun — The Liberator</h4>
+        <p class="copy">A blacksmith's apron becomes a banner. The mace of bull-head ends a tyrant.</p>
+        <div class="meta">
+          <span class="chip">Locked</span>
+          <span class="reward">⭐ 450 XP · 🪙 200 REAL</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="7">
+        <span class="node">7</span>
+        <h4>Zal — The Albino Prince</h4>
+        <p class="copy">Cast to the mountain, raised by Simorgh, returned to a kingdom that once feared him.</p>
+        <div class="meta">
+          <span class="chip">Locked</span>
+          <span class="reward">⭐ 500 XP · 🪶 Simorgh feather</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="8">
+        <span class="node">8</span>
+        <h4>Rostam — Pahlavan of the Age</h4>
+        <p class="copy">Seven labours, one Rakhsh, no equal under the sky.</p>
+        <div class="meta">
+          <span class="chip">Locked</span>
+          <span class="reward">⭐ 600 XP · ⚔ Rostam shard</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="9">
+        <span class="node">9</span>
+        <h4>Sohrab — Son of the Storm</h4>
+        <p class="copy">Two armies, two hearts, a single tragic blade.</p>
+        <div class="meta">
+          <span class="chip">Locked</span>
+          <span class="reward">⭐ 650 XP · 🪙 280 REAL</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="10">
+        <span class="node">10</span>
+        <h4>Esfandiyar — The Brazen-Bodied</h4>
+        <p class="copy">Invulnerable, except where his eyes can be reached.</p>
+        <div class="meta">
+          <span class="chip">Locked</span>
+          <span class="reward">⭐ 700 XP · 🪙 320 REAL</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="11">
+        <span class="node">11</span>
+        <h4>Simorgh — The Phoenix Council</h4>
+        <p class="copy">Wings the colour of the sun. Wisdom older than language.</p>
+        <div class="meta">
+          <span class="chip">Locked</span>
+          <span class="reward">⭐ 800 XP · 🪶 Mythic feather</span>
+        </div>
+      </article>
+
+      <article class="card chapter locked" data-chapter="12">
+        <span class="node">12</span>
+        <h4>The Final War — Ages End</h4>
+        <p class="copy">The chronicle closes where it began: with fire, with iron, with kings.</p>
+        <div class="meta">
+          <span class="chip warm">Final boss</span>
+          <span class="reward">⭐ 1500 XP · 🏆 Founder badge</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Quiz / story modal -->
+  <div class="modal-backdrop" data-modal>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="grabber"></div>
+      <h3 id="modalTitle" data-modal-title>Chapter</h3>
+      <p class="modal-sub" data-modal-sub>Read the cinematic and answer to claim rewards.</p>
+      <div class="story-block" data-modal-story>—</div>
+      <p class="quiz-question" data-modal-question>—</p>
+      <div class="quiz-options" data-modal-options></div>
+      <div class="quiz-result" data-modal-result>
+        <h4 data-result-title>+300 XP</h4>
+        <div data-result-body>Chapter complete</div>
+        <div class="reward-line" data-result-rewards></div>
+        <button class="primary-btn btn-block" style="margin-top:12px;" data-modal-next>Continue</button>
+      </div>
+      <div style="display:flex; gap:8px; margin-top:14px;" data-modal-actions>
+        <button class="ghost-btn" data-modal-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><span class="ni-ico">⚡</span>Play</a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span>Heroes</a>
+    <a class="nav-item active" href="learn.html"><span class="ni-ico">📜</span>Learn</a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span>Earn</a>
+    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span>Social</a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <div class="unlock-burst" data-burst><span class="ring-burst"></span><span class="label" data-burst-label>Unlocked</span></div>
+  <script src="app.js"></script>
+</body>
+</html>

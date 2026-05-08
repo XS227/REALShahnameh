@@ -1,19 +1,165 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>REAL Shahnameh - Earn</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="app">
-  <section class="page-head"><h2 class="page-title">Earn REAL</h2><span class="pill">Season 2 Premium</span></section>
-  <article class="card gold-edge premium-banner"><div><h3>Referral Link</h3><p class="muted">Premium referrals earn +20% Season Points.</p></div></article>
-  <article class="card gold-edge action"><h3>Referral Link</h3><p class="muted">https://t.me/realshahnameh_bot?start=warrior123</p><div style="display:flex; gap:10px;"><button class="primary-btn">Invite Friends</button><button class="secondary-btn" data-copy-link="https://t.me/realshahnameh_bot?start=warrior123">Copy Link</button></div></article>
-  <section class="list" style="margin-top:12px;">
-    <article class="card milestone"><h4>Invite 3 friends</h4><div class="muted">2 / 3 completed</div></article>
-    <article class="card milestone"><h4>Invite 10 friends</h4><div class="muted">2 / 10 completed</div></article>
-    <article class="card milestone"><h4>Invite 25 friends</h4><div class="muted">2 / 25 completed</div></article>
-  </section>
-  <section class="grid-2">
-    <article class="card stat-card"><div class="stat-label">Season Points</div><div class="stat-value">6,920</div></article>
-    <article class="card stat-card"><div class="stat-label">Airdrop Score</div><div class="stat-value">84%</div></article>
-  </section>
-  <article class="card action" style="margin-top:12px;"><h4>REAL Utility</h4><p class="muted">Stake REAL for boosts, chapter unlocks, and premium guild access in Season 2.</p></article>
-</main>
-<nav class="bottom-nav"><a class="nav-item" href="index.html">Play</a><a class="nav-item" href="heroes.html">Heroes</a><a class="nav-item" href="learn.html">Learn</a><a class="nav-item active" href="earn.html">Earn</a><a class="nav-item" href="social.html">Social</a></nav>
-<script src="app.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Earn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+
+    <section class="page-head">
+      <div>
+        <h2 class="page-title">Earn REAL</h2>
+        <p class="page-sub">Bring your tribe. Earn forever.</p>
+      </div>
+      <span class="pill">VIRAL</span>
+    </section>
+
+    <!-- Invite link card -->
+    <article class="card gold-edge invite-card">
+      <div>
+        <span class="label">Your invite link</span>
+        <div class="invite-link" data-link>https://t.me/realshahnameh_bot?start=warrior_setai</div>
+      </div>
+      <div class="row">
+        <button class="primary-btn" data-share>Share to Telegram</button>
+        <button class="secondary-btn" data-copy-link="https://t.me/realshahnameh_bot?start=warrior_setai">Copy Link</button>
+      </div>
+      <div class="chip-row">
+        <span class="chip warm">+10% lifetime</span>
+        <span class="chip">+20% Season pts</span>
+        <span class="chip lush">Chest drops</span>
+      </div>
+    </article>
+
+    <!-- Team multiplier -->
+    <article class="card violet-edge" style="padding: 14px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+        <div>
+          <div style="font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.4px;">Team multiplier</div>
+          <div style="font-size:22px; font-weight:800; margin-top:4px; color:#cdbcff;">×<span data-team-mult>1.4</span></div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:11px; color:var(--muted);">Active referrals</div>
+          <div style="font-size:18px; font-weight:800; color:var(--gold);"><span data-referrals>7</span> / 100</div>
+        </div>
+      </div>
+      <div class="bar" style="margin-top:10px;"><span class="fill" style="width:7%; background: linear-gradient(90deg, var(--violet), var(--gold));"></span></div>
+    </article>
+
+    <!-- Milestones -->
+    <div class="section-head"><h3>Milestones</h3><span class="more" style="cursor:default;">Tap to share</span></div>
+    <section class="milestone-list">
+
+      <article class="card milestone done">
+        <span class="crest">3</span>
+        <div>
+          <h4>Invite 3 friends</h4>
+          <p class="copy">3 / 3 — Reward chest claimed.</p>
+          <div class="mini-bar"><span class="fill" style="width:100%;"></span></div>
+        </div>
+        <div class="reward-tag">🎁 Chest</div>
+      </article>
+
+      <article class="card milestone">
+        <span class="crest">10</span>
+        <div>
+          <h4>Invite 10 friends</h4>
+          <p class="copy">7 / 10 — Rare hero awaiting.</p>
+          <div class="mini-bar"><span class="fill" style="width:70%;"></span></div>
+        </div>
+        <div class="reward-tag">⚔ Rare hero</div>
+      </article>
+
+      <article class="card milestone">
+        <span class="crest">25</span>
+        <div>
+          <h4>Invite 25 friends</h4>
+          <p class="copy">7 / 25 — Airdrop access unlocks.</p>
+          <div class="mini-bar"><span class="fill" style="width:28%;"></span></div>
+        </div>
+        <div class="reward-tag">🪂 Airdrop</div>
+      </article>
+
+      <article class="card milestone">
+        <span class="crest">100</span>
+        <div>
+          <h4>Invite 100 friends</h4>
+          <p class="copy">7 / 100 — Founder badge + mythic frame.</p>
+          <div class="mini-bar"><span class="fill" style="width:7%;"></span></div>
+        </div>
+        <div class="reward-tag">🏆 Founder</div>
+      </article>
+
+    </section>
+
+    <!-- REAL Utility -->
+    <div class="section-head"><h3>REAL Utility</h3></div>
+    <section class="utility-grid">
+      <article class="card utility-row">
+        <span class="ico">⚡</span>
+        <div>
+          <h5>Boosts &amp; energy refills</h5>
+          <p>Spend REAL to break the cooldown loop.</p>
+        </div>
+      </article>
+      <article class="card utility-row">
+        <span class="ico" style="background: rgba(244,197,107,.14); border-color: var(--border-gold); color: var(--gold);">⚔</span>
+        <div>
+          <h5>Hero upgrades</h5>
+          <p>Push passives into mythic territory.</p>
+        </div>
+      </article>
+      <article class="card utility-row">
+        <span class="ico" style="background: rgba(83,215,156,.14); border-color: rgba(83,215,156,.32); color: var(--jade);">🪙</span>
+        <div>
+          <h5>Premium chapter unlocks</h5>
+          <p>Skip ahead in the chronicle, keep rewards.</p>
+        </div>
+      </article>
+      <article class="card utility-row">
+        <span class="ico" style="background: rgba(94,162,255,.14); border-color: rgba(94,162,255,.32); color: var(--azure);">🏆</span>
+        <div>
+          <h5>Tournaments &amp; cosmetics</h5>
+          <p>Entry fees, exclusive frames, weekly prizes.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Airdrop score -->
+    <div class="section-head"><h3>Airdrop score</h3></div>
+    <article class="card gold-edge airdrop-card">
+      <div class="airdrop-meter"><span>84%</span></div>
+      <div>
+        <div style="font-weight:800; font-size:15px;">Eligibility ascending</div>
+        <div style="font-size:12px; color:var(--muted); margin-top:4px; line-height:1.5;">Season points: <b style="color:var(--gold);">6,920</b> · Rank <b style="color:var(--gold);">#412</b><br/>Invite 18 more to lock guaranteed allocation.</div>
+      </div>
+    </article>
+
+    <!-- Team rewards -->
+    <div class="section-head"><h3>Team rewards</h3></div>
+    <article class="card violet-edge action" style="padding:14px;">
+      <h4 style="display:flex; align-items:center; gap:8px;"><span class="ico">🛡</span> Lions of Pars</h4>
+      <p class="copy" style="margin:6px 0 10px;">Your guild boosts everyone's tap by +6% while you climb. Invite into the same guild for stacked rewards in the seasonal contest.</p>
+      <div class="row">
+        <button class="primary-btn btn-block" data-toast-msg="Guild contest live · ends in 3d 12h">View Contest</button>
+      </div>
+    </article>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><span class="ni-ico">⚡</span>Play</a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span>Heroes</a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span>Learn</a>
+    <a class="nav-item active" href="earn.html"><span class="ni-ico">💎</span>Earn</a>
+    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span>Social</a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,15 +1,267 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>REAL Shahnameh - Social</title><link rel="stylesheet" href="style.css"></head>
-<body><main class="app">
-  <section class="page-head"><h2 class="page-title">Social Hub</h2><span class="pill">Season 2 Premium</span></section>
-  <article class="card premium-banner gold-edge"><div><h3>Guild Wars: Live</h3><p class="muted">Your guild is #12 this week. Push to top 10 for bonus REAL.</p></div><button class="primary-btn">Open Event</button></article>
-  <section class="list">
-    <article class="card leader-card gold-edge"><h3>Leaderboard</h3><div class="muted">1. @AryaLion — 14,220 pts<br>2. @RostamX — 13,904 pts<br>3. @TahminehS2 — 12,881 pts</div></article>
-    <article class="card leader-card"><h3>Top Referrers</h3><div class="muted">@GuildChief (31 invites) • @Alborz (28) • @SohrabPrime (24)</div></article>
-    <article class="card leader-card"><h3>Top Learners</h3><div class="muted">@EpicReader (8/8) • @StoryBlade (7/8) • @NileKnight (7/8)</div></article>
-    <article class="card leader-card"><h3>Guild Preview</h3><div class="muted">Join a guild to compete in cooperative events and weekly bounty raids.</div><button class="primary-btn">Explore Guilds</button></article>
-    <article class="card leader-card"><h3>Activity Feed</h3><div class="muted">Rostam upgraded to Lv.13 • New chapter unlocked by @Atena • Guild FireSimorgh reached top 10</div></article>
-  </section>
-</main>
-<nav class="bottom-nav"><a class="nav-item" href="index.html">Play</a><a class="nav-item" href="heroes.html">Heroes</a><a class="nav-item" href="learn.html">Learn</a><a class="nav-item" href="earn.html">Earn</a><a class="nav-item active" href="social.html">Social</a></nav>
-<script src="app.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Social</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+
+    <section class="page-head">
+      <div>
+        <h2 class="page-title">Social Hub</h2>
+        <p class="page-sub">Compete, ally, climb the chronicle together.</p>
+      </div>
+      <span class="pill">LIVE</span>
+    </section>
+
+    <article class="card premium-banner gold-edge">
+      <div class="crest">🛡</div>
+      <div class="left">
+        <h3>Guild Wars · Week 3</h3>
+        <p class="muted" style="margin:0; font-size:12px; color:var(--muted);">Lions of Pars · #12 → push to top 10 for bonus REAL.</p>
+      </div>
+      <button class="primary-btn" data-toast-msg="Event opens at 18:00 UTC">Enter</button>
+    </article>
+
+    <!-- Leaderboard tabs -->
+    <div class="tabs" data-lb-tabs>
+      <button class="tab active" data-lb="earners">Top Earners</button>
+      <button class="tab" data-lb="learners">Top Learners</button>
+      <button class="tab" data-lb="referrers">Top Referrers</button>
+    </div>
+
+    <!-- Earners -->
+    <article class="card lb-list" data-lb-panel="earners">
+      <div class="lb-row top1">
+        <span class="lb-rank">1</span>
+        <div>
+          <div class="lb-name">@AryaLion</div>
+          <div class="lb-sub">Pahlavan · Lions of Pars</div>
+        </div>
+        <span class="lb-pts">14,220</span>
+      </div>
+      <div class="lb-row top2">
+        <span class="lb-rank">2</span>
+        <div>
+          <div class="lb-name">@RostamX</div>
+          <div class="lb-sub">Mythic frame</div>
+        </div>
+        <span class="lb-pts">13,904</span>
+      </div>
+      <div class="lb-row top3">
+        <span class="lb-rank">3</span>
+        <div>
+          <div class="lb-name">@TahminehS2</div>
+          <div class="lb-sub">House of Simorgh</div>
+        </div>
+        <span class="lb-pts">12,881</span>
+      </div>
+      <div class="lb-row">
+        <span class="lb-rank">4</span>
+        <div>
+          <div class="lb-name">@ZalKnight</div>
+          <div class="lb-sub">Warriors of Rostam</div>
+        </div>
+        <span class="lb-pts">11,540</span>
+      </div>
+      <div class="lb-row">
+        <span class="lb-rank">5</span>
+        <div>
+          <div class="lb-name">@KingDarius</div>
+          <div class="lb-sub">Lions of Pars</div>
+        </div>
+        <span class="lb-pts">10,872</span>
+      </div>
+      <div class="lb-row" style="background: rgba(244,197,107,.06);">
+        <span class="lb-rank">412</span>
+        <div>
+          <div class="lb-name">You · King Setai</div>
+          <div class="lb-sub">Climb 14 ranks for chest</div>
+        </div>
+        <span class="lb-pts">6,920</span>
+      </div>
+    </article>
+
+    <!-- Learners -->
+    <article class="card lb-list" data-lb-panel="learners" style="display:none;">
+      <div class="lb-row top1">
+        <span class="lb-rank">1</span>
+        <div>
+          <div class="lb-name">@EpicReader</div>
+          <div class="lb-sub">12 / 12 chapters</div>
+        </div>
+        <span class="lb-pts">All myths</span>
+      </div>
+      <div class="lb-row top2">
+        <span class="lb-rank">2</span>
+        <div>
+          <div class="lb-name">@StoryBlade</div>
+          <div class="lb-sub">11 / 12 chapters</div>
+        </div>
+        <span class="lb-pts">11 quizzes</span>
+      </div>
+      <div class="lb-row top3">
+        <span class="lb-rank">3</span>
+        <div>
+          <div class="lb-name">@NileKnight</div>
+          <div class="lb-sub">11 / 12 chapters</div>
+        </div>
+        <span class="lb-pts">10 perfect</span>
+      </div>
+      <div class="lb-row">
+        <span class="lb-rank">4</span>
+        <div>
+          <div class="lb-name">@LampOfFars</div>
+          <div class="lb-sub">10 / 12 chapters</div>
+        </div>
+        <span class="lb-pts">9 perfect</span>
+      </div>
+      <div class="lb-row">
+        <span class="lb-rank">5</span>
+        <div>
+          <div class="lb-name">@VeilWalker</div>
+          <div class="lb-sub">10 / 12 chapters</div>
+        </div>
+        <span class="lb-pts">8 perfect</span>
+      </div>
+    </article>
+
+    <!-- Referrers -->
+    <article class="card lb-list" data-lb-panel="referrers" style="display:none;">
+      <div class="lb-row top1">
+        <span class="lb-rank">1</span>
+        <div>
+          <div class="lb-name">@GuildChief</div>
+          <div class="lb-sub">Founder · Lions of Pars</div>
+        </div>
+        <span class="lb-pts">31</span>
+      </div>
+      <div class="lb-row top2">
+        <span class="lb-rank">2</span>
+        <div>
+          <div class="lb-name">@Alborz</div>
+          <div class="lb-sub">Tribe leader</div>
+        </div>
+        <span class="lb-pts">28</span>
+      </div>
+      <div class="lb-row top3">
+        <span class="lb-rank">3</span>
+        <div>
+          <div class="lb-name">@SohrabPrime</div>
+          <div class="lb-sub">House of Simorgh</div>
+        </div>
+        <span class="lb-pts">24</span>
+      </div>
+      <div class="lb-row">
+        <span class="lb-rank">4</span>
+        <div>
+          <div class="lb-name">@KaveAnvil</div>
+          <div class="lb-sub">Free agent</div>
+        </div>
+        <span class="lb-pts">19</span>
+      </div>
+    </article>
+
+    <!-- Guild preview -->
+    <div class="section-head"><h3>Guilds</h3><a class="more" href="#">All guilds ›</a></div>
+    <section class="guild-list">
+      <article class="card guild-row">
+        <div class="guild-crest">🦁</div>
+        <div>
+          <h5>Lions of Pars</h5>
+          <div class="meta">142 / 200 members · #12 globally</div>
+        </div>
+        <button class="secondary-btn" data-toast-msg="You are already in Lions of Pars">Joined</button>
+      </article>
+      <article class="card guild-row">
+        <div class="guild-crest" style="background: linear-gradient(140deg, rgba(140,109,255,.22), rgba(94,162,255,.18)); border-color: var(--border-violet);">🪶</div>
+        <div>
+          <h5>House of Simorgh</h5>
+          <div class="meta">98 / 200 members · #5 globally</div>
+        </div>
+        <button class="secondary-btn" data-toast-msg="Application sent to House of Simorgh">Apply</button>
+      </article>
+      <article class="card guild-row">
+        <div class="guild-crest" style="background: linear-gradient(140deg, rgba(255,82,103,.22), rgba(255,138,61,.18)); border-color: rgba(255,138,61,.4);">⚔</div>
+        <div>
+          <h5>Warriors of Rostam</h5>
+          <div class="meta">187 / 200 members · #2 globally</div>
+        </div>
+        <button class="secondary-btn" data-toast-msg="Warriors of Rostam is full this season">Full</button>
+      </article>
+    </section>
+
+    <!-- Activity -->
+    <div class="section-head"><h3>Activity</h3></div>
+    <article class="card feed-list">
+      <div class="feed-row">
+        <span class="feed-icon" style="color: var(--gold);">📜</span>
+        <div class="text"><b>SETai</b> completed Chapter 4 — Jamshid</div>
+        <span class="time">2m</span>
+      </div>
+      <div class="feed-row">
+        <span class="feed-icon" style="color: var(--azure);">👥</span>
+        <div class="text"><b>RostamX</b> invited 5 new warriors</div>
+        <span class="time">8m</span>
+      </div>
+      <div class="feed-row">
+        <span class="feed-icon" style="color: var(--jade);">⭐</span>
+        <div class="text"><b>King Darius</b> reached LVL 12</div>
+        <span class="time">21m</span>
+      </div>
+      <div class="feed-row">
+        <span class="feed-icon" style="color: #cdbcff;">⚔</span>
+        <div class="text"><b>Atena</b> upgraded Rostam to LVL 13</div>
+        <span class="time">42m</span>
+      </div>
+      <div class="feed-row">
+        <span class="feed-icon" style="color: var(--ember);">🪂</span>
+        <div class="text">Guild <b>FireSimorgh</b> reached top 10</div>
+        <span class="time">1h</span>
+      </div>
+    </article>
+
+    <!-- Events -->
+    <div class="section-head"><h3>Events</h3></div>
+    <section class="utility-grid">
+      <article class="card utility-row">
+        <span class="ico" style="background: rgba(244,197,107,.14); border-color: var(--border-gold); color: var(--gold);">🏆</span>
+        <div>
+          <h5>Weekly Tournament — Royal Cup</h5>
+          <p>Top 100 share 100,000 REAL · Ends in 2d 14h</p>
+        </div>
+      </article>
+      <article class="card utility-row">
+        <span class="ico" style="background: rgba(94,162,255,.14); border-color: rgba(94,162,255,.32); color: var(--azure);">📣</span>
+        <div>
+          <h5>Referral Contest</h5>
+          <p>Top 10 referrers earn the Founder Frame · Ends Sunday</p>
+        </div>
+      </article>
+      <article class="card utility-row">
+        <span class="ico">📜</span>
+        <div>
+          <h5>Learning Race</h5>
+          <p>Finish chapters 1–6 first for 5,000 REAL bonus.</p>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><span class="ni-ico">⚡</span>Play</a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span>Heroes</a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span>Learn</a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span>Earn</a>
+    <a class="nav-item active" href="social.html"><span class="ni-ico">👥</span>Social</a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <script src="app.js"></script>
+</body>
+</html>
