@@ -11,6 +11,136 @@
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
   /* ===========================================================
+     Debug overlay — visible on-screen error reporter so the
+     Telegram WebView never silently shows a dark loading spinner.
+     Errors / failed fetches / unhandled rejections all surface here.
+     Toggle visibility manually with #debug in the URL hash.
+     =========================================================== */
+
+  const Debug = (() => {
+    let host = null;
+    let log  = null;
+    const lines = [];
+
+    const ensureHost = () => {
+      if (host) return host;
+      host = document.createElement("div");
+      host.setAttribute("data-debug-overlay", "");
+      host.style.cssText = [
+        "position:fixed", "left:0", "right:0", "bottom:0",
+        "max-height:45vh", "overflow:auto",
+        "background:rgba(8,10,18,.94)", "color:#ffd28a",
+        "font:12px/1.4 ui-monospace,Menlo,Consolas,monospace",
+        "padding:10px 12px", "border-top:1px solid #f4c56b",
+        "z-index:2147483647", "white-space:pre-wrap",
+        "word-break:break-word", "display:none"
+      ].join(";");
+      const close = document.createElement("button");
+      close.textContent = "×";
+      close.setAttribute("aria-label", "Close debug overlay");
+      close.style.cssText = "position:absolute;top:4px;right:8px;background:none;border:0;color:#ffd28a;font-size:18px;cursor:pointer";
+      close.addEventListener("click", () => { host.style.display = "none"; });
+      log = document.createElement("div");
+      host.appendChild(close);
+      host.appendChild(log);
+      const attach = () => { if (document.body) document.body.appendChild(host); };
+      if (document.body) attach(); else document.addEventListener("DOMContentLoaded", attach, { once: true });
+      return host;
+    };
+
+    const render = () => {
+      ensureHost();
+      log.textContent = lines.slice(-50).join("\n");
+      host.style.display = "";
+      host.scrollTop = host.scrollHeight;
+    };
+
+    return {
+      push(label, detail) {
+        const ts = new Date().toISOString().split("T")[1].replace("Z", "");
+        lines.push(`[${ts}] ${label}${detail ? " — " + detail : ""}`);
+        try { render(); } catch (_) { /* DOM not ready yet */ }
+      },
+      info(msg) {
+        try { console.log(msg); } catch (_) {}
+        const ts = new Date().toISOString().split("T")[1].replace("Z", "");
+        lines.push(`[${ts}] ${msg}`);
+      }
+    };
+  })();
+
+  // Surface synchronous errors
+  window.addEventListener("error", (e) => {
+    const where = e.filename ? `${e.filename}:${e.lineno}:${e.colno}` : "unknown";
+    Debug.push("JS error", `${e.message} @ ${where}`);
+  });
+  // Surface unhandled async rejections
+  window.addEventListener("unhandledrejection", (e) => {
+    const reason = (e.reason && (e.reason.stack || e.reason.message)) || String(e.reason);
+    Debug.push("Promise rejected", reason);
+  });
+  // Wrap fetch so we can see network failures (Telegram WebView often masks them)
+  if (window.fetch) {
+    const origFetch = window.fetch.bind(window);
+    window.fetch = (input, init) => {
+      const url = typeof input === "string" ? input : (input && input.url) || "";
+      return origFetch(input, init).then((r) => {
+        if (!r.ok) Debug.push("Fetch !ok", `${r.status} ${url}`);
+        return r;
+      }).catch((err) => {
+        Debug.push("Fetch failed", `${url} — ${err && err.message}`);
+        throw err;
+      });
+    };
+  }
+  if (location.hash.includes("debug")) {
+    Debug.push("Debug overlay", "manual #debug requested");
+  }
+
+  /* ===========================================================
+     Telegram Mini App bootstrap — runs immediately so the
+     WebView shell dismisses its loading screen ASAP.
+     Falls back safely when running outside Telegram.
+     =========================================================== */
+
+  const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
+
+  if (tg) {
+    try {
+      tg.ready();
+      try { tg.expand(); } catch (_) { /* older clients */ }
+      // Theme-aware background so the splash → app handoff stays dark.
+      try { if (typeof tg.setBackgroundColor === "function") tg.setBackgroundColor("#04050b"); } catch (_) {}
+      try { if (typeof tg.setHeaderColor === "function") tg.setHeaderColor("#04050b"); } catch (_) {}
+      console.log("Telegram init ok");
+      console.log(window.Telegram);
+      console.log(tg.initDataUnsafe);
+      Debug.info(`Telegram init ok — platform=${tg.platform || "?"} v=${tg.version || "?"}`);
+      const u = tg.initDataUnsafe && tg.initDataUnsafe.user;
+      if (u) Debug.info(`tg user: id=${u.id} ${u.username || u.first_name || ""}`);
+    } catch (err) {
+      Debug.push("Telegram init failed", err && err.message);
+    }
+  } else {
+    console.log("Telegram WebApp not detected — running in plain browser");
+    Debug.info("Telegram WebApp not detected — running in plain browser");
+  }
+
+  const haptic = (style = "light") => {
+    try {
+      if (tg && tg.HapticFeedback) {
+        if (style === "success" || style === "error" || style === "warning") {
+          tg.HapticFeedback.notificationOccurred(style);
+        } else {
+          tg.HapticFeedback.impactOccurred(style);
+        }
+      } else if (navigator.vibrate) {
+        navigator.vibrate(style === "heavy" ? 18 : style === "medium" ? 10 : 6);
+      }
+    } catch (_) { /* noop */ }
+  };
+
+  /* ===========================================================
      i18n dictionary (EN + FA) + path titles
      =========================================================== */
 
@@ -444,6 +574,23 @@
   // expose for console/demo only
   if (typeof window !== "undefined") window.RealPlayer = Player;
 
+  // Mirror Telegram user identity into Player state once it's available.
+  try {
+    const tgUser = tg && tg.initDataUnsafe && tg.initDataUnsafe.user;
+    if (tgUser && tgUser.id) {
+      Player.set({
+        userId: String(tgUser.id),
+        username: tgUser.username || tgUser.first_name || null
+      });
+      // Honor Telegram's UI language hint when the user hasn't picked one yet.
+      if (!Storage.read(LS.LANG) && tgUser.language_code === "fa") {
+        Player.set({ language: "fa" });
+      }
+    }
+  } catch (err) {
+    Debug.push("Player.set(tg user) failed", err && err.message);
+  }
+
   const getLang = () => {
     const l = Storage.read(LS.LANG);
     return (l === "fa" || l === "en") ? l : null;
@@ -826,21 +973,6 @@
   } else {
     bootChrome();
   }
-
-  const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
-  const haptic = (style = "light") => {
-    try {
-      if (tg && tg.HapticFeedback) {
-        if (style === "success" || style === "error" || style === "warning") {
-          tg.HapticFeedback.notificationOccurred(style);
-        } else {
-          tg.HapticFeedback.impactOccurred(style);
-        }
-      } else if (navigator.vibrate) {
-        navigator.vibrate(style === "heavy" ? 18 : style === "medium" ? 10 : 6);
-      }
-    } catch (_) { /* noop */ }
-  };
 
   /* ---------- shared: any click on [data-toast-msg] -> toast ---------- */
   document.addEventListener("click", (e) => {
