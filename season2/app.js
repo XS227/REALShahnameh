@@ -10,6 +10,556 @@
   const $  = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
+  /* ===========================================================
+     i18n dictionary (EN + FA) + path titles
+     =========================================================== */
+
+  const I18N = {
+    en: {
+      // nav
+      play: "Play", heroes: "Heroes", learn: "Learn", earn: "Earn", social: "Social",
+
+      // titles
+      play_title: "REAL Shahnameh",
+      learn_title: "Shahnameh Journey",
+      learn_sub: "Read · Quiz · Reward · Unlock the next age.",
+      heroes_title: "Heroes Collection",
+      heroes_sub: "Each hero grants a passive that bends the game.",
+      earn_title: "Earn REAL",
+      earn_sub: "Bring your tribe. Earn forever.",
+      social_title: "Social Hub",
+      social_sub: "Compete, ally, climb the chronicle together.",
+
+      // top bar / labels
+      vip: "VIP",
+      season2: "Season 2",
+      level: "LVL",
+      balance: "Balance",
+      profit_hr: "Profit / hr",
+      energy: "Energy",
+      auto_claim: "REAL · auto-claim",
+      today_delta: "+1,240 today",
+
+      // play actions
+      boost: "Boost",
+      boost_copy: "Multiply tap power 3× for 30 minutes. Stacks with combo critical.",
+      activate: "Activate",
+      invite: "Invite",
+      invite_copy: "Bring allies. Earn 10% of their REAL forever + chest drops.",
+      share_link_btn: "Share Link",
+
+      // play stats
+      your_edge: "Your edge",
+      compare: "Compare ›",
+      daily_streak: "Daily streak",
+      combo: "Combo",
+      referral_real: "Referral REAL",
+      xp_to_level: "XP to LVL 18",
+      streak_days: "12 days",
+
+      // learn
+      chronicle: "Chronicle",
+      chronological: "Chronological",
+      chronicle_progress: "Chronicle progress",
+      chapters_done: "2 of 12 chapters complete",
+      story_xp_boost: "+50% Story XP",
+      hero_fragments: "Hero fragments",
+      boost_drops: "Boost drops",
+
+      // heroes
+      collection_count: "7 / 24",
+      forge_title: "Hero Forge",
+      forge_copy: "Fuse fragments into rare and legendary heroes.",
+      forge_btn: "Forge",
+      all: "All", people: "People", creatures: "Creatures", places: "Places",
+      set_bonus: "Set bonus · Lions of Pars",
+      set_bonus_value: "+8% tap power",
+      set_collect_msg: "Collect 5 more legendaries to unlock",
+      mythic_frame: "Mythic frame",
+      upgrade: "Upgrade",
+      locked: "Locked",
+
+      // earn
+      viral: "VIRAL",
+      your_invite_link: "Your invite link",
+      share_to_telegram: "Share to Telegram",
+      copy_link: "Copy Link",
+      lifetime_10: "+10% lifetime",
+      season_pts_20: "+20% Season pts",
+      chest_drops: "Chest drops",
+      team_multiplier: "Team multiplier",
+      active_referrals: "Active referrals",
+      milestones: "Milestones",
+      tap_to_share: "Tap to share",
+      real_utility: "REAL Utility",
+      airdrop_score: "Airdrop score",
+      airdrop_eligible: "Eligibility ascending",
+      team_rewards: "Team rewards",
+      view_contest: "View Contest",
+
+      // social
+      live: "LIVE",
+      guild_wars: "Guild Wars · Week 3",
+      guild_wars_sub: "Lions of Pars · #12 → push to top 10 for bonus REAL.",
+      enter_event: "Enter",
+      top_earners: "Top Earners",
+      top_learners: "Top Learners",
+      top_referrers: "Top Referrers",
+      guilds: "Guilds",
+      all_guilds: "All guilds ›",
+      activity: "Activity",
+      events: "Events",
+      joined: "Joined", apply: "Apply", full: "Full",
+
+      // path titles
+      warrior_of_pars: "⚔ Warrior of Pars",
+      heroine_of_pars: "♛ Heroine of Pars",
+      kingname_hero: "King Setai",
+      kingname_heroine: "Queen Setai",
+
+      // onboarding
+      onboarding_welcome: "Welcome to Season 2",
+      onboarding_brand: "REAL Shahnameh",
+      onboarding_lang_title: "Choose your language",
+      onboarding_lang_sub: "You can change this anytime in settings.",
+      onboarding_path_title: "Choose your path",
+      onboarding_path_sub: "Your path shapes your title and future quests.",
+      hero: "Hero",
+      heroine: "Heroine",
+      hero_sub: "Walk the path of warriors.",
+      heroine_sub: "Walk the path of queens and legends.",
+      cont: "Continue",
+      back: "Back",
+      begin: "Begin Season 2",
+      english: "English",
+      persian: "فارسی",
+
+      // settings
+      settings: "Settings",
+      language: "Language",
+      path: "Path",
+      reset_onboarding: "Reset onboarding",
+      reset_onboarding_sub: "Choose language and path again.",
+      close: "Close",
+      saved: "Saved",
+      reset_done: "Onboarding reset"
+    },
+    fa: {
+      play: "بازی", heroes: "قهرمانان", learn: "یادگیری", earn: "درآمد", social: "اجتماعی",
+
+      play_title: "ریل شاهنامه",
+      learn_title: "سفر شاهنامه",
+      learn_sub: "بخوان · پاسخ بده · جایزه بگیر · فصل بعد را باز کن.",
+      heroes_title: "مجموعه قهرمانان",
+      heroes_sub: "هر قهرمان توانی پنهان به بازی می‌بخشد.",
+      earn_title: "کسب REAL",
+      earn_sub: "قبیله‌ات را بیاور. تا ابد درآمد بگیر.",
+      social_title: "مرکز اجتماعی",
+      social_sub: "رقابت، اتحاد، صعود در شاهنامه — همه با هم.",
+
+      vip: "ویژه",
+      season2: "فصل دوم",
+      level: "سطح",
+      balance: "موجودی",
+      profit_hr: "درآمد ساعتی",
+      energy: "انرژی",
+      auto_claim: "REAL · دریافت خودکار",
+      today_delta: "+۱٬۲۴۰ امروز",
+
+      boost: "تقویت",
+      boost_copy: "قدرت ضربه را ۳ برابر کن، برای ۳۰ دقیقه. با ترکیب بحرانی هم‌افزا می‌شود.",
+      activate: "فعال‌سازی",
+      invite: "دعوت",
+      invite_copy: "هم‌رزمان را بیاور. ۱۰٪ از REAL آن‌ها را تا ابد بگیر و صندوقچه دریافت کن.",
+      share_link_btn: "اشتراک لینک",
+
+      your_edge: "برتری شما",
+      compare: "مقایسه ›",
+      daily_streak: "زنجیره روزانه",
+      combo: "ترکیب",
+      referral_real: "REAL از معرفی",
+      xp_to_level: "XP تا سطح ۱۸",
+      streak_days: "۱۲ روز",
+
+      chronicle: "شرح وقایع",
+      chronological: "ترتیب تاریخی",
+      chronicle_progress: "پیشرفت شاهنامه",
+      chapters_done: "۲ از ۱۲ فصل کامل شد",
+      story_xp_boost: "+۵۰٪ XP داستانی",
+      hero_fragments: "قطعات قهرمان",
+      boost_drops: "دریافت تقویتی",
+
+      collection_count: "۷ / ۲۴",
+      forge_title: "آهنگری قهرمان",
+      forge_copy: "قطعات را در آهنگری به قهرمانان نایاب و افسانه‌ای تبدیل کن.",
+      forge_btn: "آهنگری",
+      all: "همه", people: "اشخاص", creatures: "موجودات", places: "مکان‌ها",
+      set_bonus: "پاداش گروه · شیران پارس",
+      set_bonus_value: "+۸٪ قدرت ضربه",
+      set_collect_msg: "۵ افسانه‌ای دیگر جمع کن تا باز شود",
+      mythic_frame: "قاب اساطیری",
+      upgrade: "ارتقا",
+      locked: "قفل",
+
+      viral: "وایرال",
+      your_invite_link: "لینک دعوت شما",
+      share_to_telegram: "اشتراک در تلگرام",
+      copy_link: "کپی لینک",
+      lifetime_10: "+۱۰٪ مادام‌العمر",
+      season_pts_20: "+۲۰٪ امتیاز فصل",
+      chest_drops: "صندوقچه‌ها",
+      team_multiplier: "ضریب تیمی",
+      active_referrals: "معرفی‌های فعال",
+      milestones: "نقاط عطف",
+      tap_to_share: "برای اشتراک‌گذاری بزن",
+      real_utility: "کاربردهای REAL",
+      airdrop_score: "امتیاز ایردراپ",
+      airdrop_eligible: "واجد شرایط در حال صعود",
+      team_rewards: "پاداش تیمی",
+      view_contest: "مشاهده مسابقه",
+
+      live: "زنده",
+      guild_wars: "جنگ اتحادیه‌ها · هفته ۳",
+      guild_wars_sub: "شیران پارس · #۱۲ → به جمع ۱۰ تای برتر برس و REAL پاداش بگیر.",
+      enter_event: "ورود",
+      top_earners: "برترین درآمدزایان",
+      top_learners: "برترین دانش‌آموختگان",
+      top_referrers: "برترین معرفان",
+      guilds: "اتحادیه‌ها",
+      all_guilds: "همه اتحادیه‌ها ›",
+      activity: "فعالیت",
+      events: "رویدادها",
+      joined: "عضو شدی", apply: "درخواست", full: "تکمیل",
+
+      warrior_of_pars: "⚔ قهرمان پارس",
+      heroine_of_pars: "♛ قهرمان‌بانو پارس",
+      kingname_hero: "شاه ستائی",
+      kingname_heroine: "ملکه ستائی",
+
+      onboarding_welcome: "به فصل دوم خوش آمدید",
+      onboarding_brand: "ریل شاهنامه",
+      onboarding_lang_title: "زبان خود را انتخاب کنید",
+      onboarding_lang_sub: "این انتخاب را هرگاه بخواهی از تنظیمات تغییر بده.",
+      onboarding_path_title: "مسیر خود را انتخاب کنید",
+      onboarding_path_sub: "مسیر تو عنوان و ماجراهای آینده‌ات را شکل می‌دهد.",
+      hero: "قهرمان",
+      heroine: "قهرمان‌بانو",
+      hero_sub: "گام در راه جنگاوران بگذار.",
+      heroine_sub: "گام در راه ملکه‌ها و افسانه‌ها بگذار.",
+      cont: "ادامه",
+      back: "بازگشت",
+      begin: "آغاز فصل دوم",
+      english: "English",
+      persian: "فارسی",
+
+      settings: "تنظیمات",
+      language: "زبان",
+      path: "مسیر",
+      reset_onboarding: "بازنشانی شروع",
+      reset_onboarding_sub: "زبان و مسیر را دوباره انتخاب کن.",
+      close: "بستن",
+      saved: "ذخیره شد",
+      reset_done: "بازنشانی انجام شد"
+    }
+  };
+
+  const LS = {
+    LANG: "real_lang",
+    PATH: "real_path"
+  };
+
+  const getLang = () => {
+    const l = localStorage.getItem(LS.LANG);
+    return (l === "fa" || l === "en") ? l : null;
+  };
+  const getPath = () => {
+    const p = localStorage.getItem(LS.PATH);
+    return (p === "hero" || p === "heroine") ? p : null;
+  };
+  const t = (key) => {
+    const lang = getLang() || "en";
+    return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key;
+  };
+
+  const applyLang = (lang) => {
+    const html = document.documentElement;
+    html.setAttribute("lang", lang === "fa" ? "fa" : "en");
+    html.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
+
+    // text content
+    $$("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      const val = (I18N[lang] && I18N[lang][key]);
+      if (val != null) el.textContent = val;
+    });
+    // attribute swaps: data-i18n-attr="aria-label:close,placeholder:foo"
+    $$("[data-i18n-attr]").forEach((el) => {
+      const spec = el.getAttribute("data-i18n-attr");
+      spec.split(",").forEach((pair) => {
+        const [attr, key] = pair.split(":").map((s) => s.trim());
+        const val = I18N[lang] && I18N[lang][key];
+        if (val != null) el.setAttribute(attr, val);
+      });
+    });
+  };
+
+  const applyPath = (path) => {
+    const lang = getLang() || "en";
+    const titleKey = path === "heroine" ? "heroine_of_pars" : "warrior_of_pars";
+    const nameKey  = path === "heroine" ? "kingname_heroine" : "kingname_hero";
+    $$("[data-path-title]").forEach((el) => { el.textContent = (I18N[lang][titleKey]); });
+    $$("[data-path-name]").forEach((el)  => { el.textContent = (I18N[lang][nameKey]);  });
+  };
+
+  /* ---------- toast (used by onboarding too, declared early) ---------- */
+  const toast = (msg) => {
+    const el = $("[data-toast]");
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add("show");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => el.classList.remove("show"), 1800);
+  };
+
+  /* ===========================================================
+     Onboarding overlay
+     =========================================================== */
+
+  const buildOnboarding = () => {
+    const lang = getLang(); // may be null
+    const startStep = lang ? 2 : 1;
+
+    const node = document.createElement("div");
+    node.className = "onboarding";
+    node.innerHTML = `
+      <div class="ob-bg"></div>
+      <div class="ob-shell">
+        <div class="ob-brand">
+          <div class="ob-crest">⚔</div>
+          <div class="ob-brand-name" data-ob-brand>REAL Shahnameh</div>
+          <div class="ob-brand-sub" data-ob-welcome>Welcome to Season 2</div>
+        </div>
+
+        <div class="ob-step" data-step="1">
+          <h2 class="ob-h" data-ob-title>Choose your language</h2>
+          <p class="ob-sub" data-ob-sub>You can change this anytime in settings.</p>
+          <div class="ob-grid">
+            <button class="ob-card" data-pick-lang="en">
+              <span class="ob-flag">🇬🇧</span>
+              <span class="ob-card-title">English</span>
+              <span class="ob-card-sub">Continue in English</span>
+            </button>
+            <button class="ob-card" data-pick-lang="fa">
+              <span class="ob-flag">🇮🇷</span>
+              <span class="ob-card-title">فارسی</span>
+              <span class="ob-card-sub">ادامه به فارسی</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="ob-step" data-step="2" hidden>
+          <h2 class="ob-h" data-ob-title-2>Choose your path</h2>
+          <p class="ob-sub" data-ob-sub-2>Your path shapes your title and future quests.</p>
+          <div class="ob-grid">
+            <button class="ob-card path" data-pick-path="hero">
+              <span class="ob-emblem">⚔</span>
+              <span class="ob-card-title" data-ob-hero>Hero</span>
+              <span class="ob-card-sub" data-ob-hero-sub>Walk the path of warriors.</span>
+            </button>
+            <button class="ob-card path" data-pick-path="heroine">
+              <span class="ob-emblem">♛</span>
+              <span class="ob-card-title" data-ob-heroine>Heroine</span>
+              <span class="ob-card-sub" data-ob-heroine-sub>Walk the path of queens and legends.</span>
+            </button>
+          </div>
+          <div class="ob-foot">
+            <button class="ghost-btn" data-ob-back>Back</button>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(node);
+    document.body.classList.add("ob-open");
+
+    const setStep = (n) => {
+      $$(".ob-step", node).forEach((s) => {
+        s.hidden = String(n) !== s.getAttribute("data-step");
+      });
+    };
+
+    const refreshCopy = () => {
+      const l = getLang() || "en";
+      const tx = I18N[l];
+      node.querySelector("[data-ob-brand]").textContent = tx.onboarding_brand;
+      node.querySelector("[data-ob-welcome]").textContent = tx.onboarding_welcome;
+      node.querySelector("[data-ob-title]").textContent = tx.onboarding_lang_title;
+      node.querySelector("[data-ob-sub]").textContent = tx.onboarding_lang_sub;
+      node.querySelector("[data-ob-title-2]").textContent = tx.onboarding_path_title;
+      node.querySelector("[data-ob-sub-2]").textContent = tx.onboarding_path_sub;
+      node.querySelector("[data-ob-hero]").textContent = tx.hero;
+      node.querySelector("[data-ob-hero-sub]").textContent = tx.hero_sub;
+      node.querySelector("[data-ob-heroine]").textContent = tx.heroine;
+      node.querySelector("[data-ob-heroine-sub]").textContent = tx.heroine_sub;
+      node.querySelector("[data-ob-back]").textContent = tx.back;
+    };
+
+    setStep(startStep);
+    if (lang) { applyLang(lang); refreshCopy(); }
+
+    // language picks
+    $$("[data-pick-lang]", node).forEach((b) => {
+      b.addEventListener("click", () => {
+        const l = b.getAttribute("data-pick-lang");
+        localStorage.setItem(LS.LANG, l);
+        applyLang(l);
+        refreshCopy();
+        haptic("medium");
+        setStep(2);
+      });
+    });
+
+    // path picks
+    $$("[data-pick-path]", node).forEach((b) => {
+      b.addEventListener("click", () => {
+        const p = b.getAttribute("data-pick-path");
+        localStorage.setItem(LS.PATH, p);
+        applyPath(p);
+        haptic("success");
+        node.classList.add("closing");
+        setTimeout(() => {
+          node.remove();
+          document.body.classList.remove("ob-open");
+          mountSettings();
+          toast(t("saved"));
+        }, 320);
+      });
+    });
+
+    // back
+    node.querySelector("[data-ob-back]").addEventListener("click", () => {
+      setStep(1);
+      haptic("light");
+    });
+  };
+
+  /* ===========================================================
+     Settings (cog) — appears after onboarding
+     =========================================================== */
+
+  const mountSettings = () => {
+    if (document.querySelector("[data-settings-btn]")) return;
+    const btn = document.createElement("button");
+    btn.className = "settings-cog";
+    btn.setAttribute("data-settings-btn", "");
+    btn.setAttribute("aria-label", "Settings");
+    btn.innerHTML = "⚙";
+    document.body.appendChild(btn);
+
+    const panel = document.createElement("div");
+    panel.className = "settings-panel";
+    panel.setAttribute("data-settings-panel", "");
+    panel.innerHTML = `
+      <div class="sp-bg" data-sp-bg></div>
+      <div class="sp-card">
+        <div class="grabber"></div>
+        <h3 data-sp-title>Settings</h3>
+        <div class="sp-section">
+          <div class="sp-label" data-sp-lang-label>Language</div>
+          <div class="sp-row">
+            <button class="sp-pick" data-set-lang="en">English</button>
+            <button class="sp-pick" data-set-lang="fa">فارسی</button>
+          </div>
+        </div>
+        <div class="sp-section">
+          <div class="sp-label" data-sp-path-label>Path</div>
+          <div class="sp-row">
+            <button class="sp-pick" data-set-path="hero">⚔ <span data-sp-hero>Hero</span></button>
+            <button class="sp-pick" data-set-path="heroine">♛ <span data-sp-heroine>Heroine</span></button>
+          </div>
+        </div>
+        <button class="sp-reset" data-sp-reset>
+          <span data-sp-reset-title>Reset onboarding</span>
+          <span class="sp-reset-sub" data-sp-reset-sub>Choose language and path again.</span>
+        </button>
+        <button class="ghost-btn btn-block" style="margin-top:10px;" data-sp-close>Close</button>
+      </div>
+    `;
+    document.body.appendChild(panel);
+
+    const refresh = () => {
+      const l = getLang() || "en";
+      const p = getPath() || "hero";
+      const tx = I18N[l];
+      panel.querySelector("[data-sp-title]").textContent = tx.settings;
+      panel.querySelector("[data-sp-lang-label]").textContent = tx.language;
+      panel.querySelector("[data-sp-path-label]").textContent = tx.path;
+      panel.querySelector("[data-sp-hero]").textContent = tx.hero;
+      panel.querySelector("[data-sp-heroine]").textContent = tx.heroine;
+      panel.querySelector("[data-sp-reset-title]").textContent = tx.reset_onboarding;
+      panel.querySelector("[data-sp-reset-sub]").textContent = tx.reset_onboarding_sub;
+      panel.querySelector("[data-sp-close]").textContent = tx.close;
+      // active state
+      $$("[data-set-lang]", panel).forEach((b) => b.classList.toggle("active", b.getAttribute("data-set-lang") === l));
+      $$("[data-set-path]", panel).forEach((b) => b.classList.toggle("active", b.getAttribute("data-set-path") === p));
+    };
+
+    const open = () => { panel.classList.add("open"); refresh(); haptic("light"); };
+    const close = () => { panel.classList.remove("open"); };
+
+    btn.addEventListener("click", open);
+    panel.querySelector("[data-sp-bg]").addEventListener("click", close);
+    panel.querySelector("[data-sp-close]").addEventListener("click", close);
+
+    $$("[data-set-lang]", panel).forEach((b) => {
+      b.addEventListener("click", () => {
+        const l = b.getAttribute("data-set-lang");
+        localStorage.setItem(LS.LANG, l);
+        applyLang(l);
+        applyPath(getPath() || "hero");
+        refresh();
+        toast(t("saved"));
+        haptic("success");
+      });
+    });
+    $$("[data-set-path]", panel).forEach((b) => {
+      b.addEventListener("click", () => {
+        const p = b.getAttribute("data-set-path");
+        localStorage.setItem(LS.PATH, p);
+        applyPath(p);
+        refresh();
+        toast(t("saved"));
+        haptic("success");
+      });
+    });
+    panel.querySelector("[data-sp-reset]").addEventListener("click", () => {
+      localStorage.removeItem(LS.LANG);
+      localStorage.removeItem(LS.PATH);
+      close();
+      btn.remove();
+      panel.remove();
+      buildOnboarding();
+      haptic("medium");
+    });
+  };
+
+  /* ===========================================================
+     Bootstrap: apply stored prefs OR show onboarding
+     =========================================================== */
+
+  const lang0 = getLang();
+  const path0 = getPath();
+  if (lang0) applyLang(lang0); else applyLang("en");
+  if (path0) applyPath(path0); else applyPath("hero");
+
+  const needsOnboarding = !lang0 || !path0;
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      if (needsOnboarding) buildOnboarding(); else mountSettings();
+    });
+  } else {
+    if (needsOnboarding) buildOnboarding(); else mountSettings();
+  }
+
   const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
   const haptic = (style = "light") => {
     try {
@@ -23,16 +573,6 @@
         navigator.vibrate(style === "heavy" ? 18 : style === "medium" ? 10 : 6);
       }
     } catch (_) { /* noop */ }
-  };
-
-  /* ---------- toast ---------- */
-  const toast = (msg) => {
-    const el = $("[data-toast]");
-    if (!el) return;
-    el.textContent = msg;
-    el.classList.add("show");
-    clearTimeout(toast._t);
-    toast._t = setTimeout(() => el.classList.remove("show"), 1800);
   };
 
   /* ---------- shared: any click on [data-toast-msg] -> toast ---------- */
