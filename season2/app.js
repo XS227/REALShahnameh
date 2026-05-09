@@ -138,11 +138,31 @@
       settings: "Settings",
       language: "Language",
       path: "Path",
+      demo: "Demo",
+      toggle_s1_demo: "Toggle Season 1 player",
+      s1_demo_on: "Season 1: ON",
+      s1_demo_off: "Season 1: OFF",
       reset_onboarding: "Reset onboarding",
       reset_onboarding_sub: "Choose language and path again.",
       close: "Close",
       saved: "Saved",
-      reset_done: "Onboarding reset"
+      reset_done: "Onboarding reset",
+
+      // Season 1 bonus
+      season1_card_title: "Season 1 — Thank you, Founder",
+      season1_card_eligible_sub: "You stood with us when the chronicle began. Claim your founder reward.",
+      season1_card_ineligible_sub: "Season 1 bonus is reserved for early warriors.",
+      season1_card_claimed_sub: "Founder rewards are already in your vault. Wear the frame with pride.",
+      claim_bonus: "Claim Bonus",
+      claimed: "Claimed ✓",
+      claimed_tag: "Claimed",
+      not_eligible: "Reserved",
+      og_founder_badge: "🏆 OG Founder",
+      founder_chest: "🎁 Founder Chest",
+      starter_real: "🪙 +500 REAL",
+      early_supporter_mult: "✦ +5% multiplier",
+      season1_frame: "🖼 Season 1 Frame",
+      bonus_claimed_toast: "Founder rewards claimed!"
     },
     fa: {
       play: "بازی", heroes: "قهرمانان", learn: "یادگیری", earn: "درآمد", social: "اجتماعی",
@@ -255,25 +275,181 @@
       settings: "تنظیمات",
       language: "زبان",
       path: "مسیر",
+      demo: "نمایش",
+      toggle_s1_demo: "تغییر وضعیت بازیکن فصل ۱",
+      s1_demo_on: "فصل ۱: روشن",
+      s1_demo_off: "فصل ۱: خاموش",
       reset_onboarding: "بازنشانی شروع",
       reset_onboarding_sub: "زبان و مسیر را دوباره انتخاب کن.",
       close: "بستن",
       saved: "ذخیره شد",
-      reset_done: "بازنشانی انجام شد"
+      reset_done: "بازنشانی انجام شد",
+
+      season1_card_title: "فصل ۱ — سپاس، ای بنیان‌گذار",
+      season1_card_eligible_sub: "از روز نخست کنار ما بودی. پاداش بنیان‌گذاری‌ات را دریافت کن.",
+      season1_card_ineligible_sub: "پاداش فصل ۱ برای دلاوران نخستین محفوظ است.",
+      season1_card_claimed_sub: "پاداش‌های بنیان‌گذار در خزانه‌ات قرار گرفت. قاب فصل ۱ را با افتخار بپوش.",
+      claim_bonus: "دریافت پاداش",
+      claimed: "دریافت شد ✓",
+      claimed_tag: "دریافت‌شده",
+      not_eligible: "محفوظ",
+      og_founder_badge: "🏆 بنیان‌گذار اصیل",
+      founder_chest: "🎁 صندوقچه بنیان‌گذار",
+      starter_real: "🪙 +۵۰۰ REAL",
+      early_supporter_mult: "✦ +۵٪ ضریب اولیه",
+      season1_frame: "🖼 قاب فصل ۱",
+      bonus_claimed_toast: "پاداش بنیان‌گذار دریافت شد!"
     }
   };
 
   const LS = {
     LANG: "real_lang",
-    PATH: "real_path"
+    PATH: "real_path",
+    PLAYER: "real_player_state_v1",
+    S1_FLAG: "isSeason1Player"
   };
 
+  /* ===========================================================
+     Player state — single source of truth for the prototype.
+     Persisted to localStorage today; the Player.get / Player.set /
+     Player.claimSeason1Bonus contract is what backend should
+     replace later. Storage adapter is intentionally narrow:
+     swap the three calls in Storage.* to fetch/POST to switch
+     transports without touching call sites.
+     =========================================================== */
+
+  const Storage = {
+    read(key) {
+      try { return localStorage.getItem(key); } catch { return null; }
+    },
+    write(key, val) {
+      try { localStorage.setItem(key, val); } catch { /* quota / private mode */ }
+    },
+    remove(key) {
+      try { localStorage.removeItem(key); } catch { /* noop */ }
+    }
+  };
+
+  const Player = {
+    SCHEMA_VERSION: 1,
+
+    /* Default profile for a fresh Season 2 entrant. Season 1
+       players also start from scratch — they get a bonus card
+       on top, not pre-filled progress. */
+    defaults() {
+      return {
+        schemaVersion: Player.SCHEMA_VERSION,
+        userId: null,                 // populated by Telegram WebApp later
+        username: null,
+        language: Storage.read(LS.LANG) || "en",
+        path: Storage.read(LS.PATH) || "hero",
+        level: 1,
+        xp: 0,
+        balance: 0,
+        energy: 1000,
+        energyMax: 1000,
+        chapterProgress: { 1: { unlocked: true, completed: false } },
+        heroes: {},                   // { rostam: { level, fragments } ... }
+        referrals: 0,
+        season1BonusClaimed: false,
+        isSeason1Player: Storage.read(LS.S1_FLAG) === "true",
+        earlySupporterMultiplier: 1,
+        badges: [],
+        createdAt: Date.now()
+      };
+    },
+
+    _load() {
+      const raw = Storage.read(LS.PLAYER);
+      if (!raw) return null;
+      try {
+        const parsed = JSON.parse(raw);
+        if (!parsed || typeof parsed !== "object") return null;
+        return parsed;
+      } catch { return null; }
+    },
+
+    _persist(state) {
+      Storage.write(LS.PLAYER, JSON.stringify(state));
+      // mirror legacy keys so the i18n / onboarding code stays simple
+      if (state.language) Storage.write(LS.LANG, state.language);
+      if (state.path)     Storage.write(LS.PATH, state.path);
+    },
+
+    get() {
+      const stored = Player._load();
+      if (!stored) {
+        const fresh = Player.defaults();
+        Player._persist(fresh);
+        return fresh;
+      }
+      // backfill missing keys from defaults so older saves keep working
+      const merged = { ...Player.defaults(), ...stored };
+      // re-read external single-key flags every time so demo toggles win
+      merged.isSeason1Player = Storage.read(LS.S1_FLAG) === "true" || !!merged.isSeason1Player;
+      merged.language = Storage.read(LS.LANG) || merged.language;
+      merged.path     = Storage.read(LS.PATH) || merged.path;
+      return merged;
+    },
+
+    set(patch) {
+      const next = { ...Player.get(), ...patch };
+      Player._persist(next);
+      return next;
+    },
+
+    /* Season 1 bonus award. Returns { ok, reason?, reward? }.
+       This shape is what backend should mirror. */
+    claimSeason1Bonus() {
+      const p = Player.get();
+      if (!p.isSeason1Player) return { ok: false, reason: "not_eligible" };
+      if (p.season1BonusClaimed) return { ok: false, reason: "already_claimed" };
+      const reward = {
+        real: 500,
+        badges: ["og_founder", "season1_frame"],
+        chest: "founder_chest",
+        multiplier: 1.05
+      };
+      const next = Player.set({
+        season1BonusClaimed: true,
+        balance: (p.balance || 0) + reward.real,
+        badges: Array.from(new Set([...(p.badges || []), ...reward.badges])),
+        earlySupporterMultiplier: reward.multiplier
+      });
+      return { ok: true, reward, state: next };
+    },
+
+    /* Demo helper — flips Season 1 eligibility for testing. Backend
+       will own this flag in production; this lives behind a settings
+       toggle for now. */
+    setSeason1Demo(on) {
+      if (on) {
+        Storage.write(LS.S1_FLAG, "true");
+        Player.set({ isSeason1Player: true });
+      } else {
+        Storage.remove(LS.S1_FLAG);
+        Player.set({ isSeason1Player: false, season1BonusClaimed: false });
+      }
+    },
+
+    /* Future swap-in: replace the bodies of these with API calls.
+       Keep the same shapes; the rest of the app already awaits them. */
+    api: {
+      fetch: () => Promise.resolve(Player.get()),
+      save: (patch) => Promise.resolve(Player.set(patch)),
+      claimSeason1Bonus: () => Promise.resolve(Player.claimSeason1Bonus())
+    }
+  };
+
+  // expose for console/demo only
+  if (typeof window !== "undefined") window.RealPlayer = Player;
+
   const getLang = () => {
-    const l = localStorage.getItem(LS.LANG);
+    const l = Storage.read(LS.LANG);
     return (l === "fa" || l === "en") ? l : null;
   };
   const getPath = () => {
-    const p = localStorage.getItem(LS.PATH);
+    const p = Storage.read(LS.PATH);
     return (p === "hero" || p === "heroine") ? p : null;
   };
   const t = (key) => {
@@ -410,7 +586,7 @@
     $$("[data-pick-lang]", node).forEach((b) => {
       b.addEventListener("click", () => {
         const l = b.getAttribute("data-pick-lang");
-        localStorage.setItem(LS.LANG, l);
+        Player.set({ language: l });
         applyLang(l);
         refreshCopy();
         haptic("medium");
@@ -422,7 +598,7 @@
     $$("[data-pick-path]", node).forEach((b) => {
       b.addEventListener("click", () => {
         const p = b.getAttribute("data-pick-path");
-        localStorage.setItem(LS.PATH, p);
+        Player.set({ path: p });
         applyPath(p);
         haptic("success");
         node.classList.add("closing");
@@ -477,6 +653,13 @@
             <button class="sp-pick" data-set-path="heroine">♛ <span data-sp-heroine>Heroine</span></button>
           </div>
         </div>
+        <div class="sp-section">
+          <div class="sp-label" data-sp-s1-label>Demo</div>
+          <button class="sp-pick sp-toggle" data-sp-s1-toggle>
+            <span data-sp-s1-text>Toggle Season 1 player</span>
+            <span class="sp-toggle-state" data-sp-s1-state>OFF</span>
+          </button>
+        </div>
         <button class="sp-reset" data-sp-reset>
           <span data-sp-reset-title>Reset onboarding</span>
           <span class="sp-reset-sub" data-sp-reset-sub>Choose language and path again.</span>
@@ -489,10 +672,14 @@
     const refresh = () => {
       const l = getLang() || "en";
       const p = getPath() || "hero";
+      const isS1 = Player.get().isSeason1Player;
       const tx = I18N[l];
       panel.querySelector("[data-sp-title]").textContent = tx.settings;
       panel.querySelector("[data-sp-lang-label]").textContent = tx.language;
       panel.querySelector("[data-sp-path-label]").textContent = tx.path;
+      panel.querySelector("[data-sp-s1-label]").textContent = tx.demo;
+      panel.querySelector("[data-sp-s1-text]").textContent = tx.toggle_s1_demo;
+      panel.querySelector("[data-sp-s1-state]").textContent = isS1 ? tx.s1_demo_on : tx.s1_demo_off;
       panel.querySelector("[data-sp-hero]").textContent = tx.hero;
       panel.querySelector("[data-sp-heroine]").textContent = tx.heroine;
       panel.querySelector("[data-sp-reset-title]").textContent = tx.reset_onboarding;
@@ -501,6 +688,7 @@
       // active state
       $$("[data-set-lang]", panel).forEach((b) => b.classList.toggle("active", b.getAttribute("data-set-lang") === l));
       $$("[data-set-path]", panel).forEach((b) => b.classList.toggle("active", b.getAttribute("data-set-path") === p));
+      panel.querySelector("[data-sp-s1-toggle]").classList.toggle("active", isS1);
     };
 
     const open = () => { panel.classList.add("open"); refresh(); haptic("light"); };
@@ -513,9 +701,10 @@
     $$("[data-set-lang]", panel).forEach((b) => {
       b.addEventListener("click", () => {
         const l = b.getAttribute("data-set-lang");
-        localStorage.setItem(LS.LANG, l);
+        Player.set({ language: l });
         applyLang(l);
         applyPath(getPath() || "hero");
+        renderSeason1Card();
         refresh();
         toast(t("saved"));
         haptic("success");
@@ -524,16 +713,26 @@
     $$("[data-set-path]", panel).forEach((b) => {
       b.addEventListener("click", () => {
         const p = b.getAttribute("data-set-path");
-        localStorage.setItem(LS.PATH, p);
+        Player.set({ path: p });
         applyPath(p);
         refresh();
         toast(t("saved"));
         haptic("success");
       });
     });
+    panel.querySelector("[data-sp-s1-toggle]").addEventListener("click", () => {
+      const next = !Player.get().isSeason1Player;
+      Player.setSeason1Demo(next);
+      renderSeason1Card();
+      refresh();
+      toast(next ? t("s1_demo_on") : t("s1_demo_off"));
+      haptic("medium");
+    });
     panel.querySelector("[data-sp-reset]").addEventListener("click", () => {
-      localStorage.removeItem(LS.LANG);
-      localStorage.removeItem(LS.PATH);
+      Storage.remove(LS.LANG);
+      Storage.remove(LS.PATH);
+      Storage.remove(LS.PLAYER);
+      Storage.remove(LS.S1_FLAG);
       close();
       btn.remove();
       panel.remove();
@@ -541,6 +740,72 @@
       haptic("medium");
     });
   };
+
+  /* ===========================================================
+     Season 1 bonus card render + claim
+     =========================================================== */
+
+  const renderSeason1Card = () => {
+    const card = $("[data-s1-card]");
+    if (!card) return;
+    const lang = getLang() || "en";
+    const tx = I18N[lang];
+    const p = Player.get();
+
+    const subEl    = card.querySelector("[data-s1-sub]");
+    const btnEl    = card.querySelector("[data-s1-claim]");
+    const claimedEl = card.querySelector("[data-s1-claimed-tag]");
+
+    card.classList.remove("eligible", "ineligible", "claimed");
+
+    if (!p.isSeason1Player) {
+      card.classList.add("ineligible");
+      if (subEl) subEl.textContent = tx.season1_card_ineligible_sub;
+      if (btnEl) {
+        btnEl.disabled = true;
+        btnEl.textContent = tx.not_eligible;
+      }
+      if (claimedEl) claimedEl.hidden = true;
+    } else if (p.season1BonusClaimed) {
+      card.classList.add("claimed");
+      if (subEl) subEl.textContent = tx.season1_card_claimed_sub;
+      if (btnEl) {
+        btnEl.disabled = true;
+        btnEl.textContent = tx.claimed;
+      }
+      if (claimedEl) {
+        claimedEl.hidden = false;
+        claimedEl.textContent = tx.claimed_tag;
+      }
+    } else {
+      card.classList.add("eligible");
+      if (subEl) subEl.textContent = tx.season1_card_eligible_sub;
+      if (btnEl) {
+        btnEl.disabled = false;
+        btnEl.textContent = tx.claim_bonus;
+      }
+      if (claimedEl) claimedEl.hidden = true;
+    }
+  };
+
+  // claim handler — single delegated listener so the card can re-render freely
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-s1-claim]");
+    if (!btn || btn.disabled) return;
+    const result = Player.claimSeason1Bonus();
+    if (result.ok) {
+      renderSeason1Card();
+      fireBurst(t("bonus_claimed_toast"));
+      toast(t("bonus_claimed_toast"));
+      haptic("success");
+    } else if (result.reason === "not_eligible") {
+      toast(t("season1_card_ineligible_sub"));
+      haptic("warning");
+    } else {
+      toast(t("season1_card_claimed_sub"));
+      haptic("light");
+    }
+  });
 
   /* ===========================================================
      Bootstrap: apply stored prefs OR show onboarding
@@ -552,12 +817,14 @@
   if (path0) applyPath(path0); else applyPath("hero");
 
   const needsOnboarding = !lang0 || !path0;
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", () => {
-      if (needsOnboarding) buildOnboarding(); else mountSettings();
-    });
-  } else {
+  const bootChrome = () => {
     if (needsOnboarding) buildOnboarding(); else mountSettings();
+    renderSeason1Card();
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bootChrome);
+  } else {
+    bootChrome();
   }
 
   const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
