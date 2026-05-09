@@ -10,6 +10,14 @@
   const $  = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
+  /* Single source of truth for the Telegram bot identity. Migrating
+     to a new bot? Change BOT_USERNAME and every invite/share link
+     in Season 2 follows. */
+  const BOT_USERNAME = "shahnameh_bot";
+  const DEFAULT_INVITE_SLUG = "warrior_setai";
+  const inviteLink = (slug) =>
+    `https://t.me/${BOT_USERNAME}?start=${encodeURIComponent(slug || DEFAULT_INVITE_SLUG)}`;
+
   /* ===========================================================
      Debug overlay — visible on-screen error reporter so the
      Telegram WebView never silently shows a dark loading spinner.
@@ -982,6 +990,16 @@
       haptic("light");
     }
   });
+
+  /* ---------- invite link: rewrite all surfaces from BOT_USERNAME ---------- */
+  const populateInviteLinks = () => {
+    const p = (typeof Player !== "undefined") ? Player.get() : {};
+    const slug = (p.username && String(p.username).replace(/[^a-z0-9_]/gi, "_")) || DEFAULT_INVITE_SLUG;
+    const url  = inviteLink(slug);
+    $$("[data-link]").forEach((el) => { el.textContent = url; });
+    $$("[data-copy-link]").forEach((el) => { el.setAttribute("data-copy-link", url); });
+  };
+  populateInviteLinks();
 
   /* ---------- copy referral link ---------- */
   $$("[data-copy-link]").forEach((btn) => {
