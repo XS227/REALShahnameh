@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-10T01:30:00Z",
+  "dailyLimit": 5,
+  "rewardTypes": {
+    "energy": { "amount": 25, "label": "+25 Energy" },
+    "real":   { "amount": 100, "label": "+100 REAL" },
+    "gems":   { "amount": 10, "label": "+10 Gems" }
+  },
+  "claims": []
+}
