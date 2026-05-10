@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Play</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202605100154" />
+</head>
+<body>
+  <main class="app">
+
+    <!-- Top bar: avatar / rank / level -->
+    <section class="card gold-edge top-bar">
+      <div class="avatar">
+        RS
+        <span class="avatar-ring"></span>
+      </div>
+      <div class="who">
+        <h1 class="name"><span data-path-name>King Setai</span> <span class="pill" data-i18n="vip">VIP</span></h1>
+        <div class="rank-row">
+          <span class="rank-tag" data-path-title>⚔ Warrior of Pars</span>
+          <span class="rank-tag" style="background: rgba(244,197,107,.14); border-color: var(--border-gold); color: var(--gold);" data-i18n="season2">Season 2</span>
+        </div>
+      </div>
+      <div class="lvl-badge"><span data-i18n="level">LVL</span> <span class="lvl-num" data-level>17</span></div>
+    </section>
+
+    <!-- Balance + Profit -->
+    <section class="balance-row">
+      <article class="card balance gold-edge">
+        <span class="label">◆ <span data-i18n="balance">Balance</span></span>
+        <span class="value" data-balance>12,840<small> REAL</small></span>
+        <span class="muted" style="font-size:11px;" data-i18n="today_delta">+1,240 today</span>
+      </article>
+      <article class="card profit">
+        <span class="label" style="font-size:11px; letter-spacing:.5px; color:var(--muted); text-transform:uppercase;" data-i18n="profit_hr">Profit / hr</span>
+        <span class="value">+172</span>
+        <span class="delta" data-i18n="auto_claim">REAL · auto-claim</span>
+      </article>
+    </section>
+
+    <!-- Energy Core orb -->
+    <section class="card gold-edge" style="padding: 16px 14px 6px;">
+      <div class="core-wrap" data-core>
+        <span class="ring r1"></span>
+        <span class="ring r2"></span>
+        <span class="ring r3"></span>
+        <span class="ring r4"></span>
+        <button class="energy-orb" data-energy-orb aria-label="Tap to gather REAL">
+          <span class="core-icon">REAL</span>
+        </button>
+      </div>
+      <!-- Energy meta -->
+      <div class="energy-meta" style="padding-bottom: 0;">
+        <div class="energy-line">
+          <span>⚡ <span data-i18n="energy">Energy</span></span>
+          <span><span class="e-val" data-energy>720</span> / 1000 · <span class="e-timer" data-refill>+1 / 3s</span></span>
+        </div>
+        <div class="bar"><span class="fill" data-energy-fill style="width:72%"></span></div>
+      </div>
+    </section>
+
+    <!-- Action grid -->
+    <section class="action-grid">
+      <article class="card action gold-edge">
+        <h4><span class="ico">⚡</span> <span data-i18n="boost">Boost</span></h4>
+        <p class="copy" data-i18n="boost_copy">Multiply tap power 3× for 30 minutes. Stacks with combo critical.</p>
+        <div class="row">
+          <button class="primary-btn btn-block" data-action="boost" data-i18n="activate">Activate</button>
+        </div>
+      </article>
+      <article class="card action violet-edge">
+        <h4><span class="ico">👥</span> <span data-i18n="invite">Invite</span></h4>
+        <p class="copy" data-i18n="invite_copy">Bring allies. Earn 10% of their REAL forever + chest drops.</p>
+        <div class="row">
+          <a class="secondary-btn btn-block" href="earn.html" data-i18n="share_link_btn">Share Link</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Stats -->
+    <div class="section-head">
+      <h3 data-i18n="your_edge">Your edge</h3>
+      <a class="more" href="social.html" data-i18n="compare">Compare ›</a>
+    </div>
+    <section class="stats-grid">
+      <article class="card stat-mini">
+        <span class="ico warm">🔥</span>
+        <div>
+          <div class="lbl" data-i18n="daily_streak">Daily streak</div>
+          <div class="num" data-i18n="streak_days">12 days</div>
+        </div>
+      </article>
+      <article class="card stat-mini">
+        <span class="ico">✦</span>
+        <div>
+          <div class="lbl" data-i18n="combo">Combo</div>
+          <div class="num">×<span data-combo>1.0</span></div>
+        </div>
+      </article>
+      <article class="card stat-mini">
+        <span class="ico cold">💎</span>
+        <div>
+          <div class="lbl" data-i18n="referral_real">Referral REAL</div>
+          <div class="num">+2,310</div>
+        </div>
+      </article>
+      <article class="card stat-mini">
+        <span class="ico lush">⭐</span>
+        <div>
+          <div class="lbl" data-i18n="xp_to_level">XP to LVL 18</div>
+          <div class="num">2,140 / 4,000</div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="nav-item active" href="index.html"><span class="ni-ico">⚡</span><span data-i18n="play">Play</span></a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
+    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span><span data-i18n="social">Social</span></a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <script src="app.js?v=202605100154"></script>
+</body>
+</html>
