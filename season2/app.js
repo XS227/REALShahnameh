@@ -1201,6 +1201,43 @@
   }
 
   /* ===========================================================
+     HEROES: hydrate portraits from admin-uploaded catalog.
+     Slug is derived from the first word of the hero's <h3> in
+     lowercase letters only. If the admin has uploaded an image
+     for that slug, swap the emoji portrait for the real <img>.
+     Catalog fetch is best-effort — failures keep the emoji fallback.
+     =========================================================== */
+  (() => {
+    const cards = $$(".hero-card");
+    if (cards.length === 0) return;
+    const slugify = (s) => String(s || "").toLowerCase().replace(/[^a-z]/g, "").slice(0, 32);
+    fetch("/api/admin/uploads/public/hero", { cache: "no-store" })
+      .then(r => r.ok ? r.json() : null)
+      .then(body => {
+        if (!body || !body.status) return;
+        const bySlug = new Map((body.items || []).map(it => [it.slug, it.url]));
+        if (bySlug.size === 0) return;
+        cards.forEach(card => {
+          const h3 = card.querySelector("h3");
+          if (!h3) return;
+          const slug = slugify(h3.firstChild ? h3.firstChild.textContent : h3.textContent);
+          const url  = bySlug.get(slug);
+          if (!url) return;
+          const portrait = card.querySelector(".portrait");
+          if (!portrait) return;
+          const img = new Image();
+          img.alt = h3.firstChild ? h3.firstChild.textContent.trim() : "";
+          img.loading = "lazy";
+          img.decoding = "async";
+          img.src = url;
+          img.onload  = () => { portrait.textContent = ""; portrait.appendChild(img); };
+          img.onerror = () => { /* keep emoji fallback */ };
+        });
+      })
+      .catch(() => { /* offline — emoji fallback stays */ });
+  })();
+
+  /* ===========================================================
      HEROES: tab filtering
      =========================================================== */
 
