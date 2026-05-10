@@ -71,6 +71,26 @@
       <div class="bar" style="margin-top:10px;"><span class="fill" style="width:7%; background: linear-gradient(90deg, var(--violet), var(--gold));"></span></div>
     </article>
 
+    <!-- Rewarded ads -->
+    <div class="section-head"><h3>Watch &amp; Earn</h3><span class="more" style="cursor:default;" data-ad-remaining>5 / 5 today</span></div>
+    <section class="action-grid">
+      <article class="card action gold-edge">
+        <h4><span class="ico">⚡</span> +25 Energy</h4>
+        <p class="copy">Top up your energy to keep tapping.</p>
+        <div class="row"><button class="primary-btn btn-block" data-ad="energy">Watch ad · +25 ⚡</button></div>
+      </article>
+      <article class="card action violet-edge">
+        <h4><span class="ico">💎</span> +10 Gems</h4>
+        <p class="copy">Stockpile gems for hero upgrades.</p>
+        <div class="row"><button class="secondary-btn btn-block" data-ad="gems">Watch ad · +10 💎</button></div>
+      </article>
+      <article class="card action gold-edge" style="grid-column:1/-1;">
+        <h4><span class="ico">🪙</span> +100 REAL</h4>
+        <p class="copy">Quick boost to your balance. Daily limit applies.</p>
+        <div class="row"><button class="primary-btn btn-block" data-ad="real">Watch ad · +100 REAL</button></div>
+      </article>
+    </section>
+
     <!-- Milestones -->
     <div class="section-head"><h3 data-i18n="milestones">Milestones</h3><span class="more" style="cursor:default;" data-i18n="tap_to_share">Tap to share</span></div>
     <section class="milestone-list">
@@ -179,6 +199,19 @@
     <a class="nav-item active" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
     <a class="nav-item" href="social.html"><span class="ni-ico">👥</span><span data-i18n="social">Social</span></a>
   </nav>
+
+  <!-- Rewarded ad placeholder modal -->
+  <div class="ad-overlay" data-ad-overlay aria-hidden="true">
+    <div class="ad-card">
+      <div class="ad-stage" data-ad-stage>
+        <div class="ad-spinner"></div>
+        <div class="ad-stage-label" data-ad-label>Ad loading…</div>
+      </div>
+      <div class="ad-foot">
+        <button class="ghost-btn" data-ad-close>Close</button>
+      </div>
+    </div>
+  </div>
 
   <div class="toast" data-toast></div>
   <div class="unlock-burst" data-burst><span class="ring-burst"></span><span class="label" data-burst-label>Unlocked</span></div>

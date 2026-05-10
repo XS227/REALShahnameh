@@ -1201,40 +1201,216 @@
   }
 
   /* ===========================================================
-     HEROES: hydrate portraits from admin-uploaded catalog.
-     Slug is derived from the first word of the hero's <h3> in
-     lowercase letters only. If the admin has uploaded an image
-     for that slug, swap the emoji portrait for the real <img>.
-     Catalog fetch is best-effort — failures keep the emoji fallback.
+     HEROES: hydrate portraits from the server catalog.
+     /api/catalog/heroes is the source of truth (admin writes,
+     season2 reads). Slug = first word of the card's <h3>,
+     lowercased letters only. Failures keep the emoji fallback.
      =========================================================== */
   (() => {
     const cards = $$(".hero-card");
     if (cards.length === 0) return;
     const slugify = (s) => String(s || "").toLowerCase().replace(/[^a-z]/g, "").slice(0, 32);
-    fetch("/api/admin/uploads/public/hero", { cache: "no-store" })
+    fetch("/api/catalog/heroes", { cache: "no-store" })
       .then(r => r.ok ? r.json() : null)
       .then(body => {
-        if (!body || !body.status) return;
-        const bySlug = new Map((body.items || []).map(it => [it.slug, it.url]));
+        if (!body || !body.status || !Array.isArray(body.heroes)) return;
+        const bySlug = new Map(body.heroes.map(h => [h.slug, h]));
         if (bySlug.size === 0) return;
         cards.forEach(card => {
           const h3 = card.querySelector("h3");
           if (!h3) return;
           const slug = slugify(h3.firstChild ? h3.firstChild.textContent : h3.textContent);
-          const url  = bySlug.get(slug);
-          if (!url) return;
-          const portrait = card.querySelector(".portrait");
-          if (!portrait) return;
-          const img = new Image();
-          img.alt = h3.firstChild ? h3.firstChild.textContent.trim() : "";
-          img.loading = "lazy";
-          img.decoding = "async";
-          img.src = url;
-          img.onload  = () => { portrait.textContent = ""; portrait.appendChild(img); };
-          img.onerror = () => { /* keep emoji fallback */ };
+          const hero = bySlug.get(slug);
+          if (!hero) return;
+          // image
+          if (hero.image_url) {
+            const portrait = card.querySelector(".portrait");
+            if (portrait) {
+              const img = new Image();
+              img.alt = hero.name || "";
+              img.loading = "lazy";
+              img.decoding = "async";
+              img.src = hero.image_url;
+              img.onload = () => { portrait.textContent = ""; portrait.appendChild(img); };
+            }
+          }
+          // description swap (subtle — only if .role exists and isn't already custom)
+          const role = card.querySelector(".role");
+          if (role && hero.bonus) {
+            role.textContent = `${hero.rarity || ""} · ${hero.bonus}`;
+          }
         });
       })
-      .catch(() => { /* offline — emoji fallback stays */ });
+      .catch(() => { /* offline — keep static markup */ });
+  })();
+
+  /* ===========================================================
+     EARN: rewarded ad placeholder.
+     Buttons opt-in via [data-ad="energy|gems|real"]. The flow shows
+     a fullscreen "Ad loading…" stage, then on completion calls the
+     server /api/ads/claim endpoint which enforces the daily limit
+     and writes to ad-rewards.json. No real ad SDK is wired — the
+     stub provider is intentional and visible in the audit log.
+     =========================================================== */
+  (() => {
+    const buttons = $$("[data-ad]");
+    if (buttons.length === 0) return;
+    const overlay = $("[data-ad-overlay]");
+    const stage   = $("[data-ad-stage]");
+    const label   = $("[data-ad-label]");
+    const close   = $("[data-ad-close]");
+    const remEl   = $("[data-ad-remaining]");
+    if (!overlay || !stage) return;
+
+    const tgUserId = (window.Telegram && window.Telegram.WebApp
+      && window.Telegram.WebApp.initDataUnsafe
+      && window.Telegram.WebApp.initDataUnsafe.user
+      && window.Telegram.WebApp.initDataUnsafe.user.id) || null;
+    const localId = (() => {
+      let s = localStorage.getItem("real_local_id");
+      if (!s) { s = "u_" + Math.random().toString(36).slice(2, 10); try { localStorage.setItem("real_local_id", s); } catch {} }
+      return s;
+    })();
+
+    const refreshStatus = async () => {
+      try {
+        const url = "/api/ads/status" + (tgUserId ? "?telegram_id=" + tgUserId : "");
+        const r = await fetch(url);
+        const j = await r.json();
+        if (remEl && j && j.status) {
+          remEl.textContent = `${j.remaining} / ${j.dailyLimit} today`;
+          buttons.forEach(b => { b.disabled = j.remaining <= 0; });
+        }
+      } catch {}
+    };
+    refreshStatus();
+
+    const closeOverlay = () => { overlay.classList.remove("open"); overlay.setAttribute("aria-hidden", "true"); stage.classList.remove("success"); };
+    if (close) close.addEventListener("click", closeOverlay);
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) closeOverlay(); });
+
+    const grant = async (type) => {
+      // Show "Ad loading…" stub for ~1.5s, then claim.
+      stage.classList.remove("success");
+      label.textContent = "Ad loading…";
+      overlay.classList.add("open"); overlay.setAttribute("aria-hidden", "false");
+      await new Promise(r => setTimeout(r, 1500));
+      try {
+        const body = { reward_type: type, user_id: localId };
+        if (tgUserId) body.telegram_id = String(tgUserId);
+        const r = await fetch("/api/ads/claim", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body)
+        });
+        const j = await r.json();
+        if (!r.ok || !j.status) {
+          label.textContent = (j && j.error) || "Reward unavailable";
+          toast(label.textContent);
+          return;
+        }
+        stage.classList.add("success");
+        const amt = j.claim && j.claim.reward_amount;
+        const labelMap = { energy: amt + " ⚡ added", gems: amt + " 💎 added", real: "+" + amt + " REAL" };
+        label.textContent = labelMap[type] || "Reward granted";
+        toast(label.textContent);
+        refreshStatus();
+        setTimeout(closeOverlay, 1400);
+      } catch (e) {
+        label.textContent = "Network error";
+        toast("Could not reach reward server");
+      }
+    };
+
+    buttons.forEach(b => b.addEventListener("click", () => grant(b.dataset.ad)));
+  })();
+
+  /* ===========================================================
+     LEARN: hydrate chapters from server catalog + show Season 2
+     "Day X of journey" progression. The catalog is the source of
+     truth — admin edits flow into chapter cards on next page view.
+     Falls back silently to the static markup when the catalog is
+     unreachable.
+     =========================================================== */
+  const SERVER_QUIZZES = { byChapter: new Map(), byChapterSlug: new Map() };
+
+  (() => {
+    const map = $("[data-chapter-map]");
+    if (!map) return;
+    const chapterCards = $$(".chapter", map);
+
+    fetch("/api/catalog/chapters", { cache: "no-store" })
+      .then(r => r.ok ? r.json() : null)
+      .then(body => {
+        if (!body || !body.status || !Array.isArray(body.chapters)) return;
+        const byId = new Map(body.chapters.map(c => [String(c.id), c]));
+
+        chapterCards.forEach(card => {
+          const id = card.getAttribute("data-chapter");
+          const ch = byId.get(String(id));
+          if (!ch) return;
+          // title + copy
+          const h4 = card.querySelector("h4");
+          const copy = card.querySelector(".copy");
+          if (h4)   h4.textContent   = ch.title || h4.textContent;
+          if (copy) copy.textContent = ch.summary || ch.story?.slice(0, 140) + "…" || copy.textContent;
+          // status -> classes
+          card.classList.remove("done", "active", "locked");
+          if (ch.status === "completed")       card.classList.add("done");
+          else if (ch.status === "available" || ch.status === "published") card.classList.add("active");
+          else                                  card.classList.add("locked");
+          // node text
+          const node = card.querySelector(".node");
+          if (node) {
+            if (card.classList.contains("done")) node.textContent = "✓";
+            else node.textContent = String(ch.id || ch.order || id);
+          }
+          // chapter slug for quiz lookup
+          if (ch.slug) card.setAttribute("data-chapter-slug", ch.slug);
+        });
+
+        // Progress card
+        const total = body.totalChapters || body.chapters.length;
+        const done  = body.chapters.filter(c => c.status === "completed").length;
+        const pct   = total ? Math.round((done / total) * 100) : 0;
+        const elDone = $("[data-chapters-done]");
+        const elPct  = $("[data-chapters-pct]");
+        const elFill = $("[data-chapters-fill]");
+        if (elDone) elDone.textContent = `${done} of ${total} chapters complete`;
+        if (elPct)  elPct.textContent  = pct + "%";
+        if (elFill) elFill.style.width = pct + "%";
+
+        // Day X of journey: clamp by today's date once a journey-start
+        // is recorded locally; default to 1 for fresh players. The
+        // chapter unlock_day field drives "Complete today's story to
+        // unlock tomorrow's legend" UX.
+        const STARTED_KEY = "real_journey_started_at";
+        let started = parseInt(localStorage.getItem(STARTED_KEY) || "0", 10);
+        if (!started) {
+          started = Date.now();
+          try { localStorage.setItem(STARTED_KEY, String(started)); } catch {}
+        }
+        const dayNum = Math.max(1, Math.floor((Date.now() - started) / 86400e3) + 1);
+        const seasonLen = body.seasonLengthDays || 270;
+        const dayPill = $("[data-journey-day]");
+        if (dayPill) {
+          dayPill.textContent = `Day ${dayNum} of ${seasonLen} · 9-month journey`;
+        }
+      })
+      .catch(() => { /* offline — keep static fallback */ });
+
+    fetch("/api/catalog/quizzes", { cache: "no-store" })
+      .then(r => r.ok ? r.json() : null)
+      .then(body => {
+        if (!body || !body.status || !Array.isArray(body.quizzes)) return;
+        body.quizzes.forEach(q => {
+          if (!SERVER_QUIZZES.byChapterSlug.has(q.chapter_slug)) {
+            SERVER_QUIZZES.byChapterSlug.set(q.chapter_slug, []);
+          }
+          SERVER_QUIZZES.byChapterSlug.get(q.chapter_slug).push(q);
+        });
+      })
+      .catch(() => {});
   })();
 
   /* ===========================================================

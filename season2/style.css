@@ -1883,3 +1883,52 @@ html[dir="rtl"] .sp-reset { text-align: right; }
   .s1-crest { width: 52px; height: 52px; font-size: 24px; }
 }
 
+
+/* ============================================================
+   Rewarded ad placeholder overlay (earn.html "Watch & Earn")
+   ============================================================ */
+.ad-overlay {
+  position: fixed; inset: 0;
+  background: rgba(2, 3, 8, .82);
+  backdrop-filter: blur(6px);
+  display: none; align-items: center; justify-content: center;
+  z-index: 200; padding: 20px;
+}
+.ad-overlay.open { display: flex; }
+.ad-card {
+  width: 100%; max-width: 420px;
+  background: linear-gradient(180deg, #0f1326 0%, #070912 100%);
+  border: 1px solid rgba(244, 197, 107, .35);
+  border-radius: 20px; box-shadow: 0 30px 60px rgba(0, 0, 0, .55);
+  overflow: hidden;
+}
+.ad-stage {
+  position: relative; aspect-ratio: 9 / 16; max-height: 70vh;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(244, 197, 107, .12), transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(140, 109, 255, .12), transparent 60%),
+    #0a0d1c;
+  display: grid; place-items: center; gap: 14px;
+  color: var(--gold, #f4c56b);
+}
+.ad-stage-label { font-size: 14px; letter-spacing: .4px; }
+.ad-stage.success { color: #4ad8a6; }
+.ad-stage.success::before {
+  content: "✓"; font-size: 64px;
+  width: 96px; height: 96px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: rgba(74, 216, 166, .12);
+  border: 1px solid rgba(74, 216, 166, .45);
+}
+.ad-spinner {
+  width: 56px; height: 56px; border-radius: 50%;
+  border: 3px solid rgba(244, 197, 107, .18);
+  border-top-color: var(--gold, #f4c56b);
+  animation: ad-spin .8s linear infinite;
+}
+@keyframes ad-spin { to { transform: rotate(360deg); } }
+.ad-foot {
+  display: flex; justify-content: flex-end;
+  padding: 12px 14px;
+  border-top: 1px solid rgba(255, 255, 255, .06);
+}
