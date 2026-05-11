@@ -933,11 +933,25 @@ a { color: inherit; }
 .r-legend { color: var(--rarity-legend); }
 .r-mythic { color: var(--rarity-mythic); }
 
+.hero-card { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.hero-card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,.45), 0 2px 14px rgba(244,197,107,.1); }
+
 .hero-card.r-common .portrait { color: var(--rarity-common); border-color: var(--rarity-common); }
-.hero-card.r-rare .portrait { color: var(--rarity-rare); border-color: var(--rarity-rare); box-shadow: inset 0 0 24px rgba(94, 162, 255, 0.18); }
-.hero-card.r-epic .portrait { color: var(--rarity-epic); border-color: var(--rarity-epic); box-shadow: inset 0 0 24px rgba(176, 105, 255, 0.22); }
-.hero-card.r-legend .portrait { color: var(--rarity-legend); border-color: var(--rarity-legend); box-shadow: inset 0 0 28px rgba(244, 197, 107, 0.32); }
-.hero-card.r-mythic .portrait { color: var(--rarity-mythic); border-color: var(--rarity-mythic); box-shadow: inset 0 0 28px rgba(255, 82, 103, 0.32); }
+.hero-card.r-rare .portrait { color: var(--rarity-rare); border-color: var(--rarity-rare); animation: glow-rare 3s ease-in-out infinite; }
+.hero-card.r-epic .portrait { color: var(--rarity-epic); border-color: var(--rarity-epic); animation: glow-epic 2.8s ease-in-out infinite; }
+.hero-card.r-legend .portrait { color: var(--rarity-legend); border-color: var(--rarity-legend); animation: glow-legend 2.4s ease-in-out infinite; }
+.hero-card.r-mythic .portrait { color: var(--rarity-mythic); border-color: var(--rarity-mythic); animation: glow-mythic 2s ease-in-out infinite; }
+
+/* Mythic shimmer sweep */
+.hero-card.r-mythic .portrait::before {
+  background:
+    linear-gradient(110deg, transparent 35%, rgba(255,82,103,.22) 48%, rgba(255,220,180,.18) 52%, transparent 65%),
+    radial-gradient(circle at 50% 30%, rgba(244,197,107,.18) 0%, transparent 60%),
+    radial-gradient(circle at 30% 90%, rgba(255,82,103,.18) 0%, transparent 60%);
+  background-size: 300% 100%, 100% 100%, 100% 100%;
+  background-position: -100% 0, 0 0, 0 0;
+  animation: hero-shimmer 3.5s ease-in-out infinite;
+}
 
 .hero-card .upgrade-col {
   display: flex;
@@ -1354,6 +1368,26 @@ a { color: inherit; }
   0%   { transform: translateY(0) scale(0.5) rotate(-4deg); opacity: 1; }
   25%  { transform: translateY(-28px) scale(1.6) rotate(3deg); opacity: 1; }
   100% { transform: translateY(-100px) scale(0.85) rotate(-2deg); opacity: 0; }
+}
+@keyframes glow-rare {
+  0%, 100% { box-shadow: inset 0 0 24px rgba(94,162,255,.18); }
+  50%       { box-shadow: inset 0 0 36px rgba(94,162,255,.5), 0 0 14px rgba(94,162,255,.28); }
+}
+@keyframes glow-epic {
+  0%, 100% { box-shadow: inset 0 0 24px rgba(176,105,255,.22); }
+  50%       { box-shadow: inset 0 0 42px rgba(176,105,255,.6), 0 0 18px rgba(176,105,255,.32); }
+}
+@keyframes glow-legend {
+  0%, 100% { box-shadow: inset 0 0 28px rgba(244,197,107,.32); }
+  50%       { box-shadow: inset 0 0 46px rgba(244,197,107,.7), 0 0 22px rgba(244,197,107,.38); }
+}
+@keyframes glow-mythic {
+  0%, 100% { box-shadow: inset 0 0 28px rgba(255,82,103,.32); }
+  50%       { box-shadow: inset 0 0 52px rgba(255,82,103,.75), 0 0 28px rgba(255,82,103,.45), 0 0 60px rgba(255,82,103,.18); }
+}
+@keyframes hero-shimmer {
+  0%        { background-position: -100% 0, 0 0, 0 0; }
+  50%, 100% { background-position: 200% 0, 0 0, 0 0; }
 }
 @keyframes rise-in {
   from { transform: translateY(8px); opacity: 0; }
