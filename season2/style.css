@@ -865,6 +865,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
 }
 .hero-card .role { font-size: 11px; color: var(--muted); letter-spacing: 0.3px; text-transform: uppercase; }
 .hero-card .stats { display: flex; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
