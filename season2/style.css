@@ -821,6 +821,7 @@ a { color: inherit; }
 .hero-card .portrait {
   width: 92px;
   height: 112px;
+  aspect-ratio: 92 / 112;
   border-radius: 14px;
   background:
     linear-gradient(160deg, #2a3a66 0%, #131b34 60%, #0b1126 100%);
