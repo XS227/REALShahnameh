@@ -297,8 +297,19 @@ a { color: inherit; }
 }
 .balance .value small { font-size: 14px; opacity: 0.85; margin-left: 4px; }
 .profit { padding: 14px 16px; }
-.profit .value { font-size: 20px; color: var(--jade); font-weight: 800; }
+.profit .value { font-size: 20px; color: var(--jade); font-weight: 800; animation: profit-pulse 4s ease-in-out infinite; }
 .profit .delta { font-size: 11px; color: var(--muted); }
+
+.balance .value.flash { animation: balance-flash 0.45s ease-out forwards; }
+.coin-float {
+  position: absolute;
+  font-size: 20px;
+  color: var(--gold);
+  text-shadow: 0 0 14px rgba(244,197,107,.9), 0 0 5px #fff;
+  pointer-events: none;
+  z-index: 20;
+  animation: coin-rise 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
 
 /* ----- Energy Core orb --------------------------------------------------- */
 
@@ -1368,6 +1379,18 @@ a { color: inherit; }
   0%   { transform: translateY(0) scale(0.5) rotate(-4deg); opacity: 1; }
   25%  { transform: translateY(-28px) scale(1.6) rotate(3deg); opacity: 1; }
   100% { transform: translateY(-100px) scale(0.85) rotate(-2deg); opacity: 0; }
+}
+@keyframes profit-pulse {
+  0%, 100% { color: var(--jade); }
+  50%       { color: #6fffd4; text-shadow: 0 0 18px rgba(74,216,166,.65), 0 0 6px rgba(74,216,166,.3); }
+}
+@keyframes balance-flash {
+  0%   { filter: brightness(1.9) drop-shadow(0 0 10px rgba(244,197,107,.9)); }
+  100% { filter: brightness(1)   drop-shadow(0 0 0px transparent); }
+}
+@keyframes coin-rise {
+  0%   { transform: translateY(0) scale(0.7); opacity: 1; }
+  100% { transform: translateY(-55px) scale(0.9); opacity: 0; }
 }
 @keyframes glow-rare {
   0%, 100% { box-shadow: inset 0 0 24px rgba(94,162,255,.18); }

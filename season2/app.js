@@ -1067,6 +1067,9 @@
     const renderBalance = () => {
       if (!balanceEl) return;
       balanceEl.innerHTML = `${state.balance.toLocaleString()}<small> REAL</small>`;
+      balanceEl.classList.remove("flash");
+      void balanceEl.offsetWidth;
+      balanceEl.classList.add("flash");
     };
     const renderCombo = () => {
       if (!comboEl) return;
@@ -1132,6 +1135,15 @@
       spark.style.top  = `${y - 18}px`;
       coreWrap.appendChild(spark);
       setTimeout(() => spark.remove(), 900);
+
+      // floating ◆ coin from orb center
+      const coin = document.createElement("span");
+      coin.className = "coin-float";
+      coin.textContent = "◆";
+      coin.style.left = `${rect.width / 2 - 10}px`;
+      coin.style.top  = `${rect.height / 2 - 20}px`;
+      coreWrap.appendChild(coin);
+      setTimeout(() => coin.remove(), 900);
 
       // combo popup
       if (state.combo >= 1.5 && !coreWrap.querySelector(".combo-pop")) {
