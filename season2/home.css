@@ -110,7 +110,6 @@
 .quick-stats {
   display: grid; gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 16px;
 }
 .quick-stats .stat-card {
   display: grid;
@@ -140,7 +139,6 @@
 /* ============== Season banner ============== */
 .season-banner {
   position: relative; overflow: hidden;
-  margin-bottom: 14px;
   padding: 0;
   border-color: rgba(244, 197, 107, .55);
 }
@@ -192,7 +190,6 @@
   display: grid;
   grid-template-columns: 56px 1fr;
   gap: 14px;
-  margin-bottom: 18px;
 }
 .launch-card .launch-icon {
   width: 56px; height: 56px;
@@ -236,7 +233,6 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 2px 2px 14px;
-  margin-bottom: 6px;
   -webkit-overflow-scrolling: touch;
 }
 .hero-strip::-webkit-scrollbar { display: none; }
@@ -284,7 +280,6 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 2px 2px 14px;
-  margin-bottom: 14px;
   -webkit-overflow-scrolling: touch;
 }
 .chapter-strip::-webkit-scrollbar { display: none; }

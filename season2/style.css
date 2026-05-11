@@ -800,12 +800,12 @@ a { color: inherit; }
   background: radial-gradient(circle at 30% 30%, #181d35 0%, #0a0e22 70%);
 }
 .chapter .thumb {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 8px;
   display: block;
-  margin-bottom: 8px;
+  width: calc(100% + 74px);   /* content-area-width + 60px left + 14px right = card width */
+  margin: -14px -14px 10px -60px;  /* escape top / right / spacing / left padding */
+  max-height: 140px;
+  object-fit: cover;
+  /* border-radius omitted — card overflow:hidden clips to card's own 18px corners */
 }
 .chapter .reward {
   display: inline-flex;
@@ -1352,12 +1352,17 @@ a { color: inherit; }
 
 /* Small phones */
 @media (max-width: 360px) {
+  .page-title { font-size: 18px; }
   .balance .value { font-size: 22px; }
   .core-wrap { max-width: 280px; }
   .energy-orb .core-icon { font-size: 18px; }
   .hero-card { grid-template-columns: 78px 1fr; }
   .hero-card .portrait { width: 78px; }
   .hero-card .upgrade-col { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
+  .s1-bonus-card { grid-template-columns: 44px 1fr; }
+  .s1-crest { width: 44px; height: 44px; font-size: 22px; }
+  .premium-banner .primary-btn,
+  .premium-banner .secondary-btn { padding: 8px 10px; font-size: 12px; }
 }
 
 /* ==========================================================================
