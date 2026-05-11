@@ -1,0 +1,420 @@
+{
+  "version": 3,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-10T20:00:00Z",
+  "chapter_slug": "keyumars",
+  "chapter_id": 1,
+  "era": {
+    "label_en": "~7000 BC — Age of Keyumars",
+    "label_fa": "~۷۰۰۰ پ.م — عصر کیومرث"
+  },
+  "lore_summary": {
+    "en": "Before kings, before fire, before the alphabet — the world was wild and the people had no roof but the sky. From the high mountains of Pars, Keyumars rose: the first king, the first lawgiver, the first father. His leopard-skin mantle was the first crown. The beasts of the field bowed. But Ahriman, lord of the dark, sent his son the Black Div down through the smoke to break the dawn before it bloomed.",
+    "fa": "پیش از شاهان، پیش از آتش، پیش از الفبا — جهان رام نبود و مردمان جز آسمان سقفی نداشتند. از کوه‌های بلند پارس، کیومرث برخاست: نخستین شاه، نخستین قانون‌گذار، نخستین پدر. ردای پوست پلنگ او نخستین تاج بود. چارپایان دشت در برابرش سر فرود آوردند. اما اهریمن، خداوندِ تاریکی، پسرِ خود دیوِ سیاه را از میانِ دود فرو فرستاد تا سپیده‌دم را پیش از شکفتنش بشکند."
+  },
+  "timeline": [
+    {
+      "id": "age-of-keyumars",
+      "year_label_en": "~7000 BC",
+      "year_label_fa": "~۷۰۰۰ پ.م",
+      "title_en": "Age of Keyumars",
+      "title_fa": "عصر کیومرث",
+      "body_en": "Keyumars founds the first dwelling on the high slopes of Pars. The leopard-skin mantle is taken; the first court of stone is laid.",
+      "body_fa": "کیومرث نخستین مسکن را بر دامنه‌های بلند پارس بنا می‌نهد. ردای پوست پلنگ بر تن می‌کند و نخستین درگاه از سنگ پی‌ریزی می‌شود.",
+      "image": "/assets/images/locations/mount-damavand-location.png",
+      "side": "light"
+    },
+    {
+      "id": "siamak-rises",
+      "year_label_en": "~6900 BC",
+      "year_label_fa": "~۶۹۰۰ پ.م",
+      "title_en": "Siamak Rises",
+      "title_fa": "برخاستن سیامک",
+      "body_en": "Siamak, son of Keyumars, walks among the people. The mountains learn his name; the forest learns his footstep.",
+      "body_fa": "سیامک، پسر کیومرث، در میان مردمان قدم می‌زند. کوه‌ها نام او را می‌آموزند و جنگل گام او را.",
+      "image": "/assets/images/locations/royal-mountain-court.png",
+      "side": "light"
+    },
+    {
+      "id": "war-against-darkness",
+      "year_label_en": "~6800 BC",
+      "year_label_fa": "~۶۸۰۰ پ.م",
+      "title_en": "War Against Darkness",
+      "title_fa": "نبرد با تاریکی",
+      "body_en": "Ahriman wakes in the deep places. The Black Div is sent. Siamak meets him at the edge of the forest — and falls. The first sorrow enters the world.",
+      "body_fa": "اهریمن در ژرفاها بیدار می‌شود. دیوِ سیاه فرستاده می‌شود. سیامک در کرانه‌ی جنگل با او روبه‌رو می‌گردد — و فرو می‌افتد. نخستین اندوه به جهان می‌آید.",
+      "image": "/assets/images/locations/demon-forest-location.png",
+      "side": "dark"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "humans-learn-order",
+      "order": 1,
+      "title_en": "Humans Learn Order",
+      "title_fa": "آغازِ تمدّن",
+      "era_en": "~7000 BC",
+      "era_fa": "~۷۰۰۰ پ.م",
+      "body_en": "Under Keyumars the people learn to bind their hair, to keep the hearth, to mark the moon. The first measures are taken: a step, a hand, a pace. The first words are tied to the first acts. Children are named. The dead are buried with stones. Order, the eldest gift, is given.",
+      "body_fa": "در روزگار کیومرث، مردمان می‌آموزند گیسوی خود را ببندند، آتشِ خانه را پاس دارند و ماه را نشانه گیرند. نخستین مقیاس‌ها به‌دست می‌آیند: یک گام، یک دست، یک پیمایه. واژه‌ها به کارها بسته می‌شوند. کودکان نام می‌گیرند. مردگان با سنگ‌ها به خاک سپرده می‌شوند. نظم، کهن‌ترین هدیه، فرود می‌آید.",
+      "atmosphere": "warm",
+      "image": "/assets/images/scenes/humans-learn-order-scene.png",
+      "reward": { "xp": 30 },
+      "unlocks_codex": ["leopard-skin", "mount-damavand", "persian-calendar"]
+    },
+    {
+      "id": "beasts-bow",
+      "order": 2,
+      "title_en": "The Beasts Bow",
+      "title_fa": "سرفرودِ چارپایان",
+      "era_en": "~6950 BC",
+      "era_fa": "~۶۹۵۰ پ.م",
+      "body_en": "Lions come down from the high pasture and lie at the foot of the stone court. Wolves let go of the mountain goats. The leopard, whose skin he wears, walks past him without sound. The world recognises a king before it understands what kingship is.",
+      "body_fa": "شیران از چراگاهِ بلند فرود می‌آیند و در پای درگاهِ سنگی می‌خوابند. گرگان، بزانِ کوهی را رها می‌کنند. پلنگی که پوستش را بر تن دارد، بی‌صدا از کنار او می‌گذرد. جهان شاه را می‌شناسد، پیش از آن‌که شاهی را دریابد.",
+      "atmosphere": "wild",
+      "image": "/assets/images/scenes/beasts-bow-scene.png",
+      "reward": { "xp": 30 },
+      "unlocks_codex": ["royal-mountain-court"]
+    },
+    {
+      "id": "darkness-stirs",
+      "order": 3,
+      "title_en": "Darkness Stirs",
+      "title_fa": "تکانِ تاریکی",
+      "era_en": "~6900 BC",
+      "era_fa": "~۶۹۰۰ پ.م",
+      "body_en": "At the edge of the green forest the wind reverses. Owls take wing in daylight. A goat is found cold on a path no wolf has used. The mountain-court whispers, but the king holds firm. Something old has begun to remember the smell of fire.",
+      "body_fa": "در کرانه‌ی جنگلِ سبز، باد وارونه می‌وزد. جغدها در روشناییِ روز پر می‌کشند. بزی سرد بر راهی که هیچ گرگ از آن نگذشته، یافت می‌شود. درگاهِ کوهستانی نجوا می‌کند، اما شاه پابرجاست. چیزی کهن، آغاز به یاد آوردنِ بوی آتش کرده است.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/darkness-stirs-scene.png",
+      "reward": { "xp": 30 },
+      "unlocks_codex": ["demon-forest"]
+    },
+    {
+      "id": "ahriman-awakens",
+      "order": 4,
+      "title_en": "Ahriman Awakens",
+      "title_fa": "بیداریِ اهریمن",
+      "era_en": "~6850 BC",
+      "era_fa": "~۶۸۵۰ پ.م",
+      "body_en": "Far below the roots of the world, in the place where light has never been, Ahriman opens his eyes. He sees the firelight on the high mountain. He sees the leopard-skin king. He sees the children sleeping. He calls for his black son, and the Div answers.",
+      "body_fa": "بسی فروتر از ریشه‌های جهان، در جایی که هرگز روشنی نتافته، اهریمن چشم می‌گشاید. روشنیِ آتش را بر کوهِ بلند می‌بیند. شاهِ پوست‌پلنگ را می‌بیند. کودکانِ خفته را می‌بیند. پسرِ سیاهِ خود را می‌خواند، و دیو پاسخ می‌دهد.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/ahriman-awakens-scene.png",
+      "reward": { "xp": 40 },
+      "unlocks_codex": ["ahriman-codex"]
+    },
+    {
+      "id": "siamak-rises",
+      "order": 5,
+      "title_en": "Siamak Rises",
+      "title_fa": "برخاستنِ سیامک",
+      "era_en": "~6850 BC",
+      "era_fa": "~۶۸۵۰ پ.م",
+      "body_en": "Siamak, the king's son, takes up the first banner. He is young and his hair is uncut. He turns toward the forest with no army but his name, the dawn at his back and a black wind at his face. He is the first hero of the chronicle. The mountain holds its breath.",
+      "body_fa": "سیامک، پسرِ شاه، نخستین درفش را برمی‌گیرد. جوان است و گیسویش هنوز ناچیده. تنها با نامِ خود سوی جنگل می‌گردد، سپیده‌دم بر پشت و بادِ سیاه در روی. او نخستین قهرمانِ این تاریخ است. کوه دم فرو می‌بندد.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/siamak-rises-scene.png",
+      "reward": { "xp": 50 },
+      "unlocks_codex": ["sade-foreshadow"]
+    },
+    {
+      "id": "black-div-appears",
+      "order": 6,
+      "title_en": "The Black Div Appears",
+      "title_fa": "پیدا‌شدنِ دیوِ سیاه",
+      "era_en": "~6800 BC",
+      "era_fa": "~۶۸۰۰ پ.م",
+      "body_en": "Out of the trees he steps — black-skinned, fire-eyed, taller than the elder oaks. Siamak meets him on the open turf. The Shahnameh does not flinch from the cost: this is where the first sorrow enters the world. The leopard-skin king will mourn thirty days. And his grandson will avenge him in the next dawn.",
+      "body_fa": "از میانِ درختان پدیدار می‌گردد — سیاه‌چرده، آتش‌چشم، بلندتر از بلوطانِ کهن. سیامک در میانه‌ی چمنِ گشوده با او روبه‌رو می‌شود. شاهنامه از بهای آن نمی‌گریزد: نخستین اندوه از این‌جا به جهان می‌آید. شاهِ پوست‌پلنگ سی روز سوگ خواهد گزارد. و نوه‌اش در سپیده‌دمِ پسین، کین او می‌ستاند.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/black-div-appears-scene.png",
+      "reward": { "xp": 60 },
+      "unlocks_codex": ["black-div-codex"]
+    },
+    {
+      "id": "battle-against-darkness",
+      "order": 7,
+      "title_en": "Battle Against Darkness",
+      "title_fa": "نبرد با تاریکی",
+      "era_en": "~6800 BC",
+      "era_fa": "~۶۸۰۰ پ.م",
+      "body_en": "Banner against claw. Dawn against shadow. Siamak strikes first, and the forest holds its breath. The Black Div answers with the weight of an older world. Steel and night fold together at the edge of the green. The first battle of humankind is fought on open turf — and the first defeat is borne, so that the first defiance can be remembered.",
+      "body_fa": "درفش در برابرِ چنگال. سپیده‌دم در برابرِ سایه. سیامک نخستین ضربه را فرود می‌آورد و جنگل دم فرو می‌بندد. دیوِ سیاه با وزنِ جهانی کهن‌تر پاسخ می‌دهد. آهن و شب در کرانه‌ی سبز در هم می‌پیچند. نخستین نبردِ آدمی بر چمنِ گشوده روی می‌دهد — و نخستین شکست تاب آورده می‌شود، تا نخستین ایستادگی به‌یاد بماند.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/battle-against-darkness-scene.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": []
+    },
+    {
+      "id": "chapter-complete",
+      "order": 8,
+      "title_en": "Thirty Days of Mourning",
+      "title_fa": "سی روز سوگ",
+      "era_en": "~6800 BC",
+      "era_fa": "~۶۸۰۰ پ.م",
+      "body_en": "Keyumars unbinds the leopard-skin and lays it across the cold court. For thirty days the fire is kept low. Then a small hand reaches for the spear — his grandson, Hushang, who has watched and remembered. The first chapter of the chronicle closes here: not in victory, but in resolve. The dawn is older than the dark. The Shahnameh has begun.",
+      "body_fa": "کیومرث پوستِ پلنگ را می‌گشاید و بر درگاهِ سرد می‌گذارد. سی روز آتش را کوتاه نگاه می‌دارند. آن‌گاه دستی کوچک نیزه را برمی‌گیرد — نوه‌اش هوشنگ که نگریسته و به‌یاد سپرده است. نخستین دفترِ این تاریخ این‌جا پایان می‌گیرد: نه با پیروزی، که با عزم. سپیده‌دم کهن‌تر از تاریکی است. شاهنامه آغاز شده است.",
+      "atmosphere": "dawn",
+      "image": "/assets/images/scenes/chapter-1-complete-scene.png",
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["ferdowsi"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "keyumars",
+      "name_en": "Keyumars",
+      "name_fa": "کیومرث",
+      "role_en": "First King of Pars",
+      "role_fa": "نخستین شاهِ پارس",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "The first man to wear a crown — though his crown was leopard skin and his throne was mountain stone. Father of Siamak, grandfather of Hushang. He spoke few words and the world obeyed each one.",
+      "lore_fa": "نخستین کسی که تاج بر سر گذاشت — هرچند تاجش پوست پلنگ بود و تختش سنگِ کوه. پدرِ سیامک، نیای هوشنگ. اندک سخن می‌گفت و جهان از هر کلامش فرمان می‌برد.",
+      "image": "/assets/images/heroes/keyumars-hero.png",
+      "unlocked": true,
+      "side": "light"
+    },
+    {
+      "slug": "siamak",
+      "name_en": "Siamak",
+      "name_fa": "سیامک",
+      "role_en": "Prince · First Defender",
+      "role_fa": "شاهزاده · نخستین مدافع",
+      "rarity": "epic",
+      "level_required": 3,
+      "lore_en": "Son of Keyumars, the first hero who took up a banner against the dark. Young and brave, he turned alone toward the forest. His courage is the first courage the chronicle remembers.",
+      "lore_fa": "پسرِ کیومرث، نخستین قهرمانی که در برابرِ تاریکی درفش برافراشت. جوان و دلیر، تنها سوی جنگل گردید. دلیریِ او، نخستین دلیری است که شاهنامه به‌یاد می‌سپارد.",
+      "image": "/assets/images/heroes/siamak-hero.png",
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:siamak-rises"
+    },
+    {
+      "slug": "hushang",
+      "name_en": "Hushang",
+      "name_fa": "هوشنگ",
+      "role_en": "Grandson · Avenger · Future King",
+      "role_fa": "نوه · انتقام‌گیر · شاهِ آینده",
+      "rarity": "epic",
+      "level_required": 5,
+      "lore_en": "Grandson of Keyumars; the boy who watches and remembers. Will avenge his father, will strike fire from flint, will bring forth the festival of Sade. (Chapter 2.)",
+      "lore_fa": "نوه‌ی کیومرث؛ پسرکی که می‌نگرد و به یاد می‌سپارد. کین پدر می‌ستاند، آتش از سنگ می‌جوید و جشن سده پدید می‌آورد. (دفترِ دوم.)",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "chapter:hushang"
+    },
+    {
+      "slug": "ahriman",
+      "name_en": "Ahriman",
+      "name_fa": "اهریمن",
+      "role_en": "Lord of the Dark · Final Threat",
+      "role_fa": "خداوندگارِ تاریکی · تهدیدِ نهایی",
+      "rarity": "mythic",
+      "level_required": 10,
+      "lore_en": "The shadow at the root of the world. Ancient evil, cosmic darkness, the patience that is older than memory. In this chapter he is named but not yet faced.",
+      "lore_fa": "سایه‌ای که در ریشه‌های جهان نشسته. شرّی کهن، تاریکیِ کیهانی، شکیبایی‌ای کهن‌تر از حافظه. در این دفتر نام برده می‌شود، اما هنوز روبه‌رو نمی‌آید.",
+      "image": "/assets/images/enemies/ahriman-boss.png",
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:ahriman-awakens"
+    },
+    {
+      "slug": "black-div",
+      "name_en": "The Black Div",
+      "name_fa": "دیوِ سیاه",
+      "role_en": "Son of Ahriman · First Enemy",
+      "role_fa": "پسرِ اهریمن · نخستین دشمن",
+      "rarity": "legendary",
+      "level_required": 5,
+      "lore_en": "The first terrifying enemy: a corrupted servant of darkness, black-skinned and fire-eyed. He fells Siamak in the green forest, and the king mourns thirty days.",
+      "lore_fa": "نخستین دشمنِ هولناک: بنده‌ای فاسدِ تاریکی، سیاه‌چرده و آتش‌چشم. سیامک را در جنگلِ سبز فرو می‌اندازد و شاه سی روز سوگ می‌گزارد.",
+      "image": "/assets/images/enemies/black-div-enemy.png",
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:black-div-appears"
+    }
+  ],
+  "places": [
+    {
+      "slug": "mount-damavand",
+      "name_en": "Mount Damavand",
+      "name_fa": "کوه دماوند",
+      "kind_en": "Sacred Peak · Throne of Dawn",
+      "kind_fa": "قلّه‌ی مقدّس · تختِ سپیده‌دم",
+      "summary_en": "The white-headed mountain. From its slopes Keyumars first watches the dawn. Later kings will return; later demons will be chained beneath it.",
+      "summary_fa": "کوهِ سپیدسر. کیومرث نخستین سپیده را از دامنه‌های آن می‌نگرد. شاهانِ پسین باز می‌گردند و دیوانِ پسین در زیر آن به زنجیر می‌شوند.",
+      "image": "/assets/images/locations/mount-damavand-location.png",
+      "unlocked": true
+    },
+    {
+      "slug": "royal-mountain-court",
+      "name_en": "Royal Mountain Court",
+      "name_fa": "بارگاهِ کوهستانیِ شاهی",
+      "kind_en": "First Throne · Civilization",
+      "kind_fa": "نخستین تخت · تمدّن",
+      "summary_en": "Stone laid on stone, fire kept by the elders, songs raised at evening. There is no roof yet — the sky itself is the roof. Here humans first learn order.",
+      "summary_fa": "سنگ بر سنگ، آتشی که ریش‌سفیدان نگه می‌دارند، سرودی که شامگاهان برمی‌خیزد. سقفی نیست — خود آسمان سقف است. این‌جا انسان نخستین‌بار نظم می‌آموزد.",
+      "image": "/assets/images/locations/royal-mountain-court.png",
+      "unlocked": false,
+      "unlock_via": "scene:beasts-bow"
+    },
+    {
+      "slug": "demon-forest",
+      "name_en": "Demon Forest",
+      "name_fa": "جنگلِ دیوان",
+      "kind_en": "Edge of the Dark · Site of First Battle",
+      "kind_fa": "کرانه‌ی تاریکی · جایگاهِ نخستین نبرد",
+      "summary_en": "Where the king's law ends and Ahriman's roots begin. The Black Div comes through here. So does Siamak, going down — and not coming back.",
+      "summary_fa": "جایی که قانونِ شاه به‌پایان می‌رسد و ریشه‌های اهریمن آغاز می‌گردد. دیوِ سیاه از این‌جا می‌آید و سیامک، فروشونده، از این‌جا می‌رود — و باز نمی‌آید.",
+      "image": "/assets/images/locations/demon-forest-location.png",
+      "unlocked": false,
+      "unlock_via": "scene:darkness-stirs"
+    },
+    {
+      "slug": "ancient-pars",
+      "name_en": "Ancient Pars",
+      "name_fa": "پارسِ کهن",
+      "kind_en": "The Land Itself",
+      "kind_fa": "خودِ سرزمین",
+      "summary_en": "The stretch of high country east of the salt plains and west of the great desert. Pars is older than Iran is named; the Shahnameh begins here.",
+      "summary_fa": "سرزمینِ بلندی که شرقِ دشت‌های نمک و غربِ کویرِ بزرگ نشسته است. پارس کهن‌تر از آن است که نامِ ایران بر آن نهاده شود؛ شاهنامه از این‌جا آغاز می‌گردد.",
+      "image": null,
+      "unlocked": true
+    }
+  ],
+  "battle": {
+    "boss_slug": "black-div",
+    "boss_name_en": "The Black Div",
+    "boss_name_fa": "دیوِ سیاه",
+    "boss_image": "/assets/images/enemies/black-div-enemy.png",
+    "boss_master_slug": "ahriman",
+    "boss_master_image": "/assets/images/enemies/ahriman-boss.png",
+    "intro_en": "Before the chapter closes, the king's son must face the first dark thing. The fight is not yours yet — finish what is asked, and Siamak's banner will rise.",
+    "intro_fa": "پیش از پایانِ دفتر، پسرِ شاه باید با نخستین تاریکی روبه‌رو شود. نبرد هنوز از آنِ تو نیست — آنچه خواسته شده به پایان رسان، تا درفشِ سیامک برخیزد.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 5,
+        "label_en": "Reach Keyumars LVL 5",
+        "label_fa": "رسیدن به سطحِ ۵ کیومرث"
+      },
+      {
+        "id": "siamak",
+        "kind": "character",
+        "target": "siamak",
+        "label_en": "Recruit Siamak",
+        "label_fa": "همراه‌کردنِ سیامک"
+      },
+      {
+        "id": "fire-rune",
+        "kind": "item",
+        "target": "fire-rune",
+        "label_en": "Acquire the Fire Rune",
+        "label_fa": "به‌دست‌آوردنِ نشانِ آتش"
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "keyumars",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر"
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "leopard-skin",
+      "category": "artifact",
+      "title_en": "The Leopard-Skin Crown",
+      "title_fa": "تاجِ پوستِ پلنگ",
+      "summary_en": "Before crowns of gold there was the pelt. The first king wore the leopard, and the leopard wore him.",
+      "summary_fa": "پیش از تاج‌های زرّین، پوست بود. نخستین شاه پلنگ بر تن کرد و پلنگ او را بر تن.",
+      "image": "/assets/images/heroes/keyumars-hero.png",
+      "unlock_via": "scene:humans-learn-order"
+    },
+    {
+      "id": "mount-damavand",
+      "category": "place",
+      "title_en": "Mount Damavand",
+      "title_fa": "کوهِ دماوند",
+      "summary_en": "The white-headed mountain — eternal landmark of the chronicle. Keyumars looks down from it; in chapter 5 a tyrant will be chained beneath it.",
+      "summary_fa": "کوهِ سپیدسر — نشانِ ابدیِ این تاریخ. کیومرث از آن فرو می‌نگرد؛ در دفترِ پنجم خداوندگارِ ستم زیرِ آن به زنجیر می‌شود.",
+      "image": "/assets/images/locations/mount-damavand-location.png",
+      "unlock_via": "scene:humans-learn-order"
+    },
+    {
+      "id": "royal-mountain-court",
+      "category": "place",
+      "title_en": "The First Court",
+      "title_fa": "نخستین درگاه",
+      "summary_en": "There is no palace yet. Stone, fire, and silence make the first court.",
+      "summary_fa": "هنوز کاخی نیست. سنگ و آتش و خاموشی، نخستین درگاه را می‌سازند.",
+      "image": "/assets/images/locations/royal-mountain-court.png",
+      "unlock_via": "scene:beasts-bow"
+    },
+    {
+      "id": "persian-calendar",
+      "category": "concept",
+      "title_en": "The First Calendar",
+      "title_fa": "نخستین گاه‌شمار",
+      "summary_en": "Keyumars's people learn to mark the moon. From this measure will descend, in time, Nowruz itself.",
+      "summary_fa": "مردمانِ کیومرث می‌آموزند که ماه را نشانه گیرند. از این پیمایه، در گذرِ زمان، نوروز فرا خواهد رسید.",
+      "image": null,
+      "unlock_via": "scene:humans-learn-order"
+    },
+    {
+      "id": "demon-forest",
+      "category": "place",
+      "title_en": "The Demon Forest",
+      "title_fa": "جنگلِ دیوان",
+      "summary_en": "Where the law of the king ends and the older root begins.",
+      "summary_fa": "جایی که قانونِ شاه پایان می‌گیرد و ریشه‌ی کهن‌تر آغاز می‌گردد.",
+      "image": "/assets/images/locations/demon-forest-location.png",
+      "unlock_via": "scene:darkness-stirs"
+    },
+    {
+      "id": "ahriman-codex",
+      "category": "creature",
+      "title_en": "Ahriman, Lord of the Dark",
+      "title_fa": "اهریمن، خداوندگارِ تاریکی",
+      "summary_en": "Ancient evil itself — older than memory, patient as stone. He is named in this chapter; he is not yet faced.",
+      "summary_fa": "خودِ شرّ کهن — کهن‌تر از حافظه، شکیبا چون سنگ. در این دفتر نامیده می‌شود؛ هنوز روبه‌رو نمی‌آید.",
+      "image": "/assets/images/enemies/ahriman-boss.png",
+      "unlock_via": "scene:ahriman-awakens"
+    },
+    {
+      "id": "black-div-codex",
+      "category": "creature",
+      "title_en": "The Black Div",
+      "title_fa": "دیوِ سیاه",
+      "summary_en": "The first demon named in the Shahnameh. Black-skinned, fire-eyed, sent to break the dawn.",
+      "summary_fa": "نخستین دیوی که در شاهنامه نامیده می‌شود. سیاه‌چرده، آتش‌چشم، برای شکستنِ سپیده فرستاده‌شده.",
+      "image": "/assets/images/enemies/black-div-enemy.png",
+      "unlock_via": "scene:black-div-appears"
+    },
+    {
+      "id": "sade-foreshadow",
+      "category": "event",
+      "title_en": "The Festival to Come — Sade",
+      "title_fa": "جشنِ آینده — سده",
+      "summary_en": "A child watches in this chapter. He will, in two ages, strike a stone at a serpent and bring fire to humankind. Remember his name: Hushang.",
+      "summary_fa": "کودکی در این دفتر می‌نگرد. او در دو عصرِ بعد، چخماق بر افعی فرود می‌آورد و آتش را به آدمیان می‌بخشد. نامِ او را به‌یاد بسپار: هوشنگ.",
+      "image": null,
+      "unlock_via": "scene:siamak-rises"
+    },
+    {
+      "id": "ferdowsi",
+      "category": "person",
+      "title_en": "Ferdowsi of Tus",
+      "title_fa": "فردوسیِ توس",
+      "summary_en": "The poet who, over thirty years, wrote sixty thousand verses to keep this chronicle alive. He said: 'I shall live by what I wrote.'",
+      "summary_fa": "شاعری که در درازِ سی سال، شصت هزار بیت سرود تا این تاریخ زنده بماند. گفت: «نمیرم از این پس که من زنده‌ام.»",
+      "image": "/assets/images/lore/ferdowsi-intro.png",
+      "unlock_via": "intro:complete"
+    }
+  ]
+}
