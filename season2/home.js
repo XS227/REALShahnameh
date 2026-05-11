@@ -24,6 +24,20 @@
     return "";
   };
 
+  /* Build the inner HTML for a hero portrait.
+     Priority: explicit image_url → auto .png → auto .jpg → emoji */
+  const heroPortraitHtml = (h) => {
+    if (h.image_url) {
+      return `<img src="${escapeAttr(h.image_url)}" alt="${escapeAttr(h.name)}" loading="lazy">`;
+    }
+    const slug = encodeURIComponent(h.slug || "");
+    const png  = `/season2/uploads/heroes/${slug}.png`;
+    const jpg  = `/season2/uploads/heroes/${slug}.jpg`;
+    const emo  = escapeHtml(heroEmoji(h.slug));
+    return `<img src="${png}" alt="${escapeAttr(h.name)}" loading="lazy" `
+         + `onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='${escapeAttr(jpg)}';}else{this.outerHTML='${emo}';}">`;
+  };
+
   /* Build the inner HTML for a chapter banner.
      Priority: explicit image_url → auto .png → auto .jpg → 📜 emoji */
   const chapterBannerHtml = (c) => {
@@ -57,7 +71,7 @@
       .slice(0, 8);
     heroHost.innerHTML = list.map(h => `
       <a class="hero-mini ${rarityClass(h.rarity)}" href="heroes.html#${escapeAttr(h.slug)}">
-        <div class="portrait">${h.image_url ? `<img src="${escapeAttr(h.image_url)}" alt="${escapeAttr(h.name)}" loading="lazy">` : escapeHtml(heroEmoji(h.slug))}</div>
+        <div class="portrait">${heroPortraitHtml(h)}</div>
         <div class="info">
           <div class="name">${escapeHtml(h.name)}</div>
           <div class="rarity">${escapeHtml(h.rarity || "")}</div>

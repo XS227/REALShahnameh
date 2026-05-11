@@ -1222,17 +1222,19 @@
           const slug = slugify(h3.firstChild ? h3.firstChild.textContent : h3.textContent);
           const hero = bySlug.get(slug);
           if (!hero) return;
-          // image
-          if (hero.image_url) {
-            const portrait = card.querySelector(".portrait");
-            if (portrait) {
-              const img = new Image();
-              img.alt = hero.name || "";
-              img.loading = "lazy";
-              img.decoding = "async";
-              img.src = hero.image_url;
-              img.onload = () => { portrait.textContent = ""; portrait.appendChild(img); };
-            }
+          // image: explicit url → auto .png → auto .jpg → emoji stays
+          const portrait = card.querySelector(".portrait");
+          if (portrait) {
+            const _slug = encodeURIComponent(hero.slug || "");
+            const src = hero.image_url || `/season2/uploads/heroes/${_slug}.png`;
+            const jpg = hero.image_url ? null : `/season2/uploads/heroes/${_slug}.jpg`;
+            const img = new Image();
+            img.alt = hero.name || "";
+            img.loading = "lazy";
+            img.decoding = "async";
+            img.onload = () => { portrait.textContent = ""; portrait.appendChild(img); };
+            if (jpg) img.onerror = () => { img.onerror = null; img.src = jpg; };
+            img.src = src;
           }
           // description swap (subtle — only if .role exists and isn't already custom)
           const role = card.querySelector(".role");
