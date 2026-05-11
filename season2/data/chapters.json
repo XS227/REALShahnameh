@@ -32,7 +32,7 @@
       "story": "Hushang the wise grandson struck flint at a serpent of black scales. The stone missed, but a spark leapt up and a tree caught fire. From that night the people knew flame, and Hushang named the festival Sade. Iron was forged. Water was led to fields. The first crafts were taught to humankind.",
       "story_fa": "هوشنگ، نوه خردمند، چخماق بر افعی سیاه‌فلس فرود آورد. سنگ خطا کرد، اما جرقه‌ای جهید و درختی شعله‌ور شد. از آن شب مردم آتش را شناختند و هوشنگ جشن سده را نام نهاد.",
       "banner_url": "",
-      "image_url": "",
+      "image_url": "/assets/images/heroes/hushang-hero.png",
       "unlock_day": 22,
       "estimated_reading_time": 7,
       "rewards": { "xp": 250, "real": 100, "energy": 60, "gems": 5, "hero_fragments": { "fereydun": 1 } },
