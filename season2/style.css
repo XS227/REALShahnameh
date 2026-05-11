@@ -577,7 +577,7 @@ a { color: inherit; }
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 22px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   padding: 8px;
   z-index: 50;
   backdrop-filter: blur(18px) saturate(120%);
@@ -1347,6 +1347,7 @@ a { color: inherit; }
   .core-wrap { max-width: 280px; }
   .energy-orb .core-icon { font-size: 18px; }
   .hero-card { grid-template-columns: 78px 1fr; }
+  .hero-card .portrait { width: 78px; }
   .hero-card .upgrade-col { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
 }
 

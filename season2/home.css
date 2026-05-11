@@ -359,9 +359,6 @@
 /* ============== Tap page (orb-only) ============== */
 .tap-app {
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  padding-bottom: 90px;
 }
 .tap-head {
   display: flex; align-items: center; justify-content: space-between;
