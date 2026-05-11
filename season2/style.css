@@ -108,6 +108,15 @@ a { color: inherit; }
   gap: 14px;
 }
 
+/* Page entrance — children stagger in on load */
+.app > * { animation: card-in 0.35s ease-out both; }
+.app > *:nth-child(1) { animation-delay: 0.04s; }
+.app > *:nth-child(2) { animation-delay: 0.10s; }
+.app > *:nth-child(3) { animation-delay: 0.16s; }
+.app > *:nth-child(4) { animation-delay: 0.22s; }
+.app > *:nth-child(5) { animation-delay: 0.28s; }
+.app > *:nth-child(6) { animation-delay: 0.33s; }
+
 .page-head {
   display: flex;
   align-items: center;
@@ -1379,6 +1388,10 @@ a { color: inherit; }
   0%   { transform: translateY(0) scale(0.5) rotate(-4deg); opacity: 1; }
   25%  { transform: translateY(-28px) scale(1.6) rotate(3deg); opacity: 1; }
   100% { transform: translateY(-100px) scale(0.85) rotate(-2deg); opacity: 0; }
+}
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 @keyframes profit-pulse {
   0%, 100% { color: var(--jade); }
