@@ -1369,6 +1369,20 @@
           }
           // chapter slug for quiz lookup
           if (ch.slug) card.setAttribute("data-chapter-slug", ch.slug);
+          // image: explicit url → auto .png → auto .jpg → no thumb (static layout unchanged)
+          if (!card.querySelector(".thumb")) {
+            const _slug = encodeURIComponent(ch.slug || "");
+            const src = ch.image_url || `/season2/uploads/chapters/${_slug}.png`;
+            const jpg = ch.image_url ? null : `/season2/uploads/chapters/${_slug}.jpg`;
+            const img = new Image();
+            img.className = "thumb";
+            img.alt = ch.title || "";
+            img.loading = "lazy";
+            img.decoding = "async";
+            img.onload = () => { if (h4) h4.before(img); };
+            if (jpg) img.onerror = () => { img.onerror = null; img.src = jpg; };
+            img.src = src;
+          }
         });
 
         // Progress card

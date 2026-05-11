@@ -799,6 +799,14 @@ a { color: inherit; }
   border-color: var(--border);
   background: radial-gradient(circle at 30% 30%, #181d35 0%, #0a0e22 70%);
 }
+.chapter .thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 8px;
+}
 .chapter .reward {
   display: inline-flex;
   align-items: center;
