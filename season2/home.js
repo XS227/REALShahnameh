@@ -24,6 +24,19 @@
     return "";
   };
 
+  /* Build the inner HTML for a chapter banner.
+     Priority: explicit image_url → auto .png → auto .jpg → 📜 emoji */
+  const chapterBannerHtml = (c) => {
+    if (c.image_url) {
+      return `<img src="${escapeAttr(c.image_url)}" alt="${escapeAttr(c.title)}" loading="lazy">`;
+    }
+    const slug = encodeURIComponent(c.slug || "");
+    const png  = `/season2/uploads/chapters/${slug}.png`;
+    const jpg  = `/season2/uploads/chapters/${slug}.jpg`;
+    return `<img src="${png}" alt="${escapeAttr(c.title)}" loading="lazy" `
+         + `onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='${escapeAttr(jpg)}';}else{this.outerHTML='📜';}">`;
+  };
+
   const heroEmoji = (slug) => ({
     rostam: "⚔", simorgh: "🪶", zal: "🌒", tahmineh: "♛",
     zahhak: "🐍", fereydun: "🛡", kaveh: "⚒", rakhsh: "🐎",
@@ -67,7 +80,7 @@
                       : "Available";
       return `
       <a class="chapter-mini ${cls}" href="learn.html#${escapeAttr(c.slug || c.id)}">
-        <div class="banner">${c.image_url ? `<img src="${escapeAttr(c.image_url)}" alt="${escapeAttr(c.title)}" loading="lazy">` : "📜"}</div>
+        <div class="banner">${chapterBannerHtml(c)}</div>
         <div class="info">
           <div class="title">${escapeHtml(c.title)}</div>
           <div class="meta">
