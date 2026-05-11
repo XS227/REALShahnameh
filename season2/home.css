@@ -366,5 +366,3 @@
 }
 .tap-head h2 { margin: 0; font-size: 16px; font-weight: 800; }
 .tap-head .pill { font-size: 10px; padding: 3px 10px; border-radius: 999px; background: rgba(244,197,107,.14); border: 1px solid rgba(244,197,107,.35); color: var(--gold, #f4c56b); letter-spacing: 1.5px; }
-/* Cancel inline margin-top on the Boost card — flex gap already provides the 14px spacing */
-.tap-app .action-grid { margin-top: 0; }
