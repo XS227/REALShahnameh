@@ -1151,6 +1151,13 @@
       ], { duration: 220, easing: "ease-out" });
 
       haptic(crit ? "heavy" : "light");
+
+      coreWrap.classList.add("tapped");
+      setTimeout(() => coreWrap.classList.remove("tapped"), 200);
+      if (crit) {
+        coreWrap.classList.add("crit-burst");
+        setTimeout(() => coreWrap.classList.remove("crit-burst"), 500);
+      }
     };
 
     orb.addEventListener("click", tap);
