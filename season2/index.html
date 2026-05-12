@@ -4,145 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#04050b" />
-  <title>REAL Shahnameh — Home</title>
+  <title>REAL Shahnameh — Play</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=20260510-visual" />
-  <link rel="stylesheet" href="home.css?v=20260510-visual" />
+  <link rel="stylesheet" href="style.css?v=202605100154" />
 </head>
 <body>
-  <main class="app home-app">
+  <main class="app">
 
-    <!-- Visible build marker so deploys are unmistakable -->
-    <div class="build-marker" data-build-marker>S2 UI VERSION 2026-05-10</div>
-
-    <!-- Top profile card -->
-    <section class="card gold-edge profile-card">
-      <div class="avatar-ring">
-        <div class="avatar"><span data-path-name>King Setai</span></div>
+    <!-- Top bar: avatar / rank / level -->
+    <section class="card gold-edge top-bar">
+      <div class="avatar">
+        RS
+        <span class="avatar-ring"></span>
       </div>
       <div class="who">
-        <h1 class="name"><span data-path-name>King Setai</span></h1>
-        <div class="meta-row">
+        <h1 class="name"><span data-path-name>King Setai</span> <span class="pill" data-i18n="vip">VIP</span></h1>
+        <div class="rank-row">
           <span class="rank-tag" data-path-title>⚔ Warrior of Pars</span>
-          <span class="lvl-pip">LVL <b data-level>17</b></span>
+          <span class="rank-tag" style="background: rgba(244,197,107,.14); border-color: var(--border-gold); color: var(--gold);" data-i18n="season2">Season 2</span>
         </div>
-        <div class="xp-bar"><span class="fill" style="width:54%"></span></div>
-        <div class="xp-meta">2,140 / 4,000 XP to LVL 18</div>
+      </div>
+      <div class="lvl-badge"><span data-i18n="level">LVL</span> <span class="lvl-num" data-level>17</span></div>
+    </section>
+
+    <!-- Balance + Profit -->
+    <section class="balance-row">
+      <article class="card balance gold-edge">
+        <span class="label">◆ <span data-i18n="balance">Balance</span></span>
+        <span class="value" data-balance>12,840<small> REAL</small></span>
+        <span class="muted" style="font-size:11px;" data-i18n="today_delta">+1,240 today</span>
+      </article>
+      <article class="card profit">
+        <span class="label" style="font-size:11px; letter-spacing:.5px; color:var(--muted); text-transform:uppercase;" data-i18n="profit_hr">Profit / hr</span>
+        <span class="value">+172</span>
+        <span class="delta" data-i18n="auto_claim">REAL · auto-claim</span>
+      </article>
+    </section>
+
+    <!-- Energy Core orb -->
+    <section class="card gold-edge" style="padding: 16px 14px 6px;">
+      <div class="core-wrap" data-core>
+        <span class="ring r1"></span>
+        <span class="ring r2"></span>
+        <span class="ring r3"></span>
+        <span class="ring r4"></span>
+        <button class="energy-orb" data-energy-orb aria-label="Tap to gather REAL">
+          <span class="core-icon">REAL</span>
+        </button>
+      </div>
+      <!-- Energy meta -->
+      <div class="energy-meta" style="padding-bottom: 0;">
+        <div class="energy-line">
+          <span>⚡ <span data-i18n="energy">Energy</span></span>
+          <span><span class="e-val" data-energy>720</span> / 1000 · <span class="e-timer" data-refill>+1 / 3s</span></span>
+        </div>
+        <div class="bar"><span class="fill" data-energy-fill style="width:72%"></span></div>
       </div>
     </section>
 
-    <!-- REAL balance hero card -->
-    <section class="card gold-edge balance-hero">
-      <div>
-        <span class="label">REAL Balance</span>
-        <span class="value" data-balance>1,245.78<small> REAL</small></span>
-        <span class="delta">+1,240 today · auto-claim active</span>
-      </div>
-      <div class="balance-coin">◆</div>
-    </section>
-
-    <!-- Quick stats row -->
-    <section class="quick-stats">
-      <article class="card stat-card">
-        <span class="ico warm">⚡</span>
-        <div>
-          <div class="lbl">Energy</div>
-          <div class="num"><span data-energy>720</span> / 1000</div>
+    <!-- Action grid -->
+    <section class="action-grid">
+      <article class="card action gold-edge">
+        <h4><span class="ico">⚡</span> <span data-i18n="boost">Boost</span></h4>
+        <p class="copy" data-i18n="boost_copy">Multiply tap power 3× for 30 minutes. Stacks with combo critical.</p>
+        <div class="row">
+          <button class="primary-btn btn-block" data-action="boost" data-i18n="activate">Activate</button>
         </div>
       </article>
-      <article class="card stat-card">
+      <article class="card action violet-edge">
+        <h4><span class="ico">👥</span> <span data-i18n="invite">Invite</span></h4>
+        <p class="copy" data-i18n="invite_copy">Bring allies. Earn 10% of their REAL forever + chest drops.</p>
+        <div class="row">
+          <a class="secondary-btn btn-block" href="earn.html" data-i18n="share_link_btn">Share Link</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Stats -->
+    <div class="section-head">
+      <h3 data-i18n="your_edge">Your edge</h3>
+      <a class="more" href="social.html" data-i18n="compare">Compare ›</a>
+    </div>
+    <section class="stats-grid">
+      <article class="card stat-mini">
+        <span class="ico warm">🔥</span>
+        <div>
+          <div class="lbl" data-i18n="daily_streak">Daily streak</div>
+          <div class="num" data-i18n="streak_days">12 days</div>
+        </div>
+      </article>
+      <article class="card stat-mini">
+        <span class="ico">✦</span>
+        <div>
+          <div class="lbl" data-i18n="combo">Combo</div>
+          <div class="num">×<span data-combo>1.0</span></div>
+        </div>
+      </article>
+      <article class="card stat-mini">
         <span class="ico cold">💎</span>
         <div>
-          <div class="lbl">Gems</div>
-          <div class="num">128</div>
+          <div class="lbl" data-i18n="referral_real">Referral REAL</div>
+          <div class="num">+2,310</div>
         </div>
       </article>
-      <article class="card stat-card">
+      <article class="card stat-mini">
         <span class="ico lush">⭐</span>
         <div>
-          <div class="lbl">XP today</div>
-          <div class="num">+540</div>
+          <div class="lbl" data-i18n="xp_to_level">XP to LVL 18</div>
+          <div class="num">2,140 / 4,000</div>
         </div>
       </article>
-      <article class="card stat-card">
-        <span class="ico">🪙</span>
-        <div>
-          <div class="lbl">REAL / hr</div>
-          <div class="num">+172</div>
-        </div>
-      </article>
-    </section>
-
-    <!-- Big Shahnameh banner with Play CTA -->
-    <section class="card gold-edge season-banner">
-      <div class="season-banner-bg"></div>
-      <div class="season-banner-body">
-        <span class="kicker">SEASON 2 · CHAPTER 1</span>
-        <h2>SHAHNAMEH<br/>SEASON 2</h2>
-        <p class="copy">Begin Chapter 1 — Keyumars, the first king of Pars.</p>
-        <div class="cta-row">
-          <a class="primary-btn" href="learn.html">Begin Chapter 1</a>
-          <a class="secondary-btn" href="tap.html">Play Now</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Season 2 launch / next event -->
-    <section class="card violet-edge launch-card">
-      <div class="launch-icon">🚀</div>
-      <div class="launch-body">
-        <span class="kicker">SEASON 2 LAUNCH</span>
-        <h3>Day <b data-journey-day-num>1</b> of your 9-month Shahnameh journey</h3>
-        <p class="copy">A new chapter unlocks each phase of the season. Read, quiz, claim, repeat.</p>
-        <div class="bar"><span class="fill" data-journey-fill style="width:0.4%"></span></div>
-      </div>
-    </section>
-
-    <!-- Your heroes preview -->
-    <div class="section-head">
-      <h3>Your Heroes</h3>
-      <a class="more" href="heroes.html">View all ›</a>
-    </div>
-    <section class="hero-strip" data-home-heroes>
-      <!-- hydrated from /api/catalog/heroes -->
-    </section>
-
-    <!-- Shahnameh chapters preview -->
-    <div class="section-head">
-      <h3>Shahnameh Chapters</h3>
-      <a class="more" href="learn.html">All chapters ›</a>
-    </div>
-    <section class="chapter-strip" data-home-chapters>
-      <!-- hydrated from /api/catalog/chapters -->
-    </section>
-
-    <!-- REAL token card -->
-    <section class="card gold-edge token-card">
-      <div class="token-glyph">◆</div>
-      <div class="token-body">
-        <span class="kicker">REAL TOKEN</span>
-        <h3>The currency of Pars</h3>
-        <p class="copy">Earn through chapters, taps, referrals and airdrop. Spend on heroes, energy and unlocks.</p>
-        <div class="chip-row">
-          <span class="chip warm">Earned</span>
-          <span class="chip">Stored</span>
-          <span class="chip lush">Spendable</span>
-        </div>
-      </div>
     </section>
 
   </main>
 
   <nav class="bottom-nav">
-    <a class="nav-item active" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="play">Home</span></a>
-    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span>Tap</span></a>
+    <a class="nav-item active" href="index.html"><span class="ni-ico">⚡</span><span data-i18n="play">Play</span></a>
     <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
     <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
     <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
+    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span><span data-i18n="social">Social</span></a>
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=20260510-visual"></script>
-  <script src="home.js?v=20260510-visual"></script>
+  <script src="app.js?v=202605100154"></script>
 </body>
 </html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Home</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=20260510-visual" />
+  <link rel="stylesheet" href="home.css?v=20260510-visual" />
+</head>
+<body>
+  <main class="app home-app">
+
+    <!-- Visible build marker so deploys are unmistakable -->
+    <div class="build-marker" data-build-marker>S2 UI VERSION 2026-05-10</div>
+
+    <!-- Top profile card -->
+    <section class="card gold-edge profile-card">
+      <div class="avatar-ring">
+        <div class="avatar"><span data-path-name>King Setai</span></div>
+      </div>
+      <div class="who">
+        <h1 class="name"><span data-path-name>King Setai</span></h1>
+        <div class="meta-row">
+          <span class="rank-tag" data-path-title>⚔ Warrior of Pars</span>
+          <span class="lvl-pip">LVL <b data-level>17</b></span>
+        </div>
+        <div class="xp-bar"><span class="fill" style="width:54%"></span></div>
+        <div class="xp-meta">2,140 / 4,000 XP to LVL 18</div>
+      </div>
+    </section>
+
+    <!-- REAL balance hero card -->
+    <section class="card gold-edge balance-hero">
+      <div>
+        <span class="label">REAL Balance</span>
+        <span class="value" data-balance>1,245.78<small> REAL</small></span>
+        <span class="delta">+1,240 today · auto-claim active</span>
+      </div>
+      <div class="balance-coin">◆</div>
+    </section>
+
+    <!-- Quick stats row -->
+    <section class="quick-stats">
+      <article class="card stat-card">
+        <span class="ico warm">⚡</span>
+        <div>
+          <div class="lbl">Energy</div>
+          <div class="num"><span data-energy>720</span> / 1000</div>
+        </div>
+      </article>
+      <article class="card stat-card">
+        <span class="ico cold">💎</span>
+        <div>
+          <div class="lbl">Gems</div>
+          <div class="num">128</div>
+        </div>
+      </article>
+      <article class="card stat-card">
+        <span class="ico lush">⭐</span>
+        <div>
+          <div class="lbl">XP today</div>
+          <div class="num">+540</div>
+        </div>
+      </article>
+      <article class="card stat-card">
+        <span class="ico">🪙</span>
+        <div>
+          <div class="lbl">REAL / hr</div>
+          <div class="num">+172</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Big Shahnameh banner with Play CTA -->
+    <section class="card gold-edge season-banner">
+      <div class="season-banner-bg"></div>
+      <div class="season-banner-body">
+        <span class="kicker">SEASON 2 · CHAPTER 1</span>
+        <h2>SHAHNAMEH<br/>SEASON 2</h2>
+        <p class="copy">Begin Chapter 1 — Keyumars, the first king of Pars.</p>
+        <div class="cta-row">
+          <a class="primary-btn" href="learn.html">Begin Chapter 1</a>
+          <a class="secondary-btn" href="tap.html">Play Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Season 2 launch / next event -->
+    <section class="card violet-edge launch-card">
+      <div class="launch-icon">🚀</div>
+      <div class="launch-body">
+        <span class="kicker">SEASON 2 LAUNCH</span>
+        <h3>Day <b data-journey-day-num>1</b> of your 9-month Shahnameh journey</h3>
+        <p class="copy">A new chapter unlocks each phase of the season. Read, quiz, claim, repeat.</p>
+        <div class="bar"><span class="fill" data-journey-fill style="width:0.4%"></span></div>
+      </div>
+    </section>
+
+    <!-- Your heroes preview -->
+    <div class="section-head">
+      <h3>Your Heroes</h3>
+      <a class="more" href="heroes.html">View all ›</a>
+    </div>
+    <section class="hero-strip" data-home-heroes>
+      <!-- hydrated from /api/catalog/heroes -->
+    </section>
+
+    <!-- Shahnameh chapters preview -->
+    <div class="section-head">
+      <h3>Shahnameh Chapters</h3>
+      <a class="more" href="learn.html">All chapters ›</a>
+    </div>
+    <section class="chapter-strip" data-home-chapters>
+      <!-- hydrated from /api/catalog/chapters -->
+    </section>
+
+    <!-- REAL token card -->
+    <section class="card gold-edge token-card">
+      <div class="token-glyph">◆</div>
+      <div class="token-body">
+        <span class="kicker">REAL TOKEN</span>
+        <h3>The currency of Pars</h3>
+        <p class="copy">Earn through chapters, taps, referrals and airdrop. Spend on heroes, energy and unlocks.</p>
+        <div class="chip-row">
+          <span class="chip warm">Earned</span>
+          <span class="chip">Stored</span>
+          <span class="chip lush">Spendable</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="nav-item active" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="play">Home</span></a>
+    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span>Tap</span></a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <script src="app.js?v=20260510-visual"></script>
+  <script src="home.js?v=20260510-visual"></script>
+</body>
+</html>
