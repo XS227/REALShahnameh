@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — In the Name of Wisdom</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202605120001" />
+  <link rel="stylesheet" href="home.css?v=202605120001" />
+  <link rel="stylesheet" href="intro.css?v=202605120001" />
+</head>
+<body class="intro-body">
+
+  <main class="intro-stage" data-intro-stage>
+
+    <!-- Persistent atmosphere -->
+    <div class="intro-sky" aria-hidden="true">
+      <span class="star s1"></span><span class="star s2"></span><span class="star s3"></span>
+      <span class="star s4"></span><span class="star s5"></span><span class="star s6"></span>
+      <span class="star s7"></span><span class="star s8"></span><span class="star s9"></span>
+      <span class="ember e1"></span><span class="ember e2"></span><span class="ember e3"></span>
+    </div>
+
+    <!-- Top bar -->
+    <header class="intro-top">
+      <button class="intro-skip" data-intro-skip>Skip</button>
+      <span class="intro-step" data-intro-step>1 / 9</span>
+    </header>
+
+    <!-- Panel: opening verse -->
+    <section class="intro-panel active" data-panel="bism" aria-label="Opening invocation">
+      <div class="panel-glow gold"></div>
+      <div class="panel-body verse">
+        <p class="verse-fa" lang="fa" dir="rtl">
+          بِه نامِ خداوندِ جان و خِرَد<br>
+          کزین برتر اندیشه برنگذرد
+        </p>
+        <p class="verse-en">In the Name of the Lord of soul and wisdom —<br>higher than this, no thought can pass.</p>
+        <span class="verse-author">— Ferdowsi, opening of the Shahnameh</span>
+      </div>
+    </section>
+
+    <!-- Panel A: Ferdowsi -->
+    <section class="intro-panel ferdowsi-panel" data-panel="ferdowsi" aria-label="Who was Ferdowsi" hidden>
+      <div class="panel-glow parchment"></div>
+      <div class="panel-kicker">A · The Poet</div>
+
+      <figure class="ferdowsi-portrait">
+        <img src="/assets/images/lore/ferdowsi-intro.png" alt="Ferdowsi" loading="lazy" decoding="async"
+             onerror="this.style.display='none'">
+        <span class="parchment-vignette" aria-hidden="true"></span>
+      </figure>
+
+      <h1 class="panel-h1">Ferdowsi of Tus</h1>
+      <p class="panel-h1-fa" lang="fa" dir="rtl">فردوسیِ توس</p>
+
+      <div class="panel-body">
+        <p class="ferdowsi-verse" lang="fa" dir="rtl">
+          بِه نامِ خداوندِ جان و خِرَد<br>
+          کزین برتر اندیشه برنگذرد
+        </p>
+        <p class="lead">
+          One man · thirty years · sixty thousand verses.
+        </p>
+        <p>
+          When the empires of Persia had been broken and her language was bending toward forgetfulness, a poet from Tus picked up a pen and began the slow work of remembering. Ferdowsi did not invent the kings he named. He carried them across the ruined ground so that a child a thousand years later could still say, in her own tongue, the words for <i>dawn</i> and <i>throne</i> and <i>fire</i>.
+        </p>
+        <p>
+          What he saved was not a king-list. He saved a way of being Iranian.
+        </p>
+        <p class="quote">
+          "I shall not die, for I am alive — for I have sown the seed of words."
+        </p>
+      </div>
+    </section>
+
+    <!-- Panel B: Shahnameh -->
+    <section class="intro-panel" data-panel="shahnameh" aria-label="What is the Shahnameh" hidden>
+      <div class="panel-glow gold"></div>
+      <div class="panel-kicker">B · The Book</div>
+      <h1 class="panel-h1">The Shahnameh</h1>
+      <p class="panel-h1-fa" lang="fa" dir="rtl">شاهنامه — کتابِ شاهان</p>
+      <div class="panel-body">
+        <p class="lead">The Book of Kings.</p>
+        <p>
+          A single epic that holds the whole memory of Persia: dynasty after dynasty, hero after hero, demon after demon, from the first king of the dawn to the last battle of the age. It is history dressed as myth, and myth dressed as history. They cannot be separated and you are not meant to.
+        </p>
+        <p>
+          The Shahnameh is the preservation of Persian identity itself — language, ritual, calendar, courage, sorrow. Where empires fell, the verses did not. Where the language of the court changed, Ferdowsi's Persian held. A nation's mythology, kept alive by one poet's stubbornness.
+        </p>
+        <ul class="fact-list">
+          <li><span class="fact-num">≈ 60,000</span><span>Couplets — the longest epic by a single poet ever written.</span></li>
+          <li><span class="fact-num">50</span><span>Stories, from Keyumars to the fall of the Sassanians.</span></li>
+          <li><span class="fact-num">30 yrs</span><span>Of work by Ferdowsi.</span></li>
+          <li><span class="fact-num">1 lang</span><span>Held alive by 60,000 verses — Persian.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Panel C: Age of kings begins -->
+    <section class="intro-panel" data-panel="age" aria-label="The age of kings begins" hidden>
+      <div class="panel-glow gold"></div>
+      <div class="panel-kicker">C · The Age</div>
+      <h1 class="panel-h1">The Age of Kings Begins</h1>
+      <p class="panel-h1-fa" lang="fa" dir="rtl">آغازِ روزگارِ شاهان</p>
+      <div class="panel-body">
+        <p class="lead">
+          Before the dynasties of Iran, before the Achaemenids, before the prophet of fire — the Pishdadians.
+        </p>
+        <p>
+          The first dynasty of the Shahnameh is older than memory: a line of kings who taught humans to bind hair and hand fire and split iron. They are called <i>Pishdadi</i> — those who set the foremost law. The chronicle begins with the very first of them.
+        </p>
+      </div>
+    </section>
+
+    <!-- Panel D: World before civilization -->
+    <section class="intro-panel" data-panel="before" aria-label="The world before civilization" hidden>
+      <div class="panel-glow violet"></div>
+      <div class="panel-kicker">D · The World Before</div>
+      <h1 class="panel-h1">A World Without Roof</h1>
+      <p class="panel-h1-fa" lang="fa" dir="rtl">جهانی بی‌سقف</p>
+      <div class="panel-body">
+        <p class="lead">No fire. No alphabet. No measure of time.</p>
+        <p>
+          The valleys were full of teeth. The forests were older than language. Children slept under leaves and woke under hawks. There was no single word the people had in common. There was no shared night, no shared morning.
+        </p>
+        <p>
+          And then — high up, where only goats and weather went — a man stood on the cold rock and looked down.
+        </p>
+      </div>
+    </section>
+
+    <!-- Panel E: Light vs Darkness -->
+    <section class="intro-panel" data-panel="duality" aria-label="Light versus darkness" hidden>
+      <div class="panel-glow split"></div>
+      <div class="panel-kicker">E · The Two</div>
+      <h1 class="panel-h1">Light against Darkness</h1>
+      <p class="panel-h1-fa" lang="fa" dir="rtl">روشنی در برابرِ تاریکی</p>
+      <div class="panel-body">
+        <div class="duality">
+          <article class="dual-card light">
+            <span class="dual-icon">☀</span>
+            <h3>Ahura · Light</h3>
+            <p>Order. Speech. Fire kept.<br>Memory. Kings.</p>
+          </article>
+          <article class="dual-card dark">
+            <span class="dual-icon">☾</span>
+            <h3>Ahriman · Dark</h3>
+            <p>Forgetting. Hunger.<br>The shape under the leaf.</p>
+          </article>
+        </div>
+        <p class="centered">
+          The Shahnameh does not pretend they are equal. It pretends they are old.
+        </p>
+      </div>
+    </section>
+
+    <!-- Panel F: Rise of Keyumars -->
+    <section class="intro-panel" data-panel="keyumars" aria-label="The rise of Keyumars" hidden>
+      <div class="panel-glow gold"></div>
+      <div class="panel-kicker">F · The First King</div>
+      <h1 class="panel-h1">Keyumars Rises</h1>
+      <p class="panel-h1-fa" lang="fa" dir="rtl">برخاستنِ کیومرث</p>
+      <div class="panel-body">
+        <p class="lead">
+          On a high crag of ancient Pars, the first man takes a leopard's skin across his shoulders.
+        </p>
+        <p>
+          He has no army yet. He has no city. He has only the wind, the firelight, and the silence after he speaks. The lions come down from the high pasture and lie at his feet. The mountain learns his name.
+        </p>
+        <p>
+          This is where your chronicle begins.
+        </p>
+      </div>
+    </section>
+
+    <!-- Panel: Timeline -->
+    <section class="intro-panel timeline-panel" data-panel="timeline" aria-label="Timeline" hidden>
+      <div class="panel-glow split"></div>
+      <div class="panel-kicker">The Chronology</div>
+      <h1 class="panel-h1">Three Markers Before Chapter 1</h1>
+      <p class="panel-h1-fa" lang="fa" dir="rtl">سه نشان، پیش از دفترِ یکم</p>
+      <ol class="timeline-list">
+        <li class="t-event">
+          <span class="t-year">~7000<small>BC</small></span>
+          <span class="t-line"></span>
+          <div class="t-body">
+            <h4>Age of Keyumars</h4>
+            <p>The leopard-skin king takes the high mountain. The first court is laid.</p>
+          </div>
+        </li>
+        <li class="t-event">
+          <span class="t-year">~6900<small>BC</small></span>
+          <span class="t-line"></span>
+          <div class="t-body">
+            <h4>Siamak Rises</h4>
+            <p>The prince walks among the people. The mountain knows his name.</p>
+          </div>
+        </li>
+        <li class="t-event boss">
+          <span class="t-year">~6800<small>BC</small></span>
+          <span class="t-line"></span>
+          <div class="t-body">
+            <h4>War Against Darkness</h4>
+            <p>Ahriman wakes. Khazura the Black Div is sent. The first sorrow comes into the world.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Panel: CTA -->
+    <section class="intro-panel cta-panel" data-panel="cta" aria-label="Begin journey" hidden>
+      <div class="panel-glow gold large"></div>
+      <div class="cta-crest">
+        <img src="/assets/images/chapters/chapter-1-keyumars-cover.png" alt="Chapter 1 cover" loading="lazy" decoding="async" onerror="this.style.display='none'">
+      </div>
+      <div class="cta-kicker">SEASON 2 · CHAPTER 1</div>
+      <h1 class="cta-title">Keyumars — The First King</h1>
+      <p class="cta-fa" lang="fa" dir="rtl">کیومرث — نخستین شاه</p>
+      <p class="cta-copy">
+        From here on, the chronicle is yours. Each scene unlocks codex entries. Each correct answer earns REAL. Each level brings you closer to the dark thing in the forest.
+      </p>
+      <a class="primary-btn intro-cta" data-intro-begin href="chapter.html?slug=keyumars">Begin Journey</a>
+      <p class="cta-foot">You can replay this intro anytime from the chapter overview.</p>
+    </section>
+
+    <!-- Bottom controls -->
+    <footer class="intro-foot">
+      <button class="ghost-btn intro-prev" data-intro-prev hidden>Back</button>
+      <div class="intro-dots" data-intro-dots aria-hidden="true"></div>
+      <button class="primary-btn intro-next" data-intro-next>Continue</button>
+    </footer>
+
+  </main>
+
+  <script src="intro.js?v=202605120001"></script>
+</body>
+</html>

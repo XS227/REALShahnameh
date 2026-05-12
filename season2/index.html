@@ -13,8 +13,10 @@
 
     <!-- Top bar: avatar / rank / level -->
     <section class="card gold-edge top-bar">
-      <div class="avatar">
-        RS
+      <div class="avatar" data-avatar>
+        <img src="/assets/images/avatars/default-male-avatar.png" alt="Avatar"
+             style="width:100%; height:100%; object-fit:cover; border-radius:50%;"
+             onerror="this.replaceWith(document.createTextNode('RS'))">
         <span class="avatar-ring"></span>
       </div>
       <div class="who">
@@ -31,7 +33,7 @@
     <section class="balance-row">
       <article class="card balance gold-edge">
         <span class="label">◆ <span data-i18n="balance">Balance</span></span>
-        <span class="value" data-balance>12,840<small> REAL</small></span>
+        <span class="value" data-balance>12,840<small> <img src="/assets/images/tokens/realtoken.png" alt="REAL" style="height:13px; vertical-align:middle; margin-left:2px;" onerror="this.replaceWith(document.createTextNode('REAL'))"></small></span>
         <span class="muted" style="font-size:11px;" data-i18n="today_delta">+1,240 today</span>
       </article>
       <article class="card profit">
@@ -49,7 +51,7 @@
         <span class="ring r3"></span>
         <span class="ring r4"></span>
         <button class="energy-orb" data-energy-orb aria-label="Tap to gather REAL">
-          <span class="core-icon">REAL</span>
+          <span class="core-icon"><img src="/assets/images/tokens/realtoken.png" alt="REAL" style="width:48px; height:48px; object-fit:contain;" onerror="this.replaceWith(document.createTextNode('REAL'))"></span>
         </button>
       </div>
       <!-- Energy meta -->
@@ -61,6 +63,16 @@
         <div class="bar"><span class="fill" data-energy-fill style="width:72%"></span></div>
       </div>
     </section>
+
+    <!-- Chronicle entry card -->
+    <article class="card gold-edge" style="padding:14px; display:flex; align-items:center; gap:14px;">
+      <div style="font-size:28px; flex-shrink:0;">📜</div>
+      <div style="flex:1; min-width:0;">
+        <div style="font-weight:700; font-size:14px;">Shahnameh Chronicle</div>
+        <div style="font-size:12px; color:var(--muted); margin-top:3px;">Begin your Season 2 journey · 50 chapters</div>
+      </div>
+      <a href="intro.html" class="primary-btn" style="flex-shrink:0; text-decoration:none; white-space:nowrap;" data-i18n="begin">Begin ›</a>
+    </article>
 
     <!-- Action grid -->
     <section class="action-grid">
@@ -119,7 +131,8 @@
   </main>
 
   <nav class="bottom-nav">
-    <a class="nav-item active" href="index.html"><span class="ni-ico">⚡</span><span data-i18n="play">Play</span></a>
+    <a class="nav-item active" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="home">Home</span></a>
+    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span data-i18n="tap">Tap</span></a>
     <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
     <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
     <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>

@@ -1463,7 +1463,8 @@
       const f = btn.getAttribute("data-filter");
       $$(".hero-card", heroList).forEach((card) => {
         const cat = card.getAttribute("data-cat");
-        const show = f === "all" || cat === f;
+        // "all" excludes special cards; "special" shows only special
+        const show = f === "special" ? cat === "special" : (f === "all" ? cat !== "special" : cat === f);
         card.style.display = show ? "" : "none";
       });
       haptic("light");

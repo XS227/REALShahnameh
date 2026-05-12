@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Heroes</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605100154" />
+  <link rel="stylesheet" href="style.css?v=202605120001" />
 </head>
 <body>
   <main class="app">
@@ -34,6 +34,7 @@
       <button class="tab" data-filter="people" data-i18n="people">People</button>
       <button class="tab" data-filter="creatures" data-i18n="creatures">Creatures</button>
       <button class="tab" data-filter="places" data-i18n="places">Places</button>
+      <button class="tab" data-filter="special" data-i18n="special">Special</button>
     </div>
 
     <!-- Collection meta -->
@@ -50,6 +51,28 @@
 
     <!-- Hero list -->
     <section class="hero-list" data-hero-list>
+
+      <!-- Chapter 1 unlocked hero -->
+      <article class="card hero-card r-rare" data-cat="people" data-rarity="rare" data-chapter="1">
+        <div class="portrait">
+          <img src="/assets/images/heroes/keyumars-hero.png" alt="Keyumars"
+               style="width:100%; height:100%; object-fit:cover; border-radius:8px;"
+               onerror="this.replaceWith(document.createTextNode('👑'))">
+        </div>
+        <div class="body">
+          <h3>Keyumars <span class="rarity-tag r-rare">Rare</span></h3>
+          <div class="role">First King · Mountain court</div>
+          <div class="stats">
+            <span class="stat">Tap <b>+5%</b></span>
+            <span class="stat">XP <b>+8%</b></span>
+            <span class="stat">REAL/hr <b>+6</b></span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">LVL 1 / 15</span>
+          <button class="hero-upgrade">Upgrade · 80</button>
+        </div>
+      </article>
 
       <article class="card hero-card r-mythic" data-cat="people" data-rarity="mythic">
         <div class="portrait">⚔</div>
@@ -212,7 +235,101 @@
         </div>
       </article>
 
+      <!-- Special: Divine Artifacts, Relics, Airdrop -->
+      <article class="card hero-card r-legend locked" data-cat="special" data-rarity="legend">
+        <div class="portrait">
+          <img src="/assets/images/special/ahura-mazda.png" alt="Ahura Mazda"
+               style="width:100%; height:100%; object-fit:cover; border-radius:8px;"
+               onerror="this.replaceWith(document.createTextNode('☀'))">
+        </div>
+        <div class="body">
+          <h3>Ahura Mazda <span class="rarity-tag r-legend">Legendary</span></h3>
+          <div class="role">Divine Light · All passives</div>
+          <div class="stats">
+            <span class="stat">All bonuses <b>+15%</b></span>
+            <span class="stat">Locked · Season event</span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">Locked</span>
+          <button class="hero-upgrade" disabled style="filter:grayscale(.5); opacity:.7;">Event</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-epic locked" data-cat="special" data-rarity="epic">
+        <div class="portrait">
+          <img src="/assets/images/relics/cyrus-cylinder.png" alt="Cyrus Cylinder"
+               style="width:100%; height:100%; object-fit:cover; border-radius:8px;"
+               onerror="this.replaceWith(document.createTextNode('🏛'))">
+        </div>
+        <div class="body">
+          <h3>Cyrus Cylinder <span class="rarity-tag r-epic">Epic</span></h3>
+          <div class="role">Ancient relic · REAL/hr</div>
+          <div class="stats">
+            <span class="stat">REAL/hr <b>+40</b></span>
+            <span class="stat">Unlock · Chapter 20</span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">Locked</span>
+          <button class="hero-upgrade" disabled style="filter:grayscale(.5); opacity:.7;">Locked</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-epic locked" data-cat="special" data-rarity="epic">
+        <div class="portrait">
+          <img src="/assets/images/relics/farr-royal-glory.png" alt="Farr — Royal Glory"
+               style="width:100%; height:100%; object-fit:cover; border-radius:8px;"
+               onerror="this.replaceWith(document.createTextNode('✦'))">
+        </div>
+        <div class="body">
+          <h3>Farr — Royal Glory <span class="rarity-tag r-epic">Epic</span></h3>
+          <div class="role">Divine aura · Tap power</div>
+          <div class="stats">
+            <span class="stat">Tap <b>+20%</b></span>
+            <span class="stat">Unlock · Chapter 5</span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">Locked</span>
+          <button class="hero-upgrade" disabled style="filter:grayscale(.5); opacity:.7;">Locked</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-mythic locked" data-cat="special" data-rarity="mythic">
+        <div class="portrait" style="background: linear-gradient(140deg, rgba(244,197,107,.3), rgba(94,162,255,.2)); display:flex; align-items:center; justify-content:center; font-size:28px;">🪂</div>
+        <div class="body">
+          <h3>Airdrop Pass <span class="rarity-tag r-mythic">Mythic</span></h3>
+          <div class="role">Limited · Guaranteed allocation</div>
+          <div class="stats">
+            <span class="stat">Airdrop <b>Guaranteed</b></span>
+            <span class="stat">Invite 25 to unlock</span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">0 / 25 refs</span>
+          <button class="hero-upgrade" disabled style="filter:grayscale(.5); opacity:.7;">Locked</button>
+        </div>
+      </article>
+
+      <article class="card hero-card r-legend locked" data-cat="special" data-rarity="legend">
+        <div class="portrait" style="background: linear-gradient(140deg, rgba(83,215,156,.2), rgba(140,109,255,.2)); display:flex; align-items:center; justify-content:center; font-size:28px;">🏆</div>
+        <div class="body">
+          <h3>Founder Badge <span class="rarity-tag r-legend">Legendary</span></h3>
+          <div class="role">Season 1 OG · Cosmetic</div>
+          <div class="stats">
+            <span class="stat">Profile frame <b>Gold</b></span>
+            <span class="stat">Season 1 exclusive</span>
+          </div>
+        </div>
+        <div class="upgrade-col">
+          <span class="lvl-pip">Claimed</span>
+          <button class="hero-upgrade" disabled style="opacity:.7;">Owned</button>
+        </div>
+      </article>
+
     </section>
+
   </main>
 
   <nav class="bottom-nav">
@@ -225,6 +342,6 @@
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=202605100154"></script>
+  <script src="app.js?v=202605120001"></script>
 </body>
 </html>
