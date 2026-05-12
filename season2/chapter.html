@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Chapter</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202605120001" />
+  <link rel="stylesheet" href="chapter.css?v=202605120001" />
+</head>
+<body class="chapter-body">
+  <main class="chapter-app">
+
+    <!-- Breadcrumbs / replay intro -->
+    <div class="ch-crumbs">
+      <a href="learn.html" class="ch-crumb">← Journey</a>
+      <button class="ch-replay" data-replay-intro>Watch Intro ▷</button>
+    </div>
+
+    <!-- Hero / Intro ─ cover image + title + era + rewards -->
+    <section class="ch-hero">
+      <div class="ch-hero-cover" data-hero-cover></div>
+      <div class="ch-hero-fade"></div>
+      <div class="ch-hero-body">
+        <span class="ch-hero-kicker" data-era>Chapter</span>
+        <h1 class="ch-hero-title" data-title>Loading…</h1>
+        <p class="ch-hero-fa" lang="fa" dir="rtl" data-title-fa></p>
+        <div class="ch-hero-rewards" data-rewards></div>
+      </div>
+    </section>
+
+    <!-- Lore summary -->
+    <div class="ch-lore card">
+      <div class="ch-lore-mark">📜</div>
+      <div class="ch-lore-body">
+        <span class="kicker">Chronicle</span>
+        <p class="copy" data-summary>—</p>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="section-head">
+      <h3>Timeline</h3>
+    </div>
+    <div class="ch-timeline" data-timeline></div>
+
+    <!-- Scenes — Story / Learn -->
+    <div class="section-head">
+      <h3>Read the Chronicle</h3>
+      <span class="more" data-scene-progress>0 / 0</span>
+    </div>
+    <div class="scene-list" data-scenes></div>
+
+    <!-- Characters -->
+    <div class="section-head">
+      <h3>Characters</h3>
+      <span class="more" data-char-progress>0 / 0</span>
+    </div>
+    <div class="ch-grid" data-characters></div>
+
+    <!-- Places -->
+    <div class="section-head">
+      <h3>Places</h3>
+      <span class="more" data-place-progress>0 / 0</span>
+    </div>
+    <div class="ch-grid" data-places></div>
+
+    <!-- Codex -->
+    <div class="section-head">
+      <h3>Codex</h3>
+      <span class="more" data-codex-progress>0 / 0</span>
+    </div>
+    <div class="codex-grid" data-codex></div>
+
+    <!-- Final Encounter / Battle requirements -->
+    <div class="section-head">
+      <h3>Final Encounter</h3>
+      <span class="more" data-req-progress></span>
+    </div>
+    <div class="battle-card" data-battle></div>
+
+    <!-- Quiz -->
+    <div class="section-head">
+      <h3>Chronicle Quiz</h3>
+      <span class="more" data-quiz-progress>0 / 0</span>
+    </div>
+    <div class="quiz-card card" data-quiz></div>
+
+  </main>
+
+  <!-- Scene reader modal -->
+  <div class="scene-modal" data-scene-modal aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="scene-modal-bg" data-scene-close></div>
+    <div class="scene-modal-card">
+      <div class="scene-modal-glow"></div>
+      <button class="scene-close" data-scene-close aria-label="Close">×</button>
+      <div class="scene-modal-image" data-scene-image>
+        <span class="scene-placeholder">Image coming soon</span>
+      </div>
+      <div class="scene-modal-body">
+        <span class="kicker" data-scene-era></span>
+        <h2 data-scene-title></h2>
+        <p class="scene-fa" lang="fa" dir="rtl" data-scene-title-fa></p>
+        <p class="scene-text" data-scene-text></p>
+        <div class="scene-reward" data-scene-reward hidden>
+          <span class="reward-burst">+<span data-scene-xp>0</span> XP</span>
+          <span class="reward-meta" data-scene-codex-meta></span>
+        </div>
+        <div class="scene-actions">
+          <button class="ghost-btn" data-scene-prev>‹ Prev</button>
+          <button class="primary-btn" data-scene-next>Next ›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span>Home</span></a>
+    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span>Tap</span></a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span>Heroes</span></a>
+    <a class="nav-item active" href="learn.html"><span class="ni-ico">📜</span><span>Learn</span></a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span>Earn</span></a>
+    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span><span>Social</span></a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <div class="unlock-burst" data-burst><span class="ring-burst"></span><span class="label" data-burst-label>Unlocked</span></div>
+  <script src="app.js?v=202605120001"></script>
+  <script src="chapter.js?v=202605120001"></script>
+</body>
+</html>

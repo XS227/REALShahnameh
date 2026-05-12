@@ -39,10 +39,12 @@
 
     host.innerHTML = chapters.map((c) => {
       const level = c.level || c.order || c.id;
-      const ready = isReady(c);
-      const done  = c.status === "completed";
+      const localDone = (typeof localStorage !== "undefined") &&
+                        localStorage.getItem(`real_chapter_done_${c.slug}`) === "1";
+      const ready = isReady(c) || localDone;
+      const done  = c.status === "completed" || localDone;
       const cls   = done ? "done" : ready ? "active" : "locked";
-      const href  = chapterHref(c);
+      const href  = ready ? `chapter.html?slug=${encodeURIComponent(c.slug)}` : null;
 
       if (!ready) {
         // Content-gated card — no story preview, no rewards. Just a clear

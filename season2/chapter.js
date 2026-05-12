@@ -423,6 +423,8 @@
           acc.real += (q.reward && q.reward.real) || 0;
           return acc;
         }, { xp: 0, real: 0 });
+        // Persist chapter completion so learn.html can reflect done state.
+        try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
         host.innerHTML = `
           <div class="quiz-complete">
             <div class="badge">🏆</div>
@@ -432,7 +434,11 @@
               <span class="reward-pill">+${totalReward.xp} XP earned</span>
               <span class="reward-pill">+${totalReward.real} <i class="real-coin"></i>REAL earned</span>
             </div>
-            <button class="ghost-btn" data-quiz-reset style="margin-top:12px;">Replay quiz</button>
+            <a href="learn.html" class="primary-btn btn-block"
+               style="margin-top:12px; display:flex; align-items:center; justify-content:center; text-decoration:none;">
+              Return to Journey →
+            </a>
+            <button class="ghost-btn" data-quiz-reset style="margin-top:8px;">Replay quiz</button>
           </div>`;
         const reset = $("[data-quiz-reset]", host);
         if (reset) reset.addEventListener("click", () => {

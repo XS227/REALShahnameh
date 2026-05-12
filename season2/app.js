@@ -1628,6 +1628,8 @@
     map.addEventListener("click", (e) => {
       const ch = e.target.closest(".chapter");
       if (!ch) return;
+      // learn.js renders available chapters as <a> elements — let the browser navigate.
+      if (ch.tagName === "A") return;
       if (ch.classList.contains("locked")) {
         toast("Complete the previous chapter to unlock");
         haptic("warning");
