@@ -4,9 +4,206 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#04050b" />
-  <title>REAL Shahnameh — Play</title>
+  <title>REAL Shahnameh — Home</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605100154" />
+  <link rel="stylesheet" href="style.css?v=202605130001" />
+  <style>
+    /* Home-only layout additions */
+    .home-season-banner {
+      position: relative;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      min-height: 140px;
+      background: linear-gradient(140deg, rgba(10,14,36,.94) 0%, rgba(20,12,44,.88) 100%);
+      border: 1px solid var(--border-gold);
+      box-shadow: var(--shadow-card), var(--glow-gold);
+      display: flex;
+      align-items: flex-end;
+      padding: 18px 16px 16px;
+      margin-bottom: 14px;
+    }
+    .home-season-banner .banner-bg {
+      position: absolute; inset: 0;
+      background-image: url('/assets/images/chapters/chapter-1-keyumars-cover.png');
+      background-size: cover; background-position: center top;
+      opacity: .18;
+    }
+    .home-season-banner .banner-stars {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        radial-gradient(1px 1px at 15% 20%, rgba(244,197,107,.8) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 12%, rgba(255,255,255,.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 35%, rgba(255,255,255,.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 55%, rgba(244,197,107,.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 88% 45%, rgba(255,255,255,.4) 0%, transparent 100%);
+    }
+    .home-season-banner .banner-glow {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 70%;
+      background: linear-gradient(0deg, rgba(10,14,36,.96) 0%, transparent 100%);
+    }
+    .home-season-banner .banner-body { position: relative; z-index: 1; width: 100%; }
+    .banner-kicker {
+      font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--gold); font-weight: 700; margin-bottom: 6px;
+    }
+    .banner-title {
+      font-size: 22px; font-weight: 800; line-height: 1.15;
+      color: var(--text); margin: 0 0 4px;
+    }
+    .banner-title span { color: var(--gold); }
+    .banner-fa {
+      font-size: 13px; color: rgba(244,197,107,.7); margin: 0 0 12px;
+      display: block;
+    }
+    .banner-cta {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-3));
+      color: #07080f; font-size: 13px; font-weight: 800;
+      border: none; border-radius: 22px; padding: 9px 18px;
+      cursor: pointer; text-decoration: none;
+      box-shadow: 0 4px 16px rgba(244,197,107,.4);
+    }
+
+    /* Continue Journey card */
+    .journey-card {
+      background: linear-gradient(140deg, rgba(16,22,52,.9), rgba(10,14,36,.95));
+      border: 1px solid rgba(140,109,255,.3);
+      border-radius: var(--r-md);
+      padding: 14px;
+      display: grid;
+      grid-template-columns: 54px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .journey-thumb {
+      width: 54px; height: 54px; border-radius: 10px;
+      background: linear-gradient(140deg, rgba(244,197,107,.2), rgba(140,109,255,.2));
+      border: 1px solid var(--border-gold);
+      overflow: hidden; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+    .journey-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .journey-body .journey-label {
+      font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 3px;
+    }
+    .journey-body h4 { margin: 0 0 4px; font-size: 14px; font-weight: 700; }
+    .journey-body .journey-sub { font-size: 11px; color: var(--muted); }
+    .journey-continue {
+      background: linear-gradient(135deg, rgba(140,109,255,.9), rgba(94,162,255,.8));
+      color: #fff; font-size: 12px; font-weight: 700;
+      border: none; border-radius: 20px; padding: 8px 14px;
+      cursor: pointer; text-decoration: none; white-space: nowrap;
+      box-shadow: 0 4px 14px rgba(140,109,255,.35);
+    }
+
+    /* Chronicle progress */
+    .chronicle-progress {
+      background: rgba(16,22,52,.6);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+    .cp-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .cp-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; }
+    .cp-pct { font-size: 13px; font-weight: 800; color: var(--gold); }
+    .cp-chapters { font-size: 12px; font-weight: 700; color: var(--text-dim); }
+    .chapter-dots {
+      display: flex; gap: 4px; margin-top: 10px; flex-wrap: wrap;
+    }
+    .chapter-dot {
+      width: 24px; height: 24px; border-radius: 6px;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 9px; font-weight: 700; color: var(--muted);
+      background: rgba(255,255,255,.03);
+    }
+    .chapter-dot.done { background: linear-gradient(140deg, rgba(83,215,156,.3), rgba(83,215,156,.1)); border-color: rgba(83,215,156,.4); color: var(--jade); }
+    .chapter-dot.active { background: linear-gradient(140deg, rgba(244,197,107,.35), rgba(140,109,255,.2)); border-color: var(--border-gold); color: var(--gold); box-shadow: 0 0 8px rgba(244,197,107,.3); }
+
+    /* Daily quests */
+    .quest-list { display: grid; gap: 8px; }
+    .quest-row {
+      background: rgba(16,22,52,.5);
+      border: 1px solid var(--border);
+      border-radius: var(--r-sm);
+      padding: 10px 12px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .quest-row.done { opacity: .55; }
+    .quest-ico {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: rgba(255,255,255,.06);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px; flex-shrink: 0;
+    }
+    .quest-body { flex: 1; min-width: 0; }
+    .quest-body .q-name { font-size: 13px; font-weight: 600; }
+    .quest-body .q-sub { font-size: 11px; color: var(--muted); margin-top: 1px; }
+    .quest-reward { font-size: 11px; font-weight: 700; color: var(--jade); white-space: nowrap; }
+    .quest-check { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0; }
+    .quest-check.done { background: var(--jade); border-color: var(--jade); color: #07080f; }
+
+    /* Balance summary */
+    .home-balance {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;
+    }
+    .home-balance .bal-card {
+      background: rgba(16,22,52,.7);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+    }
+    .home-balance .bal-card.gold-edge { border-color: var(--border-gold); }
+    .bal-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; margin-bottom: 4px; }
+    .bal-value { font-size: 20px; font-weight: 800; line-height: 1.1; }
+    .bal-value img { height: 16px; vertical-align: middle; margin-left: 3px; }
+    .bal-sub { font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+    /* Hero spotlight */
+    .hero-spotlight {
+      background: linear-gradient(140deg, rgba(16,22,52,.9), rgba(10,14,36,.95));
+      border: 1px solid rgba(244,197,107,.2);
+      border-radius: var(--r-md);
+      padding: 14px;
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 14px;
+    }
+    .hs-portrait {
+      width: 64px; height: 64px; border-radius: 12px;
+      background: linear-gradient(140deg, rgba(244,197,107,.18), rgba(140,109,255,.14));
+      border: 1px solid var(--border-gold);
+      overflow: hidden; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 26px;
+    }
+    .hs-portrait img { width: 100%; height: 100%; object-fit: cover; }
+    .hs-body { flex: 1; min-width: 0; }
+    .hs-kicker { font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+    .hs-name { font-size: 16px; font-weight: 800; margin: 2px 0 6px; }
+    .hs-passive {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 11px; color: var(--jade); font-weight: 600;
+      background: rgba(83,215,156,.1); border: 1px solid rgba(83,215,156,.25);
+      border-radius: 20px; padding: 3px 9px;
+    }
+
+    /* Quick links */
+    .quick-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
+    .ql-card {
+      background: rgba(16,22,52,.6);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 14px 10px;
+      text-align: center; text-decoration: none;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      transition: transform .15s, border-color .15s;
+    }
+    .ql-card:hover { transform: translateY(-2px); border-color: var(--border-gold); }
+    .ql-ico { font-size: 22px; }
+    .ql-label { font-size: 11px; color: var(--text-dim); font-weight: 600; }
+  </style>
 </head>
 <body>
   <main class="app">
@@ -23,110 +220,189 @@
         <h1 class="name"><span data-path-name>King Setai</span> <span class="pill" data-i18n="vip">VIP</span></h1>
         <div class="rank-row">
           <span class="rank-tag" data-path-title>⚔ Warrior of Pars</span>
-          <span class="rank-tag" style="background: rgba(244,197,107,.14); border-color: var(--border-gold); color: var(--gold);" data-i18n="season2">Season 2</span>
+          <span class="rank-tag" style="background:rgba(244,197,107,.14); border-color:var(--border-gold); color:var(--gold);" data-i18n="season2">Season 2</span>
         </div>
       </div>
       <div class="lvl-badge"><span data-i18n="level">LVL</span> <span class="lvl-num" data-level>17</span></div>
     </section>
 
-    <!-- Balance + Profit -->
-    <section class="balance-row">
-      <article class="card balance gold-edge">
-        <span class="label">◆ <span data-i18n="balance">Balance</span></span>
-        <span class="value" data-balance>12,840<small> <img src="/assets/images/tokens/realtoken.png" alt="REAL" style="height:13px; vertical-align:middle; margin-left:2px;" onerror="this.replaceWith(document.createTextNode('REAL'))"></small></span>
-        <span class="muted" style="font-size:11px;" data-i18n="today_delta">+1,240 today</span>
-      </article>
-      <article class="card profit">
-        <span class="label" style="font-size:11px; letter-spacing:.5px; color:var(--muted); text-transform:uppercase;" data-i18n="profit_hr">Profit / hr</span>
-        <span class="value">+172</span>
-        <span class="delta" data-i18n="auto_claim">REAL · auto-claim</span>
-      </article>
-    </section>
-
-    <!-- Energy Core orb -->
-    <section class="card gold-edge" style="padding: 16px 14px 6px;">
-      <div class="core-wrap" data-core>
-        <span class="ring r1"></span>
-        <span class="ring r2"></span>
-        <span class="ring r3"></span>
-        <span class="ring r4"></span>
-        <button class="energy-orb" data-energy-orb aria-label="Tap to gather REAL">
-          <span class="core-icon"><img src="/assets/images/tokens/realtoken.png" alt="REAL" style="width:48px; height:48px; object-fit:contain;" onerror="this.replaceWith(document.createTextNode('REAL'))"></span>
-        </button>
+    <!-- Season 2 cinematic banner -->
+    <div class="home-season-banner">
+      <div class="banner-bg" aria-hidden="true"></div>
+      <div class="banner-stars" aria-hidden="true"></div>
+      <div class="banner-glow" aria-hidden="true"></div>
+      <div class="banner-body">
+        <div class="banner-kicker">Season 2 · Pishdadian Age</div>
+        <h2 class="banner-title"><span>Shahnameh</span> Chronicle</h2>
+        <p class="banner-fa" lang="fa" dir="rtl">شاهنامهٔ فردوسی</p>
+        <a href="intro.html" class="banner-cta">▷ Enter the Chronicle</a>
       </div>
-      <!-- Energy meta -->
-      <div class="energy-meta" style="padding-bottom: 0;">
-        <div class="energy-line">
-          <span>⚡ <span data-i18n="energy">Energy</span></span>
-          <span><span class="e-val" data-energy>720</span> / 1000 · <span class="e-timer" data-refill>+1 / 3s</span></span>
-        </div>
-        <div class="bar"><span class="fill" data-energy-fill style="width:72%"></span></div>
-      </div>
-    </section>
-
-    <!-- Chronicle entry card -->
-    <article class="card gold-edge" style="padding:14px; display:flex; align-items:center; gap:14px;">
-      <div style="font-size:28px; flex-shrink:0;">📜</div>
-      <div style="flex:1; min-width:0;">
-        <div style="font-weight:700; font-size:14px;">Shahnameh Chronicle</div>
-        <div style="font-size:12px; color:var(--muted); margin-top:3px;">Begin your Season 2 journey · 50 chapters</div>
-      </div>
-      <a href="intro.html" class="primary-btn" style="flex-shrink:0; text-decoration:none; white-space:nowrap;" data-i18n="begin">Begin ›</a>
-    </article>
-
-    <!-- Action grid -->
-    <section class="action-grid">
-      <article class="card action gold-edge">
-        <h4><span class="ico">⚡</span> <span data-i18n="boost">Boost</span></h4>
-        <p class="copy" data-i18n="boost_copy">Multiply tap power 3× for 30 minutes. Stacks with combo critical.</p>
-        <div class="row">
-          <button class="primary-btn btn-block" data-action="boost" data-i18n="activate">Activate</button>
-        </div>
-      </article>
-      <article class="card action violet-edge">
-        <h4><span class="ico">👥</span> <span data-i18n="invite">Invite</span></h4>
-        <p class="copy" data-i18n="invite_copy">Bring allies. Earn 10% of their REAL forever + chest drops.</p>
-        <div class="row">
-          <a class="secondary-btn btn-block" href="earn.html" data-i18n="share_link_btn">Share Link</a>
-        </div>
-      </article>
-    </section>
-
-    <!-- Stats -->
-    <div class="section-head">
-      <h3 data-i18n="your_edge">Your edge</h3>
-      <a class="more" href="social.html" data-i18n="compare">Compare ›</a>
     </div>
-    <section class="stats-grid">
-      <article class="card stat-mini">
-        <span class="ico warm">🔥</span>
-        <div>
-          <div class="lbl" data-i18n="daily_streak">Daily streak</div>
-          <div class="num" data-i18n="streak_days">12 days</div>
+
+    <!-- Continue Journey -->
+    <div class="section-head" style="margin-bottom:8px;">
+      <h3 data-i18n="continue_journey">Continue Journey</h3>
+      <a class="more" href="learn.html">All chapters ›</a>
+    </div>
+    <div class="journey-card">
+      <div class="journey-thumb">
+        <img src="/assets/images/chapters/chapter-1-keyumars-cover.png" alt="Chapter 1"
+             onerror="this.replaceWith(document.createTextNode('👑'))">
+      </div>
+      <div class="journey-body">
+        <div class="journey-label">Chapter 1 · Active</div>
+        <h4>Keyumars — The First King</h4>
+        <div class="journey-sub">8 scenes · Quiz · 200 XP reward</div>
+      </div>
+      <a href="chapter.html?slug=keyumars" class="journey-continue">Continue ›</a>
+    </div>
+
+    <!-- Chronicle progress -->
+    <div class="chronicle-progress">
+      <div class="cp-row">
+        <span class="cp-label" data-i18n="chronicle_progress">Chronicle progress</span>
+        <span class="cp-pct" data-chapters-pct>2%</span>
+      </div>
+      <div class="cp-row" style="margin-bottom:0;">
+        <span class="cp-chapters" data-chapters-done>1 of 50 chapters active</span>
+        <span style="font-size:11px; color:var(--muted);">9-month journey</span>
+      </div>
+      <div class="bar" style="margin-top:10px;">
+        <span class="fill" data-chapters-fill style="width:2%;"></span>
+      </div>
+      <div class="chapter-dots" style="margin-top:10px;" aria-hidden="true">
+        <div class="chapter-dot active">1</div>
+        <div class="chapter-dot">2</div>
+        <div class="chapter-dot">3</div>
+        <div class="chapter-dot">4</div>
+        <div class="chapter-dot">5</div>
+        <div class="chapter-dot">6</div>
+        <div class="chapter-dot">7</div>
+        <div class="chapter-dot">8</div>
+        <div class="chapter-dot">9</div>
+        <div class="chapter-dot" style="font-size:8px;">10</div>
+        <div class="chapter-dot" style="opacity:.4; font-size:8px;">···</div>
+        <div class="chapter-dot" style="opacity:.4; font-size:8px;">50</div>
+      </div>
+    </div>
+
+    <!-- Daily quests -->
+    <div class="section-head" style="margin-bottom:8px;">
+      <h3 data-i18n="daily_quests">Daily Quests</h3>
+      <span class="more" style="cursor:default;" data-i18n="resets_midnight">Resets midnight</span>
+    </div>
+    <section class="quest-list" style="margin-bottom:14px;">
+      <div class="quest-row done">
+        <div class="quest-ico">📜</div>
+        <div class="quest-body">
+          <div class="q-name">Read a Chronicle scene</div>
+          <div class="q-sub">1 / 1 scenes read today</div>
         </div>
-      </article>
-      <article class="card stat-mini">
-        <span class="ico">✦</span>
-        <div>
-          <div class="lbl" data-i18n="combo">Combo</div>
-          <div class="num">×<span data-combo>1.0</span></div>
+        <span class="quest-reward">+50 XP</span>
+        <div class="quest-check done">✓</div>
+      </div>
+      <div class="quest-row">
+        <div class="quest-ico">🧠</div>
+        <div class="quest-body">
+          <div class="q-name">Answer the Chapter Quiz</div>
+          <div class="q-sub">Complete Chapter 1 quiz</div>
         </div>
-      </article>
-      <article class="card stat-mini">
-        <span class="ico cold">💎</span>
-        <div>
-          <div class="lbl" data-i18n="referral_real">Referral REAL</div>
-          <div class="num">+2,310</div>
+        <span class="quest-reward">+100 XP</span>
+        <div class="quest-check"></div>
+      </div>
+      <div class="quest-row">
+        <div class="quest-ico">⚡</div>
+        <div class="quest-body">
+          <div class="q-name">Tap 200 times</div>
+          <div class="q-sub"><span data-combo>140</span> / 200 taps today</div>
         </div>
-      </article>
-      <article class="card stat-mini">
-        <span class="ico lush">⭐</span>
-        <div>
-          <div class="lbl" data-i18n="xp_to_level">XP to LVL 18</div>
-          <div class="num">2,140 / 4,000</div>
+        <span class="quest-reward">+80 REAL</span>
+        <div class="quest-check"></div>
+      </div>
+      <div class="quest-row">
+        <div class="quest-ico">👥</div>
+        <div class="quest-body">
+          <div class="q-name">Invite a warrior</div>
+          <div class="q-sub">Share your link to earn forever</div>
         </div>
-      </article>
+        <span class="quest-reward">+10% lifetime</span>
+        <div class="quest-check"></div>
+      </div>
     </section>
+
+    <!-- Balance summary -->
+    <div class="section-head" style="margin-bottom:8px;">
+      <h3 data-i18n="your_real">Your REAL</h3>
+      <a class="more" href="tap.html">Mine more ›</a>
+    </div>
+    <div class="home-balance" style="margin-bottom:14px;">
+      <div class="bal-card card gold-edge">
+        <div class="bal-label" data-i18n="balance">Balance</div>
+        <div class="bal-value" data-balance>
+          12,840
+          <img src="/assets/images/tokens/realtoken.png" alt="REAL" onerror="this.replaceWith(document.createTextNode(' REAL'))">
+        </div>
+        <div class="bal-sub" data-i18n="today_delta">+1,240 today</div>
+      </div>
+      <div class="bal-card card" style="border-color:rgba(83,215,156,.3);">
+        <div class="bal-label" data-i18n="profit_hr">Profit / hr</div>
+        <div class="bal-value" style="color:var(--jade);">+172</div>
+        <div class="bal-sub" data-i18n="auto_claim">auto-claim</div>
+      </div>
+    </div>
+
+    <!-- Hero spotlight -->
+    <div class="section-head" style="margin-bottom:8px;">
+      <h3 data-i18n="hero_spotlight">Hero Spotlight</h3>
+      <a class="more" href="heroes.html">Collection ›</a>
+    </div>
+    <div class="hero-spotlight" style="margin-bottom:14px;">
+      <div class="hs-portrait">
+        <img src="/assets/images/heroes/keyumars-hero.png" alt="Keyumars"
+             onerror="this.replaceWith(document.createTextNode('👑'))">
+      </div>
+      <div class="hs-body">
+        <div class="hs-kicker">Active hero</div>
+        <div class="hs-name">Keyumars</div>
+        <span class="hs-passive">✦ +5% Tap · +8% XP · +6 REAL/hr</span>
+      </div>
+      <div style="text-align:right; flex-shrink:0;">
+        <div style="font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px;">LVL</div>
+        <div style="font-size:18px; font-weight:800; color:var(--gold);">1</div>
+        <a href="heroes.html" style="font-size:11px; color:var(--violet); text-decoration:none;">Upgrade ›</a>
+      </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="section-head" style="margin-bottom:8px;">
+      <h3 data-i18n="explore">Explore</h3>
+    </div>
+    <div class="quick-links">
+      <a class="ql-card" href="learn.html">
+        <span class="ql-ico">📜</span>
+        <span class="ql-label" data-i18n="learn">Learn</span>
+      </a>
+      <a class="ql-card" href="heroes.html">
+        <span class="ql-ico">⚔</span>
+        <span class="ql-label" data-i18n="heroes">Heroes</span>
+      </a>
+      <a class="ql-card" href="earn.html">
+        <span class="ql-ico">💎</span>
+        <span class="ql-label" data-i18n="earn">Earn</span>
+      </a>
+      <a class="ql-card" href="social.html">
+        <span class="ql-ico">👥</span>
+        <span class="ql-label" data-i18n="social">Social</span>
+      </a>
+      <a class="ql-card" href="intro.html">
+        <span class="ql-ico">✦</span>
+        <span class="ql-label">Intro</span>
+      </a>
+      <a class="ql-card" href="tap.html">
+        <span class="ql-ico">⚡</span>
+        <span class="ql-label" data-i18n="tap">Tap</span>
+      </a>
+    </div>
 
   </main>
 
@@ -140,6 +416,6 @@
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=202605100154"></script>
+  <script src="app.js?v=202605130001"></script>
 </body>
 </html>

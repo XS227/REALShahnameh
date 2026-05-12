@@ -6,97 +6,248 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Tap</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=20260510-visual" />
-  <link rel="stylesheet" href="home.css?v=20260510-visual" />
+  <link rel="stylesheet" href="style.css?v=202605130001" />
+  <link rel="stylesheet" href="home.css?v=202605130001" />
+  <style>
+    /* Tap page: full-focus mining layout */
+    .tap-app { padding-bottom: 90px; }
+
+    /* Session stats bar */
+    .tap-stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .tsb-cell {
+      background: rgba(16,22,52,.7);
+      border: 1px solid var(--border);
+      border-radius: var(--r-sm);
+      padding: 9px 10px;
+      text-align: center;
+    }
+    .tsb-cell .lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+    .tsb-cell .val { font-size: 16px; font-weight: 800; margin-top: 2px; }
+    .tsb-cell.gold .val { color: var(--gold); }
+    .tsb-cell.jade .val { color: var(--jade); animation: profit-pulse 4s ease-in-out infinite; }
+    .tsb-cell.ember .val { color: var(--ember); }
+
+    /* Orb section */
+    .tap-orb-section {
+      background: rgba(10,14,36,.5);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--r-lg);
+      padding: 20px 16px 14px;
+      margin-bottom: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    .tap-orb-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(244,197,107,.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* REAL/hr claim banner */
+    .real-hr-banner {
+      display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(135deg, rgba(83,215,156,.12), rgba(83,215,156,.06));
+      border: 1px solid rgba(83,215,156,.3);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+    .rhb-left .rhb-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 3px; }
+    .rhb-left .rhb-val {
+      font-size: 24px; font-weight: 800; color: var(--jade);
+      animation: profit-pulse 4s ease-in-out infinite;
+    }
+    .rhb-left .rhb-val img { height: 18px; vertical-align: middle; margin-left: 4px; }
+    .rhb-claim {
+      background: linear-gradient(135deg, var(--jade), #3fbf88);
+      color: #07080f; font-size: 13px; font-weight: 800;
+      border: none; border-radius: 20px; padding: 10px 18px;
+      cursor: pointer; box-shadow: 0 4px 14px rgba(83,215,156,.35);
+    }
+    .rhb-claim:active { transform: scale(0.97); }
+
+    /* Boost & energy cards */
+    .tap-action-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+      margin-bottom: 12px;
+    }
+    .tap-mini-card {
+      background: rgba(16,22,52,.7);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+    }
+    .tap-mini-card.gold-edge { border-color: var(--border-gold); }
+    .tap-mini-card.violet-edge { border-color: var(--border-violet); }
+    .tap-mini-card h5 { margin: 0 0 6px; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
+    .tap-mini-card .copy { margin: 0 0 10px; font-size: 11px; color: var(--muted); line-height: 1.4; }
+
+    /* Combo display */
+    .combo-display {
+      background: rgba(140,109,255,.1);
+      border: 1px solid var(--border-violet);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .combo-left .combo-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
+    .combo-left .combo-val { font-size: 28px; font-weight: 900; color: var(--violet); line-height: 1; }
+    .combo-right { text-align: right; }
+    .combo-right .streak-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
+    .combo-right .streak-val { font-size: 18px; font-weight: 800; color: var(--ember); }
+
+    /* Tap history mini */
+    .tap-history {
+      background: rgba(16,22,52,.5);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+    }
+    .tap-history h5 { margin: 0 0 8px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+    .history-rows { display: grid; gap: 6px; }
+    .history-row { display: flex; align-items: center; justify-content: space-between; font-size: 12px; }
+    .history-row .h-time { color: var(--muted); font-size: 11px; }
+    .history-row .h-gain { color: var(--jade); font-weight: 700; }
+  </style>
 </head>
 <body>
   <main class="app tap-app">
 
-    <!-- Header -->
-    <section class="tap-head">
+    <!-- Compact header -->
+    <section class="page-head" style="margin-bottom:10px;">
       <div>
-        <h2>Tap · Energy Core</h2>
-        <div style="font-size:11px; color:var(--muted);">Tap to gather REAL · regen +1 / 3s</div>
+        <h2 class="page-title">REAL Mining</h2>
+        <p class="page-sub">Tap · Earn · Claim</p>
       </div>
-      <span class="pill">SEASON 2</span>
+      <span class="pill" data-i18n="season2">Season 2</span>
     </section>
 
-    <!-- Balance + Profit -->
-    <section class="balance-row">
-      <article class="card balance gold-edge">
-        <span class="label">◆ Balance</span>
-        <span class="value" data-balance>12,840<small> REAL</small></span>
-        <span class="muted" style="font-size:11px;">+1,240 today</span>
-      </article>
-      <article class="card profit">
-        <span class="label" style="font-size:11px; letter-spacing:.5px; color:var(--muted); text-transform:uppercase;">Profit / hr</span>
-        <span class="value">+172</span>
-        <span class="delta">REAL · auto-claim</span>
-      </article>
-    </section>
+    <!-- Session stats -->
+    <div class="tap-stats-bar">
+      <div class="tsb-cell gold">
+        <div class="lbl">Balance</div>
+        <div class="val" data-balance>12,840</div>
+      </div>
+      <div class="tsb-cell jade">
+        <div class="lbl">REAL/hr</div>
+        <div class="val">+172</div>
+      </div>
+      <div class="tsb-cell ember">
+        <div class="lbl">Today</div>
+        <div class="val">+1,240</div>
+      </div>
+    </div>
+
+    <!-- REAL/hr claim banner -->
+    <div class="real-hr-banner">
+      <div class="rhb-left">
+        <div class="rhb-label">Auto-mining income</div>
+        <div class="rhb-val">
+          +172
+          <img src="/assets/images/tokens/realtoken.png" alt="REAL" onerror="this.replaceWith(document.createTextNode(' REAL'))">/hr
+        </div>
+      </div>
+      <button class="rhb-claim" data-action="claim">Claim ›</button>
+    </div>
 
     <!-- Energy Core orb -->
-    <section class="card gold-edge" style="padding: 16px 14px 6px;">
+    <section class="tap-orb-section">
       <div class="core-wrap" data-core>
         <span class="ring r1"></span>
         <span class="ring r2"></span>
         <span class="ring r3"></span>
         <span class="ring r4"></span>
         <button class="energy-orb" data-energy-orb aria-label="Tap to gather REAL">
-          <span class="core-icon"><img src="/assets/images/tokens/realtoken.png" alt="REAL" style="width:48px; height:48px; object-fit:contain;" onerror="this.replaceWith(document.createTextNode('REAL'))"></span>
+          <span class="core-icon">
+            <img src="/assets/images/tokens/realtoken.png" alt="REAL"
+                 style="width:52px; height:52px; object-fit:contain;"
+                 onerror="this.replaceWith(document.createTextNode('REAL'))">
+          </span>
         </button>
       </div>
-      <div class="energy-meta" style="padding-bottom: 0;">
+      <!-- Energy bar -->
+      <div class="energy-meta" style="padding-bottom:0; margin-top:8px;">
         <div class="energy-line">
-          <span>⚡ Energy</span>
+          <span>⚡ <span data-i18n="energy">Energy</span></span>
           <span><span class="e-val" data-energy>720</span> / 1000 · <span class="e-timer" data-refill>+1 / 3s</span></span>
         </div>
         <div class="bar"><span class="fill" data-energy-fill style="width:72%"></span></div>
       </div>
     </section>
 
-    <!-- Boost -->
-    <section class="action-grid">
-      <article class="card action gold-edge" style="grid-column: 1/-1;">
-        <h4><span class="ico">⚡</span> Boost</h4>
-        <p class="copy">Multiply tap power 3× for 30 minutes. Stacks with combo critical.</p>
-        <div class="row">
-          <button class="primary-btn btn-block" data-action="boost">Activate</button>
-        </div>
-      </article>
-    </section>
+    <!-- Combo × streak -->
+    <div class="combo-display">
+      <div class="combo-left">
+        <div class="combo-label">Combo Multiplier</div>
+        <div class="combo-val">×<span data-combo>1.0</span></div>
+      </div>
+      <div class="combo-right">
+        <div class="streak-label">Daily streak</div>
+        <div class="streak-val">🔥 12 days</div>
+      </div>
+    </div>
 
-    <!-- Combo / streak quick stats -->
-    <div class="section-head"><h3>Quick stats</h3></div>
-    <section class="stats-grid">
-      <article class="card stat-mini">
-        <span class="ico warm">🔥</span>
-        <div>
-          <div class="lbl">Daily streak</div>
-          <div class="num">12 days</div>
+    <!-- Boost + Energy refill -->
+    <div class="tap-action-row">
+      <div class="tap-mini-card gold-edge">
+        <h5><span class="ico" style="font-size:16px;">⚡</span> <span data-i18n="boost">Boost</span></h5>
+        <p class="copy" data-i18n="boost_copy">3× tap power for 30 min. Stacks with crit.</p>
+        <button class="primary-btn btn-block" data-action="boost" data-i18n="activate">Activate</button>
+      </div>
+      <div class="tap-mini-card violet-edge">
+        <h5><span class="ico" style="font-size:16px; background:rgba(140,109,255,.18); border-color:var(--border-violet); color:var(--violet);">💎</span> Refill</h5>
+        <p class="copy">Restore 500 energy instantly. Watch an ad.</p>
+        <button class="secondary-btn btn-block" data-ad="energy">Watch ad</button>
+      </div>
+    </div>
+
+    <!-- Tap history -->
+    <div class="tap-history">
+      <h5>Recent mining</h5>
+      <div class="history-rows">
+        <div class="history-row">
+          <span>Tap burst · ×1.4 combo</span>
+          <span class="h-gain">+34 REAL</span>
+          <span class="h-time">just now</span>
         </div>
-      </article>
-      <article class="card stat-mini">
-        <span class="ico">✦</span>
-        <div>
-          <div class="lbl">Combo</div>
-          <div class="num">×<span data-combo>1.0</span></div>
+        <div class="history-row">
+          <span>Critical hit!</span>
+          <span class="h-gain">+28 REAL</span>
+          <span class="h-time">2m</span>
         </div>
-      </article>
-    </section>
+        <div class="history-row">
+          <span>Auto-claim · 1hr</span>
+          <span class="h-gain">+172 REAL</span>
+          <span class="h-time">1h</span>
+        </div>
+        <div class="history-row">
+          <span>Boost activated</span>
+          <span class="h-gain">+3× power</span>
+          <span class="h-time">2h</span>
+        </div>
+      </div>
+    </div>
 
   </main>
 
   <nav class="bottom-nav">
-    <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span>Home</span></a>
-    <a class="nav-item active" href="tap.html"><span class="ni-ico">⚡</span><span>Tap</span></a>
-    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span>Heroes</span></a>
-    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span>Learn</span></a>
-    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span>Earn</span></a>
-    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span><span>Social</span></a>
+    <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="home">Home</span></a>
+    <a class="nav-item active" href="tap.html"><span class="ni-ico">⚡</span><span data-i18n="tap">Tap</span></a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
+    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span><span data-i18n="social">Social</span></a>
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=20260510-visual"></script>
+  <div class="unlock-burst" data-burst><span class="ring-burst"></span><span class="label" data-burst-label>Unlocked</span></div>
+  <script src="app.js?v=202605130001"></script>
 </body>
 </html>
