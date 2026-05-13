@@ -3,9 +3,28 @@
   "updatedAt": "2026-05-10T01:30:00Z",
   "dailyLimit": 5,
   "rewardTypes": {
-    "energy": { "amount": 25, "label": "+25 Energy" },
-    "real":   { "amount": 100, "label": "+100 REAL" },
-    "gems":   { "amount": 10, "label": "+10 Gems" }
+    "energy": {
+      "amount": 25,
+      "label": "+25 Energy"
+    },
+    "real": {
+      "amount": 100,
+      "label": "+100 REAL"
+    },
+    "gems": {
+      "amount": 10,
+      "label": "+10 Gems"
+    }
   },
-  "claims": []
+  "claims": [
+    {
+      "telegram_id": "5629291605",
+      "user_id": "u_t0ig755k",
+      "reward_type": "real",
+      "reward_amount": 100,
+      "timestamp": "2026-05-13T00:28:09.040Z",
+      "day": "2026-05-13",
+      "provider_placeholder": "stub"
+    }
+  ]
 }
