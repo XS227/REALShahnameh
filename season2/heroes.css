@@ -1,0 +1,599 @@
+/* ==========================================================================
+   REAL Shahnameh — Heroes / Collection page (heroes.css)
+   Album-style collectible cards + Certificate-of-Discovery modal
+   ========================================================================== */
+
+.heroes-app { padding-bottom: 90px; }
+
+/* ---- Collection stats strip ---- */
+.coll-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  background: rgba(14,18,40,.7);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.css-cell {
+  padding: 10px 6px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+.css-cell:last-child { border-right: 0; }
+.css-val {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+.css-val.gold { color: var(--gold); }
+.css-lbl {
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* ---- Collection tab bar ---- */
+.coll-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+  -webkit-overflow-scrolling: touch;
+}
+.coll-tabs::-webkit-scrollbar { display: none; }
+.coll-tab {
+  flex-shrink: 0;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.coll-tab.active {
+  color: var(--gold);
+  border-color: var(--border-gold);
+  background: rgba(244,197,107,.1);
+}
+
+/* ---- Chapter-complete banner ---- */
+.chapter-banner {
+  display: grid;
+  grid-template-columns: 44px 1fr 56px;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  background:
+    radial-gradient(140% 100% at 0% 0%, rgba(83,215,156,.18) 0%, transparent 55%),
+    radial-gradient(140% 100% at 100% 100%, rgba(244,197,107,.14) 0%, transparent 55%),
+    linear-gradient(180deg, rgba(14,22,50,.9), rgba(8,12,30,.92));
+  border: 1px solid rgba(83,215,156,.32);
+  border-radius: var(--r-lg);
+  position: relative;
+  overflow: hidden;
+}
+.chapter-banner .cb-check {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(83,215,156,.15);
+  border: 1px solid rgba(83,215,156,.45);
+  color: var(--jade);
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+.chapter-banner .cb-body { min-width: 0; }
+.chapter-banner .cb-kicker {
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--jade);
+  margin-bottom: 3px;
+}
+.chapter-banner .cb-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chapter-banner .cb-sub {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.chapter-banner .cb-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  opacity: .9;
+  border: 1px solid rgba(83,215,156,.2);
+}
+.chapter-banner .cb-thumb-fallback {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: rgba(244,197,107,.1);
+  border: 1px solid var(--border-gold);
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+
+/* ---- Collection grid: 2 columns ---- */
+.coll-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* ---- Individual collection card ---- */
+.coll-card {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: linear-gradient(160deg, rgba(22,30,60,.85), rgba(10,14,30,.9));
+  transition: transform .15s ease, box-shadow .2s ease;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.coll-card:active { transform: scale(.96); }
+
+/* Rarity border colours */
+.coll-card.r-common  { border-color: rgba(154,166,196,.35); }
+.coll-card.r-rare    { border-color: rgba(94,162,255,.42); }
+.coll-card.r-epic    { border-color: rgba(140,109,255,.48); }
+.coll-card.r-legend  {
+  border-color: rgba(244,197,107,.55);
+  box-shadow: 0 0 14px rgba(244,197,107,.18), inset 0 0 18px rgba(244,197,107,.06);
+}
+.coll-card.r-mythic  {
+  border-color: rgba(255,82,103,.55);
+  box-shadow: 0 0 14px rgba(255,82,103,.2), inset 0 0 18px rgba(255,82,103,.06);
+}
+
+/* Portrait area — 3:4 aspect ratio */
+.coll-portrait {
+  aspect-ratio: 3 / 4;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 35% 30%, rgba(244,197,107,.08), transparent 65%),
+    linear-gradient(160deg, #1d2542 0%, #0a1024 100%);
+}
+.coll-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Emoji fallback shown when img fails or has no src */
+.coll-emoji {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  pointer-events: none;
+}
+
+/* Gradient overlay so info reads over image */
+.coll-portrait::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(5,8,22,.9) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Type chip — bottom-left of portrait */
+.coll-type-chip {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  z-index: 1;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  color: rgba(255,255,255,.85);
+}
+
+/* Chapter dot — top-right */
+.coll-chapter-dot {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(244,197,107,.18);
+  border: 1px solid rgba(244,197,107,.45);
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  letter-spacing: 0;
+}
+
+/* Card info row below portrait */
+.coll-info {
+  padding: 9px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.coll-name {
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.coll-rarity {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+.coll-rarity .stars { letter-spacing: 1px; }
+.coll-card.r-common .coll-rarity  { color: var(--rarity-common); }
+.coll-card.r-rare   .coll-rarity  { color: var(--azure); }
+.coll-card.r-epic   .coll-rarity  { color: var(--violet); }
+.coll-card.r-legend .coll-rarity  { color: var(--gold); }
+.coll-card.r-mythic .coll-rarity  { color: var(--crimson); }
+
+/* ---- Coming-later locked chapter cards ---- */
+.coll-locked-chapter {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 44px 1fr 56px;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  background: rgba(14,18,40,.7);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  opacity: .72;
+}
+.clc-lock {
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.clc-title { font-size: 13px; font-weight: 700; color: var(--text-dim); margin-bottom: 3px; }
+.clc-count { font-size: 11px; color: var(--muted); }
+.clc-hint  { font-size: 10px; color: var(--muted); opacity: .7; margin-top: 2px; }
+.clc-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: grayscale(.6) brightness(.7);
+  border: 1px solid var(--border);
+}
+.clc-thumb-fallback {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  opacity: .5;
+}
+
+/* ============================================================
+   CERTIFICATE / DETAIL MODAL
+   ============================================================ */
+.cert-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 4, 12, .78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .28s ease;
+}
+.cert-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cert-modal {
+  width: min(460px, 100%);
+  max-height: 88vh;
+  background:
+    linear-gradient(160deg, rgba(255,255,255,.05), transparent 40%),
+    linear-gradient(180deg, rgba(16,22,50,.98), rgba(6,9,22,.99));
+  border: 1px solid var(--border-gold);
+  border-bottom: 0;
+  border-radius: 28px 28px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -24px 70px rgba(0,0,0,.65);
+  transform: translateY(50px);
+  transition: transform .32s cubic-bezier(.2,.8,.2,1);
+}
+.cert-backdrop.open .cert-modal {
+  transform: translateY(0);
+}
+
+.cert-grabber-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px 0;
+  flex-shrink: 0;
+}
+.cert-grabber {
+  width: 38px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.18);
+}
+
+/* Portrait panel at top of modal */
+.cert-portrait-panel {
+  position: relative;
+  height: 240px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 40% 30%, rgba(244,197,107,.12), transparent 60%),
+    linear-gradient(160deg, #1d2542, #07091c);
+  margin: 10px 14px 0;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.cert-portrait-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cert-portrait-panel .cert-portrait-emoji {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+}
+/* Gradient fade over portrait bottom */
+.cert-portrait-panel::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(16,22,50,.95) 0%, transparent 100%);
+  pointer-events: none;
+}
+/* Type badge on portrait */
+.cert-type-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  z-index: 2;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.cert-type-badge.t-character { background: rgba(255,138,61,.28); border: 1px solid rgba(255,138,61,.5); color: #ffc299; }
+.cert-type-badge.t-place     { background: rgba(94,162,255,.22); border: 1px solid rgba(94,162,255,.5); color: #b0cfff; }
+.cert-type-badge.t-artifact  { background: rgba(140,109,255,.24); border: 1px solid rgba(140,109,255,.5); color: #cdbcff; }
+.cert-type-badge.t-codex     { background: rgba(83,215,156,.18); border: 1px solid rgba(83,215,156,.45); color: #a0f0cf; }
+.cert-type-badge.t-event     { background: rgba(244,197,107,.18); border: 1px solid rgba(244,197,107,.45); color: var(--gold); }
+
+/* Close button */
+.cert-close {
+  position: absolute;
+  top: 48px;
+  right: 20px;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.14);
+  color: var(--text-dim);
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: color .15s, background .15s;
+}
+.cert-close:active { background: rgba(255,255,255,.1); color: var(--text); }
+
+/* Scrollable body */
+.cert-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 14px 18px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Watermark text */
+.cert-watermark {
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(244,197,107,.4);
+  margin-bottom: 2px;
+}
+
+/* Name + rarity row */
+.cert-name-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.cert-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.1;
+  background: linear-gradient(120deg, #fff, #ffe5b3 60%, var(--gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.cert-rarity-pill {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  margin-top: 3px;
+  background: rgba(255,255,255,.04);
+}
+.cert-rarity-pill.r-common  { color: var(--rarity-common); }
+.cert-rarity-pill.r-rare    { color: var(--azure); }
+.cert-rarity-pill.r-epic    { color: var(--violet); }
+.cert-rarity-pill.r-legend  { color: var(--gold); }
+.cert-rarity-pill.r-mythic  { color: var(--crimson); }
+
+.cert-role {
+  font-size: 13px;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+/* Tags row */
+.cert-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.cert-tag {
+  font-size: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.cert-tag.era    { background: rgba(255,255,255,.06); border: 1px solid var(--border); color: var(--muted); }
+.cert-tag.season { background: rgba(244,197,107,.1); border: 1px solid var(--border-gold); color: var(--gold); }
+.cert-tag.side-light { background: rgba(83,215,156,.1); border: 1px solid rgba(83,215,156,.3); color: var(--jade); }
+.cert-tag.side-dark  { background: rgba(255,82,103,.1); border: 1px solid rgba(255,82,103,.3); color: var(--crimson); }
+
+/* Lore */
+.cert-lore {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.65;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--border);
+  font-style: italic;
+}
+
+/* Bonus */
+.cert-bonus {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(83,215,156,.07);
+  border: 1px solid rgba(83,215,156,.22);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--jade);
+  letter-spacing: .2px;
+}
+.cert-bonus::before {
+  content: '⬡ Bonus · ';
+  color: rgba(83,215,156,.6);
+  font-weight: 600;
+}
+
+/* NFT badge */
+.cert-nft-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(140,109,255,.08);
+  border: 1px solid rgba(140,109,255,.25);
+  font-size: 12px;
+  color: #cdbcff;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+.cert-nft-badge .nft-ico {
+  font-size: 16px;
+  color: var(--violet);
+}
+
+/* Footer meta */
+.cert-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px 0 4px;
+  border-top: 1px solid var(--border);
+  font-size: 10px;
+  color: var(--muted-2);
+  letter-spacing: .2px;
+}
+.cert-footer code {
+  font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color: var(--muted);
+  font-size: 10px;
+}
