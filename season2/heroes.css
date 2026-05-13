@@ -1,15 +1,52 @@
 /* ==========================================================================
    REAL Shahnameh — Heroes / Collection page (heroes.css)
-   Album-style collectible cards + Certificate-of-Discovery modal
+   Premium collectible codex + Certificate-of-Discovery modal
    ========================================================================== */
 
 .heroes-app { padding-bottom: 90px; }
 
-/* ---- Collection stats strip ---- */
+/* =========================================================
+   KEYFRAMES
+   ========================================================= */
+
+@keyframes glow-rare {
+  0%, 100% { box-shadow: 0 0 8px rgba(94,162,255,.18); }
+  50%       { box-shadow: 0 0 20px rgba(94,162,255,.44), inset 0 0 14px rgba(94,162,255,.06); }
+}
+@keyframes glow-epic {
+  0%, 100% { box-shadow: 0 0 8px rgba(140,109,255,.18); }
+  50%       { box-shadow: 0 0 22px rgba(140,109,255,.5), inset 0 0 16px rgba(140,109,255,.07); }
+}
+@keyframes glow-legend {
+  0%, 100% { box-shadow: 0 0 12px rgba(244,197,107,.18), inset 0 0 18px rgba(244,197,107,.05); }
+  50%       { box-shadow: 0 0 30px rgba(244,197,107,.44), inset 0 0 26px rgba(244,197,107,.10); }
+}
+@keyframes glow-mythic {
+  0%        { box-shadow: 0 0 14px rgba(255,82,103,.28), inset 0 0 18px rgba(255,82,103,.06); border-color: rgba(255,82,103,.55); }
+  50%       { box-shadow: 0 0 32px rgba(255,138,61,.54), 0 0 60px rgba(255,82,103,.18), inset 0 0 24px rgba(255,82,103,.10); border-color: rgba(255,138,61,.72); }
+  100%      { box-shadow: 0 0 14px rgba(255,82,103,.28), inset 0 0 18px rgba(255,82,103,.06); border-color: rgba(255,82,103,.55); }
+}
+@keyframes cert-glow-in {
+  0%   { box-shadow: 0 -4px 0 rgba(244,197,107,0); }
+  40%  { box-shadow: 0 -24px 70px rgba(244,197,107,.38); }
+  100% { box-shadow: 0 -8px 32px rgba(244,197,107,.14); }
+}
+@keyframes accordion-open {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer-scan {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+
+/* =========================================================
+   STATS STRIP
+   ========================================================= */
+
 .coll-stats-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
   background: rgba(14,18,40,.7);
   border: 1px solid var(--border);
   border-radius: var(--r-md);
@@ -22,578 +59,604 @@
 }
 .css-cell:last-child { border-right: 0; }
 .css-val {
-  font-size: 15px;
-  font-weight: 800;
-  color: var(--text);
-  line-height: 1.2;
+  font-size: 15px; font-weight: 800;
+  color: var(--text); line-height: 1.2;
 }
-.css-val.gold { color: var(--gold); }
+.css-val.gold   { color: var(--gold); }
+.css-val.azure  { color: var(--azure); }
+.css-val.violet { color: var(--violet); }
 .css-lbl {
-  font-size: 9px;
-  color: var(--muted);
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  margin-top: 2px;
+  font-size: 9px; color: var(--muted);
+  letter-spacing: .5px; text-transform: uppercase; margin-top: 2px;
 }
 
-/* ---- Collection tab bar ---- */
-.coll-tabs {
+/* =========================================================
+   PROGRESS SECTION
+   ========================================================= */
+
+.coll-progress-section {
   display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  scrollbar-width: none;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+  background: rgba(14,18,40,.6);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+}
+.coll-progress-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coll-ph-left {
+  font-size: 12px; font-weight: 700; color: var(--text-dim);
+}
+.coll-ph-right {
+  font-size: 11px; color: var(--muted);
+}
+.coll-progress-track {
+  height: 5px; border-radius: 999px;
+  background: rgba(255,255,255,.08); overflow: hidden;
+}
+.coll-progress-fill {
+  height: 100%; border-radius: 999px;
+  background: linear-gradient(90deg, var(--jade), var(--gold));
+  transition: width 1s cubic-bezier(.2,.8,.2,1);
+}
+.coll-rarity-breakdown {
+  display: flex; gap: 5px; flex-wrap: wrap;
+}
+.crb-item {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 9.5px; font-weight: 700;
+  padding: 3px 8px; border-radius: 999px; border: 1px solid transparent;
+  letter-spacing: .3px;
+}
+.crb-item.r-common { background: rgba(154,166,196,.1); border-color: rgba(154,166,196,.25); color: rgba(154,166,196,.85); }
+.crb-item.r-rare   { background: rgba(94,162,255,.1);  border-color: rgba(94,162,255,.3);  color: var(--azure); }
+.crb-item.r-epic   { background: rgba(140,109,255,.1); border-color: rgba(140,109,255,.3); color: var(--violet); }
+.crb-item.r-legend { background: rgba(244,197,107,.1); border-color: rgba(244,197,107,.3); color: var(--gold); }
+.crb-item.r-mythic { background: rgba(255,82,103,.08); border-color: rgba(255,82,103,.25); color: var(--crimson); }
+
+/* =========================================================
+   TAB BAR
+   ========================================================= */
+
+.coll-tabs {
+  display: flex; gap: 6px;
+  overflow-x: auto; scrollbar-width: none;
   padding-bottom: 2px;
   -webkit-overflow-scrolling: touch;
 }
 .coll-tabs::-webkit-scrollbar { display: none; }
 .coll-tab {
-  flex-shrink: 0;
-  padding: 7px 14px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.04);
+  flex-shrink: 0; padding: 7px 14px; border-radius: 999px;
+  font-size: 12px; font-weight: 700; color: var(--muted);
+  border: 1px solid var(--border); background: rgba(255,255,255,.04);
   cursor: pointer;
   transition: color .15s, border-color .15s, background .15s;
   -webkit-tap-highlight-color: transparent;
 }
 .coll-tab.active {
   color: var(--gold);
-  border-color: var(--border-gold);
+  border-color: rgba(244,197,107,.45);
   background: rgba(244,197,107,.1);
 }
 
-/* ---- Chapter-complete banner ---- */
+/* =========================================================
+   CHAPTER BANNER
+   ========================================================= */
+
 .chapter-banner {
   display: grid;
   grid-template-columns: 44px 1fr 56px;
-  gap: 12px;
-  align-items: center;
-  padding: 14px;
+  gap: 12px; align-items: center; padding: 14px;
   background:
     radial-gradient(140% 100% at 0% 0%, rgba(83,215,156,.18) 0%, transparent 55%),
     radial-gradient(140% 100% at 100% 100%, rgba(244,197,107,.14) 0%, transparent 55%),
     linear-gradient(180deg, rgba(14,22,50,.9), rgba(8,12,30,.92));
   border: 1px solid rgba(83,215,156,.32);
   border-radius: var(--r-lg);
-  position: relative;
-  overflow: hidden;
+  position: relative; overflow: hidden;
 }
 .chapter-banner .cb-check {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  background: rgba(83,215,156,.15);
-  border: 1px solid rgba(83,215,156,.45);
-  color: var(--jade);
-  display: grid;
-  place-items: center;
-  font-size: 20px;
-  font-weight: 900;
-  flex-shrink: 0;
+  width: 44px; height: 44px; border-radius: 14px;
+  background: rgba(83,215,156,.15); border: 1px solid rgba(83,215,156,.45);
+  color: var(--jade); display: grid; place-items: center;
+  font-size: 20px; font-weight: 900; flex-shrink: 0;
 }
 .chapter-banner .cb-body { min-width: 0; }
 .chapter-banner .cb-kicker {
-  font-size: 9px;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  color: var(--jade);
-  margin-bottom: 3px;
+  font-size: 9px; letter-spacing: 1.8px; text-transform: uppercase;
+  color: var(--jade); margin-bottom: 3px;
 }
 .chapter-banner .cb-title {
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--text);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 14px; font-weight: 800; color: var(--text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.chapter-banner .cb-sub {
-  font-size: 11px;
-  color: var(--muted);
-  margin-top: 2px;
-}
+.chapter-banner .cb-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
 .chapter-banner .cb-thumb {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  object-fit: cover;
-  display: block;
-  opacity: .9;
+  width: 56px; height: 56px; border-radius: 10px;
+  object-fit: cover; display: block; opacity: .9;
   border: 1px solid rgba(83,215,156,.2);
 }
 .chapter-banner .cb-thumb-fallback {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  background: rgba(244,197,107,.1);
-  border: 1px solid var(--border-gold);
-  display: grid;
-  place-items: center;
-  font-size: 24px;
+  width: 56px; height: 56px; border-radius: 10px;
+  background: rgba(244,197,107,.1); border: 1px solid rgba(244,197,107,.3);
+  display: grid; place-items: center; font-size: 24px;
 }
 
-/* ---- Collection grid: 2 columns ---- */
+/* =========================================================
+   COLLECTION GRID
+   ========================================================= */
+
 .coll-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
-/* ---- Individual collection card ---- */
+/* =========================================================
+   COLLECTION CARD
+   ========================================================= */
+
 .coll-card {
-  border-radius: var(--r-md);
-  overflow: hidden;
-  cursor: pointer;
-  border: 1px solid var(--border);
-  background: linear-gradient(160deg, rgba(22,30,60,.85), rgba(10,14,30,.9));
-  transition: transform .15s ease, box-shadow .2s ease;
+  border-radius: var(--r-md); overflow: hidden;
+  cursor: pointer; border: 1px solid var(--border);
+  background: linear-gradient(160deg, rgba(22,30,60,.88), rgba(10,14,30,.92));
+  transition: transform .15s ease;
   -webkit-tap-highlight-color: transparent;
-  position: relative;
+  position: relative; text-align: left; width: 100%;
 }
-.coll-card:active { transform: scale(.96); }
+.coll-card:active { transform: scale(.95); }
 
-/* Rarity border colours */
-.coll-card.r-common  { border-color: rgba(154,166,196,.35); }
-.coll-card.r-rare    { border-color: rgba(94,162,255,.42); }
-.coll-card.r-epic    { border-color: rgba(140,109,255,.48); }
-.coll-card.r-legend  {
-  border-color: rgba(244,197,107,.55);
-  box-shadow: 0 0 14px rgba(244,197,107,.18), inset 0 0 18px rgba(244,197,107,.06);
-}
-.coll-card.r-mythic  {
-  border-color: rgba(255,82,103,.55);
-  box-shadow: 0 0 14px rgba(255,82,103,.2), inset 0 0 18px rgba(255,82,103,.06);
+/* Rarity glow animations */
+.coll-card.r-common { border-color: rgba(154,166,196,.3); }
+.coll-card.r-rare   { border-color: rgba(94,162,255,.42);  animation: glow-rare   3.2s ease-in-out infinite; }
+.coll-card.r-epic   { border-color: rgba(140,109,255,.48); animation: glow-epic   3s ease-in-out infinite; }
+.coll-card.r-legend { border-color: rgba(244,197,107,.55); animation: glow-legend 2.8s ease-in-out infinite; }
+.coll-card.r-mythic { border-color: rgba(255,82,103,.55);  animation: glow-mythic 2s ease-in-out infinite; }
+
+/* Shimmer sweep on rare+ cards */
+.coll-card.r-rare::before,
+.coll-card.r-epic::before,
+.coll-card.r-legend::before,
+.coll-card.r-mythic::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 5; pointer-events: none;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.06) 50%, transparent 60%);
+  animation: shimmer-scan 4s ease-in-out infinite;
 }
 
-/* Portrait area — 3:4 aspect ratio */
+/* Portrait area — 3:4 ratio */
 .coll-portrait {
   aspect-ratio: 3 / 4;
-  position: relative;
-  overflow: hidden;
+  position: relative; overflow: hidden;
   background:
     radial-gradient(circle at 35% 30%, rgba(244,197,107,.08), transparent 65%),
     linear-gradient(160deg, #1d2542 0%, #0a1024 100%);
 }
 .coll-portrait img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .4s ease;
 }
-/* Emoji fallback shown when img fails or has no src */
+.coll-card:active .coll-portrait img { transform: scale(1.05); }
+
 .coll-emoji {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 52px;
-  pointer-events: none;
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 52px; pointer-events: none;
 }
 
-/* Gradient overlay so info reads over image */
 .coll-portrait::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 60%;
-  background: linear-gradient(to top, rgba(5,8,22,.9) 0%, transparent 100%);
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 62%;
+  background: linear-gradient(to top, rgba(5,8,22,.92) 0%, transparent 100%);
   pointer-events: none;
 }
 
-/* Type chip — bottom-left of portrait */
+/* Type chip */
 .coll-type-chip {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  z-index: 1;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 999px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  background: rgba(255,255,255,.1);
-  border: 1px solid rgba(255,255,255,.2);
+  position: absolute; bottom: 8px; left: 8px; z-index: 2;
+  font-size: 9px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 999px;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
   color: rgba(255,255,255,.85);
 }
 
-/* Chapter dot — top-right */
+/* Chapter dot — top right */
 .coll-chapter-dot {
-  position: absolute;
-  top: 7px;
-  right: 7px;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(244,197,107,.18);
-  border: 1px solid rgba(244,197,107,.45);
-  color: var(--gold);
-  font-size: 9px;
-  font-weight: 800;
-  display: grid;
-  place-items: center;
-  letter-spacing: 0;
+  position: absolute; top: 7px; right: 7px; z-index: 2;
+  padding: 2px 6px; border-radius: 999px;
+  background: rgba(244,197,107,.18); border: 1px solid rgba(244,197,107,.45);
+  color: var(--gold); font-size: 8px; font-weight: 800; letter-spacing: .4px;
 }
 
-/* Card info row below portrait */
-.coll-info {
-  padding: 9px 10px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
+/* Card footer info */
+.coll-info { padding: 9px 10px 10px; display: flex; flex-direction: column; gap: 3px; }
 .coll-name {
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.2;
-  color: var(--text);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: 13px; font-weight: 800; line-height: 1.2; color: var(--text);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.coll-rarity {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 10px;
-  font-weight: 700;
+.coll-rarity { font-size: 10px; font-weight: 700; letter-spacing: .3px; }
+.coll-card.r-common .coll-rarity { color: rgba(154,166,196,.8); }
+.coll-card.r-rare   .coll-rarity { color: var(--azure); }
+.coll-card.r-epic   .coll-rarity { color: var(--violet); }
+.coll-card.r-legend .coll-rarity { color: var(--gold); }
+.coll-card.r-mythic .coll-rarity { color: var(--crimson); }
+
+/* =========================================================
+   RARITY PARTICLE (fixed-position, spawned by JS)
+   ========================================================= */
+
+.rarity-particle {
+  position: fixed; border-radius: 50%; pointer-events: none;
+  z-index: 100; will-change: transform, opacity;
+}
+
+/* =========================================================
+   LOCKED MYSTERY CARDS
+   ========================================================= */
+
+.coll-card-locked {
+  border-radius: var(--r-md); overflow: hidden;
+  border: 1px dashed rgba(255,255,255,.12);
+  background: rgba(10,12,28,.75);
+  position: relative;
+  pointer-events: auto;
+  cursor: default;
+}
+.coll-portrait-locked {
+  aspect-ratio: 3 / 4; position: relative;
+  background:
+    repeating-linear-gradient(-45deg, transparent, transparent 10px,
+      rgba(255,255,255,.018) 10px, rgba(255,255,255,.018) 20px),
+    linear-gradient(160deg, #0c1020, #060914);
+  display: flex; align-items: center; justify-content: center;
+}
+.coll-portrait-locked .locked-silhouette {
+  font-size: 40px; opacity: .15; filter: grayscale(1);
+  user-select: none;
+}
+.coll-portrait-locked::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(5,8,22,.9), transparent);
+}
+.coll-locked-badge {
+  position: absolute; top: 8px; right: 8px; z-index: 2;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15);
+  display: grid; place-items: center; font-size: 11px;
+}
+.coll-info-locked { padding: 9px 10px 10px; display: flex; flex-direction: column; gap: 3px; }
+.coll-name-locked {
+  font-size: 13px; font-weight: 800; color: rgba(255,255,255,.2);
   letter-spacing: .3px;
 }
-.coll-rarity .stars { letter-spacing: 1px; }
-.coll-card.r-common .coll-rarity  { color: var(--rarity-common); }
-.coll-card.r-rare   .coll-rarity  { color: var(--azure); }
-.coll-card.r-epic   .coll-rarity  { color: var(--violet); }
-.coll-card.r-legend .coll-rarity  { color: var(--gold); }
-.coll-card.r-mythic .coll-rarity  { color: var(--crimson); }
+.coll-hint-locked { font-size: 10px; color: rgba(255,255,255,.15); }
 
-/* ---- Coming-later locked chapter cards ---- */
+/* =========================================================
+   LOCKED CHAPTER TEASER ROW
+   ========================================================= */
+
 .coll-locked-chapter {
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 44px 1fr 56px;
-  gap: 12px;
-  align-items: center;
-  padding: 14px;
-  background: rgba(14,18,40,.7);
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  opacity: .72;
+  display: grid; grid-template-columns: 44px 1fr 56px;
+  gap: 12px; align-items: center; padding: 14px;
+  background: rgba(10,12,26,.6);
+  border: 1px dashed rgba(255,255,255,.1);
+  border-radius: var(--r-md); opacity: .6;
 }
 .clc-lock {
-  width: 44px;
-  height: 44px;
-  border-radius: 13px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid var(--border);
-  display: grid;
-  place-items: center;
-  font-size: 20px;
-  flex-shrink: 0;
+  width: 44px; height: 44px; border-radius: 13px;
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1);
+  display: grid; place-items: center; font-size: 20px; flex-shrink: 0;
 }
-.clc-title { font-size: 13px; font-weight: 700; color: var(--text-dim); margin-bottom: 3px; }
-.clc-count { font-size: 11px; color: var(--muted); }
-.clc-hint  { font-size: 10px; color: var(--muted); opacity: .7; margin-top: 2px; }
+.clc-title { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.35); margin-bottom: 3px; }
+.clc-count { font-size: 11px; color: rgba(255,255,255,.22); }
 .clc-thumb {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  object-fit: cover;
-  filter: grayscale(.6) brightness(.7);
-  border: 1px solid var(--border);
+  width: 56px; height: 56px; border-radius: 10px;
+  object-fit: cover; filter: grayscale(.9) brightness(.4);
+  border: 1px solid rgba(255,255,255,.1);
 }
 .clc-thumb-fallback {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  background: rgba(255,255,255,.04);
-  border: 1px solid var(--border);
-  display: grid;
-  place-items: center;
-  font-size: 24px;
-  opacity: .5;
+  width: 56px; height: 56px; border-radius: 10px;
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08);
+  display: grid; place-items: center; font-size: 24px; opacity: .3;
 }
 
-/* ============================================================
+/* =========================================================
    CERTIFICATE / DETAIL MODAL
-   ============================================================ */
+   ========================================================= */
+
 .cert-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(2, 4, 12, .78);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  position: fixed; inset: 0;
+  background: rgba(2,3,12,.82);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
   z-index: 200;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  opacity: 0;
-  pointer-events: none;
+  display: flex; justify-content: center; align-items: flex-end;
+  opacity: 0; pointer-events: none;
   transition: opacity .28s ease;
 }
-.cert-backdrop.open {
-  opacity: 1;
-  pointer-events: auto;
-}
+.cert-backdrop.open { opacity: 1; pointer-events: auto; }
 
+/* Parchment-style modal */
 .cert-modal {
-  width: min(460px, 100%);
-  max-height: 88vh;
+  width: min(480px, 100%);
+  max-height: 90vh;
   background:
-    linear-gradient(160deg, rgba(255,255,255,.05), transparent 40%),
-    linear-gradient(180deg, rgba(16,22,50,.98), rgba(6,9,22,.99));
-  border: 1px solid var(--border-gold);
+    radial-gradient(ellipse at 65% 0%, rgba(244,197,107,.09) 0%, transparent 48%),
+    radial-gradient(ellipse at 15% 95%, rgba(94,162,255,.05) 0%, transparent 45%),
+    linear-gradient(180deg, rgba(18,13,34,.99), rgba(6,8,20,.99));
+  border: 1px solid rgba(244,197,107,.38);
   border-bottom: 0;
   border-radius: 28px 28px 0 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 -24px 70px rgba(0,0,0,.65);
-  transform: translateY(50px);
-  transition: transform .32s cubic-bezier(.2,.8,.2,1);
+  display: flex; flex-direction: column;
+  box-shadow: 0 -24px 80px rgba(0,0,0,.72);
+  transform: translateY(60px);
+  transition: transform .36s cubic-bezier(.16,1,.3,1);
 }
 .cert-backdrop.open .cert-modal {
   transform: translateY(0);
+  animation: cert-glow-in .65s ease forwards;
 }
 
 .cert-grabber-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 16px 0;
-  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  padding: 12px 16px 0; flex-shrink: 0;
 }
 .cert-grabber {
-  width: 38px;
-  height: 4px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.18);
+  width: 40px; height: 4px; border-radius: 999px;
+  background: rgba(255,255,255,.15);
 }
 
-/* Portrait panel at top of modal */
+/* Portrait panel */
 .cert-portrait-panel {
-  position: relative;
-  height: 240px;
-  flex-shrink: 0;
+  position: relative; height: 240px; flex-shrink: 0;
   overflow: hidden;
   background:
-    radial-gradient(circle at 40% 30%, rgba(244,197,107,.12), transparent 60%),
+    radial-gradient(circle at 40% 28%, rgba(244,197,107,.14), transparent 58%),
     linear-gradient(160deg, #1d2542, #07091c);
-  margin: 10px 14px 0;
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,.08);
+  margin: 10px 14px 0; border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.1);
+  cursor: zoom-in;
 }
 .cert-portrait-panel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .35s ease;
 }
-.cert-portrait-panel .cert-portrait-emoji {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.cert-portrait-panel:active img { transform: scale(1.05); }
+.cert-portrait-emoji {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
   font-size: 72px;
 }
-/* Gradient fade over portrait bottom */
 .cert-portrait-panel::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 50%;
-  background: linear-gradient(to top, rgba(16,22,50,.95) 0%, transparent 100%);
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 52%;
+  background: linear-gradient(to top, rgba(18,13,34,.96) 0%, transparent 100%);
   pointer-events: none;
 }
-/* Type badge on portrait */
+.cert-zoom-hint {
+  position: absolute; bottom: 14px; left: 14px; z-index: 2;
+  font-size: 9px; letter-spacing: .8px; text-transform: uppercase;
+  color: rgba(255,255,255,.35);
+}
+
+/* Type badge */
 .cert-type-badge {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  z-index: 2;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 999px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  position: absolute; bottom: 12px; right: 12px; z-index: 2;
+  font-size: 10px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
 }
 .cert-type-badge.t-character { background: rgba(255,138,61,.28); border: 1px solid rgba(255,138,61,.5); color: #ffc299; }
+.cert-type-badge.t-enemy     { background: rgba(255,82,103,.24); border: 1px solid rgba(255,82,103,.5); color: #ffb0bc; }
 .cert-type-badge.t-place     { background: rgba(94,162,255,.22); border: 1px solid rgba(94,162,255,.5); color: #b0cfff; }
-.cert-type-badge.t-artifact  { background: rgba(140,109,255,.24); border: 1px solid rgba(140,109,255,.5); color: #cdbcff; }
 .cert-type-badge.t-codex     { background: rgba(83,215,156,.18); border: 1px solid rgba(83,215,156,.45); color: #a0f0cf; }
-.cert-type-badge.t-event     { background: rgba(244,197,107,.18); border: 1px solid rgba(244,197,107,.45); color: var(--gold); }
+.cert-type-badge.t-artifact  { background: rgba(140,109,255,.24); border: 1px solid rgba(140,109,255,.5); color: #cdbcff; }
 
 /* Close button */
 .cert-close {
-  position: absolute;
-  top: 48px;
-  right: 20px;
-  z-index: 10;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: rgba(0,0,0,.55);
-  border: 1px solid rgba(255,255,255,.14);
-  color: var(--text-dim);
-  font-size: 18px;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
+  position: absolute; top: 12px; right: 12px; z-index: 10;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: rgba(0,0,0,.6); border: 1px solid rgba(255,255,255,.14);
+  color: rgba(255,255,255,.6); font-size: 14px;
+  display: grid; place-items: center; cursor: pointer;
   transition: color .15s, background .15s;
 }
-.cert-close:active { background: rgba(255,255,255,.1); color: var(--text); }
+.cert-close:active { background: rgba(255,255,255,.12); color: var(--text); }
 
-/* Scrollable body */
+/* Scrollable area */
 .cert-scroll {
-  flex: 1;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding: 14px 18px 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex: 1; overflow-y: auto; overscroll-behavior: contain;
+  padding: 14px 18px 36px;
+  display: flex; flex-direction: column; gap: 10px;
 }
 
-/* Watermark text */
 .cert-watermark {
-  text-align: center;
-  font-size: 9px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: rgba(244,197,107,.4);
-  margin-bottom: 2px;
+  text-align: center; font-size: 9px; letter-spacing: 2.5px;
+  text-transform: uppercase; color: rgba(244,197,107,.35);
 }
 
-/* Name + rarity row */
+/* Name + rarity */
 .cert-name-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 8px;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 8px;
 }
 .cert-name {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 1.1;
-  background: linear-gradient(120deg, #fff, #ffe5b3 60%, var(--gold));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  margin: 0; font-size: 22px; font-weight: 900; line-height: 1.1;
+  background: linear-gradient(118deg, #fff 0%, #ffe8c0 55%, var(--gold) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .cert-rarity-pill {
-  flex-shrink: 0;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 999px;
-  border: 1px solid currentColor;
-  margin-top: 3px;
+  flex-shrink: 0; font-size: 10px; font-weight: 800; letter-spacing: .5px;
+  text-transform: uppercase; padding: 4px 10px; border-radius: 999px;
+  border: 1px solid currentColor; margin-top: 4px;
   background: rgba(255,255,255,.04);
 }
-.cert-rarity-pill.r-common  { color: var(--rarity-common); }
-.cert-rarity-pill.r-rare    { color: var(--azure); }
-.cert-rarity-pill.r-epic    { color: var(--violet); }
-.cert-rarity-pill.r-legend  { color: var(--gold); }
-.cert-rarity-pill.r-mythic  { color: var(--crimson); }
+.cert-rarity-pill.r-common { color: rgba(154,166,196,.85); }
+.cert-rarity-pill.r-rare   { color: var(--azure); }
+.cert-rarity-pill.r-epic   { color: var(--violet); }
+.cert-rarity-pill.r-legend { color: var(--gold); }
+.cert-rarity-pill.r-mythic { color: var(--crimson); }
 
-.cert-role {
-  font-size: 13px;
-  color: var(--text-dim);
-  font-style: italic;
-}
+.cert-role { font-size: 13px; color: rgba(255,255,255,.48); font-style: italic; }
 
-/* Tags row */
-.cert-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
+/* Tags */
+.cert-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .cert-tag {
-  font-size: 10px;
-  padding: 3px 9px;
-  border-radius: 999px;
-  font-weight: 600;
+  font-size: 10px; padding: 3px 9px; border-radius: 999px; font-weight: 600;
 }
-.cert-tag.era    { background: rgba(255,255,255,.06); border: 1px solid var(--border); color: var(--muted); }
-.cert-tag.season { background: rgba(244,197,107,.1); border: 1px solid var(--border-gold); color: var(--gold); }
-.cert-tag.side-light { background: rgba(83,215,156,.1); border: 1px solid rgba(83,215,156,.3); color: var(--jade); }
-.cert-tag.side-dark  { background: rgba(255,82,103,.1); border: 1px solid rgba(255,82,103,.3); color: var(--crimson); }
+.cert-tag.era        { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); color: var(--muted); }
+.cert-tag.season     { background: rgba(244,197,107,.1);  border: 1px solid rgba(244,197,107,.3); color: var(--gold); }
+.cert-tag.side-light { background: rgba(83,215,156,.1);   border: 1px solid rgba(83,215,156,.3);  color: var(--jade); }
+.cert-tag.side-dark  { background: rgba(255,82,103,.1);   border: 1px solid rgba(255,82,103,.3);  color: var(--crimson); }
 
-/* Lore */
-.cert-lore {
-  margin: 0;
-  font-size: 13px;
-  color: var(--text-dim);
-  line-height: 1.65;
-  padding: 12px 14px;
-  border-radius: 12px;
-  background: rgba(255,255,255,.03);
-  border: 1px solid var(--border);
+/* Divider */
+.cert-divider {
+  height: 1px; border: none; margin: 2px 0;
+  background: linear-gradient(90deg, transparent, rgba(244,197,107,.2), transparent);
+}
+
+/* Quick lore excerpt */
+.cert-lore-excerpt {
+  margin: 0; font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.65;
+  padding: 12px 14px; border-radius: 12px;
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.07);
   font-style: italic;
+  position: relative; overflow: hidden;
+}
+.cert-lore-excerpt::before {
+  content: '"'; position: absolute; top: 4px; left: 10px;
+  font-size: 32px; color: rgba(244,197,107,.15); font-style: normal;
+  line-height: 1; pointer-events: none;
 }
 
-/* Bonus */
-.cert-bonus {
-  padding: 10px 14px;
+/* =========================================================
+   ACCORDION
+   ========================================================= */
+
+.cert-accordion { display: flex; flex-direction: column; gap: 4px; }
+
+.cert-acc-item {
   border-radius: 12px;
-  background: rgba(83,215,156,.07);
-  border: 1px solid rgba(83,215,156,.22);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--jade);
-  letter-spacing: .2px;
+  border: 1px solid rgba(255,255,255,.07);
+  background: rgba(255,255,255,.03);
+  overflow: hidden;
 }
-.cert-bonus::before {
-  content: '⬡ Bonus · ';
-  color: rgba(83,215,156,.6);
-  font-weight: 600;
+.cert-acc-trigger {
+  width: 100%; text-align: left; padding: 11px 14px;
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12px; font-weight: 700; color: rgba(255,255,255,.5);
+  letter-spacing: .3px; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  background: transparent; border: none;
+  transition: color .15s;
 }
+.cert-acc-trigger:active { color: var(--text); }
+.cert-acc-arrow {
+  font-size: 10px; color: rgba(255,255,255,.3);
+  transition: transform .24s ease; margin-left: 8px; flex-shrink: 0;
+}
+.cert-acc-item.open .cert-acc-arrow  { transform: rotate(90deg); color: var(--gold); }
+.cert-acc-item.open .cert-acc-trigger { color: var(--gold); }
 
-/* NFT badge */
+.cert-acc-body { max-height: 0; overflow: hidden; transition: max-height .32s ease; }
+.cert-acc-item.open .cert-acc-body { max-height: 500px; }
+
+.cert-acc-content { padding: 0 14px 14px; }
+.cert-acc-content p {
+  font-size: 12.5px; color: rgba(255,255,255,.48); line-height: 1.65;
+  margin: 0 0 4px; font-style: italic;
+  animation: accordion-open .25s ease;
+}
+.cert-acc-content .faction-val {
+  font-size: 13px; font-weight: 700; color: var(--gold); margin-bottom: 3px;
+}
+.cert-acc-content .faction-sub {
+  font-size: 11.5px; color: rgba(255,255,255,.42); font-style: italic;
+}
+.cert-acc-content ul {
+  margin: 0; padding-left: 14px;
+  font-size: 12px; color: rgba(255,255,255,.42); line-height: 1.8;
+  animation: accordion-open .25s ease;
+}
+.cert-acc-content li strong { color: var(--jade); font-weight: 700; }
+.cert-acc-content .story-entry {
+  font-size: 12px; color: rgba(255,255,255,.42);
+  padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,.05);
+  line-height: 1.5;
+}
+.cert-acc-content .story-entry:last-child { border-bottom: 0; }
+
+/* =========================================================
+   NFT BADGE & METADATA
+   ========================================================= */
+
 .cert-nft-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border-radius: 12px;
-  background: rgba(140,109,255,.08);
-  border: 1px solid rgba(140,109,255,.25);
-  font-size: 12px;
-  color: #cdbcff;
-  font-weight: 600;
-  letter-spacing: .2px;
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px; border-radius: 12px; font-size: 12px; font-weight: 600;
 }
-.cert-nft-badge .nft-ico {
-  font-size: 16px;
-  color: var(--violet);
+.cert-nft-badge.nft-ready {
+  background: rgba(83,215,156,.08); border: 1px solid rgba(83,215,156,.25); color: var(--jade);
+}
+.cert-nft-badge.nft-pending {
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); color: rgba(255,255,255,.4);
+}
+.cert-nft-badge .nft-ico { font-size: 14px; flex-shrink: 0; }
+
+.cert-meta-section { display: flex; flex-direction: column; gap: 4px; }
+
+.cert-meta-row {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 11px; padding: 7px 12px; border-radius: 8px;
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.05);
+}
+.cmr-key {
+  min-width: 82px; font-size: 9.5px; font-weight: 700; letter-spacing: .4px;
+  text-transform: uppercase; color: rgba(255,255,255,.3); flex-shrink: 0;
+}
+.cmr-val { color: rgba(255,255,255,.55); font-size: 11px; }
+.cmr-val.mono {
+  font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  font-size: 10px; color: rgba(255,255,255,.4); word-break: break-all;
+}
+.cmr-val.gold-val  { color: var(--gold); font-weight: 700; }
+.cmr-val.jade-val  { color: var(--jade); font-weight: 700; }
+.cmr-val.azure-val { color: var(--azure); }
+
+/* Discovered date */
+.cert-discovered {
+  text-align: center; font-size: 10px; letter-spacing: .8px;
+  color: rgba(244,197,107,.38); padding: 2px 0;
 }
 
-/* Footer meta */
-.cert-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding: 8px 0 4px;
-  border-top: 1px solid var(--border);
-  font-size: 10px;
-  color: var(--muted-2);
-  letter-spacing: .2px;
+/* =========================================================
+   FULLSCREEN IMAGE OVERLAY
+   ========================================================= */
+
+.img-fullscreen {
+  position: fixed; inset: 0; z-index: 400;
+  background: rgba(0,0,0,.96);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s ease;
 }
-.cert-footer code {
-  font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
-  color: var(--muted);
-  font-size: 10px;
+.img-fullscreen.open { opacity: 1; pointer-events: auto; }
+.img-fullscreen img {
+  max-width: 94vw; max-height: 88vh;
+  object-fit: contain; border-radius: 10px;
+  box-shadow: 0 0 60px rgba(0,0,0,.8);
 }
+.img-fullscreen-close {
+  position: absolute; top: env(safe-area-inset-top, 20px); right: 20px;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+  color: rgba(255,255,255,.8); font-size: 18px;
+  display: grid; place-items: center; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.img-fullscreen-close:active { background: rgba(255,255,255,.2); }

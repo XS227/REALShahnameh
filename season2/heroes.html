@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Collection</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605130010" />
-  <link rel="stylesheet" href="heroes.css?v=202605130010" />
+  <link rel="stylesheet" href="style.css?v=202605130020" />
+  <link rel="stylesheet" href="heroes.css?v=202605130020" />
 </head>
 <body>
   <main class="app heroes-app">
@@ -48,12 +48,30 @@
         <div class="css-lbl">Locked</div>
       </div>
       <div class="css-cell">
-        <div class="css-val">14.7%</div>
-        <div class="css-lbl">Complete</div>
+        <div class="css-val">1</div>
+        <div class="css-lbl">Chapters</div>
       </div>
       <div class="css-cell">
         <div class="css-val gold">Rare</div>
         <div class="css-lbl">Avg Rarity</div>
+      </div>
+    </div>
+
+    <!-- ── Progress section (filled by heroes.js) ────── -->
+    <div class="coll-progress-section" id="coll-progress">
+      <div class="coll-progress-head">
+        <span class="coll-ph-left"><strong>10</strong> of 69 discovered</span>
+        <span class="coll-ph-right">Ch.1 complete · 14%</span>
+      </div>
+      <div class="coll-progress-track">
+        <div class="coll-progress-fill" style="width:14%;"></div>
+      </div>
+      <div class="coll-rarity-breakdown">
+        <div class="crb-item r-common">Common&nbsp;<span class="crb-count">1</span></div>
+        <div class="crb-item r-rare">Rare&nbsp;<span class="crb-count">5</span></div>
+        <div class="crb-item r-epic">Epic&nbsp;<span class="crb-count">3</span></div>
+        <div class="crb-item r-legend">Legend&nbsp;<span class="crb-count">1</span></div>
+        <div class="crb-item r-mythic">Mythic&nbsp;<span class="crb-count">0</span></div>
       </div>
     </div>
 
@@ -102,9 +120,15 @@
     </div>
   </div>
 
+  <!-- ── Fullscreen image overlay ─────────────────── -->
+  <div id="img-fullscreen" class="img-fullscreen" role="dialog" aria-label="Fullscreen image">
+    <img id="img-fullscreen-img" alt="">
+    <button id="img-fullscreen-close" class="img-fullscreen-close" aria-label="Close">✕</button>
+  </div>
+
   <div class="toast" data-toast></div>
 
-  <script src="app.js?v=202605130010"></script>
-  <script src="heroes.js?v=202605130010"></script>
+  <script src="app.js?v=202605130020"></script>
+  <script src="heroes.js?v=202605130020"></script>
 </body>
 </html>
