@@ -261,6 +261,65 @@
 
       /* Intro page */
       intro_enter: "Enter Season 2",
+
+      /* Chapter page — static chrome */
+      back_to_journey: "← Journey",
+      watch_intro: "Watch Intro ▷",
+      ch_timeline: "Timeline",
+      ch_read_chronicle: "Read the Chronicle",
+      ch_characters: "Characters",
+      ch_places: "Places",
+      ch_codex: "Codex",
+      ch_final_encounter: "Final Encounter",
+      ch_chronicle_quiz: "Chronicle Quiz",
+      image_coming_soon: "Image coming soon",
+      scene_prev: "‹ Prev",
+      scene_next: "Next ›",
+      unlocked_label: "Unlocked",
+
+      /* Chapter page — dynamic strings */
+      ch_loading: "Loading…",
+      ch_season2_chapter: "Season 2 · Chapter",
+      ch_final_encounter_fallback: "Final encounter",
+      ch_no_timeline: "No timeline yet.",
+      ch_no_lore: "This chapter has no lore data uploaded yet.",
+      ch_unlock_by_scenes: "Unlock by reading scenes",
+      ch_unlock_related_scene: "Unlock by reading the related scene.",
+      ch_codex_one_entry: "+1 codex entry unlocked",
+      ch_codex_n_entries: "+{n} codex entries unlocked",
+      ch_scene_completed: "Scene completed",
+      ch_next_scene: "Next scene",
+      ch_close: "Close",
+
+      /* Battle requirements */
+      req_player_gate: "Player gate",
+      req_recruit: "Recruit",
+      req_item: "Item",
+      req_knowledge: "Knowledge",
+      req_goal: "Goal",
+      boss_sent_by: "Sent by",
+      boss_ahriman_lord: "Ahriman — Lord of the Dark",
+      battle_challenge_tpl: "Challenge {boss} — Coming next update",
+      battle_locked: "Locked — complete all requirements",
+      battle_combat_next_update: "Combat arrives in the next update.",
+
+      /* Quiz */
+      quiz_question_of: "Question {i} of {n}",
+      quiz_no_published: "No quiz published for this chapter yet.",
+      quiz_chapter_mastered: "Chapter Quiz Mastered",
+      quiz_complete_line: "{n} of {n} answered correctly. Khazura watches from the forest.",
+      quiz_xp_earned: "+{xp} XP earned",
+      quiz_real_earned: "+{n} REAL earned",
+      quiz_real_earned_suffix: "REAL earned",
+      quiz_return_journey: "Return to Journey →",
+      quiz_replay: "Replay quiz",
+      quiz_correct_default: "Correct.",
+      difficulty_easy: "EASY",
+      difficulty_medium: "MEDIUM",
+      difficulty_hard: "HARD",
+
+      /* Document title */
+      doc_title_chapter_tpl: "REAL Shahnameh — {title}",
     },
 
     /* ── PERSIAN / فارسی ──────────────────────────────── */
@@ -498,17 +557,82 @@
 
       /* Intro page */
       intro_enter: "ورود به فصل دوم",
+
+      /* Chapter page — static chrome */
+      back_to_journey: "→ مسیر",
+      watch_intro: "تماشای آغاز ▷",
+      ch_timeline: "زمان‌نگار",
+      ch_read_chronicle: "خواندنِ تاریخ",
+      ch_characters: "شخصیت‌ها",
+      ch_places: "مکان‌ها",
+      ch_codex: "کدکس",
+      ch_final_encounter: "نبرد پایانی",
+      ch_chronicle_quiz: "آزمون تاریخ",
+      image_coming_soon: "تصویر به‌زودی",
+      scene_prev: "قبلی ›",
+      scene_next: "‹ بعدی",
+      unlocked_label: "باز شد",
+
+      /* Chapter page — dynamic strings */
+      ch_loading: "در حال بارگذاری…",
+      ch_season2_chapter: "فصل دوم · باب",
+      ch_final_encounter_fallback: "نبرد پایانی",
+      ch_no_timeline: "هنوز زمان‌نگاری منتشر نشده.",
+      ch_no_lore: "هنوز داده‌ای برای این فصل بارگذاری نشده.",
+      ch_unlock_by_scenes: "با خواندن صحنه‌ها باز می‌شود",
+      ch_unlock_related_scene: "با خواندن صحنه‌ی مربوط باز می‌شود.",
+      ch_codex_one_entry: "+۱ ورودی کدکس باز شد",
+      ch_codex_n_entries: "+{n} ورودی کدکس باز شد",
+      ch_scene_completed: "صحنه تکمیل شد",
+      ch_next_scene: "صحنه‌ی بعدی",
+      ch_close: "بستن",
+
+      /* Battle requirements */
+      req_player_gate: "محدودیتِ بازیکن",
+      req_recruit: "همراه",
+      req_item: "کالا",
+      req_knowledge: "دانش",
+      req_goal: "هدف",
+      boss_sent_by: "فرستاده‌ی",
+      boss_ahriman_lord: "اهریمن — خداوندِ تاریکی",
+      battle_challenge_tpl: "چالش با {boss} — در بروزرسانی بعد",
+      battle_locked: "قفل — همه‌ی شرایط را کامل کن",
+      battle_combat_next_update: "نبرد در بروزرسانی بعدی فعال می‌شود.",
+
+      /* Quiz */
+      quiz_question_of: "پرسش {i} از {n}",
+      quiz_no_published: "هنوز آزمونی برای این فصل منتشر نشده.",
+      quiz_chapter_mastered: "تسلط بر آزمون فصل",
+      quiz_complete_line: "{n} از {n} پاسخ درست. خزورا از جنگل می‌نگرد.",
+      quiz_xp_earned: "+{xp} تجربه دریافت شد",
+      quiz_real_earned: "+{n} REAL دریافت شد",
+      quiz_real_earned_suffix: "REAL دریافت شد",
+      quiz_return_journey: "بازگشت به مسیر →",
+      quiz_replay: "پخش دوباره",
+      quiz_correct_default: "درست.",
+      difficulty_easy: "آسان",
+      difficulty_medium: "متوسط",
+      difficulty_hard: "دشوار",
+
+      /* Document title */
+      doc_title_chapter_tpl: "ریل شاهنامه — {title}",
     }
   };
 
   /* =========================================================
      PUBLIC API
      ========================================================= */
-  const t = (key) => {
+  const t = (key, vars) => {
     const lang = getLang();
-    return (STRINGS[lang] && STRINGS[lang][key])
+    let s = (STRINGS[lang] && STRINGS[lang][key])
       || (STRINGS.en && STRINGS.en[key])
       || key;
+    if (vars && typeof s === "string") {
+      s = s.replace(/\{(\w+)\}/g, (m, k) =>
+        Object.prototype.hasOwnProperty.call(vars, k) ? String(vars[k]) : m);
+      if (lang === "fa") s = toPersianDigits(s);
+    }
+    return s;
   };
 
   /* =========================================================
