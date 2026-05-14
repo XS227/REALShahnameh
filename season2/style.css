@@ -2130,6 +2130,7 @@ html[lang="tg"] body {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 .sp-row.sp-row-lang {
+  display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
