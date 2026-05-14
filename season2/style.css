@@ -2050,3 +2050,33 @@ html[dir="rtl"] .sp-reset { text-align: right; }
   padding: 12px 14px;
   border-top: 1px solid rgba(255, 255, 255, .06);
 }
+
+/* ==========================================================================
+   Locale-aware typography
+   - English (lang=en): Inter / system stack (set on body in the default rule).
+   - Persian (lang=fa): Vazirmatn / Persian-capable stack — handled by the
+     existing html[dir="rtl"] rule above.
+   - Tajik  (lang=tg): Cyrillic LTR. Rely on Inter, Roboto, and the OS system
+     Cyrillic font (Segoe UI / SF Pro / Noto Sans Cyrillic). All modern
+     mobile fonts include the extended Tajik Cyrillic letters (ӣ ӯ ҳ ҷ қ ғ).
+   ========================================================================== */
+html[lang="tg"] body {
+  font-family: "Inter", "Roboto", "Segoe UI", -apple-system, BlinkMacSystemFont,
+               "Helvetica Neue", "Noto Sans", "Noto Sans Tajik", sans-serif;
+  /* feature-settings: enable contextual alternates so Cyrillic ligatures look right */
+  font-feature-settings: "kern", "calt";
+}
+
+/* Onboarding language grid: with 3 options, lay them out responsively.
+   Previous 2-option layout already works; 3 cards just wrap on narrow screens. */
+.ob-grid.ob-grid-lang {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+.sp-row.sp-row-lang {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.sp-row.sp-row-lang .sp-pick {
+  flex: 1 1 calc(33.333% - 8px);
+  min-width: 96px;
+}

@@ -152,293 +152,14 @@
      i18n dictionary (EN + FA) + path titles
      =========================================================== */
 
+  // Translations live in season2/i18n/{en,fa,tg}.js (registered on
+  // window.RealI18NLocales). This adapter keeps the legacy I18N[lang][key]
+  // call shape so existing app.js code below does not need to change.
   const I18N = {
-    en: {
-      // nav
-      play: "Play", heroes: "Heroes", learn: "Learn", earn: "Earn", social: "Social",
-
-      // titles
-      play_title: "REAL Shahnameh",
-      learn_title: "Shahnameh Journey",
-      learn_sub: "Read · Quiz · Reward · Unlock the next age.",
-      heroes_title: "Heroes Collection",
-      heroes_sub: "Each hero grants a passive that bends the game.",
-      earn_title: "Earn REAL",
-      earn_sub: "Bring your tribe. Earn forever.",
-      social_title: "Social Hub",
-      social_sub: "Compete, ally, climb the chronicle together.",
-
-      // top bar / labels
-      vip: "VIP",
-      season2: "Season 2",
-      level: "LVL",
-      balance: "Balance",
-      profit_hr: "Profit / hr",
-      energy: "Energy",
-      auto_claim: "REAL · auto-claim",
-      today_delta: "+1,240 today",
-
-      // play actions
-      boost: "Boost",
-      boost_copy: "Multiply tap power 3× for 30 minutes. Stacks with combo critical.",
-      activate: "Activate",
-      invite: "Invite",
-      invite_copy: "Bring allies. Earn 10% of their REAL forever + chest drops.",
-      share_link_btn: "Share Link",
-
-      // play stats
-      your_edge: "Your edge",
-      compare: "Compare ›",
-      daily_streak: "Daily streak",
-      combo: "Combo",
-      referral_real: "Referral REAL",
-      xp_to_level: "XP to LVL 18",
-      streak_days: "12 days",
-
-      // learn
-      chronicle: "Chronicle",
-      chronological: "Chronological",
-      chronicle_progress: "Chronicle progress",
-      chapters_done: "2 of 12 chapters complete",
-      story_xp_boost: "+50% Story XP",
-      hero_fragments: "Hero fragments",
-      boost_drops: "Boost drops",
-
-      // heroes
-      collection_count: "7 / 24",
-      forge_title: "Hero Forge",
-      forge_copy: "Fuse fragments into rare and legendary heroes.",
-      forge_btn: "Forge",
-      all: "All", people: "People", creatures: "Creatures", places: "Places",
-      set_bonus: "Set bonus · Lions of Pars",
-      set_bonus_value: "+8% tap power",
-      set_collect_msg: "Collect 5 more legendaries to unlock",
-      mythic_frame: "Mythic frame",
-      upgrade: "Upgrade",
-      locked: "Locked",
-
-      // earn
-      viral: "VIRAL",
-      your_invite_link: "Your invite link",
-      share_to_telegram: "Share to Telegram",
-      copy_link: "Copy Link",
-      lifetime_10: "+10% lifetime",
-      season_pts_20: "+20% Season pts",
-      chest_drops: "Chest drops",
-      team_multiplier: "Team multiplier",
-      active_referrals: "Active referrals",
-      milestones: "Milestones",
-      tap_to_share: "Tap to share",
-      real_utility: "REAL Utility",
-      airdrop_score: "Airdrop score",
-      airdrop_eligible: "Eligibility ascending",
-      team_rewards: "Team rewards",
-      view_contest: "View Contest",
-
-      // social
-      live: "LIVE",
-      guild_wars: "Guild Wars · Week 3",
-      guild_wars_sub: "Lions of Pars · #12 → push to top 10 for bonus REAL.",
-      enter_event: "Enter",
-      top_earners: "Top Earners",
-      top_learners: "Top Learners",
-      top_referrers: "Top Referrers",
-      guilds: "Guilds",
-      all_guilds: "All guilds ›",
-      activity: "Activity",
-      events: "Events",
-      joined: "Joined", apply: "Apply", full: "Full",
-
-      // path titles
-      warrior_of_pars: "⚔ Warrior of Pars",
-      heroine_of_pars: "♛ Heroine of Pars",
-      kingname_hero: "King Setai",
-      kingname_heroine: "Queen Setai",
-
-      // onboarding
-      onboarding_welcome: "Welcome to Season 2",
-      onboarding_brand: "REAL Shahnameh",
-      onboarding_lang_title: "Choose your language",
-      onboarding_lang_sub: "You can change this anytime in settings.",
-      onboarding_path_title: "Choose your path",
-      onboarding_path_sub: "Your path shapes your title and future quests.",
-      hero: "Hero",
-      heroine: "Heroine",
-      hero_sub: "Walk the path of warriors.",
-      heroine_sub: "Walk the path of queens and legends.",
-      cont: "Continue",
-      back: "Back",
-      begin: "Begin Season 2",
-      english: "English",
-      persian: "فارسی",
-
-      // settings
-      settings: "Settings",
-      language: "Language",
-      path: "Path",
-      demo: "Demo",
-      toggle_s1_demo: "Toggle Season 1 player",
-      s1_demo_on: "Season 1: ON",
-      s1_demo_off: "Season 1: OFF",
-      reset_onboarding: "Reset onboarding",
-      reset_onboarding_sub: "Choose language and path again.",
-      close: "Close",
-      saved: "Saved",
-      reset_done: "Onboarding reset",
-
-      // Season 1 bonus
-      season1_card_title: "Season 1 — Thank you, Founder",
-      season1_card_eligible_sub: "You stood with us when the chronicle began. Claim your founder reward.",
-      season1_card_ineligible_sub: "Season 1 bonus is reserved for early warriors.",
-      season1_card_claimed_sub: "Founder rewards are already in your vault. Wear the frame with pride.",
-      claim_bonus: "Claim Bonus",
-      claimed: "Claimed ✓",
-      claimed_tag: "Claimed",
-      not_eligible: "Reserved",
-      og_founder_badge: "🏆 OG Founder",
-      founder_chest: "🎁 Founder Chest",
-      starter_real: "🪙 +500 REAL",
-      early_supporter_mult: "✦ +5% multiplier",
-      season1_frame: "🖼 Season 1 Frame",
-      bonus_claimed_toast: "Founder rewards claimed!"
-    },
-    fa: {
-      play: "بازی", heroes: "قهرمانان", learn: "یادگیری", earn: "درآمد", social: "اجتماعی",
-
-      play_title: "ریل شاهنامه",
-      learn_title: "سفر شاهنامه",
-      learn_sub: "بخوان · پاسخ بده · جایزه بگیر · فصل بعد را باز کن.",
-      heroes_title: "مجموعه قهرمانان",
-      heroes_sub: "هر قهرمان توانی پنهان به بازی می‌بخشد.",
-      earn_title: "کسب REAL",
-      earn_sub: "قبیله‌ات را بیاور. تا ابد درآمد بگیر.",
-      social_title: "مرکز اجتماعی",
-      social_sub: "رقابت، اتحاد، صعود در شاهنامه — همه با هم.",
-
-      vip: "ویژه",
-      season2: "فصل دوم",
-      level: "سطح",
-      balance: "موجودی",
-      profit_hr: "درآمد ساعتی",
-      energy: "انرژی",
-      auto_claim: "REAL · دریافت خودکار",
-      today_delta: "+۱٬۲۴۰ امروز",
-
-      boost: "تقویت",
-      boost_copy: "قدرت ضربه را ۳ برابر کن، برای ۳۰ دقیقه. با ترکیب بحرانی هم‌افزا می‌شود.",
-      activate: "فعال‌سازی",
-      invite: "دعوت",
-      invite_copy: "هم‌رزمان را بیاور. ۱۰٪ از REAL آن‌ها را تا ابد بگیر و صندوقچه دریافت کن.",
-      share_link_btn: "اشتراک لینک",
-
-      your_edge: "برتری شما",
-      compare: "مقایسه ›",
-      daily_streak: "زنجیره روزانه",
-      combo: "ترکیب",
-      referral_real: "REAL از معرفی",
-      xp_to_level: "XP تا سطح ۱۸",
-      streak_days: "۱۲ روز",
-
-      chronicle: "شرح وقایع",
-      chronological: "ترتیب تاریخی",
-      chronicle_progress: "پیشرفت شاهنامه",
-      chapters_done: "۲ از ۱۲ فصل کامل شد",
-      story_xp_boost: "+۵۰٪ XP داستانی",
-      hero_fragments: "قطعات قهرمان",
-      boost_drops: "دریافت تقویتی",
-
-      collection_count: "۷ / ۲۴",
-      forge_title: "آهنگری قهرمان",
-      forge_copy: "قطعات را در آهنگری به قهرمانان نایاب و افسانه‌ای تبدیل کن.",
-      forge_btn: "آهنگری",
-      all: "همه", people: "اشخاص", creatures: "موجودات", places: "مکان‌ها",
-      set_bonus: "پاداش گروه · شیران پارس",
-      set_bonus_value: "+۸٪ قدرت ضربه",
-      set_collect_msg: "۵ افسانه‌ای دیگر جمع کن تا باز شود",
-      mythic_frame: "قاب اساطیری",
-      upgrade: "ارتقا",
-      locked: "قفل",
-
-      viral: "وایرال",
-      your_invite_link: "لینک دعوت شما",
-      share_to_telegram: "اشتراک در تلگرام",
-      copy_link: "کپی لینک",
-      lifetime_10: "+۱۰٪ مادام‌العمر",
-      season_pts_20: "+۲۰٪ امتیاز فصل",
-      chest_drops: "صندوقچه‌ها",
-      team_multiplier: "ضریب تیمی",
-      active_referrals: "معرفی‌های فعال",
-      milestones: "نقاط عطف",
-      tap_to_share: "برای اشتراک‌گذاری بزن",
-      real_utility: "کاربردهای REAL",
-      airdrop_score: "امتیاز ایردراپ",
-      airdrop_eligible: "واجد شرایط در حال صعود",
-      team_rewards: "پاداش تیمی",
-      view_contest: "مشاهده مسابقه",
-
-      live: "زنده",
-      guild_wars: "جنگ اتحادیه‌ها · هفته ۳",
-      guild_wars_sub: "شیران پارس · #۱۲ → به جمع ۱۰ تای برتر برس و REAL پاداش بگیر.",
-      enter_event: "ورود",
-      top_earners: "برترین درآمدزایان",
-      top_learners: "برترین دانش‌آموختگان",
-      top_referrers: "برترین معرفان",
-      guilds: "اتحادیه‌ها",
-      all_guilds: "همه اتحادیه‌ها ›",
-      activity: "فعالیت",
-      events: "رویدادها",
-      joined: "عضو شدی", apply: "درخواست", full: "تکمیل",
-
-      warrior_of_pars: "⚔ قهرمان پارس",
-      heroine_of_pars: "♛ قهرمان‌بانو پارس",
-      kingname_hero: "شاه ستائی",
-      kingname_heroine: "ملکه ستائی",
-
-      onboarding_welcome: "به فصل دوم خوش آمدید",
-      onboarding_brand: "ریل شاهنامه",
-      onboarding_lang_title: "زبان خود را انتخاب کنید",
-      onboarding_lang_sub: "این انتخاب را هرگاه بخواهی از تنظیمات تغییر بده.",
-      onboarding_path_title: "مسیر خود را انتخاب کنید",
-      onboarding_path_sub: "مسیر تو عنوان و ماجراهای آینده‌ات را شکل می‌دهد.",
-      hero: "قهرمان",
-      heroine: "قهرمان‌بانو",
-      hero_sub: "گام در راه جنگاوران بگذار.",
-      heroine_sub: "گام در راه ملکه‌ها و افسانه‌ها بگذار.",
-      cont: "ادامه",
-      back: "بازگشت",
-      begin: "آغاز فصل دوم",
-      english: "English",
-      persian: "فارسی",
-
-      settings: "تنظیمات",
-      language: "زبان",
-      path: "مسیر",
-      demo: "نمایش",
-      toggle_s1_demo: "تغییر وضعیت بازیکن فصل ۱",
-      s1_demo_on: "فصل ۱: روشن",
-      s1_demo_off: "فصل ۱: خاموش",
-      reset_onboarding: "بازنشانی شروع",
-      reset_onboarding_sub: "زبان و مسیر را دوباره انتخاب کن.",
-      close: "بستن",
-      saved: "ذخیره شد",
-      reset_done: "بازنشانی انجام شد",
-
-      season1_card_title: "فصل ۱ — سپاس، ای بنیان‌گذار",
-      season1_card_eligible_sub: "از روز نخست کنار ما بودی. پاداش بنیان‌گذاری‌ات را دریافت کن.",
-      season1_card_ineligible_sub: "پاداش فصل ۱ برای دلاوران نخستین محفوظ است.",
-      season1_card_claimed_sub: "پاداش‌های بنیان‌گذار در خزانه‌ات قرار گرفت. قاب فصل ۱ را با افتخار بپوش.",
-      claim_bonus: "دریافت پاداش",
-      claimed: "دریافت شد ✓",
-      claimed_tag: "دریافت‌شده",
-      not_eligible: "محفوظ",
-      og_founder_badge: "🏆 بنیان‌گذار اصیل",
-      founder_chest: "🎁 صندوقچه بنیان‌گذار",
-      starter_real: "🪙 +۵۰۰ REAL",
-      early_supporter_mult: "✦ +۵٪ ضریب اولیه",
-      season1_frame: "🖼 قاب فصل ۱",
-      bonus_claimed_toast: "پاداش بنیان‌گذار دریافت شد!"
-    }
-  };
+    get en() { return (window.RealI18NLocales && window.RealI18NLocales.en) || {}; },
+    get fa() { return (window.RealI18NLocales && window.RealI18NLocales.fa) || {}; },
+    get tg() { return (window.RealI18NLocales && window.RealI18NLocales.tg) || {}; },
+  }
 
   const LS = {
     LANG: "real_lang",
@@ -591,8 +312,10 @@
         username: tgUser.username || tgUser.first_name || null
       });
       // Honor Telegram's UI language hint when the user hasn't picked one yet.
-      if (!Storage.read(LS.LANG) && tgUser.language_code === "fa") {
-        Player.set({ language: "fa" });
+      // Telegram uses "fa" for Persian and "tg" for Tajik (per ISO 639-1).
+      if (!Storage.read(LS.LANG)) {
+        if (tgUser.language_code === "fa") Player.set({ language: "fa" });
+        else if (tgUser.language_code === "tg") Player.set({ language: "tg" });
       }
     }
   } catch (err) {
@@ -601,7 +324,7 @@
 
   const getLang = () => {
     const l = Storage.read(LS.LANG);
-    return (l === "fa" || l === "en") ? l : null;
+    return (l === "fa" || l === "en" || l === "tg") ? l : null;
   };
   const getPath = () => {
     const p = Storage.read(LS.PATH);
@@ -614,8 +337,9 @@
 
   const applyLang = (lang) => {
     const html = document.documentElement;
-    html.setAttribute("lang", lang === "fa" ? "fa" : "en");
-    html.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
+    // Persian is RTL; Tajik is Cyrillic LTR; English is LTR.
+    html.setAttribute("lang", lang === "fa" ? "fa" : (lang === "tg" ? "tg" : "en"));
+    html.setAttribute("dir",  lang === "fa" ? "rtl" : "ltr");
 
     // text content
     $$("[data-i18n]").forEach((el) => {
@@ -674,7 +398,7 @@
         <div class="ob-step" data-step="1">
           <h2 class="ob-h" data-ob-title>Choose your language</h2>
           <p class="ob-sub" data-ob-sub>You can change this anytime in settings.</p>
-          <div class="ob-grid">
+          <div class="ob-grid ob-grid-lang">
             <button class="ob-card" data-pick-lang="en">
               <span class="ob-flag">🇬🇧</span>
               <span class="ob-card-title">English</span>
@@ -682,8 +406,13 @@
             </button>
             <button class="ob-card" data-pick-lang="fa">
               <span class="ob-flag">🇮🇷</span>
-              <span class="ob-card-title">فارسی</span>
-              <span class="ob-card-sub">ادامه به فارسی</span>
+              <span class="ob-card-title" lang="fa" dir="rtl">فارسی</span>
+              <span class="ob-card-sub" lang="fa" dir="rtl">ادامه به فارسی</span>
+            </button>
+            <button class="ob-card" data-pick-lang="tg">
+              <span class="ob-flag">🇹🇯</span>
+              <span class="ob-card-title">Тоҷикӣ</span>
+              <span class="ob-card-sub">Идома бо забони тоҷикӣ</span>
             </button>
           </div>
         </div>
@@ -796,9 +525,10 @@
         <h3 data-sp-title>Settings</h3>
         <div class="sp-section">
           <div class="sp-label" data-sp-lang-label>Language</div>
-          <div class="sp-row">
+          <div class="sp-row sp-row-lang">
             <button class="sp-pick" data-set-lang="en">English</button>
-            <button class="sp-pick" data-set-lang="fa">فارسی</button>
+            <button class="sp-pick" data-set-lang="fa" lang="fa" dir="rtl">فارسی</button>
+            <button class="sp-pick" data-set-lang="tg">Тоҷикӣ</button>
           </div>
         </div>
         <div class="sp-section">
