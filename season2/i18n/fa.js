@@ -580,5 +580,43 @@
       char_pick_title: "آیکون ضربه را انتخاب کنید",
       current_tap_icon: "آیکون فعلی:",
 
+      /* Learn page */
+      coming_soon: "به زودی",
+      unlocks_when_ready: "زمانی که محتوا آماده شود باز می‌شود",
+      open_level: "باز کردن سطح ›",
+      learn_level_tpl: "سطح {level} · {title}",
+      learn_stories_done_tpl: "{done} از {total} داستان تکمیل شد",
+      learn_no_chapters: "هیچ فصلی بارگذاری نشد.",
+      learn_no_content: "فصل‌ها بارگذاری نشدند.",
+
+      /* Home page */
+      pill_available: "در دسترس",
+      pill_day_tpl: "روز {n}",
+      home_no_heroes: "هنوز قهرمانی بارگذاری نشده.",
+      home_no_chapters: "هنوز فصلی بارگذاری نشده.",
+
+      /* Heroes — collection / certificate */
+      type_artifact: "مصنوع",
+      coll_no_items: "هنوز موردی در این دسته وجود ندارد.",
+      coll_locked_chapters: "فصل‌های ۲ تا ۵۰",
+      coll_locked_count: "۵۵ مورد دیگر قفل است · فصل‌های جدید را کامل کنید تا کشف کنید",
+      coll_discovered_tpl: "{n} از {total} کشف شد",
+      coll_ch1_complete_tpl: "فصل ۱ کامل · {pct}٪",
+      locked_hint_ch_tpl: "در فصل {n} باز می‌شود",
+      cert_id_lbl: "شناسه",
+      cert_season_ch_lbl: "فصل / بخش",
+      cert_unlock_lbl: "شرط باز شدن",
+      cert_ton_std_lbl: "استاندارد TON",
+      cert_artwork_lbl: "نسخه‌ی هنری",
+      cert_mint_lbl: "ضرب",
+      cert_zoom_hint: "⊕ ضربه بزنید برای بزرگنمایی",
+
+      /* Activity feed */
+      feed_setai_ch4_html: "<b>SETai</b> فصل ۴ — جمشید را تکمیل کرد",
+      feed_rostamx_invite_html: "<b>RostamX</b> پنج جنگنده‌ی جدید دعوت کرد",
+      feed_darius_lvl_html: "<b>King Darius</b> به سطح ۱۲ رسید",
+      feed_atena_upgrade_html: "<b>Atena</b> رستم را به سطح ۱۳ ارتقا داد",
+      feed_guild_top10_html: "گیلد <b>FireSimorgh</b> به ۱۰ نفر برتر رسید",
+
   };
 })();

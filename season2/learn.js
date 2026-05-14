@@ -13,6 +13,10 @@
   const host = $("[data-chapter-map]");
   if (!host) return;
 
+  const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  const locF = (obj, field) => (window.RealI18N && window.RealI18N.locField)
+    ? window.RealI18N.locField(obj, field) : (obj && obj[field] != null ? obj[field] : "");
+
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (m) => (
     { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[m]
   ));
@@ -23,7 +27,7 @@
 
   const render = (chapters, totalChapters) => {
     if (!Array.isArray(chapters) || chapters.length === 0) {
-      host.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">No chapters loaded.</div>`;
+      host.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">${t("learn_no_chapters")}</div>`;
       return;
     }
 
@@ -33,7 +37,7 @@
     const doneEl = $("[data-chapters-done]");
     const pctEl  = $("[data-chapters-pct]");
     const fillEl = $("[data-chapters-fill]");
-    if (doneEl) doneEl.textContent = `${doneCount} of ${total} stories completed`;
+    if (doneEl) doneEl.textContent = t("learn_stories_done_tpl", { done: doneCount, total });
     if (pctEl)  pctEl.textContent  = `${pct}%`;
     if (fillEl) fillEl.style.width = `${Math.max(2, pct)}%`;
 
@@ -47,17 +51,13 @@
       const href  = ready ? `chapter.html?slug=${encodeURIComponent(c.slug)}` : null;
 
       if (!ready) {
-        // Content-gated card — no story preview, no rewards. Just a clear
-        // "coming soon" signal so the user knows the level exists but isn't
-        // playable yet.
         return `
           <article class="card chapter locked" data-chapter="${esc(level)}" data-slug="${esc(c.slug)}">
             <span class="node">${esc(level)}</span>
-            <h4>Level ${esc(level)} · ${esc(c.title)}</h4>
-            ${c.title_fa ? `<p class="copy" lang="fa" dir="rtl" style="opacity:.7;">${esc(c.title_fa)}</p>` : ""}
+            <h4>${esc(t("learn_level_tpl", { level, title: locF(c, "title") }))}</h4>
             <div class="meta">
-              <span class="chip">Coming soon</span>
-              <span class="reward" style="color:var(--muted);">Unlocks when content is ready</span>
+              <span class="chip">${t("coming_soon")}</span>
+              <span class="reward" style="color:var(--muted);">${t("unlocks_when_ready")}</span>
             </div>
           </article>`;
       }
@@ -70,10 +70,10 @@
 
       const inner = `
         <span class="node">${done ? "✓" : esc(level)}</span>
-        <h4>Level ${esc(level)} · ${esc(c.title)}</h4>
-        ${c.summary ? `<p class="copy">${esc(c.summary)}</p>` : ""}
+        <h4>${esc(t("learn_level_tpl", { level, title: locF(c, "title") }))}</h4>
+        ${locF(c, "summary") ? `<p class="copy">${esc(locF(c, "summary"))}</p>` : ""}
         <div class="meta">
-          <span class="chip ${done ? "lush" : "warm"}">${done ? "Completed" : "Open level ›"}</span>
+          <span class="chip ${done ? "lush" : "warm"}">${done ? t("chapter_completed") : t("open_level")}</span>
           ${rewardLine}
         </div>`;
 
@@ -90,7 +90,7 @@
     if (!payload) payload = await tryFetch("/season2/data/chapters.json");
     if (!payload) payload = await tryFetch("data/chapters.json");
     if (!payload) {
-      host.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">Couldn't load chapters.</div>`;
+      host.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">${t("learn_no_content")}</div>`;
       return;
     }
     render(payload.chapters || [], payload.totalChapters || 50);

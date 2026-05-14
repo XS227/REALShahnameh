@@ -175,9 +175,28 @@
     get tg()  { return (LOCALES().tg) || {}; },
   };
 
+  /* pickLocalized(val) — val may be a plain string OR an {en,fa,tg} object.
+     Returns the value for the current language, falling back to en, then "". */
+  const pickLocalized = (val) => {
+    if (!val || typeof val !== "object" || Array.isArray(val)) return String(val == null ? "" : val);
+    const lang = getLang();
+    return val[lang] != null ? val[lang] : (val.en != null ? val.en : "");
+  };
+
+  /* locField(obj, field) — returns obj[field_lang] if lang≠en and exists,
+     else obj[field].  Works for string and array fields alike. */
+  const locField = (obj, field) => {
+    const lang = getLang();
+    if (lang !== "en") {
+      const lk = field + "_" + lang;
+      if (obj[lk] != null) return obj[lk];
+    }
+    return obj[field] != null ? obj[field] : "";
+  };
+
   window.RealI18N = {
     t, formatNumber, formatPercent, toPersianDigits,
-    getLang, applyLocale,
+    getLang, applyLocale, pickLocalized, locField,
     SUPPORTED,
     STRINGS: stringsAccessor,
   };

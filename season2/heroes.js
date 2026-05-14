@@ -5,6 +5,10 @@
 (() => {
   "use strict";
 
+  const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  const locF = (obj, field) => (window.RealI18N && window.RealI18N.locField)
+    ? window.RealI18N.locField(obj, field) : (obj && obj[field] != null ? obj[field] : "");
+
   /* =========================================================
      COLLECTION DATA — Chapter 1 (10 items)
      ========================================================= */
@@ -29,6 +33,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-001",
       season: 2,
       unlockCondition: "Complete Chapter 1 · The First King",
+      role_fa: "اولین شاه · دربار کوهستان",
+      lore_fa: "اولین پادشاه میرا که تاج برگ بر سر نهاد و از کوه‌های مقدس فرمان راند؛ به بشریت آشپزی، بافتن جامه و زندگی در نظم به جای توحش آموخت.",
+      biography_fa: "کیومرث از دل کوه‌های مقدس در آغاز زمان زاده شد و اولین کسی بود که بر جهان فانی ادعای شاهی کرد. دربار خود را بر دامنه‌های دماوند بنا نهاد و اولین هنرهای تمدن را آموخت — پوشاک، آشپزی، آیین و قانون. فرمانروایی او الگوی الهی برای همه‌ی پادشاهان آینده‌ی پارس بود، و فرّ او اولین نور در عصر بشریت درخشید.",
+      faction_fa: "دودمان اول · دربار کوهستان · خط پیشدادیان",
+      mythologyRole_fa: "پادشاه نخستین که جهان الهی و فانی را به هم پیوست؛ اولین حامل فرّ",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · اولین شاه",
+      powers_fa: ["+۵٪ قدرت ضربه", "+۸٪ تجربه داستان", "غیرفعال: هاله‌ی فرّ — جریمه‌ی خطا در آزمون −۸٪"],
+      storyAppearances_fa: ["فصل ۱: اولین شاه — دربار کوهستان", "آزمون فصل ۱: عصر کیومرث"],
+      role_tg: "Шоҳи Аввал · Дарбори Кӯҳ",
+      lore_tg: "Аввалин шоҳи мирое ки тоҷи барг бар сар ниҳод ва аз кӯҳҳои муқаддас ҳукмронӣ кард; ба башарият пухтупаз, дӯхтани ҷома ва зиндагии мунтазамро омӯхт.",
+      biography_tg: "Каюмарс аз кӯҳҳои муқаддас дар аввали замон таваллуд шуд ва аввалин касе буд ки бар ҷаҳони фонӣ даъвои шоҳӣ кард. Дарбори худро дар доманаи Дамованд бино кард ва аввалин санъатҳои тамаддунро омӯхт — либос, пухтупаз, маросим ва қонун. Ҳукмронии ӯ намунаи илоҳӣ барои ҳамаи шоҳони оянда буд, ва Фарри ӯ аввалин нур дар асри башарият буд.",
+      faction_tg: "Сулолаи Аввал · Дарбори Кӯҳ · Насли Пешдодиён",
+      mythologyRole_tg: "Шоҳи ибтидоӣ ки ҷаҳони илоҳӣ ва фониро пайваст; аввалин соҳиби Фарр",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Шоҳи Аввал",
+      powers_tg: ["+5% Қудрати зарба", "+8% Таҷрибаи ҳикоя", "Ғайрифаъол: Ҳалааи Фарр — ҷарима барои хато дар имтиҳон −8%"],
+      storyAppearances_tg: ["Боби 1: Шоҳи Аввал — Дарбори Кӯҳ", "Имтиҳони Боби 1: Асри Каюмарс"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -51,6 +71,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-002",
       season: 2,
       unlockCondition: "Complete Chapter 1 · The First King",
+      role_fa: "شاهزاده‌ی کوهستان · قهرمان شهید",
+      lore_fa: "پسر کیومرث، اولین شاهزاده‌ی این دوران. سیامک در نبرد با خادمان اهریمن کشته شد و شهیدی شد که مرگ او اولین اراده‌ی بشریت را در برابر تاریکی پدید آورد.",
+      biography_fa: "پسر و وارث برگزیده‌ی کیومرث. مرگ سیامک به دست دیو سیاه اهریمن، اولین تراژدی بزرگ جهان بود — لحظه‌ای که بشریت فانی بودن را درک کرد و بهای واقعی مقابله‌ی روشنایی با تاریکی را دانست. قربانی او هوشنگ را برانگیخت تا از او انتقام بگیرد و از طریق این انتقام، شعله‌ی تمدن زنده ماند.",
+      faction_fa: "دودمان اول · دربار کوهستان · خط پیشدادیان",
+      mythologyRole_fa: "اولین شهید بشری؛ نماد نجابتی که برای بقای تمدن قربانی شد",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · اولین شاه",
+      powers_fa: ["+۳٪ تجربه آزمون", "+۲ REAL/ساعت", "غیرفعال: خاطره‌ی شهید — پاداش XP صحنه‌ی داستانی"],
+      storyAppearances_fa: ["فصل ۱: اولین شاه — سقوط سیامک", "فصل ۱: توطئه‌ی اهریمن"],
+      role_tg: "Шоҳзодаи Кӯҳ · Қаҳрамони Шаҳид",
+      lore_tg: "Писари Каюмарс, аввалин шоҳзодаи ин давр. Сиёмак дар набард бо хидматгузорони Аҳриман кушта шуд ва шаҳид шуд, ки марги ӯ аввалин азми башариятро дар муқобили торикӣ шакл дод.",
+      biography_tg: "Писар ва вориси баргузидаи Каюмарс. Марги Сиёмак ба дасти Диви Сиёҳи Аҳриман аввалин фоҷиаи бузурги ҷаҳон буд — лаҳзае ки башарият фановариро дарк кард ва нархи воқеии муқобилаи рӯшноӣ бо торикиро фаҳмид. Фидокории ӯ Ҳушангро барангехт ки интиқом гирад ва аз тариқи ин интиқом шӯълаи тамаддун зинда монд.",
+      faction_tg: "Сулолаи Аввал · Дарбори Кӯҳ · Насли Пешдодиён",
+      mythologyRole_tg: "Аввалин шаҳиди инсонӣ; рамзи нажодате ки барои бақои тамаддун қурбон шуд",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Шоҳи Аввал",
+      powers_tg: ["+3% Таҷрибаи имтиҳон", "+2 REAL/соат", "Ғайрифаъол: Хотираи Шаҳид — XP ҷоизавии саҳнаи ҳикоя"],
+      storyAppearances_tg: ["Боби 1: Шоҳи Аввал — Суқути Сиёмак", "Боби 1: Нақшаи Аҳриман"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -73,6 +109,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-003",
       season: 2,
       unlockCondition: "Complete Chapter 1 · The First King",
+      role_fa: "آتش‌افروز · نوه‌ی کیومرث",
+      lore_fa: "هوشنگ از سیامک انتقام گرفت و تاریکی را پس زد. آتش را هنگام زدن سنگ چخماق به هم کشف کرد، اولین کانون گرما را افروخت و به بشریت گرما، آهنگری و جشن بخشید.",
+      biography_fa: "نوه‌ی کیومرث و منتقم سیامک، هوشنگ دومین پادشاه بزرگ جهان شد. آنجا که کیومرث نظم برقرار کرد، هوشنگ ابزار پیشرفت مادی به بشریت داد. وقتی مار سیاهی را که تعقیب می‌کرد از روی سنگ‌ها گریخت — چخماق جرقه زد و آتش روشن شد. آتش را مقدس به اهورامزدا اعلام کرد، اولین ابزارهای آهنی را ساخت، جانوران بزرگ شکار کرد و اولین کانال‌های آبیاری را احداث کرد.",
+      faction_fa: "دودمان اول · خط پیشدادیان · پادشاهان متمدن‌ساز",
+      mythologyRole_fa: "پادشاه متمدن‌ساز؛ کاشف آتش؛ بنیانگذار آهنگری، شکار و آبیاری",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · اولین شاه",
+      powers_fa: ["+۶٪ قدرت ضربه", "+۴ REAL/ساعت", "غیرفعال: آتش‌افروز — احتمال ضربه‌ی بحرانی +۳٪"],
+      storyAppearances_fa: ["فصل ۱: اولین شاه — عصر هوشنگ", "پاداش فصل ۱: کشف آتش"],
+      role_tg: "Оташафрӯз · Набераи Каюмарс",
+      lore_tg: "Ҳушанг аз Сиёмак интиқом гирифт ва торикиро ба ақиб ронд. Оташро ҳангоми задани чақмоқ ба санг кашф кард, аввалин оташдонро афрӯхт ва ба башарият гармӣ, оҳангарӣ ва зиёфат бахшид.",
+      biography_tg: "Набераи Каюмарс ва мунтақими Сиёмак, Ҳушанг дуввумин шоҳи бузурги ҷаҳон шуд. Дар ҷое ки Каюмарс тартиб барқарор кард, Ҳушанг абзорҳои пешрафти моддиро ба башарият дод. Вақте морсиёҳеро ки таъқиб мекард аз болои сангҳо гурехт — чақмоқ ба санг расид ва оташ афрӯхт. Оташро муқаддас ба Аҳурамазда эълон кард, аввалин абзорҳои оҳинро сохт, ҷонварони бузург шикор кард ва аввалин каналҳои обёриро бино кард.",
+      faction_tg: "Сулолаи Аввал · Насли Пешдодиён · Шоҳони Тамаддунсоз",
+      mythologyRole_tg: "Шоҳи тамаддунсоз; кашшофи оташ; асосгузори оҳангарӣ, шикор ва обёрӣ",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Шоҳи Аввал",
+      powers_tg: ["+6% Қудрати зарба", "+4 REAL/соат", "Ғайрифаъол: Оташафрӯз — эҳтимоли зарбаи критикӣ +3%"],
+      storyAppearances_tg: ["Боби 1: Шоҳи Аввал — Асри Ҳушанг", "Ҷоизаи Боби 1: Кашфи Оташ"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -95,6 +147,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-004",
       season: 2,
       unlockCondition: "Defeat Ahriman · Chapter 1 Boss",
+      role_fa: "ارباب تاریکی · رئیس فصل ۱",
+      lore_fa: "دشمن ابدی. اهریمن دیو سیاه خود را فرستاد تا سیامک را بکشد، به این امید که اولین شعله‌ی تمدن را قبل از گسترش خاموش کند. توطئه‌های او کهن، صبور و بی‌امان است.",
+      biography_fa: "اصل تاریکی ابدی در کیهان‌شناسی زرتشتی، اهریمن نه صرفاً یک پادشاه دشمن، بلکه تجسم ویرانگری، هرج و مرج و دروغ (دروج) است. از طریق عوامل خود — دیوان، جادوگران، پادشاهان فاسد — کار می‌کند نه اینکه مستقیم ظاهر شود. صبر او زمین‌شناختی، بدخواهی‌اش کامل است. رویارویی در فصل ۱ تنها اولین سایه‌ای است که بر جهان می‌افتد.",
+      faction_fa: "نیروهای تاریکی · دربار اهریمن · قلمرو دروج",
+      mythologyRole_fa: "دشمن کیهانی؛ تجسم دروغ؛ مخالفت ابدی با نظم اهورامزدا",
+      unlockCondition_fa: "اهریمن را شکست دهید · رئیس فصل ۱",
+      powers_fa: ["+۸٪ مدت کمبو", "ریسک: +۱۵٪ هزینه‌ی انرژی", "غیرفعال: هاله‌ی تاریکی — کریت نادر ×۲ اما متغیر"],
+      storyAppearances_fa: ["فصل ۱: توطئه‌ی اهریمن", "رویارویی با رئیس فصل ۱: ارباب تاریکی"],
+      role_tg: "Арбоби Торикӣ · Рейси Боби 1",
+      lore_tg: "Душмани абадӣ. Аҳриман Диви Сиёҳи худро фиристод то Сиёмакро бикушад, ба умеди хомӯш кардани аввалин шӯълаи тамаддун пеш аз густаш. Нақшаҳои ӯ қадимӣ, сабурона ва беамон аст.",
+      biography_tg: "Принсипи торикии абадӣ дар космологияи зардуштӣ, Аҳриман на танҳо шоҳи душман, балки таҷассуми вайронкорӣ, ҳарҷ ва мерҷ ва Дурӯғ (Друҷ) аст. Тавассути агентҳо — девҳо, ҷодугарон, шоҳони фосид — кор мекунад на бевосита намоён мешавад. Сабурии ӯ заминшинохтӣ, бадхоҳии ӯ комил аст. Мулоқот дар Боби 1 танҳо аввалин сояи ӯ аст, ки бар ҷаҳон меафтад.",
+      faction_tg: "Нирӯҳои Торикӣ · Дарбори Аҳриман · Қаламрави Друҷ",
+      mythologyRole_tg: "Антагонисти космикӣ; таҷассуми Дурӯғ; мухолифати абадӣ ба тартиби Аҳурамазда",
+      unlockCondition_tg: "Аҳриманро мағлуб кунед · Рейси Боби 1",
+      powers_tg: ["+8% Давомнокии комбо", "Хатар: +15% Хароҷоти энергия", "Ғайрифаъол: Ҳалааи Торикӣ — критити нодир ×2 аммо тағйирёбанда"],
+      storyAppearances_tg: ["Боби 1: Нақшаи Аҳриман", "Рӯёрӯии Рейс Боби 1: Арбоби Торикӣ"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -117,6 +185,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-005",
       season: 2,
       unlockCondition: "Complete Chapter 1 · The First King",
+      role_fa: "خادم تاریک · دیو اهریمن",
+      lore_fa: "دیو قدرتمندی که اهریمن برای کشتن سیامک فرستاد. دیو سیاه نیروهای هرج و مرج را تجسم می‌بخشید — اما شکستش توسط هوشنگ اولین پیروزی واقعی بشریت بر تاریکی را پدید آورد.",
+      biography_fa: "یکی از ترسناک‌ترین دیوان در خدمت اهریمن. دیو سیاه برای نابودی سیامک فرستاده شد و موفق شد — اما در این کار خشم راستین هوشنگ را بیدار کرد و اولین اراده‌ی انسانی برای مقاومت در برابر تاریکی را شکل داد. وقتی هوشنگ مار سیاهی را روی زمین سنگی دنبال کرد، جرقه‌های چخماقش اولین آتش جهان را روشن کرد — نوری که از تاریک‌ترین رویارویی متولد شد.",
+      faction_fa: "نیروهای تاریکی · خادمان اهریمن · لژیون دیوان",
+      mythologyRole_fa: "کهن‌الگوی دشمن قدرتمندی که شکستش قدرت انسانی را می‌آفریند",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · اولین شاه",
+      powers_fa: ["+۴٪ احتمال ضربه‌ی بحرانی", "غیرفعال: دانش تاریک — ورودی‌های کدکس دشمن باز می‌شود"],
+      storyAppearances_fa: ["فصل ۱: سقوط سیامک", "رئیس فصل ۱: مرحله ۱ — خادم سیاه"],
+      role_tg: "Хидматгузори Торик · Деви Аҳриман",
+      lore_tg: "Деви пурқудрате ки Аҳриман барои куштани Сиёмак фиристод. Диви Сиёҳ нирӯҳои ҳарҷ ва мерҷро таҷассум мекард — аммо мағлубияташ аз ҷониби Ҳушанг аввалин пирӯзии воқеии башариятро бар торикӣ эҷод кард.",
+      biography_tg: "Яке аз тарсноктарин девҳо дар хидмати Аҳриман. Диви Сиёҳ барои нобудкардани Сиёмак фиристода шуд ва муваффақ шуд — аммо бо ин кор ғазаби одилонаи Ҳушангро бедор кард ва аввалин иродаи инсониро барои муқовимат ба торикӣ шакл дод. Вақте Ҳушанг мореро ки мепиндошт бузург аст дар замини сангин таъқиб кард, ҷарақаҳои чақмоқаш аввалин оташи ҷаҳонро афрӯхт — нуре ки аз торик-тарин мулоқот таваллуд шуд.",
+      faction_tg: "Нирӯҳои Торикӣ · Хидматгузорони Аҳриман · Легиони Девҳо",
+      mythologyRole_tg: "Архетипи душмани пурқудрат ки мағлубияташ қудрати инсониро барангезонад",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Шоҳи Аввал",
+      powers_tg: ["+4% Эҳтимоли зарбаи критикӣ", "Ғайрифаъол: Дониши Торик — вуруди кодекси душман боз мешавад"],
+      storyAppearances_tg: ["Боби 1: Суқути Сиёмак", "Рейси Боби 1: Марҳалаи 1 — Хидматгузори Сиёҳ"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -139,6 +223,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-006",
       season: 2,
       unlockCondition: "Complete Chapter 1 · The First King",
+      role_fa: "قله‌ی مقدس · تخت کیومرث",
+      lore_fa: "آتشفشان بزرگ در قلب جهان. کیومرث اولین دربار خود را بر دامنه‌هایش بنا کرد و از آن ارتفاعات تمدن بشری به بیرون تابید. دماوند بر همه‌ی دوران‌های پارس نظارت می‌کند.",
+      biography_fa: "کوه آتشفشانی بزرگ شمال پارس، دماوند هم تخت کیومرث است و هم — در فصل‌های بعدی — زندان ضحاک ستمگر. این محور جهان اساطیری پارس است، جایی که الوهیت به زمین می‌رسد. قله‌ی برف‌پوشیده‌اش از سراسر سرزمین دیده می‌شود و دامنه‌هایش مقدس به اهورامزداست. هر فصل از شاهنامه سایه‌اش را بر دماوند می‌اندازد.",
+      faction_fa: "چشم‌انداز مقدس · محور جهان · قلب پارس",
+      mythologyRole_fa: "کوه جهانی؛ تخت اولین شاه؛ بعداً زندان ستمگر؛ شاهد ابدی",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · اولین شاه",
+      powers_fa: ["+۱۲٪ احتمال افت روزانه", "+۶ REAL/ساعت", "غیرفعال: قله‌ی مقدس — پاداش XP مکان در صحنه‌های فصل ۱"],
+      storyAppearances_fa: ["فصل ۱: دربار کوهستانی کیومرث", "فصل ۱: پیروزی هوشنگ در قله"],
+      role_tg: "Қуллаи Муқаддас · Тахти Каюмарс",
+      lore_tg: "Оташфишони бузург дар қалби ҷаҳон. Каюмарс аввалин дарбори худро дар доманаҳояш бино кард ва аз он баландиҳо тамаддуни башарӣ густаш. Дамованд бар ҳамаи дурании Порс нигоҳбонӣ мекунад.",
+      biography_tg: "Кӯҳи оташфишони бузурги шимоли Порс, Дамованд ҳам тахти Каюмарс аст ва ҳам — дар бобҳои баъдӣ — зиндони тоғути Заҳҳок. Маҳвари ҷаҳони асотирии Порс аст, ҷое ки илоҳиёт ба замин мерасад. Қуллаи барфпӯшидааш аз саросари сарзамин дида мешавад ва доманаҳояш муқаддас ба Аҳурамазда аст. Ҳар бобе аз Шоҳнома сояи худро ба Дамованд меандозад.",
+      faction_tg: "Манзараи Муқаддас · Маҳвари Ҷаҳон · Дили Порс",
+      mythologyRole_tg: "Кӯҳи ҷаҳонӣ; тахти аввалин шоҳ; баъдан зиндони тоғут; шоҳиди абадӣ",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Шоҳи Аввал",
+      powers_tg: ["+12% Эҳтимоли афти рӯзона", "+6 REAL/соат", "Ғайрифаъол: Қуллаи Муқаддас — XP ҷоизавии мавзеъ дар саҳнаҳои Боби 1"],
+      storyAppearances_tg: ["Боби 1: Дарбори Кӯҳии Каюмарс", "Боби 1: Пирӯзии Ҳушанг дар Қулла"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -161,6 +261,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-007",
       season: 2,
       unlockCondition: "Complete Chapter 1 · The First King",
+      role_fa: "اولین کاخ · جایگاه تاج",
+      lore_fa: "درباری که کیومرث بر دامنه‌های دماوند بنا کرد — جایی که اولین قوانین بیان شدند، اولین مراسم برگزار شدند و اولین سرودهای ستایش سروده شدند.",
+      biography_fa: "دربار کیومرث بر فراز کوه مقدس اولین نهاد انسانی بود. از سنگ ساخته شده و با پوست جانوران وحشی پوشیده، از نظر معیارهای بعدی خام بود اما در معنایش باشکوه: اولین سازه‌ای که عمداً برای میزبانی قانون، مراسم و نظم اجتماعی برپا شده بود. هر دربار پارسی بعدی مشروعیتش را به این تالار کوهستانی برمی‌گرداند.",
+      faction_fa: "دودمان اول · تمدن کوهستانی · جایگاه فرّ",
+      mythologyRole_fa: "اولین نهاد انسانی؛ نمونه‌ی فرمانروایی راستین؛ کهن‌الگوی همه‌ی دربارهای آینده",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · اولین شاه",
+      powers_fa: ["+۶٪ تجربه داستان", "غیرفعال: خرد دربار — یک راهنمای آزمون در هر فصل"],
+      storyAppearances_fa: ["فصل ۱: دربار کوهستانی کیومرث", "فصل ۱: اولین مراسم"],
+      role_tg: "Аввалин Қаср · Нишонгоҳи Тоҷ",
+      lore_tg: "Дарборе ки Каюмарс дар доманаи Дамованд бино кард — ҷое ки аввалин қонунҳо гуфта шуданд, аввалин маросимҳо баргузор шуданд ва аввалин суруди ситоиш сароида шуд.",
+      biography_tg: "Дарбори Каюмарс дар фарози кӯҳи муқаддас аввалин муассисаи инсонӣ буд. Аз санг сохта шуда ва бо пӯсти ҳайвоноти ваҳшӣ пӯшонида шуда, аз назари меъёрҳои баъдӣ содда буд аммо дар маънояш бошукӯҳ: аввалин иморати аз рӯи ниятсозӣ барои ҷойгиркунии қонун, маросим ва тартиби иҷтимоӣ бино шуда. Ҳар дарбори баъдии Порс машрӯъияти худро аз ин тори кӯҳӣ мегирад.",
+      faction_tg: "Сулолаи Аввал · Тамаддуни Кӯҳӣ · Нишонгоҳи Фарр",
+      mythologyRole_tg: "Аввалин муассисаи инсонӣ; намунаи ҳукмронии одилона; архетипи ҳамаи дарборҳои оянда",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Шоҳи Аввал",
+      powers_tg: ["+6% Таҷрибаи ҳикоя", "Ғайрифаъол: Хиради Дарбор — як маслиҳати имтиҳон дар ҳар боб"],
+      storyAppearances_tg: ["Боби 1: Дарбори Кӯҳии Каюмарс", "Боби 1: Аввалин Маросимҳо"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -183,6 +299,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-008",
       season: 2,
       unlockCondition: "Complete Chapter 1 · The First King",
+      role_fa: "سرزمین اصلی · وطن شاهان",
+      lore_fa: "قلب اجدادی که همه‌ی پادشاهان پارس از آن فرمان الهی می‌گرفتند. کیومرث رودخانه‌ها و کوه‌هایش را قبل از شاهیش گشت.",
+      biography_fa: "وطن اجدادی مردم پارس. قبل از شهرها، قبل از کشاورزی، قبل از آتش، سرزمین پارس باستان کوه‌های وحشی و رودهای رام‌نشده بود که اولین قبایل بر اساس فرمان الهی‌شان در آن سرگردان بودند. کیومرث این سرزمین را به عنوان شاه-چوپان قبل از صعود به دماوند گشت. فرّ این سرزمین کهن، عمیق و پایدار است.",
+      faction_fa: "چشم‌انداز مقدس · وطن پارسی · جهان باستانی",
+      mythologyRole_fa: "وطن اجدادی؛ چشمه‌ی فرّ؛ ریشه‌ی مشروعیت سلطنتی پارسی",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · اولین شاه",
+      powers_fa: ["+۴٪ نرخ استخراج خودکار", "غیرفعال: برکت وطن — REAL/ساعت +۲ در فصل ۱"],
+      storyAppearances_fa: ["فصل ۱: خاستگاه‌ها — سرزمین مردم اول", "فصل ۱: گشت‌وگذار کیومرث در سرزمین"],
+      role_tg: "Сарзамини Аслӣ · Ватани Шоҳон",
+      lore_tg: "Қалби аҷдодие ки ҳамаи шоҳони Порс фармони илоҳӣ аз он мегирифтанд. Каюмарс дарёҳо ва кӯҳҳояшро пеш аз шоҳиаш гашт.",
+      biography_tg: "Ватани аҷдодии мардуми Порс. Пеш аз шаҳрҳо, пеш аз кишоварзӣ, пеш аз оташ, сарзамини Порси қадим кӯҳҳои ваҳшӣ ва дарёҳои рамнашуда буд ки аввалин қабилаҳо мувофиқи фармони илоҳии худ дар он сарсону саргардон буданд. Каюмарс ин сарзаминро ба ҳайси шоҳ-чӯпон пеш аз боло рафтан ба Дамованд гашт. Фарри ин сарзамин қадимӣ, амиқ ва пойдор аст.",
+      faction_tg: "Манзараи Муқаддас · Ватани Порсӣ · Ҷаҳони Қадим",
+      mythologyRole_tg: "Ватани аҷдодӣ; чашмаи Фарр; решаи машрӯъияти шоҳии Порсӣ",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Шоҳи Аввал",
+      powers_tg: ["+4% Суръати истихроҷи худкор", "Ғайрифаъол: Баракати Ватан — REAL/соат +2 дар Боби 1"],
+      storyAppearances_tg: ["Боби 1: Хостгоҳҳо — Сарзамини Мардуми Аввал", "Боби 1: Гашти Каюмарс дар Сарзамин"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -205,6 +337,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-009",
       season: 2,
       unlockCondition: "Defeat Chapter 1 Boss",
+      role_fa: "قلمرو تاریک · دامنه‌ی خادمان اهریمن",
+      lore_fa: "جنگل‌های سایه‌دار که دیو سیاه در آن زندگی می‌کرد. تاریکی‌اش اولین دشمنی بود که بشریت با آن روبرو شد — و در مواجهه با آن، هوشنگ جرقه‌ای یافت که آتش شد.",
+      biography_fa: "جنگل تاریک اولیه در لبه‌ی جهان شناخته‌شده، جایی که دیوان اهریمن فراتر از دسترس بشری می‌زیستند. اینجا بود که دیو سیاه به سیامک کمین زد. وقتی هوشنگ آنچه فکر می‌کرد مار بزرگی است را به داخل این جنگل تعقیب کرد و چخماق را به سنگش زد، آتش در تاریک‌ترین لبه‌ی جهان متولد شد — نوری که از محل عمیق‌ترین سایه برخاست.",
+      faction_fa: "نیروهای تاریکی · قلمرو اهریمن · مناطق مرزی",
+      mythologyRole_fa: "فضای آستانه‌ای که روشنایی و تاریکی اول با هم برخورد می‌کنند؛ زادگاه آتش؛ آستانه‌ی تمدن",
+      unlockCondition_fa: "رئیس فصل ۱ را شکست دهید",
+      powers_fa: ["+۱۰٪ ضریب کمبو", "ریسک: هزینه‌ی انرژی افزایش می‌یابد", "غیرفعال: جنگل تاریک — پنجره‌ی کمبو در جلسات شب +۱ ثانیه"],
+      storyAppearances_fa: ["فصل ۱: سقوط سیامک", "فصل ۱: کشف آتش — لبه‌ی تاریکی"],
+      role_tg: "Қаламрави Торик · Домени Хидматгузорони Аҳриман",
+      lore_tg: "Ҷангалҳои сояафкан ки Диви Сиёҳ дар онҳо зиндагӣ мекард. Торикияш аввалин душмане буд ки башарият бо он рӯ ба рӯ шуд — ва дар рӯ ба рӯ шудан бо он, Ҳушанг ҷарақае ёфт ки оташ шуд.",
+      biography_tg: "Ҷангали торики ибтидоӣ дар лабаи ҷаҳони маълум, ки дарҷои Аҳриман фаротар аз дасти башарӣ зиндагӣ мекарданд. Инҷо буд ки Диви Сиёҳ ба Сиёмак камин зад. Вақте Ҳушанг чизеро ки мепиндошт морсиёҳ буд ба ин ҷангал таъқиб кард ва чақмоқро ба санги он зад, оташ дар торик-тарин канори ҷаҳон таваллуд шуд — нуре ки аз ҷои амиқ-тарин сояи ҷаҳон бархост.",
+      faction_tg: "Нирӯҳои Торикӣ · Қаламрави Аҳриман · Сарҳадҳо",
+      mythologyRole_tg: "Фазои остона ки рӯшноӣ ва торикӣ аввалбор бо ҳам дучор мешаванд; зодгоҳи оташ; остонаи тамаддун",
+      unlockCondition_tg: "Рейси Боби 1-ро мағлуб кунед",
+      powers_tg: ["+10% Зарбзании комбо", "Хатар: Хароҷоти энергия баланд мешавад", "Ғайрифаъол: Ҷангали Торик — тирезаи комбо дар ҷаласаҳои шаб +1с"],
+      storyAppearances_tg: ["Боби 1: Суқути Сиёмак", "Боби 1: Кашфи Оташ — Лабаи Торикӣ"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
@@ -227,6 +375,22 @@
       collectionId: "SHAHNAMEH-S2-CH1-010",
       season: 2,
       unlockCondition: "Complete Chapter 1 Quiz with 80%+ score",
+      role_fa: "مفهوم الهی · شکوه سلطنتی",
+      lore_fa: "فرّ (خوارنه) تابش الهی است که پادشاه راستین را نشان می‌دهد. نمی‌توان آن را با زور گرفت — فقط از طریق عدالت، خرد و شجاعت به دست می‌آید.",
+      biography_fa: "فرّ (یا خوارنه در اوستایی) اصل محرک شاهی مشروع پارسی است. تابش الهی است که بر فرمانروایان راستین نازل می‌شود و از ستمگران می‌رود. نه از طریق خون به ارث می‌رسد و نه با فتح گرفته می‌شود — از طرف نظم کیهانی اعطا می‌شود. وقتی کیومرث تاج برگ را بر سر نهاد، فرّ را با خود داشت. وقتی شاهان فاسد می‌شوند، فرّ به عنوان پرنده‌ای بزرگ پرواز می‌کند و دنبال ظرف شایسته‌تری می‌گردد.",
+      faction_fa: "اصل الهی · تجلی اهورامزدا · متافیزیک سلطنتی",
+      mythologyRole_fa: "مشروعیت الهی شاهی؛ تأیید کیهانی فرمانروایی عادلانه؛ نیروی محرک سنت سلطنتی پارسی",
+      unlockCondition_fa: "آزمون فصل ۱ را با نمره‌ی ۸۰٪ یا بیشتر کامل کنید",
+      powers_fa: ["+۱۰٪ قدرت ضربه", "باز شدن دانش: درخت مفهوم فرّ", "غیرفعال: تابش الهی — پاداش XP در نمرات کامل آزمون"],
+      storyAppearances_fa: ["فصل ۱ کدکس: معنای فرّ", "آزمون فصل ۱: شاهی الهی و فرّ"],
+      role_tg: "Мафҳуми Илоҳӣ · Шарофати Шоҳӣ",
+      lore_tg: "Фарр (Хваренаҳ) тобиши илоҳиест ки шоҳи растинро нишон медиҳад. Бо зӯр гирифта намешавад — танҳо аз тариқи адолат, хирад ва далерӣ ба даст меояд.",
+      biography_tg: "Фарр (ё Хваренаҳ дар авестоӣ) принсипи муҳаррики шоҳии машрӯи Порсӣ аст. Тобиши илоҳиест ки ба ҳукмронони раститнӣ нозил мешавад ва аз тоғутон мегурезад. На тавассути хун ба мерос мерасад ва на тавассути забт гирифта мешавад — аз тарафи тартиби космикӣ ато мешавад. Вақте Каюмарс тоҷи барг пӯшид, Фарр ба ӯ тааллуқ дошт. Вақте шоҳон фосид мешаванд, Фарр ба ҳайси паррандаи бузург парвоз мекунад ва дунболи зарфи шоистатаре мегардад.",
+      faction_tg: "Принсипи Илоҳӣ · Зуҳури Аҳурамазда · Метафизики Шоҳӣ",
+      mythologyRole_tg: "Машрӯъияти илоҳии шоҳӣ; тасдиқи космикии ҳукмронии одилона; нирӯи муҳаррики суннати шоҳии Порсӣ",
+      unlockCondition_tg: "Имтиҳони Боби 1-ро бо нишонаи 80%+ иҷро кунед",
+      powers_tg: ["+10% Қудрати зарба", "Кушоиши дониш: Дарахти мафҳуми Фарр", "Ғайрифаъол: Тобиши Илоҳӣ — XP ҷоизавӣ дар нишонаҳои комили имтиҳон"],
+      storyAppearances_tg: ["Кодекси Боби 1: Маъноии Фарр", "Имтиҳони Боби 1: Шоҳии Илоҳӣ ва Фарр"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     }
   ];
@@ -239,9 +403,9 @@
     { id: "locked-ch4-a", rarity: "mythic", type: "character", emoji: "❓", chapter: 4, label: "Legendary Hero",  hint: "Unlocks in Chapter 4" }
   ];
 
-  /* ---- Label maps ---- */
-  const RARITY_LABEL = { common: "Common", rare: "Rare", epic: "Epic", legend: "Legendary", mythic: "Mythic" };
-  const TYPE_LABEL   = { character: "Character", enemy: "Enemy", place: "Place", codex: "Codex", artifact: "Artifact" };
+  /* ---- Label helpers (use i18n when available) ---- */
+  const rarityLabel = (r) => t("rarity_" + (r || "common"));
+  const typeLabel   = (tp) => t("type_" + (tp || "character"));
 
   /* ---- Particle colours per rarity ---- */
   const PARTICLE_COLORS = {
@@ -341,8 +505,8 @@
     const pctEl   = section.querySelector(".coll-ph-right");
     const fillEl  = section.querySelector(".coll-progress-fill");
 
-    if (countEl) countEl.innerHTML = `<strong>${discovered}</strong> of ${total} discovered`;
-    if (pctEl)   pctEl.textContent = `Ch.1 complete · ${pct}%`;
+    if (countEl) countEl.innerHTML = t("coll_discovered_tpl", { n: `<strong>${discovered}</strong>`, total });
+    if (pctEl)   pctEl.textContent = t("coll_ch1_complete_tpl", { pct });
 
     /* Animate fill after render */
     if (fillEl) {
@@ -373,7 +537,7 @@
     if (!items.length) {
       const empty = document.createElement("p");
       empty.style.cssText = "grid-column:1/-1;text-align:center;color:var(--muted);padding:28px 0;font-size:13px;";
-      empty.textContent = "No items in this category yet.";
+      empty.textContent = t("coll_no_items");
       grid.appendChild(empty);
     } else {
       items.forEach((item) => {
@@ -390,12 +554,12 @@
         card.innerHTML = `
           <div class="coll-portrait">
             ${imgHTML}
-            <span class="coll-type-chip">${TYPE_LABEL[item.type] || item.type}</span>
+            <span class="coll-type-chip">${typeLabel(item.type)}</span>
             <span class="coll-chapter-dot">Ch${item.chapter}</span>
           </div>
           <div class="coll-info">
             <div class="coll-name">${item.name}</div>
-            <div class="coll-rarity">${RARITY_LABEL[item.rarity] || item.rarity}</div>
+            <div class="coll-rarity">${rarityLabel(item.rarity)}</div>
           </div>
         `;
 
@@ -428,11 +592,11 @@
         </div>
         <div class="coll-info-locked">
           <div class="coll-name-locked">???</div>
-          <div class="coll-hint-locked">${preview.hint}</div>
+          <div class="coll-hint-locked">${t("locked_hint_ch_tpl", { n: preview.chapter })}</div>
         </div>
       `;
 
-      card.addEventListener("click", () => showToast(`🔒 ${preview.hint}`));
+      card.addEventListener("click", () => showToast(`🔒 ${t("locked_hint_ch_tpl", { n: preview.chapter })}`));
       grid.appendChild(card);
     });
 
@@ -447,8 +611,8 @@
     row.innerHTML = `
       <div class="clc-lock">🔒</div>
       <div>
-        <div class="clc-title">Chapters 2 – 50</div>
-        <div class="clc-count">55 more items locked · Complete new chapters to discover</div>
+        <div class="clc-title">${t("coll_locked_chapters")}</div>
+        <div class="clc-count">${t("coll_locked_count")}</div>
       </div>
       <img class="clc-thumb" src="/season2/uploads/chapters/hushang.png" alt=""
         onerror="this.outerHTML='<div class=clc-thumb-fallback>🏰</div>'">
@@ -475,37 +639,38 @@
       : `<div class="cert-portrait-emoji">${item.emoji || "?"}</div>`;
 
     const sideTag = item.side === "dark"
-      ? `<span class="cert-tag side-dark">Dark Side</span>`
-      : `<span class="cert-tag side-light">Light Side</span>`;
+      ? `<span class="cert-tag side-dark">${t("side_dark")}</span>`
+      : `<span class="cert-tag side-light">${t("side_light")}</span>`;
 
     const nftClass = item.nftReady ? "nft-ready" : "nft-pending";
-    const nftText  = item.nftReady
-      ? "◆ NFT Ready · Claim on TON"
-      : "◈ NFT Pending · Will mint on TON after TGE";
+    const nftText  = t(item.nftReady ? "cert_nft_ready_txt" : "cert_nft_pending_txt");
 
     const discoveredLine = discoveredDate
-      ? `<div class="cert-discovered">Discovered ${discoveredDate} · Season ${item.season}</div>`
+      ? `<div class="cert-discovered">${t("cert_discovered_prefix")} ${discoveredDate} · Season ${item.season}</div>`
       : "";
+
+    const powers = locF(item, "powers") || item.powers;
+    const appearances = locF(item, "storyAppearances") || item.storyAppearances;
 
     /* Build accordion sections */
     const accordionItems = [
       {
-        label: "📖 Biography",
-        content: `<p>${item.biography}</p>`
+        label: t("cert_biography"),
+        content: `<p>${locF(item, "biography")}</p>`
       },
       {
-        label: "⚔ Faction &amp; Role",
+        label: t("cert_faction_role"),
         content: `
-          <div class="faction-val">${item.faction}</div>
-          <div class="faction-sub">${item.mythologyRole}</div>`
+          <div class="faction-val">${locF(item, "faction")}</div>
+          <div class="faction-sub">${locF(item, "mythologyRole")}</div>`
       },
       {
-        label: "⬡ Powers &amp; Bonuses",
-        content: `<ul>${item.powers.map((p) => `<li><strong>${p}</strong></li>`).join("")}</ul>`
+        label: t("cert_powers"),
+        content: `<ul>${(Array.isArray(powers) ? powers : []).map((p) => `<li><strong>${p}</strong></li>`).join("")}</ul>`
       },
       {
-        label: "📜 Story Appearances",
-        content: item.storyAppearances.map((s) => `<div class="story-entry">${s}</div>`).join("")
+        label: t("cert_story"),
+        content: (Array.isArray(appearances) ? appearances : []).map((s) => `<div class="story-entry">${s}</div>`).join("")
       }
     ];
 
@@ -526,20 +691,20 @@
 
       <div class="cert-portrait-panel" data-fullscreen-src="${item.img || ""}" data-fullscreen-alt="${item.name}">
         ${portraitInner}
-        <span class="cert-zoom-hint">⊕ Tap to expand</span>
-        <span class="cert-type-badge t-${item.type}">${TYPE_LABEL[item.type] || item.type}</span>
+        <span class="cert-zoom-hint">${t("cert_zoom_hint")}</span>
+        <span class="cert-type-badge t-${item.type}">${typeLabel(item.type)}</span>
         <button class="cert-close" id="cert-close-btn" aria-label="Close">✕</button>
       </div>
 
       <div class="cert-scroll">
-        <div class="cert-watermark">◆ Certificate of Discovery · REAL Shahnameh</div>
+        <div class="cert-watermark">${t("cert_watermark")}</div>
 
         <div class="cert-name-row">
           <h2 class="cert-name">${item.name}</h2>
-          <span class="cert-rarity-pill r-${item.rarity}">${RARITY_LABEL[item.rarity] || item.rarity}</span>
+          <span class="cert-rarity-pill r-${item.rarity}">${rarityLabel(item.rarity)}</span>
         </div>
 
-        <div class="cert-role">${item.role}</div>
+        <div class="cert-role">${locF(item, "role")}</div>
 
         <div class="cert-tags">
           <span class="cert-tag era">Season ${item.season} · Ch.${item.chapter}</span>
@@ -547,7 +712,7 @@
           ${sideTag}
         </div>
 
-        <p class="cert-lore-excerpt">${item.lore}</p>
+        <p class="cert-lore-excerpt">${locF(item, "lore")}</p>
 
         <div class="cert-accordion">${accordionHTML}</div>
 
@@ -559,32 +724,32 @@
 
         <div class="cert-meta-section">
           <div class="cert-meta-row">
-            <span class="cmr-key">ID</span>
+            <span class="cmr-key">${t("cert_id_lbl")}</span>
             <span class="cmr-val mono">${item.collectionId}</span>
           </div>
           <div class="cert-meta-row">
-            <span class="cmr-key">Rarity</span>
-            <span class="cmr-val gold-val">${RARITY_LABEL[item.rarity]}</span>
+            <span class="cmr-key">${t("cert_col_rarity")}</span>
+            <span class="cmr-val gold-val">${rarityLabel(item.rarity)}</span>
           </div>
           <div class="cert-meta-row">
-            <span class="cmr-key">Season / Ch.</span>
+            <span class="cmr-key">${t("cert_season_ch_lbl")}</span>
             <span class="cmr-val">Season ${item.season} · Chapter ${item.chapter}</span>
           </div>
           <div class="cert-meta-row">
-            <span class="cmr-key">Unlock</span>
-            <span class="cmr-val">${item.unlockCondition}</span>
+            <span class="cmr-key">${t("cert_unlock_lbl")}</span>
+            <span class="cmr-val">${locF(item, "unlockCondition")}</span>
           </div>
           <div class="cert-meta-row">
-            <span class="cmr-key">TON Std</span>
+            <span class="cmr-key">${t("cert_ton_std_lbl")}</span>
             <span class="cmr-val mono">${item.tonMetadata.standard}</span>
           </div>
           <div class="cert-meta-row">
-            <span class="cmr-key">Artwork</span>
+            <span class="cmr-key">${t("cert_artwork_lbl")}</span>
             <span class="cmr-val">v${item.tonMetadata.artworkVersion}</span>
           </div>
           <div class="cert-meta-row">
-            <span class="cmr-key">Mint</span>
-            <span class="cmr-val">${item.tonMetadata.mintStatus === "pending" ? "Pending after TGE" : "Minted"}</span>
+            <span class="cmr-key">${t("cert_mint_lbl")}</span>
+            <span class="cmr-val">${item.tonMetadata.mintStatus === "pending" ? t("cert_mint_pending") : t("cert_mint_done")}</span>
           </div>
         </div>
 

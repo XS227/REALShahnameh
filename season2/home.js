@@ -10,10 +10,22 @@
   const heroHost    = $("[data-home-heroes]");
   const chapterHost = $("[data-home-chapters]");
 
+  const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  const locF = (obj, field) => (window.RealI18N && window.RealI18N.locField)
+    ? window.RealI18N.locField(obj, field) : (obj && obj[field] != null ? obj[field] : "");
+
   const escapeHtml = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, m => (
     { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[m]
   ));
   const escapeAttr = (s) => escapeHtml(s);
+
+  /* Map rarity value (which may be "Legendary" or "legend") to a t() key */
+  const rarityLabel = (r) => {
+    const x = String(r || "").toLowerCase();
+    const key = x === "legendary" ? "rarity_legend" : "rarity_" + x;
+    const label = t(key);
+    return label !== key ? label : r;
+  };
 
   const rarityClass = (r) => {
     const x = String(r || "").toLowerCase();
@@ -60,7 +72,7 @@
   const renderHeroes = (heroes) => {
     if (!heroHost) return;
     if (!Array.isArray(heroes) || heroes.length === 0) {
-      heroHost.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">No heroes loaded yet.</div>`;
+      heroHost.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">${t("home_no_heroes")}</div>`;
       return;
     }
     // Top 8 by power (or active first).
@@ -74,7 +86,7 @@
         <div class="portrait">${heroPortraitHtml(h)}</div>
         <div class="info">
           <div class="name">${escapeHtml(h.name)}</div>
-          <div class="rarity">${escapeHtml(h.rarity || "")}</div>
+          <div class="rarity">${escapeHtml(rarityLabel(h.rarity))}</div>
         </div>
       </a>`).join("");
   };
@@ -82,21 +94,21 @@
   const renderChapters = (chapters, totalDays) => {
     if (!chapterHost) return;
     if (!Array.isArray(chapters) || chapters.length === 0) {
-      chapterHost.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">No chapters loaded yet.</div>`;
+      chapterHost.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">${t("home_no_chapters")}</div>`;
       return;
     }
     chapterHost.innerHTML = chapters.slice(0, 8).map(c => {
       const cls = c.status === "completed" ? "done"
                 : c.status === "available" || c.status === "published" ? ""
                 : "locked";
-      const pillLabel = cls === "done" ? "Completed"
-                      : cls === "locked" ? `Day ${c.unlock_day || "?"}`
-                      : "Available";
+      const pillLabel = cls === "done" ? t("chapter_completed")
+                      : cls === "locked" ? t("pill_day_tpl", { n: c.unlock_day || "?" })
+                      : t("pill_available");
       return `
       <a class="chapter-mini ${cls}" href="learn.html#${escapeAttr(c.slug || c.id)}">
         <div class="banner">${chapterBannerHtml(c)}</div>
         <div class="info">
-          <div class="title">${escapeHtml(c.title)}</div>
+          <div class="title">${escapeHtml(locF(c, "title"))}</div>
           <div class="meta">
             <span class="pill-mini">${escapeHtml(pillLabel)}</span>
             ${c.rewards && c.rewards.real ? `<span class="pill-mini" style="background:rgba(74,216,166,.12); color:var(--jade,#4ad8a6); border-color:rgba(74,216,166,.3);">+${c.rewards.real} REAL</span>` : ""}

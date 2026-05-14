@@ -579,5 +579,43 @@
       char_pick_title: "Акси зарбаро интихоб кунед",
       current_tap_icon: "Акси ҷории:",
 
+      /* Learn page */
+      coming_soon: "Ба зудӣ",
+      unlocks_when_ready: "Ҳангоме ки мундариҷа омода шавад кушода мешавад",
+      open_level: "Кушодани сатҳ ›",
+      learn_level_tpl: "Сатҳ {level} · {title}",
+      learn_stories_done_tpl: "{done} аз {total} ҳикоя анҷом ёфт",
+      learn_no_chapters: "Ягон боб бор нашуд.",
+      learn_no_content: "Бобҳо бор нашуданд.",
+
+      /* Home page */
+      pill_available: "Дастрас",
+      pill_day_tpl: "Рӯзи {n}",
+      home_no_heroes: "Ҳанӯз қаҳрамоне бор нашудааст.",
+      home_no_chapters: "Ҳанӯз бобе бор нашудааст.",
+
+      /* Heroes — collection / certificate */
+      type_artifact: "Ашё",
+      coll_no_items: "Дар ин категория ҳанӯз мавзуъе вуҷуд надорад.",
+      coll_locked_chapters: "Бобҳои 2 – 50",
+      coll_locked_count: "55 мавзӯи дигар қулф аст · Бобҳои нав иҷро кунед",
+      coll_discovered_tpl: "{n} аз {total} кашф шуд",
+      coll_ch1_complete_tpl: "Боби 1 иҷро шуд · {pct}%",
+      locked_hint_ch_tpl: "Дар Боби {n} кушода мешавад",
+      cert_id_lbl: "ID",
+      cert_season_ch_lbl: "Мавсим / Боб",
+      cert_unlock_lbl: "Шарти кушодан",
+      cert_ton_std_lbl: "Меъёри TON",
+      cert_artwork_lbl: "Нусхаи санъат",
+      cert_mint_lbl: "Зарб",
+      cert_zoom_hint: "⊕ Барои калон кардан зарба занед",
+
+      /* Activity feed */
+      feed_setai_ch4_html: "<b>SETai</b> Боби 4 — Ҷамшидро иҷро кард",
+      feed_rostamx_invite_html: "<b>RostamX</b> 5 ҷангии нав даъват кард",
+      feed_darius_lvl_html: "<b>King Darius</b> ба сатҳи 12 расид",
+      feed_atena_upgrade_html: "<b>Atena</b> Ростамро ба сатҳи 13 баланд бардошт",
+      feed_guild_top10_html: "Гилди <b>FireSimorgh</b> ба дасаки аввал расид",
+
   };
 })();

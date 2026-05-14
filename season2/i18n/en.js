@@ -581,5 +581,43 @@
       char_pick_title: "Choose Your Tap Icon",
       current_tap_icon: "Current icon:",
 
+      /* Learn page */
+      coming_soon: "Coming soon",
+      unlocks_when_ready: "Unlocks when content is ready",
+      open_level: "Open level ›",
+      learn_level_tpl: "Level {level} · {title}",
+      learn_stories_done_tpl: "{done} of {total} stories completed",
+      learn_no_chapters: "No chapters loaded.",
+      learn_no_content: "Couldn't load chapters.",
+
+      /* Home page */
+      pill_available: "Available",
+      pill_day_tpl: "Day {n}",
+      home_no_heroes: "No heroes loaded yet.",
+      home_no_chapters: "No chapters loaded yet.",
+
+      /* Heroes — collection / certificate */
+      type_artifact: "Artifact",
+      coll_no_items: "No items in this category yet.",
+      coll_locked_chapters: "Chapters 2 – 50",
+      coll_locked_count: "55 more items locked · Complete new chapters to discover",
+      coll_discovered_tpl: "{n} of {total} discovered",
+      coll_ch1_complete_tpl: "Ch.1 complete · {pct}%",
+      locked_hint_ch_tpl: "Unlocks in Chapter {n}",
+      cert_id_lbl: "ID",
+      cert_season_ch_lbl: "Season / Ch.",
+      cert_unlock_lbl: "Unlock",
+      cert_ton_std_lbl: "TON Std",
+      cert_artwork_lbl: "Artwork",
+      cert_mint_lbl: "Mint",
+      cert_zoom_hint: "⊕ Tap to expand",
+
+      /* Activity feed */
+      feed_setai_ch4_html: "<b>SETai</b> completed Chapter 4 — Jamshid",
+      feed_rostamx_invite_html: "<b>RostamX</b> invited 5 new warriors",
+      feed_darius_lvl_html: "<b>King Darius</b> reached LVL 12",
+      feed_atena_upgrade_html: "<b>Atena</b> upgraded Rostam to LVL 13",
+      feed_guild_top10_html: "Guild <b>FireSimorgh</b> reached top 10",
+
   };
 })();
