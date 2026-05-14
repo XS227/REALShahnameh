@@ -74,6 +74,9 @@
 
   const SKIN_LS = "real_tap_skin_v1";
 
+  /* ---- i18n helper (graceful: falls back to key if runtime not ready) ---- */
+  const t = (k) => (window.RealI18N && window.RealI18N.t(k)) || k;
+
   /* ---- Helpers ---- */
   const getSavedSkin = () => {
     try { return localStorage.getItem(SKIN_LS) || "real"; } catch { return "real"; }
@@ -148,10 +151,14 @@
         portInner += `<span class="skin-selected-check">✓</span>`;
       }
 
-      const rarityLabel = {
-        default: "Default", common: "Common", rare: "Rare",
-        epic: "Epic", legend: "Legend", mythic: "Mythic"
-      }[skin.rarity] || skin.rarity;
+      const rarityLabel = ({
+        default: "Default",
+        common:  t("rarity_common"),
+        rare:    t("rarity_rare"),
+        epic:    t("rarity_epic"),
+        legend:  t("rarity_legend"),
+        mythic:  t("rarity_mythic"),
+      })[skin.rarity] || skin.rarity;
 
       btn.innerHTML = `
         <div class="skin-portrait ${rc}">${portInner}</div>
@@ -183,7 +190,7 @@
         saveSkin(skin.id);
         applyOrbSkin(skin);
         if (navigator.vibrate) navigator.vibrate(8);
-        showToast(`${skin.name} skin equipped`);
+        showToast(`${skin.name} — ${t("skin_equipped_toast")}`);
       });
 
       rail.appendChild(btn);
@@ -281,12 +288,12 @@
     const full = addr ? (addr.getAttribute("data-full") || "") : "";
 
     btn.addEventListener("click", async () => {
-      if (!full) { showToast("Contract address coming soon"); return; }
+      if (!full) { showToast(t("skin_copy_soon")); return; }
       try {
         await navigator.clipboard.writeText(full);
         const orig = btn.textContent;
         btn.textContent = "Copied ✓";
-        showToast("Contract address copied");
+        showToast(t("skin_copy_toast"));
         setTimeout(() => { btn.textContent = orig; }, 1600);
       } catch {
         showToast("Contract: " + full.slice(0, 20) + "…");
@@ -300,7 +307,7 @@
       btn.addEventListener("click", () => {
         btn.textContent = "Claimed ✓";
         btn.disabled = true;
-        showToast("+172 REAL claimed to balance!");
+        showToast(t("skin_claimed_toast"));
         if (navigator.vibrate) navigator.vibrate([8, 4, 8]);
         setTimeout(() => {
           btn.textContent = "Claim ›";
@@ -308,6 +315,22 @@
         }, 6000);
       });
     });
+  };
+
+  /* ---- Public API — lets app.js Settings update the orb from any page ---- */
+  window.RealSkins = {
+    apply(id) {
+      const skin = SKINS.find((s) => s.id === id);
+      if (!skin || skin.locked) return false;
+      saveSkin(skin.id);
+      applyOrbSkin(skin);
+      document.querySelectorAll("[data-skin-id]").forEach((c) => {
+        c.classList.toggle("selected", c.getAttribute("data-skin-id") === skin.id);
+      });
+      return true;
+    },
+    getSkins: () => SKINS,
+    getActive: getSavedSkin,
   };
 
   /* ---- Init ---- */

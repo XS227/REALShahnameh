@@ -114,6 +114,9 @@
       xp_800: "⭐ 800 XP · 🪶 Mythic feather",
       xp_1500: "⭐ 1500 XP · 🏆 Founder badge",
 
+      /* Ad overlay */
+      ad_loading: "Ad loading…",
+
       /* Earn page */
       watch_earn: "Watch & Earn",
       ad_remaining: "5 / 5 today",
@@ -547,6 +550,36 @@
       early_supporter_mult: "✦ +5% multiplier",
       season1_frame: "🖼 Season 1 Frame",
       bonus_claimed_toast: "Founder rewards claimed!",
+
+      /* Home page */
+      banner_kicker: "Season 2 · Pishdadian Age",
+      banner_title: "<span>Shahnameh</span> Chronicle",
+      banner_cta: "▷ Enter the Chronicle",
+      all_chapters: "All chapters ›",
+      journey_ch_label_tpl: "Chapter 1 · Active",
+      journey_ch1_sub: "8 scenes · Quiz · 200 XP reward",
+      continue_btn: "Continue ›",
+      home_journey_length: "9-month journey",
+      active_hero_lbl: "Active hero",
+      upgrade_link: "Upgrade ›",
+      intro_link_label: "Intro",
+
+      /* Home — daily quests */
+      quest_read_scene: "Read a Chronicle scene",
+      quest_read_sub: "1 / 1 scenes read today",
+      quest_quiz: "Answer the Chapter Quiz",
+      quest_quiz_sub: "Complete Chapter 1 quiz",
+      quest_tap: "Tap 200 times",
+      quest_invite: "Invite a warrior",
+      quest_invite_sub: "Share your link to earn forever",
+
+      /* Earn — season standing */
+      season_pts_rank_html: "Season points: <b style=\"color:var(--gold);\">6,920</b> · Rank <b style=\"color:var(--gold);\">#412</b><br>Invite 18 more to lock guaranteed allocation.",
+
+      /* Settings — tap icon / character selector */
+      tap_icon_section: "Tap Icon",
+      char_pick_title: "Choose Your Tap Icon",
+      current_tap_icon: "Current icon:",
 
   };
 })();

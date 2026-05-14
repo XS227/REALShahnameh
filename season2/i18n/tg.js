@@ -115,6 +115,9 @@
       xp_800: "⭐ 800 XP · 🪶 Пари асотирӣ",
       xp_1500: "⭐ 1500 XP · 🏆 Нишони бунёдгузор",
 
+      /* Ad overlay */
+      ad_loading: "Реклама бор мешавад…",
+
       /* Earn page */
       watch_earn: "Тамошо кун ва даромад гир",
       ad_remaining: "5 / 5 имрӯз",
@@ -545,6 +548,36 @@
       early_supporter_mult: "✦ +5% зариб",
       season1_frame: "🖼 Чорчӯби Мавсими 1",
       bonus_claimed_toast: "Ҷоизаҳои бунёдгузор гирифта шуд!",
+
+      /* Home page */
+      banner_kicker: "Мавсими 2 · Давраи Пешдодиён",
+      banner_title: "<span>Шоҳнома</span>и Шоҳон",
+      banner_cta: "▷ Вуруд ба Шоҳнома",
+      all_chapters: "Ҳамаи бобҳо ›",
+      journey_ch_label_tpl: "Боби 1 · Фаъол",
+      journey_ch1_sub: "8 саҳна · Имтиҳон · 200 XP",
+      continue_btn: "Идома ›",
+      home_journey_length: "Сафари 9-моҳа",
+      active_hero_lbl: "Қаҳрамони фаъол",
+      upgrade_link: "Баланд бардоштан ›",
+      intro_link_label: "Муқаддима",
+
+      /* Home — daily quests */
+      quest_read_scene: "Хондани як саҳна аз Шоҳнома",
+      quest_read_sub: "1 / 1 саҳна имрӯз хонда шуд",
+      quest_quiz: "Ҷавоб додан ба имтиҳони боб",
+      quest_quiz_sub: "Имтиҳони Боби 1-ро иҷро кунед",
+      quest_tap: "200 маротиба зарба занед",
+      quest_invite: "Даъвати як ҷангӣ",
+      quest_invite_sub: "Пайванди худро мубодила кунед",
+
+      /* Earn — season standing */
+      season_pts_rank_html: "Холҳои мавсим: <b style=\"color:var(--gold);\">6,920</b> · Рутба <b style=\"color:var(--gold);\">#412</b><br>18 нафари дигарро даъват кунед.",
+
+      /* Settings — tap icon / character selector */
+      tap_icon_section: "Акси зарба",
+      char_pick_title: "Акси зарбаро интихоб кунед",
+      current_tap_icon: "Акси ҷории:",
 
   };
 })();

@@ -165,8 +165,21 @@
     LANG: "real_lang",
     PATH: "real_path",
     PLAYER: "real_player_state_v1",
-    S1_FLAG: "isSeason1Player"
+    S1_FLAG: "isSeason1Player",
+    SKIN: "real_tap_skin_v1",
   };
+
+  /* Minimal skin catalogue — mirrors tap.js SKINS but lives in app.js
+     so the Settings panel can render the picker on any page. */
+  const SKIN_CATALOGUE = [
+    { id: "real",     nameKey: "skin_real",     emoji: "◆",  locked: false },
+    { id: "keyumars", nameKey: "skin_keyumars",  emoji: "👑", locked: true  },
+    { id: "hushang",  nameKey: "skin_hushang",   emoji: "🔥", locked: true  },
+    { id: "zahhak",   nameKey: "skin_zahhak",    emoji: "🐍", locked: true  },
+    { id: "rostam",   nameKey: "skin_rostam",    emoji: "⚔",  locked: true  },
+    { id: "simorgh",  nameKey: "skin_simorgh",   emoji: "🦅", locked: true  },
+    { id: "royal",    nameKey: "skin_royal",     emoji: "🔱", locked: true  },
+  ];
 
   /* ===========================================================
      Player state — single source of truth for the prototype.
@@ -564,6 +577,10 @@
           </div>
         </div>
         <div class="sp-section">
+          <div class="sp-label" data-sp-skins-label>Tap Icon</div>
+          <div class="sp-skin-row" data-sp-skin-row></div>
+        </div>
+        <div class="sp-section">
           <div class="sp-label" data-sp-s1-label>Demo</div>
           <button class="sp-pick sp-toggle" data-sp-s1-toggle>
             <span data-sp-s1-text>Toggle Season 1 player</span>
@@ -587,6 +604,7 @@
       panel.querySelector("[data-sp-title]").textContent = tx.settings;
       panel.querySelector("[data-sp-lang-label]").textContent = tx.language;
       panel.querySelector("[data-sp-path-label]").textContent = tx.path;
+      panel.querySelector("[data-sp-skins-label]").textContent = tx.tap_icon_section || "Tap Icon";
       panel.querySelector("[data-sp-s1-label]").textContent = tx.demo;
       panel.querySelector("[data-sp-s1-text]").textContent = tx.toggle_s1_demo;
       panel.querySelector("[data-sp-s1-state]").textContent = isS1 ? tx.s1_demo_on : tx.s1_demo_off;
@@ -595,6 +613,18 @@
       panel.querySelector("[data-sp-reset-title]").textContent = tx.reset_onboarding;
       panel.querySelector("[data-sp-reset-sub]").textContent = tx.reset_onboarding_sub;
       panel.querySelector("[data-sp-close]").textContent = tx.close;
+      // skin grid
+      const activeSkinId = Storage.read(LS.SKIN) || "real";
+      const skinRow = panel.querySelector("[data-sp-skin-row]");
+      skinRow.innerHTML = "";
+      SKIN_CATALOGUE.forEach((s) => {
+        const b = document.createElement("button");
+        b.className = ["sp-skin-btn", s.locked ? "locked" : "", (!s.locked && s.id === activeSkinId) ? "active" : ""].filter(Boolean).join(" ");
+        b.setAttribute("data-sp-skin-id", s.id);
+        b.title = tx[s.nameKey] || s.id;
+        b.innerHTML = s.emoji + (s.locked ? "<span class='sp-skin-lock'>🔒</span>" : "");
+        skinRow.appendChild(b);
+      });
       // active state
       $$("[data-set-lang]", panel).forEach((b) => b.classList.toggle("active", b.getAttribute("data-set-lang") === l));
       $$("[data-set-path]", panel).forEach((b) => b.classList.toggle("active", b.getAttribute("data-set-path") === p));
@@ -637,6 +667,18 @@
       refresh();
       toast(next ? t("s1_demo_on") : t("s1_demo_off"));
       haptic("medium");
+    });
+    panel.querySelector("[data-sp-skin-row]").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-sp-skin-id]");
+      if (!b) return;
+      const id = b.getAttribute("data-sp-skin-id");
+      const skin = SKIN_CATALOGUE.find((s) => s.id === id);
+      if (!skin || skin.locked) { toast(t("skin_locked_toast")); return; }
+      Storage.write(LS.SKIN, id);
+      if (window.RealSkins) window.RealSkins.apply(id);
+      refresh();
+      toast(t("saved"));
+      haptic("success");
     });
     panel.querySelector("[data-sp-reset]").addEventListener("click", () => {
       Storage.remove(LS.LANG);

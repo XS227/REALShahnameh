@@ -116,6 +116,9 @@
       xp_800: "⭐ ۸۰۰ تجربه · 🪶 پر اساطیری",
       xp_1500: "⭐ ۱۵۰۰ تجربه · 🏆 نشان بنیان‌گذار",
 
+      /* Ad overlay */
+      ad_loading: "تبلیغ در حال بارگذاری…",
+
       /* Earn page */
       watch_earn: "ببین و کسب کن",
       ad_remaining: "۵ / ۵ امروز",
@@ -546,6 +549,36 @@
       early_supporter_mult: "✦ +۵٪ ضریب اولیه",
       season1_frame: "🖼 قاب فصل ۱",
       bonus_claimed_toast: "پاداش بنیان‌گذار دریافت شد!",
+
+      /* Home page */
+      banner_kicker: "فصل ۲ · عصر پیشدادیان",
+      banner_title: "<span>شاهنامه</span>ٔ فردوسی",
+      banner_cta: "▷ ورود به شاهنامه",
+      all_chapters: "همه فصل‌ها ›",
+      journey_ch_label_tpl: "فصل ۱ · فعال",
+      journey_ch1_sub: "۸ صحنه · آزمون · ۲۰۰ XP",
+      continue_btn: "ادامه ›",
+      home_journey_length: "سفر ۹ ماهه",
+      active_hero_lbl: "قهرمان فعال",
+      upgrade_link: "ارتقا ›",
+      intro_link_label: "مقدمه",
+
+      /* Home — daily quests */
+      quest_read_scene: "خواندن یک صحنه از شاهنامه",
+      quest_read_sub: "۱ / ۱ صحنه امروز خوانده شد",
+      quest_quiz: "پاسخ به آزمون فصل",
+      quest_quiz_sub: "آزمون فصل ۱ را کامل کنید",
+      quest_tap: "۲۰۰ بار ضربه بزنید",
+      quest_invite: "دعوت یک سرباز",
+      quest_invite_sub: "لینک خود را به اشتراک بگذارید",
+
+      /* Earn — season standing */
+      season_pts_rank_html: "امتیاز فصل: <b style=\"color:var(--gold);\">۶٬۹۲۰</b> · رتبه <b style=\"color:var(--gold);\">#۴۱۲</b><br>۱۸ نفر دیگر دعوت کنید تا تخصیص فصل را قفل کنید.",
+
+      /* Settings — tap icon / character selector */
+      tap_icon_section: "آیکون ضربه",
+      char_pick_title: "آیکون ضربه را انتخاب کنید",
+      current_tap_icon: "آیکون فعلی:",
 
   };
 })();

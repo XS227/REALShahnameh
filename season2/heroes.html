@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Collection</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605140007" />
+  <link rel="stylesheet" href="style.css?v=202605140008" />
   <link rel="stylesheet" href="heroes.css?v=202605130020" />
 </head>
 <body>
@@ -15,19 +15,19 @@
     <!-- ── Header ─────────────────────────────────────── -->
     <section class="page-head" style="margin-bottom:2px;">
       <div>
-        <h2 class="page-title">Discovery Album</h2>
-        <p class="page-sub">Your unlocked collection from the Shahnameh</p>
+        <h2 class="page-title" data-i18n="discovery_album">Discovery Album</h2>
+        <p class="page-sub" data-i18n="your_collection">Your unlocked collection from the Shahnameh</p>
       </div>
-      <span class="pill">S2 · Ch.1</span>
+      <span class="pill" data-i18n="season2_pill">S2 · Ch.1</span>
     </section>
 
     <!-- ── Chapter 1 complete banner ─────────────────── -->
     <div class="chapter-banner">
       <div class="cb-check">✓</div>
       <div class="cb-body">
-        <div class="cb-kicker">Chapter Complete</div>
-        <div class="cb-title">Chapter 1 — The First King</div>
-        <div class="cb-sub">10 items discovered · Keyumars era</div>
+        <div class="cb-kicker" data-i18n="ch_complete_kicker">Chapter Complete</div>
+        <div class="cb-title" data-i18n="ch1_banner_title">Chapter 1 — The First King</div>
+        <div class="cb-sub" data-i18n="ch1_banner_sub">10 items discovered · Keyumars era</div>
       </div>
       <img
         src="/assets/images/chapters/chapter-1-keyumars-cover.png"
@@ -41,47 +41,47 @@
     <div class="coll-stats-strip">
       <div class="css-cell">
         <div class="css-val">10</div>
-        <div class="css-lbl">Discovered</div>
+        <div class="css-lbl" data-i18n="stat_discovered">Discovered</div>
       </div>
       <div class="css-cell">
         <div class="css-val">59</div>
-        <div class="css-lbl">Locked</div>
+        <div class="css-lbl" data-i18n="stat_locked">Locked</div>
       </div>
       <div class="css-cell">
         <div class="css-val">1</div>
-        <div class="css-lbl">Chapters</div>
+        <div class="css-lbl" data-i18n="stat_chapters">Chapters</div>
       </div>
       <div class="css-cell">
         <div class="css-val gold">Rare</div>
-        <div class="css-lbl">Avg Rarity</div>
+        <div class="css-lbl" data-i18n="stat_avg_rarity">Avg Rarity</div>
       </div>
     </div>
 
     <!-- ── Progress section (filled by heroes.js) ────── -->
     <div class="coll-progress-section" id="coll-progress">
       <div class="coll-progress-head">
-        <span class="coll-ph-left"><strong>10</strong> of 69 discovered</span>
-        <span class="coll-ph-right">Ch.1 complete · 14%</span>
+        <span class="coll-ph-left"><strong>10</strong> <span data-i18n="progress_of">of 69 discovered</span></span>
+        <span class="coll-ph-right"><span data-i18n="progress_ch1">Ch.1 complete</span> · 14%</span>
       </div>
       <div class="coll-progress-track">
         <div class="coll-progress-fill" style="width:14%;"></div>
       </div>
       <div class="coll-rarity-breakdown">
-        <div class="crb-item r-common">Common&nbsp;<span class="crb-count">1</span></div>
-        <div class="crb-item r-rare">Rare&nbsp;<span class="crb-count">5</span></div>
-        <div class="crb-item r-epic">Epic&nbsp;<span class="crb-count">3</span></div>
-        <div class="crb-item r-legend">Legend&nbsp;<span class="crb-count">1</span></div>
-        <div class="crb-item r-mythic">Mythic&nbsp;<span class="crb-count">0</span></div>
+        <div class="crb-item r-common"><span data-i18n="rarity_common">Common</span>&nbsp;<span class="crb-count">1</span></div>
+        <div class="crb-item r-rare"><span data-i18n="rarity_rare">Rare</span>&nbsp;<span class="crb-count">5</span></div>
+        <div class="crb-item r-epic"><span data-i18n="rarity_epic">Epic</span>&nbsp;<span class="crb-count">3</span></div>
+        <div class="crb-item r-legend"><span data-i18n="rarity_legend">Legend</span>&nbsp;<span class="crb-count">1</span></div>
+        <div class="crb-item r-mythic"><span data-i18n="rarity_mythic">Mythic</span>&nbsp;<span class="crb-count">0</span></div>
       </div>
     </div>
 
     <!-- ── Tab filters ───────────────────────────────── -->
     <div class="coll-tabs" id="coll-tabs">
-      <button class="coll-tab active" data-filter="all">All</button>
-      <button class="coll-tab" data-filter="character">Characters</button>
-      <button class="coll-tab" data-filter="place">Places</button>
-      <button class="coll-tab" data-filter="enemy">Enemies</button>
-      <button class="coll-tab" data-filter="codex">Codex</button>
+      <button class="coll-tab active" data-filter="all" data-i18n="tab_all">All</button>
+      <button class="coll-tab" data-filter="character" data-i18n="tab_characters">Characters</button>
+      <button class="coll-tab" data-filter="place" data-i18n="tab_places">Places</button>
+      <button class="coll-tab" data-filter="enemy" data-i18n="tab_enemies">Enemies</button>
+      <button class="coll-tab" data-filter="codex" data-i18n="tab_codex">Codex</button>
     </div>
 
     <!-- ── Collection grid (populated by heroes.js) ── -->
@@ -129,9 +129,9 @@
   <div class="toast" data-toast></div>
 
   <script src="app.js?v=202605130020"></script>
-  <script src="i18n/en.js?v=202605140004"></script>
-  <script src="i18n/fa.js?v=202605140004"></script>
-  <script src="i18n/tg.js?v=202605140004"></script>
+  <script src="i18n/en.js?v=202605140009"></script>
+  <script src="i18n/fa.js?v=202605140009"></script>
+  <script src="i18n/tg.js?v=202605140009"></script>
   <script src="i18n.js?v=202605140004"></script>
   <script src="resources.js?v=202605140005"></script>
   <script src="heroes.js?v=202605130020"></script>

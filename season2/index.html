@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Home</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605140007" />
+  <link rel="stylesheet" href="style.css?v=202605140008" />
   <style>
     /* Home-only layout additions */
     .home-season-banner {
@@ -232,17 +232,17 @@
       <div class="banner-stars" aria-hidden="true"></div>
       <div class="banner-glow" aria-hidden="true"></div>
       <div class="banner-body">
-        <div class="banner-kicker">Season 2 · Pishdadian Age</div>
-        <h2 class="banner-title"><span>Shahnameh</span> Chronicle</h2>
+        <div class="banner-kicker" data-i18n="banner_kicker">Season 2 · Pishdadian Age</div>
+        <h2 class="banner-title" data-i18n-html="banner_title"><span>Shahnameh</span> Chronicle</h2>
         <p class="banner-fa" lang="fa" dir="rtl">شاهنامهٔ فردوسی</p>
-        <a href="intro.html" class="banner-cta">▷ Enter the Chronicle</a>
+        <a href="intro.html" class="banner-cta" data-i18n="banner_cta">▷ Enter the Chronicle</a>
       </div>
     </div>
 
     <!-- Continue Journey -->
     <div class="section-head" style="margin-bottom:8px;">
       <h3 data-i18n="continue_journey">Continue Journey</h3>
-      <a class="more" href="learn.html">All chapters ›</a>
+      <a class="more" href="learn.html" data-i18n="all_chapters">All chapters ›</a>
     </div>
     <div class="journey-card">
       <div class="journey-thumb">
@@ -250,11 +250,11 @@
              onerror="this.replaceWith(document.createTextNode('👑'))">
       </div>
       <div class="journey-body">
-        <div class="journey-label">Chapter 1 · Active</div>
-        <h4>Keyumars — The First King</h4>
-        <div class="journey-sub">8 scenes · Quiz · 200 XP reward</div>
+        <div class="journey-label" data-i18n="journey_ch_label_tpl">Chapter 1 · Active</div>
+        <h4 data-i18n="ch1_title">Keyumars — The First King</h4>
+        <div class="journey-sub" data-i18n="journey_ch1_sub">8 scenes · Quiz · 200 XP reward</div>
       </div>
-      <a href="chapter.html?slug=keyumars" class="journey-continue">Continue ›</a>
+      <a href="chapter.html?slug=keyumars" class="journey-continue" data-i18n="continue_btn">Continue ›</a>
     </div>
 
     <!-- Chronicle progress -->
@@ -265,7 +265,7 @@
       </div>
       <div class="cp-row" style="margin-bottom:0;">
         <span class="cp-chapters" data-chapters-done>1 of 50 chapters active</span>
-        <span style="font-size:11px; color:var(--muted);">9-month journey</span>
+        <span style="font-size:11px; color:var(--muted);" data-i18n="home_journey_length">9-month journey</span>
       </div>
       <div class="bar" style="margin-top:10px;">
         <span class="fill" data-chapters-fill style="width:2%;"></span>
@@ -295,8 +295,8 @@
       <div class="quest-row done">
         <div class="quest-ico">📜</div>
         <div class="quest-body">
-          <div class="q-name">Read a Chronicle scene</div>
-          <div class="q-sub">1 / 1 scenes read today</div>
+          <div class="q-name" data-i18n="quest_read_scene">Read a Chronicle scene</div>
+          <div class="q-sub" data-i18n="quest_read_sub">1 / 1 scenes read today</div>
         </div>
         <span class="quest-reward">+50 XP</span>
         <div class="quest-check done">✓</div>
@@ -304,8 +304,8 @@
       <div class="quest-row">
         <div class="quest-ico">🧠</div>
         <div class="quest-body">
-          <div class="q-name">Answer the Chapter Quiz</div>
-          <div class="q-sub">Complete Chapter 1 quiz</div>
+          <div class="q-name" data-i18n="quest_quiz">Answer the Chapter Quiz</div>
+          <div class="q-sub" data-i18n="quest_quiz_sub">Complete Chapter 1 quiz</div>
         </div>
         <span class="quest-reward">+100 XP</span>
         <div class="quest-check"></div>
@@ -313,7 +313,7 @@
       <div class="quest-row">
         <div class="quest-ico">⚡</div>
         <div class="quest-body">
-          <div class="q-name">Tap 200 times</div>
+          <div class="q-name" data-i18n="quest_tap">Tap 200 times</div>
           <div class="q-sub"><span data-combo>140</span> / 200 taps today</div>
         </div>
         <span class="quest-reward">+80 REAL</span>
@@ -322,8 +322,8 @@
       <div class="quest-row">
         <div class="quest-ico">👥</div>
         <div class="quest-body">
-          <div class="q-name">Invite a warrior</div>
-          <div class="q-sub">Share your link to earn forever</div>
+          <div class="q-name" data-i18n="quest_invite">Invite a warrior</div>
+          <div class="q-sub" data-i18n="quest_invite_sub">Share your link to earn forever</div>
         </div>
         <span class="quest-reward">+10% lifetime</span>
         <div class="quest-check"></div>
@@ -352,14 +352,14 @@
              onerror="this.replaceWith(document.createTextNode('👑'))">
       </div>
       <div class="hs-body">
-        <div class="hs-kicker">Active hero</div>
+        <div class="hs-kicker" data-i18n="active_hero_lbl">Active hero</div>
         <div class="hs-name">Keyumars</div>
         <span class="hs-passive">✦ +5% Tap · +8% XP · +6 REAL/hr</span>
       </div>
       <div style="text-align:right; flex-shrink:0;">
-        <div style="font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px;">LVL</div>
+        <div style="font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px;" data-i18n="level">LVL</div>
         <div style="font-size:18px; font-weight:800; color:var(--gold);">1</div>
-        <a href="heroes.html" style="font-size:11px; color:var(--violet); text-decoration:none;">Upgrade ›</a>
+        <a href="heroes.html" style="font-size:11px; color:var(--violet); text-decoration:none;" data-i18n="upgrade_link">Upgrade ›</a>
       </div>
     </div>
 
@@ -386,7 +386,7 @@
       </a>
       <a class="ql-card" href="intro.html">
         <span class="ql-ico">✦</span>
-        <span class="ql-label">Intro</span>
+        <span class="ql-label" data-i18n="intro_link_label">Intro</span>
       </a>
       <a class="ql-card" href="tap.html">
         <span class="ql-ico">⚡</span>
@@ -406,10 +406,10 @@
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=202605130001"></script>
-  <script src="i18n/en.js?v=202605140004"></script>
-  <script src="i18n/fa.js?v=202605140004"></script>
-  <script src="i18n/tg.js?v=202605140004"></script>
+  <script src="app.js?v=202605140009"></script>
+  <script src="i18n/en.js?v=202605140009"></script>
+  <script src="i18n/fa.js?v=202605140009"></script>
+  <script src="i18n/tg.js?v=202605140009"></script>
   <script src="i18n.js?v=202605140004"></script>
   <script src="resources.js?v=202605140005"></script>
   <script>
