@@ -320,6 +320,91 @@
 
       /* Document title */
       doc_title_chapter_tpl: "REAL Shahnameh — {title}",
+
+      /* ============== INTRO PAGE ============== */
+      /* Top / bottom controls */
+      intro_skip: "Skip",
+      intro_step_tpl: "{i} / {n}",
+      intro_back: "Back",
+      intro_continue: "Continue",
+      intro_begin_journey: "Begin Journey",
+      intro_replay_note: "You can replay this intro anytime from the chapter overview.",
+      intro_doc_title: "REAL Shahnameh — In the Name of Wisdom",
+
+      /* Panel bism (opening verse) */
+      intro_bism_translation: "In the Name of the Lord of soul and wisdom — higher than this, no thought can pass.",
+      intro_bism_author: "— Ferdowsi, opening of the Shahnameh",
+
+      /* Panel A — Ferdowsi */
+      intro_kicker_a: "A · The Poet",
+      intro_h1_ferdowsi: "Ferdowsi of Tus",
+      intro_ferdowsi_lead: "One man · thirty years · sixty thousand verses.",
+      intro_ferdowsi_p1: "When the empires of Persia had been broken and her language was bending toward forgetfulness, a poet from Tus picked up a pen and began the slow work of remembering. Ferdowsi did not invent the kings he named. He carried them across the ruined ground so that a child a thousand years later could still say, in her own tongue, the words for dawn and throne and fire.",
+      intro_ferdowsi_p2: "What he saved was not a king-list. He saved a way of being Iranian.",
+      intro_ferdowsi_quote: "\"I shall not die, for I am alive — for I have sown the seed of words.\"",
+
+      /* Panel B — Shahnameh */
+      intro_kicker_b: "B · The Book",
+      intro_h1_shahnameh: "The Shahnameh",
+      intro_shahnameh_lead: "The Book of Kings.",
+      intro_shahnameh_p1: "A single epic that holds the whole memory of Persia: dynasty after dynasty, hero after hero, demon after demon, from the first king of the dawn to the last battle of the age. It is history dressed as myth, and myth dressed as history. They cannot be separated and you are not meant to.",
+      intro_shahnameh_p2: "The Shahnameh is the preservation of Persian identity itself — language, ritual, calendar, courage, sorrow. Where empires fell, the verses did not. Where the language of the court changed, Ferdowsi's Persian held. A nation's mythology, kept alive by one poet's stubbornness.",
+      intro_fact_60k_num: "≈ 60,000",
+      intro_fact_60k_desc: "Couplets — the longest epic by a single poet ever written.",
+      intro_fact_50_num: "50",
+      intro_fact_50_desc: "Stories, from Keyumars to the fall of the Sassanians.",
+      intro_fact_30yrs_num: "30 yrs",
+      intro_fact_30yrs_desc: "Of work by Ferdowsi.",
+      intro_fact_1lang_num: "1 lang",
+      intro_fact_1lang_desc: "Held alive by 60,000 verses — Persian.",
+
+      /* Panel C — Age of Kings */
+      intro_kicker_c: "C · The Age",
+      intro_h1_age: "The Age of Kings Begins",
+      intro_age_lead: "Before the dynasties of Iran, before the Achaemenids, before the prophet of fire — the Pishdadians.",
+      intro_age_p1: "The first dynasty of the Shahnameh is older than memory: a line of kings who taught humans to bind hair and hand fire and split iron. They are called Pishdadi — those who set the foremost law. The chronicle begins with the very first of them.",
+
+      /* Panel D — World Before */
+      intro_kicker_d: "D · The World Before",
+      intro_h1_before: "A World Without Roof",
+      intro_before_lead: "No fire. No alphabet. No measure of time.",
+      intro_before_p1: "The valleys were full of teeth. The forests were older than language. Children slept under leaves and woke under hawks. There was no single word the people had in common. There was no shared night, no shared morning.",
+      intro_before_p2: "And then — high up, where only goats and weather went — a man stood on the cold rock and looked down.",
+
+      /* Panel E — Duality */
+      intro_kicker_e: "E · The Two",
+      intro_h1_duality: "Light against Darkness",
+      intro_dual_ahura_h: "Ahura · Light",
+      intro_dual_ahura_body: "Order. Speech. Fire kept. Memory. Kings.",
+      intro_dual_ahriman_h: "Ahriman · Dark",
+      intro_dual_ahriman_body: "Forgetting. Hunger. The shape under the leaf.",
+      intro_duality_foot: "The Shahnameh does not pretend they are equal. It pretends they are old.",
+
+      /* Panel F — Keyumars */
+      intro_kicker_f: "F · The First King",
+      intro_h1_keyumars: "Keyumars Rises",
+      intro_keyumars_lead: "On a high crag of ancient Pars, the first man takes a leopard's skin across his shoulders.",
+      intro_keyumars_p1: "He has no army yet. He has no city. He has only the wind, the firelight, and the silence after he speaks. The lions come down from the high pasture and lie at his feet. The mountain learns his name.",
+      intro_keyumars_p2: "This is where your chronicle begins.",
+
+      /* Panel timeline */
+      intro_kicker_chrono: "The Chronology",
+      intro_h1_timeline: "Three Markers Before Chapter 1",
+      intro_bc_suffix: "BC",
+      intro_year_7000: "~7000",
+      intro_year_6900: "~6900",
+      intro_year_6800: "~6800",
+      intro_tl_age_h: "Age of Keyumars",
+      intro_tl_age_body: "The leopard-skin king takes the high mountain. The first court is laid.",
+      intro_tl_siamak_h: "Siamak Rises",
+      intro_tl_siamak_body: "The prince walks among the people. The mountain knows his name.",
+      intro_tl_war_h: "War Against Darkness",
+      intro_tl_war_body: "Ahriman wakes. Khazura the Black Div is sent. The first sorrow comes into the world.",
+
+      /* Panel CTA */
+      intro_cta_kicker: "SEASON 2 · CHAPTER 1",
+      intro_cta_title: "Keyumars — The First King",
+      intro_cta_copy: "From here on, the chronicle is yours. Each scene unlocks codex entries. Each correct answer earns REAL. Each level brings you closer to the dark thing in the forest.",
     },
 
     /* ── PERSIAN / فارسی ──────────────────────────────── */
@@ -616,6 +701,91 @@
 
       /* Document title */
       doc_title_chapter_tpl: "ریل شاهنامه — {title}",
+
+      /* ============== INTRO PAGE ============== */
+      /* Top / bottom controls */
+      intro_skip: "رد شدن",
+      intro_step_tpl: "{i} / {n}",
+      intro_back: "بازگشت",
+      intro_continue: "ادامه",
+      intro_begin_journey: "آغازِ سفر",
+      intro_replay_note: "این آغاز را هرگاه خواستی از نمای فصل دوباره ببین.",
+      intro_doc_title: "ریل شاهنامه — به نامِ خرد",
+
+      /* Panel bism (opening verse) */
+      intro_bism_translation: "به نامِ خداوندِ جان و خِرَد — کزین برتر اندیشه برنگذرد.",
+      intro_bism_author: "— فردوسی، آغازِ شاهنامه",
+
+      /* Panel A — Ferdowsi */
+      intro_kicker_a: "بخشِ یکم · شاعر",
+      intro_h1_ferdowsi: "فردوسیِ توس",
+      intro_ferdowsi_lead: "یک تن · سی سال · شصت هزار بیت.",
+      intro_ferdowsi_p1: "آن‌گاه که شاهنشاهی‌های پارس فروریخته بود و زبانش به سوی فراموشی خم می‌شد، شاعری از توس قلم برداشت و کارِ کندِ یادآوری را آغاز کرد. فردوسی شاهانی را که نام برد، نساخت؛ او آنان را از خاکِ ویران گذراند تا کودکی، هزار سال پس از او، بتواند به زبانِ خویش بگوید: «سپیده‌دم»، «تخت»، «آتش».",
+      intro_ferdowsi_p2: "آن‌چه او نگاه داشت، فهرستِ نامِ شاهان نبود. او شیوه‌ی ایرانی‌بودن را نگاه داشت.",
+      intro_ferdowsi_quote: "«نمیرم از این پس که من زنده‌ام — که تخمِ سخن را پراکنده‌ام.»",
+
+      /* Panel B — Shahnameh */
+      intro_kicker_b: "بخشِ دوم · کتاب",
+      intro_h1_shahnameh: "شاهنامه — کتابِ شاهان",
+      intro_shahnameh_lead: "کتابِ شاهان.",
+      intro_shahnameh_p1: "یک حماسه‌ی یگانه که همه‌ی یادِ پارس را در خود نگه می‌دارد: دودمان پس از دودمان، پهلوان پس از پهلوان، دیو پس از دیو، از نخستین شاهِ سپیده‌دم تا واپسین نبردِ روزگار. تاریخ است که جامه‌ی اسطوره پوشیده، و اسطوره که جامه‌ی تاریخ. این دو را نمی‌توان از هم جدا کرد، و نباید کرد.",
+      intro_shahnameh_p2: "شاهنامه، خودِ پاسداریِ هویتِ ایرانی است — زبان، آیین، تقویم، دلیری، اندوه. آن‌جا که شاهنشاهی‌ها فروریختند، بیت‌ها فرو نریختند. آن‌جا که زبانِ درگاه‌ها دگرگون شد، پارسیِ فردوسی پابرجا ماند. اسطوره‌ی یک ملت، که با لجاجِ یک شاعر زنده ماند.",
+      intro_fact_60k_num: "≈ ۶۰٬۰۰۰",
+      intro_fact_60k_desc: "بیت — بلندترین حماسه‌ای که یک شاعر سروده.",
+      intro_fact_50_num: "۵۰",
+      intro_fact_50_desc: "داستان، از کیومرث تا فروپاشیِ ساسانیان.",
+      intro_fact_30yrs_num: "۳۰ سال",
+      intro_fact_30yrs_desc: "از کارِ فردوسی.",
+      intro_fact_1lang_num: "یک زبان",
+      intro_fact_1lang_desc: "که با شصت هزار بیت زنده مانده — پارسی.",
+
+      /* Panel C — Age of Kings */
+      intro_kicker_c: "بخشِ سوم · روزگار",
+      intro_h1_age: "آغازِ روزگارِ شاهان",
+      intro_age_lead: "پیش از دودمان‌های ایران، پیش از هخامنشیان، پیش از پیامبرِ آتش — پیشدادیان.",
+      intro_age_p1: "نخستین دودمانِ شاهنامه از یاد دیرینه‌تر است: تباری از شاهان که به آدمیان آموختند گیسو ببندند، آتش به دست بگیرند و آهن بشکافند. آنان را پیشدادی می‌خوانند — کسانی که نخستین قانون را نهادند. شاهنامه با نخستینِ آنان آغاز می‌شود.",
+
+      /* Panel D — World Before */
+      intro_kicker_d: "بخشِ چهارم · جهانِ پیشین",
+      intro_h1_before: "جهانی بی‌سقف",
+      intro_before_lead: "نه آتش. نه الفبا. نه پیمانه‌ی زمان.",
+      intro_before_p1: "دره‌ها پر از دندان بود. جنگل‌ها از زبان دیرینه‌تر بودند. کودکان زیرِ برگ می‌خوابیدند و زیرِ بال‌های شاهین بیدار می‌شدند. هیچ واژه‌ی یگانه‌ای میانِ مردمان نبود. هیچ شبِ مشترکی، هیچ بامدادِ مشترکی.",
+      intro_before_p2: "و آن‌گاه — بر بلندی، آن‌جا که تنها بز و باد می‌رفت — مردی بر سنگِ سرد ایستاد و به پایین نگریست.",
+
+      /* Panel E — Duality */
+      intro_kicker_e: "بخشِ پنجم · دو نیرو",
+      intro_h1_duality: "روشنی در برابرِ تاریکی",
+      intro_dual_ahura_h: "اهورا · روشنایی",
+      intro_dual_ahura_body: "نظم. سخن. آتشِ نگاه‌داشته. یاد. شاهان.",
+      intro_dual_ahriman_h: "اهریمن · تاریکی",
+      intro_dual_ahriman_body: "فراموشی. گرسنگی. شکلِ زیرِ برگ.",
+      intro_duality_foot: "شاهنامه نمی‌گوید آن دو هم‌سنگ‌اند. می‌گوید کهن‌اند.",
+
+      /* Panel F — Keyumars */
+      intro_kicker_f: "بخشِ ششم · نخستین شاه",
+      intro_h1_keyumars: "برخاستنِ کیومرث",
+      intro_keyumars_lead: "بر صخره‌ای بلند از پارسِ کهن، نخستین مرد پوستِ پلنگی بر دوش می‌اندازد.",
+      intro_keyumars_p1: "هنوز سپاهی ندارد. هنوز شهری ندارد. تنها باد را دارد، روشنیِ آتش را، و سکوت پس از سخن. شیران از چراگاهِ بلند فرود می‌آیند و در پایش می‌خوابند. کوهستان نامش را می‌آموزد.",
+      intro_keyumars_p2: "اینجا، شاهنامه‌ی تو آغاز می‌شود.",
+
+      /* Panel timeline */
+      intro_kicker_chrono: "گاه‌شمار",
+      intro_h1_timeline: "سه نشان، پیش از دفترِ یکم",
+      intro_bc_suffix: "پ.م",
+      intro_year_7000: "~۷۰۰۰",
+      intro_year_6900: "~۶۹۰۰",
+      intro_year_6800: "~۶۸۰۰",
+      intro_tl_age_h: "عصرِ کیومرث",
+      intro_tl_age_body: "شاهِ پلنگ‌پوش بر کوهستانِ بلند فرمان می‌راند. نخستین درگاه پی‌ریزی می‌شود.",
+      intro_tl_siamak_h: "برخاستنِ سیامک",
+      intro_tl_siamak_body: "شاهزاده در میانِ مردمان گام می‌زند. کوهستان نامِ او را می‌داند.",
+      intro_tl_war_h: "نبرد با تاریکی",
+      intro_tl_war_body: "اهریمن بیدار می‌شود. خزورا، دیوِ سیاه، فرستاده می‌شود. نخستین اندوه به جهان می‌آید.",
+
+      /* Panel CTA */
+      intro_cta_kicker: "فصلِ دوم · بابِ یکم",
+      intro_cta_title: "کیومرث — نخستین شاه",
+      intro_cta_copy: "از این پس، شاهنامه از آنِ توست. هر صحنه ورودی‌های کدکس را باز می‌کند. هر پاسخِ درست REAL می‌بخشد. هر باب تو را به آن چیزِ تاریکِ درونِ جنگل نزدیک‌تر می‌کند.",
     }
   };
 
@@ -641,6 +811,14 @@
   const applyLocale = () => {
     const lang = getLang();
     const isFa = (lang === "fa");
+
+    /* Sync <html lang> and <html dir>. app.js does this too, but pages that
+       only load i18n.js (e.g. intro.html) need this here. */
+    const htmlEl = document.documentElement;
+    if (htmlEl) {
+      htmlEl.setAttribute("lang", isFa ? "fa" : "en");
+      htmlEl.setAttribute("dir", isFa ? "rtl" : "ltr");
+    }
 
     /* Apply data-i18n text content */
     document.querySelectorAll("[data-i18n]").forEach((el) => {

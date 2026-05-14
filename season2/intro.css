@@ -494,6 +494,13 @@ html[dir="rtl"] .panel-body .quote { border-left: none; border-right: 2px solid 
 html[dir="rtl"] .t-event { grid-template-columns: 1fr 18px 70px; }
 html[dir="rtl"] .t-year { text-align: left; }
 
+/* In FA mode the .panel-h1 (now driven by data-i18n) already shows the Persian
+   title, so the parallel .panel-h1-fa / .cta-fa subtitle would duplicate it.
+   The opening verse and the in-body ferdowsi-verse stay visible — they are
+   real verse content, not translation duplicates. */
+html[lang="fa"] .panel-h1-fa,
+html[lang="fa"] .cta-fa { display: none; }
+
 /* ---------- mobile compactness ---------- */
 @media (max-width: 360px) {
   .panel-h1 { font-size: 26px; }

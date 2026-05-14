@@ -20,6 +20,13 @@
   const skipBtn  = $("[data-intro-skip]");
   const beginBtn = $("[data-intro-begin]");
 
+  /* ---- i18n helpers ---- */
+  const tr = (k, vars) => (window.RealI18N && window.RealI18N.t)
+    ? window.RealI18N.t(k, vars) : k;
+
+  // Localize <title> after i18n.js has run.
+  try { document.title = tr("intro_doc_title"); } catch { /* nop */ }
+
   /* ---- Telegram WebApp glue ---- */
   const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
   if (tg) {
@@ -52,7 +59,7 @@
       d.classList.toggle("active", i === idx);
       d.classList.toggle("done",   i <  idx);
     });
-    if (stepEl) stepEl.textContent = `${idx + 1} / ${panels.length}`;
+    if (stepEl) stepEl.textContent = tr("intro_step_tpl", { i: idx + 1, n: panels.length });
     prevBtn.hidden = idx === 0;
     // CTA panel hides next button — the Begin button is the next step.
     const onCta = idx === panels.length - 1;
