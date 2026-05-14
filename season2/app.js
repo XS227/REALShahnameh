@@ -1211,8 +1211,9 @@
         const elDone = $("[data-chapters-done]");
         const elPct  = $("[data-chapters-pct]");
         const elFill = $("[data-chapters-fill]");
-        if (elDone) elDone.textContent = `${done} of ${total} chapters complete`;
-        if (elPct)  elPct.textContent  = pct + "%";
+        const fmtN = (n) => (window.RealI18N && window.RealI18N.formatNumber) ? window.RealI18N.formatNumber(n) : String(n);
+        if (elDone) elDone.textContent = t("chapters_progress_tpl").replace("{done}", fmtN(done)).replace("{total}", fmtN(total));
+        if (elPct)  elPct.textContent  = fmtN(pct) + "%";
         if (elFill) elFill.style.width = pct + "%";
 
         // Day X of journey: clamp by today's date once a journey-start
@@ -1385,9 +1386,9 @@
       if (correct) {
         btn.classList.add("correct");
         haptic("success");
-        elResTitle.textContent = `+${data.xp} XP · +${data.real} REAL`;
-        elResBody.textContent = "Chapter rewards locked in.";
-        elResRew.innerHTML = `<span class="chip warm">⭐ ${data.xp} XP</span><span class="chip">🪙 ${data.real} REAL</span><span class="chip lush">+1 Hero fragment</span>`;
+        elResTitle.textContent = `+${data.xp} ${t("r_xp")} · +${data.real} REAL`;
+        elResBody.textContent = t("chapter_rewards_locked");
+        elResRew.innerHTML = `<span class="chip warm">⭐ ${data.xp} ${t("r_xp")}</span><span class="chip">🪙 ${data.real} REAL</span><span class="chip lush">+1 ${t("hero_fragment_label")}</span>`;
         elResult.classList.add("show");
         // mark chapter done
         if (currentChapterEl) {
@@ -1402,7 +1403,7 @@
         if (nextEl && nextEl.classList.contains("locked")) {
           nextEl.classList.remove("locked");
           nextEl.classList.add("active");
-          fireBurst(`Chapter ${next} unlocked`);
+          fireBurst(t("chapter_next_unlocked").replace("{n}", next));
         }
       } else {
         btn.classList.add("wrong");
@@ -1410,8 +1411,8 @@
         // reveal correct
         const correctBtn = $$(".quiz-option", elOptions)[data.answer];
         if (correctBtn) correctBtn.classList.add("correct");
-        elResTitle.textContent = "Re-read and try again";
-        elResBody.textContent = "No XP this round — the chronicle awaits.";
+        elResTitle.textContent = t("quiz_reread_title");
+        elResBody.textContent = t("quiz_no_xp_round");
         elResRew.innerHTML = "";
         elResult.classList.add("show");
       }

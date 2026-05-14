@@ -630,5 +630,17 @@
       skin_unlock_season: "پاداش فصل",
       skin_unlock_legendary: "اساطیری",
 
+      /* Chapters / progress */
+      chapters_progress_tpl: "{done} از {total} فصل",
+      chapter_rewards_locked: "پاداش‌های فصل قفل شد.",
+      chapter_next_unlocked: "فصل {n} باز شد",
+
+      /* Quiz feedback */
+      quiz_reread_title: "دوباره بخوانید و امتحان کنید",
+      quiz_no_xp_round: "تجربه‌ای در این دور نیست — سرنوشت‌نامه منتظر است.",
+
+      /* Hero fragment */
+      hero_fragment_label: "تکه‌ی قهرمان",
+
   };
 })();

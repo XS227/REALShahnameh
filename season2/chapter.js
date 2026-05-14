@@ -24,17 +24,21 @@
     ? window.RealI18N.t(k, vars) : k;
   const fmtNum = (n) => (window.RealI18N && window.RealI18N.formatNumber)
     ? window.RealI18N.formatNumber(n) : String(n);
-  // pick fa or en variant of a data field: pick(obj, "title") → obj.title_fa || obj.title_en
+  // pick localized variant: pick(obj, "title") → obj.title_fa / obj.title_tg / obj.title
   const pick = (obj, base) => {
     if (!obj) return "";
-    const fa = obj[base + "_fa"];
-    if (curLang() === "fa" && fa) return fa;
+    const lang = curLang();
+    if (lang !== "en") {
+      const loc = obj[base + "_" + lang];
+      if (loc) return loc;
+    }
     return obj[base + "_en"] || obj[base] || "";
   };
-  // pick the en/fa property of a {en, fa} object (used for lore_summary)
+  // pick localized property of a {en, fa, tg} object (used for lore_summary)
   const pickEnFa = (obj) => {
     if (!obj) return "";
-    if (curLang() === "fa" && obj.fa) return obj.fa;
+    const lang = curLang();
+    if (lang !== "en" && obj[lang]) return obj[lang];
     return obj.en || "";
   };
 
@@ -127,7 +131,7 @@
     if (rewardsHost) {
       const r = (meta && meta.rewards) || {};
       const pills = [];
-      if (r.xp)    pills.push(`<span class="reward-pill">+${fmtNum(r.xp)} XP</span>`);
+      if (r.xp)    pills.push(`<span class="reward-pill">+${fmtNum(r.xp)} ${tr("r_xp")}</span>`);
       if (r.real)  pills.push(`<span class="reward-pill gold">+${fmtNum(r.real)} <i class="real-coin"></i>REAL</span>`);
       if (r.energy)pills.push(`<span class="reward-pill"><i class="s2-icon energy"></i>+${fmtNum(r.energy)}</span>`);
       if (r.gems)  pills.push(`<span class="reward-pill"><i class="s2-icon gems"></i>+${fmtNum(r.gems)}</span>`);
@@ -515,9 +519,9 @@
       if (!q) return;
 
       const qText = pick(q, "question") || q.question || "";
-      const answers = q.answers_fa && curLang() === "fa" && Array.isArray(q.answers_fa)
-        ? q.answers_fa
-        : (q.answers || []);
+      const lang = curLang();
+      const localAnswers = lang !== "en" && Array.isArray(q["answers_" + lang]) ? q["answers_" + lang] : null;
+      const answers = localAnswers || (q.answers || []);
       const explanation = pick(q, "explanation") || q.explanation || tr("quiz_correct_default");
       const xpVal = (q.reward && q.reward.xp) || 0;
       const realVal = (q.reward && q.reward.real) || 0;
@@ -533,7 +537,7 @@
           `).join("")}
         </div>
         <div class="quiz-foot">
-          <span>+${fmtNum(xpVal)} XP · +${fmtNum(realVal)} REAL</span>
+          <span>+${fmtNum(xpVal)} ${tr("r_xp")} · +${fmtNum(realVal)} REAL</span>
           <span>${escapeHtml(tr(diffKey(q.difficulty)))}</span>
         </div>
       `;

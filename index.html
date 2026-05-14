@@ -1,25 +1,444 @@
 <!doctype html>
-<html lang="en" data-critters-container>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Khabat</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style type="text/css">@font-face{font-family:'Germania One';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/germaniaone/v20/Fh4yPjrqIyv2ucM2qzBjeS3uywhPF6iqeg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
-<style type="text/css">@font-face{font-family:'Mukta';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEOjGmc8WD07oB-98o.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Mukta';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEOjGmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Mukta';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEOjGmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Mukta';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbFqj2mc8WD07oB-98o.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Mukta';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbFqj2mT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Mukta';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbFqj2md8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Mukta';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWKBXyXfDDVXbnArXyw023e1Ik.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Mukta';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWKBXyXfDDVXbnPrXyw023e1Ik.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Mukta';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWKBXyXfDDVXbnBrXyw023e.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Mukta';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEyjmmc8WD07oB-98o.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Mukta';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEyjmmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Mukta';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEyjmmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Mukta';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEeiWmc8WD07oB-98o.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Mukta';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEeiWmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Mukta';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbEeiWmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Mukta';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbF6iGmc8WD07oB-98o.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Mukta';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbF6iGmT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Mukta';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbF6iGmd8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Mukta';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbFmi2mc8WD07oB-98o.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Mukta';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbFmi2mT8WD07oB-98o.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Mukta';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/mukta/v14/iJWHBXyXfDDVXbFmi2md8WD07oB-.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script>
-    window.onload = function() {
-      Telegram.WebApp.ready();
-      Telegram.WebApp.expand();
-    };
-  </script>
-<style>body{font-family:Germania One,system-ui!important;font-weight:400;font-style:normal}:root{--dynamic-value:0;--dynamic-value1:0}@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, .75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, .5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(13, 110, 253, .25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}</style><link rel="stylesheet" href="styles.43ce428fda60e1f2.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.43ce428fda60e1f2.css"></noscript></head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07080d" />
+  <title>Shahnameh — The Book of Kings Returns</title>
+  <meta name="description" content="Play the legends of Persia. Learn the story. Build your clan. Earn REAL. A cinematic, mobile-native Persian mythology RPG built on Telegram." />
+  <meta property="og:title" content="Shahnameh — The Book of Kings Returns" />
+  <meta property="og:description" content="Play the legends of Persia. Learn the story. Build your clan. Earn REAL." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/images/scenes/chapter-1-complete-scene.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="landing.css?v=20260513-1" />
+</head>
 <body>
-  <app-root></app-root>
-<script src="runtime.250ffa42cd367c8d.js" type="module"></script><script src="polyfills.0be22f82b8df76de.js" type="module"></script><script src="scripts.6cfef20b4c7e65bd.js" defer></script><script src="vendor.91d76b3ea589cad5.js" type="module"></script><script src="main.7c2d504be9c2c2a0.js" type="module"></script></body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="#top">
+        <span class="crest" aria-hidden="true"></span>
+        <span>Shahnameh</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#what">The Epic</a>
+        <a href="#ferdowsi">Ferdowsi</a>
+        <a href="#chapter1">Chapter 1</a>
+        <a href="#real">REAL</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <a class="nav-cta" href="/season2/">Play Now <span aria-hidden="true">→</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" id="navToggle"><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Persian Mythology · Telegram-native RPG</span>
+        <h1 class="hero-title">
+          <span class="gold">The Book of Kings</span><br />returns.
+          <small>A 50-level chronicle of Iran, reborn as a cinematic mobile game.</small>
+        </h1>
+        <p class="hero-lede">
+          <b>Play the legends of Persia.</b> Learn the story. Build your clan. Earn <b>REAL</b>.
+          Every chapter of Ferdowsi&rsquo;s Shahnameh, rebuilt for your pocket — from Keyumars to the fall of the Sassanians.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="/season2/">Play Season 2 Preview <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="/season2/chapter.html?slug=keyumars">Explore Chapter 1 <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-badges">
+          <span><span class="dot" aria-hidden="true"></span> 50 stories</span>
+          <span><span class="dot" aria-hidden="true"></span> Free to play</span>
+          <span><span class="dot" aria-hidden="true"></span> Play on Telegram</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="frame">
+          <img src="assets/images/heroes/keyumars-hero.png" alt="Keyumars, the first king of Persia." loading="eager" />
+        </div>
+        <div class="caption">
+          <span class="kicker">Chapter 1 · Level 1 of 50</span>
+          <h4>Keyumars — The First King</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT IS SHAHNAMEH ============ -->
+  <section id="what">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament" aria-hidden="true"><span class="ornament-glyph"></span></div>
+        <span class="eyebrow">What is Shahnameh?</span>
+        <h2>An epic <span class="gold">a thousand years</span> in the making.</h2>
+        <p class="lead">Composed around the year 1010 by the poet Abolqasem Ferdowsi, the Shahnameh — the &ldquo;Book of Kings&rdquo; — is the national epic of Iran: 50,000 couplets recounting the mythic, heroic, and historic past of the Persian world.</p>
+      </div>
+
+      <div class="what-grid">
+        <div class="reveal">
+          <h3>Mythology, heroes, and history — playable.</h3>
+          <p>For the first time, the entire 50-level arc of Ferdowsi&rsquo;s epic is being adapted as a free, mobile-native RPG. Read each tale, fight its monsters, recruit its heroes, and unlock the next legend.</p>
+          <div class="pillars">
+            <div class="pillar">
+              <span class="ico">⚔</span>
+              <h4>Cinematic story RPG</h4>
+              <p>Each level is a hand-illustrated chapter with battles, choices, and lore.</p>
+            </div>
+            <div class="pillar">
+              <span class="ico">📚</span>
+              <h4>Real Persian heritage</h4>
+              <p>Names, places, and tales drawn directly from Ferdowsi&rsquo;s verses.</p>
+            </div>
+            <div class="pillar">
+              <span class="ico">👑</span>
+              <h4>Clan progression</h4>
+              <p>Build your court of heroes, raid together, and climb the ranks.</p>
+            </div>
+            <div class="pillar">
+              <span class="ico">✦</span>
+              <h4>REAL economy</h4>
+              <p>Earn the in-game token through play, study, and seasons.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-frame reveal" aria-hidden="false">
+          <img src="assets/images/locations/ancient-pars-location.png" alt="Ancient Pars — the homeland of the first kings." loading="lazy" />
+          <span class="tag">Ancient Pars</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FERDOWSI ============ -->
+  <section class="ferdowsi" id="ferdowsi">
+    <div class="wrap">
+      <div class="what-grid">
+        <div class="portrait-frame reveal">
+          <img src="assets/images/lore/ferdowsi-intro.png" alt="Portrait of the poet Ferdowsi." loading="lazy" />
+          <div class="signature">
+            <span class="kicker">Your guide</span>
+            <h4>Abolqasem Ferdowsi</h4>
+            <small>940 – 1020 · Tus, Persia</small>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">Meet Ferdowsi</span>
+          <h2>The poet who <span class="gold">saved a civilization</span> with verse.</h2>
+          <p>For three decades Ferdowsi labored in poverty, refusing to let the language and memory of Persia be lost. He gave us the Shahnameh — a single, towering work that has shaped Persian identity for a thousand years.</p>
+          <blockquote class="quote">
+            &ldquo;I built with my poetry a palace so high,<br/>
+            that the wind and the rain shall never bring it down.&rdquo;
+            <cite>— Ferdowsi, Shahnameh</cite>
+          </blockquote>
+          <p>In our game, Ferdowsi is your narrator. He opens each chapter, walks you through its meaning, and rewards you for finishing the verse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 50 STORIES ============ -->
+  <section class="stories" id="stories">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament" aria-hidden="true"><span class="ornament-glyph"></span></div>
+        <span class="eyebrow">50 Stories · 50 Levels</span>
+        <h2>One epic, <span class="gold">fifty chapters</span>, your journey.</h2>
+        <p class="lead">From the first king at the dawn of the world, to the last Sassanian sunset. Each chapter is a level. Read, fight, claim — then unlock the next legend.</p>
+      </div>
+
+      <div class="stories-grid reveal" id="storiesGrid" aria-hidden="true">
+        <!-- 50 pips rendered by landing.js -->
+      </div>
+
+      <div class="stats-row reveal">
+        <div class="stat-mini"><div class="num">50</div><div class="lbl">Levels</div></div>
+        <div class="stat-mini"><div class="num">9 mo</div><div class="lbl">Full Season</div></div>
+        <div class="stat-mini"><div class="num">100+</div><div class="lbl">Heroes &amp; Foes</div></div>
+        <div class="stat-mini"><div class="num">∞</div><div class="lbl">Replayable</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHAPTER 1 ============ -->
+  <section class="chapter1" id="chapter1">
+    <div class="wrap">
+      <div class="grid">
+        <div class="chapter-cover reveal">
+          <span class="pin">Level 1 · Available now</span>
+          <img src="assets/images/scenes/chapter-1-complete-scene.png" alt="Scene from Chapter 1: Keyumars — beasts bow before the first king." loading="lazy" />
+          <div class="scene-strip" aria-hidden="true">
+            <span class="done"></span><span class="done"></span><span class="done"></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">Chapter 1 — Keyumars</span>
+          <h2>The dawn of the world. <span class="gold">The first king of men.</span></h2>
+          <p>Before the kings of Iran, the world was wild. Then came Keyumars — clothed in leopard skin, builder of the first court, the first to teach order to mankind. But in the shadows, Ahriman, the dark one, sends his Black Div against him&hellip;</p>
+          <ul class="beat-list">
+            <li>Read Ferdowsi&rsquo;s verse, scene by scene</li>
+            <li>Battle the Black Div in the Demon Forest</li>
+            <li>Mourn Prince Siamak. Vow vengeance.</li>
+            <li>Claim your REAL and unlock Hushang</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="/season2/chapter.html?slug=keyumars">Explore Chapter 1 <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="/season2/">Open the Game</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HEROES & ENEMIES ============ -->
+  <section class="heroes" id="heroes">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament" aria-hidden="true"><span class="ornament-glyph"></span></div>
+        <span class="eyebrow">Cast of the Shahnameh</span>
+        <h2>Heroes &amp; <span class="gold">enemies</span> of legend.</h2>
+        <p class="lead">From the first kings of Pars to the demons of Mazandaran — every face in our world is drawn from Ferdowsi&rsquo;s pages.</p>
+      </div>
+
+      <div class="cast-grid">
+        <article class="cast-card reveal">
+          <img src="assets/images/heroes/keyumars-hero.png" alt="Keyumars" loading="lazy" />
+          <div class="body">
+            <span class="role">★ Hero</span>
+            <h4>Keyumars</h4>
+            <p>The First King. Builder of court and crown.</p>
+          </div>
+        </article>
+        <article class="cast-card reveal">
+          <img src="assets/images/heroes/siamak-hero.png" alt="Siamak" loading="lazy" />
+          <div class="body">
+            <span class="role">★ Hero</span>
+            <h4>Siamak</h4>
+            <p>Beloved prince. The first martyr of Pars.</p>
+          </div>
+        </article>
+        <article class="cast-card reveal">
+          <img src="assets/images/heroes/hushang-hero.png" alt="Hushang" loading="lazy" onerror="this.parentElement.style.display='none'" />
+          <div class="body">
+            <span class="role">★ Hero</span>
+            <h4>Hushang</h4>
+            <p>Grandson of Keyumars. Tamer of fire.</p>
+          </div>
+        </article>
+        <article class="cast-card reveal">
+          <img src="assets/images/enemies/ahriman-boss.png" alt="Ahriman" loading="lazy" />
+          <div class="body">
+            <span class="role foe">✦ Final Boss</span>
+            <h4>Ahriman</h4>
+            <p>The Dark One. The first evil to walk the world.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLAN ============ -->
+  <section class="clan" id="clan">
+    <div class="wrap">
+      <div class="clan-grid">
+        <div class="reveal">
+          <span class="eyebrow">Build your clan</span>
+          <h2>A court of <span class="gold">kings, poets, warriors</span> — yours.</h2>
+          <p>Recruit heroes as you progress, form a clan with friends, and rise through the ranks of Pars together. Clans share battles, leaderboards, and seasonal rewards.</p>
+          <ul class="feature-list">
+            <li>
+              <span class="num">01</span>
+              <div>
+                <h5>Recruit heroes from every chapter</h5>
+                <p>Unlock playable heroes as you complete each of the 50 levels.</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <div>
+                <h5>Build a Persian court</h5>
+                <p>Choose your hero composition, level them, equip relics, and assign roles.</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <div>
+                <h5>Clan seasons &amp; leaderboards</h5>
+                <p>Join a clan, climb the throne, share rewards from clan-wide events.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="clan-frame reveal">
+          <img src="assets/images/locations/royal-mountain-court.png" alt="The royal mountain court of Pars." loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REAL TOKEN ============ -->
+  <section class="real" id="real">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament" aria-hidden="true"><span class="ornament-glyph"></span></div>
+        <span class="eyebrow">Currency of Pars</span>
+        <h2>The <span class="gold">REAL</span> economy.</h2>
+        <p class="lead">REAL is the in-game currency of the Shahnameh. Earn it by playing, studying, and finishing chapters. Spend it on heroes, relics, and clan upgrades. No pay-to-win.</p>
+      </div>
+
+      <div class="real-card reveal">
+        <div class="real-grid">
+          <div>
+            <div class="real-coin">
+              <img src="assets/images/tokens/realtoken.png" alt="The REAL token of Pars." />
+            </div>
+            <div class="token-uses">
+              <div class="token-use">Unlock heroes &amp; relics</div>
+              <div class="token-use">Clan upgrades</div>
+              <div class="token-use">Boss battle stamina</div>
+              <div class="token-use">Future marketplace</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="market-box">
+              <div class="market-head">
+                <span class="kicker">Live REAL Market</span>
+                <span class="market-status"><span class="dot" aria-hidden="true"></span> <span id="marketStatusText">Coming soon</span></span>
+              </div>
+              <div class="market-cells">
+                <div class="cell">
+                  <div class="lbl">Price (USD)</div>
+                  <div class="val" id="marketPrice">—</div>
+                </div>
+                <div class="cell">
+                  <div class="lbl">24h change</div>
+                  <div class="val" id="marketChange">—</div>
+                </div>
+                <div class="cell">
+                  <div class="lbl">Liquidity</div>
+                  <div class="val" id="marketLiquidity">—</div>
+                </div>
+              </div>
+              <p class="market-note">Live REAL market data coming soon — TON / DYOR integration in progress.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROADMAP ============ -->
+  <section class="roadmap" id="roadmap">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament" aria-hidden="true"><span class="ornament-glyph"></span></div>
+        <span class="eyebrow">Roadmap</span>
+        <h2>The journey ahead.</h2>
+        <p class="lead">Nine months. Fifty stories. One unified Persian world.</p>
+      </div>
+
+      <div class="road-line">
+        <div class="road-card done reveal">
+          <div class="phase"><span class="pip"></span> Phase 01 · Shipped</div>
+          <h4>Season 2 Preview</h4>
+          <p>Telegram-native foundation, profile, REAL balance, learn loop.</p>
+        </div>
+        <div class="road-card live reveal">
+          <div class="phase"><span class="pip"></span> Phase 02 · Live</div>
+          <h4>Chapter 1: Keyumars</h4>
+          <p>The first king, the first hero, the first boss — playable now.</p>
+        </div>
+        <div class="road-card reveal">
+          <div class="phase"><span class="pip"></span> Phase 03</div>
+          <h4>50-Story Journey</h4>
+          <p>Rolling out chapter by chapter — through Jamshid, Zahhak, Fereydun, Rostam.</p>
+        </div>
+        <div class="road-card reveal">
+          <div class="phase"><span class="pip"></span> Phase 04</div>
+          <h4>Clan System</h4>
+          <p>Form clans, share rewards, climb the throne of Pars.</p>
+        </div>
+        <div class="road-card reveal">
+          <div class="phase"><span class="pip"></span> Phase 05</div>
+          <h4>REAL Economy</h4>
+          <p>TON integration, live market, clan treasury.</p>
+        </div>
+        <div class="road-card reveal">
+          <div class="phase"><span class="pip"></span> Phase 06</div>
+          <h4>PvE Boss Battles</h4>
+          <p>Co-op raids against legendary divs and dragons.</p>
+        </div>
+        <div class="road-card reveal">
+          <div class="phase"><span class="pip"></span> Phase 07</div>
+          <h4>Special Relics</h4>
+          <p>Crown, mace, throne — equip your heroes with mythic gear.</p>
+        </div>
+        <div class="road-card reveal">
+          <div class="phase"><span class="pip"></span> Phase 08</div>
+          <h4>Future Marketplace</h4>
+          <p>Trade heroes, relics, and clan badges across the realm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMUNITY ============ -->
+  <section class="community" id="community">
+    <div class="wrap">
+      <div class="community-card reveal">
+        <div class="ornament" aria-hidden="true"><span class="ornament-glyph"></span></div>
+        <span class="eyebrow">Join the Court</span>
+        <h2>The realm is gathering. <span class="gold">Take your seat.</span></h2>
+        <p>Be among the first to play Chapter 1, claim your hero, and ride out with a clan of your own.</p>
+        <div class="hero-ctas" style="justify-content:center;">
+          <a class="btn btn-primary" href="/season2/">Play Season 2 Preview <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="/season2/chapter.html?slug=keyumars">Explore Chapter 1</a>
+        </div>
+        <div class="divider" style="margin: 36px auto 24px; max-width:240px;"></div>
+        <div class="socials">
+          <a class="social-btn" href="#" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 16.6l-.4 4c.6 0 .8-.3 1.2-.6l2.8-2.6 5.8 4.3c1.1.6 1.8.3 2.1-1l3.8-17.8h0c.3-1.7-.6-2.3-1.7-1.9L2 8.8C.4 9.4.4 10.4 1.7 10.8L7 12.4 19.2 4.7c.6-.4 1.1-.2.7.2"/></svg>
+            Telegram
+          </a>
+          <a class="social-btn" href="#" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.5 5.6c-.8.4-1.6.6-2.5.7.9-.5 1.6-1.4 1.9-2.4-.8.5-1.8.9-2.7 1.1C18.4 4.1 17.3 3.5 16 3.5c-2.5 0-4.5 2-4.5 4.5 0 .4 0 .7.1 1C7.7 8.8 4.1 6.9 1.7 4 1.3 4.7 1.1 5.5 1.1 6.4c0 1.6.8 3 2 3.8-.7 0-1.4-.2-2-.5v.1c0 2.2 1.5 4 3.6 4.4-.4.1-.8.2-1.2.2-.3 0-.6 0-.9-.1.6 1.8 2.3 3.1 4.3 3.2-1.6 1.2-3.6 2-5.8 2-.4 0-.8 0-1.1-.1 2.1 1.3 4.5 2.1 7.1 2.1 8.5 0 13.2-7.1 13.2-13.2v-.6c.9-.7 1.7-1.5 2.3-2.4z"/></svg>
+            X / Twitter
+          </a>
+          <a class="social-btn" href="#" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.5 18H6V10h2.5v8zM7.2 8.7C6.4 8.7 5.7 8 5.7 7.2 5.7 6.3 6.4 5.7 7.2 5.7c.9 0 1.5.6 1.5 1.5 0 .8-.6 1.5-1.5 1.5zM18 18h-2.5v-4.3c0-1-.4-1.7-1.3-1.7-.7 0-1.1.5-1.3 1-.1.2-.1.4-.1.7V18h-2.5v-8h2.5v1.1c.3-.5 1-1.3 2.4-1.3 1.8 0 3 1.2 3 3.5V18z"/></svg>
+            Discord
+          </a>
+        </div>
+
+        <footer>
+          <div class="foot-row">
+            <div>© <span id="year">2026</span> Shahnameh · The Book of Kings</div>
+            <div>
+              <a href="/season2/">Play</a>·
+              <a href="#what">About</a>·
+              <a href="#roadmap">Roadmap</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+  <script src="landing.js?v=20260513-1"></script>
+</body>
 </html>

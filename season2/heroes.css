@@ -548,7 +548,7 @@
   overflow: hidden;
 }
 .cert-acc-trigger {
-  width: 100%; text-align: left; padding: 11px 14px;
+  width: 100%; text-align: start; padding: 11px 14px;
   display: flex; align-items: center; justify-content: space-between;
   font-size: 12px; font-weight: 700; color: rgba(255,255,255,.5);
   letter-spacing: .3px; cursor: pointer;
@@ -564,13 +564,14 @@
 .cert-acc-item.open .cert-acc-arrow  { transform: rotate(90deg); color: var(--gold); }
 .cert-acc-item.open .cert-acc-trigger { color: var(--gold); }
 
-.cert-acc-body { max-height: 0; overflow: hidden; transition: max-height .32s ease; }
-.cert-acc-item.open .cert-acc-body { max-height: 500px; }
+.cert-acc-body { max-height: 0; overflow: hidden; transition: max-height .48s ease; }
+.cert-acc-item.open .cert-acc-body { max-height: 1200px; }
 
 .cert-acc-content { padding: 0 14px 14px; }
 .cert-acc-content p {
-  font-size: 12.5px; color: rgba(255,255,255,.48); line-height: 1.65;
+  font-size: 12.5px; color: rgba(255,255,255,.48); line-height: 1.72;
   margin: 0 0 4px; font-style: italic;
+  word-break: break-word; overflow-wrap: anywhere;
   animation: accordion-open .25s ease;
 }
 .cert-acc-content .faction-val {

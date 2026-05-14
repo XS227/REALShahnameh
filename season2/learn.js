@@ -14,6 +14,7 @@
   if (!host) return;
 
   const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  const fmtNum = (n) => (window.RealI18N && window.RealI18N.formatNumber) ? window.RealI18N.formatNumber(n) : String(n);
   const locF = (obj, field) => (window.RealI18N && window.RealI18N.locField)
     ? window.RealI18N.locField(obj, field) : (obj && obj[field] != null ? obj[field] : "");
 
@@ -64,8 +65,8 @@
 
       const rewardLine = c.rewards ? `
         <span class="reward">
-          ${c.rewards.xp ? `<i class="s2-icon xp"></i> ${esc(c.rewards.xp)} XP` : ""}
-          ${c.rewards.real ? ` · <i class="real-coin"></i> ${esc(c.rewards.real)} REAL` : ""}
+          ${c.rewards.xp ? `<i class="s2-icon xp"></i> ${esc(fmtNum(c.rewards.xp))} ${t("r_xp")}` : ""}
+          ${c.rewards.real ? ` · <i class="real-coin"></i> ${esc(fmtNum(c.rewards.real))} REAL` : ""}
         </span>` : "";
 
       const inner = `

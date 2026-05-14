@@ -631,5 +631,17 @@
       skin_unlock_season: "Season drop",
       skin_unlock_legendary: "Legendary",
 
+      /* Chapters / progress */
+      chapters_progress_tpl: "{done} of {total} chapters",
+      chapter_rewards_locked: "Chapter rewards locked in.",
+      chapter_next_unlocked: "Chapter {n} unlocked",
+
+      /* Quiz feedback */
+      quiz_reread_title: "Re-read and try again",
+      quiz_no_xp_round: "No XP this round — the chronicle awaits.",
+
+      /* Hero fragment */
+      hero_fragment_label: "Hero fragment",
+
   };
 })();

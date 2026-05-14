@@ -25,6 +25,15 @@
       "timestamp": "2026-05-13T00:28:09.040Z",
       "day": "2026-05-13",
       "provider_placeholder": "stub"
+    },
+    {
+      "telegram_id": "preview:u_t0ig755k",
+      "user_id": "u_t0ig755k",
+      "reward_type": "energy",
+      "reward_amount": 25,
+      "timestamp": "2026-05-14T17:30:40.377Z",
+      "day": "2026-05-14",
+      "provider_placeholder": "stub"
     }
   ]
 }

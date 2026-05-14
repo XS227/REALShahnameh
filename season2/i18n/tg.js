@@ -629,5 +629,17 @@
       skin_unlock_season: "Мукофоти фасл",
       skin_unlock_legendary: "Асотирӣ",
 
+      /* Chapters / progress */
+      chapters_progress_tpl: "{done} аз {total} боб",
+      chapter_rewards_locked: "Мукофотҳои боб маҳкам шуданд.",
+      chapter_next_unlocked: "Боби {n} кушода шуд",
+
+      /* Quiz feedback */
+      quiz_reread_title: "Аз нав хонед ва кӯшиш кунед",
+      quiz_no_xp_round: "Дар ин давр ТА нест — солнома интизор аст.",
+
+      /* Hero fragment */
+      hero_fragment_label: "Парчаи қаҳрамон",
+
   };
 })();
