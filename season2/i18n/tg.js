@@ -617,5 +617,17 @@
       feed_atena_upgrade_html: "<b>Atena</b> Ростамро ба сатҳи 13 баланд бардошт",
       feed_guild_top10_html: "Гилди <b>FireSimorgh</b> ба дасаки аввал расид",
 
+      /* Tap page */
+      just_now: "ҳозир",
+      rarity_default: "Пешфарз",
+      locked_label: "Қулф",
+      coming_soon_short: "Ба зудӣ",
+      skin_unlock_ch1: "Ҳикоя · Боби 1",
+      skin_unlock_ch2: "Ҳикоя · Боби 2",
+      skin_unlock_500: "500 REAL",
+      skin_unlock_1000: "1,000 REAL",
+      skin_unlock_season: "Мукофоти фасл",
+      skin_unlock_legendary: "Асотирӣ",
+
   };
 })();

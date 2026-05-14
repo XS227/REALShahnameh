@@ -618,5 +618,17 @@
       feed_atena_upgrade_html: "<b>Atena</b> رستم را به سطح ۱۳ ارتقا داد",
       feed_guild_top10_html: "گیلد <b>FireSimorgh</b> به ۱۰ نفر برتر رسید",
 
+      /* Tap page */
+      just_now: "همین الان",
+      rarity_default: "پیش‌فرض",
+      locked_label: "قفل",
+      coming_soon_short: "به زودی",
+      skin_unlock_ch1: "داستان · فصل ۱",
+      skin_unlock_ch2: "داستان · فصل ۲",
+      skin_unlock_500: "۵۰۰ REAL",
+      skin_unlock_1000: "۱٬۰۰۰ REAL",
+      skin_unlock_season: "پاداش فصل",
+      skin_unlock_legendary: "اساطیری",
+
   };
 })();

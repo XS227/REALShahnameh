@@ -77,6 +77,17 @@
   /* ---- i18n helper (graceful: falls back to key if runtime not ready) ---- */
   const t = (k) => (window.RealI18N && window.RealI18N.t(k)) || k;
 
+  /* Map hardcoded unlock strings to i18n keys */
+  const UNLOCK_KEYS = {
+    "Story · Ch. 1": "skin_unlock_ch1",
+    "Story · Ch. 2": "skin_unlock_ch2",
+    "500 REAL":      "skin_unlock_500",
+    "1,000 REAL":    "skin_unlock_1000",
+    "Season drop":   "skin_unlock_season",
+    "Legendary":     "skin_unlock_legendary",
+  };
+  const unlockLabel = (s) => s ? (t(UNLOCK_KEYS[s] || s)) : t("locked_label");
+
   /* ---- Helpers ---- */
   const getSavedSkin = () => {
     try { return localStorage.getItem(SKIN_LS) || "real"; } catch { return "real"; }
@@ -152,7 +163,7 @@
       }
 
       const rarityLabel = ({
-        default: "Default",
+        default: t("rarity_default"),
         common:  t("rarity_common"),
         rare:    t("rarity_rare"),
         epic:    t("rarity_epic"),
@@ -163,12 +174,12 @@
       btn.innerHTML = `
         <div class="skin-portrait ${rc}">${portInner}</div>
         <div class="skin-name">${skin.name}</div>
-        <div class="skin-sub ${rc}">${skin.locked ? (skin.unlock || "Locked") : rarityLabel}</div>
+        <div class="skin-sub ${rc}">${skin.locked ? unlockLabel(skin.unlock) : rarityLabel}</div>
       `;
 
       btn.addEventListener("click", () => {
         if (skin.locked) {
-          showToast(`🔒 ${skin.name} — ${skin.unlock || "Coming soon"}`);
+          showToast(`🔒 ${skin.name} — ${unlockLabel(skin.unlock)}`);
           if (navigator.vibrate) navigator.vibrate(6);
           return;
         }

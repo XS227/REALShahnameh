@@ -619,5 +619,17 @@
       feed_atena_upgrade_html: "<b>Atena</b> upgraded Rostam to LVL 13",
       feed_guild_top10_html: "Guild <b>FireSimorgh</b> reached top 10",
 
+      /* Tap page */
+      just_now: "just now",
+      rarity_default: "Default",
+      locked_label: "Locked",
+      coming_soon_short: "Coming soon",
+      skin_unlock_ch1: "Story · Ch. 1",
+      skin_unlock_ch2: "Story · Ch. 2",
+      skin_unlock_500: "500 REAL",
+      skin_unlock_1000: "1,000 REAL",
+      skin_unlock_season: "Season drop",
+      skin_unlock_legendary: "Legendary",
+
   };
 })();

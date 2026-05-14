@@ -1055,7 +1055,10 @@
           // description swap (subtle — only if .role exists and isn't already custom)
           const role = card.querySelector(".role");
           if (role && hero.bonus) {
-            role.textContent = `${hero.rarity || ""} · ${hero.bonus}`;
+            const r = String(hero.rarity || "").toLowerCase();
+            const rKey = r === "legendary" ? "rarity_legend" : r ? "rarity_" + r : "";
+            const rLabel = rKey ? (t(rKey) !== rKey ? t(rKey) : hero.rarity) : "";
+            role.textContent = `${rLabel} · ${hero.bonus}`;
           }
         });
       })
