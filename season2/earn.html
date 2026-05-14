@@ -71,25 +71,30 @@
       <div class="bar" style="margin-top:10px;"><span class="fill" style="width:7%; background: linear-gradient(90deg, var(--violet), var(--gold));"></span></div>
     </article>
 
-    <!-- Rewarded ads -->
-    <div class="section-head"><h3>Watch &amp; Earn</h3><span class="more" style="cursor:default;" data-ad-remaining>5 / 5 today</span></div>
+    <!-- Rewarded ads — primary rewards are Energy + Gems + Zar (daily training).
+         REAL drops are demoted to a small ecosystem row beneath. -->
+    <div class="section-head"><h3 data-i18n="watch_earn">Watch &amp; Earn</h3><span class="more" style="cursor:default;" data-ad-remaining data-i18n="ad_remaining">5 / 5 today</span></div>
     <section class="action-grid">
       <article class="card action gold-edge">
-        <h4><span class="ico">⚡</span> +25 Energy</h4>
-        <p class="copy">Top up your energy to keep tapping.</p>
-        <div class="row"><button class="primary-btn btn-block" data-ad="energy">Watch ad · +25 ⚡</button></div>
+        <h4><span class="ico">⚡</span> <span data-i18n="ad_energy_h">+25 Energy</span></h4>
+        <p class="copy" data-i18n="ad_energy_copy">Top up your energy to keep tapping.</p>
+        <div class="row"><button class="primary-btn btn-block" data-ad="energy" data-i18n="ad_energy_btn">Watch ad · +25 ⚡</button></div>
       </article>
       <article class="card action violet-edge">
-        <h4><span class="ico">💎</span> +10 Gems</h4>
-        <p class="copy">Stockpile gems for hero upgrades.</p>
-        <div class="row"><button class="secondary-btn btn-block" data-ad="gems">Watch ad · +10 💎</button></div>
-      </article>
-      <article class="card action gold-edge" style="grid-column:1/-1;">
-        <h4><span class="ico">🪙</span> +100 REAL</h4>
-        <p class="copy">Quick boost to your balance. Daily limit applies.</p>
-        <div class="row"><button class="primary-btn btn-block" data-ad="real">Watch ad · +100 REAL</button></div>
+        <h4><span class="ico">💎</span> <span data-i18n="ad_gems_h">+10 Gems</span></h4>
+        <p class="copy" data-i18n="ad_gems_copy">Stockpile gems for hero upgrades.</p>
+        <div class="row"><button class="secondary-btn btn-block" data-ad="gems" data-i18n="ad_gems_btn">Watch ad · +10 💎</button></div>
       </article>
     </section>
+    <!-- REAL ad — discreet ecosystem row, intentionally NOT in the action-grid headline. -->
+    <article class="card" data-ad-real-row style="margin-top:8px; padding:10px 12px; display:flex; align-items:center; gap:10px; background:rgba(255,255,255,.025); border-color:rgba(220,220,235,.12);">
+      <span class="ico" style="font-size:12px; color:rgba(220,220,235,.7); background:rgba(220,220,235,.05); border-color:rgba(220,220,235,.12); flex:0 0 28px; width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px;">◆</span>
+      <div style="flex:1; min-width:0;">
+        <div style="font-size:12px; font-weight:700;" data-i18n="ad_real_h">+100 REAL</div>
+        <div style="font-size:10px; color:var(--muted); margin-top:2px;" data-i18n="ad_real_copy">Quick boost to your balance. Daily limit applies.</div>
+      </div>
+      <button class="ghost-btn" data-ad="real" style="font-size:11px; padding:6px 12px; white-space:nowrap;" data-i18n="ad_real_btn">Watch ad · +100 REAL</button>
+    </article>
 
     <!-- Milestones -->
     <div class="section-head"><h3 data-i18n="milestones">Milestones</h3><span class="more" style="cursor:default;" data-i18n="tap_to_share">Tap to share</span></div>
@@ -98,74 +103,76 @@
       <article class="card milestone done">
         <span class="crest">3</span>
         <div>
-          <h4>Invite 3 friends</h4>
-          <p class="copy">3 / 3 — Reward chest claimed.</p>
+          <h4 data-i18n="invite_3_h">Invite 3 friends</h4>
+          <p class="copy" data-i18n="invite_3_copy">3 / 3 — Reward chest claimed.</p>
           <div class="mini-bar"><span class="fill" style="width:100%;"></span></div>
         </div>
-        <div class="reward-tag">🎁 Chest</div>
+        <div class="reward-tag" data-i18n="reward_chest">🎁 Chest</div>
       </article>
 
       <article class="card milestone">
         <span class="crest">10</span>
         <div>
-          <h4>Invite 10 friends</h4>
-          <p class="copy">7 / 10 — Rare hero awaiting.</p>
+          <h4 data-i18n="invite_10_h">Invite 10 friends</h4>
+          <p class="copy" data-i18n="invite_10_copy">7 / 10 — Rare hero awaiting.</p>
           <div class="mini-bar"><span class="fill" style="width:70%;"></span></div>
         </div>
-        <div class="reward-tag">⚔ Rare hero</div>
+        <div class="reward-tag" data-i18n="reward_rare_hero">⚔ Rare hero</div>
       </article>
 
       <article class="card milestone">
         <span class="crest">25</span>
         <div>
-          <h4>Invite 25 friends</h4>
-          <p class="copy">7 / 25 — Airdrop access unlocks.</p>
+          <h4 data-i18n="invite_25_h">Invite 25 friends</h4>
+          <p class="copy" data-i18n="invite_25_copy">7 / 25 — Season allocation unlocks.</p>
           <div class="mini-bar"><span class="fill" style="width:28%;"></span></div>
         </div>
-        <div class="reward-tag">🪂 Airdrop</div>
+        <div class="reward-tag" data-i18n="reward_airdrop">🪂 Allocation</div>
       </article>
 
       <article class="card milestone">
         <span class="crest">100</span>
         <div>
-          <h4>Invite 100 friends</h4>
-          <p class="copy">7 / 100 — Founder badge + mythic frame.</p>
+          <h4 data-i18n="invite_100_h">Invite 100 friends</h4>
+          <p class="copy" data-i18n="invite_100_copy">7 / 100 — Founder badge + mythic frame.</p>
           <div class="mini-bar"><span class="fill" style="width:7%;"></span></div>
         </div>
-        <div class="reward-tag">🏆 Founder</div>
+        <div class="reward-tag" data-i18n="reward_founder">🏆 Founder</div>
       </article>
 
     </section>
 
-    <!-- REAL Utility -->
-    <div class="section-head"><h3 data-i18n="real_utility">REAL Utility</h3></div>
+    <!-- Where REAL belongs — the legitimate ecosystem-utility section.
+         This is the ONE place on the page where REAL gets a clear spotlight,
+         framing it as an unlock layer for special rewards / governance. -->
+    <div class="section-head"><h3 data-i18n="real_utility">Where REAL belongs</h3></div>
     <section class="utility-grid">
       <article class="card utility-row">
         <span class="ico">⚡</span>
         <div>
-          <h5>Boosts &amp; energy refills</h5>
-          <p>Spend REAL to break the cooldown loop.</p>
+          <h5 data-i18n="util_boosts_h">Boosts &amp; energy refills</h5>
+          <p data-i18n="util_boosts_copy">Use REAL to skip cooldowns when the chronicle calls.</p>
         </div>
       </article>
       <article class="card utility-row">
         <span class="ico" style="background: rgba(244,197,107,.14); border-color: var(--border-gold); color: var(--gold);">⚔</span>
         <div>
-          <h5>Hero upgrades</h5>
-          <p>Push passives into mythic territory.</p>
+          <h5 data-i18n="util_hero_h">Hero upgrades</h5>
+          <p data-i18n="util_hero_copy">Push passives into mythic territory.</p>
         </div>
       </article>
       <article class="card utility-row">
         <span class="ico" style="background: rgba(83,215,156,.14); border-color: rgba(83,215,156,.32); color: var(--jade);">🪙</span>
         <div>
-          <h5>Premium chapter unlocks</h5>
-          <p>Skip ahead in the chronicle, keep rewards.</p>
+          <h5 data-i18n="util_chapter_h">Premium chapter unlocks</h5>
+          <p data-i18n="util_chapter_copy">Skip ahead in the chronicle, keep rewards.</p>
         </div>
       </article>
       <article class="card utility-row">
         <span class="ico" style="background: rgba(94,162,255,.14); border-color: rgba(94,162,255,.32); color: var(--azure);">🏆</span>
         <div>
-          <h5>Tournaments &amp; cosmetics</h5>
-          <p>Entry fees, exclusive frames, weekly prizes.</p>
+          <h5 data-i18n="util_tourn_h">Tournaments &amp; cosmetics</h5>
+          <p data-i18n="util_tourn_copy">Entry fees, exclusive frames, weekly prizes.</p>
         </div>
       </article>
     </section>
@@ -184,7 +191,7 @@
     <div class="section-head"><h3 data-i18n="team_rewards">Team rewards</h3></div>
     <article class="card violet-edge action" style="padding:14px;">
       <h4 style="display:flex; align-items:center; gap:8px;"><span class="ico">🛡</span> Lions of Pars</h4>
-      <p class="copy" style="margin:6px 0 10px;">Your guild boosts everyone's tap by +6% while you climb. Invite into the same guild for stacked rewards in the seasonal contest.</p>
+      <p class="copy" style="margin:6px 0 10px;" data-i18n="guild_lions_copy">Your guild boosts everyone's tap by +6% while you climb. Invite into the same guild for stacked rewards in the seasonal contest.</p>
       <div class="row">
         <button class="primary-btn btn-block" data-toast-msg="Guild contest live · ends in 3d 12h" data-i18n="view_contest">View Contest</button>
       </div>
@@ -193,8 +200,8 @@
   </main>
 
   <nav class="bottom-nav">
-    <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span>Home</span></a>
-    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span>Tap</span></a>
+    <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="home">Home</span></a>
+    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span data-i18n="tap">Tap</span></a>
     <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
     <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
     <a class="nav-item active" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
@@ -221,5 +228,6 @@
   <script src="i18n/fa.js?v=202605140004"></script>
   <script src="i18n/tg.js?v=202605140004"></script>
   <script src="i18n.js?v=202605140004"></script>
+  <script src="resources.js?v=202605140005"></script>
 </body>
 </html>

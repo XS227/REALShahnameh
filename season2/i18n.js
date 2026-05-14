@@ -141,20 +141,20 @@
     const page = (location.pathname.split("/").pop() || "index.html").replace(/\?.*/, "");
     const titleByLang = {
       fa: {
-        "tap.html":    "ریل شاهنامه — استخراج",
+        "tap.html":    "ریل شاهنامه — کوره‌ی پارس",
         "learn.html":  "ریل شاهنامه — یادگیری",
         "heroes.html": "ریل شاهنامه — قهرمانان",
-        "earn.html":   "ریل شاهنامه — درآمد",
+        "earn.html":   "ریل شاهنامه — مأموریت‌ها و پاداش‌ها",
         "social.html": "ریل شاهنامه — اجتماعی",
         "index.html":  "ریل شاهنامه",
         "intro.html":  "ریل شاهنامه",
         "chapter.html":"ریل شاهنامه — فصل",
       },
       tg: {
-        "tap.html":    "REAL Шоҳнома — Истихроҷ",
+        "tap.html":    "REAL Шоҳнома — Кӯраи Порс",
         "learn.html":  "REAL Шоҳнома — Омӯзиш",
         "heroes.html": "REAL Шоҳнома — Қаҳрамонон",
-        "earn.html":   "REAL Шоҳнома — Мукофот",
+        "earn.html":   "REAL Шоҳнома — Вазифаҳо ва мукофотҳо",
         "social.html": "REAL Шоҳнома — Иҷтимоӣ",
         "index.html":  "REAL Шоҳнома",
         "intro.html":  "REAL Шоҳнома",

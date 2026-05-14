@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#04050b" />
-  <title>REAL Shahnameh — Tap</title>
+  <title>REAL Shahnameh — Forge of Pars</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605130010" />
+  <link rel="stylesheet" href="style.css?v=202605140005" />
   <link rel="stylesheet" href="home.css?v=202605130010" />
   <link rel="stylesheet" href="tap.css?v=202605130010" />
 </head>
@@ -16,8 +16,8 @@
     <!-- ── Header ─────────────────────────────────────── -->
     <section class="page-head" style="margin-bottom:2px;">
       <div>
-        <h2 class="page-title">REAL Mining</h2>
-        <p class="page-sub">Tap · Earn · Claim</p>
+        <h2 class="page-title" data-i18n="forge_title">The Forge of Pars</h2>
+        <p class="page-sub" data-i18n="forge_subtitle">Train · Mint · Rise</p>
       </div>
       <span class="pill" data-i18n="season2">Season 2</span>
     </section>
@@ -25,36 +25,37 @@
     <!-- ── Session stats ──────────────────────────────── -->
     <div class="tap-stats-bar">
       <div class="tsb-cell gold">
-        <div class="lbl">Balance</div>
+        <div class="lbl" data-i18n="balance">Balance</div>
         <div class="val" data-balance>12,840</div>
       </div>
       <div class="tsb-cell jade">
-        <div class="lbl">REAL / hr</div>
+        <div class="lbl" data-i18n="forge_per_hr">Zar / hr</div>
         <div class="val">+172</div>
       </div>
       <div class="tsb-cell ember">
-        <div class="lbl">Streak</div>
+        <div class="lbl" data-i18n="streak">Streak</div>
         <div class="val">🔥 12</div>
       </div>
     </div>
 
-    <!-- ── Auto-mining claim ──────────────────────────── -->
+    <!-- ── Auto-forge claim ─────────────────────────────
+         Hourly auto-yield in Zar (primary economy). The old REAL coin
+         icon is retained as a tiny ecosystem-layer accent, not the headline. -->
     <div class="real-hr-banner">
       <div class="rhb-left">
-        <div class="rhb-label">Auto-mining income</div>
+        <div class="rhb-label" data-i18n="auto_mining_income">Auto-forge income</div>
         <div class="rhb-val">
-          +172
-          <img src="/assets/images/tokens/realtoken.png" alt="REAL"
-               style="height:18px;vertical-align:middle;"
-               onerror="this.replaceWith(document.createTextNode(' REAL'))">/hr
+          <span>+172 🪙</span>
+          <span style="font-size:11px;color:var(--muted);margin-left:6px;" data-i18n="r_zar">Zar</span>
+          <span style="font-size:9px;color:rgba(220,220,235,.45);margin-left:8px;letter-spacing:.8px;">/hr</span>
         </div>
       </div>
-      <button class="rhb-claim" data-action="claim">Claim ›</button>
+      <button class="rhb-claim" data-action="claim" data-i18n="claim">Claim ›</button>
     </div>
 
     <!-- ── MINTING CORE ───────────────────────────────── -->
     <section class="mint-core-section">
-      <div class="mint-core-label">⬡ Minting Core — Tap to Create REAL</div>
+      <div class="mint-core-label" data-i18n="forge_core_label">⬡ The Anvil — Strike to forge Zar</div>
 
       <div class="core-wrap" data-core>
         <span class="ring r1"></span>
@@ -88,18 +89,18 @@
         </div>
       </div>
 
-      <p class="mint-hint">Each tap creates new REAL tokens · combo multiplies your yield</p>
+      <p class="mint-hint" data-i18n="forge_hint">Each strike forges new Zar · combo deepens the seam · rare strikes drop REAL</p>
     </section>
 
     <!-- ── Combo × Streak ────────────────────────────── -->
     <div class="combo-display">
       <div class="combo-left">
-        <div class="combo-label">Combo Multiplier</div>
+        <div class="combo-label" data-i18n="combo_multiplier">Combo Multiplier</div>
         <div class="combo-val">×<span data-combo>1.0</span></div>
       </div>
       <div class="combo-right">
-        <div class="streak-label">Daily streak</div>
-        <div class="streak-val">🔥 12 days</div>
+        <div class="streak-label" data-i18n="streak_label">Daily streak</div>
+        <div class="streak-val" data-i18n="streak_val">🔥 12 days</div>
       </div>
     </div>
 
@@ -117,10 +118,10 @@
         <h5>
           <span class="ico"
                 style="font-size:15px;background:rgba(140,109,255,.18);border-color:var(--border-violet);color:var(--violet);">💎</span>
-          Refill
+          <span data-i18n="refill">Refill</span>
         </h5>
-        <p class="copy">Restore 500 energy instantly. Watch an ad.</p>
-        <button class="secondary-btn btn-block" data-ad="energy">Watch ad</button>
+        <p class="copy" data-i18n="refill_copy">Restore 500 energy instantly. Watch an ad.</p>
+        <button class="secondary-btn btn-block" data-ad="energy" data-i18n="watch_ad_energy">Watch ad</button>
       </div>
     </div>
 
@@ -129,20 +130,22 @@
     ══════════════════════════════════════════════════ -->
     <section>
       <div class="skins-section-head">
-        <h3>⬡ Tap Skins</h3>
-        <p>Earn through chapters · Buy with REAL · Win in events &amp; airdrops</p>
+        <h3 data-i18n="forge_skins_title">⬡ Skins of the Anvil</h3>
+        <p data-i18n="forge_skins_sub">Unlock through chapters · Bound to your court</p>
       </div>
       <!-- Cards injected by tap.js -->
       <div class="skin-rail" data-skin-rail></div>
     </section>
 
     <!-- ══════════════════════════════════════════════════
-         REAL MARKET
+         ECOSYSTEM LAYER · REAL Market
+         The REAL token lives here as the quiet economic layer beneath
+         the daily Forge/Zar loop — not as the headline of the page.
     ══════════════════════════════════════════════════ -->
     <section>
       <div class="section-head" style="margin-bottom:10px;">
-        <h3>◆ REAL Market</h3>
-        <span style="font-size:10px;color:var(--muted);">powered by TON</span>
+        <h3 data-i18n="market_title">◆ REAL Market</h3>
+        <span style="font-size:10px;color:var(--muted);" data-i18n="market_powered">powered by TON</span>
       </div>
 
       <div class="market-card-wrap" data-market-card data-state="connecting">
@@ -216,28 +219,28 @@
       </div>
     </section>
 
-    <!-- ── Recent mining ──────────────────────────────── -->
+    <!-- ── Recent forging ─────────────────────────────── -->
     <div class="tap-history">
-      <h5>Recent mining</h5>
+      <h5 data-i18n="forge_recent">Recent forging</h5>
       <div class="history-rows">
         <div class="history-row">
-          <span class="h-event">Tap burst · ×1.4 combo</span>
-          <span class="h-gain">+34 REAL</span>
+          <span class="h-event" data-i18n="forge_burst_evt">Forge burst · ×1.4 combo</span>
+          <span class="h-gain">+34 🪙</span>
           <span class="h-time">just now</span>
         </div>
         <div class="history-row">
-          <span class="h-event">Critical hit!</span>
-          <span class="h-gain">+28 REAL</span>
+          <span class="h-event" data-i18n="forge_crit_evt">Mythic strike!</span>
+          <span class="h-gain">+28 🪙</span>
           <span class="h-time">2m</span>
         </div>
         <div class="history-row">
-          <span class="h-event">Auto-claim · 1 hr</span>
-          <span class="h-gain">+172 REAL</span>
+          <span class="h-event" data-i18n="forge_auto_evt">Auto-forge · 1 hr</span>
+          <span class="h-gain">+172 🪙</span>
           <span class="h-time">1h</span>
         </div>
         <div class="history-row">
-          <span class="h-event">Boost activated</span>
-          <span class="h-gain">+3× power</span>
+          <span class="h-event" data-i18n="forge_boost_evt">Boost activated</span>
+          <span class="h-gain" data-i18n="gain_power">+3× power</span>
           <span class="h-time">2h</span>
         </div>
       </div>
@@ -291,6 +294,7 @@
   <script src="i18n/fa.js?v=202605140004"></script>
   <script src="i18n/tg.js?v=202605140004"></script>
   <script src="i18n.js?v=202605140004"></script>
+  <script src="resources.js?v=202605140005"></script>
   <script src="market.js?v=202605130010"></script>
   <script src="tap.js?v=202605130010"></script>
 </body>

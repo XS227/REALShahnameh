@@ -121,6 +121,25 @@
     if (fillEl) fillEl.style.width = Math.max(0.4, Math.min(100, (dayNum / (totalDays || 270)) * 100)) + "%";
   };
 
+  /* Treasury HUD — five resources (Farr / Zar / Gems / XP) with REAL as a
+     quiet ecosystem row beneath. Filled from Player state via resources.js. */
+  const mountTreasury = () => {
+    const host = document.querySelector("[data-resource-hud]");
+    if (!host || !window.RealResources) return;
+    window.RealResources.mountHud(host);
+    // mountHud injects fresh DOM nodes whose .r-cell-lbl carry the localized
+    // resource names. Re-apply locale so any data-i18n inside the cells
+    // (currently none, but future cells may add some) get picked up.
+    if (window.RealI18N && window.RealI18N.applyLocale) {
+      window.RealI18N.applyLocale();
+    }
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", mountTreasury);
+  } else {
+    mountTreasury();
+  }
+
   /* Fire both fetches in parallel. Both are best-effort; failures
      don't blank the page, they just leave the strip empty. */
   fetch("/api/catalog/heroes",   { cache: "no-store" })
