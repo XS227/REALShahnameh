@@ -642,5 +642,30 @@
       /* Hero fragment */
       hero_fragment_label: "تکه‌ی قهرمان",
 
+      /* Hamburger nav labels */
+      guild: "اتحادیه",
+      market: "بازار",
+      inventory: "انبار",
+      profile: "پروفایل",
+      nav_hakim: "هوش مصنوعی حکیم",
+
+      /* Hakim AI Companion */
+      hakim_title: "حکیم",
+      hakim_subtitle: "همراه هوشمند شاهنامه",
+      hakim_intro: "از حکیم درباره‌ی قهرمانان، پادشاهان، نبردها، واژگان کهن، درس‌های اخلاقی یا ماجراجویی بعدی‌ات بپرس.",
+      hakim_chat_placeholder: "هر چیزی از حکیم بپرس…",
+      hakim_quick_explain: "این فصل را توضیح بده",
+      hakim_quick_quest: "کمک در ماجرا",
+      hakim_quick_word: "یک واژه یاد بده",
+      hakim_quick_battle: "راهنمایی نبرد",
+      hakim_quick_wisdom: "یک حکمت بگو",
+      hakim_quick_translate: "ترجمه کن",
+      hakim_daily_wisdom: "حکمت روزانه",
+      hakim_bond_level: "سطح پیوند",
+      hakim_ask_btn: "از حکیم بپرس",
+      hakim_loading: "حکیم در اندیشه است…",
+      hakim_error: "حکیم در حال استراحت است. کمی صبر کن.",
+      hakim_bond_xp: "۰ / ۱۰۰ تجربه",
+
   };
 })();

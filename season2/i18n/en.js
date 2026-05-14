@@ -643,5 +643,30 @@
       /* Hero fragment */
       hero_fragment_label: "Hero fragment",
 
+      /* Hamburger nav labels */
+      guild: "Guild",
+      market: "Market",
+      inventory: "Inventory",
+      profile: "Profile",
+      nav_hakim: "Hakim AI",
+
+      /* Hakim AI Companion */
+      hakim_title: "Hakim",
+      hakim_subtitle: "AI Companion of the Shahnameh",
+      hakim_intro: "Ask Hakim about heroes, kings, battles, ancient words, moral lessons, or your next quest.",
+      hakim_chat_placeholder: "Ask Hakim anything…",
+      hakim_quick_explain: "Explain this chapter",
+      hakim_quick_quest: "Help with quest",
+      hakim_quick_word: "Teach me a word",
+      hakim_quick_battle: "Battle advice",
+      hakim_quick_wisdom: "Tell me a wisdom",
+      hakim_quick_translate: "Translate this",
+      hakim_daily_wisdom: "Daily Wisdom",
+      hakim_bond_level: "Bond Level",
+      hakim_ask_btn: "Ask Hakim",
+      hakim_loading: "Hakim is thinking…",
+      hakim_error: "Hakim is resting. Try again soon.",
+      hakim_bond_xp: "0 / 100 XP",
+
   };
 })();

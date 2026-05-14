@@ -1,0 +1,225 @@
+<?php
+/**
+ * POST /api/ai/hakim
+ * Hakim AI Companion endpoint.
+ *
+ * When AI_API_KEY is set in the environment, forwards the request to the
+ * configured AI backend. Otherwise returns a curated mock response so the
+ * frontend always gets a sensible answer.
+ *
+ * Rate limiting: simple daily counter per IP stored in /tmp.
+ * Replace with a shared cache (Redis, APCu) for production.
+ */
+
+header("Content-Type: application/json; charset=utf-8");
+header("X-Content-Type-Options: nosniff");
+
+/* ── CORS (allow Telegram WebApp origins) ─────────────────────────────── */
+$origin = $_SERVER["HTTP_ORIGIN"] ?? "";
+$allowed = ["https://web.telegram.org", "https://k.web.telegram.org", "https://z.web.telegram.org"];
+if (in_array($origin, $allowed, true)) {
+    header("Access-Control-Allow-Origin: $origin");
+}
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+if ($_SERVER["REQUEST_METHOD"] === "OPTIONS") {
+    http_response_code(204);
+    exit;
+}
+
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    http_response_code(405);
+    echo json_encode(["ok" => false, "error" => "Method not allowed"]);
+    exit;
+}
+
+/* ── Parse request ───────────────────────────────────────────────────── */
+$raw  = file_get_contents("php://input");
+$body = json_decode($raw, true);
+
+if (!is_array($body) || empty($body["message"])) {
+    http_response_code(400);
+    echo json_encode(["ok" => false, "error" => "Missing message"]);
+    exit;
+}
+
+$message  = mb_substr(trim($body["message"]), 0, 1000);
+$context  = is_array($body["context"] ?? null) ? $body["context"] : [];
+$language = in_array($context["language"] ?? "", ["en", "fa", "tg"], true)
+            ? $context["language"] : "en";
+
+/* ── Rate limiting (50 requests / day / IP) ──────────────────────────── */
+$DAILY_LIMIT = 50;
+$ip          = preg_replace("/[^0-9a-fA-F.:]/", "", $_SERVER["REMOTE_ADDR"] ?? "0");
+$ratefile    = sys_get_temp_dir() . "/hakim_rate_" . md5($ip) . "_" . date("Ymd") . ".txt";
+
+$count = (int)(@file_get_contents($ratefile) ?: 0);
+if ($count >= $DAILY_LIMIT) {
+    http_response_code(429);
+    echo json_encode(["ok" => false, "error" => "Daily limit reached"]);
+    exit;
+}
+@file_put_contents($ratefile, $count + 1, LOCK_EX);
+
+/* ── Try real AI if key is configured ───────────────────────────────── */
+$apiKey = getenv("AI_API_KEY") ?: "";
+if ($apiKey !== "") {
+    $reply = callAI($message, $context, $language, $apiKey);
+    if ($reply !== null) {
+        echo json_encode(["ok" => true, "reply" => $reply, "source" => "ai"]);
+        exit;
+    }
+}
+
+/* ── Fall back to mock ───────────────────────────────────────────────── */
+echo json_encode([
+    "ok"     => true,
+    "reply"  => getMockReply($message, $language, $context["quickTopic"] ?? null),
+    "source" => "mock",
+]);
+exit;
+
+/* ════════════════════════════════════════════════════════════════════════
+   Functions
+   ════════════════════════════════════════════════════════════════════════ */
+
+/**
+ * Call an OpenAI-compatible AI backend.
+ * Returns the reply string on success, null on any failure.
+ */
+function callAI(string $message, array $context, string $lang, string $apiKey): ?string
+{
+    $endpoint = getenv("AI_API_ENDPOINT") ?: "https://api.openai.com/v1/chat/completions";
+    $model    = getenv("AI_MODEL") ?: "gpt-4o-mini";
+
+    $systemPrompt = buildSystemPrompt($lang, $context);
+
+    $payload = json_encode([
+        "model"       => $model,
+        "max_tokens"  => 300,
+        "temperature" => 0.7,
+        "messages"    => [
+            ["role" => "system", "content" => $systemPrompt],
+            ["role" => "user",   "content" => $message],
+        ],
+    ]);
+
+    $ch = curl_init($endpoint);
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => $payload,
+        CURLOPT_HTTPHEADER     => [
+            "Content-Type: application/json",
+            "Authorization: Bearer $apiKey",
+        ],
+        CURLOPT_TIMEOUT        => 15,
+    ]);
+
+    $raw  = curl_exec($ch);
+    $err  = curl_error($ch);
+    curl_close($ch);
+
+    if ($err || !$raw) return null;
+
+    $data = json_decode($raw, true);
+    return $data["choices"][0]["message"]["content"] ?? null;
+}
+
+/**
+ * Build the system prompt that shapes Hakim's personality.
+ */
+function buildSystemPrompt(string $lang, array $context): string
+{
+    $langName = ["en" => "English", "fa" => "Persian/Farsi", "tg" => "Tajik"][$lang] ?? "English";
+    $chapter  = isset($context["chapterId"]) ? "Chapter " . (int)$context["chapterId"] : "Chapter 1";
+    $level    = isset($context["playerLevel"]) ? (int)$context["playerLevel"] : 1;
+
+    return <<<PROMPT
+You are Hakim, the AI Companion of the Shahnameh — the ancient Persian Book of Kings by Ferdowsi.
+You are a wise elder inspired by the sage Ferdowsi himself: poetic, measured, and deeply knowledgeable about Persian history, mythology, and language.
+
+The player is currently on {$chapter}, player level {$level}.
+Always respond in {$langName} unless the player writes in a different language.
+
+Your role:
+- Explain chapters, characters, places, and events from the Shahnameh
+- Teach ancient Persian/Farsi words and their meaning
+- Share moral lessons and wisdom from the epic
+- Give quest and battle strategy hints (without directly giving quiz answers)
+- Help with translations between Persian, Tajik, and English
+- Guide new players in understanding the game
+
+You must NOT:
+- Make promises about REAL token value, earnings, or financial returns
+- Pretend to be a general-purpose AI or break character
+- Discuss topics completely unrelated to the Shahnameh, Persian culture, or the game
+- Be rude, dismissive, or encourage harmful behaviour
+
+Keep answers concise (2-4 sentences for most questions). For historical/mythological topics, you may write up to 6 sentences. Always end with something that invites the player deeper into the chronicle.
+PROMPT;
+}
+
+/**
+ * Curated mock responses — always on-brand, always useful.
+ */
+function getMockReply(string $message, string $lang, ?string $quickTopic): string
+{
+    $lower = mb_strtolower($message);
+
+    /* Quick-action topics */
+    if ($quickTopic === "explain_chapter" || str_contains($lower, "chapter") || str_contains($lower, "keyumars")) {
+        return pickRandom([
+            "Chapter 1 follows Keyumars, the first king of the Pishdadian dynasty. He ruled from the mountains of ancient Pars, clothed in leopard skin — a sign that civilization was still young. His divine radiance (Farr) drew the animals and people to him. His son Siamak would later fall to the first great evil of the chronicle.",
+            "Keyumars is the beginning of everything in the Shahnameh. He did not conquer his kingdom with iron — he earned it with presence. Ferdowsi tells us the lions themselves bowed their heads before him. Read the next scene to see what this age of innocence costs.",
+        ]);
+    }
+
+    if ($quickTopic === "teach_word" || str_contains($lower, "word") || str_contains($lower, "farr")) {
+        return pickRandom([
+            "Farr (فَرّ) — divine radiance granted to worthy kings by the gods. A king with Farr could rule mountains and seas. A king without it was merely a man with a crown. Jamshid's story is the chronicle's greatest lesson about Farr lost through pride.",
+            "Div (دیو) — the demonic forces of the Shahnameh, servants of Ahriman and chaos. Not all Divs are equal: some are bound by clever kings, others devour armies. Their presence in a story always signals that a test of character is near.",
+        ]);
+    }
+
+    if ($quickTopic === "quest_help" || str_contains($lower, "quest") || str_contains($lower, "mission")) {
+        return pickRandom([
+            "The chronicle rewards patience. Read each scene fully before attempting the quiz — the answers are woven into the story itself. Complete your daily quests consistently and your Farr will grow faster than any shortcut can achieve.",
+            "For your current quest: tap regularly to maintain your energy and income, read the chapter scenes to unlock codex entries, then attempt the quiz. Each correct answer earns XP and moves you closer to the next chapter.",
+        ]);
+    }
+
+    if ($quickTopic === "battle_advice" || str_contains($lower, "battle") || str_contains($lower, "fight")) {
+        return pickRandom([
+            "The great warriors of the Shahnameh prepared before they fought. Equip the hero whose passive bonus matches your goal — Keyumars for XP, Rostam for power. Build your combo multiplier before the critical window, and never waste a boost on a half-charged energy bar.",
+            "Hakim's battle wisdom: knowledge before iron. Read all chapter scenes before the final encounter. The understanding you gain from the codex translates directly into battle readiness. A prepared pahlavan fights twice.",
+        ]);
+    }
+
+    if ($quickTopic === "tell_wisdom" || str_contains($lower, "wisdom") || str_contains($lower, "poem")) {
+        return pickRandom([
+            "'توانا بود هر که دانا بود' — Powerful is he who is wise. Ferdowsi placed this verse at the heart of the Shahnameh to remind every king, every warrior, and every reader: the mind sharpens all other weapons.",
+            "Here is Hakim's gift for today: 'The crown belongs to the one who can carry its weight without becoming its servant.' Keyumars chose the mountain over the palace for exactly this reason. Return to the chronicle and carry your Farr lightly.",
+        ]);
+    }
+
+    if ($quickTopic === "translate" || str_contains($lower, "translate") || str_contains($lower, "mean")) {
+        return pickRandom([
+            "'به نام خداوند جان و خرد' — In the name of the Lord of soul and wisdom. These are Ferdowsi's opening words, his invocation before all sixty thousand verses. He chose wisdom above all other divine gifts to invoke first.",
+            "شاهنامه (Shahnameh) means 'Book of Kings' — شاه (Shah) = King, نامه (Nameh) = Book or Letter. Together they name the greatest Persian epic ever written, preserved by one poet across thirty years.",
+        ]);
+    }
+
+    /* Default */
+    return pickRandom([
+        "The Shahnameh holds sixty thousand verses, and the answer to your question is woven into them somewhere. Hakim will guide you: read the next scene of your chapter and return with what you have learned.",
+        "A worthy question. Hakim has heard many like it from heroes who stood at the gate of a new chapter. The answer you seek often arrives not as a fact, but as a story. Continue the chronicle.",
+        "Hakim reflects on this. The great questions of the Shahnameh — fate, courage, loyalty — are never answered quickly. Return to the chronicle and the answer will find you on the right page.",
+    ]);
+}
+
+function pickRandom(array $arr): string
+{
+    return $arr[array_rand($arr)];
+}

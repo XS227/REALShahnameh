@@ -641,5 +641,30 @@
       /* Hero fragment */
       hero_fragment_label: "Парчаи қаҳрамон",
 
+      /* Hamburger nav labels */
+      guild: "Гилд",
+      market: "Бозор",
+      inventory: "Анбор",
+      profile: "Профил",
+      nav_hakim: "Ҳаким AI",
+
+      /* Hakim AI Companion */
+      hakim_title: "Ҳаким",
+      hakim_subtitle: "Ҳамроҳи ақлонии Шоҳнома",
+      hakim_intro: "Аз Ҳаким дар бораи қаҳрамонон, подшоҳон, ҷангҳо, калимаҳои куҳна, дарсҳои ахлоқӣ ё вазифаи навбатии худ бипурс.",
+      hakim_chat_placeholder: "Ҳар чизеро аз Ҳаким бипурс…",
+      hakim_quick_explain: "Ин бобро шарҳ деҳ",
+      hakim_quick_quest: "Дар вазифа кӯмак кун",
+      hakim_quick_word: "Калимае ёд деҳ",
+      hakim_quick_battle: "Машварати ҷанг",
+      hakim_quick_wisdom: "Ҳикмате бигӯ",
+      hakim_quick_translate: "Тарҷума кун",
+      hakim_daily_wisdom: "Ҳикмати рӯзона",
+      hakim_bond_level: "Сатҳи пайванд",
+      hakim_ask_btn: "Аз Ҳаким бипурс",
+      hakim_loading: "Ҳаким дар андеша аст…",
+      hakim_error: "Ҳаким истироҳат мекунад. Каме сабр кун.",
+      hakim_bond_xp: "0 / 100 ТА",
+
   };
 })();

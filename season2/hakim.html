@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>Hakim — AI Companion · REAL Shahnameh</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202605140100" />
+</head>
+<body>
+  <main class="app">
+
+    <!-- Hakim hero card -->
+    <div class="hakim-hero">
+      <div class="hakim-hero-bg" aria-hidden="true"></div>
+      <div class="hakim-portrait">
+        <img src="/assets/hakim.png" alt="Hakim"
+             onerror="this.replaceWith(document.createTextNode('🧙'))">
+      </div>
+      <div class="hakim-hero-body">
+        <div class="hakim-kicker" data-i18n="hakim_subtitle">AI Companion of the Shahnameh</div>
+        <h1 class="hakim-name" data-i18n="hakim_title">Hakim</h1>
+        <p class="hakim-intro-text" data-i18n="hakim_intro">
+          Ask Hakim about heroes, kings, battles, ancient words, moral lessons, or your next quest.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bond level -->
+    <div class="hakim-bond">
+      <div class="hakim-bond-row">
+        <span class="hakim-bond-label" data-i18n="hakim_bond_level">Bond Level</span>
+        <span class="hakim-bond-val">⬡ Level 1</span>
+      </div>
+      <div class="bar">
+        <span class="fill" style="width:0%;"></span>
+      </div>
+      <div style="display:flex; justify-content:space-between; margin-top:6px;">
+        <span class="hakim-bond-xp" data-i18n="hakim_bond_xp">0 / 100 XP</span>
+        <span class="hakim-bond-xp">Ask questions to level up your bond</span>
+      </div>
+    </div>
+
+    <!-- Daily wisdom -->
+    <div class="hakim-wisdom">
+      <div class="hakim-wisdom-label" data-i18n="hakim_daily_wisdom">Daily Wisdom</div>
+      <p class="hakim-wisdom-text" data-wisdom-text>
+        "توانا بود هر که دانا بود — Knowledge is the root of power."
+      </p>
+      <span class="hakim-wisdom-source">— Ferdowsi · Shahnameh</span>
+    </div>
+
+    <!-- Quick actions -->
+    <div class="section-head" style="margin-bottom:8px;">
+      <h3 style="font-size:13px; color:var(--text-dim);">Quick Questions</h3>
+    </div>
+    <div class="hakim-quick-grid" data-quick-grid>
+      <button class="hakim-quick-btn" data-quick="explain_chapter">
+        <span class="hakim-quick-ico">📖</span>
+        <span data-i18n="hakim_quick_explain">Explain this chapter</span>
+      </button>
+      <button class="hakim-quick-btn" data-quick="quest_help">
+        <span class="hakim-quick-ico">🗺</span>
+        <span data-i18n="hakim_quick_quest">Help with quest</span>
+      </button>
+      <button class="hakim-quick-btn" data-quick="teach_word">
+        <span class="hakim-quick-ico">📚</span>
+        <span data-i18n="hakim_quick_word">Teach me a word</span>
+      </button>
+      <button class="hakim-quick-btn" data-quick="battle_advice">
+        <span class="hakim-quick-ico">⚔</span>
+        <span data-i18n="hakim_quick_battle">Battle advice</span>
+      </button>
+      <button class="hakim-quick-btn" data-quick="tell_wisdom">
+        <span class="hakim-quick-ico">✦</span>
+        <span data-i18n="hakim_quick_wisdom">Tell me a wisdom</span>
+      </button>
+      <button class="hakim-quick-btn" data-quick="translate">
+        <span class="hakim-quick-ico">🌐</span>
+        <span data-i18n="hakim_quick_translate">Translate this</span>
+      </button>
+    </div>
+
+    <!-- Chat area -->
+    <div class="hakim-chat">
+      <div class="hakim-chat-messages" data-chat-messages>
+        <div class="hcm-empty" data-chat-empty>
+          <div class="hcm-empty-ico">🧙</div>
+          <div class="hcm-empty-text" data-i18n="hakim_intro">Ask Hakim anything about the Shahnameh</div>
+        </div>
+      </div>
+      <div class="hakim-chat-footer">
+        <textarea
+          class="hakim-chat-input"
+          data-chat-input
+          rows="1"
+          placeholder="Ask Hakim anything…"
+          data-i18n-placeholder="hakim_chat_placeholder"
+        ></textarea>
+        <button class="hakim-chat-send" data-chat-send aria-label="Send">&#x27A4;</button>
+      </div>
+    </div>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="home">Home</span></a>
+    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span data-i18n="tap">Tap</span></a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
+    <a class="nav-item active" href="hakim.html"><span class="ni-ico">🤖</span><span data-i18n="nav_hakim">Hakim AI</span></a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <script src="app.js?v=202605140100"></script>
+  <script src="i18n/en.js?v=202605140100"></script>
+  <script src="i18n/fa.js?v=202605140100"></script>
+  <script src="i18n/tg.js?v=202605140100"></script>
+  <script src="i18n.js?v=202605140100"></script>
+  <script src="resources.js?v=202605140100"></script>
+  <script src="hakim.js?v=202605140100"></script>
+</body>
+</html>
