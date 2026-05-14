@@ -383,7 +383,48 @@
       /* Panel CTA */
       intro_cta_kicker: "SEASON 2 · CHAPTER 1",
       intro_cta_title: "Keyumars — The First King",
-      intro_cta_copy: "From here on, the chronicle is yours. Each scene unlocks codex entries. Each correct answer earns REAL. Each level brings you closer to the dark thing in the forest.",
+      intro_cta_copy: "From here on, the chronicle is yours. Each scene unlocks codex entries. Each correct answer earns Farr and Zar. Each level brings you closer to the dark thing in the forest.",
+
+      /* ============== RESOURCE GLOSSARY ==============
+         Five layered resources. Farr/Zar/Gems/XP are the day-to-day surfaces;
+         REAL is the discreet ecosystem layer underneath. */
+      r_farr: "Farr",
+      r_farr_desc: "Divine glory. Prestige, ranks, hero power, seasonal standing.",
+      r_zar: "Zar",
+      r_zar_desc: "Gold of Pars. Upgrades, crafting, training, daily economy.",
+      r_gems: "Gems",
+      r_gems_desc: "Rare artifacts. Treasures, relic crafting, special rewards.",
+      r_xp: "XP",
+      r_xp_desc: "Wisdom of the chronicle. Levels, learning progression, unlocks.",
+      r_real: "REAL",
+      r_real_desc: "Ecosystem layer. Premium unlocks, marketplace, future governance.",
+      r_glossary_title: "The Five Resources",
+      r_glossary_sub: "Your court runs on five gifts of Pars.",
+      /* Reward-line templates */
+      reward_plus_farr: "+{n} Farr",
+      reward_plus_zar: "+{n} Zar",
+      reward_plus_gems: "+{n} Gems",
+      reward_plus_xp: "+{n} XP",
+      reward_plus_real: "+{n} REAL",
+      /* HUD section labels */
+      hud_treasury: "Treasury",
+      hud_prestige: "Prestige",
+      hud_chronicle: "Chronicle",
+      hud_ecosystem: "Ecosystem",
+
+      /* ============== FORGE OF PARS (rebranded Tap) ============== */
+      forge_title: "The Forge of Pars",
+      forge_subtitle: "Train · Mint · Rise",
+      forge_core_label: "⬡ The Anvil — Strike to forge Zar",
+      forge_hint: "Each strike forges new Zar · combo deepens the seam · rare strikes drop REAL",
+      forge_recent: "Recent forging",
+      forge_burst_evt: "Forge burst · ×1.4 combo",
+      forge_crit_evt: "Mythic strike!",
+      forge_auto_evt: "Auto-forge · 1 hr",
+      forge_boost_evt: "Boost activated",
+      forge_skins_title: "⬡ Skins of the Anvil",
+      forge_skins_sub: "Unlock through chapters · Bound to your court",
+      forge_per_hr: "Zar / hr",
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "Play",
       play_title: "REAL Shahnameh",
@@ -416,9 +457,6 @@
       chapters_done: "2 of 12 chapters complete",
       story_xp_boost: "+50% Story XP",
       collection_count: "7 / 24",
-      forge_title: "Hero Forge",
-      forge_copy: "Fuse fragments into rare and legendary heroes.",
-      forge_btn: "Forge",
       all: "All",
       people: "People",
       creatures: "Creatures",

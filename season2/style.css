@@ -2080,3 +2080,129 @@ html[lang="tg"] body {
   flex: 1 1 calc(33.333% - 8px);
   min-width: 96px;
 }
+
+/* ==========================================================================
+   Season 2 — Layered Resource HUD
+   Visual hierarchy: Farr / Zar / Gems / XP shown prominently;
+   REAL appears as a discreet secondary line below.
+   ========================================================================== */
+
+/* Inline reward/balance pill — used in toast lines, reward bursts, lists. */
+.r-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .04);
+  line-height: 1.2;
+}
+.r-pill .r-ico { font-size: 12px; line-height: 1; }
+.r-pill .r-amt { color: var(--text, #f4ecd9); }
+.r-pill .r-lbl { color: var(--muted, #8c8b86); font-weight: 600; letter-spacing: .2px; }
+
+/* Per-resource accent — gold for Farr/Zar, violet for Gems, blue for XP, silver for REAL. */
+.r-pill.r-farr  { background: linear-gradient(140deg, rgba(244,197,107,.16), rgba(244,197,107,.04)); border-color: rgba(244,197,107,.4); }
+.r-pill.r-zar   { background: linear-gradient(140deg, rgba(212,164,80,.18),  rgba(212,164,80,.04));  border-color: rgba(212,164,80,.45); }
+.r-pill.r-gems  { background: linear-gradient(140deg, rgba(140,109,255,.18), rgba(140,109,255,.04)); border-color: rgba(140,109,255,.4); }
+.r-pill.r-xp    { background: linear-gradient(140deg, rgba(94,162,255,.16),  rgba(94,162,255,.04));  border-color: rgba(94,162,255,.4); }
+.r-pill.r-real  { background: linear-gradient(140deg, rgba(220,220,235,.12), rgba(220,220,235,.04)); border-color: rgba(220,220,235,.3); }
+.r-pill.r-farr  .r-ico { color: var(--gold, #f4c56b); text-shadow: 0 0 6px rgba(244,197,107,.6); }
+
+/* Multi-resource HUD card — the main balance summary on Home (and any page
+   that wants to surface the Five Resources). 4 cells in a grid; REAL is a
+   subtle banner below. */
+.resource-hud {
+  background: linear-gradient(140deg, rgba(16,22,52,.78), rgba(10,14,36,.88));
+  border: 1px solid var(--border-gold, rgba(244,197,107,.32));
+  border-radius: var(--r-md, 14px);
+  padding: 14px;
+  box-shadow: var(--shadow-card, 0 8px 24px rgba(0,0,0,.35));
+  position: relative;
+  overflow: hidden;
+}
+.resource-hud::before {
+  /* Faint Persian-pattern flourish — Phase 3 will swap for SVG. */
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(244,197,107,.10) 0%, transparent 30%),
+    radial-gradient(circle at 92% 88%, rgba(140,109,255,.08) 0%, transparent 30%);
+  pointer-events: none;
+}
+.resource-hud .r-cells {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  position: relative;
+}
+.r-cell {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 10px;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+.r-cell-ico {
+  font-size: 18px;
+  line-height: 1;
+  filter: drop-shadow(0 0 4px currentColor);
+}
+.r-cell-body { text-align: center; min-width: 0; width: 100%; }
+.r-cell-amt {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text, #f4ecd9);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.r-cell-lbl {
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted, #8c8b86);
+  font-weight: 700;
+  margin-top: 1px;
+}
+.r-cell.r-farr .r-cell-ico { color: var(--gold, #f4c56b); }
+.r-cell.r-zar  .r-cell-ico { color: #d4a450; }
+.r-cell.r-gems .r-cell-ico { color: #8c6dff; }
+.r-cell.r-xp   .r-cell-ico { color: #5ea2ff; }
+.r-cell.r-farr { border-color: rgba(244,197,107,.28); }
+.r-cell.r-zar  { border-color: rgba(212,164,80,.28); }
+.r-cell.r-gems { border-color: rgba(140,109,255,.28); }
+.r-cell.r-xp   { border-color: rgba(94,162,255,.28); }
+
+/* REAL row — visually demoted: small, subtle silver bar at the bottom of the HUD.
+   Reads "◆  1,200  REAL" with no flashy gradient. */
+.r-cell-real {
+  position: relative;
+  margin-top: 10px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,.025);
+  border: 1px solid rgba(220,220,235,.12);
+  border-radius: 8px;
+  font-size: 11px;
+  color: var(--muted, #8c8b86);
+}
+.r-cell-real .r-real-ico { color: rgba(220,220,235,.8); font-size: 12px; }
+.r-cell-real .r-real-amt { color: var(--text, #f4ecd9); font-weight: 700; }
+.r-cell-real .r-real-lbl {
+  margin-left: auto;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 700;
+  color: rgba(220,220,235,.55);
+}

@@ -190,7 +190,7 @@
   };
 
   const Player = {
-    SCHEMA_VERSION: 1,
+    SCHEMA_VERSION: 2,
 
     /* Default profile for a fresh Season 2 entrant. Season 1
        players also start from scratch — they get a bonus card
@@ -204,6 +204,15 @@
         path: Storage.read(LS.PATH) || "hero",
         level: 1,
         xp: 0,
+        /* === Layered resources (Season 2 economy rework) ===
+           - farr: prestige / divine glory; earned from chapters, streaks, hero ownership
+           - zar:  gold of Pars; primary tap reward, daily quests, upgrades currency
+           - gems: rare artifacts; invite milestones, special drops, relic crafting
+           - balance: REAL — ecosystem layer, kept here for backwards compat
+        */
+        farr: 0,
+        zar: 0,
+        gems: 0,
         balance: 0,
         energy: 1000,
         energyMax: 1000,
@@ -216,6 +225,22 @@
         badges: [],
         createdAt: Date.now()
       };
+    },
+
+    /* Convenience: read/add to any resource by canonical name.
+       Resources: "farr" | "zar" | "gems" | "xp" | "real" (real → balance). */
+    _resourceField(kind) {
+      return kind === "real" ? "balance" : kind;
+    },
+    getResource(kind) {
+      const p = Player.get();
+      return p[Player._resourceField(kind)] || 0;
+    },
+    addResource(kind, amount) {
+      if (!amount) return Player.get();
+      const field = Player._resourceField(kind);
+      const cur = Player.get()[field] || 0;
+      return Player.set({ [field]: cur + amount });
     },
 
     _load() {
