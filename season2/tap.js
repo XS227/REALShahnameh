@@ -59,7 +59,7 @@
       img: "/season2/uploads/chapters/simorgh.png",
       emoji: "🦅",
       locked: true,
-      unlock: "Airdrop"
+      unlock: "Season drop"
     },
     {
       id: "royal",

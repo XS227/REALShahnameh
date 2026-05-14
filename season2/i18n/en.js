@@ -400,6 +400,12 @@
       r_real_desc: "Ecosystem layer. Premium unlocks, marketplace, future governance.",
       r_glossary_title: "The Five Resources",
       r_glossary_sub: "Your court runs on five gifts of Pars.",
+      /* Premium framing for the REAL ecosystem — used in the lore-card on Earn. */
+      real_lore_kicker: "Of the ecosystem",
+      real_lore_title: "REAL — the ledger beneath the kingdom",
+      real_lore_body_1: "Beneath the chronicle of Pars runs a quieter ledger. REAL is not a prize to chase — it is the seal that lets a court move beyond the palace walls: premium unlocks, the marketplace yet to be built, and a voice in how the realm is governed.",
+      real_lore_body_2: "You do not need REAL to play. You earn it as the chronicle finds you worthy.",
+      real_lore_author: "— The Court Steward",
       /* Reward-line templates */
       reward_plus_farr: "+{n} Farr",
       reward_plus_zar: "+{n} Zar",
@@ -442,7 +448,9 @@
       auto_claim: "REAL · auto-claim",
       today_delta: "+1,240 today",
       boost: "Boost",
-      boost_copy: "Multiply tap power 3× for 30 minutes. Stacks with combo critical.",
+      boost_copy: "Triple your strikes for 30 minutes. Combos and rare bursts compound.",
+      boost_active_toast: "Boost active · strikes tripled for 30 minutes",
+      boost_active_timer_tpl: "Boost active · {t}",
       activate: "Activate",
       invite: "Invite",
       invite_copy: "Bring allies. Earn 10% of their REAL forever + chest drops.",

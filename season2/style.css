@@ -92,6 +92,28 @@ body::before {
   z-index: 0;
 }
 
+/* Persian-pattern atmospheric overlay — faint geometric khatam motif tiled
+   across the viewport. The SVG ships with a hardcoded royal-gold stroke;
+   the pseudo-element drops it to ambient opacity so it whispers, not shouts. */
+:root {
+  --persian-pattern: url("/season2/assets/persian-pattern.svg");
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--persian-pattern);
+  background-size: 192px 192px;
+  background-repeat: repeat;
+  opacity: 0.045;
+  /* Vignette mask: brighter at the viewport top-centre (where most pages
+     have their hero), receding around the edges so it never fights text. */
+  -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 0%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.4) 70%, transparent 100%);
+          mask-image: radial-gradient(ellipse at 50% 30%, #000 0%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.4) 70%, transparent 100%);
+  z-index: 0;
+}
+
 button { font-family: inherit; }
 a { color: inherit; }
 
@@ -423,10 +445,15 @@ a { color: inherit; }
   text-shadow: 0 0 16px rgba(244, 197, 107, 0.9), 0 0 6px rgba(255, 255, 255, 0.4);
   animation: rise 850ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+/* Mythic strike — deep royal gold, no white casino flash. Slightly larger
+   than a regular spark but with restraint; the glow is warm not neon. */
 .spark.crit {
-  font-size: 30px;
-  color: #fff;
-  text-shadow: 0 0 22px var(--ember), 0 0 10px #fff, 0 0 44px var(--gold);
+  font-size: 26px;
+  color: #f6d690;
+  text-shadow:
+    0 0 6px rgba(244, 197, 107, 0.95),
+    0 0 18px rgba(212, 164, 80, 0.7),
+    0 0 36px rgba(244, 197, 107, 0.35);
   animation: rise-crit 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 .combo-pop {
@@ -436,16 +463,17 @@ a { color: inherit; }
   transform: translateX(-50%);
   padding: 5px 14px;
   border-radius: 999px;
-  background: linear-gradient(140deg, rgba(255, 138, 61, 0.36), rgba(255, 82, 103, 0.32));
-  border: 1px solid rgba(255, 138, 61, 0.75);
-  color: #ffe8cc;
+  /* Gold parchment instead of red/orange casino flash. */
+  background: linear-gradient(140deg, rgba(244, 197, 107, 0.22), rgba(212, 164, 80, 0.18));
+  border: 1px solid rgba(244, 197, 107, 0.6);
+  color: #f8e9c9;
   font-size: 13px;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
   pointer-events: none;
   white-space: nowrap;
-  box-shadow: 0 0 20px rgba(255, 138, 61, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 22px rgba(244, 197, 107, 0.32), inset 0 1px 0 rgba(255, 240, 210, 0.18);
   animation: combo-flash 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
@@ -458,12 +486,41 @@ a { color: inherit; }
   border-color: rgba(180, 150, 255, 0.65);
   box-shadow: inset 0 0 55px rgba(140, 109, 255, 0.4);
 }
+/* Mythic-strike rings — softer than before, all warm gold, no white blowout.
+   Reads as a "royal sigil" pulse rather than a slot-machine win. */
 .core-wrap.crit-burst .ring.r4 {
-  box-shadow: 0 0 90px rgba(244, 197, 107, 0.9), inset 0 0 80px rgba(255, 240, 200, 0.6);
+  box-shadow:
+    0 0 60px rgba(244, 197, 107, 0.55),
+    inset 0 0 50px rgba(244, 197, 107, 0.35);
 }
 .core-wrap.crit-burst .ring.r3 {
-  border-color: rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0 0 60px rgba(255, 200, 120, 0.5), 0 0 40px rgba(255, 200, 120, 0.4);
+  border-color: rgba(244, 197, 107, 0.9);
+  box-shadow:
+    inset 0 0 45px rgba(212, 164, 80, 0.4),
+    0 0 28px rgba(244, 197, 107, 0.28);
+}
+.core-wrap.crit-burst::before {
+  /* Brief radial sigil bloom at the core — gold petal, then fade. */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(244, 197, 107, 0.32) 0%, transparent 35%),
+    conic-gradient(from 0deg at 50% 50%,
+      rgba(244, 197, 107, 0) 0deg, rgba(244, 197, 107, 0.18) 45deg,
+      rgba(244, 197, 107, 0) 90deg, rgba(244, 197, 107, 0.18) 135deg,
+      rgba(244, 197, 107, 0) 180deg, rgba(244, 197, 107, 0.18) 225deg,
+      rgba(244, 197, 107, 0) 270deg, rgba(244, 197, 107, 0.18) 315deg,
+      rgba(244, 197, 107, 0) 360deg);
+  border-radius: 50%;
+  animation: crit-sigil 600ms ease-out forwards;
+  z-index: 0;
+}
+@keyframes crit-sigil {
+  0%   { transform: scale(0.6) rotate(0deg);   opacity: 0; }
+  35%  { transform: scale(1.05) rotate(20deg); opacity: 1; }
+  100% { transform: scale(1.3) rotate(60deg);  opacity: 0; }
 }
 
 /* ----- Energy meter ------------------------------------------------------ */
@@ -2119,18 +2176,30 @@ html[lang="tg"] body {
   background: linear-gradient(140deg, rgba(16,22,52,.78), rgba(10,14,36,.88));
   border: 1px solid var(--border-gold, rgba(244,197,107,.32));
   border-radius: var(--r-md, 14px);
-  padding: 14px;
+  padding: 16px 14px 14px;
   box-shadow: var(--shadow-card, 0 8px 24px rgba(0,0,0,.35));
   position: relative;
   overflow: hidden;
 }
+/* Top hairline ornament — royal-gold "court" line that frames the HUD. */
 .resource-hud::before {
-  /* Faint Persian-pattern flourish — Phase 3 will swap for SVG. */
+  content: "";
+  position: absolute;
+  top: 0; left: 14%; right: 14%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(244,197,107,.55), transparent);
+  pointer-events: none;
+}
+/* Persian-pattern flourish — same khatam motif, very subtle, masked away
+   from the centre so the cells stay readable. */
+.resource-hud::after {
   content: "";
   position: absolute; inset: 0;
-  background:
-    radial-gradient(circle at 8% 12%, rgba(244,197,107,.10) 0%, transparent 30%),
-    radial-gradient(circle at 92% 88%, rgba(140,109,255,.08) 0%, transparent 30%);
+  background-image: var(--persian-pattern);
+  background-size: 96px 96px;
+  background-repeat: repeat;
+  opacity: 0.07;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, transparent 0%, transparent 25%, #000 80%);
+          mask-image: radial-gradient(ellipse at 50% 50%, transparent 0%, transparent 25%, #000 80%);
   pointer-events: none;
 }
 .resource-hud .r-cells {
@@ -2205,4 +2274,85 @@ html[lang="tg"] body {
   font-size: 9px;
   font-weight: 700;
   color: rgba(220,220,235,.55);
+}
+
+/* ==========================================================================
+   .lore-card — premium storytelling card.
+   A Persian-arch top frame, royal gold accents, parchment-warm body tone.
+   Use sparingly: ecosystem explainers, founder messages, one-time disclosures.
+   ========================================================================== */
+.lore-card {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(34,28,18,.7) 0%, rgba(20,16,28,.85) 100%);
+  border: 1px solid rgba(244,197,107,.32);
+  border-top-width: 0;          /* arch substitutes for the top edge */
+  border-radius: 18px;
+  padding: 26px 18px 18px;
+  margin: 16px 0;
+  overflow: hidden;
+  box-shadow:
+    inset 0 1px 0 rgba(244,197,107,.12),
+    0 10px 28px rgba(0,0,0,.45);
+}
+/* Persian-arch crown — SVG-shaped border drawn with two opposing radial
+   gradients that meet at the top centre. Keeps the visual cinematic and
+   adds the "royal court" framing without any external image. */
+.lore-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 28px;
+  pointer-events: none;
+  background:
+    /* The arch outline: a thin gold band that curves down at the edges. */
+    radial-gradient(120% 32px at 50% 100%, transparent 0 26px, rgba(244,197,107,.55) 26px 27.5px, transparent 27.5px),
+    /* Soft fill under the arch */
+    linear-gradient(180deg, rgba(244,197,107,.10) 0%, transparent 100%);
+}
+/* Pattern flourish drifting up from the bottom. */
+.lore-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--persian-pattern);
+  background-size: 128px 128px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 100%);
+  pointer-events: none;
+}
+.lore-card > * { position: relative; z-index: 1; }
+.lore-card .lore-kicker {
+  font-size: 10px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: var(--gold, #f4c56b);
+  font-weight: 700;
+  margin-bottom: 6px;
+  display: block;
+}
+.lore-card .lore-title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 8px;
+  color: var(--text, #f4ecd9);
+}
+.lore-card .lore-title .gold { color: var(--gold, #f4c56b); }
+.lore-card .lore-body {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(244,236,217,.82);
+  margin: 0;
+}
+.lore-card .lore-body + .lore-body { margin-top: 8px; }
+.lore-card .lore-author {
+  display: block;
+  margin-top: 12px;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--muted, #8c8b86);
+  letter-spacing: .4px;
 }

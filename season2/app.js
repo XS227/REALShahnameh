@@ -948,21 +948,21 @@
       boostBtn.addEventListener("click", () => {
         if (boostBtn.disabled) return;
         boostBtn.disabled = true;
-        boostBtn.textContent = "Boost active · 30:00";
+        boostBtn.textContent = t("boost_active_timer_tpl").replace("{t}", "30:00");
         state.base *= 3;
-        toast("Boost active · ×3 tap power for 30 min");
+        toast(t("boost_active_toast"));
         haptic("success");
         let secs = 30 * 60;
         const tick = setInterval(() => {
           secs -= 1;
           const m = String(Math.floor(secs / 60)).padStart(2, "0");
           const s = String(secs % 60).padStart(2, "0");
-          boostBtn.textContent = `Boost active · ${m}:${s}`;
+          boostBtn.textContent = t("boost_active_timer_tpl").replace("{t}", `${m}:${s}`);
           if (secs <= 0) {
             clearInterval(tick);
             state.base = Math.round(state.base / 3);
             boostBtn.disabled = false;
-            boostBtn.textContent = "Activate";
+            boostBtn.textContent = t("activate");
           }
         }, 1000);
       });

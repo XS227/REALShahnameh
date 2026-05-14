@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Tileable geometric Persian/Islamic-style pattern.
+  Eight-pointed star (khatam motif) with intersecting strapwork.
+  Uses currentColor so the stroke can be tinted by the host element
+  (most often a royal-gold tone via CSS `color`).
+  Designed to tile at any multiple of 96px on a side.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 96 96"
+     width="96" height="96"
+     fill="none"
+     stroke="#f4c56b"
+     stroke-width="0.7"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     opacity="1">
+  <!-- Central eight-pointed star (one tile) -->
+  <g>
+    <!-- Outer square frame, rotated 0° -->
+    <rect x="14" y="14" width="68" height="68" />
+    <!-- Outer square frame, rotated 45° -->
+    <rect x="14" y="14" width="68" height="68" transform="rotate(45 48 48)" />
+    <!-- Inner core diamond -->
+    <path d="M48 28 L68 48 L48 68 L28 48 Z" />
+    <!-- Inner core small square -->
+    <rect x="38" y="38" width="20" height="20" />
+    <!-- Faint cross strokes between points -->
+    <path d="M48 14 L48 22 M48 74 L48 82 M14 48 L22 48 M74 48 L82 48" />
+    <!-- Strapwork crescents at the corners -->
+    <path d="M0 0 L14 14 M82 0 L96 14 M0 82 L14 96 M82 82 L96 96" />
+  </g>
+  <!-- Tile-edge half-stars (so adjacent tiles share a continuous lattice) -->
+  <g>
+    <path d="M48 0 L52 4 L48 8 L44 4 Z M0 48 L4 52 L8 48 L4 44 Z" />
+    <path d="M96 48 L92 52 L88 48 L92 44 Z M48 96 L52 92 L48 88 L44 92 Z" />
+  </g>
+</svg>
