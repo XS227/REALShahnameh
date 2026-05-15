@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>Historical Sites · REAL Shahnameh</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202605150200" />
+</head>
+<body>
+<main class="app">
+
+  <!-- Hero -->
+  <div class="sites-hero">
+    <div class="sites-hero-bg" aria-hidden="true"></div>
+    <div class="sites-kicker" data-i18n="sites_kicker">World · Sacred Places</div>
+    <h1 class="sites-title" data-i18n="sites_title">Historical Sites</h1>
+    <p class="sites-sub" data-i18n="sites_sub">Places where the Shahnameh's stories left their mark on stone</p>
+    <div class="sites-stats">
+      <div class="sites-stat"><strong>7</strong>sites</div>
+      <div class="sites-stat"><strong>7000+</strong>years</div>
+      <div class="sites-stat"><strong>∞</strong>memory</div>
+    </div>
+  </div>
+
+  <!-- Sites list -->
+  <div class="section-head"><h3 style="font-size:13px; color:var(--text-dim);">Sacred & Historic Places</h3></div>
+  <div class="sites-list" id="sites-list"></div>
+
+</main>
+
+<!-- Site detail modal -->
+<div class="region-modal-overlay" id="site-modal-overlay" data-modal-overlay>
+  <div class="region-modal" id="site-modal" style="position:relative;">
+    <div class="region-modal-grabber"></div>
+    <button class="region-modal-close" id="site-modal-close" aria-label="Close">✕</button>
+    <div class="region-modal-kicker" id="sm-kicker">Site</div>
+    <h2 class="region-modal-title" id="sm-title">Site</h2>
+    <div id="sm-timeline-hint" class="site-timeline-hint"></div>
+    <p class="region-modal-body" id="sm-body"></p>
+    <div style="margin-bottom:8px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px;">In the Shahnameh</div>
+    <p class="region-modal-body" id="sm-lore" style="margin-bottom:16px;"></p>
+    <div style="margin-bottom:8px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px;">Connected Figures</div>
+    <div class="region-modal-heroes" id="sm-figures"></div>
+    <button class="site-hakim-btn" id="sm-hakim-btn" style="width:100%; text-align:center; display:block; padding:10px; margin-top:16px;">
+      🤖 Ask Hakim about this site
+    </button>
+  </div>
+</div>
+
+<div class="toast" data-toast></div>
+<script src="app.js?v=202605150200"></script>
+<script src="i18n/en.js?v=202605150200"></script>
+<script src="i18n/fa.js?v=202605150200"></script>
+<script src="i18n/tg.js?v=202605150200"></script>
+<script src="i18n.js?v=202605150200"></script>
+<script src="resources.js?v=202605150200"></script>
+<script src="hakim-orb.js?v=202605150200"></script>
+<script>
+(() => {
+  "use strict";
+
+  const SITES = [
+    {
+      id: "damavand",
+      name: "Mount Damavand",
+      nameFa: "دماوند",
+      ico: "🌋",
+      era: "Mythic Age",
+      tags: ["volcano", "prison", "myth"],
+      banner: "#1a0a2e",
+      desc: "The great volcanic peak towering over northern Persia — at once the highest mountain in the land and the sacred prison of Zahhak the Serpent King.",
+      lore: "Fereydun, after defeating Zahhak, did not kill the tyrant. He carried him in chains to the caverns of Damavand and sealed him within the rock. The mountain's smoke and tremors are, the Shahnameh says, the chained tyrant's breathing. Damavand became the symbol of justice deferred — not forgotten, but contained.",
+      figures: ["Zahhak", "Fereydun", "Kaveh the Blacksmith"],
+      timeline: "c. 5000 BC — Mythic binding of Zahhak",
+      coordinates: "35.9578° N, 52.1094° E",
+      modern: "Still stands — 5,610 m, highest peak in Iran",
+    },
+    {
+      id: "persepolis",
+      name: "Persepolis",
+      nameFa: "تخت‌جمشید",
+      ico: "🏛",
+      era: "~500 BC",
+      tags: ["palace", "empire", "ruins"],
+      banner: "#1a1200",
+      desc: "Takht-e Jamshid — Throne of Jamshid. The ceremonial capital of the Achaemenid Empire, built by Darius the Great, named for the mythic king of the Shahnameh.",
+      lore: "In the Shahnameh, Jamshid is the fourth king of the Pishdadian dynasty — architect of civilization who taught mankind to weave cloth, forge weapons, and build walls. The historical Persepolis borrowed his name for its grandeur. When Alexander burned it in 330 BC, Persian poets wept that Jamshid's throne had finally fallen. The ruins still carry that grief.",
+      figures: ["Jamshid", "Fereydun", "Key Khosrow"],
+      timeline: "c. 518 BC built · 330 BC burned by Alexander",
+      coordinates: "29.9353° N, 52.8911° E",
+      modern: "UNESCO World Heritage Site · Shiraz, Iran",
+    },
+    {
+      id: "zabol",
+      name: "Zabol",
+      nameFa: "زابل",
+      ico: "⚔",
+      era: "~2000 BC",
+      tags: ["fortress", "warrior", "sistan"],
+      banner: "#0d1a0a",
+      desc: "The ancient capital of Sistan — homeland of the Sam family and seat of Rostam, the greatest hero of the Shahnameh.",
+      lore: "Every great deed of Rostam begins and ends in Zabol. It is the city where Zal was raised after his descent from Simorgh, where Rudabeh came as a bride, where Sam received the news of his grandson's birth. When Rostam fell by treachery into Shaghad's pit, the lament was heard across all of Sistan. Zabol is the heart of the Shahnameh's heroic age.",
+      figures: ["Sam", "Zal", "Rudabeh", "Rostam", "Faramarz"],
+      timeline: "c. 2000 BC — ancient fortress of Sistan",
+      coordinates: "31.0267° N, 61.5117° E",
+      modern: "Still inhabited · Sistan & Baluchestan Province, Iran",
+    },
+    {
+      id: "tus",
+      name: "Tus",
+      nameFa: "طوس",
+      ico: "📜",
+      era: "~900 AD",
+      tags: ["poet", "shrine", "khorasan"],
+      banner: "#0a0d1a",
+      desc: "Ancient city of Khorasan — birthplace and burial place of Abu'l-Qasim Ferdowsi, the poet who saved the Persian language.",
+      lore: "Ferdowsi was born in Tus around 940 AD and died there around 1020 AD, having spent thirty years composing the Shahnameh. Legend says that the Sultan of Ghazni, shamed by his treatment of the poet, sent gold as recompense — but it arrived at the city gate just as Ferdowsi's funeral procession passed through. Today his tomb in Tus draws pilgrims from across the Persian-speaking world.",
+      figures: ["Ferdowsi", "Sultan Mahmud of Ghazni", "Tus the General"],
+      timeline: "940 AD — Ferdowsi born · 1020 AD — Ferdowsi dies",
+      coordinates: "36.3000° N, 59.6000° E",
+      modern: "Ferdowsi's mausoleum · Khorasan, Iran",
+    },
+    {
+      id: "fire-temples",
+      name: "Fire Temples",
+      nameFa: "آتشکده‌ها",
+      ico: "🔥",
+      era: "~1500 BC",
+      tags: ["religion", "fire", "zoroastrian"],
+      banner: "#1a0800",
+      desc: "The eternal fires of Zoroastrianism — burning in temples across Persia for thousands of years, tended by priests, never to be extinguished.",
+      lore: "In the Shahnameh, fire is the sacred symbol of divine light and truth — Asha. When Hushang struck flint against a serpent and fire leapt, he built the first great flame and declared: this is the Light of God. Every Zoroastrian fire temple descends from that moment. The three great sacred fires — Adur Burzen-Mihr, Adur Farnbag, and Adur Gushnasp — each guarded a different estate of society: farmers, priests, warriors.",
+      figures: ["Hushang", "Zarathustra", "Vishtasp", "Lohrasp"],
+      timeline: "c. 1500 BC — first fire temples established",
+      coordinates: "Various · Iran & Central Asia",
+      modern: "Atash Bahram fires still burn in Yazd and Mumbai",
+    },
+    {
+      id: "royal-courts",
+      name: "Royal Courts",
+      nameFa: "دربار شاهی",
+      ico: "👑",
+      era: "Various Eras",
+      tags: ["palace", "politics", "court"],
+      banner: "#12001a",
+      desc: "The great courts of the Kayanian and Pishdadian kings — places of glory, betrayal, feast, and weeping.",
+      lore: "The Shahnameh's drama unfolds in the courts of Pars and Iran. It is in these halls that Jamshid fell to pride, that Kay Kavus launched his mad war against the heavens, that Siavash was falsely accused and exiled, and that Key Khosrow renounced his crown at the height of his power. Courts are where Farr is won and lost. They are not buildings — they are states of the soul.",
+      figures: ["Jamshid", "Keyumars", "Kay Kavus", "Siavash", "Key Khosrow", "Zal"],
+      timeline: "Mythic Age through Sassanid era",
+      coordinates: "Pars, Balkh, Isfahan · Ancient Iran",
+      modern: "Echoed in Persepolis, Pasargadae, Ctesiphon ruins",
+    },
+    {
+      id: "ancient-libraries",
+      name: "Ancient Libraries",
+      nameFa: "کتابخانه‌های باستانی",
+      ico: "📚",
+      era: "~300 AD",
+      tags: ["knowledge", "scrolls", "fire"],
+      banner: "#000f1a",
+      desc: "The great repositories of Persian knowledge — oral, written, and remembered — including the lost library of the Avesta and the Khvatay-namag that Ferdowsi drew from.",
+      lore: "Much of what became the Shahnameh came from the Khvatay-namag — a Middle Persian 'Book of Kings' compiled in the Sassanid era. When Arab armies swept through Persia in the 7th century, many libraries burned. Ferdowsi's great act was collecting the scattered oral traditions and written fragments that survived, weaving them into sixty thousand verses so that no conqueror could burn what was now held in human memory.",
+      figures: ["Ferdowsi", "Daqiqi", "Abu Mansur Muhammad", "Sassanid scribes"],
+      timeline: "c. 600 AD compilation · 977–1010 AD Ferdowsi's composition",
+      coordinates: "Tus, Nishapur, Ctesiphon",
+      modern: "Bodleian, British Library & Bibliothèque nationale hold Shahnameh manuscripts",
+    },
+  ];
+
+  const list   = document.getElementById("sites-list");
+  const overlay = document.getElementById("site-modal-overlay");
+  const closeBtn = document.getElementById("site-modal-close");
+  const smKicker  = document.getElementById("sm-kicker");
+  const smTitle   = document.getElementById("sm-title");
+  const smTimeline = document.getElementById("sm-timeline-hint");
+  const smBody    = document.getElementById("sm-body");
+  const smLore    = document.getElementById("sm-lore");
+  const smFigures = document.getElementById("sm-figures");
+  const smHakim   = document.getElementById("sm-hakim-btn");
+
+  let currentSite = null;
+
+  SITES.forEach((s) => {
+    const card = document.createElement("div");
+    card.className = "site-card";
+    card.setAttribute("data-site-id", s.id);
+    card.innerHTML = `
+      <div class="site-card-banner" style="background:${s.banner};">
+        <img src="/assets/images/sites/${s.id}-site.png" alt="${s.name}"
+             onerror="this.style.display='none'">
+        <span class="site-card-ico">${s.ico}</span>
+        <div class="site-card-tags">${s.tags.map(tag => `<span class="site-tag">${tag}</span>`).join("")}</div>
+      </div>
+      <div class="site-card-body">
+        <div class="site-card-header">
+          <div>
+            <div class="site-card-name">${s.name} <span style="opacity:.6; font-weight:400; font-size:11px; direction:rtl;">${s.nameFa}</span></div>
+            <div class="site-card-era">${s.era}</div>
+          </div>
+          <span class="site-card-ico-sm">${s.ico}</span>
+        </div>
+        <p class="site-card-desc">${s.desc.slice(0, 90)}…</p>
+        <div class="site-card-footer">
+          <span class="site-card-modern">${s.modern.split("·")[0].trim()}</span>
+          <span class="site-card-cta">Explore →</span>
+        </div>
+      </div>
+    `;
+    card.addEventListener("click", () => openSite(s));
+    list.appendChild(card);
+  });
+
+  const openSite = (s) => {
+    currentSite = s;
+    smKicker.textContent  = `Historical Site · ${s.era}`;
+    smTitle.textContent   = `${s.name} — ${s.nameFa}`;
+    smTimeline.textContent = `📅 ${s.timeline}`;
+    smBody.textContent    = s.desc;
+    smLore.textContent    = s.lore;
+    smFigures.innerHTML   = s.figures.map((f) =>
+      `<span class="region-hero-chip">✦ ${f}</span>`).join("");
+    overlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeSite = () => {
+    overlay.classList.remove("open");
+    document.body.style.overflow = "";
+    currentSite = null;
+  };
+
+  closeBtn.addEventListener("click", closeSite);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeSite();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeSite();
+  });
+
+  smHakim.addEventListener("click", () => {
+    if (!currentSite) return;
+    const query = `Tell me about ${currentSite.name} and its role in the Shahnameh`;
+    sessionStorage.setItem("hakim_prefill", query);
+    window.location.href = "hakim.html";
+  });
+})();
+</script>
+</body>
+</html>

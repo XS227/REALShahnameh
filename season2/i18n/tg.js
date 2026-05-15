@@ -647,6 +647,52 @@
       inventory: "Анбор",
       profile: "Профил",
       nav_hakim: "Ҳаким AI",
+      nav_regions: "Минтақаҳои Порс",
+      nav_sites: "Ҷойҳои таърихӣ",
+      nav_world: "Ҷаҳон",
+
+      /* Regions page */
+      regions_title: "Минтақаҳои Порс",
+      regions_sub: "Ҷаҳони қадимии Шоҳноmaро кашф кунед",
+      regions_kicker: "Ҷаҳон · Порси қадим",
+      hakim_explain_region: "Аз Ҳаким дар бораи ин минтақа бипурс",
+
+      /* Historical Sites page */
+      sites_title: "Ҷойҳои таърихӣ",
+      sites_sub: "Ҷойҳои афсонавии ҷаҳони форсӣ",
+      sites_kicker: "Ҷойҳо · Афсона ва таърих",
+      hakim_explain_site: "Аз Ҳаким бипурс",
+
+      /* Hakim expanded tabs */
+      hakim_tab_chat: "Пурсиш",
+      hakim_tab_wisdom: "Ҳикмат",
+      hakim_tab_word: "Калима",
+      hakim_tab_timeline: "Солнома",
+      hakim_word_of_day: "Калимаи рӯз",
+      hakim_kings_wisdom: "Ҳикмати подшоҳон",
+      hakim_history: "Солномаи таърихӣ",
+      hakim_orb_label: "Аз Ҳаким бипурс",
+
+      /* Timeline page */
+      nav_timeline: "Солномаи қадим",
+      timeline_kicker: "Ҷаҳон · Солномаи қадим",
+      timeline_title: "Солномаи қадим",
+      timeline_sub: "Сафари гоҳшумории Шоҳнома бо роҳнамоии Ҳаким",
+      tl_status_unlocked: "Кушода шуд",
+      tl_status_locked: "Қулф аст",
+      tl_status_completed: "Тамом шуд",
+      tl_ask_hakim: "Аз Ҳаким бипурс",
+      tl_hidden_lore: "Дониши пинҳон",
+      tl_discover: "Кашф кардан",
+
+      /* Hidden lore */
+      hidden_lore_section: "Дониши пинҳон",
+      lore_fragment: "Порчаи дониш",
+      lore_fragment_found: "Порчаи дониш кашф шуд",
+      lore_locked_hint: "Ин бобро тамом кун ё аз Ҳаким хоҳ ки бештар ошкор кунад.",
+      hakim_bond_reward: "Пайванди Ҳаким +10",
+      hakim_bond_section: "Пайванди Ҳаким",
+      ancient_timeline: "Солномаи қадим",
 
       /* Hakim AI Companion */
       hakim_title: "Ҳаким",

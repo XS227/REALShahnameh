@@ -649,6 +649,52 @@
       inventory: "Inventory",
       profile: "Profile",
       nav_hakim: "Hakim AI",
+      nav_regions: "Regions of Persia",
+      nav_sites: "Historical Sites",
+      nav_world: "World",
+
+      /* Regions page */
+      regions_title: "Regions of Persia",
+      regions_sub: "Explore the ancient world of the Shahnameh",
+      regions_kicker: "World · Ancient Persia",
+      hakim_explain_region: "Ask Hakim about this region",
+
+      /* Historical Sites page */
+      sites_title: "Historical Sites",
+      sites_sub: "Legendary places of the Persian world",
+      sites_kicker: "Places · Legend & History",
+      hakim_explain_site: "Ask Hakim",
+
+      /* Hakim expanded tabs */
+      hakim_tab_chat: "Ask",
+      hakim_tab_wisdom: "Wisdom",
+      hakim_tab_word: "Word",
+      hakim_tab_timeline: "Timeline",
+      hakim_word_of_day: "Word of the Day",
+      hakim_kings_wisdom: "Wisdom of Kings",
+      hakim_history: "Historical Timeline",
+      hakim_orb_label: "Ask Hakim",
+
+      /* Timeline page */
+      nav_timeline: "Ancient Timeline",
+      timeline_kicker: "World · Ancient Timeline",
+      timeline_title: "Ancient Timeline",
+      timeline_sub: "The chronological Shahnameh journey with Hakim as guide",
+      tl_status_unlocked: "Unlocked",
+      tl_status_locked: "Locked",
+      tl_status_completed: "Completed",
+      tl_ask_hakim: "Ask Hakim",
+      tl_hidden_lore: "Hidden Lore",
+      tl_discover: "Discover",
+
+      /* Hidden lore */
+      hidden_lore_section: "Hidden Lore",
+      lore_fragment: "Lore Fragment",
+      lore_fragment_found: "Lore Fragment discovered",
+      lore_locked_hint: "Complete this chapter or ask Hakim to reveal more.",
+      hakim_bond_reward: "Hakim Bond +10",
+      hakim_bond_section: "Hakim Bond",
+      ancient_timeline: "Ancient Timeline",
 
       /* Hakim AI Companion */
       hakim_title: "Hakim",

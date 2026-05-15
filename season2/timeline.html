@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>Ancient Timeline · REAL Shahnameh</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202605150200" />
+</head>
+<body>
+<main class="app">
+
+  <!-- Hero -->
+  <div class="timeline-hero cinematic-enter">
+    <div class="timeline-kicker" data-i18n="timeline_kicker">World · Ancient Timeline</div>
+    <h1 class="timeline-h1" data-i18n="timeline_title">Ancient Timeline</h1>
+    <p class="timeline-sub" data-i18n="timeline_sub">The chronological Shahnameh journey with Hakim as guide</p>
+  </div>
+
+  <!-- Timeline track -->
+  <div class="timeline-track cinematic-enter" style="animation-delay:0.08s" id="tl-track"></div>
+
+  <!-- Hidden lore section -->
+  <div class="section-head lore-section-head cinematic-enter" style="animation-delay:0.14s">
+    <h3 class="lore-section-title" data-i18n="hidden_lore_section">Hidden Lore</h3>
+    <span class="lore-section-kicker" data-i18n="lore_fragment">Lore Fragments</span>
+  </div>
+  <div id="lore-grid" class="cinematic-enter" style="animation-delay:0.2s; display:flex; flex-direction:column; gap:10px;"></div>
+
+</main>
+
+<div class="toast" data-toast></div>
+<div class="hakim-bond-toast" id="hakim-bond-toast">✦ Hakim Bond +10</div>
+
+<script src="i18n/en.js?v=202605150200"></script>
+<script src="i18n/fa.js?v=202605150200"></script>
+<script src="i18n/tg.js?v=202605150200"></script>
+<script src="i18n.js?v=202605150200"></script>
+<script src="app.js?v=202605150200"></script>
+<script src="resources.js?v=202605150200"></script>
+<script src="hakim-orb.js?v=202605150200"></script>
+<script>
+(() => {
+  "use strict";
+
+  /* ── helpers ──────────────────────────────────────────────────────────── */
+  const t = (key, fallback) => {
+    try {
+      const l = localStorage.getItem("real_lang") || "en";
+      const loc = window.RealI18NLocales;
+      return (loc && loc[l] && loc[l][key]) || (loc && loc.en && loc.en[key]) || fallback || key;
+    } catch { return fallback || key; }
+  };
+
+  const toast = (msg) => {
+    const el = document.querySelector("[data-toast]");
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add("show");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => el.classList.remove("show"), 2000);
+  };
+
+  /* ── Hakim bond toast ─────────────────────────────────────────────────── */
+  const bondToastEl = document.getElementById("hakim-bond-toast");
+  const showBondToast = () => {
+    if (!bondToastEl) return;
+    bondToastEl.textContent = "✦ " + t("hakim_bond_reward", "Hakim Bond +10");
+    bondToastEl.classList.add("show");
+    clearTimeout(showBondToast._t);
+    showBondToast._t = setTimeout(() => bondToastEl.classList.remove("show"), 2200);
+  };
+
+  /* ── Lore state ───────────────────────────────────────────────────────── */
+  const LORE_KEY = "real_lore_unlocked_v1";
+  const BOND_KEY = "real_hakim_bond_xp_v1";
+
+  const getLoreState = () => {
+    try { return JSON.parse(localStorage.getItem(LORE_KEY) || "{}"); } catch { return {}; }
+  };
+  const saveLoreState = (s) => {
+    try { localStorage.setItem(LORE_KEY, JSON.stringify(s)); } catch {}
+  };
+  const getBondXP = () => {
+    try { return parseInt(localStorage.getItem(BOND_KEY) || "0", 10); } catch { return 0; }
+  };
+  const addBondXP = (n) => {
+    try { localStorage.setItem(BOND_KEY, String(getBondXP() + n)); } catch {}
+  };
+
+  const unlockLore = (id) => {
+    const s = getLoreState();
+    if (s[id]) return false;
+    s[id] = true;
+    saveLoreState(s);
+    addBondXP(10);
+    return true;
+  };
+
+  /* ── Player progress: which nodes are unlocked ────────────────────────── */
+  const getPlayerProgress = () => {
+    try {
+      const raw = localStorage.getItem("real_player_state_v1");
+      if (!raw) return { chapterProgress: { 1: { unlocked: true } } };
+      const p = JSON.parse(raw);
+      return p || {};
+    } catch { return {}; }
+  };
+
+  /* ── Timeline node data ───────────────────────────────────────────────── */
+  const NODES = [
+    {
+      id: "keyumars", chapter: 1,
+      era: "~7000 BC", title: "Keyumars",
+      subtitle: "The First King",
+      lore: "From the mountains of Pars, Keyumars rules a world still soft with dawn. He clothes himself in leopard skin and the beasts bow at his feet. Civilization begins with him.",
+      reward: "⭐ 200 XP · 🦁 Keyumars Fragment",
+      hasHiddenLore: true,
+      ask: "Explain Keyumars in the Shahnameh timeline and why he matters as the first king.",
+    },
+    {
+      id: "hushang", chapter: 2,
+      era: "~6900 BC", title: "Hushang",
+      subtitle: "The Spark of Fire",
+      lore: "Hushang strikes flint at a serpent and instead wakes the eternal flame. From this moment, civilization learns warmth, smelting, and the festival of Sadeh.",
+      reward: "⭐ 250 XP · 🔥 Fire Fragment",
+      hasHiddenLore: true,
+      ask: "Explain Hushang and why fire matters in his story in the Shahnameh.",
+    },
+    {
+      id: "tahmuras", chapter: 3,
+      era: "~6000 BC", title: "Tahmuras",
+      subtitle: "Binder of Demons",
+      lore: "Tahmuras the Div-band rides through smoke and chains the demons. They beg for life and trade their secret: the art of writing.",
+      reward: "⭐ 300 XP · 📜 Writing Fragment",
+      hasHiddenLore: false,
+      ask: "Explain Tahmuras and the significance of his binding of demons in the Shahnameh timeline.",
+    },
+    {
+      id: "jamshid", chapter: 4,
+      era: "~5500 BC", title: "Jamshid",
+      subtitle: "The Golden Throne",
+      lore: "Jamshid divides the people into four crafts and sits upon a kingdom of crystal. Seven hundred years of greatness — until pride outshines the sun and Farr departs.",
+      reward: "⭐ 350 XP · 👑 Farr Fragment",
+      hasHiddenLore: false,
+      ask: "Explain Jamshid's rise and fall in the Shahnameh and why pride destroyed his divine grace.",
+    },
+    {
+      id: "zahhak", chapter: 5,
+      era: "~5000 BC", title: "Zahhak",
+      subtitle: "The Serpent King",
+      lore: "Two serpents grow from Zahhak's shoulders, each fed on human brains. A thousand years of darkness grip the world until a blacksmith raises his apron as a banner of revolt.",
+      reward: "⭐ 400 XP · 🐍 Zahhak Fragment",
+      hasHiddenLore: true,
+      ask: "Explain Zahhak and the symbolism of tyranny in the Shahnameh — what do the serpents represent?",
+    },
+    {
+      id: "fereydun", chapter: 6,
+      era: "~4500 BC", title: "Fereydun",
+      subtitle: "The Liberator",
+      lore: "Kaveh the blacksmith raises his leather apron as a banner. Fereydun's bull-headed mace shatters a tyrant. The world breathes again.",
+      reward: "⭐ 450 XP · ⚔ Liberator Fragment",
+      hasHiddenLore: false,
+      ask: "Explain Fereydun and how he liberated the world from Zahhak in the Shahnameh.",
+    },
+    {
+      id: "manuchehr", chapter: 7,
+      era: "~4000 BC", title: "Manuchehr",
+      subtitle: "The Third Dynasty",
+      lore: "Manuchehr establishes the Pishdadian order after Fereydun divides the world among his sons. War between brothers shapes the era.",
+      reward: "⭐ 500 XP · 🏛 Dynasty Fragment",
+      hasHiddenLore: false,
+      ask: "Explain Manuchehr and his place in the Shahnameh's dynastic sequence.",
+    },
+    {
+      id: "nozar", chapter: 8,
+      era: "~3800 BC", title: "Nozar",
+      subtitle: "The Weak King",
+      lore: "Nozar inherits the throne but not the Farr. His weak rule opens the door for Afrasiab of Turan — the great enemy from beyond the Oxus.",
+      reward: "⭐ 550 XP · 🌊 Turan Fragment",
+      hasHiddenLore: false,
+      ask: "Explain Nozar's significance in the Shahnameh and how his weakness opened the age of war.",
+    },
+    {
+      id: "zal", chapter: 9,
+      era: "~2500 BC", title: "Zal",
+      subtitle: "The Albino Prince",
+      lore: "Born white-haired and cast to Mount Alborz, Zal is raised by the great Simorgh. He returns to Pars on wings of myth, carrying wisdom older than the kingdom.",
+      reward: "⭐ 600 XP · 🦅 Simorgh Feather",
+      hasHiddenLore: true,
+      ask: "Explain Zal's story in the Shahnameh and the significance of the Simorgh raising him.",
+    },
+    {
+      id: "rostam", chapter: 10,
+      era: "~2000 BC", title: "Rostam",
+      subtitle: "Champion of Pars",
+      lore: "Seven labours, one horse named Rakhsh, no equal under the sky. Rostam becomes the world's pillar — and bears the heaviest burden any hero has ever carried.",
+      reward: "⭐ 700 XP · ⚔ Rostam Shard",
+      hasHiddenLore: true,
+      ask: "Explain Rostam's heroic burden in the Shahnameh and why his story is the heart of the epic.",
+    },
+  ];
+
+  /* ── Hidden lore data ─────────────────────────────────────────────────── */
+  const HIDDEN_LORES = [
+    {
+      id: "farr_secret",
+      title: "The Secret Meaning of Farr",
+      body: "Farr (فَرّ) is not simply 'glory' — it is divine fire made visible in a righteous ruler. Ancient Zoroastrian texts describe it as a living flame that dwells in worthy kings and departs when they sin. Ferdowsi uses Farr as the central moral engine of the Shahnameh: every king's rise and fall is measured by whether Farr stays or leaves.",
+      reward: "+50 XP · +10 Hakim Bond",
+      unlockHint: "Complete Chapter 1 or ask Hakim about Keyumars.",
+      trigger: "keyumars",
+    },
+    {
+      id: "zahhak_tyranny",
+      title: "Zahhak and the Symbolism of Tyranny",
+      body: "The serpents growing from Zahhak's shoulders are not mere monsters — they are the embodiment of an oppressive state that must devour its own people to survive. The daily need for two human brains mirrors the logic of every tyranny: it must feed on the talent and life of its citizens to keep its rulers in power. Kaveh's apron as a banner is equally symbolic: freedom rises from the craftsman, not the court.",
+      reward: "+50 XP · +10 Hakim Bond",
+      unlockHint: "Complete Chapter 5 or ask Hakim about Zahhak.",
+      trigger: "zahhak",
+    },
+    {
+      id: "damavand_prison",
+      title: "Damavand as Prison of Darkness",
+      body: "Mount Damavand — the highest peak in the Middle East — serves as Zahhak's eternal prison after Fereydun defeats him. In Persian mythology, Damavand is both the world's axis and its darkest dungeon. The volcano still active beneath it is said to be Zahhak's rage. Every eruption is a reminder that tyranny is chained, not dead.",
+      reward: "+50 XP · +10 Hakim Bond",
+      unlockHint: "Visit the Historical Sites page and explore Damavand.",
+      trigger: "fereydun",
+    },
+    {
+      id: "hushang_fire",
+      title: "Why Fire Matters in Hushang's Story",
+      body: "Hushang's discovery of fire was not an accident — it was a moment of divine revelation. He struck flint against a serpent (a creature of Ahriman) and produced light. The lesson: order emerges from confronting darkness. Fire became the sacred symbol of Ahura Mazda's presence in the world, and the festival of Sadeh was born to commemorate this moment every year.",
+      reward: "+50 XP · +10 Hakim Bond",
+      unlockHint: "Complete Chapter 2 or ask Hakim about Hushang.",
+      trigger: "hushang",
+    },
+    {
+      id: "simurgh_wisdom",
+      title: "Simurgh and the Nature of Wisdom",
+      body: "The Simorgh is not a bird — it is a symbol of accumulated wisdom. Its nest on the world-tree Gaokerena means it has witnessed every age of the world. When it raised Zal, it was passing down the knowledge of all civilizations before Pars. The feather it gave him — 'burn it and I shall come' — is the promise that wisdom is always available to those who earned it through hardship.",
+      reward: "+50 XP · +10 Hakim Bond",
+      unlockHint: "Complete Chapter 9 or ask Hakim about Zal.",
+      trigger: "zal",
+    },
+    {
+      id: "rostam_burden",
+      title: "Rostam's Burden of Heroism",
+      body: "Rostam is the greatest warrior in the Shahnameh — and the most tragic. He kills his own son Sohrab without knowing it. He kills Esfandiyar, the righteous man who was his equal. He is bound to serve kings who are often unworthy of him. Ferdowsi uses Rostam to ask a terrible question: what does it cost to be the one who holds the world together?",
+      reward: "+50 XP · +10 Hakim Bond",
+      unlockHint: "Complete Chapter 10 or ask Hakim about Rostam.",
+      trigger: "rostam",
+    },
+  ];
+
+  /* ── Determine node status from player progress ───────────────────────── */
+  const getNodeStatus = (node) => {
+    const p = getPlayerProgress();
+    const cp = p.chapterProgress || {};
+    const ch = cp[node.chapter];
+    if (!ch) {
+      // also unlock first 2 by default for new players
+      if (node.chapter <= 2) return "unlocked";
+      return "locked";
+    }
+    if (ch.completed) return "completed";
+    if (ch.unlocked) return "unlocked";
+    return "locked";
+  };
+
+  /* ── Navigate to Hakim with prefill ──────────────────────────────────── */
+  const askHakim = (question) => {
+    try { sessionStorage.setItem("hakim_prefill", question); } catch {}
+    window.location.href = "hakim.html";
+  };
+
+  /* ── Build timeline nodes ─────────────────────────────────────────────── */
+  const track = document.getElementById("tl-track");
+
+  NODES.forEach((node, idx) => {
+    const status = getNodeStatus(node);
+    const statusLabel = t(
+      status === "completed" ? "tl_status_completed" : status === "unlocked" ? "tl_status_unlocked" : "tl_status_locked",
+      status
+    );
+    const dotContent = status === "completed" ? "✓" : String(idx + 1);
+
+    const div = document.createElement("div");
+    div.className = `tl-node ${status} cinematic-enter`;
+    div.style.animationDelay = `${0.06 + idx * 0.04}s`;
+    div.innerHTML = `
+      <div class="tl-dot">${dotContent}</div>
+      <div class="tl-card">
+        <span class="tl-status-chip">${statusLabel}</span>
+        <div class="tl-era">${node.era}</div>
+        <div class="tl-title">${node.title} <span style="font-weight:500; font-size:12px; color:var(--muted);">· ${node.subtitle}</span></div>
+        <p class="tl-lore">${node.lore}</p>
+        <div class="tl-reward">${node.reward}</div>
+        <div class="tl-actions">
+          <button class="tl-ask-hakim" data-ask="${encodeURIComponent(node.ask)}">🤖 ${t("tl_ask_hakim", "Ask Hakim")}</button>
+          ${node.hasHiddenLore ? `<button class="tl-lore-pill" data-lore-trigger="${node.id}">🔒 ${t("tl_hidden_lore", "Hidden Lore")}</button>` : ""}
+        </div>
+      </div>
+    `;
+    track.appendChild(div);
+  });
+
+  /* ── Ask Hakim button events ──────────────────────────────────────────── */
+  track.addEventListener("click", (e) => {
+    const askBtn = e.target.closest("[data-ask]");
+    if (askBtn) {
+      askHakim(decodeURIComponent(askBtn.getAttribute("data-ask")));
+      return;
+    }
+    const loreBtn = e.target.closest("[data-lore-trigger]");
+    if (loreBtn) {
+      const nodeId = loreBtn.getAttribute("data-lore-trigger");
+      const lore = HIDDEN_LORES.find(l => l.trigger === nodeId);
+      if (!lore) return;
+      const card = document.querySelector(`[data-lore-id="${lore.id}"]`);
+      if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  });
+
+  /* ── Build hidden lore cards ──────────────────────────────────────────── */
+  const loreGrid = document.getElementById("lore-grid");
+  const loreState = getLoreState();
+
+  HIDDEN_LORES.forEach((lore) => {
+    const isUnlocked = !!loreState[lore.id];
+    const card = document.createElement("div");
+    card.className = `lore-card ${isUnlocked ? "unlocked" : "locked"} cinematic-enter`;
+    card.setAttribute("data-lore-id", lore.id);
+    card.style.animationDelay = "0.22s";
+
+    if (isUnlocked) {
+      card.innerHTML = `
+        <div class="lore-kicker">${t("lore_fragment", "Lore Fragment")}</div>
+        <div class="lore-title">${lore.title}</div>
+        <p class="lore-body">${lore.body}</p>
+        <span class="lore-reward-chip">⭐ ${lore.reward}</span>
+      `;
+    } else {
+      card.innerHTML = `
+        <span class="lore-lock-icon">🔒</span>
+        <div class="lore-kicker">${t("hidden_lore_section", "Hidden Lore")}</div>
+        <div class="lore-title">${lore.title}</div>
+        <p class="lore-locked-hint">${lore.unlockHint}</p>
+        <button class="lore-unlock-btn" data-unlock="${lore.id}">✦ ${t("tl_discover", "Discover")}</button>
+      `;
+    }
+
+    loreGrid.appendChild(card);
+  });
+
+  /* ── Unlock lore on Discover tap ─────────────────────────────────────── */
+  loreGrid.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-unlock]");
+    if (!btn) return;
+    const id = btn.getAttribute("data-unlock");
+    const lore = HIDDEN_LORES.find(l => l.id === id);
+    if (!lore) return;
+
+    const wasNew = unlockLore(id);
+    if (!wasNew) return;
+
+    const card = btn.closest(".lore-card");
+    if (card) {
+      card.classList.remove("locked");
+      card.classList.add("unlocked", "just-unlocked");
+      card.innerHTML = `
+        <div class="lore-kicker">${t("lore_fragment", "Lore Fragment")}</div>
+        <div class="lore-title">${lore.title}</div>
+        <p class="lore-body">${lore.body}</p>
+        <span class="lore-reward-chip">⭐ ${lore.reward}</span>
+      `;
+    }
+
+    toast(t("lore_fragment_found", "Lore Fragment discovered"));
+    showBondToast();
+
+    // update the lore pill on the timeline node if present
+    const lorePill = track.querySelector(`[data-lore-trigger="${lore.trigger}"]`);
+    if (lorePill) {
+      lorePill.classList.add("unlocked");
+      lorePill.innerHTML = `✦ ${t("tl_hidden_lore", "Hidden Lore")}`;
+    }
+
+    try {
+      if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.HapticFeedback) {
+        window.Telegram.WebApp.HapticFeedback.notificationOccurred("success");
+      } else if (navigator.vibrate) { navigator.vibrate(12); }
+    } catch {}
+  });
+
+  /* ── Mark already-unlocked lore pills ────────────────────────────────── */
+  const currentState = getLoreState();
+  HIDDEN_LORES.forEach((lore) => {
+    if (currentState[lore.id]) {
+      const pill = track.querySelector(`[data-lore-trigger="${lore.trigger}"]`);
+      if (pill) {
+        pill.classList.add("unlocked");
+        pill.innerHTML = `✦ ${t("tl_hidden_lore", "Hidden Lore")}`;
+      }
+    }
+  });
+
+})();
+</script>
+</body>
+</html>

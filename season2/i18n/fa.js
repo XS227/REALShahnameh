@@ -648,6 +648,52 @@
       inventory: "انبار",
       profile: "پروفایل",
       nav_hakim: "هوش مصنوعی حکیم",
+      nav_regions: "مناطق پارس",
+      nav_sites: "مکان‌های تاریخی",
+      nav_world: "جهان",
+
+      /* Regions page */
+      regions_title: "مناطق پارس",
+      regions_sub: "جهان باستانی شاهنامه را کشف کنید",
+      regions_kicker: "جهان · پارس باستان",
+      hakim_explain_region: "از حکیم درباره این منطقه بپرس",
+
+      /* Historical Sites page */
+      sites_title: "مکان‌های تاریخی",
+      sites_sub: "مکان‌های افسانه‌ای جهان پارسی",
+      sites_kicker: "مکان‌ها · افسانه و تاریخ",
+      hakim_explain_site: "از حکیم بپرس",
+
+      /* Hakim expanded tabs */
+      hakim_tab_chat: "پرسش",
+      hakim_tab_wisdom: "حکمت",
+      hakim_tab_word: "واژه",
+      hakim_tab_timeline: "زمان‌نگار",
+      hakim_word_of_day: "واژه‌ی روز",
+      hakim_kings_wisdom: "حکمت شاهان",
+      hakim_history: "زمان‌نگار تاریخی",
+      hakim_orb_label: "از حکیم بپرس",
+
+      /* Timeline page */
+      nav_timeline: "زمان‌نگار کهن",
+      timeline_kicker: "جهان · زمان‌نگار کهن",
+      timeline_title: "زمان‌نگار کهن",
+      timeline_sub: "سفر گاهشمارانه شاهنامه با راهنمایی حکیم",
+      tl_status_unlocked: "باز شده",
+      tl_status_locked: "قفل",
+      tl_status_completed: "کامل شده",
+      tl_ask_hakim: "از حکیم بپرس",
+      tl_hidden_lore: "دانش پنهان",
+      tl_discover: "کشف",
+
+      /* Hidden lore */
+      hidden_lore_section: "دانش پنهان",
+      lore_fragment: "قطعه دانش",
+      lore_fragment_found: "قطعه دانش کشف شد",
+      lore_locked_hint: "این فصل را کامل کن یا از حکیم بخواه تا بیشتر آشکار کند.",
+      hakim_bond_reward: "پیوند حکیم +۱۰",
+      hakim_bond_section: "پیوند حکیم",
+      ancient_timeline: "زمان‌نگار کهن",
 
       /* Hakim AI Companion */
       hakim_title: "حکیم",

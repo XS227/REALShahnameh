@@ -19,16 +19,16 @@
     `https://t.me/${BOT_USERNAME}?start=${encodeURIComponent(slug || DEFAULT_INVITE_SLUG)}`;
 
   /* ===========================================================
-     Debug overlay — visible on-screen error reporter so the
-     Telegram WebView never silently shows a dark loading spinner.
-     Errors / failed fetches / unhandled rejections all surface here.
-     Toggle visibility manually with #debug in the URL hash.
+     Debug logger — console-only in production.
+     Visual overlay appears ONLY when URL hash contains "debug"
+     and APP_DEBUG meta tag is present (developer opt-in only).
      =========================================================== */
+
+  const APP_DEBUG = location.hash.includes("debug");
 
   const Debug = (() => {
     let host = null;
     let log  = null;
-    const lines = [];
 
     const ensureHost = () => {
       if (host) return host;
@@ -36,18 +36,17 @@
       host.setAttribute("data-debug-overlay", "");
       host.style.cssText = [
         "position:fixed", "left:0", "right:0", "bottom:0",
-        "max-height:45vh", "overflow:auto",
-        "background:rgba(8,10,18,.94)", "color:#ffd28a",
-        "font:12px/1.4 ui-monospace,Menlo,Consolas,monospace",
-        "padding:10px 12px", "border-top:1px solid #f4c56b",
-        "z-index:2147483647", "white-space:pre-wrap",
-        "word-break:break-word", "display:none"
+        "max-height:35vh", "overflow:auto",
+        "background:rgba(8,10,18,.92)", "color:#ffd28a",
+        "font:11px/1.4 ui-monospace,Menlo,Consolas,monospace",
+        "padding:8px 12px 10px", "border-top:1px solid rgba(244,197,107,.4)",
+        "z-index:2147483647", "white-space:pre-wrap", "word-break:break-word"
       ].join(";");
       const close = document.createElement("button");
       close.textContent = "×";
       close.setAttribute("aria-label", "Close debug overlay");
-      close.style.cssText = "position:absolute;top:4px;right:8px;background:none;border:0;color:#ffd28a;font-size:18px;cursor:pointer";
-      close.addEventListener("click", () => { host.style.display = "none"; });
+      close.style.cssText = "position:absolute;top:4px;right:8px;background:none;border:0;color:#ffd28a;font-size:16px;cursor:pointer";
+      close.addEventListener("click", () => { host.remove(); host = null; });
       log = document.createElement("div");
       host.appendChild(close);
       host.appendChild(log);
@@ -56,54 +55,36 @@
       return host;
     };
 
+    const lines = [];
     const render = () => {
+      if (!APP_DEBUG) return;
       ensureHost();
-      log.textContent = lines.slice(-50).join("\n");
-      host.style.display = "";
-      host.scrollTop = host.scrollHeight;
+      log.textContent = lines.slice(-30).join("\n");
     };
 
     return {
       push(label, detail) {
-        const ts = new Date().toISOString().split("T")[1].replace("Z", "");
-        lines.push(`[${ts}] ${label}${detail ? " — " + detail : ""}`);
-        try { render(); } catch (_) { /* DOM not ready yet */ }
+        const msg = `${label}${detail ? ": " + detail : ""}`;
+        console.error("[Shahnameh]", msg);
+        lines.push(msg);
+        try { render(); } catch (_) {}
       },
       info(msg) {
-        try { console.log(msg); } catch (_) {}
-        const ts = new Date().toISOString().split("T")[1].replace("Z", "");
-        lines.push(`[${ts}] ${msg}`);
+        if (APP_DEBUG) console.log("[Shahnameh]", msg);
+        lines.push(msg);
+        try { render(); } catch (_) {}
       }
     };
   })();
 
-  // Surface synchronous errors
   window.addEventListener("error", (e) => {
-    const where = e.filename ? `${e.filename}:${e.lineno}:${e.colno}` : "unknown";
+    const where = e.filename ? `${e.filename}:${e.lineno}` : "unknown";
     Debug.push("JS error", `${e.message} @ ${where}`);
   });
-  // Surface unhandled async rejections
   window.addEventListener("unhandledrejection", (e) => {
     const reason = (e.reason && (e.reason.stack || e.reason.message)) || String(e.reason);
     Debug.push("Promise rejected", reason);
   });
-  // Wrap fetch so we can see network failures (Telegram WebView often masks them)
-  if (window.fetch) {
-    const origFetch = window.fetch.bind(window);
-    window.fetch = (input, init) => {
-      const url = typeof input === "string" ? input : (input && input.url) || "";
-      return origFetch(input, init).then((r) => {
-        if (!r.ok) Debug.push("Fetch !ok", `${r.status} ${url}`);
-        return r;
-      }).catch((err) => {
-        Debug.push("Fetch failed", `${url} — ${err && err.message}`);
-        throw err;
-      });
-    };
-  }
-  if (location.hash.includes("debug")) {
-    Debug.push("Debug overlay", "manual #debug requested");
-  }
 
   /* ===========================================================
      Telegram Mini App bootstrap — runs immediately so the
@@ -120,12 +101,7 @@
       // Theme-aware background so the splash → app handoff stays dark.
       try { if (typeof tg.setBackgroundColor === "function") tg.setBackgroundColor("#04050b"); } catch (_) {}
       try { if (typeof tg.setHeaderColor === "function") tg.setHeaderColor("#04050b"); } catch (_) {}
-      console.log("Telegram init ok");
-      console.log(window.Telegram);
-      console.log(tg.initDataUnsafe);
       Debug.info(`Telegram init ok — platform=${tg.platform || "?"} v=${tg.version || "?"}`);
-      const u = tg.initDataUnsafe && tg.initDataUnsafe.user;
-      if (u) Debug.info(`tg user: id=${u.id} ${u.username || u.first_name || ""}`);
     } catch (err) {
       Debug.push("Telegram init failed", err && err.message);
     }
@@ -563,17 +539,20 @@
 
     /* ── Nav links definition ── */
     const NAV_LINKS = [
-      { file: "index.html",  ico: "🏠", key: "home",       section: "main" },
-      { file: "learn.html",  ico: "📜", key: "learn",      section: "main" },
-      { file: "tap.html",    ico: "⚡", key: "tap",        section: "main" },
-      { file: "heroes.html", ico: "⚔",  key: "heroes",     section: "main" },
-      { file: "earn.html",   ico: "💎", key: "earn",       section: "main" },
-      { file: "social.html", ico: "👥", key: "social",     section: "main" },
-      { file: "hakim.html",  ico: "🤖", key: "nav_hakim",  section: "hakim", cls: "hakim-link" },
-      { file: null,          ico: "⚔",  key: "guild",      section: "more",  coming: true },
-      { file: null,          ico: "🛒", key: "market",     section: "more",  coming: true },
-      { file: null,          ico: "📦", key: "inventory",  section: "more",  coming: true },
-      { file: null,          ico: "👤", key: "profile",    section: "more",  coming: true },
+      { file: "index.html",           ico: "🏠", key: "home",          section: "main" },
+      { file: "learn.html",           ico: "📜", key: "learn",         section: "main" },
+      { file: "tap.html",             ico: "⚡", key: "tap",           section: "main" },
+      { file: "heroes.html",          ico: "⚔",  key: "heroes",        section: "main" },
+      { file: "earn.html",            ico: "💎", key: "earn",          section: "main" },
+      { file: "social.html",          ico: "👥", key: "social",        section: "main" },
+      { file: "regions.html",         ico: "🗺", key: "nav_regions",   section: "world" },
+      { file: "historical-sites.html",ico: "🏛", key: "nav_sites",     section: "world" },
+      { file: "timeline.html",        ico: "⏳", key: "nav_timeline",  section: "world" },
+      { file: "hakim.html",           ico: "🤖", key: "nav_hakim",     section: "world", cls: "hakim-link" },
+      { file: null,                   ico: "⚔",  key: "guild",         section: "more",  coming: true },
+      { file: null,                   ico: "🛒", key: "market",        section: "more",  coming: true },
+      { file: null,                   ico: "📦", key: "inventory",     section: "more",  coming: true },
+      { file: null,                   ico: "👤", key: "profile",       section: "more",  coming: true },
     ];
 
     const buildNavLinks = (tx) => {
@@ -583,7 +562,7 @@
         if (n.section !== lastSection) {
           const sectionLabelMap = {
             main:  tx.explore || "Navigate",
-            hakim: "Hakim",
+            world: tx.nav_world || "World",
             more:  tx.coming_soon || "Coming Soon",
           };
           html += `<div class="hmenu-section-label">${sectionLabelMap[n.section] || n.section}</div>`;
