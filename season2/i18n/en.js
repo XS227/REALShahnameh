@@ -34,7 +34,7 @@
       streak_label: "Daily streak",
       streak_val: "🔥 12 days",
       refill: "Refill",
-      refill_copy: "Restore 500 energy instantly. Watch an ad.",
+      refill_copy: "The ancient fires are restored. Each strike preserves the chronicle.",
       watch_ad_energy: "Watch ad",
       tap_skins_title: "⬡ Tap Skins",
       skins_sub: "Earn through chapters · Buy with REAL · Win in events & airdrops",
@@ -317,20 +317,53 @@
       intro_bism_translation: "In the Name of the Lord of soul and wisdom — higher than this, no thought can pass.",
       intro_bism_author: "— Ferdowsi, opening of the Shahnameh",
 
-      /* Panel A — Ferdowsi */
+      /* Panel 1 — Welcome */
+      intro_welcome_sub: "The Book of Kings — preserved for you.",
+
+      /* Panel 2 — Memory */
+      intro_kicker_memory: "The Memory",
+      intro_h1_memory: "The World Was Fading",
+      intro_memory_lead: "Three empires fell. The language bent toward silence.",
+      intro_memory_p1: "When the courts of Persia were broken and her tongue was bending toward forgetting, one man in the city of Tus sat down and refused to let it go. For thirty years — through poverty, through the silence of kings who never paid him — Ferdowsi wrote. Sixty thousand verses. Every king. Every battle. Every fire.",
+      intro_memory_quote: "\"I shall not die, for I have sown the seed of words.\"",
+
+      /* Panel 3 — Hakim */
+      intro_kicker_hakim: "Your Guide",
+      intro_h1_hakim: "Hakim",
+      intro_hakim_lead: "He has been waiting a thousand years for this question.",
+      intro_hakim_p1: "Hakim is the AI companion of the chronicle. He carries the dignity of Ferdowsi's verses and speaks in the voice of the Shahnameh itself — calm, ancient, poetic.",
+      intro_hakim_p2: "Ask him about kings, heroes, battles, words, and the moral weight of legends. He will not give you simple answers. He will give you the ones worth carrying.",
+
+      /* Panel 4 — Keeper of the Flame */
+      intro_kicker_keeper: "Your Role",
+      intro_h1_keeper: "Keeper of the Flame",
+      intro_keeper_lead: "The chronicle has been waiting for someone to remember.",
+      intro_keeper_p1: "You are not a passive reader. The Shahnameh calls its keepers: those who read the chronicle, preserve lore fragments, unlock heroes from memory, and carry the flame of ancient Persia forward into a world that forgets too easily.",
+      intro_keeper_read_h: "Read the Chronicle",
+      intro_keeper_read_p: "Each scene you read recovers a piece of the ancient world.",
+      intro_keeper_lore_h: "Recover Hidden Lore",
+      intro_keeper_lore_p: "Lost fragments wait inside every chapter — discovered only by those who look closely.",
+      intro_keeper_flame_h: "Preserve the Flame",
+      intro_keeper_flame_p: "Farr — the divine radiance — belongs to those who act with purpose. Earn it. Keep it.",
+
+      /* Panel 5 — CTA */
+      intro_cta_kicker: "Season 2 · Chapter 1",
+      intro_cta_title: "Keyumars — The First King",
+      intro_cta_copy: "He stood on the mountain with nothing but the wind and the silence after he spoke. The lions came down. The world learned what a king was.",
+      intro_cta_copy2: "Your chronicle begins now.",
+
+      /* Legacy intro keys (kept for FA/TG locale compatibility) */
       intro_kicker_a: "A · The Poet",
       intro_h1_ferdowsi: "Ferdowsi of Tus",
       intro_ferdowsi_lead: "One man · thirty years · sixty thousand verses.",
-      intro_ferdowsi_p1: "When the empires of Persia had been broken and her language was bending toward forgetfulness, a poet from Tus picked up a pen and began the slow work of remembering. Ferdowsi did not invent the kings he named. He carried them across the ruined ground so that a child a thousand years later could still say, in her own tongue, the words for dawn and throne and fire.",
+      intro_ferdowsi_p1: "When the empires of Persia had been broken and her language was bending toward forgetfulness, a poet from Tus picked up a pen and began the slow work of remembering.",
       intro_ferdowsi_p2: "What he saved was not a king-list. He saved a way of being Iranian.",
       intro_ferdowsi_quote: "\"I shall not die, for I am alive — for I have sown the seed of words.\"",
-
-      /* Panel B — Shahnameh */
       intro_kicker_b: "B · The Book",
       intro_h1_shahnameh: "The Shahnameh",
       intro_shahnameh_lead: "The Book of Kings.",
-      intro_shahnameh_p1: "A single epic that holds the whole memory of Persia: dynasty after dynasty, hero after hero, demon after demon, from the first king of the dawn to the last battle of the age. It is history dressed as myth, and myth dressed as history. They cannot be separated and you are not meant to.",
-      intro_shahnameh_p2: "The Shahnameh is the preservation of Persian identity itself — language, ritual, calendar, courage, sorrow. Where empires fell, the verses did not. Where the language of the court changed, Ferdowsi's Persian held. A nation's mythology, kept alive by one poet's stubbornness.",
+      intro_shahnameh_p1: "A single epic that holds the whole memory of Persia.",
+      intro_shahnameh_p2: "The Shahnameh is the preservation of Persian identity itself.",
       intro_fact_60k_num: "≈ 60,000",
       intro_fact_60k_desc: "Couplets — the longest epic by a single poet ever written.",
       intro_fact_50_num: "50",
@@ -339,21 +372,15 @@
       intro_fact_30yrs_desc: "Of work by Ferdowsi.",
       intro_fact_1lang_num: "1 lang",
       intro_fact_1lang_desc: "Held alive by 60,000 verses — Persian.",
-
-      /* Panel C — Age of Kings */
       intro_kicker_c: "C · The Age",
       intro_h1_age: "The Age of Kings Begins",
-      intro_age_lead: "Before the dynasties of Iran, before the Achaemenids, before the prophet of fire — the Pishdadians.",
-      intro_age_p1: "The first dynasty of the Shahnameh is older than memory: a line of kings who taught humans to bind hair and hand fire and split iron. They are called Pishdadi — those who set the foremost law. The chronicle begins with the very first of them.",
-
-      /* Panel D — World Before */
+      intro_age_lead: "Before the dynasties of Iran, before the Achaemenids — the Pishdadians.",
+      intro_age_p1: "The first dynasty of the Shahnameh is older than memory.",
       intro_kicker_d: "D · The World Before",
       intro_h1_before: "A World Without Roof",
       intro_before_lead: "No fire. No alphabet. No measure of time.",
-      intro_before_p1: "The valleys were full of teeth. The forests were older than language. Children slept under leaves and woke under hawks. There was no single word the people had in common. There was no shared night, no shared morning.",
-      intro_before_p2: "And then — high up, where only goats and weather went — a man stood on the cold rock and looked down.",
-
-      /* Panel E — Duality */
+      intro_before_p1: "The valleys were full of teeth. The forests were older than language.",
+      intro_before_p2: "And then — a man stood on the cold rock and looked down.",
       intro_kicker_e: "E · The Two",
       intro_h1_duality: "Light against Darkness",
       intro_dual_ahura_h: "Ahura · Light",
@@ -361,15 +388,11 @@
       intro_dual_ahriman_h: "Ahriman · Dark",
       intro_dual_ahriman_body: "Forgetting. Hunger. The shape under the leaf.",
       intro_duality_foot: "The Shahnameh does not pretend they are equal. It pretends they are old.",
-
-      /* Panel F — Keyumars */
       intro_kicker_f: "F · The First King",
       intro_h1_keyumars: "Keyumars Rises",
       intro_keyumars_lead: "On a high crag of ancient Pars, the first man takes a leopard's skin across his shoulders.",
-      intro_keyumars_p1: "He has no army yet. He has no city. He has only the wind, the firelight, and the silence after he speaks. The lions come down from the high pasture and lie at his feet. The mountain learns his name.",
+      intro_keyumars_p1: "He has no army yet. He has no city. He has only the wind, the firelight, and the silence after he speaks.",
       intro_keyumars_p2: "This is where your chronicle begins.",
-
-      /* Panel timeline */
       intro_kicker_chrono: "The Chronology",
       intro_h1_timeline: "Three Markers Before Chapter 1",
       intro_bc_suffix: "BC",
@@ -382,11 +405,6 @@
       intro_tl_siamak_body: "The prince walks among the people. The mountain knows his name.",
       intro_tl_war_h: "War Against Darkness",
       intro_tl_war_body: "Ahriman wakes. Khazura the Black Div is sent. The first sorrow comes into the world.",
-
-      /* Panel CTA */
-      intro_cta_kicker: "SEASON 2 · CHAPTER 1",
-      intro_cta_title: "Keyumars — The First King",
-      intro_cta_copy: "From here on, the chronicle is yours. Each scene unlocks codex entries. Each correct answer earns Farr and Zar. Each level brings you closer to the dark thing in the forest.",
 
       /* ============== RESOURCE GLOSSARY ==============
          Five layered resources. Farr/Zar/Gems/XP are the day-to-day surfaces;
@@ -686,8 +704,8 @@
       map_title: "Living Persia",
       map_sub: "The ancient world of the Shahnameh — explore and unlock regions",
       map_unlocked_of: "{n} of {total} regions discovered",
-      map_hakim_region: "🤖 Ask Hakim about this region",
-      map_locked_region: "Complete earlier chapters to unlock this region.",
+      map_hakim_region: "Ask Hakim about this region",
+      map_locked_region: "Walk further into the chronicle to unlock this region.",
       map_heroes: "Connected Heroes",
       map_significance: "Historical Significance",
 
@@ -707,27 +725,27 @@
       hidden_lore_section: "Hidden Lore",
       lore_fragment: "Lore Fragment",
       lore_fragment_found: "Lore Fragment discovered",
-      lore_locked_hint: "Complete this chapter or ask Hakim to reveal more.",
-      hakim_bond_reward: "Hakim Bond +10",
+      lore_locked_hint: "Walk further into the chronicle to recover this memory.",
+      hakim_bond_reward: "✦ Hakim Bond +10",
       hakim_bond_section: "Hakim Bond",
       ancient_timeline: "Ancient Timeline",
 
       /* Hakim AI Companion */
       hakim_title: "Hakim",
-      hakim_subtitle: "AI Companion of the Shahnameh",
-      hakim_intro: "Ask Hakim about heroes, kings, battles, ancient words, moral lessons, or your next quest.",
-      hakim_chat_placeholder: "Ask Hakim anything…",
+      hakim_subtitle: "Keeper of the Shahnameh",
+      hakim_intro: "Ask Hakim about kings, heroes, battles, ancient words, or the moral weight of the chronicle. He has been waiting for this question.",
+      hakim_chat_placeholder: "What does the chronicle ask of you…",
       hakim_quick_explain: "Explain this chapter",
-      hakim_quick_quest: "Help with quest",
+      hakim_quick_quest: "Guide my next step",
       hakim_quick_word: "Teach me a word",
-      hakim_quick_battle: "Battle advice",
-      hakim_quick_wisdom: "Tell me a wisdom",
+      hakim_quick_battle: "Counsel before battle",
+      hakim_quick_wisdom: "Share a wisdom",
       hakim_quick_translate: "Translate this",
-      hakim_daily_wisdom: "Daily Wisdom",
-      hakim_bond_level: "Bond Level",
-      hakim_ask_btn: "Ask Hakim",
-      hakim_loading: "Hakim is thinking…",
-      hakim_error: "Hakim is resting. Try again soon.",
+      hakim_daily_wisdom: "Wisdom of the Day",
+      hakim_bond_level: "Hakim Bond",
+      hakim_ask_btn: "Speak to Hakim",
+      hakim_loading: "The chronicle speaks…",
+      hakim_error: "The mountain is silent tonight. Return soon.",
       hakim_bond_xp: "0 / 100 XP",
 
   };

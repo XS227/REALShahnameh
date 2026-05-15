@@ -182,7 +182,7 @@
     const text = (input.value || "").trim();
     if (!text) return;
     input.value = "";
-    replyEl.textContent = t("hakim_loading", "Hakim is thinking…");
+    replyEl.textContent = t("hakim_loading", "The chronicle speaks…");
     replyEl.style.display = "";
 
     try {
@@ -204,7 +204,7 @@
     const lower = text.toLowerCase();
     if (lower.includes("word") || lower.includes("mean")) showReply(pickRandom(QUICK_RESPONSES.learn_word));
     else if (lower.includes("wisdom") || lower.includes("poem")) showReply(pickRandom(QUICK_RESPONSES.wisdom));
-    else showReply(QUICK_RESPONSES.explain_page[page] || t("hakim_error", "Hakim is meditating… try again soon."));
+    else showReply(QUICK_RESPONSES.explain_page[page] || t("hakim_error", "The mountain is silent tonight. Return soon."));
   };
 
   modal.querySelector("[data-hqm-send]").addEventListener("click", sendOrbMessage);
