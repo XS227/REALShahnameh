@@ -673,6 +673,22 @@
       hakim_history: "Солномаи таърихӣ",
       hakim_orb_label: "Аз Ҳаким бипурс",
 
+      /* Audio */
+      audio_section: "Садои муҳит",
+      audio_on: "Садо фаъол",
+      audio_off: "Садо хомӯш",
+
+      /* Persia Map */
+      nav_map: "Харитаи зинда",
+      map_kicker: "Ҷаҳон · Порси қадим",
+      map_title: "Порси зинда",
+      map_sub: "Ҷаҳони қадими Шоҳнома — минтақаҳоро кашф ва кушод кун",
+      map_unlocked_of: "{n} аз {total} минтақа кашф шуд",
+      map_hakim_region: "🤖 Аз Ҳаким дар бораи ин минтақа бипурс",
+      map_locked_region: "Бобҳои қаблиро тамом кун то ин минтақа кушода шавад.",
+      map_heroes: "Қаҳрамонони марбут",
+      map_significance: "Аҳамияти таърихӣ",
+
       /* Timeline page */
       nav_timeline: "Солномаи қадим",
       timeline_kicker: "Ҷаҳон · Солномаи қадим",

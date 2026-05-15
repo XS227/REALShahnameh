@@ -27,6 +27,7 @@
     "regions.html":         { tip: "I know every corner of the ancient Persian world." },
     "historical-sites.html":{ tip: "These places carry millennia of stories." },
     "timeline.html":        { tip: "Ask me about any era or king on this timeline." },
+    "persia-map.html":      { tip: "I know every corner of the ancient Persian world." },
     "chapter.html":         { tip: "Ask me about this chapter's characters or events." },
     "tap.html":             { tip: "Forge well, warrior. I'll share wisdom." },
     "social.html":          { tip: "The chronicle rewards those who fight together." },

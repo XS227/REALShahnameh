@@ -3671,3 +3671,397 @@ body::after {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* ==========================================================================
+   Atmosphere Fog
+   ========================================================================== */
+
+@keyframes fog-drift {
+  0%   { opacity: 0.5; transform: translateY(0) scaleX(1); }
+  50%  { opacity: 0.9; transform: translateY(-12px) scaleX(1.04); }
+  100% { opacity: 0.5; transform: translateY(0) scaleX(1); }
+}
+.atmosphere-fog {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 220px;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(ellipse at 50% 100%,
+    rgba(140,109,255,.06) 0%, rgba(244,197,107,.03) 40%, transparent 75%);
+  animation: fog-drift 9s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* ==========================================================================
+   Cinematic Chapter Reveal Overlay
+   ========================================================================== */
+
+@keyframes co-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes co-line { from { width: 0; } to { width: 80%; } }
+
+.co-overlay {
+  position: fixed; inset: 0;
+  z-index: 800;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0;
+  transition: opacity 0.55s ease;
+  pointer-events: none;
+}
+.co-overlay.co-visible { opacity: 1; pointer-events: auto; }
+.co-overlay.co-exit { opacity: 0; transition: opacity 0.5s ease; }
+
+.co-bg {
+  position: absolute; inset: 0;
+  background: rgba(4,5,11,.96);
+  backdrop-filter: blur(8px);
+}
+.co-content {
+  position: relative;
+  text-align: center;
+  padding: 44px 32px 36px;
+  max-width: 360px;
+  width: 100%;
+}
+.co-kicker {
+  font-size: 11px; font-weight: 800; letter-spacing: 4px;
+  text-transform: uppercase; color: var(--gold);
+  margin-bottom: 18px;
+  opacity: 0;
+  animation: co-rise 0.45s ease 0.3s forwards;
+}
+.co-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+  margin: 0 auto 20px;
+  width: 0;
+  animation: co-line 0.65s ease 0.65s forwards;
+}
+.co-title {
+  font-size: 19px; font-weight: 800; color: var(--text);
+  margin-bottom: 18px; line-height: 1.3;
+  opacity: 0;
+  animation: co-rise 0.45s ease 0.9s forwards;
+}
+.co-quote {
+  font-size: 13px; color: var(--text-dim); font-style: italic;
+  line-height: 1.65; margin-bottom: 28px;
+  opacity: 0;
+  animation: co-rise 0.45s ease 1.2s forwards;
+}
+.co-skip {
+  position: absolute; bottom: 8px; right: 16px;
+  background: none; border: none; color: var(--muted);
+  font-size: 12px; font-weight: 600; cursor: pointer;
+  font-family: inherit; padding: 8px;
+  opacity: 0;
+  animation: co-rise 0.3s ease 1.6s forwards;
+  transition: color 0.2s;
+}
+.co-skip:hover { color: var(--text-dim); }
+
+/* ==========================================================================
+   Audio Toggle (hamburger menu)
+   ========================================================================== */
+
+.hmenu-audio-row {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 4px;
+}
+.hmenu-audio-btn {
+  flex: 1;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  padding: 9px 12px;
+  color: var(--text-dim); font-size: 12px; font-weight: 600;
+  cursor: pointer; font-family: inherit;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.hmenu-audio-btn.active {
+  background: rgba(244,197,107,.08);
+  border-color: rgba(244,197,107,.28);
+  color: var(--gold);
+}
+.hmenu-audio-btn [data-audio-icon] { font-size: 16px; }
+
+/* ==========================================================================
+   Persia Map Page
+   ========================================================================== */
+
+.map-hero {
+  background: linear-gradient(160deg, rgba(244,197,107,.1) 0%, rgba(140,109,255,.07) 100%);
+  border: 1px solid rgba(244,197,107,.18);
+  border-radius: var(--r-lg);
+  padding: 22px 20px 18px;
+  position: relative; overflow: hidden;
+}
+.map-hero::before {
+  content: "🗺";
+  position: absolute; right: 16px; top: 14px;
+  font-size: 40px; opacity: 0.12; pointer-events: none;
+}
+.map-kicker {
+  font-size: 10px; font-weight: 800; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 6px;
+}
+.map-h1 {
+  font-size: 22px; font-weight: 800; color: var(--text); margin: 0 0 5px;
+}
+.map-sub {
+  font-size: 12px; color: var(--muted); line-height: 1.5; margin: 0;
+}
+
+/* Map canvas container */
+.map-canvas {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(244,197,107,.06) 0%, transparent 55%),
+    radial-gradient(ellipse at 70% 30%, rgba(140,109,255,.05) 0%, transparent 55%),
+    linear-gradient(160deg, rgba(8,12,28,.95) 0%, rgba(4,5,11,1) 100%);
+  border: 1px solid rgba(244,197,107,.12);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  min-height: 400px;
+  touch-action: manipulation;
+}
+.map-canvas-inner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+/* SVG routes layer */
+.map-routes {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+}
+
+@keyframes route-dash {
+  from { stroke-dashoffset: 60; }
+  to   { stroke-dashoffset: 0; }
+}
+.map-route {
+  stroke-dasharray: 5 5;
+  animation: route-dash 3s linear infinite;
+  fill: none;
+}
+.map-route.unlocked  { stroke: rgba(244,197,107,.35); stroke-width: 1.2; }
+.map-route.locked    { stroke: rgba(255,255,255,.08); stroke-width: 0.8; }
+.map-route.legendary {
+  stroke: rgba(244,197,107,.55); stroke-width: 1.5;
+  filter: drop-shadow(0 0 3px rgba(244,197,107,.4));
+}
+
+/* Region nodes */
+.map-region {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+}
+.map-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  margin: 0 auto 3px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.map-region.unlocked .map-dot {
+  background: var(--gold);
+  border: 1.5px solid rgba(244,197,107,.7);
+  box-shadow: 0 0 10px rgba(244,197,107,.45), 0 0 20px rgba(244,197,107,.2);
+}
+.map-region.locked .map-dot {
+  background: rgba(255,255,255,.08);
+  border: 1.5px solid rgba(255,255,255,.15);
+}
+.map-region.legendary .map-dot {
+  width: 13px; height: 13px;
+  background: linear-gradient(135deg, var(--gold), var(--ember));
+  border: 2px solid rgba(244,197,107,.8);
+  box-shadow: 0 0 16px rgba(244,197,107,.6), 0 0 32px rgba(244,197,107,.25);
+}
+.map-region.mountain .map-dot {
+  width: 12px; height: 12px;
+  border-radius: 2px;
+  background: rgba(140,109,255,.5);
+  border: 1.5px solid rgba(140,109,255,.7);
+  box-shadow: 0 0 10px rgba(140,109,255,.4);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border-radius: 0;
+}
+.map-region:hover .map-dot { transform: scale(1.35); }
+.map-region-name {
+  font-size: 8.5px; font-weight: 700; color: var(--gold);
+  text-transform: uppercase; letter-spacing: 0.4px;
+  text-shadow: 0 0 8px rgba(0,0,0,.9), 0 0 4px rgba(0,0,0,1);
+  white-space: nowrap; line-height: 1;
+  pointer-events: none;
+}
+.map-region.locked .map-region-name { color: var(--muted-2); }
+.map-region-era {
+  font-size: 7px; color: var(--muted-2);
+  margin-top: 1px; white-space: nowrap;
+  pointer-events: none;
+}
+
+/* @keyframes for region glow pulse */
+@keyframes region-pulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(244,197,107,.45), 0 0 20px rgba(244,197,107,.2); }
+  50%       { box-shadow: 0 0 18px rgba(244,197,107,.7), 0 0 32px rgba(244,197,107,.35); }
+}
+.map-region.unlocked .map-dot { animation: region-pulse 3s ease-in-out infinite; }
+.map-region.legendary .map-dot {
+  animation: region-pulse 2s ease-in-out infinite;
+}
+
+/* Map region detail modal */
+.map-modal-overlay {
+  position: fixed; inset: 0; z-index: 300;
+  background: rgba(4,5,11,.75);
+  backdrop-filter: blur(6px);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s ease;
+  display: flex; align-items: flex-end; justify-content: center;
+}
+.map-modal-overlay.open { opacity: 1; pointer-events: auto; }
+.map-modal {
+  width: min(440px, 100%);
+  background: var(--surface-strong);
+  border: 1px solid rgba(244,197,107,.2);
+  border-bottom: none;
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+  padding: 20px 20px 32px;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  max-height: 72vh;
+  overflow-y: auto;
+}
+.map-modal-overlay.open .map-modal { transform: translateY(0); }
+.map-modal-grabber {
+  width: 36px; height: 4px; border-radius: 2px;
+  background: rgba(255,255,255,.15);
+  margin: 0 auto 16px;
+}
+.map-modal-kicker {
+  font-size: 9px; font-weight: 800; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 6px;
+}
+.map-modal-title {
+  font-size: 20px; font-weight: 800; color: var(--text); margin: 0 0 10px;
+}
+.map-modal-body {
+  font-size: 13px; color: var(--text-dim); line-height: 1.65; margin: 0 0 12px;
+}
+.map-modal-heroes {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px;
+}
+.map-modal-hero-chip {
+  background: rgba(244,197,107,.1);
+  border: 1px solid rgba(244,197,107,.2);
+  border-radius: 20px; padding: 3px 10px;
+  font-size: 11px; font-weight: 600; color: var(--gold);
+}
+.map-modal-hakim {
+  width: 100%; display: block;
+  background: rgba(140,109,255,.1);
+  border: 1px solid rgba(140,109,255,.3);
+  border-radius: var(--r-md);
+  color: var(--violet); font-size: 13px; font-weight: 700;
+  padding: 12px; text-align: center;
+  cursor: pointer; font-family: inherit;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+}
+.map-modal-hakim:hover, .map-modal-hakim:active {
+  background: rgba(140,109,255,.18); transform: scale(0.98);
+}
+.map-modal-close {
+  position: absolute; top: 14px; right: 14px;
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 50%; width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 14px; color: var(--muted);
+  font-family: inherit;
+}
+
+/* Map legend */
+.map-legend {
+  display: flex; gap: 14px; flex-wrap: wrap;
+  padding: 12px 14px;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.map-legend-item {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 10px; color: var(--muted);
+}
+.map-legend-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 6px rgba(244,197,107,.5);
+}
+.map-legend-dot.locked { background: rgba(255,255,255,.15); box-shadow: none; }
+
+/* Map unlock progress bar */
+.map-progress {
+  padding: 10px 14px 4px;
+  display: flex; align-items: center; gap: 10px;
+}
+.map-progress-label { font-size: 10px; color: var(--muted); white-space: nowrap; }
+.map-progress-bar { flex: 1; height: 3px; background: rgba(255,255,255,.08); border-radius: 2px; }
+.map-progress-fill { height: 100%; border-radius: 2px; background: var(--gold); transition: width 0.6s ease; }
+
+/* ==========================================================================
+   Voice Mode Placeholder (Hakim page)
+   ========================================================================== */
+
+.hakim-voice-btn {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(94,162,255,.07);
+  border: 1px dashed rgba(94,162,255,.3);
+  border-radius: var(--r-md);
+  padding: 10px 14px;
+  width: 100%; color: var(--muted); font-size: 12px;
+  font-family: inherit; cursor: default;
+  position: relative; overflow: hidden;
+}
+.hakim-voice-ico { font-size: 18px; }
+.hakim-voice-text { flex: 1; text-align: left; }
+.hakim-voice-text strong { display: block; color: var(--text-dim); font-size: 12px; margin-bottom: 2px; }
+.hakim-voice-soon {
+  font-size: 9px; font-weight: 800; letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(94,162,255,.12); color: var(--azure);
+  border: 1px solid rgba(94,162,255,.25);
+  border-radius: 20px; padding: 2px 8px;
+}
+
+/* ==========================================================================
+   Lore Codex (rarity tiers + categories)
+   ========================================================================== */
+
+.lore-rarity {
+  display: inline-block;
+  font-size: 8px; font-weight: 900; letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 7px; border-radius: 20px;
+  margin-bottom: 6px;
+}
+.lore-rarity.common   { background: rgba(154,166,196,.12); color: var(--rarity-common); border: 1px solid rgba(154,166,196,.25); }
+.lore-rarity.rare     { background: rgba(94,162,255,.1);   color: var(--rarity-rare);   border: 1px solid rgba(94,162,255,.25); }
+.lore-rarity.legendary{ background: rgba(244,197,107,.12); color: var(--rarity-legend); border: 1px solid rgba(244,197,107,.3); }
+
+.lore-category {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.8px;
+  text-transform: uppercase; color: var(--muted-2); margin-bottom: 4px;
+}
+
+@keyframes lore-ink-reveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+.lore-card.just-unlocked .lore-body {
+  animation: lore-ink-reveal 0.8s ease-out both;
+}

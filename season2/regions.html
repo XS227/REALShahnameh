@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>Regions of Persia · REAL Shahnameh</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202605150300" />
+</head>
+<body>
+<main class="app">
+
+  <!-- Hero -->
+  <div class="regions-hero">
+    <div class="regions-hero-bg" aria-hidden="true"></div>
+    <div class="regions-kicker" data-i18n="regions_kicker">World · Ancient Persia</div>
+    <h1 class="regions-title" data-i18n="regions_title">Regions of Persia</h1>
+    <p class="regions-sub" data-i18n="regions_sub">Explore the ancient world of the Shahnameh</p>
+    <div class="regions-stats">
+      <div class="regions-stat"><strong>8</strong>regions</div>
+      <div class="regions-stat"><strong>50+</strong>centuries</div>
+      <div class="regions-stat"><strong>∞</strong>stories</div>
+    </div>
+  </div>
+
+  <!-- Regions grid -->
+  <div class="section-head"><h3 style="font-size:13px; color:var(--text-dim);">Ancient Lands</h3></div>
+  <div class="region-grid" id="region-grid"></div>
+
+</main>
+
+<!-- Region detail modal -->
+<div class="region-modal-overlay" id="region-modal-overlay" data-modal-overlay>
+  <div class="region-modal" id="region-modal" style="position:relative;">
+    <div class="region-modal-grabber"></div>
+    <button class="region-modal-close" id="region-modal-close" aria-label="Close">✕</button>
+    <div class="region-modal-kicker" id="rm-kicker">Region</div>
+    <h2 class="region-modal-title" id="rm-title">Region</h2>
+    <p class="region-modal-body" id="rm-body"></p>
+    <div style="margin-bottom:8px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px;">Associated Heroes</div>
+    <div class="region-modal-heroes" id="rm-heroes"></div>
+    <div style="margin-bottom:8px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px;">Historical Significance</div>
+    <p class="region-modal-body" id="rm-sig" style="margin-bottom:16px;"></p>
+    <button class="site-hakim-btn" id="rm-hakim-btn" style="width:100%; text-align:center; display:block; padding:10px;">
+      🤖 Ask Hakim about this region
+    </button>
+  </div>
+</div>
+
+<div class="toast" data-toast></div>
+<script src="app.js?v=202605150300"></script>
+<script src="i18n/en.js?v=202605150300"></script>
+<script src="i18n/fa.js?v=202605150300"></script>
+<script src="i18n/tg.js?v=202605150300"></script>
+<script src="i18n.js?v=202605150300"></script>
+<script src="resources.js?v=202605150300"></script>
+<script src="audio.js?v=202605150300"></script>
+<script src="cinematic.js?v=202605150300"></script>
+<script src="hakim-orb.js?v=202605150300"></script>
+<script>
+(() => {
+  "use strict";
+
+  const REGIONS = [
+    {
+      id: "pars",
+      name: "Pars",
+      nameFa: "پارس",
+      ico: "👑",
+      desc: "The heartland of Persian civilization. Seat of Keyumars, Jamshid, and the great Pishdadian kings.",
+      significance: "Pars gave Persia its name and its first dynasty. The Pishdadians ruled from the sacred mountains here, establishing law, fire worship, and the arts of civilization.",
+      heroes: ["Keyumars", "Jamshid", "Fereydun"],
+      era: "~7000 BC",
+    },
+    {
+      id: "balkh",
+      name: "Balkh",
+      nameFa: "بلخ",
+      ico: "🏔",
+      desc: "Ancient Bactria — the sacred city of Zoroastrian fire temples and a cradle of Persian identity.",
+      significance: "Balkh was among the oldest cities of the Persian world. Zarathustra himself is said to have preached here. In the Shahnameh, it appears as a centre of power and faith.",
+      heroes: ["Lohrasp", "Vishtasp"],
+      era: "~4000 BC",
+    },
+    {
+      id: "sistan",
+      name: "Sistan",
+      nameFa: "سیستان",
+      ico: "⚔",
+      desc: "Land of Rostam and the Sistani warriors — the most powerful military clan of the Shahnameh.",
+      significance: "Sistan (ancient Zabulistan) is the homeland of the Sam family — Zal, Rostam, and Faramarz. It represents martial honour, loyalty to kings, and the tension between personal duty and political power.",
+      heroes: ["Sam", "Zal", "Rostam", "Faramarz"],
+      era: "~2000 BC",
+    },
+    {
+      id: "bukhara",
+      name: "Bukhara",
+      nameFa: "بخارا",
+      ico: "🌙",
+      desc: "Pearl of the Silk Road — a city of scholars, poets, and the ancient traditions of the Persian east.",
+      significance: "Bukhara was a centre of Persian culture in Central Asia. The great scholars and poets of the Islamic Golden Age flourished here. Ferdowsi himself drew from eastern traditions woven through this city.",
+      heroes: ["Siavash", "Keykavus"],
+      era: "~1500 BC",
+    },
+    {
+      id: "samarkand",
+      name: "Samarkand",
+      nameFa: "سمرقند",
+      ico: "🌟",
+      desc: "Ancient Suguda — a crossroads of civilizations and a legendary city of the Turan frontier.",
+      significance: "Samarkand sits at the border between Iran and Turan in the Shahnameh. Many of the great wars between Iran and its northern neighbours were fought over this region. It represents both desire and loss.",
+      heroes: ["Afrasiab", "Siavash"],
+      era: "~1000 BC",
+    },
+    {
+      id: "khorasan",
+      name: "Khorasan",
+      nameFa: "خراسان",
+      ico: "🌅",
+      desc: "The great eastern province — land of Tus, birthplace of Ferdowsi, and the final era of Persian epics.",
+      significance: "Khorasan is where the Shahnameh itself was born. Ferdowsi lived and died in Tus, its capital. The Ghaznavid court that rejected his masterwork ruled from Khorasan. The region holds the poet within the poem.",
+      heroes: ["Ferdowsi", "Tus", "Garsivaz"],
+      era: "~900 AD",
+    },
+    {
+      id: "ray",
+      name: "Ray",
+      nameFa: "ری",
+      ico: "🏛",
+      desc: "Ancient Rhages — one of the oldest cities in the world, near modern Tehran.",
+      significance: "Ray appears throughout the Shahnameh as a wealthy and coveted city. It was a prize that kings fought over, a seat of administration, and eventually a city of grief — sacked many times before its final decline.",
+      heroes: ["Keykavus", "Rostam"],
+      era: "~5000 BC",
+    },
+    {
+      id: "damavand",
+      name: "Damavand",
+      nameFa: "دماوند",
+      ico: "🌋",
+      desc: "The sacred volcano — prison of Zahhak and the highest peak in the Persian world.",
+      significance: "Mount Damavand is where Fereydun imprisoned Zahhak the Serpent King after defeating him. The volcano's smoke was said to be the breath of the chained tyrant. It remains a symbol of justice over tyranny.",
+      heroes: ["Fereydun", "Zahhak"],
+      era: "Mythic Age",
+    },
+  ];
+
+  const grid = document.getElementById("region-grid");
+  const overlay = document.getElementById("region-modal-overlay");
+  const closeBtn = document.getElementById("region-modal-close");
+  const rmTitle  = document.getElementById("rm-title");
+  const rmKicker = document.getElementById("rm-kicker");
+  const rmBody   = document.getElementById("rm-body");
+  const rmHeroes = document.getElementById("rm-heroes");
+  const rmSig    = document.getElementById("rm-sig");
+  const rmHakim  = document.getElementById("rm-hakim-btn");
+
+  let currentRegion = null;
+
+  REGIONS.forEach((r) => {
+    const card = document.createElement("div");
+    card.className = "region-card";
+    card.setAttribute("data-region-id", r.id);
+    card.innerHTML = `
+      <div class="region-card-img">
+        <img src="/assets/images/locations/${r.id}-region.png" alt="${r.name}"
+             onerror="this.style.display='none'">
+        <span class="region-ico">${r.ico}</span>
+      </div>
+      <div class="region-card-body">
+        <div class="region-card-name">${r.name} <span style="opacity:.6; font-weight:400; font-size:11px; direction:rtl;">${r.nameFa}</span></div>
+        <div class="region-card-desc">${r.desc.slice(0, 70)}…</div>
+        <span class="region-card-tag">${r.era}</span>
+      </div>
+    `;
+    card.addEventListener("click", () => openRegion(r));
+    grid.appendChild(card);
+  });
+
+  const openRegion = (r) => {
+    currentRegion = r;
+    rmKicker.textContent = `Region · ${r.era}`;
+    rmTitle.textContent  = `${r.name} — ${r.nameFa}`;
+    rmBody.textContent   = r.desc;
+    rmSig.textContent    = r.significance;
+    rmHeroes.innerHTML   = r.heroes.map((h) =>
+      `<span class="region-hero-chip">⚔ ${h}</span>`).join("");
+    overlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeRegion = () => {
+    overlay.classList.remove("open");
+    document.body.style.overflow = "";
+    currentRegion = null;
+  };
+
+  closeBtn.addEventListener("click", closeRegion);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeRegion();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeRegion();
+  });
+
+  rmHakim.addEventListener("click", () => {
+    if (!currentRegion) return;
+    const query = `Tell me about the region of ${currentRegion.name} in the Shahnameh`;
+    sessionStorage.setItem("hakim_prefill", query);
+    window.location.href = "hakim.html";
+  });
+})();
+</script>
+</body>
+</html>

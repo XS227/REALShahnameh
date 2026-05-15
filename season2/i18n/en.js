@@ -675,6 +675,22 @@
       hakim_history: "Historical Timeline",
       hakim_orb_label: "Ask Hakim",
 
+      /* Audio */
+      audio_section: "Ambient Sound",
+      audio_on: "Sound On",
+      audio_off: "Sound Off",
+
+      /* Persia Map */
+      nav_map: "Living Map",
+      map_kicker: "World · Living Persia",
+      map_title: "Living Persia",
+      map_sub: "The ancient world of the Shahnameh — explore and unlock regions",
+      map_unlocked_of: "{n} of {total} regions discovered",
+      map_hakim_region: "🤖 Ask Hakim about this region",
+      map_locked_region: "Complete earlier chapters to unlock this region.",
+      map_heroes: "Connected Heroes",
+      map_significance: "Historical Significance",
+
       /* Timeline page */
       nav_timeline: "Ancient Timeline",
       timeline_kicker: "World · Ancient Timeline",

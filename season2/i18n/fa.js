@@ -674,6 +674,22 @@
       hakim_history: "زمان‌نگار تاریخی",
       hakim_orb_label: "از حکیم بپرس",
 
+      /* Audio */
+      audio_section: "صدای محیطی",
+      audio_on: "صدا روشن",
+      audio_off: "صدا خاموش",
+
+      /* Persia Map */
+      nav_map: "نقشه زنده",
+      map_kicker: "جهان · پارس کهن",
+      map_title: "پارس زنده",
+      map_sub: "جهان کهن شاهنامه — مناطق را کشف و باز کن",
+      map_unlocked_of: "{n} از {total} منطقه کشف شد",
+      map_hakim_region: "🤖 از حکیم درباره این منطقه بپرس",
+      map_locked_region: "فصل‌های قبلی را تکمیل کن تا این منطقه باز شود.",
+      map_heroes: "قهرمانان مرتبط",
+      map_significance: "اهمیت تاریخی",
+
       /* Timeline page */
       nav_timeline: "زمان‌نگار کهن",
       timeline_kicker: "جهان · زمان‌نگار کهن",

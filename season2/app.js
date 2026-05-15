@@ -548,6 +548,7 @@
       { file: "regions.html",         ico: "🗺", key: "nav_regions",   section: "world" },
       { file: "historical-sites.html",ico: "🏛", key: "nav_sites",     section: "world" },
       { file: "timeline.html",        ico: "⏳", key: "nav_timeline",  section: "world" },
+      { file: "persia-map.html",      ico: "🌍", key: "nav_map",       section: "world" },
       { file: "hakim.html",           ico: "🤖", key: "nav_hakim",     section: "world", cls: "hakim-link" },
       { file: null,                   ico: "⚔",  key: "guild",         section: "more",  coming: true },
       { file: null,                   ico: "🛒", key: "market",        section: "more",  coming: true },
@@ -614,6 +615,13 @@
             <span data-sp-s1-text>Toggle Season 1 player</span>
             <span class="sp-toggle-state" data-sp-s1-state>OFF</span>
           </button>
+          <div class="hmenu-settings-label" style="margin-top:10px;" data-sp-audio-label>Ambient Sound</div>
+          <div class="hmenu-audio-row">
+            <button class="hmenu-audio-btn" data-audio-toggle aria-pressed="false">
+              <span data-audio-icon>🔇</span>
+              <span data-audio-label>Sound Off</span>
+            </button>
+          </div>
           <button class="hmenu-reset" data-sp-reset>
             <span data-sp-reset-title>Reset onboarding</span>
             <span class="hmenu-reset-sub" data-sp-reset-sub>Choose language and path again.</span>
@@ -649,6 +657,17 @@
       overlay.querySelector("[data-sp-heroine]").textContent = tx.heroine || "Heroine";
       overlay.querySelector("[data-sp-reset-title]").textContent = tx.reset_onboarding || "Reset onboarding";
       overlay.querySelector("[data-sp-reset-sub]").textContent = tx.reset_onboarding_sub || "Choose language and path again.";
+      overlay.querySelector("[data-sp-audio-label]").textContent = tx.audio_section || "Ambient Sound";
+      const audioEnabled = (window.RealAudio && window.RealAudio.isEnabled()) || localStorage.getItem("real_audio_enabled") === "true";
+      const audioBtn = overlay.querySelector("[data-audio-toggle]");
+      if (audioBtn) {
+        audioBtn.classList.toggle("active", audioEnabled);
+        audioBtn.setAttribute("aria-pressed", String(audioEnabled));
+        const aIco = audioBtn.querySelector("[data-audio-icon]");
+        if (aIco) aIco.textContent = audioEnabled ? "🔊" : "🔇";
+        const aLbl = audioBtn.querySelector("[data-audio-label]");
+        if (aLbl) aLbl.textContent = audioEnabled ? (tx.audio_on || "Sound On") : (tx.audio_off || "Sound Off");
+      }
 
       /* Skin grid */
       const activeSkinId = Storage.read(LS.SKIN) || "real";

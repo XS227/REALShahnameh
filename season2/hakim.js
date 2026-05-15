@@ -9,6 +9,67 @@
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
+  /* ── Words of the day pool ────────────────────────────────────────────── */
+  const WORDS_OF_DAY = [
+    {
+      persian: "فَرّ",
+      latin: "Farr",
+      def: "Divine royal radiance — the celestial grace granted by God to worthy kings. When a king possessed Farr, armies followed without question and the land flourished. When pride or injustice caused it to depart, even the mightiest throne collapsed.",
+      example: "Jamshid ruled justly for three hundred years, but when he claimed to be a god, the Farr left him like a bird, and Zahhak rose to take his place.",
+    },
+    {
+      persian: "پهلوان",
+      latin: "Pahlavan",
+      def: "Champion warrior of the highest rank — not merely powerful in combat, but bound by a strict code of honour, loyalty, and service to the righteous king. A Pahlavan never fights for personal glory alone.",
+      example: "Rostam is called the greatest Pahlavan of all time — seven labours, a hundred battles, and still he wept when he learned the identity of Sohrab.",
+    },
+    {
+      persian: "دیو",
+      latin: "Div",
+      def: "Creature of chaos and darkness serving Ahriman, the evil principle. Divs can be monstrous beasts, subtle tempters, or lords of entire dark kingdoms. Some can be defeated; some bound; some are beyond any mortal strength.",
+      example: "Tahmuras, called the Div-binder, rode a chained Ahriman like a horse and bound eighty Divs — who taught him the scripts of the world in exchange for their lives.",
+    },
+    {
+      persian: "سیمرغ",
+      latin: "Simorgh",
+      def: "The great mythical bird of Persian legend — ancient beyond memory, possessed of all the world's knowledge, nesting on the world-tree Gaokerena. The Simorgh is not simply a creature but a teacher, a guide, and a symbol of divine wisdom.",
+      example: "Zal, abandoned by his father Sam on the peak of Mount Alborz, was raised by the Simorgh. When he descended to become a warrior, the Simorgh gave him a feather: burn it, and I shall come.",
+    },
+    {
+      persian: "زَر",
+      latin: "Zar",
+      def: "Gold — the material measure of a court's power. In the Shahnameh, Zar is both literal treasure and a symbol of kingly generosity. A great king gives Zar freely; a miser king loses Farr with his gold.",
+      example: "When Ferdowsi completed the Shahnameh, Sultan Mahmud promised sixty thousand gold dirhams — one for each verse — but sent sixty thousand silver instead. The poet's bitter verses cursed the king for his greed.",
+    },
+    {
+      persian: "اَهریمن",
+      latin: "Ahriman",
+      def: "The supreme evil principle of Zoroastrian cosmology — the force of darkness, lies, and destruction that opposes Ahura Mazda. In the Shahnameh, Ahriman works through Divs, serpents, and corrupt kings to destroy the cosmic order.",
+      example: "Zahhak was not born evil. It was Ahriman who tempted him step by step — first to dishonour his father, then to receive the serpents growing from his shoulders, then to feed them on human brains.",
+    },
+    {
+      persian: "خِرَد",
+      latin: "Kherad",
+      def: "Wisdom — the faculty of right discernment, moral reason, and understanding. The Shahnameh opens with an invocation to kherad as the supreme gift of God. Kings who rule by kherad bring justice; those who abandon it bring ruin.",
+      example: "Ferdowsi's opening words: 'به نام خداوند جان و خرد' — In the name of the Lord of soul and wisdom. Kherad is the first word of the epic after the name of God.",
+    },
+  ];
+
+  /* ── Timeline of the Shahnameh eras ───────────────────────────────────── */
+  const TIMELINE = [
+    { year: "Mythic Age", title: "The First Kings", body: "Keyumars, first of men and kings, rules from the mountain of Alborz. His son Siamak is slain by the Black Div — beginning the age of grief and vengeance." },
+    { year: "c. 7000 BC", title: "The Age of Hushang", body: "Hushang, grandson of Keyumars, defeats the Black Div, discovers fire, and inaugurates Sadeh — the festival of fire still celebrated today." },
+    { year: "c. 6000 BC", title: "Tahmuras — Binder of Demons", body: "Tahmuras rides Ahriman like a horse and binds the great Divs. In exchange for their lives, the demons teach him the scripts of twenty languages." },
+    { year: "c. 5500 BC", title: "Jamshid — Rise and Fall", body: "The greatest king of the Pishdadian era rules for 700 years — teaching weaving, medicine, and the arts. His pride destroys him; the Farr departs and Zahhak seizes the throne." },
+    { year: "c. 5000 BC", title: "Zahhak and the Serpents", body: "Zahhak, corrupted by Ahriman, grows serpents from his shoulders fed on human brains. He rules for a thousand years until Kaveh the Blacksmith raises his leather apron as a banner of revolt." },
+    { year: "c. 4000 BC", title: "Fereydun and the Binding", body: "Fereydun, raised in hiding, defeats Zahhak and chains him in Mount Damavand. He divides the world among his three sons — and the first great war of brothers begins." },
+    { year: "c. 2000 BC", title: "The Age of Rostam", body: "The great Sistani hero Rostam rises to become champion of all Iran. His Seven Labours, his love for Rakhsh, his unwitting killing of Sohrab — the heart of the Shahnameh." },
+    { year: "c. 1000 BC", title: "The Kayanian Dynasty", body: "Kay Kavus, Key Khosrow, and Lohrasp rule in the great middle age. Siavash is murdered by Afrasiab of Turan, and Key Khosrow leads the war of revenge before ascending to heaven." },
+    { year: "c. 330 BC", title: "Alexander the Accursed", body: "Eskandar (Alexander) conquers Persia and burns Persepolis. The Shahnameh does not glorify him — he is 'the two-horned,' a bearer of destruction who is also, ambiguously, son of an Iranian king." },
+    { year: "c. 240 AD", title: "The Sassanid Kings", body: "Ardashir Papakan restores Persian greatness. Khosrow Anushirvan rules as the 'Just King.' The Shahnameh closes with the Arab conquest of Iran in 651 AD and the end of the last Persian empire." },
+    { year: "977–1010 AD", title: "Ferdowsi Composes the Shahnameh", body: "Over thirty years, Abu'l-Qasim Ferdowsi weaves sixty thousand verses from oral traditions and old manuscripts — saving the Persian language from extinction after the Arab conquest." },
+  ];
+
   /* ── Daily wisdom pool ─────────────────────────────────────────────────── */
   const WISDOMS = [
     { text: '"توانا بود هر که دانا بود — Knowledge is the root of all power."', src: "Ferdowsi · Shahnameh" },
@@ -165,7 +226,10 @@
       if (response.ok) {
         const data = await response.json();
         if (data.ok && data.reply) {
-          addHakimBubble(data.reply, data.source === "mock" ? "Hakim · Shahnameh" : null);
+          const reply = (window.HakimPersonality)
+            ? window.HakimPersonality.wrapResponse(data.reply, text)
+            : data.reply;
+          addHakimBubble(reply, data.source === "mock" ? "Hakim · Shahnameh" : null);
         } else {
           addHakimBubble(t("hakim_error"));
         }
@@ -176,6 +240,7 @@
       loadingBubble.remove();
       addHakimBubble(getMockResponse(quickTopic, text));
     }
+    if (window.RealAudio) window.RealAudio.sounds.pageTurn();
 
     isLoading = false;
     sendBtn.disabled = false;
@@ -244,10 +309,131 @@
     if (ph && ph !== "hakim_chat_placeholder") inputEl.placeholder = ph;
   };
 
+  /* ── Tab switching ────────────────────────────────────────────────────── */
+  const initTabs = () => {
+    const tabs = document.querySelectorAll("[data-tab]");
+    const panels = document.querySelectorAll("[data-tab-panel]");
+    if (!tabs.length) return;
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.getAttribute("data-tab");
+        tabs.forEach((t) => { t.classList.remove("active"); t.setAttribute("aria-selected", "false"); });
+        panels.forEach((p) => p.classList.remove("active"));
+        tab.classList.add("active");
+        tab.setAttribute("aria-selected", "true");
+        const panel = document.querySelector(`[data-tab-panel="${target}"]`);
+        if (panel) panel.classList.add("active");
+      });
+    });
+  };
+
+  /* ── Populate Wisdom tab ──────────────────────────────────────────────── */
+  const populateWisdomTab = () => {
+    const list = document.querySelector("[data-wisdom-list]");
+    if (!list) return;
+    WISDOMS.forEach((w) => {
+      const card = document.createElement("div");
+      card.className = "hakim-word-card";
+      card.style.cssText = "display:flex; flex-direction:column; gap:6px;";
+      card.innerHTML = `
+        <p style="font-size:13px; color:var(--text-dim); line-height:1.6; margin:0;">${escapeHtml(w.text)}</p>
+        <span style="font-size:10px; color:var(--muted); letter-spacing:.5px;">— ${escapeHtml(w.src)}</span>
+      `;
+      list.appendChild(card);
+    });
+  };
+
+  /* ── Populate Word of Day tab ─────────────────────────────────────────── */
+  const populateWordTab = () => {
+    const card = document.querySelector("[data-word-card]");
+    if (!card) return;
+    const dayIdx = Math.floor(Date.now() / 86400000) % WORDS_OF_DAY.length;
+    const w = WORDS_OF_DAY[dayIdx];
+    card.innerHTML = `
+      <div class="hakim-word-persian">${escapeHtml(w.persian)}</div>
+      <div class="hakim-word-latin">${escapeHtml(w.latin)}</div>
+      <p class="hakim-word-def">${escapeHtml(w.def)}</p>
+      <div class="hakim-word-example">"${escapeHtml(w.example)}"</div>
+    `;
+  };
+
+  /* ── Populate Timeline tab ────────────────────────────────────────────── */
+  const populateTimelineTab = () => {
+    const tl = document.querySelector("[data-timeline-list]");
+    if (!tl) return;
+    TIMELINE.forEach((entry) => {
+      const div = document.createElement("div");
+      div.className = "ht-entry";
+      div.innerHTML = `
+        <div class="ht-dot"></div>
+        <div class="ht-year">${escapeHtml(entry.year)}</div>
+        <div class="ht-title">${escapeHtml(entry.title)}</div>
+        <div class="ht-body">${escapeHtml(entry.body)}</div>
+      `;
+      tl.appendChild(div);
+    });
+  };
+
+  /* ── Handle prefill from sessionStorage (from regions/sites Hakim button) */
+  const handlePrefill = () => {
+    try {
+      const prefill = sessionStorage.getItem("hakim_prefill");
+      if (prefill) {
+        sessionStorage.removeItem("hakim_prefill");
+        setTimeout(() => {
+          if (inputEl) {
+            inputEl.value = prefill;
+            inputEl.dispatchEvent(new Event("input"));
+            sendMessage(prefill);
+          }
+        }, 400);
+      }
+    } catch { /* ignore */ }
+  };
+
+  /* ── Voice mode placeholder ───────────────────────────────────────────── */
+  const mountVoicePlaceholder = () => {
+    const chatFooter = document.querySelector(".hakim-chat-footer");
+    if (!chatFooter || document.querySelector(".hakim-voice-btn")) return;
+    const btn = document.createElement("button");
+    btn.className = "hakim-voice-btn";
+    btn.setAttribute("aria-label", "Voice mode — coming soon");
+    btn.innerHTML = `
+      <span class="hakim-voice-ico">🎙</span>
+      <span class="hakim-voice-text">
+        <strong>Voice Mode</strong>
+        Persian &amp; Tajik narration — in development
+      </span>
+      <span class="hakim-voice-soon">Soon</span>
+    `;
+    chatFooter.parentElement.insertBefore(btn, chatFooter);
+  };
+
+  /* ── Personality opening message ──────────────────────────────────────── */
+  const showOpeningMessage = () => {
+    if (!window.HakimPersonality) return;
+    // Only show on fresh load (no prefill pending)
+    try { if (sessionStorage.getItem("hakim_prefill")) return; } catch {}
+    setTimeout(() => {
+      if (messagesEl && !messagesEl.querySelector(".hcm-bubble")) {
+        const opening = window.HakimPersonality.getOpening();
+        addHakimBubble(opening);
+      }
+    }, 600);
+  };
+
   /* ── Init ─────────────────────────────────────────────────────────────── */
   const init = () => {
     setDailyWisdom();
     applyInputPlaceholder();
+    initTabs();
+    populateWisdomTab();
+    populateWordTab();
+    populateTimelineTab();
+    mountVoicePlaceholder();
+    showOpeningMessage();
+    handlePrefill();
+    if (window.RealAudio) window.RealAudio.sounds.hakimActivate();
   };
 
   if (document.readyState === "loading") {
