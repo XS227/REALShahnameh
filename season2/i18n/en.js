@@ -748,5 +748,26 @@
       hakim_error: "The mountain is silent tonight. Return soon.",
       hakim_bond_xp: "0 / 100 XP",
 
+      /* Offerings to the Flame */
+      nav_offerings: "Offerings to the Flame",
+      offerings_kicker: "Chronicle · Sacred Economy",
+      offerings_title: "Offerings to the Flame",
+      offerings_sub: "Preserve the chronicle. Each offering awakens a forgotten memory.",
+      offerings_hakim_quote: "The chronicle is not free. It cost Ferdowsi thirty years of his life. What will you offer to keep it alive?",
+      offering_offer_btn: "Offer to the Flame",
+      offering_preserve_btn: "Preserve the Chronicle",
+      offering_awaken_btn: "Awaken Forgotten Memory",
+      offering_1_name: "Zar — Gold of Pars",
+      offering_1_desc: "Offering gold preserves the chronicle for one more age. The flame accepts what is given freely.",
+      offering_2_name: "Fire Essence",
+      offering_2_desc: "Distilled from a thousand taps. Offer it to strengthen the bond between keeper and chronicle.",
+      offering_3_name: "Lore Fragment",
+      offering_3_desc: "A piece of forgotten memory. Offering it unlocks a deeper layer of the ancient text.",
+      offering_4_name: "REAL — Chronicle Seal",
+      offering_4_desc: "The most sacred offering. Seals your name in the chronicle as a true Keeper of the Flame.",
+      offering_already: "This memory has already been offered to the flame.",
+      offering_insufficient: "You do not yet carry enough to make this offering.",
+      offering_accepted: "✦ The flame accepts your offering.",
+
   };
 })();

@@ -549,6 +549,7 @@
       { file: "historical-sites.html",ico: "🏛", key: "nav_sites",     section: "world" },
       { file: "timeline.html",        ico: "⏳", key: "nav_timeline",  section: "world" },
       { file: "persia-map.html",      ico: "🌍", key: "nav_map",       section: "world" },
+      { file: "offerings.html",       ico: "🔥", key: "nav_offerings", section: "world" },
       { file: "hakim.html",           ico: "🤖", key: "nav_hakim",     section: "world", cls: "hakim-link" },
       { file: null,                   ico: "⚔",  key: "guild",         section: "more",  coming: true },
       { file: null,                   ico: "🛒", key: "market",        section: "more",  coming: true },

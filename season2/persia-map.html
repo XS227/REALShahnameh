@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>Living Persia · REAL Shahnameh</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605150400" />
+  <link rel="stylesheet" href="style.css?v=202605150500" />
 </head>
 <body>
 <main class="app">
@@ -58,16 +58,16 @@
 
 <div class="toast" data-toast></div>
 
-<script src="i18n/en.js?v=202605150400"></script>
-<script src="i18n/fa.js?v=202605150400"></script>
-<script src="i18n/tg.js?v=202605150400"></script>
-<script src="i18n.js?v=202605150400"></script>
-<script src="app.js?v=202605150400"></script>
-<script src="resources.js?v=202605150400"></script>
-<script src="audio.js?v=202605150400"></script>
-<script src="hakim-personality.js?v=202605150400"></script>
-<script src="cinematic.js?v=202605150400"></script>
-<script src="hakim-orb.js?v=202605150400"></script>
+<script src="i18n/en.js?v=202605150500"></script>
+<script src="i18n/fa.js?v=202605150500"></script>
+<script src="i18n/tg.js?v=202605150500"></script>
+<script src="i18n.js?v=202605150500"></script>
+<script src="app.js?v=202605150500"></script>
+<script src="resources.js?v=202605150500"></script>
+<script src="audio.js?v=202605150500"></script>
+<script src="hakim-personality.js?v=202605150500"></script>
+<script src="cinematic.js?v=202605150500"></script>
+<script src="hakim-orb.js?v=202605150500"></script>
 <script>
 (() => {
   "use strict";
@@ -314,8 +314,17 @@
   inner.addEventListener("click", (e) => {
     const node = e.target.closest("[data-region-id]");
     if (!node) return;
-    const region = regionMap.get(node.getAttribute("data-region-id"));
-    if (region) openModal(region);
+    const regionId = node.getAttribute("data-region-id");
+    const region = regionMap.get(regionId);
+    if (!region) return;
+
+    // Damavand special cinematic (first tap only)
+    if (regionId === "damavand" && isUnlocked(region) && window.RealCinematic
+        && !localStorage.getItem("real_damavand_memory_seen")) {
+      window.RealCinematic.showDamavandMemory(() => openModal(region));
+    } else {
+      openModal(region);
+    }
   });
 
   closeBtn.addEventListener("click", closeModal);

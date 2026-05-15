@@ -431,9 +431,15 @@
     populateWordTab();
     populateTimelineTab();
     mountVoicePlaceholder();
-    showOpeningMessage();
     handlePrefill();
     if (window.RealAudio) window.RealAudio.sounds.hakimActivate();
+
+    // Hakim appearance cinematic — only on first ever visit
+    if (window.RealCinematic && !localStorage.getItem("real_hakim_first_appearance")) {
+      window.RealCinematic.showHakimAppearance(() => showOpeningMessage());
+    } else {
+      showOpeningMessage();
+    }
   };
 
   if (document.readyState === "loading") {
