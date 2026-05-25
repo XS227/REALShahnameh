@@ -152,8 +152,96 @@
     mountTreasury();
   }
 
-  /* Fire both fetches in parallel. Both are best-effort; failures
-     don't blank the page, they just leave the strip empty. */
+  /* ── Helper: today as YYYY-MM-DD ── */
+  const todayKey = () => new Date().toISOString().slice(0, 10);
+
+  /* ── Profile hydration: Telegram name / photo + real level ── */
+  const hydrateProfile = () => {
+    const tgUser = window.Telegram && window.Telegram.WebApp
+      && window.Telegram.WebApp.initDataUnsafe
+      && window.Telegram.WebApp.initDataUnsafe.user;
+    const player = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
+
+    // Real name from Telegram; fall back to stored username or path title
+    const nameEl = document.querySelector("[data-player-name]");
+    if (nameEl) {
+      let name = "";
+      if (tgUser && tgUser.first_name) {
+        name = tgUser.first_name + (tgUser.last_name ? " " + tgUser.last_name : "");
+      } else if (player.username) {
+        name = player.username;
+      }
+      if (name) nameEl.textContent = name;
+    }
+
+    // Avatar: Telegram photo → gender default
+    const avatarImg = document.querySelector("[data-avatar-img]");
+    if (avatarImg) {
+      const fallback = player.path === "heroine"
+        ? "/assets/images/avatars/default-female-avatar.png"
+        : "/assets/images/avatars/default-male-avatar.png";
+      avatarImg.onerror = () => { avatarImg.onerror = null; avatarImg.src = fallback; };
+      if (tgUser && tgUser.photo_url) {
+        avatarImg.src = tgUser.photo_url;
+      } else {
+        avatarImg.src = fallback;
+      }
+    }
+
+    // Real level (new users: 1)
+    const levelEl = document.querySelector("[data-level]");
+    if (levelEl) levelEl.textContent = player.level || 1;
+  };
+
+  /* ── Daily quest hydration ── */
+  const TAP_GOAL = 200;
+  const lsRead = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+
+  const hydrateQuests = () => {
+    const dk = todayKey();
+    const states = {
+      read:   lsRead("real_quest_read_" + dk) === "true",
+      quiz:   lsRead("real_quest_quiz_" + dk) === "true",
+      invite: lsRead("real_quest_invite_" + dk) === "true",
+    };
+    const tapsToday = parseInt(lsRead("real_daily_taps_" + dk) || "0", 10);
+    states.tap = tapsToday >= TAP_GOAL;
+
+    Object.entries(states).forEach(([key, done]) => {
+      const row = document.querySelector('[data-quest="' + key + '"]');
+      if (!row) return;
+      row.classList.toggle("done", done);
+      const check = row.querySelector(".quest-check");
+      if (check) {
+        check.classList.toggle("done", done);
+        check.textContent = done ? "✓" : "";
+      }
+    });
+
+    // Tap count display
+    const tapCount = document.querySelector("[data-daily-taps]");
+    if (tapCount) tapCount.textContent = Math.min(tapsToday, TAP_GOAL);
+  };
+
+  /* ── Treasury refresh: push live Player balances into the HUD ── */
+  const refreshTreasury = () => {
+    const host = document.querySelector("[data-resource-hud]");
+    if (host && window.RealResources) window.RealResources.refreshHud(host);
+  };
+
+  /* ── Boot: run all hydration after DOM + app.js Player are ready ── */
+  const bootHomeHydration = () => {
+    hydrateProfile();
+    hydrateQuests();
+    refreshTreasury();
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bootHomeHydration);
+  } else {
+    bootHomeHydration();
+  }
+
+  /* Fire catalog fetches in parallel. Best-effort; failures keep static strips empty. */
   fetch("/api/catalog/heroes",   { cache: "no-store" })
     .then(r => r.ok ? r.json() : null)
     .then(b => renderHeroes(b && b.heroes))

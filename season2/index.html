@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Home</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605150500" />
+  <link rel="stylesheet" href="style.css?v=202605250100" />
   <style>
     /* Home-only layout additions */
     .home-season-banner {
@@ -212,18 +212,19 @@
     <section class="card gold-edge top-bar">
       <div class="avatar" data-avatar>
         <img src="/assets/images/avatars/default-male-avatar.png" alt="Avatar"
+             data-avatar-img
              style="width:100%; height:100%; object-fit:cover; border-radius:50%;"
-             onerror="this.replaceWith(document.createTextNode('RS'))">
+             onerror="this.src='/assets/images/avatars/default-male-avatar.png'">
         <span class="avatar-ring"></span>
       </div>
       <div class="who">
-        <h1 class="name"><span data-path-name>King Setai</span> <span class="pill" data-i18n="vip">VIP</span></h1>
+        <h1 class="name"><span data-player-name>—</span> <span class="pill" data-i18n="vip">VIP</span></h1>
         <div class="rank-row">
           <span class="rank-tag" data-path-title>⚔ Warrior of Pars</span>
           <span class="rank-tag" style="background:rgba(244,197,107,.14); border-color:var(--border-gold); color:var(--gold);" data-i18n="season2">Season 2</span>
         </div>
       </div>
-      <div class="lvl-badge"><span data-i18n="level">LVL</span> <span class="lvl-num" data-level>17</span></div>
+      <div class="lvl-badge"><span data-i18n="level">LVL</span> <span class="lvl-num" data-level>1</span></div>
     </section>
 
     <!-- Season 2 cinematic banner -->
@@ -292,34 +293,34 @@
       <span class="more" style="cursor:default;" data-i18n="resets_midnight">Resets midnight</span>
     </div>
     <section class="quest-list" style="margin-bottom:14px;">
-      <div class="quest-row done">
+      <div class="quest-row" data-quest="read">
         <div class="quest-ico">📜</div>
         <div class="quest-body">
           <div class="q-name" data-i18n="quest_read_scene">Read a Chronicle scene</div>
-          <div class="q-sub" data-i18n="quest_read_sub">1 / 1 scenes read today</div>
+          <div class="q-sub" data-i18n="quest_read_sub">Open any chapter today</div>
         </div>
         <span class="quest-reward">+50 XP</span>
-        <div class="quest-check done">✓</div>
+        <div class="quest-check"></div>
       </div>
-      <div class="quest-row">
+      <div class="quest-row" data-quest="quiz">
         <div class="quest-ico">🧠</div>
         <div class="quest-body">
           <div class="q-name" data-i18n="quest_quiz">Answer the Chapter Quiz</div>
-          <div class="q-sub" data-i18n="quest_quiz_sub">Complete Chapter 1 quiz</div>
+          <div class="q-sub" data-i18n="quest_quiz_sub">Complete any chapter quiz</div>
         </div>
         <span class="quest-reward">+100 XP</span>
         <div class="quest-check"></div>
       </div>
-      <div class="quest-row">
+      <div class="quest-row" data-quest="tap">
         <div class="quest-ico">⚡</div>
         <div class="quest-body">
           <div class="q-name" data-i18n="quest_tap">Tap 200 times</div>
-          <div class="q-sub"><span data-combo>140</span> / 200 taps today</div>
+          <div class="q-sub"><span data-daily-taps>0</span> / 200 taps today</div>
         </div>
         <span class="quest-reward">+80 REAL</span>
         <div class="quest-check"></div>
       </div>
-      <div class="quest-row">
+      <div class="quest-row" data-quest="invite">
         <div class="quest-ico">👥</div>
         <div class="quest-body">
           <div class="q-name" data-i18n="quest_invite">Invite a warrior</div>
@@ -406,15 +407,15 @@
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=202605150500"></script>
-  <script src="i18n/en.js?v=202605150500"></script>
-  <script src="i18n/fa.js?v=202605150500"></script>
-  <script src="i18n/tg.js?v=202605150500"></script>
-  <script src="i18n.js?v=202605150500"></script>
-  <script src="resources.js?v=202605150500"></script>
-  <script src="audio.js?v=202605150500"></script>
-  <script src="cinematic.js?v=202605150500"></script>
-  <script src="home.js?v=202605150500"></script>
+  <script src="app.js?v=202605250100"></script>
+  <script src="i18n/en.js?v=202605250100"></script>
+  <script src="i18n/fa.js?v=202605250100"></script>
+  <script src="i18n/tg.js?v=202605250100"></script>
+  <script src="i18n.js?v=202605250100"></script>
+  <script src="resources.js?v=202605250100"></script>
+  <script src="audio.js?v=202605250100"></script>
+  <script src="cinematic.js?v=202605250100"></script>
+  <script src="home.js?v=202605250100"></script>
   <script>
     // Mount the Treasury HUD on home. Runs after resources.js + i18n.js are
     // ready; safe-no-op if either is unavailable (e.g. local file:// preview).

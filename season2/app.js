@@ -892,6 +892,8 @@
         catch { toast("Copy this link"); }
       }
       haptic("medium");
+      // Mark "invite" quest complete for today
+      try { localStorage.setItem("real_quest_invite_" + new Date().toISOString().slice(0, 10), "true"); } catch (_) {}
     });
   });
 
@@ -912,7 +914,7 @@
     const state = {
       max: 1000,
       energy: parseInt(energyEl.textContent, 10) || 720,
-      balance: parseInt((balanceEl?.textContent || "0").replace(/[^\d]/g, ""), 10) || 12840,
+      balance: Player.getResource("real") || 0,
       combo: 1,
       lastTap: 0,
       tapCost: 1,
@@ -978,6 +980,16 @@
 
       state.energy = Math.max(0, state.energy - state.tapCost);
       state.balance += reward;
+
+      // Persist tap reward to Player state so Treasury HUD stays in sync
+      Player.addResource("real", reward);
+
+      // Daily tap counter for home quest tracker
+      try {
+        const _dk = new Date().toISOString().slice(0, 10);
+        const _key = "real_daily_taps_" + _dk;
+        localStorage.setItem(_key, String((parseInt(localStorage.getItem(_key) || "0", 10) + 1)));
+      } catch (_) {}
 
       renderEnergy();
       renderBalance();
@@ -1433,6 +1445,9 @@
       modal.classList.add("open");
       document.body.style.overflow = "hidden";
       haptic("light");
+
+      // Mark "read a scene" quest complete for today
+      try { localStorage.setItem("real_quest_read_" + new Date().toISOString().slice(0, 10), "true"); } catch (_) {}
     };
 
     const closeModal = () => {
@@ -1448,6 +1463,8 @@
       if (correct) {
         btn.classList.add("correct");
         haptic("success");
+        // Mark "quiz" quest complete for today
+        try { localStorage.setItem("real_quest_quiz_" + new Date().toISOString().slice(0, 10), "true"); } catch (_) {}
         elResTitle.textContent = `+${data.xp} ${t("r_xp")} · +${data.real} REAL`;
         elResBody.textContent = t("chapter_rewards_locked");
         elResRew.innerHTML = `<span class="chip warm">⭐ ${data.xp} ${t("r_xp")}</span><span class="chip">🪙 ${data.real} REAL</span><span class="chip lush">+1 ${t("hero_fragment_label")}</span>`;
