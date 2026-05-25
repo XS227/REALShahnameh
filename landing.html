@@ -160,8 +160,13 @@
         <p class="lead">From the first king at the dawn of the world, to the last Sassanian sunset. Each chapter is a level. Read, fight, claim — then unlock the next legend.</p>
       </div>
 
-      <div class="stories-grid reveal" id="storiesGrid" aria-hidden="true">
-        <!-- 50 pips rendered by landing.js -->
+      <div class="chapters-scroll reveal" id="archivesScroll">
+        <div class="chapters-track" id="archivesTrack">
+          <!-- chapter cards rendered by landing.js -->
+        </div>
+      </div>
+      <div class="archives-footer reveal">
+        <a class="btn btn-ghost" href="/season2/">Explore All 50 Chapters &rarr;</a>
       </div>
 
       <div class="stats-row reveal">
@@ -318,7 +323,7 @@
             <div class="market-box">
               <div class="market-head">
                 <span class="kicker">Live REAL Market</span>
-                <span class="market-status"><span class="dot" aria-hidden="true"></span> <span id="marketStatusText">Coming soon</span></span>
+                <span class="market-status"><span class="dot live-dot" aria-hidden="true"></span> <span id="marketStatusText">Loading…</span></span>
               </div>
               <div class="market-cells">
                 <div class="cell">
@@ -330,11 +335,14 @@
                   <div class="val" id="marketChange">—</div>
                 </div>
                 <div class="cell">
-                  <div class="lbl">Liquidity</div>
+                  <div class="lbl">Holders</div>
                   <div class="val" id="marketLiquidity">—</div>
                 </div>
               </div>
-              <p class="market-note">Live REAL market data coming soon — TON / DYOR integration in progress.</p>
+              <div class="market-dyor">
+                <span class="dyor-badge">#21 on DYOR</span>
+                <a class="dyor-link" href="https://dexscreener.com/ton/EQDhq_DjQUMJqfXLP8K8J6SlOvon08XQQK0T49xon2e0xU8p" target="_blank" rel="noopener">View on DexScreener →</a>
+              </div>
             </div>
           </div>
         </div>

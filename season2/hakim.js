@@ -461,11 +461,12 @@
     /* ── TON Connect singleton ── */
     const getTonConnect = () => {
       if (_tc) return _tc;
-      if (!window.TonConnectUI) return null;
+      const TCMod = window.TonConnectUI || window.TONConnectUI;
+      if (!TCMod) return null;
+      const Cls = typeof TCMod === 'function' ? TCMod : TCMod.TonConnectUI;
+      if (typeof Cls !== 'function') return null;
       try {
-        _tc = new window.TonConnectUI.TonConnectUI({
-          manifestUrl: 'https://shahnameh.setaei.com/tonconnect-manifest.json',
-        });
+        _tc = new Cls({ manifestUrl: 'https://shahnameh.setaei.com/tonconnect-manifest.json' });
         return _tc;
       } catch (_) { return null; }
     };
@@ -534,7 +535,9 @@
       /* No wallet yet — show TON Connect button */
       block.innerHTML = `
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">${T('legacy_wallet_sub')}</div>
-        <div id="ton-connect-btn"></div>
+        <div id="ton-connect-btn">
+          <button id="ton-connect-open-btn" style="background:var(--gold,#f4c56b);color:#1a0800;border:none;border-radius:12px;padding:12px 24px;font-weight:700;font-size:14px;cursor:pointer;width:100%;letter-spacing:.04em;">${T('legacy_connect_btn')}</button>
+        </div>
         <div data-wallet-status style="margin-top:10px;font-size:13px;color:var(--text-muted);display:none;"></div>
         <div data-wallet-tier></div>
       `;
@@ -542,14 +545,14 @@
 
       const tc = getTonConnect();
       if (!tc) {
-        /* Fallback if TonConnectUI fails to load */
-        const fb = block.querySelector('#ton-connect-btn');
-        fb.innerHTML = `<div style="font-size:12px;color:var(--ember);padding:8px 0;">${T('legacy_wallet_error')}</div>`;
+        const btn = block.querySelector('#ton-connect-open-btn');
+        if (btn) { btn.textContent = T('legacy_wallet_error'); btn.style.background = 'var(--ember,#c44)'; btn.disabled = true; }
         return;
       }
 
-      /* Render the TON Connect button into #ton-connect-btn */
-      try { tc.uiOptions = { buttonRootId: 'ton-connect-btn' }; } catch (_) {}
+      /* Open TON Connect modal on button click */
+      const openBtn = block.querySelector('#ton-connect-open-btn');
+      if (openBtn) openBtn.addEventListener('click', () => { try { tc.openModal(); } catch(_) {} });
 
       /* Watch for wallet connection */
       tc.onStatusChange(async (wallet) => {
