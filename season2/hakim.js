@@ -486,9 +486,10 @@
 
       const u = tgUser();
       const chatId = u ? String(u.id) : null;
+      const initData = (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) || '';
 
       try {
-        const body = { walletAddress: addr, ...(chatId ? { chatId } : {}) };
+        const body = { walletAddress: addr, ...(chatId ? { chatId } : {}), ...(initData ? { initData } : {}) };
         const resp = await fetch('/api/basic/wallet-verify', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -558,12 +559,21 @@
         const tc = getTonConnect();
         if (!tc) {
           if (attemptsLeft > 0) { setTimeout(() => tryInit(attemptsLeft - 1), 400); return; }
-          /* SDK truly unavailable — show veteran instructions */
+          /* SDK truly unavailable */
           const btn = block.querySelector('#ton-connect-open-btn');
           if (btn) {
-            btn.textContent = T('legacy_veteran_unavail');
-            btn.style.cssText = 'background:transparent;color:var(--text-muted);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 16px;font-size:12px;font-weight:400;width:100%;text-align:center;cursor:default;display:block;';
-            btn.disabled = true;
+            const inTelegram = !!(window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData);
+            /* If inside Telegram, the SDK should load — offer a manual retry instead of "open the bot" */
+            btn.textContent = inTelegram ? T('legacy_sdk_reload') : T('legacy_veteran_unavail');
+            if (inTelegram) {
+              btn.style.background = '#0098EA';
+              btn.style.color = '#fff';
+              btn.disabled = false;
+              btn.onclick = () => { btn.disabled = true; tryInit(8); };
+            } else {
+              btn.style.cssText = 'background:transparent;color:var(--text-muted);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 16px;font-size:12px;font-weight:400;width:100%;text-align:center;cursor:default;display:block;';
+              btn.disabled = true;
+            }
           }
           return;
         }
@@ -603,6 +613,7 @@
 
       const u = tgUser();
       const chatId = u ? String(u.id) : null;
+      const initData = (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) || '';
 
       if (!chatId) {
         show('[data-legacy-empty]');
@@ -612,7 +623,9 @@
       }
 
       try {
-        const resp = await fetch(`/api/basic/legacy-profile?chatId=${encodeURIComponent(chatId)}`);
+        const profileUrl = `/api/basic/legacy-profile?chatId=${encodeURIComponent(chatId)}`
+          + (initData ? `&initData=${encodeURIComponent(initData)}` : '');
+        const resp = await fetch(profileUrl);
         const j = await resp.json();
 
         if (!j.status || !j.legacy || !j.legacy.isSeason1) {

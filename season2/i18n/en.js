@@ -799,6 +799,7 @@
       legacy_proof_fail:      "Ownership verification failed. Please try again.",
       legacy_wallet_error:    "Could not reach the blockchain. Try again later.",
       legacy_veteran_unavail: "Open this page through the Shahnameh Telegram bot to connect your TON wallet.",
+      legacy_sdk_reload:      "Tap to retry wallet connection",
 
   };
 })();
