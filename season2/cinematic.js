@@ -483,5 +483,172 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 
-  window.RealCinematic = { showChapterReveal, showHakimAppearance, showLoreDiscovery, showDamavandMemory };
+  /* ══════════════════════════════════════════════════════════════
+     HERO REVEAL CINEMATICS
+     Five major heroes/kings get one-time cinematic reveal sequences.
+     Sequence: darken → silhouette → quote → slow reveal → Hakim comment → enter
+     ══════════════════════════════════════════════════════════════ */
+
+  const HERO_REVEALS = {
+    zahhak: {
+      name: "Zahhak",
+      era: "The Serpent King",
+      silhouette: "🐍",
+      quote: "Some kings are crowned by fear.",
+      subQuote: "A thousand years of darkness. And the world forgot what light tasted like.",
+      hakimComment: "Zahhak did not begin as evil. He began as a man who made one choice, then another, and then one more. Study this king carefully.",
+      color: "crimson",
+      accent: "rgba(255,82,103,.35)",
+    },
+    fereydun: {
+      name: "Fereydun",
+      era: "The Liberator",
+      silhouette: "⚖",
+      quote: "Even darkness remembers the coming of justice.",
+      subQuote: "He was raised in hiding. He emerged as a reckoning.",
+      hakimComment: "Fereydun teaches patience. The world was not freed in a single moment — it was prepared for over years of silence and endurance.",
+      color: "jade",
+      accent: "rgba(83,215,156,.3)",
+    },
+    rostam: {
+      name: "Rostam",
+      era: "Champion of Pars",
+      silhouette: "⚔",
+      quote: "The burden of strength is heavier than iron.",
+      subQuote: "He carried the world. He asked for nothing in return. He lost everything.",
+      hakimComment: "Rostam is not a story of victory. He is the chronicle's greatest question: what does strength cost a man when the world will not let him rest?",
+      color: "gold",
+      accent: "rgba(244,197,107,.35)",
+    },
+    zal: {
+      name: "Zal",
+      era: "The Albino Prince",
+      silhouette: "🪶",
+      quote: "What the mountain casts away, the Simorgh raises.",
+      subQuote: "Born white as snow. Cast into the wilderness. Raised by the world's wisest bird.",
+      hakimComment: "Zal is proof that the chronicle does not abandon the abandoned. He who is cast aside becomes the father of the greatest warrior in Persian history.",
+      color: "violet",
+      accent: "rgba(140,109,255,.35)",
+    },
+    jamshid: {
+      name: "Jamshid",
+      era: "The Golden Throne",
+      silhouette: "👑",
+      quote: "Seven hundred years of light — then one breath of pride.",
+      subQuote: "Farr is patient. But it does not forgive.",
+      hakimComment: "Jamshid's tragedy is not weakness. He was the greatest king in an age of kings. His fall teaches what no victory can: the gods are watching for the moment pride erases humility.",
+      color: "gold",
+      accent: "rgba(244,197,107,.3)",
+    },
+  };
+
+  const showHeroReveal = (heroId, onDone) => {
+    const hero = HERO_REVEALS[heroId];
+    if (!hero) { if (onDone) onDone(); return; }
+
+    const seenKey = `real_hero_reveal_${heroId}`;
+    if (localStorage.getItem(seenKey)) { if (onDone) onDone(); return; }
+    localStorage.setItem(seenKey, "1");
+
+    const colorMap = {
+      crimson: "#ff5267",
+      jade: "#53d79c",
+      gold: "#f4c56b",
+      violet: "#8c6dff",
+      azure: "#5ea2ff",
+    };
+    const accentColor = colorMap[hero.color] || "#f4c56b";
+
+    const el = document.createElement("div");
+    el.className = "hr-overlay";
+    el.setAttribute("role", "dialog");
+    el.setAttribute("aria-modal", "true");
+    el.innerHTML = `
+      <div class="hr-bg" style="--hr-accent:${hero.accent};" aria-hidden="true"></div>
+      <div class="hr-content">
+        <div class="hr-era">${hero.era}</div>
+        <div class="hr-silhouette" aria-hidden="true">${hero.silhouette}</div>
+        <div class="hr-name" style="color:${accentColor};">${hero.name}</div>
+        <div class="hr-quote">"${hero.quote}"</div>
+        <div class="hr-sub-quote">${hero.subQuote}</div>
+        <div class="hr-hakim-block">
+          <span class="hr-hakim-label">Hakim</span>
+          <span class="hr-hakim-text"></span>
+        </div>
+        <button class="hr-enter" style="border-color:${accentColor}40; color:${accentColor};">
+          Enter Chronicle ›
+        </button>
+      </div>
+    `;
+    document.body.appendChild(el);
+
+    requestAnimationFrame(() => el.classList.add("hr-visible"));
+
+    const hakimEl = el.querySelector(".hr-hakim-text");
+    let hIdx = 0;
+    const typeHakim = () => {
+      if (hIdx < hero.hakimComment.length) {
+        hakimEl.textContent += hero.hakimComment[hIdx++];
+        setTimeout(typeHakim, 18);
+      }
+    };
+    setTimeout(typeHakim, 2400);
+
+    let dismissed = false;
+    const dismiss = () => {
+      if (dismissed) return; dismissed = true;
+      el.classList.add("hr-exit");
+      setTimeout(() => { el.remove(); if (onDone) onDone(); }, 600);
+    };
+
+    setTimeout(dismiss, 9000);
+    el.querySelector(".hr-enter").addEventListener("click", dismiss);
+  };
+
+  /* ══════════════════════════════════════════════════════════════
+     SACRED QUIET MOMENT
+     Intentional world-pause after major events.
+     Reduced UI, slow quote, gentle breathe.
+     ══════════════════════════════════════════════════════════════ */
+
+  const showSacredQuiet = (quote, onDone) => {
+    const el = document.createElement("div");
+    el.className = "sq-overlay";
+    el.setAttribute("aria-hidden", "true");
+    el.innerHTML = `
+      <div class="sq-content">
+        <div class="sq-rule" aria-hidden="true"></div>
+        <div class="sq-quote"></div>
+        <div class="sq-rule" aria-hidden="true"></div>
+      </div>
+    `;
+    document.body.appendChild(el);
+
+    requestAnimationFrame(() => el.classList.add("sq-visible"));
+
+    const quoteEl = el.querySelector(".sq-quote");
+    const full = `"${quote}"`;
+    let qIdx = 0;
+    const typeQ = () => {
+      if (qIdx < full.length) {
+        quoteEl.textContent += full[qIdx++];
+        setTimeout(typeQ, 30);
+      }
+    };
+    setTimeout(typeQ, 400);
+
+    setTimeout(() => {
+      el.classList.add("sq-exit");
+      setTimeout(() => { el.remove(); if (onDone) onDone(); }, 900);
+    }, 4200);
+  };
+
+  window.RealCinematic = {
+    showChapterReveal,
+    showHakimAppearance,
+    showLoreDiscovery,
+    showDamavandMemory,
+    showHeroReveal,
+    showSacredQuiet,
+  };
 })();

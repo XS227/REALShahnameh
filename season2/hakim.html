@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>Hakim — AI Companion · REAL Shahnameh</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
   <link rel="stylesheet" href="style.css?v=202605150500" />
 </head>
 <body>
@@ -57,6 +58,7 @@
       <button class="hakim-tab" data-tab="wisdom" role="tab" aria-selected="false" data-i18n="hakim_kings_wisdom">Wisdom of Kings</button>
       <button class="hakim-tab" data-tab="word" role="tab" aria-selected="false" data-i18n="hakim_word_of_day">Word of the Day</button>
       <button class="hakim-tab" data-tab="timeline" role="tab" aria-selected="false" data-i18n="hakim_history">Historical Timeline</button>
+      <button class="hakim-tab" data-tab="legacy" role="tab" aria-selected="false" data-i18n="legacy_tab">⚔ Legacy</button>
     </div>
 
     <!-- Tab: Ask -->
@@ -128,7 +130,113 @@
       </div>
     </div>
 
+    <!-- Tab: Legacy (Season 1 + Wallet) -->
+    <div class="hakim-tab-panel" data-tab-panel="legacy">
+
+      <!-- Loading state -->
+      <div class="legacy-loading" data-legacy-loading>
+        <div class="legacy-spinner"></div>
+        <p style="color:var(--text-muted);font-size:13px;margin-top:10px;">Reading the chronicles…</p>
+      </div>
+
+      <!-- Not a Season 1 player -->
+      <div class="legacy-empty hidden" data-legacy-empty>
+        <div style="font-size:36px;margin-bottom:10px;">📜</div>
+        <p style="color:var(--text-muted);font-size:14px;text-align:center;">
+          Your story in the Realm begins in Season 2.<br>Season 1 veterans will see their record here.
+        </p>
+        <div style="margin-top:18px;">
+          <div class="legacy-wallet-block" data-legacy-wallet-block></div>
+        </div>
+      </div>
+
+      <!-- Season 1 record card -->
+      <div class="legacy-card hidden" data-legacy-card>
+        <div class="legacy-header">
+          <div class="legacy-crest">⚔</div>
+          <div>
+            <div class="legacy-title">Season 1 Record</div>
+            <div class="legacy-sub">Your deeds are written in the chronicles of Riket.</div>
+          </div>
+        </div>
+
+        <div class="legacy-proclamation" data-legacy-proclamation>
+          <!-- Filled by JS -->
+        </div>
+
+        <div class="legacy-stats-grid">
+          <div class="legacy-stat">
+            <div class="legacy-stat-ico">⚔</div>
+            <div class="legacy-stat-num" data-ls-invites>—</div>
+            <div class="legacy-stat-lbl">Warriors Recruited</div>
+          </div>
+          <div class="legacy-stat">
+            <div class="legacy-stat-ico">🃏</div>
+            <div class="legacy-stat-num" data-ls-cards>—</div>
+            <div class="legacy-stat-lbl">Cards Collected</div>
+          </div>
+          <div class="legacy-stat">
+            <div class="legacy-stat-ico">💰</div>
+            <div class="legacy-stat-num" data-ls-earnings>—</div>
+            <div class="legacy-stat-lbl">REAL Earned</div>
+          </div>
+          <div class="legacy-stat">
+            <div class="legacy-stat-ico">🏰</div>
+            <div class="legacy-stat-num" data-ls-clan>—</div>
+            <div class="legacy-stat-lbl">Clan</div>
+          </div>
+        </div>
+
+        <div class="legacy-wallet-block" data-legacy-wallet-block></div>
+      </div>
+
+    </div>
+
   </main>
+
+  <!-- Wallet verify styles -->
+  <style>
+    .legacy-loading { display:flex; flex-direction:column; align-items:center; padding:40px 0; }
+    .legacy-spinner { width:32px; height:32px; border:2px solid rgba(244,197,107,.2); border-top-color:var(--gold); border-radius:50%; animation:spin .8s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .hidden { display:none !important; }
+    .legacy-card {
+      background: linear-gradient(180deg, rgba(244,197,107,.07), rgba(244,197,107,.02));
+      border: 1px solid rgba(244,197,107,.25);
+      border-radius: 16px;
+      padding: 20px 18px;
+      margin-top: 4px;
+    }
+    .legacy-empty { display:flex; flex-direction:column; align-items:center; padding:32px 16px; }
+    .legacy-header { display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+    .legacy-crest { font-size:28px; background:linear-gradient(135deg,rgba(244,197,107,.2),rgba(244,197,107,.05)); border:1px solid rgba(244,197,107,.3); border-radius:12px; width:52px; height:52px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .legacy-title { font-weight:700; font-size:16px; color:var(--gold); }
+    .legacy-sub { font-size:12px; color:var(--text-muted); margin-top:2px; }
+    .legacy-proclamation { font-style:italic; font-size:13px; color:var(--text); background:rgba(244,197,107,.06); border-left:2px solid rgba(244,197,107,.5); padding:10px 14px; border-radius:0 8px 8px 0; margin-bottom:18px; line-height:1.6; }
+    .legacy-stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:18px; }
+    .legacy-stat { background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:12px; padding:14px 12px; text-align:center; }
+    .legacy-stat-ico { font-size:20px; margin-bottom:6px; }
+    .legacy-stat-num { font-size:22px; font-weight:800; color:var(--gold); line-height:1; }
+    .legacy-stat-lbl { font-size:11px; color:var(--text-muted); margin-top:4px; letter-spacing:.06em; text-transform:uppercase; }
+    /* Wallet block */
+    .wallet-block { border:1px solid rgba(244,197,107,.2); border-radius:12px; padding:14px 16px; margin-top:4px; }
+    .wallet-block.verified { border-color:rgba(80,220,160,.4); background:rgba(80,220,160,.05); }
+    .wallet-block.elite { border-color:rgba(244,197,107,.5); background:rgba(244,197,107,.08); box-shadow:0 0 20px rgba(244,197,107,.15); }
+    .wallet-tier-badge { display:inline-flex; align-items:center; gap:6px; padding:4px 12px; border-radius:999px; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; margin-top:8px; }
+    .tier-legend  { background:rgba(244,197,107,.2); color:var(--gold); border:1px solid rgba(244,197,107,.4); }
+    .tier-elite   { background:rgba(244,197,107,.15); color:var(--gold); border:1px solid rgba(244,197,107,.3); }
+    .tier-holder  { background:rgba(80,220,160,.1); color:#50dca0; border:1px solid rgba(80,220,160,.3); }
+    .tier-supporter { background:rgba(255,255,255,.05); color:var(--text-muted); border:1px solid rgba(255,255,255,.1); }
+    /* TON Connect button */
+    #ton-connect-btn { margin-top:10px; }
+    #ton-connect-btn button,
+    .wallet-connect-btn { width:100%; padding:12px; background:linear-gradient(135deg,var(--gold),#c07a1a); color:#1a0e00; font-weight:700; font-size:14px; border:none; border-radius:10px; cursor:pointer; margin-top:2px; transition:opacity .2s; }
+    .wallet-connect-btn:hover, #ton-connect-btn button:hover { opacity:.88; }
+    .wallet-connect-btn:disabled { opacity:.5; cursor:default; }
+    /* override TON Connect UI's default styles to match our theme */
+    tc-root { --tc-font-family: inherit; }
+    .ton-connect-button { width:100% !important; }
+  </style>
 
   <nav class="bottom-nav">
     <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="home">Home</span></a>
@@ -147,8 +255,9 @@
   <script src="i18n.js?v=202605150500"></script>
   <script src="resources.js?v=202605150500"></script>
   <script src="audio.js?v=202605150500"></script>
-  <script src="hakim-personality.js?v=202605150500"></script>
-  <script src="cinematic.js?v=202605150500"></script>
-  <script src="hakim.js?v=202605150500"></script>
+  <script src="hakim-personality.js?v=202605150600"></script>
+  <script src="hakim-memory.js?v=202605150600"></script>
+  <script src="cinematic.js?v=202605150600"></script>
+  <script src="hakim.js?v=202605150600"></script>
 </body>
 </html>

@@ -623,11 +623,28 @@
   /* =========================================================
      CERTIFICATE MODAL
      ========================================================= */
+  const CINEMATIC_HEROES = new Set(["zahhak", "fereydun", "rostam", "zal", "jamshid"]);
+
   const openCertificate = (item) => {
     const backdrop = document.getElementById("cert-backdrop");
     const modal    = document.getElementById("cert-modal");
     if (!backdrop || !modal) return;
 
+    // Record hero view for Hakim memory
+    if (window.HakimMemory) window.HakimMemory.recordHero(item.id);
+
+    // Hero reveal cinematic for major heroes (first view only)
+    if (CINEMATIC_HEROES.has(item.id) && window.RealCinematic) {
+      const seenKey = `real_hero_reveal_${item.id}`;
+      if (!localStorage.getItem(seenKey)) {
+        window.RealCinematic.showHeroReveal(item.id, () => _doOpenCertificate(item, backdrop, modal));
+        return;
+      }
+    }
+    _doOpenCertificate(item, backdrop, modal);
+  };
+
+  const _doOpenCertificate = (item, backdrop, modal) => {
     /* Record first discovery */
     trackDiscovery(item.id);
     const discoveredDate = getDiscoveryDate(item.id);

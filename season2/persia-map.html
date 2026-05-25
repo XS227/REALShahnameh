@@ -240,6 +240,31 @@
     svgEl.appendChild(line);
   });
 
+  /* ── Civilization state: determine which regions have "hero energy" ── */
+  const HERO_REGION_AFFINITY = {
+    rostam:   ["sistan", "khorasan"],
+    zahhak:   ["ray", "babylon"],
+    fereydun: ["pars", "damavand"],
+    hushang:  ["pars", "tus"],
+    jamshid:  ["pars"],
+    zal:      ["sistan", "alborz"],
+    kaveh:    ["pars"],
+    simorgh:  ["alborz"],
+  };
+
+  // Build set of regions that have cinematic hero energy
+  const heroEnergized = new Set();
+  Object.keys(HERO_REGION_AFFINITY).forEach(heroId => {
+    const seenKey = `real_hero_reveal_${heroId}`;
+    if (localStorage.getItem(seenKey)) {
+      HERO_REGION_AFFINITY[heroId].forEach(rid => heroEnergized.add(rid));
+    }
+  });
+
+  // Zahhak-darkened regions
+  const zahhakSeen = localStorage.getItem("real_hero_reveal_zahhak");
+  const ZAHHAK_DARK = new Set(["ray", "babylon"]);
+
   /* ── Build region nodes ───────────────────────────────────────── */
   const inner = document.getElementById("map-inner");
   let unlockedCount = 0;
@@ -248,16 +273,29 @@
     const unlocked = isUnlocked(region);
     if (unlocked) unlockedCount++;
 
+    const energized = heroEnergized.has(region.id);
+    const darkened = zahhakSeen && ZAHHAK_DARK.has(region.id);
+
     const node = document.createElement("div");
-    node.className = `map-region ${region.type} ${unlocked ? "unlocked" : "locked"} cinematic-enter`;
+    let cls = `map-region ${region.type} ${unlocked ? "unlocked" : "locked"} cinematic-enter`;
+    if (unlocked && energized) cls += " map-region-energized";
+    if (unlocked && darkened) cls += " map-region-darkened";
+    node.className = cls;
     node.style.cssText = `left:${region.x}%; top:${region.y}%; animation-delay:${0.05 + idx * 0.06}s`;
     node.setAttribute("data-region-id", region.id);
+
+    // Civilization pulse ring for energized regions
+    const pulseEl = unlocked && energized ? `<div class="map-region-pulse" aria-hidden="true"></div>` : "";
     node.innerHTML = `
+      ${pulseEl}
       <div class="map-dot"></div>
       <div class="map-region-name">${region.name}</div>
       <div class="map-region-era">${region.era}</div>
     `;
     inner.appendChild(node);
+
+    // Record region visit in Hakim memory
+    if (unlocked && window.HakimMemory) window.HakimMemory.recordRegion(region.id);
   });
 
   /* ── Progress bar ─────────────────────────────────────────────── */
