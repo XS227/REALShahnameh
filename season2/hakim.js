@@ -464,11 +464,15 @@
     /* ── TON Connect singleton ── */
     const getTonConnect = () => {
       if (_tc) return _tc;
-      const TCMod = window.TonConnectUI || window.TONConnectUI;
-      if (!TCMod) return null;
-      const Cls = typeof TCMod === 'function' ? TCMod : TCMod.TonConnectUI;
-      if (typeof Cls !== 'function') return null;
       try {
+        let Cls = null;
+        if (typeof window.TonConnectUI === 'function') {
+          Cls = window.TonConnectUI;
+        } else if (window.TONConnectUI) {
+          if (typeof window.TONConnectUI === 'function') Cls = window.TONConnectUI;
+          else if (typeof window.TONConnectUI.TonConnectUI === 'function') Cls = window.TONConnectUI.TonConnectUI;
+        }
+        if (!Cls) return null;
         _tc = new Cls({ manifestUrl: 'https://shahnameh.setaei.com/tonconnect-manifest.json' });
         return _tc;
       } catch (_) { return null; }
@@ -535,43 +539,60 @@
         return;
       }
 
+      const TON_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 56 56" fill="none"><path d="M37.56 15.63H18.44c-3.46 0-5.64 3.68-3.91 6.67L26.28 42.5 28 45.5l1.72-3 11.75-20.2c1.74-2.99-.44-6.67-3.91-6.67ZM26.26 38.79l-3.05-5.17-6.26-10.8c-.57-.99.14-2.24 1.5-2.24h7.81v18.21Zm12.79-15.97-6.26 10.8-3.05 5.17V20.58h7.82c1.36 0 2.06 1.25 1.49 2.24Z" fill="white"/></svg>`;
+
       /* No wallet yet — show TON Connect button */
       block.innerHTML = `
         <div style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">${T('legacy_wallet_sub')}</div>
         <div id="ton-connect-btn">
-          <button id="ton-connect-open-btn" style="background:var(--gold,#f4c56b);color:#1a0800;border:none;border-radius:12px;padding:12px 24px;font-weight:700;font-size:14px;cursor:pointer;width:100%;letter-spacing:.04em;">${T('legacy_connect_btn')}</button>
+          <button id="ton-connect-open-btn" style="background:#0098EA;color:#fff;border:none;border-radius:12px;padding:12px 20px;font-weight:700;font-size:14px;cursor:pointer;width:100%;letter-spacing:.04em;display:flex;align-items:center;justify-content:center;gap:10px;">${TON_ICON}${T('legacy_connect_btn')}</button>
         </div>
         <div data-wallet-status style="margin-top:10px;font-size:13px;color:var(--text-muted);display:none;"></div>
         <div data-wallet-tier></div>
       `;
       container.appendChild(block);
 
-      const tc = getTonConnect();
-      if (!tc) {
-        const btn = block.querySelector('#ton-connect-open-btn');
-        if (btn) { btn.textContent = T('legacy_wallet_error'); btn.style.background = 'var(--ember,#c44)'; btn.disabled = true; }
-        return;
-      }
+      /* Retry SDK init — CDN may not be ready when the tab first renders */
+      let statusListenerAdded = false;
+      const tryInit = (attemptsLeft) => {
+        const tc = getTonConnect();
+        if (!tc) {
+          if (attemptsLeft > 0) { setTimeout(() => tryInit(attemptsLeft - 1), 400); return; }
+          /* SDK truly unavailable — show veteran instructions */
+          const btn = block.querySelector('#ton-connect-open-btn');
+          if (btn) {
+            btn.textContent = T('legacy_veteran_unavail');
+            btn.style.cssText = 'background:transparent;color:var(--text-muted);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 16px;font-size:12px;font-weight:400;width:100%;text-align:center;cursor:default;display:block;';
+            btn.disabled = true;
+          }
+          return;
+        }
 
-      /* Open TON Connect modal on button click */
-      const openBtn = block.querySelector('#ton-connect-open-btn');
-      if (openBtn) openBtn.addEventListener('click', () => { try { tc.openModal(); } catch(_) {} });
+        /* Wire up click → openModal */
+        const openBtn = block.querySelector('#ton-connect-open-btn');
+        if (openBtn) {
+          openBtn.addEventListener('click', () => {
+            try { tc.openModal(); }
+            catch (e) { console.error('[TON] openModal error:', e); }
+          });
+        }
 
-      /* Watch for wallet connection */
-      tc.onStatusChange(async (wallet) => {
-        if (!wallet) return;
+        /* Watch for connection — guard against duplicate listeners on the singleton */
+        if (!statusListenerAdded) {
+          statusListenerAdded = true;
+          tc.onStatusChange(async (wallet) => {
+            if (!wallet) return;
+            const addr = wallet.account && wallet.account.address;
+            if (!addr) return;
+            const statusEl = block.querySelector('[data-wallet-status]');
+            if (statusEl) { statusEl.style.display = ''; statusEl.textContent = T('legacy_connected'); }
+            await verifyWallet(addr, block);
+            setTimeout(() => renderWalletBlock(container, addr), 2000);
+          });
+        }
+      };
 
-        const addr = wallet.account && wallet.account.address;
-        if (!addr) return;
-
-        const statusEl = block.querySelector('[data-wallet-status]');
-        if (statusEl) { statusEl.style.display = ''; statusEl.textContent = T('legacy_connected'); }
-
-        await verifyWallet(addr, block);
-
-        /* Rebuild with verified state after short delay */
-        setTimeout(() => renderWalletBlock(container, addr), 2000);
-      });
+      tryInit(8); // up to 8 × 400 ms = 3.2 s before giving up
     };
 
     /* ── Main loader ── */

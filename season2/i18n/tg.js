@@ -802,6 +802,7 @@
       legacy_wallet_addr:     "Ҳамёни пайвастшуда",
       legacy_proof_fail:      "Тасдиқи моликият нокомёб шуд.",
       legacy_wallet_error:    "Пайваст ба блокчейн имконнопазир шуд.",
+      legacy_veteran_unavail: "Барои пайвастани ҳамёни TON, ин саҳифаро аз боти Telegram Шоҳнома кушоед.",
 
   };
 })();
