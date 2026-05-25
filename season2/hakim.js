@@ -119,7 +119,10 @@
   /* ── Helpers ─────────────────────────────────────────────────────────── */
 
   const getLang = () => {
-    try { return localStorage.getItem("shahnameh_lang") || "en"; } catch { return "en"; }
+    try {
+      const v = localStorage.getItem("real_lang") || localStorage.getItem("shahnameh_lang");
+      return (v === "fa" || v === "tg" || v === "en") ? v : "en";
+    } catch { return "en"; }
   };
 
   const t = (key) => {

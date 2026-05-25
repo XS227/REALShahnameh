@@ -1,0 +1,20 @@
+[Unit]
+Description=Hakim Bot — Shahnameh AI Guardian
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/shahnameh/hakim-bot
+EnvironmentFile=/var/www/shahnameh/hakim-bot/.env
+ExecStart=/usr/bin/python3 /var/www/shahnameh/hakim-bot/bot.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=hakim-bot
+
+[Install]
+WantedBy=multi-user.target

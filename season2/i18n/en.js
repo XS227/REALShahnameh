@@ -747,6 +747,7 @@
       hakim_loading: "The chronicle speaks…",
       hakim_error: "The mountain is silent tonight. Return soon.",
       hakim_bond_xp: "0 / 100 XP",
+      hakim_bond_hint: "Ask questions to level up your bond",
 
       /* Offerings to the Flame */
       nav_offerings: "Offerings to the Flame",
@@ -773,7 +774,7 @@
       legacy_tab:             "⚔ Legacy",
       legacy_loading:         "Reading the chronicles…",
       legacy_s1_title:        "Season 1 Record",
-      legacy_s1_sub:          "Your deeds are written in the chronicles of the Realm.",
+      legacy_s1_sub:          "Your deeds are written in the chronicles of Riket.",
       legacy_proclamation:    "{name} brought {invites} warrior{invites_s} to the Realm in Season 1 and collected {cards} card{cards_s}. Their honour is written in the chronicles of Riket.",
       legacy_warriors:        "Warriors Recruited",
       legacy_cards_lbl:       "Cards Collected",

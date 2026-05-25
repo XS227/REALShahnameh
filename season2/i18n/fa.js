@@ -752,6 +752,7 @@
       hakim_loading: "شاهنامه سخن می‌گوید…",
       hakim_error: "کوهستان امشب خاموش است. به زودی بازگرد.",
       hakim_bond_xp: "۰ / ۱۰۰ تجربه",
+      hakim_bond_hint: "برای ارتقاء پیوند سوال بپرس",
 
       /* Offerings to the Flame */
       nav_offerings: "نذرهای آتش",

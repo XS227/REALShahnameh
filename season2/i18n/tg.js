@@ -751,6 +751,7 @@
       hakim_loading: "Солнома сухан мегӯяд…",
       hakim_error: "Кӯҳистон имшаб хомӯш аст. Зуд баргард.",
       hakim_bond_xp: "0 / 100 ТА",
+      hakim_bond_hint: "Саволҳо диҳед то пайванд баланд равад",
 
       /* Offerings to the Flame */
       nav_offerings: "Назрҳо ба Оташ",
