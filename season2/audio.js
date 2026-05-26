@@ -22,6 +22,7 @@
     "persia-map.html":      "wind",
     "social.html":          "main",
     "earn.html":            "main",
+    "profile.html":         "main",
   };
 
   const page = window.location.pathname.split("/").pop() || "index.html";

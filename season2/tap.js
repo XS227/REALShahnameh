@@ -22,8 +22,8 @@
       rarity: "rare",
       img: null,
       emoji: "👑",
-      locked: true,
-      unlock: "Story · Ch. 1"
+      locked: false,
+      unlock: null
     },
     {
       id: "hushang",
@@ -105,19 +105,6 @@
     showToast._t = setTimeout(() => el.classList.remove("show"), 2200);
   };
 
-  /* ---- Unlock skins based on player progress ---- */
-  const resolveUnlocks = () => {
-    try {
-      const p = window.RealPlayer && window.RealPlayer.get && window.RealPlayer.get();
-      const ch1Unlocked = (p && p.chapterProgress && p.chapterProgress[1] && p.chapterProgress[1].unlocked)
-                        || localStorage.getItem('real_chapter_done_keyumars') === '1';
-      if (ch1Unlocked) {
-        const keyumars = SKINS.find(s => s.id === 'keyumars');
-        if (keyumars) { keyumars.locked = false; keyumars.unlock = null; }
-      }
-    } catch (_) {}
-  };
-
   /* ---- Apply skin to orb ---- */
   const applyOrbSkin = (skin) => {
     const orbImg  = document.querySelector("[data-skin-orb]");
@@ -196,7 +183,11 @@
 
       btn.addEventListener("click", () => {
         if (skin.locked) {
-          showToast(`🔒 ${skin.name} — ${unlockLabel(skin.unlock)}`);
+          const cond = unlockLabel(skin.unlock);
+          const msg = cond.includes('REAL')
+            ? `🔒 ${skin.name} — Cost: ${cond}`
+            : `🔒 ${skin.name} — ${cond}`;
+          showToast(msg);
           if (navigator.vibrate) navigator.vibrate(6);
           return;
         }
@@ -341,11 +332,13 @@
     const btn = document.querySelector('[data-adsgram-energy]');
     if (!btn) return;
 
-    btn.addEventListener('click', () => {
+    const tryShowAd = (isRetry) => {
       if (!window.RealAdService) { showToast('Ad service not ready.'); return; }
-      const origText = btn.textContent;
+      const origText = btn.getAttribute('data-orig-text') || btn.textContent;
+      btn.setAttribute('data-orig-text', origText);
       btn.disabled = true;
-      btn.textContent = 'Loading Ad…';
+      btn.textContent = isRetry ? 'Connecting to TON Ad-network…' : 'Loading Ad…';
+
       window.RealAdService.showAd('bronze')
         .then(() => {
           hydrateFromPlayer();
@@ -353,16 +346,36 @@
           try { window.dispatchEvent(new CustomEvent('real:burst', { detail: { label: '⚡ Energy filled!' } })); } catch (_) {}
           btn.disabled = false;
           btn.textContent = origText;
+          btn.removeAttribute('data-orig-text');
         })
         .catch(err => {
-          const msg = err.type === 'cooldown' ? 'Cooldown — come back soon!'
-                    : err.type === 'skipped'  ? 'Ad skipped — no reward.'
-                    : 'Ad unavailable. Try again.';
-          showToast(msg);
-          btn.disabled = false;
-          btn.textContent = origText;
+          if (err.type === 'cooldown') {
+            showToast('Cooldown — come back soon!');
+            btn.disabled = false;
+            btn.textContent = origText;
+            btn.removeAttribute('data-orig-text');
+          } else if (err.type === 'skipped') {
+            showToast('Ad skipped — no reward.');
+            btn.disabled = false;
+            btn.textContent = origText;
+            btn.removeAttribute('data-orig-text');
+          } else {
+            /* No ads available — retry once after 2 s */
+            if (!isRetry) {
+              btn.textContent = 'Connecting to TON Ad-network…';
+              showToast('Connecting to TON Ad-network…');
+              setTimeout(() => tryShowAd(true), 2000);
+            } else {
+              showToast('No ads available right now. Try again later.');
+              btn.disabled = false;
+              btn.textContent = origText;
+              btn.removeAttribute('data-orig-text');
+            }
+          }
         });
-    });
+    };
+
+    btn.addEventListener('click', () => tryShowAd(false));
   };
 
   /* ---- Claim button stub ---- */
@@ -443,7 +456,6 @@
 
   /* ---- Init ---- */
   const init = () => {
-    resolveUnlocks();
     buildSkinRail();
     setupEnhancedTapFX();
     setupContractCopy();

@@ -149,7 +149,7 @@
      so the Settings panel can render the picker on any page. */
   const SKIN_CATALOGUE = [
     { id: "real",     nameKey: "skin_real",     emoji: "◆",  locked: false },
-    { id: "keyumars", nameKey: "skin_keyumars",  emoji: "👑", locked: true  },
+    { id: "keyumars", nameKey: "skin_keyumars",  emoji: "👑", locked: false },
     { id: "hushang",  nameKey: "skin_hushang",   emoji: "🔥", locked: true  },
     { id: "zahhak",   nameKey: "skin_zahhak",    emoji: "🐍", locked: true  },
     { id: "rostam",   nameKey: "skin_rostam",    emoji: "⚔",  locked: true  },
@@ -577,7 +577,7 @@
       { file: null,                   ico: "⚔",  key: "guild",         section: "more",  coming: true },
       { file: null,                   ico: "🛒", key: "market",        section: "more",  coming: true },
       { file: null,                   ico: "📦", key: "inventory",     section: "more",  coming: true },
-      { file: null,                   ico: "👤", key: "profile",       section: "more",  coming: true },
+      { file: "profile.html",         ico: "👤", key: "profile",       section: "more"  },
     ];
 
     const buildNavLinks = (tx) => {
