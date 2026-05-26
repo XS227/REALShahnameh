@@ -192,20 +192,24 @@
     if (levelEl) levelEl.textContent = vipLv;
     const vipPill = document.querySelector("[data-vip-level]");
     if (vipPill) vipPill.textContent = vipLv === 0 ? "VIP" : `VIP ${vipLv}`;
+
+    hydrateBadge(vipLv);
   };
 
   /* ── Daily quest hydration ── */
   const TAP_GOAL = 200;
   const lsRead = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
 
-  const hydrateQuests = () => {
+  /* su = server user object from RealSync.ready(); if omitted falls back to localStorage */
+  const hydrateQuests = (su) => {
     const dk = todayKey();
     const states = {
-      read:   lsRead("real_quest_read_" + dk) === "true",
-      quiz:   lsRead("real_quest_quiz_" + dk) === "true",
-      invite: lsRead("real_quest_invite_" + dk) === "true",
+      read:   (su && su.quest_read)   || lsRead("real_quest_read_"   + dk) === "true",
+      quiz:   (su && su.quest_quiz)   || lsRead("real_quest_quiz_"   + dk) === "true",
+      invite: (su && su.quest_invite) || lsRead("real_quest_invite_" + dk) === "true",
     };
-    const tapsToday = parseInt(lsRead("real_daily_taps_" + dk) || "0", 10);
+    const tapsToday = su ? (su.quest_tap || 0)
+                         : parseInt(lsRead("real_daily_taps_" + dk) || "0", 10);
     states.tap = tapsToday >= TAP_GOAL;
 
     Object.entries(states).forEach(([key, done]) => {
@@ -230,6 +234,72 @@
     if (host && window.RealResources) window.RealResources.refreshHud(host);
   };
 
+  /* ── Medallion badge ── */
+  const BADGE_TIERS = [
+    { min: 50, icon: "🌟", title: "Legend" },
+    { min: 20, icon: "👑", title: "King"   },
+    { min: 10, icon: "⚔",  title: "Champion" },
+    { min: 5,  icon: "🛡",  title: "Warrior" },
+    { min: 0,  icon: "⭐",  title: "Seeker" },
+  ];
+
+  const hydrateBadge = (level) => {
+    const el = document.querySelector("[data-player-badge]");
+    if (!el) return;
+    const lv = Number(level) || 0;
+    const tier = BADGE_TIERS.find(t => lv >= t.min) || BADGE_TIERS[BADGE_TIERS.length - 1];
+    el.textContent = tier.icon;
+    el.title = tier.title;
+  };
+
+  /* ── Hero Spotlight (3 cards) ── */
+  const renderHeroSpotlight = (catalogHeroes) => {
+    const host = document.querySelector("[data-hero-spotlight]");
+    if (!host) return;
+
+    const owned = (window.RealSync && window.RealSync.getOwnedHeroes)
+      ? window.RealSync.getOwnedHeroes() : {};
+
+    /* Join catalog data with owned levels */
+    let spotlightHeroes = Object.entries(owned)
+      .map(([hero_id, data]) => {
+        const cat = (catalogHeroes || []).find(h => h.slug === hero_id);
+        return cat ? { ...cat, playerLevel: data.level || 1, zarPerHour: data.zar_per_hour || 0 } : null;
+      })
+      .filter(Boolean)
+      .sort((a, b) => (b.playerLevel || 1) - (a.playerLevel || 1))
+      .slice(0, 3);
+
+    /* Fallback: show first 3 from catalog at level 1 */
+    if (!spotlightHeroes.length) {
+      spotlightHeroes = (catalogHeroes || []).slice(0, 3).map(h => ({
+        ...h, playerLevel: 1, zarPerHour: 0,
+      }));
+    }
+
+    if (!spotlightHeroes.length) {
+      host.innerHTML = `<div class="hs-empty">No heroes yet — visit the Heroes page to unlock your first!</div>`;
+      return;
+    }
+
+    host.innerHTML = spotlightHeroes.map(h => `
+      <div class="hs-card">
+        <div class="hs-portrait">
+          ${heroPortraitHtml(h)}
+        </div>
+        <div class="hs-body">
+          <div class="hs-kicker">Active hero</div>
+          <div class="hs-name">${escapeHtml(h.name)}</div>
+          ${h.bonus ? `<span class="hs-passive">✦ ${escapeHtml(h.bonus)}</span>` : ''}
+        </div>
+        <div class="hs-right">
+          <div class="hs-lvl-lbl">LVL</div>
+          <div class="hs-lvl-num">${h.playerLevel || 1}</div>
+          <a href="heroes.html" class="hs-upgrade-link">Up ›</a>
+        </div>
+      </div>`).join('');
+  };
+
   /* ── Boot: run initial hydration immediately, then re-run after sync ── */
   const bootHomeHydration = () => {
     // First pass with localStorage state (instant, no flicker)
@@ -239,9 +309,11 @@
 
     // Second pass once server data arrives (profile_pic, real balances, quests)
     if (window.RealSync) {
-      window.RealSync.ready().then(() => {
+      window.RealSync.ready().then((su) => {
         hydrateProfile();
-        hydrateQuests();
+        hydrateQuests(su);           // server data → checkmarks always accurate
+        hydrateBadge((window.RealPlayer && window.RealPlayer.get)
+          ? Math.floor((window.RealPlayer.get().xp || 0) / 1000) : 0);
         if (window.RealUtils) window.RealUtils.updateGlobalZar();
         refreshTreasury();
       });
@@ -267,8 +339,12 @@
   /* Fire catalog fetches in parallel. Best-effort; failures keep static strips empty. */
   fetch("/api/catalog/heroes",   { cache: "no-store" })
     .then(r => r.ok ? r.json() : null)
-    .then(b => renderHeroes(b && b.heroes))
-    .catch(() => renderHeroes([]));
+    .then(b => {
+      const heroes = b && b.heroes;
+      renderHeroes(heroes);
+      renderHeroSpotlight(heroes || []);
+    })
+    .catch(() => { renderHeroes([]); renderHeroSpotlight([]); });
 
   fetch("/api/catalog/chapters", { cache: "no-store" })
     .then(r => r.ok ? r.json() : null)

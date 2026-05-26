@@ -49,10 +49,10 @@
     ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" })[m]);
 
   const formatN = (n) => {
-    if (window.RealI18N && window.RealI18N.formatNumber) {
-      return window.RealI18N.formatNumber(n);
-    }
-    return Number(n).toLocaleString("en-US");
+    const v = Number(n) || 0;
+    if (v >= 1_000_000) return (v / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
+    if (v >= 1_000)     return (v / 1_000).toFixed(1).replace(/\.0$/, '') + 'k';
+    return String(Math.floor(v));
   };
 
   const t = (key) => {
@@ -105,9 +105,10 @@
     `).join("");
     const realCell = `
       <div class="r-cell-real" data-resource-cell="real">
-        <span class="r-real-ico">${icon("real")}</span>
+        <span class="r-real-token-badge" aria-hidden="true">◆</span>
         <span class="r-real-amt" data-resource-amt="real">${formatN(read("real"))}</span>
         <span class="r-real-lbl">${escapeHtml(label("real"))}</span>
+        <span class="r-real-chain" aria-hidden="true">TON</span>
       </div>
     `;
     host.innerHTML = `

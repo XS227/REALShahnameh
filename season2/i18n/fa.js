@@ -622,7 +622,7 @@
       journey_ch_label_tpl: "فصل ۱ · فعال",
       journey_ch1_sub: "۸ صحنه · آزمون · ۲۰۰ XP",
       continue_btn: "ادامه ›",
-      home_journey_length: "سفر ۹ ماهه",
+      home_journey_length: "سفر شما",
       active_hero_lbl: "قهرمان فعال",
       upgrade_link: "ارتقا ›",
       intro_link_label: "مقدمه",

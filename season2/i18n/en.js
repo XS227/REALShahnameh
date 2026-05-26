@@ -618,7 +618,7 @@
       journey_ch_label_tpl: "Chapter 1 · Active",
       journey_ch1_sub: "8 scenes · Quiz · 200 XP reward",
       continue_btn: "Continue ›",
-      home_journey_length: "9-month journey",
+      home_journey_length: "Your Journey",
       active_hero_lbl: "Active hero",
       upgrade_link: "Upgrade ›",
       intro_link_label: "Intro",

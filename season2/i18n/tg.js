@@ -621,7 +621,7 @@
       journey_ch_label_tpl: "Боби 1 · Фаъол",
       journey_ch1_sub: "8 саҳна · Имтиҳон · 200 XP",
       continue_btn: "Идома ›",
-      home_journey_length: "Сафари 9-моҳа",
+      home_journey_length: "Сафари Шумо",
       active_hero_lbl: "Қаҳрамони фаъол",
       upgrade_link: "Баланд бардоштан ›",
       intro_link_label: "Муқаддима",

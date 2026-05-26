@@ -47,5 +47,17 @@
     return '/assets/images/avatars/default-male-avatar.png';
   };
 
-  window.RealUtils = { updateGlobalZar, getAvatarFallback };
+  /* ── formatCryptoValue(val) ──────────────────────────────────────────────
+     Compact number formatter for all token amounts in the UI.
+       < 1,000        → integer only, no decimals  (757  not 757.3)
+       1,000–999,999  → 1k / 1.5k                 (1500 → 1.5k)
+       ≥ 1,000,000    → 1M / 2.4M                                          */
+  const formatCryptoValue = (val) => {
+    const n = Number(val) || 0;
+    if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
+    if (n >= 1_000)     return (n / 1_000).toFixed(1).replace(/\.0$/, '') + 'k';
+    return String(Math.floor(n));
+  };
+
+  window.RealUtils = { updateGlobalZar, getAvatarFallback, formatCryptoValue };
 })();
