@@ -89,21 +89,40 @@
     if (nameEl)     nameEl.textContent = displayName;
     if (usernameEl) usernameEl.textContent = u.username ? '@' + u.username : '';
 
+    const showFallbackAvatar = () => {
+      const fallbackSrc = window.RealUtils && window.RealUtils.getAvatarFallback
+        ? window.RealUtils.getAvatarFallback(u.path)
+        : null;
+      if (fallbackSrc && avatarEl) {
+        const fb = document.createElement('img');
+        fb.src = fallbackSrc;
+        fb.alt = displayName;
+        fb.onerror = () => { fb.remove(); if (avatarEl) avatarEl.textContent = displayName.charAt(0).toUpperCase(); };
+        avatarEl.innerHTML = '';
+        avatarEl.appendChild(fb);
+      } else if (avatarEl) {
+        avatarEl.textContent = displayName.charAt(0).toUpperCase();
+      }
+    };
+
     if (avatarEl) {
       const pic = u.profile_pic || (tg && tg.photo_url) || '';
       if (pic) {
         const img = document.createElement('img');
         img.src = pic;
         img.alt = displayName;
-        img.onerror = () => {
-          img.remove();
-          avatarEl.textContent = displayName.charAt(0).toUpperCase();
-        };
+        img.onerror = () => { img.remove(); showFallbackAvatar(); };
         avatarEl.innerHTML = '';
         avatarEl.appendChild(img);
       } else {
-        avatarEl.textContent = displayName.charAt(0).toUpperCase();
+        showFallbackAvatar();
       }
+    }
+
+    /* TrustAI Verified Human badge — appears when player has ≥1 verified referral */
+    const trustBadge = document.getElementById('trustai-badge');
+    if (trustBadge) {
+      trustBadge.style.display = (u.verified_referral_count || 0) > 0 ? 'inline-flex' : 'none';
     }
 
     const path = u.path || 'hero';

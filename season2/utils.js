@@ -39,5 +39,13 @@
     return finalZar;
   };
 
-  window.RealUtils = { updateGlobalZar };
+  /* ── getAvatarFallback(path) ──────────────────────────────────────────────
+     Returns a path-based default avatar image URL when a player has no
+     Telegram profile photo. Hero → male Shahnameh warrior; Heroine → female. */
+  const getAvatarFallback = (path) => {
+    if (path === 'heroine') return '/assets/images/avatars/default-female-avatar.png';
+    return '/assets/images/avatars/default-male-avatar.png';
+  };
+
+  window.RealUtils = { updateGlobalZar, getAvatarFallback };
 })();

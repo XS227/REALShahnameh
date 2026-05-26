@@ -5377,3 +5377,61 @@ body::after {
   transition: background .15s, color .15s;
 }
 .rob-close:hover { background: rgba(255,255,255,.14); color: var(--text, #e8e8f0); }
+
+/* ── TrustAI Verified Human badge ────────────────────────────────────── */
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.trustai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: #3ef0c0;
+  background: rgba(62,240,192,.12);
+  border: 1px solid rgba(62,240,192,.35);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Clan action row (Share + Chat buttons) ──────────────────────────── */
+.clan-action-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.clan-action-row .secondary-btn {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  padding: 8px 10px;
+  text-align: center;
+}
+.clan-chat-btn {
+  background: rgba(62,240,192,.1);
+  border-color: rgba(62,240,192,.35);
+  color: #3ef0c0;
+}
+.clan-chat-btn:active { background: rgba(62,240,192,.2); }
+
+/* ── Clan mining power stat ──────────────────────────────────────────── */
+.clan-power-stat {
+  color: #f4c56b;
+  font-weight: 700;
+}
+
+/* ── Clan settings label ─────────────────────────────────────────────── */
+.clan-setting-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 3px;
+}

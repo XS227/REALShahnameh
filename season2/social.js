@@ -46,8 +46,14 @@
     return Math.floor(s / 86400) + 'd';
   };
 
-  const displayName = (u) =>
-    u.username ? '@' + u.username : (u.first_name || 'Warrior');
+  const displayName = (u) => u.first_name || 'Warrior';
+
+  const fmtZar = (n) => {
+    n = Number(n) || 0;
+    if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + 'M';
+    if (n >= 1_000)     return (n / 1_000).toFixed(1) + 'K';
+    return n.toFixed(1);
+  };
 
   /* ── LIVE pill ────────────────────────────────────────────────────────── */
 
@@ -99,7 +105,7 @@
     const rankCls = (i) => ['top1', 'top2', 'top3'][i] || '';
 
     let html = rows.map((r, i) => {
-      const isMe = myId && r.telegram_id === myId;
+      const isMe = r.is_me;
       return `
         <div class="lb-row ${rankCls(i)}${isMe ? ' lb-me' : ''}">
           <span class="lb-rank">${i + 1}</span>
@@ -118,7 +124,7 @@
     /* Append "You" row if current user is outside top 10 */
     const myRank = data.my_rank;
     const myUser = data.my_user;
-    const inTop  = rows.some(r => myId && r.telegram_id === myId);
+    const inTop  = rows.some(r => r.is_me);
     if (myRank && myUser && !inTop) {
       const gap = myRank > rows.length ? myRank - rows.length : 0;
       html += `
@@ -285,8 +291,8 @@
       return;
     }
     const rows = members.map(m => {
-      const name    = m.username ? '@' + m.username : (m.first_name || 'Warrior');
-      const initial = name.replace('@', '').charAt(0).toUpperCase();
+      const name    = m.first_name || 'Warrior';
+      const initial = name.charAt(0).toUpperCase();
       const tag     = m.verified
         ? '<span class="clan-tag clan-verified">✓ Active</span>'
         : '<span class="clan-tag clan-pending">⌛ Pending</span>';
@@ -303,21 +309,79 @@
 
   /* ── LEADER DASHBOARD ────────────────────────────────────────────────── */
 
-  const loadLeaderDashboard = async (leaderId, clanId, containerEl) => {
-    containerEl.innerHTML = '<p class="clan-empty" style="padding:10px 0 4px;">Loading applications…</p>';
+  const loadLeaderDashboard = async (leaderId, clanId, containerEl, currentTgLink) => {
+    const tgLink = currentTgLink || '';
+
+    /* ── Settings panel ──────────────────────────────────────────────── */
+    containerEl.innerHTML = `
+      <div class="section-head" style="margin-top:16px;">
+        <h3>Leader Dashboard</h3>
+      </div>
+      <article class="card" style="padding:14px 16px;">
+        <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;">💬 Telegram Group Link</div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">Share your group with all clan members.</div>
+        <div style="display:flex;gap:8px;">
+          <input type="url" id="tg-link-input" class="modal-input"
+            style="flex:1;margin:0;font-size:12px;padding:8px 10px;"
+            placeholder="https://t.me/joinchat/…" />
+          <button class="secondary-btn" id="tg-link-save" style="padding:8px 14px;font-size:12px;">Save</button>
+        </div>
+        <div id="tg-link-msg" style="font-size:11px;margin-top:5px;"></div>
+      </article>
+      <div id="applications-container">
+        <p class="clan-empty" style="padding:10px 0 4px;">Loading applications…</p>
+      </div>`;
+
+    /* Pre-fill current link */
+    const tgInput = document.getElementById('tg-link-input');
+    if (tgInput && tgLink) tgInput.value = tgLink;
+
+    /* Save link */
+    document.getElementById('tg-link-save')?.addEventListener('click', async () => {
+      const link  = document.getElementById('tg-link-input')?.value.trim() || '';
+      const msgEl = document.getElementById('tg-link-msg');
+      const btn   = document.getElementById('tg-link-save');
+
+      if (link && !link.startsWith('https://t.me/') && !link.startsWith('https://telegram.me/')) {
+        if (msgEl) { msgEl.textContent = 'Must start with https://t.me/…'; msgEl.style.color = 'var(--ember)'; }
+        return;
+      }
+
+      btn.disabled = true; btn.textContent = '…';
+      const res = await post('/api/season2/clan/set-telegram-link', { telegram_id: leaderId, telegram_group_link: link });
+
+      if (res && res.status === 1) {
+        if (msgEl) { msgEl.textContent = link ? '✓ Link saved!' : '✓ Link cleared.'; msgEl.style.color = 'var(--gold)'; }
+        /* Update the Join Chat button in the clan card */
+        const joinBtn = document.getElementById('clan-join-chat-btn');
+        if (joinBtn) {
+          joinBtn.style.display = link ? '' : 'none';
+          joinBtn.dataset.link = link;
+        }
+      } else {
+        const msg = { invalid_link: 'Invalid Telegram link.', not_leader: 'Not the clan leader.' }[res?.error] || 'Could not save. Try again.';
+        if (msgEl) { msgEl.textContent = msg; msgEl.style.color = 'var(--ember)'; }
+      }
+
+      btn.disabled = false; btn.textContent = 'Save';
+    });
+
+    /* ── Applications panel ──────────────────────────────────────────── */
+    const appsEl = document.getElementById('applications-container');
+    if (!appsEl) return;
 
     const data = await get('/api/season2/clan/applications?' + new URLSearchParams({ telegram_id: leaderId }));
 
     if (!data || data.status !== 1) {
-      containerEl.innerHTML = '<p class="clan-empty">Could not load applications.</p>';
+      appsEl.innerHTML = '<p class="clan-empty">Could not load applications.</p>';
       return;
     }
 
     const apps = data.applications || [];
 
     if (!apps.length) {
-      containerEl.innerHTML = `
-        <article class="card" style="padding:14px 16px;">
+      appsEl.innerHTML = `
+        <article class="card" style="padding:14px 16px;margin-top:10px;">
           <div class="section-head" style="margin:0 0 8px;"><h3>Applications</h3></div>
           <p class="clan-empty">No pending applications.</p>
         </article>`;
@@ -326,7 +390,7 @@
 
     const rows = apps.map(a => `
       <div class="clan-row clan-app-row" data-applicant="${a.applicant_id}">
-        <div class="clan-avatar">${a.name.replace('@','').charAt(0).toUpperCase()}</div>
+        <div class="clan-avatar">${(a.name || 'W').charAt(0).toUpperCase()}</div>
         <div class="clan-info">
           <div class="clan-name">${a.name}</div>
           <div class="clan-stats">LVL ${a.level} · ${fmtN(a.xp)} XP</div>
@@ -337,22 +401,22 @@
         </div>
       </div>`).join('');
 
-    containerEl.innerHTML = `
-      <div class="section-head" style="margin-top:16px;">
+    appsEl.innerHTML = `
+      <div class="section-head" style="margin-top:10px;">
         <h3>Applications</h3>
         <span class="more">${apps.length} pending</span>
       </div>
       <article class="card lb-list clan-list">${rows}</article>`;
 
     /* Wire accept/reject */
-    containerEl.querySelectorAll('.app-accept-btn').forEach(btn => {
+    appsEl.querySelectorAll('.app-accept-btn').forEach(btn => {
       btn.addEventListener('click', async () => {
         const applicantId = btn.dataset.id;
         btn.disabled = true; btn.textContent = '…';
         const res = await post('/api/season2/clan/accept-application', { telegram_id: leaderId, applicant_id: applicantId });
         if (res && res.status === 1) {
           showToast('Warrior accepted into the clan!');
-          containerEl.querySelector(`.clan-app-row[data-applicant="${applicantId}"]`)?.remove();
+          appsEl.querySelector(`.clan-app-row[data-applicant="${applicantId}"]`)?.remove();
         } else {
           const msg = {
             clan_full:                'Clan is full (50/50).',
@@ -365,14 +429,14 @@
       });
     });
 
-    containerEl.querySelectorAll('.app-reject-btn').forEach(btn => {
+    appsEl.querySelectorAll('.app-reject-btn').forEach(btn => {
       btn.addEventListener('click', async () => {
         const applicantId = btn.dataset.id;
         btn.disabled = true; btn.textContent = '…';
         const res = await post('/api/season2/clan/reject-application', { telegram_id: leaderId, applicant_id: applicantId });
         if (res && res.status === 1) {
           showToast('Application rejected.');
-          containerEl.querySelector(`.clan-app-row[data-applicant="${applicantId}"]`)?.remove();
+          appsEl.querySelector(`.clan-app-row[data-applicant="${applicantId}"]`)?.remove();
         } else {
           btn.disabled = false; btn.textContent = '✗ Reject';
           showToast('Could not reject. Try again.');
@@ -421,6 +485,17 @@
     if (myClan) {
       const initial   = myClan.clan_name.charAt(0).toUpperCase();
       const isLeader  = u && myClan.leader_id === String(u.id);
+      const tgLink    = myClan.telegram_group_link || '';
+      const zarHr     = myClan.total_zar_per_hour  || 0;
+
+      const openLink = (url) => {
+        if (window.Telegram && window.Telegram.WebApp && url.startsWith('https://t.me/')) {
+          window.Telegram.WebApp.openTelegramLink(url);
+        } else {
+          window.open(url, '_blank');
+        }
+      };
+
       clanEl.innerHTML = `
         <div class="section-head">
           <h3>Your Clan</h3>
@@ -438,9 +513,31 @@
           <div class="clan-founded-stats">
             <span>👥 ${myClan.member_count} warriors</span>
             <span>◆ ${fmtN(myClan.total_real_earned)} REAL earned</span>
+            ${zarHr > 0 ? `<span class="clan-power-stat">⚡ ${fmtZar(zarHr)} ZAR/hr</span>` : ''}
           </div>
-          ${isLeader ? '<button class="secondary-btn" id="manage-clan-btn" style="margin-top:12px;width:100%;">⚔ Manage Clan</button>' : ''}
+          <div class="clan-action-row">
+            <button class="secondary-btn clan-chat-btn${tgLink ? '' : ' hidden'}" id="clan-join-chat-btn"
+              data-link="${tgLink.replace(/"/g,'&quot;')}"
+              style="${tgLink ? '' : 'display:none;'}">💬 Join Clan Chat</button>
+            <button class="secondary-btn clan-share-btn" id="clan-share-btn"
+              data-name="${myClan.clan_name.replace(/"/g,'&quot;')}">📢 Share Clan</button>
+          </div>
+          ${isLeader ? '<button class="secondary-btn" id="manage-clan-btn" style="margin-top:10px;width:100%;">⚔ Manage Clan</button>' : ''}
         </article>`;
+
+      /* Wire Join Chat */
+      document.getElementById('clan-join-chat-btn')?.addEventListener('click', (e) => {
+        const link = e.currentTarget.dataset.link;
+        if (link) openLink(link);
+      });
+
+      /* Wire Share */
+      document.getElementById('clan-share-btn')?.addEventListener('click', (e) => {
+        const name     = e.currentTarget.dataset.name;
+        const text     = `Bli med i min klan ${name} i Shahnameh! Vi tjener REAL sammen. ⚔️`;
+        const shareUrl = `https://t.me/share/url?url=https%3A%2F%2Ft.me%2Frealshahnamehbot&text=${encodeURIComponent(text)}`;
+        openLink(shareUrl);
+      });
 
       /* Leader Dashboard — lazy-loaded on button click */
       if (isLeader) {
@@ -449,7 +546,7 @@
         clanEl.appendChild(manageClanEl);
 
         document.getElementById('manage-clan-btn')?.addEventListener('click', () => {
-          loadLeaderDashboard(String(u.id), myClan.clan_id, manageClanEl);
+          loadLeaderDashboard(String(u.id), myClan.clan_id, manageClanEl, tgLink);
         });
       }
 
