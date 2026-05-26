@@ -457,6 +457,20 @@
       forge_skins_sub: "Аз бобҳо боз мешаванд · Вафодор ба даргоҳи ту",
       forge_per_hr: "Зар / соат",
 
+      /* ── Hero economy ── */
+      hero_buy_btn: "Харид · {cost} REAL",
+      hero_upgrade_btn: "Баробарсозӣ сатҳи {level} · {cost} REAL",
+      hero_locked_chapter: "Боби {n}-ро хонед то боз шавад",
+      hero_owned_lbl: "Дар ихтиёр доред",
+      hero_buy_success: "{name} ба маҷмӯаи шумо илова шуд!",
+      hero_upgrade_success: "{name} ба сатҳи {level} баробарсозӣ шуд!",
+      hero_insufficient_real: "REAL кофӣ надоред",
+      hero_zar_rate: "+{zar} Зар/соат",
+      hero_level_badge: "Сатҳи {level}",
+      hero_available_lbl: "Барои харид",
+      hero_economy_section: "Иқтисоди Қаҳрамон",
+      hero_already_owned: "Қаблан харидорӣ шудааст",
+
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "Бозӣ",
       play_title: "REAL Шоҳнома",

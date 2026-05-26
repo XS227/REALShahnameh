@@ -458,6 +458,20 @@
       forge_skins_sub: "از فصل‌ها باز می‌شوند · وفادار به درگاهِ تو",
       forge_per_hr: "زر / ساعت",
 
+      /* ── Hero economy ── */
+      hero_buy_btn: "خرید · {cost} REAL",
+      hero_upgrade_btn: "ارتقاء سطح {level} · {cost} REAL",
+      hero_locked_chapter: "فصل {n} را بخوانید تا باز شود",
+      hero_owned_lbl: "در اختیار دارید",
+      hero_buy_success: "{name} به مجموعه شما اضافه شد!",
+      hero_upgrade_success: "{name} به سطح {level} ارتقاء یافت!",
+      hero_insufficient_real: "REAL کافی ندارید",
+      hero_zar_rate: "+{zar} زر/ساعت",
+      hero_level_badge: "سطح {level}",
+      hero_available_lbl: "قابل خرید",
+      hero_economy_section: "اقتصاد قهرمان",
+      hero_already_owned: "قبلاً خریداری شده",
+
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "بازی",
       play_title: "ریل شاهنامه",

@@ -661,3 +661,120 @@
   -webkit-tap-highlight-color: transparent;
 }
 .img-fullscreen-close:active { background: rgba(255,255,255,.2); }
+
+/* =========================================================
+   HERO ECONOMY — card state badges
+   ========================================================= */
+
+.hero-state-badge {
+  position: absolute; top: 6px; right: 6px;
+  font-size: 9px; font-weight: 800; letter-spacing: .5px;
+  padding: 2px 6px; border-radius: 20px;
+  pointer-events: none; z-index: 2;
+}
+.locked-badge {
+  background: rgba(20,20,30,.85);
+  color: rgba(255,255,255,.45);
+}
+.available-badge {
+  background: rgba(12,200,120,.18);
+  border: 1px solid rgba(12,200,120,.5);
+  color: rgb(12,200,120);
+}
+.owned-badge {
+  background: rgba(244,197,107,.18);
+  border: 1px solid rgba(244,197,107,.55);
+  color: var(--gold);
+}
+
+/* Dim locked cards slightly */
+.coll-card.hero-state-locked .coll-portrait img,
+.coll-card.hero-state-locked .coll-emoji {
+  opacity: .45;
+  filter: grayscale(60%);
+}
+
+/* Owned cards — subtle gold border accent */
+.coll-card.hero-state-owned {
+  border-color: rgba(244,197,107,.35);
+}
+
+/* =========================================================
+   HERO ECONOMY PANEL — inside certificate modal
+   ========================================================= */
+
+.cert-econ-slot { margin: 14px 0 8px; }
+
+.hero-econ-panel {
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero-econ-panel.locked {
+  background: rgba(14,18,40,.6);
+  border: 1px solid rgba(255,255,255,.07);
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.hero-econ-panel.available {
+  background: rgba(12,200,120,.07);
+  border: 1px solid rgba(12,200,120,.25);
+}
+.hero-econ-panel.owned {
+  background: rgba(244,197,107,.07);
+  border: 1px solid rgba(244,197,107,.28);
+}
+
+.hecon-lock { font-size: 18px; }
+.hecon-msg  { font-size: 12px; color: var(--muted); }
+
+.hecon-price-row,
+.hecon-owned-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hecon-cost {
+  font-size: 14px; font-weight: 800;
+  color: var(--text);
+}
+.hecon-zar {
+  font-size: 11px; font-weight: 600;
+  color: var(--gold);
+}
+.hecon-level {
+  font-size: 16px; font-weight: 900;
+  color: var(--gold);
+}
+
+.hecon-buy-btn,
+.hecon-upgrade-btn {
+  width: 100%;
+  padding: 11px 0;
+  border-radius: 9px;
+  font-size: 13px; font-weight: 800;
+  border: none; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity .15s, transform .12s;
+}
+.hecon-buy-btn {
+  background: linear-gradient(135deg, rgba(12,200,120,.85), rgba(10,170,100,.9));
+  color: #fff;
+}
+.hecon-upgrade-btn {
+  background: linear-gradient(135deg, rgba(244,197,107,.8), rgba(220,160,60,.85));
+  color: #1a1400;
+}
+.hecon-buy-btn:active,
+.hecon-upgrade-btn:active {
+  opacity: .82;
+  transform: scale(.97);
+}
+.hecon-buy-btn:disabled,
+.hecon-upgrade-btn:disabled {
+  opacity: .45;
+  cursor: default;
+}

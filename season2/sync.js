@@ -10,6 +10,7 @@
     userSync:     '/api/season2/user/sync',
     updateQuests: '/api/season2/user/update-quests',
     syncBalance:  '/api/season2/user/sync-balance',
+    userHeroes:   '/api/season2/user/heroes',
   };
 
   const tgUser = () => {
@@ -120,7 +121,25 @@
   });
   window.addEventListener('pagehide', syncBalance);
 
-  window.RealSync = { init, syncQuest, syncBalance, ready: () => _ready };
+  /* ── Load owned heroes and cache in localStorage ─────────────────── */
+  const HEROES_LS = 'real_owned_heroes_v1';
+
+  const syncHeroes = async () => {
+    const u = tgUser();
+    if (!u || !u.id) return {};
+    const data = await post(API.userHeroes, { telegram_id: String(u.id) });
+    if (!data || data.status !== 1) return {};
+    const map = {};
+    (data.heroes || []).forEach(h => { map[h.hero_id] = { level: h.level, zar_per_hour: h.zar_per_hour }; });
+    try { localStorage.setItem(HEROES_LS, JSON.stringify(map)); } catch (_) {}
+    return map;
+  };
+
+  const getOwnedHeroes = () => {
+    try { return JSON.parse(localStorage.getItem(HEROES_LS) || '{}'); } catch { return {}; }
+  };
+
+  window.RealSync = { init, syncQuest, syncBalance, syncHeroes, getOwnedHeroes, ready: () => _ready };
 
   /* Auto-start: call init() once DOM has loaded and app.js has run */
   if (document.readyState === 'loading') {

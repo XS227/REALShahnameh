@@ -377,6 +377,7 @@
     const fillEl   = document.querySelector('[data-energy-fill]');
     const streakBadge = document.querySelector('[data-streak-badge]');
     const streakVal   = document.querySelector('[data-streak-val]');
+    const zarHrEl  = document.querySelector('[data-zar-hr]');
 
     if (balEl)      balEl.textContent    = (p.balance || 0).toLocaleString();
     if (energyEl)   energyEl.textContent = p.energy != null ? p.energy : 1000;
@@ -384,6 +385,14 @@
     const streak = p.dailyStreak || 1;
     if (streakBadge) streakBadge.textContent = '🔥 ' + streak;
     if (streakVal)   streakVal.textContent   = '🔥 ' + streak + (streak === 1 ? ' day' : ' days');
+
+    /* Zar/hr from hero ownership (written by heroes.js) */
+    if (zarHrEl) {
+      try {
+        const zarHr = parseInt(localStorage.getItem('real_total_zar_hr') || '0', 10);
+        zarHrEl.textContent = '+' + zarHr;
+      } catch { zarHrEl.textContent = '+0'; }
+    }
   };
 
   /* ---- Init ---- */

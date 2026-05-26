@@ -10,6 +10,54 @@
     ? window.RealI18N.locField(obj, field) : (obj && obj[field] != null ? obj[field] : "");
 
   /* =========================================================
+     HERO ECONOMY — prices, Zar/hr, chapter unlock map
+     ========================================================= */
+  const RARITY_COST = { common: 500, rare: 2000, epic: 5000, legend: 10000, mythic: 25000 };
+  const RARITY_ZAR  = { common: 2,   rare: 8,    epic: 20,   legend: 50,    mythic: 120 };
+
+  /* Map chapter number → its localStorage slug (from chapter.js `real_chapter_done_${SLUG}`) */
+  const CH_SLUG = { 1: "keyumars", 2: "hushang", 3: "tahmuras", 4: "jamshid", 5: "zahhak" };
+
+  const isChapterDone = (n) => {
+    try {
+      return localStorage.getItem(`real_chapter_done_${CH_SLUG[n] || n}`) === "1";
+    } catch { return false; }
+  };
+
+  /* Owned heroes map: { hero_id: { level, zar_per_hour } } */
+  let ownedHeroes = {};
+  const loadOwned = () => {
+    if (window.RealSync && window.RealSync.getOwnedHeroes) {
+      ownedHeroes = window.RealSync.getOwnedHeroes();
+    }
+  };
+
+  const zarHrForHero = (rarity, level) =>
+    (RARITY_ZAR[rarity] || 0) * (level || 1);
+
+  const totalZarHr = () =>
+    Object.values(ownedHeroes).reduce((sum, h) => sum + (h.zar_per_hour || 0), 0);
+
+  const saveZarHr = () => {
+    try { localStorage.setItem("real_total_zar_hr", String(totalZarHr())); } catch {}
+  };
+
+  const tgUserId = () => {
+    try {
+      const u = window.Telegram?.WebApp?.initDataUnsafe?.user;
+      return u ? String(u.id) : null;
+    } catch { return null; }
+  };
+
+  const apiPost = (url, body) =>
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+      keepalive: true,
+    }).then(r => r.ok ? r.json() : null).catch(() => null);
+
+  /* =========================================================
      COLLECTION DATA — Chapter 1 (10 items)
      ========================================================= */
   const COLLECTION = [
@@ -525,6 +573,13 @@
   /* =========================================================
      BUILD CARDS
      ========================================================= */
+  const heroEconomyState = (item) => {
+    const owned = ownedHeroes[item.id];
+    if (owned) return "owned";
+    if (isChapterDone(item.chapter)) return "available";
+    return "locked";
+  };
+
   const buildCards = (filter) => {
     const grid = document.getElementById("coll-grid");
     if (!grid) return;
@@ -541,9 +596,12 @@
       grid.appendChild(empty);
     } else {
       items.forEach((item) => {
-        const card = document.createElement("button");
-        card.className = `coll-card r-${item.rarity}`;
-        card.setAttribute("aria-label", `View ${item.name} certificate`);
+        const state = heroEconomyState(item);
+        const owned = ownedHeroes[item.id];
+        const card  = document.createElement("button");
+        card.className = `coll-card r-${item.rarity} hero-state-${state}`;
+        card.setAttribute("data-hero-id", item.id);
+        card.setAttribute("aria-label", `View ${item.name}`);
 
         let imgHTML = item.img
           ? `<img src="${item.img}" alt="${item.name}" loading="lazy"
@@ -551,15 +609,30 @@
              <span class="coll-emoji" style="display:none;">${item.emoji || "?"}</span>`
           : `<span class="coll-emoji">${item.emoji || "?"}</span>`;
 
+        /* State badge overlay */
+        let stateBadge = "";
+        if (state === "locked") {
+          stateBadge = `<span class="hero-state-badge locked-badge">🔒</span>`;
+        } else if (state === "owned") {
+          stateBadge = `<span class="hero-state-badge owned-badge">Lv.${owned.level}</span>`;
+        } else {
+          stateBadge = `<span class="hero-state-badge available-badge">${(RARITY_COST[item.rarity] || 0).toLocaleString()}</span>`;
+        }
+
+        const subLine = state === "owned"
+          ? `+${owned.zar_per_hour || 0} Zar/hr`
+          : rarityLabel(item.rarity);
+
         card.innerHTML = `
           <div class="coll-portrait">
             ${imgHTML}
             <span class="coll-type-chip">${typeLabel(item.type)}</span>
             <span class="coll-chapter-dot">Ch${item.chapter}</span>
+            ${stateBadge}
           </div>
           <div class="coll-info">
             <div class="coll-name">${item.name}</div>
-            <div class="coll-rarity">${rarityLabel(item.rarity)}</div>
+            <div class="coll-rarity">${subLine}</div>
           </div>
         `;
 
@@ -642,6 +715,171 @@
       }
     }
     _doOpenCertificate(item, backdrop, modal);
+  };
+
+  /* ── Economy panel HTML builder ── */
+  const buildEconomyPanel = (item) => {
+    const state = heroEconomyState(item);
+    const owned = ownedHeroes[item.id];
+    const cost  = RARITY_COST[item.rarity] || 0;
+    const baseZar = RARITY_ZAR[item.rarity] || 0;
+
+    if (state === "locked") {
+      return `<div class="hero-econ-panel locked">
+        <span class="hecon-lock">🔒</span>
+        <span class="hecon-msg">${t("hero_locked_chapter", { n: item.chapter })}</span>
+      </div>`;
+    }
+
+    if (state === "owned") {
+      const lvl = owned.level || 1;
+      const upgCost = cost * lvl;
+      const nextZar = baseZar * (lvl + 1);
+      return `<div class="hero-econ-panel owned">
+        <div class="hecon-owned-row">
+          <span class="hecon-level">Lv.${lvl}</span>
+          <span class="hecon-zar">+${owned.zar_per_hour || 0} Zar/hr</span>
+        </div>
+        <button class="hecon-upgrade-btn" data-action="upgrade"
+          data-hero-id="${item.id}" data-cost="${upgCost}" data-next-zar="${nextZar}">
+          ${t("hero_upgrade_btn", { level: lvl + 1, cost: upgCost.toLocaleString() })}
+        </button>
+      </div>`;
+    }
+
+    /* available to buy */
+    const buyZar = baseZar;
+    return `<div class="hero-econ-panel available">
+      <div class="hecon-price-row">
+        <span class="hecon-cost">◆ ${cost.toLocaleString()} REAL</span>
+        <span class="hecon-zar">+${buyZar} Zar/hr</span>
+      </div>
+      <button class="hecon-buy-btn" data-action="buy"
+        data-hero-id="${item.id}" data-cost="${cost}" data-zar="${buyZar}">
+        ${t("hero_buy_btn", { cost: cost.toLocaleString() })}
+      </button>
+    </div>`;
+  };
+
+  /* ── Buy / Upgrade action handler (called from modal) ── */
+  const handleEconomyAction = async (btn, item) => {
+    const action    = btn.getAttribute("data-action");
+    const heroId    = item.id;
+    const cost      = parseInt(btn.getAttribute("data-cost"), 10) || 0;
+    const tid       = tgUserId();
+
+    if (!tid) { showToast("Telegram session required"); return; }
+
+    const balance = window.RealPlayer ? (window.RealPlayer.getResource("real") || 0) : 0;
+    if (balance < cost) { showToast(t("hero_insufficient_real")); return; }
+
+    btn.disabled = true;
+    btn.textContent = "…";
+
+    if (action === "buy") {
+      const zarHr  = parseInt(btn.getAttribute("data-zar"), 10) || 0;
+      const result = await apiPost("/api/season2/user/buy-hero", {
+        telegram_id: tid, hero_id: heroId, cost, zar_per_hour: zarHr
+      });
+
+      if (!result || result.status !== 1) {
+        showToast(result?.error === "insufficient_balance" ? t("hero_insufficient_real") : (result?.error || "Error"));
+        btn.disabled = false;
+        btn.textContent = t("hero_buy_btn", { cost: cost.toLocaleString() });
+        return;
+      }
+
+      /* Update local state */
+      ownedHeroes[heroId] = { level: 1, zar_per_hour: zarHr };
+      if (window.RealSync) { try { localStorage.setItem("real_owned_heroes_v1", JSON.stringify(ownedHeroes)); } catch {} }
+      if (window.RealPlayer) window.RealPlayer.set({ balance: result.new_balance });
+      saveZarHr();
+      updateStatsStrip();
+      refreshCardBadge(heroId);
+
+      showToast(t("hero_buy_success", { name: item.name }));
+      if (navigator.vibrate) navigator.vibrate([8, 4, 12]);
+
+      /* Refresh economy panel in modal */
+      const panelHost = document.querySelector(".cert-econ-slot");
+      if (panelHost) panelHost.innerHTML = buildEconomyPanel(item);
+      bindEconomyPanel(panelHost, item);
+
+    } else if (action === "upgrade") {
+      const nextZar = parseInt(btn.getAttribute("data-next-zar"), 10) || 0;
+      const result  = await apiPost("/api/season2/user/upgrade-hero", {
+        telegram_id: tid, hero_id: heroId, cost, new_zar_per_hour: nextZar
+      });
+
+      if (!result || result.status !== 1) {
+        showToast(result?.error === "insufficient_balance" ? t("hero_insufficient_real") : (result?.error || "Error"));
+        btn.disabled = false;
+        const cur = ownedHeroes[heroId];
+        btn.textContent = t("hero_upgrade_btn", { level: (cur?.level || 1) + 1, cost: cost.toLocaleString() });
+        return;
+      }
+
+      ownedHeroes[heroId] = { level: result.new_level, zar_per_hour: result.zar_per_hour };
+      if (window.RealSync) { try { localStorage.setItem("real_owned_heroes_v1", JSON.stringify(ownedHeroes)); } catch {} }
+      if (window.RealPlayer) window.RealPlayer.set({ balance: result.new_balance });
+      saveZarHr();
+      updateStatsStrip();
+      refreshCardBadge(heroId);
+
+      showToast(t("hero_upgrade_success", { name: item.name, level: result.new_level }));
+      if (navigator.vibrate) navigator.vibrate([8, 4, 12]);
+
+      const panelHost = document.querySelector(".cert-econ-slot");
+      if (panelHost) panelHost.innerHTML = buildEconomyPanel(item);
+      bindEconomyPanel(panelHost, item);
+    }
+  };
+
+  const bindEconomyPanel = (host, item) => {
+    if (!host) return;
+    host.querySelectorAll("[data-action]").forEach(btn => {
+      btn.addEventListener("click", () => handleEconomyAction(btn, item));
+    });
+  };
+
+  /* ── Refresh a single card badge without full rebuild ── */
+  const refreshCardBadge = (heroId) => {
+    const card  = document.querySelector(`[data-hero-id="${heroId}"]`);
+    const item  = COLLECTION.find(i => i.id === heroId);
+    if (!card || !item) return;
+
+    const state = heroEconomyState(item);
+    const owned = ownedHeroes[heroId];
+    card.className = `coll-card r-${item.rarity} hero-state-${state}`;
+
+    const badge = card.querySelector(".hero-state-badge");
+    if (badge) {
+      badge.className = `hero-state-badge ${state}-badge`;
+      if (state === "owned") badge.textContent = `Lv.${owned.level}`;
+    }
+    const rarityEl = card.querySelector(".coll-rarity");
+    if (rarityEl && state === "owned") {
+      rarityEl.textContent = `+${owned.zar_per_hour || 0} Zar/hr`;
+    }
+  };
+
+  /* ── Update stats strip from real ownership data ── */
+  const updateStatsStrip = () => {
+    const ownedCount = Object.keys(ownedHeroes).length;
+    const total      = 69;
+
+    /* Stats strip */
+    const discVal = document.querySelector(".css-cell:first-child .css-val");
+    const lockVal = document.querySelector(".css-cell:nth-child(2) .css-val");
+    if (discVal) discVal.textContent = ownedCount;
+    if (lockVal) lockVal.textContent = total - ownedCount;
+
+    /* Progress bar */
+    const countEl = document.querySelector("#coll-progress .coll-ph-left");
+    const fillEl  = document.querySelector("#coll-progress .coll-progress-fill");
+    const pct     = Math.round((ownedCount / total) * 100);
+    if (countEl) countEl.innerHTML = `<strong>${ownedCount}</strong> <span>of ${total} discovered</span>`;
+    if (fillEl)  fillEl.style.width = `${pct}%`;
   };
 
   const _doOpenCertificate = (item, backdrop, modal) => {
@@ -731,6 +969,8 @@
 
         <p class="cert-lore-excerpt">${locF(item, "lore")}</p>
 
+        <div class="cert-econ-slot">${buildEconomyPanel(item)}</div>
+
         <div class="cert-accordion">${accordionHTML}</div>
 
         <hr class="cert-divider">
@@ -776,6 +1016,9 @@
 
     backdrop.classList.add("open");
     if (navigator.vibrate) navigator.vibrate([6, 2, 4]);
+
+    /* Bind economy panel buttons */
+    bindEconomyPanel(modal.querySelector(".cert-econ-slot"), item);
 
     /* Bind close */
     document.getElementById("cert-close-btn")
@@ -860,8 +1103,11 @@
   /* =========================================================
      INIT
      ========================================================= */
-  const init = () => {
+  const init = async () => {
+    /* Load cached ownership immediately, then fetch fresh from server */
+    loadOwned();
     buildProgressSection();
+    updateStatsStrip();
     setupTabs();
     buildCards("all");
 
@@ -879,6 +1125,19 @@
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") { closeFullscreen(); closeCertificate(); }
     });
+
+    /* After user sync completes, refresh from server */
+    if (window.RealSync) {
+      window.RealSync.ready().then(async () => {
+        const fresh = await window.RealSync.syncHeroes();
+        ownedHeroes = fresh;
+        saveZarHr();
+        updateStatsStrip();
+        buildCards(
+          document.querySelector("[data-filter].active")?.getAttribute("data-filter") || "all"
+        );
+      });
+    }
   };
 
   if (document.readyState === "loading") {

@@ -453,6 +453,21 @@
       forge_skins_title: "⬡ Skins of the Anvil",
       forge_skins_sub: "Unlock through chapters · Bound to your court",
       forge_per_hr: "Zar / hr",
+
+      /* ── Hero economy ── */
+      hero_buy_btn: "Buy · {cost} REAL",
+      hero_upgrade_btn: "Upgrade Lv.{level} · {cost} REAL",
+      hero_locked_chapter: "Read Chapter {n} to unlock",
+      hero_owned_lbl: "Owned",
+      hero_buy_success: "{name} added to your collection!",
+      hero_upgrade_success: "{name} upgraded to Level {level}!",
+      hero_insufficient_real: "Not enough REAL",
+      hero_zar_rate: "+{zar} Zar/hr",
+      hero_level_badge: "Lv.{level}",
+      hero_available_lbl: "Available",
+      hero_economy_section: "Hero Economy",
+      hero_already_owned: "Already owned",
+
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "Play",
       play_title: "REAL Shahnameh",
