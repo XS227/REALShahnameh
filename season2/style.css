@@ -5222,8 +5222,9 @@ body::after {
   font-size: 11px;
   font-weight: 700;
 }
-.clan-browse-badge.mine   { background: rgba(244,197,107,.15); color: var(--gold); border: 1px solid var(--border-gold); }
-.clan-browse-badge.taken  { background: rgba(255,255,255,.06); color: var(--muted); border: 1px solid var(--border); }
+.clan-browse-badge.mine    { background: rgba(244,197,107,.15); color: var(--gold); border: 1px solid var(--border-gold); }
+.clan-browse-badge.taken   { background: rgba(255,255,255,.06); color: var(--muted); border: 1px solid var(--border); }
+.clan-browse-badge.pending { background: rgba(140,109,255,.14); color: #a989ff; border: 1px solid rgba(140,109,255,.35); }
 
 /* ── Leader Dashboard ────────────────────────────────────────────────── */
 .clan-leader-tag {

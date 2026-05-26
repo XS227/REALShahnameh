@@ -194,42 +194,44 @@
   let _browseClansDone = false;
 
   const loadBrowseClans = async (force) => {
-    const container  = document.getElementById('browse-clans');
-    const headEl     = document.getElementById('browse-clans-head');
+    const container = document.getElementById('browse-clans');
+    const headEl    = document.getElementById('browse-clans-head');
     if (!container) return;
 
     if (!force && _browseClansDone) return;
     _browseClansDone = true;
 
+    if (headEl) headEl.style.display = '';
     container.innerHTML = '<p class="clan-empty" style="padding:12px 0;">Loading clans…</p>';
 
-    const data = await get('/api/season2/clan/browse');
+    const u    = tgUser();
+    const myId = u ? String(u.id) : null;
+    const qs   = new URLSearchParams();
+    if (myId) qs.set('telegram_id', myId);
+
+    const data = await get('/api/season2/clan/browse?' + qs.toString());
 
     if (!data || data.status !== 1 || !(data.clans || []).length) {
       container.innerHTML = '<p class="clan-empty">No clans yet — be the first to found one!</p>';
-      if (headEl) headEl.style.display = '';
       return;
     }
 
-    if (headEl) headEl.style.display = '';
-
-    const u        = tgUser();
-    const myId     = u ? String(u.id) : null;
-    const myClanId = (() => { try { return localStorage.getItem('real_my_clan_id') || ''; } catch { return ''; } })();
-
     const rows = data.clans.map((c, i) => {
-      const isOwn    = myId && c.clan_id === myClanId;
-      const inAClan  = !!(myClanId);
-      const members  = c.member_count || 1;
-      const rankCls  = ['clan-rank-1', 'clan-rank-2', 'clan-rank-3'][i] || '';
+      const members = c.member_count || 1;
+      const rankCls = ['clan-rank-1', 'clan-rank-2', 'clan-rank-3'][i] || '';
+      const status  = c.user_status || 'none';
 
       let actionBtn = '';
-      if (isOwn) {
+      if (status === 'member') {
         actionBtn = `<span class="clan-browse-badge mine">Your Clan</span>`;
-      } else if (inAClan) {
+      } else if (status === 'other_clan') {
         actionBtn = `<span class="clan-browse-badge taken">Joined</span>`;
+      } else if (status === 'pending') {
+        actionBtn = `<span class="clan-browse-badge pending">Pending…</span>`;
       } else {
-        actionBtn = `<button class="secondary-btn clan-apply-btn" data-clan-id="${c.clan_id}" data-clan-name="${c.clan_name.replace(/"/g, '&quot;')}">Apply</button>`;
+        actionBtn = `<button class="secondary-btn clan-apply-btn"
+          data-clan-id="${c.clan_id}"
+          data-clan-name="${c.clan_name.replace(/"/g, '&quot;')}">Apply</button>`;
       }
 
       return `
@@ -262,8 +264,8 @@
         const res = await post('/api/season2/clan/apply', { telegram_id: myId, clan_id: clanId });
 
         if (res && res.status === 1) {
-          btn.textContent = 'Applied ✓';
-          btn.classList.add('clan-browse-badge');
+          btn.textContent = 'Pending…';
+          btn.className = 'clan-browse-badge pending';
           showToast('Application sent to ' + clanName + '!');
         } else {
           const msg = {
@@ -284,10 +286,10 @@
 
   const renderWarriorList = (members, verifiedCount, totalCount, clanEl) => {
     if (members.length === 0) {
-      clanEl.innerHTML += `
+      clanEl.insertAdjacentHTML('beforeend', `
         <article class="card">
           <p class="clan-empty">No warriors yet. Share your invite link to grow your clan.</p>
-        </article>`;
+        </article>`);
       return;
     }
     const rows = members.map(m => {
@@ -303,8 +305,8 @@
             <div class="clan-stats">LVL ${m.level || 1} · ${m.xp || 0} XP</div>
           </div>${tag}</div>`;
     }).join('');
-    clanEl.innerHTML += `
-      <article class="card lb-list clan-list" style="margin-top:0;">${rows}</article>`;
+    clanEl.insertAdjacentHTML('beforeend', `
+      <article class="card lb-list clan-list" style="margin-top:0;">${rows}</article>`);
   };
 
   /* ── LEADER DASHBOARD ────────────────────────────────────────────────── */
@@ -488,9 +490,17 @@
       const tgLink    = myClan.telegram_group_link || '';
       const zarHr     = myClan.total_zar_per_hour  || 0;
 
-      const openLink = (url) => {
-        if (window.Telegram && window.Telegram.WebApp && url.startsWith('https://t.me/')) {
+      const openTgLink = (url) => {
+        if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.openTelegramLink) {
           window.Telegram.WebApp.openTelegramLink(url);
+        } else {
+          window.open(url, '_blank');
+        }
+      };
+
+      const openLink = (url) => {
+        if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.openLink) {
+          window.Telegram.WebApp.openLink(url);
         } else {
           window.open(url, '_blank');
         }
@@ -525,13 +535,13 @@
           ${isLeader ? '<button class="secondary-btn" id="manage-clan-btn" style="margin-top:10px;width:100%;">⚔ Manage Clan</button>' : ''}
         </article>`;
 
-      /* Wire Join Chat */
+      /* Wire Join Chat — opens t.me group link inside Telegram */
       document.getElementById('clan-join-chat-btn')?.addEventListener('click', (e) => {
         const link = e.currentTarget.dataset.link;
-        if (link) openLink(link);
+        if (link) openTgLink(link);
       });
 
-      /* Wire Share */
+      /* Wire Share — use openLink so Telegram shows the sharing UI */
       document.getElementById('clan-share-btn')?.addEventListener('click', (e) => {
         const name     = e.currentTarget.dataset.name;
         const text     = `Bli med i min klan ${name} i Shahnameh! Vi tjener REAL sammen. ⚔️`;
@@ -550,12 +560,14 @@
         });
       }
 
-      /* Show warriors below the clan card */
+      /* Show warriors below the clan card — use insertAdjacentHTML to preserve
+         the event listeners attached above (Share, Join Chat, Manage Clan).    */
       if (refData && refData.status === 1) {
         const members = refData.members || [];
         const vc      = refData.verified_count || 0;
         const tot     = refData.total_count    || 0;
-        clanEl.innerHTML += `<div class="section-head" style="margin-top:16px;"><h3>Warriors</h3><span class="more">${vc} / ${tot} active</span></div>`;
+        clanEl.insertAdjacentHTML('beforeend',
+          `<div class="section-head" style="margin-top:16px;"><h3>Warriors</h3><span class="more">${vc} / ${tot} active</span></div>`);
         renderWarriorList(members, vc, tot, clanEl);
       }
       return;
@@ -799,7 +811,6 @@
       loadClan(),
       loadBrowseClans(),
       loadActivity(),
-      loadGuilds(),
     ]);
     startTournamentTimer();
   };
