@@ -474,6 +474,14 @@
       hero_prereq_locked: "برای باز کردن قفل، {name} Lv.{level} نیاز است",
       hero_farr_locked: "برای باز کردن قفل، {cost} ✦ فرّ نیاز است",
 
+      /* ── Daily Check-in & Earn tasks ── */
+      earn_checkin_title:   "ورود روزانه",
+      earn_checkin_sub:     "پاداش زنجیره",
+      earn_social_title:    "وظایف اجتماعی",
+      earn_social_sub:      "پاداش یک‌بار",
+      earn_partners_title:  "شرکا",
+      earn_partners_sub:    "جایزه REAL",
+
       /* ── Final Encounter ── */
       fe_kicker:               "رویارویی نهایی · فصل ۱",
       fe_ch1_title:            "شکست اهریمن",

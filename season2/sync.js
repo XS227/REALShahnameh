@@ -99,6 +99,9 @@
       if (su.milestones_claimed) {
         localStorage.setItem('real_milestones_claimed', JSON.stringify(su.milestones_claimed));
       }
+      if (su.last_checkin_date != null) localStorage.setItem('real_last_checkin_date', su.last_checkin_date);
+      if (su.checkin_streak    != null) localStorage.setItem('real_checkin_streak',    String(su.checkin_streak));
+      if (su.completed_tasks)           localStorage.setItem('real_completed_tasks',   JSON.stringify(su.completed_tasks));
     } catch (_) {}
 
     _resolveReady(su);

@@ -470,6 +470,14 @@
       hero_prereq_locked: "Requires {name} Lv.{level} to unlock",
       hero_farr_locked: "Requires {cost} ✦ Farr to unlock",
 
+      /* ── Daily Check-in & Earn tasks ── */
+      earn_checkin_title:   "Daily Check-in",
+      earn_checkin_sub:     "Streak rewards",
+      earn_social_title:    "Social Tasks",
+      earn_social_sub:      "One-time rewards",
+      earn_partners_title:  "Partners",
+      earn_partners_sub:    "+REAL bonus",
+
       /* ── Final Encounter ── */
       fe_kicker:               "Final Encounter · Chapter 1",
       fe_ch1_title:            "The Defeat of Ahriman",

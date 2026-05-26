@@ -1644,4 +1644,9 @@
     haptic("success");
     setTimeout(() => burst.classList.remove("show"), 900);
   };
+
+  /* Allow earn.js / social.js to trigger burst via custom event */
+  window.addEventListener("real:burst", (e) => {
+    fireBurst((e && e.detail && e.detail.label) || "Unlocked");
+  });
 })();

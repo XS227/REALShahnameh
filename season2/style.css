@@ -4539,6 +4539,145 @@ body::after {
   letter-spacing: 0;
 }
 
+/* ── Daily Check-in ─────────────────────────────────────────────────── */
+.checkin-card { padding: 14px; }
+.checkin-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.checkin-streak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.ci-streak-num {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+.ci-streak-lbl {
+  font-size: 10px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+.checkin-btn {
+  flex: 1;
+  font-size: 13px;
+  padding: 10px 12px;
+}
+.checkin-btn.ci-claimed {
+  background: rgba(255,255,255,.06);
+  color: var(--muted);
+  border-color: rgba(255,255,255,.1);
+  box-shadow: none;
+  cursor: default;
+}
+.checkin-days {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.checkin-days::-webkit-scrollbar { display: none; }
+.ci-day {
+  flex: 0 0 calc(14.28% - 6px);
+  min-width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 10px;
+  padding: 7px 4px;
+  transition: border-color .2s, background .2s;
+}
+.ci-day.ci-done {
+  background: rgba(83,215,156,.1);
+  border-color: rgba(83,215,156,.35);
+}
+.ci-day.ci-active {
+  background: rgba(244,197,107,.12);
+  border-color: rgba(244,197,107,.5);
+  box-shadow: 0 0 10px rgba(244,197,107,.15);
+}
+.ci-ico {
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--muted);
+  line-height: 1;
+}
+.ci-day.ci-done  .ci-ico { color: var(--jade, #53d79c); }
+.ci-day.ci-active .ci-ico { color: var(--gold); }
+.ci-lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .3px; }
+.ci-val { font-size: 9px; font-weight: 700; color: var(--text-dim); text-align: center; line-height: 1.2; }
+.ci-day.ci-active .ci-val { color: var(--gold); }
+
+/* ── Social Tasks & Partner rows ─────────────────────────────────────── */
+.task-list, .partner-list { display: flex; flex-direction: column; gap: 8px; }
+.task-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+}
+.task-ico {
+  font-size: 22px;
+  flex-shrink: 0;
+  width: 36px;
+  text-align: center;
+}
+.task-body { flex: 1; min-width: 0; }
+.task-label { font-size: 13px; font-weight: 700; color: var(--text); }
+.task-reward {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.task-action { flex-shrink: 0; }
+.task-btn {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 13px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity .15s;
+}
+.task-btn:active { opacity: .8; }
+.task-go {
+  background: linear-gradient(135deg, var(--violet), #5ea2ff);
+  color: #fff;
+}
+.task-pending {
+  background: rgba(255,255,255,.08);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+.task-check {
+  background: linear-gradient(135deg, var(--jade, #53d79c), #3cb87c);
+  color: #021a0b;
+  font-weight: 800;
+}
+.task-done {
+  background: rgba(83,215,156,.12);
+  color: var(--jade, #53d79c);
+  border: 1px solid rgba(83,215,156,.3);
+  cursor: default;
+}
+.partner-row { align-items: flex-start; }
+.partner-row .task-body { padding-top: 2px; }
+
 /* ── Milestone claim button ─────────────────────────────────────────── */
 .milestone.ms-reachable {
   border-color: rgba(83, 215, 156, .5);

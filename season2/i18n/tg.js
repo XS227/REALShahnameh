@@ -473,6 +473,14 @@
       hero_prereq_locked: "Барои кушодани қулф, {name} Lv.{level} лозим аст",
       hero_farr_locked: "Барои кушодани қулф, {cost} ✦ Фарр лозим аст",
 
+      /* ── Daily Check-in & Earn tasks ── */
+      earn_checkin_title:   "Воридшавии Рӯзона",
+      earn_checkin_sub:     "Мукофоти силсила",
+      earn_social_title:    "Вазифаҳои Иҷтимоӣ",
+      earn_social_sub:      "Мукофоти якдафъа",
+      earn_partners_title:  "Шарикон",
+      earn_partners_sub:    "Бонуси REAL",
+
       /* ── Final Encounter ── */
       fe_kicker:               "Рӯёрӯии Ниҳоӣ · Боби 1",
       fe_ch1_title:            "Мағлубияти Аҳриман",

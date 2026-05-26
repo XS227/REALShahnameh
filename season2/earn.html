@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Earn</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605262200" />
+  <link rel="stylesheet" href="style.css?v=202605262300" />
 </head>
 <body>
   <main class="app">
@@ -18,6 +18,13 @@
       </div>
       <span class="pill" data-i18n="viral">VIRAL</span>
     </section>
+
+    <!-- Daily Check-in -->
+    <div class="section-head">
+      <h3 data-i18n="earn_checkin_title">Daily Check-in</h3>
+      <span class="more" style="cursor:default;" data-i18n="earn_checkin_sub">Streak rewards</span>
+    </div>
+    <div id="earn-checkin"></div>
 
     <!-- Season 1 bonus card -->
     <article class="card s1-bonus-card" data-s1-card>
@@ -142,6 +149,13 @@
 
     </section>
 
+    <!-- Social Tasks -->
+    <div class="section-head">
+      <h3 data-i18n="earn_social_title">Social Tasks</h3>
+      <span class="more" style="cursor:default;" data-i18n="earn_social_sub">One-time rewards</span>
+    </div>
+    <section id="social-tasks" class="task-list"></section>
+
     <!-- Where REAL belongs — the legitimate ecosystem-utility section.
          This is the ONE place on the page where REAL gets a clear spotlight,
          framing it as an unlock layer for special rewards / governance. -->
@@ -187,15 +201,24 @@
       </article>
     </section>
 
-    <!-- Season standing — softened from "Airdrop score" in Phase 3. -->
+    <!-- Season standing — live score -->
     <div class="section-head"><h3 data-i18n="airdrop_score">Season standing</h3></div>
-    <article class="card gold-edge airdrop-card">
-      <div class="airdrop-meter"><span>84%</span></div>
+    <article class="card gold-edge airdrop-card" id="season-standing-card">
+      <div class="airdrop-meter"><span id="season-score-pct">—</span></div>
       <div>
         <div style="font-weight:800; font-size:15px;" data-i18n="airdrop_eligible">Eligibility ascending</div>
-        <div style="font-size:12px; color:var(--muted); margin-top:4px; line-height:1.5;" data-i18n-html="season_pts_rank_html">Season points: <b style="color:var(--gold);">6,920</b> · Rank <b style="color:var(--gold);">#412</b><br>Invite 18 more to lock guaranteed allocation.</div>
+        <div style="font-size:12px; color:var(--muted); margin-top:4px; line-height:1.5;">
+          Season score: <b style="color:var(--gold);" id="season-score-val">…</b>
+        </div>
       </div>
     </article>
+
+    <!-- Partners -->
+    <div class="section-head">
+      <h3 data-i18n="earn_partners_title">Partners</h3>
+      <span class="more" style="cursor:default;" data-i18n="earn_partners_sub">One-time bonus</span>
+    </div>
+    <section id="partners" class="partner-list"></section>
 
     <!-- Team rewards -->
     <div class="section-head"><h3 data-i18n="team_rewards">Team rewards</h3></div>
@@ -203,7 +226,7 @@
       <h4 style="display:flex; align-items:center; gap:8px;"><span class="ico">🛡</span> Lions of Pars</h4>
       <p class="copy" style="margin:6px 0 10px;" data-i18n="guild_lions_copy">Your guild boosts everyone's tap by +6% while you climb. Invite into the same guild for stacked rewards in the seasonal contest.</p>
       <div class="row">
-        <button class="primary-btn btn-block" data-toast-msg="Guild contest live · ends in 3d 12h" data-i18n="view_contest">View Contest</button>
+        <button class="primary-btn btn-block" data-toast-msg="Guild feature coming soon" data-i18n="view_contest">View Contest</button>
       </div>
     </article>
 
@@ -233,14 +256,14 @@
 
   <div class="toast" data-toast></div>
   <div class="unlock-burst" data-burst><span class="ring-burst"></span><span class="label" data-burst-label>Unlocked</span></div>
-  <script src="app.js?v=202605262200"></script>
-  <script src="i18n/en.js?v=202605262200"></script>
-  <script src="i18n/fa.js?v=202605262200"></script>
-  <script src="i18n/tg.js?v=202605262200"></script>
-  <script src="i18n.js?v=202605262200"></script>
-  <script src="resources.js?v=202605262200"></script>
-  <script src="audio.js?v=202605262200"></script>
-  <script src="sync.js?v=202605262200"></script>
-  <script src="earn.js?v=202605262200"></script>
+  <script src="app.js?v=202605262300"></script>
+  <script src="i18n/en.js?v=202605262300"></script>
+  <script src="i18n/fa.js?v=202605262300"></script>
+  <script src="i18n/tg.js?v=202605262300"></script>
+  <script src="i18n.js?v=202605262300"></script>
+  <script src="resources.js?v=202605262300"></script>
+  <script src="audio.js?v=202605262300"></script>
+  <script src="sync.js?v=202605262300"></script>
+  <script src="earn.js?v=202605262300"></script>
 </body>
 </html>
