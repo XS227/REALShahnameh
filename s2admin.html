@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Season 2 Admin</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#0d0d12;color:#e2e2e8;min-height:100vh}
+:root{--accent:#7c6ef7;--accent2:#5e50cc;--card:#16161f;--border:#2a2a38;--ok:#3ecf8e;--warn:#f5a623;--danger:#e74c3c;--muted:#7a7a98}
+
+/* ── Login ── */
+#login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+.login-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:40px 36px;width:100%;max-width:400px}
+.login-card h1{font-size:1.4rem;margin-bottom:6px;color:#fff}
+.login-card p{color:var(--muted);font-size:.85rem;margin-bottom:28px}
+.login-card label{display:block;font-size:.8rem;color:var(--muted);margin-bottom:6px;margin-top:18px}
+.login-card input{width:100%;background:#0d0d12;border:1px solid var(--border);border-radius:8px;padding:10px 14px;color:#fff;font-size:.95rem;outline:none}
+.login-card input:focus{border-color:var(--accent)}
+.btn-primary{display:block;width:100%;margin-top:24px;padding:12px;background:var(--accent);border:none;border-radius:8px;color:#fff;font-size:1rem;font-weight:600;cursor:pointer;transition:background .15s}
+.btn-primary:hover{background:var(--accent2)}
+.btn-primary:disabled{opacity:.5;cursor:not-allowed}
+#login-error{margin-top:12px;color:var(--danger);font-size:.85rem;min-height:18px}
+
+/* ── Shell ── */
+#app{display:none;flex-direction:column;min-height:100vh}
+.topbar{background:var(--card);border-bottom:1px solid var(--border);padding:0 24px;height:52px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:100}
+.topbar-brand{font-weight:700;font-size:1rem;color:#fff;flex:1}
+.topbar-brand span{color:var(--accent)}
+.nav-tabs{display:flex;gap:4px}
+.nav-tab{background:none;border:none;color:var(--muted);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:.88rem;transition:all .15s}
+.nav-tab:hover{background:#1e1e2a;color:#fff}
+.nav-tab.active{background:var(--accent);color:#fff}
+.logout-btn{background:none;border:1px solid var(--border);color:var(--muted);padding:5px 12px;border-radius:6px;cursor:pointer;font-size:.8rem}
+.logout-btn:hover{color:var(--danger);border-color:var(--danger)}
+main{flex:1;padding:24px;max-width:1300px;width:100%;margin:0 auto}
+
+/* ── Cards / Sections ── */
+.section{display:none}
+.section.active{display:block}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-bottom:28px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+.stat-card .label{font-size:.75rem;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em}
+.stat-card .value{font-size:1.6rem;font-weight:700;color:#fff}
+.stat-card .sub{font-size:.75rem;color:var(--muted);margin-top:2px}
+
+/* ── Table ── */
+.table-wrap{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:auto}
+.table-header{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--border)}
+.table-header h3{flex:1;font-size:.95rem;font-weight:600}
+.search-box{background:#0d0d12;border:1px solid var(--border);border-radius:6px;padding:7px 12px;color:#fff;font-size:.85rem;width:220px;outline:none}
+.search-box:focus{border-color:var(--accent)}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th{text-align:left;padding:10px 14px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none}
+th:hover{color:#fff}
+td{padding:9px 14px;border-bottom:1px solid #1a1a24;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#1b1b26}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.72rem;font-weight:600}
+.badge-ok{background:#1a3b2e;color:var(--ok)}
+.badge-warn{background:#3b2e0a;color:var(--warn)}
+.badge-muted{background:#1e1e2a;color:var(--muted)}
+.pager{display:flex;align-items:center;gap:8px;padding:12px 18px;justify-content:flex-end;font-size:.82rem;color:var(--muted)}
+.pager button{background:#1e1e2a;border:1px solid var(--border);color:#fff;padding:4px 12px;border-radius:5px;cursor:pointer;font-size:.8rem}
+.pager button:disabled{opacity:.4;cursor:not-allowed}
+
+/* ── Config / Feature flags ── */
+.config-section{margin-bottom:28px}
+.config-section h4{font-size:.9rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.config-list{display:flex;flex-direction:column;gap:1px;background:var(--border);border-radius:10px;overflow:hidden}
+.config-row{background:var(--card);display:flex;align-items:center;gap:12px;padding:12px 16px}
+.config-row .key{font-size:.78rem;color:var(--muted);width:240px;flex-shrink:0}
+.config-row .clabel{flex:1;font-size:.88rem}
+.config-row .desc{font-size:.75rem;color:var(--muted);flex:2}
+.config-value-input{background:#0d0d12;border:1px solid var(--border);border-radius:5px;padding:5px 10px;color:#fff;font-size:.82rem;width:150px}
+.config-value-input:focus{border-color:var(--accent);outline:none}
+.btn-sm{padding:5px 12px;border-radius:5px;border:none;cursor:pointer;font-size:.78rem;font-weight:600;transition:background .15s}
+.btn-save{background:var(--accent);color:#fff}
+.btn-save:hover{background:var(--accent2)}
+.btn-delete{background:#2a1010;color:var(--danger)}
+.btn-delete:hover{background:var(--danger);color:#fff}
+.btn-seed{background:#1a3b2e;color:var(--ok);margin-left:auto}
+.btn-seed:hover{background:var(--ok);color:#000}
+
+/* Toggle switch */
+.toggle-wrap{display:flex;align-items:center;gap:8px}
+.toggle{position:relative;width:42px;height:24px;cursor:pointer}
+.toggle input{opacity:0;width:0;height:0;position:absolute}
+.slider{position:absolute;inset:0;background:#2a2a38;border-radius:24px;transition:.2s}
+.slider::before{content:'';position:absolute;width:16px;height:16px;border-radius:50%;background:#fff;left:4px;top:4px;transition:.2s}
+.toggle input:checked + .slider{background:var(--ok)}
+.toggle input:checked + .slider::before{transform:translateX(18px)}
+.toggle-label{font-size:.82rem;color:var(--muted)}
+
+/* ── Add config form ── */
+.add-config-form{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.add-config-form label{font-size:.75rem;color:var(--muted);display:block;margin-bottom:4px}
+.add-config-form input,.add-config-form select{background:#0d0d12;border:1px solid var(--border);border-radius:5px;padding:7px 10px;color:#fff;font-size:.82rem;outline:none}
+.add-config-form input:focus,.add-config-form select:focus{border-color:var(--accent)}
+.add-config-form select option{background:#0d0d12}
+.field{display:flex;flex-direction:column}
+
+/* ── Loading / Error states ── */
+.loading{text-align:center;padding:40px;color:var(--muted);font-size:.9rem}
+.error-msg{background:#2a1010;border:1px solid var(--danger);color:var(--danger);border-radius:8px;padding:10px 14px;font-size:.85rem;margin-bottom:16px}
+.toast{position:fixed;bottom:24px;right:24px;background:#1e1e2a;border:1px solid var(--border);color:#fff;border-radius:8px;padding:10px 18px;font-size:.85rem;z-index:999;opacity:0;transform:translateY(8px);transition:all .25s;pointer-events:none}
+.toast.show{opacity:1;transform:translateY(0)}
+.toast.ok{border-color:var(--ok);color:var(--ok)}
+.toast.err{border-color:var(--danger);color:var(--danger)}
+
+@media(max-width:700px){
+  .nav-tabs{display:none}
+  .config-row .desc{display:none}
+  .config-row .key{width:140px}
+  table{font-size:.75rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ── Login ──────────────────────────────────────────────────── -->
+<div id="login-screen">
+  <div class="login-card">
+    <h1>Season 2 Admin</h1>
+    <p>Enter your admin credentials to continue.</p>
+    <label>Email</label>
+    <input id="login-email" type="email" placeholder="admin@example.com" autocomplete="username">
+    <label>Password</label>
+    <input id="login-password" type="password" placeholder="••••••••" autocomplete="current-password">
+    <label>Pattern</label>
+    <input id="login-pattern" type="password" placeholder="Security pattern">
+    <button class="btn-primary" id="login-btn" onclick="doLogin()">Sign In</button>
+    <div id="login-error"></div>
+  </div>
+</div>
+
+<!-- ── App shell ───────────────────────────────────────────────── -->
+<div id="app">
+  <div class="topbar">
+    <div class="topbar-brand"><span>◆</span> Season 2 Admin</div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="showTab('dashboard')">Dashboard</button>
+      <button class="nav-tab" onclick="showTab('players')">Players</button>
+      <button class="nav-tab" onclick="showTab('clans')">Clans</button>
+      <button class="nav-tab" onclick="showTab('config')">Config</button>
+      <button class="nav-tab" onclick="showTab('flags')">Feature Flags</button>
+    </div>
+    <button class="logout-btn" onclick="doLogout()">Logout</button>
+  </div>
+
+  <main>
+
+    <!-- Dashboard -->
+    <section id="tab-dashboard" class="section active">
+      <div id="dash-loading" class="loading">Loading…</div>
+      <div id="dash-content" style="display:none">
+        <div class="stat-grid" id="stat-grid"></div>
+      </div>
+    </section>
+
+    <!-- Players -->
+    <section id="tab-players" class="section">
+      <div class="table-wrap">
+        <div class="table-header">
+          <h3>Players</h3>
+          <input class="search-box" id="player-search" placeholder="Search by name…" oninput="debounceSearch()">
+        </div>
+        <div id="players-loading" class="loading">Loading…</div>
+        <div id="players-content" style="display:none">
+          <table>
+            <thead>
+              <tr>
+                <th onclick="sortPlayers('first_name')">Name</th>
+                <th onclick="sortPlayers('level')">Lvl</th>
+                <th onclick="sortPlayers('xp')">XP</th>
+                <th onclick="sortPlayers('real_balance')">REAL</th>
+                <th onclick="sortPlayers('zar')">ZAR</th>
+                <th onclick="sortPlayers('gems')">Gems</th>
+                <th onclick="sortPlayers('daily_streak')">Streak</th>
+                <th>Quests</th>
+                <th>Clan</th>
+                <th onclick="sortPlayers('updated_at')">Last seen</th>
+              </tr>
+            </thead>
+            <tbody id="players-tbody"></tbody>
+          </table>
+          <div class="pager">
+            <span id="pager-info"></span>
+            <button id="pager-prev" onclick="changePage(-1)" disabled>‹ Prev</button>
+            <button id="pager-next" onclick="changePage(1)">Next ›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clans -->
+    <section id="tab-clans" class="section">
+      <div class="table-wrap">
+        <div class="table-header"><h3>Clans</h3></div>
+        <div id="clans-loading" class="loading">Loading…</div>
+        <div id="clans-content" style="display:none">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Motto</th>
+                <th>Leader ID</th>
+                <th>Members</th>
+                <th>Total REAL</th>
+                <th>Chat</th>
+                <th>Created</th>
+              </tr>
+            </thead>
+            <tbody id="clans-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Config -->
+    <section id="tab-config" class="section">
+      <div style="display:flex;align-items:center;margin-bottom:16px;gap:12px">
+        <h2 style="font-size:1rem;font-weight:600">System Configuration</h2>
+        <button class="btn-sm btn-seed" onclick="seedConfig()">Seed Defaults</button>
+      </div>
+
+      <div class="add-config-form">
+        <div class="field"><label>Key</label><input id="cf-key" placeholder="my_key" style="width:180px"></div>
+        <div class="field"><label>Value</label><input id="cf-value" placeholder="value" style="width:180px"></div>
+        <div class="field"><label>Type</label>
+          <select id="cf-type">
+            <option>string</option><option>number</option><option>boolean</option><option>json</option>
+          </select>
+        </div>
+        <div class="field"><label>Group</label><input id="cf-group" placeholder="general" style="width:120px"></div>
+        <div class="field"><label>Label</label><input id="cf-label" placeholder="Display label" style="width:180px"></div>
+        <div class="field"><label>&nbsp;</label><button class="btn-sm btn-save" onclick="addConfig()">Add / Update</button></div>
+      </div>
+
+      <div id="config-loading" class="loading">Loading…</div>
+      <div id="config-groups"></div>
+    </section>
+
+    <!-- Feature Flags -->
+    <section id="tab-flags" class="section">
+      <h2 style="font-size:1rem;font-weight:600;margin-bottom:16px">Feature Flags</h2>
+      <div id="flags-loading" class="loading">Loading…</div>
+      <div id="flags-content" style="display:none">
+        <div class="config-list" id="flags-list"></div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ── Config ── */
+const API_BASE = '/api/season2/admin';
+const LEGACY_LOGIN_URL = '/admin/chklogin';
+
+let _token = localStorage.getItem('s2admin_token') || '';
+let _playersPage = 1, _playersSort = 'real_balance', _playersSearch = '', _playersTotalPages = 1;
+let _searchTimer = null;
+
+/* ── Helpers ── */
+const $  = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function toast(msg, type = 'ok') {
+  const el = $('toast');
+  el.textContent = msg;
+  el.className = 'toast show ' + type;
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+async function api(path, opts = {}) {
+  const res = await fetch(API_BASE + path, {
+    headers: { 'Authorization': 'Bearer ' + _token, 'Content-Type': 'application/json', ...(opts.headers || {}) },
+    ...opts,
+  });
+  if (res.status === 401) { doLogout(); throw new Error('unauthorized'); }
+  return res.json();
+}
+
+/* ── Auth ── */
+async function doLogin() {
+  const email    = $('login-email').value.trim();
+  const password = $('login-password').value;
+  const pattern  = $('login-pattern').value;
+  $('login-error').textContent = '';
+  const btn = $('login-btn');
+  btn.disabled = true; btn.textContent = 'Signing in…';
+  try {
+    const r = await fetch(LEGACY_LOGIN_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password, pattern }),
+    });
+    const d = await r.json();
+    if (d.status === 1 && d.token) {
+      _token = d.token;
+      localStorage.setItem('s2admin_token', _token);
+      showApp();
+    } else {
+      $('login-error').textContent = d.error || d.message || 'Login failed';
+    }
+  } catch (e) {
+    $('login-error').textContent = 'Network error';
+  }
+  btn.disabled = false; btn.textContent = 'Sign In';
+}
+
+function doLogout() {
+  _token = '';
+  localStorage.removeItem('s2admin_token');
+  $('app').style.display = 'none';
+  $('login-screen').style.display = 'flex';
+}
+
+/* Allow Enter key on login inputs */
+['login-email','login-password','login-pattern'].forEach(id => {
+  $(id)?.addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
+});
+
+/* ── Tab routing ── */
+function showTab(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  $('tab-' + name)?.classList.add('active');
+  document.querySelectorAll('.nav-tab').forEach(t => {
+    if (t.textContent.toLowerCase().includes(name) || (name==='flags' && t.textContent.includes('Flag'))) t.classList.add('active');
+  });
+  if (name === 'dashboard') loadDashboard();
+  if (name === 'players')   loadPlayers();
+  if (name === 'clans')     loadClans();
+  if (name === 'config')    loadConfig();
+  if (name === 'flags')     loadFlags();
+}
+
+function showApp() {
+  $('login-screen').style.display = 'none';
+  $('app').style.display = 'flex';
+  loadDashboard();
+}
+
+/* ── Dashboard ── */
+async function loadDashboard() {
+  $('dash-loading').style.display = 'block';
+  $('dash-content').style.display = 'none';
+  try {
+    const d = await api('/dashboard');
+    if (!d.status) throw new Error(d.error);
+    const s = d.stats;
+    const grid = $('stat-grid');
+    grid.innerHTML = [
+      ['Total Players',  s.total_players,      null],
+      ['Active Today',   s.active_today,        null],
+      ['Total Clans',    s.total_clans,         null],
+      ['Heroes Owned',   s.total_heroes_owned,  null],
+      ['Total REAL',     s.total_real_fmt,      '(all players)'],
+      ['Total ZAR/hr',   s.total_zar_fmt,       '(all heroes)'],
+      ['Total XP',       s.total_xp_fmt,        '(all players)'],
+    ].map(([label, value, sub]) => `
+      <div class="stat-card">
+        <div class="label">${label}</div>
+        <div class="value">${esc(String(value))}</div>
+        ${sub ? `<div class="sub">${sub}</div>` : ''}
+      </div>`).join('');
+    $('dash-loading').style.display = 'none';
+    $('dash-content').style.display = 'block';
+  } catch (e) {
+    $('dash-loading').textContent = 'Error: ' + e.message;
+  }
+}
+
+/* ── Players ── */
+function debounceSearch() {
+  clearTimeout(_searchTimer);
+  _searchTimer = setTimeout(() => { _playersPage = 1; loadPlayers(); }, 400);
+}
+
+function sortPlayers(field) {
+  _playersSort = field; _playersPage = 1; loadPlayers();
+}
+function changePage(delta) {
+  _playersPage = Math.max(1, Math.min(_playersTotalPages, _playersPage + delta));
+  loadPlayers();
+}
+
+async function loadPlayers() {
+  _playersSearch = $('player-search')?.value || '';
+  $('players-loading').style.display = 'block';
+  $('players-content').style.display = 'none';
+  try {
+    const params = new URLSearchParams({ page: _playersPage, sort: _playersSort, limit: 50 });
+    if (_playersSearch) params.set('q', _playersSearch);
+    const d = await api('/players?' + params);
+    if (!d.status) throw new Error(d.error);
+    _playersTotalPages = d.pages || 1;
+
+    const tbody = $('players-tbody');
+    tbody.innerHTML = (d.players || []).map(p => `
+      <tr>
+        <td>${esc(p.name)} <span style="color:var(--muted);font-size:.75rem">${p.id}</span></td>
+        <td><span class="badge badge-ok">${p.level}</span></td>
+        <td>${esc(p.xp)}</td>
+        <td>${esc(p.real)}</td>
+        <td>${esc(p.zar)}</td>
+        <td>${esc(p.gems)}</td>
+        <td>${p.streak > 0 ? `🔥 ${p.streak}` : '—'}</td>
+        <td>${esc(p.quests)}</td>
+        <td>${p.clan !== '—' ? `<span class="badge badge-warn">${esc(p.clan)}</span>` : '—'}</td>
+        <td>${esc(p.seen)}</td>
+      </tr>`).join('');
+
+    $('pager-info').textContent = `Page ${_playersPage} of ${_playersTotalPages} (${d.total} total)`;
+    $('pager-prev').disabled = _playersPage <= 1;
+    $('pager-next').disabled = _playersPage >= _playersTotalPages;
+    $('players-loading').style.display = 'none';
+    $('players-content').style.display = 'block';
+  } catch (e) {
+    $('players-loading').textContent = 'Error: ' + e.message;
+  }
+}
+
+/* ── Clans ── */
+async function loadClans() {
+  $('clans-loading').style.display = 'block';
+  $('clans-content').style.display = 'none';
+  try {
+    const d = await api('/clans');
+    if (!d.status) throw new Error(d.error);
+    $('clans-tbody').innerHTML = (d.clans || []).map(c => `
+      <tr>
+        <td style="color:var(--muted)">${c.rank}</td>
+        <td><b>${esc(c.name)}</b> <span style="color:var(--muted);font-size:.73rem">${esc(c.id)}</span></td>
+        <td style="color:var(--muted)">${esc(c.motto)}</td>
+        <td style="font-size:.75rem;color:var(--muted)">${esc(c.leader)}</td>
+        <td>${c.members}</td>
+        <td>${esc(c.real)}</td>
+        <td>${c.chat ? '✓' : '—'}</td>
+        <td style="color:var(--muted)">${esc(c.created)}</td>
+      </tr>`).join('');
+    $('clans-loading').style.display = 'none';
+    $('clans-content').style.display = 'block';
+  } catch (e) {
+    $('clans-loading').textContent = 'Error: ' + e.message;
+  }
+}
+
+/* ── Config ── */
+let _configData = [];
+
+async function loadConfig() {
+  $('config-loading').style.display = 'block';
+  $('config-groups').innerHTML = '';
+  try {
+    const d = await api('/config');
+    if (!d.status) throw new Error(d.error);
+    _configData = d.config || [];
+    renderConfig(_configData);
+    $('config-loading').style.display = 'none';
+  } catch (e) {
+    $('config-loading').textContent = 'Error: ' + e.message;
+  }
+}
+
+function renderConfig(configs) {
+  const groups = {};
+  for (const c of configs) {
+    if (!groups[c.group]) groups[c.group] = [];
+    groups[c.group].push(c);
+  }
+  const wrap = $('config-groups');
+  wrap.innerHTML = '';
+  for (const [grp, rows] of Object.entries(groups)) {
+    const sec = document.createElement('div');
+    sec.className = 'config-section';
+    sec.innerHTML = `<h4>${esc(grp)}</h4>
+      <div class="config-list">
+        ${rows.filter(r => r.type !== 'boolean').map(r => `
+          <div class="config-row" id="cfrow-${esc(r.key)}">
+            <div class="key">${esc(r.key)}</div>
+            <div class="clabel">${esc(r.label || r.key)}</div>
+            <div class="desc">${esc(r.description || '')}</div>
+            <input class="config-value-input" id="cfval-${esc(r.key)}" value="${esc(String(r.value))}" data-type="${esc(r.type)}">
+            <button class="btn-sm btn-save" onclick="saveConfig('${esc(r.key)}')">Save</button>
+            <button class="btn-sm btn-delete" onclick="deleteConfig('${esc(r.key)}')">✕</button>
+          </div>`).join('')}
+      </div>`;
+    wrap.appendChild(sec);
+  }
+}
+
+async function saveConfig(key) {
+  const input = $('cfval-' + key);
+  if (!input) return;
+  const cfg = _configData.find(c => c.key === key) || {};
+  try {
+    const d = await api('/config', {
+      method: 'POST',
+      body: JSON.stringify({ key, value: input.value, type: cfg.type || 'string', group: cfg.group, label: cfg.label, description: cfg.description }),
+    });
+    if (d.status) toast('Saved ' + key); else toast(d.error, 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+async function deleteConfig(key) {
+  if (!confirm('Delete config key: ' + key + '?')) return;
+  try {
+    const d = await api('/config/' + encodeURIComponent(key), { method: 'DELETE' });
+    if (d.status) { toast('Deleted ' + key); loadConfig(); } else toast(d.error, 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+async function addConfig() {
+  const key   = $('cf-key').value.trim();
+  const value = $('cf-value').value;
+  const type  = $('cf-type').value;
+  const group = $('cf-group').value.trim() || 'general';
+  const label = $('cf-label').value.trim() || key;
+  if (!key) { toast('Key is required', 'err'); return; }
+  try {
+    const d = await api('/config', { method: 'POST', body: JSON.stringify({ key, value, type, group, label }) });
+    if (d.status) { toast('Saved ' + key); ['cf-key','cf-value','cf-label'].forEach(id => $(id).value = ''); loadConfig(); }
+    else toast(d.error, 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+async function seedConfig() {
+  if (!confirm('Seed default Season 2 config keys? Existing values will not be changed.')) return;
+  try {
+    const d = await api('/seed-config', { method: 'POST' });
+    if (d.status) { toast(`Seeded: ${d.inserted} new, ${d.skipped} skipped`); loadConfig(); loadFlags(); }
+    else toast(d.error, 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+/* ── Feature flags ── */
+const FLAG_META = {
+  feature_guild_wars:          { label: 'Guild Wars',               desc: 'Enable Guild Wars module' },
+  feature_clan_wars:           { label: 'Clan Wars',                desc: 'Enable Clan Wars tab on Social page' },
+  feature_referral_prizes:     { label: 'Referral Contest Prizes',  desc: 'Distribute Founder Frame to top referrers' },
+  feature_learning_race_prize: { label: 'Learning Race Prize',      desc: 'Enable 5,000 REAL learning race payout' },
+  feature_ton_withdrawals:     { label: 'TON Withdrawals',          desc: 'Enable REAL → TON withdrawal flow' },
+  feature_hakim_ai:            { label: 'Hakim AI Companion',       desc: 'Enable the Hakim AI chat companion' },
+  maintenance_mode:            { label: 'Maintenance Mode',         desc: 'Show maintenance screen to all players' },
+};
+
+async function loadFlags() {
+  $('flags-loading').style.display = 'block';
+  $('flags-content').style.display = 'none';
+  try {
+    const d = await api('/config');
+    if (!d.status) throw new Error(d.error);
+    const map = {};
+    for (const c of d.config || []) map[c.key] = c;
+    renderFlags(map);
+    $('flags-loading').style.display = 'none';
+    $('flags-content').style.display = 'block';
+  } catch (e) {
+    $('flags-loading').textContent = 'Error: ' + e.message;
+  }
+}
+
+function renderFlags(map) {
+  const list = $('flags-list');
+  list.innerHTML = Object.entries(FLAG_META).map(([key, meta]) => {
+    const cfg = map[key];
+    const on  = cfg ? !!cfg.value : false;
+    const exists = !!cfg;
+    return `<div class="config-row">
+      <div class="key" style="color:var(--muted);font-size:.78rem">${esc(key)}</div>
+      <div class="clabel"><b>${esc(meta.label)}</b></div>
+      <div class="desc">${esc(meta.desc)}</div>
+      <div class="toggle-wrap">
+        ${exists ? `
+          <label class="toggle">
+            <input type="checkbox" ${on ? 'checked' : ''} onchange="toggleFlag('${esc(key)}', this.checked)">
+            <span class="slider"></span>
+          </label>
+          <span class="toggle-label">${on ? 'Live' : 'Coming Soon'}</span>
+        ` : `<span style="color:var(--muted);font-size:.78rem">Not seeded</span>`}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function toggleFlag(key, value) {
+  try {
+    const d = await api('/config', {
+      method: 'POST',
+      body: JSON.stringify({ key, value, type: 'boolean', group: key === 'maintenance_mode' ? 'system' : 'features' }),
+    });
+    if (d.status) toast((value ? '✓ Enabled: ' : '✕ Disabled: ') + key);
+    else { toast(d.error, 'err'); loadFlags(); }
+    /* Re-render label */
+    const wrap = document.querySelector(`[onchange="toggleFlag('${key}', this.checked)"]`)?.closest('.toggle-wrap');
+    if (wrap) wrap.querySelector('.toggle-label').textContent = value ? 'Live' : 'Coming Soon';
+  } catch (e) { toast(e.message, 'err'); loadFlags(); }
+}
+
+/* ── Boot ── */
+if (_token) {
+  showApp();
+} else {
+  $('login-screen').style.display = 'flex';
+}
+</script>
+</body>
+</html>
