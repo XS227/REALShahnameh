@@ -700,9 +700,10 @@
   const handleAdResult = (tier, result) => {
     const r = result.rewards || {};
     const parts = [];
-    if (r.real) parts.push('+' + r.real + ' ◆');
-    if (r.gems) parts.push('+' + r.gems + ' 💎');
-    if (r.farr) parts.push('+' + r.farr + ' ✦');
+    if (r.real)   parts.push('+' + r.real + ' ◆');
+    if (r.gems)   parts.push('+' + r.gems + ' 💎');
+    if (r.farr)   parts.push('+' + r.farr + ' ✦');
+    if (r.energy) parts.push('⚡ Energy filled!');
     const label = parts.join(' · ') || 'Reward earned!';
     showToast(label);
     fireBurst(label);
@@ -742,7 +743,7 @@
       btn.addEventListener('click', () => {
         if (!window.RealAdService) { showToast('Ad service not ready.'); return; }
         btn.disabled = true;
-        btn.textContent = '…';
+        btn.textContent = 'Loading Ad…';
         window.RealAdService.showAd(tier)
           .then(result => handleAdResult(tier, result))
           .catch(err   => handleAdError(tier, err));

@@ -9,9 +9,9 @@
   /* Default tier config — overwritten at runtime from localStorage (sync.js
      caches the server's adsgram block IDs from /user/sync response).       */
   const DEFAULT_CONFIG = {
-    bronze: { blockId: '', real: 500,  gems: 0, farr: 0, cooldown: 300  },
-    silver: { blockId: '', real: 2000, gems: 0, farr: 0, cooldown: 600  },
-    gold:   { blockId: '', real: 5000, gems: 1, farr: 0, cooldown: 1800 },
+    bronze: { blockId: 'bot-32855', real: 0,    gems: 0, farr: 0, energy: true,  cooldown: 300  },
+    silver: { blockId: 'bot-32855', real: 0,    gems: 1, farr: 0, energy: false, cooldown: 600  },
+    gold:   { blockId: 'bot-32855', real: 5000, gems: 0, farr: 0, energy: false, cooldown: 1800 },
   };
 
   const getConfig = () => {
@@ -27,25 +27,6 @@
       }
     } catch (_) {}
     return DEFAULT_CONFIG;
-  };
-
-  const tgUser = () => {
-    try {
-      return (window.Telegram && window.Telegram.WebApp
-        && window.Telegram.WebApp.initDataUnsafe
-        && window.Telegram.WebApp.initDataUnsafe.user) || null;
-    } catch (_) { return null; }
-  };
-
-  const post = (url, body) => {
-    try {
-      return fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
-        keepalive: true,
-      }).then(r => r.ok ? r.json() : null).catch(() => null);
-    } catch (_) { return Promise.resolve(null); }
   };
 
   /* Cooldown state — tracks last ad start time per tier in this session.
@@ -95,50 +76,39 @@
         return;
       }
 
-      controller.show().then(async (result) => {
+      controller.show().then((result) => {
         if (!result || !result.done) {
           reject({ type: 'skipped' });
           return;
         }
 
-        /* Set local cooldown immediately so UI updates without waiting */
         cooldownEnds[tier] = Date.now() + tierCfg.cooldown * 1000;
 
-        /* Server-side verification */
-        const u = tgUser();
-        if (!u || !u.id) {
-          /* Offline — credit locally */
-          if (window.RealPlayer) {
-            window.RealPlayer.addResource('real', tierCfg.real);
-            if (tierCfg.gems) window.RealPlayer.addResource('gems', tierCfg.gems);
-            if (tierCfg.farr) window.RealPlayer.addResource('farr', tierCfg.farr);
-          }
-          resolve({ tier, rewards: { real: tierCfg.real, gems: tierCfg.gems, farr: tierCfg.farr || 0 }, offline: true });
-          return;
-        }
+        /* Credit locally from tierCfg — server-side double-verification will
+           be wired via /api/ads/callback in the Adsgram dashboard later.    */
+        const rewards = {
+          real:   tierCfg.real   || 0,
+          gems:   tierCfg.gems   || 0,
+          farr:   tierCfg.farr   || 0,
+          energy: !!tierCfg.energy,
+        };
 
-        const data = await post('/api/season2/ads/verify-reward', {
-          telegram_id: String(u.id),
-          tier,
-        });
-
-        if (!data || data.status !== 1) {
-          if (data && data.error === 'cooldown') {
-            cooldownEnds[tier] = Date.now() + (data.wait_seconds || tierCfg.cooldown) * 1000;
-          }
-          reject({ type: data ? data.error : 'server_error', raw: data });
-          return;
-        }
-
-        /* Credit player resources */
         if (window.RealPlayer) {
-          window.RealPlayer.addResource('real', data.rewards.real || 0);
-          if (data.rewards.gems) window.RealPlayer.addResource('gems', data.rewards.gems);
-          if (data.rewards.farr) window.RealPlayer.addResource('farr', data.rewards.farr);
+          if (rewards.real)   window.RealPlayer.addResource('real', rewards.real);
+          if (rewards.gems)   window.RealPlayer.addResource('gems', rewards.gems);
+          if (rewards.farr)   window.RealPlayer.addResource('farr', rewards.farr);
+          if (rewards.energy) {
+            const p   = window.RealPlayer.get();
+            const max = p.energyMax || 1000;
+            const cur = p.energy    || 0;
+            const add = max - cur;
+            if (add > 0) window.RealPlayer.addResource('energy', add);
+            rewards.energyFilled = max;
+          }
           if (window.RealSync) window.RealSync.syncBalance();
         }
 
-        resolve({ tier, rewards: data.rewards, new_balance: data.new_balance });
+        resolve({ tier, rewards });
       }).catch((err) => {
         reject({ type: 'ad_error', error: err });
       });
