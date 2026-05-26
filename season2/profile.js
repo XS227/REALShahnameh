@@ -20,6 +20,13 @@
     return n.toLocaleString();
   };
 
+  const fmtZar = (n) => {
+    n = Number(n) || 0;
+    if (n >= 1_000_000) return (n / 1_000_000).toFixed(2) + 'M';
+    if (n >= 1_000)     return (n / 1_000).toFixed(2) + 'K';
+    return n.toFixed(2);
+  };
+
   /* ── Achievements definition ─────────────────────────────────────────── */
   const ACHIEVEMENTS = [
     {
@@ -52,7 +59,8 @@
     },
     {
       id:   'rich_warrior',
-      icon: '💎',
+      icon: null,
+      tokenImg: '/assets/images/tokens/realtoken.png',
       name: 'Rich Warrior',
       desc: 'Accumulate 10,000 REAL',
       check: u => (u.real_balance || 0) >= 10_000,
@@ -81,7 +89,6 @@
     if (nameEl)     nameEl.textContent = displayName;
     if (usernameEl) usernameEl.textContent = u.username ? '@' + u.username : '';
 
-    /* Avatar: try profile_pic, fall back to initial */
     if (avatarEl) {
       const pic = u.profile_pic || (tg && tg.photo_url) || '';
       if (pic) {
@@ -99,7 +106,6 @@
       }
     }
 
-    /* Path tag */
     const path = u.path || 'hero';
     const pathLabel = path === 'heroine' ? '⚜ Heroine' : '⚔ Hero';
     const pathClass = path === 'heroine' ? 'heroine' : 'hero';
@@ -114,22 +120,83 @@
     }
   };
 
+  /* ── Render REAL balance card ─────────────────────────────────────────── */
+  const renderBalanceCard = (u) => {
+    const amountEl   = document.getElementById('rbc-amount');
+    const bonusEl    = document.getElementById('rbc-clan-bonus');
+
+    if (amountEl) amountEl.textContent = fmtN(u.real_balance || 0) + ' REAL';
+
+    if (bonusEl) {
+      if (u.clan_id) {
+        bonusEl.style.display = '';
+      } else {
+        bonusEl.style.display = 'none';
+      }
+    }
+  };
+
+  /* ── Live ZAR mining counter ──────────────────────────────────────────── */
+  let _zarTimer = null;
+
+  const startMiningCounter = (mining) => {
+    if (_zarTimer) clearInterval(_zarTimer);
+
+    const zarLiveEl  = document.getElementById('em-zar-live');
+    const rateMinEl  = document.getElementById('em-rate-min');
+    const rateHrEl   = document.getElementById('em-rate-hr');
+    const payoutEl   = document.getElementById('em-payout');
+
+    const zarPerMin = mining.zar_per_minute || 0;
+    const zarPerHr  = mining.zar_per_hour  || 0;
+
+    if (rateMinEl) rateMinEl.textContent = fmtZar(zarPerMin) + ' ZAR';
+    if (rateHrEl)  rateHrEl.textContent  = fmtZar(zarPerHr)  + ' ZAR';
+
+    /* Next payout: every hour on the hour */
+    const updatePayout = () => {
+      if (!payoutEl) return;
+      const now  = new Date();
+      const next = new Date(now);
+      next.setHours(next.getHours() + 1, 0, 0, 0);
+      const diffMs  = next - now;
+      const diffMin = Math.floor(diffMs / 60000);
+      const diffSec = Math.floor((diffMs % 60000) / 1000);
+      payoutEl.textContent = diffMin + 'm ' + String(diffSec).padStart(2, '0') + 's';
+    };
+
+    /* Accumulate ZAR in real time from the server-side snapshot */
+    let currentZar = mining.total_zar || 0;
+    const zarPerSec = zarPerMin / 60;
+    let lastTick = Date.now();
+
+    const tick = () => {
+      const now  = Date.now();
+      const dt   = (now - lastTick) / 1000;
+      lastTick   = now;
+      currentZar += zarPerSec * dt;
+      if (zarLiveEl) zarLiveEl.textContent = fmtZar(currentZar) + ' ZAR';
+      updatePayout();
+    };
+
+    tick();
+    _zarTimer = setInterval(tick, 1000);
+  };
+
   /* ── Render stats grid ────────────────────────────────────────────────── */
   const renderStats = (u) => {
     const el = document.getElementById('stats-grid');
     if (!el) return;
 
-    const level = u.level || 1;
-    const xpNext = level * 1000;
+    const level  = u.level || 1;
     const xpCurr = u.xp || 0;
+    const inClan = !!(u.clan_id);
 
     const stats = [
-      { ico: '◆', lbl: 'REAL Balance',  val: fmtN(u.real_balance || 0) },
-      { ico: '⭐', lbl: 'XP Earned',    val: fmtN(xpCurr) },
-      { ico: '🏆', lbl: 'Level',         val: 'LVL ' + level },
-      { ico: '🔥', lbl: 'Login Streak',  val: (u.daily_streak || 1) + ' days' },
-      { ico: '👥', lbl: 'Clan Warriors', val: String(u.verified_referral_count || 0) },
-      { ico: '📅', lbl: 'Check-in Streak', val: (u.checkin_streak || 0) + ' days' },
+      { ico: '⭐', lbl: 'XP Earned',    val: fmtN(xpCurr),                          bonus: inClan ? '+5% Clan Power active' : null },
+      { ico: '🏆', lbl: 'Level',         val: 'LVL ' + level,                        bonus: null },
+      { ico: '🔥', lbl: 'Daily Strike',  val: (u.daily_streak || 1) + ' days',       bonus: null },
+      { ico: '👥', lbl: 'Clan Warriors', val: String(u.verified_referral_count || 0), bonus: null },
     ];
 
     el.innerHTML = stats.map(s => `
@@ -137,6 +204,7 @@
         <span class="stat-ico">${s.ico}</span>
         <span class="stat-val">${s.val}</span>
         <span class="stat-lbl">${s.lbl}</span>
+        ${s.bonus ? `<span class="stat-clan-bonus">${s.bonus}</span>` : ''}
       </div>`).join('');
   };
 
@@ -147,9 +215,12 @@
 
     el.innerHTML = ACHIEVEMENTS.map(a => {
       const earned = a.check(u);
+      const icoHtml = a.tokenImg
+        ? `<img src="${a.tokenImg}" class="badge-token-img" alt="REAL" onerror="this.style.display='none'" />`
+        : a.icon;
       return `
         <div class="badge-card ${earned ? 'earned' : 'locked-badge'}">
-          <div class="badge-ico-wrap">${a.icon}</div>
+          <div class="badge-ico-wrap">${icoHtml}</div>
           <div>
             <div class="badge-name">${a.name}</div>
             <div class="badge-desc">${a.desc}</div>
@@ -161,10 +232,11 @@
 
   /* ── Error / offline fallback ─────────────────────────────────────────── */
   const renderFallback = (tg) => {
-    const nameEl = document.getElementById('profile-name');
-    const avatarEl = document.getElementById('profile-avatar');
-    const statsEl = document.getElementById('stats-grid');
-    const badgeEl = document.getElementById('badge-grid');
+    const nameEl    = document.getElementById('profile-name');
+    const avatarEl  = document.getElementById('profile-avatar');
+    const statsEl   = document.getElementById('stats-grid');
+    const badgeEl   = document.getElementById('badge-grid');
+    const amountEl  = document.getElementById('rbc-amount');
 
     const name = tg ? (tg.first_name || tg.username || 'Warrior') : 'Warrior';
     if (nameEl)   nameEl.textContent = name;
@@ -174,14 +246,18 @@
       try { return JSON.parse(localStorage.getItem('real_player_state_v1') || '{}'); } catch { return {}; }
     })();
 
+    if (amountEl) amountEl.textContent = fmtN(localP.balance || 0) + ' REAL';
+
+    /* Local mining rate from heroes.js localStorage key */
+    const zarHr = Number(localStorage.getItem('real_total_zar_hr') || 0);
+    startMiningCounter({ total_zar: localP.zar || 0, zar_per_minute: zarHr / 60, zar_per_hour: zarHr });
+
     if (statsEl) {
       const stats = [
-        { ico: '◆', lbl: 'REAL Balance', val: fmtN(localP.balance || 0) },
-        { ico: '⭐', lbl: 'XP Earned',   val: fmtN(localP.xp || 0) },
-        { ico: '🏆', lbl: 'Level',        val: 'LVL ' + (localP.level || 1) },
-        { ico: '🔥', lbl: 'Login Streak', val: (localP.dailyStreak || 1) + ' days' },
+        { ico: '⭐', lbl: 'XP Earned',    val: fmtN(localP.xp || 0)           },
+        { ico: '🏆', lbl: 'Level',         val: 'LVL ' + (localP.level || 1)  },
+        { ico: '🔥', lbl: 'Daily Strike',  val: (localP.dailyStreak || 1) + ' days' },
         { ico: '👥', lbl: 'Clan Warriors', val: String(localP.referrals || 0) },
-        { ico: '📅', lbl: 'Check-in Streak', val: '—' },
       ];
       statsEl.innerHTML = stats.map(s => `
         <div class="stat-card">
@@ -192,7 +268,15 @@
     }
 
     if (badgeEl) {
-      const fakeUser = { xp: localP.xp || 0, real_balance: localP.balance || 0, level: localP.level || 1, daily_streak: localP.dailyStreak || 1, verified_referral_count: localP.referrals || 0, last_checkin_date: '', checkin_streak: 0 };
+      const fakeUser = {
+        xp: localP.xp || 0,
+        real_balance: localP.balance || 0,
+        level: localP.level || 1,
+        daily_streak: localP.dailyStreak || 1,
+        verified_referral_count: localP.referrals || 0,
+        last_checkin_date: '',
+        clan_id: '',
+      };
       renderBadges(fakeUser);
     }
   };
@@ -220,6 +304,8 @@
 
     const u = resp.user;
     renderIdentity(u, tg);
+    renderBalanceCard(u);
+    startMiningCounter(u.mining_stats || { total_zar: u.zar || 0, zar_per_minute: 0, zar_per_hour: 0 });
     renderStats(u);
     renderBadges(u);
   };

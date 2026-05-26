@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Profile</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605270100" />
+  <link rel="stylesheet" href="style.css?v=202605270200" />
 </head>
 <body>
   <main class="app">
@@ -37,8 +37,43 @@
       </div>
     </article>
 
+    <!-- REAL Balance Card -->
+    <article class="card real-balance-card" id="real-balance-card">
+      <div class="rbc-glow"></div>
+      <div class="rbc-left">
+        <div class="rbc-label">REAL Balance</div>
+        <div class="rbc-amount" id="rbc-amount">—</div>
+        <div class="rbc-clan-bonus" id="rbc-clan-bonus" style="display:none;">+5% Clan Power active</div>
+      </div>
+      <img class="rbc-token" src="/assets/images/tokens/realtoken.png" alt="REAL" onerror="this.style.display='none'" />
+    </article>
+
+    <!-- Earnings Meter -->
+    <div class="section-head" style="margin-top:4px;"><h3>Earnings Meter</h3></div>
+    <article class="card earnings-meter-card">
+      <div class="em-row">
+        <div class="em-label">Total ZAR Mined</div>
+        <div class="em-live-val" id="em-zar-live">—</div>
+      </div>
+      <div class="em-divider"></div>
+      <div class="em-row">
+        <div class="em-sub-col">
+          <div class="em-label">Rate / min</div>
+          <div class="em-sub-val" id="em-rate-min">—</div>
+        </div>
+        <div class="em-sub-col">
+          <div class="em-label">Rate / hr</div>
+          <div class="em-sub-val" id="em-rate-hr">—</div>
+        </div>
+        <div class="em-sub-col">
+          <div class="em-label">Next Payout</div>
+          <div class="em-sub-val" id="em-payout">—</div>
+        </div>
+      </div>
+    </article>
+
     <!-- Season stats -->
-    <div class="section-head"><h3 data-i18n="profile_stats">Season Stats</h3></div>
+    <div class="section-head" style="margin-top:4px;"><h3 data-i18n="profile_stats">Season Stats</h3></div>
     <div class="stats-grid" id="stats-grid">
       <!-- populated by profile.js -->
     </div>
@@ -61,14 +96,14 @@
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=202605270100"></script>
-  <script src="i18n/en.js?v=202605270100"></script>
-  <script src="i18n/fa.js?v=202605270100"></script>
-  <script src="i18n/tg.js?v=202605270100"></script>
-  <script src="i18n.js?v=202605270100"></script>
-  <script src="resources.js?v=202605270100"></script>
-  <script src="audio.js?v=202605270100"></script>
-  <script src="sync.js?v=202605270100"></script>
-  <script src="profile.js?v=202605270100"></script>
+  <script src="app.js?v=202605270200"></script>
+  <script src="i18n/en.js?v=202605270200"></script>
+  <script src="i18n/fa.js?v=202605270200"></script>
+  <script src="i18n/tg.js?v=202605270200"></script>
+  <script src="i18n.js?v=202605270200"></script>
+  <script src="resources.js?v=202605270200"></script>
+  <script src="audio.js?v=202605270200"></script>
+  <script src="sync.js?v=202605270200"></script>
+  <script src="profile.js?v=202605270200"></script>
 </body>
 </html>

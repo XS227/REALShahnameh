@@ -5169,3 +5169,83 @@ body::after {
 }
 .clan-cta-title { font-size: 13px; font-weight: 700; color: var(--text); }
 .clan-cta-sub   { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* ── REAL Balance Card ────────────────────────────────────────────────── */
+.real-balance-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 18px;
+  background: linear-gradient(135deg, rgba(244,197,107,.10) 0%, rgba(140,109,255,.07) 100%);
+  border-color: var(--border-gold);
+  box-shadow: 0 0 24px rgba(244,197,107,.12), inset 0 0 0 1px rgba(244,197,107,.18);
+}
+.rbc-glow {
+  position: absolute;
+  top: -30px; right: -20px;
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244,197,107,.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+.rbc-left { display: flex; flex-direction: column; gap: 4px; }
+.rbc-label { font-size: 11px; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; }
+.rbc-amount {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: -.02em;
+  line-height: 1.1;
+}
+.rbc-clan-bonus {
+  font-size: 11px;
+  color: #5ea2ff;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.rbc-token {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  opacity: .92;
+  filter: drop-shadow(0 0 10px rgba(244,197,107,.35));
+}
+
+/* ── Earnings Meter ───────────────────────────────────────────────────── */
+.earnings-meter-card { padding: 16px 18px; display: flex; flex-direction: column; gap: 12px; }
+.em-row { display: flex; align-items: center; justify-content: space-between; }
+.em-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.em-live-val {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5ea2ff;
+  font-variant-numeric: tabular-nums;
+}
+.em-divider { height: 1px; background: rgba(255,255,255,.07); margin: 0 -2px; }
+.em-sub-col { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.em-sub-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Stat clan bonus line ─────────────────────────────────────────────── */
+.stat-clan-bonus {
+  font-size: 9px;
+  color: #5ea2ff;
+  font-weight: 600;
+  margin-top: 1px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ── Rich Warrior badge token image ──────────────────────────────────── */
+.badge-token-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 4px rgba(244,197,107,.4));
+}
