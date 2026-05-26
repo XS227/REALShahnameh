@@ -186,9 +186,12 @@
       avatarImg.src = photoSrc || fallback;
     }
 
-    // Real level (new users: 1)
+    // VIP level: 1000 XP per level
+    const vipLv = Math.floor((player.xp || 0) / 1000);
     const levelEl = document.querySelector("[data-level]");
-    if (levelEl) levelEl.textContent = player.level || 1;
+    if (levelEl) levelEl.textContent = vipLv;
+    const vipPill = document.querySelector("[data-vip-level]");
+    if (vipPill) vipPill.textContent = vipLv === 0 ? "VIP" : `VIP ${vipLv}`;
   };
 
   /* ── Daily quest hydration ── */
@@ -242,6 +245,17 @@
         refreshTreasury();
       });
     }
+
+    // Live updates from chapter quiz / read events dispatched by app.js
+    window.addEventListener("real:quest:quiz", () => {
+      hydrateQuests();
+      hydrateProfile();
+      refreshTreasury();
+    });
+    window.addEventListener("real:quest:read", () => {
+      hydrateQuests();
+      refreshTreasury();
+    });
   };
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", bootHomeHydration);

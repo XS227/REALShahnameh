@@ -725,6 +725,16 @@
   box-shadow: 0 0 8px rgba(255,140,40,.18);
 }
 
+/* Farr-locked badge — gold/divine, marks divine authority requirement */
+.farr-badge {
+  background: rgba(244,197,107,.18);
+  border: 1px solid rgba(244,197,107,.6);
+  color: #f4c542;
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(244,197,107,.28), 0 0 3px rgba(244,197,107,.5) inset;
+}
+
 /* Dim locked cards slightly */
 .coll-card.hero-state-locked .coll-portrait img,
 .coll-card.hero-state-locked .coll-emoji {
@@ -736,6 +746,15 @@
 .coll-card.hero-state-prereq_locked .coll-emoji {
   opacity: .55;
   filter: grayscale(40%) sepia(20%);
+}
+/* Farr-locked — gold shimmer card dimming */
+.coll-card.hero-state-farr_locked .coll-portrait img,
+.coll-card.hero-state-farr_locked .coll-emoji {
+  opacity: .6;
+  filter: grayscale(20%) sepia(30%) hue-rotate(10deg);
+}
+.coll-card.hero-state-farr_locked {
+  border-color: rgba(244,197,107,.22);
 }
 
 /* Owned cards — gold border accent */
@@ -776,6 +795,21 @@
 .hero-econ-panel.prereq_locked {
   border-color: rgba(255,140,40,.25);
   background: rgba(30,18,10,.55);
+}
+.hero-econ-panel.farr_locked {
+  background: rgba(30,22,4,.6);
+  border: 1px solid rgba(244,197,107,.28);
+  box-shadow: 0 0 18px rgba(244,197,107,.06) inset;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.hero-econ-panel.farr_locked .hecon-lock {
+  font-size: 18px;
+  color: #f4c542;
+}
+.hero-econ-panel.farr_locked .hecon-msg {
+  color: rgba(244,197,107,.75);
 }
 .hero-econ-panel.available {
   background: linear-gradient(140deg, rgba(244,197,107,.08) 0%, rgba(180,130,10,.05) 100%);

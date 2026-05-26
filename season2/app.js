@@ -318,6 +318,27 @@
   // expose for console/demo only
   if (typeof window !== "undefined") window.RealPlayer = Player;
 
+  /* ── Sovereign Economy ─────────────────────────────────────────────────
+     VIP Level: every 1000 XP earned = +1 VIP Level.
+     Passive Zar income: heroes generate Zar/hr; tick every 60s,
+     with +5% bonus per VIP level applied to all Zar income.         */
+  Player.vipLevel = () => Math.floor((Player.getResource("xp") || 0) / 1000);
+
+  setInterval(() => {
+    try {
+      const zarHr = parseInt(localStorage.getItem("real_total_zar_hr") || "0", 10);
+      if (!zarHr) return;
+      const vipBonus = 1 + Player.vipLevel() * 0.05;
+      const gain = Math.max(1, Math.floor((zarHr / 60) * vipBonus));
+      Player.addResource("zar", gain);
+      if (window.RealResources) {
+        const hud = document.querySelector("[data-resource-hud]");
+        if (hud) window.RealResources.refreshHud(hud);
+      }
+    } catch (_) {}
+  }, 60000);
+  /* ───────────────────────────────────────────────────────────────────── */
+
   // Mirror Telegram user identity into Player state once it's available.
   try {
     const tgUser = tg && tg.initDataUnsafe && tg.initDataUnsafe.user;
@@ -1454,9 +1475,11 @@
       document.body.style.overflow = "hidden";
       haptic("light");
 
-      // Mark "read a scene" quest complete for today
+      // Mark "read a scene" quest — award XP for reading
       try { localStorage.setItem("real_quest_read_" + new Date().toISOString().slice(0, 10), "true"); } catch (_) {}
+      Player.addResource("xp", 25);
       if (window.RealSync) window.RealSync.syncQuest("read");
+      window.dispatchEvent(new CustomEvent("real:quest:read", { detail: { xp: 25 } }));
     };
 
     const closeModal = () => {
@@ -1472,12 +1495,21 @@
       if (correct) {
         btn.classList.add("correct");
         haptic("success");
-        // Mark "quiz" quest complete for today
+        // Mark quiz done — credit XP, REAL, and Farr to Player
         try { localStorage.setItem("real_quest_quiz_" + new Date().toISOString().slice(0, 10), "true"); } catch (_) {}
-        if (window.RealSync) window.RealSync.syncQuest("quiz");
-        elResTitle.textContent = `+${data.xp} ${t("r_xp")} · +${data.real} REAL`;
+        Player.addResource("xp",   data.xp);
+        Player.addResource("real", data.real);
+        Player.addResource("farr", 1);
+        // Write chapter-done flag consumed by heroes.js prereq system
+        try {
+          const _cs = { 1:"keyumars", 2:"hushang", 3:"tahmuras", 4:"jamshid", 5:"zahhak" };
+          if (_cs[currentId]) localStorage.setItem("real_chapter_done_" + _cs[currentId], "1");
+        } catch (_) {}
+        if (window.RealSync) { window.RealSync.syncQuest("quiz"); window.RealSync.syncBalance(); }
+        window.dispatchEvent(new CustomEvent("real:quest:quiz", { detail: { xp: data.xp, real: data.real, farr: 1 } }));
+        elResTitle.textContent = `+${data.xp} ${t("r_xp")} · +${data.real} REAL · ✦1 ${t("r_farr")}`;
         elResBody.textContent = t("chapter_rewards_locked");
-        elResRew.innerHTML = `<span class="chip warm">⭐ ${data.xp} ${t("r_xp")}</span><span class="chip">🪙 ${data.real} REAL</span><span class="chip lush">+1 ${t("hero_fragment_label")}</span>`;
+        elResRew.innerHTML = `<span class="chip warm">⭐ ${data.xp} ${t("r_xp")}</span><span class="chip">◆ ${data.real} REAL</span><span class="chip gold">✦1 ${t("r_farr")}</span>`;
         elResult.classList.add("show");
         // mark chapter done
         if (currentChapterEl) {

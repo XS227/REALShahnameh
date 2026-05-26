@@ -468,6 +468,7 @@
       hero_economy_section: "Hero Economy",
       hero_already_owned: "Already owned",
       hero_prereq_locked: "Requires {name} Lv.{level} to unlock",
+      hero_farr_locked: "Requires {cost} ✦ Farr to unlock",
 
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "Play",

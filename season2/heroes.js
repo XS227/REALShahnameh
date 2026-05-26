@@ -193,7 +193,7 @@
       side: "dark",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-004",
-      season: 2, order: 12, cost: 8000, prereq: { hero_id: "black-demon", level: 1 },
+      season: 2, order: 12, cost: 8000, farr_cost: 1, prereq: { hero_id: "black-demon", level: 1 },
       unlockCondition: "Defeat Ahriman · Chapter 1 Boss",
       role_fa: "ارباب تاریکی · رئیس فصل ۱",
       lore_fa: "دشمن ابدی. اهریمن دیو سیاه خود را فرستاد تا سیامک را بکشد، به این امید که اولین شعله‌ی تمدن را قبل از گسترش خاموش کند. توطئه‌های او کهن، صبور و بی‌امان است.",
@@ -613,7 +613,7 @@
       side: "light",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-015",
-      season: 2, order: 15, cost: 9000, prereq: { hero_id: "hushang", level: 2 },
+      season: 2, order: 15, cost: 9000, farr_cost: 2, prereq: { hero_id: "hushang", level: 2 },
       unlockCondition: "Complete Chapter 1 · Own Hushang Lv.2",
       role_fa: "رویداد تغییردهنده‌ی جهان · جرقه‌ی تمدن",
       lore_fa: "لحظه‌ای که هوشنگ در تعقیب مار سیاه سنگ چخماق را به هم کوبید، آتش وارد جهان شد. آن را مقدس به اهورامزدا اعلام کرد و بشریت برای همیشه دگرگون شد.",
@@ -773,6 +773,10 @@
       const prereqOwned = ownedHeroes[item.prereq.hero_id];
       if (!prereqOwned || (prereqOwned.level || 1) < item.prereq.level) return "prereq_locked";
     }
+    if (item.farr_cost) {
+      const farr = window.RealPlayer ? (window.RealPlayer.getResource("farr") || 0) : 0;
+      if (farr < item.farr_cost) return "farr_locked";
+    }
     return "available";
   };
 
@@ -810,6 +814,8 @@
           stateBadge = `<span class="hero-state-badge locked-badge">🔒</span>`;
         } else if (state === "prereq_locked") {
           stateBadge = `<span class="hero-state-badge prereq-badge">🔐</span>`;
+        } else if (state === "farr_locked") {
+          stateBadge = `<span class="hero-state-badge farr-badge">✦${item.farr_cost}</span>`;
         } else if (state === "owned") {
           stateBadge = `<span class="hero-state-badge owned-badge">Lv.${owned.level || 1}</span>`;
         } else {
@@ -936,6 +942,13 @@
       return `<div class="hero-econ-panel prereq_locked">
         <span class="hecon-lock">🔐</span>
         <span class="hecon-msg">${t("hero_prereq_locked", { name: prereqName, level: prereq.level })}</span>
+      </div>`;
+    }
+
+    if (state === "farr_locked") {
+      return `<div class="hero-econ-panel farr_locked">
+        <span class="hecon-lock">✦</span>
+        <span class="hecon-msg">${t("hero_farr_locked", { cost: item.farr_cost || 1 })}</span>
       </div>`;
     }
 
@@ -1068,10 +1081,13 @@
 
     const badge = card.querySelector(".hero-state-badge");
     if (badge) {
-      const badgeClass = state === "prereq_locked" ? "prereq-badge" : `${state}-badge`;
+      const badgeClass = state === "prereq_locked" ? "prereq-badge"
+                       : state === "farr_locked"   ? "farr-badge"
+                       : `${state}-badge`;
       badge.className = `hero-state-badge ${badgeClass}`;
       if (state === "owned") badge.textContent = `Lv.${owned.level || 1}`;
       else if (state === "prereq_locked") badge.textContent = `🔐`;
+      else if (state === "farr_locked") badge.textContent = `✦${item.farr_cost || 1}`;
       else if (state === "available") badge.innerHTML = `◆ ${(item.cost || RARITY_COST[item.rarity] || 0).toLocaleString()}`;
     }
     const rarityEl = card.querySelector(".coll-rarity");
