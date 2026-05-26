@@ -4436,3 +4436,14 @@ body::after {
   font-style: italic;
 }
 
+
+/* ── Global economy icon helpers ─────────────────────────────────────── */
+.real-ico {
+  display: inline-block; font-style: normal; font-weight: 900;
+  color: #f4c542; text-shadow: 0 0 8px rgba(244,197,107,.5);
+  letter-spacing: 0; margin-right: 2px; font-size: .95em;
+}
+.zar-ico {
+  display: inline-block; font-style: normal;
+  color: #ffcf40; font-size: .9em; margin-right: 1px;
+}

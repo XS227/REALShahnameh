@@ -390,8 +390,8 @@
     if (zarHrEl) {
       try {
         const zarHr = parseInt(localStorage.getItem('real_total_zar_hr') || '0', 10);
-        zarHrEl.textContent = '+' + zarHr;
-      } catch { zarHrEl.textContent = '+0'; }
+        zarHrEl.innerHTML = `<span class="zar-ico">⚡</span> +${zarHr}`;
+      } catch { zarHrEl.innerHTML = '<span class="zar-ico">⚡</span> +0'; }
     }
   };
 

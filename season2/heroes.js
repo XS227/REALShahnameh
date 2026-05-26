@@ -616,11 +616,11 @@
         } else if (state === "owned") {
           stateBadge = `<span class="hero-state-badge owned-badge">Lv.${owned.level}</span>`;
         } else {
-          stateBadge = `<span class="hero-state-badge available-badge">${(RARITY_COST[item.rarity] || 0).toLocaleString()}</span>`;
+          stateBadge = `<span class="hero-state-badge available-badge">◆ ${(RARITY_COST[item.rarity] || 0).toLocaleString()}</span>`;
         }
 
         const subLine = state === "owned"
-          ? `+${owned.zar_per_hour || 0} Zar/hr`
+          ? `<span class="zar-ico">⚡</span> +${owned.zar_per_hour || 0} Zar/hr`
           : rarityLabel(item.rarity);
 
         card.innerHTML = `
@@ -732,17 +732,17 @@
     }
 
     if (state === "owned") {
-      const lvl = owned.level || 1;
+      const lvl     = owned.level || 1;
       const upgCost = cost * lvl;
       const nextZar = baseZar * (lvl + 1);
       return `<div class="hero-econ-panel owned">
         <div class="hecon-owned-row">
           <span class="hecon-level">Lv.${lvl}</span>
-          <span class="hecon-zar">+${owned.zar_per_hour || 0} Zar/hr</span>
+          <span class="hecon-zar"><span class="zar-ico">⚡</span> +${owned.zar_per_hour || 0} Zar/hr</span>
         </div>
         <button class="hecon-upgrade-btn" data-action="upgrade"
           data-hero-id="${item.id}" data-cost="${upgCost}" data-next-zar="${nextZar}">
-          ${t("hero_upgrade_btn", { level: lvl + 1, cost: upgCost.toLocaleString() })}
+          ↑ Lv.${lvl + 1} &nbsp;·&nbsp; <span class="real-ico">◆</span> ${upgCost.toLocaleString()} REAL
         </button>
       </div>`;
     }
@@ -751,12 +751,12 @@
     const buyZar = baseZar;
     return `<div class="hero-econ-panel available">
       <div class="hecon-price-row">
-        <span class="hecon-cost">◆ ${cost.toLocaleString()} REAL</span>
-        <span class="hecon-zar">+${buyZar} Zar/hr</span>
+        <span class="hecon-cost"><span class="real-ico">◆</span> ${cost.toLocaleString()} REAL</span>
+        <span class="hecon-zar"><span class="zar-ico">⚡</span> +${buyZar} Zar/hr</span>
       </div>
       <button class="hecon-buy-btn" data-action="buy"
         data-hero-id="${item.id}" data-cost="${cost}" data-zar="${buyZar}">
-        ${t("hero_buy_btn", { cost: cost.toLocaleString() })}
+        <span class="real-ico">◆</span> ${cost.toLocaleString()} REAL — Buy Hero
       </button>
     </div>`;
   };
@@ -856,10 +856,11 @@
     if (badge) {
       badge.className = `hero-state-badge ${state}-badge`;
       if (state === "owned") badge.textContent = `Lv.${owned.level}`;
+      else if (state === "available") badge.innerHTML = `◆ ${(RARITY_COST[item.rarity] || 0).toLocaleString()}`;
     }
     const rarityEl = card.querySelector(".coll-rarity");
     if (rarityEl && state === "owned") {
-      rarityEl.textContent = `+${owned.zar_per_hour || 0} Zar/hr`;
+      rarityEl.innerHTML = `<span class="zar-ico">⚡</span> +${owned.zar_per_hour || 0} Zar/hr`;
     }
   };
 
@@ -1015,6 +1016,11 @@
     `;
 
     backdrop.classList.add("open");
+    /* Reset scroll so name row is always the first visible element */
+    requestAnimationFrame(() => {
+      const scroll = modal.querySelector(".cert-scroll");
+      if (scroll) scroll.scrollTop = 0;
+    });
     if (navigator.vibrate) navigator.vibrate([6, 2, 4]);
 
     /* Bind economy panel buttons */

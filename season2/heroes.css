@@ -385,7 +385,7 @@
 /* Parchment-style modal */
 .cert-modal {
   width: min(480px, 100%);
-  max-height: 90vh;
+  max-height: 93vh;
   background:
     radial-gradient(ellipse at 65% 0%, rgba(244,197,107,.09) 0%, transparent 48%),
     radial-gradient(ellipse at 15% 95%, rgba(94,162,255,.05) 0%, transparent 45%),
@@ -420,7 +420,7 @@
   background:
     radial-gradient(circle at 40% 28%, rgba(244,197,107,.14), transparent 58%),
     linear-gradient(160deg, #1d2542, #07091c);
-  margin: 10px 14px 0; border-radius: 18px;
+  margin: 10px 14px 12px; border-radius: 18px;
   border: 1px solid rgba(255,255,255,.1);
   cursor: zoom-in;
 }
@@ -473,7 +473,7 @@
 /* Scrollable area */
 .cert-scroll {
   flex: 1; overflow-y: auto; overscroll-behavior: contain;
-  padding: 14px 18px 36px;
+  padding: 4px 18px 44px;
   display: flex; flex-direction: column; gap: 10px;
 }
 
@@ -663,73 +663,112 @@
 .img-fullscreen-close:active { background: rgba(255,255,255,.2); }
 
 /* =========================================================
+   GLOBAL ECONOMY ICONS — used across heroes, tap, home
+   ========================================================= */
+
+/* REAL token — gold diamond glyph */
+.real-ico {
+  display: inline-block;
+  font-style: normal; font-weight: 900;
+  color: #f4c542;
+  text-shadow: 0 0 8px rgba(244,197,107,.55);
+  letter-spacing: 0;
+  margin-right: 2px;
+  font-size: .95em;
+}
+/* ZAR lightning icon */
+.zar-ico {
+  display: inline-block;
+  font-style: normal;
+  color: #ffcf40;
+  font-size: .9em;
+  margin-right: 1px;
+}
+
+/* =========================================================
    HERO ECONOMY — card state badges
    ========================================================= */
 
 .hero-state-badge {
-  position: absolute; top: 6px; right: 6px;
-  font-size: 9px; font-weight: 800; letter-spacing: .5px;
-  padding: 2px 6px; border-radius: 20px;
-  pointer-events: none; z-index: 2;
+  position: absolute; top: 5px; right: 5px;
+  font-size: 9px; font-weight: 800; letter-spacing: .4px;
+  padding: 3px 7px; border-radius: 20px;
+  pointer-events: none; z-index: 3;
+  white-space: nowrap;
 }
 .locked-badge {
-  background: rgba(20,20,30,.85);
-  color: rgba(255,255,255,.45);
+  background: rgba(12,14,26,.88);
+  color: rgba(255,255,255,.4);
+  border: 1px solid rgba(255,255,255,.1);
 }
 .available-badge {
-  background: rgba(12,200,120,.18);
-  border: 1px solid rgba(12,200,120,.5);
-  color: rgb(12,200,120);
+  background: rgba(244,197,107,.15);
+  border: 1px solid rgba(244,197,107,.5);
+  color: #f4c542;
+  box-shadow: 0 0 10px rgba(244,197,107,.2);
+  font-size: 9.5px;
 }
 .owned-badge {
-  background: rgba(244,197,107,.18);
-  border: 1px solid rgba(244,197,107,.55);
+  background: rgba(244,197,107,.2);
+  border: 1px solid rgba(244,197,107,.6);
   color: var(--gold);
+  font-size: 10px;
+  box-shadow: 0 0 12px rgba(244,197,107,.3);
 }
 
 /* Dim locked cards slightly */
 .coll-card.hero-state-locked .coll-portrait img,
 .coll-card.hero-state-locked .coll-emoji {
-  opacity: .45;
-  filter: grayscale(60%);
+  opacity: .42;
+  filter: grayscale(65%);
 }
 
-/* Owned cards — subtle gold border accent */
+/* Owned cards — gold border accent */
 .coll-card.hero-state-owned {
-  border-color: rgba(244,197,107,.35);
+  border-color: rgba(244,197,107,.4);
+}
+/* Available cards — soft gold shimmer */
+.coll-card.hero-state-available {
+  border-color: rgba(244,197,107,.28);
+}
+
+/* Sub-line for owned — Zar/hr in amber */
+.coll-card .coll-rarity.zar-rate {
+  color: #ffcf40;
 }
 
 /* =========================================================
    HERO ECONOMY PANEL — inside certificate modal
    ========================================================= */
 
-.cert-econ-slot { margin: 14px 0 8px; }
+.cert-econ-slot { margin: 2px 0 4px; }
 
 .hero-econ-panel {
-  border-radius: 10px;
-  padding: 12px 14px;
+  border-radius: 12px;
+  padding: 13px 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 11px;
 }
 .hero-econ-panel.locked {
-  background: rgba(14,18,40,.6);
+  background: rgba(14,18,40,.55);
   border: 1px solid rgba(255,255,255,.07);
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
 .hero-econ-panel.available {
-  background: rgba(12,200,120,.07);
-  border: 1px solid rgba(12,200,120,.25);
+  background: linear-gradient(140deg, rgba(244,197,107,.08) 0%, rgba(180,130,10,.05) 100%);
+  border: 1px solid rgba(244,197,107,.3);
+  box-shadow: 0 0 24px rgba(244,197,107,.08) inset;
 }
 .hero-econ-panel.owned {
-  background: rgba(244,197,107,.07);
-  border: 1px solid rgba(244,197,107,.28);
+  background: linear-gradient(140deg, rgba(244,197,107,.06) 0%, rgba(120,90,10,.04) 100%);
+  border: 1px solid rgba(244,197,107,.22);
 }
 
 .hecon-lock { font-size: 18px; }
-.hecon-msg  { font-size: 12px; color: var(--muted); }
+.hecon-msg  { font-size: 12px; color: var(--muted); line-height: 1.4; }
 
 .hecon-price-row,
 .hecon-owned-row {
@@ -737,44 +776,72 @@
   justify-content: space-between;
   align-items: center;
 }
+/* REAL price — gold, prominent */
 .hecon-cost {
-  font-size: 14px; font-weight: 800;
-  color: var(--text);
+  font-size: 15px; font-weight: 900;
+  color: #f4c542;
+  letter-spacing: -.3px;
 }
+/* Zar rate — amber, secondary */
 .hecon-zar {
-  font-size: 11px; font-weight: 600;
-  color: var(--gold);
+  font-size: 12px; font-weight: 700;
+  color: #ffcf40;
+  background: rgba(255,207,64,.1);
+  border: 1px solid rgba(255,207,64,.25);
+  padding: 2px 8px; border-radius: 999px;
 }
 .hecon-level {
-  font-size: 16px; font-weight: 900;
-  color: var(--gold);
+  font-size: 18px; font-weight: 900;
+  color: #f4c542;
+  text-shadow: 0 0 14px rgba(244,197,107,.4);
 }
 
-.hecon-buy-btn,
-.hecon-upgrade-btn {
+/* Buy button — REAL gold gradient + glow */
+.hecon-buy-btn {
   width: 100%;
-  padding: 11px 0;
-  border-radius: 9px;
-  font-size: 13px; font-weight: 800;
+  padding: 13px 0;
+  border-radius: 11px;
+  font-size: 14px; font-weight: 900;
   border: none; cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transition: opacity .15s, transform .12s;
+  letter-spacing: .3px;
+  background: linear-gradient(135deg, #c8860a 0%, #e8a820 30%, #f5c53a 60%, #e8a820 100%);
+  color: #1a0e00;
+  box-shadow:
+    0 6px 24px rgba(244,197,107,.35),
+    0 1px 0 rgba(255,255,255,.22) inset,
+    0 -1px 0 rgba(0,0,0,.18) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255,.3);
+  transition: box-shadow .2s, transform .12s, opacity .15s;
 }
-.hecon-buy-btn {
-  background: linear-gradient(135deg, rgba(12,200,120,.85), rgba(10,170,100,.9));
-  color: #fff;
+.hecon-buy-btn:active {
+  transform: scale(.965);
+  box-shadow: 0 3px 12px rgba(244,197,107,.25);
 }
+
+/* Upgrade button — amber, subordinate */
 .hecon-upgrade-btn {
-  background: linear-gradient(135deg, rgba(244,197,107,.8), rgba(220,160,60,.85));
-  color: #1a1400;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 11px;
+  font-size: 13px; font-weight: 800;
+  border: 1px solid rgba(244,197,107,.45); cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  background: rgba(244,197,107,.1);
+  color: #f4c542;
+  box-shadow: 0 0 16px rgba(244,197,107,.08) inset;
+  transition: background .18s, box-shadow .18s, transform .12s;
 }
-.hecon-buy-btn:active,
 .hecon-upgrade-btn:active {
-  opacity: .82;
+  background: rgba(244,197,107,.2);
   transform: scale(.97);
+  box-shadow: 0 0 24px rgba(244,197,107,.15) inset;
 }
+
 .hecon-buy-btn:disabled,
 .hecon-upgrade-btn:disabled {
-  opacity: .45;
+  opacity: .38;
   cursor: default;
+  box-shadow: none;
+  transform: none;
 }
