@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Social</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605270500" />
+  <link rel="stylesheet" href="style.css?v=202605270600" />
 </head>
 <body>
   <main class="app">
@@ -49,37 +49,26 @@
     </div>
     <div id="browse-clans"></div>
 
+    <!-- Events (above Activity) -->
+    <div class="section-head"><h3 data-i18n="events">Events</h3></div>
+    <div id="events-list"></div>
+
     <!-- Activity -->
     <div class="section-head"><h3 data-i18n="activity">Activity</h3></div>
     <article class="card feed-list" id="activity-feed"></article>
 
-    <!-- Events -->
-    <div class="section-head"><h3 data-i18n="events">Events</h3></div>
-    <section class="utility-grid">
-      <article class="card utility-row">
-        <span class="ico" style="background: rgba(244,197,107,.14); border-color: var(--border-gold); color: var(--gold);">🏆</span>
-        <div>
-          <h5 data-i18n="event_weekly_h">Weekly Tournament — Royal Cup</h5>
-          <p>Top 100 share 100,000 REAL · <span id="tournament-timer">Loading…</span></p>
-        </div>
-      </article>
-      <article class="card utility-row">
-        <span class="ico" style="background: rgba(94,162,255,.14); border-color: rgba(94,162,255,.32); color: var(--azure);">📣</span>
-        <div>
-          <h5 data-i18n="event_referral_h">Referral Contest</h5>
-          <p data-i18n="event_referral_copy">Top 10 referrers earn the Founder Frame · Ends Sunday</p>
-        </div>
-      </article>
-      <article class="card utility-row">
-        <span class="ico">📜</span>
-        <div>
-          <h5 data-i18n="event_learning_h">Learning Race</h5>
-          <p data-i18n="event_learning_copy">Finish chapters 1–6 first for 5,000 REAL bonus.</p>
-        </div>
-      </article>
-    </section>
-
   </main>
+
+  <!-- Event Detail Modal -->
+  <div class="modal-overlay" id="event-modal" aria-hidden="true" style="display:none;">
+    <div class="modal-sheet event-modal-sheet">
+      <div class="modal-header">
+        <h3 id="event-modal-title">Event</h3>
+        <button class="modal-close" id="event-modal-close" aria-label="Close">✕</button>
+      </div>
+      <div id="event-modal-body"></div>
+    </div>
+  </div>
 
   <!-- Create Clan Modal -->
   <div class="modal-overlay" id="clan-modal" aria-hidden="true" style="display:none;">
@@ -124,14 +113,14 @@
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=202605270500"></script>
-  <script src="i18n/en.js?v=202605270500"></script>
-  <script src="i18n/fa.js?v=202605270500"></script>
-  <script src="i18n/tg.js?v=202605270500"></script>
-  <script src="i18n.js?v=202605270500"></script>
-  <script src="resources.js?v=202605270500"></script>
-  <script src="audio.js?v=202605270500"></script>
-  <script src="sync.js?v=202605270500"></script>
-  <script src="social.js?v=202605270500"></script>
+  <script src="app.js?v=202605270600"></script>
+  <script src="i18n/en.js?v=202605270600"></script>
+  <script src="i18n/fa.js?v=202605270600"></script>
+  <script src="i18n/tg.js?v=202605270600"></script>
+  <script src="i18n.js?v=202605270600"></script>
+  <script src="resources.js?v=202605270600"></script>
+  <script src="audio.js?v=202605270600"></script>
+  <script src="sync.js?v=202605270600"></script>
+  <script src="social.js?v=202605270600"></script>
 </body>
 </html>

@@ -767,50 +767,201 @@
     if (data.status === 1) setLive(true);
   };
 
-  /* ── GUILDS ──────────────────────────────────────────────────────────── */
+  /* ── EVENTS ──────────────────────────────────────────────────────────── */
 
-  const loadGuilds = async () => {
-    const data = await get('/api/season2/social/guilds');
-    if (!data || data.status !== 1) return;
-    const g = data.guilds || {};
-    const update = (id) => {
-      const el = document.querySelector(`[data-guild-members="${id}"]`);
-      if (!el || !g[id]) return;
-      el.textContent = `${g[id].members} / ${g[id].max} members`;
-    };
-    ['lions', 'simorgh', 'rostam'].forEach(update);
+  let _eventsData = null;
+
+  const fmtCountdown = (s) => {
+    const d = Math.floor(s / 86400);
+    const h = Math.floor((s % 86400) / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    if (d > 0) return `${d}d ${h}h`;
+    if (h > 0) return `${h}h ${m}m`;
+    return `${m}m`;
   };
 
-  /* ── TOURNAMENT TIMER ────────────────────────────────────────────────── */
-
-  const startTournamentTimer = () => {
-    const el = document.getElementById('tournament-timer');
-    if (!el) return;
-
-    const nextSundayEnd = () => {
-      const d = new Date();
-      d.setUTCHours(23, 59, 59, 0);
-      const day = d.getUTCDay(); /* 0 = Sun */
-      const daysLeft = day === 0 ? 7 : 7 - day;
-      d.setUTCDate(d.getUTCDate() + daysLeft);
-      return d;
-    };
-
-    const fmt = (s) => {
-      const d = Math.floor(s / 86400);
-      const h = Math.floor((s % 86400) / 3600);
-      const m = Math.floor((s % 3600) / 60);
-      if (d > 0) return `${d}d ${h}h`;
-      if (h > 0) return `${h}h ${m}m`;
-      return `${m}m`;
-    };
-
+  const startEventTimers = (endsAtMs) => {
     const tick = () => {
-      const diff = Math.max(0, Math.floor((nextSundayEnd().getTime() - Date.now()) / 1000));
-      el.textContent = 'Ends in ' + fmt(diff);
+      const diff = Math.max(0, Math.floor((endsAtMs - Date.now()) / 1000));
+      const label = 'Ends in ' + fmtCountdown(diff);
+      document.querySelectorAll('.event-timer').forEach(el => { el.textContent = label; });
     };
     tick();
     setInterval(tick, 60_000);
+  };
+
+  const openEventModal = (type) => {
+    const modal   = document.getElementById('event-modal');
+    const bodyEl  = document.getElementById('event-modal-body');
+    const titleEl = document.getElementById('event-modal-title');
+    if (!modal || !bodyEl || !_eventsData) return;
+
+    const d = _eventsData;
+
+    if (type === 'tournament') {
+      titleEl.textContent = '🏆 Royal Cup Leaderboard';
+      const lb = d.tournament.leaderboard || [];
+      const rows = lb.map((r, i) => {
+        const isMe = r.is_me;
+        return `<div class="lb-row ${['top1','top2','top3'][i]||''}${isMe?' lb-me':''}">
+          <span class="lb-rank">${i+1}</span>
+          <div>
+            <div class="lb-name">${r.first_name||'Warrior'}${isMe?' <span class="you-tag">You</span>':''}</div>
+          </div>
+          <span class="lb-pts">${fmtN(r.real_balance)} REAL</span>
+        </div>`;
+      }).join('') || '<p class="clan-empty">No players yet.</p>';
+      bodyEl.innerHTML = `
+        <p class="modal-desc">Top 100 players share 100,000 REAL. Resets every Sunday.</p>
+        <article class="card lb-list" style="margin-bottom:0;">${rows}</article>`;
+
+    } else if (type === 'referral') {
+      titleEl.textContent = '📣 Referral Contest';
+      const rc   = d.referral_contest;
+      const lb   = rc.leaderboard || [];
+      const rows = lb.map((r, i) => {
+        const isMe = r.is_me;
+        return `<div class="lb-row ${['top1','top2','top3'][i]||''}${isMe?' lb-me':''}">
+          <span class="lb-rank">${i+1}</span>
+          <div>
+            <div class="lb-name">${r.first_name||'Warrior'}${isMe?' <span class="you-tag">You</span>':''}</div>
+          </div>
+          <span class="lb-pts">${r.verified_referral_count||0} warriors</span>
+        </div>`;
+      }).join('') || '<p class="clan-empty">No referrers yet — be the first!</p>';
+
+      const myRank  = rc.my_rank;
+      const myCount = rc.my_count || 0;
+      const refCode = rc.my_referral_code || '';
+      const refUrl  = refCode ? `https://t.me/shahnameh_bot?start=${refCode}` : '';
+      const inTop   = lb.some(r => r.is_me);
+
+      let myRow = '';
+      if (myRank && !inTop) {
+        myRow = `<div class="lb-row lb-me" style="margin-top:8px;background:rgba(244,197,107,.06);">
+          <span class="lb-rank">${myRank}</span>
+          <div><div class="lb-name">You</div><div class="lb-sub">${myCount} warriors referred</div></div>
+          <span class="lb-pts">${myCount} warriors</span>
+        </div>`;
+      }
+
+      bodyEl.innerHTML = `
+        <p class="modal-desc">Top 10 referrers earn the Founder Frame · Ends Sunday.</p>
+        <article class="card lb-list" style="margin-bottom:0;">${rows}</article>
+        ${myRow}
+        ${refUrl ? `<button class="primary-btn btn-block" id="event-invite-btn" style="margin-top:14px;">📲 Share Invite Link</button>` : ''}`;
+
+      if (refUrl) {
+        document.getElementById('event-invite-btn')?.addEventListener('click', () => {
+          const text = `Join me in Shahnameh! ⚔️ Earn REAL together.`;
+          const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(refUrl)}&text=${encodeURIComponent(text)}`;
+          if (window.Telegram?.WebApp?.openLink) window.Telegram.WebApp.openLink(shareUrl);
+          else window.open(shareUrl, '_blank');
+        });
+      }
+
+    } else if (type === 'learning') {
+      const l      = d.learning_race;
+      const slugs  = l.chapter_slugs  || [];
+      const titles = l.chapter_titles || [];
+      const done   = slugs.filter(s => localStorage.getItem(`real_chapter_done_${s}`) === '1').length;
+      const pct    = Math.round((done / (l.total_chapters || 6)) * 100);
+
+      titleEl.textContent = '📜 Learning Race';
+
+      const chapterRows = slugs.map((slug, i) => {
+        const isDone = localStorage.getItem(`real_chapter_done_${slug}`) === '1';
+        return `<div class="event-chapter-row${isDone?' done':''}">
+          <span class="event-chapter-check">${isDone ? '✓' : String(i+1)}</span>
+          <span>${titles[i] || slug}</span>
+        </div>`;
+      }).join('');
+
+      bodyEl.innerHTML = `
+        <p class="modal-desc">Finish all ${l.total_chapters} chapters first to earn ${fmtN(l.reward_real)} REAL bonus.</p>
+        <div class="event-progress-bar-wrap">
+          <div class="event-progress-bar" style="width:${pct}%;"></div>
+        </div>
+        <div class="event-progress-label">${done} / ${l.total_chapters} chapters · ${pct}%</div>
+        <div class="event-chapter-list">${chapterRows}</div>
+        <a href="learn.html" class="primary-btn btn-block" style="margin-top:14px;display:block;text-align:center;text-decoration:none;">📖 Go to Stories</a>`;
+    }
+
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+  };
+
+  const closeEventModal = () => {
+    const modal = document.getElementById('event-modal');
+    if (!modal) return;
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+  };
+
+  const loadEvents = async () => {
+    const container = document.getElementById('events-list');
+    if (!container) return;
+
+    container.innerHTML = '<p class="clan-empty" style="padding:12px 0;">Loading events…</p>';
+
+    const u  = tgUser();
+    const qs = new URLSearchParams();
+    if (u && u.id) qs.set('telegram_id', String(u.id));
+
+    const data = await get('/api/season2/events?' + qs.toString());
+
+    if (!data || data.status !== 1) {
+      container.innerHTML = '<article class="card"><p class="clan-empty">Events unavailable.</p></article>';
+      return;
+    }
+
+    _eventsData = data;
+
+    const t  = data.tournament;
+    const l  = data.learning_race;
+    const rc = data.referral_contest;
+
+    const doneCount = (l.chapter_slugs || []).filter(
+      s => localStorage.getItem(`real_chapter_done_${s}`) === '1'
+    ).length;
+
+    const timerLabel = 'Ends in ' + fmtCountdown(t.ends_in_seconds);
+
+    const myRefRank  = rc.my_rank;
+    const refSub     = myRefRank ? `Your rank: #${myRefRank}` : 'Top 10 earn the Founder Frame';
+
+    container.innerHTML = `<section class="utility-grid">
+      <article class="card utility-row event-card" data-event="tournament">
+        <span class="ico" style="background:rgba(244,197,107,.14);border-color:var(--border-gold);color:var(--gold);">🏆</span>
+        <div>
+          <h5>Weekly Tournament — Royal Cup</h5>
+          <p>Top 100 share 100,000 REAL · <span class="event-timer">${timerLabel}</span></p>
+        </div>
+        <span class="event-chevron">›</span>
+      </article>
+      <article class="card utility-row event-card" data-event="referral">
+        <span class="ico" style="background:rgba(94,162,255,.14);border-color:rgba(94,162,255,.32);color:var(--azure);">📣</span>
+        <div>
+          <h5>Referral Contest</h5>
+          <p>${refSub} · <span class="event-timer">${timerLabel}</span></p>
+        </div>
+        <span class="event-chevron">›</span>
+      </article>
+      <article class="card utility-row event-card" data-event="learning">
+        <span class="ico">📜</span>
+        <div>
+          <h5>Learning Race</h5>
+          <p>${doneCount}/${l.total_chapters} chapters complete · ${fmtN(l.reward_real)} REAL reward</p>
+        </div>
+        <span class="event-chevron">›</span>
+      </article>
+    </section>`;
+
+    container.querySelectorAll('.event-card').forEach(card => {
+      card.addEventListener('click', () => openEventModal(card.dataset.event));
+    });
+
+    startEventTimers(t.ends_at_ms);
   };
 
   /* ── INIT ─────────────────────────────────────────────────────────────── */
@@ -826,13 +977,17 @@
       loadBrowseClans(true);
     });
 
+    const eventModal = document.getElementById('event-modal');
+    document.getElementById('event-modal-close')?.addEventListener('click', closeEventModal);
+    eventModal?.addEventListener('click', (e) => { if (e.target === eventModal) closeEventModal(); });
+
     await Promise.all([
       loadLb('earners'),
       loadClan(),
       loadBrowseClans(),
+      loadEvents(),
       loadActivity(),
     ]);
-    startTournamentTimer();
   };
 
   if (document.readyState === 'loading') {
