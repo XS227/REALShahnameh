@@ -474,6 +474,20 @@
       hero_prereq_locked: "برای باز کردن قفل، {name} Lv.{level} نیاز است",
       hero_farr_locked: "برای باز کردن قفل، {cost} ✦ فرّ نیاز است",
 
+      /* ── Final Encounter ── */
+      fe_kicker:               "رویارویی نهایی · فصل ۱",
+      fe_ch1_title:            "شکست اهریمن",
+      fe_req_quiz:             "آزمون فصل ۱ کامل شده",
+      fe_req_keyumars:         "کیومرث سطح ۵",
+      fe_req_siamak:           "سیامک جذب شده",
+      fe_current:              "فعلی",
+      fe_btn_locked:           "🔒 قفل است — تمام الزامات را کامل کنید",
+      fe_btn_active:           "⚔ آغاز رویارویی نهایی",
+      fe_chapter_complete_kicker: "فصل ۱ — کامل",
+      fe_ch1_complete_title:   "عصر کیومرث — تسخیر شد",
+      fe_ch1_complete_sub:     "فصل ۲ باز شد · ✦۱ فرّ دریافت شد",
+      fe_burst_label:          "فصل ۲ باز شد!",
+
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "بازی",
       play_title: "ریل شاهنامه",

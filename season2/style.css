@@ -4437,6 +4437,108 @@ body::after {
 }
 
 
+/* ── Final Encounter card ──────────────────────────────────────────────── */
+.fe-card {
+  border-radius: 14px;
+  padding: 16px;
+  margin: 10px 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(14,18,40,.6);
+}
+.fe-card.fe-locked {
+  border-color: rgba(255,255,255,.07);
+  opacity: .88;
+}
+.fe-card.fe-active {
+  border-color: rgba(244,197,107,.35);
+  background: linear-gradient(140deg, rgba(30,22,4,.7) 0%, rgba(20,14,2,.6) 100%);
+  box-shadow: 0 0 28px rgba(244,197,107,.07) inset;
+}
+.fe-card.fe-complete {
+  border-color: rgba(74,216,166,.3);
+  background: linear-gradient(140deg, rgba(4,26,18,.65) 0%, rgba(2,14,10,.6) 100%);
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+.fe-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.fe-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.fe-body { flex: 1; }
+.fe-kicker {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: var(--muted, #6c7287);
+  margin-bottom: 3px;
+}
+.fe-card.fe-active  .fe-kicker { color: rgba(244,197,107,.7); }
+.fe-card.fe-complete .fe-kicker { color: rgba(74,216,166,.7); }
+.fe-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text, #e8eaf0);
+}
+.fe-sub {
+  font-size: 12px;
+  color: rgba(74,216,166,.8);
+  margin-top: 4px;
+}
+.fe-reqs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fe-req {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted, #6c7287);
+}
+.fe-req.fe-done { color: var(--text, #e8eaf0); }
+.fe-check {
+  font-size: 11px;
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.fe-req.fe-done .fe-check { color: rgba(74,216,166,.9); }
+.fe-btn {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #c9a227 0%, #f4c542 60%, #d4a017 100%);
+  color: #0a0800;
+  box-shadow: 0 2px 18px rgba(244,197,107,.35);
+  transition: opacity .15s, transform .1s;
+}
+.fe-btn:active:not(:disabled) { transform: scale(.97); }
+.fe-btn.fe-btn-locked {
+  background: rgba(255,255,255,.06);
+  color: var(--muted, #6c7287);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: none;
+  cursor: not-allowed;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
 /* ── Global economy icon helpers ─────────────────────────────────────── */
 .real-ico {
   display: inline-block; font-style: normal; font-weight: 900;

@@ -473,6 +473,20 @@
       hero_prereq_locked: "Барои кушодани қулф, {name} Lv.{level} лозим аст",
       hero_farr_locked: "Барои кушодани қулф, {cost} ✦ Фарр лозим аст",
 
+      /* ── Final Encounter ── */
+      fe_kicker:               "Рӯёрӯии Ниҳоӣ · Боби 1",
+      fe_ch1_title:            "Мағлубияти Аҳриман",
+      fe_req_quiz:             "Имтиҳони Боби 1 Иҷро Шуд",
+      fe_req_keyumars:         "Каюмарс Сатҳи 5",
+      fe_req_siamak:           "Сиёмак Ҷалб Шуд",
+      fe_current:              "ҳозира",
+      fe_btn_locked:           "🔒 ҚУЛФШУДА — ҲАМАИ ТАЛАБОТРО ИҶРО КУНЕД",
+      fe_btn_active:           "⚔ Оғози Рӯёрӯии Ниҳоӣ",
+      fe_chapter_complete_kicker: "Боби 1 — Комил",
+      fe_ch1_complete_title:   "Асри Каюмарс — Тасхир Шуд",
+      fe_ch1_complete_sub:     "Боби 2 Кушода Шуд · ✦1 Фарр Дода Шуд",
+      fe_burst_label:          "Боби 2 Кушода Шуд!",
+
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "Бозӣ",
       play_title: "REAL Шоҳнома",

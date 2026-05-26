@@ -470,6 +470,20 @@
       hero_prereq_locked: "Requires {name} Lv.{level} to unlock",
       hero_farr_locked: "Requires {cost} ✦ Farr to unlock",
 
+      /* ── Final Encounter ── */
+      fe_kicker:               "Final Encounter · Chapter 1",
+      fe_ch1_title:            "The Defeat of Ahriman",
+      fe_req_quiz:             "Chapter 1 Quiz Completed",
+      fe_req_keyumars:         "Keyumars Level 5",
+      fe_req_siamak:           "Siamak Recruited",
+      fe_current:              "current",
+      fe_btn_locked:           "🔒 LOCKED — COMPLETE ALL REQUIREMENTS",
+      fe_btn_active:           "⚔ Begin Final Encounter",
+      fe_chapter_complete_kicker: "Chapter 1 — Complete",
+      fe_ch1_complete_title:   "Age of Keyumars — Conquered",
+      fe_ch1_complete_sub:     "Chapter 2 Unlocked · ✦1 Farr Awarded",
+      fe_burst_label:          "Chapter 2 Unlocked!",
+
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "Play",
       play_title: "REAL Shahnameh",

@@ -100,6 +100,44 @@
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
     {
+      id: "first-calendar",
+      name: "The First Calendar",
+      type: "codex",
+      rarity: "rare",
+      chapter: 1,
+      img: "/assets/images/lore/first-calendar-codex.png",
+      emoji: "📅",
+      role: "Civilizing Achievement · Order of Time",
+      lore: "Keyumars divided the year into seasons and taught humanity to measure time. From this ordering of days came agriculture, festivals, and the first great rhythm of civilization.",
+      biography: "The establishment of the calendar was among Keyumars's most profound gifts to humanity — more lasting than any palace or garment. By dividing the year into seasons and the seasons into days, he gave humanity the ability to plan, to remember, and to anticipate. The Persian calendar descends in unbroken lineage from this first ordering of time. From it came Nowruz, Mehregan, Sade, Yalda — the entire architecture of Persian festival life. Time, once measured, became human.",
+      faction: "Pishdad Achievement · Sacred Discoveries · Order of Civilization",
+      mythologyRole: "First measurement of time; foundation of the agricultural cycle; origin of Persian festivals; basis of all planning",
+      powers: ["+6% Story XP", "+8 Zar/hr", "Passive: Timekeeper — daily quest XP bonus +5%"],
+      storyAppearances: ["Chapter 1 Codex: The First Calendar", "Chapter 1: Keyumars Orders the Days"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-CH1-016",
+      season: 2, order: 2, cost: 1800, prereq: { hero_id: "keyumars", level: 1 },
+      unlockCondition: "Complete Chapter 1 · Own Keyumars",
+      role_fa: "دستاورد تمدنی · نظم زمان",
+      lore_fa: "کیومرث سال را به فصل‌ها تقسیم کرد و به بشریت آموخت که زمان را اندازه بگیرد. از این نظم‌بخشی به روزها، کشاورزی، جشن‌ها و نخستین ریتم بزرگ تمدن پدیدار شد.",
+      biography_fa: "برپایی تقویم از ژرف‌ترین هدیه‌های کیومرث به بشریت بود — پایدارتر از هر کاخ یا جامه‌ای. با تقسیم سال به فصل‌ها و فصل‌ها به روزها، توانایی برنامه‌ریزی، به یادآوری و پیش‌بینی را به انسان‌ها داد. تقویم پارسی در خط بی‌گسستی از این اولین نظم‌دهی به زمان فرود می‌آید. از آن نوروز، مهرگان، سده و یلدا برخاستند — تمام معماری زندگی جشنواره‌ای پارسی.",
+      faction_fa: "دستاورد پیشدادیان · کشفیات مقدس · نظم تمدن",
+      mythologyRole_fa: "اولین اندازه‌گیری زمان؛ بنیاد چرخه‌ی کشاورزی؛ سرچشمه‌ی جشن‌های پارسی؛ پایه‌ی همه‌ی برنامه‌ریزی‌ها",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · کیومرث داشته باشید",
+      powers_fa: ["+۶٪ تجربه داستان", "+۸ Zar/ساعت", "غیرفعال: نگهبان زمان — پاداش XP مأموریت روزانه +۵٪"],
+      storyAppearances_fa: ["فصل ۱ کدکس: اولین تقویم", "فصل ۱: کیومرث روزها را مرتب می‌کند"],
+      role_tg: "Дастоварди Тамаддун · Тартиби Замон",
+      lore_tg: "Каюмарс солро ба фаслҳо тақсим кард ва ба башарият омӯхт ки вақтро андоза кунад. Аз ин тартибдиҳии рӯзҳо кишоварзӣ, ҷашнҳо ва аввалин ритми бузурги тамаддун пайдо шуд.",
+      biography_tg: "Бунёди тақвим аз амиқ-тарин ҳадяҳои Каюмарс ба башарият буд — пойдортар аз ҳар қаср ё либосе. Бо тақсими сол ба фаслҳо ва фаслҳо ба рӯзҳо, қобилияти барномарезӣ, ба ёд овардан ва пешбинӣро ба одамон дод. Тақвими Порсӣ дар хати бегусастае аз ин аввалин тартибдиҳии вақт фаромеояд. Аз он Навруз, Меҳргон, Сада ва Ялдо баромаданд.",
+      faction_tg: "Дастоварди Пешдодиён · Кашфиёти Муқаддас · Тартиби Тамаддун",
+      mythologyRole_tg: "Аввалин андозагирии вақт; бунёди давраи кишоварзӣ; сарчашмаи ҷашнҳои Порсӣ; пояи ҳамаи барномарезиҳо",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Каюмарсро дошта бошед",
+      powers_tg: ["+6% Таҷрибаи ҳикоя", "+8 Zar/соат", "Ғайрифаъол: Нигаҳбони Вақт — XP ҷоизавии вазифаи рӯзона +5%"],
+      storyAppearances_tg: ["Кодекси Боби 1: Аввалин Тақвим", "Боби 1: Каюмарс Рӯзҳоро Тартиб Медиҳад"],
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
+    },
+    {
       id: "siamak",
       name: "Siamak",
       type: "character",
@@ -953,17 +991,19 @@
     }
 
     if (state === "owned") {
-      const lvl     = owned.level || 1;
+      const lvl     = (owned.level != null ? owned.level : 1);
       const upgCost = cost * lvl;
+      const curZar  = owned.zar_per_hour || 0;
       const nextZar = baseZar * (lvl + 1);
+      const zarDelta = Math.max(0, nextZar - curZar);
       return `<div class="hero-econ-panel owned">
         <div class="hecon-owned-row">
           <span class="hecon-level">Lv.${lvl}</span>
-          <span class="hecon-zar"><span class="zar-ico">🪙</span> +${owned.zar_per_hour || 0} Zar/hr</span>
+          <span class="hecon-zar"><span class="zar-ico">🪙</span> ${curZar} Zar/hr</span>
         </div>
         <button class="hecon-upgrade-btn" data-action="upgrade"
           data-hero-id="${item.id}" data-cost="${upgCost}" data-next-zar="${nextZar}">
-          ↑ Lv.${lvl + 1} &nbsp;·&nbsp; <span class="real-ico">◆</span> ${upgCost.toLocaleString()} REAL
+          ↑ Lv.${lvl + 1} &nbsp;·&nbsp; <span class="zar-ico">🪙</span> +${zarDelta}/hr &nbsp;·&nbsp; <span class="real-ico">◆</span> ${upgCost.toLocaleString()}
         </button>
       </div>`;
     }
@@ -1046,14 +1086,16 @@
         return;
       }
 
-      ownedHeroes[heroId] = { level: result.level, zar_per_hour: result.zar_per_hour };
+      const updLevel = result.level != null ? result.level : ((ownedHeroes[heroId]?.level || 1) + 1);
+      const updZar   = result.zar_per_hour != null ? result.zar_per_hour : 0;
+      ownedHeroes[heroId] = { level: updLevel, zar_per_hour: updZar };
       if (window.RealSync) { try { localStorage.setItem("real_owned_heroes_v1", JSON.stringify(ownedHeroes)); } catch {} }
       if (window.RealPlayer) window.RealPlayer.set({ balance: result.new_balance });
       saveZarHr();
       updateStatsStrip();
       refreshCardBadge(heroId);
 
-      showToast(t("hero_upgrade_success", { name: item.name, level: result.level }));
+      showToast(t("hero_upgrade_success", { name: item.name, level: updLevel }));
       if (navigator.vibrate) navigator.vibrate([8, 4, 12]);
 
       const panelHost = document.querySelector(".cert-econ-slot");

@@ -1562,6 +1562,76 @@
     });
   }
 
+  /* ── Chapter 1 Final Encounter ──────────────────────────── */
+  const feCard = document.getElementById("ch1-final-encounter");
+  if (feCard) {
+    const FE_KEY = "real_ch1_final_encounter_done";
+
+    const renderFinalEncounter = () => {
+      const ch1Done    = (() => { try { return localStorage.getItem("real_chapter_done_keyumars") === "1"; } catch { return false; } })();
+      const owned      = window.RealSync ? window.RealSync.getOwnedHeroes() : {};
+      const keyLv      = owned["keyumars"] ? (owned["keyumars"].level || 0) : 0;
+      const siamakIn   = !!owned["siamak"];
+      const alreadyDone = (() => { try { return localStorage.getItem(FE_KEY) === "1"; } catch { return false; } })();
+
+      if (alreadyDone) {
+        feCard.innerHTML = `
+          <div class="fe-card fe-complete">
+            <div class="fe-icon">🏆</div>
+            <div class="fe-body">
+              <div class="fe-kicker">${t("fe_chapter_complete_kicker")}</div>
+              <div class="fe-title">${t("fe_ch1_complete_title")}</div>
+              <div class="fe-sub">${t("fe_ch1_complete_sub")}</div>
+            </div>
+          </div>`;
+        return;
+      }
+
+      const reqs = [
+        { key: "fe_req_quiz",     done: ch1Done,       note: "" },
+        { key: "fe_req_keyumars", done: keyLv >= 5,    note: ` (${t("fe_current")} Lv.${keyLv})` },
+        { key: "fe_req_siamak",   done: siamakIn,      note: "" },
+      ];
+      const allMet = reqs.every(r => r.done);
+
+      feCard.innerHTML = `
+        <div class="fe-card ${allMet ? "fe-active" : "fe-locked"}">
+          <div class="fe-top">
+            <span class="fe-icon">${allMet ? "⚔" : "🔒"}</span>
+            <div class="fe-body">
+              <div class="fe-kicker">${t("fe_kicker")}</div>
+              <div class="fe-title">${t("fe_ch1_title")}</div>
+            </div>
+          </div>
+          <div class="fe-reqs">
+            ${reqs.map(r => `<div class="fe-req ${r.done ? "fe-done" : ""}">
+              <span class="fe-check">${r.done ? "✓" : "○"}</span>
+              <span>${t(r.key)}${r.note}</span>
+            </div>`).join("")}
+          </div>
+          <button class="fe-btn${allMet ? "" : " fe-btn-locked"}" id="fe-trigger"${allMet ? "" : " disabled"}>
+            ${allMet ? t("fe_btn_active") : t("fe_btn_locked")}
+          </button>
+        </div>`;
+
+      if (allMet) {
+        document.getElementById("fe-trigger").addEventListener("click", completeFinalEncounter);
+      }
+    };
+
+    const completeFinalEncounter = () => {
+      try { localStorage.setItem(FE_KEY, "1"); } catch (_) {}
+      Player.addResource("farr", 1);
+      if (window.RealSync) window.RealSync.syncBalance();
+      fireBurst(t("fe_burst_label"));
+      renderFinalEncounter();
+    };
+
+    /* Render immediately + re-check when quiz is completed */
+    renderFinalEncounter();
+    window.addEventListener("real:quest:quiz", renderFinalEncounter);
+  }
+
   /* unlock burst overlay */
   const fireBurst = (label = "Unlocked") => {
     if (!burst) return;
