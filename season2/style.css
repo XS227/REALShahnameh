@@ -5436,3 +5436,15 @@ body::after {
   color: var(--text);
   margin-bottom: 3px;
 }
+
+/* ── Leader Dashboard slide-down panel ───────────────────────────────── */
+.leader-dashboard-panel {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .35s ease, opacity .25s ease;
+}
+.leader-dashboard-panel.open {
+  max-height: 2000px;
+  opacity: 1;
+}

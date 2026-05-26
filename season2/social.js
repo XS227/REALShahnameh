@@ -385,7 +385,7 @@
       appsEl.innerHTML = `
         <article class="card" style="padding:14px 16px;margin-top:10px;">
           <div class="section-head" style="margin:0 0 8px;"><h3>Applications</h3></div>
-          <p class="clan-empty">No pending applications.</p>
+          <p class="clan-empty">No pending applications. Share your clan link to recruit more warriors! When players apply, their requests will appear here for your approval.</p>
         </article>`;
       return;
     }
@@ -530,7 +530,8 @@
               data-link="${tgLink.replace(/"/g,'&quot;')}"
               style="${tgLink ? '' : 'display:none;'}">💬 Join Clan Chat</button>
             <button class="secondary-btn clan-share-btn" id="clan-share-btn"
-              data-name="${myClan.clan_name.replace(/"/g,'&quot;')}">📢 Share Clan</button>
+              data-name="${myClan.clan_name.replace(/"/g,'&quot;')}"
+              data-clan-id="${myClan.clan_id}">📢 Share Clan</button>
           </div>
           ${isLeader ? '<button class="secondary-btn" id="manage-clan-btn" style="margin-top:10px;width:100%;">⚔ Manage Clan</button>' : ''}
         </article>`;
@@ -544,19 +545,38 @@
       /* Wire Share — use openLink so Telegram shows the sharing UI */
       document.getElementById('clan-share-btn')?.addEventListener('click', (e) => {
         const name     = e.currentTarget.dataset.name;
+        const clanId   = e.currentTarget.dataset.clanId;
+        const botUrl   = `https://t.me/shahnameh_bot?start=clan_${clanId}`;
         const text     = `Bli med i min klan ${name} i Shahnameh! Vi tjener REAL sammen. ⚔️`;
-        const shareUrl = `https://t.me/share/url?url=https%3A%2F%2Ft.me%2Frealshahnamehbot&text=${encodeURIComponent(text)}`;
+        const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(botUrl)}&text=${encodeURIComponent(text)}`;
         openLink(shareUrl);
       });
 
-      /* Leader Dashboard — lazy-loaded on button click */
+      /* Leader Dashboard — toggled open/close with animation */
       if (isLeader) {
         const manageClanEl = document.createElement('div');
-        manageClanEl.id = 'leader-dashboard';
+        manageClanEl.id    = 'leader-dashboard';
+        manageClanEl.className = 'leader-dashboard-panel';
         clanEl.appendChild(manageClanEl);
 
+        let dashboardOpen   = false;
+        let dashboardLoaded = false;
+
         document.getElementById('manage-clan-btn')?.addEventListener('click', () => {
-          loadLeaderDashboard(String(u.id), myClan.clan_id, manageClanEl, tgLink);
+          const btn = document.getElementById('manage-clan-btn');
+          if (!dashboardOpen) {
+            if (!dashboardLoaded) {
+              dashboardLoaded = true;
+              loadLeaderDashboard(String(u.id), myClan.clan_id, manageClanEl, tgLink);
+            }
+            manageClanEl.classList.add('open');
+            dashboardOpen = true;
+            if (btn) btn.textContent = '✖ Close Management';
+          } else {
+            manageClanEl.classList.remove('open');
+            dashboardOpen = false;
+            if (btn) btn.textContent = '⚔ Manage Clan';
+          }
         });
       }
 
