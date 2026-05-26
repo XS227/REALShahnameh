@@ -19,11 +19,13 @@
       const raw = localStorage.getItem('real_adsgram_config');
       if (raw) {
         const saved = JSON.parse(raw);
-        return {
-          bronze: Object.assign({}, DEFAULT_CONFIG.bronze, saved.bronze),
-          silver: Object.assign({}, DEFAULT_CONFIG.silver, saved.silver),
-          gold:   Object.assign({}, DEFAULT_CONFIG.gold,   saved.gold),
+        const merge = (tier) => {
+          const merged = Object.assign({}, DEFAULT_CONFIG[tier], saved[tier]);
+          /* Always fall back to hardcoded blockId if server config has none */
+          if (!merged.blockId) merged.blockId = DEFAULT_CONFIG[tier].blockId;
+          return merged;
         };
+        return { bronze: merge('bronze'), silver: merge('silver'), gold: merge('gold') };
       }
     } catch (_) {}
     return DEFAULT_CONFIG;

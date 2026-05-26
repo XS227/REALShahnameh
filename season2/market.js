@@ -129,6 +129,11 @@
   window.RealMarket = window.RealMarket || {};
   window.RealMarket.refresh = tick;
 
+  /* Show seed price immediately while polling — prevents blank "—" on load */
+  const SEED_PRICE = 0.00042;
+  if (priceEl)  priceEl.textContent  = fmtUsd(SEED_PRICE);
+  if (changeEl) { changeEl.textContent = '+0.00%'; changeEl.dataset.dir = 'up'; }
+
   setStatus("connecting");
   tick();
   setInterval(tick, 60000);
