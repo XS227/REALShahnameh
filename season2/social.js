@@ -175,6 +175,105 @@
     });
   };
 
+  /* ── BROWSE CLANS ───────────────────────────────────────────────────── */
+
+  const showToast = (msg) => {
+    const el = document.querySelector('[data-toast]');
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 2800);
+  };
+
+  let _browseClansDone = false;
+
+  const loadBrowseClans = async (force) => {
+    const container  = document.getElementById('browse-clans');
+    const headEl     = document.getElementById('browse-clans-head');
+    if (!container) return;
+
+    if (!force && _browseClansDone) return;
+    _browseClansDone = true;
+
+    container.innerHTML = '<p class="clan-empty" style="padding:12px 0;">Loading clans…</p>';
+
+    const data = await get('/api/season2/clan/browse');
+
+    if (!data || data.status !== 1 || !(data.clans || []).length) {
+      container.innerHTML = '<p class="clan-empty">No clans yet — be the first to found one!</p>';
+      if (headEl) headEl.style.display = '';
+      return;
+    }
+
+    if (headEl) headEl.style.display = '';
+
+    const u        = tgUser();
+    const myId     = u ? String(u.id) : null;
+    const myClanId = (() => { try { return localStorage.getItem('real_my_clan_id') || ''; } catch { return ''; } })();
+
+    const rows = data.clans.map((c, i) => {
+      const isOwn    = myId && c.clan_id === myClanId;
+      const inAClan  = !!(myClanId);
+      const members  = c.member_count || 1;
+      const rankCls  = ['clan-rank-1', 'clan-rank-2', 'clan-rank-3'][i] || '';
+
+      let actionBtn = '';
+      if (isOwn) {
+        actionBtn = `<span class="clan-browse-badge mine">Your Clan</span>`;
+      } else if (inAClan) {
+        actionBtn = `<span class="clan-browse-badge taken">Joined</span>`;
+      } else {
+        actionBtn = `<button class="secondary-btn clan-apply-btn" data-clan-id="${c.clan_id}" data-clan-name="${c.clan_name.replace(/"/g, '&quot;')}">Apply</button>`;
+      }
+
+      return `
+        <div class="clan-browse-row ${rankCls}">
+          <div class="clan-browse-rank">${i + 1}</div>
+          <div class="clan-browse-badge-lg">${c.clan_name.charAt(0).toUpperCase()}</div>
+          <div class="clan-browse-info">
+            <div class="clan-browse-name">${c.clan_name}</div>
+            <div class="clan-browse-meta">
+              <span>👥 ${members}/50</span>
+              <span>◆ ${fmtN(c.total_real_earned)} REAL</span>
+              <span>Leader: ${c.leader_name}</span>
+            </div>
+          </div>
+          <div class="clan-browse-action">${actionBtn}</div>
+        </div>`;
+    }).join('');
+
+    container.innerHTML = `<article class="card lb-list clan-browse-list">${rows}</article>`;
+
+    /* Wire Apply buttons */
+    container.querySelectorAll('.clan-apply-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        if (!myId) { showToast('Open via Telegram to apply.'); return; }
+        const clanId   = btn.dataset.clanId;
+        const clanName = btn.dataset.clanName;
+        btn.disabled   = true;
+        btn.textContent = '…';
+
+        const res = await post('/api/season2/clan/apply', { telegram_id: myId, clan_id: clanId });
+
+        if (res && res.status === 1) {
+          btn.textContent = 'Applied ✓';
+          btn.classList.add('clan-browse-badge');
+          showToast('Application sent to ' + clanName + '!');
+        } else {
+          const msg = {
+            already_in_clan:      'You are already in a clan.',
+            cannot_apply_own_clan:'That is your own clan.',
+            clan_full:            clanName + ' is full (50/50).',
+            clan_not_found:       'Clan not found.',
+          }[res?.error] || 'Could not apply. Try again.';
+          showToast(msg);
+          btn.disabled   = false;
+          btn.textContent = 'Apply';
+        }
+      });
+    });
+  };
+
   /* ── MY CLAN ─────────────────────────────────────────────────────────── */
 
   const renderWarriorList = (members, verifiedCount, totalCount, clanEl) => {
@@ -200,6 +299,86 @@
     }).join('');
     clanEl.innerHTML += `
       <article class="card lb-list clan-list" style="margin-top:0;">${rows}</article>`;
+  };
+
+  /* ── LEADER DASHBOARD ────────────────────────────────────────────────── */
+
+  const loadLeaderDashboard = async (leaderId, clanId, containerEl) => {
+    containerEl.innerHTML = '<p class="clan-empty" style="padding:10px 0 4px;">Loading applications…</p>';
+
+    const data = await get('/api/season2/clan/applications?' + new URLSearchParams({ telegram_id: leaderId }));
+
+    if (!data || data.status !== 1) {
+      containerEl.innerHTML = '<p class="clan-empty">Could not load applications.</p>';
+      return;
+    }
+
+    const apps = data.applications || [];
+
+    if (!apps.length) {
+      containerEl.innerHTML = `
+        <article class="card" style="padding:14px 16px;">
+          <div class="section-head" style="margin:0 0 8px;"><h3>Applications</h3></div>
+          <p class="clan-empty">No pending applications.</p>
+        </article>`;
+      return;
+    }
+
+    const rows = apps.map(a => `
+      <div class="clan-row clan-app-row" data-applicant="${a.applicant_id}">
+        <div class="clan-avatar">${a.name.replace('@','').charAt(0).toUpperCase()}</div>
+        <div class="clan-info">
+          <div class="clan-name">${a.name}</div>
+          <div class="clan-stats">LVL ${a.level} · ${fmtN(a.xp)} XP</div>
+        </div>
+        <div style="display:flex;gap:6px;">
+          <button class="primary-btn app-accept-btn" data-id="${a.applicant_id}" style="padding:6px 12px;font-size:12px;">✓ Accept</button>
+          <button class="secondary-btn app-reject-btn" data-id="${a.applicant_id}" style="padding:6px 12px;font-size:12px;">✗ Reject</button>
+        </div>
+      </div>`).join('');
+
+    containerEl.innerHTML = `
+      <div class="section-head" style="margin-top:16px;">
+        <h3>Applications</h3>
+        <span class="more">${apps.length} pending</span>
+      </div>
+      <article class="card lb-list clan-list">${rows}</article>`;
+
+    /* Wire accept/reject */
+    containerEl.querySelectorAll('.app-accept-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const applicantId = btn.dataset.id;
+        btn.disabled = true; btn.textContent = '…';
+        const res = await post('/api/season2/clan/accept-application', { telegram_id: leaderId, applicant_id: applicantId });
+        if (res && res.status === 1) {
+          showToast('Warrior accepted into the clan!');
+          containerEl.querySelector(`.clan-app-row[data-applicant="${applicantId}"]`)?.remove();
+        } else {
+          const msg = {
+            clan_full:                'Clan is full (50/50).',
+            applicant_already_in_clan:'Warrior already joined a clan.',
+            application_not_found:   'Application no longer pending.',
+          }[res?.error] || 'Could not accept. Try again.';
+          showToast(msg);
+          btn.disabled = false; btn.textContent = '✓ Accept';
+        }
+      });
+    });
+
+    containerEl.querySelectorAll('.app-reject-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const applicantId = btn.dataset.id;
+        btn.disabled = true; btn.textContent = '…';
+        const res = await post('/api/season2/clan/reject-application', { telegram_id: leaderId, applicant_id: applicantId });
+        if (res && res.status === 1) {
+          showToast('Application rejected.');
+          containerEl.querySelector(`.clan-app-row[data-applicant="${applicantId}"]`)?.remove();
+        } else {
+          btn.disabled = false; btn.textContent = '✗ Reject';
+          showToast('Could not reject. Try again.');
+        }
+      });
+    });
   };
 
   const loadClan = async () => {
@@ -233,9 +412,15 @@
 
     const myClan = clanData && clanData.status === 1 ? clanData.clan : null;
 
+    /* Cache clan id so Browse Clans can disable Apply on own/joined clans */
+    try { localStorage.setItem('real_my_clan_id', myClan ? myClan.clan_id : ''); } catch (_) {}
+    /* Cache for sync.js clan perk check */
+    try { localStorage.setItem('real_has_clan', myClan ? '1' : '0'); } catch (_) {}
+
     /* ── Has a clan: show clan card ── */
     if (myClan) {
-      const initial = myClan.clan_name.charAt(0).toUpperCase();
+      const initial   = myClan.clan_name.charAt(0).toUpperCase();
+      const isLeader  = u && myClan.leader_id === String(u.id);
       clanEl.innerHTML = `
         <div class="section-head">
           <h3>Your Clan</h3>
@@ -247,13 +432,26 @@
             <div>
               <div class="clan-founded-name">${myClan.clan_name}</div>
               ${myClan.motto ? `<div class="clan-founded-motto">"${myClan.motto}"</div>` : ''}
+              ${isLeader ? '<div class="clan-leader-tag">⚔ Clan Leader</div>' : ''}
             </div>
           </div>
           <div class="clan-founded-stats">
             <span>👥 ${myClan.member_count} warriors</span>
             <span>◆ ${fmtN(myClan.total_real_earned)} REAL earned</span>
           </div>
+          ${isLeader ? '<button class="secondary-btn" id="manage-clan-btn" style="margin-top:12px;width:100%;">⚔ Manage Clan</button>' : ''}
         </article>`;
+
+      /* Leader Dashboard — lazy-loaded on button click */
+      if (isLeader) {
+        const manageClanEl = document.createElement('div');
+        manageClanEl.id = 'leader-dashboard';
+        clanEl.appendChild(manageClanEl);
+
+        document.getElementById('manage-clan-btn')?.addEventListener('click', () => {
+          loadLeaderDashboard(String(u.id), myClan.clan_id, manageClanEl);
+        });
+      }
 
       /* Show warriors below the clan card */
       if (refData && refData.status === 1) {
@@ -492,9 +690,17 @@
     setLive(false);
     wireTabs();
     wireClanModal();
+
+    document.getElementById('browse-clans-refresh')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      _browseClansDone = false;
+      loadBrowseClans(true);
+    });
+
     await Promise.all([
       loadLb('earners'),
       loadClan(),
+      loadBrowseClans(),
       loadActivity(),
       loadGuilds(),
     ]);

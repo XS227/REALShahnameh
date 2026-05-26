@@ -317,11 +317,13 @@
     const _zarStart = window.RealUtils
       ? window.RealUtils.updateGlobalZar(_ms)
       : Math.max(_ms.total_zar, (window.RealPlayer && window.RealPlayer.get ? (window.RealPlayer.get().zar || 0) : 0));
-    /* Always derive zar_per_minute from zar_per_hour to guarantee consistency.
-       Use localStorage real_total_zar_hr as fallback for legacy 0-rate heroes. */
-    const _localHr  = Number(localStorage.getItem('real_total_zar_hr') || 0);
-    const _zarHr    = Math.max(_ms.zar_per_hour || 0, _localHr);
-    const _zarMin   = _zarHr / 60;
+    /* Derive zar_per_minute from zar_per_hour; localStorage fallback for legacy heroes.
+       Apply +5% clan bonus when user is a clan member. */
+    const _localHr      = Number(localStorage.getItem('real_total_zar_hr') || 0);
+    const _baseHr       = Math.max(_ms.zar_per_hour || 0, _localHr);
+    const _clanMultiplier = u.clan_id ? 1.05 : 1;
+    const _zarHr        = _baseHr * _clanMultiplier;
+    const _zarMin       = _zarHr / 60;
     startMiningCounter({ zar_per_minute: _zarMin, zar_per_hour: _zarHr, total_zar: _zarStart });
     renderStats(u);
     renderBadges(u);

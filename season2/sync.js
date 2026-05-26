@@ -130,6 +130,8 @@
       if (su.completed_tasks)           localStorage.setItem('real_completed_tasks',   JSON.stringify(su.completed_tasks));
       if (su.adsgram)                   localStorage.setItem('real_adsgram_config',    JSON.stringify(su.adsgram));
       if (su.max_real_balance != null)  localStorage.setItem('real_max_real_balance',  String(su.max_real_balance));
+      localStorage.setItem('real_has_clan',    su.clan_id ? '1' : '0');
+      localStorage.setItem('real_my_clan_id',  su.clan_id || '');
     } catch (_) {}
 
     /* Show offline mining bonus overlay if earned */
