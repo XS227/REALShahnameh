@@ -480,6 +480,7 @@
       fe_req_quiz:             "آزمون فصل ۱ کامل شده",
       fe_req_keyumars:         "کیومرث سطح ۵",
       fe_req_siamak:           "سیامک جذب شده",
+      fe_req_clan:             "یک جنگجو به قبیله بیاور",
       fe_current:              "فعلی",
       fe_btn_locked:           "🔒 قفل است — تمام الزامات را کامل کنید",
       fe_btn_active:           "⚔ آغاز رویارویی نهایی",

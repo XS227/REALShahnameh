@@ -4539,6 +4539,69 @@ body::after {
   letter-spacing: 0;
 }
 
+/* ── Milestone claim button ─────────────────────────────────────────── */
+.milestone.ms-reachable {
+  border-color: rgba(83, 215, 156, .5);
+  box-shadow: 0 0 12px rgba(83, 215, 156, .12);
+}
+.ms-claim-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: linear-gradient(135deg, var(--jade, #53d79c), #3cb87c);
+  color: #02150a;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 0;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: .3px;
+}
+.ms-claim-btn:active { opacity: .85; }
+
+/* ── My Clan section ─────────────────────────────────────────────────── */
+.clan-list { padding: 0; }
+.clan-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+.clan-row:last-child { border-bottom: none; }
+.clan-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(140,109,255,.4), rgba(94,162,255,.3));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 14px; color: #fff;
+  flex-shrink: 0;
+}
+.clan-info { flex: 1; min-width: 0; }
+.clan-name { font-size: 13px; font-weight: 700; color: var(--text); }
+.clan-stats { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.clan-tag {
+  font-size: 10px; font-weight: 700; padding: 3px 7px;
+  border-radius: 6px; white-space: nowrap; flex-shrink: 0;
+}
+.clan-verified {
+  background: rgba(83,215,156,.18);
+  border: 1px solid rgba(83,215,156,.4);
+  color: var(--jade, #53d79c);
+}
+.clan-pending {
+  background: rgba(244,197,107,.10);
+  border: 1px solid rgba(244,197,107,.28);
+  color: var(--gold);
+}
+.clan-empty {
+  padding: 14px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
 /* ── Global economy icon helpers ─────────────────────────────────────── */
 .real-ico {
   display: inline-block; font-style: normal; font-weight: 900;

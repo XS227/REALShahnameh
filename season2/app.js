@@ -328,8 +328,9 @@
     try {
       const zarHr = parseInt(localStorage.getItem("real_total_zar_hr") || "0", 10);
       if (!zarHr) return;
-      const vipBonus = 1 + Player.vipLevel() * 0.05;
-      const gain = Math.max(1, Math.floor((zarHr / 60) * vipBonus));
+      const vipBonus  = 1 + Player.vipLevel() * 0.05;
+      const teamMult  = parseFloat(localStorage.getItem("real_team_mult") || "1") || 1;
+      const gain = Math.max(1, Math.floor((zarHr / 60) * vipBonus * teamMult));
       Player.addResource("zar", gain);
       if (window.RealResources) {
         const hud = document.querySelector("[data-resource-hud]");
@@ -1568,11 +1569,12 @@
     const FE_KEY = "real_ch1_final_encounter_done";
 
     const renderFinalEncounter = () => {
-      const ch1Done    = (() => { try { return localStorage.getItem("real_chapter_done_keyumars") === "1"; } catch { return false; } })();
-      const owned      = window.RealSync ? window.RealSync.getOwnedHeroes() : {};
-      const keyLv      = owned["keyumars"] ? (owned["keyumars"].level || 0) : 0;
-      const siamakIn   = !!owned["siamak"];
-      const alreadyDone = (() => { try { return localStorage.getItem(FE_KEY) === "1"; } catch { return false; } })();
+      const ch1Done      = (() => { try { return localStorage.getItem("real_chapter_done_keyumars") === "1"; } catch { return false; } })();
+      const owned        = window.RealSync ? window.RealSync.getOwnedHeroes() : {};
+      const keyLv        = owned["keyumars"] ? (owned["keyumars"].level || 0) : 0;
+      const siamakIn     = !!owned["siamak"];
+      const verifiedRef  = (() => { try { return parseInt(localStorage.getItem("real_verified_referral_count") || "0", 10); } catch { return 0; } })();
+      const alreadyDone  = (() => { try { return localStorage.getItem(FE_KEY) === "1"; } catch { return false; } })();
 
       if (alreadyDone) {
         feCard.innerHTML = `
@@ -1588,9 +1590,10 @@
       }
 
       const reqs = [
-        { key: "fe_req_quiz",     done: ch1Done,       note: "" },
-        { key: "fe_req_keyumars", done: keyLv >= 5,    note: ` (${t("fe_current")} Lv.${keyLv})` },
-        { key: "fe_req_siamak",   done: siamakIn,      note: "" },
+        { key: "fe_req_quiz",     done: ch1Done,           note: "" },
+        { key: "fe_req_keyumars", done: keyLv >= 5,         note: ` (${t("fe_current")} Lv.${keyLv})` },
+        { key: "fe_req_siamak",   done: siamakIn,           note: "" },
+        { key: "fe_req_clan",     done: verifiedRef >= 1,   note: ` (${verifiedRef}/1)` },
       ];
       const allMet = reqs.every(r => r.done);
 
@@ -1627,9 +1630,10 @@
       renderFinalEncounter();
     };
 
-    /* Render immediately + re-check when quiz is completed */
+    /* Render immediately; re-check when quiz or referrals update */
     renderFinalEncounter();
-    window.addEventListener("real:quest:quiz", renderFinalEncounter);
+    window.addEventListener("real:quest:quiz",      renderFinalEncounter);
+    window.addEventListener("real:referral:update", renderFinalEncounter);
   }
 
   /* unlock burst overlay */

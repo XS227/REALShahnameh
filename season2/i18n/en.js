@@ -476,6 +476,7 @@
       fe_req_quiz:             "Chapter 1 Quiz Completed",
       fe_req_keyumars:         "Keyumars Level 5",
       fe_req_siamak:           "Siamak Recruited",
+      fe_req_clan:             "Recruit 1 Warrior to your Clan",
       fe_current:              "current",
       fe_btn_locked:           "🔒 LOCKED — COMPLETE ALL REQUIREMENTS",
       fe_btn_active:           "⚔ Begin Final Encounter",

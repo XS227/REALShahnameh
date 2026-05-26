@@ -42,6 +42,12 @@
     const u = tgUser();
     if (!u || !u.id) { _resolveReady(null); return; }
 
+    let startParam = '';
+    try {
+      startParam = (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initDataUnsafe
+        && window.Telegram.WebApp.initDataUnsafe.start_param) || '';
+    } catch (_) {}
+
     const data = await post(API.userSync, {
       telegram_id:   String(u.id),
       first_name:    u.first_name    || '',
@@ -49,6 +55,7 @@
       username:      u.username      || '',
       language_code: u.language_code || 'en',
       photo_url:     u.photo_url     || '',
+      start_param:   startParam,
     });
 
     if (!data || data.status !== 1 || !data.user) {
@@ -84,6 +91,14 @@
       if (su.quest_tap)    localStorage.setItem('real_daily_taps_'   + dk, String(su.quest_tap));
       /* Cache profile pic so hydrateProfile() can use it */
       if (su.profile_pic)  localStorage.setItem('real_profile_pic', su.profile_pic);
+      /* Cache referral data for earn.js + Final Encounter gate */
+      if (su.referral_code) localStorage.setItem('real_referral_code', su.referral_code);
+      if (su.verified_referral_count != null) {
+        localStorage.setItem('real_verified_referral_count', String(su.verified_referral_count));
+      }
+      if (su.milestones_claimed) {
+        localStorage.setItem('real_milestones_claimed', JSON.stringify(su.milestones_claimed));
+      }
     } catch (_) {}
 
     _resolveReady(su);
