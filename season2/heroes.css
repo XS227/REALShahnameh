@@ -265,9 +265,9 @@
   color: rgba(255,255,255,.85);
 }
 
-/* Chapter dot — top right */
+/* Chapter dot — top left (state badge owns top-right) */
 .coll-chapter-dot {
-  position: absolute; top: 7px; right: 7px; z-index: 2;
+  position: absolute; top: 7px; left: 7px; z-index: 2;
   padding: 2px 6px; border-radius: 999px;
   background: rgba(244,197,107,.18); border: 1px solid rgba(244,197,107,.45);
   color: var(--gold); font-size: 8px; font-weight: 800; letter-spacing: .4px;
@@ -523,11 +523,11 @@
 
 /* Quick lore excerpt */
 .cert-lore-excerpt {
-  margin: 0; font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.65;
-  padding: 12px 14px; border-radius: 12px;
+  margin: 0; font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.75;
+  padding: 14px 14px 14px 18px; border-radius: 12px;
   background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.07);
   font-style: italic;
-  position: relative; overflow: hidden;
+  position: relative;
 }
 .cert-lore-excerpt::before {
   content: '"'; position: absolute; top: 4px; left: 10px;
@@ -680,9 +680,9 @@
 .zar-ico {
   display: inline-block;
   font-style: normal;
-  color: #ffcf40;
-  font-size: .9em;
-  margin-right: 1px;
+  font-size: .88em;
+  margin-right: 2px;
+  vertical-align: middle;
 }
 
 /* =========================================================

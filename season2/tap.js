@@ -379,7 +379,7 @@
     const streakVal   = document.querySelector('[data-streak-val]');
     const zarHrEl  = document.querySelector('[data-zar-hr]');
 
-    if (balEl)      balEl.textContent    = (p.balance || 0).toLocaleString();
+    if (balEl)      balEl.innerHTML      = `<span class="real-ico">◆</span> ${(p.balance || 0).toLocaleString()}`;
     if (energyEl)   energyEl.textContent = p.energy != null ? p.energy : 1000;
     if (fillEl)     fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
     const streak = p.dailyStreak || 1;
@@ -390,8 +390,8 @@
     if (zarHrEl) {
       try {
         const zarHr = parseInt(localStorage.getItem('real_total_zar_hr') || '0', 10);
-        zarHrEl.innerHTML = `<span class="zar-ico">⚡</span> +${zarHr}`;
-      } catch { zarHrEl.innerHTML = '<span class="zar-ico">⚡</span> +0'; }
+        zarHrEl.innerHTML = `<span class="zar-ico">🪙</span> +${zarHr}`;
+      } catch { zarHrEl.innerHTML = '<span class="zar-ico">🪙</span> +0'; }
     }
   };
 

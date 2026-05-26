@@ -614,13 +614,13 @@
         if (state === "locked") {
           stateBadge = `<span class="hero-state-badge locked-badge">🔒</span>`;
         } else if (state === "owned") {
-          stateBadge = `<span class="hero-state-badge owned-badge">Lv.${owned.level}</span>`;
+          stateBadge = `<span class="hero-state-badge owned-badge">Lv.${owned.level || 1}</span>`;
         } else {
           stateBadge = `<span class="hero-state-badge available-badge">◆ ${(RARITY_COST[item.rarity] || 0).toLocaleString()}</span>`;
         }
 
         const subLine = state === "owned"
-          ? `<span class="zar-ico">⚡</span> +${owned.zar_per_hour || 0} Zar/hr`
+          ? `<span class="zar-ico">🪙</span> +${owned.zar_per_hour || 0} Zar/hr`
           : rarityLabel(item.rarity);
 
         card.innerHTML = `
@@ -738,7 +738,7 @@
       return `<div class="hero-econ-panel owned">
         <div class="hecon-owned-row">
           <span class="hecon-level">Lv.${lvl}</span>
-          <span class="hecon-zar"><span class="zar-ico">⚡</span> +${owned.zar_per_hour || 0} Zar/hr</span>
+          <span class="hecon-zar"><span class="zar-ico">🪙</span> +${owned.zar_per_hour || 0} Zar/hr</span>
         </div>
         <button class="hecon-upgrade-btn" data-action="upgrade"
           data-hero-id="${item.id}" data-cost="${upgCost}" data-next-zar="${nextZar}">
@@ -752,7 +752,7 @@
     return `<div class="hero-econ-panel available">
       <div class="hecon-price-row">
         <span class="hecon-cost"><span class="real-ico">◆</span> ${cost.toLocaleString()} REAL</span>
-        <span class="hecon-zar"><span class="zar-ico">⚡</span> +${buyZar} Zar/hr</span>
+        <span class="hecon-zar"><span class="zar-ico">🪙</span> +${buyZar} Zar/hr</span>
       </div>
       <button class="hecon-buy-btn" data-action="buy"
         data-hero-id="${item.id}" data-cost="${cost}" data-zar="${buyZar}">
@@ -819,14 +819,14 @@
         return;
       }
 
-      ownedHeroes[heroId] = { level: result.new_level, zar_per_hour: result.zar_per_hour };
+      ownedHeroes[heroId] = { level: result.level, zar_per_hour: result.zar_per_hour };
       if (window.RealSync) { try { localStorage.setItem("real_owned_heroes_v1", JSON.stringify(ownedHeroes)); } catch {} }
       if (window.RealPlayer) window.RealPlayer.set({ balance: result.new_balance });
       saveZarHr();
       updateStatsStrip();
       refreshCardBadge(heroId);
 
-      showToast(t("hero_upgrade_success", { name: item.name, level: result.new_level }));
+      showToast(t("hero_upgrade_success", { name: item.name, level: result.level }));
       if (navigator.vibrate) navigator.vibrate([8, 4, 12]);
 
       const panelHost = document.querySelector(".cert-econ-slot");
@@ -855,12 +855,12 @@
     const badge = card.querySelector(".hero-state-badge");
     if (badge) {
       badge.className = `hero-state-badge ${state}-badge`;
-      if (state === "owned") badge.textContent = `Lv.${owned.level}`;
+      if (state === "owned") badge.textContent = `Lv.${owned.level || 1}`;
       else if (state === "available") badge.innerHTML = `◆ ${(RARITY_COST[item.rarity] || 0).toLocaleString()}`;
     }
     const rarityEl = card.querySelector(".coll-rarity");
     if (rarityEl && state === "owned") {
-      rarityEl.innerHTML = `<span class="zar-ico">⚡</span> +${owned.zar_per_hour || 0} Zar/hr`;
+      rarityEl.innerHTML = `<span class="zar-ico">🪙</span> +${owned.zar_per_hour || 0} Zar/hr`;
     }
   };
 
@@ -1047,6 +1047,7 @@
   const closeCertificate = () => {
     const backdrop = document.getElementById("cert-backdrop");
     if (backdrop) backdrop.classList.remove("open");
+    closeFullscreen();
   };
 
   /* =========================================================
