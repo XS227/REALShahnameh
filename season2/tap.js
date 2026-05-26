@@ -105,11 +105,28 @@
     showToast._t = setTimeout(() => el.classList.remove("show"), 2200);
   };
 
+  /* ---- Unlock skins based on player progress ---- */
+  const resolveUnlocks = () => {
+    try {
+      const p = window.RealPlayer && window.RealPlayer.get && window.RealPlayer.get();
+      const ch1Unlocked = (p && p.chapterProgress && p.chapterProgress[1] && p.chapterProgress[1].unlocked)
+                        || localStorage.getItem('real_chapter_done_keyumars') === '1';
+      if (ch1Unlocked) {
+        const keyumars = SKINS.find(s => s.id === 'keyumars');
+        if (keyumars) { keyumars.locked = false; keyumars.unlock = null; }
+      }
+    } catch (_) {}
+  };
+
   /* ---- Apply skin to orb ---- */
   const applyOrbSkin = (skin) => {
     const orbImg  = document.querySelector("[data-skin-orb]");
     const orbText = document.querySelector("[data-skin-orb-text]");
+    const orb     = document.querySelector("[data-energy-orb]");
     if (!orbImg || !orbText) return;
+
+    /* Keyumars royal-gold visual */
+    if (orb) orb.classList.toggle("skin-keyumars-active", skin.id === "keyumars");
 
     if (skin.img) {
       orbText.style.display = "none";
@@ -319,6 +336,35 @@
     });
   };
 
+  /* ---- Adsgram energy refill (Tap page) ---- */
+  const setupAdsgramRefill = () => {
+    const btn = document.querySelector('[data-adsgram-energy]');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+      if (!window.RealAdService) { showToast('Ad service not ready.'); return; }
+      const origText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Loading Ad…';
+      window.RealAdService.showAd('bronze')
+        .then(() => {
+          hydrateFromPlayer();
+          showToast('⚡ Energy filled!');
+          try { window.dispatchEvent(new CustomEvent('real:burst', { detail: { label: '⚡ Energy filled!' } })); } catch (_) {}
+          btn.disabled = false;
+          btn.textContent = origText;
+        })
+        .catch(err => {
+          const msg = err.type === 'cooldown' ? 'Cooldown — come back soon!'
+                    : err.type === 'skipped'  ? 'Ad skipped — no reward.'
+                    : 'Ad unavailable. Try again.';
+          showToast(msg);
+          btn.disabled = false;
+          btn.textContent = origText;
+        });
+    });
+  };
+
   /* ---- Claim button stub ---- */
   const setupClaim = () => {
     document.querySelectorAll("[data-action='claim']").forEach((btn) => {
@@ -397,10 +443,12 @@
 
   /* ---- Init ---- */
   const init = () => {
+    resolveUnlocks();
     buildSkinRail();
     setupEnhancedTapFX();
     setupContractCopy();
     setupClaim();
+    setupAdsgramRefill();
 
     // Hydrate immediately from localStorage Player state
     hydrateFromPlayer();

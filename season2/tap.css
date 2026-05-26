@@ -163,6 +163,25 @@
   line-height: 1;
 }
 
+/* Keyumars — sovereign of the first court — royal gold + leopard warmth */
+.mint-core-section .energy-orb.skin-keyumars-active {
+  box-shadow:
+    inset 0 0 60px rgba(255, 210, 80, .82),
+    0 0 90px rgba(244, 197, 107, .95),
+    0 0 180px rgba(220, 140, 0, .45);
+  background: radial-gradient(circle at 38% 32%,
+    rgba(255, 235, 120, .22),
+    rgba(200, 130, 20, .14) 48%,
+    rgba(90, 50, 10, .12));
+  border-color: var(--gold);
+}
+.mint-core-section .energy-orb.skin-keyumars-active:active {
+  box-shadow:
+    inset 0 0 80px rgba(255, 220, 80, 1),
+    0 0 140px rgba(244, 197, 107, 1),
+    0 0 260px rgba(220, 140, 0, .6);
+}
+
 /* Mint hint below energy bar */
 .mint-hint {
   margin-top: 6px;
