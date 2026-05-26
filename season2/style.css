@@ -4741,6 +4741,101 @@ body::after {
   margin: 0;
 }
 
+/* ── Adsgram Watch & Earn ────────────────────────────────────────────── */
+.adsgram-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.adsgram-tier {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+}
+.adt-left { flex: 1; min-width: 0; }
+.adt-badge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .8px;
+  border-radius: 5px;
+  padding: 2px 8px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.bronze-badge {
+  background: rgba(205,127,50,.22);
+  border: 1px solid rgba(205,127,50,.45);
+  color: #cd7f32;
+}
+.silver-badge {
+  background: rgba(192,192,192,.18);
+  border: 1px solid rgba(192,192,192,.4);
+  color: #c0c0c0;
+}
+.gold-badge {
+  background: rgba(244,197,107,.18);
+  border: 1px solid var(--border-gold);
+  color: var(--gold);
+}
+.adt-reward {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+.adt-duration {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.adt-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.adt-btn {
+  font-size: 13px;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 20px;
+  cursor: pointer;
+  letter-spacing: .3px;
+  transition: opacity .2s, transform .1s;
+  white-space: nowrap;
+}
+.adt-btn:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+  transform: none !important;
+}
+.adt-btn:not(:disabled):active { transform: scale(.96); }
+.bronze-btn {
+  background: linear-gradient(135deg, #8b5e30, #cd7f32);
+  color: #fff;
+}
+.silver-btn {
+  background: linear-gradient(135deg, #6e6e6e, #c0c0c0);
+  color: #111;
+}
+.gold-btn {
+  background: linear-gradient(135deg, var(--gold), #f5a623);
+  color: #1a1200;
+}
+.adt-cooldown {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: right;
+}
+.bronze-tier { border-left: 2px solid #cd7f32; }
+.silver-tier { border-left: 2px solid #c0c0c0; }
+.gold-tier   { border-left: 2px solid var(--gold); }
+
 /* ── Global economy icon helpers ─────────────────────────────────────── */
 .real-ico {
   display: inline-block; font-style: normal; font-weight: 900;

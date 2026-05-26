@@ -642,6 +642,114 @@
     }
   };
 
+  /* ── Adsgram Watch & Earn ────────────────────────────────────────────── */
+  const AD_TIERS = ['bronze', 'silver', 'gold'];
+
+  /* Countdown timers per tier (for the cooldown display) */
+  const adCdIntervals = {};
+
+  const updateAdButton = (tier) => {
+    const btn = document.querySelector(`[data-ad-trigger="${tier}"]`);
+    const cdEl = document.getElementById('cd-' + tier);
+    if (!btn) return;
+
+    const svc = window.RealAdService;
+    if (!svc) {
+      btn.disabled = true;
+      btn.textContent = 'Loading…';
+      return;
+    }
+
+    const cfg = svc.getTierConfig();
+    const tierCfg = cfg && cfg[tier];
+
+    /* Not configured yet — grey out silently */
+    if (!tierCfg || !tierCfg.blockId) {
+      btn.disabled = true;
+      btn.textContent = 'Soon';
+      if (cdEl) { cdEl.hidden = true; cdEl.textContent = ''; }
+      return;
+    }
+
+    const remaining = svc.getCooldowns()[tier] || 0;
+    if (remaining > 0) {
+      btn.disabled = true;
+      btn.textContent = 'Watch';
+      if (cdEl) {
+        cdEl.hidden = false;
+        const mins = Math.floor(remaining / 60);
+        const secs = remaining % 60;
+        cdEl.textContent = 'Ready in ' + (mins > 0 ? mins + 'm ' : '') + secs + 's';
+      }
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Watch';
+      if (cdEl) { cdEl.hidden = true; cdEl.textContent = ''; }
+    }
+  };
+
+  const startCooldownTick = (tier) => {
+    clearInterval(adCdIntervals[tier]);
+    adCdIntervals[tier] = setInterval(() => {
+      const rem = (window.RealAdService && window.RealAdService.getCooldowns()[tier]) || 0;
+      updateAdButton(tier);
+      if (rem <= 0) clearInterval(adCdIntervals[tier]);
+    }, 1000);
+  };
+
+  const handleAdResult = (tier, result) => {
+    const r = result.rewards || {};
+    const parts = [];
+    if (r.real) parts.push('+' + r.real + ' ◆');
+    if (r.gems) parts.push('+' + r.gems + ' 💎');
+    if (r.farr) parts.push('+' + r.farr + ' ✦');
+    const label = parts.join(' · ') || 'Reward earned!';
+    showToast(label);
+    fireBurst(label);
+    startCooldownTick(tier);
+    updateAdButton(tier);
+  };
+
+  const handleAdError = (tier, err) => {
+    if (err.type === 'cooldown') {
+      showToast('Please wait before watching another ad.');
+      startCooldownTick(tier);
+    } else if (err.type === 'not_configured') {
+      showToast('Ads not available yet.');
+    } else if (err.type === 'sdk_missing') {
+      showToast('Ad SDK not loaded. Try refreshing.');
+    } else if (err.type === 'skipped') {
+      showToast('Ad skipped — no reward.');
+    } else {
+      showToast('Ad unavailable. Try again later.');
+    }
+    updateAdButton(tier);
+  };
+
+  const bootAdsgram = () => {
+    /* Initial state update */
+    AD_TIERS.forEach(tier => {
+      updateAdButton(tier);
+      /* If already in cooldown from a previous session, tick it */
+      const rem = (window.RealAdService && window.RealAdService.getCooldowns()[tier]) || 0;
+      if (rem > 0) startCooldownTick(tier);
+    });
+
+    /* Wire click handlers */
+    AD_TIERS.forEach(tier => {
+      const btn = document.querySelector(`[data-ad-trigger="${tier}"]`);
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        if (!window.RealAdService) { showToast('Ad service not ready.'); return; }
+        btn.disabled = true;
+        btn.textContent = '…';
+        window.RealAdService.showAd(tier)
+          .then(result => handleAdResult(tier, result))
+          .catch(err   => handleAdError(tier, err));
+      });
+    });
+  };
+
   /* ── Boot ────────────────────────────────────────────────────────────── */
   const boot = async () => {
     const u = tgUser();
@@ -651,6 +759,7 @@
     renderCheckin();
     renderSocialTasks(shareUrl);
     renderPartners();
+    bootAdsgram();
     updateSeasonStanding();
 
     const cachedVerified = parseInt(localStorage.getItem('real_verified_referral_count') || '0', 10);

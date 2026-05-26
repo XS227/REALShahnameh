@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Earn</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
   <link rel="stylesheet" href="style.css?v=202605262300" />
 </head>
 <body>
@@ -78,30 +79,50 @@
       <div class="bar" style="margin-top:10px;"><span class="fill" data-team-bar style="width:0%; background: linear-gradient(90deg, var(--violet), var(--gold));"></span></div>
     </article>
 
-    <!-- Rewarded ads — primary rewards are Energy + Gems + Zar (daily training).
-         REAL drops are demoted to a small ecosystem row beneath. -->
-    <div class="section-head"><h3 data-i18n="watch_earn">Watch &amp; Earn</h3><span class="more" style="cursor:default;" data-ad-remaining data-i18n="ad_remaining">5 / 5 today</span></div>
-    <section class="action-grid">
-      <article class="card action gold-edge">
-        <h4><span class="ico">⚡</span> <span data-i18n="ad_energy_h">+25 Energy</span></h4>
-        <p class="copy" data-i18n="ad_energy_copy">Top up your energy to keep tapping.</p>
-        <div class="row"><button class="primary-btn btn-block" data-ad="energy" data-i18n="ad_energy_btn">Watch ad · +25 ⚡</button></div>
+    <!-- Adsgram Rewarded Ads -->
+    <div class="section-head">
+      <h3 data-i18n="watch_earn">Watch &amp; Earn</h3>
+      <span class="more" style="cursor:default; font-size:10px; opacity:.6;">powered by Adsgram</span>
+    </div>
+    <section class="adsgram-grid" id="adsgram-grid">
+
+      <article class="card adsgram-tier bronze-tier" data-ad-tier="bronze">
+        <div class="adt-left">
+          <div class="adt-badge bronze-badge">BRONZE</div>
+          <div class="adt-reward">+500 ◆</div>
+          <div class="adt-duration">~10 sec</div>
+        </div>
+        <div class="adt-right">
+          <button class="adt-btn bronze-btn" data-ad-trigger="bronze">Watch</button>
+          <div class="adt-cooldown" id="cd-bronze" hidden></div>
+        </div>
       </article>
-      <article class="card action violet-edge">
-        <h4><span class="ico">💎</span> <span data-i18n="ad_gems_h">+10 Gems</span></h4>
-        <p class="copy" data-i18n="ad_gems_copy">Stockpile gems for hero upgrades.</p>
-        <div class="row"><button class="secondary-btn btn-block" data-ad="gems" data-i18n="ad_gems_btn">Watch ad · +10 💎</button></div>
+
+      <article class="card adsgram-tier silver-tier" data-ad-tier="silver">
+        <div class="adt-left">
+          <div class="adt-badge silver-badge">SILVER</div>
+          <div class="adt-reward">+2,000 ◆</div>
+          <div class="adt-duration">~20 sec</div>
+        </div>
+        <div class="adt-right">
+          <button class="adt-btn silver-btn" data-ad-trigger="silver">Watch</button>
+          <div class="adt-cooldown" id="cd-silver" hidden></div>
+        </div>
       </article>
+
+      <article class="card adsgram-tier gold-tier" data-ad-tier="gold">
+        <div class="adt-left">
+          <div class="adt-badge gold-badge">GOLD</div>
+          <div class="adt-reward">+5,000 ◆ · 💎</div>
+          <div class="adt-duration">~30 sec</div>
+        </div>
+        <div class="adt-right">
+          <button class="adt-btn gold-btn" data-ad-trigger="gold">Watch</button>
+          <div class="adt-cooldown" id="cd-gold" hidden></div>
+        </div>
+      </article>
+
     </section>
-    <!-- REAL ad — discreet ecosystem row, intentionally NOT in the action-grid headline. -->
-    <article class="card" data-ad-real-row style="margin-top:8px; padding:10px 12px; display:flex; align-items:center; gap:10px; background:rgba(255,255,255,.025); border-color:rgba(220,220,235,.12);">
-      <span class="ico" style="font-size:12px; color:rgba(220,220,235,.7); background:rgba(220,220,235,.05); border-color:rgba(220,220,235,.12); flex:0 0 28px; width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px;">◆</span>
-      <div style="flex:1; min-width:0;">
-        <div style="font-size:12px; font-weight:700;" data-i18n="ad_real_h">+100 REAL</div>
-        <div style="font-size:10px; color:var(--muted); margin-top:2px;" data-i18n="ad_real_copy">Quick boost to your balance. Daily limit applies.</div>
-      </div>
-      <button class="ghost-btn" data-ad="real" style="font-size:11px; padding:6px 12px; white-space:nowrap;" data-i18n="ad_real_btn">Watch ad · +100 REAL</button>
-    </article>
 
     <!-- Milestones -->
     <div class="section-head"><h3 data-i18n="milestones">Milestones</h3><span class="more" style="cursor:default;" data-i18n="tap_to_share">Tap to share</span></div>
@@ -264,6 +285,7 @@
   <script src="resources.js?v=202605262300"></script>
   <script src="audio.js?v=202605262300"></script>
   <script src="sync.js?v=202605262300"></script>
+  <script src="adsgram.js?v=202605262300"></script>
   <script src="earn.js?v=202605262300"></script>
 </body>
 </html>

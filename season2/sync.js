@@ -102,6 +102,7 @@
       if (su.last_checkin_date != null) localStorage.setItem('real_last_checkin_date', su.last_checkin_date);
       if (su.checkin_streak    != null) localStorage.setItem('real_checkin_streak',    String(su.checkin_streak));
       if (su.completed_tasks)           localStorage.setItem('real_completed_tasks',   JSON.stringify(su.completed_tasks));
+      if (su.adsgram)                   localStorage.setItem('real_adsgram_config',    JSON.stringify(su.adsgram));
     } catch (_) {}
 
     _resolveReady(su);
