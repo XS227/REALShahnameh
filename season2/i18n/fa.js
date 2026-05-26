@@ -471,6 +471,7 @@
       hero_available_lbl: "قابل خرید",
       hero_economy_section: "اقتصاد قهرمان",
       hero_already_owned: "قبلاً خریداری شده",
+      hero_prereq_locked: "برای باز کردن قفل، {name} Lv.{level} نیاز است",
 
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "بازی",

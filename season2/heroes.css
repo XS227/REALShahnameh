@@ -716,11 +716,26 @@
   box-shadow: 0 0 12px rgba(244,197,107,.3);
 }
 
+/* Prereq-locked badge — amber/orange, distinct from full-lock */
+.prereq-badge {
+  background: rgba(255,140,40,.14);
+  border: 1px solid rgba(255,140,40,.45);
+  color: #ff9b3c;
+  font-size: 12px;
+  box-shadow: 0 0 8px rgba(255,140,40,.18);
+}
+
 /* Dim locked cards slightly */
 .coll-card.hero-state-locked .coll-portrait img,
 .coll-card.hero-state-locked .coll-emoji {
   opacity: .42;
   filter: grayscale(65%);
+}
+/* Prereq-locked — slightly dimmed but still visible, hint of orange tint */
+.coll-card.hero-state-prereq_locked .coll-portrait img,
+.coll-card.hero-state-prereq_locked .coll-emoji {
+  opacity: .55;
+  filter: grayscale(40%) sepia(20%);
 }
 
 /* Owned cards — gold border accent */
@@ -750,12 +765,17 @@
   flex-direction: column;
   gap: 11px;
 }
-.hero-econ-panel.locked {
+.hero-econ-panel.locked,
+.hero-econ-panel.prereq_locked {
   background: rgba(14,18,40,.55);
   border: 1px solid rgba(255,255,255,.07);
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+.hero-econ-panel.prereq_locked {
+  border-color: rgba(255,140,40,.25);
+  background: rgba(30,18,10,.55);
 }
 .hero-econ-panel.available {
   background: linear-gradient(140deg, rgba(244,197,107,.08) 0%, rgba(180,130,10,.05) 100%);

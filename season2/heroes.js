@@ -79,7 +79,7 @@
       side: "light",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-001",
-      season: 2,
+      season: 2, order: 1, cost: 2000, prereq: null,
       unlockCondition: "Complete Chapter 1 · The First King",
       role_fa: "اولین شاه · دربار کوهستان",
       lore_fa: "اولین پادشاه میرا که تاج برگ بر سر نهاد و از کوه‌های مقدس فرمان راند؛ به بشریت آشپزی، بافتن جامه و زندگی در نظم به جای توحش آموخت.",
@@ -117,7 +117,7 @@
       side: "light",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-002",
-      season: 2,
+      season: 2, order: 9, cost: 500, prereq: { hero_id: "keyumars", level: 1 },
       unlockCondition: "Complete Chapter 1 · The First King",
       role_fa: "شاهزاده‌ی کوهستان · قهرمان شهید",
       lore_fa: "پسر کیومرث، اولین شاهزاده‌ی این دوران. سیامک در نبرد با خادمان اهریمن کشته شد و شهیدی شد که مرگ او اولین اراده‌ی بشریت را در برابر تاریکی پدید آورد.",
@@ -155,7 +155,7 @@
       side: "light",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-003",
-      season: 2,
+      season: 2, order: 13, cost: 3500, prereq: { hero_id: "siamak", level: 1 },
       unlockCondition: "Complete Chapter 1 · The First King",
       role_fa: "آتش‌افروز · نوه‌ی کیومرث",
       lore_fa: "هوشنگ از سیامک انتقام گرفت و تاریکی را پس زد. آتش را هنگام زدن سنگ چخماق به هم کشف کرد، اولین کانون گرما را افروخت و به بشریت گرما، آهنگری و جشن بخشید.",
@@ -193,7 +193,7 @@
       side: "dark",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-004",
-      season: 2,
+      season: 2, order: 12, cost: 8000, prereq: { hero_id: "black-demon", level: 1 },
       unlockCondition: "Defeat Ahriman · Chapter 1 Boss",
       role_fa: "ارباب تاریکی · رئیس فصل ۱",
       lore_fa: "دشمن ابدی. اهریمن دیو سیاه خود را فرستاد تا سیامک را بکشد، به این امید که اولین شعله‌ی تمدن را قبل از گسترش خاموش کند. توطئه‌های او کهن، صبور و بی‌امان است.",
@@ -231,7 +231,7 @@
       side: "dark",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-005",
-      season: 2,
+      season: 2, order: 10, cost: 2500, prereq: { hero_id: "siamak", level: 1 },
       unlockCondition: "Complete Chapter 1 · The First King",
       role_fa: "خادم تاریک · دیو اهریمن",
       lore_fa: "دیو قدرتمندی که اهریمن برای کشتن سیامک فرستاد. دیو سیاه نیروهای هرج و مرج را تجسم می‌بخشید — اما شکستش توسط هوشنگ اولین پیروزی واقعی بشریت بر تاریکی را پدید آورد.",
@@ -269,7 +269,7 @@
       side: "light",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-006",
-      season: 2,
+      season: 2, order: 3, cost: 4000, prereq: { hero_id: "keyumars", level: 1 },
       unlockCondition: "Complete Chapter 1 · The First King",
       role_fa: "قله‌ی مقدس · تخت کیومرث",
       lore_fa: "آتشفشان بزرگ در قلب جهان. کیومرث اولین دربار خود را بر دامنه‌هایش بنا کرد و از آن ارتفاعات تمدن بشری به بیرون تابید. دماوند بر همه‌ی دوران‌های پارس نظارت می‌کند.",
@@ -307,7 +307,7 @@
       side: "light",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-007",
-      season: 2,
+      season: 2, order: 5, cost: 2200, prereq: { hero_id: "keyumars", level: 2 },
       unlockCondition: "Complete Chapter 1 · The First King",
       role_fa: "اولین کاخ · جایگاه تاج",
       lore_fa: "درباری که کیومرث بر دامنه‌های دماوند بنا کرد — جایی که اولین قوانین بیان شدند، اولین مراسم برگزار شدند و اولین سرودهای ستایش سروده شدند.",
@@ -345,7 +345,7 @@
       side: "light",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-008",
-      season: 2,
+      season: 2, order: 2, cost: 1500, prereq: { hero_id: "keyumars", level: 1 },
       unlockCondition: "Complete Chapter 1 · The First King",
       role_fa: "سرزمین اصلی · وطن شاهان",
       lore_fa: "قلب اجدادی که همه‌ی پادشاهان پارس از آن فرمان الهی می‌گرفتند. کیومرث رودخانه‌ها و کوه‌هایش را قبل از شاهیش گشت.",
@@ -383,7 +383,7 @@
       side: "dark",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-009",
-      season: 2,
+      season: 2, order: 14, cost: 7000, prereq: { hero_id: "ahriman", level: 1 },
       unlockCondition: "Defeat Chapter 1 Boss",
       role_fa: "قلمرو تاریک · دامنه‌ی خادمان اهریمن",
       lore_fa: "جنگل‌های سایه‌دار که دیو سیاه در آن زندگی می‌کرد. تاریکی‌اش اولین دشمنی بود که بشریت با آن روبرو شد — و در مواجهه با آن، هوشنگ جرقه‌ای یافت که آتش شد.",
@@ -421,7 +421,7 @@
       side: "light",
       nftReady: false,
       collectionId: "SHAHNAMEH-S2-CH1-010",
-      season: 2,
+      season: 2, order: 7, cost: 5000, prereq: { hero_id: "keyumars", level: 3 },
       unlockCondition: "Complete Chapter 1 Quiz with 80%+ score",
       role_fa: "مفهوم الهی · شکوه سلطنتی",
       lore_fa: "فرّ (خوارنه) تابش الهی است که پادشاه راستین را نشان می‌دهد. نمی‌توان آن را با زور گرفت — فقط از طریق عدالت، خرد و شجاعت به دست می‌آید.",
@@ -439,6 +439,198 @@
       unlockCondition_tg: "Имтиҳони Боби 1-ро бо нишонаи 80%+ иҷро кунед",
       powers_tg: ["+10% Қудрати зарба", "Кушоиши дониш: Дарахти мафҳуми Фарр", "Ғайрифаъол: Тобиши Илоҳӣ — XP ҷоизавӣ дар нишонаҳои комили имтиҳон"],
       storyAppearances_tg: ["Кодекси Боби 1: Маъноии Фарр", "Имтиҳони Боби 1: Шоҳии Илоҳӣ ва Фарр"],
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
+    },
+
+    /* ── 5 NEW Chapter 1 cards ─────────────────────────── */
+    {
+      id: "mount-alborz",
+      name: "Mount Alborz",
+      type: "place",
+      rarity: "rare",
+      chapter: 1,
+      img: "/assets/images/locations/mount-alborz-location.png",
+      emoji: "⛰",
+      role: "Sacred Range · First Frontier",
+      lore: "The great mountain range that cradles the northern edge of Persia. Keyumars first surveyed his kingdom from these peaks before descending to Damavand.",
+      biography: "Mount Alborz — the great spine of northern Persia — is the first frontier of the civilized world. It was from these heights that Keyumars first looked across the land that would become his kingdom. The Alborz range stands as a wall between the ordered world of the Shahs and the chaotic wilds beyond, and its highest peaks brush the realm of the divine.",
+      faction: "Sacred Landscape · Northern Frontier · Persian Heartland",
+      mythologyRole: "First frontier; boundary between civilized world and wilderness; realm of the first royal survey",
+      powers: ["+5% Tap Power", "+8 Zar/hr", "Passive: Mountain Sight — +2% chapter exploration bonus"],
+      storyAppearances: ["Chapter 1: Keyumars Surveys the Land", "Chapter 1: The First Borders"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-CH1-011",
+      season: 2, order: 4, cost: 2500, prereq: { hero_id: "keyumars", level: 1 },
+      unlockCondition: "Complete Chapter 1 · Own Keyumars",
+      role_fa: "رشته‌کوه مقدس · مرز اول",
+      lore_fa: "رشته‌کوه بزرگی که لبه‌ی شمالی پارس را در آغوش می‌گیرد. کیومرث از این قله‌ها قبل از پایین آمدن به دماوند برای اولین بار سلطنت خود را بررسی کرد.",
+      biography_fa: "البرز — ستون بزرگ شمال پارس — اولین مرز جهان متمدن است. از این ارتفاعات بود که کیومرث برای اولین بار به سرزمینی که پادشاهیش می‌شد نگاه کرد. رشته‌کوه البرز به عنوان دیواری بین جهان منظم شاهان و بیابان‌های هرج و مرجی بیرون ایستاده، و بلندترین قله‌هایش قلمرو الهی را لمس می‌کنند.",
+      faction_fa: "چشم‌انداز مقدس · مرز شمالی · قلب پارس",
+      mythologyRole_fa: "اولین مرز؛ مرز بین جهان متمدن و بیابان؛ قلمرو اولین بررسی سلطنتی",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · کیومرث داشته باشید",
+      powers_fa: ["+۵٪ قدرت ضربه", "+۸ Zar/ساعت", "غیرفعال: دید کوهستانی — +۲٪ پاداش کاوش فصل"],
+      storyAppearances_fa: ["فصل ۱: کیومرث سرزمین را بررسی می‌کند", "فصل ۱: اولین مرزها"],
+      role_tg: "Силсилаи Кӯҳҳои Муқаддас · Марзи Аввал",
+      lore_tg: "Силсилаи кӯҳҳои бузурге ки канори шимолии Порсро дар оғӯш мегирад. Каюмарс аз ин қуллаҳо пеш аз фаромадан ба Дамованд барои аввалин бор шоҳиаш را бозбинӣ кард.",
+      biography_tg: "Албурз — сутуни бузурги шимоли Порс — аввалин марзи ҷаҳони мутамаддин аст. Аз ин баландиҳо буд ки Каюмарс барои аввалин бор ба сарзамине ки шоҳияш мешуд нигоҳ кард.",
+      faction_tg: "Манзараи Муқаддас · Марзи Шимолӣ · Дили Порс",
+      mythologyRole_tg: "Аввалин марз; ҳад байни ҷаҳони мутамаддин ва биёбон; қаламрави аввалин бозбинии шоҳонӣ",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Каюмарсро дошта бошед",
+      powers_tg: ["+5% Қудрати зарба", "+8 Zar/соат", "Ғайрифаъол: Биниши Кӯҳӣ — +2% ҷоизаи кофтукови боб"],
+      storyAppearances_tg: ["Боби 1: Каюмарс сарзаминро бозбинӣ мекунад", "Боби 1: Аввалин Марзҳо"],
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
+    },
+    {
+      id: "fravahar",
+      name: "Fravahar",
+      type: "codex",
+      rarity: "epic",
+      chapter: 1,
+      img: "/assets/images/lore/fravahar-symbol.png",
+      emoji: "🦅",
+      role: "Divine Guide · Winged Symbol of Persia",
+      lore: "The Fravahar is the divine spirit-guide accompanying each soul — a winged being representing the higher self, choices made toward light, and the guardian of the righteous path.",
+      biography: "The Fravahar (or Fravashi) is one of the most profound symbols in Zoroastrian thought — a divine spiritual double that exists before birth and persists after death. It is not merely a guardian angel but an aspirational higher self: the version of you that has already chosen righteousness. In Persian royal iconography, the winged disc with a human figure represents divine endorsement of the king's legitimacy.",
+      faction: "Divine Principle · Zoroastrian Theology · Royal Iconography",
+      mythologyRole: "Personal divine guide; embodiment of righteous aspiration; guardian of the soul's highest path",
+      powers: ["+8% Story XP", "+20 Zar/hr", "Passive: Divine Guidance — quiz hint available +1 per chapter"],
+      storyAppearances: ["Chapter 1 Codex: The Fravahar — Guide of the Righteous", "Chapter 1: The Sacred Symbol"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-CH1-012",
+      season: 2, order: 6, cost: 4500, prereq: { hero_id: "keyumars", level: 2 },
+      unlockCondition: "Complete Chapter 1 · Own Keyumars Lv.2",
+      role_fa: "راهنمای الهی · نماد بالدار پارس",
+      lore_fa: "فروهر روح-راهنمای الهی است که هر روح را همراهی می‌کند — موجودی بالدار که نماینده‌ی خود برتر، انتخاب‌های انجام‌شده به سوی روشنایی و نگهبان راه راستین است.",
+      biography_fa: "فروهر (یا فروشی) یکی از عمیق‌ترین نمادهای اندیشه‌ی زرتشتی است — دوگانه‌ی روحانی الهی که قبل از تولد وجود دارد و بعد از مرگ ادامه می‌یابد. نه صرفاً یک فرشته‌ی نگهبان بلکه یک خود برتر آرمانی: نسخه‌ای از شما که قبلاً پارسایی را انتخاب کرده است.",
+      faction_fa: "اصل الهی · الهیات زرتشتی · نمادنگاری سلطنتی",
+      mythologyRole_fa: "راهنمای روحانی شخصی؛ تجسم آرزوی پارسایانه؛ نگهبان بلندترین مسیر روح",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · کیومرث Lv.۲ داشته باشید",
+      powers_fa: ["+۸٪ تجربه داستان", "+۲۰ Zar/ساعت", "غیرفعال: راهنمایی الهی — راهنمای آزمون +۱ در هر فصل"],
+      storyAppearances_fa: ["فصل ۱ کدکس: فروهر — راهنمای راستان", "فصل ۱: نماد مقدس"],
+      role_tg: "Роҳнамои Илоҳӣ · Рамзи Болдори Порс",
+      lore_tg: "Фравоҳар рӯҳ-роҳнамои илоҳист ки ҳар рӯҳро ҳамроҳӣ мекунад — мавҷудоти болдоре ки намояндаи худи бартар, интихобҳои анҷомёфта ба сӯи рӯшноӣ ва нигаҳбони роҳи растин аст.",
+      biography_tg: "Фравоҳар (ё Фравашӣ) яке аз амиқ-тарин рамзҳои андешаи зардуштӣ аст — дуганаи рӯҳонии илоҳӣ ки пеш аз таваллуд вуҷуд дорад ва баъд аз марг идома меёбад. На танҳо фариштаи нигаҳбон балки худи бартари ормонӣ: нусхае аз шумо ки қаблан покизагиро интихоб кардааст.",
+      faction_tg: "Принсипи Илоҳӣ · Илоҳиёти Зардуштӣ · Рамзнигории Шоҳӣ",
+      mythologyRole_tg: "Роҳнамои рӯҳонии шахсӣ; таҷассуми ормони покизагӣ; нигаҳбони баландтарин масири рӯҳ",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Каюмарс Lv.2 дошта бошед",
+      powers_tg: ["+8% Таҷрибаи ҳикоя", "+20 Zar/соат", "Ғайрифаъол: Роҳнамоии Илоҳӣ — маслиҳати имтиҳон +1 дар ҳар боб"],
+      storyAppearances_tg: ["Кодекси Боби 1: Фравоҳар — Роҳнамои Раститнон", "Боби 1: Рамзи Муқаддас"],
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
+    },
+    {
+      id: "leopard-skins",
+      name: "The Leopard Skins",
+      type: "artifact",
+      rarity: "epic",
+      chapter: 1,
+      img: "/assets/images/artifacts/leopard-skins-artifact.png",
+      emoji: "🐆",
+      role: "First Armor · Garment of the Mountain King",
+      lore: "The spotted skins of the mountain leopard — the first garments Keyumars gave to humanity. Before woven cloth, the leopard's hide was the mark of the king and the first human dignity.",
+      biography: "Before the art of spinning and weaving was known, Keyumars clothed his court in the skins of mountain leopards. These were not merely garments but symbols of dominion — the king who could tame the wild mountain predator and claim its skin stood above the untamed world. The spotted patterns became the first heraldic mark of the Pishdad dynasty.",
+      faction: "First Dynasty · Pishdad Regalia · Mountain Court Artifacts",
+      mythologyRole: "First human clothing; royal regalia of the mountain court; symbol of the civilizing act",
+      powers: ["+7% Tap Power", "+20 Zar/hr", "Passive: King's Mantle — upgrade costs reduced 5%"],
+      storyAppearances: ["Chapter 1: The Court of Keyumars — The First Garments", "Chapter 1 Artifact: The Royal Hide"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-CH1-013",
+      season: 2, order: 8, cost: 6500, prereq: { hero_id: "keyumars", level: 3 },
+      unlockCondition: "Complete Chapter 1 · Own Keyumars Lv.3",
+      role_fa: "اولین زره · لباس شاه کوهستان",
+      lore_fa: "پوست خال‌خال پلنگ کوهستانی — اولین جامه‌ای که کیومرث به بشریت بخشید. قبل از پارچه‌ی بافته‌شده، پوست پلنگ نشانه‌ی شاه و اولین کرامت انسانی بود.",
+      biography_fa: "قبل از اینکه هنر ریسیدن و بافتن شناخته شود، کیومرث دربار خود را با پوست پلنگ‌های کوهستانی پوشاند. اینها نه صرفاً جامه بلکه نماد سلطه بودند — شاهی که می‌توانست شکارچی وحشی کوهستان را رام کند. خال‌خال‌ها اولین نشان هرالدیک خاندان پیشدادی شدند.",
+      faction_fa: "دودمان اول · نشان پیشدادیان · آثار دربار کوهستانی",
+      mythologyRole_fa: "اولین لباس انسانی؛ نشان سلطنتی دربار کوهستانی؛ نماد عمل متمدن‌سازی",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · کیومرث Lv.۳ داشته باشید",
+      powers_fa: ["+۷٪ قدرت ضربه", "+۲۰ Zar/ساعت", "غیرفعال: ردای شاه — هزینه‌های ارتقاء ۵٪ کاهش می‌یابد"],
+      storyAppearances_fa: ["فصل ۱: دربار کیومرث — اولین جامه‌ها", "فصل ۱ اثر: پوست سلطنتی"],
+      role_tg: "Аввалин Зиреҳ · Либоси Шоҳи Кӯҳ",
+      lore_tg: "Пӯсти хол‌холи паланги кӯҳӣ — аввалин либосе ки Каюмарс ба башарият бахшид. Пеш аз матои бофташуда, пӯсти паланг нишонаи шоҳ ва аввалин карамати инсонӣ буд.",
+      biography_tg: "Пеш аз иниқе ки санъати ресида ва бофтан маълум шавад, Каюмарс дарбори худро бо пӯсти палангҳои кӯҳӣ пӯшонд. Инҳо на танҳо либос балки рамзи ҳукмронӣ буданд. Хол‌холҳо аввалин нишони ҳеральдикии сулолаи Пешдодӣ шуданд.",
+      faction_tg: "Сулолаи Аввал · Нишонаи Пешдодиён · Осори Дарбори Кӯҳӣ",
+      mythologyRole_tg: "Аввалин либоси инсонӣ; нишони шоҳонии дарбори кӯҳӣ; рамзи амали тамаддунсозӣ",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Каюмарс Lv.3 дошта бошед",
+      powers_tg: ["+7% Қудрати зарба", "+20 Zar/соат", "Ғайрифаъол: Риши Шоҳ — хароҷоти баланд 5% кам мешавад"],
+      storyAppearances_tg: ["Боби 1: Дарбори Каюмарс — Аввалин Либосҳо", "Боби 1 Осор: Пӯсти Шоҳонӣ"],
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
+    },
+    {
+      id: "black-demon",
+      name: "The Black Demon",
+      type: "enemy",
+      rarity: "epic",
+      chapter: 1,
+      img: "/assets/images/enemies/black-demon-enemy.png",
+      emoji: "👹",
+      role: "Son of Ahriman · Gate of Darkness",
+      lore: "Born from Ahriman's darkest will, the Black Demon is the intermediary between the mortal world and Ahriman's realm — stronger than the Black Div, a threshold that must be overcome before the lord of darkness can be confronted directly.",
+      biography: "The Black Demon stands between the world of men and the presence of Ahriman himself. Where the Black Div was a powerful servant sent on a mission, the Black Demon is the permanent guardian of the dark threshold. He cannot be bypassed; he must be faced. Only after his power has been absorbed into your collection can Ahriman himself be approached. He is the test before the final darkness.",
+      faction: "Forces of Darkness · Ahriman's Inner Court · Div Elite",
+      mythologyRole: "Guardian of the dark threshold; gate between mortal darkness and Ahriman's realm; final obstacle before the confrontation",
+      powers: ["+6% Critical Hit Chance", "+20 Zar/hr", "Passive: Dark Threshold — combo multiplier +0.2"],
+      storyAppearances: ["Chapter 1: The Dark Threshold", "Chapter 1: Before the Presence of Ahriman"],
+      side: "dark",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-CH1-014",
+      season: 2, order: 11, cost: 5500, prereq: { hero_id: "black-div", level: 1 },
+      unlockCondition: "Complete Chapter 1 · Defeat the Black Div",
+      role_fa: "پسر اهریمن · دروازه‌ی تاریکی",
+      lore_fa: "زاده شده از تاریک‌ترین اراده‌ی اهریمن، دیو سیاه واسطه‌ی بین جهان فانی و قلمرو اهریمن است — قوی‌تر از دیو سیاه، آستانه‌ای که باید پیش از مواجهه‌ی مستقیم با ارباب تاریکی پشت سر گذاشته شود.",
+      biography_fa: "دیو سیاه بین جهان بشری و حضور خود اهریمن ایستاده است. دیو سیاه نگهبان دائمی آستانه‌ی تاریک است — دربان حرم درونی اهریمن. نمی‌توان از او عبور کرد؛ باید با او روبرو شد. تنها پس از اینکه قدرت او در مجموعه‌ی شما جذب شد، می‌توان به خود اهریمن نزدیک شد.",
+      faction_fa: "نیروهای تاریکی · دربار درونی اهریمن · نخبگان دیوان",
+      mythologyRole_fa: "نگهبان آستانه‌ی تاریک؛ دروازه بین تاریکی فانی و قلمرو اهریمن؛ مانع نهایی قبل از مواجهه",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · دیو سیاه را شکست دهید",
+      powers_fa: ["+۶٪ احتمال ضربه‌ی بحرانی", "+۲۰ Zar/ساعت", "غیرفعال: آستانه‌ی تاریک — ضریب کمبو +۰.۲"],
+      storyAppearances_fa: ["فصل ۱: آستانه‌ی تاریک", "فصل ۱: پیش از حضور اهریمن"],
+      role_tg: "Писари Аҳриман · Дарвозаи Торикӣ",
+      lore_tg: "Таваллудёфта аз торик-тарин иродаи Аҳриман, Деви Сиёҳ миёнарав байни ҷаҳони фонӣ ва қаламрави Аҳриман аст — қавитар аз Диви Сиёҳ, остонае ки пеш аз рӯ ба рӯ шудани мустақим бо арбоби торикӣ бояд паси сар гузошта шавад.",
+      biography_tg: "Деви Сиёҳ байни ҷаҳони башарӣ ва ҳузури худи Аҳриман меистад. Деви Сиёҳ нигаҳбони доимии остонаи торик аст — дарбони ҳарами дарунии Аҳриман. Наметавон аз ӯ гузашт; бояд бо ӯ рӯ ба рӯ шуд.",
+      faction_tg: "Нирӯҳои Торикӣ · Дарбори Дарунии Аҳриман · Элитаи Девҳо",
+      mythologyRole_tg: "Нигаҳбони остонаи торик; дарвоза байни торикии фонӣ ва қаламрави Аҳриман; монеи ниҳоӣ пеш аз рӯёрӯӣ",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Диви Сиёҳро мағлуб кунед",
+      powers_tg: ["+6% Эҳтимоли зарбаи критикӣ", "+20 Zar/соат", "Ғайрифаъол: Остонаи Торик — зарбзании комбо +0.2"],
+      storyAppearances_tg: ["Боби 1: Остонаи Торик", "Боби 1: Пеш аз Ҳузури Аҳриман"],
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
+    },
+    {
+      id: "discovery-of-fire",
+      name: "The Discovery of Fire",
+      type: "codex",
+      rarity: "epic",
+      chapter: 1,
+      img: "/assets/images/lore/discovery-of-fire.png",
+      emoji: "🔥",
+      role: "World-Changing Event · The Spark of Civilization",
+      lore: "The moment Hushang struck flint against stone while pursuing the black serpent, fire entered the world. He declared it sacred to Ahura Mazda, and humanity was transformed forever.",
+      biography: "When Hushang pursued what he believed was a great serpent across a stony hillside, his sword striking a boulder sent sparks flying — and from those sparks, the world's first fire was born. He gathered his people, declared fire the most sacred gift of Ahura Mazda, and that night held the world's first feast lit by flame. The festival of Sadeh — still celebrated today — commemorates this pivotal moment. From fire came cooking, metalwork, warmth, and the beginning of civilization.",
+      faction: "Civilizing Events · Pishdad Achievement · Sacred Discoveries",
+      mythologyRole: "Pivotal civilizing event; birth of fire; transition from animal to human culture; foundation of the Sadeh festival",
+      powers: ["+10% Tap Power", "+20 Zar/hr", "Passive: Sacred Flame — critical tap chance +5%, energy refills 10% faster"],
+      storyAppearances: ["Chapter 1 Conclusion: The Discovery of Fire", "Chapter 1 Reward: The First Feast of Sadeh"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-CH1-015",
+      season: 2, order: 15, cost: 9000, prereq: { hero_id: "hushang", level: 2 },
+      unlockCondition: "Complete Chapter 1 · Own Hushang Lv.2",
+      role_fa: "رویداد تغییردهنده‌ی جهان · جرقه‌ی تمدن",
+      lore_fa: "لحظه‌ای که هوشنگ در تعقیب مار سیاه سنگ چخماق را به هم کوبید، آتش وارد جهان شد. آن را مقدس به اهورامزدا اعلام کرد و بشریت برای همیشه دگرگون شد.",
+      biography_fa: "وقتی هوشنگ آنچه فکر می‌کرد مار بزرگی است را روی تپه‌ای سنگی تعقیب کرد، شمشیر چخماقش جرقه پروراند — و از آن جرقه‌ها، اولین آتش جهان متولد شد. مردمش را گرد آورد، آتش را مقدس‌ترین هدیه‌ی اهورامزدا اعلام کرد و آن شب اولین جشن روشن‌شده با شعله را برگزار کرد. جشن سده — که هنوز هم برگزار می‌شود — این لحظه را گرامی می‌دارد.",
+      faction_fa: "رویدادهای متمدن‌ساز · دستاورد پیشدادیان · کشفیات مقدس",
+      mythologyRole_fa: "رویداد محوری متمدن‌سازی؛ تولد آتش؛ گذار از فرهنگ حیوانی به انسانی؛ بنیاد جشن سده",
+      unlockCondition_fa: "فصل ۱ را کامل کنید · هوشنگ Lv.۲ داشته باشید",
+      powers_fa: ["+۱۰٪ قدرت ضربه", "+۲۰ Zar/ساعت", "غیرفعال: شعله‌ی مقدس — احتمال ضربه‌ی بحرانی +۵٪، انرژی ۱۰٪ سریع‌تر شارژ می‌شود"],
+      storyAppearances_fa: ["نتیجه‌ی فصل ۱: کشف آتش", "پاداش فصل ۱: اولین جشن سده"],
+      role_tg: "Рӯйдоди Ҷаҳонтағйирдиҳанда · Ҷарақаи Тамаддун",
+      lore_tg: "Лаҳзае ки Ҳушанг дар таъқиби мори сиёҳ чақмоқро ба санг зад, оташ ба ҷаҳон даромад. Онро муқаддас ба Аҳурамазда эълон кард ва башарият барои ҳамеша дигаргун шуд.",
+      biography_tg: "Вақте Ҳушанг чизеро ки мепиндошт мори бузург аст дар теппаи сангие таъқиб кард, шамшираш ба санг хӯрд ва ҷарақаҳо парид — ва аз он ҷарақаҳо аввалин оташи ҷаҳон таваллуд шуд. Мардумашро гирд овард, оташро муқаддастарин ҳадияи Аҳурамазда эълон кард ва он шаб аввалин зиёфатро баргузор кард. Ҷашни Сада ин лаҳзаро гиромӣ медорад.",
+      faction_tg: "Рӯйдодҳои Тамаддунсоз · Дастоварди Пешдодиён · Кашфиёти Муқаддас",
+      mythologyRole_tg: "Рӯйдоди маркази тамаддунсозӣ; таваллуди оташ; гузар аз фарҳанги ҳайвонӣ ба инсонӣ; бунёди ҷашни Сада",
+      unlockCondition_tg: "Боби 1-ро иҷро кунед · Ҳушанг Lv.2 дошта бошед",
+      powers_tg: ["+10% Қудрати зарба", "+20 Zar/соат", "Ғайрифаъол: Шӯълаи Муқаддас — эҳтимоли зарбаи критикӣ +5%, энергия 10% зудтар пур мешавад"],
+      storyAppearances_tg: ["Хулосаи Боби 1: Кашфи Оташ", "Ҷоизаи Боби 1: Аввалин Ҷашни Сада"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     }
   ];
@@ -576,8 +768,12 @@
   const heroEconomyState = (item) => {
     const owned = ownedHeroes[item.id];
     if (owned) return "owned";
-    if (isChapterDone(item.chapter)) return "available";
-    return "locked";
+    if (!isChapterDone(item.chapter)) return "locked";
+    if (item.prereq) {
+      const prereqOwned = ownedHeroes[item.prereq.hero_id];
+      if (!prereqOwned || (prereqOwned.level || 1) < item.prereq.level) return "prereq_locked";
+    }
+    return "available";
   };
 
   const buildCards = (filter) => {
@@ -585,9 +781,8 @@
     if (!grid) return;
     grid.innerHTML = "";
 
-    const items = filter === "all"
-      ? COLLECTION
-      : COLLECTION.filter((it) => it.type === filter);
+    const items = (filter === "all" ? COLLECTION : COLLECTION.filter((it) => it.type === filter))
+      .slice().sort((a, b) => (a.order || 99) - (b.order || 99));
 
     if (!items.length) {
       const empty = document.createElement("p");
@@ -613,10 +808,13 @@
         let stateBadge = "";
         if (state === "locked") {
           stateBadge = `<span class="hero-state-badge locked-badge">🔒</span>`;
+        } else if (state === "prereq_locked") {
+          stateBadge = `<span class="hero-state-badge prereq-badge">🔐</span>`;
         } else if (state === "owned") {
           stateBadge = `<span class="hero-state-badge owned-badge">Lv.${owned.level || 1}</span>`;
         } else {
-          stateBadge = `<span class="hero-state-badge available-badge">◆ ${(RARITY_COST[item.rarity] || 0).toLocaleString()}</span>`;
+          const cardCost = item.cost || RARITY_COST[item.rarity] || 0;
+          stateBadge = `<span class="hero-state-badge available-badge">◆ ${cardCost.toLocaleString()}</span>`;
         }
 
         const subLine = state === "owned"
@@ -721,13 +919,23 @@
   const buildEconomyPanel = (item) => {
     const state = heroEconomyState(item);
     const owned = ownedHeroes[item.id];
-    const cost  = RARITY_COST[item.rarity] || 0;
+    const cost  = item.cost || RARITY_COST[item.rarity] || 0;
     const baseZar = RARITY_ZAR[item.rarity] || 0;
 
     if (state === "locked") {
       return `<div class="hero-econ-panel locked">
         <span class="hecon-lock">🔒</span>
         <span class="hecon-msg">${t("hero_locked_chapter", { n: item.chapter })}</span>
+      </div>`;
+    }
+
+    if (state === "prereq_locked") {
+      const prereq = item.prereq;
+      const prereqItem = COLLECTION.find(c => c.id === prereq.hero_id);
+      const prereqName = prereqItem ? prereqItem.name : prereq.hero_id;
+      return `<div class="hero-econ-panel prereq_locked">
+        <span class="hecon-lock">🔐</span>
+        <span class="hecon-msg">${t("hero_prereq_locked", { name: prereqName, level: prereq.level })}</span>
       </div>`;
     }
 
@@ -778,12 +986,18 @@
 
     if (action === "buy") {
       const zarHr  = parseInt(btn.getAttribute("data-zar"), 10) || 0;
+      const prereq = item.prereq || null;
       const result = await apiPost("/api/season2/user/buy-hero", {
-        telegram_id: tid, hero_id: heroId, cost, zar_per_hour: zarHr
+        telegram_id: tid, hero_id: heroId, cost, zar_per_hour: zarHr,
+        prereq_hero_id: prereq ? prereq.hero_id : null,
+        prereq_level:   prereq ? prereq.level   : null,
       });
 
       if (!result || result.status !== 1) {
-        showToast(result?.error === "insufficient_balance" ? t("hero_insufficient_real") : (result?.error || "Error"));
+        const errKey = result?.error === "insufficient_balance" ? t("hero_insufficient_real")
+          : result?.error === "prereq_not_met" ? t("hero_prereq_locked", { name: item.prereq?.hero_id || "?", level: item.prereq?.level || 1 })
+          : (result?.error || "Error");
+        showToast(errKey);
         btn.disabled = false;
         btn.textContent = t("hero_buy_btn", { cost: cost.toLocaleString() });
         return;
@@ -854,9 +1068,11 @@
 
     const badge = card.querySelector(".hero-state-badge");
     if (badge) {
-      badge.className = `hero-state-badge ${state}-badge`;
+      const badgeClass = state === "prereq_locked" ? "prereq-badge" : `${state}-badge`;
+      badge.className = `hero-state-badge ${badgeClass}`;
       if (state === "owned") badge.textContent = `Lv.${owned.level || 1}`;
-      else if (state === "available") badge.innerHTML = `◆ ${(RARITY_COST[item.rarity] || 0).toLocaleString()}`;
+      else if (state === "prereq_locked") badge.textContent = `🔐`;
+      else if (state === "available") badge.innerHTML = `◆ ${(item.cost || RARITY_COST[item.rarity] || 0).toLocaleString()}`;
     }
     const rarityEl = card.querySelector(".coll-rarity");
     if (rarityEl && state === "owned") {

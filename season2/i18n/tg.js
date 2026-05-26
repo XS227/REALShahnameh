@@ -470,6 +470,7 @@
       hero_available_lbl: "Барои харид",
       hero_economy_section: "Иқтисоди Қаҳрамон",
       hero_already_owned: "Қаблан харидорӣ шудааст",
+      hero_prereq_locked: "Барои кушодани қулф, {name} Lv.{level} лозим аст",
 
       /* ── LEGACY app.js dictionary keys (paths, onboarding, profile, settings…) ── */
       play: "Бозӣ",
