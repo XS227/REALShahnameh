@@ -125,7 +125,12 @@
     const amountEl   = document.getElementById('rbc-amount');
     const bonusEl    = document.getElementById('rbc-clan-bonus');
 
-    if (amountEl) amountEl.textContent = fmtN(u.real_balance || 0) + ' REAL';
+    /* Use the higher of API value and local Player state to guard against
+       a stale-zero DB value overriding client-side earned balance. */
+    const localBal  = (window.RealPlayer && window.RealPlayer.get)
+      ? (window.RealPlayer.get().balance || 0) : 0;
+    const displayBal = Math.max(u.real_balance || 0, localBal);
+    if (amountEl) amountEl.textContent = fmtN(displayBal) + ' REAL';
 
     if (bonusEl) {
       if (u.clan_id) {
@@ -305,7 +310,12 @@
     const u = resp.user;
     renderIdentity(u, tg);
     renderBalanceCard(u);
-    startMiningCounter(u.mining_stats || { total_zar: u.zar || 0, zar_per_minute: 0, zar_per_hour: 0 });
+    const _ms = u.mining_stats || { total_zar: u.zar || 0, zar_per_minute: 0, zar_per_hour: 0 };
+    /* Sync global ZAR: takes max(server, local) so profile always matches home */
+    const _zarStart = window.RealUtils
+      ? window.RealUtils.updateGlobalZar(_ms)
+      : Math.max(_ms.total_zar, (window.RealPlayer && window.RealPlayer.get ? (window.RealPlayer.get().zar || 0) : 0));
+    startMiningCounter({ zar_per_minute: _ms.zar_per_minute, zar_per_hour: _ms.zar_per_hour, total_zar: _zarStart });
     renderStats(u);
     renderBadges(u);
   };

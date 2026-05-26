@@ -23,6 +23,7 @@
   const priceEl     = card.querySelector("[data-market-price]");
   const changeEl    = card.querySelector("[data-market-change]");
   const liquidityEl = card.querySelector("[data-market-liquidity]");
+  const holderEl    = card.querySelector("[data-market-holders]");
   const chartEl     = card.querySelector("[data-market-chart]");
   const noteEl      = card.querySelector("[data-market-note]");
 
@@ -78,6 +79,12 @@
        </svg>`;
   };
 
+  const fmtHolders = (n) => {
+    if (n == null || !isFinite(n)) return "—";
+    if (n >= 1e6) return Math.floor(n / 1000).toLocaleString() + "K+";
+    return n.toLocaleString() + "+";
+  };
+
   const render = (data) => {
     if (priceEl)     priceEl.textContent     = fmtUsd(data.priceUsd);
     if (changeEl) {
@@ -85,6 +92,7 @@
       changeEl.dataset.dir = data.change24hPct >= 0 ? "up" : "down";
     }
     if (liquidityEl) liquidityEl.textContent = fmtLiq(data.liquidityUsd);
+    if (holderEl && data.holders != null)    holderEl.textContent = fmtHolders(data.holders);
     renderSparkline(data.points);
   };
 
@@ -128,11 +136,6 @@
 
   window.RealMarket = window.RealMarket || {};
   window.RealMarket.refresh = tick;
-
-  /* Show seed price immediately while polling — prevents blank "—" on load */
-  const SEED_PRICE = 0.00042;
-  if (priceEl)  priceEl.textContent  = fmtUsd(SEED_PRICE);
-  if (changeEl) { changeEl.textContent = '+0.00%'; changeEl.dataset.dir = 'up'; }
 
   setStatus("connecting");
   tick();

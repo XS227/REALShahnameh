@@ -242,6 +242,7 @@
       window.RealSync.ready().then(() => {
         hydrateProfile();
         hydrateQuests();
+        if (window.RealUtils) window.RealUtils.updateGlobalZar();
         refreshTreasury();
       });
     }

@@ -37,6 +37,26 @@
   let _resolveReady;
   const _ready = new Promise(r => { _resolveReady = r; });
 
+  /* ── Offline bonus banner ──────────────────────────────────────────── */
+  const _showOfflineBonus = (zarEarned) => {
+    if (document.getElementById('real-offline-bonus')) return;
+    const fmt = (n) => n >= 1000 ? (n / 1000).toFixed(1) + 'K' : Math.round(n).toString();
+    const el = document.createElement('div');
+    el.id = 'real-offline-bonus';
+    el.innerHTML =
+      '<div class="rob-inner">' +
+        '<span class="rob-ico">⛏</span>' +
+        '<div class="rob-text">' +
+          '<strong>Offline Mining</strong>' +
+          '<span>+' + fmt(zarEarned) + ' ZAR earned while away</span>' +
+        '</div>' +
+        '<button class="rob-close" aria-label="Dismiss">✕</button>' +
+      '</div>';
+    el.querySelector('.rob-close').addEventListener('click', () => el.remove());
+    document.body.appendChild(el);
+    setTimeout(() => { if (el.parentNode) el.remove(); }, 8000);
+  };
+
   /* ── init: call once on every page load ──────────────────────────── */
   const init = async () => {
     const u = tgUser();
@@ -65,21 +85,27 @@
 
     const su = data.user;
 
-    /* Merge authoritative server values into Player localStorage state */
+    /* Merge authoritative server values into Player localStorage state.
+       Take the higher of server and local for ZAR and balance to prevent
+       a stale-DB value from overwriting client-side earnings. */
     if (window.RealPlayer && window.RealPlayer.set) {
-      // Server-side energy regen is already computed by the backend
+      const local = (window.RealPlayer.get && window.RealPlayer.get()) || {};
+      const offlineZar = Number(su.offline_zar_earned) || 0;
+      const serverZar  = (su.zar || 0) + offlineZar;
       window.RealPlayer.set({
         userId:      su.telegram_id,
         level:       su.level        || 1,
         xp:          su.xp          || 0,
         farr:        su.farr        || 0,
-        zar:         su.zar         || 0,
+        zar:         Math.max(serverZar, local.zar     || 0),
         gems:        su.gems        || 0,
-        balance:     su.real_balance || 0,
+        balance:     Math.max(su.real_balance || 0, local.balance || 0),
         energy:      su.current_energy != null ? su.current_energy : 1000,
         energyMax:   su.energy_max   || 1000,
         dailyStreak: su.daily_streak || 1,
       });
+      // Push corrected balance back to server immediately
+      syncBalance();
     }
 
     /* Sync quest flags into localStorage so hydrateQuests() reflects server */
@@ -104,6 +130,12 @@
       if (su.completed_tasks)           localStorage.setItem('real_completed_tasks',   JSON.stringify(su.completed_tasks));
       if (su.adsgram)                   localStorage.setItem('real_adsgram_config',    JSON.stringify(su.adsgram));
     } catch (_) {}
+
+    /* Show offline mining bonus overlay if earned */
+    const offlineZar = Number(su.offline_zar_earned) || 0;
+    if (offlineZar >= 1) {
+      _showOfflineBonus(offlineZar);
+    }
 
     _resolveReady(su);
   };

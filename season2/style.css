@@ -5249,3 +5249,67 @@ body::after {
   object-fit: contain;
   filter: drop-shadow(0 0 4px rgba(244,197,107,.4));
 }
+
+/* ── Offline Mining Bonus Banner ─────────────────────────────────────── */
+#real-offline-bonus {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: calc(100% - 32px);
+  max-width: 420px;
+  animation: rob-slidein 0.35s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes rob-slidein {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.rob-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, rgba(20,22,38,.97) 0%, rgba(30,32,50,.97) 100%);
+  border: 1px solid rgba(94,162,255,.35);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.45), 0 0 0 1px rgba(94,162,255,.12);
+  backdrop-filter: blur(12px);
+}
+.rob-ico {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.rob-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.rob-text strong {
+  font-size: 13px;
+  font-weight: 800;
+  color: #5ea2ff;
+  letter-spacing: .02em;
+}
+.rob-text span {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text, #e8e8f0);
+}
+.rob-close {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  color: var(--muted, #6c7287);
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background .15s, color .15s;
+}
+.rob-close:hover { background: rgba(255,255,255,.14); color: var(--text, #e8e8f0); }

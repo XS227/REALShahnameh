@@ -9,9 +9,9 @@
   /* Default tier config — overwritten at runtime from localStorage (sync.js
      caches the server's adsgram block IDs from /user/sync response).       */
   const DEFAULT_CONFIG = {
-    bronze: { blockId: 'bot-32855', real: 0,    gems: 0, farr: 0, energy: true,  cooldown: 300  },
-    silver: { blockId: 'bot-32855', real: 0,    gems: 1, farr: 0, energy: false, cooldown: 600  },
-    gold:   { blockId: 'bot-32855', real: 5000, gems: 0, farr: 0, energy: false, cooldown: 1800 },
+    bronze: { blockId: '', real: 0,    gems: 0, farr: 0, energy: true,  cooldown: 300  },
+    silver: { blockId: '', real: 0,    gems: 1, farr: 0, energy: false, cooldown: 600  },
+    gold:   { blockId: '', real: 5000, gems: 0, farr: 0, energy: false, cooldown: 1800 },
   };
 
   const getConfig = () => {
