@@ -129,6 +129,7 @@
       if (su.checkin_streak    != null) localStorage.setItem('real_checkin_streak',    String(su.checkin_streak));
       if (su.completed_tasks)           localStorage.setItem('real_completed_tasks',   JSON.stringify(su.completed_tasks));
       if (su.adsgram)                   localStorage.setItem('real_adsgram_config',    JSON.stringify(su.adsgram));
+      if (su.max_real_balance != null)  localStorage.setItem('real_max_real_balance',  String(su.max_real_balance));
     } catch (_) {}
 
     /* Show offline mining bonus overlay if earned */

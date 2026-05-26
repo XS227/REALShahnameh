@@ -63,7 +63,7 @@
       tokenImg: '/assets/images/tokens/realtoken.png',
       name: 'Rich Warrior',
       desc: 'Accumulate 10,000 REAL',
-      check: u => (u.real_balance || 0) >= 10_000,
+      check: u => Math.max(u.max_real_balance || 0, u.real_balance || 0) >= 10_000,
     },
     {
       id:   'legend',
@@ -273,9 +273,11 @@
     }
 
     if (badgeEl) {
+      const cachedMaxBal = Number(localStorage.getItem('real_max_real_balance') || 0);
       const fakeUser = {
         xp: localP.xp || 0,
         real_balance: localP.balance || 0,
+        max_real_balance: Math.max(cachedMaxBal, localP.balance || 0),
         level: localP.level || 1,
         daily_streak: localP.dailyStreak || 1,
         verified_referral_count: localP.referrals || 0,
@@ -315,7 +317,12 @@
     const _zarStart = window.RealUtils
       ? window.RealUtils.updateGlobalZar(_ms)
       : Math.max(_ms.total_zar, (window.RealPlayer && window.RealPlayer.get ? (window.RealPlayer.get().zar || 0) : 0));
-    startMiningCounter({ zar_per_minute: _ms.zar_per_minute, zar_per_hour: _ms.zar_per_hour, total_zar: _zarStart });
+    /* Always derive zar_per_minute from zar_per_hour to guarantee consistency.
+       Use localStorage real_total_zar_hr as fallback for legacy 0-rate heroes. */
+    const _localHr  = Number(localStorage.getItem('real_total_zar_hr') || 0);
+    const _zarHr    = Math.max(_ms.zar_per_hour || 0, _localHr);
+    const _zarMin   = _zarHr / 60;
+    startMiningCounter({ zar_per_minute: _zarMin, zar_per_hour: _zarHr, total_zar: _zarStart });
     renderStats(u);
     renderBadges(u);
   };
