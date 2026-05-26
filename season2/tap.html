@@ -26,26 +26,24 @@
     <div class="tap-stats-bar">
       <div class="tsb-cell gold">
         <div class="lbl" data-i18n="balance">Balance</div>
-        <div class="val" data-balance>12,840</div>
+        <div class="val" data-balance>0</div>
       </div>
       <div class="tsb-cell jade">
         <div class="lbl" data-i18n="forge_per_hr">Zar / hr</div>
-        <div class="val">+172</div>
+        <div class="val" data-zar-hr>+0</div>
       </div>
       <div class="tsb-cell ember">
         <div class="lbl" data-i18n="streak">Streak</div>
-        <div class="val">🔥 12</div>
+        <div class="val" data-streak-badge>🔥 1</div>
       </div>
     </div>
 
-    <!-- ── Auto-forge claim ─────────────────────────────
-         Hourly auto-yield in Zar (primary economy). The old REAL coin
-         icon is retained as a tiny ecosystem-layer accent, not the headline. -->
-    <div class="real-hr-banner">
+    <!-- ── Auto-forge claim (hidden until auto-forge is implemented) ── -->
+    <div class="real-hr-banner" style="display:none;" data-auto-forge-banner>
       <div class="rhb-left">
         <div class="rhb-label" data-i18n="auto_mining_income">Auto-forge income</div>
         <div class="rhb-val">
-          <span>+172 🪙</span>
+          <span data-auto-forge-val>+0 🪙</span>
           <span style="font-size:11px;color:var(--muted);margin-left:6px;" data-i18n="r_zar">Zar</span>
           <span style="font-size:9px;color:rgba(220,220,235,.45);margin-left:8px;letter-spacing:.8px;">/hr</span>
         </div>
@@ -79,13 +77,13 @@
         <div class="energy-line">
           <span>⚡ <span data-i18n="energy">Energy</span></span>
           <span>
-            <span class="e-val" data-energy>720</span> / 1000
+            <span class="e-val" data-energy>1000</span> / 1000
             &nbsp;·&nbsp;
             <span class="e-timer" data-refill>+1 / 3s</span>
           </span>
         </div>
         <div class="bar">
-          <span class="fill" data-energy-fill style="width:72%"></span>
+          <span class="fill" data-energy-fill style="width:100%"></span>
         </div>
       </div>
 
@@ -100,7 +98,7 @@
       </div>
       <div class="combo-right">
         <div class="streak-label" data-i18n="streak_label">Daily streak</div>
-        <div class="streak-val" data-i18n="streak_val">🔥 12 days</div>
+        <div class="streak-val" data-streak-val>🔥 1 day</div>
       </div>
     </div>
 
@@ -219,29 +217,13 @@
       </div>
     </section>
 
-    <!-- ── Recent forging ─────────────────────────────── -->
+    <!-- ── Recent forging (populated live by JS as taps happen) ── -->
     <div class="tap-history">
       <h5 data-i18n="forge_recent">Recent forging</h5>
-      <div class="history-rows">
-        <div class="history-row">
-          <span class="h-event" data-i18n="forge_burst_evt">Forge burst · ×1.4 combo</span>
-          <span class="h-gain">+34 🪙</span>
-          <span class="h-time" data-i18n="just_now">just now</span>
-        </div>
-        <div class="history-row">
-          <span class="h-event" data-i18n="forge_crit_evt">Mythic strike!</span>
-          <span class="h-gain">+28 🪙</span>
-          <span class="h-time">2m</span>
-        </div>
-        <div class="history-row">
-          <span class="h-event" data-i18n="forge_auto_evt">Auto-forge · 1 hr</span>
-          <span class="h-gain">+172 🪙</span>
-          <span class="h-time">1h</span>
-        </div>
-        <div class="history-row">
-          <span class="h-event" data-i18n="forge_boost_evt">Boost activated</span>
-          <span class="h-gain" data-i18n="gain_power">+3× power</span>
-          <span class="h-time">2h</span>
+      <div class="history-rows" data-forge-history>
+        <!-- Rows injected by tap.js on each strike -->
+        <div class="history-row" style="color:var(--muted);font-size:11px;padding:6px 0;">
+          <span data-i18n="forge_no_history">Strike the anvil to begin forging…</span>
         </div>
       </div>
     </div>
@@ -289,15 +271,16 @@
     </div>
   </div>
 
-  <script src="app.js?v=202605150500"></script>
-  <script src="i18n/en.js?v=202605150500"></script>
-  <script src="i18n/fa.js?v=202605150500"></script>
-  <script src="i18n/tg.js?v=202605150500"></script>
-  <script src="i18n.js?v=202605150500"></script>
-  <script src="resources.js?v=202605150500"></script>
-  <script src="audio.js?v=202605150500"></script>
-  <script src="cinematic.js?v=202605150500"></script>
-  <script src="market.js?v=202605150500"></script>
-  <script src="tap.js?v=202605150500"></script>
+  <script src="app.js?v=202605260100"></script>
+  <script src="i18n/en.js?v=202605260100"></script>
+  <script src="i18n/fa.js?v=202605260100"></script>
+  <script src="i18n/tg.js?v=202605260100"></script>
+  <script src="i18n.js?v=202605260100"></script>
+  <script src="resources.js?v=202605260100"></script>
+  <script src="audio.js?v=202605260100"></script>
+  <script src="cinematic.js?v=202605260100"></script>
+  <script src="sync.js?v=202605260100"></script>
+  <script src="market.js?v=202605260100"></script>
+  <script src="tap.js?v=202605260100"></script>
 </body>
 </html>

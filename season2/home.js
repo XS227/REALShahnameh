@@ -174,18 +174,16 @@
       if (name) nameEl.textContent = name;
     }
 
-    // Avatar: Telegram photo → gender default
+    // Avatar: Telegram photo_url → cached server URL → gender default
     const avatarImg = document.querySelector("[data-avatar-img]");
     if (avatarImg) {
       const fallback = player.path === "heroine"
         ? "/assets/images/avatars/default-female-avatar.png"
         : "/assets/images/avatars/default-male-avatar.png";
+      const cachedPic = (() => { try { return localStorage.getItem("real_profile_pic") || ""; } catch { return ""; } })();
+      const photoSrc  = (tgUser && tgUser.photo_url) || cachedPic || "";
       avatarImg.onerror = () => { avatarImg.onerror = null; avatarImg.src = fallback; };
-      if (tgUser && tgUser.photo_url) {
-        avatarImg.src = tgUser.photo_url;
-      } else {
-        avatarImg.src = fallback;
-      }
+      avatarImg.src = photoSrc || fallback;
     }
 
     // Real level (new users: 1)
@@ -229,11 +227,21 @@
     if (host && window.RealResources) window.RealResources.refreshHud(host);
   };
 
-  /* ── Boot: run all hydration after DOM + app.js Player are ready ── */
+  /* ── Boot: run initial hydration immediately, then re-run after sync ── */
   const bootHomeHydration = () => {
+    // First pass with localStorage state (instant, no flicker)
     hydrateProfile();
     hydrateQuests();
     refreshTreasury();
+
+    // Second pass once server data arrives (profile_pic, real balances, quests)
+    if (window.RealSync) {
+      window.RealSync.ready().then(() => {
+        hydrateProfile();
+        hydrateQuests();
+        refreshTreasury();
+      });
+    }
   };
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", bootHomeHydration);

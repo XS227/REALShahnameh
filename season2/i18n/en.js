@@ -445,6 +445,7 @@
       forge_core_label: "⬡ The Anvil — Strike to forge Zar",
       forge_hint: "Each strike forges new Zar · combo deepens the seam · rare strikes drop REAL",
       forge_recent: "Recent forging",
+      forge_no_history: "Strike the anvil to begin forging…",
       forge_burst_evt: "Forge burst · ×1.4 combo",
       forge_crit_evt: "Mythic strike!",
       forge_auto_evt: "Auto-forge · 1 hr",

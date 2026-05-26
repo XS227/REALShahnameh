@@ -111,6 +111,9 @@
 .mint-core-section .core-wrap {
   max-width: 360px;
   margin: 0 auto;
+  /* Isolate particle/ring-burst compositing to this layer */
+  will-change: contents;
+  contain: layout style;
 }
 
 /* r4 glow disk stays but feels bigger through the larger wrap */
@@ -123,18 +126,22 @@
 /* Bigger orb — was inset:33%, now 22% → ~200 px tap target on 360px wrap */
 .mint-core-section .energy-orb {
   inset: 22%;
+  /* Promote to its own compositor layer to eliminate transform glitch on rapid taps */
+  will-change: transform;
+  transform: translateZ(0);
   box-shadow:
     inset 0 0 44px rgba(255, 220, 160, .65),
     0 0 70px rgba(244, 197, 107, .7),
     0 0 140px rgba(244, 197, 107, .2);
 }
 .mint-core-section .energy-orb:active {
-  transform: scale(.91);
+  transform: translateZ(0) scale(.91);
   box-shadow:
     inset 0 0 65px rgba(255, 220, 160, .95),
     0 0 120px rgba(244, 197, 107, 1),
     0 0 220px rgba(244, 197, 107, .4);
-  filter: brightness(1.22);
+  /* Use opacity instead of filter:brightness to avoid repaint on every tap */
+  opacity: 0.88;
 }
 
 /* Bigger inner icon ring */

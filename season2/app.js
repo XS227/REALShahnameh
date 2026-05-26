@@ -205,6 +205,7 @@
         balance: 0,
         energy: 1000,
         energyMax: 1000,
+        dailyStreak: 1,
         chapterProgress: { 1: { unlocked: true, completed: false } },
         heroes: {},                   // { rostam: { level, fragments } ... }
         referrals: 0,
@@ -894,6 +895,7 @@
       haptic("medium");
       // Mark "invite" quest complete for today
       try { localStorage.setItem("real_quest_invite_" + new Date().toISOString().slice(0, 10), "true"); } catch (_) {}
+      if (window.RealSync) window.RealSync.syncQuest("invite");
     });
   });
 
@@ -913,7 +915,7 @@
   if (orb && coreWrap && energyEl && fillEl) {
     const state = {
       max: 1000,
-      energy: parseInt(energyEl.textContent, 10) || 720,
+      energy: Player.get().energy || 1000,
       balance: Player.getResource("real") || 0,
       combo: 1,
       lastTap: 0,
@@ -981,14 +983,20 @@
       state.energy = Math.max(0, state.energy - state.tapCost);
       state.balance += reward;
 
-      // Persist tap reward to Player state so Treasury HUD stays in sync
+      // Persist tap reward and energy to Player state so Treasury + sync stay correct
       Player.addResource("real", reward);
+      Player.set({ energy: state.energy });
 
-      // Daily tap counter for home quest tracker
+      // Daily tap counter for home quest tracker + server sync
       try {
-        const _dk = new Date().toISOString().slice(0, 10);
+        const _dk  = new Date().toISOString().slice(0, 10);
         const _key = "real_daily_taps_" + _dk;
-        localStorage.setItem(_key, String((parseInt(localStorage.getItem(_key) || "0", 10) + 1)));
+        const _newCount = (parseInt(localStorage.getItem(_key) || "0", 10) + 1);
+        localStorage.setItem(_key, String(_newCount));
+        // Push tap count to server every 10 taps to stay durable
+        if (_newCount % 10 === 0 && window.RealSync) {
+          window.RealSync.syncQuest("tap", _newCount);
+        }
       } catch (_) {}
 
       renderEnergy();
@@ -1448,6 +1456,7 @@
 
       // Mark "read a scene" quest complete for today
       try { localStorage.setItem("real_quest_read_" + new Date().toISOString().slice(0, 10), "true"); } catch (_) {}
+      if (window.RealSync) window.RealSync.syncQuest("read");
     };
 
     const closeModal = () => {
@@ -1465,6 +1474,7 @@
         haptic("success");
         // Mark "quiz" quest complete for today
         try { localStorage.setItem("real_quest_quiz_" + new Date().toISOString().slice(0, 10), "true"); } catch (_) {}
+        if (window.RealSync) window.RealSync.syncQuest("quiz");
         elResTitle.textContent = `+${data.xp} ${t("r_xp")} · +${data.real} REAL`;
         elResBody.textContent = t("chapter_rewards_locked");
         elResRew.innerHTML = `<span class="chip warm">⭐ ${data.xp} ${t("r_xp")}</span><span class="chip">🪙 ${data.real} REAL</span><span class="chip lush">+1 ${t("hero_fragment_label")}</span>`;

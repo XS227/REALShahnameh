@@ -231,7 +231,9 @@
       const ex   = event && event.clientX != null ? event.clientX - rect.left : cx;
       const ey   = event && event.clientY != null ? event.clientY - rect.top  : cy;
 
-      /* --- Ring burst --- */
+      /* --- Ring burst (throttled: remove previous before adding new) --- */
+      const prevRing = coreWrap.querySelector('.tap-ring-burst');
+      if (prevRing) prevRing.remove();
       const ring = document.createElement("span");
       ring.className = "tap-ring-burst";
       coreWrap.appendChild(ring);
@@ -271,8 +273,13 @@
       coreWrap.appendChild(rl);
       setTimeout(() => rl.remove(), 950);
 
-      /* --- +XP label (every 3rd tap) --- */
+      /* --- Live forge history (every 5th tap) --- */
       tapCount++;
+      if (tapCount % 5 === 0) {
+        const p = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
+        addHistoryRow(t('forge_burst_evt') || 'Forge strike', '+' + ((p.balance || 0).toLocaleString()) + ' 🪙 balance', t('just_now') || 'now');
+      }
+
       if (tapCount % 3 === 0) {
         const xp = document.createElement("span");
         xp.className = "xp-label-float";
@@ -344,12 +351,57 @@
     getActive: getSavedSkin,
   };
 
+  /* ---- Live forge history ---- */
+  let _historyReady = false;
+  const addHistoryRow = (event, gain, time) => {
+    const host = document.querySelector('[data-forge-history]');
+    if (!host) return;
+    if (!_historyReady) {
+      host.innerHTML = '';   // clear the "Strike the anvil…" placeholder
+      _historyReady = true;
+    }
+    const row = document.createElement('div');
+    row.className = 'history-row';
+    row.innerHTML = `<span class="h-event">${event}</span><span class="h-gain">${gain}</span><span class="h-time">${time}</span>`;
+    host.insertBefore(row, host.firstChild);
+    // Keep max 8 rows
+    while (host.children.length > 8) host.removeChild(host.lastChild);
+  };
+
+  /* ---- Hydrate display from Player state after sync ---- */
+  const hydrateFromPlayer = () => {
+    const p = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
+
+    const balEl    = document.querySelector('[data-balance]');
+    const energyEl = document.querySelector('[data-energy]');
+    const fillEl   = document.querySelector('[data-energy-fill]');
+    const streakBadge = document.querySelector('[data-streak-badge]');
+    const streakVal   = document.querySelector('[data-streak-val]');
+
+    if (balEl)      balEl.textContent    = (p.balance || 0).toLocaleString();
+    if (energyEl)   energyEl.textContent = p.energy != null ? p.energy : 1000;
+    if (fillEl)     fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
+    const streak = p.dailyStreak || 1;
+    if (streakBadge) streakBadge.textContent = '🔥 ' + streak;
+    if (streakVal)   streakVal.textContent   = '🔥 ' + streak + (streak === 1 ? ' day' : ' days');
+  };
+
   /* ---- Init ---- */
   const init = () => {
     buildSkinRail();
     setupEnhancedTapFX();
     setupContractCopy();
     setupClaim();
+
+    // Hydrate immediately from localStorage Player state
+    hydrateFromPlayer();
+
+    // Re-hydrate once server sync completes (profile_pic, energy, balance, streak)
+    if (window.RealSync) {
+      window.RealSync.ready().then(() => {
+        hydrateFromPlayer();
+      });
+    }
   };
 
   if (document.readyState === "loading") {
