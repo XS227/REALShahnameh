@@ -12,6 +12,12 @@
   <main class="app">
 
     <section class="page-head">
+      <button class="back-btn" id="back-btn" onclick="history.length > 1 ? history.back() : location.href='index.html'" aria-label="Back">
+        ← Back
+      </button>
+    </section>
+
+    <section class="page-head" style="margin-top:0;">
       <div>
         <h2 class="page-title" data-i18n="profile_title">Chronicle</h2>
         <p class="page-sub" data-i18n="profile_sub">Your legend unfolds</p>

@@ -5017,3 +5017,155 @@ body::after {
   margin-top: 3px;
   letter-spacing: 0.3px;
 }
+
+/* ── Back button (profile page) ─────────────────────────────────────── */
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color .15s;
+}
+.back-btn:hover, .back-btn:active { color: var(--text); }
+
+/* ── Clan modal overlay ──────────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: rgba(4, 5, 11, 0.82);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+.modal-sheet {
+  background: linear-gradient(180deg, rgba(18,24,52,.98), rgba(10,14,36,.99));
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  padding: 24px 20px 36px;
+  width: 100%;
+  max-width: 480px;
+  animation: sheet-up .22s cubic-bezier(.22,1,.36,1);
+}
+@keyframes sheet-up {
+  from { transform: translateY(60px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.modal-header h3 { margin: 0; font-size: 17px; font-weight: 800; }
+.modal-close {
+  background: rgba(255,255,255,.07);
+  border: none;
+  color: var(--muted);
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 13px;
+  display: grid; place-items: center;
+}
+.modal-desc { font-size: 12px; color: var(--muted); margin: 0 0 18px; }
+.modal-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+.modal-required { color: var(--ember); }
+.modal-input-wrap { position: relative; }
+.modal-input {
+  width: 100%;
+  background: rgba(255,255,255,.05);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  color: var(--text);
+  font-size: 14px;
+  padding: 10px 36px 10px 12px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color .15s;
+}
+.modal-input:focus { border-color: var(--border-gold); }
+.name-check-icon {
+  position: absolute;
+  right: 10px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  pointer-events: none;
+}
+.name-check-msg { font-size: 11px; margin-top: 5px; min-height: 16px; }
+.name-check-msg.ok    { color: var(--jade); }
+.name-check-msg.error { color: var(--ember); }
+.name-check-msg.muted { color: var(--muted); }
+.modal-cost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 6px;
+  padding: 10px 14px;
+  background: rgba(244,197,107,.07);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--r-sm);
+}
+.modal-cost-lbl { font-size: 12px; color: var(--muted); }
+.modal-cost-val { font-size: 14px; font-weight: 800; color: var(--gold); }
+.modal-balance-row { font-size: 12px; color: var(--muted); margin-bottom: 18px; }
+
+/* ── Clan cards on Social page ───────────────────────────────────────── */
+.clan-founded-card { padding: 16px; }
+.clan-founded-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.clan-badge-large {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(140deg, rgba(244,197,107,.28), rgba(140,109,255,.2));
+  border: 2px solid var(--border-gold);
+  display: grid; place-items: center;
+  font-size: 22px; font-weight: 800; color: var(--gold);
+  flex-shrink: 0;
+}
+.clan-founded-name { font-size: 16px; font-weight: 800; color: var(--text); }
+.clan-founded-motto { font-size: 11px; color: var(--muted); margin-top: 3px; font-style: italic; }
+.clan-founded-stats {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+.clan-create-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-top: 10px;
+}
+.clan-cta-left { display: flex; align-items: center; gap: 12px; }
+.clan-cta-ico {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  background: rgba(244,197,107,.1);
+  border: 1px solid var(--border-gold);
+  display: grid; place-items: center;
+  font-size: 16px;
+}
+.clan-cta-title { font-size: 13px; font-weight: 700; color: var(--text); }
+.clan-cta-sub   { font-size: 11px; color: var(--muted); margin-top: 2px; }

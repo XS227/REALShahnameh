@@ -39,7 +39,7 @@
     <article class="card lb-list" id="lb-learners" data-lb-panel="learners" style="display:none;"></article>
     <article class="card lb-list" id="lb-referrers" data-lb-panel="referrers" style="display:none;"></article>
 
-    <!-- My Clan — real referred warriors -->
+    <!-- My Clan — shows clan membership or referred warriors + create option -->
     <div id="my-clan"></div>
 
     <!-- Guild preview -->
@@ -102,6 +102,39 @@
     </section>
 
   </main>
+
+  <!-- Create Clan Modal -->
+  <div class="modal-overlay" id="clan-modal" aria-hidden="true" style="display:none;">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3>⚔ Found Your Clan</h3>
+        <button class="modal-close" id="clan-modal-close" aria-label="Close">✕</button>
+      </div>
+      <p class="modal-desc">Name your warband and rally warriors under your banner.</p>
+
+      <label class="modal-label">Clan Name <span class="modal-required">*</span></label>
+      <div class="modal-input-wrap">
+        <input class="modal-input" id="clan-name-input" type="text"
+               placeholder="e.g. Lions of Damavand"
+               maxlength="30" autocomplete="off" spellcheck="false" />
+        <span class="name-check-icon" id="name-check-icon"></span>
+      </div>
+      <div class="name-check-msg" id="name-check-msg"></div>
+
+      <label class="modal-label" style="margin-top:14px;">Motto <span style="color:var(--muted);font-weight:400;">(optional)</span></label>
+      <input class="modal-input" id="clan-motto-input" type="text"
+             placeholder="e.g. Glory or death"
+             maxlength="80" autocomplete="off" />
+
+      <div class="modal-cost-row">
+        <span class="modal-cost-lbl">Founding cost</span>
+        <span class="modal-cost-val">50,000 REAL</span>
+      </div>
+      <div class="modal-balance-row" id="modal-balance-row"></div>
+
+      <button class="primary-btn btn-block" id="clan-create-btn" disabled>Create Clan</button>
+    </div>
+  </div>
 
   <nav class="bottom-nav">
     <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="home">Home</span></a>
