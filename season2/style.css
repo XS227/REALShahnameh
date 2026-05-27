@@ -5566,13 +5566,15 @@ body::after {
   justify-content: center;
   width: 22px;
   height: 22px;
-  border-radius: 50%;
-  background: linear-gradient(140deg, rgba(94,162,255,.35), rgba(140,109,255,.25));
-  border: 1px solid rgba(94,162,255,.45);
-  color: #7ecfff;
-  font-size: 11px;
   flex-shrink: 0;
-  box-shadow: 0 0 8px rgba(94,162,255,.3);
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+.real-tok-svg {
+  display: block;
+  filter: drop-shadow(0 0 5px rgba(244,197,107,.5));
 }
 .r-real-chain {
   margin-left: auto;

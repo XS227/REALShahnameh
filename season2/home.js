@@ -270,15 +270,8 @@
       .sort((a, b) => (b.playerLevel || 1) - (a.playerLevel || 1))
       .slice(0, 3);
 
-    /* Fallback: show first 3 from catalog at level 1 */
     if (!spotlightHeroes.length) {
-      spotlightHeroes = (catalogHeroes || []).slice(0, 3).map(h => ({
-        ...h, playerLevel: 1, zarPerHour: 0,
-      }));
-    }
-
-    if (!spotlightHeroes.length) {
-      host.innerHTML = `<div class="hs-empty">No heroes yet — visit the Heroes page to unlock your first!</div>`;
+      host.innerHTML = `<div class="hs-empty">No heroes yet — visit the <a href="heroes.html" style="color:var(--gold)">Heroes page</a> to unlock your first!</div>`;
       return;
     }
 
@@ -295,9 +288,93 @@
         <div class="hs-right">
           <div class="hs-lvl-lbl">LVL</div>
           <div class="hs-lvl-num">${h.playerLevel || 1}</div>
-          <a href="heroes.html" class="hs-upgrade-link">Up ›</a>
+          <a href="heroes.html#${escapeAttr(h.slug)}" class="hs-upgrade-link">Up ›</a>
         </div>
       </div>`).join('');
+  };
+
+  /* ── Treasury resource info for info modals ── */
+  const TREASURY_INFO = {
+    farr: {
+      name: "Farr — Divine Glory",
+      uses: "The divine glory of the Pishdadian kings. Farr governs your prestige rank in the Chronicles and gates access to legendary heroes and story branches.",
+      tips: ["Complete chapter quizzes with a perfect score", "Build daily quest streaks", "Ascend heroes to unlock their Farr aura"],
+    },
+    zar: {
+      name: "Zar — Gold of Pars",
+      uses: "The primary upgrade currency of the realm. Use Zar to level up heroes, unlock chapters, and craft items in the Forge of Pars.",
+      tips: ["Tap in The Forge of Pars", "Heroes earn Zar per hour while idle", "Clan bonuses and offline mining rewards"],
+    },
+    gems: {
+      name: "Gems — Kaveh's Vault",
+      uses: "Rare artifacts of immense power. Gems unlock premium heroes, purchase special relics, and instantly accelerate upgrades.",
+      tips: ["Invite warriors via your referral link", "Complete weekly challenge quests", "Participate in clan wars and tournaments"],
+    },
+    xp: {
+      name: "XP — Chronicle Wisdom",
+      uses: "Wisdom earned through the Chronicle. XP raises your VIP level, unlocking exclusive badges, extra hero slots, and story branches.",
+      tips: ["Read Chronicle scenes (+50 XP/day)", "Answer chapter quizzes (+100 XP)", "Daily streaks and chapter completions"],
+    },
+    real: {
+      name: "$REAL Token",
+      uses: "The on-chain ecosystem token on the TON blockchain. REAL bridges your in-game achievements with real-world DeFi value, staking, and seasonal rewards.",
+      tips: ["Tap in The Forge (+80 REAL per 200 taps)", "Chapter completions and milestone rewards", "Clan treasury dividends and seasonal airdrops"],
+    },
+  };
+
+  const showTreasuryModal = (kind) => {
+    const info = TREASURY_INFO[kind];
+    if (!info) return;
+    const existing = document.getElementById("tm-overlay");
+    if (existing) existing.remove();
+    const ico = window.RealResources ? window.RealResources.icon(kind) : "";
+    const overlay = document.createElement("div");
+    overlay.id = "tm-overlay";
+    overlay.className = "tm-overlay";
+    overlay.innerHTML = `
+      <div class="tm-sheet" role="dialog" aria-modal="true">
+        <div class="tm-handle" aria-hidden="true"></div>
+        <div class="tm-head">
+          <span class="tm-ico">${escapeHtml(ico)}</span>
+          <span class="tm-title">${escapeHtml(info.name)}</span>
+          <button class="tm-close" aria-label="Close">✕</button>
+        </div>
+        <div class="tm-body">
+          <div class="tm-section-lbl">What it does</div>
+          <p class="tm-text">${escapeHtml(info.uses)}</p>
+          <div class="tm-section-lbl" style="margin-top:14px;">How to earn more</div>
+          <ul class="tm-tips">${info.tips.map(tip => `<li>${escapeHtml(tip)}</li>`).join("")}</ul>
+        </div>
+      </div>`;
+    overlay.querySelector(".tm-close").addEventListener("click", () => overlay.remove());
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) overlay.remove(); });
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => { requestAnimationFrame(() => overlay.classList.add("visible")); });
+  };
+
+  const wireTreasuryModals = () => {
+    const host = document.querySelector("[data-resource-hud]");
+    if (!host) return;
+    host.querySelectorAll("[data-resource-cell]").forEach((cell) => {
+      if (cell.dataset.tmWired) return;
+      cell.dataset.tmWired = "1";
+      cell.style.cursor = "pointer";
+      cell.addEventListener("click", () => showTreasuryModal(cell.dataset.resourceCell));
+    });
+  };
+
+  /* ── Quest action routing ── */
+  const wireQuestClicks = () => {
+    const ROUTES = { read: "learn.html", quiz: "chapter.html", tap: "tap.html", invite: "earn.html" };
+    Object.entries(ROUTES).forEach(([key, url]) => {
+      const row = document.querySelector('[data-quest="' + key + '"]');
+      if (!row || row.dataset.questWired) return;
+      row.dataset.questWired = "1";
+      row.addEventListener("click", () => {
+        if (row.classList.contains("done")) return;
+        window.location.href = url;
+      });
+    });
   };
 
   /* ── Boot: run initial hydration immediately, then re-run after sync ── */
@@ -306,6 +383,14 @@
     hydrateProfile();
     hydrateQuests();
     refreshTreasury();
+    wireQuestClicks();
+    wireTreasuryModals();
+
+    // Sync heroes from server if local cache is empty
+    if (window.RealSync && window.RealSync.syncHeroes) {
+      const cached = window.RealSync.getOwnedHeroes ? window.RealSync.getOwnedHeroes() : {};
+      if (!Object.keys(cached).length) window.RealSync.syncHeroes();
+    }
 
     // Second pass once server data arrives (profile_pic, real balances, quests)
     if (window.RealSync) {
@@ -316,6 +401,7 @@
           ? Math.floor((window.RealPlayer.get().xp || 0) / 1000) : 0);
         if (window.RealUtils) window.RealUtils.updateGlobalZar();
         refreshTreasury();
+        wireTreasuryModals();
       });
     }
 

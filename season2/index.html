@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Home</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605270700" />
+  <link rel="stylesheet" href="style.css?v=202605271800" />
   <style>
     /* Home-only layout additions */
     .home-season-banner {
@@ -163,6 +163,75 @@
     .bal-sub { font-size: 11px; color: var(--muted); margin-top: 3px; }
 
     /* Hero spotlight row — layout done in style.css (.hs-row, .hs-card) */
+
+    /* Clickable quest rows */
+    .quest-row:not(.done) {
+      cursor: pointer;
+      transition: background .15s, transform .08s;
+    }
+    .quest-row:not(.done):active {
+      transform: scale(.975);
+      background: rgba(25,35,70,.7);
+    }
+
+    /* Treasury info modal (bottom-sheet) */
+    .tm-overlay {
+      position: fixed; inset: 0; z-index: 9999;
+      background: rgba(4,5,11,.75);
+      backdrop-filter: blur(5px);
+      display: flex; align-items: flex-end;
+      opacity: 0; transition: opacity .2s;
+      pointer-events: none;
+    }
+    .tm-overlay.visible { opacity: 1; pointer-events: auto; }
+    .tm-sheet {
+      width: 100%; max-width: 480px; margin: 0 auto;
+      background: linear-gradient(170deg, rgba(16,22,52,.99), rgba(10,14,36,1));
+      border: 1px solid rgba(244,197,107,.18);
+      border-bottom: none;
+      border-radius: 20px 20px 0 0;
+      padding-bottom: env(safe-area-inset-bottom, 12px);
+      transform: translateY(40px);
+      transition: transform .28s cubic-bezier(.22,1,.36,1);
+    }
+    .tm-overlay.visible .tm-sheet { transform: translateY(0); }
+    .tm-handle {
+      width: 36px; height: 4px; border-radius: 2px;
+      background: rgba(255,255,255,.16);
+      margin: 12px auto 6px;
+    }
+    .tm-head {
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 16px 12px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .tm-ico { font-size: 22px; flex-shrink: 0; }
+    .tm-title { font-size: 15px; font-weight: 800; flex: 1; color: var(--gold); }
+    .tm-close {
+      background: rgba(255,255,255,.08); border: none; border-radius: 50%;
+      width: 28px; height: 28px; cursor: pointer;
+      color: var(--muted); font-size: 12px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .tm-body { padding: 14px 16px 20px; }
+    .tm-section-lbl {
+      font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--muted); font-weight: 700; margin-bottom: 7px;
+    }
+    .tm-text { margin: 0; font-size: 13px; line-height: 1.6; color: var(--text-dim, #b8b1a0); }
+    .tm-tips { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+    .tm-tips li {
+      font-size: 12px; color: var(--text-dim, #b8b1a0);
+      padding: 8px 10px 8px 34px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 8px; position: relative;
+    }
+    .tm-tips li::before {
+      content: "✦"; position: absolute; left: 11px;
+      color: var(--gold); font-size: 9px;
+      top: 50%; transform: translateY(-50%);
+    }
   </style>
 </head>
 <body>
@@ -339,28 +408,16 @@
   </nav>
 
   <div class="toast" data-toast></div>
-  <script src="app.js?v=202605270700"></script>
-  <script src="i18n/en.js?v=202605270700"></script>
-  <script src="i18n/fa.js?v=202605270700"></script>
-  <script src="i18n/tg.js?v=202605270700"></script>
-  <script src="i18n.js?v=202605270700"></script>
-  <script src="resources.js?v=202605270700"></script>
-  <script src="utils.js?v=202605270700"></script>
-  <script src="audio.js?v=202605270700"></script>
-  <script src="cinematic.js?v=202605270700"></script>
-  <script src="sync.js?v=202605270700"></script>
-  <script src="home.js?v=202605270700"></script>
-  <script>
-    // Mount the Treasury HUD on home. Runs after resources.js + i18n.js are
-    // ready; safe-no-op if either is unavailable (e.g. local file:// preview).
-    (function () {
-      var host = document.querySelector("[data-resource-hud]");
-      if (!host || !window.RealResources) return;
-      window.RealResources.mountHud(host);
-      if (window.RealI18N && window.RealI18N.applyLocale) {
-        window.RealI18N.applyLocale();
-      }
-    })();
-  </script>
+  <script src="app.js?v=202605271800"></script>
+  <script src="i18n/en.js?v=202605271800"></script>
+  <script src="i18n/fa.js?v=202605271800"></script>
+  <script src="i18n/tg.js?v=202605271800"></script>
+  <script src="i18n.js?v=202605271800"></script>
+  <script src="resources.js?v=202605271800"></script>
+  <script src="utils.js?v=202605271800"></script>
+  <script src="audio.js?v=202605271800"></script>
+  <script src="cinematic.js?v=202605271800"></script>
+  <script src="sync.js?v=202605271800"></script>
+  <script src="home.js?v=202605271800"></script>
 </body>
 </html>
