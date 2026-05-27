@@ -935,14 +935,16 @@
   const comboEl   = $("[data-combo]");
 
   if (orb && coreWrap && energyEl && fillEl) {
+    const _tapEc = (() => { try { return JSON.parse(localStorage.getItem('real_economy_config') || '{}'); } catch { return {}; } })();
+    const _heroZarBonus = (() => { try { return Math.floor(parseInt(localStorage.getItem('real_total_zar_hr') || '0', 10) / 200); } catch { return 0; } })();
     const state = {
       max: 1000,
       energy: Player.get().energy || 1000,
-      balance: Player.getResource("real") || 0,
+      balance: Player.getResource("zar") || 0,
       combo: 1,
       lastTap: 0,
       tapCost: 1,
-      base: 12,
+      base: Math.max(1, Number(_tapEc.tap_base_zar) || 5) + _heroZarBonus,
     };
 
     const renderEnergy = () => {
@@ -951,7 +953,7 @@
     };
     const renderBalance = () => {
       if (!balanceEl) return;
-      balanceEl.innerHTML = `${state.balance.toLocaleString()}<small> REAL</small>`;
+      balanceEl.innerHTML = `<span class="zar-ico">🪙</span> ${state.balance.toLocaleString()}`;
       balanceEl.classList.remove("flash");
       void balanceEl.offsetWidth;
       balanceEl.classList.add("flash");
@@ -1006,7 +1008,7 @@
       state.balance += reward;
 
       // Persist tap reward and energy to Player state so Treasury + sync stay correct
-      Player.addResource("real", reward);
+      Player.addResource("zar", reward);
       Player.set({ energy: state.energy });
 
       // Daily tap counter for home quest tracker + server sync
@@ -1028,7 +1030,7 @@
       // floating spark
       const spark = document.createElement("span");
       spark.className = `spark${crit ? " crit" : ""}`;
-      spark.textContent = `+${reward}${crit ? " ⚡" : ""}`;
+      spark.textContent = `+${reward} 🪙${crit ? " ⚡" : ""}`;
       const rect = coreWrap.getBoundingClientRect();
       const x = (event && event.clientX != null) ? event.clientX - rect.left : rect.width / 2;
       const y = (event && event.clientY != null) ? event.clientY - rect.top : rect.height / 2;
@@ -1037,10 +1039,10 @@
       coreWrap.appendChild(spark);
       setTimeout(() => spark.remove(), 900);
 
-      // floating ◆ coin from orb center
+      // floating 🪙 ZAR coin from orb center
       const coin = document.createElement("span");
       coin.className = "coin-float";
-      coin.textContent = "◆";
+      coin.textContent = "🪙";
       coin.style.left = `${rect.width / 2 - 10}px`;
       coin.style.top  = `${rect.height / 2 - 20}px`;
       coreWrap.appendChild(coin);

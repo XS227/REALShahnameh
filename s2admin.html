@@ -1039,10 +1039,12 @@ async function sendBroadcast() {
    ECONOMY
    ══════════════════════════════════════════════════════════ */
 const ECON_KEYS = [
-  { key: 'tap_daily_goal',        label: 'Daily Tap Goal',             group: 'game',   type: 'number', desc: 'Taps needed to complete daily quest' },
-  { key: 'game_season',           label: 'Current Season',             group: 'game',   type: 'number', desc: 'Active season number shown in UI' },
-  { key: 'clan_create_cost_real', label: 'Clan Creation Cost (REAL)',  group: 'clans',  type: 'number', desc: 'REAL deducted when founding a clan' },
-  { key: 'clan_max_members',      label: 'Clan Max Members',           group: 'clans',  type: 'number', desc: 'Maximum warriors per clan' },
+  { key: 'tap_base_zar',              label: 'Base ZAR per Tap',           group: 'economy', type: 'number', desc: 'Base ZAR earned per tap, before hero multipliers. Default: 5' },
+  { key: 'economy.zar_to_real_rate',  label: 'ZAR → REAL Rate',            group: 'economy', type: 'number', desc: 'ZAR required to convert to 1 in-game REAL. Default: 500' },
+  { key: 'tap_daily_goal',            label: 'Daily Tap Goal',             group: 'game',    type: 'number', desc: 'Taps needed to complete daily quest' },
+  { key: 'game_season',               label: 'Current Season',             group: 'game',    type: 'number', desc: 'Active season number shown in UI' },
+  { key: 'clan_create_cost_real',     label: 'Clan Creation Cost (REAL)',  group: 'clans',   type: 'number', desc: 'REAL deducted when founding a clan' },
+  { key: 'clan_max_members',          label: 'Clan Max Members',           group: 'clans',   type: 'number', desc: 'Maximum warriors per clan' },
 ];
 
 let _econConfigs = {};

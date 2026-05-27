@@ -272,10 +272,10 @@
         setTimeout(() => coin.remove(), dur + delay + 50);
       }
 
-      /* --- +REAL label --- */
+      /* --- +ZAR label --- */
       const rl = document.createElement("span");
       rl.className = "real-label-float";
-      rl.textContent = "+REAL";
+      rl.textContent = "+ZAR";
       rl.style.left = `${ex - 22}px`;
       rl.style.top  = `${ey - 32}px`;
       coreWrap.appendChild(rl);
@@ -438,7 +438,7 @@
     const streakVal   = document.querySelector('[data-streak-val]');
     const zarHrEl  = document.querySelector('[data-zar-hr]');
 
-    if (balEl)      balEl.innerHTML      = `<span class="real-ico">◆</span> ${(p.balance || 0).toLocaleString()}`;
+    if (balEl)      balEl.innerHTML      = `<span class="zar-ico">🪙</span> ${(p.zar || 0).toLocaleString()}`;
     if (energyEl)   energyEl.textContent = p.energy != null ? p.energy : 1000;
     if (fillEl)     fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
     const streak = p.dailyStreak || 1;
@@ -454,6 +454,91 @@
     }
   };
 
+  /* ---- ZAR → REAL swap panel ---- */
+  const setupSwap = () => {
+    const swapInput  = document.querySelector('[data-swap-input]');
+    const swapBtn    = document.querySelector('[data-swap-btn]');
+    const swapNote   = document.querySelector('[data-swap-note]');
+    const zarBalEl   = document.querySelector('[data-swap-zar-balance]');
+    const realOutEl  = document.querySelector('[data-swap-real-out]');
+    const rateLbl    = document.querySelector('[data-swap-rate-label]');
+    if (!swapInput || !swapBtn) return;
+
+    const getRate = () => {
+      try { return Number(JSON.parse(localStorage.getItem('real_economy_config') || '{}').zar_to_real_rate) || 500; }
+      catch { return 500; }
+    };
+
+    const updateSwapUI = () => {
+      const p    = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
+      const zarBal = p.zar || 0;
+      const rate   = getRate();
+      if (zarBalEl) zarBalEl.textContent = zarBal.toLocaleString();
+      if (rateLbl)  rateLbl.textContent  = `${rate.toLocaleString()} ZAR = 1 REAL`;
+      const zarAmt = parseInt(swapInput.value || '0', 10);
+      const realOut = zarAmt >= rate ? Math.floor(zarAmt / rate) : 0;
+      if (realOutEl) realOutEl.textContent = realOut + ' REAL';
+      const canSwap = zarBal >= zarAmt && zarAmt >= rate;
+      swapBtn.disabled = !canSwap;
+      if (swapNote) {
+        if (!zarAmt || zarAmt < rate) {
+          swapNote.textContent = `Min: ${rate.toLocaleString()} ZAR`;
+          swapNote.style.color = '';
+        } else if (zarBal < zarAmt) {
+          swapNote.textContent = `Not enough ZAR (you have ${zarBal.toLocaleString()})`;
+          swapNote.style.color = '#ff6b6b';
+        } else {
+          swapNote.textContent = `Convert ${zarAmt.toLocaleString()} ZAR → ${realOut} REAL`;
+          swapNote.style.color = 'var(--jade, #4ad8a6)';
+        }
+      }
+    };
+
+    swapInput.addEventListener('input', updateSwapUI);
+
+    swapBtn.addEventListener('click', async () => {
+      const zarAmt  = parseInt(swapInput.value || '0', 10);
+      const rate    = getRate();
+      const realOut = Math.floor(zarAmt / rate);
+      if (realOut < 1) return;
+      const tgUser = window.Telegram && window.Telegram.WebApp &&
+                     window.Telegram.WebApp.initDataUnsafe &&
+                     window.Telegram.WebApp.initDataUnsafe.user;
+      if (!tgUser || !tgUser.id) { showToast('Connect via Telegram to swap'); return; }
+      swapBtn.disabled = true;
+      swapBtn.textContent = 'Swapping…';
+      try {
+        const r = await fetch('/api/season2/user/zar-swap', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ telegram_id: String(tgUser.id), amount_real: realOut }),
+        }).then(res => res.ok ? res.json() : null);
+        if (r && r.status === 1) {
+          if (window.RealPlayer && window.RealPlayer.set) {
+            window.RealPlayer.set({ zar: r.new_zar, balance: r.new_real_balance });
+          }
+          swapInput.value = '';
+          updateSwapUI();
+          hydrateFromPlayer();
+          showToast(`✓ Swapped ${zarAmt.toLocaleString()} ZAR → ${realOut} REAL`);
+          if (navigator.vibrate) navigator.vibrate([8, 4, 8]);
+        } else if (r && r.error === 'insufficient_zar') {
+          showToast('Not enough ZAR');
+        } else {
+          showToast('Swap failed — try again');
+        }
+      } catch { showToast('Network error — try again'); }
+      finally {
+        swapBtn.disabled = false;
+        swapBtn.textContent = 'Swap ›';
+      }
+    });
+
+    // Update UI after sync resolves (balance may change)
+    if (window.RealSync) window.RealSync.ready().then(updateSwapUI);
+    updateSwapUI();
+  };
+
   /* ---- Init ---- */
   const init = () => {
     buildSkinRail();
@@ -461,6 +546,7 @@
     setupContractCopy();
     setupClaim();
     setupAdsgramRefill();
+    setupSwap();
 
     // Hydrate immediately from localStorage Player state
     hydrateFromPlayer();

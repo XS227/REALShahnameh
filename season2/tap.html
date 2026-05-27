@@ -7,9 +7,49 @@
   <title>REAL Shahnameh — Forge of Pars</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605262200" />
-  <link rel="stylesheet" href="home.css?v=202605270100" />
-  <link rel="stylesheet" href="tap.css?v=202605270100" />
+  <link rel="stylesheet" href="style.css?v=202605271800" />
+  <link rel="stylesheet" href="home.css?v=202605271800" />
+  <link rel="stylesheet" href="tap.css?v=202605271800" />
+  <style>
+    /* ZAR → REAL swap card */
+    .swap-card {
+      background: linear-gradient(140deg, rgba(16,22,52,.85), rgba(10,14,36,.9));
+      border: 1px solid rgba(212,164,80,.25);
+      border-radius: var(--r-md, 12px);
+      padding: 14px;
+    }
+    .swap-row {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 12px;
+    }
+    .swap-cell { flex: 1; text-align: center; }
+    .swap-lbl { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .swap-val { font-size: 18px; font-weight: 800; color: var(--text); }
+    .swap-val.swap-real-out { color: var(--jade, #4ad8a6); }
+    .swap-arrow { font-size: 18px; color: var(--muted); flex-shrink: 0; }
+    .swap-input-row { display: flex; gap: 8px; align-items: center; }
+    .swap-input-wrap {
+      flex: 1; display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(212,164,80,.2);
+      border-radius: 8px; padding: 0 10px;
+    }
+    .swap-ico { font-size: 14px; flex-shrink: 0; }
+    .swap-input {
+      flex: 1; background: none; border: none; outline: none;
+      color: var(--text); font-size: 14px; font-weight: 600;
+      padding: 10px 0; min-width: 0;
+    }
+    .swap-input::placeholder { color: var(--muted); }
+    .swap-btn {
+      background: linear-gradient(135deg, var(--gold, #f4c56b), #d4a450);
+      color: #07080f; font-size: 13px; font-weight: 800;
+      border: none; border-radius: 8px; padding: 10px 16px;
+      cursor: pointer; white-space: nowrap;
+      transition: opacity .15s;
+    }
+    .swap-btn:disabled { opacity: .38; cursor: not-allowed; }
+    .swap-note { font-size: 11px; color: var(--muted); margin-top: 8px; text-align: center; transition: color .2s; }
+  </style>
 </head>
 <body>
   <main class="app tap-app">
@@ -218,6 +258,35 @@
       </div>
     </section>
 
+    <!-- ── ZAR → REAL Conversion ────────────────────────────────── -->
+    <section>
+      <div class="section-head" style="margin-bottom:10px;">
+        <h3>🪙 Convert ZAR → REAL</h3>
+        <span style="font-size:10px;color:var(--muted);" data-swap-rate-label>500 ZAR = 1 REAL</span>
+      </div>
+      <div class="swap-card">
+        <div class="swap-row">
+          <div class="swap-cell">
+            <div class="swap-lbl">Your ZAR</div>
+            <div class="swap-val" data-swap-zar-balance>0</div>
+          </div>
+          <div class="swap-arrow">→</div>
+          <div class="swap-cell">
+            <div class="swap-lbl">You receive</div>
+            <div class="swap-val swap-real-out" data-swap-real-out>0 REAL</div>
+          </div>
+        </div>
+        <div class="swap-input-row">
+          <div class="swap-input-wrap">
+            <span class="swap-ico">🪙</span>
+            <input type="number" class="swap-input" data-swap-input min="1" step="1" placeholder="ZAR amount…">
+          </div>
+          <button class="swap-btn" data-swap-btn disabled>Swap ›</button>
+        </div>
+        <div class="swap-note" data-swap-note>Min: 500 ZAR</div>
+      </div>
+    </section>
+
     <!-- ── Recent forging (populated live by JS as taps happen) ── -->
     <div class="tap-history">
       <h5 data-i18n="forge_recent">Recent forging</h5>
@@ -272,18 +341,18 @@
     </div>
   </div>
 
-  <script src="app.js?v=202605270100"></script>
-  <script src="i18n/en.js?v=202605270100"></script>
-  <script src="i18n/fa.js?v=202605270100"></script>
-  <script src="i18n/tg.js?v=202605270100"></script>
-  <script src="i18n.js?v=202605270100"></script>
-  <script src="resources.js?v=202605270100"></script>
-  <script src="audio.js?v=202605270100"></script>
-  <script src="cinematic.js?v=202605270100"></script>
-  <script src="sync.js?v=202605262200"></script>
-  <script src="adsgram.js?v=202605270100"></script>
+  <script src="app.js?v=202605271800"></script>
+  <script src="i18n/en.js?v=202605271800"></script>
+  <script src="i18n/fa.js?v=202605271800"></script>
+  <script src="i18n/tg.js?v=202605271800"></script>
+  <script src="i18n.js?v=202605271800"></script>
+  <script src="resources.js?v=202605271800"></script>
+  <script src="audio.js?v=202605271800"></script>
+  <script src="cinematic.js?v=202605271800"></script>
+  <script src="sync.js?v=202605271800"></script>
+  <script src="adsgram.js?v=202605271800"></script>
   <script>window.RealMarket = { endpoint: '/api/market/real' };</script>
-  <script src="market.js?v=202605260200"></script>
-  <script src="tap.js?v=202605270100"></script>
+  <script src="market.js?v=202605271800"></script>
+  <script src="tap.js?v=202605271800"></script>
 </body>
 </html>
