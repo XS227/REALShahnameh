@@ -37,17 +37,20 @@
   };
 
   /* Build the inner HTML for a hero portrait.
-     Priority: explicit image_url → auto .png → auto .jpg → emoji */
+     Priority: explicit image_url → assets path → uploads .png → uploads .jpg → emoji */
   const heroPortraitHtml = (h) => {
     if (h.image_url) {
       return `<img src="${escapeAttr(h.image_url)}" alt="${escapeAttr(h.name)}" loading="lazy">`;
     }
-    const slug = encodeURIComponent(h.slug || "");
-    const png  = `/season2/uploads/heroes/${slug}.png`;
-    const jpg  = `/season2/uploads/heroes/${slug}.jpg`;
-    const emo  = escapeHtml(heroEmoji(h.slug));
-    return `<img src="${png}" alt="${escapeAttr(h.name)}" loading="lazy" `
-         + `onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='${escapeAttr(jpg)}';}else{this.outerHTML='${emo}';}">`;
+    const slug    = h.slug || "";
+    const slugEnc = encodeURIComponent(slug);
+    // Collection cards live in /assets/images/heroes/<slug>-hero.png
+    const asset = `/assets/images/heroes/${slugEnc}-hero.png`;
+    const png   = `/season2/uploads/heroes/${slugEnc}.png`;
+    const jpg   = `/season2/uploads/heroes/${slugEnc}.jpg`;
+    const emo   = escapeHtml(heroEmoji(slug));
+    return `<img src="${escapeAttr(asset)}" alt="${escapeAttr(h.name)}" loading="lazy" `
+         + `onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='${escapeAttr(png)}';}else if(!this.dataset.tried2){this.dataset.tried2='1';this.src='${escapeAttr(jpg)}';}else{this.outerHTML='${emo}';}">`;
   };
 
   /* Build the inner HTML for a chapter banner.
@@ -66,8 +69,16 @@
   const heroEmoji = (slug) => ({
     rostam: "⚔", simorgh: "🪶", zal: "🌒", tahmineh: "♛",
     zahhak: "🐍", fereydun: "🛡", kaveh: "⚒", rakhsh: "🐎",
-    akvan: "🌪", esfandiyar: "🏹", persepolis: "🏛"
+    akvan: "🌪", esfandiyar: "🏹", persepolis: "🏛",
+    keyumars: "👑", siamak: "🗡", hushang: "🔥", ahriman: "☠",
+    "black-div": "👹", "first-calendar": "📅", "ancient-pars": "🏛",
+    "farr-codex": "✦", "demon-forest": "🌲", "black-demon": "🐍",
+    "mount-alborz": "⛰", "mount-damavand": "🌋", "leopard-skins": "🐆",
+    "royal-court": "⚜", fravahar: "🦅",
   })[slug] || "⚔";
+
+  /* Convert a hero_id slug to a readable display name when catalog data is missing */
+  const slugToName = (slug) => slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 
   const renderHeroes = (heroes) => {
     if (!heroHost) return;
@@ -260,20 +271,32 @@
     const owned = (window.RealSync && window.RealSync.getOwnedHeroes)
       ? window.RealSync.getOwnedHeroes() : {};
 
-    /* Join catalog data with owned levels */
-    let spotlightHeroes = Object.entries(owned)
-      .map(([hero_id, data]) => {
-        const cat = (catalogHeroes || []).find(h => h.slug === hero_id);
-        return cat ? { ...cat, playerLevel: data.level || 1, zarPerHour: data.zar_per_hour || 0 } : null;
-      })
-      .filter(Boolean)
-      .sort((a, b) => (b.playerLevel || 1) - (a.playerLevel || 1))
-      .slice(0, 3);
-
-    if (!spotlightHeroes.length) {
+    if (!Object.keys(owned).length) {
       host.innerHTML = `<div class="hs-empty">No heroes yet — visit the <a href="heroes.html" style="color:var(--gold)">Heroes page</a> to unlock your first!</div>`;
       return;
     }
+
+    /* Build a catalog lookup by slug for enrichment (catalog may be incomplete) */
+    const catMap = {};
+    (catalogHeroes || []).forEach(h => { if (h.slug) catMap[h.slug] = h; });
+
+    /* Build spotlight list from owned heroes — catalog data is optional enrichment.
+       Cards of all types (character, place, codex) are included. */
+    const spotlightHeroes = Object.entries(owned)
+      .map(([hero_id, data]) => {
+        const cat = catMap[hero_id];
+        return {
+          slug:        hero_id,
+          name:        (cat && cat.name) || slugToName(hero_id),
+          image_url:   (cat && cat.image_url) || null,
+          bonus:       (cat && cat.bonus) || null,
+          rarity:      (cat && cat.rarity) || "",
+          playerLevel: data.level || 1,
+          zarPerHour:  data.zar_per_hour || 0,
+        };
+      })
+      .sort((a, b) => (b.playerLevel || 1) - (a.playerLevel || 1))
+      .slice(0, 3);
 
     host.innerHTML = spotlightHeroes.map(h => `
       <div class="hs-card">
@@ -283,7 +306,7 @@
         <div class="hs-body">
           <div class="hs-kicker">Active hero</div>
           <div class="hs-name">${escapeHtml(h.name)}</div>
-          ${h.bonus ? `<span class="hs-passive">✦ ${escapeHtml(h.bonus)}</span>` : ''}
+          <span class="hs-passive">✦ +${h.zarPerHour} ZAR/hr</span>
         </div>
         <div class="hs-right">
           <div class="hs-lvl-lbl">LVL</div>
@@ -430,7 +453,7 @@
       renderHeroes(heroes);
       renderHeroSpotlight(heroes || []);
     })
-    .catch(() => { renderHeroes([]); renderHeroSpotlight([]); });
+    .catch(() => { renderHeroes([]); renderHeroSpotlight([]); /* owned heroes still show via getOwnedHeroes() */ });
 
   fetch("/api/catalog/chapters", { cache: "no-store" })
     .then(r => r.ok ? r.json() : null)
