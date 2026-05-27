@@ -55,7 +55,7 @@ class AnthropicProvider(AIProvider):
         model = cfg.get("anthropic_model", "claude-sonnet-4-6")
         max_tokens = cfg.get_int("hakim_max_tokens", 900)
 
-        system = HAKIM_SYSTEM
+        system = cfg.get("hakim_system_prompt") or HAKIM_SYSTEM
         if context:
             system += f"\n\n=== RIKETS ARKIVER ===\n{context}"
 
@@ -96,7 +96,8 @@ class OpenAIProvider(AIProvider):
         max_tokens = cfg.get_int("hakim_max_tokens", 900)
         temperature = cfg.get_float("hakim_temperature", 0.75)
 
-        messages = [{"role": "system", "content": HAKIM_SYSTEM}]
+        system_prompt = cfg.get("hakim_system_prompt") or HAKIM_SYSTEM
+        messages = [{"role": "system", "content": system_prompt}]
         if context:
             messages.append({"role": "system", "content": f"=== RIKETS ARKIVER ===\n{context}"})
         messages.append({"role": "user", "content": message})

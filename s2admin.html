@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="admin-build" content="2026-05-27-level99">
 <title>Season 2 Admin</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -24,21 +28,22 @@ body{font-family:system-ui,sans-serif;background:#0d0d12;color:#e2e2e8;min-heigh
 
 /* ── Shell ── */
 #app{display:none;flex-direction:column;min-height:100vh}
-.topbar{background:var(--card);border-bottom:1px solid var(--border);padding:0 24px;height:52px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:100}
-.topbar-brand{font-weight:700;font-size:1rem;color:#fff;flex:1}
+.topbar{background:var(--card);border-bottom:1px solid var(--border);padding:0 16px;height:52px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100}
+.topbar-brand{font-weight:700;font-size:.95rem;color:#fff;white-space:nowrap;flex-shrink:0}
 .topbar-brand span{color:var(--accent)}
-.nav-tabs{display:flex;gap:4px}
-.nav-tab{background:none;border:none;color:var(--muted);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:.88rem;transition:all .15s}
+.nav-tabs{display:flex;gap:2px;overflow-x:auto;flex:1;scrollbar-width:none}
+.nav-tabs::-webkit-scrollbar{display:none}
+.nav-tab{background:none;border:none;color:var(--muted);padding:6px 11px;border-radius:6px;cursor:pointer;font-size:.82rem;white-space:nowrap;transition:all .15s;flex-shrink:0}
 .nav-tab:hover{background:#1e1e2a;color:#fff}
 .nav-tab.active{background:var(--accent);color:#fff}
-.logout-btn{background:none;border:1px solid var(--border);color:var(--muted);padding:5px 12px;border-radius:6px;cursor:pointer;font-size:.8rem}
+.logout-btn{background:none;border:1px solid var(--border);color:var(--muted);padding:5px 10px;border-radius:6px;cursor:pointer;font-size:.78rem;white-space:nowrap;flex-shrink:0}
 .logout-btn:hover{color:var(--danger);border-color:var(--danger)}
-main{flex:1;padding:24px;max-width:1300px;width:100%;margin:0 auto}
+main{flex:1;padding:24px;max-width:1400px;width:100%;margin:0 auto}
 
-/* ── Cards / Sections ── */
+/* ── Sections ── */
 .section{display:none}
 .section.active{display:block}
-.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-bottom:28px}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:14px;margin-bottom:28px}
 .stat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
 .stat-card .label{font-size:.75rem;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em}
 .stat-card .value{font-size:1.6rem;font-weight:700;color:#fff}
@@ -60,16 +65,17 @@ tr:hover td{background:#1b1b26}
 .badge-ok{background:#1a3b2e;color:var(--ok)}
 .badge-warn{background:#3b2e0a;color:var(--warn)}
 .badge-muted{background:#1e1e2a;color:var(--muted)}
+.badge-accent{background:#2a2060;color:var(--accent)}
 .pager{display:flex;align-items:center;gap:8px;padding:12px 18px;justify-content:flex-end;font-size:.82rem;color:var(--muted)}
 .pager button{background:#1e1e2a;border:1px solid var(--border);color:#fff;padding:4px 12px;border-radius:5px;cursor:pointer;font-size:.8rem}
 .pager button:disabled{opacity:.4;cursor:not-allowed}
 
-/* ── Config / Feature flags ── */
+/* ── Config/flags ── */
 .config-section{margin-bottom:28px}
 .config-section h4{font-size:.9rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border)}
 .config-list{display:flex;flex-direction:column;gap:1px;background:var(--border);border-radius:10px;overflow:hidden}
-.config-row{background:var(--card);display:flex;align-items:center;gap:12px;padding:12px 16px}
-.config-row .key{font-size:.78rem;color:var(--muted);width:240px;flex-shrink:0}
+.config-row{background:var(--card);display:flex;align-items:center;gap:12px;padding:11px 16px}
+.config-row .key{font-size:.78rem;color:var(--muted);width:220px;flex-shrink:0}
 .config-row .clabel{flex:1;font-size:.88rem}
 .config-row .desc{font-size:.75rem;color:var(--muted);flex:2}
 .config-value-input{background:#0d0d12;border:1px solid var(--border);border-radius:5px;padding:5px 10px;color:#fff;font-size:.82rem;width:150px}
@@ -79,10 +85,12 @@ tr:hover td{background:#1b1b26}
 .btn-save:hover{background:var(--accent2)}
 .btn-delete{background:#2a1010;color:var(--danger)}
 .btn-delete:hover{background:var(--danger);color:#fff}
-.btn-seed{background:#1a3b2e;color:var(--ok);margin-left:auto}
+.btn-seed{background:#1a3b2e;color:var(--ok)}
 .btn-seed:hover{background:var(--ok);color:#000}
+.btn-neutral{background:#1e1e2a;color:#ccc;border:1px solid var(--border)}
+.btn-neutral:hover{background:#2a2a38;color:#fff}
 
-/* Toggle switch */
+/* Toggle */
 .toggle-wrap{display:flex;align-items:center;gap:8px}
 .toggle{position:relative;width:42px;height:24px;cursor:pointer}
 .toggle input{opacity:0;width:0;height:0;position:absolute}
@@ -92,33 +100,102 @@ tr:hover td{background:#1b1b26}
 .toggle input:checked + .slider::before{transform:translateX(18px)}
 .toggle-label{font-size:.82rem;color:var(--muted)}
 
-/* ── Add config form ── */
-.add-config-form{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+/* Add config form */
+.add-config-form{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
 .add-config-form label{font-size:.75rem;color:var(--muted);display:block;margin-bottom:4px}
 .add-config-form input,.add-config-form select{background:#0d0d12;border:1px solid var(--border);border-radius:5px;padding:7px 10px;color:#fff;font-size:.82rem;outline:none}
 .add-config-form input:focus,.add-config-form select:focus{border-color:var(--accent)}
 .add-config-form select option{background:#0d0d12}
 .field{display:flex;flex-direction:column}
 
-/* ── Loading / Error states ── */
+/* ── Chronicle layout ── */
+.chronicle-layout{display:grid;grid-template-columns:260px 1fr;gap:16px;min-height:70vh}
+.chapter-sidebar{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.sidebar-header{padding:12px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.sidebar-header h3{font-size:.9rem;font-weight:600;flex:1}
+.sidebar-search{background:#0d0d12;border:1px solid var(--border);border-radius:5px;padding:5px 9px;color:#fff;font-size:.78rem;width:100%;outline:none}
+.sidebar-search:focus{border-color:var(--accent)}
+.chapter-list-body{overflow-y:auto;flex:1}
+.chapter-item{padding:10px 14px;cursor:pointer;border-bottom:1px solid #1a1a24;transition:background .12s}
+.chapter-item:hover{background:#1e1e2a}
+.chapter-item.selected{background:#2a2060;border-left:3px solid var(--accent)}
+.chapter-item .ch-title{font-size:.83rem;font-weight:600;color:#fff}
+.chapter-item .ch-meta{font-size:.72rem;color:var(--muted);margin-top:2px}
+.chapter-editor{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;overflow-y:auto}
+.editor-placeholder{padding:60px 20px;color:var(--muted);text-align:center;font-size:.9rem}
+
+/* ── Forms ── */
+.form-section{margin-bottom:24px}
+.form-section-title{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.form-group{display:flex;flex-direction:column;gap:5px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:.75rem;color:var(--muted)}
+.form-group input,.form-group select,.form-group textarea{background:#0d0d12;border:1px solid var(--border);border-radius:6px;padding:8px 10px;color:#fff;font-size:.85rem;outline:none;width:100%}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--accent)}
+.form-group select option{background:#0d0d12}
+.form-group textarea{resize:vertical;min-height:80px;line-height:1.5}
+.form-group textarea.tall{min-height:160px}
+.form-group textarea.xl{min-height:260px}
+.form-actions{display:flex;gap:8px;align-items:center;margin-top:8px}
+
+/* ── Quiz editor ── */
+.quiz-list{display:flex;flex-direction:column;gap:8px}
+.quiz-card{background:#111118;border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.quiz-card-header{display:flex;align-items:center;gap:10px;padding:10px 14px;cursor:pointer}
+.quiz-card-header:hover{background:#1a1a24}
+.quiz-part{font-size:.72rem;color:var(--muted);width:44px;flex-shrink:0}
+.quiz-q{flex:1;font-size:.82rem}
+.quiz-body{padding:14px;border-top:1px solid var(--border)}
+.answers-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px}
+.answer-row{display:flex;align-items:center;gap:8px}
+.answer-row input[type=radio]{accent-color:var(--ok)}
+.answer-input{flex:1;background:#0d0d12;border:1px solid var(--border);border-radius:5px;padding:6px 9px;color:#fff;font-size:.8rem;outline:none}
+.answer-input:focus{border-color:var(--accent)}
+
+/* ── Two-col layout ── */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px}
+.panel h3{font-size:.9rem;font-weight:600;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.panel-full{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px}
+.panel-full h3{font-size:.9rem;font-weight:600;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+
+/* ── Economy hero table ── */
+.hero-table input{background:#0d0d12;border:1px solid var(--border);border-radius:4px;padding:4px 7px;color:#fff;font-size:.78rem;width:130px;outline:none}
+.hero-table input:focus{border-color:var(--accent)}
+.rarity-mythic{color:#f4a1ff}
+.rarity-legendary{color:#f5a623}
+.rarity-epic{color:#7c6ef7}
+.rarity-rare{color:#6fb8ff}
+.rarity-common{color:var(--muted)}
+
+/* ── Loading/Error ── */
 .loading{text-align:center;padding:40px;color:var(--muted);font-size:.9rem}
 .error-msg{background:#2a1010;border:1px solid var(--danger);color:var(--danger);border-radius:8px;padding:10px 14px;font-size:.85rem;margin-bottom:16px}
-.toast{position:fixed;bottom:24px;right:24px;background:#1e1e2a;border:1px solid var(--border);color:#fff;border-radius:8px;padding:10px 18px;font-size:.85rem;z-index:999;opacity:0;transform:translateY(8px);transition:all .25s;pointer-events:none}
+.toast{position:fixed;bottom:24px;right:24px;background:#1e1e2a;border:1px solid var(--border);color:#fff;border-radius:8px;padding:10px 18px;font-size:.85rem;z-index:9999;opacity:0;transform:translateY(8px);transition:all .25s;pointer-events:none;max-width:360px}
 .toast.show{opacity:1;transform:translateY(0)}
 .toast.ok{border-color:var(--ok);color:var(--ok)}
 .toast.err{border-color:var(--danger);color:var(--danger)}
 
-@media(max-width:700px){
-  .nav-tabs{display:none}
+.section-top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.section-top h2{font-size:1rem;font-weight:600}
+
+@media(max-width:900px){
+  .two-col{grid-template-columns:1fr}
+  .chronicle-layout{grid-template-columns:1fr}
+  .chapter-sidebar{max-height:250px}
   .config-row .desc{display:none}
   .config-row .key{width:140px}
   table{font-size:.75rem}
+}
+@media(max-width:600px){
+  .form-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 
-<!-- ── Login ──────────────────────────────────────────────────── -->
+<!-- Login -->
 <div id="login-screen">
   <div class="login-card">
     <h1>Season 2 Admin</h1>
@@ -134,14 +211,18 @@ tr:hover td{background:#1b1b26}
   </div>
 </div>
 
-<!-- ── App shell ───────────────────────────────────────────────── -->
+<!-- App shell -->
 <div id="app">
   <div class="topbar">
-    <div class="topbar-brand"><span>◆</span> Season 2 Admin</div>
+    <div class="topbar-brand"><span>◆</span> S2 Admin</div>
     <div class="nav-tabs">
       <button class="nav-tab active" onclick="showTab('dashboard')">Dashboard</button>
       <button class="nav-tab" onclick="showTab('players')">Players</button>
       <button class="nav-tab" onclick="showTab('clans')">Clans</button>
+      <button class="nav-tab" onclick="showTab('chronicle')">Chronicle</button>
+      <button class="nav-tab" onclick="showTab('bot')">Bot &amp; Links</button>
+      <button class="nav-tab" onclick="showTab('economy')">Economy</button>
+      <button class="nav-tab" onclick="showTab('hakim')">Hakim AI</button>
       <button class="nav-tab" onclick="showTab('config')">Config</button>
       <button class="nav-tab" onclick="showTab('flags')">Feature Flags</button>
     </div>
@@ -168,20 +249,18 @@ tr:hover td{background:#1b1b26}
         <div id="players-loading" class="loading">Loading…</div>
         <div id="players-content" style="display:none">
           <table>
-            <thead>
-              <tr>
-                <th onclick="sortPlayers('first_name')">Name</th>
-                <th onclick="sortPlayers('level')">Lvl</th>
-                <th onclick="sortPlayers('xp')">XP</th>
-                <th onclick="sortPlayers('real_balance')">REAL</th>
-                <th onclick="sortPlayers('zar')">ZAR</th>
-                <th onclick="sortPlayers('gems')">Gems</th>
-                <th onclick="sortPlayers('daily_streak')">Streak</th>
-                <th>Quests</th>
-                <th>Clan</th>
-                <th onclick="sortPlayers('updated_at')">Last seen</th>
-              </tr>
-            </thead>
+            <thead><tr>
+              <th onclick="sortPlayers('first_name')">Name</th>
+              <th onclick="sortPlayers('level')">Lvl</th>
+              <th onclick="sortPlayers('xp')">XP</th>
+              <th onclick="sortPlayers('real_balance')">REAL</th>
+              <th onclick="sortPlayers('zar')">ZAR</th>
+              <th onclick="sortPlayers('gems')">Gems</th>
+              <th onclick="sortPlayers('daily_streak')">Streak</th>
+              <th>Quests</th>
+              <th>Clan</th>
+              <th onclick="sortPlayers('updated_at')">Last seen</th>
+            </tr></thead>
             <tbody id="players-tbody"></tbody>
           </table>
           <div class="pager">
@@ -200,51 +279,152 @@ tr:hover td{background:#1b1b26}
         <div id="clans-loading" class="loading">Loading…</div>
         <div id="clans-content" style="display:none">
           <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Motto</th>
-                <th>Leader ID</th>
-                <th>Members</th>
-                <th>Total REAL</th>
-                <th>Chat</th>
-                <th>Created</th>
-              </tr>
-            </thead>
+            <thead><tr>
+              <th>#</th><th>Name</th><th>Motto</th>
+              <th>Leader</th><th>Members</th><th>Total REAL</th>
+              <th>Chat</th><th>Created</th>
+            </tr></thead>
             <tbody id="clans-tbody"></tbody>
           </table>
         </div>
       </div>
     </section>
 
+    <!-- Chronicle & Chapters -->
+    <section id="tab-chronicle" class="section">
+      <div class="section-top">
+        <h2>Chronicle &amp; Chapters</h2>
+        <button class="btn-sm btn-neutral" onclick="loadChronicle()">↺ Refresh</button>
+      </div>
+      <div class="chronicle-layout">
+        <div class="chapter-sidebar">
+          <div class="sidebar-header">
+            <h3>Chapters</h3>
+            <input id="chapter-search" class="sidebar-search" placeholder="Filter…" oninput="filterChapters()">
+          </div>
+          <div class="chapter-list-body" id="chapter-list">
+            <div class="loading">Loading…</div>
+          </div>
+        </div>
+        <div class="chapter-editor" id="chapter-editor">
+          <div class="editor-placeholder" id="editor-placeholder">← Select a chapter to edit</div>
+          <div id="chapter-edit-form" style="display:none"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bot & Links -->
+    <section id="tab-bot" class="section">
+      <div id="bot-loading" class="loading">Loading…</div>
+      <div id="bot-content" style="display:none">
+        <div class="two-col">
+          <div>
+            <div class="panel">
+              <h3>🤖 Telegram Bot Config</h3>
+              <div id="bot-config-list"></div>
+            </div>
+          </div>
+          <div>
+            <div class="panel" style="margin-bottom:16px">
+              <h3>📢 Broadcast to All Players</h3>
+              <p style="color:var(--muted);font-size:.8rem;margin-bottom:12px">Sends a Telegram message to all registered Season 2 players. HTML formatting supported.</p>
+              <div class="form-group">
+                <label>Message (HTML supported: &lt;b&gt;, &lt;i&gt;, &lt;a href&gt;)</label>
+                <textarea id="broadcast-text" class="tall" placeholder="Write your message here…&#10;&#10;Example:&#10;&lt;b&gt;🏆 Season Update!&lt;/b&gt;&#10;New chapter now available."></textarea>
+              </div>
+              <div class="form-actions" style="margin-top:12px">
+                <button class="btn-sm btn-save" id="broadcast-btn" onclick="sendBroadcast()">📤 Send to All Players</button>
+                <span id="broadcast-status" style="font-size:.8rem;color:var(--muted)"></span>
+              </div>
+            </div>
+            <div class="panel">
+              <h3>🔗 Deep Links &amp; Invite</h3>
+              <div id="deeplink-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Economy -->
+    <section id="tab-economy" class="section">
+      <div id="econ-loading" class="loading">Loading…</div>
+      <div id="econ-content" style="display:none">
+        <div class="panel-full">
+          <h3>⚡ Tap &amp; Game Knobs</h3>
+          <div id="econ-knobs"></div>
+        </div>
+        <div class="panel-full">
+          <h3>🗡️ Hero Multipliers</h3>
+          <div class="table-wrap hero-table">
+            <table>
+              <thead><tr>
+                <th>Hero</th><th>Rarity</th><th>Tap Bonus</th>
+                <th>REAL/hr Bonus</th><th>Power</th><th>Upgrade Cost</th><th></th>
+              </tr></thead>
+              <tbody id="hero-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hakim AI -->
+    <section id="tab-hakim" class="section">
+      <div id="hakim-loading" class="loading">Loading…</div>
+      <div id="hakim-content" style="display:none">
+        <div class="two-col">
+          <div>
+            <div class="panel" style="margin-bottom:16px">
+              <h3>🧠 AI Model Settings</h3>
+              <div id="hakim-model-settings"></div>
+            </div>
+            <div class="panel">
+              <h3>⚖️ Trust System</h3>
+              <div id="hakim-trust-settings"></div>
+            </div>
+          </div>
+          <div>
+            <div class="panel" style="height:100%">
+              <h3>📜 System Prompt</h3>
+              <p style="font-size:.78rem;color:var(--muted);margin-bottom:10px">Override Hakim's default personality. Leave empty to use the hardcoded default. Changes take effect within 60 s (no restart needed).</p>
+              <div class="form-group">
+                <label>hakim_system_prompt</label>
+                <textarea id="hakim-system-prompt" class="xl" placeholder="Leave empty to use the default HAKIM_SYSTEM constant…"></textarea>
+              </div>
+              <div class="form-actions" style="margin-top:10px">
+                <button class="btn-sm btn-save" onclick="saveHakimPrompt()">Save Prompt</button>
+                <button class="btn-sm btn-neutral" onclick="clearHakimPrompt()">Reset to Default</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Config -->
     <section id="tab-config" class="section">
-      <div style="display:flex;align-items:center;margin-bottom:16px;gap:12px">
-        <h2 style="font-size:1rem;font-weight:600">System Configuration</h2>
+      <div class="section-top">
+        <h2>System Configuration</h2>
         <button class="btn-sm btn-seed" onclick="seedConfig()">Seed Defaults</button>
       </div>
-
       <div class="add-config-form">
         <div class="field"><label>Key</label><input id="cf-key" placeholder="my_key" style="width:180px"></div>
         <div class="field"><label>Value</label><input id="cf-value" placeholder="value" style="width:180px"></div>
         <div class="field"><label>Type</label>
-          <select id="cf-type">
-            <option>string</option><option>number</option><option>boolean</option><option>json</option>
-          </select>
+          <select id="cf-type"><option>string</option><option>number</option><option>boolean</option><option>json</option></select>
         </div>
         <div class="field"><label>Group</label><input id="cf-group" placeholder="general" style="width:120px"></div>
         <div class="field"><label>Label</label><input id="cf-label" placeholder="Display label" style="width:180px"></div>
         <div class="field"><label>&nbsp;</label><button class="btn-sm btn-save" onclick="addConfig()">Add / Update</button></div>
       </div>
-
       <div id="config-loading" class="loading">Loading…</div>
       <div id="config-groups"></div>
     </section>
 
     <!-- Feature Flags -->
     <section id="tab-flags" class="section">
-      <h2 style="font-size:1rem;font-weight:600;margin-bottom:16px">Feature Flags</h2>
+      <div class="section-top"><h2>Feature Flags</h2></div>
       <div id="flags-loading" class="loading">Loading…</div>
       <div id="flags-content" style="display:none">
         <div class="config-list" id="flags-list"></div>
@@ -258,25 +438,32 @@ tr:hover td{background:#1b1b26}
 
 <script>
 /* ── Config ── */
-const API_BASE = '/api/season2/admin';
+const API_BASE        = '/api/season2/admin';
+const API_CATALOG     = '/api/admin/catalog';
 const LEGACY_LOGIN_URL = '/admin/chklogin';
 
+/* ── State ── */
 let _token = localStorage.getItem('s2admin_token') || '';
 let _playersPage = 1, _playersSort = 'real_balance', _playersSearch = '', _playersTotalPages = 1;
 let _searchTimer = null;
+let _chapters = [], _quizzes = [], _selectedChapter = null;
+let _heroes = [];
+let _hakimCfg = {};
+let _botCfg = {};
 
 /* ── Helpers ── */
-const $  = (id) => document.getElementById(id);
-const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function toast(msg, type = 'ok') {
   const el = $('toast');
   el.textContent = msg;
   el.className = 'toast show ' + type;
   clearTimeout(el._t);
-  el._t = setTimeout(() => el.classList.remove('show'), 2800);
+  el._t = setTimeout(() => el.classList.remove('show'), 3200);
 }
 
+/* Season2 admin API */
 async function api(path, opts = {}) {
   const res = await fetch(API_BASE + path, {
     headers: { 'Authorization': 'Bearer ' + _token, 'Content-Type': 'application/json', ...(opts.headers || {}) },
@@ -286,9 +473,19 @@ async function api(path, opts = {}) {
   return res.json();
 }
 
+/* Catalog API (/admin/catalog) — same JWT */
+async function apiCat(path, opts = {}) {
+  const res = await fetch(API_CATALOG + path, {
+    headers: { 'Authorization': 'Bearer ' + _token, 'Content-Type': 'application/json', ...(opts.headers || {}) },
+    ...opts,
+  });
+  if (res.status === 401) { doLogout(); throw new Error('unauthorized'); }
+  return res.json();
+}
+
 /* ── Auth ── */
 async function doLogin() {
-  const email    = $('login-email').value.trim();
+  const email   = $('login-email').value.trim();
   const password = $('login-password').value;
   const pattern  = $('login-pattern').value;
   $('login-error').textContent = '';
@@ -321,24 +518,37 @@ function doLogout() {
   $('login-screen').style.display = 'flex';
 }
 
-/* Allow Enter key on login inputs */
 ['login-email','login-password','login-pattern'].forEach(id => {
-  $(id)?.addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
+  $(id)?.addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
 });
 
 /* ── Tab routing ── */
+const TAB_LOADERS = {
+  dashboard: loadDashboard,
+  players:   loadPlayers,
+  clans:     loadClans,
+  chronicle: loadChronicle,
+  bot:       loadBot,
+  economy:   loadEconomy,
+  hakim:     loadHakimAI,
+  config:    loadConfig,
+  flags:     loadFlags,
+};
+
 function showTab(name) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
   $('tab-' + name)?.classList.add('active');
+  /* Activate matching tab button */
+  const tabLabels = {
+    dashboard:'Dashboard', players:'Players', clans:'Clans',
+    chronicle:'Chronicle', bot:'Bot', economy:'Economy',
+    hakim:'Hakim', config:'Config', flags:'Feature',
+  };
   document.querySelectorAll('.nav-tab').forEach(t => {
-    if (t.textContent.toLowerCase().includes(name) || (name==='flags' && t.textContent.includes('Flag'))) t.classList.add('active');
+    if (t.textContent.includes(tabLabels[name] || name)) t.classList.add('active');
   });
-  if (name === 'dashboard') loadDashboard();
-  if (name === 'players')   loadPlayers();
-  if (name === 'clans')     loadClans();
-  if (name === 'config')    loadConfig();
-  if (name === 'flags')     loadFlags();
+  TAB_LOADERS[name]?.();
 }
 
 function showApp() {
@@ -347,7 +557,9 @@ function showApp() {
   loadDashboard();
 }
 
-/* ── Dashboard ── */
+/* ══════════════════════════════════════════════════════════
+   DASHBOARD
+   ══════════════════════════════════════════════════════════ */
 async function loadDashboard() {
   $('dash-loading').style.display = 'block';
   $('dash-content').style.display = 'none';
@@ -355,15 +567,14 @@ async function loadDashboard() {
     const d = await api('/dashboard');
     if (!d.status) throw new Error(d.error);
     const s = d.stats;
-    const grid = $('stat-grid');
-    grid.innerHTML = [
-      ['Total Players',  s.total_players,      null],
-      ['Active Today',   s.active_today,        null],
-      ['Total Clans',    s.total_clans,         null],
-      ['Heroes Owned',   s.total_heroes_owned,  null],
-      ['Total REAL',     s.total_real_fmt,      '(all players)'],
-      ['Total ZAR/hr',   s.total_zar_fmt,       '(all heroes)'],
-      ['Total XP',       s.total_xp_fmt,        '(all players)'],
+    $('stat-grid').innerHTML = [
+      ['Total Players',  s.total_players,     null],
+      ['Active Today',   s.active_today,       null],
+      ['Total Clans',    s.total_clans,        null],
+      ['Heroes Owned',   s.total_heroes_owned, null],
+      ['Total REAL',     s.total_real_fmt,     '(all players)'],
+      ['Total ZAR/hr',   s.total_zar_fmt,      '(all heroes)'],
+      ['Total XP',       s.total_xp_fmt,       '(all players)'],
     ].map(([label, value, sub]) => `
       <div class="stat-card">
         <div class="label">${label}</div>
@@ -372,25 +583,21 @@ async function loadDashboard() {
       </div>`).join('');
     $('dash-loading').style.display = 'none';
     $('dash-content').style.display = 'block';
-  } catch (e) {
-    $('dash-loading').textContent = 'Error: ' + e.message;
-  }
+  } catch (e) { $('dash-loading').textContent = 'Error: ' + e.message; }
 }
 
-/* ── Players ── */
+/* ══════════════════════════════════════════════════════════
+   PLAYERS
+   ══════════════════════════════════════════════════════════ */
 function debounceSearch() {
   clearTimeout(_searchTimer);
   _searchTimer = setTimeout(() => { _playersPage = 1; loadPlayers(); }, 400);
 }
-
-function sortPlayers(field) {
-  _playersSort = field; _playersPage = 1; loadPlayers();
-}
-function changePage(delta) {
-  _playersPage = Math.max(1, Math.min(_playersTotalPages, _playersPage + delta));
+function sortPlayers(f) { _playersSort = f; _playersPage = 1; loadPlayers(); }
+function changePage(d) {
+  _playersPage = Math.max(1, Math.min(_playersTotalPages, _playersPage + d));
   loadPlayers();
 }
-
 async function loadPlayers() {
   _playersSearch = $('player-search')?.value || '';
   $('players-loading').style.display = 'block';
@@ -401,11 +608,9 @@ async function loadPlayers() {
     const d = await api('/players?' + params);
     if (!d.status) throw new Error(d.error);
     _playersTotalPages = d.pages || 1;
-
-    const tbody = $('players-tbody');
-    tbody.innerHTML = (d.players || []).map(p => `
+    $('players-tbody').innerHTML = (d.players || []).map(p => `
       <tr>
-        <td>${esc(p.name)} <span style="color:var(--muted);font-size:.75rem">${p.id}</span></td>
+        <td>${esc(p.name)} <span style="color:var(--muted);font-size:.73rem">${esc(p.id)}</span></td>
         <td><span class="badge badge-ok">${p.level}</span></td>
         <td>${esc(p.xp)}</td>
         <td>${esc(p.real)}</td>
@@ -416,18 +621,17 @@ async function loadPlayers() {
         <td>${p.clan !== '—' ? `<span class="badge badge-warn">${esc(p.clan)}</span>` : '—'}</td>
         <td>${esc(p.seen)}</td>
       </tr>`).join('');
-
     $('pager-info').textContent = `Page ${_playersPage} of ${_playersTotalPages} (${d.total} total)`;
     $('pager-prev').disabled = _playersPage <= 1;
     $('pager-next').disabled = _playersPage >= _playersTotalPages;
     $('players-loading').style.display = 'none';
     $('players-content').style.display = 'block';
-  } catch (e) {
-    $('players-loading').textContent = 'Error: ' + e.message;
-  }
+  } catch (e) { $('players-loading').textContent = 'Error: ' + e.message; }
 }
 
-/* ── Clans ── */
+/* ══════════════════════════════════════════════════════════
+   CLANS
+   ══════════════════════════════════════════════════════════ */
 async function loadClans() {
   $('clans-loading').style.display = 'block';
   $('clans-content').style.display = 'none';
@@ -447,12 +651,579 @@ async function loadClans() {
       </tr>`).join('');
     $('clans-loading').style.display = 'none';
     $('clans-content').style.display = 'block';
-  } catch (e) {
-    $('clans-loading').textContent = 'Error: ' + e.message;
-  }
+  } catch (e) { $('clans-loading').textContent = 'Error: ' + e.message; }
 }
 
-/* ── Config ── */
+/* ══════════════════════════════════════════════════════════
+   CHRONICLE & CHAPTERS
+   ══════════════════════════════════════════════════════════ */
+async function loadChronicle() {
+  $('chapter-list').innerHTML = '<div class="loading">Loading…</div>';
+  $('chapter-edit-form').style.display = 'none';
+  $('editor-placeholder').style.display = 'block';
+  try {
+    const [chapD, quizD] = await Promise.all([
+      apiCat('/chapters'),
+      apiCat('/quizzes'),
+    ]);
+    _chapters = chapD.chapters || [];
+    _quizzes  = quizD.quizzes  || [];
+    renderChapterList(_chapters);
+    if (_selectedChapter) {
+      const still = _chapters.find(c => c.slug === _selectedChapter.slug);
+      if (still) selectChapter(still);
+    }
+  } catch (e) { $('chapter-list').innerHTML = `<div style="padding:14px;color:var(--danger)">${esc(e.message)}</div>`; }
+}
+
+function filterChapters() {
+  const q = $('chapter-search').value.toLowerCase();
+  renderChapterList(_chapters.filter(c =>
+    !q || c.title?.toLowerCase().includes(q) || c.slug?.includes(q)
+  ));
+}
+
+function renderChapterList(list) {
+  if (!list.length) { $('chapter-list').innerHTML = '<div style="padding:14px;color:var(--muted);font-size:.82rem">No chapters found</div>'; return; }
+  $('chapter-list').innerHTML = list.map(c => `
+    <div class="chapter-item${_selectedChapter?.slug === c.slug ? ' selected' : ''}" onclick="selectChapter(${JSON.stringify(c).replace(/"/g,'&quot;')})">
+      <div class="ch-title">${esc(c.title)}</div>
+      <div class="ch-meta">Day ${c.unlock_day ?? '?'} · ${esc(c.status)} · ${c.quiz_count ?? 0} quiz</div>
+    </div>`).join('');
+}
+
+function selectChapter(ch) {
+  _selectedChapter = ch;
+  renderChapterList(_chapters.filter(c => {
+    const q = $('chapter-search').value.toLowerCase();
+    return !q || c.title?.toLowerCase().includes(q) || c.slug?.includes(q);
+  }));
+  renderChapterEditor(ch);
+}
+
+function renderChapterEditor(ch) {
+  $('editor-placeholder').style.display = 'none';
+  $('chapter-edit-form').style.display = 'block';
+  const chQuizzes = _quizzes.filter(q => q.chapter_slug === ch.slug)
+    .sort((a, b) => (a.quiz_part || 0) - (b.quiz_part || 0));
+
+  $('chapter-edit-form').innerHTML = `
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
+      <h2 style="font-size:1rem;font-weight:600;flex:1">${esc(ch.title)}</h2>
+      <span class="badge badge-muted">${esc(ch.slug)}</span>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Chapter Details</div>
+      <div class="form-grid">
+        <div class="form-group full">
+          <label>Title</label>
+          <input id="ce-title" value="${esc(ch.title || '')}">
+        </div>
+        <div class="form-group">
+          <label>Unlock Day</label>
+          <input id="ce-day" type="number" value="${esc(String(ch.unlock_day ?? 1))}">
+        </div>
+        <div class="form-group">
+          <label>Status</label>
+          <select id="ce-status">
+            ${['available','locked','coming_soon'].map(s =>
+              `<option${ch.status === s ? ' selected' : ''}>${s}</option>`).join('')}
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Reading Time (min)</label>
+          <input id="ce-readtime" type="number" value="${esc(String(ch.estimated_reading_time ?? 6))}">
+        </div>
+        <div class="form-group full">
+          <label>Summary</label>
+          <textarea id="ce-summary">${esc(ch.summary || '')}</textarea>
+        </div>
+        <div class="form-group full">
+          <label>Story</label>
+          <textarea id="ce-story" class="tall">${esc(ch.story || '')}</textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Rewards</div>
+      <div class="form-grid">
+        <div class="form-group"><label>XP</label>
+          <input id="ce-xp" type="number" value="${esc(String(ch.rewards?.xp ?? 0))}">
+        </div>
+        <div class="form-group"><label>REAL</label>
+          <input id="ce-real" type="number" value="${esc(String(ch.rewards?.real ?? 0))}">
+        </div>
+        <div class="form-group"><label>Gems</label>
+          <input id="ce-gems" type="number" value="${esc(String(ch.rewards?.gems ?? 0))}">
+        </div>
+        <div class="form-group"><label>Energy</label>
+          <input id="ce-energy" type="number" value="${esc(String(ch.rewards?.energy ?? 0))}">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn-sm btn-save" onclick="saveChapter()">Save Chapter</button>
+    </div>
+
+    <div class="form-section" style="margin-top:32px">
+      <div class="form-section-title" style="display:flex;align-items:center;gap:10px">
+        <span style="flex:1">Chapter Quizzes (${chQuizzes.length})</span>
+        <button class="btn-sm btn-neutral" onclick="addNewQuiz()">+ Add Quiz</button>
+      </div>
+      <div class="quiz-list" id="quiz-list">
+        ${chQuizzes.map(q => renderQuizCard(q)).join('') || '<div style="color:var(--muted);font-size:.82rem;padding:10px 0">No quizzes yet.</div>'}
+      </div>
+    </div>`;
+}
+
+function renderQuizCard(q) {
+  const answers = q.answers || ['', '', '', ''];
+  return `<div class="quiz-card" id="qcard-${esc(q.id)}">
+    <div class="quiz-card-header" onclick="toggleQuiz('${esc(q.id)}')">
+      <span class="quiz-part">Part ${q.quiz_part}</span>
+      <span class="quiz-q">${esc(q.question || 'Untitled')}</span>
+      <span class="badge badge-muted">${esc(q.difficulty || 'easy')}</span>
+      <span style="font-size:.72rem;color:var(--muted);margin-left:6px">✎</span>
+    </div>
+    <div class="quiz-body" id="qbody-${esc(q.id)}" style="display:none">
+      <div class="form-grid">
+        <div class="form-group full">
+          <label>Question</label>
+          <textarea id="qq-question-${esc(q.id)}">${esc(q.question || '')}</textarea>
+        </div>
+      </div>
+      <div style="margin:10px 0 6px;font-size:.75rem;color:var(--muted)">Answers — click radio to mark correct (0-indexed)</div>
+      <div class="answers-grid">
+        ${answers.map((a, i) => `
+          <div class="answer-row">
+            <input type="radio" name="qcorrect-${esc(q.id)}" value="${i}" ${q.correct_answer === i ? 'checked' : ''}>
+            <input class="answer-input" id="qq-ans${i}-${esc(q.id)}" value="${esc(a)}" placeholder="Answer ${i + 1}">
+          </div>`).join('')}
+      </div>
+      <div class="form-grid" style="margin-top:10px">
+        <div class="form-group"><label>XP Reward</label>
+          <input type="number" id="qq-xp-${esc(q.id)}" value="${esc(String(q.reward?.xp ?? 0))}">
+        </div>
+        <div class="form-group"><label>REAL Reward</label>
+          <input type="number" id="qq-real-${esc(q.id)}" value="${esc(String(q.reward?.real ?? 0))}">
+        </div>
+        <div class="form-group"><label>Difficulty</label>
+          <select id="qq-diff-${esc(q.id)}">
+            ${['easy','medium','hard'].map(d => `<option${q.difficulty===d?' selected':''}>${d}</option>`).join('')}
+          </select>
+        </div>
+        <div class="form-group"><label>Explanation</label>
+          <textarea id="qq-exp-${esc(q.id)}">${esc(q.explanation || '')}</textarea>
+        </div>
+      </div>
+      <div class="form-actions" style="margin-top:10px">
+        <button class="btn-sm btn-save" onclick="saveQuiz('${esc(q.id)}')">Save Quiz</button>
+        <button class="btn-sm btn-delete" onclick="deleteQuiz('${esc(q.id)}')">Delete</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function toggleQuiz(id) {
+  const body = $('qbody-' + id);
+  if (body) body.style.display = body.style.display === 'none' ? 'block' : 'none';
+}
+
+async function saveChapter() {
+  const ch = _selectedChapter;
+  if (!ch) return;
+  const patch = {
+    slug:  ch.slug,
+    title: $('ce-title').value.trim(),
+    unlock_day: Number($('ce-day').value),
+    status: $('ce-status').value,
+    estimated_reading_time: Number($('ce-readtime').value),
+    summary: $('ce-summary').value.trim(),
+    story:   $('ce-story').value.trim(),
+    rewards: {
+      ...(ch.rewards || {}),
+      xp: Number($('ce-xp').value),
+      real: Number($('ce-real').value),
+      gems: Number($('ce-gems').value),
+      energy: Number($('ce-energy').value),
+    },
+  };
+  try {
+    const d = await apiCat('/chapters/' + encodeURIComponent(ch.slug), {
+      method: 'PUT', body: JSON.stringify(patch),
+    });
+    if (d.status) {
+      toast('Chapter saved');
+      const idx = _chapters.findIndex(c => c.slug === ch.slug);
+      if (idx >= 0) _chapters[idx] = { ..._chapters[idx], ...patch };
+      _selectedChapter = { ..._selectedChapter, ...patch };
+    } else toast(d.error || 'Save failed', 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+async function saveQuiz(id) {
+  const correct = document.querySelector(`input[name="qcorrect-${id}"]:checked`);
+  const patch = {
+    id,
+    question:      $(`qq-question-${id}`)?.value.trim(),
+    answers:       [0,1,2,3].map(i => $(`qq-ans${i}-${id}`)?.value.trim() || ''),
+    correct_answer: correct ? Number(correct.value) : 0,
+    difficulty:    $(`qq-diff-${id}`)?.value,
+    explanation:   $(`qq-exp-${id}`)?.value.trim(),
+    reward: {
+      xp:   Number($(`qq-xp-${id}`)?.value || 0),
+      real: Number($(`qq-real-${id}`)?.value || 0),
+    },
+  };
+  try {
+    const d = await apiCat('/quizzes/' + encodeURIComponent(id), {
+      method: 'PUT', body: JSON.stringify(patch),
+    });
+    if (d.status) {
+      toast('Quiz saved');
+      const idx = _quizzes.findIndex(q => String(q.id) === String(id));
+      if (idx >= 0) _quizzes[idx] = { ..._quizzes[idx], ...patch };
+    } else toast(d.error || 'Save failed', 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+async function deleteQuiz(id) {
+  if (!confirm('Delete quiz ' + id + '?')) return;
+  try {
+    const d = await apiCat('/quizzes/' + encodeURIComponent(id), { method: 'DELETE' });
+    if (d.status) {
+      toast('Deleted');
+      _quizzes = _quizzes.filter(q => String(q.id) !== String(id));
+      $('qcard-' + id)?.remove();
+    } else toast(d.error || 'Failed', 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+function addNewQuiz() {
+  if (!_selectedChapter) return;
+  const existingParts = _quizzes
+    .filter(q => q.chapter_slug === _selectedChapter.slug)
+    .map(q => q.quiz_part || 0);
+  const nextPart = existingParts.length ? Math.max(...existingParts) + 1 : 1;
+  const newId = `${_selectedChapter.slug}-${nextPart}`;
+  const newQ = {
+    id: newId, chapter_slug: _selectedChapter.slug, quiz_part: nextPart,
+    question: '', answers: ['', '', '', ''], correct_answer: 0,
+    difficulty: 'easy', explanation: '', reward: { xp: 60, real: 20 },
+  };
+  _quizzes.push(newQ);
+  const list = $('quiz-list');
+  const card = document.createElement('div');
+  card.innerHTML = renderQuizCard(newQ);
+  list.appendChild(card.firstElementChild);
+  toggleQuiz(newId);
+  toast('New quiz added — fill in and save');
+}
+
+/* ══════════════════════════════════════════════════════════
+   BOT & LINKS
+   ══════════════════════════════════════════════════════════ */
+const BOT_KEYS = [
+  { key: 'telegram_token',    label: 'Bot Token',          type: 'string' },
+  { key: 'bot_active',        label: 'Bot Active',         type: 'boolean' },
+  { key: 'season_name',       label: 'Season Name',        type: 'string' },
+  { key: 'season_number',     label: 'Season Number',      type: 'string' },
+  { key: 'season_end_date',   label: 'Season End Date',    type: 'string' },
+  { key: 'daily_message_limit', label: 'Daily Msg Limit',  type: 'number' },
+  { key: 'ai_provider',       label: 'AI Provider',        type: 'string' },
+];
+
+async function loadBot() {
+  $('bot-loading').style.display = 'block';
+  $('bot-content').style.display = 'none';
+  try {
+    const d = await api('/hakim-config');
+    if (!d.status) throw new Error(d.error);
+    _botCfg = {};
+    for (const r of d.config || []) _botCfg[r.key] = r;
+    renderBotConfig();
+    renderDeeplinks();
+    $('bot-loading').style.display = 'none';
+    $('bot-content').style.display = 'block';
+  } catch (e) { $('bot-loading').textContent = 'Error: ' + e.message; }
+}
+
+function renderBotConfig() {
+  $('bot-config-list').innerHTML = `
+    <div class="config-list">
+      ${BOT_KEYS.map(m => {
+        const r   = _botCfg[m.key];
+        const val = r ? r.value : '';
+        const masked = r?.masked;
+        if (m.type === 'boolean') {
+          const on = val === 'true' || val === true;
+          return `<div class="config-row">
+            <div class="clabel" style="flex:1">${esc(m.label)}</div>
+            <div class="toggle-wrap">
+              <label class="toggle">
+                <input type="checkbox" ${on ? 'checked' : ''} onchange="saveBotKey('${esc(m.key)}', String(this.checked))">
+                <span class="slider"></span>
+              </label>
+              <span class="toggle-label" id="bot-toggle-label-${esc(m.key)}">${on ? 'On' : 'Off'}</span>
+            </div>
+          </div>`;
+        }
+        return `<div class="config-row">
+          <div class="clabel" style="flex:1;min-width:120px">${esc(m.label)}</div>
+          <input class="config-value-input" id="botval-${esc(m.key)}" value="${esc(masked ? val : val)}" ${masked ? 'placeholder="masked"' : ''} style="flex:2;width:auto">
+          <button class="btn-sm btn-save" onclick="saveBotKey('${esc(m.key)}', $('botval-${esc(m.key)}').value)">Save</button>
+        </div>`;
+      }).join('')}
+    </div>`;
+}
+
+function renderDeeplinks() {
+  const botToken = (_botCfg['telegram_token']?.value || '').replace(/^bot/i,'');
+  const botHandle = 'shahnameh_realbot'; // canonical handle
+  const links = [
+    { label: 'Mini App direct link',    url: `https://t.me/${botHandle}/app` },
+    { label: 'Start bot (referral base)', url: `https://t.me/${botHandle}?start=ref_PLAYERID` },
+    { label: 'Clan invite base',        url: `https://t.me/${botHandle}?start=clan_CLANID` },
+  ];
+  $('deeplink-list').innerHTML = links.map(l => `
+    <div class="config-row" style="flex-wrap:wrap;gap:8px">
+      <div class="clabel" style="min-width:160px">${esc(l.label)}</div>
+      <code style="flex:1;font-size:.75rem;color:var(--muted);word-break:break-all">${esc(l.url)}</code>
+      <button class="btn-sm btn-neutral" onclick="navigator.clipboard.writeText('${esc(l.url)}').then(()=>toast('Copied!'))">Copy</button>
+    </div>`).join('');
+}
+
+async function saveBotKey(key, value) {
+  try {
+    const d = await api('/hakim-config', {
+      method: 'POST',
+      body: JSON.stringify({ key, value }),
+    });
+    if (d.status) {
+      toast('Saved: ' + key);
+      const lbl = $('bot-toggle-label-' + key);
+      if (lbl) lbl.textContent = value === 'true' ? 'On' : 'Off';
+    } else toast(d.error || 'Failed', 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+async function sendBroadcast() {
+  const message = $('broadcast-text').value.trim();
+  if (!message) { toast('Message cannot be empty', 'err'); return; }
+  if (!confirm(`Send this message to ALL Season 2 players via Telegram?\n\n${message.slice(0,120)}${message.length > 120 ? '…' : ''}`)) return;
+  const btn = $('broadcast-btn');
+  const status = $('broadcast-status');
+  btn.disabled = true; btn.textContent = 'Sending…';
+  status.textContent = 'In progress…';
+  try {
+    const d = await api('/broadcast', { method: 'POST', body: JSON.stringify({ message }) });
+    if (d.status) {
+      toast(`Broadcast done: ${d.sent} sent, ${d.failed} failed`);
+      status.textContent = `✓ ${d.sent}/${d.total} sent, ${d.failed} failed`;
+      $('broadcast-text').value = '';
+    } else {
+      toast(d.error || 'Broadcast failed', 'err');
+      status.textContent = '✗ ' + (d.error || 'failed');
+    }
+  } catch (e) {
+    toast(e.message, 'err');
+    status.textContent = '✗ ' + e.message;
+  }
+  btn.disabled = false; btn.textContent = '📤 Send to All Players';
+}
+
+/* ══════════════════════════════════════════════════════════
+   ECONOMY
+   ══════════════════════════════════════════════════════════ */
+const ECON_KEYS = [
+  { key: 'tap_daily_goal',        label: 'Daily Tap Goal',             group: 'game',   type: 'number', desc: 'Taps needed to complete daily quest' },
+  { key: 'game_season',           label: 'Current Season',             group: 'game',   type: 'number', desc: 'Active season number shown in UI' },
+  { key: 'clan_create_cost_real', label: 'Clan Creation Cost (REAL)',  group: 'clans',  type: 'number', desc: 'REAL deducted when founding a clan' },
+  { key: 'clan_max_members',      label: 'Clan Max Members',           group: 'clans',  type: 'number', desc: 'Maximum warriors per clan' },
+];
+
+let _econConfigs = {};
+
+async function loadEconomy() {
+  $('econ-loading').style.display = 'block';
+  $('econ-content').style.display = 'none';
+  try {
+    const [cfgD, heroD] = await Promise.all([
+      api('/config'),
+      apiCat('/heroes'),
+    ]);
+    if (!cfgD.status) throw new Error(cfgD.error);
+    _econConfigs = {};
+    for (const c of cfgD.config || []) _econConfigs[c.key] = c;
+    _heroes = (heroD.heroes || []).sort((a,b) => (b.power||0) - (a.power||0));
+    renderEconKnobs();
+    renderHeroTable();
+    $('econ-loading').style.display = 'none';
+    $('econ-content').style.display = 'block';
+  } catch (e) { $('econ-loading').textContent = 'Error: ' + e.message; }
+}
+
+function renderEconKnobs() {
+  $('econ-knobs').innerHTML = `
+    <div class="config-list">
+      ${ECON_KEYS.map(m => {
+        const v = _econConfigs[m.key]?.value ?? '';
+        return `<div class="config-row">
+          <div class="key">${esc(m.key)}</div>
+          <div class="clabel">${esc(m.label)}</div>
+          <div class="desc">${esc(m.desc)}</div>
+          <input class="config-value-input" id="econval-${esc(m.key)}" type="number" value="${esc(String(v))}">
+          <button class="btn-sm btn-save" onclick="saveEconKey('${esc(m.key)}','${esc(m.group)}','${esc(m.type)}')">Save</button>
+        </div>`;
+      }).join('')}
+    </div>`;
+}
+
+async function saveEconKey(key, group, type) {
+  const val = $('econval-' + key).value;
+  try {
+    const d = await api('/config', {
+      method: 'POST',
+      body: JSON.stringify({ key, value: val, type, group, label: ECON_KEYS.find(k=>k.key===key)?.label || key }),
+    });
+    if (d.status) toast('Saved: ' + key); else toast(d.error, 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+function rarityClass(r) {
+  return { Mythic:'rarity-mythic', Legendary:'rarity-legendary', Epic:'rarity-epic', Rare:'rarity-rare' }[r] || 'rarity-common';
+}
+
+function renderHeroTable() {
+  $('hero-tbody').innerHTML = _heroes.map(h => `
+    <tr id="hero-row-${esc(h.slug)}">
+      <td><b>${esc(h.name)}</b><br><span style="color:var(--muted);font-size:.72rem">${esc(h.slug)}</span></td>
+      <td><span class="${rarityClass(h.rarity)}">${esc(h.rarity)}</span></td>
+      <td><input id="hero-bonus-${esc(h.slug)}" value="${esc(h.bonus||'')}" style="width:160px"></td>
+      <td><input id="hero-rbns-${esc(h.slug)}" value="${esc(h.reward_bonus||'')}" style="width:140px"></td>
+      <td><input id="hero-power-${esc(h.slug)}" type="number" value="${esc(String(h.power||0))}" style="width:80px"></td>
+      <td><input id="hero-cost-${esc(h.slug)}" type="number" value="${esc(String(h.upgrade_cost||0))}" style="width:100px"></td>
+      <td><button class="btn-sm btn-save" onclick="saveHero('${esc(h.slug)}')">Save</button></td>
+    </tr>`).join('');
+}
+
+async function saveHero(slug) {
+  const h = _heroes.find(x => x.slug === slug);
+  if (!h) return;
+  const patch = {
+    ...h,
+    bonus:        $(`hero-bonus-${slug}`)?.value.trim(),
+    reward_bonus: $(`hero-rbns-${slug}`)?.value.trim(),
+    power:        Number($(`hero-power-${slug}`)?.value || 0),
+    upgrade_cost: Number($(`hero-cost-${slug}`)?.value || 0),
+  };
+  try {
+    const d = await apiCat('/heroes/' + encodeURIComponent(slug), {
+      method: 'PUT', body: JSON.stringify(patch),
+    });
+    if (d.status) {
+      toast(`Saved hero: ${slug}`);
+      const idx = _heroes.findIndex(x => x.slug === slug);
+      if (idx >= 0) _heroes[idx] = { ..._heroes[idx], ...patch };
+    } else toast(d.error || 'Failed', 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+/* ══════════════════════════════════════════════════════════
+   HAKIM AI
+   ══════════════════════════════════════════════════════════ */
+const HAKIM_MODEL_KEYS = [
+  { key: 'ai_provider',       label: 'AI Provider',            type: 'select', options: ['anthropic','openai'] },
+  { key: 'anthropic_model',   label: 'Anthropic Model',        type: 'string' },
+  { key: 'openai_model',      label: 'OpenAI Model',           type: 'string' },
+  { key: 'hakim_temperature', label: 'Temperature (0–1)',      type: 'number' },
+  { key: 'hakim_max_tokens',  label: 'Max Tokens',             type: 'number' },
+];
+const HAKIM_TRUST_KEYS = [
+  { key: 'trust_daily_gain',    label: 'Daily Trust Gain',      type: 'number' },
+  { key: 'trust_decay_amount',  label: 'Decay Amount',          type: 'number' },
+  { key: 'trust_decay_days',    label: 'Decay After (days)',    type: 'number' },
+  { key: 'trust_max',           label: 'Max Trust Score',       type: 'number' },
+  { key: 'trust_new_user',      label: 'Starting Trust',        type: 'number' },
+];
+
+async function loadHakimAI() {
+  $('hakim-loading').style.display = 'block';
+  $('hakim-content').style.display = 'none';
+  try {
+    const d = await api('/hakim-config');
+    if (!d.status) throw new Error(d.error);
+    _hakimCfg = {};
+    for (const r of d.config || []) _hakimCfg[r.key] = r;
+    renderHakimModelSettings();
+    renderHakimTrustSettings();
+    /* System prompt */
+    $('hakim-system-prompt').value = _hakimCfg['hakim_system_prompt']?.value || '';
+    $('hakim-loading').style.display = 'none';
+    $('hakim-content').style.display = 'block';
+  } catch (e) { $('hakim-loading').textContent = 'Error: ' + e.message; }
+}
+
+function renderHakimKeyGroup(keys, containerId) {
+  $(containerId).innerHTML = `
+    <div class="config-list">
+      ${keys.map(m => {
+        const v = _hakimCfg[m.key]?.value ?? '';
+        if (m.type === 'select') {
+          return `<div class="config-row">
+            <div class="clabel" style="flex:1">${esc(m.label)}</div>
+            <select class="config-value-input" id="hakval-${esc(m.key)}" style="width:auto">
+              ${(m.options||[]).map(o => `<option${v===o?' selected':''}>${o}</option>`).join('')}
+            </select>
+            <button class="btn-sm btn-save" onclick="saveHakimKey('${esc(m.key)}')">Save</button>
+          </div>`;
+        }
+        return `<div class="config-row">
+          <div class="clabel" style="flex:1">${esc(m.label)}</div>
+          <input class="config-value-input" id="hakval-${esc(m.key)}" value="${esc(v)}" ${_hakimCfg[m.key]?.masked?'placeholder="masked"':''} style="width:auto;flex:1;max-width:200px">
+          <button class="btn-sm btn-save" onclick="saveHakimKey('${esc(m.key)}')">Save</button>
+        </div>`;
+      }).join('')}
+    </div>`;
+}
+
+function renderHakimModelSettings() { renderHakimKeyGroup(HAKIM_MODEL_KEYS, 'hakim-model-settings'); }
+function renderHakimTrustSettings() { renderHakimKeyGroup(HAKIM_TRUST_KEYS, 'hakim-trust-settings'); }
+
+async function saveHakimKey(key) {
+  const el = $('hakval-' + key);
+  if (!el) return;
+  try {
+    const d = await api('/hakim-config', { method: 'POST', body: JSON.stringify({ key, value: el.value }) });
+    if (d.status) toast('Saved: ' + key); else toast(d.error || 'Failed', 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+async function saveHakimPrompt() {
+  const value = $('hakim-system-prompt').value;
+  try {
+    const d = await api('/hakim-config', { method: 'POST', body: JSON.stringify({ key: 'hakim_system_prompt', value }) });
+    if (d.status) toast('System prompt saved — takes effect within 60 s');
+    else toast(d.error || 'Failed', 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+async function clearHakimPrompt() {
+  if (!confirm('Clear the custom system prompt? Hakim will revert to the hardcoded default.')) return;
+  $('hakim-system-prompt').value = '';
+  try {
+    const d = await api('/hakim-config', { method: 'POST', body: JSON.stringify({ key: 'hakim_system_prompt', value: '' }) });
+    if (d.status) toast('Prompt cleared — default will be used');
+    else toast(d.error || 'Failed', 'err');
+  } catch (e) { toast(e.message, 'err'); }
+}
+
+/* ══════════════════════════════════════════════════════════
+   CONFIG
+   ══════════════════════════════════════════════════════════ */
 let _configData = [];
 
 async function loadConfig() {
@@ -464,9 +1235,7 @@ async function loadConfig() {
     _configData = d.config || [];
     renderConfig(_configData);
     $('config-loading').style.display = 'none';
-  } catch (e) {
-    $('config-loading').textContent = 'Error: ' + e.message;
-  }
+  } catch (e) { $('config-loading').textContent = 'Error: ' + e.message; }
 }
 
 function renderConfig(configs) {
@@ -503,7 +1272,7 @@ async function saveConfig(key) {
   try {
     const d = await api('/config', {
       method: 'POST',
-      body: JSON.stringify({ key, value: input.value, type: cfg.type || 'string', group: cfg.group, label: cfg.label, description: cfg.description }),
+      body: JSON.stringify({ key, value: input.value, type: cfg.type||'string', group: cfg.group, label: cfg.label, description: cfg.description }),
     });
     if (d.status) toast('Saved ' + key); else toast(d.error, 'err');
   } catch (e) { toast(e.message, 'err'); }
@@ -540,7 +1309,9 @@ async function seedConfig() {
   } catch (e) { toast(e.message, 'err'); }
 }
 
-/* ── Feature flags ── */
+/* ══════════════════════════════════════════════════════════
+   FEATURE FLAGS
+   ══════════════════════════════════════════════════════════ */
 const FLAG_META = {
   feature_guild_wars:          { label: 'Guild Wars',               desc: 'Enable Guild Wars module' },
   feature_clan_wars:           { label: 'Clan Wars',                desc: 'Enable Clan Wars tab on Social page' },
@@ -562,29 +1333,25 @@ async function loadFlags() {
     renderFlags(map);
     $('flags-loading').style.display = 'none';
     $('flags-content').style.display = 'block';
-  } catch (e) {
-    $('flags-loading').textContent = 'Error: ' + e.message;
-  }
+  } catch (e) { $('flags-loading').textContent = 'Error: ' + e.message; }
 }
 
 function renderFlags(map) {
-  const list = $('flags-list');
-  list.innerHTML = Object.entries(FLAG_META).map(([key, meta]) => {
+  $('flags-list').innerHTML = Object.entries(FLAG_META).map(([key, meta]) => {
     const cfg = map[key];
     const on  = cfg ? !!cfg.value : false;
-    const exists = !!cfg;
     return `<div class="config-row">
-      <div class="key" style="color:var(--muted);font-size:.78rem">${esc(key)}</div>
+      <div class="key">${esc(key)}</div>
       <div class="clabel"><b>${esc(meta.label)}</b></div>
       <div class="desc">${esc(meta.desc)}</div>
       <div class="toggle-wrap">
-        ${exists ? `
+        ${cfg ? `
           <label class="toggle">
-            <input type="checkbox" ${on ? 'checked' : ''} onchange="toggleFlag('${esc(key)}', this.checked)">
+            <input type="checkbox" ${on?'checked':''} onchange="toggleFlag('${esc(key)}', this.checked)">
             <span class="slider"></span>
           </label>
-          <span class="toggle-label">${on ? 'Live' : 'Coming Soon'}</span>
-        ` : `<span style="color:var(--muted);font-size:.78rem">Not seeded</span>`}
+          <span class="toggle-label" id="flag-lbl-${esc(key)}">${on ? 'Live' : 'Coming Soon'}</span>
+        ` : `<span style="color:var(--muted);font-size:.78rem">Not seeded — run Seed Defaults first</span>`}
       </div>
     </div>`;
   }).join('');
@@ -596,11 +1363,11 @@ async function toggleFlag(key, value) {
       method: 'POST',
       body: JSON.stringify({ key, value, type: 'boolean', group: key === 'maintenance_mode' ? 'system' : 'features' }),
     });
-    if (d.status) toast((value ? '✓ Enabled: ' : '✕ Disabled: ') + key);
-    else { toast(d.error, 'err'); loadFlags(); }
-    /* Re-render label */
-    const wrap = document.querySelector(`[onchange="toggleFlag('${key}', this.checked)"]`)?.closest('.toggle-wrap');
-    if (wrap) wrap.querySelector('.toggle-label').textContent = value ? 'Live' : 'Coming Soon';
+    if (d.status) {
+      toast((value ? '✓ Enabled: ' : '✕ Disabled: ') + key);
+      const lbl = $('flag-lbl-' + key);
+      if (lbl) lbl.textContent = value ? 'Live' : 'Coming Soon';
+    } else { toast(d.error, 'err'); loadFlags(); }
   } catch (e) { toast(e.message, 'err'); loadFlags(); }
 }
 
