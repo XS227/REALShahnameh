@@ -301,8 +301,8 @@ async function doLogin() {
       body: JSON.stringify({ email, password, pattern }),
     });
     const d = await r.json();
-    if (d.status === 1 && d.token) {
-      _token = d.token;
+    if (d.status === 1 && d.Key) {
+      _token = d.Key;
       localStorage.setItem('s2admin_token', _token);
       showApp();
     } else {
