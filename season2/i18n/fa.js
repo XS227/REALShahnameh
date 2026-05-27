@@ -846,5 +846,21 @@
       legacy_veteran_unavail: "برای اتصال کیف پول TON، این صفحه را از ربات تلگرام شاهنامه باز کنید.",
       legacy_sdk_reload:      "برای تلاش مجدد ضربه بزنید",
 
+      /* ── Persian / i18n clean-up additions ── */
+      day_of_journey_tpl:    "روز {day} از {total} · سفر ۹ ماهه",
+      quest_tap_goal_suffix: " / ۲۰۰ ضربه امروز",
+      collection_link:       "مجموعه ›",
+      active_hero_kicker:    "قهرمان فعال",
+      hs_lvl_lbl:            "سطح",
+      hero_up_link:          "ارتقا ›",
+      ad_dur_10:             "~۱۰ ثانیه",
+      ad_dur_20:             "~۲۰ ثانیه",
+      ad_dur_30:             "~۳۰ ثانیه",
+      quest_reward_lifetime: "+۱۰٪ مادام‌العمر",
+      swap_rate_label:       "{rate} زر = ۱ REAL",
+      swap_min_label:        "حداقل: {rate} زر",
+      swap_not_enough:       "زر کافی ندارید (دارید: {have})",
+      swap_convert_label:    "تبدیل {zar} زر → {real} REAL",
+
   };
 })();

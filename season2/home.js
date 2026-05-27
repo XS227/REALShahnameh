@@ -280,14 +280,30 @@
     const catMap = {};
     (catalogHeroes || []).forEach(h => { if (h.slug) catMap[h.slug] = h; });
 
+    /* Persian slug→name fallback when catalog entry is absent */
+    const SLUG_FA = {
+      keyumars: "کیومرث", siamak: "سیامک", hushang: "هوشنگ", ahriman: "اهریمن",
+      "black-div": "دیو سیاه", "black-demon": "دیو تاریکی",
+      "mount-damavand": "کوه دماوند", "royal-court": "دربار شاهی",
+      "ancient-pars": "پارس باستان", "demon-forest": "جنگل دیوان",
+      "farr-codex": "فرّ — نور الهی", "mount-alborz": "کوه البرز",
+      fravahar: "فَروَهَر", "leopard-skins": "پوست‌های پلنگ",
+      "first-calendar": "اولین تقویم", "discovery-of-fire": "کشف آتش",
+      rostam: "رستم", simorgh: "سیمرغ", zahhak: "ضحاک",
+    };
+    const isFa = window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
+    const fmtZar = (n) => isFa && window.RealI18N && window.RealI18N.formatNumber ? window.RealI18N.formatNumber(n) : n;
+
     /* Build spotlight list from owned heroes — catalog data is optional enrichment.
        Cards of all types (character, place, codex) are included. */
     const spotlightHeroes = Object.entries(owned)
       .map(([hero_id, data]) => {
         const cat = catMap[hero_id];
+        const nameEn = (cat && cat.name) || slugToName(hero_id);
+        const nameFa = (cat && cat.name_fa) || SLUG_FA[hero_id];
         return {
           slug:        hero_id,
-          name:        (cat && cat.name) || slugToName(hero_id),
+          name:        (isFa && nameFa) ? nameFa : nameEn,
           image_url:   (cat && cat.image_url) || null,
           bonus:       (cat && cat.bonus) || null,
           rarity:      (cat && cat.rarity) || "",
@@ -304,14 +320,14 @@
           ${heroPortraitHtml(h)}
         </div>
         <div class="hs-body">
-          <div class="hs-kicker">Active hero</div>
+          <div class="hs-kicker">${escapeHtml(t('active_hero_kicker'))}</div>
           <div class="hs-name">${escapeHtml(h.name)}</div>
-          <span class="hs-passive">✦ +${h.zarPerHour} ZAR/hr</span>
+          <span class="hs-passive">✦ +${fmtZar(h.zarPerHour)} ${escapeHtml(t('r_zar'))}/hr</span>
         </div>
         <div class="hs-right">
-          <div class="hs-lvl-lbl">LVL</div>
-          <div class="hs-lvl-num">${h.playerLevel || 1}</div>
-          <a href="heroes.html#${escapeAttr(h.slug)}" class="hs-upgrade-link">Up ›</a>
+          <div class="hs-lvl-lbl">${escapeHtml(t('hs_lvl_lbl'))}</div>
+          <div class="hs-lvl-num">${isFa && window.RealI18N ? window.RealI18N.toPersianDigits(h.playerLevel || 1) : (h.playerLevel || 1)}</div>
+          <a href="heroes.html#${escapeAttr(h.slug)}" class="hs-upgrade-link">${escapeHtml(t('hero_up_link'))}</a>
         </div>
       </div>`).join('');
   };

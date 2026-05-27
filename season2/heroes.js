@@ -63,7 +63,7 @@
   const COLLECTION = [
     {
       id: "keyumars",
-      name: "Keyumars",
+      name: "Keyumars", name_fa: "کیومرث",
       type: "character",
       rarity: "rare",
       chapter: 1,
@@ -101,7 +101,7 @@
     },
     {
       id: "first-calendar",
-      name: "The First Calendar",
+      name: "The First Calendar", name_fa: "اولین تقویم",
       type: "codex",
       rarity: "rare",
       chapter: 1,
@@ -139,7 +139,7 @@
     },
     {
       id: "siamak",
-      name: "Siamak",
+      name: "Siamak", name_fa: "سیامک",
       type: "character",
       rarity: "common",
       chapter: 1,
@@ -177,7 +177,7 @@
     },
     {
       id: "hushang",
-      name: "Hushang",
+      name: "Hushang", name_fa: "هوشنگ",
       type: "character",
       rarity: "rare",
       chapter: 1,
@@ -215,7 +215,7 @@
     },
     {
       id: "ahriman",
-      name: "Ahriman",
+      name: "Ahriman", name_fa: "اهریمن",
       type: "enemy",
       rarity: "epic",
       chapter: 1,
@@ -253,7 +253,7 @@
     },
     {
       id: "black-div",
-      name: "Black Div",
+      name: "Black Div", name_fa: "دیو سیاه",
       type: "enemy",
       rarity: "rare",
       chapter: 1,
@@ -291,7 +291,7 @@
     },
     {
       id: "mount-damavand",
-      name: "Mount Damavand",
+      name: "Mount Damavand", name_fa: "کوه دماوند",
       type: "place",
       rarity: "legend",
       chapter: 1,
@@ -329,7 +329,7 @@
     },
     {
       id: "royal-court",
-      name: "Royal Court",
+      name: "Royal Court", name_fa: "دربار شاهی",
       type: "place",
       rarity: "rare",
       chapter: 1,
@@ -367,7 +367,7 @@
     },
     {
       id: "ancient-pars",
-      name: "Ancient Pars",
+      name: "Ancient Pars", name_fa: "پارس باستان",
       type: "place",
       rarity: "rare",
       chapter: 1,
@@ -405,7 +405,7 @@
     },
     {
       id: "demon-forest",
-      name: "Demon Forest",
+      name: "Demon Forest", name_fa: "جنگل دیوان",
       type: "place",
       rarity: "epic",
       chapter: 1,
@@ -443,7 +443,7 @@
     },
     {
       id: "farr-codex",
-      name: "Farr — Divine Light",
+      name: "Farr — Divine Light", name_fa: "فرّ — نور الهی",
       type: "codex",
       rarity: "epic",
       chapter: 1,
@@ -483,7 +483,7 @@
     /* ── 5 NEW Chapter 1 cards ─────────────────────────── */
     {
       id: "mount-alborz",
-      name: "Mount Alborz",
+      name: "Mount Alborz", name_fa: "کوه البرز",
       type: "place",
       rarity: "rare",
       chapter: 1,
@@ -521,7 +521,7 @@
     },
     {
       id: "fravahar",
-      name: "Fravahar",
+      name: "Fravahar", name_fa: "فَروَهَر",
       type: "codex",
       rarity: "epic",
       chapter: 1,
@@ -559,7 +559,7 @@
     },
     {
       id: "leopard-skins",
-      name: "The Leopard Skins",
+      name: "The Leopard Skins", name_fa: "پوست‌های پلنگ",
       type: "artifact",
       rarity: "epic",
       chapter: 1,
@@ -597,7 +597,7 @@
     },
     {
       id: "black-demon",
-      name: "The Black Demon",
+      name: "The Black Demon", name_fa: "دیو تاریکی",
       type: "enemy",
       rarity: "epic",
       chapter: 1,
@@ -635,7 +635,7 @@
     },
     {
       id: "discovery-of-fire",
-      name: "The Discovery of Fire",
+      name: "The Discovery of Fire", name_fa: "کشف آتش",
       type: "codex",
       rarity: "epic",
       chapter: 1,
@@ -838,10 +838,11 @@
         const card  = document.createElement("button");
         card.className = `coll-card r-${item.rarity} hero-state-${state}`;
         card.setAttribute("data-hero-id", item.id);
-        card.setAttribute("aria-label", `View ${item.name}`);
+        const itemName = locF(item, 'name') || item.name;
+        card.setAttribute("aria-label", `View ${itemName}`);
 
         let imgHTML = item.img
-          ? `<img src="${item.img}" alt="${item.name}" loading="lazy"
+          ? `<img src="${item.img}" alt="${itemName}" loading="lazy"
               onerror="this.style.display='none';this.parentNode.querySelector('.coll-emoji').style.display='flex'">
              <span class="coll-emoji" style="display:none;">${item.emoji || "?"}</span>`
           : `<span class="coll-emoji">${item.emoji || "?"}</span>`;
@@ -873,7 +874,7 @@
             ${stateBadge}
           </div>
           <div class="coll-info">
-            <div class="coll-name">${item.name}</div>
+            <div class="coll-name">${itemName}</div>
             <div class="coll-rarity">${subLine}</div>
           </div>
         `;
@@ -976,7 +977,7 @@
     if (state === "prereq_locked") {
       const prereq = item.prereq;
       const prereqItem = COLLECTION.find(c => c.id === prereq.hero_id);
-      const prereqName = prereqItem ? prereqItem.name : prereq.hero_id;
+      const prereqName = prereqItem ? (locF(prereqItem, 'name') || prereqItem.name) : prereq.hero_id;
       return `<div class="hero-econ-panel prereq_locked">
         <span class="hecon-lock">🔐</span>
         <span class="hecon-msg">${t("hero_prereq_locked", { name: prereqName, level: prereq.level })}</span>
@@ -1064,7 +1065,7 @@
       updateStatsStrip();
       refreshCardBadge(heroId);
 
-      showToast(t("hero_buy_success", { name: item.name }));
+      showToast(t("hero_buy_success", { name: locF(item, 'name') || item.name }));
       if (navigator.vibrate) navigator.vibrate([8, 4, 12]);
 
       /* Refresh economy panel in modal */
@@ -1095,7 +1096,7 @@
       updateStatsStrip();
       refreshCardBadge(heroId);
 
-      showToast(t("hero_upgrade_success", { name: item.name, level: updLevel }));
+      showToast(t("hero_upgrade_success", { name: locF(item, 'name') || item.name, level: updLevel }));
       if (navigator.vibrate) navigator.vibrate([8, 4, 12]);
 
       const panelHost = document.querySelector(".cert-econ-slot");
@@ -1162,8 +1163,9 @@
     trackDiscovery(item.id);
     const discoveredDate = getDiscoveryDate(item.id);
 
+    const certName = locF(item, 'name') || item.name;
     let portraitInner = item.img
-      ? `<img src="${item.img}" alt="${item.name}"
+      ? `<img src="${item.img}" alt="${certName}"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
          <div class="cert-portrait-emoji" style="display:none;">${item.emoji || "?"}</div>`
       : `<div class="cert-portrait-emoji">${item.emoji || "?"}</div>`;
@@ -1219,7 +1221,7 @@
     modal.innerHTML = `
       <div class="cert-grabber-row"><div class="cert-grabber"></div></div>
 
-      <div class="cert-portrait-panel" data-fullscreen-src="${item.img || ""}" data-fullscreen-alt="${item.name}">
+      <div class="cert-portrait-panel" data-fullscreen-src="${item.img || ""}" data-fullscreen-alt="${certName}">
         ${portraitInner}
         <span class="cert-zoom-hint">${t("cert_zoom_hint")}</span>
         <span class="cert-type-badge t-${item.type}">${typeLabel(item.type)}</span>
@@ -1230,7 +1232,7 @@
         <div class="cert-watermark">${t("cert_watermark")}</div>
 
         <div class="cert-name-row">
-          <h2 class="cert-name">${item.name}</h2>
+          <h2 class="cert-name">${certName}</h2>
           <span class="cert-rarity-pill r-${item.rarity}">${rarityLabel(item.rarity)}</span>
         </div>
 

@@ -50,9 +50,13 @@
 
   const formatN = (n) => {
     const v = Number(n) || 0;
-    if (v >= 1_000_000) return (v / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
-    if (v >= 1_000)     return (v / 1_000).toFixed(1).replace(/\.0$/, '') + 'k';
-    return String(Math.floor(v));
+    const isFa = window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
+    const pd = (s) => isFa && window.RealI18N && window.RealI18N.toPersianDigits ? window.RealI18N.toPersianDigits(s) : s;
+    if (v >= 1_000_000) return pd((v / 1_000_000).toFixed(1).replace(/\.0$/, '')) + 'M';
+    if (v >= 1_000)     return isFa
+      ? pd((v / 1_000).toFixed(1).replace(/\.0$/, '')) + ' هزار'
+      : (v / 1_000).toFixed(1).replace(/\.0$/, '') + 'k';
+    return pd(String(Math.floor(v)));
   };
 
   const t = (key) => {

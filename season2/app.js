@@ -953,7 +953,8 @@
     };
     const renderBalance = () => {
       if (!balanceEl) return;
-      balanceEl.innerHTML = `<span class="zar-ico">🪙</span> ${state.balance.toLocaleString()}`;
+      const _fmtBal = (window.RealI18N && window.RealI18N.formatNumber) ? window.RealI18N.formatNumber : (n) => n.toLocaleString();
+      balanceEl.innerHTML = `<span class="zar-ico">🪙</span> ${_fmtBal(state.balance)}`;
       balanceEl.classList.remove("flash");
       void balanceEl.offsetWidth;
       balanceEl.classList.add("flash");
@@ -1336,7 +1337,7 @@
         const seasonLen = body.seasonLengthDays || 270;
         const dayPill = $("[data-journey-day]");
         if (dayPill) {
-          dayPill.textContent = `Day ${dayNum} of ${seasonLen} · 9-month journey`;
+          dayPill.textContent = t('day_of_journey_tpl', { day: dayNum, total: seasonLen });
         }
       })
       .catch(() => { /* offline — keep static fallback */ });

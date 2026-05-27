@@ -842,5 +842,21 @@
       legacy_veteran_unavail: "Open this page through the Shahnameh Telegram bot to connect your TON wallet.",
       legacy_sdk_reload:      "Tap to retry wallet connection",
 
+      /* ── Persian / i18n clean-up additions ── */
+      day_of_journey_tpl:    "Day {day} of {total} · 9-month journey",
+      quest_tap_goal_suffix: " / 200 taps today",
+      collection_link:       "Collection ›",
+      active_hero_kicker:    "Active hero",
+      hs_lvl_lbl:            "LVL",
+      hero_up_link:          "Up ›",
+      ad_dur_10:             "~10 sec",
+      ad_dur_20:             "~20 sec",
+      ad_dur_30:             "~30 sec",
+      quest_reward_lifetime: "+10% lifetime",
+      swap_rate_label:       "{rate} ZAR = 1 REAL",
+      swap_min_label:        "Min: {rate} ZAR",
+      swap_not_enough:       "Not enough ZAR (you have {have})",
+      swap_convert_label:    "Convert {zar} ZAR → {real} REAL",
+
   };
 })();

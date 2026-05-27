@@ -285,7 +285,7 @@
       tapCount++;
       if (tapCount % 5 === 0) {
         const p = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
-        addHistoryRow(t('forge_burst_evt') || 'Forge strike', '+' + ((p.balance || 0).toLocaleString()) + ' 🪙 balance', t('just_now') || 'now');
+        addHistoryRow(t('forge_burst_evt') || 'Forge strike', '+' + fmtNum(p.zar || 0) + ' 🪙 ' + t('r_zar'), t('just_now') || 'now');
       }
 
       if (tapCount % 3 === 0) {
@@ -428,6 +428,8 @@
   };
 
   /* ---- Hydrate display from Player state after sync ---- */
+  const fmtNum = (n) => (window.RealI18N && window.RealI18N.formatNumber) ? window.RealI18N.formatNumber(n) : Number(n).toLocaleString();
+
   const hydrateFromPlayer = () => {
     const p = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
 
@@ -438,7 +440,7 @@
     const streakVal   = document.querySelector('[data-streak-val]');
     const zarHrEl  = document.querySelector('[data-zar-hr]');
 
-    if (balEl)      balEl.innerHTML      = `<span class="zar-ico">🪙</span> ${(p.zar || 0).toLocaleString()}`;
+    if (balEl)      balEl.innerHTML      = `<span class="zar-ico">🪙</span> ${fmtNum(p.zar || 0)}`;
     if (energyEl)   energyEl.textContent = p.energy != null ? p.energy : 1000;
     if (fillEl)     fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
     const streak = p.dailyStreak || 1;
@@ -473,8 +475,8 @@
       const p    = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
       const zarBal = p.zar || 0;
       const rate   = getRate();
-      if (zarBalEl) zarBalEl.textContent = zarBal.toLocaleString();
-      if (rateLbl)  rateLbl.textContent  = `${rate.toLocaleString()} ZAR = 1 REAL`;
+      if (zarBalEl) zarBalEl.textContent = fmtNum(zarBal);
+      if (rateLbl)  rateLbl.textContent  = t('swap_rate_label', { rate: fmtNum(rate) });
       const zarAmt = parseInt(swapInput.value || '0', 10);
       const realOut = zarAmt >= rate ? Math.floor(zarAmt / rate) : 0;
       if (realOutEl) realOutEl.textContent = realOut + ' REAL';
@@ -482,13 +484,13 @@
       swapBtn.disabled = !canSwap;
       if (swapNote) {
         if (!zarAmt || zarAmt < rate) {
-          swapNote.textContent = `Min: ${rate.toLocaleString()} ZAR`;
+          swapNote.textContent = t('swap_min_label', { rate: fmtNum(rate) });
           swapNote.style.color = '';
         } else if (zarBal < zarAmt) {
-          swapNote.textContent = `Not enough ZAR (you have ${zarBal.toLocaleString()})`;
+          swapNote.textContent = t('swap_not_enough', { have: fmtNum(zarBal) });
           swapNote.style.color = '#ff6b6b';
         } else {
-          swapNote.textContent = `Convert ${zarAmt.toLocaleString()} ZAR → ${realOut} REAL`;
+          swapNote.textContent = t('swap_convert_label', { zar: fmtNum(zarAmt), real: fmtNum(realOut) });
           swapNote.style.color = 'var(--jade, #4ad8a6)';
         }
       }
@@ -539,7 +541,7 @@
           showToast(`✓ Swapped ${zarAmt.toLocaleString()} ZAR → ${realOut} REAL`);
           if (navigator.vibrate) navigator.vibrate([8, 4, 8]);
         } else if (r && r.error === 'insufficient_zar') {
-          setSwapError(`Not enough ZAR (have ${(r.have || 0).toLocaleString()}, need ${(r.need || zarAmt).toLocaleString()})`);
+          setSwapError(t('swap_not_enough', { have: fmtNum(r.have || 0) }) + ` (${t('swap_min_label', { rate: fmtNum(r.need || zarAmt) })})`);
         } else if (!res.ok) {
           setSwapError(`Server error (${res.status}) — try again`);
         } else {
