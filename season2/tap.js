@@ -496,6 +496,11 @@
 
     swapInput.addEventListener('input', updateSwapUI);
 
+    const setSwapError = (msg) => {
+      if (swapNote) { swapNote.textContent = msg; swapNote.style.color = '#ff6b6b'; }
+      showToast(msg);
+    };
+
     swapBtn.addEventListener('click', async () => {
       const zarAmt  = parseInt(swapInput.value || '0', 10);
       const rate    = getRate();
@@ -504,15 +509,21 @@
       const tgUser = window.Telegram && window.Telegram.WebApp &&
                      window.Telegram.WebApp.initDataUnsafe &&
                      window.Telegram.WebApp.initDataUnsafe.user;
-      if (!tgUser || !tgUser.id) { showToast('Connect via Telegram to swap'); return; }
+      if (!tgUser || !tgUser.id) { setSwapError('Connect via Telegram to swap'); return; }
       swapBtn.disabled = true;
       swapBtn.textContent = 'Swapping…';
+      if (swapNote) { swapNote.textContent = ''; swapNote.style.color = ''; }
+      const ctrl = new AbortController();
+      const timeout = setTimeout(() => ctrl.abort(), 10000);
       try {
-        const r = await fetch('/api/season2/user/zar-swap', {
+        const res = await fetch('/api/season2/user/zar-swap', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ telegram_id: String(tgUser.id), amount_real: realOut }),
-        }).then(res => res.ok ? res.json() : null);
+          signal: ctrl.signal,
+        });
+        clearTimeout(timeout);
+        const r = res.ok ? await res.json() : null;
         if (r && r.status === 1) {
           if (window.RealPlayer && window.RealPlayer.set) {
             window.RealPlayer.set({ zar: r.new_zar, balance: r.new_real_balance });
@@ -520,15 +531,24 @@
           swapInput.value = '';
           updateSwapUI();
           hydrateFromPlayer();
+          addHistoryRow(
+            `ZAR → REAL`,
+            `+${realOut} REAL`,
+            new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+          );
           showToast(`✓ Swapped ${zarAmt.toLocaleString()} ZAR → ${realOut} REAL`);
           if (navigator.vibrate) navigator.vibrate([8, 4, 8]);
         } else if (r && r.error === 'insufficient_zar') {
-          showToast('Not enough ZAR');
+          setSwapError(`Not enough ZAR (have ${(r.have || 0).toLocaleString()}, need ${(r.need || zarAmt).toLocaleString()})`);
+        } else if (!res.ok) {
+          setSwapError(`Server error (${res.status}) — try again`);
         } else {
-          showToast('Swap failed — try again');
+          setSwapError('Swap failed — try again');
         }
-      } catch { showToast('Network error — try again'); }
-      finally {
+      } catch (err) {
+        clearTimeout(timeout);
+        setSwapError(err.name === 'AbortError' ? 'Request timed out — try again' : 'Network error — try again');
+      } finally {
         swapBtn.disabled = false;
         swapBtn.textContent = 'Swap ›';
       }
