@@ -4,6 +4,9 @@
    states for collectibles. Persian RTL friendly.
    ========================================================================== */
 
+/* Ensure hidden attribute is respected even when display is set by a class rule */
+[hidden] { display: none !important; }
+
 .chapter-body { background: #04050b; color: #e9e3d0; }
 
 .chapter-app {
