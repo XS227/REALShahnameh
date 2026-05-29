@@ -89,11 +89,8 @@
   const render = ({ chapterMeta, lore, quizzes }) => {
     paintHero(chapterMeta || {}, lore);
     paintLore(lore);
-    paintTimeline(lore);
     paintScenes(lore);
-    paintCharacters(lore);
-    paintPlaces(lore);
-    paintCodex(lore);
+    applyCodexAutoUnlocks(lore); // persist intro:complete entries without display
     paintBattle(lore);
     paintQuiz(lore, quizzes);
   };
@@ -146,34 +143,6 @@
   };
 
   /* ---------- timeline strip ---------- */
-  const paintTimeline = (lore) => {
-    const host = $("[data-timeline]");
-    if (!host) return;
-    const t = (lore && lore.timeline) || [];
-    if (!t.length) {
-      host.innerHTML = `<div style="color:var(--muted);font-size:12px;padding:14px;">${escapeHtml(tr("ch_no_timeline"))}</div>`;
-      return;
-    }
-    host.innerHTML = t.map((e, i) => {
-      const boss = (e.side === "dark") || (i === t.length - 1);
-      const styleAttr = e.image ? `style="--t-bg:url('${escapeHtml(e.image)}');"` : "";
-      const classes = `t-card${boss ? " boss" : ""}${e.image ? " has-bg" : ""}`;
-      return `
-      <article class="${classes}" ${styleAttr}>
-        <span class="year">${escapeHtml(pick(e, "year_label"))}</span>
-        <h4>${escapeHtml(pick(e, "title"))}</h4>
-        <p>${escapeHtml(pick(e, "body"))}</p>
-      </article>`;
-    }).join("");
-    // Preflight each backdrop and console.warn any 404s.
-    t.forEach((e) => {
-      if (!e.image) return;
-      const img = new Image();
-      img.onerror = () => console.warn(`[chapter:${SLUG}] timeline image missing: ${e.image}`);
-      img.src = e.image;
-    });
-  };
-
   /* ---------- scenes ---------- */
   const paintScenes = (lore) => {
     const host = $("[data-scenes]");
@@ -221,131 +190,20 @@
     });
   };
 
-  /* ---------- characters ---------- */
-  const paintCharacters = (lore) => {
-    const host = $("[data-characters]");
-    if (!host) return;
-    const chars = (lore && lore.characters) || [];
-    const codexUnlocked = new Set(progress.codex);
-    const unlockedScenes = new Set(progress.scenes);
-
-    const isUnlocked = (c) => {
-      if (c.unlocked) return true;
-      const via = c.unlock_via;
-      if (!via) return false;
-      if (via.startsWith("scene:"))   return unlockedScenes.has(via.slice(6));
-      if (via.startsWith("codex:"))   return codexUnlocked.has(via.slice(6));
-      if (via.startsWith("chapter:")) return false; // future chapter
-      return false;
-    };
-
-    const rarityClass = (r) => ({
-      mythic: "r-mythic", legendary: "r-legend", epic: "r-epic", rare: "r-rare", common: ""
-    })[r] || "";
-
-    let unlockedCount = 0;
-    const isFa = curLang() === "fa";
-    const fallbackGlyph = (side) => side === "dark" ? "☾" : "⚔";
-    host.innerHTML = chars.map((c) => {
-      const unlocked = isUnlocked(c);
-      if (unlocked) unlockedCount++;
-      const altName = c.name_en || c.name_fa || "";
-      const portrait = c.image
-        ? `<img src="${escapeHtml(c.image)}" alt="${escapeHtml(altName)}" loading="lazy"
-                onerror="this.style.display='none'; this.nextElementSibling && this.nextElementSibling.removeAttribute('hidden'); console.warn('[chapter:${SLUG}] character image missing: ${escapeHtml(c.image)}');">
-           <span class="portrait-emoji-fallback" hidden>${fallbackGlyph(c.side)}</span>`
-        : `<span class="portrait-emoji-fallback">${fallbackGlyph(c.side)}</span>`;
-      // In FA mode show name_fa as main; show EN underneath. In EN mode keep current EN-on-top, FA-below.
-      const mainName = isFa ? (c.name_fa || c.name_en || "") : (c.name_en || "");
-      const subName  = isFa ? (c.name_en || "") : (c.name_fa || "");
-      const subAttrs = isFa ? "" : ' lang="fa" dir="rtl"';
-      const roleText = unlocked ? pick(c, "role") : tr("ch_unlock_by_scenes");
-      return `
-      <article class="card char-card ${rarityClass(c.rarity)} ${c.side === "dark" ? "dark" : ""} ${unlocked ? "" : "locked"}">
-        <span class="rarity-tag">${escapeHtml(c.rarity || "")}</span>
-        <div class="portrait">${portrait}</div>
-        <h4 class="name">${escapeHtml(mainName)}</h4>
-        <p class="name-fa"${subAttrs}>${escapeHtml(subName)}</p>
-        <p class="role">${escapeHtml(roleText)}</p>
-      </article>`;
-    }).join("");
-
-    const progEl = $("[data-char-progress]");
-    if (progEl) progEl.textContent = `${fmtNum(unlockedCount)} / ${fmtNum(chars.length)}`;
-  };
-
-  /* ---------- places ---------- */
-  const paintPlaces = (lore) => {
-    const host = $("[data-places]");
-    if (!host) return;
-    const places = (lore && lore.places) || [];
-    const unlockedScenes = new Set(progress.scenes);
-
-    const isUnlocked = (p) => {
-      if (p.unlocked) return true;
-      const via = p.unlock_via;
-      if (via && via.startsWith("scene:")) return unlockedScenes.has(via.slice(6));
-      return false;
-    };
-
-    let unlockedCount = 0;
-    host.innerHTML = places.map((p) => {
-      const unlocked = isUnlocked(p);
-      if (unlocked) unlockedCount++;
-      const altName = p.name_en || p.name_fa || "";
-      const placeholder = `<span class="place-placeholder">${escapeHtml(tr("image_coming_soon"))}</span>`;
-      const portrait = p.image
-        ? `<img src="${escapeHtml(p.image)}" alt="${escapeHtml(altName)}" loading="lazy"
-                onerror="this.classList.add('img-fail'); console.warn('[chapter:${SLUG}] place image missing: ${escapeHtml(p.image)}');">
-           ${placeholder}`
-        : placeholder;
-      const summary = unlocked ? pick(p, "summary") : tr("ch_unlock_related_scene");
-      return `
-      <article class="card place-card ${unlocked ? "" : "locked"}">
-        <div class="map-icon">${portrait}</div>
-        <span class="kind">${escapeHtml(pick(p, "kind"))}</span>
-        <h4 class="name">${escapeHtml(pick(p, "name"))}</h4>
-        <p class="summary">${escapeHtml(summary)}</p>
-      </article>`;
-    }).join("");
-
-    const progEl = $("[data-place-progress]");
-    if (progEl) progEl.textContent = `${fmtNum(unlockedCount)} / ${fmtNum(places.length)}`;
-  };
-
-  /* ---------- codex ---------- */
-  const paintCodex = (lore) => {
-    const host = $("[data-codex]");
-    if (!host) return;
+  /* ---------- codex auto-unlock (silent — no display) ----------
+     Persists intro:complete codex entries into progress so paintBattle
+     character-unlock checks stay accurate. Called from render().       */
+  const applyCodexAutoUnlocks = (lore) => {
     const entries = (lore && lore.codex) || [];
     const unlocked = new Set(progress.codex);
-
-    const seal = {
-      artifact: "🜲", place: "✣", creature: "✶", event: "✦", person: "❖", concept: "✜"
-    };
-
-    let unlockedCount = 0;
-    host.innerHTML = entries.map((e) => {
-      const u = unlocked.has(e.id) || e.unlock_via === "intro:complete"; // intro grants Ferdowsi entry by default
-      if (u) {
-        unlockedCount++;
-        if (!unlocked.has(e.id)) {
-          progress.codex.push(e.id);
-        }
+    let changed = false;
+    entries.forEach((e) => {
+      if (!unlocked.has(e.id) && e.unlock_via === "intro:complete") {
+        progress.codex.push(e.id);
+        changed = true;
       }
-      return `
-      <article class="codex-card ${u ? "" : "locked"}" data-cat="${escapeHtml(e.category)}">
-        <span class="cat-badge">${escapeHtml(e.category)}</span>
-        <div class="seal">${seal[e.category] || "✦"}</div>
-        <h4 class="title">${escapeHtml(pick(e, "title"))}</h4>
-        <p class="summary">${escapeHtml(pick(e, "summary"))}</p>
-      </article>`;
-    }).join("");
-
-    const progEl = $("[data-codex-progress]");
-    if (progEl) progEl.textContent = `${fmtNum(unlockedCount)} / ${fmtNum(entries.length)}`;
-
-    saveProgress();
+    });
+    if (changed) saveProgress();
   };
 
   /* ---------- battle requirements ---------- */
@@ -718,11 +576,8 @@
             ? tr("ch_codex_one_entry")
             : tr("ch_codex_n_entries", { n: fmtNum(newlyUnlocked.length) }))
         : tr("ch_scene_completed");
-      // re-paint sections affected
+      // re-paint sections affected by scene completion
       paintScenes(modalLore);
-      paintCharacters(modalLore);
-      paintPlaces(modalLore);
-      paintCodex(modalLore);
       paintBattle(modalLore);
     } else {
       rewardEl.hidden = true;
@@ -790,7 +645,7 @@
             </a>
           </div>`;
         /* Hide the rest of the page content */
-        $$("section, .ch-lore, .section-head, .ch-timeline, .scene-list, .ch-grid, .battle-card, .quiz-card, .ch-crumbs", document.querySelector("main")).forEach(el => { el.hidden = true; });
+        $$("section, .ch-lore, .section-head, .scene-list, .battle-card, .quiz-card, .ch-crumbs", document.querySelector("main")).forEach(el => { el.hidden = true; });
       }
       return;
     }
