@@ -283,7 +283,7 @@
       req_goal: "هدف",
       boss_sent_by: "فرستاده‌ی",
       boss_ahriman_lord: "اهریمن — خداوندِ تاریکی",
-      battle_challenge_tpl: "چالش با {boss} — در بروزرسانی بعد",
+      battle_challenge_tpl: "☠ نبرد با {boss} — بزودی",
       battle_locked: "قفل — همه‌ی شرایط را کامل کن",
       battle_combat_next_update: "نبرد در بروزرسانی بعدی فعال می‌شود.",
 
@@ -297,6 +297,9 @@
       quiz_question_of: "پرسش {i} از {n}",
       quiz_no_published: "هنوز آزمونی برای این فصل منتشر نشده.",
       quiz_chapter_mastered: "تسلط بر آزمون فصل",
+      quiz_tier_mastered: "مرحله تسخیر شد!",
+      quiz_start_next_tier: "شروع چالش {tier} ›",
+      quiz_tier_locked_hint: "مرحله‌ی قبلی را تسخیر کنید تا این چالش باز شود.",
       quiz_complete_line: "{n} از {n} پاسخ درست. خزورا از جنگل می‌نگرد.",
       quiz_xp_earned: "+{xp} تجربه دریافت شد",
       quiz_real_earned: "+{n} REAL دریافت شد",

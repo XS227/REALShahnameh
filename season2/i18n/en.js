@@ -281,7 +281,7 @@
       req_goal: "Goal",
       boss_sent_by: "Sent by",
       boss_ahriman_lord: "Ahriman — Lord of the Dark",
-      battle_challenge_tpl: "Challenge {boss} — Coming next update",
+      battle_challenge_tpl: "☠ CHALLENGE {boss} — COMING NEXT UPDATE",
       battle_locked: "Locked — complete all requirements",
       battle_combat_next_update: "Combat arrives in the next update.",
 
@@ -295,6 +295,9 @@
       quiz_question_of: "Question {i} of {n}",
       quiz_no_published: "No quiz published for this chapter yet.",
       quiz_chapter_mastered: "Chapter Quiz Mastered",
+      quiz_tier_mastered: "Tier Mastered!",
+      quiz_start_next_tier: "Start {tier} Challenge ›",
+      quiz_tier_locked_hint: "Master the previous tier to unlock this challenge.",
       quiz_complete_line: "{n} of {n} answered correctly. Khazura watches from the forest.",
       quiz_xp_earned: "+{xp} XP earned",
       quiz_real_earned: "+{n} REAL earned",

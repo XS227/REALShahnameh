@@ -282,7 +282,7 @@
       req_goal: "Ҳадаф",
       boss_sent_by: "Фиристодаи",
       boss_ahriman_lord: "Аҳриман — Худованди торикӣ",
-      battle_challenge_tpl: "Мубориза бо {boss} — Дар таҷдиди оянда",
+      battle_challenge_tpl: "☠ НАБАРД бо {boss} — ДАР ТАҶДИДИ ОЯНДА",
       battle_locked: "Қулф — ҳамаи шартҳоро тамом кун",
       battle_combat_next_update: "Набард дар таҷдиди оянда фаъол мешавад.",
 
@@ -296,6 +296,9 @@
       quiz_question_of: "Саволи {i} аз {n}",
       quiz_no_published: "Ҳанӯз барои ин боб имтиҳоне нашр нашуда.",
       quiz_chapter_mastered: "Тасаллут бар имтиҳони боб",
+      quiz_tier_mastered: "Марҳала тасхир шуд!",
+      quiz_start_next_tier: "Оғози чолиши {tier} ›",
+      quiz_tier_locked_hint: "Марҳалаи қаблиро тасхир кунед то ин чолиш кушода шавад.",
       quiz_complete_line: "{n} аз {n} ҷавоби дуруст. Хазура аз ҷангал менигарад.",
       quiz_xp_earned: "+{xp} XP гирифта шуд",
       quiz_real_earned: "+{n} REAL гирифта шуд",
