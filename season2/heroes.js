@@ -1302,14 +1302,15 @@
     /* Bind economy panel buttons */
     bindEconomyPanel(modal.querySelector(".cert-econ-slot"), item);
 
-    /* Bind close */
+    /* Bind close — stopPropagation so click doesn't bubble to portrait panel */
     document.getElementById("cert-close-btn")
-      ?.addEventListener("click", closeCertificate);
+      ?.addEventListener("click", (e) => { e.stopPropagation(); closeCertificate(); });
 
-    /* Portrait → fullscreen */
+    /* Portrait → fullscreen (skip if the click originated from the close button) */
     const portraitPanel = modal.querySelector(".cert-portrait-panel");
     if (portraitPanel) {
-      portraitPanel.addEventListener("click", () => {
+      portraitPanel.addEventListener("click", (e) => {
+        if (e.target.closest(".cert-close")) return;
         const src = portraitPanel.dataset.fullscreenSrc;
         const alt = portraitPanel.dataset.fullscreenAlt;
         if (src) openFullscreen(src, alt);
