@@ -728,11 +728,15 @@
         const l = b.getAttribute("data-set-lang");
         Player.set({ language: l });
         applyLang(l);
+        // Full locale apply: data-i18n-html, placeholders, Persian digit pipeline
+        if (window.RealI18N && window.RealI18N.applyLocale) window.RealI18N.applyLocale();
         applyPath(getPath() || "hero");
         renderSeason1Card();
         refresh();
         toast(t("saved"));
         haptic("success");
+        // Notify page-specific JS (tap.js, home.js etc.) to re-render dynamic values
+        try { window.dispatchEvent(new CustomEvent("real:lang:changed", { detail: { lang: l } })); } catch {}
       });
     });
     $$("[data-set-path]", overlay).forEach((b) => {
@@ -1083,38 +1087,144 @@
       tap({ clientX: t.clientX, clientY: t.clientY });
     }, { passive: true });
 
-    /* regen */
-    const regenTimer = setInterval(() => {
-      if (state.energy < state.max) {
-        state.energy = Math.min(state.max, state.energy + 1);
-        renderEnergy();
-      }
-    }, 3000);
+    /* ── Timestamp-differential energy regen ──────────────────────────────
+       Rate: +1 per 3 s. Catches up missed regen after backgrounding,
+       tab-switch, or bfcache restore without relying on setInterval timing. */
+    const REGEN_RATE_MS  = 3000;
+    const ENERGY_TS_KEY  = "real_energy_ts";
 
-    /* boost button on Play */
+    let _lastRegenTs = (() => {
+      try {
+        const v = parseInt(localStorage.getItem(ENERGY_TS_KEY) || "0", 10);
+        return v > 0 ? v : Date.now();
+      } catch { return Date.now(); }
+    })();
+
+    const applyRegenGap = () => {
+      if (state.energy >= state.max) {
+        _lastRegenTs = Date.now();
+        try { localStorage.setItem(ENERGY_TS_KEY, String(_lastRegenTs)); } catch {}
+        return;
+      }
+      const now  = Date.now();
+      const gain = Math.floor((now - _lastRegenTs) / REGEN_RATE_MS);
+      if (gain <= 0) return;
+      state.energy  = Math.min(state.max, state.energy + gain);
+      _lastRegenTs += gain * REGEN_RATE_MS;
+      try { localStorage.setItem(ENERGY_TS_KEY, String(_lastRegenTs)); } catch {}
+      renderEnergy();
+      Player.set({ energy: state.energy });
+    };
+
+    applyRegenGap(); // immediate catch-up on load
+    const regenTimer = setInterval(applyRegenGap, 1000);
+
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) applyRegenGap();
+    });
+    window.addEventListener("pageshow", (e) => {
+      if (e.persisted) applyRegenGap();
+    });
+
+    /* ── Boost button — 3/day max, 1-hour cooldown ───────────────────────── */
+    const BOOST_MAX_DAY     = 3;
+    const BOOST_COOLDOWN_MS = 60 * 60 * 1000; // 1 hour
+    const BOOST_STATE_KEY   = "real_boost_state";
+
+    const getBoostState = () => {
+      try { return JSON.parse(localStorage.getItem(BOOST_STATE_KEY) || '{"timestamps":[]}'); }
+      catch { return { timestamps: [] }; }
+    };
+    const saveBoostState = (bs) => {
+      try { localStorage.setItem(BOOST_STATE_KEY, JSON.stringify(bs)); } catch {}
+    };
+    const boostEligibility = () => {
+      const bs      = getBoostState();
+      const now     = Date.now();
+      const dayAgo  = now - 86400000;
+      const recent  = (bs.timestamps || []).filter(ts => ts > dayAgo);
+      if (recent.length >= BOOST_MAX_DAY) {
+        return { ok: false, reason: "limit", remaining: (recent[0] + 86400000) - now };
+      }
+      const last = recent[recent.length - 1];
+      if (last && (now - last) < BOOST_COOLDOWN_MS) {
+        return { ok: false, reason: "cooldown", remaining: BOOST_COOLDOWN_MS - (now - last) };
+      }
+      return { ok: true, used: recent.length };
+    };
+    const recordBoostUse = () => {
+      const bs  = getBoostState();
+      const now = Date.now();
+      bs.timestamps = ((bs.timestamps || []).filter(ts => ts > now - 86400000));
+      bs.timestamps.push(now);
+      saveBoostState(bs);
+    };
+    const fmtCountdown = (ms) => {
+      const total = Math.max(0, Math.ceil(ms / 1000));
+      const h = Math.floor(total / 3600);
+      const m = Math.floor((total % 3600) / 60);
+      const s = total % 60;
+      const pad = (n) => String(n).padStart(2, "0");
+      return h > 0 ? `${pad(h)}:${pad(m)}:${pad(s)}` : `${pad(m)}:${pad(s)}`;
+    };
+
     const boostBtn = $("[data-action=\"boost\"]");
     if (boostBtn) {
+      let _boostActive = false;
+
+      const updateBoostBtn = () => {
+        if (_boostActive) return; // active boost timer controls the label
+        const elig = boostEligibility();
+        if (elig.ok) {
+          boostBtn.disabled = false;
+          boostBtn.textContent = t("activate");
+        } else if (elig.reason === "limit") {
+          boostBtn.disabled = true;
+          boostBtn.textContent = t("boost_daily_limit_txt");
+        } else {
+          boostBtn.disabled = true;
+          boostBtn.textContent = t("boost_cooldown_tpl", { t: fmtCountdown(elig.remaining) });
+        }
+      };
+
+      updateBoostBtn();
+      const boostStateTimer = setInterval(updateBoostBtn, 1000);
+
       boostBtn.addEventListener("click", () => {
-        if (boostBtn.disabled) return;
-        boostBtn.disabled = true;
-        boostBtn.textContent = t("boost_active_timer_tpl").replace("{t}", "30:00");
-        state.base *= 3;
+        const elig = boostEligibility();
+        if (!elig.ok) {
+          toast(elig.reason === "limit"
+            ? t("boost_limit_toast", { n: BOOST_MAX_DAY })
+            : t("boost_cooldown_toast", { t: fmtCountdown(elig.remaining) }));
+          haptic("warning");
+          return;
+        }
+
+        recordBoostUse();
+        _boostActive = true;
+        state.base  *= 3;
         toast(t("boost_active_toast"));
         haptic("success");
+
         let secs = 30 * 60;
-        const tick = setInterval(() => {
-          secs -= 1;
+        boostBtn.disabled     = true;
+        boostBtn.textContent  = t("boost_active_timer_tpl").replace("{t}", "30:00");
+
+        const boostTick = setInterval(() => {
+          secs--;
           const m = String(Math.floor(secs / 60)).padStart(2, "0");
           const s = String(secs % 60).padStart(2, "0");
           boostBtn.textContent = t("boost_active_timer_tpl").replace("{t}", `${m}:${s}`);
           if (secs <= 0) {
-            clearInterval(tick);
-            state.base = Math.round(state.base / 3);
-            boostBtn.disabled = false;
-            boostBtn.textContent = t("activate");
+            clearInterval(boostTick);
+            state.base    = Math.round(state.base / 3);
+            _boostActive  = false;
+            updateBoostBtn();
           }
         }, 1000);
       });
+
+      window.addEventListener("beforeunload", () => clearInterval(boostStateTimer));
     }
 
     window.addEventListener("beforeunload", () => {

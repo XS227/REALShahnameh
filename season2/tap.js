@@ -427,31 +427,53 @@
     while (host.children.length > 8) host.removeChild(host.lastChild);
   };
 
-  /* ---- Hydrate display from Player state after sync ---- */
-  const fmtNum = (n) => (window.RealI18N && window.RealI18N.formatNumber) ? window.RealI18N.formatNumber(n) : Number(n).toLocaleString();
+  /* ---- Formatters ---- */
+  const fmtNum = (n) => (window.RealI18N && window.RealI18N.formatNumber)
+    ? window.RealI18N.formatNumber(n) : Number(n).toLocaleString();
 
+  /* Compact K/M notation with Persian digit pipeline */
+  const fmtCompact = (n) => {
+    n = Number(n) || 0;
+    let s;
+    if (n >= 1_000_000) s = (n / 1_000_000).toFixed(1) + 'M';
+    else if (n >= 1_000) s = (n / 1_000).toFixed(1) + 'K';
+    else s = Math.floor(n).toString();
+    return (window.RealI18N && window.RealI18N.toPersianDigits && window.RealI18N.getLang
+      && window.RealI18N.getLang() === 'fa')
+      ? window.RealI18N.toPersianDigits(s) : s;
+  };
+
+  /* ---- Hydrate display from Player state after sync ---- */
   const hydrateFromPlayer = () => {
     const p = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
 
-    const balEl    = document.querySelector('[data-balance]');
-    const energyEl = document.querySelector('[data-energy]');
-    const fillEl   = document.querySelector('[data-energy-fill]');
-    const streakBadge = document.querySelector('[data-streak-badge]');
-    const streakVal   = document.querySelector('[data-streak-val]');
-    const zarHrEl  = document.querySelector('[data-zar-hr]');
+    const balEl        = document.querySelector('[data-balance]');
+    const energyEl     = document.querySelector('[data-energy]');
+    const fillEl       = document.querySelector('[data-energy-fill]');
+    const streakVal    = document.querySelector('[data-streak-val]');
+    const zarHrEl      = document.querySelector('[data-zar-hr]');
+    const realBalDisp  = document.querySelector('[data-real-bal-display]');
 
-    if (balEl)      balEl.innerHTML      = `<span class="zar-ico">🪙</span> ${fmtNum(p.zar || 0)}`;
-    if (energyEl)   energyEl.textContent = p.energy != null ? p.energy : 1000;
-    if (fillEl)     fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
+    /* ZAR balance — compact K notation */
+    if (balEl) balEl.innerHTML = `<span class="zar-ico">🪙</span> ${fmtCompact(p.zar || 0)}`;
+
+    if (energyEl) energyEl.textContent = p.energy != null ? p.energy : 1000;
+    if (fillEl)   fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
+
     const streak = p.dailyStreak || 1;
-    if (streakBadge) streakBadge.textContent = '🔥 ' + fmtNum(streak);
-    if (streakVal)   streakVal.textContent   = t('streak_days_tpl', { n: fmtNum(streak) });
+    if (streakVal) streakVal.textContent = t('streak_days_tpl', { n: fmtNum(streak) });
 
-    /* Zar/hr from hero ownership (written by heroes.js) */
+    /* REAL balance display (replaces streak badge in stats bar) */
+    if (realBalDisp) {
+      const realBal = p.balance || 0;
+      realBalDisp.textContent = '◆ ' + fmtCompact(realBal);
+    }
+
+    /* ZAR/hr — pipe through fmtNum so FA gets Persian digits */
     if (zarHrEl) {
       try {
         const zarHr = parseInt(localStorage.getItem('real_total_zar_hr') || '0', 10);
-        zarHrEl.innerHTML = `<span class="zar-ico">🪙</span> +${zarHr}`;
+        zarHrEl.innerHTML = `<span class="zar-ico">🪙</span> +${fmtNum(zarHr)}`;
       } catch { zarHrEl.innerHTML = '<span class="zar-ico">🪙</span> +0'; }
     }
   };
@@ -587,6 +609,24 @@
         hydrateFromPlayer();
       });
     }
+
+    // Language hot-swap: re-render all dynamic values in new locale
+    window.addEventListener('real:lang:changed', () => {
+      hydrateFromPlayer();
+    });
+
+    // Bfcache restore: refresh balances from localStorage
+    window.addEventListener('pageshow', (e) => {
+      if (e.persisted) {
+        try {
+          const ls = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
+          if (window.RealPlayer && window.RealPlayer.set && ls.balance != null) {
+            window.RealPlayer.set({ balance: ls.balance, zar: ls.zar || 0 });
+          }
+        } catch {}
+        hydrateFromPlayer();
+      }
+    });
   };
 
   if (document.readyState === "loading") {
