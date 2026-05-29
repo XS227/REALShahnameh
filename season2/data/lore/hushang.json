@@ -1,0 +1,418 @@
+{
+  "version": 3,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-29T12:00:00Z",
+  "chapter_slug": "hushang",
+  "chapter_id": 2,
+  "era": {
+    "label_en": "~6800–6200 BC — Age of Hushang",
+    "label_fa": "~۶۸۰۰–۶۲۰۰ پ.م — عصر هوشنگ"
+  },
+  "lore_summary": {
+    "en": "The mourning is over. Hushang, grandson of Keyumars, takes up the leopard-skin legacy and leads the armies of light against the demon that killed his father. With the Black Div defeated, Pars breathes again. Then, on a rocky pass, he throws a stone at a serpent — and misses. But a spark leaps from flint to flint, and a tree catches fire. That night, fire is given to humankind. The festival of Sade is born. Iron is hammered. Water is led to fields. The first age of craft begins.",
+    "fa": "سوگ به پایان رسیده است. هوشنگ، نوه‌ی کیومرث، میراثِ پوست‌پلنگ را برمی‌دارد و سپاهِ روشنایی را به نبرد با دیوی می‌کشاند که پدرش را کشته است. با شکستِ دیوِ سیاه، پارس دوباره نفس می‌کشد. آن‌گاه، بر گذرگاهی سنگی، هوشنگ سنگی به‌سوی افعی پرتاب می‌کند — و خطا می‌رود. اما جرقه‌ای از سنگ به سنگ می‌جهد و درختی آتش می‌گیرد. آن شب، آتش به آدمیان بخشیده می‌شود. جشنِ سده زاده می‌شود. آهن کوبیده می‌شود. آب به سوی مزارع کشیده می‌شود. نخستین عصرِ صنعت آغاز می‌گردد."
+  },
+  "timeline": [
+    {
+      "id": "hushang-takes-throne",
+      "year_label_en": "~6800 BC",
+      "year_label_fa": "~۶۸۰۰ پ.م",
+      "title_en": "Hushang Takes the Throne",
+      "title_fa": "هوشنگ بر تخت می‌نشیند",
+      "body_en": "After thirty days of mourning, Keyumars places the crown on his grandson. The leopard-skin passes to a new king. The mountain-court learns a new name.",
+      "body_fa": "پس از سی روز سوگ، کیومرث تاج را بر سرِ نوه‌اش می‌گذارد. پوستِ پلنگ به شاهی تازه می‌رسد. درگاهِ کوهستانی نامی نو می‌آموزد.",
+      "image": "/assets/images/locations/royal-mountain-court.png",
+      "side": "light"
+    },
+    {
+      "id": "battle-of-vengeance",
+      "year_label_en": "~6750 BC",
+      "year_label_fa": "~۶۷۵۰ پ.م",
+      "title_en": "Battle of Vengeance",
+      "title_fa": "نبردِ انتقام",
+      "body_en": "Hushang marshals the armies of light — the beasts of the field, the birds of the sky, and the kindred of Pars. They march into the demon forest. The Black Div is cast down.",
+      "body_fa": "هوشنگ سپاهِ روشنایی را آرایش می‌دهد — چارپایانِ دشت، پرندگانِ آسمان، و خویشانِ پارس. به جنگلِ دیوان می‌تازند. دیوِ سیاه فرو افکنده می‌شود.",
+      "image": "/assets/images/locations/demon-forest-location.png",
+      "side": "dark"
+    },
+    {
+      "id": "discovery-of-fire",
+      "year_label_en": "~6700 BC",
+      "year_label_fa": "~۶۷۰۰ پ.م",
+      "title_en": "Discovery of Fire",
+      "title_fa": "کشفِ آتش",
+      "body_en": "On a mountain pass, Hushang hurls a stone at a serpent and misses. Flint meets flint. A spark leaps. A tree ignites. Fire enters the world and does not leave.",
+      "body_fa": "بر گذرگاهی کوهستانی، هوشنگ سنگی به‌سوی افعی پرتاب می‌کند و خطا می‌رود. سنگ به سنگ می‌خورد. جرقه‌ای می‌جهد. درختی شعله می‌گیرد. آتش به جهان می‌آید و دیگر نمی‌رود.",
+      "image": "/assets/images/locations/rocky-pass-location.png",
+      "side": "light"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "young-king",
+      "order": 1,
+      "title_en": "The Young King",
+      "title_fa": "شاهِ جوان",
+      "era_en": "~6800 BC",
+      "era_fa": "~۶۸۰۰ پ.م",
+      "body_en": "Thirty days of silence end. Hushang steps to the stone threshold where his grandfather has stood for years beyond counting. He does not yet wear the leopard skin — he lets it be placed on his shoulders, because he knows it carries a weight greater than leather. The mountain-court does not cheer; it watches. A king earns the voice of the mountain, or he does not.",
+      "body_fa": "سی روز خاموشی به پایان می‌رسد. هوشنگ به آستانه‌ی سنگی‌ای قدم می‌گذارد که نیایش سال‌هایی بی‌شمار آن‌جا ایستاده بوده است. هنوز پوستِ پلنگ را به تن نمی‌کند — می‌گذارد بر شانه‌اش بنهندش، زیرا می‌داند بارش سنگین‌تر از چرم است. درگاهِ کوهستانی هلهله نمی‌کند؛ می‌نگرد. شاه صدایِ کوه را به دست می‌آورد، یا نمی‌آورد.",
+      "atmosphere": "warm",
+      "image": "/assets/images/scenes/young-king-scene.png",
+      "reward": { "xp": 30 },
+      "unlocks_codex": ["leopard-skin-lineage"]
+    },
+    {
+      "id": "army-of-light",
+      "order": 2,
+      "title_en": "The Army of Light",
+      "title_fa": "سپاهِ روشنایی",
+      "era_en": "~6780 BC",
+      "era_fa": "~۶۷۸۰ پ.م",
+      "body_en": "Hushang calls the people of Pars to the mountain court. He calls the eagles from the south. He calls the lions from the high pasture. He says only what must be said: a debt is owed. The army moves before the sun has climbed halfway. The forest watches them come.",
+      "body_fa": "هوشنگ مردمانِ پارس را به درگاهِ کوهستانی فرا می‌خواند. عقاب‌ها را از جنوب می‌خواند. شیران را از چراگاهِ بلند. تنها آنچه باید گفته شود را می‌گوید: وامی ادا نشده است. سپاه پیش از آنکه خورشید نیمه‌ی راه را بپیماید، به راه می‌افتد. جنگل نظاره می‌کند که می‌آیند.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/army-of-light-scene.png",
+      "reward": { "xp": 40 },
+      "unlocks_codex": ["hushang-army-codex"]
+    },
+    {
+      "id": "into-the-demon-forest",
+      "order": 3,
+      "title_en": "Into the Demon Forest",
+      "title_fa": "به‌درونِ جنگلِ دیوان",
+      "era_en": "~6770 BC",
+      "era_fa": "~۶۷۷۰ پ.م",
+      "body_en": "The trees here are older than names. They do not grow toward the light — they lean away from it. A cold wind blows from the roots upward. The demon's servants scatter at the edge of the army's fire. Hushang does not slow. He has been watching this forest since he was a boy on his grandfather's shoulder.",
+      "body_fa": "درختانِ این‌جا کهن‌تر از نام‌هایند. نه به‌سوی روشنی که از آن دور می‌شوند. بادی سرد از ریشه‌ها به‌بالا می‌وزد. بندگانِ دیو در کرانه‌ی آتشِ سپاه پراکنده می‌شوند. هوشنگ کند نمی‌رود. از آن هنگام که کودکی بود بر شانه‌ی نیایش، این جنگل را می‌نگریسته است.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/demon-forest-march-scene.png",
+      "reward": { "xp": 40 },
+      "unlocks_codex": ["black-div-codex"]
+    },
+    {
+      "id": "fall-of-the-black-div",
+      "order": 4,
+      "title_en": "Fall of the Black Div",
+      "title_fa": "سقوطِ دیوِ سیاه",
+      "era_en": "~6750 BC",
+      "era_fa": "~۶۷۵۰ پ.م",
+      "body_en": "The Black Div does not yield. He remembers Siamak falling and takes that memory as strength. But Hushang has grown up with that same memory and turned it into something harder than grief. The demon falls on the turf where the old darkness thought it was safe. Vengeance is paid. The mourning is complete.",
+      "body_fa": "دیوِ سیاه تسلیم نمی‌شود. سیامکِ افتاده را به‌یاد می‌آورد و آن یادآوری را نیرو می‌گیرد. اما هوشنگ با همان یادآوری رشد کرده و آن را به چیزی سخت‌تر از اندوه تبدیل کرده است. دیو بر همان چمنی فرو می‌افتد که تاریکیِ کهن گمان می‌کرد امن است. انتقام گرفته شد. سوگ به پایان رسید.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/black-div-falls-scene.png",
+      "reward": { "xp": 60 },
+      "unlocks_codex": ["vengeance-complete"]
+    },
+    {
+      "id": "a-world-reborn",
+      "order": 5,
+      "title_en": "A World Reborn",
+      "title_fa": "جهانی از نو",
+      "era_en": "~6700 BC",
+      "era_fa": "~۶۷۰۰ پ.م",
+      "body_en": "With the Black Div gone, Hushang turns from war. He teaches the people to dig channels from the mountain rivers. He splits the plough into the soft earth. He gives the grains their names. A world that had only one skill — to survive — now learns its second: to build. The mountain-court adds a second fire to its hearth.",
+      "body_fa": "با رفتنِ دیوِ سیاه، هوشنگ از جنگ برمی‌گردد. به مردمان می‌آموزد از رودخانه‌های کوهستانی جوی بکَنند. گاوآهن را در خاکِ نرم فرو می‌برد. به دانه‌ها نامشان را می‌دهد. جهانی که تنها یک هنر داشت — بقا — اکنون دومین هنر را می‌آموزد: ساختن. درگاهِ کوهستانی آتشِ دومی به اجاقِ خود می‌افزاید.",
+      "atmosphere": "warm",
+      "image": "/assets/images/scenes/world-reborn-scene.png",
+      "reward": { "xp": 50 },
+      "unlocks_codex": ["first-plough", "first-channel"]
+    },
+    {
+      "id": "serpent-in-the-pass",
+      "order": 6,
+      "title_en": "The Serpent in the Pass",
+      "title_fa": "افعی در گذرگاه",
+      "era_en": "~6680 BC",
+      "era_fa": "~۶۶۸۰ پ.م",
+      "body_en": "On a rocky pass in the mountain wall, a serpent of black scales blocks the road. Hushang stoops, lifts a flint stone the weight of his fist, and throws it hard. The serpent ducks. The stone meets the rock-face. A dry crack — and then a spark, then two, then a crown of light leaping between stones. He stands very still. He has never seen this before. No one has.",
+      "body_fa": "بر گذرگاهی سنگی در دیوارِ کوه، افعی‌ای سیاه‌فلس راه را می‌بندد. هوشنگ خم می‌شود، سنگِ چخماقی به وزنِ مشتش برمی‌گیرد و با نیرو پرتاب می‌کند. افعی طفره می‌رود. سنگ به صخره می‌خورد. صدایی خشک — و آنگاه جرقه‌ای، سپس دو، سپس تاجی از روشنی که میانِ سنگ‌ها می‌جهد. بی‌حرکت می‌ایستد. این را هرگز ندیده بود. هیچ‌کس ندیده بود.",
+      "atmosphere": "wild",
+      "image": "/assets/images/scenes/serpent-in-pass-scene.png",
+      "reward": { "xp": 60 },
+      "unlocks_codex": ["serpent-of-the-pass"]
+    },
+    {
+      "id": "fire-is-born",
+      "order": 7,
+      "title_en": "Fire is Born",
+      "title_fa": "آتش زاده می‌شود",
+      "era_en": "~6680 BC",
+      "era_fa": "~۶۶۸۰ پ.م",
+      "body_en": "The spark catches dry grass. The dry grass touches a branch. The branch wakes a tree. Hushang calls the people and they come running, and they stand around the first fire with their hands out. It does not bite if you respect it. He names the night and the flame together: Sade. A festival for all who follow, as long as the mountain stands.",
+      "body_fa": "جرقه به علفِ خشک می‌رسد. علفِ خشک به شاخه‌ای می‌رسد. شاخه درختی را بیدار می‌کند. هوشنگ مردمان را فرا می‌خواند و می‌آیند، دوان، و با دست‌های دراز شده پیرامونِ نخستین آتش می‌ایستند. اگر احترامش بداری گاز نمی‌گیرد. او شب و شعله را با هم نام می‌نهد: سده. جشنی برای همه‌ی پس‌آیندگان، تا کوه برپاست.",
+      "atmosphere": "warm",
+      "image": "/assets/images/scenes/fire-born-scene.png",
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["sade-festival", "fire-gift"]
+    },
+    {
+      "id": "chapter-complete",
+      "order": 8,
+      "title_en": "The Age of Craft",
+      "title_fa": "عصرِ صنعت",
+      "era_en": "~6600 BC",
+      "era_fa": "~۶۶۰۰ پ.م",
+      "body_en": "Fire begets iron. Iron begets the forge. The forge begets the blade, the plough, the hammer. Hushang names these things one by one and gives each name to a child to carry. His age is short — the Shahnameh rushes forward — but what it plants is permanent: fire, iron, water-work, the calendar of seasons. The next king, Tahmuras, will climb higher still. He will chain the demons and trade their lives for the alphabet.",
+      "body_fa": "آتش آهن می‌زاید. آهن آهنگری می‌زاید. آهنگری تیغ می‌زاید و گاوآهن و چکش. هوشنگ این‌ها را یک‌به‌یک نام می‌دهد و هر نامی را به کودکی می‌سپارد که با خود ببرد. عصرِ او کوتاه است — شاهنامه شتابان پیش می‌رود — اما آنچه می‌کارد ماندگار است: آتش، آهن، آب‌رسانی، تقویمِ فصل‌ها. شاهِ آینده، تهمورث، باز هم بالاتر خواهد رفت. دیوان را در زنجیر خواهد کشید و جانشان را با الفبا معامله خواهد کرد.",
+      "atmosphere": "dawn",
+      "image": "/assets/images/scenes/age-of-craft-scene.png",
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["first-iron-forge", "tahmuras-foreshadow"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "hushang",
+      "name_en": "Hushang",
+      "name_fa": "هوشنگ",
+      "role_en": "Second King · Lawgiver · Fire-Bringer",
+      "role_fa": "دومین شاه · قانون‌گذار · آورنده‌ی آتش",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "Son of Siamak, grandson of Keyumars. He avenged his father against the Black Div, then discovered fire by accident — and understood immediately what accident had given the world. Ferdowsi calls him Pishdad: the first of the lawgivers.",
+      "lore_fa": "پسرِ سیامک، نوه‌ی کیومرث. کینِ پدر را از دیوِ سیاه ستاند، آنگاه آتش را از روی تصادف کشف کرد — و فوری فهمید که تصادف چه هدیه‌ای به جهان داده است. فردوسی او را پیشداد می‌خواند: نخستینِ قانون‌گذاران.",
+      "image": "/assets/images/heroes/hushang-hero.png",
+      "unlocked": true,
+      "side": "light"
+    },
+    {
+      "slug": "keyumars",
+      "name_en": "Keyumars",
+      "name_fa": "کیومرث",
+      "role_en": "First King · Elder · Teacher",
+      "role_fa": "نخستین شاه · پیر · استاد",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "He appears here at the end of his reign: old, grieving, placing the crown on Hushang's head. His leopard-skin becomes the dynasty's emblem. He will not march again.",
+      "lore_fa": "این‌جا در پایانِ شاهی‌اش ظاهر می‌شود: پیر، سوگوار، تاج را بر سرِ هوشنگ می‌گذارد. پوستِ پلنگش نشانِ سلسله می‌گردد. دیگر نخواهد تاخت.",
+      "image": "/assets/images/heroes/keyumars-hero.png",
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "chapter:keyumars"
+    },
+    {
+      "slug": "black-div",
+      "name_en": "The Black Div",
+      "name_fa": "دیوِ سیاه",
+      "role_en": "Siamak's Killer · Final Adversary",
+      "role_fa": "قاتلِ سیامک · دشمنِ نهایی",
+      "rarity": "legendary",
+      "level_required": 5,
+      "lore_en": "He returns from chapter 1 not as a shadow but as the battle's centre. Hushang's army drives him back and fells him on the same forest turf where Siamak died.",
+      "lore_fa": "از دفترِ اول برمی‌گردد نه چون سایه‌ای که به مرکزِ نبرد. سپاهِ هوشنگ او را می‌راند و بر همان چمنِ جنگلی که سیامک در آن کشته شد، فرو می‌کوبد.",
+      "image": "/assets/images/enemies/black-div-enemy.png",
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:fall-of-the-black-div"
+    },
+    {
+      "slug": "tahmuras",
+      "name_en": "Tahmuras",
+      "name_fa": "تهمورث",
+      "role_en": "Heir to the Forge · Demon-Binder",
+      "role_fa": "وارثِ آهنگری · دیوبند",
+      "rarity": "epic",
+      "level_required": 8,
+      "lore_en": "Hushang's son and successor. He will take the crafts of fire and iron and carry them into a darker contest: wrestling the demons of the world and trading their lives for writing. (Chapter 3.)",
+      "lore_fa": "پسر و جانشینِ هوشنگ. هنرهای آتش و آهن را برمی‌گیرد و در رویارویی‌ای تاریک‌تر به‌کار می‌بندد: کُشتی با دیوانِ جهان و معامله‌ی جانشان با نوشتار. (دفترِ سوم.)",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "chapter:tahmuras"
+    }
+  ],
+  "places": [
+    {
+      "slug": "rocky-pass",
+      "name_en": "The Rocky Pass",
+      "name_fa": "گذرگاهِ سنگی",
+      "kind_en": "Site of Fire's Birth",
+      "kind_fa": "جایگاهِ تولدِ آتش",
+      "summary_en": "The unnamed pass in the high mountain wall where Hushang threw a stone and fire entered the world. Every festival of Sade points back to this place.",
+      "summary_fa": "گذرگاهِ بی‌نامی در دیوارِ کوهِ بلند که هوشنگ در آن سنگ پرتاب کرد و آتش به جهان آمد. هر جشنِ سده به این مکان اشاره دارد.",
+      "image": "/assets/images/locations/rocky-pass-location.png",
+      "unlocked": false,
+      "unlock_via": "scene:serpent-in-the-pass"
+    },
+    {
+      "slug": "first-iron-forge",
+      "name_en": "The First Forge",
+      "name_fa": "نخستین آهنگری",
+      "kind_en": "Cradle of Iron · Birth of Craft",
+      "kind_fa": "گاهوارهٔ آهن · زایشِ صنعت",
+      "summary_en": "Hushang turns the gift of fire on the black ore of the mountain. The first hammer-strike rings out. It will echo until Kaveh raises his apron in chapter 5.",
+      "summary_fa": "هوشنگ هدیه‌ی آتش را به کانِ سیاهِ کوه می‌تاباند. نخستین ضربه‌ی چکش طنین می‌افکند. این طنین تا آنگاه که کاوه در دفترِ پنجم پیش‌بندش را برافرازد، ادامه خواهد داشت.",
+      "image": "/assets/images/locations/first-forge-location.png",
+      "unlocked": false,
+      "unlock_via": "scene:chapter-complete"
+    },
+    {
+      "slug": "demon-forest",
+      "name_en": "Demon Forest",
+      "name_fa": "جنگلِ دیوان",
+      "kind_en": "Site of the Final Battle",
+      "kind_fa": "جایگاهِ نبردِ پایانی",
+      "summary_en": "Seen in chapter 1 as the edge of the dark. Here it becomes the site of the Black Div's defeat — the forest loses its master, and some of the shadow lifts.",
+      "summary_fa": "در دفترِ اول به‌عنوانِ کرانه‌ی تاریکی دیده شد. این‌جا جایگاهِ شکستِ دیوِ سیاه می‌گردد — جنگل اربابش را از دست می‌دهد و اندکی از سایه برمی‌خیزد.",
+      "image": "/assets/images/locations/demon-forest-location.png",
+      "unlocked": true
+    },
+    {
+      "slug": "ancient-pars",
+      "name_en": "Ancient Pars",
+      "name_fa": "پارسِ کهن",
+      "kind_en": "The Land That Learns",
+      "kind_fa": "سرزمینی که می‌آموزد",
+      "summary_en": "In Hushang's age, Pars is no longer only a survivor's land. It becomes a builder's land: fields cut by channels, mountains cut by forges, nights lit by fire.",
+      "summary_fa": "در عصرِ هوشنگ، پارس دیگر تنها سرزمینِ بقا نیست. سرزمینِ سازنده می‌شود: مزارعی که جوی‌ها رگ‌رگِ آن‌اند، کوه‌هایی که آهنگری‌ها در آن‌هاست، شب‌هایی که آتش روشنشان می‌کند.",
+      "image": null,
+      "unlocked": true
+    }
+  ],
+  "battle": {
+    "boss_slug": "black-div",
+    "boss_name_en": "The Black Div",
+    "boss_name_fa": "دیوِ سیاه",
+    "boss_image": "/assets/images/enemies/black-div-enemy.png",
+    "boss_master_slug": "ahriman",
+    "boss_master_image": "/assets/images/enemies/ahriman-boss.png",
+    "intro_en": "Siamak's debt is still open. Hushang has grown strong enough — if the chapter is finished and the army is ready, the forest must answer for what it took.",
+    "intro_fa": "وامِ سیامک هنوز باز است. هوشنگ به اندازه‌ی کافی نیرومند شده — اگر دفتر به پایان رسیده و سپاه آماده باشد، جنگل باید پاسخِ آنچه گرفت را بدهد.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 8,
+        "label_en": "Reach Hushang LVL 8",
+        "label_fa": "رسیدن به سطحِ ۸ هوشنگ"
+      },
+      {
+        "id": "fire-rune",
+        "kind": "item",
+        "target": "fire-rune",
+        "label_en": "Carry the Fire Rune",
+        "label_fa": "حملِ نشانِ آتش"
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "hushang",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر"
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "leopard-skin-lineage",
+      "category": "artifact",
+      "title_en": "The Leopard-Skin Lineage",
+      "title_fa": "سلسله‌ی پوستِ پلنگ",
+      "summary_en": "Keyumars wore it first. Hushang inherits it. What was once a single king's garment becomes the sign of a dynasty.",
+      "summary_fa": "کیومرث نخستین بار پوشید. هوشنگ به ارث می‌برد. آنچه روزی جامه‌ی یک شاه بود، نشانِ سلسله‌ای می‌گردد.",
+      "image": "/assets/images/heroes/keyumars-hero.png",
+      "unlock_via": "scene:young-king"
+    },
+    {
+      "id": "hushang-army-codex",
+      "category": "event",
+      "title_en": "The Army of Light",
+      "title_fa": "سپاهِ روشنایی",
+      "summary_en": "Ferdowsi's army of light is not only human: eagles fly above, lions run at the flanks. In the Shahnameh, the natural world sides with justice.",
+      "summary_fa": "سپاهِ روشناییِ فردوسی تنها از انسان‌ها نیست: عقاب‌ها بالای سر پر می‌کشند، شیران در پهلوها می‌تازند. در شاهنامه، جهانِ طبیعی طرفِ عدالت است.",
+      "image": null,
+      "unlock_via": "scene:army-of-light"
+    },
+    {
+      "id": "black-div-codex",
+      "category": "creature",
+      "title_en": "The Black Div — Final Account",
+      "title_fa": "دیوِ سیاه — حسابِ پایانی",
+      "summary_en": "He killed Siamak in chapter 1. He falls to Hushang here. The Shahnameh does not let darkness have the last word — but it does not let it go cheaply either.",
+      "summary_fa": "در دفترِ اول سیامک را کشت. این‌جا به‌دستِ هوشنگ فرو می‌افتد. شاهنامه اجازه نمی‌دهد تاریکی آخرین حرف را بزند — اما آن را ارزان هم نمی‌فروشد.",
+      "image": "/assets/images/enemies/black-div-enemy.png",
+      "unlock_via": "scene:into-the-demon-forest"
+    },
+    {
+      "id": "vengeance-complete",
+      "category": "event",
+      "title_en": "Vengeance Complete",
+      "title_fa": "انتقام گرفته شد",
+      "summary_en": "The Shahnameh's first debt is paid. Siamak fell; the Black Div rose. Hushang fought; the Black Div fell. The balance of the chronicle tips back toward light.",
+      "summary_fa": "نخستین وامِ شاهنامه ادا شد. سیامک افتاد؛ دیوِ سیاه برخاست. هوشنگ جنگید؛ دیوِ سیاه افتاد. ترازوی این تاریخ دوباره به‌سوی روشنایی خم می‌شود.",
+      "image": null,
+      "unlock_via": "scene:fall-of-the-black-div"
+    },
+    {
+      "id": "first-plough",
+      "category": "artifact",
+      "title_en": "The First Plough",
+      "title_fa": "نخستین گاوآهن",
+      "summary_en": "Hushang is the first to cut the earth with iron. The field remembers the shape of the plough for a thousand generations.",
+      "summary_fa": "هوشنگ نخستین کسی است که با آهن زمین را می‌شکافد. مزرعه شکلِ گاوآهن را هزار نسل به‌یاد می‌سپارد.",
+      "image": null,
+      "unlock_via": "scene:a-world-reborn"
+    },
+    {
+      "id": "first-channel",
+      "category": "concept",
+      "title_en": "The First Water Channel",
+      "title_fa": "نخستین جوی",
+      "summary_en": "Before Hushang, water went where the mountain sent it. After him, it goes where the people need it. This is the first act of engineering in the chronicle.",
+      "summary_fa": "پیش از هوشنگ، آب به هر سو که کوه می‌فرستادش می‌رفت. پس از او، به هر سو که مردم نیاز دارند می‌رود. این نخستین عملِ مهندسی در این تاریخ است.",
+      "image": null,
+      "unlock_via": "scene:a-world-reborn"
+    },
+    {
+      "id": "serpent-of-the-pass",
+      "category": "creature",
+      "title_en": "The Serpent of the Pass",
+      "title_fa": "افعیِ گذرگاه",
+      "summary_en": "Ferdowsi names no name for it. A black serpent on a mountain road. The stone thrown at it misses — but its miss lights the world.",
+      "summary_fa": "فردوسی نامی برایش نمی‌نهد. افعی‌ای سیاه بر جاده‌ای کوهستانی. سنگی که به‌سویش پرتاب می‌شود خطا می‌رود — اما خطایش جهان را روشن می‌کند.",
+      "image": null,
+      "unlock_via": "scene:serpent-in-the-pass"
+    },
+    {
+      "id": "sade-festival",
+      "category": "event",
+      "title_en": "The Festival of Sade",
+      "title_fa": "جشنِ سده",
+      "summary_en": "Hushang names the night of fire's discovery Sade — and it is still celebrated in Iran. The oldest festival in the chronicle, born from a missed throw.",
+      "summary_fa": "هوشنگ شبِ کشفِ آتش را سده می‌نامد — و هنوز در ایران برگزار می‌شود. کهن‌ترین جشنِ این تاریخ، از یک پرتابِ خطا زاده شد.",
+      "image": null,
+      "unlock_via": "scene:fire-is-born"
+    },
+    {
+      "id": "fire-gift",
+      "category": "concept",
+      "title_en": "Fire — The Accidental Gift",
+      "title_fa": "آتش — هدیه‌ی اتفاقی",
+      "summary_en": "The Shahnameh's fire is not stolen from the gods like in Greek myth. It is found by accident in a stone thrown in anger. Ferdowsi's world is more human than that: gifts arrive sideways.",
+      "summary_fa": "آتشِ شاهنامه برخلاف اسطوره‌ی یونانی از خدایان دزدیده نمی‌شود. از روی تصادف در سنگی پرتاب‌شده از سرِ خشم یافت می‌شود. جهانِ فردوسی انسانی‌تر از آن است: هدیه‌ها کج‌وپیچ می‌رسند.",
+      "image": null,
+      "unlock_via": "scene:fire-is-born"
+    },
+    {
+      "id": "first-iron-forge",
+      "category": "place",
+      "title_en": "The First Forge",
+      "title_fa": "نخستین آهنگری",
+      "summary_en": "Iron hammered by Hushang's people on the slopes of Pars. What Kaveh the blacksmith will do in chapter 5 has its root in this moment.",
+      "summary_fa": "آهنی که مردمانِ هوشنگ بر دامنه‌های پارس کوبیدند. آنچه کاوه‌ی آهنگر در دفترِ پنجم انجام خواهد داد، ریشه در این لحظه دارد.",
+      "image": "/assets/images/locations/first-forge-location.png",
+      "unlock_via": "scene:chapter-complete"
+    },
+    {
+      "id": "tahmuras-foreshadow",
+      "category": "person",
+      "title_en": "Tahmuras — The Next King",
+      "title_fa": "تهمورث — شاهِ آینده",
+      "summary_en": "He watches his father's forge and counts the demons that fled into the hills. He is making a list. In the next chapter, he will use it.",
+      "summary_fa": "آهنگریِ پدرش را می‌نگرد و دیوانی را که به تپه‌ها گریختند می‌شمارد. فهرست می‌سازد. در دفترِ آینده، از آن بهره خواهد گرفت.",
+      "image": null,
+      "unlock_via": "scene:chapter-complete"
+    }
+  ]
+}
