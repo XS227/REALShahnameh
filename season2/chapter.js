@@ -377,7 +377,12 @@
         } catch { return false; }
       }
       if (r.kind === "character") return unlockedChars.has(r.target);
-      if (r.kind === "item")      return false;                    // future inventory system
+      if (r.kind === "item") {
+        try {
+          const items = JSON.parse(localStorage.getItem("real_items_v1") || "{}");
+          return !!items[r.target];
+        } catch { return false; }
+      }
       if (r.kind === "quiz")      return progress.quiz && progress.quiz.done;
       return false;
     };
@@ -394,11 +399,15 @@
       const met = reqMet(r);
       if (met) metCount++;
       const pill = tr(pillKey[r.kind] || "req_goal");
+      const hint = !met ? pick(r, "hint") : "";
+      const hasHint = !!hint;
       return `
-        <li class="req-row ${met ? "done" : ""}">
+        <li class="req-row ${met ? "done" : ""} ${hasHint ? "has-hint" : ""}"
+            ${hasHint ? 'role="button" tabindex="0"' : ""}>
           <span class="req-mark">${met ? "✓" : "·"}</span>
           <span class="req-label">${escapeHtml(pick(r, "label"))}</span>
           <span class="req-pill">${escapeHtml(pill)}</span>
+          ${hasHint ? `<p class="req-hint-body">${escapeHtml(hint)}</p>` : ""}
         </li>`;
     }).join("");
 
@@ -461,6 +470,23 @@
       });
     }
 
+    /* Clickable hint rows — toggle hint body on tap */
+    $$(".req-row.has-hint", host).forEach((row) => {
+      row.addEventListener("click", () => {
+        const isOpen = row.classList.toggle("hint-open");
+        haptic("light");
+        if (isOpen) {
+          /* close any other open hint rows */
+          $$(".req-row.has-hint.hint-open", host)
+            .filter(r => r !== row)
+            .forEach(r => r.classList.remove("hint-open"));
+        }
+      });
+      row.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); row.click(); }
+      });
+    });
+
     const progEl = $("[data-req-progress]");
     if (progEl) progEl.textContent = `${fmtNum(metCount)} / ${fmtNum(reqs.length)}`;
   };
@@ -496,6 +522,15 @@
         }, { xp: 0, real: 0 });
         // Persist chapter completion so learn.html can reflect done state.
         try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
+        // Grant any items that are awarded on quiz completion.
+        try {
+          const items = JSON.parse(localStorage.getItem("real_items_v1") || "{}");
+          let changed = false;
+          ((lore && lore.battle && lore.battle.requirements) || [])
+            .filter(r => r.kind === "item" && r.grant_on === "quiz" && !items[r.target])
+            .forEach(r => { items[r.target] = true; changed = true; });
+          if (changed) localStorage.setItem("real_items_v1", JSON.stringify(items));
+        } catch {}
         host.innerHTML = `
           <div class="quiz-complete">
             <div class="badge">🏆</div>

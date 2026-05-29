@@ -566,6 +566,30 @@
   border-color: rgba(74, 216, 166, .35);
 }
 
+/* Hint system */
+.req-row.has-hint { cursor: pointer; user-select: none; }
+.req-row.has-hint:active { background: rgba(255,255,255,.05); }
+.req-row.has-hint .req-mark::after {
+  content: " ›";
+  font-size: 10px;
+  color: var(--muted, #6c7287);
+  transition: transform .2s;
+}
+.req-row.has-hint.hint-open .req-mark::after { content: " ›"; transform: rotate(90deg); display: inline-block; }
+.req-hint-body {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted, #6c7287);
+  background: rgba(244,197,107,.06);
+  border: 1px solid rgba(244,197,107,.2);
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: none;
+}
+.req-row.hint-open .req-hint-body { display: block; }
+
 .battle-cta {
   width: 100%;
   padding: 12px;

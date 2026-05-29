@@ -300,28 +300,45 @@
         "kind": "level",
         "target": 5,
         "label_en": "Reach Keyumars LVL 5",
-        "label_fa": "رسیدن به سطحِ ۵ کیومرث"
+        "label_fa": "رسیدن به سطحِ ۵ کیومرث",
+        "label_tg": "Расидан ба сатҳи 5 Каюмарс",
+        "hint_en": "Upgrade Keyumars in the Hero Collection tab. Each upgrade costs REAL tokens — earn more by tapping and completing scenes.",
+        "hint_fa": "کیومرث را در بخش مجموعه‌ی قهرمانان ارتقا دهید. هر ارتقا به توکن REAL نیاز دارد — با ضربه زدن و تماشای صحنه‌ها بیشتر کسب کنید.",
+        "hint_tg": "Каюмарсро дар бахши Қаҳрамонон баланд баред. Ҳар баланд бардоштан ба токени REAL ниёз дорад — бо зарба задан ва тамошои саҳнаҳо бештар ба даст оред."
       },
       {
         "id": "siamak",
         "kind": "character",
         "target": "siamak",
         "label_en": "Recruit Siamak",
-        "label_fa": "همراه‌کردنِ سیامک"
+        "label_fa": "همراه‌کردنِ سیامک",
+        "label_tg": "Сиёмакро ҷалб кунед",
+        "hint_en": "Buy Siamak in the Hero Collection. He becomes available after Chapter 1 is unlocked and you own Keyumars Lv.1.",
+        "hint_fa": "سیامک را در بخش مجموعه‌ی قهرمانان بخرید. پس از باز شدن فصل ۱ و داشتن کیومرث سطح ۱ در دسترس است.",
+        "hint_tg": "Сиёмакро дар бахши Қаҳрамонон харед. Баъд аз кушода шудани Боби 1 ва доштани Каюмарси сатҳи 1 дастрас аст."
       },
       {
         "id": "fire-rune",
         "kind": "item",
         "target": "fire-rune",
+        "grant_on": "quiz",
         "label_en": "Acquire the Fire Rune",
-        "label_fa": "به‌دست‌آوردنِ نشانِ آتش"
+        "label_fa": "به‌دست‌آوردنِ نشانِ آتش",
+        "label_tg": "Нишони оташро ба даст оред",
+        "hint_en": "Awarded automatically when you complete the Chapter 1 quiz. Finish all quiz questions to claim it.",
+        "hint_fa": "با تکمیل آزمون فصل ۱ به‌طور خودکار اعطا می‌شود. همه‌ی سؤالات آزمون را پاسخ دهید.",
+        "hint_tg": "Пас аз иҷрои имтиҳони Боби 1 ба таври худкор дода мешавад. Ҳама суолҳои имтиҳонро ҷавоб диҳед."
       },
       {
         "id": "quiz",
         "kind": "quiz",
         "target": "keyumars",
         "label_en": "Pass the chapter quiz",
-        "label_fa": "گذراندنِ آزمونِ دفتر"
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section and answer all questions correctly. You can retry wrong answers.",
+        "hint_fa": "به بخش آزمون بروید و تمام سؤالات را به درستی پاسخ دهید. می‌توانید پاسخ‌های اشتباه را دوباره امتحان کنید.",
+        "hint_tg": "Ба бахши Имтиҳон равед ва ба ҳама суолҳо дуруст ҷавоб диҳед. Шумо метавонед ҷавобҳои нодурустро дубора кӯшиш кунед."
       }
     ]
   },
