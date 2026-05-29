@@ -261,7 +261,7 @@
 
     <!-- Season 2 cinematic banner -->
     <div class="home-season-banner">
-      <div class="banner-bg" aria-hidden="true"></div>
+      <div class="banner-bg" data-banner-bg aria-hidden="true"></div>
       <div class="banner-stars" aria-hidden="true"></div>
       <div class="banner-glow" aria-hidden="true"></div>
       <div class="banner-body">
@@ -280,14 +280,15 @@
     <div class="journey-card">
       <div class="journey-thumb">
         <img src="/assets/images/chapters/chapter-1-keyumars-cover.png" alt="Chapter 1"
-             onerror="this.replaceWith(document.createTextNode('👑'))">
+             data-journey-thumb
+             onerror="this.style.display='none'">
       </div>
       <div class="journey-body">
-        <div class="journey-label" data-i18n="journey_ch_label_tpl">Chapter 1 · Active</div>
-        <h4 data-i18n="ch1_title">Keyumars — The First King</h4>
-        <div class="journey-sub" data-i18n="journey_ch1_sub">8 scenes · Quiz · 200 XP reward</div>
+        <div class="journey-label" data-journey-label>Chapter 1 · Active</div>
+        <h4 data-journey-title>Keyumars — The First King</h4>
+        <div class="journey-sub" data-journey-sub>8 scenes · Quiz · 200 XP reward</div>
       </div>
-      <a href="chapter.html?slug=keyumars" class="journey-continue" data-i18n="continue_btn">Continue ›</a>
+      <a href="chapter.html?slug=keyumars" class="journey-continue" data-journey-link data-i18n="continue_btn">Continue ›</a>
     </div>
 
     <!-- Chronicle progress -->
@@ -304,16 +305,16 @@
         <span class="fill" data-chapters-fill style="width:2%;"></span>
       </div>
       <div class="chapter-dots" style="margin-top:10px;" aria-hidden="true">
-        <div class="chapter-dot active">1</div>
-        <div class="chapter-dot">2</div>
-        <div class="chapter-dot">3</div>
-        <div class="chapter-dot">4</div>
-        <div class="chapter-dot">5</div>
-        <div class="chapter-dot">6</div>
-        <div class="chapter-dot">7</div>
-        <div class="chapter-dot">8</div>
-        <div class="chapter-dot">9</div>
-        <div class="chapter-dot" style="font-size:8px;">10</div>
+        <div class="chapter-dot active" data-ch="1">1</div>
+        <div class="chapter-dot" data-ch="2">2</div>
+        <div class="chapter-dot" data-ch="3">3</div>
+        <div class="chapter-dot" data-ch="4">4</div>
+        <div class="chapter-dot" data-ch="5">5</div>
+        <div class="chapter-dot" data-ch="6">6</div>
+        <div class="chapter-dot" data-ch="7">7</div>
+        <div class="chapter-dot" data-ch="8">8</div>
+        <div class="chapter-dot" data-ch="9">9</div>
+        <div class="chapter-dot" data-ch="10" style="font-size:8px;">10</div>
         <div class="chapter-dot" style="opacity:.4; font-size:8px;">···</div>
         <div class="chapter-dot" style="opacity:.4; font-size:8px;">50</div>
       </div>
@@ -409,15 +410,15 @@
 
   <div class="toast" data-toast></div>
   <script src="app.js?v=202605272200"></script>
-  <script src="i18n/en.js?v=202605272200"></script>
-  <script src="i18n/fa.js?v=202605272200"></script>
-  <script src="i18n/tg.js?v=202605272200"></script>
+  <script src="i18n/en.js?v=202605290007"></script>
+  <script src="i18n/fa.js?v=202605290007"></script>
+  <script src="i18n/tg.js?v=202605290007"></script>
   <script src="i18n.js?v=202605272200"></script>
   <script src="resources.js?v=202605272200"></script>
   <script src="utils.js?v=202605272200"></script>
   <script src="audio.js?v=202605272200"></script>
   <script src="cinematic.js?v=202605272200"></script>
   <script src="sync.js?v=202605272200"></script>
-  <script src="home.js?v=202605272200"></script>
+  <script src="home.js?v=202605290007"></script>
 </body>
 </html>

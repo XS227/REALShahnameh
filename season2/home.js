@@ -13,13 +13,117 @@
   const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
   const locF = (obj, field) => (window.RealI18N && window.RealI18N.locField)
     ? window.RealI18N.locField(obj, field) : (obj && obj[field] != null ? obj[field] : "");
+  const isFa   = () => window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
+  const fmtNum = (n) => (window.RealI18N && window.RealI18N.formatNumber)
+    ? window.RealI18N.formatNumber(n) : String(n);
 
   const escapeHtml = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, m => (
     { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[m]
   ));
   const escapeAttr = (s) => escapeHtml(s);
 
-  /* Map rarity value (which may be "Legendary" or "legend") to a t() key */
+  /* ── Chapter progression state ─────────────────────────────────────────── */
+  /* Ordered list of chapter slugs as shipped — extend when new chapters go live */
+  const CHAPTER_SLUGS = ["keyumars", "hushang", "tahmuras", "jamshid", "zahhak"];
+
+  /* Minimal fallback data so the journey card renders immediately from localStorage */
+  const CHAPTER_FALLBACK = {
+    keyumars: { num: 1, title_en: "Keyumars — The First King",     title_fa: "کیومرث — نخستین شاه",     img: "/assets/images/heroes/keyumars-hero.png", xp: 200 },
+    hushang:  { num: 2, title_en: "Hushang — The Spark of Fire",   title_fa: "هوشنگ — جرقه‌ی آتش",      img: "/assets/images/heroes/hushang-hero.png",  xp: 250 },
+    tahmuras: { num: 3, title_en: "Tahmuras — Binder of Demons",   title_fa: "تهمورث — دیوبند",          img: "/season2/uploads/chapters/tahmuras.png",  xp: 300 },
+    jamshid:  { num: 4, title_en: "Jamshid — The Golden Age",      title_fa: "جمشید — عصر طلایی",        img: "/season2/uploads/chapters/jamshid.png",   xp: 350 },
+    zahhak:   { num: 5, title_en: "Zahhak — Reign of Serpents",    title_fa: "ضحاک — دوران اژدها",       img: "/season2/uploads/chapters/zahhak.png",    xp: 400 },
+  };
+
+  const lsRead  = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+  const isDone  = (slug) => lsRead(`real_chapter_done_${slug}`) === "1";
+  const getDoneCount = () => CHAPTER_SLUGS.filter(isDone).length;
+
+  const getActiveChapter = () => {
+    for (const slug of CHAPTER_SLUGS) {
+      if (!isDone(slug)) return slug;
+    }
+    return CHAPTER_SLUGS[CHAPTER_SLUGS.length - 1]; // all unlocked — show last
+  };
+
+  /* Module-level cache so pageshow and storage listeners can re-render */
+  let _catalogChapters = null;
+
+  /* ── Journey card + chronicle progress updater ─────────────────────────── */
+  const updateJourneyCard = (catalogChapters) => {
+    if (catalogChapters) _catalogChapters = catalogChapters;
+    const chapters   = _catalogChapters;
+    const activeSlug = getActiveChapter();
+    const doneCount  = getDoneCount();
+    const chNum      = (CHAPTER_SLUGS.indexOf(activeSlug) + 1) || 1;
+    const fa         = isFa();
+
+    const cat = (chapters || []).find(c => c.slug === activeSlug);
+    const fb  = CHAPTER_FALLBACK[activeSlug] || {};
+
+    /* Localized title */
+    const title = cat
+      ? (fa ? (cat.title_fa || cat.title) : cat.title)
+      : (fa ? fb.title_fa : fb.title_en) || activeSlug;
+
+    /* Best image: catalog image_url → uploads path → fallback asset */
+    const imgSrc = (cat && cat.image_url)
+      || fb.img
+      || `/season2/uploads/chapters/${activeSlug}.png`;
+
+    const xp = (cat && cat.rewards && cat.rewards.xp) || fb.xp || 0;
+
+    /* -- Banner background -- */
+    const bannerBg = $('[data-banner-bg]');
+    if (bannerBg) bannerBg.style.backgroundImage = `url('${imgSrc}')`;
+
+    /* -- Journey thumb -- */
+    const thumbEl = $('[data-journey-thumb]');
+    if (thumbEl) { thumbEl.src = imgSrc; thumbEl.alt = title; }
+
+    /* -- Label: "Chapter N · Active" or "Chapter N · Completed" -- */
+    const labelEl = $('[data-journey-label]');
+    if (labelEl) {
+      const nFmt = fa ? fmtNum(chNum) : chNum;
+      labelEl.textContent = isDone(activeSlug)
+        ? `${t('journey_active_tpl', { n: nFmt }).replace('Active', t('chapter_completed') || 'Done')}`
+        : t('journey_active_tpl', { n: nFmt });
+    }
+
+    /* -- Title -- */
+    const titleEl = $('[data-journey-title]');
+    if (titleEl) titleEl.textContent = title;
+
+    /* -- Sub-line -- */
+    const subEl = $('[data-journey-sub]');
+    if (subEl && xp) {
+      const xpFmt = fa ? fmtNum(xp) : xp;
+      subEl.textContent = `+${xpFmt} XP${(cat && cat.quiz_count) || true ? ' · Quiz' : ''}`;
+    }
+
+    /* -- CTA link -- */
+    const linkEl = $('[data-journey-link]');
+    if (linkEl) linkEl.href = `chapter.html?slug=${encodeURIComponent(activeSlug)}`;
+
+    /* -- Chronicle progress bar + counters -- */
+    const TOTAL = 50;
+    const pct   = Math.max(1, Math.round((doneCount / TOTAL) * 100));
+    const pctEl  = $('[data-chapters-pct]');
+    const doneEl = $('[data-chapters-done]');
+    const fillEl = $('[data-chapters-fill]');
+    if (pctEl)  pctEl.textContent  = fa ? fmtNum(pct) + '%' : pct + '%';
+    if (doneEl) doneEl.textContent = t('home_chs_done_tpl', { done: fmtNum(doneCount), total: fmtNum(TOTAL) });
+    if (fillEl) fillEl.style.width = pct + '%';
+
+    /* -- Chapter dots -- */
+    document.querySelectorAll('.chapter-dot[data-ch]').forEach(dot => {
+      const n = parseInt(dot.dataset.ch, 10);
+      dot.classList.toggle('done',   n <= doneCount);
+      dot.classList.toggle('active', n === chNum && !isDone(activeSlug));
+    });
+  };
+
+  /* ── Rarity helpers ────────────────────────────────────────────────────── */
   const rarityLabel = (r) => {
     const x = String(r || "").toLowerCase();
     const key = x === "legendary" ? "rarity_legend" : "rarity_" + x;
@@ -36,15 +140,13 @@
     return "";
   };
 
-  /* Build the inner HTML for a hero portrait.
-     Priority: explicit image_url → assets path → uploads .png → uploads .jpg → emoji */
+  /* ── Hero image helpers ──────────────────────────────────────────────── */
   const heroPortraitHtml = (h) => {
     if (h.image_url) {
       return `<img src="${escapeAttr(h.image_url)}" alt="${escapeAttr(h.name)}" loading="lazy">`;
     }
     const slug    = h.slug || "";
     const slugEnc = encodeURIComponent(slug);
-    // Collection cards live in /assets/images/heroes/<slug>-hero.png
     const asset = `/assets/images/heroes/${slugEnc}-hero.png`;
     const png   = `/season2/uploads/heroes/${slugEnc}.png`;
     const jpg   = `/season2/uploads/heroes/${slugEnc}.jpg`;
@@ -53,8 +155,6 @@
          + `onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='${escapeAttr(png)}';}else if(!this.dataset.tried2){this.dataset.tried2='1';this.src='${escapeAttr(jpg)}';}else{this.outerHTML='${emo}';}">`;
   };
 
-  /* Build the inner HTML for a chapter banner.
-     Priority: explicit image_url → auto .png → auto .jpg → 📜 emoji */
   const chapterBannerHtml = (c) => {
     if (c.image_url) {
       return `<img src="${escapeAttr(c.image_url)}" alt="${escapeAttr(c.title)}" loading="lazy">`;
@@ -77,16 +177,15 @@
     "royal-court": "⚜", fravahar: "🦅",
   })[slug] || "⚔";
 
-  /* Convert a hero_id slug to a readable display name when catalog data is missing */
   const slugToName = (slug) => slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 
+  /* ── Catalog renders (chapter strip / hero strip) ───────────────────── */
   const renderHeroes = (heroes) => {
     if (!heroHost) return;
     if (!Array.isArray(heroes) || heroes.length === 0) {
       heroHost.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">${t("home_no_heroes")}</div>`;
       return;
     }
-    // Top 8 by power (or active first).
     const list = heroes
       .filter(h => h.status !== "locked")
       .slice()
@@ -129,53 +228,53 @@
     }).join("");
   };
 
-  /* Day X of journey — match learn.html behaviour. */
   const renderJourneyProgress = (totalDays) => {
     const STARTED_KEY = "real_journey_started_at";
-    let started = parseInt(localStorage.getItem(STARTED_KEY) || "0", 10);
+    let started = parseInt(lsRead(STARTED_KEY) || "0", 10);
     if (!started) {
       started = Date.now();
       try { localStorage.setItem(STARTED_KEY, String(started)); } catch {}
     }
     const dayNum = Math.max(1, Math.floor((Date.now() - started) / 86400e3) + 1);
-    const dayEl  = document.querySelector("[data-journey-day-num]");
-    const fillEl = document.querySelector("[data-journey-fill]");
-    if (dayEl)  dayEl.textContent = (window.RealI18N && window.RealI18N.formatNumber)
-      ? window.RealI18N.formatNumber(dayNum) : dayNum;
+    const dayEl  = $("[data-journey-day-num]");
+    const fillEl = $("[data-journey-fill]");
+    if (dayEl)  dayEl.textContent = fmtNum(dayNum);
     if (fillEl) fillEl.style.width = Math.max(0.4, Math.min(100, (dayNum / (totalDays || 270)) * 100)) + "%";
   };
 
-  /* Treasury HUD — five resources (Farr / Zar / Gems / XP) with REAL as a
-     quiet ecosystem row beneath. Filled from Player state via resources.js. */
+  /* ── Treasury ────────────────────────────────────────────────────────── */
   const mountTreasury = () => {
-    const host = document.querySelector("[data-resource-hud]");
+    const host = $("[data-resource-hud]");
     if (!host || !window.RealResources) return;
     window.RealResources.mountHud(host);
-    // mountHud injects fresh DOM nodes whose .r-cell-lbl carry the localized
-    // resource names. Re-apply locale so any data-i18n inside the cells
-    // (currently none, but future cells may add some) get picked up.
-    if (window.RealI18N && window.RealI18N.applyLocale) {
-      window.RealI18N.applyLocale();
-    }
+    if (window.RealI18N && window.RealI18N.applyLocale) window.RealI18N.applyLocale();
   };
+
+  const refreshTreasury = () => {
+    const host = $("[data-resource-hud]");
+    if (host && window.RealResources) window.RealResources.refreshHud(host);
+    wireTreasuryModals();
+  };
+
+  /* Expose globally so tap.js / heroes.js can call window.updateDashboardTreasury() */
+  window.updateDashboardTreasury = refreshTreasury;
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", mountTreasury);
   } else {
     mountTreasury();
   }
 
-  /* ── Helper: today as YYYY-MM-DD ── */
+  /* ── Profile hydration ───────────────────────────────────────────────── */
   const todayKey = () => new Date().toISOString().slice(0, 10);
 
-  /* ── Profile hydration: Telegram name / photo + real level ── */
   const hydrateProfile = () => {
     const tgUser = window.Telegram && window.Telegram.WebApp
       && window.Telegram.WebApp.initDataUnsafe
       && window.Telegram.WebApp.initDataUnsafe.user;
     const player = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
 
-    // Real name from Telegram; fall back to stored username or path title
-    const nameEl = document.querySelector("[data-player-name]");
+    const nameEl = $("[data-player-name]");
     if (nameEl) {
       let name = "";
       if (tgUser && tgUser.first_name) {
@@ -186,36 +285,31 @@
       if (name) nameEl.textContent = name;
     }
 
-    // Avatar: Telegram photo_url → cached server URL → gender default
-    const avatarImg = document.querySelector("[data-avatar-img]");
+    const avatarImg = $("[data-avatar-img]");
     if (avatarImg) {
-      const fallback = player.path === "heroine"
+      const fallback   = player.path === "heroine"
         ? "/assets/images/avatars/default-female-avatar.png"
         : "/assets/images/avatars/default-male-avatar.png";
-      const cachedPic = (() => { try { return localStorage.getItem("real_profile_pic") || ""; } catch { return ""; } })();
-      const photoSrc  = (tgUser && tgUser.photo_url) || cachedPic || "";
+      const cachedPic  = (() => { try { return lsRead("real_profile_pic") || ""; } catch { return ""; } })();
+      const photoSrc   = (tgUser && tgUser.photo_url) || cachedPic || "";
       avatarImg.onerror = () => { avatarImg.onerror = null; avatarImg.src = fallback; };
       avatarImg.src = photoSrc || fallback;
     }
 
-    // VIP level: 1000 XP per level
-    const vipLv = Math.floor((player.xp || 0) / 1000);
-    const levelEl = document.querySelector("[data-level]");
+    const vipLv   = Math.floor((player.xp || 0) / 1000);
+    const levelEl = $("[data-level]");
     if (levelEl) levelEl.textContent = vipLv;
-    const vipPill = document.querySelector("[data-vip-level]");
+    const vipPill = $("[data-vip-level]");
     if (vipPill) {
-      const fmtVip = (window.RealI18N && window.RealI18N.formatNumber) ? window.RealI18N.formatNumber : String;
-      vipPill.textContent = vipLv === 0 ? "VIP" : `VIP ${fmtVip(vipLv)}`;
+      vipPill.textContent = vipLv === 0 ? "VIP" : `VIP ${fmtNum(vipLv)}`;
     }
 
     hydrateBadge(vipLv);
   };
 
-  /* ── Daily quest hydration ── */
+  /* ── Daily quest hydration ───────────────────────────────────────────── */
   const TAP_GOAL = 200;
-  const lsRead = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
 
-  /* su = server user object from RealSync.ready(); if omitted falls back to localStorage */
   const hydrateQuests = (su) => {
     const dk = todayKey();
     const states = {
@@ -228,7 +322,7 @@
     states.tap = tapsToday >= TAP_GOAL;
 
     Object.entries(states).forEach(([key, done]) => {
-      const row = document.querySelector('[data-quest="' + key + '"]');
+      const row = document.querySelector(`[data-quest="${key}"]`);
       if (!row) return;
       row.classList.toggle("done", done);
       const check = row.querySelector(".quest-check");
@@ -238,38 +332,31 @@
       }
     });
 
-    // Tap count display
-    const tapCount = document.querySelector("[data-daily-taps]");
-    if (tapCount) tapCount.textContent = Math.min(tapsToday, TAP_GOAL);
+    const tapCount = $("[data-daily-taps]");
+    if (tapCount) tapCount.textContent = fmtNum(Math.min(tapsToday, TAP_GOAL));
   };
 
-  /* ── Treasury refresh: push live Player balances into the HUD ── */
-  const refreshTreasury = () => {
-    const host = document.querySelector("[data-resource-hud]");
-    if (host && window.RealResources) window.RealResources.refreshHud(host);
-  };
-
-  /* ── Medallion badge ── */
+  /* ── Medallion badge ─────────────────────────────────────────────────── */
   const BADGE_TIERS = [
-    { min: 50, icon: "🌟", title: "Legend" },
-    { min: 20, icon: "👑", title: "King"   },
+    { min: 50, icon: "🌟", title: "Legend"    },
+    { min: 20, icon: "👑", title: "King"      },
     { min: 10, icon: "⚔",  title: "Champion" },
-    { min: 5,  icon: "🛡",  title: "Warrior" },
-    { min: 0,  icon: "⭐",  title: "Seeker" },
+    { min: 5,  icon: "🛡",  title: "Warrior"  },
+    { min: 0,  icon: "⭐",  title: "Seeker"   },
   ];
 
   const hydrateBadge = (level) => {
-    const el = document.querySelector("[data-player-badge]");
+    const el = $("[data-player-badge]");
     if (!el) return;
-    const lv = Number(level) || 0;
-    const tier = BADGE_TIERS.find(t => lv >= t.min) || BADGE_TIERS[BADGE_TIERS.length - 1];
+    const lv   = Number(level) || 0;
+    const tier = BADGE_TIERS.find(tb => lv >= tb.min) || BADGE_TIERS[BADGE_TIERS.length - 1];
     el.textContent = tier.icon;
-    el.title = tier.title;
+    el.title       = tier.title;
   };
 
-  /* ── Hero Spotlight (3 cards) ── */
+  /* ── Hero Spotlight ──────────────────────────────────────────────────── */
   const renderHeroSpotlight = (catalogHeroes) => {
-    const host = document.querySelector("[data-hero-spotlight]");
+    const host = $("[data-hero-spotlight]");
     if (!host) return;
 
     const owned = (window.RealSync && window.RealSync.getOwnedHeroes)
@@ -280,11 +367,9 @@
       return;
     }
 
-    /* Build a catalog lookup by slug for enrichment (catalog may be incomplete) */
     const catMap = {};
     (catalogHeroes || []).forEach(h => { if (h.slug) catMap[h.slug] = h; });
 
-    /* Persian slug→name fallback when catalog entry is absent */
     const SLUG_FA = {
       keyumars: "کیومرث", siamak: "سیامک", hushang: "هوشنگ", ahriman: "اهریمن",
       "black-div": "دیو سیاه", "black-demon": "دیو تاریکی",
@@ -295,23 +380,19 @@
       "first-calendar": "اولین تقویم", "discovery-of-fire": "کشف آتش",
       rostam: "رستم", simorgh: "سیمرغ", zahhak: "ضحاک",
     };
-    const isFa = window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
-    const fmtZar = (n) => isFa && window.RealI18N && window.RealI18N.formatNumber ? window.RealI18N.formatNumber(n) : n;
+    const fa = isFa();
 
-    /* Build spotlight list from owned heroes — catalog data is optional enrichment.
-       Cards of all types (character, place, codex) are included. */
     const spotlightHeroes = Object.entries(owned)
       .map(([hero_id, data]) => {
-        const cat = catMap[hero_id];
-        const nameEn = (cat && cat.name) || slugToName(hero_id);
+        const cat    = catMap[hero_id];
+        const nameEn = (cat && cat.name)    || slugToName(hero_id);
         const nameFa = (cat && cat.name_fa) || SLUG_FA[hero_id];
         return {
           slug:        hero_id,
-          name:        (isFa && nameFa) ? nameFa : nameEn,
+          name:        (fa && nameFa) ? nameFa : nameEn,
           image_url:   (cat && cat.image_url) || null,
-          bonus:       (cat && cat.bonus) || null,
-          rarity:      (cat && cat.rarity) || "",
-          playerLevel: data.level || 1,
+          rarity:      (cat && cat.rarity)    || "",
+          playerLevel: data.level        || 1,
           zarPerHour:  data.zar_per_hour || 0,
         };
       })
@@ -320,23 +401,21 @@
 
     host.innerHTML = spotlightHeroes.map(h => `
       <div class="hs-card">
-        <div class="hs-portrait">
-          ${heroPortraitHtml(h)}
-        </div>
+        <div class="hs-portrait">${heroPortraitHtml(h)}</div>
         <div class="hs-body">
           <div class="hs-kicker">${escapeHtml(t('active_hero_kicker'))}</div>
           <div class="hs-name">${escapeHtml(h.name)}</div>
-          <span class="hs-passive">✦ +${fmtZar(h.zarPerHour)} ${escapeHtml(t('r_zar'))}/hr</span>
+          <span class="hs-passive">✦ +${fmtNum(h.zarPerHour)} ${escapeHtml(t('r_zar'))}/hr</span>
         </div>
         <div class="hs-right">
           <div class="hs-lvl-lbl">${escapeHtml(t('hs_lvl_lbl'))}</div>
-          <div class="hs-lvl-num">${isFa && window.RealI18N ? window.RealI18N.toPersianDigits(h.playerLevel || 1) : (h.playerLevel || 1)}</div>
+          <div class="hs-lvl-num">${fmtNum(h.playerLevel || 1)}</div>
           <a href="heroes.html#${escapeAttr(h.slug)}" class="hs-upgrade-link">${escapeHtml(t('hero_up_link'))}</a>
         </div>
       </div>`).join('');
   };
 
-  /* ── Treasury resource info for info modals ── */
+  /* ── Treasury info modals ─────────────────────────────────────────────── */
   const TREASURY_INFO = {
     farr: {
       name: "Farr — Divine Glory",
@@ -370,7 +449,7 @@
     if (!info) return;
     const existing = document.getElementById("tm-overlay");
     if (existing) existing.remove();
-    const ico = window.RealResources ? window.RealResources.icon(kind) : "";
+    const ico     = window.RealResources ? window.RealResources.icon(kind) : "";
     const overlay = document.createElement("div");
     overlay.id = "tm-overlay";
     overlay.className = "tm-overlay";
@@ -396,7 +475,7 @@
   };
 
   const wireTreasuryModals = () => {
-    const host = document.querySelector("[data-resource-hud]");
+    const host = $("[data-resource-hud]");
     if (!host) return;
     host.querySelectorAll("[data-resource-cell]").forEach((cell) => {
       if (cell.dataset.tmWired) return;
@@ -406,11 +485,17 @@
     });
   };
 
-  /* ── Quest action routing ── */
+  /* ── Quest click routing — quiz URL is dynamic based on active chapter ── */
   const wireQuestClicks = () => {
-    const ROUTES = { read: "learn.html", quiz: "chapter.html", tap: "tap.html", invite: "earn.html" };
+    const activeSlug = getActiveChapter();
+    const ROUTES = {
+      read:   "learn.html",
+      quiz:   `chapter.html?slug=${encodeURIComponent(activeSlug)}`,
+      tap:    "tap.html",
+      invite: "earn.html",
+    };
     Object.entries(ROUTES).forEach(([key, url]) => {
-      const row = document.querySelector('[data-quest="' + key + '"]');
+      const row = document.querySelector(`[data-quest="${key}"]`);
       if (!row || row.dataset.questWired) return;
       row.dataset.questWired = "1";
       row.addEventListener("click", () => {
@@ -420,26 +505,24 @@
     });
   };
 
-  /* ── Boot: run initial hydration immediately, then re-run after sync ── */
+  /* ── Boot ────────────────────────────────────────────────────────────── */
   const bootHomeHydration = () => {
-    // First pass with localStorage state (instant, no flicker)
     hydrateProfile();
     hydrateQuests();
     refreshTreasury();
+    updateJourneyCard(null);  // immediate render from localStorage
     wireQuestClicks();
     wireTreasuryModals();
 
-    // Sync heroes from server if local cache is empty
     if (window.RealSync && window.RealSync.syncHeroes) {
       const cached = window.RealSync.getOwnedHeroes ? window.RealSync.getOwnedHeroes() : {};
       if (!Object.keys(cached).length) window.RealSync.syncHeroes();
     }
 
-    // Second pass once server data arrives (profile_pic, real balances, quests)
     if (window.RealSync) {
       window.RealSync.ready().then((su) => {
         hydrateProfile();
-        hydrateQuests(su);           // server data → checkmarks always accurate
+        hydrateQuests(su);
         hydrateBadge((window.RealPlayer && window.RealPlayer.get)
           ? Math.floor((window.RealPlayer.get().xp || 0) / 1000) : 0);
         if (window.RealUtils) window.RealUtils.updateGlobalZar();
@@ -448,38 +531,76 @@
       });
     }
 
-    // Live updates from chapter quiz / read events dispatched by app.js
-    window.addEventListener("real:quest:quiz", () => {
-      hydrateQuests();
+    /* ── Reactive event listeners ── */
+
+    /* 1. Bfcache restore (back-navigation after swap on another page) */
+    window.addEventListener("pageshow", (e) => {
+      if (e.persisted) {
+        try {
+          const ls = JSON.parse(localStorage.getItem("real_player_state_v1") || "{}");
+          if (window.RealPlayer && window.RealPlayer.set) {
+            window.RealPlayer.set({ balance: ls.balance || 0, zar: ls.zar || 0 });
+          }
+        } catch {}
+      }
+      refreshTreasury();
       hydrateProfile();
-      refreshTreasury();
-    });
-    window.addEventListener("real:quest:read", () => {
       hydrateQuests();
-      refreshTreasury();
+      updateJourneyCard(null);
     });
+
+    /* 2. Balance updated from another component (swap, hero buy, etc.) */
+    window.addEventListener("balanceUpdate", () => {
+      refreshTreasury();
+      hydrateProfile();
+    });
+
+    /* 3. localStorage changes from other tabs / pages */
+    window.addEventListener("storage", (e) => {
+      if (!e.key) return;
+      if (e.key.startsWith("real_chapter_done_")) {
+        updateJourneyCard(null);
+        wireQuestClicks();     // re-wire quiz route to new active chapter
+      }
+      if (e.key.startsWith("real_quest_") || e.key.startsWith("real_daily_taps_")) {
+        hydrateQuests();
+      }
+      if (e.key === "real_player_state_v1" || e.key === "real_owned_heroes_v1") {
+        refreshTreasury();
+        hydrateProfile();
+      }
+    });
+
+    /* 4. In-page events dispatched by chapter.js / tap.js / sync.js */
+    window.addEventListener("real:quest:quiz",  () => { hydrateQuests(); updateJourneyCard(null); refreshTreasury(); });
+    window.addEventListener("real:quest:read",  () => { hydrateQuests(); refreshTreasury(); });
+    window.addEventListener("real:quest:tap",   () => { hydrateQuests(); refreshTreasury(); });
+    window.addEventListener("real:quest:invite",() => { hydrateQuests(); });
   };
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", bootHomeHydration);
   } else {
     bootHomeHydration();
   }
 
-  /* Fire catalog fetches in parallel. Best-effort; failures keep static strips empty. */
-  fetch("/api/catalog/heroes",   { cache: "no-store" })
+  /* ── Catalog fetches (best-effort; failures leave static markup) ─────── */
+  fetch("/api/catalog/heroes", { cache: "no-store" })
     .then(r => r.ok ? r.json() : null)
     .then(b => {
       const heroes = b && b.heroes;
       renderHeroes(heroes);
       renderHeroSpotlight(heroes || []);
     })
-    .catch(() => { renderHeroes([]); renderHeroSpotlight([]); /* owned heroes still show via getOwnedHeroes() */ });
+    .catch(() => { renderHeroes([]); renderHeroSpotlight([]); });
 
   fetch("/api/catalog/chapters", { cache: "no-store" })
     .then(r => r.ok ? r.json() : null)
     .then(b => {
-      renderChapters(b && b.chapters, b && b.seasonLengthDays);
+      const chapters = b && b.chapters;
+      renderChapters(chapters, b && b.seasonLengthDays);
       renderJourneyProgress(b && b.seasonLengthDays);
+      updateJourneyCard(chapters);   // re-render with full catalog titles & images
     })
-    .catch(() => { renderChapters([]); renderJourneyProgress(270); });
+    .catch(() => { renderChapters([]); renderJourneyProgress(270); updateJourneyCard(null); });
 })();
