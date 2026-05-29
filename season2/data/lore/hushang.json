@@ -285,21 +285,34 @@
         "kind": "level",
         "target": 8,
         "label_en": "Reach Hushang LVL 8",
-        "label_fa": "رسیدن به سطحِ ۸ هوشنگ"
+        "label_fa": "رسیدن به سطحِ ۸ هوشنگ",
+        "label_tg": "Расидан ба сатҳи 8 Ҳушанг",
+        "hint_en": "Upgrade Hushang in the Hero Collection tab. Each upgrade costs REAL tokens — tap and complete scenes to earn more.",
+        "hint_fa": "هوشنگ را در بخش مجموعه‌ی قهرمانان ارتقا دهید. هر ارتقا به توکن REAL نیاز دارد — با ضربه زدن و صحنه‌ها بیشتر کسب کنید.",
+        "hint_tg": "Ҳушангро дар бахши Қаҳрамонон баланд баред. Ҳар баланд бардоштан ба токени REAL ниёз дорад — бо зарба задан ва саҳнаҳо бештар ба даст оред."
       },
       {
-        "id": "fire-rune",
+        "id": "iron-axe",
         "kind": "item",
-        "target": "fire-rune",
-        "label_en": "Carry the Fire Rune",
-        "label_fa": "حملِ نشانِ آتش"
+        "target": "iron-axe",
+        "grant_on": "quiz",
+        "label_en": "Forge the Iron Axe",
+        "label_fa": "آهنگریِ تبرِ آهنین",
+        "label_tg": "Оҳангарии табари оҳанин",
+        "hint_en": "Awarded automatically when you complete the Chapter 2 quiz. Hushang forged the first iron tools — mastering the chapter earns you this relic.",
+        "hint_fa": "با تکمیل آزمون فصل ۲ به‌طور خودکار اعطا می‌شود. هوشنگ اولین ابزارهای آهنی را ساخت — تسلط بر فصل این یادگار را برایتان می‌آورد.",
+        "hint_tg": "Пас аз иҷрои имтиҳони Боби 2 ба таври худкор дода мешавад. Ҳушанг аввалин абзорҳои оҳаниро сохт — тасаллут бар боб ин ёдгорро барои шумо меорад."
       },
       {
         "id": "quiz",
         "kind": "quiz",
         "target": "hushang",
         "label_en": "Pass the chapter quiz",
-        "label_fa": "گذراندنِ آزمونِ دفتر"
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section and answer all questions. You can retry wrong answers.",
+        "hint_fa": "به بخش آزمون بروید و همه‌ی سؤالات را پاسخ دهید. پاسخ‌های اشتباه را می‌توانید دوباره امتحان کنید.",
+        "hint_tg": "Ба бахши Имтиҳон равед ва ба ҳама суолҳо ҷавоб диҳед. Ҷавобҳои нодурустро метавонед дубора кӯшиш кунед."
       }
     ]
   },

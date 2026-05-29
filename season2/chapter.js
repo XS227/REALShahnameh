@@ -491,6 +491,19 @@
     if (progEl) progEl.textContent = `${fmtNum(metCount)} / ${fmtNum(reqs.length)}`;
   };
 
+  /* ---------- quiz reward helper (idempotent) ---------- */
+  const grantQuizRewards = (lore) => {
+    try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
+    try {
+      const items = JSON.parse(localStorage.getItem("real_items_v1") || "{}");
+      let changed = false;
+      ((lore && lore.battle && lore.battle.requirements) || [])
+        .filter(r => r.kind === "item" && r.grant_on === "quiz" && !items[r.target])
+        .forEach(r => { items[r.target] = true; changed = true; });
+      if (changed) localStorage.setItem("real_items_v1", JSON.stringify(items));
+    } catch {}
+  };
+
   /* ---------- quiz ---------- */
   const paintQuiz = (lore, allQuizzes) => {
     const host = $("[data-quiz]");
@@ -520,17 +533,9 @@
           acc.real += (q.reward && q.reward.real) || 0;
           return acc;
         }, { xp: 0, real: 0 });
-        // Persist chapter completion so learn.html can reflect done state.
-        try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
-        // Grant any items that are awarded on quiz completion.
-        try {
-          const items = JSON.parse(localStorage.getItem("real_items_v1") || "{}");
-          let changed = false;
-          ((lore && lore.battle && lore.battle.requirements) || [])
-            .filter(r => r.kind === "item" && r.grant_on === "quiz" && !items[r.target])
-            .forEach(r => { items[r.target] = true; changed = true; });
-          if (changed) localStorage.setItem("real_items_v1", JSON.stringify(items));
-        } catch {}
+        // Grant rewards + mark chapter done (idempotent), then refresh battle panel.
+        grantQuizRewards(lore);
+        paintBattle(lore);
         host.innerHTML = `
           <div class="quiz-complete">
             <div class="badge">🏆</div>
@@ -604,7 +609,8 @@
                 progress.quiz.done = true;
                 progress.quiz.idx = next;
                 saveProgress();
-                paintBattle(lore);
+                grantQuizRewards(lore);   // grant items BEFORE repaint
+                paintBattle(lore);        // now sees granted items + done quiz
                 if (progEl) progEl.textContent = `${fmtNum(qs.length)} / ${fmtNum(qs.length)}`;
               } else {
                 progress.quiz.idx = next;
@@ -758,10 +764,37 @@
     fetch(`/season2/data/lore/${encodeURIComponent(SLUG)}.json`, { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null),
     fetch("/season2/data/quizzes.json", { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null)
   ]).then(([chaptersBody, lore, quizzesBody]) => {
-    const chapterMeta = chaptersBody && Array.isArray(chaptersBody.chapters)
-      ? chaptersBody.chapters.find(c => c.slug === SLUG) || null
-      : null;
+    const allChapters = (chaptersBody && chaptersBody.chapters) || [];
+    const chapterMeta = allChapters.find(c => c.slug === SLUG) || null;
     const quizzes = (quizzesBody && quizzesBody.quizzes) || [];
+
+    /* ── Hard chapter gate ── */
+    const reqPrev = chapterMeta && chapterMeta.required_previous_chapter;
+    if (reqPrev && localStorage.getItem(`real_chapter_done_${reqPrev}`) !== "1") {
+      const prevMeta = allChapters.find(c => c.slug === reqPrev);
+      const prevTitle = (curLang() === "fa" && prevMeta && prevMeta.title_fa)
+        ? prevMeta.title_fa : (prevMeta && prevMeta.title) || reqPrev;
+      const gate = document.getElementById("chapter-gate");
+      if (gate) {
+        gate.hidden = false;
+        gate.innerHTML = `
+          <div class="cg-inner">
+            <div class="cg-lock">🔒</div>
+            <h2 class="cg-title">${escapeHtml(tr("gate_locked_title"))}</h2>
+            <p class="cg-msg">${escapeHtml(tr("gate_locked_msg", { chapter: prevTitle }))}</p>
+            <a href="chapter.html?slug=${encodeURIComponent(reqPrev)}" class="primary-btn cg-btn">
+              ${escapeHtml(tr("gate_go_prev", { chapter: prevTitle }))}
+            </a>
+            <a href="learn.html" class="ghost-btn cg-btn" style="margin-top:8px;">
+              ${escapeHtml(tr("gate_back_journey"))}
+            </a>
+          </div>`;
+        /* Hide the rest of the page content */
+        $$("section, .ch-lore, .section-head, .ch-timeline, .scene-list, .ch-grid, .battle-card, .quiz-card, .ch-crumbs", document.querySelector("main")).forEach(el => { el.hidden = true; });
+      }
+      return;
+    }
+
     if (!lore) {
       console.error(`[chapter:${SLUG}] lore JSON missing — expected /season2/data/lore/${SLUG}.json`);
       $("[data-summary]").textContent = tr("ch_no_lore");

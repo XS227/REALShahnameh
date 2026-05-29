@@ -285,6 +285,12 @@
       battle_locked: "Locked — complete all requirements",
       battle_combat_next_update: "Combat arrives in the next update.",
 
+      /* Chapter gate */
+      gate_locked_title: "Chapter Locked",
+      gate_locked_msg: "Complete \"{chapter}\" before you can access this chapter.",
+      gate_go_prev: "Go to \"{chapter}\"",
+      gate_back_journey: "← Back to Journey",
+
       /* Quiz */
       quiz_question_of: "Question {i} of {n}",
       quiz_no_published: "No quiz published for this chapter yet.",

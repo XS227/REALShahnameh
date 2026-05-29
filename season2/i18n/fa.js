@@ -287,6 +287,12 @@
       battle_locked: "قفل — همه‌ی شرایط را کامل کن",
       battle_combat_next_update: "نبرد در بروزرسانی بعدی فعال می‌شود.",
 
+      /* Chapter gate */
+      gate_locked_title: "فصل قفل است",
+      gate_locked_msg: "پیش از دسترسی به این فصل، «{chapter}» را کامل کنید.",
+      gate_go_prev: "رفتن به «{chapter}»",
+      gate_back_journey: "← بازگشت به سفر",
+
       /* Quiz */
       quiz_question_of: "پرسش {i} از {n}",
       quiz_no_published: "هنوز آزمونی برای این فصل منتشر نشده.",

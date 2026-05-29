@@ -286,6 +286,12 @@
       battle_locked: "Қулф — ҳамаи шартҳоро тамом кун",
       battle_combat_next_update: "Набард дар таҷдиди оянда фаъол мешавад.",
 
+      /* Chapter gate */
+      gate_locked_title: "Боб қулф аст",
+      gate_locked_msg: "Пеш аз дастрасӣ ба ин боб, «{chapter}»-ро иҷро кунед.",
+      gate_go_prev: "Рафтан ба «{chapter}»",
+      gate_back_journey: "← Бозгашт ба Сафар",
+
       /* Quiz */
       quiz_question_of: "Саволи {i} аз {n}",
       quiz_no_published: "Ҳанӯз барои ин боб имтиҳоне нашр нашуда.",
