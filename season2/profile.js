@@ -13,65 +13,40 @@
     } catch (_) { return null; }
   };
 
+  /* i18n helpers — fall back gracefully if RealI18N not ready */
+  const t  = (k, v) => (window.RealI18N && window.RealI18N.t)  ? window.RealI18N.t(k, v)  : k;
+  const pd = (s)    => (window.RealI18N && window.RealI18N.toPersianDigits)
+                         ? window.RealI18N.toPersianDigits(String(s)) : String(s);
+  const isFa = ()   => (window.RealI18N && window.RealI18N.getLang) ? window.RealI18N.getLang() === 'fa' : false;
+
   const fmtN = (n) => {
     n = Number(n) || 0;
-    if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + 'M';
-    if (n >= 1_000)     return (n / 1_000).toFixed(1) + 'K';
-    return n.toLocaleString();
+    let s;
+    if (n >= 1_000_000) s = (n / 1_000_000).toFixed(1) + 'M';
+    else if (n >= 1_000) s = (n / 1_000).toFixed(1) + 'K';
+    else s = n.toLocaleString();
+    return isFa() ? pd(s) : s;
   };
 
   const fmtZar = (n) => {
     n = Number(n) || 0;
-    if (n >= 1_000_000) return (n / 1_000_000).toFixed(2) + 'M';
-    if (n >= 1_000)     return (n / 1_000).toFixed(2) + 'K';
-    return n.toFixed(2);
+    let s;
+    if (n >= 1_000_000) s = (n / 1_000_000).toFixed(2) + 'M';
+    else if (n >= 1_000) s = (n / 1_000).toFixed(2) + 'K';
+    else s = n.toFixed(2);
+    return isFa() ? pd(s) : s;
   };
 
   /* ── Achievements definition ─────────────────────────────────────────── */
   const ACHIEVEMENTS = [
-    {
-      id:   'first_strike',
-      icon: '⚡',
-      name: 'First Strike',
-      desc: 'Strike the Anvil and earn XP',
-      check: u => (u.xp || 0) > 0,
-    },
-    {
-      id:   'clan_founder',
-      icon: '🛡',
-      name: 'Clan Founder',
-      desc: 'Recruit your first warrior',
-      check: u => (u.verified_referral_count || 0) >= 1,
-    },
-    {
-      id:   'daily_champion',
-      icon: '🔥',
-      name: '7-Day Streak',
-      desc: 'Login 7 days in a row',
-      check: u => (u.daily_streak || 0) >= 7,
-    },
-    {
-      id:   'check_in',
-      icon: '📅',
-      name: 'Chronicle Keeper',
-      desc: 'Claim your daily check-in reward',
-      check: u => !!(u.last_checkin_date),
-    },
-    {
-      id:   'rich_warrior',
-      icon: null,
+    { id: 'first_strike',  icon: '⚡',  nameKey: 'ach_first_strike_name', descKey: 'ach_first_strike_desc', check: u => (u.xp || 0) > 0 },
+    { id: 'clan_founder',  icon: '🛡',  nameKey: 'ach_clan_founder_name', descKey: 'ach_clan_founder_desc', check: u => (u.verified_referral_count || 0) >= 1 },
+    { id: 'daily_champ',   icon: '🔥',  nameKey: 'ach_7day_name',         descKey: 'ach_7day_desc',         check: u => (u.daily_streak || 0) >= 7 },
+    { id: 'check_in',      icon: '📅',  nameKey: 'ach_chronicle_name',    descKey: 'ach_chronicle_desc',    check: u => !!(u.last_checkin_date) },
+    { id: 'rich_warrior',  icon: null,  nameKey: 'ach_rich_name',         descKey: 'ach_rich_desc',
       tokenImg: '/assets/images/tokens/realtoken.png',
-      name: 'Rich Warrior',
-      desc: 'Accumulate 10,000 REAL',
-      check: u => Math.max(u.max_real_balance || 0, u.real_balance || 0) >= 10_000,
-    },
-    {
-      id:   'legend',
-      icon: '👑',
-      name: 'Legend of Pars',
-      desc: 'Rise to LVL 10',
-      check: u => (u.level || 1) >= 10,
-    },
+      check: u => Math.max(u.max_real_balance || 0, u.real_balance || 0) >= 10_000 },
+    { id: 'legend',        icon: '👑',  nameKey: 'ach_legend_name',       descKey: 'ach_legend_desc',       check: u => (u.level || 1) >= 10 },
   ];
 
   /* ── Render identity card ─────────────────────────────────────────────── */
@@ -126,7 +101,7 @@
     }
 
     const path = u.path || 'hero';
-    const pathLabel = path === 'heroine' ? '⚜ Heroine' : '⚔ Hero';
+    const pathLabel = path === 'heroine' ? t('path_heroine_lbl') : t('path_hero_lbl');
     const pathClass = path === 'heroine' ? 'heroine' : 'hero';
     if (pathTagEl) {
       pathTagEl.textContent = pathLabel;
@@ -174,8 +149,8 @@
     const zarPerMin = mining.zar_per_minute || 0;
     const zarPerHr  = mining.zar_per_hour  || 0;
 
-    if (rateMinEl) rateMinEl.textContent = fmtZar(zarPerMin) + ' ZAR';
-    if (rateHrEl)  rateHrEl.textContent  = fmtZar(zarPerHr)  + ' ZAR';
+    if (rateMinEl) rateMinEl.textContent = fmtZar(zarPerMin) + ' ' + t('unit_zar');
+    if (rateHrEl)  rateHrEl.textContent  = fmtZar(zarPerHr)  + ' ' + t('unit_zar');
 
     /* Next payout: every hour on the hour */
     const updatePayout = () => {
@@ -186,7 +161,7 @@
       const diffMs  = next - now;
       const diffMin = Math.floor(diffMs / 60000);
       const diffSec = Math.floor((diffMs % 60000) / 1000);
-      payoutEl.textContent = diffMin + 'm ' + String(diffSec).padStart(2, '0') + 's';
+      payoutEl.textContent = t('payout_fmt', { m: isFa() ? pd(diffMin) : diffMin, s: isFa() ? pd(String(diffSec).padStart(2, '0')) : String(diffSec).padStart(2, '0') });
     };
 
     /* Accumulate ZAR in real time from the server-side snapshot */
@@ -199,7 +174,7 @@
       const dt   = (now - lastTick) / 1000;
       lastTick   = now;
       currentZar += zarPerSec * dt;
-      if (zarLiveEl) zarLiveEl.textContent = fmtZar(currentZar) + ' ZAR';
+      if (zarLiveEl) zarLiveEl.textContent = fmtZar(currentZar) + ' ' + t('unit_zar');
       updatePayout();
     };
 
@@ -217,10 +192,10 @@
     const inClan = !!(u.clan_id);
 
     const stats = [
-      { ico: '⭐', lbl: 'XP Earned',    val: fmtN(xpCurr),                          bonus: inClan ? '+5% Clan Power active' : null },
-      { ico: '🏆', lbl: 'Level',         val: 'LVL ' + level,                        bonus: null },
-      { ico: '🔥', lbl: 'Daily Strike',  val: (u.daily_streak || 1) + ' days',       bonus: null },
-      { ico: '👥', lbl: 'Clan Warriors', val: String(u.verified_referral_count || 0), bonus: null },
+      { ico: '⭐', lbl: t('stat_xp_lbl'),       val: fmtN(xpCurr),                                   bonus: inClan ? t('stat_clan_bonus_tag') : null },
+      { ico: '🏆', lbl: t('stat_level_lbl'),     val: t('stat_level_val', { n: isFa() ? pd(level) : level }), bonus: null },
+      { ico: '🔥', lbl: t('stat_daily_lbl'),     val: t('stat_daily_val', { n: isFa() ? pd(u.daily_streak || 1) : (u.daily_streak || 1) }), bonus: null },
+      { ico: '👥', lbl: t('stat_warriors_lbl'),  val: isFa() ? pd(u.verified_referral_count || 0) : String(u.verified_referral_count || 0), bonus: null },
     ];
 
     el.innerHTML = stats.map(s => `
@@ -246,9 +221,9 @@
         <div class="badge-card ${earned ? 'earned' : 'locked-badge'}">
           <div class="badge-ico-wrap">${icoHtml}</div>
           <div>
-            <div class="badge-name">${a.name}</div>
-            <div class="badge-desc">${a.desc}</div>
-            ${earned ? '<div class="badge-earned-tag">✓ Earned</div>' : ''}
+            <div class="badge-name">${t(a.nameKey)}</div>
+            <div class="badge-desc">${t(a.descKey)}</div>
+            ${earned ? `<div class="badge-earned-tag">${t('ach_earned_tag')}</div>` : ''}
           </div>
         </div>`;
     }).join('');
@@ -278,10 +253,10 @@
 
     if (statsEl) {
       const stats = [
-        { ico: '⭐', lbl: 'XP Earned',    val: fmtN(localP.xp || 0)           },
-        { ico: '🏆', lbl: 'Level',         val: 'LVL ' + (localP.level || 1)  },
-        { ico: '🔥', lbl: 'Daily Strike',  val: (localP.dailyStreak || 1) + ' days' },
-        { ico: '👥', lbl: 'Clan Warriors', val: String(localP.referrals || 0) },
+        { ico: '⭐', lbl: t('stat_xp_lbl'),      val: fmtN(localP.xp || 0) },
+        { ico: '🏆', lbl: t('stat_level_lbl'),    val: t('stat_level_val', { n: isFa() ? pd(localP.level || 1) : (localP.level || 1) }) },
+        { ico: '🔥', lbl: t('stat_daily_lbl'),    val: t('stat_daily_val', { n: isFa() ? pd(localP.dailyStreak || 1) : (localP.dailyStreak || 1) }) },
+        { ico: '👥', lbl: t('stat_warriors_lbl'), val: isFa() ? pd(localP.referrals || 0) : String(localP.referrals || 0) },
       ];
       statsEl.innerHTML = stats.map(s => `
         <div class="stat-card">

@@ -1032,7 +1032,19 @@
 
     if (!tid) { showToast("Telegram session required"); return; }
 
-    const balance = window.RealPlayer ? (window.RealPlayer.getResource("real") || 0) : 0;
+    /* Always take the max of in-memory and localStorage — guards against
+       stale bfcache state after a ZAR→REAL swap done on another page. */
+    const balance = (() => {
+      const mem = window.RealPlayer ? (window.RealPlayer.getResource("real") || 0) : 0;
+      try {
+        const ls = JSON.parse(localStorage.getItem("real_player_state_v1") || "{}");
+        const lsBal = ls.balance || 0;
+        if (lsBal > mem && window.RealPlayer && window.RealPlayer.set) {
+          window.RealPlayer.set({ balance: lsBal });  // sync in-memory from fresh LS
+        }
+        return Math.max(mem, lsBal);
+      } catch { return mem; }
+    })();
     if (balance < cost) { showToast(t("hero_insufficient_real")); return; }
 
     btn.disabled = true;
@@ -1423,6 +1435,20 @@
       });
     }
   };
+
+  /* Re-hydrate balance from localStorage when page is restored from bfcache
+     (e.g. after a ZAR→REAL swap done on tap.html then navigating back). */
+  window.addEventListener("pageshow", (e) => {
+    if (!e.persisted) return;
+    try {
+      const ls = JSON.parse(localStorage.getItem("real_player_state_v1") || "{}");
+      if (window.RealPlayer && window.RealPlayer.set) {
+        window.RealPlayer.set({ balance: ls.balance || 0, zar: ls.zar || 0 });
+      }
+    } catch {}
+    loadOwned();
+    buildCards(document.querySelector("[data-filter].active")?.getAttribute("data-filter") || "all");
+  });
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);

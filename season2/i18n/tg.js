@@ -851,5 +851,52 @@
       legacy_veteran_unavail: "Барои пайвастани ҳамёни TON, ин саҳифаро аз боти Telegram Шоҳнома кушоед.",
       legacy_sdk_reload:      "Барои такрор кӯшиш кунед",
 
+      /* ── Profile / Chronicle dashboard ── */
+      profile_title:         "Хроника",
+      profile_sub:           "Афсонаи ту шакл мегирад",
+      profile_stats:         "Омори фасл",
+      profile_achievements:  "Дастовардҳо",
+      profile_back:          "← Бозгашт",
+
+      rbc_label:             "Мавҷудии REAL",
+      rbc_clan_bonus:        "+5% Подоши клан фаъол аст",
+
+      em_title:              "Ченгари даромад",
+      em_total_zar_lbl:      "Маҷмӯи ZAR истихроҷшуда",
+      em_rate_min_lbl:       "Суръат / дақ",
+      em_rate_hr_lbl:        "Суръат / соат",
+      em_next_payout_lbl:    "Пардохти навбатӣ",
+
+      stat_xp_lbl:           "XP ба даст омада",
+      stat_level_lbl:        "Сатҳ",
+      stat_daily_lbl:        "Зарбаи рӯзона",
+      stat_warriors_lbl:     "Ҷангиёни клан",
+      stat_clan_bonus_tag:   "+5% Қудрати клан фаъол",
+      stat_level_val:        "Сатҳ {n}",
+      stat_daily_val:        "{n} рӯз",
+
+      path_hero_lbl:         "⚔ Паҳлавон",
+      path_heroine_lbl:      "⚜ Паҳлавонзан",
+
+      ach_earned_tag:        "✓ Ба даст омад",
+      ach_first_strike_name: "Аввалин зарба",
+      ach_first_strike_desc: "Ба синдон зан ва XP ба даст ор",
+      ach_clan_founder_name: "Бунёдгузори клан",
+      ach_clan_founder_desc: "Аввалин ҷангиятро ҷалб кун",
+      ach_7day_name:         "Силсилаи 7 рӯза",
+      ach_7day_desc:         "7 рӯзи пай дар пай ворид шав",
+      ach_chronicle_name:    "Нигаҳбони хроника",
+      ach_chronicle_desc:    "Ҷоизаи ҳузури рӯзонаатро бигир",
+      ach_rich_name:         "Ҷангии сарватманд",
+      ach_rich_desc:         "10,000 REAL ҷамъ ор",
+      ach_legend_name:       "Афсонаи Порс",
+      ach_legend_desc:       "Ба сатҳи 10 бирас",
+
+      payout_fmt:            "{m}д {s}с",
+      unit_zar_hr:           "ZAR/соат",
+      unit_zar_min:          "ZAR/дақ",
+      unit_zar:              "ZAR",
+      season_label:          "Фасл 2 · Боби 1",
+
   };
 })();

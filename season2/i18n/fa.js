@@ -914,5 +914,52 @@
       time_hr_tpl:           "{n}س",
       time_day_tpl:          "{n}ر",
 
+      /* ── Profile / Chronicle dashboard ── */
+      profile_title:         "کرونیکل",
+      profile_sub:           "افسانه‌ات شکل می‌گیرد",
+      profile_stats:         "آمار فصل",
+      profile_achievements:  "دستاوردها",
+      profile_back:          "← بازگشت",
+
+      rbc_label:             "موجودی REAL",
+      rbc_clan_bonus:        "+۵٪ پاداش کلان فعال است",
+
+      em_title:              "سنجه‌ی درآمد",
+      em_total_zar_lbl:      "کل ZAR استخراج‌شده",
+      em_rate_min_lbl:       "نرخ / دقیقه",
+      em_rate_hr_lbl:        "نرخ / ساعت",
+      em_next_payout_lbl:    "پرداخت بعدی",
+
+      stat_xp_lbl:           "XP کسب‌شده",
+      stat_level_lbl:        "سطح",
+      stat_daily_lbl:        "ضربه‌ی روزانه",
+      stat_warriors_lbl:     "رزمندگان کلان",
+      stat_clan_bonus_tag:   "+۵٪ قدرت کلان فعال",
+      stat_level_val:        "سطح {n}",
+      stat_daily_val:        "{n} روز",
+
+      path_hero_lbl:         "⚔ پهلوان",
+      path_heroine_lbl:      "⚜ پهلوان‌زن",
+
+      ach_earned_tag:        "✓ کسب‌شده",
+      ach_first_strike_name: "اولین ضربه",
+      ach_first_strike_desc: "بر سندان بزن و XP کسب کن",
+      ach_clan_founder_name: "بنیانگذار کلان",
+      ach_clan_founder_desc: "اولین رزمنده‌ات را جذب کن",
+      ach_7day_name:         "رشته‌ی ۷ روزه",
+      ach_7day_desc:         "۷ روز پشت سر هم وارد شو",
+      ach_chronicle_name:    "نگهبان کرونیکل",
+      ach_chronicle_desc:    "پاداش حضور روزانه‌ات را بگیر",
+      ach_rich_name:         "رزمنده‌ی ثروتمند",
+      ach_rich_desc:         "۱۰٬۰۰۰ REAL جمع‌آوری کن",
+      ach_legend_name:       "افسانه‌ی پارس",
+      ach_legend_desc:       "به سطح ۱۰ برس",
+
+      payout_fmt:            "{m}م {s}ث",
+      unit_zar_hr:           "ZAR/ساعت",
+      unit_zar_min:          "ZAR/دقیقه",
+      unit_zar:              "ZAR",
+      season_label:          "فصل ۲ · فصل ۱",
+
   };
 })();

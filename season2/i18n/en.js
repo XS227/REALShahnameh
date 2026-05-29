@@ -910,5 +910,52 @@
       time_hr_tpl:           "{n}h",
       time_day_tpl:          "{n}d",
 
+      /* ── Profile / Chronicle dashboard ── */
+      profile_title:         "Chronicle",
+      profile_sub:           "Your legend unfolds",
+      profile_stats:         "Season Stats",
+      profile_achievements:  "Achievements",
+      profile_back:          "← Back",
+
+      rbc_label:             "REAL Balance",
+      rbc_clan_bonus:        "+5% Clan Bonus Active",
+
+      em_title:              "Earnings Meter",
+      em_total_zar_lbl:      "Total ZAR Mined",
+      em_rate_min_lbl:       "Rate / Min",
+      em_rate_hr_lbl:        "Rate / Hr",
+      em_next_payout_lbl:    "Next Payout",
+
+      stat_xp_lbl:           "XP Earned",
+      stat_level_lbl:        "Level",
+      stat_daily_lbl:        "Daily Strike",
+      stat_warriors_lbl:     "Clan Warriors",
+      stat_clan_bonus_tag:   "+5% Clan Power Active",
+      stat_level_val:        "LVL {n}",
+      stat_daily_val:        "{n} days",
+
+      path_hero_lbl:         "⚔ Hero",
+      path_heroine_lbl:      "⚜ Heroine",
+
+      ach_earned_tag:        "✓ Earned",
+      ach_first_strike_name: "First Strike",
+      ach_first_strike_desc: "Strike the Anvil and earn XP",
+      ach_clan_founder_name: "Clan Founder",
+      ach_clan_founder_desc: "Recruit your first warrior",
+      ach_7day_name:         "7-Day Streak",
+      ach_7day_desc:         "Login 7 days in a row",
+      ach_chronicle_name:    "Chronicle Keeper",
+      ach_chronicle_desc:    "Claim your daily check-in reward",
+      ach_rich_name:         "Rich Warrior",
+      ach_rich_desc:         "Accumulate 10,000 REAL",
+      ach_legend_name:       "Legend of Pars",
+      ach_legend_desc:       "Rise to LVL 10",
+
+      payout_fmt:            "{m}m {s}s",
+      unit_zar_hr:           "ZAR/hr",
+      unit_zar_min:          "ZAR/min",
+      unit_zar:              "ZAR",
+      season_label:          "Season 2 · Ch.1",
+
   };
 })();

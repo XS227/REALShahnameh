@@ -530,6 +530,14 @@
           if (window.RealPlayer && window.RealPlayer.set) {
             window.RealPlayer.set({ zar: r.new_zar, balance: r.new_real_balance });
           }
+          /* Belt-and-suspenders: write fresh balances directly to localStorage
+             so other pages (heroes.html) read the correct value even from bfcache. */
+          try {
+            const ls = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
+            ls.balance = r.new_real_balance;
+            ls.zar     = r.new_zar;
+            localStorage.setItem('real_player_state_v1', JSON.stringify(ls));
+          } catch {}
           swapInput.value = '';
           updateSwapUI();
           hydrateFromPlayer();
