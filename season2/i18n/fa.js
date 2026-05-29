@@ -862,5 +862,51 @@
       swap_not_enough:       "زر کافی ندارید (دارید: {have})",
       swap_convert_label:    "تبدیل {zar} زر → {real} REAL",
 
+      /* ── Tap page extended ── */
+      swap_section_title:    "🪙 تبدیل زر → REAL",
+      swap_your_zar_lbl:     "زر شما",
+      swap_receive_lbl:      "دریافت می‌کنید",
+      swap_input_placeholder:"مقدار زر…",
+      swap_btn_label:        "تبدیل ›",
+      swap_ing:              "در حال تبدیل…",
+      swap_tg_required:      "از طریق تلگرام وارد شوید",
+      swap_server_error:     "خطای سرور ({code}) — دوباره تلاش کنید",
+      swap_failed:           "تبدیل ناموفق — دوباره تلاش کنید",
+      swap_success:          "✓ {zar} زر → {real} REAL تبدیل شد",
+      streak_days_tpl:       "🔥 {n} روز",
+      energy_filled:         "⚡ انرژی پر شد!",
+      ad_cooldown_msg:       "زمان انتظار — بعداً برگردید!",
+      ad_skipped_msg:        "تبلیغ رد شد — بدون پاداش.",
+      ad_connecting_msg:     "در حال اتصال به شبکه تبلیغات TON…",
+      ad_unavailable_msg:    "تبلیغی در دسترس نیست. بعداً امتحان کنید.",
+      ad_not_ready_msg:      "سرویس تبلیغات آماده نیست.",
+
+      /* ── Home treasury modal ── */
+      treasury_what_it_does: "کاربرد آن",
+      treasury_how_to_earn:  "چگونه بیشتر به‌دست آورید",
+
+      /* ── Social page ── */
+      your_clan_header:      "قبیله شما",
+      warriors_header:       "جنگجویان",
+      found_clan_title:      "قبیله خود را بنیان بگذار",
+      found_clan_sub:        "جنگجویان را زیر پرچمت فراخوان · ۵۰٬۰۰۰ REAL",
+      lb_you:                "شما",
+      lb_lvl_sub:            "سطح {n}",
+      lb_climb_tpl:          "{n} رتبه تا ورود به برترین‌ها",
+      lb_xp_score:           "{n} تجربه",
+      lb_warriors_score:     "{n} جنگجو",
+      lb_real_score:         "{n} REAL",
+      warrior_active_tag:    "✓ فعال",
+      warrior_pending_tag:   "⌛ در انتظار",
+      clan_stats_row:        "سطح {n} · {xp} تجربه",
+      event_tournament_title:"مسابقه هفتگی — جام شاهی",
+      event_referral_title:  "مسابقه معرفی",
+      event_learning_title:  "مسابقه یادگیری",
+      event_ends_in_tpl:     "پایان در {t}",
+      time_sec_tpl:          "{n}ث",
+      time_min_tpl:          "{n}د",
+      time_hr_tpl:           "{n}س",
+      time_day_tpl:          "{n}ر",
+
   };
 })();

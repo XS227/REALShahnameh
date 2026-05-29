@@ -858,5 +858,51 @@
       swap_not_enough:       "Not enough ZAR (you have {have})",
       swap_convert_label:    "Convert {zar} ZAR → {real} REAL",
 
+      /* ── Tap page extended ── */
+      swap_section_title:    "🪙 Convert ZAR → REAL",
+      swap_your_zar_lbl:     "Your ZAR",
+      swap_receive_lbl:      "You receive",
+      swap_input_placeholder:"ZAR amount…",
+      swap_btn_label:        "Swap ›",
+      swap_ing:              "Swapping…",
+      swap_tg_required:      "Connect via Telegram to swap",
+      swap_server_error:     "Server error ({code}) — try again",
+      swap_failed:           "Swap failed — try again",
+      swap_success:          "✓ Swapped {zar} ZAR → {real} REAL",
+      streak_days_tpl:       "🔥 {n} days",
+      energy_filled:         "⚡ Energy filled!",
+      ad_cooldown_msg:       "Cooldown — come back soon!",
+      ad_skipped_msg:        "Ad skipped — no reward.",
+      ad_connecting_msg:     "Connecting to TON Ad-network…",
+      ad_unavailable_msg:    "No ads available right now. Try again later.",
+      ad_not_ready_msg:      "Ad service not ready.",
+
+      /* ── Home treasury modal ── */
+      treasury_what_it_does: "What it does",
+      treasury_how_to_earn:  "How to earn more",
+
+      /* ── Social page ── */
+      your_clan_header:      "Your Clan",
+      warriors_header:       "Warriors",
+      found_clan_title:      "Found Your Own Clan",
+      found_clan_sub:        "Rally warriors under your banner · 50,000 REAL",
+      lb_you:                "You",
+      lb_lvl_sub:            "LVL {n}",
+      lb_climb_tpl:          "Climb {n} to enter top",
+      lb_xp_score:           "{n} XP",
+      lb_warriors_score:     "{n} warriors",
+      lb_real_score:         "{n} REAL",
+      warrior_active_tag:    "✓ Active",
+      warrior_pending_tag:   "⌛ Pending",
+      clan_stats_row:        "LVL {n} · {xp} XP",
+      event_tournament_title:"Weekly Tournament — Royal Cup",
+      event_referral_title:  "Referral Contest",
+      event_learning_title:  "Learning Race",
+      event_ends_in_tpl:     "Ends in {t}",
+      time_sec_tpl:          "{n}s",
+      time_min_tpl:          "{n}m",
+      time_hr_tpl:           "{n}h",
+      time_day_tpl:          "{n}d",
+
   };
 })();

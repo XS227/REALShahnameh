@@ -38,8 +38,8 @@
     const doneEl = $("[data-chapters-done]");
     const pctEl  = $("[data-chapters-pct]");
     const fillEl = $("[data-chapters-fill]");
-    if (doneEl) doneEl.textContent = t("learn_stories_done_tpl", { done: doneCount, total });
-    if (pctEl)  pctEl.textContent  = `${pct}%`;
+    if (doneEl) doneEl.textContent = t("learn_stories_done_tpl", { done: fmtNum(doneCount), total: fmtNum(total) });
+    if (pctEl)  pctEl.textContent  = fmtNum(pct) + "%";
     if (fillEl) fillEl.style.width = `${Math.max(2, pct)}%`;
 
     host.innerHTML = chapters.map((c) => {
@@ -54,7 +54,7 @@
       if (!ready) {
         return `
           <article class="card chapter locked" data-chapter="${esc(level)}" data-slug="${esc(c.slug)}">
-            <span class="node">${esc(level)}</span>
+            <span class="node">${esc(fmtNum(level))}</span>
             <h4>${esc(t("learn_level_tpl", { level, title: locF(c, "title") }))}</h4>
             <div class="meta">
               <span class="chip">${t("coming_soon")}</span>
@@ -70,7 +70,7 @@
         </span>` : "";
 
       const inner = `
-        <span class="node">${done ? "✓" : esc(level)}</span>
+        <span class="node">${done ? "✓" : esc(fmtNum(level))}</span>
         <h4>${esc(t("learn_level_tpl", { level, title: locF(c, "title") }))}</h4>
         ${locF(c, "summary") ? `<p class="copy">${esc(locF(c, "summary"))}</p>` : ""}
         <div class="meta">

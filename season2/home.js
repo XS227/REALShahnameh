@@ -96,7 +96,7 @@
       <a class="hero-mini ${rarityClass(h.rarity)}" href="heroes.html#${escapeAttr(h.slug)}">
         <div class="portrait">${heroPortraitHtml(h)}</div>
         <div class="info">
-          <div class="name">${escapeHtml(h.name)}</div>
+          <div class="name">${escapeHtml(locF(h, 'name') || h.name)}</div>
           <div class="rarity">${escapeHtml(rarityLabel(h.rarity))}</div>
         </div>
       </a>`).join("");
@@ -140,7 +140,8 @@
     const dayNum = Math.max(1, Math.floor((Date.now() - started) / 86400e3) + 1);
     const dayEl  = document.querySelector("[data-journey-day-num]");
     const fillEl = document.querySelector("[data-journey-fill]");
-    if (dayEl)  dayEl.textContent = dayNum;
+    if (dayEl)  dayEl.textContent = (window.RealI18N && window.RealI18N.formatNumber)
+      ? window.RealI18N.formatNumber(dayNum) : dayNum;
     if (fillEl) fillEl.style.width = Math.max(0.4, Math.min(100, (dayNum / (totalDays || 270)) * 100)) + "%";
   };
 
@@ -202,7 +203,10 @@
     const levelEl = document.querySelector("[data-level]");
     if (levelEl) levelEl.textContent = vipLv;
     const vipPill = document.querySelector("[data-vip-level]");
-    if (vipPill) vipPill.textContent = vipLv === 0 ? "VIP" : `VIP ${vipLv}`;
+    if (vipPill) {
+      const fmtVip = (window.RealI18N && window.RealI18N.formatNumber) ? window.RealI18N.formatNumber : String;
+      vipPill.textContent = vipLv === 0 ? "VIP" : `VIP ${fmtVip(vipLv)}`;
+    }
 
     hydrateBadge(vipLv);
   };
@@ -379,9 +383,9 @@
           <button class="tm-close" aria-label="Close">✕</button>
         </div>
         <div class="tm-body">
-          <div class="tm-section-lbl">What it does</div>
+          <div class="tm-section-lbl">${escapeHtml(t('treasury_what_it_does'))}</div>
           <p class="tm-text">${escapeHtml(info.uses)}</p>
-          <div class="tm-section-lbl" style="margin-top:14px;">How to earn more</div>
+          <div class="tm-section-lbl" style="margin-top:14px;">${escapeHtml(t('treasury_how_to_earn'))}</div>
           <ul class="tm-tips">${info.tips.map(tip => `<li>${escapeHtml(tip)}</li>`).join("")}</ul>
         </div>
       </div>`;

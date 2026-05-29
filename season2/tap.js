@@ -75,7 +75,7 @@
   const SKIN_LS = "real_tap_skin_v1";
 
   /* ---- i18n helper (graceful: falls back to key if runtime not ready) ---- */
-  const t = (k) => (window.RealI18N && window.RealI18N.t(k)) || k;
+  const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
 
   /* Map hardcoded unlock strings to i18n keys */
   const UNLOCK_KEYS = {
@@ -177,7 +177,7 @@
 
       btn.innerHTML = `
         <div class="skin-portrait ${rc}">${portInner}</div>
-        <div class="skin-name">${skin.name}</div>
+        <div class="skin-name">${t('skin_' + skin.id) || skin.name}</div>
         <div class="skin-sub ${rc}">${skin.locked ? unlockLabel(skin.unlock) : rarityLabel}</div>
       `;
 
@@ -275,7 +275,7 @@
       /* --- +ZAR label --- */
       const rl = document.createElement("span");
       rl.className = "real-label-float";
-      rl.textContent = "+ZAR";
+      rl.textContent = "+" + t('r_zar');
       rl.style.left = `${ex - 22}px`;
       rl.style.top  = `${ey - 32}px`;
       coreWrap.appendChild(rl);
@@ -333,7 +333,7 @@
     if (!btn) return;
 
     const tryShowAd = (isRetry) => {
-      if (!window.RealAdService) { showToast('Ad service not ready.'); return; }
+      if (!window.RealAdService) { showToast(t('ad_not_ready_msg')); return; }
       const origText = btn.getAttribute('data-orig-text') || btn.textContent;
       btn.setAttribute('data-orig-text', origText);
       btn.disabled = true;
@@ -342,7 +342,7 @@
       window.RealAdService.showAd('bronze')
         .then(() => {
           hydrateFromPlayer();
-          showToast('⚡ Energy filled!');
+          showToast(t('energy_filled'));
           try { window.dispatchEvent(new CustomEvent('real:burst', { detail: { label: '⚡ Energy filled!' } })); } catch (_) {}
           btn.disabled = false;
           btn.textContent = origText;
@@ -350,23 +350,23 @@
         })
         .catch(err => {
           if (err.type === 'cooldown') {
-            showToast('Cooldown — come back soon!');
+            showToast(t('ad_cooldown_msg'));
             btn.disabled = false;
             btn.textContent = origText;
             btn.removeAttribute('data-orig-text');
           } else if (err.type === 'skipped') {
-            showToast('Ad skipped — no reward.');
+            showToast(t('ad_skipped_msg'));
             btn.disabled = false;
             btn.textContent = origText;
             btn.removeAttribute('data-orig-text');
           } else {
             /* No ads available — retry once after 2 s */
             if (!isRetry) {
-              btn.textContent = 'Connecting to TON Ad-network…';
-              showToast('Connecting to TON Ad-network…');
+              btn.textContent = t('ad_connecting_msg');
+              showToast(t('ad_connecting_msg'));
               setTimeout(() => tryShowAd(true), 2000);
             } else {
-              showToast('No ads available right now. Try again later.');
+              showToast(t('ad_unavailable_msg'));
               btn.disabled = false;
               btn.textContent = origText;
               btn.removeAttribute('data-orig-text');
@@ -444,8 +444,8 @@
     if (energyEl)   energyEl.textContent = p.energy != null ? p.energy : 1000;
     if (fillEl)     fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
     const streak = p.dailyStreak || 1;
-    if (streakBadge) streakBadge.textContent = '🔥 ' + streak;
-    if (streakVal)   streakVal.textContent   = '🔥 ' + streak + (streak === 1 ? ' day' : ' days');
+    if (streakBadge) streakBadge.textContent = '🔥 ' + fmtNum(streak);
+    if (streakVal)   streakVal.textContent   = t('streak_days_tpl', { n: fmtNum(streak) });
 
     /* Zar/hr from hero ownership (written by heroes.js) */
     if (zarHrEl) {
@@ -511,9 +511,9 @@
       const tgUser = window.Telegram && window.Telegram.WebApp &&
                      window.Telegram.WebApp.initDataUnsafe &&
                      window.Telegram.WebApp.initDataUnsafe.user;
-      if (!tgUser || !tgUser.id) { setSwapError('Connect via Telegram to swap'); return; }
+      if (!tgUser || !tgUser.id) { setSwapError(t('swap_tg_required')); return; }
       swapBtn.disabled = true;
-      swapBtn.textContent = 'Swapping…';
+      swapBtn.textContent = t('swap_ing');
       if (swapNote) { swapNote.textContent = ''; swapNote.style.color = ''; }
       const ctrl = new AbortController();
       const timeout = setTimeout(() => ctrl.abort(), 10000);
@@ -538,21 +538,21 @@
             `+${realOut} REAL`,
             new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
           );
-          showToast(`✓ Swapped ${zarAmt.toLocaleString()} ZAR → ${realOut} REAL`);
+          showToast(t('swap_success', { zar: fmtNum(zarAmt), real: fmtNum(realOut) }));
           if (navigator.vibrate) navigator.vibrate([8, 4, 8]);
         } else if (r && r.error === 'insufficient_zar') {
           setSwapError(t('swap_not_enough', { have: fmtNum(r.have || 0) }) + ` (${t('swap_min_label', { rate: fmtNum(r.need || zarAmt) })})`);
         } else if (!res.ok) {
-          setSwapError(`Server error (${res.status}) — try again`);
+          setSwapError(t('swap_server_error', { code: res.status }));
         } else {
-          setSwapError('Swap failed — try again');
+          setSwapError(t('swap_failed'));
         }
       } catch (err) {
         clearTimeout(timeout);
-        setSwapError(err.name === 'AbortError' ? 'Request timed out — try again' : 'Network error — try again');
+        setSwapError(err.name === 'AbortError' ? t('swap_server_error', { code: 'timeout' }) : t('swap_failed'));
       } finally {
         swapBtn.disabled = false;
-        swapBtn.textContent = 'Swap ›';
+        swapBtn.textContent = t('swap_btn_label');
       }
     });
 

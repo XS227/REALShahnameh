@@ -5,6 +5,7 @@
     {
       "slug": "rostam",
       "name": "Rostam",
+      "name_fa": "رستم",
       "rarity": "Mythic",
       "era": "rostam-saga",
       "category": "people",
@@ -22,6 +23,7 @@
     {
       "slug": "simorgh",
       "name": "Simorgh",
+      "name_fa": "سیمرغ",
       "rarity": "Legendary",
       "era": "zal-saga",
       "category": "creatures",
@@ -39,6 +41,7 @@
     {
       "slug": "zal",
       "name": "Zal",
+      "name_fa": "زال",
       "rarity": "Epic",
       "era": "zal-saga",
       "category": "people",
@@ -56,6 +59,7 @@
     {
       "slug": "tahmineh",
       "name": "Tahmineh",
+      "name_fa": "تهمینه",
       "rarity": "Epic",
       "era": "rostam-saga",
       "category": "people",
@@ -73,6 +77,7 @@
     {
       "slug": "zahhak",
       "name": "Zahhak",
+      "name_fa": "ضحاک",
       "rarity": "Epic",
       "era": "zahhak-fereydun",
       "category": "people",
@@ -90,6 +95,7 @@
     {
       "slug": "fereydun",
       "name": "Fereydun",
+      "name_fa": "فریدون",
       "rarity": "Legendary",
       "era": "zahhak-fereydun",
       "category": "people",
@@ -107,6 +113,7 @@
     {
       "slug": "kaveh",
       "name": "Kaveh",
+      "name_fa": "کاوه",
       "rarity": "Rare",
       "era": "zahhak-fereydun",
       "category": "people",
@@ -124,6 +131,7 @@
     {
       "slug": "rakhsh",
       "name": "Rakhsh",
+      "name_fa": "رخش",
       "rarity": "Legendary",
       "era": "rostam-saga",
       "category": "creatures",
@@ -141,6 +149,7 @@
     {
       "slug": "akvan",
       "name": "Akvan Div",
+      "name_fa": "اکوان دیو",
       "rarity": "Epic",
       "era": "rostam-saga",
       "category": "creatures",
@@ -158,6 +167,7 @@
     {
       "slug": "esfandiyar",
       "name": "Esfandiyar",
+      "name_fa": "اسفندیار",
       "rarity": "Legendary",
       "era": "later-stories",
       "category": "people",
@@ -175,6 +185,7 @@
     {
       "slug": "persepolis",
       "name": "Persepolis",
+      "name_fa": "تخت جمشید",
       "rarity": "Epic",
       "era": "places",
       "category": "places",
