@@ -368,7 +368,14 @@
     });
 
     const reqMet = (r) => {
-      if (r.kind === "level")     return false;                    // hooks into player profile later
+      if (r.kind === "level") {
+        try {
+          const owned = JSON.parse(localStorage.getItem("real_owned_heroes_v1") || "{}");
+          const heroId = r.hero_id || SLUG;
+          const heroLevel = (owned[heroId] && owned[heroId].level) || 0;
+          return heroLevel >= (r.target || 1);
+        } catch { return false; }
+      }
       if (r.kind === "character") return unlockedChars.has(r.target);
       if (r.kind === "item")      return false;                    // future inventory system
       if (r.kind === "quiz")      return progress.quiz && progress.quiz.done;
