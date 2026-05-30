@@ -229,6 +229,12 @@
     if (!coreWrap || !orb) return;
 
     let tapCount = 0;
+    /* Track ZAR earned per 5-tap batch for the forge history log.
+       Accumulates the raw reward dispatched by app.js on each tap. */
+    let _batchZarEarned = 0;
+    window.addEventListener('real:tap:reward', (e) => {
+      _batchZarEarned += (e.detail && e.detail.reward) || 0;
+    });
 
     const spawnFX = (event) => {
       if (document.hidden) return;
@@ -284,8 +290,16 @@
       /* --- Live forge history (every 5th tap) --- */
       tapCount++;
       if (tapCount % 5 === 0) {
-        const p = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
-        addHistoryRow(t('forge_burst_evt') || 'Forge strike', '+' + fmtNum(p.zar || 0) + ' 🪙 ' + t('r_zar'), t('just_now') || 'now');
+        /* Log the delta earned in this batch — NOT the cumulative wallet total */
+        const delta = _batchZarEarned;
+        _batchZarEarned = 0;
+        if (delta > 0) {
+          addHistoryRow(
+            t('forge_burst_evt') || 'Forge strike',
+            '+' + fmtNum(delta) + ' 🪙 ' + t('r_zar'),
+            t('just_now') || 'now'
+          );
+        }
       }
 
       if (tapCount % 3 === 0) {
@@ -494,8 +508,20 @@
     };
 
     const updateSwapUI = () => {
-      const p    = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
-      const zarBal = p.zar || 0;
+      /* Always take the maximum of in-memory Player state and raw localStorage.
+         Guards against any stale-read divergence between the two stores. */
+      const getZar = () => {
+        const fromPlayer = window.RealPlayer ? (window.RealPlayer.getResource('zar') || 0) : 0;
+        try {
+          const ls = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
+          const fromLS = ls.zar || 0;
+          if (fromLS > fromPlayer && window.RealPlayer && window.RealPlayer.set) {
+            window.RealPlayer.set({ zar: fromLS }); // self-heal stale in-memory value
+          }
+          return Math.max(fromPlayer, fromLS);
+        } catch { return fromPlayer; }
+      };
+      const zarBal = getZar();
       const rate   = getRate();
       if (zarBalEl) zarBalEl.textContent = fmtNum(zarBal);
       if (rateLbl)  rateLbl.textContent  = t('swap_rate_label', { rate: fmtNum(rate) });
@@ -590,11 +616,19 @@
     if (window.RealSync) window.RealSync.ready().then(updateSwapUI);
     updateSwapUI();
 
-    // Live sync: refresh swap panel whenever ZAR changes (throttled to 300 ms)
+    // Live sync: refresh swap panel whenever ZAR changes.
+    // First call fires immediately; subsequent calls are debounced to 200 ms
+    // so rapid tapping doesn't thrash the DOM.
     let _zarUpdateTimer = null;
+    let _swapFirstUpdate = true;
     window.addEventListener('real:zar:updated', () => {
-      if (_zarUpdateTimer) return;
-      _zarUpdateTimer = setTimeout(() => { _zarUpdateTimer = null; updateSwapUI(); }, 300);
+      if (_swapFirstUpdate) {
+        _swapFirstUpdate = false;
+        updateSwapUI();
+        return;
+      }
+      if (_zarUpdateTimer) clearTimeout(_zarUpdateTimer);
+      _zarUpdateTimer = setTimeout(() => { _zarUpdateTimer = null; updateSwapUI(); }, 200);
     });
   };
 

@@ -1214,6 +1214,8 @@
       Player.set({ energy: state.energy });
       // Notify swap panel (and any other listener) that ZAR balance just changed
       try { window.dispatchEvent(new CustomEvent("real:zar:updated")); } catch {}
+      // Broadcast the exact reward delta so tap.js forge history logs correct amount
+      try { window.dispatchEvent(new CustomEvent("real:tap:reward", { detail: { reward } })); } catch {}
 
       // Daily tap counter for home quest tracker + server sync
       try {
