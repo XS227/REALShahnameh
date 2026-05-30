@@ -45,6 +45,32 @@
   const params = new URLSearchParams(location.search);
   const SLUG = params.get("slug") || "keyumars";
 
+  /* ── URL-based dev reset (?devReset=1) ────────────────────────────────────
+     Navigating to chapter.html?slug=keyumars&devReset=1 wipes all chapter
+     and quest state then reloads clean — useful for QA and scene testing.  */
+  if (params.get("devReset") === "1") {
+    try {
+      const keysToRemove = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (!k) continue;
+        if (k.startsWith("real_chapter_") || k.startsWith("real_quest_") ||
+            k.startsWith("real_daily_taps_") || k.startsWith("real_quiz_") ||
+            k.startsWith("quiz:") ||
+            k === "real_items_v1" || k === "real_boost_state" ||
+            k === "real_energy_ts" || k === "real_owned_heroes_v1" ||
+            k === "real_total_zar_hr") {
+          keysToRemove.push(k);
+        }
+      }
+      keysToRemove.forEach(k => localStorage.removeItem(k));
+    } catch {}
+    /* Reload without the devReset param so it doesn't loop */
+    const clean = new URL(location.href);
+    clean.searchParams.delete("devReset");
+    location.replace(clean.toString());
+  }
+
   /* ---------- Telegram WebApp ---------- */
   const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
   if (tg) {
@@ -156,7 +182,11 @@
     const scenes = (lore && lore.scenes) || [];
     if (!scenes.length) { host.innerHTML = ""; return; }
 
-    const readSet = new Set(progress.scenes);
+    /* Clamp: only count IDs that exist in the current chapter's scene list.
+       Legacy localStorage may contain stale IDs from older chapter versions
+       (e.g. 8-scene → 14-scene), which would produce "17 / 14" impossible math. */
+    const currentSceneIds = new Set(scenes.map(s => s.id));
+    const readSet = new Set((progress.scenes || []).filter(id => currentSceneIds.has(id)));
     if (progEl) progEl.textContent = `${fmtNum(readSet.size)} / ${fmtNum(scenes.length)}`;
 
     host.innerHTML = scenes.map((s, i) => {

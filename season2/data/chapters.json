@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-05-15T22:28:38.248Z",
+  "updatedAt": "2026-05-30T00:00:00Z",
   "totalChapters": 50,
   "seasonLengthDays": 270,
   "chapters": [
@@ -9,9 +9,9 @@
       "slug": "keyumars",
       "order": 1,
       "title": "Keyumars — The First King",
-      "title_fa": "کیومرث — نخستین شاه",
-      "summary": "From the mountains of Pars, Keyumars rules a world still soft with dawn. He clothes himself in leopard skin and the beasts bow.",
-      "story": "From the mountains of Pars, Keyumars ruled a world still soft with dawn. He clothed himself in leopard skin, and the beasts of the field came down to bow at his feet. His son Siyamak fell to the demon Khazura, and Keyumars wept thirty days for the loss. The first kingdom was forged in mourning and song.",
+      "title_fa": "کیومرث — سپیده‌دمِ خرد",
+      "summary": "Before any king sits the throne, Ferdowsi opens with God — the God of Soul and Wisdom. Creation unfolds: light from darkness, sun and moon set to their paths, humanity given kherad. Then from the sacred peaks of Pars, Keyumars rises as the first king.",
+      "story": "Ferdowsi opens not with a throne but with wisdom — 'be nam-e Khoda-vand-e jan o kherad'. The cosmos is built: light separates from darkness, sun and moon begin their eternal paths, and humanity alone receives the gift of kherad. From this philosophical foundation, Keyumars rises on the sacred mountains of Pars. He wears leopard skin; the beasts bow. He teaches the first laws of civilization. But Ahriman, lord of the dark, sends his Black Div down through the smoke to break the first dawn before it can bloom. Siamak falls. The first sorrow enters the world.",
       "banner_url": "",
       "image_url": "/assets/images/heroes/keyumars-hero.png",
       "unlock_day": 1,

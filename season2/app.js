@@ -650,6 +650,10 @@
             <span data-sp-reset-title>Reset onboarding</span>
             <span class="hmenu-reset-sub" data-sp-reset-sub>Choose language and path again.</span>
           </button>
+          <button class="hmenu-reset" data-sp-dev-reset style="margin-top:6px;border-color:rgba(255,108,108,.3);color:#ff8a8a;">
+            <span>🔄 Reset Chapter Progress</span>
+            <span class="hmenu-reset-sub">Wipe scenes, quests &amp; quiz state for fresh testing.</span>
+          </button>
         </div>
       </div>
     `;
@@ -779,6 +783,37 @@
       overlay.remove();
       buildOnboarding();
       haptic("medium");
+    });
+
+    overlay.querySelector("[data-sp-dev-reset]").addEventListener("click", () => {
+      /* Wipe all chapter progress, quest counters, quiz tiers, items, boost state.
+         Preserves language, path, skin and REAL balance so the economy stays intact. */
+      try {
+        const keysToRemove = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (!k) continue;
+          if (
+            k.startsWith("real_chapter_") ||
+            k.startsWith("real_quest_")   ||
+            k.startsWith("real_daily_taps_") ||
+            k.startsWith("real_quiz_")    ||
+            k.startsWith("quiz:")         ||
+            k === "real_items_v1"         ||
+            k === "real_boost_state"      ||
+            k === "real_energy_ts"        ||
+            k === "real_owned_heroes_v1"  ||
+            k === "real_total_zar_hr"
+          ) keysToRemove.push(k);
+        }
+        keysToRemove.forEach(k => localStorage.removeItem(k));
+        /* Also clear player balance/energy to pristine state */
+        Player.set({ energy: 1000, zar: 0, xp: 0, balance: 0, dailyStreak: 1 });
+      } catch (e) { Debug.push("devReset failed", e && e.message); }
+      close();
+      haptic("success");
+      toast("✓ Chapter progress wiped — reloading…");
+      setTimeout(() => location.reload(), 800);
     });
   };
 

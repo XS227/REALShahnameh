@@ -7,6 +7,45 @@
 /* Ensure hidden attribute is respected even when display is set by a class rule */
 [hidden] { display: none !important; }
 
+/* ── Global mobile-safety reset for chapter page ──────────────────────────
+   Prevents horizontal overflow / side-slipping seen on narrow viewports.   */
+.chapter-app,
+.chapter-app * {
+  box-sizing: border-box;
+}
+.chapter-app {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+/* Scene text must not push past viewport */
+.scene-text,
+.scene-modal-body p,
+.bt-msg,
+.copy,
+.intro {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+/* Battle and quiz cards must stay within the column */
+.battle-card,
+.quiz-card,
+.req-list,
+.quiz-tier-tabs {
+  overflow: hidden;
+  max-width: 100%;
+}
+/* Scene modal body must not bleed outside the card */
+.scene-modal-body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+/* Prevent any image from overflowing its container */
+.scene-modal-image img,
+.scene-card .scene-info {
+  max-width: 100%;
+}
+
 /* Battle teaser overlay — shown when player taps the CTA with all reqs met */
 .battle-teaser-overlay {
   position: fixed; inset: 0; z-index: 910;
