@@ -63,7 +63,7 @@
       /* Learn page */
       chronicle_progress: "پیشرفت شاهنامه",
       chapters_done_label: "۲ از ۱۲ فصل کامل شد",
-      day_of_journey: "روز ۱ از سفر ۹ ماهه شما",
+      day_of_journey: "پیشرفت سفر",
       hero_fragments: "قطعات قهرمان",
       boost_drops: "دریافت تقویتی",
       chronicle: "شرح وقایع",
@@ -873,7 +873,7 @@
       legacy_sdk_reload:      "برای تلاش مجدد ضربه بزنید",
 
       /* ── Persian / i18n clean-up additions ── */
-      day_of_journey_tpl:    "روز {day} از {total} · سفر ۹ ماهه",
+      day_of_journey_tpl:    "روز {day} از {total}",
       quest_tap_goal_suffix: " / ۲۰۰ ضربه امروز",
       collection_link:       "مجموعه ›",
       active_hero_kicker:    "قهرمان فعال",

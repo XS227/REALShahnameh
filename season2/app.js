@@ -269,6 +269,14 @@
     set(patch) {
       const next = { ...Player.get(), ...patch };
       Player._persist(next);
+      /* Global state-sync event — any sub-view (heroes, tap, home) can
+         listen to 'shahnama:state_sync' and re-read the latest balance. */
+      try {
+        const isBalanceChange = "balance" in patch || "zar" in patch || "xp" in patch;
+        if (isBalanceChange) {
+          window.dispatchEvent(new CustomEvent("shahnama:state_sync", { detail: next }));
+        }
+      } catch {}
       return next;
     },
 
@@ -507,9 +515,14 @@
     const p = Storage.read(LS.PATH);
     return (p === "hero" || p === "heroine") ? p : null;
   };
-  const t = (key) => {
+  const t = (key, vars) => {
     const lang = getLang() || "en";
-    return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key;
+    let s = (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key;
+    if (vars && typeof s === "string") {
+      s = s.replace(/\{(\w+)\}/g, (m, k) =>
+        Object.prototype.hasOwnProperty.call(vars, k) ? String(vars[k]) : m);
+    }
+    return s;
   };
 
   const applyLang = (lang) => {

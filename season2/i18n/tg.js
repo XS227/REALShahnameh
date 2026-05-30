@@ -62,7 +62,7 @@
       /* Learn page */
       chronicle_progress: "Пешрафти солнома",
       chapters_done_label: "2 аз 12 боб анҷом ёфт",
-      day_of_journey: "Рӯзи 1 аз сафари 9-моҳаи шумо",
+      day_of_journey: "Пешрафти сафар",
       hero_fragments: "Пораҳои қаҳрамон",
       boost_drops: "Тӯҳфаҳои тақвият",
       chronicle: "Солнома",

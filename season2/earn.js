@@ -414,6 +414,12 @@
         if (data.rewards.gems) window.RealPlayer.addResource('gems', data.rewards.gems);
         if (data.rewards.farr) window.RealPlayer.addResource('farr', data.rewards.farr);
         if (window.RealSync) window.RealSync.syncBalance();
+        /* Notify all views (heroes, tap, home) of the new balance */
+        try {
+          const p = window.RealPlayer.get();
+          window.dispatchEvent(new CustomEvent('shahnama:state_sync', { detail: p }));
+          window.dispatchEvent(new CustomEvent('balanceUpdate'));
+        } catch (_) {}
       }
       const task = SOCIAL_TASKS.find(t => t.id === taskId);
       showToast(`Task complete! +${(task && task.reward_real) || 0} ◆`);
@@ -700,8 +706,13 @@
           }
         }
       } catch (_) {}
-      /* Dispatch balance update so home treasury reflects new REAL */
+      /* Dispatch balance + state-sync so all views (including heroes.html)
+         immediately reflect the new REAL balance without a page reload. */
       try { window.dispatchEvent(new CustomEvent('balanceUpdate')); } catch (_) {}
+      try {
+        const p = window.RealPlayer ? window.RealPlayer.get() : {};
+        window.dispatchEvent(new CustomEvent('shahnama:state_sync', { detail: p }));
+      } catch (_) {}
     }
 
     const r = data.rewards;

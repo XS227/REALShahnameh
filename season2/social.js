@@ -109,11 +109,15 @@
 
     let html = rows.map((r, i) => {
       const isMe = r.is_me;
+      const uid  = r.telegram_id || r.id || '';
       return `
         <div class="lb-row ${rankCls(i)}${isMe ? ' lb-me' : ''}">
           <span class="lb-rank">${fmtN_(i + 1)}</span>
           <div>
-            <div class="lb-name">${displayName(r)}${isMe ? ` <span class="you-tag">${t('lb_you')}</span>` : ''}</div>
+            <div class="lb-name${uid && !isMe ? ' lb-clickable' : ''}"
+                 ${uid && !isMe ? `data-uid="${uid}" style="cursor:pointer;"` : ''}>
+              ${displayName(r)}${isMe ? ` <span class="you-tag">${t('lb_you')}</span>` : ''}
+            </div>
             <div class="lb-sub">${t('lb_lvl_sub', { n: fmtN_(r.level || 1) })}</div>
           </div>
           <span class="lb-pts">${scoreOf(type, r)}</span>
@@ -966,6 +970,106 @@
 
     startEventTimers(trn.ends_at_ms);
   };
+
+  /* ── Global user profile modal ───────────────────────────────────────── */
+
+  const showUserProfileModal = (userId) => {
+    const existing = document.getElementById('user-profile-overlay');
+    if (existing) existing.remove();
+
+    const overlay = document.createElement('div');
+    overlay.id = 'user-profile-overlay';
+    overlay.style.cssText = [
+      'position:fixed;inset:0;z-index:9990',
+      'background:rgba(4,5,11,.88)',
+      'backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)',
+      'display:flex;align-items:flex-end;justify-content:center',
+    ].join(';');
+
+    overlay.innerHTML = `
+      <div style="
+        width:100%;max-width:480px;
+        background:linear-gradient(170deg,#0d1020,#04050b);
+        border-top:1px solid rgba(244,197,107,.25);
+        border-radius:22px 22px 0 0;
+        padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));
+        animation:slide-up .3s cubic-bezier(.2,.9,.2,1);">
+        <div style="width:36px;height:4px;background:rgba(255,255,255,.15);border-radius:2px;margin:0 auto 14px;"></div>
+        <div id="upm-body" style="text-align:center;padding:10px 0;">
+          <div style="font-size:22px;margin-bottom:8px;">⏳</div>
+          <p style="color:var(--muted,#6c7287);font-size:13px;">Loading profile…</p>
+        </div>
+        <button id="upm-close" style="
+          width:100%;margin-top:14px;padding:12px;border:1px solid rgba(255,255,255,.12);
+          background:none;border-radius:12px;color:var(--muted,#6c7287);font-size:13px;cursor:pointer;">
+          Close
+        </button>
+      </div>`;
+
+    document.body.appendChild(overlay);
+
+    const close = () => overlay.remove();
+    overlay.querySelector('#upm-close').addEventListener('click', close);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+
+    /* Fetch user data */
+    const qs = new URLSearchParams({ telegram_id: String(userId) });
+    fetch('/api/season2/user/me?' + qs.toString(), { cache: 'no-store' })
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        const body = overlay.querySelector('#upm-body');
+        if (!body) return;
+        if (!data || data.status !== 1 || !data.user) {
+          body.innerHTML = `<p style="color:var(--muted,#6c7287);font-size:13px;">Profile unavailable.</p>`;
+          return;
+        }
+        const u    = data.user;
+        const name = (u.first_name || '') + (u.last_name ? ' ' + u.last_name : '') || 'Warrior';
+        const lvl  = u.level || 1;
+        const xp   = u.xp || 0;
+        const refs = u.verified_referral_count || 0;
+        const initial = name.charAt(0).toUpperCase();
+        body.innerHTML = `
+          <div style="
+            width:56px;height:56px;border-radius:50%;
+            background:linear-gradient(135deg,rgba(244,197,107,.3),rgba(140,109,255,.2));
+            border:2px solid rgba(244,197,107,.4);
+            display:flex;align-items:center;justify-content:center;
+            font-size:22px;font-weight:900;color:var(--gold,#f4c56b);
+            margin:0 auto 10px;">${initial}</div>
+          <div style="font-size:16px;font-weight:800;color:#fff;margin-bottom:2px;">${name}</div>
+          ${u.username ? `<div style="font-size:12px;color:var(--muted,#6c7287);margin-bottom:10px;">@${u.username}</div>` : ''}
+          <div style="display:flex;gap:16px;justify-content:center;margin-top:8px;">
+            <div style="text-align:center;">
+              <div style="font-size:16px;font-weight:800;color:var(--gold,#f4c56b);">${lvl}</div>
+              <div style="font-size:10px;color:var(--muted,#6c7287);letter-spacing:.5px;">LEVEL</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:16px;font-weight:800;color:var(--gold,#f4c56b);">${fmtN(xp)}</div>
+              <div style="font-size:10px;color:var(--muted,#6c7287);letter-spacing:.5px;">XP</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:16px;font-weight:800;color:var(--gold,#f4c56b);">${refs}</div>
+              <div style="font-size:10px;color:var(--muted,#6c7287);letter-spacing:.5px;">WARRIORS</div>
+            </div>
+          </div>`;
+      })
+      .catch(() => {
+        const body = overlay.querySelector('#upm-body');
+        if (body) body.innerHTML = `<p style="color:var(--muted,#6c7287);font-size:13px;">Could not load profile.</p>`;
+      });
+  };
+
+  /* Expose globally so leaderboards, referral lists, and other pages can trigger it */
+  window.showUserProfile = showUserProfileModal;
+
+  /* Wire delegated click on any [data-uid] element across the page */
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest('[data-uid]');
+    if (!el) return;
+    const uid = el.getAttribute('data-uid');
+    if (uid) showUserProfileModal(uid);
+  });
 
   /* ── INIT ─────────────────────────────────────────────────────────────── */
 

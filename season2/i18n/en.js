@@ -61,7 +61,7 @@
       /* Learn page */
       chronicle_progress: "Chronicle progress",
       chapters_done_label: "2 of 12 chapters complete",
-      day_of_journey: "Day 1 of your 9-month journey",
+      day_of_journey: "Journey Progress",
       hero_fragments: "Hero fragments",
       boost_drops: "Boost drops",
       chronicle: "Chronicle",
@@ -869,7 +869,7 @@
       legacy_sdk_reload:      "Tap to retry wallet connection",
 
       /* ── Persian / i18n clean-up additions ── */
-      day_of_journey_tpl:    "Day {day} of {total} · 9-month journey",
+      day_of_journey_tpl:    "Day {day} of {total}",
       quest_tap_goal_suffix: " / 200 taps today",
       collection_link:       "Collection ›",
       active_hero_kicker:    "Active hero",

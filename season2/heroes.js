@@ -1450,6 +1450,18 @@
     buildCards(document.querySelector("[data-filter].active")?.getAttribute("data-filter") || "all");
   });
 
+  /* Global balance sync — when any page changes REAL/ZAR/XP it fires
+     'shahnama:state_sync'; we re-sync RealPlayer from localStorage so
+     the hero upgrade check always reads the freshest balance. */
+  window.addEventListener("shahnama:state_sync", (e) => {
+    try {
+      const detail = e.detail;
+      if (detail && window.RealPlayer && window.RealPlayer.set) {
+        window.RealPlayer.set({ balance: detail.balance || 0, zar: detail.zar || 0 });
+      }
+    } catch {}
+  });
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
