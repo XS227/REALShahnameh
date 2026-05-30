@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-30T00:00:00Z",
+  "chapter_slug": "zahhak",
+  "chapter_id": 5,
+  "era": {
+    "label_en": "~5400–4400 BC — The Thousand-Year Night",
+    "label_fa": "~۵۴۰۰–۴۴۰۰ پ.م — شبِ هزار ساله"
+  },
+  "lore_summary": {
+    "en": "The farr has left Jamshid. Now something worse than a demon must be made: a king. Ahriman finds a young Arab lord named Zahhak — generous, brave, and dangerously easy to lead. He comes first as a companion, then as a cook. He kills Zahhak's father through a garden trick. He serves flesh until the young man's nature changes. Then two kisses on the shoulders — and black serpents grow where lips touched. Each day they demand two human brains. For a thousand years the youth of Pars is fed to the snakes. Until a blacksmith named Kaveh raises his leather apron on a spear — and the world remembers what it is.",
+    "fa": "فَر از جمشید رفته است. اکنون چیزی بدتر از یک دیو باید ساخته شود: یک شاه. اهریمن جوان ارباب عربی به نام ضحاک را می‌یابد — بخشنده، دلیر، و به خطرناکی آسان‌هدایت‌شدنی. ابتدا به‌عنوانِ همدم می‌آید، بعد به‌عنوانِ آشپز. پدرِ ضحاک را از راهِ فریبِ باغ می‌کشد. گوشت می‌دهد تا طبیعتِ جوان تغییر کند. بعد دو بوسه بر شانه‌ها — و ماران سیاه جایی که لب‌ها لمس کرد می‌روید. هر روز دو مغز انسانی مطالبه می‌کنند. هزار سال جوانانِ پارس به ماران داده می‌شوند. تا آنکه آهنگری به نامِ کاوه پیش‌بندِ چرمی‌اش را بر نیزه‌ای برمی‌افرازد — و جهان به یاد می‌آورد که چیست."
+  },
+  "timeline": [
+    {
+      "id": "ahriman-finds-zahhak",
+      "year_label_en": "~5400 BC",
+      "year_label_fa": "~۵۴۰۰ پ.م",
+      "title_en": "Ahriman Finds His Vessel",
+      "title_fa": "اهریمن ظرفش را می‌یابد",
+      "body_en": "The farr is gone from Jamshid. Ahriman looks across the world for the right man: not a div, not a monster — a human king, with human legitimacy, whose cruelty will seem like policy.",
+      "body_fa": "فَر از جمشید رفته است. اهریمن سراسرِ جهان را می‌نگرد تا آدمِ مناسب را بیابد: نه دیو، نه هیولا — یک شاهِ انسانی، با مشروعیتِ انسانی، که بدخواهی‌اش سیاست به نظر برسد.",
+      "image": null,
+      "side": "dark"
+    },
+    {
+      "id": "serpents-grow",
+      "year_label_en": "~5380 BC",
+      "year_label_fa": "~۵۳۸۰ پ.م",
+      "title_en": "The Serpents Grow",
+      "title_fa": "ماران می‌رویند",
+      "body_en": "From the shoulder-kisses of Iblis, two black serpents spring. The physicians are called. They say: the only food that calms them is human brain. Zahhak does not refuse. The thousand-year night begins.",
+      "body_fa": "از بوسه‌های ابلیس بر شانه‌ها، دو مار سیاه می‌روید. پزشکان فراخوانده می‌شوند. می‌گویند: تنها خوراکی که آرامشان می‌کند مغز انسان است. ضحاک رد نمی‌کند. شبِ هزار ساله آغاز می‌شود.",
+      "image": null,
+      "side": "dark"
+    },
+    {
+      "id": "kaveh-rises",
+      "year_label_en": "~4400 BC",
+      "year_label_fa": "~۴۴۰۰ پ.م",
+      "title_en": "Kaveh Raises the Banner",
+      "title_fa": "کاوه درفش برمی‌افرازد",
+      "body_en": "Kaveh the blacksmith stands before Zahhak's throne. He has lost son after son to the serpents. He takes his leather apron from his own shoulders and raises it on a spear. The world sees. The march to Fereydun begins.",
+      "body_fa": "کاوه‌ی آهنگر پیشِ تختِ ضحاک می‌ایستد. پسر پس از پسر را به ماران از دست داده است. پیش‌بندِ چرمی را از شانه‌هایش برمی‌دارد و بر نیزه برمی‌افرازد. جهان می‌بیند. راهپیماییِ به‌سوی فریدون آغاز می‌شود.",
+      "image": null,
+      "side": "light"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "the-good-father",
+      "order": 1,
+      "title_en": "Mardas — The Good Father",
+      "title_fa": "مرداس — پدرِ خوب",
+      "era_en": "~5400 BC",
+      "era_fa": "~۵۴۰۰ پ.م",
+      "body_en": "Before Zahhak becomes a tyrant, he has a father named Mardas — a just man who rises before dawn to pray, tends a garden, and has never given anyone a reason to fear him. Ferdowsi spends time here. The point is structural: evil does not come from nothing. It finds the good and corrupts it. Mardas is introduced so his absence will be felt. He is the world before the door opens.",
+      "body_fa": "پیش از آنکه ضحاک ستمگر شود، پدری دارد به نامِ مرداس — مردِ عادلی که پیش از سپیده‌دم برمی‌خیزد تا نماز بخواند، باغی نگه می‌دارد، و هرگز به کسی دلیلی برای ترس نداده است. فردوسی اینجا وقت می‌گذارد. نکته ساختاری است: شر از هیچ نمی‌آید. خوب را می‌یابد و فاسدش می‌کند. مرداس معرفی می‌شود تا غیابش احساس شود. او جهان پیش از باز شدنِ دَر است.",
+      "atmosphere": "dawn",
+      "image": "/assets/images/scenes/mardas-father-scene.png",
+      "reward": { "xp": 35 },
+      "unlocks_codex": ["mardas-codex"]
+    },
+    {
+      "id": "the-companion",
+      "order": 2,
+      "title_en": "The Companion",
+      "title_fa": "همدم",
+      "era_en": "~5400 BC",
+      "era_fa": "~۵۴۰۰ پ.م",
+      "body_en": "Ahriman comes to Zahhak not as a demon but as a companion — someone who agrees with everything Zahhak says, flatters every decision, and fills every silence with praise. He is patient. He is warm. He never asks for anything yet. He is only waiting for the moment when gratitude has grown deep enough that a single favour will feel reasonable. This is how Ahriman works when he cannot use force.",
+      "body_fa": "اهریمن نه به‌عنوانِ دیو که به‌عنوانِ همدم نزدِ ضحاک می‌آید — کسی که با همه چیزی که ضحاک می‌گوید موافق است، هر تصمیمی را تملق می‌گوید، و هر سکوتی را با ستایش پر می‌کند. صبور است. صمیمی است. هنوز هیچ نمی‌خواهد. فقط منتظر لحظه‌ای است که قدردانی به اندازه‌ای عمیق شده باشد که یک خواهشِ واحد معقول به نظر برسد. روشِ اهریمن وقتی نمی‌تواند از زور استفاده کند این است.",
+      "atmosphere": "court",
+      "image": "/assets/images/scenes/the-companion-scene.png",
+      "reward": { "xp": 40 },
+      "unlocks_codex": ["ahriman-method-ch5"]
+    },
+    {
+      "id": "the-garden-pit",
+      "order": 3,
+      "title_en": "The Garden Pit",
+      "title_fa": "چاهِ باغ",
+      "era_en": "~5400 BC",
+      "era_fa": "~۵۴۰۰ پ.م",
+      "body_en": "Ahriman's first favour: he offers to tend Mardas' garden while the old man sleeps. Zahhak agrees — why not? He digs a pit in the path Mardas walks each dawn to pray. In the dark, the old man falls. When Zahhak finds his father, the garden is still beautiful. That is Ahriman's method: leave the surface undisturbed and hollow out everything beneath it.",
+      "body_fa": "اولین خواهشِ اهریمن: پیشنهاد می‌دهد در حالی که پیرمرد می‌خوابد از باغِ مرداس نگهداری کند. ضحاک می‌پذیرد — چرا نه؟ در مسیری که مرداس هر سپیده‌دم برای نماز طی می‌کند چاهی می‌کند. در تاریکی پیرمرد می‌افتد. وقتی ضحاک پدرش را پیدا می‌کند، باغ هنوز زیباست. روشِ اهریمن این است: سطح را دست‌نخورده بگذار و همه چیز را زیرش تو خالی کن.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/garden-pit-scene.png",
+      "reward": { "xp": 45 },
+      "unlocks_codex": ["hollow-method"]
+    },
+    {
+      "id": "the-cooks-kiss",
+      "order": 4,
+      "title_en": "The Cook's Kiss",
+      "title_fa": "بوسه‌ی آشپز",
+      "era_en": "~5380 BC",
+      "era_fa": "~۵۳۸۰ پ.م",
+      "body_en": "Ahriman's second form: a cook of great skill. He serves Zahhak increasingly rich meals — first egg yolk, then small birds, then game, then more. Each meal changes the young king slightly, and he does not notice the change because it comes gradually. When Ahriman finally asks to kiss Zahhak's shoulders as a mark of gratitude, Zahhak grants it without thought. First kiss. Second kiss. From each shoulder, a black serpent grows.",
+      "body_fa": "شکلِ دومِ اهریمن: آشپزی ماهر. به ضحاک وعده‌های روز‌به‌روز غنی‌تری می‌دهد — ابتدا زرده‌ی تخم‌مرغ، بعد پرندگانِ کوچک، بعد شکار، بعد بیشتر. هر وعده شاهِ جوان را کمی تغییر می‌دهد و او متوجه تغییر نمی‌شود چون به‌تدریج می‌آید. وقتی اهریمن بالاخره می‌خواهد به‌عنوانِ سپاسگزاری شانه‌های ضحاک را ببوسد، ضحاک بی‌اندیشه می‌پذیرد. بوسه‌ی اول. بوسه‌ی دوم. از هر شانه ماری سیاه می‌روید.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/cooks-kiss-scene.png",
+      "reward": { "xp": 55 },
+      "unlocks_codex": ["shoulder-serpents", "iblis-cook"]
+    },
+    {
+      "id": "the-physicians",
+      "order": 5,
+      "title_en": "The Prescription",
+      "title_fa": "نسخه",
+      "era_en": "~5380 BC",
+      "era_fa": "~۵۳۸۰ پ.م",
+      "body_en": "Every physician in the kingdom is summoned. They examine the serpents. They return with the same answer: the only food that will keep the serpents quiet is the fresh brain of a young man or woman. The Shahnameh does not slow here. It moves to the next scene quickly, because it knows that once the prescription is given, the thousand years follow without explanation needed. Zahhak accepts. The kitchens are reorganized.",
+      "body_fa": "هر پزشکِ پادشاهی احضار می‌شود. ماران را معاینه می‌کنند. همگی با یک پاسخ برمی‌گردند: تنها خوراکی که ماران را ساکت نگه می‌دارد مغزِ تازه‌ی جوانِ مرد یا زنِ جوانِ تازه است. شاهنامه اینجا کُند نمی‌شود. به صحنه‌ی بعدی سریع می‌رود، چون می‌داند که یک بار نسخه داده شد، هزار سال بدون نیاز به توضیح پی می‌آیند. ضحاک می‌پذیرد. آشپزخانه‌ها سازماندهی مجدد می‌شوند.",
+      "atmosphere": "court",
+      "image": "/assets/images/scenes/the-prescription-scene.png",
+      "reward": { "xp": 60 },
+      "unlocks_codex": ["serpent-price", "armayel-garmayel"]
+    },
+    {
+      "id": "kaveh-at-the-throne",
+      "order": 6,
+      "title_en": "Kaveh at the Throne",
+      "title_fa": "کاوه پیشِ تخت",
+      "era_en": "~4400 BC",
+      "era_fa": "~۴۴۰۰ پ.م",
+      "body_en": "Kaveh has seventeen sons. Sixteen have been taken for the serpents. The seventeenth is before him now and the court documents require his signature — his consent to the taking. He signs. Then he tears it. He picks up the document and tears it apart in Zahhak's court. He takes the leather apron from his own shoulders — the mark of a blacksmith, his craft's badge — and wraps it around a spear. He walks out. The guards do not stop him. Some things carry their own authority.",
+      "body_fa": "کاوه هفده پسر دارد. شانزده برای ماران برده شده‌اند. هفدهمی اکنون پیشِ اوست و اسنادِ دربار امضایش را می‌خواهند — رضایتش به برده‌شدن. امضا می‌کند. بعد پاره می‌کند. سند را برمی‌دارد و در دربارِ ضحاک پاره‌پاره می‌کند. پیش‌بندِ چرمی را — نشانِ آهنگری، نشانِ صنعتش — از شانه‌هایش برمی‌دارد و دور نیزه‌ای می‌پیچد. بیرون می‌رود. نگهبانان جلویش را نمی‌گیرند. برخی چیزها اقتدارِ خودشان را دارند.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/kaveh-at-throne-scene.png",
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["kaveh-banner", "derafsh-kaviani"]
+    },
+    {
+      "id": "fereydun-waits",
+      "order": 7,
+      "title_en": "The Child and the Bull",
+      "title_fa": "کودک و گاو",
+      "era_en": "~4420 BC",
+      "era_fa": "~۴۴۲۰ پ.م",
+      "body_en": "Before Kaveh raises his banner, there is already a child in the mountains being fed by a divine bull named Birmaya. The child's name is Fereydun. Zahhak has heard prophecy: a boy nurtured by a bull will end his reign. He hunts the bull. He hunts the boy. He finds neither. The bull is killed but the boy is already gone — hidden in the mountains of Alborz by his mother. The thousand years are not over yet. But the thing that will end them is already alive.",
+      "body_fa": "پیش از آنکه کاوه درفشش را بیفرازد، کودکی در کوه‌ها از گاوی الهی به نامِ برمایه تغذیه می‌شود. نامِ کودک فریدون است. ضحاک پیشگویی شنیده است: پسری که از گاو تغذیه شده شاهی‌اش را پایان خواهد داد. گاو را شکار می‌کند. پسر را شکار می‌کند. هیچ‌کدام را نمی‌یابد. گاو کشته می‌شود اما پسر از پیش رفته — مادرش او را در کوه‌های البرز پنهان کرده است. هزار سال هنوز تمام نشده. اما آنچه پایانش خواهد داد از پیش زنده است.",
+      "atmosphere": "dawn",
+      "image": "/assets/images/scenes/fereydun-child-scene.png",
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["birmaya-bull", "fereydun-ch5", "alborz-refuge"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "zahhak",
+      "name_en": "Zahhak",
+      "name_fa": "ضحاک",
+      "role_en": "Fifth King · Serpent Tyrant · Instrument of Ahriman",
+      "role_fa": "پنجمین شاه · ستمگرِ مار · ابزارِ اهریمن",
+      "rarity": "mythic",
+      "level_required": 1,
+      "lore_en": "He was not born evil. He was generous and brave as a youth. That is what makes his fall matter: Ahriman needed a vessel with genuine qualities, because a simple monster would not last a thousand years on a throne. Ferdowsi understands that the worst tyrannies are built on what was once genuinely good.",
+      "lore_fa": "از تولد شرور نبود. در جوانی بخشنده و دلیر بود. همین است که سقوطش اهمیت دارد: اهریمن به ظرفی با کیفیاتِ واقعی نیاز داشت، چون هیولایی ساده هزار سال بر تخت دوام نمی‌آورد. فردوسی می‌داند که بدترین ستمگری‌ها بر آنچه روزی واقعاً خوب بود ساخته می‌شوند.",
+      "image": "/season2/uploads/chapters/zahhak.png?v=1778880472603",
+      "unlocked": true,
+      "side": "dark"
+    },
+    {
+      "slug": "mardas",
+      "name_en": "Mardas",
+      "name_fa": "مرداس",
+      "role_en": "Zahhak's Father · The Just Man",
+      "role_fa": "پدرِ ضحاک · مردِ عادل",
+      "rarity": "rare",
+      "level_required": 3,
+      "lore_en": "A devout man who prayed at dawn and tended his garden. Ferdowsi introduces him so his murder has weight — you cannot understand the depth of Zahhak's corruption without first knowing what he let be destroyed.",
+      "lore_fa": "مرد متدینی که سپیده‌دم نماز می‌خواند و باغش را نگه می‌داشت. فردوسی او را معرفی می‌کند تا قتلش وزن داشته باشد — عمقِ فسادِ ضحاک را نمی‌توانی بفهمی تا اول ندانی چه چیزی را گذاشت نابود شود.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:the-good-father"
+    },
+    {
+      "slug": "kaveh",
+      "name_en": "Kaveh the Blacksmith",
+      "name_fa": "کاوه‌ی آهنگر",
+      "role_en": "The People's Voice · Bearer of the Banner",
+      "role_fa": "صدایِ مردم · حاملِ درفش",
+      "rarity": "legendary",
+      "level_required": 8,
+      "lore_en": "He lost sixteen sons to the serpents. When the seventeenth was summoned, he signed the court document of consent — then tore it apart in Zahhak's court. He walked out carrying his leather apron on a spear. The guards did not stop him. Some things carry their own authority. His apron becomes the Derafsh Kaviani — the royal banner of Persia.",
+      "lore_fa": "شانزده پسر را به ماران از دست داد. وقتی هفدهمی احضار شد، سندِ رضایتِ دربار را امضا کرد — بعد در دربارِ ضحاک پاره‌اش کرد. با پیش‌بندِ چرمی‌اش بر نیزه‌ای بیرون رفت. نگهبانان جلویش را نگرفتند. برخی چیزها اقتدارِ خودشان را دارند. پیش‌بندش درفشِ کاویانی می‌شود — پرچمِ شاهی پارس.",
+      "image": "/assets/images/heroes/kaveh-hero.png",
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:kaveh-at-the-throne"
+    },
+    {
+      "slug": "fereydun-child",
+      "name_en": "Fereydun",
+      "name_fa": "فریدون",
+      "role_en": "The Hidden Prince · Destined Liberator",
+      "role_fa": "شاهزاده‌ی پنهان · رهاینده‌ی مقدر",
+      "rarity": "legendary",
+      "level_required": 10,
+      "lore_en": "He appears here only as a child in the mountains of Alborz, fed by the divine bull Birmaya. But prophecy has already named him: the one who will end Zahhak's thousand-year reign. His full story is in chapter 6.",
+      "lore_fa": "اینجا تنها به‌عنوانِ کودکی در کوه‌های البرز ظاهر می‌شود که از گاوِ الهیِ برمایه تغذیه می‌شود. اما پیشگویی او را از پیش نامیده: کسی که شاهیِ هزار ساله‌ی ضحاک را پایان خواهد داد. داستانِ کاملش در دفترِ ششم است.",
+      "image": "/season2/uploads/chapters/fereydun.png?v=1778880804584",
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:fereydun-waits"
+    },
+    {
+      "slug": "ahriman-ch5",
+      "name_en": "Ahriman",
+      "name_fa": "اهریمن",
+      "role_en": "The Architect · Maker of the Tyrant",
+      "role_fa": "معمار · سازنده‌ی ستمگر",
+      "rarity": "mythic",
+      "level_required": 12,
+      "lore_en": "In chapter 3 he was ridden. In chapter 4 he only whispered. Here he works directly — as gardener, as cook, as kisser of shoulders. He builds the tyrant methodically, step by step, meal by meal, until Zahhak cannot remember what he was before Ahriman found him.",
+      "lore_fa": "در دفترِ سوم سواری شد. در دفترِ چهارم تنها نجوا کرد. اینجا مستقیم کار می‌کند — به‌عنوانِ باغبان، آشپز، بوسنده‌ی شانه‌ها. ستمگر را گام به گام، وعده به وعده می‌سازد تا ضحاک دیگر به یاد نمی‌آورد پیش از آنکه اهریمن بیابدش چه بود.",
+      "image": "/assets/images/enemies/ahriman-boss.png",
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:the-companion"
+    }
+  ],
+  "places": [
+    {
+      "slug": "zahhak-court",
+      "name_en": "Zahhak's Court",
+      "name_fa": "دربارِ ضحاک",
+      "kind_en": "Seat of a Thousand Years of Darkness",
+      "kind_fa": "جایگاهِ هزار سال تاریکی",
+      "summary_en": "The court of Jamshid — once the brightest seat in the chronicle — becomes the court of the serpent king. The crystal throne is gone. The four orders still exist but serve a different purpose. The kitchens have been reorganized.",
+      "summary_fa": "دربارِ جمشید — روزی درخشان‌ترین جایگاه در این تاریخ — دربارِ شاهِ مار می‌شود. تختِ بلورین رفته است. چهار طبقه هنوز هستند اما اکنون هدفِ دیگری دارند. آشپزخانه‌ها سازماندهی مجدد شده‌اند.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:the-physicians"
+    },
+    {
+      "slug": "alborz-refuge",
+      "name_en": "Alborz — The Mountain Refuge",
+      "name_fa": "البرز — پناهگاهِ کوهستانی",
+      "kind_en": "Where the Liberator is Hidden",
+      "kind_fa": "جایی که رهاینده پنهان است",
+      "summary_en": "Fereydun's mother takes him to the mountains of Alborz when Zahhak's agents come searching. The great mountain range that first appeared as Keyumars' survey ground now becomes a place of hiding and hope.",
+      "summary_fa": "مادرِ فریدون او را به کوه‌های البرز می‌برد وقتی عوامل ضحاک برای جستجو می‌آیند. رشته‌کوهِ بزرگی که نخست به‌عنوانِ زمینِ بررسیِ کیومرث ظاهر شد اکنون جایِ پناه و امید می‌شود.",
+      "image": "/assets/images/locations/mount-alborz-location.png",
+      "unlocked": false,
+      "unlock_via": "scene:fereydun-waits"
+    },
+    {
+      "slug": "mardas-garden",
+      "name_en": "Mardas' Garden",
+      "name_fa": "باغِ مرداس",
+      "kind_en": "Where Evil First Entered",
+      "kind_fa": "جایی که شر اول وارد شد",
+      "summary_en": "A peaceful garden — the last peaceful place in the chapter. Ahriman digs a pit here in the path Mardas walks each dawn. The garden does not change. Only what is beneath it does. This is the Shahnameh's quietest horror.",
+      "summary_fa": "باغی آرام — آخرین جای آرام در این دفتر. اهریمن اینجا در مسیری که مرداس هر سپیده‌دم طی می‌کند چاهی می‌کند. باغ تغییر نمی‌کند. فقط آنچه زیرش است. این آرام‌ترین وحشتِ شاهنامه است.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:the-garden-pit"
+    },
+    {
+      "slug": "pars-under-darkness",
+      "name_en": "Pars — Under the Thousand-Year Night",
+      "name_fa": "پارسِ زیرِ شبِ هزار ساله",
+      "kind_en": "A Civilization That Forgets the Light",
+      "kind_fa": "تمدنی که نور را فراموش می‌کند",
+      "summary_en": "The same land that Keyumars first civilized, that Hushang lit with fire, that Tahmuras taught to write, that Jamshid built into paradise — now under darkness for a thousand years. A generation grows up that has never known another king. That is what makes tyranny permanent: time.",
+      "summary_fa": "همان سرزمینی که کیومرث نخست متمدن کرد، هوشنگ با آتش روشنش کرد، تهمورث نوشتن آموزش داد، جمشید به بهشت ساخت — اکنون هزار سال زیرِ تاریکی. نسلی رشد می‌کند که هیچ شاهِ دیگری را نشناخته است. همین است که ستمگری را ماندگار می‌کند: زمان.",
+      "image": null,
+      "unlocked": true
+    }
+  ],
+  "battle": {
+    "boss_slug": "zahhak",
+    "boss_name_en": "Zahhak — The Serpent King",
+    "boss_name_fa": "ضحاک — شاهِ مار",
+    "boss_image": "/season2/uploads/chapters/zahhak.png?v=1778880472603",
+    "boss_master_slug": "ahriman",
+    "boss_master_image": "/assets/images/enemies/ahriman-boss.png",
+    "intro_en": "A thousand years of darkness. Two serpents that demand human brains. A king who was once generous and brave. To face this chapter's gate, you must know the full arc — from Mardas' garden to Kaveh's apron.",
+    "intro_fa": "هزار سال تاریکی. دو ماری که مغزِ انسانی مطالبه می‌کنند. شاهی که روزی بخشنده و دلیر بود. برای مواجهه با دروازه‌ی این دفتر، باید قوسِ کامل را بدانی — از باغِ مرداس تا پیش‌بندِ کاوه.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 15,
+        "label_en": "Reach Zahhak LVL 15",
+        "label_fa": "رسیدن به سطحِ ۱۵ ضحاک",
+        "label_tg": "Расидан ба сатҳи 15 Заҳҳок",
+        "hint_en": "Upgrade Zahhak in the Hero Collection. Each upgrade costs REAL tokens.",
+        "hint_fa": "ضحاک را در بخشِ مجموعه‌ی قهرمانان ارتقا دهید.",
+        "hint_tg": "Заҳҳокро дар бахши Қаҳрамонон баланд баред."
+      },
+      {
+        "id": "derafsh-kaviani",
+        "kind": "item",
+        "target": "derafsh-kaviani",
+        "grant_on": "quiz",
+        "label_en": "Claim the Derafsh Kaviani",
+        "label_fa": "دریافتِ درفشِ کاویانی",
+        "label_tg": "Дарафши Кавориро гиред",
+        "hint_en": "Awarded automatically when you complete the Chapter 5 easy quiz. The banner Kaveh raised — earned by mastering his chapter.",
+        "hint_fa": "با تکمیلِ آزمونِ ساده‌ی دفترِ ۵ اعطا می‌شود. درفشی که کاوه برافراشت — با تسلط بر دفتر به دست می‌آید.",
+        "hint_tg": "Пас аз иҷрои имтиҳони осони Боби 5 дода мешавад."
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "zahhak",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section and answer all questions.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "mardas-codex",
+      "category": "person",
+      "title_en": "Mardas — Before the Door Opens",
+      "title_fa": "مرداس — پیش از باز شدنِ دَر",
+      "summary_en": "A just man who prays at dawn, tends a garden, and gives no one a reason to fear him. Ferdowsi introduces Mardas so that his absence will be felt. You cannot understand Zahhak without first knowing what Zahhak let be destroyed.",
+      "summary_fa": "مردِ عادلی که سپیده‌دم نماز می‌خواند، باغی نگه می‌دارد و به کسی دلیلِ ترس نمی‌دهد. فردوسی مرداس را معرفی می‌کند تا غیابش احساس شود.",
+      "image": null,
+      "unlock_via": "scene:the-good-father"
+    },
+    {
+      "id": "ahriman-method-ch5",
+      "category": "concept",
+      "title_en": "Ahriman's Three Forms",
+      "title_fa": "سه شکلِ اهریمن",
+      "summary_en": "In chapter 3 he was forced to carry a king. In chapter 4 he whispered. In chapter 5 he works in three forms: companion (flattery), gardener (murder), cook (transformation). Each form requires access — friendship, trust, hospitality. This is the Shahnameh's most detailed study of how evil works.",
+      "summary_fa": "در دفترِ سوم مجبور شد شاهی را حمل کند. در دفترِ چهارم نجوا کرد. در دفترِ پنجم در سه شکل کار می‌کند: همدم (تملق)، باغبان (قتل)، آشپز (تبدیل). هر شکل به دسترسی نیاز دارد.",
+      "image": null,
+      "unlock_via": "scene:the-companion"
+    },
+    {
+      "id": "hollow-method",
+      "category": "concept",
+      "title_en": "The Hollow Method",
+      "title_fa": "روشِ تو خالی‌کردن",
+      "summary_en": "Ahriman's garden trick: leave the surface undisturbed — the beautiful garden intact — and hollow out everything beneath it. The Shahnameh's warning is structural: the most dangerous corruption is the kind that preserves appearances.",
+      "summary_fa": "ترفندِ باغِ اهریمن: سطح را دست‌نخورده بگذار — باغِ زیبا سالم — و همه چیز را زیرش تو خالی کن. هشدارِ شاهنامه ساختاری است: خطرناک‌ترین فساد آن نوعی است که ظاهر را حفظ می‌کند.",
+      "image": null,
+      "unlock_via": "scene:the-garden-pit"
+    },
+    {
+      "id": "iblis-cook",
+      "category": "event",
+      "title_en": "The Cook's Two Kisses",
+      "title_fa": "دو بوسه‌ی آشپز",
+      "summary_en": "Iblis as a cook serves Zahhak increasingly rich meals until his nature changes. Then asks for a mark of gratitude: two shoulder-kisses. First kiss — serpent grows. Second kiss — second serpent. The Shahnameh shows that transformation happens gradually, through habit and acceptance, not through a single dramatic act.",
+      "summary_fa": "ابلیس به‌عنوانِ آشپز وعده‌های روز‌به‌روز غنی‌تری می‌دهد تا طبیعت تغییر کند. بعد نشانِ سپاسگزاری می‌خواهد: دو بوسه‌ی شانه. بوسه‌ی اول — مار می‌روید. بوسه‌ی دوم — مارِ دوم.",
+      "image": null,
+      "unlock_via": "scene:the-cooks-kiss"
+    },
+    {
+      "id": "shoulder-serpents",
+      "category": "creature",
+      "title_en": "The Shoulder Serpents",
+      "title_fa": "ماران شانه",
+      "summary_en": "Two black serpents that grow from Zahhak's shoulders after Iblis' kisses. They cannot be cut off — they grow back. Their daily requirement: two human brains. They are the Shahnameh's most precise symbol of how tyranny consumes: daily, at the same time, without ceremony.",
+      "summary_fa": "دو مار سیاه که از شانه‌های ضحاک پس از بوسه‌های ابلیس می‌روید. نمی‌توانند قطع شوند — دوباره می‌رویند. نیازِ روزانه‌شان: دو مغزِ انسانی. دقیق‌ترین نمادِ شاهنامه از نحوه‌ی خوردنِ ستمگری: روزانه، همان ساعت، بدون مراسم.",
+      "image": null,
+      "unlock_via": "scene:the-cooks-kiss"
+    },
+    {
+      "id": "serpent-price",
+      "category": "event",
+      "title_en": "The Prescription",
+      "title_fa": "نسخه",
+      "summary_en": "The physicians' answer: human brain. Once the prescription is given, Ferdowsi does not linger. He moves on quickly, because the thousand years that follow need no explanation — you already understand everything you need to understand from the act of acceptance.",
+      "summary_fa": "پاسخِ پزشکان: مغزِ انسانی. یک بار نسخه داده شد، فردوسی نمی‌ماند. سریع جلو می‌رود، چون هزار سالِ پیشِ رو نیازی به توضیح ندارد.",
+      "image": null,
+      "unlock_via": "scene:the-physicians"
+    },
+    {
+      "id": "armayel-garmayel",
+      "category": "person",
+      "title_en": "Armayel and Garmayel — The Secret Saviours",
+      "title_fa": "ارمایل و گرمایل — نجات‌دهندگانِ پنهانی",
+      "summary_en": "Two palace cooks who could not stop the serpents' feeding but found a way to save half the victims: they mixed sheep brain with human brain, satisfying the serpents with half the real price. The saved youth were sent to the mountains, where (later tradition holds) they became the ancestors of the Kurdish people.",
+      "summary_fa": "دو آشپزِ کاخ که نتوانستند تغذیه‌ی ماران را متوقف کنند اما راهی یافتند تا نیمِ قربانیان را نجات دهند: مغزِ گوسفند را با مغزِ انسانی مخلوط کردند. جوانانِ نجات‌یافته به کوه‌ها فرستاده شدند.",
+      "image": null,
+      "unlock_via": "scene:the-physicians"
+    },
+    {
+      "id": "kaveh-banner",
+      "category": "event",
+      "title_en": "Kaveh Tears the Document",
+      "title_fa": "کاوه سند را پاره می‌کند",
+      "summary_en": "He signs the court's consent document — then tears it apart. In the Shahnameh's political language, this is the moment where the people withdraw consent from the tyrant. No army, no weapons yet — just a man tearing a piece of paper in a court and walking out. The guards do not stop him.",
+      "summary_fa": "سندِ رضایتِ دربار را امضا می‌کند — بعد پاره‌اش می‌کند. در زبانِ سیاسیِ شاهنامه، این لحظه‌ای است که مردم رضایتشان را از ستمگر پس می‌گیرند.",
+      "image": null,
+      "unlock_via": "scene:kaveh-at-the-throne"
+    },
+    {
+      "id": "derafsh-kaviani",
+      "category": "artifact",
+      "title_en": "The Derafsh Kaviani",
+      "title_fa": "درفشِ کاویانی",
+      "summary_en": "Kaveh's leather apron — the mark of his craft — wrapped around a spear becomes the most famous banner in the Shahnameh. Fereydun's army will march under it. Later kings will add jewels to it. It becomes the royal standard of Persia. A blacksmith's work badge becomes a nation's symbol of legitimacy.",
+      "summary_fa": "پیش‌بندِ چرمیِ کاوه — نشانِ صنعتش — که دور نیزه‌ای پیچیده شد، مشهورترین درفش در شاهنامه می‌شود. سپاهِ فریدون زیرش خواهد مارشید. شاهانِ بعدی به آن جواهر خواهند افزود. پرچمِ شاهیِ ایران می‌شود.",
+      "image": null,
+      "unlock_via": "scene:kaveh-at-the-throne"
+    },
+    {
+      "id": "birmaya-bull",
+      "category": "creature",
+      "title_en": "Birmaya — The Divine Bull",
+      "title_fa": "برمایه — گاوِ الهی",
+      "summary_en": "The divine bull that nurtures the infant Fereydun in the mountains of Alborz. Zahhak kills Birmaya when he comes searching for the prophesied child — but Fereydun is already gone. The bull's death is meaningless: the thing it protected is already beyond reach.",
+      "summary_fa": "گاوِ الهی که فریدونِ نوزاد را در کوه‌های البرز تغذیه می‌کند. ضحاک برمایه را می‌کشد وقتی در جستجوی کودکِ پیشگویی‌شده می‌آید — اما فریدون از پیش رفته است. مرگِ گاو بی‌معناست: آنچه محافظت می‌کرد از پیش از دسترس خارج است.",
+      "image": null,
+      "unlock_via": "scene:fereydun-waits"
+    },
+    {
+      "id": "fereydun-ch5",
+      "category": "person",
+      "title_en": "Fereydun — Already Alive",
+      "title_fa": "فریدون — از پیش زنده است",
+      "summary_en": "The Shahnameh introduces Fereydun while the thousand years are still running. He is already in the mountains. The thousand years are not over yet. But the thing that will end them is already alive. Ferdowsi's structure: the answer to tyranny is always born inside the tyranny's own time.",
+      "summary_fa": "شاهنامه فریدون را در حالی معرفی می‌کند که هزار سال هنوز در جریان است. از پیش در کوه‌هاست. هزار سال هنوز تمام نشده. اما آنچه پایانش خواهد داد از پیش زنده است. ساختارِ فردوسی: پاسخِ ستمگری همیشه درونِ زمانِ خودِ ستمگری متولد می‌شود.",
+      "image": null,
+      "unlock_via": "scene:fereydun-waits"
+    },
+    {
+      "id": "alborz-refuge",
+      "category": "place",
+      "title_en": "Alborz — The Mountain of Refuge",
+      "title_fa": "البرز — کوهِ پناه",
+      "summary_en": "The great mountain range that appeared in chapter 1 as the first frontier now becomes the hiding place of the next liberator. Alborz accumulates meaning across the Shahnameh — it is where prophesied children hide, where Zahhak will eventually be chained, where the chronicle keeps its most important secrets.",
+      "summary_fa": "رشته‌کوهِ بزرگی که در دفترِ اول به‌عنوانِ نخستین مرز ظاهر شد اکنون پناهگاهِ رهاینده‌ی بعدی می‌شود. البرز در سراسرِ شاهنامه معنا انباشت می‌کند.",
+      "image": "/assets/images/locations/mount-alborz-location.png",
+      "unlock_via": "scene:fereydun-waits"
+    }
+  ]
+}
