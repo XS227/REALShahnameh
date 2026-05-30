@@ -670,8 +670,7 @@
       powers_tg: ["+10% Қудрати зарба", "+20 Zar/соат", "Ғайрифаъол: Шӯълаи Муқаддас — эҳтимоли зарбаи критикӣ +5%, энергия 10% зудтар пур мешавад"],
       storyAppearances_tg: ["Хулосаи Боби 1: Кашфи Оташ", "Ҷоизаи Боби 1: Аввалин Ҷашни Сада"],
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
-    }
-  ];
+    },
 
     /* ── Chapter 2 (Hushang) ──────────────────────────────── */
     {

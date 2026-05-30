@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-30T00:00:00Z",
+  "chapter_slug": "fereydun",
+  "chapter_id": 6,
+  "era": {
+    "label_en": "~4400–3900 BC — Age of Fereydun",
+    "label_fa": "~۴۴۰۰–۳۹۰۰ پ.م — عصر فریدون"
+  },
+  "lore_summary": {
+    "en": "A thousand years of darkness ends not with a divine act but with a blacksmith's apron on a spear. Kaveh raises the Derafsh Kaviani and the people of Pars remember what it means to march. Fereydun — raised by a divine bull in the mountains, hidden from Zahhak's agents for two decades — takes up the bull-headed mace and leads the army south. Zahhak falls. An angel's voice stops Fereydun before he kills him: the hour is not right, bind him instead. So Zahhak is chained inside Mount Damavand with nails of stone, not dead, waiting for an age that may never come. Fereydun rules for five hundred years — just, wise, undefeated. Then he divides the world among his three sons: Iraj, Tur, Salm. Iraj gets Iran. Tur gets Turan. Salm gets Rum. It should be enough. It is not.",
+    "fa": "هزار سال تاریکی نه با عملی الهی که با پیش‌بند آهنگری بر نیزه پایان می‌یابد. کاوه درفشِ کاویانی برمی‌افرازد و مردمانِ پارس به یاد می‌آورند که راه رفتن چه معناست. فریدون — که گاوی الهی در کوه‌ها پرورش داده بود، دو دهه از عوامل ضحاک پنهان — گرزِ گاوسر را برمی‌دارد و سپاه را به جنوب می‌کشد. ضحاک می‌افتد. صدای فرشته‌ای فریدون را پیش از کشتن متوقف می‌کند: ساعت درست نیست، به جایش در بند کن. پس ضحاک با میخ‌های سنگی درونِ کوهِ دماوند به زنجیر کشیده می‌شود، نه مرده، منتظرِ عصری که شاید هرگز نیاید. فریدون پانصد سال حکم می‌راند — عادل، خردمند، شکست‌ناپذیر. بعد جهان را میانِ سه پسرش تقسیم می‌کند: ایرج، تور، سلم. ایرج ایران می‌گیرد. تور توران. سلم روم. باید کافی باشد. نیست."
+  },
+  "timeline": [
+    {
+      "id": "kaveh-marches",
+      "year_label_en": "~4400 BC",
+      "year_label_fa": "~۴۴۰۰ پ.م",
+      "title_en": "The Derafsh Kaviani Leads the March",
+      "title_fa": "درفشِ کاویانی راهپیمایی را رهبری می‌کند",
+      "body_en": "From every corner of Pars the people come — those who lost children to the serpents, those who grew up not knowing another king, those who only heard from grandparents that the world was once different. They march toward Zahhak's stronghold behind a blacksmith's leather apron.",
+      "body_fa": "از هر گوشه‌ی پارس مردم می‌آیند — کسانی که فرزندان را به ماران از دست دادند، کسانی که بزرگ شدند و شاه دیگری نمی‌شناختند، کسانی که فقط از پدربزرگ‌ها شنیده بودند که جهان زمانی متفاوت بود. پشتِ پیش‌بندِ چرمی آهنگری به‌سوی دژِ ضحاک می‌مارشند.",
+      "image": null,
+      "side": "light"
+    },
+    {
+      "id": "zahhak-falls",
+      "year_label_en": "~4400 BC",
+      "year_label_fa": "~۴۴۰۰ پ.م",
+      "title_en": "Zahhak Falls",
+      "title_fa": "ضحاک می‌افتد",
+      "body_en": "Fereydun's mace meets Zahhak's guard and breaks it. But before the killing blow, a voice from the unseen says: not yet — the world is not ready for his death. Bind him. Fereydun obeys. Zahhak is taken alive.",
+      "body_fa": "گرزِ فریدون با محافظانِ ضحاک روبرو می‌شود و آن‌ها را می‌شکند. اما پیش از ضربه‌ی کشنده، صدایی از ناپیدا می‌گوید: هنوز نه — جهان برای مرگِ او آماده نیست. در بند کن. فریدون اطاعت می‌کند. ضحاک زنده گرفته می‌شود.",
+      "image": null,
+      "side": "light"
+    },
+    {
+      "id": "kingdom-divided",
+      "year_label_en": "~3900 BC",
+      "year_label_fa": "~۳۹۰۰ پ.م",
+      "title_en": "The Kingdom Divided",
+      "title_fa": "پادشاهی تقسیم می‌شود",
+      "body_en": "After five hundred years, Fereydun calls his three sons and divides the world. Iraj accepts Iran — the heart, not the largest share. Tur takes Turan. Salm takes Rum. The fathers' love is equal. The sons' grief is not.",
+      "body_fa": "پس از پانصد سال، فریدون سه پسرش را فرا می‌خواند و جهان را تقسیم می‌کند. ایرج ایران را می‌پذیرد — قلب، نه بزرگ‌ترین سهم. تور توران را می‌گیرد. سلم روم را. محبتِ پدر برابر است. اندوهِ پسران نیست.",
+      "image": null,
+      "side": "dark"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "the-march",
+      "order": 1,
+      "title_en": "The March",
+      "title_fa": "راهپیمایی",
+      "era_en": "~4400 BC",
+      "era_fa": "~۴۴۰۰ پ.م",
+      "body_en": "Kaveh walks at the front. He does not run — he walks, steadily, as a man walks to the forge every morning. The banner is not decorated yet; it is just a leather apron on a spear. But everyone behind him knows what it means, and everyone who sees it from the road joins the march. By the time they reach the first hills outside Zahhak's city, there are too many to count. Fereydun rides at the centre, neither in front nor in the rear. He is not performing. He is navigating.",
+      "body_fa": "کاوه پیشاپیش راه می‌رود. نمی‌دود — راه می‌رود، محکم، آن‌طور که مرد هر صبح به آهنگری می‌رود. درفش هنوز آذین نشده؛ فقط پیش‌بند چرمی بر نیزه است. اما همه پشتِ سرش می‌دانند چه معناست، و هر کسی که از جاده می‌بیند به راهپیمایی می‌پیوندد. وقتی به اولین تپه‌های بیرون از شهرِ ضحاک می‌رسند، آن‌قدر زیادند که شمارش ناممکن است. فریدون در مرکز سواری می‌کند، نه پیشاپیش نه در انتها. نمایش نمی‌دهد. دارد جهت‌یابی می‌کند.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/the-march-scene.png",
+      "reward": { "xp": 40 },
+      "unlocks_codex": ["derafsh-march"]
+    },
+    {
+      "id": "the-mace",
+      "order": 2,
+      "title_en": "The Bull-Headed Mace",
+      "title_fa": "گرزِ گاوسر",
+      "era_en": "~4400 BC",
+      "era_fa": "~۴۴۰۰ پ.م",
+      "body_en": "The mace is not a weapon of elegance. It is forged for one purpose: to end a specific reign. Its head is shaped like a bull — the animal that fed Fereydun in the mountains, the creature Zahhak destroyed when he came hunting for the boy. The bull shape is not decoration. It is memory made into iron. Every blow it lands carries the weight of two decades of hiding and a thousand years of serpents.",
+      "body_fa": "گرز سلاحِ ظرافت نیست. برای یک هدف آهنگری شده: پایان دادن به یک شاهی خاص. سرش به شکلِ گاو است — جانوری که فریدون را در کوه‌ها تغذیه کرد، موجودی که ضحاک وقتی در جستجوی پسر آمد نابود کرد. شکلِ گاو تزیین نیست. خاطره‌ای است که به آهن تبدیل شده. هر ضربه‌ای که فرود می‌آورد سنگینیِ دو دهه پنهانی و هزار سال مار را دارد.",
+      "atmosphere": "warm",
+      "image": "/assets/images/scenes/bull-mace-scene.png",
+      "reward": { "xp": 45 },
+      "unlocks_codex": ["bull-mace-codex"]
+    },
+    {
+      "id": "gates-of-the-tyrant",
+      "order": 3,
+      "title_en": "The Gates of the Tyrant",
+      "title_fa": "دروازه‌های ستمگر",
+      "era_en": "~4400 BC",
+      "era_fa": "~۴۴۰۰ پ.م",
+      "body_en": "The gates of Zahhak's stronghold are built to terrify. They have worked for a thousand years. The army that approaches now is not terrified — it is angry in a way that is quieter and more durable than terror. The guards on the walls look down and see the banner first. Some of them know what the leather apron means. Some of them lay down their weapons before the gates are reached.",
+      "body_fa": "دروازه‌های دژِ ضحاک برای ترساندن ساخته شده‌اند. هزار سال جواب داده‌اند. سپاهی که اکنون نزدیک می‌شود ترسیده نیست — خشمگین است، به شکلی که از ترس آرام‌تر و ماندگارتر است. نگهبانان روی دیوارها می‌نگرند و ابتدا درفش را می‌بینند. بعضی از آن‌ها می‌دانند پیش‌بند چرمی چه معناست. بعضی سلاح‌هایشان را می‌گذارند پیش از آنکه به دروازه‌ها برسند.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/gates-of-tyrant-scene.png",
+      "reward": { "xp": 55 },
+      "unlocks_codex": ["thousand-year-walls"]
+    },
+    {
+      "id": "the-battle",
+      "order": 4,
+      "title_en": "The Battle",
+      "title_fa": "نبرد",
+      "era_en": "~4400 BC",
+      "era_fa": "~۴۴۰۰ پ.م",
+      "body_en": "The serpents fight too. They are extensions of Zahhak's will and they strike at Fereydun alongside their host. But Zahhak is not Tahmuras — he has spent a thousand years taking, not training, and his serpents have no discipline. Fereydun does not fight cleanly. He fights correctly. There is a difference. When Zahhak falls, the serpents go still.",
+      "body_fa": "ماران هم می‌جنگند. امتداد اراده‌ی ضحاکند و در کنار اربابشان به فریدون حمله می‌کنند. اما ضحاک تهمورث نیست — هزار سال گرفتن داشته نه تمرین کردن، و ماران انضباطی ندارند. فریدون تمیز نمی‌جنگد. درست می‌جنگد. تفاوتی هست. وقتی ضحاک می‌افتد، ماران بی‌حرکت می‌شوند.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/the-battle-scene.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["zahhak-falls-codex"]
+    },
+    {
+      "id": "the-binding-of-zahhak",
+      "order": 5,
+      "title_en": "The Binding of Zahhak",
+      "title_fa": "به‌زنجیرکشیدنِ ضحاک",
+      "era_en": "~4400 BC",
+      "era_fa": "~۴۴۰۰ پ.م",
+      "body_en": "Fereydun raises the bull-headed mace for the killing blow. A voice stops him — an angel's, or conscience's, or the Shahnameh's own structural logic: the world is not ready. His death would release something. Bind him instead. Drive him into the heart of Mount Damavand, the mountain that has watched every age from Keyumars to this one. Nail him to the rock. He will wait there until the age that needs his ending arrives. Fereydun obeys. Zahhak goes into the mountain. The mountain closes.",
+      "body_fa": "فریدون گرز را برای ضربه‌ی کشنده بالا می‌برد. صدایی متوقفش می‌کند — فرشته‌ای، یا وجدانی، یا منطقِ ساختاریِ خودِ شاهنامه: جهان آماده نیست. مرگش چیزی آزاد خواهد کرد. به جایش در بند کن. درونِ دلِ کوهِ دماوند برانش — کوهی که از کیومرث تا این عصر همه چیز را نظاره کرده. به صخره میخش کن. منتظر می‌ماند تا عصری که به پایانِ او نیاز دارد فرا برسد. فریدون اطاعت می‌کند. ضحاک به کوه می‌رود. کوه می‌بندد.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/binding-zahhak-scene.png",
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["damavand-prison", "angel-warning"]
+    },
+    {
+      "id": "five-hundred-years",
+      "order": 6,
+      "title_en": "Five Hundred Years",
+      "title_fa": "پانصد سال",
+      "era_en": "~4400–3900 BC",
+      "era_fa": "~۴۴۰۰–۳۹۰۰ پ.م",
+      "body_en": "Fereydun rules for five hundred years. He carries the farr that left Jamshid through pride and that Zahhak never truly possessed. Under his reign the four orders of civilization return to purpose. The chronicle does not dwell here — five hundred just years compress into a few lines of verse. Ferdowsi's silence is its own statement: justice is not dramatic. It is the absence of drama. It is the absence of the chronicle's reason for being.",
+      "body_fa": "فریدون پانصد سال حکم می‌راند. فری حمل می‌کند که از جمشید با غرور رفت و ضحاک هرگز واقعاً نداشت. در شاهیِ او چهار طبقه‌ی تمدن به هدف برمی‌گردند. شاهنامه اینجا نمی‌ماند — پانصد سال عدل در چند مصراع خلاصه می‌شود. سکوتِ فردوسی خود حرف است: عدل نمایشی نیست. نبودِ نمایش است. نبودِ دلیلِ وجودِ این تاریخ است.",
+      "atmosphere": "dawn",
+      "image": "/assets/images/scenes/five-hundred-years-scene.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["fereydun-farr", "just-reign"]
+    },
+    {
+      "id": "three-sons",
+      "order": 7,
+      "title_en": "Iraj, Tur, Salm",
+      "title_fa": "ایرج، تور، سلم",
+      "era_en": "~3900 BC",
+      "era_fa": "~۳۹۰۰ پ.م",
+      "body_en": "Three sons. Three parts of the world. Salm receives the lands of Rum and Khazar — the west. Tur receives Turan and China — the east. Iraj receives Iran — the smallest, the holiest, the heart. Iraj does not complain about the size of his portion. He says: Iran is enough. His brothers do not believe him. They do not understand that the one who asks for the heart of a thing does not want what lies around it. They will kill him. This is where the Shahnameh's wars begin: not from cruelty but from the inability to imagine that someone might genuinely want less.",
+      "body_fa": "سه پسر. سه بخش از جهان. سلم سرزمین‌های روم و خزر را می‌گیرد — غرب. تور توران و چین را — شرق. ایرج ایران را — کوچک‌ترین، مقدس‌ترین، قلب را. ایرج از اندازه‌ی سهمش شکایتی ندارد. می‌گوید: ایران کافی است. برادرانش باورشان نمی‌شود. نمی‌فهمند کسی که قلبِ چیزی را می‌خواهد آنچه را دورش است نمی‌خواهد. او را می‌کشند. اینجاست که جنگ‌های شاهنامه آغاز می‌شوند: نه از بدخواهی بلکه از ناتوانی در تصور اینکه کسی ممکن است واقعاً کمتر بخواهد.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/three-sons-scene.png",
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["iraj-salm-tur", "wars-begin", "manuchehr-ch6"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "fereydun",
+      "name_en": "Fereydun",
+      "name_fa": "فریدون",
+      "role_en": "Sixth King · The Liberator · Bearer of Farr",
+      "role_fa": "ششمین شاه · رهاینده · حاملِ فَر",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "Hidden from birth in the mountains of Alborz. Fed by the divine bull Birmaya. Trained by his mother in secret. He grew up knowing one thing with absolute certainty: the world he would inherit was not the world it was supposed to be. When Kaveh raised the banner, Fereydun was ready. He did not kill Zahhak — an angel's voice stopped him. He bound the tyrant to Damavand and ruled justly for five hundred years. Then divided the world among three sons — and watched the first seeds of the Shahnameh's grief planted.",
+      "lore_fa": "از تولد در کوه‌های البرز پنهان شد. گاوِ الهی برمایه تغذیه‌اش کرد. مادرش مخفیانه آموزشش داد. با یک یقینِ مطلق بزرگ شد: جهانی که به ارث می‌برد جهانی نبود که باید می‌بود. وقتی کاوه درفش برافراشت، فریدون آماده بود. ضحاک را نکشت — صدای فرشته‌ای متوقفش کرد. ستمگر را به دماوند زنجیر کرد و پانصد سال با عدل حکم راند.",
+      "image": "/season2/uploads/chapters/fereydun.png?v=1778880804584",
+      "unlocked": true,
+      "side": "light"
+    },
+    {
+      "slug": "kaveh-ch6",
+      "name_en": "Kaveh",
+      "name_fa": "کاوه",
+      "role_en": "The Blacksmith · First to March",
+      "role_fa": "آهنگر · اولین راه‌روِ راهپیمایی",
+      "rarity": "legendary",
+      "level_required": 5,
+      "lore_en": "He appears here completing the arc begun in chapter 5: the man who tore the court document is now the man who leads the army. He walks at the front, not because he was born to lead armies, but because no one else was willing to go first.",
+      "lore_fa": "اینجا قوسی را که در دفترِ پنجم آغاز شد کامل می‌کند: مردی که سند را پاره کرد اکنون مردی است که سپاه را هدایت می‌کند. پیشاپیش راه می‌رود، نه چون برای رهبری سپاه زاده شده، بلکه چون هیچ‌کس دیگری حاضر نبود اول برود.",
+      "image": "/assets/images/heroes/kaveh-hero.png",
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:the-march"
+    },
+    {
+      "slug": "iraj",
+      "name_en": "Iraj",
+      "name_fa": "ایرج",
+      "role_en": "The Just Son · Iran's First Martyr",
+      "role_fa": "پسرِ عادل · اولین شهیدِ ایران",
+      "rarity": "legendary",
+      "level_required": 8,
+      "lore_en": "The youngest of Fereydun's three sons. He accepts Iran — the smallest portion — without complaint, saying it is enough. His brothers cannot imagine someone genuinely wanting less. They kill him. His death is the first of the Shahnameh's great fratricidal tragedies, and it will be avenged — but not yet.",
+      "lore_fa": "کوچک‌ترین پسرانِ فریدون. ایران — کوچک‌ترین سهم — را بدون شکایت می‌پذیرد و می‌گوید کافی است. برادرانش نمی‌توانند تصور کنند کسی واقعاً کمتر بخواهد. او را می‌کشند.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:three-sons"
+    },
+    {
+      "slug": "zahhak-bound",
+      "name_en": "Zahhak — Bound",
+      "name_fa": "ضحاک — در بند",
+      "role_en": "Imprisoned Tyrant · Waiting",
+      "role_fa": "ستمگرِ زندانی · منتظر",
+      "rarity": "mythic",
+      "level_required": 12,
+      "lore_en": "He is not dead. An angel's voice — or the Shahnameh's own structural logic — stopped Fereydun before the killing blow. The world was not ready. So Zahhak is chained inside Damavand with nails of stone, waiting for an age that has not yet arrived. The Shahnameh does not say when, or whether, that age will come.",
+      "lore_fa": "نمرده است. صدای فرشته‌ای — یا منطقِ ساختاریِ خودِ شاهنامه — فریدون را پیش از ضربه‌ی کشنده متوقف کرد. جهان آماده نبود. پس ضحاک با میخ‌های سنگی درونِ دماوند به زنجیر است، منتظر عصری که هنوز نیامده.",
+      "image": "/season2/uploads/chapters/zahhak.png?v=1778880472603",
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:the-binding-of-zahhak"
+    },
+    {
+      "slug": "salm-tur",
+      "name_en": "Tur and Salm",
+      "name_fa": "تور و سلم",
+      "role_en": "The Jealous Brothers · Killers of Iraj",
+      "role_fa": "برادرانِ حسود · قاتلانِ ایرج",
+      "rarity": "epic",
+      "level_required": 6,
+      "lore_en": "Fereydun's two older sons. They receive the larger shares of the world and still feel cheated — because Iraj, who asked for nothing, got the thing that mattered. They kill their brother and start a feud that will take generations to resolve. The Shahnameh's wars do not begin with foreign enemies. They begin here, inside a family.",
+      "lore_fa": "دو پسرِ بزرگ‌ترِ فریدون. سهم‌های بزرگ‌تری از جهان می‌گیرند و هنوز احساس می‌کنند فریب خورده‌اند — چون ایرج که چیزی نخواست، آنچه اهمیت داشت را گرفت. برادرشان را می‌کشند.",
+      "image": null,
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:three-sons"
+    }
+  ],
+  "places": [
+    {
+      "slug": "damavand-prison",
+      "name_en": "Mount Damavand — Prison of the Tyrant",
+      "name_fa": "کوهِ دماوند — زندانِ ستمگر",
+      "kind_en": "Where Zahhak Waits",
+      "kind_fa": "جایی که ضحاک منتظر است",
+      "summary_en": "The mountain that appeared in chapter 1 as Keyumars' throne, and in chapter 5 as Fereydun's hiding place, now becomes Zahhak's prison. Damavand accumulates meaning across the Shahnameh: it is the axis of the Persian world, the place where the chronicle stores its most important unresolved things.",
+      "summary_fa": "کوهی که در دفترِ اول تختِ کیومرث بود و در دفترِ پنجم پناهگاهِ فریدون، اکنون زندانِ ضحاک می‌شود. دماوند در سراسرِ شاهنامه معنا انباشت می‌کند.",
+      "image": "/assets/images/locations/mount-damavand-location.png",
+      "unlocked": false,
+      "unlock_via": "scene:the-binding-of-zahhak"
+    },
+    {
+      "slug": "zahhak-stronghold",
+      "name_en": "Zahhak's Stronghold",
+      "name_fa": "دژِ ضحاک",
+      "kind_en": "Seat of a Thousand Years",
+      "kind_fa": "جایگاهِ هزار سال",
+      "summary_en": "The stronghold that Zahhak built on the ruins of what had been civilization's finest age — Jamshid's court. For a thousand years its gates were designed to terrify. When Fereydun's army approaches, some guards lay down their weapons before the gates are even reached.",
+      "summary_fa": "دژی که ضحاک بر ویرانه‌های بهترین عصرِ تمدن — دربارِ جمشید — بنا کرد. هزار سال دروازه‌هایش برای ترساندن طراحی شده بودند.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:gates-of-the-tyrant"
+    },
+    {
+      "slug": "three-kingdoms",
+      "name_en": "The Three Kingdoms",
+      "name_fa": "سه پادشاهی",
+      "kind_en": "Iran · Turan · Rum",
+      "kind_fa": "ایران · توران · روم",
+      "summary_en": "Fereydun divides the world into three: Iran (centre, holiest), Turan (east, largest), Rum (west, furthest). This division creates the geography of the Shahnameh's wars. Iraj gets the smallest — and the most important. His brothers cannot forgive him for it.",
+      "summary_fa": "فریدون جهان را به سه بخش تقسیم می‌کند: ایران (مرکز، مقدس‌ترین)، توران (شرق، بزرگ‌ترین)، روم (غرب، دورترین). این تقسیم جغرافیایِ جنگ‌های شاهنامه را می‌سازد.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:three-sons"
+    },
+    {
+      "slug": "pars-liberated",
+      "name_en": "Pars — Liberated",
+      "name_fa": "پارسِ آزادشده",
+      "kind_en": "The Land After the Darkness",
+      "kind_fa": "سرزمین پس از تاریکی",
+      "summary_en": "After a thousand years, Pars breathes free air. The four orders return to purpose. The kitchens are reorganized — this time for food. A generation is born that will never know what it means to fear the sound of the serpent-king's summons. That generation will also never know what the darkness was like — which is both a gift and a danger.",
+      "summary_fa": "پس از هزار سال، پارس هوای آزاد می‌کشد. چهار طبقه به هدف برمی‌گردند. آشپزخانه‌ها سازماندهی مجدد می‌شوند — این بار برای غذا. نسلی به دنیا می‌آید که هرگز نخواهد دانست هراسِ صدای احضارِ شاهِ مار چه معناست.",
+      "image": null,
+      "unlocked": true
+    }
+  ],
+  "battle": {
+    "boss_slug": "zahhak",
+    "boss_name_en": "Zahhak — Final Stand",
+    "boss_name_fa": "ضحاک — آخرین ایستادگی",
+    "boss_image": "/season2/uploads/chapters/zahhak.png?v=1778880472603",
+    "boss_master_slug": "ahriman",
+    "boss_master_image": "/assets/images/enemies/ahriman-boss.png",
+    "intro_en": "A thousand years end here. Zahhak and his serpents make their final stand. To face this gate you must know the full arc — from Kaveh's apron to the angel's voice that stopped the killing blow.",
+    "intro_fa": "هزار سال اینجا پایان می‌یابد. ضحاک و ماران آخرین ایستادگی را می‌کنند. برای مواجهه با این دروازه باید قوسِ کامل را بدانی — از پیش‌بندِ کاوه تا صدای فرشته‌ای که ضربه‌ی کشنده را متوقف کرد.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 18,
+        "label_en": "Reach Fereydun LVL 18",
+        "label_fa": "رسیدن به سطحِ ۱۸ فریدون",
+        "label_tg": "Расидан ба сатҳи 18 Фаридун",
+        "hint_en": "Upgrade Fereydun in the Hero Collection.",
+        "hint_fa": "فریدون را در بخشِ مجموعه‌ی قهرمانان ارتقا دهید.",
+        "hint_tg": "Фаридунро дар бахши Қаҳрамонон баланд баред."
+      },
+      {
+        "id": "bull-mace",
+        "kind": "item",
+        "target": "bull-mace",
+        "grant_on": "quiz",
+        "label_en": "Claim the Bull-Headed Mace",
+        "label_fa": "دریافتِ گرزِ گاوسر",
+        "label_tg": "Гурзи гавсарро гиред",
+        "hint_en": "Awarded when you complete the Chapter 6 easy quiz.",
+        "hint_fa": "با تکمیلِ آزمونِ ساده‌ی دفترِ ۶ اعطا می‌شود.",
+        "hint_tg": "Пас аз иҷрои имтиҳони осони Боби 6 дода мешавад."
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "fereydun",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "derafsh-march",
+      "category": "event",
+      "title_en": "The March Under the Derafsh",
+      "title_fa": "راهپیمایی زیرِ درفش",
+      "summary_en": "Kaveh walks first. Everyone who sees the banner from the road joins. By the first hills outside Zahhak's city there are too many to count. This is how tyrannies end in the Shahnameh: not with a foreign army, but with everyone who had been waiting for someone to go first.",
+      "summary_fa": "کاوه اول می‌رود. همه که درفش را از جاده می‌بینند می‌پیوندند. تا تپه‌های بیرون از شهرِ ضحاک آن‌قدر زیادند که شمارش ناممکن است.",
+      "image": null,
+      "unlock_via": "scene:the-march"
+    },
+    {
+      "id": "bull-mace-codex",
+      "category": "artifact",
+      "title_en": "The Bull-Headed Mace",
+      "title_fa": "گرزِ گاوسر",
+      "summary_en": "Its head is shaped like a bull — the animal that fed Fereydun and that Zahhak destroyed. The weapon carries two decades of hiding and a thousand years of serpents in every blow. It is not elegant. It is correct.",
+      "summary_fa": "سرش به شکلِ گاو است — جانوری که فریدون را تغذیه کرد و ضحاک نابودش کرد. در هر ضربه دو دهه پنهانی و هزار سال مار دارد. ظریف نیست. درست است.",
+      "image": null,
+      "unlock_via": "scene:the-mace"
+    },
+    {
+      "id": "thousand-year-walls",
+      "category": "place",
+      "title_en": "The Walls That Worked for a Thousand Years",
+      "title_fa": "دیوارهایی که هزار سال جواب دادند",
+      "summary_en": "Zahhak's gates were built to terrify. For a thousand years, they worked. The army that approaches with the Derafsh Kaviani is not terrified — it is angry in a way that is quieter and more durable. Some guards lay down their weapons before the gates are even reached.",
+      "summary_fa": "دروازه‌های ضحاک برای ترساندن ساخته شده بودند. هزار سال جواب دادند. سپاهِ پشتِ درفشِ کاویانی ترسیده نیست — خشمگین است، به شکلی آرام‌تر و ماندگارتر.",
+      "image": null,
+      "unlock_via": "scene:gates-of-the-tyrant"
+    },
+    {
+      "id": "zahhak-falls-codex",
+      "category": "event",
+      "title_en": "Zahhak Falls",
+      "title_fa": "ضحاک می‌افتد",
+      "summary_en": "The serpents fight too and lose. Zahhak is not Tahmuras — a thousand years of taking, not training. Fereydun does not fight cleanly. He fights correctly. When Zahhak falls, the serpents go still. A thousand years ends in an afternoon.",
+      "summary_fa": "ماران هم می‌جنگند و می‌بازند. ضحاک تهمورث نیست — هزار سال گرفتن نه تمرین. فریدون تمیز نمی‌جنگد. درست می‌جنگد. هزار سال در یک بعدازظهر پایان می‌یابد.",
+      "image": null,
+      "unlock_via": "scene:the-battle"
+    },
+    {
+      "id": "damavand-prison",
+      "category": "place",
+      "title_en": "Damavand — The Unfinished Sentence",
+      "title_fa": "دماوند — جمله‌ی ناتمام",
+      "summary_en": "The Shahnameh does not kill Zahhak because the Shahnameh is not a story about clean endings. Zahhak is chained inside Damavand — not dead, not free. The mountain holds him the way a civilization holds its worst memory: not forgotten, not allowed to return.",
+      "summary_fa": "شاهنامه ضحاک را نمی‌کشد چون شاهنامه داستانِ پایان‌های تمیز نیست. ضحاک درونِ دماوند به زنجیر است — نه مرده، نه آزاد. کوه او را نگه می‌دارد آن‌طور که تمدن بدترین خاطره‌اش را نگه می‌دارد.",
+      "image": "/assets/images/locations/mount-damavand-location.png",
+      "unlock_via": "scene:the-binding-of-zahhak"
+    },
+    {
+      "id": "angel-warning",
+      "category": "concept",
+      "title_en": "The Angel's Voice",
+      "title_fa": "صدای فرشته",
+      "summary_en": "A voice stops Fereydun before he kills Zahhak. The Shahnameh does not name the speaker — angel, conscience, structural necessity. The point is structural: not every evil can be ended cleanly. Some must be contained and waited for. The world was not ready.",
+      "summary_fa": "صدایی فریدون را پیش از کشتنِ ضحاک متوقف می‌کند. شاهنامه گوینده را نام نمی‌برد — فرشته، وجدان، ضرورتِ ساختاری. نکته ساختاری است: هر شری را نمی‌توان تمیز پایان داد. برخی باید محاصره شوند و منتظرشان ماند.",
+      "image": null,
+      "unlock_via": "scene:the-binding-of-zahhak"
+    },
+    {
+      "id": "fereydun-farr",
+      "category": "concept",
+      "title_en": "Fereydun's Farr",
+      "title_fa": "فَرِ فریدون",
+      "summary_en": "Fereydun carries the farr that Jamshid lost through pride and that Zahhak never legitimately possessed. Under his five-hundred-year reign, justice is the absence of drama. The Shahnameh compresses it into a few verses — not because it is unimportant, but because just rule does not generate narrative. It is the silence between catastrophes.",
+      "summary_fa": "فریدون فری حمل می‌کند که جمشید با غرور از دست داد و ضحاک هرگز به‌حق نداشت. در شاهیِ پانصد ساله‌اش عدل نبودِ نمایش است. شاهنامه آن را در چند مصراع خلاصه می‌کند — نه چون اهمیت ندارد، بلکه چون حکمِ عادلانه روایت نمی‌سازد.",
+      "image": null,
+      "unlock_via": "scene:five-hundred-years"
+    },
+    {
+      "id": "just-reign",
+      "category": "concept",
+      "title_en": "Justice as Silence",
+      "title_fa": "عدل به‌مثابه‌ی سکوت",
+      "summary_en": "Ferdowsi's silence about Fereydun's five hundred just years is a statement: justice is not dramatic. It is the absence of the chronicle's reason for being. Every line the Shahnameh spends on tyranny is a line it cannot spend on peace — and the reverse. The compression is the lesson.",
+      "summary_fa": "سکوتِ فردوسی درباره‌ی پانصد سالِ عادلِ فریدون حرف است: عدل نمایشی نیست. نبودِ دلیلِ وجودِ این تاریخ است. هر مصراعی که شاهنامه صرفِ ستمگری می‌کند مصراعی است که نمی‌تواند صرفِ صلح کند.",
+      "image": null,
+      "unlock_via": "scene:five-hundred-years"
+    },
+    {
+      "id": "iraj-salm-tur",
+      "category": "event",
+      "title_en": "The Division and Its Consequence",
+      "title_fa": "تقسیم و پیامدش",
+      "summary_en": "Iraj asks for Iran — the heart, not the largest share — and says it is enough. Tur and Salm cannot imagine someone genuinely wanting less. They kill him. The Shahnameh's wars begin not from foreign threat but from within a family, from the inability to believe in another person's sincerity.",
+      "summary_fa": "ایرج ایران را می‌خواهد — قلب، نه بزرگ‌ترین سهم — و می‌گوید کافی است. تور و سلم نمی‌توانند تصور کنند کسی واقعاً کمتر بخواهد. او را می‌کشند. جنگ‌های شاهنامه از تهدیدِ خارجی نه، از درونِ خانواده آغاز می‌شوند.",
+      "image": null,
+      "unlock_via": "scene:three-sons"
+    },
+    {
+      "id": "wars-begin",
+      "category": "concept",
+      "title_en": "Where the Wars Begin",
+      "title_fa": "جایی که جنگ‌ها آغاز می‌شوند",
+      "summary_en": "Tur and Salm kill Iraj, and the Shahnameh enters its next age: the age of the blood feud between Iran and Turan. These wars will last generations. Rostam will fight them. Kay Kavus will almost lose them. Kay Khosrow will finally close them. They all begin here, in a room with three brothers and a division of land.",
+      "summary_fa": "تور و سلم ایرج را می‌کشند و شاهنامه وارد عصرِ بعدی می‌شود: عصرِ کینه‌ی خونین میانِ ایران و توران. این جنگ‌ها نسل‌ها طول می‌کشند. رستم در آن‌ها می‌جنگد. کی‌کاووس تقریباً آن‌ها را می‌بازد. کی‌خسرو بالاخره آن‌ها را می‌بندد.",
+      "image": null,
+      "unlock_via": "scene:three-sons"
+    },
+    {
+      "id": "manuchehr-ch6",
+      "category": "person",
+      "title_en": "Manuchehr — The Avenger Waits",
+      "title_fa": "منوچهر — انتقام‌گیر منتظر است",
+      "summary_en": "Iraj will be murdered by his brothers. The Shahnameh will not let this stand unanswered. Manuchehr — Iraj's grandson, raised by Fereydun for this purpose — will become the seventh king and the avenger. His arc begins in the grief of this chapter. (Chapter 7.)",
+      "summary_fa": "ایرج به‌دستِ برادرانش کشته خواهد شد. شاهنامه این را بی‌پاسخ نمی‌گذارد. منوچهر — نوه‌ی ایرج که فریدون برای همین هدف پرورش داد — هفتمین شاه و انتقام‌گیر خواهد شد.",
+      "image": "/season2/uploads/chapters/manuchehr.png?v=1778880891801",
+      "unlock_via": "scene:three-sons"
+    }
+  ]
+}

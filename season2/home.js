@@ -514,13 +514,8 @@
     wireQuestClicks();
     wireTreasuryModals();
 
-    if (window.RealSync && window.RealSync.syncHeroes) {
-      const cached = window.RealSync.getOwnedHeroes ? window.RealSync.getOwnedHeroes() : {};
-      if (!Object.keys(cached).length) window.RealSync.syncHeroes();
-    }
-
     if (window.RealSync) {
-      window.RealSync.ready().then((su) => {
+      window.RealSync.ready().then(async (su) => {
         hydrateProfile();
         hydrateQuests(su);
         hydrateBadge((window.RealPlayer && window.RealPlayer.get)
@@ -528,6 +523,16 @@
         if (window.RealUtils) window.RealUtils.updateGlobalZar();
         refreshTreasury();
         wireTreasuryModals();
+
+        /* Sync owned heroes then re-render spotlight with fresh data */
+        if (window.RealSync.syncHeroes) {
+          await window.RealSync.syncHeroes();
+        }
+        /* Re-fetch catalog heroes so spotlight has name/image data too */
+        fetch("/api/catalog/heroes", { cache: "no-store" })
+          .then(r => r.ok ? r.json() : null)
+          .then(b => { renderHeroSpotlight((b && b.heroes) || []); })
+          .catch(() => renderHeroSpotlight([]));
       });
     }
 
