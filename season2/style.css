@@ -5262,16 +5262,6 @@ body::after {
   flex-wrap: wrap;
 }
 .clan-browse-action { flex-shrink: 0; }
-.clan-browse-badge {
-  display: inline-block;
-  padding: 4px 9px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 700;
-}
-.clan-browse-badge.mine    { background: rgba(244,197,107,.15); color: var(--gold); border: 1px solid var(--border-gold); }
-.clan-browse-badge.taken   { background: rgba(255,255,255,.06); color: var(--muted); border: 1px solid var(--border); }
-.clan-browse-badge.pending { background: rgba(140,109,255,.14); color: #a989ff; border: 1px solid rgba(140,109,255,.35); }
 
 /* ── Leader Dashboard ────────────────────────────────────────────────── */
 .clan-leader-tag {
@@ -5456,19 +5446,145 @@ body::after {
   margin-top: 12px;
   flex-wrap: wrap;
 }
-.clan-action-row .secondary-btn {
+
+/* ── Clan button system ──────────────────────────────────────────────── */
+.clan-btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: transform 0.14s ease, filter 0.14s ease, background 0.14s ease, box-shadow 0.14s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.clan-btn:active { transform: scale(0.96); }
+.clan-btn:disabled { opacity: 0.5; pointer-events: none; }
+
+/* Apply — gold-tinted, compact */
+.clan-btn-apply {
+  padding: 6px 12px;
+  font-size: 11px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(244,197,107,.14), rgba(244,197,107,.07));
+  color: var(--gold);
+  border: 1px solid var(--border-gold);
+}
+.clan-btn-apply:hover { background: rgba(244,197,107,.22); }
+
+/* Chat — teal social */
+.clan-btn-chat {
+  background: linear-gradient(135deg, rgba(75,224,196,.14), rgba(75,224,196,.06));
+  color: var(--teal);
+  border: 1px solid rgba(75,224,196,.32);
   flex: 1;
   min-width: 0;
-  font-size: 12px;
-  padding: 8px 10px;
-  text-align: center;
 }
-.clan-chat-btn {
-  background: rgba(62,240,192,.1);
-  border-color: rgba(62,240,192,.35);
-  color: #3ef0c0;
+.clan-btn-chat:hover { background: rgba(75,224,196,.22); filter: brightness(1.06); }
+.clan-btn-chat:active { background: rgba(75,224,196,.28); }
+
+/* Share — azure/violet gradient */
+.clan-btn-share {
+  background: linear-gradient(135deg, rgba(94,162,255,.12), rgba(140,109,255,.1));
+  color: var(--azure);
+  border: 1px solid rgba(94,162,255,.3);
+  flex: 1;
+  min-width: 0;
 }
-.clan-chat-btn:active { background: rgba(62,240,192,.2); }
+.clan-btn-share:hover { filter: brightness(1.1); }
+
+/* Manage — ember leader authority */
+.clan-btn-manage {
+  background: linear-gradient(135deg, rgba(255,138,61,.12), rgba(255,82,103,.07));
+  color: var(--ember);
+  border: 1px solid rgba(255,138,61,.32);
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 0 2px 10px rgba(255,138,61,.1);
+}
+.clan-btn-manage:hover { filter: brightness(1.1); box-shadow: 0 4px 16px rgba(255,138,61,.2); }
+.clan-btn-manage.is-open {
+  background: rgba(255,82,103,.1);
+  color: var(--crimson);
+  border-color: rgba(255,82,103,.32);
+  box-shadow: none;
+}
+
+/* Accept — jade confirm */
+.clan-btn-accept {
+  background: linear-gradient(135deg, rgba(83,215,156,.15), rgba(75,224,196,.08));
+  color: var(--jade);
+  border: 1px solid rgba(83,215,156,.32);
+  flex: 1;
+}
+.clan-btn-accept:hover { filter: brightness(1.1); }
+
+/* Decline — crimson danger */
+.clan-btn-decline {
+  background: rgba(255,82,103,.08);
+  color: var(--crimson);
+  border: 1px solid rgba(255,82,103,.25);
+  flex: 1;
+}
+.clan-btn-decline:hover { background: rgba(255,82,103,.16); }
+
+/* Join — full gold primary (profile invite inbox) */
+.clan-btn-join {
+  background: linear-gradient(140deg, var(--gold-2) 0%, var(--gold) 60%, var(--gold-3) 100%);
+  color: #28190a;
+  box-shadow: 0 4px 14px rgba(244,197,107,.28), inset 0 1px 0 rgba(255,255,255,.35);
+  flex: 1;
+}
+.clan-btn-join:hover { transform: translateY(-1px); filter: brightness(1.05); }
+.clan-btn-join:active { transform: translateY(1px); box-shadow: none; }
+
+/* Decline soft — muted, hover reveals red */
+.clan-btn-decline-soft {
+  background: rgba(255,255,255,.04);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  flex: 1;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+.clan-btn-decline-soft:hover {
+  background: rgba(255,82,103,.1);
+  color: var(--crimson);
+  border-color: rgba(255,82,103,.28);
+}
+
+/* Invite-to-clan button on visitor profile */
+.clan-btn-invite {
+  background: linear-gradient(135deg, rgba(140,109,255,.14), rgba(94,162,255,.1));
+  color: var(--violet);
+  border: 1px solid var(--border-violet);
+  white-space: nowrap;
+  font-size: 11px;
+  padding: 7px 13px;
+  border-radius: 10px;
+}
+.clan-btn-invite:hover { filter: brightness(1.1); }
+.clan-btn-invite:disabled { opacity: 0.6; }
+
+/* Browse badges — status pills */
+.clan-browse-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.clan-browse-badge.mine    { background: rgba(244,197,107,.15); color: var(--gold);   border: 1px solid var(--border-gold); }
+.clan-browse-badge.taken   { background: rgba(255,255,255,.05); color: var(--muted);  border: 1px solid var(--border); }
+.clan-browse-badge.pending { background: rgba(140,109,255,.13); color: #a989ff;       border: 1px solid var(--border-violet); }
 
 /* ── Clan mining power stat ──────────────────────────────────────────── */
 .clan-power-stat {

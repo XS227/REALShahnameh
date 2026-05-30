@@ -240,15 +240,15 @@
 
       let actionBtn = '';
       if (status === 'member') {
-        actionBtn = `<span class="clan-browse-badge mine">Your Clan</span>`;
+        actionBtn = `<span class="clan-browse-badge mine">⚔ Your Clan</span>`;
       } else if (status === 'other_clan') {
-        actionBtn = `<span class="clan-browse-badge taken">Joined</span>`;
+        actionBtn = `<span class="clan-browse-badge taken">🔒 Joined</span>`;
       } else if (status === 'pending') {
-        actionBtn = `<span class="clan-browse-badge pending">Pending…</span>`;
+        actionBtn = `<span class="clan-browse-badge pending">⏳ Pending</span>`;
       } else {
-        actionBtn = `<button class="secondary-btn clan-apply-btn"
+        actionBtn = `<button class="clan-btn clan-btn-apply clan-apply-btn"
           data-clan-id="${c.clan_id}"
-          data-clan-name="${c.clan_name.replace(/"/g, '&quot;')}">Apply</button>`;
+          data-clan-name="${c.clan_name.replace(/"/g, '&quot;')}">⚔ Apply</button>`;
       }
 
       const clanAvatar = c.clan_photo
@@ -286,7 +286,7 @@
         const res = await post('/api/season2/clan/apply', { telegram_id: myId, clan_id: clanId });
 
         if (res && res.status === 1) {
-          btn.textContent = 'Pending…';
+          btn.textContent = '⏳ Pending';
           btn.className = 'clan-browse-badge pending';
           showToast('Application sent to ' + clanName + '!');
         } else {
@@ -356,7 +356,7 @@
           <input type="url" id="tg-link-input" class="modal-input"
             style="flex:1;margin:0;font-size:12px;padding:8px 10px;"
             placeholder="https://t.me/joinchat/…" />
-          <button class="secondary-btn" id="tg-link-save" style="padding:8px 14px;font-size:12px;">Save</button>
+          <button class="clan-btn clan-btn-chat" id="tg-link-save" style="padding:8px 14px;flex:none;">Save</button>
         </div>
         <div id="tg-link-msg" style="font-size:11px;margin-top:5px;"></div>
       </article>
@@ -428,8 +428,8 @@
           <div class="clan-stats">LVL ${a.level} · ${fmtN(a.xp)} XP</div>
         </div>
         <div style="display:flex;gap:6px;">
-          <button class="primary-btn app-accept-btn" data-id="${a.applicant_id}" style="padding:6px 12px;font-size:12px;">✓ Accept</button>
-          <button class="secondary-btn app-reject-btn" data-id="${a.applicant_id}" style="padding:6px 12px;font-size:12px;">✗ Reject</button>
+          <button class="clan-btn clan-btn-accept app-accept-btn" data-id="${a.applicant_id}" style="padding:7px 12px;">✓ Accept</button>
+          <button class="clan-btn clan-btn-decline app-reject-btn" data-id="${a.applicant_id}" style="padding:7px 12px;">✗ Reject</button>
         </div>
       </div>`).join('');
 
@@ -556,14 +556,14 @@
             ${zarHr > 0 ? `<span class="clan-power-stat">⚡ ${fmtZar(zarHr)} ZAR/hr</span>` : ''}
           </div>
           <div class="clan-action-row">
-            <button class="secondary-btn clan-chat-btn${tgLink ? '' : ' hidden'}" id="clan-join-chat-btn"
+            <button class="clan-btn clan-btn-chat${tgLink ? '' : ' hidden'}" id="clan-join-chat-btn"
               data-link="${tgLink.replace(/"/g,'&quot;')}"
-              style="${tgLink ? '' : 'display:none;'}">💬 Join Clan Chat</button>
-            <button class="secondary-btn clan-share-btn" id="clan-share-btn"
+              style="${tgLink ? '' : 'display:none;'}">💬 Clan Chat</button>
+            <button class="clan-btn clan-btn-share" id="clan-share-btn"
               data-name="${myClan.clan_name.replace(/"/g,'&quot;')}"
-              data-clan-id="${myClan.clan_id}">📢 Share Clan</button>
+              data-clan-id="${myClan.clan_id}">📢 Share</button>
           </div>
-          ${isLeader ? '<button class="secondary-btn" id="manage-clan-btn" style="margin-top:10px;width:100%;">⚔ Manage Clan</button>' : ''}
+          ${isLeader ? '<button class="clan-btn clan-btn-manage" id="manage-clan-btn">⚔ Manage Clan</button>' : ''}
         </article>`;
 
       /* Wire Join Chat — opens t.me group link inside Telegram */
@@ -601,11 +601,11 @@
             }
             manageClanEl.classList.add('open');
             dashboardOpen = true;
-            if (btn) btn.textContent = '✖ Close Management';
+            if (btn) { btn.textContent = '✖ Close Management'; btn.classList.add('is-open'); }
           } else {
             manageClanEl.classList.remove('open');
             dashboardOpen = false;
-            if (btn) btn.textContent = '⚔ Manage Clan';
+            if (btn) { btn.textContent = '⚔ Manage Clan'; btn.classList.remove('is-open'); }
           }
         });
       }

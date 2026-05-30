@@ -272,7 +272,7 @@
               <div class="clan-cta-sub">${t('clan_no_clan_sub')}</div>
             </div>
           </div>
-          <a href="social.html#clan" class="secondary-btn" style="white-space:nowrap;font-size:11px;padding:6px 12px;">${t('your_clan_header')}</a>`;
+          <a href="social.html#clan" class="clan-btn clan-btn-apply" style="text-decoration:none;">⚔ ${t('your_clan_header')}</a>`;
       }
       return;
     }
@@ -324,8 +324,8 @@
           <span class="clan-stat-lbl">${t('clan_earned_lbl')}</span>
         </div>
       </div>
-      <a href="social.html#clan" class="ghost-btn btn-block" style="margin-top:12px;text-align:center;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:12px;">
-        ${t('your_clan_header')} →
+      <a href="social.html#clan" class="clan-btn clan-btn-manage btn-block" style="margin-top:12px;text-decoration:none;">
+        ⚔ ${t('your_clan_header')} →
       </a>`;
 
     /* Wire the upload label to trigger the persistent input element */
@@ -439,8 +439,8 @@
           </div>
         </div>
         <div style="display:flex;gap:8px;margin-top:10px;">
-          <button class="primary-btn invite-accept-btn" data-id="${escHtml(inv.invite_id)}" style="flex:1;font-size:12px;padding:7px 0;">✓ Join Clan</button>
-          <button class="secondary-btn invite-decline-btn" data-id="${escHtml(inv.invite_id)}" style="flex:1;font-size:12px;padding:7px 0;">✗ Decline</button>
+          <button class="clan-btn clan-btn-join invite-accept-btn" data-id="${escHtml(inv.invite_id)}">⚔ Join Clan</button>
+          <button class="clan-btn clan-btn-decline-soft invite-decline-btn" data-id="${escHtml(inv.invite_id)}">✗ Decline</button>
         </div>
       </article>`).join('');
 
@@ -632,9 +632,8 @@
 
       let inviteBtn = '';
       if (amLeader && targetHasNoClan && myId !== _visitUid) {
-        inviteBtn = `<button id="invite-to-clan-btn" class="secondary-btn"
-          style="white-space:nowrap;font-size:11px;padding:6px 12px;">
-          Invite to ${escHtml(myClan.clan_name)}
+        inviteBtn = `<button id="invite-to-clan-btn" class="clan-btn clan-btn-invite">
+          ⚔ Invite to ${escHtml(myClan.clan_name)}
         </button>`;
       }
 
@@ -672,12 +671,12 @@
                 }[r.error] || ('Error: ' + (r.error || 'unknown'));
                 _showToast(msg);
                 btn.disabled = false;
-                btn.textContent = 'Invite to ' + (myClan.clan_name || 'Clan');
+                btn.textContent = '⚔ Invite to ' + (myClan.clan_name || 'Clan');
               }
             } catch {
               _showToast('Network error. Try again.');
               btn.disabled = false;
-              btn.textContent = 'Invite to ' + (myClan.clan_name || 'Clan');
+              btn.textContent = '⚔ Invite to ' + (myClan.clan_name || 'Clan');
             }
           });
         }
