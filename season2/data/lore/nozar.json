@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-30T00:00:00Z",
+  "chapter_slug": "nozar",
+  "chapter_id": 8,
+  "era": {
+    "label_en": "~3400–3200 BC — The Age of Nozar",
+    "label_fa": "~۳۴۰۰–۳۲۰۰ پ.م — عصرِ نوذر"
+  },
+  "lore_summary": {
+    "en": "Manuchehr dies and Nozar inherits the throne of Iran. He is not evil — he is insufficient. He dismisses Sam's veteran warriors and replaces experience with flattery. The frontier thins. Afrasiab of Turan, grandson of the line that Manuchehr defeated, watches from across the Oxus and sees what Nozar cannot: that Iran is open. He crosses the river. The Iranian army breaks. Nozar is captured and executed. Afrasiab briefly holds the throne of Iran. The old warriors — Sam's survivors led by Zav — drive him back eventually. The throne is recovered. But the wound does not close. The Iran-Turan war has begun in earnest, and it will not end until Kay Khosrow stands on the far bank of the Oxus generations from now.",
+    "fa": "منوچهر می‌میرد و نوذر تختِ ایران را به ارث می‌برد. او بد نیست — کافی نیست. جنگجویانِ کهنه‌کارِ سام را برکنار می‌کند و تجربه را با چاپلوسی جایگزین می‌کند. مرز نازک می‌شود. افراسیابِ توران، نوه‌ی نسلی که منوچهر شکست داده، از آنسوی آمودریا نگاه می‌کند و چیزی می‌بیند که نوذر نمی‌تواند: که ایران باز است. از رود می‌گذرد. سپاهِ ایران می‌شکند. نوذر گرفتار و کشته می‌شود. افراسیاب لختی تختِ ایران را در دست می‌گیرد. جنگجویانِ قدیم — بازماندگانِ سام به رهبریِ زو — بالاخره او را پس می‌رانند. تخت بازپس گرفته می‌شود. اما زخم بسته نمی‌شود. جنگِ ایران و توران به‌راستی آغاز شده، و تا کی‌خسرو نسل‌ها بعد بر ساحلِ دیگرِ آمودریا نایستد پایان نمی‌یابد."
+  },
+  "timeline": [
+    {
+      "id": "nozar-inherits",
+      "year_label_en": "~3400 BC",
+      "year_label_fa": "~۳۴۰۰ پ.م",
+      "title_en": "Nozar Takes the Throne",
+      "title_fa": "نوذر تخت را می‌گیرد",
+      "body_en": "Manuchehr dies after a long and just reign. Nozar is crowned. He is the son of a great king — but the Shahnameh makes clear from the first scene that greatness is not inherited the way a throne is.",
+      "body_fa": "منوچهر پس از دورانِ درازِ دادگرانه می‌میرد. نوذر تاج‌گذاری می‌شود. پسرِ شاهِ بزرگی است — اما شاهنامه از همان صحنه‌ی اول روشن می‌کند که بزرگی مثلِ تخت به ارث نمی‌رسد.",
+      "image": null,
+      "side": "neutral"
+    },
+    {
+      "id": "veterans-dismissed",
+      "year_label_en": "~3390 BC",
+      "year_label_fa": "~۳۳۹۰ پ.م",
+      "title_en": "The Veterans Are Dismissed",
+      "title_fa": "کهنه‌کاران برکنار می‌شوند",
+      "body_en": "Nozar removes Sam's experienced warriors from command. He does not understand what he is losing — only that these old men make him feel judged. Afrasiab, across the Oxus, understands exactly what he is gaining.",
+      "body_fa": "نوذر جنگجویانِ کهنه‌کارِ سام را از فرماندهی برکنار می‌کند. نمی‌فهمد چه از دست می‌دهد — فقط می‌داند که این پیرمردها باعث می‌شوند احساسِ قضاوت‌شدن کند. افراسیاب، آنسوی آمودریا، دقیقاً می‌فهمد چه به دست می‌آورد.",
+      "image": null,
+      "side": "dark"
+    },
+    {
+      "id": "afrasiab-crosses",
+      "year_label_en": "~3350 BC",
+      "year_label_fa": "~۳۳۵۰ پ.م",
+      "title_en": "Afrasiab Crosses the Oxus",
+      "title_fa": "افراسیاب از آمودریا می‌گذرد",
+      "body_en": "Afrasiab leads the Turanian army across the great river. The invasion is swift. Without Sam's veterans to anchor the defense, the Iranian lines fragment. City after city opens its gates.",
+      "body_fa": "افراسیاب سپاهِ توران را از رودِ بزرگ عبور می‌دهد. تهاجم سریع است. بدون کهنه‌کارانِ سام برای استحکامِ دفاع، خطوطِ ایرانی متلاشی می‌شوند.",
+      "image": null,
+      "side": "dark"
+    },
+    {
+      "id": "nozar-falls",
+      "year_label_en": "~3300 BC",
+      "year_label_fa": "~۳۳۰۰ پ.م",
+      "title_en": "Nozar is Captured and Killed",
+      "title_fa": "نوذر گرفتار و کشته می‌شود",
+      "body_en": "Nozar is taken alive in battle. Afrasiab executes him. The Shahnameh does not dramatize this moment — it records it plainly, as one records a thing that was inevitable from the day the throne was given to someone who could not carry it.",
+      "body_fa": "نوذر در نبرد زنده گرفته می‌شود. افراسیاب او را می‌کشد. شاهنامه این لحظه را نمایشی نمی‌کند — ساده ثبتش می‌کند، همان‌طور که چیزی را ثبت می‌کنند که از روزی که تخت به کسی داده شد که نمی‌توانست حملش کند اجتناب‌ناپذیر بود.",
+      "image": null,
+      "side": "dark"
+    },
+    {
+      "id": "zav-resistance",
+      "year_label_en": "~3280 BC",
+      "year_label_fa": "~۳۲۸۰ پ.م",
+      "title_en": "Zav and the Old Warriors",
+      "title_fa": "زو و جنگجویانِ قدیم",
+      "body_en": "Sam's veterans — the warriors Nozar dismissed — regroup under Zav, a noble from the lineage of the survivors. They push Afrasiab back across the Oxus. The throne is recovered, but it is smaller than it was. The Shahnameh does not pretend otherwise.",
+      "body_fa": "کهنه‌کارانِ سام — جنگجویانی که نوذر برکنار کرد — زیرِ زو، یک بزرگِ از نسلِ بازماندگان، دوباره گرد می‌آیند. افراسیاب را به آنسوی آمودریا پس می‌رانند. تخت بازپس گرفته می‌شود، اما کوچک‌تر از آن چیزی است که بود.",
+      "image": null,
+      "side": "light"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "empty-throne",
+      "order": 1,
+      "title_en": "The Empty Throne",
+      "title_fa": "تختِ خالی",
+      "era_en": "~3400 BC",
+      "era_fa": "~۳۴۰۰ پ.م",
+      "body_en": "Manuchehr dies as he ruled — quietly, in order, with his purpose accomplished. Nozar receives the crown in a court that still carries the memory of Sam's warriors at its edges. The throne is not empty — Nozar sits on it. But the Shahnameh marks this transfer with no fanfare, no verse of praise, no omen of light. The silence is the comment. In the chronicle, a king who merits praise receives it immediately. Nozar receives the throne and then a pause — the kind of pause that, in Ferdowsi's verse, means: watch carefully. This will not hold.",
+      "body_fa": "منوچهر همان‌طور که حکم رانده می‌میرد — آرام، منظم، با هدفِ انجام‌شده. نوذر تاج را در دربارگاهی می‌گیرد که هنوز خاطره‌ی جنگجویانِ سام را در حاشیه‌هایش دارد. تخت خالی نیست — نوذر بر آن می‌نشیند. اما شاهنامه این انتقال را بدون جشن، بدون بیتِ ستایش، بدون فالِ روشنایی ثبت می‌کند. سکوت نظر است.",
+      "atmosphere": "cold",
+      "image": "/season2/uploads/chapters/nozar.png",
+      "reward": { "xp": 40 },
+      "unlocks_codex": ["throne-without-farr"]
+    },
+    {
+      "id": "dismissal",
+      "order": 2,
+      "title_en": "The Dismissal",
+      "title_fa": "برکناری",
+      "era_en": "~3390 BC",
+      "era_fa": "~۳۳۹۰ پ.م",
+      "body_en": "The old warriors come to court as they always have — to report the state of the borders, the mood of the northern passes, the intelligence from the plains of Turan. Nozar listens for a season and then stops listening. These men knew his father; they served Sam; they remember when Nozar was a boy. He cannot be a king in front of them, so he removes them. He replaces them with younger men who do not know what the borders cost to hold. This is not cruelty. It is something worse than cruelty: it is vanity. Afrasiab's scouts are watching from the ridge. They see the veterans walk away. They send their report home that same evening.",
+      "body_fa": "جنگجویانِ قدیم به دربار می‌آیند همان‌طور که همیشه آمده‌اند — برای گزارشِ وضعِ مرزها، حالِ گردنه‌های شمالی، اطلاعات از دشت‌های توران. نوذر یک فصل گوش می‌دهد و بعد گوش دادن را متوقف می‌کند. این مردان پدرش را می‌شناختند؛ زیرِ سام خدمت کرده‌اند؛ به یاد دارند نوذر پسربچه بود. در برابرِ آن‌ها نمی‌تواند شاه باشد، پس آن‌ها را کنار می‌گذارد. دیدبانانِ افراسیاب از فراز تماشا می‌کنند. جنگجویان را می‌بینند که می‌روند. همان شب گزارششان را می‌فرستند.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 50 },
+      "unlocks_codex": ["experience-dismissed", "afrasiab-watches"]
+    },
+    {
+      "id": "oxus-crossing",
+      "order": 3,
+      "title_en": "The Oxus Crossing",
+      "title_fa": "گذرِ آمودریا",
+      "era_en": "~3350 BC",
+      "era_fa": "~۳۳۵۰ پ.م",
+      "body_en": "The Turanian army crosses the Oxus in the early morning, before the Iranian scouts can ride back with news. Afrasiab has timed this precisely — not because he is lucky, but because his patience is as old as the feud itself. He has waited for a Nozar. Every king of Turan has waited for a Nozar. The Iranian army that comes out to meet them is commanded by men who have not held a battle line before. They fight bravely — the Shahnameh grants them that. But bravery without knowledge of ground is expensive. The line breaks before noon.",
+      "body_fa": "سپاهِ توران پیش از آنکه دیدبانانِ ایرانی بتوانند خبر بیاورند از آمودریا می‌گذرد. افراسیاب این را دقیقاً تنظیم کرده — نه به خاطرِ شانس، بلکه چون صبرش به قدمتِ خودِ کینه است. سپاهِ ایرانی که برای رویارویی می‌آید توسطِ مردانی فرماندهی می‌شود که تا به حال خطِ نبرد نگه نداشته‌اند. شجاعانه می‌جنگند — شاهنامه این را به آن‌ها می‌دهد. اما شجاعت بدون شناختِ زمین گران است.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 65 },
+      "unlocks_codex": ["oxus-the-border", "war-without-limits"]
+    },
+    {
+      "id": "nozar-taken",
+      "order": 4,
+      "title_en": "Nozar Taken",
+      "title_fa": "دستگیریِ نوذر",
+      "era_en": "~3300 BC",
+      "era_fa": "~۳۳۰۰ پ.م",
+      "body_en": "Nozar is taken alive on the battlefield. The Shahnameh records this plainly: he is captured, he is brought before Afrasiab, he is killed. There is no long scene of confrontation, no final speech, no last great act. He does not earn a dramatic ending because his reign did not earn one. Afrasiab takes the throne of Iran — sits in the chamber where Manuchehr sat, where Fereydun sat, where the Derafsh Kaviani hangs on its staff. He holds it briefly, and the chronicle watches with the careful eye of someone who knows this will not last either.",
+      "body_fa": "نوذر زنده روی میدانِ نبرد گرفته می‌شود. شاهنامه این را ساده ثبت می‌کند: گرفتار می‌شود، پیشِ افراسیاب برده می‌شود، کشته می‌شود. صحنه‌ی طولانیِ رویارویی نیست، سخنرانیِ آخر نیست، آخرین عملِ بزرگ نیست. پایانِ نمایشی به دست نمی‌آورد چون دورانِ پادشاهی‌اش چنین چیزی به دست نیاورد.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 75 },
+      "unlocks_codex": ["nozar-falls", "afrasiab-on-throne"]
+    },
+    {
+      "id": "zav-rises",
+      "order": 5,
+      "title_en": "The Old Warriors Return",
+      "title_fa": "بازگشتِ جنگجویانِ قدیم",
+      "era_en": "~3280 BC",
+      "era_fa": "~۳۲۸۰ پ.م",
+      "body_en": "The warriors Nozar dismissed do not surrender. They regroup under Zav — a noble from the lineage of Sam's supporters, a man who carries the memory of how to hold a border. They push Afrasiab back, step by step, season by season, until the Turanian army is back across the Oxus and the throne of Iran is in Iranian hands again. Zav rules briefly and carefully, making no mistakes, asking for nothing that isn't his. The Shahnameh gives him a few verses of dignity. He has earned them. He is the man who held the thread between Manuchehr's world and the world that Zal and Rostam will inhabit.",
+      "body_fa": "جنگجویانی که نوذر برکنار کرد تسلیم نمی‌شوند. زیرِ زو دوباره گرد می‌آیند — بزرگی از نسلِ حامیانِ سام، مردی که خاطره‌ی چگونگیِ نگه داشتنِ مرز را دارد. افراسیاب را قدم‌به‌قدم، فصل‌به‌فصل، پس می‌رانند تا سپاهِ توران دوباره آنسوی آمودریا باشد. زو کوتاه و با احتیاط حکم می‌راند. شاهنامه چند بیتِ شأن به او می‌دهد. به دست آورده است.",
+      "atmosphere": "dawn",
+      "image": null,
+      "reward": { "xp": 85 },
+      "unlocks_codex": ["zav-the-thread", "iran-turan-begins"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "nozar",
+      "name_en": "Nozar",
+      "name_fa": "نوذر",
+      "role_en": "Eighth King · Son of Manuchehr · The Un-Graced",
+      "role_fa": "هشتمین شاه · پسرِ منوچهر · بی‌فرّ",
+      "rarity": "rare",
+      "level_required": 1,
+      "lore_en": "Son of Manuchehr and inheritor of a throne he cannot carry. He is not a tyrant — he is simply insufficient. The farr that made his father a just king passed him by. His most consequential act is negative: dismissing the experienced warriors who held Iran's borders. That dismissal is the door through which Afrasiab enters. He is captured, killed, and remembered mainly as the cautionary tale the Shahnameh tells between two ages of greatness.",
+      "lore_fa": "پسرِ منوچهر و وارثِ تختی که نمی‌تواند حملش کند. ستمگر نیست — کافی نیست. فَرّی که پدرش را شاهِ دادگر ساخت از او گذشته. مهم‌ترین عملش منفی است: برکناریِ جنگجویانِ کهنه‌کاری که مرزهای ایران را نگه می‌داشتند. آن برکناری دری است که افراسیاب از آن وارد می‌شود.",
+      "image": "/season2/uploads/chapters/nozar.png",
+      "unlocked": true,
+      "side": "neutral"
+    },
+    {
+      "slug": "afrasiab",
+      "name_en": "Afrasiab",
+      "name_fa": "افراسیاب",
+      "role_en": "King of Turan · Great Antagonist of the Middle Shahnameh",
+      "role_fa": "شاهِ توران · دشمنِ بزرگِ شاهنامه‌ی میانی",
+      "rarity": "legendary",
+      "level_required": 3,
+      "lore_en": "Afrasiab is not a simple villain. He is the mirror-antagonist of Iran — as complex as its greatest heroes, as patient as the river that carries his army. He has been watching since Manuchehr's time. He sees Nozar clearly. He crosses the Oxus not from rage but from calculation. He will be the great challenge of Iran's next six chapters, and the chronicle gives him the dignity a serious enemy deserves.",
+      "lore_fa": "افراسیاب شریرِ ساده‌ای نیست. آینه‌دشمنِ ایران است — به پیچیدگیِ بزرگ‌ترین قهرمانانش، به صبرِ رودی که سپاهش را حمل می‌کند. از زمانِ منوچهر در حال تماشاست. نوذر را واضح می‌بیند. از آمودریا نه از خشم بلکه از محاسبه می‌گذرد.",
+      "image": null,
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:oxus-crossing"
+    },
+    {
+      "slug": "zav",
+      "name_en": "Zav",
+      "name_fa": "زو",
+      "role_en": "The Interim King · Keeper of the Thread",
+      "role_fa": "شاهِ موقت · نگهدارِ نخ",
+      "rarity": "rare",
+      "level_required": 5,
+      "lore_en": "Zav rules briefly between Nozar's fall and the age of Zal and Rostam. He is not spectacular. He is steady. The Shahnameh honors steady kings differently than great kings — with fewer verses, but without irony. Zav asks only for what is his. He holds the throne. He passes it on intact. In a chronicle of catastrophes, that is a form of heroism.",
+      "lore_fa": "زو لختی میانِ سقوطِ نوذر و عصرِ زال و رستم حکم می‌راند. چشمگیر نیست. ثابت است. شاهنامه شاهانِ ثابت را متفاوت از شاهانِ بزرگ احترام می‌گذارد — با بیتِ کمتر، اما بدون طعنه. زو فقط آنچه از آنِ اوست می‌خواهد.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:zav-rises"
+    }
+  ],
+  "places": [
+    {
+      "slug": "the-oxus",
+      "name_en": "The Oxus River — Border of the World",
+      "name_fa": "آمودریا — مرزِ جهان",
+      "kind_en": "The Great Divide Between Iran and Turan",
+      "kind_fa": "جداکننده‌ی بزرگِ ایران و توران",
+      "summary_en": "The Oxus — the Amu Darya of the modern world — is the Shahnameh's great border. It is the line between Iran's order and Turan's challenge. Manuchehr held it. Nozar lost it. Rostam will fight on its banks. Kay Khosrow will cross it to close the war. In Ferdowsi's geography, the Oxus is not just a river: it is the membrane between two ways of being.",
+      "summary_fa": "آمودریا مرزِ بزرگِ شاهنامه است. خطِ میانِ نظمِ ایران و چالشِ توران. منوچهر آن را نگه داشت. نوذر از دستش داد. رستم بر ساحلش می‌جنگد. کی‌خسرو برای بستنِ جنگ از آن می‌گذرد.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:oxus-crossing"
+    },
+    {
+      "slug": "nozar-court",
+      "name_en": "Nozar's Court — A Kingdom Diminished",
+      "name_fa": "دربارِ نوذر — پادشاهیِ کاسته‌شده",
+      "kind_en": "Where the Farr Departed",
+      "kind_fa": "جایی که فَرّ رفت",
+      "summary_en": "The same court that Manuchehr ruled from — the same pillars, the same Derafsh Kaviani on its staff, the same mountain view to the north. But the Shahnameh marks it differently under Nozar. The court does not change; the king does. The absence of farr makes a familiar place unfamiliar.",
+      "summary_fa": "همان دربارگاهی که منوچهر از آن حکم می‌راند — همان ستون‌ها، همان درفشِ کاویانی بر نیزه‌اش، همان دیدِ کوه به شمال. اما شاهنامه آن را زیرِ نوذر متفاوت نشان می‌دهد. دربار تغییر نمی‌کند؛ شاه تغییر می‌کند.",
+      "image": null,
+      "unlocked": true
+    },
+    {
+      "slug": "battlefield-of-nozar",
+      "name_en": "The Field Where Nozar Fell",
+      "name_fa": "میدانی که نوذر افتاد",
+      "kind_en": "Where the Farr Ran Out",
+      "kind_fa": "جایی که فَرّ تمام شد",
+      "summary_en": "The Shahnameh does not name the battlefield where Nozar was captured. This is deliberate. A king who does not earn his place in history does not earn a landmark. The un-named field is its own commentary: some losses are too ordinary to memorialize.",
+      "summary_fa": "شاهنامه میدانِ نبردی که نوذر گرفتار شد را نام نمی‌برد. این عمدی است. شاهی که جایش را در تاریخ به دست نمی‌آورد نشانه‌ی جغرافیایی هم به دست نمی‌آورد.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:nozar-taken"
+    }
+  ],
+  "battle": {
+    "boss_slug": "afrasiab",
+    "boss_name_en": "Afrasiab — The Opening Wave",
+    "boss_name_fa": "افراسیاب — موجِ آغازین",
+    "boss_image": null,
+    "boss_master_slug": null,
+    "boss_master_image": null,
+    "intro_en": "Afrasiab has crossed the Oxus. The throne of Iran has fallen. To face this gate you must understand not only what Nozar lost, but why — and what the veterans who returned to fight understood that he never did.",
+    "intro_fa": "افراسیاب از آمودریا گذشته. تختِ ایران افتاده. برای مواجهه با این دروازه باید نه فقط بفهمی نوذر چه از دست داد، بلکه چرا — و کهنه‌کارانی که برای جنگیدن بازگشتند چه می‌فهمیدند که او هرگز نفهمید.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 25,
+        "label_en": "Reach LVL 25",
+        "label_fa": "رسیدن به سطحِ ۲۵",
+        "label_tg": "Расидан ба сатҳи 25",
+        "hint_en": "Tap, complete quests, and claim daily rewards to earn XP.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید و پاداش‌های روزانه بگیرید.",
+        "hint_tg": "Зарба занед, вазифаҳоро иҷро кунед ва мукофотҳои рӯзонаро гиред."
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "nozar",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "throne-without-farr",
+      "category": "concept",
+      "title_en": "The Throne Without the Farr",
+      "title_fa": "تخت بدونِ فَرّ",
+      "summary_en": "Nozar sits on the throne of Iran — the same throne that held Fereydun, Manuchehr, the liberators and the just kings. But the farr has not followed the throne. The Shahnameh is precise about this: the farr is not a birthright. It is earned, and it can leave. A king without it is a man in royal dress standing in a room that no longer belongs to him, even if no one has told him yet.",
+      "summary_fa": "نوذر بر تختِ ایران می‌نشیند — همان تختی که فریدون، منوچهر، رهایی‌بخشان و شاهانِ دادگر را داشت. اما فَرّ به دنبالِ تخت نیامده. شاهنامه در این باره دقیق است: فَرّ حقِ تولد نیست. به دست می‌آید، و می‌تواند برود.",
+      "image": null,
+      "unlock_via": "scene:empty-throne"
+    },
+    {
+      "id": "experience-dismissed",
+      "category": "event",
+      "title_en": "What Was Dismissed",
+      "title_fa": "آنچه برکنار شد",
+      "summary_en": "The veterans Nozar dismissed were not simply old soldiers. They were the institutional memory of Iran's borders — the knowledge of which passes flood in spring, which tribes could be negotiated with, which silences along the Oxus meant danger. That knowledge cannot be trained into new men in a single season. Nozar threw away decades of learned defense. Afrasiab thanked him for it.",
+      "summary_fa": "کهنه‌کارانی که نوذر برکنار کرد فقط سربازانِ پیر نبودند. حافظه‌ی نهادیِ مرزهای ایران بودند — دانشِ اینکه کدام گردنه‌ها در بهار سیل می‌زنند، با کدام قبایل می‌توان مذاکره کرد، کدام سکوت‌های کنارِ آمودریا معنیِ خطر دارند.",
+      "image": null,
+      "unlock_via": "scene:dismissal"
+    },
+    {
+      "id": "afrasiab-watches",
+      "category": "person",
+      "title_en": "Afrasiab's Patience",
+      "title_fa": "صبرِ افراسیاب",
+      "summary_en": "Afrasiab does not cross the Oxus the moment he hears that Nozar has dismissed the veterans. He waits. He confirms. He trains his army for the specific terrain of northern Iran. The Shahnameh uses his patience as a mirror against Nozar's impatience — the impatience of a man who couldn't bear to be judged by people who remembered when he was young. One king is too eager to remove discomfort. The other is comfortable with a very long wait.",
+      "summary_fa": "افراسیاب همین که می‌شنود نوذر کهنه‌کاران را برکنار کرده از آمودریا نمی‌گذرد. صبر می‌کند. تأیید می‌کند. سپاهش را برای زمینِ خاصِ شمالِ ایران آموزش می‌دهد. شاهنامه از صبرش به‌عنوانِ آینه در مقابلِ بی‌صبریِ نوذر استفاده می‌کند.",
+      "image": null,
+      "unlock_via": "scene:dismissal"
+    },
+    {
+      "id": "oxus-the-border",
+      "category": "place",
+      "title_en": "The Oxus — Why This River Matters",
+      "title_fa": "آمودریا — چرا این رود اهمیت دارد",
+      "summary_en": "The Oxus is the Shahnameh's great border not because Ferdowsi invented it but because geography made it so. The rivers of Central Asia separated the steppe cultures of Turan from the agricultural civilizations of Iran as surely as any wall. Crossing it was an act of war in itself. The Shahnameh returns to this river again and again — for Manuchehr, for Rostam, for Kay Khosrow. It is the chronicle's recurring threshold.",
+      "summary_fa": "آمودریا مرزِ بزرگِ شاهنامه نیست چون فردوسی آن را اختراع کرده بلکه چون جغرافیا چنین کرده. رودهای آسیای میانه فرهنگ‌های استپیِ توران را از تمدن‌های کشاورزیِ ایران جدا می‌کردند. گذشتن از آن خودش عملِ جنگ بود.",
+      "image": null,
+      "unlock_via": "scene:oxus-crossing"
+    },
+    {
+      "id": "war-without-limits",
+      "category": "concept",
+      "title_en": "A War Without Personal Debts",
+      "title_fa": "جنگی بدون وامِ شخصی",
+      "summary_en": "Manuchehr's war against Tur and Salm was personal — a blood feud carried forward with justice. Afrasiab's war is something different: imperial, strategic, patient. He does not hate Nozar personally. He sees an opening and uses it. The Shahnameh presents this as more dangerous than hatred. A personal enemy may forgive or relent. An empire calculating its opportunity does not.",
+      "summary_fa": "جنگِ منوچهر علیه تور و سلم شخصی بود — کینه‌ی خونی که با عدالت پیش رفت. جنگِ افراسیاب چیزِ متفاوتی است: امپراتوری، راهبردانه، صبور. شخصاً از نوذر متنفر نیست. دهانه‌ای می‌بیند و از آن استفاده می‌کند.",
+      "image": null,
+      "unlock_via": "scene:oxus-crossing"
+    },
+    {
+      "id": "nozar-falls",
+      "category": "event",
+      "title_en": "The Fall of Nozar",
+      "title_fa": "سقوطِ نوذر",
+      "summary_en": "Nozar is captured without a final dramatic scene. This is the Shahnameh's judgment: his fall does not merit theater. The chronicle gives elaborate death scenes to kings who earned them — Iraj's quiet tragedy, Fereydun's long grief, the great warriors who fall in battle with speeches. Nozar is captured and killed in a subordinate clause. The form is the meaning.",
+      "summary_fa": "نوذر بدون صحنه‌ی نهاییِ نمایشی گرفتار می‌شود. این داوریِ شاهنامه است: سقوطش لایقِ نمایش نیست. تاریخنامه صحنه‌های مرگِ با طمطراق را به شاهانی می‌دهد که آن را به دست آورده‌اند.",
+      "image": null,
+      "unlock_via": "scene:nozar-taken"
+    },
+    {
+      "id": "afrasiab-on-throne",
+      "category": "event",
+      "title_en": "Afrasiab on Iran's Throne",
+      "title_fa": "افراسیاب بر تختِ ایران",
+      "summary_en": "Afrasiab sits briefly on the throne of Iran. The Shahnameh records this without embellishment. He is not a demon who desecrates the seat — he is a king who has taken what was available to take. The chronicle's discomfort is not that a Turanian sits where Iranians sat. It is that Iran allowed itself to become takeable.",
+      "summary_fa": "افراسیاب لختی بر تختِ ایران می‌نشیند. شاهنامه این را بدون آرایه ثبت می‌کند. دیوی نیست که کرسی را نجس کند — شاهی است که آنچه در دسترس بود برداشته. ناراحتیِ شاهنامه این نیست که یک تورانی جایی که ایرانیان نشسته‌اند می‌نشیند. این است که ایران اجازه داد گرفتنی شود.",
+      "image": null,
+      "unlock_via": "scene:nozar-taken"
+    },
+    {
+      "id": "zav-the-thread",
+      "category": "person",
+      "title_en": "Zav — The Necessary King",
+      "title_fa": "زو — شاهِ ضروری",
+      "summary_en": "Zav does not appear in most popular retellings of the Shahnameh. He is the pause between catastrophe and greatness. He rules well enough that Zal and Sam can do what they need to do. He is the king who kept the institution of kingship alive during the years when Iran could have collapsed entirely. The Shahnameh does not romanticize him — but it does not dismiss him either.",
+      "summary_fa": "زو در بیشترِ بازگوییِ محبوبِ شاهنامه ظاهر نمی‌شود. مکثی میانِ فاجعه و بزرگی است. به‌اندازه‌ی کافی خوب حکم می‌راند تا زال و سام بتوانند آنچه باید بکنند. شاهی است که نهادِ شاهی را در سال‌هایی که ایران می‌توانست کاملاً فروبپاشد زنده نگه داشت.",
+      "image": null,
+      "unlock_via": "scene:zav-rises"
+    },
+    {
+      "id": "iran-turan-begins",
+      "category": "concept",
+      "title_en": "The Iran-Turan War — Now It Truly Begins",
+      "title_fa": "جنگِ ایران و توران — حالا واقعاً آغاز می‌شود",
+      "summary_en": "Manuchehr's war closed the blood feud begun by Tur's murder of Iraj. Afrasiab's war is different in kind — not a feud but a contest for supremacy that will last for centuries in the chronicle. Every major hero of the Shahnameh's middle section — Rostam, Kay Kavus, Kay Khosrow, Sohrab — defines themselves against this war. It begins here, in the gap left by a king who didn't deserve his throne.",
+      "summary_fa": "جنگِ منوچهر کینه‌ای را که با قتلِ ایرج توسطِ تور آغاز شده بود بست. جنگِ افراسیاب از نوعِ دیگری است — نه کینه بلکه رقابتی برای برتری که سده‌ها در شاهنامه ادامه دارد. هر قهرمانِ بزرگِ بخشِ میانیِ شاهنامه — رستم، کی‌کاووس، کی‌خسرو، سهراب — خود را در برابرِ این جنگ تعریف می‌کنند. اینجا آغاز می‌شود، در شکافی که شاهی گذاشت که لایقِ تختش نبود.",
+      "image": null,
+      "unlock_via": "scene:zav-rises"
+    }
+  ]
+}

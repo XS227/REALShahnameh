@@ -4971,6 +4971,111 @@
         "xp": 180,
         "real": 80
       }
+    },
+    {
+      "id": "nozar-e1",
+      "chapter_slug": "nozar",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What is the first and most critical mistake Nozar makes as king?",
+      "question_fa": "اولین و مهم‌ترین اشتباه نوذر به‌عنوانِ شاه چیست؟",
+      "question_tg": "Аввалин ва муҳимтарин хатои Нӯзар ҳамчун шоҳ чист?",
+      "answers": [
+        "He moves the capital away from the northern border",
+        "He dismisses the old warriors who served under Sam",
+        "He stops collecting taxes from the provinces",
+        "He sends the Derafsh Kaviani away to a temple"
+      ],
+      "answers_fa": [
+        "پایتخت را از مرزِ شمالی دور می‌کند",
+        "جنگجویانِ قدیمی که زیرِ سام خدمت کردند را برکنار می‌کند",
+        "مالیات گرفتن از استان‌ها را متوقف می‌کند",
+        "درفشِ کاویانی را به معبدی می‌فرستد"
+      ],
+      "answers_tg": [
+        "Пойтахтро аз марзи шимолӣ дур мекунад",
+        "Ҷангиёни кӯҳнасолеро, ки зери Сом хидмат карданд, аз кор мебарорад",
+        "Андоз гирифтан аз вилоятҳоро қатъ мекунад",
+        "Дарафши Ковиёниро ба маъбаде мефиристад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nozar dismisses the experienced veterans — the warriors who had held Iran's borders under Sam. Experience replaced by flattery is the oldest way for a kingdom to lose its edge without noticing. Afrasiab notices.",
+      "explanation_fa": "نوذر کهنه‌کاران را برکنار می‌کند — جنگجویانی که مرزهای ایران را زیرِ سام نگه داشته بودند. جایگزینی تجربه با چاپلوسی قدیمی‌ترین راه برای از دست دادنِ برتریِ یک پادشاهی بدون اینکه بفهمد است. افراسیاب می‌فهمد.",
+      "explanation_tg": "Нӯзар кӯҳнасолонро аз кор мебарорад — ҷангиёне, ки марзҳои Эронро зери Сом нигоҳ дошта буданд. Иваз кардани таҷриба бо чопалусӣ қадимтарин роҳест барои аз даст додани бартарии як салтанат бидуни он ки бифаҳмад. Афросиёб мефаҳмад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "nozar-e2",
+      "chapter_slug": "nozar",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Who invades Iran during Nozar's reign, crossing the great river from Turan?",
+      "question_fa": "در دورانِ نوذر چه کسی از توران رودِ بزرگ را می‌گذرد و به ایران حمله می‌کند؟",
+      "question_tg": "Дар давраи Нӯзар кӣ аз Турон дарёи бузургро убур карда ба Эрон ҳамла мекунад?",
+      "answers": [
+        "Salm's descendants, seeking revenge",
+        "A new Div army from the mountains",
+        "Afrasiab, king of Turan",
+        "The Rum army from the west"
+      ],
+      "answers_fa": [
+        "نوادگانِ سلم که دنبالِ انتقام‌اند",
+        "سپاهِ دیوانِ جدید از کوه‌ها",
+        "افراسیاب، شاهِ توران",
+        "سپاهِ روم از غرب"
+      ],
+      "answers_tg": [
+        "Авлоди Салм, ки дунболи интиқом ҳастанд",
+        "Лашкари нави Девон аз кӯҳҳо",
+        "Афросиёб, шоҳи Турон",
+        "Лашкари Рум аз ғарб"
+      ],
+      "correct_answer": 2,
+      "explanation": "Afrasiab of Turan is the great antagonist of the middle Shahnameh. He crosses the Oxus — the river between Iran and Turan — and pushes deep into Iran while Nozar's weakened court cannot hold the line. His invasion begins the long Iran-Turan conflict.",
+      "explanation_fa": "افراسیابِ توران دشمنِ بزرگِ شاهنامه‌ی میانی است. از آمودریا — رودی که ایران و توران را جدا می‌کند — می‌گذرد و در حالی که دربارِ ضعیف‌شده‌ی نوذر نمی‌تواند خط را نگه دارد عمیقاً به ایران می‌رود.",
+      "explanation_tg": "Афросиёби Турон душмани бузурги Шоҳномаи миёна аст. Амударёро — дарёеро, ки Эрон ва Туронро ҷудо мекунад — убур мекунад ва ба дохили Эрон меравад.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "nozar-m1",
+      "chapter_slug": "nozar",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh treats Nozar's failure as more than personal weakness. What deeper force does his reign show has departed from him?",
+      "question_fa": "شاهنامه شکستِ نوذر را بیش از ضعفِ شخصی می‌داند. کدام نیرویِ عمیق‌تر از او رفته که دورانِ پادشاهی‌اش نشان می‌دهد؟",
+      "question_tg": "Шоҳнома шикасти Нӯзарро бештар аз заъфи шахсӣ медонад. Кадом қуввати амиқтар аз ӯ рафтааст, ки давраи шоҳии ӯ нишон медиҳад?",
+      "answers": [
+        "Military strategy — he never learned to command armies",
+        "The farr — the divine grace that makes kings worthy of Iran",
+        "The blessing of the Simorgh, withdrawn after Sam's death",
+        "The support of the Zoroastrian priests, who favored Afrasiab"
+      ],
+      "answers_fa": [
+        "راهبردِ نظامی — هرگز فرماندهیِ سپاه را یاد نگرفت",
+        "فَرّ — فضلِ الهی که شاهان را شایسته‌ی ایران می‌کند",
+        "برکتِ سیمرغ، که پس از مرگِ سام گرفته شد",
+        "حمایتِ موبدانِ زرتشتی که طرفدارِ افراسیاب بودند"
+      ],
+      "answers_tg": [
+        "Стратегияи ҳарбӣ — ӯ ҳаргез фармондеҳии лашкарро наомӯхт",
+        "Фарр — файзи илоҳие ки шоҳонро шоистаи Эрон мекунад",
+        "Баракати Симурғ, ки пас аз марги Сом гирифта шуд",
+        "Дастгирии мӯбадони Зардуштӣ, ки тарафдори Афросиёб буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The farr — divine royal grace, the luminous presence that Ferdowsi establishes as the measure of a king's worthiness — departs from Nozar. He is not simply incompetent; he is un-graced. This is the Shahnameh's distinction between a man who sits on a throne and a man who deserves one. Nozar sits. He never deserves.",
+      "explanation_fa": "فَرّ — فضلِ شاهانه‌ی الهی، حضورِ درخشانی که فردوسی به‌عنوانِ معیارِ شایستگیِ شاه برقرار می‌کند — از نوذر می‌رود. او فقط ناکارآمد نیست؛ بی‌فرّ است. این تمایزِ شاهنامه بین مردی است که بر تخت می‌نشیند و مردی که شایسته‌ی آن است. نوذر می‌نشیند. هرگز شایسته نمی‌شود.",
+      "explanation_tg": "Фарр — файзи шоҳонаи илоҳӣ, ҳузури дурахшоне, ки Фирдавсӣ онро меъёри шоистагии шоҳ мекунад — аз Нӯзар меравад. Ӯ танҳо нолоиқ нест; бефарр аст. Ин тафовути Шоҳнома миёни мардест ки бар тахт менишинад ва мардест ки шоистаи он аст.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
     }
   ]
 }
