@@ -250,7 +250,7 @@
             <div class="clan-browse-name">${c.clan_name}</div>
             <div class="clan-browse-meta">
               <span>👥 ${members}/50</span>
-              <span>◆ ${fmtN(c.total_real_earned)} REAL</span>
+              <span>${RT} ${fmtN(c.total_real_earned)} REAL</span>
               <span>Leader: ${c.leader_name}</span>
             </div>
           </div>
@@ -530,7 +530,7 @@
           </div>
           <div class="clan-founded-stats">
             <span>👥 ${myClan.member_count} warriors</span>
-            <span>◆ ${fmtN(myClan.total_real_earned)} REAL earned</span>
+            <span>${RT} ${fmtN(myClan.total_real_earned)} REAL earned</span>
             ${zarHr > 0 ? `<span class="clan-power-stat">⚡ ${fmtZar(zarHr)} ZAR/hr</span>` : ''}
           </div>
           <div class="clan-action-row">

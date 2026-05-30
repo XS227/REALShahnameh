@@ -17,7 +17,7 @@
   const RARITY_ZAR  = { common: 2,   rare: 8,    epic: 20,   legend: 50,    mythic: 120 };
 
   /* Map chapter number → its localStorage slug (from chapter.js `real_chapter_done_${SLUG}`) */
-  const CH_SLUG = { 1: "keyumars", 2: "hushang", 3: "tahmuras", 4: "jamshid", 5: "zahhak" };
+  const CH_SLUG = { 1: "keyumars", 2: "hushang", 3: "tahmuras", 4: "jamshid", 5: "zahhak", 6: "fereydun", 7: "manuchehr" };
 
   const isChapterDone = (n) => {
     try {

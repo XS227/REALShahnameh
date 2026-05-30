@@ -314,7 +314,7 @@
       return `<div class="${cls}">
         <div class="ci-ico">${ico}</div>
         <div class="ci-lbl">D${dayNum}</div>
-        <div class="ci-val">${rewardTxt}◆${gem}</div>
+        <div class="ci-val">${rewardTxt}${RT}${gem}</div>
       </div>`;
     }).join('');
 
@@ -839,7 +839,7 @@
     const r = data.rewards;
     const msLabel = ms ? ms.label : '';
     const earned = [
-      r.real ? `+${r.real} ◆` : '',
+      r.real ? `+${r.real} ${RT}` : '',
       r.gems ? `+${r.gems} 💎` : '',
       r.farr ? `+${r.farr} ✦` : '',
     ].filter(Boolean).join(' · ');
@@ -935,7 +935,7 @@
   const handleAdResult = (tier, result) => {
     const r = result.rewards || {};
     const parts = [];
-    if (r.real)   parts.push('+' + r.real + ' ◆');
+    if (r.real)   parts.push('+' + r.real + ' ' + RT);
     if (r.gems)   parts.push('+' + r.gems + ' 💎');
     if (r.farr)   parts.push('+' + r.farr + ' ✦');
     if (r.energy) parts.push('⚡ Energy filled!');

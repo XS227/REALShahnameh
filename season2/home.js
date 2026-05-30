@@ -25,7 +25,7 @@
 
   /* ── Chapter progression state ─────────────────────────────────────────── */
   /* Ordered list of chapter slugs as shipped — extend when new chapters go live */
-  const CHAPTER_SLUGS = ["keyumars", "hushang", "tahmuras", "jamshid", "zahhak"];
+  const CHAPTER_SLUGS = ["keyumars", "hushang", "tahmuras", "jamshid", "zahhak", "fereydun", "manuchehr"];
 
   /* Minimal fallback data so the journey card renders immediately from localStorage */
   const CHAPTER_FALLBACK = {
