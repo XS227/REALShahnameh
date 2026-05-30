@@ -424,6 +424,19 @@
   /* ---------- quiz reward helper (idempotent) ---------- */
   const grantQuizRewards = (lore) => {
     try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
+
+    /* Mark the daily Quiz quest done — chapter.js is the full quiz experience
+       and must set this; the home-page card quiz also sets it but users may
+       only use this page. Idempotent per calendar day. */
+    try {
+      const dk = new Date().toISOString().slice(0, 10);
+      const qKey = `real_quest_quiz_${dk}`;
+      if (localStorage.getItem(qKey) !== "true") {
+        localStorage.setItem(qKey, "true");
+        if (window.RealSync) window.RealSync.syncQuest("quiz");
+        try { window.dispatchEvent(new CustomEvent("real:quest:quiz")); } catch {}
+      }
+    } catch {}
     try {
       const items = JSON.parse(localStorage.getItem("real_items_v1") || "{}");
       let changed = false;
@@ -800,6 +813,19 @@
       progress.scenes.push(s.id);
       const newlyUnlocked = (s.unlocks_codex || []).filter(id => !progress.codex.includes(id));
       progress.codex.push(...newlyUnlocked);
+
+      /* Mark the daily Read quest done — idempotent per day.
+         chapter.js is the primary scene-reading experience; must set this
+         so the home-page daily quest reflects actual reading activity. */
+      try {
+        const dk = new Date().toISOString().slice(0, 10);
+        const rKey = `real_quest_read_${dk}`;
+        if (localStorage.getItem(rKey) !== "true") {
+          localStorage.setItem(rKey, "true");
+          if (window.RealSync) window.RealSync.syncQuest("read");
+          try { window.dispatchEvent(new CustomEvent("real:quest:read", { detail: { xp: 25 } })); } catch {}
+        }
+      } catch {}
       saveProgress();
 
       // Grant XP for this scene (idempotent via grant key)

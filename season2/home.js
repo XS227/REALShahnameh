@@ -313,13 +313,18 @@
 
   const hydrateQuests = (su) => {
     const dk = todayKey();
+    /* Always take the most optimistic (truest) value: server OR local.
+       Server may lag behind by up to 30 s; localStorage is written immediately
+       by chapter.js / tap.js / app.js when quests complete. */
     const states = {
-      read:   (su && su.quest_read)   || lsRead("real_quest_read_"   + dk) === "true",
-      quiz:   (su && su.quest_quiz)   || lsRead("real_quest_quiz_"   + dk) === "true",
-      invite: (su && su.quest_invite) || lsRead("real_quest_invite_" + dk) === "true",
+      read:   !!(su && su.quest_read)   || lsRead("real_quest_read_"   + dk) === "true",
+      quiz:   !!(su && su.quest_quiz)   || lsRead("real_quest_quiz_"   + dk) === "true",
+      invite: !!(su && su.quest_invite) || lsRead("real_quest_invite_" + dk) === "true",
     };
-    const tapsToday = su ? (su.quest_tap || 0)
-                         : parseInt(lsRead("real_daily_taps_" + dk) || "0", 10);
+    /* For taps: take whichever is higher — server count or local count */
+    const serverTaps = (su && su.quest_tap) || 0;
+    const localTaps  = parseInt(lsRead("real_daily_taps_" + dk) || "0", 10);
+    const tapsToday  = Math.max(serverTaps, localTaps);
     states.tap = tapsToday >= TAP_GOAL;
 
     Object.entries(states).forEach(([key, done]) => {
@@ -334,7 +339,7 @@
     });
 
     const tapCount = $("[data-daily-taps]");
-    if (tapCount) tapCount.textContent = fmtNum(Math.min(tapsToday, TAP_GOAL));
+    if (tapCount) tapCount.textContent = `${fmtNum(Math.min(tapsToday, TAP_GOAL))} / ${fmtNum(TAP_GOAL)}`;
   };
 
   /* ── Medallion badge ─────────────────────────────────────────────────── */

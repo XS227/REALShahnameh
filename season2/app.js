@@ -1229,6 +1229,10 @@
         if (_newCount % 10 === 0 && window.RealSync) {
           window.RealSync.syncQuest("tap", _newCount);
         }
+        // Fire quest-complete event exactly when the threshold is crossed
+        if (_newCount === 200) {
+          try { window.dispatchEvent(new CustomEvent("real:quest:tap")); } catch {}
+        }
       } catch (_) {}
 
       renderEnergy();
