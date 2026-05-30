@@ -459,9 +459,19 @@
   };
 
   /* ── Social Tasks ────────────────────────────────────────────────────── */
+
+  /* In-memory cache of completed tasks — authoritative once server confirms */
+  let _completedTasksCache = null;
+
   const completedTasks = () => {
+    if (_completedTasksCache !== null) return _completedTasksCache;
     try { return JSON.parse(localStorage.getItem('real_completed_tasks') || '[]'); }
     catch { return []; }
+  };
+
+  const setCompletedTasks = (list) => {
+    _completedTasksCache = list;
+    try { localStorage.setItem('real_completed_tasks', JSON.stringify(list)); } catch (_) {}
   };
 
   /* Per-task pending timer state (survives only in this page session) */
@@ -559,7 +569,7 @@
       if (!done.includes(taskId)) {
         const task = SOCIAL_TASKS.find(t => t.id === taskId);
         done.push(taskId);
-        localStorage.setItem('real_completed_tasks', JSON.stringify(done));
+        setCompletedTasks(done);
         if (window.RealPlayer && task) {
           window.RealPlayer.addResource('real', task.reward_real || 0);
           if (task.reward_gems) window.RealPlayer.addResource('gems', task.reward_gems);
@@ -584,7 +594,7 @@
            sync it locally so this page reflects reality. */
         const done = completedTasks();
         if (!done.includes(taskId)) done.push(taskId);
-        localStorage.setItem('real_completed_tasks', JSON.stringify(done));
+        setCompletedTasks(done);
         showToast('✓ Already claimed — your reward is in your wallet.');
       } else {
         showToast('Could not verify. Try again in a moment.');
@@ -593,7 +603,7 @@
       }
     } else {
       /* ── Success: grant rewards, persist, notify all views ── */
-      localStorage.setItem('real_completed_tasks', JSON.stringify(data.completed_tasks || []));
+      setCompletedTasks(data.completed_tasks || []);
 
       const task      = SOCIAL_TASKS.find(t => t.id === taskId);
       const rewardReal = data.rewards.real || 0;
@@ -724,7 +734,7 @@
       if (!done.includes(partnerId)) {
         const p = PARTNERS.find(x => x.id === partnerId);
         done.push(partnerId);
-        localStorage.setItem('real_completed_tasks', JSON.stringify(done));
+        setCompletedTasks(done);
         if (window.RealPlayer && p) {
           window.RealPlayer.addResource('real', p.reward_real || 0);
           if (p.reward_gems) window.RealPlayer.addResource('gems', p.reward_gems);
@@ -746,7 +756,7 @@
       if (data && data.error === 'already_completed') {
         const done = completedTasks();
         if (!done.includes(partnerId)) done.push(partnerId);
-        localStorage.setItem('real_completed_tasks', JSON.stringify(done));
+        setCompletedTasks(done);
         showToast('Already claimed!');
       } else {
         showToast('Could not verify. Try again.');
@@ -754,7 +764,7 @@
         return;
       }
     } else {
-      localStorage.setItem('real_completed_tasks', JSON.stringify(data.completed_tasks || []));
+      setCompletedTasks(data.completed_tasks || []);
       if (window.RealPlayer) {
         window.RealPlayer.addResource('real', data.rewards.real || 0);
         if (data.rewards.gems) window.RealPlayer.addResource('gems', data.rewards.gems);
@@ -1079,7 +1089,7 @@
     const u = tgUser();
     const shareUrl = bootInviteLink(u);
 
-    /* Render immediately with whatever is cached in localStorage */
+    /* Pass 1 — immediate render from localStorage cache (feels instant) */
     renderCheckin();
     renderSocialTasks(shareUrl);
     renderPartners();
@@ -1091,24 +1101,32 @@
     applyTeamMultUI(cachedVerified);
     renderMilestones(cachedVerified, cachedClaimed);
 
-    /* Re-render tasks once sync.js has written the authoritative server state.
-       This is the fix for tasks resetting on refresh: sync.js overwrites
-       completed_tasks in localStorage; we re-render here to reflect it. */
-    if (window.RealSync) {
-      window.RealSync.ready().then(() => {
-        renderSocialTasks(shareUrl);
-        renderPartners();
-        renderCheckin();
-        updateSeasonStanding();
-      });
-    }
-
     if (!u || !u.id) return;
 
-    /* Fetch live referral count */
-    const data = await post('/api/season2/social/referrals', { telegram_id: String(u.id) });
-    if (data && data.status === 1) {
-      const verifiedCount = data.verified_count || 0;
+    /* Pass 2 — fetch authoritative server state directly.
+       Do NOT rely on sync.js or RealSync.ready() for task state because:
+       - sync.js runs in parallel and may overwrite localStorage with stale []
+       - timing between sync.js and earn.js is non-deterministic
+       Instead, earn.js fetches completed_tasks directly from /user/me and
+       re-renders. This is the authoritative source of truth. */
+    const [meData, refData] = await Promise.all([
+      fetch('/api/season2/user/me?' + new URLSearchParams({ telegram_id: String(u.id) }), { cache: 'no-store' })
+        .then(r => r.ok ? r.json() : null).catch(() => null),
+      post('/api/season2/social/referrals', { telegram_id: String(u.id) }),
+    ]);
+
+    /* Update completed tasks from authoritative server response */
+    if (meData && meData.status === 1 && meData.user) {
+      const serverTasks = meData.user.completed_tasks || [];
+      setCompletedTasks(serverTasks);  /* update in-memory cache + localStorage */
+      renderSocialTasks(shareUrl);
+      renderPartners();
+      renderCheckin();
+    }
+
+    /* Update referral count */
+    if (refData && refData.status === 1) {
+      const verifiedCount = refData.verified_count || 0;
       localStorage.setItem('real_verified_referral_count', String(verifiedCount));
       try { window.dispatchEvent(new CustomEvent('real:referral:update')); } catch (_) {}
       applyTeamMultUI(verifiedCount);
@@ -1118,9 +1136,9 @@
     }
   };
 
-  /* Also re-render whenever sync.js fires the tasks-updated event — covers
-     the case where sync lands after boot() has already resolved. */
-  window.addEventListener('shahnama:tasks:synced', () => {
+  /* Also re-render when sync.js fires the tasks-updated event */
+  window.addEventListener('shahnama:tasks:synced', (e) => {
+    if (e.detail) setCompletedTasks(e.detail);
     const shareUrl = 'https://t.me/shahnameh_bot?start='
       + (localStorage.getItem('real_referral_code') || 'warrior_guest');
     renderSocialTasks(shareUrl);
