@@ -284,12 +284,37 @@
         chest: "founder_chest",
         multiplier: 1.05
       };
+
+      /* 1. Atomic Player state update */
+      const newBalance = (p.balance || 0) + reward.real;
       const next = Player.set({
         season1BonusClaimed: true,
-        balance: (p.balance || 0) + reward.real,
+        balance: newBalance,
         badges: Array.from(new Set([...(p.badges || []), ...reward.badges])),
-        earlySupporterMultiplier: reward.multiplier
+        earlySupporterMultiplier: reward.multiplier,
       });
+
+      /* 2. Belt-and-suspenders: also write balance to LS directly so
+            bfcache-restored pages (heroes, tap) read the new value */
+      try {
+        const ls = JSON.parse(localStorage.getItem("real_player_state_v1") || "{}");
+        ls.balance = newBalance;
+        ls.earlySupporterMultiplier = reward.multiplier;
+        localStorage.setItem("real_player_state_v1", JSON.stringify(ls));
+      } catch {}
+
+      /* 3. Vault insertion — push founder_chest into real_items_v1 */
+      try {
+        const items = JSON.parse(localStorage.getItem("real_items_v1") || "{}");
+        items[reward.chest] = true;
+        localStorage.setItem("real_items_v1", JSON.stringify(items));
+      } catch {}
+
+      /* 4. Flat queryable badge flags for profile/UI checks */
+      try {
+        reward.badges.forEach(b => localStorage.setItem(`real_badge_${b}`, "1"));
+      } catch {}
+
       return { ok: true, reward, state: next };
     },
 
@@ -328,9 +353,11 @@
     try {
       const zarHr = parseInt(localStorage.getItem("real_total_zar_hr") || "0", 10);
       if (!zarHr) return;
-      const vipBonus  = 1 + Player.vipLevel() * 0.05;
-      const teamMult  = parseFloat(localStorage.getItem("real_team_mult") || "1") || 1;
-      const gain = Math.max(1, Math.floor((zarHr / 60) * vipBonus * teamMult));
+      const vipBonus      = 1 + Player.vipLevel() * 0.05;
+      const teamMult      = parseFloat(localStorage.getItem("real_team_mult") || "1") || 1;
+      /* earlySupporterMultiplier: 1.05 for Season 1 founders, 1 otherwise */
+      const founderMult   = Player.get().earlySupporterMultiplier || 1;
+      const gain = Math.max(1, Math.floor((zarHr / 60) * vipBonus * teamMult * founderMult));
       Player.addResource("zar", gain);
       if (window.RealResources) {
         const hud = document.querySelector("[data-resource-hud]");
@@ -874,6 +901,15 @@
       fireBurst(t("bonus_claimed_toast"));
       toast(t("bonus_claimed_toast"));
       haptic("success");
+      /* Notify all live views (home treasury, tap swap panel) of the
+         new balance so they update without requiring a page reload. */
+      try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
+      try { window.dispatchEvent(new CustomEvent("real:zar:updated")); } catch {}
+      /* Refresh the on-page resource HUD if present */
+      try {
+        const hud = document.querySelector("[data-resource-hud]");
+        if (hud && window.RealResources) window.RealResources.refreshHud(hud);
+      } catch {}
     } else if (result.reason === "not_eligible") {
       toast(t("season1_card_ineligible_sub"));
       haptic("warning");
