@@ -4,6 +4,7 @@
    ========================================================================== */
 (() => {
   "use strict";
+  const RT = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">';
 
   /* ---- Skin catalogue ---- */
   const SKINS = [
