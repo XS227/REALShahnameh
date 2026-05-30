@@ -33,7 +33,7 @@
     zar:  "🪙",
     gems: "💎",
     xp:   "⭐",
-    real: "◆",
+    real: '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">',
   };
 
   /* Locale label key — resolves through RealI18N. */

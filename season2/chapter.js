@@ -85,6 +85,9 @@
     catch { /* nop */ }
   };
 
+  /* Module-level chapter metadata — populated once the catalog fetch resolves */
+  let _chapterMeta = null;
+
   /* ---------- progress (localStorage) ---------- */
   const PK = `real_chapter_progress_${SLUG}`;
   const readProgress = () => {
@@ -427,6 +430,39 @@
         .filter(r => r.kind === "item" && r.grant_on === "quiz" && !items[r.target])
         .forEach(r => { items[r.target] = true; changed = true; });
       if (changed) localStorage.setItem("real_items_v1", JSON.stringify(items));
+    } catch {}
+    /* Grant chapter completion rewards (XP, gems, Farr, REAL, energy)
+       from chapters.json — idempotent via real_chapter_rewards_done_{slug}. */
+    grantChapterCompletionRewards();
+  };
+
+  const grantChapterCompletionRewards = () => {
+    const doneKey = `real_chapter_rewards_done_${SLUG}`;
+    try { if (localStorage.getItem(doneKey) === "1") return; } catch {}
+    const meta = _chapterMeta;
+    if (!meta || !meta.rewards) return;
+    try {
+      const r = meta.rewards;
+      if (window.RealPlayer) {
+        if (r.xp)     window.RealPlayer.addResource("xp",     r.xp);
+        if (r.gems)   window.RealPlayer.addResource("gems",   r.gems);
+        if (r.farr)   window.RealPlayer.addResource("farr",   r.farr);
+        if (r.real)   window.RealPlayer.addResource("real",   r.real);
+        if (r.energy) window.RealPlayer.addResource("energy", Math.min(r.energy,
+          (window.RealPlayer.get().energyMax || 1000) - (window.RealPlayer.get().energy || 0)));
+      }
+      localStorage.setItem(doneKey, "1");
+      /* Dispatch events so home treasury and heroes page refresh instantly */
+      try { window.dispatchEvent(new CustomEvent("shahnama:state_sync",
+        { detail: window.RealPlayer ? window.RealPlayer.get() : {} })); } catch {}
+      try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
+      /* Flash a toast so the player knows what they earned */
+      const parts = [
+        r.xp    ? `+${fmtNum(r.xp)} XP`    : "",
+        r.gems  ? `+${fmtNum(r.gems)} 💎`  : "",
+        r.real  ? `+${fmtNum(r.real)} REAL` : "",
+      ].filter(Boolean);
+      if (parts.length) toast(`⚔ Chapter Rewards: ${parts.join(" · ")}`);
     } catch {}
   };
 
@@ -786,6 +822,7 @@
   ]).then(([chaptersBody, lore, quizzesBody]) => {
     const allChapters = (chaptersBody && chaptersBody.chapters) || [];
     const chapterMeta = allChapters.find(c => c.slug === SLUG) || null;
+    _chapterMeta = chapterMeta; // expose to grantChapterCompletionRewards()
     const quizzes = (quizzesBody && quizzesBody.quizzes) || [];
 
     /* ── Hard chapter gate ── */
