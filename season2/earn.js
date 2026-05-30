@@ -39,6 +39,119 @@
     } catch (_) {}
   };
 
+  /* ── Coin burst particle animation ──────────────────────────────────── */
+  const spawnCoinBurst = (sourceEl, amount) => {
+    const rect   = sourceEl ? sourceEl.getBoundingClientRect() : null;
+    const startX = rect ? rect.left + rect.width  / 2 : window.innerWidth  / 2;
+    const startY = rect ? rect.top  + rect.height / 2 : window.innerHeight / 2;
+    const count  = Math.min(14, Math.max(6, Math.floor(amount / 1000) + 6));
+
+    for (let i = 0; i < count; i++) {
+      const coin = document.createElement('span');
+      coin.textContent = '◆';
+      coin.style.cssText = [
+        'position:fixed',
+        `left:${startX}px`,
+        `top:${startY}px`,
+        'font-size:15px',
+        'color:#f4c56b',
+        'pointer-events:none',
+        'z-index:9998',
+        'font-weight:900',
+        'text-shadow:0 0 8px rgba(244,197,107,.9)',
+        'will-change:transform,opacity',
+      ].join(';');
+      document.body.appendChild(coin);
+
+      const spreadAngle = (Math.PI * 0.7);
+      const angle = -Math.PI / 2 + (Math.random() - 0.5) * spreadAngle;
+      const dist  = 80 + Math.random() * 100;
+      const endX  = startX + Math.cos(angle) * dist;
+      const endY  = Math.max(16, startY - 150 - Math.random() * 80);
+
+      coin.animate([
+        { transform: 'translate(0,0) scale(0.4)',                               opacity: 0 },
+        { transform: `translate(${endX - startX}px,${endY - startY}px) scale(1.3)`, opacity: 1, offset: 0.45 },
+        { transform: `translate(${endX - startX}px,${endY - startY - 30}px) scale(0.2)`, opacity: 0 },
+      ], {
+        duration: 850 + Math.random() * 350,
+        delay:    i * 45,
+        easing:   'cubic-bezier(.22,1,.36,1)',
+        fill:     'forwards',
+      });
+
+      setTimeout(() => coin.remove(), 1500 + i * 50);
+    }
+  };
+
+  /* ── Premium reward modal ────────────────────────────────────────────── */
+  const showRewardModal = (amount, sublabel) => {
+    const existing = document.getElementById('earn-reward-modal');
+    if (existing) existing.remove();
+
+    /* Inject keyframe once */
+    if (!document.getElementById('erm-style')) {
+      const s = document.createElement('style');
+      s.id = 'erm-style';
+      s.textContent = '@keyframes erm-in{from{transform:scale(.82) translateY(12px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}';
+      document.head.appendChild(s);
+    }
+
+    const isFa = window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
+    const fmtA = (n) => {
+      const s = n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : String(n);
+      return isFa && window.RealI18N && window.RealI18N.toPersianDigits
+        ? window.RealI18N.toPersianDigits(s) : s;
+    };
+
+    const overlay = document.createElement('div');
+    overlay.id = 'earn-reward-modal';
+    overlay.style.cssText = [
+      'position:fixed;inset:0;z-index:9995',
+      'display:flex;align-items:center;justify-content:center',
+      'background:rgba(4,5,11,.86)',
+      'backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)',
+      'opacity:0;transition:opacity .22s ease',
+    ].join(';');
+
+    overlay.innerHTML = `
+      <div style="
+        text-align:center;max-width:270px;
+        padding:30px 22px;
+        background:linear-gradient(158deg,#141f3a 0%,#04050b 100%);
+        border:1px solid rgba(244,197,107,.5);
+        border-radius:22px;
+        box-shadow:0 0 60px rgba(244,197,107,.18),0 24px 64px rgba(0,0,0,.65);
+        animation:erm-in .4s cubic-bezier(.2,.9,.2,1) both;
+      ">
+        <div style="font-size:46px;line-height:1;margin-bottom:12px;filter:drop-shadow(0 0 22px rgba(244,197,107,.75));">⚔</div>
+        <h3 style="
+          margin:0 0 4px;font-size:18px;font-weight:900;letter-spacing:.3px;
+          background:linear-gradient(118deg,#fff 0%,#ffe8c0 55%,#f4c56b 100%);
+          -webkit-background-clip:text;background-clip:text;color:transparent;">
+          Treasure Secured!
+        </h3>
+        <div style="font-size:30px;font-weight:900;color:#f4c56b;margin:10px 0;
+          text-shadow:0 0 28px rgba(244,197,107,.55);">
+          +${fmtA(amount)} REAL
+        </div>
+        <p style="font-size:12px;color:var(--muted,#6c7287);margin:0;">added to your Treasury</p>
+        ${sublabel ? `<div style="font-size:10px;color:rgba(244,197,107,.55);margin-top:7px;letter-spacing:.5px;">${sublabel}</div>` : ''}
+      </div>`;
+
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => { requestAnimationFrame(() => { overlay.style.opacity = '1'; }); });
+
+    try { if (navigator.vibrate) navigator.vibrate([10, 4, 14, 4, 24]); } catch (_) {}
+
+    const dismiss = () => {
+      overlay.style.opacity = '0';
+      setTimeout(() => overlay.remove(), 220);
+    };
+    overlay.addEventListener('click', dismiss);
+    setTimeout(dismiss, 2600);
+  };
+
   const todayStr = () => new Date().toISOString().slice(0, 10);
 
   /* ── Config ──────────────────────────────────────────────────────────── */
@@ -422,7 +535,14 @@
         } catch (_) {}
       }
       const task = SOCIAL_TASKS.find(t => t.id === taskId);
-      showToast(`Task complete! +${(task && task.reward_real) || 0} ◆`);
+      const rewardAmt = (task && task.reward_real) || (data.rewards && data.rewards.real) || 0;
+      /* Premium visual feedback */
+      const art = document.querySelector(`[data-task="${taskId}"]`);
+      if (rewardAmt) {
+        spawnCoinBurst(art, rewardAmt);
+        showRewardModal(rewardAmt, task ? task.label : '');
+      }
+      showToast(`Task complete! +${rewardAmt} ◆`);
       fireBurst('Task Complete!');
     }
 
@@ -722,6 +842,12 @@
       r.gems ? `+${r.gems} 💎` : '',
       r.farr ? `+${r.farr} ✦` : '',
     ].filter(Boolean).join(' · ');
+    /* Premium visual feedback */
+    const msArt = document.querySelector(`[data-milestone="${threshold}"]`);
+    if (r.real) {
+      spawnCoinBurst(msArt, r.real);
+      showRewardModal(r.real, msLabel);
+    }
     showToast(msLabel || `Milestone! ${earned}`);
     fireBurst(`${threshold} Warriors!`);
 
@@ -890,6 +1016,12 @@
       updateSeasonStanding();
     }
   };
+
+  /* Season standing re-renders instantly whenever any state (XP, balance,
+     referrals) changes — no page reload required. */
+  window.addEventListener('shahnama:state_sync', updateSeasonStanding);
+  window.addEventListener('real:referral:update', updateSeasonStanding);
+  window.addEventListener('balanceUpdate', updateSeasonStanding);
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', boot);
