@@ -129,7 +129,11 @@
       }
       if (su.last_checkin_date != null) localStorage.setItem('real_last_checkin_date', su.last_checkin_date);
       if (su.checkin_streak    != null) localStorage.setItem('real_checkin_streak',    String(su.checkin_streak));
-      if (su.completed_tasks)           localStorage.setItem('real_completed_tasks',   JSON.stringify(su.completed_tasks));
+      if (su.completed_tasks) {
+        localStorage.setItem('real_completed_tasks', JSON.stringify(su.completed_tasks));
+        /* Notify earn.js so it can re-render tasks with the authoritative server list */
+        try { window.dispatchEvent(new CustomEvent('shahnama:tasks:synced', { detail: su.completed_tasks })); } catch (_) {}
+      }
       if (su.adsgram)                   localStorage.setItem('real_adsgram_config',    JSON.stringify(su.adsgram));
       if (su.max_real_balance != null)  localStorage.setItem('real_max_real_balance',  String(su.max_real_balance));
       if (su.economy)                   localStorage.setItem('real_economy_config',    JSON.stringify(su.economy));

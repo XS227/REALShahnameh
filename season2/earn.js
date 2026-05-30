@@ -1079,7 +1079,7 @@
     const u = tgUser();
     const shareUrl = bootInviteLink(u);
 
-    /* Render with cached data immediately */
+    /* Render immediately with whatever is cached in localStorage */
     renderCheckin();
     renderSocialTasks(shareUrl);
     renderPartners();
@@ -1090,6 +1090,18 @@
     const cachedClaimed  = (() => { try { return JSON.parse(localStorage.getItem('real_milestones_claimed') || '[]'); } catch { return []; } })();
     applyTeamMultUI(cachedVerified);
     renderMilestones(cachedVerified, cachedClaimed);
+
+    /* Re-render tasks once sync.js has written the authoritative server state.
+       This is the fix for tasks resetting on refresh: sync.js overwrites
+       completed_tasks in localStorage; we re-render here to reflect it. */
+    if (window.RealSync) {
+      window.RealSync.ready().then(() => {
+        renderSocialTasks(shareUrl);
+        renderPartners();
+        renderCheckin();
+        updateSeasonStanding();
+      });
+    }
 
     if (!u || !u.id) return;
 
@@ -1105,6 +1117,15 @@
       updateSeasonStanding();
     }
   };
+
+  /* Also re-render whenever sync.js fires the tasks-updated event — covers
+     the case where sync lands after boot() has already resolved. */
+  window.addEventListener('shahnama:tasks:synced', () => {
+    const shareUrl = 'https://t.me/shahnameh_bot?start='
+      + (localStorage.getItem('real_referral_code') || 'warrior_guest');
+    renderSocialTasks(shareUrl);
+    renderPartners();
+  });
 
   /* Season standing re-renders instantly whenever any state (XP, balance,
      referrals) changes — no page reload required. */
