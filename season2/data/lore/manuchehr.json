@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-30T00:00:00Z",
+  "chapter_slug": "manuchehr",
+  "chapter_id": 7,
+  "era": {
+    "label_en": "~3900–3400 BC — Age of Manuchehr",
+    "label_fa": "~۳۹۰۰–۳۴۰۰ پ.م — عصر منوچهر"
+  },
+  "lore_summary": {
+    "en": "Iraj is dead. Fereydun receives the news and does not weep immediately — he is too old for the kind of grief that expresses itself quickly. He waits. He raises Iraj's grandson Manuchehr for one purpose: justice. Not revenge — there is a difference, and the Shahnameh knows it. Manuchehr grows up with the weight of his grandfather's sorrow in every lesson. When he is ready, the army marches east. Tur dies first. Salm runs to the sea and is caught. Fereydun receives the news of both deaths and finally allows himself to grieve the sons he also loved — the guilty ones. He does not live long after. Manuchehr rules. His champion is Sam the warrior. And in the far north, Sam's son will be born with hair as white as Damavand's peak — and the next chapter of the chronicle has already begun.",
+    "fa": "ایرج مرده است. فریدون خبر را می‌شنود و بلافاصله گریه نمی‌کند — برای نوع اندوهی که سریع ابراز می‌شود خیلی پیر است. صبر می‌کند. نوه‌ی ایرج منوچهر را برای یک هدف بزرگ می‌کند: عدالت. نه انتقام — تفاوتی هست و شاهنامه می‌داند. منوچهر با سنگینیِ غمِ پدربزرگ در هر درس بزرگ می‌شود. وقتی آماده می‌شود، سپاه به شرق می‌مارشد. تور اول می‌میرد. سلم به دریا می‌گریزد و گرفته می‌شود. فریدون خبرِ هر دو مرگ را می‌شنود و بالاخره خود را اجازه می‌دهد برای پسرانی که دوستشان هم داشت — قاتلان — عزاداری کند. پس از آن زیاد زنده نمی‌ماند. منوچهر حکم می‌راند. قهرمانش سام جنگاور است. و در شمالِ دور، پسرِ سام با موهایی سفید چون قلّه‌ی دماوند به دنیا می‌آید — و دفترِ بعدیِ این تاریخ از پیش آغاز شده است."
+  },
+  "timeline": [
+    {
+      "id": "manuchehr-raised",
+      "year_label_en": "~3900 BC",
+      "year_label_fa": "~۳۹۰۰ پ.م",
+      "title_en": "The Raising of Manuchehr",
+      "title_fa": "پرورشِ منوچهر",
+      "body_en": "Fereydun raises Iraj's grandson not as a child but as a purpose. Every lesson carries weight. Every year of training is a year of grief redirected.",
+      "body_fa": "فریدون نوه‌ی ایرج را نه به‌عنوانِ کودک که به‌عنوانِ هدف پرورش می‌دهد. هر درس وزن دارد. هر سالِ آموزش سالِ اندوهِ هدایت‌شده است.",
+      "image": null,
+      "side": "light"
+    },
+    {
+      "id": "tur-salm-fall",
+      "year_label_en": "~3850 BC",
+      "year_label_fa": "~۳۸۵۰ پ.م",
+      "title_en": "Tur and Salm Fall",
+      "title_fa": "تور و سلم می‌افتند",
+      "body_en": "Manuchehr defeats Tur in battle. Salm flees to the sea — and is caught. The feud that began with one murder is closed by two.",
+      "body_fa": "منوچهر تور را در نبرد شکست می‌دهد. سلم به دریا می‌گریزد — و گرفته می‌شود. کینه‌ای که با یک قتل آغاز شد با دو قتل بسته می‌شود.",
+      "image": null,
+      "side": "light"
+    },
+    {
+      "id": "fereydun-dies",
+      "year_label_en": "~3840 BC",
+      "year_label_fa": "~۳۸۴۰ پ.م",
+      "title_en": "Fereydun's Last Day",
+      "title_fa": "آخرین روزِ فریدون",
+      "body_en": "He receives the heads of Tur and Salm. He weeps not for the just killing but for the sons he also loved — the ones who chose wrongly. He dies shortly after. He was the last of the great liberator-kings.",
+      "body_fa": "سرهای تور و سلم را می‌گیرد. نه برای قتلِ عادلانه که برای پسرانی که دوستشان هم داشت — آن‌هایی که راهِ اشتباه انتخاب کردند — گریه می‌کند. کمی پس از آن می‌میرد.",
+      "image": null,
+      "side": "dark"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "fereyduns-lament",
+      "order": 1,
+      "title_en": "Fereydun's Lament",
+      "title_fa": "مرثیه‌ی فریدون",
+      "era_en": "~3900 BC",
+      "era_fa": "~۳۹۰۰ پ.م",
+      "body_en": "Fereydun does not weep immediately when the news of Iraj's murder reaches him. He is five hundred years old. He has felt every kind of sorrow the world makes. This one is different — it is the sorrow of a father who divided the world fairly and watched that fairness become the reason for murder. He sits alone for three days. On the fourth day he calls for Manuchehr.",
+      "body_fa": "فریدون وقتی خبرِ قتلِ ایرج به او می‌رسد بلافاصله گریه نمی‌کند. پانصد ساله است. هر نوع اندوهی که جهان می‌سازد را احساس کرده. این یکی متفاوت است — اندوهِ پدری که جهان را به درستی تقسیم کرد و دید آن درستی دلیلِ قتل شد. سه روز تنها می‌نشیند. روز چهارم منوچهر را می‌خواهد.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/fereydun-lament-scene.png",
+      "reward": { "xp": 40 },
+      "unlocks_codex": ["fereydun-lament-codex"]
+    },
+    {
+      "id": "the-raising",
+      "order": 2,
+      "title_en": "The Raising of Manuchehr",
+      "title_fa": "پرورشِ منوچهر",
+      "era_en": "~3890 BC",
+      "era_fa": "~۳۸۹۰ پ.م",
+      "body_en": "Manuchehr grows up knowing what he is for. This is not a cruel upbringing — Fereydun loves the boy. But the love is complicated by purpose. Every lesson in swordsmanship is also a lesson about Iraj. Every lesson in statecraft is also a lesson about why Tur and Salm chose wrong. By the time Manuchehr is ready to lead an army, he understands not just how to win but what he is winning for. That understanding is what separates a just avenger from a new tyrant.",
+      "body_fa": "منوچهر با دانستنِ هدفِ وجودش بزرگ می‌شود. این پرورشِ بی‌رحمانه نیست — فریدون پسر را دوست دارد. اما این محبت با هدف پیچیده است. هر درسِ شمشیرزنی درسی درباره‌ی ایرج هم هست. هر درسِ کشورداری درسی درباره‌ی اینکه چرا تور و سلم اشتباه انتخاب کردند هم هست. وقتی منوچهر آماده‌ی فرماندهیِ سپاه می‌شود، نه فقط چگونه بُردن را می‌فهمد بلکه برایِ چه می‌برد را. این تفاوتِ انتقام‌گیرِ عادل از ستمگرِ جدید است.",
+      "atmosphere": "warm",
+      "image": "/assets/images/scenes/the-raising-scene.png",
+      "reward": { "xp": 45 },
+      "unlocks_codex": ["purposeful-raising"]
+    },
+    {
+      "id": "march-to-tur",
+      "order": 3,
+      "title_en": "The March to Tur",
+      "title_fa": "راهپیمایی به‌سوی تور",
+      "era_en": "~3850 BC",
+      "era_fa": "~۳۸۵۰ پ.م",
+      "body_en": "The army moves east with the Derafsh Kaviani at its head — the same banner Kaveh raised against Zahhak, the same banner that will be carried into battle by the champions of Iran for centuries to come. Manuchehr rides at the center, as Fereydun did, not performing but navigating. Tur's army comes out to meet them on the plain of Turan. The battle is not long. Tur has spent years ruling but few of them training for a fight he must have known was coming.",
+      "body_fa": "سپاه با درفشِ کاویانی در پیشاپیش به شرق می‌مارشد — همان درفشی که کاوه علیه ضحاک برافراشت، همان درفشی که سده‌ها پهلوانانِ ایران آن را به نبرد خواهند برد. منوچهر مثلِ فریدون در مرکز می‌راند، نه نمایش که جهت‌یابی. سپاهِ تور در دشتِ توران به استقبالشان می‌آید. نبرد طولانی نیست.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/march-to-tur-scene.png",
+      "reward": { "xp": 55 },
+      "unlocks_codex": ["derafsh-continues"]
+    },
+    {
+      "id": "tur-falls",
+      "order": 4,
+      "title_en": "Tur Falls",
+      "title_fa": "تور می‌افتد",
+      "era_en": "~3850 BC",
+      "era_fa": "~۳۸۵۰ پ.م",
+      "body_en": "Manuchehr meets Tur in single combat — the Shahnameh insists on this. The debt is personal, and so the payment must be personal. Tur fights well but he is fighting someone who has been prepared for this moment since childhood. The bull-headed mace — the weapon that ended Zahhak, the weapon that struck the guard of the serpent-king's stronghold — is in Manuchehr's hands. When Tur falls, the army goes silent on both sides. Half from grief, half from relief. The blood feud is half paid.",
+      "body_fa": "منوچهر با تور در نبردِ تن‌به‌تن روبرو می‌شود — شاهنامه بر این اصرار دارد. وام شخصی است، پس پرداختش هم باید شخصی باشد. تور خوب می‌جنگد اما دارد با کسی می‌جنگد که از کودکی برای این لحظه آماده شده. گرزِ گاوسر — سلاحی که ضحاک را پایان داد — در دستانِ منوچهر است. وقتی تور می‌افتد، در هر دو طرف سپاه ساکت می‌شود.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/tur-falls-scene.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["tur-falls-codex"]
+    },
+    {
+      "id": "salm-at-sea",
+      "order": 5,
+      "title_en": "Salm at the Sea",
+      "title_fa": "سلم در دریا",
+      "era_en": "~3840 BC",
+      "era_fa": "~۳۸۴۰ پ.م",
+      "body_en": "Salm does not wait for Manuchehr to come to him. He hears of Tur's death and runs west to his ships, trying to reach the safety of Rum across the sea. Manuchehr's army is faster than a guilt-driven flight. The ships are intercepted. Salm is taken from the water. The Shahnameh does not dwell on how he dies — only on the fact that he does, and on the message sent back to Fereydun. The blood feud is paid in full.",
+      "body_fa": "سلم منتظر نمی‌ماند منوچهر به سراغش بیاید. خبرِ مرگِ تور را می‌شنود و به کشتی‌هایش می‌گریزد، می‌کوشد از دریا به امنیتِ روم برسد. سپاهِ منوچهر از پروازِ گناه‌کارانه سریع‌تر است. کشتی‌ها رهگیری می‌شوند. سلم از آب گرفته می‌شود. کینه تماماً پرداخت شد.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/salm-at-sea-scene.png",
+      "reward": { "xp": 65 },
+      "unlocks_codex": ["salm-sea-codex", "blood-feud-closed"]
+    },
+    {
+      "id": "fereyduns-last-day",
+      "order": 6,
+      "title_en": "Fereydun's Last Day",
+      "title_fa": "آخرین روزِ فریدون",
+      "era_en": "~3840 BC",
+      "era_fa": "~۳۸۴۰ پ.م",
+      "body_en": "The message arrives. Fereydun receives it alone. He has been waiting for this moment for decades — waiting for justice, for the account to be settled, for the grief to have somewhere to go. And now it does. He does not celebrate. He grieves for Tur and Salm too — not for their act, but for the sons they were before the act. A father who outlives all three of his children, even the guilty ones, is a father who has been punished by the world he tried to order. He dies quietly, shortly after. The Shahnameh marks his passing with a few verses of lament. He earned more, but he would not have wanted them.",
+      "body_fa": "پیام می‌رسد. فریدون تنها می‌گیرد. دهه‌هاست منتظرِ این لحظه است — منتظرِ عدالت، تا حسابِ کتاب تسویه شود، تا اندوه جایی داشته باشد برای رفتن. و حالا دارد. جشن نمی‌گیرد. برای تور و سلم هم گریه می‌کند — نه برای عملشان، بلکه برای پسرانی که پیش از آن عمل بودند. پدری که از هر سه فرزندش — حتی گناهکارانش — زیاده‌تر عمر می‌کند پدری است که دنیایی که کوشید نظم دهد تنبیهش کرده. کمی بعد آرام می‌میرد.",
+      "atmosphere": "dawn",
+      "image": "/assets/images/scenes/fereydun-last-day-scene.png",
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["fereydun-passing", "grief-and-justice"]
+    },
+    {
+      "id": "manuchehs-world",
+      "order": 7,
+      "title_en": "Manuchehr's World",
+      "title_fa": "جهانِ منوچهر",
+      "era_en": "~3840–3400 BC",
+      "era_fa": "~۳۸۴۰–۳۴۰۰ پ.م",
+      "body_en": "Manuchehr rules and rules well. His champion is Sam the warrior, son of Nariman, the mightiest arm in Iran since the age of fire. Under Sam's service the borders hold and the chronicle notes a period of order. But the Shahnameh is already looking north. Sam will have a son — and that son will be born with white hair, white as snow, white as Damavand. Sam will be afraid of the omen and cast the child from the mountain. The child will be found by the Simorgh. And from that child, eventually, Rostam will come. The chapter does not announce this yet. It only places Sam on the stage and points toward the mountain.",
+      "body_fa": "منوچهر حکم می‌راند و خوب حکم می‌راند. قهرمانش سامِ جنگاور است، پسرِ نریمان، قدرتمندترین بازو در ایران از عصرِ آتش. در خدمتِ سام مرزها پایدار می‌مانند. اما شاهنامه از پیش به شمال می‌نگرد. سام پسری خواهد داشت — و آن پسر با موهای سفید، سفید چون برف، سفید چون دماوند متولد خواهد شد. سام از فال می‌هراسد و کودک را از کوه می‌اندازد. کودک به دستِ سیمرغ یافته خواهد شد. و از آن کودک، سرانجام، رستم خواهد آمد. دفتر هنوز این را اعلام نمی‌کند. فقط سام را روی صحنه می‌گذارد و به‌سوی کوه اشاره می‌کند.",
+      "atmosphere": "dawn",
+      "image": "/assets/images/scenes/manuchehr-world-scene.png",
+      "reward": { "xp": 90 },
+      "unlocks_codex": ["sam-nariman", "zal-foreshadow-ch7", "rostam-distant"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "manuchehr",
+      "name_en": "Manuchehr",
+      "name_fa": "منوچهر",
+      "role_en": "Seventh King · The Avenger · Raised for Justice",
+      "role_fa": "هفتمین شاه · انتقام‌گیر · پرورش‌یافته برای عدالت",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "Iraj's grandson, raised by Fereydun with a single purpose: the just settlement of Iraj's murder. He understands not just how to win but what he is winning for — which is what separates him from a new tyrant. He kills Tur in single combat, catches Salm at sea, and rules justly afterward. His champion Sam will father the line that leads to Rostam.",
+      "lore_fa": "نوه‌ی ایرج، توسطِ فریدون با یک هدفِ واحد پرورش یافته: تسویه‌ی عادلانه‌ی قتلِ ایرج. نه فقط چگونه بُردن بلکه برای چه می‌برد را می‌فهمد — همین است که او را از ستمگرِ جدید جدا می‌کند. تور را در نبردِ تن‌به‌تن می‌کشد، سلم را در دریا می‌گیرد و پس از آن با عدل حکم می‌راند.",
+      "image": "/season2/uploads/chapters/manuchehr.png?v=1778880891801",
+      "unlocked": true,
+      "side": "light"
+    },
+    {
+      "slug": "fereydun-elder",
+      "name_en": "Fereydun",
+      "name_fa": "فریدون",
+      "role_en": "The Grieving King · Raiser of Manuchehr",
+      "role_fa": "شاهِ سوگوار · پرورشگرِ منوچهر",
+      "rarity": "legendary",
+      "level_required": 5,
+      "lore_en": "He appears here at the very end of his arc — five hundred years old, having outlived his purpose and all three of his sons. He raises Manuchehr as a final act of love and grief. When the justice is done, he does not last long. The Shahnameh gives him a few verses of lament, which is more restraint than sorrow deserves.",
+      "lore_fa": "در انتهای قوسش ظاهر می‌شود — پانصد ساله، که از هدف و هر سه پسرش بیشتر زیسته. منوچهر را به‌عنوانِ آخرین عملِ محبت و اندوه پرورش می‌دهد. وقتی عدالت برقرار شد دیری نمی‌ماند.",
+      "image": "/season2/uploads/chapters/fereydun.png?v=1778880804584",
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:fereyduns-lament"
+    },
+    {
+      "slug": "tur",
+      "name_en": "Tur",
+      "name_fa": "تور",
+      "role_en": "King of Turan · Killer of Iraj",
+      "role_fa": "شاهِ توران · قاتلِ ایرج",
+      "rarity": "epic",
+      "level_required": 6,
+      "lore_en": "He killed Iraj because he could not imagine someone genuinely wanting less. He ruled Turan for decades after. He fights well when Manuchehr comes, but he is fighting a man who has been prepared for this moment since childhood. The debt is personal. So is the payment.",
+      "lore_fa": "ایرج را کشت چون نمی‌توانست تصور کند کسی واقعاً کمتر بخواهد. دهه‌ها پس از آن توران را حکم راند. وقتی منوچهر می‌آید خوب می‌جنگد، اما دارد با کسی می‌جنگد که از کودکی برای این لحظه آماده شده.",
+      "image": null,
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:march-to-tur"
+    },
+    {
+      "slug": "salm",
+      "name_en": "Salm",
+      "name_fa": "سلم",
+      "role_en": "King of Rum · The One Who Ran",
+      "role_fa": "شاهِ روم · آنکه گریخت",
+      "rarity": "epic",
+      "level_required": 5,
+      "lore_en": "He hears of Tur's death and runs to his ships. He almost makes it. A guilt-driven flight is never fast enough — the army that chases it has purpose on its side. Salm is taken from the water. The blood feud is paid.",
+      "lore_fa": "خبرِ مرگِ تور را می‌شنود و به کشتی‌ها می‌گریزد. تقریباً می‌رسد. پرواز از سرِ گناه هرگز به‌اندازه‌ی کافی سریع نیست — سپاهی که تعقیبش می‌کند هدف در کنارش دارد.",
+      "image": null,
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:salm-at-sea"
+    },
+    {
+      "slug": "sam",
+      "name_en": "Sam",
+      "name_fa": "سام",
+      "role_en": "Champion of Manuchehr · Father of Zal",
+      "role_fa": "پهلوانِ منوچهر · پدرِ زال",
+      "rarity": "legendary",
+      "level_required": 8,
+      "lore_en": "Son of Nariman, the mightiest warrior in Manuchehr's service. He holds the borders of Iran and is celebrated in every court. He will have a son born with white hair — and that son, Zal, will fear him enough to be cast from a mountain. From that casting, Simorgh, and from Simorgh, Rostam. Sam's greatness casts the shadow that makes chapter 9 necessary.",
+      "lore_fa": "پسرِ نریمان، قدرتمندترین جنگجو در خدمتِ منوچهر. مرزهای ایران را نگه می‌دارد. پسری با موهای سفید خواهد داشت — و آن پسر، زال، آنقدر از او می‌هراسد که از کوه انداخته شود. از آن انداختن سیمرغ، و از سیمرغ رستم. عظمتِ سام سایه‌ای می‌اندازد که دفترِ نهم را ضروری می‌کند.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:manuchehs-world"
+    }
+  ],
+  "places": [
+    {
+      "slug": "plain-of-turan",
+      "name_en": "The Plain of Turan",
+      "name_fa": "دشتِ توران",
+      "kind_en": "First Iran-Turan Battlefield",
+      "kind_fa": "نخستین میدانِ جنگِ ایران و توران",
+      "summary_en": "Where Manuchehr meets Tur's army. The first of the great Iran-Turan battlefields — a geography the Shahnameh will return to for chapters to come. Rostam will fight here. Kay Kavus will be captured near here. Kay Khosrow will finally close this wound here.",
+      "summary_fa": "جایی که منوچهر با سپاهِ تور روبرو می‌شود. اولین میدانِ بزرگِ جنگِ ایران و توران — جغرافیایی که شاهنامه در دفترهای پیشِ رو بارها به آن باز می‌گردد.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:march-to-tur"
+    },
+    {
+      "slug": "salm-sea",
+      "name_en": "Salm's Sea",
+      "name_fa": "دریایِ سلم",
+      "kind_en": "Where the Blood Feud Ends",
+      "kind_fa": "جایی که کینه پایان می‌یابد",
+      "summary_en": "An unnamed sea — the Caspian shore, or the outer western waters. Salm flees here. His ships are intercepted. The blood feud that began with Iraj's murder ends in water. The Shahnameh does not name the sea. Its anonymity is deliberate: the death of a guilty man does not deserve a landmark.",
+      "summary_fa": "دریایی بی‌نام. سلم به اینجا می‌گریزد. کشتی‌هایش رهگیری می‌شوند. کینه‌ای که با قتلِ ایرج آغاز شد در آب پایان می‌یابد.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:salm-at-sea"
+    },
+    {
+      "slug": "pars-under-manuchehr",
+      "name_en": "Pars — The Ordered Kingdom",
+      "name_fa": "پارسِ پادشاهیِ منظم",
+      "kind_en": "A Land at Peace with Its Past",
+      "kind_fa": "سرزمینی در صلح با گذشته‌اش",
+      "summary_en": "Manuchehr rules and the four orders function. Sam holds the borders. For a time the chronicle has nothing catastrophic to report — and we know by now that this is the Shahnameh's highest praise. A land whose history is quiet for a generation is a land being governed well.",
+      "summary_fa": "منوچهر حکم می‌راند و چهار طبقه کار می‌کنند. سام مرزها را نگه می‌دارد. برای مدتی شاهنامه چیزِ فاجعه‌آمیزی برای گزارش ندارد — و حالا می‌دانیم که این بالاترین ستایشِ شاهنامه است.",
+      "image": null,
+      "unlocked": true
+    },
+    {
+      "slug": "north-mountain",
+      "name_en": "The Northern Mountain",
+      "name_fa": "کوهِ شمال",
+      "kind_en": "Where Zal Will Be Cast",
+      "kind_fa": "جایی که زال انداخته خواهد شد",
+      "summary_en": "The Shahnameh points north at the end of this chapter without naming the place. It is the mountain from which Sam will cast his white-haired son. The Simorgh lives there. In two chapters, everything changes. For now, it is just a direction.",
+      "summary_fa": "شاهنامه در پایانِ این دفتر بدون نامیدنِ مکان به شمال اشاره می‌کند. کوهی است که سام پسرِ سپیدمویش را از آن خواهد انداخت. سیمرغ آنجاست. دو دفتر دیگر همه چیز تغییر می‌کند.",
+      "image": "/assets/images/locations/mount-alborz-location.png",
+      "unlocked": false,
+      "unlock_via": "scene:manuchehs-world"
+    }
+  ],
+  "battle": {
+    "boss_slug": "tur",
+    "boss_name_en": "Tur — Personal Debt",
+    "boss_name_fa": "تور — وامِ شخصی",
+    "boss_image": null,
+    "boss_master_slug": null,
+    "boss_master_image": null,
+    "intro_en": "The debt is personal. Iraj died without raising his hand. Manuchehr was raised to answer for it. To face this gate you must know the full arc — from Fereydun's three days of silence to the bull-headed mace in Manuchehr's hands.",
+    "intro_fa": "وام شخصی است. ایرج بدون بلند کردنِ دستش مرد. منوچهر برای پاسخ دادن به آن پرورش یافت. برای مواجهه با این دروازه باید قوسِ کامل را بدانی — از سه روزِ سکوتِ فریدون تا گرزِ گاوسر در دستانِ منوچهر.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 20,
+        "label_en": "Reach Manuchehr LVL 20",
+        "label_fa": "رسیدن به سطحِ ۲۰ منوچهر",
+        "label_tg": "Расидан ба сатҳи 20 Манучеҳр",
+        "hint_en": "Upgrade Manuchehr in the Hero Collection.",
+        "hint_fa": "منوچهر را در بخشِ مجموعه‌ی قهرمانان ارتقا دهید.",
+        "hint_tg": "Манучеҳрро дар бахши Қаҳрамонон баланд баред."
+      },
+      {
+        "id": "iraj-crown",
+        "kind": "item",
+        "target": "iraj-crown",
+        "grant_on": "quiz",
+        "label_en": "Claim Iraj's Crown",
+        "label_fa": "دریافتِ تاجِ ایرج",
+        "label_tg": "Тоҷи Эраҷро гиред",
+        "hint_en": "Awarded when you complete the Chapter 7 easy quiz. The crown of the just prince — earned by mastering his story.",
+        "hint_fa": "با تکمیلِ آزمونِ ساده‌ی دفترِ ۷ اعطا می‌شود.",
+        "hint_tg": "Пас аз иҷрои имтиҳони осони Боби 7 дода мешавад."
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "manuchehr",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "fereydun-lament-codex",
+      "category": "event",
+      "title_en": "Three Days of Silence",
+      "title_fa": "سه روزِ سکوت",
+      "summary_en": "Fereydun does not weep immediately at Iraj's murder. He is five hundred years old. He has felt every kind of sorrow. He sits alone for three days. On the fourth he calls for Manuchehr. The Shahnameh's restraint here is the point: some griefs are too large for immediate expression.",
+      "summary_fa": "فریدون در برابرِ قتلِ ایرج بلافاصله گریه نمی‌کند. پانصد ساله است. سه روز تنها می‌نشیند. روزِ چهارم منوچهر را می‌خواهد. خویشتن‌داریِ شاهنامه اینجا نکته است: برخی اندوه‌ها برای ابراز سریع بیش از اندازه بزرگند.",
+      "image": null,
+      "unlock_via": "scene:fereyduns-lament"
+    },
+    {
+      "id": "purposeful-raising",
+      "category": "concept",
+      "title_en": "Raised for Justice",
+      "title_fa": "پرورش‌یافته برای عدالت",
+      "summary_en": "Manuchehr knows what he is for from childhood. This makes him dangerous in a specific way — not cruel, but precise. The difference between a just avenger and a new tyrant is whether the winning is understood as an end or as a beginning. For Manuchehr, it is an end. He rules justly afterward. This is why Fereydun chose to raise him rather than lead the army himself.",
+      "summary_fa": "منوچهر از کودکی می‌داند برای چیست. این او را به شکلِ خاصی خطرناک می‌کند — نه بی‌رحم، بلکه دقیق. تفاوتِ انتقام‌گیرِ عادل و ستمگرِ جدید این است که آیا پیروزی به‌عنوانِ پایان فهمیده می‌شود یا آغاز.",
+      "image": null,
+      "unlock_via": "scene:the-raising"
+    },
+    {
+      "id": "derafsh-continues",
+      "category": "artifact",
+      "title_en": "The Derafsh Kaviani — Carried On",
+      "title_fa": "درفشِ کاویانی — ادامه‌یافته",
+      "summary_en": "The banner Kaveh raised against Zahhak, that led Fereydun's army east, now leads Manuchehr's army to Turan. Each generation adds something to it — jewels, tassels, layers of meaning. It will be carried into battle for centuries. It is the oldest continuously-used symbol in the Shahnameh.",
+      "summary_fa": "درفشی که کاوه علیه ضحاک برافراشت، که سپاهِ فریدون را به شرق برد، اکنون سپاهِ منوچهر را به توران می‌برد. هر نسلی چیزی به آن می‌افزاید — جواهر، منگوله، لایه‌های معنا. قرن‌ها به نبرد برده خواهد شد.",
+      "image": null,
+      "unlock_via": "scene:march-to-tur"
+    },
+    {
+      "id": "tur-falls-codex",
+      "category": "event",
+      "title_en": "Single Combat",
+      "title_fa": "نبردِ تن‌به‌تن",
+      "summary_en": "The Shahnameh insists that Manuchehr fight Tur personally. The debt is personal — Iraj died at Tur's hands — and so the payment must be personal. The bull-headed mace that ended Zahhak's guards is in Manuchehr's hands. When Tur falls, both armies go silent: half from grief, half from relief.",
+      "summary_fa": "شاهنامه اصرار دارد منوچهر شخصاً با تور بجنگد. وام شخصی است — ایرج به دستِ تور کشته شد — پس پرداختش هم باید شخصی باشد.",
+      "image": null,
+      "unlock_via": "scene:tur-falls"
+    },
+    {
+      "id": "salm-sea-codex",
+      "category": "event",
+      "title_en": "The Sea That Didn't Save Him",
+      "title_fa": "دریایی که نجاتش نداد",
+      "summary_en": "Salm hears of Tur's death and runs for the sea. His ships are faster than infantry — but not faster than purpose. Manuchehr's cavalry intercepts him. The Shahnameh does not name the sea. A guilty man's death does not deserve a landmark.",
+      "summary_fa": "سلم خبرِ مرگِ تور را می‌شنود و به دریا می‌گریزد. کشتی‌هایش از پیاده‌نظام سریع‌ترند — اما از هدف سریع‌تر نیستند.",
+      "image": null,
+      "unlock_via": "scene:salm-at-sea"
+    },
+    {
+      "id": "blood-feud-closed",
+      "category": "concept",
+      "title_en": "The Blood Feud — Closed",
+      "title_fa": "کینه‌ی خون — بسته شد",
+      "summary_en": "Iraj was murdered. Manuchehr was raised to answer. Tur died in single combat. Salm died at sea. The feud that began in chapter 6 is closed in chapter 7. But the Shahnameh knows that blood feuds leave scars. The Iran-Turan war is not over — it has only been interrupted. Rostam will fight it. Kay Khosrow will finally close it.",
+      "summary_fa": "ایرج کشته شد. منوچهر برای پاسخ دادن بزرگ شد. تور در نبردِ تن‌به‌تن مرد. سلم در دریا مرد. کینه بسته شد. اما شاهنامه می‌داند که کینه‌های خونی جای زخم می‌گذارند.",
+      "image": null,
+      "unlock_via": "scene:salm-at-sea"
+    },
+    {
+      "id": "fereydun-passing",
+      "category": "event",
+      "title_en": "Fereydun's Passing",
+      "title_fa": "درگذشتِ فریدون",
+      "summary_en": "Fereydun receives the news of Tur and Salm's deaths and grieves for them too — not for their act, but for the sons they were before it. A father who outlives all his children, even the guilty ones, has been punished by the world he ordered. He dies quietly. The Shahnameh gives him a few verses of lament — less than he earned, but he would not have wanted more.",
+      "summary_fa": "فریدون خبرِ مرگِ تور و سلم را می‌گیرد و برای آن‌ها هم گریه می‌کند — نه برای عملشان، بلکه برای پسرانی که پیش از آن عمل بودند. کمی پس از آن آرام می‌میرد.",
+      "image": null,
+      "unlock_via": "scene:fereyduns-last-day"
+    },
+    {
+      "id": "grief-and-justice",
+      "category": "concept",
+      "title_en": "Grief and Justice Are Not the Same",
+      "title_fa": "اندوه و عدالت یکی نیستند",
+      "summary_en": "Fereydun weeps for his guilty sons after their deaths, even though he raised Manuchehr specifically to kill them. The Shahnameh holds both things at once: justice was necessary and grief is real. The two do not cancel each other out. This is one of the chronicle's most precise emotional observations.",
+      "summary_fa": "فریدون برای پسرانِ گناهکارش پس از مرگشان گریه می‌کند، حتی اگر منوچهر را مخصوصاً برای کشتنشان پرورش داده بود. شاهنامه هر دو چیز را با هم نگه می‌دارد: عدالت ضروری بود و اندوه واقعی است. این دو همدیگر را خنثی نمی‌کنند.",
+      "image": null,
+      "unlock_via": "scene:fereyduns-last-day"
+    },
+    {
+      "id": "sam-nariman",
+      "category": "person",
+      "title_en": "Sam — The Champion",
+      "title_fa": "سام — پهلوان",
+      "summary_en": "Son of Nariman, Manuchehr's greatest warrior. He holds the borders of Iran and is celebrated in every court. He will have a son born with white hair. He will cast that son from a mountain. From that act of fear, everything that follows in the chronicle is made possible.",
+      "summary_fa": "پسرِ نریمان، بزرگ‌ترین جنگجوی منوچهر. مرزهای ایران را نگه می‌دارد. پسری با موهای سفید خواهد داشت. آن پسر را از کوه خواهد انداخت. از آن عملِ هراس، هرچه در این تاریخ پس از آن می‌آید ممکن می‌شود.",
+      "image": null,
+      "unlock_via": "scene:manuchehs-world"
+    },
+    {
+      "id": "zal-foreshadow-ch7",
+      "category": "person",
+      "title_en": "Zal — The White-Haired Child",
+      "title_fa": "زال — کودکِ سپیدمو",
+      "summary_en": "Sam's son, not yet born in this chapter. He will arrive with white hair — an omen Sam cannot accept. Sam will cast him from the mountain. The Simorgh will find him. He will grow up between the worlds of the divine and the human, and from his union with Rudabeh, Rostam will be born. The Shahnameh points toward this already, in the final scene's mention of Sam and the mountain.",
+      "summary_fa": "پسرِ سام، که در این دفتر هنوز به دنیا نیامده. با موهای سفید خواهد رسید — فالی که سام نمی‌تواند بپذیرد. سام از کوه خواهد انداختش. سیمرغ خواهد یافتش.",
+      "image": null,
+      "unlock_via": "scene:manuchehs-world"
+    },
+    {
+      "id": "rostam-distant",
+      "category": "person",
+      "title_en": "Rostam — Still Distant",
+      "title_fa": "رستم — هنوز دور",
+      "summary_en": "The Shahnameh's greatest hero does not appear until chapter 12 — but the chain that leads to him begins here. Manuchehr → Sam → Zal → Rudabeh → Rostam. Each link is a generation. Each generation is a chapter. The chronicle is patient. It is already doing the work of preparation.",
+      "summary_fa": "بزرگ‌ترین قهرمانِ شاهنامه تا دفترِ دوازدهم ظاهر نمی‌شود — اما زنجیری که به او می‌رسد از اینجا آغاز می‌شود. منوچهر ← سام ← زال ← رودابه ← رستم.",
+      "image": null,
+      "unlock_via": "scene:manuchehs-world"
+    }
+  ]
+}
