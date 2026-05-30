@@ -211,6 +211,33 @@
     if (changed) saveProgress();
   };
 
+  /* ---------- battle teaser overlay ---------- */
+  const showBattleTeaser = (bossName) => {
+    const existing = document.getElementById("battle-teaser");
+    if (existing) existing.remove();
+
+    const el = document.createElement("div");
+    el.id = "battle-teaser";
+    el.className = "battle-teaser-overlay";
+    el.innerHTML = `
+      <div class="bt-inner">
+        <div class="bt-glyph">☠</div>
+        <h3 class="bt-title">${escapeHtml(bossName)}</h3>
+        <p class="bt-msg">${escapeHtml(tr("battle_armies_msg"))}</p>
+        <button class="primary-btn bt-dismiss">${escapeHtml(tr("battle_prepare_btn"))}</button>
+      </div>`;
+
+    document.body.appendChild(el);
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("open")));
+
+    const close = () => {
+      el.classList.remove("open");
+      setTimeout(() => el.remove(), 280);
+    };
+    el.querySelector(".bt-dismiss").addEventListener("click", close);
+    el.addEventListener("click", (e) => { if (e.target === el) close(); });
+  };
+
   /* ---------- battle requirements ---------- */
   const paintBattle = (lore) => {
     const host = $("[data-battle]");
@@ -334,7 +361,7 @@
     if (cta) {
       cta.addEventListener("click", () => {
         if (!allMet) return;
-        toast(tr("battle_combat_next_update"));
+        showBattleTeaser(headTitle);
         haptic("warning");
       });
     }

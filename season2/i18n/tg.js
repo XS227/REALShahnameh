@@ -285,6 +285,8 @@
       battle_challenge_tpl: "☠ НАБАРД бо {boss} — ДАР ТАҶДИДИ ОЯНДА",
       battle_locked: "Қулф — ҳамаи шартҳоро тамом кун",
       battle_combat_next_update: "Набард дар таҷдиди оянда фаъол мешавад.",
+      battle_armies_msg: "Лашкариёни торикӣ ҷамъ мешаванд… Қаҳрамонони худро барои тавсеаи набарди оянда омода кунед!",
+      battle_prepare_btn: "Омода мешавам",
 
       /* Chapter gate */
       gate_locked_title: "Боб қулф аст",

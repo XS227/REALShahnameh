@@ -284,6 +284,8 @@
       battle_challenge_tpl: "☠ CHALLENGE {boss} — COMING NEXT UPDATE",
       battle_locked: "Locked — complete all requirements",
       battle_combat_next_update: "Combat arrives in the next update.",
+      battle_armies_msg: "The armies of darkness are gathering… Prepare your heroes for the upcoming battle expansion!",
+      battle_prepare_btn: "I'll Prepare",
 
       /* Chapter gate */
       gate_locked_title: "Chapter Locked",

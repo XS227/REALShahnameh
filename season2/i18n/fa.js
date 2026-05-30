@@ -286,6 +286,8 @@
       battle_challenge_tpl: "☠ نبرد با {boss} — بزودی",
       battle_locked: "قفل — همه‌ی شرایط را کامل کن",
       battle_combat_next_update: "نبرد در بروزرسانی بعدی فعال می‌شود.",
+      battle_armies_msg: "لشکریان تاریکی در حال جمع شدن‌اند… قهرمانانتان را برای توسعه‌ی نبرد آینده آماده کنید!",
+      battle_prepare_btn: "آماده می‌شوم",
 
       /* Chapter gate */
       gate_locked_title: "فصل قفل است",

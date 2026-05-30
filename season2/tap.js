@@ -589,6 +589,13 @@
     // Update UI after sync resolves (balance may change)
     if (window.RealSync) window.RealSync.ready().then(updateSwapUI);
     updateSwapUI();
+
+    // Live sync: refresh swap panel whenever ZAR changes (throttled to 300 ms)
+    let _zarUpdateTimer = null;
+    window.addEventListener('real:zar:updated', () => {
+      if (_zarUpdateTimer) return;
+      _zarUpdateTimer = setTimeout(() => { _zarUpdateTimer = null; updateSwapUI(); }, 300);
+    });
   };
 
   /* ---- Init ---- */

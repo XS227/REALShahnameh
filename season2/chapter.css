@@ -7,6 +7,41 @@
 /* Ensure hidden attribute is respected even when display is set by a class rule */
 [hidden] { display: none !important; }
 
+/* Battle teaser overlay — shown when player taps the CTA with all reqs met */
+.battle-teaser-overlay {
+  position: fixed; inset: 0; z-index: 910;
+  background: rgba(4, 5, 11, .9);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 32px 24px;
+  opacity: 0; transition: opacity .25s ease;
+}
+.battle-teaser-overlay.open { opacity: 1; }
+.bt-inner {
+  max-width: 320px; width: 100%;
+  text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+}
+.bt-glyph {
+  font-size: 56px; line-height: 1;
+  filter: drop-shadow(0 0 28px rgba(255, 82, 103, .75));
+  animation: bt-pulse 1.8s ease-in-out infinite;
+}
+@keyframes bt-pulse {
+  0%, 100% { transform: scale(1);    filter: drop-shadow(0 0 20px rgba(255,82,103,.6)); }
+  50%       { transform: scale(1.1); filter: drop-shadow(0 0 36px rgba(255,82,103,.9)); }
+}
+.bt-title {
+  font-size: 20px; font-weight: 900; margin: 0;
+  color: #ff6b7a;
+  text-shadow: 0 0 22px rgba(255, 82, 103, .55);
+  letter-spacing: .5px;
+}
+.bt-msg {
+  font-size: 14px; line-height: 1.65; color: #d8d2c0; margin: 0;
+}
+.bt-dismiss { width: 100%; }
+
 /* Chapter gate overlay */
 .chapter-gate {
   position: fixed; inset: 0; z-index: 500;
