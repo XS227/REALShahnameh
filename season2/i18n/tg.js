@@ -1006,5 +1006,76 @@
       hs_lvl_lbl:            "СТҲ",
       hero_up_link:          "Боло ›",
 
+      /* ── Hero cards & economy ── */
+      zar_hr_unit:           "Зар/соат",
+      hero_owned_badge:      "Сатҳ {n}",
+      hero_zar_subline:      "+{zar} Зар/соат",
+      hero_upgrade_cta:      "↑ Сатҳ {lvl} · +{delta}/соат · {cost}",
+      hero_buy_cta_label:    "Харидани қаҳрамон",
+
+      /* ── Daily check-in ── */
+      checkin_day_lbl:       "Р{n}",
+      checkin_streak_lbl:    "рӯзи пайдарпай",
+      checkin_btn_claim:     "Гирифтани рӯзи {n}",
+      checkin_btn_done:      "Фардо биёед",
+
+      /* ── Social / partner task buttons ── */
+      task_btn_claimed:      "✓ Гирифта шуд",
+      task_btn_go:           "Рав ›",
+      task_btn_wait:         "Интизор {n}с…",
+      task_btn_verify:       "Тасдиқ ✓",
+
+      /* ── Task reward modal ── */
+      reward_secured_lbl:    "Мукофот гирифта шуд",
+      loyalty_msg:           "{platform} — садоқати шумо ба солнома мукофот дода шуд.",
+      platform_tg_thanks:    "Пайравии канали Телеграми мо",
+      platform_x_thanks:     "Пайравии мо дар X",
+      platform_tiktok_thanks:"Пайравии мо дар TikTok",
+      platform_yt_thanks:    "Обуна шудан ба YouTube-и мо",
+      platform_dyor_thanks:  "Лайк кардани мо дар DYOR.io",
+
+      /* ── Market status ── */
+      market_dot_live:       "● зинда",
+      market_dot_stale:      "● кӯҳна",
+      market_dot_connecting: "● пайваст меша",
+      market_note_live:      "Маълумоти бозори TON · ҳар 60с навшавӣ",
+      market_note_stale:     "Охирин маълумоти маълум. Пайваст меша…",
+      market_note_connecting:"Пайваст шудан ба бозори TON…",
+
+      /* ── Ad / tap buttons ── */
+      btn_loading_ad:        "Реклама боргузорӣ меша…",
+      btn_connecting_ton:    "Пайваст шудан ба шабакаи TON…",
+      btn_soon:              "Ба зудӣ",
+      btn_claimed_check:     "Гирифта шуд ✓",
+      btn_claim_arrow:       "Гиред ›",
+      tap_xp_burst:          "+ТҶ",
+
+      /* ── Journey / home page ── */
+      journey_xp_quiz_sub:   "+{xp} {unit} · Имтиҳон",
+      vip_level_tpl:         "VIP {n}",
+
+      /* ── Social tasks (earn page) ── */
+      social_task_channel:   "Пайравии канали расмӣ",
+      social_task_community: "Ҳамроҳ шудан ба ҷамъияти форсӣ",
+      social_task_x:         "Пайравии мо дар X",
+      social_task_tiktok:    "Пайравии саҳифаи REAL",
+      social_task_youtube:   "Обуна шудан ба канал",
+      social_task_dyor:      "Лайк кардани DApp дар DYOR.io",
+      social_task_tonkeeper: "Кошпули Tonkeeper",
+      social_task_blum:      "Blum",
+      social_task_nft:       "REAL NFT — Дастрасии барвақта",
+
+      /* ── Milestones ── */
+      milestone_1k:          "🎁 1,000 REAL + Сандуқи Бунёдгузор",
+      milestone_3k:          "⚔ 3,000 REAL + Корти Фармондеҳ",
+      milestone_8k:          "🪂 8,000 REAL + Зарбдиҳандаи Airdrop",
+      milestone_25k:         "👑 25,000 REAL + Нишони Абадиён",
+
+      /* ── Misc ── */
+      r_gems:                "Ҷавоҳир",
+      btn_verify_countdown:  "Интизор {n}с…",
+      warrior_accepted_toast:"Ҷангӣ ба клан қабул шуд!",
+      could_not_accept:      "Қабул нашуд. Аз нав кӯшиш кунед.",
+
   };
 })();

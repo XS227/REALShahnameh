@@ -39,7 +39,7 @@
     const pctEl  = $("[data-chapters-pct]");
     const fillEl = $("[data-chapters-fill]");
     if (doneEl) doneEl.textContent = t("learn_stories_done_tpl", { done: fmtNum(doneCount), total: fmtNum(total) });
-    if (pctEl)  pctEl.textContent  = fmtNum(pct) + "%";
+    if (pctEl)  pctEl.textContent  = ((window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(pct) : fmtNum(pct)) + "%";
     if (fillEl) fillEl.style.width = `${Math.max(2, pct)}%`;
 
     host.innerHTML = chapters.map((c) => {
@@ -66,7 +66,7 @@
       const rewardLine = c.rewards ? `
         <span class="reward">
           ${c.rewards.xp ? `<i class="s2-icon xp"></i> ${esc(fmtNum(c.rewards.xp))} ${t("r_xp")}` : ""}
-          ${c.rewards.real ? ` · <i class="real-coin"></i> ${esc(fmtNum(c.rewards.real))} REAL` : ""}
+          ${c.rewards.real ? ` · <i class="real-coin"></i> ${esc(fmtNum(c.rewards.real))} ${t("currency_name","REAL")}` : ""}
         </span>` : "";
 
       const inner = `

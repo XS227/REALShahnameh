@@ -15,7 +15,9 @@
   const locF = (obj, field) => (window.RealI18N && window.RealI18N.locField)
     ? window.RealI18N.locField(obj, field) : (obj && obj[field] != null ? obj[field] : "");
   const isFa   = () => window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
-  const fmtNum = (n) => (window.RealI18N && window.RealI18N.formatNumber)
+  const fmtNum = (n) => (window.RealI18N && window.RealI18N.compactNumber)
+    ? window.RealI18N.compactNumber(n)
+    : (window.RealI18N && window.RealI18N.formatNumber)
     ? window.RealI18N.formatNumber(n) : String(n);
 
   const escapeHtml = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, m => (
@@ -99,7 +101,7 @@
     const subEl = $('[data-journey-sub]');
     if (subEl && xp) {
       const xpFmt = fa ? fmtNum(xp) : xp;
-      subEl.textContent = `+${xpFmt} XP${(cat && cat.quiz_count) || true ? ' · Quiz' : ''}`;
+      subEl.textContent = t('journey_xp_quiz_sub',{xp: xpFmt, unit: t('r_xp','XP')});
     }
 
     /* -- CTA link -- */
@@ -112,7 +114,7 @@
     const pctEl  = $('[data-chapters-pct]');
     const doneEl = $('[data-chapters-done]');
     const fillEl = $('[data-chapters-fill]');
-    if (pctEl)  pctEl.textContent  = fa ? fmtNum(pct) + '%' : pct + '%';
+    if (pctEl)  pctEl.textContent  = fmtNum(pct) + '%';
     if (doneEl) doneEl.textContent = t('home_chs_done_tpl', { done: fmtNum(doneCount), total: fmtNum(TOTAL) });
     if (fillEl) fillEl.style.width = pct + '%';
 
@@ -222,7 +224,7 @@
           <div class="title">${escapeHtml(locF(c, "title"))}</div>
           <div class="meta">
             <span class="pill-mini">${escapeHtml(pillLabel)}</span>
-            ${c.rewards && c.rewards.real ? `<span class="pill-mini" style="background:rgba(74,216,166,.12); color:var(--jade,#4ad8a6); border-color:rgba(74,216,166,.3);">+${c.rewards.real} ${RT} REAL</span>` : ""}
+            ${c.rewards && c.rewards.real ? `<span class="pill-mini" style="background:rgba(74,216,166,.12); color:var(--jade,#4ad8a6); border-color:rgba(74,216,166,.3);">+${c.rewards.real} ${RT} ${t('currency_name','REAL')}</span>` : ""}
           </div>
         </div>
       </a>`;
@@ -302,7 +304,7 @@
     if (levelEl) levelEl.textContent = vipLv;
     const vipPill = $("[data-vip-level]");
     if (vipPill) {
-      vipPill.textContent = vipLv === 0 ? "VIP" : `VIP ${fmtNum(vipLv)}`;
+      vipPill.textContent = vipLv === 0 ? t('vip','VIP') : t('vip_level_tpl',{n: fmtNum(vipLv)});
     }
 
     hydrateBadge(vipLv);

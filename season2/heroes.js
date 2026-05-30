@@ -6,7 +6,8 @@
   "use strict";
   const RT = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">';
 
-  const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  const t    = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  const fmtN = (n) => (window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(n) : String(Number(n) || 0);
   const locF = (obj, field) => (window.RealI18N && window.RealI18N.locField)
     ? window.RealI18N.locField(obj, field) : (obj && obj[field] != null ? obj[field] : "");
 
@@ -1161,14 +1162,14 @@
         } else if (state === "farr_locked") {
           stateBadge = `<span class="hero-state-badge farr-badge">✦${item.farr_cost}</span>`;
         } else if (state === "owned") {
-          stateBadge = `<span class="hero-state-badge owned-badge">Lv.${owned.level || 1}</span>`;
+          stateBadge = `<span class="hero-state-badge owned-badge">${t("hero_owned_badge", { n: owned.level || 1 })}</span>`;
         } else {
           const cardCost = item.cost || RARITY_COST[item.rarity] || 0;
-          stateBadge = `<span class="hero-state-badge available-badge">${RT} ${cardCost.toLocaleString()}</span>`;
+          stateBadge = `<span class="hero-state-badge available-badge">${RT} ${fmtN(cardCost)}</span>`;
         }
 
         const subLine = state === "owned"
-          ? `<span class="zar-ico">🪙</span> +${owned.zar_per_hour || 0} Zar/hr`
+          ? `<span class="zar-ico">🪙</span> ${t("hero_zar_subline", { zar: fmtN(owned.zar_per_hour || 0) })}`
           : rarityLabel(item.rarity);
 
         card.innerHTML = `
@@ -1304,12 +1305,12 @@
       const zarDelta = Math.max(0, nextZar - curZar);
       return `<div class="hero-econ-panel owned">
         <div class="hecon-owned-row">
-          <span class="hecon-level">Lv.${lvl}</span>
-          <span class="hecon-zar"><span class="zar-ico">🪙</span> ${curZar} Zar/hr</span>
+          <span class="hecon-level">${t("hero_owned_badge", { n: lvl })}</span>
+          <span class="hecon-zar"><span class="zar-ico">🪙</span> ${t("hero_zar_subline", { zar: fmtN(curZar) })}</span>
         </div>
         <button class="hecon-upgrade-btn" data-action="upgrade"
           data-hero-id="${item.id}" data-cost="${upgCost}" data-next-zar="${nextZar}">
-          ↑ Lv.${lvl + 1} &nbsp;·&nbsp; <span class="zar-ico">🪙</span> +${zarDelta}/hr &nbsp;·&nbsp; ${RT} ${upgCost.toLocaleString()}
+          ${t("hero_upgrade_cta", { lvl: lvl + 1, delta: fmtN(zarDelta), cost: `${RT} ${fmtN(upgCost)}` })}
         </button>
       </div>`;
     }
@@ -1318,12 +1319,12 @@
     const buyZar = baseZar;
     return `<div class="hero-econ-panel available">
       <div class="hecon-price-row">
-        <span class="hecon-cost">${RT} ${cost.toLocaleString()} REAL</span>
-        <span class="hecon-zar"><span class="zar-ico">🪙</span> +${buyZar} Zar/hr</span>
+        <span class="hecon-cost">${RT} ${fmtN(cost)} ${t("currency_name","REAL")}</span>
+        <span class="hecon-zar"><span class="zar-ico">🪙</span> ${t("hero_zar_subline", { zar: fmtN(buyZar) })}</span>
       </div>
       <button class="hecon-buy-btn" data-action="buy"
         data-hero-id="${item.id}" data-cost="${cost}" data-zar="${buyZar}">
-        ${RT} ${cost.toLocaleString()} REAL — Buy Hero
+        ${RT} ${fmtN(cost)} ${t("currency_name","REAL")} — ${t("hero_buy_cta_label","Buy Hero")}
       </button>
     </div>`;
   };

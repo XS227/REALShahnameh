@@ -18,6 +18,9 @@
     } catch (_) { return Promise.resolve(null); }
   };
 
+  const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  const fmtN = (n) => (window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(n) : String(Number(n) || 0);
+
   const tgUser = () => {
     try {
       return (window.Telegram && window.Telegram.WebApp
@@ -163,8 +166,8 @@
     const fmtA = (n) => (window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(n) : String(n);
 
     const rewardLines = [];
-    if (real)  rewardLines.push(`<div class="trm-amount">+${fmtA(real)} ${RT} REAL</div>`);
-    if (gems)  rewardLines.push(`<div class="trm-bonus">+${gems} 💎 Gems</div>`);
+    if (real)  rewardLines.push(`<div class="trm-amount">+${fmtA(real)} ${RT} ${t('currency_name','REAL')}</div>`);
+    if (gems)  rewardLines.push(`<div class="trm-bonus">+${gems} 💎 ${t('r_gems','Gems')}</div>`);
     if (farr)  rewardLines.push(`<div class="trm-bonus">+${farr} ✦ Farr</div>`);
 
     const overlay = document.createElement('div');
@@ -187,14 +190,14 @@
         box-shadow:0 0 70px rgba(244,197,107,.15),0 28px 72px rgba(0,0,0,.7);
         animation:trm-in .38s cubic-bezier(.2,.9,.2,1) both;">
         <div style="font-size:52px;line-height:1;margin-bottom:14px;filter:drop-shadow(0 0 24px rgba(244,197,107,.7));">⚔</div>
-        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(244,197,107,.6);margin-bottom:6px;">Reward Secured</div>
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(244,197,107,.6);margin-bottom:6px;">${t('reward_secured_lbl','Reward Secured')}</div>`;
         <h3 style="margin:0 0 8px;font-size:17px;font-weight:900;
           background:linear-gradient(118deg,#fff 0%,#ffe8c0 55%,#f4c56b 100%);
           -webkit-background-clip:text;background-clip:text;color:transparent;">
           Thank you!
         </h3>
         <p style="font-size:13px;color:rgba(220,220,235,.75);margin:0 0 18px;line-height:1.5;">
-          ${platformThanks} — your loyalty to the Chronicle is rewarded.
+          ${t('loyalty_msg',{platform: platformThanks})}
         </p>
         ${rewardLines.join('')}
         <p style="font-size:11px;color:rgba(180,180,210,.5);margin:16px 0 0;">
@@ -238,11 +241,11 @@
     dyor:     { bg: 'rgba(74,216,166,.10)',  border: 'rgba(74,216,166,.32)', color: '#4ad8a6' },
   };
 
-  const SOCIAL_TASKS = [
+  const SOCIAL_TASKS = () => [
     {
       id: 'follow_tg_channel',
       platform: 'telegram',
-      label: 'Follow Official Channel',
+      label: t('social_task_channel','Follow Official Channel'),
       sublabel: '@Shahnameh_news',
       icon: '✈',
       url: 'https://t.me/Shahnameh_news',
@@ -251,7 +254,7 @@
     {
       id: 'join_tg_support',
       platform: 'telegram',
-      label: 'Join Persian Community',
+      label: t('social_task_community','Join Persian Community'),
       sublabel: '@shahnameh_persian',
       icon: '✈',
       url: 'https://t.me/shahnameh_persian',
@@ -260,7 +263,7 @@
     {
       id: 'follow_x',
       platform: 'x',
-      label: 'Follow on X',
+      label: t('social_task_x','Follow on X'),
       sublabel: '@shahnamehgamefi',
       icon: '𝕏',
       url: 'https://x.com/shahnamehgamefi',
@@ -269,7 +272,7 @@
     {
       id: 'follow_tiktok',
       platform: 'tiktok',
-      label: 'Follow REAL Page',
+      label: t('social_task_tiktok','Follow REAL Page'),
       sublabel: '@shahnamehgamefi227',
       icon: '♬',
       url: 'https://www.tiktok.com/@shahnamehgamefi227',
@@ -278,7 +281,7 @@
     {
       id: 'subscribe_youtube',
       platform: 'youtube',
-      label: 'Subscribe to Channel',
+      label: t('social_task_youtube','Subscribe to Channel'),
       sublabel: '@shahnamehgamefi',
       icon: '▶',
       url: 'https://youtube.com/@shahnamehgamefi',
@@ -287,7 +290,7 @@
     {
       id: 'like_dyor',
       platform: 'dyor',
-      label: 'Like the DApp on DYOR.io',
+      label: t('social_task_dyor','Like the DApp on DYOR.io'),
       sublabel: 'games/shahnameh',
       icon: '👍',
       url: 'https://dyor.io/dapps/games/shahnameh',
@@ -296,10 +299,10 @@
   ];
   /* Total: 2500+2500+3000+2000+3000+3000 = 16,000 REAL */
 
-  const PARTNERS = [
+  const PARTNERS = () => [
     {
       id: 'partner_tonkeeper',
-      label: 'Tonkeeper Wallet',
+      label: t('social_task_tonkeeper','Tonkeeper Wallet'),
       desc: 'The leading TON wallet',
       icon: '💎',
       url: 'https://t.me/tonkeeper',
@@ -307,7 +310,7 @@
     },
     {
       id: 'partner_blum',
-      label: 'Blum',
+      label: t('social_task_blum','Blum'),
       desc: 'Trade & earn on Blum',
       icon: '🌸',
       url: 'https://t.me/BlumCryptoBot',
@@ -315,7 +318,7 @@
     },
     {
       id: 'partner_nft_real',
-      label: 'REAL NFT — Early Access',
+      label: t('social_task_nft','REAL NFT — Early Access'),
       desc: 'Claim your Shahnameh NFT slot',
       icon: '✦',
       url: 'https://t.me/shahnameh_bot',
@@ -328,25 +331,25 @@
       threshold: 3,
       real: 1000, gems: 0, farr: 0,
       chest: 'founder_chest',                          // vault item
-      label: '🎁 1,000 REAL + Founder Chest',
+      labelKey: 'milestone_1k',
     },
     {
       threshold: 10,
       real: 3000, gems: 0, farr: 0,
-      hero_unlock: 'commander_card',                   // hero collection unlock flag
-      label: '⚔ 3,000 REAL + Commander Card',
+      hero_unlock: 'commander_card',
+      labelKey: 'milestone_3k',
     },
     {
       threshold: 25,
       real: 8000, gems: 0, farr: 0,
-      multiplier_asset: 'airdrop_multiplier_s2',       // persisted multiplier asset
-      label: '🪂 8,000 REAL + Airdrop Multiplier',
+      multiplier_asset: 'airdrop_multiplier_s2',
+      labelKey: 'milestone_8k',
     },
     {
       threshold: 100,
       real: 25000, gems: 0, farr: 0,
-      badge: 'shahnameh_immortals',                    // profile badge flag
-      label: '👑 25,000 REAL + Immortals Badge',
+      badge: 'shahnameh_immortals',
+      labelKey: 'milestone_25k',
     },
   ];
 
@@ -368,7 +371,7 @@
     const days = Array.from({ length: 7 }, (_, i) => {
       const dayNum  = i + 1;
       const r       = CHECKIN_REWARDS[i];
-      const rewardTxt = r.real >= 1000 ? (r.real / 1000) + 'k' : r.real + '';
+      const rewardTxt = fmtN(r.real);
       const gem     = r.gems ? ' +💎' : '';
       const past    = streak >= dayNum;
       const active  = !claimed && (dayNum === nextStreak);
@@ -376,21 +379,21 @@
       const ico     = past ? '✓' : (active ? '★' : dayNum);
       return `<div class="${cls}">
         <div class="ci-ico">${ico}</div>
-        <div class="ci-lbl">D${dayNum}</div>
+        <div class="ci-lbl">${t('checkin_day_lbl',{n:dayNum})}</div>
         <div class="ci-val">${rewardTxt}${RT}${gem}</div>
       </div>`;
     }).join('');
 
     const btnLabel = claimed
-      ? '✓ Come back tomorrow'
-      : `Claim Day ${nextStreak} · +${nextReward.real} ${RT}${nextReward.gems ? ' +💎' : ''}` ;
+      ? t('checkin_btn_done')
+      : `${t('checkin_btn_claim',{n:nextStreak})} · +${fmtN(nextReward.real)} ${RT}${nextReward.gems ? ' +💎' : ''}` ;
 
     el.innerHTML = `
       <article class="card checkin-card">
         <div class="checkin-top">
           <div class="checkin-streak">
             <span class="ci-streak-num">${streak}</span>
-            <span class="ci-streak-lbl">day streak</span>
+            <span class="ci-streak-lbl">${t('checkin_streak_lbl')}</span>
           </div>
           <button class="primary-btn checkin-btn${claimed ? ' ci-claimed' : ''}" id="ci-btn" ${claimed ? 'disabled' : ''}>
             ${btnLabel}
@@ -481,7 +484,7 @@
     const pd   = (n) => isFa && window.RealI18N && window.RealI18N.formatNumber
       ? window.RealI18N.formatNumber(n) : n.toLocaleString();
 
-    const rows = SOCIAL_TASKS.map(task => {
+    const rows = SOCIAL_TASKS().map(task => {
       const isDone  = done.includes(task.id);
       const taskUrl = task.url;
       const brand   = PLATFORM_BRAND[task.platform] || {};
@@ -493,8 +496,8 @@
         : '';
 
       const btn = isDone
-        ? `<button class="task-btn task-done" disabled>✓ Claimed</button>`
-        : `<button class="task-btn task-go" data-task-id="${task.id}" data-task-url="${taskUrl || '#'}">Go →</button>`;
+        ? `<button class="task-btn task-done" disabled>${t('task_btn_claimed')}</button>`
+        : `<button class="task-btn task-go" data-task-id="${task.id}" data-task-url="${taskUrl || '#'}">${t('task_btn_go')}</button>`;
 
       return `<article class="card task-row" data-task="${task.id}">
         <span class="task-ico" ${icoStyle}>${task.icon}</span>
@@ -535,18 +538,18 @@
 
     btn.classList.replace('task-go', 'task-pending');
     btn.disabled = true;
-    btn.textContent = 'Wait 10s…';
+    btn.textContent = t('task_btn_wait',{n:10});
 
     let countdown = 10;
     pendingTimers[taskId] = setInterval(() => {
       countdown--;
       if (countdown > 0) {
-        btn.textContent = `Wait ${countdown}s…`;
+        btn.textContent = t('task_btn_wait',{n:countdown});
       } else {
         clearInterval(pendingTimers[taskId]);
         btn.classList.replace('task-pending', 'task-check');
         btn.disabled = false;
-        btn.textContent = 'Verify ✓';
+        btn.textContent = t('task_btn_verify');
         btn.onclick = () => verifyTask(taskId);
       }
     }, 1000);
@@ -562,7 +565,7 @@
       /* Offline credit */
       const done = completedTasks();
       if (!done.includes(taskId)) {
-        const task = SOCIAL_TASKS.find(t => t.id === taskId);
+        const task = SOCIAL_TASKS().find(t => t.id === taskId);
         done.push(taskId);
         setCompletedTasks(done);
         if (window.RealPlayer && task) {
@@ -593,14 +596,14 @@
         showToast('✓ Already claimed — your reward is in your wallet.');
       } else {
         showToast('Could not verify. Try again in a moment.');
-        if (btn) { btn.disabled = false; btn.textContent = 'Verify ✓'; }
+        if (btn) { btn.disabled = false; btn.textContent = t('task_btn_verify'); }
         return;
       }
     } else {
       /* ── Success: grant rewards, persist, notify all views ── */
       setCompletedTasks(data.completed_tasks || []);
 
-      const task      = SOCIAL_TASKS.find(t => t.id === taskId);
+      const task      = SOCIAL_TASKS().find(t => t.id === taskId);
       const rewardReal = data.rewards.real || 0;
       const rewardGems = data.rewards.gems || 0;
       const rewardFarr = data.rewards.farr || 0;
@@ -623,9 +626,9 @@
       const platform = task ? (task.platform || '') : '';
       const taskName = task ? task.label : 'Task';
       const platform_thank = {
-        telegram: 'Following our Telegram channel',
-        x:        'Following us on X',
-        tiktok:   'Following us on TikTok',
+        telegram: t('platform_tg_thanks','Following our Telegram channel'),
+        x:        t('platform_x_thanks','Following us on X'),
+        tiktok:   t('platform_tiktok_thanks','Following us on TikTok'),
         youtube:  'Subscribing to our YouTube',
         dyor:     'Liking our DYOR listing',
       }[platform] || taskName;
@@ -652,7 +655,7 @@
 
     const done = completedTasks();
 
-    const rows = PARTNERS.map(p => {
+    const rows = PARTNERS().map(p => {
       const isDone = done.includes(p.id);
       const rewardParts = [];
       if (p.reward_real) rewardParts.push(`+${p.reward_real} ${RT}`);
@@ -661,7 +664,7 @@
       const rewardLabel = rewardParts.join(' · ');
 
       const btn = isDone
-        ? `<button class="task-btn task-done" disabled>✓ Claimed</button>`
+        ? `<button class="task-btn task-done" disabled>${t('task_btn_claimed')}</button>`
         : `<button class="task-btn task-go" data-partner-id="${p.id}" data-partner-url="${p.url}">Join & Earn</button>`;
 
       return `<article class="card task-row partner-row" data-partner="${p.id}">
@@ -701,18 +704,18 @@
 
     btn.classList.replace('task-go', 'task-pending');
     btn.disabled = true;
-    btn.textContent = 'Wait 10s…';
+    btn.textContent = t('task_btn_wait',{n:10});
 
     let countdown = 10;
     const tid = setInterval(() => {
       countdown--;
       if (countdown > 0) {
-        btn.textContent = `Wait ${countdown}s…`;
+        btn.textContent = t('task_btn_wait',{n:countdown});
       } else {
         clearInterval(tid);
         btn.classList.replace('task-pending', 'task-check');
         btn.disabled = false;
-        btn.textContent = 'Verify ✓';
+        btn.textContent = t('task_btn_verify');
         btn.onclick = () => verifyPartner(partnerId);
       }
     }, 1000);
@@ -727,7 +730,7 @@
     if (!u || !u.id) {
       const done = completedTasks();
       if (!done.includes(partnerId)) {
-        const p = PARTNERS.find(x => x.id === partnerId);
+        const p = PARTNERS().find(x => x.id === partnerId);
         done.push(partnerId);
         setCompletedTasks(done);
         if (window.RealPlayer && p) {
@@ -755,7 +758,7 @@
         showToast('Already claimed!');
       } else {
         showToast('Could not verify. Try again.');
-        if (btn) { btn.disabled = false; btn.textContent = 'Verify ✓'; }
+        if (btn) { btn.disabled = false; btn.textContent = t('task_btn_verify'); }
         return;
       }
     } else {
@@ -766,7 +769,7 @@
         if (data.rewards.farr) window.RealPlayer.addResource('farr', data.rewards.farr);
         if (window.RealSync) window.RealSync.syncBalance();
       }
-      const p = PARTNERS.find(x => x.id === partnerId);
+      const p = PARTNERS().find(x => x.id === partnerId);
       const earned = p ? [
         p.reward_real ? `+${p.reward_real} ${RT}` : '',
         p.reward_gems ? `+${p.reward_gems} 💎` : '',
@@ -930,7 +933,7 @@
     }
 
     const r = data.rewards;
-    const msLabel = ms ? ms.label : '';
+    const msLabel = ms ? t(ms.labelKey, ms.labelKey) : '';
     const earned = [
       r.real ? `+${r.real} ${RT}` : '',
       r.gems ? `+${r.gems} 💎` : '',
@@ -984,7 +987,7 @@
     const svc = window.RealAdService;
     if (!svc) {
       btn.disabled = true;
-      btn.textContent = 'Loading…';
+      btn.textContent = t('loading_text');
       return;
     }
 
@@ -994,7 +997,7 @@
     /* Not configured yet — grey out silently */
     if (!tierCfg || !tierCfg.blockId) {
       btn.disabled = true;
-      btn.textContent = 'Soon';
+      btn.textContent = t('btn_soon');
       if (cdEl) { cdEl.hidden = true; cdEl.textContent = ''; }
       return;
     }
@@ -1002,7 +1005,7 @@
     const remaining = svc.getCooldowns()[tier] || 0;
     if (remaining > 0) {
       btn.disabled = true;
-      btn.textContent = 'Watch';
+      btn.textContent = t('btn_watch');
       if (cdEl) {
         cdEl.hidden = false;
         const mins = Math.floor(remaining / 60);
@@ -1011,7 +1014,7 @@
       }
     } else {
       btn.disabled = false;
-      btn.textContent = 'Watch';
+      btn.textContent = t('btn_watch');
       if (cdEl) { cdEl.hidden = true; cdEl.textContent = ''; }
     }
   };
@@ -1071,7 +1074,7 @@
       btn.addEventListener('click', () => {
         if (!window.RealAdService) { showToast('Ad service not ready.'); return; }
         btn.disabled = true;
-        btn.textContent = 'Loading Ad…';
+        btn.textContent = t('btn_loading_ad');
         window.RealAdService.showAd(tier)
           .then(result => handleAdResult(tier, result))
           .catch(err   => handleAdError(tier, err));

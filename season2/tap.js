@@ -306,7 +306,7 @@
       if (tapCount % 3 === 0) {
         const xp = document.createElement("span");
         xp.className = "xp-label-float";
-        xp.textContent = "+XP";
+        xp.textContent = t("tap_xp_burst","+XP");
         xp.style.left = `${ex + 14}px`;
         xp.style.top  = `${ey - 20}px`;
         coreWrap.appendChild(xp);
@@ -352,7 +352,7 @@
       const origText = btn.getAttribute('data-orig-text') || btn.textContent;
       btn.setAttribute('data-orig-text', origText);
       btn.disabled = true;
-      btn.textContent = isRetry ? 'Connecting to TON Ad-network…' : 'Loading Ad…';
+      btn.textContent = isRetry ? t('btn_connecting_ton') : t('btn_loading_ad');
 
       window.RealAdService.showAd('bronze')
         .then(() => {
@@ -397,12 +397,12 @@
   const setupClaim = () => {
     document.querySelectorAll("[data-action='claim']").forEach((btn) => {
       btn.addEventListener("click", () => {
-        btn.textContent = "Claimed ✓";
+        btn.textContent = t("btn_claimed_check","Claimed ✓");
         btn.disabled = true;
         showToast(t("skin_claimed_toast"));
         if (navigator.vibrate) navigator.vibrate([8, 4, 8]);
         setTimeout(() => {
-          btn.textContent = "Claim ›";
+          btn.textContent = t("btn_claim_arrow","Claim ›");
           btn.disabled = false;
         }, 6000);
       });
@@ -472,7 +472,7 @@
     /* ZAR balance — compact K notation */
     if (balEl) balEl.innerHTML = `<span class="zar-ico">🪙</span> ${fmtCompact(p.zar || 0)}`;
 
-    if (energyEl) energyEl.textContent = p.energy != null ? p.energy : 1000;
+    if (energyEl) energyEl.textContent = fmtNum(p.energy != null ? p.energy : 1000);
     if (fillEl)   fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
 
     const streak = p.dailyStreak || 1;

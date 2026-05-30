@@ -1002,5 +1002,74 @@
       warrior_accepted_toast:"Warrior accepted into the clan!",
       could_not_accept:      "Could not accept. Try again.",
 
+      /* ── Hero cards & economy ── */
+      zar_hr_unit:           "Zar/hr",
+      hero_owned_badge:      "Lv.{n}",
+      hero_zar_subline:      "+{zar} Zar/hr",
+      hero_upgrade_cta:      "↑ Lv.{lvl} · +{delta}/hr · {cost}",
+      hero_buy_cta_label:    "Buy Hero",
+
+      /* ── Daily check-in ── */
+      checkin_day_lbl:       "D{n}",
+      checkin_streak_lbl:    "day streak",
+      checkin_btn_claim:     "Claim Day {n}",
+      checkin_btn_done:      "Come back tomorrow",
+
+      /* ── Social / partner task buttons ── */
+      task_btn_claimed:      "✓ Claimed",
+      task_btn_go:           "Go →",
+      task_btn_wait:         "Wait {n}s…",
+      task_btn_verify:       "Verify ✓",
+
+      /* ── Task reward modal ── */
+      reward_secured_lbl:    "Reward Secured",
+      loyalty_msg:           "{platform} — your loyalty to the Chronicle is rewarded.",
+      platform_tg_thanks:    "Following our Telegram channel",
+      platform_x_thanks:     "Following us on X",
+      platform_tiktok_thanks:"Following us on TikTok",
+      platform_yt_thanks:    "Subscribing to our YouTube channel",
+      platform_dyor_thanks:  "Liking us on DYOR.io",
+
+      /* ── Market status ── */
+      market_dot_live:       "● live",
+      market_dot_stale:      "● stale",
+      market_dot_connecting: "● connecting",
+      market_note_live:      "TON market data · refreshes every 60s",
+      market_note_stale:     "Last known data shown. Reconnecting…",
+      market_note_connecting:"Connecting to TON market data…",
+
+      /* ── Ad / tap buttons ── */
+      btn_loading_ad:        "Loading Ad…",
+      btn_connecting_ton:    "Connecting to TON Ad-network…",
+      btn_soon:              "Soon",
+      btn_claimed_check:     "Claimed ✓",
+      btn_claim_arrow:       "Claim ›",
+      tap_xp_burst:          "+XP",
+
+      /* ── Journey / home page ── */
+      journey_xp_quiz_sub:   "+{xp} {unit} · Quiz",
+      vip_level_tpl:         "VIP {n}",
+
+      /* ── Social tasks (earn page) ── */
+      social_task_channel:   "Follow Official Channel",
+      social_task_community: "Join Persian Community",
+      social_task_x:         "Follow on X",
+      social_task_tiktok:    "Follow REAL Page",
+      social_task_youtube:   "Subscribe to Channel",
+      social_task_dyor:      "Like the DApp on DYOR.io",
+      social_task_tonkeeper: "Tonkeeper Wallet",
+      social_task_blum:      "Blum",
+      social_task_nft:       "REAL NFT — Early Access",
+
+      /* ── Milestones ── */
+      milestone_1k:          "🎁 1,000 REAL + Founder Chest",
+      milestone_3k:          "⚔ 3,000 REAL + Commander Card",
+      milestone_8k:          "🪂 8,000 REAL + Airdrop Multiplier",
+      milestone_25k:         "👑 25,000 REAL + Immortals Badge",
+
+      /* ── Misc ── */
+      r_gems:                "Gems",
+      btn_verify_countdown:  "Wait {n}s…",
+
   };
 })();

@@ -1006,5 +1006,74 @@
       warrior_accepted_toast:"رزمنده به قبیله پذیرفته شد!",
       could_not_accept:      "پذیرش ناموفق بود. دوباره تلاش کنید.",
 
+      /* ── Hero cards & economy ── */
+      zar_hr_unit:           "زر/ساعت",
+      hero_owned_badge:      "سطح {n}",
+      hero_zar_subline:      "+{zar} زر/ساعت",
+      hero_upgrade_cta:      "↑ سطح {lvl} · +{delta}/ساعت · {cost}",
+      hero_buy_cta_label:    "خرید قهرمان",
+
+      /* ── Daily check-in ── */
+      checkin_day_lbl:       "روز {n}",
+      checkin_streak_lbl:    "روز متوالی",
+      checkin_btn_claim:     "دریافت روز {n}",
+      checkin_btn_done:      "فردا برگردید",
+
+      /* ── Social / partner task buttons ── */
+      task_btn_claimed:      "✓ دریافت شد",
+      task_btn_go:           "برو ›",
+      task_btn_wait:         "صبر {n}ث…",
+      task_btn_verify:       "تأیید ✓",
+
+      /* ── Task reward modal ── */
+      reward_secured_lbl:    "پاداش دریافت شد",
+      loyalty_msg:           "{platform} — وفاداری شما به شاهنامه پاداش داده شد.",
+      platform_tg_thanks:    "دنبال کردن کانال تلگرام ما",
+      platform_x_thanks:     "دنبال کردن ما در X",
+      platform_tiktok_thanks:"دنبال کردن ما در TikTok",
+      platform_yt_thanks:    "اشتراک در یوتیوب ما",
+      platform_dyor_thanks:  "لایک ما در DYOR.io",
+
+      /* ── Market status ── */
+      market_dot_live:       "● زنده",
+      market_dot_stale:      "● قدیمی",
+      market_dot_connecting: "● در حال اتصال",
+      market_note_live:      "داده‌های بازار TON · هر ۶۰ ثانیه بروز",
+      market_note_stale:     "آخرین داده‌های شناخته‌شده. در حال اتصال مجدد…",
+      market_note_connecting:"در حال اتصال به بازار TON…",
+
+      /* ── Ad / tap buttons ── */
+      btn_loading_ad:        "تبلیغ بارگذاری می‌شود…",
+      btn_connecting_ton:    "در حال اتصال به شبکه تبلیغات TON…",
+      btn_soon:              "به زودی",
+      btn_claimed_check:     "دریافت شد ✓",
+      btn_claim_arrow:       "دریافت ›",
+      tap_xp_burst:          "+تجربه",
+
+      /* ── Journey / home page ── */
+      journey_xp_quiz_sub:   "+{xp} {unit} · آزمون",
+      vip_level_tpl:         "VIP {n}",
+
+      /* ── Social tasks (earn page) ── */
+      social_task_channel:   "دنبال کردن کانال رسمی",
+      social_task_community: "پیوستن به جامعه فارسی",
+      social_task_x:         "دنبال کردن در X",
+      social_task_tiktok:    "دنبال کردن صفحه ریال",
+      social_task_youtube:   "اشتراک در کانال",
+      social_task_dyor:      "لایک کردن DApp در DYOR.io",
+      social_task_tonkeeper: "کیف پول Tonkeeper",
+      social_task_blum:      "Blum",
+      social_task_nft:       "ریال NFT — دسترسی زودهنگام",
+
+      /* ── Milestones ── */
+      milestone_1k:          "🎁 ۱٬۰۰۰ ریال + صندوقچه بنیان‌گذار",
+      milestone_3k:          "⚔ ۳٬۰۰۰ ریال + کارت فرمانده",
+      milestone_8k:          "🪂 ۸٬۰۰۰ ریال + ضریب ایردراپ",
+      milestone_25k:         "👑 ۲۵٬۰۰۰ ریال + نشان جاودانگان",
+
+      /* ── Misc ── */
+      r_gems:                "جواهر",
+      btn_verify_countdown:  "صبر {n}ث…",
+
   };
 })();

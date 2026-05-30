@@ -27,13 +27,18 @@
   const chartEl     = card.querySelector("[data-market-chart]");
   const noteEl      = card.querySelector("[data-market-note]");
 
+  const t = (k, fb) => (window.RealI18N && window.RealI18N.t(k)) || fb || k;
+
   const setStatus = (state, msg) => {
     card.dataset.state = state;
-    if (statusEl) statusEl.textContent = state === "live" ? "● live" : state === "stale" ? "● stale" : "● connecting";
-    if (noteEl)   noteEl.textContent   = msg || (
-      state === "live" ? "TON market data · refreshes every 60s" :
-      state === "stale" ? "Last known data shown. Reconnecting…" :
-      "Connecting to TON market data…"
+    if (statusEl) statusEl.textContent =
+      state === "live"   ? t("market_dot_live",       "● live") :
+      state === "stale"  ? t("market_dot_stale",      "● stale") :
+                           t("market_dot_connecting",  "● connecting");
+    if (noteEl) noteEl.textContent = msg || (
+      state === "live"   ? t("market_note_live",       "TON market data · refreshes every 60s") :
+      state === "stale"  ? t("market_note_stale",      "Last known data shown. Reconnecting…") :
+                           t("market_note_connecting", "Connecting to TON market data…")
     );
   };
 
