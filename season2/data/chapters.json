@@ -23,7 +23,8 @@
         "gems": 5,
         "hero_fragments": {
           "rostam": 1
-        }
+        },
+        "farr": 1
       },
       "status": "available",
       "required_previous_chapter": null,
@@ -48,7 +49,8 @@
         "gems": 5,
         "hero_fragments": {
           "fereydun": 1
-        }
+        },
+        "farr": 1
       },
       "status": "available",
       "required_previous_chapter": "keyumars",
@@ -73,7 +75,8 @@
         "gems": 8,
         "hero_fragments": {
           "fereydun": 1
-        }
+        },
+        "farr": 1
       },
       "status": "available",
       "required_previous_chapter": "hushang",
@@ -98,7 +101,8 @@
         "gems": 10,
         "hero_fragments": {
           "zahhak": 1
-        }
+        },
+        "farr": 2
       },
       "status": "available",
       "required_previous_chapter": "tahmuras",
@@ -123,7 +127,8 @@
         "gems": 12,
         "hero_fragments": {
           "kaveh": 1
-        }
+        },
+        "farr": 2
       },
       "status": "available",
       "required_previous_chapter": "jamshid",
@@ -148,7 +153,8 @@
         "gems": 14,
         "hero_fragments": {
           "fereydun": 2
-        }
+        },
+        "farr": 2
       },
       "status": "available",
       "required_previous_chapter": "zahhak",
@@ -170,7 +176,8 @@
         "xp": 280,
         "real": 110,
         "energy": 55,
-        "gems": 6
+        "gems": 6,
+        "farr": 2
       },
       "status": "available",
       "required_previous_chapter": "fereydun",

@@ -163,6 +163,7 @@
       const r = (meta && meta.rewards) || {};
       const pills = [];
       if (r.xp)    pills.push(`<span class="reward-pill">+${fmtNum(r.xp)} ${tr("r_xp")}</span>`);
+      if (r.farr)  pills.push(`<span class="reward-pill gold">+${fmtNum(r.farr)} ✦ ${tr("r_farr")}</span>`);
       if (r.real)  pills.push(`<span class="reward-pill gold">+${fmtNum(r.real)} <i class="real-coin"></i>REAL</span>`);
       if (r.energy)pills.push(`<span class="reward-pill"><i class="s2-icon energy"></i>+${fmtNum(r.energy)}</span>`);
       if (r.gems)  pills.push(`<span class="reward-pill"><i class="s2-icon gems"></i>+${fmtNum(r.gems)}</span>`);
@@ -460,10 +461,29 @@
       const parts = [
         r.xp    ? `+${fmtNum(r.xp)} XP`    : "",
         r.gems  ? `+${fmtNum(r.gems)} 💎`  : "",
+        r.farr  ? `+${fmtNum(r.farr)} ✦ Farr` : "",
         r.real  ? `+${fmtNum(r.real)} REAL` : "",
       ].filter(Boolean);
       if (parts.length) toast(`⚔ Chapter Rewards: ${parts.join(" · ")}`);
     } catch {}
+  };
+
+  /* Grant farr for completing a quiz tier — idempotent per tier per chapter */
+  const FARR_PER_TIER = { easy: 0, medium: 1, hard: 2 };
+
+  const grantTierFarr = (tier) => {
+    const farr = FARR_PER_TIER[tier] || 0;
+    if (!farr) return;
+    const key = `real_quiz_farr_granted_${SLUG}_${tier}`;
+    try { if (localStorage.getItem(key) === "1") return; } catch {}
+    if (window.RealPlayer) {
+      window.RealPlayer.addResource("farr", farr);
+      try { localStorage.setItem(key, "1"); } catch {}
+      try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
+      try { window.dispatchEvent(new CustomEvent("shahnama:state_sync",
+        { detail: window.RealPlayer.get() })); } catch {}
+      toast(`✦ +${farr} Farr — ${tier === "hard" ? "Mastery" : "Scholar"} reward`);
+    }
   };
 
   /* ---------- quiz ---------- */
@@ -563,6 +583,8 @@
       /* Tier mastered screen (no replay) */
       if (tp.done) {
         if (activeTier === "easy") { grantQuizRewards(lore); paintBattle(lore); }
+        /* Catch-up farr grant for tiers already done before this was implemented */
+        grantTierFarr(activeTier);
 
         const totalReward = qs.reduce((acc, q) => {
           acc.xp   += (q.reward && q.reward.xp)   || 0;
@@ -678,6 +700,8 @@
                   if (progress.quiz.hard) progress.quiz.hard.locked = false;
                   saveProgress();
                 }
+                /* Grant tier-based farr after any tier completes */
+                grantTierFarr(activeTier);
                 if (progEl) progEl.textContent = `${fmtNum(qs.length)} / ${fmtNum(qs.length)}`;
               } else {
                 tp.idx = next;
@@ -912,13 +936,36 @@
       });
     });
 
-    if ((retroXp || retroReal) && window.RealPlayer) {
-      if (retroXp)  window.RealPlayer.addResource("xp",  retroXp);
-      if (retroReal) window.RealPlayer.addResource("real", retroReal);
+    // Farr owed from completed quiz tiers (retroactive for tiers done before farr was implemented)
+    let retroFarr = 0;
+    ["easy", "medium", "hard"].forEach((tier) => {
+      const tp = progress.quiz && progress.quiz[tier];
+      if (!tp || !tp.done) return;
+      const farrKey = `real_quiz_farr_granted_${SLUG}_${tier}`;
+      if (localStorage.getItem(farrKey) !== "1") {
+        retroFarr += FARR_PER_TIER[tier] || 0;
+        try { localStorage.setItem(farrKey, "1"); } catch {}
+      }
+    });
+
+    // Chapter completion farr (retroactive)
+    const chapterFarrKey = `real_chapter_farr_retro_${SLUG}`;
+    if (localStorage.getItem(`real_chapter_rewards_done_${SLUG}`) === "1"
+        && localStorage.getItem(chapterFarrKey) !== "1"
+        && _chapterMeta && _chapterMeta.rewards && _chapterMeta.rewards.farr) {
+      retroFarr += _chapterMeta.rewards.farr;
+      try { localStorage.setItem(chapterFarrKey, "1"); } catch {}
+    }
+
+    if ((retroXp || retroReal || retroFarr) && window.RealPlayer) {
+      if (retroXp)   window.RealPlayer.addResource("xp",   retroXp);
+      if (retroReal) window.RealPlayer.addResource("real",  retroReal);
+      if (retroFarr) window.RealPlayer.addResource("farr",  retroFarr);
       try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
       const parts = [
-        retroXp   ? `+${fmtNum(retroXp)} XP`     : "",
-        retroReal ? `+${fmtNum(retroReal)} REAL`  : "",
+        retroXp   ? `+${fmtNum(retroXp)} XP`       : "",
+        retroFarr ? `+${fmtNum(retroFarr)} ✦ Farr` : "",
+        retroReal ? `+${fmtNum(retroReal)} REAL`    : "",
       ].filter(Boolean);
       if (parts.length) toast(`⚔ Rewards restored: ${parts.join(" · ")}`);
     }
