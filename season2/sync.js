@@ -95,15 +95,17 @@
       window.RealPlayer.set({
         userId:      su.telegram_id,
         level:       su.level        || 1,
-        xp:          su.xp          || 0,
-        farr:        su.farr        || 0,
-        zar:         Math.max(serverZar, local.zar     || 0),
-        gems:        su.gems        || 0,
+        xp:          Math.max(su.xp || 0, local.xp || 0),
+        farr:        Math.max(su.farr || 0, local.farr || 0),
+        zar:         Math.max(serverZar, local.zar || 0),
+        gems:        Math.max(su.gems || 0, local.gems || 0),
         balance:     Math.max(su.real_balance || 0, local.balance || 0),
         energy:      su.current_energy != null ? su.current_energy : 1000,
         energyMax:   su.energy_max   || 1000,
         dailyStreak: su.daily_streak || 1,
       });
+      // Notify all pages that authoritative balances have landed
+      try { window.dispatchEvent(new CustomEvent('balanceUpdate')); } catch (_) {}
       // Push corrected balance back to server immediately
       syncBalance();
     }

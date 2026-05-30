@@ -533,13 +533,19 @@
 
     /* ── Reactive event listeners ── */
 
-    /* 1. Bfcache restore (back-navigation after swap on another page) */
+    /* 1. Bfcache restore — restore ALL resources, not just balance+zar */
     window.addEventListener("pageshow", (e) => {
       if (e.persisted) {
         try {
           const ls = JSON.parse(localStorage.getItem("real_player_state_v1") || "{}");
           if (window.RealPlayer && window.RealPlayer.set) {
-            window.RealPlayer.set({ balance: ls.balance || 0, zar: ls.zar || 0 });
+            window.RealPlayer.set({
+              balance: ls.balance || 0,
+              zar:     ls.zar     || 0,
+              xp:      ls.xp      || 0,
+              farr:    ls.farr    || 0,
+              gems:    ls.gems    || 0,
+            });
           }
         } catch {}
       }
@@ -549,8 +555,14 @@
       updateJourneyCard(null);
     });
 
-    /* 2. Balance updated from another component (swap, hero buy, etc.) */
+    /* 2. Balance updated from another component (swap, hero buy, scene read, quiz, etc.) */
     window.addEventListener("balanceUpdate", () => {
+      refreshTreasury();
+      hydrateProfile();
+    });
+
+    /* 2b. Player.set() state-sync — catches xp/farr/gems/balance changes in this tab */
+    window.addEventListener("shahnama:state_sync", () => {
       refreshTreasury();
       hydrateProfile();
     });

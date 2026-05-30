@@ -116,23 +116,14 @@
 
   /* ── Render REAL balance card ─────────────────────────────────────────── */
   const renderBalanceCard = (u) => {
-    const amountEl   = document.getElementById('rbc-amount');
-    const bonusEl    = document.getElementById('rbc-clan-bonus');
+    const amountEl = document.getElementById('rbc-amount');
+    const bonusEl  = document.getElementById('rbc-clan-bonus');
 
-    /* Use the higher of API value and local Player state to guard against
-       a stale-zero DB value overriding client-side earned balance. */
-    const localBal  = (window.RealPlayer && window.RealPlayer.get)
-      ? (window.RealPlayer.get().balance || 0) : 0;
-    const displayBal = Math.max(u.real_balance || 0, localBal);
+    const local      = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
+    const displayBal = Math.max(u.real_balance || 0, local.balance || 0);
     if (amountEl) amountEl.textContent = fmtN(displayBal) + ' REAL';
 
-    if (bonusEl) {
-      if (u.clan_id) {
-        bonusEl.style.display = '';
-      } else {
-        bonusEl.style.display = 'none';
-      }
-    }
+    if (bonusEl) bonusEl.style.display = u.clan_id ? '' : 'none';
   };
 
   /* ── Inviter attribution ─────────────────────────────────────────────── */
@@ -203,8 +194,11 @@
     const el = document.getElementById('stats-grid');
     if (!el) return;
 
+    /* Prefer the higher of server and local for values that update client-side
+       (XP from scene reads / quiz answers sync every 30 s; local is always current) */
+    const local  = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
     const level  = u.level || 1;
-    const xpCurr = u.xp || 0;
+    const xpCurr = Math.max(u.xp || 0, local.xp || 0);
     const inClan = !!(u.clan_id);
 
     const stats = [
@@ -257,22 +251,33 @@
     if (nameEl)   nameEl.textContent = name;
     if (avatarEl) avatarEl.textContent = name.charAt(0).toUpperCase();
 
+    /* Prefer live Player state over raw localStorage snapshot */
+    const liveP  = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
     const localP = (() => {
       try { return JSON.parse(localStorage.getItem('real_player_state_v1') || '{}'); } catch { return {}; }
     })();
+    const mergedP = {
+      balance:     Math.max(liveP.balance || 0, localP.balance || 0),
+      xp:          Math.max(liveP.xp      || 0, localP.xp      || 0),
+      zar:         Math.max(liveP.zar     || 0, localP.zar     || 0),
+      farr:        Math.max(liveP.farr    || 0, localP.farr    || 0),
+      gems:        Math.max(liveP.gems    || 0, localP.gems    || 0),
+      level:       liveP.level       || localP.level       || 1,
+      dailyStreak: liveP.dailyStreak || localP.dailyStreak || 1,
+      referrals:   liveP.referrals   || localP.referrals   || 0,
+    };
 
-    if (amountEl) amountEl.textContent = fmtN(localP.balance || 0) + ' REAL';
+    if (amountEl) amountEl.textContent = fmtN(mergedP.balance) + ' REAL';
 
-    /* Local mining rate from heroes.js localStorage key */
     const zarHr = Number(localStorage.getItem('real_total_zar_hr') || 0);
-    startMiningCounter({ total_zar: localP.zar || 0, zar_per_minute: zarHr / 60, zar_per_hour: zarHr });
+    startMiningCounter({ total_zar: mergedP.zar, zar_per_minute: zarHr / 60, zar_per_hour: zarHr });
 
     if (statsEl) {
       const stats = [
-        { ico: '⭐', lbl: t('stat_xp_lbl'),      val: fmtN(localP.xp || 0) },
-        { ico: '🏆', lbl: t('stat_level_lbl'),    val: t('stat_level_val', { n: isFa() ? pd(localP.level || 1) : (localP.level || 1) }) },
-        { ico: '🔥', lbl: t('stat_daily_lbl'),    val: t('stat_daily_val', { n: isFa() ? pd(localP.dailyStreak || 1) : (localP.dailyStreak || 1) }) },
-        { ico: '👥', lbl: t('stat_warriors_lbl'), val: isFa() ? pd(localP.referrals || 0) : String(localP.referrals || 0) },
+        { ico: '⭐', lbl: t('stat_xp_lbl'),      val: fmtN(mergedP.xp) },
+        { ico: '🏆', lbl: t('stat_level_lbl'),    val: t('stat_level_val', { n: isFa() ? pd(mergedP.level) : mergedP.level }) },
+        { ico: '🔥', lbl: t('stat_daily_lbl'),    val: t('stat_daily_val', { n: isFa() ? pd(mergedP.dailyStreak) : mergedP.dailyStreak }) },
+        { ico: '👥', lbl: t('stat_warriors_lbl'), val: isFa() ? pd(mergedP.referrals) : String(mergedP.referrals) },
       ];
       statsEl.innerHTML = stats.map(s => `
         <div class="stat-card">
@@ -284,19 +289,35 @@
 
     if (badgeEl) {
       const cachedMaxBal = Number(localStorage.getItem('real_max_real_balance') || 0);
-      const fakeUser = {
-        xp: localP.xp || 0,
-        real_balance: localP.balance || 0,
-        max_real_balance: Math.max(cachedMaxBal, localP.balance || 0),
-        level: localP.level || 1,
-        daily_streak: localP.dailyStreak || 1,
-        verified_referral_count: localP.referrals || 0,
+      renderBadges({
+        xp: mergedP.xp,
+        real_balance: mergedP.balance,
+        max_real_balance: Math.max(cachedMaxBal, mergedP.balance),
+        level: mergedP.level,
+        daily_streak: mergedP.dailyStreak,
+        verified_referral_count: mergedP.referrals,
         last_checkin_date: '',
         clan_id: '',
-      };
-      renderBadges(fakeUser);
+      });
     }
     renderInviter();
+
+    /* Re-render when balances change in this session */
+    const liveRefreshFallback = () => {
+      const p = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
+      if (amountEl) amountEl.textContent = fmtN(p.balance || 0) + ' REAL';
+      if (statsEl) {
+        const s = [
+          { ico: '⭐', lbl: t('stat_xp_lbl'),     val: fmtN(p.xp || 0) },
+          { ico: '🏆', lbl: t('stat_level_lbl'),   val: t('stat_level_val', { n: isFa() ? pd(p.level || 1) : (p.level || 1) }) },
+          { ico: '🔥', lbl: t('stat_daily_lbl'),   val: t('stat_daily_val', { n: isFa() ? pd(p.dailyStreak || 1) : (p.dailyStreak || 1) }) },
+          { ico: '👥', lbl: t('stat_warriors_lbl'), val: isFa() ? pd(p.referrals || 0) : String(p.referrals || 0) },
+        ];
+        statsEl.innerHTML = s.map(x => `<div class="stat-card"><span class="stat-ico">${x.ico}</span><span class="stat-val">${x.val}</span><span class="stat-lbl">${x.lbl}</span></div>`).join('');
+      }
+    };
+    window.addEventListener('balanceUpdate',       liveRefreshFallback);
+    window.addEventListener('shahnama:state_sync', liveRefreshFallback);
   };
 
   /* ── Main load ────────────────────────────────────────────────────────── */
@@ -339,6 +360,15 @@
     renderStats(u);
     renderBadges(u);
     renderInviter();
+
+    /* Live refresh — re-render balance + stats whenever Player state changes
+       in this tab (scene reads, quiz answers, swap, server sync landing). */
+    const liveRefresh = () => {
+      renderBalanceCard(u);
+      renderStats(u);
+    };
+    window.addEventListener('balanceUpdate',       liveRefresh);
+    window.addEventListener('shahnama:state_sync', liveRefresh);
   };
 
   if (document.readyState === 'loading') {
