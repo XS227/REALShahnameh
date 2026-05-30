@@ -3489,7 +3489,22 @@ body::after {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: border-color 0.25s, box-shadow 0.25s;
+  overflow: hidden;
 }
+.tl-cover {
+  margin: -13px -14px 12px;
+  width: calc(100% + 28px);
+  height: 140px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: var(--r-md) var(--r-md) 0 0;
+  opacity: 0.88;
+  transition: opacity 0.25s;
+}
+.tl-node.locked .tl-cover { opacity: 0.3; filter: grayscale(0.6); }
+.tl-node.unlocked .tl-cover { opacity: 0.9; }
+.tl-node.completed .tl-cover { opacity: 1; }
 .tl-node.unlocked .tl-card {
   border-color: rgba(244,197,107,.2);
 }

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>Ancient Timeline · REAL Shahnameh</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605303300" />
+  <link rel="stylesheet" href="style.css?v=202605303400" />
 </head>
 <body>
 <main class="app">
@@ -115,6 +115,7 @@
   const NODES = [
     {
       id: "keyumars", chapter: 1,
+      image: "/assets/images/chapters/chapter-1-keyumars-cover.png",
       era: "~7000 BC", title: "Keyumars",
       subtitle: "The First King",
       lore: "From the mountains of Pars, Keyumars rules a world still soft with dawn. He clothes himself in leopard skin and the beasts bow at his feet. Civilization begins with him.",
@@ -124,6 +125,7 @@
     },
     {
       id: "hushang", chapter: 2,
+      image: "/season2/uploads/chapters/hushang.png",
       era: "~6900 BC", title: "Hushang",
       subtitle: "The Spark of Fire",
       lore: "Hushang strikes flint at a serpent and instead wakes the eternal flame. From this moment, civilization learns warmth, smelting, and the festival of Sadeh.",
@@ -133,6 +135,7 @@
     },
     {
       id: "tahmuras", chapter: 3,
+      image: "/season2/uploads/chapters/tahmuras.png",
       era: "~6000 BC", title: "Tahmuras",
       subtitle: "Binder of Demons",
       lore: "Tahmuras the Div-band rides through smoke and chains the demons. They beg for life and trade their secret: the art of writing.",
@@ -142,6 +145,7 @@
     },
     {
       id: "jamshid", chapter: 4,
+      image: "/season2/uploads/chapters/jamshid.png",
       era: "~5500 BC", title: "Jamshid",
       subtitle: "The Golden Throne",
       lore: "Jamshid divides the people into four crafts and sits upon a kingdom of crystal. Seven hundred years of greatness — until pride outshines the sun and Farr departs.",
@@ -151,6 +155,7 @@
     },
     {
       id: "zahhak", chapter: 5,
+      image: "/season2/uploads/chapters/zahhak.png",
       era: "~5000 BC", title: "Zahhak",
       subtitle: "The Serpent King",
       lore: "Two serpents grow from Zahhak's shoulders, each fed on human brains. A thousand years of darkness grip the world until a blacksmith raises his apron as a banner of revolt.",
@@ -160,6 +165,7 @@
     },
     {
       id: "fereydun", chapter: 6,
+      image: "/season2/uploads/chapters/fereydun.png",
       era: "~4500 BC", title: "Fereydun",
       subtitle: "The Liberator",
       lore: "Kaveh the blacksmith raises his leather apron as a banner. Fereydun's bull-headed mace shatters a tyrant. The world breathes again.",
@@ -169,6 +175,7 @@
     },
     {
       id: "manuchehr", chapter: 7,
+      image: "/season2/uploads/chapters/manuchehr.png",
       era: "~4000 BC", title: "Manuchehr",
       subtitle: "The Third Dynasty",
       lore: "Manuchehr establishes the Pishdadian order after Fereydun divides the world among his sons. War between brothers shapes the era.",
@@ -178,6 +185,7 @@
     },
     {
       id: "nozar", chapter: 8,
+      image: "/season2/uploads/chapters/nozar.png",
       era: "~3800 BC", title: "Nozar",
       subtitle: "The Weak King",
       lore: "Nozar inherits the throne but not the Farr. His weak rule opens the door for Afrasiab of Turan — the great enemy from beyond the Oxus.",
@@ -187,6 +195,7 @@
     },
     {
       id: "zal", chapter: 9,
+      image: "/season2/uploads/chapters/zal.png",
       era: "~2500 BC", title: "Zal",
       subtitle: "The Albino Prince",
       lore: "Born white-haired and cast to Mount Alborz, Zal is raised by the great Simorgh. He returns to Pars on wings of myth, carrying wisdom older than the kingdom.",
@@ -196,6 +205,7 @@
     },
     {
       id: "rostam", chapter: 10,
+      image: "/season2/uploads/chapters/rostam.png",
       era: "~2000 BC", title: "Rostam",
       subtitle: "Champion of Pars",
       lore: "Seven labours, one horse named Rakhsh, no equal under the sky. Rostam becomes the world's pillar — and bears the heaviest burden any hero has ever carried.",
@@ -299,6 +309,7 @@
       div.innerHTML = `
         <div class="tl-dot">${dotContent}</div>
         <div class="tl-card">
+          ${node.image ? `<img class="tl-cover" src="${node.image}" alt="${node.title}" loading="lazy" onerror="this.style.display='none'">` : ""}
           <span class="tl-status-chip">${statusLabel}</span>
           <div class="tl-era">${node.era}</div>
           <div class="tl-title">${node.title} <span style="font-weight:500; font-size:12px; color:var(--muted);">· ${node.subtitle}</span></div>
