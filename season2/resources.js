@@ -109,7 +109,7 @@
     `).join("");
     const realCell = `
       <div class="r-cell-real" data-resource-cell="real">
-        <span class="r-real-token-badge" aria-hidden="true"><svg class="real-tok-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22"><defs><linearGradient id="rg-real-tok" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f4c56b"/><stop offset="55%" stop-color="#a078ff"/><stop offset="100%" stop-color="#4ad8a6"/></linearGradient></defs><polygon points="11,2 19.5,6.5 19.5,15.5 11,20 2.5,15.5 2.5,6.5" fill="url(#rg-real-tok)" opacity=".92"/><polygon points="11,5.5 16.5,8.5 16.5,13.5 11,16.5 5.5,13.5 5.5,8.5" fill="none" stroke="rgba(255,255,255,.3)" stroke-width=".6"/><circle cx="11" cy="11" r="1.6" fill="rgba(255,255,255,.7)"/></svg></span>
+        <span class="r-real-token-badge" aria-hidden="true"><img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" style="width:22px;height:22px;vertical-align:middle;" onerror="this.outerHTML='◆'"></span>
         <span class="r-real-amt" data-resource-amt="real">${formatN(read("real"))}</span>
         <span class="r-real-lbl">${escapeHtml(label("real"))}</span>
         <span class="r-real-chain" aria-hidden="true">TON</span>
