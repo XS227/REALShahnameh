@@ -5163,6 +5163,17 @@ body::after {
   border-top: 1px solid var(--border);
   padding-top: 10px;
 }
+.clan-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+.clan-stat-ico  { font-size: 14px; }
+.clan-stat-val  { font-size: 13px; font-weight: 700; color: var(--text); }
+.clan-stat-lbl  { font-size: 10px; color: var(--muted); text-align: center; }
+.clan-leader-tag { font-size: 10px; color: var(--gold); }
 .clan-create-cta {
   display: flex;
   align-items: center;

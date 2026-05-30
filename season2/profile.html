@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Profile</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605270300" />
+  <link rel="stylesheet" href="style.css?v=202605301700" />
 </head>
 <body>
   <main class="app">
@@ -82,6 +82,15 @@
       <!-- populated by profile.js -->
     </div>
 
+    <!-- Clan -->
+    <div class="section-head" style="margin-top:18px;">
+      <h3 data-i18n="your_clan_header">Your Clan</h3>
+    </div>
+    <article id="profile-clan-card" class="card clan-cta-card">
+      <!-- populated by profile.js renderClan() -->
+      <div style="color:var(--muted);font-size:12px;padding:8px 0;">Loading…</div>
+    </article>
+
     <!-- Achievements -->
     <div class="section-head" style="margin-top:18px;"><h3 data-i18n="profile_achievements">Achievements</h3></div>
     <div class="badge-grid" id="badge-grid">
@@ -109,6 +118,6 @@
   <script src="utils.js?v=202605262100"></script>
   <script src="audio.js?v=202605270300"></script>
   <script src="sync.js?v=202605301500"></script>
-  <script src="profile.js?v=202605301500"></script>
+  <script src="profile.js?v=202605301700"></script>
 </body>
 </html>
