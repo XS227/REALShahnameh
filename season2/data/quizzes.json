@@ -1,55 +1,144 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-10T01:30:00Z",
+  "updatedAt": "2026-05-30T00:00:00Z",
   "quizzes": [
     {
-      "id": "keyumars-1",
+      "id": "keyumars-p1",
       "chapter_slug": "keyumars",
       "quiz_part": 1,
-      "question": "What does Keyumars wear as his royal mantle?",
-      "answers": ["Lion mane", "Leopard skin", "Eagle feathers", "Iron mail"],
-      "correct_answer": 1,
-      "explanation": "Ferdowsi describes Keyumars wrapped in leopard skin while the beasts bow at his feet.",
-      "reward": { "xp": 60, "real": 20 },
       "difficulty": "easy",
-      "question_fa": "کیومرث چه چیزی را به عنوان ردای شاهی می‌پوشد؟",
-      "question_tg": "Каюмарс чиро ба ҳайси ридои шоҳӣ мепӯшад?",
-      "answers_fa": ["یال شیر", "پوست پلنگ", "پرهای عقاب", "زره آهنی"],
-      "answers_tg": ["Яли шер", "Пӯсти паланг", "Парҳои уқоб", "Зиреҳи оҳин"],
-      "explanation_fa": "فردوسی کیومرث را در پوست پلنگ توصیف می‌کند در حالی که حیوانات در برابرش سجده می‌کنند.",
-      "explanation_tg": "Фирдавсӣ Каюмарсро дар пӯсти паланг тавсиф мекунад дар ҳоле ки ҷонварон дар назди ӯ саҷда мекунанд."
+      "question": "What is the very first thing Ferdowsi praises at the opening of the Shahnameh?",
+      "question_fa": "نخستین چیزی که فردوسی در آغازِ شاهنامه می‌ستاید چیست؟",
+      "question_tg": "Аввалин чизе ки Фирдавсӣ дар оғози Шоҳнома мемӯяд чист?",
+      "answers": [
+        "A great king of Pars",
+        "God of Soul and Wisdom",
+        "The sacred fire",
+        "The mountain of Damavand"
+      ],
+      "answers_fa": [
+        "شاهِ بزرگِ پارس",
+        "خداوندِ جان و خرد",
+        "آتشِ مقدس",
+        "کوهِ دماوند"
+      ],
+      "answers_tg": [
+        "Шоҳи бузурги Порс",
+        "Худованди ҷон ва хирад",
+        "Оташи муқаддас",
+        "Кӯҳи Дамованд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh opens 'به نام خداوند جان و خرد' — In the name of God of Soul and Wisdom. Before any king or battle, Ferdowsi places God, soul, and reason first.",
+      "explanation_fa": "شاهنامه با «به نامِ خداوندِ جان و خرد» آغاز می‌شود. فردوسی پیش از هر شاه و نبردی، خداوند، جان و خرد را در اولویت قرار می‌دهد.",
+      "explanation_tg": "Шоҳнома бо «Ба номи Худованди ҷон ва хирад» оғоз мешавад. Пеш аз ҳар шоҳ ва набард, Фирдавсӣ Худо, ҷон ва хирадро дар авлавият мегузорад.",
+      "reward": {
+        "xp": 60,
+        "real": 20
+      }
     },
     {
-      "id": "keyumars-2",
+      "id": "keyumars-p2",
       "chapter_slug": "keyumars",
       "quiz_part": 2,
-      "question": "Who is Keyumars's son who falls to a demon?",
-      "answers": ["Hushang", "Tahmuras", "Siyamak", "Jamshid"],
-      "correct_answer": 2,
-      "explanation": "Siyamak falls to the black demon Khazura before Hushang avenges him.",
-      "reward": { "xp": 80, "real": 30 },
       "difficulty": "easy",
-      "question_fa": "پسر کیومرث که به دست دیو کشته می‌شود کیست؟",
-      "question_tg": "Писари Каюмарс, ки ба дасти дев меафтад, кист?",
-      "answers_fa": ["هوشنگ", "طهمورث", "سیامک", "جمشید"],
-      "answers_tg": ["Ҳушанг", "Таҳмурас", "Сиёмак", "Ҷамшид"],
-      "explanation_fa": "سیامک به دست دیو سیاه خزورا کشته می‌شود، پیش از اینکه هوشنگ انتقامش را بگیرد.",
-      "explanation_tg": "Сиёмак ба дасти Диви Сиёҳи Хазура меафтад, пеш аз он ки Ҳушанг интиқоми ӯро гирад."
+      "question": "What does 'Kherad' (خرد) mean in Ferdowsi's opening verse?",
+      "question_fa": "«خرد» در بیتِ آغازینِ فردوسی چه معنایی دارد؟",
+      "question_tg": "«Хирад» дар байти оғозинии Фирдавсӣ чӣ маъно дорад?",
+      "answers": [
+        "Sacred fire",
+        "Wisdom / intellect",
+        "Royal honor",
+        "Divine light"
+      ],
+      "answers_fa": [
+        "آتشِ مقدس",
+        "خرد / عقل",
+        "شرفِ شاهانه",
+        "نورِ الهی"
+      ],
+      "answers_tg": [
+        "Оташи муқаддас",
+        "Хирад / ақл",
+        "Шарафи шоҳона",
+        "Нури илоҳӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "Kherad means wisdom or intellect — the faculty Ferdowsi prizes above all others. He calls it the true crown of humanity, superior to wealth, rank, or physical strength.",
+      "explanation_fa": "خرد یعنی حکمت یا عقل — همان صفتی که فردوسی بر همه چیز ترجیح می‌دهد. آن را تاجِ واقعیِ بشریت می‌نامد که برتر از ثروت، مقام و قدرتِ جسمانی است.",
+      "explanation_tg": "Хирад яъне ҳикмат ё ақл — ҳамон сифате ки Фирдавсӣ онро аз ҳама чиз бартар медонад. Онро тоҷи воқеии башарият меномад, ки аз сарват, мақом ва қудрати ҷисмонӣ бартар аст.",
+      "reward": {
+        "xp": 70,
+        "real": 25
+      }
+    },
+    {
+      "id": "keyumars-p3",
+      "chapter_slug": "keyumars",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "According to the Shahnameh's cosmology, what was separated at the moment of Creation?",
+      "question_fa": "بر اساسِ کیهان‌شناسیِ شاهنامه، در لحظه‌ی آفرینش چه چیزی جدا شد؟",
+      "question_tg": "Тибқи космологияи Шоҳнома, дар лаҳзаи офариниш чӣ ҷудо шуд?",
+      "answers": [
+        "Gold from iron",
+        "Light from darkness",
+        "Water from stone",
+        "Man from beast"
+      ],
+      "answers_fa": [
+        "زر از آهن",
+        "روشنایی از تاریکی",
+        "آب از سنگ",
+        "انسان از حیوان"
+      ],
+      "answers_tg": [
+        "Тилло аз оҳан",
+        "Рӯшноӣ аз торикӣ",
+        "Об аз санг",
+        "Инсон аз ҳайвон"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh describes the primordial separation of light and darkness as the foundation of all creation — the first act through which the world took on shape and meaning.",
+      "explanation_fa": "شاهنامه جداشدنِ ازلیِ روشنایی از تاریکی را بنیانِ همه‌ی آفرینش توصیف می‌کند — نخستین عملی که جهان از آن شکل و معنا گرفت.",
+      "explanation_tg": "Шоҳнома ҷудошавии азалии рӯшноӣ аз торикиро бунёди ҳамаи офариниш тавсиф мекунад — аввалин амале, ки ҷаҳон аз он шакл ва маъно гирифт.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
     },
     {
       "id": "keyumars-3",
       "chapter_slug": "keyumars",
-      "quiz_part": 3,
+      "quiz_part": 6,
       "question": "How long does Keyumars mourn his son?",
-      "answers": ["Three days", "Seven days", "Thirty days", "A whole year"],
+      "answers": [
+        "Three days",
+        "Seven days",
+        "Thirty days",
+        "A whole year"
+      ],
       "correct_answer": 2,
       "explanation": "Keyumars mourned thirty days for Siyamak.",
-      "reward": { "xp": 100, "real": 40 },
+      "reward": {
+        "xp": 100,
+        "real": 40
+      },
       "difficulty": "medium",
       "question_fa": "کیومرث چه مدت برای پسرش عزاداری کرد؟",
       "question_tg": "Каюмарс барои писараш чанд рӯз аза гирифт?",
-      "answers_fa": ["سه روز", "هفت روز", "سی روز", "یک سال تمام"],
-      "answers_tg": ["Се рӯз", "Ҳафт рӯз", "Си рӯз", "Як соли тамом"],
+      "answers_fa": [
+        "سه روز",
+        "هفت روز",
+        "سی روز",
+        "یک سال تمام"
+      ],
+      "answers_tg": [
+        "Се рӯз",
+        "Ҳафт рӯз",
+        "Си рӯз",
+        "Як соли тамом"
+      ],
       "explanation_fa": "کیومرث سی روز برای سیامک عزاداری کرد.",
       "explanation_tg": "Каюмарс барои Сиёмак си рӯз аза гирифт."
     },
@@ -58,15 +147,33 @@
       "chapter_slug": "hushang",
       "quiz_part": 1,
       "question": "What festival does Hushang's fire create?",
-      "answers": ["Mehregan", "Nowruz", "Sade", "Yalda"],
+      "answers": [
+        "Mehregan",
+        "Nowruz",
+        "Sade",
+        "Yalda"
+      ],
       "correct_answer": 2,
       "explanation": "Sade marks the night fire was first kindled.",
-      "reward": { "xp": 70, "real": 25 },
+      "reward": {
+        "xp": 70,
+        "real": 25
+      },
       "difficulty": "easy",
       "question_fa": "آتش هوشنگ چه جشنی را به وجود آورد؟",
       "question_tg": "Оташи Ҳушанг чӣ ид-ро ба вуҷуд овард?",
-      "answers_fa": ["مهرگان", "نوروز", "سده", "یلدا"],
-      "answers_tg": ["Меҳргон", "Наврӯз", "Сада", "Ялдо"],
+      "answers_fa": [
+        "مهرگان",
+        "نوروز",
+        "سده",
+        "یلدا"
+      ],
+      "answers_tg": [
+        "Меҳргон",
+        "Наврӯз",
+        "Сада",
+        "Ялдо"
+      ],
       "explanation_fa": "سده شبی را که برای اولین بار آتش افروخته شد گرامی می‌دارد.",
       "explanation_tg": "Сада шабе ро ки бори аввал оташ афрӯхта шуд гиромӣ медорад."
     },
@@ -75,15 +182,33 @@
       "chapter_slug": "hushang",
       "quiz_part": 2,
       "question": "What craft does Hushang first teach humankind?",
-      "answers": ["Sailing", "Iron-forging", "Falconry", "Coin-making"],
+      "answers": [
+        "Sailing",
+        "Iron-forging",
+        "Falconry",
+        "Coin-making"
+      ],
       "correct_answer": 1,
       "explanation": "Iron working and irrigation are credited to his age.",
-      "reward": { "xp": 90, "real": 35 },
+      "reward": {
+        "xp": 90,
+        "real": 35
+      },
       "difficulty": "easy",
       "question_fa": "هوشنگ اول کدام صنعت را به بشریت آموخت؟",
       "question_tg": "Ҳушанг аввалин бор кадом ҳунарро ба башарият омӯхт?",
-      "answers_fa": ["دریانوردی", "آهنگری", "شاهین‌بازی", "سکه‌سازی"],
-      "answers_tg": ["Баҳрнавардӣ", "Оҳангарӣ", "Шоҳинбозӣ", "Тангасозӣ"],
+      "answers_fa": [
+        "دریانوردی",
+        "آهنگری",
+        "شاهین‌بازی",
+        "سکه‌سازی"
+      ],
+      "answers_tg": [
+        "Баҳрнавардӣ",
+        "Оҳангарӣ",
+        "Шоҳинбозӣ",
+        "Тангасозӣ"
+      ],
       "explanation_fa": "صنعت آهن و آبیاری به دوران او نسبت داده می‌شود.",
       "explanation_tg": "Оҳангарӣ ва обёрӣ ба давраи ӯ нисбат дода мешаванд."
     },
@@ -92,15 +217,33 @@
       "chapter_slug": "hushang",
       "quiz_part": 3,
       "question": "Hushang strikes flint at what creature?",
-      "answers": ["Lion", "Black serpent", "White stag", "Stone div"],
+      "answers": [
+        "Lion",
+        "Black serpent",
+        "White stag",
+        "Stone div"
+      ],
       "correct_answer": 1,
       "explanation": "The serpent dodges; the spark catches a tree.",
-      "reward": { "xp": 110, "real": 45 },
+      "reward": {
+        "xp": 110,
+        "real": 45
+      },
       "difficulty": "medium",
       "question_fa": "هوشنگ چخماق را به کدام موجود زد؟",
       "question_tg": "Ҳушанг чақмоқро ба кадом ҷонвар зад?",
-      "answers_fa": ["شیر", "مار سیاه", "گوزن سفید", "دیو سنگ"],
-      "answers_tg": ["Шер", "Морсиёҳ", "Гавазни сафед", "Деви санг"],
+      "answers_fa": [
+        "شیر",
+        "مار سیاه",
+        "گوزن سفید",
+        "دیو سنگ"
+      ],
+      "answers_tg": [
+        "Шер",
+        "Морсиёҳ",
+        "Гавазни сафед",
+        "Деви санг"
+      ],
       "explanation_fa": "مار می‌گریزد؛ جرقه به درختی می‌افتد.",
       "explanation_tg": "Мор мегурезад; ҷарақа ба дарахте меафтад."
     },
@@ -109,15 +252,33 @@
       "chapter_slug": "tahmuras",
       "quiz_part": 1,
       "question": "What knowledge do the demons teach Tahmuras to keep their lives?",
-      "answers": ["Mining iron", "The art of writing", "Sailing", "Falconry"],
+      "answers": [
+        "Mining iron",
+        "The art of writing",
+        "Sailing",
+        "Falconry"
+      ],
       "correct_answer": 1,
       "explanation": "They teach thirty alphabets in exchange for mercy.",
-      "reward": { "xp": 80, "real": 30 },
+      "reward": {
+        "xp": 80,
+        "real": 30
+      },
       "difficulty": "easy",
       "question_fa": "دیوان چه دانشی را به طهمورث آموختند تا جانشان در امان بماند؟",
       "question_tg": "Девҳо барои нигоҳ доштани ҷонашон чӣ дониширо ба Таҳмурас омӯхтанд?",
-      "answers_fa": ["استخراج آهن", "هنر نوشتن", "دریانوردی", "شاهین‌بازی"],
-      "answers_tg": ["Истихроҷи оҳан", "Санъати хаттӣ", "Баҳрнавардӣ", "Шоҳинбозӣ"],
+      "answers_fa": [
+        "استخراج آهن",
+        "هنر نوشتن",
+        "دریانوردی",
+        "شاهین‌بازی"
+      ],
+      "answers_tg": [
+        "Истихроҷи оҳан",
+        "Санъати хаттӣ",
+        "Баҳрнавардӣ",
+        "Шоҳинбозӣ"
+      ],
       "explanation_fa": "آن‌ها سی الفبا را در ازای بخشودگی آموختند.",
       "explanation_tg": "Онҳо си алифборо дар ивази афв омӯхтанд."
     },
@@ -126,15 +287,33 @@
       "chapter_slug": "tahmuras",
       "quiz_part": 2,
       "question": "Tahmuras is known by which epithet?",
-      "answers": ["The Bull-Rider", "Div-band", "Crystal-King", "Star-Counter"],
+      "answers": [
+        "The Bull-Rider",
+        "Div-band",
+        "Crystal-King",
+        "Star-Counter"
+      ],
       "correct_answer": 1,
       "explanation": "Div-band — binder of demons.",
-      "reward": { "xp": 100, "real": 40 },
+      "reward": {
+        "xp": 100,
+        "real": 40
+      },
       "difficulty": "medium",
       "question_fa": "طهمورث به کدام لقب شناخته می‌شود؟",
       "question_tg": "Таҳмурас бо кадом лақаб маъруф аст?",
-      "answers_fa": ["سوارکار گاو", "دیوبند", "شاه بلور", "شمارنده‌ی ستارگان"],
-      "answers_tg": ["Гавсавор", "Девбанд", "Шоҳи булӯр", "Ситорашумор"],
+      "answers_fa": [
+        "سوارکار گاو",
+        "دیوبند",
+        "شاه بلور",
+        "شمارنده‌ی ستارگان"
+      ],
+      "answers_tg": [
+        "Гавсавор",
+        "Девбанд",
+        "Шоҳи булӯр",
+        "Ситорашумор"
+      ],
       "explanation_fa": "دیوبند — به‌بند‌کشنده‌ی دیوان.",
       "explanation_tg": "Девбанд — банд кунандаи девон."
     },
@@ -143,15 +322,33 @@
       "chapter_slug": "tahmuras",
       "quiz_part": 3,
       "question": "How many alphabets do the demons teach?",
-      "answers": ["Seven", "Twelve", "Thirty", "Seventy"],
+      "answers": [
+        "Seven",
+        "Twelve",
+        "Thirty",
+        "Seventy"
+      ],
       "correct_answer": 2,
       "explanation": "Thirty — Greek, Tazi, Pahlavi, Sogdian and others.",
-      "reward": { "xp": 120, "real": 50 },
+      "reward": {
+        "xp": 120,
+        "real": 50
+      },
       "difficulty": "medium",
       "question_fa": "دیوان چند الفبا آموختند؟",
       "question_tg": "Девҳо чанд алифбо омӯхтанд?",
-      "answers_fa": ["هفت", "دوازده", "سی", "هفتاد"],
-      "answers_tg": ["Ҳафт", "Дувоздаҳ", "Си", "Ҳафтод"],
+      "answers_fa": [
+        "هفت",
+        "دوازده",
+        "سی",
+        "هفتاد"
+      ],
+      "answers_tg": [
+        "Ҳафт",
+        "Дувоздаҳ",
+        "Си",
+        "Ҳафтод"
+      ],
       "explanation_fa": "سی — یونانی، تازی، پهلوی، سغدی و دیگران.",
       "explanation_tg": "Си — юнонӣ, тозӣ, паҳлавӣ, суғдӣ ва дигарон."
     },
@@ -160,15 +357,33 @@
       "chapter_slug": "jamshid",
       "quiz_part": 1,
       "question": "Why does Jamshid lose the divine grace (farr)?",
-      "answers": ["He refuses fire", "He claims to be a god", "He kills a demon", "He forgets Sade"],
+      "answers": [
+        "He refuses fire",
+        "He claims to be a god",
+        "He kills a demon",
+        "He forgets Sade"
+      ],
       "correct_answer": 1,
       "explanation": "Jamshid's pride drives the farr away.",
-      "reward": { "xp": 100, "real": 40 },
+      "reward": {
+        "xp": 100,
+        "real": 40
+      },
       "difficulty": "medium",
       "question_fa": "چرا جمشید فرّ الهی را از دست داد؟",
       "question_tg": "Чаро Ҷамшид Фарри илоҳиро аз даст дод?",
-      "answers_fa": ["آتش را رد کرد", "ادعا کرد که خداست", "دیوی را کشت", "سده را فراموش کرد"],
-      "answers_tg": ["Оташро рад кард", "Иддаъо кард ки худост", "Деверо кушт", "Садаро фаромӯш кард"],
+      "answers_fa": [
+        "آتش را رد کرد",
+        "ادعا کرد که خداست",
+        "دیوی را کشت",
+        "سده را فراموش کرد"
+      ],
+      "answers_tg": [
+        "Оташро рад кард",
+        "Иддаъо кард ки худост",
+        "Деверо кушт",
+        "Садаро фаромӯш кард"
+      ],
       "explanation_fa": "غرور جمشید، فرّ را از او دور کرد.",
       "explanation_tg": "Ғурури Ҷамшид Фаррро аз ӯ дур кард."
     },
@@ -177,15 +392,33 @@
       "chapter_slug": "jamshid",
       "quiz_part": 2,
       "question": "Into how many crafts does Jamshid divide the people?",
-      "answers": ["Three", "Four", "Five", "Seven"],
+      "answers": [
+        "Three",
+        "Four",
+        "Five",
+        "Seven"
+      ],
       "correct_answer": 1,
       "explanation": "Priests, warriors, farmers, artisans.",
-      "reward": { "xp": 110, "real": 45 },
+      "reward": {
+        "xp": 110,
+        "real": 45
+      },
       "difficulty": "easy",
       "question_fa": "جمشید مردم را به چند صنف تقسیم کرد؟",
       "question_tg": "Ҷамшид мардумро ба чанд табақа тақсим кард?",
-      "answers_fa": ["سه", "چهار", "پنج", "هفت"],
-      "answers_tg": ["Се", "Чор", "Панҷ", "Ҳафт"],
+      "answers_fa": [
+        "سه",
+        "چهار",
+        "پنج",
+        "هفت"
+      ],
+      "answers_tg": [
+        "Се",
+        "Чор",
+        "Панҷ",
+        "Ҳафт"
+      ],
       "explanation_fa": "روحانیون، جنگاوران، کشاورزان، پیشه‌وران.",
       "explanation_tg": "Рӯҳониён, ҷангиён, деҳқонон, ҳунармандон."
     },
@@ -194,15 +427,33 @@
       "chapter_slug": "jamshid",
       "quiz_part": 3,
       "question": "Jamshid is carried into the sky on which festival?",
-      "answers": ["Sade", "Mehregan", "Nowruz", "Yalda"],
+      "answers": [
+        "Sade",
+        "Mehregan",
+        "Nowruz",
+        "Yalda"
+      ],
       "correct_answer": 2,
       "explanation": "Nowruz commemorates his ascent.",
-      "reward": { "xp": 130, "real": 55 },
+      "reward": {
+        "xp": 130,
+        "real": 55
+      },
       "difficulty": "medium",
       "question_fa": "جمشید در کدام جشن به آسمان برده شد؟",
       "question_tg": "Ҷамшид дар кадом иде ба осмон бурда шуд?",
-      "answers_fa": ["سده", "مهرگان", "نوروز", "یلدا"],
-      "answers_tg": ["Сада", "Меҳргон", "Наврӯз", "Ялдо"],
+      "answers_fa": [
+        "سده",
+        "مهرگان",
+        "نوروز",
+        "یلدا"
+      ],
+      "answers_tg": [
+        "Сада",
+        "Меҳргон",
+        "Наврӯз",
+        "Ялдо"
+      ],
       "explanation_fa": "نوروز یادبود صعود اوست.",
       "explanation_tg": "Наврӯз ёди боло рафтани ӯро гиромӣ медорад."
     },
@@ -211,15 +462,33 @@
       "chapter_slug": "jamshid",
       "quiz_part": 4,
       "question": "How long does Jamshid's reign of light last?",
-      "answers": ["100 years", "300 years", "500 years", "700 years"],
+      "answers": [
+        "100 years",
+        "300 years",
+        "500 years",
+        "700 years"
+      ],
       "correct_answer": 1,
       "explanation": "Three hundred years before pride.",
-      "reward": { "xp": 150, "real": 65 },
+      "reward": {
+        "xp": 150,
+        "real": 65
+      },
       "difficulty": "hard",
       "question_fa": "پادشاهی نور جمشید چه مدت طول کشید؟",
       "question_tg": "Шоҳии нури Ҷамшид чӣ қадар давом кард?",
-      "answers_fa": ["۱۰۰ سال", "۳۰۰ سال", "۵۰۰ سال", "۷۰۰ سال"],
-      "answers_tg": ["100 сол", "300 сол", "500 сол", "700 сол"],
+      "answers_fa": [
+        "۱۰۰ سال",
+        "۳۰۰ سال",
+        "۵۰۰ سال",
+        "۷۰۰ سال"
+      ],
+      "answers_tg": [
+        "100 сол",
+        "300 сол",
+        "500 сол",
+        "700 сол"
+      ],
       "explanation_fa": "سیصد سال پیش از غرور.",
       "explanation_tg": "Сесад сол пеш аз ғурур."
     },
@@ -228,15 +497,33 @@
       "chapter_slug": "zahhak",
       "quiz_part": 1,
       "question": "Where do Zahhak's serpents grow from?",
-      "answers": ["His crown", "His shoulders", "His belt", "His shadow"],
+      "answers": [
+        "His crown",
+        "His shoulders",
+        "His belt",
+        "His shadow"
+      ],
       "correct_answer": 1,
       "explanation": "From the kiss of Iblis, on his shoulders.",
-      "reward": { "xp": 110, "real": 45 },
+      "reward": {
+        "xp": 110,
+        "real": 45
+      },
       "difficulty": "easy",
       "question_fa": "مارهای ضحاک از کجا می‌رویند؟",
       "question_tg": "Морҳои Заҳҳок аз куҷо месабзанд?",
-      "answers_fa": ["تاجش", "شانه‌هایش", "کمربندش", "سایه‌اش"],
-      "answers_tg": ["Тоҷаш", "Шонаҳояш", "Камарбандаш", "Сояаш"],
+      "answers_fa": [
+        "تاجش",
+        "شانه‌هایش",
+        "کمربندش",
+        "سایه‌اش"
+      ],
+      "answers_tg": [
+        "Тоҷаш",
+        "Шонаҳояш",
+        "Камарбандаш",
+        "Сояаш"
+      ],
       "explanation_fa": "از بوسه‌ی ابلیس، بر شانه‌هایش.",
       "explanation_tg": "Аз бӯсаи Иблис, бар шонаҳояш."
     },
@@ -245,15 +532,33 @@
       "chapter_slug": "zahhak",
       "quiz_part": 2,
       "question": "What daily price do the serpents demand?",
-      "answers": ["Two human brains", "A bull", "Seven jars of wine", "A child of nobles"],
+      "answers": [
+        "Two human brains",
+        "A bull",
+        "Seven jars of wine",
+        "A child of nobles"
+      ],
       "correct_answer": 0,
       "explanation": "Two brains drawn from the youth of Pars.",
-      "reward": { "xp": 130, "real": 55 },
+      "reward": {
+        "xp": 130,
+        "real": 55
+      },
       "difficulty": "medium",
       "question_fa": "مارها هر روز چه بهایی مطالبه می‌کنند؟",
       "question_tg": "Морҳо ҳар рӯз чӣ нарх мехоҳанд?",
-      "answers_fa": ["دو مغز انسان", "یک گاو", "هفت خمره‌ی شراب", "فرزند اشراف"],
-      "answers_tg": ["Ду мағзи инсон", "Як гов", "Ҳафт хум шароб", "Фарзанди ашроф"],
+      "answers_fa": [
+        "دو مغز انسان",
+        "یک گاو",
+        "هفت خمره‌ی شراب",
+        "فرزند اشراف"
+      ],
+      "answers_tg": [
+        "Ду мағзи инсон",
+        "Як гов",
+        "Ҳафт хум шароб",
+        "Фарзанди ашроф"
+      ],
       "explanation_fa": "دو مغز از جوانان پارس.",
       "explanation_tg": "Ду мағз аз ҷавонони Порс."
     },
@@ -262,15 +567,33 @@
       "chapter_slug": "zahhak",
       "quiz_part": 3,
       "question": "Who first kisses Zahhak's shoulders?",
-      "answers": ["A demon cook", "Iblis in disguise", "His mother", "A wandering minstrel"],
+      "answers": [
+        "A demon cook",
+        "Iblis in disguise",
+        "His mother",
+        "A wandering minstrel"
+      ],
       "correct_answer": 1,
       "explanation": "Iblis disguised as a cook.",
-      "reward": { "xp": 150, "real": 65 },
+      "reward": {
+        "xp": 150,
+        "real": 65
+      },
       "difficulty": "medium",
       "question_fa": "اول چه کسی شانه‌های ضحاک را بوسید؟",
       "question_tg": "Аввал кӣ шонаҳои Заҳҳокро бӯсид?",
-      "answers_fa": ["آشپز دیو", "ابلیس در لباس مبدل", "مادرش", "مطرب دوره‌گرد"],
-      "answers_tg": ["Ошпази дев", "Иблис дар либоси мабдал", "Модараш", "Муғаннии гарданагард"],
+      "answers_fa": [
+        "آشپز دیو",
+        "ابلیس در لباس مبدل",
+        "مادرش",
+        "مطرب دوره‌گرد"
+      ],
+      "answers_tg": [
+        "Ошпази дев",
+        "Иблис дар либоси мабдал",
+        "Модараш",
+        "Муғаннии гарданагард"
+      ],
       "explanation_fa": "ابلیس در لباس آشپز.",
       "explanation_tg": "Иблис дар либоси ошпаз."
     },
@@ -279,15 +602,33 @@
       "chapter_slug": "zahhak",
       "quiz_part": 4,
       "question": "How many years does darkness last?",
-      "answers": ["A hundred", "Three hundred", "Seven hundred", "A thousand"],
+      "answers": [
+        "A hundred",
+        "Three hundred",
+        "Seven hundred",
+        "A thousand"
+      ],
       "correct_answer": 3,
       "explanation": "A thousand years.",
-      "reward": { "xp": 170, "real": 75 },
+      "reward": {
+        "xp": 170,
+        "real": 75
+      },
       "difficulty": "hard",
       "question_fa": "تاریکی چه مدت طول کشید؟",
       "question_tg": "Торикӣ чанд сол давом кард?",
-      "answers_fa": ["یک صد سال", "سیصد سال", "هفتصد سال", "یک هزار سال"],
-      "answers_tg": ["Як сад сол", "Сесад сол", "Ҳафтсад сол", "Ҳазор сол"],
+      "answers_fa": [
+        "یک صد سال",
+        "سیصد سال",
+        "هفتصد سال",
+        "یک هزار سال"
+      ],
+      "answers_tg": [
+        "Як сад сол",
+        "Сесад сол",
+        "Ҳафтсад сол",
+        "Ҳазор сол"
+      ],
       "explanation_fa": "یک هزار سال.",
       "explanation_tg": "Ҳазор сол."
     },
@@ -296,15 +637,33 @@
       "chapter_slug": "fereydun",
       "quiz_part": 1,
       "question": "What weapon does Fereydun use to defeat Zahhak?",
-      "answers": ["Spear of fire", "Bow of dawn", "Bull-headed mace", "Crystal sword"],
+      "answers": [
+        "Spear of fire",
+        "Bow of dawn",
+        "Bull-headed mace",
+        "Crystal sword"
+      ],
       "correct_answer": 2,
       "explanation": "The bull-headed mace forged for the hour.",
-      "reward": { "xp": 120, "real": 50 },
+      "reward": {
+        "xp": 120,
+        "real": 50
+      },
       "difficulty": "easy",
       "question_fa": "فریدون از چه سلاحی برای شکست دادن ضحاک استفاده کرد؟",
       "question_tg": "Фаридун барои шикаст додани Заҳҳок аз кадом силоҳ истифода кард?",
-      "answers_fa": ["نیزه‌ی آتش", "کمان سپیده‌دم", "گرز گاوسر", "شمشیر بلور"],
-      "answers_tg": ["Найзаи оташ", "Камони сипедадам", "Гурзи гавсар", "Шамшери булӯр"],
+      "answers_fa": [
+        "نیزه‌ی آتش",
+        "کمان سپیده‌دم",
+        "گرز گاوسر",
+        "شمشیر بلور"
+      ],
+      "answers_tg": [
+        "Найзаи оташ",
+        "Камони сипедадам",
+        "Гурзи гавсар",
+        "Шамшери булӯр"
+      ],
       "explanation_fa": "گرز گاوسر برای آن ساعت آهنگری شده بود.",
       "explanation_tg": "Гурзи гавсар барои он соат оҳангарӣ шуда буд."
     },
@@ -313,15 +672,33 @@
       "chapter_slug": "fereydun",
       "quiz_part": 2,
       "question": "Whose apron becomes the banner of revolt?",
-      "answers": ["Sam", "Kaveh", "Tus", "Manuchehr"],
+      "answers": [
+        "Sam",
+        "Kaveh",
+        "Tus",
+        "Manuchehr"
+      ],
       "correct_answer": 1,
       "explanation": "Kaveh the blacksmith.",
-      "reward": { "xp": 140, "real": 60 },
+      "reward": {
+        "xp": 140,
+        "real": 60
+      },
       "difficulty": "easy",
       "question_fa": "پیش‌بند چه کسی پرچم شورش شد؟",
       "question_tg": "Пешбанди кӣ байрақи шӯриш шуд?",
-      "answers_fa": ["سام", "کاوه", "توس", "منوچهر"],
-      "answers_tg": ["Сом", "Ковае", "Тус", "Манучеҳр"],
+      "answers_fa": [
+        "سام",
+        "کاوه",
+        "توس",
+        "منوچهر"
+      ],
+      "answers_tg": [
+        "Сом",
+        "Ковае",
+        "Тус",
+        "Манучеҳр"
+      ],
       "explanation_fa": "کاوه‌ی آهنگر.",
       "explanation_tg": "Ковае-оҳангар."
     },
@@ -330,15 +707,33 @@
       "chapter_slug": "fereydun",
       "quiz_part": 3,
       "question": "Where is Zahhak imprisoned forever?",
-      "answers": ["Mount Damavand", "Lake Urmia", "Salt desert of Lut", "Caspian shore"],
+      "answers": [
+        "Mount Damavand",
+        "Lake Urmia",
+        "Salt desert of Lut",
+        "Caspian shore"
+      ],
       "correct_answer": 0,
       "explanation": "Bound on Damavand.",
-      "reward": { "xp": 160, "real": 70 },
+      "reward": {
+        "xp": 160,
+        "real": 70
+      },
       "difficulty": "medium",
       "question_fa": "ضحاک برای همیشه در کجا زندانی شد؟",
       "question_tg": "Заҳҳок барои ҳамеша дар куҷо зиндонӣ шуд?",
-      "answers_fa": ["کوه دماوند", "دریاچه‌ی ارومیه", "کویر نمک لوت", "ساحل دریای خزر"],
-      "answers_tg": ["Кӯҳи Дамованд", "Кӯли Урмия", "Биёбони намаки Лут", "Соҳили баҳри Хазар"],
+      "answers_fa": [
+        "کوه دماوند",
+        "دریاچه‌ی ارومیه",
+        "کویر نمک لوت",
+        "ساحل دریای خزر"
+      ],
+      "answers_tg": [
+        "Кӯҳи Дамованд",
+        "Кӯли Урмия",
+        "Биёбони намаки Лут",
+        "Соҳили баҳри Хазар"
+      ],
       "explanation_fa": "بر دماوند در بند.",
       "explanation_tg": "Бар Дамованд дар банд."
     },
@@ -347,15 +742,33 @@
       "chapter_slug": "fereydun",
       "quiz_part": 4,
       "question": "Among how many sons does Fereydun split the kingdom?",
-      "answers": ["Two", "Three", "Four", "Seven"],
+      "answers": [
+        "Two",
+        "Three",
+        "Four",
+        "Seven"
+      ],
       "correct_answer": 1,
       "explanation": "Iraj, Tur, Salm.",
-      "reward": { "xp": 180, "real": 80 },
+      "reward": {
+        "xp": 180,
+        "real": 80
+      },
       "difficulty": "medium",
       "question_fa": "فریدون پادشاهی را بین چند پسر تقسیم کرد؟",
       "question_tg": "Фаридун шоҳиро байни чанд писар тақсим кард?",
-      "answers_fa": ["دو", "سه", "چهار", "هفت"],
-      "answers_tg": ["Ду", "Се", "Чор", "Ҳафт"],
+      "answers_fa": [
+        "دو",
+        "سه",
+        "چهار",
+        "هفت"
+      ],
+      "answers_tg": [
+        "Ду",
+        "Се",
+        "Чор",
+        "Ҳафт"
+      ],
       "explanation_fa": "ایرج، تور، سلم.",
       "explanation_tg": "Эраҷ, Тур, Салм."
     },
@@ -364,15 +777,33 @@
       "chapter_slug": "zal",
       "quiz_part": 1,
       "question": "Which mythical creature raises Zal?",
-      "answers": ["Dragon", "Simorgh", "Akvan Div", "Rakhsh"],
+      "answers": [
+        "Dragon",
+        "Simorgh",
+        "Akvan Div",
+        "Rakhsh"
+      ],
       "correct_answer": 1,
       "explanation": "The Simorgh of Mount Damavand.",
-      "reward": { "xp": 130, "real": 55 },
+      "reward": {
+        "xp": 130,
+        "real": 55
+      },
       "difficulty": "easy",
       "question_fa": "کدام موجود اساطیری زال را پرورش داد؟",
       "question_tg": "Кадом мавҷудоти асотирӣ Золро парвариш дод?",
-      "answers_fa": ["اژدها", "سیمرغ", "اکوان دیو", "رخش"],
-      "answers_tg": ["Аждаҳо", "Симурғ", "Аквон-дев", "Рахш"],
+      "answers_fa": [
+        "اژدها",
+        "سیمرغ",
+        "اکوان دیو",
+        "رخش"
+      ],
+      "answers_tg": [
+        "Аждаҳо",
+        "Симурғ",
+        "Аквон-дев",
+        "Рахш"
+      ],
       "explanation_fa": "سیمرغ کوه دماوند.",
       "explanation_tg": "Симурғи Кӯҳи Дамованд."
     },
@@ -381,15 +812,33 @@
       "chapter_slug": "zal",
       "quiz_part": 2,
       "question": "Why does Sam abandon his son?",
-      "answers": ["A wound on the foot", "His white hair", "A prophet's curse", "Famine"],
+      "answers": [
+        "A wound on the foot",
+        "His white hair",
+        "A prophet's curse",
+        "Famine"
+      ],
       "correct_answer": 1,
       "explanation": "Sam fears the omen of the white hair.",
-      "reward": { "xp": 150, "real": 65 },
+      "reward": {
+        "xp": 150,
+        "real": 65
+      },
       "difficulty": "medium",
       "question_fa": "چرا سام پسرش را رها کرد؟",
       "question_tg": "Чаро Сом писарашро тарк кард?",
-      "answers_fa": ["زخمی بر پا", "موی سفیدش", "نفرین پیامبر", "قحطی"],
-      "answers_tg": ["Захме бар по", "Мӯи сафедаш", "Нафрини паёмбар", "Қаҳтӣ"],
+      "answers_fa": [
+        "زخمی بر پا",
+        "موی سفیدش",
+        "نفرین پیامبر",
+        "قحطی"
+      ],
+      "answers_tg": [
+        "Захме бар по",
+        "Мӯи сафедаш",
+        "Нафрини паёмбар",
+        "Қаҳтӣ"
+      ],
       "explanation_fa": "سام از فال بد موی سفید می‌ترسد.",
       "explanation_tg": "Сом аз фоли бади мӯи сафед метарсад."
     },
@@ -398,15 +847,33 @@
       "chapter_slug": "zal",
       "quiz_part": 3,
       "question": "What does Simorgh give Zal at parting?",
-      "answers": ["A jewel", "A feather", "A crown", "A book"],
+      "answers": [
+        "A jewel",
+        "A feather",
+        "A crown",
+        "A book"
+      ],
       "correct_answer": 1,
       "explanation": "A feather, to burn in greatest need.",
-      "reward": { "xp": 170, "real": 75 },
+      "reward": {
+        "xp": 170,
+        "real": 75
+      },
       "difficulty": "medium",
       "question_fa": "سیمرغ هنگام خداحافظی به زال چه داد؟",
       "question_tg": "Симурғ ҳангоми хайрбодӣ ба Зол чӣ дод?",
-      "answers_fa": ["جواهری", "پری", "تاجی", "کتابی"],
-      "answers_tg": ["Гавҳаре", "Паре", "Тоҷе", "Китобе"],
+      "answers_fa": [
+        "جواهری",
+        "پری",
+        "تاجی",
+        "کتابی"
+      ],
+      "answers_tg": [
+        "Гавҳаре",
+        "Паре",
+        "Тоҷе",
+        "Китобе"
+      ],
       "explanation_fa": "پری، که در بزرگترین نیاز بسوزاند.",
       "explanation_tg": "Пар, ки дар бузургтарин эҳтиёҷ бисӯзонад."
     },
@@ -415,15 +882,33 @@
       "chapter_slug": "zal",
       "quiz_part": 4,
       "question": "Who does Zal love and marry?",
-      "answers": ["Tahmineh", "Rudabeh", "Manijeh", "Gordafarid"],
+      "answers": [
+        "Tahmineh",
+        "Rudabeh",
+        "Manijeh",
+        "Gordafarid"
+      ],
       "correct_answer": 1,
       "explanation": "Rudabeh, daughter of Mehrab of Kabul.",
-      "reward": { "xp": 190, "real": 85 },
+      "reward": {
+        "xp": 190,
+        "real": 85
+      },
       "difficulty": "hard",
       "question_fa": "زال به چه کسی عشق می‌ورزد و ازدواج می‌کند؟",
       "question_tg": "Зол ба кӣ ишқ меварзад ва издивоҷ мекунад?",
-      "answers_fa": ["تهمینه", "رودابه", "منیژه", "گردآفرید"],
-      "answers_tg": ["Таҳминӣ", "Рӯдоба", "Манижа", "Гурдофарид"],
+      "answers_fa": [
+        "تهمینه",
+        "رودابه",
+        "منیژه",
+        "گردآفرید"
+      ],
+      "answers_tg": [
+        "Таҳминӣ",
+        "Рӯдоба",
+        "Манижа",
+        "Гурдофарид"
+      ],
       "explanation_fa": "رودابه، دختر مهراب کابلی.",
       "explanation_tg": "Рӯдоба, духтари Меҳроби Кобулӣ."
     },
@@ -432,15 +917,33 @@
       "chapter_slug": "rostam",
       "quiz_part": 1,
       "question": "How many labours (Haft Khan) does Rostam complete?",
-      "answers": ["Three", "Five", "Seven", "Twelve"],
+      "answers": [
+        "Three",
+        "Five",
+        "Seven",
+        "Twelve"
+      ],
       "correct_answer": 2,
       "explanation": "Haft Khan — seven labours.",
-      "reward": { "xp": 150, "real": 65 },
+      "reward": {
+        "xp": 150,
+        "real": 65
+      },
       "difficulty": "easy",
       "question_fa": "رستم چند مرحله از هفت‌خان را پشت سر گذاشت؟",
       "question_tg": "Рустам чанд марҳалаи Ҳафтхонро паси сар гузошт?",
-      "answers_fa": ["سه", "پنج", "هفت", "دوازده"],
-      "answers_tg": ["Се", "Панҷ", "Ҳафт", "Дувоздаҳ"],
+      "answers_fa": [
+        "سه",
+        "پنج",
+        "هفت",
+        "دوازده"
+      ],
+      "answers_tg": [
+        "Се",
+        "Панҷ",
+        "Ҳафт",
+        "Дувоздаҳ"
+      ],
       "explanation_fa": "هفت‌خان — هفت آزمون.",
       "explanation_tg": "Ҳафтхон — ҳафт имтиҳон."
     },
@@ -449,15 +952,33 @@
       "chapter_slug": "rostam",
       "quiz_part": 2,
       "question": "What is the name of Rostam's horse?",
-      "answers": ["Borak", "Rakhsh", "Asbi", "Tahmeh"],
+      "answers": [
+        "Borak",
+        "Rakhsh",
+        "Asbi",
+        "Tahmeh"
+      ],
       "correct_answer": 1,
       "explanation": "Rakhsh, the storm-coloured stallion.",
-      "reward": { "xp": 170, "real": 75 },
+      "reward": {
+        "xp": 170,
+        "real": 75
+      },
       "difficulty": "easy",
       "question_fa": "نام اسب رستم چیست؟",
       "question_tg": "Номи аспи Рустам чист?",
-      "answers_fa": ["برق", "رخش", "اسبی", "تهمه"],
-      "answers_tg": ["Барқ", "Рахш", "Асбӣ", "Таҳма"],
+      "answers_fa": [
+        "برق",
+        "رخش",
+        "اسبی",
+        "تهمه"
+      ],
+      "answers_tg": [
+        "Барқ",
+        "Рахш",
+        "Асбӣ",
+        "Таҳма"
+      ],
       "explanation_fa": "رخش، اسب طوفان‌رنگ.",
       "explanation_tg": "Рахш, аспи тӯфонранг."
     },
@@ -466,15 +987,33 @@
       "chapter_slug": "rostam",
       "quiz_part": 3,
       "question": "Which div does Rostam slay in his last great labour?",
-      "answers": ["Akvan Div", "White Div", "Arzhang", "Bid"],
+      "answers": [
+        "Akvan Div",
+        "White Div",
+        "Arzhang",
+        "Bid"
+      ],
       "correct_answer": 1,
       "explanation": "The White Div of Mazandaran.",
-      "reward": { "xp": 190, "real": 85 },
+      "reward": {
+        "xp": 190,
+        "real": 85
+      },
       "difficulty": "medium",
       "question_fa": "رستم در آخرین مرحله‌ی بزرگش کدام دیو را کشت؟",
       "question_tg": "Рустам дар охирин марҳалаи бузургаш кадом девро кушт?",
-      "answers_fa": ["اکوان دیو", "دیو سفید", "ارژنگ", "بید"],
-      "answers_tg": ["Аквон-дев", "Диви Сафед", "Аржанг", "Бид"],
+      "answers_fa": [
+        "اکوان دیو",
+        "دیو سفید",
+        "ارژنگ",
+        "بید"
+      ],
+      "answers_tg": [
+        "Аквон-дев",
+        "Диви Сафед",
+        "Аржанг",
+        "Бид"
+      ],
       "explanation_fa": "دیو سفید مازندران.",
       "explanation_tg": "Диви Сафеди Мозандарон."
     },
@@ -483,15 +1022,33 @@
       "chapter_slug": "rostam",
       "quiz_part": 4,
       "question": "From what land is Rostam's mother?",
-      "answers": ["Samangan", "Kabul", "Mazandaran", "Turan"],
+      "answers": [
+        "Samangan",
+        "Kabul",
+        "Mazandaran",
+        "Turan"
+      ],
       "correct_answer": 1,
       "explanation": "Rudabeh of Kabul.",
-      "reward": { "xp": 210, "real": 95 },
+      "reward": {
+        "xp": 210,
+        "real": 95
+      },
       "difficulty": "medium",
       "question_fa": "مادر رستم از کدام سرزمین است؟",
       "question_tg": "Модари Рустам аз кадом сарзамин аст?",
-      "answers_fa": ["سمنگان", "کابل", "مازندران", "توران"],
-      "answers_tg": ["Самангон", "Кобул", "Мозандарон", "Турон"],
+      "answers_fa": [
+        "سمنگان",
+        "کابل",
+        "مازندران",
+        "توران"
+      ],
+      "answers_tg": [
+        "Самангон",
+        "Кобул",
+        "Мозандарон",
+        "Турон"
+      ],
       "explanation_fa": "رودابه‌ی کابلی.",
       "explanation_tg": "Рӯдобаи Кобулӣ."
     },
@@ -500,15 +1057,33 @@
       "chapter_slug": "rostam",
       "quiz_part": 5,
       "question": "How is Rostam finally killed?",
-      "answers": ["By an arrow", "By a serpent", "By a pit of spears", "By poison"],
+      "answers": [
+        "By an arrow",
+        "By a serpent",
+        "By a pit of spears",
+        "By poison"
+      ],
       "correct_answer": 2,
       "explanation": "Trapped in a pit of spears by his half-brother Shaghad.",
-      "reward": { "xp": 230, "real": 105 },
+      "reward": {
+        "xp": 230,
+        "real": 105
+      },
       "difficulty": "hard",
       "question_fa": "رستم سرانجام چگونه کشته شد؟",
       "question_tg": "Рустам дар охир чӣ тавр кушта шуд?",
-      "answers_fa": ["با تیر", "توسط مار", "در چاه نیزه", "با زهر"],
-      "answers_tg": ["Бо тир", "Тавассути мор", "Дар чоҳи найза", "Бо заҳр"],
+      "answers_fa": [
+        "با تیر",
+        "توسط مار",
+        "در چاه نیزه",
+        "با زهر"
+      ],
+      "answers_tg": [
+        "Бо тир",
+        "Тавассути мор",
+        "Дар чоҳи найза",
+        "Бо заҳр"
+      ],
       "explanation_fa": "در چاهی از نیزه به دام افتاد توسط برادر ناتنی‌اش شغاد.",
       "explanation_tg": "Дар чоҳи найза ба дом афтод ба дасти бародари нотании ӯ Шағод."
     },
@@ -517,15 +1092,33 @@
       "chapter_slug": "sohrab",
       "quiz_part": 1,
       "question": "Who is Sohrab's father?",
-      "answers": ["Zal", "Esfandiyar", "Rostam", "Fereydun"],
+      "answers": [
+        "Zal",
+        "Esfandiyar",
+        "Rostam",
+        "Fereydun"
+      ],
       "correct_answer": 2,
       "explanation": "Rostam, who never knew his son was born.",
-      "reward": { "xp": 170, "real": 75 },
+      "reward": {
+        "xp": 170,
+        "real": 75
+      },
       "difficulty": "easy",
       "question_fa": "پدر سهراب کیست؟",
       "question_tg": "Падари Суҳроб кист?",
-      "answers_fa": ["زال", "اسفندیار", "رستم", "فریدون"],
-      "answers_tg": ["Зол", "Исфандиёр", "Рустам", "Фаридун"],
+      "answers_fa": [
+        "زال",
+        "اسفندیار",
+        "رستم",
+        "فریدون"
+      ],
+      "answers_tg": [
+        "Зол",
+        "Исфандиёр",
+        "Рустам",
+        "Фаридун"
+      ],
       "explanation_fa": "رستم که نمی‌دانست پسرش به دنیا آمده.",
       "explanation_tg": "Рустам, ки намедонист писараш таваллуд шудааст."
     },
@@ -534,15 +1127,33 @@
       "chapter_slug": "sohrab",
       "quiz_part": 2,
       "question": "Who is Sohrab's mother?",
-      "answers": ["Rudabeh", "Tahmineh", "Manijeh", "Gordafarid"],
+      "answers": [
+        "Rudabeh",
+        "Tahmineh",
+        "Manijeh",
+        "Gordafarid"
+      ],
       "correct_answer": 1,
       "explanation": "Tahmineh, princess of Samangan.",
-      "reward": { "xp": 190, "real": 85 },
+      "reward": {
+        "xp": 190,
+        "real": 85
+      },
       "difficulty": "easy",
       "question_fa": "مادر سهراب کیست؟",
       "question_tg": "Модари Суҳроб кист?",
-      "answers_fa": ["رودابه", "تهمینه", "منیژه", "گردآفرید"],
-      "answers_tg": ["Рӯдоба", "Таҳминӣ", "Манижа", "Гурдофарид"],
+      "answers_fa": [
+        "رودابه",
+        "تهمینه",
+        "منیژه",
+        "گردآفرید"
+      ],
+      "answers_tg": [
+        "Рӯдоба",
+        "Таҳминӣ",
+        "Манижа",
+        "Гурдофарид"
+      ],
       "explanation_fa": "تهمینه، شاهدخت سمنگان.",
       "explanation_tg": "Таҳминӣ, шаҳдухти Самангон."
     },
@@ -551,15 +1162,33 @@
       "chapter_slug": "sohrab",
       "quiz_part": 3,
       "question": "What proof of identity does Sohrab carry?",
-      "answers": ["A crown", "A bracelet", "A scroll", "A signet ring"],
+      "answers": [
+        "A crown",
+        "A bracelet",
+        "A scroll",
+        "A signet ring"
+      ],
       "correct_answer": 1,
       "explanation": "A bracelet given by Rostam to Tahmineh.",
-      "reward": { "xp": 210, "real": 95 },
+      "reward": {
+        "xp": 210,
+        "real": 95
+      },
       "difficulty": "medium",
       "question_fa": "سهراب چه مدرک هویتی با خود دارد؟",
       "question_tg": "Суҳроб чӣ далели ҳуввияте бо худ дорад?",
-      "answers_fa": ["تاجی", "دستبندی", "طوماری", "انگشتر مُهری"],
-      "answers_tg": ["Тоҷе", "Дастпонае", "Думботе", "Ангуштари муҳрӣ"],
+      "answers_fa": [
+        "تاجی",
+        "دستبندی",
+        "طوماری",
+        "انگشتر مُهری"
+      ],
+      "answers_tg": [
+        "Тоҷе",
+        "Дастпонае",
+        "Думботе",
+        "Ангуштари муҳрӣ"
+      ],
       "explanation_fa": "دستبندی که رستم به تهمینه داده بود.",
       "explanation_tg": "Дастпонаее, ки Рустам ба Таҳминӣ дода буд."
     },
@@ -568,15 +1197,33 @@
       "chapter_slug": "sohrab",
       "quiz_part": 4,
       "question": "On whose side does Sohrab ride into Iran?",
-      "answers": ["Iran", "Turan", "Mazandaran", "Hindustan"],
+      "answers": [
+        "Iran",
+        "Turan",
+        "Mazandaran",
+        "Hindustan"
+      ],
       "correct_answer": 1,
       "explanation": "He leads Turan's army searching for his father.",
-      "reward": { "xp": 230, "real": 105 },
+      "reward": {
+        "xp": 230,
+        "real": 105
+      },
       "difficulty": "medium",
       "question_fa": "سهراب در سپاه چه کسی به ایران تاخت؟",
       "question_tg": "Суҳроб дар сипоҳи кӣ ба Эрон ҳуҷум кард?",
-      "answers_fa": ["ایران", "توران", "مازندران", "هندوستان"],
-      "answers_tg": ["Эрон", "Турон", "Мозандарон", "Ҳиндустон"],
+      "answers_fa": [
+        "ایران",
+        "توران",
+        "مازندران",
+        "هندوستان"
+      ],
+      "answers_tg": [
+        "Эрон",
+        "Турон",
+        "Мозандарон",
+        "Ҳиндустон"
+      ],
       "explanation_fa": "او ارتش توران را به دنبال پدرش هدایت کرد.",
       "explanation_tg": "Ӯ артиши Туронро дар ҷустуҷӯи падараш роҳбарӣ кард."
     },
@@ -585,15 +1232,33 @@
       "chapter_slug": "sohrab",
       "quiz_part": 5,
       "question": "Who falls in their final duel?",
-      "answers": ["Rostam", "Sohrab", "Both", "Neither"],
+      "answers": [
+        "Rostam",
+        "Sohrab",
+        "Both",
+        "Neither"
+      ],
       "correct_answer": 1,
       "explanation": "Sohrab — the bracelet revealed too late.",
-      "reward": { "xp": 250, "real": 115 },
+      "reward": {
+        "xp": 250,
+        "real": 115
+      },
       "difficulty": "hard",
       "question_fa": "در دوئل نهایی آن‌ها چه کسی افتاد؟",
       "question_tg": "Дар дуэли ниҳоии онҳо кӣ уфтод?",
-      "answers_fa": ["رستم", "سهراب", "هر دو", "هیچ‌کدام"],
-      "answers_tg": ["Рустам", "Суҳроб", "Ҳарду", "Ҳеч кадоме"],
+      "answers_fa": [
+        "رستم",
+        "سهراب",
+        "هر دو",
+        "هیچ‌کدام"
+      ],
+      "answers_tg": [
+        "Рустам",
+        "Суҳроб",
+        "Ҳарду",
+        "Ҳеч кадоме"
+      ],
       "explanation_fa": "سهراب — دستبند خیلی دیر شناخته شد.",
       "explanation_tg": "Суҳроб — дастпона хеле дер шинохта шуд."
     },
@@ -602,15 +1267,33 @@
       "chapter_slug": "esfandiyar",
       "quiz_part": 1,
       "question": "Where is Esfandiyar vulnerable?",
-      "answers": ["His heels", "His eyes", "His left arm", "His back"],
+      "answers": [
+        "His heels",
+        "His eyes",
+        "His left arm",
+        "His back"
+      ],
       "correct_answer": 1,
       "explanation": "His eyes — kept shut during the fire bath.",
-      "reward": { "xp": 180, "real": 80 },
+      "reward": {
+        "xp": 180,
+        "real": 80
+      },
       "difficulty": "medium",
       "question_fa": "اسفندیار کجا آسیب‌پذیر است؟",
       "question_tg": "Исфандиёр дар куҷо осебпазир аст?",
-      "answers_fa": ["پاشنه‌هایش", "چشمانش", "بازوی چپش", "پشتش"],
-      "answers_tg": ["Пошнаҳояш", "Чашмонаш", "Бозуи чапаш", "Пушташ"],
+      "answers_fa": [
+        "پاشنه‌هایش",
+        "چشمانش",
+        "بازوی چپش",
+        "پشتش"
+      ],
+      "answers_tg": [
+        "Пошнаҳояш",
+        "Чашмонаш",
+        "Бозуи чапаш",
+        "Пушташ"
+      ],
       "explanation_fa": "چشمانش — هنگام حمام آتش بسته نگه داشته شد.",
       "explanation_tg": "Чашмонаш — ҳангоми ҳаммоми оташ пӯшида нигоҳ дошта шуд."
     },
@@ -619,15 +1302,33 @@
       "chapter_slug": "esfandiyar",
       "quiz_part": 2,
       "question": "Who bathes Esfandiyar in fire?",
-      "answers": ["Rostam", "Zoroaster", "Simorgh", "Kaveh"],
+      "answers": [
+        "Rostam",
+        "Zoroaster",
+        "Simorgh",
+        "Kaveh"
+      ],
       "correct_answer": 1,
       "explanation": "Zoroaster, the prophet.",
-      "reward": { "xp": 200, "real": 90 },
+      "reward": {
+        "xp": 200,
+        "real": 90
+      },
       "difficulty": "medium",
       "question_fa": "چه کسی اسفندیار را در آتش غسل داد؟",
       "question_tg": "Кӣ Исфандиёрро дар оташ ғусл дод?",
-      "answers_fa": ["رستم", "زرتشت", "سیمرغ", "کاوه"],
-      "answers_tg": ["Рустам", "Зардушт", "Симурғ", "Ковае"],
+      "answers_fa": [
+        "رستم",
+        "زرتشت",
+        "سیمرغ",
+        "کاوه"
+      ],
+      "answers_tg": [
+        "Рустам",
+        "Зардушт",
+        "Симурғ",
+        "Ковае"
+      ],
       "explanation_fa": "زرتشت، پیامبر.",
       "explanation_tg": "Зардушт, паёмбар."
     },
@@ -636,15 +1337,33 @@
       "chapter_slug": "esfandiyar",
       "quiz_part": 3,
       "question": "Who eventually defeats Esfandiyar?",
-      "answers": ["Zal", "Rostam", "Sohrab", "Fereydun"],
+      "answers": [
+        "Zal",
+        "Rostam",
+        "Sohrab",
+        "Fereydun"
+      ],
       "correct_answer": 1,
       "explanation": "Rostam, with a Simorgh-feathered arrow.",
-      "reward": { "xp": 220, "real": 100 },
+      "reward": {
+        "xp": 220,
+        "real": 100
+      },
       "difficulty": "hard",
       "question_fa": "در نهایت چه کسی اسفندیار را شکست داد؟",
       "question_tg": "Дар ниҳоят кӣ Исфандиёрро шикаст дод?",
-      "answers_fa": ["زال", "رستم", "سهراب", "فریدون"],
-      "answers_tg": ["Зол", "Рустам", "Суҳроб", "Фаридун"],
+      "answers_fa": [
+        "زال",
+        "رستم",
+        "سهراب",
+        "فریدون"
+      ],
+      "answers_tg": [
+        "Зол",
+        "Рустам",
+        "Суҳроб",
+        "Фаридун"
+      ],
       "explanation_fa": "رستم، با تیر پر سیمرغ.",
       "explanation_tg": "Рустам, бо тири пари Симурғ."
     },
@@ -653,15 +1372,33 @@
       "chapter_slug": "esfandiyar",
       "quiz_part": 4,
       "question": "What completes the seven labours of Esfandiyar?",
-      "answers": ["Crossing the salt desert", "Killing the serpent", "Defeating Arjasp", "All of the above"],
+      "answers": [
+        "Crossing the salt desert",
+        "Killing the serpent",
+        "Defeating Arjasp",
+        "All of the above"
+      ],
       "correct_answer": 3,
       "explanation": "All of these, plus more.",
-      "reward": { "xp": 240, "real": 110 },
+      "reward": {
+        "xp": 240,
+        "real": 110
+      },
       "difficulty": "hard",
       "question_fa": "چه چیزی هفت آزمون اسفندیار را کامل می‌کند؟",
       "question_tg": "Ҳафт озмуни Исфандиёрро чӣ тамом мекунад?",
-      "answers_fa": ["عبور از کویر نمک", "کشتن مار", "شکست دادن ارجاسپ", "همه‌ی موارد فوق"],
-      "answers_tg": ["Убур аз биёбони намак", "Куштани мор", "Шикасти Арҷосп", "Ҳамаи мавриди боло"],
+      "answers_fa": [
+        "عبور از کویر نمک",
+        "کشتن مار",
+        "شکست دادن ارجاسپ",
+        "همه‌ی موارد فوق"
+      ],
+      "answers_tg": [
+        "Убур аз биёбони намак",
+        "Куштани мор",
+        "Шикасти Арҷосп",
+        "Ҳамаи мавриди боло"
+      ],
       "explanation_fa": "همه‌ی اینها، به علاوه بیشتر.",
       "explanation_tg": "Ҳамаи инҳо, ба илова бештар."
     },
@@ -670,15 +1407,33 @@
       "chapter_slug": "esfandiyar",
       "quiz_part": 5,
       "question": "What kingdom does Esfandiyar's father rule?",
-      "answers": ["Pars", "Kayanian Iran", "Turan", "Hindustan"],
+      "answers": [
+        "Pars",
+        "Kayanian Iran",
+        "Turan",
+        "Hindustan"
+      ],
       "correct_answer": 1,
       "explanation": "Goshtasp, of the Kayanian dynasty.",
-      "reward": { "xp": 260, "real": 120 },
+      "reward": {
+        "xp": 260,
+        "real": 120
+      },
       "difficulty": "hard",
       "question_fa": "پدر اسفندیار بر کدام پادشاهی حکومت می‌کند؟",
       "question_tg": "Падари Исфандиёр бар кадом шоҳӣ ҳукм мекунад?",
-      "answers_fa": ["پارس", "ایران کیانی", "توران", "هندوستان"],
-      "answers_tg": ["Порс", "Эрони Кёниён", "Турон", "Ҳиндустон"],
+      "answers_fa": [
+        "پارس",
+        "ایران کیانی",
+        "توران",
+        "هندوستان"
+      ],
+      "answers_tg": [
+        "Порс",
+        "Эрони Кёниён",
+        "Турон",
+        "Ҳиндустон"
+      ],
       "explanation_fa": "گشتاسپ، از خاندان کیانی.",
       "explanation_tg": "Гуштосп, аз хонадони Кёниён."
     },
@@ -687,15 +1442,33 @@
       "chapter_slug": "simorgh",
       "quiz_part": 1,
       "question": "Whose family does Simorgh protect across generations?",
-      "answers": ["Jamshid", "Zal and Rostam", "Fereydun", "Keyumars"],
+      "answers": [
+        "Jamshid",
+        "Zal and Rostam",
+        "Fereydun",
+        "Keyumars"
+      ],
       "correct_answer": 1,
       "explanation": "From Zal's childhood through Rostam's last duel.",
-      "reward": { "xp": 200, "real": 90 },
+      "reward": {
+        "xp": 200,
+        "real": 90
+      },
       "difficulty": "easy",
       "question_fa": "سیمرغ از خانواده‌ی چه کسی در طول نسل‌ها محافظت می‌کند؟",
       "question_tg": "Симурғ аз оилаи кӣ дар тӯли насл-ҳо муҳофизат мекунад?",
-      "answers_fa": ["جمشید", "زال و رستم", "فریدون", "کیومرث"],
-      "answers_tg": ["Ҷамшид", "Зол ва Рустам", "Фаридун", "Каюмарс"],
+      "answers_fa": [
+        "جمشید",
+        "زال و رستم",
+        "فریدون",
+        "کیومرث"
+      ],
+      "answers_tg": [
+        "Ҷамшид",
+        "Зол ва Рустам",
+        "Фаридун",
+        "Каюмарс"
+      ],
       "explanation_fa": "از دوران کودکی زال تا دوئل آخر رستم.",
       "explanation_tg": "Аз давраи кӯдакии Зол то дуэли охирини Рустам."
     },
@@ -704,15 +1477,33 @@
       "chapter_slug": "simorgh",
       "quiz_part": 2,
       "question": "When is the Simorgh's feather burned?",
-      "answers": ["At every battle", "In greatest need", "Only at noon", "Once each generation"],
+      "answers": [
+        "At every battle",
+        "In greatest need",
+        "Only at noon",
+        "Once each generation"
+      ],
       "correct_answer": 1,
       "explanation": "Greatest need only — Rudabeh's labour and Esfandiyar's arrow.",
-      "reward": { "xp": 220, "real": 100 },
+      "reward": {
+        "xp": 220,
+        "real": 100
+      },
       "difficulty": "medium",
       "question_fa": "پر سیمرغ کی سوزانده می‌شود؟",
       "question_tg": "Пари Симурғ кай сӯзонда мешавад?",
-      "answers_fa": ["در هر نبرد", "در بزرگترین نیاز", "فقط در ظهر", "یک بار در هر نسل"],
-      "answers_tg": ["Дар ҳар набард", "Дар бузургтарин эҳтиёҷ", "Танҳо дар зуҳр", "Як бор дар ҳар насл"],
+      "answers_fa": [
+        "در هر نبرد",
+        "در بزرگترین نیاز",
+        "فقط در ظهر",
+        "یک بار در هر نسل"
+      ],
+      "answers_tg": [
+        "Дар ҳар набард",
+        "Дар бузургтарин эҳтиёҷ",
+        "Танҳо дар зуҳр",
+        "Як бор дар ҳар насл"
+      ],
       "explanation_fa": "فقط در بزرگترین نیاز — درد زایمان رودابه و تیر اسفندیار.",
       "explanation_tg": "Танҳо дар бузургтарин эҳтиёҷ — дарди зоён Рӯдоба ва тири Исфандиёр."
     },
@@ -721,15 +1512,33 @@
       "chapter_slug": "simorgh",
       "quiz_part": 3,
       "question": "On which mountain does the Simorgh nest?",
-      "answers": ["Damavand", "Alborz", "Sahand", "Zagros"],
+      "answers": [
+        "Damavand",
+        "Alborz",
+        "Sahand",
+        "Zagros"
+      ],
       "correct_answer": 1,
       "explanation": "The Alborz range in classical readings.",
-      "reward": { "xp": 240, "real": 110 },
+      "reward": {
+        "xp": 240,
+        "real": 110
+      },
       "difficulty": "hard",
       "question_fa": "سیمرغ روی کدام کوه لانه می‌کند؟",
       "question_tg": "Симурғ дар кадом кӯҳ ошёна мекунад?",
-      "answers_fa": ["دماوند", "البرز", "سهند", "زاگرس"],
-      "answers_tg": ["Дамованд", "Алборз", "Саҳанд", "Загрос"],
+      "answers_fa": [
+        "دماوند",
+        "البرز",
+        "سهند",
+        "زاگرس"
+      ],
+      "answers_tg": [
+        "Дамованд",
+        "Алборз",
+        "Саҳанд",
+        "Загрос"
+      ],
       "explanation_fa": "رشته‌ی البرز در قرائت‌های کلاسیک.",
       "explanation_tg": "Куҳи Алборз дар тафсирҳои классикӣ."
     },
@@ -738,15 +1547,33 @@
       "chapter_slug": "simorgh",
       "quiz_part": 4,
       "question": "What colour are the Simorgh's wings?",
-      "answers": ["Silver", "Sun-coloured", "Pearl", "Storm-grey"],
+      "answers": [
+        "Silver",
+        "Sun-coloured",
+        "Pearl",
+        "Storm-grey"
+      ],
       "correct_answer": 1,
       "explanation": "Wings the colour of the sun.",
-      "reward": { "xp": 260, "real": 120 },
+      "reward": {
+        "xp": 260,
+        "real": 120
+      },
       "difficulty": "medium",
       "question_fa": "بال‌های سیمرغ چه رنگی هستند؟",
       "question_tg": "Болҳои Симурғ чӣ ранг доранд?",
-      "answers_fa": ["نقره‌ای", "خورشیدرنگ", "مرواریدی", "خاکستری طوفانی"],
-      "answers_tg": ["Нуқрагӣ", "Офтобранг", "Марворидӣ", "Тӯфонии хокистарӣ"],
+      "answers_fa": [
+        "نقره‌ای",
+        "خورشیدرنگ",
+        "مرواریدی",
+        "خاکستری طوفانی"
+      ],
+      "answers_tg": [
+        "Нуқрагӣ",
+        "Офтобранг",
+        "Марворидӣ",
+        "Тӯфонии хокистарӣ"
+      ],
       "explanation_fa": "بال‌هایی به رنگ خورشید.",
       "explanation_tg": "Болҳое ба ранги офтоб."
     },
@@ -755,15 +1582,33 @@
       "chapter_slug": "simorgh",
       "quiz_part": 5,
       "question": "Whom does Simorgh teach to deliver Rudabeh of Rostam?",
-      "answers": ["Sam", "Zal", "Mehrab", "A physician"],
+      "answers": [
+        "Sam",
+        "Zal",
+        "Mehrab",
+        "A physician"
+      ],
       "correct_answer": 1,
       "explanation": "She instructs Zal in the first rostam-zad — caesarean birth.",
-      "reward": { "xp": 280, "real": 130 },
+      "reward": {
+        "xp": 280,
+        "real": 130
+      },
       "difficulty": "hard",
       "question_fa": "سیمرغ به چه کسی یاد داد که رودابه را از رستم رها کند؟",
       "question_tg": "Симурғ ба кӣ ёд дод ки Рӯдобаро аз Рустам халос кунад?",
-      "answers_fa": ["سام", "زال", "مهراب", "پزشکی"],
-      "answers_tg": ["Сом", "Зол", "Меҳроб", "Табибе"],
+      "answers_fa": [
+        "سام",
+        "زال",
+        "مهراب",
+        "پزشکی"
+      ],
+      "answers_tg": [
+        "Сом",
+        "Зол",
+        "Меҳроб",
+        "Табибе"
+      ],
       "explanation_fa": "به زال آموخت در اولین رستم‌زاد — ولادت سزارین.",
       "explanation_tg": "Ба Зол ёд дод дар аввалин рустамзод — зояндагии кайсарӣ."
     },
@@ -772,15 +1617,33 @@
       "chapter_slug": "ages-end",
       "quiz_part": 1,
       "question": "Who is the legendary author of the Shahnameh?",
-      "answers": ["Rumi", "Hafez", "Ferdowsi", "Saadi"],
+      "answers": [
+        "Rumi",
+        "Hafez",
+        "Ferdowsi",
+        "Saadi"
+      ],
       "correct_answer": 2,
       "explanation": "Ferdowsi of Tus, over 30+ years of work.",
-      "reward": { "xp": 250, "real": 110 },
+      "reward": {
+        "xp": 250,
+        "real": 110
+      },
       "difficulty": "easy",
       "question_fa": "نویسنده‌ی افسانه‌ای شاهنامه کیست؟",
       "question_tg": "Муаллифи афсонавии Шоҳнома кист?",
-      "answers_fa": ["رومی", "حافظ", "فردوسی", "سعدی"],
-      "answers_tg": ["Румӣ", "Ҳофиз", "Фирдавсӣ", "Саъдӣ"],
+      "answers_fa": [
+        "رومی",
+        "حافظ",
+        "فردوسی",
+        "سعدی"
+      ],
+      "answers_tg": [
+        "Румӣ",
+        "Ҳофиз",
+        "Фирдавсӣ",
+        "Саъдӣ"
+      ],
       "explanation_fa": "فردوسی توسی، در طول بیش از ۳۰ سال کار.",
       "explanation_tg": "Фирдавсии Тусӣ, дар тӯли беш аз 30 соли кор."
     },
@@ -789,15 +1652,33 @@
       "chapter_slug": "ages-end",
       "quiz_part": 2,
       "question": "How many verses does the Shahnameh contain (approx)?",
-      "answers": ["10,000", "30,000", "60,000", "120,000"],
+      "answers": [
+        "10,000",
+        "30,000",
+        "60,000",
+        "120,000"
+      ],
       "correct_answer": 2,
       "explanation": "About 60,000 couplets.",
-      "reward": { "xp": 280, "real": 125 },
+      "reward": {
+        "xp": 280,
+        "real": 125
+      },
       "difficulty": "medium",
       "question_fa": "شاهنامه تقریباً چند بیت دارد؟",
       "question_tg": "Шоҳнома тақрибан чанд байт дорад?",
-      "answers_fa": ["۱۰٬۰۰۰", "۳۰٬۰۰۰", "۶۰٬۰۰۰", "۱۲۰٬۰۰۰"],
-      "answers_tg": ["10,000", "30,000", "60,000", "120,000"],
+      "answers_fa": [
+        "۱۰٬۰۰۰",
+        "۳۰٬۰۰۰",
+        "۶۰٬۰۰۰",
+        "۱۲۰٬۰۰۰"
+      ],
+      "answers_tg": [
+        "10,000",
+        "30,000",
+        "60,000",
+        "120,000"
+      ],
       "explanation_fa": "حدود ۶۰٬۰۰۰ بیت.",
       "explanation_tg": "Тақрибан 60,000 байт."
     },
@@ -806,15 +1687,33 @@
       "chapter_slug": "ages-end",
       "quiz_part": 3,
       "question": "From what city is Ferdowsi?",
-      "answers": ["Isfahan", "Shiraz", "Tus", "Nishapur"],
+      "answers": [
+        "Isfahan",
+        "Shiraz",
+        "Tus",
+        "Nishapur"
+      ],
       "correct_answer": 2,
       "explanation": "Tus, in Khorasan.",
-      "reward": { "xp": 310, "real": 140 },
+      "reward": {
+        "xp": 310,
+        "real": 140
+      },
       "difficulty": "medium",
       "question_fa": "فردوسی از کدام شهر است؟",
       "question_tg": "Фирдавсӣ аз кадом шаҳр аст?",
-      "answers_fa": ["اصفهان", "شیراز", "توس", "نیشابور"],
-      "answers_tg": ["Исфаҳон", "Шероз", "Тус", "Нишопур"],
+      "answers_fa": [
+        "اصفهان",
+        "شیراز",
+        "توس",
+        "نیشابور"
+      ],
+      "answers_tg": [
+        "Исфаҳон",
+        "Шероз",
+        "Тус",
+        "Нишопур"
+      ],
       "explanation_fa": "توس، در خراسان.",
       "explanation_tg": "Тус, дар Хуросон."
     },
@@ -823,15 +1722,33 @@
       "chapter_slug": "ages-end",
       "quiz_part": 4,
       "question": "Which dynasty is the spiritual heart of the Shahnameh?",
-      "answers": ["Achaemenid", "Sassanid", "Kayanian", "Pishdadian"],
+      "answers": [
+        "Achaemenid",
+        "Sassanid",
+        "Kayanian",
+        "Pishdadian"
+      ],
       "correct_answer": 2,
       "explanation": "The Kayanian dynasty — Kay Kavus, Kay Khosrow, Goshtasp.",
-      "reward": { "xp": 340, "real": 155 },
+      "reward": {
+        "xp": 340,
+        "real": 155
+      },
       "difficulty": "hard",
       "question_fa": "کدام سلسله قلب معنوی شاهنامه است؟",
       "question_tg": "Кадом сулола қалби маънавии Шоҳнома аст?",
-      "answers_fa": ["هخامنشی", "ساسانی", "کیانی", "پیشدادی"],
-      "answers_tg": ["Ҳахоманишӣ", "Сосонӣ", "Кёниён", "Пешдодиён"],
+      "answers_fa": [
+        "هخامنشی",
+        "ساسانی",
+        "کیانی",
+        "پیشدادی"
+      ],
+      "answers_tg": [
+        "Ҳахоманишӣ",
+        "Сосонӣ",
+        "Кёниён",
+        "Пешдодиён"
+      ],
       "explanation_fa": "سلسله‌ی کیانی — کیکاووس، کیخسرو، گشتاسپ.",
       "explanation_tg": "Сулолаи Кёниён — Кайковус, Кайхусрав, Гуштосп."
     },
@@ -840,15 +1757,33 @@
       "chapter_slug": "ages-end",
       "quiz_part": 5,
       "question": "How many books make up the Shahnameh?",
-      "answers": ["Three", "Five", "Seven", "Fifty"],
+      "answers": [
+        "Three",
+        "Five",
+        "Seven",
+        "Fifty"
+      ],
       "correct_answer": 3,
       "explanation": "Approximately fifty separate stories/sections.",
-      "reward": { "xp": 370, "real": 170 },
+      "reward": {
+        "xp": 370,
+        "real": 170
+      },
       "difficulty": "hard",
       "question_fa": "شاهنامه از چند کتاب تشکیل شده است؟",
       "question_tg": "Шоҳнома аз чанд китоб иборат аст?",
-      "answers_fa": ["سه", "پنج", "هفت", "پنجاه"],
-      "answers_tg": ["Се", "Панҷ", "Ҳафт", "Панҷоҳ"],
+      "answers_fa": [
+        "سه",
+        "پنج",
+        "هفت",
+        "پنجاه"
+      ],
+      "answers_tg": [
+        "Се",
+        "Панҷ",
+        "Ҳафт",
+        "Панҷоҳ"
+      ],
       "explanation_fa": "تقریباً پنجاه داستان/بخش جداگانه.",
       "explanation_tg": "Тақрибан панҷоҳ ҳикоя/қисмати алоҳида."
     },
@@ -857,15 +1792,33 @@
       "chapter_slug": "ages-end",
       "quiz_part": 6,
       "question": "What is Ferdowsi's most famous boast at the poem's close?",
-      "answers": ["I have made a kingdom", "I have built a palace of words", "I shall live by what I wrote", "All of the above are paraphrases"],
+      "answers": [
+        "I have made a kingdom",
+        "I have built a palace of words",
+        "I shall live by what I wrote",
+        "All of the above are paraphrases"
+      ],
       "correct_answer": 3,
       "explanation": "All paraphrase the closing verse — \"I shall live by what I wrote\".",
-      "reward": { "xp": 400, "real": 200 },
+      "reward": {
+        "xp": 400,
+        "real": 200
+      },
       "difficulty": "hard",
       "question_fa": "مشهورترین افتخار فردوسی در پایان شعر چیست؟",
       "question_tg": "Машҳуртарин ифтихори Фирдавсӣ дар поёни шеър чист?",
-      "answers_fa": ["من پادشاهی ساختم", "من قصری از کلمات ساختم", "با آنچه نوشتم زنده خواهم ماند", "همه‌ی موارد بالا تعابیر هستند"],
-      "answers_tg": ["Ман шоҳӣ сохтам", "Ман қасре аз калима сохтам", "Бо он чи навиштам зинда хоҳам монд", "Ҳамаи мавриди боло тафсирҳоянд"],
+      "answers_fa": [
+        "من پادشاهی ساختم",
+        "من قصری از کلمات ساختم",
+        "با آنچه نوشتم زنده خواهم ماند",
+        "همه‌ی موارد بالا تعابیر هستند"
+      ],
+      "answers_tg": [
+        "Ман шоҳӣ сохтам",
+        "Ман қасре аз калима сохтам",
+        "Бо он чи навиштам зинда хоҳам монд",
+        "Ҳамаи мавриди боло тафсирҳоянд"
+      ],
       "explanation_fa": "همه ترجمان مصراع پایانی — «زنده ماندم بدان‌چه نوشتم».",
       "explanation_tg": "Ҳама тарҷумони байти поёнӣ — «Зинда мондам бад-ончи навиштам»."
     }
