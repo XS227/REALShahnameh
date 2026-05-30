@@ -271,7 +271,7 @@
               <div class="clan-cta-sub">${t('clan_no_clan_sub')}</div>
             </div>
           </div>
-          <a href="social.html" class="secondary-btn" style="white-space:nowrap;font-size:11px;padding:6px 12px;">${t('your_clan_header')}</a>`;
+          <a href="social.html#clan" class="secondary-btn" style="white-space:nowrap;font-size:11px;padding:6px 12px;">${t('your_clan_header')}</a>`;
       }
       return;
     }
@@ -323,7 +323,7 @@
           <span class="clan-stat-lbl">${t('clan_earned_lbl')}</span>
         </div>
       </div>
-      <a href="social.html" class="ghost-btn btn-block" style="margin-top:12px;text-align:center;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:12px;">
+      <a href="social.html#clan" class="ghost-btn btn-block" style="margin-top:12px;text-align:center;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:12px;">
         ${t('your_clan_header')} →
       </a>`;
 
@@ -409,6 +409,85 @@
         el.style.display = '';
       }
     } catch {}
+  };
+
+  /* ── Clan invites inbox ──────────────────────────────────────────────── */
+  const loadClanInvites = async (tgId) => {
+    const section  = document.getElementById('clan-invites-section');
+    const listEl   = document.getElementById('clan-invites-list');
+    const countEl  = document.getElementById('clan-invites-count');
+    if (!section || !listEl) return;
+
+    const data = await apiGet('/api/season2/clan/my-invites?telegram_id=' + encodeURIComponent(tgId));
+    const invites = (data && data.status === 1) ? data.invites : [];
+    if (!invites.length) { section.style.display = 'none'; return; }
+
+    section.style.display = '';
+    if (countEl) countEl.textContent = invites.length + ' pending';
+
+    listEl.innerHTML = invites.map(inv => `
+      <article class="card" style="padding:12px 14px;margin-bottom:8px;" data-invite-id="${escHtml(inv.invite_id)}">
+        <div style="display:flex;align-items:center;gap:10px;">
+          ${inv.clan_photo
+            ? `<img src="${escHtml(inv.clan_photo)}" style="width:40px;height:40px;border-radius:50%;object-fit:cover;" alt="" onerror="this.outerHTML='<div class=clan-badge-large style=width:40px;height:40px;font-size:16px;>${escHtml(inv.clan_name.charAt(0).toUpperCase())}</div>'">`
+            : `<div style="width:40px;height:40px;border-radius:50%;background:var(--card2,#1a1c2e);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:var(--gold);">${escHtml(inv.clan_name.charAt(0).toUpperCase())}</div>`
+          }
+          <div style="flex:1;min-width:0;">
+            <div style="font-weight:600;font-size:13px;">${escHtml(inv.clan_name)}</div>
+            <div style="font-size:11px;color:var(--muted);">Invited by ${escHtml(inv.inviter_name)} · ${inv.member_count} members</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button class="primary-btn invite-accept-btn" data-id="${escHtml(inv.invite_id)}" style="flex:1;font-size:12px;padding:7px 0;">✓ Join Clan</button>
+          <button class="secondary-btn invite-decline-btn" data-id="${escHtml(inv.invite_id)}" style="flex:1;font-size:12px;padding:7px 0;">✗ Decline</button>
+        </div>
+      </article>`).join('');
+
+    listEl.querySelectorAll('.invite-accept-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const inviteId = btn.dataset.id;
+        btn.disabled = true; btn.textContent = '…';
+        const res = await fetch('/api/season2/clan/accept-invite', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ telegram_id: tgId, invite_id: inviteId }),
+        }).then(r => r.json()).catch(() => null);
+
+        if (res && res.status === 1) {
+          _showToast('You joined ' + (res.clan_name || 'the clan') + '!');
+          listEl.querySelector(`[data-invite-id="${inviteId}"]`)?.remove();
+          if (!listEl.querySelector('[data-invite-id]')) section.style.display = 'none';
+          serverRefresh();
+        } else {
+          const msg = {
+            already_in_clan: 'You are already in a clan.',
+            clan_full:       'That clan is now full.',
+            invite_not_found:'Invite no longer available.',
+          }[res?.error] || 'Could not join. Try again.';
+          _showToast(msg);
+          btn.disabled = false; btn.textContent = '✓ Join Clan';
+        }
+      });
+    });
+
+    listEl.querySelectorAll('.invite-decline-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const inviteId = btn.dataset.id;
+        btn.disabled = true; btn.textContent = '…';
+        const res = await fetch('/api/season2/clan/decline-invite', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ telegram_id: tgId, invite_id: inviteId }),
+        }).then(r => r.json()).catch(() => null);
+
+        if (res && res.status === 1) {
+          listEl.querySelector(`[data-invite-id="${inviteId}"]`)?.remove();
+          if (!listEl.querySelector('[data-invite-id]')) section.style.display = 'none';
+        } else {
+          btn.disabled = false; btn.textContent = '✗ Decline';
+        }
+      });
+    });
   };
 
   /* ── Fetch helpers ────────────────────────────────────────────────────── */
@@ -566,8 +645,9 @@
                 body: JSON.stringify({ telegram_id: myId, target_telegram_id: _visitUid }),
               }).then(x => x.json());
               if (r.status === 1) {
-                _showToast('Player added to ' + (r.clan_name || 'your clan') + '!');
-                btn.textContent = 'Joined!';
+                _showToast('Invite sent to ' + (r.clan_name || 'your clan') + '!');
+                btn.disabled = true;
+                btn.textContent = 'Invite Sent ✓';
               } else {
                 const msg = {
                   not_leader: 'You are not a clan leader.',
@@ -635,6 +715,9 @@
 
     /* Initial render */
     renderAll();
+
+    /* Load pending clan invites (only shown when player has no clan yet) */
+    if (!clan) loadClanInvites(String(_tg.id));
 
     /* Live update on client-side state changes (instant) */
     window.addEventListener('balanceUpdate',       renderAll);

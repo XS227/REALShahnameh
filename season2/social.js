@@ -1036,6 +1036,16 @@
       loadEvents(),
       loadActivity(),
     ]);
+
+    /* If navigated here via #clan (e.g. from "My Clan" button on profile page),
+       scroll the clan section into view after all content has rendered. */
+    if (location.hash === '#clan') {
+      const clanEl = document.getElementById('my-clan');
+      if (clanEl) {
+        setTimeout(() => clanEl.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+      }
+      history.replaceState(null, '', location.pathname);
+    }
   };
 
   if (document.readyState === 'loading') {
