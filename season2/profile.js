@@ -71,7 +71,7 @@
   const ACHIEVEMENTS = [
     { id: 'first_strike',  icon: '⚡',  nameKey: 'ach_first_strike_name', descKey: 'ach_first_strike_desc', check: u => (u.xp || 0) > 0 },
     { id: 'season1',       icon: '🏛',  nameKey: 'ach_s1_name',           descKey: 'ach_s1_desc',           check: _u => !!(window.RealPlayer && window.RealPlayer.get && window.RealPlayer.get().isSeason1Player) },
-    { id: 'clan_founder',  icon: '🛡',  nameKey: 'ach_clan_founder_name', descKey: 'ach_clan_founder_desc', check: u => (u.verified_referral_count || 0) >= 1 },
+    { id: 'clan_founder',  icon: '🛡',  nameKey: 'ach_clan_founder_name', descKey: 'ach_clan_founder_desc', check: _u => !!(_clanData && (_clanData.member_count || 0) >= 3) },
     { id: 'daily_champ',   icon: '🔥',  nameKey: 'ach_7day_name',         descKey: 'ach_7day_desc',         check: u => (u.daily_streak || 0) >= 7 },
     { id: 'check_in',      icon: '📅',  nameKey: 'ach_chronicle_name',    descKey: 'ach_chronicle_desc',    check: u => !!(u.last_checkin_date) },
     { id: 'rich_warrior',  icon: null,  nameKey: 'ach_rich_name',         descKey: 'ach_rich_desc',

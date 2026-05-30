@@ -972,7 +972,7 @@
       ach_first_strike_name: "اولین ضربه",
       ach_first_strike_desc: "بر سندان بزن و XP کسب کن",
       ach_clan_founder_name: "بنیانگذار کلان",
-      ach_clan_founder_desc: "اولین رزمنده‌ات را جذب کن",
+      ach_clan_founder_desc: "کلانت را به ۳ عضو برسان",
       ach_7day_name:         "رشته‌ی ۷ روزه",
       ach_7day_desc:         "۷ روز پشت سر هم وارد شو",
       ach_chronicle_name:    "نگهبان کرونیکل",

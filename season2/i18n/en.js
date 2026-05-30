@@ -968,7 +968,7 @@
       ach_first_strike_name: "First Strike",
       ach_first_strike_desc: "Strike the Anvil and earn XP",
       ach_clan_founder_name: "Clan Founder",
-      ach_clan_founder_desc: "Recruit your first warrior",
+      ach_clan_founder_desc: "Grow your clan to 3 members",
       ach_7day_name:         "7-Day Streak",
       ach_7day_desc:         "Login 7 days in a row",
       ach_chronicle_name:    "Chronicle Keeper",

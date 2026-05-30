@@ -902,7 +902,7 @@
       ach_first_strike_name: "Аввалин зарба",
       ach_first_strike_desc: "Ба синдон зан ва XP ба даст ор",
       ach_clan_founder_name: "Бунёдгузори клан",
-      ach_clan_founder_desc: "Аввалин ҷангиятро ҷалб кун",
+      ach_clan_founder_desc: "Клонатро то 3 аъзо расон",
       ach_7day_name:         "Силсилаи 7 рӯза",
       ach_7day_desc:         "7 рӯзи пай дар пай ворид шав",
       ach_chronicle_name:    "Нигаҳбони хроника",
