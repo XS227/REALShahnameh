@@ -1,0 +1,423 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-30T00:00:00Z",
+  "chapter_slug": "jamshid",
+  "chapter_id": 4,
+  "era": {
+    "label_en": "~5700–5400 BC — Age of Jamshid",
+    "label_fa": "~۵۷۰۰–۵۴۰۰ پ.م — عصر جمشید"
+  },
+  "lore_summary": {
+    "en": "Tahmuras leaves a world that can write. His son Jamshid takes that world and builds it into something the chronicle has never seen: a civilization without death. He divides the people into four orders. He raises a crystal throne. On the first Nowruz, demons carry him into the sky and the world watches from below, amazed. For three hundred years no one ages, no one falls ill, no bird or beast suffers. Then pride enters — not with a shout but with a whisper. Jamshid assembles his nobles and says: I am the source of all things. The sky hears him. The farr — the divine grace that made him king — departs. And from the south, a shadow begins the long walk north.",
+    "fa": "تهمورث جهانی می‌گذارد که می‌تواند بنویسد. پسرش جمشید آن جهان را می‌گیرد و به چیزی می‌سازد که این تاریخ هرگز ندیده: تمدنی بدونِ مرگ. مردم را به چهار طبقه تقسیم می‌کند. تختِ بلورین برپا می‌کند. در اولین نوروز، دیوان او را به آسمان می‌برند و جهان از پایین شگفت‌زده می‌نگرد. سیصد سال کسی پیر نمی‌شود، کسی بیمار نمی‌افتد، هیچ پرنده یا جانوری رنج نمی‌برد. آنگاه غرور می‌آید — نه با فریاد که با نجوا. جمشید بزرگانش را جمع می‌کند و می‌گوید: من سرچشمه‌ی همه چیزم. آسمان می‌شنود. فَر — موهبتِ الهی که شاهش کرده بود — می‌رود. و از جنوب، سایه‌ای راهِ درازِ شمال را آغاز می‌کند."
+  },
+  "timeline": [
+    {
+      "id": "the-four-orders",
+      "year_label_en": "~5700 BC",
+      "year_label_fa": "~۵۷۰۰ پ.م",
+      "title_en": "The Four Orders of Civilization",
+      "title_fa": "چهار طبقه‌ی تمدن",
+      "body_en": "Jamshid divides the people into Mobeds (priests who tend the sacred fire), Arteshtars (warriors who hold the border), Vastoshan (farmers who feed the world), and Ahnukhoshian (craftsmen who build what endures). Each group receives its place, its purpose, and its name.",
+      "body_fa": "جمشید مردم را به موبدان (روحانیانی که آتشِ مقدس را نگه می‌دارند)، ارتشتاران (جنگاورانی که مرز را حفظ می‌کنند)، واستوشان (کشاورزانی که جهان را تغذیه می‌کنند) و اهنوخوشان (پیشه‌ورانی که آنچه ماندگار است را می‌سازند) تقسیم می‌کند.",
+      "image": "/assets/images/locations/royal-mountain-court.png",
+      "side": "light"
+    },
+    {
+      "id": "nowruz-ascent",
+      "year_label_en": "~5650 BC",
+      "year_label_fa": "~۵۶۵۰ پ.م",
+      "title_en": "The Nowruz Ascent",
+      "title_fa": "صعودِ نوروز",
+      "body_en": "On the first day of the new year, Jamshid sits on his crystal throne and commands the demons to lift him into the sky. The world watches. The sun strikes the crystal and the throne blazes like a second sun. This day — the day of his ascent — becomes Nowruz, the New Year, still celebrated today.",
+      "body_fa": "در اولین روزِ سالِ نو، جمشید بر تختِ بلورینش می‌نشیند و به دیوان فرمان می‌دهد او را به آسمان بالا برند. جهان نظاره می‌کند. خورشید به بلور می‌تابد و تخت چون خورشیدِ دوم می‌درخشد. این روز — روزِ صعودِ او — نوروز می‌شود، سالِ نو، که هنوز جشن گرفته می‌شود.",
+      "image": "/assets/images/locations/crystal-throne-location.png",
+      "side": "light"
+    },
+    {
+      "id": "the-farr-departs",
+      "year_label_en": "~5400 BC",
+      "year_label_fa": "~۵۴۰۰ پ.م",
+      "title_en": "The Farr Departs",
+      "title_fa": "رفتنِ فَر",
+      "body_en": "After three hundred years, Jamshid assembles his court and claims to be the source of all things — life, order, the sky itself. The farr, the divine grace that had made him king, hears him. It leaves. Not slowly — all at once, like a fire that has been breathing pure air suddenly handed a lungful of smoke.",
+      "body_fa": "پس از سیصد سال، جمشید دربارش را جمع می‌کند و ادعا می‌کند سرچشمه‌ی همه چیز است — زندگی، نظم، خودِ آسمان. فَر، موهبتِ الهی که شاهش کرده بود، می‌شنود. می‌رود. نه به‌تدریج — یکباره، مثلِ آتشی که هوای پاک می‌کشید و ناگهان دهانه‌ای پر از دود یافت.",
+      "image": null,
+      "side": "dark"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "heir-of-writing",
+      "order": 1,
+      "title_en": "Heir of Writing",
+      "title_fa": "وارثِ نوشتار",
+      "era_en": "~5700 BC",
+      "era_fa": "~۵۷۰۰ پ.م",
+      "body_en": "The clay tablets are still warm from Tahmuras' hands. Jamshid takes them and reads them twice — not because he needs to read them twice, but because he wants to understand not just the letters but the decision behind them. His father traded mercy for knowledge. He intends to trade knowledge for permanence. The tablets go into a stone room. The demons are given new instructions. A civilization that can write can now plan.",
+      "body_fa": "لوح‌های گِلی هنوز از دستانِ تهمورث گرمند. جمشید آن‌ها را می‌گیرد و دو بار می‌خواند — نه به این دلیل که نیاز دارد دو بار بخواند، بلکه چون می‌خواهد نه فقط حروف را بفهمد بلکه تصمیمِ پشتِ آن‌ها را. پدرش رحمت را با دانش معامله کرد. او می‌خواهد دانش را با ماندگاری معامله کند. لوح‌ها به اتاقی سنگی می‌روند. به دیوان دستورهای جدید داده می‌شود. تمدنی که می‌تواند بنویسد اکنون می‌تواند برنامه‌ریزی کند.",
+      "atmosphere": "dawn",
+      "image": "/assets/images/scenes/heir-of-writing-scene.png",
+      "reward": { "xp": 35 },
+      "unlocks_codex": ["jamshid-inheritance"]
+    },
+    {
+      "id": "four-orders",
+      "order": 2,
+      "title_en": "The Four Orders",
+      "title_fa": "چهار طبقه",
+      "era_en": "~5680 BC",
+      "era_fa": "~۵۶۸۰ پ.م",
+      "body_en": "On the first day of his full reign, Jamshid calls the people together and speaks for a long time. He names four groups — not castes, not prisons, but callings, he says: Mobeds to keep the sacred fire and hold the old knowledge. Arteshtars to hold the border and answer what comes across it. Vastoshan to turn the earth and feed what grows. Ahnukhoshian to make the things that last beyond any single life. The people hear their names and go to their places. A civilization has just learned what it is.",
+      "body_fa": "در اولین روزِ شاهیِ کاملش، جمشید مردم را گرد می‌آورد و مدتی طولانی سخن می‌گوید. چهار گروه نام می‌برد — نه کاست، نه زندان، بلکه رسالت، می‌گوید: موبدان تا آتشِ مقدس را نگه دارند و دانشِ کهن را حفظ کنند. ارتشتاران تا مرز را نگه دارند و به آنچه از آن سوی می‌آید پاسخ دهند. واستوشان تا زمین را بگردانند و آنچه می‌روید را تغذیه کنند. اهنوخوشان تا چیزهایی بسازند که از هر زندگیِ تکی فراتر می‌مانند. مردم نامشان را می‌شنوند و به جایگاهشان می‌روند. تمدنی تازه فهمیده که چیست.",
+      "atmosphere": "court",
+      "image": "/assets/images/scenes/four-orders-scene.png",
+      "reward": { "xp": 40 },
+      "unlocks_codex": ["four-orders-codex", "mobeds-codex"]
+    },
+    {
+      "id": "the-crystal-throne",
+      "order": 3,
+      "title_en": "The Crystal Throne",
+      "title_fa": "تختِ بلورین",
+      "era_en": "~5660 BC",
+      "era_fa": "~۵۶۶۰ پ.م",
+      "body_en": "It takes three years to make. Not because the crystal is hard to work — it isn't, once you know how — but because Jamshid insists that every joint be invisible, every facet aligned with the angles of sunrise. When it is finished he does not sit in it immediately. He walks around it seven times, touching the edges. The craftsmen watch. He says nothing. Then he sits, and the sun comes through the crystal and his court is suddenly a room made entirely of light.",
+      "body_fa": "ساختنش سه سال طول می‌کشد. نه به این دلیل که بلور کار کردن با آن سخت است — نیست، وقتی که بدانی چطور — بلکه چون جمشید اصرار دارد هر درزی نامرئی باشد و هر وجهی با زوایای طلوعِ آفتاب هم‌راستا. وقتی تمام می‌شود فوری نمی‌نشیند روی آن. هفت بار دور آن می‌گردد و لبه‌ها را لمس می‌کند. پیشه‌وران نگاه می‌کنند. هیچ نمی‌گوید. بعد می‌نشیند و آفتاب از بلور می‌تابد و دربارش ناگهان اتاقی می‌شود ساخته‌شده از روشنایی.",
+      "atmosphere": "warm",
+      "image": "/assets/images/scenes/crystal-throne-scene.png",
+      "reward": { "xp": 50 },
+      "unlocks_codex": ["crystal-throne-codex"]
+    },
+    {
+      "id": "nowruz",
+      "order": 4,
+      "title_en": "The Nowruz Ascent",
+      "title_fa": "صعودِ نوروز",
+      "era_en": "~5650 BC",
+      "era_fa": "~۵۶۵۰ پ.م",
+      "body_en": "He commands the demons: lift me. They grip the legs of the throne. Slowly, then all at once, the crystal throne rises from the mountain court. The people below go quiet. Then they see the sun strike the crystal and a second light blazes in the sky — not from a star but from a man on a throne — and they cannot help it: they shout. They call the day Nowruz, the new day, the new year. It will be celebrated for six thousand years.",
+      "body_fa": "به دیوان فرمان می‌دهد: بالام برید. پایه‌های تخت را می‌گیرند. آرام، سپس یکباره، تختِ بلورین از درگاهِ کوهستانی بالا می‌رود. مردمِ پایین ساکت می‌شوند. بعد خورشید را می‌بینند که به بلور می‌تابد و روشنایی دومی در آسمان می‌درخشد — نه از ستاره‌ای که از مردی بر تخت — و نمی‌توانند جلویشان را بگیرند: فریاد می‌زنند. آن روز را نوروز می‌نامند، روزِ نو، سالِ نو. شش هزار سال جشن گرفته خواهد شد.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/nowruz-ascent-scene.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["nowruz-origin"]
+    },
+    {
+      "id": "three-hundred-years",
+      "order": 5,
+      "title_en": "Three Hundred Years",
+      "title_fa": "سیصد سال",
+      "era_en": "~5650–5400 BC",
+      "era_fa": "~۵۶۵۰–۵۴۰۰ پ.م",
+      "body_en": "Under Jamshid's reign the world forgets what a funeral looks like. No one dies. No one ages past their prime. The fields give more than planted. The rivers run clear in even the dry months. A child born in this age will not know what it means to watch a parent grow old. The chronicle does not say whether this is a gift or a debt. But it notes, very quietly, that things which do not change do not remember how to be grateful.",
+      "body_fa": "در شاهیِ جمشید جهان فراموش می‌کند مراسمِ خاکسپاری چه شکلی دارد. کسی نمی‌میرد. کسی از اوجِ جوانی پیر نمی‌شود. مزارع بیشتر از آنچه کاشته شده می‌دهند. رودخانه‌ها حتی در ماه‌های خشک زلال جاری‌اند. کودکی که در این عصر به دنیا می‌آید نمی‌داند پدر یا مادری که پیر می‌شود را دیدن چه معناست. شاهنامه نمی‌گوید این هدیه است یا بدهی. اما بسیار آرام می‌نویسد که چیزهایی که تغییر نمی‌کنند یاد می‌گیرند نمی‌دانند چطور شکرگزار باشند.",
+      "atmosphere": "warm",
+      "image": "/assets/images/scenes/three-hundred-years-scene.png",
+      "reward": { "xp": 60 },
+      "unlocks_codex": ["age-without-death"]
+    },
+    {
+      "id": "pride",
+      "order": 6,
+      "title_en": "The Claim",
+      "title_fa": "ادعا",
+      "era_en": "~5400 BC",
+      "era_fa": "~۵۴۰۰ پ.م",
+      "body_en": "Three hundred years into his reign, Jamshid summons his court — every lord, every mobed, every captain of the border — and speaks words no king of this chronicle has spoken before: I am the source of all of this. The fire, the iron, the four orders, the medicine, the ships, the sky you fly through on Nowruz. I am god. The Shahnameh does not describe thunder or earthquake. It says only that after those words, the farr — the divine grace that had sat in him for three hundred years — left his body like a bird off a branch. Quietly, without announcement. There and then not there.",
+      "body_fa": "سیصد سال پس از آغازِ شاهیش، جمشید دربارش را احضار می‌کند — هر سرداری، هر موبدی، هر فرمانده‌ای در مرز — و کلماتی می‌گوید که هیچ شاهِ این تاریخ پیش از آن نگفته: من سرچشمه‌ی همه‌ی این‌هام. آتش، آهن، چهار طبقه، پزشکی، کشتی‌ها، آسمانی که در نوروز از آن می‌پرید. من خدایم. شاهنامه رعد و زلزله توصیف نمی‌کند. تنها می‌گوید پس از آن کلمات، فَر — موهبتِ الهی که سیصد سال در او نشسته بود — مثلِ پرنده‌ای از شاخه‌ای از تنش رفت. آرام، بدونِ اعلام. بود و سپس نبود.",
+      "atmosphere": "fated",
+      "image": "/assets/images/scenes/the-claim-scene.png",
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["farr-departs", "pride-of-jamshid"]
+    },
+    {
+      "id": "zahhak-rises",
+      "order": 7,
+      "title_en": "The Shadow from the South",
+      "title_fa": "سایه از جنوب",
+      "era_en": "~5400 BC",
+      "era_fa": "~۵۴۰۰ پ.م",
+      "body_en": "When the farr leaves a king, the world does not immediately end. It simply stops holding the weight it used to hold. The lords who knelt begin to measure the distance to the nearest border. The mobeds read the old texts again and find warnings they had not noticed before. And from the desert south of Pars, a young man named Zahhak — born of an Arab lord, raised on ambition and a whisper from Ahriman — has already begun walking north. He has not yet kissed the shoulder of Iblis. He does not yet have the serpents. But he is walking. The chronicle's first great darkness is already in motion.",
+      "body_fa": "وقتی فَر از شاهی می‌رود، جهان فوری به پایان نمی‌رسد. فقط دیگر آن وزنِ قبلی را نگه نمی‌دارد. اربابانی که زانو می‌زدند فاصله تا نزدیک‌ترین مرز را اندازه می‌گیرند. موبدان متونِ کهن را دوباره می‌خوانند و هشدارهایی می‌یابند که پیش از این متوجهشان نشده بودند. و از صحرایِ جنوبِ پارس، مرد جوانی به نامِ ضحاک — زاده‌ی یک ارباب عرب، پرورش‌یافته با بلندپروازی و نجوایی از اهریمن — از پیش راهِ شمال را آغاز کرده است. هنوز شانه‌ی ابلیس را نبوسیده. هنوز ماران را ندارد. اما دارد می‌آید. اولین تاریکیِ بزرگِ این تاریخ از پیش در حرکت است.",
+      "atmosphere": "dark",
+      "image": "/assets/images/scenes/zahhak-rises-scene.png",
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["zahhak-foreshadow", "ahriman-whisper"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "jamshid",
+      "name_en": "Jamshid",
+      "name_fa": "جمشید",
+      "role_en": "Fourth King · World-Builder · Fallen Sun",
+      "role_fa": "چهارمین شاه · سازنده‌ی جهان · خورشیدِ افتاده",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "Son of Tahmuras. He organized civilization into four orders, raised the crystal throne, gave the world Nowruz, and ruled for three hundred years without a single death. Then he said I am god — and lost everything. Ferdowsi does not let him be simply evil. He was the greatest king the world had known. That is what makes his fall the chronicle's first real tragedy.",
+      "lore_fa": "پسرِ تهمورث. تمدن را به چهار طبقه سازماندهی کرد، تختِ بلورین برافراشت، نوروز را به جهان داد و سیصد سال بدونِ یک مرگِ واحد حکم راند. بعد گفت من خدایم — و همه چیز را از دست داد. فردوسی نمی‌گذارد او صرفاً شرور باشد. بزرگ‌ترین شاهی بود که جهان می‌شناخت. همین است که سقوطش اولین تراژدیِ واقعیِ این تاریخ است.",
+      "image": "/season2/uploads/chapters/jamshid.png?v=1778880394377",
+      "unlocked": true,
+      "side": "light"
+    },
+    {
+      "slug": "tahmuras-elder",
+      "name_en": "Tahmuras",
+      "name_fa": "تهمورث",
+      "role_en": "Third King · Father · Demon-Binder",
+      "role_fa": "سومین شاه · پدر · دیوبند",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "He appears here only as an inheritance: the clay tablets, the cypress club on the wall, the knowledge that mercy can buy what iron cannot. Jamshid is his son, and in the early scenes his ghost is everywhere.",
+      "lore_fa": "تنها به‌عنوانِ میراث ظاهر می‌شود: لوح‌های گِلی، چوبِ سرو بر دیوار، دانشِ اینکه رحمت می‌تواند آنچه آهن نمی‌تواند را بخرد. جمشید پسرِ اوست و در صحنه‌های نخستین روحش همه‌جاست.",
+      "image": "/season2/uploads/chapters/tahmuras.png?v=1778880294493",
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "chapter:tahmuras"
+    },
+    {
+      "slug": "zahhak",
+      "name_en": "Zahhak",
+      "name_fa": "ضحاک",
+      "role_en": "The Coming Darkness · Serpent King",
+      "role_fa": "تاریکیِ در راه · شاهِ مار",
+      "rarity": "mythic",
+      "level_required": 15,
+      "lore_en": "He is only walking in this chapter — no serpents yet, no throne. But Ferdowsi places him in view the moment the farr departs, because the Shahnameh's lesson is structural: every departure of light is also an arrival of darkness. They are the same event seen from opposite sides.",
+      "lore_fa": "در این دفتر فقط دارد می‌آید — هنوز نه ماری، نه تختی. اما فردوسی او را درست در لحظه‌ای که فَر می‌رود به نمایش می‌گذارد، چون درسِ شاهنامه ساختاری است: هر رفتنِ روشنایی یک رسیدنِ تاریکی هم هست. از دو سوی یک رویداد دیده می‌شوند.",
+      "image": "/season2/uploads/chapters/zahhak.png?v=1778880472603",
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:zahhak-rises"
+    },
+    {
+      "slug": "the-mobeds",
+      "name_en": "The Mobeds",
+      "name_fa": "موبدان",
+      "role_en": "First Order · Keepers of Sacred Fire",
+      "role_fa": "طبقه‌ی اول · نگهبانانِ آتشِ مقدس",
+      "rarity": "rare",
+      "level_required": 5,
+      "lore_en": "The priestly order of the Zoroastrian tradition in Ferdowsi's telling. Their role is to tend the sacred fire and preserve the old knowledge. When Jamshid claims godhood, the mobeds are the first to go silent — they know what silence from the sky means.",
+      "lore_fa": "طبقه‌ی روحانیِ سنتِ زرتشتی در روایتِ فردوسی. نقششان نگه‌داری از آتشِ مقدس و حفظِ دانشِ کهن است. وقتی جمشید ادعای خدایی می‌کند، موبدان اولین‌هایی هستند که ساکت می‌شوند — آن‌ها می‌دانند سکوتِ آسمان یعنی چه.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:four-orders"
+    },
+    {
+      "slug": "ahriman-ch4",
+      "name_en": "Ahriman",
+      "name_fa": "اهریمن",
+      "role_en": "The Whisperer · Tempter of Kings",
+      "role_fa": "نجواگر · وسوسه‌گرِ شاهان",
+      "rarity": "mythic",
+      "level_required": 10,
+      "lore_en": "In chapter 3 he was ridden as a horse. In this chapter he is subtler. He does not need to fight Jamshid — he just needs to wait, and whisper, and let three hundred years of unchallenged greatness do his work for him.",
+      "lore_fa": "در دفترِ سوم چون اسبی سواری شد. در این دفتر ظریف‌تر است. لازم نیست با جمشید بجنگد — فقط لازم است صبر کند، نجوا کند، و بگذارد سیصد سال عظمتِ بی‌چالش کارش را برایش انجام دهد.",
+      "image": "/assets/images/enemies/ahriman-boss.png",
+      "unlocked": false,
+      "side": "dark",
+      "unlock_via": "scene:zahhak-rises"
+    }
+  ],
+  "places": [
+    {
+      "slug": "crystal-throne",
+      "name_en": "The Crystal Throne",
+      "name_fa": "تختِ بلورین",
+      "kind_en": "Symbol of Jamshid's Height",
+      "kind_fa": "نمادِ اوجِ جمشید",
+      "summary_en": "The most famous throne in the Shahnameh's early age. Made from pure crystal with joints so precise they are invisible. On Nowruz, carried into the sky by demons, it blazes like a second sun. Later tradition named the ruins of Persepolis 'Takht-e Jamshid' — Jamshid's Throne.",
+      "summary_fa": "مشهورترین تخت در عصرِ نخستینِ شاهنامه. از بلورِ خالص با درزهایی چنان دقیق که نامرئی‌اند. در نوروز، توسطِ دیوان به آسمان برده می‌شود و مثلِ خورشیدِ دوم می‌درخشد. سنتِ بعدی ویرانه‌های تخت‌جمشید را «تختِ جمشید» نامید.",
+      "image": "/assets/images/locations/crystal-throne-location.png",
+      "unlocked": false,
+      "unlock_via": "scene:the-crystal-throne"
+    },
+    {
+      "slug": "pars-golden-age",
+      "name_en": "Pars — The Age Without Death",
+      "name_fa": "پارسِ عصرِ بی‌مرگی",
+      "kind_en": "Civilization at Its Peak",
+      "kind_fa": "تمدن در اوجش",
+      "summary_en": "In Jamshid's three-hundred-year reign, Pars becomes something the world has never seen: a land where no one dies. The four orders work in harmony, the fields never fail, the rivers run clean. It is the chronicle's model of what civilization can be — and the warning of what pride can do to it.",
+      "summary_fa": "در شاهیِ سیصد سالهٔ جمشید، پارس به چیزی می‌شود که جهان هرگز ندیده: سرزمینی که کسی در آن نمی‌میرد. چهار طبقه هماهنگ کار می‌کنند، مزارع هرگز شکست نمی‌خورند، رودخانه‌ها زلال جاری‌اند. الگوی شاهنامه برای آنچه تمدن می‌تواند باشد — و هشداری از آنچه غرور می‌تواند با آن بکند.",
+      "image": null,
+      "unlocked": true
+    },
+    {
+      "slug": "gate-of-darkness",
+      "name_en": "The Gate of Darkness",
+      "name_fa": "دروازه‌ی تاریکی",
+      "kind_en": "Where the Farr Departs",
+      "kind_fa": "جایی که فَر می‌رود",
+      "summary_en": "Not a physical place — the Shahnameh never names a gate. But the moment Jamshid's claim of godhood is spoken, the chronicle records a kind of threshold being crossed: the world on one side has divine protection, the world on the other side is on its own.",
+      "summary_fa": "جای فیزیکی نیست — شاهنامه هرگز دروازه‌ای نام نمی‌برد. اما در لحظه‌ای که ادعای خدایی جمشید بیان می‌شود، شاهنامه نوعی آستانه‌ای را ثبت می‌کند که از آن گذشته می‌شود: جهانِ یک طرف محافظتِ الهی دارد، جهانِ طرفِ دیگر به تنهایی است.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:pride"
+    },
+    {
+      "slug": "south-desert",
+      "name_en": "The Desert South",
+      "name_fa": "صحرایِ جنوب",
+      "kind_en": "Zahhak's Origin",
+      "kind_fa": "زادگاهِ ضحاک",
+      "summary_en": "An unnamed desert south of Pars, bordering the Arab lands. Ferdowsi says Zahhak's father is a lord of these desert shores. The place itself appears only in shadow — it is the origin of what is coming.",
+      "summary_fa": "صحرایی بی‌نام در جنوبِ پارس، هم‌مرز با سرزمین‌های عرب. فردوسی می‌گوید پدرِ ضحاک ارباب این سواحلِ صحراست. خودِ این مکان تنها در سایه ظاهر می‌شود — مبدأِ آن چیزی است که دارد می‌آید.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:zahhak-rises"
+    }
+  ],
+  "battle": {
+    "boss_slug": "pride",
+    "boss_name_en": "The Pride of Jamshid",
+    "boss_name_fa": "غرورِ جمشید",
+    "boss_image": "/assets/images/enemies/ahriman-boss.png",
+    "boss_master_slug": "ahriman",
+    "boss_master_image": "/assets/images/enemies/ahriman-boss.png",
+    "intro_en": "The farr has departed. The court stands silent. The enemy here is not a demon with claws — it is the three-hundred-year weight of unchallenged greatness, and the whisper that told a good king he was a god. Face it with full knowledge of the chapter.",
+    "intro_fa": "فَر رفته است. دربار ساکت ایستاده. دشمن این‌جا دیوی با چنگال نیست — وزنِ سیصد سالِ عظمتِ بی‌چالش است و نجوایی که به شاهِ خوبی گفت خداست. با دانشِ کامل از این دفتر با آن روبه‌رو شو.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 12,
+        "label_en": "Reach Jamshid LVL 12",
+        "label_fa": "رسیدن به سطحِ ۱۲ جمشید",
+        "label_tg": "Расидан ба сатҳи 12 Ҷамшид",
+        "hint_en": "Upgrade Jamshid in the Hero Collection. Each upgrade costs REAL tokens — earn more by completing scenes and quizzes.",
+        "hint_fa": "جمشید را در بخشِ مجموعه‌ی قهرمانان ارتقا دهید. هر ارتقا به توکن REAL نیاز دارد — با صحنه‌ها و آزمون‌ها بیشتر کسب کنید.",
+        "hint_tg": "Ҷамшидро дар бахши Қаҳрамонон баланд баред. Ҳар баланд бардоштан ба токени REAL ниёз дорад."
+      },
+      {
+        "id": "golden-crown",
+        "kind": "item",
+        "target": "golden-crown",
+        "grant_on": "quiz",
+        "label_en": "Claim the Golden Crown",
+        "label_fa": "دریافتِ تاجِ زرین",
+        "label_tg": "Тоҷи заррин гиред",
+        "hint_en": "Awarded automatically when you complete the Chapter 4 easy quiz. Jamshid's crown — earned by mastering his story.",
+        "hint_fa": "با تکمیلِ آزمونِ ساده‌ی دفترِ ۴ به‌طور خودکار اعطا می‌شود. تاجِ جمشید — با تسلط بر داستانش به‌دست می‌آید.",
+        "hint_tg": "Пас аз иҷрои имтиҳони осони Боби 4 ба таври худкор дода мешавад."
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "jamshid",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section and answer all questions. You can retry wrong answers.",
+        "hint_fa": "به بخشِ آزمون بروید و همه‌ی سؤالات را پاسخ دهید.",
+        "hint_tg": "Ба бахши Имтиҳон равед ва ба ҳама суолҳо ҷавоб диҳед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "jamshid-inheritance",
+      "category": "event",
+      "title_en": "The Tablets Passed On",
+      "title_fa": "لوح‌های به ارث رسیده",
+      "summary_en": "Tahmuras' clay tablets pass to Jamshid. In the Shahnameh's chain of civilization, each king begins where the last one stopped — the tablets are the symbol of that continuity.",
+      "summary_fa": "لوح‌های گِلیِ تهمورث به جمشید می‌رسد. در زنجیرِ تمدنِ شاهنامه، هر شاه از جایی شروع می‌کند که آخری متوقف شده — لوح‌ها نمادِ آن تداوم‌اند.",
+      "image": null,
+      "unlock_via": "scene:heir-of-writing"
+    },
+    {
+      "id": "four-orders-codex",
+      "category": "concept",
+      "title_en": "The Four Orders",
+      "title_fa": "چهار طبقه",
+      "summary_en": "Mobeds (priests), Arteshtars (warriors), Vastoshan (farmers), Ahnukhoshian (craftsmen). Jamshid's division of civilization into four callings is the Shahnameh's model of a functioning society — each order essential, none subordinate in dignity.",
+      "summary_fa": "موبدان (روحانیان)، ارتشتاران (جنگاوران)، واستوشان (کشاورزان)، اهنوخوشان (پیشه‌وران). تقسیمِ جمشید از تمدن به چهار رسالت، الگوی شاهنامه از جامعه‌ای کارکردمند است — هر طبقه ضروری، هیچ‌کدام در کرامت فرودست.",
+      "image": null,
+      "unlock_via": "scene:four-orders"
+    },
+    {
+      "id": "mobeds-codex",
+      "category": "concept",
+      "title_en": "The Mobeds",
+      "title_fa": "موبدان",
+      "summary_en": "The priestly class of Jamshid's order. Their role: tend the sacred fire, preserve the written record, and interpret the farr. When a king begins to lose the farr, the mobeds are always the first to know — and the last to say it aloud.",
+      "summary_fa": "طبقه‌ی روحانیِ نظامِ جمشید. نقششان: نگه‌داری از آتشِ مقدس، حفظِ ثبتِ نوشتاری، و تفسیرِ فَر. وقتی شاهی شروع می‌کند فَر را از دست بدهد، موبدان همیشه اولین‌هایی هستند که می‌دانند — و آخرین‌هایی که با صدای بلند می‌گویند.",
+      "image": null,
+      "unlock_via": "scene:four-orders"
+    },
+    {
+      "id": "crystal-throne-codex",
+      "category": "artifact",
+      "title_en": "The Crystal Throne",
+      "title_fa": "تختِ بلورین",
+      "summary_en": "Built over three years, facets aligned with the angles of sunrise, joints invisible. On Nowruz it becomes the second sun in the sky. The ruins of Persepolis were called Takht-e Jamshid — Jamshid's Throne — by later generations who saw the columns and wondered who had built such a thing.",
+      "summary_fa": "طیِ سه سال ساخته شده، وجه‌هایش با زوایای طلوعِ آفتاب هم‌راستا، درزهایش نامرئی. در نوروز خورشیدِ دومِ آسمان می‌شود. تخت‌جمشید — تختِ جمشید — نامی بود که نسل‌های بعدی به ویرانه‌های تخت‌جمشید دادند وقتی ستون‌ها را دیدند و تعجب کردند چه کسی چنین چیزی ساخته.",
+      "image": "/assets/images/locations/crystal-throne-location.png",
+      "unlock_via": "scene:the-crystal-throne"
+    },
+    {
+      "id": "nowruz-origin",
+      "category": "event",
+      "title_en": "Nowruz — The Day of the Ascent",
+      "title_fa": "نوروز — روزِ صعود",
+      "summary_en": "The Persian New Year traces its origin in the Shahnameh to this moment: the day Jamshid's crystal throne blazed in the sky like a second sun. 'They called it Nowruz, the new day.' A festival born from a king's most beautiful act — before his worst one.",
+      "summary_fa": "سالِ نوِ ایرانی ریشه‌اش را در شاهنامه به این لحظه می‌رساند: روزی که تختِ بلورینِ جمشید در آسمان چون خورشیدِ دوم درخشید. «آن را نوروز نامیدند، روزِ نو.» جشنی زاده از زیباترین عملِ شاه — پیش از بدترینش.",
+      "image": null,
+      "unlock_via": "scene:nowruz"
+    },
+    {
+      "id": "age-without-death",
+      "category": "concept",
+      "title_en": "The Age Without Death",
+      "title_fa": "عصرِ بی‌مرگی",
+      "summary_en": "Three hundred years. No one dies, no one ages past their prime, no illness touches the land. Ferdowsi notes, very quietly, that things which do not change forget how to be grateful. The age without death is also the age without the humility that grief teaches.",
+      "summary_fa": "سیصد سال. کسی نمی‌میرد، کسی از اوجِ جوانی پیر نمی‌شود، هیچ بیماری‌ای زمین را لمس نمی‌کند. فردوسی بسیار آرام یادداشت می‌کند که چیزهایی که تغییر نمی‌کنند یاد می‌گیرند نمی‌دانند چطور شکرگزار باشند. عصرِ بی‌مرگی همچنین عصرِ بی‌فروتنی است که اندوه می‌آموزد.",
+      "image": null,
+      "unlock_via": "scene:three-hundred-years"
+    },
+    {
+      "id": "farr-departs",
+      "category": "event",
+      "title_en": "The Farr Departs",
+      "title_fa": "رفتنِ فَر",
+      "summary_en": "The Shahnameh describes no thunder, no earthquake, no divine punishment at the moment of Jamshid's pride. Just the farr leaving — like a bird off a branch, quietly, without announcement. The subtlety is the lesson: divine grace does not punish. It simply leaves when the reason for it is gone.",
+      "summary_fa": "شاهنامه در لحظه‌ی غرورِ جمشید رعد، زلزله یا مجازاتِ الهی توصیف نمی‌کند. فقط رفتنِ فَر — مثلِ پرنده‌ای از شاخه، آرام، بدونِ اعلام. ظرافت همان درس است: موهبتِ الهی مجازات نمی‌کند. فقط می‌رود وقتی دلیلِ بودنش رفته.",
+      "image": null,
+      "unlock_via": "scene:pride"
+    },
+    {
+      "id": "pride-of-jamshid",
+      "category": "concept",
+      "title_en": "The Shape of Pride",
+      "title_fa": "شکلِ غرور",
+      "summary_en": "Jamshid's pride is not sudden madness. It is the slow accumulation of three hundred years of being right. Every decision worked. Every plan succeeded. After long enough, a king who has never been wrong begins to wonder whether he might be the source of the rightness itself. That is when the farr goes.",
+      "summary_fa": "غرورِ جمشید دیوانگیِ ناگهانی نیست. انباشتِ آرامِ سیصد سال درست بودن است. هر تصمیمی جواب داد. هر برنامه‌ای موفق شد. پس از کافی مدت، شاهی که هرگز اشتباه نکرده تعجب می‌کند آیا شاید خودش سرچشمه‌ی آن درستی باشد. همان هنگام است که فَر می‌رود.",
+      "image": null,
+      "unlock_via": "scene:pride"
+    },
+    {
+      "id": "zahhak-foreshadow",
+      "category": "person",
+      "title_en": "Zahhak — Walking North",
+      "title_fa": "ضحاک — در راهِ شمال",
+      "summary_en": "Born of an Arab lord in the southern desert, raised on ambition. In this chapter he is only walking — no serpents, no throne, no thousand years of darkness yet. But the Shahnameh introduces him the moment the farr leaves Jamshid, because the vacancy of grace is always filled immediately. (Chapter 5.)",
+      "summary_fa": "زاده‌ی ارباب عربی در صحرایِ جنوبی، پرورش‌یافته با بلندپروازی. در این دفتر فقط دارد می‌آید — هنوز نه ماری، نه تختی، نه هزار سال تاریکی. اما شاهنامه او را درست در لحظه‌ای که فَر از جمشید می‌رود معرفی می‌کند، چون خلأِ موهبت همیشه فوری پر می‌شود. (دفترِ پنجم.)",
+      "image": "/season2/uploads/chapters/zahhak.png?v=1778880472603",
+      "unlock_via": "scene:zahhak-rises"
+    },
+    {
+      "id": "ahriman-whisper",
+      "category": "concept",
+      "title_en": "Ahriman's Method",
+      "title_fa": "روشِ اهریمن",
+      "summary_en": "In chapter 3 Ahriman was forced to carry a king on his back. Here, he needs only to whisper. Three hundred years of unchallenged success does most of the work. Ahriman's method in the Shahnameh is not brute force — it is patience and the small augmentations of what is already there.",
+      "summary_fa": "در دفترِ سوم اهریمن مجبور شد شاهی را بر پشت حمل کند. این‌جا فقط لازم است نجوا کند. سیصد سال موفقیتِ بی‌چالش بیشترِ کار را انجام می‌دهد. روشِ اهریمن در شاهنامه زورِ خام نیست — صبر است و افزایش‌های کوچک بر آنچه از پیش وجود دارد.",
+      "image": "/assets/images/enemies/ahriman-boss.png",
+      "unlock_via": "scene:zahhak-rises"
+    }
+  ]
+}

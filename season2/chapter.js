@@ -650,6 +650,14 @@
             tp.correct = Array.from(new Set([...(tp.correct || []), q.id]));
             saveProgress();
             haptic("success");
+            // Grant per-question XP + REAL (idempotent via grant key)
+            const qGrantKey = `real_quiz_q_granted_${SLUG}_${q.id}`;
+            if (localStorage.getItem(qGrantKey) !== "1") {
+              if (xpVal && window.RealPlayer)   window.RealPlayer.addResource("xp",  xpVal);
+              if (realVal && window.RealPlayer)  window.RealPlayer.addResource("real", realVal);
+              try { localStorage.setItem(qGrantKey, "1"); } catch {}
+              try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
+            }
             const ex = document.createElement("div");
             ex.className = "quiz-explain";
             ex.innerHTML = `<span class="qx-mark">✓</span><span>${escapeHtml(explanation)}</span>`;
@@ -769,9 +777,19 @@
       const newlyUnlocked = (s.unlocks_codex || []).filter(id => !progress.codex.includes(id));
       progress.codex.push(...newlyUnlocked);
       saveProgress();
+
+      // Grant XP for this scene (idempotent via grant key)
+      const xpAmount = (s.reward && s.reward.xp) || 0;
+      const sceneGrantKey = `real_scene_xp_granted_${SLUG}_${s.id}`;
+      if (xpAmount && window.RealPlayer && localStorage.getItem(sceneGrantKey) !== "1") {
+        window.RealPlayer.addResource("xp", xpAmount);
+        try { localStorage.setItem(sceneGrantKey, "1"); } catch {}
+        try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
+      }
+
       // show reward burst
       rewardEl.hidden = false;
-      xpEl.textContent = fmtNum((s.reward && s.reward.xp) || 0);
+      xpEl.textContent = fmtNum(xpAmount);
       codexMeta.textContent = newlyUnlocked.length
         ? (newlyUnlocked.length === 1
             ? tr("ch_codex_one_entry")
@@ -860,5 +878,49 @@
     currentScenes = lore.scenes || [];
     modalLore = lore;
     render({ chapterMeta, lore, quizzes });
+
+    /* ── Retroactive catch-up ─────────────────────────────────────────────
+       Grants XP/REAL owed from scenes and quiz questions that were completed
+       before the grant bug was fixed.  Idempotent: each grant key is written
+       once so this is safe to run on every page load.                      */
+    let retroXp = 0, retroReal = 0;
+
+    // Scenes already read but never rewarded
+    const readSet = new Set(progress.scenes || []);
+    (lore.scenes || []).forEach((sc) => {
+      const gk = `real_scene_xp_granted_${SLUG}_${sc.id}`;
+      if (readSet.has(sc.id) && localStorage.getItem(gk) !== "1") {
+        retroXp += (sc.reward && sc.reward.xp) || 0;
+        try { localStorage.setItem(gk, "1"); } catch {}
+      }
+    });
+
+    // Quiz questions already answered correctly but never rewarded
+    ["easy", "medium", "hard"].forEach((tier) => {
+      const tp = progress.quiz && progress.quiz[tier];
+      if (!tp) return;
+      (tp.correct || []).forEach((qid) => {
+        const gk = `real_quiz_q_granted_${SLUG}_${qid}`;
+        if (localStorage.getItem(gk) !== "1") {
+          const qObj = quizzes.find((q) => q.id === qid);
+          if (qObj) {
+            retroXp  += (qObj.reward && qObj.reward.xp)   || 0;
+            retroReal += (qObj.reward && qObj.reward.real) || 0;
+          }
+          try { localStorage.setItem(gk, "1"); } catch {}
+        }
+      });
+    });
+
+    if ((retroXp || retroReal) && window.RealPlayer) {
+      if (retroXp)  window.RealPlayer.addResource("xp",  retroXp);
+      if (retroReal) window.RealPlayer.addResource("real", retroReal);
+      try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
+      const parts = [
+        retroXp   ? `+${fmtNum(retroXp)} XP`     : "",
+        retroReal ? `+${fmtNum(retroReal)} REAL`  : "",
+      ].filter(Boolean);
+      if (parts.length) toast(`⚔ Rewards restored: ${parts.join(" · ")}`);
+    }
   });
 })();

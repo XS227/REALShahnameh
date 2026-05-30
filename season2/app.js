@@ -272,7 +272,8 @@
       /* Global state-sync event — any sub-view (heroes, tap, home) can
          listen to 'shahnama:state_sync' and re-read the latest balance. */
       try {
-        const isBalanceChange = "balance" in patch || "zar" in patch || "xp" in patch;
+        const isBalanceChange = "balance" in patch || "zar" in patch || "xp" in patch
+          || "farr" in patch || "gems" in patch;
         if (isBalanceChange) {
           window.dispatchEvent(new CustomEvent("shahnama:state_sync", { detail: next }));
         }
