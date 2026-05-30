@@ -213,7 +213,7 @@
       "title": "Zal — The Albino Prince",
       "title_fa": "زال — شاهزاده سپید",
       "summary": "Born white-haired, cast to the mountain, raised by Simorgh, Zal returns to Pars on wings of myth.",
-      "story": "Born white-haired, the prince Zal was cast onto the mountain by his father Sam, who feared the omen. The Simorgh found him and raised him with her chicks for years. When Sam repented and climbed the mountain, the Simorgh gave Zal back, and one feather, to be burned in greatest need.",
+      "story": "Sam the warrior — champion of Manuchehr, guardian of Iran's northern borders — had a son. The child was born with hair as white as snow, as white as Damavand's peak. In Sam's world, this was an omen that could only mean one thing: Ahriman's touch. Sam was a celebrated man, a man of courts and kings, and he could not bear to display what the world would read as a curse. He took the infant to Mount Alborz and left him there. The mountain took the child and gave him to the Simorgh.\n\nThe Simorgh was no ordinary bird. She was the world's oldest witness — she had watched three destructions of the world from her nest in the world-tree on Alborz. She carried Zal up to her nest and raised him among her chicks, feeding him, teaching him the patience of long years and the knowledge of a creature who has seen everything. Zal grew up not knowing what he was missing: he had feathers, sky, wisdom, and a mother who was older than the first king.\n\nSam dreamed of a young man on the mountain and woke knowing it was his son and knowing he had been wrong. He rode north, climbed to the nest, and found a prince who was more than a prince. The Simorgh returned Zal with ceremony. She gave him one feather: 'Burn it,' she said, 'only in your greatest need, and I will come.' Zal came down the mountain carrying a feather that was also a promise — and the Shahnameh's greatest hero was now one generation closer to being born.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/zal.png?v=1778881097911",
       "unlock_day": 45,
@@ -228,7 +228,7 @@
           "simorgh": 1
         }
       },
-      "status": "locked",
+      "status": "available",
       "required_previous_chapter": "nozar",
       "quiz_count": 4
     },
@@ -239,7 +239,7 @@
       "title": "Rudabeh — The Tower of Hair",
       "title_fa": "رودابه — برج موی",
       "summary": "A princess lets her hair down from the tower. Love enters the chronicle before war — and Rostam's father is won.",
-      "story": "",
+      "story": "Zal came down from the mountain changed. He had lived with the Simorgh; he had the long patience of a creature raised by something older than kingship. When merchants described Rudabeh — princess of Kabul, daughter of Mehrab, her face like the moon and her hair a river of silk — Zal fell in love through words alone, before he had seen her face. This is how the Shahnameh treats love: not as accident but as recognition. Rudabeh heard of him in the same season from her handmaidens, who had seen him at the market, and she fell in love before she had seen his face either. Two people falling in love through description, across a distance — the chronicle finds this more reliable than love at first sight.\n\nThe handmaidens arranged a meeting in the garden below Rudabeh's tower. Rudabeh let her hair down from the window — hair so long it reached the ground — and Zal climbed up. They spent the night in her chamber pledging their lives while the city of Kabul slept beneath them. The obstacles the morning brought were serious. Sam refused: Rudabeh's line traced back to Zahhak. Manuchehr the king refused: the same reason. Sindokht, Rudabeh's mother, negotiated with the ferocity of a general. Astrologers were consulted, as they are consulted when the powerful want the stars to confirm what they have already decided. The stars agreed: from this union would come a child unlike any other. Permission was granted.\n\nZal and Rudabeh were married. Nine months later, the child would not come. Rudabeh was dying. Zal burned the Simorgh's feather. The great bird came, guided the caesarean that Sam's surgeons performed, and breathed healing over Rudabeh as the child was lifted free. The child was large as a young lion and roared like one. They named him Rostam.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/rudabeh.png?v=1778881193466",
       "unlock_day": 50,
@@ -250,7 +250,7 @@
         "energy": 65,
         "gems": 7
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "zal",
       "quiz_count": 3
     },

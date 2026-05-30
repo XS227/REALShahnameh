@@ -1,0 +1,355 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-30T00:00:00Z",
+  "chapter_slug": "zal",
+  "chapter_id": 9,
+  "era": {
+    "label_en": "~3200–3100 BC — Age of Zal",
+    "label_fa": "~۳۲۰۰–۳۱۰۰ پ.م — عصرِ زال"
+  },
+  "lore_summary": {
+    "en": "Sam the warrior has a son born with hair as white as Damavand's peak. Seeing an omen in this, Sam carries the infant to Mount Alborz and abandons him. The Simorgh — the world's oldest bird, nesting in the world-tree at the mountain's peak — finds the child and raises him among her own chicks. Zal grows between sky and earth, between the human and the mythic. When Sam dreams of a young man on the mountain and wakes ashamed, he travels north and finds a prince unlike any other. The Simorgh returns Zal with grace, giving him a single feather to burn in his greatest need. Zal descends to Pars carrying that promise — and soon hears, through merchants, of a princess named Rudabeh in Kabul.",
+    "fa": "سامِ جنگاور پسری دارد که با موهایی سفید چون قلّه‌ی دماوند متولد می‌شود. سام در این فالِ بد می‌بیند و نوزاد را به کوهِ البرز می‌برد و رهایش می‌کند. سیمرغ — کهن‌سال‌ترین پرنده‌ی جهان، در درختِ جهانی بر قلّه‌ی کوه لانه دارد — کودک را می‌یابد و در میانِ جوجه‌های خود پرورشش می‌دهد. زال میانِ آسمان و زمین، میانِ انسانی و اساطیری بزرگ می‌شود. وقتی سام از جوانی روی کوه خواب می‌بیند و با شرم بیدار می‌شود، به شمال می‌رود و شاهزاده‌ای می‌یابد که مثلِ هیچ‌کس نیست. سیمرغ زال را با شأن باز می‌گرداند و تنها یک پَر به او می‌دهد که در بزرگترین نیازش بسوزاند. زال با آن قرار به پارس پایین می‌آید — و به زودی از بازرگانان درباره‌ی دختری به نامِ رودابه در کابل می‌شنود."
+  },
+  "timeline": [
+    {
+      "id": "zal-born",
+      "year_label_en": "~3200 BC",
+      "year_label_fa": "~۳۲۰۰ پ.م",
+      "title_en": "Zal Is Born",
+      "title_fa": "زال به دنیا می‌آید",
+      "body_en": "Sam's son is born with completely white hair. In the world of the Shahnameh, white hair on an infant is an omen of dark origin — the touch of Ahriman. Sam is a champion of Iran and a man of courts. He cannot display what the world will read as a curse.",
+      "body_fa": "پسرِ سام با موهای کاملاً سفید متولد می‌شود. در دنیای شاهنامه، موهای سفید بر نوزاد نشانه‌ی بدِ ریشه‌ی تاریک است — لمسِ اهریمن. سام قهرمانِ ایران و مردِ دربارهاست. نمی‌تواند چیزی را که دنیا نفرین می‌خواند به نمایش بگذارد.",
+      "image": null,
+      "side": "neutral"
+    },
+    {
+      "id": "abandonment",
+      "year_label_en": "~3200 BC",
+      "year_label_fa": "~۳۲۰۰ پ.م",
+      "title_en": "Sam Leaves the Child",
+      "title_fa": "سام کودک را رها می‌کند",
+      "body_en": "Sam carries the infant to Mount Alborz and leaves him on the slopes. He will spend years justifying this to himself. The Shahnameh does not justify it for him.",
+      "body_fa": "سام نوزاد را به کوهِ البرز می‌برد و در دامنه‌هایش رهایش می‌کند. سال‌ها این را برای خودش توجیه می‌کند. شاهنامه آن را برایش توجیه نمی‌کند.",
+      "image": null,
+      "side": "dark"
+    },
+    {
+      "id": "simorgh-raises-zal",
+      "year_label_en": "~3190 BC",
+      "year_label_fa": "~۳۱۹۰ پ.م",
+      "title_en": "The Simorgh Raises Zal",
+      "title_fa": "سیمرغ زال را پرورش می‌دهد",
+      "body_en": "The Simorgh finds the child, carries him to her nest at the peak of Alborz, and raises him among her own chicks. Zal learns the patience of high places and the wisdom of a creature who has seen three destructions of the world.",
+      "body_fa": "سیمرغ کودک را می‌یابد، او را به لانه‌اش در قلّه‌ی البرز می‌برد و در میانِ جوجه‌هایش پرورشش می‌دهد. زال صبرِ مکان‌های بلند و خردِ موجودی که سه ویرانیِ جهان را دیده یاد می‌گیرد.",
+      "image": "/season2/uploads/chapters/zal.png",
+      "side": "light"
+    },
+    {
+      "id": "sams-dream",
+      "year_label_en": "~3150 BC",
+      "year_label_fa": "~۳۱۵۰ پ.م",
+      "title_en": "Sam's Dream and Repentance",
+      "title_fa": "خوابِ سام و پشیمانی",
+      "body_en": "Sam dreams of a young man on the mountain — luminous, upright, clearly his son. He wakes knowing he has been wrong and travels north to Alborz to undo what he did. The Shahnameh marks this journey as a form of penance: a champion humbled by the knowledge of his own mistake.",
+      "body_fa": "سام از جوانی بر کوه خواب می‌بیند — درخشان، استوار، آشکارا پسرش. با دانستنِ اینکه اشتباه کرده بیدار می‌شود و برای اصلاحِ آنچه کرده به شمال و البرز می‌رود.",
+      "image": null,
+      "side": "light"
+    },
+    {
+      "id": "return-and-feather",
+      "year_label_en": "~3140 BC",
+      "year_label_fa": "~۳۱۴۰ پ.م",
+      "title_en": "The Return and the Feather",
+      "title_fa": "بازگشت و پَر",
+      "body_en": "The Simorgh returns Zal to Sam with ceremony and dignity. She gives Zal one feather: 'Burn this only in your greatest need, and I will come.' Zal descends the mountain carrying a promise older than any kingdom.",
+      "body_fa": "سیمرغ زال را با تشریفات و شأن به سام باز می‌گرداند. یک پَر به زال می‌دهد: «این را فقط در بزرگترین نیازت بسوزان و من می‌آیم.» زال از کوه پایین می‌آید و قراری حمل می‌کند که از هر پادشاهی کهن‌سال‌تر است.",
+      "image": null,
+      "side": "light"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "white-hair",
+      "order": 1,
+      "title_en": "The White-Haired Son",
+      "title_fa": "پسرِ سپیدمو",
+      "era_en": "~3200 BC",
+      "era_fa": "~۳۲۰۰ پ.م",
+      "body_en": "Sam is celebrated as the greatest warrior of Manuchehr's Iran — the border-keeper, the sword-arm of the court, the man whose name alone keeps the Turanian scouts from advancing. Then his son is born and the hair is white and Sam stops. The midwives look at each other. The court looks at Sam. Sam looks at his son and sees not a child but a question he does not know how to answer without losing something. In the Shahnameh's world, omens are not superstition — they are the language the divine uses when it needs to be understood. Sam hears the omen and chooses the wrong answer: he gives the child to the mountain.",
+      "body_fa": "سام به‌عنوانِ بزرگ‌ترین جنگجوی ایرانِ منوچهر مشهور است — نگهبانِ مرز، بازویِ شمشیرِ دربار، مردی که نامش به تنهایی دیدبانانِ توران را از پیشروی باز می‌دارد. پس پسرش متولد می‌شود و موها سفیدند و سام توقف می‌کند. قابله‌ها به همدیگر نگاه می‌کنند. دربار به سام نگاه می‌کند. سام به پسرش نگاه می‌کند و نه کودک بلکه سؤالی می‌بیند که نمی‌داند چگونه بدون از دست دادنِ چیزی جوابش دهد.",
+      "atmosphere": "cold",
+      "image": null,
+      "reward": { "xp": 45 },
+      "unlocks_codex": ["omen-and-shame"]
+    },
+    {
+      "id": "abandoned",
+      "order": 2,
+      "title_en": "The Mountain Takes the Child",
+      "title_fa": "کوه کودک را می‌گیرد",
+      "era_en": "~3200 BC",
+      "era_fa": "~۳۲۰۰ پ.م",
+      "body_en": "Sam carries the infant to Alborz himself. He does not send a servant. The Shahnameh gives him this dignity: it is a personal act, not a delegated one. He places the child on the slope and he turns and he walks down. The mountain accepts the child in silence. What Sam feels descending the mountain is not given to us directly — but the dream that will wake him fifteen years later tells us everything. He descends and he knows he has done wrong and he does it anyway, because the alternative is to face his court and his king with the omen of Ahriman in his arms. Fatherhood and ambition war in him, and ambition wins — but it leaves a debt that will take fifteen years to pay.",
+      "body_fa": "سام خودش نوزاد را به البرز می‌برد. خدمتکاری نمی‌فرستد. شاهنامه این شأن را به او می‌دهد: عملی شخصی است، نه نمایندگی‌شده. کودک را بر دامنه می‌گذارد و برمی‌گردد و پایین می‌رود. کوه کودک را در سکوت می‌پذیرد. آنچه سام هنگامِ پایین رفتن احساس می‌کند مستقیم به ما داده نمی‌شود — اما خوابی که پانزده سال بعد بیدارش خواهد کرد همه چیز را می‌گوید.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 55 },
+      "unlocks_codex": ["sams-debt", "mountain-as-keeper"]
+    },
+    {
+      "id": "simorgh-finds-him",
+      "order": 3,
+      "title_en": "The Simorgh",
+      "title_fa": "سیمرغ",
+      "era_en": "~3190 BC",
+      "era_fa": "~۳۱۹۰ پ.م",
+      "body_en": "The Simorgh descends from her nest at the peak of Alborz — the world-tree where she has watched three cycles of the world's destruction and renewal — and finds the infant. She is not diminished by this; she is not surprised. The Shahnameh does not explain why she chooses to take him. Some decisions in the chronicle are presented as simply true, as if to explain them would be to reduce them. She carries Zal to her nest. She feeds him beside her chicks. She teaches him not in words but in the manner all great teachers teach: by being what they wish the student to become — patient, long-sighted, at peace with the sky.",
+      "body_fa": "سیمرغ از لانه‌اش در قلّه‌ی البرز — درختِ جهانی که از آنجا سه چرخه‌ی نابودی و نوزاییِ جهان را تماشا کرده — پایین می‌آید و نوزاد را می‌یابد. کاهش نمی‌یابد؛ تعجب نمی‌کند. شاهنامه توضیح نمی‌دهد چرا انتخاب می‌کند او را بگیرد. برخی تصمیمات در شاهنامه فقط درست ارائه می‌شوند، انگار توضیح دادنشان کاهش دادنشان است.",
+      "atmosphere": "mythic",
+      "image": "/season2/uploads/heroes/mount_alborz.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["simorgh-the-witness", "raised-in-the-sky"]
+    },
+    {
+      "id": "sams-dream",
+      "order": 4,
+      "title_en": "Sam's Dream",
+      "title_fa": "خوابِ سام",
+      "era_en": "~3150 BC",
+      "era_fa": "~۳۱۵۰ پ.م",
+      "body_en": "Sam dreams of a rider coming from the east on a horse the color of fire, leading an army behind him — and at the army's side, a young man with white hair and the bearing of a king. Sam wakes and knows immediately. He calls for his advisors and they confirm what he already understands: his son lives. He is on Alborz. He is alive and he is more than alive. The shame comes immediately after the certainty: fifteen years of silence on the mountain. Sam prepares for the journey north without being told he must go. This is the Shahnameh's forgiveness: it allows the wrongdoer to correct himself before judgment arrives.",
+      "body_fa": "سام از سواری از شرق خواب می‌بیند که بر اسبی به رنگِ آتش می‌آید، سپاهی پشتِ سر دارد — و در کنارِ سپاه، جوانی با موهای سفید و هیبتِ یک شاه. بیدار می‌شود و فوری می‌داند. مشاورانش را می‌خواهد و آن‌ها آنچه را که از پیش می‌فهمد تأیید می‌کنند: پسرش زنده است. روی البرز است.",
+      "atmosphere": "warm",
+      "image": null,
+      "reward": { "xp": 65 },
+      "unlocks_codex": ["repentance-before-judgment"]
+    },
+    {
+      "id": "the-return",
+      "order": 5,
+      "title_en": "The Return and the Feather",
+      "title_fa": "بازگشت و پَر",
+      "era_en": "~3140 BC",
+      "era_fa": "~۳۱۴۰ پ.م",
+      "body_en": "Sam climbs to the Simorgh's nest. He finds a young man — white-haired, bright-eyed, utterly at ease at a height that would make other men dizzy. Father and son look at each other across fifteen years of mountain silence. The Simorgh speaks: she returns Zal to his father with the ceremony of a formal transaction — not a grudging return but an intentional gift. She speaks of what Zal will become. She gives him the feather. 'Only in your greatest need,' she says, 'and I will come.' The feather is not magic. It is a relationship — a promise between the creature who raised him and the world he is returning to. Zal holds the feather and descends, and the chronicle's greatest generation is about to begin.",
+      "body_fa": "سام به لانه‌ی سیمرغ می‌رود. جوانی می‌یابد — سپیدمو، روشن‌چشم، کاملاً آرام در ارتفاعی که مرد دیگری را سرگیج می‌داد. پدر و پسر از فراز پانزده سال سکوتِ کوهستانی به هم نگاه می‌کنند. سیمرغ صحبت می‌کند: زال را با تشریفاتِ معامله‌ای رسمی به پدرش باز می‌گرداند — نه بازگشتِ اکراه‌آمیز بلکه هدیه‌ای عمدی.",
+      "atmosphere": "dawn",
+      "image": "/season2/uploads/heroes/Farr.png",
+      "reward": { "xp": 90 },
+      "unlocks_codex": ["the-feather", "zal-at-court-preview"]
+    },
+    {
+      "id": "zal-hears-of-rudabeh",
+      "order": 6,
+      "title_en": "Merchants' Words",
+      "title_fa": "کلماتِ بازرگانان",
+      "era_en": "~3130 BC",
+      "era_fa": "~۳۱۳۰ پ.م",
+      "body_en": "Zal settles in his father's court in Zabulestan. He is not the same kind of warrior Sam is — he has the patience of the mountain and the long view of a creature raised by the world's oldest bird. Traders come through the court, as they always have, with silk and news from distant kingdoms. They describe Kabul. They describe its king Mehrab. Then, as traders do, they describe his daughter: her face like the moon, her hair a river of silk, her eyes like the stars above Alborz. They mean it as praise of Kabul's prosperity. Zal hears it as recognition. He has never seen her. He will love her before he does.",
+      "body_fa": "زال در دربارِ پدرش در زابلستان مستقر می‌شود. از نوعِ جنگجویانِ سام نیست — صبرِ کوه و دیدِ دورِ موجودی که نزدِ کهن‌سال‌ترین پرنده‌ی جهان بزرگ شده را دارد. بازرگانان از قلمروهای دور می‌آیند. کابل را توصیف می‌کنند. شاهِ آن مهراب را. پس دخترش را: رخسارش مثلِ ماه، مویش رودخانه‌ای از ابریشم. این را به‌عنوانِ ستایشِ شکوفاییِ کابل می‌گویند. زال آن را به‌عنوانِ شناخت می‌شنود.",
+      "atmosphere": "warm",
+      "image": null,
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["love-before-sight"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "zal",
+      "name_en": "Zal",
+      "name_fa": "زال",
+      "role_en": "Son of Sam · Raised by Simorgh · Father of Rostam",
+      "role_fa": "پسرِ سام · پرورش‌یافته‌ی سیمرغ · پدرِ رستم",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "The most extraordinary figure in the Shahnameh's bridging generation — the link between the mythic age of the first kings and the heroic age of Rostam. He is born between worlds (white hair, human body) and raised between worlds (Simorgh's nest, human court). He carries the Simorgh's feather his whole life — the promise that the divine has not abandoned him. He will use it exactly once.",
+      "lore_fa": "استثنایی‌ترین چهره‌ی نسلِ پل‌ارتباطیِ شاهنامه — حلقه‌ی اتصالِ عصرِ اساطیریِ اولین شاهان و عصرِ پهلوانیِ رستم. میانِ دو دنیا متولد می‌شود و میانِ دو دنیا پرورش می‌یابد. تمامِ عمرش پرِ سیمرغ را حمل می‌کند — قراری که آسمان رهایش نکرده. دقیقاً یک بار از آن استفاده خواهد کرد.",
+      "image": "/season2/uploads/chapters/zal.png",
+      "unlocked": true,
+      "side": "light"
+    },
+    {
+      "slug": "sam-the-father",
+      "name_en": "Sam",
+      "name_fa": "سام",
+      "role_en": "Champion of Manuchehr · Father Who Failed and Returned",
+      "role_fa": "قهرمانِ منوچهر · پدری که شکست خورد و بازگشت",
+      "rarity": "legendary",
+      "level_required": 3,
+      "lore_en": "Sam appears twice in the Zal chapter — as the man who abandons his son and the man who climbs a mountain to take him back. The Shahnameh does not excuse the abandonment; it records it plainly. But it allows Sam to correct his mistake before the consequences catch him, which is the chronicle's particular form of mercy: giving the wrongdoer the chance to act before judgment.",
+      "lore_fa": "سام دو بار در دفترِ زال ظاهر می‌شود — به‌عنوانِ مردی که پسرش را رها می‌کند و مردی که از کوه بالا می‌رود تا او را باز گرداند. شاهنامه رها کردن را بهانه‌جویی نمی‌کند؛ ساده ثبتش می‌کند. اما اجازه می‌دهد سام اشتباهش را پیش از آنکه عواقب او را دربگیرند تصحیح کند.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:sams-dream"
+    },
+    {
+      "slug": "simorgh-zal",
+      "name_en": "The Simorgh",
+      "name_fa": "سیمرغ",
+      "role_en": "World-Witness · Mother of Zal · Giver of the Feather",
+      "role_fa": "شاهدِ جهان · مادرِ زال · بخشنده‌ی پَر",
+      "rarity": "mythic",
+      "level_required": 8,
+      "lore_en": "The Simorgh is the Shahnameh's most profound mythic presence — not a monster or a deity but a witness. She has seen three destructions of the world from her nest in the world-tree on Alborz. She does not intervene often. When she does — raising Zal, guiding Rudabeh's caesarean — it is always at a moment when the human chain would otherwise break. She is not the chronicle's protector. She is its depth.",
+      "lore_fa": "سیمرغ عمیق‌ترین حضورِ اساطیریِ شاهنامه است — نه هیولا، نه خدا، بلکه شاهد. سه بار نابودیِ جهان را از لانه‌اش در درختِ جهانی بر البرز دیده. اغلب دخالت نمی‌کند. وقتی می‌کند — پرورشِ زال، راهنماییِ سزارینِ رودابه — همیشه در لحظه‌ای است که زنجیره‌ی انسانی وگرنه می‌شکست.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:simorgh-finds-him"
+    }
+  ],
+  "places": [
+    {
+      "slug": "mount-alborz-zal",
+      "name_en": "Mount Alborz — The Simorgh's Nest",
+      "name_fa": "کوهِ البرز — لانه‌ی سیمرغ",
+      "kind_en": "Where Zal Was Abandoned and Raised",
+      "kind_fa": "جایی که زال رها شد و پرورش یافت",
+      "summary_en": "The highest peak in the Middle East is the Shahnameh's great vertical axis — the point where earth and sky meet, where divine and human intersect. The Simorgh lives at its peak in the world-tree. Sam left Zal here. Zal grew up here. The mountain holds every stage of the story: the shame of abandonment, the grace of the Simorgh, Sam's repentance, the return. It is the most important single location in this chapter.",
+      "summary_fa": "بلندترین قلّه در خاورمیانه محورِ عمودیِ بزرگِ شاهنامه است — نقطه‌ای که زمین و آسمان دیدار می‌کنند، جایی که الهی و انسانی تقاطع می‌کنند. سیمرغ در درختِ جهانی در قلّه‌اش زندگی می‌کند.",
+      "image": "/season2/uploads/heroes/mount_alborz.png",
+      "unlocked": false,
+      "unlock_via": "scene:simorgh-finds-him"
+    },
+    {
+      "slug": "zabulestan",
+      "name_en": "Zabulestan — Sam's Kingdom",
+      "name_fa": "زابلستان — شاهنشاهیِ سام",
+      "kind_en": "The Eastern Province, Home of the Great Warriors",
+      "kind_fa": "استانِ شرقی، خانه‌ی قهرمانانِ بزرگ",
+      "summary_en": "Zabulestan is the eastern province of Iran where Sam rules and where Zal returns after his time on Alborz. It will become the most important region in the chronicle's heroic age — the home province of both Zal and Rostam. When Rostam eventually becomes Iran's champion, Zabulestan becomes the heartland of the chronicle's hope.",
+      "summary_fa": "زابلستان استانِ شرقیِ ایران است که سام در آن حکم می‌راند و زال پس از البرز به آن باز می‌گردد. مهم‌ترین منطقه در عصرِ پهلوانیِ شاهنامه خواهد شد — استانِ هر دوی زال و رستم.",
+      "image": null,
+      "unlocked": true
+    }
+  ],
+  "battle": {
+    "boss_slug": "shadow-of-ahriman",
+    "boss_name_en": "The Omen — Shadow of Ahriman",
+    "boss_name_fa": "فال — سایه‌ی اهریمن",
+    "boss_image": null,
+    "boss_master_slug": null,
+    "boss_master_image": null,
+    "intro_en": "The omen of white hair that drove Sam to abandon his son is the shadow at the center of this chapter. To face this gate you must understand not only what happened but why Sam was wrong — and what the Simorgh understood that Sam did not.",
+    "intro_fa": "فالِ بدِ موهای سفیدی که سام را به رها کردنِ پسرش واداشت سایه‌ای است در مرکزِ این دفتر. برای مواجهه با این دروازه باید نه فقط آنچه اتفاق افتاد بلکه چرا سام اشتباه کرد — و آنچه سیمرغ می‌فهمید که سام نفهمید — بدانی.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 30,
+        "label_en": "Reach LVL 30",
+        "label_fa": "رسیدن به سطحِ ۳۰",
+        "label_tg": "Расидан ба сатҳи 30",
+        "hint_en": "Tap, complete quests, and claim daily rewards to earn XP.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید و پاداش‌های روزانه بگیرید.",
+        "hint_tg": "Зарба занед, вазифаҳоро иҷро кунед."
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "zal",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "omen-and-shame",
+      "category": "concept",
+      "title_en": "The Omen Sam Misread",
+      "title_fa": "فالی که سام اشتباه خواند",
+      "summary_en": "White hair is not an omen of Ahriman. It is a sign of difference — of someone who exists between categories that the ordinary world uses to sort people. The Shahnameh makes this clear in retrospect: Zal's white hair is not a curse but the visible mark of a person who will live between the human and the divine. Sam read it as shame and acted accordingly. The mountain read it differently and gave the child to the one who could understand him.",
+      "summary_fa": "موهای سفید نشانه‌ی اهریمن نیست. نشانه‌ی تفاوت است — از کسی که میانِ دسته‌بندی‌هایی که دنیای معمولی برای طبقه‌بندی مردم استفاده می‌کند وجود دارد. شاهنامه این را در بازنگری روشن می‌کند: موهای سفیدِ زال لعنت نیست بلکه نشانه‌ی قابلِ رؤیتِ کسی است که میانِ انسانی و الهی زندگی خواهد کرد.",
+      "image": null,
+      "unlock_via": "scene:white-hair"
+    },
+    {
+      "id": "sams-debt",
+      "category": "event",
+      "title_en": "Sam's Debt",
+      "title_fa": "وامِ سام",
+      "summary_en": "Sam abandons his son and spends fifteen years not thinking about it — which in the Shahnameh is another way of saying he thinks about it always. When the dream comes, it is not a new revelation but the return of what he has suppressed: the knowledge, always present, that he chose reputation over fatherhood. The dream does not condemn him. It gives him the chance to correct himself, which the Shahnameh treats as mercy.",
+      "summary_fa": "سام پسرش را رها می‌کند و پانزده سال صرفِ فکر نکردن به آن می‌کند — که در شاهنامه راهِ دیگری برای گفتنِ همیشه به آن فکر می‌کند است. وقتی خواب می‌آید، وحیِ تازه‌ای نیست بلکه بازگشتِ آن چیزی است که سرکوب کرده: دانشی که همیشه حاضر بوده، که شهرت را بر پدری انتخاب کرده.",
+      "image": null,
+      "unlock_via": "scene:abandoned"
+    },
+    {
+      "id": "mountain-as-keeper",
+      "category": "place",
+      "title_en": "Alborz as the World's Keeper",
+      "title_fa": "البرز به‌عنوانِ نگهبانِ جهان",
+      "summary_en": "Mount Alborz appears throughout the Shahnameh as the axis where the human meets the divine. Zahhak is imprisoned in its caves. The Simorgh nests at its peak. Zal is raised there. In Persian cosmology, the mountain is not merely geographic — it is the column holding heaven and earth apart. The Shahnameh uses Alborz to mark moments where the chronicle enters mythic territory.",
+      "summary_fa": "کوهِ البرز در سراسرِ شاهنامه به‌عنوانِ محوری که انسانی با الهی دیدار می‌کند ظاهر می‌شود. ضحاک در غارهایش زندانی است. سیمرغ در قلّه‌اش لانه دارد. زال آنجا پرورش می‌یابد.",
+      "image": "/season2/uploads/heroes/mount_alborz.png",
+      "unlock_via": "scene:abandoned"
+    },
+    {
+      "id": "simorgh-the-witness",
+      "category": "person",
+      "title_en": "The Simorgh — The World's Oldest Witness",
+      "title_fa": "سیمرغ — کهن‌سال‌ترین شاهدِ جهان",
+      "summary_en": "The Simorgh has seen three destructions of the world. This is not a detail — it is the source of her authority. She does not give advice; she gives what only a witness can give: the view from outside the moment, the perspective of someone for whom this crisis, like all crises, is temporary. When she raises Zal she is doing what she has always done: keeping the thread intact when the humans holding it have dropped it.",
+      "summary_fa": "سیمرغ سه بار نابودیِ جهان را دیده. این جزئیات نیست — منبعِ اقتدارش است. توصیه نمی‌دهد؛ آنچه فقط شاهد می‌تواند بدهد را می‌دهد: دیدِ بیرون از لحظه، منظرِ کسی که برای او این بحران، مثلِ همه‌ی بحران‌ها، موقتی است.",
+      "image": null,
+      "unlock_via": "scene:simorgh-finds-him"
+    },
+    {
+      "id": "raised-in-the-sky",
+      "category": "concept",
+      "title_en": "What the Mountain Taught Him",
+      "title_fa": "آنچه کوه به او آموخت",
+      "summary_en": "Zal grows up without human time — without seasons of court politics, without the slow accumulation of small social humiliations that make most men guarded. He grows up with long patience, with the sky's version of perspective (things are very small from up here), and with the knowledge that his guardian is older than the first king. When he descends, he is not naive — he is differently schooled. The Shahnameh will show this difference repeatedly: Zal solves problems that destroy other men because he does not share their specific blindnesses.",
+      "summary_fa": "زال بدون زمانِ انسانی بزرگ می‌شود — بدون فصل‌های سیاستِ دربار، بدون انباشتِ کُندِ تحقیرهای اجتماعیِ کوچکی که بیشترِ مردان را محتاط می‌کند. با صبرِ طولانی بزرگ می‌شود، با منظرِ نسخه‌ی آسمان (از اینجا بالا همه چیز خیلی کوچک است) و با دانشِ اینکه سرپرستش از اولین شاه کهن‌سال‌تر است.",
+      "image": null,
+      "unlock_via": "scene:simorgh-finds-him"
+    },
+    {
+      "id": "repentance-before-judgment",
+      "category": "concept",
+      "title_en": "Sam's Repentance — Before Judgment",
+      "title_fa": "توبه‌ی سام — پیش از داوری",
+      "summary_en": "Sam does not repent because he is caught or condemned. He repents because he dreams the truth and cannot deny it. This is the Shahnameh's most precise moral teaching in this chapter: the highest form of correction is when the wrongdoer recognizes the wrong without being forced to. Sam climbs the mountain himself. He asks nothing of the Simorgh except his son. This is also why the Simorgh gives Zal back without recrimination — Sam has already punished himself more than she could.",
+      "summary_fa": "سام پشیمان نمی‌شود چون گیر افتاده یا محکوم شده. پشیمان می‌شود چون حقیقت را خواب می‌بیند و نمی‌تواند انکارش کند. این دقیق‌ترین درسِ اخلاقیِ شاهنامه در این دفتر است: عالی‌ترین شکلِ اصلاح وقتی است که خطاکار بدون اجبار خطا را تشخیص دهد.",
+      "image": null,
+      "unlock_via": "scene:sams-dream"
+    },
+    {
+      "id": "the-feather",
+      "category": "artifact",
+      "title_en": "The Simorgh's Feather",
+      "title_fa": "پرِ سیمرغ",
+      "summary_en": "The feather is the Shahnameh's most important single object. It is not powerful in itself — it is the signal that summons the one who is. The Simorgh gives Zal the feather at parting as a form of ongoing relationship: 'You are not alone, even after you leave me.' Zal will carry it his whole life. He will burn it exactly once — when Rudabeh is dying giving birth to Rostam. The timing is precise: the feather is spent at the moment the chronicle's greatest hero is born.",
+      "summary_fa": "پَر مهم‌ترین شیءِ منفردِ شاهنامه است. خودش قدرتمند نیست — سیگنالی است که فراخواننده‌ی کسی است که هست. سیمرغ پَر را هنگامِ خداحافظی به زال می‌دهد به‌عنوانِ شکلی از رابطه‌ی ادامه‌دار: «حتی بعد از رفتنت تنها نیستی.» زال تمامِ عمرش آن را حمل می‌کند. دقیقاً یک بار می‌سوزاندش — وقتی رودابه در حالِ زایمانِ رستم می‌میرد.",
+      "image": "/season2/uploads/heroes/Farr.png",
+      "unlock_via": "scene:the-return"
+    },
+    {
+      "id": "love-before-sight",
+      "category": "concept",
+      "title_en": "Love Before Sight",
+      "title_fa": "عشق پیش از دیدن",
+      "summary_en": "Zal hears merchants describe Rudabeh and falls in love before seeing her. Rudabeh hears her handmaidens describe Zal and falls in love before seeing him. The Shahnameh presents this as a more reliable form of love than love at first sight — to love what is described is to love the essential thing, not the surface. The chronicle trusts this love enough to make it the origin of its greatest hero.",
+      "summary_fa": "زال بازرگانان را می‌شنود که رودابه را توصیف می‌کنند و پیش از دیدنش عاشق می‌شود. رودابه ندیمه‌هایش را می‌شنود که زال را توصیف می‌کنند و پیش از دیدنش عاشق می‌شود. شاهنامه این را شکلِ قابل‌اعتمادتری از عشق نسبت به عشقِ در نگاهِ اول ارائه می‌دهد.",
+      "image": null,
+      "unlock_via": "scene:zal-hears-of-rudabeh"
+    },
+    {
+      "id": "zal-at-court-preview",
+      "category": "event",
+      "title_en": "Zal at Court — The Proving",
+      "title_fa": "زال در دربار — اثبات",
+      "summary_en": "When Zal first appears at Manuchehr's court, the king's scholars challenge him with riddles — tests of a different kind than swordsmanship. Zal answers every riddle correctly. The court is surprised: they expected a mountain-man, a creature of instinct. What they got was someone schooled by patience and the Simorgh's long view. Zal's intelligence is the gift of Alborz. It will serve him and Iran for the rest of his long life.",
+      "summary_fa": "وقتی زال اولین بار در دربارِ منوچهر ظاهر می‌شود، دانشمندانِ دربار چیستان‌هایی مطرح می‌کنند — آزمون‌هایی از نوعی متفاوت از شمشیرزنی. زال هر چیستانی را درست جواب می‌دهد. دربار تعجب می‌کند: انتظار داشتند مردِ کوهستانی ببینند. کسی که آموختن توسطِ صبر و دیدِ دورِ سیمرغ پرورشش داده را دیدند.",
+      "image": null,
+      "unlock_via": "scene:the-return"
+    }
+  ]
+}

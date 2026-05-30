@@ -983,6 +983,102 @@
       "explanation_tg": "Рӯдоба, духтари Меҳроби Кобулӣ."
     },
     {
+      "id": "rudabeh-e1",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How does Zal first learn about Rudabeh before ever seeing her?",
+      "question_fa": "زال چگونه پیش از دیدنِ رودابه از او باخبر می‌شود؟",
+      "question_tg": "Зол чӣ тавр пеш аз дидани Рӯдоба аз ӯ огоҳ мешавад?",
+      "answers": [
+        "He sees her from a distance at a feast",
+        "Merchants describe her beauty to him",
+        "A dream sent by the Simorgh",
+        "Manuchehr introduces them at court"
+      ],
+      "answers_fa": [
+        "او را از دور در جشنی می‌بیند",
+        "بازرگانان زیباییِ او را برایش توصیف می‌کنند",
+        "خوابی که سیمرغ فرستاد",
+        "منوچهر آن‌ها را در دربار معرفی می‌کند"
+      ],
+      "answers_tg": [
+        "Ӯро аз дур дар базме мебинад",
+        "Тоҷирон зебоии ӯро барояш тавсиф мекунанд",
+        "Хобе, ки Симурғ фиристод",
+        "Манучеҳр онҳоро дар дарбор шинос мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Merchants describe Rudabeh to Zal — her face like the moon, her hair like a river. He falls in love through words alone before he has seen her. The Shahnameh treats this as a form of recognition more reliable than love at first sight: to love what is described is to love the essential thing, not merely the surface.",
+      "explanation_fa": "بازرگانان رودابه را برای زال توصیف می‌کنند — رخسارش مثلِ ماه، مویش مثلِ رودخانه. او تنها با کلمات عاشق می‌شود پیش از آنکه چهره‌اش را دیده باشد. شاهنامه این را نوعی شناخت می‌داند که از عشقِ در نگاهِ اول قابل‌اعتمادتر است.",
+      "explanation_tg": "Тоҷирон Рӯдобаро ба Зол тавсиф мекунанд — рӯяш мисли моҳ, мӯяш мисли дарё. Ӯ танҳо бо калимаҳо ошиқ мешавад пеш аз он ки рӯяшро дида бошад.",
+      "reward": { "xp": 120, "real": 50 }
+    },
+    {
+      "id": "rudabeh-e2",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What does Rudabeh do so Zal can reach her tower chamber?",
+      "question_fa": "رودابه چه می‌کند تا زال بتواند به اتاقِ بالای برج برسد؟",
+      "question_tg": "Рӯдоба чӣ мекунад, то Зол ба ҳуҷраи болои бурҷ бирасад?",
+      "answers": [
+        "She bribes the tower guards to let him through",
+        "She lowers a silk rope from the window",
+        "She lets her long hair down for him to climb",
+        "She meets him secretly at the base of the tower"
+      ],
+      "answers_fa": [
+        "نگهبانانِ برج را رشوه می‌دهد تا بگذارند رد شود",
+        "از پنجره طنابِ ابریشمی پایین می‌اندازد",
+        "موهای بلندش را برای بالا رفتنش پایین می‌اندازد",
+        "در پایِ برج مخفیانه با او ملاقات می‌کند"
+      ],
+      "answers_tg": [
+        "Посбонони бурҷро ришва медиҳад, то бигузоранд гузарад",
+        "Аз тиреза ресмони абрешимӣ мепартояд",
+        "Мӯҳои дарози худро барои боло рафтанаш мепартояд",
+        "Дар поёни бурҷ пинҳонӣ бо ӯ вохӯрд мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Rudabeh lets her hair down from the window — hair so long it reaches the ground — and Zal climbs up it. This image is one of the Shahnameh's most famous: love so complete that the body itself becomes the bridge. The hair is not a metaphor. It is the literal ladder.",
+      "explanation_fa": "رودابه مویش را از پنجره پایین می‌اندازد — مویی که آنقدر بلند است که به زمین می‌رسد — و زال از آن بالا می‌رود. این تصویر یکی از مشهورترین‌های شاهنامه است: عشقی که چنان کامل است که خودِ جسم پل می‌شود.",
+      "explanation_tg": "Рӯдоба мӯяшро аз тиреза мепартояд — мӯе ки чунон дароз аст, ки ба замин мерасад — ва Зол аз он боло меравад. Ин тасвир яке аз машҳуртаринҳои Шоҳнома аст.",
+      "reward": { "xp": 130, "real": 55 }
+    },
+    {
+      "id": "rudabeh-m1",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Why do Sam and Manuchehr initially oppose the marriage of Zal and Rudabeh?",
+      "question_fa": "چرا سام و منوچهر در ابتدا با ازدواجِ زال و رودابه مخالفند؟",
+      "question_tg": "Чаро Сом ва Манучеҳр дар ибтидо бо издивоҷи Зол ва Рӯдоба мухолифанд?",
+      "answers": [
+        "Zal is too old — Rudabeh deserves a younger husband",
+        "Rudabeh's lineage traces back to Zahhak the Serpent King",
+        "Kabul is at war with Iran and the marriage would shame Sam",
+        "The Simorgh forbade Zal from marrying anyone of mortal blood"
+      ],
+      "answers_fa": [
+        "زال خیلی پیر است — رودابه لایقِ شوهرِ جوان‌تری است",
+        "نسبِ رودابه به ضحاکِ مارکِش می‌رسد",
+        "کابل با ایران در جنگ است و این ازدواج آبروی سام را می‌برد",
+        "سیمرغ زال را از ازدواج با هر کسی از خونِ فانی منع کرده"
+      ],
+      "answers_tg": [
+        "Зол хеле пир аст — Рӯдоба лоиқи шавҳари ҷавонтаре аст",
+        "Насаби Рӯдоба ба Заҳҳоки Морбандак мерасад",
+        "Кобул бо Эрон дар ҷанг аст ва ин издивоҷ обрӯи Сомро мебарад",
+        "Симурғ Золро аз издивоҷ бо ҳар касе аз хуни фонӣ манъ кардааст"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rudabeh is descended from Mehrab of Kabul, whose lineage traces back to Zahhak — the Serpent King whose thousand-year tyranny was the darkest chapter in Iran's history. Marrying into that blood felt to Sam and Manuchehr like inviting the old evil back in through the door of love. The astrologers had to show them that the child to come would be greater than the shadow behind his mother's name.",
+      "explanation_fa": "رودابه از مهرابِ کابلی نسب می‌برد که نسبش به ضحاک می‌رسد — شاهِ ماری که هزار سال ستمگری‌اش تاریک‌ترین دفترِ تاریخِ ایران بود. ازدواج با آن خون برای سام و منوچهر مثلِ دعوتِ دوباره‌ی بدِ قدیم از درِ عشق به نظر می‌رسید. منجمان باید نشان می‌دادند که فرزندی که می‌آید از سایه‌ای پشتِ نامِ مادرش بزرگ‌تر خواهد بود.",
+      "explanation_tg": "Рӯдоба аз Меҳроби Кобулӣ насаб мебарад, ки насабаш ба Заҳҳок мерасад — шоҳи море, ки ҳазор соли ситамгариаш торик‌тарин бобиест дар таърихи Эрон. Оид ба ин, мунаҷҷимон бояд нишон медоданд ки фарзанди меомад аз соябону Заҳҳок бузургтар хоҳад буд.",
+      "reward": { "xp": 160, "real": 70 }
+    },
+    {
       "id": "rostam-1",
       "chapter_slug": "rostam",
       "quiz_part": 1,

@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-30T00:00:00Z",
+  "chapter_slug": "rudabeh",
+  "chapter_id": 10,
+  "era": {
+    "label_en": "~3130–3100 BC — The Age of Zal and Rudabeh",
+    "label_fa": "~۳۱۳۰–۳۱۰۰ پ.م — عصرِ زال و رودابه"
+  },
+  "lore_summary": {
+    "en": "Zal has heard of Rudabeh from merchants. Rudabeh has heard of Zal from her handmaidens. Neither has seen the other. Both are already certain. Rudabeh's handmaidens arrange a meeting in the garden below her tower. Rudabeh lets her hair down from the window — long enough to reach the ground — and Zal climbs up. They spend the night pledging their lives. Then morning brings the obstacles: Sam refuses, citing Zahhak's shadow in Rudabeh's lineage. Manuchehr refuses, same reason. Rudabeh's mother Sindokht negotiates with the ferocity of a general. Astrologers are consulted and find that from this union will come a child unlike any other in the chronicle. Permission is granted. Zal and Rudabeh marry. Nine months later the birth will not come. Rudabeh is dying. Zal burns the Simorgh's feather. The great bird guides the surgery. Rostam enters the world.",
+    "fa": "زال از بازرگانان درباره‌ی رودابه شنیده. رودابه از ندیمه‌هایش درباره‌ی زال شنیده. هیچ‌کدام دیگری را ندیده. هر دو از پیش مطمئنند. ندیمه‌های رودابه ملاقاتی در باغِ پایینِ برج ترتیب می‌دهند. رودابه مویش را از پنجره پایین می‌اندازد — آنقدر بلند که به زمین می‌رسد — و زال بالا می‌رود. شب را صرفِ قرار دادنِ زندگی‌هایشان می‌کنند. بعد صبح موانع را می‌آورد: سام رد می‌کند، به سایه‌ی ضحاک در نسبِ رودابه اشاره می‌کند. منوچهر رد می‌کند، همان دلیل. مادرِ رودابه سیندخت با سرسختیِ یک ژنرال مذاکره می‌کند. منجمان مشورت داده می‌شوند و می‌یابند که از این اتحاد فرزندی می‌آید که مثلِ هیچ‌کسِ دیگری در شاهنامه نیست. اجازه داده می‌شود. زال و رودابه ازدواج می‌کنند. نه ماه بعد زایمان صورت نمی‌گیرد. رودابه دارد می‌میرد. زال پرِ سیمرغ را می‌سوزاند. پرنده‌ی بزرگ جراحی را راهنمایی می‌کند. رستم وارد جهان می‌شود."
+  },
+  "timeline": [
+    {
+      "id": "description-to-love",
+      "year_label_en": "~3130 BC",
+      "year_label_fa": "~۳۱۳۰ پ.م",
+      "title_en": "Love Through Description",
+      "title_fa": "عشق از طریقِ توصیف",
+      "body_en": "Merchants describe Rudabeh to Zal. Rudabeh's handmaidens describe Zal to Rudabeh. Both fall in love before seeing. The Shahnameh marks this as a form of recognition deeper than sight.",
+      "body_fa": "بازرگانان رودابه را برای زال توصیف می‌کنند. ندیمه‌های رودابه زال را برای رودابه توصیف می‌کنند. هر دو پیش از دیدن عاشق می‌شوند.",
+      "image": null,
+      "side": "light"
+    },
+    {
+      "id": "tower-of-hair",
+      "year_label_en": "~3125 BC",
+      "year_label_fa": "~۳۱۲۵ پ.م",
+      "title_en": "The Tower of Hair",
+      "title_fa": "برجِ موی",
+      "body_en": "Rudabeh lets her hair down from her tower window. Zal climbs. They pledge their lives in her chamber while Kabul sleeps.",
+      "body_fa": "رودابه مویش را از پنجره‌ی برج پایین می‌اندازد. زال بالا می‌رود. در اتاقش زندگی‌هایشان را قرار می‌گذارند در حالی که کابل می‌خوابد.",
+      "image": null,
+      "side": "light"
+    },
+    {
+      "id": "opposition",
+      "year_label_en": "~3120 BC",
+      "year_label_fa": "~۳۱۲۰ پ.م",
+      "title_en": "Sam and Manuchehr Object",
+      "title_fa": "مخالفتِ سام و منوچهر",
+      "body_en": "Sam refuses the match — Zahhak's lineage runs through Mehrab's house. Manuchehr refuses. Sindokht, Rudabeh's mother, negotiates with the ferocity of a general. The astrologers are consulted.",
+      "body_fa": "سام رد می‌کند — نسبِ ضحاک از خانه‌ی مهراب می‌گذرد. منوچهر رد می‌کند. سیندخت، مادرِ رودابه، با سرسختیِ یک ژنرال مذاکره می‌کند.",
+      "image": null,
+      "side": "dark"
+    },
+    {
+      "id": "astrologers-decide",
+      "year_label_en": "~3115 BC",
+      "year_label_fa": "~۳۱۱۵ پ.م",
+      "title_en": "The Stars Agree",
+      "title_fa": "ستاره‌ها موافقت می‌کنند",
+      "body_en": "The astrologers find that from Zal and Rudabeh will come a child of extraordinary destiny. Permission is granted. The wedding takes place.",
+      "body_fa": "منجمان می‌یابند که از زال و رودابه فرزندی با سرنوشتِ استثنایی خواهد آمد. اجازه داده می‌شود. عروسی صورت می‌گیرد.",
+      "image": null,
+      "side": "light"
+    },
+    {
+      "id": "rostam-born",
+      "year_label_en": "~3100 BC",
+      "year_label_fa": "~۳۱۰۰ پ.م",
+      "title_en": "Rostam Is Born",
+      "title_fa": "رستم متولد می‌شود",
+      "body_en": "The birth will not come. Rudabeh is dying. Zal burns the Simorgh's feather. The great bird guides the caesarean. Rostam enters the world large as a young lion, and roars like one.",
+      "body_fa": "زایمان صورت نمی‌گیرد. رودابه دارد می‌میرد. زال پرِ سیمرغ را می‌سوزاند. پرنده‌ی بزرگ سزارین را راهنمایی می‌کند. رستم به بزرگیِ شیرِ جوان وارد جهان می‌شود.",
+      "image": null,
+      "side": "light"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "the-merchants-return",
+      "order": 1,
+      "title_en": "The Merchants' Return",
+      "title_fa": "بازگشتِ بازرگانان",
+      "era_en": "~3130 BC",
+      "era_fa": "~۳۱۳۰ پ.م",
+      "body_en": "Merchants travel between Zabulestan and Kabul the way merchants always have: by the logic of profit and the secondary logic of gossip. They arrive in Sam's court with silk from Kabul and, inevitably, news of Kabul. The king, his court, his wealth. And the king's daughter — her face like the moon at its full, her eyes dark as the night above the Oxus, her hair so long it trails behind her when she walks. They mean it as flattery for Kabul's prosperity. Zal is in the court and he is listening, and the Shahnameh notes that something happens to him at that moment that he cannot name. He sends the merchants on their way and spends the night in difficulty. In the morning he knows: he is in love with someone he has never seen. In the Shahnameh's world, this is not foolishness. It is recognition.",
+      "body_fa": "بازرگانان میانِ زابلستان و کابل سفر می‌کنند به روشی که همیشه سفر کرده‌اند: به منطقِ سود و منطقِ ثانویِ شایعه. با ابریشمِ کابل و اجتناب‌ناپذیرانه اخبارِ کابل به دربارِ سام می‌رسند. شاه، دربارش، دارایی‌هایش. و دخترِ شاه — رخسارش مثلِ ماهِ تمام، چشمانش تاریک چون شبِ بالای آمودریا، مویش آنقدر بلند که هنگامِ راه رفتن پشتِ سرش کشیده می‌شود. زال در دربار است و گوش می‌دهد.",
+      "atmosphere": "warm",
+      "image": null,
+      "reward": { "xp": 45 },
+      "unlocks_codex": ["kabul-in-the-shadow"]
+    },
+    {
+      "id": "handmaidens",
+      "order": 2,
+      "title_en": "The Handmaidens",
+      "title_fa": "ندیمه‌ها",
+      "era_en": "~3128 BC",
+      "era_fa": "~۳۱۲۸ پ.م",
+      "body_en": "Rudabeh's handmaidens are the Shahnameh's great practical detail in this love story. They go to the market, they see Zal, they come back and describe him: white hair like Damavand's peak, a face like the moon, arms that could hold up a mountain, the manner of a man raised above the ordinary world. They say this to amuse Rudabeh, to fill an afternoon. They do not expect her to ask: 'Tell me more.' They do not expect her to ask it three more times. By evening Rudabeh is in love with someone she has never seen, and by morning she is decided. The handmaidens understand — they have caused this — and they go back to the market to arrange the meeting.",
+      "body_fa": "ندیمه‌های رودابه جزئیاتِ عملیِ بزرگِ شاهنامه در این داستانِ عشقی‌اند. به بازار می‌روند، زال را می‌بینند، برمی‌گردند و توصیفش می‌کنند: موهای سفید چون قلّه‌ی دماوند، رخسارِ مثلِ ماه، بازوانی که می‌توانند کوه را نگه دارند. رودابه می‌پرسد: «بیشتر بگویید.» سه بارِ دیگر می‌پرسد. تا شب رودابه عاشقِ کسی است که ندیده.",
+      "atmosphere": "warm",
+      "image": null,
+      "reward": { "xp": 55 },
+      "unlocks_codex": ["handmaidens-as-bridge"]
+    },
+    {
+      "id": "tower-scene",
+      "order": 3,
+      "title_en": "The Tower",
+      "title_fa": "برج",
+      "era_en": "~3125 BC",
+      "era_fa": "~۳۱۲۵ پ.م",
+      "body_en": "The meeting is arranged in the garden below the tower. Zal arrives at dusk. Rudabeh appears at the window high above and calls down to him. Zal calls up. They speak across the air, across the impossibility of the distance, until Rudabeh says: 'Take hold.' She uncoils her hair — black silk to the waist, black silk below the waist, black silk down the tower, black silk reaching the earth — and Zal takes hold and climbs. This is the Shahnameh's most famous image of love: not two people meeting on equal ground but one person making themselves the bridge. Rudabeh offers her hair because it is the most intimate, most personal thing she has. She gives the most personal thing she has as the ladder. When Zal reaches the top and they face each other, both of them understand: this is not infatuation. This is the thing the Simorgh's feather was always pointing toward.",
+      "body_fa": "ملاقات در باغِ پایینِ برج ترتیب داده می‌شود. زال در غروب می‌رسد. رودابه در پنجره‌ی بالا ظاهر می‌شود و پایین صدا می‌کند. زال بالا صدا می‌کند. در فضا صحبت می‌کنند، تا رودابه می‌گوید: «بگیر.» مویش را باز می‌کند — ابریشمِ سیاه تا کمر، ابریشمِ سیاه پایین‌تر از کمر، ابریشمِ سیاه پایینِ برج، ابریشمِ سیاه تا زمین — و زال می‌گیرد و بالا می‌رود. این مشهورترین تصویرِ شاهنامه از عشق است: نه دو نفر که روی زمینِ مساوی دیدار می‌کنند بلکه یک نفر که خودش را پل می‌کند.",
+      "atmosphere": "mythic",
+      "image": null,
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["the-hair-as-bridge", "zahhaks-shadow"]
+    },
+    {
+      "id": "sindokht-negotiates",
+      "order": 4,
+      "title_en": "Sindokht at the Gate",
+      "title_fa": "سیندخت در دروازه",
+      "era_en": "~3120 BC",
+      "era_fa": "~۳۱۲۰ پ.م",
+      "body_en": "Sam refuses. Manuchehr refuses. Both say the same thing: Zahhak's blood runs in Mehrab's house and they will not bring that shadow into the bloodline of Iran's great warriors. Sindokht — Rudabeh's mother, Mehrab's wife — does not weep. She goes to Sam's court herself. She negotiates with the ferocity of someone who knows exactly what she is worth and exactly what she is asking for. She brings gifts, she brings argument, she brings the weight of a mother who has watched her daughter choose a love that could not be un-chosen. She breaks nothing but she moves everything. When she leaves, Sam is not against the marriage. He is simply waiting for Manuchehr to change his mind.",
+      "body_fa": "سام رد می‌کند. منوچهر رد می‌کند. هر دو یک چیز می‌گویند: خونِ ضحاک در خانه‌ی مهراب جاری است و سایه‌ی آن را به نسبِ قهرمانانِ بزرگِ ایران نمی‌آورند. سیندخت — مادرِ رودابه، همسرِ مهراب — گریه نمی‌کند. خودش به دربارِ سام می‌رود. با سرسختیِ کسی که دقیقاً می‌داند ارزشش چیست و دقیقاً چه می‌خواهد مذاکره می‌کند.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 65 },
+      "unlocks_codex": ["sindokht-the-negotiator", "zahhaks-shadow"]
+    },
+    {
+      "id": "the-stars-agree",
+      "order": 5,
+      "title_en": "The Astrologers' Verdict",
+      "title_fa": "حکمِ منجمان",
+      "era_en": "~3115 BC",
+      "era_fa": "~۳۱۵ پ.م",
+      "body_en": "Manuchehr finally orders the astrologers to consult the stars — which in this chapter is Ferdowsi's way of acknowledging that Manuchehr already wants to say yes but needs a reason that isn't 'because the mother was very persuasive.' The astrologers return with news that makes the choice simple: from the union of Zal and Rudabeh will come a hero unlike any the chronicle has seen. The stars are unusually specific. The permission is granted without further conditions. Zal and Rudabeh are married in the season of their longest day.",
+      "body_fa": "منوچهر بالاخره دستور می‌دهد منجمان ستارگان را بررسی کنند — که در این دفتر روشِ فردوسی برای اذعان به این است که منوچهر از پیش می‌خواهد بله بگوید اما دلیلی لازم دارد که «چون مادر بسیار متقاعدکننده بود» نباشد. منجمان با خبری باز می‌گردند که انتخاب را ساده می‌کند: از اتحادِ زال و رودابه قهرمانی می‌آید که مثلِ هیچ‌کسِ دیگری که شاهنامه دیده نیست.",
+      "atmosphere": "dawn",
+      "image": null,
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["astrologers-and-destiny", "rostam-foretold"]
+    },
+    {
+      "id": "rostam-enters",
+      "order": 6,
+      "title_en": "Rostam Enters the World",
+      "title_fa": "رستم وارد جهان می‌شود",
+      "era_en": "~3100 BC",
+      "era_fa": "~۳۱۰۰ پ.م",
+      "body_en": "Nine months later the birth does not come. The physicians stand beside the bed and do not know what to do. Rudabeh is weakening. Zal understands: this is his greatest need. He takes the Simorgh's feather from where he has kept it his entire life — folded in cloth, carried through every battle, through every court, through every year since the mountain — and he burns it. The smoke rises. The Simorgh arrives. She guides the caesarean that the surgeons perform. Rudabeh's life is saved. The child is lifted free. He is large as a young lion. He cries like one too. Zal names him Rostam. The Shahnameh pauses here, just for a moment, to mark what has just entered its pages — and then it moves on, because the story it has been building toward for ten chapters has only just begun.",
+      "body_fa": "نه ماه بعد زایمان صورت نمی‌گیرد. پزشکان کنارِ تخت ایستاده‌اند و نمی‌دانند چه کنند. رودابه ضعیف می‌شود. زال می‌فهمد: این بزرگترین نیازش است. پرِ سیمرغ را از جایی که تمامِ عمرش نگه داشته می‌گیرد — تا شده در پارچه، از میانِ هر نبرد برده، از میانِ هر دربار، از میانِ هر سال از آن زمانِ کوه — و می‌سوزاندش. دود بالا می‌رود. سیمرغ می‌رسد. سزارین را راهنمایی می‌کند. جانِ رودابه نجات می‌یابد. کودک آزاد می‌شود. به بزرگیِ شیرِ جوان است. مثلِ شیر هم گریه می‌کند. زال نامش را رستم می‌گذارد.",
+      "atmosphere": "dawn",
+      "image": null,
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["feather-burned", "rostam-arrives"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "rudabeh",
+      "name_en": "Rudabeh",
+      "name_fa": "رودابه",
+      "role_en": "Princess of Kabul · Zal's Beloved · Mother of Rostam",
+      "role_fa": "شاهدختِ کابل · معشوقِ زال · مادرِ رستم",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "Rudabeh is not a passive figure. She falls in love first (or simultaneously with Zal), she arranges the tower meeting through her handmaidens, she is the one who lets her hair down. She does not wait for love to happen to her — she acts for it. Her one demand is that Zal climb without using a rope: she will not offer a lesser bridge. The Shahnameh honors her with the chapter's title. Rostam is hers as much as Zal's.",
+      "lore_fa": "رودابه چهره‌ی منفعلی نیست. اول عاشق می‌شود (یا همزمان با زال)، ملاقاتِ برج را از طریقِ ندیمه‌هایش ترتیب می‌دهد، اوست که مویش را پایین می‌اندازد. منتظر نمی‌ماند عشق برایش اتفاق بیفتد — برایش عمل می‌کند. شاهنامه با عنوانِ دفتر او را احترام می‌گذارد.",
+      "image": "/season2/uploads/chapters/rudabeh.png",
+      "unlocked": true,
+      "side": "light"
+    },
+    {
+      "slug": "zal-in-love",
+      "name_en": "Zal",
+      "name_fa": "زال",
+      "role_en": "The White-Haired Prince · Lover · Father of Rostam",
+      "role_fa": "شاهزاده‌ی سپیدمو · عاشق · پدرِ رستم",
+      "rarity": "legendary",
+      "level_required": 1,
+      "lore_en": "Zal in this chapter is a different figure from Zal the mountain-prince of the previous chapter. He is not calculating or patient. He is simply and entirely in love, from the moment the merchants describe Rudabeh to the moment he climbs her hair. He will face every objection — Sam, Manuchehr, Zahhak's shadow — without wavering. The Shahnameh trusts him with Rostam's birth precisely because it has shown us that he burns the feather only in absolute necessity.",
+      "lore_fa": "زال در این دفتر چهره‌ای متفاوت از زالِ شاهزاده‌ی کوهستانیِ دفترِ قبلی است. محاسبه‌گر یا صبور نیست. ساده و کاملاً عاشق است، از لحظه‌ای که بازرگانان رودابه را توصیف می‌کنند تا لحظه‌ای که از مویش بالا می‌رود.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:tower-scene"
+    },
+    {
+      "slug": "sindokht",
+      "name_en": "Sindokht",
+      "name_fa": "سیندخت",
+      "role_en": "Rudabeh's Mother · The Negotiator",
+      "role_fa": "مادرِ رودابه · مذاکره‌کننده",
+      "rarity": "epic",
+      "level_required": 4,
+      "lore_en": "Sindokht is one of the Shahnameh's most underrated figures. She is a woman operating in a world of great male warriors and kings, and she moves all of them. She goes to Sam's court with gifts and argument. She does not beg; she trades. She does not plead; she reasons. By the time she leaves, Sam is ready to say yes. By the time the astrologers return their verdict, Manuchehr is ready too. Sindokht made both of those things possible.",
+      "lore_fa": "سیندخت یکی از دست‌کم‌گرفته‌ترین چهره‌های شاهنامه است. زنی است که در دنیای پهلوانان و شاهانِ بزرگِ مذکر عمل می‌کند، و همه‌ی آن‌ها را جابجا می‌کند. با هدایا و استدلال به دربارِ سام می‌رود. التماس نمی‌کند؛ مبادله می‌کند. پند نمی‌دهد؛ استدلال می‌کند.",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
+      "unlock_via": "scene:sindokht-negotiates"
+    },
+    {
+      "slug": "mehrab",
+      "name_en": "Mehrab",
+      "name_fa": "مهراب",
+      "role_en": "King of Kabul · Zahhak's Descendant · Rudabeh's Father",
+      "role_fa": "شاهِ کابل · نوادگانِ ضحاک · پدرِ رودابه",
+      "rarity": "rare",
+      "level_required": 5,
+      "lore_en": "Mehrab is not Zahhak. He is the shadow of Zahhak — a king many generations removed from the serpent-tyrant, ruling Kabul as a vassal of Iran, genuinely loyal to Manuchehr. He is the reason the marriage is opposed, but not because of anything he has done: because of the blood that flows in him regardless of what he has chosen. The Shahnameh does not punish him for his ancestry. It notes it, weighs it, and ultimately sets it aside in favor of what the stars say his grandchild will be.",
+      "lore_fa": "مهراب ضحاک نیست. سایه‌ی ضحاک است — شاهی نسل‌های بسیار دور از ستمگرِ مارکِش، که کابل را به‌عنوانِ زیردستِ ایران اداره می‌کند، صادقانه به منوچهر وفادار است. دلیلِ مخالفت با ازدواج است، اما نه به خاطرِ کاری که کرده: به خاطرِ خونی که در او جاری است.",
+      "image": null,
+      "unlocked": false,
+      "side": "neutral",
+      "unlock_via": "scene:sindokht-negotiates"
+    }
+  ],
+  "places": [
+    {
+      "slug": "kabul",
+      "name_en": "Kabul — Mehrab's Kingdom",
+      "name_fa": "کابل — شاهنشاهیِ مهراب",
+      "kind_en": "The Eastern Vassal Kingdom, Where the Love Story Begins",
+      "kind_fa": "پادشاهیِ زیردستِ شرقی، جایی که داستانِ عشق آغاز می‌شود",
+      "summary_en": "Kabul is a vassal kingdom of Iran — loyal to Manuchehr, wealthy in silk and horses, ruled by Mehrab whose bloodline traces to Zahhak. The Shahnameh does not describe Kabul as a dark place; it is the home of Rudabeh, who is anything but dark. The problem is not the place but the ancestry — and the ancestry turns out to matter less than the astrologers' reading of what will come from it.",
+      "summary_fa": "کابل پادشاهیِ زیردستِ ایران است — وفادار به منوچهر، ثروتمند در ابریشم و اسب، توسطِ مهراب اداره می‌شود که نسبش به ضحاک می‌رسد. شاهنامه کابل را مکانِ تاریکی توصیف نمی‌کند؛ خانه‌ی رودابه است.",
+      "image": null,
+      "unlocked": true
+    },
+    {
+      "slug": "rudabehs-tower",
+      "name_en": "Rudabeh's Tower — The Bridge of Hair",
+      "name_fa": "برجِ رودابه — پلِ مو",
+      "kind_en": "The Most Famous Window in the Shahnameh",
+      "kind_fa": "مشهورترین پنجره‌ی شاهنامه",
+      "summary_en": "The tower chamber where Rudabeh lets her hair down is the Shahnameh's most intimate architectural space. It is not a battlefield, not a throne room, not a courtyard of judgment. It is a room where two people speak across a window and one of them offers the most personal thing she has as the bridge between them. The image — hair to the ground, lover climbing — is the chronicle's definition of love as a form of self-offering.",
+      "summary_fa": "اتاقِ برجی که رودابه مویش را پایین می‌اندازد خصوصی‌ترین فضای معماریِ شاهنامه است. میدانِ نبرد، تالارِ تخت، صحنِ قضاوت نیست. اتاقی است که دو نفر از فراز پنجره‌ای صحبت می‌کنند و یکی از آن‌ها شخصی‌ترین چیزی که دارد را به‌عنوانِ پل میانشان تقدیم می‌کند.",
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:tower-scene"
+    }
+  ],
+  "battle": {
+    "boss_slug": "zahhak-shadow",
+    "boss_name_en": "Zahhak's Shadow — The Lineage Objection",
+    "boss_name_fa": "سایه‌ی ضحاک — اعتراضِ نسبی",
+    "boss_image": null,
+    "boss_master_slug": null,
+    "boss_master_image": null,
+    "intro_en": "The obstacle to Zal and Rudabeh's marriage is not a battle but a shadow — the blood of Zahhak running through Mehrab's house. To face this gate you must understand why Sam and Manuchehr object, what Sindokht argued to move them, and what the astrologers finally showed about what was to come.",
+    "intro_fa": "مانعِ ازدواجِ زال و رودابه نبرد نیست بلکه سایه است — خونِ ضحاک که از خانه‌ی مهراب جاری است. برای مواجهه با این دروازه باید بفهمی چرا سام و منوچهر مخالفت کردند، سیندخت چه استدلالی کرد تا آن‌ها را جابجا کند، و منجمان بالاخره چه نشان دادند.",
+    "requirements": [
+      {
+        "id": "level",
+        "kind": "level",
+        "target": 35,
+        "label_en": "Reach LVL 35",
+        "label_fa": "رسیدن به سطحِ ۳۵",
+        "label_tg": "Расидан ба сатҳи 35",
+        "hint_en": "Tap, complete quests, and claim daily rewards to earn XP.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
+        "hint_tg": "Зарба занед, вазифаҳоро иҷро кунед."
+      },
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "rudabeh",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "kabul-in-the-shadow",
+      "category": "place",
+      "title_en": "Kabul — The City in Zahhak's Shadow",
+      "title_fa": "کابل — شهر در سایه‌ی ضحاک",
+      "summary_en": "Kabul is not an evil place. Mehrab is not an evil king. But his bloodline — many generations removed though it is — traces back to Zahhak, and in the chronicle's moral universe, lineage matters. The Shahnameh does not say this is just; it presents it as the reality that the lovers must work around. That they succeed — that the astrologers find a reason to bless the union despite the shadow — is the chapter's central argument: some things coming from the future are greater than any shadow cast from the past.",
+      "summary_fa": "کابل مکانِ بدی نیست. مهراب شاهِ بدی نیست. اما نسبِ او — نسل‌های بسیار دور هم که باشد — به ضحاک می‌رسد. شاهنامه نمی‌گوید این عادلانه است؛ به‌عنوانِ واقعیتی که عاشقان باید دورش بزنند ارائه‌اش می‌کند.",
+      "image": null,
+      "unlock_via": "scene:the-merchants-return"
+    },
+    {
+      "id": "handmaidens-as-bridge",
+      "category": "concept",
+      "title_en": "The Handmaidens — Love's Intermediaries",
+      "title_fa": "ندیمه‌ها — واسطه‌هایِ عشق",
+      "summary_en": "The handmaidens are the Shahnameh's acknowledgment that love in its early stage requires infrastructure. Zal cannot go to Rudabeh's window without preparation. Rudabeh cannot reach Zal's court without messengers. The handmaidens are the practical intelligence of the love story — not romantic figures but essential ones. Without them, the most famous window in the Shahnameh never opens.",
+      "summary_fa": "ندیمه‌ها اذعانِ شاهنامه هستند که عشق در مرحله‌ی اولش به زیرساخت نیاز دارد. زال بدون آمادگی نمی‌تواند به پنجره‌ی رودابه برود. رودابه بدون پیام‌رسان نمی‌تواند به دربارِ زال برسد. ندیمه‌ها هوشِ عملیِ داستانِ عشقی‌اند.",
+      "image": null,
+      "unlock_via": "scene:handmaidens"
+    },
+    {
+      "id": "the-hair-as-bridge",
+      "category": "event",
+      "title_en": "The Hair as Bridge",
+      "title_fa": "مو به‌عنوانِ پل",
+      "summary_en": "Rudabeh does not lower a rope. She lowers herself — specifically, the part of herself that is most intimate, most carefully tended, most personally hers. In offering her hair as the ladder, she is offering herself. Zal climbing the hair understands this. The Shahnameh's most famous image of love is also its most precise definition of what love requires: the willingness to offer the most personal thing you have as the crossing point.",
+      "summary_fa": "رودابه طناب پایین نمی‌اندازد. خودش را پایین می‌اندازد — خاصیتاً آن بخشی از خودش که خصوصی‌ترین، با دقت‌ترین مراقبت‌شده‌ترین، شخصی‌ترینِ اوست. با تقدیمِ مویش به‌عنوانِ نردبان، خودش را تقدیم می‌کند.",
+      "image": null,
+      "unlock_via": "scene:tower-scene"
+    },
+    {
+      "id": "zahhaks-shadow",
+      "category": "concept",
+      "title_en": "Zahhak's Shadow — How Long Does Ancestry Reach?",
+      "title_fa": "سایه‌ی ضحاک — نسب تا کجا می‌رسد؟",
+      "summary_en": "The objection to Rudabeh is her bloodline's connection to Zahhak — the serpent tyrant of Chapter 5. Sam and Manuchehr are not wrong to notice it; they are wrong about what it means. The Shahnameh's answer, delivered through the astrologers, is that a shadow cast from the past does not determine what the future will make. Rostam is not Zahhak's heir in any meaningful sense. He is Rostam. The lineage objection turns out to be the chronicle's way of raising the question: how long does ancestry obligate?",
+      "summary_fa": "اعتراض به رودابه ارتباطِ نسبش با ضحاک است — ستمگرِ مارکِشِ دفترِ پنجم. سام و منوچهر در توجه کردن به آن اشتباه نمی‌کنند؛ در معناگذاری‌اش اشتباه می‌کنند. پاسخِ شاهنامه از طریقِ منجمان داده می‌شود: سایه‌ای که از گذشته انداخته می‌شود آنچه آینده می‌سازد را تعیین نمی‌کند.",
+      "image": null,
+      "unlock_via": "scene:tower-scene"
+    },
+    {
+      "id": "sindokht-the-negotiator",
+      "category": "person",
+      "title_en": "Sindokht — What a Mother Can Move",
+      "title_fa": "سیندخت — آنچه مادر می‌تواند جابجا کند",
+      "summary_en": "Sindokht goes to Sam's court without being invited. She does not apologize for being there. She lays out her case — her daughter's love, the gifts she brings, the argument that the marriage serves Iran — with the precision of a lawyer and the weight of a mother who has watched her daughter choose something that cannot be un-chosen. Sam does not say yes immediately. But when she leaves, he is ready to say yes. She moved him without drama. This is the Shahnameh's highest praise for a non-warrior: to move the unmovable through intelligence alone.",
+      "summary_fa": "سیندخت بدون دعوت به دربارِ سام می‌رود. برای حضورش عذرخواهی نمی‌کند. پرونده‌اش را — عشقِ دخترش، هدایایی که می‌آورد، استدلال که ازدواج به ایران خدمت می‌کند — با دقتِ وکیل و سنگینیِ مادری که دیده دخترش چیزی انتخاب کرده که نمی‌توان انتخاب نکرد ارائه می‌دهد.",
+      "image": null,
+      "unlock_via": "scene:sindokht-negotiates"
+    },
+    {
+      "id": "astrologers-and-destiny",
+      "category": "concept",
+      "title_en": "The Astrologers' Role — Permission from the Stars",
+      "title_fa": "نقشِ منجمان — اجازه از ستارگان",
+      "summary_en": "Manuchehr calls the astrologers when he has already decided but needs a reason. The Shahnameh is clear-eyed about this: astrologers in the chronicle often serve as the formal mechanism for decisions that have already been made informally. Their reading confirms what love and persuasion have already achieved. But the Shahnameh does not dismiss them either — the prediction they make about the child from this union turns out to be precisely true.",
+      "summary_fa": "منوچهر منجمان را می‌خواهد وقتی از پیش تصمیم گرفته اما دلیلی لازم دارد. شاهنامه در این باره صریح است: منجمان در شاهنامه اغلب مکانیزمِ رسمیِ تصمیماتی هستند که غیررسمی از پیش گرفته شده‌اند. اما پیش‌بینی‌ای که درباره‌ی فرزند می‌کنند دقیقاً درست از آب در می‌آید.",
+      "image": null,
+      "unlock_via": "scene:the-stars-agree"
+    },
+    {
+      "id": "rostam-foretold",
+      "category": "person",
+      "title_en": "Rostam — Foretold",
+      "title_fa": "رستم — پیش‌بینی‌شده",
+      "summary_en": "The astrologers say: from this union will come a hero unlike any other. They do not name him. They do not describe him. They simply confirm that the stars point toward someone extraordinary. The Shahnameh has been building toward Rostam since chapter 1 — through Manuchehr, through Sam, through Zal — and now, finally, the chronicle confirms it is about to deliver on everything it has been promising. Rostam is two scenes away from being born.",
+      "summary_fa": "منجمان می‌گویند: از این اتحاد قهرمانی می‌آید که مثلِ هیچ‌کسِ دیگری نیست. نامش را نمی‌برند. توصیفش نمی‌کنند. فقط تأیید می‌کنند که ستارگان به سمتِ کسی استثنایی اشاره می‌کنند. شاهنامه از دفترِ ۱ در حالِ ساختن به‌سوی رستم بوده.",
+      "image": null,
+      "unlock_via": "scene:the-stars-agree"
+    },
+    {
+      "id": "feather-burned",
+      "category": "event",
+      "title_en": "The Feather — Burned",
+      "title_fa": "پَر — سوخته",
+      "summary_en": "Zal has carried the Simorgh's feather since the day he descended from Alborz. He has been in battles; he has been in difficult negotiations; he has faced the opposition of Sam and Manuchehr. None of those were his greatest need. His greatest need is Rudabeh dying in childbirth. He burns the feather without hesitation — not because he has no other option but because he is correct about what this moment is. The Simorgh comes. Rudabeh survives. The feather is gone, but what it summoned replaces it: Rostam, who will never need the feather because he is the answer the feather was always pointing toward.",
+      "summary_fa": "زال از روزی که از البرز پایین آمده پرِ سیمرغ را حمل کرده. در نبردها بوده؛ در مذاکراتِ دشوار؛ در برابرِ مخالفتِ سام و منوچهر. هیچ‌کدام بزرگترین نیازش نبودند. بزرگترین نیازش رودابه است که هنگامِ زایمان دارد می‌میرد. پَر را بدون تردید می‌سوزاند. سیمرغ می‌آید. رودابه زنده می‌ماند.",
+      "image": null,
+      "unlock_via": "scene:rostam-enters"
+    },
+    {
+      "id": "rostam-arrives",
+      "category": "event",
+      "title_en": "Rostam Arrives",
+      "title_fa": "رستم می‌رسد",
+      "summary_en": "The birth of Rostam is not described in the Shahnameh with elaborate ceremony. The child is lifted free. He is large. He cries loudly. Zal names him. The Shahnameh notes all this quickly, without pause, as if to say: the preparation was the ceremony. Ten chapters of kings and champions and omens and love stories have all been pointing at this child. The chronicle does not linger on the arrival because it knows there is no time — the story that required all of that preparation is only now, at last, ready to begin.",
+      "summary_fa": "تولدِ رستم در شاهنامه با تشریفاتِ مفصل توصیف نمی‌شود. کودک آزاد می‌شود. بزرگ است. بلند گریه می‌کند. زال نامش را می‌گذارد. شاهنامه همه‌ی این را سریع، بدون مکث ثبت می‌کند، انگار می‌گوید: آمادگی تشریفات بود. ده دفتر از شاهان و قهرمانان و فال‌ها و داستان‌های عشقی همه به‌سمتِ این کودک اشاره داشته‌اند.",
+      "image": null,
+      "unlock_via": "scene:rostam-enters"
+    }
+  ]
+}
