@@ -127,7 +127,7 @@
             <div class="lb-name${clickable ? ' lb-clickable' : ''}">
               ${displayName(r)}${isMe ? ` <span class="you-tag">${t('lb_you')}</span>` : ''}
             </div>
-            <div class="lb-sub">${t('lb_lvl_sub', { n: fmtN_(r.level || 1) })}</div>
+            <div class="lb-sub">${t('lb_lvl_sub', { n: fmtN_(Math.max(1, Math.floor((r.xp || 0) / 1000))) })}</div>
           </div>
           ${clickable ? `</a>` : `</div>`}
           <span class="lb-pts">${scoreOf(type, r)}</span>

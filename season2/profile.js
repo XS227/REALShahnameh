@@ -247,21 +247,32 @@
     _showToast._t = setTimeout(() => el.classList.remove('show'), 3000);
   };
 
-  const renderClan = (clan) => {
+  const renderClan = (clan, opts = {}) => {
     const el = document.getElementById('profile-clan-card');
     if (!el) return;
 
     if (!clan) {
       el.className = 'card clan-cta-card';
-      el.innerHTML = `
-        <div class="clan-cta-left">
-          <div class="clan-cta-ico">⚔</div>
-          <div>
-            <div class="clan-cta-title">${t('found_clan_title')}</div>
-            <div class="clan-cta-sub">${t('clan_no_clan_sub')}</div>
+      if (opts.isVisitor) {
+        el.innerHTML = `
+          <div class="clan-cta-left">
+            <div class="clan-cta-ico">⚔</div>
+            <div>
+              <div class="clan-cta-title" style="font-size:13px;color:var(--muted);">Not a member of any clan yet</div>
+            </div>
           </div>
-        </div>
-        <a href="social.html" class="secondary-btn" style="white-space:nowrap;font-size:11px;padding:6px 12px;">${t('your_clan_header')}</a>`;
+          ${opts.inviteBtn || ''}`;
+      } else {
+        el.innerHTML = `
+          <div class="clan-cta-left">
+            <div class="clan-cta-ico">⚔</div>
+            <div>
+              <div class="clan-cta-title">${t('found_clan_title')}</div>
+              <div class="clan-cta-sub">${t('clan_no_clan_sub')}</div>
+            </div>
+          </div>
+          <a href="social.html" class="secondary-btn" style="white-space:nowrap;font-size:11px;padding:6px 12px;">${t('your_clan_header')}</a>`;
+      }
       return;
     }
 
@@ -337,7 +348,7 @@
     renderBalanceCard(u);
     renderStats(u);
     renderBadges(u);
-    renderClan(_clanData);
+    renderClan(_clanData, {});
   };
 
   /* ── Mining counter ───────────────────────────────────────────────────── */
@@ -490,27 +501,94 @@
     /* ── Visitor mode: viewing another player's profile ── */
     if (_isVisitor) {
       applyVisitorMode();
-      const qs    = new URLSearchParams({ telegram_id: _visitUid });
-      const [resp, clanResp] = await Promise.all([
-        fetch('/api/season2/user/me?' + qs.toString(), { cache: 'no-store' })
+      const visitedQs = new URLSearchParams({ telegram_id: _visitUid });
+      const myTg      = tgUser();
+      const myQs      = myTg ? new URLSearchParams({ telegram_id: String(myTg.id) }) : null;
+
+      const [resp, clanResp, myClanResp] = await Promise.all([
+        fetch('/api/season2/user/me?' + visitedQs.toString(), { cache: 'no-store' })
           .then(r => r.ok ? r.json() : null).catch(() => null),
-        fetch('/api/season2/clan/my-clan?' + qs.toString(), { cache: 'no-store' })
+        fetch('/api/season2/clan/my-clan?' + visitedQs.toString(), { cache: 'no-store' })
           .then(r => r.ok ? r.json() : null).catch(() => null),
+        myQs
+          ? fetch('/api/season2/clan/my-clan?' + myQs.toString(), { cache: 'no-store' })
+              .then(r => r.ok ? r.json() : null).catch(() => null)
+          : Promise.resolve(null),
       ]);
+
       if (!resp || resp.status !== 1 || !resp.user) {
         const nameEl = document.getElementById('profile-name');
         if (nameEl) nameEl.textContent = 'Profile not found';
         return;
       }
+
       const visitedUser = resp.user;
       _serverUser = visitedUser;
       _clanData   = clanResp && clanResp.status === 1 ? clanResp.clan : null;
+
+      /* Update clan section header to reflect the visited player, not "Your Clan" */
+      const clanHead = document.getElementById('clan-section-head');
+      const visitedName = visitedUser.first_name || visitedUser.username || 'Player';
+      if (clanHead) clanHead.textContent = visitedName + "'s Clan";
+
+      /* Determine if the current viewer is a clan leader who can invite */
+      const myClan = myClanResp && myClanResp.status === 1 ? myClanResp.clan : null;
+      const myId   = myTg ? String(myTg.id) : '';
+      const amLeader = !!(myClan && myClan.leader_id && myId && myClan.leader_id === myId);
+      const targetHasNoClan = !_clanData;
+
+      let inviteBtn = '';
+      if (amLeader && targetHasNoClan && myId !== _visitUid) {
+        inviteBtn = `<button id="invite-to-clan-btn" class="secondary-btn"
+          style="white-space:nowrap;font-size:11px;padding:6px 12px;">
+          Invite to ${escHtml(myClan.clan_name)}
+        </button>`;
+      }
+
       /* Show visitor's identity — pass null as tg so we use DB name/pic */
       renderIdentity(visitedUser, null);
       /* Show read-only stats, badges, clan — no live updates for visitor view */
       renderStats(mergeUser());
       renderBadges(mergeUser());
-      renderClan(_clanData);
+      renderClan(_clanData, { isVisitor: true, inviteBtn });
+
+      /* Wire invite button */
+      if (amLeader && targetHasNoClan) {
+        const btn = document.getElementById('invite-to-clan-btn');
+        if (btn) {
+          btn.addEventListener('click', async () => {
+            btn.disabled = true;
+            btn.textContent = 'Inviting…';
+            try {
+              const r = await fetch('/api/season2/clan/invite', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ telegram_id: myId, target_telegram_id: _visitUid }),
+              }).then(x => x.json());
+              if (r.status === 1) {
+                _showToast('Player added to ' + (r.clan_name || 'your clan') + '!');
+                btn.textContent = 'Joined!';
+              } else {
+                const msg = {
+                  not_leader: 'You are not a clan leader.',
+                  not_in_clan: 'You are not in a clan.',
+                  clan_full: 'Your clan is full (50/50).',
+                  already_in_clan: 'Player is already in a clan.',
+                  user_not_found: 'Player not found.',
+                }[r.error] || ('Error: ' + (r.error || 'unknown'));
+                _showToast(msg);
+                btn.disabled = false;
+                btn.textContent = 'Invite to ' + (myClan.clan_name || 'Clan');
+              }
+            } catch {
+              _showToast('Network error. Try again.');
+              btn.disabled = false;
+              btn.textContent = 'Invite to ' + (myClan.clan_name || 'Clan');
+            }
+          });
+        }
+      }
+
       /* Hide balance card and earnings meter for visitor */
       ['real-balance-card', 'earnings-meter-section'].forEach(id => {
         const el = document.getElementById(id);
