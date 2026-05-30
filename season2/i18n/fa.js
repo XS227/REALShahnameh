@@ -913,6 +913,13 @@
 
       /* ── Social page ── */
       your_clan_header:      "قبیله شما",
+      clan_leader_tag:       "رهبر",
+      clan_members_lbl:      "اعضا",
+      clan_earned_lbl:       "کسب‌شده",
+      clan_photo_upload_lbl: "تغییر عکس",
+      clan_no_clan_sub:      "به یک قبیله بپیوندید یا قبیله‌ی خودتان را بنا کنید.",
+      ach_s1_name:           "بنیان‌گذار فصل ۱",
+      ach_s1_desc:           "شما در آغازِ این تاریخ بودید.",
       warriors_header:       "جنگجویان",
       found_clan_title:      "قبیله خود را بنیان بگذار",
       found_clan_sub:        "جنگجویان را زیر پرچمت فراخوان · ۵۰٬۰۰۰ REAL",
@@ -971,7 +978,7 @@
       ach_chronicle_name:    "نگهبان کرونیکل",
       ach_chronicle_desc:    "پاداش حضور روزانه‌ات را بگیر",
       ach_rich_name:         "رزمنده‌ی ثروتمند",
-      ach_rich_desc:         "۱۰٬۰۰۰ REAL جمع‌آوری کن",
+      ach_rich_desc:         "۱٬۰۰۰٬۰۰۰ REAL جمع‌آوری کن",
       ach_legend_name:       "افسانه‌ی پارس",
       ach_legend_desc:       "به سطح ۱۰ برس",
 

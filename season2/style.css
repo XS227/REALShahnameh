@@ -5174,6 +5174,29 @@ body::after {
 .clan-stat-val  { font-size: 13px; font-weight: 700; color: var(--text); }
 .clan-stat-lbl  { font-size: 10px; color: var(--muted); text-align: center; }
 .clan-leader-tag { font-size: 10px; color: var(--gold); }
+
+/* Clan photo on profile */
+.clan-photo-img {
+  width: 48px; height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid var(--border-gold, rgba(244,197,107,.3));
+}
+.clan-photo-upload-btn {
+  position: absolute;
+  bottom: -4px; right: -4px;
+  background: var(--card-bg, #14162a);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 20px; height: 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; cursor: pointer; line-height: 1;
+}
+.clan-avatar-wrap .clan-badge-large {
+  width: 48px; height: 48px;
+  border-radius: 10px;
+  font-size: 22px;
+}
 .clan-create-cta {
   display: flex;
   align-items: center;

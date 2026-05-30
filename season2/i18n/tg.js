@@ -908,9 +908,17 @@
       ach_chronicle_name:    "Нигаҳбони хроника",
       ach_chronicle_desc:    "Ҷоизаи ҳузури рӯзонаатро бигир",
       ach_rich_name:         "Ҷангии сарватманд",
-      ach_rich_desc:         "10,000 REAL ҷамъ ор",
+      ach_rich_desc:         "1,000,000 REAL ҷамъ ор",
       ach_legend_name:       "Афсонаи Порс",
       ach_legend_desc:       "Ба сатҳи 10 бирас",
+
+      clan_leader_tag:       "Роҳбар",
+      clan_members_lbl:      "Аъзоён",
+      clan_earned_lbl:       "Ба даст овардашуда",
+      clan_photo_upload_lbl: "Иваз кардани акс",
+      clan_no_clan_sub:      "Ба қабила шомил шавед ё қабилаи худатонро бунёд кунед.",
+      ach_s1_name:           "Бунёдгузори Фасли 1",
+      ach_s1_desc:           "Шумо дар ибтидои ин таърих будед.",
 
       payout_fmt:            "{m}д {s}с",
       unit_zar_hr:           "ZAR/соат",

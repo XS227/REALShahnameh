@@ -63,15 +63,19 @@
     };
   };
 
+  /* ── REAL token image helper ──────────────────────────────────────────── */
+  const REAL_IMG = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" style="width:14px;height:14px;vertical-align:middle;" onerror="this.outerHTML=\'◆\'">';
+
   /* ── Achievements ─────────────────────────────────────────────────────── */
   const ACHIEVEMENTS = [
     { id: 'first_strike',  icon: '⚡',  nameKey: 'ach_first_strike_name', descKey: 'ach_first_strike_desc', check: u => (u.xp || 0) > 0 },
+    { id: 'season1',       icon: '🏛',  nameKey: 'ach_s1_name',           descKey: 'ach_s1_desc',           check: _u => !!(window.RealPlayer && window.RealPlayer.get && window.RealPlayer.get().isSeason1Player) },
     { id: 'clan_founder',  icon: '🛡',  nameKey: 'ach_clan_founder_name', descKey: 'ach_clan_founder_desc', check: u => (u.verified_referral_count || 0) >= 1 },
     { id: 'daily_champ',   icon: '🔥',  nameKey: 'ach_7day_name',         descKey: 'ach_7day_desc',         check: u => (u.daily_streak || 0) >= 7 },
     { id: 'check_in',      icon: '📅',  nameKey: 'ach_chronicle_name',    descKey: 'ach_chronicle_desc',    check: u => !!(u.last_checkin_date) },
     { id: 'rich_warrior',  icon: null,  nameKey: 'ach_rich_name',         descKey: 'ach_rich_desc',
       tokenImg: '/assets/images/tokens/realtoken.png',
-      check: u => Math.max(u.max_real_balance || 0, u.balance || u.real_balance || 0) >= 10_000 },
+      check: u => Math.max(u.max_real_balance || 0, u.balance || u.real_balance || 0) >= 1_000_000 },
     { id: 'legend',        icon: '👑',  nameKey: 'ach_legend_name',       descKey: 'ach_legend_desc',       check: u => (u.level || 1) >= 10 },
   ];
 
@@ -132,7 +136,7 @@
   const renderBalanceCard = (u) => {
     const amountEl = document.getElementById('rbc-amount');
     const bonusEl  = document.getElementById('rbc-clan-bonus');
-    if (amountEl) amountEl.textContent = fmtN(u.balance || u.real_balance || 0) + ' REAL';
+    if (amountEl) amountEl.innerHTML = fmtN(u.balance || u.real_balance || 0) + ' ' + REAL_IMG + ' REAL';
     if (bonusEl)  bonusEl.style.display = (u.clan_id || (_clanData && _clanData.clan_id)) ? '' : 'none';
   };
 
@@ -184,54 +188,89 @@
     if (!el) return;
 
     if (!clan) {
+      el.className = 'card clan-cta-card';
       el.innerHTML = `
         <div class="clan-cta-left">
           <div class="clan-cta-ico">⚔</div>
           <div>
-            <div class="clan-cta-title">${t('found_clan_title') || 'Found Your Own Clan'}</div>
-            <div class="clan-cta-sub">${t('found_clan_sub') || 'Rally warriors under your banner'}</div>
+            <div class="clan-cta-title">${t('found_clan_title')}</div>
+            <div class="clan-cta-sub">${t('clan_no_clan_sub')}</div>
           </div>
         </div>
-        <a href="social.html" class="secondary-btn" style="white-space:nowrap;font-size:11px;padding:6px 12px;">${t('your_clan_header') || 'Clans'}</a>`;
-      el.className = 'card clan-cta-card';
+        <a href="social.html" class="secondary-btn" style="white-space:nowrap;font-size:11px;padding:6px 12px;">${t('your_clan_header')}</a>`;
       return;
     }
 
-    const isLeader  = _serverUser && clan.leader_id === String(_serverUser.telegram_id || '');
+    const myId      = String((_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
+    const isLeader  = clan.leader_id === myId;
     const memberCount = clan.member_count || 1;
-    const zarHr    = clan.total_zar_per_hour || 0;
-    const earned   = clan.total_real_earned  || 0;
+    const zarHr     = clan.total_zar_per_hour || 0;
+    const earned    = clan.total_real_earned  || 0;
+    const photoSrc  = clan.clan_photo || '';
+
+    const photoHtml = photoSrc
+      ? `<img src="${escHtml(photoSrc)}" class="clan-photo-img" alt="" onerror="this.style.display='none'">`
+      : `<div class="clan-badge-large">${clan.clan_name.charAt(0).toUpperCase()}</div>`;
+
+    const uploadBtn = isLeader ? `
+      <label class="clan-photo-upload-btn" title="${t('clan_photo_upload_lbl')}">
+        📷
+        <input type="file" accept="image/*" style="display:none;" id="clan-photo-input">
+      </label>` : '';
 
     el.className = 'card clan-founded-card';
     el.innerHTML = `
       <div class="clan-founded-header">
-        <div class="clan-badge-large">${clan.clan_name.charAt(0).toUpperCase()}</div>
-        <div>
+        <div class="clan-avatar-wrap" style="position:relative;flex-shrink:0;">
+          ${photoHtml}
+          ${uploadBtn}
+        </div>
+        <div style="flex:1;min-width:0;">
           <div class="clan-founded-name">${escHtml(clan.clan_name)}</div>
           ${clan.motto ? `<div class="clan-founded-motto">${escHtml(clan.motto)}</div>` : ''}
-          ${isLeader ? `<span class="clan-tag" style="margin-top:4px;display:inline-block;">👑 ${t('clan_leader_tag') || 'Leader'}</span>` : ''}
+          ${isLeader ? `<span class="clan-tag" style="margin-top:4px;display:inline-block;">👑 ${t('clan_leader_tag')}</span>` : ''}
         </div>
       </div>
       <div class="clan-founded-stats" style="margin-top:10px;">
         <div class="clan-stat-item">
           <span class="clan-stat-ico">👥</span>
           <span class="clan-stat-val">${isFa() ? pd(memberCount) : memberCount}</span>
-          <span class="clan-stat-lbl">${t('clan_members_lbl') || 'Members'}</span>
+          <span class="clan-stat-lbl">${t('clan_members_lbl')}</span>
         </div>
         <div class="clan-stat-item">
           <span class="clan-stat-ico">🪙</span>
           <span class="clan-stat-val">${fmtZar(zarHr)}</span>
-          <span class="clan-stat-lbl">${t('r_zar') || 'Zar'}/hr</span>
+          <span class="clan-stat-lbl">${t('r_zar')}/hr</span>
         </div>
         <div class="clan-stat-item">
-          <span class="clan-stat-ico">◆</span>
+          <span class="clan-stat-ico">${REAL_IMG}</span>
           <span class="clan-stat-val">${fmtN(earned)}</span>
-          <span class="clan-stat-lbl">REAL ${t('clan_earned_lbl') || 'Earned'}</span>
+          <span class="clan-stat-lbl">${t('clan_earned_lbl')}</span>
         </div>
       </div>
       <a href="social.html" class="ghost-btn btn-block" style="margin-top:12px;text-align:center;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:12px;">
-        ${t('your_clan_header') || 'Manage Clan'} →
+        ${t('your_clan_header')} →
       </a>`;
+
+    /* Wire photo upload for leader */
+    if (isLeader) {
+      const inp = el.querySelector('#clan-photo-input');
+      if (inp) inp.addEventListener('change', async () => {
+        const file = inp.files && inp.files[0];
+        if (!file) return;
+        const fd = new FormData();
+        fd.append('photo', file);
+        fd.append('telegram_id', myId);
+        try {
+          const r = await fetch('/api/season2/clan/upload-photo', { method: 'POST', body: fd });
+          const d = await r.json();
+          if (d.status === 1 && d.url) {
+            _clanData = { ..._clanData, clan_photo: d.url };
+            renderClan(_clanData);
+          }
+        } catch {}
+      });
+    }
   };
 
   const escHtml = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, m =>

@@ -909,6 +909,13 @@
 
       /* ── Social page ── */
       your_clan_header:      "Your Clan",
+      clan_leader_tag:       "Leader",
+      clan_members_lbl:      "Members",
+      clan_earned_lbl:       "Earned",
+      clan_photo_upload_lbl: "Change Photo",
+      clan_no_clan_sub:      "Join or found a clan to rally warriors under your banner.",
+      ach_s1_name:           "Season 1 Founder",
+      ach_s1_desc:           "You were here when the chronicle began.",
       warriors_header:       "Warriors",
       found_clan_title:      "Found Your Own Clan",
       found_clan_sub:        "Rally warriors under your banner · 50,000 REAL",
@@ -967,7 +974,7 @@
       ach_chronicle_name:    "Chronicle Keeper",
       ach_chronicle_desc:    "Claim your daily check-in reward",
       ach_rich_name:         "Rich Warrior",
-      ach_rich_desc:         "Accumulate 10,000 REAL",
+      ach_rich_desc:         "Accumulate 1,000,000 REAL",
       ach_legend_name:       "Legend of Pars",
       ach_legend_desc:       "Rise to LVL 10",
 
