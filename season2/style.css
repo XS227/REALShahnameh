@@ -3612,6 +3612,23 @@ body::after {
   position: relative; overflow: hidden;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
+.lore-cover {
+  margin: -15px -15px 13px;
+  width: calc(100% + 30px);
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: var(--r-md) var(--r-md) 0 0;
+  transition: opacity 0.4s, filter 0.4s;
+}
+.lore-card.locked .lore-cover   { opacity: 0.25; filter: grayscale(0.7) blur(1px); }
+.lore-card.unlocked .lore-cover { opacity: 0.85; filter: none; }
+.lore-card.just-unlocked .lore-cover { animation: lore-cover-reveal 0.6s ease-out forwards; }
+@keyframes lore-cover-reveal {
+  0%   { opacity: 0.25; filter: grayscale(0.7) blur(1px); }
+  100% { opacity: 0.85; filter: none; }
+}
 .lore-card.locked { opacity: 0.72; }
 .lore-card.unlocked {
   border-color: rgba(244,197,107,.28);

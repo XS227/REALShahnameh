@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>Ancient Timeline · REAL Shahnameh</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605303400" />
+  <link rel="stylesheet" href="style.css?v=202605303500" />
 </head>
 <body>
 <main class="app">
@@ -115,7 +115,7 @@
   const NODES = [
     {
       id: "keyumars", chapter: 1,
-      image: "/assets/images/chapters/chapter-1-keyumars-cover.png",
+      image: "/season2/uploads/heroes/leopard_skin.png",
       era: "~7000 BC", title: "Keyumars",
       subtitle: "The First King",
       lore: "From the mountains of Pars, Keyumars rules a world still soft with dawn. He clothes himself in leopard skin and the beasts bow at his feet. Civilization begins with him.",
@@ -145,7 +145,7 @@
     },
     {
       id: "jamshid", chapter: 4,
-      image: "/season2/uploads/chapters/jamshid.png",
+      image: "/season2/uploads/heroes/first_calender.png",
       era: "~5500 BC", title: "Jamshid",
       subtitle: "The Golden Throne",
       lore: "Jamshid divides the people into four crafts and sits upon a kingdom of crystal. Seven hundred years of greatness — until pride outshines the sun and Farr departs.",
@@ -219,6 +219,7 @@
   const HIDDEN_LORES = [
     {
       id: "farr_secret",
+      image: "/season2/uploads/heroes/Farr.png",
       title: "The Secret Meaning of Farr",
       body: "Farr (فَرّ) is not simply 'glory' — it is divine fire made visible in a righteous ruler. Ancient Zoroastrian texts describe it as a living flame that dwells in worthy kings and departs when they sin. Ferdowsi uses Farr as the central moral engine of the Shahnameh: every king's rise and fall is measured by whether Farr stays or leaves.",
       reward: "+50 XP · +10 Hakim Bond",
@@ -227,6 +228,7 @@
     },
     {
       id: "zahhak_tyranny",
+      image: "/season2/uploads/heroes/blak_demon.png",
       title: "Zahhak and the Symbolism of Tyranny",
       body: "The serpents growing from Zahhak's shoulders are not mere monsters — they are the embodiment of an oppressive state that must devour its own people to survive. The daily need for two human brains mirrors the logic of every tyranny: it must feed on the talent and life of its citizens to keep its rulers in power. Kaveh's apron as a banner is equally symbolic: freedom rises from the craftsman, not the court.",
       reward: "+50 XP · +10 Hakim Bond",
@@ -243,6 +245,7 @@
     },
     {
       id: "hushang_fire",
+      image: "/season2/uploads/heroes/farvahar.png",
       title: "Why Fire Matters in Hushang's Story",
       body: "Hushang's discovery of fire was not an accident — it was a moment of divine revelation. He struck flint against a serpent (a creature of Ahriman) and produced light. The lesson: order emerges from confronting darkness. Fire became the sacred symbol of Ahura Mazda's presence in the world, and the festival of Sadeh was born to commemorate this moment every year.",
       reward: "+50 XP · +10 Hakim Bond",
@@ -251,6 +254,7 @@
     },
     {
       id: "simurgh_wisdom",
+      image: "/season2/uploads/heroes/mount_alborz.png",
       title: "Simurgh and the Nature of Wisdom",
       body: "The Simorgh is not a bird — it is a symbol of accumulated wisdom. Its nest on the world-tree Gaokerena means it has witnessed every age of the world. When it raised Zal, it was passing down the knowledge of all civilizations before Pars. The feather it gave him — 'burn it and I shall come' — is the promise that wisdom is always available to those who earned it through hardship.",
       reward: "+50 XP · +10 Hakim Bond",
@@ -359,8 +363,13 @@
     card.setAttribute("data-lore-id", lore.id);
     card.style.animationDelay = "0.22s";
 
+    const coverHtml = (lore.image)
+      ? `<img class="lore-cover" src="${lore.image}" alt="${lore.title}" loading="lazy" onerror="this.style.display='none'">`
+      : "";
+
     if (isUnlocked) {
       card.innerHTML = `
+        ${coverHtml}
         <div class="lore-kicker">${t("lore_fragment", "Lore Fragment")}</div>
         <div class="lore-title">${lore.title}</div>
         <p class="lore-body">${lore.body}</p>
@@ -368,6 +377,7 @@
       `;
     } else {
       card.innerHTML = `
+        ${coverHtml}
         <span class="lore-lock-icon">🔒</span>
         <div class="lore-kicker">${t("hidden_lore_section", "Hidden Lore")}</div>
         <div class="lore-title">${lore.title}</div>
@@ -396,6 +406,7 @@
         card.classList.remove("locked");
         card.classList.add("unlocked", "just-unlocked");
         card.innerHTML = `
+          ${lore.image ? `<img class="lore-cover" src="${lore.image}" alt="${lore.title}" loading="lazy" onerror="this.style.display='none'">` : ""}
           <div class="lore-kicker">${t("lore_fragment", "Lore Fragment")}</div>
           <div class="lore-title">${lore.title}</div>
           <p class="lore-body">${lore.body}</p>
