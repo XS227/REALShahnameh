@@ -480,7 +480,7 @@
     /* REAL balance display (replaces streak badge in stats bar) */
     if (realBalDisp) {
       const realBal = p.balance || 0;
-      realBalDisp.textContent = '◆ ' + fmtCompact(realBal);
+      realBalDisp.innerHTML = RT + ' ' + fmtCompact(realBal);
     }
 
     /* ZAR/hr — pipe through fmtNum so FA gets Persian digits */
@@ -527,7 +527,7 @@
       if (rateLbl)  rateLbl.textContent  = t('swap_rate_label', { rate: fmtNum(rate) });
       const zarAmt = parseInt(swapInput.value || '0', 10);
       const realOut = zarAmt >= rate ? Math.floor(zarAmt / rate) : 0;
-      if (realOutEl) realOutEl.textContent = realOut + ' REAL';
+      if (realOutEl) realOutEl.innerHTML = fmtNum(realOut) + ' ' + RT + ' REAL';
       const canSwap = zarBal >= zarAmt && zarAmt >= rate;
       swapBtn.disabled = !canSwap;
       if (swapNote) {
@@ -591,7 +591,7 @@
           hydrateFromPlayer();
           addHistoryRow(
             `ZAR → REAL`,
-            `+${realOut} REAL`,
+            `+${realOut} ${RT} REAL`,
             new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
           );
           showToast(t('swap_success', { zar: fmtNum(zarAmt), real: fmtNum(realOut) }));

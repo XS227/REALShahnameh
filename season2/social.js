@@ -641,7 +641,7 @@
     /* Show current balance */
     const localP = (() => { try { return JSON.parse(localStorage.getItem('real_player_state_v1') || '{}'); } catch { return {}; } })();
     const bal    = localP.balance || 0;
-    if (balRow) balRow.innerHTML = `Your balance: <b style="color:var(--gold);">${fmtN(bal)} REAL</b>${bal < 50000 ? ' <span style="color:var(--ember);">· Insufficient</span>' : ''}`;
+    if (balRow) balRow.innerHTML = `Your balance: <b style="color:var(--gold);">${fmtN(bal)} ${RT} REAL</b>${bal < 50000 ? ' <span style="color:var(--ember);">· Insufficient</span>' : ''}`;
 
     modal.style.display = 'flex';
     modal.setAttribute('aria-hidden', 'false');
@@ -958,7 +958,7 @@
         <span class="ico">📜</span>
         <div>
           <h5>${t('event_learning_title')}</h5>
-          <p>${fmtN_(doneCount)}/${fmtN_(l.total_chapters)} chapters complete · ${fmtN(l.reward_real)} REAL reward</p>
+          <p>${fmtN_(doneCount)}/${fmtN_(l.total_chapters)} chapters complete · ${fmtN(l.reward_real)} ${RT} REAL reward</p>
         </div>
         <span class="event-chevron">›</span>
       </article>

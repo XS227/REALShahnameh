@@ -5,6 +5,7 @@
 
 (() => {
   "use strict";
+  const RT = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">';
 
   /* ---------- helpers ---------- */
   const $  = (sel, root = document) => root.querySelector(sel);
@@ -1551,8 +1552,8 @@
         }
         stage.classList.add("success");
         const amt = j.claim && j.claim.reward_amount;
-        const labelMap = { energy: amt + " ⚡ added", gems: amt + " 💎 added", real: "+" + amt + " REAL" };
-        label.textContent = labelMap[type] || "Reward granted";
+        const labelMap = { energy: amt + " ⚡ added", gems: amt + " 💎 added", real: "+" + amt + " " + RT + " REAL" };
+        label.innerHTML = labelMap[type] || "Reward granted";
         toast(label.textContent);
         refreshStatus();
         setTimeout(closeOverlay, 1400);
@@ -1823,9 +1824,9 @@
         } catch (_) {}
         if (window.RealSync) { window.RealSync.syncQuest("quiz"); window.RealSync.syncBalance(); }
         window.dispatchEvent(new CustomEvent("real:quest:quiz", { detail: { xp: data.xp, real: data.real, farr: 1 } }));
-        elResTitle.textContent = `+${data.xp} ${t("r_xp")} · +${data.real} REAL · ✦1 ${t("r_farr")}`;
+        elResTitle.innerHTML = `+${data.xp} ${t("r_xp")} · +${data.real} ${RT} REAL · ✦1 ${t("r_farr")}`;
         elResBody.textContent = t("chapter_rewards_locked");
-        elResRew.innerHTML = `<span class="chip warm">⭐ ${data.xp} ${t("r_xp")}</span><span class="chip">◆ ${data.real} REAL</span><span class="chip gold">✦1 ${t("r_farr")}</span>`;
+        elResRew.innerHTML = `<span class="chip warm">⭐ ${data.xp} ${t("r_xp")}</span><span class="chip">${RT} ${data.real} REAL</span><span class="chip gold">✦1 ${t("r_farr")}</span>`;
         elResult.classList.add("show");
         // mark chapter done
         if (currentChapterEl) {

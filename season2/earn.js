@@ -133,7 +133,7 @@
         </h3>
         <div style="font-size:30px;font-weight:900;color:#f4c56b;margin:10px 0;
           text-shadow:0 0 28px rgba(244,197,107,.55);">
-          +${fmtA(amount)} REAL
+          +${fmtA(amount)} ${RT} REAL
         </div>
         <p style="font-size:12px;color:var(--muted,#6c7287);margin:0;">added to your Treasury</p>
         ${sublabel ? `<div style="font-size:10px;color:rgba(244,197,107,.55);margin-top:7px;letter-spacing:.5px;">${sublabel}</div>` : ''}
@@ -319,7 +319,7 @@
 
     const btnLabel = claimed
       ? '✓ Come back tomorrow'
-      : `Claim Day ${nextStreak} · +${nextReward.real} ◆${nextReward.gems ? ' +💎' : ''}`;
+      : `Claim Day ${nextStreak} · +${nextReward.real} ${RT}${nextReward.gems ? ' +💎' : ''}` ;
 
     el.innerHTML = `
       <article class="card checkin-card">
@@ -415,7 +415,7 @@
         ? `style="background:${brand.bg};border:1px solid ${brand.border};color:${brand.color}"`
         : '';
       const rewardLabel = task.reward_real
-        ? `+${pd(task.reward_real)} ◆`
+        ? `+${pd(task.reward_real)} ${RT}`
         : '';
 
       const btn = isDone
@@ -561,7 +561,7 @@
     const rows = PARTNERS.map(p => {
       const isDone = done.includes(p.id);
       const rewardParts = [];
-      if (p.reward_real) rewardParts.push(`+${p.reward_real} ◆`);
+      if (p.reward_real) rewardParts.push(`+${p.reward_real} ${RT}`);
       if (p.reward_gems) rewardParts.push(`+${p.reward_gems} 💎`);
       if (p.reward_farr) rewardParts.push(`+${p.reward_farr} ✦`);
       const rewardLabel = rewardParts.join(' · ');
@@ -674,7 +674,7 @@
       }
       const p = PARTNERS.find(x => x.id === partnerId);
       const earned = p ? [
-        p.reward_real ? `+${p.reward_real} ◆` : '',
+        p.reward_real ? `+${p.reward_real} ${RT}` : '',
         p.reward_gems ? `+${p.reward_gems} 💎` : '',
         p.reward_farr ? `+${p.reward_farr} ✦` : '',
       ].filter(Boolean).join(' ') : '';

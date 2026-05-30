@@ -4,6 +4,7 @@
    ========================================================================== */
 (() => {
   "use strict";
+  const RT = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">';
 
   const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
   const locF = (obj, field) => (window.RealI18N && window.RealI18N.locField)
@@ -1163,7 +1164,7 @@
           stateBadge = `<span class="hero-state-badge owned-badge">Lv.${owned.level || 1}</span>`;
         } else {
           const cardCost = item.cost || RARITY_COST[item.rarity] || 0;
-          stateBadge = `<span class="hero-state-badge available-badge">◆ ${cardCost.toLocaleString()}</span>`;
+          stateBadge = `<span class="hero-state-badge available-badge">${RT} ${cardCost.toLocaleString()}</span>`;
         }
 
         const subLine = state === "owned"
@@ -1308,7 +1309,7 @@
         </div>
         <button class="hecon-upgrade-btn" data-action="upgrade"
           data-hero-id="${item.id}" data-cost="${upgCost}" data-next-zar="${nextZar}">
-          ↑ Lv.${lvl + 1} &nbsp;·&nbsp; <span class="zar-ico">🪙</span> +${zarDelta}/hr &nbsp;·&nbsp; <span class="real-ico">◆</span> ${upgCost.toLocaleString()}
+          ↑ Lv.${lvl + 1} &nbsp;·&nbsp; <span class="zar-ico">🪙</span> +${zarDelta}/hr &nbsp;·&nbsp; ${RT} ${upgCost.toLocaleString()}
         </button>
       </div>`;
     }
@@ -1317,12 +1318,12 @@
     const buyZar = baseZar;
     return `<div class="hero-econ-panel available">
       <div class="hecon-price-row">
-        <span class="hecon-cost"><span class="real-ico">◆</span> ${cost.toLocaleString()} REAL</span>
+        <span class="hecon-cost">${RT} ${cost.toLocaleString()} REAL</span>
         <span class="hecon-zar"><span class="zar-ico">🪙</span> +${buyZar} Zar/hr</span>
       </div>
       <button class="hecon-buy-btn" data-action="buy"
         data-hero-id="${item.id}" data-cost="${cost}" data-zar="${buyZar}">
-        <span class="real-ico">◆</span> ${cost.toLocaleString()} REAL — Buy Hero
+        ${RT} ${cost.toLocaleString()} REAL — Buy Hero
       </button>
     </div>`;
   };
@@ -1447,7 +1448,7 @@
       if (state === "owned") badge.textContent = `Lv.${owned.level || 1}`;
       else if (state === "prereq_locked") badge.textContent = `🔐`;
       else if (state === "farr_locked") badge.textContent = `✦${item.farr_cost || 1}`;
-      else if (state === "available") badge.innerHTML = `◆ ${(item.cost || RARITY_COST[item.rarity] || 0).toLocaleString()}`;
+      else if (state === "available") badge.innerHTML = `${RT} ${(item.cost || RARITY_COST[item.rarity] || 0).toLocaleString()}`;
     }
     const rarityEl = card.querySelector(".coll-rarity");
     if (rarityEl && state === "owned") {
@@ -1556,7 +1557,7 @@
 
         <div class="cert-tags">
           <span class="cert-tag era">Season ${item.season} · Ch.${item.chapter}</span>
-          <span class="cert-tag season">◆ REAL Collection</span>
+          <span class="cert-tag season">${RT} REAL Collection</span>
           ${sideTag}
         </div>
 

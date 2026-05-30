@@ -4,6 +4,7 @@
    the page never blanks out. */
 (() => {
   "use strict";
+  const RT = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">';
 
   const $ = (s, r = document) => r.querySelector(s);
 
@@ -221,7 +222,7 @@
           <div class="title">${escapeHtml(locF(c, "title"))}</div>
           <div class="meta">
             <span class="pill-mini">${escapeHtml(pillLabel)}</span>
-            ${c.rewards && c.rewards.real ? `<span class="pill-mini" style="background:rgba(74,216,166,.12); color:var(--jade,#4ad8a6); border-color:rgba(74,216,166,.3);">+${c.rewards.real} REAL</span>` : ""}
+            ${c.rewards && c.rewards.real ? `<span class="pill-mini" style="background:rgba(74,216,166,.12); color:var(--jade,#4ad8a6); border-color:rgba(74,216,166,.3);">+${c.rewards.real} ${RT} REAL</span>` : ""}
           </div>
         </div>
       </a>`;
