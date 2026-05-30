@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-30T00:00:00Z",
+  "updatedAt": "2026-05-30T12:00:00Z",
   "quizzes": [
     {
       "id": "keyumars-p1",
@@ -110,7 +110,7 @@
     {
       "id": "keyumars-3",
       "chapter_slug": "keyumars",
-      "quiz_part": 6,
+      "quiz_part": 1,
       "question": "How long does Keyumars mourn his son?",
       "answers": [
         "Three days",
@@ -215,7 +215,7 @@
     {
       "id": "hushang-3",
       "chapter_slug": "hushang",
-      "quiz_part": 3,
+      "quiz_part": 1,
       "question": "Hushang strikes flint at what creature?",
       "answers": [
         "Lion",
@@ -283,9 +283,79 @@
       "explanation_tg": "Онҳо си алифборо дар ивази афв омӯхтанд."
     },
     {
-      "id": "tahmuras-2",
+      "id": "tahmuras-e2",
       "chapter_slug": "tahmuras",
       "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What weapon does Tahmuras carry when binding the demons?",
+      "question_fa": "تهمورث هنگامِ به‌زنجیرکشیدنِ دیوان چه سلاحی حمل می‌کند؟",
+      "question_tg": "Таҳмурас ҳангоми банд кардани девон чӣ аслиҳа мебарад?",
+      "answers": [
+        "An iron sword",
+        "A bow of the mountain ash",
+        "A cypress-wood club",
+        "A golden spear"
+      ],
+      "answers_fa": [
+        "شمشیری آهنین",
+        "کمانی از درختِ زبانِ گنجشک",
+        "چوبدستیِ سروین",
+        "نیزه‌ای زرین"
+      ],
+      "answers_tg": [
+        "Шамшери оҳанин",
+        "Камони дарахти забон-гунҷишк",
+        "Чӯби сарвин",
+        "Найзаи заррин"
+      ],
+      "correct_answer": 2,
+      "explanation": "Tahmuras carries a cypress-wood club — a craftsman's weapon that becomes the symbol of his demon-binding campaign.",
+      "explanation_fa": "تهمورث چوبدستیِ سروین حمل می‌کند — سلاحِ هنرمندانه‌ای که نمادِ کارزارِ به‌زنجیرکشیدنِ دیوانِ او می‌شود.",
+      "explanation_tg": "Таҳмурас чӯби сарвин мебарад — аслиҳаи ҳунармандонае, ки рамзи кампанияи банд кардани девони ӯ мешавад.",
+      "reward": {
+        "xp": 70,
+        "real": 25
+      }
+    },
+    {
+      "id": "tahmuras-e3",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Whom does Tahmuras force to serve as his mount when riding through the demon realm?",
+      "question_fa": "تهمورث چه کسی را مجبور می‌کند هنگامِ تاختن از میانِ قلمروِ دیوان مرکبش شود؟",
+      "question_tg": "Таҳмурас кӣро маҷбур мекунад, ки ҳангоми тохтан аз қаламрави девон мархабаш шавад?",
+      "answers": [
+        "The Black Div",
+        "A giant serpent",
+        "Ahriman himself",
+        "A captured div-captain"
+      ],
+      "answers_fa": [
+        "دیوِ سیاه",
+        "افعی‌ای غول‌آسا",
+        "خودِ اهریمن",
+        "یک فرمانده‌ی دیوِ اسیر"
+      ],
+      "answers_tg": [
+        "Деви сиёҳ",
+        "Морги ғулкалон",
+        "Худи Аҳриман",
+        "Як фармондеҳи деви асир"
+      ],
+      "correct_answer": 2,
+      "explanation": "Tahmuras forces Ahriman — the lord of darkness himself — to serve as his horse, riding through the demon realm as an act of supreme mastery.",
+      "explanation_fa": "تهمورث خودِ اهریمن — سرورِ تاریکی — را مجبور می‌کند مرکبش شود و از میانِ قلمروِ دیوان به‌عنوانِ عملِ برترین سیادت می‌تازد.",
+      "explanation_tg": "Таҳмурас Аҳриманро — худи Аҳримани Парвардигор — маҷбур мекунад, ки асп шавад ва аз қаламрави девон ҳамчун амали олитарин сарварӣ метозад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "tahmuras-2",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 1,
       "question": "Tahmuras is known by which epithet?",
       "answers": [
         "The Bull-Rider",
@@ -314,13 +384,13 @@
         "Шоҳи булӯр",
         "Ситорашумор"
       ],
-      "explanation_fa": "دیوبند — به‌بند‌کشنده‌ی دیوان.",
-      "explanation_tg": "Девбанд — банд кунандаи девон."
+      "explanation_fa": "دیوبند — به‌بند‌کشنده‌ی دیوان. فردوسی این لقب را برای نشان دادن تسلطِ مطلقِ تهمورث بر نیروهای تاریکی به‌کار می‌برد.",
+      "explanation_tg": "Девбанд — банд кунандаи девон. Фирдавсӣ ин лақабро барои нишон додани тасаллути мутлақи Таҳмурас бар қувваҳои торикӣ истифода мебарад."
     },
     {
       "id": "tahmuras-3",
       "chapter_slug": "tahmuras",
-      "quiz_part": 3,
+      "quiz_part": 2,
       "question": "How many alphabets do the demons teach?",
       "answers": [
         "Seven",
@@ -349,8 +419,8 @@
         "Си",
         "Ҳафтод"
       ],
-      "explanation_fa": "سی — یونانی، تازی، پهلوی، سغدی و دیگران.",
-      "explanation_tg": "Си — юнонӣ, тозӣ, паҳлавӣ, суғдӣ ва дигарон."
+      "explanation_fa": "سی — یونانی، تازی، پهلوی، سغدی و دیگران. این سی الفبا اولین نوشتارِ بشری در شاهنامه را تشکیل می‌دهند.",
+      "explanation_tg": "Си — юнонӣ, тозӣ, паҳлавӣ, суғдӣ ва дигарон. Ин си алифбо аввалин навиштаи башарӣ дар Шоҳномаро ташкил медиҳанд."
     },
     {
       "id": "jamshid-1",
@@ -1821,6 +1891,1266 @@
       ],
       "explanation_fa": "همه ترجمان مصراع پایانی — «زنده ماندم بدان‌چه نوشتم».",
       "explanation_tg": "Ҳама тарҷумони байти поёнӣ — «Зинда мондам бад-ончи навиштам»."
+    },
+    {
+      "id": "keyumars-m2",
+      "chapter_slug": "keyumars",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "Who sends the Black Div to destroy Siamak?",
+      "question_fa": "چه کسی دیوِ سیاه را برای کشتنِ سیامک می‌فرستد؟",
+      "question_tg": "Кӣ Деви сиёҳро барои нобуд кардани Сиёмак мефиристад?",
+      "answers": [
+        "A rival chieftain",
+        "Ahriman",
+        "The demons of the forest",
+        "Keyumars' jealous brother"
+      ],
+      "answers_fa": [
+        "رقیبی قبیله‌ای",
+        "اهریمن",
+        "دیوانِ جنگل",
+        "برادرِ حسودِ کیومرث"
+      ],
+      "answers_tg": [
+        "Рақиби қабилавӣ",
+        "Аҳриман",
+        "Девони ҷангал",
+        "Бародари ҳасудии Каюмарс"
+      ],
+      "correct_answer": 1,
+      "explanation": "Ahriman — lord of the dark — sees the firelight on the mountain and sends his Black Div down to break the first dawn.",
+      "explanation_fa": "اهریمن — سرورِ تاریکی — روشنیِ آتش را بر کوه می‌بیند و دیوِ سیاهش را می‌فرستد تا سپیده‌دمِ نخست را بشکند.",
+      "explanation_tg": "Аҳриман — Парвардигори торикӣ — нурии оташро дар кӯҳ мебинад ва Деви сиёҳашро мефиристад то субҳи аввалинро бишканад.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "keyumars-m3",
+      "chapter_slug": "keyumars",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What garment does Keyumars wear as his symbol of kingship?",
+      "question_fa": "کیومرث چه پوششی را به‌عنوانِ نشانِ شاهی بر تن دارد؟",
+      "question_tg": "Каюмарс чӣ либосро ҳамчун нишони подшоҳӣ мепӯшад?",
+      "answers": [
+        "A robe of gold thread",
+        "Leopard skin",
+        "A crown of mountain iron",
+        "White linen from the valley"
+      ],
+      "answers_fa": [
+        "ردایِ نخِ زر",
+        "پوستِ پلنگ",
+        "تاجی از آهنِ کوه",
+        "کتانِ سپیدِ دشت"
+      ],
+      "answers_tg": [
+        "Либоси риштаи заррин",
+        "Пӯсти паланг",
+        "Тоҷи оҳани кӯҳӣ",
+        "Кетони сафеди водӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "Keyumars wears leopard skin — the pelt becomes the emblem of the Pishdadian dynasty, passing to Hushang and beyond.",
+      "explanation_fa": "کیومرث پوستِ پلنگ بر تن دارد — این پوست نشانِ سلسله‌ی پیشدادیان می‌شود و به هوشنگ و پس از او منتقل می‌شود.",
+      "explanation_tg": "Каюмарс пӯсти палангро мепӯшад — ин пӯст нишони сулолаи Пишдодиён мешавад ва ба Ҳушанг ва пас аз ӯ мегузарад.",
+      "reward": {
+        "xp": 115,
+        "real": 47
+      }
+    },
+    {
+      "id": "keyumars-m4",
+      "chapter_slug": "keyumars",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What is Siamak's relationship to Hushang?",
+      "question_fa": "سیامک چه نسبتی با هوشنگ دارد؟",
+      "question_tg": "Сиёмак ба Ҳушанг чӣ нисбат дорад?",
+      "answers": [
+        "His brother",
+        "His grandfather",
+        "His father",
+        "His uncle"
+      ],
+      "answers_fa": [
+        "برادرش",
+        "پدربزرگش",
+        "پدرش",
+        "عمویش"
+      ],
+      "answers_tg": [
+        "Бародараш",
+        "Бобояш",
+        "Падараш",
+        "Амакаш"
+      ],
+      "correct_answer": 2,
+      "explanation": "Siamak is Hushang's father. When Siamak falls to the Black Div, it is his son Hushang who picks up the spear to avenge him — the grief that drives chapter 2.",
+      "explanation_fa": "سیامک پدرِ هوشنگ است. هنگامی که سیامک به‌دستِ دیوِ سیاه فرو می‌افتد، پسرش هوشنگ است که نیزه را برمی‌دارد تا کینش را بگیرد — اندوهی که دفترِ دوم را پیش می‌راند.",
+      "explanation_tg": "Сиёмак падари Ҳушанг аст. Вақте ки Сиёмак ба дасти Деви сиёҳ меафтад, писараш Ҳушанг аст, ки найзаро мегирад то аз ӯ қасос бигирад.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "keyumars-m5",
+      "chapter_slug": "keyumars",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What omen signals Ahriman's awakening before the Black Div attacks?",
+      "question_fa": "چه نشانه‌ای پیش از حمله‌ی دیوِ سیاه، بیداریِ اهریمن را خبر می‌دهد؟",
+      "question_tg": "Кадом аломат пеш аз ҳуҷуми Деви сиёҳ, бедории Аҳриманро хабар медиҳад?",
+      "answers": [
+        "The mountain springs run dry",
+        "Owls fly in daylight and a goat is found cold on a path no wolf has used",
+        "The forge fire goes out without explanation",
+        "Keyumars loses his voice for three days"
+      ],
+      "answers_fa": [
+        "چشمه‌های کوه خشک می‌شوند",
+        "جغدها در روز پر می‌کشند و بزی سرد بر راهی که گرگی نگذشته یافت می‌شود",
+        "آتشِ آهنگری بی‌دلیل خاموش می‌شود",
+        "کیومرث سه روز صدایش را از دست می‌دهد"
+      ],
+      "answers_tg": [
+        "Чашмаҳои кӯҳ хушк мешаванд",
+        "Бумҳо рӯз парвоз мекунанд ва буззе дар роҳе, ки гург нагузаштааст, сард ёфт мешавад",
+        "Оташи оҳангарӣ бе сабаб хомӯш мешавад",
+        "Каюмарс се рӯз овозашро гум мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The owls take wing in daylight and a goat is found cold on a wolf-free path — signs the chronicle uses to show the world itself feeling darkness stir.",
+      "explanation_fa": "جغدها در روشنایی پر می‌کشند و بزی سرد بر راهی بدونِ گرگ یافت می‌شود — نشانه‌هایی که شاهنامه برای نشان‌دادنِ احساسِ جهان از جنبیدنِ تاریکی به‌کار می‌برد.",
+      "explanation_tg": "Бумҳо дар рӯшноӣ парвоз мекунанд ва буззе дар роҳи бегург сард ёфт мешавад — нишонаҳое, ки Шоҳнома барои нишон додани эҳсоси ҷаҳон аз ҷунбиши торикӣ истифода мебарад.",
+      "reward": {
+        "xp": 125,
+        "real": 52
+      }
+    },
+    {
+      "id": "keyumars-h1",
+      "chapter_slug": "keyumars",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "What is the full opening phrase of the Shahnameh, and what does it mean?",
+      "question_fa": "عبارت کاملِ آغازینِ شاهنامه چیست و چه معنایی دارد؟",
+      "question_tg": "Ибораи пурраи оғозии Шоҳнома чист ва чӣ маъно дорад?",
+      "answers": [
+        "'Be yad-e shah' — In memory of the king",
+        "'Be nam-e Khoda-vand-e jan o kherad' — In the name of God of Soul and Wisdom",
+        "'Az khak ta aflak' — From dust to the heavens",
+        "'Dar agaz bud atash' — In the beginning there was fire"
+      ],
+      "answers_fa": [
+        "«به یادِ شاه» — به یادِ شاه",
+        "«به نامِ خداوندِ جان و خرد» — به نامِ خداوندِ جان و خرد",
+        "«از خاک تا افلاک» — از خاک تا آسمان",
+        "«در آغاز بود آتش» — در آغاز آتش بود"
+      ],
+      "answers_tg": [
+        "«Ба ёди шоҳ» — Ба ёди шоҳ",
+        "«Ба номи Худованди ҷон ва хирад» — Ба номи Худованди ҷон ва хирад",
+        "«Аз хок то афлок» — Аз хок то осмон",
+        "«Дар оғоз буд оташ» — Дар оғоз оташ буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Be nam-e Khoda-vand-e jan o kherad' — In the name of God of Soul and Wisdom. Ferdowsi places God, soul, and reason before any king, war, or throne.",
+      "explanation_fa": "«به نامِ خداوندِ جان و خرد» — فردوسی خدا، جان و خرد را پیش از هر شاه، جنگ یا تختی می‌نهد.",
+      "explanation_tg": "«Ба номи Худованди ҷон ва хирад» — Фирдавсӣ Худо, ҷон ва хирадро пеш аз ҳар шоҳ, ҷанг ё тахте мегузорад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "keyumars-h2",
+      "chapter_slug": "keyumars",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "From which four elements does the Shahnameh say humanity was shaped?",
+      "question_fa": "شاهنامه می‌گوید انسان از کدام چهار عنصر شکل گرفت؟",
+      "question_tg": "Шоҳнома мегӯяд инсон аз кадом чаҳор унсур шакл гирифт?",
+      "answers": [
+        "Gold, stone, breath, and light",
+        "Water, clay, fire, and wind",
+        "Earth, bone, blood, and spark",
+        "Sand, salt, shadow, and sky"
+      ],
+      "answers_fa": [
+        "زر، سنگ، نفس و روشنایی",
+        "آب، گِل، آتش و باد",
+        "خاک، استخوان، خون و جرقه",
+        "ماسه، نمک، سایه و آسمان"
+      ],
+      "answers_tg": [
+        "Тилло, санг, нафас ва равшанӣ",
+        "Об, гил, оташ ва шамол",
+        "Хок, устухон, хун ва ҷарақа",
+        "Регу намак, соя ва осмон"
+      ],
+      "correct_answer": 1,
+      "explanation": "Water, clay, fire, and wind — the four classical elements of the Persian cosmological tradition that Ferdowsi weaves into the creation of humankind.",
+      "explanation_fa": "آب، گِل، آتش و باد — چهار عنصرِ کلاسیکِ سنتِ کیهان‌شناختیِ ایرانی که فردوسی آن را در آفرینشِ انسان می‌بافد.",
+      "explanation_tg": "Об, гил, оташ ва шамол — чаҳор унсури классикии анъанаи кайҳоншиносии эронӣ, ки Фирдавсӣ онро дар офаринишии инсон мебофад.",
+      "reward": {
+        "xp": 155,
+        "real": 67
+      }
+    },
+    {
+      "id": "keyumars-h3",
+      "chapter_slug": "keyumars",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Under whose order were scribes sent across Khorasan to gather the ancient stories before Ferdowsi began writing?",
+      "question_fa": "به فرمانِ چه کسی دبیران به سراسرِ خراسان فرستاده شدند تا داستان‌های کهن را پیش از آغازِ نوشتنِ فردوسی گردآورند؟",
+      "question_tg": "Ба фармони кӣ котибон ба саросари Хуросон фиристода шуданд то достонҳои кӯҳнаро пеш аз оғози навиштани Фирдавсӣ гирд оваранд?",
+      "answers": [
+        "Sultan Mahmud of Ghazni",
+        "Abu Mansur of Tus",
+        "The Caliph of Baghdad",
+        "Daqiqi the poet"
+      ],
+      "answers_fa": [
+        "سلطانِ محمودِ غزنوی",
+        "ابومنصورِ طوسی",
+        "خلیفه‌ی بغداد",
+        "دقیقیِ شاعر"
+      ],
+      "answers_tg": [
+        "Султон Маҳмуди Ғазнавӣ",
+        "Абӯмансури Тӯсӣ",
+        "Халифаи Бағдод",
+        "Дақиқии шоир"
+      ],
+      "correct_answer": 1,
+      "explanation": "Abu Mansur of Tus commissioned scribes across Khorasan to collect the ancient oral and written fragments — the raw material Ferdowsi later wove into the Shahnameh.",
+      "explanation_fa": "ابومنصورِ طوسی دبیران را در سراسرِ خراسان مأمور کرد تا تکه‌های شفاهی و نوشتاریِ کهن را جمع‌آوری کنند — مواد خامی که فردوسی بعداً در شاهنامه بافت.",
+      "explanation_tg": "Абӯмансури Тӯсӣ котибонро дар саросари Хуросон мамур кард то пораҳои шифоҳӣ ва хаттии кӯҳнаро гирд оваранд — маводи хоме, ки Фирдавсӣ баъдтар дар Шоҳнома бофт.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "keyumars-h4",
+      "chapter_slug": "keyumars",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "How many years did Ferdowsi spend writing the Shahnameh?",
+      "question_fa": "فردوسی چند سال صرفِ نوشتنِ شاهنامه کرد؟",
+      "question_tg": "Фирдавсӣ чанд сол барои навиштани Шоҳнома сарф кард?",
+      "answers": [
+        "Ten years",
+        "Twenty years",
+        "Thirty years",
+        "Fifty years"
+      ],
+      "answers_fa": [
+        "ده سال",
+        "بیست سال",
+        "سی سال",
+        "پنجاه سال"
+      ],
+      "answers_tg": [
+        "Даҳ сол",
+        "Бист сол",
+        "Си сол",
+        "Панҷоҳ сол"
+      ],
+      "correct_answer": 2,
+      "explanation": "Thirty years — Ferdowsi began weaving the collected stories in 977 CE and kept writing through poverty, the death of his patron, and failing eyesight.",
+      "explanation_fa": "سی سال — فردوسی در ۳۶۷ هجری شمسی آغاز به بافتنِ داستان‌های جمع‌آوری‌شده کرد و از فقر، مرگِ حامیش و ضعفِ چشم نگذشت و نوشت.",
+      "explanation_tg": "Си сол — Фирдавсӣ дар соли 977 мелодӣ оғоз ба бофтани достонҳои гирдовардашуда кард ва тавассути камбизоатӣ, марги ҳомиаш ва заъфи дидааш нависандагиро идома дод.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "keyumars-h5",
+      "chapter_slug": "keyumars",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "When Siamak turns toward the forest to face the Black Div, what is behind him and what is in his face?",
+      "question_fa": "هنگامی که سیامک برای رویارویی با دیوِ سیاه سوی جنگل می‌گردد، چه چیزی پشتِ او و چه چیزی در روی اوست؟",
+      "question_tg": "Вақте ки Сиёмак барои рӯ ба рӯ шудан бо Деви сиёҳ ба сӯи ҷангал мегардад, пушташ чист ва рӯяш чист?",
+      "answers": [
+        "His father's fire and the demon's smoke",
+        "The dawn at his back and a black wind in his face",
+        "The mountain court behind him and the forest ahead",
+        "The army of light and the demon host"
+      ],
+      "answers_fa": [
+        "آتشِ پدرش و دودِ دیو",
+        "سپیده‌دم پشتِ سر و بادِ سیاه در روی",
+        "درگاهِ کوهستانی پشتِ سر و جنگل پیش‌رو",
+        "سپاهِ روشنایی و سپاهِ دیوان"
+      ],
+      "answers_tg": [
+        "Оташи падараш ва дуди дев",
+        "Субҳ пушташ ва шамоли сиёҳ рӯяш",
+        "Дарвозаи кӯҳистонӣ пушташ ва ҷангал пешрӯяш",
+        "Лашкари равшанӣ ва лашкари девон"
+      ],
+      "correct_answer": 1,
+      "explanation": "The dawn at his back and a black wind in his face — Ferdowsi's image for the first hero walking from light into darkness.",
+      "explanation_fa": "سپیده‌دم پشتِ سر و بادِ سیاه در روی — تصویرِ فردوسی برای نخستین قهرمانی که از روشنایی به تاریکی قدم می‌گذارد.",
+      "explanation_tg": "Субҳ пушташ ва шамоли сиёҳ рӯяш — тасвири Фирдавсӣ барои аввалин қаҳрамоне, ки аз равшанӣ ба торикӣ қадам мегузорад.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "keyumars-h6",
+      "chapter_slug": "keyumars",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Where precisely does Siamak meet the Black Div in battle?",
+      "question_fa": "سیامک دقیقاً در کجا با دیوِ سیاه به نبرد می‌پردازد؟",
+      "question_tg": "Сиёмак дақиқан дар куҷо бо Деви сиёҳ ба набард мепардозад?",
+      "answers": [
+        "At the gates of the mountain court",
+        "On the open turf at the edge of the forest",
+        "Inside the demon's lair beneath the roots",
+        "On the peak of Mount Damavand"
+      ],
+      "answers_fa": [
+        "در دروازه‌های درگاهِ کوهستانی",
+        "بر چمنِ گشوده در کرانه‌ی جنگل",
+        "درونِ لانه‌ی دیو زیرِ ریشه‌ها",
+        "بر قلّه‌ی کوهِ دماوند"
+      ],
+      "answers_tg": [
+        "Дар дарвозаҳои дарвозаи кӯҳистонӣ",
+        "Дар чамани кушода дар канораи ҷангал",
+        "Дохили лонаи дев зери решаҳо",
+        "Дар қуллаи Кӯҳи Домовонд"
+      ],
+      "correct_answer": 1,
+      "explanation": "On the open turf at the edge of the forest — Ferdowsi places the first battle of humankind in the borderland between the ordered world and the dark.",
+      "explanation_fa": "بر چمنِ گشوده در کرانه‌ی جنگل — فردوسی نخستین نبردِ آدمیان را در مرزِ میانِ جهانِ منظم و تاریکی قرار می‌دهد.",
+      "explanation_tg": "Дар чамани кушода дар канораи ҷангал — Фирдавсӣ аввалин набарди башариятро дар марзи миёни ҷаҳони мунтазам ва торикӣ мегузорад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "keyumars-h7",
+      "chapter_slug": "keyumars",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "According to Ferdowsi's opening meditation on kherad, what makes wisdom superior to all other gifts?",
+      "question_fa": "بر اساسِ تأملِ فردوسی در آغاز درباره‌ی خرد، چه چیزی خرد را از همه‌ی هدیه‌های دیگر برتر می‌کند؟",
+      "question_tg": "Мувофиқи тафаккури Фирдавсӣ дар оғоз дар бораи хирад, чӣ чиз хирадро аз ҳамаи дигар неъматҳо бартар мекунад?",
+      "answers": [
+        "It grants physical strength beyond any warrior",
+        "It sees what the eye cannot and knows what will come before it arrives",
+        "It is only given to kings and nobles",
+        "It passes from father to son without teaching"
+      ],
+      "answers_fa": [
+        "نیرویِ جسمانی فراتر از هر جنگاوری می‌بخشد",
+        "آنچه را چشم نمی‌بیند می‌بیند و آنچه را هنوز نیامده می‌داند",
+        "تنها به شاهان و اشراف داده می‌شود",
+        "بدونِ آموزش از پدر به پسر می‌رسد"
+      ],
+      "answers_tg": [
+        "Қувваи ҷисмонии фаротар аз ҳар ҷанговаре медиҳад",
+        "Онро, ки чашм намебинад, мебинад ва онро, ки ҳанӯз наомадааст, медонад",
+        "Танҳо ба шоҳон ва ашрофон дода мешавад",
+        "Бе таълим аз падар ба писар мегузарад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Kherad sees what the eye cannot and knows what will come before it arrives. Armies fall, kingdoms end, gold corrupts — but wisdom endures, lighting the path without burning the hand that holds it.",
+      "explanation_fa": "خرد آنچه را چشم نمی‌بیند می‌بیند و آنچه را هنوز نیامده می‌داند. سپاه‌ها می‌ریزند، پادشاهی‌ها پایان می‌یابند، زر فاسد می‌کند — اما خرد می‌ماند.",
+      "explanation_tg": "Хирад онро, ки чашм намебинад, мебинад ва онро, ки ҳанӯз наомадааст, медонад. Лашкарҳо мерезанд, подшоҳиҳо поён меёбанд, тилло фасод меорад — аммо хирад мемонад.",
+      "reward": {
+        "xp": 175,
+        "real": 77
+      }
+    },
+    {
+      "id": "keyumars-h8",
+      "chapter_slug": "keyumars",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh's chapter 1 closes 'not in victory, but in resolve.' What specific image closes that final scene?",
+      "question_fa": "دفترِ اولِ شاهنامه «نه با پیروزی که با عزم» به پایان می‌رسد. چه تصویرِ مشخصی آن صحنه‌ی پایانی را می‌بندد؟",
+      "question_tg": "Бобои аввали Шоҳнома «на бо пирӯзӣ, балки бо азм» ба поён мерасад. Кадом тасвири мушаххас он саҳнаи охиринро мебандад?",
+      "answers": [
+        "Keyumars weeping over the leopard skin in the night",
+        "A small hand — Hushang's — reaching for the spear",
+        "The Black Div retreating into the forest",
+        "Dawn breaking over Mount Damavand"
+      ],
+      "answers_fa": [
+        "کیومرث که شبانه بر پوستِ پلنگ می‌گرید",
+        "دستی کوچک — هوشنگ — که برای نیزه دراز می‌شود",
+        "دیوِ سیاه که به جنگل عقب می‌نشیند",
+        "سپیده‌ای که بر دماوند می‌شکفد"
+      ],
+      "answers_tg": [
+        "Каюмарс, ки шабона бар пӯсти паланг мегиряд",
+        "Дасти хурд — Ҳушанг — ки барои найза дароз мешавад",
+        "Деви сиёҳ, ки ба ҷангал ақиб менишинад",
+        "Субҳе, ки бар Домовонд медамад"
+      ],
+      "correct_answer": 1,
+      "explanation": "A small hand reaches for the spear — Hushang, who has watched and remembered. The chapter ends not with Keyumars' grief but with the next generation's resolve.",
+      "explanation_fa": "دستی کوچک برای نیزه دراز می‌شود — هوشنگ که نگریسته و به‌یاد سپرده است. دفتر نه با اندوهِ کیومرث که با عزمِ نسلِ بعدی پایان می‌گیرد.",
+      "explanation_tg": "Дасти хурд барои найза дароз мешавад — Ҳушанг, ки нигоҳ кардааст ва ба хотир супурдааст. Боб на бо ғами Каюмарс, балки бо азми насли баъдӣ поён меёбад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "hushang-e3",
+      "chapter_slug": "hushang",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Whose death does Hushang avenge at the start of his reign?",
+      "question_fa": "هوشنگ در آغازِ شاهی‌اش کینِ مرگِ چه کسی را می‌ستاند؟",
+      "question_tg": "Ҳушанг дар оғози подшоҳиаш интиқоми марги кӣро мегирад?",
+      "answers": [
+        "Keyumars",
+        "Siamak his father",
+        "A slain general of Pars",
+        "His elder brother"
+      ],
+      "answers_fa": [
+        "کیومرث",
+        "سیامکِ پدرش",
+        "یک سردارِ کشته‌شده‌ی پارس",
+        "برادرِ بزرگش"
+      ],
+      "answers_tg": [
+        "Каюмарс",
+        "Сиёмаки падараш",
+        "Як сарлашкари куштаи Порс",
+        "Бародари калониаш"
+      ],
+      "correct_answer": 1,
+      "explanation": "Siamak — Hushang's father — was killed by the Black Div in chapter 1. Hushang's first act as king is to avenge him with the army of light.",
+      "explanation_fa": "سیامک — پدرِ هوشنگ — در دفترِ اول به‌دستِ دیوِ سیاه کشته شد. نخستین کارِ هوشنگ به‌عنوانِ شاه، انتقام‌گرفتن از او با سپاهِ روشنایی است.",
+      "explanation_tg": "Сиёмак — падари Ҳушанг — дар бобои аввал ба дасти Деви сиёҳ кушта шуд. Аввалин кори Ҳушанг ҳамчун подшоҳ қасос гирифтан аз ӯ бо лашкари равшанӣ аст.",
+      "reward": {
+        "xp": 75,
+        "real": 28
+      }
+    },
+    {
+      "id": "hushang-m2",
+      "chapter_slug": "hushang",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What is Hushang's relationship to Keyumars?",
+      "question_fa": "هوشنگ چه نسبتی با کیومرث دارد؟",
+      "question_tg": "Ҳушанг ба Каюмарс чӣ нисбат дорад?",
+      "answers": [
+        "Son",
+        "Grandson",
+        "Brother",
+        "Chosen successor"
+      ],
+      "answers_fa": [
+        "پسر",
+        "نوه",
+        "برادر",
+        "جانشینِ برگزیده"
+      ],
+      "answers_tg": [
+        "Писар",
+        "Набера",
+        "Бародар",
+        "Вориси баргузида"
+      ],
+      "correct_answer": 1,
+      "explanation": "Hushang is Keyumars' grandson — son of Siamak. The throne passes from grandfather to grandson after thirty days of mourning.",
+      "explanation_fa": "هوشنگ نوه‌ی کیومرث — پسرِ سیامک — است. تخت پس از سی روز سوگ از پدربزرگ به نوه منتقل می‌شود.",
+      "explanation_tg": "Ҳушанг набераи Каюмарс — писари Сиёмак — аст. Тахт пас аз си рӯзи аза аз бобо ба набера мегузарад.",
+      "reward": {
+        "xp": 105,
+        "real": 42
+      }
+    },
+    {
+      "id": "hushang-m3",
+      "chapter_slug": "hushang",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Which two kinds of animals does Hushang call to join his Army of Light?",
+      "question_fa": "هوشنگ چه دو نوع جانوری را فرا می‌خواند تا به سپاهِ روشناییِ او بپیوندند؟",
+      "question_tg": "Ҳушанг кадом ду навъ ҳайвонро даъват мекунад, ки ба лашкари равшаниаш бипайванданд?",
+      "answers": [
+        "Wolves and bears from the north",
+        "Eagles from the south and lions from the high pasture",
+        "Horses and leopards from Pars",
+        "Falcons and wild boars from the forest"
+      ],
+      "answers_fa": [
+        "گرگان و خرسانِ شمال",
+        "عقاب‌ها از جنوب و شیرانِ چراگاهِ بلند",
+        "اسبان و پلنگانِ پارس",
+        "شاهینان و گراز‌های جنگل"
+      ],
+      "answers_tg": [
+        "Гургон ва хирсони шимол",
+        "Уқобҳо аз ҷануб ва шерони чарогоҳи баланд",
+        "Аспон ва палангони Порс",
+        "Шоҳинҳо ва гурозҳои ҷангал"
+      ],
+      "correct_answer": 1,
+      "explanation": "Eagles from the south and lions from the high pasture — in the Shahnameh, the natural world sides with justice, giving Hushang's army a mythic, cosmic scale.",
+      "explanation_fa": "عقاب‌ها از جنوب و شیرانِ چراگاهِ بلند — در شاهنامه، جهانِ طبیعی طرفِ عدالت است و به سپاهِ هوشنگ مقیاسی اسطوره‌ای و کیهانی می‌دهد.",
+      "explanation_tg": "Уқобҳо аз ҷануб ва шерони чарогоҳи баланд — дар Шоҳнома ҷаҳони табиӣ тарафи адолат аст ва ба лашкари Ҳушанг миқёси асотирӣ ва кайҳонӣ медиҳад.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "hushang-m4",
+      "chapter_slug": "hushang",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "After defeating the Black Div, what agricultural tool does Hushang introduce to the people?",
+      "question_fa": "هوشنگ پس از شکستِ دیوِ سیاه چه ابزارِ کشاورزی‌ای را به مردمان معرفی می‌کند؟",
+      "question_tg": "Ҳушанг пас аз шикасти Деви сиёҳ кадом асбоби кишоварзӣро ба мардум муаррифӣ мекунад?",
+      "answers": [
+        "The water wheel",
+        "The plough",
+        "The sickle",
+        "The grinding stone"
+      ],
+      "answers_fa": [
+        "چرخِ آب",
+        "گاوآهن",
+        "داس",
+        "سنگِ آسیا"
+      ],
+      "answers_tg": [
+        "Чархи об",
+        "Говоҳан",
+        "Дос",
+        "Санги осиё"
+      ],
+      "correct_answer": 1,
+      "explanation": "The plough — Hushang splits it into the soft earth, begins irrigation channels, and names the grain. The age of craft begins with farming, not war.",
+      "explanation_fa": "گاوآهن — هوشنگ آن را در خاکِ نرم فرو می‌برد، جوی‌های آبیاری می‌کَند و به دانه‌ها نام می‌دهد. عصرِ صنعت با کشاورزی آغاز می‌شود، نه جنگ.",
+      "explanation_tg": "Говоҳан — Ҳушанг онро дар замини нарм фуру мебарад, ҷӯйҳои обёрӣ мекананд ва ба донаҳо ном медиҳад. Асри ҳунар бо кишоварзӣ оғоз мешавад, на ҷанг.",
+      "reward": {
+        "xp": 115,
+        "real": 47
+      }
+    },
+    {
+      "id": "hushang-m5",
+      "chapter_slug": "hushang",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What does the chapter-complete scene of Hushang say the next king Tahmuras will do?",
+      "question_fa": "صحنه‌ی پایانیِ دفترِ هوشنگ می‌گوید شاهِ بعدی تهمورث چه کاری انجام خواهد داد؟",
+      "question_tg": "Саҳнаи охирини бобои Ҳушанг мегӯяд подшоҳи баъдӣ Таҳмурас чӣ хоҳад кард?",
+      "answers": [
+        "Forge the first sword of iron for war against Turan",
+        "Chain the demons and trade their lives for the alphabet",
+        "Build the first walled city in the valley of Pars",
+        "Summon the Simorgh to defeat Ahriman"
+      ],
+      "answers_fa": [
+        "نخستین شمشیرِ آهنین را برای جنگ با توران بسازد",
+        "دیوان را به زنجیر کشد و جانشان را با الفبا معامله کند",
+        "نخستین شهرِ دیواردار را در درّه‌ی پارس بنا کند",
+        "سیمرغ را فرا خواند تا اهریمن را شکست دهد"
+      ],
+      "answers_tg": [
+        "Аввалин шамшери оҳанинро барои ҷанг бо Турон бисозад",
+        "Девонро банд кунад ва ҷонашонро бо алифбо мубодила кунад",
+        "Аввалин шаҳри деворашро дар водии Порс бисозад",
+        "Симурғро даъват кунад то Аҳриманро шикаст диҳад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Tahmuras will chain the demons and trade their lives for the alphabet — the chronicle's leap from the age of fire to the age of writing.",
+      "explanation_fa": "تهمورث دیوان را به زنجیر می‌کشد و جانشان را با الفبا معامله می‌کند — جهشِ این تاریخ از عصرِ آتش به عصرِ نوشتار.",
+      "explanation_tg": "Таҳмурас девонро банд мекунад ва ҷонашонро бо алифбо мубодила мекунад — ҷаҳиши ин таърих аз асри оташ ба асри навиштан.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "hushang-h1",
+      "chapter_slug": "hushang",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "How does Hushang receive the leopard-skin crown — by ceremony or differently?",
+      "question_fa": "هوشنگ چگونه تاجِ پوستِ پلنگ را دریافت می‌کند — با مراسم یا به شکلی دیگر؟",
+      "question_tg": "Ҳушанг чӣ гуна тоҷи пӯсти палангро мегирад — бо маросим ё ба гунаи дигар?",
+      "answers": [
+        "In a formal coronation before the whole mountain court",
+        "With a single morning: Hushang's father sets the hammer down and Hushang picks it up",
+        "The elders place it on his head after thirty days of ritual fasting",
+        "He takes it himself from Keyumars' stone tomb"
+      ],
+      "answers_fa": [
+        "در مراسمِ رسمیِ تاجگذاری پیشِ تمامِ درگاهِ کوهستانی",
+        "با یک صبحِ ساده: پدرش چکش را می‌گذارد و هوشنگ برمی‌دارد",
+        "ریش‌سفیدان پس از سی روز روزه‌ی آیینی آن را بر سرش می‌گذارند",
+        "خودش آن را از آرامگاهِ سنگیِ کیومرث برمی‌دارد"
+      ],
+      "answers_tg": [
+        "Дар маросими расмии тоҷгузорӣ пеши тамоми дарвозаи кӯҳистонӣ",
+        "Бо як субҳи содда: падараш чакушро мегузорад ва Ҳушанг мегирад",
+        "Ришсафедон пас аз си рӯзи рӯзаи оинӣ онро бар сараш мегузоранд",
+        "Худаш онро аз мақбараи сангини Каюмарс мебарорад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Not with ceremony but with a single morning: Hushang sets the hammer down, Tahmuras picks it up — Ferdowsi's way of showing power passing through work, not ritual.",
+      "explanation_fa": "نه با مراسم که با یک صبحِ ساده — فردوسی نشان می‌دهد که قدرت از طریقِ کار منتقل می‌شود، نه آیین.",
+      "explanation_tg": "На бо маросим, балки бо як субҳи содда — Фирдавсӣ нишон медиҳад, ки қудрат тавассути кор мегузарад, на расм.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "hushang-h2",
+      "chapter_slug": "hushang",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "In the army-of-light scene, what is the only thing Hushang says before marching?",
+      "question_fa": "در صحنه‌ی سپاهِ روشنایی، هوشنگ پیش از حرکت تنها چه می‌گوید؟",
+      "question_tg": "Дар саҳнаи лашкари равшанӣ, Ҳушанг пеш аз ҳаракат танҳо чӣ мегӯяд?",
+      "answers": [
+        "He speaks a long prayer to the God of Soul and Wisdom",
+        "He says only what must be said: a debt is owed",
+        "He promises the eagles gold and the lions a kingdom",
+        "He names each warrior aloud before the march"
+      ],
+      "answers_fa": [
+        "نیایشی طولانی به خداوندِ جان و خرد می‌خواند",
+        "تنها آنچه باید گفته شود را می‌گوید: وامی ادا نشده است",
+        "به عقاب‌ها زر و به شیران پادشاهی وعده می‌دهد",
+        "پیش از حرکت هر جنگجو را با صدای بلند نام می‌برد"
+      ],
+      "answers_tg": [
+        "Дуои дӯзахонаро ба Худованди ҷон ва хирад мехонад",
+        "Танҳо он чиро, ки бояд гуфта шавад, мегӯяд: қарзе адо нашудааст",
+        "Ба уқобҳо тилло ва ба шерон подшоҳӣ ваъда медиҳад",
+        "Пеш аз ҳаракат ҳар ҷанговарро бо овози баланд ном мебарад"
+      ],
+      "correct_answer": 1,
+      "explanation": "He says only what must be said: a debt is owed. Ferdowsi's kings speak with economy — Hushang's economy of speech is itself a sign of his authority.",
+      "explanation_fa": "تنها آنچه باید گفته شود را می‌گوید: وامی ادا نشده است. شاهانِ فردوسی به‌اندازه سخن می‌گویند — اقتصادِ کلامِ هوشنگ خود نشانِ اقتدارش است.",
+      "explanation_tg": "Танҳо он чиро, ки бояд гуфта шавад, мегӯяд: қарзе адо нашудааст. Шоҳони Фирдавсӣ бо иқтисод сухан мегӯянд.",
+      "reward": {
+        "xp": 155,
+        "real": 67
+      }
+    },
+    {
+      "id": "hushang-h3",
+      "chapter_slug": "hushang",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "In the demon forest, how do Hushang and the forest relate — what does the scene say he has been watching it since?",
+      "question_fa": "هوشنگ در جنگلِ دیوان با جنگل چه نسبتی دارد — صحنه می‌گوید او از چه زمانی این جنگل را نگریسته است؟",
+      "question_tg": "Ҳушанг дар ҷангали девон бо ҷангал чӣ нисбат дорад — саҳна мегӯяд ӯ аз кай ин ҷангалро нигаристааст?",
+      "answers": [
+        "Since the night his father died",
+        "Since he was a boy on his grandfather's shoulder",
+        "Since Ahriman first sent the cold wind from the roots",
+        "Since he forged his first iron weapon"
+      ],
+      "answers_fa": [
+        "از شبِ مرگِ پدرش",
+        "از آن هنگام که کودکی بود بر شانه‌ی نیایش",
+        "از اولین باری که اهریمن بادِ سرد را از ریشه‌ها فرستاد",
+        "از هنگامِ ساختنِ نخستین سلاحِ آهنیِ خود"
+      ],
+      "answers_tg": [
+        "Аз шаби марги падараш",
+        "Аз вақте ки кӯдак буд бар китфи бобояш",
+        "Аз аввалин боре ки Аҳриман шамоли сардро аз решаҳо фиристод",
+        "Аз вақти сохтани аввалин аслиҳаи оҳанинаш"
+      ],
+      "correct_answer": 1,
+      "explanation": "Since he was a boy on his grandfather's shoulder — the forest has been part of Hushang's life since before he could walk into it. He does not slow because he already knows it.",
+      "explanation_fa": "از آن هنگام که کودکی بود بر شانه‌ی نیایش — جنگل از پیش از آنکه بتواند درونش برود بخشی از زندگیِ هوشنگ بوده است. کند نمی‌رود چون از پیش می‌شناختش.",
+      "explanation_tg": "Аз вақте ки кӯдак буд бар китфи бобояш — ҷангал аз пеш аз он ки тавонад дар онро ворид шавад, як қисми зиндагии Ҳушанг буд.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "hushang-h4",
+      "chapter_slug": "hushang",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "What does the fire 'not do' if you respect it, according to Hushang when he names Sade?",
+      "question_fa": "هنگامی که هوشنگ سده را نام‌گذاری می‌کند، آتش اگر احترامش بداری چه نمی‌کند؟",
+      "question_tg": "Вақте ки Ҳушанг Садаро ном мегузорад, оташ агар эҳтиромаш кунӣ чӣ намекунад?",
+      "answers": [
+        "It does not speak",
+        "It does not bite",
+        "It does not spread",
+        "It does not die"
+      ],
+      "answers_fa": [
+        "سخن نمی‌گوید",
+        "گاز نمی‌گیرد",
+        "نمی‌گسترد",
+        "نمی‌میرد"
+      ],
+      "answers_tg": [
+        "Сухан намегӯяд",
+        "Газ намезанад",
+        "Намегустарад",
+        "Намемирад"
+      ],
+      "correct_answer": 1,
+      "explanation": "It does not bite if you respect it — Hushang names the first fire and immediately teaches its first rule: fire is a gift but also a covenant.",
+      "explanation_fa": "اگر احترامش بداری گاز نمی‌گیرد — هوشنگ نخستین آتش را نام می‌نهد و بلافاصله نخستین قاعده‌اش را می‌آموزد: آتش هدیه‌ای است اما پیمانی هم هست.",
+      "explanation_tg": "Агар эҳтиромаш кунӣ, газ намезанад — Ҳушанг аввалин оташро ном мегузорад ва фавран аввалин қоидааш омӯзад: оташ неъмат аст аммо аҳде ҳам ҳаст.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "hushang-h5",
+      "chapter_slug": "hushang",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "What does the fire chapter-complete scene say fire ultimately leads to in sequence?",
+      "question_fa": "صحنه‌ی پایانیِ دفترِ آتش می‌گوید آتش در نهایت به چه چیزهایی به‌ترتیب منجر می‌شود؟",
+      "question_tg": "Саҳнаи охирини бобои оташ мегӯяд оташ дар ниҳоят ба чӣ чизҳое пай дар пай мунтаҳӣ мешавад?",
+      "answers": [
+        "Fire → water → wheat → bread",
+        "Fire → iron → forge → blade, plough, hammer",
+        "Fire → light → warmth → the first city",
+        "Fire → spirit → kherad → civilization"
+      ],
+      "answers_fa": [
+        "آتش ← آب ← گندم ← نان",
+        "آتش ← آهن ← آهنگری ← تیغ، گاوآهن، چکش",
+        "آتش ← روشنایی ← گرما ← نخستین شهر",
+        "آتش ← روح ← خرد ← تمدن"
+      ],
+      "answers_tg": [
+        "Оташ ← об ← гандум ← нон",
+        "Оташ ← оҳан ← оҳангарӣ ← теғ, говоҳан, чакуш",
+        "Оташ ← равшанӣ ← гармо ← аввалин шаҳр",
+        "Оташ ← рӯҳ ← хирад ← тамаддун"
+      ],
+      "correct_answer": 1,
+      "explanation": "Fire begets iron. Iron begets the forge. The forge begets the blade, the plough, the hammer — the Shahnameh's chain of material civilization.",
+      "explanation_fa": "آتش آهن می‌زاید. آهن آهنگری می‌زاید. آهنگری تیغ می‌زاید و گاوآهن و چکش — زنجیرِ تمدنِ مادی در شاهنامه.",
+      "explanation_tg": "Оташ оҳан мезояд. Оҳан оҳангарӣ мезояд. Оҳангарӣ теғ мезояд ва говоҳан ва чакуш — занҷири тамаддуни моддӣ дар Шоҳнома.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "hushang-h6",
+      "chapter_slug": "hushang",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The Shahnameh says Hushang's fire 'does not bite the hand.' What broader principle does Ferdowsi illustrate with fire coming from a missed throw rather than a god's gift?",
+      "question_fa": "شاهنامه می‌گوید آتشِ هوشنگ «دست را نمی‌گزد.» فردوسی با آمدنِ آتش از یک پرتابِ خطا به جای هدیه‌ی خدایان چه اصلِ گسترده‌تری را نشان می‌دهد؟",
+      "question_tg": "Шоҳнома мегӯяд оташи Ҳушанг «дастро намегазад.» Фирдавсӣ бо омадани оташ аз як партоби хато ба ҷои неъмати худоён кадом принсипи васеътарро нишон медиҳад?",
+      "answers": [
+        "That divine intervention is more powerful than human effort",
+        "That gifts arrive sideways — through accident, not heroic intention",
+        "That fire is more dangerous than iron and must be kept secret",
+        "That only kings may discover the tools of civilization"
+      ],
+      "answers_fa": [
+        "که دخالتِ الهی قوی‌تر از تلاشِ انسانی است",
+        "که هدیه‌ها کج‌وپیچ می‌رسند — از راهِ تصادف، نه نیتِ قهرمانانه",
+        "که آتش از آهن خطرناک‌تر است و باید پنهان نگه داشته شود",
+        "که تنها شاهان می‌توانند ابزارهای تمدن را کشف کنند"
+      ],
+      "answers_tg": [
+        "Ки дахолати илоҳӣ аз кӯшиши инсонӣ қавитар аст",
+        "Ки неъматҳо аз паҳлу мерасанд — тавассути тасодуф, на нияти қаҳрамонона",
+        "Ки оташ аз оҳан хатарнокτар аст ва бояд пинҳон нигоҳ дошта шавад",
+        "Ки танҳо шоҳон метавонанд абзорҳои тамаддунро кашф кунанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Gifts arrive sideways — Ferdowsi's world is more human than Greek myth. Fire wasn't stolen from the gods; it came from a missed throw. The Shahnameh's civilizations are built on accident and wisdom together.",
+      "explanation_fa": "هدیه‌ها کج‌وپیچ می‌رسند — جهانِ فردوسی از اسطوره‌ی یونانی انسانی‌تر است. آتش از خدایان دزدیده نشد؛ از پرتابی خطا آمد. تمدن‌های شاهنامه بر تصادف و خرد با هم ساخته می‌شوند.",
+      "explanation_tg": "Неъматҳо аз паҳлу мерасанд — ҷаҳони Фирдавсӣ аз асотири юнонӣ инсонитар аст. Оташ аз худоён дуздида нашуд; аз партоби хато омад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "hushang-h7",
+      "chapter_slug": "hushang",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The Shahnameh says the world has 'a second fire' added to its hearth. What does this second fire represent in Hushang's age?",
+      "question_fa": "شاهنامه می‌گوید جهان «آتشِ دوم» را به اجاقش افزود. این آتشِ دوم در عصرِ هوشنگ نماینده‌ی چیست؟",
+      "question_tg": "Шоҳнома мегӯяд ҷаҳон «оташи дуввум»ро ба оҷоқаш иловат кард. Ин оташи дуввум дар асри Ҳушанг намояндаи чист?",
+      "answers": [
+        "A second sun that Hushang lit with his army's torches",
+        "Iron-working — the mountain court's second fire after the discovery of flame",
+        "The sacred fire temple built after the battle",
+        "Siamak's funeral pyre kept burning as a memorial"
+      ],
+      "answers_fa": [
+        "خورشیدِ دوم که هوشنگ با مشعل‌های سپاهش روشن کرد",
+        "آهنگری — آتشِ دومِ درگاهِ کوهستانی پس از کشفِ شعله",
+        "آتشکده‌ی مقدسی که پس از نبرد ساخته شد",
+        "آتشِ مزارِ سیامک که به‌عنوانِ یادبود زنده نگه داشته شد"
+      ],
+      "answers_tg": [
+        "Офтоби дуввуме, ки Ҳушанг бо машъалҳои лашкараш равшан кард",
+        "Оҳангарӣ — оташи дуввуми дарвозаи кӯҳистонӣ пас аз кашфи шӯъла",
+        "Оташкадаи муқаддасе, ки пас аз набард сохта шуд",
+        "Оташи мазори Сиёмак, ки ба унвони ёдбуд зинда нигоҳ дошта шуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Iron-working — a world that only knew survival now learns to build. The second fire on the hearth symbolises that Hushang's age added craft to existence.",
+      "explanation_fa": "آهنگری — جهانی که تنها بقا را می‌دانست اکنون ساختن را می‌آموزد. آتشِ دوم بر اجاق نماد این است که عصرِ هوشنگ صنعت را به هستی افزود.",
+      "explanation_tg": "Оҳангарӣ — ҷаҳоне ки танҳо зиндамонданро медонист акнун сохтанро мёмӯзад. Оташи дуввум бар оҷоқ рамзи ин аст, ки асри Ҳушанг ҳунарро ба ҳастӣ иловат кард.",
+      "reward": {
+        "xp": 175,
+        "real": 77
+      }
+    },
+    {
+      "id": "hushang-h8",
+      "chapter_slug": "hushang",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "In the chapter-complete scene, Hushang names each new thing 'one by one' and gives each name to a child to carry. What does this act signify in Ferdowsi's world?",
+      "question_fa": "در صحنه‌ی پایانی، هوشنگ هر چیزِ جدید را «یک‌به‌یک» نام می‌دهد و هر نامی را به کودکی می‌سپارد. این عمل در جهانِ فردوسی چه معنایی دارد؟",
+      "question_tg": "Дар саҳнаи охирин, Ҳушанг ҳар чизи навро «яке-яке» ном медиҳад ва ҳар номро ба кӯдаке месупорад. Ин амал дар ҷаҳони Фирдавсӣ чӣ маъно дорад?",
+      "answers": [
+        "It means each child becomes a craftsman of that skill",
+        "Naming is the first act of writing — it is how civilization preserves itself before the alphabet arrives",
+        "It is a religious ceremony to thank God of Soul and Wisdom",
+        "It means those children will become the next generation of heroes"
+      ],
+      "answers_fa": [
+        "یعنی هر کودک هنرمندِ آن مهارت می‌شود",
+        "نام‌گذاری نخستین عملِ نوشتار است — روشِ نگه‌داریِ تمدن پیش از رسیدنِ الفبا",
+        "مراسمِ دینی‌ای برای تشکر از خداوندِ جان و خرد است",
+        "یعنی آن کودکان نسلِ بعدیِ قهرمانان می‌شوند"
+      ],
+      "answers_tg": [
+        "Яъне ҳар кӯдак ҳунарманди он маҳорат мешавад",
+        "Ном гузоштан аввалин амали навиштан аст — роши нигоҳ доштани тамаддун пеш аз омадани алифбо",
+        "Маросими динӣ барои ташаккур аз Худованди ҷон ва хирад аст",
+        "Яъне он кӯдакон насли баъдии қаҳрамонон мешаванд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Naming is the first act of civilization's memory — before writing, names carried by children are how knowledge survives. Tahmuras will later trade for the alphabet; Hushang uses the only tool available: the spoken name passed on.",
+      "explanation_fa": "نام‌گذاری نخستین عملِ حافظه‌ی تمدن است — پیش از نوشتار، نام‌هایی که کودکان حمل می‌کنند روشِ بقاءِ دانش است. تهمورث بعداً برای الفبا معامله خواهد کرد؛ هوشنگ تنها ابزارِ در دسترس را به‌کار می‌برد: نامِ گفتاری که منتقل می‌شود.",
+      "explanation_tg": "Ном гузоштан аввалин амали хотираи тамаддун аст — пеш аз навиштан, номҳое, ки кӯдакон мебаранд, роши бақои дониш аст.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "tahmuras-m3",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What fraction of the demons submit without fighting when Tahmuras binds them?",
+      "question_fa": "چه کسری از دیوان هنگامِ به‌زنجیرکشیدن توسطِ تهمورث بدونِ جنگ تسلیم می‌شوند؟",
+      "question_tg": "Кадом касри девон ҳангоми банд кардан аз тарафи Таҳмурас бидуни ҷанг таслим мешаванд?",
+      "answers": [
+        "One third",
+        "One half",
+        "Two thirds",
+        "All of them"
+      ],
+      "answers_fa": [
+        "یک‌سوم",
+        "نیمی",
+        "دوسوم",
+        "همه‌ی آن‌ها"
+      ],
+      "answers_tg": [
+        "Як сеяк",
+        "Нимаш",
+        "Ду сеяк",
+        "Ҳамаашон"
+      ],
+      "correct_answer": 2,
+      "explanation": "Two thirds submit without fighting — they have watched their lord Ahriman ridden like a horse. One third fight and die. Ferdowsi's arithmetic shows that most darkness can be negotiated with.",
+      "explanation_fa": "دوسوم بدونِ جنگ تسلیم می‌شوند — دیده‌اند که اربابشان اهریمن مثلِ اسب رانده شده. یک‌سوم می‌جنگند و می‌میرند. حسابِ فردوسی نشان می‌دهد با بیشترِ تاریکی می‌توان مذاکره کرد.",
+      "explanation_tg": "Ду сеяк бидуни ҷанг таслим мешаванд — дидаанд, ки арбобашон Аҳриман мисли асп ронда шудааст. Як сеяк меҷанганд ва мемиранд.",
+      "reward": {
+        "xp": 115,
+        "real": 47
+      }
+    },
+    {
+      "id": "tahmuras-m4",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "How does Tahmuras demonstrate supreme mastery over the demon realm beyond defeating its army?",
+      "question_fa": "تهمورث فراتر از شکستِ سپاهِ دیوان چگونه سیادتِ برین بر قلمروِ دیوان را نشان می‌دهد؟",
+      "question_tg": "Таҳмурас берун аз шикасти лашкари девон чӣ гуна сиёдати олиро бар қаламрови девон нишон медиҳад?",
+      "answers": [
+        "He builds a fortress at the centre of the demon realm",
+        "He forces Ahriman to carry him as his mount through the realm",
+        "He burns the demon forest to the roots",
+        "He places his cypress club above the demon throne"
+      ],
+      "answers_fa": [
+        "قلعه‌ای در مرکزِ قلمروِ دیوان می‌سازد",
+        "اهریمن را مجبور می‌کند در تمامِ قلمرو مرکبش باشد",
+        "جنگلِ دیوان را تا ریشه می‌سوزاند",
+        "چوبِ سروِ خود را بالای تختِ دیوان می‌گذارد"
+      ],
+      "answers_tg": [
+        "Қалъае дар маркази қаламрови девон месозад",
+        "Аҳриманро маҷбур мекунад дар тамоми қаламров марҳабааш бошад",
+        "Ҷангали девонро то реша месӯзонад",
+        "Чӯби сарви худро болои тахти девон мегузорад"
+      ],
+      "correct_answer": 1,
+      "explanation": "He forces Ahriman — the lord of darkness himself — to serve as his horse and rides him through the demon realm. It is the highest symbolic act of mastery: not killing the enemy but making him carry you.",
+      "explanation_fa": "اهریمن — خودِ سرورِ تاریکی — را مجبور می‌کند مرکبش شود و از میانِ قلمروِ دیوان می‌تازد. این بالاترین عملِ نمادینِ سیادت است: نه کشتنِ دشمن بلکه وادارکردنش که تو را حمل کند.",
+      "explanation_tg": "Аҳриманро — худи Парвардигори торикӣ — маҷбур мекунад, ки марҳабааш шавад ва аз миёни қаламрови девон метозад.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "tahmuras-m5",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Which alphabet do the demons teach first when they begin the writing lesson?",
+      "question_fa": "هنگامِ آغازِ درسِ نوشتار، دیوان کدام الفبا را اول می‌آموزند؟",
+      "question_tg": "Ҳангоми оғози дарси навиштан, девон кадом алифборо аввал меомӯзанд?",
+      "answers": [
+        "Tazi",
+        "Pahlavi",
+        "Greek",
+        "Sogdian"
+      ],
+      "answers_fa": [
+        "تازی",
+        "پهلوی",
+        "یونانی",
+        "سغدی"
+      ],
+      "answers_tg": [
+        "Тозӣ",
+        "Паҳлавӣ",
+        "Юнонӣ",
+        "Суғдӣ"
+      ],
+      "correct_answer": 2,
+      "explanation": "Greek first — 'angular, proud.' Then Tazi, Pahlavi, Sogdian. The Greek alphabet opens the sequence, followed by the scripts of the surrounding world.",
+      "explanation_fa": "ابتدا یونانی — «زاویه‌دار، باشکوه.» سپس تازی، پهلوی، سغدی. الفبایِ یونانی توالی را می‌گشاید و خط‌های جهانِ پیرامون پیروی می‌کنند.",
+      "explanation_tg": "Аввал юнонӣ — «зовиядор, бошукӯҳ.» Сипас тозӣ, паҳлавӣ, суғдӣ. Алифбои юнонӣ тавалиро мекушояд.",
+      "reward": {
+        "xp": 125,
+        "real": 52
+      }
+    },
+    {
+      "id": "tahmuras-h1",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "The scene 'Demons at the Edge' says scouts report three specific signs. Which is NOT one of them?",
+      "question_fa": "صحنه‌ی «دیوان بر کرانه» می‌گوید پیکان‌ها سه نشانه‌ی خاص گزارش می‌دهند. کدامیک از آن‌ها نیست؟",
+      "question_tg": "Саҳнаи «Девон дар канора» мегӯяд пайкон(ҳо) се нишонаи мушаххас гузориш медиҳанд. Кадоме аз онҳо нест?",
+      "answers": [
+        "Fires in the hollows",
+        "Sounds that are not wind",
+        "A great serpent seen crossing the road at night",
+        "Shapes at the tree-line that do not move when looked at directly"
+      ],
+      "answers_fa": [
+        "آتش در چاله‌ها",
+        "صداهایی که باد نیستند",
+        "افعیِ بزرگی که شبانه از جاده می‌گذرد",
+        "شکل‌هایی در کنارِ درختان که با نگاهِ مستقیم تکان نمی‌خورند"
+      ],
+      "answers_tg": [
+        "Оташ дар чоҳакҳо",
+        "Садоҳое, ки шамол нестанд",
+        "Морги бузурге, ки шабона аз роҳ мегузарад",
+        "Шаклҳое дар канори дарахтон, ки бо нигоҳи мустақим ҳаракат намекунанд"
+      ],
+      "correct_answer": 2,
+      "explanation": "The three signs are: fires in the hollows, sounds that are not wind, and shapes at the tree-line that don't move when looked at directly. No serpent is reported — that comes from Hushang's chapter.",
+      "explanation_fa": "سه نشانه عبارتند از: آتش در چاله‌ها، صداهایی که باد نیستند، و شکل‌هایی در کنارِ درختان که با نگاهِ مستقیم تکان نمی‌خورند. هیچ افعی‌ای گزارش نمی‌شود — آن از دفترِ هوشنگ است.",
+      "explanation_tg": "Се нишона инҳоянд: оташ дар чоҳакҳо, садоҳое, ки шамол нестанд, ва шаклҳое дар канори дарахтон, ки бо нигоҳи мустақим ҳаракат намекунанд. Ягон мор гузориш намешавад.",
+      "reward": {
+        "xp": 155,
+        "real": 67
+      }
+    },
+    {
+      "id": "tahmuras-h2",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Why does Tahmuras NOT send a fourth scout when the first three return with demon sightings?",
+      "question_fa": "چرا تهمورث هنگامی که سه پیکانِ اول با دیدنِ دیوان برمی‌گردند، پیکانِ چهارمی نمی‌فرستد؟",
+      "question_tg": "Чаро Таҳмурас вақте ки се пайкони аввал бо дидани девон бармегарданд, пайкони чоруме намефиристад?",
+      "answers": [
+        "He has run out of scouts",
+        "He goes himself — he wants the demons to see who holds the cypress club",
+        "He decides the report is false",
+        "He waits for Hushang's blessing before marching"
+      ],
+      "answers_fa": [
+        "پیکانی برایش نمانده",
+        "خودش می‌رود — می‌خواهد دیوان ببینند چه کسی چوبِ سرو را دارد",
+        "تصمیم می‌گیرد گزارش دروغ است",
+        "پیش از حرکت منتظرِ برکتِ هوشنگ می‌ماند"
+      ],
+      "answers_tg": [
+        "Пайконе намондааст",
+        "Худаш меравад — мехоҳад девон бубинанд ки кӣ чӯби сарвро дорад",
+        "Тасмим мегирад, ки гузориш дурӯғ аст",
+        "Пеш аз ҳаракат мунтазири баракати Ҳушанг мемонад"
+      ],
+      "correct_answer": 1,
+      "explanation": "He goes himself — carrying only the cypress club — because he wants the demons to see who holds it. Tahmuras understands that authority must be witnessed, not just reported.",
+      "explanation_fa": "خودش می‌رود — تنها با چوبِ سرو — چون می‌خواهد دیوان ببینند چه کسی آن را دارد. تهمورث می‌فهمد که اقتدار باید شاهد داشته باشد، نه فقط گزارش.",
+      "explanation_tg": "Худаш меравад — танҳо бо чӯби сарв — зеро мехоҳад девон бубинанд ки кӣ онро дорад. Таҳмурас мефаҳмад, ки салоҳият бояд шоҳид дошта бошад, на танҳо гузориш.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "tahmuras-h3",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Three sacred properties of the cypress tree are named in the codex. What are they?",
+      "question_fa": "در فرهنگنامه سه خاصیتِ مقدسِ درختِ سرو نام برده می‌شود. آن‌ها کدامند؟",
+      "question_tg": "Дар кодекс се хосияти муқаддаси дарахти сарв номбар мешаванд. Онҳо кадомҳоянд?",
+      "answers": [
+        "It grows tall, bears fruit in winter, and lives two thousand years",
+        "It grows straight, burns clean, and outlasts almost everything planted beside it",
+        "It is fragrant, speaks in wind, and marks the graves of kings",
+        "It bends without breaking, roots in stone, and gives shade all year"
+      ],
+      "answers_fa": [
+        "بلند می‌رویید، در زمستان میوه می‌دهد و دو هزار سال عمر می‌کند",
+        "مستقیم می‌رویید، پاک می‌سوزد و تقریباً از همه‌چیزی که کنارش کاشته شده دوام می‌آورد",
+        "معطر است، در باد سخن می‌گوید و مزارِ شاهان را نشانه می‌گذارد",
+        "بدونِ شکستن خم می‌شود، در سنگ ریشه می‌دهد و تمامِ سال سایه می‌دهد"
+      ],
+      "answers_tg": [
+        "Баланд мерӯяд, дар зимистон мева медиҳад ва ду ҳазор сол умр мекунад",
+        "Рост мерӯяд, пок месӯзад ва тақрибан аз ҳама чизе, ки дар канораш кошта шудааст, давом меорад",
+        "Хушбӯй аст, дар шамол сухан мегӯяд ва мазори шоҳонро нишона мегузорад",
+        "Бе шикастан хам мешавад, дар санг реша мезанад ва тамоми сол соя медиҳад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Straight growth, clean burning, lasting endurance — the cypress was sacred because it embodied the virtues Ferdowsi prizes: uprightness, purity, and permanence.",
+      "explanation_fa": "رشدِ مستقیم، سوختنِ پاک، دوامِ پایدار — سرو مقدس بود چون ارزش‌هایی را که فردوسی می‌ستاید تجسم می‌بخشد: راستی، پاکی و ماندگاری.",
+      "explanation_tg": "Рушди рост, сӯхтани пок, давоми устувор — сарв муқаддас буд зеро арзишҳоеро, ки Фирдавсӣ меситояд, таҷассум мебахшад: ростӣ, покӣ ва мондагорӣ.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "tahmuras-h4",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "What does Tahmuras do with the clay tablets immediately after the writing lesson ends?",
+      "question_fa": "تهمورث بلافاصله پس از پایانِ درسِ نوشتار با لوح‌های گِلی چه می‌کند؟",
+      "question_tg": "Таҳмурас фавран пас аз поёни дарси навиштан бо лавҳҳои гилин чӣ мекунад?",
+      "answers": [
+        "He seals them in the mountain court for safe-keeping",
+        "He sits and copies each shape until his hands know them, then teaches his children",
+        "He orders scribes to make ten copies and distribute them across Pars",
+        "He burns them after memorising each letter"
+      ],
+      "answers_fa": [
+        "آن‌ها را در درگاهِ کوهستانی برای محافظت مُهر و موم می‌کند",
+        "می‌نشیند و هر شکل را تکرار می‌کند تا دستانش بدانند، سپس به کودکانش می‌آموزد",
+        "به دبیران دستور می‌دهد ده نسخه بسازند و در پارس پخش کنند",
+        "پس از حفظِ هر حرف آن‌ها را می‌سوزاند"
+      ],
+      "answers_tg": [
+        "Онҳоро дар дарвозаи кӯҳистонӣ барои ҳифозат мӯҳр мекунад",
+        "Менишинад ва ҳар шаклро такрор мекунад то дастонаш бидонанд, сипас ба кӯдаконаш меомӯзад",
+        "Ба котибон амр медиҳад даҳ нусха созанд ва дар Порс тақсим кунанд",
+        "Пас аз ёд кардани ҳар ҳарф онҳоро месӯзонад"
+      ],
+      "correct_answer": 1,
+      "explanation": "He sits with the clay tablets and copies each shape until his hands know them, then teaches his children. The king himself does the work — writing is not delegated.",
+      "explanation_fa": "با لوح‌های گِلی می‌نشیند و هر شکل را تکرار می‌کند تا دستانش بدانند، سپس به کودکانش می‌آموزد. خودِ شاه کار را انجام می‌دهد — نوشتار واگذار نمی‌شود.",
+      "explanation_tg": "Бо лавҳҳои гилин менишинад ва ҳар шаклро такрор мекунад то дастонаш бидонанд, сипас ба кӯдаконаш меомӯзад. Худи шоҳ корро мекунад — навиштан вогузор намешавад.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "tahmuras-h5",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The codex says 'Div-band' has two meanings in Persian. What are they?",
+      "question_fa": "فرهنگنامه می‌گوید «دیوبند» در فارسی دو معنا دارد. آن‌ها کدامند؟",
+      "question_tg": "Кодекс мегӯяд «Девбанд» дар форсӣ ду маъно дорад. Онҳо кадомҳоянд?",
+      "answers": [
+        "Demon-killer and demon-rider",
+        "Demon-chainer and demon-bonder (the man who binds the world together)",
+        "Darkness-destroyer and light-bringer",
+        "The one who chains and the one who is chained"
+      ],
+      "answers_fa": [
+        "کشنده‌ی دیو و سوارکارِ دیو",
+        "به‌زنجیرکشنده‌ی دیو و پیوندبخشِ جهان",
+        "نابودکننده‌ی تاریکی و آورنده‌ی روشنایی",
+        "آنکه زنجیر می‌زند و آنکه زنجیر می‌شود"
+      ],
+      "answers_tg": [
+        "Куштани дев ва савории дев",
+        "Банд кунандаи дев ва пайванди ҷаҳон",
+        "Нобудкунандаи торикӣ ва оварандаи равшанӣ",
+        "Онки занҷир мезанад ва онки занҷир мешавад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Band' means both 'chain' and 'bond' in Persian — so Div-band means both the man who chains demons and the man who binds the world together. The title holds Tahmuras' military and civilizing achievements at once.",
+      "explanation_fa": "«بند» در فارسی هم به معنای «زنجیر» است و هم «پیوند» — پس دیوبند هم یعنی کسی که دیوان را به زنجیر می‌کشد و هم کسی که جهان را به هم پیوند می‌دهد.",
+      "explanation_tg": "«Банд» дар форсӣ ҳам маънои «занҷир» дорад ва ҳам «пайванд» — пас Девбанд ҳам яъне кӣ девонро банд мекунад ва ҳам кӣ ҷаҳонро ба ҳам пайванд медиҳад.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "tahmuras-h6",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "What warning does the final scene of Tahmuras give about Jamshid and the farr?",
+      "question_fa": "صحنه‌ی پایانیِ تهمورث چه هشداری درباره‌ی جمشید و فَر می‌دهد؟",
+      "question_tg": "Саҳнаи охирини Таҳмурас чӣ огоҳие дар бораи Ҷамшид ва фарр медиҳад?",
+      "answers": [
+        "Jamshid will refuse to learn the alphabets and lose the farr as punishment",
+        "Jamshid will carry the farr brilliantly for three hundred years then lose it to pride",
+        "Jamshid will give the farr to the demons in exchange for eternal life",
+        "Jamshid will chain Ahriman as Tahmuras did but fail to hold him"
+      ],
+      "answers_fa": [
+        "جمشید از آموختنِ الفبا سر باز می‌زند و به‌عنوانِ مجازات فَر را از دست می‌دهد",
+        "جمشید فَر را درخشان سیصد سال حمل خواهد کرد، سپس آن را به تکبر از دست خواهد داد",
+        "جمشید فَر را در ازای حیاتِ جاودانه به دیوان می‌دهد",
+        "جمشید اهریمن را همانطور که تهمورث کرد به زنجیر می‌کشد اما نمی‌تواند نگهش دارد"
+      ],
+      "answers_tg": [
+        "Ҷамшид аз омӯхтани алифбо саркашӣ мекунад ва ба унвони ҷазо фарр мегирад",
+        "Ҷамшид фаррро дурахшон си сад сол хоҳад бурд, сипас онро ба тавозӯъ аз даст хоҳад дод",
+        "Ҷамшид фаррро дар ивази ҳаёти ҷовидон ба девон медиҳад",
+        "Ҷамшид Аҳриманро мисли Таҳмурас банд мекунад аммо наметавонад нигоҳаш дорад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Jamshid will carry the farr brilliantly for three hundred years then lose it entirely to pride — the divine grace departs when pride replaces wisdom. This is the chronicle's first great tragedy.",
+      "explanation_fa": "جمشید فَر را درخشان سیصد سال حمل خواهد کرد، سپس یکسره با تکبر از دست خواهد داد — موهبتِ الهی وقتی تکبر جایِ خرد را می‌گیرد می‌رود. این اولین تراژدیِ بزرگِ این تاریخ است.",
+      "explanation_tg": "Ҷамшид фаррро дурахшон си сад сол хоҳад бурд, сипас тамоман бо кибр аз даст хоҳад дод.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "tahmuras-h7",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The codex entry on writing says: 'Knowledge is everywhere in this chronicle — but it is rarely ___.' Complete the sentence.",
+      "question_fa": "ورودیِ فرهنگنامه درباره‌ی نوشتار می‌گوید: «دانش در این تاریخ همه‌جاست — اما به‌ندرت ___ است.» جمله را کامل کنید.",
+      "question_tg": "Вурудии кодекс дар бораи навиштан мегӯяд: «Дониш дар ин таърих ҳамаҷост — аммо ба‌ندрат ___ аст.» Ҷумларо пурра кунед.",
+      "answers": [
+        "Safe",
+        "Free",
+        "Useful",
+        "Spoken"
+      ],
+      "answers_fa": [
+        "امن",
+        "رایگان",
+        "مفید",
+        "گفتاری"
+      ],
+      "answers_tg": [
+        "Амн",
+        "Ройгон",
+        "Муфид",
+        "Гуфторӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Knowledge is everywhere in this chronicle — but it is rarely free.' The demons demand their lives; Tahmuras pays with mercy. Every acquisition of knowledge in the Shahnameh has a price.",
+      "explanation_fa": "«دانش در این تاریخ همه‌جاست — اما به‌ندرت رایگان است.» دیوان جانشان را می‌طلبند؛ تهمورث با رحمت می‌پردازد. هر دستیابی به دانش در شاهنامه بهایی دارد.",
+      "explanation_tg": "«Дониш дар ин таърих ҳамаҷост — аммо ба‌ндрат ройгон аст.» Девон ҷонашонро мехоҳанд; Таҳмурас бо раҳмат мепардозад.",
+      "reward": {
+        "xp": 175,
+        "real": 77
+      }
+    },
+    {
+      "id": "tahmuras-h8",
+      "chapter_slug": "tahmuras",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh says Tahmuras' reign is 'brief in the chronicle.' Despite this, what does it say he leaves that is not brief?",
+      "question_fa": "شاهنامه می‌گوید شاهیِ تهمورث «در این تاریخ کوتاه» است. با وجود این، چه چیزی می‌گوید که او به‌جا می‌گذارد که کوتاه نیست؟",
+      "question_tg": "Шоҳнома мегӯяд подшоҳии Таҳмурас «дар ин таърих кӯтоҳ» аст. Бо вуҷуди ин, чӣ чизеро мегӯяд, ки ӯ мегузорад, ки кӯтоҳ нест?",
+      "answers": [
+        "An army that will protect Pars for a thousand years",
+        "Every word written in every tongue that followed carries a debt to the bargain at the demon throne",
+        "The cypress forests planted across the mountain slopes",
+        "The chain that still binds Ahriman beneath Mount Damavand"
+      ],
+      "answers_fa": [
+        "سپاهی که هزار سال از پارس محافظت خواهد کرد",
+        "هر واژه‌ای که به هر زبانی نوشته شده وامدارِ آن معامله در تختِ دیوان است",
+        "جنگل‌های سروی که در سراسرِ دامنه‌های کوه کاشته شدند",
+        "زنجیری که هنوز اهریمن را زیرِ کوهِ دماوند می‌بندد"
+      ],
+      "answers_tg": [
+        "Лашкаре, ки ҳазор сол аз Порс муҳофизат хоҳад кард",
+        "Ҳар вожае, ки ба ҳар забоне навишта шудааст, вомдори он муомила дар тахти девон аст",
+        "Ҷангалҳои сарве, ки дар саросари доманаҳои кӯҳ кошта шуданд",
+        "Занҷире, ки ҳоло Аҳриманро зери Кӯҳи Домовонд мебандад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Every word written in every tongue that followed carries a debt to the bargain at the demon throne. A short reign can leave a permanent world — the Shahnameh's proof that wisdom outlasts power.",
+      "explanation_fa": "هر واژه‌ای که به هر زبانی نوشته شده وامدارِ آن معامله در تختِ دیوان است. شاهی کوتاه می‌تواند جهانی ماندگار بگذارد — اثباتِ شاهنامه که خرد از قدرت ماندگارتر است.",
+      "explanation_tg": "Ҳар вожае, ки ба ҳар забоне навишта шудааст, вомдори он муомила дар тахти девон аст. Подшоҳии кӯтоҳ метавонад ҷаҳони мондагор бигузорад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
     }
   ]
 }
