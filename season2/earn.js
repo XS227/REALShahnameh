@@ -52,36 +52,72 @@
     { real: 3500, gems: 1 },  // day 7: gem bonus
   ];
 
+  /* Platform brand palettes for task cards */
+  const PLATFORM_BRAND = {
+    telegram: { bg: 'rgba(40,168,234,.14)', border: 'rgba(40,168,234,.38)', color: '#29a8ea' },
+    x:        { bg: 'rgba(255,255,255,.07)', border: 'rgba(255,255,255,.2)',  color: '#e7e7e7' },
+    tiktok:   { bg: 'rgba(255,0,80,.10)',    border: 'rgba(255,0,80,.28)',    color: '#ff2d55' },
+    youtube:  { bg: 'rgba(255,0,0,.10)',     border: 'rgba(255,0,0,.28)',     color: '#ff4040' },
+    dyor:     { bg: 'rgba(74,216,166,.10)',  border: 'rgba(74,216,166,.32)', color: '#4ad8a6' },
+  };
+
   const SOCIAL_TASKS = [
     {
-      id: 'follow_telegram',
+      id: 'follow_tg_channel',
+      platform: 'telegram',
       label: 'Follow Official Channel',
-      icon: '📣',
-      url: 'https://t.me/real_shahnameh',
-      reward_real: 300, reward_gems: 0,
+      sublabel: '@Shahnameh_news',
+      icon: '✈',
+      url: 'https://t.me/Shahnameh_news',
+      reward_real: 2500, reward_gems: 0,
     },
     {
-      id: 'join_channel',
-      label: 'Join REAL Updates',
-      icon: '📰',
-      url: 'https://t.me/realshahnameh',
-      reward_real: 200, reward_gems: 0,
+      id: 'join_tg_support',
+      platform: 'telegram',
+      label: 'Join Persian Community',
+      sublabel: '@shahnameh_persian',
+      icon: '✈',
+      url: 'https://t.me/shahnameh_persian',
+      reward_real: 2500, reward_gems: 0,
     },
     {
-      id: 'follow_twitter',
-      label: 'Follow on X / Twitter',
-      icon: '🐦',
-      url: 'https://x.com/RealShahnameh',
-      reward_real: 150, reward_gems: 2,
+      id: 'follow_x',
+      platform: 'x',
+      label: 'Follow on X',
+      sublabel: '@shahnamehgamefi',
+      icon: '𝕏',
+      url: 'https://x.com/shahnamehgamefi',
+      reward_real: 3000, reward_gems: 0,
     },
     {
-      id: 'share_story',
-      label: 'Share Your Chronicle',
-      icon: '📜',
-      url: '', // set dynamically from invite link
-      reward_real: 250, reward_gems: 1,
+      id: 'follow_tiktok',
+      platform: 'tiktok',
+      label: 'Follow REAL Page',
+      sublabel: '@shahnamehgamefi227',
+      icon: '♬',
+      url: 'https://www.tiktok.com/@shahnamehgamefi227',
+      reward_real: 2000, reward_gems: 0,
+    },
+    {
+      id: 'subscribe_youtube',
+      platform: 'youtube',
+      label: 'Subscribe to Channel',
+      sublabel: '@shahnamehgamefi',
+      icon: '▶',
+      url: 'https://youtube.com/@shahnamehgamefi',
+      reward_real: 3000, reward_gems: 0,
+    },
+    {
+      id: 'like_dyor',
+      platform: 'dyor',
+      label: 'Like the DApp on DYOR.io',
+      sublabel: 'games/shahnameh',
+      icon: '👍',
+      url: 'https://dyor.io/dapps/games/shahnameh',
+      reward_real: 3000, reward_gems: 0,
     },
   ];
+  /* Total: 2500+2500+3000+2000+3000+3000 = 16,000 REAL */
 
   const PARTNERS = [
     {
@@ -111,10 +147,30 @@
   ];
 
   const MILESTONES = [
-    { threshold: 3,   real: 500,   gems: 1,  farr: 0 },
-    { threshold: 10,  real: 2000,  gems: 3,  farr: 0 },
-    { threshold: 25,  real: 5000,  gems: 5,  farr: 1 },
-    { threshold: 100, real: 15000, gems: 10, farr: 2 },
+    {
+      threshold: 3,
+      real: 1000, gems: 0, farr: 0,
+      chest: 'founder_chest',                          // vault item
+      label: '🎁 1,000 REAL + Founder Chest',
+    },
+    {
+      threshold: 10,
+      real: 3000, gems: 0, farr: 0,
+      hero_unlock: 'commander_card',                   // hero collection unlock flag
+      label: '⚔ 3,000 REAL + Commander Card',
+    },
+    {
+      threshold: 25,
+      real: 8000, gems: 0, farr: 0,
+      multiplier_asset: 'airdrop_multiplier_s2',       // persisted multiplier asset
+      label: '🪂 8,000 REAL + Airdrop Multiplier',
+    },
+    {
+      threshold: 100,
+      real: 25000, gems: 0, farr: 0,
+      badge: 'shahnameh_immortals',                    // profile badge flag
+      label: '👑 25,000 REAL + Immortals Badge',
+    },
   ];
 
   /* ── Daily Check-in ──────────────────────────────────────────────────── */
@@ -234,22 +290,30 @@
     if (!el) return;
 
     const done = completedTasks();
+    const isFa = window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
+    const pd   = (n) => isFa && window.RealI18N && window.RealI18N.formatNumber
+      ? window.RealI18N.formatNumber(n) : n.toLocaleString();
 
     const rows = SOCIAL_TASKS.map(task => {
-      const isDone = done.includes(task.id);
-      const taskUrl = task.id === 'share_story' ? shareUrl : task.url;
+      const isDone  = done.includes(task.id);
+      const taskUrl = task.url;
+      const brand   = PLATFORM_BRAND[task.platform] || {};
+      const icoStyle = brand.bg
+        ? `style="background:${brand.bg};border:1px solid ${brand.border};color:${brand.color}"`
+        : '';
       const rewardLabel = task.reward_real
-        ? `+${task.reward_real} ◆${task.reward_gems ? ' · +' + task.reward_gems + ' 💎' : ''}`
-        : (task.reward_gems ? `+${task.reward_gems} 💎` : '');
+        ? `+${pd(task.reward_real)} ◆`
+        : '';
 
       const btn = isDone
         ? `<button class="task-btn task-done" disabled>✓ Claimed</button>`
         : `<button class="task-btn task-go" data-task-id="${task.id}" data-task-url="${taskUrl || '#'}">Go →</button>`;
 
       return `<article class="card task-row" data-task="${task.id}">
-        <span class="task-ico">${task.icon}</span>
+        <span class="task-ico" ${icoStyle}>${task.icon}</span>
         <div class="task-body">
           <div class="task-label">${task.label}</div>
+          <div class="task-sublabel" style="font-size:10px;color:var(--muted);letter-spacing:.4px;margin-top:1px;">${task.sublabel || ''}</div>
           <div class="task-reward">${rewardLabel}</div>
         </div>
         <div class="task-action">${btn}</div>
@@ -258,7 +322,6 @@
 
     el.innerHTML = rows;
 
-    /* Attach click handlers */
     el.querySelectorAll('.task-go').forEach(btn => {
       btn.addEventListener('click', () => startTask(btn.dataset.taskId, btn.dataset.taskUrl));
     });
@@ -608,13 +671,47 @@
       if (window.RealSync) window.RealSync.syncBalance();
     }
 
+    /* ── Persist extra milestone assets ── */
+    const ms = MILESTONES.find(m => m.threshold === threshold);
+    if (ms) {
+      try {
+        /* Vault: chest item */
+        if (ms.chest) {
+          const items = JSON.parse(localStorage.getItem('real_items_v1') || '{}');
+          items[ms.chest] = true;
+          localStorage.setItem('real_items_v1', JSON.stringify(items));
+        }
+        /* Hero unlock flag */
+        if (ms.hero_unlock) {
+          localStorage.setItem(`real_hero_unlock_${ms.hero_unlock}`, '1');
+        }
+        /* Airdrop multiplier asset */
+        if (ms.multiplier_asset) {
+          localStorage.setItem(`real_asset_${ms.multiplier_asset}`, '1');
+        }
+        /* Profile badge */
+        if (ms.badge) {
+          localStorage.setItem(`real_badge_${ms.badge}`, '1');
+          /* Also push into Player badges array */
+          if (window.RealPlayer) {
+            const p = window.RealPlayer.get();
+            const badges = Array.from(new Set([...(p.badges || []), ms.badge]));
+            window.RealPlayer.set({ badges });
+          }
+        }
+      } catch (_) {}
+      /* Dispatch balance update so home treasury reflects new REAL */
+      try { window.dispatchEvent(new CustomEvent('balanceUpdate')); } catch (_) {}
+    }
+
     const r = data.rewards;
+    const msLabel = ms ? ms.label : '';
     const earned = [
       r.real ? `+${r.real} ◆` : '',
       r.gems ? `+${r.gems} 💎` : '',
       r.farr ? `+${r.farr} ✦` : '',
     ].filter(Boolean).join(' · ');
-    showToast(`Milestone! ${earned}`);
+    showToast(msLabel || `Milestone! ${earned}`);
     fireBurst(`${threshold} Warriors!`);
 
     const verifiedCount = parseInt(localStorage.getItem('real_verified_referral_count') || '0', 10);

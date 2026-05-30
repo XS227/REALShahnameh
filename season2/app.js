@@ -343,6 +343,119 @@
   // expose for console/demo only
   if (typeof window !== "undefined") window.RealPlayer = Player;
 
+  /* ── Referral start_param attribution ──────────────────────────────────
+     Telegram passes ?start=warrior_XXXXXXXX as start_param on deep-links.
+     Capture it once on first visit, store for profile and auto-clan flow. */
+  (() => {
+    try {
+      const sp = window.Telegram && window.Telegram.WebApp &&
+                 window.Telegram.WebApp.initDataUnsafe &&
+                 window.Telegram.WebApp.initDataUnsafe.start_param;
+      if (!sp) return;
+      if (/^warrior_\d+$/.test(sp)) {
+        const inviterId = sp.replace('warrior_', '');
+        /* Store only on first encounter so we don't overwrite on each boot */
+        if (!localStorage.getItem('real_inviter_id')) {
+          localStorage.setItem('real_inviter_id',  inviterId);
+          localStorage.setItem('real_inviter_code', sp);
+          /* Fetch inviter name + clan from API (best-effort, fire-and-forget) */
+          fetch('/api/season2/user/me?' + new URLSearchParams({ telegram_id: inviterId }), { cache: 'no-store' })
+            .then(r => r.ok ? r.json() : null)
+            .then(data => {
+              if (!data || data.status !== 1 || !data.user) return;
+              const u = data.user;
+              const name = u.first_name || ('Warrior #' + inviterId);
+              localStorage.setItem('real_inviter_name', name);
+              /* Auto-clan prompt: show once if inviter has a clan */
+              if (u.clan_id && !localStorage.getItem('real_clan_prompt_shown')) {
+                localStorage.setItem('real_inviter_clan_id',   u.clan_id);
+                localStorage.setItem('real_inviter_clan_name', u.clan_name || 'The Clan');
+                showClanJoinPrompt(name, u.clan_id, u.clan_name || 'Alliance');
+              }
+            })
+            .catch(() => {});
+        }
+      } else if (/^clan_/.test(sp)) {
+        /* Direct clan invite link — store for social.js to process */
+        if (!localStorage.getItem('real_clan_invite_id')) {
+          localStorage.setItem('real_clan_invite_id', sp.replace('clan_', ''));
+        }
+      }
+    } catch (_) {}
+  })();
+
+  /* ── Auto-clan join prompt ─────────────────────────────────────────── */
+  const showClanJoinPrompt = (inviterName, clanId, clanName) => {
+    localStorage.setItem('real_clan_prompt_shown', '1');
+
+    const overlay = document.createElement('div');
+    overlay.id = 'clan-join-overlay';
+    overlay.style.cssText = [
+      'position:fixed;inset:0;z-index:9999',
+      'background:rgba(4,5,11,.92)',
+      'backdrop-filter:blur(12px)',
+      '-webkit-backdrop-filter:blur(12px)',
+      'display:flex;align-items:center;justify-content:center',
+      'padding:24px',
+    ].join(';');
+
+    const tl = (k, fb) => (window.RealI18N && window.RealI18N.t) ? window.RealI18N.t(k) : fb;
+
+    overlay.innerHTML = `
+      <div style="max-width:320px;width:100%;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;">
+        <div style="font-size:52px;line-height:1;filter:drop-shadow(0 0 24px rgba(244,197,107,.6));">⚔</div>
+        <h3 style="margin:0;font-size:20px;font-weight:900;
+          background:linear-gradient(118deg,#fff 0%,#ffe8c0 55%,#f4c56b 100%);
+          -webkit-background-clip:text;background-clip:text;color:transparent;">
+          ${tl('clan_prompt_title', 'Alliance Invitation!')}
+        </h3>
+        <p style="margin:0;font-size:13px;line-height:1.6;color:#d8d2c0;">
+          <strong style="color:var(--gold);">${inviterName}</strong>
+          ${tl('clan_prompt_msg', 'has invited you to join their clan!')}
+          <br><strong style="color:rgba(244,197,107,.8);">${clanName}</strong>
+        </p>
+        <button id="clan-prompt-join" style="
+          width:100%;padding:13px;border:none;border-radius:14px;cursor:pointer;
+          background:linear-gradient(135deg,#f4c56b,#d4a450);
+          color:#07080f;font-size:14px;font-weight:800;
+          box-shadow:0 4px 20px rgba(244,197,107,.4);">
+          ${tl('clan_prompt_join', '⚔ Join the Clan')}
+        </button>
+        <button id="clan-prompt-skip" style="
+          background:none;border:1px solid rgba(255,255,255,.15);border-radius:10px;
+          color:var(--muted,#6c7287);font-size:12px;padding:9px 20px;cursor:pointer;width:100%;">
+          ${tl('clan_prompt_skip', 'Skip for now')}
+        </button>
+      </div>`;
+
+    document.body.appendChild(overlay);
+
+    const close = () => overlay.remove();
+
+    overlay.querySelector('#clan-prompt-skip').addEventListener('click', close);
+
+    overlay.querySelector('#clan-prompt-join').addEventListener('click', async () => {
+      const btn = overlay.querySelector('#clan-prompt-join');
+      btn.disabled = true; btn.textContent = '…';
+      try {
+        const tgU = window.Telegram && window.Telegram.WebApp &&
+                    window.Telegram.WebApp.initDataUnsafe &&
+                    window.Telegram.WebApp.initDataUnsafe.user;
+        if (!tgU || !tgU.id) { close(); return; }
+        const r = await fetch('/api/season2/clan/apply', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ telegram_id: String(tgU.id), clan_id: clanId }),
+          keepalive: true,
+        }).then(res => res.ok ? res.json() : null).catch(() => null);
+        toast(r && r.status === 1
+          ? tl('clan_prompt_applied', '✓ Application sent! The leader will accept you soon.')
+          : tl('clan_prompt_error', 'Could not apply — you may already be in a clan.'));
+      } catch (_) {}
+      close();
+    });
+  };
+
   /* ── Sovereign Economy ─────────────────────────────────────────────────
      VIP Level: every 1000 XP earned = +1 VIP Level.
      Passive Zar income: heroes generate Zar/hr; tick every 60s,

@@ -135,6 +135,22 @@
     }
   };
 
+  /* ── Inviter attribution ─────────────────────────────────────────────── */
+  const renderInviter = () => {
+    const el = document.getElementById('profile-inviter');
+    if (!el) return;
+    try {
+      const inviterName = localStorage.getItem('real_inviter_name');
+      const inviterId   = localStorage.getItem('real_inviter_id');
+      if (inviterName || inviterId) {
+        const label = (window.RealI18N && window.RealI18N.t)
+          ? window.RealI18N.t('invited_by_label') : 'Invited by';
+        el.textContent = `${label}: ${inviterName || ('Warrior #' + inviterId)}`;
+        el.style.display = '';
+      }
+    } catch {}
+  };
+
   /* ── Live ZAR mining counter ──────────────────────────────────────────── */
   let _zarTimer = null;
 
@@ -280,6 +296,7 @@
       };
       renderBadges(fakeUser);
     }
+    renderInviter();
   };
 
   /* ── Main load ────────────────────────────────────────────────────────── */
@@ -321,6 +338,7 @@
     startMiningCounter({ zar_per_minute: _zarMin, zar_per_hour: _zarHr, total_zar: _zarStart });
     renderStats(u);
     renderBadges(u);
+    renderInviter();
   };
 
   if (document.readyState === 'loading') {

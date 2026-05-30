@@ -294,6 +294,15 @@
       gate_go_prev: "Рафтан ба «{chapter}»",
       gate_back_journey: "← Бозгашт ба Сафар",
 
+      /* Referral & clan onboarding */
+      invited_by_label:   "Даъватшуда аз ҷониби",
+      clan_prompt_title:  "Даъватномаи Иттиҳод!",
+      clan_prompt_msg:    "шуморо ба клани худ даъват кардааст!",
+      clan_prompt_join:   "⚔ Пайвастан ба клан",
+      clan_prompt_skip:   "Баъдтар",
+      clan_prompt_applied:"✓ Дархост фиристода шуд! Роҳбар шуморо қабул хоҳад кард.",
+      clan_prompt_error:  "Дархост имконнопазир — эҳтимолан аллакай дар клане ҳастед.",
+
       /* Quiz */
       quiz_question_of: "Саволи {i} аз {n}",
       quiz_no_published: "Ҳанӯз барои ин боб имтиҳоне нашр нашуда.",

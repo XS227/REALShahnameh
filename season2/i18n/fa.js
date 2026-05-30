@@ -295,6 +295,15 @@
       gate_go_prev: "رفتن به «{chapter}»",
       gate_back_journey: "← بازگشت به سفر",
 
+      /* Referral & clan onboarding */
+      invited_by_label:   "دعوت‌شده توسط",
+      clan_prompt_title:  "دعوت‌نامه‌ی اتحاد!",
+      clan_prompt_msg:    "شما را دعوت کرده تا به کلانشان بپیوندید!",
+      clan_prompt_join:   "⚔ پیوستن به کلان",
+      clan_prompt_skip:   "بعداً",
+      clan_prompt_applied:"✓ درخواست ارسال شد! رهبر شما را قبول خواهد کرد.",
+      clan_prompt_error:  "نمی‌توان درخواست داد — احتمالاً قبلاً در کلانی هستید.",
+
       /* Quiz */
       quiz_question_of: "پرسش {i} از {n}",
       quiz_no_published: "هنوز آزمونی برای این فصل منتشر نشده.",

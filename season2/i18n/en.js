@@ -293,6 +293,15 @@
       gate_go_prev: "Go to \"{chapter}\"",
       gate_back_journey: "← Back to Journey",
 
+      /* Referral & clan onboarding */
+      invited_by_label:   "Invited by",
+      clan_prompt_title:  "Alliance Invitation!",
+      clan_prompt_msg:    "has invited you to join their clan!",
+      clan_prompt_join:   "⚔ Join the Clan",
+      clan_prompt_skip:   "Skip for now",
+      clan_prompt_applied:"✓ Application sent! The leader will accept you soon.",
+      clan_prompt_error:  "Could not apply — you may already be in a clan.",
+
       /* Quiz */
       quiz_question_of: "Question {i} of {n}",
       quiz_no_published: "No quiz published for this chapter yet.",
