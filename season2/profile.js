@@ -56,8 +56,9 @@
       farr:    Math.max(u.farr    || 0, p.farr    || 0),
       gems:    Math.max(u.gems    || 0, p.gems    || 0),
       balance: Math.max(u.real_balance || 0, p.balance || 0),
-      // use server values for time-based fields (streak, referrals, level)
-      level:         u.level                   || p.level      || 1,
+      // Derive level from XP (same formula as home.js) — DB 'level' field
+      // is initialized to 1 at signup and never updated from XP changes.
+      level:         Math.max(1, Math.floor(Math.max(u.xp || 0, p.xp || 0) / 1000)),
       daily_streak:  u.daily_streak            || p.dailyStreak || 1,
       verified_referral_count: u.verified_referral_count || 0,
     };
@@ -76,7 +77,7 @@
     { id: 'rich_warrior',  icon: null,  nameKey: 'ach_rich_name',         descKey: 'ach_rich_desc',
       tokenImg: '/assets/images/tokens/realtoken.png',
       check: u => Math.max(u.max_real_balance || 0, u.balance || u.real_balance || 0) >= 1_000_000 },
-    { id: 'legend',        icon: '👑',  nameKey: 'ach_legend_name',       descKey: 'ach_legend_desc',       check: u => (u.level || 1) >= 10 },
+    { id: 'legend',        icon: '👑',  nameKey: 'ach_legend_name',       descKey: 'ach_legend_desc',       check: u => Math.floor((u.xp || 0) / 1000) >= 10 },
   ];
 
   /* ── Renderers ────────────────────────────────────────────────────────── */
@@ -144,10 +145,11 @@
     const el = document.getElementById('stats-grid');
     if (!el) return;
     const inClan = !!(u.clan_id || (_clanData && _clanData.clan_id));
-    const level  = u.level || 1;
+    const xp     = u.xp || 0;
+    /* Level is derived from XP — DB 'level' field is never updated from XP */
+    const level  = Math.max(1, Math.floor(xp / 1000));
     const streak = u.daily_streak || 1;
     const refs   = u.verified_referral_count || 0;
-    const xp     = u.xp || 0;
     const stats = [
       { ico: '⭐', lbl: t('stat_xp_lbl'),      val: fmtN(xp),    bonus: inClan ? t('stat_clan_bonus_tag') : null },
       { ico: '🏆', lbl: t('stat_level_lbl'),    val: t('stat_level_val', { n: isFa() ? pd(level) : level }), bonus: null },
@@ -183,6 +185,68 @@
     }).join('');
   };
 
+  /* ── Clan photo upload — standalone handler, survives re-renders ─────── */
+  /* Uses a persistent <input> appended once to body so it is never
+     replaced when renderClan() re-renders the clan card HTML. */
+  let _clanUploadInput = null;
+
+  const getClanUploadInput = () => {
+    if (!_clanUploadInput) {
+      _clanUploadInput = document.createElement('input');
+      _clanUploadInput.type = 'file';
+      _clanUploadInput.accept = 'image/*';
+      _clanUploadInput.style.cssText = 'position:fixed;left:-9999px;opacity:0;';
+      _clanUploadInput.id = 'clan-photo-input-persistent';
+      document.body.appendChild(_clanUploadInput);
+
+      _clanUploadInput.addEventListener('change', async () => {
+        const file = _clanUploadInput.files && _clanUploadInput.files[0];
+        _clanUploadInput.value = ''; // reset so same file can be reselected
+        if (!file) return;
+
+        const myId = String((_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
+        if (!myId) { _showToast('Could not identify user. Open via Telegram.'); return; }
+
+        /* Show loading state on the upload button */
+        const uploadLabel = document.getElementById('clan-upload-label');
+        if (uploadLabel) { uploadLabel.textContent = '⏳'; uploadLabel.style.pointerEvents = 'none'; }
+
+        try {
+          const fd = new FormData();
+          fd.append('photo', file);
+          fd.append('telegram_id', myId);
+
+          const r = await fetch('/api/season2/clan/upload-photo', { method: 'POST', body: fd });
+          const d = await r.json();
+
+          if (d.status === 1 && d.url) {
+            _clanData = { ..._clanData, clan_photo: d.url };
+            renderClan(_clanData);
+            _showToast('✓ Clan photo updated!');
+          } else {
+            _showToast(d.error === 'not_leader' ? 'Only the clan leader can change the photo.'
+                     : d.error === 'not_in_clan' ? 'You must be in a clan first.'
+                     : `Upload failed: ${d.error || 'unknown error'}`);
+            if (uploadLabel) { uploadLabel.textContent = '📷'; uploadLabel.style.pointerEvents = ''; }
+          }
+        } catch (err) {
+          _showToast('Network error — could not upload photo.');
+          if (uploadLabel) { uploadLabel.textContent = '📷'; uploadLabel.style.pointerEvents = ''; }
+        }
+      });
+    }
+    return _clanUploadInput;
+  };
+
+  const _showToast = (msg) => {
+    const el = document.querySelector('[data-toast]');
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(_showToast._t);
+    _showToast._t = setTimeout(() => el.classList.remove('show'), 3000);
+  };
+
   const renderClan = (clan) => {
     const el = document.getElementById('profile-clan-card');
     if (!el) return;
@@ -202,7 +266,7 @@
     }
 
     const myId      = String((_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
-    const isLeader  = clan.leader_id === myId;
+    const isLeader  = !!(clan.leader_id && myId && clan.leader_id === myId);
     const memberCount = clan.member_count || 1;
     const zarHr     = clan.total_zar_per_hour || 0;
     const earned    = clan.total_real_earned  || 0;
@@ -212,11 +276,11 @@
       ? `<img src="${escHtml(photoSrc)}" class="clan-photo-img" alt="" onerror="this.style.display='none'">`
       : `<div class="clan-badge-large">${clan.clan_name.charAt(0).toUpperCase()}</div>`;
 
-    const uploadBtn = isLeader ? `
-      <label class="clan-photo-upload-btn" title="${t('clan_photo_upload_lbl')}">
-        📷
-        <input type="file" accept="image/*" style="display:none;" id="clan-photo-input">
-      </label>` : '';
+    /* Upload button triggers the persistent input (not replaced on re-render) */
+    const uploadBtn = isLeader
+      ? `<label id="clan-upload-label" class="clan-photo-upload-btn"
+           title="${t('clan_photo_upload_lbl')}" style="cursor:pointer;">📷</label>`
+      : '';
 
     el.className = 'card clan-founded-card';
     el.innerHTML = `
@@ -252,24 +316,15 @@
         ${t('your_clan_header')} →
       </a>`;
 
-    /* Wire photo upload for leader */
+    /* Wire the upload label to trigger the persistent input element */
     if (isLeader) {
-      const inp = el.querySelector('#clan-photo-input');
-      if (inp) inp.addEventListener('change', async () => {
-        const file = inp.files && inp.files[0];
-        if (!file) return;
-        const fd = new FormData();
-        fd.append('photo', file);
-        fd.append('telegram_id', myId);
-        try {
-          const r = await fetch('/api/season2/clan/upload-photo', { method: 'POST', body: fd });
-          const d = await r.json();
-          if (d.status === 1 && d.url) {
-            _clanData = { ..._clanData, clan_photo: d.url };
-            renderClan(_clanData);
-          }
-        } catch {}
-      });
+      const label = el.querySelector('#clan-upload-label');
+      if (label) {
+        label.addEventListener('click', (e) => {
+          e.preventDefault();
+          getClanUploadInput().click();
+        });
+      }
     }
   };
 
