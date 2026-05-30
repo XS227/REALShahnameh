@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>Ancient Timeline · REAL Shahnameh</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202605302800" />
+  <link rel="stylesheet" href="style.css?v=202605303000" />
 </head>
 <body>
 <main class="app">
@@ -40,6 +40,7 @@
 <script src="app.js?v=202605302600"></script>
 <script src="resources.js?v=202605302400"></script>
 <script src="audio.js?v=202605272200"></script>
+<script src="sync.js?v=202605302200"></script>
 <script src="cinematic.js?v=202605272200"></script>
 <script src="hakim-orb.js?v=202605272200"></script>
 <script>
@@ -280,33 +281,44 @@
   /* ── Build timeline nodes ─────────────────────────────────────────────── */
   const track = document.getElementById("tl-track");
 
-  NODES.forEach((node, idx) => {
-    const status = getNodeStatus(node);
-    const statusLabel = t(
-      status === "completed" ? "tl_status_completed" : status === "unlocked" ? "tl_status_unlocked" : "tl_status_locked",
-      status
-    );
-    const dotContent = status === "completed" ? "✓" : String(idx + 1);
+  const renderTimeline = () => {
+    track.innerHTML = "";
+    const currentLoreState = getLoreState();
 
-    const div = document.createElement("div");
-    div.className = `tl-node ${status} cinematic-enter`;
-    div.style.animationDelay = `${0.06 + idx * 0.04}s`;
-    div.innerHTML = `
-      <div class="tl-dot">${dotContent}</div>
-      <div class="tl-card">
-        <span class="tl-status-chip">${statusLabel}</span>
-        <div class="tl-era">${node.era}</div>
-        <div class="tl-title">${node.title} <span style="font-weight:500; font-size:12px; color:var(--muted);">· ${node.subtitle}</span></div>
-        <p class="tl-lore">${node.lore}</p>
-        <div class="tl-reward">${node.reward}</div>
-        <div class="tl-actions">
-          <button class="tl-ask-hakim" data-ask="${encodeURIComponent(node.ask)}">🤖 ${t("tl_ask_hakim", "Ask Hakim")}</button>
-          ${node.hasHiddenLore ? `<button class="tl-lore-pill" data-lore-trigger="${node.id}">🔒 ${t("tl_hidden_lore", "Hidden Lore")}</button>` : ""}
+    NODES.forEach((node, idx) => {
+      const status = getNodeStatus(node);
+      const statusLabel = t(
+        status === "completed" ? "tl_status_completed" : status === "unlocked" ? "tl_status_unlocked" : "tl_status_locked",
+        status
+      );
+      const dotContent = status === "completed" ? "✓" : String(idx + 1);
+      const loreUnlocked = HIDDEN_LORES.filter(l => l.trigger === node.id).every(l => currentLoreState[l.id]);
+
+      const div = document.createElement("div");
+      div.className = `tl-node ${status}`;
+      div.innerHTML = `
+        <div class="tl-dot">${dotContent}</div>
+        <div class="tl-card">
+          <span class="tl-status-chip">${statusLabel}</span>
+          <div class="tl-era">${node.era}</div>
+          <div class="tl-title">${node.title} <span style="font-weight:500; font-size:12px; color:var(--muted);">· ${node.subtitle}</span></div>
+          <p class="tl-lore">${node.lore}</p>
+          <div class="tl-reward">${node.reward}</div>
+          <div class="tl-actions">
+            <button class="tl-ask-hakim" data-ask="${encodeURIComponent(node.ask)}">🤖 ${t("tl_ask_hakim", "Ask Hakim")}</button>
+            ${node.hasHiddenLore ? `<button class="tl-lore-pill${loreUnlocked ? " unlocked" : ""}" data-lore-trigger="${node.id}">${loreUnlocked ? "✦" : "🔒"} ${t("tl_hidden_lore", "Hidden Lore")}</button>` : ""}
+          </div>
         </div>
-      </div>
-    `;
-    track.appendChild(div);
-  });
+      `;
+      track.appendChild(div);
+    });
+  };
+
+  renderTimeline();
+
+  /* Re-render whenever player state syncs (chapter completions, XP, etc.) */
+  window.addEventListener("shahnama:state_sync", renderTimeline);
+  window.addEventListener("balanceUpdate", renderTimeline);
 
   /* ── Ask Hakim button events ──────────────────────────────────────────── */
   track.addEventListener("click", (e) => {
@@ -390,12 +402,8 @@
       revealCard();
     }
 
-    // update the lore pill on the timeline node if present
-    const lorePill = track.querySelector(`[data-lore-trigger="${lore.trigger}"]`);
-    if (lorePill) {
-      lorePill.classList.add("unlocked");
-      lorePill.innerHTML = `✦ ${t("tl_hidden_lore", "Hidden Lore")}`;
-    }
+    // Re-render timeline nodes so lore pill updates immediately
+    renderTimeline();
 
     try {
       if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.HapticFeedback) {
@@ -404,17 +412,6 @@
     } catch {}
   });
 
-  /* ── Mark already-unlocked lore pills ────────────────────────────────── */
-  const currentState = getLoreState();
-  HIDDEN_LORES.forEach((lore) => {
-    if (currentState[lore.id]) {
-      const pill = track.querySelector(`[data-lore-trigger="${lore.trigger}"]`);
-      if (pill) {
-        pill.classList.add("unlocked");
-        pill.innerHTML = `✦ ${t("tl_hidden_lore", "Hidden Lore")}`;
-      }
-    }
-  });
 
 })();
 </script>
