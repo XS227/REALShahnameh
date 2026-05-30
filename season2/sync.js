@@ -40,7 +40,7 @@
   /* ── Offline bonus banner ──────────────────────────────────────────── */
   const _showOfflineBonus = (zarEarned) => {
     if (document.getElementById('real-offline-bonus')) return;
-    const fmt = (n) => n >= 1000 ? (n / 1000).toFixed(1) + 'K' : Math.round(n).toString();
+    const fmt = (n) => (window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(n) : String(Math.round(n));
     const el = document.createElement('div');
     el.id = 'real-offline-bonus';
     el.innerHTML =

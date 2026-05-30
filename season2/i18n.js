@@ -41,6 +41,39 @@
     return getLang() === "fa" ? toPersianDigits(s) : s;
   };
 
+  /* ── compactNumber(n) — locale-aware compact formatter ───────────────
+     EN:  1200 → "1.2K"  /  1500000 → "1.5M"
+     FA:  1200 → "۱.۲ هزار"  /  1500000 → "۱.۵ ملیون"
+     TG:  1200 → "1.2 ҳазор"  /  1500000 → "1.5 миллион"          */
+  const compactNumber = (n) => {
+    n = Number(n) || 0;
+    const lang  = getLang();
+    const dict  = (LOCALES()[lang] || (LOCALES().en) || {});
+    const isFaLang = lang === "fa";
+    const useFull  = lang === "fa" || lang === "tg"; // word suffix with space
+
+    let val, sfx;
+    if (n >= 1_000_000) {
+      val = (n / 1_000_000).toFixed(1).replace(/\.0$/, "");
+      sfx = dict.num_million || "M";
+    } else if (n >= 1_000) {
+      val = (n / 1_000).toFixed(1).replace(/\.0$/, "");
+      sfx = dict.num_thousand || "K";
+    } else {
+      const s = String(Math.floor(n));
+      return isFaLang ? toPersianDigits(s) : s;
+    }
+
+    const out = useFull ? (val + " " + sfx) : (val + sfx);
+    return isFaLang ? toPersianDigits(out) : out;
+  };
+
+  /* currencyName() — "REAL" in EN/TG, "ریال" in FA */
+  const currencyName = () => {
+    const dict = (LOCALES()[getLang()] || (LOCALES().en) || {});
+    return dict.currency_name || "REAL";
+  };
+
   /* =========================================================
      t(key, vars?) — look up by current lang, fall back to EN,
      finally fall back to the key itself. Supports {placeholder}
@@ -201,7 +234,7 @@
   };
 
   window.RealI18N = {
-    t, formatNumber, formatPercent, toPersianDigits,
+    t, formatNumber, compactNumber, currencyName, formatPercent, toPersianDigits,
     getLang, applyLocale, pickLocalized, locField,
     SUPPORTED,
     STRINGS: stringsAccessor,

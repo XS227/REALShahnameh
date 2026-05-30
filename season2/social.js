@@ -36,16 +36,10 @@
   const fmtN_ = (n) => (window.RealI18N && window.RealI18N.formatNumber)
     ? window.RealI18N.formatNumber(Number(n) || 0) : String(Number(n) || 0);
 
-  const fmtN = (n) => {
-    n = Number(n) || 0;
-    const isFa = window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
-    const pd   = (s) => isFa && window.RealI18N && window.RealI18N.toPersianDigits ? window.RealI18N.toPersianDigits(s) : s;
-    if (n >= 1_000_000) return pd((n / 1_000_000).toFixed(1).replace(/\.0$/, '')) + 'M';
-    if (n >= 1_000)     return isFa
-      ? pd((n / 1_000).toFixed(1).replace(/\.0$/, '')) + ' هزار'
-      : (n / 1_000).toFixed(1).replace(/\.0$/, '') + 'K';
-    return pd(String(Math.round(n)));
-  };
+  const fmtN = (n) =>
+    (window.RealI18N && window.RealI18N.compactNumber)
+      ? window.RealI18N.compactNumber(n)
+      : String(Number(n) || 0);
 
   const relTime = (ts) => {
     const s = Math.max(0, Math.floor((Date.now() - ts) / 1000));
@@ -55,7 +49,7 @@
     return t('time_day_tpl', { n: fmtN_(Math.floor(s / 86400)) });
   };
 
-  const displayName = (u) => u.first_name || 'Warrior';
+  const displayName = (u) => u.first_name || t('fallback_username', 'Warrior');
 
   const fmtZar = (n) => fmtN(n);
 
@@ -99,7 +93,7 @@
   const renderLb = (panel, type, data) => {
     if (!panel) return;
     if (!data || data.status !== 1) {
-      panel.innerHTML = '<p class="clan-empty">Could not load leaderboard.</p>';
+      panel.innerHTML = `<p class="clan-empty">${t('loading_text','Could not load leaderboard.')}</p>`;
       return;
     }
 
@@ -148,7 +142,7 @@
         <div class="lb-row lb-me" style="background:rgba(244,197,107,.06);">
           <span class="lb-rank">${fmtN_(myRank)}</span>
           <div>
-            <div class="lb-name">${t('lb_you')} · ${myUser.first_name || 'Warrior'}</div>
+            <div class="lb-name">${t('lb_you')} · ${myUser.first_name || t('fallback_username','Warrior')}</div>
             <div class="lb-sub">${gap > 0 ? t('lb_climb_tpl', { n: fmtN_(gap) }) : ''}</div>
           </div>
           <span class="lb-pts">${scoreOf(type, myUser)}</span>
@@ -219,7 +213,7 @@
     _browseClansDone = true;
 
     if (headEl) headEl.style.display = '';
-    container.innerHTML = '<p class="clan-empty" style="padding:12px 0;">Loading clans…</p>';
+    container.innerHTML = "<p class=\"clan-empty\" style=\"padding:12px 0;\">" + t('loading_text','Loading…') + "</p>";
 
     const u    = tgUser();
     const myId = u ? String(u.id) : null;
@@ -298,7 +292,7 @@
           }[res?.error] || 'Could not apply. Try again.';
           showToast(msg);
           btn.disabled   = false;
-          btn.textContent = 'Apply';
+          btn.textContent = t('btn_apply','⚔ Apply');
         }
       });
     });
@@ -315,7 +309,7 @@
       return;
     }
     const rows = members.map(m => {
-      const name    = m.first_name || 'Warrior';
+      const name    = m.first_name || t('fallback_username','Warrior');
       const initial = name.charAt(0).toUpperCase();
       const tag     = m.verified
         ? `<span class="clan-tag clan-verified">${t('warrior_active_tag')}</span>`
@@ -361,7 +355,7 @@
         <div id="tg-link-msg" style="font-size:11px;margin-top:5px;"></div>
       </article>
       <div id="applications-container">
-        <p class="clan-empty" style="padding:10px 0 4px;">Loading applications…</p>
+        <p class="clan-empty" style="padding:10px 0 4px;">' + t('loading_text','Loading…') + '</p>
       </div>`;
 
     /* Pre-fill current link */
@@ -395,7 +389,7 @@
         if (msgEl) { msgEl.textContent = msg; msgEl.style.color = 'var(--ember)'; }
       }
 
-      btn.disabled = false; btn.textContent = 'Save';
+      btn.disabled = false; btn.textContent = t('btn_save','Save');
     });
 
     /* ── Applications panel ──────────────────────────────────────────── */
@@ -447,14 +441,14 @@
         btn.disabled = true; btn.textContent = '…';
         const res = await post('/api/season2/clan/accept-application', { telegram_id: leaderId, applicant_id: applicantId });
         if (res && res.status === 1) {
-          showToast('Warrior accepted into the clan!');
+          showToast(t('warrior_accepted_toast','Warrior accepted into the clan!'));
           appsEl.querySelector(`.clan-app-row[data-applicant="${applicantId}"]`)?.remove();
         } else {
           const msg = {
             clan_full:                'Clan is full (50/50).',
             applicant_already_in_clan:'Warrior already joined a clan.',
             application_not_found:   'Application no longer pending.',
-          }[res?.error] || 'Could not accept. Try again.';
+          }[res?.error] || t('could_not_accept','Could not accept. Try again.');
           showToast(msg);
           btn.disabled = false; btn.textContent = '✓ Accept';
         }
@@ -487,7 +481,7 @@
       return;
     }
 
-    clanEl.innerHTML = '<p class="clan-empty" style="padding:12px 0;">Loading your clan…</p>';
+    clanEl.innerHTML = '<p class="clan-empty" style="padding:12px 0;">' + t('loading_text','Loading…') + '</p>';
 
     /* Fetch clan membership and referral list in parallel */
     const [clanData, refData] = await Promise.all([
@@ -779,7 +773,7 @@
     const feedEl = document.getElementById('activity-feed');
     if (!feedEl) return;
 
-    feedEl.innerHTML = '<p class="clan-empty" style="padding:12px 16px;">Loading activity…</p>';
+    feedEl.innerHTML = '<p class="clan-empty" style="padding:12px 16px;">' + t('loading_text','Loading…') + '</p>';
     const data = await get('/api/season2/social/activity');
 
     if (!data || data.status !== 1 || !(data.events || []).length) {
@@ -932,7 +926,7 @@
     const container = document.getElementById('events-list');
     if (!container) return;
 
-    container.innerHTML = '<p class="clan-empty" style="padding:12px 0;">Loading events…</p>';
+    container.innerHTML = '<p class="clan-empty" style="padding:12px 0;">' + t('loading_text','Loading…') + '</p>';
 
     const u  = tgUser();
     const qs = new URLSearchParams();

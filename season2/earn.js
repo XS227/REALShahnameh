@@ -98,12 +98,7 @@
       document.head.appendChild(s);
     }
 
-    const isFa = window.RealI18N && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa';
-    const fmtA = (n) => {
-      const s = n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : String(n);
-      return isFa && window.RealI18N && window.RealI18N.toPersianDigits
-        ? window.RealI18N.toPersianDigits(s) : s;
-    };
+    const fmtA = (n) => (window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(n) : String(n);
 
     const overlay = document.createElement('div');
     overlay.id = 'earn-reward-modal';
@@ -165,7 +160,7 @@
       document.head.appendChild(s);
     }
 
-    const fmtA = (n) => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : String(n);
+    const fmtA = (n) => (window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(n) : String(n);
 
     const rewardLines = [];
     if (real)  rewardLines.push(`<div class="trm-amount">+${fmtA(real)} ${RT} REAL</div>`);

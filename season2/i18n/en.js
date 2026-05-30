@@ -984,5 +984,23 @@
       unit_zar:              "ZAR",
       season_label:          "Season 2 · Ch.1",
 
+      /* ── Number / currency localisation ── */
+      num_thousand:          "K",
+      num_million:           "M",
+      currency_name:         "REAL",
+
+      /* ── Generic UI strings ── */
+      loading_text:          "Loading…",
+      fallback_username:     "Warrior",
+      btn_apply:             "⚔ Apply",
+      btn_save:              "Save",
+      btn_retry:             "Retry",
+      btn_watch:             "Watch",
+      no_clan_yet:           "Not a member of any clan yet",
+      invite_sent_label:     "Invite Sent ✓",
+      error_prefix:          "Error",
+      warrior_accepted_toast:"Warrior accepted into the clan!",
+      could_not_accept:      "Could not accept. Try again.",
+
   };
 })();

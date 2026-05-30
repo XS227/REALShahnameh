@@ -26,14 +26,10 @@
                          ? window.RealI18N.toPersianDigits(String(s)) : String(s);
   const isFa = ()   => (window.RealI18N && window.RealI18N.getLang) ? window.RealI18N.getLang() === 'fa' : false;
 
-  const fmtN = (n) => {
-    n = Number(n) || 0;
-    let s;
-    if (n >= 1_000_000) s = (n / 1_000_000).toFixed(1) + 'M';
-    else if (n >= 1_000) s = (n / 1_000).toFixed(1) + 'K';
-    else s = n.toLocaleString();
-    return isFa() ? pd(s) : s;
-  };
+  const fmtN = (n) =>
+    (window.RealI18N && window.RealI18N.compactNumber)
+      ? window.RealI18N.compactNumber(n)
+      : (Number(n) || 0).toLocaleString();
 
   const fmtZar = (n) => {
     n = Number(n) || 0;
@@ -93,7 +89,7 @@
 
     const displayName = u.first_name
       ? (u.first_name + (u.last_name ? ' ' + u.last_name : ''))
-      : (u.username ? '@' + u.username : 'Warrior');
+      : (u.username ? '@' + u.username : t('fallback_username', 'Warrior'));
 
     if (nameEl)     nameEl.textContent = displayName;
     if (usernameEl) usernameEl.textContent = u.username ? '@' + u.username : '';
@@ -259,7 +255,7 @@
           <div class="clan-cta-left">
             <div class="clan-cta-ico">⚔</div>
             <div>
-              <div class="clan-cta-title" style="font-size:13px;color:var(--muted);">Not a member of any clan yet</div>
+              <div class="clan-cta-title" style="font-size:13px;color:var(--muted);">${t('no_clan_yet', 'Not a member of any clan yet')}</div>
             </div>
           </div>
           ${opts.inviteBtn || ''}`;
@@ -531,7 +527,7 @@
   const renderFallback = (tg) => {
     const nameEl   = document.getElementById('profile-name');
     const avatarEl = document.getElementById('profile-avatar');
-    const name = tg ? (tg.first_name || tg.username || 'Warrior') : 'Warrior';
+    const name = tg ? (tg.first_name || tg.username || t('fallback_username', 'Warrior')) : t('fallback_username', 'Warrior');
     if (nameEl)   nameEl.textContent = name;
     if (avatarEl) avatarEl.textContent = name.charAt(0).toUpperCase();
 
@@ -660,7 +656,7 @@
               if (r.status === 1) {
                 _showToast('Invite sent to ' + (r.clan_name || 'your clan') + '!');
                 btn.disabled = true;
-                btn.textContent = 'Invite Sent ✓';
+                btn.textContent = t('invite_sent_label', 'Invite Sent ✓');
               } else {
                 const msg = {
                   not_leader: 'You are not a clan leader.',
