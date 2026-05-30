@@ -5631,3 +5631,22 @@ body::after {
   color: rgba(94,162,255,.6);
   text-transform: uppercase;
 }
+
+/* ── Task reward modal ─────────────────────────────────────────────────── */
+.trm-amount {
+  font-size: 28px;
+  font-weight: 900;
+  color: #f4c56b;
+  text-shadow: 0 0 28px rgba(244,197,107,.55);
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.trm-bonus {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--jade, #4ad8a6);
+  margin: 4px 0;
+}

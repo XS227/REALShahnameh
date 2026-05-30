@@ -153,6 +153,74 @@
     setTimeout(dismiss, 2600);
   };
 
+  /* ── Task-specific reward modal ─────────────────────────────────────── */
+  const showTaskRewardModal = (platformThanks, real, gems, farr) => {
+    const existing = document.getElementById('task-reward-modal');
+    if (existing) existing.remove();
+
+    if (!document.getElementById('trm-style')) {
+      const s = document.createElement('style');
+      s.id = 'trm-style';
+      s.textContent = '@keyframes trm-in{from{transform:scale(.82) translateY(16px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}';
+      document.head.appendChild(s);
+    }
+
+    const fmtA = (n) => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : String(n);
+
+    const rewardLines = [];
+    if (real)  rewardLines.push(`<div class="trm-amount">+${fmtA(real)} ${RT} REAL</div>`);
+    if (gems)  rewardLines.push(`<div class="trm-bonus">+${gems} 💎 Gems</div>`);
+    if (farr)  rewardLines.push(`<div class="trm-bonus">+${farr} ✦ Farr</div>`);
+
+    const overlay = document.createElement('div');
+    overlay.id = 'task-reward-modal';
+    overlay.style.cssText = [
+      'position:fixed;inset:0;z-index:9996',
+      'display:flex;align-items:center;justify-content:center',
+      'background:rgba(4,5,11,.88)',
+      'backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)',
+      'opacity:0;transition:opacity .22s ease',
+    ].join(';');
+
+    overlay.innerHTML = `
+      <div style="
+        text-align:center;max-width:290px;width:90%;
+        padding:32px 24px 28px;
+        background:linear-gradient(158deg,#0f1d3a 0%,#04050b 100%);
+        border:1px solid rgba(244,197,107,.45);
+        border-radius:24px;
+        box-shadow:0 0 70px rgba(244,197,107,.15),0 28px 72px rgba(0,0,0,.7);
+        animation:trm-in .38s cubic-bezier(.2,.9,.2,1) both;">
+        <div style="font-size:52px;line-height:1;margin-bottom:14px;filter:drop-shadow(0 0 24px rgba(244,197,107,.7));">⚔</div>
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(244,197,107,.6);margin-bottom:6px;">Reward Secured</div>
+        <h3 style="margin:0 0 8px;font-size:17px;font-weight:900;
+          background:linear-gradient(118deg,#fff 0%,#ffe8c0 55%,#f4c56b 100%);
+          -webkit-background-clip:text;background-clip:text;color:transparent;">
+          Thank you!
+        </h3>
+        <p style="font-size:13px;color:rgba(220,220,235,.75);margin:0 0 18px;line-height:1.5;">
+          ${platformThanks} — your loyalty to the Chronicle is rewarded.
+        </p>
+        ${rewardLines.join('')}
+        <p style="font-size:11px;color:rgba(180,180,210,.5);margin:16px 0 0;">
+          Added to your Treasury · Tap anywhere to close
+        </p>
+      </div>`;
+
+    overlay.style.cssText += ';cursor:pointer;';
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => { requestAnimationFrame(() => { overlay.style.opacity = '1'; }); });
+
+    try { if (navigator.vibrate) navigator.vibrate([12, 4, 18, 4, 28]); } catch (_) {}
+
+    const dismiss = () => {
+      overlay.style.opacity = '0';
+      setTimeout(() => overlay.remove(), 220);
+    };
+    overlay.addEventListener('click', dismiss);
+    setTimeout(dismiss, 4000);
+  };
+
   const todayStr = () => new Date().toISOString().slice(0, 10);
 
   /* ── Config ──────────────────────────────────────────────────────────── */
@@ -512,39 +580,59 @@
 
     if (!data || data.status !== 1) {
       if (data && data.error === 'already_completed') {
+        /* Task was done on another device or in a previous session —
+           sync it locally so this page reflects reality. */
         const done = completedTasks();
         if (!done.includes(taskId)) done.push(taskId);
         localStorage.setItem('real_completed_tasks', JSON.stringify(done));
-        showToast('Already claimed!');
+        showToast('✓ Already claimed — your reward is in your wallet.');
       } else {
-        showToast('Could not verify. Try again.');
+        showToast('Could not verify. Try again in a moment.');
         if (btn) { btn.disabled = false; btn.textContent = 'Verify ✓'; }
         return;
       }
     } else {
+      /* ── Success: grant rewards, persist, notify all views ── */
       localStorage.setItem('real_completed_tasks', JSON.stringify(data.completed_tasks || []));
+
+      const task      = SOCIAL_TASKS.find(t => t.id === taskId);
+      const rewardReal = data.rewards.real || 0;
+      const rewardGems = data.rewards.gems || 0;
+      const rewardFarr = data.rewards.farr || 0;
+
       if (window.RealPlayer) {
-        window.RealPlayer.addResource('real', data.rewards.real || 0);
-        if (data.rewards.gems) window.RealPlayer.addResource('gems', data.rewards.gems);
-        if (data.rewards.farr) window.RealPlayer.addResource('farr', data.rewards.farr);
+        if (rewardReal) window.RealPlayer.addResource('real', rewardReal);
+        if (rewardGems) window.RealPlayer.addResource('gems', rewardGems);
+        if (rewardFarr) window.RealPlayer.addResource('farr', rewardFarr);
+        /* Push new balance to server + notify every open view */
         if (window.RealSync) window.RealSync.syncBalance();
-        /* Notify all views (heroes, tap, home) of the new balance */
         try {
           const p = window.RealPlayer.get();
           window.dispatchEvent(new CustomEvent('shahnama:state_sync', { detail: p }));
           window.dispatchEvent(new CustomEvent('balanceUpdate'));
         } catch (_) {}
       }
-      const task = SOCIAL_TASKS.find(t => t.id === taskId);
-      const rewardAmt = (task && task.reward_real) || (data.rewards && data.rewards.real) || 0;
-      /* Premium visual feedback */
-      const art = document.querySelector(`[data-task="${taskId}"]`);
-      if (rewardAmt) {
-        spawnCoinBurst(art, rewardAmt);
-        showRewardModal(rewardAmt, task ? task.label : '');
+
+      /* ── Rich confirmation ── */
+      const taskArt  = document.querySelector(`[data-task="${taskId}"]`);
+      const platform = task ? (task.platform || '') : '';
+      const taskName = task ? task.label : 'Task';
+      const platform_thank = {
+        telegram: 'Following our Telegram channel',
+        x:        'Following us on X',
+        tiktok:   'Following us on TikTok',
+        youtube:  'Subscribing to our YouTube',
+        dyor:     'Liking our DYOR listing',
+      }[platform] || taskName;
+
+      if (rewardReal) {
+        spawnCoinBurst(taskArt, rewardReal);
+        /* Full-screen reward modal with personal message */
+        showTaskRewardModal(platform_thank, rewardReal, rewardGems, rewardFarr);
+      } else if (rewardFarr) {
+        showToast(`✦ +${rewardFarr} Farr added to your legend! — ${taskName}`);
+        fireBurst(`+${rewardFarr} Farr`);
       }
-      showToast(`Task complete! +${rewardAmt} ◆`);
-      fireBurst('Task Complete!');
     }
 
     const refCode  = localStorage.getItem('real_referral_code') || '';
