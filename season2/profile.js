@@ -11,6 +11,7 @@
   let _serverUser = null;   // latest /user/me response
   let _clanData   = null;   // latest /clan/my-clan response
   let _tg         = null;   // Telegram user object
+  let _isS1       = false;  // Season 1 Founder status (fetched from legacy API)
 
   const tgUser = () => {
     try {
@@ -70,7 +71,7 @@
   /* ── Achievements ─────────────────────────────────────────────────────── */
   const ACHIEVEMENTS = [
     { id: 'first_strike',  icon: '⚡',  nameKey: 'ach_first_strike_name', descKey: 'ach_first_strike_desc', check: u => (u.xp || 0) > 0 },
-    { id: 'season1',       icon: '🏛',  nameKey: 'ach_s1_name',           descKey: 'ach_s1_desc',           check: _u => !!(window.RealPlayer && window.RealPlayer.get && window.RealPlayer.get().isSeason1Player) },
+    { id: 'season1',       icon: '🏛',  nameKey: 'ach_s1_name',           descKey: 'ach_s1_desc',           check: _u => _isS1 },
     { id: 'clan_founder',  icon: '🛡',  nameKey: 'ach_clan_founder_name', descKey: 'ach_clan_founder_desc', check: _u => !!(_clanData && (_clanData.member_count || 0) >= 3) },
     { id: 'daily_champ',   icon: '🔥',  nameKey: 'ach_7day_name',         descKey: 'ach_7day_desc',         check: u => (u.daily_streak || 0) >= 7 },
     { id: 'check_in',      icon: '📅',  nameKey: 'ach_chronicle_name',    descKey: 'ach_chronicle_desc',    check: u => !!(u.last_checkin_date) },
@@ -490,6 +491,17 @@
     });
   };
 
+  /* ── Season 1 legacy check ───────────────────────────────────────────── */
+  const fetchLegacyS1 = async (telegramId) => {
+    try {
+      const r = await fetch(
+        '/api/basic/legacy-profile?chatId=' + encodeURIComponent(String(telegramId)),
+        { cache: 'no-store' }
+      ).then(x => x.ok ? x.json() : null).catch(() => null);
+      return !!(r && r.status === 1 && r.legacy && r.legacy.isSeason1);
+    } catch { return false; }
+  };
+
   /* ── Fetch helpers ────────────────────────────────────────────────────── */
   const fetchUser = async () => {
     const tg = _tg;
@@ -584,7 +596,7 @@
       const myTg      = tgUser();
       const myQs      = myTg ? new URLSearchParams({ telegram_id: String(myTg.id) }) : null;
 
-      const [resp, clanResp, myClanResp] = await Promise.all([
+      const [resp, clanResp, myClanResp, s1] = await Promise.all([
         fetch('/api/season2/user/me?' + visitedQs.toString(), { cache: 'no-store' })
           .then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('/api/season2/clan/my-clan?' + visitedQs.toString(), { cache: 'no-store' })
@@ -593,6 +605,7 @@
           ? fetch('/api/season2/clan/my-clan?' + myQs.toString(), { cache: 'no-store' })
               .then(r => r.ok ? r.json() : null).catch(() => null)
           : Promise.resolve(null),
+        fetchLegacyS1(_visitUid),
       ]);
 
       if (!resp || resp.status !== 1 || !resp.user) {
@@ -601,6 +614,7 @@
         return;
       }
 
+      _isS1 = s1;
       const visitedUser = resp.user;
       _serverUser = visitedUser;
       _clanData   = clanResp && clanResp.status === 1 ? clanResp.clan : null;
@@ -689,8 +703,12 @@
       return;
     }
 
-    /* Fetch user + clan in parallel */
-    const [u, clan] = await Promise.all([fetchUser(), fetchClan()]);
+    /* Fetch user, clan, and Season 1 status in parallel */
+    const [u, clan, s1Own] = await Promise.all([
+      fetchUser(),
+      fetchClan(),
+      fetchLegacyS1(String(_tg.id)),
+    ]);
 
     if (!u) {
       renderFallback(_tg);
@@ -699,6 +717,12 @@
 
     _serverUser = u;
     _clanData   = clan;
+    _isS1       = s1Own;
+
+    /* Persist S1 status to localStorage so earn page / app.js stay in sync */
+    try {
+      if (s1Own) localStorage.setItem('isSeason1Player', 'true');
+    } catch (_) {}
 
     renderIdentity(u, _tg);
     renderInviter();
