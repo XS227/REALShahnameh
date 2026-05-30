@@ -5650,3 +5650,19 @@ body::after {
   color: var(--jade, #4ad8a6);
   margin: 4px 0;
 }
+
+/* ── Leaderboard + clan member avatars ────────────────────────────────── */
+.lb-avatar, .lb-avatar-init {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(244,197,107,.25);
+}
+.lb-avatar-init {
+  background: linear-gradient(135deg, rgba(244,197,107,.25), rgba(140,109,255,.2));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; color: var(--gold, #f4c56b);
+}
+.lb-player-link { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; text-decoration: none; color: inherit; }
+.clan-avatar-photo { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; }

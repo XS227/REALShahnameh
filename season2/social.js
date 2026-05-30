@@ -111,16 +111,25 @@
     let html = rows.map((r, i) => {
       const isMe = r.is_me;
       const uid  = r.telegram_id || r.id || '';
+      const clickable = uid && !isMe;
+      const avatarHtml = r.profile_pic
+        ? `<img src="${r.profile_pic}" class="lb-avatar" alt=""
+               onerror="this.outerHTML='<div class=lb-avatar-init>${(r.first_name || 'W').charAt(0).toUpperCase()}</div>'">`
+        : `<div class="lb-avatar-init">${(r.first_name || 'W').charAt(0).toUpperCase()}</div>`;
       return `
         <div class="lb-row ${rankCls(i)}${isMe ? ' lb-me' : ''}">
           <span class="lb-rank">${fmtN_(i + 1)}</span>
-          <div>
-            <div class="lb-name${uid && !isMe ? ' lb-clickable' : ''}"
-                 ${uid && !isMe ? `data-uid="${uid}" style="cursor:pointer;"` : ''}>
+          ${clickable
+            ? `<a href="profile.html?uid=${uid}" class="lb-player-link" style="display:flex;align-items:center;gap:8px;flex:1;min-width:0;text-decoration:none;color:inherit;">`
+            : `<div style="display:flex;align-items:center;gap:8px;flex:1;min-width:0;">`}
+          ${avatarHtml}
+          <div style="min-width:0;">
+            <div class="lb-name${clickable ? ' lb-clickable' : ''}">
               ${displayName(r)}${isMe ? ` <span class="you-tag">${t('lb_you')}</span>` : ''}
             </div>
             <div class="lb-sub">${t('lb_lvl_sub', { n: fmtN_(r.level || 1) })}</div>
           </div>
+          ${clickable ? `</a>` : `</div>`}
           <span class="lb-pts">${scoreOf(type, r)}</span>
         </div>`;
     }).join('');
@@ -242,10 +251,15 @@
           data-clan-name="${c.clan_name.replace(/"/g, '&quot;')}">Apply</button>`;
       }
 
+      const clanAvatar = c.clan_photo
+        ? `<img src="${c.clan_photo}" class="clan-browse-badge-lg clan-photo-img" alt=""
+               onerror="this.outerHTML='<div class=clan-browse-badge-lg>${c.clan_name.charAt(0).toUpperCase()}</div>'">`
+        : `<div class="clan-browse-badge-lg">${c.clan_name.charAt(0).toUpperCase()}</div>`;
+
       return `
         <div class="clan-browse-row ${rankCls}">
           <div class="clan-browse-rank">${i + 1}</div>
-          <div class="clan-browse-badge-lg">${c.clan_name.charAt(0).toUpperCase()}</div>
+          ${clanAvatar}
           <div class="clan-browse-info">
             <div class="clan-browse-name">${c.clan_name}</div>
             <div class="clan-browse-meta">
@@ -306,12 +320,20 @@
       const tag     = m.verified
         ? `<span class="clan-tag clan-verified">${t('warrior_active_tag')}</span>`
         : `<span class="clan-tag clan-pending">${t('warrior_pending_tag')}</span>`;
+      const avatarHtml = m.profile_pic
+        ? `<img src="${m.profile_pic}" class="clan-avatar clan-avatar-photo" alt=""
+               onerror="this.outerHTML='<div class=clan-avatar>${initial}</div>'">`
+        : `<div class="clan-avatar">${initial}</div>`;
+      const uid = m.telegram_id ? String(m.telegram_id) : '';
       return `<div class="clan-row">
-          <div class="clan-avatar">${initial}</div>
+          ${uid ? `<a href="profile.html?uid=${uid}" style="display:contents;">` : ''}
+          ${avatarHtml}
           <div class="clan-info">
-            <div class="clan-name">${name}</div>
+            <div class="clan-name" ${uid ? `style="color:var(--gold);cursor:pointer;"` : ''}>${name}</div>
             <div class="clan-stats">${t('clan_stats_row', { n: fmtN_(m.level || 1), xp: fmtN_(m.xp || 0) })}</div>
-          </div>${tag}</div>`;
+          </div>
+          ${uid ? `</a>` : ''}
+          ${tag}</div>`;
     }).join('');
     clanEl.insertAdjacentHTML('beforeend', `
       <article class="card lb-list clan-list" style="margin-top:0;">${rows}</article>`);
@@ -972,104 +994,22 @@
     startEventTimers(trn.ends_at_ms);
   };
 
-  /* ── Global user profile modal ───────────────────────────────────────── */
+  /* ── Navigate to player profile page ─────────────────────────────────── */
 
-  const showUserProfileModal = (userId) => {
-    const existing = document.getElementById('user-profile-overlay');
-    if (existing) existing.remove();
-
-    const overlay = document.createElement('div');
-    overlay.id = 'user-profile-overlay';
-    overlay.style.cssText = [
-      'position:fixed;inset:0;z-index:9990',
-      'background:rgba(4,5,11,.88)',
-      'backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)',
-      'display:flex;align-items:flex-end;justify-content:center',
-    ].join(';');
-
-    overlay.innerHTML = `
-      <div style="
-        width:100%;max-width:480px;
-        background:linear-gradient(170deg,#0d1020,#04050b);
-        border-top:1px solid rgba(244,197,107,.25);
-        border-radius:22px 22px 0 0;
-        padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));
-        animation:slide-up .3s cubic-bezier(.2,.9,.2,1);">
-        <div style="width:36px;height:4px;background:rgba(255,255,255,.15);border-radius:2px;margin:0 auto 14px;"></div>
-        <div id="upm-body" style="text-align:center;padding:10px 0;">
-          <div style="font-size:22px;margin-bottom:8px;">⏳</div>
-          <p style="color:var(--muted,#6c7287);font-size:13px;">Loading profile…</p>
-        </div>
-        <button id="upm-close" style="
-          width:100%;margin-top:14px;padding:12px;border:1px solid rgba(255,255,255,.12);
-          background:none;border-radius:12px;color:var(--muted,#6c7287);font-size:13px;cursor:pointer;">
-          Close
-        </button>
-      </div>`;
-
-    document.body.appendChild(overlay);
-
-    const close = () => overlay.remove();
-    overlay.querySelector('#upm-close').addEventListener('click', close);
-    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
-
-    /* Fetch user data */
-    const qs = new URLSearchParams({ telegram_id: String(userId) });
-    fetch('/api/season2/user/me?' + qs.toString(), { cache: 'no-store' })
-      .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        const body = overlay.querySelector('#upm-body');
-        if (!body) return;
-        if (!data || data.status !== 1 || !data.user) {
-          body.innerHTML = `<p style="color:var(--muted,#6c7287);font-size:13px;">Profile unavailable.</p>`;
-          return;
-        }
-        const u    = data.user;
-        const name = (u.first_name || '') + (u.last_name ? ' ' + u.last_name : '') || 'Warrior';
-        const lvl  = u.level || 1;
-        const xp   = u.xp || 0;
-        const refs = u.verified_referral_count || 0;
-        const initial = name.charAt(0).toUpperCase();
-        body.innerHTML = `
-          <div style="
-            width:56px;height:56px;border-radius:50%;
-            background:linear-gradient(135deg,rgba(244,197,107,.3),rgba(140,109,255,.2));
-            border:2px solid rgba(244,197,107,.4);
-            display:flex;align-items:center;justify-content:center;
-            font-size:22px;font-weight:900;color:var(--gold,#f4c56b);
-            margin:0 auto 10px;">${initial}</div>
-          <div style="font-size:16px;font-weight:800;color:#fff;margin-bottom:2px;">${name}</div>
-          ${u.username ? `<div style="font-size:12px;color:var(--muted,#6c7287);margin-bottom:10px;">@${u.username}</div>` : ''}
-          <div style="display:flex;gap:16px;justify-content:center;margin-top:8px;">
-            <div style="text-align:center;">
-              <div style="font-size:16px;font-weight:800;color:var(--gold,#f4c56b);">${lvl}</div>
-              <div style="font-size:10px;color:var(--muted,#6c7287);letter-spacing:.5px;">LEVEL</div>
-            </div>
-            <div style="text-align:center;">
-              <div style="font-size:16px;font-weight:800;color:var(--gold,#f4c56b);">${fmtN(xp)}</div>
-              <div style="font-size:10px;color:var(--muted,#6c7287);letter-spacing:.5px;">XP</div>
-            </div>
-            <div style="text-align:center;">
-              <div style="font-size:16px;font-weight:800;color:var(--gold,#f4c56b);">${refs}</div>
-              <div style="font-size:10px;color:var(--muted,#6c7287);letter-spacing:.5px;">WARRIORS</div>
-            </div>
-          </div>`;
-      })
-      .catch(() => {
-        const body = overlay.querySelector('#upm-body');
-        if (body) body.innerHTML = `<p style="color:var(--muted,#6c7287);font-size:13px;">Could not load profile.</p>`;
-      });
+  const navigateToProfile = (userId) => {
+    if (!userId) return;
+    window.location.href = `profile.html?uid=${encodeURIComponent(userId)}`;
   };
 
-  /* Expose globally so leaderboards, referral lists, and other pages can trigger it */
-  window.showUserProfile = showUserProfileModal;
+  /* Expose globally for any page that needs to navigate to a user profile */
+  window.showUserProfile = navigateToProfile;
 
   /* Wire delegated click on any [data-uid] element across the page */
   document.addEventListener('click', (e) => {
     const el = e.target.closest('[data-uid]');
     if (!el) return;
     const uid = el.getAttribute('data-uid');
-    if (uid) showUserProfileModal(uid);
+    if (uid) navigateToProfile(uid);
   });
 
   /* ── INIT ─────────────────────────────────────────────────────────────── */

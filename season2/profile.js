@@ -464,10 +464,66 @@
     window.addEventListener('shahnama:state_sync', renderAll);
   };
 
+  /* ── Visitor mode helpers ────────────────────────────────────────────── */
+  const _visitUid = new URLSearchParams(location.search).get('uid') || '';
+  const _isVisitor = !!_visitUid;
+
+  /* In visitor mode: hide private sections, show back button */
+  const applyVisitorMode = () => {
+    if (!_isVisitor) return;
+    /* Swap the back button text and make it explicit */
+    const backBtn = document.getElementById('back-btn');
+    if (backBtn) backBtn.textContent = '← Chronicle';
+    /* Hide earnings meter and REAL balance card (private financial data) */
+    const earningsSection = document.querySelector('.section-head + .card.earnings-meter-card')
+      || document.querySelector('.earnings-meter-card');
+    if (earningsSection) earningsSection.style.display = 'none';
+    const earningsHead = document.querySelector('.section-head');
+    if (earningsHead && earningsHead.textContent.includes('Earnings'))
+      earningsHead.style.display = 'none';
+  };
+
   /* ── Main load ────────────────────────────────────────────────────────── */
   const load = async () => {
     _tg = tgUser();
 
+    /* ── Visitor mode: viewing another player's profile ── */
+    if (_isVisitor) {
+      applyVisitorMode();
+      const qs    = new URLSearchParams({ telegram_id: _visitUid });
+      const [resp, clanResp] = await Promise.all([
+        fetch('/api/season2/user/me?' + qs.toString(), { cache: 'no-store' })
+          .then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('/api/season2/clan/my-clan?' + qs.toString(), { cache: 'no-store' })
+          .then(r => r.ok ? r.json() : null).catch(() => null),
+      ]);
+      if (!resp || resp.status !== 1 || !resp.user) {
+        const nameEl = document.getElementById('profile-name');
+        if (nameEl) nameEl.textContent = 'Profile not found';
+        return;
+      }
+      const visitedUser = resp.user;
+      _serverUser = visitedUser;
+      _clanData   = clanResp && clanResp.status === 1 ? clanResp.clan : null;
+      /* Show visitor's identity — pass null as tg so we use DB name/pic */
+      renderIdentity(visitedUser, null);
+      /* Show read-only stats, badges, clan — no live updates for visitor view */
+      renderStats(mergeUser());
+      renderBadges(mergeUser());
+      renderClan(_clanData);
+      /* Hide balance card and earnings meter for visitor */
+      ['real-balance-card', 'earnings-meter-section'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+      });
+      document.querySelectorAll('.section-head h3').forEach(h => {
+        if (h.textContent.includes('Earnings')) h.closest('.section-head').style.display = 'none';
+      });
+      document.querySelector('.earnings-meter-card')?.style?.setProperty('display', 'none');
+      return;
+    }
+
+    /* ── Own profile ── */
     if (!_tg || !_tg.id) {
       renderFallback(null);
       const nameEl = document.getElementById('profile-name');
