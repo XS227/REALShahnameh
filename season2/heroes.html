@@ -7,7 +7,7 @@
   <title>REAL Shahnameh — Collection</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <link rel="stylesheet" href="style.css?v=202605303500" />
-  <link rel="stylesheet" href="heroes.css?v=202605272200" />
+  <link rel="stylesheet" href="heroes.css?v=202605310100" />
 </head>
 <body>
   <main class="app heroes-app">
@@ -82,12 +82,16 @@
       <button class="coll-tab" data-filter="place" data-i18n="tab_places">Places</button>
       <button class="coll-tab" data-filter="enemy" data-i18n="tab_enemies">Enemies</button>
       <button class="coll-tab" data-filter="codex" data-i18n="tab_codex">Codex</button>
+      <button class="coll-tab haft-khan-tab" data-filter="haft-khan">⚔ Haft Khan</button>
     </div>
 
     <!-- ── Collection grid (populated by heroes.js) ── -->
     <div class="coll-grid" id="coll-grid">
       <!-- cards injected by heroes.js -->
     </div>
+
+    <!-- ── Haft Khan sequential view (populated by heroes.js) ── -->
+    <div id="haft-khan-view" style="display:none;"></div>
 
   </main>
 
@@ -139,7 +143,7 @@
   <script src="hakim-memory.js?v=202605272200"></script>
   <script src="cinematic.js?v=202605272200"></script>
   <script src="sync.js?v=202605303800"></script>
-  <script src="heroes.js?v=202605304000"></script>
+  <script src="heroes.js?v=202605310100"></script>
   <script src="hakim-orb.js?v=202605272200"></script>
 </body>
 </html>

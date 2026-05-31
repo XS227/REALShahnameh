@@ -899,3 +899,151 @@
   box-shadow: none;
   transform: none;
 }
+
+/* ── Haft Khan tab ──────────────────────────────────────────────── */
+.haft-khan-tab {
+  background: linear-gradient(135deg, rgba(255,138,61,.1), rgba(244,197,107,.08));
+  border: 1px solid rgba(255,138,61,.3);
+  color: var(--ember, #ff8a3d);
+  font-weight: 700;
+}
+.haft-khan-tab.active {
+  background: linear-gradient(135deg, rgba(255,138,61,.22), rgba(244,197,107,.15));
+  color: var(--ember, #ff8a3d);
+  border-color: rgba(255,138,61,.5);
+}
+
+/* ── Haft Khan sequential view ─────────────────────────────────── */
+#haft-khan-view {
+  padding: 0 2px;
+}
+.hk-banner {
+  background: linear-gradient(135deg, rgba(255,138,61,.08), rgba(244,197,107,.06));
+  border: 1px solid rgba(255,138,61,.25);
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  margin-bottom: 14px;
+  position: relative; overflow: hidden;
+}
+.hk-banner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at top right, rgba(255,138,61,.1), transparent 60%);
+}
+.hk-banner-kicker {
+  font-size: 10px; font-weight: 800; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--ember, #ff8a3d);
+  margin-bottom: 4px;
+}
+.hk-banner-title {
+  font-size: 17px; font-weight: 900; color: var(--text);
+  margin-bottom: 5px;
+}
+.hk-banner-sub {
+  font-size: 12px; color: var(--muted); line-height: 1.5;
+}
+.hk-progress {
+  display: flex; gap: 5px; margin-top: 12px;
+}
+.hk-pip {
+  flex: 1; height: 4px; border-radius: 4px;
+  background: rgba(255,138,61,.15);
+  transition: background .3s;
+}
+.hk-pip.done { background: var(--ember, #ff8a3d); }
+.hk-pip.active { background: rgba(255,138,61,.5); }
+
+/* ── Khan step card ─────────────────────────────────────────────── */
+.hk-step {
+  background: var(--surface, rgba(16,22,46,.62));
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: border-color .25s;
+}
+.hk-step.hk-owned { border-color: rgba(255,138,61,.35); }
+.hk-step.hk-available { border-color: rgba(244,197,107,.28); }
+.hk-step.hk-locked { opacity: .6; }
+
+.hk-step-head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 13px 14px 11px;
+}
+.hk-num {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 900; flex-shrink: 0;
+  background: rgba(255,138,61,.15);
+  color: var(--ember, #ff8a3d);
+  border: 1px solid rgba(255,138,61,.3);
+}
+.hk-step.hk-owned .hk-num {
+  background: rgba(255,138,61,.3);
+  border-color: rgba(255,138,61,.6);
+}
+.hk-step.hk-locked .hk-num {
+  background: rgba(255,255,255,.04);
+  color: var(--muted);
+  border-color: var(--border);
+}
+.hk-step-info { flex: 1; min-width: 0; }
+.hk-step-title { font-size: 13px; font-weight: 800; color: var(--text); }
+.hk-step-sub {
+  font-size: 11px; color: var(--muted); margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.hk-step-badge {
+  font-size: 11px; font-weight: 700; flex-shrink: 0;
+  padding: 4px 9px; border-radius: 20px;
+}
+.hk-badge-owned {
+  background: rgba(83,215,156,.12); color: var(--jade, #53d79c);
+  border: 1px solid rgba(83,215,156,.3);
+}
+.hk-badge-available {
+  background: rgba(244,197,107,.12); color: var(--gold);
+  border: 1px solid var(--border-gold);
+}
+.hk-badge-locked {
+  background: rgba(255,255,255,.04); color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+.hk-step-body {
+  padding: 0 14px 13px;
+  border-top: 1px solid var(--border);
+  margin-top: 2px;
+}
+.hk-story {
+  font-size: 12px; color: var(--text-dim); line-height: 1.55;
+  padding: 10px 0 8px;
+}
+.hk-econ {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+}
+.hk-zar-stat {
+  font-size: 11px; color: var(--muted);
+  display: flex; align-items: center; gap: 4px;
+}
+.hk-buy-btn {
+  flex: 1;
+  background: linear-gradient(140deg, var(--gold-2), var(--gold) 60%, var(--gold-3));
+  color: #28190a; border: none; border-radius: 10px;
+  padding: 9px 0; font-size: 12px; font-weight: 800;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 3px 12px rgba(244,197,107,.25);
+  transition: filter .15s, transform .12s;
+}
+.hk-buy-btn:active { transform: scale(.97); }
+.hk-buy-btn:disabled { opacity: .45; cursor: default; box-shadow: none; }
+.hk-upg-btn {
+  flex: 1;
+  background: rgba(255,138,61,.1); color: var(--ember, #ff8a3d);
+  border: 1px solid rgba(255,138,61,.35); border-radius: 10px;
+  padding: 9px 0; font-size: 12px; font-weight: 800;
+  cursor: pointer; font-family: inherit;
+  transition: background .15s, transform .12s;
+}
+.hk-upg-btn:active { background: rgba(255,138,61,.2); transform: scale(.97); }
+.hk-upg-btn:disabled { opacity: .4; cursor: default; }

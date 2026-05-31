@@ -18,7 +18,12 @@
   const RARITY_ZAR  = { common: 2,   rare: 8,    epic: 20,   legend: 50,    mythic: 120 };
 
   /* Map chapter number → its localStorage slug (from chapter.js `real_chapter_done_${SLUG}`) */
-  const CH_SLUG = { 1: "keyumars", 2: "hushang", 3: "tahmuras", 4: "jamshid", 5: "zahhak", 6: "fereydun", 7: "manuchehr" };
+  const CH_SLUG = {
+    1: "keyumars", 2: "hushang", 3: "tahmuras", 4: "jamshid",
+    5: "zahhak", 6: "fereydun", 7: "manuchehr", 8: "nozar",
+    9: "zal", 10: "rudabeh", 12: "rostam",
+    "haft-khan": "rudabeh", // Haft Khan unlocks after Rudabeh (Rostam born)
+  };
 
   const isChapterDone = (n) => {
     try {
@@ -977,6 +982,182 @@
       unlockCondition_tg: "Боби 4-ро иҷро кунед · Ҷамшид Lv.3 · 2 Фарр дошта бошед",
       tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" }
     },
+
+    /* ── HAFT KHAN-E ROSTAM — The Seven Labours ─────────────────────────── */
+    {
+      id: "rakhsh", name: "Rakhsh — The Legendary Steed",
+      name_fa: "رخش — اسبِ افسانه‌ای", name_tg: "Рахш — Аспи Афсонавӣ",
+      type: "character", rarity: "legend", chapter: "haft-khan",
+      img: "/season2/uploads/heroes/rostam.png",
+      emoji: "🐎",
+      role: "Khan 1 · Rostam's Steed · The Sleeping Hero's Arm",
+      role_fa: "خانِ اول · رخشِ رستم · بازویِ قهرمانِ خفته",
+      lore: "While Rostam slept exhausted in the reed bed, a lion came. Rakhsh fought and killed it alone without waking his master. The first of the Seven Labours was won by a horse. Ferdowsi's lesson: trust given to the faithful is never wasted.",
+      lore_fa: "در حالی که رستم خسته در نیزار خوابیده بود، شیری آمد. رخش آن را تنها کشت بدون آنکه اربابش را بیدار کند. خانِ اول توسطِ اسب برده شد.",
+      biography: "Rostam pressed the back of ten thousand horses testing strength. Ten thousand buckled. Rakhsh held. He carried Rostam through every labour and every battle for decades — not a mount but a second self.",
+      biography_fa: "رستم پشتِ ده هزار اسب را فشار داد تا قدرتشان را بسنجد. ده هزار خم شدند. رخش ایستاد.",
+      faction: "Rostam's Circle · Haft Khan",
+      mythologyRole: "Khan 1 · Loyal beyond duty · Fights when his master cannot",
+      powers: ["+15% Tap Power", "+50 Zar/hr", "Passive: While You Sleep — offline ZAR income +8%"],
+      powers_fa: ["+۱۵٪ قدرتِ ضربه", "+۵۰ زر/ساعت", "غیرفعال: در خواب — درآمدِ زرِ آفلاین +۸٪"],
+      storyAppearances: ["Haft Khan — First Labour: The Lion"],
+      side: "light", season: 2, order: 60, cost: 4000, zar_per_hour: 50,
+      collectionId: "S2-HK-001", nftReady: false,
+      unlockCondition: "Complete Chapter 10 (Rudabeh) · Rostam is born",
+      unlockCondition_fa: "دفترِ ۱۰ (رودابه) را کامل کنید · رستم متولد شده",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan: true, haft_khan_order: 1,
+    },
+    {
+      id: "mystical-ram", name: "The Mystical Ram — Desert Guide",
+      name_fa: "قوچِ اسرارآمیز — راهنمای بیابان", name_tg: "Гӯсфанди Асрорӣ — Роҳнамои Биёбон",
+      type: "creature", rarity: "rare", chapter: "haft-khan",
+      img: "/season2/uploads/heroes/mount_alborz.png",
+      emoji: "🐏",
+      role: "Khan 2 · Divine Messenger · Guide Through the Burning Desert",
+      role_fa: "خانِ دوم · فرستاده‌ی الهی · راهنما در بیابانِ سوزان",
+      lore: "Rostam and Rakhsh crossed a waterless desert and were dying of thirst. Rostam prayed. A mystical ram appeared and led them to a hidden spring. The second labour is won by divine mercy — by knowing when to ask for help.",
+      lore_fa: "رستم و رخش از بیابانِ بی‌آب گذشتند و از تشنگی داشتند می‌مردند. رستم دعا کرد. قوچی اسرارآمیز ظاهر شد و آن‌ها را به چشمه‌ای پنهان راهنمایی کرد.",
+      biography: "The ram that led Rostam to water in the second labour is understood in the Shahnameh as a divine messenger — the form God takes when a hero who has earned mercy calls for it. The Oasis of Grace it revealed kept Rostam alive for every labour that followed.",
+      biography_fa: "قوچی که رستم را در خانِ دوم به آب راهنمایی کرد در شاهنامه به‌عنوانِ فرستاده‌ای الهی فهمیده می‌شود.",
+      faction: "Divine Messengers · Haft Khan",
+      mythologyRole: "Khan 2 · Grace under extremity · Hidden providence",
+      powers: ["+8% Daily Quest XP", "+35 Zar/hr", "Passive: Oasis Blessing — ZAR/hr bonus +5% every 24h login"],
+      powers_fa: ["+۸٪ تجربه‌ی مأموریتِ روزانه", "+۳۵ زر/ساعت", "غیرفعال: برکتِ واحه — +۵٪ زر/ساعت هر ۲۴ساعت ورود"],
+      storyAppearances: ["Haft Khan — Second Labour: The Desert"],
+      side: "light", season: 2, order: 61, cost: 5000, zar_per_hour: 35,
+      collectionId: "S2-HK-002", nftReady: false,
+      prereq: { hero_id: "rakhsh", level: 1 },
+      unlockCondition: "Own Rakhsh (Khan 1)",
+      unlockCondition_fa: "رخش (خانِ اول) را داشته باشید",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan: true, haft_khan_order: 2,
+    },
+    {
+      id: "azhdaha-shield", name: "Azhdaha — The Dragon-Skin Shield",
+      name_fa: "اژدها — سپرِ پوستِ اژدها", name_tg: "Аждаҳо — Сипари Пӯсти Аждаҳо",
+      type: "artifact", rarity: "epic", chapter: "haft-khan",
+      img: "/season2/uploads/heroes/blak_demon.png",
+      emoji: "🐉",
+      role: "Khan 3 · Dragon Slayer's Trophy · Patience Forged Into Armor",
+      role_fa: "خانِ سوم · غنیمتِ اژدهاکُش · صبر در قالبِ زره",
+      lore: "A dragon attacked Rostam three nights in a row, vanishing each time Rakhsh woke him. Rostam grew impatient with the horse. The third night he saw the dragon himself — and understood that the horse had been right all along. Together they killed it. The shield made from its skin never forgets that lesson.",
+      lore_fa: "سه شب اژدهایی به رستم حمله کرد و هر بار که رخش او را بیدار کرد ناپدید شد. رستم از اسبش عصبانی شد. شبِ سوم خودش اژدها را دید — و فهمید که اسب از همان ابتدا درست می‌گفت.",
+      biography: "The Azhdaha (dragon) of the third labour is the Shahnameh's lesson about trust and patience. Rostam almost turned on his most loyal ally out of impatience. The shield made from the dragon's skin is the armor of that learned patience.",
+      biography_fa: "اژدهای خانِ سوم درسِ شاهنامه درباره‌ی اعتماد و صبر است. رستم تقریباً به خاطرِ بی‌صبری به وفادارترین یارش حمله کرد.",
+      faction: "Battle Trophies · Haft Khan",
+      mythologyRole: "Khan 3 · Dragon's patience as armor · Trust earned through hardship",
+      powers: ["+20% Defense vs negative events", "+70 Zar/hr", "Passive: Dragon's Patience — combo multiplier +0.3"],
+      powers_fa: ["+۲۰٪ دفاع در برابرِ رویدادهای منفی", "+۷۰ زر/ساعت", "غیرفعال: صبرِ اژدها — ضربدهنده‌ی کومبو +۰.۳"],
+      storyAppearances: ["Haft Khan — Third Labour: The Dragon"],
+      side: "light", season: 2, order: 62, cost: 7000, zar_per_hour: 70,
+      collectionId: "S2-HK-003", nftReady: false,
+      prereq: { hero_id: "mystical-ram", level: 1 },
+      unlockCondition: "Own Mystical Ram (Khan 2)",
+      unlockCondition_fa: "قوچِ اسرارآمیز (خانِ دوم) را داشته باشید",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan: true, haft_khan_order: 3,
+    },
+    {
+      id: "enchanted-lute", name: "The Enchanted Lute — Illusion's Trap",
+      name_fa: "رباب جادویی — دامِ توهم", name_tg: "Рубоби Ҷодуӣ — Домгоҳи Иллюзия",
+      type: "artifact", rarity: "epic", chapter: "haft-khan",
+      img: "/season2/uploads/heroes/festival_of_sade.png",
+      emoji: "🪕",
+      role: "Khan 4 · The Sorceress's Undoing · See Through the Beautiful Lie",
+      role_fa: "خانِ چهارم · فروپاشیِ جادوگر · دیدنِ دروغِ زیبا",
+      lore: "Rostam found a feasting table in the wilderness. He played the lute, sang his sorrows. A beautiful woman appeared and offered wine. When Rostam spoke the name of God, she became a hideous witch. He killed her with his lasso. The lute remains — the instrument that exposed the illusion.",
+      lore_fa: "رستم سفره‌ای پر از خوراک در بیابان یافت. ربابی نواخت، غم‌هایش را خواند. زنی زیبا ظاهر شد و شراب پیشنهاد داد. وقتی رستم نامِ خدا را برد، به پیرزنی زشت تبدیل شد. او را با کمند کشت.",
+      biography: "The fourth labour is the Shahnameh's test of discernment. The sorceress offers everything pleasant — food, wine, beauty. She is undone by a single word of truth. The enchanted lute Rostam played that night is the instrument of that truth.",
+      biography_fa: "خانِ چهارم آزمونِ شاهنامه درباره‌ی تشخیص است. جادوگر همه چیزِ خوشایند پیشنهاد می‌دهد — خوراک، شراب، زیبایی. با یک کلمه‌ی حقیقت نابود می‌شود.",
+      faction: "Wisdom Artifacts · Haft Khan",
+      mythologyRole: "Khan 4 · Truth that breaks illusion · The test of discernment",
+      powers: ["+1 Quiz hint per chapter tier", "+85 Zar/hr", "Passive: True Sight — identify hidden rewards +12%"],
+      powers_fa: ["+۱ راهنمای آزمون هر ردیف", "+۸۵ زر/ساعت", "غیرفعال: بینشِ حقیقی — یافتنِ پاداش‌های پنهان +۱۲٪"],
+      storyAppearances: ["Haft Khan — Fourth Labour: The Sorceress"],
+      side: "light", season: 2, order: 63, cost: 9000, zar_per_hour: 85,
+      collectionId: "S2-HK-004", nftReady: false,
+      prereq: { hero_id: "azhdaha-shield", level: 1 },
+      unlockCondition: "Own Azhdaha Shield (Khan 3)",
+      unlockCondition_fa: "سپرِ اژدها (خانِ سوم) را داشته باشید",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan: true, haft_khan_order: 4,
+    },
+    {
+      id: "awlad-guide", name: "Awlad — The Captured Guide",
+      name_fa: "اولاد — راهنمای اسیر", name_tg: "Авлод — Роҳнамои Асир",
+      type: "character", rarity: "legend", chapter: "haft-khan",
+      img: "/season2/uploads/heroes/thirty_alphabets.png",
+      emoji: "🗺",
+      role: "Khan 5 · Tactics Multiplier · The Enemy Made Useful",
+      role_fa: "خانِ پنجم · ضربدهنده‌ی تاکتیک · دشمنی که مفید شد",
+      lore: "Rostam entered Mazandaran and let Rakhsh graze on a local field. The warden Awlad attacked with his men. Rostam overcame them and captured Awlad, promising to make him king of Mazandaran if he guided faithfully. Awlad accepted. The fifth labour is about turning an obstacle into an asset.",
+      lore_fa: "رستم وارد مازندران شد. نگهبانِ اولاد با مردانش حمله کرد. رستم آن‌ها را شکست داد و اولاد را گرفتار کرد، قول داد اگر وفادارانه راهنمایی کند او را شاهِ مازندران کند. اولاد پذیرفت.",
+      biography: "Awlad is the Shahnameh's lesson about transforming opposition. He attacks, fails, and becomes the key to the whole mission. Every obstacle has information. The wise warrior extracts that information instead of simply destroying the obstacle.",
+      biography_fa: "اولاد درسِ شاهنامه درباره‌ی تبدیلِ مخالفت است. حمله می‌کند، شکست می‌خورد و کلیدِ کلِ مأموریت می‌شود.",
+      faction: "Tactics Cards · Haft Khan",
+      mythologyRole: "Khan 5 · Obstacle turned ally · Intelligence extracted from defeat",
+      powers: ["+20% ZAR/hr on all heroes (Tactics Multiplier)", "+100 Zar/hr", "Passive: Revealed Path — hidden map resources unlock +15%"],
+      powers_fa: ["+۲۰٪ زر/ساعت روی همه‌ی قهرمانان (ضربدهنده‌ی تاکتیک)", "+۱۰۰ زر/ساعت", "غیرفعال: مسیرِ آشکارشده — منابعِ پنهانِ نقشه +۱۵٪"],
+      storyAppearances: ["Haft Khan — Fifth Labour: Awlad the Guide"],
+      side: "light", season: 2, order: 64, cost: 12000, zar_per_hour: 100,
+      collectionId: "S2-HK-005", nftReady: false,
+      prereq: { hero_id: "enchanted-lute", level: 1 },
+      unlockCondition: "Own Enchanted Lute (Khan 4)",
+      unlockCondition_fa: "رباب جادویی (خانِ چهارم) را داشته باشید",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan: true, haft_khan_order: 5,
+    },
+    {
+      id: "arzhang-trophy", name: "Arzhang Div's Head — Trophy of Terror",
+      name_fa: "سرِ ارژنگ دیو — غنیمتِ وحشت", name_tg: "Сари Аржанги Дев — Ғанимати Ваҳшат",
+      type: "artifact", rarity: "mythic", chapter: "haft-khan",
+      img: "/season2/uploads/heroes/blak_demon.png",
+      emoji: "💀",
+      role: "Khan 6 · Demon General's Trophy · Raw Power Made Visible",
+      role_fa: "خانِ ششم · غنیمتِ سردارِ دیو · قدرتِ خامِ نمایان",
+      lore: "At the gates of Mazandaran, Rostam attacked the army of Arzhang Div — a demon general. Rostam stormed his tent, seized him, tore off his head, and threw it among the demon host. The army broke. The gates to Kay Kavus's prison opened. Sometimes the fastest path is the most direct one.",
+      lore_fa: "در دروازه‌های مازندران، رستم به سپاهِ ارژنگ دیو حمله کرد. به خیمه‌اش هجوم آورد، گرفتش، سرش را کَند و میانِ سپاهِ دیوان انداخت. سپاه متلاشی شد.",
+      biography: "Arzhang is not a character — he is a door. His death opens the path to Kay Kavus. The Shahnameh uses his defeat to demonstrate that some obstacles exist only to be removed by force. The trophy of his head is proof that the direct application of overwhelming strength is sometimes mercy for everyone involved.",
+      biography_fa: "ارژنگ شخصیت نیست — در است. مرگِ او مسیر را به کی‌کاووس باز می‌کند.",
+      faction: "Battle Trophies · Haft Khan · Demon Hunters",
+      mythologyRole: "Khan 6 · Demon general slain · The direct path to the prison",
+      powers: ["+30% Tap Power (Fear's force)", "+150 Zar/hr", "Passive: Army Broken — battle gate costs –10%"],
+      powers_fa: ["+۳۰٪ قدرتِ ضربه", "+۱۵۰ زر/ساعت", "غیرفعال: سپاه شکست — هزینه‌ی دروازه‌ی نبرد –۱۰٪"],
+      storyAppearances: ["Haft Khan — Sixth Labour: Arzhang Div"],
+      side: "light", season: 2, order: 65, cost: 18000, zar_per_hour: 150,
+      collectionId: "S2-HK-006", nftReady: false,
+      prereq: { hero_id: "awlad-guide", level: 1 },
+      unlockCondition: "Own Awlad the Guide (Khan 5)",
+      unlockCondition_fa: "اولادِ راهنما (خانِ پنجم) را داشته باشید",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan: true, haft_khan_order: 6,
+    },
+    {
+      id: "div-e-sepid", name: "Div-e Sepid — The White Demon",
+      name_fa: "دیوِ سپید — شیطانِ سفید", name_tg: "Дев-и Сафед — Девонаи Сафед",
+      type: "enemy", rarity: "mythic", chapter: "haft-khan",
+      img: "/season2/uploads/heroes/farvahar.png",
+      emoji: "👁",
+      role: "Khan 7 · The White Demon · Final Labour · Highest ROI in the Chronicle",
+      role_fa: "خانِ هفتم · دیوِ سپید · آخرین خان · بالاترین بازده‌ی شاهنامه",
+      lore: "In the dark cave at the heart of Mazandaran, Rostam fought the White Demon — the greatest demon in the Shahnameh's middle arc. He was enormous, pale as a mountain of iron. Their wrestling match shook the cave. Rostam tore out his liver. Its blood, dripped into the blind eyes of Kay Kavus and his warriors, restored their sight. The seventh labour is not simply a victory. It is a cure.",
+      lore_fa: "در غارِ تاریکِ قلبِ مازندران، رستم با دیوِ سپید — بزرگترین دیوِ بخشِ میانیِ شاهنامه — جنگید. عظیم بود، سفید مثلِ کوهی از آهن. کشتی‌گرفتنشان غار را لرزاند. رستم جگرش را در آورد. خونش، در چشمانِ کورِ کی‌کاووس و جنگجویانش چکیده، بینایی‌شان را باز گرداند. خانِ هفتم فقط پیروزی نیست. درمان است.",
+      biography: "Div-e Sepid is the pinnacle of the Haft Khan — the enemy who can only be defeated after all six previous labours have prepared the hero. He cannot be reached without Rakhsh's loyalty, the desert's grace, the dragon's patience, the lute's truth, Awlad's tactics, and Arzhang's broken gates. He is the proof that preparation is the true weapon.",
+      biography_fa: "دیوِ سپید اوجِ هفت‌خان است — دشمنی که فقط بعد از آنکه همه‌ی شش خانِ قبلی قهرمان را آماده کرده‌اند می‌توان او را شکست داد.",
+      faction: "Legendary Enemies · Haft Khan · Healing Powers",
+      mythologyRole: "Khan 7 · Supreme demon · Ultimate test · Blood that heals the blind",
+      powers: ["+40% Tap Power (Supreme force)", "+200 Zar/hr", "Passive: Vial of Restoration — energy +20% regeneration daily"],
+      powers_fa: ["+۴۰٪ قدرتِ ضربه", "+۲۰۰ زر/ساعت", "غیرفعال: ویالِ بهبودی — +۲۰٪ بازیابیِ انرژی روزانه"],
+      storyAppearances: ["Haft Khan — Seventh Labour: Div-e Sepid", "The Restoration of Kay Kavus"],
+      side: "dark", season: 2, order: 66, cost: 25000, zar_per_hour: 200,
+      collectionId: "S2-HK-007", nftReady: false,
+      prereq: { hero_id: "arzhang-trophy", level: 1 },
+      unlockCondition: "Own Arzhang Trophy (Khan 6)",
+      unlockCondition_fa: "غنیمتِ ارژنگ (خانِ ششم) را داشته باشید",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan: true, haft_khan_order: 7,
+    },
   ];
 
   /* Locked mystery teasers — chapters 5+ not yet released */
@@ -1124,9 +1305,140 @@
     return "available";
   };
 
+  /* ── Haft Khan sequential view ─────────────────────────────────────── */
+  const KHAN_STORIES = [
+    "Rostam slept in the reeds. A lion came. Rakhsh fought alone and killed it without waking his master. The first labour was the horse's victory.",
+    "A waterless desert nearly killed them. Rostam prayed. A mystical ram appeared and led them to a hidden spring. Divine mercy arrives when earned.",
+    "A dragon attacked three nights in a row, vanishing each time Rakhsh woke Rostam — who grew angry at the horse. The third night, Rostam finally saw the dragon. The horse had been right all along.",
+    "A feast table appeared in the wilderness. A beautiful woman offered wine. When Rostam spoke God's name, she became a hideous witch. He killed her with his lasso. The lute exposed the illusion.",
+    "Awlad the warden attacked Rostam with his men and lost. Rostam captured him and made a promise: guide me faithfully, and I will make you king. The enemy became the key.",
+    "At the gates of Mazandaran, Rostam stormed Arzhang Div's tent, seized him, and threw his severed head among the demon army. The army broke. The path to Kay Kavus opened.",
+    "In the dark cave at Mazandaran's heart, Rostam wrestled the White Demon — enormous, pale as iron. Their battle shook the mountain. Rostam tore out his liver. Its blood, dripped into blind eyes, gave back sight. The seventh labour was a cure.",
+  ];
+
+  const buildHaftKhanView = () => {
+    const view = document.getElementById("haft-khan-view");
+    const grid = document.getElementById("coll-grid");
+    if (!view) return;
+
+    grid.style.display = "none";
+    view.style.display = "block";
+    view.innerHTML = "";
+
+    const khans = COLLECTION.filter(i => i.haft_khan).sort((a,b) => a.haft_khan_order - b.haft_khan_order);
+    const ownedCount = khans.filter(k => ownedHeroes[k.id]).length;
+    const pips = khans.map((k, i) => {
+      const owned = ownedHeroes[k.id];
+      const cls = owned ? "hk-pip done" : (i === ownedCount ? "hk-pip active" : "hk-pip");
+      return `<div class="${cls}"></div>`;
+    }).join("");
+
+    view.innerHTML = `
+      <article class="hk-banner">
+        <div class="hk-banner-kicker">⚔ Haft Khan-e Rostam</div>
+        <div class="hk-banner-title">The Seven Labours</div>
+        <div class="hk-banner-sub">Read each labour's story · Unlock the card with REAL · Upgrade with ZAR for passive mining. Complete all seven to earn the chronicle's highest ROI.</div>
+        <div class="hk-progress">${pips}</div>
+      </article>
+      <div id="hk-steps"></div>`;
+
+    const stepsEl = view.querySelector("#hk-steps");
+    khans.forEach((item) => {
+      const state  = heroEconomyState(item);
+      const owned  = ownedHeroes[item.id];
+      const lvl    = owned ? (owned.level || 1) : 0;
+      const zarHr  = owned ? (owned.zar_per_hour || 0) : item.zar_per_hour;
+      const cost   = item.cost || 25000;
+      const stateClass = state === "owned" ? "hk-owned" : state === "available" ? "hk-available" : "hk-locked";
+
+      let badge = "";
+      if (state === "owned")     badge = `<span class="hk-step-badge hk-badge-owned">Lv.${lvl} · ${fmtN(zarHr)} ZAR/hr</span>`;
+      else if (state === "available") badge = `<span class="hk-step-badge hk-badge-available">${fmtN(cost)} ${t('currency_name','REAL')}</span>`;
+      else                       badge = `<span class="hk-step-badge hk-badge-locked">🔒</span>`;
+
+      const story = KHAN_STORIES[item.haft_khan_order - 1] || "";
+      const itemName = locF(item, 'name') || item.name;
+      const baseZar  = 50 * item.haft_khan_order; // progressive base for upgrade preview
+      const upgCost  = cost * Math.max(1, lvl);
+
+      let econHtml = "";
+      if (state === "available") {
+        econHtml = `
+          <div class="hk-econ">
+            <div class="hk-zar-stat">🪙 ${fmtN(zarHr)} ZAR/hr at Lv.1</div>
+            <button class="hk-buy-btn" data-hk-buy="${item.id}" data-cost="${cost}">
+              ${RT} ${fmtN(cost)} — ${t('hero_buy_cta_label','Buy Hero')}
+            </button>
+          </div>`;
+      } else if (state === "owned") {
+        const nextZar = (item.zar_per_hour || 50) + 50 * item.haft_khan_order;
+        econHtml = `
+          <div class="hk-econ">
+            <div class="hk-zar-stat">🪙 +${fmtN(zarHr)} ZAR/hr now</div>
+            <button class="hk-upg-btn" data-hk-upgrade="${item.id}" data-cost="${upgCost}" data-next-zar="${nextZar}">
+              ↑ Lv.${lvl + 1} · +${fmtN(50 * item.haft_khan_order)}/hr · ${fmtN(upgCost)} ${t('currency_name','REAL')}
+            </button>
+          </div>`;
+      }
+
+      const step = document.createElement("article");
+      step.className = `hk-step ${stateClass}`;
+      step.dataset.heroId = item.id;
+      step.innerHTML = `
+        <div class="hk-step-head">
+          <div class="hk-num">${item.haft_khan_order}</div>
+          <div class="hk-step-info">
+            <div class="hk-step-title">${itemName}</div>
+            <div class="hk-step-sub">${locF(item,'role') || item.role}</div>
+          </div>
+          ${badge}
+        </div>
+        <div class="hk-step-body">
+          <div class="hk-story">${story}</div>
+          ${econHtml}
+        </div>`;
+      stepsEl.appendChild(step);
+    });
+
+    /* Wire buy buttons */
+    view.querySelectorAll("[data-hk-buy]").forEach(btn => {
+      btn.addEventListener("click", async () => {
+        const heroId = btn.dataset.hkBuy;
+        const item   = COLLECTION.find(i => i.id === heroId);
+        if (!item) return;
+        btn.disabled = true; btn.textContent = "…";
+        await handleEconomyAction(btn, item);
+        buildHaftKhanView(); // refresh the whole view
+      });
+    });
+
+    /* Wire upgrade buttons */
+    view.querySelectorAll("[data-hk-upgrade]").forEach(btn => {
+      btn.addEventListener("click", async () => {
+        const heroId = btn.dataset.hkUpgrade;
+        const item   = COLLECTION.find(i => i.id === heroId);
+        if (!item) return;
+        btn.disabled = true; btn.textContent = "…";
+        await handleEconomyAction(btn, item);
+        buildHaftKhanView();
+      });
+    });
+  };
+
   const buildCards = (filter) => {
     const grid = document.getElementById("coll-grid");
     if (!grid) return;
+
+    /* Toggle Haft Khan dedicated view */
+    const hkView = document.getElementById("haft-khan-view");
+    if (filter === "haft-khan") {
+      grid.innerHTML = "";
+      buildHaftKhanView();
+      return;
+    }
+    /* Hide Haft Khan view when switching to other tabs */
+    if (hkView) { hkView.style.display = "none"; hkView.innerHTML = ""; }
+    grid.style.display = "";
     grid.innerHTML = "";
 
     const items = (filter === "all" ? COLLECTION : COLLECTION.filter((it) => it.type === filter))
@@ -1757,8 +2069,9 @@
   });
 
   /* Global balance sync — when any page changes REAL/ZAR/XP it fires
-     'shahnama:state_sync'; we re-sync RealPlayer from localStorage so
-     the hero upgrade check always reads the freshest balance. */
+     'shahnama:state_sync'; re-sync RealPlayer from localStorage so
+     the hero upgrade check always reads the freshest balance, and
+     rebuild the Haft Khan view live if it is currently visible. */
   window.addEventListener("shahnama:state_sync", (e) => {
     try {
       const detail = e.detail;
@@ -1766,6 +2079,11 @@
         window.RealPlayer.set({ balance: detail.balance || 0, zar: detail.zar || 0 });
       }
     } catch {}
+    const hkView = document.getElementById("haft-khan-view");
+    if (hkView && hkView.style.display !== "none") {
+      loadOwned();
+      buildHaftKhanView();
+    }
   });
 
   if (document.readyState === "loading") {

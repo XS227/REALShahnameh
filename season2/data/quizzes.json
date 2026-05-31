@@ -5172,6 +5172,134 @@
         "xp": 150,
         "real": 65
       }
+    },
+    {
+      "id": "hk-1-q1", "chapter_slug": "haft-khan-1", "quiz_part": 1, "difficulty": "easy",
+      "question": "In the First Labour, while Rostam slept in the reed bed — who fought and killed the lion?",
+      "question_fa": "در خانِ اول، در حالی که رستم در نیزار خوابیده بود — چه کسی شیر را کشت؟",
+      "question_tg": "Дар Хони Аввал, ҳангоме ки Рустам дар найзор хоб буд — кӣ шерро кушт?",
+      "answers": ["Rostam, awakened at the last moment", "Rakhsh, Rostam's horse", "A passing warrior from Pars", "The Simorgh, called by the feather"],
+      "answers_fa": ["رستم، که در آخرین لحظه بیدار شد", "رخش، اسبِ رستم", "جنگجویی گذری از پارس", "سیمرغ، که با پَر فراخوانده شد"],
+      "answers_tg": ["Рустам, ки дар лаҳзаи охир бедор шуд", "Рахш, аспи Рустам", "Ҷангии гузарӣ аз Порс", "Симурғ, ки бо пар фарохонда шуд"],
+      "correct_answer": 1,
+      "explanation": "Rakhsh killed the lion alone without waking Rostam. This is the Shahnameh's first statement about the Haft Khan: the journey begins with a victory Rostam didn't earn himself, which sets the theme — each labour teaches a different form of courage and trust.",
+      "explanation_fa": "رخش شیر را تنها کشت بدون آنکه رستم را بیدار کند. این اولین گفته‌ی شاهنامه درباره‌ی هفت‌خان است: سفر با پیروزی‌ای که رستم خودش به دست نیاورده شروع می‌شود.",
+      "explanation_tg": "Рахш шерро танҳо кушт бидуни бедор кардани Рустам.",
+      "reward": { "xp": 120, "real": 50 }
+    },
+    {
+      "id": "hk-2-q1", "chapter_slug": "haft-khan-2", "quiz_part": 1, "difficulty": "easy",
+      "question": "In the Second Labour, what guides Rostam and Rakhsh to water in the burning desert?",
+      "question_fa": "در خانِ دوم، چه چیزی رستم و رخش را به آب در بیابانِ سوزان راهنمایی می‌کند؟",
+      "question_tg": "Дар Хони Дуввум, чӣ Рустам ва Рахшро ба об дар биёбони сӯзон роҳнамоӣ мекунад?",
+      "answers": ["A map carved on a boulder", "A mystical ram that appeared after Rostam prayed", "Rakhsh's instinct — he smelled the water", "A Div they captured and questioned"],
+      "answers_fa": ["نقشه‌ای بر سنگ", "قوچی اسرارآمیز که بعد از دعای رستم ظاهر شد", "غریزه‌ی رخش — بوی آب را گرفت", "دیوی که اسیر کرده پرسیدند"],
+      "answers_tg": ["Харита бар санг", "Гӯсфанди асрорие ки пас аз дуои Рустам зоҳир шуд", "Ғаризаи Рахш — бӯи об гирифт", "Деве, ки асир карда пурсиданд"],
+      "correct_answer": 1,
+      "explanation": "A mystical ram appeared after Rostam prayed and led them to a hidden spring. The Shahnameh presents the second labour as divine mercy rewarding a hero who has earned it — Rostam asks for help rather than trying to force a solution.",
+      "explanation_fa": "قوچی اسرارآمیز بعد از دعای رستم ظاهر شد و آن‌ها را به چشمه‌ای پنهان راهنمایی کرد.",
+      "explanation_tg": "Гӯсфанди асрорие пас аз дуои Рустам зоҳир шуд.",
+      "reward": { "xp": 130, "real": 55 }
+    },
+    {
+      "id": "hk-3-q1", "chapter_slug": "haft-khan-3", "quiz_part": 1, "difficulty": "medium",
+      "question": "In the Third Labour, why does Rostam grow angry at Rakhsh — and what does his anger reveal about the labour's lesson?",
+      "question_fa": "در خانِ سوم، چرا رستم از رخش عصبانی می‌شود — و خشمش چه چیزی را درباره‌ی درسِ این خان آشکار می‌کند؟",
+      "question_tg": "Дар Хони Севвум, чаро Рустам аз Рахш хашм мегирад — ва хашмаш дар бораи дарси ин хон чиро ошкор мекунад?",
+      "answers": [
+        "Rakhsh ate the camp's food — the lesson is about respecting resources",
+        "Rakhsh keeps waking him from sleep for a dragon he cannot see — the lesson is about trusting the loyal when they warn you",
+        "Rakhsh runs from the dragon — the lesson is that even great horses fear greater beasts",
+        "Rakhsh charges the dragon alone — the lesson is that courage without caution is recklessness"
+      ],
+      "answers_fa": [
+        "رخش خوراکِ اردوگاه را خورد — درس درباره‌ی احترام به منابع است",
+        "رخش او را از خواب بیدار می‌کند برای اژدهایی که نمی‌بیند — درس درباره‌ی اعتماد به وفادار است وقتی هشدار می‌دهد",
+        "رخش از اژدها فرار می‌کند — درس این است که حتی اسبانِ بزرگ هم از جانوران بزرگتر می‌هراسند",
+        "رخش تنها به اژدها یورش می‌برد — درس این است که شجاعت بدون احتیاط بی‌ملاحظگی است"
+      ],
+      "answers_tg": [
+        "Рахш хӯроки урдугоҳро хӯрд — дарс дар бораи эҳтироми захираҳост",
+        "Рахш ӯро аз хоб бедор мекунад барои аждаҳое ки намебинад — дарс дар бораи эътимод ба вафодор аст вақте огоҳ медиҳад",
+        "Рахш аз аждаҳо мегурезад — дарс ин аст ки ҳатто аспони бузург ҳам аз ҳайвонони бузургтар метарсанд",
+        "Рахш танҳо ба аждаҳо ҳамла мекунад — дарс ин аст ки далерӣ бидуни эҳтиёт беҳтиётист"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rakhsh wakes Rostam three times for a dragon that disappears before Rostam can see it. Rostam gets angry and warns the horse not to wake him again without reason. The third night the dragon stays. Rostam sees it and understands — Rakhsh was right every time. The lesson: trust the loyal even when you cannot see what they see.",
+      "explanation_fa": "رخش سه بار رستم را برای اژدهایی که قبل از دیدنش ناپدید می‌شود بیدار می‌کند. رستم عصبانی می‌شود. شبِ سوم اژدها می‌ماند. رستم می‌بیند و می‌فهمد — رخش هر بار درست می‌گفت.",
+      "explanation_tg": "Рахш се бор Рустамро бедор кард барои аждаҳое ки нопадид мешавад. Рустам хашм гирифт. Шаби сеюм аждаҳо монд.",
+      "reward": { "xp": 150, "real": 65 }
+    },
+    {
+      "id": "hk-4-q1", "chapter_slug": "haft-khan-4", "quiz_part": 1, "difficulty": "easy",
+      "question": "In the Fourth Labour, what causes the beautiful woman to reveal her true form as a witch?",
+      "question_fa": "در خانِ چهارم، چه چیزی زنِ زیبا را وادار می‌کند شکلِ واقعی‌اش را به‌عنوانِ جادوگر آشکار کند؟",
+      "question_tg": "Дар Хони Чорум, чӣ зани зеборо маҷбур мекунад шакли воқеии худро ҳамчун ҷодугар ошкор кунад?",
+      "answers": ["Rostam draws his sword and threatens her", "Rostam speaks the name of God", "Rostam refuses the wine she offers", "Rakhsh kicks the feast table over"],
+      "answers_fa": ["رستم شمشیر می‌کشد و تهدیدش می‌کند", "رستم نامِ خدا را بر زبان می‌آورد", "رستم شرابی که پیشنهاد می‌دهد رد می‌کند", "رخش سفره را لگد می‌زند و برمی‌گرداند"],
+      "answers_tg": ["Рустам шамшер кашид ва таҳдидаш кард", "Рустам номи Худоро бар забон меорад", "Рустам шаробро, ки пешниҳод мекунад, рад мекунад", "Рахш дастархонро лагад мезанад"],
+      "correct_answer": 1,
+      "explanation": "When Rostam speaks the name of God, the beautiful woman is immediately revealed as an old witch. The Shahnameh is precise here: the beautiful illusion cannot survive the invocation of truth. This is the fourth labour's lesson — beautiful lies have a single weakness: the right word spoken at the right moment.",
+      "explanation_fa": "وقتی رستم نامِ خدا را می‌برد، زنِ زیبا فوراً به پیرزنی زشت تبدیل می‌شود. جادوگر نمی‌تواند در برابرِ فراخوانیِ حقیقت دوام بیاورد.",
+      "explanation_tg": "Вақте Рустам номи Худоро мегӯяд, зани зебо фавран ба пиразани зишт табдил мешавад.",
+      "reward": { "xp": 130, "real": 55 }
+    },
+    {
+      "id": "hk-5-q1", "chapter_slug": "haft-khan-5", "quiz_part": 1, "difficulty": "easy",
+      "question": "What promise does Rostam make to Awlad after defeating him in the Fifth Labour?",
+      "question_fa": "رستم بعد از شکست دادنِ اولاد در خانِ پنجم چه قولی به او می‌دهد؟",
+      "question_tg": "Рустам пас аз шикаст додани Авлод дар Хони Панҷум чӣ ваъда медиҳад?",
+      "answers": ["To spare his life if he surrenders his weapons", "To make him king of Mazandaran if he guides faithfully", "To give him a share of the treasure from Kay Kavus's prison", "To teach him the secrets of Rostam's seven labours"],
+      "answers_fa": ["که اگر سلاح‌هایش را تسلیم کند جانش را ببخشد", "که اگر وفادارانه راهنمایی کند شاهِ مازندرانش کند", "که سهمی از گنجِ زندانِ کی‌کاووس به او بدهد", "که اسرارِ هفت‌خانِ رستم را به او بیاموزد"],
+      "answers_tg": ["Ки агар силоҳонашро таслим кунад ҷонашро бибахшад", "Ки агар вафодорона роҳнамоӣ кунад шоҳи Мозандаронаш кунад", "Ки ҳиссае аз ганҷи зиндони Кай Кову бидиҳад", "Ки асрори ҳафт хони Рустамро ба ӯ биомӯзад"],
+      "correct_answer": 1,
+      "explanation": "Rostam promises to make Awlad king of Mazandaran if he guides faithfully. This is the Shahnameh's tactical lesson: the captured enemy is converted into an asset. Awlad accepts — and the promise turns an obstacle into the key that opens every remaining door.",
+      "explanation_fa": "رستم قول می‌دهد اگر اولاد وفادارانه راهنمایی کند شاهِ مازندرانش کند. درسِ تاکتیکیِ شاهنامه: دشمنِ اسیر به دارایی تبدیل می‌شود.",
+      "explanation_tg": "Рустам ваъда медиҳад ки Авлодро шоҳи Мозандарон кунад агар вафодорона роҳнамоӣ кунад.",
+      "reward": { "xp": 140, "real": 60 }
+    },
+    {
+      "id": "hk-6-q1", "chapter_slug": "haft-khan-6", "quiz_part": 1, "difficulty": "easy",
+      "question": "What does Rostam do when he reaches Arzhang Div's camp in the Sixth Labour?",
+      "question_fa": "رستم در خانِ ششم وقتی به اردوگاهِ ارژنگ دیو می‌رسد چه می‌کند؟",
+      "question_tg": "Рустам дар Хони Шашум вақте ба урдугоҳи Аржанги Дев мерасад чӣ мекунад?",
+      "answers": ["He challenges Arzhang to single combat", "He storms the tent, seizes Arzhang, tears off his head and throws it among the demon army", "He burns the camp and waits for Arzhang to surrender", "He uses Awlad as a decoy while he sneaks in"],
+      "answers_fa": ["ارژنگ را به نبردِ تن‌به‌تن می‌طلبد", "به خیمه‌اش هجوم می‌آورد، گرفتش، سرش را می‌کَند و میانِ سپاهِ دیوان می‌اندازد", "اردوگاه را آتش می‌زند و منتظر تسلیمِ ارژنگ می‌ماند", "اولاد را طعمه می‌کند در حالی که خودش پنهانی وارد می‌شود"],
+      "answers_tg": ["Аржангро ба набарди тан-ба-тан мехонад", "Ба хаймааш ҳуҷум мекунад, мегирадаш, сарашро мекананд ва дар миёни лашкари девон мепартояд", "Урдугоҳро месӯзонад ва интизори таслими Аржанг мемонад", "Авлодро тӯмор мекунад дар ҳоле ки худаш пинҳонӣ ворид мешавад"],
+      "correct_answer": 1,
+      "explanation": "Rostam storms the tent, seizes Arzhang Div, tears off his head, and throws it among the demon army. The army breaks in terror. The Shahnameh presents this as the direct, overwhelming application of force — sometimes the fastest and most merciful path through a problem.",
+      "explanation_fa": "رستم به خیمه هجوم می‌آورد، ارژنگ را می‌گیرد، سرش را می‌کند و میانِ سپاه می‌اندازد. سپاه از ترس متلاشی می‌شود.",
+      "explanation_tg": "Рустам ба хайма ҳуҷум мекунад, Аржангро мегирад, сарашро мекананд ва дар миёни лашкар мепартояд.",
+      "reward": { "xp": 150, "real": 65 }
+    },
+    {
+      "id": "hk-7-q1", "chapter_slug": "haft-khan-7", "quiz_part": 1, "difficulty": "medium",
+      "question": "After defeating Div-e Sepid, what does Rostam take from the demon — and what does it do?",
+      "question_fa": "رستم بعد از شکستِ دیوِ سپید چه چیزی از دیو می‌گیرد — و چه می‌کند؟",
+      "question_tg": "Рустам пас аз шикасти Деви Сафед аз дев чӣ мегирад — ва чӣ мекунад?",
+      "answers": [
+        "His crown, which grants the wearer mastery over all demons",
+        "His liver — whose blood, dripped into blind eyes, restores sight",
+        "His skin, which becomes an indestructible shield",
+        "His heart, which Kay Kavus consumes to regain his strength"
+      ],
+      "answers_fa": [
+        "تاجِ او، که صاحبِ آن بر همه‌ی دیوان تسلط می‌یابد",
+        "جگرِ او — که خونش در چشمانِ کور می‌چکد و بینایی را باز می‌گرداند",
+        "پوستِ او، که سپری آسیب‌ناپذیر می‌شود",
+        "قلبِ او، که کی‌کاووس می‌خورد تا قدرتش را بازیابد"
+      ],
+      "answers_tg": [
+        "Тоҷи ӯ, ки соҳиби он бар ҳамаи девон тасаллут меёбад",
+        "Ҷигари ӯ — ки хунаш дар чашмони кӯр мечакад ва биноиро барқарор мекунад",
+        "Пӯсти ӯ, ки сипари осебнопазир мешавад",
+        "Қалби ӯ, ки Кай Кову мехӯрад то қудраташро бозёбад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam tears out Div-e Sepid's liver. Three drops of its blood, dripped into the eyes of Kay Kavus and his warriors, restore their sight — which Arzhang had taken. The seventh labour is not just a victory. It is a cure. The Haft Khan ends not with a trophy but with a healing. That is Ferdowsi's final word on what heroism is for.",
+      "explanation_fa": "رستم جگرِ دیوِ سپید را در می‌آورد. سه قطره از خونش در چشمانِ کی‌کاووس و جنگجویانش می‌چکد و بینایی‌ای که ارژنگ گرفته بود را باز می‌گرداند. خانِ هفتم فقط پیروزی نیست. درمان است.",
+      "explanation_tg": "Рустам ҷигари Деви Сафедро мекананд. Се қатра аз хунаш дар чашмони Кай Кову ва ҷангиёнаш мечакад ва биноии гирифташударо бармегардонад.",
+      "reward": { "xp": 180, "real": 80 }
     }
   ]
 }
