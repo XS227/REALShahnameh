@@ -261,7 +261,7 @@
       "title": "Birth of Rostam",
       "title_fa": "تولد رستم",
       "summary": "Zal burns the Simorgh's feather. Through pain and fire, the greatest pahlavan enters the world.",
-      "story": "",
+      "story": "Nine months after the wedding the birth would not come. Rudabeh grew weak; the court's physicians stood at her bed and found themselves useless. Zal understood what kind of moment this was. He took the Simorgh's feather from the cloth where he had kept it since the day he descended from Alborz — through every battle, every court, every year — and he burned it. The smoke rose. The Simorgh came. She guided the caesarean that Sam's surgeons performed, and breathed over Rudabeh as the child was lifted free. Rudabeh lived. The feather was gone.\n\nThe child was large as a young lion, and loud as one. He needed ten wet nurses the first week because no one of them had enough. By the time he was a year old he ate meat. By the time he was seven his frame was a grown man's frame, and the court had quietly stopped treating him as a child. At twelve he walked along the horse lines in Zabulestan pressing each candidate's back, testing strength. Three thousand horses buckled. At the end of the line one did not move — a spotted horse, Rakhsh, chosen.\n\nThe first formal test came when a rogue war elephant broke loose and ran through the palace. Guards fled. Zal's court cleared. Rostam, twelve years old, took a mace from the wall, walked into the corridor, and struck once. The elephant fell and did not rise. The mace was bent. The corridor was silent in a way that meant something new had just been established — a pillar the world would lean against for the next five generations of kings.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/birth-of-rostam.png?v=1778881334217",
       "unlock_day": 56,
@@ -272,7 +272,7 @@
         "energy": 70,
         "gems": 7
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "rudabeh",
       "quiz_count": 3
     },
@@ -283,7 +283,7 @@
       "title": "Rostam — Pahlavan of the Age",
       "title_fa": "رستم — پهلوان دوران",
       "summary": "Seven labours, one Rakhsh, no equal under the sky. Rostam becomes the world's pillar of arms.",
-      "story": "Seven labours: a lion in the night, a desert without water, a dragon, a witch, a div-king Akvan, the demon king of Mazandaran. Rakhsh chose his rider himself. From that day Rostam was Iran's pillar of arms — and his shadow stretched over five generations of kings.",
+      "story": "Rostam pressed ten thousand horses on the plains of Zabulestan. Ten thousand buckled under his hand. Rakhsh held. He was spotted and fierce and he chose his rider as decisively as his rider chose him. From that moment they were inseparable — not rider and mount but two halves of a single force that the Shahnameh would need for longer than any kingdom lasts.\n\nThe Seven Labours came first: a lion killed by Rakhsh while Rostam slept; a desert crossed by divine mercy; a dragon defeated by learning to trust the loyal; a sorceress unmasked by a name of God; a warden captured and converted into a guide; a demon general beheaded at the gates of Mazandaran; and finally Div-e Sepid — the White Demon — whose liver-blood dripped into blind eyes and gave back sight to Kay Kavus and all of Iran's captive warriors. Seven trials, seven lessons. The chronicle does not present them as victories so much as educations.\n\nBut Rostam's story does not end with the Seven Labours — it has barely begun. He serves five kings across centuries, each more reckless than the last. He rescues Kay Kavus from Mazandaran, from the sky, from his own pride, more than once. He fights Akvan the Div, who grants wishes by destroying them. He wrestles Afrasiab's forces at the Oxus for decades. He meets his own son Sohrab on the battlefield without knowing it — and kills him. He meets Esfandiyar, the righteous man his equal in strength, and is forced to destroy him too. Each killing is heavier than the one before. Ferdowsi uses Rostam to ask a question the Shahnameh never answers directly: what does it cost to be the one who holds the world together when the world will not hold itself?",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/rostam.png?v=1778881419614",
       "unlock_day": 61,
@@ -298,7 +298,7 @@
           "rakhsh": 1
         }
       },
-      "status": "locked",
+      "status": "available",
       "required_previous_chapter": "birth-of-rostam",
       "quiz_count": 5
     },
@@ -309,7 +309,7 @@
       "title": "Sohrab — Son of the Storm",
       "title_fa": "سهراب — فرزند طوفان",
       "summary": "Two armies camp on opposite shores. Father and son, unknowing, raise blades against each other.",
-      "story": "From Tahmineh's chamber, Sohrab grew tall as a cedar. He led the army of Turan into Iran, searching for the father he had never seen. Father and son met on the battlefield, neither speaking their name. Rostam's blade fell. The bracelet on Sohrab's arm answered every question too late.",
+      "story": "Rostam spent one night at Samangan between missions. Tahmineh, the princess, came to his chamber in the dark — not from weakness but from purpose. She had heard of him for years and wanted a son from him. She told him this directly. He gave her his arm bracelet before he left: 'If a daughter, put it in her hair. If a son, bind it to his arm.' He left before morning. Sohrab was born and grew at three times the normal rate. When he was twelve he asked his mother who his father was. She told him. He decided on the spot: he would find Rostam, and together they would overthrow Kay Kavus and Afrasiab and rule father-and-son. He was twelve and he meant every word. He led the Turanian army toward Iran.\n\nThe armies met at the White Castle. Sohrab challenged the Iranian champion to single combat. Rostam came out in disguise — he had heard of this terrifying young warrior and chose not to reveal who he was. They fought. The first day Sohrab pinned Rostam to the ground and asked his name. Rostam lied. Sohrab let him live — there was something in the old man he recognized without being able to name. The second day Rostam drove his sword into Sohrab's side.\n\nSohrab spoke from the ground: 'My father Rostam will find you and destroy you.' Rostam's heart understood before his mind did. He asked to see the arm. The bracelet was there. He had killed his son.\n\nKay Kavus kept a medicine that could save any wound. Rostam begged for it on his knees. Kay Kavus refused: a warrior as powerful as Sohrab, healed, would unbalance the kingdom's politics. The medicine was not sent. Sohrab died as the sun set, his head in his father's arms, between the two armies. The Shahnameh does not soften this. It records it exactly as it happened and then continues — because the chronicle has never stopped for grief before, and it will not stop now.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/sohrab.png?v=1778881493376",
       "unlock_day": 67,
@@ -323,7 +323,7 @@
           "tahmineh": 2
         }
       },
-      "status": "locked",
+      "status": "available",
       "required_previous_chapter": "rostam",
       "quiz_count": 5
     },

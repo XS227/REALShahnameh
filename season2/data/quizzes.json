@@ -5300,6 +5300,48 @@
       "explanation_fa": "رستم جگرِ دیوِ سپید را در می‌آورد. سه قطره از خونش در چشمانِ کی‌کاووس و جنگجویانش می‌چکد و بینایی‌ای که ارژنگ گرفته بود را باز می‌گرداند. خانِ هفتم فقط پیروزی نیست. درمان است.",
       "explanation_tg": "Рустам ҷигари Деви Сафедро мекананд. Се қатра аз хунаш дар чашмони Кай Кову ва ҷангиёнаш мечакад ва биноии гирифташударо бармегардонад.",
       "reward": { "xp": 180, "real": 80 }
+    },
+    {
+      "id": "bor-e1", "chapter_slug": "birth-of-rostam", "quiz_part": 1, "difficulty": "easy",
+      "question": "What does Zal do to save Rudabeh when the birth will not come and the physicians cannot help?",
+      "question_fa": "وقتی زایمان صورت نمی‌گیرد و پزشکان نمی‌توانند کمک کنند، زال برای نجاتِ رودابه چه می‌کند؟",
+      "question_tg": "Вақте зоиш сурат намегирад ва табибон наметавонанд кӯмак кунанд, Зол барои наҷоти Рӯдоба чӣ мекунад?",
+      "answers": ["He prays at the shrine of Ahura Mazda", "He burns the Simorgh's feather — the promise she gave him on Alborz", "He summons Sam from the northern border", "He offers half his kingdom to any physician who can save her"],
+      "answers_fa": ["در معبدِ اهورا مزدا دعا می‌کند", "پرِ سیمرغ را می‌سوزاند — قراری که روی البرز به او داده شد", "سام را از مرزِ شمالی فرا می‌خواند", "نیمی از شاهنشاهی‌اش را به هر پزشکی که بتواند نجاتش دهد پیشنهاد می‌دهد"],
+      "answers_tg": ["Дар маъбади Аҳура Мазда дуо мехонад", "Пари Симурғро месӯзонад — ваъдаи ӯ дар Алборз", "Сомро аз марзи шимолӣ мефарозад", "Нисфи салтанаташро ба ҳар табибе ки битавонад наҷоташ диҳад пешниҳод мекунад"],
+      "correct_answer": 1,
+      "explanation": "Zal burns the Simorgh's feather — the promise she gave him on the day he descended from Alborz. He has carried it through battles, courts, and decades of peace. He burns it once, for one reason: Rudabeh is dying and the physicians cannot help. The Simorgh comes and guides the caesarean. Rudabeh lives. The feather is ash. This is the moment the feather was always for.",
+      "explanation_fa": "زال پرِ سیمرغ را می‌سوزاند — قراری که روزِ پایین آمدن از البرز به او داده شد. یک بار می‌سوزاندش، برای یک دلیل: رودابه دارد می‌میرد. سیمرغ می‌آید. رودابه زنده می‌ماند.",
+      "explanation_tg": "Зол пари Симурғро месӯзонад. Симурғ меояд ва сезарияро роҳнамоӣ мекунад. Рӯдоба зинда мемонад.",
+      "reward": { "xp": 100, "real": 40 }
+    },
+    {
+      "id": "bor-e2", "chapter_slug": "birth-of-rostam", "quiz_part": 2, "difficulty": "easy",
+      "question": "How does Rostam select Rakhsh from the horse lines of Zabulestan at age twelve?",
+      "question_fa": "رستمِ دوازده‌ساله چگونه رخش را از خطِ اسب‌های زابلستان انتخاب می‌کند؟",
+      "question_tg": "Рустами дувоздаҳсола чӣ тавр Рахшро аз хати аспони Зобулистон интихоб мекунад?",
+      "answers": ["He races each horse across the plain", "He presses each horse's back with his hand — three thousand buckle, Rakhsh alone holds", "Rakhsh runs to him across the field", "The court astrologers choose Rakhsh by reading the stars"],
+      "answers_fa": ["هر اسب را در دشت می‌تازاند", "پشتِ هر اسب را با دستش فشار می‌دهد — سه هزار خم می‌شوند، تنها رخش ایستاده می‌ماند", "رخش از صحرا به‌سمتش می‌دود", "منجمانِ دربار با خواندنِ ستارگان رخش را انتخاب می‌کنند"],
+      "answers_tg": ["Ҳар аспро дар даштзор метозонад", "Пушти ҳар аспро бо дасташ мефишорад — се ҳазор хам мешаванд, танҳо Рахш истода мемонад", "Рахш аз майдон ба сӯяш медавад", "Мунаҷҷимони дарбор бо хондани ситораҳо Рахшро интихоб мекунанд"],
+      "correct_answer": 1,
+      "explanation": "Rostam presses the back of each horse with his palm, testing its strength. Three thousand horses buckle under that hand. Rakhsh — spotted and fierce-eyed — does not move. The Shahnameh uses the word 'worthy' for both: Rakhsh was worthy of Rostam, and Rostam worthy of Rakhsh. The choice goes both ways.",
+      "explanation_fa": "رستم پشتِ هر اسب را با کف دستش فشار می‌دهد. سه هزار اسب خم می‌شوند. رخش — ابلق، تیزنگاه — تکان نمی‌خورد. شاهنامه کلمه‌ی 'شایسته' را برای هر دو به کار می‌برد.",
+      "explanation_tg": "Рустам пушти ҳар аспро мефишорад. Се ҳазор хам мешаванд. Рахш намеларзад. Шоҳнома калимаи 'шоиста'ро барои ҳарду истифода мекунад.",
+      "reward": { "xp": 110, "real": 45 }
+    },
+    {
+      "id": "bor-m1", "chapter_slug": "birth-of-rostam", "quiz_part": 3, "difficulty": "medium",
+      "question": "The Shahnameh describes Rostam's childhood feats without wonder or celebration. What does this restraint tell us about how the chronicle sees him?",
+      "question_fa": "شاهنامه شگفتی‌های کودکیِ رستم را بدون اعجاب یا جشن توصیف می‌کند. این خودداری چه چیزی به ما می‌گوید که شاهنامه چگونه او را می‌بیند؟",
+      "question_tg": "Шоҳнома аҷоиботи кӯдакии Рустамро бидуни ҳайрат ё ҷашн тавсиф мекунад. Ин худдорӣ дар бораи нигоҳи солнома ба ӯ чӣ мегӯяд?",
+      "answers": ["The Shahnameh doubts the legends about Rostam's childhood", "Rostam's feats are measured as preparation for his burden, not celebrated as wonders — the chronicle sees him as necessary, not spectacular", "Ferdowsi had limited information about Rostam's early years", "The restraint shows his childhood was ordinary — the real Rostam only emerged at the Haft Khan"],
+      "answers_fa": ["شاهنامه در افسانه‌های کودکیِ رستم شک دارد", "شگفتی‌های رستم به‌عنوانِ آمادگی برای بارش سنجیده می‌شوند، نه به‌عنوانِ معجزه ستوده — شاهنامه او را ضروری می‌بیند نه چشمگیر", "فردوسی اطلاعاتِ محدودی درباره‌ی سال‌های اولیه‌ی رستم داشت", "خودداری نشان می‌دهد دوران کودکیِ او عادی بود — رستمِ واقعی فقط در هفت‌خان ظهور کرد"],
+      "answers_tg": ["Шоҳнома дар афсонаҳои кӯдакии Рустам шубҳа дорад", "Аҷоиботи Рустам ҳамчун омодагӣ барои борааш санҷида мешавад, на мадҳ — солнома ӯро зарурӣ мебинад, на намоишӣ", "Фирдавсӣ маълумоти маҳдуде дошт", "Худдорӣ нишон медиҳад кӯдакиаш одӣ буд"],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh catalogs Rostam's early feats (ten wet nurses, eating meat at one, a man's frame at seven, three thousand horses, the elephant at twelve) without celebration because it does not view him as a wonder — it views him as a structural requirement. He is the pillar the next five generations of kings will lean against. The chronicle measures him for that burden, not marvels at him.",
+      "explanation_fa": "شاهنامه دوران کودکیِ رستم را بدون جشن فهرست می‌کند چون او را شگفتی نمی‌بیند — ضرورتِ ساختاری می‌بیند. او ستونی است که پنج نسلِ بعدیِ شاهان به آن تکیه خواهند کرد.",
+      "explanation_tg": "Шоҳнома кӯдакии Рустамро бидуни ҷашн феҳрист мекунад, чун ӯро аҷибот намебинад — зарурати сохторӣ мебинад. Ӯ сутуниест ки насли оянда бар он такя мекунад.",
+      "reward": { "xp": 140, "real": 60 }
     }
   ]
 }
