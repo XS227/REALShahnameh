@@ -325,6 +325,25 @@
       difficulty_medium: "متوسط",
       difficulty_hard: "دشوار",
 
+      /* Heroes — Artifacts of the Poet */
+      tab_poet_artifacts: "🪶 شاعر",
+      artifacts_poet_section: "آثارِ شاعر",
+
+      /* میزِ فردوسی */
+      desk_section_title: "سایه‌ی نویسنده",
+      desk_card_kicker: "میزِ فردوسی",
+      desk_card_title: "شاعر پشتِ شعر",
+      desk_age_tpl: "{age} ساله",
+      desk_status_read: "✦ خوانده شد",
+      desk_modal_title: "میزِ فردوسی",
+      desk_historical_label: "در زمانِ او",
+      desk_challenge_label: "چالشِ او",
+      desk_impact_label: "چگونه مرکّب را شکل داد",
+      desk_read_btn: "خواندم — ادامه",
+      desk_read_done: "قبلاً خوانده — بستن",
+      desk_read_toast: "✦ سایه‌ی فردوسی خوانده شد — رویارویی نهایی باز شد",
+      desk_gate_label: "خواندنِ میزِ فردوسی",
+
       /* Document title */
       doc_title_chapter_tpl: "ریل شاهنامه — {title}",
 

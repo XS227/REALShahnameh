@@ -323,6 +323,25 @@
       difficulty_medium: "MEDIUM",
       difficulty_hard: "HARD",
 
+      /* Heroes page — Artifacts of the Poet tab */
+      tab_poet_artifacts: "🪶 Poet",
+      artifacts_poet_section: "Artifacts of the Poet",
+
+      /* Ferdowsi's Desk */
+      desk_section_title: "The Author's Shadow",
+      desk_card_kicker: "Ferdowsi's Desk",
+      desk_card_title: "The Poet Behind the Verse",
+      desk_age_tpl: "Age {age}",
+      desk_status_read: "✦ Read",
+      desk_modal_title: "Ferdowsi's Desk",
+      desk_historical_label: "In His Time",
+      desk_challenge_label: "His Challenge",
+      desk_impact_label: "How It Shaped the Ink",
+      desk_read_btn: "I have read this — Continue",
+      desk_read_done: "Already read — Close",
+      desk_read_toast: "✦ Ferdowsi's Shadow read — Final Encounter unlocked",
+      desk_gate_label: "Read Ferdowsi's Desk",
+
       /* Document title */
       doc_title_chapter_tpl: "REAL Shahnameh — {title}",
 

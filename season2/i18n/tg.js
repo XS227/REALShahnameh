@@ -324,6 +324,25 @@
       difficulty_medium: "МИЁНА",
       difficulty_hard: "ДУШВОР",
 
+      /* Heroes — Artifacts of the Poet */
+      tab_poet_artifacts: "🪶 Шоир",
+      artifacts_poet_section: "Осори Шоир",
+
+      /* Мизи Фирдавсӣ */
+      desk_section_title: "Сояи Муаллиф",
+      desk_card_kicker: "Мизи Фирдавсӣ",
+      desk_card_title: "Шоир Паси Шеър",
+      desk_age_tpl: "{age}-сола",
+      desk_status_read: "✦ Хонда шуд",
+      desk_modal_title: "Мизи Фирдавсӣ",
+      desk_historical_label: "Дар Замони Ӯ",
+      desk_challenge_label: "Чолиши Ӯ",
+      desk_impact_label: "Чӣ тавр Сиёҳиро Шакл Дод",
+      desk_read_btn: "Хондам — Идома",
+      desk_read_done: "Аллакай хонда — Бастан",
+      desk_read_toast: "✦ Сояи Фирдавсӣ хонда шуд — Рӯёрӯйи ниҳоӣ кушода шуд",
+      desk_gate_label: "Мизи Фирдавсӣро хондан",
+
       /* Document title */
       doc_title_chapter_tpl: "REAL Шоҳнома — {title}",
 

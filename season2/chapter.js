@@ -103,7 +103,7 @@
     hard:   { idx: 0, correct: [], wrong: [], done: false, locked: true },
   });
   const progress = Object.assign(
-    { scenes: [], codex: [], quiz: _defaultQuiz(), fragments: 0 },
+    { scenes: [], codex: [], quiz: _defaultQuiz(), fragments: 0, desk_read: false },
     readProgress()
   );
 
@@ -125,6 +125,7 @@
     paintLore(lore);
     paintScenes(lore);
     applyCodexAutoUnlocks(lore); // persist intro:complete entries without display
+    paintFerdowsiDesk(chapterMeta);
     paintBattle(lore);
     paintQuiz(lore, quizzes);
   };
@@ -279,7 +280,15 @@
     const battle = lore && lore.battle;
     if (!battle) { host.innerHTML = ""; return; }
 
-    const reqs = battle.requirements || [];
+    /* Always inject Ferdowsi's Desk as first requirement when chronicle data exists */
+    const hasDeskData = !!(window._chapterFerdowsiChronicle);
+    const deskReq = hasDeskData ? [{
+      kind: "desk",
+      label:    tr("desk_gate_label"),
+      label_fa: "خواندنِ میزِ فردوسی",
+      label_tg: "Мизи Фирдавсӣро хондан",
+    }] : [];
+    const reqs = [...deskReq, ...(battle.requirements || [])];
     const unlockedScenes = new Set(progress.scenes);
     const unlockedChars  = new Set(); // populated below
 
@@ -314,6 +323,7 @@
         // Legacy flat format fallback
         return !!(progress.quiz && progress.quiz.done);
       }
+      if (r.kind === "desk") return !!progress.desk_read;
       return false;
     };
 
@@ -498,6 +508,112 @@
       toast(`✦ +${farr} Farr — ${tier === "hard" ? "Mastery" : "Scholar"} reward`);
     }
   };
+
+  /* ---------- Ferdowsi's Desk ---------- */
+  const paintFerdowsiDesk = (meta) => {
+    const head      = $("[data-desk-head]");
+    const container = $("[data-desk-container]");
+    const statusEl  = $("[data-desk-status]");
+    if (!head || !container) return;
+
+    const chronicle = meta && meta.ferdowsi_chronicle;
+    if (!chronicle) { head.style.display = "none"; container.innerHTML = ""; return; }
+
+    /* Expose for paintBattle's desk requirement check */
+    window._chapterFerdowsiChronicle = chronicle;
+
+    head.style.display = "";
+    const isRead = !!progress.desk_read;
+    if (statusEl) statusEl.textContent = isRead ? tr("desk_status_read") : "";
+
+    const lang  = curLang();
+    const pick3 = (key) => {
+      if (lang !== "en" && chronicle[key + "_" + lang]) return chronicle[key + "_" + lang];
+      return chronicle[key] || "";
+    };
+
+    container.innerHTML = `
+      <div class="desk-card card ${isRead ? "desk-card-done" : ""}">
+        <div class="desk-card-left">
+          <span class="desk-card-icon">${isRead ? "✦" : "🪶"}</span>
+        </div>
+        <div class="desk-card-body">
+          <div class="desk-card-kicker">${escapeHtml(tr("desk_card_kicker"))}</div>
+          <div class="desk-card-title">${escapeHtml(tr("desk_card_title"))}</div>
+          <div class="desk-card-meta">
+            <span>${escapeHtml(chronicle.year || "")}</span>
+            <span>${escapeHtml(tr("desk_age_tpl", { age: chronicle.age || "" }))}</span>
+          </div>
+          <p class="desk-card-preview">${escapeHtml(pick3("historical_context").split(".")[0] + ".")}</p>
+        </div>
+        <div class="desk-card-arrow">${curLang() === "fa" ? "‹" : "›"}</div>
+      </div>`;
+
+    container.querySelector(".desk-card").addEventListener("click", () => {
+      openDeskModal(chronicle, meta);
+    });
+  };
+
+  const openDeskModal = (chronicle, meta) => {
+    const modal    = $("[data-desk-modal]");
+    const card     = $("[data-desk-palette]", modal);
+    if (!modal || !card) return;
+
+    const palette  = chronicle.palette || "normal";
+    card.setAttribute("data-desk-palette", palette);
+
+    const lang  = curLang();
+    const pick3 = (key) => {
+      if (lang !== "en" && chronicle[key + "_" + lang]) return chronicle[key + "_" + lang];
+      return chronicle[key] || "";
+    };
+
+    $("[data-desk-year]",       modal).textContent = chronicle.year || "";
+    $("[data-desk-age]",        modal).textContent = tr("desk_age_tpl", { age: chronicle.age || "" });
+    $("[data-desk-historical]", modal).textContent = pick3("historical_context");
+    $("[data-desk-challenge]",  modal).textContent = pick3("personal_challenge");
+    $("[data-desk-impact]",     modal).textContent = pick3("lore_impact");
+
+    const readBtn = $("[data-desk-read-btn]", modal);
+    if (readBtn) {
+      readBtn.textContent = progress.desk_read
+        ? tr("desk_read_done")
+        : tr("desk_read_btn");
+      readBtn.onclick = () => {
+        if (!progress.desk_read) {
+          progress.desk_read = true;
+          saveProgress();
+          /* Grant a small XP reward for reading the desk */
+          if (window.RealPlayer) {
+            window.RealPlayer.addResource("xp", 50);
+            try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
+          }
+          toast(tr("desk_read_toast"));
+        }
+        closeDeskModal();
+        /* Refresh battle requirements panel */
+        paintFerdowsiDesk(meta);
+        if (window._modalLore) paintBattle(window._modalLore);
+      };
+    }
+
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    haptic("light");
+  };
+
+  const closeDeskModal = () => {
+    const modal = $("[data-desk-modal]");
+    if (!modal) return;
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  $$("[data-desk-close]").forEach(el => el.addEventListener("click", closeDeskModal));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && $("[data-desk-modal]").getAttribute("aria-hidden") === "false")
+      closeDeskModal();
+  });
 
   /* ---------- quiz ---------- */
   /* ── Quiz tier definitions ── */
@@ -944,6 +1060,7 @@
     }
     currentScenes = lore.scenes || [];
     modalLore = lore;
+    window._modalLore = lore;
     render({ chapterMeta, lore, quizzes });
 
     /* ── Retroactive catch-up ─────────────────────────────────────────────

@@ -30,7 +30,21 @@
       "required_previous_chapter": null,
       "quiz_count": 16,
       "summary_fa": "پیش از هر شاهی، فردوسی با خدا می‌گشاید — خداوندِ جان و خرد. کیومرث از کوه‌های مقدسِ پارس برمی‌خیزد. نخستین قانون‌های تمدن. بعد اهریمن از دود پایین می‌فرستد و سیامک می‌افتد. نخستین غم داخلِ دنیا می‌شود.",
-      "summary_tg": "Пеш аз ҳар подшоҳе, Фирдавсӣ бо Худо мекушояд. Киюмарс аз кӯҳҳои муқаддаси Порс бармехезад. Аввалин қонунҳои тамаддун. Баъд Аҳриман аз дуд фуруд меояд ва Сиёмак меафтад."
+      "summary_tg": "Пеш аз ҳар подшоҳе, Фирдавсӣ бо Худо мекушояд. Киюмарс аз кӯҳҳои муқаддаси Порс бармехезад. Аввалин қонунҳои тамаддун. Баъд Аҳриман аз дуд фуруд меояд ва Сиёмак меафтад.",
+      "ferdowsi_chronicle": {
+        "age": 37,
+        "year": "977 CE",
+        "palette": "normal",
+        "historical_context": "Ferdowsi begins the Shahnameh at 37 in Tus, Khorasan, taking up the epic abandoned by the murdered poet Daqiqi. The Samanid dynasty still holds Khorasan. He has modest land income, a family, and the confidence — or the ignorance — of a man who does not yet know the task will take 35 years.",
+        "historical_context_fa": "فردوسی در ۳۷ سالگی در طوس خراسان شاهنامه را شروع می‌کند، حماسه‌ای که شاعرِ کشته‌شده دقیقی رها کرده بود. سلسله‌ی سامانیان هنوز خراسان را نگه می‌دارد. او درآمدِ زمین متواضعی دارد و اعتمادِ مردی که هنوز نمی‌داند کار ۳۵ سال طول می‌کشد.",
+        "historical_context_tg": "Фирдавсӣ дар 37-солагӣ дар Тус, Хуросон Шоҳномаро оғоз мекунад, ҳамосаеро ки шоири кушташудаи Дақиқӣ тарк карда буд.",
+        "personal_challenge": "The sheer scale — 60,000 couplets ahead, 35 years to go. Daqiqi completed only 1,000 before his slave killed him. Ferdowsi starts where grief left off, at the beginning of everything.",
+        "personal_challenge_fa": "مقیاسِ خیره‌کننده — ۶۰,۰۰۰ بیت پیش رو، ۳۵ سال باقی. دقیقی فقط ۱,۰۰۰ بیت قبل از مرگ تمام کرد. فردوسی از جایی که اندوه متوقف شده شروع می‌کند.",
+        "personal_challenge_tg": "Миқёси хиракунанда — 60,000 байт пеш рӯ, 35 сол монда. Дақиқӣ танҳо 1,000 байт пеш аз марг тамом кард.",
+        "lore_impact": "The opening 'be nam-e Khoda-vand-e jan o kherad' is Ferdowsi's own theological commitment on the page — he places wisdom before all kings. It is also a statement of personal belief that cost him comfort in a court that preferred warriors to poets.",
+        "lore_impact_fa": "آغازِ «به نامِ خداوندِ جانِ خرد» تعهدِ الاهیاتیِ خودِ فردوسی بر صفحه است — خرد را پیش از همه‌ی شاهان می‌گذارد. این باوری است که در دربارِ جنگجوپرور برایش هزینه داشت.",
+        "lore_impact_tg": "«Ба номи Худованди ҷону хирад» — ӯ хирадро пеш аз ҳама подшоҳон мегузорад. Ин иқрори шахсии эътиқод аст."
+      }
     },
     {
       "id": 2,
@@ -58,7 +72,21 @@
       "required_previous_chapter": "keyumars",
       "quiz_count": 16,
       "summary_fa": "هوشنگ با چخماق به ماری می‌زند. سنگ خطا می‌کند، اما جرقه‌ای برجهید و درختی آتش گرفت. از آن شب مردم آتش شناختند. آهن آب شد. آب به کشتزار رفت.",
-      "summary_tg": "Ҳушанг бо чахмоқ ба мор мезанад. Санг хато мекунад, аммо ҷарақае парид ва дарахте сӯхт. Аз он шаб мардум оташ шинохтанд."
+      "summary_tg": "Ҳушанг бо чахмоқ ба мор мезанад. Санг хато мекунад, аммо ҷарақае парид ва дарахте сӯхт. Аз он шаб мардум оташ шинохтанд.",
+      "ferdowsi_chronicle": {
+        "age": 38,
+        "year": "978 CE",
+        "palette": "normal",
+        "historical_context": "The second year of the Shahnameh. Still under Samanid patronage. The Khorasan winters are long; Ferdowsi writes by oil lamp in Tus, producing the finest Persian verse at roughly two polished couplets a day.",
+        "historical_context_fa": "سالِ دومِ شاهنامه. زمستان‌های خراسان طولانی هستند؛ فردوسی زیرِ نورِ چراغِ روغنی در طوس می‌نویسد.",
+        "historical_context_tg": "Соли дуввуми Шоҳнома. Зимистонҳои Хуросон дарозанд; Фирдавсӣ зери нури чироғи равғанӣ дар Тус менависад.",
+        "personal_challenge": "The slowness. The best couplets take all day to perfect. He is working at the pace of a craftsman — careful, unhurried — while knowing the full scope of what remains.",
+        "personal_challenge_fa": "آهستگی. بهترین ابیات تمامِ یک روز طول می‌کشند. در سرعتِ یک صنعتگر — دقیق، بی‌شتاب — کار می‌کند.",
+        "personal_challenge_tg": "Оҳистагӣ. Беҳтарин байтҳо тамоми рӯз вақт мегиранд. Бо суръати як ҳунарманд — дақиқ, бешитоб — кор мекунад.",
+        "lore_impact": "Hushang strikes a flint at a snake, misses, but a spark catches a tree — fire, discovered by accident. Ferdowsi wrote this chapter by lamplight, literally making something from nothing. The accident of fire is also the accident of poetry.",
+        "lore_impact_fa": "هوشنگ چخماقی به مار می‌زند، خطا می‌کند، اما جرقه‌ای درختی را می‌گیرد — آتش، از تصادف کشف می‌شود. فردوسی این فصل را در روشناییِ چراغ نوشت.",
+        "lore_impact_tg": "Ҳушанг чахмоқе ба мор мезанад, хато мекунад, аммо ҷарақае дарахте мегирад — оташ, тасодуфан кашф мешавад."
+      }
     },
     {
       "id": 3,
@@ -86,7 +114,21 @@
       "required_previous_chapter": "hushang",
       "quiz_count": 16,
       "summary_fa": "تهمورثِ دیوبند با عصایِ سرو از دودوسایه می‌راند. دیوان را در زنجیر می‌کشد. برای جان‌هایشان سی الفبا یاد می‌دهند. دانش با مهربانی خریده شد.",
-      "summary_tg": "Таҳмурасти Девбанд аз дуду соя мерондад. Девонро занҷир мезанад. Барои ҷонҳояшон си алифбо меомӯзонанд."
+      "summary_tg": "Таҳмурасти Девбанд аз дуду соя мерондад. Девонро занҷир мезанад. Барои ҷонҳояшон си алифбо меомӯзонанд.",
+      "ferdowsi_chronicle": {
+        "age": 39,
+        "year": "979 CE",
+        "palette": "normal",
+        "historical_context": "The Samanid state weakening visibly under Ghaznavid military pressure from the east. Ferdowsi watches the political sky darken while writing deep in the mythological past.",
+        "historical_context_fa": "دولتِ سامانی آشکارا تحتِ فشارِ نظامیِ غزنوی از شرق ضعیف می‌شود. فردوسی آسمانِ سیاسی را تیره می‌بیند در حالی که در گذشته‌ای اساطیری می‌نویسد.",
+        "historical_context_tg": "Давлати Сомонӣ зери фишори ҳарбии Ғазнавӣ аз шарқ ошкоро заиф мешавад. Фирдавсӣ осмони сиёсиро торик мебинад.",
+        "personal_challenge": "The growing awareness that patronage is precarious. The ruler who might fund great poetry could be replaced at any moment by one who prefers swords — and the poem is only in its third year.",
+        "personal_challenge_fa": "آگاهیِ فزاینده که حمایت ناپایدار است. حاکمی که ممکن است شعرِ بزرگ را حمایت کند می‌تواند هر لحظه جایگزینِ شمشیردوستی شود.",
+        "personal_challenge_tg": "Огоҳии афзоянда ки ҳимоят нопойдор аст. Ҳокиме ки метавонад шеъри бузургро ҳимоят кунад ҳар лаҳза ҷойгузин мешавад.",
+        "lore_impact": "Tahmuras imprisons demons who must teach him the world's alphabets to earn their freedom. A ruler who extracts knowledge from captives — Ferdowsi understood this bargain from both sides. He too was a captive of the language he loved.",
+        "lore_impact_fa": "تهمورث دیوانی را زندانی می‌کند که باید برای آزادی‌شان الفبای جهان را بیاموزند. فردوسی این معامله را از هر دو طرف می‌فهمید.",
+        "lore_impact_tg": "Таҳмурас девонро зиндонӣ мекунад ки бояд барои озодиашон алифбои ҷаҳонро биёмӯзонанд."
+      }
     },
     {
       "id": 4,
@@ -114,7 +156,21 @@
       "required_previous_chapter": "tahmuras",
       "quiz_count": 16,
       "summary_fa": "جمشید مردم را به چهار پیشه تقسیم کرد. تختِ بلورین برپا کرد و دیوان به آسمانش بردند. سیصد سالِ روشنایی. بعد غرور: ادعای الوهیت کرد و فرّ از او رفت.",
-      "summary_tg": "Ҷамшед мардумро ба чаҳор пеша тақсим кард. Тахти буллӯрин бардошт. Сесад соли равшанӣ. Баъд ғурур: даъвои худоӣ кард ва фарр аз ӯ рафт."
+      "summary_tg": "Ҷамшед мардумро ба чаҳор пеша тақсим кард. Тахти буллӯрин бардошт. Сесад соли равшанӣ. Баъд ғурур: даъвои худоӣ кард ва фарр аз ӯ рафт.",
+      "ferdowsi_chronicle": {
+        "age": 40,
+        "year": "980 CE",
+        "palette": "normal",
+        "historical_context": "Ferdowsi at 40 — the symbolic midpoint of life. Land taxes in Khorasan are heavy under the changing administration. He writes about civilization's golden age from inside a narrowing economic situation.",
+        "historical_context_fa": "فردوسی در ۴۰ سالگی — نقطه‌ی میانیِ نمادینِ زندگی. مالیاتِ زمین در خراسان سنگین است. از دلِ وضعِ اقتصادیِ رو به تنگی درباره‌ی عصرِ طلاییِ تمدن می‌نویسد.",
+        "historical_context_tg": "Фирдавсӣ дар 40-солагӣ. Андози замин дар Хуросон вазнин аст. Аз дохили вазъи иқтисодии рӯ ба танг дар бораи асри тиллоии тамаддун менависад.",
+        "personal_challenge": "The fear of material failure shadowing artistic ambition. The land that sustains the poem is finite. Jamshid builds everything, then claims divinity, and loses everything. Ferdowsi knew what it meant for pride to outlive wisdom.",
+        "personal_challenge_fa": "ترسِ شکستِ مادی که بر جاه‌طلبیِ هنری سایه می‌افکند. زمینی که شاهنامه را تأمین می‌کند محدود است.",
+        "personal_challenge_tg": "Тарси шикасти моддӣ бар ҳирси ҳунарӣ соя меафканад. Замине ки Шоҳномаро таъмин мекунад маҳдуд аст.",
+        "lore_impact": "Jamshid's three hundred years of light followed by the claiming of godhood and the total loss of farr — the divine grace that makes a king. Ferdowsi wrote the fall with precision. He knew what it meant for ambition to eat itself.",
+        "lore_impact_fa": "سیصد سالِ روشنایی جمشید که با ادعای خدایی و از دست دادنِ کاملِ فرّ دنبال شد. فردوسی این سقوط را با دقت نوشت.",
+        "lore_impact_tg": "Сесад соли равшании Ҷамшед ки бо даъвои худоӣ ва аз даст додани фарр дунбол шуд. Фирдавсӣ ин суқутро бо дақиқат навишт."
+      }
     },
     {
       "id": 5,
@@ -142,7 +198,21 @@
       "required_previous_chapter": "jamshid",
       "quiz_count": 16,
       "summary_fa": "از بوسه‌ی ابلیس دو مارِ سیاه از دوشِ ضحاک رویید. هر روز دو مغزِ انسانی طلبیدند. هزار سالِ تاریکی — تا پیشبندِ آهنگری به عنوانِ درفش برافراشته شد.",
-      "summary_tg": "Аз бӯсаи Иблис ду морид аз дӯши Заҳҳок рӯид. Ҳар рӯз ду мағзи инсон талабиданд. Ҳазор соли торикӣ."
+      "summary_tg": "Аз бӯсаи Иблис ду морид аз дӯши Заҳҳок рӯид. Ҳар рӯз ду мағзи инсон талабиданд. Ҳазор соли торикӣ.",
+      "ferdowsi_chronicle": {
+        "age": 41,
+        "year": "981 CE",
+        "palette": "normal",
+        "historical_context": "Mahmud of Ghazni's father Sabuktigin consolidates power in eastern Khorasan. Tyranny is not an abstraction for Ferdowsi — he is watching it assemble itself around his province.",
+        "historical_context_fa": "پدرِ محمودِ غزنوی، سبکتکین، قدرت را در شرقِ خراسان تثبیت می‌کند. ستم برای فردوسی انتزاع نیست — دارد می‌بیند که در اطرافِ ولایتش شکل می‌گیرد.",
+        "historical_context_tg": "Падари Маҳмуди Ғазнавӣ, Субуктагин, қудратро дар шарқи Хуросон мустаҳкам мекунад.",
+        "personal_challenge": "Writing a thousand years of darkness under a serpent king while a real power assembles itself. The poem's tyranny and the political one were running in parallel.",
+        "personal_challenge_fa": "نوشتنِ هزار سالِ تاریکی زیرِ شاهِ ماردوش در حالی که قدرتِ واقعی دارد خودش را می‌سازد.",
+        "personal_challenge_tg": "Навиштани ҳазор соли торикӣ зери подшоҳи морӯш дар ҳоле ки қудрати воқеӣ худашро месозад.",
+        "lore_impact": "Evil growing from a kiss on the shoulder. Ferdowsi understood this intimacy of corruption — power that presents itself as closeness before it devours you. He was writing toward a patron who would enact this very dynamic.",
+        "lore_impact_fa": "شرّی که از بوسه‌ای بر شانه می‌روید. فردوسی این صمیمیتِ فساد را می‌فهمید — قدرتی که خودش را به عنوانِ نزدیکی نشان می‌دهد قبل از آنکه ببلعد.",
+        "lore_impact_tg": "Шарре ки аз бӯсае бар китф мерӯяд. Фирдавсӣ ин наздикии фасодро мефаҳмид."
+      }
     },
     {
       "id": 6,
@@ -170,7 +240,21 @@
       "required_previous_chapter": "zahhak",
       "quiz_count": 16,
       "summary_fa": "کاوه‌ی آهنگر پیشبندِ چرمینش را بر نیزه برافراشت و مردم پارس راه افتادند. فریدون گرزِ گاوسر گرفت. ضحاک برای همیشه به دماوند بسته شد. پادشاهی میانِ سه پسر تقسیم شد.",
-      "summary_tg": "Ковааи Оҳангар пешбандашро бардошт ва мардуми Порс роҳ афтоданд. Фаридун гурзи говсар гирифт. Заҳҳок ба Дамованд бандшуд."
+      "summary_tg": "Ковааи Оҳангар пешбандашро бардошт ва мардуми Порс роҳ афтоданд. Фаридун гурзи говсар гирифт. Заҳҳок ба Дамованд бандшуд.",
+      "ferdowsi_chronicle": {
+        "age": 42,
+        "year": "982 CE",
+        "palette": "normal",
+        "historical_context": "His daughter's wedding that year brought both joy and expense. The theme of inheritance — what a father passes to his children across generations — became personal.",
+        "historical_context_fa": "ازدواجِ دخترش آن سال هم شادی و هم هزینه آورد. موضوعِ ارث — آنچه پدر به فرزندانش در نسل‌ها منتقل می‌کند — شخصی شد.",
+        "historical_context_tg": "Арӯсии духтараш он сол ҳам шодӣ ва ҳам хароҷот овард. Мавзӯи мерос — он чи падар ба фарзандонаш мегузорад — шахсӣ шуд.",
+        "personal_challenge": "The tension between what we build and what survives us. Fereydun divides the world among three sons; two murder the third. Ferdowsi was building something that might outlive him — or be divided and destroyed.",
+        "personal_challenge_fa": "تنشِ بینِ آنچه می‌سازیم و آنچه از ما باقی می‌ماند. فریدون دنیا را بینِ سه پسر تقسیم می‌کند؛ دو تا سومی را می‌کشند.",
+        "personal_challenge_tg": "Тазоди байни он чи месозем ва он чи аз мо боқӣ мемонад. Фаридун дунёро байни се писар тақсим мекунад.",
+        "lore_impact": "The blacksmith's leather apron raised as a battle standard. A craftsman's tool becoming the symbol of liberation. Ferdowsi — himself a craftsman of verse — put his own trade into this image deliberately.",
+        "lore_impact_fa": "پیشبندِ چرمینِ آهنگر که به عنوانِ درفشِ جنگ بالا می‌رود. ابزارِ یک صنعتگر که نمادِ آزادی می‌شود. فردوسی — خودش صنعتگرِ شعر — پیشه‌اش را عمداً در این تصویر گذاشت.",
+        "lore_impact_tg": "Пешбанди чармини оҳангар ки ҳамчун дарафши ҷанг боло мешавад. Фирдавсӣ пешаи худашро дар ин тасвир гузошт."
+      }
     },
     {
       "id": 7,
@@ -195,7 +279,21 @@
       "required_previous_chapter": "fereydun",
       "quiz_count": 16,
       "summary_fa": "ایرج کوچکترین و مهربانترینِ پسرانِ فریدون بود. برادران طوتر و سلم کشتندش. فریدون پانصدساله چهار روز تنها نشست. روزِ چهارم منوچهر را خواند. انتقام شخصی بود و شخصی پرداخته شد.",
-      "summary_tg": "Эраҷ хурдтарин ва меҳрубонтарини писарони Фаридун буд. Бародарон куштанд. Манӯчеҳр ба ками рафт ва интиқом гирифт."
+      "summary_tg": "Эраҷ хурдтарин ва меҳрубонтарини писарони Фаридун буд. Бародарон куштанд. Манӯчеҳр ба ками рафт ва интиқом гирифт.",
+      "ferdowsi_chronicle": {
+        "age": 43,
+        "year": "983 CE",
+        "palette": "normal",
+        "historical_context": "His son is growing up well. A period of relative domestic peace in an increasingly turbulent political landscape. The poem is six years old now.",
+        "historical_context_fa": "پسرش خوب در حالِ رشد است. دوره‌ای از آرامشِ نسبیِ خانگی در چشم‌اندازِ سیاسیِ به‌طورِ فزاینده‌ای طوفانی. شعر حالا شش ساله است.",
+        "historical_context_tg": "Писараш хуб калон мешавад. Давраи ором нисбии хонагӣ. Шеър акнун шашсола аст.",
+        "personal_challenge": "40,000 couplets still ahead. The arithmetic of the remaining work becomes clearer every year. The poem is a mountain whose summit keeps receding.",
+        "personal_challenge_fa": "۴۰,۰۰۰ بیت هنوز پیش رو. حسابِ کارِ باقی‌مانده هر سال روشن‌تر می‌شود. شعر کوهی است که قله‌اش هر بار عقب می‌نشیند.",
+        "personal_challenge_tg": "40,000 байт ҳанӯз пеш рӯ. Ҳисоби кори боқимонда ҳар сол равшантар мешавад.",
+        "lore_impact": "Justice rebuilt after inherited tragedy. Manuchehr's revenge is personal and completed. The chapter offered Ferdowsi a rare feeling: narrative resolution. A grief answered. He could shape endings even when he could not shape his world.",
+        "lore_impact_fa": "عدالت که بعد از تراژدیِ به ارث رسیده بازسازی می‌شود. فصل به فردوسی احساسِ نادری بخشید: پایانی که عملاً می‌رسد.",
+        "lore_impact_tg": "Адолате ки пас аз фоҷиаи мерос бозсозӣ мешавад. Фасл ба Фирдавсӣ эҳсоси нодире бахшид: поёне ки воқеан мерасад."
+      }
     },
     {
       "id": 8,
@@ -220,7 +318,21 @@
       "required_previous_chapter": "manuchehr",
       "quiz_count": 16,
       "summary_fa": "نوذر تخت را بدون فضیلتی که نگهش می‌داشت به ارث برد. فرماندهانِ کهنه را کنار گذاشت. افراسیاب از آنطرفِ جیحون دید. ایران باز بود. شاهی بدون فرّ نمی‌داند که دارد کوچک می‌شود.",
-      "summary_tg": "Нӯзар тахтро бе фазилат ба мерос гирифт. Афросиёб аз рӯди Ҷайҳун дид ва ҳамла кард. Эрон даргоҳ буд."
+      "summary_tg": "Нӯзар тахтро бе фазилат ба мерос гирифт. Афросиёб аз рӯди Ҷайҳун дид ва ҳамла кард. Эрон даргоҳ буд.",
+      "ferdowsi_chronicle": {
+        "age": 44,
+        "year": "984 CE",
+        "palette": "normal",
+        "historical_context": "The Samanid dynasty visibly collapsing under military pressure. Mahmud of Ghazni — who will one day receive and under-reward the poem — is consolidating power. Ferdowsi is writing about the failure of inheritance.",
+        "historical_context_fa": "سلسله‌ی سامانیان آشکارا تحتِ فشارِ نظامی فرو می‌پاشد. محمودِ غزنوی — که روزی شاهنامه را دریافت و کم پاداش می‌دهد — دارد قدرت را تثبیت می‌کند.",
+        "historical_context_tg": "Сулолаи Сомонӣ ошкоро зери фишори ҳарбӣ фурӯ меафтад. Маҳмуди Ғазнавӣ қудратро мустаҳкам мекунад.",
+        "personal_challenge": "Watching a throne pass to someone who does not understand its responsibilities. The poem itself could end up in such hands. The fear was specific and well-founded.",
+        "personal_challenge_fa": "تماشای انتقالِ تخت به کسی که مسئولیت‌هایش را نمی‌فهمد. خودِ شعر می‌توانست در چنین دست‌هایی پایان یابد.",
+        "personal_challenge_tg": "Тамошои гузаштани тахт ба касе ки масъулиятҳояшро намефаҳмад. Худи шеър метавонист дар чунин дастҳо поён ёбад.",
+        "lore_impact": "A king without virtue inheriting what virtue built — the farr abandons him automatically, without drama. Ferdowsi was watching this happen around him in real time and writing it as the poem's structure rather than a lesson.",
+        "lore_impact_fa": "شاهی بدونِ فضیلت که آنچه فضیلت ساخته به ارث می‌برد — فرّ خودبه‌خود، بدونِ دراما، از او می‌رود.",
+        "lore_impact_tg": "Подшоҳе бидуни фазилат ки он чи фазилат сохтааст ба мерос мегирад — фарр худбахуд, бидуни дарама, аз ӯ меравад."
+      }
     },
     {
       "id": 9,
@@ -248,7 +360,21 @@
       "required_previous_chapter": "nozar",
       "quiz_count": 16,
       "summary_fa": "سام پسرش را که با موهایِ سفید متولد شده بود در البرز رها کرد. سیمرغ او را برداشت و در آشیانه‌اش پرورش داد. سام خواب دید و برگشت. سیمرغ زال را با یک پر و یک وعده بازگرداند.",
-      "summary_tg": "Сом писарашро дар Алборз гузошт. Симурғ бардошт ва дар лона калон кард. Сом рӯъё дид ва баргашт. Симурғ Золро бо пар ва ваъда баргардонд."
+      "summary_tg": "Сом писарашро дар Алборз гузошт. Симурғ бардошт ва дар лона калон кард. Сом рӯъё дид ва баргашт. Симурғ Золро бо пар ва ваъда баргардонд.",
+      "ferdowsi_chronicle": {
+        "age": 45,
+        "year": "985 CE",
+        "palette": "normal",
+        "historical_context": "Ferdowsi's son is about twelve. The poet begins to see himself in Zal — the man born white-haired, marked as wrong by his era, raised by something older and greater than any court.",
+        "historical_context_fa": "پسرِ فردوسی حدوداً دوازده ساله است. شاعر شروع می‌کند خودش را در زال ببیند — مردی که با موی سفید متولد شده، توسطِ عصرش اشتباه دیده شده، توسطِ چیزی کهن‌تر از هر دربار پرورش یافته.",
+        "historical_context_tg": "Писари Фирдавсӣ тақрибан дувоздаҳ сола. Шоир худашро дар Зол мебинад.",
+        "personal_challenge": "The peculiar loneliness of being a poet in a century of warriors. A white-haired child abandoned by his father — the omen of wrong-ness. Ferdowsi understood being born in the wrong time for what you carry.",
+        "personal_challenge_fa": "تنهاییِ عجیبِ یک شاعر بودن در قرنِ جنگجویان. کودکِ موی‌سفیدی که پدرش رهایش کرده. فردوسی می‌دانست که در زمانِ نادرستی برای آنچه حمل می‌کنی متولد شوی.",
+        "personal_challenge_tg": "Танҳоии аҷиби шоир будан дар асри ҷангиён. Фирдавсӣ медонист ки дар замони нодурусташ барои он чи ҳамл мекунӣ таваллуд шавӣ.",
+        "lore_impact": "The Simorgh educates from beyond the ordinary world — patience, knowledge, the long view. Ferdowsi believed this was what the Persian poetic tradition was doing for him: raising him on something older than any court. He was Zal; the tradition was the Simorgh.",
+        "lore_impact_fa": "سیمرغ از فراتر از دنیای معمولی آموزش می‌دهد — صبر، دانش، دیدِ دراز. فردوسی باور داشت که سنتِ شعرِ فارسی همین کار را با او می‌کند.",
+        "lore_impact_tg": "Симурғ аз фаротари дунёи муқаррарӣ омӯзиш медиҳад — сабр, дониш, дидгоҳи дароз."
+      }
     },
     {
       "id": 10,
@@ -272,7 +398,21 @@
       "required_previous_chapter": "zal",
       "quiz_count": 16,
       "summary_fa": "زال از طریقِ توصیف عاشق رودابه شد. رودابه هم از طریقِ توصیف عاشقِ زال شد. ندیمه‌ها ملاقاتی در باغ ترتیب دادند. رودابه موهایش را از پنجره آویخت. زال بالا رفت.",
-      "summary_tg": "Зол аз тавсиф ба Рӯдоба ошиқ шуд. Рӯдоба ҳам. Надима вохӯриро дар боғ тартиб дод. Рӯдоба мӯяшро овезон кард. Зол боло рафт."
+      "summary_tg": "Зол аз тавсиф ба Рӯдоба ошиқ шуд. Рӯдоба ҳам. Надима вохӯриро дар боғ тартиб дод. Рӯдоба мӯяшро овезон кард. Зол боло рафт.",
+      "ferdowsi_chronicle": {
+        "age": 46,
+        "year": "986 CE",
+        "palette": "melancholic",
+        "historical_context": "Ferdowsi's wife had died some years before. He is writing about young love across a distance while living alone in Tus — a widower approaching fifty, composing verses about courtship by lamplight.",
+        "historical_context_fa": "همسرِ فردوسی چند سالِ پیش درگذشته. دارد درباره‌ی عشقِ جوانی در فاصله می‌نویسد در حالی که تنها در طوس زندگی می‌کند — بیوه‌مردی در آستانه‌ی پنجاه.",
+        "historical_context_tg": "Ҳамсари Фирдавсӣ чанд сол пеш даргузаштааст. Дар бораи ишқи ҷавонӣ дар масофа менависад.",
+        "personal_challenge": "The ache of writing love with such accuracy when one has loved and lost. Zal falls in love through description before ever meeting Rudabeh — faith before evidence, recognition before presence.",
+        "personal_challenge_fa": "دردِ نوشتنِ عشق با این دقت وقتی کسی دوست داشته و از دست داده. زال پیش از دیدنِ رودابه از طریقِ توصیف عاشق می‌شود — ایمان پیش از شاهد.",
+        "personal_challenge_tg": "Дарди навиштани ишқ бо чунин дақиқат вақте касе дӯст доштааст ва аз даст додааст.",
+        "lore_impact": "Rudabeh lets her hair down from the window — love that doesn't wait for the conventional opening. Ferdowsi wrote this chapter knowing exactly what he was describing. And exactly what he had lost.",
+        "lore_impact_fa": "رودابه موهایش را از پنجره آویزان می‌کند — عشقی که منتظرِ فرصتِ متعارف نمی‌ماند. فردوسی این فصل را با دانستنِ دقیقِ آنچه توصیف می‌کرد نوشت.",
+        "lore_impact_tg": "Рӯдоба мӯяшро аз тиреза овезон мекунад. Фирдавсӣ ин фаслро бо донистани дақиқи он чи тавсиф мекард навишт."
+      }
     },
     {
       "id": 11,
@@ -296,7 +436,21 @@
       "required_previous_chapter": "rudabeh",
       "quiz_count": 16,
       "summary_fa": "زال پرِ سیمرغ را سوزاند. سیمرغ سزارینی را که سامِ جراحان انجام دادند راهنمایی کرد. رودابه زندگی. فرزند مثلِ شیرِ جوان بزرگ بود و مثلِ او بانگ برآورد. نامش را رستم گذاشتند.",
-      "summary_tg": "Зол пари Симурғро сӯзонд. Симурғ омад. Рӯдоба зиндагӣ. Фарзанд монанди шерча буд. Номашро Рустам гузоштанд."
+      "summary_tg": "Зол пари Симурғро сӯзонд. Симурғ омад. Рӯдоба зиндагӣ. Фарзанд монанди шерча буд. Номашро Рустам гузоштанд.",
+      "ferdowsi_chronicle": {
+        "age": 47,
+        "year": "987 CE",
+        "palette": "normal",
+        "historical_context": "Ferdowsi's son is now about fourteen. He has kept him healthy through childhood. The parallel with Rostam's dangerous birth — the child who would not come, the last resort, the feather — was personal.",
+        "historical_context_fa": "پسرِ فردوسی حالا حدودِ چهارده سال دارد. او را در طولِ کودکی سالم نگه داشته. مشابهتِ آن با تولدِ خطرناکِ رستم — فرزندی که نمی‌آمد — شخصی بود.",
+        "historical_context_tg": "Писари Фирдавсӣ акнун тақрибан чордаҳ сола. Паралели бо таваллуди хатарноки Рустам шахсӣ буд.",
+        "personal_challenge": "The fear that everything built could still be undone at the last moment. Rudabeh was dying. The feather was the last resort. Every father knows this terror.",
+        "personal_challenge_fa": "ترس از اینکه همه چیزی که ساخته شده هنوز در لحظه‌ی آخر می‌تواند به هم بریزد. هر پدری این وحشت را می‌شناسد.",
+        "personal_challenge_tg": "Тарс аз ин ки ҳама чизи сохташуда ҳанӯз дар лаҳзаи охир аз ҳам рехтан мешавад.",
+        "lore_impact": "The child born too large for ordinary instruments — Rakhsh from ten thousand horses, the mace that bent. Ferdowsi wrote his son into this birth. The pillar that would carry the world for five generations was also his son at fourteen, growing.",
+        "lore_impact_fa": "کودکی بزرگ‌تر از ابزارِ معمولی. فردوسی پسرش را در این تولد نوشت. ستونی که جهان را برای پنج نسل حمل می‌کند پسرش هم بود در چهارده‌سالگی، در حالِ رشد.",
+        "lore_impact_tg": "Кӯдаке аз абзори муқаррарӣ бузургтар. Фирдавсӣ писарашро дар ин таваллуд навишт."
+      }
     },
     {
       "id": 12,
@@ -324,7 +478,21 @@
       "required_previous_chapter": "birth-of-rostam",
       "quiz_count": 16,
       "summary_fa": "رستم ده هزار اسب را فشرد. رخش ایستاد. هفت خان آمد — شیری که رخش کشت، بیابان، اژدها، جادوگری، نگهبانی، سردارِ دیوان، دیوِ سپید. هر آزمون درسی بود. هفت خان هرگز تمام نمی‌شود.",
-      "summary_tg": "Рустам даҳ ҳазор асп фишурд. Рахш истод. Ҳафтхон омад. Ҳар озмун дарсе буд. Ҳафтхон тамом намешавад."
+      "summary_tg": "Рустам даҳ ҳазор асп фишурд. Рахш истод. Ҳафтхон омад. Ҳар озмун дарсе буд. Ҳафтхон тамом намешавад.",
+      "ferdowsi_chronicle": {
+        "age": 48,
+        "year": "988 CE",
+        "palette": "normal",
+        "historical_context": "Deep in the poem's longest arc — the Haft Khan, the hero's education. Ferdowsi is past the halfway point of the work. His son is a teenager. The poem has outlasted one generation of political rulers.",
+        "historical_context_fa": "در اعماقِ طولانی‌ترین قوسِ شعر — هفت خان. فردوسی از نقطه‌ی میانیِ کار گذشته. پسرش نوجوان است. شعر یک نسل از حاکمانِ سیاسی را از سر گذرانده.",
+        "historical_context_tg": "Дар аъмоқи тӯлонитарин қавси шеър — Ҳафтхон. Фирдавсӣ аз нуқтаи миёна гузаштааст.",
+        "personal_challenge": "His own work was the seventh labour — entering the fortress of the Persian tradition from within, disguised as a craftsman, and burning it from inside to remake it. The poem IS the ordeal.",
+        "personal_challenge_fa": "کارِ خودش هفتمین خان بود — وارد شدن به دژِ سنتِ فارسی از داخل، در لباسِ صنعتگر، و سوزاندنش از درون تا بازسازی شود.",
+        "personal_challenge_tg": "Кори худаш ҳафтумин хон буд — ворид шудан ба деҷи суннати Форсӣ аз дарун, дар либоси ҳунарманд.",
+        "lore_impact": "The Seven Labours are educations, not victories. This is also Ferdowsi's credo about the poem: every chapter a different test, each requiring a different quality. Strength, patience, cleverness, speech, endurance — and finally disguise.",
+        "lore_impact_fa": "هفت خان آموزش‌ها هستند، نه پیروزی‌ها. این کردوی فردوسی درباره‌ی شعر هم هست: هر فصل آزمونِ متفاوتی.",
+        "lore_impact_tg": "Ҳафтхон таълимҳо ҳастанд, на пирӯзиҳо. Ин инчунин эътиқоди Фирдавсӣ дар бораи шеър аст."
+      }
     },
     {
       "id": 13,
@@ -351,7 +519,21 @@
       "required_previous_chapter": "rostam",
       "quiz_count": 16,
       "summary_fa": "رستم یک شب در سمنگان ماند. تهمینه آمد. بازوبند را داد. سهراب متولد شد، با سه برابرِ سرعتِ معمول رشد کرد، دوازده‌ساله فهمید پدرش کیست. در دشت روبرو شدند. رستم پسرش را کشت.",
-      "summary_tg": "Рустам як шаб дар Самангон монд. Таҳмина омад. Браслетро дод. Суҳроб таваллуд шуд, калон шуд, медонист. Дар майдон рӯ ба рӯ шуданд. Рустам писарашро кушт."
+      "summary_tg": "Рустам як шаб дар Самангон монд. Таҳмина омад. Браслетро дод. Суҳроб таваллуд шуд, калон шуд, медонист. Дар майдон рӯ ба рӯ шуданд. Рустам писарашро кушт.",
+      "ferdowsi_chronicle": {
+        "age": 60,
+        "year": "~1000 CE",
+        "palette": "tragic",
+        "historical_context": "Ferdowsi's real son died around this period — the timing of the Sohrab chapter was not random. The poet who had written 30,000 couplets about heroism was now writing the death of a son, from the inside. His grief was still wet when the ink dried.",
+        "historical_context_fa": "پسرِ واقعیِ فردوسی در همین دوره درگذشت — زمانبندیِ فصلِ سهراب تصادفی نبود. شاعری که ۳۰,۰۰۰ بیت درباره‌ی قهرمانی نوشته بود حالا مرگِ یک پسر را از درون می‌نوشت.",
+        "historical_context_tg": "Писари воқеии Фирдавсӣ дар ин давра даргузашт — вақтбандии фасли Суҳроб тасодуфӣ набуд.",
+        "personal_challenge": "His son — his real son, not a character — died before the Shahnameh was finished. The medicine that could have saved him came too late or not at all. Kay Kavus withholds the cure for political reasons. Ferdowsi knew this kind of calculation.",
+        "personal_challenge_fa": "پسرش — پسرِ واقعیش، نه یک شخصیت — پیش از اتمامِ شاهنامه درگذشت. کی‌کاووس دارو را به دلایلِ سیاسی نگه می‌دارد. فردوسی این نوع محاسبه را می‌شناخت.",
+        "personal_challenge_tg": "Писараш — писари воқеиаш, на як шахсият — пеш аз анҷоми Шоҳнома даргузашт.",
+        "lore_impact": "A father kills his son without knowing it. The medicine withheld by calculation. 'The Shahnameh does not soften this.' Ferdowsi couldn't soften it either — he was writing the only version of grief that was true to him.",
+        "lore_impact_fa": "پدری پسرش را بی‌خبر می‌کشد. داروی نگه‌داشته‌شده توسطِ محاسبه. «شاهنامه این را نرم نمی‌کند.» فردوسی هم نمی‌توانست نرم کند.",
+        "lore_impact_tg": "Падаре писарашро нодонсона мекушад. Доруи нигоҳдоштаи ҳисоб. «Шоҳнома инро нарм намекунад.» Фирдавсӣ ҳам натавонист."
+      }
     },
     {
       "id": 14,
@@ -375,7 +557,21 @@
       "required_previous_chapter": "sohrab",
       "quiz_count": 16,
       "summary_fa": "سیاوش از هفت کوهِ آتش سوار عبور کرد و دست‌نخورده. بی‌گناهیش ثابت شد اما دربار خیلی فاسد بود. از جیحون گذشت. در توران شهر ساخت. گرسیوز ذهنِ افراسیاب را مسموم کرد. سر بریده شد. خونش گیاه شد.",
-      "summary_tg": "Сиёвуш аз ҳафт куҳи оташ гузашт. Беноҳиаш исбот шуд аммо дарбор фосид буд. Аз Ҷайҳун гузашт. Дар Турон шаҳр сохт. Гарсевоз заҳролуд кард. Сар бурида шуд."
+      "summary_tg": "Сиёвуш аз ҳафт куҳи оташ гузашт. Беноҳиаш исбот шуд аммо дарбор фосид буд. Аз Ҷайҳун гузашт. Дар Турон шаҳр сохт. Гарсевоз заҳролуд кард. Сар бурида шуд.",
+      "ferdowsi_chronicle": {
+        "age": 61,
+        "year": "1001 CE",
+        "palette": "tragic",
+        "historical_context": "In mourning for his son. Writing through grief without putting down the quill — he had no choice. The poem was the only remaining task worth completing. Siavash became his son: a man too pure for the world he was born into.",
+        "historical_context_fa": "در عزایِ پسرش. در حالِ نوشتن از درونِ اندوه بدونِ زمین گذاشتنِ قلم. سیاوش پسرش شد: مردی بیش از حد پاک برای دنیایی که در آن متولد شد.",
+        "historical_context_tg": "Дар мотами писараш. Аз дохили ғам бидуни замин гузоштани қалам менависад.",
+        "personal_challenge": "Living in an age that destroys the innocent. His son's death made this personal. A man too pure for the world he inhabits — Ferdowsi wrote himself and his son into Siavash.",
+        "personal_challenge_fa": "زندگی در عصری که معصومان را نابود می‌کند. مرگِ پسرش این را شخصی کرد. مردی بیش از حد پاک برای دنیایی که در آن زندگی می‌کند.",
+        "personal_challenge_tg": "Зиндагӣ дар асре ки бегуноҳонро нобуд мекунад. Марги писараш инро шахсӣ кард.",
+        "lore_impact": "'He had been purer than the chronicle he was born into, and the chronicle had destroyed him for it.' Ferdowsi wrote his son's epitaph into the Persian language. The mourning ceremony of Siavash's tears — it was also his.",
+        "lore_impact_fa": "«از شاهنامه‌ای که در آن متولد شده بود پاک‌تر بود، و شاهنامه به همین دلیل او را نابود کرد.» فردوسی سنگِ قبرِ پسرش را در زبانِ فارسی نوشت.",
+        "lore_impact_tg": "«Аз Шоҳномае ки дар он таваллуд шуда буд поктар буд, ва Шоҳнома ба ҳамин далел ӯро нобуд кард.»"
+      }
     },
     {
       "id": 15,
@@ -399,7 +595,21 @@
       "required_previous_chapter": "siavash",
       "quiz_count": 16,
       "summary_fa": "دیوی به شکلِ موسیقیدان از مازندران خواند. کی‌کاووس باوجودِ همه‌ی هشدارها رفت. سپاه کور شد. رستم هفت خان را طی کرد و بازشان گرداند. بعد کی‌کاووس به آسمان پرواز کرد — و افتاد. رستم دوباره آمد.",
-      "summary_tg": "Дев ба шакли созанда аз Мозандарон хонд. Кай Кову рафт. Сипоҳ кӯр шуд. Рустам Ҳафтхонро гузашт. Баъд Кай Кову ба осмон парвоз кард — ва афтод."
+      "summary_tg": "Дев ба шакли созанда аз Мозандарон хонд. Кай Кову рафт. Сипоҳ кӯр шуд. Рустам Ҳафтхонро гузашт. Баъд Кай Кову ба осмон парвоз кард — ва афтод.",
+      "ferdowsi_chronicle": {
+        "age": 62,
+        "year": "1002 CE",
+        "palette": "melancholic",
+        "historical_context": "Mahmud of Ghazni is now the dominant power in Khorasan. Ferdowsi writes without secure patronage, dependent on land income still shrinking. The parallel between Kay Kavus and Sultan Mahmud sharpened with every passing year.",
+        "historical_context_fa": "محمودِ غزنوی حالا قدرتِ مسلطِ خراسان است. فردوسی بدونِ حمایتِ مطمئن می‌نویسد، وابسته به درآمدِ زمینی که هنوز در حالِ کاهش است.",
+        "historical_context_tg": "Маҳмуди Ғазнавӣ акнун қудрати ҳоким дар Хуросон аст. Фирдавсӣ бидуни ҳимояти мустаҳкам менависад.",
+        "personal_challenge": "Serving a culture increasingly shaped by a reckless patron. The poem was a gift intended for a court that did not value what it was receiving. Ferdowsi was writing his own biography into the question this chapter asks.",
+        "personal_challenge_fa": "خدمت در فرهنگی که روزبه‌روز توسطِ حامیِ بی‌پروایی شکل می‌گیرد. شعر هدیه‌ای بود برای دربارِ بی‌ارزش‌دانِ دریافت‌کننده.",
+        "personal_challenge_tg": "Хидмат дар фарҳанге ки рӯз то рӯз аз ҷониби ҳомии бепарвое шакл мегирад.",
+        "lore_impact": "'What does it cost to serve a king who confuses boldness with wisdom?' Ferdowsi wrote this question into the chapter's structure and then spent the next decade living the answer. Mahmud was already visible on the horizon.",
+        "lore_impact_fa": "«هزینه‌ی خدمت به شاهی که شجاعت را با خرد اشتباه می‌گیرد چیست؟» فردوسی این سؤال را در دهانِ شاهنامه گذاشت و بعد دهه‌ی بعد را صرفِ زیستنِ پاسخ کرد.",
+        "lore_impact_tg": "«Ҳазинаи хидмати подшоҳе ки ҷасурӣро бо хирад иштибоҳ мегирад чист?» Фирдавсӣ ин саволро навишт ва баъд даҳаи баъдро صارфи зистани ҷавоб кард."
+      }
     },
     {
       "id": 16,
@@ -423,7 +633,21 @@
       "required_previous_chapter": "kay-kavus",
       "quiz_count": 16,
       "summary_fa": "کی‌خسرو در توران به عنوانِ چوپان‌زاده رشد کرد. گیو هفت سال دنبالش گشت. جنگِ بزرگ برای انتقامِ سیاوش. افراسیاب کنارِ دریاچه اعدام شد. بعد کی‌خسرو انتخاب کرد که برود — به کوه رفت و دیده نشد.",
-      "summary_tg": "Кай Хусрав дар Турон чӯпонзода калон шуд. Гев ҳафт сол ҷустуҷӯ кард. Ҷанги бузург. Афросиёб кнари дарёча иҷро шуд. Баъд Кай Хусрав рафт — ба кӯҳ рафт ва дида нашуд."
+      "summary_tg": "Кай Хусрав дар Турон чӯпонзода калон шуд. Гев ҳафт сол ҷустуҷӯ кард. Ҷанги бузург. Афросиёб кнари дарёча иҷро шуд. Баъд Кай Хусрав рафт — ба кӯҳ рафт ва дида нашуд.",
+      "ferdowsi_chronicle": {
+        "age": 63,
+        "year": "1003 CE",
+        "palette": "melancholic",
+        "historical_context": "Financial pressure intensifying. The land income declining year by year. Ferdowsi is now explicitly writing toward the hope of royal patronage upon completion. He still has years of work ahead.",
+        "historical_context_fa": "فشارِ مالی در حالِ تشدید. درآمدِ زمین سالانه کاهش می‌یابد. فردوسی حالا صراحتاً به سوی امیدِ حمایتِ شاهانه پس از اتمام می‌نویسد.",
+        "historical_context_tg": "Фишори молиявӣ тезутунд. Фирдавсӣ акнун ошкоро ба сӯи умеди ҳимояти шоҳона пас аз анҷом менависад.",
+        "personal_challenge": "Writing the ideal just king while watching no just king appear. Kay Khosrow leaves at his zenith — before corruption finds him. Ferdowsi wished he could do the same with the poem. He could not.",
+        "personal_challenge_fa": "نوشتنِ شاهِ عادلِ ایده‌آل در حالی که هیچ شاهِ عادلی ظاهر نمی‌شود. کی‌خسرو در اوجش ترک می‌کند. فردوسی آرزو می‌کرد همین کار را با شعر بکند.",
+        "personal_challenge_tg": "Навиштани подшоҳи одили идеалӣ дар ҳоле ки ҳеҷ подшоҳи одиле зоҳир намешавад.",
+        "lore_impact": "The only king who walked out freely at the height of his power. Ferdowsi could not. The poem would not let him go until it was done. But he placed this possibility in the chronicle as a question: what if someone chose to stop before the throne consumed them?",
+        "lore_impact_fa": "تنها شاهی که آزادانه در اوجِ قدرتش بیرون رفت. فردوسی نمی‌توانست. اما این امکان را در شاهنامه به عنوانِ سؤال گذاشت.",
+        "lore_impact_tg": "Ягона подшоҳе ки озодона дар авҷи қудраташ берун рафт. Фирдавсӣ натавонист."
+      }
     },
     {
       "id": 17,
@@ -447,7 +671,21 @@
       "required_previous_chapter": "kay-khosrow",
       "quiz_count": 16,
       "summary_fa": "اکوان دیو در شکلِ اسبِ وحشی گله‌ها را ویران می‌کرد. رستم کمند انداخت — کمند حل شد. رستم خوابید. اکوان بلندش کرد. کوه یا دریا؟ رستم منطقِ وارونه را فهمید. کوه را خواست. به دریا انداخته شد. زنده ماند.",
-      "summary_tg": "Аквон дев ба шакли асп рамаҳоро хароб мекард. Рустам камандашро андохт — ҳал шуд. Аквон бардошт. Куҳ ё дарё? Рустам фаҳмид. Кӯҳро хост. Дарё афтод."
+      "summary_tg": "Аквон дев ба шакли асп рамаҳоро хароб мекард. Рустам камандашро андохт — ҳал шуд. Аквон бардошт. Куҳ ё дарё? Рустам фаҳмид. Кӯҳро хост. Дарё афтод.",
+      "ferdowsi_chronicle": {
+        "age": 64,
+        "year": "1004 CE",
+        "palette": "normal",
+        "historical_context": "Physical fatigue beginning to show after decades of work. Writing becomes harder as the body ages. The sheer endurance required to keep the poem moving is itself a kind of ordeal.",
+        "historical_context_fa": "خستگیِ جسمی بعد از دهه‌ها کار شروع به نشان دادن می‌کند. نوشتن با پیر شدنِ بدن سخت‌تر می‌شود.",
+        "historical_context_tg": "Хастагии ҷисмонӣ пас аз даҳсолаҳои кор нишон додан мегирад.",
+        "personal_challenge": "The lasso that catches nothing. The demon that inverts. Ferdowsi understood Akvan's logic personally — every tool that should work sometimes simply doesn't. The chapter is about cleverness surviving where strength cannot.",
+        "personal_challenge_fa": "کمندی که هیچ نمی‌گیرد. دیوی که وارون می‌کند. فردوسی منطقِ اکوان را به طورِ شخصی می‌فهمید. این فصل درباره‌ی زیرکیِ بازمانده در جایی است که قدرت نمی‌تواند.",
+        "personal_challenge_tg": "Камандаке ки ҳеҷ нмегирад. Деве ки вожгун мекунад. Фирдавсӣ мантиқи Аквонро шахсан мефаҳмид.",
+        "lore_impact": "Rostam solves the problem by intellectual deduction from one piece of evidence — the dissolving lasso. Ferdowsi built the entire Shahnameh from one piece of evidence: the Persian language still existed, therefore it was worth saving.",
+        "lore_impact_fa": "رستم مشکل را از طریقِ استنتاجِ فکری از یک شاهد حل می‌کند. فردوسی کلِّ شاهنامه را از یک شاهد ساخت: زبانِ فارسی هنوز وجود داشت، پس ارزشِ نجات داشت.",
+        "lore_impact_tg": "Рустам мушкилро аз тавассути хулосабарории зеҳнӣ аз як шоҳид ҳал мекунад. Фирдавсӣ тамоми Шоҳномаро аз як шоҳид сохт."
+      }
     },
     {
       "id": 18,
@@ -471,7 +709,21 @@
       "required_previous_chapter": "akvan",
       "quiz_count": 16,
       "summary_fa": "بیژن با تشویقِ گرگین به جشنِ بهارِ توران رفت. منیژه دیدش و مسموم کرد. چاه. سه زمستانِ گدایی. کی‌خسرو جامِ جهان‌نما را دید. رستم به عنوانِ بازرگان رفت. منیژه رخش را پیدا کرد. سنگ برداشته شد.",
-      "summary_tg": "Беҷан ба ҷашни баҳор рафт. Манижа дид ва захролуд кард. Чоҳ. Се зимистони гадоӣ. Рустам ҳамчун тоҷир рафт. Манижа Рахшро ёфт. Санг бардошта шуд."
+      "summary_tg": "Беҷан ба ҷашни баҳор рафт. Манижа дид ва захролуд кард. Чоҳ. Се зимистони гадоӣ. Рустам ҳамчун тоҷир рафт. Манижа Рахшро ёфт. Санг бардошта шуд.",
+      "ferdowsi_chronicle": {
+        "age": 65,
+        "year": "1005 CE",
+        "palette": "normal",
+        "historical_context": "His daughter wrote to him. A period of domestic connection in the middle of the solitary final stretch. Three winters of daily faithfulness — the chapter's lesson was also the poem's method.",
+        "historical_context_fa": "دخترش برایش نوشت. دوره‌ای از ارتباطِ خانوادگی در میانِ کشِ تنهایِ نهایی. سه زمستانِ وفاداریِ روزانه — درسِ این فصل روشِ شعر هم بود.",
+        "historical_context_tg": "Духтараш барояш навишт. Давраи ارتибот хонагӣ.",
+        "personal_challenge": "Three winters of feeding someone through a crack in a boulder. This is also what it means to sustain a poem through decades: daily, unglamorous, keeping something alive that the world has sealed off.",
+        "personal_challenge_fa": "سه زمستانِ تغذیه‌ی کسی از طریقِ شکافی در سنگ. این همان معنای نگه داشتنِ شعر در طولِ دهه‌هاست: روزانه، بی‌جلال.",
+        "personal_challenge_tg": "Се зимистони ғизо додани касе тавассути шикофе дар санг. Ин ҳамон маънои нигоҳ доштани шеър дар тӯли даҳсолаҳо аст.",
+        "lore_impact": "Manijeh earns the crossing because she stayed. Ferdowsi believed this about the Persian language: it survived because someone stayed with it through centuries of conquest, Arab and Turkic, and kept feeding it through the crack.",
+        "lore_impact_fa": "منیژه عبور را کسب می‌کند چون ماند. فردوسی درباره‌ی زبانِ فارسی باور داشت: بقا یافت چون کسی در طولِ قرن‌ها با آن ماند.",
+        "lore_impact_tg": "Манижа убурро касб мекунад зеро монд. Фирдавсӣ дар бораи забони Форсӣ бовар дошт: бақо ёфт зеро касе бо он монд."
+      }
     },
     {
       "id": 19,
@@ -495,7 +747,21 @@
       "required_previous_chapter": "bijan-manijeh",
       "quiz_count": 16,
       "summary_fa": "کی‌خسرو جنگِ بزرگ را برای بدهیِ سیاوش سازماندهی کرد. طوس فرود را کشت — اولین زخمِ جنگ. گودرز و پیرانِ ویسه آخرین بار روبرو شدند. پیران افتاد. افراسیاب کنارِ دریاچه یافته شد و اعدام شد.",
-      "summary_tg": "Кай Хусрав ҷанги бузургро ташкил кард. Тус Фарудро кушт. Гударз ва Пирони Виса охирин бор рӯ ба рӯ шуданд. Пиран афтод. Афросиёб дарёча иҷро шуд."
+      "summary_tg": "Кай Хусрав ҷанги бузургро ташкил кард. Тус Фарудро кушт. Гударз ва Пирони Виса охирин бор рӯ ба рӯ шуданд. Пиран афтод. Афросиёб дарёча иҷро шуд.",
+      "ferdowsi_chronicle": {
+        "age": 66,
+        "year": "1006 CE",
+        "palette": "melancholic",
+        "historical_context": "The Ghaznavid consolidation of Khorasan complete. Ferdowsi is now writing under the rule of the very dynasty that will under-reward the poem. The war of debt between Iran and Turan was also his war.",
+        "historical_context_fa": "تثبیتِ غزنوی در خراسان کامل. فردوسی حالا زیرِ حکومتِ همان سلسله‌ای می‌نویسد که شاهنامه را کم پاداش خواهد داد.",
+        "historical_context_tg": "Тасбити Ғазнавӣ дар Хуросон комил. Фирдавсӣ акнун зери ҳукумати ҳамон сулолае менависад ки Шоҳномаро кам подош медиҳад.",
+        "personal_challenge": "A war of debt. Ferdowsi's entire poem was a war of debt — owed to the Persian language that conquest after conquest had been attempting to bury. He was fighting the same war in verse.",
+        "personal_challenge_fa": "جنگِ بدهی. کلِّ شاهنامه‌ی فردوسی جنگِ بدهی بود — بدهیِ زبانِ فارسی که فتح پس از فتح داشت سعی می‌کرد دفنش کند.",
+        "personal_challenge_tg": "Ҷанги қарзӣ. Тамоми Шоҳномаи Фирдавсӣ ҷанги қарзе буд — қарзи забони Форсӣ.",
+        "lore_impact": "'The wars closed at the lake without ceremony.' Ferdowsi's own war for the Persian language would also end without ceremony — in a room where Mahmud counted silver instead of gold. The ending that matched nothing with its scale.",
+        "lore_impact_fa": "«جنگ‌ها در کنارِ دریاچه بدونِ تشریفات بسته شدند.» جنگِ فردوسی برای زبانِ فارسی هم بدونِ تشریفات پایان می‌یابد.",
+        "lore_impact_tg": "«Ҷангҳо дар канори кӯл бидуни маросим баста шуданд.» Ҷанги Фирдавсӣ барои забони Форсӣ ҳам бидуни маросим ба поён мерасад."
+      }
     },
     {
       "id": 20,
@@ -519,7 +785,21 @@
       "required_previous_chapter": "great-war-turan",
       "quiz_count": 16,
       "summary_fa": "کی‌خسرو تاج را به لهراسپ سپرد — نه طوس، نه فریبرز. دربار ناراضی بود. لهراسپ دهه‌ها بدونِ درامِ بزرگی اداره کرد. پسرش گشتاسپ فرار کرد و برگشت. لهراسپ تخت را داد. در آتشکده‌ی بلخ مُرد.",
-      "summary_tg": "Кай Хусрав тоҷро ба Луҳросп дод. Дарбор норозӣ буд. Луҳросп даҳсолаҳо идора кард. Писараш Гуштосп гурехт ва баргашт. Луҳросп тахтро дод. Дар оташкадаи Балх мурд."
+      "summary_tg": "Кай Хусрав тоҷро ба Луҳросп дод. Дарбор норозӣ буд. Луҳросп даҳсолаҳо идора кард. Писараш Гуштосп гурехт ва баргашт. Луҳросп тахтро дод. Дар оташкадаи Балх мурд.",
+      "ferdowsi_chronicle": {
+        "age": 67,
+        "year": "1007 CE",
+        "palette": "normal",
+        "historical_context": "Working with the steady competence of an old craftsman. The poem nearing completion — perhaps seven years remaining. Ferdowsi understood Lohrasp's particular quality: quiet administration, nothing dramatic to report.",
+        "historical_context_fa": "با شایستگیِ ثابتِ یک صنعتگرِ مسن کار می‌کند. شعر به پایان نزدیک می‌شود. فردوسی ویژگیِ خاصِ لهراسپ را می‌فهمید: اداره‌ی آرام.",
+        "historical_context_tg": "Бо шоистагии устувори ҳунармандеро пир кор мекунад. Шеър ба поён наздик мешавад.",
+        "personal_challenge": "The unrecognized administrator. Ferdowsi was building something that might be dismissed by the court that received it — not destroyed, just dismissed. Lohrasp's reign has nothing dramatic to report. This is also Ferdowsi's fear for his poem's reception.",
+        "personal_challenge_fa": "مدیرِ ناشناخته. فردوسی داشت چیزی می‌ساخت که ممکن بود توسطِ دربارِ دریافت‌کننده رد شود.",
+        "personal_challenge_tg": "Мудири ношинохта. Фирдавсӣ чизе месохт ки метавонист аз ҷониби дарбори қабулкунанда рад шавад.",
+        "lore_impact": "'He administered with the attention of a man who understood that administration is what kingdoms are actually for.' Ferdowsi wrote this with longing. He wanted a patron who understood this about poetry — not a king who valued the heroics, but one who valued the work.",
+        "lore_impact_fa": "«با توجهِ مردی اداره کرد که فهمیده بود اداره همان چیزی است که قلمروها واقعاً برای آن هستند.» فردوسی این را با حسرت نوشت.",
+        "lore_impact_tg": "«Бо таваҷҷӯҳи марде идора кард ки фаҳмида буд идора ҳамон чизест ки қаламравҳо воқеан барои он ҳастанд.» Фирдавсӣ инро бо ҳасрат навишт."
+      }
     },
     {
       "id": 21,
@@ -543,7 +823,21 @@
       "required_previous_chapter": "lohrasp",
       "quiz_count": 16,
       "summary_fa": "زرتشت به دربارِ گشتاسپ رسید. پیامِ اهورا مزدا را آورد. گشتاسپ تبدیل شد. آتشکده‌ها روشن شدند. اسفندیار برای گسترشِ دین فرستاده شد. ارجاسپ رفض کرد و حمله کرد. دایره‌ای که دارد تنگ می‌شود شروع شد.",
-      "summary_tg": "Зардушт ба дарбори Гуштосп расид. Паёми Аҳура Мазда овард. Гуштосп табдил шуд. Оташкадаҳо равшан шуданд. Исфандиёр фиристода шуд. Арҷосп рад кард ва ҳамла кард."
+      "summary_tg": "Зардушт ба дарбори Гуштосп расид. Паёми Аҳура Мазда овард. Гуштосп табдил шуд. Оташкадаҳо равшан шуданд. Исфандиёр фиристода шуд. Арҷосп рад кард ва ҳамла кард.",
+      "ferdowsi_chronicle": {
+        "age": 68,
+        "year": "1008 CE",
+        "palette": "normal",
+        "historical_context": "Mahmud's court now clearly visible on the horizon as the destination for the completed poem. Mahmud's courtiers preferred Arabic verse; Ferdowsi was Zoroaster arriving with the Persian Avesta at a Turkic-Arabic court.",
+        "historical_context_fa": "دربارِ محمود حالا به وضوح در افقِ مقصدِ شاهنامه‌ی تمام‌شده قابلِ رویت است. درباریانِ محمود شعرِ عربی را ترجیح می‌دادند.",
+        "historical_context_tg": "Дарбори Маҳмуд акнун ошкоро дар уфуқи мақсади Шоҳномаи тамомшуда қобили дид аст.",
+        "personal_challenge": "A religious court that preferred Arabic poetry. Ferdowsi was Zoroaster arriving with conviction — not performance. He hoped someone at Mahmud's court would convert the way Goshtasp converted: not from amazement but from recognition.",
+        "personal_challenge_fa": "دربارِ دینیِ ترجیح‌دهنده‌ی شعرِ عربی. فردوسی زرتشتی بود که با اعتقاد می‌رسید نه اجرا. امیدوار بود کسی در دربارِ محمود مثلِ گشتاسپ از شناخت تبدیل شود.",
+        "personal_challenge_tg": "Дарбори динии ترجیح диҳандаи шеъри Арабӣ. Фирдавсӣ Зардуштие буд ки бо эътиқод мерасид на иҷро.",
+        "lore_impact": "Zoroaster answers with 'the precision of a man reporting conviction rather than performing it.' Ferdowsi wrote the Shahnameh the same way — not arguing for Persian culture, not persuading, just reporting what he knew to be true. The Shahnameh is testimony, not propaganda.",
+        "lore_impact_fa": "زرتشت با «دقتِ مردی که اعتقاد را گزارش می‌کرد نه اجرا» پاسخ می‌دهد. فردوسی شاهنامه را همین‌طور نوشت.",
+        "lore_impact_tg": "Зардушт бо «дақиқати марде ки эътиқодро гузориш мекард на иҷро» ҷавоб медиҳад. Фирдавсӣ Шоҳномаро ҳамин тавр навишт."
+      }
     },
     {
       "id": 22,
@@ -570,7 +864,21 @@
       "required_previous_chapter": "goshtasp",
       "quiz_count": 16,
       "summary_fa": "زرتشت اسفندیار را در آبِ مقدس غسل داد و رویین‌تن شد — جز در چشمانش. دهه‌ها بدونِ هیچ خیانتی خدمت کرد. یک بار زندانی شد. در نهایت فرمان آمد: رستم را با زنجیر بیاور. دانست خواهد کشت. رفت.",
-      "summary_tg": "Зардушт Исфандиёрро дар оби муқаддас ғусл дод ва рӯин шуд — ҷуз чашмонаш. Даҳсолаҳо бе хиёнат хидмат кард. Фармон омад. Медонист мекушад. Рафт."
+      "summary_tg": "Зардушт Исфандиёрро дар оби муқаддас ғусл дод ва рӯин шуд — ҷуз чашмонаш. Даҳсолаҳо бе хиёнат хидмат кард. Фармон омад. Медонист мекушад. Рафт.",
+      "ferdowsi_chronicle": {
+        "age": 69,
+        "year": "1009 CE",
+        "palette": "melancholic",
+        "historical_context": "The poem is almost finished. The presentation to Mahmud is now imminent. Ferdowsi is beginning to understand precisely what is coming — and going anyway.",
+        "historical_context_fa": "شعر تقریباً تمام شده. ارائه به محمود در شرفِ وقوع است. فردوسی دارد دقیقاً می‌فهمد که چه اتفاقی می‌افتد — و باز هم پیش می‌رود.",
+        "historical_context_tg": "Шеър тақрибан тамом. Арза ба Маҳмуд наздик аст. Фирдавсӣ дақиқан мефаҳмад ки чӣ мешавад — ва боз ҳам пеш мешавад.",
+        "personal_challenge": "Too righteous to stop the poem, too honest to pretend he did not know the cost, too committed to let the knowledge of what Mahmud would do stop him. This is not brave. This is Ferdowsi.",
+        "personal_challenge_fa": "خیلی متعهد که شعر را متوقف کند، خیلی صادق که وانمود کند هزینه را نمی‌داند. این شجاعت نیست. این فردوسی است.",
+        "personal_challenge_tg": "Хеле мутааhhид ки шеърро боздорад, хеле ростин ки вонамуд кунад ҳазинаро намедонад.",
+        "lore_impact": "Ferdowsi was Esfandiyar. He knew the poem would not be rewarded as promised. He made the arrow himself anyway — the final couplets, the dedication, the presentation. He accepted the curse without argument.",
+        "lore_impact_fa": "فردوسی اسفندیار بود. می‌دانست شعر آن‌طور که وعده داده شده پاداش نمی‌گیرد. با این حال تیر را خودش ساخت.",
+        "lore_impact_tg": "Фирдавсӣ Исфандиёр буд. Медонист шеър он тавр ки ваъда шуда буд подош намегирад. Бо ин ҳол тирро худаш сохт."
+      }
     },
     {
       "id": 23,
@@ -594,7 +902,21 @@
       "required_previous_chapter": "esfandiyar",
       "quiz_count": 16,
       "summary_fa": "ارجاسپ دختراتِ گشتاسپ را در دژِ روئین نگه می‌داشت. اسفندیار هفت آزمون را طی کرد: گرگان، شیران، اژدها (ارابه‌ی تیز)، جادوگر (نامِ اهورا مزدا)، پرنده‌ی بزرگ، سرما، و دژِ روئین با تغییرِ قیافه.",
-      "summary_tg": "Арҷосп духтарони Гуштоспро дар Деҷи Руин нигоҳ дошт. Исфандиёр ҳафт озмонро тай кард: гургон, шерон, аждаҳо, ҷодугар, паррандаи бузург, сармо, деж."
+      "summary_tg": "Арҷосп духтарони Гуштоспро дар Деҷи Руин нигоҳ дошт. Исфандиёр ҳафт озмонро тай кард: гургон, шерон, аждаҳо, ҷодугар, паррандаи бузург, сармо, деж.",
+      "ferdowsi_chronicle": {
+        "age": 69,
+        "year": "1009 CE",
+        "palette": "normal",
+        "historical_context": "Writing the second Haft Khan — echoing his own 35-year ordeal. The sequence of seven stations maps directly onto what completing the Shahnameh had demanded of Ferdowsi.",
+        "historical_context_fa": "نوشتنِ دومین هفت خان — بازتابِ آزمونِ ۳۵ ساله‌ی خودش. ترتیبِ هفت ایستگاه مستقیماً بر آنچه تکمیلِ شاهنامه از فردوسی خواسته منطبق می‌شود.",
+        "historical_context_tg": "Навиштани дуввумин Ҳафтхон — бозтоби озмони 35-солаи худаш.",
+        "personal_challenge": "The seven labours the poem demanded of Ferdowsi: poetic endurance, financial sacrifice, political navigation, personal grief, linguistic precision, historical reconstruction, and the final courage to present it knowing what awaited.",
+        "personal_challenge_fa": "هفت خانی که شاهنامه از فردوسی طلبید: استقامتِ شاعرانه، قربانیِ مالی، هدایتِ سیاسی، اندوهِ شخصی، دقتِ زبانی، بازسازیِ تاریخی، و شجاعتِ نهایی برای ارائه.",
+        "personal_challenge_tg": "Ҳафт хоне ки Шоҳнома аз Фирдавсӣ талаб кард: бардошти шоиронаи, қурбонии молиявӣ, раҳнамоии сиёсӣ, ғами шахсӣ.",
+        "lore_impact": "The seventh station cannot be taken by force. You must enter disguised as a merchant, map the fortress over days, and burn it from within. Ferdowsi had been doing exactly this for 35 years — entering the Persian tradition as a craftsman, from the inside.",
+        "lore_impact_fa": "هفتمین ایستگاه با زور گرفته نمی‌شود. باید در لباسِ بازرگان وارد شوی، دژ را روزها نقشه‌کشی کنی، و از درون بسوزانی. فردوسی ۳۵ سال دقیقاً همین کار را کرده بود.",
+        "lore_impact_tg": "Ҳафтумин истгоҳ бо зӯр гирифта намешавад. Фирдавсӣ 35 сол дақиқан ҳамин корро карда буд."
+      }
     },
     {
       "id": 24,
@@ -618,7 +940,21 @@
       "required_previous_chapter": "seven-labours-esp",
       "quiz_count": 16,
       "summary_fa": "اسفندیار با فرمانِ پدرش رسید: رستم را با زنجیر بیاور. دو روز جنگیدند. تیرهایِ رستم در رویین‌تن نگرفتند. رستم زخمی شد. سیمرغ آمد و گفت: تیرِ گز. چشمان. رستم رفت. تیر پیدا کرد. اسفندیار آخرین کلماتش پدرش را سرزنش کرد.",
-      "summary_tg": "Исфандиёр бо фармони падараш расид. Ду рӯз ҷангиданд. Тирҳои Рустам дар рӯин нагирифтанд. Симурғ омад: тири газ. Чашмон. Рустам рафт. Тир ёфт. Исфандиёр охирин суханон падарашро сарзаниш кард."
+      "summary_tg": "Исфандиёр бо фармони падараш расид. Ду рӯз ҷангиданд. Тирҳои Рустам дар рӯин нагирифтанд. Симурғ омад: тири газ. Чашмон. Рустам рафт. Тир ёфт. Исфандиёр охирин суханон падарашро сарзаниш кард.",
+      "ferdowsi_chronicle": {
+        "age": 70,
+        "year": "1010 CE",
+        "palette": "melancholic",
+        "historical_context": "The year Ferdowsi completed the Shahnameh and rode to Ghazni. Mahmud reportedly promised 60,000 gold coins — one per couplet. He paid 60,000 silver dirhams instead. The disparity became the wound that defined the rest of his life.",
+        "historical_context_fa": "سالی که فردوسی شاهنامه را تمام کرد و به غزنی رفت. محمود ظاهراً ۶۰,۰۰۰ سکه‌ی طلا وعده داد — یکی برای هر بیت. ۶۰,۰۰۰ درهمِ نقره پرداخت کرد. این اختلاف زخمی شد که بقیه‌ی عمرش را تعریف کرد.",
+        "historical_context_tg": "Соле ки Фирдавсӣ Шоҳномаро тамом кард ва ба Ғазнин рафт. Маҳмуд 60,000 тангаи тилло ваъда дод. 60,000 дирҳами нуқра пардохт кард.",
+        "personal_challenge": "Knowing that Mahmud was not Kay Khosrow. The great patron refused the medicine — not Sohrab's, but the poem's. Ferdowsi wrote his bitter satire against the sultan and fled. The curse he accepted without argument.",
+        "personal_challenge_fa": "می‌دانست که محمود کی‌خسرو نیست. حامیِ بزرگ دارو را رد کرد — نه داروی سهراب، بلکه داروی شاهنامه. فردوسی هجوِ تلخ نوشت و گریخت.",
+        "personal_challenge_tg": "Медонист ки Маҳмуд Кай Хусрав нест. Ҳомии бузург доруро рад кард. Фирдавсӣ ҳаҷви талх навишт ва гурехт.",
+        "lore_impact": "'You are not the cause of my death. The man who sent me here knowing what it would produce — that is the cause.' Esfandiyar's dying words were Ferdowsi's own. Goshtasp's name was Mahmud. The poem had always known this.",
+        "lore_impact_fa": "«تو علتِ مرگم نیستی. مردی که مرا اینجا فرستاد با دانستنِ آنچه تولید می‌کرد — آن علت است.» آخرین کلماتِ اسفندیار کلماتِ خودِ فردوسی بودند.",
+        "lore_impact_tg": "«Ту сабаби маргам нестӣ.» Охирин суханони Исфандиёр суханони худи Фирдавсӣ буданд. Номи Гуштосп Маҳмуд буд."
+      }
     },
     {
       "id": 25,
@@ -645,7 +981,21 @@
       "required_previous_chapter": "clash-rostam-esp",
       "quiz_count": 16,
       "summary_fa": "سیمرغ در درختِ جهانی در البرز لانه دارد و سه نابودیِ دنیا را تماشا کرده. چهار بار تاریخ را تغییر داد: پرورشِ زال، تولدِ رستم، مسلح کردنِ رستم در برابرِ اسفندیار. هر بار غم می‌خورد. هر بار کمک می‌کند.",
-      "summary_tg": "Симурғ дар дарахти ҷаҳонӣ дар Алборз лона дорад. Чаҳор бор таърихро тағйир дод: Зол, Рустам, Исфандиёр. Ҳар бор ғам мехӯрад. Ҳар бор кӯмак мекунад."
+      "summary_tg": "Симурғ дар дарахти ҷаҳонӣ дар Алборз лона дорад. Чаҳор бор таърихро тағйир дод: Зол, Рустам, Исфандиёр. Ҳар бор ғам мехӯрад. Ҳар бор кӯмак мекунад.",
+      "ferdowsi_chronicle": {
+        "age": 70,
+        "year": "1010–1020 CE",
+        "palette": "melancholic",
+        "historical_context": "The final decade. Ferdowsi fled Ghazni after the satire and returned to Tus in poverty. Legend says Mahmud's amends-payment arrived at the city gates as Ferdowsi's funeral procession was leaving through another gate.",
+        "historical_context_fa": "دهه‌ی آخر. فردوسی بعد از هجو از غزنی گریخت و فقیرانه به طوس برگشت. روایت است که جبرانِ محمود به دروازه‌ی شهر رسید در حالی که تشییعِ جنازه‌ی فردوسی از دروازه‌ی دیگر خارج می‌شد.",
+        "historical_context_tg": "Даҳаи охир. Фирдавсӣ пас аз ҳаҷв аз Ғазнин гурехт ва фақирона ба Тус баргашт. Ривоят аст ки ҷуброни Маҳмуд ба дарвозаи шаҳр расид вақте ташйеъи ҷаноза аз дарвозаи дигар берун мешуд.",
+        "personal_challenge": "The promise kept in full. The feather is ash. The poem is done. There was nothing left to sustain — the Simorgh had already given everything. Ferdowsi returned to Tus to die. The poem did not need him anymore.",
+        "personal_challenge_fa": "وعده به تمامی اجرا شد. پر خاکستر است. شعر تمام است. دیگر چیزی برای نگه‌داشتن نبود. فردوسی به طوس برگشت تا بمیرد. شعر دیگر به او نیاز نداشت.",
+        "personal_challenge_tg": "Ваъда пурра иҷро шуд. Пар хокистар аст. Шеър тамом аст. Дигар чизе барои нигоҳ доштан набуд.",
+        "lore_impact": "'The chronicle continues without her.' So did Persian literature — because Ferdowsi kept it alive. The Simorgh's departure is Ferdowsi's own: the poem no longer needed him to carry it. It was already walking into the next thousand years.",
+        "lore_impact_fa": "«شاهنامه بدونِ او ادامه می‌دهد.» ادبیاتِ فارسی هم همین‌طور — چون فردوسی آن را زنده نگه داشت. رفتنِ سیمرغ رفتنِ خودِ فردوسی است.",
+        "lore_impact_tg": "«Шоҳнома бидуни ӯ идома медиҳад.» Адабиёти Форсӣ ҳам ҳамин тавр — зеро Фирдавсӣ онро зинда нигоҳ дошт."
+      }
     },
     {
       "id": 26,
