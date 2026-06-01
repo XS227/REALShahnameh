@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-31T00:00:00Z",
+  "chapter_slug": "siavash",
+  "chapter_id": 14,
+  "era": {
+    "label_en": "~2900 BC — The Purest Soul in the Chronicle",
+    "label_fa": "~۲۹۰۰ پ.م — پاک‌ترین روح در شاهنامه"
+  },
+  "lore_summary": {
+    "en": "Siavash is raised by Rostam, returns to Kay Kavus's court as a flawless young warrior, and is immediately destroyed by it. His stepmother Sudabeh wants him; he refuses; she accuses him of assault. Kay Kavus orders trial by fire. Siavash rides through seven blazing pyres untouched. His innocence is proven, but the court is too corrupt to keep him. He crosses the Oxus into Turan, where Afrasiab gives him land, a daughter, and a city. He builds Siyavashgerd — City of Siavash. He is briefly, improbably happy. Then Afrasiab's general Garsivaz poisons the king's mind. Siavash is taken and beheaded over a field. His blood flows into the earth and immediately grows a plant called the Blood of Siavash. Farangis, carrying his child, flees east. That child will be Kay Khosrow, who will one day avenge everything.",
+    "fa": "سیاوش پیشِ رستم پرورش می‌یابد، به دربارِ کی‌کاووس برمی‌گردد و بلافاصله توسط آن نابود می‌شود. سودابه، نامادریش، او را می‌خواهد؛ رد می‌کند؛ او را متهم می‌کند. کی‌کاووس آزمایشِ آتش را دستور می‌دهد. سیاوش از هفت کوهِ آتش سوار عبور می‌کند و دست‌نخورده. بی‌گناهی‌اش ثابت می‌شود اما دربار خیلی فاسد است تا نگهش دارد. از جیحون به توران می‌رود. افراسیاب زمین، دختر، و شهر به او می‌دهد. سیاوش‌گرد را می‌سازد. کوتاه و بعیدانه خوشحال است. بعد گرسیوز ذهنِ شاه را مسموم می‌کند. سیاوش را می‌گیرند و در یک مزرعه سر می‌برند. خونش فوری در زمین می‌روید و گیاهِ خونِ سیاوش می‌شود. فرنگیس، که بچه‌اش را دارد، فرار می‌کند."
+  },
+  "timeline": [
+    {
+      "id": "raised-by-rostam",
+      "year_label_en": "~2920 BC", "year_label_fa": "~۲۹۲۰ پ.م",
+      "title_en": "Raised by the Champion", "title_fa": "پرورش‌یافته توسطِ قهرمان",
+      "body_en": "Kay Kavus entrusts the young Siavash to Rostam's care. Rostam raises him in Zabulestan — the same landscape that made Rostam. By the time Siavash returns to court, he is a warrior with no equal except Rostam himself.",
+      "body_fa": "کی‌کاووس سیاوشِ جوان را به مراقبتِ رستم می‌سپارد. رستم او را در زابلستان بزرگ می‌کند. وقتی سیاوش به دربار برمی‌گردد، جنگجویی است بی‌رقیب — جز خودِ رستم.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "sudabeh-accuses",
+      "year_label_en": "~2900 BC", "year_label_fa": "~۲۹۰۰ پ.م",
+      "title_en": "The Accusation", "title_fa": "اتهام",
+      "body_en": "Sudabeh, Kay Kavus's queen, approaches Siavash in private. He refuses her. She accuses him of assault to Kay Kavus. The king cannot resolve the contradiction — he loves them both — and decrees trial by fire.",
+      "body_fa": "سودابه، ملکه‌ی کی‌کاووس، در خلوت به سیاوش نزدیک می‌شود. رد می‌کند. او را به کی‌کاووس متهم می‌کند. شاه نمی‌تواند تناقض را حل کند — هر دو را دوست دارد — و آزمایشِ آتش را فرمان می‌دهد.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "the-fires",
+      "year_label_en": "~2899 BC", "year_label_fa": "~۲۸۹۹ پ.م",
+      "title_en": "Seven Mountains of Fire", "title_fa": "هفت کوهِ آتش",
+      "body_en": "Siavash rides into seven blazing pyres on horseback. He rides through all seven and emerges untouched. Sudabeh's lie is exposed. Kay Kavus still will not execute her. The court watches Siavash emerge from fire and understands something has been decided that no one can undo.",
+      "body_fa": "سیاوش سوار بر اسب وارد هفت کوهِ آتشِ افروخته می‌شود. از همه هفت عبور می‌کند و دست‌نخورده بیرون می‌آید. دروغِ سودابه فاش می‌شود. کی‌کاووس هنوز حکمِ اعدامش را نمی‌دهد.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "crossing-to-turan",
+      "year_label_en": "~2898 BC", "year_label_fa": "~۲۸۹۸ پ.م",
+      "title_en": "The Crossing", "title_fa": "عبور",
+      "body_en": "Siavash leads Iran's army against Afrasiab, negotiates a just peace, and is ordered by Kay Kavus to break it. He refuses to be an instrument of his father's bad faith. He crosses the Oxus into Turan and asks for asylum. Afrasiab, who dreamed of him, accepts.",
+      "body_fa": "سیاوش سپاهِ ایران را علیهِ افراسیاب هدایت می‌کند، صلحِ عادلانه‌ای مذاکره می‌کند، و کی‌کاووس به او دستور می‌دهد بشکندش. رد می‌کند. از جیحون به توران عبور می‌کند و تقاضای پناهندگی می‌کند.",
+      "image": null, "side": "neutral"
+    },
+    {
+      "id": "siyavashgerd",
+      "year_label_en": "~2897 BC", "year_label_fa": "~۲۸۹۷ پ.م",
+      "title_en": "City of Siavash", "title_fa": "سیاوش‌گرد",
+      "body_en": "Afrasiab gives Siavash his daughter Farangis in marriage and grants him land. Siavash builds Siyavashgerd — City of Siavash — and rules it justly. He is briefly happy. Garsivaz watches and begins his work.",
+      "body_fa": "افراسیاب دخترش فرنگیس را به همسریِ سیاوش می‌دهد و به او زمین می‌بخشد. سیاوش سیاوش‌گرد را می‌سازد و با عدالت حکومت می‌کند. کوتاه خوشحال است. گرسیوز تماشا می‌کند و کارش را شروع می‌کند.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "the-blood",
+      "year_label_en": "~2890 BC", "year_label_fa": "~۲۸۹۰ پ.م",
+      "title_en": "The Blood That Grew", "title_fa": "خونی که رویید",
+      "body_en": "Garsivaz convinces Afrasiab that Siavash is planning betrayal. Siavash is taken and beheaded over a field. Where his blood falls on the earth, a plant immediately grows. Ferdowsi calls it the Blood of Siavash. Farangis, pregnant with Kay Khosrow, flees east.",
+      "body_fa": "گرسیوز افراسیاب را متقاعد می‌کند سیاوش در حالِ توطئه است. سیاوش را می‌گیرند و در یک مزرعه سر می‌برند. جایی که خونش بر زمین می‌افتد، فوری گیاهی می‌روید. فردوسی آن را خونِ سیاوش می‌نامد.",
+      "image": null, "side": "dark"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "sudabeh",
+      "order": 1,
+      "title_en": "Sudabeh", "title_fa": "سودابه",
+      "era_en": "~2900 BC", "era_fa": "~۲۹۰۰ پ.م",
+      "body_en": "Siavash returned to Kay Kavus's court as a young man who had been raised by Rostam — which meant he had been raised by the most rigorous standard of honour in Iran, and he had met it. He was young, and extraordinarily capable, and he had none of the compromises in him that courts usually require to survive. Sudabeh, Kay Kavus's queen, saw him at a reception and was inflamed. She arranged a meeting in the harem under the pretense of introducing him to her daughters. When they were alone she told him directly what she wanted. Siavash refused. He refused in a way that was gentle and complete — he did not lecture her, he did not threaten her, he simply and absolutely declined, and he made it clear that he would never reconsider. Sudabeh understood that she had been judged. A woman of lesser ability would have accepted this and moved on. Sudabeh went to Kay Kavus and told him that his son had tried to assault her. She said it the way she said everything — with conviction and just enough detail to be credible. Kay Kavus was the king who had led his army into Mazandaran against every warning and needed Rostam to rescue him. He had never been good at distinguishing truth from performance. He believed his wife. He also loved his son. He could not resolve the contradiction, so he made a king's decision: trial by fire.",
+      "body_fa": "سیاوش به دربارِ کی‌کاووس برگشت به عنوانِ مردِ جوانی که پیشِ رستم پرورش یافته بود — که یعنی با سخت‌گیرانه‌ترین معیارِ شرافت در ایران بزرگ شده و آن را برآورده کرده بود. سودابه، ملکه‌ی کی‌کاووس، او را دید و برافروخته شد. جلسه‌ای ترتیب داد. وقتی تنها بودند مستقیم گفت چه می‌خواهد. سیاوش رد کرد. ملایم و کامل رد کرد. سودابه فهمید قضاوت شده. به کی‌کاووس رفت و گفت پسرش سعی کرده به او حمله کند. کی‌کاووس نه می‌توانست دروغ را تشخیص دهد، نه پسرش را متهم کند. پس تصمیمِ شاهانه گرفت: آزمایشِ آتش.",
+      "atmosphere": "court",
+      "image": "/season2/uploads/chapters/siavash.png",
+      "reward": { "xp": 65 },
+      "unlocks_codex": ["sudabeh-logic"]
+    },
+    {
+      "id": "fire-ordeal",
+      "order": 2,
+      "title_en": "Through the Seven Fires", "title_fa": "از میانِ هفت آتش",
+      "era_en": "~2899 BC", "era_fa": "~۲۸۹۹ پ.م",
+      "body_en": "Seven mountains of fire were built in a line outside the city. The courtiers, the army, the people of the capital came out to witness. Kay Kavus came. Sudabeh came. Rostam was not there — he was at the border — and perhaps this was deliberate, because if Rostam had been there and understood what was happening, the trial might not have taken the shape it did. Siavash dressed in white. He tied the ends of his garment. He rode his horse into the first mountain of fire. He emerged from the other side. He rode into the second. He emerged. Seven fires, and at the end of the seventh his white garment was unmarked, his horse was calm, and his face showed nothing except what it had always shown: a man who had already decided what he was and found the decision easy to maintain. The crowd was silent. The Shahnameh notes that when he came out of the last fire, a sound rose from the people that was more like grief than celebration — because they understood, in that silence, that a man this pure was in the wrong chronicle.",
+      "body_fa": "هفت کوهِ آتش در صفی بیرونِ شهر ساخته شد. درباریان، سپاه، مردمِ پایتخت آمدند تا شاهد باشند. سیاوش لباسِ سفید پوشید. اسبش را هدایت کرد وارد کوهِ اولِ آتش. از طرفِ دیگر بیرون آمد. دوم. هفتم. در پایانِ هفتم لباسِ سفیدش بدون لکه بود، اسبش آرام بود، و چهره‌اش چیزی نشان نمی‌داد. جمعیت ساکت بود. شاهنامه یادداشت می‌کند صدایی از مردم برخاست که بیشتر شبیهِ اندوه بود تا جشن.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 90 },
+      "unlocks_codex": ["purity-as-evidence", "wrong-chronicle"]
+    },
+    {
+      "id": "crossing-oxus",
+      "order": 3,
+      "title_en": "The Crossing of the Oxus", "title_fa": "عبور از جیحون",
+      "era_en": "~2898 BC", "era_fa": "~۲۸۹۸ پ.م",
+      "body_en": "Kay Kavus sent Siavash to lead Iran's army against Afrasiab. Siavash fought well, and then he did something unusual: he made peace. The terms were fair to both sides — Afrasiab would withdraw, hostages would be exchanged, the Oxus would be the border again. He sent the treaty to Kay Kavus for ratification. Kay Kavus refused it. He ordered the war to continue. He sent instructions that were the opposite of statesmanship: push forward, take more. Siavash read the orders and sat with them for a long time. He could comply and be the instrument of his father's bad faith. He could refuse and be accused of disobedience. Or he could do the third thing, which no one in the chronicle had done: he could simply leave. He wrote a letter to Kay Kavus explaining his reasons — the letter of a man who has decided that his own honour is the only asset he actually owns — and he crossed the Oxus. He rode into Turan and sent word ahead that he was coming as a guest, not as an enemy. Afrasiab had dreamed of him. He accepted.",
+      "body_fa": "کی‌کاووس سیاوش را فرستاد تا سپاهِ ایران را علیهِ افراسیاب هدایت کند. سیاوش خوب جنگید، بعد کارِ غیرمعمولی کرد: صلح کرد. معاهده را به کی‌کاووس فرستاد. کی‌کاووس رد کرد. جنگ را دستور داد ادامه پیدا کند. سیاوش دستورات را خواند. می‌توانست فرمان ببرد. می‌توانست رد کند. یا کارِ سومی می‌کرد — فقط می‌رفت. نامه‌ای به کی‌کاووس نوشت که دلایلش را توضیح می‌داد و از جیحون گذشت.",
+      "atmosphere": "dawn",
+      "image": null,
+      "reward": { "xp": 85 },
+      "unlocks_codex": ["the-letter-to-kavus"]
+    },
+    {
+      "id": "siyavashgerd-built",
+      "order": 4,
+      "title_en": "City of Siavash", "title_fa": "سیاوش‌گرد",
+      "era_en": "~2897–2890 BC", "era_fa": "~۲۸۹۷–۲۸۹۰ پ.م",
+      "body_en": "Afrasiab received Siavash as a prince and treated him as one. He gave him his daughter Farangis in marriage — a woman of comparable dignity to the man she was given to. He gave him land in Turan. Siavash built a city on it and named it Siyavashgerd: City of Siavash. The Shahnameh describes the city as beautiful and well-ordered, a place where justice was practiced because its founder knew exactly what injustice felt like. For a few years, the chronicle pauses its grief. Siavash was happy. He had a wife who understood him, land he had made into a kingdom, and a court that was not yet corrupt. Then Garsivaz came. Garsivaz was Afrasiab's brother and general — a man who needed the king's exclusive favor and saw in Siavash a rival for it. He began the slow work of poisoning, the particular skill of courts: a word here, a question there, a doubt planted and watered. He told Afrasiab that Siavash was corresponding with Kay Kavus. That the city was being built as a fortress, not a home. That the foreign prince was planning to use Turan against itself. Afrasiab was old. He had lived long enough to have learned that his dreams could tell the future. He had dreamed of Siavash — a young man on a white horse — as both his greatest joy and his coming destruction. The dream had always contained both. He chose to act on the half that was easier to act on.",
+      "body_fa": "افراسیاب سیاوش را به عنوانِ شاهزاده پذیرفت. دخترش فرنگیس را به او داد. به او زمین داد. سیاوش شهری بر آن ساخت: سیاوش‌گرد. شاهنامه شهر را زیبا و منظم توصیف می‌کند. چند سال شاهنامه غمش را متوقف می‌کند. سیاوش خوشحال بود. بعد گرسیوز آمد — برادر و سردارِ افراسیاب. مرد زرکی که مسموم‌سازیِ آهسته را بلد بود: کلمه‌ای اینجا، سؤالی آنجا، شکی کاشته‌شده. افراسیاب پیر بود. خوابِ سیاوش را دیده بود — شادی و نابودیِ آینده‌اش هر دو در یک خواب.",
+      "atmosphere": "warm",
+      "image": null,
+      "reward": { "xp": 75 },
+      "unlocks_codex": ["garsivaz-method", "afrasiyab-dream"]
+    },
+    {
+      "id": "the-killing",
+      "order": 5,
+      "title_en": "The Blood of Siavash", "title_fa": "خونِ سیاوش",
+      "era_en": "~2890 BC", "era_fa": "~۲۸۹۰ پ.م",
+      "body_en": "When the soldiers came for Siavash he did not fight them. Farangis begged him to flee; Afrasiab's own nobility counselled mercy; even some of Garsivaz's allies withdrew from what they could see coming. Siavash said: there is nothing I have done that requires escape. He was taken to a field outside Siyavashgerd. He was beheaded. Where his blood fell on the earth, a plant grew immediately — not slowly, the way plants grow, but at once, as though the earth had been waiting for exactly this blood in exactly this place. Ferdowsi calls it the blood of Siavash, the mourning plant of Turan. The Shahnameh names the grief that followed: every year the people of Iran wailed for Siavash at the ceremony called his tears, the weeping of women since the first grief entered the world. Farangis was pregnant. She gathered what she could and fled east into the mountains. She was carrying Kay Khosrow. The Shahnameh does not yet name what is growing in the east — but the reader knows that blood this pure does not stay in the ground.",
+      "body_fa": "وقتی سربازان آمدند سیاوش با آن‌ها نجنگید. فرنگیس التماس کرد فرار کند. گفت: هیچ کاری نکرده‌ام که فرار لازم داشته باشد. به مزرعه‌ای بیرونِ سیاوش‌گرد بردند. سر بریدند. جایی که خونش روی زمین افتاد، گیاهی فوری رویید — نه آهسته، بلکه یک‌باره. فردوسی آن را خونِ سیاوش می‌نامد. فرنگیس حامله بود. جمع کرد آنچه داشت و به سمتِ شرق فرار کرد. کی‌خسرو را با خود داشت.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 120 },
+      "unlocks_codex": ["the-mourning-plant", "what-grows-in-the-east"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "siavash",
+      "name_en": "Siavash", "name_fa": "سیاوش",
+      "role_en": "Son of Kay Kavus · Pupil of Rostam · The Chronicle's Purest Death",
+      "role_fa": "پسرِ کی‌کاووس · شاگردِ رستم · پاک‌ترین مرگِ شاهنامه",
+      "rarity": "legendary", "level_required": 1,
+      "lore_en": "Siavash is the Shahnameh's argument that purity is not a protection — it is a target. He does everything right: refuses Sudabeh without cruelty, walks through fire with dignity, negotiates an honest peace, refuses to serve his father's dishonesty, builds a just city in a foreign land. The world destroys him anyway. Ferdowsi does not offer this as an injustice to be fixed — it is simply what the world does to the pure. The chronicle records it without flinching. The grief of Siavash is the Shahnameh's second great wound, after Sohrab, and the two feed each other: both are deaths of the young and righteous at the hands of a world that could not contain them.",
+      "lore_fa": "سیاوش استدلالِ شاهنامه است که پاکی محافظت نیست — هدف است. همه چیز را درست انجام می‌دهد. دنیا با این حال نابودش می‌کند. فردوسی این را به‌عنوانِ بی‌عدالتیِ قابلِ تصحیح ارائه نمی‌دهد — فقط این است که دنیا با پاکان می‌کند.",
+      "image": "/season2/uploads/chapters/siavash.png",
+      "unlocked": true, "side": "light"
+    },
+    {
+      "slug": "sudabeh",
+      "name_en": "Sudabeh", "name_fa": "سودابه",
+      "role_en": "Queen of Kay Kavus · The Accusation That Cannot Be Taken Back",
+      "role_fa": "ملکه‌ی کی‌کاووس · اتهامی که پس گرفته نمی‌شود",
+      "rarity": "epic", "level_required": 2,
+      "lore_en": "Sudabeh is not a simple villain. She is a queen of considerable intelligence who commits one catastrophic act of self-interest. She approaches Siavash because she genuinely desires him. When he refuses, she faces a choice between accepting the refusal with grace or protecting herself by destroying him. She chooses the latter, and the chronicle records the choice without excusing it. The Shahnameh does not portray her as evil by nature — it portrays her as capable of great evil by circumstance, which is a more disturbing claim.",
+      "lore_fa": "سودابه شروری ساده نیست. ملکه‌ی باهوشی است که یک عملِ فاجعه‌بارِ نفع‌طلبی مرتکب می‌شود. سیاوش را رد می‌کند با انتخاب بینِ پذیرشِ رد با گذشت یا محافظت از خودش با نابودیِ او. دومی را انتخاب می‌کند.",
+      "image": null, "unlocked": false, "side": "dark",
+      "unlock_via": "scene:sudabeh"
+    },
+    {
+      "slug": "farangis",
+      "name_en": "Farangis", "name_fa": "فرنگیس",
+      "role_en": "Daughter of Afrasiab · Wife of Siavash · Mother of Kay Khosrow",
+      "role_fa": "دخترِ افراسیاب · همسرِ سیاوش · مادرِ کی‌خسرو",
+      "rarity": "epic", "level_required": 3,
+      "lore_en": "Farangis is the daughter of the king who will kill her husband and the mother of the king who will avenge him. She moves between two worlds that cannot coexist — Turan, which she was born into, and the children of Siavash's blood, who must eventually destroy Turan to avenge their father. The Shahnameh treats her with exact compassion: she is given no speeches, only actions. She flees east with Kay Khosrow when there is nothing else to do. That flight is the act that makes everything that follows possible.",
+      "lore_fa": "فرنگیس دخترِ شاهی است که شوهرش را خواهد کشت و مادرِ شاهی که از او انتقام خواهد گرفت. بینِ دو دنیا حرکت می‌کند. شاهنامه با دقتِ رحمت‌آمیز رفتار می‌کند: خطابه ندارد، فقط عمل. وقتی چیزِ دیگری نیست، با کی‌خسرو به سمتِ شرق فرار می‌کند.",
+      "image": null, "unlocked": false, "side": "neutral",
+      "unlock_via": "scene:the-killing"
+    },
+    {
+      "slug": "garsivaz",
+      "name_en": "Garsivaz", "name_fa": "گرسیوز",
+      "role_en": "General of Afrasiab · The Poisoner · The Architect of the Killing",
+      "role_fa": "سردارِ افراسیاب · مسموم‌ساز · معمارِ قتل",
+      "rarity": "rare", "level_required": 4,
+      "lore_en": "Garsivaz does not hate Siavash from envy alone — he hates him for being a kind of man that makes Garsivaz's kind of man look small. He uses a method as old as courts: slow, patient doubt. He does not accuse Siavash directly; he asks questions that make Afrasiab accuse himself. The Shahnameh understands this technique precisely. It is not dramatic. It is meticulous. And it works.",
+      "lore_fa": "گرسیوز از حسادتِ تنها از سیاوش نفرت ندارد — از نوعِ مردی که گرسیوز را کوچک می‌کند نفرت دارد. روشی به قدمتِ دربارها استفاده می‌کند: شکِ آهسته و صبور. مستقیم متهم نمی‌کند. سؤال می‌پرسد.",
+      "image": null, "unlocked": false, "side": "dark",
+      "unlock_via": "scene:siyavashgerd-built"
+    }
+  ],
+  "places": [
+    {
+      "slug": "siyavashgerd",
+      "name_en": "Siyavashgerd — City of Siavash",
+      "name_fa": "سیاوش‌گرد — شهرِ سیاوش",
+      "kind_en": "The City He Built and Never Left",
+      "kind_fa": "شهری که ساخت و هرگز نرفت",
+      "summary_en": "Siyavashgerd is the one place in the Shahnameh that Siavash built himself, with his own design, for his own purpose — a city ruled by the same principles he tried to practice in Kay Kavus's court and could not, because Kay Kavus's court would not allow it. The irony that Afrasiab — his father's enemy — gave him more room to be just than his own father did is one of the Shahnameh's most quietly devastating observations about power.",
+      "summary_fa": "سیاوش‌گرد تنها جایی در شاهنامه است که سیاوش خودش ساخت — شهری با اصولِ همان چیزی که در دربارِ کی‌کاووس سعی کرد عملی کند و نتوانست. این که افراسیاب — دشمنِ پدرش — بیشتر فضا داد برای عدالت، یکی از ساکت‌ترین مشاهداتِ ویرانگرِ شاهنامه است.",
+      "image": null, "unlocked": false, "unlock_via": "scene:siyavashgerd-built"
+    },
+    {
+      "slug": "the-field-of-blood",
+      "name_en": "The Field — Where the Plant Grew",
+      "name_fa": "مزرعه — جایی که گیاه رویید",
+      "kind_en": "Where Purity Became a Plant",
+      "kind_fa": "جایی که پاکی گیاه شد",
+      "summary_en": "The field outside Siyavashgerd where Siavash was executed has no dramatic description in the Shahnameh. It is simply a field. What distinguishes it is what happened to his blood: it grew immediately into a plant, which Ferdowsi names the Blood of Siavash, and which would be gathered and mourned over every year at the ceremony of Siavash's tears — one of Iran's oldest remembered griefs.",
+      "summary_fa": "مزرعه‌ی بیرونِ سیاوش‌گرد که سیاوش در آن کشته شد توصیفِ دراماتیکی در شاهنامه ندارد. فقط یک مزرعه است. آنچه آن را متمایز می‌کند آن چیزی است که با خونش اتفاق افتاد: فوری گیاه شد.",
+      "image": null, "unlocked": false, "unlock_via": "scene:the-killing"
+    }
+  ],
+  "battle": {
+    "boss_slug": "garsivaz-conspiracy",
+    "boss_name_en": "Garsivaz and the Court of Afrasiab",
+    "boss_name_fa": "گرسیوز و دربارِ افراسیاب",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Garsivaz's conspiracy is grinding forward. To face this gate you must understand the forces that destroyed Siavash — not just Garsivaz's envy, but Afrasiab's fear, Sudabeh's self-preservation, and Kay Kavus's failure to be the father his son needed.",
+    "intro_fa": "توطئه‌ی گرسیوز در حالِ پیشرفت است. برای مواجهه باید نیروهایی که سیاوش را نابود کردند را بفهمی — نه فقط حسادتِ گرسیوز بلکه ترسِ افراسیاب، خودمحافظتیِ سودابه، و شکستِ کی‌کاووس.",
+    "requirements": [
+      {
+        "id": "level", "kind": "level", "target": 50,
+        "label_en": "Reach LVL 50", "label_fa": "رسیدن به سطحِ ۵۰", "label_tg": "Расидан ба сатҳи 50",
+        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+      },
+      {
+        "id": "quiz", "kind": "quiz", "target": "siavash",
+        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "sudabeh-logic",
+      "category": "person",
+      "title_en": "Sudabeh — The Logic of Self-Preservation",
+      "title_fa": "سودابه — منطقِ خودمحافظتی",
+      "summary_en": "Sudabeh's accusation is not irrational — it is perfectly rational from the perspective of a woman who has just been refused and understands that silence is not a protection. If Siavash tells the truth, she is disgraced. The only move available to her is the offensive: accuse first, accuse publicly, make the accusation too costly to challenge. The Shahnameh does not approve of this logic. It also does not pretend the logic is not there.",
+      "summary_fa": "اتهامِ سودابه غیرمنطقی نیست — از منظرِ زنی که تازه رد شده کاملاً منطقی است. اگر سیاوش حقیقت را بگوید رسوا می‌شود. تنها حرکتِ موجود تهاجمی است: اول متهم کن، علناً متهم کن.",
+      "image": null, "unlock_via": "scene:sudabeh"
+    },
+    {
+      "id": "purity-as-evidence",
+      "category": "concept",
+      "title_en": "Purity as Evidence",
+      "title_fa": "پاکی به عنوانِ شاهد",
+      "summary_en": "The trial by fire is the Shahnameh's most striking legal procedure — the idea that divine protection will preserve the innocent and the fire will consume the guilty. When Siavash emerges untouched, his innocence is proven beyond any legal appeal. What the trial cannot do is change what has already happened: Sudabeh has accused, Kay Kavus has doubted, the court has been poisoned. The fire proves the fact. It cannot undo the suspicion.",
+      "summary_fa": "آزمایشِ آتش برجسته‌ترین رویه‌ی قضاییِ شاهنامه است — ایده‌ای که محافظتِ الهی بی‌گناه را حفظ می‌کند. وقتی سیاوش دست‌نخورده بیرون می‌آید بی‌گناهی‌اش ثابت می‌شود. آنچه آزمایش نمی‌تواند بکند تغییرِ آنچه اتفاق افتاده است.",
+      "image": null, "unlock_via": "scene:fire-ordeal"
+    },
+    {
+      "id": "wrong-chronicle",
+      "category": "concept",
+      "title_en": "The Wrong Chronicle",
+      "title_fa": "شاهنامه‌ی اشتباه",
+      "summary_en": "Siavash's purity is not a flaw — it is simply unsuited to the chronicle he was born into. The Shahnameh is a chronicle of kings and wars and ambition and survival. Siavash has none of these in him, or rather he has them all and has chosen not to use them as weapons. This makes him extraordinary and it makes him impossible. Ferdowsi mourns this specifically: not the injustice of the death, but the fact that the kind of man Siavash is should not have to die this way in a world that could, if it chose, be better.",
+      "summary_fa": "پاکیِ سیاوش نقص نیست — فقط برای شاهنامه‌ای که در آن متولد شده مناسب نیست. فردوسی این را به‌طورِ خاص عزا می‌گیرد: نه بی‌عدالتیِ مرگ، بلکه این واقعیت که نوعِ مردی که سیاوش است نباید به این شکل بمیرد.",
+      "image": null, "unlock_via": "scene:fire-ordeal"
+    },
+    {
+      "id": "the-letter-to-kavus",
+      "category": "event",
+      "title_en": "The Letter to Kay Kavus",
+      "title_fa": "نامه به کی‌کاووس",
+      "summary_en": "Siavash does not flee without explanation — he writes to his father. The letter explains his reasoning: the treaty was just, the war was not worth continuing, he could not be the instrument of the king's dishonesty. He does not beg. He does not accuse. He simply states what he decided and why, and then crosses the river. The Shahnameh treats this letter as an act of extraordinary moral clarity — a son writing to a father who has failed him, without cruelty, without abandonment, with only an honest accounting.",
+      "summary_fa": "سیاوش بدون توضیح فرار نمی‌کند — به پدرش می‌نویسد. نامه توضیح می‌دهد: معاهده عادلانه بود، جنگ ارزشِ ادامه نداشت، نمی‌توانست ابزارِ بی‌صداقتیِ شاه باشد. التماس نمی‌کند. متهم نمی‌کند.",
+      "image": null, "unlock_via": "scene:crossing-oxus"
+    },
+    {
+      "id": "garsivaz-method",
+      "category": "concept",
+      "title_en": "The Method of Garsivaz",
+      "title_fa": "روشِ گرسیوز",
+      "summary_en": "Garsivaz does not need to lie. He needs only to make Afrasiab ask the right questions. Is Siavash building a fortress or a home? Why does he meet privately with so many visitors? What exactly is in those letters to the border garrisons? None of these are accusations; all of them are seeds. The Shahnameh understands that doubt is more destructive than accusation — an accusation can be refuted, but doubt, once planted in a king's mind about someone he loves, cannot be dug out by evidence.",
+      "summary_fa": "گرسیوز نیازی به دروغ ندارد. فقط باید افراسیاب را وادار کند سؤالاتِ درست بپرسد. آیا سیاوش قلعه می‌سازد یا خانه؟ این‌ها اتهام نیستند؛ همه بذر هستند. شاهنامه می‌فهمد شک مخرب‌تر از اتهام است.",
+      "image": null, "unlock_via": "scene:siyavashgerd-built"
+    },
+    {
+      "id": "afrasiyab-dream",
+      "category": "concept",
+      "title_en": "Afrasiab's Dream — Joy and Destruction in One Vision",
+      "title_fa": "خوابِ افراسیاب — شادی و نابودی در یک رؤیا",
+      "summary_en": "Before Siavash arrives in Turan, Afrasiab dreams of him: a young man on a white horse who will be his greatest joy and his destruction. The dream contains both. Afrasiab accepts Siavash because the joy half of the dream has come true. When Garsivaz begins his work, Afrasiab acts on the destruction half. He chose which part of the dream to believe at each stage. The tragedy is that the dream gave him a choice, and he made the wrong one twice.",
+      "summary_fa": "پیش از رسیدنِ سیاوش به توران، افراسیاب او را خواب می‌بیند: مردِ جوانی روی اسبِ سفید که بزرگترین شادیش و نابودیِ آینده‌اش خواهد بود. خواب هر دو را دارد. افراسیاب سیاوش را می‌پذیرد چون نیمه‌ی شادیِ خواب محقق شده. تراژدی این است که خواب انتخاب به او داد و دو بار انتخابِ اشتباه کرد.",
+      "image": null, "unlock_via": "scene:siyavashgerd-built"
+    },
+    {
+      "id": "the-mourning-plant",
+      "category": "artifact",
+      "title_en": "The Blood of Siavash — The Mourning Plant",
+      "title_fa": "خونِ سیاوش — گیاهِ سوگواری",
+      "summary_en": "The plant that grew immediately where Siavash's blood fell is one of the Shahnameh's most precise images. Blood, in the chronicle, is usually the medium of violence — it is shed in battle, it is the currency of vengeance. Here it becomes the medium of grief and memory. The plant named the Blood of Siavash is not a monument: it grows wild, in fields, in the places where he died. Memory of this kind cannot be demolished or forgotten. It grows back.",
+      "summary_fa": "گیاهی که فوری جایی که خونِ سیاوش افتاد رویید یکی از دقیق‌ترین تصاویرِ شاهنامه است. خون در شاهنامه معمولاً رسانه‌ی خشونت است. اینجا رسانه‌ی اندوه و حافظه می‌شود. این نوع از حافظه را نمی‌توان تخریب یا فراموش کرد.",
+      "image": null, "unlock_via": "scene:the-killing"
+    },
+    {
+      "id": "what-grows-in-the-east",
+      "category": "concept",
+      "title_en": "What Grows in the East",
+      "title_fa": "آنچه در شرق می‌روید",
+      "summary_en": "Farangis flees east with Kay Khosrow in her womb. The Shahnameh does not describe what she feels or what she knows about the future. It only records that she went east and that she was carrying a child. The reader who knows what comes next understands: what is growing in the east is the answer to everything Afrasiab has just done. Kay Khosrow will become the greatest king of the Kayanian dynasty, and he will cross the Oxus with fire and defeat Afrasiab personally. The east is where the reckoning grows.",
+      "summary_fa": "فرنگیس با کی‌خسرو در رحم به سمتِ شرق فرار می‌کند. شاهنامه ثبت می‌کند که شرق رفت و بچه داشت. خواننده‌ای که می‌داند بعد چه می‌آید می‌فهمد: آنچه در شرق می‌روید پاسخِ همه چیزی است که افراسیاب تازه انجام داده.",
+      "image": null, "unlock_via": "scene:the-killing"
+    }
+  ]
+}

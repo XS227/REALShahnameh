@@ -621,6 +621,55 @@
   margin: 0 0 12px; font-size: 13px; color: #d8d2c0;
 }
 
+/* Quiz score ring */
+.quiz-score-ring {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.qsr-num {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--gold, #f4c56b);
+}
+.qsr-sep {
+  font-size: 28px;
+  color: #888;
+  line-height: 1;
+}
+.qsr-total {
+  font-size: 28px;
+  font-weight: 700;
+  color: #d8d2c0;
+  line-height: 1;
+}
+
+/* Quiz verdict badge */
+.quiz-verdict {
+  display: inline-block;
+  padding: 5px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.qv-pass {
+  background: rgba(72, 200, 120, .18);
+  color: #48c878;
+  border: 1px solid rgba(72, 200, 120, .35);
+}
+.qv-fail {
+  background: rgba(255, 100, 80, .18);
+  color: #ff7060;
+  border: 1px solid rgba(255, 100, 80, .35);
+}
+.quiz-result-pass .qsr-num { color: #48c878; }
+.quiz-result-fail .qsr-num { color: #ff7060; }
+
 /* ----- scene reader modal ----- */
 .scene-modal {
   position: fixed; inset: 0;

@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-31T00:00:00Z",
+  "chapter_slug": "bijan-manijeh",
+  "chapter_id": 18,
+  "era": {
+    "label_en": "~2865 BC — Three Winters in the Pit",
+    "label_fa": "~۲۸۶۵ پ.م — سه زمستان در چاه"
+  },
+  "lore_summary": {
+    "en": "Bijan, son of Giv, goes to a Turanian spring festival at Gorgin's prodding and is seen by Manijeh, Afrasiab's daughter. She drugs his wine and brings him to her chambers. When Afrasiab discovers an Iranian warrior in his palace, he throws Bijan into a deep pit sealed with a boulder and banishes Manijeh from court. She refuses to leave. She begs bread from the city and feeds Bijan through a crack in the rock for three winters. In Iran, Kay Khosrow consults his magic goblet and sees Bijan alive. Rostam goes in disguise as a merchant. Manijeh finds him in the horse lines — she has been watching every caravan for three years — and leads him to the pit at night. Rostam lifts the boulder free and pulls Bijan out. They fight their way back to Iran. Manijeh crosses with them. The Shahnameh ends the story with precision: she kept him alive through three winters by her own means, and the chronicle brings her to Iran with him because she earned the crossing.",
+    "fa": "بیژن، پسرِ گیو، با تشویقِ گرگین به جشنِ بهارِ توران می‌رود و توسطِ منیژه، دخترِ افراسیاب، دیده می‌شود. او شرابش را مسموم می‌کند و به اتاقش می‌برد. وقتی افراسیاب کشف می‌کند جنگجویِ ایرانی در کاخش است، بیژن را در چاهِ عمیقی می‌اندازد و منیژه را از دربار می‌راند. منیژه نمی‌رود. سه زمستان از شهر نان گدایی می‌کند و از شکافِ سنگ به بیژن می‌دهد. در ایران، کی‌خسرو با جامِ جهان‌نما بیژنِ زنده را می‌بیند. رستم به عنوانِ بازرگان مخفی می‌رود. منیژه او را در صفِ اسبان پیدا می‌کند و شبانه به چاه می‌برد. رستم سنگ را بلند می‌کند. بیژن را بیرون می‌کشد. به ایران بازمی‌گردند. منیژه با آن‌ها می‌آید."
+  },
+  "timeline": [
+    {
+      "id": "gorgin-trap",
+      "year_label_en": "~2865 BC", "year_label_fa": "~۲۸۶۵ پ.م",
+      "title_en": "Gorgin's Trap", "title_fa": "دامِ گرگین",
+      "body_en": "Bijan and Gorgin deal with the border boars. Gorgin then describes a Turanian spring festival nearby where Manijeh is celebrating — a description designed to make a young warrior go. Bijan goes.",
+      "body_fa": "بیژن و گرگین با گراز‌های مرزی کنار می‌آیند. بعد گرگین جشنِ بهارِ تورانیِ نزدیکی که منیژه در آن در حالِ جشن است توصیف می‌کند. بیژن می‌رود.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "manijeh-acts",
+      "year_label_en": "~2865 BC", "year_label_fa": "~۲۸۶۵ پ.م",
+      "title_en": "Manijeh Acts", "title_fa": "منیژه عمل می‌کند",
+      "body_en": "Manijeh sees Bijan at the festival. She falls in love decisively. She drugs his wine, and when he wakes he is in her chambers in Afrasiab's palace. Afrasiab discovers him. Bijan is thrown into the pit. Manijeh is banished.",
+      "body_fa": "منیژه بیژن را در جشن می‌بیند. فوری عاشق می‌شود. شرابش را مسموم می‌کند. وقتی بیدار می‌شود در اتاقش در کاخِ افراسیاب است. افراسیاب پیدایش می‌کند. بیژن به چاه. منیژه از دربار رانده می‌شود.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "three-winters",
+      "year_label_en": "~2865–2862 BC", "year_label_fa": "~۲۸۶۵–۲۸۶۲ پ.م",
+      "title_en": "Three Winters", "title_fa": "سه زمستان",
+      "body_en": "Manijeh refuses to leave the vicinity of the pit. She begs bread from the city market and passes it through a crack in the boulder's seal. For three winters she keeps Bijan alive by her own work, with no resources except what she can beg.",
+      "body_fa": "منیژه رد نمی‌کند که از اطرافِ چاه برود. از بازارِ شهر نان گدایی می‌کند و از شکافِ درزِ سنگ رد می‌کند. سه زمستان بیژن را با کارِ خودش و بدونِ منبعی جز آنچه گدایی می‌کند زنده نگه می‌دارد.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "rostam-sent",
+      "year_label_en": "~2862 BC", "year_label_fa": "~۲۸۶۲ پ.م",
+      "title_en": "Rostam Goes as a Merchant", "title_fa": "رستم به عنوانِ بازرگان می‌رود",
+      "body_en": "Kay Khosrow uses his Jame-e-Jam to see Bijan alive in a pit in Turan. Rostam is sent disguised as a merchant with a caravan. Manijeh finds him — she has watched every caravan for three years — and leads him to the pit at night.",
+      "body_fa": "کی‌خسرو از جامِ جهان‌نما استفاده می‌کند تا بیژنِ زنده را در چاه ببیند. رستم به عنوانِ بازرگان مخفی با کاروانی اعزام می‌شود. منیژه پیدایش می‌کند — سه سال هر کاروانی را تماشا کرده — و شبانه به چاه می‌برد.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "the-boulder",
+      "year_label_en": "~2862 BC", "year_label_fa": "~۲۸۶۲ پ.م",
+      "title_en": "The Boulder", "title_fa": "سنگ",
+      "body_en": "Rostam takes hold of the boulder sealing the pit. It does not move at first — it was chosen because only Rakhsh could lift it. Then it does. Bijan climbs out. They fight their way back to Iran. Manijeh crosses with them.",
+      "body_fa": "رستم سنگِ مهرکننده‌ی چاه را می‌گیرد. اول تکان نمی‌خورد — انتخاب شده چون فقط رخش می‌توانست بلندش کند. بعد می‌خورد. بیژن بیرون می‌آید. به ایران برمی‌گردند. منیژه با آن‌ها می‌آید.",
+      "image": null, "side": "light"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "gorgin-tells",
+      "order": 1,
+      "title_en": "What Gorgin Said", "title_fa": "آنچه گرگین گفت",
+      "era_en": "~2865 BC", "era_fa": "~۲۸۶۵ پ.م",
+      "body_en": "Bijan and Gorgin had been sent to the Armenian border to deal with boars that were devastating the farmland. They dealt with the boars — Bijan dealt with most of them, which was characteristic. On the way back, Gorgin began describing something he had heard about: a Turanian spring festival in the meadows beyond the border, where Manijeh, daughter of Afrasiab, was celebrating the season with her attendants. The description was precise in the way of a description designed to work. He named her beauty. He mentioned that there were almost no guards — only handmaidens, no soldiers. He said it would be a shame not to see such a thing, being so close. Gorgin owed Bijan a debt from an earlier episode and the Shahnameh implies this was not an innocent suggestion. Bijan was young, capable, and exactly the kind of warrior who would feel that the correct response to a nearby festival was to attend it. He put on his finest clothes and crossed the border.",
+      "body_fa": "بیژن و گرگین برای مقابله با گرازها به مرزِ ارمنستان فرستاده شده بودند. از برگشت، گرگین شروع کرد چیزی را که شنیده بود توصیف کند: جشنِ بهارِ توران در چمنزارهای آنطرفِ مرز، که منیژه، دخترِ افراسیاب، با ندیمه‌هایش فصل را جشن می‌گرفت. توصیف در آن شکلی بود که برای کارکردن طراحی شده بود. زیبایی‌اش را نام برد. گفت تقریباً هیچ نگهبانی نیست. گفت با این نزدیکی شرم است ندیدنش. گرگین از یک ماجرای قبلی بدهکارِ بیژن بود و شاهنامه نشان می‌دهد این پیشنهادِ بی‌گناهی نبود. بیژن جوان بود و دقیقاً آن نوع جنگجویی که احساس می‌کرد پاسخِ درست به جشنِ نزدیک شرکت در آن است.",
+      "atmosphere": "warm",
+      "image": "/season2/uploads/chapters/bijan-manijeh.png",
+      "reward": { "xp": 60 },
+      "unlocks_codex": ["gorgin-debt"]
+    },
+    {
+      "id": "manijeh-decides",
+      "order": 2,
+      "title_en": "Manijeh Decides", "title_fa": "منیژه تصمیم می‌گیرد",
+      "era_en": "~2865 BC", "era_fa": "~۲۸۶۵ پ.م",
+      "body_en": "Bijan walked into the festival and was immediately the most remarkable person there — an Iranian warrior in Turanian spring colours, young, armed, confident with the particular confidence of someone who has never been told they should not be somewhere. Manijeh saw him. The Shahnameh does not give Manijeh a long internal debate. She saw Bijan and she decided. She had her attendants approach him, invite him to a private feast, and pour him wine that was not quite only wine. Bijan woke in her chambers in Afrasiab's palace, in a room he had not chosen to enter, in a kingdom he was technically at war with, in a situation that had no clean exit. What Manijeh had done was, by any practical measure, reckless. She had brought an Iranian warrior into Afrasiab's palace on the basis of seeing him at a spring festival. The Shahnameh does not judge this. It records that she did it, and then records what it cost her, and then records what it produced, and leaves the accounting to the reader.",
+      "body_fa": "بیژن وارد جشن شد و فوری قابل‌توجه‌ترین نفر آنجا بود. منیژه او را دید. شاهنامه مناظره‌ی داخلیِ طولانی به منیژه نمی‌دهد. بیژن را دید و تصمیم گرفت. ندیمه‌هایش را فرستاد، او را به ضیافتِ خصوصی دعوت کردند، شرابی ریختند که کاملاً فقط شراب نبود. بیژن در اتاقِ منیژه در کاخِ افراسیاب بیدار شد — در اتاقی که انتخاب نکرده بود واردش شود. آنچه منیژه کرده بود عملاً بی‌پروایانه بود. شاهنامه این را قضاوت نمی‌کند.",
+      "atmosphere": "warm",
+      "image": null,
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["manijeh-speed"]
+    },
+    {
+      "id": "pit-and-boulder",
+      "order": 3,
+      "title_en": "The Pit and the Boulder", "title_fa": "چاه و سنگ",
+      "era_en": "~2865 BC", "era_fa": "~۲۸۶۵ پ.م",
+      "body_en": "When Afrasiab's guards found Bijan, the king's reaction was two decisions made in rapid sequence. Bijan was thrown into a pit — a stone well of considerable depth, sealed with a boulder so heavy that it could not be lifted by ordinary means. Manijeh was expelled from the court. She was Afrasiab's daughter and he did not execute her, but she was stripped of everything: her rank, her quarters, her attendants, her allowance. She was sent out of the palace gates. The city of Afrasiab's capital spread before her with no provisions and no standing. She went to the market. She begged. She took bread back to the edge of the pit and found the crack in the boulder's seal and pushed food through. She did this the next day. And the next. The Shahnameh measures the passage of time here in winters: one winter, then two, then three. The boulder sat. Bijan was alive inside it. Manijeh was outside it every day with what she had managed to beg.",
+      "body_fa": "وقتی نگهبانانِ افراسیاب بیژن را پیدا کردند، واکنشِ شاه دو تصمیمِ پیاپی بود. بیژن به چاه — چاهی سنگی با عمقِ قابل‌توجه، مهرشده با سنگی که نمی‌شد با وسایلِ معمولی بلندش کرد. منیژه اخراج. دخترِ افراسیاب بود و اعدامش نکرد، اما از همه چیز محروم شد. از دروازه‌های کاخ فرستاده شد. به بازار رفت. گدایی کرد. نان به لبه‌ی چاه برگرداند و شکافِ درزِ سنگ را پیدا کرد. شاهنامه گذرِ زمان را در زمستان اندازه می‌گیرد: یک، دو، سه. سنگ نشسته بود. بیژن درون زنده بود. منیژه هر روز بیرونش بود.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["the-three-winters", "what-a-pit-is"]
+    },
+    {
+      "id": "jam-e-jam",
+      "order": 4,
+      "title_en": "The Cup That Shows the World", "title_fa": "جامِ جهان‌نما",
+      "era_en": "~2862 BC", "era_fa": "~۲۸۶۲ پ.م",
+      "body_en": "In Iran, Giv's grief had become an official mourning. Bijan had been missing for three years. Kay Khosrow brought out the Jame-e-Jam — the magic cup, the mirror of the world, which showed the truth of distant things to the king who asked. He looked into it and saw: a deep pit in Turan, a man alive at the bottom of it. He saw the boulder. He saw the woman outside it, begging in the market, bringing food. He understood the situation entirely. The Shahnameh presents the Jame-e-Jam as a natural instrument of Kay Khosrow's kingship — a king who has the right relationship with power also has access to truth. The cup does not serve reckless kings. Kay Khosrow chose Rostam for the mission as a matter of course: whoever had sealed the pit had known it would need to resist Rostam, which meant Rostam was the only one who could open it.",
+      "body_fa": "در ایران، اندوهِ گیو رسمی شده بود. بیژن سه سال غایب بود. کی‌خسرو جامِ جهان‌نما را بیرون آورد — جامِ جادو، آینه‌ی دنیا. نگاه کرد و دید: چاهِ عمیقی در توران، مردی زنده در ته‌اش. سنگ را دید. زنی بیرونش که در بازار گدایی می‌کند و غذا می‌آورد. وضعیت را کاملاً فهمید. رستم را برای مأموریت انتخاب کرد: هرکسی که چاه را مهر کرده بود می‌دانست باید در برابرِ رستم مقاومت کند — یعنی فقط رستم می‌توانست بازش کند.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 85 },
+      "unlocks_codex": ["jame-e-jam", "right-king-right-truth"]
+    },
+    {
+      "id": "manijeh-finds-rostam",
+      "order": 5,
+      "title_en": "She Found Him in the Horse Lines", "title_fa": "در صفِ اسبان پیدایش کرد",
+      "era_en": "~2862 BC", "era_fa": "~۲۸۶۲ پ.م",
+      "body_en": "Rostam crossed into Turan disguised as a merchant with a trading caravan. He had Rakhsh in the horse lines, which was a risk — there was only one horse in the world that looked like Rakhsh and anyone who had seen him would know. Manijeh had been watching every caravan that passed near the city for three years. She walked the horse lines of Rostam's caravan at dusk and saw Rakhsh. She went directly to the merchant who owned him and looked at him for a long time. His size. His hands. She knew. She fell at his feet in the road and told him everything — Bijan in the pit, the boulder, three years of begging. Rostam helped her up. That night he had her lead him to the pit. He found the boulder. He gripped it and strained. It was, as advertised, not a normal boulder. Then it moved. He tossed it aside, lowered a rope, and Bijan climbed out — thin, worn by three years of darkness, but alive. They killed Afrasiab's guards on the way out. They crossed back into Iran with Bijan, Manijeh, and the story that the Shahnameh would tell for as long as it was read.",
+      "body_fa": "رستم به عنوانِ بازرگان به توران رفت. رخش در صفِ اسبان بود — خطری بود. منیژه سه سال هر کاروانی که از شهر عبور می‌کرد را تماشا کرده بود. غروب صفِ اسبانِ کاروانِ رستم را گشت و رخش را دید. مستقیم به بازرگانی رفت که صاحبش بود و مدتی به او نگاه کرد. قامتش. دستانش. فهمید. به پاهایش افتاد و همه چیز را گفت. شبِ همان شب به چاه رفتند. رستم سنگ را گرفت. سنگِ عادی نبود. بعد تکان خورد. طناب انداخت. بیژن بیرون آمد. به ایران برگشتند — بیژن، منیژه، و داستانی که شاهنامه تا وقتی خوانده شود روایت می‌کند.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 110 },
+      "unlocks_codex": ["what-manijeh-earned"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "manijeh",
+      "name_en": "Manijeh", "name_fa": "منیژه",
+      "role_en": "Daughter of Afrasiab · Three Winters at the Pit · The Woman Who Saved Him Her Own Way",
+      "role_fa": "دخترِ افراسیاب · سه زمستان کنارِ چاه · زنی که به روشِ خودش نجاتش داد",
+      "rarity": "legendary", "level_required": 1,
+      "lore_en": "Manijeh is the Shahnameh's finest portrait of love as action rather than feeling. She falls in love quickly and recklessly — but what distinguishes her is not the falling but the three winters after it. When everything she had was taken — rank, home, resources, standing — she did not leave. She begged bread from a city that knew she was the disgraced daughter of the king, and she fed a man in a pit. She had no political leverage, no allies, no plan. She had only the fact of what she had decided, and she maintained that fact through three winters of humiliation. The Shahnameh brings her to Iran because she earned the crossing.",
+      "lore_fa": "منیژه بهترین تصویرِ شاهنامه از عشق به عنوانِ عمل به جای احساس است. سریع و بی‌پروا عاشق می‌شود — اما آنچه او را متمایز می‌کند نه عاشق شدن است بلکه سه زمستانِ بعدش. وقتی همه چیزش گرفته شد از دست نداد. از شهری که می‌دانست دخترِ رسوایِ شاه است نان گدایی کرد. شاهنامه او را به ایران می‌آورد چون عبور را کسب کرده بود.",
+      "image": "/season2/uploads/chapters/bijan-manijeh.png",
+      "unlocked": true, "side": "light"
+    },
+    {
+      "slug": "bijan",
+      "name_en": "Bijan", "name_fa": "بیژن",
+      "role_en": "Son of Giv · The Man in the Pit · Iran's Greatest Rescue Mission",
+      "role_fa": "پسرِ گیو · مردِ داخلِ چاه · بزرگترین مأموریتِ نجاتِ ایران",
+      "rarity": "epic", "level_required": 2,
+      "lore_en": "Bijan's role in this story is unusual for a Shahnameh hero: he is the object of rescue rather than the agent of it. He goes to the festival from overconfidence, is drugged by a woman who loves him, and spends three years in a pit kept alive by that same woman's begging. He is not passive by character — he is a capable warrior — but the Bijan-Manijeh story specifically removes his agency and keeps it removed for three full years. The Shahnameh is precise about this: heroism is not always about what you do. Sometimes it is about enduring what is done to you, which is a different kind of strength.",
+      "lore_fa": "نقشِ بیژن در این داستان برای قهرمانِ شاهنامه غیرمعمول است: موضوعِ نجات است نه عاملِ آن. از اطمینانِ بیش از حد به جشن می‌رود، توسطِ زنی که عاشقش است مسموم می‌شود، و سه سال در چاهی که همان زن با گدایی زنده نگهش می‌دارد می‌گذرد.",
+      "image": null, "unlocked": false, "side": "light",
+      "unlock_via": "scene:pit-and-boulder"
+    },
+    {
+      "slug": "gorgin",
+      "name_en": "Gorgin", "name_fa": "گرگین",
+      "role_en": "The Prodder · The Debt That Became a Trap",
+      "role_fa": "تحریک‌کننده · بدهی‌ای که تله شد",
+      "rarity": "rare", "level_required": 3,
+      "lore_en": "Gorgin is a secondary figure whose small act of misdirection produces enormous consequences. He owed Bijan a debt and used the spring festival description to discharge it in the most harmful way possible — by sending Bijan into a situation Gorgin knew or suspected was dangerous. The Shahnameh does not make Gorgin explicitly malicious; it makes him the kind of person who, when given the choice between honesty and a convenient opportunity to let someone else walk into trouble, chooses the opportunity.",
+      "lore_fa": "گرگین چهره‌ای فرعی است که یک عملِ کوچکِ انحرافش عواقبِ بزرگی دارد. بدهکارِ بیژن بود و توصیفِ جشنِ بهار را به مضرترین راهِ ممکن استفاده کرد. شاهنامه گرگین را آشکارا بدخواه نشان نمی‌دهد؛ نوعِ آدمی می‌سازد که وقتی انتخاب بینِ صداقت و فرصتِ راحتِ اجازه دادن به دیگری برای قدم گذاشتن در دردسر است، فرصت را انتخاب می‌کند.",
+      "image": null, "unlocked": false, "side": "dark",
+      "unlock_via": "scene:gorgin-tells"
+    }
+  ],
+  "places": [
+    {
+      "slug": "the-pit",
+      "name_en": "The Pit — Three Years of Darkness",
+      "name_fa": "چاه — سه سال تاریکی",
+      "kind_en": "Where Bijan Was Kept and Manijeh Waited",
+      "kind_fa": "جایی که بیژن نگه داشته شد و منیژه منتظر ماند",
+      "summary_en": "The pit is the Shahnameh's most intimate setting — a single stone well with a boulder on top, two people on opposite sides of it for three years. One inside, one outside. The outside person has no power, no resources, no plan except to be there every day with what she has managed to beg. The Shahnameh uses this image to make an argument about love that is larger than the romantic register: love maintained under these conditions is not feeling. It is decision, repeated daily, under humiliation.",
+      "summary_fa": "چاه صمیمانه‌ترین محیطِ شاهنامه است — یک چاهِ سنگی با سنگی رویش، دو نفر در طرفِ مخالفِ آن برای سه سال. یکی درون، یکی بیرون. شاهنامه از این تصویر برای استدلالی درباره‌ی عشق استفاده می‌کند: عشقِ نگه‌داشته‌شده در این شرایط احساس نیست. تصمیم است، روز به روز تکرارشده.",
+      "image": null, "unlocked": true
+    },
+    {
+      "slug": "turanian-festival",
+      "name_en": "The Spring Festival — Where It Began",
+      "name_fa": "جشنِ بهار — جایی که شروع شد",
+      "kind_en": "One Afternoon That Lasted Three Years",
+      "kind_fa": "یک بعدازظهر که سه سال طول کشید",
+      "summary_en": "The Turanian spring festival is the Shahnameh's image of beauty as a trap — not in the sense that beauty is malicious, but in the sense that a beautiful afternoon can set in motion three years of consequence that no one involved initially calculated. Bijan goes because it sounds like a pleasant afternoon. Manijeh acts because she saw a man she wanted. The pit, the exile, the three winters, Rostam's mission — all of it follows from a spring festival that lasted one afternoon.",
+      "summary_fa": "جشنِ بهارِ توران تصویرِ شاهنامه از زیبایی به عنوانِ دام است — نه به این معنا که زیبایی مضر است، بلکه به این معنا که یک بعدازظهرِ زیبا می‌تواند سه سال پیامد به حرکت در بیاورد. بیژن می‌رود چون بعدازظهرِ خوشی به نظر می‌رسد.",
+      "image": null, "unlocked": false, "unlock_via": "scene:gorgin-tells"
+    }
+  ],
+  "battle": {
+    "boss_slug": "afrasiab-palace-guard",
+    "boss_name_en": "Afrasiab's Palace Guard — The Way Out",
+    "boss_name_fa": "نگهبانانِ کاخِ افراسیاب — راهِ بیرون",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "The boulder is lifted. Bijan is free. Now they have to get out of Afrasiab's territory. To face this gate you must understand the full weight of what Manijeh did — not the romantic beginning but the three winters — and what Rostam came all the way to Turan in disguise to undo.",
+    "intro_fa": "سنگ برداشته شده. بیژن آزاد است. حالا باید از قلمروِ افراسیاب بیرون بروند. برای مواجهه باید وزنِ کاملِ کارِ منیژه را بفهمی — نه آغازِ رمانتیک بلکه سه زمستان.",
+    "requirements": [
+      {
+        "id": "level", "kind": "level", "target": 68,
+        "label_en": "Reach LVL 68", "label_fa": "رسیدن به سطحِ ۶۸", "label_tg": "Расидан ба сатҳи 68",
+        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+      },
+      {
+        "id": "quiz", "kind": "quiz", "target": "bijan-manijeh",
+        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "gorgin-debt",
+      "category": "concept",
+      "title_en": "Gorgin's Debt and Its Direction",
+      "title_fa": "بدهیِ گرگین و جهتِ آن",
+      "summary_en": "Gorgin owed Bijan a favour from a prior incident. Instead of discharging this debt honestly, he used it as a weapon — engineering a situation that sent Bijan into danger while appearing to offer him a pleasure. The Shahnameh's anatomy of this is exact: Gorgin did not lie outright. He described a real festival. He named real beauties. He left out the danger — which is not quite the same as lying, but produces the same result. The chronicle understands that debts discharged through misdirection are not discharged at all. They compound.",
+      "summary_fa": "گرگین از یک ماجرای قبلی بدهکارِ بیژن بود. به جای اینکه صادقانه پرداخت کند، از آن به عنوانِ سلاح استفاده کرد. شاهنامه تشریحِ این را دقیق دارد: گرگین آشکارا دروغ نگفت. جشنِ واقعی را توصیف کرد. خطر را نگفت — که کاملاً دروغ نیست اما نتیجه‌ی یکسان دارد.",
+      "image": null, "unlock_via": "scene:gorgin-tells"
+    },
+    {
+      "id": "manijeh-speed",
+      "category": "concept",
+      "title_en": "Manijeh's Speed",
+      "title_fa": "سرعتِ منیژه",
+      "summary_en": "Manijeh decides immediately. She sees Bijan once and acts within hours. The Shahnameh compares this implicitly to Zal and Rudabeh, who fell in love through description across a distance — careful, negotiated, months in the making. Manijeh's love is the other kind: fast, certain, without deliberation. Both forms produce the same quality of devotion, but the Shahnameh gives Manijeh's story the harder test: she has to maintain it not through romantic correspondence but through three years of begging in a market, with no guarantee of rescue and no audience to witness her faithfulness.",
+      "summary_fa": "منیژه فوری تصمیم می‌گیرد. شاهنامه این را به‌طورِ ضمنی با زال و رودابه مقایسه می‌کند که از طریقِ توصیف از فاصله عاشق شدند — دقیق، چانه‌زنی‌شده، ماه‌ها در ساختن. عشقِ منیژه نوعِ دیگری است: سریع، مطمئن، بدونِ تأمل.",
+      "image": null, "unlock_via": "scene:manijeh-decides"
+    },
+    {
+      "id": "the-three-winters",
+      "category": "concept",
+      "title_en": "The Three Winters",
+      "title_fa": "سه زمستان",
+      "summary_en": "The Shahnameh measures Manijeh's devotion in winters, not in gestures. One winter of begging and feeding a man through a crack in a boulder is a demonstration of commitment. Three winters is a different category entirely: it is a life reorganized entirely around one fact. Manijeh had no political leverage, no allies, no plan for rescue — she had only the daily discipline of finding food and bringing it to the pit. The Shahnameh gives this more space than the spring festival, more space than the romantic beginning, because it is the part that actually defines who she is.",
+      "summary_fa": "شاهنامه فداکاریِ منیژه را در زمستان اندازه می‌گیرد، نه در ادا. یک زمستانِ گدایی و تغذیه‌ی مردی از شکافِ سنگ نشانه‌ی تعهد است. سه زمستان دسته‌بندیِ کاملاً متفاوتی است: زندگی‌ای که کاملاً دورِ یک واقعیت سازماندهی شده. شاهنامه به این بیشتر از جشنِ بهار فضا می‌دهد.",
+      "image": null, "unlock_via": "scene:pit-and-boulder"
+    },
+    {
+      "id": "what-a-pit-is",
+      "category": "concept",
+      "title_en": "What the Pit Represents",
+      "title_fa": "چاه چه چیزی نشان می‌دهد",
+      "summary_en": "The pit is the most constrained space in the Shahnameh. Every other scene in the chronicle takes place in open territory — battlefields, courts, mountains, rivers. The pit is a hole in the ground with a boulder on top. Afrasiab chose it precisely because it cannot be forced — only the right instrument (Rostam) can open it, and only if he finds it. What the pit as a story element achieves is compression: three years of time, two characters' lives, and the entire weight of the Iran-Turan enmity, all concentrated into a space that cannot be opened by anything short of the world's strongest man.",
+      "summary_fa": "چاه محدودترین فضا در شاهنامه است. افراسیاب آن را دقیقاً به این دلیل انتخاب کرد که نمی‌توان آن را با زور باز کرد — فقط ابزارِ درست (رستم) می‌تواند بازش کند. آنچه چاه به عنوانِ عنصرِ داستانی محقق می‌کند فشردگی است: سه سال زمان، زندگیِ دو شخصیت، همه در فضایی متمرکز که توسطِ هیچ چیزی کمتر از قوی‌ترین مردِ دنیا باز نمی‌شود.",
+      "image": null, "unlock_via": "scene:pit-and-boulder"
+    },
+    {
+      "id": "jame-e-jam",
+      "category": "artifact",
+      "title_en": "The Jame-e-Jam — Cup of Truth",
+      "title_fa": "جامِ جهان‌نما — جامِ حقیقت",
+      "summary_en": "The Jame-e-Jam (the world-showing cup) is Kay Khosrow's personal instrument of kingship — a magic cup that reveals the truth of distant things to the right king. The Shahnameh presents it without extensive mythology: the king asks, the cup shows. What the detail establishes is that Kay Khosrow's just reign gives him access to instruments that reckless or corrupt kings do not possess. The cup did not serve Kay Kavus. It serves Kay Khosrow. The chronicle's metaphysics are clear: the right relationship with power produces the right relationship with truth.",
+      "summary_fa": "جامِ جهان‌نما ابزارِ شخصیِ پادشاهیِ کی‌خسرو است — جامِ جادویی که حقیقتِ اشیاءِ دور را به شاهِ درست آشکار می‌کند. شاهنامه آن را بدونِ اسطوره‌سازیِ گسترده ارائه می‌دهد. آنچه این جزئیات ثابت می‌کند این است که سلطنتِ عادلانه‌ی کی‌خسرو به ابزاری دسترسی می‌دهد که شاهانِ بی‌پروا یا فاسد ندارند.",
+      "image": null, "unlock_via": "scene:jam-e-jam"
+    },
+    {
+      "id": "right-king-right-truth",
+      "category": "concept",
+      "title_en": "The Right King and the Right Truth",
+      "title_fa": "شاهِ درست و حقیقتِ درست",
+      "summary_en": "The Jame-e-Jam serves Kay Khosrow but did not serve Kay Kavus. This is not a mechanical rule in the Shahnameh — it is a structural observation. A king who governs justly is in the right relationship with the world to receive true information about it. A king who governs recklessly is not: his relationship with the world is distorted by his own ambition and the distortion filters what he can see. The cup is not the point. The cup is the symptom of something that was already there.",
+      "summary_fa": "جامِ جهان‌نما کی‌خسرو را خدمت می‌کند اما کی‌کاووس را نخواهد کرد. این یک قانونِ مکانیکی در شاهنامه نیست — یک مشاهده‌ی ساختاری است. شاهی که عادلانه حکومت می‌کند در رابطه‌ی درستی با دنیاست که اطلاعاتِ درست درباره‌اش دریافت کند.",
+      "image": null, "unlock_via": "scene:jam-e-jam"
+    },
+    {
+      "id": "what-manijeh-earned",
+      "category": "concept",
+      "title_en": "What Manijeh Earned",
+      "title_fa": "آنچه منیژه کسب کرد",
+      "summary_en": "The Shahnameh brings Manijeh to Iran. This is not sentimentality — it is accounting. She kept Bijan alive for three winters by her own means with no help and no guarantee of rescue. She found Rostam in the horse lines when no one else could have. She led him to the pit. Without her, there is no rescue — Rostam could not have found the pit on his own in the dark, across a foreign capital. The crossing to Iran is not a romantic reward. It is the chronicle's precise acknowledgment that she did the work. The work earns the outcome.",
+      "summary_fa": "شاهنامه منیژه را به ایران می‌آورد. این احساساتی‌گری نیست — حسابداری است. بیژن را سه زمستان با وسایلِ خودش بدونِ کمک زنده نگه داشت. رستم را در صفِ اسبان پیدا کرد وقتی هیچ‌کس دیگری نمی‌توانست. عبور به ایران پاداشِ رمانتیک نیست. اعترافِ دقیقِ شاهنامه است که کار انجام داد.",
+      "image": null, "unlock_via": "scene:manijeh-finds-rostam"
+    }
+  ]
+}

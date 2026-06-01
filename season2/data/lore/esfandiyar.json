@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-31T00:00:00Z",
+  "chapter_slug": "esfandiyar",
+  "chapter_id": 22,
+  "era": {
+    "label_en": "~2785–2770 BC — The Invulnerable Son",
+    "label_fa": "~۲۷۸۵–۲۷۷۰ پ.م — پسرِ رویین‌تن"
+  },
+  "lore_summary": {
+    "en": "Esfandiyar is Goshtasp's eldest son and the greatest warrior of his age — the only figure in the Shahnameh whose combat abilities can be compared to Rostam. In his youth Zoroaster bathed him in sacred water, making his body brazen: no iron can pierce it. His eyes remained open during the immersion, which is his one vulnerability. He defeats Arjasp, rescues his sisters, completes his Seven Labours, and returns each time to find the throne still withheld. His father fears his greatness. He is imprisoned once on a false charge, then released when Arjasp invades again. He serves Iran honestly, with no treachery in him. He is too righteous to disobey his father's commands — even the final one, which sends him to bind Rostam in chains, a mission that cannot succeed without destroying either him or the world's greatest champion. The Shahnameh builds his biography as the structure of an inevitable tragedy: a man too good for the world the Shahnameh depicts, who will be broken by it for exactly that reason.",
+    "fa": "اسفندیار پسرِ ارشدِ گشتاسپ و بزرگترین جنگجوی دورانش است — تنها چهره‌ای در شاهنامه که توانایی‌های رزمی‌اش با رستم قابلِ مقایسه است. در کودکی زرتشت او را در آبِ مقدس غسل داد که بدنش را رویین کرد. چشمانش در غسل باز بودند — که تنها آسیب‌پذیریِ اوست. به پدرش با وجودِ تمامِ شکست‌های متقابل صادقانه خدمت می‌کند. خیلی صادق است تا دستوراتِ پدرش را نافرمانی کند — حتی آخری را."
+  },
+  "timeline": [
+    {
+      "id": "brazen-body",
+      "year_label_en": "~2800 BC", "year_label_fa": "~۲۸۰۰ پ.م",
+      "title_en": "The Bathing in Sacred Water", "title_fa": "غسل در آبِ مقدس",
+      "body_en": "Zoroaster bathes the young Esfandiyar in sacred water, making his body impervious to iron. His eyes are open at the moment of immersion. That is the one place iron can reach him.",
+      "body_fa": "زرتشت اسفندیارِ جوان را در آبِ مقدس غسل می‌دهد و بدنش را در برابرِ آهن آسیب‌ناپذیر می‌کند. چشمانش در لحظه‌ی غسل باز هستند. آنجاست که آهن می‌تواند به او برسد.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "defeats-arjasp",
+      "year_label_en": "~2784 BC", "year_label_fa": "~۲۷۸۴ پ.م",
+      "title_en": "Arjasp Defeated", "title_fa": "ارجاسپ شکست‌خورده",
+      "body_en": "Esfandiyar defeats Arjasp's invasion, rescues his sisters from the Bronze Fortress, and restores the sacred fires. He returns expecting the throne. It is not given.",
+      "body_fa": "اسفندیار هجومِ ارجاسپ را شکست می‌دهد، خواهرانش را از دژِ روئین می‌رهاند، و آتش‌های مقدس را بازمی‌گرداند. با انتظارِ تخت برمی‌گردد. داده نمی‌شود.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "imprisoned",
+      "year_label_en": "~2778 BC", "year_label_fa": "~۲۷۷۸ پ.م",
+      "title_en": "Imprisoned by His Father", "title_fa": "زندانی‌شده توسطِ پدرش",
+      "body_en": "On the testimony of Gurz-Ahmar — a courtier who fears Esfandiyar's rising popularity — Goshtasp has his son imprisoned at Gumbadan. Esfandiyar does not rebel. He endures. Arjasp invades again; Goshtasp releases him.",
+      "body_fa": "بر اساسِ شهادتِ گرزاهمر — درباریِ ترسیده از محبوبیتِ رو به رشدِ اسفندیار — گشتاسپ پسرش را در گنبدان زندانی می‌کند. اسفندیار شورش نمی‌کند. تحمل می‌کند. ارجاسپ دوباره حمله می‌کند؛ گشتاسپ آزادش می‌کند.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "the-chains-mission",
+      "year_label_en": "~2770 BC", "year_label_fa": "~۲۷۷۰ پ.م",
+      "title_en": "The Mission That Cannot Be Completed", "title_fa": "مأموریتی که نمی‌شود کامل کرد",
+      "body_en": "Goshtasp's final command: bring Rostam of Zabulestan to court in chains. Esfandiyar knows what this means — Rostam will never submit to chains, and Esfandiyar cannot disobey the king. The two greatest warriors in the world are being aimed at each other by a frightened old man.",
+      "body_fa": "فرمانِ نهاییِ گشتاسپ: رستمِ زابلستان را با زنجیر به دربار بیاور. اسفندیار می‌داند این یعنی چه — رستم هرگز تسلیمِ زنجیر نمی‌شود، و اسفندیار نمی‌تواند شاه را نافرمانی کند. دو بزرگترین جنگجوی دنیا توسطِ پیرمردِ ترسیده‌ای به سمتِ هم نشانه رفته‌اند.",
+      "image": null, "side": "dark"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "ruin-tan",
+      "order": 1,
+      "title_en": "Ruin-tan — The Brazen-Bodied", "title_fa": "رویین‌تن",
+      "era_en": "~2800 BC", "era_fa": "~۲۸۰۰ پ.م",
+      "body_en": "Zoroaster's bathing of the young Esfandiyar was not performed as a military enhancement — it was a consecration, a marking of the prophet's greatest champion with the protection of Ahura Mazda. The water was sacred. The result was that no iron produced by the material world could pierce his skin. His eyes remained open during the immersion because he was a child and children's eyes are open and curious. This is not a flaw the Shahnameh criticizes — it is simply the record of a fact. The eyes are the only place iron can reach Esfandiyar. For most of his life this vulnerability is irrelevant, because no one in the world has the skill to strike his eyes in battle. The exception is Rostam, advised by the Simorgh, using a specific weapon made from a sacred tree.",
+      "body_fa": "غسلِ زرتشت از اسفندیارِ جوان به عنوانِ تقویتِ نظامی انجام نشد — تقدیس بود. آب مقدس بود. نتیجه این بود که هیچ آهنی نمی‌توانست پوستش را بشکافد. چشمانش در غسل باز بودند چون کودک بود. این نقصی نیست که شاهنامه انتقاد کند — فقط ثبتِ واقعیت است.",
+      "atmosphere": "dawn",
+      "image": "/season2/uploads/chapters/esfandiyar.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["brazen-body-explained"]
+    },
+    {
+      "id": "serving-honestly",
+      "order": 2,
+      "title_en": "Forty Years of Honest Service", "title_fa": "چهل سالِ خدمتِ صادقانه",
+      "era_en": "~2785–2770 BC", "era_fa": "~۲۷۸۵–۲۷۷۰ پ.م",
+      "body_en": "The Shahnameh catalogs Esfandiyar's service with precision: the wars he won, the kingdoms he converted, the sisters he rescued, the fires he restored. He served for decades with no treachery in him. This is important to establish. The chronicle is not describing a man who rebelled or who built a faction or who made private bargains. He did what his father asked, every time, and received nothing that was promised. The Shahnameh's portrait of Esfandiyar is the portrait of a man whose virtue is so complete that it becomes the mechanism of his destruction — because the world the chronicle depicts does not know what to do with a man who cannot be corrupted, and so it uses his incorruptibility as a weapon against him.",
+      "body_fa": "شاهنامه خدمتِ اسفندیار را با دقت فهرست می‌کند: جنگ‌هایی که برد، ممالکی که تبدیل کرد، خواهرانی که نجات داد. با هیچ خیانتی در او خدمت کرد. این مهم است که ثابت شود. شاهنامه مردی را توصیف نمی‌کند که شورش کرد. هر بار آنچه پدرش خواست انجام داد و هیچ وعده‌ای محقق نشد.",
+      "atmosphere": "court",
+      "image": null,
+      "reward": { "xp": 75 },
+      "unlocks_codex": ["the-virtuous-trap"]
+    },
+    {
+      "id": "the-prison",
+      "order": 3,
+      "title_en": "Imprisoned at Gumbadan", "title_fa": "زندانی در گنبدان",
+      "era_en": "~2778 BC", "era_fa": "~۲۷۷۸ پ.م",
+      "body_en": "The imprisonment is the Shahnameh's most precise statement about Goshtasp's fear. Esfandiyar had done nothing wrong. He had won the war his father needed winning, converted the kingdoms his father needed converted, and returned. A courtier named Gurz-Ahmar — whose personal interests were threatened by Esfandiyar's growing popularity — provided Goshtasp with a pretext. Goshtasp used it. He had his son imprisoned at Gumbadan, a remote fortress, without trial. Esfandiyar spent years there. He did not plot escape. He did not send secret messages to his supporters. He waited. The Shahnameh records his patience here with the same word it uses for Kay Khosrow's patience as a shepherd boy in Turan: a quality that maintains itself against impossible conditions not because it cannot feel the injustice but because it understands what the alternative is.",
+      "body_fa": "زندان دقیق‌ترین اظهاریه‌ی شاهنامه درباره‌ی ترسِ گشتاسپ است. اسفندیار کارِ اشتباهی نکرده بود. گرزاهمر — که منافعِ شخصیِ او توسطِ محبوبیتِ رو به رشدِ اسفندیار تهدید می‌شد — بهانه‌ای به گشتاسپ داد. سال‌ها در گنبدان ماند. توطئه‌ی فرار نچید.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["the-imprisoned-hero"]
+    },
+    {
+      "id": "the-final-command",
+      "order": 4,
+      "title_en": "The Command That Was a Death Sentence", "title_fa": "فرمانی که حکمِ اعدام بود",
+      "era_en": "~2770 BC", "era_fa": "~۲۷۷۰ پ.م",
+      "body_en": "Goshtasp's final command was precise: bring Rostam of Zabulestan to court in chains. Not kill him. Not defeat him. Bind him and bring him, which requires Rostam's submission. The Shahnameh makes the impossibility explicit: Rostam has never submitted. He has served kings faithfully but on his own terms. Being chained is not a term he will accept. Esfandiyar knew this before he set out. He also knew he could not refuse the command — he was too righteous to disobey his father-king, and too honest to pretend he had a legitimate reason not to go. Jamasp the astrologer told him plainly: this mission leads to your death. Esfandiyar replied that he knew. He went anyway.",
+      "body_fa": "فرمانِ نهاییِ گشتاسپ دقیق بود: رستمِ زابلستان را با زنجیر به دربار بیاور. نه کشتن. نه شکست دادن. بستنش که تسلیمِ رستم را می‌طلبد. شاهنامه غیرممکنی را صریح می‌کند. جاماسپ صادقانه گفت: این مأموریت به مرگِ تو منجر می‌شود. اسفندیار جواب داد که می‌دانست. رفت.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["knowing-your-death", "goshtasp-as-murderer"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "esfandiyar",
+      "name_en": "Esfandiyar", "name_fa": "اسفندیار",
+      "role_en": "Prince of Iron Faith · The Brazen-Bodied · The Son Destroyed by His Own Virtue",
+      "role_fa": "شاهزاده‌ی ایمانِ آهنین · رویین‌تن · پسری که توسطِ فضیلتِ خودش نابود شد",
+      "rarity": "legendary", "level_required": 1,
+      "lore_en": "Esfandiyar is the Shahnameh's most morally perfect figure — and the chronicle destroys him precisely for this reason. He has no ambition beyond honest service. He has no treachery in him. He obeys when he should not, endures what he should not have to endure, and goes on a mission he knows will kill him because his sense of duty to his father's command is stronger than his sense of duty to his own life. The Shahnameh does not moralize about this. It records it. The tragedy is structural: a world that cannot accommodate a perfect man will find a way to break him, and the way it breaks Esfandiyar is through his own virtue — his obedience becomes the instrument of his destruction.",
+      "lore_fa": "اسفندیار اخلاقی‌ترین چهره‌ی شاهنامه است — و شاهنامه دقیقاً به این دلیل نابودش می‌کند. جاه‌طلبی‌ای جز خدمتِ صادقانه ندارد. هیچ خیانتی در او نیست. مأموریتی می‌رود که می‌داند خواهد کشت چون حسِ وظیفه‌اش به دستورِ پدرش از حسِ وظیفه به زندگیِ خودش قوی‌تر است.",
+      "image": "/season2/uploads/chapters/esfandiyar.png",
+      "unlocked": true, "side": "light"
+    },
+    {
+      "slug": "gurz-ahmar",
+      "name_en": "Gurz-Ahmar", "name_fa": "گرزاهمر",
+      "role_en": "The Court Accuser · The Small Cause of a Large Tragedy",
+      "role_fa": "متهم‌کننده‌ی دربار · علتِ کوچکِ تراژدیِ بزرگ",
+      "rarity": "rare", "level_required": 3,
+      "lore_en": "Gurz-Ahmar is a minor courtier whose false testimony against Esfandiyar sends the hero to prison. The Shahnameh gives him no elaborate motive — he was afraid of Esfandiyar's power, and fear in courts produces accusations. He is not the cause of Esfandiyar's ultimate destruction, but he is the cause of the imprisonment that confirms Goshtasp's willingness to sacrifice his son for political convenience. The small villain who enables the large tragedy.",
+      "lore_fa": "گرزاهمر درباریِ فرعی است که شهادتِ دروغش علیهِ اسفندیار قهرمان را به زندان می‌فرستد. شاهنامه انگیزه‌ی تفصیلی به او نمی‌دهد — از قدرتِ اسفندیار می‌ترسید، و ترس در دربارها اتهام تولید می‌کند.",
+      "image": null, "unlocked": false, "side": "dark",
+      "unlock_via": "scene:the-prison"
+    }
+  ],
+  "places": [
+    {
+      "slug": "gumbadan",
+      "name_en": "Gumbadan — The Prison Fortress",
+      "name_fa": "گنبدان — قلعه‌ی زندان",
+      "kind_en": "Where Esfandiyar Was Held Without Cause",
+      "kind_fa": "جایی که اسفندیار بی‌دلیل نگه داشته شد",
+      "summary_en": "Gumbadan is the remote fortress where Goshtasp imprisoned Esfandiyar. It appears in the Shahnameh as the physical measure of Goshtasp's fear: a place far enough away that the prince's presence would not organize a faction, but not execution, because Goshtasp needed Esfandiyar alive for the next emergency. Esfandiyar spent years there, patient, which the Shahnameh records as evidence not of submission but of a man who understood exactly what was happening and chose not to use it as justification for treachery.",
+      "summary_fa": "گنبدان قلعه‌ی دورافتاده‌ای است که گشتاسپ اسفندیار را در آن زندانی کرد. به عنوانِ معیارِ فیزیکیِ ترسِ گشتاسپ ظاهر می‌شود. اسفندیار سال‌ها با صبر آنجا ماند.",
+      "image": null, "unlocked": false, "unlock_via": "scene:the-prison"
+    }
+  ],
+  "battle": {
+    "boss_slug": "esfandiyar-challenge",
+    "boss_name_en": "Esfandiyar — The Brazen-Bodied Champion",
+    "boss_name_fa": "اسفندیار — قهرمانِ رویین‌تن",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Esfandiyar is riding toward Zabulestan. To face this gate you must understand what he is and what he carries — not just invulnerability but faith, duty, and the weight of a father's repeated betrayal.",
+    "intro_fa": "اسفندیار به سمتِ زابلستان می‌راند. برای مواجهه باید بفهمی او چیست و چه چیزی حمل می‌کند — نه فقط آسیب‌ناپذیری بلکه ایمان، وظیفه، و سنگینیِ خیانتِ مکررِ پدر.",
+    "requirements": [
+      {
+        "id": "level", "kind": "level", "target": 84,
+        "label_en": "Reach LVL 84", "label_fa": "رسیدن به سطحِ ۸۴", "label_tg": "Расидан ба сатҳи 84",
+        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+      },
+      {
+        "id": "quiz", "kind": "quiz", "target": "esfandiyar",
+        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "brazen-body-explained",
+      "category": "concept",
+      "title_en": "The Brazen Body — Protection and Its Limit",
+      "title_fa": "رویین‌تن — محافظت و حدِ آن",
+      "summary_en": "Esfandiyar's body cannot be pierced by iron except at the eyes. The Shahnameh presents this not as a tragic flaw in the Greek sense but as a precise structural fact: every protection has a limit, and the limit of Esfandiyar's protection is the same place where human perception enters the world — the eyes, which take in light, which are open to what comes. His invulnerability is a divine gift; his vulnerability is the condition of being a seeing creature.",
+      "summary_fa": "بدنِ اسفندیار جز در چشمان نمی‌توان با آهن سوراخ کرد. شاهنامه این را نه به عنوانِ نقصِ تراژیک بلکه به عنوانِ واقعیتِ ساختاریِ دقیق ارائه می‌دهد: هر محافظتی حدی دارد.",
+      "image": null, "unlock_via": "scene:ruin-tan"
+    },
+    {
+      "id": "the-virtuous-trap",
+      "category": "concept",
+      "title_en": "The Virtuous Trap",
+      "title_fa": "دامِ فضیلت",
+      "summary_en": "Esfandiyar's virtue is the mechanism of his destruction. He is too righteous to disobey his father. He is too honest to pretend obedience when he disagrees. He is too courageous to let fear of death stop him from a mission he has been commanded to complete. Each of these virtues — righteousness, honesty, courage — is genuine and admirable. Together, in the specific configuration Goshtasp has created, they function as a trap. The Shahnameh is precise about this: virtue is not always safe. Sometimes it is the thing the world uses to consume you.",
+      "summary_fa": "فضیلتِ اسفندیار مکانیسمِ نابودیِ اوست. خیلی صادق است تا نافرمانی کند. خیلی صادق است تا وانمودِ تبعیت کند. خیلی شجاع است تا ترسِ مرگ را اجازه دهد جلویش را بگیرد. هر کدام از این فضایل واقعی‌اند. با هم، دامی هستند.",
+      "image": null, "unlock_via": "scene:serving-honestly"
+    },
+    {
+      "id": "the-imprisoned-hero",
+      "category": "event",
+      "title_en": "The Prison Without Cause",
+      "title_fa": "زندانِ بی‌دلیل",
+      "summary_en": "Esfandiyar's imprisonment at Gumbadan is the clearest evidence that Goshtasp's fear has become action. Esfandiyar had done nothing to merit imprisonment — he had won his father's wars and returned. Goshtasp used a courtier's false testimony as a pretext. The imprisonment establishes a fact the Shahnameh will not let the reader forget: this is a father who is willing to cage his righteous son when convenient. The next step — sending him on a suicide mission — is the same action at larger scale.",
+      "summary_fa": "زندانِ اسفندیار در گنبدان روشن‌ترین شاهد است که ترسِ گشتاسپ به عمل تبدیل شده. اسفندیار کارِ مستوجبِ زندانی کردن نکرده بود. گشتاسپ از شهادتِ دروغ استفاده کرد. این پدری را نشان می‌دهد که حاضر است پسرِ صادقش را وقتِ راحت در قفس بگذارد.",
+      "image": null, "unlock_via": "scene:the-prison"
+    },
+    {
+      "id": "knowing-your-death",
+      "category": "concept",
+      "title_en": "Going Knowing You Will Die",
+      "title_fa": "رفتن با دانستنِ اینکه خواهی مُرد",
+      "summary_en": "Jamasp the astrologer tells Esfandiyar plainly: this mission will kill you. Esfandiyar replies that he knows. He goes anyway. The Shahnameh presents this as the highest demonstration of what obedience means when the command cannot be refused — not the obedience of ignorance or cowardice, but the obedience of a man who has full information, has made his assessment, and chooses duty over survival. This is not presented as admirable without qualification. The chronicle records it and lets the reader sit with it.",
+      "summary_fa": "جاماسپ صادقانه به اسفندیار می‌گوید: این مأموریت تو را خواهد کشت. اسفندیار می‌گوید می‌داند. باز هم می‌رود. شاهنامه این را به عنوانِ بالاترین نشانِ معنایِ اطاعت ارائه می‌دهد وقتی فرمان رد نمی‌شود.",
+      "image": null, "unlock_via": "scene:the-final-command"
+    },
+    {
+      "id": "goshtasp-as-murderer",
+      "category": "concept",
+      "title_en": "Goshtasp as the Real Cause",
+      "title_fa": "گشتاسپ به عنوانِ علتِ واقعی",
+      "summary_en": "Rostam will kill Esfandiyar in the clash that follows. The Shahnameh makes it clear — through Esfandiyar's dying words — that Rostam is not the cause of his death. Goshtasp is. By sending Esfandiyar on an impossible mission with full knowledge that it would destroy him, Goshtasp made himself the murderer. Rostam was the instrument. The weapon does not bear the guilt. The man who aimed it does. Esfandiyar says this with his last breath, which is the Shahnameh's most precise moral accounting.",
+      "summary_fa": "رستم اسفندیار را در برخوردِ بعدی خواهد کشت. شاهنامه از طریقِ آخرین کلماتِ اسفندیار روشن می‌کند که رستم علتِ مرگش نیست. گشتاسپ است. ابزار گناه نمی‌برد. مردی که آن را نشانه رفت می‌برد.",
+      "image": null, "unlock_via": "scene:the-final-command"
+    }
+  ]
+}

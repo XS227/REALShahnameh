@@ -28,7 +28,9 @@
       },
       "status": "available",
       "required_previous_chapter": null,
-      "quiz_count": 3
+      "quiz_count": 16,
+      "summary_fa": "پیش از هر شاهی، فردوسی با خدا می‌گشاید — خداوندِ جان و خرد. کیومرث از کوه‌های مقدسِ پارس برمی‌خیزد. نخستین قانون‌های تمدن. بعد اهریمن از دود پایین می‌فرستد و سیامک می‌افتد. نخستین غم داخلِ دنیا می‌شود.",
+      "summary_tg": "Пеш аз ҳар подшоҳе, Фирдавсӣ бо Худо мекушояд. Киюмарс аз кӯҳҳои муқаддаси Порс бармехезад. Аввалин қонунҳои тамаддун. Баъд Аҳриман аз дуд фуруд меояд ва Сиёмак меафтад."
     },
     {
       "id": 2,
@@ -54,7 +56,9 @@
       },
       "status": "available",
       "required_previous_chapter": "keyumars",
-      "quiz_count": 3
+      "quiz_count": 16,
+      "summary_fa": "هوشنگ با چخماق به ماری می‌زند. سنگ خطا می‌کند، اما جرقه‌ای برجهید و درختی آتش گرفت. از آن شب مردم آتش شناختند. آهن آب شد. آب به کشتزار رفت.",
+      "summary_tg": "Ҳушанг бо чахмоқ ба мор мезанад. Санг хато мекунад, аммо ҷарақае парид ва дарахте сӯхт. Аз он шаб мардум оташ шинохтанд."
     },
     {
       "id": 3,
@@ -80,7 +84,9 @@
       },
       "status": "available",
       "required_previous_chapter": "hushang",
-      "quiz_count": 3
+      "quiz_count": 16,
+      "summary_fa": "تهمورثِ دیوبند با عصایِ سرو از دودوسایه می‌راند. دیوان را در زنجیر می‌کشد. برای جان‌هایشان سی الفبا یاد می‌دهند. دانش با مهربانی خریده شد.",
+      "summary_tg": "Таҳмурасти Девбанд аз дуду соя мерондад. Девонро занҷир мезанад. Барои ҷонҳояшон си алифбо меомӯзонанд."
     },
     {
       "id": 4,
@@ -106,7 +112,9 @@
       },
       "status": "available",
       "required_previous_chapter": "tahmuras",
-      "quiz_count": 4
+      "quiz_count": 16,
+      "summary_fa": "جمشید مردم را به چهار پیشه تقسیم کرد. تختِ بلورین برپا کرد و دیوان به آسمانش بردند. سیصد سالِ روشنایی. بعد غرور: ادعای الوهیت کرد و فرّ از او رفت.",
+      "summary_tg": "Ҷамшед мардумро ба чаҳор пеша тақсим кард. Тахти буллӯрин бардошт. Сесад соли равшанӣ. Баъд ғурур: даъвои худоӣ кард ва фарр аз ӯ рафт."
     },
     {
       "id": 5,
@@ -132,7 +140,9 @@
       },
       "status": "available",
       "required_previous_chapter": "jamshid",
-      "quiz_count": 4
+      "quiz_count": 16,
+      "summary_fa": "از بوسه‌ی ابلیس دو مارِ سیاه از دوشِ ضحاک رویید. هر روز دو مغزِ انسانی طلبیدند. هزار سالِ تاریکی — تا پیشبندِ آهنگری به عنوانِ درفش برافراشته شد.",
+      "summary_tg": "Аз бӯсаи Иблис ду морид аз дӯши Заҳҳок рӯид. Ҳар рӯз ду мағзи инсон талабиданд. Ҳазор соли торикӣ."
     },
     {
       "id": 6,
@@ -158,7 +168,9 @@
       },
       "status": "available",
       "required_previous_chapter": "zahhak",
-      "quiz_count": 4
+      "quiz_count": 16,
+      "summary_fa": "کاوه‌ی آهنگر پیشبندِ چرمینش را بر نیزه برافراشت و مردم پارس راه افتادند. فریدون گرزِ گاوسر گرفت. ضحاک برای همیشه به دماوند بسته شد. پادشاهی میانِ سه پسر تقسیم شد.",
+      "summary_tg": "Ковааи Оҳангар пешбандашро бардошт ва мардуми Порс роҳ афтоданд. Фаридун гурзи говсар гирифт. Заҳҳок ба Дамованд бандшуд."
     },
     {
       "id": 7,
@@ -181,7 +193,9 @@
       },
       "status": "available",
       "required_previous_chapter": "fereydun",
-      "quiz_count": 3
+      "quiz_count": 16,
+      "summary_fa": "ایرج کوچکترین و مهربانترینِ پسرانِ فریدون بود. برادران طوتر و سلم کشتندش. فریدون پانصدساله چهار روز تنها نشست. روزِ چهارم منوچهر را خواند. انتقام شخصی بود و شخصی پرداخته شد.",
+      "summary_tg": "Эраҷ хурдтарин ва меҳрубонтарини писарони Фаридун буд. Бародарон куштанд. Манӯчеҳр ба ками рафт ва интиқом гирифт."
     },
     {
       "id": 8,
@@ -204,7 +218,9 @@
       },
       "status": "available",
       "required_previous_chapter": "manuchehr",
-      "quiz_count": 3
+      "quiz_count": 16,
+      "summary_fa": "نوذر تخت را بدون فضیلتی که نگهش می‌داشت به ارث برد. فرماندهانِ کهنه را کنار گذاشت. افراسیاب از آنطرفِ جیحون دید. ایران باز بود. شاهی بدون فرّ نمی‌داند که دارد کوچک می‌شود.",
+      "summary_tg": "Нӯзар тахтро бе фазилат ба мерос гирифт. Афросиёб аз рӯди Ҷайҳун дид ва ҳамла кард. Эрон даргоҳ буд."
     },
     {
       "id": 9,
@@ -230,7 +246,9 @@
       },
       "status": "available",
       "required_previous_chapter": "nozar",
-      "quiz_count": 4
+      "quiz_count": 4,
+      "summary_fa": "سام پسرش را که با موهایِ سفید متولد شده بود در البرز رها کرد. سیمرغ او را برداشت و در آشیانه‌اش پرورش داد. سام خواب دید و برگشت. سیمرغ زال را با یک پر و یک وعده بازگرداند.",
+      "summary_tg": "Сом писарашро дар Алборз гузошт. Симурғ бардошт ва дар лона калон кард. Сом рӯъё дид ва баргашт. Симурғ Золро бо пар ва ваъда баргардонд."
     },
     {
       "id": 10,
@@ -252,7 +270,9 @@
       },
       "status": "available",
       "required_previous_chapter": "zal",
-      "quiz_count": 3
+      "quiz_count": 3,
+      "summary_fa": "زال از طریقِ توصیف عاشق رودابه شد. رودابه هم از طریقِ توصیف عاشقِ زال شد. ندیمه‌ها ملاقاتی در باغ ترتیب دادند. رودابه موهایش را از پنجره آویخت. زال بالا رفت.",
+      "summary_tg": "Зол аз тавсиф ба Рӯдоба ошиқ шуд. Рӯдоба ҳам. Надима вохӯриро дар боғ тартиб дод. Рӯдоба мӯяшро овезон кард. Зол боло рафт."
     },
     {
       "id": 11,
@@ -274,7 +294,9 @@
       },
       "status": "available",
       "required_previous_chapter": "rudabeh",
-      "quiz_count": 3
+      "quiz_count": 3,
+      "summary_fa": "زال پرِ سیمرغ را سوزاند. سیمرغ سزارینی را که سامِ جراحان انجام دادند راهنمایی کرد. رودابه زندگی. فرزند مثلِ شیرِ جوان بزرگ بود و مثلِ او بانگ برآورد. نامش را رستم گذاشتند.",
+      "summary_tg": "Зол пари Симурғро сӯзонд. Симурғ омад. Рӯдоба зиндагӣ. Фарзанд монанди шерча буд. Номашро Рустам гузоштанд."
     },
     {
       "id": 12,
@@ -300,7 +322,9 @@
       },
       "status": "available",
       "required_previous_chapter": "birth-of-rostam",
-      "quiz_count": 5
+      "quiz_count": 5,
+      "summary_fa": "رستم ده هزار اسب را فشرد. رخش ایستاد. هفت خان آمد — شیری که رخش کشت، بیابان، اژدها، جادوگری، نگهبانی، سردارِ دیوان، دیوِ سپید. هر آزمون درسی بود. هفت خان هرگز تمام نمی‌شود.",
+      "summary_tg": "Рустам даҳ ҳазор асп фишурд. Рахш истод. Ҳафтхон омад. Ҳар озмун дарсе буд. Ҳафтхон тамом намешавад."
     },
     {
       "id": 13,
@@ -325,7 +349,9 @@
       },
       "status": "available",
       "required_previous_chapter": "rostam",
-      "quiz_count": 5
+      "quiz_count": 5,
+      "summary_fa": "رستم یک شب در سمنگان ماند. تهمینه آمد. بازوبند را داد. سهراب متولد شد، با سه برابرِ سرعتِ معمول رشد کرد، دوازده‌ساله فهمید پدرش کیست. در دشت روبرو شدند. رستم پسرش را کشت.",
+      "summary_tg": "Рустам як шаб дар Самангон монд. Таҳмина омад. Браслетро дод. Суҳроб таваллуд шуд, калон шуд, медонист. Дар майдон рӯ ба рӯ шуданд. Рустам писарашро кушт."
     },
     {
       "id": 14,
@@ -334,7 +360,7 @@
       "title": "Siavash — The Pure Prince",
       "title_fa": "سیاوش — شاهزاده پاک",
       "summary": "A prince too pure for a corrupt court walks through fire to prove his innocence. He will not return.",
-      "story": "",
+      "story": "Siavash was raised by Rostam and came back to Kay Kavus's court as a young man who had been trained by the most rigorous standard of honour in Iran. His stepmother Sudabeh wanted him. He refused. She accused him of assault. Kay Kavus, unable to resolve the contradiction, decreed trial by fire. Seven mountains of fire were built. Siavash rode through all seven on horseback and emerged unmarked. His innocence was proven absolutely. The court was still corrupt.\n\nSiavash led Iran's army against Afrasiab and negotiated an honest peace. Kay Kavus refused to ratify it and ordered the war to continue. Siavash read the orders and understood: there was no version of this court that would let him be right. He wrote a letter to his father explaining his reasoning and crossed the Oxus into Turan. He asked Afrasiab for asylum. Afrasiab, who had dreamed of him — a young man on a white horse, his greatest joy and his coming destruction — accepted. He gave Siavash his daughter Farangis and land. Siavash built a city called Siyavashgerd — City of Siavash — and ruled it justly. For a few years he was, improbably, happy.\n\nAfrasiab's general Garsivaz hated Siavash for what Siavash made him look like by comparison. He began the slow work of poisoning: a question here, a doubt planted there, a suspicion watered until it bloomed. He told Afrasiab that the city was a fortress, that the letters to the border were treasonous, that the foreign prince was planning to use Turan against itself. Afrasiab, old and afraid of his own dreams, believed him. He ordered Siavash's arrest.\n\nWhen the soldiers came, Siavash did not fight them. He was taken to a field outside his own city and beheaded. Where his blood fell on the earth, a plant grew immediately — not slowly but at once, as though the earth had been waiting. Ferdowsi calls it the blood of Siavash. Farangis, pregnant with Kay Khosrow, fled east. The people of Iran mourned Siavash every year at the ceremony of his tears. He had done nothing wrong. He had been purer than the chronicle he was born into, and the chronicle had destroyed him for it.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/siavash.png?v=1778881648411",
       "unlock_day": 72,
@@ -345,9 +371,11 @@
         "energy": 80,
         "gems": 8
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "sohrab",
-      "quiz_count": 4
+      "quiz_count": 4,
+      "summary_fa": "سیاوش از هفت کوهِ آتش سوار عبور کرد و دست‌نخورده. بی‌گناهیش ثابت شد اما دربار خیلی فاسد بود. از جیحون گذشت. در توران شهر ساخت. گرسیوز ذهنِ افراسیاب را مسموم کرد. سر بریده شد. خونش گیاه شد.",
+      "summary_tg": "Сиёвуш аз ҳафт куҳи оташ гузашт. Беноҳиаш исбот шуд аммо дарбор фосид буд. Аз Ҷайҳун гузашт. Дар Турон шаҳр сохт. Гарсевоз заҳролуд кард. Сар бурида шуд."
     },
     {
       "id": 15,
@@ -356,7 +384,7 @@
       "title": "Kay Kavus — The Reckless King",
       "title_fa": "کی‌کاووس — شاه بی‌پروا",
       "summary": "A king who challenges the sky and loses. Rostam must rescue him — again and again.",
-      "story": "",
+      "story": "A demon came to Kay Kavus's court disguised as a musician. He was gifted, his voice was beautiful, and he sang about Mazandaran — a land of riches, no king to resist Iran, forests full of prey. He sang it as a place a great king would claim if only he had the ambition. Kay Kavus had the ambition. Zal, Sam, and Rostam all said the same thing: do not go. The warnings made him more eager. He marched. The demon, resuming its true shape, rode at the head of the Iranian army to show the way.\n\nMazandaran was everything the warnings had described. The White Demon — Div-e Sepid, greatest of the Mazandaran demons — led a counterattack at night. He did not kill the army; he blinded it. By dawn Kay Kavus and every soldier sat sightless in a foreign land. Living blind in enemy territory is a more precise punishment than death. Rostam was summoned. The Seven Labours began — seven obstacles between the Iranian camp and Div-e Sepid's fortress, each requiring a different kind of courage. None of them stopped Rostam. He tore out Div-e Sepid's liver, brought the blood back, and dropped three drops into each blinded eye. Sight returned. Kay Kavus thanked Rostam in the language kings use to thank those who save them from their own mistakes, which does not include acknowledging the mistake.\n\nLater, Kay Kavus built a machine. The principle was simple: a throne on a frame, a trained eagle at each corner, a piece of meat held above each eagle on a rod just out of their reach. The eagles fly upward toward the meat; the throne rises with them. He rode it into the sky, above the clouds, above everything. Then the eagles tired. The throne fell. It hit the earth somewhere in China. Kay Kavus lay in the wreckage, unhurt because the chronicle was not yet finished with him, and waited. Rostam was dispatched again.\n\nAnd there was the matter of Sohrab's medicine — the cure that heals any wound, which Kay Kavus possessed. Rostam came on his knees, begging, for the first and only time in the chronicle. Kay Kavus performed his calculation: a warrior as powerful as Sohrab, healed, would unbalance the kingdom. He refused. Sohrab died. The Shahnameh records all of this with patient precision and asks, chapter after chapter: what does it cost to serve a king who confuses boldness with wisdom?",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/kay-kavus.png?v=1778881817087",
       "unlock_day": 78,
@@ -367,9 +395,11 @@
         "energy": 85,
         "gems": 9
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "siavash",
-      "quiz_count": 4
+      "quiz_count": 4,
+      "summary_fa": "دیوی به شکلِ موسیقیدان از مازندران خواند. کی‌کاووس باوجودِ همه‌ی هشدارها رفت. سپاه کور شد. رستم هفت خان را طی کرد و بازشان گرداند. بعد کی‌کاووس به آسمان پرواز کرد — و افتاد. رستم دوباره آمد.",
+      "summary_tg": "Дев ба шакли созанда аз Мозандарон хонд. Кай Кову рафт. Сипоҳ кӯр шуд. Рустам Ҳафтхонро гузашт. Баъд Кай Кову ба осмон парвоз кард — ва афтод."
     },
     {
       "id": 16,
@@ -378,7 +408,7 @@
       "title": "Kay Khosrow — The Chosen King",
       "title_fa": "کی‌خسرو — شاه برگزیده",
       "summary": "Son of the martyred Siavash, Kay Khosrow is destiny's chosen king. His reign is the chronicle's golden age.",
-      "story": "",
+      "story": "Farangis gave birth in the Turanian wilderness and raised her son in hiding. She told him who his father was. She told him what had been done to his father. Kay Khosrow grew up tending herds in the land of his father's killers, knowing exactly who he was, giving no outward sign of it. Patience here was not weakness — it was the quality the situation demanded. Giv, one of Iran's great paladins, spent seven years searching for him in Turan. When he finally found a shepherd boy on an open hillside, there was no mistaking what he had found.\n\nRostam came across the Oxus to bring them home. The succession question in Kay Kavus's court was not obvious: Fariborz was the elder son, familiar, with supporters. The test was set: both princes would attempt to open the gates of a great fortress. Fariborz led a full military assault. He failed. Kay Khosrow arrived at the gate alone, prayed, and the gate opened. The Shahnameh records this without commentary. No army. No battering ram. The gate opened because Kay Khosrow asked it to, and that was that.\n\nHe organized the great war against Afrasiab — not from ambition but from debt. Siavash's blood was in Turanian earth. Campaign by campaign, the Iranian army reduced Turan's power. Afrasiab fled north, west, east, was cornered and escaped, again and again. At the edge of a remote lake, Kay Khosrow finally found him. He made the execution personal, with his own hands, because the debt was personal. Afrasiab died. The Iran-Turan wars that had shaped the chronicle for centuries closed.\n\nHe reigned justly for years at the golden height of the Kayanian dynasty. Then, at his zenith, he announced he was leaving. He had seen what the throne does to those who sit on it too long. He named Kay Kavus. He said: I will not wait. He distributed the kingdom, said his farewells, and walked into the Alborz mountains with a handful of paladins. A snowstorm rose. When it passed, he was gone. The Shahnameh does not say where he went. It says only that he was not seen again — and that he was the only king in the chronicle who walked out of his reign freely, at the height of his power, before corruption could find him.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/kay-khosrow.png?v=1778881911160",
       "unlock_day": 83,
@@ -389,9 +419,11 @@
         "energy": 90,
         "gems": 9
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "kay-kavus",
-      "quiz_count": 4
+      "quiz_count": 4,
+      "summary_fa": "کی‌خسرو در توران به عنوانِ چوپان‌زاده رشد کرد. گیو هفت سال دنبالش گشت. جنگِ بزرگ برای انتقامِ سیاوش. افراسیاب کنارِ دریاچه اعدام شد. بعد کی‌خسرو انتخاب کرد که برود — به کوه رفت و دیده نشد.",
+      "summary_tg": "Кай Хусрав дар Турон чӯпонзода калон шуд. Гев ҳафт сол ҷустуҷӯ кард. Ҷанги бузург. Афросиёб кнари дарёча иҷро шуд. Баъд Кай Хусрав рафт — ба кӯҳ рафт ва дида нашуд."
     },
     {
       "id": 17,
@@ -400,7 +432,7 @@
       "title": "Akvan Div — The Demon of the Lake",
       "title_fa": "اکوان دیو — دیو دریاچه",
       "summary": "A demon that grants wishes by twisting them. Rostam is hurled into the sea — and emerges unconquered.",
-      "story": "",
+      "story": "Something was moving through the Iranian border herds killing systematically — dozens of animals left where they fell, not eaten. The herdsmen described a wild horse of impossible speed. Kay Khosrow made the assignment simple: Rostam. Rostam went with Rakhsh and his hunting lasso and the confidence of a man who has not been stopped by anything yet. He tracked the creature for five days before he was close enough to throw the lasso. It caught — he felt the weight of something substantial on the rope — and then it was gone. The rope was intact. Nothing on it. Rostam coiled the lasso back and understood: a horse does not do that. A demon does.\n\nHe made camp and went to sleep. The Shahnameh records this without comment. He was tired from five days of chase. The same quality that makes him the champion of the world made him capable of this particular error — he has never been caught, so he has no model for being caught. Akvan came while he slept. Rather than attack directly, the demon dug up a square of earth with Rostam sleeping on it and carried him into the sky. Rostam woke above the clouds, lying on a piece of borderland, looking down at nothing.\n\nAkvan offered the choice with a demon's formal pleasure: shall I throw you onto the mountain, where you'll break on the rocks, or into the sea, where you'll drown? Rostam was awake now. He had the dissolving lasso as his evidence, and from it he had derived Akvan's nature: a div who inverts — who grants wishes by giving the opposite of what you ask. The logic ran one way: ask for the mountain, receive the sea. He knew which of those he could survive. He asked for the mountain. Akvan threw him into the sea.\n\nRostam hit the water at great speed, went deep, and swam. He climbed out at the shore and Rakhsh was there — the horse had followed the sound to the water's edge and waited. Rostam found Akvan, fought through the demon's illusions by not relying on what he could see, found the real centre of the thing, and struck. Akvan Div died on the Iranian borderland. The herds were safe. Rostam went back. The Shahnameh moved on — this chapter was always about cleverness, and the cleverness had been demonstrated.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/akvan.png?v=1778882000576",
       "unlock_day": 89,
@@ -411,9 +443,11 @@
         "energy": 90,
         "gems": 10
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "kay-khosrow",
-      "quiz_count": 3
+      "quiz_count": 3,
+      "summary_fa": "اکوان دیو در شکلِ اسبِ وحشی گله‌ها را ویران می‌کرد. رستم کمند انداخت — کمند حل شد. رستم خوابید. اکوان بلندش کرد. کوه یا دریا؟ رستم منطقِ وارونه را فهمید. کوه را خواست. به دریا انداخته شد. زنده ماند.",
+      "summary_tg": "Аквон дев ба шакли асп рамаҳоро хароб мекард. Рустам камандашро андохт — ҳал шуд. Аквон бардошт. Куҳ ё дарё? Рустам фаҳмид. Кӯҳро хост. Дарё афтод."
     },
     {
       "id": 18,
@@ -422,7 +456,7 @@
       "title": "Bijan and Manijeh — Pit and Rose",
       "title_fa": "بیژن و منیژه — چاه و گل",
       "summary": "A warrior falls into a pit for love. A princess bribes the world to free him. A rescue across three winters.",
-      "story": "",
+      "story": "Bijan and Gorgin were sent to the Armenian border to deal with wild boars. They dealt with the boars. On the way back, Gorgin described something: a Turanian spring festival nearby, Manijeh, daughter of Afrasiab, celebrating with her attendants, barely any guards. The description was designed to work. Bijan put on his finest clothes and crossed the border.\n\nManijeh saw him at the festival and decided immediately. She had him drugged and brought to her chambers in Afrasiab's palace. When he woke, he was in a room he had not chosen, in a kingdom technically at war with his own. When Afrasiab's guards found him, the king made two rapid decisions: Bijan into a pit — a deep stone well sealed with a boulder so heavy it could not be lifted by ordinary means — and Manijeh expelled from the palace. She was his daughter; he did not execute her. He stripped her of everything else and sent her out the gates.\n\nManijeh went to the market. She begged bread. She took it to the edge of the pit and found the crack in the boulder's seal and pushed food through. She did this the next day. And the next. The Shahnameh measures the passage of time in winters: one, then two, then three. The boulder sat. Bijan was alive inside it. Manijeh was outside it every day.\n\nIn Iran, Kay Khosrow brought out the Jame-e-Jam — the world-showing cup — and saw Bijan alive in a pit in Turan. He chose Rostam for the mission, because whoever had sealed the pit had done so knowing only Rostam could open it. Rostam crossed the border disguised as a merchant with a caravan and Rakhsh in the horse lines.\n\nManijeh had been watching every caravan for three years. She walked Rostam's horse lines at dusk and saw Rakhsh. She knew. She led him to the pit that night. Rostam gripped the boulder. It was not a normal boulder. Then it moved. He tossed it aside and lowered a rope. Bijan climbed out — bone-thin, worn by three years of darkness, alive. They fought their way back to Iran. Manijeh crossed with them. She had kept him alive through three winters by her own means, and the Shahnameh brings her to Iran because she earned the crossing.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/bijan-manijeh.png?v=1778882123479",
       "unlock_day": 94,
@@ -433,9 +467,11 @@
         "energy": 95,
         "gems": 10
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "akvan",
-      "quiz_count": 4
+      "quiz_count": 4,
+      "summary_fa": "بیژن با تشویقِ گرگین به جشنِ بهارِ توران رفت. منیژه دیدش و مسموم کرد. چاه. سه زمستانِ گدایی. کی‌خسرو جامِ جهان‌نما را دید. رستم به عنوانِ بازرگان رفت. منیژه رخش را پیدا کرد. سنگ برداشته شد.",
+      "summary_tg": "Беҷан ба ҷашни баҳор рафт. Манижа дид ва захролуд кард. Чоҳ. Се зимистони гадоӣ. Рустам ҳамчун тоҷир рафт. Манижа Рахшро ёфт. Санг бардошта шуд."
     },
     {
       "id": 19,
@@ -444,7 +480,7 @@
       "title": "The Great War — Iran and Turan",
       "title_fa": "نبرد بزرگ — ایران و توران",
       "summary": "The final war between Iran and Turan. Kay Khosrow crosses the Oxus. A thousand years of enmity closes.",
-      "story": "",
+      "story": "Kay Khosrow organized the war with the patience of a man who had spent his childhood in the land he was now invading. He named the commanders: Tus led the vanguard, Gudarz the center, Rostam the decisive force. The Derafsh Kaviani moved east across the Oxus. Every soldier knew why they were crossing. This was not Kay Kavus's reckless invasion of Mazandaran. This was a war of debt — Siavash's blood, Siyavashgerd, the mourning plant that still grew in Turanian soil.\n\nThe war's first wound was self-inflicted. Kay Khosrow had a half-brother named Frud — Siavash's son by a Turanian mother, loyal to Iran, living in a castle on the march. The king had sent specific instructions to Tus: do not approach Frud's territory. Tus ignored the order. Frud was killed. The war organized to avenge Siavash killed Siavash's own son in its opening days.\n\nTuran's resistance was organized by Piran Wiseh — the general who had tried hardest to save Siavash, who had failed, and who now served Afrasiab's cause faithfully despite knowing what it had cost. He was the most capable military mind in Turan. After years of grinding battle, both armies agreed to settle part of the war by a contest of twelve champions each. Iran won. Then Gudarz and Piran met in single combat — two old generals who respected each other and could not stop. Piran fell. The Turanian army lost its organizing intelligence. It did not collapse immediately, but the quality was gone from it.\n\nAfrasiab retreated north, west, east. He had ruled Turan for a century and he ran with the exhausted cunning of a king who has outlived his justification. Kay Khosrow followed with the patience of someone raised in this landscape, in no hurry because there was no longer anywhere to go. At the edge of a remote lake, he found him. The execution was personal — this was his father's blood. Afrasiab died at the lake. The Iran-Turan wars that had shaped the Shahnameh since the Nozar chapter — the wars that had killed Siavash, consumed Piran Wiseh, and cost three generations of Iranian paladins — closed at the lake without ceremony.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/great-war-turan.png?v=1778882249055",
       "unlock_day": 100,
@@ -455,9 +491,11 @@
         "energy": 100,
         "gems": 11
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "bijan-manijeh",
-      "quiz_count": 4
+      "quiz_count": 4,
+      "summary_fa": "کی‌خسرو جنگِ بزرگ را برای بدهیِ سیاوش سازماندهی کرد. طوس فرود را کشت — اولین زخمِ جنگ. گودرز و پیرانِ ویسه آخرین بار روبرو شدند. پیران افتاد. افراسیاب کنارِ دریاچه یافته شد و اعدام شد.",
+      "summary_tg": "Кай Хусрав ҷанги бузургро ташкил кард. Тус Фарудро кушт. Гударз ва Пирони Виса охирин бор рӯ ба рӯ шуданд. Пиран афтод. Афросиёб дарёча иҷро шуд."
     },
     {
       "id": 20,
@@ -466,7 +504,7 @@
       "title": "Lohrasp — The Humble King",
       "title_fa": "لهراسپ — شاه فروتن",
       "summary": "Kay Khosrow vanishes into the mountain and passes the crown to Lohrasp — a transfer that surprises a kingdom.",
-      "story": "",
+      "story": "When Kay Khosrow announced Lohrasp as his successor, the court's unhappiness was not petty. The paladins who had won the great war — Tus, Fariborz, Gudarz's family — had reasonable expectations. They had fought for decades. The successor should come from among them. Lohrasp was a court official with no great battle to his name. Kay Khosrow's response was not a defense of Lohrasp's military record. He said: the kingdom has just finished the most destructive war in its history. A king formed by war governs in war's idiom. What is needed now is the man who can govern in peace's idiom.\n\nLohrasp ruled for decades and the Shahnameh gives his reign little space — which is the chronicle's compliment. There is nothing dramatic to report. The borders held. The disputes were settled. He administered with the attention of a man who understood that administration is what kingdoms are actually for. He did not invade demon-territory or fly to the sky or refuse medicine to dying sons. The absence of catastrophe is the evidence of competence.\n\nHis son Goshtasp had the kind of sensitivity to slight that occasionally tips into crisis. He felt dishonored by some incident at court — the Shahnameh does not elaborate — and fled abroad. He made his way to the Roman empire, worked in disguise, won a contest, and married Ketayun, daughter of the emperor. He returned with achievement and ambition. Lohrasp looked at his son and gave him the throne cleanly, without negotiation, recognizing that what Goshtasp had needed all along was not his father's defeat but his father's confidence.\n\nLohrasp retired to the fire temple of Balkh to live as a worshipper. When Arjasp's Hephthalite invasion reached the city, the old king was offered escape. He refused. He died defending the fire. The Shahnameh does not call this tragedy. It uses the word for a man who died exactly as he had lived: holding something worth holding.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/lohrasp.png?v=1778882334503",
       "unlock_day": 105,
@@ -477,9 +515,11 @@
         "energy": 100,
         "gems": 11
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "great-war-turan",
-      "quiz_count": 3
+      "quiz_count": 3,
+      "summary_fa": "کی‌خسرو تاج را به لهراسپ سپرد — نه طوس، نه فریبرز. دربار ناراضی بود. لهراسپ دهه‌ها بدونِ درامِ بزرگی اداره کرد. پسرش گشتاسپ فرار کرد و برگشت. لهراسپ تخت را داد. در آتشکده‌ی بلخ مُرد.",
+      "summary_tg": "Кай Хусрав тоҷро ба Луҳросп дод. Дарбор норозӣ буд. Луҳросп даҳсолаҳо идора кард. Писараш Гуштосп гурехт ва баргашт. Луҳросп тахтро дод. Дар оташкадаи Балх мурд."
     },
     {
       "id": 21,
@@ -488,7 +528,7 @@
       "title": "Goshtasp and Zoroaster",
       "title_fa": "گشتاسپ و زرتشت",
       "summary": "Zoroaster comes to the court of Goshtasp. Fire temples are lit. A new faith is threaded into the old chronicle.",
-      "story": "",
+      "story": "Goshtasp had inherited the throne from Lohrasp and ruled with the particular energy of a man who had made himself in foreign lands. Then Zoroaster arrived at his court from the east — from the region of Rai — carrying the Avesta and the testimony of a direct encounter with Ahura Mazda. The court received him with the standard skepticism of courts. There were contests of wisdom, questions from the Magi, challenges from scholars who had served the old fires. Zoroaster answered each question with the precision of a man reporting conviction rather than performing it. Goshtasp converted not from amazement but from recognition: this message was true in the specific way that changes what you do next.\n\nHe organized the faith into the kingdom's structure. Fire temples were established across Iran. The Avesta was distributed. Esfandiyar — his eldest son, the greatest warrior of his age — was sent to bring the Good Religion to the unconverted kingdoms. The mission was genuine: Esfandiyar believed. It was also politically convenient: a righteous son on a holy mission is not at court competing for the throne.\n\nArjasp, king of the Hephthalites, refused. He invaded with Hephthalite forces and killed Lohrasp at the fire temple of Balkh, extinguishing the sacred fire. He captured Goshtasp's daughters. Goshtasp called Esfandiyar back from his missions and gave him the assignment: defeat Arjasp, rescue the daughters, restore the fire. He promised the throne on completion. Esfandiyar went. He succeeded. The throne was not given. Jamasp the astrologer warned Goshtasp that a son with Esfandiyar's power and popularity was a structural threat to any sitting king. Goshtasp heard the warning and found it convenient. He promised a new mission instead. Esfandiyar obeyed. The Shahnameh records this cycle with quiet precision: a father who fears his son's greatness, and a son too righteous to refuse his father's commands, moving in circles that are slowly tightening toward an outcome neither of them can stop.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/goshtasp.png?v=1778882430031",
       "unlock_day": 111,
@@ -499,9 +539,11 @@
         "energy": 105,
         "gems": 12
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "lohrasp",
-      "quiz_count": 3
+      "quiz_count": 3,
+      "summary_fa": "زرتشت به دربارِ گشتاسپ رسید. پیامِ اهورا مزدا را آورد. گشتاسپ تبدیل شد. آتشکده‌ها روشن شدند. اسفندیار برای گسترشِ دین فرستاده شد. ارجاسپ رفض کرد و حمله کرد. دایره‌ای که دارد تنگ می‌شود شروع شد.",
+      "summary_tg": "Зардушт ба дарбори Гуштосп расид. Паёми Аҳура Мазда овард. Гуштосп табдил шуд. Оташкадаҳо равшан шуданд. Исфандиёр фиристода шуд. Арҷосп рад кард ва ҳамла кард."
     },
     {
       "id": 22,
@@ -510,7 +552,7 @@
       "title": "Esfandiyar — The Brazen-Bodied",
       "title_fa": "اسفندیار — رویین‌تن",
       "summary": "Steel cannot cut him, except where his eyes can be reached.",
-      "story": "Esfandiyar was bathed in fire by the prophet Zoroaster, and his body became brazen. No iron could harm him — except his eyes, kept shut at the moment of immersion. His seven labours rivalled Rostam's. His ending arrived in a hail of feathers and arrows under the cypress.",
+      "story": "In his youth, Zoroaster bathed Esfandiyar in sacred water and his body became brazen — no iron could pierce his skin. His eyes were open at the moment of immersion. That is the one place iron can reach him. He grew up knowing this as a fact about himself the way a man knows his own height.\n\nHe served Goshtasp for decades with no treachery in him. He defeated Arjasp, converted kingdoms, rescued captives, restored sacred fires. Each time he returned expecting the throne that had been promised. Each time a new task was invented. When a courtier named Gurz-Ahmar provided false testimony against him, Goshtasp had him imprisoned at the remote fortress of Gumbadan without trial. Esfandiyar did not plot escape. He did not organize his supporters. He waited. Arjasp invaded again; Goshtasp needed him and released him.\n\nEsfandiyar went back to war. He completed his Seven Labours on the road to Arjasp's stronghold — wolves, lions, a dragon, a sorceress, a great bird, the killing cold, and finally the Brazen Fortress itself, which he entered disguised as a merchant and destroyed from within. He rescued his sisters. He returned with the victory his father had demanded.\n\nGoshtasp's final command was specific: bring Rostam of Zabulestan to court in chains. Jamasp the astrologer told Esfandiyar plainly: this mission will kill you. Esfandiyar replied that he knew. He went anyway. He was too righteous to disobey his father's command, too honest to pretend he had a reason not to go, too courageous to let the knowledge of his own death stop him. The Shahnameh builds his biography as the structure of an inevitable tragedy: a man too good for the world it depicts, who will be broken by it for exactly that reason.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/esfandiyar.png?v=1778882524168",
       "unlock_day": 116,
@@ -524,9 +566,11 @@
           "esfandiyar": 2
         }
       },
-      "status": "locked",
+      "status": "available",
       "required_previous_chapter": "goshtasp",
-      "quiz_count": 5
+      "quiz_count": 5,
+      "summary_fa": "زرتشت اسفندیار را در آبِ مقدس غسل داد و رویین‌تن شد — جز در چشمانش. دهه‌ها بدونِ هیچ خیانتی خدمت کرد. یک بار زندانی شد. در نهایت فرمان آمد: رستم را با زنجیر بیاور. دانست خواهد کشت. رفت.",
+      "summary_tg": "Зардушт Исфандиёрро дар оби муқаддас ғусл дод ва рӯин шуд — ҷуз чашмонаш. Даҳсолаҳо бе хиёнат хидмат кард. Фармон омад. Медонист мекушад. Рафт."
     },
     {
       "id": 23,
@@ -535,7 +579,7 @@
       "title": "Esfandiyar's Seven Labours",
       "title_fa": "هفت خوان اسفندیار",
       "summary": "Before facing Rostam, Esfandiyar's seven tests begin. Each labour is a world in itself.",
-      "story": "",
+      "story": "Arjasp held Goshtasp's daughters in the Brazen Fortress at the edge of the Hephthalite kingdom, and the road to the fortress ran through seven stations of increasing difficulty.\n\nThe first two were wolves and then lions — creatures of the natural world amplified to the supernatural scale the Haft Khan requires. Esfandiyar killed them from horseback and noted that strength against strength was the test he was least likely to fail. The harder trials would follow.\n\nThe third was a dragon. Esfandiyar built a device of spiked wheels on his chariot and drove into the dragon's mouth. The spikes did what arrows could not. The fourth was a sorceress who appeared as a beautiful young woman, offering rest after three stations of violence. Esfandiyar spoke the name of Ahura Mazda. The false form dissolved. The fifth was a great bird that dove with the force of a storm. Esfandiyar let it strike his brazen body, took the full impact without damage, and killed it when it could not recover from its own strike. The sixth was a region of killing cold — three days of frost and white expanse. He walked through without stopping.\n\nThe seventh station was the fortress itself. It could not be taken by force. Esfandiyar arrived at the gates as a merchant with goods to sell. He was admitted, moved through the fortress for two days mapping its structure, then acted on the third: killed Arjasp's key commanders, freed his sisters Homay and Beh-Afarid, and burned the fortress from inside. The seven labours established his claim to stand beside Rostam — the only other figure in the chronicle who had completed such a sequence. They were also completed in service of a father who would then imprison him, deny him the throne, and eventually send him to die.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/seven-labours-esp.png?v=1778882632894",
       "unlock_day": 122,
@@ -546,9 +590,11 @@
         "energy": 110,
         "gems": 13
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "esfandiyar",
-      "quiz_count": 4
+      "quiz_count": 4,
+      "summary_fa": "ارجاسپ دختراتِ گشتاسپ را در دژِ روئین نگه می‌داشت. اسفندیار هفت آزمون را طی کرد: گرگان، شیران، اژدها (ارابه‌ی تیز)، جادوگر (نامِ اهورا مزدا)، پرنده‌ی بزرگ، سرما، و دژِ روئین با تغییرِ قیافه.",
+      "summary_tg": "Арҷосп духтарони Гуштоспро дар Деҷи Руин нигоҳ дошт. Исфандиёр ҳафт озмонро тай кард: гургон, шерон, аждаҳо, ҷодугар, паррандаи бузург, сармо, деж."
     },
     {
       "id": 24,
@@ -557,7 +603,7 @@
       "title": "The Great Clash",
       "title_fa": "رویارویی بزرگ",
       "summary": "Two pahlavans who cannot both live. One by duty, one by pride. The Simorgh's feather decides everything.",
-      "story": "",
+      "story": "Esfandiyar arrived at Zabulestan carrying Goshtasp's command: bring Rostam to court in chains. Rostam received him as a guest — feasts, ceremony, the full hospitality of Zabulestan. He knew who Esfandiyar was. He proposed every alternative: travel to court freely, swear any oath before any fire, acknowledge the king's authority in any form except being bound. Esfandiyar heard every argument and agreed with most of them. The king's command was specific. He had no authority to change it.\n\nThey fought on the plain. The first day established the problem precisely: Rostam's arrows hit Esfandiyar's brazen body and left no mark. Esfandiyar's weapons cut Rostam — the first time in the chronicle that Rostam has bled in single combat from a human opponent. The second day was the first at greater intensity. By its end Rostam was wounded in multiple places, Rakhsh was weakened, and the situation was clear. He asked Esfandiyar to hold until morning. Esfandiyar agreed, because he had already won and could not press the advantage against someone he respected.\n\nZal burned the Simorgh's feather — the same promise carried since Alborz. The Simorgh came. She healed them both and grieved, because she was the world's oldest witness and she knew what was about to happen and had no way to prevent it. She told Rostam: the tamarisk tree by the river. Two-pronged arrow. Aim for the eyes. Rostam said he would be cursed for it. The Simorgh said he would be. She departed.\n\nRostam made the arrow himself. He came back on the third day and they fought again. The arrow found Esfandiyar's eyes. He fell. Dying, he told Rostam: you are not the cause of my death. The man who sent me here knowing what it would produce — that is the cause. His name is Goshtasp. My father. Jamasp cursed Rostam. Rostam accepted the curse without argument. The Shahnameh pauses here longer than it has paused for any death since Sohrab.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/clash-rostam-esp.png?v=1778882809579",
       "unlock_day": 127,
@@ -568,9 +614,11 @@
         "energy": 115,
         "gems": 14
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "seven-labours-esp",
-      "quiz_count": 4
+      "quiz_count": 4,
+      "summary_fa": "اسفندیار با فرمانِ پدرش رسید: رستم را با زنجیر بیاور. دو روز جنگیدند. تیرهایِ رستم در رویین‌تن نگرفتند. رستم زخمی شد. سیمرغ آمد و گفت: تیرِ گز. چشمان. رستم رفت. تیر پیدا کرد. اسفندیار آخرین کلماتش پدرش را سرزنش کرد.",
+      "summary_tg": "Исфандиёр бо фармони падараш расид. Ду рӯз ҷангиданд. Тирҳои Рустам дар рӯин нагирифтанд. Симурғ омад: тири газ. Чашмон. Рустам рафт. Тир ёфт. Исфандиёр охирин суханон падарашро сарзаниш кард."
     },
     {
       "id": 25,
@@ -579,7 +627,7 @@
       "title": "Simorgh — The Phoenix Council",
       "title_fa": "سیمرغ — انجمن سیمرغ",
       "summary": "Wings the colour of the sun. The mountain remembers a wisdom older than language.",
-      "story": "Wings the colour of the sun. The Simorgh's nest holds wisdom older than the first speech. She watches the line of Zal across generations, and burns the feather only when the world's last hope hangs by a thread.",
+      "story": "The Simorgh is not a bird. She has the form of a bird — vast wings, feathers the colour of the sun and the deepest fires, a size that makes the mountain seem small — but the Shahnameh does not describe her as a creature of the natural world. She nests on the world-tree Vourukasha on Alborz and has watched three cycles of the world's destruction and renewal. She is, in the most precise sense, the world's own memory.\n\nShe appears four times in the chronicle with decisive effect. She raised Zal on the mountain when Sam abandoned him, educated him with the patience of something that has watched everything, and returned him to his father with a feather and a promise. She guided the caesarean that saved Rudabeh and produced Rostam, when Zal burned the feather for the first time. She healed Rostam and armed him for the clash with Esfandiyar, when Zal burned the feather for the last time — and she grieved, because she knew what she was enabling and had no way to prevent the cost of it.\n\nEach intervention enables the story to continue but does not make the story cost less. She is not a savior. She is the mechanism that keeps the chronicle moving when it would otherwise stop. She told Rostam he would be cursed for killing Esfandiyar. He would be. She provided the means anyway, because the alternative was the story stopping.\n\nThe Shahnameh says she was not seen again after leaving Rostam on the eve of the clash. She does not die — she is older than death. She does not announce a permanent departure. She goes, and does not return. The line of Zal's great stories — the Seven Labours, Sohrab, Esfandiyar — are ending. The feather is ash. The promise has been kept. The oldest witness returns to her mountain, and the chronicle continues without her.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/simorgh.png?v=1778883169441",
       "unlock_day": 133,
@@ -593,9 +641,11 @@
           "simorgh": 3
         }
       },
-      "status": "locked",
+      "status": "available",
       "required_previous_chapter": "clash-rostam-esp",
-      "quiz_count": 5
+      "quiz_count": 5,
+      "summary_fa": "سیمرغ در درختِ جهانی در البرز لانه دارد و سه نابودیِ دنیا را تماشا کرده. چهار بار تاریخ را تغییر داد: پرورشِ زال، تولدِ رستم، مسلح کردنِ رستم در برابرِ اسفندیار. هر بار غم می‌خورد. هر بار کمک می‌کند.",
+      "summary_tg": "Симурғ дар дарахти ҷаҳонӣ дар Алборз лона дорад. Чаҳор бор таърихро тағйир дод: Зол, Рустам, Исфандиёр. Ҳар бор ғам мехӯрад. Ҳар бор кӯмак мекунад."
     },
     {
       "id": 26,

@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-31T00:00:00Z",
+  "chapter_slug": "akvan",
+  "chapter_id": 17,
+  "era": {
+    "label_en": "~2870 BC — The Demon That Grants Wishes by Destroying Them",
+    "label_fa": "~۲۸۷۰ پ.م — دیوی که آرزوها را با نابودیشان برآورده می‌کند"
+  },
+  "lore_summary": {
+    "en": "A creature in the shape of a wild horse is devastating the Iranian borderlands — not stealing herds, not leading them away, but killing them for the pleasure of destruction. Kay Khosrow sends Rostam. Rostam hunts the creature for days, lassoes it, and watches the lasso dissolve. He understands then what he is facing: Akvan Div, a demon whose nature is inversion — he grants wishes by giving you the opposite of what you ask for. Rostam makes camp and sleeps in demon-territory, which is an error only Rostam could make. Akvan digs up the earth under him, carries him into the sky, and offers a choice: the mountain or the sea? Rostam is awake now. He knows Akvan's logic. He asks for the mountain. Akvan throws him into the sea. Rostam hits the water, swims to shore, finds Rakhsh waiting, hunts Akvan down, and kills him. The Shahnameh presents this episode without gravity — it is the chronicle's one pure adventure, a story about a demon who is clever and a hero who is cleverer.",
+    "fa": "موجودی به شکلِ اسبِ وحشی مرزهای ایران را ویران می‌کند — نه دزدیدن، نه بردن، بلکه برای لذتِ ویرانگری کشتن. کی‌خسرو رستم را می‌فرستد. رستم چند روز شکارش می‌کند، کمندش می‌اندازد، می‌بیند کمند حل می‌شود. می‌فهمد با چه روبروست: اکوان دیو، دیوی که طبیعتش وارونگی است — آرزوها را با دادنِ عکسِ آنچه می‌خواهی برآورده می‌کند. رستم اردو می‌زند و در سرزمینِ دیو می‌خوابد. اکوان زمینِ زیرش را کنده و به آسمان می‌برد. انتخاب می‌دهد: کوه یا دریا؟ رستم بیدار است. منطقِ اکوان را می‌داند. کوه را می‌خواهد. اکوان او را به دریا می‌اندازد. رستم می‌رسد، شنا می‌کند، رخش را منتظر پیدا می‌کند، اکوان را دنبال می‌کند، می‌کشد."
+  },
+  "timeline": [
+    {
+      "id": "wild-horse-appears",
+      "year_label_en": "~2870 BC", "year_label_fa": "~۲۸۷۰ پ.م",
+      "title_en": "The Wild Horse", "title_fa": "اسبِ وحشی",
+      "body_en": "Reports reach Kay Khosrow: a wild horse of impossible speed and endurance is killing the herds of the Iranian borderlands — not for food, purely for destruction. Rostam is sent to deal with it.",
+      "body_fa": "خبر به کی‌خسرو می‌رسد: اسبِ وحشیِ با سرعت و استقامتِ غیرممکن گله‌های مرزهای ایران را می‌کشد — نه برای غذا، فقط برای ویرانگری. رستم اعزام می‌شود.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "lasso-dissolves",
+      "year_label_en": "~2870 BC", "year_label_fa": "~۲۸۷۰ پ.م",
+      "title_en": "The Lasso That Dissolved", "title_fa": "کمندی که حل شد",
+      "body_en": "Rostam chases the creature across the borderlands for days. He finally gets close enough to throw his lasso. It catches — and then dissolves, as if it had hit smoke. Rostam understands: this is not a horse. This is Akvan Div.",
+      "body_fa": "رستم روزها موجود را در مرزها دنبال می‌کند. بالاخره به اندازه‌ی کافی نزدیک می‌شود تا کمند بیندازد. می‌گیرد — بعد حل می‌شود. رستم می‌فهمد: این اسب نیست. این اکوان دیو است.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "rostam-sleeps",
+      "year_label_en": "~2870 BC", "year_label_fa": "~۲۸۷۰ پ.م",
+      "title_en": "The Error Only Rostam Could Make", "title_fa": "اشتباهی که فقط رستم می‌توانست بکند",
+      "body_en": "Rostam makes camp in demon-territory and goes to sleep. Akvan arrives, digs up the ground beneath him, and carries him into the sky. The confidence of a man who has never been successfully ambushed is the same as the blindness of one who has.",
+      "body_fa": "رستم در سرزمینِ دیو اردو می‌زند و می‌خوابد. اکوان می‌آید، زمینِ زیرش را می‌کند، و به آسمان می‌برد. اعتمادِ مردی که هرگز در کمین موفقیت‌آمیزی نیفتاده همان کوریِ کسی است که افتاده.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "the-riddle",
+      "year_label_en": "~2870 BC", "year_label_fa": "~۲۸۷۰ پ.م",
+      "title_en": "Mountain or Sea?", "title_fa": "کوه یا دریا؟",
+      "body_en": "High in the air, Akvan offers the choice. Rostam understands Akvan's inversive nature. He asks for the mountain. Akvan grants the wish — inverted. Rostam hits the sea. He swims to shore. Rakhsh is waiting.",
+      "body_fa": "در آسمان، اکوان انتخاب می‌دهد. رستم طبیعتِ وارونه‌ی اکوان را می‌فهمد. کوه را می‌خواهد. اکوان آرزو را برآورده می‌کند — وارونه. رستم به دریا می‌رسد. شنا می‌کند. رخش منتظر است.",
+      "image": null, "side": "fated"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "the-hunt-begins",
+      "order": 1,
+      "title_en": "The Creature That Killed for Pleasure", "title_fa": "موجودی که برای لذت می‌کشت",
+      "era_en": "~2870 BC", "era_fa": "~۲۸۷۰ پ.م",
+      "body_en": "The reports were unusual. Not a lion, which takes one animal from the edge of the herd and retreats. Not wolves, which scatter and pursue from behind. Something was moving through the Iranian border herds killing systematically — dozens of animals, left where they fell, not eaten. The herdsmen described a horse. A wild horse the colour of saffron, with a black mane, moving at speeds that should not be possible for a physical horse, never visibly tired, killing with hooves and teeth and then vanishing. Kay Khosrow heard the reports and made the assignment straightforward: Rostam. Rostam went with Rakhsh and a hunting lasso and the particular confidence of a man who has not been stopped by anything yet. He tracked the creature for three days across the open borderland before he first saw it. It was, as described, extraordinary. He gave chase. For two more days he could not close the distance. On the fifth day he was close enough. He threw the lasso. It caught — he felt the weight of something substantial on the rope — and then it was simply gone. The rope was intact. There was nothing on it. Rostam coiled the lasso back and sat on Rakhsh and understood: a horse does not do that. A demon does.",
+      "body_fa": "گزارش‌ها غیرمعمول بودند. شیر نبود. گرگ‌ها هم نبودند. چیزی از میانِ گله‌های مرزیِ ایران می‌گذشت و به‌طورِ منظم می‌کشت — ده‌ها حیوان، همانجایی که افتادند رها شده، خورده نشده. چوپانان اسبی را توصیف کردند. اسبِ وحشیِ به رنگِ زعفران، با یالِ سیاه، با سرعتی که برای اسبِ واقعی نباید ممکن باشد. کی‌خسرو گزارش‌ها را شنید و وظیفه را ساده تعیین کرد: رستم. رستم رفت. موجود را سه روز دنبال کرد. پنجمین روز به اندازه‌ی کافی نزدیک بود. کمند انداخت. گرفت — وزنِ چیزِ مهمی روی طناب احساس کرد — بعد رفته بود. طناب سالم بود. هیچ چیزی رویش نبود. رستم کمند را جمع کرد و فهمید: اسب این کار را نمی‌کند. دیو این کار را می‌کند.",
+      "atmosphere": "wild",
+      "image": "/season2/uploads/chapters/akvan.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["akvan-nature"]
+    },
+    {
+      "id": "the-sleep",
+      "order": 2,
+      "title_en": "Sleeping in Demon Territory", "title_fa": "خوابیدن در سرزمینِ دیو",
+      "era_en": "~2870 BC", "era_fa": "~۲۸۷۰ پ.م",
+      "body_en": "Rostam had identified the demon. The standard next step — for anyone who had not spent decades being Rostam — would be to remain alert, to avoid sleeping in open ground in the territory of a creature that had just demonstrated it could make a lasso disappear. Rostam made camp and went to sleep. The Shahnameh does not comment on this decision. It records it as a fact: Rostam was tired from five days of chase and he slept. There is something in this that is characteristic — the same quality that makes him the champion of the world makes him capable of this particular error. He has never been caught. He has never been successfully ambushed. His entire history supports the conclusion that he can sleep anywhere he chooses and wake up fine. That history is also, here, his vulnerability. Akvan came while he slept. The demon did not attack Rostam directly — that would have been the lesser option. Instead Akvan dug up a square of earth with Rostam sleeping on it, roots and all, lifted it smoothly from the ground, and carried it into the sky. Rostam woke somewhere above the clouds, lying on a piece of the Iranian borderland, looking up at the night sky and down at nothing.",
+      "body_fa": "رستم دیو را شناسایی کرده بود. قدمِ بعدیِ استاندارد — برای هرکسی که دهه‌ها رستم نبوده بود — این بود که هوشیار بماند، از خوابیدن در زمینِ باز در سرزمینِ موجودی که کمند را ناپدید کرده بود اجتناب کند. رستم اردو زد و خوابید. شاهنامه درباره‌ی این تصمیم توضیحی نمی‌دهد. به عنوانِ واقعیت ثبت می‌کند. همان کیفیتی که او را قهرمانِ جهان می‌کند این اشتباهِ خاص را ممکن می‌کند: هرگز گیر نیفتاده، هرگز در کمینِ موفقیت‌آمیزی نیفتاده. اکوان آمد. مستقیم به رستم حمله نکرد — گزینه‌ی پست‌تری بود. در عوض مربعی از زمین را با رستمِ خوابنده رویش کند، صافانه از زمین بلند کرد، و به آسمان برد.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["the-confidence-trap"]
+    },
+    {
+      "id": "mountain-or-sea",
+      "order": 3,
+      "title_en": "Mountain or Sea", "title_fa": "کوه یا دریا",
+      "era_en": "~2870 BC", "era_fa": "~۲۸۷۰ پ.م",
+      "body_en": "Akvan held Rostam high in the air above the borderlands and presented the choice with the formality of a demon who takes pleasure in the form of what he is doing. Shall I throw you onto the mountain, where you will be broken on the rocks? Or into the sea, where you will drown? The Shahnameh pauses here for what is one of its cleverest moments. Rostam was fully awake now. He had the time to think, in the air, about the nature of the creature holding him. He had seen the lasso dissolve. He had heard of Akvan's kind: a div who grants wishes inversely, who gives you what you did not ask for as a means of not giving you what you did. The logic was precise and could only work one way: whatever Rostam asked for, Akvan would provide the opposite. If he asked for the sea, he would receive the mountain. If he asked for the mountain — and the mountain was rocks and the sea was water, and Rostam knew which of those he could survive — he would receive the sea. He asked for the mountain. Akvan threw him into the sea with full force, delighted with the cleverness of inverting a wish, and Rostam went deep and swam.",
+      "body_fa": "اکوان رستم را بالا نگه داشت و انتخاب را با رسمیتِ دیوی که از شکلِ کارش لذت می‌برد ارائه داد. کوه یا دریا؟ شاهنامه اینجا برای یکی از باهوشانه‌ترین لحظاتش مکث می‌کند. رستم کاملاً بیدار بود. وقت داشت در هوا درباره‌ی طبیعتِ موجودِ نگهدارنده فکر کند. منطق دقیق بود: هر چیزی که رستم می‌خواست، اکوان عکسش را می‌داد. کوه را خواست. اکوان او را با نیروی کامل به دریا انداخت.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 95 },
+      "unlocks_codex": ["the-inversion-principle", "what-rostam-knew"]
+    },
+    {
+      "id": "rakhsh-waiting",
+      "order": 4,
+      "title_en": "Rakhsh Was Waiting", "title_fa": "رخش منتظر بود",
+      "era_en": "~2870 BC", "era_fa": "~۲۸۷۰ پ.م",
+      "body_en": "Rostam hit the sea at the speed of a man dropped from cloud height. He went deep. He swam. The Shahnameh describes this with brevity — Rostam in the sea is not Rostam in danger; it is Rostam in an inconvenience. He swam to the shore and climbed out and Rakhsh was there. This is treated as a fact: of course Rakhsh was there. Rakhsh had followed the sound to the water's edge and waited. The horse did not know what had happened to his rider above the clouds; he knew only the direction of the last sound and went to it. The Shahnameh presents the reunion without sentiment. Rostam climbed out of the sea, Rakhsh was there, they continued. What Rostam continued toward was Akvan — who was still in the borderlands, having enjoyed the inversion of the wish and not yet understood that the man he threw into the sea was already on his way back.",
+      "body_fa": "رستم به سرعتِ مردی از ارتفاعِ ابر به دریا خورد. عمیق رفت. شنا کرد. شاهنامه این را مختصر توصیف می‌کند — رستم در دریا رستمِ در خطر نیست؛ رستمِ در زحمت است. شنا کرد به ساحل و بیرون آمد و رخش آنجا بود. این به عنوانِ واقعیت ارائه می‌شود: البته رخش آنجا بود. صدا را دنبال کرده بود. شاهنامه این لقاء را بدونِ احساسات ارائه می‌دهد. رستم از دریا بیرون آمد، رخش بود، ادامه دادند.",
+      "atmosphere": "dawn",
+      "image": null,
+      "reward": { "xp": 75 },
+      "unlocks_codex": ["rakhsh-intelligence"]
+    },
+    {
+      "id": "akvan-killed",
+      "order": 5,
+      "title_en": "How to Kill a Demon That Uses Illusion", "title_fa": "چطور دیوی که از توهم استفاده می‌کند کشته می‌شود",
+      "era_en": "~2870 BC", "era_fa": "~۲۸۷۰ پ.م",
+      "body_en": "Akvan in his true shape was not a horse. He was large and fast and he fought using illusions — appearing to be in multiple places at once, creating shapes of himself in the periphery of vision, using the basic demonic technique of making his enemy uncertain about where the real thing is. Against most enemies this works. Against Rostam it did not, for a reason the Shahnameh states with characteristic directness: Rostam did not rely on what he could see. A lifetime of fighting demons and div-generals had given him a way of locating the centre of a thing that did not depend on the accuracy of perception. He found where Akvan actually was — not where the illusions suggested he might be — and he struck. Akvan Div died on the Iranian borderland and the herds were safe and Rostam went back to Kay Khosrow's court and the Shahnameh moved on, because this chapter was always a story about cleverness and speed, and both of them had been demonstrated, and that was that.",
+      "body_fa": "اکوان در شکلِ واقعی‌اش اسب نبود. بزرگ و سریع بود و با توهم می‌جنگید — چندین جا به‌نظر می‌رسید، شکل‌هایی از خود در حاشیه‌ی دید می‌ساخت. در برابرِ بیشترِ دشمنان این کار می‌کند. در برابرِ رستم نه. رستم به آنچه می‌دید اتکا نمی‌کرد. عمری از جنگ با دیوان روشی برای یافتنِ مرکزِ یک چیز به او داده بود که به دقتِ ادراک وابسته نبود. پیدا کرد جایی که اکوان واقعاً بود و زد. اکوان دیو مُرد و رستم به دربار برگشت.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 90 },
+      "unlocks_codex": ["how-to-find-the-real-thing"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "akvan-div",
+      "name_en": "Akvan Div", "name_fa": "اکوان دیو",
+      "role_en": "The Inversive Demon · The Wish-Granter Who Destroys",
+      "role_fa": "دیوِ وارونه · آرزو-برآورنده‌ی نابودگر",
+      "rarity": "legendary", "level_required": 4,
+      "lore_en": "Akvan is the Shahnameh's most philosophically precise demon. He does not simply attack or corrupt — he inverts. His power is the power of perverse wish-fulfilment: he gives you exactly what you said you didn't want, framed as the gift of giving you what you asked for. This makes him dangerous not through brute force but through the gap between what you say and what you mean. The only defense is perfect consistency: if you truly want the mountain, you must ask for the sea, which requires you to know exactly what you want and be willing to ask for its opposite without flinching. Rostam wins not because he is stronger than Akvan, but because he knows himself without ambiguity.",
+      "lore_fa": "اکوان دقیق‌ترین دیوِ فلسفیِ شاهنامه است. فقط حمله یا فساد نمی‌کند — وارونه می‌کند. قدرتش قدرتِ برآوردنِ آرزوهای منحرف است. این او را نه از طریقِ نیرو بلکه از طریقِ فاصله بین آنچه می‌گویی و آنچه می‌خواهی خطرناک می‌کند. تنها دفاع خودشناسیِ کامل است.",
+      "image": null, "unlocked": true, "side": "dark"
+    },
+    {
+      "slug": "rostam-clever",
+      "name_en": "Rostam", "name_fa": "رستم",
+      "role_en": "The Champion · The Man Who Outthought a Demon",
+      "role_fa": "قهرمان · مردی که از دیو باهوش‌تر بود",
+      "rarity": "mythic", "level_required": 1,
+      "lore_en": "The Akvan episode shows a side of Rostam the Haft Khan does not: his cleverness under pressure. The Seven Labours were about endurance, courage, and power. The Akvan Div episode is about inference. Rostam is outnumbered, outpositioned, and suspended above the earth by a demon. He wins because he correctly identifies the demon's nature from limited evidence (a dissolving lasso) and applies that identification precisely in the one moment that matters (high in the air, falling). The Shahnameh values this just as much as it values physical strength. Knowing what you are facing is half the fight.",
+      "lore_fa": "ماجرای اکوان جنبه‌ای از رستم را نشان می‌دهد که هفت‌خان نشان نمی‌دهد: باهوشیِ زیرِ فشار. هفت‌خان درباره‌ی استقامت، شجاعت، و قدرت بود. ماجرای اکوان دیو درباره‌ی استنتاج است. رستم برنده می‌شود چون طبیعتِ دیو را از شواهدِ محدود درست شناسایی می‌کند.",
+      "image": null, "unlocked": true, "side": "light"
+    }
+  ],
+  "places": [
+    {
+      "slug": "iranian-borderlands",
+      "name_en": "The Iranian Borderlands — Where the Herds Were",
+      "name_fa": "مرزهای ایران — جایی که گله‌ها بودند",
+      "kind_en": "Where Demons and Herds Coexist Until They Don't",
+      "kind_fa": "جایی که دیوان و گله‌ها همزیستی می‌کنند تا وقتی نمی‌کنند",
+      "summary_en": "The Iranian borderlands in this episode are not a heroic landscape — they are pastureland where herdsmen live and work. The Shahnameh grounds the Akvan story in an entirely practical setting: herds are being killed, commerce is disrupted, people are suffering practical losses. The demon is not an abstraction. The mission is not a quest. It is pest control at a mythic scale, and the Shahnameh treats it with the same precision it brings to its largest wars.",
+      "summary_fa": "مرزهای ایران در این ماجرا چشم‌اندازِ قهرمانانه نیستند — چراگاهی است که چوپانان در آن زندگی و کار می‌کنند. شاهنامه داستانِ اکوان را در محیطِ کاملاً عملی قرار می‌دهد. دیو انتزاع نیست. مأموریت جستجوی قهرمانانه نیست. کنترلِ آفات در مقیاسِ اسطوره‌ای است.",
+      "image": null, "unlocked": true
+    }
+  ],
+  "battle": {
+    "boss_slug": "akvan-div",
+    "boss_name_en": "Akvan Div — The Inversion",
+    "boss_name_fa": "اکوان دیو — وارونگی",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Akvan is still loose in the borderlands. To face this gate you must understand the demon's nature: he grants wishes by inverting them. Know what you want. Ask for the opposite. The gap between what you say and what you mean is the only weapon he has.",
+    "intro_fa": "اکوان هنوز در مرزهاست. برای مواجهه باید طبیعتِ دیو را بفهمی: آرزوها را با وارونه کردنشان برآورده می‌کند. بدان چه می‌خواهی. عکسش را بخواه. فاصله بین آنچه می‌گویی و آنچه می‌خواهی تنها سلاحِ اوست.",
+    "requirements": [
+      {
+        "id": "level", "kind": "level", "target": 65,
+        "label_en": "Reach LVL 65", "label_fa": "رسیدن به سطحِ ۶۵", "label_tg": "Расидан ба сатҳи 65",
+        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+      },
+      {
+        "id": "quiz", "kind": "quiz", "target": "akvan",
+        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "akvan-nature",
+      "category": "person",
+      "title_en": "Akvan's Nature — The Inversive Wish",
+      "title_fa": "طبیعتِ اکوان — آرزوی وارونه",
+      "summary_en": "Akvan Div's power is not brute strength — it is the perversion of agency. He presents choices and then inverts them. This makes him uniquely dangerous to people who know what they want: the clearer your preference, the more precisely he can give you its opposite. The only defense is to understand the inversion before you speak. Rostam wins not because he is stronger than Akvan but because he correctly models Akvan's logic from a single piece of evidence (the disappearing lasso) and applies that model under pressure, suspended in midair, with no margin for error.",
+      "summary_fa": "قدرتِ اکوان دیو نیروی خام نیست — انحرافِ آزانسی است. انتخاب‌ها را ارائه می‌دهد و بعد وارونه‌شان می‌کند. تنها دفاع فهمیدنِ وارونگی پیش از سخن گفتن است. رستم برنده می‌شود چون منطقِ اکوان را از یک شواهدِ واحد درست مدل می‌کند.",
+      "image": null, "unlock_via": "scene:the-hunt-begins"
+    },
+    {
+      "id": "the-confidence-trap",
+      "category": "concept",
+      "title_en": "The Confidence Trap",
+      "title_fa": "دامِ اعتماد",
+      "summary_en": "Rostam sleeping in demon-territory is presented by the Shahnameh without judgment — it records the fact. But the detail is precise: the same quality that makes Rostam impossible to defeat (his track record of survival, his physical invulnerability, his experience with every kind of enemy) is also what makes him capable of this error. He has no model for being caught, because he has never been caught. This is not stupidity — it is the specific vulnerability of the most capable. Expertise creates its own blind spots.",
+      "summary_fa": "رستمِ خوابنده در سرزمینِ دیو توسطِ شاهنامه بدون قضاوت ارائه می‌شود. همان کیفیتی که رستم را غیرقابلِ شکست می‌کند این اشتباه را ممکن می‌کند: سابقه‌ی بقا، آسیب‌ناپذیریِ جسمی، تجربه با هر نوع دشمن. هیچ مدلی برای گیر افتادن ندارد، چون هرگز گیر نیفتاده. تخصص کورنقاط خودش را می‌سازد.",
+      "image": null, "unlock_via": "scene:the-sleep"
+    },
+    {
+      "id": "the-inversion-principle",
+      "category": "concept",
+      "title_en": "The Inversion Principle",
+      "title_fa": "اصلِ وارونگی",
+      "summary_en": "Rostam's reasoning in the air above the borderlands is one of the Shahnameh's clearest examples of inference under pressure. He knows two things: Akvan inverts wishes, and the mountain will kill him while the sea might not. Therefore: ask for the mountain, receive the sea. The logic is simple once you know Akvan's nature. The difficulty is knowing it in the right moment, with the ground far below and no second chance. What the episode demonstrates is that intelligence is not about having information — it is about applying the right information at the right time under pressure.",
+      "summary_fa": "استدلالِ رستم در هوا یکی از روشن‌ترین نمونه‌های استنتاجِ زیرِ فشار در شاهنامه است. دو چیز می‌داند: اکوان آرزوها را وارونه می‌کند، و کوه می‌کشد در حالی که دریا شاید نکشد. پس: کوه را بخواه، دریا را دریافت کن. منطق ساده است وقتی طبیعتِ اکوان را می‌دانی.",
+      "image": null, "unlock_via": "scene:mountain-or-sea"
+    },
+    {
+      "id": "what-rostam-knew",
+      "category": "concept",
+      "title_en": "What Rostam Knew About Himself",
+      "title_fa": "آنچه رستم درباره‌ی خودش می‌دانست",
+      "summary_en": "The mountain-or-sea choice only works if Rostam knows which one he can survive. He asks for the mountain because he knows he can survive the sea — he knows he can swim, he knows his body will take the impact, he knows water will not kill him. This knowledge is not arrogance; it is accurate self-assessment. The Shahnameh's point here is subtle: knowing yourself precisely is not a luxury in crisis situations. It is the mechanism of survival. The man who misjudges his own capabilities would ask for the sea, receive the mountain, and die on the rocks.",
+      "summary_fa": "انتخابِ کوه یا دریا فقط کار می‌کند اگر رستم بداند کدام را می‌تواند زنده بماند. کوه را می‌خواهد چون می‌داند از دریا جان سالم به در می‌برد — شنا بلد است، جسمش ضربه را تحمل می‌کند. این دانش غرور نیست؛ ارزیابیِ دقیقِ خود است.",
+      "image": null, "unlock_via": "scene:mountain-or-sea"
+    },
+    {
+      "id": "rakhsh-intelligence",
+      "category": "artifact",
+      "title_en": "Rakhsh at the Shore",
+      "title_fa": "رخش در ساحل",
+      "summary_en": "Rakhsh follows the sound of Rostam's disappearance to the water's edge and waits. The Shahnameh does not explain how he knew to go there. It simply records that he was there. This is consistent with how Rakhsh is always presented in the chronicle: not as a horse with supernatural power, but as a horse with complete alignment of purpose with his rider. He does what needs to be done because he and Rostam are, in the Shahnameh's world, the same force directed at the same purpose.",
+      "summary_fa": "رخش صدایِ ناپدید شدنِ رستم را تا لبه‌ی آب دنبال می‌کند و منتظر می‌ماند. شاهنامه توضیح نمی‌دهد چطور فهمید برود. فقط ثبت می‌کند که آنجا بود. این با نحوه‌ی ارائه‌ی رخش در شاهنامه سازگار است: نه اسبِ قدرتِ ماورایی، بلکه اسبِ همسویِ کامل با سوارکارش.",
+      "image": null, "unlock_via": "scene:rakhsh-waiting"
+    },
+    {
+      "id": "how-to-find-the-real-thing",
+      "category": "concept",
+      "title_en": "Finding the Real Thing Through Illusion",
+      "title_fa": "یافتنِ چیزِ واقعی از میانِ توهم",
+      "summary_en": "Akvan fights with illusions — multiple apparent locations, shapes at the edges of vision. Rostam wins not by seeing through the illusions but by not relying on them. He has a method for finding the centre of a thing that does not depend on visual accuracy. The Shahnameh does not describe this method in detail — it simply records that Rostam had it and used it. What the passage implies is that a lifetime of fighting enemies who lie (demons, sorcerers, disguised figures) gives a warrior a different relationship with perception: he learns to find the real thing beneath the presented thing, without needing the presented thing to be honest.",
+      "summary_fa": "اکوان با توهم می‌جنگد. رستم نه با دیدنِ فراترِ توهم‌ها بلکه با تکیه نکردن به آن‌ها پیروز می‌شود. روشی برای یافتنِ مرکزِ یک چیز دارد که به دقتِ بینایی وابسته نیست. عمری جنگ با دشمنانی که دروغ می‌گویند رابطه‌ی متفاوتی با ادراک به جنگجو می‌دهد.",
+      "image": null, "unlock_via": "scene:akvan-killed"
+    }
+  ]
+}

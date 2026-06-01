@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-31T00:00:00Z",
+  "chapter_slug": "great-war-turan",
+  "chapter_id": 19,
+  "era": {
+    "label_en": "~2870–2855 BC — The War That Closed the Chronicle's Longest Wound",
+    "label_fa": "~۲۸۷۰–۲۸۵۵ پ.م — جنگی که طولانی‌ترین زخمِ شاهنامه را بست"
+  },
+  "lore_summary": {
+    "en": "The great Iran-Turan war under Kay Khosrow is not a war of ambition — it is a war of debt. Siavash's blood, Siyavashgerd, Farangis's exile. The war runs for years across the Oxus and into the Turanian heartland. Its great human drama is Gudarz against Piran Wiseh — Iran's greatest general against Turan's, two old men who respect each other, who cannot stop. The twelve-champion contest. Single combat. Piran falls. The Turanian army loses its intelligence without him and crumbles slowly. Afrasiab retreats north, east, west. He is cornered at a remote lake by Kay Khosrow personally. He is executed. The Iran-Turan wars that had shaped the Shahnameh since the Nozar chapter — the wars that killed Siavash, that consumed three generations of Iranian paladins — close at the lake. The chronicle pauses, breathes, and asks what is done with peace when the war that made you was the only thing you knew how to do.",
+    "fa": "جنگِ بزرگِ ایران-توران تحتِ کی‌خسرو جنگِ جاه‌طلبی نیست — جنگِ بدهی است. خونِ سیاوش، سیاوش‌گرد، تبعیدِ فرنگیس. جنگ سال‌ها در جیحون و قلبِ توران ادامه دارد. درامِ انسانیِ بزرگش گودرز در برابرِ پیرانِ ویسه است — بزرگ‌ترین سردارِ ایران در برابرِ تورانی‌ها. دوازده قهرمان. نبردِ تن‌به‌تن. پیران می‌افتد. افراسیاب به شمال می‌رود. کی‌خسرو شخصاً او را در کنارِ دریاچه گیر می‌اندازد. اعدامش می‌کند."
+  },
+  "timeline": [
+    {
+      "id": "war-declared",
+      "year_label_en": "~2870 BC", "year_label_fa": "~۲۸۷۰ پ.م",
+      "title_en": "The War of Debt Begins", "title_fa": "جنگِ بدهی آغاز می‌شود",
+      "body_en": "Kay Khosrow organizes Iran for the great war. The marshaling of armies, the naming of commanders: Tus leads the vanguard, Gudarz the center, Rostam the decisive force. They cross the Oxus with a purpose every soldier understands.",
+      "body_fa": "کی‌خسرو ایران را برای جنگِ بزرگ سازماندهی می‌کند. سپاه‌ها جمع می‌شوند. طوس پیشاهنگ، گودرز مرکز، رستم نیروی تعیین‌کننده. از جیحون می‌گذرند با هدفی که هر سربازی می‌فهمد.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "tus-frud",
+      "year_label_en": "~2868 BC", "year_label_fa": "~۲۸۶۸ پ.م",
+      "title_en": "Tus and Frud — The War's First Wound", "title_fa": "طوس و فرود — اولین زخمِ جنگ",
+      "body_en": "In the war's early days, Tus leads his forces past the castle of Frud — Kay Khosrow's own half-brother, son of Siavash by a Turanian mother. Kay Khosrow had ordered Tus not to approach Frud's territory. Tus ignores the order. Frud is killed. The war begins with a death it was supposed to prevent.",
+      "body_fa": "در روزهای اولیه‌ی جنگ، طوس نیروهایش را از کنارِ قلعه‌ی فرود — برادرِ ناتنیِ کی‌خسرو، پسرِ سیاوش از مادرِ توران‌نژاد — رد می‌کند. کی‌خسرو به طوس دستور داده بود به قلمروِ فرود نزدیک نشود. طوس دستور را نادیده می‌گیرد. فرود کشته می‌شود.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "piran-gudarz",
+      "year_label_en": "~2860 BC", "year_label_fa": "~۲۸۶۰ پ.م",
+      "title_en": "Gudarz Against Piran Wiseh", "title_fa": "گودرز در برابرِ پیرانِ ویسه",
+      "body_en": "The war's great human drama: Gudarz, Iran's senior general, against Piran Wiseh, Turan's most respected commander — and the one man in Turan who had tried to protect Siavash. They meet in battle repeatedly across seasons. The final meeting is single combat. Piran falls. The Turanian army loses its organizing intelligence.",
+      "body_fa": "درامِ انسانیِ بزرگِ جنگ: گودرز، سردارِ ارشدِ ایران، در برابرِ پیرانِ ویسه، محترم‌ترین فرمانده‌ی توران — و تنها مردِ توران که سعی کرده بود از سیاوش محافظت کند. در نهایت نبردِ تن‌به‌تن. پیران می‌افتد.",
+      "image": null, "side": "dark"
+    },
+    {
+      "id": "afrasiab-falls",
+      "year_label_en": "~2855 BC", "year_label_fa": "~۲۸۵۵ پ.م",
+      "title_en": "Afrasiab at the Lake", "title_fa": "افراسیاب کنارِ دریاچه",
+      "body_en": "Afrasiab retreats north, then west, is cornered each time and escapes. Kay Khosrow pursues with the patience of a man raised in this land. At a remote lake, he finds him. He executes him personally. The Iran-Turan wars close.",
+      "body_fa": "افراسیاب به شمال، بعد غرب می‌رود، هر بار گیر می‌افتد و فرار می‌کند. کی‌خسرو با صبرِ مردی که در این سرزمین بزرگ شده تعقیب می‌کند. کنارِ دریاچه‌ای دورافتاده پیدایش می‌کند. اعدامش می‌کند.",
+      "image": null, "side": "dark"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "the-crossing",
+      "order": 1,
+      "title_en": "The Army That Crossed for a Reason", "title_fa": "سپاهی که برای دلیلی گذشت",
+      "era_en": "~2870 BC", "era_fa": "~۲۸۷۰ پ.م",
+      "body_en": "Kay Khosrow organized the war with a patience that was recognizably his own — the patience of a man who had spent his childhood in the land he was now invading, who knew the distances, who had been raised near the mourning plant that grew from his father's blood. He named the commanders. Tus led the vanguard; Gudarz held the center; Rostam was the decisive force, available for the moments when the campaign required something that no other fighter could provide. The Derafsh Kaviani — the same banner that Kaveh the blacksmith had raised against Zahhak, the same banner that had flown at every great Iranian war — moved east across the Oxus. This was not the same kind of crossing that Kay Kavus had made into Mazandaran, where the reason for going was a demon's song. Every soldier in Kay Khosrow's army knew why they were crossing, because the king had made the reason clear: Siavash's blood was in the earth they were walking into, and they were there to close the debt.",
+      "body_fa": "کی‌خسرو جنگ را با صبرِ مشخصاً خودش سازماندهی کرد — صبرِ مردی که کودکیش را در سرزمینی که حالا به آن حمله می‌کند گذرانده بود. درفشِ کاویانی — همان پرچمی که کاوه‌ی آهنگر در برابرِ ضحاک بالا برده بود — به سمتِ شرق از جیحون عبور کرد. این همان نوعِ عبور نبود که کی‌کاووس به مازندران کرده بود. هر سربازِ سپاهِ کی‌خسرو می‌دانست چرا می‌گذرند.",
+      "atmosphere": "fated",
+      "image": "/season2/uploads/chapters/great-war-turan.png",
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["what-makes-a-war-different"]
+    },
+    {
+      "id": "tus-kills-frud",
+      "order": 2,
+      "title_en": "The War's First Mistake", "title_fa": "اولین اشتباهِ جنگ",
+      "era_en": "~2868 BC", "era_fa": "~۲۸۶۸ پ.م",
+      "body_en": "Kay Khosrow had a half-brother named Frud — son of Siavash by a Turanian mother, raised in a castle on the Iranian march, loyal to Iran despite his Turanian birth. Before the war began, Kay Khosrow had sent specific instructions to Tus, the vanguard commander: do not approach Frud's territory. Frud was family. He was not the enemy. He was to be left alone. Tus led the vanguard past the castle anyway, either from poor judgment or from the particular arrogance of a general who knows the king is far behind. Frud came out to parley. The meeting went badly. Frud was killed. The war that had been organized to avenge Siavash began by accidentally killing Siavash's own son. The Shahnameh records this without comment, because this is what wars do: they follow the plans they are given until the plans meet actual people, and then they do something else.",
+      "body_fa": "کی‌خسرو برادرِ ناتنیِ فرود داشت — پسرِ سیاوش از مادرِ توران‌نژاد. پیش از شروعِ جنگ، دستوراتِ مشخصی به طوس فرستاده بود: به قلمروِ فرود نزدیک نشو. طوس به هر حال از کنارِ قلعه رد شد. فرود کشته شد. جنگی که برای انتقامِ سیاوش سازماندهی شده بود با کشتنِ تصادفیِ پسرِ سیاوش شروع شد.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 75 },
+      "unlocks_codex": ["tus-and-orders", "frud-footnote"]
+    },
+    {
+      "id": "twelve-champions",
+      "order": 3,
+      "title_en": "The Contest of Twelve Champions", "title_fa": "رقابتِ دوازده قهرمان",
+      "era_en": "~2862 BC", "era_fa": "~۲۸۶۲ پ.م",
+      "body_en": "After years of inconclusive battle, both armies agreed to a specific Iranian military tradition: a contest of champions, twelve on each side, to settle part of the war by single combats instead of mass slaughter. Piran Wiseh chose Turan's twelve. Gudarz chose Iran's. The contest took place on the plain between the two armies, each fight watched by both sides. Iran won. The Shahnameh records the outcomes of each of the twelve combats without drama — they are listed as facts, names and results, the way a war's ledger is kept. What the contest established was not a final victory but a shift in the war's weight: after it, the Turanian army knew something about itself that it had not quite known before.",
+      "body_fa": "بعد از سال‌ها نبردِ غیرقطعی، هر دو سپاه با سنتِ نظامیِ ایرانی موافقت کردند: رقابتِ قهرمانان، دوازده از هر طرف. پیرانِ ویسه دوازده‌ی توران را انتخاب کرد. گودرز دوازده‌ی ایران را. رقابت در دشت بینِ دو سپاه برگزار شد. ایران برد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 85 },
+      "unlocks_codex": ["champion-contest-logic"]
+    },
+    {
+      "id": "gudarz-piran",
+      "order": 4,
+      "title_en": "Gudarz and Piran Wiseh", "title_fa": "گودرز و پیرانِ ویسه",
+      "era_en": "~2858 BC", "era_fa": "~۲۸۵۸ پ.م",
+      "body_en": "Piran Wiseh was the Turanian general who had tried hardest to save Siavash — who had argued against Garsivaz, who had pleaded with Afrasiab, who had failed but had tried. He was also Turan's most capable military mind. Gudarz was Iran's senior general, father of Giv, patriarch of one of the great fighting families. They had fought opposite each other across multiple campaigns and seasons. The final meeting was single combat, agreed by both. The Shahnameh treats this encounter with an unusual deliberateness. It is not Rostam killing a demon — it has the weight of two old soldiers who understand what they are doing and cannot stop. Piran fell. Gudarz survived. The Turanian army, which had functioned under Piran's intelligence like a body under a brain, began to lose coherence. It did not collapse immediately — Turan had other generals, other forces, Afrasiab himself — but the organizing intelligence was gone, and what remained fought without the quality that quality had given them.",
+      "body_fa": "پیرانِ ویسه سردارِ توران بود که سخت‌ترین تلاش را برای نجاتِ سیاوش کرده بود. گودرز سردارِ ارشدِ ایران. در چندین کارزار و فصل روبروی هم جنگیده بودند. ملاقاتِ نهایی نبردِ تن‌به‌تن بود. شاهنامه این برخورد را با قصدِ غیرمعمولی می‌پردازد. سنگینیِ دو سربازِ پیر دارد که می‌فهمند چه می‌کنند و نمی‌توانند متوقف شوند. پیران افتاد.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["piran-paradox", "gudarz-cost"]
+    },
+    {
+      "id": "afrasiab-cornered",
+      "order": 5,
+      "title_en": "The Lake", "title_fa": "دریاچه",
+      "era_en": "~2855 BC", "era_fa": "~۲۸۵۵ پ.م",
+      "body_en": "Afrasiab was not a coward. He had ruled Turan for a century — had defeated armies, outlived enemies, survived setbacks that would have ended lesser kings. But he had no army left to speak of and no general who could match what Iran had brought against him, and the man pursuing him was the son of the man he had ordered killed. He retreated north toward the great lake at the edge of the Turanian world. He hid among local tribes. He crossed ice in winter. Kay Khosrow followed with the patience of someone who was raised in this landscape and was in no hurry because there was no longer anywhere for Afrasiab to go. At the edge of the lake, Kay Khosrow found him. He confronted him personally. The execution was personal: this was Siavash's blood, Farangis's exile, Siyavashgerd, the mourning plant, three generations of Iranian paladins. Afrasiab was killed at the lake. The Iran-Turan wars ended. The Shahnameh pauses — a long pause by its standards — and then the chronicle considers what peace means for a kingdom that had been built entirely around being at war.",
+      "body_fa": "افراسیاب بزدل نبود. قرنی توران را اداره کرده بود. اما سپاهی نداشت و مردی که دنبالش بود پسرِ مردی بود که دستورِ کشتنش را داده بود. به شمال به سمتِ دریاچه‌ی عظیم در لبه‌ی دنیای توران عقب‌نشینی کرد. کی‌خسرو با صبرِ کسی که در این چشم‌انداز بزرگ شده دنبال کرد. کنارِ دریاچه پیدایش کرد. شخصاً روبرویش شد. اعدامش شخصی بود.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 120 },
+      "unlocks_codex": ["end-of-the-wars", "what-peace-demands"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "piran-wiseh",
+      "name_en": "Piran Wiseh", "name_fa": "پیرانِ ویسه",
+      "role_en": "Turan's Greatest General · The Man Who Tried to Save Siavash · The Honourable Enemy",
+      "role_fa": "بزرگترین سردارِ توران · مردی که سعی کرد سیاوش را نجات دهد · دشمنِ شریف",
+      "rarity": "legendary", "level_required": 2,
+      "lore_en": "Piran Wiseh is the Shahnameh's most fully realized enemy — a man on the wrong side of history who knows it and cannot change it. He tried to protect Siavash. He failed. He served Afrasiab faithfully through the wars that followed, defending a cause he must have known had lost its legitimacy when Siavash died. His final single combat with Gudarz is one of the chronicle's most charged scenes: two old generals who respect each other, who have fought each other for decades, who cannot stop because the causes they serve cannot stop. Piran falls with more dignity than many of the Shahnameh's heroes.",
+      "lore_fa": "پیرانِ ویسه دقیق‌ترین دشمنِ شاهنامه است — مردی در طرفِ اشتباهِ تاریخ که می‌داند و نمی‌تواند تغییرش دهد. سعی کرد سیاوش را نجات دهد. شکست خورد. تا آخر صادقانه خدمتِ افراسیاب کرد. نبردِ تن‌به‌تنِ نهاییش با گودرز یکی از پرشورترین صحنه‌های شاهنامه است.",
+      "image": null, "unlocked": true, "side": "neutral"
+    },
+    {
+      "slug": "gudarz",
+      "name_en": "Gudarz", "name_fa": "گودرز",
+      "role_en": "Iran's Senior General · Father of Giv · The Man Who Outlived the War",
+      "role_fa": "سردارِ ارشدِ ایران · پدرِ گیو · مردی که از جنگ جان سالم به در برد",
+      "rarity": "legendary", "level_required": 1,
+      "lore_en": "Gudarz is the patriarch of one of Iran's great paladin families — Giv is his son, and Bijan is his grandson. He has fought in the Iran-Turan wars for decades, through Kay Kavus's recklessness and into Kay Khosrow's purposeful campaign. His single combat with Piran Wiseh is the war's human center — the oldest general in Iran meeting the most respected general in Turan, both of them knowing exactly what they are doing. Gudarz survives. The Shahnameh does not describe what he feels about this.",
+      "lore_fa": "گودرز پدرسالارِ یکی از خانواده‌های بزرگِ پهلوانیِ ایران است. گیو پسرش و بیژن نوه‌اش. دهه‌ها در جنگ‌های ایران-توران جنگیده. نبردِ تن‌به‌تنش با پیران مرکزِ انسانیِ جنگ است. زنده می‌ماند.",
+      "image": null, "unlocked": true, "side": "light"
+    },
+    {
+      "slug": "frud",
+      "name_en": "Frud", "name_fa": "فرود",
+      "role_en": "Son of Siavash · Half-Brother of Kay Khosrow · The War's First Casualty of Pride",
+      "role_fa": "پسرِ سیاوش · برادرِ ناتنیِ کی‌خسرو · اولین قربانیِ غرورِ جنگ",
+      "rarity": "epic", "level_required": 3,
+      "lore_en": "Frud is a minor figure who carries enormous symbolic weight: he is Siavash's son, and the war organized to avenge Siavash kills him in its first days because Tus ignores Kay Khosrow's orders to leave him alone. Frud is loyal to Iran. He is not the enemy. He is simply in the path of a general who confuses his authority with the king's instructions. His death is the war's first evidence that wars do not stay within their stated purposes — they follow the logic of the people fighting them, and the people fighting them are not always careful.",
+      "lore_fa": "فرود چهره‌ای فرعی با وزنِ نمادیِ عظیم است: پسرِ سیاوش است، و جنگِ سازماندهی‌شده برای انتقامِ سیاوش در روزهای اولش او را می‌کشد چون طوس دستوراتِ کی‌خسرو را نادیده می‌گیرد.",
+      "image": null, "unlocked": false, "side": "light",
+      "unlock_via": "scene:tus-kills-frud"
+    }
+  ],
+  "places": [
+    {
+      "slug": "the-oxus-war",
+      "name_en": "The Oxus — The Border That Defined a Century",
+      "name_fa": "جیحون — مرزی که قرنی را تعریف کرد",
+      "kind_en": "Where Iran and Turan Met for Three Generations",
+      "kind_fa": "جایی که ایران و توران سه نسل روبرو شدند",
+      "summary_en": "The Oxus appears in the Shahnameh as the world's great political boundary. Every significant Iran-Turan event is described in relation to the river: Nozar was captured near it, Siavash crossed it east, Kay Khosrow crossed it west, Rostam crossed it to find Kay Khosrow, the great war army crossed it east again. The river does not take sides. It simply marks the place where two worlds meet, and records, in its crossings, the direction of each era's power.",
+      "summary_fa": "جیحون در شاهنامه به عنوانِ مرزِ سیاسیِ بزرگِ دنیا ظاهر می‌شود. هر رویدادِ مهمِ ایران-توران در رابطه با رودخانه توصیف می‌شود. رودخانه طرف نمی‌گیرد. فقط جایی را مشخص می‌کند که دو دنیا ملاقات می‌کنند.",
+      "image": null, "unlocked": true
+    },
+    {
+      "slug": "the-lake-end",
+      "name_en": "The Lake — Where the Wars Ended",
+      "name_fa": "دریاچه — جایی که جنگ‌ها تمام شدند",
+      "kind_en": "The End of a Century-Long Enmity",
+      "kind_fa": "پایانِ دشمنیِ یک‌صدساله",
+      "summary_en": "The lake where Afrasiab is finally cornered has no elaborate description in the Shahnameh. It is simply a lake, far north, at the edge of the Turanian world. What it has is finality. The Iran-Turan wars that had run through the chronicle since Nozar — the wars that killed Siavash, that consumed Piran Wiseh, that sent Rostam on the Seven Labours, that built and destroyed Siyavashgerd — end here, at an unnamed lake, with an execution performed personally by the king. The place is unremarkable. The significance is everything.",
+      "summary_fa": "دریاچه‌ای که افراسیاب در نهایت در آن گیر می‌افتد توصیفِ تفصیلی در شاهنامه ندارد. فقط دریاچه‌ای است، دور در شمال. آنچه دارد قطعیت است. جنگ‌های ایران-توران که از فصلِ نوذر تا الان پیش آمده‌اند اینجا تمام می‌شوند.",
+      "image": null, "unlocked": false, "unlock_via": "scene:afrasiab-cornered"
+    }
+  ],
+  "battle": {
+    "boss_slug": "afrasiab-last-stand",
+    "boss_name_en": "Afrasiab's Last Army",
+    "boss_name_fa": "آخرین سپاهِ افراسیاب",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "The Turanian army is making its final stand. To face this gate you must understand what makes this war different from every Iran-Turan conflict before it — and what it costs to close a century of enmity with your own hands.",
+    "intro_fa": "سپاهِ توران آخرین ایستادگی‌اش را می‌کند. برای مواجهه باید بفهمی چه چیزی این جنگ را از هر درگیریِ قبلیِ ایران-توران متفاوت می‌کند.",
+    "requirements": [
+      {
+        "id": "level", "kind": "level", "target": 72,
+        "label_en": "Reach LVL 72", "label_fa": "رسیدن به سطحِ ۷۲", "label_tg": "Расидан ба сатҳи 72",
+        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+      },
+      {
+        "id": "quiz", "kind": "quiz", "target": "great-war-turan",
+        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "what-makes-a-war-different",
+      "category": "concept",
+      "title_en": "What Makes This War Different",
+      "title_fa": "چه چیزی این جنگ را متفاوت می‌کند",
+      "summary_en": "The Shahnameh has described Iran-Turan conflicts since the Nozar chapter. Most of them were wars of territory, tribute, or dynastic grievance. Kay Khosrow's war is structurally different: it has a specific cause (Siavash's death), a specific instrument (the king born from that death), and a specific end condition (Afrasiab's death at Kay Khosrow's hands). A war with these three qualities is not an ordinary war — it is a reckoning. The Shahnameh gives it the weight of one.",
+      "summary_fa": "شاهنامه از فصلِ نوذر درگیری‌های ایران-توران را توصیف کرده. بیشترشان جنگ‌های سرزمین یا خراج بودند. جنگِ کی‌خسرو از نظرِ ساختاری متفاوت است: دلیلِ مشخص، ابزارِ مشخص، شرطِ پایانِ مشخص. جنگ با این سه کیفیت جنگِ عادی نیست — تسویه‌حساب است.",
+      "image": null, "unlock_via": "scene:the-crossing"
+    },
+    {
+      "id": "tus-and-orders",
+      "category": "concept",
+      "title_en": "Tus and the Problem of Orders",
+      "title_fa": "طوس و مسئله‌ی دستورات",
+      "summary_en": "Kay Khosrow gave Tus explicit instructions: do not approach Frud's territory. Tus ignored them. The Shahnameh does not give Tus a specific motive — arrogance, poor judgment, or simple failure to prioritize one order among many. What it records is the result: Frud dead, the war beginning with a fratricide. The episode is the chronicle's reminder that even a just war, organized by the right king for the right reason, is executed by humans who make human errors. The intention does not prevent the consequence.",
+      "summary_fa": "کی‌خسرو دستوراتِ صریح به طوس داد. طوس نادیده گرفت. شاهنامه انگیزه‌ی مشخصی به طوس نمی‌دهد. آنچه ثبت می‌کند نتیجه است: فرودِ مُرده، جنگ با برادرکشی شروع‌شده. قصد مانعِ پیامد نمی‌شود.",
+      "image": null, "unlock_via": "scene:tus-kills-frud"
+    },
+    {
+      "id": "frud-footnote",
+      "category": "person",
+      "title_en": "Frud — A Footnote the Chronicle Does Not Let Become One",
+      "title_fa": "فرود — پاورقی‌ای که شاهنامه اجازه نمی‌دهد پاورقی بشود",
+      "summary_en": "Frud is killed in the war's opening days and does not appear again. He is Siavash's son, loyal to Iran, dead by accident at the hands of a general who ignored orders. The Shahnameh does not dramatize his death into a major tragedy — it places it exactly where it belongs: early, as evidence of how wars actually work, as the first sign that the instrument of justice is not itself just. Frud is a footnote. The Shahnameh refuses to let the footnote disappear.",
+      "summary_fa": "فرود در روزهای اولِ جنگ کشته می‌شود. پسرِ سیاوش است، به ایران وفادار، تصادفاً به دستِ سردارِ بی‌توجه به دستورات کشته‌شده. شاهنامه مرگش را به تراژدیِ بزرگی تبدیل نمی‌کند — دقیقاً آنجایی می‌گذارد که متعلق است.",
+      "image": null, "unlock_via": "scene:tus-kills-frud"
+    },
+    {
+      "id": "champion-contest-logic",
+      "category": "concept",
+      "title_en": "The Logic of the Twelve-Champion Contest",
+      "title_fa": "منطقِ رقابتِ دوازده قهرمان",
+      "summary_en": "The twelve-champion contest is an old Iranian military tradition: when two armies have fought to exhaustion, they can agree to settle part of the war through representative combat rather than mass slaughter. The Shahnameh presents this tradition without irony — it is simply a more economical form of the same information that a larger battle would produce, but at lower cost. The Turanian army loses the contest. What it loses along with it is harder to describe: the confidence that comes from believing your twelve best fighters are better than the other side's twelve. After the contest, Turan knows something about the war that it would rather not know.",
+      "summary_fa": "رقابتِ دوازده قهرمان سنتِ نظامیِ کهنِ ایرانی است: وقتی دو سپاه تا خستگی جنگیده‌اند، می‌توانند توافق کنند بخشی از جنگ را از طریقِ نبردِ نماینده به جای قتلِ عامِ عمومی حل کنند.",
+      "image": null, "unlock_via": "scene:twelve-champions"
+    },
+    {
+      "id": "piran-paradox",
+      "category": "person",
+      "title_en": "The Piran Paradox",
+      "title_fa": "پارادوکسِ پیران",
+      "summary_en": "Piran Wiseh tried to save Siavash and failed. He then served Afrasiab faithfully in the wars that followed Siavash's death — wars that were, at their root, a consequence of Siavash's death, which Piran had tried to prevent. He fought against the Iran that avenged Siavash. He is both the most sympathetic figure in Turan and the most tragic: a man of genuine honour who spent his life in service of a cause that his own honour had already invalidated. The Shahnameh gives him a worthy death. It is the least it could do.",
+      "summary_fa": "پیرانِ ویسه سعی کرد سیاوش را نجات دهد و شکست خورد. بعد صادقانه خدمتِ افراسیاب کرد در جنگ‌هایی که در اصل پیامدِ مرگِ سیاوش بودند که پیران سعی کرده بود جلویش را بگیرد. هم همدردانه‌ترین چهره‌ی توران است هم تراژیک‌ترین.",
+      "image": null, "unlock_via": "scene:gudarz-piran"
+    },
+    {
+      "id": "gudarz-cost",
+      "category": "concept",
+      "title_en": "What Gudarz Paid",
+      "title_fa": "آنچه گودرز پرداخت",
+      "summary_en": "Gudarz kills Piran Wiseh in single combat and survives the war. The Shahnameh does not describe what this costs him — it does not need to. He is the father of Giv, who spent seven years finding Kay Khosrow. He is the grandfather of Bijan, who spent three years in a pit. He has fought in the Iran-Turan wars across three generations of his own family. He kills Piran, who is the most respected enemy he has ever faced. The Shahnameh does not report his feelings about this. It reports that he survived, which is not the same thing as saying he was undamaged.",
+      "summary_fa": "گودرز پیران را در نبردِ تن‌به‌تن می‌کشد و از جنگ زنده جان سالم به در می‌برد. شاهنامه توصیف نمی‌کند این چه هزینه‌ای دارد. احساساتش را گزارش نمی‌کند. گزارش می‌کند که زنده ماند، که با آسیب‌ندیدن یکسان نیست.",
+      "image": null, "unlock_via": "scene:gudarz-piran"
+    },
+    {
+      "id": "end-of-the-wars",
+      "category": "event",
+      "title_en": "The End of the Wars",
+      "title_fa": "پایانِ جنگ‌ها",
+      "summary_en": "The Iran-Turan wars begin in the Nozar chapter with Afrasiab's first crossing of the Oxus and end here, at the lake, with his execution. Between those two events, the chronicle contains the entire middle section of the Shahnameh: Siavash, Rostam's greatest trials, the Akvan Div, Bijan and Manijeh, the twelve champions, Piran's fall. The wars are the structure that holds the middle Shahnameh together. Their ending is not a triumph — it is an emptying. The chronicle pauses after the lake scene, as if asking: after a century of war, what does peace ask of the people who built themselves around fighting it?",
+      "summary_fa": "جنگ‌های ایران-توران در فصلِ نوذر با اولین عبورِ افراسیاب از جیحون شروع می‌شوند و اینجا، کنارِ دریاچه، با اعدامش تمام می‌شوند. جنگ‌ها ساختاری هستند که بخشِ میانیِ شاهنامه را نگه می‌دارند. پایانشان پیروزی نیست — تهی شدن است.",
+      "image": null, "unlock_via": "scene:afrasiab-cornered"
+    },
+    {
+      "id": "what-peace-demands",
+      "category": "concept",
+      "title_en": "What Peace Demands",
+      "title_fa": "آنچه صلح می‌طلبد",
+      "summary_en": "The great paladins who fought the Iran-Turan war — Gudarz, Tus, Giv, Rostam — were formed by it. The war gave their lives purpose, structure, and identity. Its end leaves them in a kingdom that no longer needs them for the thing they were built to do. Kay Khosrow understood this, which is part of why he left rather than staying to rule a peace that his paladins would find insufficient. The Shahnameh does not frame this as a problem to be solved. It frames it as a condition: after the great wars, the people who won them must find a different reason to be.",
+      "summary_fa": "پهلوانانِ بزرگی که در جنگِ ایران-توران جنگیدند — گودرز، طوس، گیو، رستم — با آن شکل گرفتند. جنگ به زندگی‌شان هدف، ساختار، و هویت داد. پایانش آن‌ها را در پادشاهی‌ای می‌گذارد که دیگر برای کاری که برای آن ساخته شدند نیازشان ندارد.",
+      "image": null, "unlock_via": "scene:afrasiab-cornered"
+    }
+  ]
+}

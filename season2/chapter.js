@@ -593,11 +593,17 @@
       const tp = progress.quiz[activeTier];
       const qs = tierQs[activeTier];
 
-      /* Tier mastered screen (no replay) */
+      /* Tier results screen */
       if (tp.done) {
         if (activeTier === "easy") { grantQuizRewards(lore); paintBattle(lore); }
-        /* Catch-up farr grant for tiers already done before this was implemented */
-        grantTierFarr(activeTier);
+
+        const nCorrect = (tp.correct || []).filter(id => qs.some(q => q.id === id)).length;
+        const total    = qs.length;
+        /* Backward-compat: old saves where all answered correctly also count as passed */
+        const passed   = tp.passed !== undefined ? tp.passed : (nCorrect / Math.max(total, 1) >= 0.6);
+
+        /* Grant farr only on pass */
+        if (passed) grantTierFarr(activeTier);
 
         const totalReward = qs.reduce((acc, q) => {
           acc.xp   += (q.reward && q.reward.xp)   || 0;
@@ -605,24 +611,33 @@
           return acc;
         }, { xp: 0, real: 0 });
 
-        const nextTier = activeTier === "easy" ? "medium" : activeTier === "medium" ? "hard" : null;
+        const nextTier  = activeTier === "easy" ? "medium" : activeTier === "medium" ? "hard" : null;
         const nextAvail = nextTier && !progress.quiz[nextTier].done && !progress.quiz[nextTier].locked && tierQs[nextTier].length;
 
         host.innerHTML = `
           ${tierTabsHTML()}
-          <div class="quiz-complete">
-            <div class="badge">${TIER_ICONS[activeTier]}</div>
-            <h3>${escapeHtml(tr(TIER_LABEL_KEY[activeTier]))} — ${escapeHtml(tr("quiz_tier_mastered"))}</h3>
-            <p>${escapeHtml(tr("quiz_complete_line", { n: fmtNum(qs.length) }))}</p>
-            <div class="quiz-rewards">
+          <div class="quiz-complete ${passed ? "quiz-result-pass" : "quiz-result-fail"}">
+            <div class="quiz-score-ring">
+              <span class="qsr-num">${fmtNum(nCorrect)}</span>
+              <span class="qsr-sep">/</span>
+              <span class="qsr-total">${fmtNum(total)}</span>
+            </div>
+            <div class="quiz-verdict ${passed ? "qv-pass" : "qv-fail"}">
+              ${escapeHtml(passed ? tr("quiz_passed") : tr("quiz_failed"))}
+            </div>
+            <div class="quiz-rewards" style="margin-top:10px;">
               ${totalReward.xp   ? `<span class="reward-pill">${escapeHtml(tr("quiz_xp_earned", { xp: fmtNum(totalReward.xp) }))}</span>` : ""}
               ${totalReward.real ? `<span class="reward-pill">+${fmtNum(totalReward.real)} REAL</span>` : ""}
             </div>
-            ${nextAvail ? `
-              <button class="primary-btn btn-block" data-next-tier="${nextTier}" style="margin-top:12px;">
+            ${nextAvail && passed ? `
+              <button class="primary-btn btn-block" data-next-tier="${nextTier}" style="margin-top:14px;">
                 ${escapeHtml(tr("quiz_start_next_tier", { tier: tr(TIER_LABEL_KEY[nextTier]) }))}
               </button>` : ""}
-            ${activeTier === "easy" ? `
+            ${!passed ? `
+              <button class="ghost-btn btn-block quiz-retry-btn" style="margin-top:14px;">
+                ${escapeHtml(tr("quiz_retry_btn"))}
+              </button>` : ""}
+            ${activeTier === "easy" && passed ? `
               <a href="learn.html" class="ghost-btn btn-block"
                  style="margin-top:8px;display:flex;align-items:center;justify-content:center;text-decoration:none;">
                 ${escapeHtml(tr("quiz_return_journey"))}
@@ -634,6 +649,13 @@
         if (nextBtn) nextBtn.addEventListener("click", () => {
           activeTier = nextBtn.getAttribute("data-next-tier");
           host.dataset.activeTier = activeTier;
+          syncProgEl();
+          render();
+        });
+        const retryBtn = $(".quiz-retry-btn", host);
+        if (retryBtn) retryBtn.addEventListener("click", () => {
+          progress.quiz[activeTier] = { idx: 0, correct: [], wrong: [], done: false, locked: activeTier !== "easy" };
+          saveProgress();
           syncProgEl();
           render();
         });
@@ -678,14 +700,16 @@
 
       $$(".quiz-opt", host).forEach(btn => {
         btn.addEventListener("click", () => {
+          /* Prevent double-answer */
+          $$(".quiz-opt", host).forEach(b => { b.disabled = true; });
+
           const picked  = parseInt(btn.getAttribute("data-opt"), 10);
           const correct = picked === q.correct_answer;
+
           if (correct) {
-            btn.classList.add("correct");
             tp.correct = Array.from(new Set([...(tp.correct || []), q.id]));
-            saveProgress();
             haptic("success");
-            // Grant per-question XP + REAL (idempotent via grant key)
+            /* Grant per-question rewards (idempotent) */
             const qGrantKey = `real_quiz_q_granted_${SLUG}_${q.id}`;
             if (localStorage.getItem(qGrantKey) !== "1") {
               if (xpVal && window.RealPlayer)   window.RealPlayer.addResource("xp",  xpVal);
@@ -693,43 +717,36 @@
               try { localStorage.setItem(qGrantKey, "1"); } catch {}
               try { window.dispatchEvent(new CustomEvent("balanceUpdate")); } catch {}
             }
-            const ex = document.createElement("div");
-            ex.className = "quiz-explain";
-            ex.innerHTML = `<span class="qx-mark">✓</span><span>${escapeHtml(explanation)}</span>`;
-            host.appendChild(ex);
-            setTimeout(() => {
-              const next = (tp.idx || 0) + 1;
-              if (next >= qs.length) {
-                tp.done = true;
-                tp.idx  = next;
-                saveProgress();
-                try { localStorage.setItem(`real_quiz_${SLUG}_${activeTier}`, "passed"); } catch {}
-                if (activeTier === "easy") {
-                  grantQuizRewards(lore);
-                  if (progress.quiz.medium) progress.quiz.medium.locked = false;
-                  saveProgress();
-                  paintBattle(lore);
-                } else if (activeTier === "medium") {
-                  if (progress.quiz.hard) progress.quiz.hard.locked = false;
-                  saveProgress();
-                }
-                /* Grant tier-based farr after any tier completes */
-                grantTierFarr(activeTier);
-                if (progEl) progEl.textContent = `${fmtNum(qs.length)} / ${fmtNum(qs.length)}`;
-              } else {
-                tp.idx = next;
-                saveProgress();
-                if (progEl) progEl.textContent = `${fmtNum((tp.correct || []).length)} / ${fmtNum(qs.length)}`;
-              }
-              render();
-            }, 1100);
           } else {
-            btn.classList.add("wrong");
             tp.wrong = Array.from(new Set([...(tp.wrong || []), q.id]));
-            saveProgress();
             haptic("warning");
-            setTimeout(() => btn.classList.remove("wrong"), 600);
           }
+
+          /* Always advance — no per-answer colour feedback */
+          const next = (tp.idx || 0) + 1;
+          if (next >= qs.length) {
+            tp.done  = true;
+            tp.idx   = next;
+            const nC = (tp.correct || []).filter(id => qs.some(x => x.id === id)).length;
+            tp.passed = nC / qs.length >= 0.6;
+            saveProgress();
+            try { localStorage.setItem(`real_quiz_${SLUG}_${activeTier}`, tp.passed ? "passed" : "attempted"); } catch {}
+            if (activeTier === "easy") {
+              grantQuizRewards(lore);
+              if (progress.quiz.medium) progress.quiz.medium.locked = false;
+              saveProgress();
+              paintBattle(lore);
+            } else if (activeTier === "medium") {
+              if (progress.quiz.hard) progress.quiz.hard.locked = false;
+              saveProgress();
+            }
+            if (progEl) progEl.textContent = `${fmtNum(next)} / ${fmtNum(qs.length)}`;
+          } else {
+            tp.idx = next;
+            saveProgress();
+            if (progEl) progEl.textContent = `${fmtNum(next)} / ${fmtNum(qs.length)}`;
+          }
+          render();
         });
       });
     };

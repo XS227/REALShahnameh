@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-31T00:00:00Z",
+  "chapter_slug": "lohrasp",
+  "chapter_id": 20,
+  "era": {
+    "label_en": "~2840–2790 BC — The King Nobody Expected",
+    "label_fa": "~۲۸۴۰–۲۷۹۰ پ.م — شاهی که کسی انتظارش نداشت"
+  },
+  "lore_summary": {
+    "en": "Kay Khosrow, at the moment of his departure, passes the crown to Lohrasp — not to Tus, not to Fariborz, not to any of the famous paladins who had fought the great war. The court's reaction is open unhappiness. Who is Lohrasp? He is not celebrated. He has no great battle to his name. Kay Khosrow's answer is indirect but precise: he chose the man who wanted the throne least and was most prepared to hold it responsibly. Lohrasp reigns with the particular virtue of unglamorous competence. No great wars. No demons. No sky-machines. He administers. He keeps the borders. The Shahnameh does not dwell on his reign because there is nothing dramatic to report — which is, the chronicle implies, the correct condition for a kingdom. When his son Goshtasp grows up arrogant and flees abroad in wounded pride, Lohrasp lets him go. When Goshtasp returns with a foreign wife, Lohrasp yields the throne. His own end comes when the Hephthalites invade: the old king refuses to flee and dies defending the fire temple. The Shahnameh records his death with the word for a man who died exactly as he lived.",
+    "fa": "کی‌خسرو در لحظه‌ی ترکش تاج را به لهراسپ می‌دهد — نه به طوس، نه به فریبرز، نه به هیچ‌یک از پهلوانانِ مشهوری که در جنگِ بزرگ جنگیدند. واکنشِ دربار ناراحتیِ آشکار است. لهراسپ کیست؟ مشهور نیست. نبردِ بزرگی به نامش نیست. لهراسپ با فضیلتِ خاصِ شایستگیِ غیرجذاب حکومت می‌کند. بدونِ جنگ، بدونِ دیو. اداره می‌کند. مرزها را نگه می‌دارد. پایانش می‌رسد وقتی هیاطله حمله می‌کنند: شاهِ پیر از فرار رد می‌کند و دفاع از آتشکده می‌میرد."
+  },
+  "timeline": [
+    {
+      "id": "unexpected-choice",
+      "year_label_en": "~2840 BC", "year_label_fa": "~۲۸۴۰ پ.م",
+      "title_en": "The Unexpected Choice", "title_fa": "انتخابِ غیرمنتظره",
+      "body_en": "Kay Khosrow distributes the kingdom and names Lohrasp as his successor. The court expected Tus, Fariborz, or one of the great paladin families. The announcement is met with open discontent.",
+      "body_fa": "کی‌خسرو پادشاهی را تقسیم می‌کند و لهراسپ را جانشینش نام می‌برد. دربار انتظارِ طوس، فریبرز، یا یکی از خانواده‌های بزرگِ پهلوانی داشت. اعلام با نارضایتیِ آشکار مواجه می‌شود.",
+      "image": null, "side": "neutral"
+    },
+    {
+      "id": "quiet-reign",
+      "year_label_en": "~2840–2810 BC", "year_label_fa": "~۲۸۴۰–۲۸۱۰ پ.م",
+      "title_en": "The Quiet Reign", "title_fa": "سلطنتِ آرام",
+      "body_en": "Lohrasp rules without great wars or dramatic events. He administers, holds borders, settles disputes. The Shahnameh gives his reign little space, which is the chronicle's compliment: there is nothing dramatic to report because the kingdom is well-governed.",
+      "body_fa": "لهراسپ بدونِ جنگ‌های بزرگ یا رویدادهای دراماتیک حکومت می‌کند. اداره می‌کند، مرزها را نگه می‌دارد، اختلافات را حل می‌کند. شاهنامه به سلطنتش کمِ فضا می‌دهد — تعریفِ شاهنامه: چیزِ دراماتیکی گزارش نیست چون پادشاهی خوب اداره می‌شود.",
+      "image": null, "side": "light"
+    },
+    {
+      "id": "goshtasp-returns",
+      "year_label_en": "~2810 BC", "year_label_fa": "~۲۸۱۰ پ.م",
+      "title_en": "Goshtasp Returns", "title_fa": "گشتاسپ برمی‌گردد",
+      "body_en": "Lohrasp's son Goshtasp had fled abroad in wounded pride — passed over for something, resentful of his father's unspectacular rule. He returns with a foreign wife (Ketayun, daughter of the Roman emperor) and tested ambition. Lohrasp yields the throne without struggle.",
+      "body_fa": "پسرِ لهراسپ، گشتاسپ، با غرورِ زخم‌خورده به خارج فرار کرده بود. با همسرِ خارجی (کتایون، دخترِ امپراتورِ روم) و جاه‌طلبیِ آزموده برمی‌گردد. لهراسپ بدونِ مبارزه تخت را واگذار می‌کند.",
+      "image": null, "side": "neutral"
+    },
+    {
+      "id": "death-at-fire-temple",
+      "year_label_en": "~2790 BC", "year_label_fa": "~۲۷۹۰ پ.م",
+      "title_en": "Death at the Fire Temple", "title_fa": "مرگ در آتشکده",
+      "body_en": "When Arjasp leads the Hephthalite invasion, the old Lohrasp is offered escape. He refuses. He dies defending the fire temple of Balkh. The Shahnameh uses the word for a man who died exactly as he had lived: holding something important because it was worth holding.",
+      "body_fa": "وقتی ارجاسپ هجومِ هیاطله را رهبری می‌کند، به لهراسپِ پیر فرار پیشنهاد می‌شود. رد می‌کند. دفاع از آتشکده‌ی بلخ می‌میرد. شاهنامه کلمه‌ی مردی را استفاده می‌کند که دقیقاً آنطور که زیسته مرد.",
+      "image": null, "side": "light"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "court-unhappy",
+      "order": 1,
+      "title_en": "Why the Court Was Unhappy", "title_fa": "چرا دربار ناراضی بود",
+      "era_en": "~2840 BC", "era_fa": "~۲۸۴۰ پ.م",
+      "body_en": "When Kay Khosrow announced Lohrasp as his successor, the court's unhappiness was not petty. The paladins who had fought the great Iran-Turan war — Tus, Gudarz's family, Fariborz — had reasonable expectations. They had spent decades in the field. They had won. The successor to Kay Khosrow should, by any conventional logic, come from among the people who had made his reign possible. Lohrasp was not one of them. He was a court official of no particular military distinction. He had served faithfully in roles that did not produce famous names. The case against him was exactly the case that Tus and Fariborz made openly in the court: he had not earned it by the measure that the great war had established as the measure. Kay Khosrow's response was not a defense of Lohrasp's military record. He did not say Lohrasp was a great warrior. He said: what the kingdom needs now is not the man who won the war. What it needs is the man who can hold what was won without being corrupted by holding it.",
+      "body_fa": "وقتی کی‌خسرو لهراسپ را جانشینش اعلام کرد، ناراحتیِ دربار پیش‌پا‌افتاده نبود. پهلوانانی که در جنگِ بزرگ جنگیده بودند توقعاتِ معقولی داشتند. لهراسپ یکی از آن‌ها نبود. یک مأمورِ دربار بود بدونِ تمایزِ نظامیِ خاصی. طوس و فریبرز آشکارا در دربار ادعا کردند: با معیارِ جنگ استحقاقش را ثابت نکرده. پاسخِ کی‌خسرو دفاع از سابقه‌ی نظامیِ لهراسپ نبود. گفت: آنچه پادشاهی الان نیاز دارد مردِ برنده‌ی جنگ نیست. مردی که می‌تواند آنچه برنده شده را بدونِ فساد نگه دارد.",
+      "atmosphere": "court",
+      "image": "/season2/uploads/chapters/lohrasp.png",
+      "reward": { "xp": 65 },
+      "unlocks_codex": ["why-lohrasp"]
+    },
+    {
+      "id": "what-lohrasp-did",
+      "order": 2,
+      "title_en": "What an Unglamorous Reign Looks Like", "title_fa": "سلطنتِ غیرجذاب چه شکلی است",
+      "era_en": "~2840–2810 BC", "era_fa": "~۲۸۴۰–۲۸۱۰ پ.م",
+      "body_en": "Lohrasp reigned for decades without the chronicle dwelling on it. This is unusual in the Shahnameh, which normally has something dramatic to report about every king — a reckless invasion, a demon encounter, a treachery, a great battle. With Lohrasp there is not much of this. The borders held. The disputes were settled. The court functioned. He did not fly to the sky or invade demon-territory or refuse medicine to dying sons. He administered the kingdom with the particular attention of a man who understood that administration is governance and governance is what kingdoms are actually for. The Shahnameh's brevity here is not dismissal. It is acknowledgment. There are no records of the things that did not happen because Lohrasp prevented them, no monuments to the disputes that were quietly settled rather than becoming wars, no chronicles of the decades of ordinary stability. But stability is what people live in. The Shahnameh is honest about this: a quiet reign is not a lesser reign. It is the right reign for a kingdom that has just finished the most destructive war in its history.",
+      "body_fa": "لهراسپ دهه‌ها حکومت کرد بدونِ اینکه شاهنامه روی آن درنگ کند. این در شاهنامه غیرمعمول است که معمولاً چیزِ دراماتیکی گزارش می‌کند. با لهراسپ زیادِ این نیست. مرزها نگه داشته شدند. اختلافات حل شدند. دربار کار کرد. اداره کرد با توجهِ خاصِ مردی که فهمید اداره حکومت‌داری است و حکومت‌داری آن چیزی است که پادشاهی‌ها واقعاً برایش هستند. اختصارِ شاهنامه اینجا نادیده‌گرفتن نیست. اعتراف است.",
+      "atmosphere": "court",
+      "image": null,
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["unglamorous-virtue", "what-stability-is"]
+    },
+    {
+      "id": "goshtasp-problem",
+      "order": 3,
+      "title_en": "The Son Who Left and Returned", "title_fa": "پسری که رفت و برگشت",
+      "era_en": "~2815–2810 BC", "era_fa": "~۲۸۱۵–۲۸۱۰ پ.م",
+      "body_en": "Goshtasp was Lohrasp's heir and a man whose relationship with his own dignity had never been easy. He had grown up in the shadow of a father who was not celebrated, in a court that still remembered the great paladins, and he had absorbed from this environment a sensitivity to slight that occasionally toppled into full crisis. The specific incident that drove him out of Iran is presented in the Shahnameh without extensive elaboration: he felt dishonored, which is a category of feeling that does not require large external causes, and he left. He went west, eventually to the Roman empire, where he had the adventures that the Shahnameh catalogs at length: disguised labor, a contest, a marriage to Ketayun, daughter of the emperor. He came back to Iran with a wife and a reputation and the particular authority of a man who has made himself from nothing in a foreign land. Lohrasp looked at his son and made the decision that the Shahnameh presents as, possibly, his finest: he gave him the throne. He did not struggle for it. He did not negotiate. He recognized that what Goshtasp had needed, all along, was not his father's defeat but his father's confidence. He gave the throne and returned to his worship of Ahura Mazda.",
+      "body_fa": "گشتاسپ وارثِ لهراسپ بود و مردی که رابطه‌اش با کرامتِ خودش هرگز آسان نبود. رابطه‌اش با احساسِ تحقیر گاهی به بحرانِ کامل می‌رسید. رفت — به غرب، به دربارِ روم. با همسر و شهرتِ مردی که در سرزمینِ بیگانه از هیچ چیز خودش را ساخته برگشت. لهراسپ به پسرش نگاه کرد و تصمیم گرفت: تخت را داد. مبارزه نکرد. آنچه گشتاسپ همیشه نیاز داشت اعتمادِ پدرش بود نه شکستِ او.",
+      "atmosphere": "court",
+      "image": null,
+      "reward": { "xp": 75 },
+      "unlocks_codex": ["goshtasp-wound", "the-yielded-throne"]
+    },
+    {
+      "id": "fire-temple-death",
+      "order": 4,
+      "title_en": "Holding the Fire Temple", "title_fa": "دفاع از آتشکده",
+      "era_en": "~2790 BC", "era_fa": "~۲۷۹۰ پ.م",
+      "body_en": "Arjasp, the Hephthalite king, launched his invasion of Iran with a force that the old defenses could not hold. He came for the fire temples — the sacred fires that Zoroaster had established in Goshtasp's reign, which Arjasp considered blasphemies. Lohrasp had yielded the throne to Goshtasp years before and had lived since then as a worshipper at the fire temple of Balkh, which was the oldest and most sacred of the Zoroastrian fires. When Arjasp's forces reached Balkh, the people of the city were told to flee. Lohrasp was told to flee. He refused. He stayed at the temple. He was old — old enough that no one would have blamed him for leaving. The Shahnameh does not record a speech. It records the action: he held the temple. He was killed there, by Arjasp's forces, defending the fire. The fire was extinguished when he fell. The Shahnameh notes this with characteristic restraint — a king who had lived his entire reign by the principle of holding what is worth holding died holding the most sacred thing he knew. The word used is not tragedy. It is completion.",
+      "body_fa": "ارجاسپ، شاهِ هیاطله، به ایران حمله کرد. برای آتشکده‌ها آمده بود. لهراسپ سال‌ها پیش تخت را به گشتاسپ داده بود و از آن زمان به عنوانِ پرستنده در آتشکده‌ی بلخ زندگی کرده بود. وقتی نیروهای ارجاسپ به بلخ رسیدند لهراسپ را گفتند فرار کند. رد کرد. ماند. کشته شد. آتش خاموش شد وقتی افتاد. شاهنامه با خودداریِ خاصش یادداشت می‌کند — شاهی که تمامِ سلطنتش را با اصلِ نگه داشتنِ آنچه ارزشِ نگه داشتن دارد زندگی کرد مقدس‌ترین چیزی را که می‌شناخت نگه داشت و مُرد.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["the-death-that-was-consistent", "fire-as-purpose"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "lohrasp",
+      "name_en": "Lohrasp", "name_fa": "لهراسپ",
+      "role_en": "The Unexpected King · The Humble Successor · The King Who Died Consistent",
+      "role_fa": "شاهِ غیرمنتظره · جانشینِ فروتن · شاهی که سازگار با زندگیش مُرد",
+      "rarity": "epic", "level_required": 1,
+      "lore_en": "Lohrasp is the Shahnameh's argument that greatness does not require spectacle. He is chosen by the wisest king in the chronicle specifically because he lacks the qualities that make kings famous in wars — and the chronicle does not disagree with this choice. He rules without incident for decades, yields the throne without struggle when his son returns, and dies holding the fire temple rather than flee. Each of these acts is consistent with a single principle: hold what is worth holding, yield what is worth yielding, and know the difference. The Shahnameh gives him a quiet reign because that is what he earned, and a notable death because that is what he deserved.",
+      "lore_fa": "لهراسپ استدلالِ شاهنامه است که عظمت نیازی به تماشایی بودن ندارد. توسطِ باهوش‌ترین شاهِ شاهنامه دقیقاً به این دلیل انتخاب می‌شود که فاقدِ کیفیاتی است که شاهان را در جنگ‌ها مشهور می‌کند. دهه‌ها بدونِ حادثه حکومت می‌کند، تخت را بدونِ مبارزه واگذار می‌کند، و از آتشکده فرار نمی‌کند.",
+      "image": "/season2/uploads/chapters/lohrasp.png",
+      "unlocked": true, "side": "light"
+    },
+    {
+      "slug": "goshtasp-son",
+      "name_en": "Goshtasp", "name_fa": "گشتاسپ",
+      "role_en": "Son of Lohrasp · The Wounded Prince · Future King and Prophet's Convert",
+      "role_fa": "پسرِ لهراسپ · شاهزاده‌ی زخم‌خورده · شاهِ آینده و مریدِ پیامبر",
+      "rarity": "epic", "level_required": 2,
+      "lore_en": "Goshtasp is a more complicated figure than his father. He leaves Iran from wounded pride, becomes a disguised laborer in the Roman court, wins a contest, and marries the emperor's daughter — an arc that would make him a hero in any other chronicle. He returns to Iran with achievement and is given the throne by his father. In the next chapter, he becomes the king who receives Zoroaster and converts Iran to the Zoroastrian faith. He is ambitious, capable, and occasionally reckless with the lives of those around him — a king more like Kay Kavus than like his own father, which makes the Shahnameh's arc from Lohrasp to Goshtasp one of its more ironic continuities.",
+      "lore_fa": "گشتاسپ از پدرش پیچیده‌تر است. با غرورِ زخم‌خورده ایران را ترک می‌کند، در دربارِ روم کارگرِ ناشناس می‌شود، رقابتی می‌برد، و دخترِ امپراتور را می‌گیرد. با موفقیت برمی‌گردد و از پدرش تخت می‌گیرد. در فصلِ بعدی شاهی می‌شود که زرتشت را می‌پذیرد.",
+      "image": null, "unlocked": false, "side": "neutral",
+      "unlock_via": "scene:goshtasp-problem"
+    }
+  ],
+  "places": [
+    {
+      "slug": "balkh-fire-temple",
+      "name_en": "The Fire Temple of Balkh",
+      "name_fa": "آتشکده‌ی بلخ",
+      "kind_en": "Where Lohrasp Died Consistent with His Life",
+      "kind_fa": "جایی که لهراسپ سازگار با زندگیش مُرد",
+      "summary_en": "The fire temple of Balkh is the oldest and most sacred of the Zoroastrian fires — the one that Goshtasp had established in the previous chapter's reign, the one that Arjasp came specifically to extinguish. Lohrasp had retired to it after yielding the throne. It was not a strategic position. It was a place of worship. He chose to defend it because it was worth defending, with the same logic that had governed every decision of his reign. The temple is not described in architectural detail. It is described by what was in it: the fire, and Lohrasp.",
+      "summary_fa": "آتشکده‌ی بلخ قدیمی‌ترین و مقدس‌ترینِ آتش‌های زرتشتی است. لهراسپ بعد از واگذاریِ تخت به آن بازنشسته شده بود. موقعیتِ استراتژیکی نبود. مکانِ پرستش بود. انتخاب کرد از آن دفاع کند چون ارزشِ دفاع داشت — با همان منطقی که هر تصمیمِ سلطنتش را هدایت کرده بود.",
+      "image": null, "unlocked": false, "unlock_via": "scene:fire-temple-death"
+    }
+  ],
+  "battle": {
+    "boss_slug": "arjasp-forces",
+    "boss_name_en": "Arjasp's Hephthalite Forces",
+    "boss_name_fa": "نیروهای هیاطله‌ی ارجاسپ",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Arjasp's forces are advancing on Balkh. To face this gate you must understand what Lohrasp was defending and why he refused to leave — and what the Shahnameh means when it calls a quiet reign the correct reign.",
+    "intro_fa": "نیروهای ارجاسپ به بلخ پیش می‌آیند. برای مواجهه باید بفهمی لهراسپ از چه دفاع می‌کرد و چرا رد کرد برود.",
+    "requirements": [
+      {
+        "id": "level", "kind": "level", "target": 76,
+        "label_en": "Reach LVL 76", "label_fa": "رسیدن به سطحِ ۷۶", "label_tg": "Расидан ба сатҳи 76",
+        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+      },
+      {
+        "id": "quiz", "kind": "quiz", "target": "lohrasp",
+        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "why-lohrasp",
+      "category": "concept",
+      "title_en": "Why Kay Khosrow Chose Lohrasp",
+      "title_fa": "چرا کی‌خسرو لهراسپ را انتخاب کرد",
+      "summary_en": "Kay Khosrow does not defend Lohrasp's military record because he cannot — Lohrasp has no great battle to his name. His defense of the choice is structural: the kingdom has just finished the most destructive war in its history. The paladins who won that war are men formed by it — Tus, Gudarz, Fariborz were made by the Iran-Turan wars. A king formed by war will govern in war's idiom. What the kingdom needs after the great war is a king who can govern in peace's idiom. Lohrasp is that king.",
+      "summary_fa": "کی‌خسرو از سابقه‌ی نظامیِ لهراسپ دفاع نمی‌کند چون نمی‌تواند. دفاعش از انتخاب ساختاری است: پادشاهی تازه ویرانگرترین جنگ در تاریخش را تمام کرده. شاهی که با جنگ شکل گرفته در اصطلاحِ جنگ حکومت خواهد کرد. آنچه بعد از جنگ نیاز است شاهی است که در اصطلاحِ صلح حکومت کند.",
+      "image": null, "unlock_via": "scene:court-unhappy"
+    },
+    {
+      "id": "unglamorous-virtue",
+      "category": "concept",
+      "title_en": "The Virtue of Unglamorous Competence",
+      "title_fa": "فضیلتِ شایستگیِ غیرجذاب",
+      "summary_en": "Lohrasp's reign produces no famous stories. This is, in the Shahnameh's economy, a significant observation. The chronicle is full of kings whose reigns produced famous stories — Kay Kavus's Mazandaran, Jamshid's glass throne, Zahhak's serpents. Famous stories are usually generated by extremes of behavior: recklessness, ambition, cruelty, or their opposites. Lohrasp's reign produces no famous stories because he governs without extremes. The Shahnameh credits this by not needing to record it dramatically — the absence of catastrophe is the evidence of competence.",
+      "summary_fa": "سلطنتِ لهراسپ داستان‌های مشهوری تولید نمی‌کند. در اقتصادِ شاهنامه این مشاهده‌ی مهمی است. شاهنامه پر از شاهانی است که سلطنتشان داستان‌های مشهور ساخت — هر کدام توسطِ افراطِ رفتاری ایجاد شدند. سلطنتِ لهراسپ بدونِ افراط است. عدمِ فاجعه شاهدِ شایستگی است.",
+      "image": null, "unlock_via": "scene:what-lohrasp-did"
+    },
+    {
+      "id": "what-stability-is",
+      "category": "concept",
+      "title_en": "What Stability Is",
+      "title_fa": "ثبات چیست",
+      "summary_en": "Stability is not the absence of activity — it is the condition under which ordinary life can proceed without interruption. Lohrasp's reign is stable not because nothing happens, but because the things that happen are handled before they become crises. The Shahnameh does not chronicle the disputes he settled, the border incidents he resolved, the court intrigues he defused. It simply notes that borders held and the kingdom functioned. This is the hardest kind of governance to describe because it produces nothing dramatic, and the hardest kind to appreciate because its success is measured by what did not happen.",
+      "summary_fa": "ثبات غیابِ فعالیت نیست — شرطی است که تحتِ آن زندگیِ عادی می‌تواند بدونِ وقفه پیش برود. شاهنامه اختلافاتی که حل کرد، حوادثِ مرزی که رفع کرد را روایت نمی‌کند. فقط یادداشت می‌کند مرزها نگه داشته شدند. این سخت‌ترین نوعِ حکومت‌داری برای توصیف است چون چیزِ دراماتیکی تولید نمی‌کند.",
+      "image": null, "unlock_via": "scene:what-lohrasp-did"
+    },
+    {
+      "id": "goshtasp-wound",
+      "category": "person",
+      "title_en": "Goshtasp's Wound",
+      "title_fa": "زخمِ گشتاسپ",
+      "summary_en": "Goshtasp's departure from Iran is driven by wounded pride — a sensitivity to slight that the Shahnameh does not explain but records as a fact of his character. He needed to be seen, to be recognized, to have his worth acknowledged by others. Growing up as the son of an uncelebrated king in a court that remembered great warriors, he absorbed a hunger for recognition that he could not satisfy at home. His adventures abroad are the Shahnameh's image of what happens when a man of genuine talent is forced to prove his worth outside the context where that worth should have been obvious.",
+      "summary_fa": "ترکِ ایران توسطِ گشتاسپ از غرورِ زخم‌خورده است — حساسیتی به اهانت که شاهنامه توضیح نمی‌دهد اما به عنوانِ واقعیتِ شخصیتش ثبت می‌کند. نیاز داشت دیده شود، شناخته شود. ماجراهایش در خارج تصویرِ شاهنامه است از آنچه اتفاق می‌افتد وقتی مرد با استعدادِ واقعی مجبور می‌شود ارزشش را خارج از زمینه‌ای ثابت کند.",
+      "image": null, "unlock_via": "scene:goshtasp-problem"
+    },
+    {
+      "id": "the-yielded-throne",
+      "category": "event",
+      "title_en": "The Throne That Was Yielded",
+      "title_fa": "تختی که واگذار شد",
+      "summary_en": "Lohrasp yields the throne to Goshtasp without struggle — without negotiating, demanding conditions, or extracting concessions. The Shahnameh presents this as consistent with everything else he did: he held what was worth holding and yielded what was worth yielding. The throne was worth holding while the kingdom needed what he was — an administering king, a post-war king, a patient king. When Goshtasp returned with the authority of foreign accomplishment and the desire to rule, the throne was no longer more valuable in Lohrasp's hands than in his son's. He gave it cleanly.",
+      "summary_fa": "لهراسپ تخت را به گشتاسپ بدونِ مبارزه واگذار می‌کند. شاهنامه این را سازگار با هر کارِ دیگری که کرد ارائه می‌دهد: نگه داشت آنچه ارزشِ نگه داشتن داشت و واگذار کرد آنچه ارزشِ واگذاری داشت.",
+      "image": null, "unlock_via": "scene:goshtasp-problem"
+    },
+    {
+      "id": "the-death-that-was-consistent",
+      "category": "concept",
+      "title_en": "The Death That Was Consistent",
+      "title_fa": "مرگی که سازگار بود",
+      "summary_en": "Lohrasp's death at the fire temple is the Shahnameh's final statement about him: he died consistent with everything he had done. He had spent his retirement in worship at the fire temple. He had held what he believed was worth holding — the Zoroastrian flame, the sacred fire — through every practical condition of his life. When Arjasp's army came and the fire was threatened, he did not recalculate. He held. The fire went out when he fell, which is the Shahnameh's image of what consistency looks like at its end: the thing you defended and the moment you stopped defending it are the same event.",
+      "summary_fa": "مرگِ لهراسپ در آتشکده آخرین اظهاریه‌ی شاهنامه درباره‌ی اوست: مُرد سازگار با همه چیزی که کرده بود. وقتی سپاهِ ارجاسپ آمد و آتش تهدید شد دوباره محاسبه نکرد. نگه داشت. آتش خاموش شد وقتی افتاد — تصویرِ شاهنامه از آنچه سازگاری در پایانش به نظر می‌رسد.",
+      "image": null, "unlock_via": "scene:fire-temple-death"
+    },
+    {
+      "id": "fire-as-purpose",
+      "category": "concept",
+      "title_en": "Fire as Purpose",
+      "title_fa": "آتش به عنوانِ هدف",
+      "summary_en": "The fire temple is Lohrasp's last home. He goes there not because it is safe — it is not — but because it is where his purpose lives. He had spent his reign holding the kingdom together without drama. He had spent his retirement holding the sacred fire without ceremony. Both are the same act at different scales: preserving something important because it is worth preserving, without requiring that the preservation be witnessed or celebrated. The fire going out when he falls is the Shahnameh's precise way of saying: he and his purpose were the same thing. When one ended, the other ended too.",
+      "summary_fa": "آتشکده آخرین خانه‌ی لهراسپ است. آنجا می‌رود نه چون امن است بلکه چون هدفش آنجاست. سلطنتش را صرفِ نگه داشتنِ پادشاهی کرده بود. بازنشستگی‌اش را صرفِ نگه داشتنِ آتشِ مقدس. هر دو یک عمل در مقیاس‌های مختلف هستند.",
+      "image": null, "unlock_via": "scene:fire-temple-death"
+    }
+  ]
+}

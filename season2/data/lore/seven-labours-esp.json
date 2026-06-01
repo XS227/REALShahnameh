@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-05-31T00:00:00Z",
+  "chapter_slug": "seven-labours-esp",
+  "chapter_id": 23,
+  "era": {
+    "label_en": "~2782 BC — The Seven Stages to the Brazen Fortress",
+    "label_fa": "~۲۷۸۲ پ.م — هفت مرحله به دژِ روئین"
+  },
+  "lore_summary": {
+    "en": "Arjasp has captured Goshtasp's daughters — Homay and Beh-Afarid — and holds them in the Brazen Fortress (Dez-e Ruin), a stronghold at the edge of the Hephthalite kingdom. To rescue them, Esfandiyar must travel through seven trials. Each is a station between Iran and the fortress, and each requires something different: strength, perception, faith, endurance. The seven labours are Esfandiyar's claim to stand beside Rostam — the only other figure who has completed such a sequence. They are also, the Shahnameh notes with quiet precision, completed in the service of a father who will then imprison him, deny him the throne, and eventually send him to die. The labours are real. The cause for which they are performed is flawed. The chronicle holds both facts simultaneously.",
+    "fa": "ارجاسپ دختراتِ گشتاسپ — هما و بهفرید — را گرفته و در دژِ روئین نگه می‌دارد. برای نجاتشان اسفندیار باید از هفت آزمون عبور کند. هر کدام ایستگاهی است میانِ ایران و قلعه. هفت خانِ اسفندیار ادعایِ او برای ایستادن در کنارِ رستم است — تنها چهره‌ی دیگری که چنین دنباله‌ای را کامل کرده."
+  },
+  "timeline": [
+    {
+      "id": "the-mission",
+      "year_label_en": "~2782 BC", "year_label_fa": "~۲۷۸۲ پ.م",
+      "title_en": "The Road to the Brazen Fortress", "title_fa": "جاده به دژِ روئین",
+      "body_en": "Goshtasp sends Esfandiyar east to rescue his sisters from Arjasp's stronghold. The road passes through seven dangers, each placed between Iran and the fortress like a gate that must be opened.",
+      "body_fa": "گشتاسپ اسفندیار را به شرق می‌فرستد تا خواهرانش را از قلعه‌ی ارجاسپ نجات دهد. جاده از هفت خطر می‌گذرد، هر کدام مثلِ دروازه‌ای که باید باز شود.",
+      "image": null, "side": "light"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "wolves-and-lions",
+      "order": 1,
+      "title_en": "The First and Second — Wolves and Lions", "title_fa": "خانِ اول و دوم — گرگان و شیران",
+      "era_en": "~2782 BC", "era_fa": "~۲۷۸۲ پ.م",
+      "body_en": "The first station placed two enormous wolves in the road — wolves the size of horses, which the Shahnameh understands as demon-touched rather than natural. Esfandiyar killed them from horseback without stopping. The second station was two lions whose size and ferocity matched the first — the Haft Khan always opens with creatures that test physical supremacy before testing anything more subtle. Esfandiyar killed them. He noted, continuing east, that the road's first two trials had been gifts: strength against strength, which is the test Esfandiyar is least likely to fail. The harder trials would come later.",
+      "body_fa": "ایستگاهِ اول دو گرگِ عظیم در جاده گذاشت — گرگانی به اندازه‌ی اسب. اسفندیار سواره کشتشان. ایستگاهِ دوم دو شیر بود. اسفندیار آن‌ها را هم کشت. هفت‌خان همیشه با موجوداتی که برتریِ جسمانی را آزمون می‌کنند باز می‌شود. آزمون‌های سخت‌تر بعد می‌آمدند.",
+      "atmosphere": "wild",
+      "image": "/season2/uploads/chapters/seven-labours-esp.png",
+      "reward": { "xp": 60 },
+      "unlocks_codex": ["haft-khan-compared"]
+    },
+    {
+      "id": "dragon",
+      "order": 2,
+      "title_en": "The Third — The Dragon", "title_fa": "خانِ سوم — اژدها",
+      "era_en": "~2782 BC", "era_fa": "~۲۷۸۲ پ.م",
+      "body_en": "The third trial was a dragon — the Shahnameh's standard for a creature of maximum danger that tests not just strength but strategy. The dragon was vast: Esfandiyar built a device of spiked wheels on his chariot and drove into the dragon's mouth. The spikes did what arrows could not. The dragon died on Esfandiyar's chariot blades. The Shahnameh notes that Esfandiyar's solution to the dragon is different from Rostam's approach to Div-e Sepid: Rostam fought the White Demon in direct combat, which required the specific kind of physical invulnerability only Rostam has. Esfandiyar used engineering. Both reached the same end. The difference reveals something about how each hero's mind works.",
+      "body_fa": "خانِ سوم اژدها بود. اسفندیار دستگاهِ چرخ‌های تیزی روی ارابه‌اش ساخت و به دهانِ اژدها راند. تیزی‌ها آنچه تیرها نمی‌توانستند کردند. شاهنامه یادداشت می‌کند راه‌حلِ اسفندیار برای اژدها با رویکردِ رستم به دیوِ سپید متفاوت است: رستم مستقیم جنگید، اسفندیار مهندسی کرد.",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": { "xp": 70 },
+      "unlocks_codex": ["engineering-vs-force"]
+    },
+    {
+      "id": "sorceress",
+      "order": 3,
+      "title_en": "The Fourth — The Sorceress", "title_fa": "خانِ چهارم — جادوگر",
+      "era_en": "~2782 BC", "era_fa": "~۲۷۸۲ پ.م",
+      "body_en": "The fourth trial was a sorceress who appeared as a beautiful young woman — the standard form of a demonic deception in the Shahnameh. She offered food, company, pleasantness. She was built to exploit the specific vulnerabilities of men after three stations of violence: exhaustion, loneliness, desire. Esfandiyar did not engage with what she offered. He spoke the name of Ahura Mazda. This is the Haft Khan's fourth-station lesson, the same lesson Rostam learned in his fourth labour with the sorceress he defeated: the protection against illusion-based evil is not perceptual skill but moral clarity. Call the true name and the false form dissolves.",
+      "body_fa": "خانِ چهارم جادوگری بود که به شکلِ زنِ زیبای جوانی ظاهر شد. غذا، همراهی، خوشی پیشنهاد داد. اسفندیار درگیرِ آنچه پیشنهاد می‌کرد نشد. نامِ اهورا مزدا را گفت. این درسِ ایستگاهِ چهارم است: حفاظت در برابرِ شرِ توهم‌محور وضوحِ اخلاقی است نه مهارتِ ادراکی.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 75 },
+      "unlocks_codex": ["the-name-of-truth"]
+    },
+    {
+      "id": "great-bird-snow",
+      "order": 4,
+      "title_en": "The Fifth and Sixth — The Great Bird and the Killing Cold", "title_fa": "خانِ پنجم و ششم — پرنده‌ی بزرگ و سرمایِ کُشنده",
+      "era_en": "~2782 BC", "era_fa": "~۲۷۸۲ پ.م",
+      "body_en": "The fifth trial was a Simorgh-like great bird — not the Simorgh of Zal's mountain, which is the world's memory, but a monstrous creature of the same form turned to predation. It dove on Esfandiyar with the speed of a storm. He took the full force of the dive on his brazen body, found his footing, and killed it. His body's invulnerability was, here, the specific answer: a creature whose weapon is speed and the force of the initial strike cannot win against a body that takes the strike without effect. The sixth trial was cold — a region of killing frost where the road became a white expanse that swallowed progress. Esfandiyar marched through it for three days. He did not pause. He did not build a camp and wait for better weather. He went through because going through was the only option that continued in the right direction.",
+      "body_fa": "خانِ پنجم پرنده‌ی بزرگِ مانندِ سیمرغی بود — نه سیمرغِ کوهِ زال بلکه موجودِ هیولایی همان شکل. اسفندیار تمامِ نیرویِ شیرجه را روی بدنِ روئینش گرفت و کشتش. خانِ ششم سرما بود — منطقه‌ای از یخبندانِ کُشنده. سه روز بدون مکث از آن عبور کرد.",
+      "atmosphere": "wild",
+      "image": null,
+      "reward": { "xp": 80 },
+      "unlocks_codex": ["the-invulnerability-used-right"]
+    },
+    {
+      "id": "brazen-fortress",
+      "order": 5,
+      "title_en": "The Seventh — The Brazen Fortress", "title_fa": "خانِ هفتم — دژِ روئین",
+      "era_en": "~2782 BC", "era_fa": "~۲۷۸۲ پ.م",
+      "body_en": "The seventh trial was not a creature or a natural obstacle — it was a fortress. The Brazen Fortress of Arjasp was a stronghold that could not be taken by direct assault. Esfandiyar solved this problem the way Rostam solved the Div-court of Mazandaran: in disguise. He presented himself at the fortress gates as a merchant with goods for sale. He was admitted. He moved through the fortress for two days, mapping its structure, identifying where his sisters were held, locating the guard posts. On the third day he acted. He killed Arjasp's key commanders, freed Homay and Beh-Afarid, and burned the fortress from inside. The seventh labour is, as in Rostam's Haft Khan, the demonstration that the sequence as a whole tested a single principle: there is no challenge the Haft Khan presents that the hero cannot meet if the hero is complete — physically, morally, strategically, and in faith.",
+      "body_fa": "خانِ هفتم موجود یا مانعِ طبیعی نبود — قلعه بود. دژِ روئینِ ارجاسپ قلعه‌ای بود که با حملهی مستقیم نمی‌شد گرفت. اسفندیار این مشکل را همان‌طور حل کرد که رستم دربارِ دیوانِ مازندران را حل کرد: با تغییرِ قیافه. به عنوانِ بازرگان معرفی شد. وارد شد. روزهایی گشت. روزِ سوم عمل کرد. فرماندهانِ کلیدیِ ارجاسپ را کشت، خواهران را آزاد کرد، قلعه را از داخل سوزاند.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": { "xp": 100 },
+      "unlocks_codex": ["haft-khan-purpose"]
+    }
+  ],
+  "characters": [
+    {
+      "slug": "homay-beh-afarid",
+      "name_en": "Homay and Beh-Afarid", "name_fa": "هما و بهفرید",
+      "role_en": "Goshtasp's Daughters · The Reason for the Seven Labours",
+      "role_fa": "دختراتِ گشتاسپ · دلیلِ هفت خانِ اسفندیار",
+      "rarity": "epic", "level_required": 2,
+      "lore_en": "Homay and Beh-Afarid are Goshtasp's daughters, captured by Arjasp as a political statement about the inadequacy of the Zoroastrian faith's protection. They are the specific destination of Esfandiyar's Seven Labours — the rescue mission gives the Haft Khan its purpose. The Shahnameh does not give them large speaking roles. They are the point toward which everything is aimed. Their rescue is the completion of a sequence, not the end of the story.",
+      "lore_fa": "هما و بهفرید دختراتِ گشتاسپ هستند که توسطِ ارجاسپ به عنوانِ اظهاریه‌ی سیاسی گرفته شدند. مقصدِ مشخصِ هفت خانِ اسفندیار هستند.",
+      "image": null, "unlocked": false, "side": "light",
+      "unlock_via": "scene:brazen-fortress"
+    }
+  ],
+  "places": [
+    {
+      "slug": "dez-e-ruin",
+      "name_en": "Dez-e Ruin — The Brazen Fortress",
+      "name_fa": "دژِ روئین",
+      "kind_en": "The Endpoint of the Seven Labours",
+      "kind_fa": "نقطه‌ی پایانِ هفت خان",
+      "summary_en": "The Brazen Fortress is the destination the Seven Labours are arranged to reach. Its name echoes Esfandiyar's own epithet — brazen-bodied, brazen fortress — which the Shahnameh uses to link the hero and his trial. The fortress cannot be taken by force but can be entered by a brazen-bodied man in disguise, which is precisely what Esfandiyar does. The symmetry is intentional.",
+      "summary_fa": "دژِ روئین مقصدی است که هفت خان برای رسیدن به آن ترتیب داده شده‌اند. نامش با لقبِ خودِ اسفندیار — رویین‌تن، دژِ روئین — طنین دارد.",
+      "image": null, "unlocked": false, "unlock_via": "scene:brazen-fortress"
+    }
+  ],
+  "battle": {
+    "boss_slug": "arjasp-fortress",
+    "boss_name_en": "The Brazen Fortress — Arjasp's Last Defense",
+    "boss_name_fa": "دژِ روئین — آخرین دفاعِ ارجاسپ",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "The fortress walls are before you. Esfandiyar got in through disguise and intelligence. To face this gate you must demonstrate you understand each of the Seven Labours — what each tested and what it taught.",
+    "intro_fa": "دیوارهای قلعه پیشِ رویت است. اسفندیار با تغییرِ قیافه و هوشمندی وارد شد. برای مواجهه باید نشان دهی هر کدام از هفت خان را می‌فهمی.",
+    "requirements": [
+      {
+        "id": "level", "kind": "level", "target": 88,
+        "label_en": "Reach LVL 88", "label_fa": "رسیدن به سطحِ ۸۸", "label_tg": "Расидан ба сатҳи 88",
+        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+      },
+      {
+        "id": "quiz", "kind": "quiz", "target": "seven-labours-esp",
+        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
+  "codex": [
+    {
+      "id": "haft-khan-compared",
+      "category": "concept",
+      "title_en": "Two Haft Khans — What They Share and What Differs",
+      "title_fa": "دو هفت‌خان — آنچه مشترکند و آنچه متفاوت",
+      "summary_en": "Rostam's Seven Labours and Esfandiyar's Seven Labours run in parallel in the Shahnameh. Both sequences move from physical trials (animals) toward tests of moral perception (sorcery) and end with the decisive confrontation the labours were preparing for. The differences reveal each hero's nature: Rostam's labours lead to restoring sight and rescuing a reckless king; Esfandiyar's lead to rescuing his sisters from a father's war. Rostam fights Div-e Sepid with his body; Esfandiyar defeats the dragon with a machine. Both complete their sequences perfectly. The Shahnameh places both sequences in the chronicle to establish that two men capable of completing the Haft Khan must eventually meet.",
+      "summary_fa": "هفت‌خانِ رستم و هفت‌خانِ اسفندیار به موازات در شاهنامه پیش می‌روند. هر دو از آزمون‌های جسمانی به سمتِ آزمون‌های ادراکِ اخلاقی حرکت می‌کنند. تفاوت‌ها ماهیتِ هر قهرمان را آشکار می‌کند.",
+      "image": null, "unlock_via": "scene:wolves-and-lions"
+    },
+    {
+      "id": "engineering-vs-force",
+      "category": "concept",
+      "title_en": "Engineering Versus Force",
+      "title_fa": "مهندسی در برابرِ نیرو",
+      "summary_en": "Esfandiyar's spiked chariot solution to the dragon is the Shahnameh's signal that he and Rostam solve problems differently. Rostam's approach tends toward direct application of superior force — he is stronger than everything he fights. Esfandiyar's brazen body cannot be harmed, but he does not rely on invulnerability alone: he builds tools that extend what he can do. This combination — unkillable plus strategic — is what makes him the specific challenge for Rostam later. Rostam has never faced someone he cannot physically harm.",
+      "summary_fa": "راه‌حلِ ارابه‌ی تیزِ اسفندیار برای اژدها سیگنالِ شاهنامه است که او و رستم مشکلات را متفاوت حل می‌کنند. رویکردِ رستم اعمالِ مستقیمِ نیروی برتر است. اسفندیار روی آسیب‌ناپذیری تنها تکیه نمی‌کند — ابزار می‌سازد.",
+      "image": null, "unlock_via": "scene:dragon"
+    },
+    {
+      "id": "the-name-of-truth",
+      "category": "concept",
+      "title_en": "The Name of Truth Against Illusion",
+      "title_fa": "نامِ حقیقت در برابرِ توهم",
+      "summary_en": "Both Rostam and Esfandiyar defeat their fourth-labour sorceresses by invoking truth — Rostam used the name of God, Esfandiyar used the name of Ahura Mazda. The principle is identical: illusion-based evil cannot survive genuine moral clarity. This is the Shahnameh's most consistent theological position across both the pre-Zoroastrian and Zoroastrian sections: truth is the active force, and speaking it dissolves what is false. The fourth labour is always the one that tests this.",
+      "summary_fa": "هم رستم و هم اسفندیار جادوگرانِ خانِ چهارمشان را با خواندنِ حقیقت شکست می‌دهند. اصل یکسان است: شرِ توهم‌محور در برابرِ وضوحِ اخلاقیِ واقعی دوام نمی‌آورد.",
+      "image": null, "unlock_via": "scene:sorceress"
+    },
+    {
+      "id": "the-invulnerability-used-right",
+      "category": "concept",
+      "title_en": "Invulnerability Used Correctly",
+      "title_fa": "استفاده‌ی درست از آسیب‌ناپذیری",
+      "summary_en": "The great bird's trial reveals what Esfandiyar's brazen body is for. Against a creature whose weapon is the force of its initial strike, invulnerability converts an instant death into a manageable fight. Esfandiyar lets the bird strike him, takes the full force without damage, and then attacks while the bird recovers from its own impact. The gift is not infinite — it only works in the specific situations where the threat is physical. Against the sorceress, against the cold, against Arjasp's fortress, the brazen body is irrelevant. Those trials require other things.",
+      "summary_fa": "آزمونِ پرنده‌ی بزرگ نشان می‌دهد بدنِ روئینِ اسفندیار برای چیست. در برابرِ موجودی که سلاحش نیروی اولیه‌ی شیرجه‌اش است، آسیب‌ناپذیری مرگِ فوری را به نبردِ قابلِ مدیریت تبدیل می‌کند.",
+      "image": null, "unlock_via": "scene:great-bird-snow"
+    },
+    {
+      "id": "haft-khan-purpose",
+      "category": "concept",
+      "title_en": "What the Haft Khan Is For",
+      "title_fa": "هفت‌خان برای چیست",
+      "summary_en": "The Haft Khan sequences in the Shahnameh are not adventure stories — they are calibrations. Each labour tests a different register of the hero's completeness: physical strength, endurance, strategic intelligence, moral clarity, faith, patience, and the ability to act with subtlety rather than force when subtlety is what the situation requires. A hero who can complete all seven is a hero without a gap — and a hero without a gap is a hero the world has nothing left to teach, which is why both Rostam and Esfandiyar complete their sequences and then face the hardest challenge the chronicle can provide: each other.",
+      "summary_fa": "دنباله‌های هفت‌خان در شاهنامه داستان‌های ماجراجویی نیستند — کالیبراسیون هستند. هر خان رجیسترِ متفاوتی از کمالِ قهرمان را آزمون می‌کند. قهرمانی که می‌تواند هر هفت را کامل کند قهرمانی است بدونِ شکاف.",
+      "image": null, "unlock_via": "scene:brazen-fortress"
+    }
+  ]
+}
