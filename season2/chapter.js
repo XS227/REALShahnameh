@@ -208,7 +208,7 @@
                ${styleAttr}>
         <div class="scene-num">${sceneNum}</div>
         <div class="scene-info">
-          <div class="era">${escapeHtml(pick(s, "era"))}</div>
+          <div class="era">🕰 ${escapeHtml(pick(s, "era"))}</div>
           <h4>${escapeHtml(pick(s, "title"))}</h4>
           <p>${escapeHtml(body)}</p>
         </div>
@@ -916,7 +916,7 @@
     const nextBtn = $("[data-scene-next]");
 
     const isFa = curLang() === "fa";
-    eraEl.textContent   = pick(s, "era");
+    eraEl.textContent   = "🕰 " + pick(s, "era");
     titleEl.textContent = isFa
       ? (s.title_fa || s.title_en || "")
       : (s.title_en || "");

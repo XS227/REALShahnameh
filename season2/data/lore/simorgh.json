@@ -1,7 +1,7 @@
 {
   "version": 1,
   "schema": "season2-lore@1",
-  "updatedAt": "2026-05-31T00:00:00Z",
+  "updatedAt": "2026-06-01T18:00:00Z",
   "chapter_slug": "simorgh",
   "chapter_id": 25,
   "era": {
@@ -15,102 +15,145 @@
   "timeline": [
     {
       "id": "zal-raised",
-      "year_label_en": "~3000 BC", "year_label_fa": "~۳۰۰۰ پ.م",
-      "title_en": "Zal on the Mountain", "title_fa": "زال روی کوه",
+      "year_label_en": "~3000 BC",
+      "year_label_fa": "~۳۰۰۰ پ.م",
+      "title_en": "Zal on the Mountain",
+      "title_fa": "زال روی کوه",
       "body_en": "Sam abandons his white-haired infant on Alborz. The Simorgh takes him to her nest. She raises him for years among her chicks. She returns him to Sam with the feather: burn it only in your greatest need.",
       "body_fa": "سام نوزادِ سفیدمویش را در البرز رها می‌کند. سیمرغ او را به آشیانه‌اش می‌برد. سال‌ها در میانِ جوجه‌هایش بزرگش می‌کند. با پر او را به سام برمی‌گرداند: تنها در بزرگترین نیازت بسوزانش.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "rostam-born",
-      "year_label_en": "~2950 BC", "year_label_fa": "~۲۹۵۰ پ.م",
-      "title_en": "Rostam's Birth", "title_fa": "تولدِ رستم",
+      "year_label_en": "~2950 BC",
+      "year_label_fa": "~۲۹۵۰ پ.م",
+      "title_en": "Rostam's Birth",
+      "title_fa": "تولدِ رستم",
       "body_en": "Zal burns the feather when Rudabeh's labour fails and the physicians are helpless. The Simorgh comes. She guides the caesarean. Rudabeh lives. Rostam is born. The feather is ash.",
       "body_fa": "زال پر را می‌سوزاند وقتی زایمانِ رودابه متوقف می‌شود. سیمرغ می‌آید. سزارین را راهنمایی می‌کند. رودابه زنده می‌ماند. رستم متولد می‌شود.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "esfandiyar-clash",
-      "year_label_en": "~2770 BC", "year_label_fa": "~۲۷۷۰ پ.م",
-      "title_en": "The Tamarisk Arrow", "title_fa": "تیرِ گز",
+      "year_label_en": "~2770 BC",
+      "year_label_fa": "~۲۷۷۰ پ.م",
+      "title_en": "The Tamarisk Arrow",
+      "title_fa": "تیرِ گز",
       "body_en": "Zal burns the feather for the last time. The Simorgh heals Rostam, grieves for Esfandiyar, and reveals the tamarisk tree. She tells Rostam what he must do and that he will be cursed for it. She departs. She does not return.",
       "body_fa": "زال پر را آخرین بار می‌سوزاند. سیمرغ رستم را درمان می‌کند، برای اسفندیار غم می‌خورد، و گزِ رودخانه را آشکار می‌کند. به رستم می‌گوید چه باید بکند و نفرین خواهد شد. می‌رود. برنمی‌گردد.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     }
   ],
   "scenes": [
     {
       "id": "what-she-is",
       "order": 1,
-      "title_en": "What the Simorgh Is", "title_fa": "سیمرغ چیست",
-      "era_en": "Timeless", "era_fa": "بی‌زمان",
+      "title_en": "What the Simorgh Is",
+      "title_fa": "سیمرغ چیست",
+      "era_en": "~3000 BC · Before and After All Ages",
+      "era_fa": "~۳۰۰۰ پ.م · پیش و پس از همه‌ی دوران‌ها",
       "body_en": "The Simorgh is not a bird. She has the form of a bird — vast wings, feathers the colour of the sun and the sea and the deepest fires, a size that makes mountains seem scale — but the Shahnameh does not describe her as a creature of the natural world. She nests on the world-tree Vourukasha on Alborz, which is itself not a natural mountain but the axis of the world. She has lived long enough to watch three cycles of the world's destruction and renewal. She is, in the most precise sense, the world's own memory — she has been present for everything that has happened, she has witnessed every injustice and every mercy, and she continues to witness, from her nest on the world's highest peak, everything that is still happening. She does not intervene in ordinary events. She does not save people who do not burn the feather. She is not a protector. She is a witness who occasionally, in the most precise moments of impossible need, chooses to act.",
       "body_fa": "سیمرغ پرنده نیست. شکلِ پرنده دارد اما شاهنامه او را موجودِ دنیایِ طبیعی توصیف نمی‌کند. روی درختِ جهانیِ ووروکاشا در البرز لانه دارد. به اندازه‌ای عمر کرده که سه دورِ نابودی و تجدیدِ دنیا را تماشا کند. دقیقاً خاطره‌ی خودِ دنیاست. مداخله‌ی معمولی نمی‌کند. شاهدی است که گهگاه، در دقیق‌ترین لحظاتِ نیازِ غیرممکن، انتخاب می‌کند عمل کند.",
       "atmosphere": "fated",
       "image": "/season2/uploads/chapters/simorgh.png",
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["simorgh-nature"]
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "simorgh-nature"
+      ]
     },
     {
       "id": "the-feather-across-time",
       "order": 2,
-      "title_en": "The Feather Across Three Generations", "title_fa": "پر در سه نسل",
-      "era_en": "~3000–2770 BC", "era_fa": "~۳۰۰۰–۲۷۷۰ پ.م",
+      "title_en": "The Feather Across Three Generations",
+      "title_fa": "پر در سه نسل",
+      "era_en": "~3000–2770 BC",
+      "era_fa": "~۳۰۰۰–۲۷۷۰ پ.م",
       "body_en": "When the Simorgh returned Zal to Sam, she gave him one feather and a promise: burn it only in your greatest need, and I will come. That feather was carried by Zal through every year of his life — through courtship, through marriage, through wars, through the decades of his son's campaigns. He burned it twice, both times for Rostam: once when Rostam was being born and Rudabeh was dying, once when Rostam had been wounded by Esfandiyar and the world stood at its most unresolvable juncture. Two burns, two feathers technically — or one promise fulfilled twice, by a creature for whom time works differently. The feather is the Shahnameh's most concentrated object: a promise made at the beginning of Rostam's family line that held through everything and was spent, finally, to give Rostam the tool he needed to commit the act he did not want to commit.",
       "body_fa": "وقتی سیمرغ زال را به سام برگرداند، یک پر داد. زال آن را سال‌های عمرش حمل کرد. دو بار سوزاند — هر بار برای رستم. اول وقتی رستم به دنیا می‌آمد. دوم وقتی رستم توسطِ اسفندیار زخمی شده بود. پر متمرکزترین شیءِ شاهنامه است: وعده‌ای در آغازِ خطِ خانوادگیِ رستم که از همه چیز عبور کرد.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 90 },
-      "unlocks_codex": ["the-feather-promise"]
+      "reward": {
+        "xp": 90
+      },
+      "unlocks_codex": [
+        "the-feather-promise"
+      ]
     },
     {
       "id": "three-interventions",
       "order": 3,
-      "title_en": "Three Interventions and What They Share", "title_fa": "سه مداخله و آنچه مشترک دارند",
-      "era_en": "~3000–2770 BC", "era_fa": "~۳۰۰۰–۲۷۷۰ پ.م",
+      "title_en": "Three Interventions and What They Share",
+      "title_fa": "سه مداخله و آنچه مشترک دارند",
+      "era_en": "~3000–2770 BC",
+      "era_fa": "~۳۰۰۰–۲۷۷۰ پ.م",
       "body_en": "The Simorgh's three decisive interventions — raising Zal, guiding Rostam's birth, giving the tamarisk counsel — share a structural feature: each one occurs at a moment when the world's narrative would stop without intervention. Zal abandoned on the mountain would have died; Rostam would never have been born; Rostam wounded beyond recovery would have died on the plain at Esfandiyar's hands or submitted to chains. In each case the Simorgh does not prevent the world's grief — Zal's childhood is still a childhood without a father, Rostam's birth is still preceded by Rudabeh's near-death, the tamarisk counsel still leads to Esfandiyar's death. She enables the continuation of the story but she does not remove the cost of the story. This is precise: the Simorgh is not a savior. She is the mechanism that keeps the chronicle moving when it would otherwise stop.",
       "body_fa": "سه مداخله‌ی قطعیِ سیمرغ ویژگیِ ساختاریِ مشترکی دارند: هر کدام در لحظه‌ای رخ می‌دهد که روایتِ دنیا بدونِ مداخله متوقف می‌شد. هیچ‌کدام از غم‌های دنیا جلوگیری نمی‌کند — فقط ادامه‌ی شاهنامه را ممکن می‌کند. سیمرغ نجات‌دهنده نیست. مکانیسمی است که شاهنامه را وقتی متوقف می‌شد ادامه می‌دهد.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["not-a-savior", "simorgh-and-zal"]
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "not-a-savior",
+        "simorgh-and-zal"
+      ]
     },
     {
       "id": "the-grief-of-witness",
       "order": 4,
-      "title_en": "The Grief of the Oldest Witness", "title_fa": "اندوهِ قدیمی‌ترین شاهد",
-      "era_en": "~2770 BC", "era_fa": "~۲۷۷۰ پ.م",
+      "title_en": "The Grief of the Oldest Witness",
+      "title_fa": "اندوهِ قدیمی‌ترین شاهد",
+      "era_en": "~2770 BC",
+      "era_fa": "~۲۷۷۰ پ.م",
       "body_en": "When the Simorgh comes for the last time — when Zal burns the feather on the eve of the Rostam-Esfandiyar clash — she heals both the champion and his horse and then she grieves. The Shahnameh records this specifically. She has seen three destructions of the world. She has watched every injustice the chronicle has described and every mercy. She knows what is about to happen: an innocent man is going to die, and the champion who loves him is going to have to kill him, and neither of them is wrong, and none of this can be stopped, because a frightened old king built a trap and these are the people in it. She tells Rostam what to do. She departs. The Shahnameh does not say she returns to her nest. It says she was not seen again after this departure, which is the chronicle's way of saying: this was the last thing the world's oldest memory could do for the line of Zal.",
       "body_fa": "وقتی سیمرغ آخرین بار می‌آید غم می‌خورد. شاهنامه این را به‌طورِ خاص ثبت می‌کند. سه نابودیِ دنیا را دیده. می‌داند چه می‌شود: مرد بی‌گناهی خواهد مرد، قهرمانِ دوست‌دارش ناچار خواهد بود بکشد. به رستم می‌گوید چه بکند. می‌رود. شاهنامه نمی‌گوید به آشیانه‌اش برمی‌گردد. می‌گوید بعد از این رفتن دیده نشد.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 110 },
-      "unlocks_codex": ["last-departure"]
+      "reward": {
+        "xp": 110
+      },
+      "unlocks_codex": [
+        "last-departure"
+      ]
     },
     {
       "id": "the-thirty-birds",
       "order": 5,
-      "title_en": "The Simorgh and the Thirty Birds", "title_fa": "سیمرغ و سی مرغ",
-      "era_en": "Timeless", "era_fa": "بی‌زمان",
+      "title_en": "The Simorgh and the Thirty Birds",
+      "title_fa": "سیمرغ و سی مرغ",
+      "era_en": "~2770 BC · End of the Shahnameh Age",
+      "era_fa": "~۲۷۷۰ پ.م · پایانِ دورانِ شاهنامه",
       "body_en": "The word Simorgh comes from the Persian 'si morgh' — thirty birds. In Attar of Nishapur's Conference of the Birds, written a century after Ferdowsi, thirty birds journey to find the Simorgh and discover, on arrival, that they are the Simorgh: the seeker and the sought are one. Ferdowsi wrote before Attar and uses the Simorgh differently — not as mystical destination but as active, grieving, intervening presence. But the name carries its meaning: she is not one thing but a gathering, not a single wisdom but the accumulated experience of everything that has ever witnessed anything. The Shahnameh's Simorgh is not the end of a journey. She is the beginning of every story in the chronicle that involves the line of Zal — and when she departs for the last time, that line's stories are ending.",
       "body_fa": "کلمه‌ی سیمرغ از فارسیِ «سی مرغ» می‌آید. در منطق‌الطیرِ عطار سی پرنده سفر می‌کنند تا سیمرغ را بیابند و درمی‌یابند که خودشان سیمرغند. فردوسی قبل از عطار نوشت و از سیمرغ متفاوت استفاده کرد — نه به عنوانِ مقصدِ عرفانی بلکه به عنوانِ حضورِ فعال، غمگین، مداخله‌گر.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 120 },
-      "unlocks_codex": ["thirty-birds-meaning"]
+      "reward": {
+        "xp": 120
+      },
+      "unlocks_codex": [
+        "thirty-birds-meaning"
+      ]
     }
   ],
   "characters": [
     {
       "slug": "simorgh-being",
-      "name_en": "The Simorgh", "name_fa": "سیمرغ",
+      "name_en": "The Simorgh",
+      "name_fa": "سیمرغ",
       "role_en": "The World's Memory · The Oldest Witness · The One Who Helped Anyway",
       "role_fa": "خاطره‌ی دنیا · قدیمی‌ترین شاهد · آن‌کسی که با وجود همه چیز کمک کرد",
-      "rarity": "mythic", "level_required": 1,
+      "rarity": "mythic",
+      "level_required": 1,
       "lore_en": "The Simorgh is the Shahnameh's most profound figure — more profound than any king or champion because she is the principle that makes them possible. She does not have ambition, fear, recklessness, or pride. She has only witness and grief and the occasional intervention at impossible moments. She watched the world before Keyumars was born and she was present at the three greatest moments in Zal's family: the founding of the line, the birth of Rostam, and the end of Rostam's undefeated era. When she departs after the tamarisk counsel, something the Shahnameh has never named directly goes with her. The reader feels it before they can say what it is.",
       "lore_fa": "سیمرغ عمیق‌ترین چهره‌ی شاهنامه است — عمیق‌تر از هر شاه یا قهرمانی چون اصلی است که آن‌ها را ممکن می‌کند. جاه‌طلبی، ترس، بی‌پروایی، یا غرور ندارد. فقط شهادت و اندوه و مداخله‌ی گاه‌گاه در لحظاتِ غیرممکن.",
       "image": "/season2/uploads/chapters/simorgh.png",
-      "unlocked": true, "side": "light"
+      "unlocked": true,
+      "side": "light"
     }
   ],
   "places": [
@@ -122,7 +165,8 @@
       "kind_fa": "جایی که سیمرغ تماشا می‌کند",
       "summary_en": "The Simorgh's nest on the world-tree Vourukasha on Alborz is the highest and oldest place in the Shahnameh's world. It appears twice in the chronicle: when Zal is raised there, and implicitly when the Simorgh departs after the tamarisk counsel. The mountain in the Shahnameh is where the chronicle deposits its mysteries — Zal raised by a bird, Kay Khosrow vanishing into the snowstorm. Alborz is not geography. It is the place where the world's ordinary rules stop applying.",
       "summary_fa": "آشیانه‌ی سیمرغ روی درختِ جهانیِ ووروکاشا در البرز بلندترین و کهن‌ترین مکانِ دنیایِ شاهنامه است. کوه در شاهنامه جغرافیا نیست. جایی است که قوانینِ عادیِ دنیا متوقف می‌شوند.",
-      "image": null, "unlocked": true
+      "image": null,
+      "unlocked": true
     }
   ],
   "battle": {
@@ -135,14 +179,26 @@
     "intro_fa": "سیمرغ آنچه می‌توانست داده. حالا تاریکی به هر حال می‌آید. برای مواجهه باید آنچه سیمرغ نشان می‌دهد نگه داری — شهادت بدونِ مداخله به عنوانِ عمیق‌ترین شکلِ رحمت.",
     "requirements": [
       {
-        "id": "level", "kind": "level", "target": 96,
-        "label_en": "Reach LVL 96", "label_fa": "رسیدن به سطحِ ۹۶", "label_tg": "Расидан ба сатҳи 96",
-        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+        "id": "level",
+        "kind": "level",
+        "target": 96,
+        "label_en": "Reach LVL 96",
+        "label_fa": "رسیدن به سطحِ ۹۶",
+        "label_tg": "Расидан ба сатҳи 96",
+        "hint_en": "Tap, complete quests, and claim daily rewards.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
+        "hint_tg": "Зарба занед."
       },
       {
-        "id": "quiz", "kind": "quiz", "target": "simorgh",
-        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
-        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "simorgh",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
       }
     ]
   },
@@ -154,7 +210,8 @@
       "title_fa": "سیمرغ چه نیست",
       "summary_en": "The Simorgh is not omnipotent. She does not prevent the Shahnameh's tragedies. She does not stop Siavash from dying, Sohrab from dying, or Esfandiyar from dying. She is present at several of these events — implicitly watching from her mountain — and she does nothing except what she is specifically called to do. She is not a savior because the Shahnameh does not depict a world in which its griefs can be prevented. She is a witness: the oldest, most complete, most compassionate witness the world contains, and occasionally the one who provides the minimum necessary for the story to continue.",
       "summary_fa": "سیمرغ قادرِ مطلق نیست. تراژدی‌های شاهنامه را جلوگیری نمی‌کند. نجات‌دهنده نیست چون شاهنامه دنیایی نشان نمی‌دهد که غم‌هایش قابلِ جلوگیری باشند.",
-      "image": null, "unlock_via": "scene:what-she-is"
+      "image": null,
+      "unlock_via": "scene:what-she-is"
     },
     {
       "id": "the-feather-promise",
@@ -163,7 +220,8 @@
       "title_fa": "پر — یک وعده، سه نسل",
       "summary_en": "The feather the Simorgh gave Zal when he descended from Alborz was a promise with no expiration date. It was carried through Zal's courtship of Rudabeh, through the establishment of Zabulestan, through Rostam's entire career — wars, labours, Sohrab, the Iran-Turan campaigns. Zal burned it twice: for Rostam's birth, for Rostam's survival against Esfandiyar. Both times the promise was kept. The second time, keeping it required the Simorgh to participate in an event she mourned. She kept it anyway. The feather is the Shahnameh's proof that some promises are made at a scale that exceeds the convenience of their fulfillment.",
       "summary_fa": "پری که سیمرغ به زال داد وقتی از البرز پایین آمد وعده‌ای بود بدونِ تاریخِ انقضا. زال دو بار سوزاندش. هر بار وعده نگه داشته شد. دومین بار، نگه داشتنِ آن مستلزم بود که سیمرغ در رویدادی شرکت کند که برایش عزاداری می‌کرد.",
-      "image": null, "unlock_via": "scene:the-feather-across-time"
+      "image": null,
+      "unlock_via": "scene:the-feather-across-time"
     },
     {
       "id": "not-a-savior",
@@ -172,7 +230,8 @@
       "title_fa": "نه نجات‌دهنده — ادامه",
       "summary_en": "The Simorgh's interventions always enable the story to continue but never make the story cost less. Zal was raised without a father — the Simorgh raised him, but she was not his father. Rostam was born — but the birth was preceded by Rudabeh's near-death. The tamarisk counsel gave Rostam the weapon he needed — but the weapon killed the most righteous man in the chronicle and cursed its maker. Each intervention pays the full price of the situation and then makes the next step possible. This is what the Shahnameh means when it shows the Simorgh grieving: she knows the price. She pays it anyway. Because the alternative is the story stopping.",
       "summary_fa": "مداخلاتِ سیمرغ همیشه ادامه‌ی داستان را ممکن می‌کنند اما هرگز هزینه‌اش را کمتر نمی‌کنند. هر مداخله قیمتِ کاملِ وضعیت را می‌پردازد و بعد قدمِ بعدی را ممکن می‌کند.",
-      "image": null, "unlock_via": "scene:three-interventions"
+      "image": null,
+      "unlock_via": "scene:three-interventions"
     },
     {
       "id": "simorgh-and-zal",
@@ -181,7 +240,8 @@
       "title_fa": "سیمرغ و زال — کهن‌ترین رابطه",
       "summary_en": "Zal is the Simorgh's human child — raised in her nest, fed by her, educated by her presence before he knew what education was. When he descends from the mountain and enters human society, she gives him the feather as both a tool and a goodbye: the tool for when the world exceeds what humans can handle alone, the goodbye because she is returning him to a life she cannot share. The Shahnameh's most affecting relationship is between a bird who is the world's memory and a white-haired abandoned child who grew up knowing he was loved by something ancient enough to be the mountain itself.",
       "summary_fa": "زال فرزندِ انسانیِ سیمرغ است — در آشیانه‌اش پرورش یافت. وقتی از کوه پایین می‌آید، پر را به عنوانِ ابزار و خداحافظی می‌دهد. عاطفه‌انگیزترین رابطه‌ی شاهنامه بینِ پرنده‌ای که خاطره‌ی دنیاست و کودکِ سفیدمویِ رهاشده‌ای است که با دانستنِ اینکه توسطِ چیزی به قدمتِ خودِ کوه دوست داشته شده بزرگ شد.",
-      "image": null, "unlock_via": "scene:three-interventions"
+      "image": null,
+      "unlock_via": "scene:three-interventions"
     },
     {
       "id": "last-departure",
@@ -190,7 +250,8 @@
       "title_fa": "آخرین رفتن",
       "summary_en": "The Shahnameh says the Simorgh was not seen again after leaving Rostam on the eve of the Esfandiyar clash. This is the chronicle's most understated ending for its most profound character. She does not die — she is older than death. She does not announce she is leaving permanently — she simply goes, and does not come back. The line of Zal's great stories — Rostam's seven labours, Sohrab, Esfandiyar — are ending. The feather is ash. The promise has been kept. The oldest witness returns to her mountain, and the Shahnameh continues without her.",
       "summary_fa": "شاهنامه می‌گوید سیمرغ بعد از رفتنِ از رستم دیده نشد. این ساکت‌ترین پایانِ شاهنامه برای عمیق‌ترین چهره‌اش است. نمی‌میرد — از مرگ کهن‌تر است. فقط می‌رود و برنمی‌گردد. قدیمی‌ترین شاهد به کوهش برمی‌گردد و شاهنامه بدونِ او ادامه می‌دهد.",
-      "image": null, "unlock_via": "scene:the-grief-of-witness"
+      "image": null,
+      "unlock_via": "scene:the-grief-of-witness"
     },
     {
       "id": "thirty-birds-meaning",
@@ -199,7 +260,8 @@
       "title_fa": "نام و بازتابش",
       "summary_en": "The Shahnameh's Simorgh and Attar's Simorgh are different but related: Ferdowsi uses her as an active, grieving, intervening presence in history; Attar uses her as the mystical destination of a soul's journey. What they share is the name's meaning — thirty birds, a gathering rather than a single thing — and the implication that what the Simorgh represents is not a specific being but a quality: the accumulated wisdom of everything that has ever been witnessed. The Shahnameh's Simorgh has witnessed more of the world's story than any character in it. Whether that makes her wiser or simply sadder is a question the chronicle does not answer.",
       "summary_fa": "سیمرغِ شاهنامه و سیمرغِ عطار متفاوتند اما مرتبط. فردوسی از او به عنوانِ حضورِ فعال، غمگین، مداخله‌گر در تاریخ استفاده می‌کند. عطار از او به عنوانِ مقصدِ عرفانیِ سفرِ روح. آنچه مشترکند معنایِ نام است — سی مرغ.",
-      "image": null, "unlock_via": "scene:the-thirty-birds"
+      "image": null,
+      "unlock_via": "scene:the-thirty-birds"
     }
   ]
 }
