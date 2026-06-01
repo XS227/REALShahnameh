@@ -853,6 +853,15 @@
       map_locked_region: "Барои кушодани ин минтақа, солноmaро идома деҳ.",
       map_heroes: "Қаҳрамонони марбут",
       map_significance: "Аҳамияти таърихӣ",
+      map_about: "Дар бораи ин минтақа",
+      map_locked_desc: "Бобро поён бурда ин минтақаро кушо.",
+      map_stat_regions: "Минтақаҳо",
+      map_stat_chapters: "Бобҳо",
+      map_stat_heroes: "Қаҳрамонони дида",
+      map_regions_lbl: "минтақа",
+      map_legend_unlocked: "Кушода",
+      map_legend_locked: "Қулфшуда",
+      map_legend_hint: "Минтақаро пахш кун",
 
       /* Timeline page */
       nav_timeline: "Солномаи қадим",

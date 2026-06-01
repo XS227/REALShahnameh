@@ -850,6 +850,15 @@
       map_locked_region: "Walk further into the chronicle to unlock this region.",
       map_heroes: "Connected Heroes",
       map_significance: "Historical Significance",
+      map_about: "About this region",
+      map_locked_desc: "Complete the chapter below to unlock this region.",
+      map_stat_regions: "Regions",
+      map_stat_chapters: "Chapters",
+      map_stat_heroes: "Heroes Seen",
+      map_regions_lbl: "regions",
+      map_legend_unlocked: "Unlocked",
+      map_legend_locked: "Locked",
+      map_legend_hint: "Tap a region to explore",
 
       /* Timeline page */
       nav_timeline: "Ancient Timeline",

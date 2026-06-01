@@ -7,52 +7,265 @@
   <title>Living Persia · REAL Shahnameh</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <link rel="stylesheet" href="style.css?v=202606012400" />
+  <style>
+    /* ── Map-page overrides (bigger nodes, better contrast) ── */
+
+    .map-canvas { min-height: 460px; }
+    .map-canvas-inner { height: 460px; }
+
+    /* Larger, more tappable region nodes */
+    .map-dot {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      margin: 0 auto 4px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .map-region.unlocked .map-dot {
+      background: var(--gold);
+      border: 2px solid rgba(244,197,107,.8);
+      box-shadow: 0 0 12px rgba(244,197,107,.5), 0 0 24px rgba(244,197,107,.2);
+    }
+    .map-region.locked .map-dot {
+      background: rgba(255,255,255,.1);
+      border: 2px solid rgba(255,255,255,.2);
+    }
+    .map-region.legendary .map-dot {
+      width: 22px; height: 22px;
+      background: linear-gradient(135deg, var(--gold), var(--ember));
+      border: 2.5px solid rgba(244,197,107,.9);
+      box-shadow: 0 0 18px rgba(244,197,107,.65), 0 0 36px rgba(244,197,107,.25);
+    }
+    .map-region.mountain .map-dot {
+      width: 18px; height: 18px;
+      background: rgba(140,109,255,.55);
+      border: 2px solid rgba(140,109,255,.8);
+      box-shadow: 0 0 12px rgba(140,109,255,.45);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      border-radius: 0;
+    }
+    .map-region:hover .map-dot, .map-region:active .map-dot { transform: scale(1.3); }
+
+    /* Bigger labels */
+    .map-region-name {
+      font-size: 10px; font-weight: 700; color: var(--gold);
+      text-transform: uppercase; letter-spacing: 0.3px;
+      text-shadow: 0 0 8px rgba(0,0,0,1), 0 0 4px rgba(0,0,0,1);
+      white-space: nowrap; line-height: 1.2; pointer-events: none;
+    }
+    .map-region.locked .map-region-name { color: rgba(255,255,255,.35); }
+    .map-region-era { font-size: 8px; color: rgba(255,255,255,.3); margin-top: 1px; white-space: nowrap; pointer-events: none; }
+
+    /* Stats strip */
+    .map-stats-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+    .map-stat-cell {
+      text-align: center;
+      padding: 10px 4px;
+      border-right: 1px solid rgba(255,255,255,.06);
+    }
+    .map-stat-cell:last-child { border-right: none; }
+    .map-stat-val { font-size: 18px; font-weight: 800; color: var(--gold); }
+    .map-stat-lbl { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+    /* Progress bar above canvas */
+    .map-progress {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 16px 8px;
+    }
+    .map-progress-label { font-size: 11px; color: var(--muted); white-space: nowrap; font-weight: 600; }
+    .map-progress-bar { flex: 1; height: 4px; background: rgba(255,255,255,.08); border-radius: 3px; }
+    .map-progress-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--gold), var(--ember)); transition: width 0.8s ease; }
+    .map-progress-pct { font-size: 11px; color: var(--gold); font-weight: 700; white-space: nowrap; }
+
+    /* Region type icon overlay */
+    .map-region-icon {
+      position: absolute;
+      top: -4px; left: 50%; transform: translateX(-50%);
+      font-size: 8px; pointer-events: none;
+      opacity: 0; transition: opacity .2s;
+    }
+    .map-region:hover .map-region-icon { opacity: 1; }
+
+    /* Enhanced modal */
+    .map-modal { padding: 0; }
+    .map-modal-header {
+      padding: 20px 20px 16px;
+      background: linear-gradient(160deg, rgba(244,197,107,.08) 0%, transparent 60%);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .map-modal-type-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+      padding: 3px 9px; border-radius: 20px;
+      margin-bottom: 8px;
+    }
+    .map-modal-type-badge.legendary { background: rgba(244,197,107,.15); color: var(--gold); border: 1px solid rgba(244,197,107,.3); }
+    .map-modal-type-badge.mountain  { background: rgba(140,109,255,.15); color: var(--violet); border: 1px solid rgba(140,109,255,.3); }
+    .map-modal-type-badge.region    { background: rgba(255,255,255,.06); color: var(--muted); border: 1px solid rgba(255,255,255,.12); }
+
+    .map-modal-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+    .map-modal-title { font-size: 22px; font-weight: 800; color: var(--text); margin: 0 0 3px; }
+    .map-modal-era { font-size: 12px; color: var(--muted); font-style: italic; }
+
+    .map-modal-body-wrap { padding: 16px 20px; }
+    .map-modal-section-lbl {
+      font-size: 9px; font-weight: 800; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--muted);
+      margin: 0 0 6px;
+    }
+    .map-modal-body { font-size: 13px; color: var(--text-dim); line-height: 1.65; margin: 0 0 14px; }
+
+    .map-modal-heroes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+    .map-modal-hero-chip {
+      background: rgba(244,197,107,.1);
+      border: 1px solid rgba(244,197,107,.22);
+      border-radius: 20px; padding: 4px 11px;
+      font-size: 11px; font-weight: 600; color: var(--gold);
+    }
+
+    .map-modal-locked-banner {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px;
+      padding: 14px 16px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .map-modal-locked-icon { font-size: 24px; margin-bottom: 6px; }
+    .map-modal-locked-msg { font-size: 12px; color: var(--muted); line-height: 1.5; }
+    .map-modal-locked-chap { font-size: 13px; font-weight: 700; color: var(--gold); margin-top: 4px; }
+
+    .map-modal-footer { padding: 0 20px 28px; }
+    .map-modal-hakim {
+      width: 100%; display: block;
+      background: rgba(140,109,255,.1);
+      border: 1px solid rgba(140,109,255,.3);
+      border-radius: 12px;
+      color: var(--violet); font-size: 13px; font-weight: 700;
+      padding: 13px; text-align: center; cursor: pointer;
+      font-family: inherit; transition: background .2s, transform .15s;
+    }
+    .map-modal-hakim:active { background: rgba(140,109,255,.2); transform: scale(.98); }
+
+    /* Animate region-pulse for bigger nodes */
+    @keyframes region-pulse-lg {
+      0%, 100% { box-shadow: 0 0 12px rgba(244,197,107,.5), 0 0 24px rgba(244,197,107,.2); }
+      50%       { box-shadow: 0 0 22px rgba(244,197,107,.75), 0 0 40px rgba(244,197,107,.35); }
+    }
+    .map-region.unlocked .map-dot { animation: region-pulse-lg 3s ease-in-out infinite; }
+    .map-region.legendary .map-dot { animation: region-pulse-lg 2s ease-in-out infinite; }
+
+    /* Terrain zones in canvas background */
+    .map-zone {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: .18;
+    }
+  </style>
 </head>
 <body>
 <main class="app">
 
-  <!-- Hero -->
+  <!-- ── Hero header ─────────────────────────────────────────────── -->
   <div class="map-hero cinematic-enter">
     <div class="map-kicker" data-i18n="map_kicker">World · Living Persia</div>
     <h1 class="map-h1" data-i18n="map_title">Living Persia</h1>
     <p class="map-sub" data-i18n="map_sub">The ancient world of the Shahnameh — explore and unlock regions</p>
+    <!-- Stats strip -->
+    <div class="map-stats-strip" id="map-stats-strip">
+      <div class="map-stat-cell">
+        <div class="map-stat-val" id="stat-regions">—</div>
+        <div class="map-stat-lbl" data-i18n="map_stat_regions">Regions</div>
+      </div>
+      <div class="map-stat-cell">
+        <div class="map-stat-val" id="stat-chapters">—</div>
+        <div class="map-stat-lbl" data-i18n="map_stat_chapters">Chapters</div>
+      </div>
+      <div class="map-stat-cell">
+        <div class="map-stat-val" id="stat-heroes">—</div>
+        <div class="map-stat-lbl" data-i18n="map_stat_heroes">Heroes Seen</div>
+      </div>
+    </div>
   </div>
 
-  <!-- Map -->
+  <!-- ── Map canvas ──────────────────────────────────────────────── -->
   <div class="map-canvas cinematic-enter" style="animation-delay:0.08s" id="map-canvas">
+
+    <!-- Progress bar -->
     <div class="map-progress">
-      <span class="map-progress-label" id="map-progress-label">0 of 9 regions discovered</span>
+      <span class="map-progress-label" id="map-progress-label">0 / 9 regions</span>
       <div class="map-progress-bar"><div class="map-progress-fill" id="map-progress-fill" style="width:0%"></div></div>
+      <span class="map-progress-pct" id="map-progress-pct">0%</span>
     </div>
+
     <div class="map-canvas-inner" id="map-inner">
-      <!-- SVG routes rendered by JS -->
+      <!-- Terrain zone hints -->
+      <div class="map-zone" style="width:38%;height:55%;left:14%;top:36%;background:radial-gradient(circle,rgba(244,197,107,1),transparent);"></div>
+      <div class="map-zone" style="width:30%;height:40%;left:52%;top:15%;background:radial-gradient(circle,rgba(140,109,255,1),transparent);"></div>
+      <div class="map-zone" style="width:25%;height:35%;left:62%;top:42%;background:radial-gradient(circle,rgba(94,162,255,1),transparent);"></div>
+      <!-- SVG routes -->
       <svg class="map-routes" id="map-routes" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
-      <!-- Region nodes rendered by JS -->
+      <!-- Region nodes injected by JS -->
     </div>
+
     <div class="map-legend">
-      <div class="map-legend-item"><div class="map-legend-dot"></div> Unlocked</div>
-      <div class="map-legend-item"><div class="map-legend-dot locked"></div> Locked</div>
-      <div class="map-legend-item" style="color:var(--muted);">Tap a region to explore</div>
+      <div class="map-legend-item"><div class="map-legend-dot"></div><span data-i18n="map_legend_unlocked">Unlocked</span></div>
+      <div class="map-legend-item"><div class="map-legend-dot locked"></div><span data-i18n="map_legend_locked">Locked</span></div>
+      <div class="map-legend-item" style="color:var(--muted);" data-i18n="map_legend_hint">Tap a region to explore</div>
     </div>
   </div>
 
 </main>
 
-<!-- Region detail modal -->
+<!-- ── Region detail modal ──────────────────────────────────────── -->
 <div class="map-modal-overlay" id="map-modal-overlay">
-  <div class="map-modal" id="map-modal" style="position:relative;">
+  <div class="map-modal" id="map-modal">
     <div class="map-modal-grabber"></div>
     <button class="map-modal-close" id="map-modal-close" aria-label="Close">✕</button>
-    <div class="map-modal-kicker" id="mm-kicker">Region</div>
-    <h2 class="map-modal-title" id="mm-title">Region</h2>
-    <p class="map-modal-body" id="mm-body"></p>
-    <div style="font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px;" data-i18n="map_heroes">Connected Heroes</div>
-    <div class="map-modal-heroes" id="mm-heroes"></div>
-    <div style="font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px;" data-i18n="map_significance">Historical Significance</div>
-    <p class="map-modal-body" id="mm-sig" style="margin-bottom:16px;"></p>
-    <button class="map-modal-hakim" id="mm-hakim-btn">
-      Ask Hakim about this region
-    </button>
+
+    <div class="map-modal-header">
+      <div class="map-modal-type-badge" id="mm-type-badge">Region</div>
+      <div class="map-modal-title-row">
+        <div>
+          <div class="map-modal-title" id="mm-title">Region</div>
+          <div class="map-modal-era" id="mm-kicker">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-modal-body-wrap">
+      <!-- Unlocked content -->
+      <div id="mm-unlocked-content">
+        <div class="map-modal-section-lbl" data-i18n="map_about">About this region</div>
+        <p class="map-modal-body" id="mm-body"></p>
+
+        <div class="map-modal-section-lbl" data-i18n="map_heroes">Connected Heroes</div>
+        <div class="map-modal-heroes" id="mm-heroes"></div>
+
+        <div class="map-modal-section-lbl" data-i18n="map_significance">Historical Significance</div>
+        <p class="map-modal-body" id="mm-sig"></p>
+      </div>
+
+      <!-- Locked content -->
+      <div id="mm-locked-content" style="display:none;">
+        <div class="map-modal-locked-banner">
+          <div class="map-modal-locked-icon">🔒</div>
+          <div class="map-modal-locked-msg" data-i18n="map_locked_desc">Complete the chapter below to unlock this region.</div>
+          <div class="map-modal-locked-chap" id="mm-unlock-req"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-modal-footer">
+      <button class="map-modal-hakim" id="mm-hakim-btn">
+        🤖 <span data-i18n="map_hakim_region">Ask Hakim about this region</span>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -72,7 +285,7 @@
 (() => {
   "use strict";
 
-  /* ── helpers ──────────────────────────────────────────────────── */
+  /* ── i18n helper ──────────────────────────────────────────────── */
   const t = (key, fb) => {
     try {
       const l = localStorage.getItem("real_lang") || "en";
@@ -81,149 +294,144 @@
     } catch { return fb || key; }
   };
 
-  const toast = (msg) => {
-    const el = document.querySelector("[data-toast]");
-    if (!el) return;
-    el.textContent = msg; el.classList.add("show");
-    clearTimeout(toast._t);
-    toast._t = setTimeout(() => el.classList.remove("show"), 2000);
+  /* ── Chapter slug → number mapping (matches chapters.json order) ── */
+  const CHAPTER_SLUGS = {
+    1:  "keyumars",       2:  "hushang",       3:  "tahmuras",
+    4:  "jamshid",        5:  "zahhak",         6:  "fereydun",
+    7:  "manuchehr",      8:  "nozar",          9:  "zal",
+    10: "rudabeh",        11: "birth-of-rostam",12: "rostam",
+    13: "sohrab",         14: "siavash",        15: "kay-khosrow",
+    16: "rustam-pt2",     17: "isfandiyar",     18: "bahman",
+    19: "darab",          20: "iskandar",       21: "ardeshir",
+    22: "shapour",        23: "khosrow",        24: "bahram",
+    25: "ferdowsi",
   };
 
-  /* ── Player progress ──────────────────────────────────────────── */
-  const getPlayerProgress = () => {
-    try {
-      const raw = localStorage.getItem("real_player_state_v1");
-      return raw ? JSON.parse(raw) : {};
-    } catch { return {}; }
+  const CHAPTER_NAMES = {
+    1:"Keyumars", 2:"Hushang", 3:"Tahmuras", 4:"Jamshid", 5:"Zahhak",
+    6:"Fereydun", 7:"Manuchehr", 8:"Nozar", 9:"Zal", 10:"Rudabeh",
+    11:"Birth of Rostam", 12:"Rostam", 13:"Sohrab", 14:"Siavash",
+    15:"Kay Khosrow", 16:"Rostam Pt.2", 17:"Isfandiyar", 18:"Bahman",
+    19:"Darab", 20:"Alexander", 21:"Ardeshir", 22:"Shapour",
+    23:"Khosrow", 24:"Bahram", 25:"Ferdowsi",
   };
 
+  const TYPE_ICONS = { legendary: "⭐", mountain: "△", region: "◎" };
+  const TYPE_LABELS = { legendary: "Legendary Site", mountain: "Sacred Mountain", region: "Region" };
+
+  /* ── FIXED: read from real_chapter_done_${slug} keys ─────────── */
   const getCompletedChapters = () => {
-    const p = getPlayerProgress();
-    const cp = p.chapterProgress || {};
-    const completed = new Set();
-    Object.entries(cp).forEach(([id, v]) => { if (v && v.completed) completed.add(Number(id)); });
-    // Always unlock ch1 + ch2 as a start state
-    completed.add(1); completed.add(2);
+    const completed = new Set([1, 2]); // ch1+ch2 always playable
+    Object.entries(CHAPTER_SLUGS).forEach(([num, slug]) => {
+      if (localStorage.getItem(`real_chapter_done_${slug}`) === "1") {
+        completed.add(Number(num));
+      }
+    });
     return completed;
   };
 
   /* ── Region definitions ───────────────────────────────────────── */
-  // Position: [leftPercent, topPercent] within the 100×100 viewBox
   const REGIONS = [
-    {
-      id: "pars", name: "Pars", era: "~7000 BC",
-      x: 32, y: 62,
-      type: "legendary",
-      unlocksAt: 1, // chapter
-      desc: "The heartland of Persian civilization. Seat of Keyumars, Jamshid, and the Pishdadian kings. Every great dynasty traces its legitimacy back to Pars.",
-      significance: "Pars gave Persia its name and its first dynasty. The Pishdadians ruled from the sacred mountains, establishing law, fire worship, and the arts of civilization.",
-      heroes: ["Keyumars", "Jamshid", "Fereydun"],
-      ask: "Tell me about the region of Pars — its role in the Shahnameh and Persian civilization.",
-    },
-    {
-      id: "ray", name: "Ray", era: "~4000 BC",
-      x: 40, y: 30,
-      type: "region",
-      unlocksAt: 6,
-      desc: "Ancient city of Ray — gateway between the western lands and the great eastern routes. A crossroads of power and learning.",
-      significance: "Ray (Rhages) was one of the oldest cities in the world. In the Shahnameh it appears as a seat of kings and a strategic hub connecting the Pishdadian heartland to Khorasan.",
-      heroes: ["Fereydun", "Manuchehr"],
-      ask: "Tell me about the ancient city of Ray and its importance in the Shahnameh.",
-    },
-    {
-      id: "damavand", name: "Damavand", era: "~5000 BC",
-      x: 44, y: 22,
-      type: "mountain",
-      unlocksAt: 5,
-      desc: "The eternal prison. Inside this sacred volcano, Zahhak the Serpent King was chained by Fereydun after a thousand years of tyranny.",
-      significance: "Damavand is the highest peak in the Middle East and the axis of Persian myth. The volcano's fires are said to be Zahhak's fury — still burning inside the mountain.",
-      heroes: ["Zahhak", "Fereydun", "Kaveh"],
-      ask: "Tell me about Mount Damavand — its role as a prison in the Shahnameh and its symbolic meaning.",
-    },
-    {
-      id: "khorasan", name: "Khorasan", era: "~3000 BC",
-      x: 65, y: 30,
-      type: "region",
-      unlocksAt: 7,
-      desc: "The great eastern province — land of scholars, warriors, and the Silk Road. From here, Ferdowsi himself would one day write the Shahnameh.",
-      significance: "Khorasan is the cultural heart of the eastern Persian world. Tus — Ferdowsi's birthplace — sits within it. The word means 'where the sun rises from.'",
-      heroes: ["Ferdowsi", "Zal", "Rostam"],
-      ask: "Tell me about Khorasan — its role in the Shahnameh and why Ferdowsi chose it as his home.",
-    },
-    {
-      id: "sistan", name: "Sistan", era: "~2500 BC",
-      x: 60, y: 57,
-      type: "region",
-      unlocksAt: 9,
-      desc: "The homeland of Rostam — fierce, remote, and unconquered. From Sistan came the greatest Pahlavan the world has ever seen.",
-      significance: "Sistan (Zabol region) is deeply associated with the Sistani dynasty of Sam, Zal, and Rostam. Its fierce landscape shaped the fierce heroes it produced.",
-      heroes: ["Sam", "Zal", "Rostam", "Sohrab"],
-      ask: "Tell me about Sistan — the homeland of Rostam and its place in the Shahnameh.",
-    },
-    {
-      id: "balkh", name: "Balkh", era: "~6000 BC",
-      x: 76, y: 36,
-      type: "region",
-      unlocksAt: 4,
-      desc: "Ancient Bactria — city of fire temples, sacred to Zoroastrian faith. One of the oldest cities in the world.",
-      significance: "Balkh was a centre of Zoroastrian fire worship and ancient learning. Zarathustra is said to have preached here. In the Shahnameh it represents eastern Persia's deep spiritual root.",
-      heroes: ["Lohrasp", "Goshtasp"],
-      ask: "Tell me about ancient Balkh — its Zoroastrian significance and place in Persian civilization.",
-    },
-    {
-      id: "tus", name: "Tus", era: "~1000 BC",
-      x: 70, y: 20,
-      type: "region",
-      unlocksAt: 8,
-      desc: "The birthplace of Ferdowsi. For thirty years, the poet composed the Shahnameh here — sixty thousand verses saving a dying language.",
-      significance: "Tus (modern Mashhad region) is the city that gave Persian literature its greatest gift. Ferdowsi's tomb still stands there, visited by millions who remember.",
-      heroes: ["Ferdowsi", "Tus the General"],
-      ask: "Tell me about Tus — the city of Ferdowsi and how it shaped the Shahnameh.",
-    },
-    {
-      id: "samarkand", name: "Samarkand", era: "~2000 BC",
-      x: 86, y: 16,
-      type: "region",
-      unlocksAt: 10,
-      desc: "The great jewel of the Silk Road — where east meets west, where merchant caravans brought gold, silk, and knowledge across the ancient world.",
-      significance: "Samarkand appears in the Shahnameh as Sogdia — a rich, independent land on the frontier. Its legendary wealth made it a prize for every king who looked east.",
-      heroes: ["Afrasiab of Turan"],
-      ask: "Tell me about Samarkand and its role in the Shahnameh's world of ancient Persia.",
-    },
-    {
-      id: "bukhara", name: "Bukhara", era: "~2500 BC",
-      x: 78, y: 24,
-      type: "region",
-      unlocksAt: 8,
-      desc: "The scholarly city — centre of Islamic learning and, long before, of Zoroastrian wisdom. A city that survived every empire.",
-      significance: "Bukhara's deep connection to Persian identity made it a cultural stronghold even after the Arab conquest. It preserved Persian language and poetry through centuries of change.",
-      heroes: ["Rudaki", "Avicenna"],
-      ask: "Tell me about Bukhara and its significance as a keeper of Persian civilization.",
-    },
+    { id:"pars",      name:"Pars",       era:"~7000 BC", x:32, y:62, type:"legendary", unlocksAt:1,
+      desc:"The heartland of Persian civilization. Seat of Keyumars, Jamshid, and the Pishdadian kings. Every great dynasty traces its legitimacy back to Pars.",
+      significance:"Pars gave Persia its name and its first dynasty. The Pishdadians ruled from the sacred mountains, establishing law, fire worship, and the arts of civilization.",
+      heroes:["Keyumars","Jamshid","Fereydun"],
+      ask:"Tell me about the region of Pars — its role in the Shahnameh and Persian civilization." },
+    { id:"ray",       name:"Ray",        era:"~4000 BC", x:40, y:30, type:"region",    unlocksAt:6,
+      desc:"Ancient city of Ray — gateway between the western lands and the great eastern routes. A crossroads of power and learning.",
+      significance:"Ray (Rhages) was one of the oldest cities in the world. In the Shahnameh it appears as a seat of kings and a strategic hub connecting the Pishdadian heartland to Khorasan.",
+      heroes:["Fereydun","Manuchehr"],
+      ask:"Tell me about the ancient city of Ray and its importance in the Shahnameh." },
+    { id:"damavand",  name:"Damavand",   era:"~5000 BC", x:44, y:22, type:"mountain",  unlocksAt:5,
+      desc:"The eternal prison. Inside this sacred volcano, Zahhak the Serpent King was chained by Fereydun after a thousand years of tyranny.",
+      significance:"Damavand is the highest peak in the Middle East and the axis of Persian myth. The volcano's fires are said to be Zahhak's fury — still burning inside the mountain.",
+      heroes:["Zahhak","Fereydun","Kaveh"],
+      ask:"Tell me about Mount Damavand — its role as a prison in the Shahnameh and its symbolic meaning." },
+    { id:"khorasan",  name:"Khorasan",   era:"~3000 BC", x:65, y:30, type:"region",    unlocksAt:7,
+      desc:"The great eastern province — land of scholars, warriors, and the Silk Road. From here, Ferdowsi himself would one day write the Shahnameh.",
+      significance:"Khorasan is the cultural heart of the eastern Persian world. Tus — Ferdowsi's birthplace — sits within it. The word means 'where the sun rises from.'",
+      heroes:["Ferdowsi","Zal","Rostam"],
+      ask:"Tell me about Khorasan — its role in the Shahnameh and why Ferdowsi chose it as his home." },
+    { id:"sistan",    name:"Sistan",     era:"~2500 BC", x:60, y:57, type:"region",    unlocksAt:9,
+      desc:"The homeland of Rostam — fierce, remote, and unconquered. From Sistan came the greatest Pahlavan the world has ever seen.",
+      significance:"Sistan (Zabol region) is deeply associated with the Sistani dynasty of Sam, Zal, and Rostam. Its fierce landscape shaped the fierce heroes it produced.",
+      heroes:["Sam","Zal","Rostam","Sohrab"],
+      ask:"Tell me about Sistan — the homeland of Rostam and its place in the Shahnameh." },
+    { id:"balkh",     name:"Balkh",      era:"~6000 BC", x:76, y:36, type:"region",    unlocksAt:4,
+      desc:"Ancient Bactria — city of fire temples, sacred to Zoroastrian faith. One of the oldest cities in the world.",
+      significance:"Balkh was a centre of Zoroastrian fire worship and ancient learning. In the Shahnameh it represents eastern Persia's deep spiritual root.",
+      heroes:["Lohrasp","Goshtasp"],
+      ask:"Tell me about ancient Balkh — its Zoroastrian significance and place in Persian civilization." },
+    { id:"tus",       name:"Tus",        era:"~1000 BC", x:70, y:20, type:"region",    unlocksAt:8,
+      desc:"The birthplace of Ferdowsi. For thirty years, the poet composed the Shahnameh here — sixty thousand verses saving a dying language.",
+      significance:"Tus (modern Mashhad region) is the city that gave Persian literature its greatest gift. Ferdowsi's tomb still stands there, visited by millions.",
+      heroes:["Ferdowsi","Tus the General"],
+      ask:"Tell me about Tus — the city of Ferdowsi and how it shaped the Shahnameh." },
+    { id:"samarkand", name:"Samarkand",  era:"~2000 BC", x:86, y:16, type:"region",    unlocksAt:10,
+      desc:"The great jewel of the Silk Road — where east meets west, where merchant caravans brought gold, silk, and knowledge across the ancient world.",
+      significance:"Samarkand appears in the Shahnameh as Sogdia — a rich, independent land on the frontier. Its legendary wealth made it a prize for every king who looked east.",
+      heroes:["Afrasiab of Turan"],
+      ask:"Tell me about Samarkand and its role in the Shahnameh's world of ancient Persia." },
+    { id:"bukhara",   name:"Bukhara",    era:"~2500 BC", x:78, y:24, type:"region",    unlocksAt:8,
+      desc:"The scholarly city — centre of Islamic learning and, long before, of Zoroastrian wisdom. A city that survived every empire.",
+      significance:"Bukhara's deep connection to Persian identity made it a cultural stronghold even after the Arab conquest. It preserved Persian language and poetry through centuries of change.",
+      heroes:["Rudaki","Avicenna"],
+      ask:"Tell me about Bukhara and its significance as a keeper of Persian civilization." },
   ];
 
-  /* ── Route definitions (pairs of region IDs) ──────────────────── */
   const ROUTES = [
-    { from: "pars",      to: "ray",       needs: 1 },
-    { from: "ray",       to: "damavand",  needs: 5 },
-    { from: "ray",       to: "khorasan",  needs: 6 },
-    { from: "khorasan",  to: "balkh",     needs: 6 },
-    { from: "khorasan",  to: "tus",       needs: 7 },
-    { from: "khorasan",  to: "sistan",    needs: 8 },
-    { from: "balkh",     to: "bukhara",   needs: 7 },
-    { from: "balkh",     to: "samarkand", needs: 9 },
+    { from:"pars",     to:"ray",       needs:1 },
+    { from:"ray",      to:"damavand",  needs:5 },
+    { from:"ray",      to:"khorasan",  needs:6 },
+    { from:"khorasan", to:"balkh",     needs:6 },
+    { from:"khorasan", to:"tus",       needs:7 },
+    { from:"khorasan", to:"sistan",    needs:8 },
+    { from:"balkh",    to:"bukhara",   needs:7 },
+    { from:"balkh",    to:"samarkand", needs:9 },
   ];
 
-  /* ── Determine unlock state ───────────────────────────────────── */
-  const completed = getCompletedChapters();
-
-  const isUnlocked = (r) => {
-    if (r.unlocksAt <= 2) return true; // always start with pars + balkh
-    return completed.has(r.unlocksAt) || completed.size >= r.unlocksAt;
+  const HERO_REGION_AFFINITY = {
+    rostam: ["sistan","khorasan"], zahhak: ["ray","damavand"],
+    fereydun: ["pars","damavand"], hushang: ["pars","tus"],
+    jamshid: ["pars"], zal: ["sistan"], kaveh: ["pars"],
   };
 
+  /* ── Compute state ────────────────────────────────────────────── */
+  const completed = getCompletedChapters();
+
+  const isUnlocked = (r) =>
+    r.unlocksAt <= 2 || completed.has(r.unlocksAt) || completed.size >= r.unlocksAt;
+
+  const heroEnergized = new Set();
+  Object.entries(HERO_REGION_AFFINITY).forEach(([heroId, regions]) => {
+    if (localStorage.getItem(`real_hero_reveal_${heroId}`))
+      regions.forEach(rid => heroEnergized.add(rid));
+  });
+
+  const zahhakSeen = localStorage.getItem("real_hero_reveal_zahhak");
+  const ZAHHAK_DARK = new Set(["ray", "damavand"]);
+
+  /* ── Count heroes seen ────────────────────────────────────────── */
+  const heroesSeenCount = Object.keys(HERO_REGION_AFFINITY)
+    .filter(h => localStorage.getItem(`real_hero_reveal_${h}`)).length;
+
+  /* ── Stats strip ──────────────────────────────────────────────── */
+  let unlockedCount = 0;
+  REGIONS.forEach(r => { if (isUnlocked(r)) unlockedCount++; });
+
+  document.getElementById("stat-regions").textContent  = `${unlockedCount}/${REGIONS.length}`;
+  document.getElementById("stat-chapters").textContent = completed.size;
+  document.getElementById("stat-heroes").textContent   = heroesSeenCount;
+
+  /* ── Progress bar ─────────────────────────────────────────────── */
+  const pct = Math.round((unlockedCount / REGIONS.length) * 100);
+  document.getElementById("map-progress-fill").style.width = pct + "%";
+  document.getElementById("map-progress-pct").textContent  = pct + "%";
+  document.getElementById("map-progress-label").textContent =
+    `${unlockedCount} / ${REGIONS.length} ${t("map_regions_lbl","regions")}`;
+
   /* ── Build SVG routes ─────────────────────────────────────────── */
-  const svgEl = document.getElementById("map-routes");
+  const svgEl    = document.getElementById("map-routes");
   const regionMap = new Map(REGIONS.map(r => [r.id, r]));
 
   ROUTES.forEach(route => {
@@ -232,132 +440,92 @@
     if (!a || !b) return;
     const unlocked = completed.has(route.needs) || completed.size >= route.needs || route.needs <= 2;
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    line.setAttribute("x1", a.x);
-    line.setAttribute("y1", a.y);
-    line.setAttribute("x2", b.x);
-    line.setAttribute("y2", b.y);
+    line.setAttribute("x1", a.x); line.setAttribute("y1", a.y);
+    line.setAttribute("x2", b.x); line.setAttribute("y2", b.y);
     line.classList.add("map-route", unlocked ? "unlocked" : "locked");
     svgEl.appendChild(line);
   });
 
-  /* ── Civilization state: determine which regions have "hero energy" ── */
-  const HERO_REGION_AFFINITY = {
-    rostam:   ["sistan", "khorasan"],
-    zahhak:   ["ray", "babylon"],
-    fereydun: ["pars", "damavand"],
-    hushang:  ["pars", "tus"],
-    jamshid:  ["pars"],
-    zal:      ["sistan", "alborz"],
-    kaveh:    ["pars"],
-    simorgh:  ["alborz"],
-  };
-
-  // Build set of regions that have cinematic hero energy
-  const heroEnergized = new Set();
-  Object.keys(HERO_REGION_AFFINITY).forEach(heroId => {
-    const seenKey = `real_hero_reveal_${heroId}`;
-    if (localStorage.getItem(seenKey)) {
-      HERO_REGION_AFFINITY[heroId].forEach(rid => heroEnergized.add(rid));
-    }
-  });
-
-  // Zahhak-darkened regions
-  const zahhakSeen = localStorage.getItem("real_hero_reveal_zahhak");
-  const ZAHHAK_DARK = new Set(["ray", "babylon"]);
-
   /* ── Build region nodes ───────────────────────────────────────── */
   const inner = document.getElementById("map-inner");
-  let unlockedCount = 0;
 
   REGIONS.forEach((region, idx) => {
     const unlocked = isUnlocked(region);
-    if (unlocked) unlockedCount++;
-
     const energized = heroEnergized.has(region.id);
-    const darkened = zahhakSeen && ZAHHAK_DARK.has(region.id);
+    const darkened  = zahhakSeen && ZAHHAK_DARK.has(region.id);
 
     const node = document.createElement("div");
     let cls = `map-region ${region.type} ${unlocked ? "unlocked" : "locked"} cinematic-enter`;
     if (unlocked && energized) cls += " map-region-energized";
-    if (unlocked && darkened) cls += " map-region-darkened";
+    if (unlocked && darkened)  cls += " map-region-darkened";
     node.className = cls;
-    node.style.cssText = `left:${region.x}%; top:${region.y}%; animation-delay:${0.05 + idx * 0.06}s`;
+    node.style.cssText = `left:${region.x}%;top:${region.y}%;animation-delay:${0.05+idx*0.06}s`;
     node.setAttribute("data-region-id", region.id);
-
-    // Civilization pulse ring for energized regions
-    const pulseEl = unlocked && energized ? `<div class="map-region-pulse" aria-hidden="true"></div>` : "";
     node.innerHTML = `
-      ${pulseEl}
+      ${unlocked && energized ? `<div class="map-region-pulse" aria-hidden="true"></div>` : ""}
       <div class="map-dot"></div>
       <div class="map-region-name">${region.name}</div>
       <div class="map-region-era">${region.era}</div>
     `;
     inner.appendChild(node);
 
-    // Record region visit in Hakim memory
     if (unlocked && window.HakimMemory) window.HakimMemory.recordRegion(region.id);
   });
 
-  /* ── Progress bar ─────────────────────────────────────────────── */
-  const total = REGIONS.length;
-  const pct = Math.round((unlockedCount / total) * 100);
-  document.getElementById("map-progress-fill").style.width = pct + "%";
-  const tmpl = t("map_unlocked_of", "{n} of {total} regions discovered");
-  document.getElementById("map-progress-label").textContent =
-    tmpl.replace("{n}", unlockedCount).replace("{total}", total);
-
-  /* ── Region click → modal ─────────────────────────────────────── */
+  /* ── Modal ────────────────────────────────────────────────────── */
   const overlay  = document.getElementById("map-modal-overlay");
-  const modal    = document.getElementById("map-modal");
   const closeBtn = document.getElementById("map-modal-close");
-
   let activeRegion = null;
 
   const openModal = (region) => {
     activeRegion = region;
     const unlocked = isUnlocked(region);
 
-    document.getElementById("mm-kicker").textContent = region.era;
-    document.getElementById("mm-title").textContent = region.name;
-    document.getElementById("mm-body").textContent = unlocked
-      ? region.desc
-      : t("map_locked_region", "Complete earlier chapters to unlock this region.");
-    document.getElementById("mm-sig").textContent = unlocked ? region.significance : "";
-    document.getElementById("mm-sig").style.display = unlocked ? "" : "none";
+    /* Type badge */
+    const badge = document.getElementById("mm-type-badge");
+    badge.textContent = `${TYPE_ICONS[region.type] || "◎"} ${TYPE_LABELS[region.type] || region.type}`;
+    badge.className   = `map-modal-type-badge ${region.type}`;
 
-    const heroesEl = document.getElementById("mm-heroes");
-    heroesEl.innerHTML = "";
+    document.getElementById("mm-title").textContent  = region.name;
+    document.getElementById("mm-kicker").textContent = region.era;
+
+    const unlockedDiv = document.getElementById("mm-unlocked-content");
+    const lockedDiv   = document.getElementById("mm-locked-content");
+    const hakimBtn    = document.getElementById("mm-hakim-btn");
+
     if (unlocked) {
-      region.heroes.forEach(h => {
-        const chip = document.createElement("span");
-        chip.className = "map-modal-hero-chip";
-        chip.textContent = h;
-        heroesEl.appendChild(chip);
-      });
+      unlockedDiv.style.display = "";
+      lockedDiv.style.display   = "none";
+      document.getElementById("mm-body").textContent = region.desc;
+      document.getElementById("mm-sig").textContent  = region.significance;
+
+      const heroesEl = document.getElementById("mm-heroes");
+      heroesEl.innerHTML = region.heroes.map(h =>
+        `<span class="map-modal-hero-chip">${h}</span>`
+      ).join("");
+
+      hakimBtn.style.display = "";
+    } else {
+      unlockedDiv.style.display = "none";
+      lockedDiv.style.display   = "";
+      const chapName = CHAPTER_NAMES[region.unlocksAt] || `Chapter ${region.unlocksAt}`;
+      document.getElementById("mm-unlock-req").textContent =
+        `Complete: ${chapName}`;
+      hakimBtn.style.display = "none";
     }
 
-    const hakimBtn = document.getElementById("mm-hakim-btn");
-    hakimBtn.textContent = "🤖 " + t("map_hakim_region", "Ask Hakim about this region");
-    hakimBtn.style.display = unlocked ? "" : "none";
-
     overlay.classList.add("open");
-    if (window.RealAudio) window.RealAudio.sounds.mapSelect();
+    if (window.RealAudio) window.RealAudio.sounds.mapSelect?.();
   };
 
-  const closeModal = () => {
-    overlay.classList.remove("open");
-    activeRegion = null;
-  };
+  const closeModal = () => { overlay.classList.remove("open"); activeRegion = null; };
 
-  inner.addEventListener("click", (e) => {
+  inner.addEventListener("click", e => {
     const node = e.target.closest("[data-region-id]");
     if (!node) return;
-    const regionId = node.getAttribute("data-region-id");
-    const region = regionMap.get(regionId);
+    const region = regionMap.get(node.getAttribute("data-region-id"));
     if (!region) return;
-
-    // Damavand special cinematic (first tap only)
-    if (regionId === "damavand" && isUnlocked(region) && window.RealCinematic
+    if (region.id === "damavand" && isUnlocked(region) && window.RealCinematic
         && !localStorage.getItem("real_damavand_memory_seen")) {
       window.RealCinematic.showDamavandMemory(() => openModal(region));
     } else {
@@ -366,15 +534,14 @@
   });
 
   closeBtn.addEventListener("click", closeModal);
-  overlay.addEventListener("click", (e) => { if (e.target === overlay) closeModal(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+  overlay.addEventListener("click", e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
 
   document.getElementById("mm-hakim-btn").addEventListener("click", () => {
     if (!activeRegion) return;
     try { sessionStorage.setItem("hakim_prefill", activeRegion.ask); } catch {}
     window.location.href = "hakim.html";
   });
-
 })();
 </script>
 </body>

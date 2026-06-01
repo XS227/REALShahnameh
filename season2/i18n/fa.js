@@ -854,6 +854,15 @@
       map_locked_region: "برای باز شدن این منطقه، شاهنامه را ادامه بده.",
       map_heroes: "قهرمانان مرتبط",
       map_significance: "اهمیت تاریخی",
+      map_about: "درباره این منطقه",
+      map_locked_desc: "فصل زیر را کامل کن تا این منطقه باز شود.",
+      map_stat_regions: "مناطق",
+      map_stat_chapters: "فصل‌ها",
+      map_stat_heroes: "قهرمانان دیده‌شده",
+      map_regions_lbl: "منطقه",
+      map_legend_unlocked: "باز شده",
+      map_legend_locked: "قفل شده",
+      map_legend_hint: "روی یک منطقه ضربه بزن",
 
       /* Timeline page */
       nav_timeline: "زمان‌نگار کهن",
