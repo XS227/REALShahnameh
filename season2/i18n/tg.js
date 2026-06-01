@@ -778,6 +778,7 @@
       hero_fragment_label: "Парчаи қаҳрамон",
 
       /* Hamburger nav labels */
+      more: "Бештар",
       guild: "Гилд",
       market: "Бозор",
       inventory: "Анбор",

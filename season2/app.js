@@ -717,22 +717,15 @@
 
     /* ── Nav links definition ── */
     const NAV_LINKS = [
-      { file: "index.html",           ico: "🏠", key: "home",          section: "main" },
-      { file: "learn.html",           ico: "📜", key: "learn",         section: "main" },
-      { file: "tap.html",             ico: "⚡", key: "tap",           section: "main" },
-      { file: "heroes.html",          ico: "⚔",  key: "heroes",        section: "main" },
-      { file: "earn.html",            ico: "💎", key: "earn",          section: "main" },
-      { file: "social.html",          ico: "👥", key: "social",        section: "main" },
       { file: "regions.html",         ico: "🗺", key: "nav_regions",   section: "world" },
       { file: "historical-sites.html",ico: "🏛", key: "nav_sites",     section: "world" },
       { file: "timeline.html",        ico: "⏳", key: "nav_timeline",  section: "world" },
       { file: "persia-map.html",      ico: "🌍", key: "nav_map",       section: "world" },
       { file: "offerings.html",       ico: "🔥", key: "nav_offerings", section: "world" },
       { file: "hakim.html",           ico: "🤖", key: "nav_hakim",     section: "world", cls: "hakim-link" },
-      { file: "guild.html",           ico: "⚔",  key: "guild",         section: "more" },
+      { file: "profile.html",         ico: "👤", key: "profile",       section: "more"  },
       { file: null,                   ico: "🛒", key: "market",        section: "more",  coming: true },
       { file: null,                   ico: "📦", key: "inventory",     section: "more",  coming: true },
-      { file: "profile.html",         ico: "👤", key: "profile",       section: "more"  },
     ];
 
     const buildNavLinks = (tx) => {
@@ -743,7 +736,7 @@
           const sectionLabelMap = {
             main:  tx.explore || "Navigate",
             world: tx.nav_world || "World",
-            more:  tx.coming_soon || "Coming Soon",
+            more:  tx.more || "More",
           };
           html += `<div class="hmenu-section-label">${sectionLabelMap[n.section] || n.section}</div>`;
           lastSection = n.section;

@@ -779,6 +779,7 @@
       hero_fragment_label: "تکه‌ی قهرمان",
 
       /* Hamburger nav labels */
+      more: "بیشتر",
       guild: "اتحادیه",
       market: "بازار",
       inventory: "انبار",

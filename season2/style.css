@@ -1592,7 +1592,7 @@ html[dir="rtl"] .bottom-nav .nav-item:nth-child(7) { order: 1; }
 /* RTL: hamburger moves to the left edge; Hakim orb flips to right */
 html[dir="rtl"] .hamburger-btn {
   right: auto;
-  left: 16px;
+  left: 14px;
 }
 html[dir="rtl"] .hamburger-btn:hover,
 html[dir="rtl"] .hamburger-btn:active {
@@ -1808,8 +1808,8 @@ body.ob-open { overflow: hidden; }
 
 .hamburger-btn {
   position: fixed;
-  bottom: calc(env(safe-area-inset-bottom) + 24px);
-  right: 16px;
+  top: 12px;
+  right: 14px;
   width: 48px;
   height: 48px;
   border-radius: 16px;

@@ -775,6 +775,7 @@
       hero_fragment_label: "Hero fragment",
 
       /* Hamburger nav labels */
+      more: "More",
       guild: "Guild",
       market: "Market",
       inventory: "Inventory",
