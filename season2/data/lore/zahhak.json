@@ -58,9 +58,13 @@
       "body_en": "Before Zahhak becomes a tyrant, he has a father named Mardas — a just man who rises before dawn to pray, tends a garden, and has never given anyone a reason to fear him. Ferdowsi spends time here. The point is structural: evil does not come from nothing. It finds the good and corrupts it. Mardas is introduced so his absence will be felt. He is the world before the door opens.",
       "body_fa": "پیش از آنکه ضحاک ستمگر شود، پدری دارد به نامِ مرداس — مردِ عادلی که پیش از سپیده‌دم برمی‌خیزد تا نماز بخواند، باغی نگه می‌دارد، و هرگز به کسی دلیلی برای ترس نداده است. فردوسی اینجا وقت می‌گذارد. نکته ساختاری است: شر از هیچ نمی‌آید. خوب را می‌یابد و فاسدش می‌کند. مرداس معرفی می‌شود تا غیابش احساس شود. او جهان پیش از باز شدنِ دَر است.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/mardas-father-scene.png",
-      "reward": { "xp": 35 },
-      "unlocks_codex": ["mardas-codex"]
+      "image": "/assets/images/scenes/shahnameh-chapter-5-mardas-the-good-father.jpg",
+      "reward": {
+        "xp": 35
+      },
+      "unlocks_codex": [
+        "mardas-codex"
+      ]
     },
     {
       "id": "the-companion",
@@ -72,9 +76,13 @@
       "body_en": "Ahriman comes to Zahhak not as a demon but as a companion — someone who agrees with everything Zahhak says, flatters every decision, and fills every silence with praise. He is patient. He is warm. He never asks for anything yet. He is only waiting for the moment when gratitude has grown deep enough that a single favour will feel reasonable. This is how Ahriman works when he cannot use force.",
       "body_fa": "اهریمن نه به‌عنوانِ دیو که به‌عنوانِ همدم نزدِ ضحاک می‌آید — کسی که با همه چیزی که ضحاک می‌گوید موافق است، هر تصمیمی را تملق می‌گوید، و هر سکوتی را با ستایش پر می‌کند. صبور است. صمیمی است. هنوز هیچ نمی‌خواهد. فقط منتظر لحظه‌ای است که قدردانی به اندازه‌ای عمیق شده باشد که یک خواهشِ واحد معقول به نظر برسد. روشِ اهریمن وقتی نمی‌تواند از زور استفاده کند این است.",
       "atmosphere": "court",
-      "image": "/assets/images/scenes/the-companion-scene.png",
-      "reward": { "xp": 40 },
-      "unlocks_codex": ["ahriman-method-ch5"]
+      "image": "/assets/images/scenes/shahnameh-chapter-5-the-companion.jpg",
+      "reward": {
+        "xp": 40
+      },
+      "unlocks_codex": [
+        "ahriman-method-ch5"
+      ]
     },
     {
       "id": "the-garden-pit",
@@ -86,9 +94,13 @@
       "body_en": "Ahriman's first favour: he offers to tend Mardas' garden while the old man sleeps. Zahhak agrees — why not? He digs a pit in the path Mardas walks each dawn to pray. In the dark, the old man falls. When Zahhak finds his father, the garden is still beautiful. That is Ahriman's method: leave the surface undisturbed and hollow out everything beneath it.",
       "body_fa": "اولین خواهشِ اهریمن: پیشنهاد می‌دهد در حالی که پیرمرد می‌خوابد از باغِ مرداس نگهداری کند. ضحاک می‌پذیرد — چرا نه؟ در مسیری که مرداس هر سپیده‌دم برای نماز طی می‌کند چاهی می‌کند. در تاریکی پیرمرد می‌افتد. وقتی ضحاک پدرش را پیدا می‌کند، باغ هنوز زیباست. روشِ اهریمن این است: سطح را دست‌نخورده بگذار و همه چیز را زیرش تو خالی کن.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/garden-pit-scene.png",
-      "reward": { "xp": 45 },
-      "unlocks_codex": ["hollow-method"]
+      "image": "/assets/images/scenes/shahnameh-chapter-5-the-garden-pit.jpg",
+      "reward": {
+        "xp": 45
+      },
+      "unlocks_codex": [
+        "hollow-method"
+      ]
     },
     {
       "id": "the-cooks-kiss",
@@ -100,9 +112,14 @@
       "body_en": "Ahriman's second form: a cook of great skill. He serves Zahhak increasingly rich meals — first egg yolk, then small birds, then game, then more. Each meal changes the young king slightly, and he does not notice the change because it comes gradually. When Ahriman finally asks to kiss Zahhak's shoulders as a mark of gratitude, Zahhak grants it without thought. First kiss. Second kiss. From each shoulder, a black serpent grows.",
       "body_fa": "شکلِ دومِ اهریمن: آشپزی ماهر. به ضحاک وعده‌های روز‌به‌روز غنی‌تری می‌دهد — ابتدا زرده‌ی تخم‌مرغ، بعد پرندگانِ کوچک، بعد شکار، بعد بیشتر. هر وعده شاهِ جوان را کمی تغییر می‌دهد و او متوجه تغییر نمی‌شود چون به‌تدریج می‌آید. وقتی اهریمن بالاخره می‌خواهد به‌عنوانِ سپاسگزاری شانه‌های ضحاک را ببوسد، ضحاک بی‌اندیشه می‌پذیرد. بوسه‌ی اول. بوسه‌ی دوم. از هر شانه ماری سیاه می‌روید.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/cooks-kiss-scene.png",
-      "reward": { "xp": 55 },
-      "unlocks_codex": ["shoulder-serpents", "iblis-cook"]
+      "image": "/assets/images/scenes/shahnameh-chapter-5-the-cooks-kiss.jpg",
+      "reward": {
+        "xp": 55
+      },
+      "unlocks_codex": [
+        "shoulder-serpents",
+        "iblis-cook"
+      ]
     },
     {
       "id": "the-physicians",
@@ -114,9 +131,14 @@
       "body_en": "Every physician in the kingdom is summoned. They examine the serpents. They return with the same answer: the only food that will keep the serpents quiet is the fresh brain of a young man or woman. The Shahnameh does not slow here. It moves to the next scene quickly, because it knows that once the prescription is given, the thousand years follow without explanation needed. Zahhak accepts. The kitchens are reorganized.",
       "body_fa": "هر پزشکِ پادشاهی احضار می‌شود. ماران را معاینه می‌کنند. همگی با یک پاسخ برمی‌گردند: تنها خوراکی که ماران را ساکت نگه می‌دارد مغزِ تازه‌ی جوانِ مرد یا زنِ جوانِ تازه است. شاهنامه اینجا کُند نمی‌شود. به صحنه‌ی بعدی سریع می‌رود، چون می‌داند که یک بار نسخه داده شد، هزار سال بدون نیاز به توضیح پی می‌آیند. ضحاک می‌پذیرد. آشپزخانه‌ها سازماندهی مجدد می‌شوند.",
       "atmosphere": "court",
-      "image": "/assets/images/scenes/the-prescription-scene.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["serpent-price", "armayel-garmayel"]
+      "image": "/assets/images/scenes/shahnameh-chapter-5-the-prescription.jpg",
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "serpent-price",
+        "armayel-garmayel"
+      ]
     },
     {
       "id": "kaveh-at-the-throne",
@@ -128,9 +150,14 @@
       "body_en": "Kaveh has seventeen sons. Sixteen have been taken for the serpents. The seventeenth is before him now and the court documents require his signature — his consent to the taking. He signs. Then he tears it. He picks up the document and tears it apart in Zahhak's court. He takes the leather apron from his own shoulders — the mark of a blacksmith, his craft's badge — and wraps it around a spear. He walks out. The guards do not stop him. Some things carry their own authority.",
       "body_fa": "کاوه هفده پسر دارد. شانزده برای ماران برده شده‌اند. هفدهمی اکنون پیشِ اوست و اسنادِ دربار امضایش را می‌خواهند — رضایتش به برده‌شدن. امضا می‌کند. بعد پاره می‌کند. سند را برمی‌دارد و در دربارِ ضحاک پاره‌پاره می‌کند. پیش‌بندِ چرمی را — نشانِ آهنگری، نشانِ صنعتش — از شانه‌هایش برمی‌دارد و دور نیزه‌ای می‌پیچد. بیرون می‌رود. نگهبانان جلویش را نمی‌گیرند. برخی چیزها اقتدارِ خودشان را دارند.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/kaveh-at-throne-scene.png",
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["kaveh-banner", "derafsh-kaviani"]
+      "image": "/assets/images/scenes/shahnameh-chapter-5-kaveh-at-the-throne.jpg",
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "kaveh-banner",
+        "derafsh-kaviani"
+      ]
     },
     {
       "id": "fereydun-waits",
@@ -142,9 +169,15 @@
       "body_en": "Before Kaveh raises his banner, there is already a child in the mountains being fed by a divine bull named Birmaya. The child's name is Fereydun. Zahhak has heard prophecy: a boy nurtured by a bull will end his reign. He hunts the bull. He hunts the boy. He finds neither. The bull is killed but the boy is already gone — hidden in the mountains of Alborz by his mother. The thousand years are not over yet. But the thing that will end them is already alive.",
       "body_fa": "پیش از آنکه کاوه درفشش را بیفرازد، کودکی در کوه‌ها از گاوی الهی به نامِ برمایه تغذیه می‌شود. نامِ کودک فریدون است. ضحاک پیشگویی شنیده است: پسری که از گاو تغذیه شده شاهی‌اش را پایان خواهد داد. گاو را شکار می‌کند. پسر را شکار می‌کند. هیچ‌کدام را نمی‌یابد. گاو کشته می‌شود اما پسر از پیش رفته — مادرش او را در کوه‌های البرز پنهان کرده است. هزار سال هنوز تمام نشده. اما آنچه پایانش خواهد داد از پیش زنده است.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/fereydun-child-scene.png",
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["birmaya-bull", "fereydun-ch5", "alborz-refuge"]
+      "image": "/assets/images/scenes/shahnameh-chapter-5-the-child-and-the-bull.jpg",
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "birmaya-bull",
+        "fereydun-ch5",
+        "alborz-refuge"
+      ]
     }
   ],
   "characters": [

@@ -58,9 +58,13 @@
       "body_en": "The clay tablets are still warm from Tahmuras' hands. Jamshid takes them and reads them twice — not because he needs to read them twice, but because he wants to understand not just the letters but the decision behind them. His father traded mercy for knowledge. He intends to trade knowledge for permanence. The tablets go into a stone room. The demons are given new instructions. A civilization that can write can now plan.",
       "body_fa": "لوح‌های گِلی هنوز از دستانِ تهمورث گرمند. جمشید آن‌ها را می‌گیرد و دو بار می‌خواند — نه به این دلیل که نیاز دارد دو بار بخواند، بلکه چون می‌خواهد نه فقط حروف را بفهمد بلکه تصمیمِ پشتِ آن‌ها را. پدرش رحمت را با دانش معامله کرد. او می‌خواهد دانش را با ماندگاری معامله کند. لوح‌ها به اتاقی سنگی می‌روند. به دیوان دستورهای جدید داده می‌شود. تمدنی که می‌تواند بنویسد اکنون می‌تواند برنامه‌ریزی کند.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/heir-of-writing-scene.png",
-      "reward": { "xp": 35 },
-      "unlocks_codex": ["jamshid-inheritance"]
+      "image": "/assets/images/scenes/shahnameh-chapter-4-heir-of-writing.jpg",
+      "reward": {
+        "xp": 35
+      },
+      "unlocks_codex": [
+        "jamshid-inheritance"
+      ]
     },
     {
       "id": "four-orders",
@@ -72,9 +76,14 @@
       "body_en": "On the first day of his full reign, Jamshid calls the people together and speaks for a long time. He names four groups — not castes, not prisons, but callings, he says: Mobeds to keep the sacred fire and hold the old knowledge. Arteshtars to hold the border and answer what comes across it. Vastoshan to turn the earth and feed what grows. Ahnukhoshian to make the things that last beyond any single life. The people hear their names and go to their places. A civilization has just learned what it is.",
       "body_fa": "در اولین روزِ شاهیِ کاملش، جمشید مردم را گرد می‌آورد و مدتی طولانی سخن می‌گوید. چهار گروه نام می‌برد — نه کاست، نه زندان، بلکه رسالت، می‌گوید: موبدان تا آتشِ مقدس را نگه دارند و دانشِ کهن را حفظ کنند. ارتشتاران تا مرز را نگه دارند و به آنچه از آن سوی می‌آید پاسخ دهند. واستوشان تا زمین را بگردانند و آنچه می‌روید را تغذیه کنند. اهنوخوشان تا چیزهایی بسازند که از هر زندگیِ تکی فراتر می‌مانند. مردم نامشان را می‌شنوند و به جایگاهشان می‌روند. تمدنی تازه فهمیده که چیست.",
       "atmosphere": "court",
-      "image": "/assets/images/scenes/four-orders-scene.png",
-      "reward": { "xp": 40 },
-      "unlocks_codex": ["four-orders-codex", "mobeds-codex"]
+      "image": "/assets/images/scenes/shahnameh-chapter-4-the-four-orders.jpg",
+      "reward": {
+        "xp": 40
+      },
+      "unlocks_codex": [
+        "four-orders-codex",
+        "mobeds-codex"
+      ]
     },
     {
       "id": "the-crystal-throne",
@@ -86,9 +95,13 @@
       "body_en": "It takes three years to make. Not because the crystal is hard to work — it isn't, once you know how — but because Jamshid insists that every joint be invisible, every facet aligned with the angles of sunrise. When it is finished he does not sit in it immediately. He walks around it seven times, touching the edges. The craftsmen watch. He says nothing. Then he sits, and the sun comes through the crystal and his court is suddenly a room made entirely of light.",
       "body_fa": "ساختنش سه سال طول می‌کشد. نه به این دلیل که بلور کار کردن با آن سخت است — نیست، وقتی که بدانی چطور — بلکه چون جمشید اصرار دارد هر درزی نامرئی باشد و هر وجهی با زوایای طلوعِ آفتاب هم‌راستا. وقتی تمام می‌شود فوری نمی‌نشیند روی آن. هفت بار دور آن می‌گردد و لبه‌ها را لمس می‌کند. پیشه‌وران نگاه می‌کنند. هیچ نمی‌گوید. بعد می‌نشیند و آفتاب از بلور می‌تابد و دربارش ناگهان اتاقی می‌شود ساخته‌شده از روشنایی.",
       "atmosphere": "warm",
-      "image": "/assets/images/scenes/crystal-throne-scene.png",
-      "reward": { "xp": 50 },
-      "unlocks_codex": ["crystal-throne-codex"]
+      "image": "/assets/images/scenes/shahnameh-chapter-4-the-crystal-throne.jpg",
+      "reward": {
+        "xp": 50
+      },
+      "unlocks_codex": [
+        "crystal-throne-codex"
+      ]
     },
     {
       "id": "nowruz",
@@ -100,9 +113,13 @@
       "body_en": "He commands the demons: lift me. They grip the legs of the throne. Slowly, then all at once, the crystal throne rises from the mountain court. The people below go quiet. Then they see the sun strike the crystal and a second light blazes in the sky — not from a star but from a man on a throne — and they cannot help it: they shout. They call the day Nowruz, the new day, the new year. It will be celebrated for six thousand years.",
       "body_fa": "به دیوان فرمان می‌دهد: بالام برید. پایه‌های تخت را می‌گیرند. آرام، سپس یکباره، تختِ بلورین از درگاهِ کوهستانی بالا می‌رود. مردمِ پایین ساکت می‌شوند. بعد خورشید را می‌بینند که به بلور می‌تابد و روشنایی دومی در آسمان می‌درخشد — نه از ستاره‌ای که از مردی بر تخت — و نمی‌توانند جلویشان را بگیرند: فریاد می‌زنند. آن روز را نوروز می‌نامند، روزِ نو، سالِ نو. شش هزار سال جشن گرفته خواهد شد.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/nowruz-ascent-scene.png",
-      "reward": { "xp": 70 },
-      "unlocks_codex": ["nowruz-origin"]
+      "image": "/assets/images/scenes/shahnameh-chapter-4-the-nowruz-ascent.jpg",
+      "reward": {
+        "xp": 70
+      },
+      "unlocks_codex": [
+        "nowruz-origin"
+      ]
     },
     {
       "id": "three-hundred-years",
@@ -114,9 +131,13 @@
       "body_en": "Under Jamshid's reign the world forgets what a funeral looks like. No one dies. No one ages past their prime. The fields give more than planted. The rivers run clear in even the dry months. A child born in this age will not know what it means to watch a parent grow old. The chronicle does not say whether this is a gift or a debt. But it notes, very quietly, that things which do not change do not remember how to be grateful.",
       "body_fa": "در شاهیِ جمشید جهان فراموش می‌کند مراسمِ خاکسپاری چه شکلی دارد. کسی نمی‌میرد. کسی از اوجِ جوانی پیر نمی‌شود. مزارع بیشتر از آنچه کاشته شده می‌دهند. رودخانه‌ها حتی در ماه‌های خشک زلال جاری‌اند. کودکی که در این عصر به دنیا می‌آید نمی‌داند پدر یا مادری که پیر می‌شود را دیدن چه معناست. شاهنامه نمی‌گوید این هدیه است یا بدهی. اما بسیار آرام می‌نویسد که چیزهایی که تغییر نمی‌کنند یاد می‌گیرند نمی‌دانند چطور شکرگزار باشند.",
       "atmosphere": "warm",
-      "image": "/assets/images/scenes/three-hundred-years-scene.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["age-without-death"]
+      "image": "/assets/images/scenes/shahnameh-chapter-4-three-hundred-years.jpg",
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "age-without-death"
+      ]
     },
     {
       "id": "pride",
@@ -128,9 +149,14 @@
       "body_en": "Three hundred years into his reign, Jamshid summons his court — every lord, every mobed, every captain of the border — and speaks words no king of this chronicle has spoken before: I am the source of all of this. The fire, the iron, the four orders, the medicine, the ships, the sky you fly through on Nowruz. I am god. The Shahnameh does not describe thunder or earthquake. It says only that after those words, the farr — the divine grace that had sat in him for three hundred years — left his body like a bird off a branch. Quietly, without announcement. There and then not there.",
       "body_fa": "سیصد سال پس از آغازِ شاهیش، جمشید دربارش را احضار می‌کند — هر سرداری، هر موبدی، هر فرمانده‌ای در مرز — و کلماتی می‌گوید که هیچ شاهِ این تاریخ پیش از آن نگفته: من سرچشمه‌ی همه‌ی این‌هام. آتش، آهن، چهار طبقه، پزشکی، کشتی‌ها، آسمانی که در نوروز از آن می‌پرید. من خدایم. شاهنامه رعد و زلزله توصیف نمی‌کند. تنها می‌گوید پس از آن کلمات، فَر — موهبتِ الهی که سیصد سال در او نشسته بود — مثلِ پرنده‌ای از شاخه‌ای از تنش رفت. آرام، بدونِ اعلام. بود و سپس نبود.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/the-claim-scene.png",
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["farr-departs", "pride-of-jamshid"]
+      "image": "/assets/images/scenes/shahnameh-chapter-4-the-claim.jpg",
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "farr-departs",
+        "pride-of-jamshid"
+      ]
     },
     {
       "id": "zahhak-rises",
@@ -142,9 +168,14 @@
       "body_en": "When the farr leaves a king, the world does not immediately end. It simply stops holding the weight it used to hold. The lords who knelt begin to measure the distance to the nearest border. The mobeds read the old texts again and find warnings they had not noticed before. And from the desert south of Pars, a young man named Zahhak — born of an Arab lord, raised on ambition and a whisper from Ahriman — has already begun walking north. He has not yet kissed the shoulder of Iblis. He does not yet have the serpents. But he is walking. The chronicle's first great darkness is already in motion.",
       "body_fa": "وقتی فَر از شاهی می‌رود، جهان فوری به پایان نمی‌رسد. فقط دیگر آن وزنِ قبلی را نگه نمی‌دارد. اربابانی که زانو می‌زدند فاصله تا نزدیک‌ترین مرز را اندازه می‌گیرند. موبدان متونِ کهن را دوباره می‌خوانند و هشدارهایی می‌یابند که پیش از این متوجهشان نشده بودند. و از صحرایِ جنوبِ پارس، مرد جوانی به نامِ ضحاک — زاده‌ی یک ارباب عرب، پرورش‌یافته با بلندپروازی و نجوایی از اهریمن — از پیش راهِ شمال را آغاز کرده است. هنوز شانه‌ی ابلیس را نبوسیده. هنوز ماران را ندارد. اما دارد می‌آید. اولین تاریکیِ بزرگِ این تاریخ از پیش در حرکت است.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/zahhak-rises-scene.png",
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["zahhak-foreshadow", "ahriman-whisper"]
+      "image": "/assets/images/scenes/shahnameh-chapter-4-the-shadow-from-the-south.jpg",
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "zahhak-foreshadow",
+        "ahriman-whisper"
+      ]
     }
   ],
   "characters": [

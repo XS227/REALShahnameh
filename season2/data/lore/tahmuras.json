@@ -58,9 +58,13 @@
       "body_en": "Hushang's hands shake now when he lifts the hammer. He does not say this aloud, but Tahmuras has watched his father for thirty years and knows when iron teaches a man his limit. The forge passes not with ceremony but with a single morning: Hushang sets the hammer down, and Tahmuras picks it up. The mountain does not notice. The demons do.",
       "body_fa": "دستانِ هوشنگ حالا هنگامِ برداشتنِ چکش می‌لرزند. بلند نمی‌گوید، اما تهمورث سی سال است پدرش را می‌نگرد و می‌داند آهن چه هنگام به آدمی حدش را می‌نمایاند. آهنگری نه با مراسم که با یک صبح منتقل می‌شود: هوشنگ چکش را می‌گذارد، و تهمورث برمی‌دارد. کوه متوجه نمی‌شود. دیوان می‌شوند.",
       "atmosphere": "warm",
-      "image": "/assets/images/scenes/heir-to-forge-scene.png",
-      "reward": { "xp": 30 },
-      "unlocks_codex": ["tahmuras-inheritance"]
+      "image": "/assets/images/scenes/shahnameh-chapter-3-heir-to-the-forge.jpg",
+      "reward": {
+        "xp": 30
+      },
+      "unlocks_codex": [
+        "tahmuras-inheritance"
+      ]
     },
     {
       "id": "demons-at-the-edge",
@@ -72,9 +76,13 @@
       "body_en": "The scouts come back with the same report three nights in a row: fires in the hollows, sounds that are not wind, shapes at the tree-line that do not move when you look directly at them. Tahmuras does not send a fourth scout. He goes himself, carrying only the cypress-wood club his father left him. He wants them to see who holds it.",
       "body_fa": "سه شب پشتِ هم پیکان‌ها با همان گزارش برمی‌گردند: آتش در چاله‌ها، صداهایی که باد نیستند، شکل‌هایی در کنارِ درختان که وقتی مستقیم نگاهشان می‌کنی تکان نمی‌خورند. تهمورث پیکانِ چهارمی نمی‌فرستد. خودش می‌رود، تنها با چوبِ سروِ سیمرغ‌آیینی که پدرش برایش گذاشته. می‌خواهد ببینند چه کسی آن را دارد.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/demons-at-edge-scene.png",
-      "reward": { "xp": 40 },
-      "unlocks_codex": ["cypress-club"]
+      "image": "/assets/images/scenes/shahnameh-chapter-3-demons-at-the-edge.jpg",
+      "reward": {
+        "xp": 40
+      },
+      "unlocks_codex": [
+        "cypress-club"
+      ]
     },
     {
       "id": "riding-on-ahriman",
@@ -86,9 +94,14 @@
       "body_en": "No one in the chronicle before him has done this. Tahmuras wrests Ahriman — the lord of darkness, the father of all demons — from his throne in the smoke and bends him to the ground. He does not kill him. He mounts him. He rides the lord of evil through his own realm, banner raised, cypress club resting across his knees. The demons see their master carrying a king, and the world changes.",
       "body_fa": "هیچ‌کس در این تاریخ پیش از او این کار را نکرده است. تهمورث اهریمن را — سرورِ تاریکی، پدرِ همه‌ی دیوان — از تختش در دود می‌کَند و به زمین خم می‌کند. نمی‌کشدش. سوارش می‌شود. سرورِ شر را از میانِ قلمروی خودش می‌تازاند، درفشی برافراشته، چوبِ سرو آرام بر زانوانش. دیوان می‌بینند که اربابشان دارد شاهی را حمل می‌کند، و جهان دگرگون می‌شود.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/riding-ahriman-scene.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["ahriman-subdued", "div-band-title"]
+      "image": "/assets/images/scenes/shahnameh-chapter-3-riding-on-darkness.jpg",
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "ahriman-subdued",
+        "div-band-title"
+      ]
     },
     {
       "id": "chain-by-chain",
@@ -100,9 +113,13 @@
       "body_en": "The binding is methodical. Tahmuras does not rush. He moves through the demon realm as a craftsman moves through his forge — this angle, this grip, this chain link. A third of the demons fight and fall. Two-thirds fall to their knees before the club touches them. They have watched their lord ridden like a horse. They know what kind of king has come.",
       "body_fa": "به‌زنجیرکشیدن نظام‌مند است. تهمورث شتاب ندارد. از میانِ قلمروِ دیوان همان‌طور حرکت می‌کند که آهنگر از میانِ آهنگری — این زاویه، این گیره، این حلقه‌ی زنجیر. یک‌سومِ دیوان می‌جنگند و فرو می‌افتند. دوسوم پیش از آنکه چوب به آن‌ها برسد به زانو در می‌آیند. دیده‌اند که اربابشان همچون اسبی رانده شده. می‌دانند چه نوع شاهی آمده است.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/chain-by-chain-scene.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["the-binding"]
+      "image": "/assets/images/scenes/shahnameh-chapter-3-chain-by-chain.jpg",
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "the-binding"
+      ]
     },
     {
       "id": "the-bargain",
@@ -114,9 +131,13 @@
       "body_en": "Two-thirds of the chained demons are dragged before the throne. They do not beg with words — they beg with an offer. They say they know something Tahmuras does not: the shapes that hold thought, the marks that outlast the man who makes them. Writing. A secret older than their chains. Give us our lives, they say, and we will give you the alphabet. Tahmuras thinks for a long time. Then he says yes.",
       "body_fa": "دوسومِ دیوانِ به‌زنجیرکشیده پیشِ تخت کشیده می‌شوند. با کلام التماس نمی‌کنند — با پیشنهادی التماس می‌کنند. می‌گویند چیزی می‌دانند که تهمورث نمی‌داند: شکل‌هایی که اندیشه را در خود نگه می‌دارند، نشانه‌هایی که از آدمی که آن‌ها را می‌سازد ماندگارترند. نوشتار. رازی کهن‌تر از زنجیرهایشان. جانمان را بده، می‌گویند، تا الفبا بدهیمت. تهمورث مدتی درنگ می‌کند. بعد می‌گوید آری.",
       "atmosphere": "court",
-      "image": "/assets/images/scenes/the-bargain-scene.png",
-      "reward": { "xp": 70 },
-      "unlocks_codex": ["mercy-buys-knowledge"]
+      "image": "/assets/images/scenes/shahnameh-chapter-3-the-bargain.jpg",
+      "reward": {
+        "xp": 70
+      },
+      "unlocks_codex": [
+        "mercy-buys-knowledge"
+      ]
     },
     {
       "id": "thirty-alphabets",
@@ -128,9 +149,14 @@
       "body_en": "They teach through the night. Greek first — angular, proud. Then Tazi — fluid, rightward. Pahlavi — secretive, compressed. Sogdian — merchant's writing, wide as a trade road. And twenty-six more. By morning Tahmuras has something no king before him possessed: the means to make thought permanent. He does not celebrate. He sits with the clay tablets and copies each shape until his hands know them. Then he teaches his children.",
       "body_fa": "از شب می‌آموزند. ابتدا یونانی — زاویه‌دار، باشکوه. بعد تازی — روان، به راست. پهلوی — رازانه، فشرده. سغدی — خطِ بازرگانان، پهن‌دامن چون جاده‌ی تجارت. و بیست‌وشش دیگر. تا صبح تهمورث چیزی دارد که هیچ شاهی پیش از او نداشته: ابزارِ ماندگارکردنِ اندیشه. جشن نمی‌گیرد. با لوح‌های گِلی می‌نشیند و هر شکل را تکرار می‌کند تا دستانش آن‌ها را بشناسند. بعد به کودکانش می‌آموزد.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/thirty-alphabets-scene.png",
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["thirty-alphabets-codex", "writing-born"]
+      "image": "/assets/images/scenes/shahnameh-chapter-3-thirty-alphabets.jpg",
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "thirty-alphabets-codex",
+        "writing-born"
+      ]
     },
     {
       "id": "script-of-the-world",
@@ -142,9 +168,14 @@
       "body_en": "Tahmuras' reign is brief in the chronicle — the Shahnameh moves fast through the early kings. But what he leaves is not brief. Every word written in every tongue that followed carries a debt to the bargain at the demon throne. The next king, Jamshid, will build higher and fall farther. He will raise a crystal throne and ride it into the sky. His story is a warning about the gift Tahmuras used wisely: the farr, the divine grace, that departs when pride replaces wisdom.",
       "body_fa": "شاهیِ تهمورث در این تاریخ کوتاه است — شاهنامه از میانِ شاهانِ نخستین تند می‌گذرد. اما آنچه می‌گذارد کوتاه نیست. هر واژه‌ای که به هر زبانی نوشته می‌شود، وامدارِ آن معامله در تختِ دیوان است. شاهِ بعدی، جمشید، بلندتر خواهد ساخت و دورتر خواهد افتاد. تختِ بلورین برپا خواهد کرد و در آسمان خواهد تاخت. داستانش هشداری است درباره‌ی هدیه‌ای که تهمورث خردمندانه به‌کار برد: فَر، موهبتِ الهی، که با جایگزینِ خرد با تکبر می‌رود.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/script-of-world-scene.png",
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["jamshid-foreshadow-ch3", "farr-concept"]
+      "image": "/assets/images/scenes/shahnameh-chapter-3-the-script-of-the-world.jpg",
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "jamshid-foreshadow-ch3",
+        "farr-concept"
+      ]
     }
   ],
   "characters": [
