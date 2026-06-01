@@ -1112,6 +1112,15 @@
       market_note_live:      "TON market data · refreshes every 60s",
       market_note_stale:     "Last known data shown. Reconnecting…",
       market_note_connecting:"Connecting to TON market data…",
+      market_portfolio_lbl:  "REAL Balance",
+      market_total_earned:   "Total Earned",
+      market_peak:           "Peak Balance",
+      market_zar_bal:        "ZAR Balance",
+      market_buy_lbl:        "Buy REAL on DEX",
+      market_dex_stonfi_sub: "TON's leading DEX · swap any jetton",
+      market_dex_dedust_sub: "Automated liquidity on TON",
+      market_dex_tonkeeper_sub: "Built-in swap in your TON wallet",
+      market_title_label:    "REAL Market",
 
       /* ── Ad / tap buttons ── */
       btn_loading_ad:        "Loading Ad…",

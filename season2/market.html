@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Market</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202606012300" />
+  <link rel="stylesheet" href="tap.css?v=202605272200" />
+  <style>
+    /* ── Market page local overrides ── */
+    .market-page-head { padding: 18px 16px 4px; }
+    .market-page-head .page-sub { margin-top: 2px; }
+
+    /* Portfolio card */
+    .portfolio-card {
+      background: linear-gradient(135deg, rgba(244,197,107,.1) 0%, rgba(140,109,255,.07) 100%);
+      border: 1.5px solid rgba(244,197,107,.22);
+      border-radius: 14px;
+      padding: 18px 16px;
+    }
+    .portfolio-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+    }
+    .portfolio-balance {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--gold, #f4c56b);
+      letter-spacing: -.02em;
+    }
+    .portfolio-label {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .portfolio-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      border-top: 1px solid rgba(255,255,255,.07);
+      padding-top: 12px;
+      margin-top: 4px;
+    }
+    .pstat { text-align: center; }
+    .pstat-val { font-size: 14px; font-weight: 700; color: var(--text); }
+    .pstat-lbl { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+    /* Buy section */
+    .dex-grid { display: flex; flex-direction: column; gap: 10px; }
+    .dex-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 12px;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: background .15s;
+    }
+    .dex-row:active { background: rgba(255,255,255,.07); }
+    .dex-icon { font-size: 28px; flex-shrink: 0; }
+    .dex-info { flex: 1; min-width: 0; }
+    .dex-name { font-size: 13px; font-weight: 700; color: var(--text); }
+    .dex-sub  { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .dex-arrow { font-size: 18px; color: var(--muted); flex-shrink: 0; }
+
+    /* Section labels */
+    .mkt-section-lbl {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="app tap-app" style="gap:20px;">
+
+    <!-- ── Header ──────────────────────────────────────────────── -->
+    <section class="page-head market-page-head" style="margin-bottom:0;">
+      <div>
+        <h2 class="page-title" data-i18n="market">Market</h2>
+        <p class="page-sub" data-i18n="market_powered">powered by TON</p>
+      </div>
+      <span id="mkt-hdr-status" style="font-size:12px;color:var(--muted);" data-i18n="market_status_conn">● connecting</span>
+    </section>
+
+    <!-- ── My REAL Portfolio ─────────────────────────────────── -->
+    <section>
+      <div class="mkt-section-lbl" data-i18n="market_portfolio_lbl">My REAL Balance</div>
+      <div class="portfolio-card">
+        <div class="portfolio-row">
+          <div>
+            <div class="portfolio-label" data-i18n="market_portfolio_lbl">REAL Balance</div>
+            <div class="portfolio-balance">
+              <img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img"
+                   style="width:22px;height:22px;vertical-align:middle;"
+                   onerror="this.outerHTML='◆'">
+              <span data-portfolio-balance>—</span>
+            </div>
+          </div>
+          <button class="secondary-btn" style="font-size:11px;padding:8px 14px;" onclick="window.location.href='tap.html'">
+            ⚡ Forge more
+          </button>
+        </div>
+        <div class="portfolio-stats">
+          <div class="pstat">
+            <div class="pstat-val" data-portfolio-earned>—</div>
+            <div class="pstat-lbl" data-i18n="market_total_earned">Total Earned</div>
+          </div>
+          <div class="pstat">
+            <div class="pstat-val" data-portfolio-max>—</div>
+            <div class="pstat-lbl" data-i18n="market_peak">Peak Balance</div>
+          </div>
+          <div class="pstat">
+            <div class="pstat-val" data-portfolio-zar>—</div>
+            <div class="pstat-lbl" data-i18n="market_zar_bal">ZAR Balance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Live Price ─────────────────────────────────────────── -->
+    <section>
+      <div class="section-head" style="margin-bottom:10px;">
+        <h3><img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img"
+                 style="width:16px;height:16px;" onerror="this.outerHTML='◆'">
+          <span data-i18n="market_title_label">REAL Market</span></h3>
+        <span style="font-size:10px;color:var(--muted);" data-i18n="market_powered">powered by TON</span>
+      </div>
+
+      <div class="market-card-wrap" data-market-card data-state="connecting">
+        <div class="market-price-banner">
+          <div>
+            <div class="market-price-lbl" data-i18n="market_price_lbl">REAL Price</div>
+            <div class="market-price-val" data-market-price>—</div>
+            <div class="market-change" data-market-change>—</div>
+          </div>
+          <div class="market-chart-area" data-market-chart>
+            <svg viewBox="0 0 110 58" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#53d79c" stop-opacity=".3"/>
+                  <stop offset="100%" stop-color="#53d79c" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0,46 L12,40 L24,43 L36,34 L48,37 L60,27 L72,30 L84,18 L96,21 L110,10"
+                    fill="none" stroke="#53d79c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0,46 L12,40 L24,43 L36,34 L48,37 L60,27 L72,30 L84,18 L96,21 L110,10 L110,58 L0,58 Z"
+                    fill="url(#cg)"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="market-status-row">
+          <span class="market-status-dot" data-market-status data-i18n="market_status_conn">● connecting</span>
+          <span class="market-7d-label" data-i18n="market_7d">7 Day</span>
+        </div>
+
+        <div class="market-stats-row">
+          <div class="market-stat">
+            <div class="ms-lbl" data-i18n="market_liq">Liquidity</div>
+            <div class="ms-val" data-market-liquidity>—</div>
+          </div>
+          <div class="market-stat">
+            <div class="ms-lbl" data-i18n="market_trust">Trust Score</div>
+            <div class="ms-val trust">★ 4.2</div>
+          </div>
+          <div class="market-stat">
+            <div class="ms-lbl" data-i18n="market_holders">Holders</div>
+            <div class="ms-val" data-market-holders>—</div>
+          </div>
+        </div>
+
+        <div class="market-contract-row">
+          <span class="market-contract-lbl" data-i18n="market_contract">Contract</span>
+          <code class="market-contract-addr" data-contract-addr
+                data-full="EQDhq_DjQUMJqfXLP8K8J6SlOvon08XQQK0T49xon2e0xU8p">EQDhq…xU8p · TON</code>
+          <button class="market-copy-btn" data-copy-contract data-i18n="market_copy_btn">Copy</button>
+        </div>
+
+        <div class="market-links-row">
+          <a class="market-link-btn" href="https://dyor.io/dapps/games/shahnameh"
+             target="_blank" rel="noopener" data-i18n="market_dyor">View on DYOR ↗</a>
+          <a class="market-link-btn" href="#" data-tonviewer-link data-i18n="market_tonviewer">Tonviewer ↗</a>
+        </div>
+
+        <div class="market-note" data-market-note data-i18n="market_note">Connecting to TON market data…</div>
+      </div>
+    </section>
+
+    <!-- ── ZAR → REAL Swap ──────────────────────────────────── -->
+    <section>
+      <div class="section-head" style="margin-bottom:10px;">
+        <h3 data-i18n="swap_section_title">🪙 Convert ZAR → REAL</h3>
+        <span style="font-size:10px;color:var(--muted);" data-swap-rate-label>500 ZAR = 1 REAL</span>
+      </div>
+      <div class="swap-card">
+        <div class="swap-row">
+          <div class="swap-cell">
+            <div class="swap-lbl" data-i18n="swap_your_zar_lbl">Your ZAR</div>
+            <div class="swap-val" data-swap-zar-balance>0</div>
+          </div>
+          <div class="swap-arrow">→</div>
+          <div class="swap-cell">
+            <div class="swap-lbl" data-i18n="swap_receive_lbl">You receive</div>
+            <div class="swap-val swap-real-out" data-swap-real-out>0 REAL</div>
+          </div>
+        </div>
+        <div class="swap-input-row">
+          <div class="swap-input-wrap">
+            <span class="swap-ico">🪙</span>
+            <input type="number" class="swap-input" data-swap-input min="1" step="1"
+                   placeholder="ZAR amount…" data-i18n-attr="placeholder:swap_input_placeholder">
+          </div>
+          <button class="swap-btn" data-swap-btn disabled data-i18n="swap_btn_label">Swap ›</button>
+        </div>
+        <div class="swap-note" data-swap-note>Min: 500 ZAR</div>
+      </div>
+    </section>
+
+    <!-- ── Buy REAL on DEX ──────────────────────────────────── -->
+    <section>
+      <div class="mkt-section-lbl" data-i18n="market_buy_lbl">Buy REAL</div>
+      <div class="dex-grid">
+        <a class="dex-row" data-dex-link="stonfi" href="#" rel="noopener">
+          <div class="dex-icon">🔁</div>
+          <div class="dex-info">
+            <div class="dex-name">STON.fi</div>
+            <div class="dex-sub" data-i18n="market_dex_stonfi_sub">TON's leading DEX · swap any jetton</div>
+          </div>
+          <div class="dex-arrow">›</div>
+        </a>
+        <a class="dex-row" data-dex-link="dedust" href="#" rel="noopener">
+          <div class="dex-icon">💧</div>
+          <div class="dex-info">
+            <div class="dex-name">DeDust.io</div>
+            <div class="dex-sub" data-i18n="market_dex_dedust_sub">Automated liquidity on TON</div>
+          </div>
+          <div class="dex-arrow">›</div>
+        </a>
+        <a class="dex-row" data-dex-link="tonkeeper" href="#" rel="noopener">
+          <div class="dex-icon">💎</div>
+          <div class="dex-info">
+            <div class="dex-name">Tonkeeper</div>
+            <div class="dex-sub" data-i18n="market_dex_tonkeeper_sub">Built-in swap in your TON wallet</div>
+          </div>
+          <div class="dex-arrow">›</div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="home">Home</span></a>
+    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span data-i18n="tap">Tap</span></a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
+    <a class="nav-item" href="guild.html"><span class="ni-ico">🛡</span><span data-i18n="guild">Guild</span></a>
+    <a class="nav-item" href="social.html"><span class="ni-ico">👥</span><span data-i18n="social">Social</span></a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <script src="app.js?v=202606012300"></script>
+  <script src="i18n/en.js?v=202606012300"></script>
+  <script src="i18n/fa.js?v=202606012300"></script>
+  <script src="i18n/tg.js?v=202606012300"></script>
+  <script src="i18n.js?v=202605304000"></script>
+  <script src="resources.js?v=202605303800"></script>
+  <script src="sync.js?v=202605303800"></script>
+  <script src="tap.js?v=202605272200"></script>
+  <script>window.RealMarket = { endpoint: '/api/market/real' };</script>
+  <script src="market.js?v=202605304000"></script>
+  <script src="market-page.js?v=202606012300"></script>
+</body>
+</html>

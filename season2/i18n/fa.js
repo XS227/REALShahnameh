@@ -1116,6 +1116,15 @@
       market_note_live:      "داده‌های بازار TON · هر ۶۰ ثانیه بروز",
       market_note_stale:     "آخرین داده‌های شناخته‌شده. در حال اتصال مجدد…",
       market_note_connecting:"در حال اتصال به بازار TON…",
+      market_portfolio_lbl:  "موجودی REAL",
+      market_total_earned:   "کل کسب‌شده",
+      market_peak:           "بیشترین موجودی",
+      market_zar_bal:        "موجودی زر",
+      market_buy_lbl:        "خرید REAL در DEX",
+      market_dex_stonfi_sub: "بزرگ‌ترین DEX شبکه TON",
+      market_dex_dedust_sub: "نقدینگی خودکار روی TON",
+      market_dex_tonkeeper_sub: "سواپ داخلی در کیف‌پول TON",
+      market_title_label:    "بازار REAL",
 
       /* ── Ad / tap buttons ── */
       btn_loading_ad:        "تبلیغ بارگذاری می‌شود…",

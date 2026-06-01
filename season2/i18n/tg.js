@@ -1116,6 +1116,15 @@
       market_note_live:      "Маълумоти бозори TON · ҳар 60с навшавӣ",
       market_note_stale:     "Охирин маълумоти маълум. Пайваст меша…",
       market_note_connecting:"Пайваст шудан ба бозори TON…",
+      market_portfolio_lbl:  "Тавозуни REAL",
+      market_total_earned:   "Ҳамагӣ гирифта",
+      market_peak:           "Баландтарин тавозун",
+      market_zar_bal:        "Тавозуни ZAR",
+      market_buy_lbl:        "Харидани REAL дар DEX",
+      market_dex_stonfi_sub: "DEX-и пешбари шабакаи TON",
+      market_dex_dedust_sub: "Ликвидностии автоматӣ дар TON",
+      market_dex_tonkeeper_sub: "Свап дар дохили ҳамёни TON",
+      market_title_label:    "Бозори REAL",
 
       /* ── Ad / tap buttons ── */
       btn_loading_ad:        "Реклама боргузорӣ меша…",
