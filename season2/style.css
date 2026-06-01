@@ -124,7 +124,7 @@ a { color: inherit; }
   z-index: 1;
   width: min(460px, 100%);
   margin: 0 auto;
-  padding: 56px 16px 52px;
+  padding: 56px 16px calc(72px + env(safe-area-inset-bottom, 0px));
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -1306,7 +1306,7 @@ a { color: inherit; }
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  z-index: 100;
+  z-index: 200;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
@@ -1320,7 +1320,7 @@ a { color: inherit; }
   border: 1px solid var(--border-gold);
   border-bottom: 0;
   border-radius: 28px 28px 0 0;
-  padding: 18px 18px 28px;
+  padding: 18px 18px calc(max(28px, env(safe-area-inset-bottom, 0px) + 16px));
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.6);
@@ -5174,7 +5174,7 @@ body::after {
   background: linear-gradient(180deg, rgba(18,24,52,.98), rgba(10,14,36,.99));
   border: 1px solid var(--border);
   border-radius: var(--r-lg) var(--r-lg) 0 0;
-  padding: 24px 20px 36px;
+  padding: 24px 20px calc(max(36px, env(safe-area-inset-bottom, 0px) + 20px));
   width: 100%;
   max-width: 480px;
   animation: sheet-up .22s cubic-bezier(.22,1,.36,1);

@@ -104,7 +104,7 @@
 .chapter-body { background: #04050b; color: #e9e3d0; }
 
 .chapter-app {
-  padding: 0 0 110px;
+  padding: 0 0 calc(110px + env(safe-area-inset-bottom, 0px));
   min-height: 100vh;
   background:
     radial-gradient(120% 60% at 50% -10%, rgba(244, 197, 107, .08), transparent 65%),
@@ -673,7 +673,7 @@
 /* ----- scene reader modal ----- */
 .scene-modal {
   position: fixed; inset: 0;
-  z-index: 100;
+  z-index: 200;
   display: none;
   align-items: flex-end;
   justify-content: center;
@@ -783,7 +783,7 @@
 .scene-modal-body {
   position: relative;
   z-index: 2;
-  padding: 18px 18px 20px;
+  padding: 18px 18px calc(max(20px, env(safe-area-inset-bottom, 0px) + 12px));
   overflow-y: auto;
   flex: 1;
 }
@@ -934,7 +934,7 @@
 
 /* Parchment core */
 .desk-parchment {
-  padding: 28px 22px 32px;
+  padding: 28px 22px calc(max(32px, env(safe-area-inset-bottom, 0px) + 20px));
   background: #0e0c18;
   border-top: 2px solid rgba(244,197,107,.30);
 }
