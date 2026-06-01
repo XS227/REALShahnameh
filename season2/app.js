@@ -1593,10 +1593,13 @@
           if (h4)   h4.textContent   = ch.title || h4.textContent;
           if (copy) copy.textContent = ch.summary || ch.story?.slice(0, 140) + "…" || copy.textContent;
           // status -> classes
+          const playerDone = ch.slug
+            ? ((() => { try { return localStorage.getItem("real_chapter_done_" + ch.slug) === "1"; } catch { return false; } })())
+            : false;
           card.classList.remove("done", "active", "locked");
-          if (ch.status === "completed")       card.classList.add("done");
-          else if (ch.status === "available" || ch.status === "published") card.classList.add("active");
-          else                                  card.classList.add("locked");
+          if (playerDone)                                                    card.classList.add("done");
+          else if (ch.status === "available" || ch.status === "published")  card.classList.add("active");
+          else                                                               card.classList.add("locked");
           // node text
           const node = card.querySelector(".node");
           if (node) {
@@ -1621,9 +1624,11 @@
           }
         });
 
-        // Progress card
+        // Progress card — count player-completed chapters via localStorage flags
         const total = body.totalChapters || body.chapters.length;
-        const done  = body.chapters.filter(c => c.status === "completed").length;
+        const done  = body.chapters.filter(c => {
+          try { return c.slug && localStorage.getItem("real_chapter_done_" + c.slug) === "1"; } catch { return false; }
+        }).length;
         const pct   = total ? Math.round((done / total) * 100) : 0;
         const elDone = $("[data-chapters-done]");
         const elPct  = $("[data-chapters-pct]");
@@ -1814,9 +1819,19 @@
         Player.addResource("xp",   data.xp);
         Player.addResource("real", data.real);
         Player.addResource("farr", 1);
-        // Write chapter-done flag consumed by heroes.js prereq system
+        // Write chapter-done flag consumed by heroes.js / persia-map / home progress
         try {
-          const _cs = { 1:"keyumars", 2:"hushang", 3:"tahmuras", 4:"jamshid", 5:"zahhak" };
+          const _cs = {
+            1:"keyumars",         2:"hushang",            3:"tahmuras",
+            4:"jamshid",          5:"zahhak",              6:"fereydun",
+            7:"manuchehr",        8:"nozar",               9:"zal",
+            10:"rudabeh",         11:"birth-of-rostam",    12:"rostam",
+            13:"sohrab",          14:"siavash",            15:"kay-kavus",
+            16:"kay-khosrow",     17:"akvan",              18:"bijan-manijeh",
+            19:"great-war-turan", 20:"lohrasp",            21:"goshtasp",
+            22:"esfandiyar",      23:"seven-labours-esp",  24:"clash-rostam-esp",
+            25:"simorgh",
+          };
           if (_cs[currentId]) localStorage.setItem("real_chapter_done_" + _cs[currentId], "1");
         } catch (_) {}
         if (window.RealSync) { window.RealSync.syncQuest("quiz"); window.RealSync.syncBalance(); }

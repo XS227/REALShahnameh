@@ -26,8 +26,14 @@
   const escapeAttr = (s) => escapeHtml(s);
 
   /* ── Chapter progression state ─────────────────────────────────────────── */
-  /* Ordered list of chapter slugs as shipped — extend when new chapters go live */
-  const CHAPTER_SLUGS = ["keyumars", "hushang", "tahmuras", "jamshid", "zahhak", "fereydun", "manuchehr"];
+  /* Full canonical slug list — must match catalog API order. */
+  const CHAPTER_SLUGS = [
+    "keyumars","hushang","tahmuras","jamshid","zahhak",
+    "fereydun","manuchehr","nozar","zal","rudabeh",
+    "birth-of-rostam","rostam","sohrab","siavash","kay-kavus",
+    "kay-khosrow","akvan","bijan-manijeh","great-war-turan","lohrasp",
+    "goshtasp","esfandiyar","seven-labours-esp","clash-rostam-esp","simorgh",
+  ];
 
   /* Minimal fallback data so the journey card renders immediately from localStorage */
   const CHAPTER_FALLBACK = {

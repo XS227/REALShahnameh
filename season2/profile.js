@@ -533,14 +533,15 @@
 
     const liveP  = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
     const localP = (() => { try { return JSON.parse(localStorage.getItem('real_player_state_v1') || '{}'); } catch { return {}; } })();
+    const _offlineXp = Math.max(liveP.xp || 0, localP.xp || 0);
     _serverUser = {
-      xp:           Math.max(liveP.xp      || 0, localP.xp      || 0),
+      xp:           _offlineXp,
       balance:      Math.max(liveP.balance  || 0, localP.balance  || 0),
       real_balance: Math.max(liveP.balance  || 0, localP.balance  || 0),
       farr:         Math.max(liveP.farr     || 0, localP.farr     || 0),
       gems:         Math.max(liveP.gems     || 0, localP.gems     || 0),
       zar:          Math.max(liveP.zar      || 0, localP.zar      || 0),
-      level:        liveP.level       || localP.level       || 1,
+      level:        Math.max(1, Math.floor(_offlineXp / 1000)),
       daily_streak: liveP.dailyStreak || localP.dailyStreak || 1,
       verified_referral_count: liveP.referrals || localP.referrals || 0,
       last_checkin_date: localStorage.getItem('real_last_checkin_date') || '',

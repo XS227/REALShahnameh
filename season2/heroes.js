@@ -17,12 +17,18 @@
   const RARITY_COST = { common: 500, rare: 2000, epic: 5000, legend: 10000, mythic: 25000 };
   const RARITY_ZAR  = { common: 2,   rare: 8,    epic: 20,   legend: 50,    mythic: 120 };
 
-  /* Map chapter number → its localStorage slug (from chapter.js `real_chapter_done_${SLUG}`) */
+  /* Map chapter number → its localStorage slug (must match catalog API slugs) */
   const CH_SLUG = {
-    1: "keyumars", 2: "hushang", 3: "tahmuras", 4: "jamshid",
-    5: "zahhak", 6: "fereydun", 7: "manuchehr", 8: "nozar",
-    9: "zal", 10: "rudabeh", 12: "rostam",
-    "haft-khan": "rudabeh", // Haft Khan unlocks after Rudabeh (Rostam born)
+    1:  "keyumars",        2:  "hushang",           3:  "tahmuras",
+    4:  "jamshid",         5:  "zahhak",             6:  "fereydun",
+    7:  "manuchehr",       8:  "nozar",              9:  "zal",
+    10: "rudabeh",         11: "birth-of-rostam",    12: "rostam",
+    13: "sohrab",          14: "siavash",            15: "kay-kavus",
+    16: "kay-khosrow",     17: "akvan",              18: "bijan-manijeh",
+    19: "great-war-turan", 20: "lohrasp",            21: "goshtasp",
+    22: "esfandiyar",      23: "seven-labours-esp",  24: "clash-rostam-esp",
+    25: "simorgh",
+    "haft-khan": "rudabeh",
   };
 
   const isChapterDone = (n) => {

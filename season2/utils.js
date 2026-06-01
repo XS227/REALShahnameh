@@ -57,5 +57,31 @@
       ? window.RealI18N.compactNumber(val)
       : String(Number(val) || 0);
 
-  window.RealUtils = { updateGlobalZar, getAvatarFallback, formatCryptoValue };
+  /* ── Canonical chapter slug list (matches catalog API order, 25 available chapters) ──
+     All other JS files that need to check chapter completion should use this list.
+     Source of truth: /api/catalog/chapters — slugs are the keys for real_chapter_done_* flags. */
+  const CHAPTER_SLUGS = [
+    "keyumars","hushang","tahmuras","jamshid","zahhak",
+    "fereydun","manuchehr","nozar","zal","rudabeh",
+    "birth-of-rostam","rostam","sohrab","siavash","kay-kavus",
+    "kay-khosrow","akvan","bijan-manijeh","great-war-turan","lohrasp",
+    "goshtasp","esfandiyar","seven-labours-esp","clash-rostam-esp","simorgh",
+  ];
+
+  const isChapterDone = (slug) => {
+    try { return localStorage.getItem("real_chapter_done_" + slug) === "1"; } catch { return false; }
+  };
+
+  const getChapterDoneCount = () => CHAPTER_SLUGS.filter(isChapterDone).length;
+
+  const getActiveChapterSlug = () =>
+    CHAPTER_SLUGS.find(s => !isChapterDone(s)) || CHAPTER_SLUGS[CHAPTER_SLUGS.length - 1];
+
+  /* Derive player level from XP — consistent formula used everywhere */
+  const xpToLevel = (xp) => Math.max(1, Math.floor((xp || 0) / 1000));
+
+  window.RealUtils = {
+    updateGlobalZar, getAvatarFallback, formatCryptoValue,
+    CHAPTER_SLUGS, isChapterDone, getChapterDoneCount, getActiveChapterSlug, xpToLevel,
+  };
 })();

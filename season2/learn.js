@@ -33,7 +33,10 @@
     }
 
     const total = totalChapters || chapters.length;
-    const doneCount = chapters.filter((c) => c.status === "completed").length;
+    const doneCount = chapters.filter((c) =>
+      (typeof localStorage !== "undefined") &&
+      localStorage.getItem("real_chapter_done_" + c.slug) === "1"
+    ).length;
     const pct = Math.round((doneCount / total) * 100);
     const doneEl = $("[data-chapters-done]");
     const pctEl  = $("[data-chapters-pct]");
