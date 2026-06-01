@@ -729,7 +729,7 @@
       { file: "persia-map.html",      ico: "🌍", key: "nav_map",       section: "world" },
       { file: "offerings.html",       ico: "🔥", key: "nav_offerings", section: "world" },
       { file: "hakim.html",           ico: "🤖", key: "nav_hakim",     section: "world", cls: "hakim-link" },
-      { file: null,                   ico: "⚔",  key: "guild",         section: "more",  coming: true },
+      { file: "guild.html",           ico: "⚔",  key: "guild",         section: "more" },
       { file: null,                   ico: "🛒", key: "market",        section: "more",  coming: true },
       { file: null,                   ico: "📦", key: "inventory",     section: "more",  coming: true },
       { file: "profile.html",         ico: "👤", key: "profile",       section: "more"  },
