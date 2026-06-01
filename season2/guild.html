@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>REAL Shahnameh — Guild</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202606011200" />
+  <link rel="stylesheet" href="guild.css?v=202606011200" />
+</head>
+<body>
+  <main class="guild-app" id="guild-app">
+
+    <!-- No-guild state (hidden until JS renders) -->
+    <div id="guild-no-clan" style="display:none;">
+      <section class="page-head">
+        <div>
+          <h2 class="page-title" data-i18n="guild_title">Guild</h2>
+          <p class="page-sub" data-i18n="guild_no_clan_sub">Join or found a guild to march together.</p>
+        </div>
+      </section>
+      <div id="guild-no-clan-body"></div>
+    </div>
+
+    <!-- Guild page (hidden until JS confirms membership) -->
+    <div id="guild-main" style="display:none;">
+
+      <!-- Guild hero header -->
+      <div class="guild-hero" id="guild-hero">
+        <div class="guild-hero-badge" id="guild-hero-badge">G</div>
+        <div class="guild-hero-info">
+          <div class="guild-hero-name" id="guild-hero-name">Guild</div>
+          <div class="guild-hero-motto" id="guild-hero-motto"></div>
+          <div class="guild-hero-meta" id="guild-hero-meta"></div>
+        </div>
+        <div class="guild-hero-tier" id="guild-hero-tier">
+          <span class="guild-tier-icon">🛡</span>
+          <span class="guild-tier-label" id="guild-tier-label">Warband</span>
+        </div>
+      </div>
+
+      <!-- Guild stats strip -->
+      <div class="guild-stats-strip" id="guild-stats-strip">
+        <div class="guild-stat">
+          <div class="guild-stat-val" id="gstat-members">—</div>
+          <div class="guild-stat-lbl" data-i18n="guild_stat_members">Warriors</div>
+        </div>
+        <div class="guild-stat">
+          <div class="guild-stat-val" id="gstat-real">—</div>
+          <div class="guild-stat-lbl" data-i18n="guild_stat_real">REAL Earned</div>
+        </div>
+        <div class="guild-stat">
+          <div class="guild-stat-val" id="gstat-zar">—</div>
+          <div class="guild-stat-lbl" data-i18n="guild_stat_zar">ZAR/hr</div>
+        </div>
+        <div class="guild-stat">
+          <div class="guild-stat-val" id="gstat-rank">—</div>
+          <div class="guild-stat-lbl" data-i18n="guild_stat_rank">War Rank</div>
+        </div>
+      </div>
+
+      <!-- 4 tabs -->
+      <div class="guild-tabs" id="guild-tabs">
+        <button class="guild-tab active" data-guild-tab="overview" data-i18n="guild_tab_overview">Overview</button>
+        <button class="guild-tab" data-guild-tab="treasury" data-i18n="guild_tab_treasury">Treasury</button>
+        <button class="guild-tab" data-guild-tab="quests" data-i18n="guild_tab_quests">Quests</button>
+        <button class="guild-tab" data-guild-tab="wars" data-i18n="guild_tab_wars">Wars</button>
+      </div>
+
+      <!-- Tab panels -->
+      <div id="guild-panel-overview" class="guild-panel"></div>
+      <div id="guild-panel-treasury" class="guild-panel" style="display:none;"></div>
+      <div id="guild-panel-quests"   class="guild-panel" style="display:none;"></div>
+      <div id="guild-panel-wars"     class="guild-panel" style="display:none;"></div>
+
+    </div>
+
+    <!-- Loading skeleton -->
+    <div id="guild-loading">
+      <div class="guild-skel guild-skel-hero"></div>
+      <div class="guild-skel guild-skel-strip"></div>
+      <div class="guild-skel guild-skel-tabs"></div>
+      <div class="guild-skel guild-skel-card"></div>
+      <div class="guild-skel guild-skel-card" style="height:90px;"></div>
+    </div>
+
+  </main>
+
+  <!-- Contribute modal -->
+  <div class="guild-modal-overlay" id="contrib-modal" aria-hidden="true" style="display:none;">
+    <div class="guild-modal-sheet">
+      <div class="guild-modal-header">
+        <h3 data-i18n="guild_contrib_title">Contribute to Treasury</h3>
+        <button class="guild-modal-close" id="contrib-modal-close" aria-label="Close">✕</button>
+      </div>
+      <p class="guild-modal-desc" data-i18n="guild_contrib_desc">Contribute REAL from your balance to the guild treasury. All members benefit from unlocked upgrades.</p>
+      <div class="guild-input-row">
+        <button class="guild-amount-btn" data-amount="1000">1K</button>
+        <button class="guild-amount-btn" data-amount="5000">5K</button>
+        <button class="guild-amount-btn" data-amount="10000">10K</button>
+        <button class="guild-amount-btn" data-amount="50000">50K</button>
+      </div>
+      <div class="guild-custom-row">
+        <input class="guild-contrib-input" id="contrib-amount" type="number" min="100" max="1000000"
+               placeholder="Custom amount…" />
+        <span class="guild-contrib-unit">REAL</span>
+      </div>
+      <div class="guild-contrib-balance" id="contrib-balance"></div>
+      <button class="primary-btn btn-block" id="contrib-confirm-btn" data-i18n="guild_contrib_confirm">Contribute</button>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><span class="ni-ico">🏠</span><span data-i18n="home">Home</span></a>
+    <a class="nav-item" href="tap.html"><span class="ni-ico">⚡</span><span data-i18n="tap">Tap</span></a>
+    <a class="nav-item" href="heroes.html"><span class="ni-ico">⚔</span><span data-i18n="heroes">Heroes</span></a>
+    <a class="nav-item" href="learn.html"><span class="ni-ico">📜</span><span data-i18n="learn">Learn</span></a>
+    <a class="nav-item" href="earn.html"><span class="ni-ico">💎</span><span data-i18n="earn">Earn</span></a>
+    <a class="nav-item active" href="social.html"><span class="ni-ico">👥</span><span data-i18n="social">Social</span></a>
+  </nav>
+
+  <div class="toast" data-toast></div>
+  <script src="app.js?v=202605302600"></script>
+  <script src="i18n/en.js?v=202606011200"></script>
+  <script src="i18n/fa.js?v=202606011200"></script>
+  <script src="i18n/tg.js?v=202606011200"></script>
+  <script src="i18n.js?v=202605304000"></script>
+  <script src="resources.js?v=202605303800"></script>
+  <script src="sync.js?v=202605303800"></script>
+  <script src="guild.js?v=202606011200"></script>
+</body>
+</html>

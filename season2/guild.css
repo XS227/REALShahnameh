@@ -1,0 +1,701 @@
+/* ==========================================================================
+   REAL Shahnameh — Guild Page
+   ========================================================================== */
+
+/* ── Layout ──────────────────────────────────────────────────────────────── */
+
+.guild-app {
+  padding: 0 0 80px;
+  min-height: 100vh;
+}
+
+/* ── No-clan state ───────────────────────────────────────────────────────── */
+
+#guild-no-clan {
+  padding: 0 16px;
+}
+
+#guild-no-clan .page-head {
+  padding-top: 20px;
+  margin-bottom: 8px;
+}
+
+.guild-no-clan-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.guild-no-clan-cta .primary-btn,
+.guild-no-clan-cta .secondary-btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* ── Guild hero header ───────────────────────────────────────────────────── */
+
+.guild-hero {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 16px 16px;
+  background: linear-gradient(135deg, rgba(140,109,255,.18) 0%, rgba(244,197,107,.08) 100%);
+  border-bottom: 1px solid rgba(244,197,107,.12);
+  position: relative;
+}
+
+.guild-hero-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--violet, #8c6dff) 0%, #6a4fd4 100%);
+  border: 2px solid rgba(244,197,107,.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(140,109,255,.35);
+  overflow: hidden;
+}
+
+.guild-hero-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.guild-hero-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.guild-hero-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gold, #f4c56b);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guild-hero-motto {
+  font-size: 12px;
+  color: var(--muted, #8a7fc4);
+  margin-top: 2px;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guild-hero-meta {
+  font-size: 11px;
+  color: var(--muted, #8a7fc4);
+  margin-top: 4px;
+}
+
+.guild-hero-tier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.guild-tier-icon {
+  font-size: 22px;
+}
+
+.guild-tier-label {
+  font-size: 10px;
+  color: var(--muted, #8a7fc4);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+/* ── Stats strip ─────────────────────────────────────────────────────────── */
+
+.guild-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(255,255,255,.03);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.guild-stat {
+  padding: 10px 4px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,.06);
+}
+
+.guild-stat:last-child {
+  border-right: none;
+}
+
+.guild-stat-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold, #f4c56b);
+  line-height: 1.2;
+}
+
+.guild-stat-lbl {
+  font-size: 10px;
+  color: var(--muted, #8a7fc4);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Tabs ────────────────────────────────────────────────────────────────── */
+
+.guild-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  background: var(--bg-1, #0e0f1c);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.guild-tab {
+  padding: 10px 4px;
+  background: none;
+  border: none;
+  color: var(--muted, #8a7fc4);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color .15s, border-color .15s;
+  text-align: center;
+}
+
+.guild-tab.active {
+  color: var(--gold, #f4c56b);
+  border-bottom-color: var(--gold, #f4c56b);
+}
+
+/* ── Panels ──────────────────────────────────────────────────────────────── */
+
+.guild-panel {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── Overview panel ──────────────────────────────────────────────────────── */
+
+.guild-member-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.guild-member-row:last-child {
+  border-bottom: none;
+}
+
+.guild-member-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(140,109,255,.25);
+  border: 1.5px solid rgba(140,109,255,.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--violet, #8c6dff);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.guild-member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.guild-member-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.guild-member-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text, #e8e0ff);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guild-member-sub {
+  font-size: 11px;
+  color: var(--muted, #8a7fc4);
+  margin-top: 1px;
+}
+
+.guild-member-tag {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.guild-tag-leader {
+  background: rgba(244,197,107,.15);
+  color: var(--gold, #f4c56b);
+  border: 1px solid rgba(244,197,107,.3);
+}
+
+.guild-tag-member {
+  background: rgba(140,109,255,.12);
+  color: var(--violet, #8c6dff);
+  border: 1px solid rgba(140,109,255,.25);
+}
+
+.guild-actions-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.guild-actions-row .secondary-btn {
+  flex: 1;
+}
+
+/* ── Treasury panel ──────────────────────────────────────────────────────── */
+
+.guild-treasury-banner {
+  background: linear-gradient(135deg, rgba(244,197,107,.12) 0%, rgba(140,109,255,.08) 100%);
+  border: 1px solid rgba(244,197,107,.2);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.guild-treasury-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.guild-treasury-amount {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--gold, #f4c56b);
+  letter-spacing: -.02em;
+}
+
+.guild-treasury-unit {
+  font-size: 13px;
+  color: var(--muted, #8a7fc4);
+  margin-top: 2px;
+}
+
+.guild-treasury-sub {
+  font-size: 11px;
+  color: var(--muted, #8a7fc4);
+  margin-top: 6px;
+}
+
+.guild-upgrade-card {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.guild-upgrade-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.guild-upgrade-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.guild-upgrade-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text, #e8e0ff);
+}
+
+.guild-upgrade-desc {
+  font-size: 11px;
+  color: var(--muted, #8a7fc4);
+  margin-top: 2px;
+}
+
+.guild-upgrade-cost {
+  font-size: 11px;
+  color: var(--gold, #f4c56b);
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.guild-upgrade-btn {
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid rgba(244,197,107,.4);
+  background: rgba(244,197,107,.12);
+  color: var(--gold, #f4c56b);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .15s;
+  flex-shrink: 0;
+}
+
+.guild-upgrade-btn:hover {
+  background: rgba(244,197,107,.22);
+}
+
+.guild-upgrade-btn:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+/* ── Quests panel ────────────────────────────────────────────────────────── */
+
+.guild-quest-card {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.guild-quest-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.guild-quest-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.guild-quest-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text, #e8e0ff);
+  flex: 1;
+}
+
+.guild-quest-reward {
+  font-size: 11px;
+  color: var(--gold, #f4c56b);
+  font-weight: 600;
+}
+
+.guild-quest-progress-wrap {
+  height: 5px;
+  background: rgba(255,255,255,.08);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.guild-quest-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--violet, #8c6dff), var(--gold, #f4c56b));
+  border-radius: 99px;
+  transition: width .4s ease;
+}
+
+.guild-quest-meta {
+  font-size: 11px;
+  color: var(--muted, #8a7fc4);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ── Wars panel ──────────────────────────────────────────────────────────── */
+
+.guild-wars-coming {
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--muted, #8a7fc4);
+}
+
+.guild-wars-coming-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.guild-wars-coming-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text, #e8e0ff);
+  margin-bottom: 6px;
+}
+
+.guild-war-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.guild-war-row:last-child {
+  border-bottom: none;
+}
+
+.guild-war-rank {
+  width: 26px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted, #8a7fc4);
+  flex-shrink: 0;
+}
+
+.guild-war-rank-1 { color: #ffd700; }
+.guild-war-rank-2 { color: #c0c0c0; }
+.guild-war-rank-3 { color: #cd7f32; }
+
+.guild-war-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(140,109,255,.2);
+  border: 1.5px solid rgba(140,109,255,.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--violet, #8c6dff);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.guild-war-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.guild-war-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.guild-war-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text, #e8e0ff);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guild-war-sub {
+  font-size: 11px;
+  color: var(--muted, #8a7fc4);
+  margin-top: 1px;
+}
+
+.guild-war-score {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold, #f4c56b);
+  flex-shrink: 0;
+}
+
+.guild-war-you {
+  background: rgba(244,197,107,.06);
+  border-radius: 8px;
+  padding: 0 6px;
+}
+
+/* ── Modal overlay ───────────────────────────────────────────────────────── */
+
+.guild-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.65);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 200;
+  backdrop-filter: blur(3px);
+}
+
+.guild-modal-sheet {
+  background: var(--bg-1, #0e0f1c);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 20px 20px 0 0;
+  padding: 20px 20px 36px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 -8px 40px rgba(0,0,0,.5);
+}
+
+.guild-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.guild-modal-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold, #f4c56b);
+}
+
+.guild-modal-close {
+  background: none;
+  border: none;
+  color: var(--muted, #8a7fc4);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 6px;
+  line-height: 1;
+}
+
+.guild-modal-desc {
+  font-size: 12px;
+  color: var(--muted, #8a7fc4);
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.guild-input-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.guild-amount-btn {
+  padding: 9px 4px;
+  background: rgba(140,109,255,.12);
+  border: 1px solid rgba(140,109,255,.3);
+  border-radius: 8px;
+  color: var(--violet, #8c6dff);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+  text-align: center;
+}
+
+.guild-amount-btn.active,
+.guild-amount-btn:hover {
+  background: rgba(140,109,255,.25);
+  border-color: var(--violet, #8c6dff);
+}
+
+.guild-custom-row {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  padding: 0 12px;
+  margin-bottom: 10px;
+}
+
+.guild-contrib-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text, #e8e0ff);
+  font-size: 15px;
+  padding: 11px 0;
+}
+
+.guild-contrib-unit {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted, #8a7fc4);
+}
+
+.guild-contrib-balance {
+  font-size: 12px;
+  color: var(--muted, #8a7fc4);
+  margin-bottom: 16px;
+}
+
+/* ── Loading skeleton ────────────────────────────────────────────────────── */
+
+#guild-loading {
+  padding: 0 16px 16px;
+}
+
+.guild-skel {
+  background: rgba(255,255,255,.06);
+  border-radius: 10px;
+  animation: skel-pulse 1.4s ease-in-out infinite;
+  margin-bottom: 12px;
+}
+
+.guild-skel-hero   { height: 88px; }
+.guild-skel-strip  { height: 52px; }
+.guild-skel-tabs   { height: 40px; }
+.guild-skel-card   { height: 120px; }
+
+@keyframes skel-pulse {
+  0%, 100% { opacity: .5; }
+  50%       { opacity: .2; }
+}
+
+/* ── Section header helper ───────────────────────────────────────────────── */
+
+.guild-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.guild-section-head h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted, #8a7fc4);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.guild-section-head span {
+  font-size: 12px;
+  color: var(--muted, #8a7fc4);
+}
+
+/* ── Empty state ─────────────────────────────────────────────────────────── */
+
+.guild-empty {
+  text-align: center;
+  padding: 24px 16px;
+  color: var(--muted, #8a7fc4);
+  font-size: 13px;
+}

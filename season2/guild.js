@@ -1,0 +1,584 @@
+/* ==========================================================================
+   REAL Shahnameh — Guild Page (guild.js)
+   Dedicated full-page view for a player's clan/guild.
+   Uses existing /api/season2/clan/* endpoints.
+   ========================================================================== */
+(() => {
+  'use strict';
+
+  const RT = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">';
+
+  /* ── Helpers ─────────────────────────────────────────────────────────── */
+
+  const t   = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  const fmtN = (n)   => (window.RealI18N && window.RealI18N.compactNumber)
+    ? window.RealI18N.compactNumber(n) : String(Number(n) || 0);
+  const fmtNF = (n)  => (window.RealI18N && window.RealI18N.formatNumber)
+    ? window.RealI18N.formatNumber(Number(n) || 0) : String(Number(n) || 0);
+
+  const get = (url) =>
+    fetch(url, { cache: 'no-store' })
+      .then(r => r.ok ? r.json() : null)
+      .catch(() => null);
+
+  const post = (url, body) =>
+    fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+      keepalive: true,
+    }).then(r => r.ok ? r.json() : null).catch(() => null);
+
+  const tgUser = () => {
+    try {
+      return (window.Telegram?.WebApp?.initDataUnsafe?.user) || null;
+    } catch { return null; }
+  };
+
+  const localPlayer = () => {
+    try { return JSON.parse(localStorage.getItem('real_player_state_v1') || '{}'); }
+    catch { return {}; }
+  };
+
+  const showToast = (msg) => {
+    const el = document.querySelector('[data-toast]');
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 2800);
+  };
+
+  /* ── Guild tier logic ────────────────────────────────────────────────── */
+
+  const GUILD_TIERS = [
+    { min: 0,  label: 'Lone Warrior',      icon: '⚔' },
+    { min: 3,  label: 'Warband',            icon: '🛡' },
+    { min: 10, label: 'Clan',               icon: '🏹' },
+    { min: 25, label: 'War Council',        icon: '🦁' },
+    { min: 50, label: "Shah's Vanguard",    icon: '👑' },
+  ];
+
+  const tierFor = (memberCount) => {
+    let cur = GUILD_TIERS[0];
+    for (const t of GUILD_TIERS) if (memberCount >= t.min) cur = t;
+    return cur;
+  };
+
+  /* ── Tab management ─────────────────────────────────────────────────── */
+
+  const showTab = (name) => {
+    document.querySelectorAll('.guild-tab').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.guildTab === name);
+    });
+    document.querySelectorAll('.guild-panel').forEach(panel => {
+      panel.style.display = panel.id === `guild-panel-${name}` ? '' : 'none';
+    });
+  };
+
+  const wireTabs = () => {
+    document.querySelectorAll('.guild-tab').forEach(btn => {
+      btn.addEventListener('click', () => showTab(btn.dataset.guildTab));
+    });
+  };
+
+  /* ── Populate guild hero header ──────────────────────────────────────── */
+
+  const populateHero = (clan, u) => {
+    const tier    = tierFor(clan.member_count || 1);
+    const initial = clan.clan_name.charAt(0).toUpperCase();
+    const isLeader = u && clan.leader_id === String(u.id);
+
+    const badgeEl = document.getElementById('guild-hero-badge');
+    if (badgeEl) {
+      if (clan.clan_photo) {
+        badgeEl.innerHTML = `<img src="${clan.clan_photo}" alt="" onerror="this.outerHTML='${initial}'">`;
+      } else {
+        badgeEl.textContent = initial;
+      }
+    }
+
+    const nameEl = document.getElementById('guild-hero-name');
+    if (nameEl) nameEl.textContent = clan.clan_name;
+
+    const mottoEl = document.getElementById('guild-hero-motto');
+    if (mottoEl) mottoEl.textContent = clan.motto ? `"${clan.motto}"` : '';
+
+    const metaEl = document.getElementById('guild-hero-meta');
+    if (metaEl) metaEl.textContent = isLeader ? '⚔ Clan Leader' : 'Member';
+
+    const tierLabelEl = document.getElementById('guild-tier-label');
+    if (tierLabelEl) tierLabelEl.textContent = tier.label;
+
+    const tierIconEl = document.querySelector('.guild-tier-icon');
+    if (tierIconEl) tierIconEl.textContent = tier.icon;
+  };
+
+  /* ── Populate stats strip ────────────────────────────────────────────── */
+
+  const populateStats = (clan, warRank) => {
+    const members = clan.member_count || 1;
+    const real    = clan.total_real_earned || 0;
+    const zar     = clan.total_zar_per_hour || 0;
+
+    const set = (id, val) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = val;
+    };
+
+    set('gstat-members', fmtNF(members));
+    set('gstat-real',    fmtN(real));
+    set('gstat-zar',     fmtN(zar));
+    set('gstat-rank',    warRank ? `#${fmtNF(warRank)}` : '—');
+  };
+
+  /* ── Overview tab ────────────────────────────────────────────────────── */
+
+  const buildOverview = async (clan, u) => {
+    const panel = document.getElementById('guild-panel-overview');
+    if (!panel) return;
+
+    const isLeader = u && clan.leader_id === String(u.id);
+    const tgLink   = clan.telegram_group_link || '';
+
+    const openLink = (url) => {
+      if (window.Telegram?.WebApp?.openTelegramLink) window.Telegram.WebApp.openTelegramLink(url);
+      else window.open(url, '_blank');
+    };
+
+    /* Action row: chat + share */
+    let actionsHtml = `<div class="guild-actions-row">`;
+    if (tgLink) {
+      actionsHtml += `<button class="secondary-btn" id="guild-chat-btn">💬 Clan Chat</button>`;
+    }
+    actionsHtml += `<button class="secondary-btn" id="guild-share-btn">📢 Share Clan</button>`;
+    if (isLeader) {
+      actionsHtml += `<button class="secondary-btn" id="guild-manage-btn">⚔ Manage</button>`;
+    }
+    actionsHtml += `</div>`;
+
+    panel.innerHTML = `
+      ${actionsHtml}
+      <div>
+        <div class="guild-section-head">
+          <h4>${t('guild_overview_members','Members')}</h4>
+          <span>${fmtNF(clan.member_count || 1)} warriors</span>
+        </div>
+        <article class="card" style="padding:0 16px;" id="guild-member-list">
+          <p class="guild-empty">${t('loading_text','Loading…')}</p>
+        </article>
+      </div>`;
+
+    /* Wire buttons */
+    document.getElementById('guild-chat-btn')?.addEventListener('click', () => {
+      if (tgLink) openLink(tgLink);
+    });
+
+    document.getElementById('guild-share-btn')?.addEventListener('click', () => {
+      const botUrl   = `https://t.me/shahnameh_bot?start=clan_${clan.clan_id}`;
+      const text     = `Join my clan ${clan.clan_name} in Shahnameh! We earn REAL together. ⚔️`;
+      const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(botUrl)}&text=${encodeURIComponent(text)}`;
+      if (window.Telegram?.WebApp?.openLink) window.Telegram.WebApp.openLink(shareUrl);
+      else window.open(shareUrl, '_blank');
+    });
+
+    if (isLeader) {
+      document.getElementById('guild-manage-btn')?.addEventListener('click', () => {
+        window.location.href = 'social.html#clan';
+      });
+    }
+
+    /* Load member list */
+    if (!u || !u.id) return;
+    const refData = await post('/api/season2/social/referrals', { telegram_id: String(u.id) });
+    const listEl  = document.getElementById('guild-member-list');
+    if (!listEl) return;
+
+    const members = (refData?.status === 1) ? (refData.members || []) : [];
+
+    if (!members.length) {
+      listEl.innerHTML = '<p class="guild-empty">No warriors yet. Share your invite link.</p>';
+      return;
+    }
+
+    listEl.innerHTML = members.map(m => {
+      const name   = m.first_name || t('fallback_username','Warrior');
+      const init   = name.charAt(0).toUpperCase();
+      const isLdr  = m.telegram_id && clan.leader_id === String(m.telegram_id);
+      const avatar = m.profile_pic
+        ? `<div class="guild-member-avatar"><img src="${m.profile_pic}" alt="" onerror="this.parentElement.textContent='${init}'"></div>`
+        : `<div class="guild-member-avatar">${init}</div>`;
+      const tag = isLdr
+        ? `<span class="guild-member-tag guild-tag-leader">Leader</span>`
+        : `<span class="guild-member-tag guild-tag-member">${m.verified ? '✓ Active' : '⏳'}</span>`;
+      const uid = m.telegram_id ? String(m.telegram_id) : '';
+      return `<div class="guild-member-row">
+        ${uid ? `<a href="profile.html?uid=${uid}" style="display:contents;">` : ''}
+        ${avatar}
+        <div class="guild-member-info">
+          <div class="guild-member-name">${name}</div>
+          <div class="guild-member-sub">LVL ${m.level || 1} · ${fmtN(m.xp || 0)} XP</div>
+        </div>
+        ${uid ? `</a>` : ''}
+        ${tag}
+      </div>`;
+    }).join('');
+  };
+
+  /* ── Treasury tab ────────────────────────────────────────────────────── */
+
+  const UPGRADES = [
+    { id: 'forge',    icon: '⚒',  name: 'War Forge',       desc: '+5% ZAR/hr for all members',   cost: 25000  },
+    { id: 'banner',   icon: '🏹',  name: 'Battle Banner',   desc: '+10% hero XP gain',             cost: 50000  },
+    { id: 'vault',    icon: '🏛',  name: 'Royal Vault',     desc: 'Treasury cap ×2',               cost: 100000 },
+    { id: 'siege',    icon: '🛡',  name: 'Siege Engines',   desc: '+15% in guild wars',            cost: 200000 },
+  ];
+
+  const buildTreasury = (clan) => {
+    const panel    = document.getElementById('guild-panel-treasury');
+    if (!panel) return;
+
+    const treasury = clan.treasury || 0;
+
+    const upgradesHtml = UPGRADES.map(u => {
+      const canAfford = treasury >= u.cost;
+      return `
+        <div class="guild-upgrade-card">
+          <div class="guild-upgrade-icon">${u.icon}</div>
+          <div class="guild-upgrade-info">
+            <div class="guild-upgrade-name">${u.name}</div>
+            <div class="guild-upgrade-desc">${u.desc}</div>
+            <div class="guild-upgrade-cost">${fmtN(u.cost)} ${RT} required</div>
+          </div>
+          <button class="guild-upgrade-btn" disabled>${canAfford ? 'Unlock' : 'Locked'}</button>
+        </div>`;
+    }).join('');
+
+    panel.innerHTML = `
+      <div class="guild-treasury-banner">
+        <div class="guild-treasury-icon">🏦</div>
+        <div class="guild-treasury-amount">${fmtN(treasury)} ${RT}</div>
+        <div class="guild-treasury-unit">REAL</div>
+        <div class="guild-treasury-sub">${t('guild_treasury_sub','Pooled by all guild members')}</div>
+      </div>
+      <button class="primary-btn btn-block" id="guild-contrib-open-btn">
+        ${t('guild_treasury_contribute','Contribute REAL')}
+      </button>
+      <div>
+        <div class="guild-section-head">
+          <h4>Guild Upgrades</h4>
+          <span>Coming Soon</span>
+        </div>
+        ${upgradesHtml}
+      </div>`;
+
+    document.getElementById('guild-contrib-open-btn')?.addEventListener('click', openContribModal);
+  };
+
+  /* ── Quests tab ──────────────────────────────────────────────────────── */
+
+  const buildQuests = (clan) => {
+    const panel = document.getElementById('guild-panel-quests');
+    if (!panel) return;
+
+    /* Member count drives collective progress on weekly quests */
+    const members = clan.member_count || 1;
+
+    const weeklyQuests = [
+      {
+        icon: '📜',
+        title: 'Chapter Readers',
+        desc: 'Guild members complete chapters this week',
+        target: 50,
+        progress: Math.min(50, members * 2),
+        reward: '5,000 REAL each',
+      },
+      {
+        icon: '⚔',
+        title: 'Warriors Recruited',
+        desc: 'Grow the clan by inviting new warriors',
+        target: 10,
+        progress: Math.min(10, Math.max(0, members - 1)),
+        reward: '2,500 REAL each',
+      },
+      {
+        icon: '💎',
+        title: 'Gem Tithe',
+        desc: 'Clan members earn gems through heroes',
+        target: 100,
+        progress: Math.min(100, members * 4),
+        reward: '1,000 REAL each',
+      },
+    ];
+
+    const cardsHtml = weeklyQuests.map(q => {
+      const pct = Math.round((q.progress / q.target) * 100);
+      return `
+        <div class="guild-quest-card">
+          <div class="guild-quest-header">
+            <div class="guild-quest-icon">${q.icon}</div>
+            <div class="guild-quest-title">${q.title}</div>
+            <div class="guild-quest-reward">+${q.reward}</div>
+          </div>
+          <div class="guild-quest-progress-wrap">
+            <div class="guild-quest-progress-fill" style="width:${pct}%;"></div>
+          </div>
+          <div class="guild-quest-meta">
+            <span>${q.desc}</span>
+            <span>${fmtNF(q.progress)} / ${fmtNF(q.target)}</span>
+          </div>
+        </div>`;
+    }).join('');
+
+    panel.innerHTML = `
+      <div class="guild-section-head">
+        <h4>${t('guild_quest_weekly','Weekly Guild Quests')}</h4>
+        <span>Resets Sunday</span>
+      </div>
+      ${cardsHtml}
+      <p class="guild-empty" style="margin-top:8px;font-size:11px;">Daily tasks and seasonal campaigns — coming soon.</p>`;
+  };
+
+  /* ── Wars tab ────────────────────────────────────────────────────────── */
+
+  const buildWars = async (myClanId) => {
+    const panel = document.getElementById('guild-panel-wars');
+    if (!panel) return;
+
+    panel.innerHTML = `<p class="guild-empty">${t('loading_text','Loading…')}</p>`;
+
+    const qs   = new URLSearchParams();
+    const data = await get('/api/season2/clan/browse?' + qs.toString());
+
+    if (!data || data.status !== 1 || !(data.clans || []).length) {
+      panel.innerHTML = `
+        <div class="guild-wars-coming">
+          <div class="guild-wars-coming-icon">⚔</div>
+          <div class="guild-wars-coming-title">${t('guild_wars_standings','War Standings')}</div>
+          <p>${t('guild_wars_live','Wars coming soon — stay tuned!')}</p>
+        </div>`;
+      return;
+    }
+
+    const rows = data.clans.map((c, i) => {
+      const isMe   = c.clan_id === myClanId;
+      const badge  = c.clan_photo
+        ? `<div class="guild-war-badge"><img src="${c.clan_photo}" alt="" onerror="this.parentElement.textContent='${c.clan_name.charAt(0)}'"></div>`
+        : `<div class="guild-war-badge">${c.clan_name.charAt(0).toUpperCase()}</div>`;
+      const rankCls = ['guild-war-rank-1','guild-war-rank-2','guild-war-rank-3'][i] || '';
+      return `
+        <div class="guild-war-row${isMe ? ' guild-war-you' : ''}">
+          <div class="guild-war-rank ${rankCls}">${i + 1}</div>
+          ${badge}
+          <div class="guild-war-info">
+            <div class="guild-war-name">${c.clan_name}${isMe ? ' ⚔' : ''}</div>
+            <div class="guild-war-sub">👥 ${c.member_count || 1} warriors</div>
+          </div>
+          <div class="guild-war-score">${fmtN(c.total_real_earned)} ${RT}</div>
+        </div>`;
+    }).join('');
+
+    panel.innerHTML = `
+      <div class="guild-section-head">
+        <h4>${t('guild_wars_standings','War Standings')}</h4>
+        <span>by REAL earned</span>
+      </div>
+      <article class="card" style="padding:0 16px;">${rows}</article>
+      <p class="guild-empty" style="font-size:11px;margin-top:4px;">Live guild battles — coming soon.</p>`;
+  };
+
+  /* ── No-clan state ───────────────────────────────────────────────────── */
+
+  const showNoClan = () => {
+    document.getElementById('guild-loading').style.display   = 'none';
+    document.getElementById('guild-main').style.display      = 'none';
+    document.getElementById('guild-no-clan').style.display   = '';
+
+    const bodyEl = document.getElementById('guild-no-clan-body');
+    if (!bodyEl) return;
+
+    bodyEl.innerHTML = `
+      <article class="card" style="text-align:center;padding:24px 16px;margin:0;">
+        <div style="font-size:48px;margin-bottom:12px;">⚔</div>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 20px;">
+          ${t('guild_no_clan_sub','Join or found a guild to march together.')}
+        </p>
+        <div class="guild-no-clan-cta">
+          <a href="social.html" class="primary-btn btn-block" style="text-align:center;text-decoration:none;">
+            ${t('guild_no_clan_join','Browse Guilds')}
+          </a>
+          <a href="social.html#create" class="secondary-btn btn-block" style="text-align:center;text-decoration:none;">
+            ${t('guild_no_clan_create','Found Your Own')}
+          </a>
+        </div>
+      </article>`;
+  };
+
+  /* ── Contribute modal ────────────────────────────────────────────────── */
+
+  let _clanId = null;
+
+  const openContribModal = () => {
+    const modal  = document.getElementById('contrib-modal');
+    const balEl  = document.getElementById('contrib-balance');
+    const inp    = document.getElementById('contrib-amount');
+    if (!modal) return;
+
+    const bal = localPlayer().balance || 0;
+    if (balEl) balEl.textContent = `Your balance: ${fmtN(bal)} REAL`;
+    if (inp)   inp.value = '';
+    document.querySelectorAll('.guild-amount-btn').forEach(b => b.classList.remove('active'));
+
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+    inp?.focus();
+  };
+
+  const closeContribModal = () => {
+    const modal = document.getElementById('contrib-modal');
+    if (!modal) return;
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+    document.getElementById('contrib-amount').value = '';
+    document.querySelectorAll('.guild-amount-btn').forEach(b => b.classList.remove('active'));
+  };
+
+  const wireContribModal = () => {
+    document.getElementById('contrib-modal-close')?.addEventListener('click', closeContribModal);
+
+    const overlay = document.getElementById('contrib-modal');
+    overlay?.addEventListener('click', (e) => { if (e.target === overlay) closeContribModal(); });
+
+    document.querySelectorAll('.guild-amount-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.guild-amount-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const inp = document.getElementById('contrib-amount');
+        if (inp) inp.value = btn.dataset.amount;
+      });
+    });
+
+    document.getElementById('contrib-confirm-btn')?.addEventListener('click', async () => {
+      const u      = tgUser();
+      const inp    = document.getElementById('contrib-amount');
+      const amount = Math.floor(Number(inp?.value || 0));
+      const btn    = document.getElementById('contrib-confirm-btn');
+
+      if (!u || !u.id) { showToast('Open via Telegram to contribute.'); return; }
+      if (!amount || amount < 100) { showToast('Minimum contribution: 100 REAL.'); return; }
+
+      const bal = localPlayer().balance || 0;
+      if (bal < amount) { showToast('Insufficient REAL balance.'); return; }
+
+      btn.disabled = true;
+      btn.textContent = '…';
+
+      const res = await post('/api/season2/clan/contribute', {
+        telegram_id: String(u.id),
+        amount,
+      });
+
+      if (res && res.status === 1) {
+        /* Update local balance */
+        try {
+          const ps = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
+          ps.balance = res.new_balance;
+          localStorage.setItem('real_player_state_v1', JSON.stringify(ps));
+        } catch (_) {}
+
+        showToast(`✓ Contributed ${fmtN(amount)} REAL to the treasury!`);
+        closeContribModal();
+
+        /* Refresh treasury display */
+        const treasuryEl = panel => panel?.querySelector?.('.guild-treasury-amount');
+        const tp = document.getElementById('guild-panel-treasury');
+        if (tp) {
+          const amtEl = tp.querySelector('.guild-treasury-amount');
+          /* Re-fetch clan data to get updated treasury */
+          const cd = await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: String(u.id) }));
+          if (cd?.status === 1 && cd.clan && amtEl) {
+            amtEl.textContent = `${fmtN(cd.clan.treasury || 0)} ◆`;
+          }
+        }
+      } else {
+        const msg = {
+          insufficient_balance: 'Not enough REAL.',
+          not_in_clan:          'You are not in a clan.',
+          minimum_100:          'Minimum is 100 REAL.',
+        }[res?.error] || 'Failed to contribute. Try again.';
+        showToast(msg);
+        btn.disabled = false;
+        btn.textContent = t('guild_contrib_confirm','Contribute');
+      }
+    });
+  };
+
+  /* ── Init ────────────────────────────────────────────────────────────── */
+
+  const init = async () => {
+    document.getElementById('guild-loading').style.display  = '';
+    document.getElementById('guild-main').style.display     = 'none';
+    document.getElementById('guild-no-clan').style.display  = 'none';
+
+    const u = tgUser();
+
+    if (!u || !u.id) {
+      /* No Telegram context — check if user was previously in a clan */
+      const cachedClanId = localStorage.getItem('real_my_clan_id') || '';
+      if (!cachedClanId) { showNoClan(); return; }
+    }
+
+    const clanData = u
+      ? await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: String(u.id) }))
+      : null;
+
+    const clan = (clanData?.status === 1) ? clanData.clan : null;
+
+    if (!clan) {
+      /* Also update localStorage */
+      try { localStorage.setItem('real_my_clan_id', ''); } catch (_) {}
+      showNoClan();
+      return;
+    }
+
+    /* Cache */
+    try {
+      localStorage.setItem('real_my_clan_id', clan.clan_id);
+      localStorage.setItem('real_has_clan', '1');
+    } catch (_) {}
+
+    _clanId = clan.clan_id;
+
+    /* Determine war rank from browse list */
+    let warRank = null;
+    const browseData = await get('/api/season2/clan/browse');
+    if (browseData?.status === 1) {
+      const idx = (browseData.clans || []).findIndex(c => c.clan_id === clan.clan_id);
+      if (idx >= 0) warRank = idx + 1;
+    }
+
+    /* Show main guild view */
+    document.getElementById('guild-loading').style.display = 'none';
+    document.getElementById('guild-main').style.display    = '';
+
+    populateHero(clan, u);
+    populateStats(clan, warRank);
+    wireTabs();
+    wireContribModal();
+
+    /* Build all tab panels */
+    buildTreasury(clan);
+    buildQuests(clan);
+    await Promise.all([
+      buildOverview(clan, u),
+      buildWars(clan.clan_id),
+    ]);
+
+    showTab('overview');
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
