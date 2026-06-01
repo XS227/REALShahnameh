@@ -58,9 +58,13 @@
       "body_en": "Thirty days of silence end. Hushang steps to the stone threshold where his grandfather has stood for years beyond counting. He does not yet wear the leopard skin — he lets it be placed on his shoulders, because he knows it carries a weight greater than leather. The mountain-court does not cheer; it watches. A king earns the voice of the mountain, or he does not.",
       "body_fa": "سی روز خاموشی به پایان می‌رسد. هوشنگ به آستانه‌ی سنگی‌ای قدم می‌گذارد که نیایش سال‌هایی بی‌شمار آن‌جا ایستاده بوده است. هنوز پوستِ پلنگ را به تن نمی‌کند — می‌گذارد بر شانه‌اش بنهندش، زیرا می‌داند بارش سنگین‌تر از چرم است. درگاهِ کوهستانی هلهله نمی‌کند؛ می‌نگرد. شاه صدایِ کوه را به دست می‌آورد، یا نمی‌آورد.",
       "atmosphere": "warm",
-      "image": "/assets/images/scenes/young-king-scene.png",
-      "reward": { "xp": 30 },
-      "unlocks_codex": ["leopard-skin-lineage"]
+      "image": "/assets/images/scenes/shahnameh-chapter-2-the-young-king.jpg",
+      "reward": {
+        "xp": 30
+      },
+      "unlocks_codex": [
+        "leopard-skin-lineage"
+      ]
     },
     {
       "id": "army-of-light",
@@ -72,9 +76,13 @@
       "body_en": "Hushang calls the people of Pars to the mountain court. He calls the eagles from the south. He calls the lions from the high pasture. He says only what must be said: a debt is owed. The army moves before the sun has climbed halfway. The forest watches them come.",
       "body_fa": "هوشنگ مردمانِ پارس را به درگاهِ کوهستانی فرا می‌خواند. عقاب‌ها را از جنوب می‌خواند. شیران را از چراگاهِ بلند. تنها آنچه باید گفته شود را می‌گوید: وامی ادا نشده است. سپاه پیش از آنکه خورشید نیمه‌ی راه را بپیماید، به راه می‌افتد. جنگل نظاره می‌کند که می‌آیند.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/army-of-light-scene.png",
-      "reward": { "xp": 40 },
-      "unlocks_codex": ["hushang-army-codex"]
+      "image": "/assets/images/scenes/shahnameh-chapter-2-the-army-of-light.jpg",
+      "reward": {
+        "xp": 40
+      },
+      "unlocks_codex": [
+        "hushang-army-codex"
+      ]
     },
     {
       "id": "into-the-demon-forest",
@@ -86,9 +94,13 @@
       "body_en": "The trees here are older than names. They do not grow toward the light — they lean away from it. A cold wind blows from the roots upward. The demon's servants scatter at the edge of the army's fire. Hushang does not slow. He has been watching this forest since he was a boy on his grandfather's shoulder.",
       "body_fa": "درختانِ این‌جا کهن‌تر از نام‌هایند. نه به‌سوی روشنی که از آن دور می‌شوند. بادی سرد از ریشه‌ها به‌بالا می‌وزد. بندگانِ دیو در کرانه‌ی آتشِ سپاه پراکنده می‌شوند. هوشنگ کند نمی‌رود. از آن هنگام که کودکی بود بر شانه‌ی نیایش، این جنگل را می‌نگریسته است.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/demon-forest-march-scene.png",
-      "reward": { "xp": 40 },
-      "unlocks_codex": ["black-div-codex"]
+      "image": "/assets/images/scenes/shahnameh-chapter-2-into-the-demon-forest.jpg",
+      "reward": {
+        "xp": 40
+      },
+      "unlocks_codex": [
+        "black-div-codex"
+      ]
     },
     {
       "id": "fall-of-the-black-div",
@@ -100,9 +112,13 @@
       "body_en": "The Black Div does not yield. He remembers Siamak falling and takes that memory as strength. But Hushang has grown up with that same memory and turned it into something harder than grief. The demon falls on the turf where the old darkness thought it was safe. Vengeance is paid. The mourning is complete.",
       "body_fa": "دیوِ سیاه تسلیم نمی‌شود. سیامکِ افتاده را به‌یاد می‌آورد و آن یادآوری را نیرو می‌گیرد. اما هوشنگ با همان یادآوری رشد کرده و آن را به چیزی سخت‌تر از اندوه تبدیل کرده است. دیو بر همان چمنی فرو می‌افتد که تاریکیِ کهن گمان می‌کرد امن است. انتقام گرفته شد. سوگ به پایان رسید.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/black-div-falls-scene.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["vengeance-complete"]
+      "image": "/assets/images/scenes/shahnameh-chapter-2-fall-of-the-black-div.jpg",
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "vengeance-complete"
+      ]
     },
     {
       "id": "a-world-reborn",
@@ -114,9 +130,14 @@
       "body_en": "With the Black Div gone, Hushang turns from war. He teaches the people to dig channels from the mountain rivers. He splits the plough into the soft earth. He gives the grains their names. A world that had only one skill — to survive — now learns its second: to build. The mountain-court adds a second fire to its hearth.",
       "body_fa": "با رفتنِ دیوِ سیاه، هوشنگ از جنگ برمی‌گردد. به مردمان می‌آموزد از رودخانه‌های کوهستانی جوی بکَنند. گاوآهن را در خاکِ نرم فرو می‌برد. به دانه‌ها نامشان را می‌دهد. جهانی که تنها یک هنر داشت — بقا — اکنون دومین هنر را می‌آموزد: ساختن. درگاهِ کوهستانی آتشِ دومی به اجاقِ خود می‌افزاید.",
       "atmosphere": "warm",
-      "image": "/assets/images/scenes/world-reborn-scene.png",
-      "reward": { "xp": 50 },
-      "unlocks_codex": ["first-plough", "first-channel"]
+      "image": "/assets/images/scenes/shahnameh-chapter-2-a-world-reborn.jpg",
+      "reward": {
+        "xp": 50
+      },
+      "unlocks_codex": [
+        "first-plough",
+        "first-channel"
+      ]
     },
     {
       "id": "serpent-in-the-pass",
@@ -128,9 +149,13 @@
       "body_en": "On a rocky pass in the mountain wall, a serpent of black scales blocks the road. Hushang stoops, lifts a flint stone the weight of his fist, and throws it hard. The serpent ducks. The stone meets the rock-face. A dry crack — and then a spark, then two, then a crown of light leaping between stones. He stands very still. He has never seen this before. No one has.",
       "body_fa": "بر گذرگاهی سنگی در دیوارِ کوه، افعی‌ای سیاه‌فلس راه را می‌بندد. هوشنگ خم می‌شود، سنگِ چخماقی به وزنِ مشتش برمی‌گیرد و با نیرو پرتاب می‌کند. افعی طفره می‌رود. سنگ به صخره می‌خورد. صدایی خشک — و آنگاه جرقه‌ای، سپس دو، سپس تاجی از روشنی که میانِ سنگ‌ها می‌جهد. بی‌حرکت می‌ایستد. این را هرگز ندیده بود. هیچ‌کس ندیده بود.",
       "atmosphere": "wild",
-      "image": "/assets/images/scenes/serpent-in-pass-scene.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["serpent-of-the-pass"]
+      "image": "/assets/images/scenes/shahnameh-chapter-2-the-serpent-in-the-pass.jpg",
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "serpent-of-the-pass"
+      ]
     },
     {
       "id": "fire-is-born",
@@ -142,9 +167,14 @@
       "body_en": "The spark catches dry grass. The dry grass touches a branch. The branch wakes a tree. Hushang calls the people and they come running, and they stand around the first fire with their hands out. It does not bite if you respect it. He names the night and the flame together: Sade. A festival for all who follow, as long as the mountain stands.",
       "body_fa": "جرقه به علفِ خشک می‌رسد. علفِ خشک به شاخه‌ای می‌رسد. شاخه درختی را بیدار می‌کند. هوشنگ مردمان را فرا می‌خواند و می‌آیند، دوان، و با دست‌های دراز شده پیرامونِ نخستین آتش می‌ایستند. اگر احترامش بداری گاز نمی‌گیرد. او شب و شعله را با هم نام می‌نهد: سده. جشنی برای همه‌ی پس‌آیندگان، تا کوه برپاست.",
       "atmosphere": "warm",
-      "image": "/assets/images/scenes/fire-born-scene.png",
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["sade-festival", "fire-gift"]
+      "image": "/assets/images/scenes/shahnameh-chapter-2-fire-is-born.jpg",
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "sade-festival",
+        "fire-gift"
+      ]
     },
     {
       "id": "chapter-complete",
@@ -156,9 +186,14 @@
       "body_en": "Fire begets iron. Iron begets the forge. The forge begets the blade, the plough, the hammer. Hushang names these things one by one and gives each name to a child to carry. His age is short — the Shahnameh rushes forward — but what it plants is permanent: fire, iron, water-work, the calendar of seasons. The next king, Tahmuras, will climb higher still. He will chain the demons and trade their lives for the alphabet.",
       "body_fa": "آتش آهن می‌زاید. آهن آهنگری می‌زاید. آهنگری تیغ می‌زاید و گاوآهن و چکش. هوشنگ این‌ها را یک‌به‌یک نام می‌دهد و هر نامی را به کودکی می‌سپارد که با خود ببرد. عصرِ او کوتاه است — شاهنامه شتابان پیش می‌رود — اما آنچه می‌کارد ماندگار است: آتش، آهن، آب‌رسانی، تقویمِ فصل‌ها. شاهِ آینده، تهمورث، باز هم بالاتر خواهد رفت. دیوان را در زنجیر خواهد کشید و جانشان را با الفبا معامله خواهد کرد.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/age-of-craft-scene.png",
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["first-iron-forge", "tahmuras-foreshadow"]
+      "image": "/assets/images/scenes/shahnameh-chapter-2-the-age-of-craft.jpg",
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "first-iron-forge",
+        "tahmuras-foreshadow"
+      ]
     }
   ],
   "characters": [
