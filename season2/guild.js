@@ -187,13 +187,13 @@
       });
     }
 
-    /* Load member list */
+    /* Load member list from /clan/members (all actual clan members, not just referrals) */
     if (!u || !u.id) return;
-    const refData = await post('/api/season2/social/referrals', { telegram_id: String(u.id) });
-    const listEl  = document.getElementById('guild-member-list');
+    const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: String(u.id) }));
+    const listEl      = document.getElementById('guild-member-list');
     if (!listEl) return;
 
-    const members = (refData?.status === 1) ? (refData.members || []) : [];
+    const members = (membersData?.status === 1) ? (membersData.members || []) : [];
 
     if (!members.length) {
       listEl.innerHTML = '<p class="guild-empty">No warriors yet. Share your invite link.</p>';
@@ -203,13 +203,12 @@
     listEl.innerHTML = members.map(m => {
       const name   = m.first_name || t('fallback_username','Warrior');
       const init   = name.charAt(0).toUpperCase();
-      const isLdr  = m.telegram_id && clan.leader_id === String(m.telegram_id);
       const avatar = m.profile_pic
         ? `<div class="guild-member-avatar"><img src="${m.profile_pic}" alt="" onerror="this.parentElement.textContent='${init}'"></div>`
         : `<div class="guild-member-avatar">${init}</div>`;
-      const tag = isLdr
+      const tag = m.is_leader
         ? `<span class="guild-member-tag guild-tag-leader">Leader</span>`
-        : `<span class="guild-member-tag guild-tag-member">${m.verified ? '✓ Active' : '⏳'}</span>`;
+        : `<span class="guild-member-tag guild-tag-member">⚔ Member</span>`;
       const uid = m.telegram_id ? String(m.telegram_id) : '';
       return `<div class="guild-member-row">
         ${uid ? `<a href="profile.html?uid=${uid}" style="display:contents;">` : ''}
@@ -463,11 +462,16 @@
       const amount = Math.floor(Number(inp?.value || 0));
       const btn    = document.getElementById('contrib-confirm-btn');
 
-      if (!u || !u.id) { showToast('Open via Telegram to contribute.'); return; }
-      if (!amount || amount < 100) { showToast('Minimum contribution: 100 REAL.'); return; }
-
-      const bal = localPlayer().balance || 0;
-      if (bal < amount) { showToast('Insufficient REAL balance.'); return; }
+      if (!u || !u.id) {
+        closeContribModal();
+        showToast('Open via Telegram to contribute.');
+        return;
+      }
+      if (!amount || amount < 100) {
+        closeContribModal();
+        showToast('Minimum contribution: 100 REAL.');
+        return;
+      }
 
       btn.disabled = true;
       btn.textContent = '…';
@@ -477,37 +481,36 @@
         amount,
       });
 
+      /* Close modal first so the toast is always visible */
+      closeContribModal();
+
       if (res && res.status === 1) {
         /* Update local balance */
         try {
           const ps = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
           ps.balance = res.new_balance;
           localStorage.setItem('real_player_state_v1', JSON.stringify(ps));
+          window.dispatchEvent(new CustomEvent('shahnama:state_sync'));
         } catch (_) {}
 
         showToast(`✓ Contributed ${fmtN(amount)} REAL to the treasury!`);
-        closeContribModal();
 
         /* Refresh treasury display */
-        const treasuryEl = panel => panel?.querySelector?.('.guild-treasury-amount');
-        const tp = document.getElementById('guild-panel-treasury');
-        if (tp) {
-          const amtEl = tp.querySelector('.guild-treasury-amount');
-          /* Re-fetch clan data to get updated treasury */
+        const tp    = document.getElementById('guild-panel-treasury');
+        const amtEl = tp?.querySelector('.guild-treasury-amount');
+        if (amtEl) {
           const cd = await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: String(u.id) }));
-          if (cd?.status === 1 && cd.clan && amtEl) {
-            amtEl.textContent = `${fmtN(cd.clan.treasury || 0)} ◆`;
+          if (cd?.status === 1 && cd.clan) {
+            amtEl.innerHTML = `${fmtN(cd.clan.treasury || 0)} ${RT}`;
           }
         }
       } else {
         const msg = {
-          insufficient_balance: 'Not enough REAL.',
+          insufficient_balance: 'Not enough REAL in your balance.',
           not_in_clan:          'You are not in a clan.',
           minimum_100:          'Minimum is 100 REAL.',
         }[res?.error] || 'Failed to contribute. Try again.';
         showToast(msg);
-        btn.disabled = false;
-        btn.textContent = t('guild_contrib_confirm','Contribute');
       }
     });
   };

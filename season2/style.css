@@ -1381,7 +1381,7 @@ a { color: inherit; }
   font-weight: 600;
   letter-spacing: 0.3px;
   box-shadow: var(--glow-gold);
-  z-index: 200;
+  z-index: 300;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease, transform 0.25s ease;
