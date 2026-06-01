@@ -105,14 +105,11 @@
   /* ── DYOR link ─────────────────────────────────────────────────────── */
 
   const wireDyor = () => {
-    document.querySelectorAll('[data-toast-msg]').forEach(el => {
-      el.addEventListener('click', (e) => {
-        const msg = el.dataset.toastMsg;
-        if (msg && el.getAttribute('href') === '#') {
-          e.preventDefault();
-          showToast(msg);
-        }
-      });
+    const el = document.querySelector('[data-dyor-link]');
+    if (!el) return;
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLink('https://dyor.io/dapps/games/shahnameh');
     });
   };
 

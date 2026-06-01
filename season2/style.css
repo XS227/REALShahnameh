@@ -669,6 +669,46 @@ a { color: inherit; }
 .stat-mini .lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
 .stat-mini .num { font-size: 16px; font-weight: 800; }
 
+/* ----- ZAR → REAL swap card ---------------------------------------------- */
+
+.swap-card {
+  background: linear-gradient(140deg, rgba(16,22,52,.85), rgba(10,14,36,.9));
+  border: 1px solid rgba(212,164,80,.25);
+  border-radius: var(--r-md, 12px);
+  padding: 14px;
+}
+.swap-row {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 12px;
+}
+.swap-cell { flex: 1; text-align: center; }
+.swap-lbl { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.swap-val { font-size: 18px; font-weight: 800; color: var(--text); }
+.swap-val.swap-real-out { color: var(--jade, #4ad8a6); }
+.swap-arrow { font-size: 18px; color: var(--muted); flex-shrink: 0; }
+.swap-input-row { display: flex; gap: 8px; align-items: center; }
+.swap-input-wrap {
+  flex: 1; display: flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,.05); border: 1px solid rgba(212,164,80,.2);
+  border-radius: 8px; padding: 0 10px;
+}
+.swap-ico { font-size: 14px; flex-shrink: 0; }
+.swap-input {
+  flex: 1; background: none; border: none; outline: none;
+  color: var(--text); font-size: 14px; font-weight: 600;
+  padding: 10px 0; min-width: 0;
+}
+.swap-input::placeholder { color: var(--muted); }
+.swap-btn {
+  background: linear-gradient(135deg, var(--gold, #f4c56b), #d4a450);
+  color: #07080f; font-size: 13px; font-weight: 800;
+  border: none; border-radius: 8px; padding: 10px 16px;
+  cursor: pointer; white-space: nowrap;
+  transition: opacity .15s;
+}
+.swap-btn:disabled { opacity: .38; cursor: not-allowed; }
+.swap-note { font-size: 11px; color: var(--muted); margin-top: 8px; text-align: center; transition: color .2s; }
+
 /* ----- Bottom navigation ------------------------------------------------- */
 
 .bottom-nav {
