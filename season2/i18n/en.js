@@ -602,6 +602,7 @@
       live: "LIVE",
       guild_wars: "Guild Wars · Week 3",
       guild_wars_sub: "Lions of Pars · #12 → push to top 10 for bonus REAL.",
+      social_my_guild: "My Guild ›",
       guild_title: "Guild",
       guild_no_clan_sub: "Join or found a guild to march together.",
       guild_stat_members: "Warriors",
