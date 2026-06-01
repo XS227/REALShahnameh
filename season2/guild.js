@@ -145,49 +145,61 @@
       else window.open(url, '_blank');
     };
 
-    /* Action row: chat + share */
+    /* Action row */
     let actionsHtml = `<div class="guild-actions-row">`;
-    if (tgLink) {
-      actionsHtml += `<button class="secondary-btn" id="guild-chat-btn">💬 Clan Chat</button>`;
-    }
+    if (tgLink) actionsHtml += `<button class="secondary-btn" id="guild-chat-btn">💬 Clan Chat</button>`;
     actionsHtml += `<button class="secondary-btn" id="guild-share-btn">📢 Share Clan</button>`;
-    if (isLeader) {
-      actionsHtml += `<button class="secondary-btn" id="guild-manage-btn">⚔ Manage</button>`;
-    }
+    if (isLeader) actionsHtml += `<button class="secondary-btn" id="guild-manage-btn">⚙ Manage</button>`;
     actionsHtml += `</div>`;
 
     panel.innerHTML = `
       ${actionsHtml}
+      ${isLeader ? `<div id="guild-manage-panel" style="display:none;"></div>` : ''}
       <div>
         <div class="guild-section-head">
           <h4>${t('guild_overview_members','Members')}</h4>
-          <span>${fmtNF(clan.member_count || 1)} warriors</span>
+          <span id="guild-member-count">${fmtNF(clan.member_count || 1)} warriors</span>
         </div>
         <article class="card" style="padding:0 16px;" id="guild-member-list">
           <p class="guild-empty">${t('loading_text','Loading…')}</p>
         </article>
       </div>`;
 
-    /* Wire buttons */
-    document.getElementById('guild-chat-btn')?.addEventListener('click', () => {
-      if (tgLink) openLink(tgLink);
-    });
+    /* Wire Chat button */
+    document.getElementById('guild-chat-btn')?.addEventListener('click', () => openLink(tgLink));
 
+    /* Wire Share button — also marks the daily invite quest */
     document.getElementById('guild-share-btn')?.addEventListener('click', () => {
       const botUrl   = `https://t.me/shahnameh_bot?start=clan_${clan.clan_id}`;
       const text     = `Join my clan ${clan.clan_name} in Shahnameh! We earn REAL together. ⚔️`;
       const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(botUrl)}&text=${encodeURIComponent(text)}`;
       if (window.Telegram?.WebApp?.openLink) window.Telegram.WebApp.openLink(shareUrl);
       else window.open(shareUrl, '_blank');
+      /* Mark daily invite quest complete */
+      const dk = new Date().toISOString().slice(0, 10);
+      try { localStorage.setItem('real_quest_invite_' + dk, 'true'); } catch (_) {}
+      window.dispatchEvent(new CustomEvent('real:quest:invite'));
+      if (window.RealSync) window.RealSync.syncQuest('invite');
     });
 
+    /* Wire Manage button — toggle inline panel */
     if (isLeader) {
+      let manageLoaded = false;
+      let manageOpen   = false;
       document.getElementById('guild-manage-btn')?.addEventListener('click', () => {
-        window.location.href = 'social.html#clan';
+        const panel = document.getElementById('guild-manage-panel');
+        if (!panel) return;
+        manageOpen = !manageOpen;
+        panel.style.display = manageOpen ? '' : 'none';
+        document.getElementById('guild-manage-btn').textContent = manageOpen ? '✖ Close' : '⚙ Manage';
+        if (manageOpen && !manageLoaded) {
+          manageLoaded = true;
+          buildManagePanel(clan, String(u.id), panel);
+        }
       });
     }
 
-    /* Load member list from /clan/members (all actual clan members, not just referrals) */
+    /* Load member list */
     if (!u || !u.id) return;
     const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: String(u.id) }));
     const listEl      = document.getElementById('guild-member-list');
@@ -201,8 +213,10 @@
     }
 
     listEl.innerHTML = members.map(m => {
-      const name   = m.first_name || t('fallback_username','Warrior');
+      const name   = m.first_name || t('fallback_username', 'Warrior');
       const init   = name.charAt(0).toUpperCase();
+      /* Level is computed from XP — DB field is not reliably updated */
+      const level  = Math.max(1, Math.floor((m.xp || 0) / 1000));
       const avatar = m.profile_pic
         ? `<div class="guild-member-avatar"><img src="${m.profile_pic}" alt="" onerror="this.parentElement.textContent='${init}'"></div>`
         : `<div class="guild-member-avatar">${init}</div>`;
@@ -215,12 +229,155 @@
         ${avatar}
         <div class="guild-member-info">
           <div class="guild-member-name">${name}</div>
-          <div class="guild-member-sub">LVL ${m.level || 1} · ${fmtN(m.xp || 0)} XP</div>
+          <div class="guild-member-sub">LVL ${level} · ${fmtN(m.xp || 0)} XP</div>
         </div>
         ${uid ? `</a>` : ''}
         ${tag}
       </div>`;
     }).join('');
+  };
+
+  /* ── Leader manage panel (inline in Overview) ────────────────────────── */
+
+  const buildManagePanel = async (clan, leaderId, container) => {
+    container.innerHTML = `
+      <div style="margin-bottom:12px;">
+        <div class="guild-section-head"><h4>⚙ Clan Settings</h4></div>
+        <article class="card" style="padding:14px 16px;">
+          <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;">💬 Telegram Group Link</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">Share your group link with all clan members.</div>
+          <div style="display:flex;gap:8px;">
+            <input type="url" id="gm-tg-link" class="guild-contrib-input"
+              style="flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:9px 10px;font-size:12px;"
+              placeholder="https://t.me/joinchat/…" value="${(clan.telegram_group_link || '').replace(/"/g,'&quot;')}" />
+            <button class="secondary-btn" id="gm-tg-save" style="padding:9px 14px;flex:none;font-size:12px;">Save</button>
+          </div>
+          <div id="gm-tg-msg" style="font-size:11px;margin-top:5px;min-height:16px;"></div>
+        </article>
+        <div id="gm-applications-wrap">
+          <p class="guild-empty">${t('loading_text','Loading…')}</p>
+        </div>
+      </div>`;
+
+    /* Save TG link */
+    document.getElementById('gm-tg-save')?.addEventListener('click', async () => {
+      const link   = document.getElementById('gm-tg-link')?.value.trim() || '';
+      const msgEl  = document.getElementById('gm-tg-msg');
+      const btn    = document.getElementById('gm-tg-save');
+      if (link && !link.startsWith('https://t.me/') && !link.startsWith('https://telegram.me/')) {
+        if (msgEl) { msgEl.textContent = 'Must start with https://t.me/…'; msgEl.style.color = 'var(--ember)'; }
+        return;
+      }
+      btn.disabled = true; btn.textContent = '…';
+      const res = await post('/api/season2/clan/set-telegram-link', { telegram_id: leaderId, telegram_group_link: link });
+      if (res?.status === 1) {
+        if (msgEl) { msgEl.textContent = link ? '✓ Saved!' : '✓ Cleared.'; msgEl.style.color = 'var(--gold)'; }
+        clan.telegram_group_link = link;
+        /* Update chat button visibility */
+        const chatBtn = document.getElementById('guild-chat-btn');
+        if (chatBtn) { chatBtn.style.display = link ? '' : 'none'; chatBtn.dataset.link = link; }
+      } else {
+        if (msgEl) { msgEl.textContent = res?.error === 'invalid_link' ? 'Invalid Telegram link.' : 'Could not save.'; msgEl.style.color = 'var(--ember)'; }
+      }
+      btn.disabled = false; btn.textContent = 'Save';
+    });
+
+    /* Load applications */
+    const appsWrap = document.getElementById('gm-applications-wrap');
+    const appsData = await get('/api/season2/clan/applications?' + new URLSearchParams({ telegram_id: leaderId }));
+    if (!appsData || appsData.status !== 1 || !appsWrap) return;
+
+    const apps = appsData.applications || [];
+    if (!apps.length) {
+      appsWrap.innerHTML = `
+        <article class="card" style="padding:14px 16px;margin-top:10px;">
+          <div class="guild-section-head" style="margin-bottom:6px;"><h4>Applications</h4></div>
+          <p class="guild-empty" style="padding:4px 0;">No pending applications.</p>
+        </article>`;
+      return;
+    }
+
+    const rows = apps.map(a => `
+      <div class="guild-member-row" id="gm-app-${a.applicant_id}">
+        <div class="guild-member-avatar">${(a.name || 'W').charAt(0).toUpperCase()}</div>
+        <div class="guild-member-info">
+          <div class="guild-member-name">${a.name || 'Warrior'}</div>
+          <div class="guild-member-sub">LVL ${Math.max(1, Math.floor((a.xp || 0) / 1000))} · ${fmtN(a.xp || 0)} XP</div>
+        </div>
+        <div style="display:flex;gap:6px;flex-shrink:0;">
+          <button class="guild-upgrade-btn" style="background:rgba(83,215,156,.12);border-color:rgba(83,215,156,.4);color:#53d79c;"
+            data-accept="${a.applicant_id}">✓ Accept</button>
+          <button class="guild-upgrade-btn" style="background:rgba(255,80,80,.1);border-color:rgba(255,80,80,.3);color:#ff5050;"
+            data-reject="${a.applicant_id}">✗ Reject</button>
+        </div>
+      </div>`).join('');
+
+    appsWrap.innerHTML = `
+      <div class="guild-section-head" style="margin-top:10px;">
+        <h4>Applications</h4><span>${apps.length} pending</span>
+      </div>
+      <article class="card" style="padding:0 16px;">${rows}</article>`;
+
+    appsWrap.querySelectorAll('[data-accept]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const id = btn.dataset.accept;
+        btn.disabled = true; btn.textContent = '…';
+        const res = await post('/api/season2/clan/accept-application', { telegram_id: leaderId, applicant_id: id });
+        if (res?.status === 1) {
+          showToast('Warrior accepted!');
+          document.getElementById(`gm-app-${id}`)?.remove();
+          /* Refresh member list */
+          const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: leaderId }));
+          const listEl = document.getElementById('guild-member-list');
+          if (listEl && membersData?.status === 1) {
+            const count = (membersData.members || []).length;
+            const countEl = document.getElementById('guild-member-count');
+            if (countEl) countEl.textContent = `${fmtNF(count)} warriors`;
+            listEl.innerHTML = (membersData.members || []).map(m => {
+              const name  = m.first_name || 'Warrior';
+              const init  = name.charAt(0).toUpperCase();
+              const level = Math.max(1, Math.floor((m.xp || 0) / 1000));
+              const avatar = m.profile_pic
+                ? `<div class="guild-member-avatar"><img src="${m.profile_pic}" alt="" onerror="this.parentElement.textContent='${init}'"></div>`
+                : `<div class="guild-member-avatar">${init}</div>`;
+              const tag = m.is_leader
+                ? `<span class="guild-member-tag guild-tag-leader">Leader</span>`
+                : `<span class="guild-member-tag guild-tag-member">⚔ Member</span>`;
+              const uid = m.telegram_id ? String(m.telegram_id) : '';
+              return `<div class="guild-member-row">
+                ${uid ? `<a href="profile.html?uid=${uid}" style="display:contents;">` : ''}
+                ${avatar}
+                <div class="guild-member-info">
+                  <div class="guild-member-name">${name}</div>
+                  <div class="guild-member-sub">LVL ${level} · ${fmtN(m.xp || 0)} XP</div>
+                </div>
+                ${uid ? `</a>` : ''}
+                ${tag}
+              </div>`;
+            }).join('');
+          }
+        } else {
+          const msg = { clan_full: 'Clan is full.', applicant_already_in_clan: 'Already in a clan.' }[res?.error] || 'Could not accept.';
+          showToast(msg);
+          btn.disabled = false; btn.textContent = '✓ Accept';
+        }
+      });
+    });
+
+    appsWrap.querySelectorAll('[data-reject]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const id = btn.dataset.reject;
+        btn.disabled = true; btn.textContent = '…';
+        const res = await post('/api/season2/clan/reject-application', { telegram_id: leaderId, applicant_id: id });
+        if (res?.status === 1) {
+          showToast('Application rejected.');
+          document.getElementById(`gm-app-${id}`)?.remove();
+        } else {
+          showToast('Could not reject. Try again.');
+          btn.disabled = false; btn.textContent = '✗ Reject';
+        }
+      });
+    });
   };
 
   /* ── Treasury tab ────────────────────────────────────────────────────── */
