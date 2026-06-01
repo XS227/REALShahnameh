@@ -1,7 +1,7 @@
 {
   "version": 3,
   "schema": "season2-lore@1",
-  "updatedAt": "2026-05-30T00:00:00Z",
+  "updatedAt": "2026-06-01T18:00:00Z",
   "chapter_slug": "keyumars",
   "chapter_id": 1,
   "era": {
@@ -53,12 +53,12 @@
       "order": 1,
       "title_en": "In the Name of Soul and Wisdom",
       "title_fa": "ستایشِ جان و خرد",
-      "era_en": "Eternal — Before Time",
-      "era_fa": "ازلی — پیش از زمان",
+      "era_en": "~7000 BC · Eternal Invocation",
+      "era_fa": "~۷۰۰۰ پ.م · فراخوانِ ازلی",
       "body_en": "Ferdowsi does not open with a king. He does not open with a war. He opens with a word of God — specifically the God of soul and wisdom. 'به نام خداوند جان و خرد / کزین برتر اندیشه برنگذرد': In the name of God of Soul and Wisdom, above whom no thought can reach higher. Before any throne is raised, before any sword is lifted, the poet kneels in awe. Thirty years he would spend writing this book. He began by placing wisdom at the summit of everything he knew.",
       "body_fa": "فردوسی با شاهی آغاز نمی‌کند. با جنگی آغاز نمی‌کند. با سخنی از خداوند آغاز می‌کند — خداوندِ جان و خرد. «به نامِ خداوندِ جان و خرد / کزین برتر اندیشه برنگذرد». پیش از آن‌که تختی برافراشته شود، پیش از آن‌که شمشیری کشیده شود، شاعر در هیبت فرود می‌آید. سی سال صرفِ نوشتنِ این کتاب کرد. آن را با نهادنِ خرد بر اوجِ همه چیز آغاز کرد.",
       "atmosphere": "court",
-      "image": "/assets/images/scenes/praise-of-wisdom-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-in-the-name-of-soul-and-wisdom.jpg",
       "reward": {
         "xp": 25
       },
@@ -69,12 +69,12 @@
       "order": 2,
       "title_en": "The Creation of the Cosmos",
       "title_fa": "آفرینشِ عالم",
-      "era_en": "Before All Time",
-      "era_fa": "پیش از همه‌ی زمان‌ها",
+      "era_en": "~7000 BC · Dawn of Creation",
+      "era_fa": "~۷۰۰۰ پ.م · بامدادِ آفرینش",
       "body_en": "In the beginning, darkness held everything without knowing what it held. Then light was spoken — not gradually, but all at once, like a word that cannot be unsaid. Heaven rose. Earth descended. Waters gathered in the low places and the mountains lifted their heads from the deep. The world had no name yet. But it had shape. And shape is the first thought God ever finished.",
       "body_fa": "در آغاز، تاریکی همه چیز را در بر داشت، بدون آن‌که بداند چه دارد. آن‌گاه روشنایی بیان شد — نه به‌تدریج، بلکه یکباره، همچون کلامی که باز پس گرفتنی نیست. آسمان برخاست. زمین فرو نشست. آب‌ها در پَستاها جمع شدند و کوه‌ها سر از ژرفا برکشیدند. جهان هنوز نامی نداشت. اما شکل داشت. و شکل، نخستین اندیشه‌ای است که خداوند به پایان رساند.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/creation-of-cosmos-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-creation-of-the-cosmos.jpg",
       "reward": {
         "xp": 25
       },
@@ -85,12 +85,12 @@
       "order": 3,
       "title_en": "The Celestial Dance",
       "title_fa": "آفرینشِ خورشید و ماه",
-      "era_en": "Before All Time",
-      "era_fa": "پیش از همه‌ی زمان‌ها",
+      "era_en": "~7000 BC · Age of the Sky",
+      "era_fa": "~۷۰۰۰ پ.م · دورانِ آسمان",
       "body_en": "Fire was given to the sun. Silver was given to the moon. Stars were scattered like seeds cast from a great hand across the dark field of heaven. Each one was set to its appointed path — an eternal march that would never stop, never slow. Together they became the first clock, the first calendar, the first teacher of time. Humanity would not arrive for many ages. But when it did, the sky would already be waiting, already keeping count.",
       "body_fa": "آتش به خورشید داده شد. نقره به ماه. ستارگان همچون دانه‌هایی که از دستی بزرگ بر مزرعه‌ی تاریکِ آسمان افشانده شده‌اند پراکنده گشتند. هر یک به مسیرِ مقرر خود نهاده شد — رهپیماییِ جاودانه‌ای که هرگز باز نمی‌ایستد. آن‌ها نخستین ساعت، نخستین تقویم، نخستین آموزگارِ زمان بودند. بشر هنوز نیامده بود. اما وقتی می‌آمد، آسمان از پیش منتظر بود.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/celestial-dance-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-celestial-dance.jpg",
       "reward": {
         "xp": 25
       },
@@ -101,12 +101,12 @@
       "order": 4,
       "title_en": "The Awakening of Mankind",
       "title_fa": "آفرینشِ مردم",
-      "era_en": "Before All Time",
-      "era_fa": "پیش از همه‌ی زمان‌ها",
+      "era_en": "~7000 BC · First Humanity",
+      "era_fa": "~۷۰۰۰ پ.م · نخستین انسانیت",
       "body_en": "From water, clay, fire, and wind — humanity was shaped. The animals had been given strength, speed, or silence. But to this new creature something else was added: the gift of reason. A small vessel carrying an enormous light. The animal asks what it needs. The human asks what it means. That question — unanswerable, irresistible — is the beginning of all stories ever told, including this one.",
       "body_fa": "از آب، گل، آتش و باد — انسان شکل گرفت. به حیوانات نیرو داده شده بود، سرعت یا سکوت. اما به این مخلوقِ جدید چیزی دیگر افزوده شد: هدیه‌ی خرد. ظرفی کوچک که نوری عظیم در خود دارد. حیوان می‌پرسد به چه نیاز دارد. انسان می‌پرسد معنایش چیست. این پرسش — بی‌پاسخ، غیرقابلِ مقاومت — آغازِ همه‌ی داستان‌هایی است که تا به حال گفته شده‌اند، از جمله همین یکی.",
       "atmosphere": "warm",
-      "image": "/assets/images/scenes/awakening-of-mankind-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-awakening-of-mankind.jpg",
       "reward": {
         "xp": 25
       },
@@ -117,12 +117,12 @@
       "order": 5,
       "title_en": "The Virtue of Wisdom",
       "title_fa": "در فضلِ خرد",
-      "era_en": "Timeless Teaching",
-      "era_fa": "آموزشی جاودانه",
+      "era_en": "~7000 BC · Wisdom of the Chronicle",
+      "era_fa": "~۷۰۰۰ پ.م · خردِ شاهنامه",
       "body_en": "Before any king takes the throne, Ferdowsi pauses to praise wisdom itself. Wisdom is the commander of all things. It sees what the eye cannot. It knows what will come before it arrives. Armies fall. Kingdoms end. Gold corrupts. But wisdom — kherad — endures. The wise man carries it like a torch that does not burn the hand but lights the path forever. The Shahnameh will be filled with kings who had it and kings who lost it. What happens to each is not fate. It is consequence.",
       "body_fa": "پیش از آن‌که شاهی بر تخت نشیند، فردوسی مکث می‌کند تا خودِ خرد را بستاید. خرد فرمانده‌ی همه چیز است. آنچه را چشم نمی‌بیند می‌بیند. آنچه را که هنوز نیامده می‌داند. سپاه‌ها می‌ریزند. پادشاهی‌ها پایان می‌یابند. زر فاسد می‌کند. اما خرد می‌ماند. خردمند آن را همچون مشعلی حمل می‌کند که دست را نمی‌سوزاند اما راه را برای همیشه روشن می‌کند.",
       "atmosphere": "court",
-      "image": "/assets/images/scenes/virtue-of-wisdom-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-virtue-of-wisdom.jpg",
       "reward": {
         "xp": 30
       },
@@ -138,7 +138,7 @@
       "body_en": "This book came from many books. Across centuries and dynasties, fragments of the ancient stories passed from memory to papyrus to parchment, from province to province, from language to language. A Zoroastrian high priest held some. A general held others. Under Abu Mansur of Tus, scribes were sent across Khorasan to gather them — and in 977 CE, a poet in Tus began weaving them together. For thirty years Ferdowsi worked. His patron died. His money ran out. His eyes grew dim. He kept writing. What you hold now is what he would not let die.",
       "body_fa": "این کتاب از کتاب‌های بسیار آمد. در طولِ سده‌ها و سلسله‌ها، تکه‌های داستان‌های کهن از حافظه به پاپیروس و از پاپیروس به پوست، از ولایت به ولایت و از زبان به زبان منتقل شد. موبدی بزرگ برخی را داشت. سپهسالاری دیگران را. در دوره‌ی ابومنصورِ طوسی، دبیران به سراسرِ خراسان فرستاده شدند تا آن‌ها را گردآوری کنند. در سالِ ۳۶۷ هجری شمسی، شاعری در طوس آغاز به بافتنِ آن‌ها کرد. سی سال فردوسی کار کرد. حامیش درگذشت. پولش تمام شد. چشمانش کم‌سو شد. اما می‌نوشت. آنچه اکنون در دست داری همان چیزی است که او اجازه نداد بمیرد.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/preservation-of-chronicle-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-preservation-of-the-chronicle.jpg",
       "reward": {
         "xp": 35
       },
@@ -154,7 +154,7 @@
       "body_en": "Under Keyumars the people learn to bind their hair, to keep the hearth, to mark the moon. The first measures are taken: a step, a hand, a pace. The first words are tied to the first acts. Children are named. The dead are buried with stones. Order, the eldest gift, is given.",
       "body_fa": "در روزگار کیومرث، مردمان می‌آموزند گیسوی خود را ببندند، آتشِ خانه را پاس دارند و ماه را نشانه گیرند. نخستین مقیاس‌ها به‌دست می‌آیند: یک گام، یک دست، یک پیمایه. واژه‌ها به کارها بسته می‌شوند. کودکان نام می‌گیرند. مردگان با سنگ‌ها به خاک سپرده می‌شوند. نظم، کهن‌ترین هدیه، فرود می‌آید.",
       "atmosphere": "warm",
-      "image": "/assets/images/scenes/humans-learn-order-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-humans-learn-order.jpg",
       "reward": {
         "xp": 30
       },
@@ -174,7 +174,7 @@
       "body_en": "Lions come down from the high pasture and lie at the foot of the stone court. Wolves let go of the mountain goats. The leopard, whose skin he wears, walks past him without sound. The world recognises a king before it understands what kingship is.",
       "body_fa": "شیران از چراگاهِ بلند فرود می‌آیند و در پای درگاهِ سنگی می‌خوابند. گرگان، بزانِ کوهی را رها می‌کنند. پلنگی که پوستش را بر تن دارد، بی‌صدا از کنار او می‌گذرد. جهان شاه را می‌شناسد، پیش از آن‌که شاهی را دریابد.",
       "atmosphere": "wild",
-      "image": "/assets/images/scenes/beasts-bow-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-the-beasts-bow.jpg",
       "reward": {
         "xp": 30
       },
@@ -192,7 +192,7 @@
       "body_en": "At the edge of the green forest the wind reverses. Owls take wing in daylight. A goat is found cold on a path no wolf has used. The mountain-court whispers, but the king holds firm. Something old has begun to remember the smell of fire.",
       "body_fa": "در کرانه‌ی جنگلِ سبز، باد وارونه می‌وزد. جغدها در روشناییِ روز پر می‌کشند. بزی سرد بر راهی که هیچ گرگ از آن نگذشته، یافت می‌شود. درگاهِ کوهستانی نجوا می‌کند، اما شاه پابرجاست. چیزی کهن، آغاز به یاد آوردنِ بوی آتش کرده است.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/darkness-stirs-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-darkness-stirs.jpg",
       "reward": {
         "xp": 30
       },
@@ -210,7 +210,7 @@
       "body_en": "Far below the roots of the world, in the place where light has never been, Ahriman opens his eyes. He sees the firelight on the high mountain. He sees the leopard-skin king. He sees the children sleeping. He calls for his black son, and the Div answers.",
       "body_fa": "بسی فروتر از ریشه‌های جهان، در جایی که هرگز روشنی نتافته، اهریمن چشم می‌گشاید. روشنیِ آتش را بر کوهِ بلند می‌بیند. شاهِ پوست‌پلنگ را می‌بیند. کودکانِ خفته را می‌بیند. پسرِ سیاهِ خود را می‌خواند، و دیو پاسخ می‌دهد.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/ahriman-awakens-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-ahriman-awakens.jpg",
       "reward": {
         "xp": 40
       },
@@ -228,7 +228,7 @@
       "body_en": "Siamak, the king's son, takes up the first banner. He is young and his hair is uncut. He turns toward the forest with no army but his name, the dawn at his back and a black wind at his face. He is the first hero of the chronicle. The mountain holds its breath.",
       "body_fa": "سیامک، پسرِ شاه، نخستین درفش را برمی‌گیرد. جوان است و گیسویش هنوز ناچیده. تنها با نامِ خود سوی جنگل می‌گردد، سپیده‌دم بر پشت و بادِ سیاه در روی. او نخستین قهرمانِ این تاریخ است. کوه دم فرو می‌بندد.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/siamak-rises-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-siamak-rises.jpg",
       "reward": {
         "xp": 50
       },
@@ -246,7 +246,7 @@
       "body_en": "Out of the trees he steps — black-skinned, fire-eyed, taller than the elder oaks. Siamak meets him on the open turf. The Shahnameh does not flinch from the cost: this is where the first sorrow enters the world. The leopard-skin king will mourn thirty days. And his grandson will avenge him in the next dawn.",
       "body_fa": "از میانِ درختان پدیدار می‌گردد — سیاه‌چرده، آتش‌چشم، بلندتر از بلوطانِ کهن. سیامک در میانه‌ی چمنِ گشوده با او روبه‌رو می‌شود. شاهنامه از بهای آن نمی‌گریزد: نخستین اندوه از این‌جا به جهان می‌آید. شاهِ پوست‌پلنگ سی روز سوگ خواهد گزارد. و نوه‌اش در سپیده‌دمِ پسین، کین او می‌ستاند.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/black-div-appears-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-the-black-div-appears.jpg",
       "reward": {
         "xp": 60
       },
@@ -264,7 +264,7 @@
       "body_en": "Banner against claw. Dawn against shadow. Siamak strikes first, and the forest holds its breath. The Black Div answers with the weight of an older world. Steel and night fold together at the edge of the green. The first battle of humankind is fought on open turf — and the first defeat is borne, so that the first defiance can be remembered.",
       "body_fa": "درفش در برابرِ چنگال. سپیده‌دم در برابرِ سایه. سیامک نخستین ضربه را فرود می‌آورد و جنگل دم فرو می‌بندد. دیوِ سیاه با وزنِ جهانی کهن‌تر پاسخ می‌دهد. آهن و شب در کرانه‌ی سبز در هم می‌پیچند. نخستین نبردِ آدمی بر چمنِ گشوده روی می‌دهد — و نخستین شکست تاب آورده می‌شود، تا نخستین ایستادگی به‌یاد بماند.",
       "atmosphere": "fated",
-      "image": "/assets/images/scenes/battle-against-darkness-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-battle-against-darkness.jpg",
       "reward": {
         "xp": 70
       },
@@ -280,7 +280,7 @@
       "body_en": "Keyumars unbinds the leopard-skin and lays it across the cold court. For thirty days the fire is kept low. Then a small hand reaches for the spear — his grandson, Hushang, who has watched and remembered. The first chapter of the chronicle closes here: not in victory, but in resolve. The dawn is older than the dark. The Shahnameh has begun.",
       "body_fa": "کیومرث پوستِ پلنگ را می‌گشاید و بر درگاهِ سرد می‌گذارد. سی روز آتش را کوتاه نگاه می‌دارند. آن‌گاه دستی کوچک نیزه را برمی‌گیرد — نوه‌اش هوشنگ که نگریسته و به‌یاد سپرده است. نخستین دفترِ این تاریخ این‌جا پایان می‌گیرد: نه با پیروزی، که با عزم. سپیده‌دم کهن‌تر از تاریکی است. شاهنامه آغاز شده است.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/chapter-1-complete-scene.png",
+      "image": "/assets/images/scenes/shahnameh-chapter-1-thirty-days-of-mourning.jpg",
       "reward": {
         "xp": 100
       },
