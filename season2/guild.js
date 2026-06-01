@@ -339,14 +339,9 @@
 
   /* ── Wars tab ────────────────────────────────────────────────────────── */
 
-  const buildWars = async (myClanId) => {
+  const buildWars = (myClanId, data) => {
     const panel = document.getElementById('guild-panel-wars');
     if (!panel) return;
-
-    panel.innerHTML = `<p class="guild-empty">${t('loading_text','Loading…')}</p>`;
-
-    const qs   = new URLSearchParams();
-    const data = await get('/api/season2/clan/browse?' + qs.toString());
 
     if (!data || data.status !== 1 || !(data.clans || []).length) {
       panel.innerHTML = `
@@ -522,61 +517,60 @@
     document.getElementById('guild-main').style.display     = 'none';
     document.getElementById('guild-no-clan').style.display  = 'none';
 
-    const u = tgUser();
-
-    if (!u || !u.id) {
-      /* No Telegram context — check if user was previously in a clan */
-      const cachedClanId = localStorage.getItem('real_my_clan_id') || '';
-      if (!cachedClanId) { showNoClan(); return; }
-    }
-
-    const clanData = u
-      ? await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: String(u.id) }))
-      : null;
-
-    const clan = (clanData?.status === 1) ? clanData.clan : null;
-
-    if (!clan) {
-      /* Also update localStorage */
-      try { localStorage.setItem('real_my_clan_id', ''); } catch (_) {}
-      showNoClan();
-      return;
-    }
-
-    /* Cache */
     try {
-      localStorage.setItem('real_my_clan_id', clan.clan_id);
-      localStorage.setItem('real_has_clan', '1');
-    } catch (_) {}
+      const u = tgUser();
 
-    _clanId = clan.clan_id;
+      if (!u || !u.id) {
+        const cachedClanId = localStorage.getItem('real_my_clan_id') || '';
+        if (!cachedClanId) { showNoClan(); return; }
+      }
 
-    /* Determine war rank from browse list */
-    let warRank = null;
-    const browseData = await get('/api/season2/clan/browse');
-    if (browseData?.status === 1) {
-      const idx = (browseData.clans || []).findIndex(c => c.clan_id === clan.clan_id);
-      if (idx >= 0) warRank = idx + 1;
+      const clanData = u
+        ? await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: String(u.id) }))
+        : null;
+
+      const clan = (clanData?.status === 1) ? clanData.clan : null;
+
+      if (!clan) {
+        try { localStorage.setItem('real_my_clan_id', ''); } catch (_) {}
+        showNoClan();
+        return;
+      }
+
+      try {
+        localStorage.setItem('real_my_clan_id', clan.clan_id);
+        localStorage.setItem('real_has_clan', '1');
+      } catch (_) {}
+
+      _clanId = clan.clan_id;
+
+      /* Show the guild view immediately — don't wait for secondary fetches */
+      document.getElementById('guild-loading').style.display = 'none';
+      document.getElementById('guild-main').style.display    = '';
+
+      populateHero(clan, u);
+      populateStats(clan, null);   /* war rank filled in below */
+      wireTabs();
+      wireContribModal();
+      buildTreasury(clan);
+      buildQuests(clan);
+      buildOverview(clan, u);      /* async, self-contained */
+      showTab('overview');
+
+      /* Load war rank + wars tab in the background */
+      const browseData = await get('/api/season2/clan/browse');
+      if (browseData?.status === 1) {
+        const idx = (browseData.clans || []).findIndex(c => c.clan_id === clan.clan_id);
+        const warRank = idx >= 0 ? idx + 1 : null;
+        populateStats(clan, warRank);
+        buildWars(clan.clan_id, browseData);
+      }
+
+    } catch (err) {
+      console.error('[guild] init error', err);
+      /* Show no-clan rather than staying stuck on loading */
+      showNoClan();
     }
-
-    /* Show main guild view */
-    document.getElementById('guild-loading').style.display = 'none';
-    document.getElementById('guild-main').style.display    = '';
-
-    populateHero(clan, u);
-    populateStats(clan, warRank);
-    wireTabs();
-    wireContribModal();
-
-    /* Build all tab panels */
-    buildTreasury(clan);
-    buildQuests(clan);
-    await Promise.all([
-      buildOverview(clan, u),
-      buildWars(clan.clan_id),
-    ]);
-
-    showTab('overview');
   };
 
   if (document.readyState === 'loading') {
