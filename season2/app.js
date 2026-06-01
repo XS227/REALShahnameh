@@ -724,8 +724,8 @@
       { file: "offerings.html",       ico: "🔥", key: "nav_offerings", section: "world" },
       { file: "hakim.html",           ico: "🤖", key: "nav_hakim",     section: "world", cls: "hakim-link" },
       { file: "profile.html",         ico: "👤", key: "profile",       section: "more"  },
+      { file: "inventory.html",       ico: "📦", key: "inventory",     section: "more"  },
       { file: null,                   ico: "🛒", key: "market",        section: "more",  coming: true },
-      { file: null,                   ico: "📦", key: "inventory",     section: "more",  coming: true },
     ];
 
     const buildNavLinks = (tx) => {
