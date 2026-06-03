@@ -737,7 +737,8 @@
   overflow: hidden;
 }
 .scene-modal-image .scene-emoji { display: none; }
-.scene-modal-image img {
+.scene-modal-image img,
+.scene-modal-image video {
   position: absolute;
   inset: 0;
   width: 100%; height: 100%;
@@ -745,7 +746,19 @@
   display: block;
   filter: saturate(1.05);
 }
+.scene-modal-image video {
+  filter: none; /* no saturation boost on video */
+}
+.scene-modal-image iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  border: none;
+  display: block;
+}
 .scene-modal-image img.img-fail { display: none; }
+/* Gradient overlay sits above video/iframe but passes pointer events through */
+.scene-modal-image::after { z-index: 2; }
 
 /* Dark/gold "image coming soon" placeholder — for missing scene art. */
 .scene-modal-image .scene-placeholder {

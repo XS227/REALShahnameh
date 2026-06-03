@@ -142,7 +142,7 @@
       "body_en": "Three sons. Three parts of the world. Salm receives the lands of Rum and Khazar — the west. Tur receives Turan and China — the east. Iraj receives Iran — the smallest, the holiest, the heart. Iraj does not complain about the size of his portion. He says: Iran is enough. His brothers do not believe him. They do not understand that the one who asks for the heart of a thing does not want what lies around it. They will kill him. This is where the Shahnameh's wars begin: not from cruelty but from the inability to imagine that someone might genuinely want less.",
       "body_fa": "سه پسر. سه بخش از جهان. سلم سرزمین‌های روم و خزر را می‌گیرد — غرب. تور توران و چین را — شرق. ایرج ایران را — کوچک‌ترین، مقدس‌ترین، قلب را. ایرج از اندازه‌ی سهمش شکایتی ندارد. می‌گوید: ایران کافی است. برادرانش باورشان نمی‌شود. نمی‌فهمند کسی که قلبِ چیزی را می‌خواهد آنچه را دورش است نمی‌خواهد. او را می‌کشند. اینجاست که جنگ‌های شاهنامه آغاز می‌شوند: نه از بدخواهی بلکه از ناتوانی در تصور اینکه کسی ممکن است واقعاً کمتر بخواهد.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/three-sons-scene.png",
+      "video_url": "https://drive.google.com/file/d/1QkpKyb8R01LEzLXrUwiMC9fajoTPWnGX/view",
       "reward": { "xp": 100 },
       "unlocks_codex": ["iraj-salm-tur", "wars-begin", "manuchehr-ch6"]
     }

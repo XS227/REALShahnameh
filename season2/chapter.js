@@ -929,7 +929,30 @@
     // Reset image host then build fresh — atmosphere class drives the gradient.
     imgHost.className = `scene-modal-image atmos-${s.atmosphere || "dawn"}`;
     imgHost.innerHTML = `<span class="scene-placeholder">${escapeHtml(tr("image_coming_soon"))}</span>`;
-    if (s.image) {
+    if (s.video_url) {
+      const placeholder = imgHost.querySelector(".scene-placeholder");
+      if (placeholder) placeholder.hidden = true;
+      // Google Drive share/view URLs → use preview iframe for reliable playback
+      const gdMatch = s.video_url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+      if (gdMatch) {
+        const iframe = document.createElement("iframe");
+        iframe.src = `https://drive.google.com/file/d/${gdMatch[1]}/preview`;
+        iframe.title = s.title_en || "";
+        iframe.allow = "autoplay; fullscreen; encrypted-media";
+        iframe.allowFullscreen = true;
+        imgHost.appendChild(iframe);
+      } else {
+        // Direct video URL — use HTML5 video with autoplay+loop+muted
+        const video = document.createElement("video");
+        video.src = s.video_url;
+        video.autoplay = true;
+        video.loop = true;
+        video.muted = true;
+        video.playsInline = true;
+        if (s.image) video.poster = s.image;
+        imgHost.appendChild(video);
+      }
+    } else if (s.image) {
       const img = document.createElement("img");
       img.alt = "";
       img.src = s.image;
