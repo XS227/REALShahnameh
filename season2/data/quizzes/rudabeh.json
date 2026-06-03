@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "rudabeh-e1",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How does Zal first learn about Rudabeh before ever seeing her?",
+      "question_fa": "زال چگونه پیش از دیدنِ رودابه از او باخبر می‌شود؟",
+      "question_tg": "Зол чӣ тавр пеш аз дидани Рӯдоба аз ӯ огоҳ мешавад?",
+      "answers": [
+        "He sees her from a distance at a feast",
+        "A dream sent by the Simorgh",
+        "Merchants describe her beauty to him",
+        "Manuchehr introduces them at court"
+      ],
+      "answers_fa": [
+        "او را از دور در جشنی می‌بیند",
+        "خوابی که سیمرغ فرستاد",
+        "بازرگانان زیباییِ او را برایش توصیف می‌کنند",
+        "منوچهر آن‌ها را در دربار معرفی می‌کند"
+      ],
+      "answers_tg": [
+        "Ӯро аз дур дар базме мебинад",
+        "Хобе, ки Симурғ фиристод",
+        "Тоҷирон зебоии ӯро барояш тавсиф мекунанд",
+        "Манучеҳр онҳоро дар дарбор шинос мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Merchants describe Rudabeh to Zal — her face like the moon, her hair like a river. He falls in love through words alone before he has seen her. The Shahnameh treats this as a form of recognition more reliable than love at first sight: to love what is described is to love the essential thing, not merely the surface.",
+      "explanation_fa": "بازرگانان رودابه را برای زال توصیف می‌کنند — رخسارش مثلِ ماه، مویش مثلِ رودخانه. او تنها با کلمات عاشق می‌شود پیش از آنکه چهره‌اش را دیده باشد. شاهنامه این را نوعی شناخت می‌داند که از عشقِ در نگاهِ اول قابل‌اعتمادتر است.",
+      "explanation_tg": "Тоҷирон Рӯдобаро ба Зол тавсиф мекунанд — рӯяш мисли моҳ, мӯяш мисли дарё. Ӯ танҳо бо калимаҳо ошиқ мешавад пеш аз он ки рӯяшро дида бошад.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "rudabeh-e2",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What does Rudabeh do so Zal can reach her tower chamber?",
+      "question_fa": "رودابه چه می‌کند تا زال بتواند به اتاقِ بالای برج برسد؟",
+      "question_tg": "Рӯдоба чӣ мекунад, то Зол ба ҳуҷраи болои бурҷ бирасад?",
+      "answers": [
+        "She bribes the tower guards to let him through",
+        "She lowers a silk rope from the window",
+        "She meets him secretly at the base of the tower",
+        "She lets her long hair down for him to climb"
+      ],
+      "answers_fa": [
+        "نگهبانانِ برج را رشوه می‌دهد تا بگذارند رد شود",
+        "از پنجره طنابِ ابریشمی پایین می‌اندازد",
+        "در پایِ برج مخفیانه با او ملاقات می‌کند",
+        "موهای بلندش را برای بالا رفتنش پایین می‌اندازد"
+      ],
+      "answers_tg": [
+        "Посбонони бурҷро ришва медиҳад, то бигузоранд гузарад",
+        "Аз тиреза ресмони абрешимӣ мепартояд",
+        "Дар поёни бурҷ пинҳонӣ бо ӯ вохӯрд мекунад",
+        "Мӯҳои дарози худро барои боло рафтанаш мепартояд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Rudabeh lets her hair down from the window — hair so long it reaches the ground — and Zal climbs up it. This image is one of the Shahnameh's most famous: love so complete that the body itself becomes the bridge. The hair is not a metaphor. It is the literal ladder.",
+      "explanation_fa": "رودابه مویش را از پنجره پایین می‌اندازد — مویی که آنقدر بلند است که به زمین می‌رسد — و زال از آن بالا می‌رود. این تصویر یکی از مشهورترین‌های شاهنامه است: عشقی که چنان کامل است که خودِ جسم پل می‌شود.",
+      "explanation_tg": "Рӯдоба мӯяшро аз тиреза мепартояд — мӯе ки чунон дароз аст, ки ба замин мерасад — ва Зол аз он боло меравад. Ин тасвир яке аз машҳуртаринҳои Шоҳнома аст.",
+      "reward": {
+        "xp": 130,
+        "real": 55
+      }
+    },
+    {
+      "id": "rudabeh-m1",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Why do Sam and Manuchehr initially oppose the marriage of Zal and Rudabeh?",
+      "question_fa": "چرا سام و منوچهر در ابتدا با ازدواجِ زال و رودابه مخالفند؟",
+      "question_tg": "Чаро Сом ва Манучеҳр дар ибтидо бо издивоҷи Зол ва Рӯдоба мухолифанд?",
+      "answers": [
+        "Zal is too old — Rudabeh deserves a younger husband",
+        "Kabul is at war with Iran and the marriage would shame Sam",
+        "Rudabeh's lineage traces back to Zahhak the Serpent King",
+        "The Simorgh forbade Zal from marrying anyone of mortal blood"
+      ],
+      "answers_fa": [
+        "زال خیلی پیر است — رودابه لایقِ شوهرِ جوان‌تری است",
+        "کابل با ایران در جنگ است و این ازدواج آبروی سام را می‌برد",
+        "نسبِ رودابه به ضحاکِ مارکِش می‌رسد",
+        "سیمرغ زال را از ازدواج با هر کسی از خونِ فانی منع کرده"
+      ],
+      "answers_tg": [
+        "Зол хеле пир аст — Рӯдоба лоиқи шавҳари ҷавонтаре аст",
+        "Кобул бо Эрон дар ҷанг аст ва ин издивоҷ обрӯи Сомро мебарад",
+        "Насаби Рӯдоба ба Заҳҳоки Морбандак мерасад",
+        "Симурғ Золро аз издивоҷ бо ҳар касе аз хуни фонӣ манъ кардааст"
+      ],
+      "correct_answer": 2,
+      "explanation": "Rudabeh is descended from Mehrab of Kabul, whose lineage traces back to Zahhak — the Serpent King whose thousand-year tyranny was the darkest chapter in Iran's history. Marrying into that blood felt to Sam and Manuchehr like inviting the old evil back in through the door of love. The astrologers had to show them that the child to come would be greater than the shadow behind his mother's name.",
+      "explanation_fa": "رودابه از مهرابِ کابلی نسب می‌برد که نسبش به ضحاک می‌رسد — شاهِ ماری که هزار سال ستمگری‌اش تاریک‌ترین دفترِ تاریخِ ایران بود. ازدواج با آن خون برای سام و منوچهر مثلِ دعوتِ دوباره‌ی بدِ قدیم از درِ عشق به نظر می‌رسید. منجمان باید نشان می‌دادند که فرزندی که می‌آید از سایه‌ای پشتِ نامِ مادرش بزرگ‌تر خواهد بود.",
+      "explanation_tg": "Рӯдоба аз Меҳроби Кобулӣ насаб мебарад, ки насабаш ба Заҳҳок мерасад — шоҳи море, ки ҳазор соли ситамгариаш торик‌тарин бобиест дар таърихи Эрон. Оид ба ин, мунаҷҷимон бояд нишон медоданд ки фарзанди меомад аз соябону Заҳҳок бузургтар хоҳад буд.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "rudabeh-e3",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How did Zal enter Rudabeh's tower for their first meeting?",
+      "question_fa": "زال چگونه برای اولین ملاقات وارد برجِ رودابه شد؟",
+      "question_tg": "Зол чӣ тавр барои аввалин мулоқот ба бурҷи Рӯдоба даромад?",
+      "answers": [
+        "Through a hidden gate opened by handmaidens",
+        "He climbed Rudabeh's hair, which she let down from the window",
+        "He scaled the wall with a rope",
+        "He bribed the palace guards"
+      ],
+      "answers_fa": [
+        "از طریقِ دروازه‌ی پنهانی که ندیمه‌ها گشودند",
+        "از موهای رودابه بالا رفت که او از پنجره آویخته بود",
+        "با طناب از دیوار بالا رفت",
+        "نگهبانان کاخ را رشوه داد"
+      ],
+      "answers_tg": [
+        "Тавассути дарвозаи пинҳоние ки надимаҳо гушоданд",
+        "Аз мӯйҳои Рӯдоба боло рафт, ки ӯ аз тиреза овезон карда буд",
+        "Бо тӯб аз девор боло рафт",
+        "Посбонони қасрро ришва дод"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rudabeh let her hair down from the window — hair so long it reached the ground — and Zal climbed up.",
+      "explanation_fa": "رودابه موهایش را از پنجره آویخت — موهایی که تا زمین می‌رسید — و زال بالا رفت.",
+      "explanation_tg": "Рӯдоба мӯяшро аз тиреза овезон кард — мӯе ки то замин мерасид — ва Зол боло рафт.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "rudabeh-m2",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "Where did Rudabeh and Zal first meet in person?",
+      "question_fa": "رودابه و زال کجا اولین بار رو در رو ملاقات کردند؟",
+      "question_tg": "Рӯдоба ва Зол дар куҷо аввалин бор рӯ ба рӯ мулоқот карданд?",
+      "answers": [
+        "At Manuchehr's court",
+        "In a garden below Rudabeh's tower, arranged by her handmaidens",
+        "On the banks of the Oxus",
+        "At a festival in Kabul"
+      ],
+      "answers_fa": [
+        "در دربارِ منوچهر",
+        "در باغی زیرِ برجِ رودابه، که ندیمه‌ها ترتیب دادند",
+        "در کرانه‌های جیحون",
+        "در جشنی در کابل"
+      ],
+      "answers_tg": [
+        "Дар дарбори Манӯчеҳр",
+        "Дар боғе зери бурҷи Рӯдоба, ки надимаҳо тартиб доданд",
+        "Дар соҳилҳои Ҷайҳун",
+        "Дар ҷашне дар Кобул"
+      ],
+      "correct_answer": 1,
+      "explanation": "The handmaidens arranged a meeting in the garden below Rudabeh's tower. There Rudabeh let her hair down from the window.",
+      "explanation_fa": "ندیمه‌ها ملاقاتی در باغِ زیرِ برجِ رودابه ترتیب دادند. آنجا بود که رودابه موهایش را از پنجره آویخت.",
+      "explanation_tg": "Надимаҳо вохӯрие дар боғе зери бурҷи Рӯдоба тартиб доданд. Дар он ҷо Рӯдоба мӯяшро аз тиреза овезон кард.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      }
+    },
+    {
+      "id": "rudabeh-m3",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What city and kingdom is Rudabeh the princess of?",
+      "question_fa": "رودابه شاهزاده‌ی کدام شهر و قلمرو است؟",
+      "question_tg": "Рӯдоба шоҳдухтари кадом шаҳр ва қаламрав аст?",
+      "answers": [
+        "Balkh in Khorasan",
+        "Isfahan in central Iran",
+        "Kabul, daughter of Mehrab",
+        "Sistan, daughter of Sam"
+      ],
+      "answers_fa": [
+        "بلخ در خراسان",
+        "اصفهان در مرکزِ ایران",
+        "کابل، دخترِ مهراب",
+        "سیستان، دخترِ سام"
+      ],
+      "answers_tg": [
+        "Балх дар Хуросон",
+        "Исфаҳон дар марказ",
+        "Кобул, духтари Меҳроб",
+        "Систон, духтари Сом"
+      ],
+      "correct_answer": 2,
+      "explanation": "Rudabeh is the princess of Kabul, daughter of Mehrab — whose ancestry included Zahhak.",
+      "explanation_fa": "رودابه شاهزاده‌ی کابل است، دختر مهراب — که نسبش به ضحاک می‌رسید.",
+      "explanation_tg": "Рӯдоба шоҳдухтари Кобул аст, духтари Меҳроб — ки насабаш ба Заҳҳок мерасид.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "rudabeh-m4",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What crisis occurred at Rostam's birth that required Zal to summon the Simorgh?",
+      "question_fa": "در هنگامِ تولدِ رستم چه بحرانی رخ داد که زال را مجبور کرد سیمرغ را فرا بخواند؟",
+      "question_tg": "Ҳангоми таваллуди Рустам чӣ буҳроне рӯй дод ки Золро маҷбур кард Симурғро бихонад?",
+      "answers": [
+        "Zal had lost the feather",
+        "The birth would not come — Rudabeh was dying",
+        "A demon attacked the palace",
+        "The astrologers forbade the birth that night"
+      ],
+      "answers_fa": [
+        "زال پر را گم کرده بود",
+        "زایمان نمی‌آمد — رودابه در حال مرگ بود",
+        "دیوی به کاخ حمله کرد",
+        "ستاره‌شناسان آن شب تولد را ممنوع کرده بودند"
+      ],
+      "answers_tg": [
+        "Зол парро гум карда буд",
+        "Зоиш намеомад — Рӯдоба дар ҳоли марг буд",
+        "Деве ба қаср ҳамла кард",
+        "Ситорашиносон он шаб таваллудро манъ карда буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nine months after the wedding the birth would not come. Rudabeh grew weak and was dying. Zal burned the Simorgh's feather.",
+      "explanation_fa": "نه ماه بعد از عروسی زایمان نمی‌آمد. رودابه ضعیف شد و داشت می‌مُرد. زال پرِ سیمرغ را سوزاند.",
+      "explanation_tg": "Нӯҳ моҳ пас аз арӯсӣ зоиш намеомад. Рӯдоба заиф шуд ва дошт мемурд. Зол пари Симурғро сӯзонд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "rudabeh-m5",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "What object did Zal burn to summon the Simorgh during Rudabeh's crisis?",
+      "question_fa": "زال برای فراخواندنِ سیمرغ در بحرانِ رودابه چه چیزی سوزاند؟",
+      "question_tg": "Зол барои фарохонии Симурғ дар буҳрони Рӯдоба чӣ чизро сӯзонд?",
+      "answers": [
+        "A bundle of sacred cedar wood",
+        "The feather the Simorgh had given him on Alborz",
+        "A piece of Rudabeh's hair",
+        "His warrior's banner"
+      ],
+      "answers_fa": [
+        "دسته‌ای از چوبِ سروِ مقدس",
+        "پری که سیمرغ در البرز به او داده بود",
+        "تکه‌ای از موهای رودابه",
+        "درفشِ جنگجویانه‌اش"
+      ],
+      "answers_tg": [
+        "Дастаи чӯби арзи муқаддас",
+        "Пари Симурғ, ки ӯ дар Алборз додаа буд",
+        "Тикаи мӯйҳои Рӯдоба",
+        "Дарафши ҷангиаш"
+      ],
+      "correct_answer": 1,
+      "explanation": "Zal burned the Simorgh's feather — the promise she had given him when he descended from Alborz. She came.",
+      "explanation_fa": "زال پرِ سیمرغ را سوزاند — وعده‌ای که سیمرغ هنگامِ فرود از البرز به او داده بود. سیمرغ آمد.",
+      "explanation_tg": "Зол пари Симурғро сӯзонд — ваъдае ки Симурғ ҳангоми поён омадан аз Алборз ба ӯ дода буд. Симурғ омад.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "rudabeh-h1",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "How did both Zal and Rudabeh fall in love before ever meeting?",
+      "question_fa": "زال و رودابه هر دو چگونه پیش از ملاقات عاشق شدند؟",
+      "question_tg": "Зол ва Рӯдоба ҳарду чӣ тавр пеш аз мулоқот ошиқ шуданд?",
+      "answers": [
+        "Both had prophetic dreams showing each other's faces",
+        "Zal fell in love through merchants' descriptions; Rudabeh through her handmaidens' description of seeing Zal at market",
+        "Both saw each other from a distance at a king's festival",
+        "Their love was arranged by the Simorgh in both their childhood dreams"
+      ],
+      "answers_fa": [
+        "هر دو خواب‌های پیشگویانه‌ای دیدند که چهره‌های هم را نشان می‌داد",
+        "زال از توصیفِ بازرگانان عاشق شد؛ رودابه از توصیفِ ندیمه‌هایش که زال را در بازار دیده بودند",
+        "هر دو از فاصله‌ای در جشنی شاهانه یکدیگر را دیدند",
+        "عشقِ هر دو توسطِ سیمرغ در خواب‌های کودکی‌شان ترتیب داده شده بود"
+      ],
+      "answers_tg": [
+        "Ҳарду хобҳои пешгӯёна диданд",
+        "Зол аз тавсифи тоҷирон ошиқ шуд; Рӯдоба аз тавсифи надимаҳояш ки Золро дар бозор дида буданд",
+        "Ҳарду аз дуре дар ҷашни шоҳона якдигарро диданд",
+        "Ишқи ҳарду аз ҷониби Симурғ тартиб дода шуда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Two people falling in love through description across a distance — the chronicle finds this more reliable than love at first sight.",
+      "explanation_fa": "دو نفر که از طریقِ توصیف در فاصله عاشق هم شدند — شاهنامه این را قابل‌اطمینان‌تر از عشق در نگاه اول می‌داند.",
+      "explanation_tg": "Ду нафаре ки тавассути тавсиф дар масофа ошиқи якдигар шуданд — Шоҳнома инро боэтимодтар аз ишқи нигоҳи аввал меҳисобад.",
+      "reward": {
+        "xp": 290,
+        "real": 135
+      }
+    },
+    {
+      "id": "rudabeh-h2",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "What was the shared reason both Sam and Manuchehr opposed the marriage?",
+      "question_fa": "دلیلِ مشترکِ مخالفتِ هم سام هم منوچهر با این ازدواج چه بود؟",
+      "question_tg": "Сабаби умумии мухолифати ҳам Сом ҳам Манӯчеҳр бо ин издивоҷ чӣ буд?",
+      "answers": [
+        "Zal was too old for Rudabeh",
+        "Rudabeh's ancestry traced back to Zahhak the serpent king",
+        "Kabul was an enemy kingdom",
+        "The astrologers had advised against it"
+      ],
+      "answers_fa": [
+        "زال برای رودابه خیلی مسن‌تر بود",
+        "نسبِ رودابه به ضحاکِ ماردوش می‌رسید",
+        "کابل یک قلمروِ دشمن بود",
+        "ستاره‌شناسان بر ضدش توصیه کرده بودند"
+      ],
+      "answers_tg": [
+        "Зол барои Рӯдоба хеле пир буд",
+        "Насаби Рӯдоба ба Заҳҳоки морӯш мерасид",
+        "Кобул қаламрови душман буд",
+        "Ситорашиносон бар зиддаш тавсия карда буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Both Sam and Manuchehr refused: Rudabeh's line traced back to Zahhak — the serpent king who had ruled Iran for a thousand years of darkness.",
+      "explanation_fa": "هم سام هم منوچهر رد کردند: نسبِ رودابه به ضحاک می‌رسید — پادشاهِ ماردوشی که هزار سال بر ایران تاریکی حاکم بود.",
+      "explanation_tg": "Ҳам Сом ҳам Манӯчеҳр рад карданд: насаби Рӯдоба ба Заҳҳок мерасид — подшоҳи морӯше ки ҳазор сол бар Эрон ҳукм кард.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "rudabeh-h3",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The chapter describes Sindokht's negotiating style in one phrase. What was it?",
+      "question_fa": "فصل سبکِ مذاکره‌ی سیندخت را در یک عبارت توصیف می‌کند. آن عبارت چه بود؟",
+      "question_tg": "Фасл услуби музокироти Синдухтро дар як ибора тавсиф мекунад. Он ибора чӣ буд?",
+      "answers": [
+        "With the patience of a mother",
+        "With the ferocity of a general",
+        "With the cunning of a diplomat",
+        "With the authority of a queen"
+      ],
+      "answers_fa": [
+        "با صبرِ یک مادر",
+        "با قدرتِ یک سردار",
+        "با زیرکیِ یک دیپلمات",
+        "با اقتدارِ یک ملکه"
+      ],
+      "answers_tg": [
+        "Бо сабри як модар",
+        "Бо қудрати як сардор",
+        "Бо зиракии як дипломат",
+        "Бо салоҳияти як маликка"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Sindokht, Rudabeh's mother, negotiated with the ferocity of a general.' This is the chapter's precise characterization.",
+      "explanation_fa": "«سیندخت، مادرِ رودابه، با قدرتِ یک سردار مذاکره کرد.» این توصیفِ دقیقِ فصل است.",
+      "explanation_tg": "«Синдухт, модари Рӯдоба, бо қудрати як сардор музокира кард.» Ин тавсифи дақиқи фасл аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "rudabeh-h4",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The chapter says astrologers were consulted 'when the powerful want the stars to confirm what they have already decided.' What does this irony reveal?",
+      "question_fa": "فصل می‌گوید ستاره‌شناسان مشورت می‌شوند «وقتی قدرتمندان می‌خواهند ستاره‌ها آنچه را که قبلاً تصمیم گرفته‌اند تأیید کنند». این طعنه چه چیزی را نشان می‌دهد؟",
+      "question_tg": "Фасл мегӯяд ситорашиносон машварат мешаванд «вақте қудратмандон мехоҳанд ситорагон он чиро ки аллакай тасмим гирифтаанд тасдиқ кунанд». Ин иронияи пинҳон чӣ нишон медиҳад?",
+      "answers": [
+        "Ferdowsi believed astrology was false",
+        "Powerful people use prophecy to ratify decisions already made for other reasons",
+        "The astrologers were paid by Sindokht",
+        "Manuchehr was superstitious and easily manipulated"
+      ],
+      "answers_fa": [
+        "فردوسی باور داشت که طالع‌بینی دروغ است",
+        "قدرتمندان از پیشگویی برای تأیید تصمیماتی که از قبل گرفته‌اند استفاده می‌کنند",
+        "ستاره‌شناسان توسط سیندخت پول گرفته بودند",
+        "منوچهر خرافاتی و به‌راحتی دست‌کاری‌پذیر بود"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ боварӣ дошт ки ситорашиносӣ дуруғ аст",
+        "Қудратмандон аз пешгӯйӣ барои тасдиқи қарорҳои аллакай гирифташуда истифода мекунанд",
+        "Ситорашиносон аз ҷониби Синдухт пул гирифтанд",
+        "Манӯчеҳр хурофотӣ ва осон идорашаванда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Ferdowsi's quiet observation: the powerful consult prophecy to confirm what politics has already determined — prophecy follows power, not the reverse.",
+      "explanation_fa": "مشاهده‌ی آرامِ فردوسی: قدرتمندان از پیشگویی استفاده می‌کنند تا آنچه سیاست از پیش تعیین کرده را تأیید کنند — پیشگویی از قدرت پیروی می‌کند، نه برعکس.",
+      "explanation_tg": "Мушоҳидаи ором Фирдавсӣ: қудратмандон аз пешгӯйӣ истифода мекунанд то он чи сиёсат аз пеш муайян кардааст тасдиқ шавад.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "rudabeh-h5",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "After the Simorgh guided Rostam's birth, what happened to the feather?",
+      "question_fa": "پس از آن که سیمرغ تولدِ رستم را راهنمایی کرد، با پر چه شد؟",
+      "question_tg": "Пас аз он ки Симурғ таваллуди Рустамро роҳнамоӣ кард, бо пар чӣ шуд?",
+      "answers": [
+        "It was kept by Zal for future use",
+        "It was gone — consumed in the burning that summoned her",
+        "It regrew and was placed in the temple of Balkh",
+        "Zal gave it to Rostam as a birthright"
+      ],
+      "answers_fa": [
+        "برای استفاده‌ی آینده نزدِ زال ماند",
+        "رفت — در سوختنی که او را فرا خواند مصرف شد",
+        "دوباره رویید و در آتشکده‌ی بلخ گذاشته شد",
+        "زال آن را به رستم به عنوانِ حقِ ولادت داد"
+      ],
+      "answers_tg": [
+        "Барои истифодаи оянда назди Зол монд",
+        "Рафт — дар сӯзондани ки ӯро фарохонда буд, сарф шуд",
+        "Аз нав рӯид ва дар оташкадаи Балх гузошта шуд",
+        "Зол онро ба Рустам ҳамчун ҳаққи таваллуд дод"
+      ],
+      "correct_answer": 1,
+      "explanation": "Zal burned the Simorgh's feather — the feather was consumed in the act. The promise was kept; the feather was ash.",
+      "explanation_fa": "زال پرِ سیمرغ را سوزاند — پر در عمل مصرف شد. وعده اجرا شد؛ پر خاکستر شد.",
+      "explanation_tg": "Зол пари Симурғро сӯзонд — пар дар амал сарф шуд. Ваъда иҷро шуд; пар хокистар шуд.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "rudabeh-h6",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "What two acts did the Simorgh perform at Rostam's birth?",
+      "question_fa": "سیمرغ در هنگامِ تولدِ رستم دو کار انجام داد. آن دو کار چه بودند؟",
+      "question_tg": "Симурғ ҳангоми таваллуди Рустам ду кор анҷом дод. Он ду кор чӣ буданд?",
+      "answers": [
+        "She blessed the child and named him Rostam",
+        "She guided the caesarean and breathed healing over Rudabeh as the child was lifted free",
+        "She drove out the demon that was blocking the birth and then departed",
+        "She gave Rudabeh a second feather and blessed the child with invulnerability"
+      ],
+      "answers_fa": [
+        "فرزند را مبارک کرد و نامش را رستم گذاشت",
+        "سزارین را راهنمایی کرد و بر رودابه دمید تا شفا یابد در حالی که فرزند آزاد می‌شد",
+        "دیوی را که مانع از تولد می‌شد راند و رفت",
+        "به رودابه پرِ دومی داد و فرزند را به آسیب‌ناپذیری مبارک کرد"
+      ],
+      "answers_tg": [
+        "Тифлро мубораквор кард ва номашро Рустам гузошт",
+        "Кесарияро роҳнамоӣ кард ва бар Рӯдоба дамид то шифо ёбад",
+        "Деве ки монеи таваллуд буд рондан кард ва рафт",
+        "Ба Рӯдоба пари дуввумро дод ва тифлро ба таъсирнопазирӣ мубораквор кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Simorgh guided the caesarean that Sam's surgeons performed, and breathed healing over Rudabeh as the child was lifted free. Rudabeh lived.",
+      "explanation_fa": "سیمرغ سزارینی را که جراحانِ سام انجام دادند راهنمایی کرد، و بر رودابه دمید تا شفا یابد در حالی که فرزند آزاد می‌شد. رودابه زنده ماند.",
+      "explanation_tg": "Симурғ кесарияеро ки ҷарроҳони Сом анҷом доданд роҳнамоӣ кард, ва бар Рӯдоба дамид то шифо ёбад. Рӯдоба зинда монд.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "rudabeh-h7",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The chapter says Rudabeh's hair was described as 'a river of silk.' Who first described her this way to Zal?",
+      "question_fa": "فصل می‌گوید موهای رودابه به عنوانِ «رودِ ابریشم» توصیف شده بود. چه کسی اول این توصیف را برای زال گفت؟",
+      "question_tg": "Фасл мегӯяд мӯйҳои Рӯдоба ҳамчун «дарёи абрешим» тавсиф шуда буданд. Кӣ аввал ин тавсифро ба Зол гуфт?",
+      "answers": [
+        "A Simorgh messenger",
+        "Merchants who had seen her",
+        "Her own handmaidens in a letter",
+        "A court poet at Manuchehr's feast"
+      ],
+      "answers_fa": [
+        "پیام‌رسانِ سیمرغ",
+        "بازرگانانی که او را دیده بودند",
+        "ندیمه‌های خودش در نامه‌ای",
+        "شاعرِ درباری در ضیافتِ منوچهر"
+      ],
+      "answers_tg": [
+        "Паёмрасони Симурғ",
+        "Тоҷироне ки ӯро дида буданд",
+        "Надимаҳои худаш дар номае",
+        "Шоири дарборӣ дар зиёфати Манӯчеҳр"
+      ],
+      "correct_answer": 1,
+      "explanation": "When merchants described Rudabeh — her face like the moon, her hair a river of silk — Zal fell in love through words alone.",
+      "explanation_fa": "وقتی بازرگانان رودابه را توصیف کردند — چهره‌ای چون ماه، موهایی چون رودِ ابریشم — زال فقط با کلمات عاشق شد.",
+      "explanation_tg": "Вақте тоҷирон Рӯдобаро тавсиф карданд — рӯе чун моҳ, мӯе чун дарёи абрешим — Зол танҳо бо суханон ошиқ шуд.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "rudabeh-h8",
+      "chapter_slug": "rudabeh",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The chapter describes Rostam at birth as 'large as a young lion, and loud as one.' What did he require in his first week?",
+      "question_fa": "فصل رستم را در بدوِ تولد «بزرگ چون شیرِ جوان، و بلند چون او» توصیف می‌کند. در هفته‌ی اولش به چه چیزی نیاز داشت؟",
+      "question_tg": "Фасл Рустамро ҳангоми таваллуд «бузург чун шерча ва баланд чун ӯ» тавсиф мекунад. Дар ҳафтаи аввалаш ба чӣ ниёз дошт?",
+      "answers": [
+        "Special medicines prepared by the Simorgh",
+        "Ten wet nurses because no one of them had enough",
+        "A warrior's diet of meat from the first day",
+        "The constant presence of Zal and Rudabeh"
+      ],
+      "answers_fa": [
+        "داروهای مخصوصِ تهیه‌شده توسطِ سیمرغ",
+        "ده دایه چون هیچکدام به تنهایی کافی نبود",
+        "رژیمِ غذایی جنگجویانه از گوشت از همان روزِ اول",
+        "حضورِ دائمِ زال و رودابه"
+      ],
+      "answers_tg": [
+        "Доруҳои хоссе ки Симурғ тайёр карда буд",
+        "Даҳ парастор, зеро ҳеҷкадом ба танҳоӣ кофӣ набуд",
+        "Парҳези ҷангиёна аз гӯшт аз ҳамон рӯзи аввал",
+        "Ҳузури доимии Зол ва Рӯдоба"
+      ],
+      "correct_answer": 1,
+      "explanation": "He needed ten wet nurses the first week because no one of them had enough. By the time he was a year old he ate meat.",
+      "explanation_fa": "در هفته‌ی اول ده دایه نیاز داشت چون هیچکدام به تنهایی کافی نبود. وقتی یک ساله شد گوشت می‌خورد.",
+      "explanation_tg": "Дар ҳафтаи аввал даҳ парастор лозим буд, зеро ҳеҷкадом ба танҳоӣ кофӣ набуд. Вақте як сола шуд гӯшт мехӯрд.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

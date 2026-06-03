@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "cre-e1",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What does Rostam offer Esfandiyar to avoid the fight — and why does Esfandiyar refuse every offer?",
+      "question_fa": "رستم برای اجتنابِ از نبرد چه چیزی به اسفندیار پیشنهاد می‌دهد — و چرا اسفندیار هر پیشنهادی را رد می‌کند؟",
+      "question_tg": "Рустам барои пешгирии набард чӣ ба Исфандиёр пешниҳод медиҳад — ва чаро Исфандиёр ҳар пешниҳодро рад мекунад?",
+      "answers": [
+        "Rostam offers gold and land; Esfandiyar refuses because he wants only the throne",
+        "Rostam offers to travel to court freely, escort Esfandiyar with honour, swear any oath — everything except being chained. Esfandiyar refuses because the king's command was specifically chains, and he has no authority to change the terms",
+        "Rostam offers to send his son Faramarz instead; Esfandiyar refuses because the command named Rostam specifically",
+        "Rostam offers single combat without weapons; Esfandiyar refuses because he only fights with iron"
+      ],
+      "answers_fa": [
+        "رستم طلا و زمین پیشنهاد می‌دهد؛ اسفندیار رد می‌کند چون فقط تخت می‌خواهد",
+        "رستم پیشنهاد می‌دهد آزادانه به دربار سفر کند، اسفندیار را با افتخار همراهی کند، هر قسمی یاد کند — همه چیز جز زنجیر. اسفندیار رد می‌کند چون فرمانِ شاه مشخصاً زنجیر بود و اختیارِ تغییرِ شرایط ندارد",
+        "رستم پیشنهاد می‌دهد پسرش فرامرز را بفرستد",
+        "رستم بدونِ سلاح پیشنهاد می‌دهد"
+      ],
+      "answers_tg": [
+        "Рустам тилло ва замин пешниҳод медиҳад",
+        "Рустам пешниҳод медиҳад озодона ба дарбор сафар кунад, Исфандиёрро бо шараф ҳамроҳӣ кунад, ҳар қасаме ёд кунад — ҳама ҷуз занҷир. Исфандиёр рад мекунад чун фармони шоҳ мушаххасан занҷир буд",
+        "Рустам пешниҳод медиҳад писараш Фарамарзро бифристад",
+        "Рустам бе силоҳ пешниҳод медиҳад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam proposes every conceivable alternative: travel freely, swear oaths, escort with full honor, acknowledge royal authority in any form. He draws the line at chains because chains would erase his honour in a way that cannot be repaired — for a man of his age and service, submission to chains is not a diplomatic gesture but a destruction of identity. Esfandiyar agrees with most of Rostam's arguments and says: the king's command was specific. He cannot modify it. Both men are immovable on the one point that matters. The fight is inevitable not from enmity but from the collision of two things that cannot give way.",
+      "explanation_fa": "رستم هر گزینه‌ی قابلِ تصوری پیشنهاد می‌دهد. خطِ زنجیر را می‌کشد چون زنجیر شرافتش را به شکلی نابود می‌کند که قابلِ تعمیر نیست. اسفندیار با بیشترِ استدلال‌های رستم موافقت می‌کند و می‌گوید: فرمانِ شاه مشخص بود. نبرد از دشمنی اجتناب‌ناپذیر نیست بلکه از برخوردِ دو چیزِ تکان‌ناپذیر.",
+      "explanation_tg": "Рустам ҳар гузинаи тасаввурпазирро пешниҳод медиҳад. Хатти занҷирро мекашад чун занҷир шарафашро нобуд мекунад. Исфандиёр бо бисёре аз далелҳо розист ва мегӯяд: фармони шоҳ мушаххас буд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "cre-e2",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What instruction does the Simorgh give Rostam, and why does Rostam not want to follow it?",
+      "question_fa": "سیمرغ چه دستوری به رستم می‌دهد، و چرا رستم نمی‌خواهد از آن پیروی کند؟",
+      "question_tg": "Симурғ ба Рустам чӣ дастур медиҳад ва чаро Рустам намехоҳад аз он пайравӣ кунад?",
+      "answers": [
+        "She tells him to flee to a distant kingdom until Esfandiyar gives up; Rostam refuses because fleeing would dishonour him",
+        "She tells him to challenge Esfandiyar to a wrestling match instead of weapons combat",
+        "She tells him to make a two-pronged arrow from the tamarisk tree by the river and aim for Esfandiyar's eyes — the one gap in his brazen protection. Rostam resists because killing a righteous man will bring a curse upon him",
+        "She tells him to negotiate directly with Goshtasp by flying to the capital on her back"
+      ],
+      "answers_fa": [
+        "می‌گوید به پادشاهیِ دوری فرار کند؛ رستم رد می‌کند چون فرار بی‌آبرویی است",
+        "می‌گوید به جای نبرد با سلاح مسابقه‌ی کشتی به اسفندیار پیشنهاد دهد",
+        "می‌گوید از درختِ گزِ کنارِ رودخانه تیرِ دو پیکانه بساز و به چشمانِ اسفندیار نشانه برو — تنها شکافِ محافظتِ روئینِ او. رستم مقاومت می‌کند چون کشتنِ مردِ صادق نفرین برایش می‌آورد",
+        "می‌گوید مستقیماً با گشتاسپ مذاکره کند"
+      ],
+      "answers_tg": [
+        "Мегӯяд ба подшоҳии дуре фирор кунад",
+        "Мегӯяд озмоиши кушти пешниҳод кунад",
+        "Мегӯяд аз дарахти гази канори дарё тири дупайконе бисоз ва ба чашмони Исфандиёр нишона рав — ягона шикофи муҳофизати рӯинаш. Рустам муқовимат мекунад чун куштани марди содиқ нафрин меорад",
+        "Мегӯяд мустақиман бо Гуштосп музокира кунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Simorgh identifies the tamarisk tree by the river, instructs Rostam to make a two-pronged arrow from it, and tells him to aim for Esfandiyar's eyes — the one place the brazen protection did not cover. Rostam's resistance is moral: he knows killing Esfandiyar will bring a curse upon him, and the Simorgh confirms this. She says he will be cursed. She does not say it is unjust. She says it is what the world requires. Rostam then makes the arrow because the alternative — death or permanent dishonour — is worse than the curse.",
+      "explanation_fa": "سیمرغ درختِ گزِ کنارِ رودخانه را شناسایی می‌کند، دستور می‌دهد تیرِ دو پیکانه بسازد، و می‌گوید به چشمانِ اسفندیار نشانه برود. مقاومتِ رستم اخلاقی است. سیمرغ تأیید می‌کند نفرین خواهد شد. نمی‌گوید بی‌عدالت است. می‌گوید دنیا می‌طلبد.",
+      "explanation_tg": "Симурғ дарахти гази канори дарёро муайян мекунад ва дастур медиҳад тири дупайкона созад. Муқовимати Рустам ахлоқист. Симурғ тасдиқ мекунад нафрин хоҳад шуд. Намегӯяд беадолатона аст.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "cre-m1",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Esfandiyar waits for Rostam after the first two days of combat when he could press the advantage. What does this decision reveal about his character?",
+      "question_fa": "اسفندیار بعد از دو روزِ اولِ نبرد وقتی می‌توانست از برتری استفاده کند برای رستم منتظر می‌ماند. این تصمیم چه چیزی درباره‌ی شخصیتِ او آشکار می‌کند؟",
+      "question_tg": "Исфандиёр пас аз ду рӯзи аввали набард вақте метавонист аз бартарӣ истифода барад, барои Рустам мунтазир мемонад. Ин тасмим дар бораи шахсияти ӯ чӣ мегӯяд?",
+      "answers": [
+        "It shows Esfandiyar was strategically cautious — he wanted to ensure Rostam had no chance to recover",
+        "It shows that despite his mission's requirement to bind Rostam, Esfandiyar cannot bring himself to destroy a man he genuinely respects — there is a tension between the command he carries and the warrior he is",
+        "It shows Esfandiyar was arrogant — he waited to humiliate Rostam more thoroughly",
+        "He waited because his brazen body was exhausted and needed rest"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد اسفندیار از نظرِ استراتژیک محتاط بود",
+        "نشان می‌دهد علیرغمِ نیازِ مأموریت به بستنِ رستم، اسفندیار نمی‌تواند مردی را که واقعاً احترامش می‌گذارد نابود کند — تنشی بینِ فرمانی که حمل می‌کند و جنگجویی که هست",
+        "نشان می‌دهد اسفندیار مغرور بود",
+        "منتظر ماند چون بدنِ روئینش خسته بود"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад Исфандиёр аз нигоҳи стратегӣ эҳтиёткор буд",
+        "Нишон медиҳад Исфандиёр бо вуҷуди ниёзи мӯъҷиза ба бастани Рустам, натавонист мардеро ки воқеан ба ӯ эҳтиром дорад нобуд кунад — таношест байни фармоне ки ҳамл мекунад ва ҷангавӣ ки ҳаст",
+        "Нишон медиҳад Исфандиёр мағрур буд",
+        "Мунтазир монд чун бадани рӯинаш хаста буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "After two days of combat, Esfandiyar has effectively won — Rostam is wounded, Rakhsh is weakened, and nothing Rostam tried penetrated the brazen body. He could press forward and complete the mission. He waits instead. The Shahnameh presents this as the decision of a man who has already won but cannot bring himself to press the advantage against someone he respects. It reveals the central tension of Esfandiyar's character: he carries a command that requires Rostam's humiliation, but he is constitutionally incapable of treating a man of genuine greatness with contempt.",
+      "explanation_fa": "بعد از دو روز، اسفندیار عملاً برنده است. می‌تواند پیش بزند. در عوض منتظر می‌ماند. شاهنامه این را به عنوانِ تصمیمِ مردی ارائه می‌دهد که برنده است اما نمی‌تواند از برتری علیهِ کسی که احترامش می‌گذارد استفاده کند. تنشِ مرکزیِ شخصیتِ اسفندیار را آشکار می‌کند.",
+      "explanation_tg": "Пас аз ду рӯз, Исфандиёр амалан ғолиб аст. Метавонад пеш равад. Дар иваз мунтазир мемонад. Шоҳнома ин ро ҳамчун тасмими мардест ки ғолиб аст аммо натавонад аз бартарӣ зидди касе ки ба ӯ эҳтиром дорад истифода кунад нишон медиҳад.",
+      "reward": {
+        "xp": 140,
+        "real": 60
+      }
+    },
+    {
+      "id": "cre-h1",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Rostam accepts Jamasp's curse after killing Esfandiyar without arguing against it. The Shahnameh presents this acceptance alongside Esfandiyar's absolution. Together, what do these two acts establish about moral responsibility in impossible situations?",
+      "question_fa": "رستم نفرینِ جاماسپ را بعد از کشتنِ اسفندیار بدونِ جدل می‌پذیرد. شاهنامه این پذیرش را کنارِ تبرئه‌ی اسفندیار ارائه می‌دهد. با هم این دو عمل چه چیزی درباره‌ی مسئولیتِ اخلاقی در شرایطِ غیرممکن ثابت می‌کنند؟",
+      "question_tg": "Рустам нафрини Ҷомоспро бе баҳс мепазирад. Шоҳнома ин пазиришро бо берамзии Исфандиёр нишон медиҳад. Бо ҳам ин ду амал чӣ мегӯянд?",
+      "answers": [
+        "Together they establish a dual accounting: Esfandiyar's absolution separates the instrument from the cause (Rostam from Goshtasp), while Rostam's curse acceptance acknowledges that the instrument still bears responsibility for the act performed, even when that act was forced. Moral responsibility is real even in impossible situations",
+        "They show that the Shahnameh believes no one is truly guilty in impossible situations — both the absolution and the acceptance of the curse cancel each other out",
+        "They show the Shahnameh is inconsistent — Esfandiyar says Rostam is innocent but Jamasp says he is guilty",
+        "They establish that religious curses in the Shahnameh are always unjust and should be resisted"
+      ],
+      "answers_fa": [
+        "با هم حسابداریِ دوگانه ایجاد می‌کنند: تبرئه‌ی اسفندیار ابزار را از علت جدا می‌کند (رستم از گشتاسپ)، در حالی که پذیرشِ نفرینِ رستم تصدیق می‌کند که ابزار هنوز مسئولیتِ عملِ انجام‌شده را حمل می‌کند. مسئولیتِ اخلاقی در شرایطِ غیرممکن هم واقعی است",
+        "نشان می‌دهند شاهنامه باور دارد در شرایطِ غیرممکن هیچ‌کس واقعاً مقصر نیست",
+        "نشان می‌دهند شاهنامه ناسازگار است",
+        "ثابت می‌کنند نفرین‌های دینی بی‌عدالتانه هستند"
+      ],
+      "answers_tg": [
+        "Бо ҳам ҳисобдориии дугона эҷод мекунанд: берамзии Исфандиёр абзорро аз сабаб ҷудо мекунад, дар ҳоле ки пазиришии нафрини Рустам тасдиқ мекунад ки абзор ҳанӯз масъулияти амали иҷрошударо ҳамл мекунад",
+        "Нишон медиҳанд Шоҳнома бовар дорад дар вазъиятҳои ғайриимкон ҳеҷ кас воқеан гунаҳкор нест",
+        "Нишон медиҳанд Шоҳнома носозгор аст",
+        "Исбот мекунанд нафринҳои динӣ беадолатона ҳастанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The two acts together produce the Shahnameh's most sophisticated moral accounting. Esfandiyar's absolution separates the instrument (Rostam, who held the bow) from the cause (Goshtasp, who manufactured the impossible situation). This is accurate — Goshtasp is responsible for the tragedy's structure. But Rostam's acceptance of the curse acknowledges something equally true: performing an act carries moral weight even when the act was forced. He made the arrow. He aimed it. He released it. The fact that he had no good alternative does not erase the weight of what he did. Moral responsibility persists even in impossible situations — the Shahnameh does not offer the comfort of absolution from one's own actions.",
+      "explanation_fa": "دو عمل با هم دقیق‌ترین حسابداریِ اخلاقیِ شاهنامه را می‌سازند. تبرئه‌ی اسفندیار ابزار را از علت جدا می‌کند. پذیرشِ نفرینِ رستم چیزِ به همان اندازه درستی را تصدیق می‌کند: انجامِ یک عمل وزنِ اخلاقی دارد حتی وقتی مجبور بودی. تیر را ساخت. نشانه رفت. رها کرد. نداشتنِ گزینه‌ی خوب وزنِ آنچه کرد را پاک نمی‌کند.",
+      "explanation_tg": "Ду амал бо ҳам дақиқтарин ҳисобдориии ахлоқии Шоҳномаро месозанд. Берамзии Исфандиёр абзорро аз сабаб ҷудо мекунад. Пазиришии нафрини Рустам чизи баробар дурустро тасдиқ мекунад: иҷрои амал вазни ахлоқӣ дорад ҳатто вақте маҷбур будӣ.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "cre-e3",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "From which tree did the Simorgh tell Rostam to make the killing arrow?",
+      "question_fa": "سیمرغ به رستم گفت تیرِ کشنده را از کدام درخت بسازد؟",
+      "question_tg": "Симурғ ба Рустам гуфт тири кушандаро аз кадом дарахт созад?",
+      "answers": [
+        "A sacred cypress",
+        "A tamarisk by the river",
+        "An oak in Zabulestan",
+        "The world-tree on Alborz"
+      ],
+      "answers_fa": [
+        "سروِ مقدس",
+        "گزِ کنارِ رودخانه",
+        "بلوطی در زابلستان",
+        "درختِ جهانی در البرز"
+      ],
+      "answers_tg": [
+        "Арзи муқаддас",
+        "Газ дар канори дарё",
+        "Булути Забулистон",
+        "Дарахти ҷаҳонӣ дар Алборз"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Simorgh told Rostam: the tamarisk tree by the river. Two-pronged arrow. Aim for the eyes.",
+      "explanation_fa": "سیمرغ به رستم گفت: درختِ گزِ کنارِ رودخانه. تیرِ دو شاخه. نشانه‌گیری بر روی چشمان.",
+      "explanation_tg": "Симурғ ба Рустам гуфт: дарахти газ дар канори дарё. Тири душоха. Ба чашмон нишона бигир.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "cre-m2",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What alternatives did Rostam offer Esfandiyar before the fight?",
+      "question_fa": "رستم پیش از نبرد چه جایگزین‌هایی به اسفندیار پیشنهاد داد؟",
+      "question_tg": "Рустам пеш аз ҷанг чӣ ҷойгузинҳоеро ба Исфандиёр пешниҳод дод?",
+      "answers": [
+        "Exile from Iran with freedom to go wherever he chose",
+        "Travel to court freely, swear any oath, acknowledge the king's authority — in any form except being bound in chains",
+        "A ransom payment equal to Zabulestan's treasury",
+        "A challenge to Goshtasp himself instead"
+      ],
+      "answers_fa": [
+        "تبعید از ایران با آزادی برای رفتن به هر جا",
+        "آزادانه به دربار سفر کند، هر قسمی بخورد، اقتدارِ شاه را بشناسد — به هر شکلی جز زنجیر",
+        "باجی برابر با خزانه‌ی زابلستان",
+        "چالشِ مستقیمِ خودِ گشتاسپ"
+      ],
+      "answers_tg": [
+        "Табъид аз Эрон бо озодии рафтан ба ҳар ҷо",
+        "Озодона ба дарбор сафар кунад, ҳар қасамеро бихӯрад, салоҳияти подшоҳро эътироф кунад — ба ҳар шакле ба ҷуз занҷир",
+        "Пардохти хироҷи баробари хазинаи Забулистон",
+        "Даъвати мустақими худи Гуштосп"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam proposed every alternative: travel freely, swear any oath, acknowledge authority — except chains. Esfandiyar heard them all and agreed with most. The king's command was specific.",
+      "explanation_fa": "رستم هر جایگزینی پیشنهاد داد: آزادانه سفر کن، هر قسمی بخور، اقتدار را بشناس — جز زنجیر. اسفندیار همه را شنید و با بیشترشان موافق بود. فرمانِ شاه مشخص بود.",
+      "explanation_tg": "Рустам ҳар ҷойгузине пешниҳод дод: озодона сафар кун, ҳар қасам бихӯр, салоҳиятро эътироф кун — ба ҷуз занҷир. Исфандиёр ҳамаро шунид ва бо бештарашон розӣ буд. Фармони подшоҳ мушаххас буд.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      }
+    },
+    {
+      "id": "cre-m3",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Why did Esfandiyar reject all of Rostam's alternatives?",
+      "question_fa": "چرا اسفندیار همه‌ی جایگزین‌های رستم را رد کرد؟",
+      "question_tg": "Чаро Исфандиёр ҳама ҷойгузинҳои Рустамро рад кард?",
+      "answers": [
+        "He personally wanted to defeat Rostam in combat",
+        "He heard and agreed with most of the arguments — but the king's command was specific and he had no authority to change it",
+        "He believed Rostam was lying",
+        "He was under a magical compulsion"
+      ],
+      "answers_fa": [
+        "شخصاً می‌خواست رستم را در نبرد شکست دهد",
+        "همه را شنید و با بیشتر استدلال‌ها موافق بود — اما فرمانِ شاه مشخص بود و اختیار تغییرِ آن را نداشت",
+        "باور داشت رستم دروغ می‌گوید",
+        "تحتِ جبرِ جادویی بود"
+      ],
+      "answers_tg": [
+        "Шахсан мехост Рустамро дар набард шикаст диҳад",
+        "Ҳамаро шунид ва бо бештари далелҳо розӣ буд — аммо фармони подшоҳ мушаhhас буд ва салоҳияти тағйири онро надошт",
+        "Бовар дошт Рустам дурӯғ мегӯяд",
+        "Зери ҷабри ҷодуӣ буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Esfandiyar heard every argument and agreed with most of them. The king's command was specific. He had no authority to change it.'",
+      "explanation_fa": "«اسفندیار هر استدلالی شنید و با بیشتر آن‌ها موافق بود. فرمانِ شاه مشخص بود. اختیارِ تغییرِ آن را نداشت.»",
+      "explanation_tg": "«Исфандиёр ҳар далелеро шунид ва бо бештаришон розӣ буд. Фармони подшоҳ мушаhhас буд. Салоҳияти тағйири онро надошт.»",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "cre-m4",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What proved that Rostam's arrows could not stop Esfandiyar on the first day of combat?",
+      "question_fa": "در روزِ اولِ مبارزه چه چیزی ثابت کرد که تیرهای رستم نمی‌توانند اسفندیار را متوقف کنند؟",
+      "question_tg": "Дар рӯзи аввали мубориза чӣ исбот кард ки тирҳои Рустам наметавонанд Исфандиёрро бозстонанд?",
+      "answers": [
+        "Rostam's bow broke on the first shot",
+        "Rostam's arrows hit Esfandiyar's brazen body and left no mark",
+        "Esfandiyar caught the arrows in flight",
+        "Rakhsh was injured before Rostam could fire"
+      ],
+      "answers_fa": [
+        "کمانِ رستم با اولین شلیک شکست",
+        "تیرهای رستم به جسمِ رویین‌تنِ اسفندیار خورد و هیچ اثری باقی نگذاشت",
+        "اسفندیار تیرها را در پرواز گرفت",
+        "رخش قبل از اینکه رستم بتواند شلیک کند زخمی شد"
+      ],
+      "answers_tg": [
+        "Камони Рустам бо аввалин шалик шикаст",
+        "Тирҳои Рустам ба ҷисми рӯини Исфандиёр расид ва ҳеҷ асаре нагузошт",
+        "Исфандиёр тирҳоро дар парвоз гирифт",
+        "Рахш пеш аз ин ки Рустам шалик тавонад захм хӯрд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The first day established the problem precisely: Rostam's arrows hit Esfandiyar's brazen body and left no mark.",
+      "explanation_fa": "روزِ اول مشکل را دقیقاً مشخص کرد: تیرهای رستم به جسمِ رویین‌تنِ اسفندیار خورد و هیچ اثری باقی نگذاشت.",
+      "explanation_tg": "Рӯзи аввал мушкилро дақиқан мушаxxас кард: тирҳои Рустам ба ҷисми рӯини Исфандиёр расид ва ҳеҷ асаре нагузошт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "cre-m5",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "After the second day when Esfandiyar had clearly won, why did he agree to pause until morning?",
+      "question_fa": "بعد از روزِ دوم که اسفندیار آشکارا برده بود، چرا موافقت کرد تا صبح مکث کنند؟",
+      "question_tg": "Пас аз рӯзи дуввум ки Исфандиёр ошкоро бурда буд, чаро розӣ шуд то субҳ тавваккуф кунанд?",
+      "answers": [
+        "He was also exhausted and needed rest",
+        "He could not press the advantage against someone he respected — he had already won and the choice was his",
+        "He was waiting for reinforcements from Goshtasp",
+        "He needed time to plan how to bind Rostam without killing him"
+      ],
+      "answers_fa": [
+        "او هم خسته بود و نیاز به استراحت داشت",
+        "نمی‌توانست علیهِ کسی که به او احترام می‌گذاشت مزیت را فشار دهد — قبلاً برده بود و انتخاب با او بود",
+        "منتظرِ کمک از گشتاسپ بود",
+        "به زمان نیاز داشت تا برنامه بریزد چگونه رستم را بدونِ کشتنش ببندد"
+      ],
+      "answers_tg": [
+        "Ӯ ҳам хаста буд ва ба истироҳат ниёз дошт",
+        "Наметавонист бар зидди касе ки ба ӯ эҳтиром мегузошт устунӣ ба кор барад — аллакай бурда буд ва интихоб бо ӯ буд",
+        "Интизори кӯмак аз Гуштосп буд",
+        "Ба вақт ниёз дошт то барнома бирезад чӣ тавр Рустамро бидуни куштанаш бибандад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Esfandiyar agreed, because he had already won and could not press the advantage against someone he respected.'",
+      "explanation_fa": "«اسفندیار موافقت کرد، چون قبلاً برده بود و نمی‌توانست مزیت را علیهِ کسی که به او احترام می‌گذاشت فشار دهد.»",
+      "explanation_tg": "«Исфандиёр розӣ шуд, зеро аллакай бурда буд ва наметавонист устунӣ бар зидди касе ки ба ӯ эҳтиром мегузошт ба кор барад.»",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "cre-h2",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "'Rostam's heart understood before his mind did' — this phrase from the Sohrab chapter echoes here. Rostam knew his arrows would be useless on day one but continued. What does this tell us?",
+      "question_fa": "«قلبِ رستم پیش از ذهنش فهمید» — این عبارت از فصلِ سهراب در اینجا طنین می‌اندازد. رستم در روزِ اول می‌دانست تیرهایش بی‌فایده هستند اما ادامه داد. این به ما چه می‌گوید؟",
+      "question_tg": "«Қалби Рустам пеш аз зеҳнаш фаҳмид» — ин ибора аз фасли Суҳроб ин ҷо садо медиҳад. Рустам дар рӯзи аввал медонист тирҳояш бефоида ҳастанд аммо идома дод. Ин ба мо чӣ мегӯяд?",
+      "answers": [
+        "He didn't actually know on day one",
+        "He was testing Esfandiyar's strength before revealing his weakness",
+        "He had no other option — the fight had to happen because neither man could walk away from the position they were in",
+        "He expected the Simorgh to intervene sooner"
+      ],
+      "answers_fa": [
+        "در روزِ اول در واقع نمی‌دانست",
+        "توانِ اسفندیار را قبل از آشکارسازیِ ضعفش آزمایش می‌کرد",
+        "گزینه‌ی دیگری نداشت — نبرد باید اتفاق می‌افتاد چون هیچکدام نمی‌توانستند از موقعیتی که در آن بودند دور شوند",
+        "انتظار داشت سیمرغ زودتر دخالت کند"
+      ],
+      "answers_tg": [
+        "Дар рӯзи аввал дар асл намедонист",
+        "Қудрати Исфандиёрро пеш аз ошкор кардани заъфаш меозмуд",
+        "Гузинаи дигаре надошт — ҷанг бояд рӯй медод зеро ҳеҷкадом наметавонист аз мавзеъе ки дар он буданд дур шавад",
+        "Интизор дошт Симурғ зудтар дахолат кунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "The fight had to happen. Esfandiyar came with a king's command; Rostam could not be bound. Neither had a way out that preserved who they were.",
+      "explanation_fa": "نبرد باید اتفاق می‌افتاد. اسفندیار با فرمانِ شاه آمد؛ رستم نمی‌توانست در زنجیر باشد. هیچکدام راهی بیرون که آنچه بودند را حفظ کند نداشتند.",
+      "explanation_tg": "Ҷанг бояд рӯй медод. Исфандиёр бо фармони подшоҳ омад; Рустам намемитавонист дар занҷир бошад. Ҳеҷкадом роҳи беруне ки он чи буданд ро нигоҳ дорад надоштанд.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "cre-h3",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Zal burned the Simorgh's feather. The chapter says she 'healed them both and grieved.' Why did she heal Esfandiyar?",
+      "question_fa": "زال پرِ سیمرغ را سوزاند. فصل می‌گوید او «هر دو را شفا داد و غم خورد.» چرا اسفندیار را شفا داد؟",
+      "question_tg": "Зол пари Симурғро сӯзонд. Фасл мегӯяд ӯ «ҳарду ро шифо дод ва ғам хӯрд.» Чаро Исфандиёрро шифо дод?",
+      "answers": [
+        "She was secretly sympathetic to Esfandiyar",
+        "She healed both because she was obligated equally to both — healing only Rostam would have been a choice, and the Simorgh does not choose sides",
+        "She healed Esfandiyar so he could fight properly and make the ending honorable",
+        "The feather's magic healed automatically without her decision"
+      ],
+      "answers_fa": [
+        "مخفیانه به اسفندیار دلسوزی داشت",
+        "هر دو را شفا داد چون به هر دو به یکسان متعهد بود — فقط شفا دادنِ رستم یک انتخاب بود، و سیمرغ طرف انتخاب نمی‌کند",
+        "اسفندیار را شفا داد تا بتواند درست بجنگد و پایان را شرافتمندانه کند",
+        "جادوی پر به طورِ خودکار بدونِ تصمیمِ او شفا داد"
+      ],
+      "answers_tg": [
+        "Пинҳонӣ ба Исфандиёр дилсӯзӣ дошт",
+        "Ҳарду ро шифо дод зеро ба ҳарду ба яксон мутааhhид буд — танҳо шифо додани Рустам интихобе мебуд, ва Симурғ тараф интихоб намекунад",
+        "Исфандиёрро шифо дод то дуруст биҷангад ва поён шарафатмандона бошад",
+        "Ҷодуи пар ба таври худкор бидуни қарори ӯ шифо дод"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Simorgh heals because that is what she does — not because she favors an outcome. Choosing sides would make her a participant rather than the world's witness.",
+      "explanation_fa": "سیمرغ شفا می‌دهد چون این کاری است که او انجام می‌دهد — نه به خاطرِ اینکه طرفدارِ نتیجه‌ای است. انتخابِ طرف او را به جای شاهدِ دنیا به یک شرکت‌کننده تبدیل می‌کرد.",
+      "explanation_tg": "Симурғ шифо медиҳад зеро ин он кориест ки ӯ анҷом медиҳад — на ба хотири ин ки тарафдори натиҷаест. Интихоби тараф ӯро ба ҷои шоҳиди дунё ба иштирокчие табдил мекард.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "cre-h4",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Rostam said 'I will be cursed for this.' The Simorgh confirmed 'You will be.' What does this exchange communicate?",
+      "question_fa": "رستم گفت «برای این نفرین خواهم شد.» سیمرغ تأیید کرد «خواهی شد.» این تبادل چه چیزی می‌رساند؟",
+      "question_tg": "Рустам гуфт «Барои ин лаънат хоҳам шуд.» Симурғ тасдиқ кард «Хоҳӣ шуд.» Ин мубодила чӣ мерасонад?",
+      "answers": [
+        "Rostam was hoping the Simorgh would find another way",
+        "Both accepted the future with complete clarity — full knowledge of the cost, and action anyway",
+        "The Simorgh was punishing Rostam by confirming the curse",
+        "The exchange was meant to delay the final combat"
+      ],
+      "answers_fa": [
+        "رستم امیدوار بود سیمرغ راهِ دیگری پیدا کند",
+        "هر دو با وضوحِ کامل آینده را پذیرفتند — دانشِ کاملِ هزینه، و عمل باز هم",
+        "سیمرغ رستم را با تأییدِ نفرین مجازات می‌کرد",
+        "تبادل قرار بود نبردِ نهایی را به تأخیر بیندازد"
+      ],
+      "answers_tg": [
+        "Рустам умедвор буд Симурғ роҳи дигаре ёбад",
+        "Ҳарду бо равшании комил оянда ро пазируфтанд — дониши комили ҳазина, ва амал боз ҳам",
+        "Симурғ Рустамро бо тасдиқи лаъна ҷазо медод",
+        "Мубодила барои ба таъхир андохтани набарди ниҳоӣ ниятшуда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "This is the most precise moment in the chapter: no illusion, no comfort. Rostam knew. The Simorgh confirmed. Then she departed. Then Rostam made the arrow.",
+      "explanation_fa": "این دقیق‌ترین لحظه‌ی فصل است: نه توهم، نه آسایش. رستم می‌دانست. سیمرغ تأیید کرد. بعد رفت. بعد رستم تیر ساخت.",
+      "explanation_tg": "Ин дақиқтарин лаҳзаи фасл аст: на тавҳум, на осоиш. Рустам медонист. Симурғ тасдиқ кард. Баъд рафт. Баъд Рустам тир сохт.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "cre-h5",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Rostam 'made the arrow himself.' Why does the chapter note this specific detail?",
+      "question_fa": "رستم «تیر را خودش ساخت.» چرا فصل این جزئیتِ خاص را ذکر می‌کند؟",
+      "question_tg": "Рустам «тирро худаш сохт.» Чаро фасл ин ҷузъияти хоссаро зикр мекунад?",
+      "answers": [
+        "He needed special wood only he knew how to work",
+        "Making it himself meant owning the act fully — not using a weapon forged by another, not sharing the act with any intermediary",
+        "He was the only skilled fletcher in Zabulestan",
+        "The Simorgh's instructions required the arrow to be made by the killer's hand"
+      ],
+      "answers_fa": [
+        "به چوبِ خاصی نیاز داشت که فقط او می‌دانست چگونه کار کند",
+        "ساختنِ آن توسطِ خودش یعنی کاملاً مالکِ عمل شدن — از سلاحِ جعل‌شده توسطِ دیگری استفاده نکردن، عمل را با هیچ واسطه‌ای به اشتراک نگذاشتن",
+        "او تنها تیرانداز ماهر در زابلستان بود",
+        "دستوراتِ سیمرغ ایجاب می‌کرد تیر توسطِ دستِ قاتل ساخته شود"
+      ],
+      "answers_tg": [
+        "Ба чӯби хоссе ниёз дошт ки танҳо ӯ медонист чӣ тавр кор кунад",
+        "Сохтани он аз ҷониби худаш яъне комилан соҳиби амал шудан — аз силоҳи ҷаъл шудааз ҷониби дигаре истифода накардан",
+        "Ӯ ягона тиргари моҳир дар Забулистон буд",
+        "Дастурҳои Симурғ талаб мекард тир аз ҷониби дасти қотил сохта шавад"
+      ],
+      "correct_answer": 1,
+      "explanation": "By making it himself, Rostam takes full ownership of what he is about to do. He cannot pretend it was someone else's weapon or someone else's choice.",
+      "explanation_fa": "با ساختنِ آن توسطِ خودش، رستم مالکیتِ کامل را بر آنچه قرار است انجام دهد می‌پذیرد. نمی‌تواند وانمود کند که سلاحِ دیگری بود یا انتخابِ دیگری.",
+      "explanation_tg": "Бо сохтани он аз ҷониби худаш, Рустам моликияти пурраро бар он чи қарар аст анҷом диҳад мепазирад. Наметавонад вонамуд кунад ки силоҳи дигаре ё интихоби дигаре буд.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "cre-h6",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Esfandiyar's dying words blamed Goshtasp, not Rostam. What exactly did he say?",
+      "question_fa": "آخرین کلماتِ اسفندیار گشتاسپ را سرزنش کرد، نه رستم را. دقیقاً چه گفت؟",
+      "question_tg": "Охирин суханони Исфандиёр Гуштоспро сарзаниш кард, на Рустамро. Дақиқан чӣ гуфт?",
+      "answers": [
+        "'You are a traitor, Rostam — you will die for this'",
+        "'You are not the cause of my death. The man who sent me knowing what it would produce — that is the cause. His name is Goshtasp. My father.'",
+        "'Tell Goshtasp I died serving him faithfully'",
+        "'Let the curse of Jamasp fall on us both'"
+      ],
+      "answers_fa": [
+        "«تو خائنی، رستم — به خاطرِ این خواهی مُرد»",
+        "«تو علتِ مرگم نیستی. مردی که مرا فرستاد با دانستنِ اینکه چه تولید می‌کرد — آن علت است. نامش گشتاسپ است. پدرم.»",
+        "«به گشتاسپ بگو با وفاداری در خدمتِ او مُردم»",
+        "«لعنتِ جاماسپ بر هر دوی ما بیفتد»"
+      ],
+      "answers_tg": [
+        "«Ту хоинӣ, Рустам — ба хотири ин хоҳӣ мурд»",
+        "«Ту сабаби маргам нестӣ. Марде ки маро фиристод бо донистани ин ки чӣ тавлид мекард — он сабаб аст. Номаш Гуштосп аст. Падарам.»",
+        "«Ба Гуштосп бигӯ бо вафодорӣ дар хидматаш мурдам»",
+        "«Лаъни Ҷомосп бар ҳарду аз мо биафтад»"
+      ],
+      "correct_answer": 1,
+      "explanation": "'You are not the cause of my death. The man who sent me here knowing what it would produce — that is the cause.' Esfandiyar traces the chain of causation precisely.",
+      "explanation_fa": "«تو علتِ مرگم نیستی. مردی که مرا اینجا فرستاد با دانستنِ آنچه تولید می‌کرد — آن علت است.» اسفندیار زنجیرِ علیّت را دقیقاً ردیابی می‌کند.",
+      "explanation_tg": "«Ту сабаби маргам нестӣ. Марде ки маро ин ҷо фиристод бо донистани он чи тавлид мекард — он сабаб аст.» Исфандиёр занҷири сабабиятро дақиқан пайгирӣ мекунад.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "cre-h7",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Jamasp cursed Rostam. How did Rostam respond?",
+      "question_fa": "جاماسپ رستم را نفرین کرد. رستم چه واکنشی نشان داد؟",
+      "question_tg": "Ҷомосп Рустамро лаъна карда. Рустам чӣ вокуниш нишон дод?",
+      "answers": [
+        "He denied the justness of the curse and challenged Jamasp",
+        "He accepted it without argument",
+        "He killed Jamasp in anger",
+        "He asked Zal to find a way to lift the curse"
+      ],
+      "answers_fa": [
+        "عدالتِ نفرین را انکار کرد و جاماسپ را به چالش خواند",
+        "بدونِ استدلال پذیرفت",
+        "جاماسپ را از روی خشم کشت",
+        "از زال خواست راهی برای رفعِ نفرین پیدا کند"
+      ],
+      "answers_tg": [
+        "Адолати лаъниро инкор кард ва Ҷомоспро ба чолиш даъват кард",
+        "Бидуни далел пазируфт",
+        "Ҷомоспро аз рӯи хашм кушт",
+        "Аз Зол хост роҳе барои рафъи лаъна ёбад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Jamasp cursed Rostam. Rostam accepted the curse without argument.' This mirrors Esfandiyar's own acceptance of fate — both men in this chapter accept what they cannot change.",
+      "explanation_fa": "«جاماسپ رستم را نفرین کرد. رستم نفرین را بدونِ استدلال پذیرفت.» این بازتابِ پذیرشِ خودِ اسفندیار از سرنوشت است — هر دو مرد در این فصل آنچه نمی‌توانند تغییر دهند را می‌پذیرند.",
+      "explanation_tg": "«Ҷомосп Рустамро лаъна кард. Рустам лаъниро бидуни далел пазируфт.» Ин бозтоби пазирафтани худи Исфандиёр аз тақдир аст.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "cre-h8",
+      "chapter_slug": "clash-rostam-esp",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The chapter says the Shahnameh 'pauses here longer than it has paused for any death since Sohrab.' What does this comparison mean?",
+      "question_fa": "فصل می‌گوید شاهنامه «اینجا بیشتر از هر مرگی از زمانِ سهراب مکث می‌کند.» این مقایسه چه معنایی دارد؟",
+      "question_tg": "Фасл мегӯяд Шоҳнома «ин ҷо зиёдтар аз ҳар марге аз замони Суҳроб тавваqqуф мекунад.» Ин муқоиса чӣ маъно дорад?",
+      "answers": [
+        "Ferdowsi wrote more words about Esfandiyar than Sohrab",
+        "Both deaths are poles of the same kind of structural tragedy — the extended treatment marks them as the chronicle's two greatest griefs",
+        "The pause describes a formal break in the narrative",
+        "Ferdowsi personally mourned Esfandiyar more than Sohrab"
+      ],
+      "answers_fa": [
+        "فردوسی کلماتِ بیشتری درباره‌ی اسفندیار نوشت تا سهراب",
+        "هر دو مرگ قطب‌های همان نوع تراژدیِ ساختاری هستند — برخوردِ طولانی آن‌ها را به عنوانِ دو اندوهِ بزرگِ شاهنامه نشان می‌دهد",
+        "مکث یک شکستِ رسمی در روایت توصیف می‌کند",
+        "فردوسی شخصاً برای اسفندیار بیشتر از سهراب غم خورد"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ калимаҳои бештаре дар бораи Исфандиёр навишт то Суҳроб",
+        "Ҳарду марг қутбҳои ҳамон намуди фоҷиаи сохторӣ ҳастанд — бархӯрди дарозмуддат онҳоро ҳамчун ду ғами бузурги Шоҳнома нишон медиҳад",
+        "Тавваqqуф шикасти расмиеро дар ривоят тавсиф мекунад",
+        "Фирдавсӣ шахсан барои Исфандиёр бештар аз Суҳроб ғам хӯрд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Sohrab's death: a father kills his son unknowingly. Esfandiyar's death: a man is sent to die by his own father. Both are structural tragedies. The comparison measures their equal weight.",
+      "explanation_fa": "مرگِ سهراب: پدری ناآگاهانه پسرش را می‌کشد. مرگِ اسفندیار: مردی توسطِ پدرِ خودش برای مرگ فرستاده می‌شود. هر دو تراژدی‌های ساختاری هستند. مقایسه وزنِ برابرشان را می‌سنجد.",
+      "explanation_tg": "Марги Суҳроб: падаре нодонсона писарашро мекушад. Марги Исфандиёр: марде аз ҷониби падари худаш барои мarg фиристода мешавад. Ҳарду фоҷиаҳои сохторӣ ҳастанд.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

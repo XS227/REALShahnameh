@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "bm-e1",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How does Manijeh get Bijan into Afrasiab's palace — and what does Afrasiab do when he discovers an Iranian warrior there?",
+      "question_fa": "منیژه چطور بیژن را به کاخِ افراسیاب می‌برد — و افراسیاب وقتی جنگجویِ ایرانی را آنجا کشف می‌کند چه می‌کند؟",
+      "question_tg": "Манижа чӣ тавр Беҷанро ба қасри Афросиёб мебарад — ва Афросиёб чӣ мекунад?",
+      "answers": [
+        "She hides him in a merchant wagon; Afrasiab imprisons both of them in the palace dungeon",
+        "Bijan enters the palace in disguise; Afrasiab challenges him to single combat",
+        "She drugs his wine at the festival and brings him to her chambers; Afrasiab throws Bijan into a sealed pit and banishes Manijeh from court",
+        "She invites him officially as a guest; Afrasiab sends him back to Iran with a warning"
+      ],
+      "answers_fa": [
+        "او را در گاریِ بازرگانی پنهان می‌کند؛ افراسیاب هر دو را در سیاهچالِ کاخ زندانی می‌کند",
+        "بیژن ناشناخته وارد کاخ می‌شود؛ افراسیاب او را به نبردِ تن‌به‌تن می‌طلبد",
+        "شرابش را در جشن مسموم می‌کند و به اتاقش می‌برد؛ افراسیاب بیژن را در چاهِ مهرشده‌ای می‌اندازد و منیژه را از دربار تبعید می‌کند",
+        "او را رسماً به عنوانِ مهمان دعوت می‌کند؛ افراسیاب او را با هشداری به ایران برمی‌گرداند"
+      ],
+      "answers_tg": [
+        "Ӯро дар аробаи тоҷирӣ пинҳон мекунад",
+        "Беҷан ноошно вориди қаср мешавад",
+        "Шаробашро дар ҷашн заҳролуд мекунад ва ба ҳуҷрааш мебарад; Афросиёб Беҷанро ба чоҳи мӯҳршудае меандозад ва Манижаро аз дарбор бадарға мекунад",
+        "Ӯро расман ҳамчун меҳмон даъват мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Manijeh sees Bijan at the spring festival and decides immediately. She has her attendants drug his wine. When he wakes he is in her chambers in Afrasiab's palace — in a room he did not choose to enter, in a kingdom at war with his own. Afrasiab makes two rapid decisions: Bijan is thrown into a deep pit sealed with a boulder too heavy for ordinary men to lift, and Manijeh is expelled from the palace with everything stripped from her. He does not execute her — she is his daughter — but the banishment leaves her with nothing except her proximity to the pit.",
+      "explanation_fa": "منیژه بیژن را در جشن می‌بیند و فوری تصمیم می‌گیرد. شرابش را مسموم می‌کند. وقتی بیدار می‌شود در اتاقش است. افراسیاب دو تصمیمِ پیاپی می‌گیرد: بیژن به چاهِ مهرشده با سنگِ خیلی سنگین، منیژه اخراج با همه چیز گرفته‌شده.",
+      "explanation_tg": "Манижа Беҷанро дар ҷашн мебинад ва фавран тасмим мегирад. Шаробашро заҳролуд мекунад. Афросиёб ду қарори пайдарпай мегирад: Беҷан ба чоҳ, Манижа бадарға.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "bm-e2",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "How does Manijeh recognize Rostam in the merchant caravan, and what does this recognition tell us about her three years outside the pit?",
+      "question_fa": "منیژه چطور رستم را در کاروانِ بازرگانی شناسایی می‌کند، و این شناسایی چه چیزی درباره‌ی سه سالِ او بیرونِ چاه به ما می‌گوید؟",
+      "question_tg": "Манижа чӣ тавр Рустамро дар корвони тоҷирон мешиносад?",
+      "answers": [
+        "She recognizes him from a description Bijan gave her of his champion",
+        "A Turanian informant tells her which caravan contains the Iranian rescue party",
+        "Rostam reveals himself to her, having been told she would know the rescue mission's purpose",
+        "She sees Rakhsh in the horse lines — there is only one horse in the world that looks like Rakhsh — and then recognizes Rostam by his size. Three years of watching every caravan made this possible"
+      ],
+      "answers_fa": [
+        "از توصیفی که بیژن از قهرمانش به او داده بود شناسایی می‌کند",
+        "خبرچینِ توران به او می‌گوید کدام کاروان حاملِ گروهِ نجاتِ ایران است",
+        "رستم خودش را به او معرفی می‌کند",
+        "رخش را در صفِ اسبان می‌بیند — فقط یک اسب در دنیا مثلِ رخش است — بعد رستم را با قامتش. سه سالِ تماشایِ هر کاروانی این را ممکن کرد"
+      ],
+      "answers_tg": [
+        "Аз тавсифе ки Беҷан аз қаҳрамонаш дода буд мешиносад",
+        "Хабаррасони Туронӣ ба ӯ мегӯяд",
+        "Рустам худашро ба ӯ муаррифӣ мекунад",
+        "Рахшро дар хати аспон мебинад — ҳамагӣ як асп дар дунё монанди Рахш аст — баъд Рустамро бо қомату андомаш. Се соли тамошои ҳар корвон ин имконро дод"
+      ],
+      "correct_answer": 3,
+      "explanation": "Manijeh had been watching every caravan that passed near the city for three years — waiting, specifically, for a rescue she had no guarantee would come. When Rostam's caravan arrived, she walked the horse lines and saw Rakhsh. There is only one horse in the world that looks like Rakhsh. She then looked at the man who owned him and recognized him by his extraordinary size. The recognition is the product of three years of discipline: she was still watching, still looking, still there. A woman who had given up would not have been in the horse lines that evening.",
+      "explanation_fa": "منیژه سه سال هر کاروانی که از شهر عبور می‌کرد را تماشا می‌کرد. وقتی کاروانِ رستم رسید، رخش را در صفِ اسبان دید. فقط یک اسب در دنیا مثلِ رخش است. بعد مردِ صاحبش را شناسایی کرد. شناسایی محصولِ سه سال انضباط است.",
+      "explanation_tg": "Манижа се сол ҳар корвонеро тамошо мекард. Вақте корвони Рустам расид, Рахшро дид. Ҳамагӣ як асп монанди Рахш аст. Шиносоӣ маҳсули се соли интизом аст.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "bm-m1",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh ends the Bijan-Manijeh story by bringing Manijeh to Iran with the rescued Bijan. What does this ending establish about how the chronicle measures love?",
+      "question_fa": "شاهنامه داستانِ بیژن-منیژه را با آوردنِ منیژه به ایران به همراهِ بیژنِ نجات‌یافته تمام می‌کند. این پایان چه چیزی درباره‌ی معیارِ شاهنامه برای عشق ثابت می‌کند؟",
+      "question_tg": "Шоҳнома достони Беҷан-Манижаро бо овардани Манижа ба Эрон тамом мекунад. Ин охир чӣ мегӯяд?",
+      "answers": [
+        "It shows that love conquers political boundaries — even the Iran-Turan enmity yields to Manijeh's devotion",
+        "It suggests that Afrasiab's banishment was ultimately merciful, since it gave Manijeh a reason to stay near Bijan",
+        "It establishes that the Shahnameh measures love not by feeling but by sustained action under the worst conditions — Manijeh earned the crossing to Iran through three winters of begging, not through the romantic beginning",
+        "It demonstrates that Iranian law required champions to bring home those who had helped in rescues"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد عشق مرزهای سیاسی را فتح می‌کند",
+        "نشان می‌دهد تبعیدِ افراسیاب در نهایت رحمت‌آمیز بود",
+        "ثابت می‌کند شاهنامه عشق را نه با احساس بلکه با عملِ پایدار زیرِ بدترین شرایط اندازه می‌گیرد — منیژه عبور به ایران را با سه زمستانِ گدایی کسب کرد، نه با آغازِ رمانتیک",
+        "نشان می‌دهد قانونِ ایرانی ملزم می‌کرد قهرمانان کسانی که در نجات کمک کردند را به خانه بیاورند"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад ишқ сарҳадҳои сиёсиро фатҳ мекунад",
+        "Нишон медиҳад бадарғаи Афросиёб дар ниҳоят рахмдилона буд",
+        "Исбот мекунад Шоҳнома ишқро на бо эҳсос балки бо амали устувор зери бадтарин шароит меченад — Манижа убури ба Эронро бо се зимистони гадоӣ ба даст овард",
+        "Нишон медиҳад қонуни Эронӣ қаҳрамонро вазифадор мекард"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh's ending is not sentiment — it is accounting. Manijeh kept Bijan alive for three winters with no help, no leverage, and no guarantee of rescue. She begged bread from a city that knew she was the disgraced daughter of the king. She watched every caravan for three years and recognized Rostam when he arrived. She led him to the pit at night. Without her the rescue does not happen — Rostam could not have found an unmarked pit in a foreign city in the dark. The crossing to Iran is the chronicle's precise acknowledgment: she did the work. The work earns the outcome. The Shahnameh brings her to Iran because she earned the crossing.",
+      "explanation_fa": "پایانِ شاهنامه احساسات نیست — حسابداری است. منیژه بیژن را سه زمستان بدونِ کمک زنده نگه داشت. از شهری که می‌دانست دخترِ رسوایِ شاه است نان گدایی کرد. سه سال هر کاروانی را تماشا کرد. بدونِ او نجات اتفاق نمی‌افتد. عبور به ایران اعترافِ دقیقِ شاهنامه است.",
+      "explanation_tg": "Охири Шоҳнома эҳсосот нест — ҳисобдорист. Манижа Беҷанро се зимистон бе кумак зинда нигоҳ дошт. Бе ӯ наҷот рух намедиҳад. Убури ба Эрон эътирофи дақиқи Шоҳнома аст.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "bm-h1",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The Shahnameh presents Gorgin's role in the story without making him explicitly malicious. What does this authorial choice reveal about how Ferdowsi understands the mechanics of harm?",
+      "question_fa": "شاهنامه نقشِ گرگین را در داستان بدونِ اینکه او را آشکارا بدخواه نشان دهد ارائه می‌دهد. این انتخابِ نویسنده چه چیزی درباره‌ی فهمِ فردوسی از مکانیسمِ آسیب آشکار می‌کند؟",
+      "question_tg": "Шоҳнома нақши Гургинро бе ошкоро нишон додани бадхоҳиаш пешкаш мекунад. Ин интихоби нависанда чӣ мегӯяд?",
+      "answers": [
+        "Ferdowsi was constrained by his sources and could not portray Gorgin as a villain even if he wanted to",
+        "By making Gorgin's motives ambiguous, Ferdowsi argues that the most dangerous harm comes not from outright malice but from self-interest that is indifferent to consequences — Gorgin may not have wanted Bijan to suffer, but he was willing to risk it",
+        "The ambiguity signals that Gorgin was innocent — Bijan bears full responsibility for going to the festival",
+        "Ferdowsi avoids making Gorgin a villain to preserve sympathy for Iranian warriors as a class"
+      ],
+      "answers_fa": [
+        "فردوسی توسطِ منابعش محدود بود و نمی‌توانست گرگین را شرور نشان دهد",
+        "با ابهامی کردنِ انگیزه‌های گرگین، فردوسی استدلال می‌کند خطرناک‌ترین آسیب نه از بدخواهیِ صریح بلکه از نفع‌طلبی‌ای می‌آید که به پیامدها بی‌تفاوت است — گرگین شاید نمی‌خواست بیژن رنج ببرد، اما حاضر بود ریسکش کند",
+        "ابهام نشان می‌دهد گرگین بی‌گناه بود",
+        "فردوسی از شرور کردنِ گرگین اجتناب می‌کند تا همدردی با جنگجویانِ ایرانی را حفظ کند"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ аз сарчашмаҳояш маҳдуд буд",
+        "Бо ибҳомӣ кардани ангезаҳои Гургин, Фирдавсӣ далел меорад хатарноктарин зарар на аз бадхоҳии ошкор балки аз нафъталабии бетафовут ба оқибатҳо меояд",
+        "Ибҳом нишон медиҳад Гургин бегуноҳ буд",
+        "Фирдавсӣ аз шарор нишон додани Гургин канорагирӣ мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Gorgin did not lie outright — he described a real festival and a real princess. He left out the danger, which is not the same as lying but produces the same result. He owed Bijan a debt and used the description to discharge it in a way that sent Bijan into harm. The Shahnameh's precision here is that Gorgin may not have intended Bijan's three years in a pit — he may only have wanted to discharge the debt by giving Bijan an adventure. But he was willing to direct Bijan toward a situation he knew or suspected was dangerous, which is the specific form of harm that does not require malice: indifference to consequences combined with self-interest.",
+      "explanation_fa": "گرگین آشکارا دروغ نگفت — جشنِ واقعی و شاهدختِ واقعی را توصیف کرد. خطر را نگفت. بدهکارِ بیژن بود و توصیف را به شکلی استفاده کرد که بیژن را به آسیب فرستاد. دقتِ شاهنامه این است که گرگین شاید سه سالِ چاه را قصد نداشت — اما حاضر بود بیژن را به وضعیتِ خطرناک هدایت کند.",
+      "explanation_tg": "Гургин ошкоро дурӯғ нагуфт — ҷашни воқеӣ ва шоҳдухтари воқеиро тавсиф кард. Хатарро нагуфт. Дақиқати Шоҳнома ин аст: шояд Гургин се соли чоҳро қасд надошт — аммо ҳозир буд Беҷанро ба вазъияти хатарнок ҳидоят кунад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "bm-e3",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How many winters did Manijeh keep Bijan alive by feeding him through the pit?",
+      "question_fa": "منیژه چند زمستان بیژن را با غذا رساندن از طریقِ چاه زنده نگه داشت؟",
+      "question_tg": "Манижа чанд зимистон Беҷанро бо ғизо расондан тавассути чоҳ зинда нигоҳ дошт?",
+      "answers": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answers_fa": [
+        "یک",
+        "دو",
+        "سه",
+        "چهار"
+      ],
+      "answers_tg": [
+        "Як",
+        "Ду",
+        "Се",
+        "Чаҳор"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh measures the passage of time in winters: one, then two, then three.",
+      "explanation_fa": "شاهنامه گذشتِ زمان را با زمستان می‌سنجد: یک، بعد دو، بعد سه.",
+      "explanation_tg": "Шоҳнома гузашти вақтро бо зимистон месанҷад: як, баъд ду, баъд се.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "bm-m2",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What was Bijan and Gorgin's original mission that took them to the Armenian border?",
+      "question_fa": "مأموریتِ اصلیِ بیژن و گرگین که آن‌ها را به مرزِ ارمنستان برد چه بود؟",
+      "question_tg": "Мӯҳимияти аслии Беҷан ва Гургин ки онҳоро ба марзи Арманистон бурд чӣ буд?",
+      "answers": [
+        "To spy on Afrasiab's court",
+        "To deal with wild boars destroying crops",
+        "To escort a royal caravan",
+        "To negotiate a border trade agreement"
+      ],
+      "answers_fa": [
+        "جاسوسی از دربارِ افراسیاب",
+        "رسیدگی به گرازهای وحشی که محصولات را نابود می‌کردند",
+        "اسکورت کردنِ کاروانِ شاهی",
+        "مذاکره‌ی توافقِ تجارتِ مرزی"
+      ],
+      "answers_tg": [
+        "Ҷосусӣ аз дарбори Афросиёб",
+        "Бо гурӯзони ваҳшие ки зироатро нобуд мекарданд рӯ ба рӯ шудан",
+        "Коруфт кардани киёрвони шоҳӣ",
+        "Музокира дар бораи тавофуқи тиҷоратии марзӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "Bijan and Gorgin were sent to the Armenian border to deal with wild boars. They dealt with the boars. On the way back, Gorgin described the spring festival.",
+      "explanation_fa": "بیژن و گرگین به مرزِ ارمنستان برای رسیدگی به گرازهای وحشی فرستاده شدند. با گرازها کنار آمدند. در راهِ بازگشت، گرگین جشنِ بهار را توصیف کرد.",
+      "explanation_tg": "Беҷан ва Гургин ба марзи Арманистон барои бо гурӯзони ваҳшӣ рӯ ба рӯ шудан фиристода шуданд. Бо гурӯзон рӯ ба рӯ шуданд. Дар роҳи бозгашт, Гургин ҷашни баҳорро тавсиф кард.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      }
+    },
+    {
+      "id": "bm-m3",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What two decisions did Afrasiab make immediately when his guards found Bijan in the palace?",
+      "question_fa": "افراسیاب وقتی نگهبانانش بیژن را در کاخ یافتند، فوری دو تصمیم گرفت. آن‌ها چه بودند؟",
+      "question_tg": "Афросиёб вақте посбононаш Беҷанро дар қаср ёфтанд, фавран ду тасмим гирифт. Онҳо чӣ буданд?",
+      "answers": [
+        "Execute Bijan and exile Manijeh",
+        "Bijan into a sealed pit and Manijeh expelled — stripped of everything but not killed, he was still her father",
+        "Bijan blinded and Manijeh imprisoned",
+        "Bijan enslaved and Manijeh sent to Iran"
+      ],
+      "answers_fa": [
+        "بیژن را اعدام کند و منیژه را تبعید کند",
+        "بیژن را در چاهی درپوش‌دار بیندازد و منیژه را اخراج کند — از هر چیزی محروم اما کشته نشود، هنوز پدرش بود",
+        "بیژن را کور کند و منیژه را زندانی کند",
+        "بیژن را برده کند و منیژه را به ایران بفرستد"
+      ],
+      "answers_tg": [
+        "Беҷанро иҷро кунад ва Манижаро табъид кунад",
+        "Беҷанро ба чоҳи дарпӯшдаре андозад ва Манижаро барандозад — аз ҳама чиз маҳрум аммо кушта нашавад",
+        "Беҷанро кӯр кунад ва Манижаро зиндонӣ кунад",
+        "Беҷанро ғулом кунад ва Манижаро ба Эрон бифиристад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Bijan into a pit sealed with an unmovable boulder; Manijeh expelled but not killed — 'he was still her father.'",
+      "explanation_fa": "بیژن در چاهی که با سنگِ غیرقابلِ بلند شدن مهر و موم شده بود؛ منیژه اخراج شد اما کشته نشد — «هنوز پدرش بود.»",
+      "explanation_tg": "Беҷан ба чоҳе ки бо санги ғайриимконшаванда мӯҳр ва мум шуда буд; Манижа барандохта шуд аммо кушта нашуд — «ҳанӯз падараш буд.»",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "bm-m4",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What object revealed Rakhsh to Manijeh among Rostam's caravan?",
+      "question_fa": "کدام موجود رخش را در میانِ کاروانِ رستم برای منیژه آشکار کرد؟",
+      "question_tg": "Кадом мавҷуд Рахшро дар миёни киёрвони Рустам ба Манижа ошкор кард?",
+      "answers": [
+        "A royal marking on Rakhsh's saddle",
+        "Rakhsh himself — she had watched every caravan for three years and recognised him by sight",
+        "A banner with Rostam's symbol",
+        "Rakhsh came to her of his own accord"
+      ],
+      "answers_fa": [
+        "نشانه‌ای شاهانه روی زینِ رخش",
+        "خودِ رخش — سه سال هر کاروانی را دیده بود و از دیدن او را شناخت",
+        "درفشی با نشانه‌ی رستم",
+        "رخش به میلِ خودش پیشِ او آمد"
+      ],
+      "answers_tg": [
+        "Нишонаи шоҳонае рӯи зини Рахш",
+        "Худи Рахш — се сол ҳар кирёвонеро дида буд ва аз дидан ӯро шинохт",
+        "Дарафше бо нишонаи Рустам",
+        "Рахш аз миёни худ ба пешаш омад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Manijeh had been watching every caravan for three years. She walked Rostam's horse lines at dusk and saw Rakhsh. She knew.",
+      "explanation_fa": "منیژه سه سال هر کاروانی را دیده بود. در غروب صفِ اسبانِ رستم را پیمود و رخش را دید. فهمید.",
+      "explanation_tg": "Манижа се сол ҳар кирёвонеро дида буд. Дар ғуруб саффи аспони Рустамро паймуд ва Рахшро дид. Фаҳмид.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bm-m5",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "What was the Jame-e-Jam and what role did it play in this story?",
+      "question_fa": "جامِ جم چه بود و چه نقشی در این داستان داشت؟",
+      "question_tg": "Ҷоми Ҷам чӣ буд ва дар ин ҳикоят чӣ нақше дошт?",
+      "answers": [
+        "A sacred cup used in Zoroastrian rites",
+        "A world-showing cup Kay Khosrow used to see Bijan alive in the pit in Turan",
+        "A cup that granted visions of the future",
+        "A diplomatic gift from Afrasiab to Kay Khosrow"
+      ],
+      "answers_fa": [
+        "جامی مقدس در مراسمِ زرتشتی",
+        "جامِ جهان‌نمایی که کی‌خسرو از آن برای دیدنِ بیژنِ زنده در چاه در توران استفاده کرد",
+        "جامی که رؤیاهای آینده می‌بخشید",
+        "هدیه‌ای دیپلماتیک از افراسیاب به کی‌خسرو"
+      ],
+      "answers_tg": [
+        "Ҷоми муқаддас дар маросимҳои Зардуштӣ",
+        "Ҷоми ҷаҳоннамое ки Кай Хусрав барои дидани Беҷани зинда дар чоҳ дар Турон истифода кард",
+        "Ҷоме ки рӯъёҳои оянда медод",
+        "Тӯҳфаи дипломатикӣ аз Афросиёб ба Кай Хусрав"
+      ],
+      "correct_answer": 1,
+      "explanation": "Kay Khosrow brought out the Jame-e-Jam — the world-showing cup — and saw Bijan alive in a pit in Turan.",
+      "explanation_fa": "کی‌خسرو جامِ جم — جامِ جهان‌نما — را بیرون آورد و بیژن را زنده در چاهی در توران دید.",
+      "explanation_tg": "Кай Хусрав Ҷоми Ҷамро — ҷоми ҷаҳоннамо — берун овард ва Беҷонро зинда дар чоҳе дар Турон дид.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "bm-h2",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Afrasiab sealed the pit with a boulder 'so heavy it could not be lifted by ordinary means.' What does this reveal about Afrasiab's intelligence?",
+      "question_fa": "افراسیاب چاه را با سنگی «آنقدر سنگین که به روش‌های معمولی قابلِ بلند شدن نبود» مهر کرد. این چه چیزی درباره‌ی هوشِ افراسیاب نشان می‌دهد؟",
+      "question_tg": "Афросиёб чоҳро бо санге «он қадар вазнин ки ба роҳҳои муқаррарӣ бардоштани он имконпазир набуд» мӯҳр кард. Ин чӣ дар бораи зеҳни Афросиёб нишон медиҳад?",
+      "answers": [
+        "He chose it randomly from available boulders",
+        "By choosing a boulder only Rostam could lift, he demonstrated strategic understanding of Iran's capabilities",
+        "He chose it for spiritual reasons",
+        "He underestimated Rostam's abilities"
+      ],
+      "answers_fa": [
+        "تصادفی از میانِ سنگ‌های موجود انتخاب کرد",
+        "با انتخابِ سنگی که فقط رستم می‌توانست بلند کند، درکِ استراتژیکِ توانایی‌های ایران را نشان داد",
+        "به دلایلِ معنوی آن را انتخاب کرد",
+        "توانایی‌های رستم را دست کم گرفت"
+      ],
+      "answers_tg": [
+        "Тасодуфан аз миёни сангҳои мавҷуд интихоб кард",
+        "Бо интихоби санге ки танҳо Рустам метавонист бардорад, фаҳмиши стратегии қобилиятҳои Эронро нишон дод",
+        "Ба далоили маъновӣ онро интихоб кард",
+        "Қобилиятҳои Рустамро дастикам гирифт"
+      ],
+      "correct_answer": 1,
+      "explanation": "Kay Khosrow chose Rostam for the mission 'because whoever had sealed the pit had done so knowing only Rostam could open it.' Afrasiab understood the scale of the constraint.",
+      "explanation_fa": "کی‌خسرو رستم را برای مأموریت انتخاب کرد «چون هر کسی که چاه را مهر کرده بود این کار را کرده بود با دانستنِ اینکه فقط رستم می‌تواند آن را باز کند.» افراسیاب مقیاسِ محدودیت را درک کرد.",
+      "explanation_tg": "Кай Хусрав Рустамро барои мӯҳимият интихоб кард «зеро ҳар кӣ чоҳро мӯҳр карда буд ин корро кардааст бо донистани ин ки танҳо Рустам метавонад онро кушояд.»",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "bm-h3",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "How exactly did Manijeh feed Bijan inside the sealed pit?",
+      "question_fa": "منیژه دقیقاً چگونه بیژن را در داخلِ چاهِ مهرشده تغذیه کرد؟",
+      "question_tg": "Манижа дақиқан чӣ тавр Беҷанро дар дохили чоҳи мӯҳршуда ғизо дод?",
+      "answers": [
+        "She bribed guards to pass food through daily",
+        "She begged bread at the market, found the crack in the boulder's seal, and pushed food through",
+        "She lowered food on a rope at night",
+        "She paid a priest to pray over the pit to sustain Bijan magically"
+      ],
+      "answers_fa": [
+        "نگهبانان را رشوه داد تا هر روز غذا برسانند",
+        "از بازار نان گدایی کرد، شکاف در درزِ سنگ را پیدا کرد، و غذا را داخل هل داد",
+        "شبانه غذا را با طناب پایین فرستاد",
+        "به کاهنی پول داد که بالای چاه دعا کند تا بیژن جادویی تغذیه شود"
+      ],
+      "answers_tg": [
+        "Посбононро ришва дод то ҳар рӯз ғизо расонанд",
+        "Аз бозор нон гадоидагӣ кард, шикоф дар даҳони сангро ёфт, ва ғизоро дарун ҳел дод",
+        "Шабона ғизоро бо тӯб поён фиристод",
+        "Ба коҳине пул дод ки бар болои чоҳ дуо кунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Manijeh went to the market, begged bread, took it to the edge of the pit, found the crack in the seal, and pushed food through — day after day, winter after winter.",
+      "explanation_fa": "منیژه به بازار رفت، نان گدایی کرد، آن را به لبه‌ی چاه برد، شکاف در درز را پیدا کرد، و غذا را داخل هل داد — روز پس از روز، زمستان پس از زمستان.",
+      "explanation_tg": "Манижа ба бозор рафт, нон гадоидагӣ кард, онро ба лаби чоҳ бурд, шикофро ёфт ва ғизоро дарун ҳел дод — рӯз пас аз рӯз, зимистон пас аз зимистон.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bm-h4",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Gorgin's description of the spring festival was 'designed to work.' What does this reveal about Gorgin?",
+      "question_fa": "توصیفِ گرگین از جشنِ بهار «برای تأثیرگذاری طراحی شده بود.» این چه چیزی درباره‌ی گرگین نشان می‌دهد؟",
+      "question_tg": "Тавсифи Гургин аз ҷашни баҳор «барои таъсир тарҳрезӣ шуда буд.» Ин чӣ дар бораи Гургин нишон медиҳад?",
+      "answers": [
+        "He was secretly a Turanian spy",
+        "He calculated how to exploit Bijan's personality — the description was constructed to seduce, not to inform",
+        "He genuinely thought the visit was safe",
+        "He was jealous of Bijan and wanted to remove him from Iran"
+      ],
+      "answers_fa": [
+        "به طورِ پنهانی جاسوسِ توران بود",
+        "محاسبه کرد که چگونه از شخصیتِ بیژن سوءاستفاده کند — توصیف برای فریفتن ساخته شده بود، نه اطلاع‌رسانی",
+        "واقعاً فکر می‌کرد بازدید امن است",
+        "به بیژن حسادت می‌کرد و می‌خواست او را از ایران بردارد"
+      ],
+      "answers_tg": [
+        "Пинҳонӣ ҷосуси Турон буд",
+        "Ҳисоб кард чӣ тавр аз шахсияти Беҷан сӯистифода кунад — тавсиф барои фирефтан сохта шуда буд, на иттилоърасонӣ",
+        "Воқеан фикр мекард бозомадан амн аст",
+        "Ба Беҷан ҳасад мебурд ва мехост ӯро аз Эрон бардорад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'The description was designed to work.' Gorgin knew Bijan's character and shaped the information to match his susceptibility.",
+      "explanation_fa": "«توصیف برای تأثیرگذاری طراحی شده بود.» گرگین شخصیتِ بیژن را می‌شناخت و اطلاعات را برای تطابق با آسیب‌پذیری‌اش شکل داد.",
+      "explanation_tg": "«Тавсиф барои таъсир тарҳрезӣ шуда буд.» Гургин шахсияти Беҷанро мешинохт ва иттилоотро барои мутобиқат бо осебпазириаш шакл дод.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "bm-h5",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The chapter says the boulder 'was not a normal boulder. Then it moved.' What is the point of that phrasing?",
+      "question_fa": "فصل می‌گوید سنگ «سنگِ معمولی نبود. بعد حرکت کرد.» نکته‌ی این عبارت‌بندی چیست؟",
+      "question_tg": "Фасл мегӯяд санг «санги муқаррарӣ набуд. Баъд ҳаракат кард.» Нуктаи ин ибора чист?",
+      "answers": [
+        "It shows the boulder was enchanted and required a special trick",
+        "The phrasing captures the scale: the boulder exceeded ordinary possibility, then Rostam exceeded it — simply, without elaboration",
+        "It implies Rostam was surprised that it moved",
+        "It shows the boulder was lighter than expected"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد سنگ طلسم‌شده بود و به ترفندِ خاصی نیاز داشت",
+        "عبارت‌بندی مقیاس را نشان می‌دهد: سنگ از امکانِ معمولی فراتر رفت، سپس رستم از آن فراتر رفت — ساده، بدونِ تفصیل",
+        "این یعنی رستم از حرکتِ سنگ متعجب شد",
+        "نشان می‌دهد سنگ سبک‌تر از انتظار بود"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад санг ҷодушуда буд ва ба найранги хоссе ниёз дошт",
+        "Иборабандӣ миқёсро нишон медиҳад: санг аз имкони муқаррарӣ фаротар рафт, сипас Рустам аз он фаротар рафт",
+        "Ин яъне Рустам аз ҳаракати санг ҳайрон шуд",
+        "Нишон медиҳад санг аз интизор сабуктар буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The two sentences work together: the boulder's extraordinary nature acknowledged, then overcome. No elaboration needed — the simplicity is the point.",
+      "explanation_fa": "دو جمله با هم کار می‌کنند: طبیعتِ استثنائیِ سنگ اعتراف می‌شود، سپس از آن گذشته می‌شود. نیازی به تفصیل نیست — سادگی همان نکته است.",
+      "explanation_tg": "Ду ҷумла бо ҳам кор мекунанд: табиати истисноии санг эътироф мешавад, сипас аз он гузашта мешавад.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "bm-h6",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Why does the Shahnameh bring Manijeh to Iran at the story's end?",
+      "question_fa": "چرا شاهنامه در پایانِ داستان منیژه را به ایران می‌آورد؟",
+      "question_tg": "Чаро Шоҳнома дар поёни ҳикоят Манижаро ба Эрон меоварад?",
+      "answers": [
+        "She was Afrasiab's daughter and a diplomatic prize",
+        "She had kept Bijan alive through three winters by her own means — she earned the crossing",
+        "Bijan demanded it as a condition of returning",
+        "She converted to Zoroastrianism and was therefore welcome"
+      ],
+      "answers_fa": [
+        "دختر افراسیاب و جایزه‌ی دیپلماتیکی بود",
+        "بیژن را سه زمستان با ابزارِ خودش زنده نگه داشته بود — عبور را کسب کرده بود",
+        "بیژن آن را به عنوانِ شرطِ بازگشت طلب کرد",
+        "به دینِ زرتشتی گرویده بود و بنابراین خوشایند بود"
+      ],
+      "answers_tg": [
+        "Духтари Афросиёб ва ҷоизаи дипломатикӣ буд",
+        "Беҷанро се зимистон бо воситаи худаш зинда нигоҳ дошта буд — убурро касб карда буд",
+        "Беҷан онро ҳамчун шарти бозгашт талаб кард",
+        "Ба дини Зардуштӣ гаравида буд ва бинобар ин хушоянд буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "'She had kept him alive through three winters by her own means, and the Shahnameh brings her to Iran because she earned the crossing.'",
+      "explanation_fa": "«سه زمستان با ابزارِ خودش او را زنده نگه داشته بود، و شاهنامه او را به ایران می‌آورد چون عبور را کسب کرده بود.»",
+      "explanation_tg": "«Се зимистон бо воситаи худаш ӯро зинда нигоҳ дошта буд, ва Шоҳнома ӯро ба Эрон меоварад зеро убурро касб карда буд.»",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "bm-h7",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The chapter says Rakhsh in the horse lines was 'a danger to the disguise.' Why?",
+      "question_fa": "فصل می‌گوید رخش در صفِ اسبان «خطری برای لباسِ مبدل» بود. چرا؟",
+      "question_tg": "Фасл мегӯяд Рахш дар саффи аспон «хатаре барои либоси мубаддал» буд. Чаро?",
+      "answers": [
+        "Rakhsh was too large to pass as a merchant's horse",
+        "Rakhsh was so recognizable that Manijeh identified him instantly after three years — others could too",
+        "Rakhsh refused to obey caravan commands",
+        "Rakhsh bore a royal marking from the Iranian court"
+      ],
+      "answers_fa": [
+        "رخش خیلی بزرگ بود که به عنوانِ اسبِ یک بازرگان رد بشود",
+        "رخش آنقدر شناخته‌شده بود که منیژه بعد از سه سال فوراً او را شناخت — دیگران هم می‌توانستند",
+        "رخش از پیروی از دستوراتِ کاروان سرباز زد",
+        "رخش نشانه‌ای شاهانه از دربارِ ایران داشت"
+      ],
+      "answers_tg": [
+        "Рахш хеле бузург буд ки ҳамчун аспи тоҷир рад шавад",
+        "Рахш он қадар машҳур буд ки Манижа пас аз се сол фавран ӯро шинохт — дигарон ҳам метавонистанд",
+        "Рахш аз пайравии дастурҳои кирёвон саркашӣ кард",
+        "Рахш нишонаи шоҳонаеро аз дарбори Эрон дошт"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rakhsh is identified by sight after three years. A horse that recognizable is both the key to Manijeh's help and a threat to the disguise.",
+      "explanation_fa": "رخش بعد از سه سال از دیدن شناسایی می‌شود. اسبی که این‌قدر شناخته است هم کلیدِ کمکِ منیژه است هم تهدیدی برای لباسِ مبدل.",
+      "explanation_tg": "Рахш пас аз се сол аз дидан шиносоӣ мешавад. Аспе ки ин қадар машҳур аст ҳам калиди кӯмаки Манижа аст ҳам таҳдиде барои либоси мубаддал.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "bm-h8",
+      "chapter_slug": "bijan-manijeh",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Manijeh kept Bijan alive through three winters entirely by her own effort. What does the chronicle's treatment of her suggest about how the Shahnameh defines heroism?",
+      "question_fa": "منیژه بیژن را سه زمستان کاملاً با تلاشِ خودش زنده نگه داشت. برخوردِ شاهنامه با او چه چیزی درباره‌ی تعریفِ قهرمانی در شاهنامه نشان می‌دهد؟",
+      "question_tg": "Манижа Беҷанро се зимистон комилан бо талоши худаш зинда нигоҳ дошт. Рафтори Шоҳнома бо ӯ чӣ дар бораи таърифи қаҳрамонӣ дар Шоҳнома нишон медиҳад?",
+      "answers": [
+        "Heroism requires a sword and battlefield combat",
+        "Sustained loyalty over years of difficulty — without weapons, without status, with only daily effort — is recognized by the chronicle as heroic action",
+        "Heroism in the chronicle is exclusive to Iranian warriors",
+        "Women cannot be heroes in the Shahnameh"
+      ],
+      "answers_fa": [
+        "قهرمانی به شمشیر و نبردِ میدانی نیاز دارد",
+        "وفاداریِ پایدار در طولِ سال‌های سختی — بدونِ سلاح، بدونِ مقام، تنها با تلاشِ روزانه — توسطِ شاهنامه به عنوانِ عملِ قهرمانانه شناخته می‌شود",
+        "قهرمانی در شاهنامه مختصِ جنگجویانِ ایرانی است",
+        "زنان در شاهنامه نمی‌توانند قهرمان باشند"
+      ],
+      "answers_tg": [
+        "Қаҳрамонӣ ба шамшер ва ҷанги майдонӣ ниёз дорад",
+        "Вафодории устувор дар тӯли солҳои душворӣ — бе силоҳ, бе мақом, танҳо бо талоши рӯзона — аз ҷониби Шоҳнома ҳамчун амали қаҳрамонона шиносоӣ мешавад",
+        "Қаҳрамонӣ дар Шоҳнома махсуси ҷангиёни Эронӣ аст",
+        "Занон дар Шоҳнома наметавонанд қаҳрамон бошанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh brings Manijeh to Iran 'because she earned the crossing.' Three years of daily, unglamorous survival for another person — the chronicle recognizes this as heroic.",
+      "explanation_fa": "شاهنامه منیژه را به ایران می‌آورد «چون عبور را کسب کرده بود.» سه سال بقاءِ روزانه و غیرجذابِ برای شخصِ دیگری — شاهنامه این را قهرمانانه می‌داند.",
+      "explanation_tg": "Шоҳнома Манижаро ба Эрон меоварад «зеро убурро касб карда буд.» Се соли бақои рӯзонаи ноҷолиби барои шахси дигаре — Шоҳнома инро қаҳрамонона медонад.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

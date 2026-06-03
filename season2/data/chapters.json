@@ -1004,7 +1004,7 @@
       "title": "Rostam's Last Stand",
       "title_fa": "آخرین نبرد رستم",
       "summary": "A half-brother's treachery. A pit of iron stakes. The world's pillar of arms falls — and the chronicle goes quiet.",
-      "story": "",
+      "story": "Shaghad was Rostam's half-brother — born of a different mother, raised in a different court, sent as a boy to the king of Kabul to serve and marry into that household. The Shahnameh does not explain what curdled in him over those years. It states the betrayal as a fact, the way certain treacheries arrive already complete before anyone traces their origin.\n\nHe conspired with the king of Kabul. Together they had pits dug in the hunting plains outside the city — deep, lined with sharpened iron stakes, covered with branches and thin soil to look like ordinary ground. A single familiar hunting path ran across them. Shaghad sent word to Zabulestan with an invitation framed as brotherhood: come hunt with us, let there be peace between families. Rostam packed his gear and rode Rakhsh west.\n\nRakhsh stopped at the edge of the first covered pit. He had never balked without reason. He had carried Rostam through seven labours, through Sohrab, through Esfandiyar — through every battle the Shahnameh had built across five generations. His hesitation here was not an animal fear. It was a horse's knowledge of the ground. Rostam spurred him forward.\n\nBoth fell — rider and horse together — down through the branches and the thin soil into the iron forest below. The wounds were beyond any medicine. Rostam knew this immediately. He steadied himself upright with what he had left, looked for Shaghad, and found him watching from behind a tree at what he believed was a safe distance. Rostam reached for his bow and drew it one final time. The arrow went through Shaghad and through the bark behind him, pinning him to the tree where he died. Then Rostam died.\n\nZal came from Zabulestan. Faramarz came. The warriors who had served under Rostam's standard for decades came and stood around the pit in silence. They lifted what remained. The Shahnameh does not describe a long ceremony. It marks the place where the weight was set down and does not linger there. For five generations — through Keyumars, through Manuchehr, through Kay Kavus, through Kay Khosrow, through Goshtasp and Esfandiyar — this man had been the force that held the kingdom together when its kings could not hold themselves together. The chapter that followed would be different in kind. The chronicle continued, but it had set down the heaviest thing it ever carried.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/rostams-end.png?v=1778883249899",
       "unlock_day": 138,
@@ -1015,9 +1015,25 @@
         "energy": 125,
         "gems": 15
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "simorgh",
-      "quiz_count": 4
+      "quiz_count": 16,
+      "summary_fa": "شاغاد ناتنی‌برادرِ رستم با شاهِ کابل توطئه چید. در دشتِ شکار چاه‌های آهنین حفر کردند. رخش توقف کرد؛ رستم مهمیز زد. هر دو افتادند. رستم آخرین تیرش را انداخت، شاغاد را به درخت دوخت، و مُرد.",
+      "summary_tg": "Шоғод бо подшоҳи Кобул тавтиа чид. Дар даштакори ов чоҳҳои оҳанин канданд. Рахш истод; Рустам тозиёна зад. Ҳарду уфтоданд. Рустам охирин тири худро андохт, Шоғодро ба дарахт дӯхт ва мурд.",
+      "ferdowsi_chronicle": {
+        "age": 68,
+        "year": "1008 CE",
+        "palette": "melancholic",
+        "historical_context": "Ferdowsi was writing near the end of his life, in poverty after being under-rewarded by Mahmud of Ghazni. His son had died years before. He had given thirty years to this poem and received almost nothing in return from the patron who was supposed to make the work immortal.",
+        "historical_context_fa": "فردوسی در اواخرِ عمرش می‌نوشت، در فقر بعد از پاداشِ ناکافیِ محمودِ غزنوی. پسرش سال‌ها پیش مرده بود. سی سال به این شعر داده بود و از حامی‌ای که باید اثر را جاودانه می‌کرد تقریباً چیزی دریافت نکرده بود.",
+        "historical_context_tg": "Фирдавсӣ дар охири умраш менавишт, дар фақр пас аз подоши нокифоии Маҳмуди Ғазнавӣ. Писараш солҳо пеш мурда буд. Си сол ба ин шеър дода буд.",
+        "personal_challenge": "Writing the death of the figure he had spent thirty years building. Rostam dies betrayed by a half-brother — not defeated in honest combat, not consumed by his own flaws, but murdered by treachery from within his own household. Ferdowsi understood this kind of betrayal.",
+        "personal_challenge_fa": "نوشتنِ مرگِ شخصیتی که سی سال صرفِ ساختنش کرده بود. رستم در اثرِ خیانتِ ناتنی‌برادرش می‌میرد — نه در مبارزه‌ی شرافتمندانه، بلکه به دستِ خیانتِ درونِ خانواده‌اش.",
+        "personal_challenge_tg": "Навиштани марги шахсияте ки си сол صарфи сохтанаш карда буд. Рустам аз хиёнати ногатаниии бародараш мемирад.",
+        "lore_impact": "Rostam's last act is to kill his betrayer — not to weep, not to forgive, but to reach for the bow one more time. Ferdowsi understood that for the Shahnameh's greatest champion, this was the only possible ending: agency until the last breath.",
+        "lore_impact_fa": "آخرین عملِ رستم کشتنِ خائنش است — نه گریه، نه بخشش، بلکه یک بار دیگر دست به کمان بردن. این برای بزرگترین پهلوانِ شاهنامه تنها پایانِ ممکن بود.",
+        "lore_impact_tg": "Охирин амали Рустам куштани хоинаш аст — на гиря, на бахшиш, балки бори дигар дасти тир гирифтан."
+      }
     },
     {
       "id": 27,
@@ -1026,7 +1042,7 @@
       "title": "Bahman — Avenger's Son",
       "title_fa": "بهمن — پسر انتقام‌گیر",
       "summary": "Esfandiyar's son rules with grief and ambition. The Kayanian house turns on itself.",
-      "story": "",
+      "story": "Bahman was Esfandiyar's son, and he came of age knowing exactly what had been done to his father and why. Goshtasp had sent Esfandiyar to chain Rostam not because Rostam had rebelled — he had not — but because Goshtasp feared his own son's popularity and needed Esfandiyar to fail or die at a safe distance from the throne. Esfandiyar walked into the mission with his eyes open, fulfilling the king's command because he had given his word and his word was the thing he would not break even in a trap. He died for his father's fear. Bahman inherited that knowledge the way a child inherits a wound that never fully heals.\n\nWhen Bahman came to the throne — after Goshtasp's long dim years — he proved himself a more capable ruler than his dynasty had produced in a generation. He administered the kingdom with precision. He kept the borders. He held court without the tantrums that had characterized his grandfather's reign. But he also marched on Zabulestan.\n\nHe marched not because Zal had done anything wrong — Zal, now ancient, had been the most faithful servant of the Kayanian house across five generations. He marched because Faramarz, Rostam's son, stood between the house of Bahman and the completion of a debt. Faramarz made the stand that his father never had to make, and lost. The house of Zal, which had held Iran's border through war after war that its kings started and its warriors finished, was broken at last.\n\nBahman ruled for a long time after. The chronicle gives him over a hundred years in its mythological reckoning, and those years were not hollow. Justice was administered. The kingdom was orderly. The borders held without the constant crises that had required a Rostam to solve them. In a narrower sense, Bahman succeeded at everything he attempted. But the Shahnameh treats his rule with a complexity it reserves for figures who are simultaneously right and wrong — men who achieve what they set out to achieve without that achievement being clean. He destroyed the line that had been more faithful to Iran than any king Iran had ever produced. He did it correctly. He did it completely. The victory and the loss were the same act.\n\nNear the end of his reign, Bahman made a decision that shaped the next generation's story more than any battle he had fought. He named his daughter Homay as his heir.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/bahman.png?v=1778883334983",
       "unlock_day": 144,
@@ -1037,9 +1053,25 @@
         "energy": 125,
         "gems": 16
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "rostams-end",
-      "quiz_count": 4
+      "quiz_count": 16,
+      "summary_fa": "بهمن پسرِ اسفندیار بود و می‌دانست پدرش به خاطرِ ترسِ گشتاسپ مُرد. وقتی تخت را گرفت به زابلستان لشکر کشید. فرامرز مقاومت کرد و شکست خورد. خانه‌ی زال شکسته شد. بهمن صد سال درست حکم کرد.",
+      "summary_tg": "Баҳман писари Исфандиёр буд ва медонист падараш аз тарси Гуштосп мурд. Вақте тахт гирифт ба Зобулистон лашкар кашид. Фаромарз муқовимат кард ва шикаст хӯрд. Хонаи Зол шикаст. Баҳман сад сол дуруст ҳукм ронд.",
+      "ferdowsi_chronicle": {
+        "age": 69,
+        "year": "1009 CE",
+        "palette": "melancholic",
+        "historical_context": "Ferdowsi in the last years of the poem's composition, still in poverty, watching the dynasty he had given his life to celebrate show no interest in the chronicle he had built.",
+        "historical_context_fa": "فردوسی در آخرین سال‌های نگارشِ شعر، همچنان در فقر، داشت تماشا می‌کرد که سلسله‌ای که عمرش را صرفِ ستایشش کرده شوقی به شاهنامه‌اش نشان نمی‌دهد.",
+        "historical_context_tg": "Фирдавсӣ дар охирин солҳои таснифи шеър, ҳанӯз дар фақр, тамошо мекард ки сулолае ки умрашро صарфи ситоишаш карда буд ба Шоҳномааш таваҷҷуҳе нишон намедод.",
+        "personal_challenge": "Writing about revenge that produces justice without producing peace. Bahman does everything right and at the end of it has a correct victory and a deeper emptiness.",
+        "personal_challenge_fa": "نوشتن درباره‌ی انتقامی که عدالت تولید می‌کند بدونِ آشتی. بهمن همه چیز را درست انجام می‌دهد و در پایانش یک پیروزیِ صحیح و خلأی عمیق‌تر دارد.",
+        "personal_challenge_tg": "Навиштан дар бораи интиқоме ки адолат тавлид мекунад бе сулҳ. Баҳман ҳама чизро дуруст мекунад ва дар поёнаш пирӯзии саҳеҳ ва холигии чуқуртар дорад.",
+        "lore_impact": "Bahman's hundred years of correct rule feel smaller than Rostam's one impossible year. Ferdowsi was writing about what outlasts heroism and what it costs: administration outlasts heroism; it costs the things heroism built.",
+        "lore_impact_fa": "صد سالِ حکمرانیِ صحیحِ بهمن از یک سالِ غیرممکنِ رستم کوچکتر به نظر می‌رسد. اداره از قهرمانی دوام می‌آورد؛ هزینه‌اش چیزهایی است که قهرمانی ساخت.",
+        "lore_impact_tg": "Сад соли ҳукмронии саҳеҳи Баҳман аз як соли ғайримумкини Рустам хурдтар ба назар мерасад. Идора аз қаҳрамонӣ идома меёбад؛ ҳазинааш чизҳоест ки қаҳрамонӣ сохт."
+      }
     },
     {
       "id": 28,
@@ -1048,7 +1080,7 @@
       "title": "Homay — The Warrior Queen",
       "title_fa": "هما — ملکه جنگاور",
       "summary": "A queen, not a king, takes the throne — and proves sharper than the swords around her.",
-      "story": "",
+      "story": "Bahman named Homay his heir in old age, and when he died, Homay took the throne without the drama that usually accompanies a succession. There was no coup, no competing claimant who needed to be destroyed or converted, no period of civil instability while the court recalculated its loyalties. She was there, she was prepared, and the kingdom worked. The court accepted her because Bahman had prepared the court to accept her, and because Homay herself presented nothing that required resistance. She administered carefully. She held justice strictly. The borders maintained themselves under the framework her father had built.\n\nShe was also pregnant when she took the throne, and the Shahnameh gives the father as Bahman. This made the child both heir to everything and a complication that Homay could not allow to develop. A son with that bloodline would be the kingdom's natural focus as he grew — a center of gravity that would slowly pull the court toward him and away from her. Homay looked at what she had been given and decided she would not divide it.\n\nShe gave birth to a son, sealed him in a chest with her royal seal and what provisions she could include, and set him on the river. The chest floated downstream to the great city on the Tigris, where a washerman found it, opened it, and raised the child as his own. The boy was called Darab.\n\nHomay ruled alone for the decades that followed. The Shahnameh gives her a long and orderly reign — a period of competence rather than heroism, administration rather than conquest, stability rather than transformation. It does not condemn her for the abandonment. It presents the choice as a choice, one of many choices queens make when the throne and the child cannot both be held completely. Other parents in the chronicle have abandoned children — Sam left Zal on Alborz; other rulers have sacrificed sons to the needs of power. The Shahnameh treats Homay's version of this choice with the same restraint it reserves for rulers who act on difficult necessity rather than cruelty.\n\nBut the river kept what was put in it. Darab grew up by the Tigris, trained in the washerman's household, and eventually found his way back to the court that had set him adrift before he could speak. The river always brings things back.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/homay.png?v=1778883541589",
       "unlock_day": 149,
@@ -1059,9 +1091,25 @@
         "energy": 130,
         "gems": 16
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "bahman",
-      "quiz_count": 3
+      "quiz_count": 16,
+      "summary_fa": "بهمن هما دخترش را وارثِ تخت اعلام کرد. هما بدونِ آشوب تخت را گرفت. آبستن بود. پسرش را در صندوقی مهرشده در رود گذاشت. رود او را به گازر رساند. هما دهه‌ها تنها حکم کرد.",
+      "summary_tg": "Баҳман Ҳаморо вориси тахт эълон кард. Ҳамо бе ошӯб тахт гирифт. Ҳомила буд. Писарашро дар сандуқи муҳршуда дар рӯд гузошт. Рӯд ӯро ба гозур расонд. Ҳамо даҳ‌солаҳо танҳо ҳукм ронд.",
+      "ferdowsi_chronicle": {
+        "age": 70,
+        "year": "1010 CE",
+        "palette": "melancholic",
+        "historical_context": "Ferdowsi returned to Tus in his final years, in poverty, to die among his own. He was writing about a queen who ruled alone, without a patron or a champion, and kept the kingdom working anyway.",
+        "historical_context_fa": "فردوسی در آخرین سال‌هایش به طوس برگشت، در فقر. داشت درباره‌ی ملکه‌ای می‌نوشت که تنها، بدونِ حامی یا قهرمان، حکومت می‌کرد و پادشاهی را به کار می‌انداخت.",
+        "historical_context_tg": "Фирдавсӣ дар охирин солҳояш ба Тус баргашт, дар фақр. Дар бораи маликае менавишт ки танҳо, бе ҳимоятгар ё паҳлавон, ҳукм меронд.",
+        "personal_challenge": "Writing the last clear chapter of the mythological age — a queen who simply governs. The heroic age is over. The chronicle has entered a different register. Ferdowsi was writing its opening measures.",
+        "personal_challenge_fa": "نوشتنِ آخرین فصلِ روشنِ عصرِ اساطیری — ملکه‌ای که صرفاً حکمرانی می‌کند. عصرِ قهرمانی تمام شده. شاهنامه وارد سبکِ متفاوتی شده.",
+        "personal_challenge_tg": "Навиштани охирин фасли равшани асри асотирӣ — маликае ки танҳо ҳукм меронад. Асри қаҳрамонӣ тамом шудааст. Шоҳнома ба оҳанги дигаре ворид шудааст.",
+        "lore_impact": "Homay abandons her son to the river, rules alone, and is not condemned. Ferdowsi understood that the chronicle's survival depended on exactly this kind of choice — putting the necessary thing in the water and trusting the current. He had done the same with the poem.",
+        "lore_impact_fa": "هما پسرش را به رود می‌سپارد، تنها حکم می‌کند، و محکوم نمی‌شود. فردوسی می‌دانست که بقایِ شاهنامه دقیقاً به این نوع انتخاب بستگی دارد — چیزِ ضروری را در آب گذاشتن و به جریان اعتماد کردن.",
+        "lore_impact_tg": "Ҳамо писарашро ба рӯд месупурад, танҳо ҳукм меронад ва маҳкум намешавад. Фирдавсӣ медонист ки бақои Шоҳнома аз ин навъи интихоб вобаста аст."
+      }
     },
     {
       "id": 29,
@@ -1070,7 +1118,7 @@
       "title": "Darab — The Foundling Prince",
       "title_fa": "داراب — شاهزاده یافته",
       "summary": "Abandoned in a chest on the river, raised by a launderer, Darab reclaims a kingdom that forgot him.",
-      "story": "",
+      "story": "Darab grew up by the Tigris not knowing who he was. The washerman who found the sealed chest gave the child a name and a household and did not ask what the royal seal meant, or if he knew, kept his silence until the deathbed. Darab grew up learning the river trade — the weight of wet cloth, the rhythms of a craftsman's schedule, the particular patience of work that has to be redone after every rain. He was stronger than other children, faster to learn, difficult to tire. The household noticed without drawing conclusions.\n\nBy the time Darab was a young man, something in him had begun to strain against the life the river had given him. He taught himself to fight by watching soldiers in the market. He studied languages in the evenings. When a Persian army passed through the city on a border campaign, he enlisted — not because he wanted to be a soldier, but because something in the army's structure and purpose answered a question he hadn't known he was asking.\n\nHe distinguished himself immediately. His commanders promoted him, and each promotion revealed more of the quality the promotions were built on — not only courage but strategic clarity, the ability to see a battle's shape while still inside it. By the time the campaign ended, Darab had risen to a command no common soldier reaches in a single season. The court took notice.\n\nThe letter came eventually. The sealed document Homay had placed in the chest with her seal was still with Darab — he had carried it since the washerman pressed it into his hands on his deathbed, not knowing what it contained, knowing only that it had come with him from the water. A court astrologer recognized the seal. The letter was opened. It named Darab as Homay's son and heir, born of the Kayanian line, abandoned by necessity, entitled to what had been kept from him.\n\nHomay was still alive. She was old, and the court that had administered so efficiently under her had grown comfortable with its own arrangements. The meeting between Darab and the aging queen was not violent — she was too old for conflict and he was too deliberate for it. She acknowledged him. He acknowledged her. The kingdom passed. What the river brought back was exactly what had been put into it: the bloodline continued, the dynasty held, and Darab's foundling childhood became the origin story of the next four generations of Persian kings.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/darab.png?v=1778883758725",
       "unlock_day": 155,
@@ -1081,9 +1129,25 @@
         "energy": 130,
         "gems": 17
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "homay",
-      "quiz_count": 3
+      "quiz_count": 16,
+      "summary_fa": "داراب در کنارِ دجله با هویتِ ناشناخته بزرگ شد. گازر پیدایش کرد، نامش گذاشت، ساکت ماند. داراب به ارتش پیوست. در یک لشکرکشی به فرماندهی رسید. نجومیِ دربار مهرِ هما را شناخت. نامه باز شد. پادشاهی گذشت.",
+      "summary_tg": "Дороб дар канори Даҷла бо ҳувияти ношинохта калон шуд. Гозур ёфташ, ном гузошт, хомӯш монд. Дороб ба артиш пайваст. Дар як лашкаркашӣ ба фармондеҳӣ расид. Мунаҷҷими дарбор муҳри Ҳаморо шинохт. Номa кушода шуд. Подшоҳӣ гузашт.",
+      "ferdowsi_chronicle": {
+        "age": 71,
+        "year": "1011 CE",
+        "palette": "melancholic",
+        "historical_context": "The poem is near its end. Ferdowsi is old, in poverty, in Tus. He has outlived most of the people who knew him as a young poet. He is writing about a prince who carried a sealed document naming what he was — and did not know what it contained until someone else read it.",
+        "historical_context_fa": "شعر نزدیکِ پایان است. فردوسی پیر است، در فقر، در طوس. دارد درباره‌ی شاهزاده‌ای می‌نویسد که سندِ مهرشده‌ای را با خود حمل می‌کرد که می‌گفت چیست — و نمی‌دانست چه دارد تا کسی دیگر آن را خواند.",
+        "historical_context_tg": "Шеър дар наздикии поён аст. Фирдавсӣ пир, дар фақр, дар Тус. Дар бораи шоҳзодае менависад ки ҳуҷҷати муҳршударо ҳамл мекард ва намедонист чӣ дорад то касе дигар хонд.",
+        "personal_challenge": "Writing about a man who grew up as a washerman's son and discovered he was a king. Ferdowsi had grown up as a landowner's son and discovered he was a poet. Both transformations required someone else to read the letter — to confirm what the person carrying it already knew, without yet having words for it.",
+        "personal_challenge_fa": "نوشتن درباره‌ی مردی که به عنوانِ پسرِ گازر بزرگ شد و فهمید شاه است. فردوسی به عنوانِ پسرِ ملاک بزرگ شد و فهمید شاعر است. هر دو تبدیل نیاز داشت که کسی نامه را بخواند.",
+        "personal_challenge_tg": "Навиштан дар бораи марде ки ҳамчун писари гозур калон шуд ва фаҳмид шоҳ аст. Фирдавсӣ ҳамчун писари заминдор калон шуд ва фаҳмид шоир аст. Ҳар ду табдил талаб дошт ки касе номаро бихонад.",
+        "lore_impact": "Darab's foundling story is the Shahnameh's last great hidden-prince. Zal was left on the mountain and raised by the Simorgh. Darab was sealed in a chest and raised by a washerman. Both return. The river does not forget. The mountain does not forget. The chronicle does not forget.",
+        "lore_impact_fa": "داستانِ یافتنِ داراب آخرین شاهزاده‌ی پنهانِ بزرگِ شاهنامه است. زال در کوه رها شد و توسطِ سیمرغ پرورش یافت. داراب در صندوق مهر شد و توسطِ گازر بزرگ شد. هر دو برمی‌گردند.",
+        "lore_impact_tg": "Ҳикояти ёфтани Дороб охирин шоҳзодаи пинҳони бузурги Шоҳнома аст. Зол дар кӯҳ тарк шуд ва Симурғ парвариш дод. Дороб дар сандуқ муҳр шуд ва гозур парвариш дод. Ҳарду бармегарданд."
+      }
     },
     {
       "id": 30,
@@ -1092,7 +1156,7 @@
       "title": "Dara — The Last Achaemenid",
       "title_fa": "دارا — آخرین هخامنشی",
       "summary": "The last Achaemenid. Pride before the Greek tide. A king who would not bend, and so is broken.",
-      "story": "",
+      "story": "Dara inherited the throne from his father Darab and everything that came with it — the long memory of Iran's greatness, the weight of the Kayanian line, the certainty that had served every king in the chronicle until it stopped serving them. He was a capable king and a proud one. The Shahnameh does not present him as weak. It presents him as a man who could not adjust to a world that was changing faster than any king had yet seen.\n\nThe Greek campaigns were already in motion when Dara took the throne. A young commander named Sekandar had been moving east with an army that seemed to follow different rules. He moved faster, improvised more, treated supply lines as suggestions. His army was already at the border of what had been Persian territory. Dara sent the customary communications — tribute demands, warnings, the formal language that had always preceded either negotiation or war. Sekandar returned them with courteous rejection. The army kept moving.\n\nThe battles came. The Shahnameh describes them not as defeats of weakness but as defeats of mismatch — a king who fought with methods that had worked for two centuries against a commander who had developed something new, and the new thing won. After the final battle, Dara's own ministers stabbed him rather than be captured with him. He was found dying by a roadside.\n\nSekandar found him there. What happened next is the Shahnameh's most unexpected moment in this chapter: Sekandar wept. He held Dara's head. He promised to avenge the ministers who had killed him. And then the revelation — Sekandar was Dara's half-brother. Both were sons of Darab: Sekandar through the Greek princess Nahid whom Darab had divorced, Dara through his Persian queen. Two half-brothers who met only when one was dying and the other was weeping over him.\n\nDara's last request was that Sekandar marry his daughter Roshanak and protect the dynasty's continuity. Sekandar agreed, and kept the agreement. What Dara could not protect with his army he protected with his dying request — the bloodline continued through the marriage, the Kayanian line persisted through the loss, and the chronicle could move forward into the new age that had just arrived.",
       "banner_url": "",
       "image_url": "/season2/uploads/chapters/dara.png?v=1778883853701",
       "unlock_day": 160,
@@ -1103,9 +1167,25 @@
         "energy": 135,
         "gems": 17
       },
-      "status": "coming_soon",
+      "status": "available",
       "required_previous_chapter": "darab",
-      "quiz_count": 4
+      "quiz_count": 16,
+      "summary_fa": "دارا تخت را از پدرش داراب به ارث برد. اسکندر از غرب آمد با روش‌هایی که قرن‌ها کارگر نبودند. دارا شکست خورد. وزرایش خودشان کشتندش. اسکندر گریان سرش را نگه داشت — و برادرِ ناتنیِ او بود. آخرین خواسته: روشنک را به زنی بگیر.",
+      "summary_tg": "Доро тахтро аз падараш Дороб ба мерос гирифт. Искандар аз ғарб бо равишҳои нав омад. Дорo шикаст хӯрд. Вазиронаш худашон куштанд. Искандар гирён сарашро нигоҳ дошт — ва бародари ногатании ӯ буд. Охирин хоҳиш: Рӯшанакро ба зани бигир.",
+      "ferdowsi_chronicle": {
+        "age": 72,
+        "year": "1012 CE",
+        "palette": "melancholic",
+        "historical_context": "The poem is nearly done. Ferdowsi writes about the end of the Achaemenid age — a dynasty that had been great and is now finished, replaced by something that carries its blood but not its form. He was watching the old Persian cultural dominance give way to Ghaznavid Turkish patronage, and the parallels were felt rather than stated.",
+        "historical_context_fa": "شعر تقریباً تمام است. فردوسی درباره‌ی پایانِ عصرِ هخامنشی می‌نویسد — سلسله‌ای که بزرگ بود و حالا تمام شده. داشت تسلطِ فرهنگیِ کهنِ فارسی را می‌دید که جای خود را به حمایتِ ترکیِ غزنوی می‌داد.",
+        "historical_context_tg": "Шеър тақрибан тамом аст. Фирдавсӣ дар бораи поёни асри Ҳахоманишиён менависад. Тасаллути фарҳангии куҳнаи Форсиро медид ки ҷои худро ба ҳимояти туркии Ғазнавӣ медод.",
+        "personal_challenge": "Writing about the moment when an old way of doing things ends — not because it was wrong but because something faster arrived. Dara was not a bad king. The old methods were not bad methods. They had simply been superseded. Ferdowsi knew this feeling intimately.",
+        "personal_challenge_fa": "نوشتن درباره‌ی لحظه‌ای که روشِ قدیمیِ انجامِ کارها تمام می‌شود — نه به خاطرِ اینکه اشتباه بود بلکه چون چیزِ سریع‌تری رسید. دارا شاهِ بدی نبود. روش‌های قدیمی روش‌های بدی نبودند. فردوسی این احساس را عمیقاً می‌شناخت.",
+        "personal_challenge_tg": "Навиштан дар бораи лаҳзае ки равиши куҳнаи анҷом додани корҳо тамом мешавад — на зеро ки нодуруст буд балки зеро ки чизи суриатноктаре омад. Дорo подшоҳи бад набуд. Фирдавсӣ ин эҳсосро амиқан мешинохт.",
+        "lore_impact": "Two half-brothers who meet only when one is dying. Sekandar weeps over Dara — the conqueror mourning the conquered, revealed to be the same blood. Ferdowsi built this recognition to arrive too late. The chronicle understood that the most important truths about people arrive at the moment when they can no longer change anything.",
+        "lore_impact_fa": "دو برادرِ ناتنی که فقط وقتی یکی دارد می‌میرد ملاقات می‌کنند. اسکندر بر دارا می‌گرید — فاتح بر مفتوح ماتم می‌گیرد، آشکار می‌شود که یک خون هستند. فردوسی این شناخت را ساخت که خیلی دیر برسد.",
+        "lore_impact_tg": "Ду бародари ногатание ки танҳо вақте яке дар ҳоли мурдан аст вомехӯранд. Искандар бар Дорo мегирад — ғолиб бар мағлуб мотам мегирад, ошкор мешавад ки як хун ҳастанд. Фирдавсӣ ин шинохтро сохт ки хеле дер برасад."
+      }
     },
     {
       "id": 31,

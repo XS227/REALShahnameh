@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "hom-e1",
+      "chapter_slug": "homay",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How did Homay come to the throne after Bahman's death?",
+      "question_fa": "هما چگونه پس از مرگِ بهمن به تخت رسید؟",
+      "question_tg": "Ҳамо чӣ гуна пас аз марги Баҳман ба тахт расид?",
+      "answers": [
+        "Without drama — Bahman had prepared the court to accept her, and she presented nothing that required resistance",
+        "After a brief civil war against a male claimant who was eventually defeated",
+        "Through a regency period in which court officials held power until she was old enough to rule",
+        "By military force — she commanded Bahman's army and used it to suppress rivals"
+      ],
+      "answers_fa": [
+        "بدونِ درام — بهمن دربار را برای پذیرفتنِ او آماده کرده بود، و هما هیچ چیزی که نیازِ مقاومت داشته باشد عرضه نکرد",
+        "بعد از جنگِ داخلیِ کوتاهی علیهِ مدعیِ مردی که در نهایت شکست خورد",
+        "از طریقِ دوره‌ی نیابتی که در آن مقامات دربار قدرت را تا رسیدنِ او به سنِّ کافی برای حکومت نگه داشتند",
+        "با نیروی نظامی — او ارتشِ بهمن را فرمان داد و از آن برای سرکوبِ رقبا استفاده کرد"
+      ],
+      "answers_tg": [
+        "Бидуни мушкил — Баҳман дарборро барои пазируфтани ӯ омода карда буд ва Ҳамо ҳеч чизе ки ниёзи муқовимат дошта бошад муаррифӣ накард",
+        "Пас аз ҷанги дохилии кӯтоҳе бар зидди иддаогари мардӣ ки дар ниҳоят шикаст хӯрд",
+        "Тавассути давраи ноибӣ ки дар он масъулони дарбор қудратро то расидани ӯ ба синни кофӣ барои ҳукм нигоҳ доштанд",
+        "Бо нерӯи низомӣ — ӯ артиши Баҳманро фармон дод ва аз он барои сарзании рақибон истифода кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Bahman died, Homay took the throne without the drama that usually accompanies succession. There was no coup, no competing claimant who needed to be destroyed or converted, no period of civil instability. She was there, prepared, and the kingdom worked. Bahman had prepared the court to accept her, and Homay presented nothing that required resistance.",
+      "explanation_fa": "وقتی بهمن مُرد، هما تخت را بدونِ درامی که معمولاً همراهِ جانشینی است گرفت. کودتایی نبود، مدعی رقیبی که نیازِ نابودی یا تبدیل داشته باشد نبود، دوره‌ای از بی‌ثباتیِ داخلی نبود. او بود، آماده بود، و پادشاهی کار کرد. بهمن دربار را برای پذیرفتنِ او آماده کرده بود، و هما هیچ چیزی که نیازِ مقاومت داشته باشد عرضه نکرد.",
+      "explanation_tg": "Вақте Баҳман мурд, Ҳамо тахтро бидуни мушкиле ки маъмулан ҳамроҳи вориснишинӣ аст гирифт. Кӯдатое набуд, иддаогари рақибе ки ниёзи нобудӣ ё табдил дошта бошад набуд, давраи бебардоштии дохилӣ набуд. Ӯ буд, омода буд ва подшоҳӣ кор кард.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "hom-e2",
+      "chapter_slug": "homay",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What did Homay do with her newborn son?",
+      "question_fa": "هما با پسرِ نوزادش چه کرد؟",
+      "question_tg": "Ҳамо бо писари навзодаш чӣ кард?",
+      "answers": [
+        "She placed him in a sealed chest with her royal seal and set him adrift on the river",
+        "She sent him to be raised secretly by a trusted general far from the court",
+        "She gave him to a noble family and pretended he had died at birth",
+        "She raised him at court but concealed his identity under a false name"
+      ],
+      "answers_fa": [
+        "او را در صندوقِ مهرشده با مهرِ سلطنتی‌اش گذاشت و در رودخانه رها کرد",
+        "او را برای پرورشِ مخفیانه به سردارِ مورداعتمادی دور از دربار فرستاد",
+        "او را به یک خانواده‌ی اشرافی داد و وانمود کرد در بدوِ تولد مرده",
+        "او را در دربار بزرگ کرد اما هویتش را زیرِ نامِ جعلی پنهان کرد"
+      ],
+      "answers_tg": [
+        "Ӯро дар сандуқи муҳршуда бо муҳри шоҳонаи худ гузошт ва дар дарё рахо кард",
+        "Ӯро барои парвариши пинҳона ба саркардаи мавриди эътимоде дур аз дарбор фиристод",
+        "Ӯро ба оилаи ашрофе дод ва изҳор кард ки дар аввали таваллуд мурдааст",
+        "Ӯро дар дарбор калон кард аммо ҳувияташро зери номи ҷаълӣ пинҳон кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Homay was pregnant when she took the throne. She sealed her son in a chest — with her royal seal intact inside — and placed him in the river. The river carried him to a washerman. This act, which appears to be abandonment, was actually a form of trust: the seal would eventually identify him.",
+      "explanation_fa": "هما وقتی تخت را گرفت آبستن بود. پسرش را در صندوقی مهر کرد — با مهرِ سلطنتی‌اش که در داخل دست نخورده بود — و در رودخانه گذاشت. رودخانه او را به گازری رساند. این عمل که ظاهراً رهاکردن به نظر می‌رسد، در واقع شکلی از اعتماد بود: مهر در نهایت او را شناسایی می‌کرد.",
+      "explanation_tg": "Ҳамо вақте тахтро гирифт ҳомила буд. Писарашро дар сандуқе муҳр кард — бо муҳри шоҳонаи худ ки дар дохил дасти нахӯрда буд — ва дар дарё гузошт. Дарё ӯро ба гозаре расонд. Ин амал ки зоҳиран тарк ба назар мерасад, дар воқеъ шакле аз эътимод буд: муҳр дар ниҳоят ӯро муайян мекард.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "hom-m1",
+      "chapter_slug": "homay",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Why did Homay place her son in the river rather than raise him at court or send him to a trusted guardian?",
+      "question_fa": "چرا هما پسرش را به جای اینکه در دربار پرورش دهد یا به سرپرستِ مورداعتمادی بفرستد، در رودخانه گذاشت؟",
+      "question_tg": "Чаро Ҳамо писарашро ба ҷои ин ки дар дарбор парвариш диҳад ё ба нигаҳбони мавриди эътимоде бифиристад, дар дарё гузошт?",
+      "answers": [
+        "The Shahnameh does not explain her reasoning — it presents the act as a queen's decision, without offering a psychological account of her motivation",
+        "She feared court rivals would kill the child to prevent a future male claimant to the throne",
+        "A prophecy had told her the child would only be safe if raised outside the court",
+        "She did not want her son to inherit the throne because she planned to name a different successor"
+      ],
+      "answers_fa": [
+        "شاهنامه استدلالش را توضیح نمی‌دهد — عمل را به عنوانِ تصمیمِ یک ملکه عرضه می‌کند، بدونِ اینکه حسابِ روان‌شناختیِ انگیزه‌اش را ارائه دهد",
+        "از رقبای دربار می‌ترسید که کودک را بکشند تا از مدعیِ مرد در آینده پیشگیری کنند",
+        "پیشگویی به او گفته بود که کودک فقط اگر خارج از دربار پرورش یابد امن خواهد بود",
+        "نمی‌خواست پسرش تخت را به ارث ببرد چون قصد داشت جانشینِ دیگری معرفی کند"
+      ],
+      "answers_tg": [
+        "Шоҳнома мантиқашро тавзеҳ намедиҳад — амалро ҳамчун тасмими маликае муаррифӣ мекунад, бидуни ин ки ҳисоби равоншинохтии ангезааш ро пешкаш кунад",
+        "Аз рақибони дарбор метарсид ки кӯдакро бикушанд то аз иддаогари мард дар оянда пешгирӣ кунанд",
+        "Пешгӯие ба ӯ гуфта буд ки кӯдак танҳо агар берун аз дарбор парвариш ёбад бехатар хоҳад буд",
+        "Намехост писарашро тахтро ба мерос гирад зеро қасд дошт вориси дигаре муаррифӣ кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh presents Homay's decision to place her son in the river without explaining what motivated it. This is typical of the chronicle's treatment of female rulers — their decisions are presented as facts, carrying the same authority as a king's command, without requiring justification. The seal inside the chest tells us she intended him to be found and identified eventually.",
+      "explanation_fa": "شاهنامه تصمیمِ هما برای گذاشتنِ پسرش در رودخانه را بدونِ توضیحِ اینکه چه چیزی آن را برانگیخت عرضه می‌کند. این برخوردِ شاهنامه با فرمانروایانِ زن معمول است — تصمیماتشان به عنوانِ واقعیت، با همان اقتداری که فرمانِ شاه دارد، بدونِ نیاز به توجیه عرضه می‌شوند. مهرِ داخلِ صندوق به ما می‌گوید که او قصد داشت در نهایت پیدا شود و شناسایی شود.",
+      "explanation_tg": "Шоҳнома тасмими Ҳаморо барои гузоштани писараш дар дарё бидуни тавзеҳи он чи онро барангехт муаррифӣ мекунад. Ин муомилаи шаhнома бо ҳокимони зан муқаррарист — тасмимоташон ҳамчун ҳақиқат, бо ҳамон ихтиёре ки фармони подшоҳ дорад, бидуни ниёзи тасвиб муаррифӣ мешаванд.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "hom-m2",
+      "chapter_slug": "homay",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What was inside the sealed chest along with Homay's infant son?",
+      "question_fa": "علاوه بر پسرِ خردسالِ هما، درونِ صندوقِ مهرشده چه بود؟",
+      "question_tg": "Ба ғайр аз писари хурдсоли Ҳамо, дар дохили сандуқи муҳршуда чӣ буд?",
+      "answers": [
+        "Her royal seal — which would eventually identify the child as her son and the rightful heir",
+        "Gold and jewels to provide for his upkeep, sewn into the lining of the chest",
+        "A written letter addressed to whoever found him, explaining his origin in plain terms",
+        "Nothing — the seal was on the outside of the chest, not inside"
+      ],
+      "answers_fa": [
+        "مهرِ سلطنتی‌اش — که در نهایت کودک را به عنوانِ پسرش و وارثِ قانونی شناسایی می‌کرد",
+        "طلا و جواهرات برای تأمینِ نگهداری‌اش، که در لبه‌ی صندوق دوخته شده بود",
+        "نامه‌ی مکتوبی خطاب به هر کسی که پیدایش می‌کرد که منشأش را به زبانِ ساده توضیح می‌داد",
+        "هیچ — مهر روی بیرونِ صندوق بود نه داخلِ آن"
+      ],
+      "answers_tg": [
+        "Муҳри шоҳонааш — ки дар ниҳоят кӯдакро ҳамчун писараш ва вориси қонунӣ муайян мекард",
+        "Тилло ва гавҳар барои таъмини нигоҳдорияш, ки дар канораи сандуқ дӯхта шуда буд",
+        "Номаи мактубе мухотаб ба ҳар касе ки ёфташ мекард ки манбаашро ба забони содда тавзеҳ медод",
+        "Ҳеч — муҳр рӯи берунаи сандуқ буд на дар дохили он"
+      ],
+      "correct_answer": 0,
+      "explanation": "Homay placed her royal seal inside the chest with the child. The seal was not just jewelry — it was the instrument by which a court astrologer would eventually identify the child as Homay's son. This detail transforms what looks like abandonment into something more calculated: she did not discard her son, she gave him a delayed identity.",
+      "explanation_fa": "هما مهرِ سلطنتی‌اش را داخلِ صندوق همراهِ کودک گذاشت. مهر فقط جواهر نبود — ابزاری بود که از طریقِ آن منجمِ دربار در نهایت کودک را به عنوانِ پسرِ هما شناسایی می‌کرد. این جزئیات آنچه شبیهِ رهاکردن است را به چیزِ محاسبه‌شده‌تری تبدیل می‌کند: او پسرش را دور نینداخت، بلکه هویتِ معوقی به او داد.",
+      "explanation_tg": "Ҳамо муҳри шоҳонааш را дар дохили сандуқ ҳамроҳи кӯдак гузошт. Муҳр танҳо зевар набуд — абзоре буд ки тавассути он мунаҷҷими дарбор дар ниҳоят кӯдакро ҳамчун писари Ҳамо муайян мекард. Ин ҷузъият он чиро ки ба рахо кардан монанд аст ба чизи ҳисобшудатаре табдил мекунад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "hom-h1",
+      "chapter_slug": "homay",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The Shahnameh presents Homay ruling alone for decades 'without the drama that usually accompanies succession' and says she 'is not condemned' for putting her son in the river. What does the chronicle's refusal to condemn her accomplish?",
+      "question_fa": "شاهنامه هما را در حالِ حکومتِ تنها برای دهه‌ها 'بدونِ درامی که معمولاً همراهِ جانشینی است' عرضه می‌کند و می‌گوید که او برای گذاشتنِ پسرش در رودخانه 'محکوم نمی‌شود'. امتناعِ شاهنامه از محکوم کردنِ او چه می‌کند؟",
+      "question_tg": "Шоҳнома Ҳаморо дар ҳоли ҳукмронии танҳо барои даҳ‌солаҳо 'бидуни мушкиле ки маъмулан ҳамроҳи вориснишинӣ аст' муаррифӣ мекунад ва мегӯяд ки ӯ барои гузоштани писараш дар дарё 'маҳкум намешавад'. Даст кашидани Шоҳнома аз маҳкум кардани ӯ чӣ мекунад?",
+      "answers": [
+        "It treats the decision as legitimate statecraft — a queen governing her succession on her own terms, within the logic of the Shahnameh's world where hiding a prince in a river can be an act of preservation rather than abandonment",
+        "It reflects a gap in the source material — Ferdowsi could not condemn what his sources did not condemn",
+        "It suggests that female rulers are held to different moral standards in the Shahnameh — they are judged on outcomes, not means",
+        "It is a rhetorical strategy to make Homay sympathetic to the audience so that the eventual reunion with Darab is emotionally satisfying"
+      ],
+      "answers_fa": [
+        "تصمیم را به عنوانِ حکومتداریِ مشروع عرضه می‌کند — ملکه‌ای که جانشینی‌اش را با شرایطِ خودش اداره می‌کند، در منطقِ دنیای شاهنامه که در آن پنهان کردنِ شاهزاده‌ای در رودخانه می‌تواند عملِ حفاظت به جای رهاکردن باشد",
+        "شکافی را در مواد منبع بازتاب می‌دهد — فردوسی نمی‌توانست آنچه منابعش محکوم نکرده بودند را محکوم کند",
+        "نشان می‌دهد که فرمانروایانِ زن در شاهنامه طبقِ معیارهای اخلاقیِ متفاوتی سنجیده می‌شوند — بر اساسِ نتایج قضاوت می‌شوند نه روش‌ها",
+        "استراتژیِ خطابیِ سازنده‌ای است تا هما را برای مخاطب دلپسند کند"
+      ],
+      "answers_tg": [
+        "Тасмимро ҳамчун ҳукмронии машруъ муаррифӣ мекунад — маликае ки вориснишинияшро бо шароити худаш идора мекунад, дар мантиқи ҷаҳони Шоҳнома ки дар он пинҳон кардани шоҳзодае дар дарё метавонад амали ҳифозат ба ҷои тарк бошад",
+        "Шикофро дар маводи манбаъ инъикос мекунад — Фирдавсӣ наметавонист он чиро ки манбаъҳояш маҳкум накарда буданд маҳкум кунад",
+        "Нишон медиҳад ки ҳокимони зан дар Шоҳнома мутобиқи меъёрҳои ахлоқии гуногун санҷида мешаванд",
+        "Стратегияи хитобии созандаест то Ҳаморо барои мухотаб дилписанд кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh consistently treats its queens' decisions with the same authority it gives its kings'. Homay's act — placing the sealed child in the river — follows the same logic as the Simorgh placing Zal on the mountain: the child is not abandoned, he is placed in the world's keeping. The chronicle's refusal to condemn it treats the decision as within the legitimate range of a ruler's choices, even a deeply unusual one.",
+      "explanation_fa": "شاهنامه به طورِ مداوم تصمیماتِ ملکه‌هایش را با همان اقتداری که به شاهانش می‌دهد عرضه می‌کند. عملِ هما — گذاشتنِ کودکِ مهرشده در رودخانه — از همان منطقِ گذاشتنِ زال توسطِ سیمرغ در کوه پیروی می‌کند: کودک رها نشده، در امانتِ جهان گذاشته شده. امتناعِ شاهنامه از محکوم کردنِ آن، تصمیم را در محدوده‌ی مشروعِ انتخاب‌های یک فرمانروا عرضه می‌کند.",
+      "explanation_tg": "Шоҳнома пайваста тасмимоти маликаҳоянашро бо ҳамон ихтиёре ки ба подшоҳонаш медиҳад муаррифӣ мекунад. Амали Ҳамо — гузоштани кӯдаки муҳршуда дар дарё — аз ҳамон мантиқи гузоштани Зол тавассути Симурғ дар кӯҳ пайравӣ мекунад: кӯдак тарк нашуда, дар амонати ҷаҳон гузошта шудааст.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "hom-e3",
+      "chapter_slug": "homay",
+      "quiz_part": 6,
+      "difficulty": "easy",
+      "question": "How long did Homay rule after placing her son in the river?",
+      "question_fa": "هما بعد از گذاشتنِ پسرش در رودخانه چه مدت حکومت کرد؟",
+      "question_tg": "Ҳамо пас аз гузоштани писараш дар дарё чӣ қадар ҳукм ронд?",
+      "answers": [
+        "Decades — she ruled alone for a long period before Darab eventually returned to reclaim the throne",
+        "Only a few years — the court forced her to abdicate once the male heir was found",
+        "Until her son was a young adult — she stepped down voluntarily when he was old enough",
+        "Her reign ended within months when a rival claimant seized the throne"
+      ],
+      "answers_fa": [
+        "دهه‌ها — برای مدتِ طولانی تنها حکومت کرد قبل از اینکه داراب در نهایت برگردد و تخت را مطالبه کند",
+        "فقط چند سال — دربار او را مجبور به کناره‌گیری کرد وقتی وارثِ مرد پیدا شد",
+        "تا وقتی پسرش جوانِ بزرگسالی شد — داوطلبانه کنار رفت وقتی او به سنِّ کافی رسید",
+        "سلطنتش در عرضِ ماه‌ها پایان یافت وقتی مدعیِ رقیبی تخت را تصرف کرد"
+      ],
+      "answers_tg": [
+        "Даҳ‌солаҳо — барои муддати тӯлонӣ танҳо ҳукм ронд пеш аз он ки Дороб дар ниҳоят баргардад ва тахтро талаб кунад",
+        "Танҳо чанд сол — дарбор ӯро маҷбур ба истеъфо кард вақте вориси мард пайдо шуд",
+        "То вақте писарашро ҷавони калонсол шуд — ихтиёран канор рафт вақте ӯ ба синни кофӣ расид",
+        "Ҳукмронияш дар зарфи моҳҳо поён ёфт вақте иддаогари рақибе тахтро тасарруф кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Homay ruled alone for decades after placing her son in the river. The Shahnameh does not record instability or challenge during this period. She governed, the kingdom worked, and the son she placed in the river grew up by the Tigris not knowing who he was — until the army, the court astrologer, and the sealed letter eventually brought him home.",
+      "explanation_fa": "هما بعد از گذاشتنِ پسرش در رودخانه برای دهه‌ها تنها حکومت کرد. شاهنامه در طولِ این دوره بی‌ثباتی یا چالشی ثبت نمی‌کند. حکومت کرد، پادشاهی کار کرد، و پسری که در رودخانه گذاشته بود در کنارِ دجله بدونِ اینکه بداند کیست بزرگ شد — تا اینکه ارتش، منجمِ دربار، و نامه‌ی مهرشده در نهایت او را به خانه آوردند.",
+      "explanation_tg": "Ҳамо пас аз гузоштани писараш дар дарё барои даҳ‌солаҳо танҳо ҳукм ронд. Шоҳнома дар тӯли ин давра бебардоштӣ ё мушкиле сабт намекунад. Ҳукм ронд, подшоҳӣ кор кард ва писаре ки дар дарё гузошта буд дар канори Даҷла бидуни ин ки бидонад кист калон шуд.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "hom-m3",
+      "chapter_slug": "homay",
+      "quiz_part": 7,
+      "difficulty": "medium",
+      "question": "What is the structural parallel between Homay placing her son in the river and Zal being left on the mountain by Sam?",
+      "question_fa": "موازاتِ ساختاری بینِ گذاشتنِ هما پسرش را در رودخانه و رها شدنِ زال در کوه توسطِ سام چیست؟",
+      "question_tg": "Монандии сохторӣ байни гузоштани Ҳамо писарашро дар дарё ва тарк шудани Зол дар кӯҳ аз ҷониби Сом чист?",
+      "answers": [
+        "In both cases, a parent gives a child to the world's keeping — mountain or river — and the child returns. The Shahnameh uses this pattern to show that the chronicle itself cannot forget: what is placed in nature is given back.",
+        "Both children were abandoned because of physical abnormality — Zal for his white hair, Darab for an unknown defect",
+        "Both parents regretted their decision immediately and sent search parties — they just arrived too late",
+        "Both children were raised by supernatural beings — Zal by the Simorgh, Darab by a river spirit"
+      ],
+      "answers_fa": [
+        "در هر دو مورد، والدین کودکی را به نگهداریِ جهان می‌سپارند — کوه یا رودخانه — و کودک برمی‌گردد. شاهنامه از این الگو استفاده می‌کند تا نشان دهد که خودِ شاهنامه نمی‌تواند فراموش کند: آنچه در طبیعت گذاشته می‌شود بازگردانده می‌شود",
+        "هر دو کودک به خاطرِ ناهنجاریِ فیزیکی رها شدند — زال برای موهایِ سفیدش، داراب برای عیبِ ناشناخته‌ای",
+        "هر دو والد از تصمیمشان فوری پشیمان شدند و دسته‌های جستجو فرستادند — فقط خیلی دیر رسیدند",
+        "هر دو کودک توسطِ موجوداتِ ماورایی پرورش یافتند — زال توسطِ سیمرغ، داراب توسطِ روحِ رودخانه"
+      ],
+      "answers_tg": [
+        "Дар ҳар ду мавред, волидон кӯдакеро ба нигаҳдории ҷаҳон месупуранд — кӯҳ ё дарё — ва кӯдак бармегардад. Шоҳнома аз ин намуна истифода мекунад то нишон диҳад ки худи Шоҳнома фаромӯш карда наметавонад: он чи дар табиат гузошта мешавад баз пас дода мешавад",
+        "Ҳар ду кӯдак ба хотири нокомилии ҷисмонӣ тарк шуданд",
+        "Ҳар ду волид аз тасмимашон фаврӣ пушаймон шуданд ва гурӯҳҳои ҷустуҷӯ фиристоданд",
+        "Ҳар ду кӯдак аз ҷониби мавҷудоти моворои табиӣ парвариш ёфтанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sam left Zal on Alborz mountain — the white-haired infant given to the mountain's keeping. The Simorgh raised him. Homay placed Darab in the river — the sealed infant given to the water's keeping. The washerman raised him. Both return: Zal to Sam's court, Darab to Homay's throne. The Shahnameh uses nature as a vessel that preserves what the family cannot keep.",
+      "explanation_fa": "سام زال را در کوهِ البرز رها کرد — نوزادِ سفیدمو که به نگهداریِ کوه سپرده شد. سیمرغ او را پرورش داد. هما داراب را در رودخانه گذاشت — نوزادِ مهرشده که به نگهداریِ آب سپرده شد. گازر او را پرورش داد. هر دو برمی‌گردند: زال به دربارِ سام، داراب به تختِ هما. شاهنامه از طبیعت به عنوانِ ظرفی استفاده می‌کند که آنچه خانواده نمی‌تواند نگه دارد را محافظت می‌کند.",
+      "explanation_tg": "Сом Золро дар кӯҳи Алборз тарк кард — навзоди сафедмӯе ки ба нигаҳдории кӯҳ супурда шуд. Симурғ ӯро парвариш дод. Ҳамо Доробро дар дарё гузошт — навзоди муҳршуда ки ба нигаҳдории об супурда шуд. Гозар ӯро парвариш дод. Ҳарду бармегарданд: Зол ба дарбори Сом, Дороб ба тахти Ҳамо. Шоҳнома аз табиат ҳамчун зарфе истифода мекунад ки он чи оила нигоҳ дошта наметавонад ҳифозат мекунад.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "hom-m4",
+      "chapter_slug": "homay",
+      "quiz_part": 8,
+      "difficulty": "medium",
+      "question": "The Shahnameh says there was 'no coup, no competing claimant who needed to be destroyed or converted' when Homay took the throne. What does this absence of contest reveal about Bahman's political preparation?",
+      "question_fa": "شاهنامه می‌گوید وقتی هما تخت را گرفت 'کودتایی نبود، مدعیِ رقیبی که نیازِ نابودی یا تبدیل داشته باشد نبود'. این غیابِ رقابت درباره‌ی آمادگیِ سیاسیِ بهمن چه آشکار می‌کند؟",
+      "question_tg": "Шоҳнома мегӯяд вақте Ҳамо тахтро гирифт 'кӯдатое набуд, иддаогари рақибе ки ниёзи нобудӣ ё табдил дошта бошад набуд'. Ин ғиёби рақобат дар бораи омодагии сиёсии Баҳман чӣ ошкор мекунад?",
+      "answers": [
+        "That Bahman's most consequential act as a ruler was not his military campaigns but his decades of court preparation — shaping the expectations and loyalties that made the transition possible",
+        "That Homay was simply more feared than any potential rival, making opposition too dangerous to attempt",
+        "That the court lacked ambitious figures by the time of Bahman's death — his long reign had eliminated rivals",
+        "That succession in the Shahnameh is always peaceful when a ruler names an heir in advance"
+      ],
+      "answers_fa": [
+        "مؤثرترین عملِ بهمن به عنوانِ فرمانروا لشکرکشی‌های نظامی‌اش نبود بلکه دهه‌ها آمادگیِ دربار بود — شکل دادنِ انتظارات و وفاداری‌هایی که انتقال را ممکن کرد",
+        "هما صرفاً از هر رقیبِ بالقوه‌ای بیشتر ترس داشت، که مخالفت را خیلی خطرناک می‌کرد تا تلاش کنند",
+        "دربار هنگامِ مرگِ بهمن فاقدِ چهره‌های جاه‌طلب بود — سلطنتِ طولانی‌اش رقبا را حذف کرده بود",
+        "جانشینی در شاهنامه همیشه صلح‌آمیز است وقتی فرمانروا از قبل وارثی معرفی کند"
+      ],
+      "answers_tg": [
+        "Таъсирноктарин амали Баҳман ҳамчун ҳоким лашкаркашиҳои низомиаш набуд балки даҳ‌солаҳои омодагии дарбор буд — шакл додани интизоротҳо ва садоқатҳое ки гузаришро имконпазир кард",
+        "Ҳамо садоқатан аз ҳар рақиби эҳтимолӣ бештар тарс дошт, ки мухолифатро хеле хатарнок мекард",
+        "Дарбор ҳангоми марги Баҳман аз чеҳраҳои ҷоҳталаб холӣ буд — ҳукмронии тӯлонияш рақибонро хориҷ карда буд",
+        "Вориснишинӣ дар Шоҳнома ҳамеша осоишта аст вақте ҳоким аз пеш вориссе муаррифӣ кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahman spent over a hundred years as king. By the time he died, the court's expectations had been shaped by his reign — including the expectation of Homay as successor. The smooth transition is evidence of political preparation over decades, not simply Homay's personal authority. Bahman's most consequential act was not destroying Zal's house; it was the long work of making Homay's reign possible before it began.",
+      "explanation_fa": "بهمن بیشتر از صد سال شاه بود. وقتی مُرد، انتظاراتِ دربار توسطِ سلطنتش شکل گرفته بود — از جمله انتظارِ هما به عنوانِ جانشین. انتقالِ روان شواهدِ آمادگیِ سیاسی در طولِ دهه‌هاست، نه صرفاً اقتدارِ شخصیِ هما. مؤثرترین عملِ بهمن نابودیِ خانه‌ی زال نبود؛ کارِ طولانیِ ممکن کردنِ سلطنتِ هما قبل از شروعش بود.",
+      "explanation_tg": "Баҳман беш аз сад сол подшоҳ буд. Вақте мурд, интизоротҳои дарбор аз ҷониби ҳукмронияш шакл гирифта буд — аз ҷумла интизори Ҳамо ҳамчун ворис. Гузариши равон далели омодагии сиёсӣ дар тӯли даҳ‌солаҳост, на танҳо ихтиёри шахсии Ҳамо.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "hom-m5",
+      "chapter_slug": "homay",
+      "quiz_part": 9,
+      "difficulty": "medium",
+      "question": "The Shahnameh describes Homay's court as having 'grown comfortable with its own arrangements' by the time Darab returns. What does this detail suggest about what long stable rule produces?",
+      "question_fa": "شاهنامه دربارِ هما را به عنوانِ اینکه 'با ترتیباتِ خود راحت شده' بود وقتی داراب برمی‌گردد توصیف می‌کند. این جزئیات درباره‌ی آنچه حکومتِ پایدارِ طولانی تولید می‌کند چه پیشنهادی می‌دهد؟",
+      "question_tg": "Шоҳнома дарбори Ҳаморо ҳамчун ин ки 'бо тартиботи худ ором гирифтааст' вақте Дороб бармегардад тавсиф мекунад. Ин ҷузъият дар бораи он чи ҳукмронии поёидори тӯлонӣ тавлид мекунад чӣ пешниҳодӣ медиҳад?",
+      "answers": [
+        "That stability generates inertia — a court that has worked well for decades will resist the disruption that a returning heir necessarily represents, even when that heir is legitimate",
+        "That the court had grown corrupt during Homay's long reign, making Darab's reform necessary",
+        "That stability produces loyalty — the court that accepted Homay will naturally accept Darab",
+        "That long rule weakens a monarch — Homay's court was comfortable because she had ceded power gradually"
+      ],
+      "answers_fa": [
+        "ثبات اینرسی تولید می‌کند — دربارِ کارکرده‌ای که برای دهه‌ها خوب کار کرده است در برابرِ اخلالی که وارثِ برگشته ضرورتاً نشان می‌دهد مقاومت می‌کند، حتی وقتی آن وارث مشروع است",
+        "دربار در طولِ سلطنتِ طولانیِ هما فاسد شده بود و اصلاحاتِ داراب را ضروری کرده بود",
+        "ثبات وفاداری تولید می‌کند — دربارِ پذیرنده‌ی هما طبیعتاً داراب را هم می‌پذیرد",
+        "حکومتِ طولانی پادشاه را ضعیف می‌کند — دربارِ هما راحت بود چون او به تدریج قدرت را واگذار کرده بود"
+      ],
+      "answers_tg": [
+        "Субот инерция тавлид мекунад — дарборе ки барои даҳ‌солаҳо хуб кор кардааст дар муқобили барҳамзаниде ки вориси баргашта зарурист, муқовимат мекунад, ҳатто вақте он ворис машруъ аст",
+        "Дарбор дар тӯли ҳукмронии тӯлонии Ҳамо фосид шуда буд ва ислоҳоти Доробро зарурӣ мекард",
+        "Субот садоқат тавлид мекунад — дарбори пазирандаи Ҳамо табиатан Доробро ҳам мепазирад",
+        "Ҳукмронии тӯлонӣ монархро заиф мекунад — дарбори Ҳамо ором буд зеро ӯ оҳиста-оҳиста қудратро вогузор карда буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Stability is not only a virtue in the Shahnameh — it also generates institutional conservatism. A court that has administered the kingdom successfully for decades has vested interests in the existing arrangement. When Darab returns, the court's comfort is the friction he must navigate. The Shahnameh uses this detail to make the reunion something that requires negotiation rather than simple recognition.",
+      "explanation_fa": "ثبات در شاهنامه تنها یک فضیلت نیست — بلکه محافظه‌کاریِ نهادی هم تولید می‌کند. دربارِ اداره‌کننده‌ی موفقِ پادشاهی برای دهه‌ها در ترتیباتِ موجود منافعِ مستقر دارد. وقتی داراب برمی‌گردد، آسایشِ دربار اصطکاکی است که باید هدایت شود. شاهنامه از این جزئیات استفاده می‌کند تا بازگشت را چیزی کند که نیاز به مذاکره دارد نه شناساییِ ساده.",
+      "explanation_tg": "Субот дар Шоҳнома танҳо як фазилат нест — инчунин консерватизми ниҳодӣ ҳам тавлид мекунад. Дарборе ки пешаки муваффақи подшоҳиро барои даҳ‌солаҳо идора карда, дар тартиботи мавҷуд манофеи устувор дорад. Вақте Дороб бармегардад, оромии дарбор иртикошест ки бояд роҳнамоӣ шавад.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "hom-h2",
+      "chapter_slug": "homay",
+      "quiz_part": 10,
+      "difficulty": "hard",
+      "question": "Homay rules alone, places her son in a river, and is not condemned. The Shahnameh presents her reign without a male co-ruler or regent. What does this chapter establish about the Shahnameh's position on female rule?",
+      "question_fa": "هما تنها حکومت می‌کند، پسرش را در رودخانه می‌گذارد، و محکوم نمی‌شود. شاهنامه دورانِ حکومتش را بدونِ فرمانروای مشترکِ مرد یا نایب عرضه می‌کند. این فصل درباره‌ی موضعِ شاهنامه بر سرِ حکومتِ زنان چه تثبیت می‌کند؟",
+      "question_tg": "Ҳамо танҳо ҳукм меронад, писарашро дар дарё мегузорад ва маҳкум намешавад. Шоҳнома давраи ҳукмронияшро бидуни ҳокими муштараки мард ё ноиб муаррифӣ мекунад. Ин фасл дар бораи мавзаъи Шоҳнома дар бораи ҳукмронии занон чӣ устувор мекунад?",
+      "answers": [
+        "That the Shahnameh does not consider female rule inherently illegitimate — Homay governs effectively without commentary on whether a woman should hold the throne",
+        "That female rule is acceptable only as a temporary measure until a male heir is found or produced",
+        "That the Shahnameh endorses female rule as superior to male rule in periods of transition",
+        "That the chronicle is ambivalent — it presents Homay's rule positively but the act of hiding her son signals her unfitness for permanent power"
+      ],
+      "answers_fa": [
+        "شاهنامه حکومتِ زنان را ذاتاً نامشروع نمی‌داند — هما بدونِ نظر درباره‌ی اینکه آیا زنی باید تخت را نگه دارد، مؤثر حکومت می‌کند",
+        "حکومتِ زنان فقط به عنوانِ اقدامِ موقت تا پیدا یا تولید شدنِ وارثِ مرد قابلِ قبول است",
+        "شاهنامه حکومتِ زنان را به عنوانِ برترِ حکومتِ مردان در دوره‌های گذار تأیید می‌کند",
+        "شاهنامه دوگانه است — سلطنتِ هما را مثبت عرضه می‌کند اما عملِ پنهان کردنِ پسرش نااهلی‌اش را برای قدرتِ دائمی نشان می‌دهد"
+      ],
+      "answers_tg": [
+        "Шоҳнома ҳукмронии занонро зотан ғайримашруъ намешуморад — Ҳамо бидуни назар дар бораи ин ки оё зан бояд тахтро нигоҳ дорад, таъсирбахш ҳукм меронад",
+        "Ҳукмронии занон танҳо ҳамчун иқдоми муваққат то пайдо ё тавлид шудани вориси мард қобили қабул аст",
+        "Шоҳнома ҳукмронии занонро ҳамчун бартарии ҳукмронии мардон дар давраҳои гузариш тасдиқ мекунад",
+        "Шоҳнома дугона аст — ҳукмронии Ҳаморо мусбат муаррифӣ мекунад аммо амали пинҳон кардани писараш нолоиқии ӯро барои қудрати доимӣ нишон медиҳад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh does not frame Homay's reign as exceptional or qualified. She governs; the kingdom works; she makes decisions (including placing her son in a river) that the chronicle does not condemn. The text does not suggest she needed a male co-ruler or that her governance was provisional. The chronicle's silence about gender in this chapter is itself the statement: a queen who governs well is simply a ruler.",
+      "explanation_fa": "شاهنامه سلطنتِ هما را به عنوانِ استثنایی یا مشروط قاب‌بندی نمی‌کند. حکومت می‌کند؛ پادشاهی کار می‌کند؛ تصمیماتی می‌گیرد (از جمله گذاشتنِ پسرش در رودخانه) که شاهنامه محکوم نمی‌کند. متن نشان نمی‌دهد که به فرمانروای مشترکِ مرد نیاز داشت یا حکومتش موقتی بود. سکوتِ شاهنامه درباره‌ی جنسیت در این فصل خودش بیانیه است: ملکه‌ای که خوب حکومت می‌کند صرفاً یک فرمانروا است.",
+      "explanation_tg": "Шоҳнома ҳукмронии Ҳаморо ҳамчун истисноӣ ё машрут қаббандӣ намекунад. Ҳукм меронад; подшоҳӣ кор мекунад; тасмимот мегирад (аз ҷумла гузоштани писараш дар дарё) ки Шоҳнома маҳкум намекунад. Матн нишон намедиҳад ки ба ҳокими муштараки мард ниёз дошт ё ҳукмронияш муваққат буд.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "hom-h3",
+      "chapter_slug": "homay",
+      "quiz_part": 11,
+      "difficulty": "hard",
+      "question": "Ferdowsi was writing near the end of his life, having outlived most who knew him as a young poet. He had given thirty years to a poem and received almost nothing from the patron who was supposed to make the work immortal. What parallel does the Homay chapter invite between Ferdowsi's situation and Homay's?",
+      "question_fa": "فردوسی نزدیکِ پایانِ عمرش می‌نوشت و از اکثرِ کسانی که او را به عنوانِ شاعرِ جوان می‌شناختند عمرش طولانی‌تر شده بود. سی سال به شعری داده بود و از حامی‌ای که باید اثر را جاودانه می‌کرد تقریباً چیزی دریافت نکرده بود. فصلِ هما چه موازاتی بینِ وضعیتِ فردوسی و هما دعوت می‌کند؟",
+      "question_tg": "Фирдавсӣ дар наздикии поёни умраш менавишт ва аз аксари касоне ки ӯро ҳамчун шоири ҷавон мешинохтанд умраш тӯлонитар шуда буд. Си сол ба шеъре дода буд ва аз ҳомие ки бояд асарро ҷовидонӣ мекард тақрибан ҳеч нагирифта буд. Фасли Ҳамо чӣ монандие байни вазъияти Фирдавсӣ ва Ҳамо даъват мекунад?",
+      "answers": [
+        "Both placed the necessary thing in the water and trusted the current — Homay put her son in the river; Ferdowsi put the poem into the world without knowing if it would survive his death or his patron's indifference",
+        "Both were women governing alone — Ferdowsi saw himself as outside the patronage system, like Homay outside the expected succession",
+        "Both were betrayed by those closest to them — Homay by her pregnancy, Ferdowsi by Mahmud",
+        "The parallel is between Ferdowsi and Darab — both were foundlings who had to prove themselves before being recognized"
+      ],
+      "answers_fa": [
+        "هر دو چیزِ ضروری را در آب گذاشتند و به جریان اعتماد کردند — هما پسرش را در رودخانه گذاشت؛ فردوسی شعر را بدونِ دانستنِ اینکه آیا از مرگش یا بی‌تفاوتیِ حامی‌اش نجات خواهد یافت در جهان گذاشت",
+        "هر دو زنانی بودند که تنها حکومت می‌کردند — فردوسی خود را مثلِ هما خارج از جانشینیِ انتظاری، خارج از سیستمِ حمایت می‌دید",
+        "هر دو توسطِ نزدیکترین‌هایشان خیانت دیدند — هما توسطِ بارداری‌اش، فردوسی توسطِ محمود",
+        "موازات بینِ فردوسی و داراب است — هر دو کودکانِ یافته‌ای بودند که باید قبل از شناخته شدن خود را ثابت می‌کردند"
+      ],
+      "answers_tg": [
+        "Ҳар ду чизи зарурӣро дар об гузоштанд ва ба ҷараён эътимод карданд — Ҳамо писарашро дар дарё гузошт; Фирдавсӣ шеърро бидуни донистани ин ки оё аз марги худ ё бетафовутии ҳомиаш наҷот хоҳад ёфт дар ҷаҳон гузошт",
+        "Ҳар ду занон буданд ки танҳо ҳукм мерондан — Фирдавсӣ худро монанди Ҳамо берун аз системаи ҳимоят медид",
+        "Ҳар ду аз наздиктаринҳояшон хиёнат диданд — Ҳамо аз ҳомиладории худаш, Фирдавсӣ аз Маҳмуд",
+        "Монандӣ байни Фирдавсӣ ва Дороб аст — ҳар ду кӯдакони ёфтае буданд ки бояд пеш аз шинохта шудан худро исбот мекарданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's own account of Ferdowsi's situation — writing in poverty, near death, having given thirty years to a poem his patron would barely reward — maps onto Homay's act: putting the necessary thing in the water and trusting the current. Homay did not know if the river would deliver her son safely. Ferdowsi did not know if the poem would survive Mahmud's indifference. Both acts required releasing control over something precious.",
+      "explanation_fa": "توصیفِ خودِ شاهنامه از وضعیتِ فردوسی — نوشتن در فقر، نزدیکِ مرگ، داشتنِ سی سال به شعری داده که حامی‌اش به سختی پاداش می‌داد — بر عملِ هما نقش می‌بندد: گذاشتنِ چیزِ ضروری در آب و اعتماد به جریان. هما نمی‌دانست آیا رودخانه پسرش را سالم تحویل می‌دهد. فردوسی نمی‌دانست آیا شعر از بی‌تفاوتیِ محمود نجات خواهد یافت. هر دو عمل نیاز به رها کردنِ کنترل بر چیزِ ارزشمندی داشتند.",
+      "explanation_tg": "Тавсифи худи Шоҳнома аз вазъияти Фирдавсӣ — навиштан дар фақр, дар наздикии марг, доштани си сол ба шеъре дода ки ҳомиаш ба зӯр подош медод — ба амали Ҳамо тасвир мешавад: гузоштани чизи зарурӣ дар об ва эътимод ба ҷараён. Ҳамо намедонист оё дарё писарашро солим таҳвил медиҳад. Фирдавсӣ намедонист оё шеър аз бетафовутии Маҳмуд наҷот хоҳад ёфт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hom-h4",
+      "chapter_slug": "homay",
+      "quiz_part": 12,
+      "difficulty": "hard",
+      "question": "Homay's chapter is the Shahnameh's last major female reign. After her, the chronicle returns to male succession for its final chapters. What does Homay's position — bridging the heroic age and the historical age — suggest about what she represents structurally?",
+      "question_fa": "فصلِ هما آخرین سلطنتِ زنانه‌ی اصلی در شاهنامه است. بعد از او، شاهنامه برای فصل‌های نهایی‌اش به جانشینیِ مرد برمی‌گردد. جایگاهِ هما — پُل زدن بینِ عصرِ قهرمانی و عصرِ تاریخی — درباره‌ی آنچه از نظرِ ساختاری نشان می‌دهد چه پیشنهادی می‌دهد؟",
+      "question_tg": "Фасли Ҳамо охирин ҳукмронии занонаи асосӣ дар Шоҳнома аст. Пас аз ӯ, Шоҳнома барои фасл‌ҳои ниҳоии худ ба вориснишинии мард бармегардад. Мавзеи Ҳамо — пул задан байни асри қаҳрамонӣ ва асри таърихӣ — дар бораи он чи аз назари сохторӣ нишон медиҳад чӣ пешниҳодӣ медиҳад?",
+      "answers": [
+        "She is the hinge — the last figure from the mythological tradition who could act with complete autonomy (placing her son in a river without explanation), before the chronicle enters a more historically constrained world where rulers must account for their decisions",
+        "She marks the point where the Shahnameh runs out of source material and begins inventing narrative to connect to historical records",
+        "Her chapter is structurally a rest — the Shahnameh needed a quiet interval between the heroic intensity of Rostam's death and the geopolitical drama of Alexander's conquest",
+        "She represents the final matriarchal phase before Iranian kingship permanently adopts the patrilineal model"
+      ],
+      "answers_fa": [
+        "او لولاست — آخرین شخصیت از سنتِ اساطیری که می‌توانست با استقلالِ کامل عمل کند (گذاشتنِ پسرش در رودخانه بدونِ توضیح)، قبل از اینکه شاهنامه وارد دنیایِ تاریخی‌تری شود که در آن فرمانروایان باید برای تصمیماتشان حساب پس دهند",
+        "نقطه‌ای را نشان می‌دهد که شاهنامه از مواد منبع خارج می‌شود و شروع به اختراعِ روایت برای اتصال به سوابقِ تاریخی می‌کند",
+        "فصلش از نظرِ ساختاری استراحت است — شاهنامه به فاصله‌ی آرامی بینِ شدتِ قهرمانانه‌ی مرگِ رستم و درامِ ژئوپلیتیکِ فتحِ اسکندر نیاز داشت",
+        "آخرین مرحله‌ی مادرسالارانه را قبل از اینکه پادشاهیِ ایرانی به طورِ دائم الگوی پدر-نسبی را بپذیرد نشان می‌دهد"
+      ],
+      "answers_tg": [
+        "Ӯ лӯла аст — охирин шахсияти суннати асотирӣ ки метавонист бо истиқлолияти комил амал кунад (гузоштани писараш дар дарё бидуни тавзеҳ), пеш аз он ки Шоҳнома ба ҷаҳони таърихитаре ворид шавад ки дар он ҳокимон бояд барои тасмимоташон ҳисоб диҳанд",
+        "Нуқтаеро нишон медиҳад ки Шоҳнома аз маводи манбаъ берун мешавад ва шурӯъ ба ихтирои равоят барои иттисол ба сабти таърихӣ мекунад",
+        "Фаслаш аз назари сохторӣ истироҳат аст — Шоҳнома ба фосилаи оромие байни шиддати қаҳрамонии марги Рустам ва дармои ҷеополитикии фатҳи Искандар ниёз дошт",
+        "Охирин марҳилаи модарсолориро пеш аз он ки подшоҳии Эронӣ ба таври доимӣ намунаи падар-насабӣ бипазирад нишон медиҳад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Homay acts with the freedom of the mythological tradition: she places her son in a river without the chronicle demanding an explanation, and the chronicle accepts this as within the range of a ruler's prerogatives. Darab will operate in a slightly more constrained world — one where military service, court recognition, and legal identity all play a role. Homay is the last ruler in the Shahnameh who can make a decision as large as this and have it accepted as sovereign act.",
+      "explanation_fa": "هما با آزادیِ سنتِ اساطیری عمل می‌کند: پسرش را در رودخانه می‌گذارد بدونِ اینکه شاهنامه توضیحی بخواهد، و شاهنامه این را در محدوده‌ی امتیازاتِ یک فرمانروا می‌پذیرد. داراب در دنیایِ کمی محدودتری عمل خواهد کرد — دنیایی که در آن خدمتِ نظامی، شناساییِ دربار، و هویتِ قانونی همه نقش دارند. هما آخرین فرمانروای شاهنامه است که می‌تواند تصمیمی به این بزرگی بگیرد و آن به عنوانِ عملِ حاکمیتی پذیرفته شود.",
+      "explanation_tg": "Ҳамо бо озодии суннати асотирӣ амал мекунад: писарашро дар дарё мегузорад бидуни ин ки Шоҳнома тавзеҳе талаб кунад ва Шоҳнома инро дар доираи имтиёзоти ҳокиме мепазирад. Дороб дар ҷаҳони каме маҳдудтар амал хоҳад кард. Ҳамо охирин ҳокими Шоҳнома аст ки метавонад тасмиме ба ин бузургӣ бигирад ва он ҳамчун амали ҳокимиятӣ пазируфта шавад.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "hom-h5",
+      "chapter_slug": "homay",
+      "quiz_part": 13,
+      "difficulty": "hard",
+      "question": "The Shahnameh says Homay's son would be raised not knowing who he was — 'the river does not forget; the mountain does not forget; the chronicle does not forget.' What does this refrain reveal about the Shahnameh's understanding of identity?",
+      "question_fa": "شاهنامه می‌گوید پسرِ هما بدونِ دانستنِ اینکه کیست بزرگ می‌شود — 'رودخانه فراموش نمی‌کند؛ کوه فراموش نمی‌کند؛ شاهنامه فراموش نمی‌کند'. این لیتانی درباره‌ی درکِ شاهنامه از هویت چه آشکار می‌کند؟",
+      "question_tg": "Шоҳнома мегӯяд писари Ҳамо бидуни донистани ин ки кист калон мешавад — 'дарё фаромӯш намекунад; кӯҳ фаромӯш намекунад; Шоҳнома фаромӯш намекунад'. Ин литания дар бораи дарки Шоҳнома аз ҳувият чӣ ошкор мекунад?",
+      "answers": [
+        "That identity in the Shahnameh is not self-constructed — it is structural, carried in blood and seal rather than in personal history. Darab does not need to know who he is for his identity to be real; it exists independently of his awareness of it",
+        "That the Shahnameh believes in a literal divine recording of all events — river and mountain as witnesses kept by God",
+        "That the chronicle is warning the reader not to forget the hidden prince, so the revelation in a later chapter will not be confusing",
+        "That nature in the Shahnameh always protects royalty — the river and the mountain are reliably safe for princes"
+      ],
+      "answers_fa": [
+        "هویت در شاهنامه خودساخته نیست — ساختاری است، در خون و مهر به جای در تاریخِ شخصی حمل می‌شود. داراب نیازی ندارد بداند کیست تا هویتش واقعی باشد؛ مستقل از آگاهی‌اش از آن وجود دارد",
+        "شاهنامه به ثبتِ الهیِ تحت اللفظیِ همه‌ی رویدادها ایمان دارد — رودخانه و کوه به عنوانِ شاهدانِ نگه‌داری‌شده توسطِ خدا",
+        "شاهنامه به خواننده هشدار می‌دهد که شاهزاده‌ی پنهان را فراموش نکند تا وحی در فصلِ بعدی گیج‌کننده نباشد",
+        "طبیعت در شاهنامه همیشه از اشراف محافظت می‌کند — رودخانه و کوه برای شاهزادگان قابلِ اعتماد ایمن هستند"
+      ],
+      "answers_tg": [
+        "Ҳувият дар Шоҳнома худсохта нест — сохторист, дар хун ва муҳр ба ҷои дар таърихи шахсӣ ҳамл мешавад. Дороб ниёз надорад бидонад кист то ҳувияташ воқеӣ бошад; мустақил аз огоҳии ӯ аз он вуҷуд дорад",
+        "Шоҳнома ба сабти илоҳии тавлии ҳамаи рӯйдодҳо иймон дорад — дарё ва кӯҳ ҳамчун шоҳидони нигоҳдоришудаи Худо",
+        "Шоҳнома ба хонанда огоҳӣ медиҳад ки шоҳзодаи пинҳонро фаромӯш накунад",
+        "Табиат дар Шоҳнома ҳамеша аз ашроф ҳифозат мекунад — дарё ва кӯҳ барои шоҳзодагон боэтимод бехатаранд"
+      ],
+      "correct_answer": 0,
+      "explanation": "In the Shahnameh's world, identity is not assembled through self-knowledge or personal narrative. Darab grows up as a washerman's son — that is his subjective history. But the sealed letter inside the chest contains his actual identity, and it exists independently of whether he knows about it. When the seal is recognized, his identity does not change — it is revealed. The Shahnameh treats bloodline and seal as more real than lived experience.",
+      "explanation_fa": "در دنیای شاهنامه، هویت از طریقِ خودشناسی یا روایتِ شخصی ساخته نمی‌شود. داراب به عنوانِ پسرِ گازر بزرگ می‌شود — این تاریخِ ذهنیِ اوست. اما نامه‌ی مهرشده‌ی داخلِ صندوق هویتِ واقعی‌اش را دارد، و مستقل از اینکه آیا می‌داند یا نه وجود دارد. وقتی مهر شناخته می‌شود، هویتش تغییر نمی‌کند — آشکار می‌شود. شاهنامه نسب و مهر را واقعی‌تر از تجربه‌ی زیسته می‌انگارد.",
+      "explanation_tg": "Дар ҷаҳони Шоҳнома, ҳувият тавассути худшиносӣ ё равояти шахсӣ сохта намешавад. Дороб ҳамчун писари гозар калон мешавад — ин таърихи зеҳнии ӯст. Аммо номаи муҳршудаи дохили сандуқ ҳувияти воқеии ӯро дорад ва мустақил аз ин ки оё медонад ё не вуҷуд дорад. Вақте муҳр шинохта мешавад, ҳувияташ тағйир намеёбад — ошкор мешавад.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "hom-h6",
+      "chapter_slug": "homay",
+      "quiz_part": 14,
+      "difficulty": "hard",
+      "question": "Homay is Bahman's daughter, Bahman is Esfandiyar's son, and Esfandiyar killed Rostam in the same arc. Homay thus sits at the center of the chronicle's transition from the house of champions to the house of kings. What does her chapter resolve — and what does it leave unresolved?",
+      "question_fa": "هما دخترِ بهمن است، بهمن پسرِ اسفندیار است، و اسفندیار رستم را در همان قوس کشت. هما بنابراین در مرکزِ گذارِ شاهنامه از خانه‌ی قهرمانان به خانه‌ی شاهان نشسته است. فصلِ او چه چیزی را حل می‌کند — و چه چیزی را حل‌نشده رها می‌کند؟",
+      "question_tg": "Ҳамо духтари Баҳман аст, Баҳман писари Исфандиёр аст ва Исфандиёр Рустамро дар ҳамон камон кушт. Ҳамо бинобар ин дар маркази гузариши Шоҳнома аз хонаи қаҳрамонон ба хонаи подшоҳон нишастааст. Фасли ӯ чӣ чизеро ҳал мекунад — ва чӣ чизеро ҳал нашуда рахо мекунад?",
+      "answers": [
+        "It resolves the question of whether the Kayanian line can continue without its champions — it can, through Homay's competent rule. It leaves unresolved the moral debt incurred by destroying the house of Zal, which the chronicle carries forward silently.",
+        "It resolves everything — Homay's chapter is the Shahnameh's turning point after which all previous tensions are released",
+        "It resolves the Rostam-Esfandiyar conflict by showing that neither house survived — both were consumed by history",
+        "It leaves the question of female succession unresolved — the chronicle does not decide whether Homay's model should be followed"
+      ],
+      "answers_fa": [
+        "سؤالِ اینکه آیا نسلِ کیانی بدونِ قهرمانانش می‌تواند ادامه دهد را حل می‌کند — می‌تواند، از طریقِ حکومتِ کفایت‌دارِ هما. بدهیِ اخلاقیِ متحمل‌شده از نابودیِ خانه‌ی زال را حل‌نشده رها می‌کند، که شاهنامه بی‌صدا به پیش می‌برد",
+        "همه چیز را حل می‌کند — فصلِ هما نقطه‌ی عطفِ شاهنامه است که بعد از آن همه‌ی تنش‌های قبلی آزاد می‌شوند",
+        "تعارضِ رستم-اسفندیار را با نشان دادنِ اینکه هیچ کدام از خانه‌ها باقی نماندند حل می‌کند",
+        "سؤالِ جانشینیِ زن را حل‌نشده رها می‌کند — شاهنامه تصمیم نمی‌گیرد که آیا الگوی هما باید دنبال شود"
+      ],
+      "answers_tg": [
+        "Масъалаи ин ки оё насли Каёнӣ бидуни қаҳрамононаш метавонад идома диҳад ҳал мекунад — метавонад, тавассути ҳукмронии кифоятдори Ҳамо. Қарзи ахлоқии таҳаммулшуда аз нобудии хонаи Зол ҳалнашуда рахо мекунад ки Шоҳнома бе садо ба пеш мебарад",
+        "Ҳама чизро ҳал мекунад — фасли Ҳамо нуқтаи гардиши Шоҳнома аст ки пас аз он ҳамаи кашмакашҳои қаблӣ озод мешаванд",
+        "Тазоди Рустам-Исфандиёрро бо нишон додани ин ки ҳеч яке аз хонаҳо боқӣ намонданд ҳал мекунад",
+        "Масъалаи вориснишинии занро ҳалнашуда рахо мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Homay's chapter demonstrates that the Kayanian administration can function without Rostam — the kingdom works, justice is administered, borders hold. This resolves the structural question of what happens after the heroic age closes. What it does not resolve is the moral cost of getting there: Bahman destroyed the house of Zal to reach a stable kingdom, and that destruction is not addressed. The chronicle carries that debt forward into Darab's and Dara's chapters.",
+      "explanation_fa": "فصلِ هما نشان می‌دهد که اداره‌ی کیانی بدونِ رستم می‌تواند کار کند — پادشاهی کار می‌کند، عدالت اجرا می‌شود، مرزها نگه داشته می‌شوند. این سؤالِ ساختاریِ آنچه بعد از بستنِ عصرِ قهرمانی اتفاق می‌افتد را حل می‌کند. آنچه حل نمی‌کند هزینه‌ی اخلاقیِ رسیدن به آنجا است: بهمن خانه‌ی زال را برای رسیدن به پادشاهیِ پایدار نابود کرد، و آن نابودی مطرح نشد. شاهنامه آن بدهی را به فصل‌های داراب و دارا منتقل می‌کند.",
+      "explanation_tg": "Фасли Ҳамо нишон медиҳад ки идораи Каёнӣ бидуни Рустам метавонад кор кунад — подшоҳӣ кор мекунад, адолат иҷро мешавад, марзҳо нигоҳ дошта мешаванд. Ин масъалаи сохтории он чи пас аз бастани асри қаҳрамонӣ рӯй медиҳад ҳал мекунад. Он чи ҳал намекунад арзишии ахлоқии расидан ба он ҷо аст.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "hom-h7",
+      "chapter_slug": "homay",
+      "quiz_part": 15,
+      "difficulty": "hard",
+      "question": "Homay abandons her son to the river knowing he will be found and raised by strangers, then rules for decades without him. When Darab eventually returns, she 'acknowledged him' and 'the kingdom passed.' The Shahnameh presents their reunion as simple and non-dramatic. What does this restraint suggest?",
+      "question_fa": "هما پسرش را به رودخانه می‌سپارد با دانستنِ اینکه توسطِ غریبه‌ها پیدا و پرورش داده خواهد شد، سپس بدونِ او برای دهه‌ها حکومت می‌کند. وقتی داراب در نهایت برمی‌گردد، او 'او را شناخت' و 'پادشاهی گذشت'. شاهنامه بازگشتشان را ساده و بدونِ درام عرضه می‌کند. این خویشتن‌داری چه پیشنهادی می‌دهد؟",
+      "question_tg": "Ҳамо писарашро ба дарё месупурад бо донистани ин ки аз ҷониби ғарибон пайдо ва парвариш дода хоҳад шуд, сипас бидуни ӯ барои даҳ‌солаҳо ҳукм меронад. Вақте Дороб дар ниҳоят бармегардад, ӯ 'ӯро шинохт' ва 'подшоҳӣ гузашт'. Шоҳнома бозгашташонро содда ва бидуни мушкил муаррифӣ мекунад. Ин худдорӣ чӣ пешниҳодӣ медиҳад?",
+      "answers": [
+        "That both Homay and Darab understood the meeting as a transactional and political event rather than a personal reunion — she had placed him there for exactly this moment, and when the moment came, it was completed without sentiment",
+        "That Homay was too old and infirm by the time Darab returned to express emotion",
+        "That the Shahnameh considered emotional reunions beneath the dignity of the chronicle's style",
+        "That Homay felt no attachment to a son she had never raised, and Darab felt no attachment to a mother he had never known"
+      ],
+      "answers_fa": [
+        "هر دو هما و داراب ملاقات را یک رویدادِ تراکنشی و سیاسی به جای اتحادِ شخصی می‌فهمیدند — او او را دقیقاً برای این لحظه آنجا گذاشته بود، و وقتی لحظه فرا رسید، بدونِ احساسات تکمیل شد",
+        "هما وقتی داراب برگشت آنقدر پیر و ناتوان بود که احساسات را ابراز کند",
+        "شاهنامه اتحادهای احساساتی را زیرِ شأنِ سبکِ شاهنامه می‌دانست",
+        "هما هیچ دلبستگی به پسری که هرگز پرورش نداده بود احساس نکرد و داراب هیچ دلبستگی به مادری که هرگز نشناخته بود"
+      ],
+      "answers_tg": [
+        "Ҳам Ҳамо ва ҳам Дороб вохӯриро ҳодисаи муомилотӣ ва сиёсӣ ба ҷои иттиҳоди шахсӣ мефаҳмиданд — ӯ ӯро дақиқан барои ин лаҳза он ҷо гузошта буд ва вақте лаҳза расид, бидуни эҳсосот иҷро шуд",
+        "Ҳамо вақте Дороб баргашт он қадар пир ва нотавон буд ки эҳсосотро ибрoz кунад",
+        "Шоҳнома иттиҳодҳои эҳсосотиро зери шаъни услуби Шоҳнома мешуморид",
+        "Ҳамо ҳеч дилбастагӣ ба писаре ки ҳеч гоҳ парвариш надода буд эҳсос накард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Homay placed her son in the river as a political act — the sealed letter was there to trigger recognition at the right moment. The reunion is the completion of that act, not a separate emotional event. The Shahnameh's restraint reflects this: Homay and Darab are not a mother and child reunited; they are a queen completing a succession and a prince claiming what the succession designated for him. The act was finished the moment she sealed the chest.",
+      "explanation_fa": "هما پسرش را به عنوانِ عملِ سیاسی در رودخانه گذاشت — نامه‌ی مهرشده در آنجا بود تا در لحظه‌ی مناسب شناسایی را فعال کند. بازگشت تکمیلِ آن عمل است، نه یک رویدادِ احساساتیِ جداگانه. خویشتن‌داریِ شاهنامه این را بازتاب می‌دهد: هما و داراب مادر و فرزندِ دوباره پیوست‌شده نیستند؛ ملکه‌ای هستند که جانشینی را تکمیل می‌کند و شاهزاده‌ای که آنچه جانشینی برای او مقرر کرده مطالبه می‌کند.",
+      "explanation_tg": "Ҳамо писарашро ҳамчун амали сиёсӣ дар дарё гузошт — номаи муҳршуда дар он ҷо буд то дар лаҳзаи муносиб шиносоиро фаъол кунад. Бозгашт иҷрои он амал аст, на як рӯйдоди эҳсосотии ҷудогона. Худдории Шоҳнома инро инъикос мекунад: Ҳамо ва Дороб модар ва фарзанди дубора паввасткардашуда нестанд.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "hom-h8",
+      "chapter_slug": "homay",
+      "quiz_part": 16,
+      "difficulty": "hard",
+      "question": "Homay rules for decades without anyone — no co-ruler, no regent, no acknowledged heir until the moment Darab returns. The Shahnameh calls this period stable and functional. What does this sustained solitude-in-power accomplish narratively?",
+      "question_fa": "هما برای دهه‌ها بدونِ کسی حکومت می‌کند — بدونِ فرمانروای مشترک، بدونِ نایب، بدونِ وارثِ رسمی تا لحظه‌ای که داراب برمی‌گردد. شاهنامه این دوره را پایدار و کارآمد می‌نامد. این تنهاییِ پایدار در قدرت از نظرِ روایی چه می‌کند؟",
+      "question_tg": "Ҳамо барои даҳ‌солаҳо бидуни касе ҳукм меронад — бидуни ҳокими муштарак, бидуни ноиб, бидуни вориси расмӣ то лаҳзае ки Дороб бармегардад. Шоҳнома ин давраро поёидор ва кораманд мехонад. Ин танҳоии поёидор дар қудрат аз назари равоятӣ чӣ мекунад?",
+      "answers": [
+        "It demonstrates that the Shahnameh's world does not require a hero or a champion to function — governance can be a quiet, competent, sustained act; the chronicle can hold power without the intensity of the heroic age",
+        "It creates a puzzle for the audience — a queen ruling alone without an acknowledged heir must eventually fail",
+        "It provides contrast with the chaos that follows, making Darab's arrival feel like a resolution of instability",
+        "It suggests that Homay was secretly grooming Darab from a distance through intermediaries the chronicle does not name"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد که دنیای شاهنامه برای کارکردن به قهرمان یا پهلوان نیاز ندارد — حکومت می‌تواند عملِ آرام، کفایت‌دار، و پایداری باشد؛ شاهنامه می‌تواند قدرت را بدونِ شدتِ عصرِ قهرمانی نگه دارد",
+        "برای مخاطب معمایی ایجاد می‌کند — ملکه‌ای که تنها بدونِ وارثِ رسمی حکومت می‌کند در نهایت باید شکست بخورد",
+        "تضاد با آشوبی که پیش می‌آید فراهم می‌کند، که ورودِ داراب را مثلِ حلِّ بی‌ثباتی احساس می‌کند",
+        "نشان می‌دهد که هما به طورِ پنهانی از راهِ دور از طریقِ واسطه‌هایی که شاهنامه نام نمی‌برد داراب را آماده می‌کرد"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад ки ҷаҳони Шоҳнома барои кор кардан ба қаҳрамон ё паҳлавон ниёз надорад — ҳукмронӣ метавонад амали ором, кифоятдор ва поёидор бошад; Шоҳнома метавонад қудратро бидуни шиддати асри қаҳрамонӣ нигоҳ дорад",
+        "Барои мухотаб мӯаммое эҷод мекунад — маликае ки танҳо бидуни вориси расмӣ ҳукм меронад дар ниҳоят бояд шикаст хӯрад",
+        "Тазодро бо ошӯбе ки пеш меояд фароҳам мекунад, ки ворудии Доробро монанди ҳалли бебардоштӣ эҳсос мекунад",
+        "Нишон медиҳад ки Ҳамо пинҳона аз роҳи дур тавассути воситагароне ки Шоҳнома ном намебарад Доробро омода мекард"
+      ],
+      "correct_answer": 0,
+      "explanation": "One of the Shahnameh's implicit questions after Rostam's death is: can the world function without its champions? Homay's reign answers this with decades of evidence. Administration, justice, borders — the ordinary apparatus of governance — can be sustained without anyone named Rostam. The chronicle's heroic age required exceptional individuals. The world after it runs on competence. Homay's quiet decades are the demonstration.",
+      "explanation_fa": "یکی از سؤال‌های ضمنیِ شاهنامه بعد از مرگِ رستم این است: آیا دنیا بدونِ قهرمانانش می‌تواند کار کند؟ سلطنتِ هما با دهه‌ها شواهد به این پاسخ می‌دهد. اداره، عدالت، مرزها — دستگاهِ عادیِ حکومت — می‌توانند بدونِ کسی به نامِ رستم پایدار باشند. عصرِ قهرمانیِ شاهنامه نیازِ افرادِ استثنایی داشت. دنیای بعد از آن با کفایت اداره می‌شود. دهه‌های آرامِ هما نمونه است.",
+      "explanation_tg": "Яке аз масъалаҳои зимнии Шоҳнома пас аз марги Рустам ин аст: оё ҷаҳон бидуни қаҳрамононаш метавонад кор кунад? Ҳукмронии Ҳамо бо даҳ‌солаҳои далел ба ин посух медиҳад. Идора, адолат, марзҳо — дастгоҳи муқаррарии ҳукмронӣ — метавонанд бидуни касе ба номи Рустам поёидор бошанд. Асри қаҳрамонии Шоҳнома ба афроди истисноӣ ниёз дошт. Ҷаҳони пас аз он бо кифоят идора мешавад.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

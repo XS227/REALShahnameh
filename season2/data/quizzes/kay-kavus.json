@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "kk-e1",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Why does Kay Kavus invade Mazandaran despite the warnings of Zal, Sam, and Rostam?",
+      "question_fa": "چرا کی‌کاووس علیرغمِ هشدارهای زال، سام، و رستم به مازندران حمله می‌کند؟",
+      "question_tg": "Чаро Кай Кову бо вуҷуди огоҳиҳои Зол, Сом ва Рустам ба Мозандарон ҳамла мекунад?",
+      "answers": [
+        "He receives a military report that Mazandaran has no effective army",
+        "A demon disguised as a musician sings about Mazandaran's riches, and Kay Kavus mistakes the description for reliable intelligence",
+        "He is ordered by the prophecy of the court astrologers to conquer Mazandaran",
+        "Afrasiab threatens to take Mazandaran himself if Iran does not act first"
+      ],
+      "answers_fa": [
+        "گزارشِ نظامی دریافت می‌کند که مازندران ارتشِ مؤثری ندارد",
+        "دیوی به شکلِ موسیقیدان از ثروت‌های مازندران می‌خواند و کی‌کاووس توصیف را به عنوانِ اطلاعاتِ موثق اشتباه می‌گیرد",
+        "پیشگوییِ منجمانِ دربار دستور می‌دهد مازندران را فتح کند",
+        "افراسیاب تهدید می‌کند اگر ایران اول اقدام نکند خودش مازندران را می‌گیرد"
+      ],
+      "answers_tg": [
+        "Гузоришти ҳарбӣ мегирад, ки Мозандарон артиши муассире надорад",
+        "Деве ба шакли созанда аз сарватҳои Мозандарон мехонад ва Кай Кову тавсифро маълумоти боэтимод мешуморад",
+        "Пешгӯии мунаҷҷимони дарбор фармон медиҳад Мозандаронро фатҳ кунад",
+        "Афросиёб таҳдид мекунад, ки агар Эрон аввал амал накунад, худаш Мозандаронро мегирад"
+      ],
+      "correct_answer": 1,
+      "explanation": "A demon comes to court disguised as a musician and sings a description of Mazandaran that sounds like reconnaissance: riches, no king to resist Iran, forests, iron. The demon sings it as a place a great king would claim if only he had the ambition. Kay Kavus hears the warnings from Zal, Sam, and Rostam — all of whom understand the demon's song is a trap — and goes anyway. The warnings make him more eager, not less, because he confuses caution with cowardice. The demon resumes its true shape and rides at the head of his army.",
+      "explanation_fa": "دیوی به شکلِ موسیقیدان به دربار می‌آید و مازندران را توصیف می‌کند: ثروت‌ها، بدونِ شاه، جنگل‌ها، آهن. زال، سام، و رستم هشدار می‌دهند — همه می‌فهمند تله است. کی‌کاووس به هر حال می‌رود. هشدارها او را مشتاق‌تر می‌کنند چون احتیاط را با ترس اشتباه می‌گیرد.",
+      "explanation_tg": "Деве ба шакли созанда ба дарбор меояд ва Мозандаронро тавсиф мекунад. Зол, Сом ва Рустам огоҳӣ медиҳанд. Кай Кову бо ин ҳол меравад. Огоҳиҳо ӯро мушоқтар мекунанд, на камтар, зеро эҳтиётро бо тарс иштибоҳ мегирад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "kk-e2",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "How does the White Demon punish the Iranian army in Mazandaran — and why is this punishment more precise than simply killing them?",
+      "question_fa": "دیوِ سپید چگونه سپاهِ ایران را در مازندران تنبیه می‌کند — و چرا این تنبیه از کشتنِ ساده دقیق‌تر است؟",
+      "question_tg": "Деви Сафед чӣ тавр сипоҳи Эронро дар Мозандарон танбеҳ мекунад?",
+      "answers": [
+        "He poisons the army's food supply and leaves them too weak to march",
+        "He captures Kay Kavus and holds him as a hostage against Iran",
+        "He blinds every soldier and Kay Kavus — a living blind army in hostile territory is a greater punishment than death",
+        "He scatters the army across Mazandaran without food or weapons"
+      ],
+      "answers_fa": [
+        "آذوقه‌ی سپاه را مسموم می‌کند و آن‌ها را برای راهپیمایی خیلی ضعیف می‌کند",
+        "کی‌کاووس را می‌گیرد و به عنوانِ گروگان علیهِ ایران نگه می‌دارد",
+        "هر سربازی و کی‌کاووس را کور می‌کند — سپاهِ کورِ زنده در سرزمینِ دشمن مجازاتِ بزرگ‌تری از مرگ است",
+        "سپاه را در سرتاسرِ مازندران بدونِ غذا یا سلاح پراکنده می‌کند"
+      ],
+      "answers_tg": [
+        "Озуқаи сипоҳро заҳролуд мекунад",
+        "Кай Ковусро мегирад ва ҳамчун гаравгон нигоҳ медорад",
+        "Ҳар сарбозро ва Кай Ковусро кӯр мекунад — сипоҳи кӯри зинда дар сарзамини душман ҷазои бузургтаре аз марг аст",
+        "Сипоҳро дар саросари Мозандарон бе хӯрок пароканда мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Div-e Sepid blinds rather than kills. A dead army ends the story; a blind army in hostile territory continues it at maximum cost — they must be maintained, fed, and suffered by the king who led them there. Kay Kavus must experience, at the level of the body, what it means to be unable to see what is coming: which is exactly what his kingship has been, metaphorically, all along. The body literalizes the soul's condition. Rostam's Seven Labours exist to undo this — with Div-e Sepid's own liver-blood as the cure.",
+      "explanation_fa": "دیوِ سپید به جای کشتن کور می‌کند. سپاهِ مُرده داستان را تمام می‌کند؛ سپاهِ کور در سرزمینِ دشمن آن را با حداکثرِ هزینه ادامه می‌دهد. کی‌کاووس باید در سطحِ جسم تجربه کند نتوانستنِ دیدنِ آنچه می‌آید — که دقیقاً همان چیزی است که سلطنتش استعارتاً همیشه بوده.",
+      "explanation_tg": "Деви Сафед ба ҷои куштан кӯр мекунад. Сипоҳи мурда достонро тамом мекунад; сипоҳи кӯр дар сарзамини душман онро бо ҳадди аксари арзиш идома медиҳад. Кай Кову бояд дар сатҳи ҷисм таҷриба кунад натавонистани дидани он чи меояд.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "kk-m1",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh shows Kay Kavus making the same kind of mistake across decades — Mazandaran, the sky-machine, the Sohrab medicine, Siavash. What does this pattern reveal about how the chronicle understands the nature of his flaw?",
+      "question_fa": "شاهنامه نشان می‌دهد کی‌کاووس در دهه‌ها همان نوع اشتباه می‌کند — مازندران، ماشینِ آسمانی، داروی سهراب، سیاوش. این الگو چه چیزی درباره‌ی درکِ شاهنامه از ماهیتِ نقصِ او آشکار می‌کند؟",
+      "question_tg": "Шоҳнома нишон медиҳад, ки Кай Кову дар тӯли даҳсолаҳо ҳамон навъи хаторо мекунад. Ин намуна чӣ мегӯяд?",
+      "answers": [
+        "Kay Kavus has a curse on him — the Shahnameh implies his mistakes are supernaturally caused, not truly his fault",
+        "His flaw is not cowardice or cruelty but an inability to distinguish ambition from judgment — courage applied without wisdom becomes a series of catastrophes others must correct",
+        "The pattern shows Kay Kavus is learning slowly — each mistake is less severe than the last",
+        "His mistakes are caused by bad advisors, not by his own character — the Shahnameh indicts his court, not the king"
+      ],
+      "answers_fa": [
+        "کی‌کاووس نفرین دارد — شاهنامه نشان می‌دهد اشتباهاتش به‌طورِ ماورایی ایجاد می‌شوند، واقعاً تقصیرِ او نیست",
+        "نقصش نه بزدلی است نه ظلم بلکه ناتوانی در تشخیصِ جاه‌طلبی از قضاوت — شجاعتِ بدون خرد به سری از فاجعه‌ها تبدیل می‌شود که دیگران باید تصحیح کنند",
+        "الگو نشان می‌دهد کی‌کاووس آهسته یاد می‌گیرد — هر اشتباه کمتر از قبلی شدید است",
+        "اشتباهاتش توسطِ مشاورانِ بد ایجاد می‌شوند، نه شخصیتِ خودش — شاهنامه درباریانش را متهم می‌کند نه شاه را"
+      ],
+      "answers_tg": [
+        "Кай Кову нафрин дорад — Шоҳнома нишон медиҳад, ки хатоҳояш аз сабабҳои мофавқуттабиӣ аст",
+        "Нуқсонаш нa бузхорӣ аст ва на золимӣ, балки нотавонии фарқ кардани ҷоҳталабӣ аз доварӣ — далерии бе ақл ба силсилаи фалокатҳо мубаддал мешавад",
+        "Намуна нишон медиҳад Кай Кову оҳиста ёд мегирад",
+        "Хатоҳояш аз машваратчиёни бад аст, на аз шахсияти худаш"
+      ],
+      "correct_answer": 1,
+      "explanation": "The pattern is the key. Kay Kavus is not cowardly — he leads the Mazandaran invasion personally and rides the sky-machine himself. He is not cruel — he does not harm people for pleasure. His flaw is structural: he mistakes boldness for wisdom. Each of his catastrophic decisions comes from genuine ambition applied without judgment: Mazandaran was real hubris, the sky-machine was real ambition, refusing Sohrab's medicine was a real political calculation. None of these are the decisions of a fool or a villain. They are the decisions of a king who cannot distinguish between what he can do and what he should do.",
+      "explanation_fa": "الگو کلید است. کی‌کاووس بزدل نیست — شخصاً رهبری می‌کند. ظالم نیست. نقصش ساختاری است: جسارت را با خرد اشتباه می‌گیرد. هر تصمیمِ فاجعه‌بارش از جاه‌طلبیِ واقعیِ بدون قضاوت می‌آید. اینها تصمیماتِ احمق یا شرور نیستند. تصمیماتِ شاهی هستند که نمی‌تواند بینِ آنچه می‌تواند بکند و آنچه باید بکند تفاوت قائل شود.",
+      "explanation_tg": "Намуна калид аст. Кай Кову бузхор нест — шахсан роҳбарӣ мекунад. Золим нест. Нуқсонаш сохторӣ аст: далериро бо ақл иштибоҳ мегирад. Ҳар қарори фалокатбораш аз ҷоҳталабии воқеии бе доварӣ меояд.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "kk-h1",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Rostam serves Kay Kavus across decades without refusing a single direct order, even kneeling to beg for Sohrab's medicine. The Shahnameh presents this not as blind loyalty but as structural fact. What larger question does this structure force the chronicle to ask?",
+      "question_fa": "رستم دهه‌ها بدون رد کردنِ یک دستورِ مستقیم خدمتِ کی‌کاووس می‌کند، حتی زانو می‌زند برای داروی سهراب. شاهنامه این را نه به عنوانِ وفاداریِ کور بلکه به عنوانِ واقعیتِ ساختاری ارائه می‌دهد. این ساختار چه سؤالِ بزرگ‌تری را به شاهنامه وادار می‌کند بپرسد؟",
+      "question_tg": "Рустам даҳсолаҳо бе рад кардани як дастури мустақим хидмат мекунад. Шоҳнома ин савол мекунад:",
+      "answers": [
+        "What kind of world requires a Rostam to exist at all — and whether a world structured so that its greatest servant cannot refuse its least deserving master is a just world",
+        "Whether champions should have the right to veto reckless royal decisions when lives are at stake",
+        "Whether Rostam's legendary status would survive if he ever refused a royal command",
+        "What the Seven Labours reveal about Rostam's individual character apart from his role as champion"
+      ],
+      "answers_fa": [
+        "چه نوع دنیایی یک رستم را اصلاً لازم دارد — و آیا دنیایی که با این ساختار است که بزرگ‌ترین خدمتگزارش نمی‌تواند کمترین‌شایسته‌ترین اربابش را رد کند دنیای عادلانه‌ای است",
+        "آیا قهرمانان باید حقِ وتوی تصمیماتِ بی‌پروایِ شاهانه را داشته باشند وقتی جان‌ها در خطر است",
+        "آیا شهرتِ افسانه‌ایِ رستم اگر یک دستورِ شاهانه را رد کند باقی می‌ماند",
+        "هفت‌خان چه چیزی درباره‌ی شخصیتِ فردیِ رستم — جدا از نقشش به عنوانِ قهرمان — آشکار می‌کند"
+      ],
+      "answers_tg": [
+        "Кадом навъ дунёе Рустамро умуман лозим дорад — ва оё дунёе бо ин сохтор, ки бузургтарин хидматгузораш натавонад шоистатаринашро рад кунад, дунёи одилона аст",
+        "Оё қаҳрамонон бояд ҳуқуқи вето дошта бошанд",
+        "Оё шуҳрати афсонавии Рустам агар як дастури шоҳонаро рад кунад боқӣ мемонад",
+        "Ҳафтхон дар бораи шахсияти фардии Рустам чӣ ошкор мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh never asks whether Rostam should have refused Kay Kavus. That is the wrong question — in the world the chronicle inhabits, the champion serves the king, full stop. The question the chronicle is actually asking — through accumulation, through patience, through the exact record of what each of Kay Kavus's mistakes costs — is: what kind of world demands this arrangement? A world that requires Rostam to kneel before Kay Kavus, beg for Sohrab's medicine, and be refused — and then continue to serve without complaint — is making a claim about the relationship between power and worth. The Shahnameh records the claim. It does not endorse it. It shows you the cost, death by death, and leaves the judgment to you.",
+      "explanation_fa": "شاهنامه هرگز نمی‌پرسد آیا رستم باید کی‌کاووس را رد می‌کرد. این سؤالِ اشتباه است — در دنیایی که شاهنامه در آن است، قهرمان خدمتِ شاه می‌کند. سؤالی که شاهنامه واقعاً می‌پرسد — از طریقِ انباشت، صبر، ثبتِ دقیقِ هزینه‌ی هر اشتباهِ کی‌کاووس — این است: چه نوع دنیایی این ترتیب را می‌خواهد؟ شاهنامه ادعا را ثبت می‌کند. تصویب نمی‌کند. هزینه را نشان می‌دهد، مرگ به مرگ، و قضاوت را به تو واگذار می‌کند.",
+      "explanation_tg": "Шоҳнома ҳеҷ гоҳ намепурсад, ки оё Рустам бояд Кай Ковусро рад мекард. Ин саволи нодуруст аст. Саволе, ки Шоҳнома воқеан мепурсад ин аст: кадом навъ дунёе ин тартибро мехоҳад? Шоҳнома иддаоро сабт мекунад. Тасдиқ намекунад. Арзишро нишон медиҳад, марг ба марг, ва доварӣ ба ту вогузор мекунад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "kk-e3",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How did the White Demon punish Kay Kavus's army in Mazandaran?",
+      "question_fa": "دیوِ سپید چگونه لشکرِ کی‌کاووس را در مازندران مجازات کرد؟",
+      "question_tg": "Деви Сапед чӣ тавр лашکари Кай Ковусро дар Мозандарон ҷазо дод?",
+      "answers": [
+        "He killed every soldier in a single night",
+        "He turned the army to stone",
+        "He did not kill them; he blinded them all",
+        "He imprisoned them in an underground fortress"
+      ],
+      "answers_fa": [
+        "همه‌ی سربازان را در یک شب کشت",
+        "لشکر را به سنگ تبدیل کرد",
+        "آن‌ها را نکشت؛ همه را کور کرد",
+        "آن‌ها را در قلعه‌ای زیرزمینی زندانی کرد"
+      ],
+      "answers_tg": [
+        "Ҳама сарбозонро дар як шаб кушт",
+        "Лашкарро ба санг табдил кард",
+        "Онҳоро накушт; ҳамаро кӯр кард",
+        "Онҳоро дар қалъаи зеризаминӣ зиндонӣ кард"
+      ],
+      "correct_answer": 2,
+      "explanation": "The White Demon led a night counterattack and blinded the entire army. By dawn Kay Kavus and every soldier sat sightless in a foreign land.",
+      "explanation_fa": "دیوِ سپید یک حمله‌ی شبانه را رهبری کرد و کلِّ لشکر را کور کرد. تا سپیده‌دم کی‌کاووس و هر سربازی کورکورانه در سرزمینی بیگانه نشسته بود.",
+      "explanation_tg": "Деви Сапед як ҳамлаи шабона роҳбарӣ кард ва тамоми лашкарро кӯр кард. То сапедадам Кай Ковус ва ҳар сарбозе кӯркорона дар сарзамини бегона нишаста буд.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "kk-m2",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What disguise did the demon use when he first came to Kay Kavus's court?",
+      "question_fa": "دیو هنگامِ اولین آمدن به دربارِ کی‌کاووس چه لباسِ مبدلی به تن داشت؟",
+      "question_tg": "Дев ҳангоми аввалин омадан ба дарбори Кай Ковус чӣ либоси мубаддале пӯшида буд?",
+      "answers": [
+        "A Turanian ambassador",
+        "A traveling merchant",
+        "A musician with a beautiful voice",
+        "A wandering scholar from Khorasan"
+      ],
+      "answers_fa": [
+        "سفیری از توران",
+        "بازرگانِ در راه",
+        "موسیقیدانی با صدایی زیبا",
+        "دانشمندِ درویشی از خراسان"
+      ],
+      "answers_tg": [
+        "Сафире аз Турон",
+        "Тоҷири дар роҳ",
+        "Созандае бо овози зебо",
+        "Донишманди дарвеше аз Хуросон"
+      ],
+      "correct_answer": 2,
+      "explanation": "A demon came to court disguised as a musician. He was gifted, his voice was beautiful, and he sang about Mazandaran.",
+      "explanation_fa": "دیوی به شکلِ موسیقیدان به دربار آمد. استعداد داشت، صدایش زیبا بود، و از مازندران خواند.",
+      "explanation_tg": "Деве ба шакли созанда ба дарбор омад. Истеъдод дошт, овозаш зебо буд, ва аз Мозандарон хонд.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      }
+    },
+    {
+      "id": "kk-m3",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Kay Kavus built a flying throne. What was the mechanism that made it rise?",
+      "question_fa": "کی‌کاووس تختِ پروازی ساخت. مکانیزمی که آن را بالا می‌برد چه بود؟",
+      "question_tg": "Кай Ковус тахти парвозӣ сохт. Механизме ки онро боло мебурд чӣ буд?",
+      "answers": [
+        "A demon carried it aloft on four chains",
+        "Trained eagles at each corner flying toward meat held just out of reach, lifting the throne",
+        "A Simorgh feather gave him temporary flight",
+        "Sacred wind from an Avestan prayer"
+      ],
+      "answers_fa": [
+        "دیوی آن را با چهار زنجیر به هوا برد",
+        "عقاب‌های آموزش‌دیده در هر گوشه که به سوی گوشتی که کمی بیرون از دسترسشان نگه داشته شده می‌پریدند و تخت را بالا می‌بردند",
+        "پرِ سیمرغ به او پرواز موقت داد",
+        "بادِ مقدسی از دعای اوستا"
+      ],
+      "answers_tg": [
+        "Деве онро бо чаҳор занҷир ба ҳаво бурд",
+        "Уқобони омӯзишдида дар ҳар кунҷ ки ба сӯи гӯшти каме беруни дастрасашон нигоҳ дошташуда мепариданд ва тахтро боло мебурданд",
+        "Пари Симурғ ба ӯ парвози муваққат дод",
+        "Боди муқаддас аз дуои Авасто"
+      ],
+      "correct_answer": 1,
+      "explanation": "A throne on a frame, a trained eagle at each corner, meat held above each eagle on a rod just out of reach. The eagles flew upward; the throne rose.",
+      "explanation_fa": "تختی بر چارچوب، عقابِ آموزش‌دیده در هر گوشه، گوشتی بر میله‌ای کمی بیرون از دسترسِ هر عقاب. عقاب‌ها به طرفِ بالا پریدند؛ تخت بالا رفت.",
+      "explanation_tg": "Тахте бар чаҳорчӯб, уқоби омӯзишдида дар ҳар кунҷ, гӯште бар чӯбакча каме беруни дастраси ҳар уқоб. Уқобон ба боло париданд; тахт боло рафт.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "kk-m4",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Three advisors warned Kay Kavus not to invade Mazandaran. Who were they?",
+      "question_fa": "سه مشاور به کی‌کاووس هشدار دادند که به مازندران حمله نکند. آن‌ها چه کسانی بودند؟",
+      "question_tg": "Се маслиҳатгузор ба Кай Ковус ҳушдор доданд ки ба Мозандарон ҳамла накунад. Онҳо кӣ буданд?",
+      "answers": [
+        "Gudarz, Tus, and Giv",
+        "Zal, Sam, and Rostam",
+        "Piran Wiseh, Fariborz, and Giv",
+        "Zal, Manuchehr, and the court magi"
+      ],
+      "answers_fa": [
+        "گودرز، طوس و گیو",
+        "زال، سام و رستم",
+        "پیران ویسه، فریبرز و گیو",
+        "زال، منوچهر و موبدانِ دربار"
+      ],
+      "answers_tg": [
+        "Гударз, Тус ва Гев",
+        "Зол, Сом ва Рустам",
+        "Пирони Виса, Фарибурз ва Гев",
+        "Зол, Манӯчеҳр ва муведони дарбор"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Zal, Sam, and Rostam all said the same thing: do not go. The warnings made him more eager.'",
+      "explanation_fa": "«زال، سام و رستم همه یک چیز گفتند: نرو. هشدارها او را مشتاق‌تر کردند.»",
+      "explanation_tg": "«Зол, Сом ва Рустам ҳама як чиз гуфтанд: нарав. Ҳушдорҳо ӯро ҳавасмандтар карданд.»",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "kk-m5",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "The chapter says the chapter's closing question is about what it costs to serve Kay Kavus. What specifically does this question ask?",
+      "question_fa": "فصل می‌گوید سؤالِ پایانیِ فصل درباره‌ی هزینه‌ی خدمت به کی‌کاووس است. این سؤال دقیقاً چه می‌پرسد؟",
+      "question_tg": "Фасл мегӯяд савол пайанини фасл дар бораи ҳазинаи хидмати Кай Ковус аст. Ин савол дақиқан чӣ мепурсад?",
+      "answers": [
+        "What makes a king great in the Shahnameh?",
+        "What does it cost to serve a king who confuses boldness with wisdom?",
+        "How should a warrior choose which king to serve?",
+        "Can a corrupt king still produce good outcomes?"
+      ],
+      "answers_fa": [
+        "چه چیزی یک شاه را در شاهنامه بزرگ می‌کند؟",
+        "هزینه‌ی خدمت به شاهی که شجاعت را با خرد اشتباه می‌گیرد چیست؟",
+        "یک جنگجو چگونه باید انتخاب کند که به کدام شاه خدمت کند؟",
+        "آیا یک شاهِ فاسد هنوز می‌تواند نتایجِ خوبی به بار آورد؟"
+      ],
+      "answers_tg": [
+        "Чӣ чиз як подшоҳро дар Шоҳнома бузург мекунад?",
+        "Ҳазинаи хидмати подшоҳе ки ҷасурӣро бо хирад иштибоҳ мегирад чист?",
+        "Як ҷангӣ чӣ тавр бояд интихоб кунад ки ба кадом подшоҳ хидмат кунад?",
+        "Оё подшоҳи фосид ҳанӯз метавонад натиҷаҳои хуб ба вуҷуд оварад?"
+      ],
+      "correct_answer": 1,
+      "explanation": "'The Shahnameh records all of this with patient precision and asks, chapter after chapter: what does it cost to serve a king who confuses boldness with wisdom?'",
+      "explanation_fa": "«شاهنامه همه‌ی اینها را با دقتِ صبورانه ثبت می‌کند و فصل پس از فصل می‌پرسد: هزینه‌ی خدمت به شاهی که شجاعت را با خرد اشتباه می‌گیرد چیست؟»",
+      "explanation_tg": "«Шоҳнома ҳамаи инро бо дақиқати сабурона сабт мекунад ва фасл пас аз фасл мепурсад: ҳазинаи хидмати подшоҳе ки ҷасурӣро бо хирад иштибоҳ мегирад чист?»",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "kk-h2",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The demon's song was designed to exploit Kay Kavus's specific weakness. What was it?",
+      "question_fa": "آوازِ دیو برای بهره‌کشی از ضعفِ خاصِ کی‌کاووس طراحی شده بود. آن ضعف چه بود؟",
+      "question_tg": "Суруди дев барои истисмор аз заъфи хоссаи Кай Ковус тарҳрезӣ шуда буд. Он заъф чӣ буд?",
+      "answers": [
+        "His greed for gold and tribute",
+        "His ambition — the song described Mazandaran as what a great king would claim if only he had the ambition",
+        "His fear of Rostam's growing power",
+        "His grief over Siavash's departure"
+      ],
+      "answers_fa": [
+        "آزِ او برای طلا و خراج",
+        "جاه‌طلبی‌اش — آواز مازندران را به عنوانِ چیزی توصیف کرد که یک شاهِ بزرگ ادعا می‌کرد اگر فقط جاه‌طلبی داشت",
+        "ترسش از قدرتِ روزافزونِ رستم",
+        "غمش برای رفتنِ سیاوش"
+      ],
+      "answers_tg": [
+        "Тамаъаш барои тилло ва хироҷ",
+        "Ҳирсаш — сурӯд Мозандаронро ҳамчун чизе тавсиф кард ки подшоҳи бузург иддаъо мекард агар танҳо ҳирс медошт",
+        "Тарсаш аз қудрати ваъдакардашудаи Рустам",
+        "Ғамаш барои рафтани Сиёвуш"
+      ],
+      "correct_answer": 1,
+      "explanation": "The song described Mazandaran as a place 'a great king would claim if only he had the ambition.' This targeted Kay Kavus's need to be seen as great.",
+      "explanation_fa": "آواز مازندران را به عنوانِ جایی توصیف کرد که «یک شاهِ بزرگ اگر فقط جاه‌طلبی داشت ادعا می‌کرد.» این نیازِ کی‌کاووس به بزرگ دیده شدن را هدف گرفت.",
+      "explanation_tg": "Сурӯд Мозандаронро ҳамчун ҷое тавсиф кард ки «подшоҳи бузург агар танҳо ҳирс медошт иддаъо мекард.» Ин ниёзи Кай Ковусро ба бузург дида шудан ҳадаф гирифт.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "kk-h3",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "After Kay Kavus's flying throne fell and he was rescued, how did he express his gratitude to Rostam?",
+      "question_fa": "بعد از افتادنِ تختِ پروازیِ کی‌کاووس و نجاتش، چگونه سپاسگزاری‌اش را به رستم ابراز کرد؟",
+      "question_tg": "Пас аз афтодани тахти парвозии Кай Ковус ва наҷоташ, чӣ тавр сипосгузориашро ба Рустам баён кард?",
+      "answers": [
+        "He gave Rostam command of the entire Iranian army",
+        "He thanked Rostam in the language kings use — which does not include acknowledging the mistake",
+        "He wept and publicly admitted his error",
+        "He offered Rostam a permanent kingdom"
+      ],
+      "answers_fa": [
+        "فرمانده‌ی تمامِ لشکرِ ایران را به رستم داد",
+        "به شیوه‌ای که شاهان برای ابراز سپاس استفاده می‌کنند از رستم تشکر کرد — که شامل اعترافِ اشتباه نمی‌شود",
+        "گریست و اشتباهش را به صورتِ عمومی اعتراف کرد",
+        "پادشاهی دائمی به رستم پیشنهاد کرد"
+      ],
+      "answers_tg": [
+        "Фармондеҳии тамоми лашкари Эронро ба Рустам дод",
+        "Бо тарзе ки подшоҳон барои баёни сипос истифода мекунанд аз Рустам ташаккур кард — ки дар бар надорад иқрори хато",
+        "Гирист ва хатояшро дар назди омма эътироф кард",
+        "Подшоҳии доимӣ ба Рустам пешниҳод кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Kay Kavus thanked Rostam in the language kings use to thank those who save them from their own mistakes, which does not include acknowledging the mistake.'",
+      "explanation_fa": "«کی‌کاووس به شیوه‌ای که شاهان برای تشکر از کسانی که آن‌ها را از اشتباهاتشان نجات می‌دهند از رستم تشکر کرد، که شامل اعترافِ اشتباه نمی‌شود.»",
+      "explanation_tg": "«Кай Ковус бо тарзе ки подшоҳон барои сипосгузорӣ аз касоне ки онҳоро аз хатоҳояшон наҷот медиҳанд аз Рустам ташаккур кард, ки иқрори хато дар бар надорад.»",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "kk-h4",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The chapter calls blindness in enemy territory 'a more precise punishment than death.' Why?",
+      "question_fa": "فصل کوری در سرزمینِ دشمن را «مجازاتِ دقیق‌تری از مرگ» می‌نامد. چرا؟",
+      "question_tg": "Фасл кӯрӣ дар сарзамини душманро «ҷазои дақиқтар аз марг» меномад. Чаро?",
+      "answers": [
+        "Blindness was more feared than death in Persian culture",
+        "The army was kept alive in maximal helplessness — aware, dependent, unable to lead, unable to escape, requiring one man for rescue",
+        "It allowed Div-e Sepid to demand ransom",
+        "The demons preferred prisoners to corpses"
+      ],
+      "answers_fa": [
+        "کوری در فرهنگِ ایرانی از مرگ ترسناک‌تر بود",
+        "لشکر در حداکثرِ درماندگی زنده نگه داشته شد — آگاه، وابسته، ناتوان از رهبری، ناتوان از فرار، نیازمندِ یک مرد برای نجات",
+        "به دیوِ سپید اجازه داد باج طلب کند",
+        "دیوان اسیر را به جسد ترجیح می‌دادند"
+      ],
+      "answers_tg": [
+        "Кӯрӣ дар фарҳанги Эрон аз марг тарсноктар буд",
+        "Лашкар дар ҳадди аксари бечоравӣ зинда нигоҳ дошта шуд — огоҳ, вобаста, ноадо аз раҳбарӣ, ноадо аз гурез, ниёзманди як мард барои наҷот",
+        "Ба Деви Сапед иҷозат дод хироҷ талаб кунад",
+        "Девон асирро ба ҷасад тарҷеҳ медоданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "A destroyed army is no longer a problem. An army that is alive but helpless — aware of its situation, unable to fix it — is a more complete defeat.",
+      "explanation_fa": "لشکرِ نابودشده دیگر مشکلی نیست. لشکری که زنده است اما درمانده — از وضعیتش آگاه، قادر به حل آن نیست — شکستِ کامل‌تری است.",
+      "explanation_tg": "Лашкари нобудшуда дигар мушкиле нест. Лашкаре ки зинда аст аммо бечора — аз вазъияташ огоҳ, ноадо аз ҳалашон — шикасти комилтарест.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "kk-h5",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "What effect did all warnings have on Kay Kavus's decision to invade Mazandaran?",
+      "question_fa": "تمامِ هشدارها چه تأثیری بر تصمیمِ کی‌کاووس برای تهاجم به مازندران داشتند؟",
+      "question_tg": "Тамоми ҳушдорҳо чӣ таъсире бар қарори Кай Ковус барои ҳамла ба Мозандарон доштанд?",
+      "answers": [
+        "They delayed his decision by one season",
+        "They temporarily persuaded him but the demon re-convinced him",
+        "They made him more eager to go",
+        "They had no effect — he had already decided before they warned him"
+      ],
+      "answers_fa": [
+        "تصمیمش را یک فصل به تأخیر انداختند",
+        "موقتاً او را متقاعد کردند اما دیو دوباره او را قانع کرد",
+        "او را مشتاق‌تر کردند",
+        "هیچ تأثیری نداشتند — قبل از هشدار قبلاً تصمیم گرفته بود"
+      ],
+      "answers_tg": [
+        "Қарорашро як фасл ба таъхир андохтанд",
+        "Муваqqат ӯро мутақоид карданд аммо дев дубора ӯро қоноъ кард",
+        "Ӯро ҳавасмандтар карданд",
+        "Ҳеҷ таъсире надоштанд — пеш аз ҳушдор аллакай тасмим гирифта буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "'The warnings made him more eager.' This is the pattern of Kay Kavus — opposition increases his determination.",
+      "explanation_fa": "«هشدارها او را مشتاق‌تر کردند.» این الگوی کی‌کاووس است — مخالفت قدرتِ اراده‌اش را افزایش می‌دهد.",
+      "explanation_tg": "«Ҳушдорҳо ӯро ҳавасмандтар карданд.» Ин намунаи Кай Ковус аст — мухолифат қудрати иродаашро меафзояд.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "kk-h6",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The medicine that could have saved Sohrab was refused for a specific political calculation. What was it?",
+      "question_fa": "داروی نجات‌دهنده‌ی سهراب به دلیلِ محاسبه‌ی سیاسیِ مشخصی رد شد. آن محاسبه چه بود؟",
+      "question_tg": "Доруи наҷотдиҳандаи Суҳроб ба далели ҳисоби сиёсии мушаххасе рад шуд. Он ҳисоб чӣ буд?",
+      "answers": [
+        "Sohrab's Turanian birth made him a security risk",
+        "A warrior as powerful as Sohrab, healed, would unbalance the kingdom",
+        "The medicine was needed for another wounded general",
+        "Kay Kavus feared Sohrab would replace Rostam"
+      ],
+      "answers_fa": [
+        "تولدِ تورانیِ سهراب او را خطرِ امنیتی می‌کرد",
+        "جنگجویی به قدرتمندیِ سهراب، شفا یافته، پادشاهی را از تعادل خارج می‌کرد",
+        "دارو برای سردارِ زخمیِ دیگری مورد نیاز بود",
+        "کی‌کاووس می‌ترسید سهراب جای رستم را بگیرد"
+      ],
+      "answers_tg": [
+        "Таваллуди Туронии Суҳроб ӯро хатари амниятӣ мекард",
+        "Ҷангии ба қудрати Суҳроб, шифоёфта, подшоҳиро аз мувозинат берун мекард",
+        "Даво барои сардори захмии дигаре лозим буд",
+        "Кай Ковус метарсид Суҳроб ҷойи Рустамро гирад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Kay Kavus performed his calculation: a warrior as powerful as Sohrab, healed, would unbalance the kingdom.' This is pure political arithmetic, not cruelty.",
+      "explanation_fa": "«کی‌کاووس حسابش را کرد: جنگجویی به قدرتمندیِ سهراب، شفا یافته، پادشاهی را از تعادل خارج می‌کرد.» این حسابِ سیاسیِ محضِ است، نه ظلم.",
+      "explanation_tg": "«Кай Ковус ҳисобашро кард: ҷангии ба қудрати Суҳроб, шифоёфта, подшоҳиро аз мувозинат берун мекард.» Ин ҳисоби сиёсии холис аст, на зулм.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "kk-h7",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Kay Kavus 'confuses boldness with wisdom.' Which episode best illustrates this confusion?",
+      "question_fa": "کی‌کاووس «شجاعت را با خرد اشتباه می‌گیرد.» کدام واقعه این اشتباه را بهتر نشان می‌دهد؟",
+      "question_tg": "Кай Ковус «ҷасурӣро бо хирад иштибоҳ мегирад.» Кадом рӯйдод ин иштибоҳро беҳтар нишон медиҳад?",
+      "answers": [
+        "Granting Siavash command of the army",
+        "Marching on Mazandaran despite unanimous warnings from his three most trusted advisors",
+        "Refusing to ratify Siavash's peace treaty",
+        "Choosing Rostam for every difficult mission"
+      ],
+      "answers_fa": [
+        "فرمانده‌ی لشکر کردنِ سیاوش",
+        "با وجودِ هشدارهای یکپارچه از سه مشاورِ معتمدش به مازندران تاختن",
+        "رد کردنِ تصویبِ معاهده‌ی صلحِ سیاوش",
+        "انتخابِ رستم برای هر مأموریتِ دشواری"
+      ],
+      "answers_tg": [
+        "Фармондеҳии Сиёвуш аз лашкар",
+        "Бо вуҷуди ҳушдорҳои якпорчаи се маслиҳатгузори боэтимодаш ба Мозандарон тохтан",
+        "Рад кардани тасвиби шартномаи сулҳи Сиёвуш",
+        "Интихоби Рустам барои ҳар мӯҳимияти душвор"
+      ],
+      "correct_answer": 1,
+      "explanation": "Three trusted advisors said the same thing. Their unanimous warnings made him more eager. This is the clearest example of mistaking boldness for wisdom.",
+      "explanation_fa": "سه مشاورِ معتمد یک چیز گفتند. هشدارهای یکپارچه‌شان او را مشتاق‌تر کرد. این روشن‌ترین مثال از اشتباه گرفتنِ شجاعت با خرد است.",
+      "explanation_tg": "Се маслиҳатгузори боэтимод як чиз гуфтанд. Ҳушдорҳои якпорчаашон ӯро ҳавасмандтар карданд. Ин равшантарин намунаи иштибоҳи ҷасурӣ бо хирад аст.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "kk-h8",
+      "chapter_slug": "kay-kavus",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The chapter records Kay Kavus's mistakes with 'patient precision' and asks questions rather than delivering verdicts. Why?",
+      "question_fa": "فصل اشتباهاتِ کی‌کاووس را با «دقتِ صبورانه» ثبت می‌کند و به جای صدور حکم سؤال می‌پرسد. چرا؟",
+      "question_tg": "Фасл хатоҳои Кай Ковусро бо «дақиқати сабурона» сабт мекунад ва ба ҷои صадур хукм савол мепурсад. Чаро?",
+      "answers": [
+        "Ferdowsi was paid by Kay Kavus's descendants",
+        "The method accumulates evidence and lets the reader draw the conclusion — which is more powerful than a verdict delivered by the narrator",
+        "Ferdowsi was uncertain whether Kay Kavus was wrong",
+        "Persian poetic tradition forbids direct criticism of kings"
+      ],
+      "answers_fa": [
+        "فردوسی توسطِ نوادگانِ کی‌کاووس پول گرفته بود",
+        "روش شواهد را جمع می‌کند و به خواننده اجازه می‌دهد نتیجه‌گیری کند — که قدرتمندتر از حکمِ صادرشده توسطِ راوی است",
+        "فردوسی مطمئن نبود که آیا کی‌کاووس اشتباه کرده",
+        "سنتِ شعرِ فارسی انتقادِ مستقیم از شاهان را ممنوع می‌کند"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ аз ҷониби наводагони Кай Ковус маблағ гирифта буд",
+        "Усул шоҳидҳоро ҷамъ мекунад ва ба хонанда иҷозат медиҳад хулоса баркашад — ки аз ҳукми صادуршуда аз ҷониби нақалкунанда қавитар аст",
+        "Фирдавсӣ мутмаин набуд ки оё Кай Ковус хато кардааст",
+        "Анъанаи шеъри Форсӣ танқиди мустақими подшоҳонро манъ мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Ferdowsi's method throughout the Shahnameh: record with precision, ask the question, leave the verdict to the reader. The question is the verdict.",
+      "explanation_fa": "روشِ فردوسی در سراسرِ شاهنامه: با دقت ثبت کن، سؤال بپرس، حکم را به خواننده بسپار. سؤال همان حکم است.",
+      "explanation_tg": "Усули Фирдавсӣ дар саросари Шоҳнома: бо дақиқат сабт кун, савол бипурс, ҳукмро ба хонанда биспор. Савол ҳамон ҳукм аст.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

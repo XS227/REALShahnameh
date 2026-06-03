@@ -1,0 +1,563 @@
+{
+  "quizzes": [
+    {
+      "id": "nozar-e1",
+      "chapter_slug": "nozar",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What is the first and most critical mistake Nozar makes as king?",
+      "question_fa": "اولین و مهم‌ترین اشتباه نوذر به‌عنوانِ شاه چیست؟",
+      "question_tg": "Аввалин ва муҳимтарин хатои Нӯзар ҳамчун шоҳ чист?",
+      "answers": [
+        "He moves the capital away from the northern border",
+        "He dismisses the old warriors who served under Sam",
+        "He stops collecting taxes from the provinces",
+        "He sends the Derafsh Kaviani away to a temple"
+      ],
+      "answers_fa": [
+        "پایتخت را از مرزِ شمالی دور می‌کند",
+        "جنگجویانِ قدیمی که زیرِ سام خدمت کردند را برکنار می‌کند",
+        "مالیات گرفتن از استان‌ها را متوقف می‌کند",
+        "درفشِ کاویانی را به معبدی می‌فرستد"
+      ],
+      "answers_tg": [
+        "Пойтахтро аз марзи шимолӣ дур мекунад",
+        "Ҷангиёни кӯҳнасолеро, ки зери Сом хидмат карданд, аз кор мебарорад",
+        "Андоз гирифтан аз вилоятҳоро қатъ мекунад",
+        "Дарафши Ковиёниро ба маъбаде мефиристад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nozar dismisses the experienced veterans — the warriors who had held Iran's borders under Sam. Experience replaced by flattery is the oldest way for a kingdom to lose its edge without noticing. Afrasiab notices.",
+      "explanation_fa": "نوذر کهنه‌کاران را برکنار می‌کند — جنگجویانی که مرزهای ایران را زیرِ سام نگه داشته بودند. جایگزینی تجربه با چاپلوسی قدیمی‌ترین راه برای از دست دادنِ برتریِ یک پادشاهی بدون اینکه بفهمد است. افراسیاب می‌فهمد.",
+      "explanation_tg": "Нӯзар кӯҳнасолонро аз кор мебарорад — ҷангиёне, ки марзҳои Эронро зери Сом нигоҳ дошта буданд. Иваз кардани таҷриба бо чопалусӣ қадимтарин роҳест барои аз даст додани бартарии як салтанат бидуни он ки бифаҳмад. Афросиёб мефаҳмад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "nozar-e2",
+      "chapter_slug": "nozar",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Who invades Iran during Nozar's reign, crossing the great river from Turan?",
+      "question_fa": "در دورانِ نوذر چه کسی از توران رودِ بزرگ را می‌گذرد و به ایران حمله می‌کند؟",
+      "question_tg": "Дар давраи Нӯзар кӣ аз Турон дарёи бузургро убур карда ба Эрон ҳамла мекунад?",
+      "answers": [
+        "Salm's descendants, seeking revenge",
+        "A new Div army from the mountains",
+        "Afrasiab, king of Turan",
+        "The Rum army from the west"
+      ],
+      "answers_fa": [
+        "نوادگانِ سلم که دنبالِ انتقام‌اند",
+        "سپاهِ دیوانِ جدید از کوه‌ها",
+        "افراسیاب، شاهِ توران",
+        "سپاهِ روم از غرب"
+      ],
+      "answers_tg": [
+        "Авлоди Салм, ки дунболи интиқом ҳастанд",
+        "Лашкари нави Девон аз кӯҳҳо",
+        "Афросиёб, шоҳи Турон",
+        "Лашкари Рум аз ғарб"
+      ],
+      "correct_answer": 2,
+      "explanation": "Afrasiab of Turan is the great antagonist of the middle Shahnameh. He crosses the Oxus — the river between Iran and Turan — and pushes deep into Iran while Nozar's weakened court cannot hold the line. His invasion begins the long Iran-Turan conflict.",
+      "explanation_fa": "افراسیابِ توران دشمنِ بزرگِ شاهنامه‌ی میانی است. از آمودریا — رودی که ایران و توران را جدا می‌کند — می‌گذرد و در حالی که دربارِ ضعیف‌شده‌ی نوذر نمی‌تواند خط را نگه دارد عمیقاً به ایران می‌رود.",
+      "explanation_tg": "Афросиёби Турон душмани бузурги Шоҳномаи миёна аст. Амударёро — дарёеро, ки Эрон ва Туронро ҷудо мекунад — убур мекунад ва ба дохили Эрон меравад.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "nozar-m1",
+      "chapter_slug": "nozar",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh treats Nozar's failure as more than personal weakness. What deeper force does his reign show has departed from him?",
+      "question_fa": "شاهنامه شکستِ نوذر را بیش از ضعفِ شخصی می‌داند. کدام نیرویِ عمیق‌تر از او رفته که دورانِ پادشاهی‌اش نشان می‌دهد؟",
+      "question_tg": "Шоҳнома шикасти Нӯзарро бештар аз заъфи шахсӣ медонад. Кадом қуввати амиқтар аз ӯ рафтааст, ки давраи шоҳии ӯ нишон медиҳад?",
+      "answers": [
+        "Military strategy — he never learned to command armies",
+        "The farr — the divine grace that makes kings worthy of Iran",
+        "The blessing of the Simorgh, withdrawn after Sam's death",
+        "The support of the Zoroastrian priests, who favored Afrasiab"
+      ],
+      "answers_fa": [
+        "راهبردِ نظامی — هرگز فرماندهیِ سپاه را یاد نگرفت",
+        "فَرّ — فضلِ الهی که شاهان را شایسته‌ی ایران می‌کند",
+        "برکتِ سیمرغ، که پس از مرگِ سام گرفته شد",
+        "حمایتِ موبدانِ زرتشتی که طرفدارِ افراسیاب بودند"
+      ],
+      "answers_tg": [
+        "Стратегияи ҳарбӣ — ӯ ҳаргез фармондеҳии лашкарро наомӯхт",
+        "Фарр — файзи илоҳие ки шоҳонро шоистаи Эрон мекунад",
+        "Баракати Симурғ, ки пас аз марги Сом гирифта шуд",
+        "Дастгирии мӯбадони Зардуштӣ, ки тарафдори Афросиёб буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The farr — divine royal grace, the luminous presence that Ferdowsi establishes as the measure of a king's worthiness — departs from Nozar. He is not simply incompetent; he is un-graced. This is the Shahnameh's distinction between a man who sits on a throne and a man who deserves one. Nozar sits. He never deserves.",
+      "explanation_fa": "فَرّ — فضلِ شاهانه‌ی الهی، حضورِ درخشانی که فردوسی به‌عنوانِ معیارِ شایستگیِ شاه برقرار می‌کند — از نوذر می‌رود. او فقط ناکارآمد نیست؛ بی‌فرّ است. این تمایزِ شاهنامه بین مردی است که بر تخت می‌نشیند و مردی که شایسته‌ی آن است. نوذر می‌نشیند. هرگز شایسته نمی‌شود.",
+      "explanation_tg": "Фарр — файзи шоҳонаи илоҳӣ, ҳузури дурахшоне, ки Фирдавсӣ онро меъёри шоистагии шоҳ мекунад — аз Нӯзар меравад. Ӯ танҳо нолоиқ нест; бефарр аст. Ин тафовути Шоҳнома миёни мардест ки бар тахт менишинад ва мардест ки шоистаи он аст.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "noz-e3",
+      "chapter_slug": "nozar",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What does Nozar do when he inherits the throne that weakens Iran's border defenses?",
+      "question_fa": "نوذر وقتی تخت را به ارث می‌برد چه کاری می‌کند که دفاع‌های مرزیِ ایران را ضعیف می‌کند؟",
+      "question_tg": "Нӯзар вақте тахтро мерос мегирад чӣ мекунад ки мудофиаи сарҳади Эронро заиф мекунад?",
+      "answers": [
+        "He cuts military spending to fund his court",
+        "He dismisses the experienced champions who knew the borders and replaces them with flatterers",
+        "He opens trade routes that Afrasiab can use",
+        "He moves the capital away from the northern border"
+      ],
+      "answers_fa": [
+        "بودجه‌ی نظامی را برای تأمینِ دربارش کاهش می‌دهد",
+        "قهرمانانِ باتجربه‌ای را که مرزها را می‌شناختند کنار می‌گذارد و با چاپلوسان جایگزین می‌کند",
+        "مسیرهای تجاریِ قابلِ استفاده توسطِ افراسیاب را می‌گشاید",
+        "پایتخت را از مرزِ شمالی دور می‌کند"
+      ],
+      "answers_tg": [
+        "Буҷаи ҳарбиро кам мекунад",
+        "Қаҳрамонони ботаҷрибаро кенор мегузорад ва бо мулоҳизакорон иваз мекунад",
+        "Роҳҳои тиҷоратӣ мекушояд",
+        "Пойтахтро аз марзи шимолӣ дур мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nozar dismisses the old champions — men like those who served under Sam and knew the northern borders through decades of service. He fills the court with flattery instead. The Shahnameh diagnoses this precisely: a king without farr doesn't know he is diminishing until the frontier is thin and the enemy has already crossed.",
+      "explanation_fa": "نوذر قهرمانانِ کهنه را کنار می‌گذارد. دربار را با چاپلوسی پر می‌کند. شاهنامه دقیقاً تشخیص می‌دهد: شاهِ بدونِ فرّ نمی‌داند دارد کوچک می‌شود.",
+      "explanation_tg": "Нӯзар қаҳрамонони куҳнаро кенор мегузорад. Дарборро бо чопалӣ пур мекунад. Шоҳнома дақиқ ташхис медиҳад.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "noz-m2",
+      "chapter_slug": "nozar",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "The Shahnameh says Nozar 'did not inherit the virtue that held the throne.' What specific contrast does it draw between Nozar and Manuchehr?",
+      "question_fa": "شاهنامه می‌گوید نوذر «فضیلتی که تخت را نگه می‌داشت به ارث نبرد.» چه تقابلِ خاصی بینِ نوذر و منوچهر نشان می‌دهد؟",
+      "question_tg": "Шоҳнома мегӯяд Нӯзар «фазилате ки тахтро нигоҳ медошт ба мерос нагирифт.» Ин тазод чист?",
+      "answers": [
+        "Manuchehr was a warrior; Nozar was a scholar",
+        "Manuchehr knew the border generals by name and maintained them; Nozar replaced experience with flattery and the court grew soft while the frontier grew thin",
+        "Manuchehr was loved by the people; Nozar was feared",
+        "Manuchehr conquered Turan; Nozar made peace with it"
+      ],
+      "answers_fa": [
+        "منوچهر جنگجو بود؛ نوذر محقق بود",
+        "منوچهر سردارانِ مرزی را نام به نام می‌شناخت؛ نوذر تجربه را با چاپلوسی جایگزین کرد و دربار نرم شد در حالی که مرزها نازک شدند",
+        "منوچهر توسطِ مردم دوست داشته می‌شد؛ نوذر ترسانده می‌شد",
+        "منوچهر توران را فتح کرد؛ نوذر با آن صلح کرد"
+      ],
+      "answers_tg": [
+        "Манӯчеҳр ҷангӣ буд; Нӯзар муҳаққиқ",
+        "Манӯчеҳр саркардагони марзиро ном ба ном мешинохт؛ Нӯзар таҷрибаро бо чопалӣ иваз кард",
+        "Манӯчеҳр маҳбуб буд; Нӯзар метарсонд",
+        "Манӯчеҳр Туронро фатҳ кард; Нӯзар сулҳ кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "Manuchehr kept the champions who knew the borders — Sam's warriors who understood the cold distances of the north. Nozar dismissed them. The contrast is between a king who maintained the institutional knowledge that protected Iran, and a king who discarded it for courtly comfort. The frontier didn't thin in a day; it thinned because the people who knew how to hold it were gone.",
+      "explanation_fa": "منوچهر قهرمانانی را که مرزها را می‌شناختند نگه داشت. نوذر آن‌ها را کنار گذاشت. تقابل بینِ شاهی که دانشِ نهادی را حفظ کرد و شاهی که آن را دور ریخت است.",
+      "explanation_tg": "Манӯчеҳр қаҳрамонони донандаи сарҳадҳоро нигоҳ дошт. Нӯзар онҳоро кенор гузошт.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "noz-m3",
+      "chapter_slug": "nozar",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Afrasiab briefly sits on Iran's throne after Nozar's defeat. The Shahnameh says this should be mourned, not celebrated. Why?",
+      "question_fa": "افراسیاب بعد از شکستِ نوذر کوتاهی روی تختِ ایران می‌نشیند. شاهنامه می‌گوید باید عزاداری کرد نه جشن گرفت. چرا؟",
+      "question_tg": "Афросиёб пас аз шикасти Нӯзар муддате бар тахти Эрон менишинад. Шоҳнома мегӯяд бояд мотам гирифт. Чаро?",
+      "answers": [
+        "Because Afrasiab's army committed atrocities during the conquest",
+        "A king losing the throne to a foreign invader represents the failure of farr — divine grace — which is a spiritual catastrophe beyond the military defeat",
+        "Because many Iranian nobles were killed in the battle",
+        "Because Afrasiab destroyed the fire temples"
+      ],
+      "answers_fa": [
+        "چون سپاهِ افراسیاب در طولِ فتح فجایعی مرتکب شد",
+        "شاهی که تختش را به متجاوزِ خارجی می‌بازد نشان‌دهنده‌ی شکستِ فرّ — لطفِ الهی — است که فاجعه‌ای معنوی فراتر از شکستِ نظامی است",
+        "چون بسیاری از اشرافِ ایرانی در نبرد کشته شدند",
+        "چون افراسیاب آتشکده‌ها را تخریب کرد"
+      ],
+      "answers_tg": [
+        "Чун сипоҳи Афросиёб фоҷеаҳо содир кард",
+        "Шоҳе ки тахтро ба мутаҷовизи хориҷӣ мебохад нишондиҳандаи шикасти фарр аст — фоҷеаи маънавӣ",
+        "Чун бисёре аз ашрофи Эронӣ кушта шуданд",
+        "Чун Афросиёб оташкадаҳоро вайрон кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's cosmology treats the farr (divine grace/glory) as the essential quality that legitimizes a king's rule. When Iran loses the throne to Afrasiab, it is not just a military defeat — it means Iran's center has been interrupted, its divine mandate broken. The chronicle mourns this because a kingdom without its sacred center is wounded at the level of being, not just politics.",
+      "explanation_fa": "شاهنامه فرّ را به عنوانِ کیفیتِ اساسیِ سلطنت می‌داند. وقتی ایران تخت را از دست می‌دهد نه فقط شکستِ نظامی بلکه انقطاعِ مرکزِ الهی است.",
+      "explanation_tg": "Шоҳнома фаррро ҳамчун сифати асосии салтанат медонад. Аз даст додани тахт танҳо шикасти ҳарбӣ нест — инқитоъи маркази илоҳист.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "noz-m4",
+      "chapter_slug": "nozar",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "The Shahnameh uses Nozar to introduce the Iran-Turan wars that dominate the chronicle for centuries. What does Nozar's reign establish about the cost of a king without farr?",
+      "question_fa": "شاهنامه از نوذر برای معرفیِ جنگ‌های ایران-توران استفاده می‌کند. سلطنتِ نوذر چه چیزی درباره‌ی هزینه‌ی شاهِ بدونِ فرّ ثابت می‌کند؟",
+      "question_tg": "Шоҳнома аз Нӯзар барои معرфии ҷангҳои Эрон-Турон истифода мекунад. Чӣ исбот мекунад?",
+      "answers": [
+        "That military strength alone cannot protect a kingdom",
+        "A king without farr doesn't just lose himself — he loses the kingdom for a generation, creating wounds that his successors must spend centuries repairing",
+        "That Turan was always destined to defeat Iran",
+        "That wise advisors are more important than strong armies"
+      ],
+      "answers_fa": [
+        "که نیروی نظامی تنها نمی‌تواند از پادشاهی محافظت کند",
+        "شاهِ بدونِ فرّ فقط خودش را از دست نمی‌دهد — پادشاهی را برای یک نسل از دست می‌دهد و زخم‌هایی ایجاد می‌کند که جانشینانش باید قرن‌ها صرفِ ترمیمشان کنند",
+        "که توران همیشه مقدر بود ایران را شکست دهد",
+        "که مشاورانِ خردمند از سپاهِ قوی مهم‌ترند"
+      ],
+      "answers_tg": [
+        "Ки нерои ҳарбӣ танҳо наметавонад муҳофизат кунад",
+        "Шоҳе бе фарр танҳо худашро аз даст намедиҳад — подшоҳиро барои як наслу ва захмҳо мекунад",
+        "Ки Турон ҳамеша муқаддар буд",
+        "Ки мушовирони хирадманд муҳимтаранд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Nozar chapter establishes the pattern that will run for centuries: when Iran's center fails, Turan advances. The wound Nozar creates — Afrasiab's first occupation of Iran, the death of Nozar — is not healed in his reign or the next. It grows into the Iran-Turan wars that consume Siavash, Rostam's greatest trials, and three generations of pahlavans before Kay Khosrow finally closes it.",
+      "explanation_fa": "فصلِ نوذر الگویی را ثابت می‌کند: وقتی مرکزِ ایران شکست می‌خورد، توران پیشروی می‌کند. زخمی که نوذر ایجاد می‌کند قرن‌ها طول می‌کشد.",
+      "explanation_tg": "Бобби Нӯзар намунаеро исбот мекунад: вақте маркази Эрон шикаст мехӯрад, Турон пеш меравад.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "noz-m5",
+      "chapter_slug": "nozar",
+      "quiz_part": 7,
+      "difficulty": "medium",
+      "question": "Sam's old warriors eventually drive Afrasiab back across the Oxus after Nozar's fall. What does this recovery reveal about where Iran's real strength resided?",
+      "question_fa": "جنگجویانِ کهنه‌ی سام پس از سقوطِ نوذر افراسیاب را از جیحون برمی‌رانند. این بازیابی چه چیزی درباره‌ی جایِ قدرتِ واقعیِ ایران آشکار می‌کند؟",
+      "question_tg": "Ҷангиёни куҳнаи Сом пас аз суқути Нӯзар Афросиёбро аз Ҷайҳун мерезонанд. Ин чӣ нишон медиҳад?",
+      "answers": [
+        "That Iran's strength resided in its institutions and experienced warriors, not in its kings",
+        "That the royal bloodline always produces a successor capable of recovery",
+        "That Afrasiab was never as strong as he appeared",
+        "That Iran's geography made it impossible to conquer permanently"
+      ],
+      "answers_fa": [
+        "که قدرتِ ایران در نهادها و جنگجویانِ باتجربه بود نه در شاهانش",
+        "که خطِ سلطنتی همیشه جانشینِ قادر به بازیابی تولید می‌کند",
+        "که افراسیاب هرگز به اندازه‌ای که به نظر می‌رسید قوی نبود",
+        "که جغرافیای ایران فتحِ دائم را غیرممکن می‌کرد"
+      ],
+      "answers_tg": [
+        "Ки қудрати Эрон дар ниҳодҳо ва ҷангиёни ботаҷриба буд",
+        "Ки хатти шоҳона ҳамеша вориси тавонои барқарорсозиро тавлид мекунад",
+        "Ки Афросиёб ҳеҷ гоҳ ба он андоза қавӣ набуд",
+        "Ки ҷуғрофияи Эрон фатҳи доимиро ғайриимкон мекард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sam's warriors — who Nozar dismissed — are the ones who eventually recover Iran. The Shahnameh's point is structural: Iran's real strength was never in its king but in the experienced guardians of its borders. Nozar's error was not military incompetence; it was discarding the institutional knowledge that made the borders holdable. When that knowledge reasserts itself, Iran recovers despite the king's failure.",
+      "explanation_fa": "جنگجویانِ سام که نوذر کنار گذاشته بود آن‌هایی هستند که ایران را بازمی‌گردانند. نقطه‌ی شاهنامه ساختاری است: قدرتِ واقعیِ ایران هرگز در شاه نبود.",
+      "explanation_tg": "Ҷангиёни Сом — ки Нӯзар кенор гузошта буд — касоне ҳастанд ки Эронро барқарор мекунанд.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "noz-h1",
+      "chapter_slug": "nozar",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh records Nozar's defeat with minimal dramatic weight. How does this restraint itself function as criticism?",
+      "question_fa": "شاهنامه شکستِ نوذر را با حداقلِ وزنِ دراماتیک ثبت می‌کند. این خودداری خودش چگونه به عنوانِ نقد کار می‌کند؟",
+      "question_tg": "Шоҳнома шикасти Нӯзарро бо ҳадди ақал вазни дарматик сабт мекунад. Ин худдорӣ чӣ тавр нақд аст?",
+      "answers": [
+        "The restraint shows Ferdowsi respected Nozar and didn't want to over-criticize him",
+        "A king who fails through mediocrity rather than dramatic error deserves minimal dramatic weight — the Shahnameh refuses to dignify Nozar's failure with the narrative energy reserved for genuinely tragic figures",
+        "The brevity is practical — Ferdowsi had little historical information about Nozar",
+        "The restraint signals that Nozar's defeat was temporary and the chronicle doesn't dwell on temporary setbacks"
+      ],
+      "answers_fa": [
+        "خودداری نشان می‌دهد فردوسی به نوذر احترام می‌گذاشت",
+        "شاهی که از طریقِ میانه‌حالی شکست می‌خورد نه از طریقِ خطایِ دراماتیک کمترین وزنِ دراماتیک را می‌طلبد — شاهنامه رد می‌کند شکستِ نوذر را با انرژیِ روایی که برای چهره‌های واقعاً تراژیک نگه می‌دارد جلال ببخشد",
+        "اختصارِ فردوسی عملی است",
+        "خودداری نشان می‌دهد شکستِ نوذر موقت بود"
+      ],
+      "answers_tg": [
+        "Худдорӣ нишон медиҳад Фирдавсӣ ба Нӯзар эҳтиром мегузошт",
+        "Шоҳе ки аз тариқи миёнаҳолӣ шикаст мехӯрад вазни дарматики камтар мехоҳад — Шоҳнома рад мекунад шикасти Нӯзарро шукӯҳ бахшад",
+        "Ихтисори Фирдавсӣ амалист",
+        "Худдорӣ нишон медиҳад шикасти Нӯзар муваққат буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh reserves its most sustained narrative attention for figures who fail dramatically: Kay Kavus (reckless ambition), Afrasiab (great evil), Siavash (tragic virtue). Nozar fails from mediocrity — he is simply not good enough for the throne he inherited. The chronicle's brevity here is itself the criticism: Nozar doesn't merit the weight of a true tragedy because his failure wasn't noble, it was merely ordinary. The Shahnameh's restraint communicates a kind of contempt that explicit denunciation never could.",
+      "explanation_fa": "شاهنامه توجهِ روایی خود را برای چهره‌هایی که به‌طورِ دراماتیک شکست می‌خورند نگه می‌دارد. نوذر از میانه‌حالی شکست می‌خورد. اختصارِ شاهنامه خودش نقد است: نوذر لایقِ وزنِ تراژدیِ واقعی نیست.",
+      "explanation_tg": "Шоҳнома диққати роявиро барои шахсиятҳои дарматик нигоҳ медорад. Нӯзар аз миёнаҳолӣ шикаст мехӯрад. Ихтисор худаш нақд аст.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "noz-h2",
+      "chapter_slug": "nozar",
+      "quiz_part": 9,
+      "difficulty": "hard",
+      "question": "Nozar is captured alive by Afrasiab. The Shahnameh notes Iran recovered despite having a captured king. What does this reveal about how the chronicle understands legitimacy?",
+      "question_fa": "نوذر زنده توسطِ افراسیاب اسیر می‌شود. شاهنامه یادداشت می‌کند ایران علیرغمِ داشتنِ شاهِ اسیر بهبود یافت. این چه چیزی درباره‌ی فهمِ شاهنامه از مشروعیت آشکار می‌کند؟",
+      "question_tg": "Нӯзар зинда аз Афросиёб асир мешавад. Эрон бо вуҷуди шоҳи асир барқарор шуд. Ин дар бораи фаҳми Шоҳнома аз машрӯият чӣ мегӯяд?",
+      "answers": [
+        "Legitimacy resides in the army, not the king",
+        "Legitimacy is not a personal possession — it is tied to the farr which has already departed from Nozar, meaning his physical capture is almost redundant; Iran can reconstitute itself because the legitimate claim passes through the bloodline, not through whoever holds the throne",
+        "Legitimacy is determined by military victory alone",
+        "Legitimacy in the Shahnameh is purely divine and cannot be affected by political events"
+      ],
+      "answers_fa": [
+        "مشروعیت در سپاه است نه شاه",
+        "مشروعیت مِلکِ شخصی نیست — به فرّ گره خورده که پیشتر از نوذر رفته؛ اسارتِ جسمیِ او تقریباً اضافی است؛ ایران می‌تواند خودش را بازسازی کند چون ادعایِ مشروع از خطِ خونی عبور می‌کند نه از کسی که تخت را نگه می‌دارد",
+        "مشروعیت فقط توسطِ پیروزیِ نظامی تعیین می‌شود",
+        "مشروعیت در شاهنامه کاملاً الهی است"
+      ],
+      "answers_tg": [
+        "Машрӯият дар сипоҳ аст",
+        "Машрӯият мулки шахсӣ нест — ба фарр вобаста аст ки пештар аз Нӯзар рафтааст; асирии ҷисмиаш тақрибан иловагист",
+        "Машрӯият фақат аз ҷанг"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's concept of legitimacy is theological rather than personal: the farr has already departed from Nozar before his capture. His physical imprisonment is almost meaningless because his legitimate claim was already void — he had lost the divine grace that makes a king a king. Iran reconstitutes around the next legitimate claimant. This is why the capture doesn't end the story of Iran's resistance; it merely confirms what was already spiritually true.",
+      "explanation_fa": "مفهومِ مشروعیت در شاهنامه الهیاتی است نه شخصی: فرّ پیش از اسارت از نوذر رفته. اسارتش تقریباً بی‌معناست چون ادعایش قبلاً باطل شده بود.",
+      "explanation_tg": "Мафҳуми машрӯиятdар Шоҳнома илоҳиётист на шахсӣ: фарр пеш аз асирӣ аз Нӯзар рафтааст.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "noz-h3",
+      "chapter_slug": "nozar",
+      "quiz_part": 10,
+      "difficulty": "hard",
+      "question": "The Iran-Turan wars begin in earnest with Nozar's reign. The Shahnameh introduces this centuries-long conflict through a weak king rather than a strong one. What narrative purpose does this serve?",
+      "question_fa": "جنگ‌های ایران-توران با سلطنتِ نوذر به‌طورِ جدی آغاز می‌شوند. شاهنامه این درگیریِ چندصدساله را از طریقِ شاهِ ضعیف نه قوی معرفی می‌کند. این چه هدفِ روایی دارد؟",
+      "question_tg": "Ҷангҳои Эрон-Турон бо Нӯзар ҷиддӣ оғоз мешаванд. Шоҳнома ин мунозираро аз шоҳи заиф معрفи мекунад. Чаро?",
+      "answers": [
+        "It shows that great wars often begin from accidents rather than decisions",
+        "Introducing the great wars through a weak king establishes that Iran's greatest existential threat came not from Afrasiab's strength but from Iran's own failure to maintain its center — the enemy is not the real cause; the king's inadequacy is",
+        "It creates dramatic contrast with the strong kings who follow",
+        "It allows the Shahnameh to introduce Afrasiab as a character before describing his full power"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد جنگ‌های بزرگ اغلب از تصادف آغاز می‌شوند",
+        "معرفیِ جنگ‌های بزرگ از طریقِ شاهِ ضعیف ثابت می‌کند که بزرگترین تهدیدِ وجودیِ ایران از قدرتِ افراسیاب نبود بلکه از شکستِ خودِ ایران در حفظِ مرکزش بود",
+        "تقابلِ دراماتیک با شاهانِ قوی ایجاد می‌کند",
+        "اجازه می‌دهد شاهنامه افراسیاب را قبل از توصیفِ قدرتِ کاملش معرفی کند"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад ҷангҳои бузург аз тасодуф оғоз мешаванд",
+        "معрфии ҷангҳо аз тариқи шоҳи заиф исбот мекунад таҳдиди Эрон аз қудрати Афросиёб набуд блки аз шикасти худи Эрон буд",
+        "Тазоди дарматик месозад",
+        "Ба Афросиёб иҷозат медиҳад معрфи шавад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's structural argument is that Iran's great enemies cannot penetrate a properly maintained center. Afrasiab crosses the Oxus not because he is invincible but because Nozar has left the frontier unguarded. This framing makes the Iran-Turan wars a story about Iran's relationship with its own governance, not just its relationship with Turan. The cure for the wound is not military superiority; it is better kings.",
+      "explanation_fa": "استدلالِ ساختاریِ شاهنامه این است که دشمنانِ بزرگ نمی‌توانند به مرکزِ درست‌نگهداری‌شده نفوذ کنند. افراسیاب نه چون شکست‌ناپذیر است بلکه چون نوذر مرز را رها کرده.",
+      "explanation_tg": "Далели сохторӣи Шоҳнома ин аст ки душманон ба маркази дурусти нигоҳдошта нуфуз карда наметавонанд.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "noz-h4",
+      "chapter_slug": "nozar",
+      "quiz_part": 11,
+      "difficulty": "hard",
+      "question": "Nozar's failure is presented as the direct consequence of receiving a throne he did not earn. The Shahnameh implies that inherited power without inherited virtue is dangerous. How does this argument connect to the chronicle's broader view of kingship?",
+      "question_fa": "شکستِ نوذر به عنوانِ پیامدِ مستقیمِ دریافتِ تختی که کسب نکرده ارائه می‌شود. شاهنامه نشان می‌دهد قدرتِ ارثی بدونِ فضیلتِ ارثی خطرناک است. این استدلال چگونه به دیدگاهِ کلی‌ترِ شاهنامه درباره‌ی پادشاهی مرتبط می‌شود؟",
+      "question_tg": "Шикасти Нӯзар ҳамчун оқибати мустақим нишон дода мешавад. Шоҳнома нишон медиҳад қудрати меросии бе фазилат хатарнок аст. Ин бо дидгоҳи куллии Шоҳнома чӣ рабт дорад?",
+      "answers": [
+        "The Shahnameh argues that hereditary monarchy should be abolished",
+        "Throughout the chronicle, the throne must be earned through deeds — Fereydun earned it through defeating Zahhak, Manuchehr through avenging Iraj. Nozar merely inherited. The chronicle's consistent position is that kingship is a relationship between the king and the farr, and the farr is not inherited; it must be won",
+        "The Shahnameh believes only military heroes should rule",
+        "Nozar's failure proves the chronicle believes in strict primogeniture — eldest sons should not inherit"
+      ],
+      "answers_fa": [
+        "شاهنامه استدلال می‌کند که پادشاهیِ موروثی باید لغو شود",
+        "در سرتاسرِ شاهنامه، تخت باید با عمل کسب شود — فریدون با شکستِ ضحاک، منوچهر با انتقامِ ایرج. نوذر فقط ارث برد. موضعِ ثابتِ شاهنامه این است که پادشاهی رابطه‌ای بینِ شاه و فرّ است و فرّ به ارث نمی‌رسد؛ باید کسب شود",
+        "شاهنامه باور دارد فقط قهرمانانِ نظامی باید حکمرانی کنند",
+        "شکستِ نوذر ثابت می‌کند شاهنامه به ارشدیت باور ندارد"
+      ],
+      "answers_tg": [
+        "Шоҳнома монархияи меросиро бояд бекор кунад",
+        "Дар саросари Шоҳнома, тахтро бояд бо амал кӯшид — Фаридун, Манӯчеҳр. Нӯзар танҳо мерос гирифт. Фарр ба мерос намерасад; бояд кӯшида шавад",
+        "Шоҳнома бовар дорад ҳарбиён ҳукумат кунанд",
+        "Шикасти Нӯзар исбот мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's theory of kingship runs through the entire chronicle: farr is not a birthright. Keyumars had it because he was the first king. Jamshid lost it through pride. Fereydun earned it. Kay Khosrow had it in abundance. Nozar received a throne without the virtue to hold the farr that throne requires. The chronicle is consistent: you cannot inherit what must be demonstrated. Power without demonstrated virtue eventually collapses.",
+      "explanation_fa": "نظریه‌ی پادشاهیِ شاهنامه در سرتاسرِ شاهنامه پیش می‌رود: فرّ حق‌ولادت نیست. جمشید آن را از طریقِ غرور از دست داد. نوذر تختی دریافت کرد بدونِ فضیلتی که فرّ را نگه می‌داشت.",
+      "explanation_tg": "Назарияи подшоҳии Шоҳнома: фарр ҳаққи валодат нест. Нӯзар тахтро бе фазилат гирифт.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "noz-h5",
+      "chapter_slug": "nozar",
+      "quiz_part": 12,
+      "difficulty": "hard",
+      "question": "The Nozar chapter is brief compared to the chapters before and after it. What does this brevity reveal about what the Shahnameh considers worth dwelling on?",
+      "question_fa": "فصلِ نوذر در مقایسه با فصل‌های قبل و بعدش کوتاه است. این کوتاهی چه چیزی درباره‌ی آنچه شاهنامه ارزشِ درنگ دارد آشکار می‌کند؟",
+      "question_tg": "Бобби Нӯзар дар муқоиса бо боб-ҳои қаблу баъдаш кӯтоҳ аст. Ин кӯтоҳӣ чӣ нишон медиҳад?",
+      "answers": [
+        "The Shahnameh values action over reflection",
+        "The chronicle dwells on what teaches — great virtue (Manuchehr's justice), great failure (Kay Kavus's recklessness), or great tragedy (Siavash). Nozar's reign offers none of these; it is merely a demonstration of insufficiency, and the Shahnameh gives it exactly the space that insufficiency deserves: minimal",
+        "The brevity is an error that Ferdowsi corrected in later revisions",
+        "The Shahnameh treats historical accuracy over literary concern"
+      ],
+      "answers_fa": [
+        "شاهنامه عمل را بر تأمل ترجیح می‌دهد",
+        "شاهنامه روی آنچه آموزش می‌دهد درنگ می‌کند — فضیلتِ بزرگ، شکستِ بزرگ، یا تراژدیِ بزرگ. سلطنتِ نوذر هیچ‌کدام را ندارد؛ صرفاً نمایشِ ناکافی است و شاهنامه دقیقاً فضایِ ناکافی به آن می‌دهد",
+        "کوتاهی خطایی است که فردوسی در ویرایش‌های بعدی تصحیح کرد",
+        "شاهنامه دقتِ تاریخی را بر نگرانیِ ادبی ترجیح می‌دهد"
+      ],
+      "answers_tg": [
+        "Шоҳнома амалро бар андеша афзалтар мешуморад",
+        "Шоҳнома бар он чи меомӯзад меандешад — фазилати бузург, шикасти бузург, ё фоҷиаи бузург. Салтанати Нӯзар ҳеҷ яке надорад",
+        "Кӯтоҳӣ хатоест",
+        "Шоҳнома дақиқати таърихиро меҷӯяд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh is a chronicle with a purpose beyond listing kings. It dwells on what illuminates. The long chapters — Rostam's Seven Labours, Siavash, Sohrab — teach through example, tragedy, and moral complexity. Nozar teaches only one thing: mediocrity on a throne is dangerous. That lesson takes very few pages. The brevity is not disrespect; it is precision. The Shahnameh gives each story exactly as much space as its content requires, and Nozar's content requires very little.",
+      "explanation_fa": "شاهنامه فهرستِ شاهان نیست — روی آنچه روشن می‌کند درنگ می‌کند. فصل‌های طولانی از طریقِ نمونه، تراژدی، پیچیدگیِ اخلاقی آموزش می‌دهند. نوذر فقط یک چیز یاد می‌دهد.",
+      "explanation_tg": "Шоҳнома феҳристи подшоҳон нест — бар он чи равшан мекунад меандешад.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "noz-h6",
+      "chapter_slug": "nozar",
+      "quiz_part": 13,
+      "difficulty": "hard",
+      "question": "The Shahnameh describes the period after Nozar as a time when 'Iran felt what it meant to lose its center.' What does this metaphor of center reveal about the chronicle's political philosophy?",
+      "question_fa": "شاهنامه دوره‌ی بعد از نوذر را «وقتی ایران احساس کرد از دست دادنِ مرکزش یعنی چه» توصیف می‌کند. این استعاره‌ی مرکز چه چیزی درباره‌ی فلسفه‌ی سیاسیِ شاهنامه آشکار می‌کند?",
+      "question_tg": "Шоҳнома давраи баъди Нӯзарро «вақте Эрон эҳсос кард аз даст додани марказаш чӣ маъно дорад» тавсиф мекунад. Ин метафораи марказ чӣ мегӯяд?",
+      "answers": [
+        "The center refers to the physical capital city",
+        "In the Shahnameh's political philosophy, the 'center' is the concentration of farr in a legitimate king — it is not a location but a quality of governance that organizes the kingdom's spiritual, moral, and military coherence. Without it, the kingdom can still function physically but has lost its organizing principle",
+        "The center refers to the army's command structure",
+        "The center is a metaphor for religious observance — when Nozar neglected the temples, Iran lost its center"
+      ],
+      "answers_fa": [
+        "مرکز به شهرِ پایتختِ فیزیکی اشاره دارد",
+        "در فلسفه‌ی سیاسیِ شاهنامه، «مرکز» تمرکزِ فرّ در شاهِ مشروع است — مکانی نیست بلکه کیفیتِ حکومتی است که انسجامِ معنوی، اخلاقی، و نظامیِ پادشاهی را سازماندهی می‌کند",
+        "مرکز به ساختارِ فرماندهیِ ارتش اشاره دارد",
+        "مرکز استعاره‌ای برای مراقبتِ دینی است"
+      ],
+      "answers_tg": [
+        "Марказ ба пойтахти физикӣ ишора дорад",
+        "Дар фалсафаи сиёсии Шоҳнома «марказ» тамаркузи фарр дар шоҳи машрӯ аст — макон нест балки сифати ҳукуматест",
+        "Марказ ба сохтори қӯмондонии артиш ишора дорад",
+        "Марказ истеъораи ибодат аст"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's political philosophy is built around the concept of the farr as the organizing principle of legitimate governance. When Nozar loses the farr, Iran loses its 'center' — the quality that makes the kingdom coherent, that keeps the borders holding and the court honest and the people protected. This is why the invasion of Afrasiab is catastrophic beyond its military dimension: Iran's organizing principle has been interrupted, and a kingdom without its center is like a body without its animating force.",
+      "explanation_fa": "فلسفه‌ی سیاسیِ شاهنامه حولِ مفهومِ فرّ به عنوانِ اصلِ سازمان‌دهیِ حکومتِ مشروع ساخته شده. وقتی نوذر فرّ را از دست می‌دهد ایران «مرکزش» را از دست می‌دهد.",
+      "explanation_tg": "Фалсафаи сиёсии Шоҳнома ҳавли мафҳуми фарр ҳамчун принсипи ташкилии ҳукумати машрӯ сохта шудааст.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "noz-h7",
+      "chapter_slug": "nozar",
+      "quiz_part": 14,
+      "difficulty": "hard",
+      "question": "Nozar is captured and the Shahnameh notes that the old warriors eventually recover Iran without him. What does this suggest about the relationship between individual kings and the kingdom's continuity?",
+      "question_fa": "نوذر اسیر می‌شود و شاهنامه یادداشت می‌کند جنگجویانِ کهنه ایران را بدونِ او بازمی‌گردانند. این چه چیزی درباره‌ی رابطه‌ی بینِ شاهانِ فردی و تداومِ پادشاهی پیشنهاد می‌کند؟",
+      "question_tg": "Нӯзар асир мешавад ва ҷангиёни куҳна Эронро бе ӯ барқарор мекунанд. Ин дар бораи рабти байни шоҳони фардӣ ва идомаи подшоҳӣ чӣ пешниҳод мекунад?",
+      "answers": [
+        "Individual kings are not important — Iran always survives regardless",
+        "The chronicle suggests the kingdom is larger than any individual king: when the king fails, the kingdom's continuity is carried by those who serve the idea of Iran rather than the specific monarch. Sam's warriors serve Iran, not Nozar — and it is their continued service to the larger cause that allows recovery",
+        "Iran's survival depends entirely on its military strength",
+        "The recovery shows divine intervention always protects Iran"
+      ],
+      "answers_fa": [
+        "شاهانِ فردی مهم نیستند",
+        "شاهنامه پیشنهاد می‌کند پادشاهی از هر شاهِ فردی بزرگتر است: وقتی شاه شکست می‌خورد، تداومِ پادشاهی توسطِ کسانی حمل می‌شود که به ایده‌ی ایران خدمت می‌کنند نه به پادشاهِ خاص",
+        "بقایِ ایران کاملاً به قدرتِ نظامی‌اش بستگی دارد",
+        "بازیابی مداخله‌ی الهی را نشان می‌دهد"
+      ],
+      "answers_tg": [
+        "Шоҳони фардӣ муҳим нестанд",
+        "Шоҳнома пешниҳод мекунад подшоҳӣ аз ҳар шоҳи фардӣ бузургтар аст: вақте шоҳ шикаст мехӯрад, идомаи подшоҳӣ аз касоне ҳамл мешавад ки ба идеяи Эрон хидмат мекунанд",
+        "Бақои Эрон кулан аз қудрати ҳарбиаш вобаста аст",
+        "Барқарорӣ мудохилаи илоҳиро нишон медиҳад"
+      ],
+      "correct_answer": 1,
+      "explanation": "One of the Shahnameh's most consistent structural arguments is that Iran is greater than any individual king. The warriors who recover Iran after Nozar serve the Iranian idea — the continuity of legitimate governance that the farr represents — rather than Nozar personally. This is why the chronicle can describe Iran's recovery even while its king is in enemy hands: because Iran is not a person but a principle, and principles can survive the failures of their individual bearers.",
+      "explanation_fa": "یکی از ثابت‌ترین استدلال‌های ساختاریِ شاهنامه این است که ایران از هر شاهِ فردی بزرگتر است. جنگجویانی که ایران را بازمی‌گردانند به ایده‌ی ایرانی خدمت می‌کنند نه به نوذرِ شخصی.",
+      "explanation_tg": "Яке аз ثоботтарин далелҳои сохтории Шоҳнома ин аст ки Эрон аз ҳар шоҳи фардӣ бузургтар аст.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "noz-h8",
+      "chapter_slug": "nozar",
+      "quiz_part": 15,
+      "difficulty": "hard",
+      "question": "The Nozar chapter introduces the Iran-Turan enmity but also shows Iran's rapid recovery. What does this combination establish about the nature of historical wounds in the Shahnameh?",
+      "question_fa": "فصلِ نوذر دشمنیِ ایران-توران را معرفی می‌کند اما بازیابیِ سریعِ ایران را هم نشان می‌دهد. این ترکیب چه چیزی درباره‌ی ماهیتِ زخم‌های تاریخی در شاهنامه ثابت می‌کند؟",
+      "question_tg": "Бобби Нӯзар душманиро معрфи мекунад аммо барқарории зудраси Эронро ҳам нишон медиҳад. Ин тартиб чӣ исбот мекунад?",
+      "answers": [
+        "Historical wounds in the Shahnameh always heal quickly",
+        "Historical wounds in the chronicle don't close — they deepen. The Nozar wound that introduces the Iran-Turan wars becomes the Siavash wound, which becomes Kay Khosrow's purpose, which consumes three generations before it finally closes. The initial quick military recovery is not healing; it is the beginning of a much longer reckoning",
+        "The recovery shows Iran was never truly weakened",
+        "Historical wounds are only significant when they involve divine betrayal"
+      ],
+      "answers_fa": [
+        "زخم‌های تاریخی در شاهنامه همیشه سریع بهبود می‌یابند",
+        "زخم‌های تاریخی در شاهنامه بسته نمی‌شوند — عمیق‌تر می‌شوند. زخمِ نوذر که جنگ‌های ایران-توران را معرفی می‌کند به زخمِ سیاوش می‌شود، که هدفِ کی‌خسرو می‌شود. بازیابیِ اولیه درمان نیست؛ آغازِ تسویه‌حسابِ بسیار طولانی‌تری است",
+        "بازیابی نشان می‌دهد ایران هرگز واقعاً ضعیف نشد",
+        "زخم‌های تاریخی فقط زمانی مهم هستند که خیانتِ الهی در کار باشد"
+      ],
+      "answers_tg": [
+        "Захмҳои таърихӣ ҳамеша зуд шифо меёбанд",
+        "Захмҳои таърихӣ дар Шоҳнома баста намешаванд — чуқуртар мешаванд. Захми Нӯзар ки ҷангҳоро معрфи мекунад ба захми Сиёвуш мешавад. Барқарории аввала табобат нест",
+        "Барқарорӣ нишон медиҳад Эрон ҳеҷ гоҳ заиф нашуд",
+        "Захмҳо фақат вақте муҳиманд ки хиёнати илоҳӣ бошад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh works through accumulation: wounds don't close, they grow. The Nozar chapter establishes a wound — Afrasiab's first breach of Iran — that will not be healed until Kay Khosrow kills Afrasiab personally, centuries later. The quick military recovery after Nozar is not the end of the story; it is the first chapter of a wound that will consume Siavash, Farangis's exile, three generations of pahlavans, and Kay Khosrow's entire reign. The Shahnameh always signals at the beginning of a wound how long it will take to close.",
+      "explanation_fa": "شاهنامه از طریقِ انباشت کار می‌کند: زخم‌ها بسته نمی‌شوند، رشد می‌کنند. فصلِ نوذر زخمی ثابت می‌کند که تا وقتی کی‌خسرو افراسیاب را شخصاً نکشد قرن‌ها بعد بسته نمی‌شود.",
+      "explanation_tg": "Шоҳнома аз тариқи анбоштан кор мекунад: захмҳо баста намешаванд, мерӯянд.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    }
+  ]
+}

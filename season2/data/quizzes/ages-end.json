@@ -1,0 +1,214 @@
+{
+  "quizzes": [
+    {
+      "id": "ages-end-1",
+      "chapter_slug": "ages-end",
+      "quiz_part": 1,
+      "question": "Who is the legendary author of the Shahnameh?",
+      "answers": [
+        "Rumi",
+        "Hafez",
+        "Ferdowsi",
+        "Saadi"
+      ],
+      "correct_answer": 2,
+      "explanation": "Ferdowsi of Tus, over 30+ years of work.",
+      "reward": {
+        "xp": 250,
+        "real": 110
+      },
+      "difficulty": "easy",
+      "question_fa": "نویسنده‌ی افسانه‌ای شاهنامه کیست؟",
+      "question_tg": "Муаллифи афсонавии Шоҳнома кист?",
+      "answers_fa": [
+        "رومی",
+        "حافظ",
+        "فردوسی",
+        "سعدی"
+      ],
+      "answers_tg": [
+        "Румӣ",
+        "Ҳофиз",
+        "Фирдавсӣ",
+        "Саъдӣ"
+      ],
+      "explanation_fa": "فردوسی توسی، در طول بیش از ۳۰ سال کار.",
+      "explanation_tg": "Фирдавсии Тусӣ, дар тӯли беш аз 30 соли кор."
+    },
+    {
+      "id": "ages-end-2",
+      "chapter_slug": "ages-end",
+      "quiz_part": 2,
+      "question": "How many verses does the Shahnameh contain (approx)?",
+      "answers": [
+        "10,000",
+        "30,000",
+        "120,000",
+        "60,000"
+      ],
+      "correct_answer": 3,
+      "explanation": "About 60,000 couplets.",
+      "reward": {
+        "xp": 280,
+        "real": 125
+      },
+      "difficulty": "medium",
+      "question_fa": "شاهنامه تقریباً چند بیت دارد؟",
+      "question_tg": "Шоҳнома тақрибан чанд байт дорад?",
+      "answers_fa": [
+        "۱۰٬۰۰۰",
+        "۳۰٬۰۰۰",
+        "۱۲۰٬۰۰۰",
+        "۶۰٬۰۰۰"
+      ],
+      "answers_tg": [
+        "10,000",
+        "30,000",
+        "120,000",
+        "60,000"
+      ],
+      "explanation_fa": "حدود ۶۰٬۰۰۰ بیت.",
+      "explanation_tg": "Тақрибан 60,000 байт."
+    },
+    {
+      "id": "ages-end-3",
+      "chapter_slug": "ages-end",
+      "quiz_part": 3,
+      "question": "From what city is Ferdowsi?",
+      "answers": [
+        "Tus",
+        "Shiraz",
+        "Isfahan",
+        "Nishapur"
+      ],
+      "correct_answer": 0,
+      "explanation": "Tus, in Khorasan.",
+      "reward": {
+        "xp": 310,
+        "real": 140
+      },
+      "difficulty": "medium",
+      "question_fa": "فردوسی از کدام شهر است؟",
+      "question_tg": "Фирдавсӣ аз кадом шаҳр аст?",
+      "answers_fa": [
+        "توس",
+        "شیراز",
+        "اصفهان",
+        "نیشابور"
+      ],
+      "answers_tg": [
+        "Тус",
+        "Шероз",
+        "Исфаҳон",
+        "Нишопур"
+      ],
+      "explanation_fa": "توس، در خراسان.",
+      "explanation_tg": "Тус, дар Хуросон."
+    },
+    {
+      "id": "ages-end-4",
+      "chapter_slug": "ages-end",
+      "quiz_part": 4,
+      "question": "Which dynasty is the spiritual heart of the Shahnameh?",
+      "answers": [
+        "Achaemenid",
+        "Kayanian",
+        "Sassanid",
+        "Pishdadian"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Kayanian dynasty — Kay Kavus, Kay Khosrow, Goshtasp.",
+      "reward": {
+        "xp": 340,
+        "real": 155
+      },
+      "difficulty": "hard",
+      "question_fa": "کدام سلسله قلب معنوی شاهنامه است؟",
+      "question_tg": "Кадом сулола қалби маънавии Шоҳнома аст?",
+      "answers_fa": [
+        "هخامنشی",
+        "کیانی",
+        "ساسانی",
+        "پیشدادی"
+      ],
+      "answers_tg": [
+        "Ҳахоманишӣ",
+        "Кёниён",
+        "Сосонӣ",
+        "Пешдодиён"
+      ],
+      "explanation_fa": "سلسله‌ی کیانی — کیکاووس، کیخسرو، گشتاسپ.",
+      "explanation_tg": "Сулолаи Кёниён — Кайковус, Кайхусрав, Гуштосп."
+    },
+    {
+      "id": "ages-end-5",
+      "chapter_slug": "ages-end",
+      "quiz_part": 5,
+      "question": "How many books make up the Shahnameh?",
+      "answers": [
+        "Three",
+        "Five",
+        "Fifty",
+        "Seven"
+      ],
+      "correct_answer": 2,
+      "explanation": "Approximately fifty separate stories/sections.",
+      "reward": {
+        "xp": 370,
+        "real": 170
+      },
+      "difficulty": "hard",
+      "question_fa": "شاهنامه از چند کتاب تشکیل شده است؟",
+      "question_tg": "Шоҳнома аз чанд китоб иборат аст?",
+      "answers_fa": [
+        "سه",
+        "پنج",
+        "پنجاه",
+        "هفت"
+      ],
+      "answers_tg": [
+        "Се",
+        "Панҷ",
+        "Панҷоҳ",
+        "Ҳафт"
+      ],
+      "explanation_fa": "تقریباً پنجاه داستان/بخش جداگانه.",
+      "explanation_tg": "Тақрибан панҷоҳ ҳикоя/қисмати алоҳида."
+    },
+    {
+      "id": "ages-end-6",
+      "chapter_slug": "ages-end",
+      "quiz_part": 6,
+      "question": "What is Ferdowsi's most famous boast at the poem's close?",
+      "answers": [
+        "I have made a kingdom",
+        "I have built a palace of words",
+        "I shall live by what I wrote",
+        "All of the above are paraphrases"
+      ],
+      "correct_answer": 3,
+      "explanation": "All paraphrase the closing verse — \"I shall live by what I wrote\".",
+      "reward": {
+        "xp": 400,
+        "real": 200
+      },
+      "difficulty": "hard",
+      "question_fa": "مشهورترین افتخار فردوسی در پایان شعر چیست؟",
+      "question_tg": "Машҳуртарин ифтихори Фирдавсӣ дар поёни шеър чист?",
+      "answers_fa": [
+        "من پادشاهی ساختم",
+        "من قصری از کلمات ساختم",
+        "با آنچه نوشتم زنده خواهم ماند",
+        "همه‌ی موارد بالا تعابیر هستند"
+      ],
+      "answers_tg": [
+        "Ман шоҳӣ сохтам",
+        "Ман қасре аз калима сохтам",
+        "Бо он чи навиштам зинда хоҳам монд",
+        "Ҳамаи мавриди боло тафсирҳоянд"
+      ],
+      "explanation_fa": "همه ترجمان مصراع پایانی — «زنده ماندم بدان‌چه نوشتم».",
+      "explanation_tg": "Ҳама тарҷумони байти поёнӣ — «Зинда мондам бад-ончи навиштам»."
+    }
+  ]
+}

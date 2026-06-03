@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "esp-e1",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What makes Esfandiyar's body brazen, and what is his one point of vulnerability?",
+      "question_fa": "چه چیزی بدنِ اسفندیار را رویین می‌کند، و تنها نقطه‌ی آسیب‌پذیریِ او کجاست؟",
+      "question_tg": "Чӣ бадани Исфандиёрро рӯин мекунад ва ягона нуқтаи осебпазириаш куҷост?",
+      "answers": [
+        "He was forged from iron in Zoroaster's sacred fire; his weakness is his left wrist where the fire did not reach",
+        "He consumed a sacred potion that hardened his body; the potion missed his back",
+        "He was born during a celestial alignment that granted him natural armour; his weakness is his heart",
+        "Zoroaster bathed him in sacred water, making his skin impervious to iron; his eyes remained open during the immersion, leaving them as his only vulnerability"
+      ],
+      "answers_fa": [
+        "در آتشِ مقدسِ زرتشت از آهن ساخته شد؛ ضعفش مچِ چپش است که آتش به آن نرسید",
+        "فرآورده‌ی مقدسی خورد که بدنش را سخت کرد؛ پشتش را از دست داد",
+        "در یک همسوییِ آسمانی متولد شد که زرهِ طبیعی داد؛ ضعفش قلبش است",
+        "زرتشت او را در آبِ مقدس غسل داد و پوستش را در برابرِ آهن آسیب‌ناپذیر کرد؛ چشمانش در غسل باز بودند و تنها آسیب‌پذیریِ او ماندند"
+      ],
+      "answers_tg": [
+        "Дар оташи муқаддаси Зардушт аз оҳан сохта шуд",
+        "Фаровардаи муқаддасе хӯрд",
+        "Дар ҳамсӯии осмонӣ таваллуд шуд",
+        "Зардушт ӯро дар оби муқаддас ғусл дод ва пӯсташро дар баробари оҳан осебнопазир кард; чашмонаш дар ғусл кушода буданд ва ягона осебпазириаш монданд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Zoroaster bathed the young Esfandiyar in sacred water as an act of consecration — not as a military enhancement but as a marking of the prophet's champion. The water made his body impervious to iron. His eyes remained open at the moment of immersion because he was a child — curious and open. The Shahnameh presents this not as a flaw to be criticized but as a precise structural fact: every protection has a limit, and the limit of Esfandiyar's protection is the place where perception enters the world.",
+      "explanation_fa": "زرتشت اسفندیارِ جوان را در آبِ مقدس غسل داد — به عنوانِ تقدیس. آب پوستش را آسیب‌ناپذیر کرد. چشمانش باز بودند. شاهنامه این را نه به عنوانِ نقص بلکه به عنوانِ واقعیتِ ساختاری ارائه می‌دهد: هر محافظتی حدی دارد.",
+      "explanation_tg": "Зардушт Исфандиёри ҷавонро дар оби муқаддас ғусл дод. Об пӯсташро осебнопазир кард. Чашмонаш кушода буданд. Шоҳнома ин ро на ҳамчун нуқс балки ҳамчун воқеияти сохторӣ нишон медиҳад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "esp-e2",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Esfandiyar goes on the mission to bring Rostam in chains even though Jamasp tells him it will kill him. What does the Shahnameh say about why he goes?",
+      "question_fa": "اسفندیار به مأموریتِ آوردنِ رستم با زنجیر می‌رود حتی با اینکه جاماسپ می‌گوید او را خواهد کشت. شاهنامه چه می‌گوید چرا می‌رود؟",
+      "question_tg": "Исфандиёр ба мӯъҷиза меравад ҳатто бо он ки Ҷомосп мегӯяд мекушад. Шоҳнома чӣ мегӯяд?",
+      "answers": [
+        "He is too righteous to disobey his father's command, too honest to pretend he has a valid reason not to go, too courageous to let knowledge of his death stop him — he goes knowing he will die because duty outweighs survival",
+        "He goes because he secretly believes he will find a way to survive — he does not truly accept Jamasp's prophecy",
+        "He goes to prove Jamasp wrong — he believes the astrologer is part of a court conspiracy against him",
+        "He goes because Goshtasp promised him the throne a final time and he believes this promise will be kept"
+      ],
+      "answers_fa": [
+        "خیلی صادق است تا دستورِ پدرش را نافرمانی کند، خیلی صادق است تا وانمود کند دلیلِ معتبری دارد، خیلی شجاع است تا دانشِ مرگش جلویش را بگیرد — با دانستنِ اینکه می‌میرد می‌رود چون وظیفه از بقا مهم‌تر است",
+        "می‌رود چون پنهانی باور دارد راهِ زنده ماندن پیدا می‌کند",
+        "می‌رود تا جاماسپ را اشتباه ثابت کند",
+        "می‌رود چون گشتاسپ آخرین بار تخت را وعده داده"
+      ],
+      "answers_tg": [
+        "Барои вазифа меравад — хеле содиқ аст то дастури падарашро нофармонӣ кунад, хеле содиқ аст то вонамуд кунад, хеле далер аст то дониши маргаш ӯро нигоҳ дорад",
+        "Меравад чун пинҳонӣ бовар дорад роҳи зинда мондан меёбад",
+        "Меравад то Ҷомоспро нодуруст исбот кунад",
+        "Меравад чун Гуштосп тахтро ваъда кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Jamasp tells Esfandiyar plainly that the mission will kill him, Esfandiyar replies that he knows. He goes anyway. The Shahnameh presents three qualities that make this inevitable: he is too righteous to disobey his father's direct command; too honest to construct a false justification for avoiding it; and too courageous to let knowledge of his own death function as a reason to refuse. Each virtue — righteousness, honesty, courage — is genuine. Together, in this specific configuration, they function as a trap that closes the moment Goshtasp gives the command.",
+      "explanation_fa": "وقتی جاماسپ می‌گوید مأموریت خواهد کشت، اسفندیار می‌گوید می‌داند. شاهنامه سه کیفیت ارائه می‌دهد که این را اجتناب‌ناپذیر می‌کند: خیلی صادق، خیلی صادق، خیلی شجاع. هر فضیلت واقعی است. با هم دامی می‌سازند.",
+      "explanation_tg": "Вақте Ҷомосп мегӯяд мӯъҷиза мекушад, Исфандиёр мегӯяд медонад. Шоҳнома се сифат нишон медиҳад: хеле содиқ, хеле ростгӯ, хеле далер.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "esp-m1",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh says Esfandiyar served Goshtasp for decades with no treachery in him — and was still imprisoned on false charges. What does this pattern establish about Goshtasp's character?",
+      "question_fa": "شاهنامه می‌گوید اسفندیار دهه‌ها بدونِ هیچ خیانتی خدمتِ گشتاسپ کرد — و هنوز بر اساسِ اتهاماتِ دروغ زندانی شد. این الگو چه چیزی درباره‌ی شخصیتِ گشتاسپ ثابت می‌کند؟",
+      "question_tg": "Шоҳнома мегӯяд Исфандиёр даҳсолаҳо бе хиёнат хидмат кард — ва ҳанӯз бо гуноҳи дурӯғин зиндонӣ шуд. Ин намуна дар бораи шахсияти Гуштосп чӣ мегӯяд?",
+      "answers": [
+        "It shows Goshtasp is simply incompetent — he believes false testimony because he has poor judgment",
+        "It shows that the Shahnameh condemns false testimony as the worst crime a courtier can commit",
+        "The imprisonment was just — there is evidence in the text that Esfandiyar was building a faction",
+        "It establishes that Goshtasp's fear has become independent of Esfandiyar's actual behavior — the son cannot do anything to reduce the threat his excellence poses to his father, which makes the later death-mission inevitable"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد گشتاسپ ساده‌لوحانه ناکارآمد است",
+        "نشان می‌دهد شاهنامه شهادتِ دروغ را بدترین جرم می‌داند",
+        "زندانی کردن عادلانه بود",
+        "ثابت می‌کند ترسِ گشتاسپ مستقل از رفتارِ واقعیِ اسفندیار شده — پسر نمی‌تواند هیچ کاری بکند تا تهدیدی که عظمتش برای پدرش ایجاد می‌کند را کاهش دهد، که مأموریتِ بعدیِ مرگ را اجتناب‌ناپذیر می‌کند"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад Гуштосп ноком аст",
+        "Нишон медиҳад Шоҳнома шаҳодати дурӯғро маҳкум мекунад",
+        "Зиндонӣ кардан одилона буд",
+        "Исбот мекунад тарси Гуштосп аз рафтори воқеии Исфандиёр мустақил шудааст — писар наметавонад ҳеҷ коре кунад то таҳдидеро ки азамататш барои падараш эҷод мекунад коҳиш диҳад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The imprisonment of Esfandiyar is the Shahnameh's proof that Goshtasp's fear has become structural rather than responsive. Esfandiyar had done nothing wrong — he had won wars, spread the faith, returned. Goshtasp used Gurz-Ahmar's false testimony as a pretext because he needed a pretext, not because the accusation was credible. The pattern says: even perfect behaviour cannot protect Esfandiyar from his father's fear. The excellence that makes Esfandiyar valuable also makes him a threat. There is nothing he can do to be both excellent and safe. This makes the final mission — Rostam in chains — inevitable.",
+      "explanation_fa": "زندانی کردنِ اسفندیار دلیلِ شاهنامه است که ترسِ گشتاسپ ساختاری شده نه واکنشی. اسفندیار کارِ اشتباهی نکرده بود. الگو می‌گوید: حتی رفتارِ کامل نمی‌تواند از اسفندیار در برابرِ ترسِ پدرش محافظت کند.",
+      "explanation_tg": "Зиндонии Исфандиёр далели Шоҳномаст ки тарси Гуштосп сохторӣ шудааст. Исфандиёр ҳеҷ коре нодуруст накарда буд. Намуна мегӯяд: ҳатто рафтори комил наметавонад аз Исфандиёр дар баробари тарси падараш муҳофизат кунад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "esp-m2",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Esfandiyar's dying words absolve Rostam and name Goshtasp as the real cause of his death. What does this moral accounting mean in the Shahnameh's framework?",
+      "question_fa": "آخرین کلماتِ اسفندیار رستم را تبرئه می‌کند و گشتاسپ را علتِ واقعیِ مرگش نام می‌برد. این حسابداریِ اخلاقی در چارچوبِ شاهنامه چه معنایی دارد؟",
+      "question_tg": "Охирин суханони Исфандиёр Рустамро беноҳ мекунад ва Гуштоспро علати воқеии маргаш мегӯяд. Ин дар чорчӯби Шоҳнома чӣ маъно дорад?",
+      "answers": [
+        "The Shahnameh distinguishes between the instrument of a death and its cause: Rostam was the instrument but Goshtasp was the cause — by sending Esfandiyar on an impossible mission with full knowledge of the outcome, Goshtasp manufactured the situation that made Rostam's arrow necessary",
+        "It shows that dying men in the Shahnameh always forgive their killers — it is a literary convention",
+        "It shows Esfandiyar was confused in his final moments — he blamed the wrong person",
+        "The absolution is meaningless because the Shahnameh also shows Rostam accepting Jamasp's curse"
+      ],
+      "answers_fa": [
+        "شاهنامه بینِ ابزارِ مرگ و علتِ آن تمایز قائل می‌شود: رستم ابزار بود اما گشتاسپ علت — با فرستادنِ اسفندیار روی مأموریتِ غیرممکن با آگاهیِ کاملِ نتیجه، گشتاسپ وضعیتی ساخت که تیرِ رستم را ضروری کرد",
+        "نشان می‌دهد مردانِ در حالِ مرگ در شاهنامه همیشه قاتلانشان را می‌بخشند",
+        "نشان می‌دهد اسفندیار در لحظاتِ آخرش گیج بود",
+        "تبرئه بی‌معناست چون شاهنامه رستم را هم پذیرندهٔ نفرین نشان می‌دهد"
+      ],
+      "answers_tg": [
+        "Шоҳнома байни абзори марг ва сабаби он фарқ мегузорад: Рустам абзор буд аммо Гуштосп сабаб — бо фиристодани Исфандиёр ба мӯъҷизаи ғайриимкон бо огоҳии пури натиҷа, Гуштосп вазъиятеро сохт ки тири Рустамро зарурӣ кард",
+        "Нишон медиҳад мардони дар ҳоли марг дар Шоҳнома ҳамеша қотилонашонро мебахшанд",
+        "Нишон медиҳад Исфандиёр дар лаҳзаҳои охираш гум шуда буд",
+        "Беноҳии беъмост"
+      ],
+      "correct_answer": 0,
+      "explanation": "Esfandiyar's dying words are the Shahnameh's most precise moral accounting — delivered by the only person with the standing and knowledge to deliver it accurately. He distinguishes between Rostam (who held the bow, who made the arrow, who aimed) and Goshtasp (who manufactured the situation that left no other option). A weapon does not bear the guilt of what it is aimed at. The man who aimed it does. Goshtasp sent his son knowing Rostam would not submit to chains, knowing Esfandiyar could not refuse the command, knowing the outcome. That is murder by proxy.",
+      "explanation_fa": "آخرین کلماتِ اسفندیار دقیق‌ترین حسابداریِ اخلاقیِ شاهنامه است. بینِ رستم (کمان را نگه داشت) و گشتاسپ (وضعیتی ساخت که گزینه‌ی دیگری نگذاشت) تمایز می‌گذارد. سلاح گناهِ آنچه به سمتِ آن نشانه رفته را نمی‌برد. مردی که آن را نشانه رفت می‌برد.",
+      "explanation_tg": "Охирин суханони Исфандиёр дақиқтарин ҳисобдориии ахлоқии Шоҳнома аст. Байни Рустам (камонро нигоҳ дошт) ва Гуштосп (вазъияте сохт ки роҳи дигаре нагузошт) фарқ мегузорад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "esp-h1",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The Shahnameh describes Esfandiyar as a man whose virtue is so complete that it becomes the mechanism of his destruction. What does this reveal about the kind of world Ferdowsi depicts?",
+      "question_fa": "شاهنامه اسفندیار را مردی توصیف می‌کند که فضیلتش به قدری کامل است که مکانیسمِ نابودیش می‌شود. این چه چیزی درباره‌ی نوعِ دنیایی که فردوسی تصویر می‌کند آشکار می‌کند؟",
+      "question_tg": "Шоҳнома Исфандиёрро мардест ки фазилаташ он қадар комил аст ки механизми нобудиаш мешавад тавсиф мекунад. Ин дар бораи дунёи Фирдавсӣ чӣ мегӯяд?",
+      "answers": [
+        "It reveals that Ferdowsi believed virtue is always rewarded — Esfandiyar's death is actually a form of divine elevation",
+        "It shows Ferdowsi's pessimism — he believed no human being could ever be truly virtuous",
+        "It reveals a world in which perfect virtue is not a protection but a target — the world Ferdowsi depicts cannot accommodate a man who cannot be corrupted, and so it uses his incorruptibility (his obedience, his honesty, his courage) as the specific mechanism to break him",
+        "It demonstrates that Zoroastrianism's promise of divine protection for the righteous is false"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد فردوسی باور داشت فضیلت همیشه پاداش می‌گیرد",
+        "بدبینیِ فردوسی را نشان می‌دهد",
+        "دنیایی را آشکار می‌کند که در آن فضیلتِ کامل محافظت نیست بلکه هدف است — دنیایی که فردوسی تصویر می‌کند نمی‌تواند مردی را که نمی‌شود فاسد کرد جای دهد، و از این رو از فسادناپذیریِ او به عنوانِ مکانیسمِ خاصِ شکستنش استفاده می‌کند",
+        "نشان می‌دهد وعده‌ی زرتشتیگری مبنی بر محافظتِ الهی از صادقان دروغ است"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад Фирдавсӣ бовар дошт фазилат ҳамеша подош мегирад",
+        "Бадбинии Фирдавсиро нишон медиҳад",
+        "Дунёеро ошкор мекунад ки дар он фазилати комил муҳофизат нест балки ҳадаф аст — дунёе ки Фирдавсӣ тасвир мекунад наметавонад мардеро ки фосид карда намешавад ҷой диҳад",
+        "Нишон медиҳад ваъдаи зардуштӣ дурӯғ аст"
+      ],
+      "correct_answer": 2,
+      "explanation": "Esfandiyar is the Shahnameh's most precise statement that virtue does not confer safety in the world Ferdowsi depicts. He has no ambition beyond honest service. He cannot be bribed, threatened, or corrupted. He cannot be made to lie or to refuse a legitimate command. These qualities are genuine virtues. In a different world they would protect him. In the world the Shahnameh describes — where a frightened king can use a virtuous son's obedience as the instrument of his destruction — his virtue is precisely what makes him destroyable. He cannot refuse the mission. That inability is the trap.",
+      "explanation_fa": "اسفندیار دقیق‌ترین اظهاریه‌ی شاهنامه است که فضیلت در دنیایی که فردوسی تصویر می‌کند ایمنی نمی‌دهد. جاه‌طلبی‌ای جز خدمتِ صادقانه ندارد. در دنیای متفاوتی این کیفیات محافظتش می‌کردند. در دنیایی که شاهنامه توصیف می‌کند — جایی که شاهِ ترسیده می‌تواند از اطاعتِ پسرِ صادق به عنوانِ ابزارِ نابودیش استفاده کند — فضیلتش دقیقاً آن چیزی است که نابودپذیرش می‌کند.",
+      "explanation_tg": "Исфандиёр дақиқтарин баёнияи Шоҳнома аст ки фазилат дар дунёе ки Фирдавсӣ тасвир мекунад амнияр намедиҳад. Дар дунёи дигаре ин сифатҳо муҳофизататш мекарданд. Дар дунёе ки Шоҳнома тавсиф мекунад, фазилаташ маҳз ҳамон чизест ки нобудпазираш мекунад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "esp-e3",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Where was Esfandiyar's single vulnerable spot?",
+      "question_fa": "تنها نقطه‌ی آسیب‌پذیرِ اسفندیار کجا بود؟",
+      "question_tg": "Ягона нуқтаи осебпазири Исфандиёр куҷо буд?",
+      "answers": [
+        "His heel",
+        "His chest over the heart",
+        "His eyes",
+        "His throat"
+      ],
+      "answers_fa": [
+        "پاشنه‌ی پایش",
+        "سینه‌اش بر روی قلب",
+        "چشمانش",
+        "گلویش"
+      ],
+      "answers_tg": [
+        "Пошнаи поёш",
+        "Синааш болои дил",
+        "Чашмонаш",
+        "Гулӯяш"
+      ],
+      "correct_answer": 2,
+      "explanation": "His eyes were open at the moment of immersion in sacred water. That is the one place iron can reach him.",
+      "explanation_fa": "چشمانش در لحظه‌ی غوطه‌وری در آبِ مقدس باز بودند. آن تنها جایی است که آهن می‌تواند به او برسد.",
+      "explanation_tg": "Чашмонаш дар лаҳзаи ғӯтавар шудан дар оби муқаддас боз буданд. Он ягона ҷоест ки оҳан метавонад ба ӯ расад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "esp-m3",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "On what false charge was Esfandiyar imprisoned at Gumbadan?",
+      "question_fa": "اسفندیار به چه اتهامِ دروغینی در گنبدان زندانی شد؟",
+      "question_tg": "Исфандиёр ба кадом иттиҳоми дурӯғе дар Гунбадан зиндонӣ шуд?",
+      "answers": [
+        "Planning a coup against Goshtasp",
+        "False testimony provided by a courtier named Gurz-Ahmar",
+        "Secretly negotiating with Afrasiab",
+        "Disobeying a royal military order"
+      ],
+      "answers_fa": [
+        "برنامه‌ریزی کودتا علیهِ گشتاسپ",
+        "شهادتِ دروغِ یک درباری به نامِ گرزِ احمر",
+        "مذاکره‌ی پنهانی با افراسیاب",
+        "نافرمانی از دستورِ نظامیِ شاهانه"
+      ],
+      "answers_tg": [
+        "Банақшагирии кудэта бар зидди Гуштосп",
+        "Шаҳодати дурӯғи дарборие ба номи Гурзи Аҳмар",
+        "Музокираи пинҳонӣ бо Афросиёб",
+        "Нофармонии аз дастури ҳарбии шоҳона"
+      ],
+      "correct_answer": 1,
+      "explanation": "'When a courtier named Gurz-Ahmar provided false testimony against him, Goshtasp had him imprisoned at Gumbadan without trial.'",
+      "explanation_fa": "«وقتی درباریِ به نامِ گرزِ احمر شهادتِ دروغ علیهش داد، گشتاسپ او را بدونِ محاکمه در گنبدان زندانی کرد.»",
+      "explanation_tg": "«Вақте дарборие ба номи Гурзи Аҳмар шаҳодати дурӯғ бар зиддаш дод, Гуштосп ӯро бидуни муҳокима дар Гунбадан зиндонӣ кард.»",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "esp-m4",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Jamasp told Esfandiyar the mission to bring Rostam would kill him. How did Esfandiyar respond?",
+      "question_fa": "جاماسپ به اسفندیار گفت مأموریتِ آوردنِ رستم او را خواهد کشت. اسفندیار چه پاسخ داد؟",
+      "question_tg": "Ҷомосп ба Исфандиёр гуфт мӯҳимияти овардани Рустам ӯро мекушад. Исфандиёр чӣ ҷавоб дод?",
+      "answers": [
+        "He asked Jamasp to find a different interpretation",
+        "He accepted — he knew and went anyway",
+        "He prayed for seven days before accepting",
+        "He tried to negotiate alternative terms with Goshtasp"
+      ],
+      "answers_fa": [
+        "از جاماسپ خواست تفسیرِ دیگری پیدا کند",
+        "پذیرفت — می‌دانست و باز هم رفت",
+        "هفت روز قبل از پذیرش دعا کرد",
+        "سعی کرد شرایطِ جایگزین با گشتاسپ مذاکره کند"
+      ],
+      "answers_tg": [
+        "Аз Ҷомосп хост тафсири дигаре ёбад",
+        "Пазируфт — медонист ва боз ҳам рафт",
+        "Ҳафт рӯз пеш аз пазируфтан дуо кард",
+        "Кӯшид шартҳои алтернативи бо Гуштосп музокира кунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Jamasp the astrologer told Esfandiyar plainly: this mission will kill you. Esfandiyar replied that he knew. He went anyway.'",
+      "explanation_fa": "«جاماسپ ستاره‌شناس صریحاً به اسفندیار گفت: این مأموریت تو را می‌کشد. اسفندیار پاسخ داد که می‌داند. باز هم رفت.»",
+      "explanation_tg": "«Ҷомосп ситорашинос равшан ба Исфандиёр гуфт: ин мӯҳимият туро мекушад. Исфандиёр ҷавоб дод ки медонад. Боз ҳам рафт.»",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "esp-m5",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "The chapter describes Esfandiyar's biography as 'the structure of an inevitable tragedy.' What makes it inevitable?",
+      "question_fa": "فصل زندگینامه‌ی اسفندیار را «ساختارِ یک تراژدیِ اجتناب‌ناپذیر» توصیف می‌کند. چه چیزی آن را اجتناب‌ناپذیر می‌کند؟",
+      "question_tg": "Фасл тарҷумаи ҳоли Исфандиёрро «сохтори як фоҷиаи ногузир» тавсиф мекунад. Чӣ чиз онро ногузир мекунад?",
+      "answers": [
+        "He was cursed at birth by a rival king",
+        "He is too righteous to disobey, too honest to pretend, too courageous to stop — his virtues are the mechanism of his destruction",
+        "He chose a path of war that could only end in death",
+        "His invulnerability blinded him to real danger"
+      ],
+      "answers_fa": [
+        "هنگامِ تولد توسطِ شاهِ رقیبی نفرین شده بود",
+        "خیلی پرهیزکار است که نافرمانی کند، خیلی صادق است که وانمود کند، خیلی شجاع است که متوقف شود — فضائلش مکانیزمِ نابودی‌اش هستند",
+        "مسیرِ جنگی انتخاب کرده بود که فقط می‌توانست با مرگ تمام شود",
+        "آسیب‌ناپذیری‌اش چشمانش را به خطرِ واقعی کور کرده بود"
+      ],
+      "answers_tg": [
+        "Ҳангоми таваллуд аз ҷониби подшоҳи рақиб нафрин шуда буд",
+        "Хеле парезгор аст ки нофармонӣ кунад, хеле ростин аст ки вонамуд кунад, хеле ҷасур аст ки истад — фазилатҳояш механизми нобудиаш ҳастанд",
+        "Масири ҷангӣ интихоб карда буд ки танҳо бо марг тамом мешуд",
+        "Таъсирнопазириаш чашмонашро ба хатари воқеӣ кӯр карда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "'He was too righteous to disobey his father's command, too honest to pretend he had a reason not to go, too courageous to let the knowledge of his own death stop him.'",
+      "explanation_fa": "«خیلی پرهیزکار بود که دستورِ پدرش را نافرمانی کند، خیلی صادق که وانمود کند دلیلی برای نرفتن دارد، خیلی شجاع که دانشِ مرگِ خودش او را متوقف کند.»",
+      "explanation_tg": "«Хеле парезгор буд ки дастури падарашро нофармонӣ кунад, хеле ростин ки вонамуд кунад сабабе барои нарафтан дорад, хеле ҷасур ки дониши маргаш ӯро боздорад.»",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "esp-h2",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The chapter says Esfandiyar 'served Goshtasp for decades with no treachery in him.' Why does this specific phrase make his story tragic?",
+      "question_fa": "فصل می‌گوید اسفندیار «دهه‌ها بدونِ هیچ خیانتی به گشتاسپ خدمت کرد.» چرا این عبارتِ خاص داستانش را تراژیک می‌کند؟",
+      "question_tg": "Фасл мегӯяд Исфандиёр «даҳсолаҳо бидуни ҳеҷ хиёнате ба Гуштосп хидмат кард.» Чаро ин ибораи хосса ҳикоятро фоҷиавӣ мекунад?",
+      "answers": [
+        "Treachery would have been more interesting",
+        "Complete faithfulness meant his destruction came despite perfect service — every justification to harm him had to be invented",
+        "It proves he was too loyal to act in self-interest",
+        "Goshtasp felt more threatened by loyal servants"
+      ],
+      "answers_fa": [
+        "خیانت جالب‌تر بود",
+        "وفاداریِ کامل یعنی نابودیش با وجودِ خدمتِ کامل آمد — هر توجیهی برای آزارش باید اختراع می‌شد",
+        "ثابت می‌کند که خیلی وفادار بود که به نفعِ خودش عمل کند",
+        "گشتاسپ از خدمتکارانِ وفادار بیشتر احساسِ تهدید می‌کرد"
+      ],
+      "answers_tg": [
+        "Хиёнат ҷолибтар мебуд",
+        "Вафодории комил яъне нобудиаш бо вуҷуди хидмати комил омад — ҳар тавҷеҳе барои озораш бояд ихтироъ мешуд",
+        "Исбот мекунад ки хеле вафодор буд ки ба нафъи худаш амал кунад",
+        "Гуштосп аз хизматгузорони вафодор бештар аҳсоси таҳдид мекард"
+      ],
+      "correct_answer": 1,
+      "explanation": "A traitor would deserve punishment. Esfandiyar was perfectly faithful — so justifications had to be invented (false testimony, structural fear) to harm him.",
+      "explanation_fa": "خائن مستحقِ مجازات بود. اسفندیار کاملاً وفادار بود — پس توجیهات باید اختراع می‌شدند (شهادتِ دروغ، ترسِ ساختاری) تا به او آسیب برسانند.",
+      "explanation_tg": "Хоин مустаҳиқи ҷазо мебуд. Исфандиёр комилан вафодор буд — пас тавҷеҳот бояд ихтироъ мешуданд (шаҳодати дурӯғ, тарси сохторӣ) то ба ӯ осеб расонанд.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "esp-h3",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "When Esfandiyar was imprisoned at Gumbadan, what did he do while there?",
+      "question_fa": "وقتی اسفندیار در گنبدان زندانی شد، در آنجا چه کرد؟",
+      "question_tg": "Вақте Исфандиёр дар Гунбадан зиндонӣ шуд, он ҷо чӣ кард?",
+      "answers": [
+        "He organized a prison escape",
+        "He did not plot escape, did not organize supporters — he waited",
+        "He sent secret messages to the paladins",
+        "He went on a hunger strike to protest"
+      ],
+      "answers_fa": [
+        "فرارِ از زندان سازماندهی کرد",
+        "نه فرارِ از زندان برنامه‌ریزی کرد نه حامیان سازماندهی کرد — منتظر ماند",
+        "پیام‌های پنهانی به پالادین‌ها فرستاد",
+        "اعتصابِ غذا کرد برای اعتراض"
+      ],
+      "answers_tg": [
+        "Гуреза аз зиндон ташкил кард",
+        "На гуреза аз зиндон банақша гирифт на ҳомиёнро ташкил кард — интизор монд",
+        "Паёмҳои пинҳонӣ ба паладинҳо фиристод",
+        "Эътисоби ғизо кард барои эътироз"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Esfandiyar did not plot escape. He did not organize his supporters. He waited.' This is consistent with his character.",
+      "explanation_fa": "«اسفندیار فرار از زندان برنامه‌ریزی نکرد. حامیانش را سازماندهی نکرد. منتظر ماند.» این با شخصیتش سازگار است.",
+      "explanation_tg": "«Исфандиёр гуреза аз зиндон банақша нагирифт. Ҳомиёнашро ташкил накард. Интизор монд.» Ин бо шахсияташ созгор аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "esp-h4",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The chapter says Esfandiyar grew up knowing his vulnerability 'the way a man knows his own height.' What does this comparison mean?",
+      "question_fa": "فصل می‌گوید اسفندیار با دانستنِ آسیب‌پذیری‌اش «به شیوه‌ای که مرد قدِ خودش را می‌داند» بزرگ شد. این مقایسه چه معنایی دارد؟",
+      "question_tg": "Фасл мегӯяд Исфандиёр бо донистани осебпазириаш «ба тарзе ки мард қади худашро медонад» калон шуд. Ин муқоиса чӣ маъно дорад?",
+      "answers": [
+        "He was always worried about protecting his eyes in battle",
+        "It was a known fact about himself that he lived with neutrally — present but not obsessed over",
+        "He measured his life by how his vulnerability constrained his actions",
+        "He tried to hide the vulnerability from everyone"
+      ],
+      "answers_fa": [
+        "همیشه نگرانِ حفظِ چشمانش در نبرد بود",
+        "واقعیتِ شناخته‌شده‌ای درباره‌ی خودش بود که به طورِ خنثی با آن زندگی می‌کرد — حاضر اما وسواس‌گونه نه",
+        "زندگی‌اش را با میزانِ محدودیتِ آسیب‌پذیری‌اش بر اعمالش می‌سنجید",
+        "سعی می‌کرد آسیب‌پذیری را از همه پنهان کند"
+      ],
+      "answers_tg": [
+        "Ҳамеша нигарони ҳифзи чашмонаш дар набард буд",
+        "Воқеияти маълуме дар бораи худаш буд ки ба таври бетараф бо он зиндагӣ мекард — ҳозир аммо васвосона не",
+        "Зиндагиашро бо миёзони маҳдудияти осебпазириаш бар амалҳояш месанҷид",
+        "Кӯшиш мекард осебпазириро аз ҳама пинҳон кунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "A man doesn't obsess over his height — it's just a known fact. Esfandiyar's vulnerability was similar: known, accepted, not defining his daily consciousness.",
+      "explanation_fa": "مرد وسواسِ قدش را ندارد — فقط واقعیتِ شناخته‌شده‌ای است. آسیب‌پذیریِ اسفندیار مشابه بود: شناخته‌شده، پذیرفته‌شده، آگاهیِ روزانه‌اش را تعریف نمی‌کرد.",
+      "explanation_tg": "Мард аз қадаш васвос нест — танҳо воқеияти маълумест. Осебпазирии Исфандиёр шабеҳ буд: маълум, қабулшуда, огоҳии рӯзонаашро таъриф намекард.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "esp-h5",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Goshtasp's final command was: bring Rostam to court in chains. The chapter says Esfandiyar knew this would kill him. Why did going anyway make this tragic rather than brave?",
+      "question_fa": "فرمانِ نهاییِ گشتاسپ این بود: رستم را با زنجیر به دربار بیاور. فصل می‌گوید اسفندیار می‌دانست این او را می‌کشد. چرا رفتن باز هم این را تراژیک می‌کند نه شجاعانه؟",
+      "question_tg": "Фармони ниҳоии Гуштосп ин буд: Рустамро бо занҷир ба дарбор биёр. Фасл мегӯяд Исфандиёр медонист ин ӯро мекушад. Чаро рафтани боз ҳам ин фоҷиавӣ аст на ҷасурона?",
+      "answers": [
+        "Bravery requires not knowing the danger — he was merely reckless",
+        "Both bravery and tragedy coexist — the tragedy is that a man with full knowledge still cannot choose otherwise, his virtues locking him into the fatal path",
+        "He did not actually believe the prophecy",
+        "Going was foolish given the risk to Iran"
+      ],
+      "answers_fa": [
+        "شجاعت نیاز دارد که خطر را ندانی — فقط بی‌پروا بود",
+        "شجاعت و تراژدی هر دو با هم وجود دارند — تراژدی این است که مردی با دانشِ کامل هنوز نمی‌تواند غیر از این انتخاب کند، فضائلش او را به مسیرِ کشنده قفل می‌کند",
+        "در واقع به پیشگویی اعتقاد نداشت",
+        "رفتن با توجه به خطر برای ایران احمقانه بود"
+      ],
+      "answers_tg": [
+        "Ҷасурӣ ниёз дорад ки хатарро надонӣ — танҳо бепарво буд",
+        "Ҷасурӣ ва фоҷиа ҳарду бо ҳам вуҷуд доранд — фоҷиа ин аст ки марде бо дониши комил ҳанӯз наметавонад ғайр аз ин интихоб кунад, фазилатҳояш ӯро ба масири кушандаро қулф мекунанд",
+        "Дар асл ба пешгӯйӣ эътиқод надошт",
+        "Рафтан бо назардошти хатар барои Эрон беақлона буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Tragedy and bravery are not opposites. The tragedy is structural: full knowledge of the outcome, no capacity to choose otherwise. His virtues are the lock.",
+      "explanation_fa": "تراژدی و شجاعت متضاد نیستند. تراژدی ساختاری است: دانشِ کامل از نتیجه، هیچ ظرفیتی برای انتخابِ دیگر. فضائلش قفلند.",
+      "explanation_tg": "Фоҷиа ва ҷасурӣ мутазод нестанд. Фоҷиа сохторӣ аст: дониши комил аз натиҷа, ҳеҷ зарфияте барои интихоби дигар. Фазилатҳояш қулфанд.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "esp-h6",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The chapter ends by describing Esfandiyar as 'a man too good for the world it depicts, who will be broken by it for exactly that reason.' What does this mean?",
+      "question_fa": "فصل با توصیفِ اسفندیار به عنوانِ «مردی بیش از حد خوب برای دنیایی که توصیف می‌کند، که به دقیقاً همین دلیل توسطِ آن شکسته خواهد شد» تمام می‌شود. این یعنی چه؟",
+      "question_tg": "Фасл бо тавсифи Исфандиёр ҳамчун «марде хеле хуб барои дунёе ки тавсиф мекунад, ки ба дақиқан ҳамин далел аз ҷониби он шикаста мешавад» тамом мешавад. Ин яъне чӣ?",
+      "answers": [
+        "Goodness is ineffective in a world of violence",
+        "His virtues — righteousness, honesty, courage — are precisely what prevent him from taking any action that would save himself",
+        "The Shahnameh rewards only warriors, not virtuous men",
+        "Good men always die young in the chronicle"
+      ],
+      "answers_fa": [
+        "خوبی در دنیای خشونت بی‌اثر است",
+        "فضائلش — پرهیزکاری، صداقت، شجاعت — دقیقاً همان چیزی هستند که مانع از انجامِ هر عملی می‌شوند که او را نجات دهد",
+        "شاهنامه فقط جنگجویان را پاداش می‌دهد، نه مردانِ فضیلتمند",
+        "مردانِ خوب در شاهنامه همیشه جوان می‌میرند"
+      ],
+      "answers_tg": [
+        "Хубӣ дар дунёи хушунат бетаъсир аст",
+        "Фазилатҳояш — парезгорӣ, ростинӣ, ҷасурӣ — дақиқан ҳамон чизе ҳастанд ки монеъ аз анҷоми ҳар амале мешаванд ки ӯро наҷот диҳад",
+        "Шоҳнома танҳо ҷангиёнро подош медиҳад, на мардони фазилатманд",
+        "Мардони хуб дар Шоҳнома ҳамеша ҷавон мемиранд"
+      ],
+      "correct_answer": 1,
+      "explanation": "His righteousness prevents disobedience. His honesty prevents false excuses. His courage prevents retreat from known death. The virtues form the cage.",
+      "explanation_fa": "پرهیزکاری‌اش مانعِ نافرمانی است. صداقتش مانعِ بهانه‌های دروغ است. شجاعتش مانعِ عقب‌نشینی از مرگِ شناخته‌شده است. فضائل قفس را تشکیل می‌دهند.",
+      "explanation_tg": "Парезгориаш монеъи нофармонӣ аст. Ростиниаш монеъи баҳонаҳои дурӯғ аст. Ҷасуриаш монеъи ақибнишинӣ аз марги маълум аст. Фазилатҳо қафасро ташкил медиҳанд.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "esp-h7",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Esfandiyar was bathed in sacred water and became brazen. The chapter says his eyes were open during immersion, making them vulnerable. Why doesn't the chapter explain why open eyes weren't protected?",
+      "question_fa": "اسفندیار در آبِ مقدس غوطه‌ور شد و رویین‌تن شد. فصل می‌گوید چشمانش در طولِ غوطه‌وری باز بودند که آن‌ها را آسیب‌پذیر کرد. چرا فصل توضیح نمی‌دهد که چرا چشمانِ باز محافظت نشدند؟",
+      "question_tg": "Исфандиёр дар оби муқаддас ғӯтавар шуд ва рӯин шуд. Фасл мегӯяд чашмонаш дар тӯли ғӯтаварӣ боз буданд ки онҳоро осебпазир кард. Чаро фасл тавзеҳ намедиҳад ки чаро чашмони боз ҳимоят нашуданд?",
+      "answers": [
+        "Ferdowsi didn't know the reason",
+        "The Shahnameh presents certain facts about the sacred world as rules that simply apply — no justification is offered or needed",
+        "Eyes represent consciousness which cannot be made physical",
+        "The original Persian manuscript explained it but was lost"
+      ],
+      "answers_fa": [
+        "فردوسی دلیل را نمی‌دانست",
+        "شاهنامه برخی واقعیات درباره‌ی دنیای مقدس را به عنوانِ قوانینی ارائه می‌دهد که صرفاً اعمال می‌شوند — هیچ توجیهی ارائه نمی‌شود یا لازم نیست",
+        "چشمان نمایانگرِ آگاهی هستند که نمی‌توان آن را جسمانی کرد",
+        "دستنوشته‌ی اصلیِ فارسی آن را توضیح داده بود اما گم شد"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ сабабро намедонист",
+        "Шоҳнома бархе воқеиятҳо дар бораи дунёи муқаддасро ҳамчун қонунҳое пешкаш мекунад ки танҳо татбиқ мешаванд — ҳеҷ тавҷеҳе пешкаш намешавад ё лозим нест",
+        "Чашмон намояндаи огоҳӣ ҳастанд ки ҷисмонӣ карда намешавад",
+        "Дастнависи аслии Форсӣ онро тавзеҳ дода буд аммо гум шуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh says: his eyes were open. That is the one place iron can reach. No explanation is given. The world has rules that simply apply.",
+      "explanation_fa": "شاهنامه می‌گوید: چشمانش باز بودند. آن تنها جایی است که آهن می‌تواند به او برسد. هیچ توضیحی داده نمی‌شود. دنیا قوانینی دارد که صرفاً اعمال می‌شوند.",
+      "explanation_tg": "Шоҳнома мегӯяд: чашмонаш боз буданд. Он ягона ҷоест ки оҳан метавонад ба ӯ расад. Ҳеҷ тавзеҳе дода намешавад. Дунё қонунҳое дорад ки танҳо татбиқ мешаванд.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "esp-h8",
+      "chapter_slug": "esfandiyar",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The chapter says Goshtasp's final command to Esfandiyar was 'specific.' Why does the chapter emphasize the specificity of the command?",
+      "question_fa": "فصل می‌گوید فرمانِ نهاییِ گشتاسپ به اسفندیار «مشخص» بود. چرا فصل بر مشخص بودنِ فرمان تأکید می‌کند؟",
+      "question_tg": "Фасл мегӯяд фармони ниҳоии Гуштосп ба Исфандиёр «мушаххас» буд. Чаро фасл бар мушаххас будани фармон таъкид мекунад?",
+      "answers": [
+        "To show Goshtasp had planned everything in advance",
+        "The specificity closes every alternative — any other form of compliance would satisfy the command, but 'in chains' leaves Rostam no honorable option and Esfandiyar no room to interpret",
+        "To establish that Goshtasp had good legal reasons",
+        "To show that Esfandiyar could not misunderstand"
+      ],
+      "answers_fa": [
+        "نشان دهد که گشتاسپ همه چیز را از قبل برنامه‌ریزی کرده بود",
+        "مشخص بودن همه‌ی جایگزین‌ها را می‌بندد — هر شکلِ دیگری از تبعیت فرمان را برآورده می‌کرد، اما «با زنجیر» هیچ گزینه‌ی شرافتمندانه‌ای برای رستم باقی نمی‌گذارد و هیچ فضایی برای تفسیر برای اسفندیار",
+        "برای تثبیتِ اینکه گشتاسپ دلایلِ قانونیِ خوبی داشت",
+        "برای نشان دادنِ اینکه اسفندیار نمی‌توانست سوءتفاهم داشته باشد"
+      ],
+      "answers_tg": [
+        "Нишон диҳад ки Гуштосп ҳама чизро аз пеш банақша гирифта буд",
+        "Мушаххасӣ ҳама ҷойгузинҳоро мебандад — ҳар шакли дигари итоаъ фармонро иҷро мекард, аммо «бо занҷир» ҳеҷ гузинаи шарафатмандонаеро барои Рустам боқӣ намегузорад ва ҳеҷ фазоеро барои тафсир барои Исфандиёр",
+        "Барои таъсис кардани ин ки Гуштосп далелҳои ҳуқуқии хубе дошт",
+        "Барои нишон додан ки Исфандиёр наметавонист сӯитафоҳум дошта бошад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'In chains' specifically — not 'bring Rostam' or 'get Rostam to court' — means every other arrangement Esfandiyar could propose would be disobedience.",
+      "explanation_fa": "«با زنجیر» مشخصاً — نه «رستم را بیاور» یا «رستم را به دربار برسان» — یعنی هر ترتیبِ دیگری که اسفندیار می‌توانست پیشنهاد دهد نافرمانی بود.",
+      "explanation_tg": "«Бо занҷир» мушаhhасан — на «Рустамро биёр» ё «Рустамро ба дарбор бирасон» — яъне ҳар тартиби дигаре ки Исфандиёр метавонист пешниҳод диҳад нофармонӣ мебуд.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

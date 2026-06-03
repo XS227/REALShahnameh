@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "bah-e1",
+      "chapter_slug": "bahman",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Who was Bahman, and what did he know about his father Esfandiyar's death?",
+      "question_fa": "بهمن کی بود، و درباره‌ی مرگِ پدرش اسفندیار چه می‌دانست؟",
+      "question_tg": "Баҳман кӣ буд ва дар бораи марги падараш Исфандиёр чӣ медонист?",
+      "answers": [
+        "Esfandiyar's son — he came of age knowing that Goshtasp had used his father as a tool to neutralize Rostam, sending him on a mission designed to make him fail or die",
+        "Esfandiyar's nephew — he was adopted into the royal household after Esfandiyar's death",
+        "Esfandiyar's son — he believed his father had been killed by Rostam in an act of pure aggression",
+        "Esfandiyar's son — he knew only that his father had died in battle and vowed general revenge against all of Zabulestan"
+      ],
+      "answers_fa": [
+        "پسرِ اسفندیار — با این دانش بزرگ شد که گشتاسپ پدرش را به ابزار برای خنثی کردنِ رستم تبدیل کرده بود، با فرستادنش به مأموریتی که برای شکست یا مرگِ او طراحی شده بود",
+        "برادرزاده‌ی اسفندیار — بعد از مرگِ اسفندیار به خانواده‌ی سلطنتی به فرزندی پذیرفته شد",
+        "پسرِ اسفندیار — اعتقاد داشت پدرش در اثرِ اقدامِ تجاوزکارانه‌ی خالصِ رستم کشته شده است",
+        "پسرِ اسفندیار — فقط می‌دانست پدرش در نبرد کشته شده و انتقامِ عمومی از کلِّ زابلستان سوگند خورد"
+      ],
+      "answers_tg": [
+        "Писари Исфандиёр — бо ин дониш калон шуд ки Гуштосп падарашро ба абзор барои бетасир кардани Рустам табдил карда буд, бо фиристодани ӯ ба мأмурияте ки барои шикаст ё марги ӯ тарҳрезӣ шуда буд",
+        "Бародарзодаи Исфандиёр — пас аз марги Исфандиёр ба оилаи шоҳонӣ ба фарзандӣ пазируфта шуд",
+        "Писари Исфандиёр — бовар дошт падарашро Рустам дар амали таҷовузкоронаи холис кушта",
+        "Писари Исфандиёр — танҳо медонист падараш дар ҷанг кушта шудааст"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahman was Esfandiyar's son. He came of age knowing exactly what had happened: Goshtasp had sent Esfandiyar to chain Rostam not because Rostam had rebelled, but because Goshtasp feared his own son's popularity and needed him to fail or die at a safe distance from the throne. Esfandiyar walked into the mission with his eyes open — and died for his father's fear.",
+      "explanation_fa": "بهمن پسرِ اسفندیار بود. با این دانشِ دقیق بزرگ شد: گشتاسپ اسفندیار را فرستاده بود تا رستم را در زنجیر کند نه به این خاطر که رستم شورش کرده بود، بلکه چون گشتاسپ از محبوبیتِ پسرش می‌ترسید و نیاز داشت در فاصله‌ای امن از تخت شکست بخورد یا بمیرد. اسفندیار با چشمانِ باز وارد مأموریت شد — و برای ترسِ پدرش مُرد.",
+      "explanation_tg": "Баҳман писари Исфандиёр буд. Бо ин дониши дақиқ калон шуд: Гуштосп Исфандиёрро фиристода буд то Рустамро дар занҷир кунад на аз сабаби он ки Рустам шӯриш карда буд, балки зеро Гуштосп аз маҳбубияти писараш метарсид ва ниёз дошт дар фосилаи бехатаре аз тахт шикаст хӯрад ё бимирад. Исфандиёр бо чашмони кушода ба мأмурият ворид шуд — ва барои тарси падараш мурд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "bah-e2",
+      "chapter_slug": "bahman",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What kind of ruler did Bahman prove to be after taking the throne?",
+      "question_fa": "بهمن بعد از گرفتنِ تخت چه نوع فرمانروایی بود؟",
+      "question_tg": "Баҳман пас аз гирифтани тахт чӣ навъ ҳокиме буд?",
+      "answers": [
+        "A capable and orderly ruler — he administered the kingdom with precision, kept the borders, and held court without the tantrums that had characterized Goshtasp's reign",
+        "A weak ruler consumed by grief over his father, unable to maintain the borders or discipline the court",
+        "A tyrant who purged the court of anyone loyal to the previous generation's heroes",
+        "An ineffective king who delegated all real power to his daughter Homay from the beginning"
+      ],
+      "answers_fa": [
+        "فرمانروایی توانمند و منظم — پادشاهی را با دقت اداره کرد، مرزها را نگه داشت، و دربار را بدونِ نوبه‌های خشمی که دورانِ گشتاسپ را مشخص کرده بود اداره کرد",
+        "فرمانروایی ضعیف که به خاطرِ اندوهِ پدرش گرفتار شده بود و نمی‌توانست مرزها را نگه دارد یا دربار را منضبط کند",
+        "جباری که دربار را از هر کسی که به قهرمانانِ نسلِ قبل وفادار بود پاکسازی کرد",
+        "شاهِ بی‌کفایتی که از ابتدا همه‌ی قدرتِ واقعی را به دخترش هما تفویض کرد"
+      ],
+      "answers_tg": [
+        "Ҳокими тавонманд ва мунтазам — подшоҳиро бо дақиқ идора кард, марзҳоро нигоҳ дошт ва дарборро бидуни ғазаббозиҳое ки давраи Гуштоспро тавсиф карда буд идора кард",
+        "Ҳокими заиф ки аз ғами падараш гирифтор шуда буд ва наметавонист марзҳоро нигоҳ дорад ё дарборро мунзабит кунад",
+        "Золиме ки дарборро аз ҳар касе ки ба қаҳрамонони насли қаблӣ содиқ буд пок кард",
+        "Подшоҳи нокорамаде ки аз аввал ҳамаи қудрати воқеиро ба духтараш Ҳамо вогузор кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahman proved a more capable ruler than his dynasty had produced in a generation. He administered the kingdom with precision, kept borders, and held court without the tantrums that had characterized Goshtasp. In a narrow sense, he succeeded at everything he attempted. But he also marched on Zabulestan — and this success and that one were not separable.",
+      "explanation_fa": "بهمن فرمانروایِ توانمندتری از آنچه سلسله‌اش در یک نسل تولید کرده بود ثابت شد. پادشاهی را با دقت اداره کرد، مرزها را نگه داشت، و دربار را بدونِ نوبه‌های خشمِ گشتاسپ اداره کرد. به طورِ محدود، در همه چیزی که امتحان کرد موفق شد. اما به زابلستان هم لشکر کشید — و این دو موفقیت از هم جدا نبودند.",
+      "explanation_tg": "Баҳман ҳокими тавонмандтаре аз он чи сулолааш дар як насл тавлид карда буд исбот кард. Подшоҳиро бо дақиқ идора кард, марзҳоро нигоҳ дошт ва дарборро бидуни ғазаббозиҳои Гуштосп идора кард. Ба таври маҳдуд, дар ҳама чизе ки озмуд муваффақ шуд. Аммо ба Забулистон ҳам лашкар кашид — ва ин ду муваффақияте аз ҳам ҷудо набуданд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "bah-m1",
+      "chapter_slug": "bahman",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Why did Bahman march against Zabulestan — and against whom specifically did he direct his campaign?",
+      "question_fa": "چرا بهمن به زابلستان لشکر کشید — و مشخصاً علیهِ چه کسی لشکرکشی‌اش را هدایت کرد؟",
+      "question_tg": "Чаро Баҳман ба Забулистон лашкар кашид — ва мушаххасан бар зидди кӣ лашкаркашиашро ҳидоят кард?",
+      "answers": [
+        "Against Faramarz, Rostam's son — not because Zal had done anything wrong, but because Faramarz stood between Bahman's house and the completion of a debt owed since Esfandiyar's death",
+        "Against Zal personally — he held Zal responsible for giving Rostam permission to resist Esfandiyar",
+        "Against the entire province of Zabulestan — he wanted to destroy it so no future champion could rise from there",
+        "Against Rostam's widow — she had been sending diplomatic letters demanding compensation from the Kayanian court"
+      ],
+      "answers_fa": [
+        "علیهِ فرامرز، پسرِ رستم — نه به این خاطر که زال کارِ اشتباهی کرده بود، بلکه چون فرامرز بینِ خانه‌ی بهمن و تکمیلِ بدهی‌ای که از مرگِ اسفندیار باقی مانده بود قرار داشت",
+        "علیهِ زالِ شخصاً — او زال را مسئولِ دادنِ اجازه به رستم برای مقاومت در برابرِ اسفندیار می‌دانست",
+        "علیهِ کلِّ استانِ زابلستان — می‌خواست آن را نابود کند تا هیچ قهرمانِ آینده‌ای نتواند از آنجا ظهور کند",
+        "علیهِ همسرِ رستم — که نامه‌های دیپلماتیک فرستاده بود و از دربارِ کیانی غرامت می‌خواست"
+      ],
+      "answers_tg": [
+        "Бар зидди Фаромарз, писари Рустам — на аз сабаби он ки Зол кори нодурусте карда буд, балки зеро Фаромарз байни хонаи Баҳман ва иҷрои қарзе ки аз марги Исфандиёр мондa буд, қарор дошт",
+        "Бар зидди Золи шахсӣ — ӯ Золро масъули додани иҷоза ба Рустам барои муқовимат дар муқобили Исфандиёр медонист",
+        "Бар зидди тамоми вилояти Забулистон — мехост онро нобуд кунад то ҳеч паҳлавони ояндае аз он ҷо зуҳур карда натавонад",
+        "Бар зидди ҳамсари Рустам — ки номаҳои дипломатӣ мефиристод ва аз дарбори Каёнӣ ғарамат металабид"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahman marched not because Zal had done anything wrong — Zal, now ancient, had been the most faithful servant of the Kayanian house across five generations. He marched because Faramarz, Rostam's son, stood between the house of Bahman and the completion of a debt owed since Esfandiyar's death. Faramarz made the stand that his father never had to make, and lost.",
+      "explanation_fa": "بهمن لشکر کشید نه به این خاطر که زال کارِ اشتباهی کرده بود — زال، که حالا بسیار پیر بود، در طولِ پنج نسل وفادارترین خدمتگزارِ خانه‌ی کیانی بوده بود. لشکر کشید چون فرامرز، پسرِ رستم، بینِ خانه‌ی بهمن و تکمیلِ بدهی از مرگِ اسفندیار قرار داشت. فرامرز مقاومتی کرد که پدرش هرگز لازم نشده بود و شکست خورد.",
+      "explanation_tg": "Баҳман лашкар кашид на аз сабаби он ки Зол кори нодурусте карда буд — Зол, ки ҳоло бисёр пир буд, дар тӯли панҷ насл содиқтарин хидматгузори хонаи Каёнӣ будааст. Лашкар кашид зеро Фаромарз, писари Рустам, байни хонаи Баҳман ва иҷрои қарз аз марги Исфандиёр қарор дошт. Фаромарз муқовимате кард ки падараш ҳеч гоҳ лозим нашуда буд ва шикаст хӯрд.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "bah-m2",
+      "chapter_slug": "bahman",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What was the result of Bahman's campaign against Faramarz and the house of Zal?",
+      "question_fa": "نتیجه‌ی لشکرکشیِ بهمن علیهِ فرامرز و خانه‌ی زال چه بود؟",
+      "question_tg": "Натиҷаи лашкаркашии Баҳман бар зидди Фаромарз ва хонаи Зол чӣ буд?",
+      "answers": [
+        "The house of Zal was broken — the line that had been more faithful to Iran than any king Iran had produced was finally destroyed",
+        "Bahman was defeated and forced to sign a peace agreement recognizing Faramarz as an independent ruler",
+        "A compromise was reached — Faramarz submitted symbolically while retaining actual power in Zabulestan",
+        "The campaign was inconclusive, ending when Bahman died suddenly before achieving his objective"
+      ],
+      "answers_fa": [
+        "خانه‌ی زال شکسته شد — نسبی که از هر شاهی که ایران تولید کرده بود به ایران وفادارتر بود سرانجام نابود شد",
+        "بهمن شکست خورد و مجبور به امضای پیمانِ صلحی شد که فرامرز را به عنوانِ فرمانروایِ مستقل به رسمیت می‌شناخت",
+        "سازشی حاصل شد — فرامرز نمادین تسلیم شد درحالی‌که قدرتِ واقعی را در زابلستان حفظ کرد",
+        "لشکرکشی بی‌نتیجه بود و وقتی بهمن ناگهان قبل از رسیدن به هدفش مُرد پایان یافت"
+      ],
+      "answers_tg": [
+        "Хонаи Зол шикаст — насле ки аз ҳар подшоҳе ки Эрон тавлид карда буд ба Эрон содиқтар буд дар ниҳоят нобуд шуд",
+        "Баҳман шикаст хӯрд ва маҷбур шуд паймони сулҳе имзо кунад ки Фаромарзро ҳамчун ҳокими мустақил эътироф мекард",
+        "Мусолиҳае ба даст омад — Фаромарз рамзан таслим шуд дар ҳоле ки қудрати воқеиро дар Забулистон нигоҳ дошт",
+        "Лашкаркашӣ бенатиҷа буд ва вақте Баҳман ногаҳон пеш аз расидан ба ҳадафаш мурд поён ёфт"
+      ],
+      "correct_answer": 0,
+      "explanation": "The house of Zal — which had held Iran's border through war after war that its kings started and its warriors finished — was broken at last. Faramarz made the stand that his father Rostam never had to make, and lost. The Shahnameh treats this as simultaneously a victory and a loss: Bahman achieved what he set out to achieve, but destroyed the line most faithful to Iran in doing so.",
+      "explanation_fa": "خانه‌ی زال — که مرزِ ایران را در میانِ جنگ پس از جنگی که شاهانش شروع کرده بودند و جنگجویانش تمام کرده بودند نگه داشته بود — سرانجام شکسته شد. فرامرز مقاومتی کرد که پدرش رستم هرگز لازم نشده بود و شکست خورد. شاهنامه این را هم‌زمان به عنوانِ پیروزی و باخت عرضه می‌کند: بهمن به آنچه برای دستیابی به راه افتاده بود رسید، اما در انجامِ این کار وفادارترین نسب به ایران را نابود کرد.",
+      "explanation_tg": "Хонаи Зол — ки марзи Эронро дар миёни ҷанги пас аз ҷанге ки подшоҳонаш оғоз карда буданд ва ҷанговаронаш поён бурда буданд нигоҳ дошта буд — дар ниҳоят шикаст. Фаромарз муқовимате кард ки падараш Рустам ҳеч гоҳ лозим нашуда буд ва шикаст хӯрд. Шоҳнома инро ҳам‌замон ҳамчун пирӯзӣ ва бохт муаррифӣ мекунад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "bah-h1",
+      "chapter_slug": "bahman",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The Shahnameh says Bahman 'succeeded at everything he attempted' but treats his rule 'with a complexity it reserves for figures who are simultaneously right and wrong.' What makes Bahman's success morally complicated?",
+      "question_fa": "شاهنامه می‌گوید بهمن 'در همه چیزی که امتحان کرد موفق شد' اما با دورانِ حکومتش 'با پیچیدگی‌ای رفتار می‌کند که برای شخصیت‌هایی که هم درست و هم اشتباه هستند نگه می‌دارد'. چه چیزی موفقیتِ بهمن را از نظرِ اخلاقی پیچیده می‌کند؟",
+      "question_tg": "Шоҳнома мегӯяд Баҳман 'дар ҳама чизе ки озмуд муваффақ шуд' аммо бо давраи ҳукмронияш 'бо мураккабие рафтор мекунад ки барои шахсиятҳое ки ҳам дуруст ва ҳам нодурустанд нигоҳ медорад'. Чӣ чиз муваффақияти Баҳманро аз назари ахлоқӣ мураккаб мекунад?",
+      "answers": [
+        "His achievement required destroying the house of Zal, which had been more faithful to Iran than any king Iran had produced — the victory and the loss were the same act",
+        "He succeeded militarily but failed to consolidate power, leading to civil war after his death",
+        "He was correct to avenge his father but chose an unjust method, attacking the innocent son rather than Rostam's ghost",
+        "His long reign became tyrannical in its later years, undoing the administrative competence of his early rule"
+      ],
+      "answers_fa": [
+        "دستاوردش نیازمندِ نابودیِ خانه‌ی زال بود که از هر شاهی که ایران تولید کرده بود به ایران وفادارتر بوده بود — پیروزی و باخت یک عمل بودند",
+        "از نظرِ نظامی موفق شد اما نتوانست قدرت را تحکیم کند، که منجر به جنگِ داخلی پس از مرگش شد",
+        "در انتقامِ پدرش درست بود اما روشِ ناعادلانه‌ای انتخاب کرد، حمله به پسرِ بی‌گناه به جای روحِ رستم",
+        "سلطنتِ طولانی‌اش در سال‌های آخر جابرانه شد و کفایتِ اداریِ سلطنتِ اولیه‌اش را باطل کرد"
+      ],
+      "answers_tg": [
+        "Дастовардаш ниёзманди нобудии хонаи Зол буд ки аз ҳар подшоҳе ки Эрон тавлид карда буд ба Эрон содиқтар будааст — пирӯзӣ ва бохт як амал буданд",
+        "Аз назари низомӣ муваффақ шуд аммо натавонист қудратро таҳким диҳад, ки ба ҷанги дохилӣ пас аз маргаш мунҷар шуд",
+        "Дар интиқоми падараш дуруст буд аммо равиши ноодилона интихоб кард, ҳуҷум ба писари бегуноҳ ба ҷои рӯҳи Рустам",
+        "Ҳукмронии тӯлонияш дар солҳои охир золимона шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahman destroyed the house of Zal — the line that had held Iran together through every crisis the Kayanian kings had created. He did it correctly, completely, within his rights as a king settling a dynastic debt. The Shahnameh does not condemn him outright. But it also does not let his competence excuse what he accomplished: justice and loss arrived in the same act.",
+      "explanation_fa": "بهمن خانه‌ی زال را نابود کرد — نسبی که ایران را در میانِ هر بحرانی که شاهانِ کیانی ایجاد کرده بودند یکجا نگه داشته بود. این کار را درست، کامل، در محدوده‌ی حقوقِ یک شاه در تسویه‌ی بدهیِ سلسله‌ای انجام داد. شاهنامه او را آشکارا محکوم نمی‌کند. اما همچنین اجازه نمی‌دهد کفایتش توجیهِ آنچه به دست آورده باشد: عدالت و باخت در یک عمل رسیدند.",
+      "explanation_tg": "Баҳман хонаи Золро нобуд кард — насле ки Эронро дар миёни ҳар буҳроне ки подшоҳони Каёнӣ эҷод карда буданд як ҷо нигоҳ дошта буд. Ин корро дуруст, мукаммал, дар доираи ҳуқуқи подшоҳ дар тасвияи қарзи сулолавӣ анҷом дод. Шоҳнома ӯро ошкоро маҳкум намекунад. Аммо инчунин иҷоза намедиҳад кифояташ он чиро ки ба даст овард тасвиб кунад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "bah-e3",
+      "chapter_slug": "bahman",
+      "quiz_part": 6,
+      "difficulty": "easy",
+      "question": "Who did Bahman name as his heir near the end of his long reign?",
+      "question_fa": "بهمن نزدیکِ پایانِ دورانِ طولانیِ حکومتش چه کسی را به عنوانِ وارث معرفی کرد؟",
+      "question_tg": "Баҳман дар наздикии поёни давраи тӯлонии ҳукмронияш кӣро ҳамчун ворис муаррифӣ кард?",
+      "answers": [
+        "His daughter Homay",
+        "His eldest son, whose name the Shahnameh does not record",
+        "A general from his court who had proven most loyal during the Zabulestan campaign",
+        "Darab, who was already living in the court under another name"
+      ],
+      "answers_fa": [
+        "دخترش هما",
+        "پسرِ ارشدش، که شاهنامه نامش را ثبت نمی‌کند",
+        "سردارِ دربارش که در لشکرکشیِ زابلستان وفادارترین بوده بود",
+        "داراب، که قبلاً با نامی دیگر در دربار زندگی می‌کرد"
+      ],
+      "answers_tg": [
+        "Духтараш Ҳамо",
+        "Писари калониаш, ки Шоҳнома номашро сабт намекунад",
+        "Саркардаи дарбораш ки дар лашкаркашии Забулистон содиқтарин буда буд",
+        "Дороб, ки қаблан бо номи дигаре дар дарбор зиндагӣ мекард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Near the end of his reign, Bahman made the decision that shaped the next generation's story more than any battle he had fought: he named his daughter Homay as his heir. This choice — a queen inheriting directly, without a male intermediary — set the stage for the events of the next chapter.",
+      "explanation_fa": "نزدیکِ پایانِ سلطنتش، بهمن تصمیمی گرفت که داستانِ نسلِ بعد را بیشتر از هر نبردی که جنگیده بود شکل داد: دخترش هما را به عنوانِ وارثش معرفی کرد. این انتخاب — ملکه‌ای که مستقیم بدونِ واسطه‌ی مردانه ارث می‌برد — زمینه را برای رویدادهای فصلِ بعد آماده کرد.",
+      "explanation_tg": "Дар наздикии поёни ҳукмронияш, Баҳман тасмиме гирифт ки достони насли баъдиро бештар аз ҳар ҷанге ки ҷангида буд шакл дод: духтараш Ҳаморо ҳамчун вориси худ муаррифӣ кард. Ин интихоб — маликае ки мустақим бидуни воситаи мардона мерос мебарад — заминаро барои рӯйдодҳои фасли баъд омода кард.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "bah-m3",
+      "chapter_slug": "bahman",
+      "quiz_part": 7,
+      "difficulty": "medium",
+      "question": "Why does the Shahnameh say that Esfandiyar 'fulfilled the king's command because he had given his word and his word was the thing he would not break even in a trap'?",
+      "question_fa": "چرا شاهنامه می‌گوید که اسفندیار 'فرمانِ شاه را اجرا کرد چون قولش را داده بود و قولش چیزی بود که حتی در دام هم نمی‌شکست'؟",
+      "question_tg": "Чаро Шоҳнома мегӯяд ки Исфандиёр 'фармони подшоҳро иҷро кард зеро қавлашро дода буд ва қавлаш чизе буд ки ҳатто дар дом ҳам намешикаст'?",
+      "answers": [
+        "To show that Esfandiyar's tragedy was not stupidity or weakness — he understood exactly what was happening but considered his given word more binding than his survival",
+        "To excuse Esfandiyar for going on the mission by blaming Goshtasp entirely for the outcome",
+        "To establish that Esfandiyar was more righteous than Rostam, who had refused a similar command",
+        "To explain why Esfandiyar attacked Rostam rather than Goshtasp when he understood his father's manipulation"
+      ],
+      "answers_fa": [
+        "برای نشان دادنِ اینکه تراژدیِ اسفندیار حماقت یا ضعف نبود — او دقیقاً می‌فهمید چه اتفاقی دارد می‌افتد اما قولِ داده‌شده‌اش را از بقایش الزامی‌تر می‌دانست",
+        "برای معذور دانستنِ اسفندیار برای رفتن به مأموریت با انداختنِ تمامِ مسئولیتِ نتیجه بر گشتاسپ",
+        "برای تثبیتِ این که اسفندیار از رستم پارساتر بود که فرمانِ مشابهی را رد کرده بود",
+        "برای توضیحِ اینکه چرا اسفندیار به جای گشتاسپ به رستم حمله کرد وقتی دستکاریِ پدرش را درک کرد"
+      ],
+      "answers_tg": [
+        "Барои нишон додани ин ки трагедияи Исфандиёр ҳамоқат ё заъф набуд — ӯ дақиқан мефаҳмид чӣ рӯй медиҳад аммо қавли додааш را аз бақояш вазинтар меҳисобид",
+        "Барои маъзур донистани Исфандиёр барои рафтан ба мأмурият бо партофтани тамоми масъулияти натиҷа ба Гуштосп",
+        "Барои исботи ин ки Исфандиёр аз Рустам парсотар буд ки фармони монандеро рад карда буд",
+        "Барои тавзеҳи ин ки чаро Исфандиёр ба ҷои Гуштосп ба Рустам ҳуҷум кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh presents Esfandiyar as a man who walked into a trap with his eyes open — he understood that Goshtasp's command was designed to neutralize him, but his identity was built around the inviolability of his given word. His tragedy is not that he was deceived. It is that he was honest enough to follow a dishonest command. Bahman was born knowing this distinction.",
+      "explanation_fa": "شاهنامه اسفندیار را به عنوانِ مردی عرضه می‌کند که با چشمانِ باز وارد دام شد — می‌فهمید که فرمانِ گشتاسپ برای خنثی کردنِ او طراحی شده بود، اما هویتش بر پایه‌ی تقدسِ قولِ داده‌شده‌اش ساخته شده بود. تراژدی‌اش این نیست که فریب خورد. این است که آنقدر صادق بود که از فرمانِ ناصادقانه پیروی کند. بهمن با دانستنِ این تمایز زاده شد.",
+      "explanation_tg": "Шоҳнома Исфандиёрро ҳамчун марде муаррифӣ мекунад ки бо чашмони кушода ба дом ворид шуд — мефаҳмид ки фармони Гуштосп барои бетасир кардани ӯ тарҳрезӣ шуда буд, аммо ҳувияташ бар пояи тақаддуси қавли додааш сохта шуда буд. Трагедияаш ин нест ки фиреб хӯрд. Ин аст ки ба андозаи кофӣ ростин буд то аз фармони норостин пайравӣ кунад. Баҳман бо донистани ин тафовут зода шуд.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "bah-m4",
+      "chapter_slug": "bahman",
+      "quiz_part": 8,
+      "difficulty": "medium",
+      "question": "The Shahnameh gives Bahman over a hundred years in the chronicle's mythological reckoning. What does this long reign look like according to the narrative?",
+      "question_fa": "شاهنامه در حسابِ اساطیریِ خود بیشتر از صد سال به بهمن می‌دهد. این دورانِ طولانیِ حکومت طبقِ روایت چگونه به نظر می‌رسد؟",
+      "question_tg": "Шоҳнома дар ҳисоби асотирии худ беш аз сад сол ба Баҳман медиҳад. Ин давраи тӯлонии ҳукмронӣ мутобиқи равоят чӣ гуна ба назар мерасад?",
+      "answers": [
+        "Justice was administered, the kingdom was orderly, and the borders held — without the constant crises that had required a Rostam to solve them",
+        "A long decline — without the house of Zal to defend the borders, the kingdom faced increasing instability",
+        "A reign of cultural flourishing — Bahman patronized poets and built monuments across the kingdom",
+        "A peaceful but stagnant era — Bahman achieved stability by refusing to engage in any military action after Zabulestan"
+      ],
+      "answers_fa": [
+        "عدالت اجرا شد، پادشاهی منظم بود، و مرزها نگه داشته شدند — بدونِ بحران‌های مداومی که به رستمی برای حلشان نیاز داشتند",
+        "افولِ طولانی — بدونِ خانه‌ی زال برای دفاع از مرزها، پادشاهی با بی‌ثباتیِ فزاینده روبرو شد",
+        "دورانِ شکوفاییِ فرهنگی — بهمن از شعرا حمایت کرد و در سراسرِ پادشاهی یادبودها ساخت",
+        "دورانِ آرام اما راکد — بهمن با امتناع از هرگونه اقدامِ نظامی بعد از زابلستان به ثبات دست یافت"
+      ],
+      "answers_tg": [
+        "Адолат иҷро шуд, подшоҳӣ мунтазам буд ва марзҳо нигоҳ дошта шуданд — бидуни буҳронҳои мудовиме ки ба Рустаме барои ҳалашон ниёз доштанд",
+        "Афоли тӯлонӣ — бидуни хонаи Зол барои дифоъ аз марзҳо, подшоҳӣ бо бебардошии фузоянда рӯ ба рӯ шуд",
+        "Давраи шукуфоии фарҳангӣ — Баҳман аз шоирон ҳимоят кард ва дар саросари подшоҳӣ ёдбудҳо сохт",
+        "Давраи оромм аммо ракид — Баҳман бо рад кардани ҳар гуна амали низомӣ пас аз Забулистон ба суботат даст ёфт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahman's long reign was orderly and functional. Justice was administered, the kingdom worked, the borders held — all without the recurring crises that had required Rostam's intervention generation after generation. In a narrow technical sense, this was successful governance. The Shahnameh's complication is that it was also the governance of a kingdom that had destroyed its own most faithful servants to get there.",
+      "explanation_fa": "سلطنتِ طولانیِ بهمن منظم و کارآمد بود. عدالت اجرا شد، پادشاهی کار کرد، مرزها نگه داشته شدند — همه بدونِ بحران‌های تکراری که نیازمندِ مداخله‌ی رستم نسل به نسل بودند. در حسابِ فنیِ محدود، این حکمرانیِ موفق بود. پیچیدگیِ شاهنامه این است که همچنین حکمرانیِ پادشاهی‌ای بود که وفادارترین خدمتگزارانِ خود را برای رسیدن به آنجا نابود کرده بود.",
+      "explanation_tg": "Ҳукмронии тӯлонии Баҳман мунтазам ва кораманд буд. Адолат иҷро шуд, подшоҳӣ кор кард, марзҳо нигоҳ дошта шуданд — ҳама бидуни буҳронҳои такрорие ки ниёзманди мудохилаи Рустам насл ба насл буданд. Дар ҳисоби фании маҳдуд, ин ҳукмронии муваффақ буд. Мураккабии Шоҳнома ин аст ки инчунин ҳукмронии подшоҳие буд ки содиқтарин хидматгузорони худро барои расидан ба он ҷо нобуд карда буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bah-m5",
+      "chapter_slug": "bahman",
+      "quiz_part": 9,
+      "difficulty": "medium",
+      "question": "Why does the Shahnameh say the house of Zal had been 'more faithful to Iran than any king Iran had ever produced'?",
+      "question_fa": "چرا شاهنامه می‌گوید خانه‌ی زال 'از هر شاهی که ایران تا به حال تولید کرده بود به ایران وفادارتر بوده بود'؟",
+      "question_tg": "Чаро Шоҳнома мегӯяд хонаи Зол 'аз ҳар подшоҳе ки Эрон то ба ҳол тавлид карда буд ба Эрон содиқтар будааст'?",
+      "answers": [
+        "Because Zal, Sam, and Rostam defended Iran across generations without ever taking the throne for themselves — they bore all the risk of kingship without claiming its rewards",
+        "Because Zal founded a separate military tradition that was more effective than the Kayanian armies",
+        "Because the house of Zal never lost a battle, while the Kayanian kings repeatedly lost territory",
+        "Because the Simorgh's blessing on Zal passed to all his descendants, giving them divine protection"
+      ],
+      "answers_fa": [
+        "زیرا زال، سام، و رستم در طولِ نسل‌ها از ایران دفاع کردند بدونِ اینکه هرگز تخت را برای خود بگیرند — همه‌ی ریسکِ سلطنت را بدونِ ادعای پاداشش بر عهده گرفتند",
+        "زیرا زال سنتِ نظامیِ جداگانه‌ای بنیان نهاد که از ارتش‌های کیانی مؤثرتر بود",
+        "زیرا خانه‌ی زال هرگز نبردی را نباخت درحالی‌که شاهانِ کیانی بارها قلمرو از دست دادند",
+        "زیرا برکتِ سیمرغ بر زال به همه‌ی نسلانِ او منتقل شد و حمایتِ الهی به آن‌ها داد"
+      ],
+      "answers_tg": [
+        "Зеро Зол, Сом ва Рустам дар тӯли наслҳо аз Эрон дифоъ карданд бидуни ин ки ҳеч гоҳ тахтро барои худ гиранд — ҳамаи хатари подшоҳиро бидуни иддаои подошаш бар уҳда гирифтанд",
+        "Зеро Зол суннати низомии ҷудогонаеро поя гузошт ки аз артишҳои Каёнӣ таъсирноктар буд",
+        "Зеро хонаи Зол ҳеч гоҳ ҷанге наборид дар ҳоле ки подшоҳони Каёнӣ борҳо қаламрав аз даст доданд",
+        "Зеро баракати Симурғ бар Зол ба ҳамаи наслони ӯ интиқол ёфт"
+      ],
+      "correct_answer": 0,
+      "explanation": "The house of Zal held Iran's border through war after war that its kings started and its warriors finished. They bore the consequences of Kay Kavus's recklessness, of Siavash's execution, of every diplomatic disaster the Kayanian throne created — without ever claiming the throne themselves. Their faithfulness was absolute and unrewarded, which makes its destruction by Bahman the Shahnameh's central irony in this chapter.",
+      "explanation_fa": "خانه‌ی زال مرزِ ایران را در میانِ جنگ پس از جنگی که شاهانش شروع کرده بودند و جنگجویانش تمام کرده بودند نگه داشت. پیامدهای بی‌احتیاطیِ کی‌کاووس، اعدامِ سیاوش، هر فاجعه‌ی دیپلماتیکی که تختِ کیانی ایجاد کرده بود را بدونِ اینکه هرگز خودشان ادعای تخت کنند تحمل کردند. وفاداری‌شان مطلق و بی‌پاداش بود، که نابودی‌شان توسطِ بهمن را تناقضِ مرکزیِ شاهنامه در این فصل می‌کند.",
+      "explanation_tg": "Хонаи Зол марзи Эронро дар миёни ҷанги пас аз ҷанге ки подшоҳонаш оғоз карда буданд ва ҷанговаронаш поён бурда буданд нигоҳ дошт. Оқибатҳои бе эҳтиётии Кайковус, эъдоми Сиёвуш, ҳар фоҷеаи дипломатие ки тахти Каёнӣ эҷод карда буд — бидуни ин ки ҳеч гоҳ худашон иддаои тахт кунанд, таҳаммул карданд. Садоқаташон мутлақ ва беподош буд.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "bah-h2",
+      "chapter_slug": "bahman",
+      "quiz_part": 10,
+      "difficulty": "hard",
+      "question": "The Shahnameh describes Bahman as simultaneously 'right and wrong' — he achieves what he sets out to achieve 'without that achievement being clean.' What is the specific moral tension the chronicle holds open?",
+      "question_fa": "شاهنامه بهمن را هم‌زمان 'درست و اشتباه' توصیف می‌کند — او به آنچه برای دستیابی به راه افتاده بود می‌رسد 'بدونِ اینکه آن دستاورد تمیز باشد'. تنشِ اخلاقیِ خاصی که شاهنامه باز نگه می‌دارد چیست؟",
+      "question_tg": "Шоҳнома Баҳманро ҳам‌замон 'дуруст ва нодуруст' тавсиф мекунад — ӯ ба он чи барои дастёбӣ роҳ афтода буд мерасад 'бидуни ин ки он дастовард тоза бошад'. Кашмакаши ахлоқии хосе ки Шоҳнома боз нигоҳ медорад чист?",
+      "answers": [
+        "Bahman's claim to revenge was legitimate — Esfandiyar was wronged — but the object of his revenge was Faramarz, who was innocent, and the victim was the dynasty that had suffered most for Iran. Just cause, unjust target.",
+        "Bahman was right to destroy Zabulestan but wrong to spare Zal — the old patriarch should have been punished alongside his grandson",
+        "Bahman's administration was just but his method of succession — naming a daughter — was wrong by the chronicle's standards",
+        "The tension is purely historical: Bahman was right from a Kayanian perspective but wrong from a Rostamid one, and the Shahnameh cannot adjudicate between them"
+      ],
+      "answers_fa": [
+        "ادعای انتقامِ بهمن مشروع بود — اسفندیار ستم دید — اما موضوعِ انتقامش فرامرز بود که بی‌گناه بود، و قربانی سلسله‌ای بود که بیشترین رنج را برای ایران دیده بود. علتِ عادلانه، هدفِ ناعادلانه.",
+        "بهمن در نابودیِ زابلستان درست بود اما در بخشیدنِ زال — پدرسالارِ پیر باید کنارِ نوه‌اش تنبیه می‌شد — اشتباه کرد",
+        "اداره‌ی بهمن عادلانه بود اما روشِ جانشینی‌اش — معرفیِ دختر — طبقِ استانداردهای شاهنامه اشتباه بود",
+        "تنش صرفاً تاریخی است: بهمن از دیدگاهِ کیانی درست بود اما از دیدگاهِ رستمی اشتباه، و شاهنامه نمی‌تواند بینِ آن‌ها داوری کند"
+      ],
+      "answers_tg": [
+        "Иддаои интиқоми Баҳман машруъ буд — Исфандиёр ситам дид — аммо мавзӯи интиқомаш Фаромарз буд ки бегуноҳ буд ва қурбонӣ сулолае буд ки бештарин ранжро барои Эрон дида буд. Сабаби одилона, ҳадафи ноодилона.",
+        "Баҳман дар нобудии Забулистон дуруст буд аммо дар бахшидани Зол — пирсолори пир бояд кнори навориааш ҷазо мегирифт — хато кард",
+        "Идораи Баҳман одилона буд аммо равиши вориснамоияш — муаррифии духтар — мутобиқи стандартҳои Шоҳнома нодуруст буд",
+        "Кашмакаш сирф таърихист: Баҳман аз дидгоҳи Каёнӣ дуруст буд аммо аз дидгоҳи Рустамӣ нодуруст"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh acknowledges Bahman's claim: Esfandiyar was genuinely wronged, and Goshtasp was genuinely guilty. But the object of Bahman's revenge was Faramarz — who had inherited a war he did not start — and the dynasty he destroyed had been the kingdom's most faithful servant. The chronicle refuses to resolve this tension. It lets both things be true: legitimate grievance, disproportionate and misdirected consequence.",
+      "explanation_fa": "شاهنامه ادعای بهمن را می‌پذیرد: اسفندیار واقعاً ستم دید، و گشتاسپ واقعاً گناهکار بود. اما موضوعِ انتقامِ بهمن فرامرز بود — که جنگی را که شروع نکرده بود به ارث برده بود — و سلسله‌ای که نابود کرد وفادارترین خدمتگزارِ پادشاهی بوده بود. شاهنامه از حلِّ این تنش امتناع می‌کند. اجازه می‌دهد هر دو چیز درست باشند: شکایتِ مشروع، پیامدِ نامتناسب و در جهتِ اشتباه.",
+      "explanation_tg": "Шоҳнома иддаои Баҳманро мепазирад: Исфандиёр воқеан ситам дид ва Гуштосп воқеан гунаҳкор буд. Аммо мавзӯи интиқоми Баҳман Фаромарз буд — ки ҷанге ки оғоз накарда буд ба мерос гирифта буд — ва сулолае ки нобуд кард содиқтарин хидматгузори подшоҳӣ будааст. Шоҳнома аз ҳалли ин кашмакаш даст мекашад. Иҷоза медиҳад ҳар ду чиз дуруст бошанд.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "bah-h3",
+      "chapter_slug": "bahman",
+      "quiz_part": 11,
+      "difficulty": "hard",
+      "question": "Goshtasp feared his son Esfandiyar's popularity and sent him on a mission designed to make him fail. How does this dynamic — a king using his own champion as a disposable tool — recur across the Shahnameh?",
+      "question_fa": "گشتاسپ از محبوبیتِ پسرش اسفندیار می‌ترسید و او را به مأموریتی فرستاد که برای شکستش طراحی شده بود. این دینامیک — شاهی که قهرمانِ خود را به عنوانِ ابزارِ یکبار مصرف استفاده می‌کند — چطور در سراسرِ شاهنامه تکرار می‌شود؟",
+      "question_tg": "Гуштосп аз маҳбубияти писараш Исфандиёр метарсид ва ӯро ба мأмурияте фиристод ки барои шикасташ тарҳрезӣ шуда буд. Ин динамик — подшоҳе ки паҳлавони худро ҳамчун абзори яквоқта истифода мекунад — дар саросари Шоҳнома чӣ гуна такрор мешавад?",
+      "answers": [
+        "It is a recurring Shahnameh pattern: Kay Kavus sent Siavash to Afrasiab knowing the mission was dangerous; Goshtasp sent Esfandiyar to chain Rostam. In both cases the king's fear of his own heir produces the catastrophe.",
+        "It is unique to Goshtasp — no other Shahnameh king uses this specific tactic of weaponizing a mission",
+        "The Shahnameh presents this only in retrospect through Bahman's knowledge — Goshtasp's intent was ambiguous at the time",
+        "The pattern runs in the opposite direction — it is champions who repeatedly manipulate kings, not kings who manipulate champions"
+      ],
+      "answers_fa": [
+        "این الگویی تکرارشونده در شاهنامه است: کی‌کاووس سیاوش را با دانستنِ خطرناک بودنِ مأموریت به افراسیاب فرستاد؛ گشتاسپ اسفندیار را برای زنجیر کردنِ رستم فرستاد. در هر دو مورد ترسِ شاه از وارثِ خودش فاجعه را می‌آفریند",
+        "منحصر به گشتاسپ است — هیچ شاهِ دیگری در شاهنامه از این تاکتیکِ خاصِ تبدیلِ مأموریت به سلاح استفاده نمی‌کند",
+        "شاهنامه این را فقط از طریقِ دانشِ بهمن در گذشته‌نگری ارائه می‌دهد — نیتِ گشتاسپ در آن زمان مبهم بود",
+        "الگو در جهتِ مخالف پیش می‌رود — این قهرمانان هستند که بارها شاهان را دستکاری می‌کنند، نه شاهانی که قهرمانان را دستکاری می‌کنند"
+      ],
+      "answers_tg": [
+        "Ин намунаи такроршаванда дар Шоҳнома аст: Кайковус Сиёвушро бо донистани хавфноки мأмурият ба Афросиёб фиристод; Гуштосп Исфандиёрро барои занҷир кардани Рустам фиристод. Дар ҳар ду мавред тарси подшоҳ аз вориси худаш фоҷеаро эҷод мекунад",
+        "Хоси Гуштосп аст — ҳеч подшоҳи дигаре дар Шоҳнома аз ин тактики хоси табдили мأмурият ба силоҳ истифода намекунад",
+        "Шоҳнома инро танҳо тавассути дониши Баҳман дар гузаштанигарӣ муаррифӣ мекунад",
+        "Намуна дар самти муқобил пеш мерод — ин паҳлавонон ҳастанд ки борҳо подшоҳонро дасткорӣ мекунанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Kay Kavus sent Siavash to Afrasiab — a mission the Shahnameh makes clear Kay Kavus knew was dangerous, partly driven by Sudabeh's influence, partly by his own jealousy of Siavash's growing reputation. Goshtasp sent Esfandiyar for similar reasons. In both cases, the king's fear of his own heir's excellence creates a mission designed to resolve that fear through distance or death. The Shahnameh uses these parallelisms deliberately.",
+      "explanation_fa": "کی‌کاووس سیاوش را به افراسیاب فرستاد — مأموریتی که شاهنامه روشن می‌کند کی‌کاووس می‌دانست خطرناک است، تا حدی به خاطرِ تأثیرِ سودابه، تا حدی به خاطرِ حسادتِ خودش از شهرتِ روبه‌رشدِ سیاوش. گشتاسپ اسفندیار را به دلایلِ مشابه فرستاد. در هر دو مورد، ترسِ شاه از برتریِ وارثِ خودش مأموریتی می‌آفریند که برای حلِّ آن ترس از طریقِ فاصله یا مرگ طراحی شده است.",
+      "explanation_tg": "Кайковус Сиёвушро ба Афросиёб фиристод — мأмурияте ки Шоҳнома равшан мекунад Кайковус медонист хавфнок аст, то андозае аз сабаби таъсири Судоба, то андозае аз сабаби ҳасади худаш аз шӯҳрати рӯ ба рӯшди Сиёвуш. Гуштосп Исфандиёрро бо сабабҳои монанд фиристод. Дар ҳар ду мавред, тарси подшоҳ аз бартарии вориси худаш мأмурияте эҷод мекунад ки барои ҳалли он тарс аз тариқи фосила ё марг тарҳрезӣ шудааст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bah-h4",
+      "chapter_slug": "bahman",
+      "quiz_part": 12,
+      "difficulty": "hard",
+      "question": "Bahman inherited a kingdom that had just lost its greatest defender and proceeded to destroy what remained of that defender's family. What does this sequence reveal about the Shahnameh's understanding of institutional memory?",
+      "question_fa": "بهمن پادشاهی‌ای را به ارث برد که تازه بزرگترین مدافعش را از دست داده بود و ادامه داد تا آنچه از خانواده‌ی آن مدافع مانده بود را نابود کند. این توالی چه چیزی درباره‌ی درکِ شاهنامه از حافظه‌ی نهادی آشکار می‌کند؟",
+      "question_tg": "Баҳман подшоҳиеро ба мерос гирифт ки тозаги бузургтарин мудофеашро аз даст дода буд ва идома дод то он чи аз хонаводаи он мудофеъ монда буд нобуд кунад. Ин тавалӣ чӣ чизеро дар бораи дарки Шоҳнома аз хотираи ниҳодӣ ошкор мекунад?",
+      "answers": [
+        "That institutions reward faithfulness poorly — the Kayanian house consumed five generations of Zabulestani service and then, through Bahman, destroyed what remained; the institution had no mechanism to protect those who protected it",
+        "That strong institutions outlast the individuals who served them — the Kayanian house survived Rostam's death and Faramarz's defeat, proving its durability",
+        "That institutional memory is preserved through chronicles like the Shahnameh rather than through the kingdoms themselves",
+        "That Bahman's reign proves institutions can absorb even catastrophic losses if administered competently"
+      ],
+      "answers_fa": [
+        "نهادها به وفاداری بد پاداش می‌دهند — خانه‌ی کیانی پنج نسلِ خدماتِ زابلستانی را مصرف کرد و سپس از طریقِ بهمن آنچه مانده بود را نابود کرد؛ نهاد هیچ سازوکاری برای محافظت از کسانی که از آن محافظت می‌کردند نداشت",
+        "نهادهای قوی از افرادی که به آن‌ها خدمت کردند باقی می‌مانند — خانه‌ی کیانی مرگِ رستم و شکستِ فرامرز را زنده ماند و دوام‌پذیری‌اش را ثابت کرد",
+        "حافظه‌ی نهادی از طریقِ شاهنامه‌هایی مثلِ شاهنامه حفظ می‌شود نه از طریقِ خودِ پادشاهی‌ها",
+        "سلطنتِ بهمن ثابت می‌کند که نهادها می‌توانند حتی ضربه‌های فاجعه‌بار را اگر با کفایت اداره شوند جذب کنند"
+      ],
+      "answers_tg": [
+        "Ниҳодҳо ба садоқат бад подош медиҳанд — хонаи Каёнӣ панҷ насли хидматҳои Забулистониро масруф кард ва сипас тавассути Баҳман он чи монда буд нобуд кард; ниҳод ҳеч механизме барои ҳифозати касоне ки аз он ҳифозат мекарданд надошт",
+        "Ниҳодҳои қавӣ аз афроде ки ба онҳо хидмат карданд зинда мемонанд — хонаи Каёнӣ марги Рустам ва шикасти Фаромарзро зинда монд",
+        "Хотираи ниҳодӣ тавассути Шоҳномаҳое монанди Шоҳнома ҳифз мешавад на тавассути худи подшоҳиҳо",
+        "Ҳукмронии Баҳман исбот мекунад ки ниҳодҳо метавонанд ҳатто зарбаҳои фоҷеабарро агар бо кифоят идора шаванд ҷаз намоянд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Kayanian house spent five generations of Rostamid service — received protection, military victory, political rescue — and produced no mechanism to reciprocate or protect those who protected it. When Bahman came along with a legitimate grievance, there was nothing within the institutional structure to say: these people have served us too faithfully to be punished. The institution consumed its servants and then consumed the servant's family.",
+      "explanation_fa": "خانه‌ی کیانی پنج نسلِ خدماتِ رستمی را مصرف کرد — حمایت، پیروزیِ نظامی، نجاتِ سیاسی دریافت کرد — و هیچ سازوکاری برای جبران یا محافظت از کسانی که از آن محافظت کرده بودند ایجاد نکرد. وقتی بهمن با شکایتِ مشروع وارد شد، در ساختارِ نهادی هیچ چیزی نبود که بگوید: این مردم آنقدر وفادارانه به ما خدمت کرده‌اند که نمی‌توان تنبیه‌شان کرد.",
+      "explanation_tg": "Хонаи Каёнӣ панҷ насли хидматҳои Рустамӣро масруф кард — ҳимоят, пирӯзии низомӣ, наҷоти сиёсӣ гирифт — ва ҳеч механизме барои ҷуброн ё ҳифозати касоне ки аз он ҳифозат карда буданд эҷод накард. Вақте Баҳман бо шикояти машруъ ворид шуд, дар сохтори ниҳодӣ ҳеч чизе набуд ки бигӯяд: ин мардум ба андозаи кофӣ содиқона ба мо хидмат кардаанд.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "bah-h5",
+      "chapter_slug": "bahman",
+      "quiz_part": 13,
+      "difficulty": "hard",
+      "question": "Bahman rules for over a hundred years, administers justice competently, and keeps the borders — and the Shahnameh still treats his reign with moral complexity. What does this suggest about the relationship between competence and legitimacy in the Shahnameh?",
+      "question_fa": "بهمن بیشتر از صد سال حکومت می‌کند، با کفایت عدالت اجرا می‌کند، و مرزها را نگه می‌دارد — و شاهنامه با دورانِ حکومتش همچنان با پیچیدگیِ اخلاقی رفتار می‌کند. این درباره‌ی رابطه‌ی بینِ کفایت و مشروعیت در شاهنامه چه پیشنهادی می‌دهد؟",
+      "question_tg": "Баҳман беш аз сад сол ҳукм меронад, бо кифоят адолат иҷро мекунад ва марзҳоро нигоҳ медорад — ва Шоҳнома бо давраи ҳукмронияш ҳамчон бо мураккабии ахлоқӣ рафтор мекунад. Ин дар бораи рабитаи байни кифоят ва машруъият дар Шоҳнома чӣ пешниҳодӣ медиҳад?",
+      "answers": [
+        "That competence is necessary but not sufficient for the Shahnameh's approval — how the throne was consolidated, and what was destroyed to consolidate it, remain morally relevant long after the consolidation is complete",
+        "That the Shahnameh judges rulers only by long-term outcomes, and Bahman's long successful reign ultimately validates his initial campaign",
+        "That administrative competence is the Shahnameh's highest standard — Bahman's orderly rule earns him a positive legacy despite his early violence",
+        "That the Shahnameh is unable to judge Bahman because his reign spans too many generations for the chronicle to maintain a consistent perspective"
+      ],
+      "answers_fa": [
+        "کفایت ضروری است اما برای تأییدِ شاهنامه کافی نیست — اینکه تخت چگونه تحکیم شد و چه چیزی برای تحکیمش نابود شد، مدت‌ها بعد از تکمیلِ تحکیم از نظرِ اخلاقی مرتبط می‌ماند",
+        "شاهنامه فرمانروایان را فقط بر اساسِ نتایجِ بلندمدت قضاوت می‌کند، و سلطنتِ موفقِ طولانیِ بهمن در نهایت لشکرکشیِ اولیه‌اش را اعتبار می‌بخشد",
+        "کفایتِ اداری بالاترین معیارِ شاهنامه است — حکومتِ منظمِ بهمن علی‌رغمِ خشونتِ اولیه‌اش میراثِ مثبتی به او می‌دهد",
+        "شاهنامه قادر به قضاوتِ بهمن نیست چون سلطنتش آنقدر نسل‌ها طول می‌کشد که شاهنامه نمی‌تواند دیدگاهِ ثابتی حفظ کند"
+      ],
+      "answers_tg": [
+        "Кифоят зарурӣ аст аммо барои тасдиқи Шоҳнома кофӣ нест — ин ки тахт чӣ гуна таҳким ёфт ва барои таҳкими он чӣ нобуд шуд, муддатҳо пас аз иҷрои таҳким аз назари ахлоқӣ марбут мемонад",
+        "Шоҳнома ҳокимонро танҳо бар асоси натоиҷи дурударозмуддат доварӣ мекунад ва ҳукмронии муваффақи тӯлонии Баҳман дар ниҳоят лашкаркашии аввалаи ӯро эътибор мебахшад",
+        "Кифояти идорӣ баландтарин меъёри Шоҳнома аст — ҳукмронии мунтазами Баҳман бо вуҷуди хушунати аввалаи ӯ мероси мусбат медиҳад",
+        "Шоҳнома қодир ба доварии Баҳман нест зеро ҳукмронияш он қадар наслҳо давом мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh does not erase past acts through subsequent competence. Bahman governed well for a century — and the Shahnameh credits that. But it does not use a century of good governance to retroactively justify destroying the house of Zal. The two things exist simultaneously in the chronicle's accounting: good administrator, destroyer of the faithful. Competence earns its own recognition; it does not erase what came before it.",
+      "explanation_fa": "شاهنامه اعمالِ گذشته را از طریقِ کفایتِ بعدی پاک نمی‌کند. بهمن یک قرن خوب حکومت کرد — و شاهنامه این را به رسمیت می‌شناسد. اما از یک قرن حکومتِ خوب استفاده نمی‌کند تا نابودیِ خانه‌ی زال را پس از واقعه توجیه کند. هر دو چیز به طورِ هم‌زمان در حسابِ شاهنامه وجود دارند: اداره‌کننده‌ی خوب، نابودگرِ وفاداران.",
+      "explanation_tg": "Шоҳнома амалҳои гузаштаро тавассути кифояти баъдӣ пок намекунад. Баҳман як аср хуб ҳукм ронд — ва Шоҳнома инро эътироф мекунад. Аммо аз як асри ҳукмронии хуб истифода намекунад то нобудии хонаи Золро пас аз воқеа тасвиб кунад. Ҳар ду чиз ба таври ҳам‌замон дар ҳисоби Шоҳнома вуҷуд доранд: идоракунандаи хуб, нобудгари содиқон.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "bah-h6",
+      "chapter_slug": "bahman",
+      "quiz_part": 14,
+      "difficulty": "hard",
+      "question": "Esfandiyar died because he would not break his given word — even knowing the command was designed to destroy him. Bahman destroys the house of Zal to honor that same father. What does this generational chain of consequence reveal about how the Shahnameh understands honor?",
+      "question_fa": "اسفندیار مُرد چون قولِ داده‌شده‌اش را نمی‌شکست — حتی با دانستنِ اینکه فرمان برای نابودی‌اش طراحی شده بود. بهمن خانه‌ی زال را برای تکریمِ همان پدر نابود می‌کند. این زنجیرِ نسلیِ پیامد درباره‌ی درکِ شاهنامه از شرافت چه آشکار می‌کند؟",
+      "question_tg": "Исфандиёр мурд зеро қавли додааш را намешикаст — ҳатто бо донистани ин ки фармон барои нобудиаш тарҳрезӣ шуда буд. Баҳман хонаи Золро барои иҳтироми ҳамон падар нобуд мекунад. Ин занҷири наслии оқибат дар бораи дарки Шоҳнома аз шарофат чӣ ошкор мекунад?",
+      "answers": [
+        "That honor generates its own disasters across generations — Esfandiyar's unbreakable word killed him; the same word, honored by his son, kills an innocent family. Virtue can be inherited as compulsion.",
+        "That the Shahnameh endorses honor as the highest value — even when it produces destructive outcomes, the chronicle admires the consistency",
+        "That Bahman's campaign shows honor degenerating into mere vengeance across generations, losing its original moral content",
+        "That the chain proves neither Esfandiyar nor Bahman was truly honorable — both were driven by pride disguised as principle"
+      ],
+      "answers_fa": [
+        "شرافت در طولِ نسل‌ها فاجعه‌های خود را می‌آفریند — قولِ ناشکستنیِ اسفندیار او را کشت؛ همان قول، که توسطِ پسرش تکریم شد، خانواده‌ی بی‌گناهی را می‌کشد. فضیلت می‌تواند به عنوانِ اجبار به ارث برسد",
+        "شاهنامه شرافت را به عنوانِ بالاترین ارزش تأیید می‌کند — حتی وقتی پیامدهای ویرانگر تولید می‌کند، شاهنامه سازگاری را می‌ستاید",
+        "لشکرکشیِ بهمن نشان می‌دهد که شرافت در طولِ نسل‌ها به انتقامِ صرف تنزل می‌یابد و محتوای اخلاقیِ اصلی‌اش را از دست می‌دهد",
+        "زنجیر ثابت می‌کند که نه اسفندیار و نه بهمن واقعاً شرافتمند بودند — هر دو از غرور در قالبِ اصل هدایت می‌شدند"
+      ],
+      "answers_tg": [
+        "Шарофат дар тӯли наслҳо фоҷеаҳои худро эҷод мекунад — қавли нашкастании Исфандиёр ӯро кушт; ҳамон қавл, ки тавассути писараш иҳтиром шуд, оилаи бегуноҳеро мекушад. Фазилат метавонад ҳамчун иҷбор ба мерос бирасад",
+        "Шоҳнома шарофатро ҳамчун баландтарин арзиш тасдиқ мекунад — ҳатто вақте оқибатҳои харобкоранда тавлид мекунад, Шоҳнома созгариро месетояд",
+        "Лашкаркашии Баҳман нишон медиҳад ки шарофат дар тӯли наслҳо ба интиқоми сирф таназзул меёбад",
+        "Занҷир исбот мекунад ки на Исфандиёр ва на Баҳман воқеан шарофатманд буданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Esfandiyar's word-keeping was genuine honor — a refusal to let survival override principle. When Bahman inherits that honor, it transforms. He is honoring his father's sacrifice, which is real. But the act of honoring it requires destroying people who had nothing to do with the original wrong. The Shahnameh shows honor persisting across generations as obligation, and that obligation becoming a vehicle for harm that the original virtue never intended.",
+      "explanation_fa": "قول‌نگه‌داری اسفندیار شرافتِ واقعی بود — امتناع از اینکه بقا اصل را تحت الشعاع قرار دهد. وقتی بهمن آن شرافت را به ارث می‌برد، تغییر می‌کند. پدرش را تکریم می‌کند، که واقعی است. اما عملِ تکریم نیازمندِ نابودیِ افرادی است که هیچ ربطی به اشتباهِ اصلی نداشتند. شاهنامه شرافت را در حالِ پایداری در طولِ نسل‌ها به عنوانِ تکلیف نشان می‌دهد، و آن تکلیف به وسیله‌ای برای آسیبی تبدیل می‌شود که فضیلتِ اصلی هرگز قصد نداشت.",
+      "explanation_tg": "Қавлнигаҳдории Исфандиёр шарофати воқеӣ буд — даст кашидан аз ин ки бақо усулро тахти таъсир қарор диҳад. Вақте Баҳман он шарофатро ба мерос мегирад, тағйир меёбад. Падарашро иҳтиром мекунад, ки воқеист. Аммо амали иҳтиром ниёзманди нобудии афродест ки ҳеч робитае ба хатои аслӣ надоштанд. Шоҳнома шарофатро дар ҳоли поёист дар тӯли наслҳо ҳамчун ваҷиб нишон медиҳад.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "bah-h7",
+      "chapter_slug": "bahman",
+      "quiz_part": 15,
+      "difficulty": "hard",
+      "question": "Bahman's decision to name Homay as heir is described as shaping 'the next generation's story more than any battle he had fought.' Why does the Shahnameh treat this succession decision as more consequential than his military campaigns?",
+      "question_fa": "تصمیمِ بهمن برای معرفیِ هما به عنوانِ وارث به عنوانِ شکل‌دهنده‌ی 'داستانِ نسلِ بعد بیشتر از هر نبردی که جنگیده بود' توصیف می‌شود. چرا شاهنامه این تصمیمِ جانشینی را از لشکرکشی‌های نظامی‌اش نتیجه‌بخش‌تر می‌انگارد؟",
+      "question_tg": "Тасмими Баҳман барои муаррифии Ҳамо ҳамчун ворис ҳамчун шаклдиҳандаи 'достони насли баъд бештар аз ҳар ҷанге ки ҷангида буд' тавсиф мешавад. Чаро Шоҳнома ин тасмими вориснамоиро аз лашкаркашиҳои низомиаш натиҷабахштар меҳисобад?",
+      "answers": [
+        "Because military campaigns determine who holds power now, while succession decisions determine the conditions under which power will be contested for the next generation — Bahman's choice of Homay set in motion the events that produced Darab, Alexander, and the end of the mythological age",
+        "Because the Shahnameh considers military achievements less important than administrative ones, and succession is the most important administrative decision",
+        "Because Homay proved to be a better ruler than anyone Bahman could have chosen from the military class",
+        "Because the choice of a female heir was unprecedented and forced the court to develop new political structures that shaped subsequent history"
+      ],
+      "answers_fa": [
+        "زیرا لشکرکشی‌های نظامی تعیین می‌کنند چه کسی حالا قدرت دارد، درحالی‌که تصمیماتِ جانشینی شرایطی را تعیین می‌کنند که قدرت در آن برای نسلِ بعد مورد رقابت قرار خواهد گرفت — انتخابِ بهمن از هما رویدادهایی را به راه انداخت که داراب، اسکندر، و پایانِ عصرِ اساطیری را تولید کردند",
+        "زیرا شاهنامه دستاوردهای نظامی را کمتر از دستاوردهای اداری اهمیت می‌دهد، و جانشینی مهمترین تصمیمِ اداری است",
+        "زیرا هما یک فرمانروای بهتر از هر کسی بود که بهمن می‌توانست از طبقه‌ی نظامی انتخاب کند",
+        "زیرا انتخابِ وارثِ مؤنث بی‌سابقه بود و دربار را مجبور کرد ساختارهای سیاسیِ جدیدی توسعه دهد"
+      ],
+      "answers_tg": [
+        "Зеро лашкаркашиҳои низомӣ муайян мекунанд кӣ ҳоло қудрат дорад, дар ҳоле ки тасмимоти вориснамоӣ шароитеро муайян мекунанд ки дар он қудрат барои насли баъд рақобат карда мешавад — интихоби Баҳман аз Ҳамо рӯйдодҳоеро роҳ андохт ки Дороб, Искандар ва поёни асри асотириро тавлид карданд",
+        "Зеро Шоҳнома дастовардҳои низомиро камтар аз дастовардҳои идорӣ аҳамият медиҳад",
+        "Зеро Ҳамо ҳокими беҳтаре буд аз ҳар касе ки Баҳман аз синфи низомӣ интихоб карда метавонист",
+        "Зеро интихоби вориси муаннас бесобиқа буд ва дарборро маҷбур кард сохторҳои сиёсии нав таҳия кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Battles determine who wins. Succession decisions determine what the next contest will be fought over, and by whom, and under what conditions. Bahman's naming of Homay as heir produced a queen who put her son in a river, who became Darab, who fathered both Dara and Sekandar — which means Bahman's succession decision is the pivot around which the Shahnameh's entire final mythological arc turns.",
+      "explanation_fa": "نبردها تعیین می‌کنند چه کسی برنده می‌شود. تصمیماتِ جانشینی تعیین می‌کنند رقابتِ بعدی برای چه چیزی، توسطِ چه کسی، و در چه شرایطی خواهد بود. معرفیِ بهمن از هما به عنوانِ وارث ملکه‌ای تولید کرد که پسرش را در رودخانه گذاشت، که داراب شد، که پدرِ هم دارا و هم اسکندر بود — که یعنی تصمیمِ جانشینیِ بهمن محوری است که کلِّ قوسِ اساطیریِ پایانیِ شاهنامه حولِ آن می‌چرخد.",
+      "explanation_tg": "Набрдҳо муайян мекунанд кӣ бурд мекунад. Тасмимоти вориснамоӣ муайян мекунанд рақобати баъдӣ барои чӣ, аз ҷониби кӣ ва дар чӣ шароите хоҳад буд. Муаррифии Баҳман аз Ҳамо ҳамчун ворис маликаеро тавлид кард ки писарашро дар дарё гузошт, ки Дороб шуд, ки падари ҳам Дорo ва ҳам Искандар буд — яъне тасмими вориснамоии Баҳман муҳаварест ки тамоми камони асотирии ниҳоии Шоҳнома гирди он мечархад.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "bah-h8",
+      "chapter_slug": "bahman",
+      "quiz_part": 16,
+      "difficulty": "hard",
+      "question": "Ferdowsi was writing near the end of his life, having given thirty years to a poem whose patron rewarded him poorly. Bahman's reign lasts over a hundred years and is competent, just, and utterly unremarked by history compared to Rostam. What parallel might Ferdowsi have felt between Bahman's situation and his own?",
+      "question_fa": "فردوسی نزدیکِ پایانِ عمرش می‌نوشت، و سی سال به شعری داده بود که حامیِ آن ناکافی پاداش داد. دورانِ حکومتِ بهمن بیشتر از صد سال طول می‌کشد و در مقایسه با رستم کفایت‌دار، عادلانه، و کاملاً بدونِ تأثیر در تاریخ است. فردوسی ممکن است چه موازاتی بینِ وضعیتِ بهمن و وضعیتِ خود احساس کرده باشد؟",
+      "question_tg": "Фирдавсӣ дар наздикии поёни умраш менавишт, ва си сол ба шеъре дода буд ки ҳомии он нокифо подош дод. Давраи ҳукмронии Баҳман беш аз сад сол давом мекунад ва дар муқоиса бо Рустам кифоятдор, одилона ва пурра бидуни таъсир дар таърих аст. Фирдавсӣ мумкин аст чӣ монандие байни вазъияти Баҳман ва вазъияти худ эҳсос карда бошад?",
+      "answers": [
+        "Both did their work with competence and without recognition — Bahman governed well for a century and is remembered mostly for destroying Zal's house; Ferdowsi wrote well for thirty years and was rewarded poorly. Doing the work correctly is not the same as being recognized for it.",
+        "Both were victims of a system that rewarded loyalty poorly — Bahman like Rostam before him, Ferdowsi like Bahman",
+        "Ferdowsi probably identified with Faramarz rather than Bahman — the one who made a stand for a lost cause and was broken for it",
+        "Ferdowsi felt no personal parallel — he was a poet, not a king, and the Shahnameh does not invite that kind of biographical reading"
+      ],
+      "answers_fa": [
+        "هر دو کارشان را با کفایت و بدونِ شناخته شدن انجام دادند — بهمن یک قرن خوب حکومت کرد و عمدتاً به خاطرِ نابودیِ خانه‌ی زال به یاد آورده می‌شود؛ فردوسی سی سال خوب نوشت و ناکافی پاداش گرفت. انجامِ درستِ کار با شناخته شدن برای آن یکی نیست",
+        "هر دو قربانیِ سیستمی بودند که به وفاداری بد پاداش می‌داد — بهمن مثلِ رستم قبل از خود، فردوسی مثلِ بهمن",
+        "فردوسی احتمالاً بیشتر با فرامرز همانندی احساس می‌کرد تا با بهمن — کسی که برای یک آرمانِ از دست رفته مقاومت کرد و شکست خورد",
+        "فردوسی هیچ موازاتِ شخصی احساس نکرد — او شاعر بود نه شاه، و شاهنامه این نوع خواندنِ زندگینامه‌ای را دعوت نمی‌کند"
+      ],
+      "answers_tg": [
+        "Ҳар ду корашонро бо кифоят ва бидуни шинохта шудан анҷом доданд — Баҳман як аср хуб ҳукм ронд ва асосан ба хотири нобудии хонаи Зол дар хотир нигоҳ дошта мешавад; Фирдавсӣ си сол хуб навишт ва нокифо подош гирифт. Дурусти кардани кор бо шинохта шудан барои он яке нест",
+        "Ҳар ду қурбонии системе буданд ки ба садоқат бад подош медод",
+        "Фирдавсӣ эҳтимолан бештар бо Фаромарз ҳамонандӣ эҳсос мекард та бо Баҳман",
+        "Фирдавсӣ ҳеч монандии шахсӣ эҳсос накард — ӯ шоир буд на подшоҳ"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahman governed competently for over a century and is remembered primarily for destroying the house of Zal. The chronicle credits the competence and holds onto the destruction simultaneously. Ferdowsi, writing at the end of a long and poorly rewarded career, may have understood that doing the work correctly — administering justice, holding borders, writing the poem — is not a guarantee of how one is remembered. The century of good work does not erase the act that defined the reign.",
+      "explanation_fa": "بهمن بیشتر از یک قرن با کفایت حکومت کرد و عمدتاً به خاطرِ نابودیِ خانه‌ی زال به یاد آورده می‌شود. شاهنامه هم‌زمان کفایت را به رسمیت می‌شناسد و نابودی را نگه می‌دارد. فردوسی، که در پایانِ دورانِ طولانی و بد پاداش‌گرفته‌ای می‌نوشت، ممکن است درک کرده باشد که انجامِ درستِ کار — اجرای عدالت، نگه داشتنِ مرزها، نوشتنِ شعر — ضمانتِ نحوه‌ی به یاد آورده شدن نیست.",
+      "explanation_tg": "Баҳман беш аз як аср бо кифоят ҳукм ронд ва асосан ба хотири нобудии хонаи Зол дар хотир нигоҳ дошта мешавад. Шоҳнома ҳам‌замон кифоятро эътироф мекунад ва нобудиро нигоҳ медорад. Фирдавсӣ, ки дар поёни давраи тӯлонии бо подоши ками навишта буд, мумкин аст фаҳмида бошад ки дурусти кардани кор — иҷрои адолат, нигоҳ доштани марзҳо, навиштани шеър — кафолати тарзи дар хотир нигоҳ дошта шудан нест.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

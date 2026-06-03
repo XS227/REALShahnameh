@@ -1019,7 +1019,7 @@
   Promise.all([
     fetch("/season2/data/chapters.json", { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null),
     fetch(`/season2/data/lore/${encodeURIComponent(SLUG)}.json`, { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null),
-    fetch("/season2/data/quizzes.json", { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null)
+    fetch(`/season2/data/quizzes/${encodeURIComponent(SLUG)}.json`, { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null)
   ]).then(([chaptersBody, lore, quizzesBody]) => {
     const allChapters = (chaptersBody && chaptersBody.chapters) || [];
     const chapterMeta = allChapters.find(c => c.slug === SLUG) || null;

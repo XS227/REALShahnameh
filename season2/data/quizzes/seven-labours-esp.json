@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "hlb-e1",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How does Esfandiyar defeat the dragon in his third labour, and what does his method reveal about him compared to Rostam?",
+      "question_fa": "اسفندیار اژدهای خانِ سومش را چطور شکست می‌دهد، و روشش در مقایسه با رستم چه چیزی درباره‌ی او آشکار می‌کند؟",
+      "question_tg": "Исфандиёр аждаҳои хони сеюмашро чӣ тавр мебарад ва усулаш дар муқоиса бо Рустам чӣ мегӯяд?",
+      "answers": [
+        "He kills it with a spear thrown at its throat; this shows he relies entirely on physical strength like Rostam",
+        "He builds a device of spiked wheels on his chariot and drives into the dragon's mouth — engineering where Rostam would have used direct combat, showing Esfandiyar combines invulnerability with strategic intelligence",
+        "He prays and the dragon is struck by divine lightning, showing his faith is his primary weapon",
+        "He lures the dragon to a river and drowns it, showing his patience"
+      ],
+      "answers_fa": [
+        "با نیزه‌ای به گلویش می‌کشد؛ نشان می‌دهد مثلِ رستم کاملاً به نیروی جسمانی متکی است",
+        "دستگاهِ چرخ‌های تیزی روی ارابه‌اش می‌سازد و به دهانِ اژدها می‌راند — مهندسی جایی که رستم از نبردِ مستقیم استفاده می‌کرد، نشان می‌دهد اسفندیار آسیب‌ناپذیری را با هوشمندیِ استراتژیک ترکیب می‌کند",
+        "دعا می‌کند و اژدها توسطِ برقِ الهی زده می‌شود",
+        "اژدها را به رودخانه می‌کشاند و غرق می‌کند"
+      ],
+      "answers_tg": [
+        "Бо найзае ба гулӯяш мекушад",
+        "Дастгоҳи чархҳои тезеро дар аробааш месозад ва ба даҳони аждаҳо мерондад — муҳандисӣ ҷое ки Рустам аз набарди мустақим истифода мекард, нишон медиҳад Исфандиёр осебнопазириро бо ақли стратегӣ якҷо мекунад",
+        "Дуо мехонад ва аждаҳо бо барқи илоҳӣ зада мешавад",
+        "Аждаҳоро ба дарё мекашад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Esfandiyar's spiked chariot solution is the Shahnameh's signal that he and Rostam are different kinds of heroes. Rostam's typical approach is direct application of superior strength — he is simply more powerful than whatever he faces. Esfandiyar has the brazen body (invulnerability) but he does not rely on it alone: he builds a tool calibrated to the specific threat. This combination — unkillable plus strategic — is what makes him the specific challenge Rostam will face later. Rostam has never faced an opponent whose body cannot be pierced.",
+      "explanation_fa": "راه‌حلِ ارابه‌ی تیز سیگنالِ شاهنامه است که اسفندیار و رستم انواعِ متفاوتی از قهرمانان هستند. رویکردِ رستم اعمالِ مستقیمِ نیروی برتر است. اسفندیار روی آسیب‌ناپذیری تنها تکیه نمی‌کند — ابزارِ تنظیم‌شده می‌سازد.",
+      "explanation_tg": "Ҳалли арабаи тез сигнали Шоҳнома аст ки Исфандиёр ва Рустам навъҳои гуногуни қаҳрамонон ҳастанд. Рустам нерои бартари мустақимро татбиқ мекунад. Исфандиёр танҳо ба осебнопазирӣ такя намекунад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "hlb-e2",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "How does Esfandiyar defeat the sorceress in his fourth labour, and what principle does this share with Rostam's fourth labour?",
+      "question_fa": "اسفندیار جادوگرِ خانِ چهارمش را چطور شکست می‌دهد، و این روش چه اصلی را با خانِ چهارمِ رستم مشترک دارد؟",
+      "question_tg": "Исфандиёр ҷодугари хони чорумашро чӣ тавр мебарад ва ин чӣ принципе ро бо хони чоруми Рустам мушторак дорад?",
+      "answers": [
+        "He kills her with a sword; the shared principle is that physical strength defeats all enemies",
+        "He sees through her disguise using his battle experience — the shared principle is that warrior experience defeats deception",
+        "He speaks the name of Ahura Mazda and she dissolves — the shared principle is that illusion-based evil cannot survive genuine moral clarity, whether expressed through a name of God or a name of truth",
+        "He prays for three days and she abandons her deception out of respect for his faith"
+      ],
+      "answers_fa": [
+        "با شمشیر می‌کشد؛ اصلِ مشترک این است که نیروی جسمانی همه‌ی دشمنان را شکست می‌دهد",
+        "از طریقِ تجربه‌ی نبردی پوششِ او را می‌بیند",
+        "نامِ اهورا مزدا را می‌گوید و حل می‌شود — اصلِ مشترک این است که شرِ توهم‌محور در برابرِ وضوحِ اخلاقیِ واقعی دوام نمی‌آورد، چه از طریقِ نامِ خدا چه نامِ حقیقت",
+        "سه روز دعا می‌کند و جادوگر احترامِ ایمانش را نگه می‌دارد"
+      ],
+      "answers_tg": [
+        "Бо шамшер мекушад",
+        "Аз таҷрибаи ҷангии пӯшиши ӯро мебинад",
+        "Номи Аҳура Мазда мегӯяд ва ҳал мешавад — принципи муштарак ин аст ки шарри тавҳумӣ дар баробари возеҳии ахлоқии воқеӣ давом намеёбад",
+        "Се рӯз дуо мехонад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Both Rostam and Esfandiyar defeat their fourth-labour sorceresses through moral clarity rather than physical force. Rostam spoke the name of God; Esfandiyar speaks the name of Ahura Mazda. The specific name differs — Rostam operates in a pre-Zoroastrian world, Esfandiyar in a Zoroastrian one — but the principle is identical. The Shahnameh uses the fourth labour in both Haft Khans to make the same theological point: illusion-based evil requires the perceiver's uncertainty to function. Genuine moral clarity removes that uncertainty. The false form cannot survive it.",
+      "explanation_fa": "هم رستم و هم اسفندیار جادوگرانِ خانِ چهارمشان را از طریقِ وضوحِ اخلاقی شکست می‌دهند نه نیروی جسمانی. نامِ مشخص متفاوت است — رستم در دنیای پیش‌زرتشتی، اسفندیار در دنیای زرتشتی — اما اصل یکسان است.",
+      "explanation_tg": "ҳам Рустам ва ҳам Исфандиёр ҷодугарони хони чорумашонро тавассути возеҳии ахлоқӣ мебаранд. Ном мушаххас фарқ дорад — Рустам дар дунёи пешзардуштӣ — аммо принсип яксон аст.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "hlb-m1",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Esfandiyar enters the Brazen Fortress disguised as a merchant rather than assaulting it directly. What does this seventh-labour solution reveal about the Haft Khan as a structure?",
+      "question_fa": "اسفندیار به جای حملهی مستقیم به عنوانِ بازرگان ناشناخته وارد دژِ روئین می‌شود. این راه‌حلِ خانِ هفتم چه چیزی درباره‌ی هفت‌خان به عنوانِ ساختار آشکار می‌کند؟",
+      "question_tg": "Исфандиёр ба ҷои ҳамлаи мустақим ҳамчун тоҷир вориди Дежи Руин мешавад. Ин ҳалли хони ҳафтум дар бораи ҳафтхон ҳамчун сохтор чӣ мегӯяд?",
+      "answers": [
+        "It shows that the seventh labour is always the easiest — the hero is fully developed by then and the final challenge poses no real difficulty",
+        "It reveals that the Haft Khan tests completeness — the sequence covers physical strength, endurance, faith, and strategic subtlety, and the seventh labour requires the last of these: the ability to achieve through intelligence what cannot be achieved through force",
+        "It shows Esfandiyar was cowardly at the end — he should have attacked directly",
+        "The disguise was necessary because Esfandiyar's invulnerability did not work inside the fortress"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد خانِ هفتم همیشه آسان‌ترین است",
+        "آشکار می‌کند که هفت‌خان کمال را آزمون می‌کند — دنباله قدرتِ جسمانی، استقامت، ایمان، و ظرافتِ استراتژیک را می‌پوشاند، و خانِ هفتم آخری را می‌طلبد: توانایی رسیدن از طریقِ هوش به آنچه از طریقِ نیرو نمی‌شود",
+        "نشان می‌دهد اسفندیار در پایان بزدل بود",
+        "تغییرِ قیافه لازم بود چون آسیب‌ناپذیریِ اسفندیار داخلِ قلعه کار نمی‌کرد"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад хони ҳафтум ҳамеша осонтарин аст",
+        "Ошкор мекунад ки ҳафтхон камолро месанҷад — дунбола қудрати ҷисмонӣ, тобоварӣ, имон ва зарофати стратегиро мепӯшонад, ва хони ҳафтум охириро талаб мекунад",
+        "Нишон медиҳад Исфандиёр дар охир бузхор буд",
+        "Либоспӯшӣ лозим буд чун осебнопазирии Исфандиёр дар дарун кор намекард"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Haft Khan sequences in the Shahnameh test the hero's completeness across different registers: the early labours test physical supremacy (animals), the middle labours test perception and faith (sorceress), the late labours test endurance (cold) and strategic intelligence (the fortress). A hero who can complete all seven can meet every kind of challenge. The seventh labour's disguise solution is structurally necessary: it proves the hero knows when force is not the right tool and can operate without it.",
+      "explanation_fa": "دنباله‌های هفت‌خان کمالِ قهرمان را در رجیسترهای مختلف آزمون می‌کنند. خان‌های اولیه برتریِ جسمانی، میانی ادراک و ایمان، دیرهنگام استقامت و هوشِ استراتژیک را. راه‌حلِ تغییرِ قیافه‌ی خانِ هفتم از نظرِ ساختاری ضروری است: ثابت می‌کند قهرمان می‌داند چه وقتی نیرو ابزارِ درستی نیست.",
+      "explanation_tg": "Дунбалаҳои ҳафтхон камоли қаҳрамонро дар регистрҳои гуногун месанҷанд. Хонҳои аввала бартарии ҷисмонӣ, миёна идрок ва имон, дерҳангом тобоварӣ ва ақли стратегиро. Ҳалли либоспӯшии хони ҳафтум аз нигоҳи сохторӣ зарурист.",
+      "reward": {
+        "xp": 140,
+        "real": 60
+      }
+    },
+    {
+      "id": "hlb-h1",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The Shahnameh notes that Esfandiyar's Seven Labours were completed in service of a father who would then deny him the throne. How does this irony function in the narrative?",
+      "question_fa": "شاهنامه یادداشت می‌کند هفت خانِ اسفندیار در خدمتِ پدری کامل شد که بعد تخت را به او رد کرد. این پارادوکس چطور در روایت کار می‌کند؟",
+      "question_tg": "Шоҳнома қайд мекунад ки ҳафтхони Исфандиёр дар хидмати падаре тамом шуд ки баъд тахтро рад кард. Ин чӣ гуна кор мекунад?",
+      "answers": [
+        "It establishes that the labours' moral value is independent of the cause they served — Esfandiyar was genuinely tested and genuinely proved, even though the man who commanded the test was unworthy. The chronicle honors the achievement while refusing to let the unworthy patron redeem himself through it",
+        "It shows the futility of heroism — the Shahnameh argues that heroic acts are ultimately meaningless",
+        "It proves Esfandiyar was foolish to trust his father",
+        "The irony is unintentional — Ferdowsi did not mean to connect the labours to Goshtasp's betrayals"
+      ],
+      "answers_fa": [
+        "ثابت می‌کند ارزشِ اخلاقیِ خان‌ها مستقل از هدفی است که در خدمتشان بوده — اسفندیار واقعاً آزمون شد و واقعاً ثابت کرد، حتی با اینکه مردی که دستور داد ناشایسته بود. شاهنامه موفقیت را می‌ستاید در حالی که اجازه نمی‌دهد حامیِ ناشایسته از طریقِ آن خودش را بازخرید کند",
+        "بیهودگیِ قهرمانی را نشان می‌دهد",
+        "ثابت می‌کند اسفندیار احمق بود که به پدرش اعتماد کرد",
+        "پارادوکس غیرعمدی است"
+      ],
+      "answers_tg": [
+        "Исбот мекунад арзиши ахлоқии хонҳо аз ҳадафе ки дар хидматашон буда мустақил аст — Исфандиёр воқеан санҷида шуд ва воқеан исбот кард, ҳатто бо он ки марде ки дастур дод ношоиста буд",
+        "Беҳудагии қаҳрамониро нишон медиҳад",
+        "Исбот мекунад Исфандиёр аблаҳ буд",
+        "Парадокс ғайриқасдӣ аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh honors Esfandiyar's Seven Labours as genuine achievements that prove his completeness as a hero — regardless of the fact that they were performed for a father who would deny him everything he earned. The labours' moral value belongs to Esfandiyar; Goshtasp did not generate it by commanding them and cannot claim it. This separation is important: the chronicle is making the argument that heroic achievement is measured by what it demands of the person performing it, not by the worthiness of the authority that commissioned it.",
+      "explanation_fa": "شاهنامه هفت خانِ اسفندیار را به عنوانِ دستاوردهای واقعی می‌ستاید — صرفِ نظر از اینکه برای پدری انجام شدند که همه چیزِ کسب‌شده را از او دریغ کرد. ارزشِ اخلاقیِ خان‌ها به اسفندیار تعلق دارد. جداسازی مهم است: شاهنامه استدلال می‌کند که دستاوردِ قهرمانانه با آنچه از شخص انجام‌دهنده می‌طلبد سنجیده می‌شود.",
+      "explanation_tg": "Шоҳнома ҳафтхони Исфандиёрро ҳамчун дастовардҳои воқеӣ ситоиш мекунад — сарфи назар аз ин ки барои падаре иҷро шуданд ки ҳамаи касбшударо аз ӯ дариғ кард. Арзиши ахлоқии хонҳо ба Исфандиёр тааллуқ дорад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "hlb-e3",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What was the seventh and final station of Esfandiyar's labours?",
+      "question_fa": "هفتمین و آخرین ایستگاهِ خان‌های اسفندیار چه بود؟",
+      "question_tg": "Ҳафтумин ва охирин истгоҳи Ҳафтхони Исфандиёр чӣ буд?",
+      "answers": [
+        "A great bird",
+        "The killing cold",
+        "A dragon",
+        "The Brazen Fortress"
+      ],
+      "answers_fa": [
+        "پرنده‌ی بزرگ",
+        "سرمای کشنده",
+        "اژدها",
+        "دژِ رویین"
+      ],
+      "answers_tg": [
+        "Паррандаи бузург",
+        "Сармои кушанда",
+        "Аждаҳо",
+        "Деҷи Руин"
+      ],
+      "correct_answer": 3,
+      "explanation": "The seventh station was the Brazen Fortress itself — which could not be taken by force. Esfandiyar arrived disguised as a merchant.",
+      "explanation_fa": "هفتمین ایستگاه خودِ دژِ رویین بود — که با زور نمی‌شد گرفت. اسفندیار در لباسِ بازرگان رسید.",
+      "explanation_tg": "Ҳафтумин истгоҳ худи Деҷи Руин буд — ки бо зӯр гирифта намешуд. Исфандиёр дар либоси тоҷир расид.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "hlb-m2",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "How did Esfandiyar defeat the dragon in the third labour?",
+      "question_fa": "اسفندیار در سومین خان اژدها را چگونه شکست داد؟",
+      "question_tg": "Исфандиёр дар сеюмин хон аждаҳоро чӣ тавр шикаст дод?",
+      "answers": [
+        "He drove an arrow through the dragon's eye",
+        "He built a device of spiked wheels on his chariot and drove into the dragon's mouth",
+        "He spoke the name of Ahura Mazda",
+        "He led the dragon into a pit trap"
+      ],
+      "answers_fa": [
+        "تیری از چشمِ اژدها عبور داد",
+        "دستگاهی از چرخ‌های تیغه‌دار بر ارابه‌اش ساخت و به دهانِ اژدها راند",
+        "نامِ اهورا مزدا را گفت",
+        "اژدها را به دامِ چاهی هدایت کرد"
+      ],
+      "answers_tg": [
+        "Тире аз чашми аждаҳо гузаронид",
+        "Дастгоҳе аз чархҳои ханҷардор бар ароба сохт ва ба даҳони аждаҳо ронд",
+        "Номи Аҳура Маздоро гуфт",
+        "Аждаҳоро ба тали чоҳе роҳнамоӣ кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "Esfandiyar built a device of spiked wheels on his chariot and drove into the dragon's mouth. The spikes did what arrows could not.",
+      "explanation_fa": "اسفندیار دستگاهی از چرخ‌های تیغه‌دار بر ارابه‌اش ساخت و به دهانِ اژدها راند. تیغه‌ها آنچه تیرها نمی‌توانستند انجام دادند.",
+      "explanation_tg": "Исфандиёр дастгоҳе аз чархҳои ханҷардор бар ароба сохт ва ба даҳони аждаҳо ронд. Ханҷарҳо он чиро ки тирҳо наметавонистанд анҷом доданд.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      }
+    },
+    {
+      "id": "hlb-m3",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "How did Esfandiyar defeat the sorceress in the fourth labour?",
+      "question_fa": "اسفندیار جادوگر را در چهارمین خان چگونه شکست داد؟",
+      "question_tg": "Исфандиёр ҷодугарро дар чаҳорумин хон чӣ тавр шикаст дод?",
+      "answers": [
+        "He cut her down with his sword",
+        "He spoke the name of Ahura Mazda and her false form dissolved",
+        "He trapped her in a circle of fire",
+        "Rakhsh trampled her"
+      ],
+      "answers_fa": [
+        "با شمشیر کشتش",
+        "نامِ اهورا مزدا را گفت و شکلِ دروغینش از هم پاشید",
+        "در حلقه‌ای از آتش به دام انداخت",
+        "رخش لگدمالش کرد"
+      ],
+      "answers_tg": [
+        "Бо шамшер кушт",
+        "Номи Аҳура Маздоро гуфт ва шакли дурӯғинаш аз ҳам пошид",
+        "Дар доираи оташ ба дом андохт",
+        "Рахш лагадмолаш кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "The sorceress appeared as a beautiful young woman offering rest. Esfandiyar spoke the name of Ahura Mazda. The false form dissolved.",
+      "explanation_fa": "جادوگر به شکلِ زنِ جوانِ زیبایی که استراحت پیشنهاد می‌داد ظاهر شد. اسفندیار نامِ اهورا مزدا را گفت. شکلِ دروغین از هم پاشید.",
+      "explanation_tg": "Ҷодугар ба шакли зани ҷавони зебое ки истироҳат пешниҳод мекард зоҳир шуд. Исфандиёр номи Аҳура Маздоро гуфт. Шакли дурӯғин аз ҳам пошид.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "hlb-m4",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "How did Esfandiyar enter the Brazen Fortress to complete the seventh labour?",
+      "question_fa": "اسفندیار چگونه وارد دژِ رویین شد تا هفتمین خان را کامل کند؟",
+      "question_tg": "Исфандиёр чӣ тавр ба Деҷи Руин даромад то ҳафтумин хонро тамом кунад?",
+      "answers": [
+        "He broke the gates with his brazen body",
+        "He arrived disguised as a merchant, was admitted, spent two days mapping, acted on the third",
+        "He waited for an Iranian army to create a diversion",
+        "He used the spiked chariot device from the dragon fight"
+      ],
+      "answers_fa": [
+        "با جسمِ رویین‌تنش دروازه‌ها را شکست",
+        "در لباسِ بازرگان رسید، پذیرفته شد، دو روز نقشه‌کشی کرد، روزِ سوم عمل کرد",
+        "منتظر ماند که لشکرِ ایرانی حواس‌پرتی ایجاد کند",
+        "از دستگاهِ ارابه‌ی تیغه‌دار از نبردِ اژدها استفاده کرد"
+      ],
+      "answers_tg": [
+        "Бо ҷисми рӯинаш дарвозаҳоро шикаст",
+        "Дар либоси тоҷир расид, пазируфта шуд, ду рӯз харитакашӣ кард, рӯзи сеюм амал кард",
+        "Интизор монд ки лашкари Эронӣ парешонӣ ба вуҷуд оварад",
+        "Аз дастгоҳи аробаи ханҷардор аз набарди аждаҳо истифода кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "The seventh station could not be taken by force. He arrived as a merchant, mapped the fortress for two days, then killed the commanders and freed his sisters on the third.",
+      "explanation_fa": "هفتمین ایستگاه با زور گرفته نمی‌شد. به عنوانِ بازرگان رسید، دو روز قلعه را نقشه‌کشی کرد، بعد روزِ سوم سرداران را کشت و خواهرانش را آزاد کرد.",
+      "explanation_tg": "Ҳафтумин истгоҳ бо зӯр гирифта намешуд. Ҳамчун тоҷир расид, ду рӯз қалъаро харитакашӣ кард, сипас рӯзи сеюм сардоронро кушт ва хоҳаронашро озод кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "hlb-m5",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "What happened to the Brazen Fortress after Esfandiyar freed his sisters?",
+      "question_fa": "بعد از اینکه اسفندیار خواهرانش را آزاد کرد، دژِ رویین چه شد؟",
+      "question_tg": "Пас аз он ки Исфандиёр хоҳаронашро озод кард, Деҷи Руин чӣ шуд?",
+      "answers": [
+        "He seized it for Iran's use",
+        "He burned it from inside",
+        "He left it standing as a monument",
+        "He ordered the garrison to hold it for Goshtasp"
+      ],
+      "answers_fa": [
+        "آن را برای استفاده‌ی ایران تصاحب کرد",
+        "از داخل آتش زد",
+        "آن را به عنوانِ یادگار ایستاده گذاشت",
+        "به پادگان دستور داد آن را برای گشتاسپ نگه دارد"
+      ],
+      "answers_tg": [
+        "Онро барои истифодаи Эрон тасаррuf кард",
+        "Аз дарун оташ зад",
+        "Онро ҳамчун ёдгор истода гузошт",
+        "Ба гарнизон дастур дод онро барои Гуштосп нигоҳ дорад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Esfandiyar killed Arjasp's key commanders, freed his sisters Homay and Beh-Afarid, and burned the fortress from inside.",
+      "explanation_fa": "اسفندیار سرداران کلیدیِ ارجاسپ را کشت، خواهرانش هومای و به‌آفرید را آزاد کرد، و قلعه را از داخل آتش زد.",
+      "explanation_tg": "Исфандиёр сардорони калидии Арҷоспро кушт, хоҳаронаш Ҳумой ва Баҳофаридро озод кард, ва қалъаро аз дарун оташ зад.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "hlb-h2",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Esfandiyar 'noted that strength against strength was the test he was least likely to fail.' What does this self-assessment reveal?",
+      "question_fa": "اسفندیار «متوجه شد که قدرت در برابرِ قدرت آزمونی است که کمترین احتمال را دارد شکست بخورد.» این خودارزیابی چه چیزی آشکار می‌کند؟",
+      "question_tg": "Исфандиёр «таваҷҷӯҳ кард ки қудрат дар баробари қудрат озмонест ки камтарин эҳтимолро дорад шикаст хӯрад.» Ин хударзёбӣ чӣ ошкор мекунад?",
+      "answers": [
+        "He was overconfident and about to learn humility",
+        "He understood his own nature accurately — honest about his strengths and about the harder tests ahead",
+        "He was dismissing the wolves and lions as trivial",
+        "He was comparing himself favorably to Rostam"
+      ],
+      "answers_fa": [
+        "خیلی اعتماد به نفس داشت و در شرفِ آموختنِ فروتنی بود",
+        "طبیعتِ خودش را دقیقاً می‌شناخت — صادقانه درباره‌ی نقاطِ قوتش و آزمون‌های سخت‌ترِ پیش رو",
+        "گرگ‌ها و شیران را به عنوانِ بی‌اهمیت رد کرد",
+        "خودش را به صورتِ مطلوب با رستم مقایسه می‌کرد"
+      ],
+      "answers_tg": [
+        "Хеле боварии ба нафс дошт ва дар ошёнаи омӯхтани фурӯтанӣ буд",
+        "Табиати худашро дақиқан мешинохт — صодиқона дар бораи нуқтаҳои қавваташ ва озмунҳои сахттари пеш рӯ",
+        "Гургон ва шеронро ҳамчун бемуҳим рад кард",
+        "Худашро ба таври мусоид бо Рустам муқоиса мекард"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Strength against strength was the test he was least likely to fail. The harder trials would follow.' This is accurate self-knowledge, not boasting.",
+      "explanation_fa": "«قدرت در برابرِ قدرت آزمونی بود که کمترین احتمال را داشت شکست بخورد. آزمون‌های سخت‌تر پیش می‌آمدند.» این خودشناسیِ دقیق است، نه خودستایی.",
+      "explanation_tg": "«Қудрат дар баробари қудрат озмоне буд ки камтарин эҳтимол шикаст хӯрдан дошт. Озмунҳои сахттар пеш меомаданд.» Ин худшиносии дақиқ аст, на лофзанӣ.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "hlb-h3",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "In the fifth labour against the great bird, Esfandiyar used his brazen body as the weapon. How exactly?",
+      "question_fa": "در پنجمین خان در برابرِ پرنده‌ی بزرگ، اسفندیار جسمِ رویین‌تنش را به عنوانِ سلاح استفاده کرد. دقیقاً چگونه؟",
+      "question_tg": "Дар панҷумин хон дар баробари паррандаи бузург, Исфандиёр ҷисми рӯинашро ҳамчун силоҳ истифода кард. Дақиқан чӣ тавр?",
+      "answers": [
+        "He charged at the bird and his brazen chest killed it on impact",
+        "He let the bird strike him — absorbed the full impact without damage — and killed it when it could not recover from its own strike",
+        "He used his brazen body as a shield and stabbed upward",
+        "He stood still and let the bird exhaust itself against him"
+      ],
+      "answers_fa": [
+        "به پرنده حمله کرد و سینه‌ی رویین‌تنش در برخورد آن را کشت",
+        "اجازه داد پرنده به او ضربه بزند — تمامِ ضربه را بدونِ آسیب جذب کرد — و وقتی نمی‌توانست از ضربه‌ی خودش بهبود یابد آن را کشت",
+        "جسمِ رویین‌تنش را به عنوانِ سپر استفاده کرد و از پایین ضربه زد",
+        "ایستاد و اجازه داد پرنده خودش را در برابرش خسته کند"
+      ],
+      "answers_tg": [
+        "Ба паранда ҳамла кард ва синаи рӯинаш дар бархӯрд онро кушт",
+        "Иҷозат дод паранда ба ӯ зарб занад — тамоми зарбро бидуни осеб ҷазб кард — ва вақте аз зарби худаш барнамегашт онро кушт",
+        "Ҷисми рӯинашро ҳамчун сипар истифода кард ва аз поён зарб зад",
+        "Истод ва иҷозат дод паранда худашро дар баробараш хаста кунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Esfandiyar let it strike his brazen body, took the full impact without damage, and killed it when it could not recover from its own strike.' The bird's attack became the weapon used against it.",
+      "explanation_fa": "«اسفندیار اجازه داد به جسمِ رویین‌تنش ضربه بزند، تمامِ ضربه را بدونِ آسیب جذب کرد، و وقتی نمی‌توانست از ضربه‌ی خودش بهبود یابد آن را کشت.» حمله‌ی پرنده به سلاحِ استفاده‌شده علیهش تبدیل شد.",
+      "explanation_tg": "«Исфандиёр иҷозат дод ба ҷисми рӯинаш зарб занад, тамоми зарбро бидуни осеб ҷазб кард, ва вақте аз зарби худаш барнамегашт онро кушт.» Ҳамлаи паранда ба силоҳи истифодашуда бар зиддаш табдил шуд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hlb-h4",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The sixth labour was a region of killing cold. The chapter describes Esfandiyar's response in essentially three words. What were they?",
+      "question_fa": "خانِ ششم منطقه‌ای با سرمای کشنده بود. فصل پاسخِ اسفندیار را در اساساً سه کلمه توصیف می‌کند. آن‌ها چه بودند؟",
+      "question_tg": "Шашумин хон минтақаеро бо сармои кушанда буд. Фасл посухи Исфандиёрро дар асосан се калима тавсиф мекунад. Онҳо чӣ буданд?",
+      "answers": [
+        "He prayed continuously",
+        "He wore sacred armor",
+        "He burned holy oil",
+        "He walked through without stopping"
+      ],
+      "answers_fa": [
+        "پیوسته دعا کرد",
+        "زرهِ مقدس پوشید",
+        "روغنِ مقدس سوزاند",
+        "بدونِ توقف از آن گذشت"
+      ],
+      "answers_tg": [
+        "Пайваста дуо кард",
+        "Зиреҳи муқаддас пӯшид",
+        "Равғани муқаддас сӯзонд",
+        "Бидуни тавваккуф аз он гузашт"
+      ],
+      "correct_answer": 3,
+      "explanation": "'He walked through without stopping.' Three days of frost and white expanse. The brevity of the description is the point.",
+      "explanation_fa": "«بدونِ توقف از آن گذشت.» سه روز یخبندان و بیابانِ سفید. اختصارِ توصیف همان نکته است.",
+      "explanation_tg": "«Бидуни тавваккуф аз он гузашт.» Се рӯзи яхбандон ва биёбони сафед. Ихтисори тавсиф ҳамон нукта аст.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "hlb-h5",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The chapter says the Seven Labours 'established Esfandiyar's claim to stand beside Rostam.' What does 'stand beside' mean here?",
+      "question_fa": "فصل می‌گوید هفت خان «ادعای اسفندیار برای ایستادن در کنارِ رستم» را تثبیت کرد. «ایستادن در کنار» اینجا چه معنایی دارد؟",
+      "question_tg": "Фасл мегӯяд Ҳафтхон «иддаои Исфандиёр барои истодан дар канори Рустам» ро таъсис кард. «Истодан дар канор» ин ҷо чӣ маъно дорад?",
+      "answers": [
+        "He could physically stand next to Rostam in battle without shame",
+        "They completed the same type of ordeal — a Haft Khan — making them equals in the chronicle's heroic register",
+        "Esfandiyar surpassed Rostam in religious virtue",
+        "They would eventually fight as allies"
+      ],
+      "answers_fa": [
+        "می‌توانست در نبرد بدونِ شرم کنارِ رستم بایستد",
+        "هر دو همان نوع آزمون را — هفت خان — کامل کردند که آن‌ها را در ثبتِ قهرمانیِ شاهنامه برابر می‌کند",
+        "اسفندیار رستم را در فضیلتِ دینی از پیش گذاشت",
+        "آن‌ها در نهایت به عنوانِ متحد می‌جنگیدند"
+      ],
+      "answers_tg": [
+        "Метавонист дар набард бидуни шарм дар канори Рустам бистад",
+        "Ҳарду ҳамон намуди озмонро — Ҳафтхон — тамом карданд ки онҳоро дар сабти қаҳрамонии Шоҳнома баробар мекунад",
+        "Исфандиёр Рустамро дар фазилати динӣ аз пеш гузошт",
+        "Онҳо дар ниҳоят ҳамчун муттаҳид меҷангиданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam's Seven Labours and Esfandiyar's Seven Labours are the only such sequences in the chronicle. Completing both establishes equal heroic standing — which makes their clash meaningful.",
+      "explanation_fa": "هفت خانِ رستم و هفت خانِ اسفندیار تنها چنین توالی‌هایی در شاهنامه هستند. تکمیلِ هر دو جایگاهِ قهرمانیِ مساوی تثبیت می‌کند — که رویارویی‌شان را معنادار می‌کند.",
+      "explanation_tg": "Ҳафтхони Рустам ва Ҳафтхони Исфандиёр ягона чунин тавалиҳо дар Шоҳнома ҳастанд. Тамом кардани ҳарду ҷойгоҳи қаҳрамонии баробарро таъсис мекунад — ки рӯёрӯйиашонро маънодор мекунад.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "hlb-h6",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The chapter's closing observation: these labours 'were completed in service of a father who would then imprison him, deny him the throne, and eventually send him to die.' What is the function of this observation?",
+      "question_fa": "مشاهده‌ی پایانیِ فصل: این خان‌ها «در خدمتِ پدری کامل شدند که بعد او را زندانی کرد، تخت را رد کرد و در نهایت برای مرگ فرستادش.» این مشاهده چه کارکردی دارد؟",
+      "question_tg": "Мушоҳидаи поёнии фасл: ин хонҳо «дар хидмати падаре тамом шуданд ки баъд ӯро зиндонӣ кард, тахтро рад кард ва дар ниҳоят барои маргаш фиристод.» Ин мушоҳида чӣ кордаде дорад?",
+      "answers": [
+        "It criticizes Esfandiyar for being naive",
+        "It frames the heroic achievement precisely — the labours are genuine, the achievement real, and they were all given to a father who exploited them without remorse",
+        "It excuses Goshtasp by showing the scale of what he demanded",
+        "It is Ferdowsi's condemnation of Goshtasp"
+      ],
+      "answers_fa": [
+        "اسفندیار را برای ساده‌لوح بودن انتقاد می‌کند",
+        "دستاوردِ قهرمانانه را دقیقاً قاب‌بندی می‌کند — خان‌ها واقعی هستند، دستاورد حقیقی است، و همه به پدری داده شدند که بدونِ پشیمانی از آن‌ها بهره‌کشی کرد",
+        "گشتاسپ را با نشان دادنِ مقیاسِ آنچه طلبید معذور می‌دارد",
+        "محکومیتِ فردوسی از گشتاسپ است"
+      ],
+      "answers_tg": [
+        "Исфандиёрро барои содадил будан танқид мекунад",
+        "Дастоварди қаҳрамонона дақиқан қолаббандӣ мекунад — хонҳо воқеӣ ҳастанд, дастовард ҳақиқӣ аст, ва ҳама ба падаре дода шуданд ки бидуни пушаймонӣ аз онҳо истисмор кард",
+        "Гуштоспро бо нишон додани миқёси он чи талаб кард маъзур медорад",
+        "Маҳкуми Фирдавсӣ аз Гуштосп аст"
+      ],
+      "correct_answer": 1,
+      "explanation": "The labours are real; the achievement is undisputed. The observation doesn't diminish the achievement — it places it precisely within the tragic structure.",
+      "explanation_fa": "خان‌ها واقعی هستند؛ دستاورد غیرقابلِ تردید است. مشاهده دستاورد را کم نمی‌کند — آن را دقیقاً در ساختارِ تراژیک قرار می‌دهد.",
+      "explanation_tg": "Хонҳо воқеӣ ҳастанд; дастовард ғайриқобили тардид аст. Мушоҳида дастовардро кам намекунад — онро дақиқан дар сохтори фоҷиавӣ ҷойгир мекунад.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "hlb-h7",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Why does the Shahnameh have two Haft Khans — one for Rostam and one for Esfandiyar?",
+      "question_fa": "چرا شاهنامه دو هفت خان دارد — یکی برای رستم و یکی برای اسفندیار؟",
+      "question_tg": "Чаро Шоҳнома ду Ҳафтхон дорад — яке барои Рустам ва яке барои Исфандиёр?",
+      "answers": [
+        "Ferdowsi was reusing a popular narrative structure",
+        "Two Haft Khans establish Esfandiyar as Rostam's equal — making their inevitable clash meaningful rather than unequal",
+        "Both heroes needed to prove themselves to their respective kings",
+        "The seven-stage structure was historically required for all great heroes"
+      ],
+      "answers_fa": [
+        "فردوسی از ساختارِ رواییِ محبوبی دوباره استفاده می‌کرد",
+        "دو هفت خان اسفندیار را به عنوانِ برابرِ رستم تثبیت می‌کند — رویارویی اجتناب‌ناپذیرشان را معنادار می‌کند نه نابرابر",
+        "هر دو قهرمان باید خودشان را به شاهانِ مربوطه ثابت می‌کردند",
+        "ساختارِ هفت مرحله‌ای برای همه‌ی قهرمانانِ بزرگ از نظرِ تاریخی لازم بود"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ аз сохтори ривоятии маҳбубе дубора истифода мекард",
+        "Ду Ҳафтхон Исфандиёрро ҳамчун ҳариби Рустам таъсис мекунад — рӯёрӯйии ногузирашонро маънодор мекунад на нобаробар",
+        "Ҳарду қаҳрамон бояд худашонро ба подшоҳони марбуташон исбот мекарданд",
+        "Сохтори ҳафтмарҳалаӣ барои ҳама қаҳрамонони бузург аз назари таърихӣ лозим буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "If Esfandiyar were lesser than Rostam, their clash would be unequal and the tragedy reduced. Two completed Haft Khans make them equals before the collision.",
+      "explanation_fa": "اگر اسفندیار از رستم کمتر بود، رویارویی‌شان نابرابر و تراژدی کم‌رنگ‌تر می‌شد. دو هفت خانِ تکمیل‌شده قبل از برخورد آن‌ها را برابر می‌کند.",
+      "explanation_tg": "Агар Исфандиёр аз Рустам камтар мебуд, рӯёрӯйиашон нобаробар ва фоҷиа сабуктар мешуд. Ду Ҳафтхони тамомшуда пеш аз бархӯрд онҳоро баробар мекунад.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "hlb-h8",
+      "chapter_slug": "seven-labours-esp",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The seven labours required seven different responses: strength, endurance, a device, speech, patience, cold-walking, and disguise. What does this variety demonstrate about Esfandiyar?",
+      "question_fa": "هفت خان به هفت پاسخِ مختلف نیاز داشت: قدرت، استقامت، دستگاه، سخن، صبر، راه رفتن در سرما، و لباسِ مبدل. این تنوع درباره‌ی اسفندیار چه چیزی نشان می‌دهد؟",
+      "question_tg": "Ҳафт хон ба ҳафт посухи гуногун ниёз дошт: қудрат, бардошт, дастгоҳ, сухан, сабр, роҳ рафтан дар сармо, ва либоси мубаддал. Ин гуногунӣ дар бораи Исфандиёр чӣ нишон медиҳад?",
+      "answers": [
+        "He was unusually well-prepared by his tutors",
+        "He is not just a warrior but a complete figure — capable of invention, patience, speech, and strategy as well as combat",
+        "His brazen body made all these tasks easier",
+        "Goshtasp designed the labours to test specific skills"
+      ],
+      "answers_fa": [
+        "معلمانش به طورِ غیرمعمول خوب آموزشش داده بودند",
+        "فقط یک جنگجو نیست بلکه شخصیتِ کاملی است — قادر به اختراع، صبر، سخن و استراتژی هم مثلِ نبرد",
+        "جسمِ رویین‌تنش همه‌ی این کارها را آسان‌تر کرد",
+        "گشتاسپ خان‌ها را برای آزمونِ مهارت‌های خاص طراحی کرد"
+      ],
+      "answers_tg": [
+        "Омӯзгоронаш ба таври ғайримуқаррар хуб омӯзишаш дода буданд",
+        "Танҳо ҷангӣ нест балки шахсияти комиле аст — қодир ба ихтироъ, сабр, сухан ва стратегия ҳам монанди набард",
+        "Ҷисми рӯинаш ҳама ин корҳоро осонтар кард",
+        "Гуштосп хонҳоро барои озмони маҳоратҳои хосса тарҳрезӣ карда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The variety is the point — Esfandiyar isn't defined by one quality. The seven labours map the full range of his capacities, which is why his tragic end is so complete.",
+      "explanation_fa": "تنوع همان نکته است — اسفندیار با یک ویژگی تعریف نمی‌شود. هفت خان طیفِ کاملِ ظرفیت‌هایش را ترسیم می‌کند، که همین دلیلِ کامل بودنِ پایانِ تراژیکش است.",
+      "explanation_tg": "Гуногунӣ ҳамон нукта аст — Исфандиёр бо як сифат таъриф намешавад. Ҳафт хон тайфи пурраи зарфиятҳоро расм мекунад, ки ҳамин сабаби комил будани поёни фоҷиавиаш аст.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

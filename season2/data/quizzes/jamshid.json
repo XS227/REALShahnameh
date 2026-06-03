@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "jamshid-1",
+      "chapter_slug": "jamshid",
+      "quiz_part": 1,
+      "question": "Why does Jamshid lose the divine grace (farr)?",
+      "answers": [
+        "He refuses fire",
+        "He kills a demon",
+        "He claims to be a god",
+        "He forgets Sade"
+      ],
+      "correct_answer": 2,
+      "explanation": "Jamshid's pride drives the farr away.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      },
+      "difficulty": "medium",
+      "question_fa": "چرا جمشید فرّ الهی را از دست داد؟",
+      "question_tg": "Чаро Ҷамшид Фарри илоҳиро аз даст дод?",
+      "answers_fa": [
+        "آتش را رد کرد",
+        "دیوی را کشت",
+        "ادعا کرد که خداست",
+        "سده را فراموش کرد"
+      ],
+      "answers_tg": [
+        "Оташро рад кард",
+        "Деверо кушт",
+        "Иддаъо кард ки худост",
+        "Садаро фаромӯш кард"
+      ],
+      "explanation_fa": "غرورِ جمشید فَر را از او دور کرد. او ادعا کرد سرچشمه‌ی همه چیز است — زندگی، نظم، خودِ آسمان — و موهبتِ الهی بلافاصله رفت.",
+      "explanation_tg": "Ғурури Ҷамшид Фаррро аз ӯ дур кард. Ӯ иддаъо кард, ки сарчашмаи ҳама чиз аст ва неъмати илоҳӣ фавран рафт."
+    },
+    {
+      "id": "jamshid-2",
+      "chapter_slug": "jamshid",
+      "quiz_part": 1,
+      "question": "Into how many crafts does Jamshid divide the people?",
+      "answers": [
+        "Three",
+        "Seven",
+        "Five",
+        "Four"
+      ],
+      "correct_answer": 3,
+      "explanation": "Priests, warriors, farmers, artisans.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      },
+      "difficulty": "easy",
+      "question_fa": "جمشید مردم را به چند صنف تقسیم کرد؟",
+      "question_tg": "Ҷамшид мардумро ба чанд табақа тақсим кард?",
+      "answers_fa": [
+        "سه",
+        "هفت",
+        "پنج",
+        "چهار"
+      ],
+      "answers_tg": [
+        "Се",
+        "Ҳафт",
+        "Панҷ",
+        "Чор"
+      ],
+      "explanation_fa": "چهار طبقه: موبدان (روحانیان)، ارتشتاران (جنگاوران)، واستوشان (کشاورزان) و اهنوخوشان (پیشه‌وران). این تقسیم‌بندیِ جمشید الگوی تمدنِ منظم در شاهنامه است.",
+      "explanation_tg": "Чор табақа: Мӯбадон, Арташторон, Вастӯшон ва Аҳнухӯшон. Ин тақсимоти Ҷамшид намунаи тамаддуни мунтазам дар Шоҳнома аст."
+    },
+    {
+      "id": "jamshid-3",
+      "chapter_slug": "jamshid",
+      "quiz_part": 2,
+      "question": "Jamshid is carried into the sky on which festival?",
+      "answers": [
+        "Nowruz",
+        "Mehregan",
+        "Sade",
+        "Yalda"
+      ],
+      "correct_answer": 0,
+      "explanation": "Nowruz commemorates his ascent.",
+      "reward": {
+        "xp": 130,
+        "real": 55
+      },
+      "difficulty": "medium",
+      "question_fa": "جمشید در کدام جشن به آسمان برده شد؟",
+      "question_tg": "Ҷамшид дар кадом иде ба осмон бурда шуд?",
+      "answers_fa": [
+        "نوروز",
+        "مهرگان",
+        "سده",
+        "یلدا"
+      ],
+      "answers_tg": [
+        "Наврӯз",
+        "Меҳргон",
+        "Сада",
+        "Ялдо"
+      ],
+      "explanation_fa": "نوروز ریشه‌اش را در شاهنامه به این لحظه می‌رساند: روزِ صعودِ تختِ بلورینِ جمشید. «آن را نوروز نامیدند، روزِ نو.» جشنی زاده از زیباترین عملِ شاه.",
+      "explanation_tg": "Наврӯз решааш дар Шоҳнома ба ин лаҳза мерасад: рӯзи боло рафтани тахти булурини Ҷамшид. «Онро Наврӯз номиданд, рӯзи нав.»"
+    },
+    {
+      "id": "jamshid-4",
+      "chapter_slug": "jamshid",
+      "quiz_part": 1,
+      "question": "How long does Jamshid's reign of light last?",
+      "answers": [
+        "100 years",
+        "300 years",
+        "500 years",
+        "700 years"
+      ],
+      "correct_answer": 1,
+      "explanation": "Three hundred years before pride.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      },
+      "difficulty": "hard",
+      "question_fa": "پادشاهی نور جمشید چه مدت طول کشید؟",
+      "question_tg": "Шоҳии нури Ҷамшид чӣ қадар давом кард?",
+      "answers_fa": [
+        "۱۰۰ سال",
+        "۳۰۰ سال",
+        "۵۰۰ سال",
+        "۷۰۰ سال"
+      ],
+      "answers_tg": [
+        "100 сол",
+        "300 сол",
+        "500 сол",
+        "700 сол"
+      ],
+      "explanation_fa": "سیصد سال پیش از آنکه غرور فَر را از او بگیرد. شاهنامه این عدد را با دقت انتخاب می‌کند: طولانی به‌اندازه‌ای که بدون چالش بودن آدم را از خودش بی‌خبر کند.",
+      "explanation_tg": "Сесад сол пеш аз он ки ғурур Фаррро аз ӯ бигирад. Шоҳнома ин рақамро бо дақиқат интихоб мекунад."
+    },
+    {
+      "id": "jamshid-e2",
+      "chapter_slug": "jamshid",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What kind of throne does Jamshid build?",
+      "question_fa": "جمشید چه نوع تختی می‌سازد؟",
+      "question_tg": "Ҷамшид кадом навъ тахте месозад?",
+      "answers": [
+        "A crystal throne",
+        "An iron throne",
+        "A golden throne",
+        "A throne of cedar wood"
+      ],
+      "answers_fa": [
+        "تختِ بلورین",
+        "تختِ آهنین",
+        "تختِ زرین",
+        "تختِ سرو"
+      ],
+      "answers_tg": [
+        "Тахти булурин",
+        "Тахти оҳанин",
+        "Тахти заррин",
+        "Тахти сарвӣ"
+      ],
+      "correct_answer": 0,
+      "explanation": "Jamshid's crystal throne — facets aligned with sunrise, joints invisible — blazes like a second sun when carried into the sky on Nowruz.",
+      "explanation_fa": "تختِ بلورینِ جمشید — وجه‌ها با طلوعِ آفتاب هم‌راستا، درزها نامرئی — وقتی در نوروز به آسمان برده می‌شود مثلِ خورشیدِ دوم می‌درخشد.",
+      "explanation_tg": "Тахти булурини Ҷамшид — вуҷуҳо бо тулӯъи офтоб ҳамроста, дарзҳо ноаён — вақте ки дар Наврӯз ба осмон бурда мешавад мисли офтоби дуввум медурахшад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "jamshid-e3",
+      "chapter_slug": "jamshid",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Who carries Jamshid into the sky on Nowruz?",
+      "question_fa": "چه کسی جمشید را در نوروز به آسمان می‌برد؟",
+      "question_tg": "Кӣ Ҷамшидро дар Наврӯз ба осмон мебарад?",
+      "answers": [
+        "Eagles of the south",
+        "Demons",
+        "The Simorgh",
+        "Angels of the sacred fire"
+      ],
+      "answers_fa": [
+        "عقاب‌های جنوب",
+        "دیوان",
+        "سیمرغ",
+        "فرشتگانِ آتشِ مقدس"
+      ],
+      "answers_tg": [
+        "Уқобҳои ҷануб",
+        "Девон",
+        "Симурғ",
+        "Фариштагони оташи муқаддас"
+      ],
+      "correct_answer": 1,
+      "explanation": "Demons carry Jamshid's crystal throne into the sky on the first Nowruz. He commands them as he commands everything — until the farr leaves.",
+      "explanation_fa": "دیوان تختِ بلورینِ جمشید را در اولین نوروز به آسمان می‌برند. او همان‌طور که همه چیز را فرمان می‌دهد آن‌ها را هم فرمان می‌دهد — تا فَر می‌رود.",
+      "explanation_tg": "Девон тахти булурини Ҷамшидро дар аввалин Наврӯз ба осмон мебаранд. Ӯ онҳоро фармон медиҳад — то Фарр меравад.",
+      "reward": {
+        "xp": 85,
+        "real": 32
+      }
+    },
+    {
+      "id": "jamshid-m3",
+      "chapter_slug": "jamshid",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What Persian name does Ferdowsi give to the craftsmen in the four orders?",
+      "question_fa": "فردوسی در چهار طبقه چه نامِ فارسی‌ای به پیشه‌وران می‌دهد؟",
+      "question_tg": "Фирдавсӣ дар чаҳор табақа чӣ номи форсие ба ҳунармандон медиҳад?",
+      "answers": [
+        "Vastoshan",
+        "Ahnukhoshian",
+        "Arteshtars",
+        "Mobeds"
+      ],
+      "answers_fa": [
+        "واستوشان",
+        "اهنوخوشان",
+        "ارتشتاران",
+        "موبدان"
+      ],
+      "answers_tg": [
+        "Вастӯшон",
+        "Аҳнухӯшон",
+        "Арташторон",
+        "Мӯбадон"
+      ],
+      "correct_answer": 1,
+      "explanation": "Ahnukhoshian — craftsmen who build what endures. Vastoshan are farmers; Arteshtars are warriors; Mobeds are priests.",
+      "explanation_fa": "اهنوخوشان — پیشه‌ورانی که آنچه ماندگار است را می‌سازند. واستوشان کشاورز، ارتشتار جنگاور، موبد روحانی است.",
+      "explanation_tg": "Аҳнухӯшон — ҳунармандоне, ки чизҳои мондагор месозанд. Вастӯшон деҳқон, Арташторон ҷангӣ, Мӯбадон рӯҳониянд.",
+      "reward": {
+        "xp": 115,
+        "real": 47
+      }
+    },
+    {
+      "id": "jamshid-m4",
+      "chapter_slug": "jamshid",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Under Jamshid's three-hundred-year reign, what does the world forget?",
+      "question_fa": "در شاهیِ سیصد ساله‌ی جمشید، جهان چه چیزی را فراموش می‌کند؟",
+      "question_tg": "Дар подшоҳии сесадсолаи Ҷамшид, ҷаҳон чиро фаромӯш мекунад?",
+      "answers": [
+        "How to fight wars",
+        "The names of the old kings",
+        "What a funeral looks like",
+        "How to forge iron"
+      ],
+      "answers_fa": [
+        "چگونه جنگ کند",
+        "نام‌های شاهانِ کهن",
+        "مراسمِ خاکسپاری چه شکلی دارد",
+        "چگونه آهن بسازد"
+      ],
+      "answers_tg": [
+        "Чӣ гуна ҷанг кунад",
+        "Номи шоҳони кӯҳна",
+        "Маросими хоксупорӣ чӣ шакл дорад",
+        "Чӣ гуна оҳан созад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Under Jamshid no one dies — so the world forgets what a funeral looks like. This quiet detail is Ferdowsi's way of showing what a world without grief cannot understand.",
+      "explanation_fa": "در شاهیِ جمشید کسی نمی‌میرد — پس جهان فراموش می‌کند مراسمِ خاکسپاری چه شکلی دارد. این جزئیتِ آرام روشِ فردوسی برای نشان دادنِ آن چیزی است که جهانِ بدونِ اندوه نمی‌تواند بفهمد.",
+      "explanation_tg": "Дар подшоҳии Ҷамшид касе намемирад — пас ҷаҳон фаромӯш мекунад маросими хоксупорӣ чӣ шакл дорад.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "jamshid-m5",
+      "chapter_slug": "jamshid",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What is the origin of Zahhak, the king who follows Jamshid's downfall?",
+      "question_fa": "ضحاک، شاهی که پس از سقوطِ جمشید می‌آید، چه مبدأیی دارد؟",
+      "question_tg": "Заҳҳок, подшоҳе, ки пас аз суқути Ҷамшид меояд, аз куҷо аст?",
+      "answers": [
+        "A prince of the mountain court of Pars",
+        "Jamshid's own disgraced general",
+        "A demon general sent by Ahriman",
+        "Son of an Arab lord from the desert south"
+      ],
+      "answers_fa": [
+        "شاهزاده‌ی درگاهِ کوهستانیِ پارس",
+        "سردارِ افتاده‌ی خودِ جمشید",
+        "سرداری دیوانه فرستاده‌شده توسطِ اهریمن",
+        "پسرِ یک ارباب عرب از صحرایِ جنوب"
+      ],
+      "answers_tg": [
+        "Шоҳзодаи дарвозаи кӯҳистонии Порс",
+        "Сарлашкари афтодаи худи Ҷамшид",
+        "Як сарлашкари девоне фиристодашуда аз Аҳриман",
+        "Писари як арбоби арабӣ аз биёбони ҷануб"
+      ],
+      "correct_answer": 3,
+      "explanation": "Zahhak is born of an Arab lord in the southern desert. He is only walking north when this chapter ends — the serpents and the thousand years of darkness come in chapter 5.",
+      "explanation_fa": "ضحاک زاده‌ی ارباب عربی در صحرایِ جنوبی است. وقتی این دفتر پایان می‌گیرد او فقط دارد به شمال می‌آید — ماران و هزار سال تاریکی در دفترِ پنجم می‌آیند.",
+      "explanation_tg": "Заҳҳок писари арбоби арабӣ дар биёбони ҷанубӣ аст. Вақте ки ин боб поён меёбад ӯ фақат ба шимол меравад — морон ва ҳазор соли торикӣ дар бобои 5 меояд.",
+      "reward": {
+        "xp": 125,
+        "real": 52
+      }
+    },
+    {
+      "id": "jamshid-h2",
+      "chapter_slug": "jamshid",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "What does Jamshid do with the crystal throne before sitting in it for the first time?",
+      "question_fa": "جمشید قبل از اینکه برای اولین بار روی تختِ بلورین بنشیند چه می‌کند؟",
+      "question_tg": "Ҷамшид пеш аз он ки барои аввалин бор бар тахти булурин бинишинад чӣ мекунад?",
+      "answers": [
+        "He speaks a prayer to the God of Soul and Wisdom",
+        "He asks the mobeds to bless it with sacred fire",
+        "He commands the demons to carry it once around the mountain",
+        "He walks around it seven times, touching the edges"
+      ],
+      "answers_fa": [
+        "نیایشی به خداوندِ جان و خرد می‌خواند",
+        "از موبدان می‌خواهد آن را با آتشِ مقدس برکت دهند",
+        "به دیوان دستور می‌دهد یک بار دور کوه حملش کنند",
+        "هفت بار دورش می‌گردد و لبه‌ها را لمس می‌کند"
+      ],
+      "answers_tg": [
+        "Дуое ба Худованди ҷон ва хирад мехонад",
+        "Аз Мӯбадон мехоҳад бо оташи муқаддас баракат диҳанд",
+        "Ба девон амр медиҳад як бор атрофи кӯҳ бибаранд",
+        "Ҳафт бор атрофаш мегардад ва лабаҳоро ламс мекунад"
+      ],
+      "correct_answer": 3,
+      "explanation": "He walks around it seven times, touching the edges — then says nothing. The silence speaks: Jamshid understands the weight of what he has made before he claims it.",
+      "explanation_fa": "هفت بار دورش می‌گردد، لبه‌ها را لمس می‌کند — سپس هیچ نمی‌گوید. سکوت سخن می‌گوید: جمشید وزنِ آنچه ساخته را می‌فهمد پیش از آنکه ادعایش کند.",
+      "explanation_tg": "Ҳафт бор атрофаш мегардад, лабаҳоро ламс мекунад — сипас ҳеч намегӯяд. Сукут сухан мегӯяд: Ҷамшид вазни он чиро ки сохтааст мефаҳмад пеш аз он ки иддаъояш кунад.",
+      "reward": {
+        "xp": 155,
+        "real": 67
+      }
+    },
+    {
+      "id": "jamshid-h3",
+      "chapter_slug": "jamshid",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "What do the mobeds do the moment Jamshid claims to be a god?",
+      "question_fa": "موبدان در لحظه‌ای که جمشید ادعا می‌کند خداست چه می‌کنند؟",
+      "question_tg": "Мӯбадон дар лаҳзае, ки Ҷамшид иддаъо мекунад ки худост, чӣ мекунанд?",
+      "answers": [
+        "They are the first to go silent — they know what silence from the sky means",
+        "They loudly protest and leave the court",
+        "They bow and call him by his new divine title",
+        "They send a warning to Zahhak in the south"
+      ],
+      "answers_fa": [
+        "اولین‌هایی هستند که ساکت می‌شوند — آن‌ها می‌دانند سکوتِ آسمان یعنی چه",
+        "با صدای بلند اعتراض می‌کنند و دربار را ترک می‌کنند",
+        "تعظیم می‌کنند و او را با لقبِ الهیِ جدیدش می‌خوانند",
+        "برای ضحاک در جنوب هشدار می‌فرستند"
+      ],
+      "answers_tg": [
+        "Аввалинҳое ҳастанд, ки хомӯш мешаванд — онҳо медонанд сукути осмон яъне чист",
+        "Бо овози баланд эътироз мекунанд ва аз дарбор мебароянд",
+        "Таъзим мекунанд ва ӯро бо лақаби илоҳии ҷадидаш мехонанд",
+        "Барои Заҳҳок дар ҷануб огоҳӣ мефиристанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The mobeds are the first to go silent — they know what silence from the sky means. The priestly class understands the farr; when it leaves, they are the first to notice.",
+      "explanation_fa": "موبدان اولین‌هایی هستند که ساکت می‌شوند — آن‌ها می‌دانند سکوتِ آسمان یعنی چه. طبقه‌ی روحانی فَر را می‌شناسند؛ وقتی می‌رود اولین‌هایی هستند که متوجه می‌شوند.",
+      "explanation_tg": "Мӯбадон аввалинҳое ҳастанд, ки хомӯш мешаванд — онҳо медонанд сукути осмон яъне чист. Табақаи рӯҳонӣ Фаррро мешиносад; вақте меравад аввалинҳое мешаванд, ки пай мебаранд.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "jamshid-h4",
+      "chapter_slug": "jamshid",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "How does the Shahnameh describe the farr leaving Jamshid — what image does Ferdowsi use?",
+      "question_fa": "شاهنامه رفتنِ فَر از جمشید را چگونه توصیف می‌کند — فردوسی از چه تصویری استفاده می‌کند؟",
+      "question_tg": "Шоҳнома рафтани Фаррро аз Ҷамшид чӣ гуна тавсиф мекунад — Фирдавсӣ аз кадом тасвир истифода мекунад?",
+      "answers": [
+        "A fire doused by a great flood",
+        "A bird leaving a branch — quietly, without announcement",
+        "A crown falling from a head into darkness",
+        "A sun setting and never rising again"
+      ],
+      "answers_fa": [
+        "آتشی که سیلِ بزرگی خاموشش می‌کند",
+        "پرنده‌ای که از شاخه می‌رود — آرام، بدونِ اعلام",
+        "تاجی که از سر به تاریکی می‌افتد",
+        "خورشیدی که غروب می‌کند و هرگز طلوع نمی‌کند"
+      ],
+      "answers_tg": [
+        "Оташе, ки тӯфони бузурге хомӯшаш мекунад",
+        "Паррандае, ки аз шоха меравад — оромона, бе эълом",
+        "Тоҷе, ки аз сар ба торикӣ меафтад",
+        "Офтобе, ки ғуруб мекунад ва ҳеч вақт тулӯъ намекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Like a bird off a branch — quietly, without announcement. The Shahnameh's subtlety is its lesson: divine grace does not punish. It simply leaves when the reason for it is gone.",
+      "explanation_fa": "مثلِ پرنده‌ای از شاخه — آرام، بدونِ اعلام. ظرافتِ شاهنامه همان درس است: موهبتِ الهی مجازات نمی‌کند. فقط می‌رود وقتی دلیلِ بودنش رفته.",
+      "explanation_tg": "Мисли паррандае аз шоха — оромона, бе эълом. Нозукии Шоҳнома ҳамон дарс аст: неъмати илоҳӣ ҷазо намедиҳад. Фақат меравад вақте дилели будани он рафтааст.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "jamshid-h5",
+      "chapter_slug": "jamshid",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Why is Jamshid's pride specifically the result of three hundred years of success, not sudden madness?",
+      "question_fa": "چرا غرورِ جمشید مشخصاً نتیجه‌ی سیصد سال موفقیت است، نه دیوانگیِ ناگهانی؟",
+      "question_tg": "Чаро ғурури Ҷамшид мушаххасан натиҷаи сесад сол муваффақият аст, на дивонагии ногаҳонӣ?",
+      "answers": [
+        "Ahriman cast a spell on him at the three-hundred-year mark",
+        "The demons whispered his new title to him every night for a hundred years",
+        "A king who has never been wrong begins to wonder if he is the source of the rightness itself",
+        "The mobeds secretly replaced the sacred fire and broke the farr's protection"
+      ],
+      "answers_fa": [
+        "اهریمن در نشانِ سیصد سال طلسمی بر او انداخت",
+        "دیوان هر شب به مدتِ صد سال لقبِ جدیدش را نجوا کردند",
+        "شاهی که هرگز اشتباه نکرده تعجب می‌کند آیا شاید خودش سرچشمه‌ی آن درستی باشد",
+        "موبدان مخفیانه آتشِ مقدس را عوض کردند و محافظتِ فَر را شکستند"
+      ],
+      "answers_tg": [
+        "Аҳриман дар нишони сесад сол ҷодуе бар ӯ андохт",
+        "Девон ҳар шаб ба муддати сад сол лақаби ҷадидашро наҷво карданд",
+        "Подшоҳе ки ҳеч вақт хато накардааст мепурсад, ки шояд худаш сарчашмаи он дурустӣ бошад",
+        "Мӯбадон пинҳонӣ оташи муқаддасро иваз карданд ва муҳофизати Фаррро шикастанд"
+      ],
+      "correct_answer": 2,
+      "explanation": "A king who has never been wrong begins to wonder if he is the source of the rightness itself. Pride in the Shahnameh is not sudden — it is the slow accumulation of unchallenged success.",
+      "explanation_fa": "شاهی که هرگز اشتباه نکرده تعجب می‌کند آیا شاید خودش سرچشمه‌ی آن درستی باشد. غرور در شاهنامه ناگهانی نیست — انباشتِ آرامِ موفقیتِ بی‌چالش است.",
+      "explanation_tg": "Подшоҳе, ки ҳеч вақт хато накардааст, мепурсад шояд худаш сарчашмаи он дурустӣ бошад. Ғурур дар Шоҳнома ногаҳонӣ нест — ҷамъшавии оромонаи муваффақияти бечоллаш аст.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "jamshid-h6",
+      "chapter_slug": "jamshid",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The codex says Nowruz was born from 'a king's most beautiful act — before his worst one.' What were those two acts?",
+      "question_fa": "فرهنگنامه می‌گوید نوروز از «زیباترین عملِ شاه — پیش از بدترینش» زاده شد. آن دو عمل کدام بودند؟",
+      "question_tg": "Кодекс мегӯяд Наврӯз аз «зеботарин амали шоҳ — пеш аз бадтаринаш» зода шуд. Он ду амал кадомҳо буданд?",
+      "answers": [
+        "Building the crystal throne / destroying it in rage",
+        "Granting immortality to his people / taking it back",
+        "Dividing people into four orders / enslaving the weakest order",
+        "Ascending into the sky on Nowruz / claiming godhood"
+      ],
+      "answers_fa": [
+        "ساختنِ تختِ بلورین / نابودکردنِ آن در خشم",
+        "بخشیدنِ جاودانگی به مردمش / پس گرفتنِ آن",
+        "تقسیمِ مردم به چهار طبقه / به بردگی گرفتنِ ضعیف‌ترین طبقه",
+        "صعود به آسمان در نوروز / ادعای خدایی"
+      ],
+      "answers_tg": [
+        "Сохтани тахти булурин / нобуд кардани он дар хашм",
+        "Бахшидани ҷовидонӣ ба мардумаш / пас гирифтани он",
+        "Тақсими мардум ба чаҳор табақа / ба бардагӣ гирифтани заифтарин табақа",
+        "Боло рафтан ба осмон дар Наврӯз / иддаъои худоӣ"
+      ],
+      "correct_answer": 3,
+      "explanation": "The most beautiful act: ascending into the sky on the crystal throne, giving the world Nowruz. The worst: claiming to be the source of all things, causing the farr to depart.",
+      "explanation_fa": "زیباترین عمل: صعود به آسمان بر تختِ بلورین، دادنِ نوروز به جهان. بدترین: ادعا کردنِ اینکه سرچشمه‌ی همه چیز است، باعث شدنِ رفتنِ فَر.",
+      "explanation_tg": "Зеботарин амал: боло рафтан ба осмон бар тахти булурин, додани Наврӯз ба ҷаҳон. Бадтарин: иддаъо кардани ин ки сарчашмаи ҳама чиз аст, боиси рафтани Фарр шудан.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "jamshid-h7",
+      "chapter_slug": "jamshid",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "In chapter 3, Ahriman was forced to carry Tahmuras on his back. How does Ahriman operate differently against Jamshid?",
+      "question_fa": "در دفترِ سوم اهریمن مجبور شد تهمورث را بر پشتش حمل کند. اهریمن در برابرِ جمشید به چه شکلِ متفاوتی عمل می‌کند؟",
+      "question_tg": "Дар бобои сеюм Аҳриман маҷбур шуд Таҳмурасро бар пушташ барад. Аҳриман бар зидди Ҷамшид чӣ гуна мутафовит амал мекунад?",
+      "answers": [
+        "He waits and whispers — three hundred years of unchallenged success does his work for him",
+        "He builds Zahhak an army of ten thousand",
+        "He sends a larger army of demons to fight directly",
+        "He steals the crystal throne while Jamshid sleeps"
+      ],
+      "answers_fa": [
+        "صبر می‌کند و نجوا می‌کند — سیصد سال موفقیتِ بی‌چالش کارش را برایش انجام می‌دهد",
+        "برای ضحاک سپاهی ده‌هزارنفری می‌سازد",
+        "سپاهِ بزرگ‌تری از دیوان می‌فرستد تا مستقیم بجنگند",
+        "تختِ بلورین را در هنگامِ خوابِ جمشید می‌دزدد"
+      ],
+      "answers_tg": [
+        "Мунтазир мешавад ва наҷво мекунад — сесад соли муваффақияти бечоллаш корашро барояш мекунад",
+        "Барои Заҳҳок лашкари даҳҳазорнафаре месозад",
+        "Лашкари бузургтаре аз девон мефиристад то мустақим биҷанганд",
+        "Тахти булуринро дар вақти хоби Ҷамшид медуздад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ahriman waits and whispers. Three hundred years of unchallenged success does his work for him. His method is patience and small augmentations of what is already there.",
+      "explanation_fa": "اهریمن صبر می‌کند و نجوا می‌کند. سیصد سال موفقیتِ بی‌چالش کارش را برایش انجام می‌دهد. روشش صبر و افزایش‌های کوچک بر آنچه از پیش هست است.",
+      "explanation_tg": "Аҳриман мунтазир мешавад ва наҷво мекунад. Сесад соли муваффақияти бечоллаш корашро барояш мекунад. Усулаш сабр ва иловаҳои хурд бар он чист ки аз пеш ҳаст.",
+      "reward": {
+        "xp": 175,
+        "real": 77
+      }
+    },
+    {
+      "id": "jamshid-h8",
+      "chapter_slug": "jamshid",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The lore says Ferdowsi 'does not let Jamshid be simply evil.' What makes his fall the chronicle's first real tragedy rather than just a punishment?",
+      "question_fa": "لور می‌گوید فردوسی «نمی‌گذارد جمشید صرفاً شرور باشد.» چه چیزی سقوطش را به جای یک مجازاتِ ساده، اولین تراژدیِ واقعیِ این تاریخ می‌کند؟",
+      "question_tg": "Лор мегӯяд Фирдавсӣ «намегузорад Ҷамшид танҳо шарир бошад.» Чӣ чиз суқуташро ба ҷои як ҷазои одӣ, аввалин фоҷеаи воқеии ин таърих мекунад?",
+      "answers": [
+        "He was secretly manipulated by demons from his birth",
+        "He was the greatest king the world had known — his peak makes the fall tragic",
+        "He died trying to save his people from Zahhak",
+        "He repented and was forgiven before losing the throne"
+      ],
+      "answers_fa": [
+        "از بدوِ تولد توسطِ دیوان به‌شکلِ مخفیانه دستکاری شده بود",
+        "بزرگ‌ترین شاهی بود که جهان می‌شناخت — اوجش سقوط را تراژیک می‌کند",
+        "درحالِ تلاش برای نجاتِ مردمش از ضحاک کشته شد",
+        "پشیمان شد و پیش از از دست دادنِ تخت بخشیده شد"
+      ],
+      "answers_tg": [
+        "Аз бадви таввалуд аз тарафи девон пинҳонӣ дастгирии карда шуда буд",
+        "Бузургтарин подшоҳе буд ки ҷаҳон мешинохт — қуллааш суқутро фоҷеавӣ мекунад",
+        "Дар ҳоли кӯшиш барои наҷоти мардумаш аз Заҳҳок кушта шуд",
+        "Пушаймон шуд ва пеш аз гум кардани тахт бахшида шуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "He was the greatest king the world had known — three hundred years without death, the crystal throne, Nowruz. That is what makes his fall the first real tragedy. Ferdowsi's lesson: the higher the peak, the more devastating the descent.",
+      "explanation_fa": "بزرگ‌ترین شاهی بود که جهان می‌شناخت — سیصد سال بدونِ مرگ، تختِ بلورین، نوروز. همین است که سقوطش اولین تراژدیِ واقعی است. درسِ فردوسی: هر چه اوج بلندتر، فرود ویرانگرتر.",
+      "explanation_tg": "Бузургтарин подшоҳе буд ки ҷаҳон мешинохт — сесад соли бе марг, тахти булурин, Наврӯз. Ҳамин аст ки суқуташ аввалин фоҷеаи воқеӣ аст.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    }
+  ]
+}

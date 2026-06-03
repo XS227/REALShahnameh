@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "akv-e1",
+      "chapter_slug": "akvan",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How does Rostam first realize that the 'wild horse' devastating the Iranian herds is actually a demon rather than an animal?",
+      "question_fa": "رستم چطور اول می‌فهمد که «اسبِ وحشی» که گله‌های ایران را ویران می‌کند در واقع دیو است نه حیوان؟",
+      "question_tg": "Рустам чӣ тавр аввал мефаҳмад, ки «аспи ваҳшӣ» дар воқеъ дев аст?",
+      "answers": [
+        "The creature speaks to him when cornered",
+        "He throws his lasso and it catches — then dissolves as if it had hit smoke, leaving the rope intact with nothing on it",
+        "Rakhsh refuses to chase the creature, which Rostam takes as a sign of supernatural danger",
+        "He finds tracks in the mud that change shape between one step and the next"
+      ],
+      "answers_fa": [
+        "وقتی به گوشه می‌افتد با او حرف می‌زند",
+        "کمند می‌اندازد و می‌گیرد — بعد حل می‌شود انگار به دود خورده، طناب را سالم می‌گذارد با هیچ چیزی رویش",
+        "رخش از دنبال کردنِ موجود رد می‌کند که رستم آن را نشانه‌ی خطرِ ماورایی می‌گیرد",
+        "ردپاهایی در گِل پیدا می‌کند که شکلشان بینِ یک گام و بعدی تغییر می‌کند"
+      ],
+      "answers_tg": [
+        "Вақте ба кунҷ меафтад бо ӯ гап мезанад",
+        "Камандашро меандозад ва мегирад — баъд ҳал мешавад, гӯё ба дуд хӯрдааст, тасмаро солим мемонад бо ҳеҷ чизе рӯяш",
+        "Рахш аз таъқиби мавҷуд рад мекунад",
+        "Дар гил нишонаҳое меёбад ки шакли онҳо тағйир меёбад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam chases the creature for five days and finally closes the distance enough to throw his lasso. It catches — he feels the weight of something real on the rope — and then it is simply gone. The rope is intact, with nothing on it. This is the Shahnameh's single piece of evidence Rostam needs. A horse does not make a lasso disappear. A demon does. From this one observation, he correctly derives Akvan's nature — and that derivation becomes the basis for surviving what comes next.",
+      "explanation_fa": "رستم پنج روز دنبال می‌کند و بالاخره کمند می‌اندازد. می‌گیرد — وزنِ چیزِ واقعی روی طناب احساس می‌کند — بعد رفته. طناب سالم، با هیچ چیزی رویش. این تنها شاهدِ شاهنامه است که رستم نیاز دارد. اسب کمند را ناپدید نمی‌کند. دیو می‌کند.",
+      "explanation_tg": "Рустам панҷ рӯз таъқиб мекунад ва камандашро меандозад. Мегирад — вазни чизе ро ҳис мекунад — баъд рафтааст. Тасма солим, бо ҳеҷ чизе рӯяш. Ин ягона шоҳидест, ки Рустам ниёз дорад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "akv-m1",
+      "chapter_slug": "akvan",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "When Akvan offers Rostam the choice of 'mountain or sea,' Rostam asks for the mountain. What is the exact reasoning behind this choice?",
+      "question_fa": "وقتی اکوان به رستم انتخابِ «کوه یا دریا» می‌دهد، رستم کوه را می‌خواهد. استدلالِ دقیقِ پشتِ این انتخاب چیست؟",
+      "question_tg": "Вақте Аквон ба Рустам интихоби 'куҳ ё дарё' медиҳад, Рустам куҳро мехоҳад. Далели дақиқи паси ин интихоб чист?",
+      "answers": [
+        "Rostam prefers the mountain because he is a land warrior and knows the terrain",
+        "He asks for the mountain because Akvan inverts all wishes — asking for the mountain guarantees receiving the sea, which Rostam knows he can survive by swimming",
+        "He chooses the mountain hoping to grab a cliff edge and slow his fall",
+        "He asks for the mountain to trick Akvan into thinking he is afraid of water"
+      ],
+      "answers_fa": [
+        "رستم کوه را ترجیح می‌دهد چون جنگجویِ زمین است و زمین را می‌شناسد",
+        "کوه را می‌خواهد چون اکوان همه‌ی آرزوها را وارونه می‌کند — خواستنِ کوه دریافتِ دریا را تضمین می‌کند که رستم می‌داند با شنا از آن جان سالم به در می‌برد",
+        "کوه را انتخاب می‌کند به امیدِ چنگ زدن به لبه‌ی صخره و کُند کردنِ سقوطش",
+        "کوه را می‌خواهد تا اکوان را فریب دهد که فکر کند از آب می‌ترسد"
+      ],
+      "answers_tg": [
+        "Рустам куҳро афзалтар медонад, зеро ҷангии замин аст",
+        "Куҳро мехоҳад, зеро Аквон ҳама орзуҳоро варона мекунад — хостани куҳ гирифтани дарёро таъмин мекунад, ки Рустам медонад аз он бо шино ҷон ба дар мебарад",
+        "Куҳро интихоб мекунад ба умеди чанг задан ба лабаи санг",
+        "Куҳро мехоҳад то Аквонро фирефта кунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The reasoning has two parts. First: Rostam has identified Akvan's nature from the dissolving lasso — he is an inversive demon who gives the opposite of what you ask. Second: Rostam knows himself precisely — he knows he can survive the sea (he can swim, his body will take the impact) while the mountain will break him on rocks. Therefore: ask for the mountain, receive the sea. The logic is simple once you know Akvan's nature and know your own capabilities accurately. The difficulty is knowing both in the right moment, suspended in midair with no second chance.",
+      "explanation_fa": "استدلال دو بخش دارد. اول: رستم طبیعتِ اکوان را از کمندِ حل‌شده شناسایی کرده — دیوِ وارونه‌ای که عکسِ آنچه می‌خواهی می‌دهد. دوم: رستم خودش را دقیق می‌شناسد — می‌داند از دریا جان سالم به در می‌برد در حالی که کوه او را می‌کشد. پس: کوه را بخواه، دریا را دریافت کن.",
+      "explanation_tg": "Далел ду қисм дорад. Аввал: Рустам моҳияти Аквонро аз камандaи ҳалшуда муайян кардааст — деви вараона. Дуввум: Рустам худашро дақиқ мешиносад — медонад аз дарё ҷон ба дар мебарад. Пас: куҳро бихоҳ, дарёро бигир.",
+      "reward": {
+        "xp": 140,
+        "real": 60
+      }
+    },
+    {
+      "id": "akv-h1",
+      "chapter_slug": "akvan",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The Shahnameh presents the Akvan episode with an unusually light tone compared to the tragic chapters around it. What does this tonal shift achieve for the chronicle as a whole?",
+      "question_fa": "شاهنامه ماجرای اکوان را با لحنِ غیرمعمول سبک‌تری نسبت به فصل‌های تراژیکِ اطرافش ارائه می‌دهد. این تغییرِ لحن در کلِ شاهنامه چه چیزی به دست می‌دهد؟",
+      "question_tg": "Шоҳнома ҳодисаи Аквонро бо оҳанги ғайримаъмулии сабуктаре нисбат ба боб-ҳои фоҷиавии атрофаш пешкаш мекунад. Ин тағйири оҳанг чӣ мефаҳмонад?",
+      "answers": [
+        "It gives the chronicle room to breathe between tragedies — the Sohrab and Siavash chapters demand grief; the Akvan episode is a demonstration that the Shahnameh contains the full range of human experience, including adventure and cleverness, not only sorrow",
+        "The lighter tone is a mistake — the Akvan episode is considered apocryphal by most scholars",
+        "It signals that the Iran-Turan wars are now over and the Shahnameh is entering a lighter historical era",
+        "It shows Rostam in decline — his near-death at Akvan's hands signals that the chronicle's greatest hero is becoming less capable"
+      ],
+      "answers_fa": [
+        "به شاهنامه فضا می‌دهد بینِ تراژدی‌ها نفس بکشد — فصل‌های سهراب و سیاوش اندوه می‌طلبند؛ ماجرای اکوان نشان می‌دهد شاهنامه طیفِ کاملِ تجربه‌ی انسانی را دارد، از جمله ماجراجویی و باهوشی، نه فقط غم",
+        "لحنِ سبک‌تر اشتباه است — ماجرای اکوان توسطِ بیشترِ محققان آپوکریفال در نظر گرفته می‌شود",
+        "نشان می‌دهد جنگ‌های ایران-توران حالا تمام شده و شاهنامه وارد عصرِ تاریخیِ سبک‌تری می‌شود",
+        "رستم را رو به افول نشان می‌دهد — نزدیکِ مرگش در دستِ اکوان نشان می‌دهد قهرمانِ بزرگِ شاهنامه کمتر توانا می‌شود"
+      ],
+      "answers_tg": [
+        "Ба Шоҳнома фазо медиҳад бини фоҷиаҳо нафас кашад — Шоҳнома доираи пурро дорад: мотам, далерӣ, зиракӣ",
+        "Оҳанги сабуктар хато аст — ҳодисаи Аквон апокрифӣ аст",
+        "Нишон медиҳад ҷангҳои Эрон-Турон акнун тамом шудааст",
+        "Рустамро дар таназзул нишон медиҳад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Akvan episode sits between the Sohrab and Siavash tragedies and the great Iran-Turan war. The Shahnameh has just recorded Sohrab dying in his father's arms and Siavash beheaded on Turanian soil. Both are devastating. The Akvan episode is something different: a fast, clever, practical story about a demon and a hero, with a problem to solve and a solution to derive. It demonstrates that the Shahnameh is not a chronicle of unrelieved grief — it contains adventure, intelligence, and even humor (Rostam sleeping in demon-territory is quietly absurd). The range makes the grief heavier when it returns, because the reader has been reminded that other registers are possible.",
+      "explanation_fa": "ماجرای اکوان بینِ تراژدی‌های سهراب و سیاوش و جنگِ بزرگِ ایران-توران قرار دارد. شاهنامه تازه سهرابِ در آغوشِ پدرش مُرده و سیاوشِ سر بریده در خاکِ توران را ثبت کرده. ماجرای اکوان چیزِ متفاوتی است: داستانِ سریع، باهوشانه، عملی. نشان می‌دهد شاهنامه شاهنامه‌ی غمِ بی‌وقفه نیست — ماجراجویی، هوش، حتی طنز دارد. این گستره غم را وقتی بازمی‌گردد سنگین‌تر می‌کند.",
+      "explanation_tg": "Ҳодисаи Аквон байни фоҷиаҳои Суҳроб ва Сиёвуш ва ҷанги бузурги Эрон-Турон ҷой дорад. Ҳодисаи Аквон чизи дигарест: достони тез, зирак, амалӣ. Нишон медиҳад, ки Шоҳнома Шоҳномаи ғами беамон нест — саргузашт, ақл, ҳатто мазоҳ дорад. Ин густара ғамро вақте бармегардад вазнинтар мекунад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "akv-e2",
+      "chapter_slug": "akvan",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Who sent Rostam to deal with Akvan the Div?",
+      "question_fa": "چه کسی رستم را برای مقابله با اکوان دیو فرستاد؟",
+      "question_tg": "Кӣ Рустамро барои мубориза бо Аквон Дев фиристод?",
+      "answers": [
+        "Zal",
+        "Kay Khosrow",
+        "Giv",
+        "Gudarz"
+      ],
+      "answers_fa": [
+        "زال",
+        "کی‌خسرو",
+        "گیو",
+        "گودرز"
+      ],
+      "answers_tg": [
+        "Зол",
+        "Кай Хусрав",
+        "Гев",
+        "Гударз"
+      ],
+      "correct_answer": 1,
+      "explanation": "Kay Khosrow assigned Rostam to deal with the creature destroying border herds.",
+      "explanation_fa": "کی‌خسرو رستم را مأمور کرد با موجودی که گله‌های مرزی را نابود می‌کرد مقابله کند.",
+      "explanation_tg": "Кай Хусрав Рустамро маъмур кард бо мавҷудоте ки рамаҳои марзиро нобуд мекард мубориза кунад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "akv-e3",
+      "chapter_slug": "akvan",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What form did Akvan the Div take to destroy the border herds?",
+      "question_fa": "اکوان دیو چه شکلی به خود گرفت تا گله‌های مرزی را نابود کند؟",
+      "question_tg": "Аквон Дев чӣ шаклеро гирифт то рамаҳои марзиро нобуд кунад?",
+      "answers": [
+        "A great eagle",
+        "A shapeless shadow",
+        "A wild horse of impossible speed",
+        "A giant boar"
+      ],
+      "answers_fa": [
+        "عقابِ بزرگ",
+        "سایه‌ای بی‌شکل",
+        "اسبِ وحشیِ سرعتِ غیرممکن",
+        "گرازِ غول‌پیکر"
+      ],
+      "answers_tg": [
+        "Уқоби бузург",
+        "Сояи бешакл",
+        "Аспи ваҳшии суръати ғайриимкон",
+        "Гурӯзи ғулпайкар"
+      ],
+      "correct_answer": 2,
+      "explanation": "Herdsmen described a wild horse of impossible speed destroying the Iranian border herds. Akvan took this form.",
+      "explanation_fa": "چوپانان اسبِ وحشیِ سرعتِ غیرممکنی توصیف کردند که گله‌های مرزیِ ایران را نابود می‌کرد. اکوان این شکل را گرفته بود.",
+      "explanation_tg": "Чӯпонон аспи ваҳшии суръати ғайриимконе тавсиф карданд. Аквон ин шаклро гирифта буд.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "akv-m2",
+      "chapter_slug": "akvan",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What happened to Rostam's lasso when it caught Akvan?",
+      "question_fa": "وقتی کمندِ رستم اکوان را گرفت، با کمند چه اتفاقی افتاد؟",
+      "question_tg": "Вақте камандаки Рустам Аквонро гирифт, бо камандак чӣ шуд?",
+      "answers": [
+        "It burned away",
+        "Rostam felt a weight then it was empty — the rope intact but nothing on it",
+        "It pulled him off Rakhsh",
+        "Akvan swallowed it whole"
+      ],
+      "answers_fa": [
+        "سوخت",
+        "رستم وزنی احساس کرد سپس خالی شد — طناب سالم اما هیچ‌چیز روی آن",
+        "او را از روی رخش کشید",
+        "اکوان آن را کامل بلعید"
+      ],
+      "answers_tg": [
+        "Сӯхт",
+        "Рустам вазне ҳис кард сипас холӣ шуд — тӯб солим аммо ҳеҷ чизе рӯяш нест",
+        "Ӯро аз рӯи Рахш кашид",
+        "Аквон онро пурра фурӯ бурд"
+      ],
+      "correct_answer": 1,
+      "explanation": "He felt the weight of something substantial on the rope — then it was gone. The rope was intact. Nothing on it.",
+      "explanation_fa": "وزنِ چیزِ قابل‌توجهی را بر طناب حس کرد — بعد رفت. طناب سالم بود. هیچ‌چیزی روی آن نبود.",
+      "explanation_tg": "Вазни чизи назаррасеро бар тӯб ҳис кард — баъд рафт. Тӯб солим буд. Ҳеҷ чизе рӯяш набуд.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "akv-m3",
+      "chapter_slug": "akvan",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Why was Rostam sleeping when Akvan came to carry him away?",
+      "question_fa": "چرا رستم خوابیده بود وقتی اکوان آمد تا او را ببرد؟",
+      "question_tg": "Чаро Рустам хобида буд вақте Аквон омад ӯро барад?",
+      "answers": [
+        "Akvan had drugged his food",
+        "He was tired after five days of chase",
+        "Rakhsh failed to warn him",
+        "He had been wounded earlier"
+      ],
+      "answers_fa": [
+        "اکوان غذایش را مسموم کرده بود",
+        "بعد از پنج روز تعقیب خسته بود",
+        "رخش نتوانست او را هشدار دهد",
+        "زودتر زخمی شده بود"
+      ],
+      "answers_tg": [
+        "Аквон ғизояшро заҳролуд карда буд",
+        "Пас аз панҷ рӯз пайгирӣ хаста буд",
+        "Рахш натавонист ӯро ҳушдор диҳад",
+        "Пештар захм хӯрда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "He was tired from five days of chase. The Shahnameh records this without comment.",
+      "explanation_fa": "بعد از پنج روز تعقیب خسته بود. شاهنامه این را بدون تفسیر ثبت می‌کند.",
+      "explanation_tg": "Пас аз панҷ рӯз пайгирӣ хаста буд. Шоҳнома инро бидуни тафсир сабт мекунад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "akv-m4",
+      "chapter_slug": "akvan",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Akvan carried Rostam into the sky and offered a choice. What were the two options?",
+      "question_fa": "اکوان رستم را به آسمان برد و یک انتخاب پیشنهاد داد. دو گزینه چه بودند؟",
+      "question_tg": "Аквон Рустамро ба осмон бурд ва интихобе пешниҳод дод. Ду гузина чӣ буданд?",
+      "answers": [
+        "Fire or water",
+        "Mountain or sea",
+        "Desert or the Oxus river",
+        "Demon pit or dragon's mouth"
+      ],
+      "answers_fa": [
+        "آتش یا آب",
+        "کوه یا دریا",
+        "بیابان یا جیحون",
+        "گودالِ دیوان یا دهانِ اژدها"
+      ],
+      "answers_tg": [
+        "Оташ ё об",
+        "Кӯҳ ё дарё",
+        "Биёбон ё Ҷайҳун",
+        "Чоҳи девон ё даҳони аждаҳо"
+      ],
+      "correct_answer": 1,
+      "explanation": "Mountain or sea — Akvan offered to throw Rostam onto rock or into water.",
+      "explanation_fa": "کوه یا دریا — اکوان پیشنهاد کرد رستم را روی صخره یا در آب بیندازد.",
+      "explanation_tg": "Кӯҳ ё дарё — Аквон пешниҳод кард Рустамро ё бар санг ё дар об андозад.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "akv-m5",
+      "chapter_slug": "akvan",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "How did Rostam know Akvan was a demon, not a horse, after the lasso incident?",
+      "question_fa": "رستم بعد از حادثه‌ی کمند چگونه فهمید اکوان دیو است، نه اسب؟",
+      "question_tg": "Рустам пас аз ҳодисаи камандак чӣ тавр фаҳмид Аквон дев аст, на асп?",
+      "answers": [
+        "The lasso dissolved in his hand",
+        "He felt a weight that vanished — a horse cannot do that, a demon can",
+        "Rakhsh refused to approach the creature",
+        "Akvan spoke to him in human language"
+      ],
+      "answers_fa": [
+        "کمند در دستش آب شد",
+        "وزنی حس کرد که ناپدید شد — اسب نمی‌تواند این کار را بکند، دیو می‌تواند",
+        "رخش از نزدیک شدن به موجود خودداری کرد",
+        "اکوان به زبانِ انسانی با او صحبت کرد"
+      ],
+      "answers_tg": [
+        "Камандак дар дасташ об шуд",
+        "Вазне ҳис кард ки нопадид шуд — асп ин корро карда наметавонад, дев метавонад",
+        "Рахш аз наздик шудан ба мавҷуд худдорӣ кард",
+        "Аквон ба забони инсонӣ бо ӯ гап зад"
+      ],
+      "correct_answer": 1,
+      "explanation": "He coiled the lasso back and understood: a horse does not do that. A demon does.",
+      "explanation_fa": "کمند را دوباره پیچید و فهمید: اسب این کار را نمی‌کند. دیو می‌کند.",
+      "explanation_tg": "Камандакро дубора печонд ва фаҳмид: асп ин корро намекунад. Дев мекунад.",
+      "reward": {
+        "xp": 290,
+        "real": 135
+      }
+    },
+    {
+      "id": "akv-h2",
+      "chapter_slug": "akvan",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The chapter says Rostam's error — sleeping — was connected to his greatest strength. How?",
+      "question_fa": "فصل می‌گوید خطای رستم — خوابیدن — به بزرگ‌ترین قدرتش مرتبط بود. چگونه؟",
+      "question_tg": "Фасл мегӯяд хатои Рустам — хобидан — ба бузургтарин қудраташ марбут буд. Чӣ тавр?",
+      "answers": [
+        "His strength made him careless about rest",
+        "He has never been caught before, so he had no model for being caught",
+        "His trust in Rakhsh made him rely on the horse for guard duty",
+        "He believed his invulnerability protected him in sleep"
+      ],
+      "answers_fa": [
+        "قدرتش او را نسبت به استراحت بی‌مبالات می‌کرد",
+        "قبلاً هرگز گرفتار نشده بود، پس الگویی برای گرفتار شدن نداشت",
+        "اعتمادش به رخش باعث شد برای نگهبانی به اسب تکیه کند",
+        "باور داشت آسیب‌ناپذیری‌اش او را در خواب حفظ می‌کند"
+      ],
+      "answers_tg": [
+        "Қудраташ ӯро нисбат ба истироҳат беэҳтиёт мекард",
+        "Қаблан ҳаргиз гирифтор нашуда буд, пас намунае барои гирифтор шудан надошт",
+        "Боварии ӯ ба Рахш боис шуд барои посбонӣ ба асп такя кунад",
+        "Бовар дошт таъсирнопазириаш ӯро дар хоб ҳифз мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'The same quality that makes him the champion of the world made him capable of this particular error — he has never been caught, so he has no model for being caught.'",
+      "explanation_fa": "«همان ویژگی‌ای که او را قهرمانِ دنیا می‌کند این خطای خاص را برایش ممکن کرد — هرگز گرفتار نشده، پس الگویی برای گرفتار شدن ندارد.»",
+      "explanation_tg": "«Ҳамон сифате ки ӯро қаҳрамони дунё мекунад ин хатои хоссаро барояш имконпазир кард — ҳаргиз гирифтор нашудааст, пас намунае барои гирифтор шудан надорад.»",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "akv-h3",
+      "chapter_slug": "akvan",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "What two conclusions did Rostam draw from the dissolving lasso?",
+      "question_fa": "رستم از کمندِ ناپدیدشونده دو نتیجه گرفت. آن‌ها چه بودند؟",
+      "question_tg": "Рустам аз камандаки нопадидшаванда ду хулоса гирифт. Онҳо чӣ буданд?",
+      "answers": [
+        "The creature is invisible, and can be killed only by fire",
+        "The creature is a demon, and its nature is inversion — it gives the opposite of what is asked",
+        "The creature is supernatural, and only the Simorgh can defeat it",
+        "The creature has no body, and must be spoken to rather than fought"
+      ],
+      "answers_fa": [
+        "موجود نامرئی است و فقط با آتش می‌توان آن را کشت",
+        "موجود دیو است و طبیعتش وارونگی است — عکسِ آنچه خواسته می‌شود می‌دهد",
+        "موجود ماورایی است و فقط سیمرغ می‌تواند آن را شکست دهد",
+        "موجود جسم ندارد و باید با آن صحبت کرد نه جنگید"
+      ],
+      "answers_tg": [
+        "Мавҷуд номарئӣ аст ва танҳо бо оташ метавон ӯро кушт",
+        "Мавҷуд дев аст ва табиаташ вожгунсозӣ аст — акси он чи хоста мешавад медиҳад",
+        "Мавҷуд маворойӣ аст ва танҳо Симурғ метавонад ӯро шикаст диҳад",
+        "Мавҷуд ҷисм надорад ва бояд бо ӯ гап зад на ҷангид"
+      ],
+      "correct_answer": 1,
+      "explanation": "From the dissolving lasso: (1) not a horse, a demon; (2) a demon with an inversion rule — it gives the opposite of what you ask. This double deduction saves his life.",
+      "explanation_fa": "از کمندِ ناپدید: (1) اسب نیست، دیو است؛ (2) دیوی با قانونِ وارونگی — عکسِ آنچه می‌خواهی می‌دهد. این استنتاجِ دوگانه جانش را نجات می‌دهد.",
+      "explanation_tg": "Аз камандаки нопадид: (1) асп нест, дев аст; (2) деве бо қонуни вожгунсозӣ — акси он чи мехоҳӣ медиҳад. Ин хулосаи дугона ҷонашро наҷот медиҳад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "akv-h4",
+      "chapter_slug": "akvan",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Rostam needed to land in water not on rock. Knowing Akvan inverts, what did he ask for?",
+      "question_fa": "رستم باید در آب فرود می‌آمد نه روی صخره. با دانستنِ اینکه اکوان وارون می‌کند، چه خواست؟",
+      "question_tg": "Рустам бояд дар об фуруд меомад на бар санг. Бо донистани ин ки Аквон вожгун мекунад, чӣ хост?",
+      "answers": [
+        "The sea, knowing Akvan would give him the mountain",
+        "The mountain, knowing Akvan would throw him into the sea",
+        "He asked for nothing, going limp to appear dead",
+        "He asked for mercy"
+      ],
+      "answers_fa": [
+        "دریا، با دانستنِ اینکه اکوان کوه می‌دهد",
+        "کوه، با دانستنِ اینکه اکوان او را به دریا می‌اندازد",
+        "هیچ نخواست، شل شد تا مرده به نظر برسد",
+        "رحمت خواست"
+      ],
+      "answers_tg": [
+        "Дарё, бо донистани ин ки Аквон кӯҳ медиҳад",
+        "Кӯҳ, бо донистани ин ки Аквон ӯро ба дарё меандозад",
+        "Ҳеҷ нахост, шал шуд то мурда ба назар расад",
+        "Раҳмат хост"
+      ],
+      "correct_answer": 1,
+      "explanation": "Ask for mountain → receive sea (survivable). Rostam asked for the mountain. Akvan threw him into the sea. He swam out.",
+      "explanation_fa": "کوه خواستن → دریا گرفتن (قابلِ زنده ماندن). رستم کوه خواست. اکوان او را به دریا انداخت. شنا کرد و بیرون آمد.",
+      "explanation_tg": "Кӯҳ хостан → дарё гирифтан (зинда монданшаванда). Рустам кӯҳ хост. Аквон ӯро ба дарё андохт. Шино кард ва берун омад.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "akv-h5",
+      "chapter_slug": "akvan",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "After Rostam swam to shore, what did he find waiting for him?",
+      "question_fa": "بعد از اینکه رستم به ساحل شنا کرد، چه چیزی منتظرش یافت؟",
+      "question_tg": "Пас аз он ки Рустам ба соҳил шино кард, чӣ чиз интизораш ёфт?",
+      "answers": [
+        "A boat with Giv aboard",
+        "Rakhsh, who had followed the sound to the water's edge and waited",
+        "A party of Iranian soldiers sent to find him",
+        "Nothing — he was stranded alone"
+      ],
+      "answers_fa": [
+        "قایقی با گیو سوار",
+        "رخش، که صدا را دنبال کرده بود تا لبه‌ی آب و منتظر مانده بود",
+        "دسته‌ای از سربازانِ ایرانی که برای پیدا کردنش فرستاده شده بودند",
+        "هیچ — تنها گیر کرده بود"
+      ],
+      "answers_tg": [
+        "Заворае бо Гев савор",
+        "Рахш, ки садоро то лаби об пайгирӣ карда буд ва интизор монда буд",
+        "Гурӯҳе аз сарбозони Эронӣ ки барои ёфтанаш фиристода шуда буданд",
+        "Ҳеҷ — танҳо дармонда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "'He climbed out at the shore and Rakhsh was there — the horse had followed the sound to the water's edge and waited.'",
+      "explanation_fa": "«از ساحل بیرون آمد و رخش آنجا بود — اسب صدا را تا لبه‌ی آب دنبال کرده و منتظر مانده بود.»",
+      "explanation_tg": "«Аз соҳил берун омад ва Рахш он ҷо буд — асп садоро то лаби об пайгирӣ карда ва интизор монда буд.»",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "akv-h6",
+      "chapter_slug": "akvan",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "How did Rostam ultimately defeat Akvan after returning from the sea?",
+      "question_fa": "رستم بعد از بازگشت از دریا چگونه اکوان را شکست داد؟",
+      "question_tg": "Рустам пас аз бозгашт аз дарё чӣ тавр Аквонро шикаст дод?",
+      "answers": [
+        "He used the inversion trick a second time",
+        "He fought through Akvan's illusions by not relying on what he could see, found the real centre, and struck",
+        "He summoned Zal who provided a counter-spell",
+        "He burned a sacred fire which weakened the demon"
+      ],
+      "answers_fa": [
+        "بار دوم از حیله‌ی وارونگی استفاده کرد",
+        "از توهماتِ اکوان عبور کرد با عدمِ اتکا به آنچه می‌دید، مرکزِ واقعی را پیدا کرد و ضربه زد",
+        "زال را فرا خواند که طلسمِ مقابل داد",
+        "آتشِ مقدسی سوزاند که دیو را ضعیف کرد"
+      ],
+      "answers_tg": [
+        "Бори дуввум аз найранги вожгунсозӣ истифода кард",
+        "Аз тавҳумоти Аквон гузашт бо такя накардан ба он чи мебинад, маркази воқеиро ёфт ва зарб зад",
+        "Золро фарохонд ки зиддиафсун дод",
+        "Оташи муқаддасе сӯзонд ки девро заиф кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Rostam found Akvan, fought through the demon's illusions by not relying on what he could see, found the real centre of the thing, and struck.'",
+      "explanation_fa": "«رستم اکوان را یافت، از توهماتِ دیو با عدمِ اتکا به آنچه می‌دید عبور کرد، مرکزِ واقعیِ موجود را پیدا کرد و ضربه زد.»",
+      "explanation_tg": "«Рустам Аквонро ёфт, аз тавҳумоти дев бо такя накардан ба он чи мебинад гузашт, маркази воқеии мавҷудро ёфт ва зарб зад.»",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "akv-h7",
+      "chapter_slug": "akvan",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The chapter says 'this chapter was always about cleverness, and the cleverness had been demonstrated.' What contrast is this making?",
+      "question_fa": "فصل می‌گوید «این فصل همیشه درباره‌ی زیرکی بود، و زیرکی نشان داده شد.» چه تضادی می‌سازد؟",
+      "question_tg": "Фасл мегӯяд «ин фасл ҳамеша дар бораи зиракӣ буд, ва зиракӣ нишон дода шуд.» Чӣ тазоде месозад?",
+      "answers": [
+        "With the Seven Labours which tested endurance",
+        "With most of Rostam's feats which test strength or courage — here the problem required a different quality entirely",
+        "With the Sohrab fight which tested love",
+        "With Siavash's chapters which tested virtue"
+      ],
+      "answers_fa": [
+        "با هفت خانی که استقامت را آزمود",
+        "با بیشترِ کارهای رستم که قدرت یا شجاعت را می‌آزمایند — اینجا مشکل به کیفیتِ کاملاً متفاوتی نیاز داشت",
+        "با جنگِ سهراب که عشق را آزمود",
+        "با فصل‌های سیاوش که فضیلت را آزمود"
+      ],
+      "answers_tg": [
+        "Бо Ҳафтхоне ки бардоштро озмуд",
+        "Бо бештари корҳои Рустам ки қудрат ё ҷасурӣро меозмоянд — ин ҷо мушкил ба сифати комилан дигаре ниёз дошт",
+        "Бо ҷанги Суҳроб ки ишқро озмуд",
+        "Бо фаслҳои Сиёвуш ки фазиларо озмуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Akvan's defeat required intellectual deduction from one piece of evidence — entirely different from the feats of strength that define Rostam elsewhere.",
+      "explanation_fa": "شکستِ اکوان نیازمندِ استنتاجِ فکری از یک شاهد بود — کاملاً متفاوت از کارهای قدرتِ رستم در جاهای دیگر.",
+      "explanation_tg": "Шикасти Аквон ниёзманди хулосабарории зеҳнӣ аз як шоҳид буд — комилан фарқ аз корҳои қудрати Рустам дар ҷоҳои дигар.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "akv-h8",
+      "chapter_slug": "akvan",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Why does the chapter say 'the Shahnameh moved on' after Akvan's defeat?",
+      "question_fa": "فصل چرا می‌گوید «شاهنامه پیش رفت» بعد از شکستِ اکوان؟",
+      "question_tg": "Фасл чаро мегӯяд «Шоҳнома пеш рафт» пас аз шикасти Аквон?",
+      "answers": [
+        "Because Akvan was an unimportant enemy",
+        "The chapter had demonstrated its purpose — cleverness — and ended cleanly, as the Shahnameh does when a chapter's specific lesson is complete",
+        "Because there was no grief attached to this killing",
+        "Because Rostam returned to more important events immediately"
+      ],
+      "answers_fa": [
+        "چون اکوان دشمنِ بی‌اهمیتی بود",
+        "فصل هدفش — زیرکی — را نشان داده بود و پاکیزه تمام شد، همان‌طور که شاهنامه وقتی درسِ مشخصِ فصلی کامل می‌شود این کار را می‌کند",
+        "چون هیچ اندوهی به این کشتن متصل نبود",
+        "چون رستم بلافاصله به رویدادهای مهم‌تری برگشت"
+      ],
+      "answers_tg": [
+        "Зеро Аквон душмани бемуҳим буд",
+        "Фасл ҳадафашро — зиракӣ — нишон дода буд ва покиза тамом шуд, ҳамон тавр ки Шоҳнома вақте дарси мушаххаси фасле комил мешавад ин корро мекунад",
+        "Зеро ҳеҷ ғаме ба ин куштан пайваста набуд",
+        "Зеро Рустам фавран ба рӯйдодҳои муҳимтаре баргашт"
+      ],
+      "correct_answer": 1,
+      "explanation": "The chapter closes: 'this chapter was always about cleverness, and the cleverness had been demonstrated.' The narrative moved on because the chapter was done.",
+      "explanation_fa": "فصل با این جمله تمام می‌شود: «این فصل همیشه درباره‌ی زیرکی بود، و زیرکی نشان داده شد.» روایت پیش رفت چون فصل تمام شده بود.",
+      "explanation_tg": "Фасл бо ин ҷумла тамом мешавад: «ин фасл ҳамеша дар бораи зиракӣ буд, ва зиракӣ нишон дода шуд.» Ривоят пеш рафт зеро фасл тамом шуда буд.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

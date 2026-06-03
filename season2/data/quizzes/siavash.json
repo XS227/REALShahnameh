@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "sia-e1",
+      "chapter_slug": "siavash",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Sudabeh accuses Siavash to Kay Kavus. How does Kay Kavus decide to resolve the contradiction between his trust in his wife and his love for his son?",
+      "question_fa": "سودابه سیاوش را به کی‌کاووس متهم می‌کند. کی‌کاووس چگونه تصمیم می‌گیرد تناقض میانِ اعتمادش به همسرش و عشقش به پسرش را حل کند؟",
+      "question_tg": "Судоба Сиёвушро ба Кай Кову муттаҳам мекунад. Кай Кову чӣ тавр тасмим мегирад?",
+      "answers": [
+        "He decrees trial by fire — Siavash must ride through seven mountains of flame",
+        "He exiles Sudabeh from the court immediately",
+        "He sends Siavash to the front lines of the war with Afrasiab",
+        "He asks Rostam to judge between them"
+      ],
+      "answers_fa": [
+        "آزمایشِ آتش را فرمان می‌دهد — سیاوش باید از هفت کوهِ آتش عبور کند",
+        "سودابه را فوری از دربار تبعید می‌کند",
+        "سیاوش را به خطِ جلوییِ جنگ با افراسیاب می‌فرستد",
+        "از رستم می‌خواهد میانِ آن‌ها قضاوت کند"
+      ],
+      "answers_tg": [
+        "Озмоиши оташро фармон медиҳад — Сиёвуш бояд аз ҳафт куҳи шуълавар гузарад",
+        "Судобаро фавран аз дарбор бадарға мекунад",
+        "Сиёвушро ба хати пеши ҷанг бо Афросиёб мефиристад",
+        "Аз Рустам мехоҳад миёни онҳо доварӣ кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Kay Kavus cannot resolve the contradiction himself — he loves Sudabeh and loves Siavash and cannot determine which of them is lying. He makes a king's decision: a divine ordeal. Seven mountains of fire are built. If Siavash is innocent, divine protection will carry him through. Siavash rides through all seven untouched. His innocence is proven absolutely — but the court remains too corrupt to hold him.",
+      "explanation_fa": "کی‌کاووس نمی‌تواند تناقض را خودش حل کند. تصمیمِ شاهانه می‌گیرد: آزمایشِ الهی. هفت کوهِ آتش ساخته می‌شود. سیاوش از همه هفت عبور می‌کند و دست‌نخورده. بی‌گناهی‌اش مطلقاً ثابت می‌شود — اما دربار هنوز خیلی فاسد است.",
+      "explanation_tg": "Кай Кову натавонист зиддиятро худаш ҳал кунад. Сиёвуш аз ҳама ҳафт куҳ мегузарад. Бегуноҳиаш исбот мешавад — аммо дарбор ҳанӯз хеле фосид аст.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "sia-e2",
+      "chapter_slug": "siavash",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Why does Siavash cross the Oxus into Turan rather than staying in Iran or retreating to Zabulestan with Rostam?",
+      "question_fa": "چرا سیاوش از جیحون به توران می‌رود به جای اینکه در ایران بماند یا به زابلستان با رستم برگردد؟",
+      "question_tg": "Чаро Сиёвуш аз Ҷайҳун ба Турон мегузарад?",
+      "answers": [
+        "He fears Sudabeh will make another accusation and Kay Kavus will execute him this time",
+        "He has negotiated a just peace with Afrasiab and refuses to break it on Kay Kavus's orders — staying would mean being an instrument of the king's bad faith",
+        "Rostam advised him to go to Turan where he would be safe from court intrigue",
+        "Afrasiab had already offered him sanctuary before the campaign began"
+      ],
+      "answers_fa": [
+        "می‌ترسد سودابه اتهامِ دیگری بزند و کی‌کاووس این بار حکمِ اعدامش را بدهد",
+        "صلحِ عادلانه‌ای با افراسیاب مذاکره کرده و رد می‌کند بر اساسِ دستوراتِ کی‌کاووس بشکندش — ماندن یعنی ابزارِ بی‌صداقتیِ شاه بودن",
+        "رستم به او توصیه کرد به توران برود که در آنجا از توطئه‌های دربار در امان است",
+        "افراسیاب قبل از شروعِ مأموریت پناهندگی پیشنهاد داده بود"
+      ],
+      "answers_tg": [
+        "Метарсад Судоба боз туҳмат занад ва Кай Кову ин дафъа ӯро эъдом кунад",
+        "Сулҳи одилонаро бо Афросиёб мувофиқа кардааст ва рад мекунад онро бо дастури Кай Кову вайрон кунад",
+        "Рустам ба ӯ тавсия дод ба Турон равад",
+        "Афросиёб пеш аз оғози лашкаркашӣ паноҳандагӣ пешниҳод карда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Siavash leads Iran's army and negotiates an honest peace with Afrasiab. Kay Kavus refuses to ratify it and orders the war to continue. Siavash faces a precise moral choice: obey and become the instrument of his father's dishonesty, or refuse and face the consequences. He chooses the third option — he writes a letter explaining his reasoning and crosses the Oxus. The letter is the Shahnameh's image of moral clarity: he does not flee without explanation; he explains without begging.",
+      "explanation_fa": "سیاوش صلحِ عادلانه‌ای با افراسیاب مذاکره می‌کند. کی‌کاووس رد می‌کند و جنگ را دستور می‌دهد. سیاوش با انتخابِ اخلاقیِ دقیقی روبروست: اطاعت کن و ابزارِ بی‌صداقتیِ پدرت باش، یا رد کن. کارِ سومی را انتخاب می‌کند — نامه می‌نویسد و از جیحون می‌گذرد.",
+      "explanation_tg": "Сиёвуш сулҳи одилонаро бо Афросиёб мувофиқа кардааст. Кай Кову рад мекунад. Сиёвуш интихоби ахлоқии дақиқе дорад. Мактубе менависад ва аз Ҷайҳун мегузарад.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "sia-m1",
+      "chapter_slug": "siavash",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh records that when Siavash emerged from the seven fires, the crowd's sound was more like grief than celebration. What does this detail reveal about how the chronicle reads his situation?",
+      "question_fa": "شاهنامه ثبت می‌کند که وقتی سیاوش از هفت آتش بیرون آمد، صدای جمعیت بیشتر شبیهِ اندوه بود تا جشن. این جزئیات چه چیزی درباره‌ی خواندنِ وضعیتِ او در شاهنامه آشکار می‌کند؟",
+      "question_tg": "Шоҳнома сабт мекунад, ки вақте Сиёвуш аз ҳафт оташ берун омад, садои мардум бештар ба ғам монанд буд. Ин тафсилот чӣ мегӯяд?",
+      "answers": [
+        "The people understood that a man this pure was in the wrong chronicle — his innocence was proven, but the world he inhabited would never allow him to remain in it",
+        "The crowd feared that Siavash's survival would provoke Sudabeh to further accusations",
+        "The crowd was mourning because the trial revealed Kay Kavus's weakness as a king",
+        "The grief was for Sudabeh, who the crowd pitied despite her false accusation"
+      ],
+      "answers_fa": [
+        "مردم فهمیدند مردی به این پاکی در شاهنامه‌ی اشتباهی است — بی‌گناهی‌اش ثابت شد اما دنیایی که در آن بود هرگز اجازه نمی‌دهد در آن بماند",
+        "جمعیت می‌ترسید که بقایِ سیاوش سودابه را تحریک به اتهاماتِ بیشتر کند",
+        "جمعیت عزادار بود چون آزمایش ضعفِ کی‌کاووس به عنوانِ شاه را آشکار کرد",
+        "غم برای سودابه بود که جمعیت با وجودِ اتهامِ دروغین‌اش دلشان می‌سوخت"
+      ],
+      "answers_tg": [
+        "Мардум фаҳмид, ки мардест бо ин покӣ дар солномаи нодуруст — беноҳиаш исбот шуд, аммо дунёи ӯ ҳеҷ гоҳ иҷозат намедиҳад дар он бимонад",
+        "Мардум метарсид, ки зинда мондани Сиёвуш Судобаро ба туҳматҳои бештар бармеангезад",
+        "Мардум мотам гирифт, зеро озмоиш заъфи Кай Ковусро ошкор кард",
+        "Ғам барои Судоба буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The crowd's grief is one of the Shahnameh's most precise observations about Siavash. The fire has proven his innocence — the trial worked exactly as designed. But the people watching understood what his innocence means in this context: a man this pure, this honest, this incapable of compromise, cannot survive the court he has just been proven innocent by. His purity is not a protection; it is a quality that makes him impossible to keep in a world built on calculation. The crowd mourns not for the trial but for what they know is coming.",
+      "explanation_fa": "اندوهِ جمعیت یکی از دقیق‌ترین مشاهداتِ شاهنامه درباره‌ی سیاوش است. آتش بی‌گناهی‌اش را ثابت کرده — آزمایش دقیقاً آنطور که طراحی شده کار کرد. اما تماشاگران فهمیدند بی‌گناهی‌اش در این زمینه یعنی چه: مردی به این پاکی، این صداقت، نمی‌تواند در درباری که تازه در آن بی‌گناه شناخته شده دوام بیاورد.",
+      "explanation_tg": "Ғами мардум яке аз дақиқтарин мушоҳидоти Шоҳнома дар бораи Сиёвуш аст. Оташ беноҳиашро исбот кардааст. Аммо мардуми тамошобин фаҳмид беноҳиаш дар ин маврид чӣ маъно дорад: мардест бо ин покӣ наметавонад дар дарборе ки тозагӣ дар он беноҳ шинохта шуда зинда монад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "sia-h1",
+      "chapter_slug": "siavash",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Afrasiab dreamed of Siavash before he arrived — a young man on a white horse who would be both his greatest joy and his destruction. Why does the Shahnameh give Afrasiab this dream if it cannot save Siavash?",
+      "question_fa": "افراسیاب پیش از رسیدنِ سیاوش او را خواب دید — مردِ جوانی روی اسبِ سفید که هم بزرگترین شادی‌اش و هم نابودیِ آینده‌اش بود. اگر نمی‌تواند سیاوش را نجات دهد چرا شاهنامه این خواب را به افراسیاب می‌دهد؟",
+      "question_tg": "Афросиёб Сиёвушро пеш аз расидан дар хоб дид — мардеки ҷавон, шодии бузургтарин ва ҳалокати оянда. Чаро Шоҳнома ин хобро ба Афросиёб медиҳад?",
+      "answers": [
+        "To show that Afrasiab is genuinely wise — he knows the cost of accepting Siavash but does so anyway, which makes his later betrayal a conscious choice",
+        "To explain why Afrasiab gave Siavash land — the dream demanded generosity as the price of avoiding the destruction",
+        "To establish that Siavash's death was destined, absolving Afrasiab of moral responsibility",
+        "To heighten the tragedy by showing that foreknowledge changes nothing: Afrasiab knew the dream contained destruction, received Siavash in joy, and still chose fear when Garsivaz began his work"
+      ],
+      "answers_fa": [
+        "برای نشان دادنِ اینکه افراسیاب واقعاً باهوش است — هزینه را می‌داند اما سیاوش را می‌پذیرد که خیانتِ بعدی را انتخابِ آگاهانه می‌کند",
+        "برای توضیحِ اینکه چرا افراسیاب به سیاوش زمین داد — خواب سخاوت را به عنوانِ قیمتِ اجتنابِ نابودی طلب کرد",
+        "برای ثابت کردنِ اینکه مرگِ سیاوش مقدر بود که افراسیاب را از مسئولیتِ اخلاقی تبرئه کند",
+        "برای تشدیدِ تراژدی با نشان دادنِ اینکه پیش‌دانی هیچ چیز را تغییر نمی‌دهد: افراسیاب می‌دانست خواب نابودی دارد، سیاوش را با شادی دریافت کرد، و هنوز وقتی گرسیوز شروع کرد ترس را انتخاب کرد"
+      ],
+      "answers_tg": [
+        "Барои нишон додани ин ки Афросиёб воқеан оқил аст — арзишро медонад аммо Сиёвушро мепазирад",
+        "Барои тавзеҳи ин ки чаро Афросиёб ба Сиёвуш замин дод",
+        "Барои исботи ин ки марги Сиёвуш муқаддар буд",
+        "Барои шиддат додани фоҷеа бо нишон додани ин ки пешдонӣ ҳеҷ чизро тағйир намедиҳад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The dream does not excuse Afrasiab — it indicts him more precisely. He knew, before Siavash arrived, that this relationship would contain both joy and destruction. He chose to receive Siavash in the joy-half of the dream. When Garsivaz came and the fear began, Afrasiab had the information he needed to resist it: the dream had shown him that his fear of Siavash was part of the same vision as his love for him. He chose to act on the fear anyway. The dream heightens the tragedy by eliminating the excuse of ignorance. Afrasiab destroyed Siavash with open eyes.",
+      "explanation_fa": "خواب افراسیاب را تبرئه نمی‌کند — با دقتِ بیشتری متهم می‌کند. می‌دانست، پیش از رسیدنِ سیاوش، که این رابطه شادی و نابودی هر دو را دارد. انتخاب کرد سیاوش را در نیمه‌ی شادیِ خواب بپذیرد. وقتی گرسیوز آمد، افراسیاب اطلاعاتِ لازم را داشت: خواب نشان داده بود ترسش از سیاوش بخشی از همان رؤیاست. باز هم انتخاب کرد به ترس عمل کند. خواب تراژدی را با حذفِ بهانه‌ی جهل تشدید می‌کند.",
+      "explanation_tg": "Хоб Афросиёбро бегуноҳ намекунад — бо дақиқии бештар муттаҳам мекунад. Медонист пеш аз расидани Сиёвуш, ки ин муносибат ҳам шодӣ ва ҳам ҳалокат дорад. Вақте Гарсевоз омад, Афросиёб маълумоти зарурӣ дошт. Боз ҳам интихоб кард ба тарс амал кунад. Хоб фоҷеаро бо барҳам задани баҳонаи ҷаҳолат шиддат медиҳад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "sia-e3",
+      "chapter_slug": "siavash",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What was the name of the city Siavash built in Turan?",
+      "question_fa": "شهری که سیاوش در توران ساخت چه نام داشت؟",
+      "question_tg": "Шаҳре ки Сиёвуш дар Турон сохт чӣ ном дошт?",
+      "answers": [
+        "Farangisabad",
+        "Kayabad",
+        "Siyavashgerd",
+        "Afrasiyabgerd"
+      ],
+      "answers_fa": [
+        "فرنگیس‌آباد",
+        "کی‌آباد",
+        "سیاوش‌گرد",
+        "افراسیاب‌گرد"
+      ],
+      "answers_tg": [
+        "Фарангисобод",
+        "Каёбод",
+        "Сиёвашгард",
+        "Афросиёбгард"
+      ],
+      "correct_answer": 2,
+      "explanation": "Siavash built a city called Siyavashgerd — City of Siavash — and ruled it justly. For a few years he was, improbably, happy.",
+      "explanation_fa": "سیاوش شهری به نامِ سیاوش‌گرد — شهرِ سیاوش — ساخت و عادلانه حکومت کرد. چند سالی به‌طرزِ بعیدانه‌ای خوشحال بود.",
+      "explanation_tg": "Сиёвуш шаҳреро бо номи Сиёвашгард — Шаҳри Сиёвуш — сохт ва одилона ҳукумат кард. Чанд соле ба тавзи бағайри имкон хушҳол буд.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "sia-m2",
+      "chapter_slug": "siavash",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "Who trained Siavash before he returned to Kay Kavus's court?",
+      "question_fa": "چه کسی سیاوش را پیش از بازگشت به دربارِ کی‌کاووس آموزش داد؟",
+      "question_tg": "Кӣ Сиёвушро пеш аз бозгашт ба дарбори Кай Ковус омӯзиш дод?",
+      "answers": [
+        "Zal",
+        "Gudarz",
+        "Rostam",
+        "Sam"
+      ],
+      "answers_fa": [
+        "زال",
+        "گودرز",
+        "رستم",
+        "سام"
+      ],
+      "answers_tg": [
+        "Зол",
+        "Гударз",
+        "Рустам",
+        "Сом"
+      ],
+      "correct_answer": 2,
+      "explanation": "Siavash was raised by Rostam and came back to court as a young man trained by the most rigorous standard of honour in Iran.",
+      "explanation_fa": "سیاوش توسطِ رستم بزرگ شد و به دربار بازگشت به عنوانِ مردِ جوانی که طبقِ سخت‌گیرانه‌ترین استانداردِ شرافت در ایران آموزش دیده بود.",
+      "explanation_tg": "Сиёвуш аз ҷониби Рустам парвариш ёфт ва ба дарбор баргашт ҳамчун ҷавоне ки тибқи сахтгиронатарин стандарти шарафат дар Эрон омӯзиш дидааст.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      }
+    },
+    {
+      "id": "sia-m3",
+      "chapter_slug": "siavash",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "How many mountains of fire did Siavash ride through to prove his innocence?",
+      "question_fa": "سیاوش برای اثباتِ بی‌گناهی‌اش از چند کوهِ آتش گذر کرد؟",
+      "question_tg": "Сиёвуш барои исботи бегуноҳиаш аз чанд кӯҳи оташ гузашт?",
+      "answers": [
+        "Three",
+        "Five",
+        "Seven",
+        "Nine"
+      ],
+      "answers_fa": [
+        "سه",
+        "پنج",
+        "هفت",
+        "نه"
+      ],
+      "answers_tg": [
+        "Се",
+        "Панҷ",
+        "Ҳафт",
+        "Нӯҳ"
+      ],
+      "correct_answer": 2,
+      "explanation": "Seven mountains of fire were built. Siavash rode through all seven on horseback and emerged unmarked.",
+      "explanation_fa": "هفت کوهِ آتش برپا شد. سیاوش از هر هفت بر اسب گذر کرد و دست‌نخورده ظاهر شد.",
+      "explanation_tg": "Ҳафт кӯҳи оташ барпо шуд. Сиёвуш аз ҳар ҳафт савора гузашт ва дастнахурда зоҳир шуд.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "sia-m4",
+      "chapter_slug": "siavash",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What did Afrasiab give Siavash when he granted him asylum in Turan?",
+      "question_fa": "افراسیاب هنگامِ پناهندگی به سیاوش در توران چه داد؟",
+      "question_tg": "Афросиёб ҳангоми паноҳандагӣ ба Сиёвуш дар Турон чӣ дод?",
+      "answers": [
+        "Command of the Turanian army",
+        "His daughter Farangis and land",
+        "A seat on the Turanian council",
+        "A sacred fire temple"
+      ],
+      "answers_fa": [
+        "فرمانده‌ی لشکرِ توران",
+        "دخترش فرنگیس و زمین",
+        "کرسی در شورای توران",
+        "آتشکده‌ای مقدس"
+      ],
+      "answers_tg": [
+        "Фармондеҳии лашкари Турон",
+        "Духтараш Фарангис ва замин",
+        "Курсие дар шӯрои Турон",
+        "Оташкадаи муқаддас"
+      ],
+      "correct_answer": 1,
+      "explanation": "Afrasiab gave Siavash his daughter Farangis and land. Siavash built Siyavashgerd and ruled it justly.",
+      "explanation_fa": "افراسیاب دخترش فرنگیس و زمین به سیاوش داد. سیاوش سیاوش‌گرد را ساخت و عادلانه حکومت کرد.",
+      "explanation_tg": "Афросиёб духтараш Фарангис ва заминро ба Сиёвуш дод. Сиёвуш Сиёвашгардро сохт ва одилона ҳукумат кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "sia-m5",
+      "chapter_slug": "siavash",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "What grew immediately where Siavash's blood fell on the earth after his execution?",
+      "question_fa": "بعد از اعدامِ سیاوش، در جایی که خونش روی زمین ریخت، چه چیزی بلافاصله رویید؟",
+      "question_tg": "Пас аз иҷрои ҳукми қатли Сиёвуш, дар ҷое ки хунаш бар замин рехт, чӣ фавран рӯид?",
+      "answers": [
+        "A sacred cypress tree",
+        "A plant Ferdowsi calls the blood of Siavash",
+        "A pomegranate tree",
+        "A tamarisk bush"
+      ],
+      "answers_fa": [
+        "درختِ سروِ مقدس",
+        "گیاهی که فردوسی آن را خونِ سیاوش می‌نامد",
+        "درختِ انار",
+        "بوتهٔ گز"
+      ],
+      "answers_tg": [
+        "Дарахти арзи муқаддас",
+        "Гиёҳе ки Фирдавсӣ онро хуни Сиёвуш меномад",
+        "Дарахти анор",
+        "Бутаи газ"
+      ],
+      "correct_answer": 1,
+      "explanation": "Where Siavash's blood fell on the earth, a plant grew immediately — not slowly but at once. Ferdowsi calls it the blood of Siavash.",
+      "explanation_fa": "در جایی که خونِ سیاوش روی زمین ریخت، گیاهی بلافاصله رویید — نه به آرامی بلکه در لحظه. فردوسی آن را خونِ سیاوش می‌نامد.",
+      "explanation_tg": "Дар ҷое ки хуни Сиёвуш бар замин рехт, гиёҳе фавран рӯид — на оҳиста балки дар лаҳза. Фирдавсӣ онро хуни Сиёвуш меномад.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "sia-h2",
+      "chapter_slug": "siavash",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Afrasiab had dreamed of Siavash before accepting him. What did the dream show?",
+      "question_fa": "افراسیاب پیش از پذیرشِ سیاوش از او خواب دیده بود. خواب چه نشان داد؟",
+      "question_tg": "Афросиёб пеш аз қабули Сиёвуш аз ӯ хоб дида буд. Хоб чӣ нишон дод?",
+      "answers": [
+        "Siavash as a great general who would conquer Turan",
+        "A young man on a white horse — Afrasiab's greatest joy and his coming destruction",
+        "Siavash building a city that would outlast Turan",
+        "The death of Garsivaz at Siavash's hand"
+      ],
+      "answers_fa": [
+        "سیاوش به عنوانِ سردارِ بزرگی که توران را فتح می‌کند",
+        "جوانی بر اسبِ سفید — بزرگ‌ترین شادیِ افراسیاب و نابودیِ آینده‌اش",
+        "سیاوشی که شهری می‌سازد که از توران بقا می‌یابد",
+        "مرگِ گرسیوز به دستِ سیاوش"
+      ],
+      "answers_tg": [
+        "Сиёвуш ҳамчун сардори бузурге ки Туронро фатҳ мекунад",
+        "Ҷавоне бар аспи сафед — бузургтарин шодии Афросиёб ва нобудии оянда",
+        "Сиёвуше ки шаҳре месозад ки аз Турон боқӣ мемонад",
+        "Марги Гарсевоз ба дасти Сиёвуш"
+      ],
+      "correct_answer": 1,
+      "explanation": "Afrasiab 'had dreamed of him — a young man on a white horse, his greatest joy and his coming destruction — accepted.' He knew and accepted anyway.",
+      "explanation_fa": "افراسیاب «از او خواب دیده بود — جوانی بر اسبِ سفید، بزرگ‌ترین شادی‌اش و نابودیِ آینده‌اش — پذیرفت.» می‌دانست و باز هم پذیرفت.",
+      "explanation_tg": "Афросиёб «аз ӯ хоб дида буд — ҷавоне бар аспи сафед, бузургтарин шодиаш ва нобудии ояндааш — қабул кард.» Медонист ва боз ҳам қабул кард.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "sia-h3",
+      "chapter_slug": "siavash",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "How does Garsivaz poison Afrasiab's mind against Siavash? What technique does the chapter describe?",
+      "question_fa": "گرسیوز چگونه ذهنِ افراسیاب را نسبت به سیاوش مسموم می‌کند؟ فصل چه شیوه‌ای را توصیف می‌کند؟",
+      "question_tg": "Гарсевоз чӣ тавр зеҳни Афросиёбро нисбат ба Сиёвуш заҳролуд мекунад? Фасл кадом усулро тавсиф мекунад?",
+      "answers": [
+        "Forging letters in Siavash's name",
+        "A question here, a doubt planted there, a suspicion watered until it bloomed — slow psychological work",
+        "Showing Afrasiab the city's fortifications as military evidence",
+        "Bribing Siavash's servants to provide false testimony"
+      ],
+      "answers_fa": [
+        "جعلِ نامه‌هایی به نامِ سیاوش",
+        "سؤالی اینجا، شکّی در آنجا کاشته، سوءظنی آبیاری‌شده تا شکوفا شود — کارِ روان‌شناختیِ آرام",
+        "نشان دادنِ استحکاماتِ شهر به افراسیاب به عنوانِ شاهدِ نظامی",
+        "رشوه دادن به خدمتکارانِ سیاوش برای ارائه‌ی شهادتِ دروغ"
+      ],
+      "answers_tg": [
+        "ۆعل кардани номаҳо ба номи Сиёвуш",
+        "Саволе ин ҷо, шакке он ҷо кошта, бадгумонӣе обёришуда то шукуфо шавад — кори психологии ором",
+        "Нишон додани истеҳкоматҳои шаҳр ба Афросиёб ҳамчун шоҳиди ҳарбӣ",
+        "Ришва додан ба хизматгузорони Сиёвуш барои шаҳодати дурӯғ"
+      ],
+      "correct_answer": 1,
+      "explanation": "'He began the slow work of poisoning: a question here, a doubt planted there, a suspicion watered until it bloomed.' Patient, incremental psychological work.",
+      "explanation_fa": "«کارِ آرامِ مسموم‌سازی را شروع کرد: سؤالی اینجا، شکّی در آنجا کاشته، سوءظنی آبیاری‌شده تا شکوفا شود.» کارِ روان‌شناختیِ صبورانه و تدریجی.",
+      "explanation_tg": "«Кори оромонаи заҳролудсозиро оғоз кард: саволе ин ҷо, шакке он ҷо кошта, бадгумонӣе обёришуда то шукуфо шавад.» Кори психологии сабурона ва тадриҷӣ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "sia-h4",
+      "chapter_slug": "siavash",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "What does 'the court was still corrupt' immediately after Siavash's innocence was proven mean?",
+      "question_fa": "«دربار هنوز هم فاسد بود» بلافاصله پس از اثبات بی‌گناهی سیاوش چه معنایی دارد؟",
+      "question_tg": "«Дарбор ҳанӯз ҳам фосид буд» фавран пас аз исботи бегуноҳии Сиёвуш чӣ маъно дорад?",
+      "answers": [
+        "Sudabeh escaped punishment for her false accusation",
+        "Proving innocence within a corrupt system does not fix the system — the structural problem remained",
+        "Kay Kavus was personally corrupt but his advisors were not",
+        "The court immediately began planning a new accusation"
+      ],
+      "answers_fa": [
+        "سودابه از مجازات برای اتهامِ دروغینش فرار کرد",
+        "اثباتِ بی‌گناهی در یک سیستمِ فاسد، سیستم را درست نمی‌کند — مشکلِ ساختاری باقی ماند",
+        "کی‌کاووس شخصاً فاسد بود اما مشاورانش نبودند",
+        "دربار بلافاصله شروع به برنامه‌ریزی برای اتهامِ جدیدی کرد"
+      ],
+      "answers_tg": [
+        "Судоба аз ҷазо барои иттиҳоми дурӯғинаш гурехт",
+        "Исботи бегуноҳӣ дар системи фосид системро дуруст намекунад — мушкили сохторӣ боқӣ монд",
+        "Кай Ковус шахсан фосид буд аммо маслиҳатгузоронаш набуданд",
+        "Дарбор фавран шурӯъ ба банақшагирӣ барои иттиҳоми нав кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "The chapter's central observation: Siavash's innocence was established beyond doubt, but the court that demanded the trial remained structurally corrupt.",
+      "explanation_fa": "مشاهده‌ی مرکزیِ فصل: بی‌گناهیِ سیاوش فراتر از هر تردیدی اثبات شد، اما دربارِ فاسدی که این آزمون را طلبید ساختاری فاسد باقی ماند.",
+      "explanation_tg": "Мушоҳидаи марказии фасл: бегуноҳии Сиёвуш аз ҳар гумоне зиёдтар исбот шуд, аммо дарбори фосиде ки ин озмонро талаб карда буд сохторан фосид боқӣ монд.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "sia-h5",
+      "chapter_slug": "siavash",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Why did Siavash cross the Oxus into Turan rather than continue serving Kay Kavus?",
+      "question_fa": "چرا سیاوش به جای اینکه به خدمتِ کی‌کاووس ادامه دهد از جیحون به توران گذشت؟",
+      "question_tg": "Чаро Сиёвуш ба ҷои идома додани хидмати Кай Ковус аз Ҷайҳун ба Турон гузашт?",
+      "answers": [
+        "He fell in love with Farangis while on campaign",
+        "Kay Kavus refused to ratify the peace and ordered war — Siavash understood there was no version of the court that would let him be right",
+        "He was exiled by Kay Kavus after the fire trial",
+        "He was invited by Afrasiab to govern Turan"
+      ],
+      "answers_fa": [
+        "در طولِ لشکرکشی عاشقِ فرنگیس شد",
+        "کی‌کاووس از تصویبِ صلح امتناع کرد و دستورِ ادامه‌ی جنگ داد — سیاوش فهمید که هیچ نسخه‌ای از این دربار نیست که به او اجازه درست بودن بدهد",
+        "پس از آزمونِ آتش توسطِ کی‌کاووس تبعید شد",
+        "افراسیاب او را برای حکومت بر توران دعوت کرد"
+      ],
+      "answers_tg": [
+        "Дар тӯли лашкаркашӣ ошиқи Фарангис шуд",
+        "Кай Ковус аз тасвиби сулҳ худдорӣ кард ва дастури идома ба ҷанг дод — Сиёвуш фаҳмид ки ҳеҷ нусхаеро аз ин дарбор нест ки ба ӯ иҷозати дуруст будан диҳад",
+        "Пас аз озмони оташ аз ҷониби Кай Ковус табъид шуд",
+        "Афросиёб ӯро барои ҳукумат бар Турон даъват кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "Siavash negotiated an honest peace; Kay Kavus refused it and ordered war to continue. Siavash 'read the orders and understood: there was no version of this court that would let him be right.'",
+      "explanation_fa": "سیاوش صلحی صادقانه مذاکره کرد؛ کی‌کاووس آن را رد کرد و دستور به ادامه‌ی جنگ داد. سیاوش «دستورها را خواند و فهمید: هیچ نسخه‌ای از این دربار نیست که به او اجازه درست بودن بدهد.»",
+      "explanation_tg": "Сиёвуш сулҳи солимро музокира кард; Кай Ковус онро рад кард ва дастури идома ба ҷанг дод. Сиёвуш «дастурҳоро хонд ва фаҳмид: ҳеҷ нусхаеро аз ин дарбор нест ки ба ӯ иҷозати дуруст будан диҳад.»",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "sia-h6",
+      "chapter_slug": "siavash",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "When the soldiers came to arrest Siavash, what did he do?",
+      "question_fa": "وقتی سربازان برای دستگیریِ سیاوش آمدند، او چه کرد؟",
+      "question_tg": "Вақте сарбозон барои дастгирии Сиёвуш омаданд, ӯ чӣ кард?",
+      "answers": [
+        "He fought and was overwhelmed by numbers",
+        "He fled to a border fortress",
+        "He did not fight them",
+        "He sent for Rostam before surrendering"
+      ],
+      "answers_fa": [
+        "جنگید و زیرِ سنگینیِ تعداد له شد",
+        "به قلعه‌ای مرزی گریخت",
+        "با آن‌ها نجنگید",
+        "قبل از تسلیم شدن به دنبالِ رستم فرستاد"
+      ],
+      "answers_tg": [
+        "Ҷангид ва зери вазни шумора шикаста шуд",
+        "Ба қалъаи марзие гурехт",
+        "Бо онҳо наҷангид",
+        "Пеш аз таслим шудан ба дунбали Рустам фиристод"
+      ],
+      "correct_answer": 2,
+      "explanation": "'When the soldiers came, Siavash did not fight them.' This is consistent with who he is — a man who crossed the Oxus rather than fight a corrupt king.",
+      "explanation_fa": "«وقتی سربازان آمدند، سیاوش با آن‌ها نجنگید.» این با شخصیتِ او سازگار است — مردی که از جیحون گذشت به جای اینکه با شاهِ فاسد بجنگد.",
+      "explanation_tg": "«Вақте сарбозон омаданд, Сиёвуш бо онҳо наҷангид.» Ин бо шахсияти ӯ созгор аст — марде ки аз Ҷайҳун гузашт ба ҷои ҷангидан бо подшоҳи фосид.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "sia-h7",
+      "chapter_slug": "siavash",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "What annual ceremony did the people of Iran hold to commemorate Siavash?",
+      "question_fa": "مردمِ ایران چه مراسمِ سالانه‌ای برای بزرگداشتِ سیاوش برپا می‌کردند؟",
+      "question_tg": "Мардуми Эрон кадом маросими солонаро барои бузургдошти Сиёвуш барпо мекарданд?",
+      "answers": [
+        "A horse race at the Oxus river crossing",
+        "The ceremony of his tears",
+        "A day of fasting called the Blood of Siavash",
+        "The lighting of seven fires at Nowruz"
+      ],
+      "answers_fa": [
+        "مسابقه‌ی اسب‌سواری در عبورگاهِ جیحون",
+        "مراسمِ اشک‌هایش",
+        "روزِ روزه‌داری به نامِ خونِ سیاوش",
+        "روشن کردنِ هفت آتش در نوروز"
+      ],
+      "answers_tg": [
+        "Мусобиқаи аспдавонӣ дар гузаргоҳи Ҷайҳун",
+        "Маросими ашкҳояш",
+        "Рӯзи рӯза ба номи хуни Сиёвуш",
+        "Равшан кардани ҳафт оташ дар Наврӯз"
+      ],
+      "correct_answer": 1,
+      "explanation": "'The people of Iran mourned Siavash every year at the ceremony of his tears.' This ceremony persisted as a cultural institution.",
+      "explanation_fa": "«مردمِ ایران هر سال در مراسمِ اشک‌هایش برای سیاوش عزاداری می‌کردند.» این مراسم به عنوانِ یک نهادِ فرهنگی ادامه یافت.",
+      "explanation_tg": "«Мардуми Эрон ҳар сол дар маросими ашкҳояш барои Сиёвуш азодорӣ мекарданд.» Ин маросим ҳамчун як ниҳоди фарҳангӣ идома ёфт.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "sia-h8",
+      "chapter_slug": "siavash",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The chapter says 'He had been purer than the chronicle he was born into, and the chronicle had destroyed him for it.' What does this mean?",
+      "question_fa": "فصل می‌گوید «او از شاهنامه‌ای که در آن متولد شده بود پاک‌تر بود، و شاهنامه به همین دلیل او را نابود کرد.» این یعنی چه؟",
+      "question_tg": "Фасл мегӯяд «Ӯ аз Шоҳномае ки дар он таваллуд шуда буд пок‌тар буд, ва Шоҳнома ба ҳамин далел ӯро нобуд кард.» Ин яъне чӣ?",
+      "answers": [
+        "Ferdowsi blames the Shahnameh itself for Siavash's death",
+        "Siavash's very virtue made him incompatible with the corrupt world he inhabited — his purity was what made him vulnerable",
+        "Siavash was too weak to survive the harsh world of the Shahnameh",
+        "He was destroyed because he was too forgiving of his enemies"
+      ],
+      "answers_fa": [
+        "فردوسی خودِ شاهنامه را مقصرِ مرگِ سیاوش می‌داند",
+        "فضیلتِ سیاوش او را با دنیای فاسدی که در آن زندگی می‌کرد ناسازگار کرد — پاکی‌اش بود که او را آسیب‌پذیر کرد",
+        "سیاوش برای بقا در دنیای سختِ شاهنامه خیلی ضعیف بود",
+        "به خاطرِ اینکه خیلی از دشمنانش بخشنده بود نابود شد"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ худи Шоҳномаро гунаҳкори марги Сиёвуш медонад",
+        "Фазилати Сиёвуш ӯро бо дунёи фосиде ки дар он зиндагӣ мекард носозгор кард — поки‌аш буд ки ӯро осебпазир кард",
+        "Сиёвуш барои бақо дар дунёи сахти Шоҳнома хеле заиф буд",
+        "Ба хотири ин ки хеле аз душманонаш бахшнада буд нобуд шуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Siavash was not destroyed despite his virtue but because of it — a more corrupt person would have survived by compromising. His purity was the vulnerability.",
+      "explanation_fa": "سیاوش نه با وجودِ فضیلتش بلکه به خاطرِ آن نابود شد — آدمِ فاسدتری با مصالحه زنده می‌ماند. پاکی‌اش آسیب‌پذیری‌اش بود.",
+      "explanation_tg": "Сиёвуш на бо вуҷуди фазилаташ балки ба хотири он нобуд шуд — одами фосидтаре бо мусолиҳа зинда мемонд. Покиаш осебпазириаш буд.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

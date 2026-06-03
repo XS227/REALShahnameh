@@ -1,0 +1,39 @@
+{
+  "quizzes": [
+    {
+      "id": "hk-5-q1",
+      "chapter_slug": "haft-khan-5",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What promise does Rostam make to Awlad after defeating him in the Fifth Labour?",
+      "question_fa": "رستم بعد از شکست دادنِ اولاد در خانِ پنجم چه قولی به او می‌دهد؟",
+      "question_tg": "Рустам пас аз шикаст додани Авлод дар Хони Панҷум чӣ ваъда медиҳад?",
+      "answers": [
+        "To make him king of Mazandaran if he guides faithfully",
+        "To spare his life if he surrenders his weapons",
+        "To give him a share of the treasure from Kay Kavus's prison",
+        "To teach him the secrets of Rostam's seven labours"
+      ],
+      "answers_fa": [
+        "که اگر وفادارانه راهنمایی کند شاهِ مازندرانش کند",
+        "که اگر سلاح‌هایش را تسلیم کند جانش را ببخشد",
+        "که سهمی از گنجِ زندانِ کی‌کاووس به او بدهد",
+        "که اسرارِ هفت‌خانِ رستم را به او بیاموزد"
+      ],
+      "answers_tg": [
+        "Ки агар вафодорона роҳнамоӣ кунад шоҳи Мозандаронаш кунад",
+        "Ки агар силоҳонашро таслим кунад ҷонашро бибахшад",
+        "Ки ҳиссае аз ганҷи зиндони Кай Кову бидиҳад",
+        "Ки асрори ҳафт хони Рустамро ба ӯ биомӯзад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Rostam promises to make Awlad king of Mazandaran if he guides faithfully. This is the Shahnameh's tactical lesson: the captured enemy is converted into an asset. Awlad accepts — and the promise turns an obstacle into the key that opens every remaining door.",
+      "explanation_fa": "رستم قول می‌دهد اگر اولاد وفادارانه راهنمایی کند شاهِ مازندرانش کند. درسِ تاکتیکیِ شاهنامه: دشمنِ اسیر به دارایی تبدیل می‌شود.",
+      "explanation_tg": "Рустам ваъда медиҳад ки Авлодро шоҳи Мозандарон кунад агар вафодорона роҳнамоӣ кунад.",
+      "reward": {
+        "xp": 140,
+        "real": 60
+      }
+    }
+  ]
+}

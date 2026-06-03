@@ -1,0 +1,39 @@
+{
+  "quizzes": [
+    {
+      "id": "hk-1-q1",
+      "chapter_slug": "haft-khan-1",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "In the First Labour, while Rostam slept in the reed bed — who fought and killed the lion?",
+      "question_fa": "در خانِ اول، در حالی که رستم در نیزار خوابیده بود — چه کسی شیر را کشت؟",
+      "question_tg": "Дар Хони Аввал, ҳангоме ки Рустам дар найзор хоб буд — кӣ шерро кушт?",
+      "answers": [
+        "Rakhsh, Rostam's horse",
+        "Rostam, awakened at the last moment",
+        "A passing warrior from Pars",
+        "The Simorgh, called by the feather"
+      ],
+      "answers_fa": [
+        "رخش، اسبِ رستم",
+        "رستم، که در آخرین لحظه بیدار شد",
+        "جنگجویی گذری از پارس",
+        "سیمرغ، که با پَر فراخوانده شد"
+      ],
+      "answers_tg": [
+        "Рахш, аспи Рустам",
+        "Рустам, ки дар лаҳзаи охир бедор шуд",
+        "Ҷангии гузарӣ аз Порс",
+        "Симурғ, ки бо пар фарохонда шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Rakhsh killed the lion alone without waking Rostam. This is the Shahnameh's first statement about the Haft Khan: the journey begins with a victory Rostam didn't earn himself, which sets the theme — each labour teaches a different form of courage and trust.",
+      "explanation_fa": "رخش شیر را تنها کشت بدون آنکه رستم را بیدار کند. این اولین گفته‌ی شاهنامه درباره‌ی هفت‌خان است: سفر با پیروزی‌ای که رستم خودش به دست نیاورده شروع می‌شود.",
+      "explanation_tg": "Рахш шерро танҳо кушт бидуни бедор кардани Рустам.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    }
+  ]
+}

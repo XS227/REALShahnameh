@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "dar-e1",
+      "chapter_slug": "darab",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Where and how did Darab grow up?",
+      "question_fa": "داراب کجا و چگونه بزرگ شد؟",
+      "question_tg": "Дороб дар куҷо ва чӣ гуна калон шуд?",
+      "answers": [
+        "By the Tigris river, raised by a washerman who found the sealed chest and gave the child a name and a household",
+        "In the royal court of a neighboring kingdom, raised by a noble family who knew his true identity",
+        "In a remote mountain village, raised by a shepherd who found him abandoned in the hills",
+        "In Kabul, raised by a military family who trained him from childhood as a soldier"
+      ],
+      "answers_fa": [
+        "در کنارِ رودِ دجله، پرورش یافته توسطِ گازری که صندوقِ مهرشده را پیدا کرد و به کودک نام و خانواده‌ای داد",
+        "در دربارِ سلطنتیِ یک پادشاهیِ همسایه، پرورش یافته توسطِ خانواده‌ای اشرافی که هویتِ واقعی‌اش را می‌دانستند",
+        "در روستایِ کوهستانیِ دورافتاده‌ای، پرورش یافته توسطِ چوپانی که او را رها شده در کوه‌ها یافت",
+        "در کابل، پرورش یافته توسطِ خانواده‌ی نظامی که از کودکی او را به عنوانِ سرباز آموزش داد"
+      ],
+      "answers_tg": [
+        "Дар канори рӯди Даҷла, парвариш ёфта аз ҷониби гозаре ки сандуқи муҳршударо ёфт ва ба кӯдак ном ва хонаводае дод",
+        "Дар дарбори шоҳонаи подшоҳии ҳамсоя, парвариш ёфта аз ҷониби оилаи ашрофе ки ҳувияти воқеии ӯро медонистанд",
+        "Дар деҳаи кӯҳии дурдасте, парвариш ёфта аз ҷониби чӯпоне ки ӯро рахошудаи дар кӯҳҳо ёфт",
+        "Дар Кобул, парвариш ёфта аз ҷониби оилаи низомие ки аз кӯдакӣ ӯро ҳамчун сарбоз омӯзиш дод"
+      ],
+      "correct_answer": 0,
+      "explanation": "Darab grew up by the Tigris not knowing who he was. The washerman who found the sealed chest gave the child a name and a household — and did not ask what the royal seal meant, or if he knew, kept his silence until the deathbed. Darab grew up learning the river trade.",
+      "explanation_fa": "داراب در کنارِ دجله بدونِ دانستنِ اینکه کیست بزرگ شد. گازری که صندوقِ مهرشده را پیدا کرد به کودک نام و خانواده‌ای داد — و نپرسید مهرِ سلطنتی به چه معناست، یا اگر می‌دانست تا بسترِ مرگش سکوت کرد. داراب یاد گرفت تجارتِ رودخانه را.",
+      "explanation_tg": "Дороб дар канори Даҷла бидуни донистани ин ки кист калон шуд. Гозаре ки сандуқи муҳршударо ёфт ба кӯдак ном ва хонаводае дод — ва напурсид муҳри шоҳонӣ чӣ маъно дорад, ё агар медонист то бистари маргаш хомӯш монд. Дороб тиҷорати дарёро омӯхт.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "dar-e2",
+      "chapter_slug": "darab",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "How did Darab end up joining the army — and what happened to him there?",
+      "question_fa": "داراب چطور به ارتش پیوست — و آنجا چه اتفاقی برایش افتاد؟",
+      "question_tg": "Дороб чӣ гуна ба артиш пайваст — ва дар он ҷо бо ӯ чӣ рӯй дод?",
+      "answers": [
+        "A Persian army passed through his city on a border campaign; he enlisted because something in its structure answered a question he hadn't known he was asking — and he rose to a command in a single season",
+        "He was conscripted against his will but proved so capable that he was quickly promoted",
+        "He joined as a personal bodyguard to a local general and learned military tactics through close observation",
+        "He enlisted specifically to find his way to the capital and petition for his true identity"
+      ],
+      "answers_fa": [
+        "ارتشِ ایرانی در طولِ لشکرکشیِ مرزی از شهرش گذشت؛ پیوست چون چیزی در ساختارش به سؤالی که نمی‌دانست می‌پرسد پاسخ داد — و در یک فصل به فرماندهی رسید",
+        "علی‌رغمِ میلش سربازگیری شد اما آنقدر توانا بود که سریعاً ترفیع گرفت",
+        "به عنوانِ محافظِ شخصی به سردارِ محلی پیوست و از طریقِ مشاهده‌ی نزدیک تاکتیک‌های نظامی یاد گرفت",
+        "مشخصاً برای پیدا کردنِ راهی به پایتخت و درخواستِ هویتِ واقعی‌اش در ارتش نام نوشت"
+      ],
+      "answers_tg": [
+        "Артиши Эронӣ дар тӯли лашкаркашии марзӣ аз шаҳраш гузашт; пайваст зеро чизе дар сохторааш ба саволе ки намедонист мепурсид посух дод — ва дар як фасл ба фармондеҳӣ расид",
+        "Бар хилофи майлаш саф кашида шуд аммо он қадар тавонманд буд ки зуд тарфиъ гирифт",
+        "Ҳамчун нигаҳбони шахсӣ ба саркардаи маҳаллӣ пайваст ва тавассути мушоҳидаи наздик тактикаҳои низомӣ ёд гирифт",
+        "Мушаххасан барои пайдо кардани роҳе ба пойтахт ва арзу кардани ҳувияти воқеии худ дар артиш ном навишт"
+      ],
+      "correct_answer": 0,
+      "explanation": "When a Persian army passed through his city on a border campaign, Darab enlisted — not because he wanted to be a soldier, but because something in the army's structure and purpose answered a question he hadn't known he was asking. He distinguished himself immediately. His commanders promoted him, and each promotion revealed more of the quality the promotions were built on. By the end of the campaign, he had risen to a command no common soldier reaches in a single season.",
+      "explanation_fa": "وقتی ارتشِ ایرانی در طولِ لشکرکشیِ مرزی از شهرش گذشت، داراب نام نوشت — نه به این خاطر که می‌خواست سرباز باشد، بلکه چون چیزی در ساختار و هدفِ ارتش به سؤالی پاسخ داد که نمی‌دانست می‌پرسد. فوری متمایز شد. فرمانده‌هایش ترفیعش دادند و هر ترفیع بیشتری از کیفیتی که ترفیع‌ها بر آن ساخته شده بودند آشکار کرد. تا پایانِ لشکرکشی، به فرماندهی‌ای رسیده بود که هیچ سربازِ معمولی در یک فصل به آن نمی‌رسد.",
+      "explanation_tg": "Вақте артиши Эронӣ дар тӯли лашкаркашии марзӣ аз шаҳраш гузашт, Дороб ном навишт — на аз сабаби он ки мехост сарбоз бошад, балки зеро чизе дар сохтор ва ҳадафи артиш ба саволе посух дод ки намедонист мепурсид. Фаврӣ мумтоз шуд. Фармондаҳонаш тарфиъ доданд ва ҳар тарфиъ бештари сифатеро ки тарфиъҳо бар он сохта шуда буданд ошкор кард.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "dar-m1",
+      "chapter_slug": "darab",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The washerman who found Darab 'did not ask what the royal seal meant, or if he knew, kept his silence until the deathbed.' Why does the Shahnameh include this detail?",
+      "question_fa": "گازری که داراب را پیدا کرد 'نپرسید مهرِ سلطنتی به چه معناست، یا اگر می‌دانست تا بسترِ مرگش سکوت کرد'. شاهنامه چرا این جزئیات را شامل می‌کند؟",
+      "question_tg": "Гозаре ки Доробро ёфт 'напурсид муҳри шоҳонӣ чӣ маъно дорад, ё агар медонист то бистари маргаш хомӯш монд'. Чаро Шоҳнома ин ҷузъиятро дохил мекунад?",
+      "answers": [
+        "To show that Darab's upbringing was genuine — the washerman gave him a real childhood in a real household, and the silence was an act of protection rather than deception",
+        "To establish that the washerman was afraid of punishment if he revealed what he had found",
+        "To create suspense — the reader knows the truth while Darab does not",
+        "To explain why Darab's identity was hidden for so long — the washerman's selfishness kept him ignorant"
+      ],
+      "answers_fa": [
+        "برای نشان دادنِ اینکه دوران کودکیِ داراب واقعی بود — گازر کودکیِ واقعی در خانواده‌ی واقعی به او داد، و سکوت عملِ حمایت بود نه فریب",
+        "برای تثبیتِ اینکه گازر می‌ترسید اگر آنچه پیدا کرده را فاش کند تنبیه شود",
+        "برای ایجادِ تعلیق — خواننده حقیقت را می‌داند درحالی‌که داراب نمی‌داند",
+        "برای توضیحِ اینکه چرا هویتِ داراب آنقدر طولانی پنهان ماند — خودخواهیِ گازر او را جاهل نگه داشت"
+      ],
+      "answers_tg": [
+        "Барои нишон додани ин ки кӯдакии Дороб воқеӣ буд — гозар кӯдакии воқеӣ дар оилаи воқеӣ ба ӯ дод ва хомӯшӣ амали ҳифозат буд на фиреб",
+        "Барои исботи ин ки гозар метарсид агар он чиро ёфта буд ошкор кунад ҷазо бинад",
+        "Барои эҷоди таъаллуқ — хонанда ҳақиқатро медонад дар ҳоле ки Дороб намедонад",
+        "Барои тавзеҳи ин ки чаро ҳувияти Дороб он қадар тӯлонӣ пинҳон монд — худхоҳии гозар ӯро нодон нигоҳ дошт"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh is careful to distinguish between ignorance and deception. The washerman raised Darab as his own — the childhood was real. The silence about the seal is presented as protection: to tell a child he is a royal foundling is to destroy the ordinary life that Homay's act was meant to provide. The deathbed revelation is the moment when protection becomes disclosure.",
+      "explanation_fa": "شاهنامه در تمایزگذاریِ بینِ نادانی و فریب دقیق است. گازر داراب را مثلِ فرزندِ خود پرورش داد — کودکی واقعی بود. سکوت درباره‌ی مهر به عنوانِ حمایت عرضه می‌شود: گفتنِ اینکه کودک کودکِ سلطنتیِ یافته‌شده است به معنای نابودیِ زندگیِ عادی‌ای است که عملِ هما قرار بود فراهم کند. وحیِ بسترِ مرگ لحظه‌ای است که حمایت به افشا تبدیل می‌شود.",
+      "explanation_tg": "Шоҳнома дар тафовутгузории байни нодонӣ ва фиреб дақиқ аст. Гозар Доробро монанди фарзанди худ парвариш дод — кӯдакӣ воқеӣ буд. Хомӯшӣ дар бораи муҳр ҳамчун ҳифозат муаррифӣ мешавад: гуфтани ин ки кӯдак кӯдаки шоҳонаи ёфташуда аст яъне нобудии зиндагии муқаррарӣ ки амали Ҳамо қарор буд фароҳам кунад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "dar-m2",
+      "chapter_slug": "darab",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "How was Darab's identity as Homay's son finally established?",
+      "question_fa": "هویتِ داراب به عنوانِ پسرِ هما چطور سرانجام ثابت شد؟",
+      "question_tg": "Ҳувияти Дороб ҳамчун писари Ҳамо чӣ гуна дар ниҳоят исбот шуд?",
+      "answers": [
+        "A court astrologer recognized Homay's royal seal — which Darab had carried since the washerman pressed it into his hands on his deathbed — and the letter inside named Darab as Homay's son and heir",
+        "Darab recognized Homay's portrait in the court and declared himself her son",
+        "Homay herself recognized Darab when he appeared before the court and publicly acknowledged him",
+        "The seal was sent to scholars who traced it to the Kayanian treasury records and confirmed Darab's lineage"
+      ],
+      "answers_fa": [
+        "منجمِ دربار مهرِ سلطنتیِ هما را شناخت — که داراب از وقتی گازر آن را در بسترِ مرگ به دستش داده بود حمل کرده بود — و نامه‌ی داخل داراب را به عنوانِ پسر و وارثِ هما نام برد",
+        "داراب تصویرِ هما را در دربار شناخت و خود را پسرش اعلام کرد",
+        "خودِ هما داراب را وقتی در مقابلِ دربار ظاهر شد شناخت و به طورِ علنی او را پذیرفت",
+        "مهر برای محققانی فرستاده شد که آن را به سوابقِ خزانه‌ی کیانی ردیابی کردند و نسبِ داراب را تأیید کردند"
+      ],
+      "answers_tg": [
+        "Мунаҷҷими дарбор муҳри шоҳонаи Ҳаморо шинохт — ки Дороб аз вақте гозар онро дар бистари марг ба дасташ дода буд ҳамл карда буд — ва номаи дохил Доробро ҳамчун писар ва вориси Ҳамо ном бурд",
+        "Дороб тасвири Ҳаморо дар дарбор шинохт ва худашро писараш эълон кард",
+        "Худи Ҳамо Доробро вақте дар муқобили дарбор зоҳир шуд шинохт ва ба таври оммавӣ пазируфт",
+        "Муҳр барои муҳаққиқоне фиристода шуд ки онро ба сабти хазинаи Каёнӣ пайгирӣ карданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The washerman, on his deathbed, pressed the sealed document into Darab's hands without explaining what it contained, knowing only that it had come with him from the water. A court astrologer recognized the seal. The letter was opened. It named Darab as Homay's son and heir, born of the Kayanian line. The identity Homay had encoded in the sealed chest finally arrived at its destination.",
+      "explanation_fa": "گازر در بسترِ مرگ سندِ مهرشده را به دستانِ داراب فشار داد بدونِ توضیحِ آنچه داخلش بود، و فقط می‌دانست که از آب همراهِ او آمده. منجمِ دربار مهر را شناخت. نامه باز شد. داراب را به عنوانِ پسر و وارثِ هما، از نسلِ کیانی، نام برد. هویتی که هما در صندوقِ مهرشده رمزگذاری کرده بود سرانجام به مقصدش رسید.",
+      "explanation_tg": "Гозар дар бистари марг ҳуҷҷати муҳршударо ба дастони Дороб фишор дод бидуни тавзеҳи он чи дар дохилаш буд ва танҳо медонист ки аз об ҳамроҳи ӯ омадааст. Мунаҷҷими дарбор муҳрро шинохт. Нома кушода шуд. Доробро ҳамчун писар ва вориси Ҳамо, аз насли Каёнӣ, ном бурд.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "dar-h1",
+      "chapter_slug": "darab",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The Shahnameh says Darab was 'stronger than other children, faster to learn, difficult to tire' — and the household noticed without drawing conclusions. What does this presentation of latent excellence accomplish?",
+      "question_fa": "شاهنامه می‌گوید داراب 'از بچه‌های دیگر قوی‌تر، در یادگیری سریع‌تر، و به خستگی مقاوم‌تر' بود — و خانواده بدونِ نتیجه‌گیری متوجه شد. این عرضه‌ی برتریِ نهفته چه می‌کند؟",
+      "question_tg": "Шоҳнома мегӯяд Дороб 'аз кӯдакони дигар қавитар, дар омӯзиш суриатноктар ва ба хастагӣ тобовартар' буд — ва хонавода бидуни натиҷагирӣ мутаваҷҷеҳ шуд. Ин муаррифии бартарии ниҳуфта чӣ мекунад?",
+      "answers": [
+        "It establishes that identity in the Shahnameh is not merely legal but constitutive — Darab carries his Kayanian blood in his physical capacities before anyone reads the letter that names what he is",
+        "It provides the logical explanation for his military success — natural strength explains his rapid rise",
+        "It creates dramatic irony — the reader knows he is a prince while the household does not",
+        "It suggests that the Simorgh's blessing on Zal's line extended to Darab, giving him supernatural attributes"
+      ],
+      "answers_fa": [
+        "تثبیت می‌کند که هویت در شاهنامه صرفاً قانونی نیست بلکه سازنده است — داراب خونِ کیانی‌اش را در توانایی‌های جسمی‌اش حمل می‌کند قبل از اینکه کسی نامه‌ای را بخواند که می‌گوید او کیست",
+        "توضیحِ منطقی برای موفقیتِ نظامی‌اش فراهم می‌کند — قدرتِ طبیعی ترفیعِ سریعش را توضیح می‌دهد",
+        "طنزِ درامیک ایجاد می‌کند — خواننده می‌داند که او شاهزاده است درحالی‌که خانواده نمی‌داند",
+        "نشان می‌دهد که برکتِ سیمرغ بر نسلِ زال به داراب هم رسید و به او صفاتِ ماورایی داد"
+      ],
+      "answers_tg": [
+        "Устувор мекунад ки ҳувият дар Шоҳнома танҳо қонунӣ нест балки созандаст — Дороб хуни Каёнии худро дар тавонмандиҳои ҷисмониаш ҳамл мекунад пеш аз он ки касе номаеро бихонад ки мегӯяд ӯ кист",
+        "Тавзеҳи мантиқӣ барои муваффақияти низомии ӯ фароҳам мекунад — қудрати табиӣ тарфиъи суриатнокашро тавзеҳ медиҳад",
+        "Ирунии даромотик эҷод мекунад — хонанда медонад ки ӯ шоҳзода аст дар ҳоле ки хонавода намедонад",
+        "Нишон медиҳад ки баракати Симурғ бар насли Зол ба Дороб ҳам расид"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh presents Darab's unusual capacities not as supernatural gifts but as expressions of what he is. The blood of the Kayanian line manifests before the seal is read — in his strength, his speed, his resilience. This is the chronicle's consistent position on identity: it is not assigned at the moment of recognition but present from the beginning, waiting to be named.",
+      "explanation_fa": "شاهنامه توانایی‌های غیرعادیِ داراب را نه به عنوانِ هدایای ماورایی بلکه به عنوانِ بیانِ آنچه هست عرضه می‌کند. خونِ نسلِ کیانی قبل از خواندنِ مهر خود را نشان می‌دهد — در قدرتش، سرعتش، مقاومتش. این موضعِ ثابتِ شاهنامه درباره‌ی هویت است: در لحظه‌ی شناخته شدن تعیین نمی‌شود بلکه از ابتدا حاضر است و منتظرِ نام گذاشته شدن.",
+      "explanation_tg": "Шоҳнома тавонмандиҳои ғайримуқаррарии Доробро на ҳамчун ҳадяҳои моворои табиӣ балки ҳамчун ифодаи он чи ҳаст муаррифӣ мекунад. Хуни насли Каёнӣ пеш аз хонда шудани муҳр худро нишон медиҳад — дар қуввааш, суриаташ, тобоварияш. Ин мавзаъи устувори Шоҳнома дар бораи ҳувият аст: дар лаҳзаи шинохта шудан муайян намешавад балки аз аввал ҳозир аст ва мунтазири ном гузошта шудан.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
+      "id": "dar-e3",
+      "chapter_slug": "darab",
+      "quiz_part": 6,
+      "difficulty": "easy",
+      "question": "How did the meeting between Darab and the aging Queen Homay go?",
+      "question_fa": "ملاقاتِ بینِ داراب و ملکه‌ی پیرِ هما چگونه گذشت؟",
+      "question_tg": "Вохӯрии байни Дороб ва маликаи пири Ҳамо чӣ гуна гузашт?",
+      "answers": [
+        "Peacefully — she acknowledged him, he acknowledged her, and the kingdom passed without violence or ceremony",
+        "Contentiously — Homay refused to accept Darab until he could prove his worth through military service",
+        "Emotionally — a long reunion followed by elaborate ceremonies of recognition and restoration",
+        "Politically complex — Homay offered Darab co-rulership for a transition period before full succession"
+      ],
+      "answers_fa": [
+        "صلح‌آمیزانه — او را شناخت، او هم او را شناخت، و پادشاهی بدونِ خشونت یا مراسم گذشت",
+        "با مجادله — هما از پذیرفتنِ داراب امتناع کرد تا زمانی که بتواند ارزشش را از طریقِ خدمتِ نظامی ثابت کند",
+        "احساساتی — اتحادِ طولانی دنبال شده با مراسمِ پیچیده‌ی شناخت و احیا",
+        "از نظرِ سیاسی پیچیده — هما به داراب پیشنهادِ فرمانرواییِ مشترک برای دوره‌ی انتقالی قبل از جانشینیِ کامل داد"
+      ],
+      "answers_tg": [
+        "Осоишта — ӯро шинохт, ӯ ҳам ӯро шинохт ва подшоҳӣ бидуни хушунат ё маросим гузашт",
+        "Бо мунозира — Ҳамо аз пазируфтани Дороб даст кашид то вақте ки метавонист арзишашро тавассути хидмати низомӣ исбот кунад",
+        "Эҳсосотӣ — иттиҳоди тӯлонӣ ки аз маросимҳои мураккаби шиносоӣ ва барқарорӣ пайравӣ кард",
+        "Аз назари сиёсӣ мураккаб — Ҳамо ба Дороб пешниҳоди ҳукмронии муштарак барои давраи гузариш дод"
+      ],
+      "correct_answer": 0,
+      "explanation": "Homay was old, and the court that had administered so efficiently under her had grown comfortable with its own arrangements. The meeting between Darab and the aging queen was not violent. She acknowledged him. He acknowledged her. The kingdom passed. The Shahnameh gives this moment almost no ceremony — the exchange is complete and efficient, like the act Homay had begun decades earlier.",
+      "explanation_fa": "هما پیر بود و دربارِ کارآمدی که زیرِ دستش اداره شده بود با ترتیباتِ خودش راحت شده بود. ملاقاتِ بینِ داراب و ملکه‌ی پیر خشونتی نداشت. او را شناخت. او هم او را شناخت. پادشاهی گذشت. شاهنامه به این لحظه تقریباً هیچ مراسمی نمی‌دهد — تبادل کامل و کارآمد است، مثلِ عملی که هما دهه‌ها پیش شروع کرده بود.",
+      "explanation_tg": "Ҳамо пир буд ва дарборе ки бо кифоят зери дасташ идора шуда буд бо тартиботи худ ором гирифта буд. Вохӯрии байни Дороб ва маликаи пир хушунате надошт. Ӯро шинохт. Ӯ ҳам ӯро шинохт. Подшоҳӣ гузашт. Шоҳнома ба ин лаҳза тақрибан ҳеч маросиме намедиҳад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "dar-m3",
+      "chapter_slug": "darab",
+      "quiz_part": 7,
+      "difficulty": "medium",
+      "question": "What did Darab do after distinguishing himself militarily — before his identity was discovered?",
+      "question_fa": "داراب بعد از متمایز کردنِ خودش از نظرِ نظامی — قبل از اینکه هویتش کشف شود — چه کرد؟",
+      "question_tg": "Дороб пас аз мумтоз кардани худаш аз назари низомӣ — пеш аз он ки ҳувияташ кашф шавад — чӣ кард?",
+      "answers": [
+        "He rose to a command that attracted the court's attention — his commanders promoted him repeatedly until his unusual quality became visible to the court as a whole",
+        "He sought a private audience with Homay to present his sealed document before his identity was formally recognized",
+        "He won a battle single-handedly that ended the border campaign, making his name known across the kingdom",
+        "He left the army after one campaign and returned to the Tigris, trying to trace his origins through the river trade"
+      ],
+      "answers_fa": [
+        "به فرماندهی‌ای رسید که توجهِ دربار را جلب کرد — فرمانده‌هایش بارها ترفیعش دادند تا کیفیتِ غیرعادی‌اش برای کلِّ دربار مرئی شد",
+        "مخفیانه با هما ملاقات خواست تا قبل از اینکه هویتش به طورِ رسمی شناخته شود سندِ مهرشده‌اش را ارائه دهد",
+        "نبردی را با دستانِ خود تنها برنده شد که لشکرکشیِ مرزی را پایان داد و نامش را در سراسرِ پادشاهی شناخت",
+        "بعد از یک لشکرکشی ارتش را ترک کرد و به دجله برگشت تا منشأش را از طریقِ تجارتِ رودخانه ردیابی کند"
+      ],
+      "answers_tg": [
+        "Ба фармондеҳие расид ки диққати дарборро ҷалб кард — фармондаҳонаш борҳо тарфиъ доданд то сифати ғайримуқаррарияш барои тамоми дарбор намоён шуд",
+        "Пинҳона бо Ҳамо вохӯрӣ хост то пеш аз он ки ҳувияташ расман шинохта шавад ҳуҷҷати муҳршудааш ро пешкаш кунад",
+        "Набрдеро ба танҳоӣ бурд ки лашкаркашии марзиро поён дод ва номашро дар саросари подшоҳӣ шинохт",
+        "Пас аз як лашкаркашӣ артишро тарк кард ва ба Даҷла баргашт то манбаашро тавассути тиҷорати дарёӣ пайгирӣ кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Darab distinguished himself in each campaign and was promoted repeatedly. By the time the campaign ended, he had risen to a command no common soldier reaches in a single season. The court took notice. It was this visibility — not any self-declaration — that created the context in which his sealed document could be examined and his identity revealed.",
+      "explanation_fa": "داراب در هر لشکرکشی متمایز شد و بارها ترفیع گرفت. تا پایانِ لشکرکشی به فرماندهی‌ای رسیده بود که هیچ سربازِ معمولی در یک فصل به آن نمی‌رسد. دربار متوجه شد. این دیده شدن بود — نه هیچ اعلامِ خودبه‌خودی — که زمینه‌ای ایجاد کرد که در آن سندِ مهرشده‌اش می‌توانست بررسی شود و هویتش فاش شود.",
+      "explanation_tg": "Дороб дар ҳар лашкаркашӣ мумтоз шуд ва борҳо тарфиъ гирифт. То поёни лашкаркашӣ ба фармондеҳие расида буд ки ҳеч сарбози муқаррарӣ дар як фасл ба он намерасад. Дарбор мутаваҷҷеҳ шуд. Ин намоён шудан буд — на ҳеч эъломи худ — ки заминае эҷод кард ки дар он ҳуҷҷати муҳршудааш баррасӣ мешуд.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "dar-m4",
+      "chapter_slug": "darab",
+      "quiz_part": 8,
+      "difficulty": "medium",
+      "question": "The Shahnameh says something in Darab 'strained against the life the river had given him' before he enlisted. What does this internal tension represent?",
+      "question_fa": "شاهنامه می‌گوید چیزی در داراب 'در برابرِ زندگی‌ای که رودخانه به او داده بود فشار آورد' قبل از اینکه نام نوشت. این تنشِ درونی چه نشان می‌دهد؟",
+      "question_tg": "Шоҳнома мегӯяд чизе дар Дороб 'дар муқобили зиндагие ки дарё ба ӯ дода буд фишор овард' пеш аз он ки ном навишт. Ин кашмакаши ботинӣ чӣ нишон медиҳад?",
+      "answers": [
+        "The same thing Zal felt on Alborz mountain — a nature that exceeds its circumstances, pressing against the limits of the life assigned to it",
+        "Simple dissatisfaction — Darab found the washerman's trade boring and wanted more adventure",
+        "Awareness of his true identity — some part of him knew he was not the washerman's son",
+        "The Simorgh's influence — as a descendant of Zal, Darab was drawn toward greatness by supernatural means"
+      ],
+      "answers_fa": [
+        "همان چیزی که زال در کوهِ البرز احساس کرد — طبیعتی که از شرایطش فراتر می‌رود، در برابرِ محدودیت‌هایِ زندگیِ تعیین‌شده برایش فشار می‌آورد",
+        "نارضایتیِ ساده — داراب تجارتِ گازر را کسل‌کننده می‌یافت و مغامرات بیشتری می‌خواست",
+        "آگاهی از هویتِ واقعی‌اش — بخشی از او می‌دانست که پسرِ گازر نیست",
+        "تأثیرِ سیمرغ — به عنوانِ نسلِ زال، داراب از طریقِ وسایلِ ماورایی به سوی عظمت کشیده شد"
+      ],
+      "answers_tg": [
+        "Ҳамон чизе ки Зол дар кӯҳи Алборз эҳсос кард — табиате ки аз шароитааш фаротар мерод, дар муқобили маҳдудиятҳои зиндагии таъйиншудаи барояш фишор меовард",
+        "Норозоии содда — Дороб тиҷорати гозарро хастакунанда меёфт ва мушоҳидаҳои бештаре мехост",
+        "Огоҳӣ аз ҳувияти воқеии худ — бахше аз ӯ медонист ки писари гозар нест",
+        "Таъсири Симурғ — ҳамчун насли Зол, Дороб тавассути воситаҳои моворои табиӣ ба сӯи азамат кашида шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh describes Darab's internal strain without attributing it to foreknowledge of his identity. The chronicle treats it the same way it treats Zal's exceptional qualities on Alborz: as a nature in excess of its circumstances, not yet named or directed, pressing against the limits of the life it has been placed in. The army gives this nature a structure it recognizes.",
+      "explanation_fa": "شاهنامه تنشِ درونیِ داراب را بدونِ نسبت دادن به دانشِ پیشینِ هویتش توصیف می‌کند. شاهنامه این را به همان شکلِ توصیفِ کیفیات غیرعادیِ زال در البرز عرضه می‌کند: طبیعتی که از شرایطش فراتر می‌رود، هنوز نام‌داده‌نشده یا هدایت‌نشده، در برابرِ محدودیت‌های زندگی‌ای که در آن گذاشته شده فشار می‌آورد. ارتش به این طبیعت ساختاری می‌دهد که می‌شناسد.",
+      "explanation_tg": "Шоҳнома кашмакаши ботинии Доробро бидуни нисбат додан ба дониши пешини ҳувияташ тавсиф мекунад. Шоҳнома инро ба ҳамон шакли тавсифи сифатҳои ғайримуқаррарии Зол дар Алборз муаррифӣ мекунад: табиате ки аз шароитааш фаротар мерод, ҳанӯз номнагирифта ё роҳнамоинашуда, дар муқобили маҳдудиятҳои зиндагие ки дар он гузошта шуда фишор меовард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "dar-m5",
+      "chapter_slug": "darab",
+      "quiz_part": 9,
+      "difficulty": "medium",
+      "question": "Darab's story parallels Zal's in several ways. What is the most significant structural difference between how Zal's identity was restored and how Darab's was?",
+      "question_fa": "داستانِ داراب از جنبه‌های چندگانه با داستانِ زال موازی است. مهم‌ترین تفاوتِ ساختاری بینِ نحوه‌ی احیای هویتِ زال و نحوه‌ی هویتِ داراب چیست؟",
+      "question_tg": "Достони Дороб аз ҷиҳатҳои чандгона бо достони Зол мувозист. Муҳимтарин тафовути сохторӣ байни тарзи барқарорсозии ҳувияти Зол ва тарзи ҳувияти Дороб чист?",
+      "answers": [
+        "Zal was restored by Sam's public acknowledgment — an emotional, witnessed act of a father claiming a son. Darab was restored by a legal document — a sealed letter that operated independently of anyone's emotional state",
+        "Zal was restored through the Simorgh's intervention, while Darab was restored through purely human means",
+        "Zal's restoration was immediate — Sam found him and brought him home. Darab's took decades of work before recognition was possible",
+        "Zal was restored to a father; Darab was restored to a kingdom. The personal and the political are reversed"
+      ],
+      "answers_fa": [
+        "هویتِ زال توسطِ اعترافِ علنیِ سام بازگردانده شد — عملِ احساساتی و مشهودِ پدری که پسر را مطالبه می‌کند. هویتِ داراب توسطِ سندِ قانونی بازگردانده شد — نامه‌ی مهرشده‌ای که مستقل از وضعیتِ احساساتیِ هر کسی عمل می‌کرد",
+        "هویتِ زال از طریقِ مداخله‌ی سیمرغ بازگردانده شد درحالی‌که هویتِ داراب از طریقِ وسایلِ صرفاً انسانی",
+        "بازگشتِ زال فوری بود — سام او را پیدا کرد و به خانه برد. بازگشتِ داراب دهه‌ها کار قبل از اینکه شناخته شدن ممکن شود طول کشید",
+        "زال به پدری بازگردانده شد؛ داراب به پادشاهی. شخصی و سیاسی معکوس شدند"
+      ],
+      "answers_tg": [
+        "Ҳувияти Зол тавассути эъирофи оммавии Сом барқарор шуд — амали эҳсосотӣ ва мушоҳидашудаи падаре ки писарро талаб мекунад. Ҳувияти Дороб тавассути ҳуҷҷати қонунӣ барқарор шуд — номаи муҳршудае ки мустақил аз вазъияти эҳсосотии ҳар касе амал мекард",
+        "Ҳувияти Зол тавассути мудохилаи Симурғ барқарор шуд дар ҳоле ки ҳувияти Дороб тавассути воситаҳои сирф инсонӣ",
+        "Барқарории Зол фаврӣ буд — Сом ӯро ёфт ва ба хона бурд. Барқарории Дороб даҳ‌солаҳо кор пеш аз он ки шинохта шудан имконпазир шавад тӯл кашид",
+        "Зол ба падаре барқарор шуд; Дороб ба подшоҳие. Шахсӣ ва сиёсӣ вазгун шуданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sam claimed Zal through a public emotional acknowledgment — he came, he wept, he brought his son home. Darab's restoration is legal rather than emotional: a sealed document identified him independently of anyone's feelings about the situation. The contrast reflects the Shahnameh's movement from the mythological age, where bonds were personal and witnessed, to the proto-historical age, where identity is constituted by documents.",
+      "explanation_fa": "سام زال را از طریقِ اعترافِ احساساتیِ علنی مطالبه کرد — آمد، گریست، پسرش را به خانه برد. بازگشتِ داراب احساساتی نیست بلکه قانونی است: سندِ مهرشده او را مستقل از احساساتِ هر کسی درباره‌ی وضعیت شناسایی کرد. این تضاد حرکتِ شاهنامه را از عصرِ اساطیری، که در آن پیوندها شخصی و مشهود بودند، به عصرِ پیشاتاریخی، که هویت در آن توسطِ اسناد ساخته می‌شود، بازتاب می‌دهد.",
+      "explanation_tg": "Сом Золро тавассути эъирофи эҳсосотии оммавӣ талаб кард — омад, гирист, писарашро ба хона бурд. Барқарории Дороб эҳсосотӣ нест балки қонунист: ҳуҷҷати муҳршуда ӯро мустақил аз эҳсосоти ҳар касе дар бораи вазъият муайян кард. Ин тазод ҳаракати Шоҳномаро аз асри асотирӣ, ки дар он пайвандҳо шахсӣ ва мушоҳидашуда буданд, ба асри пешаз таърихӣ инъикос мекунад.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "dar-h2",
+      "chapter_slug": "darab",
+      "quiz_part": 10,
+      "difficulty": "hard",
+      "question": "Darab carries the sealed document for years without knowing what it contains. When it is finally opened, 'what the river brought back was exactly what had been put into it.' What does this phrase reveal about the Shahnameh's understanding of time?",
+      "question_fa": "داراب سال‌ها سندِ مهرشده را حمل می‌کند بدونِ اینکه بداند چه داخلش است. وقتی سرانجام باز می‌شود، 'آنچه رودخانه بازگرداند دقیقاً آنچه بود که در آن گذاشته شده بود'. این عبارت درباره‌ی درکِ شاهنامه از زمان چه آشکار می‌کند؟",
+      "question_tg": "Дороб солҳо ҳуҷҷати муҳршударо ҳамл мекунад бидуни ин ки бидонад дар дохилаш чист. Вақте дар ниҳоят кушода мешавад, 'он чи дарё бозгардонд дақиқан он чи буд ки дар он гузошта шуда буд'. Ин ибора дар бораи дарки Шоҳнома аз замон чӣ ошкор мекунад?",
+      "answers": [
+        "That the Shahnameh treats time as a preserver rather than a transformer — what is sealed and placed correctly is not lost by the passage of years but delivered by it",
+        "That the Shahnameh believes destiny is fixed — what Homay placed in the river was fated to return regardless of what Darab did",
+        "That the river in the Shahnameh always returns what it receives — it is a supernatural entity that reverses loss",
+        "That the phrase is ironic — the seal preserved the document but Darab was transformed by his years as a washerman's son"
+      ],
+      "answers_fa": [
+        "شاهنامه زمان را به عنوانِ نگهدارنده به جای متحول‌کننده عرضه می‌کند — آنچه به درستی مهر و گذاشته می‌شود با گذشتِ سال‌ها از دست نمی‌رود بلکه از طریقِ آن‌ها تحویل داده می‌شود",
+        "شاهنامه اعتقاد دارد تقدیر ثابت است — آنچه هما در رودخانه گذاشت مقدر بود صرفِ نظر از کارِ داراب برگردد",
+        "رودخانه در شاهنامه همیشه آنچه دریافت می‌کند برمی‌گرداند — موجودیتِ ماورایی‌ای است که فقدان را معکوس می‌کند",
+        "عبارت طنزآمیز است — مهر سند را حفظ کرد اما داراب توسطِ سال‌هایش به عنوانِ پسرِ گازر دگرگون شد"
+      ],
+      "answers_tg": [
+        "Шоҳнома вақтро ҳамчун нигаҳдоранда ба ҷои дигаргунсоз муаррифӣ мекунад — он чи ба дурустӣ муҳр ва гузошта мешавад бо гузашти солҳо аз даст намерод балки тавассути онҳо таҳвил дода мешавад",
+        "Шоҳнома эътиқод дорад тақдир собит аст — он чи Ҳамо дар дарё гузошт муқаддар буд беамалӣ аз кори Дороб бозгардад",
+        "Дарё дар Шоҳнома ҳамеша он чи мегирад бармегардонад — мавҷудияти моворои табиӣ аст ки нуқсонро вазгун мекунад",
+        "Ибора ирониявист — муҳр ҳуҷҷатро ҳифз кард аммо Дороб аз солҳояш ҳамчун писари гозар дигаргун шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's phrase treats time as something that delivers rather than erases. Homay sealed the child and the letter together. Decades passed. Darab lived, worked, enlisted, rose. And then the sealed document arrived at the court, was read, and the identity inside it was exactly what had been placed there. Time transported the act without altering what the act contained. This is different from restoration — it is completion.",
+      "explanation_fa": "عبارتِ شاهنامه زمان را به عنوانِ چیزی عرضه می‌کند که تحویل می‌دهد نه پاک می‌کند. هما کودک و نامه را با هم مهر کرد. دهه‌ها گذشت. داراب زندگی کرد، کار کرد، نام نوشت، بالا رفت. و سپس سندِ مهرشده به دربار رسید، خوانده شد، و هویتِ داخلش دقیقاً آنچه بود که آنجا گذاشته شده بود. زمان عمل را منتقل کرد بدونِ تغییرِ آنچه عمل داشت. این با احیا متفاوت است — تکمیل است.",
+      "explanation_tg": "Иборати Шоҳнома вақтро ҳамчун чизе муаррифӣ мекунад ки таҳвил медиҳад на пок мекунад. Ҳамо кӯдак ва номаро бо ҳам муҳр кард. Даҳ‌солаҳо гузашт. Дороб зиндагӣ кард, кор кард, ном навишт, боло рафт. Ва сипас ҳуҷҷати муҳршуда ба дарбор расид, хонда шуд ва ҳувияти дохилаш дақиқан он чи буд ки дар он ҷо гузошта шуда буд. Вақт амалро интиқол дод бидуни тағйири он чи амал дошт.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "dar-h3",
+      "chapter_slug": "darab",
+      "quiz_part": 11,
+      "difficulty": "hard",
+      "question": "Darab's story is the Shahnameh's last great hidden-prince narrative. After him, succession is public and contested — Dara will inherit openly and lose openly. What does Darab's chapter mark as the last moment when the hidden-prince pattern works?",
+      "question_fa": "داستانِ داراب آخرین روایتِ بزرگِ شاهزاده‌ی پنهانِ شاهنامه است. بعد از او، جانشینی علنی و مورد مناقشه است — دارا آشکارا ارث می‌برد و آشکارا می‌بازد. فصلِ داراب چه لحظه‌ای را به عنوانِ آخرین لحظه‌ای که الگوی شاهزاده‌ی پنهان کار می‌کند نشان می‌دهد؟",
+      "question_tg": "Достони Дороб охирин равояти бузурги шоҳзодаи пинҳони Шоҳнома аст. Пас аз ӯ, вориснишинӣ оммавӣ ва баҳснок аст — Дорo ошкоро мерос мегирад ва ошкоро мебозад. Фасли Дороб кадом лаҳзаро ҳамчун охирин лаҳзае ки намунаи шоҳзодаи пинҳон кор мекунад нишон медиҳад?",
+      "answers": [
+        "The moment when a legal document — rather than a parent's acknowledgment or a divine sanction — is sufficient to establish royal identity. After Darab, the chronicle enters a world where such documents are insufficient and claims must be won through battle.",
+        "The moment of the last successful river rescue — after Darab, rivers in the Shahnameh become dangerous rather than preserving",
+        "The last time the Kayanian line produces a son who must prove himself before being recognized as heir",
+        "The last time a court astrologer plays a decisive role in establishing a royal succession"
+      ],
+      "answers_fa": [
+        "لحظه‌ای که سندِ قانونی — به جای اعترافِ والدین یا تصویبِ الهی — برای تثبیتِ هویتِ سلطنتی کافی است. بعد از داراب، شاهنامه وارد دنیایی می‌شود که در آن چنین اسناد ناکافی هستند و ادعاها باید از طریقِ نبرد به دست آیند",
+        "لحظه‌ی آخرین نجاتِ موفقِ رودخانه‌ای — بعد از داراب، رودخانه‌ها در شاهنامه به جای حفظ کردن خطرناک می‌شوند",
+        "آخرین باری که نسلِ کیانی پسری می‌آفریند که باید قبل از شناخته شدن به عنوانِ وارث خودش را ثابت کند",
+        "آخرین باری که منجمِ دربار نقشِ تعیین‌کننده‌ای در تثبیتِ جانشینیِ سلطنتی بازی می‌کند"
+      ],
+      "answers_tg": [
+        "Лаҳзае ки ҳуҷҷати қонунӣ — ба ҷои эъирофи волидон ё тасвиби илоҳӣ — барои устувор кардани ҳувияти шоҳонӣ кофист. Пас аз Дороб, Шоҳнома ба ҷаҳоне ворид мешавад ки дар он чунин ҳуҷҷатҳо нокофӣ ҳастанд ва иддаоҳо бояд тавассути набрд ба даст оянд",
+        "Лаҳзаи охирин наҷоти муваффақи дарёӣ — пас аз Дороб, дарёҳо дар Шоҳнома ба ҷои ҳифозат кардан хавфнок мешаванд",
+        "Охирин баре ки насли Каёнӣ писаре меофарад ки бояд пеш аз шинохта шудан ҳамчун ворис худашро исбот кунад",
+        "Охирин баре ки мунаҷҷими дарбор нақши тасмимкунандае дар устувор кардани вориснишинии шоҳонӣ мебозад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Darab's hidden-prince story works because the document is sufficient: a sealed letter with a royal seal establishes identity, and the court accepts it. In the chapters that follow, identity is contested militarily — Dara inherits openly and loses to Sekandar. The document-based model of succession belongs to the mythological world; the battle-based model belongs to the historical world Darab's chapter is the last chapter of the first kind.",
+      "explanation_fa": "داستانِ شاهزاده‌ی پنهانِ داراب کار می‌کند چون سند کافی است: نامه‌ی مهرشده‌ای با مهرِ سلطنتی هویت را تثبیت می‌کند و دربار آن را می‌پذیرد. در فصل‌هایی که پیش می‌آیند، هویت از نظرِ نظامی مورد مناقشه است — دارا آشکارا ارث می‌برد و به اسکندر می‌بازد. مدلِ سندمحورِ جانشینی به دنیای اساطیری تعلق دارد؛ مدلِ نبردمحور به دنیای تاریخی که از آن جدا می‌شود.",
+      "explanation_tg": "Достони шоҳзодаи пинҳони Дороб кор мекунад зеро ҳуҷҷат кофист: номаи муҳршуда бо муҳри шоҳонӣ ҳувиятро устувор мекунад ва дарбор онро мепазирад. Дар фасл‌ҳое ки пеш меоянд, ҳувият аз назари низомӣ баҳснок аст. Модели ҳуҷҷатмаҳвари вориснишинӣ ба ҷаҳони асотирӣ тааллуқ дорад; модели набрдмаҳвар ба ҷаҳони таърихӣ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "dar-h4",
+      "chapter_slug": "darab",
+      "quiz_part": 12,
+      "difficulty": "hard",
+      "question": "Darab grew up learning 'the weight of wet cloth, the rhythms of a craftsman's schedule, the particular patience of work that has to be redone after every rain.' How does this apprenticeship in physical labor shape the kind of king he becomes?",
+      "question_fa": "داراب بزرگ شد در حالِ یادگرفتنِ 'وزنِ پارچه‌ی خیس، ریتم‌های برنامه‌ی یک صنعتگر، صبرِ خاصِ کاری که باید بعد از هر باران دوباره انجام شود'. این کارآموزی در کارِ فیزیکی چه نوع شاهی را می‌سازد؟",
+      "question_tg": "Дороб бузург шуд дар ҳоли омӯхтани 'вазни матои тар, ритмҳои барномаи ҳунарманд, сабри хоси корест ки бояд пас аз ҳар борон аз нав анҷом шавад'. Ин шогирдӣ дар кори ҷисмонӣ чӣ навъ подшоҳро мешозад?",
+      "answers": [
+        "One who understands that governance is repetitive, requires patience, and cannot be permanently completed — like washing, it must be done again after the next disruption. Darab does not expect permanence from his own rule.",
+        "One who is physically strong but politically naive — Darab's washerman childhood gave him discipline but no political sophistication",
+        "One who distrusts the court because he was not raised in it — Darab always felt like an outsider even after claiming the throne",
+        "One who governs harshly, having learned that only constant effort prevents decay — the washerman's lesson applied to statecraft"
+      ],
+      "answers_fa": [
+        "شاهی که می‌فهمد حکومت تکراری است، نیازِ صبر دارد، و نمی‌توان آن را به طورِ دائم تکمیل کرد — مثلِ شستشو، باید بعد از اخلالِ بعدی دوباره انجام شود. داراب از سلطنتِ خودش انتظارِ دوام ندارد",
+        "شاهی که از نظرِ جسمی قوی اما از نظرِ سیاسی ساده‌لوح است — کودکیِ گازرِ داراب به او انضباط داد اما هیچ پیچیدگیِ سیاسی",
+        "شاهی که به دربار بی‌اعتماد است چون در آن بزرگ نشده — داراب همیشه حتی بعد از مطالبه‌ی تخت مثلِ غریبه احساس می‌کرد",
+        "شاهی که سختگیرانه حکومت می‌کند، چون یاد گرفته که فقط تلاشِ مداوم از فساد پیشگیری می‌کند"
+      ],
+      "answers_tg": [
+        "Подшоҳе ки мефаҳмад ҳукмронӣ такрорист, ниёзи сабр дорад ва наметавон онро ба таври доимӣ иҷро кард — монанди шустушӯ, бояд пас аз барҳамзании баъдӣ аз нав анҷом шавад. Дороб аз ҳукмронии худаш интизори давомот надорад",
+        "Подшоҳе ки аз назари ҷисмонӣ қавӣ аммо аз назари сиёсӣ содаловх аст",
+        "Подшоҳе ки ба дарбор бебовар аст зеро дар он калон нашудааст",
+        "Подшоҳе ки сахтгирона ҳукм меронад, зеро ёд гирифта ки танҳо кӯшиши мудовим аз фасод пешгирӣ мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The washerman's trade teaches patience with impermanence — you wash the cloth, the rain comes, and you wash it again. Darab learns this before he learns anything about kingship. The Shahnameh does not suggest this made him a worse king; it suggests he understood something about governance that princes raised in courts do not always learn: the work is never finished, and competence means doing it again, not completing it.",
+      "explanation_fa": "تجارتِ گازر صبر با ناپایداری را می‌آموزد — پارچه را می‌شویی، باران می‌آید، و دوباره می‌شویی. داراب این را قبل از اینکه هیچ چیزی درباره‌ی شاهی یاد بگیرد می‌آموزد. شاهنامه نشان نمی‌دهد که این او را شاهِ بدتری کرد؛ نشان می‌دهد که چیزی درباره‌ی حکومت فهمید که شاهزادگانِ بزرگ‌شده در دربارها همیشه یاد نمی‌گیرند: کار هرگز تمام نمی‌شود و کفایت یعنی دوباره انجام دادن، نه تکمیل کردن.",
+      "explanation_tg": "Тиҷорати гозар сабр бо ногузаштагиро меомӯзад — матоъро мешӯӣ, борон меояд ва аз нав мешӯӣ. Дороб инро пеш аз ин ки ҳеч чизе дар бораи подшоҳӣ ёд гирад меомӯзад. Шоҳнома нишон намедиҳад ки ин ӯро подшоҳи бадтаре кард; нишон медиҳад ки чизе дар бораи ҳукмронӣ фаҳмид ки шоҳзодагони калонсолшуда дар дарборҳо ҳамеша ёд намегиранд.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "dar-h5",
+      "chapter_slug": "darab",
+      "quiz_part": 13,
+      "difficulty": "hard",
+      "question": "Ferdowsi was writing near the end of his life, having grown up as a landowner's son and discovered he was a poet — carrying a sealed identity until the poem confirmed it. How does Ferdowsi's chronicle of Darab reflect his own situation?",
+      "question_fa": "فردوسی نزدیکِ پایانِ عمرش می‌نوشت، به عنوانِ پسرِ ملاک بزرگ شده بود و فهمیده بود که شاعر است — هویتِ مهرشده‌ای حمل می‌کرد تا وقتی شعر آن را تأیید کرد. چگونه شاهنامه‌ی فردوسی از داراب وضعیتِ خودش را بازتاب می‌دهد؟",
+      "question_tg": "Фирдавсӣ дар наздикии поёни умраш менавишт, ҳамчун писари заминдор калон шуда буд ва фаҳмида буд ки шоир аст — ҳувияти муҳршударо ҳамл мекард то вақте ки шеър онро тасдиқ кард. Чӣ гуна Шоҳномаи Фирдавсӣ аз Дороб вазъияти худашро инъикос мекунад?",
+      "answers": [
+        "Both needed someone else to read the letter — to confirm what the person carrying it already knew without yet having words for it. Ferdowsi's poem was the letter; Mahmud's recognition (however inadequate) was the court astrologer reading the seal.",
+        "Both were foundlings who discovered royal lineage — Ferdowsi through the Shahnameh's content, Darab through the physical document",
+        "Both rose through military service before being recognized for their true nature",
+        "The parallel does not hold — Ferdowsi was recognized in his lifetime by multiple patrons; Darab was recognized only once"
+      ],
+      "answers_fa": [
+        "هر دو نیاز داشتند کسی دیگر نامه را بخواند — تأیید کند آنچه شخصی که حملش می‌کند قبلاً می‌دانست بدونِ اینکه هنوز کلمات برایش داشته باشد. شعرِ فردوسی نامه بود؛ شناختِ محمود (هر چقدر ناکافی) منجمِ دربار بود که مهر را می‌خواند",
+        "هر دو کودکانِ یافته‌ای بودند که نسبِ سلطنتی کشف کردند — فردوسی از طریقِ محتوای شاهنامه، داراب از طریقِ سندِ فیزیکی",
+        "هر دو از طریقِ خدمتِ نظامی قبل از شناخته شدن برای طبیعتِ واقعی‌شان بالا رفتند",
+        "موازات برقرار نمی‌شود — فردوسی در طولِ زندگی‌اش توسطِ چندین حامی شناخته شد؛ داراب فقط یک بار"
+      ],
+      "answers_tg": [
+        "Ҳар ду ниёз доштанд касе дигар номаро бихонад — тасдиқ кунад он чиро ки шахси ҳамлкунандааш қаблан медонист бидуни ин ки ҳанӯз калима барояш дошта бошад. Шеъри Фирдавсӣ нома буд; шиносоии Маҳмуд (ҳар қадар нокифо) мунаҷҷими дарбор буд ки муҳрро мехонад",
+        "Ҳар ду кӯдакони ёфтае буданд ки насаби шоҳонӣ кашф карданд",
+        "Ҳар ду тавассути хидмати низомӣ пеш аз шинохта шудан барои табиати воқеии худашон боло рафтанд",
+        "Монандӣ устувор намешавад — Фирдавсӣ дар тӯли зиндагиаш аз ҷониби чанд ҳоми шинохта шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ferdowsi explicitly drew a parallel between himself and Darab in the Shahnameh's biographical framing: both were men who carried a sealed identity — a landowner's son who became a poet, a washerman's son who became a king — and both needed the external act of reading to confirm what they already were. The chronicle's understanding of identity as pre-existing but requiring confirmation is also the poet's understanding of his own vocation.",
+      "explanation_fa": "فردوسی صریحاً موازاتی بینِ خودش و داراب در قاب‌بندیِ زندگینامه‌ایِ شاهنامه کشید: هر دو مردانی بودند که هویتِ مهرشده‌ای حمل می‌کردند — پسرِ ملاکی که شاعر شد، پسرِ گازری که شاه شد — و هر دو نیاز داشتند به عملِ بیرونیِ خواندن تا آنچه از قبل بودند را تأیید کنند. درکِ شاهنامه از هویت به عنوانِ از پیش موجود اما نیازمندِ تأیید همچنین درکِ شاعر از دعوتِ خودش است.",
+      "explanation_tg": "Фирдавсӣ صарехан монандие байни худ ва Дороб дар қаббандии зиндагинамаии Шоҳнома кашид: ҳар ду мардоне буданд ки ҳувияти муҳршударо ҳамл мекарданд — писари заминдоре ки шоир шуд, писари гозаре ки подшоҳ шуд — ва ҳар ду ниёз доштанд ба амали берунии хондан то он чиро ки аз қабл буданд тасдиқ кунанд.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "dar-h6",
+      "chapter_slug": "darab",
+      "quiz_part": 14,
+      "difficulty": "hard",
+      "question": "The Shahnameh says that 'what the river brought back was exactly what had been put into it: the bloodline continued, the dynasty held, and Darab's foundling childhood became the origin story of the next four generations of Persian kings.' What does this suggest about the Shahnameh's view of hidden origins?",
+      "question_fa": "شاهنامه می‌گوید که 'آنچه رودخانه بازگرداند دقیقاً آنچه بود که در آن گذاشته شده بود: نسب ادامه یافت، سلسله پایدار ماند، و کودکیِ یافته‌شده‌ی داراب به داستانِ خاستگاهِ چهار نسلِ بعدیِ شاهانِ ایران تبدیل شد'. این درباره‌ی دیدگاهِ شاهنامه از منشأهای پنهان چه پیشنهادی می‌دهد؟",
+      "question_tg": "Шоҳнома мегӯяд ки 'он чи дарё бозгардонд дақиқан он чи буд ки дар он гузошта шуда буд: насаб идома ёфт, сулола поёидор монд ва кӯдакии ёфтаи Дороб ба достони манбаи чаҳор насли баъдии подшоҳони Эрон табдил шуд'. Ин дар бораи дидгоҳи Шоҳнома аз манбаъҳои пинҳон чӣ пешниҳодӣ медиҳад?",
+      "answers": [
+        "That hidden origins do not diminish legitimacy — Darab's washerman childhood becomes not a shameful secret but the foundation of the dynasty's next chapter. The Shahnameh treats obscure origins as sources of narrative richness, not political vulnerability.",
+        "That hidden origins are always problematic — Darab's reign is legitimate, but the chronicles show it was never fully accepted",
+        "That hidden origins guarantee extraordinary rulers — the Shahnameh consistently associates unusual childhoods with exceptional kingship",
+        "That the chronicle endorses the idea that anyone can become a king regardless of birth — Darab's story is a meritocratic narrative"
+      ],
+      "answers_fa": [
+        "منشأهای پنهان مشروعیت را کاهش نمی‌دهند — کودکیِ گازرِ داراب نه رازِ شرم‌آوری بلکه بنیانِ فصلِ بعدیِ سلسله می‌شود. شاهنامه منشأهای تیره را به عنوانِ منابعِ غنایِ روایی عرضه می‌کند، نه آسیب‌پذیریِ سیاسی",
+        "منشأهای پنهان همیشه مشکل‌ساز هستند — سلطنتِ داراب مشروع است اما شاهنامه‌ها نشان می‌دهند که هرگز به طورِ کامل پذیرفته نشد",
+        "منشأهای پنهان فرمانروایانِ استثنایی را تضمین می‌کنند — شاهنامه به طورِ مداوم کودکی‌های غیرمعمول را با شاهیِ استثنایی مرتبط می‌کند",
+        "شاهنامه ایده‌ی اینکه هر کسی صرفِ نظر از تولد می‌تواند شاه شود را تأیید می‌کند — داستانِ داراب روایتی شایسته‌سالارانه است"
+      ],
+      "answers_tg": [
+        "Манбаъҳои пинҳон машруъиятро кам намекунанд — кӯдакии гозари Дороб на рози шармовар балки бунёди фасли баъдии сулола мешавад. Шоҳнома манбаъҳои торикро ҳамчун манобеи сарватмандии равоятӣ муаррифӣ мекунад, на осебпазирии сиёсӣ",
+        "Манбаъҳои пинҳон ҳамеша мушкилсоз ҳастанд — ҳукмронии Дороб машруъ аст аммо Шоҳнома нишон медиҳад ки ҳеч гоҳ пурра пазируфта нашуд",
+        "Манбаъҳои пинҳон ҳокимони истисноиро кафолат медиҳанд",
+        "Шоҳнома идеяи ин ки ҳар касе сарфи назар аз таваллуд метавонад подшоҳ шавад тасдиқ мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh does not present Darab's foundling childhood as something to be overcome or concealed. It becomes the origin story — the official beginning of the dynasty's next phase. Zal's mountain childhood was similarly incorporated into the Rostamid narrative as a mark of distinction, not shame. The chronicle treats obscure origins as structurally interesting rather than politically threatening, provided the blood is right.",
+      "explanation_fa": "شاهنامه کودکیِ یافته‌شده‌ی داراب را به عنوانِ چیزی که باید بر آن غلبه یا پنهان شود عرضه نمی‌کند. تبدیل به داستانِ خاستگاه می‌شود — آغازِ رسمیِ مرحله‌ی بعدیِ سلسله. کودکیِ کوهستانیِ زال هم به همین ترتیب به عنوانِ نشانه‌ی تمایز، نه شرم، در روایتِ رستمی ادغام شد. شاهنامه منشأهای تیره را از نظرِ ساختاری جالب عرضه می‌کند نه از نظرِ سیاسی تهدیدآمیز، به شرطی که خون درست باشد.",
+      "explanation_tg": "Шоҳнома кӯдакии ёфтаи Доробро ҳамчун чизе ки бояд бар он ғолиб омад ё пинҳон шуд муаррифӣ намекунад. Ба достони манбаъ табдил мешавад — оғози расмии марҳилаи баъдии сулола. Кӯдакии кӯҳистонии Зол ҳам ба ҳамин тартиб ҳамчун нишони тамоёз, на шарм, дар равояти Рустамӣ ҷаз шуд.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "dar-h7",
+      "chapter_slug": "darab",
+      "quiz_part": 15,
+      "difficulty": "hard",
+      "question": "Darab's chapter closes with the observation that 'what the river brought back was exactly what had been put into it.' But Darab was also changed by his years as a washerman's son. What tension does the Shahnameh hold open between preservation and transformation?",
+      "question_fa": "فصلِ داراب با این مشاهده بسته می‌شود که 'آنچه رودخانه بازگرداند دقیقاً آنچه بود که در آن گذاشته شده بود'. اما داراب توسطِ سال‌هایش به عنوانِ پسرِ گازر هم تغییر کرده بود. شاهنامه چه تنشی را بینِ حفظ و تحول باز نگه می‌دارد؟",
+      "question_tg": "Фасли Дороб бо ин мушоҳида баста мешавад ки 'он чи дарё бозгардонд дақиқан он чи буд ки дар он гузошта шуда буд'. Аммо Дороб аз солҳояш ҳамчун писари гозар ҳам тағйир карда буд. Шоҳнома чӣ кашмакашро байни ҳифозат ва табдил боз нигоҳ медорад?",
+      "answers": [
+        "The seal inside the chest was preserved exactly — identity as blood and document was unchanged. But Darab himself was formed by the Tigris, by wet cloth, by the army — a king who understood physical labor in ways no palace-raised prince could. Both things are true simultaneously.",
+        "The Shahnameh resolves this tension in favor of preservation — Darab's washerman childhood is irrelevant once the seal is read",
+        "The tension is resolved in favor of transformation — Darab is a better king because of his foundling years, and the Shahnameh endorses this",
+        "The Shahnameh does not acknowledge the tension — it presents Darab's transition from washerman's son to king as seamless"
+      ],
+      "answers_fa": [
+        "مهرِ داخلِ صندوق دقیقاً حفظ شده بود — هویت به عنوانِ خون و سند تغییر نکرده بود. اما خودِ داراب توسطِ دجله، پارچه‌ی خیس، و ارتش شکل گرفته بود — شاهی که کارِ فیزیکی را به شیوه‌هایی می‌فهمید که هیچ شاهزاده‌ی کاخ‌پرورشی نمی‌توانست. هر دو چیز هم‌زمان درست هستند",
+        "شاهنامه این تنش را به نفعِ حفظ حل می‌کند — کودکیِ گازرِ داراب وقتی مهر خوانده می‌شود بی‌ربط است",
+        "تنش به نفعِ تحول حل می‌شود — داراب به خاطرِ سال‌های یافته‌شده‌اش شاهِ بهتری است و شاهنامه این را تأیید می‌کند",
+        "شاهنامه تنش را تأیید نمی‌کند — انتقالِ داراب از پسرِ گازر به شاه را روان عرضه می‌کند"
+      ],
+      "answers_tg": [
+        "Муҳри дохили сандуқ дақиқан ҳифз шуда буд — ҳувият ҳамчун хун ва ҳуҷҷат тағйир накарда буд. Аммо худи Дороб аз Даҷла, матои тар ва артиш шакл гирифта буд — подшоҳе ки кори ҷисмониро бо роҳҳое мефаҳмид ки ҳеч шоҳзодаи кохпарвариде наметавонист. Ҳар ду чиз ҳам‌замон дурустанд",
+        "Шоҳнома ин кашмакашро ба нафъи ҳифозат ҳал мекунад — кӯдакии гозари Дороб вақте муҳр хонда мешавад беарбат аст",
+        "Кашмакаш ба нафъи табдил ҳал мешавад — Дороб ба хотири солҳои ёфтаи худаш подшоҳи беҳтар аст",
+        "Шоҳнома кашмакашро эътироф намекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh holds both: the blood and seal are unchanged, but the man who carries them was shaped by the Tigris. When Darab becomes king, he is a Kayanian heir with a washerman's understanding of repetitive work, physical reality, and patience with impermanence. The chronicle does not suggest this combination is accidental or unfortunate. It suggests this is what the river delivered: the sealed identity plus the life that formed around it.",
+      "explanation_fa": "شاهنامه هر دو را نگه می‌دارد: خون و مهر تغییر نکرده‌اند، اما مردِ حاملِ آن‌ها توسطِ دجله شکل گرفته. وقتی داراب شاه می‌شود، وارثِ کیانی‌ای است با درکِ گازر از کارِ تکراری، واقعیتِ جسمانی، و صبر با ناپایداری. شاهنامه نشان نمی‌دهد که این ترکیب تصادفی یا دردناک است. نشان می‌دهد این آن چیزی است که رودخانه تحویل داد: هویتِ مهرشده به اضافه‌ی زندگی‌ای که دورِ آن شکل گرفت.",
+      "explanation_tg": "Шоҳнома ҳар дуро нигоҳ медорад: хун ва муҳр тағйир накардаанд, аммо марди ҳамлкунандаи онҳо аз Даҷла шакл гирифтааст. Вақте Дороб подшоҳ мешавад, вориси Каёнӣ аст бо дарки гозар аз кори такрорӣ, воқеияти ҷисмонӣ ва сабр бо ногузаштагӣ. Шоҳнома нишон намедиҳад ки ин омезиш тасодуфӣ ё дардноканд. Нишон медиҳад ин он чизест ки дарё таҳвил дод.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "dar-h8",
+      "chapter_slug": "darab",
+      "quiz_part": 16,
+      "difficulty": "hard",
+      "question": "Darab's chapter closes the Shahnameh's mythological age and opens its proto-historical one. What specifically changes about the kind of threats kings face after Darab, compared to the threats Rostam faced?",
+      "question_fa": "فصلِ داراب عصرِ اساطیریِ شاهنامه را می‌بندد و عصرِ پیشاتاریخی‌اش را باز می‌کند. بعد از داراب، چه چیزِ خاصی درباره‌ی نوعِ تهدیداتی که شاهان با آن روبرو می‌شوند تغییر می‌کند در مقایسه با تهدیداتی که رستم با آن‌ها روبرو شد؟",
+      "question_tg": "Фасли Дороб асри асотирии Шоҳномаро мебандад ва асри пешаз таърихии онро мекушояд. Пас аз Дороб, чӣ чизи мушаххасе дар бораи навъи таҳдидҳое ки подшоҳон бо он рӯ ба рӯ мешаванд тағйир мекунад дар муқоиса бо таҳдидҳое ки Рустам бо онҳо рӯ ба рӯ шуд?",
+      "answers": [
+        "Rostam faced mythological threats — demons, supernatural labours, champions defined by divine gifts. After Darab, the threats are geopolitical — armies using new methods, empires with different organizational logics, military systems that evolve faster than the culture defending against them",
+        "Rostam faced external threats while Darab's successors face internal ones — after Darab, the kingdom's greatest dangers come from within the court",
+        "The threats become smaller after Darab — without a Rostam-scale champion, kings must fight more cautious, limited wars",
+        "The nature of threats does not change — the Shahnameh shows that Iranian kings always faced the same mixture of external and internal dangers"
+      ],
+      "answers_fa": [
+        "رستم با تهدیداتِ اساطیری روبرو شد — دیوان، هفت‌خانِ ماورایی، قهرمانانی که توسطِ هدایای الهی تعریف شده‌اند. بعد از داراب، تهدیدات ژئوپلیتیکی هستند — ارتش‌هایی با روش‌های جدید، امپراتوری‌هایی با منطق‌های سازمانیِ متفاوت، سیستم‌های نظامی که سریع‌تر از فرهنگِ دفاعی در برابرشان تکامل می‌یابند",
+        "رستم با تهدیداتِ بیرونی روبرو شد درحالی‌که جانشینانِ داراب با تهدیداتِ داخلی روبرو می‌شوند — بعد از داراب، بزرگ‌ترین خطرات از داخلِ دربار می‌آیند",
+        "تهدیدات بعد از داراب کوچک‌تر می‌شوند — بدونِ قهرمانی در مقیاسِ رستم، شاهان باید جنگ‌های محتاطانه‌تر و محدودتری بجنگند",
+        "طبیعتِ تهدیدات تغییر نمی‌کند — شاهنامه نشان می‌دهد که شاهانِ ایرانی همیشه با همان ترکیبِ خطراتِ بیرونی و داخلی روبرو بوده‌اند"
+      ],
+      "answers_tg": [
+        "Рустам бо таҳдидҳои асотирӣ рӯ ба рӯ шуд — девон, ҳафтхони моворои табиӣ, қаҳрамононе ки аз ҷониби ҳадяҳои илоҳӣ таъриф шудаанд. Пас аз Дороб, таҳдидҳо ҷеополитикианд — артишҳо бо равишҳои нав, империяҳо бо мантиқҳои ташкилотии гуногун, системаҳои низомие ки суриатноктар аз фарҳанги мудофиавии дар муқобилашон такомул меёбанд",
+        "Рустам бо таҳдидҳои берунӣ рӯ ба рӯ шуд дар ҳоле ки вориснишинони Дороб бо таҳдидҳои дохилӣ рӯ ба рӯ мешаванд",
+        "Таҳдидҳо пас аз Дороб хурдтар мешаванд — бидуни паҳлавоне дар миёсоси Рустам, подшоҳон бояд ҷангҳои эҳтиёткоронатар ва маҳдудтаре бибаранд",
+        "Табиати таҳдидҳо тағйир намекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's heroic age was populated by threats that required exceptional individual response — the seven labours required Rostam specifically, Sohrab required Rostam specifically, Esfandiyar required Rostam specifically. After Darab, the threat is Sekandar: not a supernatural champion but a commander who had developed a better military system. This is a fundamentally different kind of danger, one that cannot be addressed by finding another Rostam.",
+      "explanation_fa": "عصرِ قهرمانیِ شاهنامه از تهدیداتی پر بود که نیازِ پاسخِ فردیِ استثنایی داشتند — هفت‌خان نیازِ رستمِ خاص داشت، سهراب نیازِ رستمِ خاص، اسفندیار نیازِ رستمِ خاص. بعد از داراب، تهدید اسکندر است: نه قهرمانِ ماورایی بلکه فرمانده‌ای که سیستمِ نظامیِ بهتری توسعه داده. این نوعِ اساساً متفاوتی از خطر است که با پیدا کردنِ رستمِ دیگری نمی‌توان به آن پرداخت.",
+      "explanation_tg": "Асри қаҳрамонии Шоҳнома аз таҳдидҳое пур буд ки ниёзи посухи фардии истисноӣ доштанд — ҳафтхон ниёзи Рустами хос дошт, Суҳроб ниёзи Рустами хос, Исфандиёр ниёзи Рустами хос. Пас аз Дороб, таҳдид Искандар аст: на паҳлавони моворои табиӣ балки фармондаҳе ки системаи низомии беҳтаре таҳия карда. Ин навъи асосан гуногуни хавф аст ки бо пайдо кардани Рустами дигар ба он пардохта шуда наметавонад.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

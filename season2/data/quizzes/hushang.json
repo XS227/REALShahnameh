@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "hushang-1",
+      "chapter_slug": "hushang",
+      "quiz_part": 1,
+      "question": "What festival does Hushang's fire create?",
+      "answers": [
+        "Sade",
+        "Nowruz",
+        "Mehregan",
+        "Yalda"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sade marks the night fire was first kindled.",
+      "reward": {
+        "xp": 70,
+        "real": 25
+      },
+      "difficulty": "easy",
+      "question_fa": "آتش هوشنگ چه جشنی را به وجود آورد؟",
+      "question_tg": "Оташи Ҳушанг чӣ ид-ро ба вуҷуд овард?",
+      "answers_fa": [
+        "سده",
+        "نوروز",
+        "مهرگان",
+        "یلدا"
+      ],
+      "answers_tg": [
+        "Сада",
+        "Наврӯз",
+        "Меҳргон",
+        "Ялдо"
+      ],
+      "explanation_fa": "سده شبی را که برای اولین بار آتش افروخته شد گرامی می‌دارد.",
+      "explanation_tg": "Сада шабе ро ки бори аввал оташ афрӯхта шуд гиромӣ медорад."
+    },
+    {
+      "id": "hushang-2",
+      "chapter_slug": "hushang",
+      "quiz_part": 2,
+      "question": "What craft does Hushang first teach humankind?",
+      "answers": [
+        "Sailing",
+        "Iron-forging",
+        "Falconry",
+        "Coin-making"
+      ],
+      "correct_answer": 1,
+      "explanation": "Iron working and irrigation are credited to his age.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      },
+      "difficulty": "easy",
+      "question_fa": "هوشنگ اول کدام صنعت را به بشریت آموخت؟",
+      "question_tg": "Ҳушанг аввалин бор кадом ҳунарро ба башарият омӯхт?",
+      "answers_fa": [
+        "دریانوردی",
+        "آهنگری",
+        "شاهین‌بازی",
+        "سکه‌سازی"
+      ],
+      "answers_tg": [
+        "Баҳрнавардӣ",
+        "Оҳангарӣ",
+        "Шоҳинбозӣ",
+        "Тангасозӣ"
+      ],
+      "explanation_fa": "صنعت آهن و آبیاری به دوران او نسبت داده می‌شود.",
+      "explanation_tg": "Оҳангарӣ ва обёрӣ ба давраи ӯ нисбат дода мешаванд."
+    },
+    {
+      "id": "hushang-3",
+      "chapter_slug": "hushang",
+      "quiz_part": 1,
+      "question": "Hushang strikes flint at what creature?",
+      "answers": [
+        "Lion",
+        "White stag",
+        "Black serpent",
+        "Stone div"
+      ],
+      "correct_answer": 2,
+      "explanation": "The serpent dodges; the spark catches a tree.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      },
+      "difficulty": "medium",
+      "question_fa": "هوشنگ چخماق را به کدام موجود زد؟",
+      "question_tg": "Ҳушанг чақмоқро ба кадом ҷонвар зад?",
+      "answers_fa": [
+        "شیر",
+        "گوزن سفید",
+        "مار سیاه",
+        "دیو سنگ"
+      ],
+      "answers_tg": [
+        "Шер",
+        "Гавазни сафед",
+        "Морсиёҳ",
+        "Деви санг"
+      ],
+      "explanation_fa": "مار می‌گریزد؛ جرقه به درختی می‌افتد.",
+      "explanation_tg": "Мор мегурезад; ҷарақа ба дарахте меафтад."
+    },
+    {
+      "id": "hushang-e3",
+      "chapter_slug": "hushang",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Whose death does Hushang avenge at the start of his reign?",
+      "question_fa": "هوشنگ در آغازِ شاهی‌اش کینِ مرگِ چه کسی را می‌ستاند؟",
+      "question_tg": "Ҳушанг дар оғози подшоҳиаш интиқоми марги кӣро мегирад?",
+      "answers": [
+        "Keyumars",
+        "His elder brother",
+        "A slain general of Pars",
+        "Siamak his father"
+      ],
+      "answers_fa": [
+        "کیومرث",
+        "برادرِ بزرگش",
+        "یک سردارِ کشته‌شده‌ی پارس",
+        "سیامکِ پدرش"
+      ],
+      "answers_tg": [
+        "Каюмарс",
+        "Бародари калониаш",
+        "Як сарлашкари куштаи Порс",
+        "Сиёмаки падараш"
+      ],
+      "correct_answer": 3,
+      "explanation": "Siamak — Hushang's father — was killed by the Black Div in chapter 1. Hushang's first act as king is to avenge him with the army of light.",
+      "explanation_fa": "سیامک — پدرِ هوشنگ — در دفترِ اول به‌دستِ دیوِ سیاه کشته شد. نخستین کارِ هوشنگ به‌عنوانِ شاه، انتقام‌گرفتن از او با سپاهِ روشنایی است.",
+      "explanation_tg": "Сиёмак — падари Ҳушанг — дар бобои аввал ба дасти Деви сиёҳ кушта шуд. Аввалин кори Ҳушанг ҳамчун подшоҳ қасос гирифтан аз ӯ бо лашкари равшанӣ аст.",
+      "reward": {
+        "xp": 75,
+        "real": 28
+      }
+    },
+    {
+      "id": "hushang-m2",
+      "chapter_slug": "hushang",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What is Hushang's relationship to Keyumars?",
+      "question_fa": "هوشنگ چه نسبتی با کیومرث دارد؟",
+      "question_tg": "Ҳушанг ба Каюмарс чӣ нисбат дорад?",
+      "answers": [
+        "Son",
+        "Brother",
+        "Grandson",
+        "Chosen successor"
+      ],
+      "answers_fa": [
+        "پسر",
+        "برادر",
+        "نوه",
+        "جانشینِ برگزیده"
+      ],
+      "answers_tg": [
+        "Писар",
+        "Бародар",
+        "Набера",
+        "Вориси баргузида"
+      ],
+      "correct_answer": 2,
+      "explanation": "Hushang is Keyumars' grandson — son of Siamak. The throne passes from grandfather to grandson after thirty days of mourning.",
+      "explanation_fa": "هوشنگ نوه‌ی کیومرث — پسرِ سیامک — است. تخت پس از سی روز سوگ از پدربزرگ به نوه منتقل می‌شود.",
+      "explanation_tg": "Ҳушанг набераи Каюмарс — писари Сиёмак — аст. Тахт пас аз си рӯзи аза аз бобо ба набера мегузарад.",
+      "reward": {
+        "xp": 105,
+        "real": 42
+      }
+    },
+    {
+      "id": "hushang-m3",
+      "chapter_slug": "hushang",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Which two kinds of animals does Hushang call to join his Army of Light?",
+      "question_fa": "هوشنگ چه دو نوع جانوری را فرا می‌خواند تا به سپاهِ روشناییِ او بپیوندند؟",
+      "question_tg": "Ҳушанг кадом ду навъ ҳайвонро даъват мекунад, ки ба лашкари равшаниаш бипайванданд?",
+      "answers": [
+        "Wolves and bears from the north",
+        "Falcons and wild boars from the forest",
+        "Horses and leopards from Pars",
+        "Eagles from the south and lions from the high pasture"
+      ],
+      "answers_fa": [
+        "گرگان و خرسانِ شمال",
+        "شاهینان و گراز‌های جنگل",
+        "اسبان و پلنگانِ پارس",
+        "عقاب‌ها از جنوب و شیرانِ چراگاهِ بلند"
+      ],
+      "answers_tg": [
+        "Гургон ва хирсони шимол",
+        "Шоҳинҳо ва гурозҳои ҷангал",
+        "Аспон ва палангони Порс",
+        "Уқобҳо аз ҷануб ва шерони чарогоҳи баланд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Eagles from the south and lions from the high pasture — in the Shahnameh, the natural world sides with justice, giving Hushang's army a mythic, cosmic scale.",
+      "explanation_fa": "عقاب‌ها از جنوب و شیرانِ چراگاهِ بلند — در شاهنامه، جهانِ طبیعی طرفِ عدالت است و به سپاهِ هوشنگ مقیاسی اسطوره‌ای و کیهانی می‌دهد.",
+      "explanation_tg": "Уқобҳо аз ҷануб ва шерони чарогоҳи баланд — дар Шоҳнома ҷаҳони табиӣ тарафи адолат аст ва ба лашкари Ҳушанг миқёси асотирӣ ва кайҳонӣ медиҳад.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "hushang-m4",
+      "chapter_slug": "hushang",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "After defeating the Black Div, what agricultural tool does Hushang introduce to the people?",
+      "question_fa": "هوشنگ پس از شکستِ دیوِ سیاه چه ابزارِ کشاورزی‌ای را به مردمان معرفی می‌کند؟",
+      "question_tg": "Ҳушанг пас аз шикасти Деви сиёҳ кадом асбоби кишоварзӣро ба мардум муаррифӣ мекунад?",
+      "answers": [
+        "The plough",
+        "The water wheel",
+        "The sickle",
+        "The grinding stone"
+      ],
+      "answers_fa": [
+        "گاوآهن",
+        "چرخِ آب",
+        "داس",
+        "سنگِ آسیا"
+      ],
+      "answers_tg": [
+        "Говоҳан",
+        "Чархи об",
+        "Дос",
+        "Санги осиё"
+      ],
+      "correct_answer": 0,
+      "explanation": "The plough — Hushang splits it into the soft earth, begins irrigation channels, and names the grain. The age of craft begins with farming, not war.",
+      "explanation_fa": "گاوآهن — هوشنگ آن را در خاکِ نرم فرو می‌برد، جوی‌های آبیاری می‌کَند و به دانه‌ها نام می‌دهد. عصرِ صنعت با کشاورزی آغاز می‌شود، نه جنگ.",
+      "explanation_tg": "Говоҳан — Ҳушанг онро дар замини нарм фуру мебарад, ҷӯйҳои обёрӣ мекананд ва ба донаҳо ном медиҳад. Асри ҳунар бо кишоварзӣ оғоз мешавад, на ҷанг.",
+      "reward": {
+        "xp": 115,
+        "real": 47
+      }
+    },
+    {
+      "id": "hushang-m5",
+      "chapter_slug": "hushang",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What does the chapter-complete scene of Hushang say the next king Tahmuras will do?",
+      "question_fa": "صحنه‌ی پایانیِ دفترِ هوشنگ می‌گوید شاهِ بعدی تهمورث چه کاری انجام خواهد داد؟",
+      "question_tg": "Саҳнаи охирини бобои Ҳушанг мегӯяд подшоҳи баъдӣ Таҳмурас чӣ хоҳад кард?",
+      "answers": [
+        "Forge the first sword of iron for war against Turan",
+        "Chain the demons and trade their lives for the alphabet",
+        "Build the first walled city in the valley of Pars",
+        "Summon the Simorgh to defeat Ahriman"
+      ],
+      "answers_fa": [
+        "نخستین شمشیرِ آهنین را برای جنگ با توران بسازد",
+        "دیوان را به زنجیر کشد و جانشان را با الفبا معامله کند",
+        "نخستین شهرِ دیواردار را در درّه‌ی پارس بنا کند",
+        "سیمرغ را فرا خواند تا اهریمن را شکست دهد"
+      ],
+      "answers_tg": [
+        "Аввалин шамшери оҳанинро барои ҷанг бо Турон бисозад",
+        "Девонро банд кунад ва ҷонашонро бо алифбо мубодила кунад",
+        "Аввалин шаҳри деворашро дар водии Порс бисозад",
+        "Симурғро даъват кунад то Аҳриманро шикаст диҳад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Tahmuras will chain the demons and trade their lives for the alphabet — the chronicle's leap from the age of fire to the age of writing.",
+      "explanation_fa": "تهمورث دیوان را به زنجیر می‌کشد و جانشان را با الفبا معامله می‌کند — جهشِ این تاریخ از عصرِ آتش به عصرِ نوشتار.",
+      "explanation_tg": "Таҳмурас девонро банд мекунад ва ҷонашонро бо алифбо мубодила мекунад — ҷаҳиши ин таърих аз асри оташ ба асри навиштан.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "hushang-h1",
+      "chapter_slug": "hushang",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "How does Hushang receive the leopard-skin crown — by ceremony or differently?",
+      "question_fa": "هوشنگ چگونه تاجِ پوستِ پلنگ را دریافت می‌کند — با مراسم یا به شکلی دیگر؟",
+      "question_tg": "Ҳушанг чӣ гуна тоҷи пӯсти палангро мегирад — бо маросим ё ба гунаи дигар?",
+      "answers": [
+        "With a single morning: Hushang's father sets the hammer down and Hushang picks it up",
+        "In a formal coronation before the whole mountain court",
+        "The elders place it on his head after thirty days of ritual fasting",
+        "He takes it himself from Keyumars' stone tomb"
+      ],
+      "answers_fa": [
+        "با یک صبحِ ساده: پدرش چکش را می‌گذارد و هوشنگ برمی‌دارد",
+        "در مراسمِ رسمیِ تاجگذاری پیشِ تمامِ درگاهِ کوهستانی",
+        "ریش‌سفیدان پس از سی روز روزه‌ی آیینی آن را بر سرش می‌گذارند",
+        "خودش آن را از آرامگاهِ سنگیِ کیومرث برمی‌دارد"
+      ],
+      "answers_tg": [
+        "Бо як субҳи содда: падараш чакушро мегузорад ва Ҳушанг мегирад",
+        "Дар маросими расмии тоҷгузорӣ пеши тамоми дарвозаи кӯҳистонӣ",
+        "Ришсафедон пас аз си рӯзи рӯзаи оинӣ онро бар сараш мегузоранд",
+        "Худаш онро аз мақбараи сангини Каюмарс мебарорад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Not with ceremony but with a single morning: Hushang sets the hammer down, Tahmuras picks it up — Ferdowsi's way of showing power passing through work, not ritual.",
+      "explanation_fa": "نه با مراسم که با یک صبحِ ساده — فردوسی نشان می‌دهد که قدرت از طریقِ کار منتقل می‌شود، نه آیین.",
+      "explanation_tg": "На бо маросим, балки бо як субҳи содда — Фирдавсӣ нишон медиҳад, ки қудрат тавассути кор мегузарад, на расм.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "hushang-h2",
+      "chapter_slug": "hushang",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "In the army-of-light scene, what is the only thing Hushang says before marching?",
+      "question_fa": "در صحنه‌ی سپاهِ روشنایی، هوشنگ پیش از حرکت تنها چه می‌گوید؟",
+      "question_tg": "Дар саҳнаи лашкари равшанӣ, Ҳушанг пеш аз ҳаракат танҳо чӣ мегӯяд?",
+      "answers": [
+        "He speaks a long prayer to the God of Soul and Wisdom",
+        "He says only what must be said: a debt is owed",
+        "He promises the eagles gold and the lions a kingdom",
+        "He names each warrior aloud before the march"
+      ],
+      "answers_fa": [
+        "نیایشی طولانی به خداوندِ جان و خرد می‌خواند",
+        "تنها آنچه باید گفته شود را می‌گوید: وامی ادا نشده است",
+        "به عقاب‌ها زر و به شیران پادشاهی وعده می‌دهد",
+        "پیش از حرکت هر جنگجو را با صدای بلند نام می‌برد"
+      ],
+      "answers_tg": [
+        "Дуои дӯзахонаро ба Худованди ҷон ва хирад мехонад",
+        "Танҳо он чиро, ки бояд гуфта шавад, мегӯяд: қарзе адо нашудааст",
+        "Ба уқобҳо тилло ва ба шерон подшоҳӣ ваъда медиҳад",
+        "Пеш аз ҳаракат ҳар ҷанговарро бо овози баланд ном мебарад"
+      ],
+      "correct_answer": 1,
+      "explanation": "He says only what must be said: a debt is owed. Ferdowsi's kings speak with economy — Hushang's economy of speech is itself a sign of his authority.",
+      "explanation_fa": "تنها آنچه باید گفته شود را می‌گوید: وامی ادا نشده است. شاهانِ فردوسی به‌اندازه سخن می‌گویند — اقتصادِ کلامِ هوشنگ خود نشانِ اقتدارش است.",
+      "explanation_tg": "Танҳо он чиро, ки бояд гуфта шавад, мегӯяд: қарзе адо нашудааст. Шоҳони Фирдавсӣ бо иқтисод сухан мегӯянд.",
+      "reward": {
+        "xp": 155,
+        "real": 67
+      }
+    },
+    {
+      "id": "hushang-h3",
+      "chapter_slug": "hushang",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "In the demon forest, how do Hushang and the forest relate — what does the scene say he has been watching it since?",
+      "question_fa": "هوشنگ در جنگلِ دیوان با جنگل چه نسبتی دارد — صحنه می‌گوید او از چه زمانی این جنگل را نگریسته است؟",
+      "question_tg": "Ҳушанг дар ҷангали девон бо ҷангал чӣ нисбат дорад — саҳна мегӯяд ӯ аз кай ин ҷангалро нигаристааст?",
+      "answers": [
+        "Since the night his father died",
+        "Since Ahriman first sent the cold wind from the roots",
+        "Since he was a boy on his grandfather's shoulder",
+        "Since he forged his first iron weapon"
+      ],
+      "answers_fa": [
+        "از شبِ مرگِ پدرش",
+        "از اولین باری که اهریمن بادِ سرد را از ریشه‌ها فرستاد",
+        "از آن هنگام که کودکی بود بر شانه‌ی نیایش",
+        "از هنگامِ ساختنِ نخستین سلاحِ آهنیِ خود"
+      ],
+      "answers_tg": [
+        "Аз шаби марги падараш",
+        "Аз аввалин боре ки Аҳриман шамоли сардро аз решаҳо фиристод",
+        "Аз вақте ки кӯдак буд бар китфи бобояш",
+        "Аз вақти сохтани аввалин аслиҳаи оҳанинаш"
+      ],
+      "correct_answer": 2,
+      "explanation": "Since he was a boy on his grandfather's shoulder — the forest has been part of Hushang's life since before he could walk into it. He does not slow because he already knows it.",
+      "explanation_fa": "از آن هنگام که کودکی بود بر شانه‌ی نیایش — جنگل از پیش از آنکه بتواند درونش برود بخشی از زندگیِ هوشنگ بوده است. کند نمی‌رود چون از پیش می‌شناختش.",
+      "explanation_tg": "Аз вақте ки кӯдак буд бар китфи бобояш — ҷангал аз пеш аз он ки тавонад дар онро ворид шавад, як қисми зиндагии Ҳушанг буд.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "hushang-h4",
+      "chapter_slug": "hushang",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "What does the fire 'not do' if you respect it, according to Hushang when he names Sade?",
+      "question_fa": "هنگامی که هوشنگ سده را نام‌گذاری می‌کند، آتش اگر احترامش بداری چه نمی‌کند؟",
+      "question_tg": "Вақте ки Ҳушанг Садаро ном мегузорад, оташ агар эҳтиромаш кунӣ чӣ намекунад?",
+      "answers": [
+        "It does not speak",
+        "It does not die",
+        "It does not spread",
+        "It does not bite"
+      ],
+      "answers_fa": [
+        "سخن نمی‌گوید",
+        "نمی‌میرد",
+        "نمی‌گسترد",
+        "گاز نمی‌گیرد"
+      ],
+      "answers_tg": [
+        "Сухан намегӯяд",
+        "Намемирад",
+        "Намегустарад",
+        "Газ намезанад"
+      ],
+      "correct_answer": 3,
+      "explanation": "It does not bite if you respect it — Hushang names the first fire and immediately teaches its first rule: fire is a gift but also a covenant.",
+      "explanation_fa": "اگر احترامش بداری گاز نمی‌گیرد — هوشنگ نخستین آتش را نام می‌نهد و بلافاصله نخستین قاعده‌اش را می‌آموزد: آتش هدیه‌ای است اما پیمانی هم هست.",
+      "explanation_tg": "Агар эҳтиромаш кунӣ, газ намезанад — Ҳушанг аввалин оташро ном мегузорад ва фавран аввалин қоидааш омӯзад: оташ неъмат аст аммо аҳде ҳам ҳаст.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "hushang-h5",
+      "chapter_slug": "hushang",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "What does the fire chapter-complete scene say fire ultimately leads to in sequence?",
+      "question_fa": "صحنه‌ی پایانیِ دفترِ آتش می‌گوید آتش در نهایت به چه چیزهایی به‌ترتیب منجر می‌شود؟",
+      "question_tg": "Саҳнаи охирини бобои оташ мегӯяд оташ дар ниҳоят ба чӣ чизҳое пай дар пай мунтаҳӣ мешавад?",
+      "answers": [
+        "Fire → iron → forge → blade, plough, hammer",
+        "Fire → water → wheat → bread",
+        "Fire → light → warmth → the first city",
+        "Fire → spirit → kherad → civilization"
+      ],
+      "answers_fa": [
+        "آتش ← آهن ← آهنگری ← تیغ، گاوآهن، چکش",
+        "آتش ← آب ← گندم ← نان",
+        "آتش ← روشنایی ← گرما ← نخستین شهر",
+        "آتش ← روح ← خرد ← تمدن"
+      ],
+      "answers_tg": [
+        "Оташ ← оҳан ← оҳангарӣ ← теғ, говоҳан, чакуш",
+        "Оташ ← об ← гандум ← нон",
+        "Оташ ← равшанӣ ← гармо ← аввалин шаҳр",
+        "Оташ ← рӯҳ ← хирад ← тамаддун"
+      ],
+      "correct_answer": 0,
+      "explanation": "Fire begets iron. Iron begets the forge. The forge begets the blade, the plough, the hammer — the Shahnameh's chain of material civilization.",
+      "explanation_fa": "آتش آهن می‌زاید. آهن آهنگری می‌زاید. آهنگری تیغ می‌زاید و گاوآهن و چکش — زنجیرِ تمدنِ مادی در شاهنامه.",
+      "explanation_tg": "Оташ оҳан мезояд. Оҳан оҳангарӣ мезояд. Оҳангарӣ теғ мезояд ва говоҳан ва чакуш — занҷири тамаддуни моддӣ дар Шоҳнома.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "hushang-h6",
+      "chapter_slug": "hushang",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The Shahnameh says Hushang's fire 'does not bite the hand.' What broader principle does Ferdowsi illustrate with fire coming from a missed throw rather than a god's gift?",
+      "question_fa": "شاهنامه می‌گوید آتشِ هوشنگ «دست را نمی‌گزد.» فردوسی با آمدنِ آتش از یک پرتابِ خطا به جای هدیه‌ی خدایان چه اصلِ گسترده‌تری را نشان می‌دهد؟",
+      "question_tg": "Шоҳнома мегӯяд оташи Ҳушанг «дастро намегазад.» Фирдавсӣ бо омадани оташ аз як партоби хато ба ҷои неъмати худоён кадом принсипи васеътарро нишон медиҳад?",
+      "answers": [
+        "That divine intervention is more powerful than human effort",
+        "That gifts arrive sideways — through accident, not heroic intention",
+        "That fire is more dangerous than iron and must be kept secret",
+        "That only kings may discover the tools of civilization"
+      ],
+      "answers_fa": [
+        "که دخالتِ الهی قوی‌تر از تلاشِ انسانی است",
+        "که هدیه‌ها کج‌وپیچ می‌رسند — از راهِ تصادف، نه نیتِ قهرمانانه",
+        "که آتش از آهن خطرناک‌تر است و باید پنهان نگه داشته شود",
+        "که تنها شاهان می‌توانند ابزارهای تمدن را کشف کنند"
+      ],
+      "answers_tg": [
+        "Ки дахолати илоҳӣ аз кӯшиши инсонӣ қавитар аст",
+        "Ки неъматҳо аз паҳлу мерасанд — тавассути тасодуф, на нияти қаҳрамонона",
+        "Ки оташ аз оҳан хатарнокτар аст ва бояд пинҳон нигоҳ дошта шавад",
+        "Ки танҳо шоҳон метавонанд абзорҳои тамаддунро кашф кунанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Gifts arrive sideways — Ferdowsi's world is more human than Greek myth. Fire wasn't stolen from the gods; it came from a missed throw. The Shahnameh's civilizations are built on accident and wisdom together.",
+      "explanation_fa": "هدیه‌ها کج‌وپیچ می‌رسند — جهانِ فردوسی از اسطوره‌ی یونانی انسانی‌تر است. آتش از خدایان دزدیده نشد؛ از پرتابی خطا آمد. تمدن‌های شاهنامه بر تصادف و خرد با هم ساخته می‌شوند.",
+      "explanation_tg": "Неъматҳо аз паҳлу мерасанд — ҷаҳони Фирдавсӣ аз асотири юнонӣ инсонитар аст. Оташ аз худоён дуздида нашуд; аз партоби хато омад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "hushang-h7",
+      "chapter_slug": "hushang",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The Shahnameh says the world has 'a second fire' added to its hearth. What does this second fire represent in Hushang's age?",
+      "question_fa": "شاهنامه می‌گوید جهان «آتشِ دوم» را به اجاقش افزود. این آتشِ دوم در عصرِ هوشنگ نماینده‌ی چیست؟",
+      "question_tg": "Шоҳнома мегӯяд ҷаҳон «оташи дуввум»ро ба оҷоқаш иловат кард. Ин оташи дуввум дар асри Ҳушанг намояндаи чист?",
+      "answers": [
+        "A second sun that Hushang lit with his army's torches",
+        "The sacred fire temple built after the battle",
+        "Iron-working — the mountain court's second fire after the discovery of flame",
+        "Siamak's funeral pyre kept burning as a memorial"
+      ],
+      "answers_fa": [
+        "خورشیدِ دوم که هوشنگ با مشعل‌های سپاهش روشن کرد",
+        "آتشکده‌ی مقدسی که پس از نبرد ساخته شد",
+        "آهنگری — آتشِ دومِ درگاهِ کوهستانی پس از کشفِ شعله",
+        "آتشِ مزارِ سیامک که به‌عنوانِ یادبود زنده نگه داشته شد"
+      ],
+      "answers_tg": [
+        "Офтоби дуввуме, ки Ҳушанг бо машъалҳои лашкараш равшан кард",
+        "Оташкадаи муқаддасе, ки пас аз набард сохта шуд",
+        "Оҳангарӣ — оташи дуввуми дарвозаи кӯҳистонӣ пас аз кашфи шӯъла",
+        "Оташи мазори Сиёмак, ки ба унвони ёдбуд зинда нигоҳ дошта шуд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Iron-working — a world that only knew survival now learns to build. The second fire on the hearth symbolises that Hushang's age added craft to existence.",
+      "explanation_fa": "آهنگری — جهانی که تنها بقا را می‌دانست اکنون ساختن را می‌آموزد. آتشِ دوم بر اجاق نماد این است که عصرِ هوشنگ صنعت را به هستی افزود.",
+      "explanation_tg": "Оҳангарӣ — ҷаҳоне ки танҳо зиндамонданро медонист акнун сохтанро мёмӯзад. Оташи дуввум бар оҷоқ рамзи ин аст, ки асри Ҳушанг ҳунарро ба ҳастӣ иловат кард.",
+      "reward": {
+        "xp": 175,
+        "real": 77
+      }
+    },
+    {
+      "id": "hushang-h8",
+      "chapter_slug": "hushang",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "In the chapter-complete scene, Hushang names each new thing 'one by one' and gives each name to a child to carry. What does this act signify in Ferdowsi's world?",
+      "question_fa": "در صحنه‌ی پایانی، هوشنگ هر چیزِ جدید را «یک‌به‌یک» نام می‌دهد و هر نامی را به کودکی می‌سپارد. این عمل در جهانِ فردوسی چه معنایی دارد؟",
+      "question_tg": "Дар саҳнаи охирин, Ҳушанг ҳар чизи навро «яке-яке» ном медиҳад ва ҳар номро ба кӯдаке месупорад. Ин амал дар ҷаҳони Фирдавсӣ чӣ маъно дорад?",
+      "answers": [
+        "It means each child becomes a craftsman of that skill",
+        "It means those children will become the next generation of heroes",
+        "It is a religious ceremony to thank God of Soul and Wisdom",
+        "Naming is the first act of writing — it is how civilization preserves itself before the alphabet arrives"
+      ],
+      "answers_fa": [
+        "یعنی هر کودک هنرمندِ آن مهارت می‌شود",
+        "یعنی آن کودکان نسلِ بعدیِ قهرمانان می‌شوند",
+        "مراسمِ دینی‌ای برای تشکر از خداوندِ جان و خرد است",
+        "نام‌گذاری نخستین عملِ نوشتار است — روشِ نگه‌داریِ تمدن پیش از رسیدنِ الفبا"
+      ],
+      "answers_tg": [
+        "Яъне ҳар кӯдак ҳунарманди он маҳорат мешавад",
+        "Яъне он кӯдакон насли баъдии қаҳрамонон мешаванд",
+        "Маросими динӣ барои ташаккур аз Худованди ҷон ва хирад аст",
+        "Ном гузоштан аввалин амали навиштан аст — роши нигоҳ доштани тамаддун пеш аз омадани алифбо"
+      ],
+      "correct_answer": 3,
+      "explanation": "Naming is the first act of civilization's memory — before writing, names carried by children are how knowledge survives. Tahmuras will later trade for the alphabet; Hushang uses the only tool available: the spoken name passed on.",
+      "explanation_fa": "نام‌گذاری نخستین عملِ حافظه‌ی تمدن است — پیش از نوشتار، نام‌هایی که کودکان حمل می‌کنند روشِ بقاءِ دانش است. تهمورث بعداً برای الفبا معامله خواهد کرد؛ هوشنگ تنها ابزارِ در دسترس را به‌کار می‌برد: نامِ گفتاری که منتقل می‌شود.",
+      "explanation_tg": "Ном гузоштан аввалин амали хотираи тамаддун аст — пеш аз навиштан, номҳое, ки кӯдакон мебаранд, роши бақои дониш аст.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    }
+  ]
+}

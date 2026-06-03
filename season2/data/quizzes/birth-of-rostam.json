@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "bor-e1",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What does Zal do to save Rudabeh when the birth will not come and the physicians cannot help?",
+      "question_fa": "وقتی زایمان صورت نمی‌گیرد و پزشکان نمی‌توانند کمک کنند، زال برای نجاتِ رودابه چه می‌کند؟",
+      "question_tg": "Вақте зоиш сурат намегирад ва табибон наметавонанд кӯмак кунанд, Зол барои наҷоти Рӯдоба чӣ мекунад?",
+      "answers": [
+        "He prays at the shrine of Ahura Mazda",
+        "He summons Sam from the northern border",
+        "He burns the Simorgh's feather — the promise she gave him on Alborz",
+        "He offers half his kingdom to any physician who can save her"
+      ],
+      "answers_fa": [
+        "در معبدِ اهورا مزدا دعا می‌کند",
+        "سام را از مرزِ شمالی فرا می‌خواند",
+        "پرِ سیمرغ را می‌سوزاند — قراری که روی البرز به او داده شد",
+        "نیمی از شاهنشاهی‌اش را به هر پزشکی که بتواند نجاتش دهد پیشنهاد می‌دهد"
+      ],
+      "answers_tg": [
+        "Дар маъбади Аҳура Мазда дуо мехонад",
+        "Сомро аз марзи шимолӣ мефарозад",
+        "Пари Симурғро месӯзонад — ваъдаи ӯ дар Алборз",
+        "Нисфи салтанаташро ба ҳар табибе ки битавонад наҷоташ диҳад пешниҳод мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Zal burns the Simorgh's feather — the promise she gave him on the day he descended from Alborz. He has carried it through battles, courts, and decades of peace. He burns it once, for one reason: Rudabeh is dying and the physicians cannot help. The Simorgh comes and guides the caesarean. Rudabeh lives. The feather is ash. This is the moment the feather was always for.",
+      "explanation_fa": "زال پرِ سیمرغ را می‌سوزاند — قراری که روزِ پایین آمدن از البرز به او داده شد. یک بار می‌سوزاندش، برای یک دلیل: رودابه دارد می‌میرد. سیمرغ می‌آید. رودابه زنده می‌ماند.",
+      "explanation_tg": "Зол пари Симурғро месӯзонад. Симурғ меояд ва сезарияро роҳнамоӣ мекунад. Рӯдоба зинда мемонад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "bor-e2",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "How does Rostam select Rakhsh from the horse lines of Zabulestan at age twelve?",
+      "question_fa": "رستمِ دوازده‌ساله چگونه رخش را از خطِ اسب‌های زابلستان انتخاب می‌کند؟",
+      "question_tg": "Рустами дувоздаҳсола чӣ тавр Рахшро аз хати аспони Зобулистон интихоб мекунад?",
+      "answers": [
+        "He races each horse across the plain",
+        "The court astrologers choose Rakhsh by reading the stars",
+        "Rakhsh runs to him across the field",
+        "He presses each horse's back with his hand — three thousand buckle, Rakhsh alone holds"
+      ],
+      "answers_fa": [
+        "هر اسب را در دشت می‌تازاند",
+        "منجمانِ دربار با خواندنِ ستارگان رخش را انتخاب می‌کنند",
+        "رخش از صحرا به‌سمتش می‌دود",
+        "پشتِ هر اسب را با دستش فشار می‌دهد — سه هزار خم می‌شوند، تنها رخش ایستاده می‌ماند"
+      ],
+      "answers_tg": [
+        "Ҳар аспро дар даштзор метозонад",
+        "Мунаҷҷимони дарбор бо хондани ситораҳо Рахшро интихоб мекунанд",
+        "Рахш аз майдон ба сӯяш медавад",
+        "Пушти ҳар аспро бо дасташ мефишорад — се ҳазор хам мешаванд, танҳо Рахш истода мемонад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Rostam presses the back of each horse with his palm, testing its strength. Three thousand horses buckle under that hand. Rakhsh — spotted and fierce-eyed — does not move. The Shahnameh uses the word 'worthy' for both: Rakhsh was worthy of Rostam, and Rostam worthy of Rakhsh. The choice goes both ways.",
+      "explanation_fa": "رستم پشتِ هر اسب را با کف دستش فشار می‌دهد. سه هزار اسب خم می‌شوند. رخش — ابلق، تیزنگاه — تکان نمی‌خورد. شاهنامه کلمه‌ی 'شایسته' را برای هر دو به کار می‌برد.",
+      "explanation_tg": "Рустам пушти ҳар аспро мефишорад. Се ҳазор хам мешаванд. Рахш намеларзад. Шоҳнома калимаи 'шоиста'ро барои ҳарду истифода мекунад.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "bor-m1",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh describes Rostam's childhood feats without wonder or celebration. What does this restraint tell us about how the chronicle sees him?",
+      "question_fa": "شاهنامه شگفتی‌های کودکیِ رستم را بدون اعجاب یا جشن توصیف می‌کند. این خودداری چه چیزی به ما می‌گوید که شاهنامه چگونه او را می‌بیند؟",
+      "question_tg": "Шоҳнома аҷоиботи кӯдакии Рустамро бидуни ҳайрат ё ҷашн тавсиф мекунад. Ин худдорӣ дар бораи нигоҳи солнома ба ӯ чӣ мегӯяд?",
+      "answers": [
+        "The Shahnameh doubts the legends about Rostam's childhood",
+        "Ferdowsi had limited information about Rostam's early years",
+        "Rostam's feats are measured as preparation for his burden, not celebrated as wonders — the chronicle sees him as necessary, not spectacular",
+        "The restraint shows his childhood was ordinary — the real Rostam only emerged at the Haft Khan"
+      ],
+      "answers_fa": [
+        "شاهنامه در افسانه‌های کودکیِ رستم شک دارد",
+        "فردوسی اطلاعاتِ محدودی درباره‌ی سال‌های اولیه‌ی رستم داشت",
+        "شگفتی‌های رستم به‌عنوانِ آمادگی برای بارش سنجیده می‌شوند، نه به‌عنوانِ معجزه ستوده — شاهنامه او را ضروری می‌بیند نه چشمگیر",
+        "خودداری نشان می‌دهد دوران کودکیِ او عادی بود — رستمِ واقعی فقط در هفت‌خان ظهور کرد"
+      ],
+      "answers_tg": [
+        "Шоҳнома дар афсонаҳои кӯдакии Рустам шубҳа дорад",
+        "Фирдавсӣ маълумоти маҳдуде дошт",
+        "Аҷоиботи Рустам ҳамчун омодагӣ барои борааш санҷида мешавад, на мадҳ — солнома ӯро зарурӣ мебинад, на намоишӣ",
+        "Худдорӣ нишон медиҳад кӯдакиаш одӣ буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh catalogs Rostam's early feats (ten wet nurses, eating meat at one, a man's frame at seven, three thousand horses, the elephant at twelve) without celebration because it does not view him as a wonder — it views him as a structural requirement. He is the pillar the next five generations of kings will lean against. The chronicle measures him for that burden, not marvels at him.",
+      "explanation_fa": "شاهنامه دوران کودکیِ رستم را بدون جشن فهرست می‌کند چون او را شگفتی نمی‌بیند — ضرورتِ ساختاری می‌بیند. او ستونی است که پنج نسلِ بعدیِ شاهان به آن تکیه خواهند کرد.",
+      "explanation_tg": "Шоҳнома кӯдакии Рустамро бидуни ҷашн феҳрист мекунад, чун ӯро аҷибот намебинад — зарурати сохторӣ мебинад. Ӯ сутуниест ки насли оянда бар он такя мекунад.",
+      "reward": {
+        "xp": 140,
+        "real": 60
+      }
+    },
+    {
+      "id": "bor-e3",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How old was Rostam when he killed the rogue war elephant that broke loose in the palace?",
+      "question_fa": "رستم چند ساله بود که فیلِ جنگیِ سرکشی را که در کاخ آزاد شده بود کشت؟",
+      "question_tg": "Рустам чанд сола буд, ки фили ҷангии саркаше ки дар қаср раҳо шуда буд кушт?",
+      "answers": [
+        "Seven",
+        "Ten",
+        "Twelve",
+        "Fifteen"
+      ],
+      "answers_fa": [
+        "هفت",
+        "ده",
+        "دوازده",
+        "پانزده"
+      ],
+      "answers_tg": [
+        "Ҳафт",
+        "Даҳ",
+        "Дувоздаҳ",
+        "Понздаҳ"
+      ],
+      "correct_answer": 2,
+      "explanation": "Rostam was twelve when the elephant broke loose and guards fled. He struck it once with a mace and it fell.",
+      "explanation_fa": "رستم دوازده ساله بود که فیل رها شد و نگهبانان گریختند. یک ضربه با گرز زد و فیل افتاد.",
+      "explanation_tg": "Рустам дувоздаҳ сола буд ки фил раҳо шуд ва посбонон гурехтанд. Як зарб бо гурз зад ва фил афтод.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "bor-m2",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "How did Rostam select Rakhsh from among ten thousand horses?",
+      "question_fa": "رستم چگونه رخش را از میانِ ده‌هزار اسب انتخاب کرد؟",
+      "question_tg": "Рустам чӣ тавр Рахшро аз миёни даҳ ҳазор асп интихоб кард?",
+      "answers": [
+        "Rakhsh was given to him by the Simorgh as a gift",
+        "He pressed each horse's back — only Rakhsh did not buckle under his hand",
+        "He chose by colour — a spotted horse at the end of the line",
+        "He picked the largest horse in the herd"
+      ],
+      "answers_fa": [
+        "رخش توسطِ سیمرغ به عنوانِ هدیه به او داده شد",
+        "به پشتِ هر اسبی فشار آورد — فقط رخش زیرِ دستش خم نشد",
+        "از رنگ انتخاب کرد — اسبِ خال‌خالی‌ای در انتهای صف",
+        "بزرگ‌ترین اسب در گله را انتخاب کرد"
+      ],
+      "answers_tg": [
+        "Рахш аз ҷониби Симурғ ҳамчун тӯҳфа ба ӯ дода шуд",
+        "Ба пушти ҳар аспе фишор овард — танҳо Рахш зери дасташ хам нашуд",
+        "Аз ранг интихоб кард — аспи хол-холе дар охири саф",
+        "Бузургтарин аспро дар рама интихоб кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam pressed each horse's back along the lines of ten thousand. Only Rakhsh — spotted, fierce, at the end of the line — did not move.",
+      "explanation_fa": "رستم به پشتِ هر اسبی در صف‌های ده‌هزارتایی فشار آورد. فقط رخش — خال‌خال، سرکش، در انتهای صف — حرکت نکرد.",
+      "explanation_tg": "Рустам ба пушти ҳар аспе дар саффҳои даҳ ҳазоргона фишор овард. Танҳо Рахш — хол-хол, саркаш, дар охири саф — ҳаракат накард.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      }
+    },
+    {
+      "id": "bor-m3",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "How many wet nurses did the newborn Rostam require in his first week?",
+      "question_fa": "نوزادِ رستم در هفته‌ی اول به چند دایه نیاز داشت؟",
+      "question_tg": "Навзоди Рустам дар ҳафтаи аввал ба чанд парастор ниёз дошт?",
+      "answers": [
+        "Three",
+        "Five",
+        "Seven",
+        "Ten"
+      ],
+      "answers_fa": [
+        "سه",
+        "پنج",
+        "هفت",
+        "ده"
+      ],
+      "answers_tg": [
+        "Се",
+        "Панҷ",
+        "Ҳафт",
+        "Даҳ"
+      ],
+      "correct_answer": 3,
+      "explanation": "He needed ten wet nurses the first week because no one of them had enough. By a year old he ate meat.",
+      "explanation_fa": "در هفته‌ی اول ده دایه نیاز داشت چون هیچکدام به تنهایی کافی نبود. تا یک سالگی گوشت می‌خورد.",
+      "explanation_tg": "Дар ҳафтаи аввал даҳ парастор лозим буд, зеро ҳеҷкадом ба танҳоӣ кофӣ набуд.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "bor-m4",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What happened to the mace after Rostam struck the war elephant once?",
+      "question_fa": "بعد از این که رستم یک ضربه به فیلِ جنگی زد، با گرز چه اتفاقی افتاد؟",
+      "question_tg": "Пас аз он ки Рустам як зарб ба фили ҷангӣ зад, бо гурз чӣ шуд?",
+      "answers": [
+        "It shattered into pieces",
+        "It was bent",
+        "It was unharmed — Rostam's strength absorbed the impact",
+        "It was embedded in the elephant's skull"
+      ],
+      "answers_fa": [
+        "تکه‌تکه شد",
+        "خم شد",
+        "آسیب ندید — قدرتِ رستم ضربه را جذب کرد",
+        "در جمجمه‌ی فیل فرو رفت"
+      ],
+      "answers_tg": [
+        "Тикатика шуд",
+        "Хам шуд",
+        "Осеб надид — қудрати Рустам зарбро ҷазб кард",
+        "Дар косахонаи фил ҷой гирифт"
+      ],
+      "correct_answer": 1,
+      "explanation": "After one strike that killed the elephant, the mace was bent — implying force that exceeded what the weapon was designed to absorb.",
+      "explanation_fa": "بعد از یک ضربه که فیل را کشت، گرز خم شد — یعنی نیرویی که از آنچه سلاح برای تحمل آن طراحی شده بود فراتر رفت.",
+      "explanation_tg": "Пас аз як зарб ки филро кушт, гурз хам шуд — яъне қувваеро нишон медиҳад ки аз он чи силоҳ барои таҳаммулаш тарҳрезӣ шуда буд, зиёдтар буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bor-m5",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "By what age did Rostam's frame become 'a grown man's frame'?",
+      "question_fa": "رستم در چه سنی «اندامِ یک مردِ بالغ» پیدا کرد؟",
+      "question_tg": "Рустам дар кадом синн «андоми як марди балиғ» ёфт?",
+      "answers": [
+        "Five",
+        "Seven",
+        "Ten",
+        "Twelve"
+      ],
+      "answers_fa": [
+        "پنج",
+        "هفت",
+        "ده",
+        "دوازده"
+      ],
+      "answers_tg": [
+        "Панҷ",
+        "Ҳафт",
+        "Даҳ",
+        "Дувоздаҳ"
+      ],
+      "correct_answer": 1,
+      "explanation": "By the time he was seven his frame was a grown man's frame, and the court had quietly stopped treating him as a child.",
+      "explanation_fa": "تا هفت سالگی اندامش اندامِ یک مردِ بالغ شده بود، و دربار بی‌سر و صدا از برخوردِ با او به عنوانِ کودک دست کشیده بود.",
+      "explanation_tg": "То ҳафт солагӣ андомаш андоми як марди балиғ шуда буд, ва дарбор оромона аз рафтор бо ӯ ҳамчун тифл даст кашида буд.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "bor-h1",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "What physical sign told Zal the moment had come to burn the Simorgh's feather?",
+      "question_fa": "چه نشانه‌ی جسمانی به زال گفت که لحظه رسیده پرِ سیمرغ را بسوزاند؟",
+      "question_tg": "Кадом нишонаи ҷисмонӣ ба Зол гуфт ки лаҳза расидааст пари Симурғро бисӯзонад?",
+      "answers": [
+        "The sacred fire at Balkh went dark",
+        "The court physicians stood at Rudabeh's bed and found themselves useless",
+        "A comet appeared over Zabulestan",
+        "Rakhsh refused to eat"
+      ],
+      "answers_fa": [
+        "آتشِ مقدسِ بلخ خاموش شد",
+        "پزشکانِ دربار بر بالینِ رودابه ایستادند و دیدند که ناتوانند",
+        "ستاره‌ی دنباله‌داری بر فرازِ زابلستان ظاهر شد",
+        "رخش از خوردن خودداری کرد"
+      ],
+      "answers_tg": [
+        "Оташи муқаддаси Балх хомӯш шуд",
+        "Табибони дарбор болини Рӯдоба истоданд ва дар ноадо буданашон дарёфтанд",
+        "Ситораи думдор бар фарози Забулистон зоҳир шуд",
+        "Рахш аз хӯрдан худдорӣ кард"
+      ],
+      "correct_answer": 1,
+      "explanation": "Zal understood what kind of moment this was when the physicians found themselves useless. This recognition is what prompted the burning.",
+      "explanation_fa": "زال فهمید که چه لحظه‌ای است وقتی پزشکان دیدند که ناتوانند. این درک بود که باعث شد پر را بسوزاند.",
+      "explanation_tg": "Зол фаҳмид ки ин чӣ лаҳзаест, вақте табибон дар ноадо буданашон дарёфтанд. Ин дарк буд ки боиси сӯзондани пар шуд.",
+      "reward": {
+        "xp": 290,
+        "real": 135
+      }
+    },
+    {
+      "id": "bor-h2",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The chapter says Zal kept the Simorgh's feather 'through every battle, every court, every year.' What does this continuity mean?",
+      "question_fa": "فصل می‌گوید زال پرِ سیمرغ را «در هر نبرد، هر دربار، هر سالی» نگه داشت. این تداوم چه معنایی دارد؟",
+      "question_tg": "Фасл мегӯяд Зол пари Симурғро «дар ҳар набард, ҳар дарбор, ҳар солe» нигоҳ дошт. Ин давом чӣ маъно дорад?",
+      "answers": [
+        "The feather was a weapon used regularly in combat",
+        "It was a promise held in reserve through an entire life of action — the burning was more significant for having waited so long",
+        "The feather was a symbol of royal authority in Zabulestan",
+        "Zal displayed it to intimidate enemies"
+      ],
+      "answers_fa": [
+        "پر سلاحی بود که به طورِ منظم در جنگ استفاده می‌شد",
+        "وعده‌ای بود که در طولِ تمامِ یک زندگیِ پر از عمل در ذخیره نگه داشته شد — سوزاندن به خاطرِ این که این‌قدر منتظر مانده بود مهم‌تر بود",
+        "پر نمادِ اقتدارِ شاهی در زابلستان بود",
+        "زال آن را برای ترساندنِ دشمنان نشان می‌داد"
+      ],
+      "answers_tg": [
+        "Пар силоҳе буд ки мунтазам дар ҷанг истифода мешуд",
+        "Ваъдае буд ки дар тамоми умри пурамал дар захира нигоҳ дошта шуд",
+        "Пар рамзи қудрати шоҳонаи Забулистон буд",
+        "Зол онро барои тарсондани душманон нишон медод"
+      ],
+      "correct_answer": 1,
+      "explanation": "The feather was a promise held in reserve through an entire life. The chapter emphasizes everything Zal carried it through — making the burning more significant.",
+      "explanation_fa": "پر وعده‌ای بود که در تمامِ یک عمر ذخیره شد. فصل تأکید می‌کند که زال در طولِ همه چیز آن را حمل کرد — که سوزاندن را مهم‌تر می‌کند.",
+      "explanation_tg": "Пар ваъдае буд ки дар тамоми як умр захира шуд. Фасл таъкид мекунад ки Зол дар тӯли ҳама чиз онро ҳамл кард.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "bor-h3",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The chapter describes the aftermath of the elephant killing: 'the corridor was silent in a way that meant something new had just been established.' What was established?",
+      "question_fa": "فصل پس از کشتنِ فیل توصیف می‌کند: «دالان به گونه‌ای ساکت شد که یعنی چیزِ جدیدی تازه برقرار شده بود.» چه چیزی برقرار شد؟",
+      "question_tg": "Фасл пас аз куштани фил тавсиф мекунад: «дарвоза ба гунае сокит шуд ки яъне чизи ҷадиде тозаҳ барқарор шуда буд.» Чӣ барқарор шуд?",
+      "answers": [
+        "A new law forbidding war elephants in the palace",
+        "Rostam as the pillar the world would lean against for five generations of kings",
+        "Rakhsh as the greatest horse in Zabulestan",
+        "A sacred ceremony in Rostam's honor"
+      ],
+      "answers_fa": [
+        "قانونِ جدیدی که فیل‌های جنگی را در کاخ ممنوع کرد",
+        "رستم به عنوانِ ستونی که دنیا برای پنج نسل شاه به آن تکیه خواهد کرد",
+        "رخش به عنوانِ بهترین اسب در زابلستان",
+        "مراسمِ مقدسی به افتخارِ رستم"
+      ],
+      "answers_tg": [
+        "Қонуни ҷадиде ки филони ҷангиро дар қаср манъ кард",
+        "Рустам ҳамчун сутуне ки дунё барои панҷ насли подшоҳ ба он такя мекунад",
+        "Рахш ҳамчун беҳтарин асп дар Забулистон",
+        "Маросими муқаддасе ба ифтихори Рустам"
+      ],
+      "correct_answer": 1,
+      "explanation": "The chapter calls the moment 'a pillar the world would lean against for the next five generations of kings' — Rostam's function in the Shahnameh established.",
+      "explanation_fa": "فصل این لحظه را «ستونی که دنیا در پنج نسلِ بعدیِ شاهان به آن تکیه خواهد کرد» می‌نامد — کارکردِ رستم در شاهنامه برقرار شد.",
+      "explanation_tg": "Фасл ин лаҳзаро «сутуне ки дунё дар панҷ насли баъдии подшоҳон ба он такя мекунад» меномад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bor-h4",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The Simorgh came for the birth of Rostam when Zal burned the feather. Was this the first or second time the feather was burned?",
+      "question_fa": "سیمرغ برای تولدِ رستم آمد وقتی زال پر را سوزاند. آیا این اولین یا دومین باری بود که پر سوزانده شد؟",
+      "question_tg": "Симурғ барои таваллуди Рустам омад вақте Зол парро сӯзонд. Ин аввалин ё дуввумин бор буд ки пар сӯзонда шуд?",
+      "answers": [
+        "The second burning — the first was when Sam climbed to reclaim Zal",
+        "The first burning — the second and last would come before the clash with Esfandiyar",
+        "Zal had used a different feather for this; the original was saved for later",
+        "This was actually the third burning"
+      ],
+      "answers_fa": [
+        "دومین سوزاندن — اولین بار وقتی سام بالا رفت تا زال را پس بگیرد",
+        "اولین سوزاندن — دومین و آخرین پیش از رویارویی با اسفندیار خواهد بود",
+        "زال برای این یک پرِ دیگر استفاده کرد؛ اصلی برای بعد نگه داشته شد",
+        "در واقع این سومین سوزاندن بود"
+      ],
+      "answers_tg": [
+        "Дуввумин сӯзондан — аввал вақте Сом боло рафт Золро баргардонад",
+        "Аввалин сӯзондан — дуввумин ва охирин пеш аз рӯёрӯйи бо Исфандиёр хоҳад буд",
+        "Зол барои ин пари дигаре истифода кард",
+        "Дар асл ин сеюмин сӯзондан буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "This was the first burning. The second and last burning would come much later, before the clash with Esfandiyar.",
+      "explanation_fa": "این اولین سوزاندن بود. دومین و آخرین سوزاندن بسیار بعدتر، پیش از رویارویی با اسفندیار خواهد آمد.",
+      "explanation_tg": "Ин аввалин сӯзондан буд. Дуввумин ва охирин сӯзондан хеле баъдтар, пеш аз рӯёрӯйи бо Исфандиёр хоҳад омад.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "bor-h5",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "What made Rakhsh specifically distinguishable from the other horses Rostam tested?",
+      "question_fa": "چه چیزی رخش را به‌طورِ مشخص از سایرِ اسب‌هایی که رستم آزمود متمایز می‌کرد؟",
+      "question_tg": "Чӣ чиз Рахшро мушаххасан аз дигар аспҳое ки Рустам озмуд фарқ мекард?",
+      "answers": [
+        "He was pure white, a sign of divine favour",
+        "He was the largest horse in the line",
+        "He was spotted and fierce and was the only horse that did not buckle under Rostam's hand",
+        "He came to Rostam of his own accord, rejecting the other riders"
+      ],
+      "answers_fa": [
+        "کاملاً سفید بود، نشانه‌ای از لطفِ الهی",
+        "بزرگ‌ترین اسب در صف بود",
+        "خال‌خال و وحشی بود و تنها اسبی بود که زیرِ دستِ رستم خم نشد",
+        "از خودش به رستم آمد و سایر سواران را رد کرد"
+      ],
+      "answers_tg": [
+        "Комилан сафед буд, нишонаи лутфи илоҳӣ",
+        "Бузургтарин асп дар саф буд",
+        "Хол-хол ва ваҳшӣ буд ва ягона аспе буд ки зери дасти Рустам хам нашуд",
+        "Аз худаш ба Рустам омад"
+      ],
+      "correct_answer": 2,
+      "explanation": "A spotted horse, Rakhsh, was at the end of the line. He was the only one who did not buckle. From that moment they were inseparable.",
+      "explanation_fa": "اسبِ خال‌خالی، رخش، در انتهای صف بود. تنها اسبی بود که خم نشد. از آن لحظه جدایی‌ناپذیر شدند.",
+      "explanation_tg": "Аспи хол-хол, Рахш, дар охири саф буд. Ягона аспе буд ки хам нашуд. Аз он лаҳза ҷудонашаванда шуданд.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "bor-h6",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The chapter says Rostam and Rakhsh were 'not rider and mount but two halves of a single force.' What does this mean?",
+      "question_fa": "فصل می‌گوید رستم و رخش «سوارکار و مرکب نبودند بلکه دو نیمه‌ی یک نیروی واحد.» این یعنی چه؟",
+      "question_tg": "Фасл мегӯяд Рустам ва Рахш «савораю маркаб набуданд балки ду нимаи як қуввати ягона.» Ин яъне чӣ?",
+      "answers": [
+        "They were magically bound and could not survive without each other",
+        "The chronicle treats Rakhsh as an extension of Rostam's agency — not a tool but a partner whose judgment and loyalty are part of the combined heroic capacity",
+        "Rakhsh could speak and command other horses",
+        "They shared a soul from the Simorgh"
+      ],
+      "answers_fa": [
+        "به طورِ جادویی مقید بودند و بدونِ هم نمی‌توانستند زنده بمانند",
+        "شاهنامه رخش را امتدادِ اراده‌ی رستم می‌داند — نه ابزار بلکه شریکی که قضاوت و وفاداری‌اش بخشی از ظرفیتِ قهرمانی مشترک است",
+        "رخش می‌توانست صحبت کند و اسب‌های دیگر را فرماندهی کند",
+        "روحی از سیمرغ را مشترک داشتند"
+      ],
+      "answers_tg": [
+        "Аз назари ҷодуӣ маҳкум буданд ва бе якдигар зинда намемонданд",
+        "Шоҳнома Рахшро идомаи иродаи Рустам медонад — на асбоб балки шарике ки қазоват ва вафодориаш қисмати қудрати қаҳрамонии муштарак аст",
+        "Рахш метавонист гап занад ва аспони дигарро фармоядиҳӣ кунад",
+        "Рӯҳеро аз Симурғ муштарак доштанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rakhsh acts with his own judgment throughout the chronicle — killing lions while Rostam sleeps, identifying Manijeh. He is partner, not vehicle.",
+      "explanation_fa": "رخش در سراسرِ شاهنامه با قضاوتِ خودش عمل می‌کند — در حالی که رستم می‌خوابد شیر می‌کشد، منیژه را شناسایی می‌کند. شریک است، نه وسیله‌ی نقلیه.",
+      "explanation_tg": "Рахш дар саросари Шоҳнома бо қазовати худаш амал мекунад — дар ҳоле ки Рустам мехобад шер мекушад, Манижаро шиносоӣ мекунад. Шарик аст, на воситаи нақлиёт.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "bor-h7",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The chapter describes Rostam's function using the phrase 'a pillar the world would lean against for five generations of kings.' Which quality does this pillar metaphor emphasize?",
+      "question_fa": "فصل کارکردِ رستم را با عبارتِ «ستونی که دنیا برای پنج نسل از شاهان به آن تکیه خواهد کرد» توصیف می‌کند. این استعاره‌ی ستون چه ویژگی‌ای را تأکید می‌کند؟",
+      "question_tg": "Фасл кордаи Рустамро бо ибораи «сутуне ки дунё барои панҷ насли подшоҳон ба он такя мекунад» тавсиф мекунад. Ин истиораи сутун кадом сифатро таъкид мекунад?",
+      "answers": [
+        "His physical strength and invulnerability",
+        "His structural role — he is what keeps the dynasty standing when the kings themselves are not sufficient",
+        "His royal lineage from Sam and Nariman",
+        "His loyalty to the Zoroastrian faith"
+      ],
+      "answers_fa": [
+        "قدرتِ جسمانی و آسیب‌ناپذیری‌اش",
+        "نقشِ ساختاری‌اش — اوست که سلسله را وقتی شاهان خودشان کافی نیستند سر پا نگه می‌دارد",
+        "نسبِ شاهانه‌اش از سام و نریمان",
+        "وفاداری‌اش به دینِ زرتشتی"
+      ],
+      "answers_tg": [
+        "Қудрати ҷисмонӣ ва таъсирнопазириаш",
+        "Нақши сохторӣ — ӯст ки сулоларо вақте подшоҳон худашон кофӣ нестанд барпо нигоҳ медорад",
+        "Насаби шоҳонааш аз Сом ва Наримон",
+        "Вафодориаш ба оини Зардуштӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "A pillar holds the structure when the walls are weak. Rostam holds Iran together through reigns of reckless and flawed kings.",
+      "explanation_fa": "ستون وقتی دیوارها ضعیفند سازه را نگه می‌دارد. رستم ایران را در دورانِ شاهانِ بی‌پروا و ناقص کنار هم نگه می‌دارد.",
+      "explanation_tg": "Сутун вақте деворҳо заиф ҳастанд сохторро нигоҳ медорад. Рустам Эронро дар даврони подшоҳони бепарво ва нокомил якҷо нигоҳ медорад.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "bor-h8",
+      "chapter_slug": "birth-of-rostam",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The chapter says 'across centuries' Rostam serves five kings. What does this phrase about Rostam's lifespan imply?",
+      "question_fa": "فصل می‌گوید رستم «در طولِ قرن‌ها» به پنج شاه خدمت می‌کند. این عبارت درباره‌ی عمرِ رستم چه چیزی را می‌رساند؟",
+      "question_tg": "Фасл мегӯяд Рустам «дар тӯли асрҳо» ба панҷ подшоҳ хидмат мекунад. Ин ибора дар бораи умри Рустам чӣ маъно дорад?",
+      "answers": [
+        "He ruled as a king himself between the five reigns",
+        "He had magical longevity far beyond ordinary human lifespan",
+        "The five kings each reigned very briefly",
+        "'Centuries' is loose language for a long but normal lifetime"
+      ],
+      "answers_fa": [
+        "بین پنج سلطنت خودش به عنوانِ شاه حکومت کرد",
+        "عمرِ جادوییِ بسیار فراتر از طولِ عمرِ معمولِ انسانی داشت",
+        "پنج شاه هر کدام بسیار کوتاه حکومت کردند",
+        "«قرن‌ها» زبانِ شلِ برای یک عمرِ طولانی ولی عادی است"
+      ],
+      "answers_tg": [
+        "Дар байни панҷ салтанат худаш ҳамчун подшоҳ ҳукумат кард",
+        "Умри ҷодуие хеле аз умри одии инсонӣ зиёдтар дошт",
+        "Панҷ подшоҳ ҳар кадом хеле кутоҳ ҳукумат карданд",
+        "«Асрҳо» забони сусте барои умри дароз аммо одӣ аст"
+      ],
+      "correct_answer": 1,
+      "explanation": "The chapter states this as fact: Rostam's longevity is one of the chronicle's supernatural elements — he serves the full arc of the Kayanian dynasty.",
+      "explanation_fa": "فصل این را به عنوانِ واقعیت بیان می‌کند: طولِ عمرِ رستم یکی از عناصرِ ماورایی شاهنامه است — او تمامِ قوسِ سلسله‌ی کیانی را خدمت می‌کند.",
+      "explanation_tg": "Фасл инро ҳамчун воқеият баён мекунад: умри дарозии Рустам яке аз унсурҳои маворойии Шоҳнома аст.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

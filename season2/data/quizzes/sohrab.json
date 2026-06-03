@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "sohrab-1",
+      "chapter_slug": "sohrab",
+      "quiz_part": 1,
+      "question": "Who is Sohrab's father?",
+      "answers": [
+        "Zal",
+        "Rostam",
+        "Esfandiyar",
+        "Fereydun"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam, who never knew his son was born.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      },
+      "difficulty": "easy",
+      "question_fa": "پدر سهراب کیست؟",
+      "question_tg": "Падари Суҳроб кист?",
+      "answers_fa": [
+        "زال",
+        "رستم",
+        "اسفندیار",
+        "فریدون"
+      ],
+      "answers_tg": [
+        "Зол",
+        "Рустам",
+        "Исфандиёр",
+        "Фаридун"
+      ],
+      "explanation_fa": "رستم که نمی‌دانست پسرش به دنیا آمده.",
+      "explanation_tg": "Рустам, ки намедонист писараш таваллуд шудааст."
+    },
+    {
+      "id": "sohrab-2",
+      "chapter_slug": "sohrab",
+      "quiz_part": 2,
+      "question": "Who is Sohrab's mother?",
+      "answers": [
+        "Rudabeh",
+        "Manijeh",
+        "Tahmineh",
+        "Gordafarid"
+      ],
+      "correct_answer": 2,
+      "explanation": "Tahmineh, princess of Samangan.",
+      "reward": {
+        "xp": 190,
+        "real": 85
+      },
+      "difficulty": "easy",
+      "question_fa": "مادر سهراب کیست؟",
+      "question_tg": "Модари Суҳроб кист?",
+      "answers_fa": [
+        "رودابه",
+        "منیژه",
+        "تهمینه",
+        "گردآفرید"
+      ],
+      "answers_tg": [
+        "Рӯдоба",
+        "Манижа",
+        "Таҳминӣ",
+        "Гурдофарид"
+      ],
+      "explanation_fa": "تهمینه، شاهدخت سمنگان.",
+      "explanation_tg": "Таҳминӣ, шаҳдухти Самангон."
+    },
+    {
+      "id": "sohrab-3",
+      "chapter_slug": "sohrab",
+      "quiz_part": 3,
+      "question": "What proof of identity does Sohrab carry?",
+      "answers": [
+        "A crown",
+        "A signet ring",
+        "A scroll",
+        "A bracelet"
+      ],
+      "correct_answer": 3,
+      "explanation": "A bracelet given by Rostam to Tahmineh.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      },
+      "difficulty": "medium",
+      "question_fa": "سهراب چه مدرک هویتی با خود دارد؟",
+      "question_tg": "Суҳроб чӣ далели ҳуввияте бо худ дорад?",
+      "answers_fa": [
+        "تاجی",
+        "انگشتر مُهری",
+        "طوماری",
+        "دستبندی"
+      ],
+      "answers_tg": [
+        "Тоҷе",
+        "Ангуштари муҳрӣ",
+        "Думботе",
+        "Дастпонае"
+      ],
+      "explanation_fa": "دستبندی که رستم به تهمینه داده بود.",
+      "explanation_tg": "Дастпонаее, ки Рустам ба Таҳминӣ дода буд."
+    },
+    {
+      "id": "sohrab-4",
+      "chapter_slug": "sohrab",
+      "quiz_part": 4,
+      "question": "On whose side does Sohrab ride into Iran?",
+      "answers": [
+        "Turan",
+        "Iran",
+        "Mazandaran",
+        "Hindustan"
+      ],
+      "correct_answer": 0,
+      "explanation": "He leads Turan's army searching for his father.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      },
+      "difficulty": "medium",
+      "question_fa": "سهراب در سپاه چه کسی به ایران تاخت؟",
+      "question_tg": "Суҳроб дар сипоҳи кӣ ба Эрон ҳуҷум кард?",
+      "answers_fa": [
+        "توران",
+        "ایران",
+        "مازندران",
+        "هندوستان"
+      ],
+      "answers_tg": [
+        "Турон",
+        "Эрон",
+        "Мозандарон",
+        "Ҳиндустон"
+      ],
+      "explanation_fa": "او ارتش توران را به دنبال پدرش هدایت کرد.",
+      "explanation_tg": "Ӯ артиши Туронро дар ҷустуҷӯи падараш роҳбарӣ кард."
+    },
+    {
+      "id": "sohrab-5",
+      "chapter_slug": "sohrab",
+      "quiz_part": 5,
+      "question": "Who falls in their final duel?",
+      "answers": [
+        "Rostam",
+        "Sohrab",
+        "Both",
+        "Neither"
+      ],
+      "correct_answer": 1,
+      "explanation": "Sohrab — the bracelet revealed too late.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      },
+      "difficulty": "hard",
+      "question_fa": "در دوئل نهایی آن‌ها چه کسی افتاد؟",
+      "question_tg": "Дар дуэли ниҳоии онҳо кӣ уфтод?",
+      "answers_fa": [
+        "رستم",
+        "سهراب",
+        "هر دو",
+        "هیچ‌کدام"
+      ],
+      "answers_tg": [
+        "Рустам",
+        "Суҳроб",
+        "Ҳарду",
+        "Ҳеч кадоме"
+      ],
+      "explanation_fa": "سهراب — دستبند خیلی دیر شناخته شد.",
+      "explanation_tg": "Суҳроб — дастпона хеле дер шинохта шуд."
+    },
+    {
+      "id": "sohrab-e3",
+      "chapter_slug": "sohrab",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What object did Rostam give Tahmineh before leaving Samangan?",
+      "question_fa": "رستم پیش از ترکِ سمنگان به تهمینه چه چیزی داد؟",
+      "question_tg": "Рустам пеш аз тарки Самангон ба Таҳмина чӣ дод?",
+      "answers": [
+        "A lock of his hair",
+        "His warrior's seal ring",
+        "His arm bracelet",
+        "A piece of Rakhsh's mane"
+      ],
+      "answers_fa": [
+        "تاری از موهایش",
+        "مهرِ جنگجویانه‌اش",
+        "بازوبندش",
+        "تکه‌ای از یالِ رخش"
+      ],
+      "answers_tg": [
+        "Торе аз мӯяш",
+        "Муҳри ҷангиаш",
+        "Базӯбандаш",
+        "Тикае аз ёли Рахш"
+      ],
+      "correct_answer": 2,
+      "explanation": "'If a daughter, put it in her hair. If a son, bind it to his arm.' The bracelet was the proof that identified Sohrab on the battlefield.",
+      "explanation_fa": "«اگر دختر است، در موهایش بگذار. اگر پسر است، به بازویش ببند.» بازوبند مدرکی بود که سهراب را در میدان شناسایی کرد.",
+      "explanation_tg": "«Агар духтар бошад, дар мӯяш гузор. Агар писар бошад, ба бозӯяш банд.» Базӯбанд мадраке буд ки Суҳробро дар майдон шиносоӣ кард.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "sohrab-m3",
+      "chapter_slug": "sohrab",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "At what age did Sohrab ask his mother who his father was?",
+      "question_fa": "سهراب در چه سنی از مادرش پرسید پدرش کیست؟",
+      "question_tg": "Суҳроб дар кадом синн аз модараш пурсид падараш кист?",
+      "answers": [
+        "Seven",
+        "Ten",
+        "Twelve",
+        "Fifteen"
+      ],
+      "answers_fa": [
+        "هفت",
+        "ده",
+        "دوازده",
+        "پانزده"
+      ],
+      "answers_tg": [
+        "Ҳафт",
+        "Даҳ",
+        "Дувоздаҳ",
+        "Понздаҳ"
+      ],
+      "correct_answer": 2,
+      "explanation": "Sohrab was born and grew at three times the normal rate. At twelve he asked his mother who his father was. She told him.",
+      "explanation_fa": "سهراب با سرعتِ سه برابرِ معمول رشد کرد. در دوازده سالگی از مادرش پرسید پدرش کیست. مادرش گفت.",
+      "explanation_tg": "Суҳроб ба суръати се баробари муқаррарӣ калон шуд. Дар дувоздаҳ солагӣ аз модараш пурсид падараш кист. Модараш гуфт.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "sohrab-m4",
+      "chapter_slug": "sohrab",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Why did Rostam fight Sohrab in disguise on their first day of combat?",
+      "question_fa": "چرا رستم در روزِ اولِ مبارزه با سهراب در لباسِ مبدل جنگید؟",
+      "question_tg": "Чаро Рустам дар рӯзи аввали мубориза бо Суҳроб дар либоси мубаддал ҷангид?",
+      "answers": [
+        "He was under orders from Kay Kavus to conceal his identity",
+        "He had heard of Sohrab's terrifying reputation and chose not to reveal himself",
+        "He did not yet know Sohrab was his son",
+        "He was testing Sohrab's skill before revealing himself"
+      ],
+      "answers_fa": [
+        "طبقِ دستوراتِ کی‌کاووس مجبور به پنهان کردنِ هویتش بود",
+        "از شهرتِ ترسناکِ سهراب شنیده بود و تصمیم گرفت هویتش را فاش نکند",
+        "هنوز نمی‌دانست که سهراب پسرش است",
+        "قبل از فاش کردنِ هویت، مهارتِ سهراب را می‌آزمود"
+      ],
+      "answers_tg": [
+        "Тибқи дастурҳои Кай Ковус маҷбур буд ҳувияташро пинҳон кунад",
+        "Аз шӯҳрати тарсноки Суҳроб шунида буд ва тасмим гирифт ҳувиятро фош накунад",
+        "Ҳанӯз намедонист Суҳроб писараш аст",
+        "Пеш аз фош кардани ҳувият маҳорати Суҳробро меозмуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam 'had heard of this terrifying young warrior and chose not to reveal who he was.' He came out in disguise.",
+      "explanation_fa": "رستم «از این جنگجوی ترسناکِ جوان شنیده بود و تصمیم گرفت فاش نکند که کیست.» در لباسِ مبدل ظاهر شد.",
+      "explanation_tg": "Рустам «аз ин ҷангии тарсноки ҷавон шунида буд ва тасмим гирифт фош накунад ки кист.» Дар либоси мубаддал зоҳир шуд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "sohrab-m5",
+      "chapter_slug": "sohrab",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What was Sohrab's plan for his campaign against Iran?",
+      "question_fa": "نقشه‌ی سهراب برای لشکرکشی‌اش علیهِ ایران چه بود؟",
+      "question_tg": "Нақшаи Суҳроб барои лашкаркашиаш бар зидди Эрон чӣ буд?",
+      "answers": [
+        "To avenge his mother Tahmineh's exile",
+        "To find Rostam and together overthrow Kay Kavus and Afrasiab and rule father-and-son",
+        "To prove himself the greatest warrior and be acclaimed as king",
+        "To conquer Sistan for Turan"
+      ],
+      "answers_fa": [
+        "به خاطرِ تبعیدِ مادرش تهمینه انتقام بگیرد",
+        "رستم را پیدا کند و با هم کی‌کاووس و افراسیاب را سرنگون کنند و پدر-پسر حکومت کنند",
+        "خود را برترین جنگجو اثبات کند و به عنوانِ شاه به رسمیت شناخته شود",
+        "سیستان را برای توران فتح کند"
+      ],
+      "answers_tg": [
+        "Ба хотири табъиди модараш Таҳмина интиқом гирад",
+        "Рустамро ёбад ва бо ҳам Кай Ковус ва Афросиёбро сарнагун кунанд ва падар-писар ҳукумат кунанд",
+        "Худро беҳтарин ҷангӣ исбот кунад",
+        "Систонро барои Турон фатҳ кунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "He decided on the spot: find Rostam, together overthrow Kay Kavus and Afrasiab, rule father-and-son. He was twelve and meant every word.",
+      "explanation_fa": "همان جا تصمیم گرفت: رستم را پیدا کند، با هم کی‌کاووس و افراسیاب را سرنگون کنند، پدر-پسر حکومت کنند. دوازده ساله بود و منظورش را داشت.",
+      "explanation_tg": "Ҳамон ҷо тасмим гирифт: Рустамро ёбад, бо ҳам Кай Ковус ва Афросиёбро сарнагун кунанд, падар-писар ҳукумат кунанд. Дувоздаҳ сола буд ва ба ҳар суханаш ҷиддӣ буд.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "sohrab-h2",
+      "chapter_slug": "sohrab",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "On the first day of combat, Sohrab had Rostam pinned to the ground. What did he do, and why did Rostam survive?",
+      "question_fa": "در روزِ اولِ مبارزه، سهراب رستم را زیرِ خود سنجاق کرده بود. چه کرد، و رستم چگونه زنده ماند؟",
+      "question_tg": "Дар рӯзи аввали мубориза, Суҳроб Рустамро зери худаш сунҷоқ карда буд. Чӣ кард, ва Рустам чӣ тавр зинда монд?",
+      "answers": [
+        "Sohrab recognized the bracelet and stopped",
+        "Sohrab asked his name — Rostam lied — and let him live because of an unnameable recognition",
+        "Rakhsh intervened and drove Sohrab back",
+        "Kay Kavus's archers distracted Sohrab"
+      ],
+      "answers_fa": [
+        "سهراب بازوبند را شناخت و متوقف شد",
+        "سهراب نامش را پرسید — رستم دروغ گفت — و به خاطرِ شناختِ بی‌نامی او را زنده گذاشت",
+        "رخش دخالت کرد و سهراب را پس راند",
+        "تیراندازانِ کی‌کاووس حواسِ سهراب را پرت کردند"
+      ],
+      "answers_tg": [
+        "Суҳроб базӯбандро шинохт ва истод",
+        "Суҳроб номашро пурсид — Рустам дурӯғ гуфт — ва ба хотири шиносии бесарнавиш зинда монд",
+        "Рахш дахолат кард ва Суҳробро паси андохт",
+        "Тирандозони Кай Ковус зеҳни Суҳробро парт карданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Sohrab pinned Rostam, asked his name, Rostam lied, and Sohrab let him live — 'there was something in the old man he recognized without being able to name.'",
+      "explanation_fa": "سهراب رستم را سنجاق کرد، نامش را پرسید، رستم دروغ گفت، و سهراب او را زنده گذاشت — «چیزی در این مردِ پیر بود که شناخت بدونِ اینکه بتواند نامش ببرد.»",
+      "explanation_tg": "Суҳроб Рустамро сунҷоқ кард, номашро пурсид, Рустам дурӯғ гуфт, ва Суҳроб ӯро зинда монд — «чизе дар ин марди пир буд ки шинохт бидуни он ки тавонад номашро барад.»",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "sohrab-h3",
+      "chapter_slug": "sohrab",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "What words did Sohrab speak from the ground after being mortally wounded, and what did they trigger?",
+      "question_fa": "سهراب در حالی که کشنده زخم خورده بود از زمین چه گفت، و چه چیزی را برانگیخت؟",
+      "question_tg": "Суҳроб дар ҳоле ки марговар захм хӯрда буд аз замин чӣ гуфт, ва чӣ чизро ба вуҷуд овард?",
+      "answers": [
+        "He named Rostam as his killer and demanded blood vengeance",
+        "He said 'My father Rostam will find you and destroy you' — triggering Rostam's terrible recognition",
+        "He forgave Rostam immediately and asked to see the bracelet",
+        "He called out for Tahmineh"
+      ],
+      "answers_fa": [
+        "رستم را به عنوانِ قاتلش نام برد و انتقامِ خون طلبید",
+        "گفت «پدرم رستم تو را پیدا خواهد کرد و نابود خواهد کرد» — که شناختِ وحشتناکِ رستم را برانگیخت",
+        "بلافاصله رستم را بخشید و خواست بازوبند را ببیند",
+        "نامِ تهمینه را صدا زد"
+      ],
+      "answers_tg": [
+        "Рустамро ҳамчун қотилаш ном бурд ва хунхоҳӣ кард",
+        "Гуфт «Падарам Рустам туро меёбад ва нобуд мекунад» — ки шиносии даҳшатбори Рустамро ба вуҷуд овард",
+        "Фавран Рустамро бахшид ва хост базӯбандро бинад",
+        "Номи Таҳминаро садо зад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'Rostam's heart understood before his mind did. He asked to see the arm. The bracelet was there. He had killed his son.'",
+      "explanation_fa": "«قلبِ رستم پیش از ذهنش فهمید. خواست بازو را ببیند. بازوبند آنجا بود. پسرش را کشته بود.»",
+      "explanation_tg": "«Қалби Рустам пеш аз зеҳнаш фаҳмид. Хост бозӯро бинад. Базӯбанд он ҷо буд. Писарашро куштааст.»",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "sohrab-h4",
+      "chapter_slug": "sohrab",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Why did Kay Kavus refuse to give Rostam the medicine that could have saved Sohrab?",
+      "question_fa": "چرا کی‌کاووس از دادنِ داروی نجات‌بخشِ سهراب به رستم خودداری کرد؟",
+      "question_tg": "Чаро Кай Ковус аз додани доруи наҷотбахш ба Рустам барои Суҳроб худдорӣ кард?",
+      "answers": [
+        "He did not believe the bracelet proved Sohrab was truly Rostam's son",
+        "A warrior as powerful as Sohrab, healed, would unbalance the kingdom's politics",
+        "He had already given the medicine away to another warrior",
+        "He believed the gods had willed Sohrab's death"
+      ],
+      "answers_fa": [
+        "باور نمی‌کرد که بازوبند ثابت می‌کند سهراب واقعاً پسرِ رستم است",
+        "جنگجوی به قدرتمندیِ سهراب، شفا یافته، توازنِ سیاسی قلمرو را به هم می‌زد",
+        "داروی خود را قبلاً به جنگجوی دیگری داده بود",
+        "اعتقاد داشت خدایان مرگِ سهراب را خواسته‌اند"
+      ],
+      "answers_tg": [
+        "Бовар намекард ки базӯбанд исбот мекунад Суҳроб воқеан писари Рустам аст",
+        "Ҷангии ба қудрати Суҳроб, шифоёфта, тавозуни сиёсии қаламравро ба ҳам мезад",
+        "Доруи худро қаблан ба ҷангии дигаре дода буд",
+        "Эътиқод дошт худоён маргро Суҳроб хостаанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Kay Kavus 'performed his calculation: a warrior as powerful as Sohrab, healed, would unbalance the kingdom.' He refused. Sohrab died.",
+      "explanation_fa": "کی‌کاووس «حسابش را کرد: جنگجوی به قدرتمندیِ سهراب، شفا یافته، پادشاهی را از تعادل خارج می‌کرد.» رد کرد. سهراب مُرد.",
+      "explanation_tg": "Кай Ковус «ҳисобашро кард: ҷангии ба қудрати Суҳроб, шифоёфта, подшоҳиро аз мувозинат берун мекард.» Рад кард. Суҳроб мурд.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "sohrab-h5",
+      "chapter_slug": "sohrab",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The chapter describes Rostam begging Kay Kavus for the medicine as unique. What makes it unique in the entire chronicle?",
+      "question_fa": "فصل توصیف می‌کند که التماسِ رستم به کی‌کاووس برای دارو منحصربه‌فرد است. چه چیزی آن را در تمامِ شاهنامه منحصربه‌فرد می‌کند؟",
+      "question_tg": "Фасл тавсиф мекунад ки илтимоси Рустам ба Кай Ковус барои даво беназир аст. Чӣ чиз онро дар тамоми Шоҳнома беназир мекунад?",
+      "answers": [
+        "It was the first time Rostam asked for anything from a king",
+        "Rostam came on his knees, begging — the first and only time in the entire chronicle that Rostam has begged",
+        "It was the first time Rostam admitted he could not solve a problem",
+        "Rostam wept publicly, which he had never done before"
+      ],
+      "answers_fa": [
+        "اولین باری بود که رستم چیزی از شاهی خواست",
+        "رستم زانو زد و التماس کرد — اولین و تنها باری در تمامِ شاهنامه که رستم التماس کرده",
+        "اولین باری بود که رستم اعتراف کرد نمی‌تواند مشکلی را حل کند",
+        "رستم به صورتِ عمومی گریست که قبلاً هرگز نکرده بود"
+      ],
+      "answers_tg": [
+        "Аввалин бор буд ки Рустам чизе аз подшоҳе хост",
+        "Рустам зону зад ва илтимос кард — аввалин ва ягона бор дар тамоми Шоҳнома ки Рустам илтимос кардааст",
+        "Аввалин бор буд ки Рустам иқрор кард наметавонад мушкиле ҳал кунад",
+        "Рустам дар назди омма гирист ки пеш аз ин ҳаргиз накарда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The chapter is explicit: 'Rostam came on his knees, begging, for the first and only time in the chronicle.' Kay Kavus refused anyway.",
+      "explanation_fa": "فصل صریح است: «رستم زانو زد و التماس کرد، برای اولین و تنها باری در شاهنامه.» کی‌کاووس باز هم رد کرد.",
+      "explanation_tg": "Фасл равшан аст: «Рустам зону зад ва илтимос кард, барои аввалин ва ягона бор дар Шоҳнома.» Кай Ковус боз ҳам рад кард.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "sohrab-h6",
+      "chapter_slug": "sohrab",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The chapter says Sohrab died 'between the two armies.' What does this staging communicate?",
+      "question_fa": "فصل می‌گوید سهراب «در میانِ دو لشکر» مُرد. این صحنه‌آرایی چه چیزی را می‌رساند؟",
+      "question_tg": "Фасл мегӯяд Суҳроб «дар миёни ду лашкар» мурд. Ин саҳнаоройӣ чӣ чиз мерасонад?",
+      "answers": [
+        "It was the safest location between the combat zones",
+        "The grief had no audience that could respond to it — neither army could fix what had happened",
+        "It symbolizes that both sides were equally guilty",
+        "The location allowed a truce to be declared over his body"
+      ],
+      "answers_fa": [
+        "امن‌ترین مکان بین منطقه‌های جنگی بود",
+        "اندوه هیچ مخاطبی نداشت که بتواند به آن پاسخ دهد — هیچ‌کدام از لشکرها نمی‌توانستند آنچه اتفاق افتاده را درست کنند",
+        "نماد این است که هر دو طرف به یک اندازه مقصر بودند",
+        "مکان اجازه می‌داد که آتش‌بسی بر سرِ جسدش اعلام شود"
+      ],
+      "answers_tg": [
+        "Амнтарин макон байни минтақаҳои ҷангӣ буд",
+        "Ғам ҳеҷ мухотабе надошт ки ба он посух диҳад — ҳеҷ лашкаре наметавонист он чи рӯй дода буд ро дуруст кунад",
+        "Рамзи ин аст ки ҳарду тараф ба яксон гунаҳкор буданд",
+        "Макон иҷозат медод ки оташбасе бар сари ҷасадаш эълон шавад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Placed at the margin — between armies that cannot help, at sunset — the staging emphasizes the total absence of possible remedy.",
+      "explanation_fa": "در حاشیه قرار گرفته — میانِ لشکرهایی که نمی‌توانند کمک کنند، در غروبِ خورشید — صحنه‌آرایی عدمِ کاملِ امکانِ چاره را تأکید می‌کند.",
+      "explanation_tg": "Дар канор ҷойгир шуда — миёни лашкарҳое ки наметавонанд кӯмак кунанд, дар ғуруби офтоб — саҳнаоройӣ фиқдони комили имкони чора мекунад.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "sohrab-h7",
+      "chapter_slug": "sohrab",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The chapter's closing statement says the Shahnameh 'continues — because the chronicle has never stopped for grief before.' What does this tell us about the Shahnameh's method?",
+      "question_fa": "جمله‌ی پایانیِ فصل می‌گوید شاهنامه «ادامه می‌دهد — چون شاهنامه هرگز پیش از این برای اندوه متوقف نشده بود.» این درباره‌ی روشِ شاهنامه چه می‌گوید؟",
+      "question_tg": "Ҷумлаи охири фасл мегӯяд Шоҳнома «идома медиҳад — чун Шоҳнома ҳаргиз пеш аз ин барои ғам нагусаштааст.» Ин дар бораи усули Шоҳнома чӣ мегӯяд?",
+      "answers": [
+        "Ferdowsi was too busy to dwell on single deaths",
+        "The chronicle records tragedy without allowing it to stop the record — grief is part of the pattern, not a rupture in it",
+        "Ferdowsi disapproved of excessive public mourning",
+        "Each death accelerates the pace of the narrative"
+      ],
+      "answers_fa": [
+        "فردوسی خیلی مشغول بود که بر مرگ‌های منفرد مکث کند",
+        "شاهنامه تراژدی را بدونِ اینکه اجازه دهد روایت را متوقف کند ثبت می‌کند — اندوه بخشی از الگو است، نه شکستی در آن",
+        "فردوسی عزاداریِ عمومیِ مفرط را نمی‌پسندید",
+        "هر مرگی سرعتِ روایت را تسریع می‌کند"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ хеле машғул буд ки бар марги алоҳида дранг кунад",
+        "Шоҳнома фоҷиаро бидуни он ки иҷозат диҳад ривоятро нагусарад сабт мекунад — ғам қисмати намуна аст, на шикаст дар он",
+        "Фирдавсӣ азодории умумии муболлиғонаро напазируфт",
+        "Ҳар марг суръати ривоятро тасриъ мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "'The Shahnameh does not soften this. It records it exactly as it happened and then continues — because the chronicle has never stopped for grief before, and it will not stop now.'",
+      "explanation_fa": "«شاهنامه این را نرم نمی‌کند. دقیقاً همانطور که اتفاق افتاده ثبت می‌کند و ادامه می‌دهد — چون شاهنامه هرگز پیش از این برای اندوه متوقف نشده، و حالا هم متوقف نمی‌شود.»",
+      "explanation_tg": "«Шоҳнома инро нарм намекунад. Дақиқан ҳамон тавре ки рӯй дод сабт мекунад ва идома медиҳад — чун Шоҳнома ҳаргиз пеш аз ин барои ғам нагусаштааст, ва ҳоло ҳам нагусашт.»",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "sohrab-h8",
+      "chapter_slug": "sohrab",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Sohrab's plan was to rule Iran and Turan 'father-and-son' with Rostam. Why is this plan tragic rather than simply naive?",
+      "question_fa": "نقشه‌ی سهراب این بود که با رستم «پدر-پسر» بر ایران و توران حکمرانی کنند. چرا این نقشه تراژیک است نه صرفاً ساده‌لوحانه؟",
+      "question_tg": "Нақшаи Суҳроб ин буд ки бо Рустам «падар-писар» бар Эрон ва Турон ҳукмронӣ кунанд. Чаро ин нақша фоҷиавӣ аст на танҳо содадилона?",
+      "answers": [
+        "Because Iran and Turan could never be ruled jointly",
+        "Because it could have worked — Rostam had the capacity for exactly this kind of loyalty — but the two were placed on opposite sides before they could recognize each other",
+        "Because Sohrab was too young to rule",
+        "Because Rostam already knew Sohrab was his son and chose power over family"
+      ],
+      "answers_fa": [
+        "چون ایران و توران هرگز نمی‌توانستند مشترکاً اداره شوند",
+        "چون می‌توانست نتیجه دهد — رستم دقیقاً ظرفیتِ این نوع وفاداری را داشت — اما قبل از اینکه بتوانند یکدیگر را بشناسند در طرف‌های مخالف قرار گرفتند",
+        "چون سهراب برای حکومت خیلی جوان بود",
+        "چون رستم از پیش می‌دانست سهراب پسرش است و قدرت را بر خانواده ترجیح داد"
+      ],
+      "answers_tg": [
+        "Зеро Эрон ва Турон ҳаргиз ба таври муштарак идора шуда наметавонистанд",
+        "Зеро метавонист натиҷа диҳад — Рустам дақиқан зарфияти ин навъи вафодориро дошт — аммо пеш аз он ки якдигарро шиносанд, дар тарафҳои мухолиф ҷойгир шуданд",
+        "Зеро Суҳроб барои ҳукумат хеле ҷавон буд",
+        "Зеро Рустам аз пеш медонист Суҳроб писараш аст ва қудратро бар оила тарҷеҳ дод"
+      ],
+      "correct_answer": 1,
+      "explanation": "The plan was not impossible — it had structural logic. The tragedy is that the structure of the war prevented them from being father and son before being opponents.",
+      "explanation_fa": "نقشه غیرممکن نبود — منطقِ ساختاری داشت. تراژدی این است که ساختارِ جنگ مانع شد که قبل از اینکه حریف باشند، پدر و پسر باشند.",
+      "explanation_tg": "Нақша ғайриимкон набуд — мантиқи сохторӣ дошт. Фоҷиа ин аст ки сохтори ҷанг монеъ шуд ки пеш аз рақиб будан, падар ва писар бошанд.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

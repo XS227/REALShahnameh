@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "keyumars-p1",
+      "chapter_slug": "keyumars",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What is the very first thing Ferdowsi praises at the opening of the Shahnameh?",
+      "question_fa": "نخستین چیزی که فردوسی در آغازِ شاهنامه می‌ستاید چیست؟",
+      "question_tg": "Аввалин чизе ки Фирдавсӣ дар оғози Шоҳнома мемӯяд чист?",
+      "answers": [
+        "A great king of Pars",
+        "The mountain of Damavand",
+        "The sacred fire",
+        "God of Soul and Wisdom"
+      ],
+      "answers_fa": [
+        "شاهِ بزرگِ پارس",
+        "کوهِ دماوند",
+        "آتشِ مقدس",
+        "خداوندِ جان و خرد"
+      ],
+      "answers_tg": [
+        "Шоҳи бузурги Порс",
+        "Кӯҳи Дамованд",
+        "Оташи муқаддас",
+        "Худованди ҷон ва хирад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh opens 'به نام خداوند جان و خرد' — In the name of God of Soul and Wisdom. Before any king or battle, Ferdowsi places God, soul, and reason first.",
+      "explanation_fa": "شاهنامه با «به نامِ خداوندِ جان و خرد» آغاز می‌شود. فردوسی پیش از هر شاه و نبردی، خداوند، جان و خرد را در اولویت قرار می‌دهد.",
+      "explanation_tg": "Шоҳнома бо «Ба номи Худованди ҷон ва хирад» оғоз мешавад. Пеш аз ҳар шоҳ ва набард, Фирдавсӣ Худо, ҷон ва хирадро дар авлавият мегузорад.",
+      "reward": {
+        "xp": 60,
+        "real": 20
+      }
+    },
+    {
+      "id": "keyumars-p2",
+      "chapter_slug": "keyumars",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What does 'Kherad' (خرد) mean in Ferdowsi's opening verse?",
+      "question_fa": "«خرد» در بیتِ آغازینِ فردوسی چه معنایی دارد؟",
+      "question_tg": "«Хирад» дар байти оғозинии Фирдавсӣ чӣ маъно дорад?",
+      "answers": [
+        "Wisdom / intellect",
+        "Sacred fire",
+        "Royal honor",
+        "Divine light"
+      ],
+      "answers_fa": [
+        "خرد / عقل",
+        "آتشِ مقدس",
+        "شرفِ شاهانه",
+        "نورِ الهی"
+      ],
+      "answers_tg": [
+        "Хирад / ақл",
+        "Оташи муқаддас",
+        "Шарафи шоҳона",
+        "Нури илоҳӣ"
+      ],
+      "correct_answer": 0,
+      "explanation": "Kherad means wisdom or intellect — the faculty Ferdowsi prizes above all others. He calls it the true crown of humanity, superior to wealth, rank, or physical strength.",
+      "explanation_fa": "خرد یعنی حکمت یا عقل — همان صفتی که فردوسی بر همه چیز ترجیح می‌دهد. آن را تاجِ واقعیِ بشریت می‌نامد که برتر از ثروت، مقام و قدرتِ جسمانی است.",
+      "explanation_tg": "Хирад яъне ҳикмат ё ақл — ҳамон сифате ки Фирдавсӣ онро аз ҳама чиз бартар медонад. Онро тоҷи воқеии башарият меномад, ки аз сарват, мақом ва қудрати ҷисмонӣ бартар аст.",
+      "reward": {
+        "xp": 70,
+        "real": 25
+      }
+    },
+    {
+      "id": "keyumars-p3",
+      "chapter_slug": "keyumars",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "According to the Shahnameh's cosmology, what was separated at the moment of Creation?",
+      "question_fa": "بر اساسِ کیهان‌شناسیِ شاهنامه، در لحظه‌ی آفرینش چه چیزی جدا شد؟",
+      "question_tg": "Тибқи космологияи Шоҳнома, дар лаҳзаи офариниш чӣ ҷудо шуд?",
+      "answers": [
+        "Gold from iron",
+        "Light from darkness",
+        "Water from stone",
+        "Man from beast"
+      ],
+      "answers_fa": [
+        "زر از آهن",
+        "روشنایی از تاریکی",
+        "آب از سنگ",
+        "انسان از حیوان"
+      ],
+      "answers_tg": [
+        "Тилло аз оҳан",
+        "Рӯшноӣ аз торикӣ",
+        "Об аз санг",
+        "Инсон аз ҳайвон"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh describes the primordial separation of light and darkness as the foundation of all creation — the first act through which the world took on shape and meaning.",
+      "explanation_fa": "شاهنامه جداشدنِ ازلیِ روشنایی از تاریکی را بنیانِ همه‌ی آفرینش توصیف می‌کند — نخستین عملی که جهان از آن شکل و معنا گرفت.",
+      "explanation_tg": "Шоҳнома ҷудошавии азалии рӯшноӣ аз торикиро бунёди ҳамаи офариниш тавсиф мекунад — аввалин амале, ки ҷаҳон аз он шакл ва маъно гирифт.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "keyumars-3",
+      "chapter_slug": "keyumars",
+      "quiz_part": 1,
+      "question": "How long does Keyumars mourn his son?",
+      "answers": [
+        "Three days",
+        "Thirty days",
+        "Seven days",
+        "A whole year"
+      ],
+      "correct_answer": 1,
+      "explanation": "Keyumars mourned thirty days for Siyamak.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      },
+      "difficulty": "medium",
+      "question_fa": "کیومرث چه مدت برای پسرش عزاداری کرد؟",
+      "question_tg": "Каюмарс барои писараш чанд рӯз аза гирифт?",
+      "answers_fa": [
+        "سه روز",
+        "سی روز",
+        "هفت روز",
+        "یک سال تمام"
+      ],
+      "answers_tg": [
+        "Се рӯз",
+        "Си рӯз",
+        "Ҳафт рӯз",
+        "Як соли тамом"
+      ],
+      "explanation_fa": "کیومرث سی روز برای سیامک عزاداری کرد.",
+      "explanation_tg": "Каюмарс барои Сиёмак си рӯз аза гирифт."
+    },
+    {
+      "id": "keyumars-m2",
+      "chapter_slug": "keyumars",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "Who sends the Black Div to destroy Siamak?",
+      "question_fa": "چه کسی دیوِ سیاه را برای کشتنِ سیامک می‌فرستد؟",
+      "question_tg": "Кӣ Деви сиёҳро барои нобуд кардани Сиёмак мефиристад?",
+      "answers": [
+        "A rival chieftain",
+        "Ahriman",
+        "The demons of the forest",
+        "Keyumars' jealous brother"
+      ],
+      "answers_fa": [
+        "رقیبی قبیله‌ای",
+        "اهریمن",
+        "دیوانِ جنگل",
+        "برادرِ حسودِ کیومرث"
+      ],
+      "answers_tg": [
+        "Рақиби қабилавӣ",
+        "Аҳриман",
+        "Девони ҷангал",
+        "Бародари ҳасудии Каюмарс"
+      ],
+      "correct_answer": 1,
+      "explanation": "Ahriman — lord of the dark — sees the firelight on the mountain and sends his Black Div down to break the first dawn.",
+      "explanation_fa": "اهریمن — سرورِ تاریکی — روشنیِ آتش را بر کوه می‌بیند و دیوِ سیاهش را می‌فرستد تا سپیده‌دمِ نخست را بشکند.",
+      "explanation_tg": "Аҳриман — Парвардигори торикӣ — нурии оташро дар кӯҳ мебинад ва Деви сиёҳашро мефиристад то субҳи аввалинро бишканад.",
+      "reward": {
+        "xp": 110,
+        "real": 45
+      }
+    },
+    {
+      "id": "keyumars-m3",
+      "chapter_slug": "keyumars",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What garment does Keyumars wear as his symbol of kingship?",
+      "question_fa": "کیومرث چه پوششی را به‌عنوانِ نشانِ شاهی بر تن دارد؟",
+      "question_tg": "Каюмарс чӣ либосро ҳамчун нишони подшоҳӣ мепӯшад?",
+      "answers": [
+        "A robe of gold thread",
+        "A crown of mountain iron",
+        "Leopard skin",
+        "White linen from the valley"
+      ],
+      "answers_fa": [
+        "ردایِ نخِ زر",
+        "تاجی از آهنِ کوه",
+        "پوستِ پلنگ",
+        "کتانِ سپیدِ دشت"
+      ],
+      "answers_tg": [
+        "Либоси риштаи заррин",
+        "Тоҷи оҳани кӯҳӣ",
+        "Пӯсти паланг",
+        "Кетони сафеди водӣ"
+      ],
+      "correct_answer": 2,
+      "explanation": "Keyumars wears leopard skin — the pelt becomes the emblem of the Pishdadian dynasty, passing to Hushang and beyond.",
+      "explanation_fa": "کیومرث پوستِ پلنگ بر تن دارد — این پوست نشانِ سلسله‌ی پیشدادیان می‌شود و به هوشنگ و پس از او منتقل می‌شود.",
+      "explanation_tg": "Каюмарс пӯсти палангро мепӯшад — ин пӯст нишони сулолаи Пишдодиён мешавад ва ба Ҳушанг ва пас аз ӯ мегузарад.",
+      "reward": {
+        "xp": 115,
+        "real": 47
+      }
+    },
+    {
+      "id": "keyumars-m4",
+      "chapter_slug": "keyumars",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What is Siamak's relationship to Hushang?",
+      "question_fa": "سیامک چه نسبتی با هوشنگ دارد؟",
+      "question_tg": "Сиёмак ба Ҳушанг чӣ нисбат дорад?",
+      "answers": [
+        "His brother",
+        "His grandfather",
+        "His uncle",
+        "His father"
+      ],
+      "answers_fa": [
+        "برادرش",
+        "پدربزرگش",
+        "عمویش",
+        "پدرش"
+      ],
+      "answers_tg": [
+        "Бародараш",
+        "Бобояш",
+        "Амакаш",
+        "Падараш"
+      ],
+      "correct_answer": 3,
+      "explanation": "Siamak is Hushang's father. When Siamak falls to the Black Div, it is his son Hushang who picks up the spear to avenge him — the grief that drives chapter 2.",
+      "explanation_fa": "سیامک پدرِ هوشنگ است. هنگامی که سیامک به‌دستِ دیوِ سیاه فرو می‌افتد، پسرش هوشنگ است که نیزه را برمی‌دارد تا کینش را بگیرد — اندوهی که دفترِ دوم را پیش می‌راند.",
+      "explanation_tg": "Сиёмак падари Ҳушанг аст. Вақте ки Сиёмак ба дасти Деви сиёҳ меафтад, писараш Ҳушанг аст, ки найзаро мегирад то аз ӯ қасос бигирад.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "keyumars-m5",
+      "chapter_slug": "keyumars",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What omen signals Ahriman's awakening before the Black Div attacks?",
+      "question_fa": "چه نشانه‌ای پیش از حمله‌ی دیوِ سیاه، بیداریِ اهریمن را خبر می‌دهد؟",
+      "question_tg": "Кадом аломат пеш аз ҳуҷуми Деви сиёҳ, бедории Аҳриманро хабар медиҳад?",
+      "answers": [
+        "Owls fly in daylight and a goat is found cold on a path no wolf has used",
+        "The mountain springs run dry",
+        "The forge fire goes out without explanation",
+        "Keyumars loses his voice for three days"
+      ],
+      "answers_fa": [
+        "جغدها در روز پر می‌کشند و بزی سرد بر راهی که گرگی نگذشته یافت می‌شود",
+        "چشمه‌های کوه خشک می‌شوند",
+        "آتشِ آهنگری بی‌دلیل خاموش می‌شود",
+        "کیومرث سه روز صدایش را از دست می‌دهد"
+      ],
+      "answers_tg": [
+        "Бумҳо рӯз парвоз мекунанд ва буззе дар роҳе, ки гург нагузаштааст, сард ёфт мешавад",
+        "Чашмаҳои кӯҳ хушк мешаванд",
+        "Оташи оҳангарӣ бе сабаб хомӯш мешавад",
+        "Каюмарс се рӯз овозашро гум мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The owls take wing in daylight and a goat is found cold on a wolf-free path — signs the chronicle uses to show the world itself feeling darkness stir.",
+      "explanation_fa": "جغدها در روشنایی پر می‌کشند و بزی سرد بر راهی بدونِ گرگ یافت می‌شود — نشانه‌هایی که شاهنامه برای نشان‌دادنِ احساسِ جهان از جنبیدنِ تاریکی به‌کار می‌برد.",
+      "explanation_tg": "Бумҳо дар рӯшноӣ парвоз мекунанд ва буззе дар роҳи бегург сард ёфт мешавад — нишонаҳое, ки Шоҳнома барои нишон додани эҳсоси ҷаҳон аз ҷунбиши торикӣ истифода мебарад.",
+      "reward": {
+        "xp": 125,
+        "real": 52
+      }
+    },
+    {
+      "id": "keyumars-h1",
+      "chapter_slug": "keyumars",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "What is the full opening phrase of the Shahnameh, and what does it mean?",
+      "question_fa": "عبارت کاملِ آغازینِ شاهنامه چیست و چه معنایی دارد؟",
+      "question_tg": "Ибораи пурраи оғозии Шоҳнома чист ва чӣ маъно дорад?",
+      "answers": [
+        "'Be yad-e shah' — In memory of the king",
+        "'Dar agaz bud atash' — In the beginning there was fire",
+        "'Az khak ta aflak' — From dust to the heavens",
+        "'Be nam-e Khoda-vand-e jan o kherad' — In the name of God of Soul and Wisdom"
+      ],
+      "answers_fa": [
+        "«به یادِ شاه» — به یادِ شاه",
+        "«در آغاز بود آتش» — در آغاز آتش بود",
+        "«از خاک تا افلاک» — از خاک تا آسمان",
+        "«به نامِ خداوندِ جان و خرد» — به نامِ خداوندِ جان و خرد"
+      ],
+      "answers_tg": [
+        "«Ба ёди шоҳ» — Ба ёди шоҳ",
+        "«Дар оғоз буд оташ» — Дар оғоз оташ буд",
+        "«Аз хок то афлок» — Аз хок то осмон",
+        "«Ба номи Худованди ҷон ва хирад» — Ба номи Худованди ҷон ва хирад"
+      ],
+      "correct_answer": 3,
+      "explanation": "'Be nam-e Khoda-vand-e jan o kherad' — In the name of God of Soul and Wisdom. Ferdowsi places God, soul, and reason before any king, war, or throne.",
+      "explanation_fa": "«به نامِ خداوندِ جان و خرد» — فردوسی خدا، جان و خرد را پیش از هر شاه، جنگ یا تختی می‌نهد.",
+      "explanation_tg": "«Ба номи Худованди ҷон ва хирад» — Фирдавсӣ Худо, ҷон ва хирадро пеш аз ҳар шоҳ, ҷанг ё тахте мегузорад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "keyumars-h2",
+      "chapter_slug": "keyumars",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "From which four elements does the Shahnameh say humanity was shaped?",
+      "question_fa": "شاهنامه می‌گوید انسان از کدام چهار عنصر شکل گرفت؟",
+      "question_tg": "Шоҳнома мегӯяд инсон аз кадом чаҳор унсур шакл гирифт?",
+      "answers": [
+        "Water, clay, fire, and wind",
+        "Gold, stone, breath, and light",
+        "Earth, bone, blood, and spark",
+        "Sand, salt, shadow, and sky"
+      ],
+      "answers_fa": [
+        "آب، گِل، آتش و باد",
+        "زر، سنگ، نفس و روشنایی",
+        "خاک، استخوان، خون و جرقه",
+        "ماسه، نمک، سایه و آسمان"
+      ],
+      "answers_tg": [
+        "Об, гил, оташ ва шамол",
+        "Тилло, санг, нафас ва равшанӣ",
+        "Хок, устухон, хун ва ҷарақа",
+        "Регу намак, соя ва осмон"
+      ],
+      "correct_answer": 0,
+      "explanation": "Water, clay, fire, and wind — the four classical elements of the Persian cosmological tradition that Ferdowsi weaves into the creation of humankind.",
+      "explanation_fa": "آب، گِل، آتش و باد — چهار عنصرِ کلاسیکِ سنتِ کیهان‌شناختیِ ایرانی که فردوسی آن را در آفرینشِ انسان می‌بافد.",
+      "explanation_tg": "Об, гил, оташ ва шамол — чаҳор унсури классикии анъанаи кайҳоншиносии эронӣ, ки Фирдавсӣ онро дар офаринишии инсон мебофад.",
+      "reward": {
+        "xp": 155,
+        "real": 67
+      }
+    },
+    {
+      "id": "keyumars-h3",
+      "chapter_slug": "keyumars",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Under whose order were scribes sent across Khorasan to gather the ancient stories before Ferdowsi began writing?",
+      "question_fa": "به فرمانِ چه کسی دبیران به سراسرِ خراسان فرستاده شدند تا داستان‌های کهن را پیش از آغازِ نوشتنِ فردوسی گردآورند؟",
+      "question_tg": "Ба фармони кӣ котибон ба саросари Хуросон фиристода шуданд то достонҳои кӯҳнаро пеш аз оғози навиштани Фирдавсӣ гирд оваранд?",
+      "answers": [
+        "Sultan Mahmud of Ghazni",
+        "Abu Mansur of Tus",
+        "The Caliph of Baghdad",
+        "Daqiqi the poet"
+      ],
+      "answers_fa": [
+        "سلطانِ محمودِ غزنوی",
+        "ابومنصورِ طوسی",
+        "خلیفه‌ی بغداد",
+        "دقیقیِ شاعر"
+      ],
+      "answers_tg": [
+        "Султон Маҳмуди Ғазнавӣ",
+        "Абӯмансури Тӯсӣ",
+        "Халифаи Бағдод",
+        "Дақиқии шоир"
+      ],
+      "correct_answer": 1,
+      "explanation": "Abu Mansur of Tus commissioned scribes across Khorasan to collect the ancient oral and written fragments — the raw material Ferdowsi later wove into the Shahnameh.",
+      "explanation_fa": "ابومنصورِ طوسی دبیران را در سراسرِ خراسان مأمور کرد تا تکه‌های شفاهی و نوشتاریِ کهن را جمع‌آوری کنند — مواد خامی که فردوسی بعداً در شاهنامه بافت.",
+      "explanation_tg": "Абӯмансури Тӯсӣ котибонро дар саросари Хуросон мамур кард то пораҳои шифоҳӣ ва хаттии кӯҳнаро гирд оваранд — маводи хоме, ки Фирдавсӣ баъдтар дар Шоҳнома бофт.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "keyumars-h4",
+      "chapter_slug": "keyumars",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "How many years did Ferdowsi spend writing the Shahnameh?",
+      "question_fa": "فردوسی چند سال صرفِ نوشتنِ شاهنامه کرد؟",
+      "question_tg": "Фирдавсӣ чанд сол барои навиштани Шоҳнома сарф кард?",
+      "answers": [
+        "Ten years",
+        "Twenty years",
+        "Thirty years",
+        "Fifty years"
+      ],
+      "answers_fa": [
+        "ده سال",
+        "بیست سال",
+        "سی سال",
+        "پنجاه سال"
+      ],
+      "answers_tg": [
+        "Даҳ сол",
+        "Бист сол",
+        "Си сол",
+        "Панҷоҳ сол"
+      ],
+      "correct_answer": 2,
+      "explanation": "Thirty years — Ferdowsi began weaving the collected stories in 977 CE and kept writing through poverty, the death of his patron, and failing eyesight.",
+      "explanation_fa": "سی سال — فردوسی در ۳۶۷ هجری شمسی آغاز به بافتنِ داستان‌های جمع‌آوری‌شده کرد و از فقر، مرگِ حامیش و ضعفِ چشم نگذشت و نوشت.",
+      "explanation_tg": "Си сол — Фирдавсӣ дар соли 977 мелодӣ оғоз ба бофтани достонҳои гирдовардашуда кард ва тавассути камбизоатӣ, марги ҳомиаш ва заъфи дидааш нависандагиро идома дод.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "keyumars-h5",
+      "chapter_slug": "keyumars",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "When Siamak turns toward the forest to face the Black Div, what is behind him and what is in his face?",
+      "question_fa": "هنگامی که سیامک برای رویارویی با دیوِ سیاه سوی جنگل می‌گردد، چه چیزی پشتِ او و چه چیزی در روی اوست؟",
+      "question_tg": "Вақте ки Сиёмак барои рӯ ба рӯ шудан бо Деви сиёҳ ба сӯи ҷангал мегардад, пушташ чист ва рӯяш чист?",
+      "answers": [
+        "His father's fire and the demon's smoke",
+        "The army of light and the demon host",
+        "The mountain court behind him and the forest ahead",
+        "The dawn at his back and a black wind in his face"
+      ],
+      "answers_fa": [
+        "آتشِ پدرش و دودِ دیو",
+        "سپاهِ روشنایی و سپاهِ دیوان",
+        "درگاهِ کوهستانی پشتِ سر و جنگل پیش‌رو",
+        "سپیده‌دم پشتِ سر و بادِ سیاه در روی"
+      ],
+      "answers_tg": [
+        "Оташи падараш ва дуди дев",
+        "Лашкари равшанӣ ва лашкари девон",
+        "Дарвозаи кӯҳистонӣ пушташ ва ҷангал пешрӯяш",
+        "Субҳ пушташ ва шамоли сиёҳ рӯяш"
+      ],
+      "correct_answer": 3,
+      "explanation": "The dawn at his back and a black wind in his face — Ferdowsi's image for the first hero walking from light into darkness.",
+      "explanation_fa": "سپیده‌دم پشتِ سر و بادِ سیاه در روی — تصویرِ فردوسی برای نخستین قهرمانی که از روشنایی به تاریکی قدم می‌گذارد.",
+      "explanation_tg": "Субҳ пушташ ва шамоли сиёҳ рӯяш — тасвири Фирдавсӣ барои аввалин қаҳрамоне, ки аз равшанӣ ба торикӣ қадам мегузорад.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "keyumars-h6",
+      "chapter_slug": "keyumars",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Where precisely does Siamak meet the Black Div in battle?",
+      "question_fa": "سیامک دقیقاً در کجا با دیوِ سیاه به نبرد می‌پردازد؟",
+      "question_tg": "Сиёмак дақиқан дар куҷо бо Деви сиёҳ ба набард мепардозад?",
+      "answers": [
+        "On the open turf at the edge of the forest",
+        "At the gates of the mountain court",
+        "Inside the demon's lair beneath the roots",
+        "On the peak of Mount Damavand"
+      ],
+      "answers_fa": [
+        "بر چمنِ گشوده در کرانه‌ی جنگل",
+        "در دروازه‌های درگاهِ کوهستانی",
+        "درونِ لانه‌ی دیو زیرِ ریشه‌ها",
+        "بر قلّه‌ی کوهِ دماوند"
+      ],
+      "answers_tg": [
+        "Дар чамани кушода дар канораи ҷангал",
+        "Дар дарвозаҳои дарвозаи кӯҳистонӣ",
+        "Дохили лонаи дев зери решаҳо",
+        "Дар қуллаи Кӯҳи Домовонд"
+      ],
+      "correct_answer": 0,
+      "explanation": "On the open turf at the edge of the forest — Ferdowsi places the first battle of humankind in the borderland between the ordered world and the dark.",
+      "explanation_fa": "بر چمنِ گشوده در کرانه‌ی جنگل — فردوسی نخستین نبردِ آدمیان را در مرزِ میانِ جهانِ منظم و تاریکی قرار می‌دهد.",
+      "explanation_tg": "Дар чамани кушода дар канораи ҷангал — Фирдавсӣ аввалин набарди башариятро дар марзи миёни ҷаҳони мунтазам ва торикӣ мегузорад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "keyumars-h7",
+      "chapter_slug": "keyumars",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "According to Ferdowsi's opening meditation on kherad, what makes wisdom superior to all other gifts?",
+      "question_fa": "بر اساسِ تأملِ فردوسی در آغاز درباره‌ی خرد، چه چیزی خرد را از همه‌ی هدیه‌های دیگر برتر می‌کند؟",
+      "question_tg": "Мувофиқи тафаккури Фирдавсӣ дар оғоз дар бораи хирад, чӣ чиз хирадро аз ҳамаи дигар неъматҳо бартар мекунад?",
+      "answers": [
+        "It grants physical strength beyond any warrior",
+        "It sees what the eye cannot and knows what will come before it arrives",
+        "It is only given to kings and nobles",
+        "It passes from father to son without teaching"
+      ],
+      "answers_fa": [
+        "نیرویِ جسمانی فراتر از هر جنگاوری می‌بخشد",
+        "آنچه را چشم نمی‌بیند می‌بیند و آنچه را هنوز نیامده می‌داند",
+        "تنها به شاهان و اشراف داده می‌شود",
+        "بدونِ آموزش از پدر به پسر می‌رسد"
+      ],
+      "answers_tg": [
+        "Қувваи ҷисмонии фаротар аз ҳар ҷанговаре медиҳад",
+        "Онро, ки чашм намебинад, мебинад ва онро, ки ҳанӯз наомадааст, медонад",
+        "Танҳо ба шоҳон ва ашрофон дода мешавад",
+        "Бе таълим аз падар ба писар мегузарад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Kherad sees what the eye cannot and knows what will come before it arrives. Armies fall, kingdoms end, gold corrupts — but wisdom endures, lighting the path without burning the hand that holds it.",
+      "explanation_fa": "خرد آنچه را چشم نمی‌بیند می‌بیند و آنچه را هنوز نیامده می‌داند. سپاه‌ها می‌ریزند، پادشاهی‌ها پایان می‌یابند، زر فاسد می‌کند — اما خرد می‌ماند.",
+      "explanation_tg": "Хирад онро, ки чашм намебинад, мебинад ва онро, ки ҳанӯз наомадааст, медонад. Лашкарҳо мерезанд, подшоҳиҳо поён меёбанд, тилло фасод меорад — аммо хирад мемонад.",
+      "reward": {
+        "xp": 175,
+        "real": 77
+      }
+    },
+    {
+      "id": "keyumars-h8",
+      "chapter_slug": "keyumars",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh's chapter 1 closes 'not in victory, but in resolve.' What specific image closes that final scene?",
+      "question_fa": "دفترِ اولِ شاهنامه «نه با پیروزی که با عزم» به پایان می‌رسد. چه تصویرِ مشخصی آن صحنه‌ی پایانی را می‌بندد؟",
+      "question_tg": "Бобои аввали Шоҳнома «на бо пирӯзӣ, балки бо азм» ба поён мерасад. Кадом тасвири мушаххас он саҳнаи охиринро мебандад?",
+      "answers": [
+        "Keyumars weeping over the leopard skin in the night",
+        "The Black Div retreating into the forest",
+        "A small hand — Hushang's — reaching for the spear",
+        "Dawn breaking over Mount Damavand"
+      ],
+      "answers_fa": [
+        "کیومرث که شبانه بر پوستِ پلنگ می‌گرید",
+        "دیوِ سیاه که به جنگل عقب می‌نشیند",
+        "دستی کوچک — هوشنگ — که برای نیزه دراز می‌شود",
+        "سپیده‌ای که بر دماوند می‌شکفد"
+      ],
+      "answers_tg": [
+        "Каюмарс, ки шабона бар пӯсти паланг мегиряд",
+        "Деви сиёҳ, ки ба ҷангал ақиб менишинад",
+        "Дасти хурд — Ҳушанг — ки барои найза дароз мешавад",
+        "Субҳе, ки бар Домовонд медамад"
+      ],
+      "correct_answer": 2,
+      "explanation": "A small hand reaches for the spear — Hushang, who has watched and remembered. The chapter ends not with Keyumars' grief but with the next generation's resolve.",
+      "explanation_fa": "دستی کوچک برای نیزه دراز می‌شود — هوشنگ که نگریسته و به‌یاد سپرده است. دفتر نه با اندوهِ کیومرث که با عزمِ نسلِ بعدی پایان می‌گیرد.",
+      "explanation_tg": "Дасти хурд барои найза дароз мешавад — Ҳушанг, ки нигоҳ кардааст ва ба хотир супурдааст. Боб на бо ғами Каюмарс, балки бо азми насли баъдӣ поён меёбад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    }
+  ]
+}

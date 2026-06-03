@@ -1,0 +1,39 @@
+{
+  "quizzes": [
+    {
+      "id": "hk-4-q1",
+      "chapter_slug": "haft-khan-4",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "In the Fourth Labour, what causes the beautiful woman to reveal her true form as a witch?",
+      "question_fa": "در خانِ چهارم، چه چیزی زنِ زیبا را وادار می‌کند شکلِ واقعی‌اش را به‌عنوانِ جادوگر آشکار کند؟",
+      "question_tg": "Дар Хони Чорум, чӣ зани зеборо маҷбур мекунад шакли воқеии худро ҳамчун ҷодугар ошкор кунад?",
+      "answers": [
+        "Rostam draws his sword and threatens her",
+        "Rakhsh kicks the feast table over",
+        "Rostam refuses the wine she offers",
+        "Rostam speaks the name of God"
+      ],
+      "answers_fa": [
+        "رستم شمشیر می‌کشد و تهدیدش می‌کند",
+        "رخش سفره را لگد می‌زند و برمی‌گرداند",
+        "رستم شرابی که پیشنهاد می‌دهد رد می‌کند",
+        "رستم نامِ خدا را بر زبان می‌آورد"
+      ],
+      "answers_tg": [
+        "Рустам шамшер кашид ва таҳдидаш кард",
+        "Рахш дастархонро лагад мезанад",
+        "Рустам шаробро, ки пешниҳод мекунад, рад мекунад",
+        "Рустам номи Худоро бар забон меорад"
+      ],
+      "correct_answer": 3,
+      "explanation": "When Rostam speaks the name of God, the beautiful woman is immediately revealed as an old witch. The Shahnameh is precise here: the beautiful illusion cannot survive the invocation of truth. This is the fourth labour's lesson — beautiful lies have a single weakness: the right word spoken at the right moment.",
+      "explanation_fa": "وقتی رستم نامِ خدا را می‌برد، زنِ زیبا فوراً به پیرزنی زشت تبدیل می‌شود. جادوگر نمی‌تواند در برابرِ فراخوانیِ حقیقت دوام بیاورد.",
+      "explanation_tg": "Вақте Рустам номи Худоро мегӯяд, зани зебо фавран ба пиразани зишт табдил мешавад.",
+      "reward": {
+        "xp": 130,
+        "real": 55
+      }
+    }
+  ]
+}

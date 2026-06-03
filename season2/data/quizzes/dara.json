@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "dra-e1",
+      "chapter_slug": "dara",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Who was Dara's father, and from whom did he inherit the throne?",
+      "question_fa": "پدر دارا کی بود و از چه کسی تخت را به ارث برد؟",
+      "question_tg": "Падари Дорo кӣ буд ва аз кӣ тахтро ба мерос гирифт?",
+      "answers": [
+        "Darab — the foundling prince who had himself inherited the Kayanian line",
+        "Bahman — the long-ruling king who named Dara his final heir",
+        "Lohrasp — the warrior-king of the eastern campaigns",
+        "Goshtasp — who passed the throne directly to his grandson"
+      ],
+      "answers_fa": [
+        "داراب — شاهزاده‌ی پیدا شده که خود خطِّ کیانیان را به ارث برده بود",
+        "بهمن — شاهِ دیرپا که دارا را آخرین وارثش نامید",
+        "لهراسپ — شاهِ جنگجوی لشکرکشی‌های شرقی",
+        "گشتاسپ — که تخت را مستقیماً به نوه‌اش داد"
+      ],
+      "answers_tg": [
+        "Дороб — шаҳзодаи ёфташуда ки худ хатти Каёниёнро ба мерос гирифта буд",
+        "Баҳман — подшоҳи дерпо ки Доро охирин вориси худро номид",
+        "Луҳросп — подшоҳи ҷангҷӯи лашкаркашиҳои шарқӣ",
+        "Гуштосп — ки тахтро мустақиман ба набераш дод"
+      ],
+      "correct_answer": 0,
+      "explanation": "Dara inherited the throne from his father Darab, the foundling prince whose story is told in the preceding chapter. The Kayanian line passed from Darab to Dara, and with it came the full weight of Iran's long chronicle.",
+      "explanation_fa": "دارا تخت را از پدرش داراب، شاهزاده‌ی پیدا شده که داستانش در فصلِ قبلی روایت می‌شود، به ارث برد. خطِّ کیانیان از داراب به دارا رسید، و با آن تمامِ وزنِ روایتِ طولانیِ ایران.",
+      "explanation_tg": "Дорo тахтро аз падараш Дороб, шаҳзодаи ёфташудае ки достонаш дар фаслҳои пешин нақл мешавад, ба мерос гирифт. Хатти Каёниён аз Дороб ба Дорo расид, ва бо он тамоми вазни хроникаи тӯлонии Эрон.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "dra-e2",
+      "chapter_slug": "dara",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What happened to Dara after his final defeat by Sekandar's army?",
+      "question_fa": "بعد از آخرین شکستش از ارتشِ اسکندر چه بر سرِ دارا آمد؟",
+      "question_tg": "Баъд аз охирин шикасташ аз артиши Искандар чӣ бар сари Дорo омад?",
+      "answers": [
+        "His own ministers stabbed him rather than be captured alongside him",
+        "He was taken prisoner and executed publicly by Sekandar's command",
+        "He fled east into Khorasan and died there in exile",
+        "He surrendered formally and was spared, but died of grief within a year"
+      ],
+      "answers_fa": [
+        "وزرایِ خودش او را کشتند تا مجبور نشوند همراهش اسیر شوند",
+        "اسیر شد و با دستورِ اسکندر در ملاء عام اعدام شد",
+        "به شرقِ خراسان فرار کرد و در تبعید آنجا مُرد",
+        "رسماً تسلیم شد و بخشیده شد، اما در طولِ یک سال از غم جان داد"
+      ],
+      "answers_tg": [
+        "Вазирони худаш ӯро куштанд то маҷбур нашаванд ҳамроҳаш асир шаванд",
+        "Асир шуд ва бо амри Искандар дар мулои омм эъдом шуд",
+        "Ба шарқи Хуросон гурехт ва дар тарадуд он ҷо мурд",
+        "Расман таслим шуд ва бахшида шуд, аммо дар тӯли як сол аз ғам ҷон дод"
+      ],
+      "correct_answer": 0,
+      "explanation": "After the final battle, Dara was not captured by Sekandar's forces — his own ministers stabbed him rather than be taken prisoner alongside their king. He was found dying by a roadside, where Sekandar discovered him.",
+      "explanation_fa": "بعد از نبردِ آخر، دارا توسطِ نیروهای اسکندر اسیر نشد — وزرایِ خودش او را کشتند تا مجبور نشوند همراهِ شاهشان به اسارت بروند. او را در حالِ احتضار کنارِ جاده‌ای پیدا کردند، جایی که اسکندر به او رسید.",
+      "explanation_tg": "Баъд аз набарди охир, Дорo аз нирӯҳои Искандар асир нашуд — вазирони худаш ӯро куштанд то маҷбур нашаванд ҳамроҳи подшоҳашон ба асорат бираванд. Ӯро дар ҳоли эҳтизор канори ҷодае ёфтанд, ки дар он ҷо Искандар ба ӯ расид.",
+      "reward": {
+        "xp": 85,
+        "real": 32
+      }
+    },
+    {
+      "id": "dra-e3",
+      "chapter_slug": "dara",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What was Dara's final request to Sekandar as he lay dying?",
+      "question_fa": "آخرین خواسته‌ی دارا از اسکندر وقتی در حالِ مرگ بود چه بود؟",
+      "question_tg": "Охирин хоҳиши Дорo аз Искандар вақте дар ҳоли мурдан буд чӣ буд?",
+      "answers": [
+        "Marry his daughter Roshanak and protect the continuity of the dynasty",
+        "Avenge his murder by hunting down and executing the treacherous ministers",
+        "Return the Persian throne to Zabulestan and restore the Kayanian line",
+        "Build a monument at the site where he fell so Iran's greatness would be remembered"
+      ],
+      "answers_fa": [
+        "با دخترش روشنک ازدواج کن و تداومِ سلسله را حفظ کن",
+        "قاتلانش را بگیر و وزرایِ خائن را اعدام کن",
+        "تختِ ایران را به زابلستان بازگردان و خطِّ کیانیان را بازسازی کن",
+        "در محلِّ افتادنش بنایی بساز تا عظمتِ ایران به یاد آورده شود"
+      ],
+      "answers_tg": [
+        "Бо духтараш Рӯшанак издивоҷ кун ва идомаи сулоларо ҳифз кун",
+        "Қотилонашро бигир ва вазирони хоинро эъдом кун",
+        "Тахти Эронро ба Забулистон баргардон ва хатти Каёниёнро барқарор кун",
+        "Дар маҳалли уфтоданаш биное бисоз то азамати Эрон ба ёд оварда шавад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Dara's last request was that Sekandar marry his daughter Roshanak and thereby protect the dynasty's continuity. Sekandar agreed and kept the agreement — what Dara could not protect with his army, he protected with his dying request.",
+      "explanation_fa": "آخرین خواسته‌ی دارا این بود که اسکندر با دخترش روشنک ازدواج کند و بدین‌ترتیب تداومِ سلسله را حفظ کند. اسکندر موافقت کرد و به توافقش عمل کرد — آنچه دارا نمی‌توانست با ارتشش حفظ کند، با آخرین خواسته‌اش محافظت کرد.",
+      "explanation_tg": "Охирин хоҳиши Дорo ин буд ки Искандар бо духтараш Рӯшанак издивоҷ кунад ва бад-ин васила идомаи сулоларо ҳифз кунад. Искандар розӣ шуд ва ба мувофиқааш амал кард — он чи Дорo натавонист бо артишаш ҳифз кунад, бо охирин хоҳишаш муҳофизат кард.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "dra-e4",
+      "chapter_slug": "dara",
+      "quiz_part": 4,
+      "difficulty": "easy",
+      "question": "How does the Shahnameh describe Dara as a king — capable or weak?",
+      "question_fa": "شاهنامه دارا را به عنوانِ شاه چگونه توصیف می‌کند — توانمند یا ضعیف؟",
+      "question_tg": "Шоҳнома Доро ро ҳамчун подшоҳ чӣ гуна тавсиф мекунад — тавонманд ё заиф?",
+      "answers": [
+        "A capable and proud king — his defeats came from mismatch, not personal weakness",
+        "A weak king who had squandered his father's legacy through poor decisions",
+        "A great warrior but a poor administrator who could not hold the empire together",
+        "A virtuous ruler undone by advisors who refused to warn him of the Greek advance"
+      ],
+      "answers_fa": [
+        "شاهی توانمند و سربلند — شکست‌هایش از عدمِ تناسب بود، نه ضعفِ شخصی",
+        "شاهی ضعیف که میراثِ پدرش را از طریقِ تصمیمات بد به باد داده بود",
+        "جنگجوی بزرگ اما مدیرِ ضعیف که نتوانست امپراطوری را نگه دارد",
+        "حاکمِ فضیلتمندی که به خاطرِ مشاورانی که از پیشروی یونانی‌ها هشدار ندادند سقوط کرد"
+      ],
+      "answers_tg": [
+        "Подшоҳи тавонманд ва сарбаланд — шикастҳояш аз номутобиқатӣ буд, на заъфи шахсӣ",
+        "Подшоҳи заифе ки мероси падарашро тавассути қарорҳои бад ба бод дода буд",
+        "Ҷангҷӯи бузург аммо мудири заиф ки натавонист империяро нигоҳ дорад",
+        "Ҳокими фазилатманде ки аз сабаби мушовироне ки аз пешравии юнониён огоҳ накарданд суқут кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh explicitly presents Dara as capable and proud — not weak. The text frames his defeats as defeats of mismatch: he fought with methods that had worked for two centuries against a commander who had developed something new. The new thing won.",
+      "explanation_fa": "شاهنامه صریحاً دارا را توانمند و سربلند نشان می‌دهد — نه ضعیف. متن شکست‌هایش را شکست‌های عدمِ تناسب معرفی می‌کند: با روش‌هایی جنگید که دو قرن کار کرده بودند، در برابرِ فرمانده‌ای که چیزِ جدیدی توسعه داده بود. چیزِ جدید برنده شد.",
+      "explanation_tg": "Шоҳнома Доро ро сориҳан тавонманд ва сарбаланд нишон медиҳад — на заиф. Матн шикастҳояшро шикастҳои номутобиқатӣ муаррифӣ мекунад: бо равишҳое ҷанг кард ки ду аср кор карда буданд, дар муқобили фармондеҳе ки чизи наве таҳия карда буд. Чизи нав пирӯз шуд.",
+      "reward": {
+        "xp": 95,
+        "real": 37
+      }
+    },
+    {
+      "id": "dra-m1",
+      "chapter_slug": "dara",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What was the unexpected revelation that Sekandar made upon finding Dara dying?",
+      "question_fa": "وقتی اسکندر دارا را در حالِ مرگ یافت، چه کشفِ غیرمنتظره‌ای کرد؟",
+      "question_tg": "Вақте Искандар Доро ро дар ҳоли мурдан ёфт, кадом кашфи ғайримунтазире кард?",
+      "answers": [
+        "Sekandar and Dara were half-brothers — both sons of Darab through different mothers",
+        "Dara had known of Sekandar's lineage all along but had been too proud to seek peace",
+        "The ministers who killed Dara were agents of Sekandar who had been placed in the Persian court years earlier",
+        "Dara had a secret son who had been raised in hiding and would reclaim the throne"
+      ],
+      "answers_fa": [
+        "اسکندر و دارا ناتنی‌برادر بودند — هر دو پسرانِ داراب از مادرانِ مختلف",
+        "دارا از همان اول از نسبِ اسکندر خبر داشت اما خیلی سربلند بود که دنبالِ صلح برود",
+        "وزرایی که دارا را کشتند عواملِ اسکندر بودند که سال‌ها قبل در دربارِ ایران جاسازی شده بودند",
+        "دارا پسرِ پنهانی داشت که در اختفا پرورش یافته بود و تخت را دوباره می‌گرفت"
+      ],
+      "answers_tg": [
+        "Искандар ва Дорo бародари ногатанӣ буданд — ҳар ду писарони Дороб аз модарони гуногун",
+        "Дорo аз аввал аз насаби Искандар хабар дошт аммо хеле сарбаланд буд ки дунболи сулҳ биравад",
+        "Вазироне ки Доро ро куштанд омилони Искандар буданд ки солҳо пеш дар дарбори Эрон ҷосозӣ шуда буданд",
+        "Дорo писари пинҳоне дошт ки дар ихтифо парвариш ёфта буд ва тахтро дубора мегирифт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sekandar was Dara's half-brother — both were sons of Darab, but through different mothers. Sekandar had been born of the Greek princess Nahid whom Darab had divorced, while Dara was born of Darab's Persian queen. The two half-brothers met only at the moment of one's death.",
+      "explanation_fa": "اسکندر ناتنی‌برادرِ دارا بود — هر دو پسرانِ داراب، اما از مادرانِ مختلف. اسکندر از شاهزاده خانمِ یونانیِ ناهید که داراب طلاقش داده بود به دنیا آمده بود، در حالی که دارا از ملکه‌ی ایرانیِ داراب. این دو ناتنی‌برادر فقط در لحظه‌ی مرگِ یکی ملاقات کردند.",
+      "explanation_tg": "Искандар бародари ногатании Дорo буд — ҳар ду писарони Дороб, аммо аз модарони гуногун. Искандар аз шаҳзодахоними юнонии Наҳид ки Дороб талоқаш дода буд таваллуд шуда буд, дар ҳоле ки Дорo аз маликаи эронии Дороб. Ин ду бародари ногатанӣ танҳо дар лаҳзаи марги якеашон вохӯрданд.",
+      "reward": {
+        "xp": 140,
+        "real": 60
+      }
+    },
+    {
+      "id": "dra-m2",
+      "chapter_slug": "dara",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "What did Sekandar do when he found Dara dying, and what did he promise?",
+      "question_fa": "وقتی اسکندر دارا را در حالِ مرگ یافت چه کرد و چه قول داد؟",
+      "question_tg": "Вақте Искандар Доро ро дар ҳоли мурдан ёфт чӣ кард ва чӣ ваъда дод?",
+      "answers": [
+        "He wept, held Dara's head, and promised to avenge the ministers who had killed him",
+        "He stood in silence, then declared a formal period of mourning for his conquered rival",
+        "He ordered his generals to pursue the treacherous ministers and promised Dara swift justice",
+        "He recited a formal elegy, then pledged to rebuild Persepolis in Dara's honour"
+      ],
+      "answers_fa": [
+        "گریه کرد، سرِ دارا را نگه داشت، و قول داد که از وزرایی که او را کشته بودند انتقام بگیرد",
+        "در سکوت ایستاد، سپس یک دوره‌ی عزاداریِ رسمی برای رقیبِ مغلوبش اعلام کرد",
+        "به ژنرال‌هایش دستور داد که وزرایِ خائن را تعقیب کنند و به دارا عدالتِ سریع قول داد",
+        "مرثیه‌ای رسمی خواند، سپس قول داد که تخت‌جمشید را به افتخارِ دارا بازسازی کند"
+      ],
+      "answers_tg": [
+        "Гирист, сари Доро ро нигоҳ дошт, ва ваъда дод ки аз вазироне ки ӯро куштанд интиқом бигирад",
+        "Дар сукут истод, сипас як давраи мотами расмӣ барои рақиби мағлубаш эълом кард",
+        "Ба ҷенералҳояш дастур дод ки вазирони хоинро таъқиб кунанд",
+        "Марсияи расмӣ хонд, сипас ваъда дод ки Тахти Ҷамшидро ба ифтихори Дорo бозсозӣ кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's most unexpected moment in this chapter: Sekandar wept. He held Dara's head. He promised to avenge the treacherous ministers. The conqueror mourning the conquered — and then the revelation that they were the same blood.",
+      "explanation_fa": "غیرمنتظره‌ترین لحظه‌ی شاهنامه در این فصل: اسکندر گریست. سرِ دارا را نگه داشت. قول داد از وزرایِ خائن انتقام بگیرد. فاتح در ماتمِ مفتوح — و سپس آشکار شدن که یک خون هستند.",
+      "explanation_tg": "Ғайримунтазиртарин лаҳзаи Шоҳнома дар ин фасл: Искандар гирист. Сари Доро ро нигоҳ дошт. Ваъда дод аз вазирони хоин интиқом бигирад. Ғолиб дар мотами мағлуб — ва сипас ошкор шудан ки як хун ҳастанд.",
+      "reward": {
+        "xp": 145,
+        "real": 63
+      }
+    },
+    {
+      "id": "dra-m3",
+      "chapter_slug": "dara",
+      "quiz_part": 7,
+      "difficulty": "medium",
+      "question": "How did Sekandar's approach to warfare differ from Dara's, according to the Shahnameh's framing?",
+      "question_fa": "بنا بر چارچوبِ شاهنامه، رویکردِ اسکندر به جنگ چگونه با دارا متفاوت بود؟",
+      "question_tg": "Тибқи чорчӯбаи Шоҳнома, равиши Искандар ба ҷанг чӣ гуна аз Дорo фарқ мекард?",
+      "answers": [
+        "Sekandar moved faster, improvised more, and treated supply lines as suggestions — developing something new against methods that had worked for two centuries",
+        "Sekandar had superior numbers and better-equipped cavalry, giving him an inherent tactical advantage on open ground",
+        "Sekandar bribed Dara's generals before each major battle, ensuring internal collapse rather than direct defeat",
+        "Sekandar fought defensively, drawing Dara's larger army into overextended positions before striking"
+      ],
+      "answers_fa": [
+        "اسکندر سریع‌تر حرکت کرد، بیشتر بداهه‌پردازی کرد، و خطوطِ پشتیبانی را به عنوانِ پیشنهاد در نظر گرفت — چیزِ جدیدی توسعه داد در برابرِ روش‌هایی که دو قرن کار کرده بودند",
+        "اسکندر نیروی بیشتر و سواره‌نظامِ بهتر مجهز داشت که در زمینِ باز برتری تاکتیکیِ ذاتی به او می‌داد",
+        "اسکندر قبل از هر نبردِ بزرگ ژنرال‌های دارا را رشوه می‌داد تا فروپاشیِ داخلی به جای شکستِ مستقیم رخ دهد",
+        "اسکندر دفاعی جنگید، ارتشِ بزرگترِ دارا را به موضعِ بیش از حد کشیده می‌کشاند سپس ضربه می‌زد"
+      ],
+      "answers_tg": [
+        "Искандар суриатноктар ҳаракат кард, бештар бадоҳапардозӣ кард, ва хатути пуштибониро ҳамчун пешниҳод дид — чизи наве таҳия кард дар муқобили равишҳое ки ду аср кор карда буданд",
+        "Искандар нирӯи бештар ва савораназами беҳтар муҷаҳҳаз дошт",
+        "Искандар пеш аз ҳар набарди бузург ҷенералҳои Доро ро ришва медод",
+        "Искандар мудофеона ҷанг кард, артиши бузургтари Доро ро ба мавзеъи аз ҳад кашидашуда мекашид"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh frames the defeats as defeats of mismatch — a king who fought with methods that had worked for two centuries against a commander who had developed something new. Sekandar moved faster, improvised more, and treated conventional logistics as suggestions. The new thing won.",
+      "explanation_fa": "شاهنامه شکست‌ها را به عنوانِ شکست‌های عدمِ تناسب چارچوب‌بندی می‌کند — شاهی که با روش‌هایی جنگید که دو قرن کار کرده بودند در برابرِ فرمانده‌ای که چیزِ جدیدی توسعه داده بود. اسکندر سریع‌تر حرکت کرد، بیشتر بداهه‌پردازی کرد. چیزِ جدید برنده شد.",
+      "explanation_tg": "Шоҳнома шикастҳоро ҳамчун шикастҳои номутобиқатӣ чорчӯб мекунад — подшоҳе ки бо равишҳое ҷанг кард ки ду аср кор карда буданд дар муқобили фармондеҳе ки чизи наве таҳия карда буд. Искандар суриатноктар ҳаракат кард, бештар бадоҳапардозӣ кард. Чизи нав пирӯз шуд.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "dra-m4",
+      "chapter_slug": "dara",
+      "quiz_part": 8,
+      "difficulty": "medium",
+      "question": "What did Sekandar do after Dara's death regarding Roshanak?",
+      "question_fa": "اسکندر بعد از مرگِ دارا در موردِ روشنک چه کرد؟",
+      "question_tg": "Искандар баъд аз марги Дорo дар бораи Рӯшанак чӣ кард?",
+      "answers": [
+        "He married Roshanak as Dara had requested, keeping the agreement and continuing the bloodline",
+        "He escorted Roshanak safely to Zabulestan but did not marry her, preserving the dynastic line in exile",
+        "He agreed to Dara's request but later broke it — Roshanak died before the marriage could be arranged",
+        "He married Roshanak but kept it secret so Greek commanders would not object to a Persian queen"
+      ],
+      "answers_fa": [
+        "با روشنک ازدواج کرد آنطور که دارا خواسته بود، به توافقش عمل کرد و نسل را ادامه داد",
+        "روشنک را با اطمینان به زابلستان همراهی کرد اما با او ازدواج نکرد، خطِّ سلسله را در تبعید حفظ کرد",
+        "با خواسته‌ی دارا موافقت کرد اما بعداً آن را شکست — روشنک قبل از ترتیبِ ازدواج مُرد",
+        "با روشنک ازدواج کرد اما آن را مخفی نگه داشت تا فرمانداران یونانی به ملکه‌ی ایرانی اعتراض نکنند"
+      ],
+      "answers_tg": [
+        "Бо Рӯшанак издивоҷ кард он тавр ки Дорo хоста буд, ба мувофиқааш амал кард ва наслро идома дод",
+        "Рӯшанакро бо итминон ба Забулистон ҳамроҳӣ кард аммо бо ӯ издивоҷ накард",
+        "Бо хоҳиши Дорo мувофиқат кард аммо баъдтар онро шикаст",
+        "Бо Рӯшанак издивоҷ кард аммо онро пинҳон нигоҳ дошт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sekandar kept his agreement — he married Roshanak as Dara had requested. The Shahnameh notes this explicitly: what Dara could not protect with his army, he protected with his dying request. The bloodline continued through the marriage, the Kayanian line persisted through the conquest.",
+      "explanation_fa": "اسکندر به توافقش عمل کرد — با روشنک ازدواج کرد آنطور که دارا خواسته بود. شاهنامه این را صریحاً می‌گوید: آنچه دارا نمی‌توانست با ارتشش حفظ کند، با آخرین خواسته‌اش محافظت کرد. نسل از طریقِ ازدواج ادامه یافت، خطِّ کیانیان از طریقِ فتح پایدار ماند.",
+      "explanation_tg": "Искандар ба мувофиқааш амал кард — бо Рӯшанак издивоҷ кард он тавр ки Дорo хоста буд. Шоҳнома инро сориҳан мегӯяд: он чи Дорo натавонист бо артишаш ҳифз кунад, бо охирин хоҳишаш муҳофизат кард. Насл тавассути издивоҷ идома ёфт, хатти Каёниён тавассути фатҳ поядор монд.",
+      "reward": {
+        "xp": 155,
+        "real": 67
+      }
+    },
+    {
+      "id": "dra-m5",
+      "chapter_slug": "dara",
+      "quiz_part": 9,
+      "difficulty": "medium",
+      "question": "The Shahnameh notes that Dara inherited not just the throne but also \"the certainty that had served every king in the chronicle until it stopped serving them.\" What does this phrase suggest about Dara's situation?",
+      "question_fa": "شاهنامه اشاره می‌کند که دارا نه فقط تخت، بلکه \"قطعیتی را که به هر شاهی در روایت خدمت کرده بود تا اینکه دیگر خدمت نکرد\" به ارث برد. این عبارت چه چیزی درباره‌ی وضعیتِ دارا پیشنهاد می‌دهد؟",
+      "question_tg": "Шоҳнома ишора мекунад ки Дорo на танҳо тахт, балки \"яқинеро ки ба ҳар подшоҳ дар хроника хидмат карда буд то ин ки дигар хидмат накард\" ба мерос гирифт. Ин ибора чӣ чизеро дар бораи вазъияти Дорo пешниҳод мекунад?",
+      "answers": [
+        "Dara's assumptions about how power and warfare worked were inherited traditions, not personal flaws — they had been valid, and then the world changed",
+        "Dara was overconfident as a personal character trait — he lacked the humility that earlier kings had shown",
+        "The Kayanian dynasty's decline was inevitable from the beginning — each king inherited the seeds of collapse",
+        "Dara failed because he refused to study Sekandar's campaigns and did not adapt his tactics"
+      ],
+      "answers_fa": [
+        "فرضیاتِ دارا درباره‌ی نحوه‌ی عملکردِ قدرت و جنگ سنت‌های ارثی بودند، نه عیوبِ شخصی — اعتبار داشتند، و بعد دنیا تغییر کرد",
+        "دارا به عنوانِ ویژگیِ شخصیتی بیش از حد مغرور بود — فاقدِ تواضعی بود که شاهانِ قبلی نشان داده بودند",
+        "افولِ سلسله‌ی کیانیان از همان ابتدا اجتناب‌ناپذیر بود — هر شاهی بذرهای فروپاشی را به ارث می‌برد",
+        "دارا شکست خورد چون از مطالعه‌ی لشکرکشی‌های اسکندر امتناع کرد و تاکتیک‌هایش را تطبیق نداد"
+      ],
+      "answers_tg": [
+        "Фарзияҳои Дорo дар бораи нҳавзаи кори қудрат ва ҷанг анъанаҳои мавросӣ буданд, на айбҳои шахсӣ — эътибор доштанд, ва баъд ҷаҳон тағйир кард",
+        "Дорo ҳамчун хусусияти шахсӣ аз ҳад зиёд мағрур буд",
+        "Нузули сулолаи Каёниён аз аввал ногузир буд",
+        "Дорo шикаст хӯрд зеро аз омӯхтани лашкаркашиҳои Искандар худдорӣ кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "The phrase frames Dara's situation with precision: what he inherited was not personal arrogance but a way of thinking about power that had been genuinely valid across generations. It simply encountered something it had not been designed for. The Shahnameh does not blame Dara for using the tools he was given — it observes that those tools met their limit.",
+      "explanation_fa": "این عبارت وضعیتِ دارا را با دقت چارچوب‌بندی می‌کند: آنچه به ارث برد غرورِ شخصی نبود بلکه شیوه‌ای از تفکر درباره‌ی قدرت بود که در طولِ نسل‌ها واقعاً معتبر بوده بود. صرفاً با چیزی روبرو شد که برایش طراحی نشده بود. شاهنامه دارا را برای استفاده از ابزارهایی که دریافت کرده بود سرزنش نمی‌کند — مشاهده می‌کند که آن ابزارها به محدودیتشان رسیدند.",
+      "explanation_tg": "Ин ибора вазъияти Доро ро бо дақиқат чорчӯб мекунад: он чи ба мерос гирифт ғурури шахсӣ набуд балки шевае аз тафаккур дар бораи қудрат буд ки дар тӯли насл‌ҳо воқеан эътибор дошта буд. Танҳо бо чизе рӯ ба рӯ шуд ки барояш тарроҳӣ нашуда буд. Шоҳнома Доро ро барои истифодаи абзорҳое ки дарёфт карда буд сарзанш намекунад.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "dra-h1",
+      "chapter_slug": "dara",
+      "quiz_part": 10,
+      "difficulty": "hard",
+      "question": "The Shahnameh presents Sekandar weeping over Dara as \"the most unexpected moment in this chapter.\" Why is it unexpected, and what does the weeping accomplish narratively?",
+      "question_fa": "شاهنامه گریه‌ی اسکندر بر دارا را «غیرمنتظره‌ترین لحظه‌ی این فصل» معرفی می‌کند. چرا غیرمنتظره است، و این گریه از نظرِ روایی چه چیزی را انجام می‌دهد؟",
+      "question_tg": "Шоҳнома гирйаи Искандар бар Дорo ро «ғайримунтазиртарин лаҳзаи ин фасл» муаррифӣ мекунад. Чаро ғайримунтазир аст, ва ин гирйа аз назари ривоӣ чӣ чизеро анҷом медиҳад?",
+      "answers": [
+        "Conquest narratives don't typically show conquerors weeping over the conquered. The weeping collapses the distance between victor and victim and prepares for the half-brother revelation — making Sekandar a mourner before he is revealed as kin",
+        "It is unexpected because Sekandar was known for emotional control. The weeping signals that Dara's greatness had genuinely moved even his conqueror",
+        "The weeping is unexpected because it comes after Sekandar had made public speeches celebrating the victory. It reveals private grief behind public triumph",
+        "It is unexpected because earlier chapters had portrayed Sekandar as cold and calculating. The weeping redeems his character at the poem's turning point"
+      ],
+      "answers_fa": [
+        "روایات فتح معمولاً فاتحان را در حالِ گریه بر مفتوح نشان نمی‌دهند. گریه فاصله‌ی بینِ فاتح و قربانی را از بین می‌برد و برای آشکارسازیِ ناتنی‌برادری آماده‌سازی می‌کند — اسکندر را قبل از اینکه به عنوانِ خویشاوند آشکار شود عزادار می‌کند",
+        "غیرمنتظره است چون اسکندر برای کنترلِ احساساتی شناخته می‌شد. گریه نشان می‌دهد که عظمتِ دارا حتی فاتحش را واقعاً تحتِ تأثیر قرار داده بود",
+        "گریه غیرمنتظره است چون بعد از سخنرانی‌های عمومیِ اسکندر که پیروزی را جشن می‌گرفتند می‌آید. عزای خصوصی پشتِ پیروزیِ عمومی را آشکار می‌کند",
+        "غیرمنتظره است چون فصل‌های قبلی اسکندر را سرد و حساب‌گر نشان داده بودند. گریه شخصیتش را در نقطه‌ی عطفِ شعر بازخرید می‌کند"
+      ],
+      "answers_tg": [
+        "Ривоёти фатҳ одатан ғолибонро дар ҳоли гирйа бар мағлуб нишон намедиҳанд. Гирйа фосилаи байни ғолиб ва қурбониро аз байн мебарад ва барои ошкорсозии ногатанибуданашон омода мекунад",
+        "Ғайримунтазир аст зеро Искандар барои назорати эҳсосотӣ шинохта мешуд",
+        "Гирйа ғайримунтазир аст зеро баъд аз суханрониҳои оммавии Искандар ки пирӯзиро ҷашн мегирифтанд меояд",
+        "Ғайримунтазир аст зеро фаслҳои пешин Искандарро хунук ва ҳисобгар нишон дода буданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Conquest narratives rarely have the conqueror weep over the conquered. The weeping collapses the victor/victim binary, creating a moment of shared humanity that makes the half-brother revelation land with its full weight. Sekandar is made a mourner first — and only then is it revealed that he is mourning his own blood.",
+      "explanation_fa": "روایاتِ فتح به ندرت فاتح را در حالِ گریه بر مفتوح دارند. گریه دوگانه‌ی فاتح/قربانی را از بین می‌برد و لحظه‌ای از انسانیتِ مشترک می‌آفریند که آشکارسازیِ ناتنی‌برادری را با وزنِ کاملش فرود می‌آورد. اسکندر ابتدا عزادار می‌شود — و تنها بعد آشکار می‌شود که دارد خونِ خودش را عزا می‌گیرد.",
+      "explanation_tg": "Ривоёти фатҳ ба надрат ғолибро дар ҳоли гирйа бар мағлуб доранд. Гирйа дугонаи ғолиб/қурбониро аз байн мебарад ва лаҳзае аз инсонияти муштарак меофарад ки ошкорсозии ногатанибуданашонро бо вазни комилаш фуруд меоварад. Искандар аввал мотамдор мешавад — ва танҳо баъд ошкор мешавад ки дорад хуни худашро аза мегирад.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      }
+    },
+    {
+      "id": "dra-h2",
+      "chapter_slug": "dara",
+      "quiz_part": 11,
+      "difficulty": "hard",
+      "question": "Dara's dying request was to have Sekandar marry his daughter Roshanak. What does this act represent beyond a personal wish — what was Dara actually doing?",
+      "question_fa": "آخرین خواسته‌ی دارا این بود که اسکندر با دخترش روشنک ازدواج کند. فراتر از یک خواسته‌ی شخصی، این عمل چه چیزی را نشان می‌دهد — دارا در واقع چه می‌کرد؟",
+      "question_tg": "Охирин хоҳиши Дорo ин буд ки Искандар бо духтараш Рӯшанак издивоҷ кунад. Фаротар аз як хоҳиши шахсӣ, ин амал чӣ чизеро нишон медиҳад — Дорo дар асл чӣ мекард?",
+      "answers": [
+        "He was converting the military defeat into a dynastic continuity — surrendering the form of the Kayanian kingdom while preserving its bloodline through marriage into the conqueror's line",
+        "He was attempting to humiliate Sekandar by imposing a Persian queen on the Greek court, creating a cultural contamination that would eventually undermine the conquest",
+        "He was protecting Roshanak personally — ensuring she would be sheltered rather than enslaved in the aftermath of the conquest",
+        "He was following Kayanian custom, which required that a defeated king arrange his daughter's marriage before death to prevent the dynasty from dying with him"
+      ],
+      "answers_fa": [
+        "داشت شکستِ نظامی را به تداومِ سلسله‌ای تبدیل می‌کرد — شکلِ پادشاهیِ کیانیان را تسلیم می‌کرد در حالی که نسلش را از طریقِ ازدواج با خطِّ فاتح حفظ می‌کرد",
+        "داشت سعی می‌کرد اسکندر را با تحمیلِ ملکه‌ای ایرانی به دربارِ یونانی تحقیر کند، و آلودگیِ فرهنگی‌ای ایجاد کند که در نهایت فتح را تضعیف کند",
+        "داشت روشنک را شخصاً حفاظت می‌کرد — اطمینان می‌داد که پناه‌دهی می‌شود نه اینکه در پیِ فتح به بردگی برده شود",
+        "داشت سنتِ کیانیان را دنبال می‌کرد که شاهِ مغلوب را ملزم می‌کرد قبل از مرگ ازدواجِ دخترش را ترتیب دهد"
+      ],
+      "answers_tg": [
+        "Дошт шикасти низомиро ба идомаи сулолавӣ табдил мекард — шакли подшоҳии Каёниёнро таслим мекард дар ҳоле ки наслашро тавассути издивоҷ бо хатти ғолиб ҳифз мекард",
+        "Дошт кӯшиш мекард Искандарро бо таҳмили маликаи эронӣ ба дарбори юнонӣ таҳқир кунад",
+        "Дошт Рӯшанакро шахсан ҳифозат мекард",
+        "Дошт анъанаи Каёниёнро пайравӣ мекард"
+      ],
+      "correct_answer": 0,
+      "explanation": "The dying request is an act of political intelligence. Dara could not prevent the military conquest, but he could shape what came after. By marrying Roshanak into Sekandar's line, he ensured the Kayanian bloodline persisted — the form of the kingdom was lost, but the dynasty's continuity was preserved. The Shahnameh notes this explicitly: what he could not protect with his army, he protected with his dying request.",
+      "explanation_fa": "آخرین خواسته عملِ هوشمندیِ سیاسی است. دارا نمی‌توانست از فتحِ نظامی جلوگیری کند، اما می‌توانست آنچه بعد می‌آمد را شکل دهد. با ازدواجِ روشنک در خطِّ اسکندر، اطمینان یافت که نسلِ کیانیان باقی می‌ماند — شکلِ پادشاهی از دست رفت، اما تداومِ سلسله حفظ شد.",
+      "explanation_tg": "Охирин хоҳиш амали зиркии сиёсӣ аст. Дорo натавонист аз фатҳи низомӣ ҷилавгирӣ кунад, аммо метавонист он чи баъд меомадро шакл диҳад. Бо издивоҷи Рӯшанак дар хатти Искандар, итминон ёфт ки насли Каёниён боқӣ мемонад — шакли подшоҳӣ аз даст рафт, аммо идомаи сулола ҳифз шуд.",
+      "reward": {
+        "xp": 240,
+        "real": 110
+      }
+    },
+    {
+      "id": "dra-h3",
+      "chapter_slug": "dara",
+      "quiz_part": 12,
+      "difficulty": "hard",
+      "question": "The Ferdowsi Chronicle notes that he was \"writing about the moment when an old way of doing things ends — not because it was wrong but because something faster arrived.\" What makes this framing significant rather than simply a consolation for Dara's loss?",
+      "question_fa": "رویکردِ فردوسی اشاره می‌کند که داشت «درباره‌ی لحظه‌ای می‌نوشت که روشِ قدیمیِ انجامِ کارها تمام می‌شود — نه به خاطرِ اینکه اشتباه بود بلکه چون چیزِ سریع‌تری رسید.» چه چیزی این چارچوب‌بندی را به‌جای یک دلداری برای شکستِ دارا معنادار می‌کند؟",
+      "question_tg": "Рӯикарди Фирдавсӣ ишора мекунад ки дошт «дар бораи лаҳзае менавишт ки равиши куҳнаи анҷом додани корҳо тамом мешавад — на зеро ки нодуруст буд балки зеро ки чизи суриатноктаре омад.» Чӣ чизе ин чорчӯбандиро ба ҷои дилдориe барои шикасти Дорo маънодор мекунад?",
+      "answers": [
+        "It distributes the tragedy across both sides — Dara's methods were not wrong, and Sekandar's victory was not a moral verdict. It refuses to make the conquest a judgment, insisting instead that time simply moved on, and some things did not",
+        "It excuses Dara's defeats by attributing them to historical inevitability rather than strategic failure — a narrative courtesy extended to a fallen king",
+        "It validates Sekandar's conquest by framing it as progress — the new thing was better, and the chronicle was honest enough to say so",
+        "It is primarily about Ferdowsi's own situation — the framing of Dara is a cover for Ferdowsi's lament about being superseded by Ghaznavid patronage"
+      ],
+      "answers_fa": [
+        "تراژدی را بینِ هر دو طرف توزیع می‌کند — روش‌های دارا اشتباه نبودند، و پیروزیِ اسکندر یک حکمِ اخلاقی نبود. از تبدیلِ فتح به قضاوت امتناع می‌کند، در عوض اصرار دارد که زمان صرفاً پیش رفت، و برخی چیزها پیش نرفتند",
+        "شکست‌های دارا را با نسبت دادنشان به اجتناب‌ناپذیریِ تاریخی به جای شکستِ استراتژیک توجیه می‌کند — تعارفِ روایی به یک شاهِ افتاده",
+        "فتحِ اسکندر را با چارچوب‌بندیِ آن به عنوانِ پیشرفت اعتبار می‌بخشد — چیزِ جدید بهتر بود، و روایت به اندازه‌ی کافی صادق بود که این را بگوید",
+        "اساساً درباره‌ی وضعیتِ خودِ فردوسی است — چارچوب‌بندیِ دارا پوششی است برای شکوه‌ی فردوسی از اینکه توسطِ حمایتِ غزنوی کنار گذاشته شده"
+      ],
+      "answers_tg": [
+        "Фоҷеаро байни ҳар ду тараф тақсим мекунад — равишҳои Дорo нодуруст набуданд, ва пирӯзии Искандар ҳукми ахлоқӣ набуд. Аз табдили фатҳ ба қазоват худдорӣ мекунад, ба ҷояш исрор дорад ки замон танҳо пеш рафт, ва баъзе чизҳо пеш нарафтанд",
+        "Шикастҳои Доро ро бо нисбат доданашон ба ногузирии таърихӣ ба ҷои шикасти стратегӣ тавҷеҳ мекунад",
+        "Фатҳи Искандарро бо чорчӯбандии он ҳамчун пешрафт эътибор мебахшад",
+        "Асосан дар бораи вазъияти худи Фирдавсӣ аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "The framing refuses to make the conquest a moral verdict. If Dara's methods had been wrong, his defeat would be just — a correction. But the Shahnameh says they were right until they weren't, which is a more honest and more painful observation. The tragedy is not that Dara failed; it is that he succeeded by every measure that had ever mattered and then encountered a measure that was new.",
+      "explanation_fa": "چارچوب‌بندی از تبدیلِ فتح به حکمِ اخلاقی امتناع می‌کند. اگر روش‌های دارا اشتباه بودند، شکستش عادلانه بود — یک تصحیح. اما شاهنامه می‌گوید درست بودند تا اینکه نبودند، که یک مشاهده‌ی صادقانه‌تر و دردناک‌تر است. تراژدی این نیست که دارا شکست خورد؛ این است که با هر معیاری که تا به حال اهمیت داشت موفق بود و بعد با معیاری که جدید بود روبرو شد.",
+      "explanation_tg": "Чорчӯбандӣ аз табдили фатҳ ба ҳукми ахлоқӣ худдорӣ мекунад. Агар равишҳои Дорo нодуруст мебуданд, шикасташ адолатона мебуд — ислоҳе. Аммо Шоҳнома мегӯяд дуруст буданд то ин ки набуданд, ки мушоҳидаи ростгӯёнатар ва дарднокатар аст.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "dra-h4",
+      "chapter_slug": "dara",
+      "quiz_part": 13,
+      "difficulty": "hard",
+      "question": "In the Shahnameh's telling, the half-brother revelation arrives at the moment of death — too late to change anything. What does the chronicle's timing of this revelation say about its understanding of how important truths work?",
+      "question_fa": "در روایتِ شاهنامه، آشکارسازیِ ناتنی‌برادری در لحظه‌ی مرگ می‌رسد — خیلی دیر برای تغییرِ هر چیزی. زمان‌بندیِ این آشکارسازی در روایت چه چیزی درباره‌ی درکِ روایت از نحوه‌ی عملکردِ حقایقِ مهم می‌گوید؟",
+      "question_tg": "Дар ривоёти Шоҳнома, ошкорсозии ногатанибудан дар лаҳзаи марг меояд — хеле дер барои тағйири ҳар чизе. Вақт‌бандии ин ошкорсозӣ дар ривоят чӣ чизеро дар бораи дарки ривоят аз нҳавзаи кори ҳақиқатҳои муҳим мегӯяд?",
+      "answers": [
+        "The chronicle understood that the most important truths about people arrive at the moment when they can no longer change anything — recognition comes after the point of action, which is when it finally has room to be honest",
+        "The timing is a structural flaw — Ferdowsi withheld the revelation too long, sacrificing plausible history for dramatic effect at the cost of the story's realism",
+        "The late arrival of the truth is a punishment — the two half-brothers deserved to know but were denied by fate, and the chronicle is presenting divine judgment",
+        "The revelation arrives too late because the characters themselves had suppressed it — both Dara and Sekandar knew but neither acknowledged it until death forced the acknowledgment"
+      ],
+      "answers_fa": [
+        "روایت درک کرد که مهم‌ترین حقایق درباره‌ی آدم‌ها در لحظه‌ای می‌رسند که دیگر نمی‌توانند هیچ چیزی را تغییر دهند — شناخت بعد از نقطه‌ی عمل می‌آید، که آن وقتی است که سرانجام فضایی برای صادق بودن دارد",
+        "زمان‌بندی یک نقصِ ساختاری است — فردوسی آشکارسازی را خیلی طولانی نگه داشت، تاریخِ قابلِ قبول را قربانیِ اثرِ دراماتیک کرد به بهایِ واقع‌گراییِ داستان",
+        "رسیدنِ دیرهنگامِ حقیقت یک مجازات است — دو ناتنی‌برادر لایقِ دانستن بودند اما سرنوشت از آن‌ها دریغ کرد، و روایت داورِ الهی را نشان می‌دهد",
+        "آشکارسازی خیلی دیر می‌رسد چون خودِ شخصیت‌ها آن را پنهان کرده بودند — هم دارا و هم اسکندر می‌دانستند اما هیچکدام تا زمانی که مرگ اعتراف را مجبور کرد اذعان نکردند"
+      ],
+      "answers_tg": [
+        "Ривоят дарк кард ки муҳимтарин ҳақиқатҳо дар бораи одамон дар лаҳзае мерасанд ки дигар наметавонанд ҳеч чизеро тағйир диҳанд — шинохт баъд аз нуқтаи амал меояд, ки он вақтест ки дар охир фазое барои ростгӯ будан дорад",
+        "Вақт‌бандӣ нуқсони сохторӣ аст — Фирдавсӣ ошкорсозиро хеле тӯлонӣ нигоҳ дошт",
+        "Омадани дерҳангоми ҳақиқат ҷазост",
+        "Ошкорсозӣ хеле дер меояд зеро худи шахсиятҳо онро пинҳон карда буданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh treats this timing as the central insight of the chapter: the most important truths arrive when they can no longer change anything. The recognition of kinship comes after the wars are over, after the bloodshed, after the point where it could have redirected events. Ferdowsi built this arrival-too-late as a structural truth, not a dramatic trick.",
+      "explanation_fa": "شاهنامه این زمان‌بندی را به عنوانِ بینشِ مرکزیِ فصل تلقی می‌کند: مهم‌ترین حقایق وقتی می‌رسند که دیگر نمی‌توانند هیچ چیزی را تغییر دهند. شناختِ خویشاوندی بعد از پایانِ جنگ‌ها می‌آید، بعد از خونریزی، بعد از نقطه‌ای که می‌توانست رویدادها را هدایت کند.",
+      "explanation_tg": "Шоҳнома ин вақт‌бандиро ҳамчун бинеши марказии фасл мешуморад: муҳимтарин ҳақиқатҳо вақте мерасанд ки дигар наметавонанд ҳеч чизеро тағйир диҳанд. Шинохти хешовандӣ баъд аз поёни ҷангҳо меояд, баъд аз хунрезӣ, баъд аз нуқтае ки метавонист рӯйдодҳоро роҳнамоӣ кунад.",
+      "reward": {
+        "xp": 260,
+        "real": 120
+      }
+    },
+    {
+      "id": "dra-h5",
+      "chapter_slug": "dara",
+      "quiz_part": 14,
+      "difficulty": "hard",
+      "question": "How does the Dara chapter function differently from most conquest chapters in the Shahnameh's arc? What does the Shahnameh accomplish by not making this a straightforward tale of downfall?",
+      "question_fa": "چگونه فصلِ دارا با اکثرِ فصل‌های فتح در قوسِ شاهنامه متفاوت عمل می‌کند؟ شاهنامه با تبدیل نکردنِ این به یک داستانِ سقوطِ ساده چه چیزی را به دست می‌آورد؟",
+      "question_tg": "Чӣ гуна фасли Доро бо аксари фаслҳои фатҳ дар қавси Шоҳнома фарқ мекунад? Шоҳнома бо табдил накардани ин ба достони содаи суқут чӣ чизеро ба даст меоварад?",
+      "answers": [
+        "Most conquest chapters in the Shahnameh show the fallen king deserving his fall through moral failure. Dara's chapter refuses this — he was capable, his methods were legitimate, and his defeat was structural. The chronicle preserves his dignity while fully acknowledging his loss",
+        "The Dara chapter is unique in being the only chapter where the conqueror is shown to be morally superior to the conquered king, making Sekandar the chronicle's first unambiguously heroic foreign figure",
+        "Unlike other conquest chapters, this one ends in reconciliation rather than destruction — Sekandar's agreement with Dara's dying request distinguishes it as the only morally resolved conquest in the poem",
+        "The chapter functions as a transition chapter rather than a conquest narrative — its purpose is to bridge the Kayanian era and the Alexander era without judging either"
+      ],
+      "answers_fa": [
+        "اکثرِ فصل‌های فتح در شاهنامه شاهِ افتاده را به خاطرِ شکستِ اخلاقی لایقِ سقوطش نشان می‌دهند. فصلِ دارا از این امتناع می‌کند — توانمند بود، روش‌هایش مشروع بودند، و شکستش ساختاری بود. روایت کرامتش را حفظ می‌کند در حالی که کاملاً شکستش را می‌پذیرد",
+        "فصلِ دارا از این جهت منحصر به فرد است که تنها فصلی است که فاتح از نظرِ اخلاقی برتر از شاهِ مغلوب نشان داده می‌شود، اسکندر را اولین شخصیتِ خارجیِ بدونِ ابهامِ قهرمانانه‌ی روایت می‌کند",
+        "بر خلافِ فصل‌های فتحِ دیگر، این یکی در آشتی به پایان می‌رسد — توافقِ اسکندر با آخرین خواسته‌ی دارا آن را به عنوانِ تنها فتحِ حل‌شده از نظرِ اخلاقی در شعر متمایز می‌کند",
+        "فصل به عنوانِ یک فصلِ انتقالی به جای یک روایتِ فتح عمل می‌کند — هدفش این است که بدونِ قضاوتِ هیچکدام، دوره‌ی کیانیان و دوره‌ی اسکندر را به هم پیوند دهد"
+      ],
+      "answers_tg": [
+        "Аксари фаслҳои фатҳ дар Шоҳнома подшоҳи афтодаро аз сабаби шикасти ахлоқӣ лоиқи суқуташ нишон медиҳанд. Фасли Дорo аз ин худдорӣ мекунад — тавонманд буд, равишҳояш машруъ буданд, ва шикасташ сохторӣ буд. Ривоят кароматашро ҳифз мекунад дар ҳоле ки шикасташро пурра мепазирад",
+        "Фасли Дорo аз ин ҷиҳат беназир аст ки танҳо фаслест ки ғолиб аз назари ахлоқӣ аз подшоҳи мағлуб бартар нишон дода мешавад",
+        "Бар хилофи фаслҳои фатҳи дигар, ин яке бо осоиш ба поён мерасад",
+        "Фасл ҳамчун фасли гузарӣ ба ҷои ривоёти фатҳ амал мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's typical structure for fallen kings is moral: the king failed because he was proud, weak, corrupt, or unjust. Dara breaks this pattern entirely. He was none of those things. His defeat came from something outside the normal register of personal virtue and failure — a structural mismatch with a changed world. The chronicle preserves his dignity precisely by refusing to moralize his loss.",
+      "explanation_fa": "ساختارِ معمولِ شاهنامه برای شاهانِ افتاده اخلاقی است: شاه شکست خورد چون مغرور، ضعیف، فاسد یا ظالم بود. دارا کاملاً این الگو را می‌شکند. هیچ‌کدامِ این‌ها نبود. شکستش از چیزی خارج از ثبتِ معمولِ فضیلت و شکستِ شخصی آمد — عدمِ تناسبِ ساختاری با دنیایی که تغییر کرده بود.",
+      "explanation_tg": "Сохтори муъмулии Шоҳнома барои подшоҳони афтода ахлоқӣ аст: подшоҳ шикаст хӯрд зеро мағрур, заиф, фосид ё золим буд. Дорo ин намунаро пурра мешиканад. Ҳеч яке аз инҳо набуд. Шикасташ аз чизе хориҷ аз сабти муъмулии фазилат ва шикасти шахсӣ омад.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "dra-h6",
+      "chapter_slug": "dara",
+      "quiz_part": 15,
+      "difficulty": "hard",
+      "question": "The Ferdowsi Chronicle notes he was 72, near the end of his life, watching 'the old Persian cultural dominance give way to Ghaznavid Turkish patronage, and the parallels were felt rather than stated.' How does this personal context shape what Ferdowsi was doing in writing the Dara chapter?",
+      "question_fa": "رویکردِ فردوسی اشاره می‌کند که ۷۲ ساله بود، نزدیکِ پایانِ عمرش، داشت تماشا می‌کرد که «تسلطِ فرهنگیِ کهنِ فارسی جای خود را به حمایتِ ترکیِ غزنوی می‌داد، و موازات‌ها احساس می‌شدند نه بیان.» این زمینه‌ی شخصی چگونه کارِ فردوسی را در نگارشِ فصلِ دارا شکل می‌دهد؟",
+      "question_tg": "Рӯикарди Фирдавсӣ ишора мекунад ки 72 сола буд, дар наздикии поёни умраш, дошт тамошо мекард ки «тасаллути фарҳангии куҳнаи Форсӣ ҷои худро ба ҳимояти туркии Ғазнавӣ медод, ва монандиҳо эҳсос мешуданд на баён.» Ин заминаи шахсӣ чӣ гуна кори Фирдавсиро дар навиштани фасли Дорo шакл медиҳад?",
+      "answers": [
+        "Ferdowsi was writing about Dara from the inside — as someone who also lived through the replacement of an older way by a faster one. The Dara chapter is not an account of something historical; it is a map of a feeling Ferdowsi knew from experience",
+        "The personal context is incidental — Ferdowsi's circumstances influenced his mood but not the content. He wrote what the source material gave him regardless of his situation",
+        "The parallel motivated Ferdowsi to write Dara more sympathetically than the sources warranted, inflating Dara's virtues to make the Greek conquest seem more unjust",
+        "Ferdowsi used Dara's story to deliver a covert political critique of Mahmud of Ghazni — the chapter is allegorical propaganda disguised as history"
+      ],
+      "answers_fa": [
+        "فردوسی از درون درباره‌ی دارا می‌نوشت — به عنوانِ کسی که خودش جایگزینیِ یک روشِ قدیمی توسطِ یک روشِ سریع‌تر را زیسته بود. فصلِ دارا گزارشی از چیزِ تاریخی نیست؛ نقشه‌ی احساسی است که فردوسی از تجربه می‌شناخت",
+        "زمینه‌ی شخصی فرعی است — شرایطِ فردوسی روحیه‌اش را تحتِ تأثیر قرار داد نه محتوا. صرفِ نظر از وضعیتش هر چه مواد می‌دادند نوشت",
+        "موازات انگیزه داد که فردوسی دارا را همدلانه‌تر از آنچه منابع ایجاب می‌کردند بنویسد، فضایلِ دارا را برای ظالمانه‌تر نشان دادنِ فتحِ یونانی بزرگ‌نمایی کرد",
+        "فردوسی از داستانِ دارا برای ارائه‌ی انتقادِ سیاسیِ پنهانی از محمودِ غزنوی استفاده کرد — فصل پروپاگاندای تمثیلی است که به شکلِ تاریخ پنهان شده"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ аз дарун дар бораи Дорo менавишт — ҳамчун касе ки худаш иваз шудани равиши куҳна аз ҷониби равиши суриатноктарро зиста буд. Фасли Дорo ҳисобест аз чизи таърихӣ не; харитаи эҳсосест ки Фирдавсӣ аз таҷриба мешинохт",
+        "Заминаи шахсӣ фаръӣ аст — шароити Фирдавсӣ рӯҳияашро таъсир дод на мӯҳтаво",
+        "Монандӣ ангеза дод ки Фирдавсӣ Доро ро ҳамдилонатар аз он чи манобеъ иқтизо мекарданд бинависад",
+        "Фирдавсӣ аз достони Дорo барои ирои интиқоди сиёсии пинҳонӣ аз Маҳмуди Ғазнавӣ истифода кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Ferdowsi wrote that Dara's methods were not wrong, they simply encountered something new, he was writing from lived experience. He had watched the Persian literary world he inhabited be replaced — not because it had failed but because something with different backing arrived. The Dara chapter is auto-biographical in its feeling even as it is historical in its subject.",
+      "explanation_fa": "وقتی فردوسی نوشت که روش‌های دارا اشتباه نبودند، صرفاً با چیزِ جدیدی روبرو شدند، از تجربه‌ی زیسته می‌نوشت. داشت تماشا می‌کرد که دنیای ادبیِ فارسیِ محیطش جایگزین می‌شود — نه چون شکست خورده بود بلکه چون چیزی با پشتیبانیِ متفاوت رسیده بود.",
+      "explanation_tg": "Вақте Фирдавсӣ навишт ки равишҳои Дорo нодуруст набуданд, танҳо бо чизи наве рӯ ба рӯ шуданд, аз таҷрибаи зисташуда менавишт. Дошт тамошо мекард ки ҷаҳони адабии форсии муҳиташ иваз мешавад — на зеро ки шикаст хӯрда буд балки зеро ки чизе бо пуштибонии гуногун омада буд.",
+      "reward": {
+        "xp": 280,
+        "real": 130
+      }
+    },
+    {
+      "id": "dra-h7",
+      "chapter_slug": "dara",
+      "quiz_part": 16,
+      "difficulty": "hard",
+      "question": "The Dara chapter ends with: \"What Dara could not protect with his army he protected with his dying request — the bloodline continued through the marriage, the Kayanian line persisted through the loss.\" What does this conclusion say about the Shahnameh's ultimate understanding of what survives conquest?",
+      "question_fa": "فصلِ دارا با این جمله به پایان می‌رسد: «آنچه دارا نمی‌توانست با ارتشش حفظ کند، با آخرین خواسته‌اش محافظت کرد — نسل از طریقِ ازدواج ادامه یافت، خطِّ کیانیان از طریقِ شکست پایدار ماند.» این نتیجه‌گیری چه چیزی درباره‌ی درکِ نهاییِ شاهنامه از آنچه از فتح جان سالم به در می‌برد می‌گوید؟",
+      "question_tg": "Фасли Дорo бо ин ҷумла ба поён мерасад: «Он чи Дорo натавонист бо артишаш ҳифз кунад, бо охирин хоҳишаш муҳофизат кард — насл тавассути издивоҷ идома ёфт, хатти Каёниён тавассути шикаст поядор монд.» Ин натиҷагирӣ чӣ чизеро дар бораи дарки ниҳоии Шоҳнома аз он чи аз фатҳ ҷон солим ба дар мебарад мегӯяд?",
+      "answers": [
+        "Blood persists when territory does not. The Shahnameh tracks what outlasts armies and borders — and that turns out to be kinship, lineage, and the continuity of identity through those who carry it forward, even if the form they carry it in has changed",
+        "The conclusion is about political pragmatism — Dara understood that bloodlines could be used as negotiating chips, and the marriage was a shrewd final move by a dying statesman",
+        "The Shahnameh's view is that memory persists — not blood. The marriage is incidental; what survives conquest is the chronicle itself, which carries the story forward when the people cannot",
+        "The conclusion says that nothing truly survives conquest — the Kayanian bloodline continued but the Kayanian kingdom ended, and the continuation is a consolation, not a genuine survival"
+      ],
+      "answers_fa": [
+        "خون پایدار می‌ماند وقتی سرزمین پایدار نمی‌ماند. شاهنامه آنچه از ارتش‌ها و مرزها دوام می‌آورد را دنبال می‌کند — و آن خویشاوندی، نسب، و تداومِ هویت از طریقِ کسانی که آن را به جلو حمل می‌کنند معلوم می‌شود، حتی اگر شکلِ حاملِ آن تغییر کرده باشد",
+        "نتیجه‌گیری درباره‌ی عمل‌گرایی سیاسی است — دارا درک کرد که می‌توان از نسل‌ها به عنوانِ ابزارِ مذاکره استفاده کرد، و ازدواج آخرین اقدامِ زیرکانه‌ی یک دولتمردِ در حالِ مرگ بود",
+        "دیدگاهِ شاهنامه این است که حافظه پایدار می‌ماند — نه خون. ازدواج فرعی است؛ آنچه از فتح جان به در می‌برد خودِ روایت است که داستان را جلو می‌برد وقتی مردم نمی‌توانند",
+        "نتیجه‌گیری می‌گوید که هیچ چیز واقعاً از فتح جان به در نمی‌برد — نسلِ کیانیان ادامه یافت اما پادشاهیِ کیانیان پایان یافت، و ادامه یک دلداری است نه بقایی واقعی"
+      ],
+      "answers_tg": [
+        "Хун поядор мемонад вақте заминро поядор намемонад. Шоҳнома он чиро ки аз артишҳо ва марзҳо давом меоварад пайгирӣ мекунад — ва он хешовандӣ, насаб, ва идомаи ҳувият тавассути касоне ки онро ба пеш мебаранд маълум мешавад, ҳатто агар шакли баранда тағйир карда бошад",
+        "Натиҷагирӣ дар бораи амалгароии сиёсӣ аст — Дорo дарк кард ки метавон аз насл‌ҳо ҳамчун абзори музокира истифода кард",
+        "Дидгоҳи Шоҳнома ин аст ки хотира поядор мемонад — на хун",
+        "Натиҷагирӣ мегӯяд ки ҳеч чиз воқеан аз фатҳ ҷон ба дар намебарад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh repeatedly shows that what outlasts conquest is not the army or the territory but the bloodline and the memory of who carried it. Dara's final act was an act of identity preservation — ensuring that the Kayanian blood would persist inside the new order even after the Kayanian form had been replaced. This is consistent with how the poem treats survival across its entire arc: continuity matters more than form.",
+      "explanation_fa": "شاهنامه بارها نشان می‌دهد که آنچه از فتح دوام می‌آورد نه ارتش یا سرزمین، بلکه نسل و خاطره‌ی حاملانِ آن است. آخرین عملِ دارا عملی برای حفظِ هویت بود — اطمینان از اینکه خونِ کیانیان داخلِ نظمِ جدید پایدار می‌ماند حتی بعد از اینکه شکلِ کیانیان جایگزین شده بود.",
+      "explanation_tg": "Шоҳнома борҳо нишон медиҳад ки он чи аз фатҳ давом меоварад на артиш ё замин, балки насаб ва хотираи баранандагони он аст. Охирин амали Дорo амале барои ҳифзи ҳувият буд — итминон аз ин ки хуни Каёниён дохили тартиби нав поядор мемонад ҳатто баъд аз ин ки шакли Каёниён иваз шуда буд.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}

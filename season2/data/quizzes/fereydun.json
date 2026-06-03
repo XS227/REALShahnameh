@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "fereydun-1",
+      "chapter_slug": "fereydun",
+      "quiz_part": 1,
+      "question": "What weapon does Fereydun use to defeat Zahhak?",
+      "answers": [
+        "Bull-headed mace",
+        "Bow of dawn",
+        "Spear of fire",
+        "Crystal sword"
+      ],
+      "correct_answer": 0,
+      "explanation": "The bull-headed mace forged for the hour.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      },
+      "difficulty": "easy",
+      "question_fa": "فریدون از چه سلاحی برای شکست دادن ضحاک استفاده کرد؟",
+      "question_tg": "Фаридун барои шикаст додани Заҳҳок аз кадом силоҳ истифода кард?",
+      "answers_fa": [
+        "گرز گاوسر",
+        "کمان سپیده‌دم",
+        "نیزه‌ی آتش",
+        "شمشیر بلور"
+      ],
+      "answers_tg": [
+        "Гурзи гавсар",
+        "Камони сипедадам",
+        "Найзаи оташ",
+        "Шамшери булӯр"
+      ],
+      "explanation_fa": "گرز گاوسر برای آن ساعت آهنگری شده بود.",
+      "explanation_tg": "Гурзи гавсар барои он соат оҳангарӣ шуда буд."
+    },
+    {
+      "id": "fereydun-2",
+      "chapter_slug": "fereydun",
+      "quiz_part": 2,
+      "question": "Whose apron becomes the banner of revolt?",
+      "answers": [
+        "Sam",
+        "Kaveh",
+        "Tus",
+        "Manuchehr"
+      ],
+      "correct_answer": 1,
+      "explanation": "Kaveh the blacksmith.",
+      "reward": {
+        "xp": 140,
+        "real": 60
+      },
+      "difficulty": "easy",
+      "question_fa": "پیش‌بند چه کسی پرچم شورش شد؟",
+      "question_tg": "Пешбанди кӣ байрақи шӯриш шуд?",
+      "answers_fa": [
+        "سام",
+        "کاوه",
+        "توس",
+        "منوچهر"
+      ],
+      "answers_tg": [
+        "Сом",
+        "Ковае",
+        "Тус",
+        "Манучеҳр"
+      ],
+      "explanation_fa": "کاوه‌ی آهنگر.",
+      "explanation_tg": "Ковае-оҳангар."
+    },
+    {
+      "id": "fereydun-3",
+      "chapter_slug": "fereydun",
+      "quiz_part": 1,
+      "question": "Where is Zahhak imprisoned forever?",
+      "answers": [
+        "Salt desert of Lut",
+        "Lake Urmia",
+        "Mount Damavand",
+        "Caspian shore"
+      ],
+      "correct_answer": 2,
+      "explanation": "Bound on Damavand.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      },
+      "difficulty": "medium",
+      "question_fa": "ضحاک برای همیشه در کجا زندانی شد؟",
+      "question_tg": "Заҳҳок барои ҳамеша дар куҷо зиндонӣ шуд?",
+      "answers_fa": [
+        "کویر نمک لوت",
+        "دریاچه‌ی ارومیه",
+        "کوه دماوند",
+        "ساحل دریای خزر"
+      ],
+      "answers_tg": [
+        "Биёбони намаки Лут",
+        "Кӯли Урмия",
+        "Кӯҳи Дамованд",
+        "Соҳили баҳри Хазар"
+      ],
+      "explanation_fa": "بر دماوند در بند.",
+      "explanation_tg": "Бар Дамованд дар банд."
+    },
+    {
+      "id": "fereydun-4",
+      "chapter_slug": "fereydun",
+      "quiz_part": 2,
+      "question": "Among how many sons does Fereydun split the kingdom?",
+      "answers": [
+        "Two",
+        "Seven",
+        "Four",
+        "Three"
+      ],
+      "correct_answer": 3,
+      "explanation": "Iraj, Tur, Salm.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      },
+      "difficulty": "medium",
+      "question_fa": "فریدون پادشاهی را بین چند پسر تقسیم کرد؟",
+      "question_tg": "Фаридун шоҳиро байни чанд писар тақсим кард?",
+      "answers_fa": [
+        "دو",
+        "هفت",
+        "چهار",
+        "سه"
+      ],
+      "answers_tg": [
+        "Ду",
+        "Ҳафт",
+        "Чор",
+        "Се"
+      ],
+      "explanation_fa": "ایرج، تور، سلم.",
+      "explanation_tg": "Эраҷ, Тур, Салм."
+    },
+    {
+      "id": "fereydun-e3",
+      "chapter_slug": "fereydun",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Into how many portions does Fereydun divide the world among his sons?",
+      "question_fa": "فریدون جهان را به چند بخش میانِ پسرانش تقسیم می‌کند؟",
+      "question_tg": "Фаридун ҷаҳонро ба чанд ҳисса байни писаронаш тақсим мекунад?",
+      "answers": [
+        "Two",
+        "Seven",
+        "Five",
+        "Three"
+      ],
+      "answers_fa": [
+        "دو",
+        "هفت",
+        "پنج",
+        "سه"
+      ],
+      "answers_tg": [
+        "Ду",
+        "Ҳафт",
+        "Панҷ",
+        "Се"
+      ],
+      "correct_answer": 3,
+      "explanation": "Three — Iran (Iraj), Turan (Tur), and Rum (Salm). The division should have been enough. It is not.",
+      "explanation_fa": "سه — ایران (ایرج)، توران (تور) و روم (سلم). این تقسیم باید کافی می‌بود. نیست.",
+      "explanation_tg": "Се — Эрон (Эраҷ), Турон (Тур) ва Рум (Салм). Ин тақсимот бояд кифоя мебуд. Нест.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "fereydun-m3",
+      "chapter_slug": "fereydun",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What does Iraj receive when Fereydun divides the world, and what does he say about it?",
+      "question_fa": "ایرج در تقسیمِ جهان توسطِ فریدون چه می‌گیرد و درباره‌اش چه می‌گوید؟",
+      "question_tg": "Эраҷ дар тақсими ҷаҳон аз тарафи Фаридун чӣ мегирад ва дар бораи он чӣ мегӯяд?",
+      "answers": [
+        "Turan — the largest share — and says he earned it",
+        "All three kingdoms — and says he will share with his brothers",
+        "Rum — the western kingdoms — and says he wanted more",
+        "Iran — the smallest, holiest share — and says it is enough"
+      ],
+      "answers_fa": [
+        "توران — بزرگ‌ترین سهم — و می‌گوید آن را کسب کرده",
+        "هر سه پادشاهی — و می‌گوید با برادرانش تقسیم می‌کند",
+        "روم — پادشاهی‌های غربی — و می‌گوید بیشتر می‌خواست",
+        "ایران — کوچک‌ترین و مقدس‌ترین سهم — و می‌گوید کافی است"
+      ],
+      "answers_tg": [
+        "Турон — бузургтарин ҳисса — ва мегӯяд онро ба даст овардааст",
+        "Ҳар се подшоҳӣ — ва мегӯяд бо бародаронаш тақсим мекунад",
+        "Рум — подшоҳиҳои ғарбӣ — ва мегӯяд бештар мехост",
+        "Эрон — хурдтарин ва муқаддастарин ҳисса — ва мегӯяд кифоя аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "Iraj accepts Iran — the smallest share — without complaint, saying it is enough. His brothers cannot imagine someone genuinely wanting less. This incomprehension is why they kill him.",
+      "explanation_fa": "ایرج ایران — کوچک‌ترین سهم — را بدون شکایت می‌پذیرد و می‌گوید کافی است. برادرانش نمی‌توانند تصور کنند کسی واقعاً کمتر بخواهد. همین ناتوانی در درک دلیلِ قتل اوست.",
+      "explanation_tg": "Эраҷ Эронро — хурдтарин ҳиссаро — бе шикоят мепазирад ва мегӯяд кифоя аст. Бародаронаш наметавонанд тасаввур кунанд касе воқеан камтар бихоҳад.",
+      "reward": {
+        "xp": 120,
+        "real": 50
+      }
+    },
+    {
+      "id": "fereydun-m4",
+      "chapter_slug": "fereydun",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Why does Fereydun NOT kill Zahhak when he has the chance?",
+      "question_fa": "فریدون چرا ضحاک را هنگامی که فرصت دارد نمی‌کشد؟",
+      "question_tg": "Чаро Фаридун Заҳҳокро вақте имкон дорад намекушад?",
+      "answers": [
+        "A voice — angel, conscience, or structural necessity — says the world is not ready for Zahhak's death",
+        "He is too tired after the battle",
+        "Kaveh stops him out of mercy",
+        "The serpents protect Zahhak from the killing blow"
+      ],
+      "answers_fa": [
+        "صدایی — فرشته، وجدان یا ضرورتِ ساختاری — می‌گوید جهان برای مرگِ ضحاک آماده نیست",
+        "پس از نبرد خیلی خسته است",
+        "کاوه از سرِ رحمت جلویش را می‌گیرد",
+        "ماران ضحاک را از ضربه‌ی کشنده محافظت می‌کنند"
+      ],
+      "answers_tg": [
+        "Садое — фаришта, виҷдон ё зарурати сохторӣ — мегӯяд ки ҷаҳон барои марги Заҳҳок омода нест",
+        "Пас аз набард хеле хаста аст",
+        "Кова аз рӯи раҳм ӯро боздорад",
+        "Морон Заҳҳокро аз зарбаи кушанда муҳофизат мекунанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "A voice stops Fereydun before the killing blow — the Shahnameh does not name the speaker. Not every evil can be cleanly ended. Some must be contained. Zahhak is chained inside Damavand, not dead, waiting.",
+      "explanation_fa": "صدایی فریدون را پیش از ضربه‌ی کشنده متوقف می‌کند — شاهنامه گوینده را نام نمی‌برد. هر شری را نمی‌توان تمیز پایان داد. ضحاک درونِ دماوند به زنجیر است، نه مرده، منتظر.",
+      "explanation_tg": "Садое Фаридунро пеш аз зарбаи кушанда боздорад — Шоҳнома гӯяндаро ном намебарад. Ҳар шаррро тоза поён дода намешавад.",
+      "reward": {
+        "xp": 125,
+        "real": 52
+      }
+    },
+    {
+      "id": "fereydun-m5",
+      "chapter_slug": "fereydun",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "How long does Fereydun rule — and why does the Shahnameh describe it in so few lines?",
+      "question_fa": "فریدون چه مدت حکم می‌راند — و چرا شاهنامه آن را در این‌قدر کم مصراع توصیف می‌کند؟",
+      "question_tg": "Фаридун чанд муддат ҳукм меронад — ва Шоҳнома чаро онро дар ин қадар кам мисра тавсиф мекунад?",
+      "answers": [
+        "100 years — because he was a minor king",
+        "500 years — because just rule does not generate narrative; it is the absence of drama",
+        "300 years — same as Jamshid",
+        "1000 years — because it equals Zahhak's tyranny"
+      ],
+      "answers_fa": [
+        "صد سال — چون شاهی کم‌اهمیت بود",
+        "پانصد سال — چون حکمِ عادلانه روایت نمی‌سازد؛ نبودِ نمایش است",
+        "سیصد سال — مثلِ جمشید",
+        "هزار سال — چون با ستمگریِ ضحاک برابر است"
+      ],
+      "answers_tg": [
+        "Сад сол — зеро ки подшоҳи камаҳамият буд",
+        "Панҷсад сол — зеро ки ҳукми одилона ривоят намесозад; нишудани нумоиш аст",
+        "Сесад сол — мисли Ҷамшид",
+        "Ҳазор сол — зеро баробари зулми Заҳҳок аст"
+      ],
+      "correct_answer": 1,
+      "explanation": "Five hundred years — just, wise, undefeated. Ferdowsi compresses it into a few verses because just rule does not generate narrative. The silence is the lesson: justice is the absence of the chronicle's reason for being.",
+      "explanation_fa": "پانصد سال — عادل، خردمند، شکست‌ناپذیر. فردوسی آن را در چند مصراع خلاصه می‌کند چون حکمِ عادلانه روایت نمی‌سازد. سکوت همان درس است.",
+      "explanation_tg": "Панҷсад сол — одил, хирадманд, шикастнопазир. Фирдавсӣ онро дар чанд мисра хулоса мекунад зеро ҳукми одилона ривоят намесозад.",
+      "reward": {
+        "xp": 130,
+        "real": 55
+      }
+    },
+    {
+      "id": "fereydun-h1",
+      "chapter_slug": "fereydun",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Why does the Shahnameh's army follow a blacksmith's leather apron rather than a royal banner?",
+      "question_fa": "چرا سپاهِ شاهنامه به جای درفشِ شاهانه پشتِ پیش‌بندِ چرمیِ آهنگری می‌رود؟",
+      "question_tg": "Чаро лашкари Шоҳнома ба ҷои дарафши шоҳона пушти пешбанди чарминаи оҳангар меравад?",
+      "answers": [
+        "It symbolises that the authority to end tyranny comes from the people who suffered it — not from a hereditary claim",
+        "Because Fereydun had no royal banner yet",
+        "Because the royal standard was kept by Zahhak",
+        "It was the only banner available after the thousand-year occupation"
+      ],
+      "answers_fa": [
+        "نماد این است که اقتدارِ پایان دادن به ستمگری از مردمی می‌آید که از آن رنج بردند — نه از ادعای موروثی",
+        "چون فریدون هنوز درفشِ شاهی نداشت",
+        "چون پرچمِ شاهی نزدِ ضحاک بود",
+        "تنها درفشِ موجود پس از هزار سال اشغال بود"
+      ],
+      "answers_tg": [
+        "Рамзи ин аст ки салоҳияти поён додан ба зулм аз мардуме меояд ки аз он ранҷ бурданд",
+        "Зеро Фаридун ҳанӯз дарафши шоҳӣ надошт",
+        "Зеро парчами шоҳӣ назди Заҳҳок буд",
+        "Ягон дарафши мавҷуд пас аз ҳазор соли ишғол буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The leather apron signifies that legitimacy to end this tyranny comes from the people who suffered — Kaveh, who lost sixteen sons. Not from bloodline, not from divine appointment alone, but from the lived experience of the wrong.",
+      "explanation_fa": "پیش‌بندِ چرمی نشان می‌دهد که مشروعیتِ پایان دادن به این ستمگری از کسانی می‌آید که رنج بردند — کاوه، که شانزده پسر از دست داد. نه از نسب، نه از انتصابِ الهی تنها.",
+      "explanation_tg": "Пешбанди чарминӣ нишон медиҳад, ки машрӯияти поён додан ба ин зулм аз мардуме меояд, ки ранҷ бурданд — Кова, ки шонздаҳ писар аз даст дод.",
+      "reward": {
+        "xp": 155,
+        "real": 67
+      }
+    },
+    {
+      "id": "fereydun-h2",
+      "chapter_slug": "fereydun",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Kaveh walks at the front of the march — but how does the Shahnameh describe his pace?",
+      "question_fa": "کاوه پیشاپیشِ راهپیمایی می‌رود — اما شاهنامه سرعتِ رفتارش را چگونه توصیف می‌کند؟",
+      "question_tg": "Кова пешопеши роҳпаймоӣ меравад — аммо Шоҳнома суръати рафтораш чӣ гуна тавсиф мекунад?",
+      "answers": [
+        "He runs to reach Zahhak's gates before dawn",
+        "He walks steadily — as a man walks to the forge every morning",
+        "He charges on horseback at full speed",
+        "He stops frequently to gather more people to the march"
+      ],
+      "answers_fa": [
+        "می‌دود تا پیش از سپیده‌دم به دروازه‌ها برسد",
+        "محکم راه می‌رود — آن‌طور که مرد هر صبح به آهنگری می‌رود",
+        "با اسب با تمامِ سرعت یورش می‌برد",
+        "مکرر می‌ایستد تا افرادِ بیشتری به راهپیمایی بپیوندند"
+      ],
+      "answers_tg": [
+        "Медавад то пеш аз субҳ ба дарвозаҳо расад",
+        "Устувор роҳ мегардад — он тавре ки марде ҳар субҳ ба оҳангарӣ меравад",
+        "Бо асп бо тамоми суръат ҳуҷум мебарад",
+        "Борҳо меистад то одамони бештареро ба роҳпаймоӣ ҷалб кунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "He walks steadily, as a man walks to the forge every morning. Not running, not charging — steady, purposeful. The Shahnameh's great acts are often quiet. The dignity is in the pace.",
+      "explanation_fa": "محکم راه می‌رود، آن‌طور که مرد هر صبح به آهنگری می‌رود. نه دویدن، نه یورش — محکم، هدفمند. اعمالِ بزرگِ شاهنامه اغلب آرامند. شکوه در طرزِ راه رفتن است.",
+      "explanation_tg": "Устувор роҳ мегардад, он тавре ки марде ҳар субҳ ба оҳангарӣ меравад. Ҳайбат дар суръати раҳ рафтан аст.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "fereydun-h3",
+      "chapter_slug": "fereydun",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Fereydun rides at the centre of the army — not the front, not the rear. What does this mean?",
+      "question_fa": "فریدون در مرکزِ سپاه سوار می‌شود — نه پیشاپیش، نه در انتها. این چه معنایی دارد؟",
+      "question_tg": "Фаридун дар маркази лашкар савор мешавад — на пешопеш, на дар интиҳо. Ин чӣ маъно дорад?",
+      "answers": [
+        "He is afraid of the serpents",
+        "He defers to Kaveh as the true leader",
+        "He is not performing leadership; he is navigating — directing the force that already exists",
+        "He keeps his position secret from Zahhak's scouts"
+      ],
+      "answers_fa": [
+        "از ماران می‌ترسد",
+        "به کاوه به‌عنوانِ رهبرِ واقعی احترام می‌گذارد",
+        "نمایشِ رهبری نمی‌دهد؛ دارد جهت‌یابی می‌کند — نیرویی را هدایت می‌کند که از پیش وجود دارد",
+        "موقعیتش را از جاسوسانِ ضحاک پنهان می‌کند"
+      ],
+      "answers_tg": [
+        "Аз морон метарсад",
+        "Ба Кова ҳамчун раҳбари воқеӣ эҳтиром мегузорад",
+        "Намоиши раҳбарӣ намедиҳад; роҳнамоӣ мекунад — нерӯеро ки аз пеш вуҷуд дорад ҳидоят мекунад",
+        "Мавқеашро аз ҷосусони Заҳҳок пинҳон мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "He is navigating, not performing. The army exists because Kaveh walked first. Fereydun's role is to direct a force that already has momentum — not to manufacture it.",
+      "explanation_fa": "دارد جهت‌یابی می‌کند، نمایش نمی‌دهد. سپاه هست چون کاوه اول رفت. نقشِ فریدون هدایتِ نیرویی است که از پیش شتاب دارد — نه ساختنِ آن.",
+      "explanation_tg": "Роҳнамоӣ мекунад, на намоиш. Лашкар ҳаст зеро Кова аввал рафт. Нақши Фаридун ҳидояти нерӯест ки аз пеш суръат дорад.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
+      "id": "fereydun-h4",
+      "chapter_slug": "fereydun",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "What happens to some of Zahhak's guards when they see the Derafsh Kaviani approaching?",
+      "question_fa": "برخی نگهبانانِ ضحاک هنگامی که درفشِ کاویانی را می‌بینند که می‌آید چه می‌کنند؟",
+      "question_tg": "Баъзе нигаҳбонони Заҳҳок вақте Дарафши Кавориро мебинанд ки меояд чӣ мекунанд?",
+      "answers": [
+        "They close the gates and prepare for siege",
+        "They fight to the last man defending the walls",
+        "They send a delegation to negotiate",
+        "They lay down their weapons before the gates are even reached"
+      ],
+      "answers_fa": [
+        "دروازه‌ها را می‌بندند و برای محاصره آماده می‌شوند",
+        "تا آخرین نفر از دیوارها دفاع می‌کنند",
+        "هیئتی برای مذاکره می‌فرستند",
+        "سلاح‌هایشان را می‌گذارند پیش از آنکه به دروازه‌ها برسند"
+      ],
+      "answers_tg": [
+        "Дарвозаҳоро мебанданд ва барои муҳосира омода мешаванд",
+        "То охирин нафар аз деворҳо дифоъ мекунанд",
+        "Ҳайъате барои музокира мефиристанд",
+        "Аслиҳаҳояшонро мегузоранд пеш аз он ки ба дарвозаҳо расанд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Some guards lay down their weapons before the gates are even reached. The banner carries its own authority — a thousand years of darkness, and then a leather apron that everyone already knows the meaning of.",
+      "explanation_fa": "بعضی سلاح‌هایشان را می‌گذارند پیش از آنکه به دروازه‌ها برسند. درفش اقتدارِ خودش را دارد — هزار سال تاریکی، بعد پیش‌بند چرمی که همه از پیش معنایش را می‌دانند.",
+      "explanation_tg": "Баъзе нигаҳбонон аслиҳаҳояшонро мегузоранд пеш аз он ки ба дарвозаҳо расанд. Дарафш салоҳияти худашро дорад.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "fereydun-h5",
+      "chapter_slug": "fereydun",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The Shahnameh says Fereydun 'does not fight cleanly — he fights correctly.' What is the difference?",
+      "question_fa": "شاهنامه می‌گوید فریدون «تمیز نمی‌جنگد — درست می‌جنگد.» تفاوت چیست؟",
+      "question_tg": "Шоҳнома мегӯяд Фаридун «тоза намеҷангад — дуруст меҷангад.» Фарқ чист?",
+      "answers": [
+        "Clean suggests elegant or honorable form; correct means doing what actually needs to be done to end the specific wrong at hand",
+        "Clean fighting means following chivalric rules; correct fighting means winning at any cost",
+        "Fereydun fought dirty because Zahhak was evil",
+        "There is no difference — it is a poetic repetition"
+      ],
+      "answers_fa": [
+        "تمیز اشاره به شکلِ زیبا یا باشرافت دارد؛ درست یعنی انجامِ آنچه واقعاً برای پایان دادن به شرِ خاصِ پیشِ رو نیاز است",
+        "جنگِ تمیز یعنی پیروی از قوانینِ جوانمردانه؛ جنگِ درست یعنی پیروزی به هر قیمتی",
+        "فریدون ناصادقانه می‌جنگید چون ضحاک شرور بود",
+        "تفاوتی نیست — تکرارِ شاعرانه است"
+      ],
+      "answers_tg": [
+        "Тоза ба шакли зебо ё бошарафат ишора дорад; дуруст яъне иҷрои он чизе ки воқеан барои поён додан ба шарри мушаххас лозим аст",
+        "Ҷанги тоза яъне пайравии қоидаҳои ҷавонмардона; ҷанги дуруст яъне ғалаба ба ҳар нарх",
+        "Фаридун ношарафона меҷангид зеро Заҳҳок шарир буд",
+        "Фарқе нест — такрори шоиронааст"
+      ],
+      "correct_answer": 0,
+      "explanation": "Clean suggests elegance or honor in form. Correct means doing what the situation actually requires. Fereydun fights for a specific purpose — ending a specific wrong — and his combat reflects that precision.",
+      "explanation_fa": "تمیز اشاره به ظرافت یا شرافت در شکل دارد. درست یعنی انجامِ آنچه وضعیت واقعاً می‌طلبد. فریدون برای هدفِ خاصی می‌جنگد — پایان دادن به شرِ خاصی — و نبردش آن دقت را منعکس می‌کند.",
+      "explanation_tg": "Тоза ба зарофат ё шарафат дар шакл ишора дорад. Дуруст яъне иҷрои он чизе ки вазъ воқеан мехоҳад.",
+      "reward": {
+        "xp": 165,
+        "real": 72
+      }
+    },
+    {
+      "id": "fereydun-h6",
+      "chapter_slug": "fereydun",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Mount Damavand appears in chapters 1, 5, and 6. What three roles has it played across these chapters?",
+      "question_fa": "کوهِ دماوند در دفترهای ۱، ۵ و ۶ ظاهر می‌شود. در این دفترها چه سه نقشی داشته است؟",
+      "question_tg": "Кӯҳи Дамованд дар бобҳои 1, 5 ва 6 намоён мешавад. Дар ин бобҳо чӣ се нақш доштааст?",
+      "answers": [
+        "Battlefield in all three chapters",
+        "Keyumars' throne (Ch1) → Fereydun's hiding place (Ch5) → Zahhak's prison (Ch6)",
+        "Sacred fire site (Ch1) → battleground (Ch5) → victory monument (Ch6)",
+        "Birthplace of kings (Ch1-6)"
+      ],
+      "answers_fa": [
+        "در هر سه دفتر میدانِ نبرد",
+        "تختِ کیومرث (دفتر ۱) ← پناهگاهِ فریدون (دفتر ۵) ← زندانِ ضحاک (دفتر ۶)",
+        "محلِ آتشِ مقدس (دفتر ۱) ← میدانِ نبرد (دفتر ۵) ← یادمانِ پیروزی (دفتر ۶)",
+        "زادگاهِ شاهان (دفتر ۱-۶)"
+      ],
+      "answers_tg": [
+        "Дар ҳар се боб майдони набард",
+        "Тахти Каюмарс (Боб 1) ← Паноҳгоҳи Фаридун (Боб 5) ← Зиндони Заҳҳок (Боб 6)",
+        "Ҷои оташи муқаддас (Боб 1) ← майдони набард (Боб 5) ← ёдбуди пирӯзӣ (Боб 6)",
+        "Зодгоҳи шоҳон (Бобҳои 1-6)"
+      ],
+      "correct_answer": 1,
+      "explanation": "Keyumars' throne (Ch1) → Fereydun's mountain refuge (Ch5) → Zahhak's eternal prison (Ch6). Damavand is the Shahnameh's axis — the mountain that holds every age's most important unresolved thing.",
+      "explanation_fa": "تختِ کیومرث (دفتر ۱) ← پناهگاهِ کوهستانیِ فریدون (دفتر ۵) ← زندانِ ابدیِ ضحاک (دفتر ۶). دماوند محورِ شاهنامه است — کوهی که مهم‌ترین چیزِ حل‌نشده‌ی هر عصر را نگه می‌دارد.",
+      "explanation_tg": "Тахти Каюмарс (Боб 1) ← паноҳгоҳи Фаридун (Боб 5) ← зиндони абадии Заҳҳок (Боб 6). Дамованд маҳвари Шоҳнома аст.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "fereydun-h7",
+      "chapter_slug": "fereydun",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Why does the Shahnameh's wars begin with the killing of Iraj — not with a foreign invasion?",
+      "question_fa": "چرا جنگ‌های شاهنامه با قتلِ ایرج آغاز می‌شود — نه با تهاجمِ خارجی؟",
+      "question_tg": "Чаро ҷангҳои Шоҳнома бо қатли Эраҷ оғоз мешавад — на бо ҳуҷуми хориҷӣ?",
+      "answers": [
+        "Because Iraj was too powerful to be defeated by outside enemies",
+        "Fereydun arranged the killing to test his other sons",
+        "The worst conflicts come from within — from the inability to believe in another person's sincere desire for less",
+        "Foreign enemies had been eliminated when Zahhak was imprisoned"
+      ],
+      "answers_fa": [
+        "چون ایرج برای شکست دادن توسطِ دشمنانِ خارجی خیلی قدرتمند بود",
+        "فریدون قتل را ترتیب داد تا پسرانِ دیگرش را آزمایش کند",
+        "بدترین درگیری‌ها از درون می‌آیند — از ناتوانی در باور به خواستهِ صادقانه‌ی دیگری برای کمتر",
+        "دشمنانِ خارجی هنگامِ زندانی شدنِ ضحاک حذف شده بودند"
+      ],
+      "answers_tg": [
+        "Зеро Эраҷ барои шикаст хӯрдан аз душманони хориҷӣ хеле пурқудрат буд",
+        "Фаридун қатлро тартиб дод то дигар писаронашро озмояд",
+        "Бадтарин муноқишаҳо аз дарун меоянд — аз ноумедии боварронандан ба хостаи самимии дигаре барои камтар",
+        "Душманони хориҷӣ ҳангоми зиндонӣ шудани Заҳҳок ҳазф шуда буданд"
+      ],
+      "correct_answer": 2,
+      "explanation": "The worst conflicts come from within. Tur and Salm cannot believe Iraj genuinely wants less. Their incomprehension of sincerity is the root of every Iran-Turan war that follows.",
+      "explanation_fa": "بدترین درگیری‌ها از درون می‌آیند. تور و سلم نمی‌توانند باور کنند ایرج واقعاً کمتر می‌خواهد. ناتوانیِ آن‌ها در درکِ صداقت ریشه‌ی همه‌ی جنگ‌های ایران و توران است.",
+      "explanation_tg": "Бадтарин муноқишаҳо аз дарун меоянд. Тур ва Салм наметавонанд бовар кунанд Эраҷ воқеан камтар мехоҳад.",
+      "reward": {
+        "xp": 175,
+        "real": 77
+      }
+    },
+    {
+      "id": "fereydun-h8",
+      "chapter_slug": "fereydun",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Ferdowsi compresses Fereydun's 500 just years into a few verses. The lore says this compression is itself the lesson. What is the lesson?",
+      "question_fa": "فردوسی پانصد سالِ عادلِ فریدون را در چند مصراع خلاصه می‌کند. لور می‌گوید این خلاصه‌سازی خودش درس است. درس چیست؟",
+      "question_tg": "Фирдавсӣ панҷсад соли одили Фаридунро дар чанд мисра хулоса мекунад. Лор мегӯяд ин хулоса кардан худаш дарс аст. Дарс чист?",
+      "answers": [
+        "That Fereydun was not an important king",
+        "That Ferdowsi ran out of material for this period",
+        "That Persian history is too long to describe in detail",
+        "Justice is not dramatic — it is the absence of the drama that the chronicle exists to record"
+      ],
+      "answers_fa": [
+        "که فریدون شاهِ مهمی نبود",
+        "که فردوسی برای این دوره مطلب کم آورد",
+        "که تاریخِ پارسی برای توصیفِ دقیق خیلی طولانی است",
+        "عدل نمایشی نیست — نبودِ نمایشی است که شاهنامه برای ثبتِ آن وجود دارد"
+      ],
+      "answers_tg": [
+        "Ки Фаридун подшоҳи муҳимме набуд",
+        "Ки Фирдавсӣ барои ин давра маводи кам дошт",
+        "Ки таърихи Порс барои тавсифи дақиқ хеле дарозаст",
+        "Адолат нумоишӣ нест — нишудани нумоише аст ки Шоҳнома барои сабти он вуҷуд дорад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Justice is not dramatic — it is the absence of the drama the chronicle exists to record. Every line Ferdowsi spends on justice is a line he cannot spend on catastrophe. The compression is the tribute: five hundred just years fit in a few verses because they contain no reason for the Shahnameh to speak.",
+      "explanation_fa": "عدل نمایشی نیست — نبودِ نمایشی است که شاهنامه برای ثبتِ آن وجود دارد. خلاصه‌سازی خودش ستایش است: پانصد سالِ عادل در چند مصراع جا می‌شود چون دلیلی برای سخنِ شاهنامه در خود ندارند.",
+      "explanation_tg": "Адолат нумоишӣ нест — нишудани нумоише аст ки Шоҳнома барои сабти он вуҷуд дорад. Хулоса кардан худаш ситоиш аст.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    }
+  ]
+}

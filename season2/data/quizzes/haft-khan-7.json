@@ -1,0 +1,39 @@
+{
+  "quizzes": [
+    {
+      "id": "hk-7-q1",
+      "chapter_slug": "haft-khan-7",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "After defeating Div-e Sepid, what does Rostam take from the demon — and what does it do?",
+      "question_fa": "رستم بعد از شکستِ دیوِ سپید چه چیزی از دیو می‌گیرد — و چه می‌کند؟",
+      "question_tg": "Рустам пас аз шикасти Деви Сафед аз дев чӣ мегирад — ва чӣ мекунад?",
+      "answers": [
+        "His crown, which grants the wearer mastery over all demons",
+        "His skin, which becomes an indestructible shield",
+        "His liver — whose blood, dripped into blind eyes, restores sight",
+        "His heart, which Kay Kavus consumes to regain his strength"
+      ],
+      "answers_fa": [
+        "تاجِ او، که صاحبِ آن بر همه‌ی دیوان تسلط می‌یابد",
+        "پوستِ او، که سپری آسیب‌ناپذیر می‌شود",
+        "جگرِ او — که خونش در چشمانِ کور می‌چکد و بینایی را باز می‌گرداند",
+        "قلبِ او، که کی‌کاووس می‌خورد تا قدرتش را بازیابد"
+      ],
+      "answers_tg": [
+        "Тоҷи ӯ, ки соҳиби он бар ҳамаи девон тасаллут меёбад",
+        "Пӯсти ӯ, ки сипари осебнопазир мешавад",
+        "Ҷигари ӯ — ки хунаш дар чашмони кӯр мечакад ва биноиро барқарор мекунад",
+        "Қалби ӯ, ки Кай Кову мехӯрад то қудраташро бозёбад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Rostam tears out Div-e Sepid's liver. Three drops of its blood, dripped into the eyes of Kay Kavus and his warriors, restore their sight — which Arzhang had taken. The seventh labour is not just a victory. It is a cure. The Haft Khan ends not with a trophy but with a healing. That is Ferdowsi's final word on what heroism is for.",
+      "explanation_fa": "رستم جگرِ دیوِ سپید را در می‌آورد. سه قطره از خونش در چشمانِ کی‌کاووس و جنگجویانش می‌چکد و بینایی‌ای که ارژنگ گرفته بود را باز می‌گرداند. خانِ هفتم فقط پیروزی نیست. درمان است.",
+      "explanation_tg": "Рустам ҷигари Деви Сафедро мекананд. Се қатра аз хунаш дар чашмони Кай Кову ва ҷангиёнаш мечакад ва биноии гирифташударо бармегардонад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    }
+  ]
+}

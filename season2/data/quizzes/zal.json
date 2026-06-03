@@ -1,0 +1,564 @@
+{
+  "quizzes": [
+    {
+      "id": "zal-1",
+      "chapter_slug": "zal",
+      "quiz_part": 1,
+      "question": "Which mythical creature raises Zal?",
+      "answers": [
+        "Dragon",
+        "Simorgh",
+        "Akvan Div",
+        "Rakhsh"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Simorgh of Mount Damavand.",
+      "reward": {
+        "xp": 130,
+        "real": 55
+      },
+      "difficulty": "easy",
+      "question_fa": "کدام موجود اساطیری زال را پرورش داد؟",
+      "question_tg": "Кадом мавҷудоти асотирӣ Золро парвариш дод?",
+      "answers_fa": [
+        "اژدها",
+        "سیمرغ",
+        "اکوان دیو",
+        "رخش"
+      ],
+      "answers_tg": [
+        "Аждаҳо",
+        "Симурғ",
+        "Аквон-дев",
+        "Рахш"
+      ],
+      "explanation_fa": "سیمرغ کوه دماوند.",
+      "explanation_tg": "Симурғи Кӯҳи Дамованд."
+    },
+    {
+      "id": "zal-2",
+      "chapter_slug": "zal",
+      "quiz_part": 2,
+      "question": "Why does Sam abandon his son?",
+      "answers": [
+        "A wound on the foot",
+        "A prophet's curse",
+        "His white hair",
+        "Famine"
+      ],
+      "correct_answer": 2,
+      "explanation": "Sam fears the omen of the white hair.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      },
+      "difficulty": "medium",
+      "question_fa": "چرا سام پسرش را رها کرد؟",
+      "question_tg": "Чаро Сом писарашро тарк кард?",
+      "answers_fa": [
+        "زخمی بر پا",
+        "نفرین پیامبر",
+        "موی سفیدش",
+        "قحطی"
+      ],
+      "answers_tg": [
+        "Захме бар по",
+        "Нафрини паёмбар",
+        "Мӯи сафедаш",
+        "Қаҳтӣ"
+      ],
+      "explanation_fa": "سام از فال بد موی سفید می‌ترسد.",
+      "explanation_tg": "Сом аз фоли бади мӯи сафед метарсад."
+    },
+    {
+      "id": "zal-3",
+      "chapter_slug": "zal",
+      "quiz_part": 3,
+      "question": "What does Simorgh give Zal at parting?",
+      "answers": [
+        "A jewel",
+        "A book",
+        "A crown",
+        "A feather"
+      ],
+      "correct_answer": 3,
+      "explanation": "A feather, to burn in greatest need.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      },
+      "difficulty": "medium",
+      "question_fa": "سیمرغ هنگام خداحافظی به زال چه داد؟",
+      "question_tg": "Симурғ ҳангоми хайрбодӣ ба Зол чӣ дод?",
+      "answers_fa": [
+        "جواهری",
+        "کتابی",
+        "تاجی",
+        "پری"
+      ],
+      "answers_tg": [
+        "Гавҳаре",
+        "Китобе",
+        "Тоҷе",
+        "Паре"
+      ],
+      "explanation_fa": "پری، که در بزرگترین نیاز بسوزاند.",
+      "explanation_tg": "Пар, ки дар бузургтарин эҳтиёҷ бисӯзонад."
+    },
+    {
+      "id": "zal-4",
+      "chapter_slug": "zal",
+      "quiz_part": 4,
+      "question": "Who does Zal love and marry?",
+      "answers": [
+        "Rudabeh",
+        "Tahmineh",
+        "Manijeh",
+        "Gordafarid"
+      ],
+      "correct_answer": 0,
+      "explanation": "Rudabeh, daughter of Mehrab of Kabul.",
+      "reward": {
+        "xp": 190,
+        "real": 85
+      },
+      "difficulty": "hard",
+      "question_fa": "زال به چه کسی عشق می‌ورزد و ازدواج می‌کند؟",
+      "question_tg": "Зол ба кӣ ишқ меварзад ва издивоҷ мекунад?",
+      "answers_fa": [
+        "رودابه",
+        "تهمینه",
+        "منیژه",
+        "گردآفرید"
+      ],
+      "answers_tg": [
+        "Рӯдоба",
+        "Таҳминӣ",
+        "Манижа",
+        "Гурдофарид"
+      ],
+      "explanation_fa": "رودابه، دختر مهراب کابلی.",
+      "explanation_tg": "Рӯдоба, духтари Меҳроби Кобулӣ."
+    },
+    {
+      "id": "zal-e2",
+      "chapter_slug": "zal",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Where did Sam abandon his newborn son Zal?",
+      "question_fa": "سام نوزادش زال را کجا رها کرد؟",
+      "question_tg": "Сом тифли навзодаш Золро куҷо тарк кард?",
+      "answers": [
+        "Plains of Zabulestan",
+        "Banks of the Oxus",
+        "Mount Alborz",
+        "Mount Zagros"
+      ],
+      "answers_fa": [
+        "دشت‌های زابلستان",
+        "کرانه‌های جیحون",
+        "کوه البرز",
+        "کوه زاگرس"
+      ],
+      "answers_tg": [
+        "Даштҳои Забулистон",
+        "Соҳилҳои Ҷайҳун",
+        "Кӯҳи Алборз",
+        "Кӯҳи Загрос"
+      ],
+      "correct_answer": 2,
+      "explanation": "Sam carried the infant to the peaks of Mount Alborz and left him there. The Simorgh found him.",
+      "explanation_fa": "سام نوزاد را به قله‌های کوه البرز برد و آنجا رها کرد. سیمرغ او را یافت.",
+      "explanation_tg": "Сом тифлро ба қуллаҳои Кӯҳи Алборз бурд ва онҷо тарк кард. Симурғ ӯро ёфт.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      }
+    },
+    {
+      "id": "zal-e3",
+      "chapter_slug": "zal",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Who negotiated with King Manuchehr to permit Zal and Rudabeh's marriage?",
+      "question_fa": "چه کسی با شاه منوچهر برای اجازه‌ی ازدواجِ زال و رودابه مذاکره کرد؟",
+      "question_tg": "Кӣ бо Шоҳ Манӯчеҳр барои иҷозати издивоҷи Зол ва Рӯдоба гуфтугӯ кард?",
+      "answers": [
+        "Sindokht, Rudabeh's mother",
+        "Sam the warrior",
+        "Zal himself",
+        "Rudabeh's handmaidens"
+      ],
+      "answers_fa": [
+        "سیندخت، مادرِ رودابه",
+        "سام پهلوان",
+        "خودِ زال",
+        "ندیمه‌های رودابه"
+      ],
+      "answers_tg": [
+        "Синдухт, модари Рӯдоба",
+        "Сом паҳлавон",
+        "Худи Зол",
+        "Надимаҳои Рӯдоба"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sindokht, Rudabeh's mother, negotiated with the ferocity of a general to enable the marriage.",
+      "explanation_fa": "سیندخت، مادرِ رودابه، با قدرتِ یک سردار مذاکره کرد تا ازدواج ممکن شود.",
+      "explanation_tg": "Синдухт, модари Рӯдоба, бо қудрати як сардор гуфтугӯ кард то издивоҷ имконпазир шавад.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      }
+    },
+    {
+      "id": "zal-m3",
+      "chapter_slug": "zal",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Why did Sam and Manuchehr initially refuse the marriage of Zal and Rudabeh?",
+      "question_fa": "چرا سام و منوچهر ابتدا ازدواجِ زال و رودابه را رد کردند؟",
+      "question_tg": "Чаро Сом ва Манӯчеҳр аввал издивоҷи Зол ва Рӯдобаро рад карданд?",
+      "answers": [
+        "She was not Iranian",
+        "She was already betrothed",
+        "Rudabeh's ancestry traced back to Zahhak",
+        "She was too young"
+      ],
+      "answers_fa": [
+        "ایرانی نبود",
+        "نامزد داشت",
+        "نسبِ رودابه به ضحاک می‌رسید",
+        "خیلی جوان بود"
+      ],
+      "answers_tg": [
+        "Эронӣ набуд",
+        "Номзад дошт",
+        "Насаби Рӯдоба ба Заҳҳок мерасид",
+        "Хеле ҷавон буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Both Sam and Manuchehr refused because Rudabeh's line traced back to Zahhak, the serpent king.",
+      "explanation_fa": "هم سام هم منوچهر رد کردند چون نسبِ رودابه به ضحاکِ ماردوش می‌رسید.",
+      "explanation_tg": "Ҳам Сом ҳам Манӯчеҳр рад карданд, зеро насаби Рӯдоба ба Заҳҳоки морӯш мерасид.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      }
+    },
+    {
+      "id": "zal-m4",
+      "chapter_slug": "zal",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What finally convinced King Manuchehr to approve the marriage?",
+      "question_fa": "چه چیزی در نهایت شاه منوچهر را متقاعد کرد که ازدواج را تأیید کند؟",
+      "question_tg": "Чӣ чиз дар охир Шоҳ Манӯчеҳрро мутақоид кард?",
+      "answers": [
+        "Sam paid tribute",
+        "Astrologers confirmed a great child would come from the union",
+        "Rudabeh converted faiths",
+        "A military victory by Zal"
+      ],
+      "answers_fa": [
+        "سام خراج پرداخت",
+        "ستاره‌شناسان تأیید کردند که فرزندی بی‌مثال از این پیوند خواهد آمد",
+        "رودابه دین عوض کرد",
+        "پیروزی نظامی زال"
+      ],
+      "answers_tg": [
+        "Сом хироҷ пардохт",
+        "Ситорашиносон тасдиқ карданд ки фарзанди беназир меояд",
+        "Рӯдоба дин иваз кард",
+        "Пирӯзии ҳарбии Зол"
+      ],
+      "correct_answer": 1,
+      "explanation": "Astrologers were consulted and confirmed: from this union would come a child unlike any other. This cleared the political obstacles.",
+      "explanation_fa": "ستاره‌شناسان تأیید کردند که از این پیوند فرزندی بی‌نظیر خواهد آمد. این موانعِ سیاسی را برطرف کرد.",
+      "explanation_tg": "Ситорашиносон тасдиқ карданд: аз ин пайванд фарзанди беназире хоҳад омад. Ин монеаҳои сиёсиро бартараф кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "zal-m5",
+      "chapter_slug": "zal",
+      "quiz_part": 6,
+      "difficulty": "medium",
+      "question": "How did Zal first fall in love with Rudabeh?",
+      "question_fa": "زال چگونه عاشقِ رودابه شد؟",
+      "question_tg": "Зол чӣ тавр ба Рӯдоба ошиқ шуд?",
+      "answers": [
+        "He saw her at a royal festival",
+        "He heard merchants describe her face and hair",
+        "He received a letter she had written",
+        "The Simorgh appeared in a dream showing her face"
+      ],
+      "answers_fa": [
+        "در جشنی شاهانه او را دید",
+        "از توصیفِ بازرگانان درباره‌ی چهره و موهایش",
+        "نامه‌ای که نوشته بود دریافت کرد",
+        "سیمرغ در خواب چهره‌اش را نشان داد"
+      ],
+      "answers_tg": [
+        "Дар ҷашни шоҳона ӯро дид",
+        "Аз тавсифи тоҷирон дар бораи рӯй ва мӯяш",
+        "Нома дарёфт",
+        "Симурғ дар хоб рӯяшро нишон дод"
+      ],
+      "correct_answer": 1,
+      "explanation": "When merchants described Rudabeh, Zal fell in love through words alone before he had seen her face.",
+      "explanation_fa": "وقتی بازرگانان رودابه را توصیف کردند، زال فقط با کلمات عاشق شد، پیش از آن که چهره‌اش را ببیند.",
+      "explanation_tg": "Вақте тоҷирон Рӯдобаро тавсиф карданд, Зол танҳо бо суханон ошиқ шуд, пеш аз он ки рӯяшро бинад.",
+      "reward": {
+        "xp": 270,
+        "real": 125
+      }
+    },
+    {
+      "id": "zal-h2",
+      "chapter_slug": "zal",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "What specific action did Sam take immediately after waking from his dream of Zal?",
+      "question_fa": "سام بلافاصله بعد از بیداری از خوابِ زال چه کرد؟",
+      "question_tg": "Сом фавран пас аз бедор шудан аз хоби Зол чӣ кард?",
+      "answers": [
+        "He sent messengers north to Alborz",
+        "He rode north and climbed to the Simorgh's nest himself",
+        "He prayed for seven days first",
+        "He asked Manuchehr's permission"
+      ],
+      "answers_fa": [
+        "پیام‌رسانانی به البرز فرستاد",
+        "خودش به شمال رفت و به آشیانه‌ی سیمرغ رفت",
+        "هفت روز اول دعا کرد",
+        "از منوچهر اجازه گرفت"
+      ],
+      "answers_tg": [
+        "Паёмрасонон ба Алборз фиристод",
+        "Худаш ба шимол рафт ва ба лонаи Симурғ баромад",
+        "Ҳафт рӯз аввал дуо кард",
+        "Аз Манӯчеҳр иҷозат гирифт"
+      ],
+      "correct_answer": 1,
+      "explanation": "Sam dreamed of a young man on the mountain, woke knowing it was his son, and rode north himself to climb to the Simorgh's nest.",
+      "explanation_fa": "سام از پسری بر کوه خواب دید، با بیداری دانست که پسرش است، و خودش به شمال رفت تا به آشیانه‌ی سیمرغ برسد.",
+      "explanation_tg": "Сом аз писаре бар кӯҳ хоб дид, бо бедорӣ дид ки писараш аст, ва худаш ба шимол рафт то ба лонаи Симурғ расад.",
+      "reward": {
+        "xp": 310,
+        "real": 145
+      }
+    },
+    {
+      "id": "zal-h3",
+      "chapter_slug": "zal",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "What quality did Zal gain from being raised by the Simorgh?",
+      "question_fa": "زال از پرورش توسط سیمرغ چه ویژگی‌ای به دست آورد؟",
+      "question_tg": "Зол аз парваришёфтан аз ҷониби Симурғ чӣ сифате ба даст овард?",
+      "answers": [
+        "The patience of long years and the knowledge of a creature who had seen everything",
+        "Invulnerability in battle",
+        "The ability to speak with animals",
+        "Command of storms"
+      ],
+      "answers_fa": [
+        "صبرِ سال‌های دراز و دانشِ موجودی که همه چیز دیده",
+        "آسیب‌ناپذیری در نبرد",
+        "توانایی صحبت با جانوران",
+        "فرمان بر طوفان‌ها"
+      ],
+      "answers_tg": [
+        "Сабри солҳои дароз ва дониши мавҷудоте ки ҳама чиз дидааст",
+        "Таъсирнопазирӣ дар набард",
+        "Тавонии сӯҳбат бо ҳайвонот",
+        "Фармон бар тӯфонҳо"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Simorgh was older than any king and had watched everything. Zal absorbed her patience and long knowledge.",
+      "explanation_fa": "سیمرغ از هر شاهی کهن‌تر بود و همه چیز دیده بود. زال صبر و دانشِ دیربازِ او را جذب کرد.",
+      "explanation_tg": "Симурғ аз ҳар подшоҳе куҳантар буд ва ҳама чиз дида буд. Зол сабр ва дониши дерозмуддати ӯро ҷазб кард.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "zal-h4",
+      "chapter_slug": "zal",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "What was the exact wording of the Simorgh's promise when she gave Zal the feather?",
+      "question_fa": "سیمرغ هنگام دادنِ پر به زال دقیقاً چه وعده‌ای داد؟",
+      "question_tg": "Симурғ ҳангоми додани пар ба Зол дақиқан чӣ ваъда дод?",
+      "answers": [
+        "'Show it to enemies and they will flee'",
+        "'Plant it in earth and a garden will grow'",
+        "'Burn it only in your greatest need, and I will come'",
+        "'Wear it always and no arrow will strike you'"
+      ],
+      "answers_fa": [
+        "«به دشمنان نشانش بده و فرار می‌کنند»",
+        "«در زمین بکارش و باغی می‌روید»",
+        "«فقط در بزرگ‌ترین نیازت بسوزانش و من می‌آیم»",
+        "«همیشه بپوشش و هیچ تیری به تو نمی‌رسد»"
+      ],
+      "answers_tg": [
+        "«Ба душманон нишон деш ва мегуреханд»",
+        "«Дар замин бишонаш ва боғе мерӯяд»",
+        "«Танҳо дар бузургтарин эҳтиёҷат бисӯзонаш ва ман меоям»",
+        "«Ҳамеша бипӯш ва ҳеҷ тире ба ту намерасад»"
+      ],
+      "correct_answer": 2,
+      "explanation": "'Burn it only in your greatest need, and I will come.' A bounded promise — each burning brings the Simorgh once.",
+      "explanation_fa": "«فقط در بزرگ‌ترین نیازت بسوزانش و من می‌آیم.» وعده‌ای محدود — هر بار سوزاندن سیمرغ را می‌آورد.",
+      "explanation_tg": "«Танҳо дар бузургтарин эҳтиёҷат бисӯзонаш ва ман меоям.» Ваъдаи маҳдуд — ҳар бор сӯзондан Симурғро меоварад.",
+      "reward": {
+        "xp": 350,
+        "real": 165
+      }
+    },
+    {
+      "id": "zal-h5",
+      "chapter_slug": "zal",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Who is Rudabeh's father and what kingdom does he rule?",
+      "question_fa": "پدرِ رودابه کیست و بر کدام قلمرو حکومت می‌کند؟",
+      "question_tg": "Падари Рӯдоба кист ва бар кадом қаламрав ҳукумат мекунад?",
+      "answers": [
+        "Mehrab of Kabul",
+        "Piran Wiseh of Turan",
+        "Garsivaz of the border forts",
+        "Nariman of Zabulestan"
+      ],
+      "answers_fa": [
+        "مهراب کابلی",
+        "پیرانِ ویسه از توران",
+        "گرسیوز از قلعه‌های مرزی",
+        "نریمان از زابلستان"
+      ],
+      "answers_tg": [
+        "Меҳроби Кобулӣ",
+        "Пирони Виса аз Турон",
+        "Гарсевоз аз қалъаҳои марзӣ",
+        "Наримони Забулӣ"
+      ],
+      "correct_answer": 0,
+      "explanation": "Rudabeh is the princess of Kabul, daughter of Mehrab — whose ancestry included Zahhak.",
+      "explanation_fa": "رودابه شاهزاده‌ی کابل است، دخترِ مهراب — که نسبش به ضحاک می‌رسید.",
+      "explanation_tg": "Рӯдоба шоҳдухтари Кобул аст, духтари Меҳроб — ки насабаш ба Заҳҳок мерасид.",
+      "reward": {
+        "xp": 370,
+        "real": 175
+      }
+    },
+    {
+      "id": "zal-h6",
+      "chapter_slug": "zal",
+      "quiz_part": 9,
+      "difficulty": "hard",
+      "question": "How did Rudabeh allow Zal to enter her tower for their first meeting?",
+      "question_fa": "رودابه چگونه به زال اجازه داد که وارد برجش شود؟",
+      "question_tg": "Рӯдоба чӣ тавр ба Зол иҷозат дод ки ба бурҷаш дарояд?",
+      "answers": [
+        "She bribed the guards to open a gate",
+        "She let her hair down from the window as a rope — her hair reached the ground",
+        "She lowered a silk rope",
+        "The handmaidens opened a hidden passage"
+      ],
+      "answers_fa": [
+        "نگهبانان را رشوه داد تا دروازه‌ای بگشایند",
+        "موهایش را از پنجره آویخت — موهایش تا زمین می‌رسید",
+        "طنابی ابریشمی پایین انداخت",
+        "ندیمه‌ها گذرگاه پنهانی را گشودند"
+      ],
+      "answers_tg": [
+        "Посбононро ришва дод та дарвозае кушоянд",
+        "Мӯяшро аз тиреза овезон кард — мӯяш то замин мерасид",
+        "Тӯби абрешимӣ поён андохт",
+        "Надимаҳо гузаргоҳи пинҳонӣ гушоданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rudabeh let her hair down from the window — hair so long it reached the ground — and Zal climbed up.",
+      "explanation_fa": "رودابه موهایش را از پنجره آویخت — موهایی که تا زمین می‌رسید — و زال بالا رفت.",
+      "explanation_tg": "Рӯдоба мӯяшро аз тиреза овезон кард — мӯе ки то замин мерасид — ва Зол боло рафт.",
+      "reward": {
+        "xp": 390,
+        "real": 185
+      }
+    },
+    {
+      "id": "zal-h7",
+      "chapter_slug": "zal",
+      "quiz_part": 10,
+      "difficulty": "hard",
+      "question": "The chapter says 'the chronicle finds love through description more reliable than love at first sight.' Why?",
+      "question_fa": "فصل می‌گوید «شاهنامه عشق از طریقِ توصیف را قابل‌اطمینان‌تر از عشق در نگاهِ اول می‌داند.» چرا؟",
+      "question_tg": "Фасл мегӯяд «Шоҳнома ишқро аз тавсиф боэтимодтар аз ишқи нигоҳи аввал меҳисобад.» Чаро?",
+      "answers": [
+        "Because physical appearance is untrustworthy",
+        "Because love formed through description has already survived distance and absence — it is based on what is actually true about the person",
+        "Because Persian custom forbids direct courtship",
+        "Because both were forbidden from public gatherings"
+      ],
+      "answers_fa": [
+        "چون ظاهر قابل‌اطمینان نیست",
+        "چون عشقی که از توصیف شکل گرفته قبلاً فاصله و غیاب را تحمل کرده — بر پایه‌ی آنچه واقعاً درست است",
+        "چون رسمِ ایرانی دیدارِ مستقیم را ممنوع می‌کند",
+        "چون هر دو از گردهمایی‌های عمومی منع شده بودند"
+      ],
+      "answers_tg": [
+        "Зеро зоҳир боэтимод нест",
+        "Зеро ишқе ки аз тавсиф ташаккул ёфтааст аллакай масофа ва ғиёбро таҳаммул кардааст",
+        "Зеро расму оини Эрон дидори мустақимро манъ мекунад",
+        "Зеро ҳарду аз мачлисҳои омма манъ буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Love formed through honest description survives distance and uncertainty — it is based on what is true, not on a momentary visual impression.",
+      "explanation_fa": "عشقی که از توصیفِ صادقانه شکل گرفته فاصله و عدم‌اطمینان را تحمل می‌کند — بر حقیقت استوار است، نه بر برداشتِ لحظه‌ای.",
+      "explanation_tg": "Ишқе ки аз тавсифи ростин ташаккул ёфтааст масофа ва номуайяниро таҳаммул мекунад — бар ҳақиқат устувор аст.",
+      "reward": {
+        "xp": 410,
+        "real": 195
+      }
+    },
+    {
+      "id": "zal-h8",
+      "chapter_slug": "zal",
+      "quiz_part": 11,
+      "difficulty": "hard",
+      "question": "The Simorgh raised Zal alongside her own chicks. What does this upbringing among non-human companions give him?",
+      "question_fa": "سیمرغ زال را در کنارِ جوجه‌های خودش پرورش داد. این بزرگ شدن در میانِ همدمانِ غیرانسانی چه چیزی به او می‌دهد؟",
+      "question_tg": "Симурғ Золро дар канори ҷӯҷаҳои худаш парвариш дод. Ин калон шудан дар миёни ҳамдамони ғайриинсонӣ чӣ ба ӯ медиҳад?",
+      "answers": [
+        "The ability to fly in battle",
+        "A perspective outside of human ambition and court politics — patience from a creature beyond kingship",
+        "Immunity to Ahriman's influence",
+        "Knowledge of all animal languages"
+      ],
+      "answers_fa": [
+        "توانایی پرواز در نبرد",
+        "دیدگاهی بیرون از جاه‌طلبی انسانی و سیاستِ دربار — صبر از موجودی فراتر از پادشاهی",
+        "ایمنی از نفوذِ اهریمن",
+        "دانشِ همه‌ی زبانِ جانوران"
+      ],
+      "answers_tg": [
+        "Тавонии паридан дар набард",
+        "Дидгоҳе берун аз ҳирсу шуҳрати инсонӣ — сабр аз мавҷудоте фаротар аз подшоҳӣ",
+        "Эмнӣ аз нуфӯзи Аҳриман",
+        "Дониши ҳамаи забонҳои ҳайвонот"
+      ],
+      "correct_answer": 1,
+      "explanation": "Raised by the Simorgh — older than any king — Zal absorbed a patience and long knowledge that no human court could teach.",
+      "explanation_fa": "بزرگ شده توسط سیمرغ — کهن‌تر از هر شاهی — زال صبر و دانشِ دیربازی آموخت که هیچ دربارِ انسانی نمی‌توانست بیاموزد.",
+      "explanation_tg": "Парваришёфта аз Симурғ — куҳантар аз ҳар подшоҳе — Зол сабр ва дониши дерозеро омӯхт ки ҳеҷ дарбори инсонӣ наметавонист биёмӯзад.",
+      "reward": {
+        "xp": 430,
+        "real": 205
+      }
+    }
+  ]
+}
