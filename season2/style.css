@@ -427,27 +427,19 @@ a { color: inherit; }
   text-shadow: 0 0 12px rgba(244, 197, 107, 0.6);
   box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.6);
 }
-/* Hero/skin image — break out of .core-icon to span ~3 concentric rings.
-   .energy-orb is inset:33% (34% of container); ring r3 is inset:20% (60%).
-   176% of orb ≈ 60% of container, reaching the edge of the third ring. */
+/* Hero/skin image — direct child of .core-wrap (position:relative),
+   so % widths resolve cleanly against the container.
+   Original size inside .core-icon was ~22% of container; 3× = ~65%. */
 [data-skin-orb] {
   position: absolute;
-  width: 528%;
-  height: 528%;
+  width: 65%;
+  height: 65%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: contain;
   pointer-events: none;
-  border-radius: 0;
   z-index: 5;
-}
-/* Hide the dark .core-icon background when an image skin is active so the
-   golden orb glow shows through transparent parts of the portrait. */
-.energy-orb:has([data-skin-orb]:not([style*="display:none"]):not([style*="display: none"])) .core-icon {
-  background: transparent;
-  border-color: transparent;
-  box-shadow: none;
 }
 
 .particle {

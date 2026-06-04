@@ -7,7 +7,7 @@
   <title>REAL Shahnameh — Forge of Pars</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
-  <link rel="stylesheet" href="style.css?v=202606041601" />
+  <link rel="stylesheet" href="style.css?v=202606041700" />
   <link rel="stylesheet" href="home.css?v=202605272200" />
   <link rel="stylesheet" href="tap.css?v=202605272200" />
 
@@ -64,14 +64,14 @@
         <span class="ring r4"></span>
         <button class="energy-orb" data-energy-orb aria-label="Tap to mint REAL">
           <span class="core-icon">
-            <!-- src + alt swapped by tap.js skin system -->
-            <img data-skin-orb
-                 src="/assets/images/tokens/realtoken.png"
-                 alt="REAL"
-                 onerror="this.style.display='none';document.querySelector('[data-skin-orb-text]').style.display=''">
             <span data-skin-orb-text style="display:none;font-size:40px;line-height:1;">◆</span>
           </span>
         </button>
+        <!-- Hero image lives here — direct child of .core-wrap so CSS sizing is unambiguous -->
+        <img data-skin-orb
+             src="/assets/images/tokens/realtoken.png"
+             alt="REAL"
+             onerror="this.style.display='none';document.querySelector('[data-skin-orb-text]').style.display=''">
       </div>
 
       <!-- Energy bar -->
