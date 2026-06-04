@@ -942,13 +942,20 @@
         iframe.allowFullscreen = true;
         imgHost.appendChild(iframe);
       } else {
-        // Direct video URL — use HTML5 video with autoplay+loop+muted
+        // Direct video URL — HTML5 video
+        // video_audio:true → keep sound, show controls (no muted)
+        // default         → silent background loop (autoplay muted)
         const video = document.createElement("video");
         video.src = s.video_url;
-        video.autoplay = true;
         video.loop = true;
-        video.muted = true;
         video.playsInline = true;
+        if (s.video_audio) {
+          video.controls = true;
+          video.autoplay = true;   // will play if browser permits; controls shown as fallback
+        } else {
+          video.autoplay = true;
+          video.muted = true;
+        }
         if (s.image) video.poster = s.image;
         imgHost.appendChild(video);
       }

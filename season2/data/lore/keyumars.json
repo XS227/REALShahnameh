@@ -58,11 +58,13 @@
       "body_en": "Ferdowsi does not open with a king. He does not open with a war. He opens with a word of God — specifically the God of soul and wisdom. 'به نام خداوند جان و خرد / کزین برتر اندیشه برنگذرد': In the name of God of Soul and Wisdom, above whom no thought can reach higher. Before any throne is raised, before any sword is lifted, the poet kneels in awe. Thirty years he would spend writing this book. He began by placing wisdom at the summit of everything he knew.",
       "body_fa": "فردوسی با شاهی آغاز نمی‌کند. با جنگی آغاز نمی‌کند. با سخنی از خداوند آغاز می‌کند — خداوندِ جان و خرد. «به نامِ خداوندِ جان و خرد / کزین برتر اندیشه برنگذرد». پیش از آن‌که تختی برافراشته شود، پیش از آن‌که شمشیری کشیده شود، شاعر در هیبت فرود می‌آید. سی سال صرفِ نوشتنِ این کتاب کرد. آن را با نهادنِ خرد بر اوجِ همه چیز آغاز کرد.",
       "atmosphere": "court",
-      "image": "/assets/images/scenes/shahnameh-chapter-1-in-the-name-of-soul-and-wisdom.jpg",
+      "image": null,
       "reward": {
         "xp": 25
       },
-      "unlocks_codex": []
+      "unlocks_codex": [],
+      "video_url": "/season2/assets/videos/praise-of-wisdom.mp4",
+      "video_audio": true
     },
     {
       "id": "creation-of-cosmos",
@@ -74,11 +76,13 @@
       "body_en": "In the beginning, darkness held everything without knowing what it held. Then light was spoken — not gradually, but all at once, like a word that cannot be unsaid. Heaven rose. Earth descended. Waters gathered in the low places and the mountains lifted their heads from the deep. The world had no name yet. But it had shape. And shape is the first thought God ever finished.",
       "body_fa": "در آغاز، تاریکی همه چیز را در بر داشت، بدون آن‌که بداند چه دارد. آن‌گاه روشنایی بیان شد — نه به‌تدریج، بلکه یکباره، همچون کلامی که باز پس گرفتنی نیست. آسمان برخاست. زمین فرو نشست. آب‌ها در پَستاها جمع شدند و کوه‌ها سر از ژرفا برکشیدند. جهان هنوز نامی نداشت. اما شکل داشت. و شکل، نخستین اندیشه‌ای است که خداوند به پایان رساند.",
       "atmosphere": "dark",
-      "image": "/assets/images/scenes/shahnameh-chapter-1-creation-of-the-cosmos.jpg",
+      "image": null,
       "reward": {
         "xp": 25
       },
-      "unlocks_codex": []
+      "unlocks_codex": [],
+      "video_url": "/season2/assets/videos/creation-of-cosmos.mp4",
+      "video_audio": true
     },
     {
       "id": "celestial-dance",
@@ -90,11 +94,13 @@
       "body_en": "Fire was given to the sun. Silver was given to the moon. Stars were scattered like seeds cast from a great hand across the dark field of heaven. Each one was set to its appointed path — an eternal march that would never stop, never slow. Together they became the first clock, the first calendar, the first teacher of time. Humanity would not arrive for many ages. But when it did, the sky would already be waiting, already keeping count.",
       "body_fa": "آتش به خورشید داده شد. نقره به ماه. ستارگان همچون دانه‌هایی که از دستی بزرگ بر مزرعه‌ی تاریکِ آسمان افشانده شده‌اند پراکنده گشتند. هر یک به مسیرِ مقرر خود نهاده شد — رهپیماییِ جاودانه‌ای که هرگز باز نمی‌ایستد. آن‌ها نخستین ساعت، نخستین تقویم، نخستین آموزگارِ زمان بودند. بشر هنوز نیامده بود. اما وقتی می‌آمد، آسمان از پیش منتظر بود.",
       "atmosphere": "dawn",
-      "image": "/assets/images/scenes/shahnameh-chapter-1-celestial-dance.jpg",
+      "image": null,
       "reward": {
         "xp": 25
       },
-      "unlocks_codex": []
+      "unlocks_codex": [],
+      "video_url": "/season2/assets/videos/celestial-dance.mp4",
+      "video_audio": true
     },
     {
       "id": "awakening-of-mankind",
