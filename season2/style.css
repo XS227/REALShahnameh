@@ -294,6 +294,41 @@ a { color: inherit; }
   letter-spacing: 0.4px;
 }
 .lvl-badge .lvl-num { font-size: 14px; }
+.lvl-badge-right { display: flex; flex-direction: column; align-items: center; line-height: 1.1; }
+.lvl-badge-right .lvl-label { font-size: 8px; font-weight: 600; letter-spacing: .6px; opacity: .7; text-transform: uppercase; }
+
+/* Persistent chronicle chip (shown after first visit) */
+.chronicle-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(140, 109, 255, 0.14);
+  border: 1px solid var(--border-violet);
+  color: #cdbcff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hero Spotlight — upgrade priority badge */
+.hs-upgrade-warn { color: #ffb347; font-weight: 700; }
+.hs-needs-upgrade { border-color: rgba(255, 179, 71, 0.45); }
+
+/* Daily quests all-complete row */
+.quest-all-complete { background: rgba(83, 215, 156, 0.08); border: 1px solid rgba(83, 215, 156, 0.3); border-radius: 12px; }
+.quest-claim-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: var(--jade, #53d79c);
+  color: #0a1a12;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
 
 /* ----- Balance row (Play) ------------------------------------------------ */
 

@@ -1089,6 +1089,10 @@
       active_hero_kicker:    "Қаҳрамони фаъол",
       hs_lvl_lbl:            "СТҲ",
       hero_up_link:          "Боло ›",
+      hs_upgrade_to_progress: "Барои пешрафт баланд кун",
+      quest_all_done:        "Ҳамаи вазифаҳо иҷро шуд!",
+      quest_all_done_sub:    "Мукофоти ҳаррӯзаатро бигир",
+      quest_claim_btn:       "Гирифтан +200 XP",
 
       /* ── Hero cards & economy ── */
       zar_hr_unit:           "Зар/соат",

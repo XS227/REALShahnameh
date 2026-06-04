@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Home</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202606041701" />
+  <link rel="stylesheet" href="style.css?v=202606042000" />
   <style>
     /* Home-only layout additions */
     .home-season-banner {
@@ -237,7 +237,7 @@
 <body>
   <main class="app">
 
-    <!-- Top bar: avatar / rank / level — links to profile page -->
+    <!-- ── Profile ─────────────────────────────────────────────────────── -->
     <a href="profile.html" class="card gold-edge top-bar" style="text-decoration:none; display:flex;">
       <div class="avatar" data-avatar>
         <img src="/assets/images/avatars/default-male-avatar.png" alt="Avatar"
@@ -247,32 +247,51 @@
         <span class="avatar-ring"></span>
       </div>
       <div class="who">
-        <h1 class="name"><span data-player-name>—</span> <span class="pill" data-i18n="vip" data-vip-level>VIP</span></h1>
+        <h1 class="name"><span data-player-name>—</span> <span class="pill" data-vip-level>VIP</span></h1>
         <div class="rank-row">
-          <span class="rank-tag" data-path-title>⚔ Warrior of Pars</span>
-          <span class="rank-tag" style="background:rgba(244,197,107,.14); border-color:var(--border-gold); color:var(--gold);" data-i18n="season2">Season 2</span>
+          <!-- Path badge: represents the player's chosen path in the Shahnameh universe -->
+          <span class="rank-tag" data-path-title title="Your path in the Shahnameh universe">⚔ Warrior of Pars</span>
         </div>
       </div>
-      <div class="lvl-badge">
-        <span class="player-medallion" data-player-badge title="Seeker">⭐</span>
-        <span class="lvl-num" data-level>1</span>
+      <!-- Prestige badge: icon + level derived from XP -->
+      <div class="lvl-badge" title="Prestige rank based on Chronicle XP">
+        <span class="player-medallion" data-player-badge>⭐</span>
+        <div class="lvl-badge-right">
+          <span class="lvl-num" data-level>1</span>
+          <span class="lvl-label">Prestige</span>
+        </div>
       </div>
     </a>
 
-    <!-- Season 2 cinematic banner -->
-    <div class="home-season-banner">
-      <div class="banner-bg" data-banner-bg aria-hidden="true"></div>
-      <div class="banner-stars" aria-hidden="true"></div>
-      <div class="banner-glow" aria-hidden="true"></div>
-      <div class="banner-body">
-        <div class="banner-kicker" data-i18n="banner_kicker">Season 2 · Pishdadian Age</div>
-        <h2 class="banner-title" data-i18n-html="banner_title"><span>Shahnameh</span> Chronicle</h2>
-        <p class="banner-fa" lang="fa" dir="rtl">شاهنامهٔ فردوسی</p>
-        <a href="intro.html" class="banner-cta" data-i18n="banner_cta">▷ Enter the Chronicle</a>
+    <!-- ── Chronicle banner — shown only on first visit; chip shown after ── -->
+    <div data-chronicle-banner>
+      <div class="home-season-banner">
+        <div class="banner-bg" data-banner-bg aria-hidden="true"></div>
+        <div class="banner-stars" aria-hidden="true"></div>
+        <div class="banner-glow" aria-hidden="true"></div>
+        <div class="banner-body">
+          <div class="banner-kicker" data-i18n="banner_kicker">Season 2 · Pishdadian Age</div>
+          <h2 class="banner-title" data-i18n-html="banner_title"><span>Shahnameh</span> Chronicle</h2>
+          <p class="banner-fa" lang="fa" dir="rtl">شاهنامهٔ فردوسی</p>
+          <a href="intro.html" class="banner-cta" data-banner-cta data-i18n="banner_cta">▷ Enter the Chronicle</a>
+        </div>
       </div>
     </div>
+    <!-- Persistent chronicle chip — shown after first visit -->
+    <div data-chronicle-chip hidden style="margin-bottom:10px;">
+      <a href="intro.html" class="chronicle-chip">📜 <span data-i18n="banner_cta">Enter the Chronicle</span></a>
+    </div>
 
-    <!-- Continue Journey -->
+    <!-- ── Treasury ─────────────────────────────────────────────────────── -->
+    <div class="section-head" style="margin-bottom:8px;">
+      <h3 data-i18n="hud_treasury">Treasury</h3>
+      <a class="more" href="tap.html" data-i18n="forge_title">The Forge of Pars</a>
+    </div>
+    <div class="resource-hud" data-resource-hud style="margin-bottom:14px;">
+      <!-- Cells populated by resources.js / RealResources.mountHud() -->
+    </div>
+
+    <!-- ── Continue Journey ─────────────────────────────────────────────── -->
     <div class="section-head" style="margin-bottom:8px;">
       <h3 data-i18n="continue_journey">Continue Journey</h3>
       <a class="more" href="learn.html" data-i18n="all_chapters">All chapters ›</a>
@@ -291,7 +310,7 @@
       <a href="chapter.html?slug=keyumars" class="journey-continue" data-journey-link data-i18n="continue_btn">Continue ›</a>
     </div>
 
-    <!-- Chronicle progress -->
+    <!-- ── Chronicle progress ───────────────────────────────────────────── -->
     <div class="chronicle-progress">
       <div class="cp-row">
         <span class="cp-label" data-i18n="chronicle_progress">Chronicle progress</span>
@@ -320,7 +339,7 @@
       </div>
     </div>
 
-    <!-- Daily quests -->
+    <!-- ── Daily Quests ─────────────────────────────────────────────────── -->
     <div class="section-head" style="margin-bottom:8px;">
       <h3 data-i18n="daily_quests">Daily Quests</h3>
       <span class="more" style="cursor:default;" data-i18n="resets_midnight">Resets midnight</span>
@@ -353,46 +372,35 @@
         <span class="quest-reward">+80 REAL</span>
         <div class="quest-check"></div>
       </div>
-      <div class="quest-row" data-quest="invite">
-        <div class="quest-ico">👥</div>
+      <!-- All-complete bonus row — shown by home.js when all 3 daily quests are done -->
+      <div class="quest-row quest-all-complete" data-quest-all-complete hidden>
+        <div class="quest-ico">🏆</div>
         <div class="quest-body">
-          <div class="q-name" data-i18n="quest_invite">Invite a warrior</div>
-          <div class="q-sub" data-i18n="quest_invite_sub">Share your link to earn forever</div>
+          <div class="q-name" data-i18n="quest_all_done">All Quests Complete!</div>
+          <div class="q-sub" data-i18n="quest_all_done_sub">Claim your daily bonus</div>
         </div>
-        <span class="quest-reward" data-i18n="quest_reward_lifetime">+10% lifetime</span>
-        <div class="quest-check"></div>
+        <button class="quest-claim-btn" data-quest-claim data-i18n="quest_claim_btn">Claim +200 XP</button>
       </div>
     </section>
 
-    <!-- Treasury — The Five Resources of Pars.
-         Farr / Zar / Gems / XP shown as primary cells; REAL sits beneath
-         as the quiet ecosystem layer. resources.js fills this in. -->
-    <div class="section-head" style="margin-bottom:8px;">
-      <h3 data-i18n="hud_treasury">Treasury</h3>
-      <a class="more" href="tap.html" data-i18n="forge_title">The Forge of Pars</a>
-    </div>
-    <div class="resource-hud" data-resource-hud style="margin-bottom:14px;">
-      <!-- Cells populated by resources.js / RealResources.mountHud() -->
-    </div>
-
-    <!-- Hero spotlight -->
+    <!-- ── Hero Spotlight — upgrade priority ───────────────────────────── -->
     <div class="section-head" style="margin-bottom:8px;">
       <h3 data-i18n="hero_spotlight">Hero Spotlight</h3>
       <a class="more" href="heroes.html" data-i18n="collection_link">Collection ›</a>
     </div>
     <div class="hs-row" data-hero-spotlight style="margin-bottom:14px;">
-      <!-- Populated by home.js after catalog + owned heroes load -->
+      <!-- Populated by home.js — shows heroes needing upgrade to progress -->
       <div class="hs-card">
         <div class="hs-portrait"><img src="/assets/images/heroes/keyumars-hero.png" alt="Keyumars" onerror="this.replaceWith(document.createTextNode('👑'))"></div>
         <div class="hs-body">
-          <div class="hs-kicker">Active hero</div>
+          <div class="hs-kicker" data-i18n="active_hero_kicker">Active hero</div>
           <div class="hs-name">Keyumars</div>
           <span class="hs-passive">✦ +5% Tap · +8% XP</span>
         </div>
         <div class="hs-right">
-          <div class="hs-lvl-lbl">LVL</div>
+          <div class="hs-lvl-lbl" data-i18n="hs_lvl_lbl">LVL</div>
           <div class="hs-lvl-num">1</div>
-          <a href="heroes.html" class="hs-upgrade-link">Up ›</a>
+          <a href="heroes.html" class="hs-upgrade-link" data-i18n="hero_up_link">Up ›</a>
         </div>
       </div>
     </div>
@@ -411,15 +419,15 @@
 
   <div class="toast" data-toast></div>
   <script src="app.js?v=202606041800"></script>
-  <script src="i18n/en.js?v=202606012300"></script>
-  <script src="i18n/fa.js?v=202606012300"></script>
-  <script src="i18n/tg.js?v=202606012300"></script>
+  <script src="i18n/en.js?v=202606042000"></script>
+  <script src="i18n/fa.js?v=202606042000"></script>
+  <script src="i18n/tg.js?v=202606042000"></script>
   <script src="i18n.js?v=202605304000"></script>
   <script src="resources.js?v=202605303800"></script>
   <script src="utils.js?v=202606011800"></script>
   <script src="audio.js?v=202605272200"></script>
   <script src="cinematic.js?v=202605272200"></script>
   <script src="sync.js?v=202605303800"></script>
-  <script src="home.js?v=202606011800"></script>
+  <script src="home.js?v=202606042000"></script>
 </body>
 </html>

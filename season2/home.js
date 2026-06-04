@@ -307,13 +307,31 @@
 
     const vipLv   = Math.floor((player.xp || 0) / 1000);
     const levelEl = $("[data-level]");
-    if (levelEl) levelEl.textContent = vipLv;
+    if (levelEl) levelEl.textContent = fmtNum(vipLv);
     const vipPill = $("[data-vip-level]");
     if (vipPill) {
-      vipPill.textContent = vipLv === 0 ? t('vip','VIP') : t('vip_level_tpl',{n: fmtNum(vipLv)});
+      vipPill.textContent = vipLv === 0 ? 'VIP' : `VIP · Level ${fmtNum(vipLv)}`;
     }
 
     hydrateBadge(vipLv);
+  };
+
+  /* ── Chronicle banner: full on first visit, chip on return ──────────── */
+  const hydrateBanner = () => {
+    const seen       = lsRead('real_seen_banner') === '1';
+    const bannerWrap = $('[data-chronicle-banner]');
+    const chip       = $('[data-chronicle-chip]');
+    if (bannerWrap) bannerWrap.hidden = seen;
+    if (chip)       chip.hidden       = !seen;
+    // Mark as seen after 3 s so the user has time to read it
+    if (!seen) setTimeout(() => {
+      try { localStorage.setItem('real_seen_banner', '1'); } catch {}
+    }, 3000);
+    // Also mark immediately if they click the CTA
+    const cta = $('[data-banner-cta]');
+    if (cta) cta.addEventListener('click', () => {
+      try { localStorage.setItem('real_seen_banner', '1'); } catch {}
+    }, { once: true });
   };
 
   /* ── Daily quest hydration ───────────────────────────────────────────── */
@@ -321,15 +339,10 @@
 
   const hydrateQuests = (su) => {
     const dk = todayKey();
-    /* Always take the most optimistic (truest) value: server OR local.
-       Server may lag behind by up to 30 s; localStorage is written immediately
-       by chapter.js / tap.js / app.js when quests complete. */
     const states = {
-      read:   !!(su && su.quest_read)   || lsRead("real_quest_read_"   + dk) === "true",
-      quiz:   !!(su && su.quest_quiz)   || lsRead("real_quest_quiz_"   + dk) === "true",
-      invite: !!(su && su.quest_invite) || lsRead("real_quest_invite_" + dk) === "true",
+      read:   !!(su && su.quest_read) || lsRead("real_quest_read_"   + dk) === "true",
+      quiz:   !!(su && su.quest_quiz) || lsRead("real_quest_quiz_"   + dk) === "true",
     };
-    /* For taps: take whichever is higher — server count or local count */
     const serverTaps = (su && su.quest_tap) || 0;
     const localTaps  = parseInt(lsRead("real_daily_taps_" + dk) || "0", 10);
     const tapsToday  = Math.max(serverTaps, localTaps);
@@ -340,14 +353,31 @@
       if (!row) return;
       row.classList.toggle("done", done);
       const check = row.querySelector(".quest-check");
-      if (check) {
-        check.classList.toggle("done", done);
-        check.textContent = done ? "✓" : "";
-      }
+      if (check) { check.classList.toggle("done", done); check.textContent = done ? "✓" : ""; }
     });
 
     const tapCount = $("[data-daily-taps]");
     if (tapCount) tapCount.textContent = `${fmtNum(Math.min(tapsToday, TAP_GOAL))} / ${fmtNum(TAP_GOAL)}`;
+
+    /* All-complete bonus row */
+    const allDone      = states.read && states.quiz && states.tap;
+    const claimKey     = "real_daily_bonus_claimed_" + dk;
+    const alreadyClaimed = lsRead(claimKey) === "1";
+    const claimRow     = $("[data-quest-all-complete]");
+    if (claimRow) claimRow.hidden = !allDone || alreadyClaimed;
+
+    const claimBtn = $("[data-quest-claim]");
+    if (claimBtn && !claimBtn._bound) {
+      claimBtn._bound = true;
+      claimBtn.addEventListener("click", () => {
+        try { localStorage.setItem(claimKey, "1"); } catch {}
+        if (window.Player) window.Player.addResource("xp", 200);
+        if (window.RealSync) window.RealSync.syncBalance();
+        if (claimRow) claimRow.hidden = true;
+        if (window.toast) window.toast("+200 XP — Daily Bonus claimed!");
+        else window.dispatchEvent(new CustomEvent("real:toast", { detail: { msg: "+200 XP — Daily Bonus claimed!" } }));
+      });
+    }
   };
 
   /* ── Medallion badge ─────────────────────────────────────────────────── */
@@ -396,28 +426,35 @@
     };
     const fa = isFa();
 
+    // Upgrade-priority: sort by level ascending so the heroes that need the
+    // most work rise to the top. Mark any hero below level 5 as needing upgrade.
+    const UPGRADE_THRESHOLD = 5;
     const spotlightHeroes = Object.entries(owned)
       .map(([hero_id, data]) => {
         const cat    = catMap[hero_id];
         const nameEn = (cat && cat.name)    || slugToName(hero_id);
         const nameFa = (cat && cat.name_fa) || SLUG_FA[hero_id];
+        const lv     = data.level || 1;
         return {
           slug:        hero_id,
           name:        (fa && nameFa) ? nameFa : nameEn,
           image_url:   (cat && cat.image_url) || null,
           rarity:      (cat && cat.rarity)    || "",
-          playerLevel: data.level        || 1,
+          playerLevel: lv,
           zarPerHour:  data.zar_per_hour || 0,
+          needsUpgrade: lv < UPGRADE_THRESHOLD,
         };
       })
-      .sort((a, b) => (b.playerLevel || 1) - (a.playerLevel || 1))
+      .sort((a, b) => (a.playerLevel || 1) - (b.playerLevel || 1))  // lowest first
       .slice(0, 3);
 
     host.innerHTML = spotlightHeroes.map(h => `
-      <div class="hs-card">
+      <div class="hs-card${h.needsUpgrade ? ' hs-needs-upgrade' : ''}">
         <div class="hs-portrait">${heroPortraitHtml(h)}</div>
         <div class="hs-body">
-          <div class="hs-kicker">${escapeHtml(t('active_hero_kicker'))}</div>
+          ${h.needsUpgrade
+            ? `<div class="hs-kicker hs-upgrade-warn">⚠ ${escapeHtml(t('hs_upgrade_to_progress', 'Upgrade to progress'))}</div>`
+            : `<div class="hs-kicker">${escapeHtml(t('active_hero_kicker'))}</div>`}
           <div class="hs-name">${escapeHtml(h.name)}</div>
           <span class="hs-passive">✦ +${fmtNum(h.zarPerHour)} ${escapeHtml(t('r_zar'))}/hr</span>
         </div>
@@ -506,7 +543,6 @@
       read:   "learn.html",
       quiz:   `chapter.html?slug=${encodeURIComponent(activeSlug)}`,
       tap:    "tap.html",
-      invite: "earn.html",
     };
     Object.entries(ROUTES).forEach(([key, url]) => {
       const row = document.querySelector(`[data-quest="${key}"]`);
@@ -522,6 +558,7 @@
   /* ── Boot ────────────────────────────────────────────────────────────── */
   const bootHomeHydration = () => {
     hydrateProfile();
+    hydrateBanner();
     hydrateQuests();
     refreshTreasury();
     updateJourneyCard(null);  // immediate render from localStorage
