@@ -1149,7 +1149,15 @@
     };
     const renderBalance = () => {
       if (!balanceEl) return;
-      const _fmtBal = (window.RealI18N && window.RealI18N.formatNumber) ? window.RealI18N.formatNumber : (n) => n.toLocaleString();
+      const _fmtBal = (n) => {
+        n = Number(n) || 0;
+        let s = n >= 1_000_000 ? (n/1_000_000).toFixed(1)+'M'
+              : n >= 1_000     ? (n/1_000).toFixed(1)+'K'
+              : Math.floor(n).toString();
+        return (window.RealI18N && window.RealI18N.toPersianDigits
+          && window.RealI18N.getLang && window.RealI18N.getLang() === 'fa')
+          ? window.RealI18N.toPersianDigits(s) : s;
+      };
       balanceEl.innerHTML = `<span class="zar-ico">🪙</span> ${_fmtBal(state.balance)}`;
       balanceEl.classList.remove("flash");
       void balanceEl.offsetWidth;
