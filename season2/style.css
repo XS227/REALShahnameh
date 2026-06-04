@@ -432,8 +432,8 @@ a { color: inherit; }
    176% of orb ≈ 60% of container, reaching the edge of the third ring. */
 [data-skin-orb] {
   position: absolute;
-  width: 176%;
-  height: 176%;
+  width: 528%;
+  height: 528%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
