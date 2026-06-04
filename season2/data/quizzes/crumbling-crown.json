@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "crc-e1",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How many Sasanian rulers came to power in the four years after Shiruyeh killed Khosrow Parviz?",
+      "question_fa": "چند حاکم ساسانی در چهار سال پس از کشتن خسرو پرویز توسط شیرویه به قدرت رسیدند؟",
+      "question_tg": "Чанд ҳокими Сосонӣ дар чаҳор сол пас аз куштани Хусрави Парвез аз ҷониби Шируяҳ ба қудрат расиданд?",
+      "answers": [
+        "Eight",
+        "Three",
+        "Twelve",
+        "Five"
+      ],
+      "answers_fa": [
+        "هشت",
+        "سه",
+        "دوازده",
+        "پنج"
+      ],
+      "answers_tg": [
+        "Ҳашт",
+        "Се",
+        "Дувоздаҳ",
+        "Панҷ"
+      ],
+      "correct_answer": 0,
+      "explanation": "After Shiruyeh died of plague within months of killing his father, Iran had eight rulers in four years: Ardeshir III (a child), Shahrbaraz (a general), Boran (the first Sasanian queen), Azarmidokht, and others. The Shahnameh watches this with the eye of a chronicler who knows how it ends.",
+      "explanation_fa": "پس از اینکه شیرویه ظرف چند ماه از کشتن پدرش از طاعون مُرد، ایران هشت حاکم در چهار سال داشت: اردشیر سوم (یک کودک)، شهربراز (یک سردار)، بوران (اولین ملکه ساسانی)، آذرمیدخت و دیگران. شاهنامه این را با چشم وقایع‌نگاری که می‌داند چه می‌شود می‌بیند.",
+      "explanation_tg": "Пас аз он ки Шируяҳ зарфи чанд моҳ аз куштани падараш аз тоун мурд, Эрон ҳашт ҳоким дар чаҳор сол дошт: Ардашери Сеюм (кӯдак), Шаҳрбороз (сарлашкар), Буron (аввалин маликаи Сосонӣ) ва дигарон.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "crc-m1",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What was happening outside Iran while the Sasanian dynasty was destroying itself through rapid succession?",
+      "question_fa": "در حالی که سلسله ساسانی با جانشینی سریع در حال نابود کردن خودش بود، در خارج از ایران چه اتفاقی می‌افتاد؟",
+      "question_tg": "Дар ҳоле ки сулолаи Сосонӣ бо ҷонишинии зуд дар ҳоли нобуд кардани худаш буд, берун аз Эрон чӣ мегузашт?",
+      "answers": [
+        "The Arab tribes were unifying under Islam and beginning to move with coherence that exhausted Iran could not match",
+        "The Byzantine empire was launching a new invasion to capitalize on the Sasanian collapse",
+        "The Turkish khagan was building an army to sweep across Central Asia into Persia",
+        "China's Tang dynasty was expanding westward along the Silk Road toward Iranian territory"
+      ],
+      "answers_fa": [
+        "قبایل عرب زیر اسلام متحد می‌شدند و با انسجامی شروع به حرکت کرده بودند که ایران خسته نمی‌توانست با آن برابری کند",
+        "امپراتوری بیزانس حمله جدیدی برای استفاده از فروپاشی ساسانی راه می‌انداخت",
+        "خاقان ترک داشت ارتشی می‌ساخت برای جارو کردن آسیای مرکزی به سمت ایران",
+        "سلسله تانگ چین داشت در امتداد جاده ابریشم به سمت غرب به سوی قلمرو ایران گسترش می‌یافت"
+      ],
+      "answers_tg": [
+        "Қабилаҳои Арабӣ зери Ислом муттаҳид мешуданд ва бо ҳамоҳангие шурӯъ ба ҳаракат карда буданд ки Эрони хаста бо он баробарӣ карда наметавонист",
+        "Империяи Визонт ҳамлаи ҷадиде барои истифода аз фурӯпошии Сосонӣ сар медод",
+        "Хоқони Турк артише месохт барои ҷору кардани Осиёи Миёна ба сӯи Эрон",
+        "Сулолаи Тан Чин дар тӯли Роҳи Абрешим ба самти ғарб ба сӯи қаламрави Эрон тавсеа меёфт"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Arab tribes had found a unifying force in Islam. They were moving with a coherence — a belief in their moment and their cause — that the exhausted, factional Sasanian court could not match or understand. The crumbling crown was not waiting to be knocked off. It had simply lost the strength to hold itself up.",
+      "explanation_fa": "قبایل عرب نیروی متحدکننده‌ای در اسلام پیدا کرده بودند. با انسجامی حرکت می‌کردند — باور به لحظه و دلیل خود — که دربار ساسانی خسته و فرقه‌ای نمی‌توانست با آن برابری یا آن را درک کند. تاج در حال فروپاشی منتظر نبود که کنار زده شود. فقط قدرت نگه داشتن خودش را از دست داده بود.",
+      "explanation_tg": "Қабилаҳои Арабӣ нерӯи муттаҳидкунандае дар Ислом ёфта буданд. Бо ҳамоҳангие ҳаракат мекарданд — бовар ба лаҳзаи худ ва сабаби худ — ки дарбори Сосонии хаста ва фирқаӣ бо он баробарӣ карда ё дарк карда наметавонист.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "crc-e2",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Who was the notable queen who ruled the Sasanian empire during this period of rapid succession?",
+      "question_fa": "ملکه قابل توجهی که در این دوره جانشینی سریع بر امپراتوری ساسانی حکومت کرد کی بود؟",
+      "question_tg": "Маликаи қобили таваҷҷӯҳе ки дар ин давраи ҷонишинии зуд бар империяи Сосонӣ ҳукумат кард кӣ буд?",
+      "answers": [
+        "Boran, daughter of Khosrow Parviz — the first woman to rule the Sasanian empire",
+        "Shirin, who claimed the throne after Shiruyeh's death using her status as queen",
+        "Azarmidokht, who ruled for three years and stabilized the western frontier",
+        "Gordafarid, a warrior princess from the eastern provinces who took power by force"
+      ],
+      "answers_fa": [
+        "بوران، دختر خسرو پرویز — اولین زنی که بر امپراتوری ساسانی حکومت کرد",
+        "شیرین که پس از مرگ شیرویه با استفاده از موقعیتش به عنوان ملکه ادعای تخت کرد",
+        "آذرمیدخت که سه سال حکومت کرد و مرز غربی را ثابت کرد",
+        "گردآفرید، شاهزاده‌خانم جنگجو از استان‌های شرقی که با زور قدرت را به دست گرفت"
+      ],
+      "answers_tg": [
+        "Бурон, духтари Хусрави Парвез — аввалин занест ки бар империяи Сосонӣ ҳукумат кард",
+        "Ширин ки пас аз марги Шируяҳ бо истифода аз мавқеияш ҳамчун малика даъвои тахт кард",
+        "Озармедохт ки се сол ҳукумат кард ва сарҳади ғарбиро устувор кард",
+        "Гурдофарид, шаҳзодахонуми ҷангии аз устонҳои шарқӣ ки бо зӯр қудратро ба даст гирифт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Boran, daughter of Khosrow Parviz, was crowned queen — the first woman to sit on the Sasanian throne. She tried to negotiate with Byzantium and even offered to return the True Cross. She lasted about a year before the factional violence that was consuming the dynasty claimed her too.",
+      "explanation_fa": "بوران، دختر خسرو پرویز، به عنوان ملکه تاجگذاری شد — اولین زنی که بر تخت ساسانی نشست. تلاش کرد با بیزانس مذاکره کند و حتی پیشنهاد داد صلیب واقعی را برگرداند. حدود یک سال دوام آورد قبل از اینکه خشونت فرقه‌ای که سلسله را می‌بلعید او را هم بگیرد.",
+      "explanation_tg": "Бурон, духтари Хусрави Парвез, ҳамчун малика тоҷгузорӣ шуд — аввалин зане ки бар тахти Сосонӣ нишаст. Кӯшид бо Визонт музокира кунад ва ҳатто пешниҳод дод Салиби Воқеиро баргардонад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "ash-e1",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How many Ashkanian kings does Ferdowsi name in the Shahnameh?",
+      "question_fa": "فردوسی چند شاه اشکانی را در شاهنامه نام می‌برد؟",
+      "question_tg": "Фирдавсӣ чанд подшоҳи Ашкониро дар шоҳнома ном мебарад?",
+      "answers": [
+        "Fourteen",
+        "Seven",
+        "Twenty-two",
+        "Four"
+      ],
+      "answers_fa": [
+        "چهارده",
+        "هفت",
+        "بیست و دو",
+        "چهار"
+      ],
+      "answers_tg": [
+        "Чордаҳ",
+        "Ҳафт",
+        "Бисту ду",
+        "Чаҳор"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ferdowsi lists fourteen Ashkanian kings by name but gives almost no detail about any of them. He explains that their stories were not written down or the records did not reach him — the chronicle of four centuries fits in a few pages.",
+      "explanation_fa": "فردوسی چهارده شاه اشکانی را با نام فهرست می‌کند اما تقریباً هیچ جزئیاتی درباره هیچ‌کدام از آنها نمی‌دهد. توضیح می‌دهد که داستان‌هایشان نوشته نشده یا پرونده‌ها به دستش نرسیده — روایت چهار قرن در چند صفحه جا می‌گیرد.",
+      "explanation_tg": "Фирдавсӣ чордаҳ подшоҳи Ашкониро бо ном феҳрист мекунад аммо тақрибан ҳеҷ тафсилоте дар бораи ҳеҷ кадоме аз онҳо намедиҳад. Тавзеҳ медиҳад ки достонҳояшон навишта нашуда ё паpвандаҳо ба дасташ нарасида — ривояти чаҳор аср дар чанд саҳифа ҷо мегирад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "ash-e2",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What does Ferdowsi explicitly admit about the Ashkanian historical records?",
+      "question_fa": "فردوسی صراحتاً درباره پرونده‌های تاریخی اشکانیان چه اعتراف می‌کند؟",
+      "question_tg": "Фирдавсӣ صادиqона дар бораи пaрвандаҳои таърихии Ашконӣ чӣ эътироф мекунад?",
+      "answers": [
+        "That the records were lost or never reached him — he cannot tell their stories",
+        "That the Ashkanians destroyed their own records out of shame",
+        "That the Arab conquest burned all Ashkanian archives",
+        "That Ferdowsi chose to omit them to keep the poem to a manageable length"
+      ],
+      "answers_fa": [
+        "پرونده‌ها گم شده یا هرگز به دستش نرسیده — نمی‌تواند داستان‌هایشان را تعریف کند",
+        "اشکانیان از روی شرم پرونده‌های خود را نابود کردند",
+        "فتح عرب تمام آرشیوهای اشکانی را سوزاند",
+        "فردوسی انتخاب کرد آنها را حذف کند تا شعر قابل مدیریت باشد"
+      ],
+      "answers_tg": [
+        "Парвандаҳо гум шуда ё ҳаргиз ба дасташ нарасида — натавонист достонҳояшонро нақл кунад",
+        "Ашкониён аз рӯи шарм парвандаҳои худро нобуд карданд",
+        "Фатҳи Арабӣ ҳамаи архивҳои Ашкониро сӯзонд",
+        "Фирдавсӣ интихоб кард онҳоро ҳазф кунад то шеър идорашаванда бошад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ferdowsi stops and openly admits that the Ashkanian records were not written down or did not reach him. This is one of the most honest moments in the poem — a historian's discipline overriding the poet's temptation to invent.",
+      "explanation_fa": "فردوسی می‌ایستد و آشکارا اعتراف می‌کند که پرونده‌های اشکانی نوشته نشده یا به دستش نرسیده. این یکی از صادقانه‌ترین لحظات در شعر است — انضباط مورخ که بر وسوسه شاعر غالب می‌شود.",
+      "explanation_tg": "Фирдавсӣ мемонад ва ошкоро эътироф мекунад ки парвандаҳои Ашконӣ навишта нашуда ё ба дасташ нарасида. Ин яке аз صадиqонатарин лаҳзаҳо дар шеър аст — интизоми муаррих ки бар васвасаи шоир ғолиб меояд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "ash-m1",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What was the Ashkanian dynasty's most celebrated military achievement?",
+      "question_fa": "بزرگ‌ترین دستاورد نظامی سلسله اشکانی چه بود؟",
+      "question_tg": "Бузургтарин дастоварди ҳарбии сулолаи Ашконӣ чӣ буд?",
+      "answers": [
+        "Defeating Rome at Carrhae and holding back Roman expansion for centuries",
+        "Reconquering Egypt from the Ptolemaic dynasty",
+        "Destroying the Seleucid empire that followed Alexander",
+        "Repelling a major invasion from China's Han dynasty"
+      ],
+      "answers_fa": [
+        "شکست دادن روم در کارهه و جلوگیری از گسترش روم برای قرن‌ها",
+        "بازپس‌گیری مصر از سلسله بطلمیوسی",
+        "نابود کردن امپراتوری سلوکی که پس از اسکندر آمد",
+        "دفع تهاجم بزرگ از سلسله هان چین"
+      ],
+      "answers_tg": [
+        "Шикаст додани Рум дар Карра ва боздоштани тавсеаи Рум барои садсолаҳо",
+        "Бозпас гирифтани Миср аз сулолаи Птолемайӣ",
+        "Нобуд кардани империяи Салавкӣ ки пас аз Искандар омад",
+        "Дафъи ҳамлаи бузурги сулолаи Хани Чин"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Ashkanian (Arsacid/Parthian) dynasty famously defeated Rome at the Battle of Carrhae in 53 BCE, killing the Roman general Crassus. They held back Roman expansion for centuries while the old Persian culture slowly reasserted itself.",
+      "explanation_fa": "سلسله اشکانی (اشکانی/پارتی) به طور مشهوری روم را در نبرد کارهه در سال ۵۳ قبل از میلاد شکست داد و سردار رومی کراسوس را کشت. آنها برای قرن‌ها گسترش روم را مهار کردند در حالی که فرهنگ قدیم ایرانی به آرامی دوباره ظهور کرد.",
+      "explanation_tg": "Сулолаи Ашконӣ (Ашконӣ/Порт) машҳурона Румро дар набарди Карра дар соли 53 пеш аз милод шикаст дод ва сарлашкари Румии Красусро кушт. Онҳо тавсеаи Румро барои садсолаҳо боздоштанд дар ҳоле ки фарҳанги қадими Эронӣ ба оромӣ дубора зоҳир мешуд.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    }
+  ]
+}

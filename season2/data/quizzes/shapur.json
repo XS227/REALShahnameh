@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "shp-e1",
+      "chapter_slug": "shapur",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What happened to the Roman Emperor Valerian at the Battle of Edessa in 260 CE?",
+      "question_fa": "امپراتور رومی والریان در نبرد ادسا در سال ۲۶۰ میلادی چه اتفاقی برایش افتاد؟",
+      "question_tg": "Ба императори Румии Валериан дар набарди Эдесса дар соли 260 милодӣ чӣ рӯй дод?",
+      "answers": [
+        "He was captured and brought before Shapur in chains — the only Roman emperor ever taken prisoner in battle",
+        "He was killed on the battlefield and his body displayed at the city gates",
+        "He escaped but died of his wounds during the retreat to Rome",
+        "He surrendered voluntarily to avoid a massacre of his troops"
+      ],
+      "answers_fa": [
+        "در زنجیر به حضور شاپور آورده شد — تنها امپراتور رومی که تا به حال در نبرد اسیر شد",
+        "در میدان نبرد کشته شد و جسدش بر دروازه‌های شهر به نمایش گذاشته شد",
+        "فرار کرد اما در حین عقب‌نشینی به روم از زخم‌هایش مُرد",
+        "داوطلبانه تسلیم شد تا از کشتار سربازانش جلوگیری کند"
+      ],
+      "answers_tg": [
+        "Дар занҷир ба ҳузури Шопур оварда шуд — ягона императори Румие ки то ба ҳол дар набард асир шуд",
+        "Дар майдони набард кушта шуд ва ҷасадаш бар дарвозаҳои шаҳр ба намоиш гузошта шуд",
+        "Гурехт аммо ҳангоми ақибнишинӣ ба Рум аз захмҳояш мурд",
+        "Даваталабона таслим шуд то аз куштори сарбозонаш пешгирӣ кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Valerian led his legions east to halt the Sasanian advance and was defeated and captured at Edessa in 260 CE. No Roman emperor had ever been taken prisoner in battle before. He died in captivity — no ransom was paid.",
+      "explanation_fa": "والریان لشکریانش را به شرق فرستاد تا پیشروی ساسانی را متوقف کند و در ادسا در سال ۲۶۰ میلادی شکست خورد و اسیر شد. هیچ امپراتور رومی تا آن زمان در نبرد اسیر نشده بود. در اسارت مُرد — هیچ فدیه‌ای پرداخت نشد.",
+      "explanation_tg": "Валериан лашкариёнашро ба шарқ фиристод то пешрафти Сосониро боздорад ва дар Эдесса дар соли 260 милодӣ шикаст хӯрд ва асир шуд. Ҳеҷ императори Румие то он замон дар набард асир нашуда буд. Дар асорат мурд — ҳеҷ фидяе пардохта нашуд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "shp-m1",
+      "chapter_slug": "shapur",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What did Shapur do before his campaigns against Rome that distinguished him from other kings?",
+      "question_fa": "شاپور قبل از لشکرکشی‌هایش علیه روم چه کاری کرد که او را از دیگر شاهان متمایز می‌کرد؟",
+      "question_tg": "Шопур пеш аз лашкаркашиҳояш бар зидди Рум чӣ коре кард ки ӯро аз дигар подшоҳон мумтоз мекард?",
+      "answers": [
+        "He traveled to Rome in disguise to spy on the imperial court firsthand",
+        "He spent three years in prayer and fasting to receive divine guidance",
+        "He sent ambassadors offering peace to avoid unnecessary bloodshed",
+        "He recruited Roman defectors to teach his army new battle formations"
+      ],
+      "answers_fa": [
+        "با لباس مبدل به روم رفت تا شخصاً از دربار امپراتوری جاسوسی کند",
+        "سه سال به دعا و روزه پرداخت تا هدایت الهی بگیرد",
+        "سفیرانی فرستاد که صلح پیشنهاد دادند تا از خونریزی غیرضروری جلوگیری کند",
+        "منشقان رومی را برای آموزش تشکیلات جنگی جدید به ارتشش استخدام کرد"
+      ],
+      "answers_tg": [
+        "Бо либоси мубаддал ба Рум рафт то дарбори императориро ба таври шахсӣ ҷосусӣ кунад",
+        "Се сол ба дуо ва рӯза машғул шуд то ҳидояти илоҳӣ бигирад",
+        "Сафиронеро фиристод ки сулҳ пешниҳод доданд то аз хунрезии бегараз пешгирӣ кунад",
+        "Мунҳарифони Румиро барои омӯзиши ташкилоти ҷангии ҷадид ба артушаш ба хизмат гирифт"
+      ],
+      "correct_answer": 0,
+      "explanation": "According to the Shahnameh, Shapur traveled west in disguise — as a merchant or ambassador — to observe the Roman court before his campaigns. He was recognized and imprisoned but escaped, gathering intelligence at personal risk before returning to lead his armies.",
+      "explanation_fa": "بنابر شاهنامه، شاپور با لباس مبدل — به عنوان تاجر یا سفیر — به غرب رفت تا قبل از لشکرکشی‌هایش دربار رومی را مشاهده کند. او شناخته شد و زندانی شد اما گریخت، اطلاعات را با خطر شخصی جمع کرد قبل از اینکه بازگردد و ارتشش را رهبری کند.",
+      "explanation_tg": "Тибқи шоҳнома, Шопур бо либоси мубаддал — ҳамчун тоҷир ё сафир — ба ғарб рафт то пеш аз лашкаркашиҳояш дарбори Румиро мушоҳида кунад. Ӯ шинохта шуд ва зиндонӣ шуд аммо гурехт, иттилоотро бо хатари шахсӣ ҷамъ кард пеш аз он ки бозгардад ва артушашро роҳбарӣ кунад.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "shp-e2",
+      "chapter_slug": "shapur",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Where did Shapur commemorate his victories over Rome in permanent stone?",
+      "question_fa": "شاپور پیروزی‌هایش بر روم را کجا به صورت دائمی در سنگ یادبود ساخت؟",
+      "question_tg": "Шопур пирӯзиҳояшро бар Рум дар куҷо ба таври доимӣ дар санг ёдбуд сохт?",
+      "answers": [
+        "At Naqsh-e Rostam, in enormous rock reliefs showing Valerian kneeling",
+        "At the gates of Ctesiphon, in a great triumphal arch",
+        "In the city of Edessa itself, where the battle had been won",
+        "At the ruins of Persepolis, reclaiming the Achaemenid sacred site"
+      ],
+      "answers_fa": [
+        "در نقش رستم، در نقش‌برجسته‌های سنگی عظیم که والریان را زانو زده نشان می‌دهند",
+        "در دروازه‌های تیسفون، در یک طاق پیروزی بزرگ",
+        "در خود شهر ادسا، جایی که نبرد در آن برده شده بود",
+        "در ویرانه‌های تخت جمشید، با بازپس‌گیری محل مقدس هخامنشی"
+      ],
+      "answers_tg": [
+        "Дар Нақши Рустам, дар нақшбарҷастаҳои сангии азим ки Валерианро зонузада нишон медиҳанд",
+        "Дар дарвозаҳои Тайсафун, дар тоқи зафари бузург",
+        "Дар худи шаҳри Эдесса, ки дар он ҷо набард бурда шуда буд",
+        "Дар харобаҳои Тахти Ҷамшед, бо бозпас гирифтани маҳали муқаддаси Ҳахоманишӣ"
+      ],
+      "correct_answer": 0,
+      "explanation": "Shapur commemorated his victories in enormous rock reliefs carved at Naqsh-e Rostam, the ancient site near Persepolis where Achaemenid kings had long carved their monuments. Valerian is shown forever kneeling before the mounted Shapur in stone that is still visible today.",
+      "explanation_fa": "شاپور پیروزی‌هایش را در نقش‌برجسته‌های سنگی عظیم حک‌شده در نقش رستم، محل باستانی نزدیک تخت جمشید که شاهان هخامنشی مدت‌ها یادبودهایشان را در آن حک کرده بودند، یادبود ساخت. والریان برای همیشه در حال زانو زدن در برابر شاپور سواره در سنگی که امروزه هنوز قابل مشاهده است نشان داده شده است.",
+      "explanation_tg": "Шопур пирӯзиҳояшро дар нақшбарҷастаҳои сангии азим дар Нақши Рустам, маҳали қадимаи наздики Тахти Ҷамшед ки подшоҳони Ҳахоманишӣ муддате ёдбудҳояшонро дар он ҳак карда буданд, ёдбуд сохт.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "shp-m2",
+      "chapter_slug": "shapur",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How did Shapur treat Valerian after capturing him — according to the Persian tradition?",
+      "question_fa": "شاپور طبق سنت ایرانی با والریان پس از اسارتش چگونه رفتار کرد؟",
+      "question_tg": "Шопур тибқи анъанаи Эронӣ бо Валериан пас аз асирии ӯ чӣ гуна рафтор кард?",
+      "answers": [
+        "Kept him as a mounting block — using the emperor as a step when Shapur mounted his horse",
+        "Treated him with full royal honours as a fellow king, allowing him to live in comfort",
+        "Executed him publicly in Ctesiphon as a sacrifice to the Zoroastrian sacred fire",
+        "Returned him to Rome after extracting a massive war indemnity"
+      ],
+      "answers_fa": [
+        "او را به عنوان سکوی اسب‌سواری نگه داشت — از امپراتور به عنوان پله‌ای استفاده کرد که شاپور بر اسبش سوار شود",
+        "با تمام افتخارات سلطنتی مانند یک شاه هم‌رتبه با او رفتار کرد و به او اجازه داد راحت زندگی کند",
+        "او را به طور عمومی در تیسفون به عنوان قربانی برای آتش مقدس زرتشتی اعدام کرد",
+        "پس از اخذ غرامت جنگی بزرگ او را به روم بازگرداند"
+      ],
+      "answers_tg": [
+        "Ӯро ҳамчун зинапояи аспсаворӣ нигоҳ дошт — аз императорро ҳамчун зинае истифода кард ки Шопур бар аспаш савор шавад",
+        "Бо тамоми эҳтиромоти шоҳона ҳамчун подшоҳи ҳамруҷба бо ӯ рафтор кард",
+        "Ӯро дар Тайсафун ба таври умумӣ ҳамчун қурбонӣ барои оташи муқаддаси Зардуштӣ эъдом кард",
+        "Пас аз гирифтани ғарамати ҷангии бузург ӯро ба Рум баргардонд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Persian tradition records that Shapur used Valerian as a mounting block — the captured emperor served as a living step for Shapur to mount his horse. This deliberate humiliation was architectural as well as personal, forever memorialized in the Naqsh-e Rostam reliefs.",
+      "explanation_fa": "سنت ایرانی ثبت می‌کند که شاپور از والریان به عنوان سکوی اسب‌سواری استفاده کرد — امپراتور اسیر به عنوان پله زنده‌ای برای سوار شدن شاپور بر اسبش خدمت می‌کرد. این تحقیر عمدی به همان اندازه معماری بود که شخصی، برای همیشه در نقش‌برجسته‌های نقش رستم یادبود شد.",
+      "explanation_tg": "Анъанаи Эронӣ сабт мекунад ки Шопур Валерианро ҳамчун зинапояи аспсаворӣ истифода кард — императори асир ҳамчун зинаи зиндае барои савор шудани Шопур бар аспаш хидмат мекард.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    }
+  ]
+}

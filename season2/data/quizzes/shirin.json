@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "shr-e1",
+      "chapter_slug": "shirin",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What impossible task did Khosrow set for Farhad the sculptor to keep him away from Shirin?",
+      "question_fa": "خسرو چه وظیفه غیرممکنی برای فرهاد تراشکار تعیین کرد تا او را از شیرین دور نگه دارد؟",
+      "question_tg": "Хусрав чӣ вазифаи ғайриимконеро барои Фарҳоди тарош муайян кард то ӯро аз Ширин дур нигоҳ дорад?",
+      "answers": [
+        "Cut a channel through Mount Bisotun — and you may have her",
+        "Build a road from Ctesiphon to Jerusalem in seven years using only stone",
+        "Carve a likeness of Shirin in marble taller than any statue ever made",
+        "Dig a canal from the Euphrates to the Caspian Sea alone and unaided"
+      ],
+      "answers_fa": [
+        "کانالی از کوه بیستون بکن — و می‌توانی او را داشته باشی",
+        "جاده‌ای از تیسفون به اورشلیم در هفت سال با استفاده از سنگ بساز",
+        "شبیه‌ای از شیرین را در مرمر بتراش که بلندتر از هر مجسمه‌ای باشد که تا به حال ساخته شده",
+        "کانالی از فرات به دریای خزر به تنهایی و بدون کمک حفر کن"
+      ],
+      "answers_tg": [
+        "Канале аз кӯҳи Бесутун каф — ва метавонӣ ӯро дошта бошӣ",
+        "Роҳеро аз Тайсафун ба Урусалим дар ҳафт сол бо истифода аз санг бисоз",
+        "Шабеҳи Ширинро дар мармар битарош ки баландтар аз ҳар муҷассамае бошад ки то ба ҳол сохта шуда",
+        "Канале аз Фурот ба Дарёи Хазар танҳо ва бе кӯмак ҳафр кун"
+      ],
+      "correct_answer": 0,
+      "explanation": "Khosrow gave Farhad an impossible condition: cut a channel through Mount Bisotun, and you may have Shirin. Farhad went to the mountain and began cutting. He worked so long and so precisely that the task began to look possible. The mountain still bears his carvings.",
+      "explanation_fa": "خسرو به فرهاد شرطی غیرممکن داد: کانالی از کوه بیستون بکن و می‌توانی شیرین را داشته باشی. فرهاد به کوه رفت و شروع به کندن کرد. آنقدر طولانی و دقیق کار کرد که کار داشت ممکن به نظر می‌رسید. آثار حکاکی‌هایش هنوز بر کوه وجود دارد.",
+      "explanation_tg": "Хусрав ба Фарҳод шарти ғайриимконе дод: канале аз кӯҳи Бесутун каф ва метавонӣ Ширинро дошта бошӣ. Фарҳод ба кӯҳ рафт ва шурӯъ ба кофтан кард. Он қадар дӯлонӣ ва дақиқ кор кард ки кор доштааст имконпазир ба назар мерасид.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "shr-m1",
+      "chapter_slug": "shirin",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How did Khosrow end Farhad's work on Mount Bisotun?",
+      "question_fa": "خسرو چگونه کار فرهاد بر کوه بیستون را پایان داد؟",
+      "question_tg": "Хусрав чӣ тавр кори Фарҳодро бар кӯҳи Бесутун поён дод?",
+      "answers": [
+        "He sent a messenger to lie to Farhad that Shirin had died — Farhad threw himself off the cliff in grief",
+        "He convinced Shirin herself to go to the mountain and tell Farhad she did not love him",
+        "He had Farhad arrested before the channel was complete and executed as a traitor",
+        "He offered Farhad a kingdom of his own if he would abandon the work and leave Iran"
+      ],
+      "answers_fa": [
+        "قاصدی فرستاد که به فرهاد دروغ بگوید که شیرین مُرده — فرهاد از غم از صخره خودش را پرت کرد",
+        "خود شیرین را متقاعد کرد که به کوه برود و به فرهاد بگوید دوستش ندارد",
+        "فرهاد را قبل از اتمام کانال دستگیر کرد و به عنوان خائن اعدام کرد",
+        "به فرهاد یک پادشاهی مخصوص خودش پیشنهاد داد اگر کار را رها کند و ایران را ترک کند"
+      ],
+      "answers_tg": [
+        "Паёмбаре фиристод то ба Фарҳод дурӯғ гӯяд ки Ширин мурдааст — Фарҳод аз ғам аз харсанг худашро партоб кард",
+        "Худи Ширинро қонеъ кард ки ба кӯҳ равад ва ба Фарҳод бигӯяд ӯро дӯст надорад",
+        "Фарҳодро пеш аз тамоми канал дастгир кард ва ҳамчун хоин эъдом кард",
+        "Ба Фарҳод подшоҳии махсуси худашро пешниҳод дод агар корро раҳо кунад ва Эронро тарк кунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Farhad's work began looking possible, Khosrow sent a messenger to lie to him that Shirin had died. Farhad threw himself from the cliff. He died for a lie. The mountain still bears his carvings — permanent evidence of what love and discipline can build, and what a king's deception can destroy.",
+      "explanation_fa": "وقتی کار فرهاد داشت ممکن به نظر می‌رسید، خسرو قاصدی فرستاد که به او دروغ بگوید شیرین مُرده. فرهاد از صخره خودش را پرت کرد. برای یک دروغ مُرد. آثار حکاکی‌هایش هنوز بر کوه وجود دارد — شواهد دائمی از آنچه عشق و انضباط می‌تواند بسازد و آنچه فریب یک شاه می‌تواند نابود کند.",
+      "explanation_tg": "Вақте кори Фарҳод доштааст имконпазир ба назар мерасид, Хусрав паёмбаре фиристод то ба ӯ дурӯғ гӯяд ки Ширин мурдааст. Фарҳод аз харсанг худашро партоб кард. Барои дурӯғе мурд.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "shr-e2",
+      "chapter_slug": "shirin",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What did Shirin do after Khosrow was killed by his son Shiruyeh?",
+      "question_fa": "شیرین بعد از کشته شدن خسرو توسط پسرش شیرویه چه کرد؟",
+      "question_tg": "Ширин пас аз куштани Хусрав аз ҷониби писараш Шируяҳ чӣ кард?",
+      "answers": [
+        "She refused Shiruyeh's demand to become his queen and died at Khosrow's tomb — by her own hand or by grief",
+        "She fled to Armenia, her homeland, and lived the rest of her life in exile",
+        "She accepted Shiruyeh's offer to preserve the peace and avoid further bloodshed",
+        "She entered a monastery and spent the rest of her life in prayer for Khosrow's soul"
+      ],
+      "answers_fa": [
+        "درخواست شیرویه برای ملکه شدنش را رد کرد و بر مزار خسرو مُرد — به دست خودش یا از غم",
+        "به ارمنستان، زادگاهش، گریخت و بقیه عمرش را در تبعید گذراند",
+        "پیشنهاد شیرویه را برای حفظ صلح و جلوگیری از خونریزی بیشتر قبول کرد",
+        "به یک صومعه رفت و بقیه عمرش را در دعا برای روح خسرو گذراند"
+      ],
+      "answers_tg": [
+        "Хоҳиши Шируяҳро барои маликашавии худро рад кард ва бар мазори Хусрав мурд — ба дасти худ ё аз ғам",
+        "Ба Арманистон, зодгоҳаш, гурехт ва бақияи умрашро дар табъид гузаронд",
+        "Пешниҳоди Шируяҳро барои ҳифзи сулҳ ва пешгирии хунрезии бештар қабул кард",
+        "Ба хонақоҳе даромад ва бақияи умрашро дар дуо барои рӯҳи Хусрав гузаронд"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Shiruyeh demanded Shirin as his queen, she refused. A king who murders his own father to take his crown was not one she would ornament. She went to Khosrow's tomb, and there she died. The Shahnameh does not force a single interpretation — it was her choice, and she made it.",
+      "explanation_fa": "وقتی شیرویه از شیرین به عنوان ملکه‌اش خواست، امتناع کرد. شاهی که پدر خودش را برای گرفتن تاجش می‌کشد کسی نبود که او زینتش می‌داد. به مزار خسرو رفت و در آنجا مُرد. شاهنامه یک تفسیر واحد تحمیل نمی‌کند — انتخاب او بود و آن را کرد.",
+      "explanation_tg": "Вақте Шируяҳ Ширинро ҳамчун маликааш хост, имтиноъ кард. Подшоҳе ки падари худашро барои гирифтани тоҷаш мекушад касе набуд ки ӯ зинаташ мекард. Ба мазори Хусрав рафт ва дар он ҷо мурд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

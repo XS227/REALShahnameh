@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "anu-e1",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What lesson did Khosrow Anushirvan learn from overhearing two owls on a ruined rooftop?",
+      "question_fa": "خسرو انوشیروان از شنیدن اتفاقی دو جغد بر بام خرابه‌ای چه درسی یاد گرفت؟",
+      "question_tg": "Хусрав Анӯшервон аз шунидани тасодуфии ду бӯм бар боми хaробае чӣ дарсе гирифт?",
+      "answers": [
+        "The owls were negotiating marriages demanding ruined villages as dowry — showing an unjust king creates endless ruins",
+        "The owls were mourning a great king, showing that even animals grieve for just rulers",
+        "The owls were warning of an invasion from the north that only a just king could repel",
+        "The owls were arguing over property, showing even animals fight when law is weak"
+      ],
+      "answers_fa": [
+        "جغدها داشتند برای ازدواج مذاکره می‌کردند و روستاهای ویران را به عنوان مهریه می‌خواستند — نشان می‌داد یک شاه ناعادل خرابه‌های بی‌پایان ایجاد می‌کند",
+        "جغدها داشتند برای یک شاه بزرگ عزاداری می‌کردند که نشان می‌داد حتی حیوانات هم برای حاکمان عادل عزا می‌گیرند",
+        "جغدها داشتند از تهاجمی از شمال هشدار می‌دادند که فقط یک شاه عادل می‌توانست آن را دفع کند",
+        "جغدها داشتند بر سر ملک بحث می‌کردند که نشان می‌داد حتی حیوانات هم وقتی قانون ضعیف است می‌جنگند"
+      ],
+      "answers_tg": [
+        "Бӯмҳо барои издивоҷ музокира мекарданд ва деҳаҳои харобро ҳамчун маҳр мехостанд — нишон медод подшоҳи нодил харобаҳои бепоён эҷод мекунад",
+        "Бӯмҳо барои подшоҳи бузурге азо медоштанд ки нишон медод ҳатто ҳайвонот ҳам барои ҳокимони одил ғам мехӯранд",
+        "Бӯмҳо аз ҳамлаи аз шимол огоҳ мекарданд ки танҳо подшоҳи одил метавонист онро дафъ кунад",
+        "Бӯмҳо бар сари мулк баҳс мекарданд ки нишон медод ҳатто ҳайвонот ҳам вақти қонун заиф аст меҷанганд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Anushirvan overheard two owls negotiating their children's marriages on a ruin. His interpreter said each side was demanding ruined villages as dowry, and there would be no shortage under an unjust king. Anushirvan understood — he returned to court and began the reforms that would make him a legend of justice.",
+      "explanation_fa": "انوشیروان دو جغد را شنید که بر یک خرابه برای ازدواج فرزندانشان مذاکره می‌کردند. مترجمش گفت هر طرف روستاهای ویران را به عنوان مهریه می‌خواست و تا وقتی شاه ناعادلی باشد کمبودی نخواهد بود. انوشیروان فهمید — به دربار بازگشت و اصلاحاتی را شروع کرد که او را افسانه عدالت کرد.",
+      "explanation_tg": "Анӯшервон ду бӯмро шунид ки бар харобае барои издивоҷи фарзандонашон музокира мекарданд. Мутарҷимаш гуфт ҳар тараф деҳаҳои харобро ҳамчун маҳр мехост ва то вақте подшоҳи нодиле бошад камбуде нахоҳад буд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "anu-m1",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What did Anushirvan do when the Byzantine Emperor Justinian closed the Academy in Athens?",
+      "question_fa": "انوشیروان وقتی امپراتور بیزانسی یوستینیانوس آکادمی آتن را بست چه کرد؟",
+      "question_tg": "Анӯшервон вақте императори Визонтии Юстиниан Академияи Афинаро баст чӣ кард?",
+      "answers": [
+        "He invited the Greek philosophers to his court at Ctesiphon and had Plato translated into Persian",
+        "He sent gold to rebuild the Academy in a new location outside Byzantine territory",
+        "He recruited the displaced scholars to teach in newly built schools across Iran",
+        "He had the philosophers' works smuggled into Iran before Justinian could destroy them"
+      ],
+      "answers_fa": [
+        "فیلسوفان یونانی را به دربارش در تیسفون دعوت کرد و افلاطون را به فارسی ترجمه کرد",
+        "طلا فرستاد تا آکادمی را در مکانی جدید خارج از قلمرو بیزانس بازسازی کنند",
+        "دانشمندان آواره را استخدام کرد تا در مدارس تازه ساخته شده در سراسر ایران تدریس کنند",
+        "آثار فیلسوفان را قبل از اینکه یوستینیانوس بتواند آنها را نابود کند به ایران قاچاق کرد"
+      ],
+      "answers_tg": [
+        "Файласуфони Юнониро ба дарбораш дар Тайсафун даъват кард ва Афлотунро ба Форсӣ тарҷума кард",
+        "Тилло фиристод то Академияро дар ҷои ҷадиде берун аз қаламрави Визонт барқарор созанд",
+        "Олимони ҷиловарону ба хизмат гирифт то дар мактабҳои тозасохташуда дар саросари Эрон дарс диҳанд",
+        "Осори файласуфонро пеш аз он ки Юстиниан тавонад онҳоро нобуд кунад ба Эрон қочоқ кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Emperor Justinian closed the Neoplatonic Academy at Athens in 529 CE, Anushirvan invited the displaced Greek philosophers to his court at Ctesiphon. He had Plato and other philosophical works translated. Iran became a refuge for the intellectual tradition that Byzantium was expelling.",
+      "explanation_fa": "وقتی امپراتور یوستینیانوس آکادمی نئوافلاطونی آتن را در سال ۵۲۹ میلادی بست، انوشیروان فیلسوفان یونانی آواره را به دربارش در تیسفون دعوت کرد. افلاطون و آثار فلسفی دیگر را ترجمه کرد. ایران پناهگاه سنت فکری‌ای شد که بیزانس آن را می‌راند.",
+      "explanation_tg": "Вақте Юстиниан Академияи Неоафлотунии Афинаро дар соли 529 милодӣ баст, Анӯшервон файласуфони Юнонии ҷиловарону ба дарбораш дар Тайсафун даъват кард.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "anu-m2",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What major board game came to Iran from India during Anushirvan's reign, and what did his minister Bozorgmehr invent in return?",
+      "question_fa": "چه بازی تخته‌ای بزرگی در دوران حکومت انوشیروان از هند به ایران آمد و وزیرش بزرگمهر در عوض چه اختراع کرد؟",
+      "question_tg": "Кадом бозии тахтаборди бузурге дар давраи ҳукмронии Анӯшервон аз Ҳинд ба Эрон омад ва вазираш Бузургмеҳр дар иваз чӣ ихтироъ кард?",
+      "answers": [
+        "Chess came from India — Bozorgmehr deciphered it and invented backgammon (nard) to send back",
+        "Go came from China — Bozorgmehr invented polo as a strategic game to send in return",
+        "Dice games came from Arabia — Bozorgmehr invented the astrolabe in response",
+        "Draughts came from Egypt — Bozorgmehr invented the water clock in exchange"
+      ],
+      "answers_fa": [
+        "شطرنج از هند آمد — بزرگمهر آن را رمزگشایی کرد و نرد را برای فرستادن برگشت اختراع کرد",
+        "گو از چین آمد — بزرگمهر چوگان را به عنوان بازی استراتژیک برای فرستادن در جواب اختراع کرد",
+        "بازی‌های تاس از عربستان آمد — بزرگمهر در پاسخ اسطرلاب را اختراع کرد",
+        "چکر از مصر آمد — بزرگمهر در عوض ساعت آبی اختراع کرد"
+      ],
+      "answers_tg": [
+        "Шатранҷ аз Ҳинд омад — Бузургмеҳр онро рамзкушоӣ кард ва нардро барои фиристодан барқ ихтироъ кард",
+        "Го аз Чин омад — Бузургмеҳр чавгонро ҳамчун бозии стратегӣ барои фиристодан дар ҷавоб ихтироъ кард",
+        "Бозиҳои тос аз Арабистон омад — Бузургмеҳр дар ҷавоб астурлобро ихтироъ кард",
+        "Шашки аз Миср омад — Бузургмеҳр дар иваз соати обиро ихтироъ кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "A brahmin brought chess from India to challenge Anushirvan's court. Bozorgmehr, the great minister, deciphered the game's rules and sent it back solved. He then invented the game of nard (backgammon) as Iran's counter-challenge to India. Both exchanges reflect Anushirvan's court as a center of intellectual competition.",
+      "explanation_fa": "یک برهمن شطرنج را از هند برای به چالش کشیدن دربار انوشیروان آورد. بزرگمهر وزیر بزرگ قوانین بازی را رمزگشایی کرد و حل‌شده آن را برگرداند. سپس بازی نرد را به عنوان چالش پاسخ ایران به هند اختراع کرد.",
+      "explanation_tg": "Барҳамине шатранҷро аз Ҳинд барои ба мубориза талабидани дарбори Анӯшервон овард. Бузургмеҳр вазири бузург қоидаҳои бозиро рамзкушоӣ кард ва ҳалшудаашро баргардонд. Сипас бозии нардро ҳамчун мубориза ҷавоби Эрон ба Ҳинд ихтироъ кард.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "anu-e2",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What title is Khosrow Anushirvan most famous for in Persian tradition?",
+      "question_fa": "خسرو انوشیروان در سنت ایرانی بیشتر به چه لقبی معروف است؟",
+      "question_tg": "Хусрав Анӯшервон дар анъанаи Эронӣ бештар ба кадом лақаб машҳур аст?",
+      "answers": [
+        "The Just (Dadgar) — the standard against which all rulers have been measured for fifteen centuries",
+        "The Great (Bozorg) — for expanding the Sasanian empire to its largest extent",
+        "The Wise (Daneshvar) — for his sponsorship of Greek and Indian philosophy",
+        "The Eternal (Javid) — for establishing laws that lasted unchanged for three hundred years"
+      ],
+      "answers_fa": [
+        "دادگر — معیاری که تمام حاکمان برای پانزده قرن با آن سنجیده شده‌اند",
+        "بزرگ — برای گسترش امپراتوری ساسانی به بزرگترین حد خود",
+        "دانشور — برای حمایتش از فلسفه یونانی و هندی",
+        "جاوید — برای وضع قوانینی که سیصد سال بدون تغییر باقی ماند"
+      ],
+      "answers_tg": [
+        "Додгар — меъёре ки ҳамаи ҳокимон барои понздаҳ аср бо он санҷида шудаанд",
+        "Бузург — барои тавсеаи империяи Сосонӣ то бузургтарин ҳадди худ",
+        "Донишвар — барои ҳимояташ аз фалсафаи Юнонӣ ва Ҳиндӣ",
+        "Ҷовид — барои вазъи қонунҳое ки сесад сол бидуни тағйир боқӣ монданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Anushirvan is called 'the Just' (Dadgar in Persian) — a title so attached to his name that even today a Persian speaker who wants to call a ruler genuinely good will reach for his name. Islamic tradition preserved the saying 'I was born in the time of the just king' attributed to the Prophet Mohammad.",
+      "explanation_fa": "انوشیروان 'دادگر' نامیده می‌شود — لقبی که آنقدر به نامش وابسته است که امروزه هم یک فارسی‌زبان که می‌خواهد یک حاکم را واقعاً خوب بنامد به نامش دست می‌رسد. سنت اسلامی حدیث 'در زمان شاه عادل به دنیا آمدم' منسوب به پیامبر اسلام را حفظ کرده است.",
+      "explanation_tg": "Анӯшервон 'Додгар' номида мешавад — лақабе ки он қадар ба номаш вобаста аст ки имрӯз ҳам форсизабоне ки мехоҳад ҳокимеро воқеан хуб номад ба номаш даст мерасад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

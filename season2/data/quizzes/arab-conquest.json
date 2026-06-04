@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "arb-e1",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What gave the Arab armies their decisive advantage over the exhausted Sasanian forces?",
+      "question_fa": "چه چیزی به سپاه عرب برتری قطعی‌شان را بر نیروهای ساسانی خسته داد؟",
+      "question_tg": "Чӣ ба артишҳои Арабӣ бартарии қатъии онҳоро бар нерӯҳои Сосонии хаста дод?",
+      "answers": [
+        "Unified belief and certainty in their moment — a coherence the factional Sasanian court could not match",
+        "Superior cavalry tactics learned from fighting the Byzantines in the western campaigns",
+        "A chain of fortresses along the Euphrates that allowed rapid resupply during campaigns",
+        "An alliance with the remaining Arsacid nobles who guided them through Sasanian territory"
+      ],
+      "answers_fa": [
+        "باور متحد و یقین به لحظه‌شان — انسجامی که دربار ساسانی فرقه‌ای نمی‌توانست با آن برابری کند",
+        "تاکتیک‌های سواره‌نظام برتر که از جنگ با بیزانس در کمپین‌های غربی آموخته بودند",
+        "زنجیره‌ای از دژها در امتداد فرات که در طول کمپین‌ها تدارکات سریع را ممکن می‌کرد",
+        "اتحاد با اشراف باقیمانده اشکانی که آنها را از طریق قلمرو ساسانی راهنمایی کردند"
+      ],
+      "answers_tg": [
+        "Бовари муттаҳид ва яқин ба лаҳзаи онҳо — ҳамоҳангие ки дарбори Сосонии фирқаӣ бо он баробарӣ карда наметавонист",
+        "Тактикаҳои бартари савора ки аз ҷангидан бо Визонт дар кампинияҳои ғарбӣ омӯхта буданд",
+        "Силсилаи қалъаҳо дар тӯли Фурот ки дар тӯли кампинияҳо таъминоти зуд имконпазир мекард",
+        "Иттиҳоде бо ашрофони боқимондаи Ашконӣ ки онҳоро тавассути қаламрови Сосонӣ раҳнамоӣ карданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Arab armies had something the Sasanians could not manufacture quickly: belief. They moved with the coherence of men who were certain their moment had arrived. The Sasanian court — eight rulers in four years, empty treasury, scattered army — had lost exactly that kind of coherent purpose.",
+      "explanation_fa": "سپاه عرب چیزی داشت که ساسانیان نمی‌توانستند به سرعت تولید کنند: باور. با انسجام مردانی حرکت می‌کردند که یقین داشتند لحظه‌شان رسیده. دربار ساسانی — هشت حاکم در چهار سال، خزانه خالی، ارتش پراکنده — دقیقاً همان نوع هدف منسجم را از دست داده بود.",
+      "explanation_tg": "Артишҳои Арабӣ чизе доштанд ки Сосониён натавонистанд зуд истеҳсол кунанд: бовар. Бо ҳамоҳангии мардоне ҳаракат мекарданд ки яқин доштанд лаҳзаи онҳо расидааст.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "arb-m1",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How does the Shahnameh approach writing about the Arab conquest — given that Ferdowsi was himself a Muslim writing in the Islamic world?",
+      "question_fa": "شاهنامه با توجه به اینکه فردوسی خودش یک مسلمان بود که در دنیای اسلامی می‌نوشت، با موضوع فتح عرب چگونه برخورد می‌کند؟",
+      "question_tg": "Шоҳнома бо назардошти он ки Фирдавсӣ худаш мусулмоне буд ки дар ҷаҳони Исломӣ менавишт, ба мавзӯи фатҳи Арабӣ чӣ гуна муносибат мекунад?",
+      "answers": [
+        "Without hatred and without apology — focusing on what was lost (fire temples, archives, priesthood) rather than blaming the conquerors",
+        "With explicit condemnation of the Arab armies as destroyers of a superior civilization",
+        "As a divine punishment for the sins of the last Sasanian kings who failed their people",
+        "By presenting the conquest as a beneficial transformation that brought justice and equality to Iran"
+      ],
+      "answers_fa": [
+        "بدون نفرت و بدون عذرخواهی — با تمرکز بر آنچه از دست رفت (آتشکده‌ها، آرشیوها، روحانیون) به جای سرزنش فاتحان",
+        "با محکومیت صریح سپاه عرب به عنوان نابودگران تمدنی برتر",
+        "به عنوان مجازات الهی برای گناهان آخرین شاهان ساسانی که مردمشان را رها کردند",
+        "با نشان دادن فتح به عنوان تحولی سودمند که عدالت و برابری را به ایران آورد"
+      ],
+      "answers_tg": [
+        "Бидуни нафрат ва бидуни узрхоҳӣ — бо тамарказ бар он чи гум шуд (оташкадаҳо, архивҳо, рӯҳониён) ба ҷои сарзаниши фотеҳон",
+        "Бо маҳкумияти صадиqa артишҳои Арабӣ ҳамчун нобудкунандагони тамаддуни бартар",
+        "Ҳамчун ҷазои илоҳӣ барои гуноҳҳои охирин подшоҳони Сосонӣ ки мардумашонро тарк карданд",
+        "Бо нишон додани фатҳ ҳамчун тағйироти судманде ки адолат ва баробариро ба Эрон овард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ferdowsi was a Muslim living in the Islamic world. He did not write the conquest with hatred. He focused on loss — the fire temples extinguished, the archives scattered, the priesthood dispersed. The Arabs are the mechanism; the extinguished fires are the subject. This restraint is one of the poem's most mature achievements.",
+      "explanation_fa": "فردوسی یک مسلمان بود که در دنیای اسلامی زندگی می‌کرد. فتح را با نفرت ننوشت. روی از دست دادن تمرکز کرد — آتشکده‌های خاموش شده، آرشیوهای پراکنده، روحانیون منتشرشده. اعراب مکانیزم هستند؛ آتش‌های خاموش موضوع هستند. این خویشتن‌داری یکی از بالغانه‌ترین دستاوردهای شعر است.",
+      "explanation_tg": "Фирдавсӣ мусулмоне буд ки дар ҷаҳони Исломӣ зиндагӣ мекард. Фатҳро бо нафрат ننавишт. Бар аз даст доданро тамарказ кард — оташкадаҳои хомӯшшуда, архивҳои пароканда, рӯҳониёни паршударо. Арабҳо механизманд; оташҳои хомӯш мавзӯанд.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "arb-e2",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What three things does the Shahnameh specifically identify as lost in the Arab conquest?",
+      "question_fa": "شاهنامه مشخصاً چه سه چیزی را به عنوان آنچه در فتح عرب از دست رفت شناسایی می‌کند؟",
+      "question_tg": "Шоҳнома мушаххасан чӣ се чизеро ҳамчун он чи дар фатҳи Арабӣ гум шуд муайян мекунад?",
+      "answers": [
+        "The fire temples extinguished, the royal archives lost or scattered, and the Zoroastrian priesthood dispersed",
+        "The Sasanian cavalry, the Persian language, and the royal bloodline of the Kayanian kings",
+        "The city of Ctesiphon, the treasury of Khosrow, and the agricultural system of lower Iraq",
+        "The trade routes to India, the canal system of Mesopotamia, and the Silk Road connections to China"
+      ],
+      "answers_fa": [
+        "آتشکده‌های خاموش شده، آرشیوهای سلطنتی گم شده یا پراکنده، و روحانیون زرتشتی پراکنده شده",
+        "سواره‌نظام ساسانی، زبان فارسی، و خط سلطنتی شاهان کیانی",
+        "شهر تیسفون، خزانه خسرو، و سیستم کشاورزی عراق پایین",
+        "مسیرهای تجاری به هند، سیستم کانالی بین‌النهرین، و ارتباطات جاده ابریشم با چین"
+      ],
+      "answers_tg": [
+        "Оташкадаҳои хомӯшшуда, архивҳои шоҳонаи гумшуда ё пароканда, ва рӯҳониёни Зардуштии пароканда",
+        "Савораи Сосонӣ, забони Форсӣ, ва хатти шоҳонаи подшоҳони Каёнӣ",
+        "Шаҳри Тайсафун, хазинаи Хусрав, ва системаи кишоварзии ироқи поён",
+        "Роҳҳои тиҷоратии ба Ҳинд, системаи каналии Байнулнаҳрайн, ва иртибототи Роҳи Абрешим бо Чин"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh identifies three specific losses: the fire temples that had burned for centuries were extinguished; the royal archives at Ctesiphon — centuries of Sasanian records — were lost, burned, or scattered as the court fled; and the Zoroastrian priesthood that had preserved Iranian royal memory for a thousand years was dispersed.",
+      "explanation_fa": "شاهنامه سه از دست دادن مشخص را شناسایی می‌کند: آتشکده‌هایی که قرن‌ها سوخته بودند خاموش شدند؛ آرشیوهای سلطنتی در تیسفون — قرن‌ها پرونده‌های ساسانی — چون دربار فرار کرد گم، سوخته یا پراکنده شدند؛ و روحانیون زرتشتی که حافظه سلطنتی ایرانی را هزار سال حفظ کرده بودند پراکنده شدند.",
+      "explanation_tg": "Шоҳнома се аз даст додани мушаххасро муайян мекунад: оташкадаҳое ки садсолаҳо сӯхта буданд хомӯш шуданд; архивҳои шоҳона дар Тайсафун — садсолаҳо парвандаҳои Сосонӣ — вақте дарбор гурехт гум, сӯхта ё пароканда шуданд; ва рӯҳониёни Зардуштӣ ки хотираи шоҳонаи Эрониро ҳазор сол ҳифз карда буданд пароканда шуданд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "arb-m2",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What is the Shahnameh's implicit argument about the Arab conquest and Persian cultural survival?",
+      "question_fa": "استدلال ضمنی شاهنامه درباره فتح عرب و بقای فرهنگی ایرانی چیست؟",
+      "question_tg": "Истдлоли зимнии шоҳнома дар бораи фатҳи Арабӣ ва бақои фарҳангии Эронӣ чист?",
+      "answers": [
+        "Conquering a state is not the same as conquering a culture — memory survives if someone is willing to carry it forward",
+        "Political defeat inevitably destroys a civilization unless it has military allies to restore it",
+        "A conquered people can only survive by fully adopting the conqueror's customs and faith",
+        "Cultural survival depends on maintaining a royal bloodline even in exile"
+      ],
+      "answers_fa": [
+        "فتح یک دولت به معنای فتح یک فرهنگ نیست — اگر کسی حاضر به حمل آن باشد حافظه باقی می‌ماند",
+        "شکست سیاسی ناگزیر یک تمدن را نابود می‌کند مگر اینکه متحدان نظامی برای احیایش داشته باشد",
+        "مردم تسخیرشده تنها با پذیرش کامل آداب و ایمان فاتح می‌توانند بقا داشته باشند",
+        "بقای فرهنگی به حفظ یک خط سلطنتی حتی در تبعید بستگی دارد"
+      ],
+      "answers_tg": [
+        "Фатҳи давлат ба маънои фатҳи фарҳанг нест — агар касе ҳозир ба ҳамл кардан бошад хотира боқӣ мемонад",
+        "Шикасти сиёсӣ ногузир тамаддунро нобуд мекунад магар ин ки муттаҳидони ҳарбӣ барои эҳёяш дошта бошад",
+        "Мардуми фатҳшуда танҳо бо пазируфтани комили одоб ва имони фотеҳ метавонанд бақо дошта бошанд",
+        "Бақои фарҳангӣ ба ҳифзи хатти шоҳона ҳатто дар табъид вобаста аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's entire existence is the argument: the Arab conquest destroyed the Sasanian state but not Persian culture, because specific people made the choice to carry the language, the stories, and the memory forward. Ferdowsi's thirty-year project is both the evidence and the proof of this argument.",
+      "explanation_fa": "کل وجود شاهنامه استدلال است: فتح عرب دولت ساسانی را نابود کرد اما فرهنگ ایرانی را نه، چون افراد خاصی انتخاب کردند زبان، داستان‌ها و حافظه را به جلو حمل کنند. پروژه سی ساله فردوسی هم دلیل و هم اثبات این استدلال است.",
+      "explanation_tg": "Тамоми вуҷуди шоҳнома истдлол аст: фатҳи Арабӣ давлати Сосониро нобуд кард аммо фарҳанги Эрониро не, зеро одамони мушаххасе интихоб карданд забон, достонҳо ва хотираро ба пеш ҳамл кунанд.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "alx-e1",
+      "chapter_slug": "alexander",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What secret about Alexander's birth was revealed when Dara lay dying?",
+      "question_fa": "چه رازی درباره تولد اسکندر وقتی دارا در حال مرگ بود آشکار شد؟",
+      "question_tg": "Ҳангоми марги Доро чӣ рози зодани Искандар ошкор шуд?",
+      "answers": [
+        "He was the half-brother of Dara — his mother was Darab's daughter sent away to Macedonia",
+        "He was the son of a Persian nobleman exiled by Dara's father",
+        "He had been adopted by Philip of Macedon but was fully Greek by blood",
+        "He was the son of Zahhak's last surviving descendant"
+      ],
+      "answers_fa": [
+        "او نیمه‌برادر دارا بود — مادرش دختر داراب بود که به مقدونیه فرستاده شده بود",
+        "او پسر یک نجیب‌زاده ایرانی بود که توسط پدر دارا تبعید شده بود",
+        "او توسط فیلیپ مقدونی به فرزندخواندگی پذیرفته شده بود اما از نظر خون کاملاً یونانی بود",
+        "او پسر آخرین بازمانده نسل ضحاک بود"
+      ],
+      "answers_tg": [
+        "Ӯ бародари нотании Доро буд — модараш духтари Дороб буд ки ба Мақдуния фиристода шуда буд",
+        "Ӯ писари ашрофзодаи Эроние буд ки аз ҷониби падари Доро табъид шуда буд",
+        "Ӯ аз ҷониби Филиппи Мақдунӣ фарзандхонда шуда буд аммо аз нигоҳи хун комилан Юнонӣ буд",
+        "Ӯ писари охирин бозмондаи насли Заҳҳок буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh carries the tradition that Alexander's mother was Darab's daughter, sent away because Darab found her breath disagreeable. Philip of Macedon married her, and Sekandar was born — making him Dara's half-brother, a fact neither knew until Dara lay dying.",
+      "explanation_fa": "شاهنامه این سنت را حمل می‌کند که مادر اسکندر دختر داراب بود که به خاطر نفس ناخوشایندش دور فرستاده شد. فیلیپ مقدونی با او ازدواج کرد و اسکندر متولد شد — که او را نیمه‌برادر دارا می‌کرد، واقعیتی که هیچ‌کدام نمی‌دانستند تا اینکه دارا در حال مرگ بود.",
+      "explanation_tg": "Шоҳнома ин анъанаро ҳамл мекунад ки модари Искандар духтари Дороб буд ки аз сабаби нафаси нохушояндаш дур фиристода шуд. Филиппи Мақдунӣ бо ӯ издивоҷ кард ва Искандар таваллуд шуд — ки ӯро бародари нотании Доро мекард, воқеияте ки ҳеҷ кадоме намедонист то марги Доро.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "alx-m1",
+      "chapter_slug": "alexander",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What happened when Alexander's cook went ahead into the Land of Darkness to prepare food?",
+      "question_fa": "وقتی آشپز اسکندر برای آماده کردن غذا به سرزمین ظلمات پیش رفت چه اتفاقی افتاد؟",
+      "question_tg": "Вақте ошпази Искандар барои омода кардани хӯрок ба Замини Торикӣ пеш рафт чӣ рӯй дод?",
+      "answers": [
+        "He accidentally drank from the spring of immortality when a dried fish came back to life in his hands",
+        "He was turned to stone by a guardian spirit guarding the water",
+        "He found the water but was forbidden from bringing it back by a divine voice",
+        "He drank the water knowingly and fled, hiding from Alexander for the rest of his life"
+      ],
+      "answers_fa": [
+        "به طور تصادفی از چشمه جاودانگی نوشید وقتی یک ماهی خشک‌شده در دستانش زنده شد",
+        "توسط روح نگهبان آب به سنگ تبدیل شد",
+        "آب را پیدا کرد اما توسط صدایی الهی از بردنش منع شد",
+        "آگاهانه آب را نوشید و فرار کرد، برای بقیه عمرش از اسکندر پنهان شد"
+      ],
+      "answers_tg": [
+        "Тасодуфан аз чашмаи ҷовидонагӣ нӯшид вақте моҳии хушкшуда дар дастонаш зинда шуд",
+        "Аз ҷониби рӯҳи посбони об ба санг табдил шуд",
+        "Обро ёфт аммо аз ҷониби садои илоҳӣ аз бурданаш манъ шуд",
+        "Огоҳона обро нӯшид ва фирор кард, дар тӯли бақияи умр аз Искандар пинҳон шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "In the Shahnameh's account, Alexander sent his cook ahead with food supplies. A dried fish fell into one of the springs and came back to life — the cook, realizing what had happened, drank from it. Alexander came close to immortality but never reached the spring himself.",
+      "explanation_fa": "در روایت شاهنامه، اسکندر آشپزش را با آذوقه جلو فرستاد. یک ماهی خشک‌شده در یکی از چشمه‌ها افتاد و زنده شد — آشپز با درک اینکه چه اتفاقی افتاده از آن نوشید. اسکندر نزدیک به جاودانگی آمد اما هرگز خودش به چشمه نرسید.",
+      "explanation_tg": "Дар ривояти шоҳнома, Искандар ошпазашро бо захираи хӯрок пеш фиристод. Моҳии хушкшуда ба яке аз чашмаҳо афтод ва зинда шуд — ошпаз бо дарки он чи рӯй дода нӯшид. Искандар наздик ба ҷовидонагӣ омад аммо ҳаргиз худаш ба чашма нарасид.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "alx-m2",
+      "chapter_slug": "alexander",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "Why is Alexander called 'Two-Horned' (Dhul-Qarnayn) in the Shahnameh?",
+      "question_fa": "چرا اسکندر در شاهنامه 'ذوالقرنین' (دو شاخ) نامیده می‌شود؟",
+      "question_tg": "Чаро Искандар дар шоҳнома 'Дузарна' номида мешавад?",
+      "answers": [
+        "The Shahnameh does not settle on one reason — it could mean he ruled East and West, a helmet, or a divine mark",
+        "Because he wore a helmet with two golden horns as his battle standard",
+        "Because he was born under a twin-horned moon that the Persian astrologers took as a sign",
+        "Because he conquered both Iran and Turan, the two horned lands of the world"
+      ],
+      "answers_fa": [
+        "شاهنامه یک دلیل مشخص نمی‌دهد — می‌تواند به معنای حکومت بر شرق و غرب، یک کلاه‌خود، یا نشانه الهی باشد",
+        "چون در نبرد کلاه‌خودی با دو شاخ طلایی به عنوان پرچمش می‌پوشید",
+        "چون زیر ماه دو شاخه‌ای متولد شد که منجمان ایرانی آن را نشانه‌ای گرفتند",
+        "چون هم ایران و هم توران، دو سرزمین شاخ‌دار جهان را فتح کرد"
+      ],
+      "answers_tg": [
+        "Шоҳнома як далили мушаххас намедиҳад — метавонад ба маънои ҳукмронӣ бар Шарқ ва Ғарб, кулоҳхуд, ё нишонаи илоҳӣ бошад",
+        "Зеро дар набард кулоҳхӯде бо ду шохи тиллоӣ ҳамчун байрақаш мепӯшид",
+        "Зеро зери моҳи дошохае таваллуд шуд ки ситорашиносони Эронӣ онро нишонае гирифтанд",
+        "Зеро ҳам Эрон ва ҳам Туронро, ду сарзамини шохдори ҷаҳон, фатҳ кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ferdowsi deliberately leaves the epithet ambiguous. The Shahnameh does not choose between the explanations — ruling East and West, a distinctive helmet, or divine marking. The ambiguity is the point. Ferdowsi was not interested in resolving it.",
+      "explanation_fa": "فردوسی عمداً لقب را مبهم می‌گذارد. شاهنامه بین توضیحات انتخاب نمی‌کند — حکومت بر شرق و غرب، کلاه‌خود متمایز، یا نشانه‌گذاری الهی. ابهام همان نکته است. فردوسی علاقه‌ای به حل آن نداشت.",
+      "explanation_tg": "Фирдавсӣ қасдан лақабро муғлақ мегузорад. Шоҳнома байни тавзеҳот интихоб намекунад — ҳукмронӣ бар Шарқ ва Ғарб, кулоҳхӯди мумтоз, ё нишонагузории илоҳӣ. Абҳомият ҳамон нуқта аст. Фирдавсӣ ба ҳалли он таваҷҷӯҳ надошт.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "alx-e2",
+      "chapter_slug": "alexander",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What did Alexander request for his own burial?",
+      "question_fa": "اسکندر چه درخواستی برای دفن خودش داشت؟",
+      "question_tg": "Искандар барои дафни худаш чӣ хоҳиш кард?",
+      "answers": [
+        "To be carried to his tomb with his hands outside the shroud, open and empty",
+        "To be buried standing upright, wearing his full battle armour",
+        "To be laid beside Dara's grave as a sign of their brotherhood",
+        "To be cremated and his ashes scattered over the lands he had conquered"
+      ],
+      "answers_fa": [
+        "با دستانش بیرون از کفن، باز و خالی به مقبره‌اش برده شود",
+        "ایستاده و با زره کامل جنگیش دفن شود",
+        "کنار مزار دارا به عنوان نشانه برادری‌شان دفن شود",
+        "سوزانده و خاکسترش بر سرزمین‌هایی که فتح کرده پاشیده شود"
+      ],
+      "answers_tg": [
+        "Бо дастонаш берун аз кафан, кушода ва холӣ ба мақбарааш бурда шавад",
+        "Истода ва бо зиреҳи комили ҷангаш дафн шавад",
+        "Дар паҳлӯи мазори Доро ҳамчун нишонаи бародарии онҳо дафн шавад",
+        "Сӯзонда ва хокистараш бар сарзаминҳое ки фатҳ карда пошида шавад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Alexander asked to be carried to his tomb with his hands outside the shroud, open and empty. He had conquered the world and was taking nothing out of it. The image of the conqueror's empty open hands became one of the Shahnameh's most lasting symbols of mortality.",
+      "explanation_fa": "اسکندر خواست با دستانش بیرون از کفن، باز و خالی به مقبره‌اش برده شود. دنیا را فتح کرده بود و هیچ‌چیز از آن نمی‌برد. تصویر دستان باز خالی فاتح یکی از ماندگارترین نمادهای مرگ در شاهنامه شد.",
+      "explanation_tg": "Искандар хост бо дастонаш берун аз кафан, кушода ва холӣ ба мақбарааш бурда шавад. Ҷаҳонро фатҳ карда буд ва ҳеҷ чиз аз он намебурд. Тасвири дастони кушодаи холии фотеҳ яке аз мондагортарин рамзҳои марг дар шоҳнома шуд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

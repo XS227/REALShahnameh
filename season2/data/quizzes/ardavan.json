@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "ard-e1",
+      "chapter_slug": "ardavan",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Who did Ardeshir take with him when he fled Ardavan's court?",
+      "question_fa": "اردشیر وقتی از دربار اردوان گریخت چه کسی را با خود برد؟",
+      "question_tg": "Ардашер ҳангоми гурез аз дарбори Ардавон бо худ кӣро бурд?",
+      "answers": [
+        "A slave woman named Gulnar who chose his future over her master's",
+        "His personal bodyguard of fifty warriors",
+        "A Zoroastrian high priest who gave him legitimacy",
+        "His childhood companion from the province of Pars"
+      ],
+      "answers_fa": [
+        "زن برده‌ای به نام گلنار که آینده او را بر سرورش ترجیح داد",
+        "محافظ شخصی‌اش از پنجاه جنگجو",
+        "یک کاهن اعظم زرتشتی که به او مشروعیت داد",
+        "همبازی دوران کودکیش از استان پارس"
+      ],
+      "answers_tg": [
+        "Зани кӯниз бо номи Гулнор ки оянда Ардашерро бар соҳибаш тарҷеҳ дод",
+        "Посбони шахсии ӯ аз панҷоҳ ҷангавар",
+        "Як коҳини аъзами Зардуштӣ ки ба ӯ машрӯиат дод",
+        "Ҳамбозии давраи кӯдакиаш аз устони Порс"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Ardeshir fled Ardavan's court rather than submit to confinement in the stables, he took with him a slave woman named Gulnar. She had chosen his future over her master's loyalty — and her decision proved correct.",
+      "explanation_fa": "وقتی اردشیر به جای تسلیم شدن به حبس در اصطبل‌ها از دربار اردوان گریخت، زن برده‌ای به نام گلنار را با خود برد. او آینده اردشیر را بر وفاداری به سرورش ترجیح داده بود — و تصمیمش درست از آب درآمد.",
+      "explanation_tg": "Вақте Ардашер ба ҷои таслим шудан ба ҳабс дар истабл аз дарбори Ардавон гурехт, зани кӯнизе бо номи Гулнорро бо худ бурд. Ӯ оянда Ардашерро бар вафодорӣ ба соҳибаш тарҷеҳ дода буд — ва қарораш дуруст баромад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "ard-m1",
+      "chapter_slug": "ardavan",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What sign indicated the divine Farr was moving from Ardavan to Ardeshir?",
+      "question_fa": "چه نشانه‌ای نشان داد که فره الهی از اردوان به اردشیر در حال انتقال است؟",
+      "question_tg": "Чӣ нишонае нишон дод ки фарри илоҳӣ аз Ардавон ба Ардашер дар ҳоли интиқол аст?",
+      "answers": [
+        "A great white ram seen bounding toward Ardeshir as he fled",
+        "A fire that burned without fuel for seven days in the province of Pars",
+        "An eagle that settled on Ardeshir's shoulder and refused to leave",
+        "A bright star appeared over the city of Ctesiphon at the moment Ardavan died"
+      ],
+      "answers_fa": [
+        "یک قوچ سفید بزرگ که در حین فرار اردشیر به سمت او می‌دوید دیده شد",
+        "آتشی که هفت روز بدون سوخت در استان پارس می‌سوخت",
+        "عقابی که بر شانه اردشیر نشست و رفتن را امتناع کرد",
+        "ستاره درخشانی بر فراز شهر تیسفون در لحظه‌ای که اردوان مُرد ظاهر شد"
+      ],
+      "answers_tg": [
+        "Қӯчи сафеди бузурге ки ҳангоми гурези Ардашер ба сӯи ӯ медавид дида шуд",
+        "Оташе ки ҳафт рӯз бидуни сӯзишворӣ дар устони Порс месӯхт",
+        "Уқобе ки бар китфи Ардашер нишаст ва рафтан имтиноъ кард",
+        "Ситораи дурахшоне бар фарози шаҳри Тайсафун дар лаҳзаи марги Ардавон зоҳир шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "As Ardeshir fled, a great white ram was seen bounding toward him — a sign in the Shahnameh's symbolic language that the Farr, the divine radiance of kingship, was departing the Arsacid line and attaching itself to Ardeshir.",
+      "explanation_fa": "در حین فرار اردشیر، یک قوچ سفید بزرگ دیده شد که به سمت او می‌دوید — نشانه‌ای در زبان نمادین شاهنامه که فره، شعاع الهی پادشاهی، از خط اشکانی جدا شده و به اردشیر وابسته می‌شود.",
+      "explanation_tg": "Дар ҳоли гурези Ардашер, қӯчи сафеди бузурге дида шуд ки ба сӯи ӯ медавид — нишонае дар забони рамзии шоҳнома ки фарр, шуъоаи илоҳии шоҳӣ, аз хатти Ашконӣ ҷудо шуда ва ба Ардашер вобаста мешавад.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "ard-e2",
+      "chapter_slug": "ardavan",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Where did Ardavan's final battle against Ardeshir take place?",
+      "question_fa": "آخرین نبرد اردوان علیه اردشیر کجا رخ داد؟",
+      "question_tg": "Охирин набарди Ардавон бар зидди Ардашер куҷо рӯй дод?",
+      "answers": [
+        "At the plain of Hormozdgan",
+        "At the gates of Ctesiphon",
+        "Near the city of Tus in Khorasan",
+        "On the banks of the Euphrates river"
+      ],
+      "answers_fa": [
+        "در دشت هرمزدگان",
+        "در دروازه‌های تیسفون",
+        "نزدیک شهر طوس در خراسان",
+        "بر ساحل رود فرات"
+      ],
+      "answers_tg": [
+        "Дар даштаки Ҳурмузагон",
+        "Дар дарвозаҳои Тайсафун",
+        "Наздики шаҳри Тӯс дар Хуросон",
+        "Дар соҳилҳои дарёи Фурот"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ardavan mustered his forces for a final campaign and met Ardeshir at the plain of Hormozdgan. Ardavan fought well but was killed in the battle, ending the Arsacid dynasty and beginning the Sasanian age on the same day.",
+      "explanation_fa": "اردوان نیروهایش را برای آخرین کمپین گرد آورد و اردشیر را در دشت هرمزدگان ملاقات کرد. اردوان خوب جنگید اما در نبرد کشته شد و سلسله اشکانی را پایان داد و دوران ساسانی را همان روز آغاز کرد.",
+      "explanation_tg": "Ардавон нерӯҳояшро барои охирин кампания гирд овард ва Ардашерро дар даштаки Ҳурмузагон вохӯрд. Ардавон хуб ҷангид аммо дар набард кушта шуд ва сулолаи Ашкониро поён дод ва давраи Сосониро ҳамон рӯз оғоз кард.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

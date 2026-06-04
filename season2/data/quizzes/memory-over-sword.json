@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "mos-e1",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Which Iranian dynasty in the 9th–10th centuries deliberately revived Persian as a literary and administrative language?",
+      "question_fa": "کدام سلسله ایرانی در قرن‌های نهم و دهم عمداً فارسی را به عنوان زبان ادبی و اداری احیا کرد؟",
+      "question_tg": "Кадом сулолаи Эронӣ дар асрҳои нӯҳум ва даҳум қасдан Форсиро ҳамчун забони адабӣ ва идорӣ эҳё кард?",
+      "answers": [
+        "The Samanids of Khorasan, who patronized Persian poetry as a deliberate political and cultural act",
+        "The Buyids of Fars, who restored Zoroastrian temples as a symbol of Sasanian continuity",
+        "The Tahirids of Khorasan, who compiled the first post-conquest Persian dictionary",
+        "The Saffarids of Sistan, who built the first new Persian-language library since the conquest"
+      ],
+      "answers_fa": [
+        "سامانیان خراسان که شعر فارسی را به عنوان یک کنش سیاسی و فرهنگی عمدی حمایت کردند",
+        "آل بویه پارس که آتشکده‌های زرتشتی را به عنوان نمادی از تداوم ساسانی احیا کردند",
+        "طاهریان خراسان که اولین فرهنگ‌لغت فارسی پس از فتح را تدوین کردند",
+        "صفاریان سیستان که اولین کتابخانه به زبان فارسی را از زمان فتح ساختند"
+      ],
+      "answers_tg": [
+        "Сомониёни Хуросон ки шеъри Форсиро ҳамчун амали сиёсӣ ва фарҳангии қасдӣ ҳимоят карданд",
+        "Буяҳиёни Порс ки оташкадаҳои Зардуштиро ҳамчун рамзи идомаи Сосонӣ эҳё карданд",
+        "Тоҳириёни Хуросон ки аввалин луғати Форсии баъд аз фатҳро тадвин карданд",
+        "Саффориёни Сиистон ки аввалин китобхонаи ба забони Форсиро аз замони фатҳ сохтанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Samanid rulers of Khorasan in the 9th and 10th centuries patronized Persian poetry deliberately as a political and cultural act — asserting Iranian identity within the Islamic world. Ferdowsi was born into this Samanid revival and the Shahnameh was its crowning achievement.",
+      "explanation_fa": "حاکمان سامانی خراسان در قرن‌های نهم و دهم عمداً شعر فارسی را به عنوان کنش سیاسی و فرهنگی حمایت کردند — تأکید بر هویت ایرانی در دنیای اسلامی. فردوسی در این احیای سامانی متولد شد و شاهنامه برجسته‌ترین دستاورد آن بود.",
+      "explanation_tg": "Ҳокимони Сомонии Хуросон дар асрҳои нӯҳум ва даҳум қасдан шеъри Форсиро ҳамчун амали сиёсӣ ва фарҳангӣ ҳимоят карданд. Фирдавсӣ дар ин эҳёи Сомонӣ таваллуд шуд ва шоҳнома дастоварди авҷи он буд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "mos-m1",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "The Shahnameh argues that memory won over the sword after the Arab conquest. What specific mechanism made this possible?",
+      "question_fa": "شاهنامه استدلال می‌کند که حافظه پس از فتح عرب بر شمشیر پیروز شد. چه مکانیزم خاصی این را ممکن کرد؟",
+      "question_tg": "Шоҳнома истдлол мекунад ки хотира пас аз фатҳи Арабӣ бар шамшер ғолиб шуд. Кадом механизми мушаххас инро имконпазир кард?",
+      "answers": [
+        "Specific people in each generation chose to carry the language and stories forward — oral poets, families, scribes — until Persian re-emerged as a literary language",
+        "The Zoroastrian priests encoded the Avesta in secret symbols that Arab authorities could not decipher",
+        "Persian merchants kept their language alive in trade documents that looked like Arabic from the outside",
+        "The mountainous terrain of Iran physically prevented Arab armies from reaching all communities"
+      ],
+      "answers_fa": [
+        "افراد خاصی در هر نسل انتخاب کردند زبان و داستان‌ها را به جلو حمل کنند — شاعران شفاهی، خانواده‌ها، کاتبان — تا اینکه فارسی دوباره به عنوان زبان ادبی ظهور کرد",
+        "روحانیون زرتشتی اوستا را در نمادهای مخفی رمزنگاری کردند که مقامات عربی نمی‌توانستند آن را رمزگشایی کنند",
+        "تجار ایرانی زبانشان را در اسناد تجاری زنده نگه داشتند که از خارج شبیه عربی به نظر می‌رسید",
+        "زمین کوهستانی ایران فیزیکی از رسیدن سپاه عرب به همه جوامع جلوگیری کرد"
+      ],
+      "answers_tg": [
+        "Одамони мушаххасе дар ҳар насл интихоб карданд забон ва достонҳоро ба пеш ҳамл кунанд — шоирони шифоҳӣ, оилаҳо, котибон — то Форсӣ дубора ҳамчун забони адабӣ зоҳир шуд",
+        "Рӯҳониёни Зардуштӣ Авесторо дар рамзҳои пинҳонӣ рамзбандӣ карданд ки мақомоти Арабӣ натавонистанд онро рамзкушоӣ кунанд",
+        "Тоҷирони Эронӣ забонашонро дар ҳуҷҷатҳои тиҷоратӣ зинда нигоҳ доштанд ки аз берун монанди Арабӣ ба назар мерасид",
+        "Замини кӯҳии Эрон физикӣ аз расидани артишҳои Арабӣ ба ҳамаи ҷамоатҳо пешгирӣ кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh insists memory does not automatically survive — it survives because specific people made specific choices to carry it forward. The oral poets who kept stories alive, the families who preserved old names and customs, the Samanid rulers who funded Persian poetry: each link in the chain was a choice, not an inevitability.",
+      "explanation_fa": "شاهنامه اصرار دارد حافظه به طور خودکار باقی نمی‌ماند — به این دلیل باقی می‌ماند که افراد خاصی انتخاب‌های خاصی برای حمل آن به جلو کردند. شاعران شفاهی که داستان‌ها را زنده نگه داشتند، خانواده‌هایی که اسامی و آداب قدیمی را حفظ کردند، حاکمان سامانی که شعر فارسی را تأمین مالی کردند: هر حلقه در زنجیر یک انتخاب بود نه یک اجتناب‌ناپذیری.",
+      "explanation_tg": "Шоҳнома исрор мекунад хотира ба таври худкор боқӣ намемонад — ба ин далел боқӣ мемонад ки одамони мушаххасе интихобҳои мушаххасе барои ҳамл кардани он ба пеш карданд.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "mos-e2",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "The Shahnameh was the culmination of a broader Persian cultural revival. What was the name of this revival period?",
+      "question_fa": "شاهنامه اوج یک احیای فرهنگی گسترده‌تر ایرانی بود. نام این دوره احیا چه بود؟",
+      "question_tg": "Шоҳнома авҷи эҳёи фарҳангии густурдатари Эронӣ буд. Номи ин давраи эҳё чӣ буд?",
+      "answers": [
+        "The Samanid renaissance — when Persian re-emerged as a literary language under Iranian rulers in Khorasan",
+        "The Abbasid golden age — when Arabic and Persian scholars worked together in Baghdad",
+        "The Buyid restoration — when Shia Islam gave Persians political power in western Iran",
+        "The Seljuk flowering — when Turkish rulers funded Persian poetry as court entertainment"
+      ],
+      "answers_fa": [
+        "رنسانس سامانی — وقتی فارسی تحت حاکمان ایرانی در خراسان دوباره به عنوان زبان ادبی ظهور کرد",
+        "عصر طلایی عباسی — وقتی دانشمندان عربی و ایرانی در بغداد با هم کار کردند",
+        "احیای آل بویه — وقتی اسلام شیعه به ایرانیان قدرت سیاسی در غرب ایران داد",
+        "شکوفایی سلجوقی — وقتی حاکمان ترک شعر فارسی را به عنوان سرگرمی دربار تأمین مالی کردند"
+      ],
+      "answers_tg": [
+        "Эҳёи Сомонӣ — вақте Форсӣ зери ҳокимони Эронӣ дар Хуросон дубора ҳамчун забони адабӣ зоҳир шуд",
+        "Асри тиллоии Аббосӣ — вақте олимони Арабӣ ва Эронӣ дар Бағдод якҷо кор карданд",
+        "Эҳёи Буяҳӣ — вақте Исломи Шиа ба Эрониён қудрати сиёсӣ дар ғарби Эрон дод",
+        "Шукуфоии Салҷуқӣ — вақте ҳокимони Турк шеъри Форсиро ҳамчун тафриҳи дарбор маблағгузорӣ карданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Samanid dynasty of Khorasan (819–999 CE) created the first Iranian-ruled state after the Arab conquest that deliberately used Persian as a language of power and culture. This Samanid renaissance gave birth to a tradition of Persian poetry that the Shahnameh both continued and culminated.",
+      "explanation_fa": "سلسله سامانی خراسان (۸۱۹-۹۹۹ م.) اولین دولت با حاکمان ایرانی پس از فتح عرب را ایجاد کرد که عمداً از فارسی به عنوان زبان قدرت و فرهنگ استفاده کرد. این رنسانس سامانی سنتی از شعر فارسی را که شاهنامه هم ادامه و هم اوج آن بود به وجود آورد.",
+      "explanation_tg": "Сулолаи Сомонии Хуросон (819–999 милодӣ) аввалин давлати ҳокимони Эрониро пас аз фатҳи Арабӣ эҷод кард ки қасдан аз Форсӣ ҳамчун забони қудрат ва фарҳанг истифода кард.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

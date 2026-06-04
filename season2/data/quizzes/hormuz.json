@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "hrm-e1",
+      "chapter_slug": "hormuz",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How did Hormuz IV's reign end?",
+      "question_fa": "حکومت هرمز چهارم چگونه پایان یافت؟",
+      "question_tg": "Ҳукмронии Ҳурмузи Чаҳорум чӣ тавр анҷом ёфт?",
+      "answers": [
+        "His brothers-in-law Bindoe and Vistahm arrested him, had him blinded, and he was later killed in prison",
+        "He was killed in battle against Bahram Chubin's rebel army",
+        "He abdicated voluntarily and retired to a monastery in the western provinces",
+        "He was poisoned at a feast by the Zoroastrian high priest"
+      ],
+      "answers_fa": [
+        "برادرشوهرانش بندوی و ویستهم او را دستگیر کردند، کورش کردند و بعداً در زندان کشته شد",
+        "در نبرد با ارتش شورشی بهرام چوبین کشته شد",
+        "داوطلبانه کنار گذاشت و به یک صومعه در استان‌های غربی رفت",
+        "در یک ضیافت توسط کاهن اعظم زرتشتی مسموم شد"
+      ],
+      "answers_tg": [
+        "Шавҳаробарадарҳояш Биндуй ва Виставҳм ӯро дастгир карданд, кӯр карданд ва баъдтар дар зиндон кушта шуд",
+        "Дар набард бо артиши шӯришгарони Баҳроми Чӯбин кушта шуд",
+        "Даваталабона канор гузошт ва ба хонақоҳе дар устонҳои ғарбӣ рафт",
+        "Дар зиёфате аз ҷониби коҳини аъзами Зардуштӣ заҳролуд шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Hormuz's brothers-in-law Bindoe and Vistahm, watching the empire fracture around them, decided the king himself was the problem. They arrested him, blinded him — the traditional Sasanian method of disqualifying a king without killing him immediately — and he was later killed in his prison.",
+      "explanation_fa": "برادرشوهران هرمز بندوی و ویستهم که می‌دیدند امپراتوری اطرافشان در حال تکه‌تکه شدن است تصمیم گرفتند خود شاه مشکل است. او را دستگیر کردند، کورش کردند — روش سنتی ساسانی برای نالایق کردن یک شاه بدون کشتن فوری او — و بعداً در زندانش کشته شد.",
+      "explanation_tg": "Шавҳаробарадарони Ҳурмуз Биндуй ва Виставҳм ки медиданд империя атрофашон дар ҳоли пора шудан аст тасмим гирифтанд худи подшоҳ мушкил аст. Ӯро дастгир карданд, кӯр карданд ва баъдтар дар зиндонаш кушта шуд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "hrm-m1",
+      "chapter_slug": "hormuz",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "The Shahnameh presents Hormuz IV as a king who destroyed his empire through one specific failure. What was it?",
+      "question_fa": "شاهنامه هرمز چهارم را به عنوان شاهی نشان می‌دهد که از طریق یک شکست مشخص امپراتوریش را نابود کرد. آن چه بود؟",
+      "question_tg": "Шоҳнома Ҳурмузи Чаҳорумро ҳамчун подшоҳе нишон медиҳад ки тавассути як шикасти мушаххас империяашро нобуд кард. Он чӣ буд?",
+      "answers": [
+        "He governed through suspicion and fear rather than earned loyalty, turning potential allies into enemies",
+        "He spent all the treasury Anushirvan had built on luxury and personal entertainments",
+        "He refused to fight in battle himself, making his generals doubt his commitment",
+        "He tried to convert Iran to a new religion, alienating both priests and nobles simultaneously"
+      ],
+      "answers_fa": [
+        "از طریق بدگمانی و ترس به جای وفاداری کسب‌شده حکومت کرد و متحدان بالقوه را به دشمنان تبدیل کرد",
+        "تمام خزانه‌ای که انوشیروان ساخته بود را برای تجمل و سرگرمی‌های شخصی خرج کرد",
+        "از جنگیدن شخصاً امتناع کرد و سردارانش را نسبت به تعهدش به تردید انداخت",
+        "تلاش کرد ایران را به یک دین جدید تبدیل کند که هم روحانیون و هم اشراف را همزمان بیگانه کرد"
+      ],
+      "answers_tg": [
+        "Тавассути бадгумонӣ ва тарс ба ҷои вафодории касбшуда ҳукумат кард ва муттаҳидони эҳтимолиро ба душманон табдил кард",
+        "Ҳамаи хазинае ки Анӯшервон сохта буд ба исроф ва тафриҳоти шахсӣ сарф кард",
+        "Аз ҷангидани шахсӣ имтиноъ кард ва сарлашкарони худро нисбат ба ӯҳдадориаш ба тардид андохт",
+        "Кӯшид Эронро ба дини ҷадид табдил кунад ки ҳам рӯҳониён ва ҳам ашрофро ҳамзамон бегона кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh presents Hormuz's failure as structural: he governed through paralytic fear rather than earned authority. He turned nobles into enemies with harsh punishments for real or imagined offenses. The distaff sent to Bahram Chubin was the symptom, not the disease. Suspicion substituted for judgment — and everyone paid for it.",
+      "explanation_fa": "شاهنامه شکست هرمز را ساختاری نشان می‌دهد: از طریق ترس فلج‌کننده به جای اقتدار کسب‌شده حکومت کرد. اشراف را با مجازات‌های سخت برای جرائم واقعی یا خیالی به دشمنان تبدیل کرد. دوک فرستاده شده به بهرام چوبین علامت بود نه بیماری. بدگمانی جای قضاوت را گرفت — و همه برایش بها پرداختند.",
+      "explanation_tg": "Шоҳнома шикасти Ҳурмузро сохторӣ нишон медиҳад: тавассути тарси фалаҷкунанда ба ҷои салоҳияти касбшуда ҳукумат кард. Ашрофро бо ҷазоҳои сахт барои ҷиноятҳои воқеӣ ё хаёлӣ ба душманон табдил кард.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "hrm-e2",
+      "chapter_slug": "hormuz",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What happened to Hormuz's son Khosrow when Bindoe and Vistahm seized power?",
+      "question_fa": "وقتی بندوی و ویستهم قدرت را به دست گرفتند چه اتفاقی برای پسر هرمز خسرو افتاد؟",
+      "question_tg": "Вақте Биндуй ва Виставҳм қудратро ба даст гирифтанд ба писари Ҳурмуз Хусрав чӣ рӯй дод?",
+      "answers": [
+        "He was warned in time and fled the capital before he could be captured",
+        "He was imprisoned alongside his father and remained captive for years",
+        "He was killed in the same coup that blinded his father",
+        "He submitted voluntarily and was kept under house arrest at the palace"
+      ],
+      "answers_fa": [
+        "به موقع هشدار داده شد و قبل از اینکه گرفتار شود از پایتخت گریخت",
+        "همراه با پدرش زندانی شد و سال‌ها اسیر ماند",
+        "در همان کودتایی که پدرش را کور کرد کشته شد",
+        "داوطلبانه تسلیم شد و تحت حبس خانگی در کاخ نگه داشته شد"
+      ],
+      "answers_tg": [
+        "Ба мӯҳлат огоҳ шуд ва пеш аз он ки асир шавад аз пойтахт гурехт",
+        "Ҳамроҳ бо падараш зиндонӣ шуд ва солҳо асир монд",
+        "Дар ҳамон кудатое ки падарашро кӯр кард кушта шуд",
+        "Даваталабона таслим шуд ва таҳти ҳабси хонагӣ дар қаср нигоҳ дошта шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Khosrow was warned in time and escaped from the capital. He would eventually reach the Byzantine Emperor Maurice, return with Roman legions, defeat Bahram Chubin, and reclaim the throne as Khosrow Parviz — beginning the last great flowering of Sasanian power.",
+      "explanation_fa": "خسرو به موقع هشدار داده شد و از پایتخت فرار کرد. در نهایت به امپراتور بیزانسی موریس رسید، با لشکریان رومی بازگشت، بهرام چوبین را شکست داد و تخت را به عنوان خسرو پرویز بازپس گرفت — آغاز آخرین شکوفایی بزرگ قدرت ساسانی.",
+      "explanation_tg": "Хусрав ба мӯҳлат огоҳ шуд ва аз пойтахт гурехт. Дар охир ба императори Визонтии Маврикий расид, бо лашкариёни Румӣ баргашт, Баҳроми Чӯбинро шикаст дод ва тахтро ҳамчун Хусрави Парвез бозпас гирифт.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

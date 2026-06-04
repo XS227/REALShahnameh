@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "mpr-e1",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Who are the Parsis and how are they connected to the Arab conquest of Iran?",
+      "question_fa": "پارسیان چه کسانی هستند و چه ارتباطی با فتح عرب ایران دارند؟",
+      "question_tg": "Порсиён кистанд ва чӣ иртиботе бо фатҳи Арабии Эрон доранд?",
+      "answers": [
+        "Zoroastrians who left Iran after the conquest, sailed to India, and still practice the ancient faith there today",
+        "Persian merchants who settled in Arab territory before the conquest and adopted Islam early",
+        "Iranian soldiers who converted to Islam and became the first Persian Muslim community",
+        "Descendants of the Sasanian royal family who fled to China and kept the old customs alive"
+      ],
+      "answers_fa": [
+        "زرتشتیانی که پس از فتح از ایران رفتند، به هند کشتی سوار شدند و هنوز هم امروزه دین باستانی را در آنجا عبادت می‌کنند",
+        "تجار ایرانی که قبل از فتح در قلمرو عرب ساکن شدند و زود اسلام آوردند",
+        "سربازان ایرانی که به اسلام گروش کردند و اولین جامعه مسلمان ایرانی شدند",
+        "اعقاب خانواده سلطنتی ساسانی که به چین گریختند و آداب قدیمی را زنده نگه داشتند"
+      ],
+      "answers_tg": [
+        "Зардуштиёне ки пас аз фатҳ аз Эрон рафтанд, ба Ҳинд киштӣ савор шуданд ва ҳанӯз ҳам имрӯз дини қадимиро дар он ҷо ибодат мекунанд",
+        "Тоҷирони Эронӣ ки пеш аз фатҳ дар қаламрови Арабӣ маскан гирифтанд ва зуд Ислом овардад",
+        "Сарбозони Эронӣ ки ба Ислом гузаштанд ва аввалин ҷамоати мусулмонони Эронӣ шуданд",
+        "Авлоди оилаи шоҳонаи Сосонӣ ки ба Чин гурехтанд ва одоби қадимиро зинда нигоҳ доштанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "After the Arab conquest, a community of Zoroastrians who would not convert took ships from the Iranian coast and landed in Gujarat, India. Their descendants — the Parsis — still practice the Zoroastrian faith there today, still speak fragments of Middle Persian in their rituals. They are a living archive of what Pars was before the conquest.",
+      "explanation_fa": "پس از فتح عرب، جامعه‌ای از زرتشتیانی که تبدیل نمی‌شدند از ساحل ایران کشتی سوار شدند و در گجرات هند پیاده شدند. اعقابشان — پارسیان — هنوز هم امروزه در آنجا دین زرتشتی را عبادت می‌کنند، هنوز هم تکه‌هایی از فارسی میانه را در آیین‌هایشان صحبت می‌کنند. آنها آرشیو زنده‌ای از آنچه پارس قبل از فتح بود هستند.",
+      "explanation_tg": "Пас аз фатҳи Арабӣ, ҷамоате аз Зардуштиёне ки табдил намешуданд аз соҳили Эрон киштӣ савор шуданд ва дар Гуҷарот Ҳинд фаромаданд. Авлодашон — Порсиён — ҳанӯз ҳам имрӯз дар он ҷо дини Зардуштиро ибодат мекунанд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "mpr-m1",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "The Shahnameh argues that the mourning of Pars produced something the Arab conquest could not destroy. What?",
+      "question_fa": "شاهنامه استدلال می‌کند که سوگ پارس چیزی تولید کرد که فتح عرب نتوانست نابود کند. چه چیزی؟",
+      "question_tg": "Шоҳнома истдлол мекунад ки сӯги Порс чизеро тавлид кард ки фатҳи Арабӣ натавонист нобуд кунад. Чӣ?",
+      "answers": [
+        "The Shahnameh itself — a monument made of language and memory, harder to conquer than stone",
+        "A chain of fortified monasteries that preserved Zoroastrian texts in the mountains",
+        "A network of secret Zoroastrian communities that operated beneath Islamic rule for centuries",
+        "A hidden Sasanian prince who became the spiritual king of all Persians in exile"
+      ],
+      "answers_fa": [
+        "خود شاهنامه — یادبودی ساخته شده از زبان و حافظه، سخت‌تر برای فتح از سنگ",
+        "زنجیره‌ای از صومعه‌های مستحکم که متون زرتشتی را در کوه‌ها حفظ کردند",
+        "شبکه‌ای از جوامع مخفی زرتشتی که برای قرن‌ها زیر حاکمیت اسلامی فعالیت کردند",
+        "یک شاهزاده مخفی ساسانی که شاه روحانی تمام ایرانیان در تبعید شد"
+      ],
+      "answers_tg": [
+        "Худи шоҳнома — ёдбуде сохташуда аз забон ва хотира, душвортар барои фатҳ аз санг",
+        "Силсилаи хонақоҳҳои мустаҳкаме ки матнҳои Зардуштиро дар кӯҳҳо ҳифз карданд",
+        "Шабакае аз ҷамоатҳои пинҳонии Зардуштӣ ки барои садсолаҳо зери ҳукмронии Исломӣ фаъолият карданд",
+        "Шаҳзодаи пинҳонии Сосонӣ ки подшоҳи рӯҳонии тамоми Эрониёни дар табъид шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh is the Shahnameh's own answer to this question. Grief that cannot speak directly finds its way into story. The poem Ferdowsi spent thirty years writing is the monument that the conquest could not tear down — because it was made of language and memory, and those are harder to conquer than stone.",
+      "explanation_fa": "شاهنامه پاسخ خود شاهنامه به این سوال است. غمی که نمی‌تواند مستقیم صحبت کند راهش را به داستان پیدا می‌کند. شعری که فردوسی سی سال نوشتن آن صرف کرد یادبودی است که فتح نتوانست آن را خراب کند — چون از زبان و حافظه ساخته شده، و اینها سخت‌تر از سنگ برای فتح هستند.",
+      "explanation_tg": "Шоҳнома ҷавоби худи шоҳнома ба ин савол аст. Ғаме ки наметавонад мустақим сухан гӯяд роҳашро ба достон меёбад. Шеъре ки Фирдавсӣ сӣ сол навиштани онро сарф кард ёдбудест ки фатҳ натавонист онро хароб кунад.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "mpr-e2",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What Iranian cultural elements survived the Arab conquest by persisting in daily life rather than in official religion?",
+      "question_fa": "چه عناصر فرهنگی ایرانی از فتح عرب با ماندن در زندگی روزمره به جای دین رسمی جان سالم به در بردند؟",
+      "question_tg": "Кадом унсурҳои фарҳангии Эронӣ аз фатҳи Арабӣ бо мондан дар зиндагии ҳаррӯза ба ҷои дини расмӣ ҷон солим ба дар бурданд?",
+      "answers": [
+        "Persian names, the Zoroastrian agricultural calendar, and old ritual practices that outlasted official conversion",
+        "The Zoroastrian priesthood, who simply changed their titles to Islamic religious terms",
+        "The Sasanian court hierarchy, which the Arab governors adopted unchanged",
+        "The Persian monetary system, which replaced the Arabic dinar across the entire former empire"
+      ],
+      "answers_fa": [
+        "اسامی ایرانی، تقویم کشاورزی زرتشتی، و اعمال آیینی قدیمی که از تبدیل دین رسمی بیشتر عمر کردند",
+        "روحانیون زرتشتی که صرفاً عناوینشان را به اصطلاحات مذهبی اسلامی تغییر دادند",
+        "سلسله مراتب دربار ساسانی که فرمانداران عربی آن را بدون تغییر پذیرفتند",
+        "سیستم پولی ایرانی که دینار عربی را در سراسر امپراتوری سابق جایگزین کرد"
+      ],
+      "answers_tg": [
+        "Номҳои Эронӣ, тақвими кишоварзии Зардуштӣ ва амалҳои оинии қадимӣ ки аз табдили динии расмӣ бештар умр карданд",
+        "Рӯҳониёни Зардуштӣ ки танҳо унвонҳояшонро ба истилоҳоти мазҳабии Исломӣ тағйир доданд",
+        "Меросхӯрии дарбори Сосонӣ ки фармондорони Арабӣ онро бидуни тағйир пазируфтанд",
+        "Системаи пулии Эронӣ ки динори Арабиро дар саросари империяи собиқ ҷойгузин кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "After the conquest, Persian names like Mehr, Azar, Farrokh, and Rostam persisted in families who no longer remembered why they were beautiful names. The Zoroastrian agricultural calendar persisted in farming practice long after the faith faded from cities. Things that survived the conversion carry the grief of the conversion most clearly.",
+      "explanation_fa": "پس از فتح، اسامی ایرانی مانند مهر، آذر، فرخ و رستم در خانواده‌هایی که دیگر یادشان نبود چرا اسامی زیبایی هستند باقی ماندند. تقویم کشاورزی زرتشتی در عمل کشاورزی مدت‌ها بعد از اینکه دین از شهرها محو شد باقی ماند. چیزهایی که از تبدیل دین جان سالم به در بردند غم تبدیل دین را واضح‌تر از هر چیز دیگری حمل می‌کنند.",
+      "explanation_tg": "Пас аз фатҳ, номҳои Эронии мисли Меҳр, Озар, Фаррух ва Рустам дар оилаҳое ки дигар ёдашон набуд чаро номҳои зебое ҳастанд боқӣ монданд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

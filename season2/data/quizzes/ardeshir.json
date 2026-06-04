@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "ards-e1",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What made Haftvad so powerful that Ardeshir failed to defeat him militarily — twice?",
+      "question_fa": "چه چیزی هفتواد را آنقدر قدرتمند کرد که اردشیر دو بار نتوانست او را به صورت نظامی شکست دهد؟",
+      "question_tg": "Чӣ Ҳафтводро он қадар қудратманд кард ки Ардашер ду бор натавонист ӯро ба таври ҳарбӣ шикаст диҳад?",
+      "answers": [
+        "A magical worm his daughter had found in an apple that brought luck and fortune",
+        "A sacred fire that could not be extinguished and protected his fortress",
+        "An alliance with the King of China who sent him a thousand war elephants",
+        "A Zoroastrian curse placed on his land that made attackers forget their purpose"
+      ],
+      "answers_fa": [
+        "کرمی جادویی که دخترش در یک سیب پیدا کرده بود و خوش‌شانسی و ثروت می‌آورد",
+        "آتش مقدسی که خاموش نمی‌شد و قلعه‌اش را حفاظت می‌کرد",
+        "اتحادی با پادشاه چین که هزار فیل جنگی برایش فرستاد",
+        "نفرین زرتشتی روی سرزمینش که مهاجمان را از هدفشان فراموش می‌کرد"
+      ],
+      "answers_tg": [
+        "Кирми ҷодуие ки духтараш дар себ ёфта буд ва хушбахтӣ ва сарват меовард",
+        "Оташи муқаддасе ки хомӯш намешуд ва қалъаашро ҳимоя мекард",
+        "Иттиҳодие бо подшоҳи Чин ки ҳазор фили ҷангӣ барояш фиристод",
+        "Нафрини Зардуштӣ бар сарзаминаш ки ҳамлакунандагонро аз мақсадашон фаромӯш мекард"
+      ],
+      "correct_answer": 0,
+      "explanation": "A spinning girl had found a small worm in an apple and kept it. Wherever the worm went, her thread grew fine and abundant. Her father Haftvad grew rich, then powerful, then a king. The worm had grown enormous and was the source of everything Haftvad had.",
+      "explanation_fa": "دختری نخ‌ریسنده یک کرم کوچک در سیبی پیدا کرده و نگه داشته بود. هر کجا کرم می‌رفت نخش ظریف و فراوان می‌شد. پدرش هفتواد ثروتمند، سپس قدرتمند، سپس یک شاه شد. کرم بزرگ شده بود و منبع همه چیزی بود که هفتواد داشت.",
+      "explanation_tg": "Духтаре ришта мерезид кирми хурде дар себе ёфта ва нигоҳ дошта буд. Ҳар ҷо кирм мерафт ришта фаровон ва нафис мешуд. Падараш Ҳафтвод сарватманд, сипас қудратманд, сипас подшоҳ шуд. Кирм калон шуда буд ва манбаи ҳамаи чизе буд ки Ҳафтвод дошт.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "ards-m1",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How did Ardeshir finally kill Haftvad's worm after two military failures?",
+      "question_fa": "اردشیر چگونه بالاخره کرم هفتواد را پس از دو شکست نظامی کشت؟",
+      "question_tg": "Ардашер чӣ тавр дар охир кирми Ҳафтводро пас аз ду шикасти ҳарбӣ кушт?",
+      "answers": [
+        "Sent a man disguised as a merchant with molten lead hidden in the cargo, poured down the worm's throat",
+        "Poisoned the worm's food supply using crushed plants mixed into its milk",
+        "Starved the fortress into surrender then stabbed the worm with a sacred Zoroastrian lance",
+        "Diverted the river feeding the fortress until the worm's chamber dried out"
+      ],
+      "answers_fa": [
+        "مردی را با لباس مبدل به عنوان تاجر با سرب مذاب پنهان در محموله فرستاد که در گلوی کرم ریخته شد",
+        "آذوقه کرم را با گیاهان له‌شده مخلوط در شیرش مسموم کرد",
+        "قلعه را با محاصره گرسنگی به تسلیم واداشت سپس با نیزه مقدس زرتشتی کرم را از بین برد",
+        "رودخانه تغذیه‌کننده قلعه را منحرف کرد تا اتاق کرم خشک شود"
+      ],
+      "answers_tg": [
+        "Мардеро бо либоси тоҷирона бо сурби гудохта пинҳон дар бор фиристод ки ба гулӯи кирм резонда шуд",
+        "Захираи хӯроки кирмро бо набототи коӯфташуда омехта дар шираш заҳролуд кард",
+        "Қалъаро бо муҳосираи гуруснагӣ ба таслим водошт сипас бо найзаи муқаддаси Зардуштӣ кирмро нобуд кард",
+        "Дарёи ғизодиҳандаи қалъаро мунҳариф кард то утоқи кирм хушк шавад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ardeshir sent a trusted man disguised as a merchant carrying sesame and honey, with molten lead hidden in the cargo. The merchant gained access under pretense of feeding the worm and poured the metal down its throat. The worm died, and Haftvad's fortress fell the next morning.",
+      "explanation_fa": "اردشیر مرد مورد اعتمادی را با لباس مبدل تاجر که کنجد و عسل حمل می‌کرد با سرب مذاب پنهان در محموله فرستاد. تاجر با بهانه تغذیه کرم وارد شد و فلز را در گلوی کرم ریخت. کرم مُرد و قلعه هفتواد صبح روز بعد سقوط کرد.",
+      "explanation_tg": "Ардашер марди мавриди эътимоде бо либоси тоҷирона ки кунҷут ва асал ҳамл мекард бо сурби гудохта пинҳон дар бор фиристод. Тоҷир бо баҳонаи ғизо додан ба кирм ворид шуд ва металлро ба гулӯи кирм рехт. Кирм мурд ва қалъаи Ҳафтвод субҳи рӯзи дигар суқут кард.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "ards-e2",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What did Ardeshir do after consolidating his empire to restore Iranian culture?",
+      "question_fa": "اردشیر بعد از تحکیم امپراتوریش برای احیای فرهنگ ایرانی چه کرد؟",
+      "question_tg": "Ардашер пас аз мустаҳкам кардани империяаш барои эҳёи фарҳанги Эронӣ чӣ кард?",
+      "answers": [
+        "Restored the Zoroastrian fire temples and established Ctesiphon as his capital",
+        "Rebuilt the palace of Persepolis exactly as it had stood under Darius",
+        "Translated the Avesta into Greek so the conquered peoples could read it",
+        "Returned the royal treasuries stolen by Alexander to Pars province"
+      ],
+      "answers_fa": [
+        "آتشکده‌های زرتشتی را احیا کرد و تیسفون را به عنوان پایتختش تأسیس کرد",
+        "کاخ تخت جمشید را دقیقاً همان‌طور که در زمان داریوش بوده بازسازی کرد",
+        "اوستا را به یونانی ترجمه کرد تا مردم تسخیر شده بتوانند آن را بخوانند",
+        "خزانه‌های سلطنتی که اسکندر دزدیده بود را به استان پارس برگرداند"
+      ],
+      "answers_tg": [
+        "Оташкадаҳои Зардуштиро эҳё кард ва Тайсафунро ҳамчун пойтахташ таъсис дод",
+        "Қасри Тахти Ҷамшедро дақиқан ҳамон тавр ки дар замони Дориюш истода буд барқарор кард",
+        "Авесторо ба Юнонӣ тарҷума кард то мардуми фатҳшуда онро хонда тавонанд",
+        "Хазинаҳои шоҳоне ки Искандар дуздида буд ба устони Порс баргардонд"
+      ],
+      "correct_answer": 0,
+      "explanation": "After defeating his enemies, Ardeshir restored the Zoroastrian fire temples that had been neglected since Alexander's conquest, and established Ctesiphon on the Tigris as the great Sasanian capital. He was rebuilding not just an empire but a civilization.",
+      "explanation_fa": "پس از شکست دشمنانش، اردشیر آتشکده‌های زرتشتی را که از زمان فتح اسکندر غفلت شده بودند احیا کرد و تیسفون بر رود دجله را به عنوان پایتخت بزرگ ساسانی تأسیس کرد. او نه تنها یک امپراتوری بلکه یک تمدن را بازسازی می‌کرد.",
+      "explanation_tg": "Пас аз шикаст додани душманонаш, Ардашер оташкадаҳои Зардуштиро ки аз замони фатҳи Искандар беэтиноӣ шуда буданд эҳё кард ва Тайсафунро бар дарёи Даҷла ҳамчун пойтахти бузурги Сосонӣ таъсис дод.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

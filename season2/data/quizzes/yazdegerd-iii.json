@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "yd3-e1",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How old was Yazdegerd III when he was crowned the last Sasanian king?",
+      "question_fa": "یزدگرد سوم وقتی به عنوان آخرین شاه ساسانی تاجگذاری کرد چند ساله بود؟",
+      "question_tg": "Яздегарди Сеюм вақте ҳамчун охирин подшоҳи Сосонӣ тоҷгузорӣ кард чанд сола буд?",
+      "answers": [
+        "Fourteen",
+        "Twenty-five",
+        "Thirty",
+        "Eight"
+      ],
+      "answers_fa": [
+        "چهارده",
+        "بیست و پنج",
+        "سی",
+        "هشت"
+      ],
+      "answers_tg": [
+        "Чордаҳ",
+        "Бисту панҷ",
+        "Си",
+        "Ҳашт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Yazdegerd III was fourteen years old when the last surviving nobles crowned him in 632 CE — the last male of the Sasanian line anyone could find after four years of rapid succession. He inherited an empty treasury, a scattered army, and an empire already half-gone.",
+      "explanation_fa": "یزدگرد سوم ۱۴ ساله بود که آخرین اشراف بازمانده در سال ۶۳۲ میلادی او را تاجگذاری کردند — آخرین مذکر خط ساسانی که بعد از چهار سال جانشینی سریع کسی می‌توانست پیدا کند. خزانه خالی، ارتش پراکنده و امپراتوری نیمه رفته را به ارث برد.",
+      "explanation_tg": "Яздегарди Сеюм 14 сола буд вақте охирин ашрофони бозмонда ӯро дар соли 632 милодӣ тоҷгузорӣ карданд — охирин нари хатти Сосонӣ ки пас аз чаҳор соли ҷонишинии зуд касе ёфта метавонист.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "yd3-m1",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "Which two battles sealed the fate of Sasanian Iran against the Arab armies?",
+      "question_fa": "کدام دو نبرد سرنوشت ایران ساسانی را در برابر سپاه عرب مهر کرد؟",
+      "question_tg": "Кадом ду набард тақдири Эрони Сосониро дар баробари артишҳои Арабӣ муҳр кард?",
+      "answers": [
+        "Qadisiyyah (636 CE) which broke the Sasanian army, and Nahavand (642 CE) called 'the Conquest of Conquests'",
+        "Hormozdgan (636 CE) which took Ctesiphon, and Yarmouk (638 CE) which ended the eastern campaigns",
+        "Nihawand (638 CE) which killed Yazdegerd, and Marv (645 CE) which scattered the last loyalists",
+        "Edessa (634 CE) which blocked the retreat west, and Merv (650 CE) where Yazdegerd was killed"
+      ],
+      "answers_fa": [
+        "قادسیه (۶۳۶ م.) که ارتش ساسانی را شکست داد و نهاوند (۶۴۲ م.) که 'فتح الفتوح' نامیده شد",
+        "هرمزدگان (۶۳۶ م.) که تیسفون را گرفت و یرموک (۶۳۸ م.) که کمپین‌های شرقی را پایان داد",
+        "نهاوند (۶۳۸ م.) که یزدگرد را کشت و مرو (۶۴۵ م.) که آخرین وفاداران را پراکنده کرد",
+        "ادسا (۶۳۴ م.) که عقب‌نشینی غرب را مسدود کرد و مرو (۶۵۰ م.) جایی که یزدگرد کشته شد"
+      ],
+      "answers_tg": [
+        "Қодисия (636 м.) ки артиши Сосониро шикаст дод ва Наҳованд (642 м.) ки 'Фатҳ-ул-Футуҳ' номида шуд",
+        "Ҳурмузагон (636 м.) ки Тайсафунро гирифт ва Ярмук (638 м.) ки кампинияҳои шарқиро поён дод",
+        "Наҳованд (638 м.) ки Яздегардро кушт ва Марв (645 м.) ки охирин вафодоронро пароканда кард",
+        "Эдесса (634 м.) ки ақибнишинии ғарбро масдуд кард ва Марв (650 м.) ки Яздегард кушта шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Battle of Qadisiyyah in 636 CE broke the core Sasanian army. The Battle of Nahavand in 642 CE — which Arab sources called 'Fatah al-Futuh' (Conquest of Conquests) — ended the last organized resistance. After Nahavand, Yazdegerd had no army left, only the road east.",
+      "explanation_fa": "نبرد قادسیه در سال ۶۳۶ میلادی هسته ارتش ساسانی را شکست. نبرد نهاوند در سال ۶۴۲ میلادی — که منابع عربی آن را 'فتح الفتوح' نامیدند — آخرین مقاومت سازمان‌یافته را پایان داد. پس از نهاوند، یزدگرد دیگر ارتشی نداشت، فقط راه به سمت شرق.",
+      "explanation_tg": "Набарди Қодисия дар соли 636 милодӣ ядрои артиши Сосониро шикаст дод. Набарди Наҳованд дар соли 642 милодӣ — ки манбаъҳои Арабӣ онро 'Фатҳ-ул-Футуҳ' номиданд — охирин муқовимати созмонёфтаро поён дод.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "yd3-m2",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How did Yazdegerd III die — and why does the Shahnameh present this as the fitting end of an empire?",
+      "question_fa": "یزدگرد سوم چگونه مُرد — و چرا شاهنامه این را به عنوان پایان شایسته یک امپراتوری نشان می‌دهد؟",
+      "question_tg": "Яздегарди Сеюм чӣ тавр мурд — ва чаро шоҳнома инро ҳамчун поёни шоистаи як империя нишон медиҳад?",
+      "answers": [
+        "He was killed by a miller in a hut near Merv for his jewels — the smallness of the death matches the smallness of what remained",
+        "He was captured by Arab soldiers and executed publicly in Ctesiphon",
+        "He died of illness and exhaustion in a mountain fortress in Khorasan",
+        "He was betrayed by his Turkish hosts who handed him to the Arab general for a ransom"
+      ],
+      "answers_fa": [
+        "توسط یک آسیابان در یک کلبه نزدیک مرو برای جواهراتش کشته شد — کوچکی مرگ با کوچکی آنچه مانده بود مطابقت دارد",
+        "توسط سربازان عربی اسیر شد و در تیسفون به طور علنی اعدام شد",
+        "از بیماری و خستگی در یک قلعه کوهستانی در خراسان مُرد",
+        "توسط میزبانان ترکش خیانت دید که او را برای فدیه به سردار عرب تسلیم کردند"
+      ],
+      "answers_tg": [
+        "Аз ҷониби осиёбоне дар кулбае наздики Марв барои зевараташ кушта шуд — хурдии марг бо хурдии он чи мондааст мутобиқат дорад",
+        "Аз ҷониби сарбозони Арабӣ асир шуд ва дар Тайсафун ба таври ошкоро эъдом шуд",
+        "Аз беморӣ ва хастагӣ дар қалъаи кӯҳии дар Хуросон мурд",
+        "Аз ҷониби мизбонони туркаш хиёнат шуд ки ӯро барои фидя ба сарлашкари Арабӣ таслим карданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Near Merv, a miller killed Yazdegerd for his jewels — not knowing or not caring who he was. The Shahnameh marks this as the end the empire had come to: not a great last stand but a king alone in the dark, killed for what he was carrying, by someone who saw only the jewels and not the man who wore them.",
+      "explanation_fa": "نزدیک مرو، آسیابانی یزدگرد را برای جواهراتش کشت — نه می‌دانست و نه اهمیت می‌داد که او کیست. شاهنامه این را به عنوان پایانی که امپراتوری به آن رسیده بود نشان می‌دهد: نه یک آخرین ایستادگی بزرگ بلکه شاهی تنها در تاریکی، کشته شده برای آنچه حمل می‌کرد، توسط کسی که فقط جواهرات را می‌دید نه مردی که آنها را می‌پوشید.",
+      "explanation_tg": "Наздики Марв, осиёбоне Яздегардро барои зевараташ кушт — на медонист ва на аҳамият медод ки ӯ кист. Шоҳнома инро ҳамчун поёне ки империя ба он расида буд нишон медиҳад.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "yd3-e2",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What did Yazdegerd III do for nineteen years after the Arab armies invaded?",
+      "question_fa": "یزدگرد سوم بعد از تهاجم سپاه عرب نوزده سال چه کرد؟",
+      "question_tg": "Яздегарди Сеюм пас аз ҳамлаи артишҳои Арабӣ нӯздаҳ сол чӣ кард?",
+      "answers": [
+        "He retreated east — always further east — appealing for help that never came in the form of armies",
+        "He fought a guerrilla campaign from mountain fortresses, winning small victories",
+        "He sought refuge with the Byzantine emperor who provided a small garrison",
+        "He surrendered to the Arab general at Qadisiyyah and was given a province to govern"
+      ],
+      "answers_fa": [
+        "به سمت شرق عقب‌نشینی کرد — همیشه بیشتر به سمت شرق — برای کمکی التماس کرد که هرگز به صورت ارتش نیامد",
+        "از قلعه‌های کوهستانی یک کمپین چریکی راه انداخت و پیروزی‌های کوچکی کسب کرد",
+        "نزد امپراتور بیزانسی پناه برد که یک پادگان کوچک فراهم کرد",
+        "در قادسیه به سردار عرب تسلیم شد و یک استان برای حکومت داده شد"
+      ],
+      "answers_tg": [
+        "Ба самти шарқ ақибнишинӣ кард — ҳамеша бештар ба самти шарқ — барои кӯмаке илтимос кард ки ҳаргиз ба шакли артиш наомад",
+        "Аз қалъаҳои кӯҳӣ кампинияи партизонӣ сар дод ва пирӯзиҳои хурде ба даст овард",
+        "Назди императори Визонт паноҳ бурд ки гарнизони хурде фароҳам овард",
+        "Дар Қодисия ба сарлашкари Арабӣ таслим шуд ва устоне барои ҳукмронӣ дода шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Yazdegerd spent nineteen years retreating east — to Media, Khorasan, Merv — always seeking help that came in promises and delegations but never in armies. Each city weighed the cost of sheltering a king the tide had passed. He was still king; he simply had no kingdom left.",
+      "explanation_fa": "یزدگرد نوزده سال صرف عقب‌نشینی به سمت شرق کرد — به ماد، خراسان، مرو — همیشه کمکی می‌جست که در قالب وعده‌ها و هیئت‌ها می‌آمد اما هرگز به صورت ارتش نیامد. هر شهری هزینه پناه دادن به شاهی که موج از او گذشته را حساب کرد. هنوز شاه بود؛ فقط دیگر هیچ پادشاهی نداشت.",
+      "explanation_tg": "Яздегард нӯздаҳ сол сарф кард ақибнишинӣ ба самти шарқ — ба Мод, Хуросон, Марв — ҳамеша кӯмак металабид ки ба шакли ваъдаҳо ва ҳайъатҳо меомад аммо ҳаргиз ба шакли артиш наомад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

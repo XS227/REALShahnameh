@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "yds-e1",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Why did the Zoroastrian clergy give Yazdegerd I the title 'the Sinner' (al-Athim)?",
+      "question_fa": "چرا روحانیون زرتشتی به یزدگرد اول لقب 'گناهکار' (الأثیم) دادند؟",
+      "question_tg": "Чаро рӯҳониёни Зардуштӣ ба Яздегарди Аввал лақаби 'Гунаҳкор' (ал-Асим) доданд?",
+      "answers": [
+        "He gave Christians permission to build churches and refused to let the priests dominate the court",
+        "He converted to Christianity himself late in his reign",
+        "He burned the sacred fires in several provinces as a political punishment",
+        "He married a Roman Christian woman and adopted her faith publicly"
+      ],
+      "answers_fa": [
+        "به مسیحیان اجازه داد کلیسا بسازند و از اجازه دادن به روحانیون برای تسلط بر دربار امتناع کرد",
+        "در اواخر حکومتش خودش به مسیحیت تبدیل شد",
+        "به عنوان مجازات سیاسی آتش‌های مقدس را در چندین استان سوزاند",
+        "با یک زن مسیحی رومی ازدواج کرد و آشکارا دینش را پذیرفت"
+      ],
+      "answers_tg": [
+        "Ба масеҳиён иҷозат дод калисо бисозанд ва аз иҷозат додан ба рӯҳониён барои тасаллут бар дарбор имтиноъ кард",
+        "Дар авохири ҳукмронияш худаш ба масеҳият табдил шуд",
+        "Ба сифати ҷазои сиёсӣ оташҳои муқаддасро дар чанд устон сӯзонд",
+        "Бо зани масеҳии Румӣ издивоҷ кард ва ошкоро динашро пазируфт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Yazdegerd I gave Christians permission to build churches and allowed Jewish communities to govern under their own laws. By the standards of his time, he was unusually pluralist — and the Zoroastrian religious establishment hated him for refusing to let them dominate court affairs.",
+      "explanation_fa": "یزدگرد اول به مسیحیان اجازه داد کلیسا بسازند و به جوامع یهودی اجازه داد تحت قوانین خودشان حکومت کنند. براساس معیارهای زمانش، او به طور غیرمعمولی پلورالیست بود — و روحانیون زرتشتی از امتناعش از اجازه دادن به آنها برای سلطه بر امور دربار از او متنفر بودند.",
+      "explanation_tg": "Яздегарди Аввал ба масеҳиён иҷозат дод калисо бисозанд ва ба ҷамоатҳои яҳудӣ иҷозат дод тибқи қонунҳои худашон идора шаванд. Тибқи меъёрҳои замонаш, ӯ ба таври ғайриоддӣ плюралист буд — ва рӯҳониёни Зардуштӣ аз имтиноъи ӯ аз иҷозат додан ба онҳо барои тасаллут бар корҳои дарбор аз ӯ нафрат доштанд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "yds-m1",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How did Yazdegerd I die, according to the Shahnameh's account?",
+      "question_fa": "یزدگرد اول طبق روایت شاهنامه چگونه مُرد؟",
+      "question_tg": "Яздегарди Аввал тибқи ривояти шоҳнома чӣ тавр мурд?",
+      "answers": [
+        "A horse of unearthly beauty appeared from nowhere near Tus, kicked him once in the chest, and vanished",
+        "His nobles poisoned his wine at a feast celebrating twenty years of his reign",
+        "He was struck by lightning while inspecting a fire temple he had ordered restored",
+        "He was killed by an assassin hired by the Zoroastrian high priest"
+      ],
+      "answers_fa": [
+        "اسبی با زیبایی ماورای طبیعی از هیچ‌جایی نزدیک طوس ظاهر شد، یک بار به قفسه سینه‌اش لگد زد و ناپدید شد",
+        "اشرافش در جشن بیست سالگی حکومتش شرابش را مسموم کردند",
+        "در حین بازرسی از آتشکده‌ای که دستور احیایش را داده بود با صاعقه کشته شد",
+        "توسط قاتلی که کاهن اعظم زرتشتی استخدام کرده بود کشته شد"
+      ],
+      "answers_tg": [
+        "Аспе бо зебоии фавқулода аз ҳеҷ ҷое наздики Тӯс зоҳир шуд, як бор ба синаи ӯ лагад зад ва ғайб шуд",
+        "Ашрофаш дар ҷашни бисту солагии ҳукмронияш шаробашро заҳролуд карданд",
+        "Ҳангоми тафтиши оташкадае ки фармон барқарорияшро дода буд бо барқ кушта шуд",
+        "Аз ҷониби қотиле ки коҳини аъзами Зардуштӣ ба хизмат гирифта буд кушта шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Near the city of Tus, at a spring, a horse of unearthly beauty appeared from nowhere. Yazdegerd approached it and it kicked him once in the chest and vanished. He died where he fell. The clergy declared it divine punishment. The Shahnameh leaves the cause deliberately ambiguous.",
+      "explanation_fa": "نزدیک شهر طوس، در یک چشمه، اسبی با زیبایی ماورای طبیعی از هیچ‌جایی ظاهر شد. یزدگرد به سمتش رفت و اسب یک بار به قفسه سینه‌اش لگد زد و ناپدید شد. همانجا که افتاد مُرد. روحانیون آن را مجازات الهی اعلام کردند. شاهنامه علت را عمداً مبهم می‌گذارد.",
+      "explanation_tg": "Наздики шаҳри Тӯс, дар чашмае, аспе бо зебоии фавқулода аз ҳеҷ ҷое зоҳир шуд. Яздегард ба сӯяш рафт ва асп як бор ба синаи ӯ лагад зад ва ғайб шуд. Ҳамон ҷое ки афтод мурд.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "yds-e2",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Who was Yazdegerd I's son, raised abroad and famous for lion-hunting?",
+      "question_fa": "پسر یزدگرد اول که در خارج بزرگ شده بود و به خاطر شیرشکاری مشهور بود کی بود؟",
+      "question_tg": "Писари Яздегарди Аввал ки дар хориҷ бузург шуда буд ва ба хотири шершикорӣ машҳур буд кӣ буд?",
+      "answers": [
+        "Bahram Gur, raised at the Arab court of Nu'man in the southern lands",
+        "Shapur, raised by Byzantine nobles at the court of Constantinople",
+        "Hormuz, raised in exile by Zoroastrian priests in the east",
+        "Nushzad, raised in Armenia by his Christian mother's family"
+      ],
+      "answers_fa": [
+        "بهرام گور که در دربار عرب نعمان در سرزمین‌های جنوبی بزرگ شده بود",
+        "شاپور که توسط اشراف بیزانسی در دربار قسطنطنیه بزرگ شده بود",
+        "هرمز که توسط روحانیون زرتشتی در تبعید در شرق بزرگ شده بود",
+        "نوشزاد که توسط خانواده مادر مسیحی‌اش در ارمنستان بزرگ شده بود"
+      ],
+      "answers_tg": [
+        "Баҳроми Гӯр ки дар дарбори Арабии Нӯъмон дар сарзаминҳои ҷанубӣ бузург шуда буд",
+        "Шопур ки аз ҷониби ашрофзодагони Визонтӣ дар дарбори Константинопол бузург шуда буд",
+        "Ҳурмуз ки аз ҷониби рӯҳониёни Зардуштӣ дар табъид дар шарқ бузург шуда буд",
+        "Нушзод ки аз ҷониби оилаи модари масеҳиаш дар Арманистон бузург шуда буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahram Gur was Yazdegerd I's son, sent as a child to the Arab court of Nu'man in the southern lands where he grew up mastering horses and desert skills. He would return to claim the throne by killing two lions placed to guard the crown.",
+      "explanation_fa": "بهرام گور پسر یزدگرد اول بود که در کودکی به دربار عرب نعمان در سرزمین‌های جنوبی فرستاده شد که در آن با مهارت بر اسب‌ها و مهارت‌های بیابانی بزرگ شد. او بازمی‌گشت تا با کشتن دو شیری که برای نگهبانی از تاج قرار داده شده بودند ادعای تخت کند.",
+      "explanation_tg": "Баҳроми Гӯр писари Яздегарди Аввал буд ки дар кӯдакӣ ба дарбори Арабии Нӯъмон дар сарзаминҳои ҷанубӣ фиристода шуд ки дар он ҷо бо маҳорат бар аспҳо ва маҳоратҳои биёбонӣ бузург шуд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

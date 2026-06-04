@@ -1,0 +1,109 @@
+{
+  "quizzes": [
+    {
+      "id": "nsh-e1",
+      "chapter_slug": "nushzad",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Why did Nushzad rebel against his father Anushirvan?",
+      "question_fa": "چرا نوشزاد بر پدرش انوشیروان شورش کرد؟",
+      "question_tg": "Чаро Нушзод бар падараш Анӯшервон шӯриш кард?",
+      "answers": [
+        "He heard rumors that Anushirvan had died during a western campaign and seized the opportunity to claim power in Khuzestan",
+        "He had been passed over for the succession in favour of a younger brother",
+        "Anushirvan had ordered Nushzad imprisoned for converting to Christianity",
+        "He was manipulated by Byzantine agents into believing Anushirvan was planning to execute him"
+      ],
+      "answers_fa": [
+        "شنید شایعاتی که انوشیروان در طول یک کمپین غربی مُرده و از فرصت برای ادعای قدرت در خوزستان استفاده کرد",
+        "در جانشینی به نفع برادر کوچک‌تری کنار گذاشته شده بود",
+        "انوشیروان دستور زندانی کردن نوشزاد را به خاطر گروش به مسیحیت داده بود",
+        "توسط عوامل بیزانسی دستکاری شد که باور کند انوشیروان در حال برنامه‌ریزی برای اعدامش است"
+      ],
+      "answers_tg": [
+        "Шунид шоеъаҳое ки Анӯшервон дар тӯли кампинияи ғарбӣ мурдааст ва аз фурсат барои даъвои қудрат дар Хузистон истифода кард",
+        "Дар ҷонишинӣ ба нафъи бародари хурдтаре канор гузошта шуда буд",
+        "Анӯшервон фармони зиндонӣ кардани Нушзодро ба хотири гузаштан ба масеҳият дода буд",
+        "Аз ҷониби агентони Визонтӣ дастаккорӣ шуд ки бовар кунад Анӯшервон дар ҳоли баpнома дар эъдоми ӯ аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Anushirvan fell gravely ill during a western campaign, word reached the provinces that he was dying. Nushzad, believing the news, raised his banner in Khuzestan and declared himself king. But Anushirvan recovered, and the rebellion was crushed.",
+      "explanation_fa": "وقتی انوشیروان در طول یک کمپین غربی به شدت بیمار شد، خبر به استان‌ها رسید که در حال مرگ است. نوشزاد با باور به این خبر پرچمش را در خوزستان برافراشت و خودش را شاه اعلام کرد. اما انوشیروان بهبود یافت و شورش سرکوب شد.",
+      "explanation_tg": "Вақте Анӯшервон дар тӯли кампинияи ғарбӣ ба шиддат бемор шуд, хабар ба уcтонҳо расид ки дар ҳоли марг аст. Нушзод бо бовар ба ин хабар байрақашро дар Хузистон афрошт ва худашро подшоҳ эълон кард. Аммо Анӯшервон беҳтар шуд ва шӯриш сарکӯб шуд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "nsh-m1",
+      "chapter_slug": "nushzad",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What made Nushzad's rebellion religiously significant in the Shahnameh?",
+      "question_fa": "چه چیزی شورش نوشزاد را از نظر مذهبی در شاهنامه مهم می‌کرد؟",
+      "question_tg": "Чӣ чизе шӯриши Нушзодро аз нигоҳи динӣ дар шоҳнома муҳим мекард?",
+      "answers": [
+        "He was a Sasanian prince who had converted to Christianity and gathered Christian soldiers to his cause",
+        "He claimed to have received a direct vision from Zoroastrian God ordering him to overthrow his father",
+        "He allied with the Byzantine church which declared him a martyr even before his death",
+        "He renounced all religion entirely and fought in the name of secular justice"
+      ],
+      "answers_fa": [
+        "او شاهزاده ساسانی‌ای بود که به مسیحیت گروش کرده بود و سربازان مسیحی را به دور خود جمع کرده بود",
+        "ادعا کرد از خدای زرتشتی رؤیایی مستقیم دریافت کرده که به او دستور داده پدرش را سرنگون کند",
+        "با کلیسای بیزانس متحد شد که قبل از مرگش او را شهید اعلام کرد",
+        "کلاً از تمام ادیان دست کشید و به نام عدالت سکولار جنگید"
+      ],
+      "answers_tg": [
+        "Ӯ шаҳзодаи Сосонӣ буд ки ба масеҳият гузашта буд ва сарбозони масеҳиро ба дури худ ҷамъ карда буд",
+        "Иддаъо кард аз Худои Зардуштӣ рӯяти мустақиме гирифтааст ки ба ӯ фармон дода падарашро сарнагун кунад",
+        "Бо Калисои Визонт иттиҳод кард ки пеш аз маргаш ӯро шаҳид эълон кард",
+        "Комилан аз ҳамаи адён даст кашид ва ба номи адолати дунявӣ ҷангид"
+      ],
+      "correct_answer": 0,
+      "explanation": "Nushzad was born of a Christian mother and had chosen her faith. When he raised his rebellion, he gathered Christian soldiers and disaffected nobles around him. This made his revolt an explicit religious challenge to the Zoroastrian Sasanian state — not just a political uprising.",
+      "explanation_fa": "نوشزاد از مادری مسیحی متولد شده بود و دین او را انتخاب کرده بود. وقتی شورشش را برپا کرد، سربازان مسیحی و اشراف ناراضی را دور خود جمع کرد. این شورشش را به یک چالش مذهبی صریح علیه دولت ساسانی زرتشتی تبدیل کرد — نه فقط یک قیام سیاسی.",
+      "explanation_tg": "Нушзод аз модари масеҳӣ таваллуд шуда буд ва дини ӯро интихоб карда буд. Вақте шӯришашро барпо кард, сарбозони масеҳӣ ва ашрофи норозиро дури худ ҷамъ кард.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "nsh-e2",
+      "chapter_slug": "nushzad",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What did Anushirvan send Nushzad as he lay dying from his battle wounds?",
+      "question_fa": "انوشیروان وقتی نوشزاد از زخم‌های جنگی در حال مرگ بود چه چیزی برایش فرستاد؟",
+      "question_tg": "Анӯшервон вақте Нушзод аз захмҳои ҷангӣ дар ҳоли марг буд чӣ барояш фиристод?",
+      "answers": [
+        "A letter expressing grief and disappointment — that Nushzad had everything and threw it away for a faith that gave him nothing in the end",
+        "A pardon, granting him full forgiveness if he recanted his Christian faith",
+        "A physician to heal his wounds so he could be tried and judged properly",
+        "A military escort to bring him back to Ctesiphon in chains"
+      ],
+      "answers_fa": [
+        "نامه‌ای که غم و ناامیدی را بیان می‌کرد — که نوشزاد همه چیز داشت و آن را برای دینی که در نهایت هیچ چیز به او نداد از دست داد",
+        "عفو که اگر از دین مسیحی‌اش توبه می‌کرد بخشش کامل اعطا می‌شد",
+        "یک پزشک برای درمان زخم‌هایش تا بتوان به درستی محاکمه و قضاوتش کرد",
+        "یک محافظ نظامی برای بردنش به زنجیر به تیسفون"
+      ],
+      "answers_tg": [
+        "Номае ки ғам ва ноумедиро баён мекард — ки Нушзод ҳамаи чиз дошт ва онро барои дине ки дар охир ҳеҷ чиз ба ӯ надод аз даст дод",
+        "Бахшиш ки агар аз дини масеҳияш тавба мекард бахшиши комил иноят мешуд",
+        "Духтуре барои табобати захмҳояш то бо дурустӣ муҳокима ва доварӣ шавад",
+        "Ҳифозати ҳарбие барои бурдани ӯ дар занҷир ба Тайсафун"
+      ],
+      "correct_answer": 0,
+      "explanation": "Anushirvan sent a letter rather than soldiers — expressing that Nushzad had been given everything, had inherited the greatest empire in the world, and had chosen to become its enemy for the sake of a faith that could not save him. Nushzad died without answering it. The Shahnameh closes the episode with that silence.",
+      "explanation_fa": "انوشیروان به جای سربازان نامه فرستاد — بیان کرد که به نوشزاد همه چیز داده شده بود، بزرگترین امپراتوری جهان را به ارث برده بود و انتخاب کرده بود دشمنش شود برای دینی که نمی‌توانست او را نجات دهد. نوشزاد بدون پاسخ دادن مُرد. شاهنامه اپیزود را با آن سکوت می‌بندد.",
+      "explanation_tg": "Анӯшервон ба ҷои сарбозон нома фиристод — баён кард ки ба Нушзод ҳамаи чиз дода шуда буд, бузургтарин империяи ҷаҳонро ба мерос гирифта буд ва интихоб карда буд душманаш шавад барои дине ки наметавонист ӯро наҷот диҳад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

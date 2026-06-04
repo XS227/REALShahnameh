@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "kpr-e1",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What was the greatest military achievement of Khosrow Parviz's reign?",
+      "question_fa": "بزرگترین دستاورد نظامی دوران حکومت خسرو پرویز چه بود؟",
+      "question_tg": "Бузургтарин дастоварди ҳарбии давраи ҳукмронии Хусрави Парвез чӣ буд?",
+      "answers": [
+        "Capturing Jerusalem in 614 CE and taking the True Cross — the holiest relic of Christianity — to Ctesiphon",
+        "Defeating the Byzantine army at Constantinople and besieging the city for three years",
+        "Conquering all of Arabia and converting the Arab tribes to Zoroastrianism",
+        "Extending Sasanian rule to the banks of the Nile and the shores of the Caspian simultaneously"
+      ],
+      "answers_fa": [
+        "فتح اورشلیم در سال ۶۱۴ میلادی و بردن صلیب واقعی — مقدس‌ترین آثار مسیحیت — به تیسفون",
+        "شکست دادن ارتش بیزانس در قسطنطنیه و محاصره شهر به مدت سه سال",
+        "فتح تمام عربستان و تبدیل قبایل عرب به زرتشتی",
+        "گسترش سلطه ساسانی به کرانه‌های نیل و سواحل خزر به طور همزمان"
+      ],
+      "answers_tg": [
+        "Фатҳи Урусалим дар соли 614 милодӣ ва бурдани Салиби Воқеӣ — муқаддастарин осори масеҳият — ба Тайсафун",
+        "Шикаст додани артиши Визонт дар Константинопол ва муҳосираи шаҳр барои се сол",
+        "Фатҳи тамоми Арабистон ва табдили қабилаҳои Арабӣ ба Зардуштӣ",
+        "Тавсеаи ҳукмронии Сосонӣ ба соҳилҳои Нил ва соҳилҳои Хазар ҳамзамон"
+      ],
+      "correct_answer": 0,
+      "explanation": "In 614 CE, Khosrow's general Shahrbaraz captured Jerusalem. The True Cross — Christianity's most sacred relic, believed to be the cross on which Jesus was crucified — was taken to Ctesiphon. The Sasanian empire was at its greatest extent, stretching from the Nile to the Oxus.",
+      "explanation_fa": "در سال ۶۱۴ میلادی، سردار خسرو شهربراز اورشلیم را فتح کرد. صلیب واقعی — مقدس‌ترین آثار مسیحیت که اعتقاد بر این است صلیبی است که عیسی بر آن مصلوب شد — به تیسفون برده شد. امپراتوری ساسانی در بزرگترین حد خود بود که از نیل تا آمودریا امتداد داشت.",
+      "explanation_tg": "Дар соли 614 милодӣ, сарлашкари Хусрав Шаҳрбароз Урусалимро фатҳ кард. Салиби Воқеӣ — муқаддастарин осори масеҳият — ба Тайсафун бурда шуд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "kpr-m1",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What caused the dramatic reversal of Khosrow Parviz's military successes?",
+      "question_fa": "چه چیزی باعث واژگونی دراماتیک موفقیت‌های نظامی خسرو پرویز شد؟",
+      "question_tg": "Чӣ чизе боиси тағйири дарамотикии муваффақиятҳои ҳарбии Хусрави Парвез шуд?",
+      "answers": [
+        "Byzantine Emperor Heraclius remade his army and launched a brilliant counter-offensive — and Khosrow replaced losing generals with men who lost faster",
+        "The army mutinied after years of campaigning without adequate pay or supplies",
+        "A plague wiped out a third of the Sasanian army during the Egyptian campaign",
+        "Arab tribes united under a new king and cut off the Sasanian supply lines from the south"
+      ],
+      "answers_fa": [
+        "امپراتور بیزانسی هراکلیوس ارتشش را بازسازی کرد و یک ضدحمله درخشان راه انداخت — و خسرو سرداران بازنده را با مردانی جایگزین کرد که سریع‌تر می‌باختند",
+        "ارتش پس از سال‌ها لشکرکشی بدون دستمزد یا آذوقه کافی شورش کرد",
+        "طاعون یک سوم ارتش ساسانی را در طول کمپین مصر از بین برد",
+        "قبایل عرب زیر یک شاه جدید متحد شدند و خطوط تدارکاتی ساسانی از جنوب را قطع کردند"
+      ],
+      "answers_tg": [
+        "Императори Визонтии Ҳераклиус артушашро барқарор кард ва зарбаи ҷавоби дурахшоне сар дод — ва Хусрав сарлашкарони бозандаро бо мардоне иваз кард ки сариктар мебохтанд",
+        "Артиш пас аз солҳои лашкаркашӣ бидуни маош ё захираи кофӣ шӯриш кард",
+        "Тоун сеяки артиши Сосониро дар тӯли кампинияи Миср нест кард",
+        "Қабилаҳои Арабӣ зери подшоҳи ҷадиде муттаҳид шуданд ва хатҳои таъминотии Сосониро аз ҷануб қатъ карданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Heraclius rebuilt the Byzantine army and launched a series of campaigns directly into Sasanian heartlands. Khosrow, who had only known how to manage success, responded by stripping commanders of their posts and replacing them with men who had no experience — accelerating the collapse rather than stopping it.",
+      "explanation_fa": "هراکلیوس ارتش بیزانس را بازسازی کرد و سلسله‌ای از کمپین‌ها مستقیماً به قلب سرزمین‌های ساسانی راه انداخت. خسرو که فقط بلد بود با موفقیت کنار بیاید با جدا کردن فرماندهان از پست‌هایشان و جایگزینی آنها با مردانی بدون تجربه پاسخ داد — فروپاشی را تسریع کرد نه توقف.",
+      "explanation_tg": "Ҳераклиус артиши Визонтро барқарор кард ва силсилаи кампинияҳоро мустақиман ба дили сарзаминҳои Сосонӣ сар дод. Хусрав ки танҳо бо муваффақият кор карданро медонист бо ҷудо кардани фармондеҳон аз вазифаҳояшон ва иваз кардани онҳо бо мардони бетаҷриба ҷавоб дод.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "kpr-m2",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How did Khosrow Parviz's reign end?",
+      "question_fa": "حکومت خسرو پرویز چگونه پایان یافت؟",
+      "question_tg": "Ҳукмронии Хусрави Парвез чӣ тавр анҷом ёфт?",
+      "answers": [
+        "His son Shiruyeh imprisoned and then killed him — and the True Cross was returned to Byzantium",
+        "He was captured by Heraclius and held as a prisoner of war in Constantinople",
+        "He abdicated in favour of his son and retired, dying peacefully years later",
+        "He was killed in battle during Heraclius's final campaign into the Sasanian heartland"
+      ],
+      "answers_fa": [
+        "پسرش شیرویه او را زندانی کرد و سپس کشت — و صلیب واقعی به بیزانس بازگردانده شد",
+        "توسط هراکلیوس دستگیر شد و به عنوان اسیر جنگی در قسطنطنیه نگه داشته شد",
+        "به نفع پسرش کنار گذاشت و بازنشسته شد و سال‌ها بعد به آرامی مُرد",
+        "در نبرد در طول آخرین کمپین هراکلیوس به قلب سرزمین ساسانی کشته شد"
+      ],
+      "answers_tg": [
+        "Писараш Шируяҳ ӯро зиндонӣ кард ва сипас кушт — ва Салиби Воқеӣ ба Визонт баргардонда шуд",
+        "Аз ҷониби Ҳераклиус дастгир шуд ва ҳамчун асири ҷангӣ дар Константинопол нигоҳ дошта шуд",
+        "Ба нафъи писарш канор гузошт ва нафақа гирифт ва солҳо баъд ба оромӣ мурд",
+        "Дар набард дар тӯли охирин кампинияи Ҳераклиус ба дили сарзамини Сосонӣ кушта шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Khosrow Parviz was overthrown and killed by his own son Shiruyeh (Kavadh II) in 628 CE. Shiruyeh then died of plague within months. The True Cross, taken from Jerusalem in 614, was returned to Heraclius. The treasury Khosrow had built over thirty years emptied within two.",
+      "explanation_fa": "خسرو پرویز توسط پسرش شیرویه (قباد دوم) در سال ۶۲۸ میلادی سرنگون و کشته شد. شیرویه سپس در عرض چند ماه از طاعون مُرد. صلیب واقعی که در سال ۶۱۴ از اورشلیم گرفته شده بود به هراکلیوس بازگردانده شد. خزانه‌ای که خسرو در طول سی سال ساخته بود در عرض دو سال خالی شد.",
+      "explanation_tg": "Хусрави Парвез аз ҷониби писараш Шируяҳ (Қубоди Дуюм) дар соли 628 милодӣ сарнагун ва кушта шуд. Сипас Шируяҳ зарфи чанд моҳ аз тоун мурд.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "kpr-e2",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How did Khosrow Parviz first reclaim his throne after his father Hormuz was deposed?",
+      "question_fa": "خسرو پرویز اولین بار چگونه تختش را پس از بی‌تختی پدرش هرمز بازپس گرفت؟",
+      "question_tg": "Хусрави Парвез бори аввал чӣ тавр тахташро пас аз ба тахт нашиниши падараш Ҳурмуз бозпас гирифт?",
+      "answers": [
+        "He fled to the Byzantine Emperor Maurice and returned with Roman legions to defeat Bahram Chubin",
+        "He raised an army from loyal eastern provinces and fought his way back to Ctesiphon alone",
+        "He negotiated with Bahram Chubin to share power before eventually betraying him",
+        "He was smuggled back into the capital by Bindoe who then switched sides"
+      ],
+      "answers_fa": [
+        "نزد امپراتور بیزانسی موریس گریخت و با لشکریان رومی برای شکست دادن بهرام چوبین بازگشت",
+        "از استان‌های وفادار شرقی ارتشی گرد آورد و به تنهایی راهش را به تیسفون کوبید",
+        "با بهرام چوبین مذاکره کرد تا قدرت را تقسیم کنند قبل از اینکه در نهایت به او خیانت کند",
+        "به طور مخفیانه توسط بندوی که سپس طرف را عوض کرد به پایتخت بازگردانده شد"
+      ],
+      "answers_tg": [
+        "Назди императори Визонтии Маврикий гурехт ва бо лашкариёни Румӣ барои шикаст додани Баҳроми Чӯбин баргашт",
+        "Аз устонҳои вафодори шарқӣ артише ҷамъ кард ва танҳо роҳашро ба Тайсафун кӯфт",
+        "Бо Баҳроми Чӯбин музокира кард то қудратро тақсим кунанд пеш аз он ки дар охир ба ӯ хиёнат кунад",
+        "Пинҳонона аз ҷониби Биндуй ки сипас тараф иваз кард ба пойтахт баргардонда шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "After his father was blinded and Bahram Chubin seized the throne, Khosrow fled to the Byzantine Empire. Emperor Maurice provided Roman legions, and Khosrow returned to defeat Bahram Chubin in a decisive battle, reclaiming the Sasanian throne as Khosrow Parviz — 'the Victorious.'",
+      "explanation_fa": "پس از کور شدن پدرش و تصرف تخت توسط بهرام چوبین، خسرو به امپراتوری بیزانس گریخت. امپراتور موریس لشکریان رومی فراهم کرد و خسرو برگشت تا در یک نبرد قاطع بهرام چوبین را شکست دهد و تخت ساسانی را به عنوان خسرو پرویز — 'پیروز' — بازپس بگیرد.",
+      "explanation_tg": "Пас аз кӯр шудани падараш ва тасарруфи тахт аз ҷониби Баҳроми Чӯбин, Хусрав ба империяи Визонт гурехт. Императори Маврикий лашкариёни Румӣ фароҳам овард ва Хусрав баргашт то Баҳроми Чӯбинро дар набарди қатъие шикаст диҳад.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    }
+  ]
+}

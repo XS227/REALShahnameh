@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "brc-e1",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What insult did King Hormuz IV send Bahram Chubin that triggered the great rebellion?",
+      "question_fa": "شاه هرمز چهارم چه توهینی به بهرام چوبین فرستاد که شورش بزرگ را برانگیخت؟",
+      "question_tg": "Подшоҳи Ҳурмузи Чаҳорум чӣ таҳқире ба Баҳроми Чӯбин фиристод ки шӯриши бузургро барангехт?",
+      "answers": [
+        "A distaff and a set of women's clothes, implying Bahram had behaved dishonourably",
+        "A broken sword, indicating his military command was revoked",
+        "A dead fish wrapped in a burial cloth, threatening his life",
+        "A bag of copper coins instead of gold, publicly underpaying his troops"
+      ],
+      "answers_fa": [
+        "یک دوک و دست لباس زنانه که نشان می‌داد بهرام بی‌شرفانه رفتار کرده",
+        "یک شمشیر شکسته که نشان می‌داد فرماندهی نظامی‌اش لغو شده",
+        "یک ماهی مُرده پیچیده در یک پارچه کفن، تهدید جانش",
+        "کیسه‌ای از سکه‌های مسی به جای طلا، علناً کمتر از حد لازم به سربازانش پرداخت"
+      ],
+      "answers_tg": [
+        "Дӯк ва дасти либоси занона ки нишон медод Баҳром беобрӯёна рафтор кардааст",
+        "Шамшери шикаста ки нишон медод фармондеҳии ҳарбиаш бекор шудааст",
+        "Моҳии мурда дар дар матои кафан печонидашуда, таҳдиди ҷонаш",
+        "Тӯрбаи тангаҳои мисӣ ба ҷои тилло, ошкоро камтар аз ҳад лозим ба сарбозонаш пардохт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Hormuz sent Bahram a distaff and women's clothes — the most devastating insult possible to a warrior culture, implying Bahram had conducted himself dishonourably. Bahram held the distaff up before his army and asked what they thought of a king who sent such things. The rebellion began that day.",
+      "explanation_fa": "هرمز دوک و لباس زنانه به بهرام فرستاد — توهین‌آمیزترین چیز ممکن برای یک فرهنگ جنگجو، که نشان می‌داد بهرام بی‌شرفانه رفتار کرده. بهرام دوک را در برابر ارتشش بالا برد و پرسید آنها درباره پادشاهی که چنین چیزهایی می‌فرستد چه فکری می‌کنند. شورش همان روز شروع شد.",
+      "explanation_tg": "Ҳурмуз дӯк ва либоси занона ба Баҳром фиристод — таҳқиркунандатарин чизи имконпазир барои фарҳанги ҷангӣ ки нишон медод Баҳром беобрӯёна рафтор кардааст. Баҳром дӯкро дар назди артушаш боло бурд ва пурсид онҳо дар бораи подшоҳе ки чунин чизҳо мефиристад чӣ фикр доранд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "brc-m1",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What made Bahram Chubin's claim to the throne historically significant beyond simple rebellion?",
+      "question_fa": "چه چیزی ادعای بهرام چوبین نسبت به تخت را فراتر از شورش ساده از نظر تاریخی مهم می‌کرد؟",
+      "question_tg": "Чӣ чизе даъвои Баҳроми Чӯбинро нисбат ба тахт аз шӯриши оддӣ аз нигоҳи таърихӣ муҳим мекард?",
+      "answers": [
+        "He was from the Mihran clan with real Arsacid/Parthian lineage — the first non-Sasanian claimant since Ardeshir founded the dynasty",
+        "He had the support of the Byzantine emperor who publicly recognized his kingship",
+        "He possessed a sacred Zoroastrian relic that the priests declared transferred the Farr to him",
+        "He was the only general who had never lost a battle, giving him unchallenged military legitimacy"
+      ],
+      "answers_fa": [
+        "او از قبیله مهران با نسب واقعی اشکانی/پارتی بود — اولین ادعاکننده غیر ساسانی از زمانی که اردشیر سلسله را تأسیس کرد",
+        "حمایت امپراتور بیزانسی را داشت که آشکارا پادشاهی‌اش را به رسمیت شناخت",
+        "یک آثار مقدس زرتشتی در اختیار داشت که روحانیون اعلام کردند فره را به او منتقل می‌کند",
+        "تنها سردار بود که هرگز در نبرد شکست نخورده بود که مشروعیت نظامی بی‌چالشی به او می‌داد"
+      ],
+      "answers_tg": [
+        "Ӯ аз қабилаи Меҳрон бо насаби воқеии Ашконӣ/Порт буд — аввалин даъвогари ғайри Сосонӣ аз замоне ки Ардашер сулоларо таъсис дод",
+        "Ҳимояти императори Визонтиро дошт ки ошкоро подшоҳияшро эътироф кард",
+        "Асаре аз осори муқаддаси Зардуштиро дар ихтиёр дошт ки рӯҳониён эълон карданд фаррро ба ӯ интиқол медиҳад",
+        "Ягона сарлашкар буд ки ҳаргиз дар набард шикаст нахӯрда буд ки машрӯиати ҳарбии бечолишеро ба ӯ медод"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahram Chubin came from the Mihran clan, one of the great Arsacid/Parthian noble houses. His claim to the throne was not just a general's grievance — it was a serious dynastic challenge backed by real lineage from the pre-Sasanian royal tradition. He was the first non-Sasanian to claim Iran's throne since Ardeshir.",
+      "explanation_fa": "بهرام چوبین از قبیله مهران، یکی از خانه‌های اشرافی بزرگ اشکانی/پارتی بود. ادعایش نسبت به تخت فقط شکایت یک سردار نبود — یک چالش سلسله‌ای جدی بود که با نسب واقعی از سنت شاهی پیش از ساسانی پشتیبانی می‌شد.",
+      "explanation_tg": "Баҳроми Чӯбин аз қабилаи Меҳрон, яке аз хонаҳои бузурги Ашконӣ/Порт буд. Даъвояш нисбат ба тахт танҳо шикоятти сарлашкар набуд — як мубориза ҷиддии сулолавӣ буд ки бо насаби воқеии анъанаи шоҳии пеш аз Сосонӣ пуштибонӣ мешуд.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "brc-e2",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How was Bahram Chubin finally defeated after Khosrow Parviz fled to Byzantium?",
+      "question_fa": "بهرام چوبین چگونه نهایتاً شکست خورد بعد از اینکه خسرو پرویز به بیزانس گریخت؟",
+      "question_tg": "Баҳроми Чӯбин чӣ тавр дар охир шикаст хӯрд пас аз он ки Хусрави Парвез ба Визонт гурехт?",
+      "answers": [
+        "Khosrow returned with Roman legions and defeated Bahram's army in a decisive battle",
+        "Bahram's own commanders betrayed him and handed him to Khosrow in exchange for pardons",
+        "The Zoroastrian priesthood declared a curse on anyone who fought for Bahram, causing mass desertion",
+        "Bahram was killed during a siege of Ctesiphon when a stray arrow struck him"
+      ],
+      "answers_fa": [
+        "خسرو با لشکریان رومی بازگشت و در یک نبرد قاطع ارتش بهرام را شکست داد",
+        "فرماندهان خود بهرام به او خیانت کردند و در ازای بخشش او را به خسرو تسلیم کردند",
+        "روحانیون زرتشتی نفرین‌ای بر هر کسی که برای بهرام می‌جنگید اعلام کردند که باعث فرار انبوه شد",
+        "در حین محاصره تیسفون با تیری گمشده بهرام کشته شد"
+      ],
+      "answers_tg": [
+        "Хусрав бо лашкариёни Румӣ баргашт ва дар набарди қатъие артиши Баҳромро шикаст дод",
+        "Фармондеҳони худи Баҳром ба ӯ хиёнат карданд ва дар иваз бахшиш ӯро ба Хусрав таслим карданд",
+        "Рӯҳониёни Зардуштӣ нафрине бар ҳар касе ки барои Баҳром меҷангид эълон карданд ки сабаби фирори оммавӣ шуд",
+        "Ҳангоми муҳосираи Тайсафун бо тире гумшуда Баҳром кушта шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Khosrow Parviz fled to the Byzantine Emperor Maurice and returned with Roman legions at his back. The decisive battle broke Bahram's army. Bahram escaped east into the steppes, found refuge among the Turks, and was eventually assassinated there by an agent from Khosrow's court.",
+      "explanation_fa": "خسرو پرویز نزد امپراتور بیزانسی موریس گریخت و با لشکریان رومی پشتش بازگشت. نبرد قاطع ارتش بهرام را شکست. بهرام به سمت شرق به دشت‌ها گریخت، در بین ترکان پناه پیدا کرد و در نهایت توسط فرستاده‌ای از دربار خسرو در آنجا ترور شد.",
+      "explanation_tg": "Хусрави Парвез назди императори Визонтии Маврикий гурехт ва бо лашкариёни Румӣ пушташ баргашт. Набарди қатъие артиши Баҳромро шикаст дод. Баҳром ба самти шарқ ба дашт гурехт, дар байни туркон паноҳ пайдо кард ва дар охир аз ҷониби фиристодае аз дарбори Хусрав дар он ҷо суиқасд шуд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "brc-m2",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "The Shahnameh treats Bahram Chubin with unusual sympathy for a rebel. What primarily earns him this treatment?",
+      "question_fa": "شاهنامه با بهرام چوبین همدردی غیرمعمولی برای یک شورشی نشان می‌دهد. چه چیزی عمدتاً این رفتار را برایش می‌آورد؟",
+      "question_tg": "Шоҳнома бо Баҳроми Чӯбин ҳамдардии ғайриоддие барои шӯришгар нишон медиҳад. Чӣ асосан ин муносибатро барояш меовард?",
+      "answers": [
+        "He was a magnificent warrior driven to rebellion by a king's deliberate cruelty, and the empire that survived him was the one that soon fell to the Arabs",
+        "He eventually repented and offered to submit to Khosrow before he was killed",
+        "The priests confirmed he had genuine Farr and would have been a just ruler if he had succeeded",
+        "He protected the Zoroastrian temples throughout his rebellion and never harmed priests"
+      ],
+      "answers_fa": [
+        "او یک جنگجوی باشکوه بود که توسط ظلم عمدی یک شاه به شورش کشانده شد و امپراتوری‌ای که از دستش جان سالم به در برد به زودی به اعراب سقوط کرد",
+        "در نهایت پشیمان شد و قبل از کشته شدن پیشنهاد تسلیم به خسرو را داد",
+        "روحانیون تأیید کردند که او فره واقعی داشت و اگر موفق می‌شد حاکم عادلی می‌بود",
+        "در طول شورشش از آتشکده‌های زرتشتی محافظت کرد و هرگز به روحانیون آسیب نزد"
+      ],
+      "answers_tg": [
+        "Ӯ ҷанговари боҳашамате буд ки аз ҷониби зулми қасдии подшоҳе ба шӯриш кашонида шуда буд ва империяе ки аз дасташ ҷон солим ба дар бурд ба зудӣ ба Арабҳо суқут кард",
+        "Дар охир пушаймон шуд ва пеш аз кушта шудан пешниҳоди таслим ба Хусравро дод",
+        "Рӯҳониён тасдиқ карданд ки ӯ фарри воқеӣ дошт ва агар муваффақ мешуд ҳокими одил мебуд",
+        "Дар тӯли шӯришаш аз оташкадаҳои Зардуштӣ ҳимоят кард ва ҳаргиз ба рӯҳониён осеб назад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ferdowsi mourns Bahram Chubin because he was magnificent and because the empire that destroyed him was the one that would fall to the Arabs within a generation. His story establishes that Iran's last great military figure before the conquest was brought down not by weakness but by a king's calculated insult.",
+      "explanation_fa": "فردوسی برای بهرام چوبین ماتم می‌گیرد چون او باشکوه بود و چون امپراتوری‌ای که او را نابود کرد همانی بود که ظرف یک نسل به اعراب سقوط کرد. داستانش ثابت می‌کند که آخرین چهره نظامی بزرگ ایران قبل از فتح نه به خاطر ضعف بلکه به خاطر توهین حساب‌شده یک شاه سرنگون شد.",
+      "explanation_tg": "Фирдавсӣ барои Баҳроми Чӯбин мотам мегирад зеро ӯ боҳашам буд ва зеро империяе ки ӯро нобуд кард ҳамане буд ки зарфи як насл ба Арабҳо суқут кард.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    }
+  ]
+}

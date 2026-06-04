@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "brg-e1",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How did Bahram Gur reclaim his crown when the Persian nobles refused him the throne?",
+      "question_fa": "بهرام گور چگونه تاجش را پس گرفت وقتی اشراف ایرانی از دادن تخت به او امتناع کردند؟",
+      "question_tg": "Баҳроми Гӯр чӣ тавр тоҷашро пас гирифт вақте ашрофи Эронӣ аз додани тахт ба ӯ имтиноъ карданд?",
+      "answers": [
+        "He walked forward and killed two lions that were placed guarding his crown, then put it on his own head",
+        "He challenged the rival king to single combat and defeated him in front of the assembled court",
+        "He gathered an Arab army from Nu'man's kingdom and seized the capital by force",
+        "He produced a prophecy from Zoroastrian priests confirming his divine right to rule"
+      ],
+      "answers_fa": [
+        "به جلو رفت و دو شیری را که از تاجش نگهبانی می‌کردند کشت سپس آن را بر سر خود گذاشت",
+        "رقیبش را به نبرد تن به تن دعوت کرد و او را در برابر دربار مجتمع شکست داد",
+        "از پادشاهی نعمان ارتش عربی جمع کرد و با زور پایتخت را تصرف کرد",
+        "پیشگویی از روحانیون زرتشتی تولید کرد که حق الهی او برای حکومت را تأیید می‌کرد"
+      ],
+      "answers_tg": [
+        "Ба пеш рафт ва ду шере ки аз тоҷаш посбонӣ мекарданд кушт сипас онро бар сари худ гузошт",
+        "Рақибашро ба муборизаи тан ба тан даъват кард ва ӯро дар назди дарбори мунъақид шикаст дод",
+        "Аз подшоҳии Нӯъмон артиши Арабӣ ҷамъ кард ва бо зӯр пойтахтро тасарруф кард",
+        "Пешгӯие аз рӯҳониёни Зардуштӣ истеҳсол кард ки ҳаққи илоҳии ӯро барои ҳукмронӣ тасдиқ мекард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Two lions had been placed guarding Bahram's crown in an open field. The nobles said whoever could take the crown was worthy of it. Bahram walked forward, killed both lions with his club, and put the crown on his own head. The nobles found no further objections.",
+      "explanation_fa": "دو شیر برای نگهبانی از تاج بهرام در یک میدان باز قرار داده شده بودند. اشراف گفتند هر کس می‌تواند تاج را بگیرد شایسته آن است. بهرام به جلو رفت، هر دو شیر را با چماقش کشت و تاج را بر سر خود گذاشت. اشراف هیچ اعتراض بیشتری نداشتند.",
+      "explanation_tg": "Ду шер барои посбонии тоҷи Баҳром дар майдони кушоде гузошта шуда буданд. Ашроф гуфтанд ҳар кас метавонад тоҷро бигирад шоистаи он аст. Баҳром ба пеш рафт, ҳар ду шерро бо гурзаш кушт ва тоҷро бар сари худ гузошт.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "brg-m1",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What did the slave girl Fitna challenge Bahram Gur to prove, and why did she call him 'habit' rather than 'skill'?",
+      "question_fa": "کنیز فتنه بهرام گور را به اثبات چه چیزی به چالش کشید و چرا کارش را 'عادت' به جای 'مهارت' نامید؟",
+      "question_tg": "Канизи Фитна Баҳроми Гӯрро ба исботи чӣ ба мубориза талабид ва чаро корашро 'одат' ба ҷои 'маҳорат' номид?",
+      "answers": [
+        "He pinned a gazelle's hoof to its ear with a single arrow at full gallop — she said habit, not skill, produces such results after endless repetition",
+        "He split a hair at a hundred paces — she said any practiced archer could do the same given enough tries",
+        "He leapt between two galloping horses — she said warriors learn such tricks in training without true courage",
+        "He shot an arrow through a ring thrown into the air — she said it was luck dressed as mastery"
+      ],
+      "answers_fa": [
+        "با یک تیر در حین تاختن کامل سم آهو را به گوشش دوخت — او گفت عادت نه مهارت چنین نتایجی را پس از تکرار بی‌پایان تولید می‌کند",
+        "موی را از صد قدم دو نیمه کرد — او گفت هر کمانداری که تمرین کرده با تلاش کافی می‌تواند همین کار را بکند",
+        "بین دو اسب در حال تاختن پرید — او گفت جنگجویان چنین ترفندهایی را در تمرین بدون شجاعت واقعی یاد می‌گیرند",
+        "تیری را از میان حلقه‌ای که در هوا پرتاب شده بود عبور داد — او گفت شانس بود که به عنوان مهارت ظاهر شد"
+      ],
+      "answers_tg": [
+        "Бо як тир ҳангоми тохтани комил нохуни оҳуро ба гӯшаш дӯхт — ӯ гуфт одат на маҳорат чунин натиҷаро пас аз такрори бепоён тавлид мекунад",
+        "Мӯеро аз сад қадам ду нима кард — ӯ гуфт ҳар камондоре ки машқ карда бо кӯшиши кофӣ метавонад ҳамин корро кунад",
+        "Байни ду аспи дар ҳоли тохтан парид — ӯ гуфт ҷангиён чунин найрангҳоро дар машқ бидуни шуҷоати воқеӣ ёд мегиранд",
+        "Тиреро аз миёни ҳалқае ки ба ҳаво партоб шуда буд гузаронд — ӯ гуфт шонс буд ки ҳамчун маҳорат зоҳир шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahram pinned a gazelle's hoof to its ear with a single arrow at full gallop. Fitna called it 'habit' — arguing that what seems miraculous is only the result of endless repetition. She spent years training a calf to prove her point. The chronicle uses their argument to ask what separates talent from discipline.",
+      "explanation_fa": "بهرام با یک تیر در حین تاختن کامل سم آهو را به گوشش دوخت. فتنه آن را 'عادت' نامید — استدلال کرد که آنچه معجزه‌آسا به نظر می‌رسد فقط نتیجه تکرار بی‌پایان است. سال‌ها طول کشید تا یک گوساله را برای اثبات حرفش تربیت کند.",
+      "explanation_tg": "Баҳром бо як тир ҳангоми тохтани комил нохуни оҳуро ба гӯшаш дӯхт. Фитна онро 'одат' номид — истдлол кард ки он чи мӯъҷизавор ба назар мерасад танҳо натиҷаи такрори бепоён аст.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    },
+    {
+      "id": "brg-e2",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "How did Bahram Gur die?",
+      "question_fa": "بهرام گور چطور مُرد؟",
+      "question_tg": "Баҳроми Гӯр чӣ тавр мурд?",
+      "answers": [
+        "He rode into a marsh chasing an onager while hunting and never came back — his body was never found",
+        "He was assassinated by a courtier jealous of his reputation with the Arab tribes",
+        "He died peacefully in his bed at an advanced age after a long and celebrated reign",
+        "He was killed in battle against a Roman army that invaded during the last years of his reign"
+      ],
+      "answers_fa": [
+        "در حین شکار سوار بر مرداب شد در تعقیب یک گورخر و هرگز بازنگشت — جسدش هرگز پیدا نشد",
+        "توسط یک درباری که از شهرتش نزد قبایل عرب حسادت می‌کرد ترور شد",
+        "در سنین پیری در بستر خود به آرامی مُرد پس از یک دوران طولانی و مشهور",
+        "در نبرد با ارتش رومی که در سال‌های آخر حکومتش تهاجم کرد کشته شد"
+      ],
+      "answers_tg": [
+        "Ҳангоми шикор ба ботлоқ рафт дар таъқиби хаpе ва ҳаргиз баргашт — ҷасадаш ҳаргиз ёфта нашуд",
+        "Аз ҷониби дарборие ки аз шӯҳраташ назди қабилаҳои Арабӣ ҳасадаш меомад суиқасд шуд",
+        "Дар пирӣ дар бистараш ба оромӣ мурд пас аз давраи тӯлонӣ ва машҳур",
+        "Дар набард бо артиши Румие ки дар солҳои охири ҳукмронияш ҳамла кард кушта шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahram Gur was hunting onagers — his own namesake quarry — in the marshes. He rode in after one and did not come back. No body was ever found. The earth took him the same way it takes a story: completely, leaving only the shape of where he had been.",
+      "explanation_fa": "بهرام گور داشت در مردابی گورخر — شکار هم‌نامش — شکار می‌کرد. در پی یکی سوار شد و دیگر باز نگشت. جسدش هرگز پیدا نشد. زمین او را همان‌طور که یک داستان را می‌گیرد برد: کاملاً، فقط شکل محلی را که بوده باقی گذاشت.",
+      "explanation_tg": "Баҳроми Гӯр дар ботлоқе хар — шикори ҳамноми худаш — шикор мекард. Ба таъқиби яке рафт ва дигар баргашт. Ҷасадаш ҳаргиз ёфта нашуд.",
+      "reward": {
+        "xp": 80,
+        "real": 30
+      }
+    },
+    {
+      "id": "brg-m2",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What was distinctive about Bahram Gur's style of kingship that the Shahnameh celebrates?",
+      "question_fa": "چه چیزی در سبک پادشاهی بهرام گور بود که شاهنامه آن را جشن می‌گیرد؟",
+      "question_tg": "Дар услуби подшоҳии Баҳроми Гӯр чӣ буд ки шоҳнома онро ҷашн мегирад?",
+      "answers": [
+        "He went among his subjects in disguise to hear what they truly said about him and judge without being judged",
+        "He held open court every Friday where any subject could bring grievances directly to him",
+        "He rejected all military campaigns during his reign preferring diplomacy and trade",
+        "He built the first public schools in Iran so common people could learn to read"
+      ],
+      "answers_fa": [
+        "با لباس مبدل بین رعایایش می‌رفت تا بشنود آنها واقعاً درباره‌اش چه می‌گویند و بدون قضاوت شدن قضاوت کند",
+        "هر جمعه دادگاه عمومی برگزار می‌کرد که هر رعیتی می‌توانست شکایاتش را مستقیماً به او بیاورد",
+        "تمام لشکرکشی‌های نظامی را در دوران حکومتش رد کرد و دیپلماسی و تجارت را ترجیح داد",
+        "اولین مدارس عمومی در ایران را ساخت تا مردم عادی بتوانند خواندن یاد بگیرند"
+      ],
+      "answers_tg": [
+        "Бо либоси мубаддал дар миёни рaъиятияш мерафт то бишнавад онҳо воқеан дар бораи ӯ чӣ мегӯянд ва бидуни доварӣ шудан доварӣ кунад",
+        "Ҳар ҷумъа додгоҳи умумӣ баргузор мекард ки ҳар раъиятие метавонист шикоятҳояшро мустақиман ба ӯ биёрад",
+        "Ҳамаи лашкаркашиҳои ҳарбиро дар давраи ҳукмронияш рад кард ва дипломасия ва тиҷоратро тарҷеҳ дод",
+        "Аввалин мактабҳои умумиро дар Эрон сохт то мардуми оддӣ хондан ёд гиранд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahram Gur was known for going among his subjects in disguise to hear what they actually thought — not the polished answers given to a known king. This habit of direct, hidden observation is part of what made him the Shahnameh's most beloved Sasanian king.",
+      "explanation_fa": "بهرام گور به رفتن بین رعایایش با لباس مبدل برای شنیدن نظر واقعی آنها شناخته می‌شد — نه پاسخ‌های صیقلی‌شده‌ای که به یک شاه شناخته‌شده داده می‌شود. این عادت مشاهده مستقیم و پنهانی بخشی از آن چیزی است که او را محبوب‌ترین شاه ساسانی شاهنامه کرده است.",
+      "explanation_tg": "Баҳроми Гӯр ба рафтан дар миёни раъиятияш бо либоси мубаддал барои шунидани назари воқеии онҳо маъруф буд — на ҷавобҳои мусаqqаи ба подшоҳи шинохташуда дода мешавад.",
+      "reward": {
+        "xp": 90,
+        "real": 35
+      }
+    }
+  ]
+}
