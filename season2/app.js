@@ -1958,8 +1958,12 @@
       renderFinalEncounter();
     };
 
-    /* Render immediately; re-check when quiz or referrals update */
-    renderFinalEncounter();
+    /* Defer first render until locales are loaded; re-check on quiz/referral events */
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", renderFinalEncounter, { once: true });
+    } else {
+      renderFinalEncounter();
+    }
     window.addEventListener("real:quest:quiz",      renderFinalEncounter);
     window.addEventListener("real:referral:update", renderFinalEncounter);
   }
