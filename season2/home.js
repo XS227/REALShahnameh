@@ -366,34 +366,26 @@
     if (claimRow) claimRow.hidden = !allDone || alreadyClaimed;
   };
 
-  /* ── Daily bonus claim button — wired ONCE after DOM ready ─────────────
-     Kept out of hydrateQuests() so closure capture and _bound flags can't
-     interfere. Reads claimKey fresh at click time so it's always correct. */
-  const wireClaimButton = () => {
-    const claimBtn = $("[data-quest-claim]");
-    const claimRow = $("[data-quest-all-complete]");
-    if (!claimBtn) return;
-    claimBtn.addEventListener("click", () => {
-      const key = "real_daily_bonus_claimed_" + todayKey();
-      if (lsRead(key) === "1") return;
-      /* Immediate visual feedback — proves handler fired */
-      claimBtn.disabled = true;
-      claimBtn.textContent = "✓ Claimed!";
-      try { localStorage.setItem(key, "1"); } catch {}
-      if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
-      if (window.RealSync)   window.RealSync.syncBalance();
-      refreshTreasury();
-      /* Show toast using the [data-toast] element directly */
-      const toastEl = document.querySelector("[data-toast]");
-      if (toastEl) {
-        toastEl.textContent = "+200 XP — Daily Bonus claimed!";
-        toastEl.classList.add("show");
-        clearTimeout(wireClaimButton._t);
-        wireClaimButton._t = setTimeout(() => toastEl.classList.remove("show"), 2000);
-      }
-      setTimeout(() => { if (claimRow) claimRow.hidden = true; }, 600);
-    });
+  /* ── Daily bonus claim — exposed as window function, called via onclick ── */
+  window.claimDailyBonus = (btn) => {
+    const key = "real_daily_bonus_claimed_" + todayKey();
+    if (lsRead(key) === "1") return;
+    btn.disabled = true;
+    btn.textContent = "✓ Claimed!";
+    try { localStorage.setItem(key, "1"); } catch {}
+    if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
+    if (window.RealSync)   window.RealSync.syncBalance();
+    refreshTreasury();
+    const toastEl = document.querySelector("[data-toast]");
+    if (toastEl) {
+      toastEl.textContent = "+200 XP — Daily Bonus claimed!";
+      toastEl.classList.add("show");
+      setTimeout(() => toastEl.classList.remove("show"), 2000);
+    }
+    const claimRow = document.querySelector("[data-quest-all-complete]");
+    setTimeout(() => { if (claimRow) claimRow.hidden = true; }, 600);
   };
+  const wireClaimButton = () => {}; // kept so bootHomeHydration call is harmless
 
   /* ── Medallion badge ─────────────────────────────────────────────────── */
   const BADGE_TIERS = [

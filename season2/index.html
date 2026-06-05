@@ -379,7 +379,7 @@
           <div class="q-name" data-i18n="quest_all_done">All Quests Complete!</div>
           <div class="q-sub" data-i18n="quest_all_done_sub">Claim your daily bonus</div>
         </div>
-        <button class="quest-claim-btn" data-quest-claim data-i18n="quest_claim_btn">Claim +200 XP</button>
+        <button class="quest-claim-btn" data-quest-claim data-i18n="quest_claim_btn" onclick="window.claimDailyBonus && window.claimDailyBonus(this)">Claim +200 XP</button>
       </div>
     </section>
 
@@ -456,6 +456,6 @@
   <script src="audio.js?v=202605272200"></script>
   <script src="cinematic.js?v=202605272200"></script>
   <script src="sync.js?v=202605303800"></script>
-  <script src="home.js?v=202606052000"></script>
+  <script src="home.js?v=202606052100"></script>
 </body>
 </html>
