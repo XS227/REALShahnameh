@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Ardavan saw the fire rising from Pars and fought it. He fought it and lost. To face this gate you must understand what it means to be the last king of a dynasty that held for four hundred years.",
-    "intro_fa": "",
+    "intro_fa": "اردوان آتشِ برخاسته از پارس را دید و با آن جنگید. جنگید و باخت. برای مواجهه با این دروازه باید بفهمی آخرین شاهِ دودمانی که چهارصد سال پایید بودن چه معنایی دارد.",
     "requirements": [
       {
         "id": "quiz",

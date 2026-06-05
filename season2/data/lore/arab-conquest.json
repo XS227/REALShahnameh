@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Two battles and a millennium ends. The Shahnameh does not look away. To face this gate you must understand how Ferdowsi wrote the conquest of his own civilization.",
-    "intro_fa": "",
+    "intro_fa": "دو نبرد و هزاره‌ای پایان می‌یابد. شاهنامه روی برنمی‌گرداند. برای مواجهه با این دروازه باید بفهمی فردوسی چگونه فتحِ تمدنِ خویش را نوشت.",
     "requirements": [
       {
         "id": "quiz",

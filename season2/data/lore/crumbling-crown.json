@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "The Sasanian dynasty devoured itself. Fourteen rulers in thirty years. Each one a symptom. To face this gate you must understand what it looks like when an empire decides it no longer knows how to govern itself.",
-    "intro_fa": "",
+    "intro_fa": "دودمانِ ساسانی خودش را بلعید. چهارده پادشاه در سی سال. هر کدام نشانه‌ای. برای مواجهه با این دروازه باید بفهمی یک امپراتوری هنگامی که دیگر نمی‌داند چگونه بر خود حکم براند چه شکلی دارد.",
     "requirements": [
       {
         "id": "quiz",

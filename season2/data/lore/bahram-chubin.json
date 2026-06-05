@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Bahram Chubin was the greatest general of his age and he decided that was enough to make him king. He was wrong — but only barely, and only after reshaping the entire political order. To face this gate you must understand the difference between deserving and being entitled to a throne.",
-    "intro_fa": "",
+    "intro_fa": "بهرام چوبین بزرگترین سپهسالارِ روزگارِ خود بود و تصمیم گرفت این برای شاه شدن کافی است. اشتباه می‌کرد — اما فقط به‌سختی، و تنها پس از بازشکلیِ کلِ نظمِ سیاسی. برای مواجهه با این دروازه باید تفاوتِ شایستگی و حقِ ادعاشده بر تخت را بفهمی.",
     "requirements": [
       {
         "id": "quiz",

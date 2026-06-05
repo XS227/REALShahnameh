@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Dara refused to bend. The Shahnameh records his pride without apology and his defeat without contempt. To face this gate you must hold both truths at once.",
-    "intro_fa": "",
+    "intro_fa": "دارا از خم شدن سر باز زد. شاهنامه غرورش را بدون عذرخواهی و شکستش را بدون تحقیر ثبت می‌کند. برای مواجهه با این دروازه باید هر دو حقیقت را باهم نگه داری.",
     "requirements": [
       {
         "id": "quiz",

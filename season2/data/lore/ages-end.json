@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "The chronicle closes where it began: with fire, with iron, with kings who rose and fell. To face this final gate you must hold everything the Shahnameh has given you.",
-    "intro_fa": "",
+    "intro_fa": "دفتر آنجا می‌بندد که آغاز کرد: با آتش، با آهن، با شاهانی که برخاستند و فروافتادند. برای مواجهه با این دروازه‌ی آخر باید آنچه شاهنامه به تو داده را نگه داری.",
     "requirements": [
       {
         "id": "quiz",

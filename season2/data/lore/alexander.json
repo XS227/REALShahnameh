@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Ferdowsi's Alexander is Iranian by a twist of genealogy and world-conqueror by ambition. He is the most complicated figure in the chronicle's second half. To face this gate you must understand what the Shahnameh does with its most famous foreign king.",
-    "intro_fa": "",
+    "intro_fa": "اسکندرِ فردوسی از رهگذرِ تباری پیچیده ایرانی است و از راهِ بلندپروازی جهانگشا. او پیچیده‌ترین چهره‌ی نیمه‌ی دومِ دفتر است. برای مواجهه با این دروازه باید بفهمی شاهنامه با مشهورترین شاهِ بیگانه‌اش چه می‌کند.",
     "requirements": [
       {
         "id": "quiz",

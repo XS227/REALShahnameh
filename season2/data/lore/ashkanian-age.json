@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "The Arsacid era is the Shahnameh's briefest: many kings, many wars, thin chronicle. Ferdowsi names the age but does not dwell. To face this gate you must understand why the Shahnameh rushes through four centuries.",
-    "intro_fa": "",
+    "intro_fa": "دوره‌ی اشکانی کوتاه‌ترینِ شاهنامه است: شاهانِ بسیار، جنگ‌هایِ بسیار، روایتِ کم. فردوسی عصر را نام می‌برد اما درنگ نمی‌کند. برای مواجهه با این دروازه باید بفهمی چرا شاهنامه از چهار سده می‌گذرد.",
     "requirements": [
       {
         "id": "quiz",

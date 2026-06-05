@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "The sword takes empires. Words keep civilizations. To face this gate you must hold Ferdowsi's central argument: that the Shahnameh itself is the act of preservation.",
-    "intro_fa": "",
+    "intro_fa": "شمشیر امپراتوری‌ها را می‌گیرد. کلمات تمدن‌ها را نگه می‌دارند. برای مواجهه با این دروازه باید استدلالِ محوریِ فردوسی را نگه داری: که خودِ شاهنامه عملِ نگهداری است.",
     "requirements": [
       {
         "id": "quiz",

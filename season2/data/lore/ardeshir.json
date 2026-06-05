@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "A court astrologer read the stars and named a herdsman's son as the next dynasty. Ardeshir built the Sasanian empire on that prophecy and his own ferocity. To face this gate you must understand how empires begin.",
-    "intro_fa": "",
+    "intro_fa": "ستاره‌شناسِ دربار اختران را خواند و پسرِ یک چوپان را دودمانِ بعدی نامید. اردشیر امپراتوریِ ساسانی را بر پایه‌ی آن پیشگویی و خشونتِ خود بنا کرد. برای مواجهه با این دروازه باید بفهمی امپراتوری‌ها چگونه آغاز می‌شوند.",
     "requirements": [
       {
         "id": "quiz",

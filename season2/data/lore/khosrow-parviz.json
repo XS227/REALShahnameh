@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Khosrow Parviz conquered Jerusalem and collected a thousand horses and a hundred wives. Then he forgot that empires require more than conquest. To face this gate you must understand the specific shape of his downfall.",
-    "intro_fa": "",
+    "intro_fa": "خسرو پرویز اورشلیم را فتح کرد و هزار اسب و صد همسر گرد آورد. سپس فراموش کرد که امپراتوری‌ها بیش از فتح نیاز دارند. برای مواجهه با این دروازه باید شکلِ خاصِ سقوطش را بفهمی.",
     "requirements": [
       {
         "id": "quiz",

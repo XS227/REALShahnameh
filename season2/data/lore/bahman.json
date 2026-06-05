@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Esfandiyar's son inherited both the throne and the wound. His reign is the shadow of his father's death. To face this gate you must understand how grief becomes policy.",
-    "intro_fa": "",
+    "intro_fa": "پسرِ اسفندیار هم تخت و هم زخم را به ارث برد. فرمانرواییِ او سایه‌ی مرگِ پدرش است. برای مواجهه با این دروازه باید بفهمی اندوه چگونه سیاست می‌شود.",
     "requirements": [
       {
         "id": "quiz",

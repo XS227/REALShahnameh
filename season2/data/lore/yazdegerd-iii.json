@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Yazdegerd III fled with his treasury and no army. The chronicle watches him go without contempt and without comfort. To face this gate you must hold the Shahnameh's exact grief for its last Sasanian king.",
-    "intro_fa": "",
+    "intro_fa": "یزدگردِ سوم با خزانه‌اش گریخت و بدونِ سپاه. دفتر بدونِ تحقیر و بدونِ تسلی نظاره‌گرِ رفتنش است. برای مواجهه با این دروازه باید اندوهِ دقیقِ شاهنامه برای آخرین شاهِ ساسانی‌اش را نگه داری.",
     "requirements": [
       {
         "id": "quiz",

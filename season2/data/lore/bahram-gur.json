@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Bahram Gur hunted lions with his own hands, rhymed his own legend, and vanished into a swamp without a witness. To face this gate you must hold the enigma of a king who made his own ending into myth.",
-    "intro_fa": "",
+    "intro_fa": "بهرام‌گور با دستانِ خودش شیر شکار کرد، افسانه‌ی خود را در قافیه آورد، و بدونِ شاهدی در باتلاقی ناپدید شد. برای مواجهه با این دروازه باید معمایِ شاهی را نگه داری که پایانِ خود را به اسطوره تبدیل کرد.",
     "requirements": [
       {
         "id": "quiz",

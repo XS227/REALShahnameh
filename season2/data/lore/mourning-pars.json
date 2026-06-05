@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Ferdowsi names the grief without softening it. The fire temples are dark. But the language of Pars keeps burning. To face this gate you must understand what the Shahnameh is doing in its final chapters.",
-    "intro_fa": "",
+    "intro_fa": "فردوسی اندوه را بدون نرم کردن نام می‌برد. آتشکده‌ها تاریکند. اما زبانِ پارس می‌سوزد و می‌ماند. برای مواجهه با این دروازه باید بفهمی شاهنامه در فصل‌هایِ آخرش چه می‌کند.",
     "requirements": [
       {
         "id": "quiz",

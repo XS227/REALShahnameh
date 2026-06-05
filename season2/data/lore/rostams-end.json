@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Shaghad built the iron pit and covered it with soil. He invited his half-brother to hunt. To face this gate you must reckon with the cruelest form of betrayal: the kind that comes wrapped in family.",
-    "intro_fa": "",
+    "intro_fa": "شغاد چاهِ آهنین را کند و با خاک پوشاند. برادرِ ناتنیِ خود را به شکار دعوت کرد. برای مواجهه با این دروازه باید با بی‌رحمانه‌ترین شکلِ خیانت رو‌به‌رو شوی: آن نوعی که در جامه‌ی خانواده می‌آید.",
     "requirements": [
       {
         "id": "quiz",

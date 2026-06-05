@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Hormuz inherited the full machinery of his father's justice and wasted it systematically. The throne became a prize in a game among generals. To face this gate you must hold what the Shahnameh means by a king who forgot what kingship is for.",
-    "intro_fa": "",
+    "intro_fa": "هرمز تمامِ دستگاهِ دادگریِ پدرش را به ارث برد و آن را به‌طورِ منظم از بین برد. تخت جایزه‌ای شد در بازیِ سرداران. برای مواجهه با این دروازه باید بفهمی شاهنامه از شاهی که فراموش کرد سلطنت برای چیست چه مرادی دارد.",
     "requirements": [
       {
         "id": "quiz",

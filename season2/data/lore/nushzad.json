@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Nushzad was Christian in a Zoroastrian court. He rebelled against his father the Just King. He lost. To face this gate you must understand what it costs to choose your faith over your dynasty.",
-    "intro_fa": "",
+    "intro_fa": "نوشزاد در دربارِ زردشتی مسیحی بود. علیه پدرش شاهِ دادگر شورید. باخت. برای مواجهه با این دروازه باید بفهمی انتخابِ ایمان بر دودمان چه هزینه‌ای دارد.",
     "requirements": [
       {
         "id": "quiz",

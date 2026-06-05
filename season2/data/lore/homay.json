@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Every court said a woman could not rule. She proved each one wrong. To face this gate you must hold what Homay held: clarity in a world that has already decided against you.",
-    "intro_fa": "",
+    "intro_fa": "هر درباری گفت زنی نمی‌تواند فرمان براند. او هر کدام را نادرست ثابت کرد. برای مواجهه با این دروازه باید آنچه هُمای داشت را نگه داری: وضوح در جهانی که از پیش علیهِ تو تصمیم گرفته.",
     "requirements": [
       {
         "id": "quiz",

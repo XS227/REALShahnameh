@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Two Roman emperors captured. Shapur's name carved in stone for fifteen centuries. To face this gate you must understand how the Shahnameh measures greatness at its most absolute.",
-    "intro_fa": "",
+    "intro_fa": "دو امپراتورِ روم به اسارت گرفته شدند. نامِ شاپور پانزده سده در سنگ کنده شد. برای مواجهه با این دروازه باید بفهمی شاهنامه عظمت را در مطلق‌ترین حالتش چگونه می‌سنجد.",
     "requirements": [
       {
         "id": "quiz",

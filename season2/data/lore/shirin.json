@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Shirin outlasted Khosrow Parviz, outlasted the wars, outlasted the dynasty. Her courage was quieter than the battles around her and more durable. To face this gate you must understand what the Shahnameh means when it follows a queen instead of a king.",
-    "intro_fa": "",
+    "intro_fa": "شیرین از خسرو پرویز بلندتر ایستاد، از جنگ‌ها بلندتر، از دودمان بلندتر. شجاعتش آرام‌تر از نبردهایِ پیرامونش بود و ماندنی‌تر. برای مواجهه با این دروازه باید بفهمی شاهنامه هنگامی که به جایِ شاه ملکه را دنبال می‌کند چه مرادی دارد.",
     "requirements": [
       {
         "id": "quiz",

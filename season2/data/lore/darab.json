@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Darab was thrown into a river as an infant and raised by a launderer. The throne did not know it had lost an heir. To face this gate you must understand what legitimate claim costs to recover.",
-    "intro_fa": "",
+    "intro_fa": "داراب در کودکی به رودخانه انداخته شد و در خانه‌ی یک رختشوی پرورش یافت. تخت نمی‌دانست که وارثی را از دست داده. برای مواجهه با این دروازه باید بفهمی بازیابیِ ادعایِ مشروع چه هزینه‌ای دارد.",
     "requirements": [
       {
         "id": "quiz",

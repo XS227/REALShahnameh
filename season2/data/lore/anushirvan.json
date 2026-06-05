@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Khosrow Anushirvan built courts, reformed land distribution, and defeated the Hephthalites. The Shahnameh calls him Just. To face this gate you must also ask what the Just King left undone.",
-    "intro_fa": "",
+    "intro_fa": "خسرو انوشیروان دادگاه ساخت، توزیعِ زمین را اصلاح کرد و هیاطله را شکست داد. شاهنامه او را دادگر می‌خواند. برای مواجهه با این دروازه باید همچنین بپرسی شاهِ دادگر چه را ناتمام گذاشت.",
     "requirements": [
       {
         "id": "quiz",

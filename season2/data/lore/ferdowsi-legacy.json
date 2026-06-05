@@ -69,7 +69,7 @@
     "boss_image": null,
     "boss_master_image": null,
     "intro_en": "Thirty years. Sixty thousand verses. A patron who paid in silver when he owed gold. Ferdowsi's legacy was built despite the court, not because of it. To face this gate you must understand how the Shahnameh survived its own creation.",
-    "intro_fa": "",
+    "intro_fa": "سی سال. شصت‌هزار بیت. حامیِ درباری که نقره پرداخت در حالی که طلا بدهکار بود. میراثِ فردوسی علی‌رغمِ دربار ساخته شد، نه به‌خاطرِ آن. برای مواجهه با این دروازه باید بفهمی شاهنامه چگونه از آفرینشِ خودش جان به در برد.",
     "requirements": [
       {
         "id": "quiz",
