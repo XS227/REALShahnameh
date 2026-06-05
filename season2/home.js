@@ -366,6 +366,20 @@
     if (claimRow) claimRow.hidden = !allDone || alreadyClaimed;
   };
 
+  const showQuestBonusPopup = () => {
+    const overlay = document.querySelector("[data-quest-bonus-overlay]");
+    if (!overlay) return;
+    overlay.hidden = false;
+    const closeBtn = overlay.querySelector("[data-quest-bonus-close]");
+    const dismiss = () => {
+      overlay.hidden = true;
+      const claimRow = document.querySelector("[data-quest-all-complete]");
+      if (claimRow) claimRow.hidden = true;
+    };
+    if (closeBtn) closeBtn.addEventListener("click", dismiss, { once: true });
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) dismiss(); }, { once: true });
+  };
+
   const claimDailyBonus = () => {
     const key = "real_daily_bonus_claimed_" + todayKey();
     if (lsRead(key) === "1") return;
@@ -375,22 +389,10 @@
     if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
     if (window.RealSync)   { window.RealSync.syncQuest("bonus"); window.RealSync.syncBalance(); }
     refreshTreasury();
-    const toastEl = document.querySelector("[data-toast]");
-    if (toastEl) {
-      toastEl.textContent = "+200 XP — Daily Bonus claimed!";
-      toastEl.classList.add("show");
-      setTimeout(() => toastEl.classList.remove("show"), 2000);
-    }
-    const claimRow = document.querySelector("[data-quest-all-complete]");
-    setTimeout(() => { if (claimRow) claimRow.hidden = true; }, 600);
+    showQuestBonusPopup();
   };
-  const wireClaimButton = () => {
-    const btn = document.querySelector("[data-quest-claim]");
-    if (btn && !btn.dataset.claimWired) {
-      btn.dataset.claimWired = "1";
-      btn.addEventListener("click", claimDailyBonus);
-    }
-  };
+
+  const wireClaimButton = () => {}; // delegation handles clicks — kept so call in bootHomeHydration is harmless
 
   /* ── Medallion badge ─────────────────────────────────────────────────── */
   const BADGE_TIERS = [
@@ -830,6 +832,14 @@
     updateJourneyCard(null);  // immediate render from localStorage
     wireQuestClicks();
     wireClaimButton();
+    /* Event delegation for claim button — fires regardless of when button becomes visible */
+    const questSection = document.querySelector(".quest-list");
+    if (questSection && !questSection.dataset.claimDelegated) {
+      questSection.dataset.claimDelegated = "1";
+      questSection.addEventListener("click", (e) => {
+        if (e.target.closest("[data-quest-claim]")) claimDailyBonus();
+      });
+    }
     wireTreasuryModals();
     // Return popups after page has settled (600 ms)
     setTimeout(doReturnPopups, 600);
