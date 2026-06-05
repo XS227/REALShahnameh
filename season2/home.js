@@ -449,11 +449,28 @@
       .slice(0, 3);
 
     host.innerHTML = spotlightHeroes.map(h => {
-      const imgHtml = heroPortraitHtml(h);
-      const upgradeUrl = `heroes.html?open=${encodeURIComponent(h.slug)}`;
+      // Build image src — prefer image_url, then known asset paths
+      const slug    = h.slug || '';
+      const slugEnc = encodeURIComponent(slug);
+      const emo     = escapeHtml(heroEmoji(slug));
+      let   imgTag  = '';
+      if (h.image_url) {
+        imgTag = `<img src="${escapeAttr(h.image_url)}" alt="${escapeAttr(h.name)}"
+          onerror="this.remove()">`;
+      } else {
+        // Try asset path first, then uploads fallbacks
+        const asset = `/assets/images/heroes/${slugEnc}-hero.png`;
+        const upPng = `/season2/uploads/heroes/${slugEnc}.png`;
+        const upJpg = `/season2/uploads/heroes/${slugEnc}.jpg`;
+        imgTag = `<img src="${escapeAttr(asset)}" alt="${escapeAttr(h.name)}"
+          onerror="if(!this.dataset.t1){this.dataset.t1='1';this.src='${escapeAttr(upPng)}';}
+                   else if(!this.dataset.t2){this.dataset.t2='1';this.src='${escapeAttr(upJpg)}';}
+                   else{this.remove();}">`;
+      }
+      const upgradeUrl = `heroes.html?open=${encodeURIComponent(slug)}`;
       return `
-      <a href="${escapeAttr(upgradeUrl)}" class="hs-card hs-card-cover${h.needsUpgrade ? ' hs-needs-upgrade' : ''}" style="text-decoration:none;">
-        <div class="hs-cover-img">${imgHtml}</div>
+      <a href="${escapeAttr(upgradeUrl)}" class="hs-card${h.needsUpgrade ? ' hs-needs-upgrade' : ''}">
+        <div class="hs-cover-img">${emo}${imgTag}</div>
         <div class="hs-cover-overlay">
           ${h.needsUpgrade
             ? `<span class="hs-cover-badge warn">⚠ ${escapeHtml(t('hs_upgrade_to_progress','Upgrade'))}</span>`

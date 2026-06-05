@@ -5985,24 +5985,34 @@ body::after {
 .hs-card {
   flex: 0 0 calc(50% - 5px);
   min-width: 150px;
+  max-width: 180px;
+  display: block;           /* <a> defaults to inline — must force block */
   border-radius: var(--r-md);
   overflow: hidden;
   border: 1px solid rgba(244,197,107,.25);
   position: relative;
   aspect-ratio: 3 / 4;
-  background: linear-gradient(140deg, rgba(16,22,52,.9), rgba(10,14,36,.95));
+  background: linear-gradient(140deg, rgba(22,30,60,.95), rgba(10,14,36,.95));
   cursor: pointer;
   transition: transform .15s, border-color .15s;
+  text-decoration: none;
 }
 .hs-card:active { transform: scale(.97); }
 .hs-card.hs-needs-upgrade { border-color: rgba(255,179,71,.5); }
-/* Full-cover image */
+/* Full-cover image container */
 .hs-cover-img {
   position: absolute;
   inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;          /* emoji fallback, visible and centered */
 }
 .hs-cover-img img {
-  width: 100%; height: 100%;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
