@@ -366,12 +366,11 @@
     if (claimRow) claimRow.hidden = !allDone || alreadyClaimed;
   };
 
-  /* ── Daily bonus claim — exposed as window function, called via onclick ── */
-  window.claimDailyBonus = (btn) => {
+  const claimDailyBonus = () => {
     const key = "real_daily_bonus_claimed_" + todayKey();
     if (lsRead(key) === "1") return;
-    btn.disabled = true;
-    btn.textContent = "✓ Claimed!";
+    const btn = document.querySelector("[data-quest-claim]");
+    if (btn) { btn.disabled = true; btn.textContent = "✓ Claimed!"; }
     try { localStorage.setItem(key, "1"); } catch {}
     if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
     if (window.RealSync)   { window.RealSync.syncQuest("bonus"); window.RealSync.syncBalance(); }
@@ -385,7 +384,13 @@
     const claimRow = document.querySelector("[data-quest-all-complete]");
     setTimeout(() => { if (claimRow) claimRow.hidden = true; }, 600);
   };
-  const wireClaimButton = () => {}; // kept so bootHomeHydration call is harmless
+  const wireClaimButton = () => {
+    const btn = document.querySelector("[data-quest-claim]");
+    if (btn && !btn.dataset.claimWired) {
+      btn.dataset.claimWired = "1";
+      btn.addEventListener("click", claimDailyBonus);
+    }
+  };
 
   /* ── Medallion badge ─────────────────────────────────────────────────── */
   const BADGE_TIERS = [
