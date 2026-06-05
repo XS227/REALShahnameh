@@ -398,6 +398,45 @@
     el.title       = tier.title;
   };
 
+  /* ── Hero image map — mirrors COLLECTION img fields in heroes.js ──────
+     Keeps spotlight from guessing filenames from slugs (they don't match).
+     Update whenever a hero's img path changes in heroes.js COLLECTION.    */
+  const HERO_IMGS = {
+    "keyumars":              "/assets/images/heroes/keyumars-hero.png",
+    "siamak":                "/assets/images/heroes/siamak-hero.png",
+    "hushang":               "/assets/images/heroes/hushang-hero.png",
+    "ahriman":               "/assets/images/enemies/ahriman-boss.png",
+    "black-div":             "/assets/images/enemies/black-div-enemy.png",
+    "mount-damavand":        "/assets/images/locations/mount-damavand-location.png",
+    "royal-court":           "/assets/images/locations/royal-mountain-court.png",
+    "ancient-pars":          "/assets/images/locations/ancient-pars-location.png",
+    "demon-forest":          "/assets/images/locations/demon-forest-location.png",
+    "farr-codex":            "/assets/images/lore/ferdowsi-intro.png",
+    "first-calendar":        "/season2/uploads/heroes/first_calender.png",
+    "mount-alborz":          "/season2/uploads/heroes/mount_alborz.png",
+    "fravahar":              "/season2/uploads/heroes/farvahar.png",
+    "leopard-skins":         "/season2/uploads/heroes/leopard_skin.png",
+    "black-demon":           "/season2/uploads/heroes/blak_demon.png",
+    "discovery-of-fire":     "/season2/uploads/heroes/discovery_of_fire.png",
+    "sade-ch2":              "/season2/uploads/heroes/discovery_of_fire.png",
+    "first-iron-forge-card": "/season2/uploads/heroes/first_fire_forge.png",
+    "iron-axe-card":         "/season2/uploads/heroes/iron_ax_of_hushang.png",
+    "cypress-club-card":     "/season2/uploads/heroes/cypres_club.png",
+    "thirty-scripts":        "/season2/uploads/heroes/thirty_alphabets.png",
+    "crystal-throne-card":   "/season2/uploads/heroes/crystal_throne.png",
+    "enchanted-lute":        "/season2/uploads/heroes/festival_of_sade.png",
+    "awlad-guide":           "/season2/uploads/heroes/thirty_alphabets.png",
+    "arzhang-trophy":        "/season2/uploads/heroes/blak_demon.png",
+    "div-e-sepid":           "/season2/uploads/heroes/farvahar.png",
+    "rakhsh":                "/season2/uploads/heroes/rostam.png",
+    "mystical-ram":          "/season2/uploads/heroes/mount_alborz.png",
+    "azhdaha-shield":        "/season2/uploads/heroes/blak_demon.png",
+    "tahmuras-hero":         "/season2/uploads/chapters/tahmuras.png",
+    "tahmuras-king":         "/season2/uploads/chapters/tahmuras.png",
+    "jamshid":               "/season2/uploads/chapters/jamshid.png",
+    "zahhak-shadow":         "/season2/uploads/chapters/zahhak.png",
+  };
+
   /* ── Hero Spotlight ──────────────────────────────────────────────────── */
   const renderHeroSpotlight = (catalogHeroes) => {
     const host = $("[data-hero-spotlight]");
@@ -438,7 +477,7 @@
         return {
           slug:        hero_id,
           name:        (fa && nameFa) ? nameFa : nameEn,
-          image_url:   (cat && cat.image_url) || null,
+          image_url:   HERO_IMGS[hero_id] || (cat && (cat.image_url || cat.img)) || null,
           rarity:      (cat && cat.rarity)    || "",
           playerLevel: lv,
           zarPerHour:  data.zar_per_hour || 0,
