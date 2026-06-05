@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "nushzad",
+  "chapter_id": 40,
+  "era": {
+    "label_en": "1015 CE · Shahnameh Chronicle",
+    "label_fa": "1015 CE"
+  },
+  "lore_summary": {
+    "en": "The Christian son of the Just King rebels against his father — and is answered with iron.",
+    "fa": "نوشزاد پسر انوشیروان از مادری مسیحی بود و دین مادرش را برگزید. وقتی شنید پدرش در حال مرگ است، در خوزستان شورش کرد اما انوشیروان زنده ماند و سردارش شورش را سرکوب کرد. نوشزاد در حال احتضار نامه‌ای از پدر دریافت کرد پر از غم و سرزنش — و بدون پاسخ مُرد."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Nushzad — The Rebellious Prince",
+      "title_fa": "نوشزاد — شاهزاده شورشی",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "Nushzad was Anushirvan's son by a Christian woman, and he chose his mother's faith over his father's empire. That choice made him the Shahnameh's most personal tragedy: not a great villain, not a great hero, but a young man who picked the wrong moment to act on a conviction that was genuine.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "When Anushirvan fell gravely ill during a western campaign, word reached the provinces that the great king was dying or already dead. Nushzad, stationed in Khuzestan, believed the news and acted on it. He raised his banner, gathered Christian soldiers and disaffected nobles around him, and declared himself king in the southwest. The rebellion was not opportunism — he had been waiting for exactly this opening, had perhaps been preparing for it, had convinced himself that his father's illness was the sign he needed.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "Anushirvan recovered. He sent his general Ramburzin south with an army, and the message was unambiguous: end it. The battle was brief. Nushzad fought with real courage — the Shahnameh credits him that much — but he was outmatched and took a mortal wound before the day was done. As he lay dying, a letter arrived from his father. Anushirvan did not send soldiers to watch the execution or courtiers to record the defeat. He sent words.\n\nThe letter said, in substance: you were my son and you had everything, and you chose to become the enemy of the faith that gave you everything, and now you are dying in a ditch for it. There was grief in it, and disappointment, and the particular coldness of a father who had built an empire and could not understand why his own child had preferred to tear a piece of it down. Nushzad died without having answered. The Shahnameh closes the episode with silence — not condemnation, not forgiveness, just the space where the conversation did not happen.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 75 · 1015 CE",
+      "era_fa": "1015 CE",
+      "body_en": "Ferdowsi was writing about religious conversion and its consequences in a world where such conversions had massive political weight. The Arab conquest had made Islam the dominant religion of Iran, and the question of what it meant to choose a different faith — to convert away from the dominant religion, or to hold onto an older one — was not abstract in 1015 CE. Nushzad's story, a prince who chose Christianity over Zoroastrianism, mapped onto anxieties about loyalty, identity, and the price of conviction that Ferdowsi's own audience would have felt immediately.\n\nThe letter at the end is the hardest thing to write — a father speaking to a dying son across a rebellion, across a religious difference, across everything that had gone wrong between them. Ferdowsi had to make Anushirvan's coldness feel like grief without sentimentalizing it. A just king does not weep publicly over a traitor son. He writes a letter. The restraint is the grief. Nushzad's silence in response is also grief, and also pride, and also exhaustion — the Shahnameh lets all three be true simultaneously.\n\nNushzad is the Shahnameh's only chapter dedicated to a royal son who loses — not to an enemy king, not to fate, but to his own choices and their consequences. He is also the poem's most explicit treatment of religious difference within a royal family, and its most honest acknowledgment that a just king's children are not guaranteed to be just. Anushirvan's greatness did not transfer. Nushzad had to find his own path, found the wrong one, and the chronicle records the fact without explanation.",
+      "body_fa": "فردوسی درباره تغییر دین و عواقبش در دنیایی می‌نوشت که چنین تغییراتی وزن سیاسی عظیمی داشتند. فتح عرب اسلام را دین غالب ایران کرده بود، و سوال اینکه انتخاب دین متفاوت چه معنایی دارد — تبدیل شدن از دین غالب، یا چسبیدن به دین قدیمی‌تر — در سال ۱۰۱۵ میلادی انتزاعی نبود. داستان نوشزاد، شاهزاده‌ای که مسیحیت را بر زرتشتی‌گری ترجیح داد، بر نگرانی‌هایی درباره وفاداری، هویت و بهای اقامت بر عقیده‌ای که مخاطب فردوسی بلافاصله احساس می‌کرد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

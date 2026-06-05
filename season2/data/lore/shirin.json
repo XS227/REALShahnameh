@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "shirin",
+  "chapter_id": 43,
+  "era": {
+    "label_en": "1015 CE · Shahnameh Chronicle",
+    "label_fa": "1015 CE"
+  },
+  "lore_summary": {
+    "en": "Queen, lover, builder. Shirin's courage outlasts the empires around her.",
+    "fa": "شیرین ملکه ارمنی خسرو پرویز بود که نه تنها قلب خسرو بلکه قلب فرهاد تراشکار را هم تسخیر کرد — فرهادی که خسرو با دروغ به مرگش محکوم کرد. پس از کشته شدن خسرو توسط پسرش شیرویه، شیرین از پذیرفتن شیرویه سر باز زد و خود را بر سر مزار خسرو کشت — نه از شکست بلکه از انتخاب."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Shirin — Queen of Love",
+      "title_fa": "شیرین — ملکه عشق",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "Shirin does not belong to the Shahnameh the way Khosrow does — the Shahnameh is not a romance and does not want to be one. But she appears in it anyway, because she cannot be left out. She was Khosrow Parviz's great queen and his great love, an Armenian Christian woman who outlived his glory, witnessed his fall, and chose how she died. That last choice made her immortal.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "The story of Farhad belongs to Shirin's chapter even though it is not about her directly. Farhad was a sculptor and engineer who fell in love with her, and Khosrow — unwilling to share what he considered his — gave him an impossible condition: cut a channel through Mount Bisotun, and you may have her. Farhad went to the mountain and began cutting. He worked so long and so precisely that the task began to look possible. Khosrow sent a messenger to tell him Shirin had died. Farhad threw himself from the cliff. The mountain still bears his carvings. The lie that killed him is in every one of them.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "Shirin outlived Farhad, then outlived Khosrow himself. When Shiruyeh killed his father and seized the throne, he sent for Shirin — she was a queen, wealthy, known, and he wanted the legitimacy her presence would provide. She refused. A king who murders his own father to take his crown is not a king she would ornament. She went instead to Khosrow's tomb, and there she died — by her own hand, some versions say; by grief, others say. Both are probably true.\n\nPersian literature after Ferdowsi would build an entire tradition on Shirin's story — Nizami's masterpiece above all. But she is already complete in the Shahnameh: a woman who made two men immortal through loving one and refusing the other, and who chose her ending rather than accept one she had not written.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 75 · 1015 CE",
+      "era_fa": "1015 CE",
+      "body_en": "Shirin's story was already famous in oral tradition before Ferdowsi wrote it, and would become more famous after — Nizami would dedicate an entire epic to her in the 12th century. Ferdowsi was therefore writing a version of a story his audience knew, which required him to justify his telling. His version centers on the death scene: a woman who controls the only thing left within her control. Writing at the end of a long life in a world that had not always been kind to Persian culture, Ferdowsi may have understood that choice better than most.\n\nThe Farhad subplot is the chapter's structural risk — it introduces a rival who is more sympathetic in some ways than Khosrow, and it requires Ferdowsi to hold both the king and the sculptor in the same frame without choosing between them. His solution was the mountain: Farhad's carvings remain. The lie that killed him is permanent. Shirin carries that knowledge and still chooses Khosrow's tomb over Shiruyeh's court. The Shahnameh does not explain her choice. It simply shows her making it.\n\nShirin is the Shahnameh's proof that the poem can hold women at its center without diminishing them. She is not defined by who loves her but by what she chooses. The Farhad episode shows a woman whose presence alone drives a man to impossible labor; the death scene shows a woman who defines her own ending. Nizami would build an empire of poetry on this foundation. Ferdowsi built the foundation by refusing to make her a trophy for either the king or the sculptor.",
+      "body_fa": "داستان شیرین قبل از اینکه فردوسی آن را بنویسد در سنت شفاهی مشهور بود و بعد مشهورتر می‌شد — نظامی در قرن دوازدهم یک حماسه کامل به او اختصاص می‌داد. بنابراین فردوسی نسخه‌ای از داستانی می‌نوشت که مخاطبش می‌دانست، که از او می‌خواست روایتش را توجیه کند. نسخه او روی صحنه مرگ متمرکز است: زنی که تنها چیزی را که در کنترلش مانده کنترل می‌کند. فردوسی در پایان عمر طولانی در دنیایی که همیشه با فرهنگ ایرانی مهربان نبود، شاید آن انتخاب را بهتر از اکثر مردم می‌فهمید.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

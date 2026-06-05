@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "mourning-pars",
+  "chapter_id": 47,
+  "era": {
+    "label_en": "1017 CE · Shahnameh Chronicle",
+    "label_fa": "1017 CE"
+  },
+  "lore_summary": {
+    "en": "Ferdowsi names the grief. The fire temples are dark. But the language of Pars keeps burning in every verse.",
+    "fa": "پارس — قلب ایران — با شیوه‌هایی عزاداری کرد که در تواریخ نمی‌آید: روحانیانی که متون مقدس را پنهان کردند، خانواده‌هایی که تا هند پیاده رفتند و پارسیان شدند. ماندگاران نسل به نسل تبدیل دین شدند اما نام‌ها، تقویم و آداب پابرجا ماندند. شاهنامه محصول این سوگ است — بنایی که فتح نتوانست خرابش کند چون از زبان و حافظه ساخته شده بود."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "The Mourning of Pars",
+      "title_fa": "سوگ پارس",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "Pars — the heartland province, the place that had given its name to the whole civilization — mourned in ways that do not appear in chronicles. The chronicles record battles and capitals and successions. They do not record the priest who buried the sacred texts under a floor before the army arrived. They do not record the family that packed everything portable and walked east into the mountains and kept walking until they reached the sea and then kept walking until they found ships going to India.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "The Parsis — the Persians of India — are the most visible consequence of the conquest that the Shahnameh does not directly describe. They left. A community of Zoroastrians who would not convert took ships from the Iranian coast and landed in Gujarat, and they are still there, still practicing the old faith, still speaking fragments of Middle Persian in their rituals, a living archive of what Pars was before it became Fars and Fars became a province of a caliphate. The Shahnameh is their poem too — the book that remembers the world they left.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "Those who stayed mourned differently. Conversion came slowly, generation by generation, through pressure and incentive and marriage and the simple erosion of a world that no longer had institutions to sustain itself. The fire temples were converted to mosques or fell into ruin. The Zoroastrian calendar persisted in agricultural practice long after the faith had faded from the cities. The names — Mehr, Azar, Farrokh, Rostam — persisted in families who no longer remembered why they were beautiful names.\n\nWhat the mourning of Pars produced, eventually, was the Shahnameh. Grief that cannot speak directly finds its way into story. The poem Ferdowsi spent thirty years writing is the monument that the conquest could not tear down, because it was made of language and memory and those are harder to conquer than stone.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 77 · 1017 CE",
+      "era_fa": "1017 CE",
+      "body_en": "Ferdowsi was himself from Khorasan — not from the core of old Pars — but his cultural inheritance was entirely from that tradition. Writing the mourning of Pars was writing the grief of his own formation: the world his sources came from, the faith his texts preserved, the civilization whose collapse had made everything he was doing necessary. He was old enough by this point in the composition to understand that he would not live to see the poem fully honored. The chapter's elegy is also, quietly, his own.\n\nThe mourning of Pars required Ferdowsi to write grief without a specific grieving person at its center. Collective loss — a community dispersed, a faith fading, a culture being slowly replaced — is harder to render than individual loss because it has no single voice. Ferdowsi solved this by focusing on the objects and the practices that persisted: the names, the calendar, the rituals. Things that survived the conversion carry the grief of the conversion more clearly than any lament could.\n\nThe Mourning of Pars is the Shahnameh's acknowledgment that its real subject was never kings or heroes but the civilization they represented. Keyumars taught men to wear skins. Jamshid built the first city. Zahhak destroyed the old order. Rustam held the line for five centuries. And all of it — the glory and the tragedy — existed to produce this: a people who remember. The Parsis in India, the Zoroastrians in the mountains of Yazd, the readers of the Shahnameh in every language it has been translated into — they are what the whole poem was arguing for.",
+      "body_fa": "فردوسی خودش از خراسان بود — نه از قلب پارس قدیم — اما میراث فرهنگیش کاملاً از آن سنت بود. نوشتن سوگ پارس یعنی نوشتن غم شکل‌گیری خودش: دنیایی که منابعش از آن آمده، دینی که متونش حفظ کرده، تمدنی که فروپاشیش همه آنچه انجام می‌داد را ضروری کرده بود. در این مرحله از تألیف به اندازه کافی پیر بود که بفهمد نخواهد زیست تا شعر را کاملاً ارج‌گذاری شده ببیند. مرثیه فصل، آرام، مرثیه خودش هم هست.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

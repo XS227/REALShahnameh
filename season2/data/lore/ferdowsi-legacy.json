@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "ferdowsi-legacy",
+  "chapter_id": 49,
+  "era": {
+    "label_en": "1017 CE · Shahnameh Chronicle",
+    "label_fa": "1017 CE"
+  },
+  "lore_summary": {
+    "en": "Thirty years. Sixty thousand verses. A tomb in Tus. The Shahnameh outlives every king it describes.",
+    "fa": "فردوسی سی سال بدون سفارش رسمی شاهنامه را نوشت. سلطان محمود به جای طلا، نقره فرستاد — توهینی دقیق که فردوسی را به تبعید راند. گفته می‌شود طلا روزی رسید که تشییع جنازه‌اش از در دیگر شهر بیرون می‌رفت. در باغ خودش دفن شد. شعرش هنوز در هر عروسی و عزا خوانده می‌شود."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Ferdowsi's Legacy",
+      "title_fa": "میراث فردوسی",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "Ferdowsi was from Tus, in Khorasan — a landowner by birth, a poet by vocation, and a man who spent thirty years writing a poem no one had asked him to write. He began it while the Samanid dynasty still gave Persian culture institutional support. He finished it under Sultan Mahmud of Ghazni, a Turkic ruler whose court spoke Arabic and who had little feel for what he had been given.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "The famous story is this: Mahmud had promised gold for each verse of the Shahnameh. When Ferdowsi presented the completed poem — sixty thousand couplets, thirty years of work — Mahmud sent silver instead. The insult was precise, the same kind of precise insult the Shahnameh itself knew how to recognize: the distaff sent to Bahram Chubin, the disrespect calibrated to wound exactly. Ferdowsi wrote a bitter satire against the sultan, was warned his life was in danger, and fled. He spent years in exile. By some accounts, Mahmud eventually sent the gold — a camel train of it — and it arrived at Tus the same day Ferdowsi's funeral procession was leaving through one gate of the city.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "Whether that story is precisely true matters less than what it preserves: the image of a man who gave everything to a work that his own age could not fully receive. The Shahnameh was too large, too honest, too rooted in a world the Ghaznavid court was not interested in. It found its audience later — in the Seljuk courts, in the Persian diaspora, in the illustrated manuscripts of the Timurid and Safavid eras, in the living rooms of Iranian families across fifteen centuries.\n\nFerdowsi died around 1020 CE, probably in his eighties, having written the longest poem ever composed by a single poet. He asked to be buried outside the main cemetery because the Shahnameh contained material a strict religious authority might have found objectionable. He was buried in his own garden. The poem he left behind is still read, still memorized, still recited at weddings and funerals and at the moment when an Iranian wants to reach for the deepest thing in the language.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 77 · 1017 CE",
+      "era_fa": "1017 CE",
+      "body_en": "Ferdowsi's difficult relationship with Sultan Mahmud was not simply a personal slight — it was a cultural collision. Mahmud was a Turkic ruler who patronized Arabic and Persian poetry for prestige, but whose own cultural formation was not Persian. The Shahnameh's deep investment in Zoroastrian Iran, its ambivalence about conquest, its implicit argument that Persian civilization was superior to what had replaced it — none of this was what Mahmud was looking for. He wanted panegyric. Ferdowsi gave him a mirror. The silver was the reply.\n\nWriting about yourself — even obliquely, even in the third person of a chronicle entry — is the hardest thing a poet can do. Ferdowsi's legacy chapter required him to assess his own work honestly: to know what he had built, to know that it was not being recognized in his lifetime, and to trust that it would outlast the indifference. The garden burial was his final statement: I did this work. It exists. The rest is not mine to control. There is a kind of freedom in that, and also a kind of grief.\n\nFerdowsi's legacy is the Shahnameh itself. The poem he was not properly compensated for has been read continuously for a thousand years, translated into dozens of languages, illustrated in hundreds of manuscripts, memorized by generations of Iranians, Afghans, Tajiks, and everyone who has found themselves moved by stories of kings who held the line between fire and darkness. The silver that Mahmud sent is forgotten. The poem he sent it for is not.",
+      "body_fa": "رابطه سخت فردوسی با سلطان محمود فقط یک توهین شخصی نبود — یک برخورد فرهنگی بود. محمود یک حاکم ترک بود که شعر عربی و فارسی را برای پرستیژ حمایت می‌کرد، اما شکل‌گیری فرهنگی خودش ایرانی نبود. سرمایه‌گذاری عمیق شاهنامه در ایران زرتشتی، ابهامش درباره فتح، استدلال ضمنی‌اش که تمدن ایرانی از آنچه جایگزینش شده برتر است — هیچ‌کدام از اینها چیزی نبود که محمود دنبالش بود. او مدح می‌خواست. فردوسی یک آینه داد. نقره پاسخ بود.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

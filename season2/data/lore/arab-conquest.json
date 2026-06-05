@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "arab-conquest",
+  "chapter_id": 46,
+  "era": {
+    "label_en": "1016 CE · Shahnameh Chronicle",
+    "label_fa": "1016 CE"
+  },
+  "lore_summary": {
+    "en": "Qadisiyya and Nihavand. Two battles, two seasons, and a thousand years of Persian kingship ends.",
+    "fa": "سپاه عرب با باور به لحظه‌ی خود وارد ایران شد — قادسیه، نهاوند، سقوط تیسفون. آتشکده‌ها خاموش شدند، آرشیو شاهی پراکنده شد، روحانیون زرتشتی پراکنده شدند. فردوسی این فتح را بدون نفرت و بدون عذرخواهی می‌نویسد: شاهنامه خود محصول این پراکندگی است."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "The Arab Conquest — Fire and Sword",
+      "title_fa": "فتح عرب — آتش و شمشیر",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "The armies that came out of Arabia in the 630s had something the Sasanians could not manufacture quickly enough to matter: belief. Not just religious belief — though that was part of it — but the belief of men who were certain their moment had arrived. They had been marginal, desert people looking at the great empires from the outside. Now they were inside, and the empires were struggling to hold them off.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "The Shahnameh does not give the Arab commanders names or speeches the way it gives them to Iranian heroes. It records the conquest as a force of nature rather than a narrative of individuals — the tide coming in, indifferent to what it covers. What it covers is specific: the fire temples that have burned for centuries are extinguished. The great archive at Ctesiphon, where the records of Sasanian rule were kept, is lost — some sources say burned, some say scattered, some say simply abandoned as the court fled. The Zoroastrian priesthood that had preserved Iranian royal memory for a thousand years disperses.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "The Shahnameh is itself a consequence of this dispersal. The texts Ferdowsi drew on — the Khodaynamag, the priestly records, the oral traditions that had kept the old stories alive — survived precisely because people carried them east and north and over the mountains into Central Asia and India. The conquest destroyed a state. It did not destroy a culture, though it tried.\n\nFerdowsi writes the conquest without hatred and without apology. He had grown up in the world the conquest had made, prayed in its mosques, written in its language's shadow. He did not need to condemn what he could not undo. He needed only to remember what was there before it, clearly enough that the memory survived.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 76 · 1016 CE",
+      "era_fa": "1016 CE",
+      "body_en": "Ferdowsi was a Muslim writing in Arabic script, living under a Muslim dynasty, composing a poem about pre-Islamic Iran. The Arab conquest was not the enemy in his poem — it was the condition that made the poem necessary. If Iran had continued as a Zoroastrian empire with its own scribal tradition intact, there would have been no reason to compile the Shahnameh. The conquest created the loss, and the loss created the project. Ferdowsi understood this, and wrote the conquest chapter with the care of a man describing the fire that had burned his library and also, indirectly, motivated him to reconstruct it.\n\nWriting about the conquest without vilifying the conquerors or romanticizing the conquered required Ferdowsi to operate at a level of historical maturity that most poets do not reach. He did it by making the chapter about loss rather than blame — what was extinguished, what was scattered, what survived. The fire temples and the archives and the priesthood are the chapter's real subjects. The armies are just the mechanism. The Shahnameh mourns the fire, not the men who put it out.\n\nThe Arab Conquest chapter is the Shahnameh's most politically charged passage, because it describes the event that made the Shahnameh necessary. Every chapter before it was building toward this — the whole poem is a response to this chapter. And yet Ferdowsi does not end here. He has four more chapters to write, because the conquest of a state is not the conquest of a culture, and the poem has more to say about what Iran is than about what empire it once had.",
+      "body_fa": "فردوسی مسلمانی بود که با خط عربی می‌نوشت، زیر سلسله مسلمان زندگی می‌کرد، شعری درباره ایران پیش از اسلام می‌سرود. فتح عرب در شعرش دشمن نبود — شرطی بود که شعر را ضروری می‌کرد. اگر ایران به عنوان امپراتوری زرتشتی با سنت کاتبانه خود دست‌نخورده ادامه می‌داد، دلیلی برای تدوین شاهنامه نبود. فتح از دست دادن را ایجاد کرد و از دست دادن پروژه را ایجاد کرد. فردوسی این را می‌فهمید، و فصل فتح را با دقت مردی نوشت که کتابخانه‌اش را آتش زده بود و همچنین به طور غیرمستقیم انگیزه‌اش برای بازسازی آن.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

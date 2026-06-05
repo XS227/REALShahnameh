@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "ashkanian-age",
+  "chapter_id": 32,
+  "era": {
+    "label_en": "1012 CE · Shahnameh Chronicle",
+    "label_fa": "1012 CE"
+  },
+  "lore_summary": {
+    "en": "The Arsacids rule in fragments. Many small kings, many small wars. The chronicle dims between golden ages.",
+    "fa": "دوران اشکانیان پانصد سال تاریخ است که فردوسی صادقانه اعتراف می‌کند که روایاتش پراکنده شده. چهارده شاه را نام می‌برد اما داستان‌هایشان به دستش نرسیده. اشکانیان ایران را زنده نگه داشتند و روم را شکست دادند، اما سکوت شاهنامه درباره آنها خود یکی از صادقانه‌ترین لحظات حماسه است."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "The Ashkanian Age",
+      "title_fa": "عصر اشکانیان",
+      "era_en": "1012 CE · Ferdowsi's Chronicle",
+      "era_fa": "1012 CE",
+      "body_en": "There is a moment in the Shahnameh where Ferdowsi stops and admits that the records are gone. The Ashkanian age — five centuries of the Arsacid dynasty ruling Iran — survives in the poem as a kind of acknowledged silence. He lists fourteen kings. He gives them names and rough lengths of reign. And then he says, plainly, that their stories were not written down or that what was written did not reach him. The chronicle of a dynasty four hundred years long fits in a few pages.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "/season2/uploads/chapters/ashkanian-age.png",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1012 CE · Ferdowsi's Chronicle",
+      "era_fa": "1012 CE",
+      "body_en": "This is not failure on Ferdowsi's part. It is honesty. The Arsacids ruled a decentralized empire — Iran split into regional kingdoms, each with its own court, its own records, its own version of events. The Zoroastrian priesthood that had preserved the old royal histories under the Achaemenids had been disrupted. The Seleucid interlude between Alexander and the Arsacids had broken the chain of transmission. What came through was fragments, and Ferdowsi refused to fill the gaps with invention.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1012 CE · Ferdowsi's Chronicle",
+      "era_fa": "1012 CE",
+      "body_en": "What he does preserve carries its own weight. The Ashkanian kings held Iran together under a loose sovereignty while the old Persian culture slowly reasserted itself. They held Rome at Carrhae and humbled a superpower. They built a world where the idea of Iran — the Aryan lands, the heir of the Kayanian kings — survived the Greek interruption and waited for something to reclaim it fully. The Sasanians would say they were that something. But the Ashkanians made the ground for them.\n\nThe chapter ends not with a battle but with an absence. Ferdowsi acknowledges the silence and moves forward. There is a kind of dignity in refusing to pretend that what was lost can be recovered. He had spent thirty years reconstructing the memory of Iran. Here the memory had genuinely not survived, and he let the gap stand. It is one of the most honest moments in the poem.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 72 · 1012 CE",
+      "era_fa": "1012 CE",
+      "body_en": "Ferdowsi was composing at a time when the Islamic conquest had itself disrupted the transmission of pre-Islamic Iranian history. He understood, working from Zoroastrian priestly texts and older royal archives, that the Ashkanian record had been doubly broken — first by Alexander's conquest, then by the Sasanian policy of marginalizing the Arsacid legacy to legitimize their own dynasty. The silence in the Shahnameh about the Arsacids is partly Sasanian propaganda and partly genuine loss, and Ferdowsi knew he could not always tell the difference.\n\nWriting around a gap without pretending it isn't there. Ferdowsi had spent decades reconstructing Iranian memory from scattered sources. Here the sources simply did not exist. His decision to name the kings and say plainly that their deeds were unrecorded is more honest than inventing plausible stories would have been. It is the historian's discipline overriding the poet's temptation.\n\nThe Ashkanian chapter functions as the Shahnameh's conscience. Every other king in the poem gets a story. These fourteen get names and silence. That contrast makes the silence louder than any narrative could. The reader understands that history is not just what was done but what was remembered, and that the act of remembering is fragile, contingent, and easily broken. The whole project of the Shahnameh — thirty years of reconstruction — is justified by this small admission of failure.",
+      "body_fa": "فردوسی در زمانی می‌نوشت که فتح اسلامی خود انتقال تاریخ ایران پیش از اسلام را مختل کرده بود. می‌دانست که پرونده اشکانی دوبار شکسته شده — ابتدا با فتح اسکندر، سپس با سیاست ساسانیان در به حاشیه راندن میراث اشکانی برای مشروع جلوه دادن سلسله خودشان. سکوت شاهنامه درباره اشکانیان تا حدی تبلیغات ساسانی است و تا حدی از دست رفتن واقعی، و فردوسی می‌دانست که نمی‌تواند همیشه فرق را تشخیص دهد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

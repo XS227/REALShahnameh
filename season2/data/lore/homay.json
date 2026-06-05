@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "homay",
+  "chapter_id": 28,
+  "era": {
+    "label_en": "1010 CE · Shahnameh Chronicle",
+    "label_fa": "1010 CE"
+  },
+  "lore_summary": {
+    "en": "A queen, not a king, takes the throne — and proves sharper than the swords around her.",
+    "fa": "بهمن هما دخترش را وارثِ تخت اعلام کرد. هما بدونِ آشوب تخت را گرفت. آبستن بود. پسرش را در صندوقی مهرشده در رود گذاشت. رود او را به گازر رساند. هما دهه‌ها تنها حکم کرد."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Homay — The Warrior Queen",
+      "title_fa": "هما — ملکه جنگاور",
+      "era_en": "1010 CE · Ferdowsi's Chronicle",
+      "era_fa": "1010 CE",
+      "body_en": "Bahman named Homay his heir in old age, and when he died, Homay took the throne without the drama that usually accompanies a succession. There was no coup, no competing claimant who needed to be destroyed or converted, no period of civil instability while the court recalculated its loyalties. She was there, she was prepared, and the kingdom worked. The court accepted her because Bahman had prepared the court to accept her, and because Homay herself presented nothing that required resistance. She administered carefully. She held justice strictly. The borders maintained themselves under the framework her father had built.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "/season2/uploads/chapters/homay.png",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1010 CE · Ferdowsi's Chronicle",
+      "era_fa": "1010 CE",
+      "body_en": "She was also pregnant when she took the throne, and the Shahnameh gives the father as Bahman. This made the child both heir to everything and a complication that Homay could not allow to develop. A son with that bloodline would be the kingdom's natural focus as he grew — a center of gravity that would slowly pull the court toward him and away from her. Homay looked at what she had been given and decided she would not divide it.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1010 CE · Ferdowsi's Chronicle",
+      "era_fa": "1010 CE",
+      "body_en": "She gave birth to a son, sealed him in a chest with her royal seal and what provisions she could include, and set him on the river. The chest floated downstream to the great city on the Tigris, where a washerman found it, opened it, and raised the child as his own. The boy was called Darab.\n\nHomay ruled alone for the decades that followed. The Shahnameh gives her a long and orderly reign — a period of competence rather than heroism, administration rather than conquest, stability rather than transformation. It does not condemn her for the abandonment. It presents the choice as a choice, one of many choices queens make when the throne and the child cannot both be held completely. Other parents in the chronicle have abandoned children — Sam left Zal on Alborz; other rulers have sacrificed sons to the needs of power. The Shahnameh treats Homay's version of this choice with the same restraint it reserves for rulers who act on difficult necessity rather than cruelty.\n\nBut the river kept what was put in it. Darab grew up by the Tigris, trained in the washerman's household, and eventually found his way back to the court that had set him adrift before he could speak. The river always brings things back.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 70 · 1010 CE",
+      "era_fa": "1010 CE",
+      "body_en": "Ferdowsi returned to Tus in his final years, in poverty, to die among his own. He was writing about a queen who ruled alone, without a patron or a champion, and kept the kingdom working anyway.\n\nWriting the last clear chapter of the mythological age — a queen who simply governs. The heroic age is over. The chronicle has entered a different register. Ferdowsi was writing its opening measures.\n\nHomay abandons her son to the river, rules alone, and is not condemned. Ferdowsi understood that the chronicle's survival depended on exactly this kind of choice — putting the necessary thing in the water and trusting the current. He had done the same with the poem.",
+      "body_fa": "فردوسی در آخرین سال‌هایش به طوس برگشت، در فقر. داشت درباره‌ی ملکه‌ای می‌نوشت که تنها، بدونِ حامی یا قهرمان، حکومت می‌کرد و پادشاهی را به کار می‌انداخت.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

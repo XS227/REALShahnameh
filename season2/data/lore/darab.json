@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "darab",
+  "chapter_id": 29,
+  "era": {
+    "label_en": "1011 CE · Shahnameh Chronicle",
+    "label_fa": "1011 CE"
+  },
+  "lore_summary": {
+    "en": "Abandoned in a chest on the river, raised by a launderer, Darab reclaims a kingdom that forgot him.",
+    "fa": "داراب در کنارِ دجله با هویتِ ناشناخته بزرگ شد. گازر پیدایش کرد، نامش گذاشت، ساکت ماند. داراب به ارتش پیوست. در یک لشکرکشی به فرماندهی رسید. نجومیِ دربار مهرِ هما را شناخت. نامه باز شد. پادشاهی گذشت."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Darab — The Foundling Prince",
+      "title_fa": "داراب — شاهزاده یافته",
+      "era_en": "1011 CE · Ferdowsi's Chronicle",
+      "era_fa": "1011 CE",
+      "body_en": "Darab grew up by the Tigris not knowing who he was. The washerman who found the sealed chest gave the child a name and a household and did not ask what the royal seal meant, or if he knew, kept his silence until the deathbed. Darab grew up learning the river trade — the weight of wet cloth, the rhythms of a craftsman's schedule, the particular patience of work that has to be redone after every rain. He was stronger than other children, faster to learn, difficult to tire. The household noticed without drawing conclusions.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "/season2/uploads/chapters/darab.png",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1011 CE · Ferdowsi's Chronicle",
+      "era_fa": "1011 CE",
+      "body_en": "By the time Darab was a young man, something in him had begun to strain against the life the river had given him. He taught himself to fight by watching soldiers in the market. He studied languages in the evenings. When a Persian army passed through the city on a border campaign, he enlisted — not because he wanted to be a soldier, but because something in the army's structure and purpose answered a question he hadn't known he was asking.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1011 CE · Ferdowsi's Chronicle",
+      "era_fa": "1011 CE",
+      "body_en": "He distinguished himself immediately. His commanders promoted him, and each promotion revealed more of the quality the promotions were built on — not only courage but strategic clarity, the ability to see a battle's shape while still inside it. By the time the campaign ended, Darab had risen to a command no common soldier reaches in a single season. The court took notice.\n\nThe letter came eventually. The sealed document Homay had placed in the chest with her seal was still with Darab — he had carried it since the washerman pressed it into his hands on his deathbed, not knowing what it contained, knowing only that it had come with him from the water. A court astrologer recognized the seal. The letter was opened. It named Darab as Homay's son and heir, born of the Kayanian line, abandoned by necessity, entitled to what had been kept from him.\n\nHomay was still alive. She was old, and the court that had administered so efficiently under her had grown comfortable with its own arrangements. The meeting between Darab and the aging queen was not violent — she was too old for conflict and he was too deliberate for it. She acknowledged him. He acknowledged her. The kingdom passed. What the river brought back was exactly what had been put into it: the bloodline continued, the dynasty held, and Darab's foundling childhood became the origin story of the next four generations of Persian kings.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 71 · 1011 CE",
+      "era_fa": "1011 CE",
+      "body_en": "The poem is near its end. Ferdowsi is old, in poverty, in Tus. He has outlived most of the people who knew him as a young poet. He is writing about a prince who carried a sealed document naming what he was — and did not know what it contained until someone else read it.\n\nWriting about a man who grew up as a washerman's son and discovered he was a king. Ferdowsi had grown up as a landowner's son and discovered he was a poet. Both transformations required someone else to read the letter — to confirm what the person carrying it already knew, without yet having words for it.\n\nDarab's foundling story is the Shahnameh's last great hidden-prince. Zal was left on the mountain and raised by the Simorgh. Darab was sealed in a chest and raised by a washerman. Both return. The river does not forget. The mountain does not forget. The chronicle does not forget.",
+      "body_fa": "شعر نزدیکِ پایان است. فردوسی پیر است، در فقر، در طوس. دارد درباره‌ی شاهزاده‌ای می‌نویسد که سندِ مهرشده‌ای را با خود حمل می‌کرد که می‌گفت چیست — و نمی‌دانست چه دارد تا کسی دیگر آن را خواند.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

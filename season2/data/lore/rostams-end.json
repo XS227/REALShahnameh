@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "rostams-end",
+  "chapter_id": 26,
+  "era": {
+    "label_en": "1008 CE · Shahnameh Chronicle",
+    "label_fa": "1008 CE"
+  },
+  "lore_summary": {
+    "en": "A half-brother's treachery. A pit of iron stakes. The world's pillar of arms falls — and the chronicle goes quiet.",
+    "fa": "شاغاد ناتنی‌برادرِ رستم با شاهِ کابل توطئه چید. در دشتِ شکار چاه‌های آهنین حفر کردند. رخش توقف کرد؛ رستم مهمیز زد. هر دو افتادند. رستم آخرین تیرش را انداخت، شاغاد را به درخت دوخت، و مُرد."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Rostam's Last Stand",
+      "title_fa": "آخرین نبرد رستم",
+      "era_en": "1008 CE · Ferdowsi's Chronicle",
+      "era_fa": "1008 CE",
+      "body_en": "Shaghad was Rostam's half-brother — born of a different mother, raised in a different court, sent as a boy to the king of Kabul to serve and marry into that household. The Shahnameh does not explain what curdled in him over those years. It states the betrayal as a fact, the way certain treacheries arrive already complete before anyone traces their origin.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "/season2/uploads/chapters/rostams-end.png",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1008 CE · Ferdowsi's Chronicle",
+      "era_fa": "1008 CE",
+      "body_en": "He conspired with the king of Kabul. Together they had pits dug in the hunting plains outside the city — deep, lined with sharpened iron stakes, covered with branches and thin soil to look like ordinary ground. A single familiar hunting path ran across them. Shaghad sent word to Zabulestan with an invitation framed as brotherhood: come hunt with us, let there be peace between families. Rostam packed his gear and rode Rakhsh west.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1008 CE · Ferdowsi's Chronicle",
+      "era_fa": "1008 CE",
+      "body_en": "Rakhsh stopped at the edge of the first covered pit. He had never balked without reason. He had carried Rostam through seven labours, through Sohrab, through Esfandiyar — through every battle the Shahnameh had built across five generations. His hesitation here was not an animal fear. It was a horse's knowledge of the ground. Rostam spurred him forward.\n\nBoth fell — rider and horse together — down through the branches and the thin soil into the iron forest below. The wounds were beyond any medicine. Rostam knew this immediately. He steadied himself upright with what he had left, looked for Shaghad, and found him watching from behind a tree at what he believed was a safe distance. Rostam reached for his bow and drew it one final time. The arrow went through Shaghad and through the bark behind him, pinning him to the tree where he died. Then Rostam died.\n\nZal came from Zabulestan. Faramarz came. The warriors who had served under Rostam's standard for decades came and stood around the pit in silence. They lifted what remained. The Shahnameh does not describe a long ceremony. It marks the place where the weight was set down and does not linger there. For five generations — through Keyumars, through Manuchehr, through Kay Kavus, through Kay Khosrow, through Goshtasp and Esfandiyar — this man had been the force that held the kingdom together when its kings could not hold themselves together. The chapter that followed would be different in kind. The chronicle continued, but it had set down the heaviest thing it ever carried.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 68 · 1008 CE",
+      "era_fa": "1008 CE",
+      "body_en": "Ferdowsi was writing near the end of his life, in poverty after being under-rewarded by Mahmud of Ghazni. His son had died years before. He had given thirty years to this poem and received almost nothing in return from the patron who was supposed to make the work immortal.\n\nWriting the death of the figure he had spent thirty years building. Rostam dies betrayed by a half-brother — not defeated in honest combat, not consumed by his own flaws, but murdered by treachery from within his own household. Ferdowsi understood this kind of betrayal.\n\nRostam's last act is to kill his betrayer — not to weep, not to forgive, but to reach for the bow one more time. Ferdowsi understood that for the Shahnameh's greatest champion, this was the only possible ending: agency until the last breath.",
+      "body_fa": "فردوسی در اواخرِ عمرش می‌نوشت، در فقر بعد از پاداشِ ناکافیِ محمودِ غزنوی. پسرش سال‌ها پیش مرده بود. سی سال به این شعر داده بود و از حامی‌ای که باید اثر را جاودانه می‌کرد تقریباً چیزی دریافت نکرده بود.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

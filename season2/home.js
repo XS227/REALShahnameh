@@ -33,6 +33,11 @@
     "birth-of-rostam","rostam","sohrab","siavash","kay-kavus",
     "kay-khosrow","akvan","bijan-manijeh","great-war-turan","lohrasp",
     "goshtasp","esfandiyar","seven-labours-esp","clash-rostam-esp","simorgh",
+    "rostams-end","bahman","homay","darab","dara",
+    "alexander","ashkanian-age","ardavan","ardeshir","shapur",
+    "bahram-gur","yazdegerd-sinner","bahram-chubin","anushirvan","nushzad",
+    "hormuz","khosrow-parviz","shirin","crumbling-crown","yazdegerd-iii",
+    "arab-conquest","mourning-pars","memory-over-sword","ferdowsi-legacy","ages-end",
   ];
 
   /* Minimal fallback data so the journey card renders immediately from localStorage */

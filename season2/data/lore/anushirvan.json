@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "anushirvan",
+  "chapter_id": 39,
+  "era": {
+    "label_en": "1014 CE · Shahnameh Chronicle",
+    "label_fa": "1014 CE"
+  },
+  "lore_summary": {
+    "en": "Courts poets, reforms the land, defeats the Hephthalites. The golden height of the Sassanians.",
+    "fa": "خسرو انوشیروان، ملقب به دادگر و جاودان‌روح، با سرکوب جنبش مزدکی حکومت را پایدار کرد و سپس اصلاحات گسترده‌ای در مالیات، ارتش و دیوان‌سالاری اجرا کرد. فیلسوفان یونانی را پذیرفت، شطرنج را از هند گرفت و از طریق بزرگمهر تخته‌نرد را ابداع کرد. نامش هزار سال نماد پادشاه عادل ماند."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Khosrow Anushirvan — The Just",
+      "title_fa": "خسرو انوشیروان — دادگر",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "Khosrow Anushirvan — Immortal Soul — is the king the Shahnameh holds up as proof that the ideal is achievable. Not a legend, not a myth from the distant Kayanian age, but a historical man who actually governed, who reformed the tax code and the army, who sat in judgment and was recorded as having been just. The chronicle needed him because it needed to show that the standard it had been measuring kings against could, once, be met.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "His reign began with blood. The Mazdakite movement — a religious and social reform that had been spreading under his father Kavadh, demanding redistribution of wealth and the leveling of hierarchies — had to be destroyed before Anushirvan could build anything stable. He invited the Mazdakite leaders to a great assembly and had them executed. The chronicle does not flinch at this. A just king still needs order, and the Shahnameh understands that order has a cost.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "What he built after that was remarkable. He fixed tax rates to land surveys rather than annual harvests, so farmers were not ruined by a single bad year. He reorganized the army into a professional force with regular pay. He reformed the court and the postal system. And he opened Iran to the world's knowledge: when the Emperor Justinian closed the Academy in Athens, Anushirvan invited the Greek philosophers to his court at Ctesiphon. He had Plato translated. He had a brahmin bring the game of chess from India, and his minister Bozorgmehr deciphered it and invented backgammon in return.\n\nThere is a story of owls that the Shahnameh uses as his founding lesson. He overheard two owls negotiating their children's marriages on a ruined rooftop. His interpreter said: each side was demanding ruined villages as dowry, and there would be no shortage under an unjust king. Anushirvan understood. He returned to court and began the reforms that would make him, a thousand years later, still the name a Persian speaker reaches for when they want to describe a ruler as genuinely good.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 74 · 1014 CE",
+      "era_fa": "1014 CE",
+      "body_en": "Anushirvan was celebrated across the medieval Islamic world — not just in Persian tradition but in Arabic literature, Byzantine chronicles, and Indian records. The Prophet Mohammad was said to have been born during his reign, and Islamic tradition preserved the phrase 'I was born in the time of the just king.' Ferdowsi was therefore writing about a figure whose reputation crossed every boundary the poem operated within. He did not need to argue for Anushirvan's greatness — he needed only to show it, because every reader already knew.\n\nWriting about a just king is harder than writing about a tyrant. Tyranny generates incident and conflict; justice generates administration. Ferdowsi solved this through the owl story — a small domestic scene that carries the entire argument about governance. Anushirvan learns justice not from a philosopher's lecture or a battlefield lesson but from overhearing birds negotiate on a ruin. The best teaching comes sideways, when the king is not expecting to be taught. That is itself a lesson about how a just ruler should be prepared to receive correction.\n\nAnushirvan is the Shahnameh's answer to the question it has been asking since Keyumars: what does a good king actually look like? After fifty chapters of kings who were brave, or powerful, or cunning, or beloved, Anushirvan shows what governance looks like when all of those things are combined with genuine concern for the people being governed. His reign also marks the last stable plateau before the Shahnameh's long descent: after him come Hormuz, Bahram Chubin's revolt, the exhausting wars with Byzantium, and finally the Arab conquest. He is the high point, and the chronicle knows it.",
+      "body_fa": "انوشیروان در سراسر دنیای اسلامی قرون وسطی جشن گرفته می‌شد — نه فقط در سنت ایرانی بلکه در ادبیات عربی، تواریخ بیزانسی و آثار هندی. گفته می‌شود پیامبر اسلام در دوران او متولد شد و سنت اسلامی عبارت 'در زمان پادشاه عادل به دنیا آمدم' را حفظ کرده است. بنابراین فردوسی درباره شخصیتی می‌نوشت که شهرتش از هر مرزی که شعر در آن کار می‌کرد عبور می‌کرد. نیازی به استدلال برای عظمت انوشیروان نداشت — فقط باید نشانش می‌داد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

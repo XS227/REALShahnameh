@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "dara",
+  "chapter_id": 30,
+  "era": {
+    "label_en": "1012 CE · Shahnameh Chronicle",
+    "label_fa": "1012 CE"
+  },
+  "lore_summary": {
+    "en": "The last Achaemenid. Pride before the Greek tide. A king who would not bend, and so is broken.",
+    "fa": "دارا تخت را از پدرش داراب به ارث برد. اسکندر از غرب آمد با روش‌هایی که قرن‌ها کارگر نبودند. دارا شکست خورد. وزرایش خودشان کشتندش. اسکندر گریان سرش را نگه داشت — و برادرِ ناتنیِ او بود. آخرین خواسته: روشنک را به زنی بگیر."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Dara — The Last Achaemenid",
+      "title_fa": "دارا — آخرین هخامنشی",
+      "era_en": "1012 CE · Ferdowsi's Chronicle",
+      "era_fa": "1012 CE",
+      "body_en": "Dara inherited the throne from his father Darab and everything that came with it — the long memory of Iran's greatness, the weight of the Kayanian line, the certainty that had served every king in the chronicle until it stopped serving them. He was a capable king and a proud one. The Shahnameh does not present him as weak. It presents him as a man who could not adjust to a world that was changing faster than any king had yet seen.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "/season2/uploads/chapters/dara.png",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1012 CE · Ferdowsi's Chronicle",
+      "era_fa": "1012 CE",
+      "body_en": "The Greek campaigns were already in motion when Dara took the throne. A young commander named Sekandar had been moving east with an army that seemed to follow different rules. He moved faster, improvised more, treated supply lines as suggestions. His army was already at the border of what had been Persian territory. Dara sent the customary communications — tribute demands, warnings, the formal language that had always preceded either negotiation or war. Sekandar returned them with courteous rejection. The army kept moving.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1012 CE · Ferdowsi's Chronicle",
+      "era_fa": "1012 CE",
+      "body_en": "The battles came. The Shahnameh describes them not as defeats of weakness but as defeats of mismatch — a king who fought with methods that had worked for two centuries against a commander who had developed something new, and the new thing won. After the final battle, Dara's own ministers stabbed him rather than be captured with him. He was found dying by a roadside.\n\nSekandar found him there. What happened next is the Shahnameh's most unexpected moment in this chapter: Sekandar wept. He held Dara's head. He promised to avenge the ministers who had killed him. And then the revelation — Sekandar was Dara's half-brother. Both were sons of Darab: Sekandar through the Greek princess Nahid whom Darab had divorced, Dara through his Persian queen. Two half-brothers who met only when one was dying and the other was weeping over him.\n\nDara's last request was that Sekandar marry his daughter Roshanak and protect the dynasty's continuity. Sekandar agreed, and kept the agreement. What Dara could not protect with his army he protected with his dying request — the bloodline continued through the marriage, the Kayanian line persisted through the loss, and the chronicle could move forward into the new age that had just arrived.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 72 · 1012 CE",
+      "era_fa": "1012 CE",
+      "body_en": "The poem is nearly done. Ferdowsi writes about the end of the Achaemenid age — a dynasty that had been great and is now finished, replaced by something that carries its blood but not its form. He was watching the old Persian cultural dominance give way to Ghaznavid Turkish patronage, and the parallels were felt rather than stated.\n\nWriting about the moment when an old way of doing things ends — not because it was wrong but because something faster arrived. Dara was not a bad king. The old methods were not bad methods. They had simply been superseded. Ferdowsi knew this feeling intimately.\n\nTwo half-brothers who meet only when one is dying. Sekandar weeps over Dara — the conqueror mourning the conquered, revealed to be the same blood. Ferdowsi built this recognition to arrive too late. The chronicle understood that the most important truths about people arrive at the moment when they can no longer change anything.",
+      "body_fa": "شعر تقریباً تمام است. فردوسی درباره‌ی پایانِ عصرِ هخامنشی می‌نویسد — سلسله‌ای که بزرگ بود و حالا تمام شده. داشت تسلطِ فرهنگیِ کهنِ فارسی را می‌دید که جای خود را به حمایتِ ترکیِ غزنوی می‌داد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

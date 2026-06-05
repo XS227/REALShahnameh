@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "khosrow-parviz",
+  "chapter_id": 42,
+  "era": {
+    "label_en": "1015 CE · Shahnameh Chronicle",
+    "label_fa": "1015 CE"
+  },
+  "lore_summary": {
+    "en": "The conqueror of Jerusalem, collector of horses and marvels. His pride dims even the sun.",
+    "fa": "خسرو پرویز پس از گریز از دربار و شکست دادن بهرام چوبین با کمک بیزانس، بزرگ‌ترین امپراتوری ساسانی را ساخت و اورشلیم را فتح کرد. اما پادشاه هراکلیوس ورق را برگرداند و خسرو همه دستاوردهایش را از دست داد. پسرش شیرویه او را زندانی و کشت — عظیم‌ترین و فاجعه‌بارترین پادشاه ساسانی."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Khosrow Parviz — The Conqueror",
+      "title_fa": "خسرو پرویز — فاتح",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "Khosrow Parviz began his reign as a fugitive and ended it as a prisoner, and in between he came closer than any Sasanian king to conquering the world. He fled his blinded father's court with Byzantine soldiers at his back, defeated Bahram Chubin, and executed the men who had mutilated his father — including the brothers-in-law who had thought themselves kingmakers. He was methodical about revenge. He was methodical about everything.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "The campaigns that followed were the largest Iran had fielded since the Achaemenids. His general Shahrbaraz took Syria and then Egypt. Another army took Jerusalem in 614, carrying away the True Cross — the holiest relic of Christendom — to Ctesiphon. The Sasanian empire stretched from the Nile to the Oxus. Khosrow sat at the center of it and received tribute from people who had never imagined paying tribute to Persia.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1015 CE · Ferdowsi's Chronicle",
+      "era_fa": "1015 CE",
+      "body_en": "Then the Byzantine Emperor Heraclius remade his army and came east with everything he had. The tide turned with a speed that still seems impossible in retrospect. Province after province fell back. The same generals who had won everything began losing everything, and Khosrow — who had never learned that a king who only rewards success cannot hold an army through failure — stripped them of command and replaced them with men who lost faster.\n\nHis son Shiruyeh, raised in his shadow, imprisoned him and then had him killed. The True Cross was returned to Heraclius. The treasury Khosrow had filled over thirty years was empty within two. He was magnificent and he was catastrophic, and the Shahnameh does not try to separate the two — they were the same man, the same reign, the same swing of fortune.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 75 · 1015 CE",
+      "era_fa": "1015 CE",
+      "body_en": "Khosrow Parviz's reign was the last moment when Persian empire could plausibly claim dominance over the Mediterranean world. Ferdowsi was writing from the other side of the Arab conquest — from a world where that dominance was a memory, not a fact. The extravagance of Khosrow's court, the scale of his campaigns, the sheer ambition of his reign, would have read to Ferdowsi's audience as both inspiring and heartbreaking: this is what Iran had been, and this is what it lost, and the gap between the two was the space the Arab conquest had opened and never closed.\n\nThe challenge with Khosrow Parviz is scale: too much happened, too fast, in too many directions. Ferdowsi's solution was to track the arc — fugitive to conqueror to prisoner — and let the scale speak for itself through the True Cross and the Jerusalem campaign. The lesson the Shahnameh extracts is not about military genius but about the inability to manage failure: a king who only knew how to win had no resources when the winning stopped.\n\nKhosrow Parviz's reign is the last chapter where Iranian power operates at the center of world events. After him, Iran becomes reactive — defending, adjusting, surviving. His fall also sets up the Arab conquest's inevitability: the empire that followed his death was a succession of short-lived kings, coups, and collapsing institutions. The Arab armies that arrived in the 630s did not defeat a great empire. They defeated an empire that had already defeated itself.",
+      "body_fa": "سلطنت خسرو پرویز آخرین لحظه‌ای بود که امپراتوری ایرانی می‌توانست به طور قابل قبولی ادعای سلطه بر دنیای مدیترانه کند. فردوسی از آن سوی فتح عرب می‌نوشت — از دنیایی که آن سلطه خاطره بود نه واقعیت. تجمل دربار خسرو، وسعت لشکرکشی‌هایش، بلندپروازی خالص سلطنتش، برای مخاطبان فردوسی هم الهام‌بخش و هم دل‌شکننده می‌خواند: این آن چیزی بود که ایران بود، و این آن چیزی است که از دست داد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "memory-over-sword",
+  "chapter_id": 48,
+  "era": {
+    "label_en": "1017 CE · Shahnameh Chronicle",
+    "label_fa": "1017 CE"
+  },
+  "lore_summary": {
+    "en": "What the sword cannot keep, words can. Ferdowsi's testament to the power of Persian memory.",
+    "fa": "پس از فتح عرب، فارسی از دربارها عقب نشست اما در خانه‌ها، شعر شفاهی و کوهستان‌ها زنده ماند. با دولت‌های سامانی در قرن نهم و دهم، فارسی به عنوان یک کنش سیاسی و فرهنگی بازگشت. فردوسی وارث این بازیابی بود — شاهنامه‌ای نوشت که ثابت کرد حافظه بر شمشیر پیروز می‌شود."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Memory Over Sword",
+      "title_fa": "خاطره بر شمشیر",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "Swords rust. Empires end. Armies forget what they fought for within three generations. Memory is more durable than any of these, but only if someone tends it — only if, in each generation, someone decides that the work of remembering is worth doing even when no one is paying for it and no court is asking for it and the language you are preserving has been officially replaced by another.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "After the Arab conquest, Persian did not disappear. It retreated — into households, into oral poetry, into the mountains and the eastern provinces where Arabic administration had arrived but not yet taken root in the culture. When the Abbasid caliphate gave way to regional dynasties, and when those regional dynasties began looking for ways to express their own identities, Persian came back. The Samanid rulers of Khorasan in the ninth and tenth centuries patronized Persian poetry deliberately, as a political and cultural act. The language returned to courts and chanceries. It carried with it everything that had been stored in it during the two centuries of official Arabic dominance.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1017 CE · Ferdowsi's Chronicle",
+      "era_fa": "1017 CE",
+      "body_en": "This was the world Ferdowsi was born into — a Persian revival that had been building for a hundred years before he put his pen to paper. He did not invent the recovery. He completed it. The Shahnameh was the culmination of the Samanid project, the work that proved Persian could sustain a monument of the scale that Arabic had achieved in the Quran, that the old stories had not been forgotten, that the civilization that the conquest had interrupted was still present in the language and the memory of the people who spoke it.\n\nMemory won. Not by fighting — the swords were gone — but by the simple act of being told again, and again, and again, until the telling became the tradition and the tradition became the identity and the identity became stronger than any army that had ever tried to replace it.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 77 · 1017 CE",
+      "era_fa": "1017 CE",
+      "body_en": "Ferdowsi completed the Shahnameh as the Samanid dynasty that had made his work culturally possible was collapsing under Ghaznavid pressure. The Persian revival he was the culmination of was itself being threatened by Turkic court culture that preferred Arabic formality. He was writing the monument to memory at the exact moment that the patronage structures supporting that memory were being dismantled. The irony was not lost on him — the poem about survival was written under conditions designed to test survival.\n\nWriting about the survival of memory requires showing the mechanism without making it seem inevitable. Memory does not automatically survive — it survives because specific people in specific places made specific choices to carry it forward. Ferdowsi named this explicitly: the Samanids, the oral poets, the households that kept the old stories alive. The Shahnameh is not the natural outcome of Iranian resilience. It is the outcome of thirty years of one man's labor, and he knew how contingent that was.\n\nMemory Over Sword is the Shahnameh's thesis statement, delivered near the end when the reader has lived through everything the poem has described. Every hero who held the line, every king who ruled justly, every tragedy that the poem refused to simplify — all of it was building toward this argument: that the civilization is the memory, and the memory survives as long as someone is willing to tell the story. Ferdowsi was that someone for his generation. The chapter asks who will be that someone for the next.",
+      "body_fa": "فردوسی شاهنامه را در حالی تکمیل کرد که سلسله سامانی که کارش را از نظر فرهنگی ممکن کرده بود زیر فشار غزنوی در حال فروپاشی بود. احیای ایرانی که اوج آن بود خودش تحت تهدید فرهنگ دربار ترکی بود که رسمیت عربی را ترجیح می‌داد. بنای یادبود حافظه را در دقیقاً همان لحظه‌ای می‌نوشت که ساختارهای حمایتی پشتیبان آن حافظه داشتند از هم پاشیده می‌شدند. این طنز بر او پنهان نبود — شعر درباره بقا در شرایطی نوشته می‌شد که برای آزمایش بقا طراحی شده بود.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

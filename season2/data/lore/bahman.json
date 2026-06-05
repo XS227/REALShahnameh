@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "bahman",
+  "chapter_id": 27,
+  "era": {
+    "label_en": "1009 CE · Shahnameh Chronicle",
+    "label_fa": "1009 CE"
+  },
+  "lore_summary": {
+    "en": "Esfandiyar's son rules with grief and ambition. The Kayanian house turns on itself.",
+    "fa": "بهمن پسرِ اسفندیار بود و می‌دانست پدرش به خاطرِ ترسِ گشتاسپ مُرد. وقتی تخت را گرفت به زابلستان لشکر کشید. فرامرز مقاومت کرد و شکست خورد. خانه‌ی زال شکسته شد. بهمن صد سال درست حکم کرد."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Bahman — Avenger's Son",
+      "title_fa": "بهمن — پسر انتقام‌گیر",
+      "era_en": "1009 CE · Ferdowsi's Chronicle",
+      "era_fa": "1009 CE",
+      "body_en": "Bahman was Esfandiyar's son, and he came of age knowing exactly what had been done to his father and why. Goshtasp had sent Esfandiyar to chain Rostam not because Rostam had rebelled — he had not — but because Goshtasp feared his own son's popularity and needed Esfandiyar to fail or die at a safe distance from the throne. Esfandiyar walked into the mission with his eyes open, fulfilling the king's command because he had given his word and his word was the thing he would not break even in a trap. He died for his father's fear. Bahman inherited that knowledge the way a child inherits a wound that never fully heals.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "/season2/uploads/chapters/bahman.png",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1009 CE · Ferdowsi's Chronicle",
+      "era_fa": "1009 CE",
+      "body_en": "When Bahman came to the throne — after Goshtasp's long dim years — he proved himself a more capable ruler than his dynasty had produced in a generation. He administered the kingdom with precision. He kept the borders. He held court without the tantrums that had characterized his grandfather's reign. But he also marched on Zabulestan.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1009 CE · Ferdowsi's Chronicle",
+      "era_fa": "1009 CE",
+      "body_en": "He marched not because Zal had done anything wrong — Zal, now ancient, had been the most faithful servant of the Kayanian house across five generations. He marched because Faramarz, Rostam's son, stood between the house of Bahman and the completion of a debt. Faramarz made the stand that his father never had to make, and lost. The house of Zal, which had held Iran's border through war after war that its kings started and its warriors finished, was broken at last.\n\nBahman ruled for a long time after. The chronicle gives him over a hundred years in its mythological reckoning, and those years were not hollow. Justice was administered. The kingdom was orderly. The borders held without the constant crises that had required a Rostam to solve them. In a narrower sense, Bahman succeeded at everything he attempted. But the Shahnameh treats his rule with a complexity it reserves for figures who are simultaneously right and wrong — men who achieve what they set out to achieve without that achievement being clean. He destroyed the line that had been more faithful to Iran than any king Iran had ever produced. He did it correctly. He did it completely. The victory and the loss were the same act.\n\nNear the end of his reign, Bahman made a decision that shaped the next generation's story more than any battle he had fought. He named his daughter Homay as his heir.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 69 · 1009 CE",
+      "era_fa": "1009 CE",
+      "body_en": "Ferdowsi in the last years of the poem's composition, still in poverty, watching the dynasty he had given his life to celebrate show no interest in the chronicle he had built.\n\nWriting about revenge that produces justice without producing peace. Bahman does everything right and at the end of it has a correct victory and a deeper emptiness.\n\nBahman's hundred years of correct rule feel smaller than Rostam's one impossible year. Ferdowsi was writing about what outlasts heroism and what it costs: administration outlasts heroism; it costs the things heroism built.",
+      "body_fa": "فردوسی در آخرین سال‌های نگارشِ شعر، همچنان در فقر، داشت تماشا می‌کرد که سلسله‌ای که عمرش را صرفِ ستایشش کرده شوقی به شاهنامه‌اش نشان نمی‌دهد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

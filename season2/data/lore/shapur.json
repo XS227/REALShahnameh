@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "shapur",
+  "chapter_id": 35,
+  "era": {
+    "label_en": "1013 CE · Shahnameh Chronicle",
+    "label_fa": "1013 CE"
+  },
+  "lore_summary": {
+    "en": "Two Roman armies captured. Shapur's name is carved in rock for eternity.",
+    "fa": "شاپور بزرگ پسر اردشیر، با یک مأموریت جاسوسی خطرناک به روم رفت و سپس در نبرد ادسا امپراتور رومی والریان را اسیر کرد — تنها باری که یک امپراتور رم در جنگ دستگیر شد. شاپور این پیروزی را در نقش‌برجسته‌های سنگی نقش رستم ماندگار کرد: والریان برای همیشه زانو زده."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Shapur the Great — Rome Kneels",
+      "title_fa": "شاپور بزرگ — روم به زانو",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "Shapur inherited his father's empire and immediately set about proving he was equal to it. He was Ardeshir's son in the way that mattered most to the Shahnameh: he had the Farr, the hunger, and the patience to use both well. His reign would be defined by one image above all others — a Roman emperor kneeling in the dirt at his feet — but the Shahnameh arrives at that image by a longer road than the stone reliefs at Naqsh-e Rostam suggest.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "The road begins with a spy mission. Before his great campaigns against Rome, Shapur went west in disguise to see the empire he intended to break. He traveled as a merchant or an ambassador — the chronicle varies on the details — and observed the Roman court at close range. He was recognized and imprisoned. The story of his escape involves a Roman woman who helped him slip free, drawn to him by something she could not name. He returned to Iran, assembled his armies, and crossed the border with the intelligence he had gathered at personal risk. This is how the Shahnameh prepares its kings for great victories: not with omens alone but with a willingness to go and look.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "What followed was a series of wars against Rome that climaxed at the plain of Edessa in 260 CE. The Roman Emperor Valerian led his legions east to halt the Sasanian advance and was defeated, captured, and brought before Shapur in chains. No Roman emperor had ever been taken prisoner in battle before. The Persian court received this news as confirmation of everything the Shahnameh had been building toward: that Iran, restored to itself under the Sasanian house, was again the center of the world.\n\nShapur used Valerian wisely. He did not kill him quickly. He kept him as a craftsman's model, it was said, using the emperor as a mounting block when he rode. The humiliation was architectural as well as personal — Shapur commemorated his victories in enormous rock reliefs, Valerian forever kneeling in stone at sites the Persians had been carving for a thousand years. He died in captivity. No ransom was paid. Iran had taken something from Rome that Rome could not buy back.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 73 · 1013 CE",
+      "era_fa": "1013 CE",
+      "body_en": "The capture of Valerian at Edessa in 260 CE was one of the most celebrated events in Persian historical memory. Ferdowsi had access to this story through Sasanian royal records that had every reason to preserve it in full. He was also writing at a moment when the Islamic world's relationship with Byzantium — Rome's heir — was one of ongoing conflict. The old Persian victory over Rome carried a resonance in 1013 CE that it would not have carried in a purely academic retelling. Iran had beaten Rome. That fact still mattered.\n\nWriting a king whose greatest achievement was humiliating a foreign emperor risked becoming simple triumphalism — the kind of poetry that flatters its audience without illuminating anything. Ferdowsi avoided this by giving Shapur the spy mission first. A king who risks himself personally before he risks his army is a different kind of king than one who simply commands from behind. The capture of Valerian becomes a consequence of that earlier courage rather than a raw display of Iranian superiority.\n\nShapur's victory over Rome established a precedent the Shahnameh would return to again and again in the Sasanian chapters: Iran at its best is not merely an equal to the western empires but their superior. This is not simple chauvinism — it is a survival argument. Ferdowsi was writing for an audience living under Ghaznavid Turkish rule, and the memory of an Iran that had once made Rome kneel was not entertainment. It was evidence that the condition of subjugation they were living in was temporary, and that the Farr could move again.",
+      "body_fa": "اسارت والریان در ادسا در سال ۲۶۰ میلادی یکی از جشن‌گرفته‌ترین رویدادها در حافظه تاریخی ایرانی بود. فردوسی از طریق آثار سلطنتی ساسانی به این داستان دسترسی داشت که هر دلیلی داشتند که آن را کامل حفظ کنند. همچنین در لحظه‌ای می‌نوشت که رابطه دنیای اسلام با بیزانس — وارث روم — در تعارض مداوم بود. پیروزی قدیمی ایران بر روم در سال ۱۰۱۳ میلادی طنینی داشت که در یک بازگویی صرفاً آکادمیک نمی‌داشت.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

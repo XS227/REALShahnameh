@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "crumbling-crown",
+  "chapter_id": 44,
+  "era": {
+    "label_en": "1016 CE · Shahnameh Chronicle",
+    "label_fa": "1016 CE"
+  },
+  "lore_summary": {
+    "en": "Fourteen rulers in thirty years. Civil war, betrayal, and plague. The Sassanian house devours itself.",
+    "fa": "پس از کشتن پدرش توسط شیرویه، امپراتوری ساسانی در چرخه‌ای مرگبار از کودتا و مرگ فرو رفت — هشت پادشاه در چهار سال. خزانه خالی، ارتش پراکنده، و در بیابان غرب اسلام داشت شکل می‌گرفت. یزدگرد سوم در ۶۳۲ میلادی تاجگذاری کرد: آخرین خون سلطنتی، بر تختی که دیگر پایه نداشت."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "The Crumbling Crown",
+      "title_fa": "تاج فروپاشنده",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "After Shiruyeh killed his father and took the throne, he lasted eight months. Plague. Then came Ardeshir III, a child, who lasted eighteen months before a general murdered him and sat on the throne himself for two. Boran, daughter of Khosrow Parviz, was crowned queen — the first woman to rule Sasanian Iran — and she lasted a year, trying to negotiate with Byzantium and return the True Cross in exchange for peace she could not enforce. Then came Azarmidokht, then Hormuzd VI, then Khosrow III. In the four years after Shiruyeh's death, Iran had eight rulers.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "The Shahnameh watches this with the eye of a chronicler who knows how it ends. The empire built by Ardeshir, steadied by Shapur, brought to its peak by Anushirvan, and stretched to its limits by Khosrow Parviz was now consuming itself. Generals killed kings. Kings lasted seasons. The treasury that Khosrow had spent thirty years filling and two years emptying had nothing left. The army that had taken Jerusalem was scattered, unpaid, loyal to no one.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "Out in the western desert, something was organizing. The Arab tribes that had been raiding and trading along Sasanian borders for generations had found a unifying force in Islam. They were not yet an empire — not yet an army in the formal sense — but they were moving with a coherence that the fractured Sasanian court could not match. The crumbling crown was not waiting to be knocked off. It was simply no longer attached to anything that could support its weight.\n\nYazdegerd III was crowned in 632 — a boy, the last of the blood, given a throne that had already lost its legs. The Shahnameh gives him a chapter of his own because he deserves it. But this chapter belongs to the falling — the long, accelerating, irreversible fall that began with Shiruyeh's knife and ended in a miller's hut near Merv.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 76 · 1016 CE",
+      "era_fa": "1016 CE",
+      "body_en": "The rapid succession of rulers after Khosrow Parviz — eight in four years — had no parallel in Sasanian history. Ferdowsi was listing kings he could barely give a paragraph to, because there was nothing to say: they came and went before they could do anything. He had spent thirty years building the Shahnameh as a record of Iranian kingship, and here at the end the record became a list of names and deaths. The contrast with the long chapters on Anushirvan and Khosrow Parviz was not accidental. It was the poem's argument made through structure rather than words.\n\nHow do you write about eight kings in one chapter without making it feel like a list? Ferdowsi's technique was to write about the falling itself rather than the fallers — to make the chapter about the structural collapse rather than any individual within it. The crown becomes the subject, not the heads it briefly rested on. This required Ferdowsi to think at the level of institutions rather than personalities, which is not his natural register but which the situation demanded.\n\nThe Crumbling Crown chapter is the Shahnameh's pivot from biography to elegy. Every chapter before it told the story of a specific person — a king, a hero, a rebel. This chapter tells the story of an institution dying. That shift in register prepares the reader for what is coming: not a battle lost but a world ended, not a king killed but a civilization transformed. The Shahnameh is about to leave the territory it knows, and this chapter is the last moment before it does.",
+      "body_fa": "جانشینی سریع حاکمان پس از خسرو پرویز — هشت نفر در چهار سال — در تاریخ ساسانی سابقه‌ای نداشت. فردوسی شاهانی را فهرست می‌کرد که به زحمت می‌توانست یک پاراگراف به آنها بدهد، چون چیزی برای گفتن وجود نداشت: آمدند و رفتند پیش از اینکه بتوانند کاری انجام دهند. سی سال صرف ساختن شاهنامه به عنوان سابقه شاهی ایرانی کرده بود، و اینجا در پایان سابقه به فهرستی از نام‌ها و مرگ‌ها تبدیل شد. تضاد با فصل‌های طولانی درباره انوشیروان و خسرو پرویز تصادفی نبود. استدلال شعر از طریق ساختار نه کلمات بود.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "bahram-chubin",
+  "chapter_id": 38,
+  "era": {
+    "label_en": "1014 CE · Shahnameh Chronicle",
+    "label_fa": "1014 CE"
+  },
+  "lore_summary": {
+    "en": "The greatest general who dared to call himself king. His rebellion reshapes the Sassanian world.",
+    "fa": "بهرام چوبین بهترین سردار ساسانی بود که پس از یک توهین آشکار از سوی هرمز چهارم — فرستادن دوک و لباس زنانه — شورش کرد. پس از سقوط هرمز به دست پسرانش، بهرام خود ادعای تخت کرد اما خسرو پرویز با کمک روم او را شکست داد. در تبعید میان ترکان به دست فرستاده‌ای از دربار خسرو کشته شد."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Bahram Chubin — The Rebel",
+      "title_fa": "بهرام چوبین — شورشی",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "Bahram Chubin was the finest general the Sasanian empire had produced in a generation — lean as a lance, hence the name, the commander of the northern armies, the man who held the line against Byzantium and broke the Khagan of the Turks. He came from the Mihran clan, old Parthian nobility who had served the Sasanians for centuries while never quite forgetting that they had once ruled Iran themselves. That memory would cost everyone a great deal.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "The breaking point came through an insult. King Hormuz IV, son of the great Anushirvan, had sent Bahram a distaff and a set of women's clothes — the most devastating contempt a warrior culture could express. Accounts differ on what provoked it: a battlefield reverse, excessive celebration of a victory, a rumor at court. The reason mattered less than the distaff. Bahram held it up before his army and asked them what they thought of a king who sent such things to the man who had just defended Iran's northern border with his own blood. His army had an answer. The rebellion began that day.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "Hormuz did not survive it — not because Bahram killed him but because his own sons did. Khosrow and the princes deposed their father and seized the throne, hoping to end the war by giving the rebel what he wanted: a new king. It was not enough. Bahram Chubin had already gone further than a general's grievance. He claimed the throne for himself, the first non-Sasanian to do so since Ardeshir had founded the dynasty. His lineage from the old Arsacid houses was real. His Farr, in his own judgment, was sufficient.\n\nKhosrow Parviz, the new king, fled to Byzantium and returned with Roman legions at his back. The decisive battle broke Bahram's army. He escaped east into the steppes, found refuge among the Turks, and spent the rest of a shortened life in exile. He died by assassination — an agent sent from Khosrow's court found him in a foreign camp and did what courts do to enemies they cannot defeat in the field. The Shahnameh mourns him in a way it does not mourn most rebels: because he was magnificent, and because the empire that destroyed him was already beginning to rot.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 74 · 1014 CE",
+      "era_fa": "1014 CE",
+      "body_en": "Bahram Chubin's rebellion was one of the most dramatic moments of late Sasanian history, and his story had circulated in Persian oral tradition long before Ferdowsi. He was a figure the audience already knew and already argued about. Ferdowsi was writing for people who would have opinions about whether Bahram was a hero or a traitor — and who would bring those opinions to the text. Writing for a known controversy requires more care than writing for a blank page. Ferdowsi's sympathy for Bahram is visible but never stated directly.\n\nThe distaff is one of the most powerful objects in the Shahnameh — a small domestic item that detonates an empire. Ferdowsi understood that the insult worked because Bahram's entire identity was constructed around martial honor, and that Hormuz had found the exact pressure point. Writing that scene required Ferdowsi to make the reader feel the humiliation viscerally enough to understand why a great general abandoned everything for revenge. The object does that work that a thousand lines of motivation could not.\n\nBahram Chubin represents the last serious attempt by the old Arsacid/Parthian nobility to reclaim power from the Sasanians before the Arab conquest ended the argument permanently. His failure proved that the Sasanian house, even weakened, had resources — Byzantine allies, Farr-language, the weight of tradition — that a rebel general could not match. The chronicle mourns him anyway, because the empire that survived him was the one that would fall to the Arabs within a generation. He was the last great Iranian military figure before the end.",
+      "body_fa": "شورش بهرام چوبین یکی از دراماتیک‌ترین لحظات تاریخ دیررس ساسانی بود و داستانش در سنت شفاهی ایرانی بسیار پیش از فردوسی جریان داشت. او شخصیتی بود که مخاطب از قبل می‌شناخت و از قبل درباره‌اش بحث می‌کرد. فردوسی برای مردمی می‌نوشت که درباره اینکه آیا بهرام قهرمان بود یا خائن نظر داشتند. همدردی فردوسی با بهرام قابل مشاهده است اما هیچ‌گاه مستقیماً بیان نمی‌شود.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

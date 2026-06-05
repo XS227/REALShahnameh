@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "yazdegerd-iii",
+  "chapter_id": 45,
+  "era": {
+    "label_en": "1016 CE · Shahnameh Chronicle",
+    "label_fa": "1016 CE"
+  },
+  "lore_summary": {
+    "en": "The last Sassanian king runs east with his treasury and no army. The chronicle watches him and weeps.",
+    "fa": "یزدگرد سوم در چهارده سالگی بر تخت نشست و نوزده سال در برابر سپاه عرب به سمت شرق عقب‌نشینی کرد. قادسیه، نهاوند، سقوط تیسفون — هر شهری هزینه دفاع از او را حساب کرد و نپذیرفت. در کنار رودی نزدیک مرو به دست آسیابانی برای جواهراتش کشته شد. فرّه رفته بود."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Yazdegerd III — The Last King",
+      "title_fa": "یزدگرد سوم — آخرین شاه",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "Yazdegerd III was fourteen years old when they put the crown on his head in 632 CE, the last male of the Sasanian line anyone could find in the chaos of the previous four years. The empire he inherited was already half-gone — the treasury empty, the provinces ungovernable, the army a memory of what it had been under Shapur or Anushirvan. He would spend the next nineteen years running east ahead of armies he could not defeat.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "The Arab forces that crossed into Iraq were not the raiding parties the Sasanians had dealt with for generations. They were armies with ideology, momentum, and a willingness to die that the exhausted Sasanian levies could not match. At Qadisiyyah in 636 the core of the Sasanian army was broken. At Nahavand in 642 — what the Arab sources called the 'Conquest of Conquests' — the last organized resistance ended. Ctesiphon, the great capital, was taken and stripped.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1016 CE · Ferdowsi's Chronicle",
+      "era_fa": "1016 CE",
+      "body_en": "Yazdegerd retreated. Always east. He appealed to the eastern nobles, to the King of the Turks, to the Emperor of China. Help came in promises and delegations and never in armies. Each city that might have sheltered him weighed the cost and decided it was not worth defending a king the tide had already passed. He was still the king. He simply had no kingdom left.\n\nHe died near Merv, in a miller's hut by a river. The miller killed him for his jewels, not knowing or not caring who he was. The Shahnameh marks this as the end the empire deserved — not a great last stand, not a heroic death in battle, but a king alone in the dark with no one left to defend him. The Farr had moved on. Iran had not ended. It had changed hands.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 76 · 1016 CE",
+      "era_fa": "1016 CE",
+      "body_en": "Yazdegerd III was the last Sasanian king, and his death in 651 CE marked the formal end of the dynasty that Ferdowsi's entire project was built around preserving in memory. Writing his death required Ferdowsi to confront directly the failure that the whole Shahnameh had been circling: that the Iran he was reconstructing in verse had been conquered, its faith replaced, its kings ended. He was writing the death of the world he was trying to save, and he knew it. The restraint with which he rendered Yazdegerd's end — a miller, a riverbank, a king alone — is grief compressed into simplicity.\n\nThe death of Yazdegerd had to be small — not a battlefield death, not a speech, not a final confrontation. A miller. A riverbank. Jewels. That smallness is the point. Ferdowsi had to resist every epic instinct to make the last king's death worthy of the tradition it was ending. The Shahnameh earns its elegy for Iran by refusing to falsify Yazdegerd's end. It was small, and ordinary, and alone. That is what the empire actually came to.\n\nYazdegerd's death closes the chronicle of Iranian kings that began with Keyumars on his mountain. The arc is complete: from a king who taught men to wear animal skins to a king killed for his jewels in a stranger's hut. The Shahnameh does not present this as defeat. It presents it as transformation. The Farr is not destroyed when the dynasty ends — it moves, as it always has, to wherever Iran's spirit next takes root. That is the argument the poem will spend its final chapters making.",
+      "body_fa": "یزدگرد سوم آخرین شاه ساسانی بود و مرگش در سال ۶۵۱ میلادی پایان رسمی سلسله‌ای را نشان داد که کل پروژه فردوسی بر پایه حفظ حافظه آن بنا شده بود. نوشتن مرگش از فردوسی خواست مستقیماً با شکستی که کل شاهنامه دور آن می‌چرخید روبرو شود: اینکه ایرانی که در شعر بازسازی می‌کرد فتح شده، دینش جایگزین شده، پادشاهانش پایان یافته بودند. مرگ دنیایی را می‌نوشت که می‌کوشید نجات دهد، و می‌دانست. خویشتن‌داری با که مرگ یزدگرد را نشان داد — یک آسیابان، یک کنار رود، یک شاه تنها — غمی است فشرده در سادگی.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

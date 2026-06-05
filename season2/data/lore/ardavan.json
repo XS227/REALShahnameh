@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "ardavan",
+  "chapter_id": 33,
+  "era": {
+    "label_en": "1013 CE · Shahnameh Chronicle",
+    "label_fa": "1013 CE"
+  },
+  "lore_summary": {
+    "en": "The last Parthian king sees a new fire rising from Pars. He fights it — and the old age ends.",
+    "fa": "اردوان، آخرین شاه اشکانی، اشتباه کرد که اردشیر پسر پاپک را در دربارش نگه داشت. اردشیر که فره ایزدی داشت گریخت، شورش کرد و در نبرد هرمزدگان اردوان را کشت. با مرگ اردوان، پانصد سال حکومت اشکانی پایان یافت و دوران ساسانی آغاز شد."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Ardavan — The Last Arsacid",
+      "title_fa": "اردوان — آخرین اشکانی",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "Ardavan was the last of the Ashkanian kings, and he made the mistake of keeping near him a young man whose ambitions were larger than his station. Ardeshir, son of Papak, had come from the province of Pars — a region that had once been the heartland of the Achaemenid empire and that still carried a certain pride in its bones. He served in Ardavan's court, learned its rhythms, and watched. Then he stopped watching and started moving.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "/season2/uploads/chapters/ardavan.png",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "The Shahnameh tells it with the clean logic of destiny. Ardeshir had the Farr — the divine radiance that marked a king in the old Iranian understanding. Ardavan, looking at the same young man, saw only a subordinate who had grown insolent. He ordered Ardeshir confined to the stables. Ardeshir fled instead, taking with him a slave woman named Gulnar who had chosen his future over her master's. The pursuit began. There is a ram in the story — a great white ram seen bounding toward Ardeshir as he fled, a sign that the Farr was moving from the old dynasty to the new.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "What followed was years of open war. Ardeshir raised Pars against the Arsacid overlord, taking city after city, building alliances, and refusing every offer of settlement. He was not trying to negotiate a better position. He was ending a dynasty. Ardavan mustered his forces for a final campaign and met Ardeshir at the plain of Hormozdgan. The old king fought well. He was not a weak man or a foolish one. He simply had the wrong kind of Farr — the kind that had already moved on.\n\nArdavan died in the battle. The Ashkanian line, which had held Iran for nearly five centuries through Greek interruption and Roman pressure and everything else history had thrown at it, ended on that field. The Sasanian age began the same day. The chronicle marks the transition without ceremony — one king falls, another rises, and the world rearranges itself around the new center of gravity.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 73 · 1013 CE",
+      "era_fa": "1013 CE",
+      "body_en": "Ferdowsi's primary source material for the Sasanian period came from the Khodaynamag — the 'Book of Kings' compiled under Sasanian royal patronage. That book had every incentive to present the Sasanian founding as inevitable and righteous. Ferdowsi worked from that tradition while quietly giving Ardavan enough dignity that his fall reads as tragedy rather than justice. The Sasanian bias is there in the text, but so is Ferdowsi's instinct to complicate the official version.\n\nWriting the death of a legitimate king at the hands of a usurper and making it feel like destiny rather than theft. Ferdowsi managed it through the ram — the sign of the Farr departing. Once you accept that the divine radiance moves of its own accord, no king's fall is unjust because justice is not what the Farr measures. It measures something else: fitness, readiness, the moment. Ardavan had the throne. Ardeshir had the moment.\n\nArdavan's fall closes the long bridge between the mythic Kayanian kings and the historical Sasanian dynasty. Everything from Keyumars to Ardavan was building to this moment of transition. The Sasanian period that follows will be the most historically documented section of the Shahnameh — we are now in an era where names, dates, and events align with outside sources. The chronicle shifts register here from legend to something closer to history, and Ardavan's death is the hinge.",
+      "body_fa": "منبع اصلی فردوسی برای دوره ساسانی خداینامه بود — کتاب شاهان که تحت حمایت سلطنتی ساسانی تدوین شده بود. آن کتاب هر انگیزه‌ای داشت که تأسیس ساسانی را اجتناب‌ناپذیر و عادلانه نشان دهد. فردوسی از آن سنت کار کرد در حالی که آرام به اردوان به اندازه کافی شأن داد تا سقوطش به عنوان تراژدی خوانده شود نه عدالت. سوگیری ساسانی در متن هست، اما غریزه فردوسی برای پیچیده کردن روایت رسمی هم هست.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

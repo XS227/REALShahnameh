@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "yazdegerd-sinner",
+  "chapter_id": 37,
+  "era": {
+    "label_en": "1014 CE · Shahnameh Chronicle",
+    "label_fa": "1014 CE"
+  },
+  "lore_summary": {
+    "en": "The king who earned the worst name in the chronicle. Cruelty breeds only its mirror.",
+    "fa": "یزدگرد گناهکار پدر بهرام گور، شاهی بود که روحانیون زرتشتی را به چالش کشید و به مسیحیان و یهودیان آزادی داد. اشراف از او می‌ترسیدند و دوستش نداشتند. مرگش در کنار چشمه‌ای نزدیک طوس رازآلود بود: اسبی ناشناس با یک لگد او را کشت و ناپدید شد — روحانیون آن را مجازات الهی خواندند."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Yazdegerd the Sinner",
+      "title_fa": "یزدگرد گناهکار",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "The Zoroastrian priests gave Yazdegerd the title al-Athim — the Sinner — and the name stuck across centuries. He was Bahram Gur's father, the king Bahram had to both inherit and escape, and the Shahnameh's portrait of him is one of its most complicated: a ruler who was just to foreigners and unjust to his own, tolerant of Christians and Jews in an age when his clergy wanted persecution, and feared by his own nobles so thoroughly that they celebrated when he died.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "What made him a sinner in Zoroastrian eyes was precisely what made him interesting to everyone else. He refused to let the fire-priests dominate the court the way they had under his predecessors. He gave Christians permission to build churches. He allowed Jewish communities to govern themselves under their own laws. He was, by the standards of his time and place, unusually pluralist — and the religious establishment hated him for it. When the Shahnameh calls him the Sinner, it is transmitting the clergy's verdict, not necessarily Ferdowsi's own.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "His court was also dangerous to be near. He punished nobles harshly for real or imagined offenses. He trusted no one fully. The fear he inspired was not the productive fear of a king who rewards loyalty — it was the paralytic fear of a king who might decide at any moment that you had failed him. His nobles did not love him. They endured him.\n\nHis death, when it came, was strange enough to become theology. Near the city of Tus, at a spring, a horse appeared from nowhere — a horse of unearthly beauty that no one in the royal party recognized. Yazdegerd approached it. It kicked him once, in the chest, and vanished. He died where he fell. The clergy declared it divine punishment. The nobles who had lived in fear of him breathed again. His son Bahram, sent away to be raised in Arabia, came back to claim a throne still warm from a killing no one had expected and no one mourned.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 74 · 1014 CE",
+      "era_fa": "1014 CE",
+      "body_en": "Ferdowsi's source for Yazdegerd I was primarily the Zoroastrian priestly tradition, which had every reason to remember him harshly. The Khodaynamag, compiled under Sasanian patronage, reflected the clergy's verdict. But Ferdowsi was writing in an Islamic context where Yazdegerd's tolerance of non-Zoroastrians would not necessarily read as sinful. The tension in the chapter — between what the sources said and what Ferdowsi could see — produced one of the Shahnameh's more nuanced royal portraits: a man condemned by his own tradition for virtues another tradition would have celebrated.\n\nWriting a king whose most sympathetic qualities were the ones his own tradition condemned required Ferdowsi to let the contradiction stand without resolving it. He does not rehabilitate Yazdegerd or defend him — he simply presents the evidence and lets the reader see that 'sinner' is a word applied by people with interests. The mysterious horse at the spring is Ferdowsi's most pointed ambiguity: it could be divine judgment, a natural accident, or a conspiracy. He does not choose. Neither should we.\n\nYazdegerd the Sinner is the Shahnameh's clearest example of a king remembered by his enemies. Every other royal epithet in the poem — the Just, the Great, the Brave — was applied by admirers. This one was applied by men who feared and resented him. Ferdowsi preserved it without endorsing it, and in doing so created a space where the reader can question whose verdict history actually records. That skepticism about official memory is, quietly, one of the most radical things the Shahnameh does.",
+      "body_fa": "منبع فردوسی برای یزدگرد اول عمدتاً سنت روحانیون زرتشتی بود که هر دلیلی داشتند که او را به سختی به یاد بیاورند. خداینامه که تحت حمایت سلطنتی ساسانی تدوین شده بود، حکم روحانیون را منعکس می‌کرد. اما فردوسی در زمینه اسلامی می‌نوشت که در آن تساهل یزدگرد نسبت به غیرزرتشتیان لزوماً گناه به نظر نمی‌رسید. این تنش — بین آنچه منابع می‌گفتند و آنچه فردوسی می‌توانست ببیند — یکی از ظریف‌ترین تصویرهای سلطنتی شاهنامه را تولید کرد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

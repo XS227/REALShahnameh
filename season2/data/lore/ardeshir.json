@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "ardeshir",
+  "chapter_id": 34,
+  "era": {
+    "label_en": "1013 CE · Shahnameh Chronicle",
+    "label_fa": "1013 CE"
+  },
+  "lore_summary": {
+    "en": "A herdsman's ambition, a court astrologer's prophecy, and a dynasty is born. Ardeshir refounds Pars.",
+    "fa": "اردشیر پس از کشتن اردوان، ایران پراکنده را با جنگ‌های پی‌درپی متحد کرد. داستان کرم هفتواد نشان می‌دهد که او نه تنها دشمنان نظامی بلکه قدرت‌های محلی جادویی را هم از بین برد. با تأسیس تیسفون و احیای آتشکده‌های زرتشتی، ایران ساسانی را بنیان گذاشت."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Ardeshir I — Founder of Sassan",
+      "title_fa": "اردشیر یکم — بنیانگذار ساسان",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "Ardeshir did not stop at killing Ardavan. He kept moving, and the thing he was building became clear only after several years of constant war: he was not merely replacing one king with another. He was replacing a system. The Ashkanian model had been loose — regional lords kept their thrones, paid tribute, sent soldiers when asked, and otherwise ran their own affairs. Ardeshir ended that. He marched against each regional king in turn, absorbed their territories, and installed governors who answered to him. Iran was being pulled back into a single shape.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "The Shahnameh gives this consolidation a story it deserves: Haftvad and the worm. A girl who spun thread had found a small worm in an apple and kept it in her spindle case. Wherever the worm went, her thread grew fine and abundant. Her father Haftvad grew rich, then powerful, then a king in his own right, ruling a fortress on the edge of Ardeshir's new empire. The worm had grown with the fortune — it was now enormous, kept in the fortress and fed on milk and flour. It was the source of everything Haftvad had, and Haftvad knew it.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1013 CE · Ferdowsi's Chronicle",
+      "era_fa": "1013 CE",
+      "body_en": "Ardeshir attacked Haftvad twice and failed. The worm's luck held against armies. He won on the third attempt through cunning: he sent a trusted man disguised as a merchant carrying sesame and honey, with molten lead hidden in the cargo. The merchant gained access to the worm's chamber under the pretense of feeding it, and poured the metal down its throat. The worm died. Haftvad's fortress fell the next morning, its defenders suddenly bereft of whatever had been sustaining them.\n\nThis is the Shahnameh's way of saying that Ardeshir's consolidation was not merely military. He was also ending the old local sorceries, the regional loyalties that outlasted every dynasty, the stubborn particular powers that made Iran ungovernable as a whole. The worm was all of those things at once. When it died, centralized Iran became possible. Ardeshir built his capital at Ctesiphon, restored the Zoroastrian fire temples, and reigned long enough to hand his son a functioning empire.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 73 · 1013 CE",
+      "era_fa": "1013 CE",
+      "body_en": "The Sasanian dynasty that Ardeshir founded was the direct cultural predecessor of the world Ferdowsi was trying to preserve. The Shahnameh's source texts — the Khodaynamag and the Zoroastrian priestly records — were Sasanian products. Writing Ardeshir's story meant writing the origin of his own tradition. Ferdowsi was also watching the Ghaznavid sultan attempt something similar: the forcible unification of a fragmented eastern Iranian world under a single court. The parallel was uncomfortable and probably deliberate.\n\nThe Haftvad episode gave Ferdowsi a way to talk about the thing that resists unification without naming it directly. The worm is not evil in the usual sense — it brought real prosperity to real people. What it could not do was coexist with empire. Every centrifugal force in Iranian history — every regional loyalty, every local god, every stubborn particular — is in that worm. Ardeshir kills it not because it was wicked but because empires require the elimination of alternatives.\n\nArdeshir's reign is the pivot on which the entire second half of the Shahnameh turns. Before him, the chronicle was myth layered over dim history. After him, it is history layered over myth. The Sasanian kings who follow — Shapur, Bahram, Khosrow — are figures whose names appear in Roman sources, Byzantine chronicles, and stone inscriptions. The poem enters the world of verifiable fact. Ardeshir made that transition possible by building an empire coherent enough to leave records.",
+      "body_fa": "سلسله ساسانی که اردشیر بنیان گذاشت پیشین مستقیم فرهنگی دنیایی بود که فردوسی می‌کوشید حفظ کند. متون منبع شاهنامه — خداینامه و آثار روحانیون زرتشتی — محصولات ساسانی بودند. نوشتن داستان اردشیر یعنی نوشتن خاستگاه سنت خودش. فردوسی همچنین می‌دید که سلطان غزنوی چیز مشابهی را تلاش می‌کند: اتحاد اجباری دنیای شرقی ایرانی پراکنده زیر یک دربار. تشابه ناخوشایند بود و احتمالاً عمدی.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "schema": "season2-lore@1",
+  "updatedAt": "2026-06-05T12:00:00Z",
+  "chapter_slug": "bahram-gur",
+  "chapter_id": 36,
+  "era": {
+    "label_en": "1014 CE · Shahnameh Chronicle",
+    "label_fa": "1014 CE"
+  },
+  "lore_summary": {
+    "en": "The lion hunter. The poet-king who rhymes his own legend. Bahram vanishes into the earth with his horse.",
+    "fa": "بهرام گور که در دربار عرب بزرگ شده بود، تاج خود را با کشتن دو شیر پس گرفت. شکارچی بی‌همتا، عاشق‌پیشه و شاهی مبدل‌پوش بود که میان مردم می‌رفت تا حقیقت را بشنود. مرگش رازآلود بود — در باتلاق شکارگاه رفت و دیگر برنگشت، گویی زمین او را بلعیده."
+  },
+  "timeline": [],
+  "scenes": [
+    {
+      "id": "scene-1",
+      "order": 1,
+      "title_en": "Bahram Gur — The Lion Hunter",
+      "title_fa": "بهرام گور — شیرشکار",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "Bahram Gur is the Shahnameh's most human king — the one who hunts, loves, laughs, and disappears into legend without a body to bury. He was sent as a child to the Arab court of Nu'man in the southern lands, raised among horses and desert skills while his father Yazdegerd reigned in Iran. When Yazdegerd died, the Persian nobles refused the boy raised abroad. They crowned another. Bahram rode back and settled the matter himself: two lions had been placed guarding his crown in an open field. He walked forward, killed both lions with his club, and put the crown on his own head. The nobles found no further objections.",
+      "body_fa": "",
+      "atmosphere": "fated",
+      "image": "",
+      "reward": {
+        "xp": 80
+      }
+    },
+    {
+      "id": "scene-2",
+      "order": 2,
+      "title_en": "The Chronicle Continues",
+      "title_fa": "دفترِ 2",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "His name means onager — the wild ass of the steppe — because no one hunted the way he did. There is a famous scene with a slave girl named Fitna who challenged him to pin a gazelle's hoof to its ear with a single arrow while riding at full gallop. He did it. She was unimpressed, calling it mere habit rather than skill. He threw her from his horse in fury. She survived, and spent years training a calf to carry her on its back up a staircase each day, adding weight as it grew, until it was a full-grown ox she could carry upstairs. When she showed Bahram what practice could achieve, he understood what she had been saying. He took her back. The chronicle uses their argument to ask what separates talent from discipline — and decides, quietly, that discipline wins.",
+      "body_fa": "",
+      "atmosphere": "neutral",
+      "image": null,
+      "reward": {
+        "xp": 90
+      }
+    },
+    {
+      "id": "scene-3",
+      "order": 3,
+      "title_en": "Ferdowsi's Account",
+      "title_fa": "دفترِ 3",
+      "era_en": "1014 CE · Ferdowsi's Chronicle",
+      "era_fa": "1014 CE",
+      "body_en": "He was also a king of disguises. He went among his subjects in common clothing to hear what they said about him and to judge without being judged. He went to India, to China, to places a king had no business going. He loved music and kept singers close. Seven princesses from seven kingdoms told him stories on seven nights — each story a different color, a different world, a lesson he could not have received from his ministers.\n\nHis death was in keeping with everything else. He was hunting onagers in the marshes — his own namesake quarry — and rode into the swamp after one and did not come back. No body was found. The earth took him the same way it takes a story: completely, leaving only the shape of where he had been.",
+      "body_fa": "",
+      "atmosphere": "dark",
+      "image": null,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "ferdowsi-context",
+      "order": 4,
+      "title_en": "Ferdowsi Writing This Chapter",
+      "title_fa": "فردوسی این دفتر را می‌نوشت",
+      "era_en": "Age 74 · 1014 CE",
+      "era_fa": "1014 CE",
+      "body_en": "Bahram Gur was one of the most popular figures in all of Persian literary culture long before Ferdowsi wrote his version. His stories circulated in oral tradition, in court entertainments, in painted manuscripts. Ferdowsi was therefore not discovering Bahram but curating him — selecting which episodes deserved to enter the canonical version and which should be left to the popular imagination. The Fitna episode in particular had many variants; Ferdowsi's choice to make it a story about discipline rather than cruelty says something about what he wanted Persian kingship to mean.\n\nWriting a king who is defined by lightness — by hunting, love, disguise, and a mysterious disappearance — after chapters about conquest and dynasty-building required a shift in register. Ferdowsi let the Fitna episode carry the chapter's weight: a king who cannot distinguish talent from effort is a king who does not understand his own people. Bahram learns this lesson and is a better king for it. The lightness is the point, not a distraction from it.\n\nBahram Gur is the template for the romantic hero-king that Persian literature would develop for the next five centuries. Nizami's Haft Peykar, Amir Khusrow's retellings, dozens of illustrated manuscripts — all draw from the figure Ferdowsi established here. His disappearance into the swamp also gives the Shahnameh one of its rare moments of unresolved ending: a king who does not die so much as become a story. He passes into the same category as Keyumars and Kay Khosrow — kings who left before they could be diminished.",
+      "body_fa": "بهرام گور یکی از محبوب‌ترین شخصیت‌ها در تمام فرهنگ ادبی ایرانی بود بسیار پیش از اینکه فردوسی نسخه‌اش را بنویسد. داستان‌هایش در سنت شفاهی، در سرگرمی‌های دربار، در دست‌نوشته‌های نگارگری‌شده می‌چرخید. بنابراین فردوسی بهرام را کشف نمی‌کرد بلکه او را گزینش می‌کرد — انتخاب می‌کرد کدام دوره‌ها لایق ورود به نسخه قانونی هستند. انتخاب فردوسی برای تبدیل کردن داستان فتنه به داستانی درباره انضباط نه بی‌رحمی نشان می‌دهد که می‌خواست شاهی ایرانی چه معنایی داشته باشد.",
+      "atmosphere": "fated",
+      "image": null,
+      "reward": {
+        "xp": 120
+      }
+    }
+  ],
+  "characters": [],
+  "places": [],
+  "battle": null,
+  "codex": []
+}
