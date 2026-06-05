@@ -371,7 +371,7 @@
       claimBtn._bound = true;
       claimBtn.addEventListener("click", () => {
         try { localStorage.setItem(claimKey, "1"); } catch {}
-        if (window.Player) window.Player.addResource("xp", 200);
+        if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
         if (window.RealSync) window.RealSync.syncBalance();
         if (claimRow) claimRow.hidden = true;
         if (window.toast) window.toast("+200 XP — Daily Bonus claimed!");
@@ -744,8 +744,8 @@
     let offlineZar = 0;
     if (zarPerHr > 0 && minAway >= 10 && lsRead(offlineCollectedKey) !== '1') {
       const hoursAway = Math.min(minAway / 60, 8);
-      const vipBonus  = 1 + (Math.floor(((window.Player && window.Player.getResource)
-        ? (window.Player.getResource('xp') || 0) : 0) / 1000)) * 0.05;
+      const vipBonus  = 1 + (Math.floor(((window.RealPlayer && window.RealPlayer.getResource)
+        ? (window.RealPlayer.getResource('xp') || 0) : 0) / 1000)) * 0.05;
       const teamMult  = parseFloat(lsRead('real_team_mult') || '1') || 1;
       offlineZar = Math.max(1, Math.floor(hoursAway * zarPerHr * vipBonus * teamMult));
     }
@@ -785,10 +785,10 @@
           localStorage.setItem(LAST_VISIT_KEY, today);
           localStorage.setItem(LOCAL_STREAK_KEY, String(streak));
         } catch {}
-        if (window.Player) {
-          if (reward.xp)  window.Player.addResource('xp',  reward.xp);
-          if (reward.zar) window.Player.addResource('zar', reward.zar);
-          if (reward.gem) window.Player.addResource('gems', reward.gem);
+        if (window.RealPlayer) {
+          if (reward.xp)  window.RealPlayer.addResource('xp',  reward.xp);
+          if (reward.zar) window.RealPlayer.addResource('zar', reward.zar);
+          if (reward.gem) window.RealPlayer.addResource('gems', reward.gem);
         }
         if (window.RealSync) window.RealSync.syncBalance();
         refreshHud();
@@ -799,7 +799,7 @@
       showOfflinePopup(offlineZar, msAway, () => {
         // Mark collected ONLY after collect
         try { localStorage.setItem(offlineCollectedKey, '1'); } catch {}
-        if (window.Player) window.Player.addResource('zar', offlineZar);
+        if (window.RealPlayer) window.RealPlayer.addResource('zar', offlineZar);
         if (window.RealSync) window.RealSync.syncBalance();
         refreshHud();
         showStrike();
