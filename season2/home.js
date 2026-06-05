@@ -375,12 +375,14 @@
     if (!claimBtn) return;
     claimBtn.addEventListener("click", () => {
       const key = "real_daily_bonus_claimed_" + todayKey();
-      if (lsRead(key) === "1") return;           // already claimed — ignore double-tap
+      if (lsRead(key) === "1") return;
+      /* Immediate visual feedback — proves handler fired */
+      claimBtn.disabled = true;
+      claimBtn.textContent = "✓ Claimed!";
       try { localStorage.setItem(key, "1"); } catch {}
       if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
       if (window.RealSync)   window.RealSync.syncBalance();
       refreshTreasury();
-      if (claimRow) claimRow.hidden = true;
       /* Show toast using the [data-toast] element directly */
       const toastEl = document.querySelector("[data-toast]");
       if (toastEl) {
@@ -389,6 +391,7 @@
         clearTimeout(wireClaimButton._t);
         wireClaimButton._t = setTimeout(() => toastEl.classList.remove("show"), 2000);
       }
+      setTimeout(() => { if (claimRow) claimRow.hidden = true; }, 600);
     });
   };
 
