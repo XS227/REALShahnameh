@@ -396,7 +396,7 @@
     },
     {
       "id": "shoulder-serpents",
-      "category": "creature",
+      "category": "concept",
       "title_en": "The Shoulder Serpents",
       "title_fa": "ماران شانه",
       "summary_en": "Two black serpents that grow from Zahhak's shoulders after Iblis' kisses. They cannot be cut off — they grow back. Their daily requirement: two human brains. They are the Shahnameh's most precise symbol of how tyranny consumes: daily, at the same time, without ceremony.",
@@ -446,7 +446,7 @@
     },
     {
       "id": "birmaya-bull",
-      "category": "creature",
+      "category": "concept",
       "title_en": "Birmaya — The Divine Bull",
       "title_fa": "برمایه — گاوِ الهی",
       "summary_en": "The divine bull that nurtures the infant Fereydun in the mountains of Alborz. Zahhak kills Birmaya when he comes searching for the prophesied child — but Fereydun is already gone. The bull's death is meaningless: the thing it protected is already beyond reach.",

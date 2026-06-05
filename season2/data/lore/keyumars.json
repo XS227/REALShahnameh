@@ -531,7 +531,7 @@
     },
     {
       "id": "ahriman-codex",
-      "category": "creature",
+      "category": "concept",
       "title_en": "Ahriman, Lord of the Dark",
       "title_fa": "اهریمن، خداوندگارِ تاریکی",
       "summary_en": "Ancient evil itself — older than memory, patient as stone. He is named in this chapter; he is not yet faced.",
@@ -541,7 +541,7 @@
     },
     {
       "id": "black-div-codex",
-      "category": "creature",
+      "category": "concept",
       "title_en": "The Black Div",
       "title_fa": "دیوِ سیاه",
       "summary_en": "The first demon named in the Shahnameh. Black-skinned, fire-eyed, sent to break the dawn.",
@@ -567,7 +567,7 @@
       "summary_en": "The poet who, over thirty years, wrote sixty thousand verses to keep this chronicle alive. He said: 'I shall live by what I wrote.'",
       "summary_fa": "شاعری که در درازِ سی سال، شصت هزار بیت سرود تا این تاریخ زنده بماند. گفت: «نمیرم از این پس که من زنده‌ام.»",
       "image": "/assets/images/lore/ferdowsi-intro.png",
-      "unlock_via": "intro:complete"
+      "unlock_via": "scene:praise-of-wisdom"
     }
   ]
 }
