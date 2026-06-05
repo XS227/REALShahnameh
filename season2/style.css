@@ -330,6 +330,134 @@ a { color: inherit; }
   white-space: nowrap;
 }
 
+/* ----- Return popups (offline earnings + daily strike) ------------------- */
+
+.return-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.rm-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 5, 11, 0.82);
+  backdrop-filter: blur(4px);
+}
+.rm-card {
+  position: relative;
+  z-index: 1;
+  width: min(420px, 100%);
+  background: linear-gradient(160deg, #0e1330 0%, #07091a 100%);
+  border: 1px solid var(--border-gold);
+  border-bottom: none;
+  border-radius: 24px 24px 0 0;
+  padding: 28px 24px 36px;
+  text-align: center;
+  box-shadow: 0 -8px 48px rgba(244, 197, 107, 0.18);
+  animation: rm-slide-up 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes rm-slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.rm-icon {
+  font-size: 42px;
+  line-height: 1;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 12px rgba(244, 197, 107, 0.6));
+}
+.rm-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--gold);
+  margin: 0 0 6px;
+}
+.rm-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+.rm-reward-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.rm-zar-ico { font-size: 28px; }
+.rm-amount  { font-size: 34px; font-weight: 900; color: var(--gold); min-width: 80px; }
+.rm-zar-label { font-size: 16px; font-weight: 700; opacity: .8; }
+.rm-transfer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 24px;
+  min-height: 18px;
+}
+.rm-transfer-line { color: var(--jade); font-weight: 600; }
+.rm-transfer-arrow { color: var(--jade); font-size: 14px; }
+.rm-transfer-dest { opacity: .7; }
+.rm-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+.gold-btn {
+  background: linear-gradient(135deg, var(--gold), #c8890a);
+  color: #07080f;
+  box-shadow: 0 4px 20px rgba(244, 197, 107, 0.4);
+}
+.rm-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 4px;
+}
+.xp-chip  { background: rgba(94, 162, 255, 0.18); color: #7ac4ff; border: 1px solid rgba(94,162,255,.3); }
+.zar-chip { background: rgba(244, 197, 107, 0.18); color: var(--gold); border: 1px solid var(--border-gold); }
+.gem-chip { background: rgba(140, 109, 255, 0.18); color: #cdbcff; border: 1px solid var(--border-violet); }
+/* Daily strike — 7-dot week row */
+.strike-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.sd {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  background: rgba(255,255,255,.04);
+}
+.sd.done  { background: rgba(83,215,156,.2); border-color: var(--jade); color: var(--jade); }
+.sd.today { background: rgba(244,197,107,.25); border-color: var(--gold); color: var(--gold); box-shadow: 0 0 10px rgba(244,197,107,.45); }
+body.modal-open { overflow: hidden; }
+
 /* ----- Balance row (Play) ------------------------------------------------ */
 
 .balance-row {

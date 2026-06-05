@@ -1093,6 +1093,13 @@
       quest_all_done:        "Ҳамаи вазифаҳо иҷро шуд!",
       quest_all_done_sub:    "Мукофоти ҳаррӯзаатро бигир",
       quest_claim_btn:       "Гирифтан +200 XP",
+      offline_title:         "Қаҳрамонони ту оҳангарӣ карданд!",
+      offline_away_tpl:      "{t} набудӣ",
+      offline_to_balance:    "ба хазинаи ту",
+      offline_collect:       "Ҷамъ кардани Зар ›",
+      strike_title_tpl:      "Зарби Ҳаррӯза — Рӯзи {n}",
+      strike_sub_tpl:        "Рӯзи {n} пай дар пай — Хуш омадӣ!",
+      strike_collect:        "Гирифтани мукофот ›",
 
       /* ── Hero cards & economy ── */
       zar_hr_unit:           "Зар/соат",

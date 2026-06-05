@@ -555,6 +555,195 @@
     });
   };
 
+  /* ── Return popups: offline earnings + daily strike ─────────────────── */
+
+  const LAST_SEEN_KEY   = 'real_last_seen_ts';
+  const LAST_VISIT_KEY  = 'real_last_visit_date';
+  const LOCAL_STREAK_KEY = 'real_local_streak';
+  const OFFLINE_SHOWN_KEY = 'real_offline_shown_ts';
+
+  const DAILY_REWARDS = [
+    { xp: 50,  zar: 0   },
+    { xp: 100, zar: 0   },
+    { xp: 150, zar: 50  },
+    { xp: 200, zar: 0   },
+    { xp: 250, zar: 100 },
+    { xp: 300, zar: 0   },
+    { xp: 200, zar: 200, gem: 1 },
+  ];
+
+  const todayDateStr = () => new Date().toISOString().slice(0, 10);
+
+  const fmtDuration = (ms) => {
+    const totalMin = Math.floor(ms / 60000);
+    const h = Math.floor(totalMin / 60);
+    const m = totalMin % 60;
+    return h > 0 ? `${h}h ${m}m` : `${m}m`;
+  };
+
+  const animateCount = (el, from, to, duration) => {
+    const start = performance.now();
+    const step = (now) => {
+      const p = Math.min((now - start) / duration, 1);
+      el.textContent = fmtNum(Math.round(from + (to - from) * p));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+
+  // Show a modal, animate amount counting up, then enable collect button
+  const showModal = (id) => {
+    const modal = document.getElementById(id);
+    if (modal) { modal.hidden = false; document.body.classList.add('modal-open'); }
+  };
+  const hideModal = (id) => {
+    const modal = document.getElementById(id);
+    if (modal) { modal.hidden = true; document.body.classList.remove('modal-open'); }
+  };
+
+  const showOfflinePopup = (zarEarned, msAway, onCollect) => {
+    const modal    = document.getElementById('offline-modal');
+    if (!modal) return;
+    const awayLbl  = modal.querySelector('[data-offline-away-label]');
+    const amountEl = modal.querySelector('[data-offline-amount]');
+    const xferEl   = modal.querySelector('[data-offline-transfer]');
+    const collectBtn = modal.querySelector('[data-collect-offline]');
+
+    if (awayLbl)   awayLbl.textContent  = t('offline_away_tpl', { t: fmtDuration(msAway) });
+    if (amountEl)  amountEl.textContent = '0';
+    if (xferEl)    xferEl.textContent   = `🪙 ${fmtNum(zarEarned)} ${t('r_zar')}`;
+
+    showModal('offline-modal');
+    // Count up animation after a short pause
+    setTimeout(() => { if (amountEl) animateCount(amountEl, 0, zarEarned, 1200); }, 300);
+
+    const close = () => { hideModal('offline-modal'); onCollect(); };
+    if (collectBtn) collectBtn.onclick = close;
+    modal.querySelector('[data-close-offline]').onclick = close;
+  };
+
+  const showStrikePopup = (streak, reward, onCollect) => {
+    const modal = document.getElementById('strike-modal');
+    if (!modal) return;
+    const titleEl   = modal.querySelector('[data-strike-title]');
+    const subEl     = modal.querySelector('[data-strike-sub]');
+    const dotsEl    = modal.querySelector('[data-strike-dots]');
+    const rewardEl  = modal.querySelector('[data-strike-rewards]');
+    const xferEl    = modal.querySelector('[data-strike-transfer]');
+    const collectBtn = modal.querySelector('[data-collect-strike]');
+
+    const dayInCycle = ((streak - 1) % 7) + 1;
+
+    if (titleEl) titleEl.textContent = t('strike_title_tpl', { n: fmtNum(streak) });
+    if (subEl)   subEl.textContent   = t('strike_sub_tpl',   { n: fmtNum(streak) });
+
+    // 7-dot progress row
+    if (dotsEl) {
+      dotsEl.innerHTML = Array.from({ length: 7 }, (_, i) => {
+        const cls = i < dayInCycle ? 'sd done' : (i === dayInCycle ? 'sd today' : 'sd');
+        return `<span class="${cls}">${i + 1}</span>`;
+      }).join('');
+    }
+
+    // Reward chips
+    let rewardParts = [];
+    if (reward.xp)  rewardParts.push(`<span class="rm-chip xp-chip">+${fmtNum(reward.xp)} XP</span>`);
+    if (reward.zar) rewardParts.push(`<span class="rm-chip zar-chip">🪙 +${fmtNum(reward.zar)} ${t('r_zar')}</span>`);
+    if (reward.gem) rewardParts.push(`<span class="rm-chip gem-chip">💎 +${reward.gem} ${t('r_gems','Gem')}</span>`);
+    if (rewardEl) rewardEl.innerHTML = rewardParts.join('');
+
+    const xferParts = [];
+    if (reward.xp)  xferParts.push(`+${fmtNum(reward.xp)} XP`);
+    if (reward.zar) xferParts.push(`🪙 +${fmtNum(reward.zar)}`);
+    if (xferEl) xferEl.textContent = xferParts.join('  ');
+
+    showModal('strike-modal');
+
+    const close = () => { hideModal('strike-modal'); onCollect(); };
+    if (collectBtn) collectBtn.onclick = close;
+    modal.querySelector('[data-close-strike]').onclick = close;
+  };
+
+  const doReturnPopups = () => {
+    const now       = Date.now();
+    const lastSeen  = parseInt(lsRead(LAST_SEEN_KEY) || '0', 10);
+    const zarPerHr  = parseInt(lsRead('real_total_zar_hr') || '0', 10);
+    const msAway    = lastSeen ? Math.max(0, now - lastSeen) : 0;
+    const minAway   = msAway / 60000;
+
+    // Update last-seen for next visit (always)
+    try { localStorage.setItem(LAST_SEEN_KEY, String(now)); } catch {}
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden')
+        try { localStorage.setItem(LAST_SEEN_KEY, String(Date.now())); } catch {}
+    });
+
+    // --- Offline earnings ---
+    let offlineZar = 0;
+    const shownTs = parseInt(lsRead(OFFLINE_SHOWN_KEY) || '0', 10);
+    const alreadyShownToday = shownTs && (now - shownTs) < 3 * 60 * 60 * 1000; // shown <3h ago
+    if (zarPerHr > 0 && minAway >= 10 && !alreadyShownToday) {
+      const hoursAway = Math.min(minAway / 60, 8);
+      const vipBonus  = 1 + (Math.floor(((window.Player && window.Player.getResource)
+        ? (window.Player.getResource('xp') || 0) : 0) / 1000)) * 0.05;
+      const teamMult  = parseFloat(lsRead('real_team_mult') || '1') || 1;
+      offlineZar = Math.max(1, Math.floor(hoursAway * zarPerHr * vipBonus * teamMult));
+    }
+
+    // --- Daily strike ---
+    const today       = todayDateStr();
+    const lastVisit   = lsRead(LAST_VISIT_KEY) || '';
+    const isNewDay    = lastVisit !== today;
+    let   streak      = parseInt(lsRead(LOCAL_STREAK_KEY) || '1', 10) || 1;
+
+    if (isNewDay) {
+      const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+      if (lastVisit === yesterday) { streak += 1; }
+      else if (lastVisit && lastVisit < yesterday) { streak = 1; } // gap — reset
+      // else: first ever visit, keep streak = 1
+    }
+
+    const dayIdx  = ((streak - 1) % 7);
+    const reward  = DAILY_REWARDS[dayIdx];
+
+    // --- Sequential show ---
+    const afterOffline = () => {
+      if (!isNewDay) return;
+      // Commit daily strike
+      try {
+        localStorage.setItem(LAST_VISIT_KEY, today);
+        localStorage.setItem(LOCAL_STREAK_KEY, String(streak));
+      } catch {}
+      showStrikePopup(streak, reward, () => {
+        if (window.Player) {
+          if (reward.xp)  window.Player.addResource('xp',  reward.xp);
+          if (reward.zar) window.Player.addResource('zar', reward.zar);
+          if (reward.gem) window.Player.addResource('gems', reward.gem || 0);
+        }
+        if (window.RealSync) window.RealSync.syncBalance();
+        if (window.RealResources) {
+          const hud = document.querySelector('[data-resource-hud]');
+          if (hud) window.RealResources.refreshHud(hud);
+        }
+      });
+    };
+
+    if (offlineZar > 0) {
+      try { localStorage.setItem(OFFLINE_SHOWN_KEY, String(now)); } catch {}
+      showOfflinePopup(offlineZar, msAway, () => {
+        if (window.Player) window.Player.addResource('zar', offlineZar);
+        if (window.RealSync) window.RealSync.syncBalance();
+        if (window.RealResources) {
+          const hud = document.querySelector('[data-resource-hud]');
+          if (hud) window.RealResources.refreshHud(hud);
+        }
+        afterOffline();
+      });
+    } else {
+      afterOffline();
+    }
+  };
+
   /* ── Boot ────────────────────────────────────────────────────────────── */
   const bootHomeHydration = () => {
     hydrateProfile();
@@ -564,6 +753,8 @@
     updateJourneyCard(null);  // immediate render from localStorage
     wireQuestClicks();
     wireTreasuryModals();
+    // Return popups after page has settled (600 ms)
+    setTimeout(doReturnPopups, 600);
 
     if (window.RealSync) {
       window.RealSync.ready().then(async (su) => {
