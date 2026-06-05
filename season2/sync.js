@@ -117,7 +117,11 @@
       if (su.quest_quiz)          localStorage.setItem('real_quest_quiz_'            + dk, 'true');
       if (su.quest_invite)        localStorage.setItem('real_quest_invite_'          + dk, 'true');
       if (su.quest_tap)           localStorage.setItem('real_daily_taps_'            + dk, String(su.quest_tap));
-      if (su.quest_bonus_claimed) localStorage.setItem('real_daily_bonus_claimed_'  + dk, '1');
+      if (su.quest_bonus_claimed) {
+        localStorage.setItem('real_daily_bonus_claimed_' + dk, '1');
+      } else {
+        localStorage.removeItem('real_daily_bonus_claimed_' + dk);
+      }
       /* Cache profile pic so hydrateProfile() can use it */
       if (su.profile_pic)  localStorage.setItem('real_profile_pic', su.profile_pic);
       /* Cache referral data for earn.js + Final Encounter gate */
