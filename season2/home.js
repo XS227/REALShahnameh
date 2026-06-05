@@ -366,9 +366,18 @@
     if (claimRow) claimRow.hidden = !allDone || alreadyClaimed;
   };
 
-  const showQuestBonusPopup = () => {
+  const showQuestBonusPopup = (alreadyClaimed) => {
     const overlay = document.querySelector("[data-quest-bonus-overlay]");
     if (!overlay) return;
+    const xpEl  = overlay.querySelector(".qb-xp");
+    const subEl = overlay.querySelector(".qb-sub");
+    if (alreadyClaimed) {
+      if (xpEl)  xpEl.textContent  = "Already Claimed";
+      if (subEl) subEl.textContent = "You already collected today's bonus";
+    } else {
+      if (xpEl)  xpEl.textContent  = "+200 XP";
+      if (subEl) subEl.textContent = "You've completed all daily quests";
+    }
     overlay.hidden = false;
     const closeBtn = overlay.querySelector("[data-quest-bonus-close]");
     const dismiss = () => {
@@ -381,18 +390,39 @@
   };
 
   const claimDailyBonus = () => {
-    const key = "real_daily_bonus_claimed_" + todayKey();
-    if (lsRead(key) === "1") return;
-    const btn = document.querySelector("[data-quest-claim]");
-    if (btn) { btn.disabled = true; btn.textContent = "✓ Claimed!"; }
-    try { localStorage.setItem(key, "1"); } catch {}
-    if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
-    if (window.RealSync)   { window.RealSync.syncQuest("bonus"); window.RealSync.syncBalance(); }
-    refreshTreasury();
-    showQuestBonusPopup();
+    try {
+      const key = "real_daily_bonus_claimed_" + todayKey();
+      const btn = document.querySelector("[data-quest-claim]");
+      if (lsRead(key) === "1") {
+        showQuestBonusPopup(true); // already claimed — show popup without granting XP
+        return;
+      }
+      if (btn) { btn.disabled = true; btn.textContent = "✓ Claimed!"; }
+      try { localStorage.setItem(key, "1"); } catch {}
+      if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
+      if (window.RealSync)   { window.RealSync.syncQuest("bonus"); window.RealSync.syncBalance(); }
+      refreshTreasury();
+      showQuestBonusPopup(false);
+    } catch (err) {
+      const claimRow = document.querySelector("[data-quest-all-complete]");
+      if (claimRow) claimRow.hidden = true;
+    }
   };
 
-  const wireClaimButton = () => {}; // delegation handles clicks — kept so call in bootHomeHydration is harmless
+  const wireClaimButton = () => {}; // noop — capture listener below handles clicks
+
+  /* ── Claim button — wired at module load, capture phase, touchstart+click ──
+     capture=true fires before any child handler can stopPropagation.
+     touchstart is needed for Telegram WebView where click can be swallowed. */
+  const _onClaimInteraction = (e) => {
+    const hit = e.target && e.target.closest && e.target.closest("[data-quest-claim]");
+    if (!hit) return;
+    e.stopPropagation();
+    e.preventDefault();
+    claimDailyBonus();
+  };
+  document.addEventListener("touchstart", _onClaimInteraction, { capture: true, passive: false });
+  document.addEventListener("click",      _onClaimInteraction,   true);
 
   /* ── Medallion badge ─────────────────────────────────────────────────── */
   const BADGE_TIERS = [
@@ -832,14 +862,6 @@
     updateJourneyCard(null);  // immediate render from localStorage
     wireQuestClicks();
     wireClaimButton();
-    /* Event delegation for claim button — fires regardless of when button becomes visible */
-    const questSection = document.querySelector(".quest-list");
-    if (questSection && !questSection.dataset.claimDelegated) {
-      questSection.dataset.claimDelegated = "1";
-      questSection.addEventListener("click", (e) => {
-        if (e.target.closest("[data-quest-claim]")) claimDailyBonus();
-      });
-    }
     wireTreasuryModals();
     // Return popups after page has settled (600 ms)
     setTimeout(doReturnPopups, 600);
