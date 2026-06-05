@@ -86,5 +86,66 @@
     "intro_tg": "Шоҳнома ба Яздигурд номе дод — Бадкор — ва онро ба тафсил асоснок кард. Бераҳмии ӯ ҷазои худашро тавлид кард. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ солнома вақте ки шоҳеро бо ҷурмаш ном мебарад чӣ мурод дорад.",
     "boss_name_tg": "Оинаи золим"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "yazdegerd-bahram-contrast",
+      "category": "concept",
+      "title_en": "Yazdegerd the Sinner and Bahram Gur — Father and Son",
+      "title_fa": "یزدگردِ گناهکار و بهرامِ گور — پدر و پسر",
+      "summary_en": "The Shahnameh places Yazdegerd the Sinner and Bahram Gur in deliberate contrast: a tyrannical father who alienated his nobility and a celebrated son who won his throne by demonstrating his worthiness in the arena. The contrast is structural — the chronicle is showing that quality does not transmit through lineage alone. Bahram's greatness is not inherited from Yazdegerd; it is achieved in spite of Yazdegerd, through a different upbringing (among the Lakhmid Arabs) and a different temperament (generous, hunting, musical) than his father. The Shahnameh uses the contrast to separate the concept of kingship from the fact of dynasty.",
+      "summary_fa": "شاهنامه یزدگردِ گناهکار و بهرامِ گور را در تضادِ آگاهانه قرار می‌دهد: پدرِ مستبد و پسرِ محبوب. تضاد ساختاری است — دفتر نشان می‌دهد که کیفیت از طریقِ نسب به تنهایی منتقل نمی‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "why-sinner",
+      "category": "concept",
+      "title_en": "Why the Shahnameh Called Him Sinner",
+      "title_fa": "چرا شاهنامه او را گناهکار نامید",
+      "summary_en": "The Shahnameh's title for Yazdegerd — 'the Sinner' — is a summary verdict, not a description. The chronicle uses it to distinguish him from the two other Yazdegerds in the Sasanian dynasty (the I and the III) and to pre-characterize his reign before describing it. What made him the sinner in the chronicle's view: the killing of nobles without legitimate cause, the persecution of Christians and Jews, and the general quality of his governance that the chronicle describes as arbitrary rather than just. The Shahnameh is precise about this: the sin is not personal morality. It is unjust rule.",
+      "summary_fa": "عنوانِ شاهنامه برای یزدگرد — «گناهکار» — حکمِ خلاصه است، نه توصیف. آنچه او را در دیدِ دفتر گناهکار کرد: کشتنِ اشراف بدون علتِ مشروع، آزارِ مسیحیان و یهودیان، و کیفیتِ کلیِ حکومتش که دفتر آن را خودسرانه توصیف می‌کند نه عادلانه.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "noble-resistance",
+      "category": "event",
+      "title_en": "The Nobles Against the King",
+      "title_fa": "اشراف در برابرِ شاه",
+      "summary_en": "One of the recurring structural tensions in the Shahnameh's Sasanian chapters is the relationship between the king and the noble class. When the king is just — Anushirvan, Bahram Gur — the nobility supports the throne and the empire coheres. When the king is arbitrary — Yazdegerd the Sinner, Hormuz — the nobility begins to resist, to defect, to look for alternatives. The chronicle records this as a structural fact, not a moral failing of the nobles: if the king governs unjustly, those with power will resist. The Shahnameh does not ask the nobility to be infinitely loyal to unjust rule. It asks kings to govern justly.",
+      "summary_fa": "یکی از تنش‌هایِ ساختاریِ تکرارشونده در فصل‌هایِ ساسانیِ شاهنامه رابطه بینِ شاه و طبقه‌ی اشراف است. وقتی شاه عادل است اشراف تاج را حمایت می‌کند؛ وقتی شاه خودسر است اشراف مقاومت می‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "death-of-yazdegerd-sinner",
+      "category": "event",
+      "title_en": "The Horse That Killed the King",
+      "title_fa": "اسبی که شاه را کشت",
+      "summary_en": "Yazdegerd the Sinner is killed by his own horse — or by Boraq, the divine white horse of the waters, depending on which layer of the legend the reader follows. The Shahnameh records this not as simple fate but as proportionate consequence: a king whose rule was characterized by arbitrary violence dies by an act that is at once natural and legendary, unpredictable and inevitable. The chronicle uses the image of the horse because horses are central to kingship in the Iranian tradition — the king rides; the horse carries the weight of the reign. When the horse kills the king, something has inverted that should not be inverted.",
+      "summary_fa": "یزدگردِ گناهکار توسطِ اسبِ خودش کشته می‌شود. شاهنامه این را نه به عنوانِ سرنوشتِ ساده بلکه به عنوانِ پیامدِ متناسب ثبت می‌کند: شاهی که حکومتش با خشنتِ خودسرانه مشخص شده با عملی می‌میرد که هم طبیعی است هم افسانه‌ای.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "persecution-of-minorities",
+      "category": "event",
+      "title_en": "The Persecution of Christians and Jews",
+      "title_fa": "آزارِ مسیحیان و یهودیان",
+      "summary_en": "The Shahnameh records Yazdegerd's persecution of religious minorities as one of the defining marks of his unjust rule. This is historically attested: there were documented persecutions of Nestorian Christians in particular during Yazdegerd I's reign, though the historical record is complex and shows periods of tolerance alongside the persecutions. The Shahnameh simplifies this into a clear verdict: unjust kings persecute those under their protection; just kings protect them. The chronicle is making a political argument, not just a historical record: the quality of a king's rule is visible in how he treats the most vulnerable communities within his borders.",
+      "summary_fa": "شاهنامه آزارِ یزدگرد از اقلیت‌هایِ دینی را به عنوانِ یکی از نشانه‌هایِ تعریف‌کننده‌ی حکومتِ ناعادلانه‌اش ثبت می‌کند. دفتر استدلالِ سیاسی می‌کند: کیفیتِ حکومتِ شاه در نحوه‌ی رفتارش با آسیب‌پذیرترین جوامع در مرزهایش مرئی است.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "legacy-of-injustice",
+      "category": "concept",
+      "title_en": "What Injustice Leaves Behind",
+      "title_fa": "آنچه بی‌عدالتی بر جای می‌گذارد",
+      "summary_en": "The Shahnameh's clearest statement about Yazdegerd the Sinner is structural: his reign is placed immediately before Bahram Gur's to show what unjust rule leaves behind. It leaves a damaged nobility, a distrustful court, a weakened throne, and a son who has to earn his legitimacy from scratch because his father's rule contaminated the inheritance. The chronicle is not simply condemning Yazdegerd. It is showing the downstream consequences of unjust governance — consequences that fall not on the unjust king, who dies, but on the dynasty that continues and the people who live under it.",
+      "summary_fa": "اظهاریه‌ی روشنِ شاهنامه درباره‌ی یزدگردِ گناهکار ساختاری است: دورانِ حکومتش درست قبل از بهرامِ گور قرار می‌گیرد تا نشان دهد حکومتِ ناعادلانه چه چیزی بر جای می‌گذارد. پیامدهایِ حکومتِ ناعادلانه نه بر شاهِ ناعادل بلکه بر سلسله‌ای که ادامه می‌یابد می‌افتد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

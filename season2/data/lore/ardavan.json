@@ -86,5 +86,66 @@
     "intro_tg": "Ардавон оташи бархостаро аз Порс дид ва бо он ҷангид. Ҷангид ва бохт. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ охирин шоҳи сулолае буданки чорсад сол поид чӣ маъно дорад.",
     "boss_name_tg": "Охирин Ашконӣ"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "four-hundred-years",
+      "category": "concept",
+      "title_en": "Four Hundred Years Ending",
+      "title_fa": "چهارصد سال در حالِ پایان",
+      "summary_en": "The Arsacid dynasty ruled for roughly four hundred years — longer than the Achaemenids, longer than the Sasanians. When Ardavan faces Ardeshir, he is not defending a young institution; he is defending something that has survived every challenge thrown at it for four centuries. The Shahnameh understands the weight of this. Ardavan's resistance is not mere stubbornness — it is the reflex of a civilization that has persisted long enough to believe in its own permanence. That belief is what makes the fall so precise: permanence was never real, only durable.",
+      "summary_fa": "سلسله‌ی اشکانی تقریباً چهارصد سال حکومت کرد. وقتی اردوان با اردشیر روبرو می‌شود از چیزی دفاع می‌کند که چهار قرن همه‌ی چالش‌ها را از سر گذرانده. دوامِ زیاد ایمانِ به دوامِ ابدی می‌آفریند.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "fire-from-pars",
+      "category": "event",
+      "title_en": "The Fire Rising from Pars",
+      "title_fa": "آتشِ برخاسته از پارس",
+      "summary_en": "The Shahnameh's image for Ardeshir's rise is fire visible from Pars — a light in the south that the astrologers read as the sign of a new dynasty. Ardavan sees this report and dismisses it. The chronicle presents this dismissal not as foolishness but as a structural inevitability: the person defending what exists rarely has the perceptual equipment to correctly assess the threat from what is coming. What Ardavan saw was a minor noble's son from a provincial family. What was rising was a dynasty.",
+      "summary_fa": "تصویرِ شاهنامه از ظهورِ اردشیر آتشی است که از پارس دیده می‌شود. اردوان این گزارش را رد می‌کند — نه از حماقت بلکه به خاطرِ ناتوانیِ ساختاری در ارزیابیِ تهدیدِ در حالِ برآمدن.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "last-arsacid",
+      "category": "person",
+      "title_en": "The Last Arsacid — What He Defended",
+      "title_fa": "آخرین اشکانی — از چه دفاع کرد",
+      "summary_en": "Ardavan is not presented in the Shahnameh as a villain or a weak king. He fought. He lost. The chronicle records both facts without editorial. What Ardavan was defending — and what the Shahnameh implicitly values in recording his defense — is continuity: the principle that a legitimate dynasty has the right to persist, that length of reign is a form of legitimacy, that the mere fact of a stronger challenger does not automatically invalidate what was there before. Ardavan loses this argument. But the Shahnameh ensures it is heard.",
+      "summary_fa": "اردوان در شاهنامه نه شخصیتِ منفی است نه شاهِ ضعیف. جنگید. باخت. آنچه دفاع می‌کرد — تداوم — شاهنامه با ثبتِ دفاعش ارزشمند می‌داند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "legitimacy-duration",
+      "category": "concept",
+      "title_en": "Legitimacy Through Duration",
+      "title_fa": "مشروعیت از طریقِ مدت",
+      "summary_en": "One of the Shahnameh's recurring arguments is that legitimacy accumulates through time. A dynasty that has governed justly for centuries has earned a form of right that cannot simply be cancelled by a stronger challenger. The Arsacid dynasty was not just — it was intermittently functional and frequently fragmented. But it had lasted. Ardeshir's claim against it was one of raw power and prophecy, not of superior virtue. The Shahnameh records Ardeshir's victory accurately but without pretending the old claim was worthless.",
+      "summary_fa": "یکی از استدلال‌هایِ تکرارشونده‌ی شاهنامه این است که مشروعیت از طریقِ زمان انباشته می‌شود. سلسله‌ای که قرن‌ها حکومت کرده حقِ خاصی کسب کرده. شاهنامه پیروزیِ اردشیر را دقیق ثبت می‌کند اما وانمود نمی‌کند ادعایِ قدیم بی‌ارزش بود.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "transition-cost",
+      "category": "concept",
+      "title_en": "The Cost of Dynasty Change",
+      "title_fa": "هزینه‌ی تغییرِ سلسله",
+      "summary_en": "The Shahnameh does not treat the Sasanian founding as a simple improvement over what preceded it. Ardeshir's victory cost blood, disrupted the administrative continuity of four centuries, and replaced a decentralized system of Arsacid lords with a centralized imperial structure that was both more efficient and more fragile. When the centralized structure failed — as it failed spectacularly in the last thirty Sasanian years — there was no network of semi-autonomous lords to absorb the shock. Ardeshir built something stronger and less resilient. The Shahnameh records both qualities.",
+      "summary_fa": "پیروزیِ اردشیر ساختارِ غیرمتمرکزِ اشکانی را با ساختارِ متمرکزِ امپراتوریِ ساسانی جایگزین کرد — هم کارآمدتر هم شکننده‌تر. شاهنامه هر دو ویژگی را ثبت می‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "conquered-dignity",
+      "category": "concept",
+      "title_en": "The Dignity of the Conquered",
+      "title_fa": "شرافتِ مغلوب",
+      "summary_en": "The Shahnameh consistently gives its defeated kings a form of dignity that is not sentimentality. Ardavan fought to the end, not because he misunderstood the odds, but because the thing he was defending was worth defending on its own terms regardless of whether the defense succeeded. This is a consistent value in the chronicle: the quality of what a person defends matters independently of whether they win. Ardavan's loss does not invalidate his stand. The Shahnameh knows the difference between being right and winning.",
+      "summary_fa": "شاهنامه به شاهانِ مغلوبش شرافتی می‌دهد که احساساتی‌گری نیست. کیفیتِ آنچه کسی دفاع می‌کند مستقل از اینکه برنده می‌شود اهمیت دارد. باختنِ اردوان موضعِ او را باطل نمی‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

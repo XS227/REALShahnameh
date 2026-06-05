@@ -86,5 +86,66 @@
     "intro_tg": "Солнома он ҷо мебандад, ки оғоз ёфт: бо оташ, бо оҳан, бо шоҳоне ки бархостанд ва фурӯ афтоданд. Барои рӯбарӯ шудан бо ин дарвозаи охирин бояд ҳамаеро, ки Шоҳнома ба ту додааст, нигоҳ дорӣ.",
     "boss_name_tg": "Бастани дарвозаҳо"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "the-chronicle-closes",
+      "category": "concept",
+      "title_en": "The Chronicle Closes Where It Began",
+      "title_fa": "دفتر آنجا می‌بندد که آغاز کرد",
+      "summary_en": "The Shahnameh opens with fire — Mardas's garden, Ahriman's shoulder, the first serpent. It closes with fire — the fire temples going dark, the sacred flames extinguished by conquest. This is not symmetry for its own sake. The chronicle is making an argument: what was won at the beginning and what was lost at the end are the same thing measured from opposite ends. The fire that Hushang first struck from flint, that Jamshid maintained, that Zahhak tried to extinguish and Fereydun restored — that fire is what the final chapters watch go out.",
+      "summary_fa": "شاهنامه با آتش باز می‌شود و با آتش بسته می‌شود. آتشکده‌های خاموش پایانِ همان چیزی هستند که در ابتدا از سنگِ چخماق آغاز شد. این تقارن برای خودش نیست — استدلالی است.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "everything-given",
+      "category": "concept",
+      "title_en": "Everything the Shahnameh Has Given",
+      "title_fa": "همه‌آنچه شاهنامه داده",
+      "summary_en": "The final gate asks the reader to hold everything the Shahnameh has given. The chronicle has given: a theory of kingship, a model of how power corrupts, a demonstration of what just rule looks like and how rare it is, a record of grief, a set of instruments for thinking about loyalty and betrayal, and fifty chapters of evidence about how civilizations sustain and destroy themselves. The final gate does not require new knowledge. It requires the reader to have been present for all the preceding chapters and to hold what they add up to.",
+      "summary_fa": "دروازه‌ی آخر دانشِ جدید نمی‌خواهد. می‌خواهد خواننده برای همه‌ی دفترهای پیشین حاضر بوده باشد و بداند که جمعشان چه می‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "reader-as-witness",
+      "category": "concept",
+      "title_en": "The Reader as Final Witness",
+      "title_fa": "خواننده به عنوانِ آخرین شاهد",
+      "summary_en": "The Shahnameh has no hero in its final chapter who can restore what was lost. Rostam is dead. Kay Khosrow is gone. What the chronicle has instead is the reader — someone who has traveled through the full arc and who now knows what was there before it ended. Ferdowsi understood this: the Shahnameh was written for people who would read it after the civilization it describes had already fallen. The reader is not watching history. The reader is the reason the history was preserved.",
+      "summary_fa": "در آخرین دفتر قهرمانی نیست که آنچه از دست رفت را باز گرداند. آنچه شاهنامه دارد خواننده است — کسی که می‌داند قبل از پایان چه بود.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "iron-as-frame",
+      "category": "concept",
+      "title_en": "Fire and Iron as the Chronicle's Frame",
+      "title_fa": "آتش و آهن به عنوانِ چارچوبِ شاهنامه",
+      "summary_en": "Iron appears at the beginning of the Shahnameh with Hushang — the first forge, the discovery that the world's hardest material could be shaped by human hands. It appears at the end with the weapons of conquest. The arc from Hushang's first iron axe to the iron of the final wars is the arc of human technical capability turned first toward civilization and finally toward its destruction. The Shahnameh does not editorialize this. It measures it.",
+      "summary_fa": "از تبرِ اولِ هوشنگ تا آهنِ جنگ‌های پایانی، شاهنامه قوسِ توانایی فنیِ انسانی را ثبت می‌کند — اول به سوی تمدن، سرانجام به سمتِ نابودیِ آن.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "kings-who-rose",
+      "category": "concept",
+      "title_en": "Kings Who Rose and Kings Who Fell",
+      "title_fa": "شاهانی که برخاستند و شاهانی که افتادند",
+      "summary_en": "The Shahnameh contains both kinds of king and does not pretend the rising kind is more common. Keyumars, Hushang, Fereydun, Kay Khosrow — kings whose reigns expanded the world. Jamshid, Kay Kavus, Hormuz, Khosrow Parviz — kings whose reigns consumed it. The ratio is not even. The chronicle's honesty is that just rule is exceptional and its loss is the normal state of things. The Shahnameh's last lesson is not optimism. It is accurate witnessing.",
+      "summary_fa": "شاهنامه هر دو نوع شاه را دارد و وانمود نمی‌کند نوعِ برخاسته رایج‌تر است. آخرین درسِ شاهنامه خوش‌بینی نیست. شاهدِ دقیق بودن است.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "silence-after",
+      "category": "concept",
+      "title_en": "The Silence After the Last Verse",
+      "title_fa": "سکوت پس از آخرین بیت",
+      "summary_en": "Ferdowsi ends the Shahnameh knowing he will not see the civilization he described restored. He had spent thirty years building a monument to a world that had already changed past recognition. The silence after the last verse is not failure — it is the silence of a completed task. The chronicle is finished. It is now the reader's to carry. This is what the Shahnameh ultimately is: not a record for the people who lived through it, but a tool given to everyone who comes after.",
+      "summary_fa": "فردوسی شاهنامه را تمام می‌کند در حالی که می‌داند تمدنِ توصیف‌شده را بازگشته نخواهد دید. سکوتِ پس از آخرین بیت شکست نیست — سکوتِ یک کارِ تمام‌شده است.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

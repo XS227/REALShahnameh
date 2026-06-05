@@ -86,5 +86,66 @@
     "intro_tg": "Ширин аз Хусрав Парвиз баланд истод, аз ҷангҳо баланд, аз сулола баланд. Шуҷоаташ аз набардҳои атрофаш оромтар ва мондагартар буд. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома вақте ки ба ҷои шоҳ маликаро пайравӣ мекунад чӣ мурод дорад.",
     "boss_name_tg": "Дарборҳои андӯҳ"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "shirin-character",
+      "category": "person",
+      "title_en": "Shirin — The Woman Who Chose",
+      "title_fa": "شیرین — زنی که انتخاب کرد",
+      "summary_en": "Shirin is the Shahnameh's most fully realized female character — not because the chronicle gives her more attention than the male protagonists, but because it gives her agency. Where most female characters in the Shahnameh are defined by what is done to them — Farangis, Manijeh, Sudabeh — Shirin is defined by what she does. She chooses Khosrow against political advantage. She refuses Shiruya against mortal threat. She enters Khosrow's tomb as an act of will. At every decision point in her narrative, the chronicle records what she decided, not what was decided for her.",
+      "summary_fa": "شیرین اصلی‌ترین شخصیتِ زنِ شاهنامه است — نه به این دلیل که دفتر توجهِ بیشتری به او می‌دهد، بلکه به این دلیل که به او عاملیت می‌دهد. در هر نقطه‌ی تصمیمِ روایتش، دفتر آنچه را که او تصمیم گرفت ثبت می‌کند، نه آنچه برایش تصمیم گرفته شد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "khosrow-parviz-flaw",
+      "category": "person",
+      "title_en": "Khosrow Parviz — The Great King's Flaw",
+      "title_fa": "خسرو پرویز — نقصِ شاهِ بزرگ",
+      "summary_en": "Khosrow Parviz is presented in the Shahnameh as Iran's last moment of genuine imperial greatness — but the chronicle is careful to record the flaw alongside the greatness. He is magnificent and vain. He is capable of genuine love and also capable of treating people as possessions. His relationship with Shirin shows both: he loves her, and the love is real, but he expects her to accommodate his other pleasures rather than reconsidering them. The Shahnameh does not condemn him for this. It simply records it, and shows that Shirin would not accommodate it.",
+      "summary_fa": "خسرو پرویز در شاهنامه به عنوانِ آخرین لحظه‌ی شکوهِ واقعیِ امپراتوریِ ایران معرفی شده — اما دفتر دقت دارد که نقص را کنارِ شکوه ثبت کند. او باشکوه و متکبر است. عشقش واقعی است اما انتظار دارد شیرین با لذت‌هایِ دیگرش کنار بیاید.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "love-in-shahnameh",
+      "category": "concept",
+      "title_en": "Love in the Shahnameh",
+      "title_fa": "عشق در شاهنامه",
+      "summary_en": "The Shahnameh contains many love stories — Zal and Rudabeh, Bijan and Manijeh, Sohrab and his nameless longing for a father. But the Khosrow-Shirin love story is the only one the chronicle extends across an entire chapter's worth of narrative. It does this because the love between Khosrow and Shirin is not just personal. It is also political, theological, and dynastic. It involves conversion, court politics, competing suitors, and finally a son who murders his father. The love is real; so are all of its entanglements. The Shahnameh records the entanglements as part of the love, not separate from it.",
+      "summary_fa": "شاهنامه داستان‌هایِ عاشقانه‌ی بسیاری دارد. اما داستانِ عشقِ خسرو و شیرین تنها داستانی است که دفتر آن را در روایتِ یک فصل گسترش می‌دهد — زیرا این عشق نه فقط شخصی است. سیاسی، الاهیاتی، و سلسله‌ای هم هست.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "shiruya-and-shirin",
+      "category": "event",
+      "title_en": "Shiruya's Demand — What Shirin Refused",
+      "title_fa": "خواستِ شیرویه — آنچه شیرین رد کرد",
+      "summary_en": "After Khosrow is murdered by Shiruya, the son who has just killed his father then demands that Shirin become his wife. The Shahnameh records Shirin's refusal with striking economy: she agrees to go with Shiruya to see Khosrow's body one last time. At the body, she kills herself. The chronicle understands that Shirin did not die in grief. She died in refusal. The death is not an ending — it is a position. Shirin refused to belong to the man who killed the man she loved. The Shahnameh honours this by recording it without editorializing it.",
+      "summary_fa": "پس از کشته شدنِ خسرو توسطِ شیرویه، پسری که پدرش را کشته از شیرین می‌خواهد که همسرش شود. شاهنامه رفضِ شیرین را ثبت می‌کند: او با مرگ اعلامِ موضع می‌کند. شیرین از تعلق داشتن به مردی که مردِ مورد علاقه‌اش را کشت رفض کرد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "armenian-princess",
+      "category": "person",
+      "title_en": "Shirin's Origin — The Armenian Princess",
+      "title_fa": "اصلِ شیرین — شاهزاده‌ی ارمنی",
+      "summary_en": "Shirin is Armenian, a princess of the Caucasian kingdoms that formed the borderland between the Roman and Iranian empires. Her origin is significant: she is not Iranian, not from the core of the empire she comes to define. The Shahnameh records this without making it a point of tension. Shirin simply is who she is, from where she is from. Her identity as an Armenian Christian is part of who Khosrow is in love with. The chronicle's willingness to place its most celebrated female character outside the ethnic and religious centre of the Iranian tradition is one of its characteristic gestures of inclusion.",
+      "summary_fa": "شیرین ارمنی است، شاهزاده‌ای از پادشاهی‌هایِ قفقاز. اصلِ او اهمیت دارد: او ایرانی نیست، از قلبِ امپراتوری که می‌آید تا تعریفش کند نیست. شاهنامه این را بدون آنکه منبعِ تنش کند ثبت می‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "love-refuses-compromise",
+      "category": "concept",
+      "title_en": "Love That Refuses Compromise",
+      "title_fa": "عشقی که از سازش سرباز می‌زند",
+      "summary_en": "The Shahnameh's deepest statement in the Khosrow-Shirin narrative is about what love actually requires. Shirin loves Khosrow but will not simply accept him on his terms — she holds to what she believes love should be and waits, and refuses, and insists. Khosrow loves Shirin but cannot stop being who he is — he loves grandly but also selfishly. The chronicle records that the love was real and the incompatibility was real, and that eventually Khosrow chose Shirin's terms when he had exhausted every other possibility. The final reconciliation is moving precisely because it cost both of them so much to reach it.",
+      "summary_fa": "عمیق‌ترین اظهاریه‌ی شاهنامه در روایتِ خسرو و شیرین درباره‌ی آن چیزی است که عشق واقعاً نیاز دارد. شیرین خسرو را دوست دارد اما صرفاً با شرایطِ او نمی‌پذیرد. خسرو شیرین را دوست دارد اما نمی‌تواند از بودنِ خودش دست بردارد. آشتیِ نهایی دقیقاً به این دلیل متأثر کننده است که رسیدن به آن هزینه داشت.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

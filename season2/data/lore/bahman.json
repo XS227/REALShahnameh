@@ -86,5 +86,66 @@
     "intro_tg": "Писари Исфандиёр ҳам тахт ва ҳам захмро ба ирс бурд. Фармонравоии ӯ соябони марги падараш аст. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ андӯҳ чӣ гуна сиёсат мешавад.",
     "boss_name_tg": "Баҳман — Андӯҳи оҳанин"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "inherited-wound",
+      "category": "concept",
+      "title_en": "The Inherited Wound",
+      "title_fa": "زخمِ به ارث رسیده",
+      "summary_en": "Bahman inherits not just his father Esfandiyar's throne but his father's wound — the specific grief of a righteous man destroyed by a corrupt king's command. This wound is not psychological in the modern sense; it is structural. Bahman rules in the shadow of an injustice that was not repaired, and his reign is the attempt to repair it by force. The Shahnameh understands that inherited grief does not automatically translate into inherited virtue. Bahman's response to his father's death is understandable and it is also destructive.",
+      "summary_fa": "بهمن نه فقط تختِ اسفندیار بلکه زخمِ او را به ارث می‌برد — اندوهِ خاصِ مردِ صادقی که به فرمانِ شاهِ فاسد نابود شد. اندوهِ به ارث رسیده به فضیلتِ به ارث رسیده ترجمه نمی‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "grief-becomes-policy",
+      "category": "concept",
+      "title_en": "Grief Becoming Policy",
+      "title_fa": "اندوهِ تبدیل‌شده به سیاست",
+      "summary_en": "Bahman's campaign against Zabulestan is grief converted into state action. He is not wrong that Rostam killed his father — Rostam did. He is wrong in the precise way the Shahnameh always identifies as the wrong way to govern: he is using the machinery of the state to settle a personal account. The Shahnameh consistently shows that kings who govern from personal grief produce policies that are locally accurate (the grievance is real) and systemically destructive (the remedy damages more than the original injury). Bahman's reign is the clearest example of this pattern in the later chronicle.",
+      "summary_fa": "کمپینِ بهمن علیهِ زابلستان اندوهِ تبدیل‌شده به عملِ دولتی است. شاهنامه همیشه این را شیوه‌ی نادرست نشان می‌دهد: استفاده از دستگاهِ دولت برای تسویه‌ی حسابِ شخصی.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "shadow-of-father",
+      "category": "concept",
+      "title_en": "The Shadow of the Father",
+      "title_fa": "سایه‌ی پدر",
+      "summary_en": "The Shahnameh has a recurring pattern of sons governing in the shadow of extraordinary fathers: Sohrab under the shadow of Rostam (whom he never knew), Siavash under the shadow of Kay Kavus (who failed him), and Bahman under the shadow of Esfandiyar. In each case the shadow is not inspiring but constraining — it defines the son's reign in terms of the father's story rather than letting the son's reign be its own story. Bahman never escapes Esfandiyar. His entire reign is a footnote to his father's death.",
+      "summary_fa": "شاهنامه الگوی تکرارشونده‌ای دارد از پسرانی که در سایه‌ی پدرانِ استثنایی حکومت می‌کنند. بهمن هرگز از اسفندیار رها نمی‌شود. کلِ فرمانرواییِ او پاورقیِ مرگِ پدرش است.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "what-revenge-cannot-fix",
+      "category": "concept",
+      "title_en": "What Revenge Cannot Repair",
+      "title_fa": "آنچه انتقام نمی‌تواند ترمیم کند",
+      "summary_en": "Bahman's campaign against Zabulestan does not repair the injustice of Esfandiyar's death. Esfandiyar died because Goshtasp sent him on an impossible mission knowing it would destroy him. Rostam was the instrument. Destroying Rostam's legacy and his descendants does not touch Goshtasp's guilt — it only destroys Rostam's descendants. The Shahnameh presents this clearly without sentimentalizing it: revenge is a real human response to real injustice, and it consistently produces outcomes that compound the original damage rather than reversing it.",
+      "summary_fa": "کمپینِ بهمن علیهِ زابلستان بی‌عدالتیِ مرگِ اسفندیار را ترمیم نمی‌کند. اسفندیار به خاطرِ گشتاسپ مُرد — نه رستم. شاهنامه انتقام را نه احساساتی بلکه واقعی می‌بیند و نشان می‌دهد که پیوسته خسارتِ اصلی را مضاعف می‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "zabulestan-destroyed",
+      "category": "event",
+      "title_en": "Zabulestan Destroyed",
+      "title_fa": "زابلستان ویران‌شده",
+      "summary_en": "The destruction of Zabulestan — Rostam's homeland — under Bahman is one of the Shahnameh's most brutal events in the later chronicle. What is destroyed is not just a place but a lineage: the family that produced Rostam and Zal, the line from Sam, the people of the great feather and the Simorgh's investment in Iranian heroism. When Bahman erases Zabulestan, he erases the physical location of the chronicle's greatest hero. The Shahnameh records this without ceremony, which is how it records the most serious losses.",
+      "summary_fa": "نابودیِ زابلستان — زادگاهِ رستم — توسطِ بهمن یکی از بی‌رحمانه‌ترین رویدادهایِ شاهنامه‌ی متأخر است. آنچه نابود می‌شود نه فقط یک مکان بلکه یک نسل است: خانواده‌ای که رستم را تولید کرد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "grief-policy-legacy",
+      "category": "concept",
+      "title_en": "The Legacy of Grief-Driven Policy",
+      "title_fa": "میراثِ سیاستِ برانگیخته از اندوه",
+      "summary_en": "Bahman's reign leaves a damaged kingdom to his successors. The campaign against Zabulestan consumed resources, alienated allies, and destroyed a lineage whose military capacity had sustained Iranian kingship for centuries. The grief-driven campaign produces a kingdom weaker than the one Bahman inherited. This is the Shahnameh's consistent finding about governance driven by personal loss rather than state interest: it is self-defeating. The state suffers for the king's grief, and the grief is not resolved by what the suffering produces.",
+      "summary_fa": "فرمانرواییِ بهمن پادشاهیِ آسیب‌دیده‌ای به جانشینانش می‌گذارد. کمپینِ برانگیخته از اندوه پادشاهی‌ای ضعیف‌تر از آنچه بهمن به ارث برده تولید می‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

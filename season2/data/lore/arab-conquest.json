@@ -86,5 +86,66 @@
     "intro_tg": "Ду набард ва ҳазорсола поён меёбад. Шоҳнома рӯй намегардонад. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Фирдавсӣ чӣ гуна фатҳи тамаддуни худашро навишт.",
     "boss_name_tg": "Қодисия ва Наҳованд"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "qadisiyya",
+      "category": "event",
+      "title_en": "Qadisiyya — The First Break",
+      "title_fa": "قادسیه — اولین شکاف",
+      "summary_en": "Qadisiyya is where the Sasanian army met the Arab forces and lost the initiative it never recovered. The Shahnameh records the battle without dramatizing it into a heroic last stand. What Ferdowsi understood — and what makes the passage unusual in medieval literature — is that the disaster at Qadisiyya was not caused by cowardice or incompetence but by exhaustion: thirty years of war with Byzantium had drained the Sasanian military of the resources and personnel that might have held the eastern frontier. The empire fell not to superior force but to its own prior choices.",
+      "summary_fa": "قادسیه آنجاست که سپاهِ ساسانی با نیروهای عرب روبرو شد و ابتکارِ عملی را از دست داد که هرگز باز نگرفت. فردوسی می‌فهمد که فاجعه نه از بُزدلی بلکه از خستگی آمد: سی سال جنگ با بیزانس.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "nihavand",
+      "category": "event",
+      "title_en": "Nihavand — The Last Army",
+      "title_fa": "نهاوند — آخرین سپاه",
+      "summary_en": "Nihavand is the Shahnameh's 'Conquest of Conquests' — the battle that ended organized Sasanian military resistance. After Nihavand there is no army left to reform, no court left to reorganize. Yazdegerd III becomes a fugitive with a treasury and no troops. The Shahnameh treats Nihavand not as a glorious victory or a shameful defeat but as a geological event — the moment when the ground shifted past the point of return.",
+      "summary_fa": "نهاوند 'فتحِ فتوح' شاهنامه است — نبردی که مقاومتِ نظامیِ سازمان‌یافته‌ی ساسانیان را پایان داد. پس از نهاوند سپاهی برای اصلاح باقی نمی‌ماند.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "ferdowsi-writing-loss",
+      "category": "concept",
+      "title_en": "Ferdowsi Writing the Loss of His Civilization",
+      "title_fa": "فردوسی درحالِ نوشتنِ از دست دادنِ تمدنش",
+      "summary_en": "Ferdowsi wrote about the Arab conquest while living under dynasties that derived legitimacy partly from the Arab-Islamic tradition. He could not write with full political freedom. What he managed is remarkable: he recorded the conquest with grief but without contempt for the conquerors, and without self-pity for the conquered. The emotional register he found — clear-eyed mourning — is harder to achieve than either rage or resignation, and it is the register that allowed the Shahnameh to be read by people of every subsequent tradition.",
+      "summary_fa": "فردوسی درباره‌ی فتحِ عرب نوشت در حالی که زیرِ سلسله‌هایی زندگی می‌کرد که مشروعیتشان را از سنتِ اسلامی-عربی می‌گرفتند. آنچه به دست آورد شگفت‌انگیز است: ثبتِ فتح با اندوه اما بدونِ تحقیر.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "language-survives",
+      "category": "concept",
+      "title_en": "The Language That Survived",
+      "title_fa": "زبانی که ماند",
+      "summary_en": "The Arab conquest changed the religion, the script (for a time), the administrative language, and the ruling dynasty of the Iranian world. What it did not change — what it could not change — was the spoken language of Pars. Ferdowsi understood that language is the deepest layer of civilization, below religion, below political structure, below dynasty. The Shahnameh is written in Persian not as nostalgia but as demonstration: the language is still here. The civilization it carries is still here. The conquest was not complete.",
+      "summary_fa": "فتحِ عرب دین، خط، زبانِ اداری و سلسله را تغییر داد. آنچه تغییر نداد — آنچه نمی‌توانست تغییر دهد — زبانِ گفتاریِ پارس بود. شاهنامه به فارسی نوشته شده نه به عنوانِ نوستالژی بلکه به عنوانِ نمایش.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "grief-without-contempt",
+      "category": "concept",
+      "title_en": "Grief Without Contempt",
+      "title_fa": "اندوه بدونِ تحقیر",
+      "summary_en": "The Shahnameh does not look away from the conquest and it does not frame the conquerors as simple villains. Ferdowsi records what was lost — the fire temples, the court, the administrative continuity — without attributing the loss to the inferiority of the conquerors or the moral failure of Islam. This restraint is deliberate and costly: it would have been easier, and politically safer, to write with contempt. The grief without contempt is the hardest version to write and the one most likely to be read by the people who need to read it.",
+      "summary_fa": "شاهنامه از فتح روی برنمی‌گرداند و فاتحان را شخصیت‌های منفیِ ساده نمی‌کند. اندوهِ بدونِ تحقیر سخت‌ترین نسخه برای نوشتن است و محتمل‌ترین نسخه برای خوانده شدن توسطِ کسانی که نیاز دارند بخوانند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "what-ending-looks-like",
+      "category": "concept",
+      "title_en": "What an Ending Looks Like in the Shahnameh",
+      "title_fa": "پایان در شاهنامه چه شکلی دارد",
+      "summary_en": "The Shahnameh's final chapters do not have the structure of tragedy or triumph. They have the structure of record. Something happened. Here is what happened. Here is what was lost. Here is what remains. This is a harder structure to read than either tragedy or triumph because it refuses to convert the facts into a lesson. The lesson, if there is one, is in the facts themselves, and the reader must do the work of finding it. That is what the final gate requires: not a formula, but a reader who has paid attention.",
+      "summary_fa": "فصل‌هایِ آخرِ شاهنامه ساختارِ تراژدی یا پیروزی ندارند. ساختارِ ثبت دارند. دروازه‌ی آخر فرمول نمی‌خواهد — خواننده‌ای می‌خواهد که توجه داشته باشد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

@@ -86,5 +86,66 @@
     "intro_tg": "Баҳром Чӯбин бузургтарин сипаҳсолори рӯзгори худ буд ва тасмим гирифт ин барои шоҳ шудан кофист. Иштибоҳ мекард — аммо фақат ба сахтӣ, ва танҳо пас аз бознигории тамоми низоми сиёсӣ. Барои рӯбарӯ шудан бо ин дарвоза бояд фарқи шоистагӣ ва ҳаққи иддаошуда бар тахтро бифаҳмӣ.",
     "boss_name_tg": "Сардоре ки ҷуръат кард"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "greatest-general",
+      "category": "person",
+      "title_en": "The Greatest General of His Age",
+      "title_fa": "بزرگترین سپهسالارِ روزگارش",
+      "summary_en": "Bahram Chubin's military record before his rebellion is extraordinary. He defeated the Turks, held the eastern frontier, and won battles that the Sasanian court's own resources had been unable to win. The Shahnameh documents this with genuine respect. The tragedy of Bahram Chubin is not that he was a mediocre general who overreached — it is that he was an exceptional general who made a category error about what military excellence entitled him to. Excellence in one domain does not transfer automatically to legitimacy in another.",
+      "summary_fa": "پرونده‌ی نظامیِ بهرام چوبین پیش از شورشش استثنایی است. تراژدیِ او این نیست که سپهسالارِ متوسطی بود که از حد خود فراتر رفت — این است که سپهسالارِ استثنایی بود که خطایِ طبقه‌بندی کرد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "deserving-entitled",
+      "category": "concept",
+      "title_en": "Deserving vs. Being Entitled",
+      "title_fa": "شایستگی در برابرِ ادعا",
+      "summary_en": "Bahram Chubin's mistake is precisely identified by the Shahnameh: he confused deserving a reward with being entitled to claim it. He deserved recognition, wealth, and authority proportional to his service. He was not entitled to the throne, because the throne in the Shahnameh's world is not a prize awarded to the most competent — it is a position whose legitimacy comes from lineage, divine sanction, and accumulated institutional authority. Bahram had the first qualification but not the others. His mistake was not ambition but category confusion.",
+      "summary_fa": "اشتباهِ بهرام چوبین توسطِ شاهنامه دقیقاً شناسایی می‌شود: شایستگیِ پاداش را با حقِ مطالبه‌اش اشتباه گرفت. تخت جایزه‌ای نیست که به شایسته‌ترین اعطا می‌شود — موقعیتی است که مشروعیتش از تبار می‌آید.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "reshaping-the-order",
+      "category": "event",
+      "title_en": "Reshaping the Political Order",
+      "title_fa": "بازشکلیِ نظمِ سیاسی",
+      "summary_en": "Bahram Chubin's rebellion, even though it failed, reshaped the Sasanian political landscape permanently. He demonstrated that a senior general with loyal troops could challenge the throne and hold it, briefly, against the legitimate king. This demonstration — regardless of how it ended — changed what was possible. The Sasanian nobles and generals who followed Bahram Chubin's example in the dynasty's final decades were acting on the lesson his rebellion taught: the throne is contestable by force. The Shahnameh records this lesson as a consequence, not an intention.",
+      "summary_fa": "شورشِ بهرام چوبین حتی با وجودِ شکست، چشم‌اندازِ سیاسیِ ساسانی را دائماً بازشکل داد. ثابت کرد که سرداری با سپاهیانِ وفادار می‌تواند تخت را به چالش بکشد. این نمایش — صرفِ نظر از پایانش — تغییر داد که چه ممکن است.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "almost-right",
+      "category": "concept",
+      "title_en": "Being Wrong Only Barely",
+      "title_fa": "فقط به‌سختی اشتباه بودن",
+      "summary_en": "The Shahnameh's phrasing about Bahram Chubin — that he was wrong, but only barely — is one of its most precise moral assessments. He was wrong because the throne requires more than military excellence. He was only barely wrong because military excellence was genuinely rare and genuinely valuable, and the Sasanian court's failure to honour it adequately was a real injustice. The Shahnameh refuses to simplify this. Bahram Chubin is neither a straightforward villain nor a straightforward hero. He is a man who was right about his own worth and wrong about what that worth entitled him to.",
+      "summary_fa": "فرمول‌بندیِ شاهنامه درباره‌ی بهرام چوبین یکی از دقیق‌ترین ارزیابی‌هایِ اخلاقیِ آن است. اشتباه می‌کرد چون تخت بیش از برتریِ نظامی نیاز دارد. فقط به‌سختی اشتباه می‌کرد چون برتریِ نظامی واقعاً کمیاب بود.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "bahram-falls",
+      "category": "event",
+      "title_en": "The Fall of Bahram Chubin",
+      "title_fa": "سقوطِ بهرام چوبین",
+      "summary_en": "Bahram Chubin is defeated and killed not by the Sasanian army he rebelled against but by the Turks he once defeated — a final irony the Shahnameh does not editorialize. He dies in exile, betrayed by people he trusted among a people whose empire he had once defended Iran against. This ending is not presented as justice or punishment — it is presented as the kind of ending that befits a life that reached too far in the wrong direction: not a clean defeat, but an unraveling.",
+      "summary_fa": "بهرام چوبین توسطِ ترک‌هایی که روزی شکست داده بود — نه سپاهِ ساسانی که شورید — شکست می‌خورد و کشته می‌شود. شاهنامه این پایان را به عنوانِ عدالت یا مجازات ارائه نمی‌دهد — پایانی که با زندگیِ خیلی دور رفته در جهتِ نادرست مناسب است.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "lesson-for-generals",
+      "category": "concept",
+      "title_en": "The Lesson for Every General Who Came After",
+      "title_fa": "درس برای هر سرداری که پس از او آمد",
+      "summary_en": "Bahram Chubin's story became the template for the late Sasanian military's relationship with the throne. Every general who subsequently challenged or manipulated the succession had Bahram Chubin's example as their model — and as their warning. The example said: a general can take the throne. The warning said: the throne without lineage-legitimacy cannot be held. The Sasanian dynasty's final thirty years are a sequence of generals who remembered the example and forgot the warning.",
+      "summary_fa": "داستانِ بهرام چوبین الگوی رابطه‌ی ارتشِ ساسانیِ متأخر با تخت شد. مثال گفت: سردار می‌تواند تخت را بگیرد. هشدار گفت: تخت بدونِ مشروعیتِ تباری نمی‌توان نگه داشت. سی سالِ آخرِ ساسانیان ردیفی از سردارانی است که مثال را یاد داشتند و هشدار را فراموش کردند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

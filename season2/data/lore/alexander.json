@@ -86,5 +86,66 @@
     "intro_tg": "Искандари Фирдавсӣ аз роҳи печи насабномавӣ эронӣ ва аз роҳи баландпарвозӣ ҷаҳонгушо аст. Ӯ мураккабтарин чеҳраи нимаи дуввуми солнома аст. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома бо машҳуртарин шоҳи бегонааш чӣ мекунад.",
     "boss_name_tg": "Искандар — Зулқарнайн"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "iranian-blood",
+      "category": "concept",
+      "title_en": "The Iranian Blood of Alexander",
+      "title_fa": "خونِ ایرانیِ اسکندر",
+      "summary_en": "Ferdowsi gives Alexander Iranian lineage by making him the son of Darab and a Greek princess — sent home before Alexander's birth. This is a narrative solution to a structural problem: how does a chronicle of Iranian kingship absorb the man who destroyed that kingship? The answer is genealogy. Alexander becomes Iranian by blood, which means his conquest is not a foreign erasure but a civil tragedy — painful, not alien. He weeps over Dara's body, and his grief is real grief.",
+      "summary_fa": "فردوسی به اسکندر تبارِ ایرانی می‌دهد — پسرِ داراب و شاهزاده‌ای یونانی. این راه‌حلِ روایی برای مشکلِ ساختاری است: چگونه تاریخِ شاهانِ ایرانی مردی را جذب کند که آن شاهی را نابود کرد؟",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "conqueror-who-grieves",
+      "category": "concept",
+      "title_en": "The Conqueror Who Grieves",
+      "title_fa": "فاتحی که عزادار می‌شود",
+      "summary_en": "Alexander holds Dara as he dies and weeps. This is the Shahnameh's most precise statement about what distinguishes Alexander from its simple villains. Simple villains do not grieve what they destroy. Alexander does. The conqueror who weeps is not absolved. But he is not dismissed either. The Shahnameh holds him in a more uncomfortable category: the person who understood what they destroyed only after they had destroyed it.",
+      "summary_fa": "اسکندر دارا را در آغوش می‌گیرد و گریه می‌کند. فاتحی که عزادار می‌شود بخشوده نیست — اما رد هم نمی‌شود. شاهنامه او را در دسته‌ای ناراحت‌تر نگه می‌دارد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "open-hands",
+      "category": "event",
+      "title_en": "The Open Hands at Burial",
+      "title_fa": "دستانِ بازِ سرِ خاکسپاری",
+      "summary_en": "Alexander is buried with his hands open, extended outside his shroud, so the world can see they are empty. He who owned everything holds nothing. Ferdowsi places this image at the point in the chronicle where it carries maximum weight: the most successful conqueror of the second half, at the moment of burial, demonstrating the same truth that Jamshid and Kay Kavus and Hormuz failed to learn while they were alive.",
+      "summary_fa": "اسکندر با دستانِ باز به خاک سپرده می‌شود تا دنیا ببیند خالی‌اند. موفق‌ترین فاتحِ نیمه‌ی دوم همان حقیقتی را نشان می‌دهد که جمشید و کی‌کاووس در زندگی یاد نگرفتند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "legitimacy-lineage-power",
+      "category": "concept",
+      "title_en": "Lineage vs. Power as Legitimacy",
+      "title_fa": "تبار در برابرِ قدرت به عنوانِ مشروعیت",
+      "summary_en": "The Alexander chapter is the Shahnameh's fullest exploration of what makes a ruler legitimate. Dara had lineage but lost power. Alexander had power and Ferdowsi gave him lineage to compensate. Mahmud of Ghazni — Ferdowsi's patron — had power and no legitimate lineage in the Iranian sense. The mirror is clear: Ferdowsi is writing about Mahmud by writing about Alexander. The question 'can conquest create legitimacy?' is posed through story and left for the court to feel without being told to.",
+      "summary_fa": "دارا تبار داشت اما قدرت را از دست داد. اسکندر قدرت داشت و فردوسی تبار به او داد. آینه روشن است: فردوسی درباره‌ی محمود می‌نویسد با نوشتن درباره‌ی اسکندر.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "world-boundary",
+      "category": "place",
+      "title_en": "The Edge of the World",
+      "title_fa": "لبه‌ی دنیا",
+      "summary_en": "Alexander reaches the edge of the world and searches for the water of life. He does not find it. This quest is the Shahnameh's statement about the limits of conquest: a man can take every kingdom and still cannot take the one thing every human being wants. The world's boundary is the point at which power ends and human mortality begins.",
+      "summary_fa": "اسکندر به لبه‌ی دنیا می‌رسد و آبِ زندگی را نمی‌یابد. مرزِ دنیا ادعایِ جغرافیایی نیست — جایی است که قدرت پایان می‌یابد و فانی بودنِ انسانی آغاز می‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "absorbed-invader",
+      "category": "concept",
+      "title_en": "The Absorbed Invader",
+      "title_fa": "فاتحِ جذب‌شده",
+      "summary_en": "Alexander is the last foreign figure the Shahnameh absorbs into its Iranian world. After him the chronicle's kings are Sasanian — internal conflicts, not external absorption. By giving Alexander Iranian blood and Iranian grief, Ferdowsi demonstrates that the Iranian world can survive invasion if it can convert the invader into someone who carries Iranian sorrow. This is not triumphalism — Alexander still destroyed what he found. It is the chronicle's theory of cultural survival: a civilization that can make the conqueror weep for what he conquered has not entirely lost.",
+      "summary_fa": "اسکندر آخرین چهره‌ی بیگانه‌ای است که شاهنامه او را جذب می‌کند. تمدنی که می‌تواند فاتح را به گریه برای آنچه فتح کرده وا دارد کاملاً نباخته است.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

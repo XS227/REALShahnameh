@@ -86,5 +86,66 @@
     "intro_tg": "Шамшер империяҳоро мегирад. Калимот тамаддунҳоро нигоҳ медоранд. Барои рӯбарӯ шудан бо ин дарвоза бояд далели марказии Фирдавсӣро нигоҳ дорӣ: ки худи Шоҳнома амали нигоҳдорист.",
     "boss_name_tg": "Он чи вожаҳо ба ёд доранд"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "sword-takes",
+      "category": "concept",
+      "title_en": "What the Sword Takes",
+      "title_fa": "آنچه شمشیر می‌گیرد",
+      "summary_en": "The Shahnameh's observation that the sword takes empires is not a complaint — it is a precise description of what military force accomplishes and what it cannot. The sword takes territory, populations, treasury, political authority. It cannot take language, story, the shared memory of what a people were before the conquest. Empires taken by the sword can be taken back by the sword. What is kept by language can only be destroyed if the language itself is destroyed. The Shahnameh is the record of a language that was not destroyed.",
+      "summary_fa": "شمشیر قلمرو، جمعیت، خزانه و اقتدارِ سیاسی می‌گیرد. زبان، داستان، خاطره‌ی مشترکِ آنچه مردمی بودند پیش از فتح را نمی‌تواند بگیرد. شاهنامه ثبتِ زبانی است که نابود نشد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "words-keep",
+      "category": "concept",
+      "title_en": "What Words Keep",
+      "title_fa": "آنچه کلمات نگه می‌دارند",
+      "summary_en": "Ferdowsi's argument — stated explicitly in the Shahnameh's prologue and demonstrated by the entire work — is that words keep what swords cannot: the models of behaviour, the moral frameworks, the record of what was admirable and what was destructive, the language itself. A civilization that has lost its political independence but not its language has lost less than it seems. The language carries everything the political structure was built to protect. The Shahnameh is itself the evidence: it kept Iran's story through Ghaznavid conquest, Mongol invasion, and every subsequent disruption.",
+      "summary_fa": "استدلالِ فردوسی این است که کلمات آنچه شمشیرها نمی‌توانند نگه دارند: الگوهایِ رفتار، چارچوب‌هایِ اخلاقی، ثبتِ آنچه ستودنی و آنچه مخرب بود، خودِ زبان.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "shahnameh-as-act",
+      "category": "concept",
+      "title_en": "The Shahnameh as the Act of Preservation Itself",
+      "title_fa": "شاهنامه به عنوانِ خودِ عملِ نگهداری",
+      "summary_en": "The Shahnameh's central argument is enacted by the Shahnameh itself. Ferdowsi does not argue in the abstract that words keep civilizations — he writes sixty thousand verses and demonstrates it. The act of writing the Shahnameh is simultaneously the argument for writing the Shahnameh. This is rare in literature: a work that proves its own thesis through its existence. The argument is not in the words; the argument is the words, the thirty years, the completion, the survival.",
+      "summary_fa": "استدلالِ مرکزیِ شاهنامه توسطِ خودِ شاهنامه اجرا می‌شود. فردوسی در انتزاع استدلال نمی‌کند که کلمات تمدن‌ها را نگه می‌دارند — شصت‌هزار بیت می‌نویسد و آن را نشان می‌دهد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "what-swords-cannot",
+      "category": "concept",
+      "title_en": "What Swords Cannot Reach",
+      "title_fa": "آنچه شمشیرها نمی‌توانند به آن برسند",
+      "summary_en": "The Shahnameh identifies a class of things that military force cannot touch: the way people speak to each other, the stories they tell their children, the names they give to what is admirable. These things can be suppressed for a generation. They cannot be destroyed without destroying the people who carry them. The Arab conquest suppressed Iranian political independence for centuries. It did not suppress the Persian language, and the Persian language eventually produced Rudaki, Ferdowsi, Rumi — a literary tradition more durable than the empire that tried to replace it.",
+      "summary_fa": "شاهنامه طبقه‌ای از چیزها را شناسایی می‌کند که قدرتِ نظامی نمی‌تواند به آنها برسد: نحوه‌ی صحبتِ مردم، داستان‌هایی که به فرزندانشان می‌گویند، نام‌هایی که به آنچه ستودنی است می‌دهند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "reader-as-destination",
+      "category": "concept",
+      "title_en": "The Reader as the Destination",
+      "title_fa": "خواننده به عنوانِ مقصد",
+      "summary_en": "The Shahnameh was written for a reader — not for the court that paid (inadequately) for it, not for the political moment that produced it, but for the reader who would encounter it in any subsequent century and find in it the tools for thinking about power, legitimacy, loyalty, and betrayal. Ferdowsi addresses this reader directly in the prologue: he knows the reader is coming, he knows the reader may be very far in the future, and he writes to be useful to that reader. The act of preservation is directed at a destination that Ferdowsi could not see but chose to trust.",
+      "summary_fa": "شاهنامه برای خواننده نوشته شد — نه برای دربارِ ناکافی‌پرداز، نه برای لحظه‌ی سیاسیِ تولیدکننده‌اش، بلکه برای خواننده‌ای که در هر سده‌ی بعدی با آن روبرو می‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "preservation-vs-nostalgia",
+      "category": "concept",
+      "title_en": "Preservation vs. Nostalgia",
+      "title_fa": "نگهداری در برابرِ نوستالژی",
+      "summary_en": "The Shahnameh is sometimes read as nostalgia — a lament for a lost Iranian golden age. This reading misses what the text is doing. Nostalgia looks back. The Shahnameh looks forward: it is written for future readers who will need these tools, not for past kings who might have used them. Ferdowsi is not mourning the Sasanian empire — he is building something the Sasanian empire was unable to build for itself: a record durable enough to outlast the political structures it describes. Nostalgia is passive. The Shahnameh is active. It is not a memorial. It is a tool.",
+      "summary_fa": "شاهنامه گاهی به عنوانِ نوستالژی خوانده می‌شود. این خواندن آنچه متن انجام می‌دهد را از دست می‌دهد. نوستالژی به عقب نگاه می‌کند. شاهنامه به جلو نگاه می‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

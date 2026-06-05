@@ -86,5 +86,66 @@
     "intro_tg": "Хусрав Парвиз Байтулмуқаддасро фатҳ кард ва ҳазор асп ва сад ҳамсар гирд овард. Сипас фаромӯш кард ки империяҳо аз фатҳ зиёдтар ниёз доранд. Барои рӯбарӯ шудан бо ин дарвоза бояд шакли хоси суқуташро бифаҳмӣ.",
     "boss_name_tg": "Ғурур пеш аз вайронӣ"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "jerusalem-and-excess",
+      "category": "event",
+      "title_en": "Jerusalem and the Scale of Conquest",
+      "title_fa": "اورشلیم و مقیاسِ فتح",
+      "summary_en": "Khosrow Parviz's capture of Jerusalem — and with it the True Cross — was the high point of Sasanian military power. The Shahnameh records it as fact, not as triumph: a king took the world's most sacred city and put its most sacred relic in his treasury. What the chronicle watches with care is what Khosrow Parviz did with this achievement. The answer is: he added it to his collection. A thousand horses. A hundred wives. Jerusalem. The True Cross. Each acquisition was a demonstration of capacity. None of them was governance.",
+      "summary_fa": "فتحِ اورشلیم توسطِ خسروِ پرویز اوجِ قدرتِ نظامیِ ساسانی بود. آنچه شاهنامه با دقت نگاه می‌کند این است که خسروِ پرویز با این دستاورد چه کرد. پاسخ: آن را به مجموعه‌اش افزود.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "conquest-without-admin",
+      "category": "concept",
+      "title_en": "Conquest Without Administration",
+      "title_fa": "فتح بدونِ اداره",
+      "summary_en": "The Shahnameh's diagnosis of Khosrow Parviz is precise: he could conquer but he could not administer. Conquest requires force and strategy. Administration requires sustained attention to what happens after the battle is won. Khosrow Parviz had the first and lost interest in the second. The result is an empire that expands to its maximum extent — taking Jerusalem, pushing deep into Byzantine territory — and then collapses with a speed proportional to how far it had extended. The further a structure extends without adequate foundations, the faster it falls.",
+      "summary_fa": "تشخیصِ شاهنامه از خسروِ پرویز دقیق است: می‌توانست فتح کند اما نمی‌توانست اداره کند. فتح نیاز به زور و استراتژی دارد. اداره نیاز به توجهِ پیوسته به آنچه بعد از پیروزیِ نبرد اتفاق می‌افتد دارد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "shirin-contrast",
+      "category": "person",
+      "title_en": "Shirin as the Mirror of Khosrow Parviz",
+      "title_fa": "شیرین به عنوانِ آینه‌ی خسروِ پرویز",
+      "summary_en": "The Shahnameh places Shirin alongside Khosrow Parviz not as a romantic subplot but as a moral contrast. He collects. She endures. He accumulates wives, horses, kingdoms. She survives the collapse of everything he built. The chronicle's geometry is precise: the person in this chapter who demonstrates the qualities the Shahnameh values — durability, clarity, the ability to outlast the structures that were supposed to contain her — is not the king. It is the woman the king treated as an acquisition.",
+      "summary_fa": "شاهنامه شیرین را در کنارِ خسروِ پرویز قرار می‌دهد نه به عنوانِ زیرپلاتِ رمانتیک بلکه به عنوانِ تضادِ اخلاقی. او جمع می‌کند. او دوام می‌آورد. شخصی که ویژگی‌هایِ شاهنامه را نشان می‌دهد شاه نیست.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "specific-downfall",
+      "category": "concept",
+      "title_en": "The Specific Shape of His Downfall",
+      "title_fa": "شکلِ خاصِ سقوطِ او",
+      "summary_en": "Khosrow Parviz's downfall is not caused by foreign invasion or military defeat — it is caused by his own son Shiruya, who leads a palace coup, imprisons his father, and eventually has him killed. This ending has a particular shape: the man who built his power through military force and the collection of things is destroyed by the person closest to him by blood — the heir he produced. The Shahnameh consistently shows that power accumulated without the loyalty of those closest to you is power that will eventually be taken by those closest to you.",
+      "summary_fa": "سقوطِ خسروِ پرویز توسطِ پسرش شیرویه اتفاق می‌افتد. مردی که قدرتش را از طریقِ زور و مجموعه‌آوری ساخت توسطِ نزدیک‌ترین کسِ خونی‌اش نابود می‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "moreisnotenough",
+      "category": "concept",
+      "title_en": "More Is Not Enough",
+      "title_fa": "بیشتر کافی نیست",
+      "summary_en": "The Shahnameh's implicit lesson from Khosrow Parviz is that accumulation is not governance. A king who measures his reign by what he has added to his treasury and his stables and his harem is not measuring the right things. The right measure of a reign is the quality of the conditions it produces for the people living under it — the stability, the justice, the possibility of a life not entirely consumed by the king's requirements. Khosrow Parviz never took this measure. He was, by his own measures, extremely successful. The Shahnameh shows what success by the wrong measure produces.",
+      "summary_fa": "درسِ ضمنیِ شاهنامه از خسروِ پرویز این است که انباشتن حکمرانی نیست. شاهی که فرمانروایی‌اش را با آنچه به خزانه و طویله و حرمسرایش افزوده می‌سنجد معیارِ درست را نمی‌سنجد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "dynasty-consuming",
+      "category": "concept",
+      "title_en": "The Dynasty Beginning to Consume Itself",
+      "title_fa": "سلسله در حالِ بلعیدنِ خودش",
+      "summary_en": "Khosrow Parviz is the Shahnameh's marker for the moment the Sasanian dynasty turned from expansion to self-consumption. Before him, Sasanian kings fought external enemies and occasionally internal rivals. After him, the succession became a mechanism of dynastic destruction: Shiruya kills his father, is killed in turn, replaced by children and women and generals in rapid succession, until there is nothing left to replace. The dynasty's final three decades are a demonstration of what happens when the machinery of succession is used not to reproduce power but to destroy it.",
+      "summary_fa": "خسروِ پرویز نشانگرِ شاهنامه برای لحظه‌ای است که سلسله‌ی ساسانی از انبساط به خودخوری چرخید. پس از او دستگاهِ جانشینی نه برای بازتولیدِ قدرت بلکه برای نابودیِ آن استفاده شد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

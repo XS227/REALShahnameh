@@ -86,5 +86,66 @@
     "intro_tg": "Давраи Ашкониён кӯтоҳтарини Шоҳнома аст: шоҳони бисёр, ҷангҳои бисёр, ривояти кам. Фирдавсӣ асрро ном мебарад аммо дармеғ намеистад. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ чаро Шоҳнома аз чор аср мегузарад.",
     "boss_name_tg": "Тоҷҳои пароканда"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "why-shahnameh-rushes",
+      "category": "concept",
+      "title_en": "Why the Shahnameh Rushes Through Four Centuries",
+      "title_fa": "چرا شاهنامه از چهار سده می‌گذرد",
+      "summary_en": "The Arsacid era is the Shahnameh's briefest section — many kings, many wars, little chronicle. Ferdowsi names the age but does not dwell. The reason is not ignorance: Ferdowsi had access to sources for the Arsacid period. The reason is editorial. The Shahnameh is a chronicle of Iranian kingship organized around the question of what makes rule legitimate and durable. The Arsacid period, with its fragmented succession and decentralized authority, did not generate the kinds of episodes — great kings, great betrayals, great injustices and their reversals — that the chronicle was built to record.",
+      "summary_fa": "دوره‌ی اشکانی کوتاه‌ترینِ شاهنامه است. دلیل جهل نیست — فردوسی به منابعِ این دوره دسترسی داشت. دلیل تحریریست. دوره‌ی اشکانی نوعِ رویدادهایی که شاهنامه برای ثبت آن‌ها ساخته شده را نمی‌آفرید.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "fragmented-crowns",
+      "category": "concept",
+      "title_en": "The Fragmented Crowns",
+      "title_fa": "تاج‌های پراکنده",
+      "summary_en": "The Arsacid system was not an empire in the Sasanian sense. It was a confederation of semi-autonomous lords acknowledging a paramount king. This meant that authority was distributed, succession was contested, and the chronicle's central question — who is the legitimate king? — had no clean answer for most of the period. Multiple Arsacid claimants ruled simultaneously in different regions. Ferdowsi's brevity is not a judgment on their worth. It is an accurate reflection of a political structure that resisted the narrative form the Shahnameh required.",
+      "summary_fa": "سیستمِ اشکانی یک امپراتوری به معنایِ ساسانی نبود — یک کنفدراسیونِ اربابانِ نیمه‌مستقل بود. این یعنی اقتدار توزیع شده، جانشینی مورداختلاف، و پرسشِ مرکزیِ شاهنامه پاسخِ تمیز نداشت.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "arsacid-resilience",
+      "category": "concept",
+      "title_en": "The Resilience the Arsacids Had",
+      "title_fa": "انعطاف‌پذیریِ اشکانیان",
+      "summary_en": "What the Arsacid system possessed that the Sasanian system lacked was distributed resilience. When an Arsacid king was weak or killed, the network of lords absorbed the shock and the dynasty continued. This is why the dynasty lasted four centuries despite constant internal fragmentation. The Shahnameh does not analyze this explicitly — it is a chronicle, not a political science text. But the contrast between Arsacid duration and Sasanian fragility in the final years is visible to the careful reader.",
+      "summary_fa": "آنچه سیستمِ اشکانی داشت و سیستمِ ساسانی نداشت انعطاف‌پذیریِ توزیع‌شده بود. شبکه‌ی اربابان ضربه را جذب می‌کرد. به همین دلیل سلسله چهار قرن دوام آورد علی‌رغمِ تجزیه‌ی داخلیِ مداوم.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "ferdowsi-editorial",
+      "category": "concept",
+      "title_en": "Ferdowsi's Editorial Choice",
+      "title_fa": "انتخابِ تحریریِ فردوسی",
+      "summary_en": "Every chronicle is an argument, not a transcription. Ferdowsi chose what to include and what to compress. His compression of the Arsacid period is a statement: these four centuries do not contain the episodes that best illustrate what the Shahnameh is about. This is not the same as saying they were unimportant. It is saying that importance and narrative utility are not the same thing. Ferdowsi needed chapters that could hold the chronicle's questions about power, legitimacy, justice, and betrayal. The Arsacid period, distributed and diffuse, did not provide them cleanly.",
+      "summary_fa": "هر سالنامه‌ای استدلال است، نه رونویسی. فشردنِ دوره‌ی اشکانی توسطِ فردوسی این اظهاریه است: این چهار قرن رویدادهایی ندارند که بهترین تصویرگرِ موضوعاتِ شاهنامه باشند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "gap-in-memory",
+      "category": "concept",
+      "title_en": "The Gap in the Chronicle's Memory",
+      "title_fa": "شکافِ حافظه‌ی دفتر",
+      "summary_en": "The Shahnameh's Arsacid section is one of the places where the reader feels the chronicle's own awareness of its limitations. Ferdowsi acknowledges that the records are sparse. He writes the age anyway — names kings, notes wars — because the alternative is a gap of four centuries in the Iranian royal memory. The Shahnameh's completeness is more important than its detail. A chronicle that skips four centuries is not a chronicle. So Ferdowsi writes it thin and moves on, knowing that future historians will fill what he could not.",
+      "summary_fa": "بخشِ اشکانیِ شاهنامه جایی است که خواننده آگاهیِ شاهنامه از محدودیت‌های خودش را احساس می‌کند. فردوسی می‌پذیرد که منابع کم‌اند. شاهنامه‌ی بدونِ این چهار قرن شاهنامه نیست.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "what-the-name-marks",
+      "category": "concept",
+      "title_en": "What Naming the Age Accomplishes",
+      "title_fa": "نامیدنِ عصر چه به دست می‌آورد",
+      "summary_en": "Ferdowsi names the Arsacid age. This act — placing it in the chronicle even without sufficient material to flesh it out — is itself significant. It establishes that the Iranian royal memory does not skip four centuries, does not pretend the Achaemenids were immediately followed by the Sasanians. The Arsacids existed. They are part of the record. By naming them — even thinly — the Shahnameh refuses the erasure that political convenience might have preferred. This is what chronicles do when they are working correctly: they name what happened, even when naming is all they can do.",
+      "summary_fa": "فردوسی عصرِ اشکانی را نام می‌برد. این عمل — قرار دادنش در دفتر حتی بدونِ موادِ کافی — خودش معنادار است. حافظه‌ی شاهیِ ایرانی چهار قرن را نادیده نمی‌گیرد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

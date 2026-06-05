@@ -86,5 +86,66 @@
     "intro_tg": "Ҳурмуз тамоми дастгоҳи адолати падарашро ба ирс бурд ва онро ба таври мунтазам аз байн бурд. Тахт ҷоизае шуд дар бозии сардорон. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома аз шоҳе ки фаромӯш кард салтанат барои чист чӣ мурод дорад.",
     "boss_name_tg": "Тоҷи фурӯрезанда"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "wasted-machinery",
+      "category": "concept",
+      "title_en": "The Wasted Machinery",
+      "title_fa": "دستگاهِ به هدر رفته",
+      "summary_en": "Hormuz inherited the full administrative apparatus that Anushirvan had built: the regularized courts, the reformed tax system, the military command structures, the diplomatic relationships. He did not understand what he had inherited. The Shahnameh's point is specific: Hormuz was not stupid, but he was not curious about his own governance. He used the machinery his father built without asking why it was built that way or what would happen if he ran it differently. Within a decade of his accession, the machinery was being used to produce outcomes that were the opposite of what it was designed for.",
+      "summary_fa": "هرمز کلِ دستگاهِ اداریِ ساخته‌شده توسطِ انوشیروان را به ارث برد. او نفهمید چه به ارث برده. دستگاه را بدونِ پرسیدنِ چرا آن‌طور ساخته شده استفاده کرد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "throne-as-prize",
+      "category": "concept",
+      "title_en": "The Throne as Prize in a Generals' Game",
+      "title_fa": "تخت به عنوانِ جایزه در بازیِ سرداران",
+      "summary_en": "The late Sasanian pattern that Bahram Chubin initiated — the throne as contestable prize — found its clearest early expression under Hormuz. His own commanders eventually blinded and deposed him. This act — the blinding of the king by his generals — is the Shahnameh's image of a throne that has lost its sacral authority and become a political object. A sacred throne is not touched by the men who serve it. A political object is renegotiated when the balance of power shifts. Hormuz's blinding marks the moment the Sasanian throne became the latter.",
+      "summary_fa": "سردارانِ هرمز او را کور و خلع کردند. این عمل تصویرِ شاهنامه از تختی است که اقتدارِ مقدسش را از دست داده و به شیءِ سیاسی تبدیل شده. لحظه‌ی کور شدنِ هرمز لحظه‌ای است که تختِ ساسانی دومی شد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "what-kingship-is-for",
+      "category": "concept",
+      "title_en": "Forgetting What Kingship Is For",
+      "title_fa": "فراموش کردنِ اینکه سلطنت برای چیست",
+      "summary_en": "The Shahnameh's recurring question about bad kings is not 'were they evil?' but 'did they understand what kingship is for?' The answer for Hormuz is that he did not. He understood that kingship gave him authority, wealth, and the capacity to reward and punish. He did not understand that kingship was a function — the function of maintaining the conditions that allow civilization to persist. A king who uses kingship for personal benefit rather than for its function is not wrong in a moral sense so much as wrong in a technical sense: he is using the tool for the wrong purpose.",
+      "summary_fa": "پرسشِ تکرارشونده‌ی شاهنامه درباره‌ی شاهانِ بد این نیست که 'آیا شرور بودند؟' بلکه این است که 'آیا فهمیدند سلطنت برای چیست؟' پاسخ برای هرمز منفی است.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "hormuz-blinded",
+      "category": "event",
+      "title_en": "The Blinding of Hormuz",
+      "title_fa": "کور کردنِ هرمز",
+      "summary_en": "Hormuz is blinded by his own commanders — specifically by Binduyeh and Gorduyeh, relatives of Bahram Chubin's faction — before being deposed and eventually killed. The Shahnameh records this with the same precision it brings to other acts of violence against kings: what happened, who did it, and what it signifies about the state of the political order. The blinding is not just punishment — it is the specific act that bars a king from ruling, since an impaired king cannot perform the visible functions of kingship. The commanders were not killing him. They were making him politically dead while he still breathed.",
+      "summary_fa": "هرمز توسطِ سردارانِ خودش — بندویه و گردویه — کور می‌شود پیش از خلع و نهایتاً کشته شدن. کور کردن فقط مجازات نیست — عملِ خاصی است که شاه را از فرمانروایی محروم می‌کند، چون شاهِ معلول نمی‌تواند وظایفِ دیدنیِ سلطنت را انجام دهد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "what-anushirvan-built",
+      "category": "concept",
+      "title_en": "What Anushirvan Built That Hormuz Destroyed",
+      "title_fa": "آنچه انوشیروان ساخت و هرمز خراب کرد",
+      "summary_en": "The contrast between Anushirvan and Hormuz is the sharpest father-son contrast in the Sasanian chapters of the Shahnameh. One built systematically and carefully, making justice into a structure rather than a personality. The other used what was built as personal property. The gap between the quality of their reigns is so large that the Shahnameh essentially uses the contrast as an argument: good kingship is not heritable, and a system built on personal virtue cannot survive a successor who lacks that virtue. Anushirvan's greatest failure was not anything he did — it was not knowing how to produce an Anushirvan.",
+      "summary_fa": "تضادِ انوشیروان و هرمز تیزترین تضادِ پدر-پسر در فصل‌هایِ ساسانیِ شاهنامه است. یکی سیستماتیک و دقیق ساخت. دیگری آنچه ساخته شده بود را به عنوانِ ملکِ شخصی استفاده کرد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "from-just-to-cruel",
+      "category": "concept",
+      "title_en": "From the Just Reign to the Cruel One",
+      "title_fa": "از فرمانروایی عادل به بی‌رحمانه",
+      "summary_en": "The Shahnameh's pacing between Anushirvan's chapter and Hormuz's is deliberately compressed. The reader moves from the most praised Sasanian reign to the one that began the dynasty's terminal decline within the span of a single father-son transition. This compression is an argument: the collapse was not gradual. It was fast — fast enough that people who had lived under Anushirvan lived to see Hormuz's blinding. A civilization can change that quickly. The Shahnameh shows this not to produce despair but to produce accurate measurement of how fragile the good is.",
+      "summary_fa": "فشردگیِ شاهنامه بین دفترِ انوشیروان و هرمز عمدی است. خواننده از ستوده‌ترین فرمانروایِ ساسانی به آنکه زوالِ پایانیِ سلسله را آغاز کرد در عرضِ یک گذارِ پدر-پسر می‌رسد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

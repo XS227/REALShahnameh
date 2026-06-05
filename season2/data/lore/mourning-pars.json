@@ -86,5 +86,66 @@
     "intro_tg": "Фирдавсӣ андӯҳро бе нармкунӣ ном мебарад. Оташкадаҳо торикандр. Аммо забони Порс месӯзад ва мемонад. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома дар бобҳои охирш чӣ мекунад.",
     "boss_name_tg": "Оташкадаҳои хомӯш"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "grief-without-softening",
+      "category": "concept",
+      "title_en": "Grief Named Without Softening",
+      "title_fa": "اندوهِ نامیده‌شده بدونِ نرم‌کنی",
+      "summary_en": "Ferdowsi's final chapters name the grief of the conquest directly. This is harder than it looks: naming grief clearly, without softening it into a narrative of eventual redemption, without converting it into anger at the conquerors, without sentimental excess — this is the specific emotional register that the Shahnameh's ending requires. Ferdowsi achieves it. The fire temples are dark. That is stated. What it means is left for the reader to carry. The Shahnameh trusts its reader to be capable of holding grief without needing it resolved.",
+      "summary_fa": "نامیدنِ اندوه به وضوح — بدونِ نرم کردنش به روایتِ رستگاریِ نهایی، بدونِ تبدیلش به خشم — این موجِ احساسیِ خاصی است که پایانِ شاهنامه نیاز دارد. فردوسی به آن می‌رسد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "fire-temples-dark",
+      "category": "concept",
+      "title_en": "The Fire Temples Going Dark",
+      "title_fa": "آتشکده‌های در حالِ تاریک شدن",
+      "summary_en": "The image of the fire temples going dark is the Shahnameh's summary of the Arab conquest. Not the battles, not the political transition, not the administrative change — the fires. The sacred fire is what the Shahnameh has used from the beginning to mark the presence of legitimate kingship and cosmic order. When the fires go out, what the chronicle has been tracking for sixty thousand verses comes to its physical end. The fires going dark is not a metaphor. It is the most precise statement the Shahnameh can make about what was lost.",
+      "summary_fa": "تصویرِ آتشکده‌های خاموش شونده خلاصه‌ی شاهنامه از فتحِ عربی است. آتشِ مقدس آنچه شاهنامه از ابتدا برای نشانه‌گذاریِ سلطنتِ مشروع استفاده کرده است. خاموش شدنِ آتش‌ها استعاره نیست.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "language-keeps-burning",
+      "category": "concept",
+      "title_en": "The Language That Kept Burning",
+      "title_fa": "زبانی که سوخت و ماند",
+      "summary_en": "The Shahnameh's answer to the fire temples going dark is the language that did not go dark. Ferdowsi writes in Persian at the end of a chapter that describes Persian civilization's political death, and the act of writing in Persian is itself the counter-argument to the darkness. The language is burning. Not the fire temples — those are gone. But the language that named them, that built the stories around them, that carried the civilization's self-understanding — that language is alive in the very text that mourns the temples.",
+      "summary_fa": "پاسخِ شاهنامه به آتشکده‌های خاموش زبانی است که خاموش نشد. فردوسی به فارسی می‌نویسد در پایانِ بخشی که مرگِ سیاسیِ تمدنِ فارسی را توصیف می‌کند. زبان هنوز می‌سوزد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "what-final-chapters-do",
+      "category": "concept",
+      "title_en": "What the Shahnameh Is Doing in Its Final Chapters",
+      "title_fa": "شاهنامه در فصل‌هایِ آخرش چه می‌کند",
+      "summary_en": "The Shahnameh's final chapters are not a conclusion in the narrative sense — they do not resolve the story, because the story has not resolved. They are a record of the point at which the chronicle must stop because the political tradition it was tracking has ended. Ferdowsi does not end the Shahnameh with a moral or a lesson. He ends it with a fact: this is what happened. Here is where the chronicle of Iranian kingship ends. The fact is sufficient. The reader who has followed the full arc knows what to do with it.",
+      "summary_fa": "فصل‌هایِ آخرِ شاهنامه در معنایِ روایی نتیجه نیستند — داستان را حل نمی‌کنند چون داستان حل نشده. فردوسی شاهنامه را با اخلاق یا درس پایان نمی‌دهد. با واقعیت پایان می‌دهد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "mourning-not-rage",
+      "category": "concept",
+      "title_en": "Mourning Rather Than Rage",
+      "title_fa": "عزاداری نه خشم",
+      "summary_en": "The emotional register Ferdowsi chose for the final chapters — mourning rather than rage — is a deliberate and significant choice. Rage would have been easier and more politically satisfying in the immediate term. Rage converts loss into energy. Mourning converts loss into understanding. The Shahnameh chooses understanding: it records what was lost, what it meant, what remains. This choice is what allowed the Shahnameh to be read by people of every subsequent tradition — Arab, Mongol, Timurid, Safavid — without being inflammatory. Mourning is durable. Rage burns itself out.",
+      "summary_fa": "موجِ احساسیِ انتخاب‌شده توسطِ فردوسی — عزاداری نه خشم — انتخابِ عمدی است. خشم آسان‌تر بود. عزاداری ماندگارتر است: آنچه از دست رفته را به فهم تبدیل می‌کند نه به انرژی.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "what-remains",
+      "category": "concept",
+      "title_en": "What Remains After the Fires Go Out",
+      "title_fa": "آنچه پس از خاموش شدنِ آتش‌ها می‌ماند",
+      "summary_en": "The Shahnameh's implicit answer to its own final question — what remains? — is: this text. The language, the stories, the names of the kings and the heroes and the traitors, the moral frameworks built across fifty chapters, the models of how power works and how it fails, the record of what was admirable and what was destructive. All of this remains. The fire temples are gone. What the fire temples were for — the maintenance of a connection between human civilization and something larger — that is carried forward in the text that mourns them.",
+      "summary_fa": "پاسخِ ضمنیِ شاهنامه به پرسشِ آخرینِ خودش — چه می‌ماند؟ — این است: این متن. زبان، داستان‌ها، نام‌ها، چارچوب‌هایِ اخلاقی ساخته‌شده در پنجاه دفتر. همه‌ی اینها می‌مانند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

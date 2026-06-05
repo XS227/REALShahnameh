@@ -86,5 +86,66 @@
     "intro_tg": "Си сол. Шасттарин ҳазор байт. Ҳомие ки нуқра пардохт дар ҳоле ки тилло қарздор буд. Мероси Фирдавсӣ алирағми дарбор сохта шуд, на ба хотири он. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома чӣ гуна аз офаринаш ҷон ба дар бурд.",
     "boss_name_tg": "Ҳомии нахонда"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "thirty-years",
+      "category": "concept",
+      "title_en": "Thirty Years",
+      "title_fa": "سی سال",
+      "summary_en": "The Shahnameh took approximately thirty years to complete. This number, which Ferdowsi records himself, is the duration of a human project that no single patron, no single political situation, and no single phase of Ferdowsi's life could have sustained. He began under Samanid patronage, continued through the Ghaznavid conquest that ended the Samanids, and finished under Mahmud of Ghazni. The political world changed around him at least twice while he wrote. The thirty years is the measure of a commitment that outlasted the circumstances that produced it.",
+      "summary_fa": "شاهنامه تقریباً سی سال طول کشید تا تمام شود. سیاستِ دنیا حداقل دو بار در دورِ او تغییر کرد در حالی که می‌نوشت. سی سال اندازه‌ی تعهدی است که از شرایطِ تولیدکننده‌اش دوام آورد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "silver-for-gold",
+      "category": "event",
+      "title_en": "The Patron Who Paid in Silver",
+      "title_fa": "حامیِ نقره‌پرداز",
+      "summary_en": "The Shahnameh tradition holds that Mahmud of Ghazni paid Ferdowsi in silver dirhams rather than gold dinars — a fraction of what had been promised. The number varies by source: sixty thousand dirhams instead of sixty thousand dinars is one version. The humiliation was deliberate: Mahmud had decided Ferdowsi was not sufficiently flattering to the Turkic ruler's taste. What Ferdowsi had written was not flattery — it was history, which is more useful and less comfortable. The silver is the most famous detail of Ferdowsi's biography because it names the cost of honesty to power.",
+      "summary_fa": "سنت می‌گوید محمودِ غزنوی به فردوسی نقره داد نه طلا — بخشی از آنچه وعده شده بود. آنچه فردوسی نوشته بود تملق نبود — تاریخ بود که مفیدتر و ناراحت‌کننده‌تر است. نقره مشهورترین جزئیاتِ زندگی‌نامه‌ی فردوسی است چون هزینه‌ی صداقت در برابرِ قدرت را نام می‌برد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "satire-legend",
+      "category": "event",
+      "title_en": "The Legend of the Satirical Qasida",
+      "title_fa": "افسانه‌ی قصیده‌ی هجوی",
+      "summary_en": "The tradition holds that Ferdowsi, furious at Mahmud's payment, composed a satirical qasida (ode) attacking the king and distributed it in the bath-house before leaving Ghazni forever. Whether historically accurate, the legend is precise: the person who has spent thirty years writing the definitive account of Iranian kingship has earned the right to say what a bad king looks like, and to say it in verse. The Shahnameh itself is the long version of what the satirical qasida says in short. Mahmud appears in the chronicle's mirrors whether or not he recognized himself.",
+      "summary_fa": "سنت می‌گوید فردوسیِ خشمگین از پرداختِ محمود، قصیده‌ی هجویِ حمله به شاه سرود و قبل از ترکِ ابدیِ غزنی توزیع کرد. کسی که سی سال نوشته تاریخِ قطعیِ شاهیِ ایرانی حقِ گفتنِ شکلِ شاهِ بد را دارد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "surviving-patron",
+      "category": "concept",
+      "title_en": "How the Shahnameh Survived Its Patron",
+      "title_fa": "چگونه شاهنامه از حامیِ خود جان سالم به در برد",
+      "summary_en": "Mahmud of Ghazni is remembered today primarily because the Shahnameh exists and he appears in it. The relationship is inverted: the patron who refused to honour the poet adequately is preserved in the record the poet created. This is not unusual in literary history — patrons frequently outlast their material wealth in the memory of the works they sponsored or failed to sponsor adequately. What is unusual about Ferdowsi's case is the scale: Mahmud's empire is gone; the Shahnameh is still read.",
+      "summary_fa": "محمودِ غزنوی امروز عمدتاً به خاطرِ وجودِ شاهنامه و حضورش در آن یاد می‌شود. رابطه معکوس است: حامیِ بی‌وفا در ثبتِ شاعری که به اندازه‌ی کافی احترامش نگذاشت محفوظ مانده. امپراتوریِ محمود رفته؛ شاهنامه هنوز خوانده می‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "audience-future",
+      "category": "concept",
+      "title_en": "Writing for an Audience That Did Not Yet Exist",
+      "title_fa": "نوشتن برای مخاطبانی که هنوز وجود نداشتند",
+      "summary_en": "Ferdowsi wrote the Shahnameh for the Iranian-speaking world he knew, but he also understood — as his own prologues make clear — that the work's real audience was everyone who would come after. The Shahnameh has been read continuously for a thousand years in Persian, translated into dozens of languages, and remains the foundational text of Iranian literary culture. Ferdowsi did not know this would happen. But he wrote as if it might. The thirty years of work, the refusal to stop when patronage was uncertain, the insistence on completion — all of this is the behaviour of a person writing for durability, not for the present.",
+      "summary_fa": "فردوسی شاهنامه را برای دنیایِ فارسی‌زبانِ شناخته‌شده نوشت اما می‌فهمید که مخاطبانِ واقعیِ اثر همه‌ی کسانی هستند که بعد می‌آیند. سی سال کار رفتارِ کسی است که برای دوام می‌نویسد، نه برای حال.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "words-outlast",
+      "category": "concept",
+      "title_en": "Words Outlasting Courts",
+      "title_fa": "واژه‌هایی که از دربارها عمر می‌کنند",
+      "summary_en": "The Shahnameh's own survival is the proof of its central argument: words keep civilizations. The Samanid dynasty that first patronized Ferdowsi is gone. The Ghaznavid dynasty that underpaid him is gone. The Safavid, the Timurid, the Mongol rulers who all encountered the Shahnameh at various points in the following centuries are gone. The Shahnameh is not gone. Every dynasty that touched it was eventually consumed by time; the text consumed none of them but outlasted all of them. This is the Shahnameh's revenge on every court that undervalued it.",
+      "summary_fa": "بقایِ خودِ شاهنامه اثباتِ استدلالِ مرکزی‌اش است: واژه‌ها تمدن‌ها را نگه می‌دارند. هر سلسله‌ای که به آن دست زد سرانجام توسطِ زمان بلعیده شد؛ متن هیچ‌کدام را نبلعید اما از همه ماندگارتر بود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

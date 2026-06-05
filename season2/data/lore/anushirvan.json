@@ -86,5 +86,66 @@
     "intro_tg": "Хусрав Ануширвон додгоҳҳо сохт, тақсими заминро ислоҳ кард ва Ҳайтолиёнро шикаст дод. Шоҳнома ӯро Одил меномад. Барои рӯбарӯ шудан бо ин дарвоза бояд ҳамчунин бипурсӣ шоҳи Одил чиро нотамом гузошт.",
     "boss_name_tg": "Баландӣ ва соябонаш"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "justice-as-system",
+      "category": "concept",
+      "title_en": "Justice as System, Not Instinct",
+      "title_fa": "عدل به عنوانِ نظام، نه غریزه",
+      "summary_en": "Anushirvan's justice is administrative — land reform, standardized taxation, regularized courts. The Shahnameh calls him Just because his reign produced measurable fairness across a large empire for a long time, not because he had good instincts on any given day. Instinctive justice fails when the just king is tired or distracted. Systematic justice outlasts the king who built it, at least for a generation. The Shahnameh's highest praise is reserved for kings who built systems rather than kings who performed goodness personally.",
+      "summary_fa": "عدلِ انوشیروان اداری است. شاهنامه او را دادگر می‌خواند چون عدالتِ قابلِ اندازه‌گیری در امپراتوری‌ای بزرگ برای مدتِ طولانی تولید کرد — نه چون هر روز غریزه‌ی خوبی داشت.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "buzurgmihr",
+      "category": "person",
+      "title_en": "Buzurgmihr — The Wise Counsellor",
+      "title_fa": "بزرگمهر — مشاورِ خردمند",
+      "summary_en": "Buzurgmihr is the Shahnameh's model of the wise counsellor — the figure who makes a just king more just by giving him better instruments for thinking. He answers the Indian challenge of chess with a counter-challenge of backgammon, demonstrating that Iranian intellectual culture could meet foreign riddles and generate new ones. The Shahnameh's ideal political structure is not a great king alone — it is a great king in dialogue with a great counsellor.",
+      "summary_fa": "بزرگمهر الگوی مشاورِ خردمندِ شاهنامه است. ساختارِ سیاسیِ ایده‌آلِ شاهنامه شاهِ بزرگ به تنهایی نیست — بلکه شاهِ بزرگ در گفتگو با مشاورِ بزرگ است.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "hephthalite-defeat",
+      "category": "event",
+      "title_en": "The Defeat of the Hephthalites",
+      "title_fa": "شکستِ هیاطله",
+      "summary_en": "The Hephthalites had humiliated the Sasanian empire for decades before Anushirvan — his predecessor Peroz died fighting them; his father Kavad paid tribute. Anushirvan ended this. The victory is military competence in service of political dignity, restoring the eastern frontier and demonstrating that the administrative reforms had produced an army capable of sustained campaign. The Shahnameh measures military success by what it protects, not by how spectacular it looks.",
+      "summary_fa": "هیاطله دهه‌ها امپراتوریِ ساسانی را تحقیر کرده بودند. انوشیروان این را پایان داد. شاهنامه پیروزیِ نظامی را با آنچه محافظت می‌کند اندازه می‌گیرد — نه با اینکه چقدر دیدنی است.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "what-just-left-undone",
+      "category": "concept",
+      "title_en": "What the Just King Left Undone",
+      "title_fa": "آنچه شاهِ دادگر ناتمام گذاشت",
+      "summary_en": "The Shahnameh calls Anushirvan Just and documents his achievements — then leaves visible what his justice did not reach. His son Hormuz inherited a system that collapsed within a generation. The reforms did not transfer. The chronicle notes this without editorializing. But the proximity of Anushirvan's glory to Hormuz's catastrophe is itself the editorial: justice is not a gift you can leave to heirs. It is a practice each generation must re-learn.",
+      "summary_fa": "انوشیروان عدالت را به عنوانِ ساختار بنا کرد اما شرایطِ بقایِ ساختار پس از مرگش را نساخت. عدالت هدیه‌ای نیست که به وارثانت بگذاری — تمرینی است که هر نسل باید دوباره یاد بگیرد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "chess-arrival",
+      "category": "event",
+      "title_en": "The Arrival of Chess",
+      "title_fa": "ورودِ شطرنج",
+      "summary_en": "An Indian embassy arrives with chess and a challenge: deduce the rules from observation. Buzurgmihr does, then sends back backgammon with the same challenge reversed. The episode demonstrates the court's intellectual confidence — the capacity to receive a foreign system, master it, and generate an answer. A court capable of this understands how knowledge works. Anushirvan's reign is the only Sasanian chapter where this quality is present.",
+      "summary_fa": "سفارتِ هندی با شطرنج می‌آید. بزرگمهر قوانین را کشف می‌کند و با نردبازی پاسخِ معکوس می‌دهد. دربارِ قادر به این کار دربارِ فاهمِ نحوه‌ی کارکردِ دانش است.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "reign-cannot-be-inherited",
+      "category": "concept",
+      "title_en": "The Reign That Could Not Be Inherited",
+      "title_fa": "فرمانروایی‌ای که به ارث نمی‌رسید",
+      "summary_en": "Anushirvan's qualities did not transfer. Buzurgmihr is gone. The land reforms require a king who understands why they matter. Hormuz inherits the machinery but not the understanding that built it, and within thirty years the machinery becomes a weapon wielded by generals. The Shahnameh's most just king produces the chronicle's most spectacular dynastic collapse within two generations. The lesson is uncomfortable: justice built by one person cannot simply be handed to the next.",
+      "summary_fa": "ویژگی‌هایِ انوشیروان منتقل نشد. هرمز دستگاه را به ارث برد اما نه درکی که آن را ساخت. دادگرترین شاهِ شاهنامه در عرضِ دو نسل فروپاشیِ سلسله‌ای می‌آفریند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

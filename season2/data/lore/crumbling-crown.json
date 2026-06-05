@@ -86,5 +86,66 @@
     "intro_tg": "Сулолаи Сосониён худашро балид. Чордаҳ подшоҳ дар си сол. Ҳар кадом нишона. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ як империя вақте ки дигар намедонад чӣ гуна бар худ ҳукм кунад чӣ шакл дорад.",
     "boss_name_tg": "Чордаҳ шоҳ, си сол"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "fourteen-in-thirty",
+      "category": "concept",
+      "title_en": "Fourteen Rulers in Thirty Years",
+      "title_fa": "چهارده حاکم در سی سال",
+      "summary_en": "The average reign of the Sasanian dynasty's last fourteen rulers was just over two years. This number is the Shahnameh's argument made statistical: a dynasty that cannot sustain a reign long enough to govern has lost the capacity to govern. Succession had become a mechanism of destruction rather than continuity. Each new ruler was produced by the removal of the previous one, and each removal required the expenditure of military and political resources that could not be replaced. By the time Yazdegerd III came to the throne, there was nothing left to govern with.",
+      "summary_fa": "میانگینِ فرمانرواییِ چهارده حاکمِ آخرِ ساسانی اندکی بیش از دو سال بود. این عدد استدلالِ شاهنامه به صورتِ آماری است: سلسله‌ای که نمی‌تواند فرمانروایی را به اندازه‌ی کافی برای حکومت ادامه دهد ظرفیتِ حکومت را از دست داده.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "each-a-symptom",
+      "category": "concept",
+      "title_en": "Each Ruler a Symptom",
+      "title_fa": "هر حاکم یک نشانه",
+      "summary_en": "The Shahnameh treats the late Sasanian rulers not as causes of the collapse but as symptoms of it. The cause is deeper: the combination of exhausting wars with Byzantium and the Arab conquests, the breakdown of the administrative system that Anushirvan built, and the generals' discovery (demonstrated by Bahram Chubin) that the throne was contestable. Each weak ruler was weak because the system that would have made a strong ruler possible had already broken. The individuals are interchangeable. The systemic failure is the story.",
+      "summary_fa": "شاهنامه حاکمانِ ساسانیِ متأخر را نه علتِ فروپاشی بلکه نشانه‌های آن می‌داند. علت عمیق‌تر است: فرسودگیِ جنگ‌ها، فروپاشیِ سیستمِ اداری، و کشفِ سرداران که تخت مورد مجادله است.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "generals-game",
+      "category": "concept",
+      "title_en": "The Throne as Prize in a Generals' Game",
+      "title_fa": "تخت به عنوانِ جایزه در بازیِ سرداران",
+      "summary_en": "The late Sasanian period shows the throne becoming, in practice, a prize in a competition among military commanders. This is the institutional consequence of Bahram Chubin's precedent: once it was demonstrated that a general could take the throne, the throne's legitimacy became dependent on military backing rather than hereditary right. The result is a cycle: each throne-holder is placed there by generals who can remove him when convenient, which means no king can govern in a way that would make the generals' removal inconvenient. The system feeds on itself.",
+      "summary_fa": "دوره‌ی ساسانیِ متأخر تخت را در عمل به جایزه‌ای در رقابتِ فرماندهانِ نظامی تبدیل می‌کند. هر دارنده‌ی تخت توسطِ سردارانی قرار می‌گیرد که وقتِ راحت می‌توانند عزلش کنند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "empire-forgets-itself",
+      "category": "concept",
+      "title_en": "When an Empire Forgets How to Govern",
+      "title_fa": "وقتی امپراتوری فراموش می‌کند چگونه حکومت کند",
+      "summary_en": "The Shahnameh's phrase for the late Sasanian collapse — that an empire decided it no longer knew how to govern itself — is not a metaphor. It describes a real institutional process: the loss of the administrative knowledge, the trained personnel, the stable procedures, and the political culture that make governance possible. This knowledge takes generations to build and can be lost in a decade of civil conflict. The Sasanian empire built it under Anushirvan and consumed it in the thirty years after Khosrow Parviz's fall. What fell to the Arabs was already hollow.",
+      "summary_fa": "از دست دادنِ دانشِ اداری، پرسنلِ آموزش‌دیده، رویه‌های پایدار و فرهنگِ سیاسی دهه‌ها طول می‌کشد تا ساخته شود و می‌تواند در یک دهه از بین برود. آنچه به دستِ عرب‌ها افتاد از قبل توخالی بود.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "no-buffer-left",
+      "category": "concept",
+      "title_en": "No Buffer Left",
+      "title_fa": "هیچ ضربه‌گیری باقی نمانده",
+      "summary_en": "Resilient political systems have buffers — institutions, relationships, reserves — that absorb shocks without transmitting them fully to the center. The Sasanian system, by the time of its final decades, had consumed all its buffers. The treasuries were empty from Byzantine wars. The military elites were divided and suspicious of each other. The administrative class had been disrupted by too-rapid succession. When the Arab conquests began, there was nothing to slow the shock. Each buffer that might have existed had already been spent on an earlier crisis.",
+      "summary_fa": "سیستم‌هایِ سیاسیِ انعطاف‌پذیر ضربه‌گیرهایی دارند — نهادها، روابط، ذخایر. سیستمِ ساسانی در دهه‌هایِ پایانی همه‌ی ضربه‌گیرهایش را مصرف کرده بود. هر ضربه‌گیر که می‌توانست وجود داشته باشد صرفِ بحرانِ قبلی شده بود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "collapse-as-record",
+      "category": "concept",
+      "title_en": "Recording Collapse Without Contempt",
+      "title_fa": "ثبتِ فروپاشی بدونِ تحقیر",
+      "summary_en": "The Shahnameh records the late Sasanian collapse without contempt for its rulers and without triumphalism for their successors. The fourteen rulers are not fools — they are people caught in a system that had already broken by the time they reached the throne. Ferdowsi's restraint here is one of the Shahnameh's most important qualities: it refuses to convert systemic failure into personal failure, and it refuses to assign moral blame where the actual cause was structural. The chronicle watches the dynasty end and records what it sees.",
+      "summary_fa": "شاهنامه فروپاشیِ ساسانیِ متأخر را بدونِ تحقیرِ حاکمانش ثبت می‌کند. چهارده حاکم احمق نیستند — آدم‌هایی هستند که در سیستمی گرفتار شده‌اند که وقتی به تخت رسیدند از قبل شکسته بود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

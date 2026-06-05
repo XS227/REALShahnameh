@@ -86,5 +86,66 @@
     "intro_tg": "Шағод чоҳи оҳанинро канд ва бо хок пӯшонд. Бародари ноянии худро ба шикор даъват кард. Барои рӯбарӯ шудан бо ин дарвоза бояд бо бераҳмонатарин шакли хиёнат ҳисоб кунӣ: он навъе ки дар либоси оила меояд.",
     "boss_name_tg": "Шағод — Хоин"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "shaghad-builds-pit",
+      "category": "event",
+      "title_en": "Shaghad Builds the Pit",
+      "title_fa": "شغاد چاه را می‌کند",
+      "summary_en": "Shaghad's preparation is methodical. He digs the pit, plants iron spikes at the bottom, covers the surface with soil and leaves, and then arranges the hunt. Every step is deliberate. The Shahnameh records this preparation with characteristic precision — not to celebrate Shaghad's cunning, but to establish that what destroyed Rostam was not accident or superior force. It was premeditated betrayal, prepared over time, executed with care. The cruelty is in the methodology: Shaghad did not kill Rostam in anger. He made arrangements.",
+      "summary_fa": "آماده‌سازیِ شغاد روش‌مند است. چاه را می‌کند، نیزه‌هایِ آهنی در ته می‌کارد، سطح را با خاک و برگ می‌پوشاند و بعد شکار را ترتیب می‌دهد. هر قدم عمدی است. شاهنامه این آماده‌سازی را با دقتِ مشخص ثبت می‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "family-betrayal",
+      "category": "concept",
+      "title_en": "The Cruelest Form of Betrayal",
+      "title_fa": "بی‌رحمانه‌ترین شکلِ خیانت",
+      "summary_en": "The Shahnameh has many betrayals — Garsivaz betraying Siavash, Gorgin betraying Bijan, Sudabeh betraying her own integrity. What makes Shaghad's betrayal the cruelest is its medium: family. Shaghad is Rostam's half-brother. The invitation to hunt is the kind of invitation that family issues and family accepts without suspicion. The pit is covered precisely because family does not look where it walks with family. The Shahnameh's most devastating weapon in its final chapters is not a demon or a foreign army. It is a brother.",
+      "summary_fa": "آنچه خیانتِ شغاد را بی‌رحمانه‌ترین می‌کند محیطِ آن است: خانواده. شغاد برادرِ ناتنیِ رستم است. دعوت به شکار نوعِ دعوتی است که خانواده صادر می‌کند و خانواده بدونِ سوءظن می‌پذیرد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "rostam-in-pit",
+      "category": "event",
+      "title_en": "Rostam in the Pit",
+      "title_fa": "رستم در چاه",
+      "summary_en": "Rostam falls into the pit and is pierced by the iron spikes. The Shahnameh does not make this moment easy to read: the world's greatest warrior, the person who has survived demons and dragons and the Seven Labours and Esfandiyar's weapons, is dying in a hole that his brother dug. The physical contrast — all that strength, that legendary body, in a pit — is the Shahnameh's precise statement about the limit of physical power: it can defeat every external force, but it has no defence against someone who uses trust as a weapon.",
+      "summary_fa": "رستم در چاه می‌افتد و توسطِ نیزه‌هایِ آهنی سوراخ می‌شود. بزرگترین جنگاورِ دنیا در چاهی که برادرش کنده در حالِ مرگ است. تضادِ جسمانی اظهاریه‌ی دقیقِ شاهنامه است درباره‌ی محدودیتِ قدرتِ جسمانی.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "last-arrow",
+      "category": "event",
+      "title_en": "Rostam's Last Arrow",
+      "title_fa": "آخرین تیرِ رستم",
+      "summary_en": "Dying in the pit, Rostam asks Shaghad for his bow — pretending he wants to kill the wild animals circling overhead. Shaghad, satisfied, gives it to him. Rostam uses his last strength to shoot Shaghad through a tree trunk, killing him before dying himself. The Shahnameh presents this final act with a particular quality: it is not revenge in the emotional sense. It is precision. A dying man using his last breath to complete one more task with the same accuracy he has brought to every task for a hundred and twenty years.",
+      "summary_fa": "رستمِ در حالِ مرگ در چاه تیر و کمانش را می‌خواهد. شغاد راضی از انتقام می‌دهد. رستم آخرین نیرویش را صرفِ تیر انداختن از میانِ تنه‌ی درخت به شغاد می‌کند. عملِ نهایی با همان دقتِ صد و بیست سال.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "shaghad-character",
+      "category": "person",
+      "title_en": "Shaghad — What He Was",
+      "title_fa": "شغاد — آنچه بود",
+      "summary_en": "The Shahnameh gives Shaghad minimal characterization — he is defined almost entirely by what he did, not by who he was. This is deliberate. The chronicle is not interested in the psychology of betrayal; it is interested in the fact and the structure of betrayal. Shaghad had a grievance against Rostam (real or perceived — the chronicle is not entirely clear). He converted that grievance into premeditated murder over time. The process — not the personality — is what the Shahnameh records. Betrayers in the Shahnameh are not explained away. They are named.",
+      "summary_fa": "شاهنامه توصیفِ حداقلی از شغاد می‌دهد — او تقریباً کاملاً با آنچه انجام داد تعریف می‌شود نه با آنکه بود. دفتر به روان‌شناسیِ خیانت علاقه ندارد؛ به واقعیت و ساختارِ آن علاقه دارد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "chronicle-after-rostam",
+      "category": "concept",
+      "title_en": "The Chronicle After Rostam",
+      "title_fa": "شاهنامه پس از رستم",
+      "summary_en": "The Shahnameh continues after Rostam's death — there are still the Sasanian chapters, the Arab conquest, the final closing. But the chronicle's relationship to its own narrative changes after the pit. Something that had been structurally present from the birth of Rostam — the knowledge that if the worst came, he could be called — is no longer there. The Shahnameh does not editorialize this. It simply records what happens next, in a world that no longer has what it had before. The reader feels the absence more than the text describes it.",
+      "summary_fa": "شاهنامه پس از مرگِ رستم ادامه می‌یابد — اما رابطه‌ی دفتر با روایتِ خودش تغییر می‌کند. چیزی که از تولدِ رستم ساختاراً حاضر بود — آگاهی که اگر بدترین اتفاق افتاد می‌توان صدایش کرد — دیگر نیست.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

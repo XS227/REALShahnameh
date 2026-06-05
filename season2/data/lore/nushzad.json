@@ -86,5 +86,66 @@
     "intro_tg": "Нӯшзод дар дарбори Зардуштӣ масеҳӣ буд. Бар зидди падараш шоҳи Одил шӯрид. Бохт. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ интихоби имон бар сулола чӣ арзиш дорад.",
     "boss_name_tg": "Писаре ки иштибоҳ интихоб кард"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "christian-in-zoroastrian-court",
+      "category": "concept",
+      "title_en": "The Wrong Religion in the Right Court",
+      "title_fa": "دینِ نادرست در دربارِ درست",
+      "summary_en": "Nushzad was born to a Sasanian king and a Christian woman. He grew up Christian in a Zoroastrian court — a position that was not simply a personal identity but a structural problem. The Shahnameh understands this without dramatizing it: Nushzad did not choose his religion in an abstract sense; it was the faith of his mother, the context of his upbringing. But in the Sasanian political world, the faith of the crown prince was not a private matter. His Christianity meant he could not perform the public religious functions of a Sasanian king.",
+      "summary_fa": "نوشزاد در دربارِ زردشتی مسیحی بود — موقعیتی که نه فقط هویتِ شخصی بلکه مشکلِ ساختاری بود. شاهنامه این را بدونِ نمایش‌سازی می‌فهمد: دینش انتخابِ انتزاعی نبود، ایمانِ مادرش بود.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "rebel-against-just-father",
+      "category": "concept",
+      "title_en": "Rebelling Against the Just King",
+      "title_fa": "شورش علیهِ شاهِ دادگر",
+      "summary_en": "The Shahnameh's structural problem with Nushzad's rebellion is this: he rebels against Anushirvan, who the chronicle has already established as its model of just rule. The rebellion is therefore not a fight against injustice — it is a fight against justice by someone whose personal situation places him outside the system that justice serves. Nushzad was not wrong to feel excluded. He was wrong to respond to that exclusion with armed rebellion against the person the Shahnameh regards as the best ruler of his era.",
+      "summary_fa": "مشکلِ ساختاریِ شاهنامه با شورشِ نوشزاد این است: او علیهِ انوشیروان شورید — کسی که دفتر قبلاً به عنوانِ الگویِ حکمِ عادلانه تثبیت کرده. شورش مبارزه با بی‌عدالتی نیست — مبارزه با عدالت است.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "faith-over-dynasty",
+      "category": "concept",
+      "title_en": "Choosing Faith Over Dynasty",
+      "title_fa": "انتخابِ ایمان بر دودمان",
+      "summary_en": "Nushzad chooses his faith over his dynasty. In the Shahnameh's world this is legible as a choice — it is presented with enough detail that the reader can see it as a real decision made by a real person in an impossible situation. The chronicle does not endorse the choice. Nushzad loses, and the Shahnameh records his loss without sentimentality. But it also does not dismiss the choice. A person who chooses the conviction of their inner life over the political survival of their outer life is making a choice the Shahnameh can describe even when it cannot approve.",
+      "summary_fa": "نوشزاد ایمان را بر دودمان انتخاب می‌کند. دفتر این انتخاب را تأیید نمی‌کند. نوشزاد می‌بازد و شاهنامه باختش را بدونِ احساساتی‌گری ثبت می‌کند. اما انتخاب را هم رد نمی‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "what-it-costs",
+      "category": "concept",
+      "title_en": "What the Choice Costs",
+      "title_fa": "انتخاب چه هزینه‌ای دارد",
+      "summary_en": "The cost of Nushzad's choice is his life and his cause. The rebellion fails. Nushzad dies. The Christian communities he was trying to protect are not protected — they are, if anything, in a more precarious position after the rebellion than before it. This is the Shahnameh's consistent finding about choices made from conviction rather than calculation: they may be morally coherent but they are not always strategically effective, and the people whose cause you champion may pay for your conviction more than you do.",
+      "summary_fa": "هزینه‌ی انتخابِ نوشزاد جانش و آرمانش است. شورش شکست می‌خورد. جوامعِ مسیحی که سعی داشت از آنها محافظت کند محافظت نمی‌شوند. یافته‌ی پیوسته‌ی شاهنامه: انتخاب‌هایِ برآمده از ایمان ممکن است از نظرِ اخلاقی منسجم اما از نظرِ استراتژیک موثر نباشند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "anushirvan-response",
+      "category": "event",
+      "title_en": "Anushirvan's Response to the Rebellion",
+      "title_fa": "پاسخِ انوشیروان به شورش",
+      "summary_en": "Anushirvan suppresses the rebellion. The Shahnameh records this without celebrating it: a just king was forced to kill his son to maintain the order that made him just. The tragedy is structural — the same systemic justice that made Anushirvan's reign admirable produced the conditions that made Nushzad's exclusion inevitable, which produced the rebellion, which required suppression. The just king is not the cause of the tragedy. But the system the just king built is the medium through which the tragedy occurred.",
+      "summary_fa": "انوشیروان شورش را سرکوب می‌کند. شاهنامه این را بدونِ جشن ثبت می‌کند: شاهِ دادگر مجبور شد پسرش را بکشد تا نظمِ سازنده‌ی دادگری‌اش را حفظ کند. شاهِ دادگر علتِ تراژدی نیست — اما سیستمِ ساخته‌شده توسطِ شاهِ دادگر محیطِ وقوعِ تراژدی است.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "religious-minority-court",
+      "category": "concept",
+      "title_en": "The Problem of the Religious Minority in the Court",
+      "title_fa": "مشکلِ اقلیتِ دینی در دربار",
+      "summary_en": "The Nushzad episode is the Shahnameh's most direct engagement with what happens when a person's inner faith and their outer political role cannot be reconciled. The chronicle does not resolve this problem — it presents it. The tension between personal conviction and political function is not resolved by Nushzad's death. It is not resolved anywhere in the Shahnameh. The chronicle records that this tension exists and produces tragedy. That is what chronicles do: they record what is, not what we would prefer to be true.",
+      "summary_fa": "اپیزودِ نوشزاد مستقیم‌ترین درگیریِ شاهنامه با آنچه اتفاق می‌افتد وقتی ایمانِ درونی فرد و نقشِ سیاسیِ بیرونی‌اش قابلِ آشتی نباشند. دفتر این مشکل را حل نمی‌کند — ارائه می‌دهد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

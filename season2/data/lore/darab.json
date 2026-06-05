@@ -86,5 +86,66 @@
     "intro_tg": "Дороб дар кӯдакӣ ба дарё андохта шуд ва дар хонаи рахтшӯе парвариш ёфт. Тахт намедонист ки ворисеро гум кардааст. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ барқарор кардани иддаои машрӯъ чӣ арзиш дорад.",
     "boss_name_tg": "Дарё ва роз"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "infant-in-river",
+      "category": "event",
+      "title_en": "The Infant in the River",
+      "title_fa": "نوزاد در رودخانه",
+      "summary_en": "Darab's mother places him in a chest and sets him in the river — a structural echo of Moses, of Sargon of Akkad, of the foundling-king archetype the Shahnameh knows well. What distinguishes the Shahnameh's version is its precision about why: the mother was a queen who had given birth in secret, whose child would complicate the succession, whose existence the court was not ready to accommodate. The river is not abandonment from cruelty. It is a calculated act of preservation in impossible circumstances.",
+      "summary_fa": "مادرِ داراب او را در صندوقی می‌گذارد و در رودخانه رها می‌کند — بازتابِ ساختاریِ کهن‌الگوی شاهِ نوپا. آنچه نسخه‌ی شاهنامه را متمایز می‌کند دقتِ آن است درباره‌ی چرا. رودخانه رهایی از بی‌رحمی نیست — عملِ محاسبه‌شده‌ای از نگهداری در شرایطِ غیرممکن است.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "throne-lost-heir",
+      "category": "concept",
+      "title_en": "The Throne That Did Not Know It Had Lost an Heir",
+      "title_fa": "تختی که نمی‌دانست وارثی گم کرده",
+      "summary_en": "The detail the Shahnameh dwells on is not Darab's survival but the throne's ignorance of his existence. For the duration of Darab's childhood — raised by a launderer, learning a trade, living outside the political world entirely — the throne continued on without knowing what it was missing. This ignorance is not presented as a flaw in the throne but as a statement about how legitimacy works: a legitimate heir does not require the system to know about him. The right is there whether or not the system can see it.",
+      "summary_fa": "جزئیاتی که شاهنامه روی آن تأمل می‌کند نه بقایِ داراب بلکه جهلِ تخت از وجودِ اوست. یک وارثِ مشروع نیازی ندارد که سیستم از او بداند. حق هست، خواه سیستم بتواند آن را ببیند یا نه.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "launderers-son",
+      "category": "concept",
+      "title_en": "Raised by a Launderer",
+      "title_fa": "پرورش‌یافته توسطِ یک رختشوی",
+      "summary_en": "Darab grows up in a launderer's house — a trade defined by cleaning what others have dirtied, by physical labour, by no proximity to power. The Shahnameh consistently values this kind of upbringing: the future king who learns the world from below understands things about it that courts cannot teach. Fereydun was raised in the mountains. Ardeshir came from a herdsman's line. Each founding king has a period outside the political world that gives him an angle on it that court-raised kings lack. Darab's laundering education is preparation, not accident.",
+      "summary_fa": "داراب در خانه‌ی رختشویی بزرگ می‌شود. شاهنامه پیوسته این نوع پرورش را ارزشمند می‌داند: شاهِ آینده‌ای که دنیا را از پایین یاد می‌گیرد چیزهایی درباره‌اش می‌فهمد که دربارها نمی‌توانند بیاموزند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "recovering-claim",
+      "category": "concept",
+      "title_en": "What It Costs to Recover a Legitimate Claim",
+      "title_fa": "بازیابیِ ادعایِ مشروع چه هزینه‌ای دارد",
+      "summary_en": "Darab's path from launderer's household to throne is not presented as a miracle in the Shahnameh. It is presented as work: the recognition of a sign, the demonstration of a quality, the gradual accumulation of evidence that this person has what the throne requires. Recovering a legitimate claim is not simply a matter of asserting it — it requires performing the qualities that the claim implies, in circumstances where those qualities can be seen and verified. Darab had the right. He also had to earn the acknowledgment of the right. These are different things.",
+      "summary_fa": "مسیرِ داراب از خانه‌ی رختشوی تا تخت در شاهنامه به عنوانِ معجزه ارائه نمی‌شود — به عنوانِ کار ارائه می‌شود. بازیابیِ ادعایِ مشروع فقط مطالبه نیست — اثبات در شرایطی که قابلِ تأیید باشد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "darab-and-alexander",
+      "category": "concept",
+      "title_en": "Darab and the Alexander Connection",
+      "title_fa": "داراب و ارتباطِ با اسکندر",
+      "summary_en": "The Shahnameh's genealogical solution to Alexander's Iranian identity runs through Darab: Alexander is Dara's half-brother, both sons of Darab. Darab's chapter is therefore not only about Darab — it is the foundation of the later Alexander episode, the place where Ferdowsi establishes the genealogical device that will allow him to absorb the Greek conqueror into the Iranian chronicle. The detail about the Greek princess Darab returns is doing significant structural work that will not pay off for several chapters.",
+      "summary_fa": "راه‌حلِ نسب‌شناختیِ شاهنامه برای هویتِ ایرانیِ اسکندر از داراب می‌گذرد: اسکندر برادرِ ناتنیِ داراست، هر دو پسرانِ داراب. دفترِ داراب بنیادِ قسمتِ بعدیِ اسکندر را می‌سازد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "legitimacy-restored",
+      "category": "concept",
+      "title_en": "The Moment Legitimacy Is Restored",
+      "title_fa": "لحظه‌ای که مشروعیت بازگردانده می‌شود",
+      "summary_en": "The moment Darab is recognized as the lost heir and assumes the throne, the Shahnameh presents it as a restoration rather than a conquest. He does not take the throne from anyone — he fills a vacancy that has existed since his birth. This framing matters: the Shahnameh consistently distinguishes between usurpation and restoration. Ardeshir usurped (though with prophetic backing). Darab restored. The chronicle gives Darab's accession a lightness it does not give Ardeshir's — because what is restored is easier to accept than what is taken.",
+      "summary_fa": "لحظه‌ای که داراب به عنوانِ وارثِ گمشده شناخته می‌شود، شاهنامه آن را به عنوانِ بازگردانی ارائه می‌دهد — نه غصب. این قاب‌بندی اهمیت دارد: شاهنامه پیوسته بین غصب و بازگردانی تمایز قائل می‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

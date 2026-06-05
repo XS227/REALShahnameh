@@ -86,5 +86,66 @@
     "intro_tg": "Баҳромгӯр бо дастони худ шер шикор кард, афсонаи худро ба қофия овард ва бидуни шоҳиде дар ботлоқе нопадид шуд. Барои рӯбарӯ шудан бо ин дарвоза бояд муаммои шоҳеро нигоҳ дорӣ ки поёни худро ба асотир табдил кард.",
     "boss_name_tg": "Шоҳи нопадидшуда"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "lion-hunter",
+      "category": "person",
+      "title_en": "The King Who Hunted Lions With His Own Hands",
+      "title_fa": "شاهی که با دستانِ خود شیر شکار کرد",
+      "summary_en": "Bahram Gur's defining characteristic in the Shahnameh is physical excellence combined with a refusal to let the court do for him what he could do himself. He hunted lions alone. He bet his throne against a challenge and won it personally. He composed poetry. The Shahnameh presents these as unified qualities — a king who inhabited his own life rather than delegating it. This is different from the chronicle's other models of good kingship (Anushirvan's systemic justice, Kay Khosrow's righteousness) and different from its models of bad kingship. Bahram Gur is his own category: the king who made himself a legend in his own lifetime.",
+      "summary_fa": "ویژگیِ مشخصه‌ی بهرام‌گور در شاهنامه برتریِ جسمانی همراه با امتناع از واگذاری آنچه می‌توانست خودش انجام دهد است. او شیر شکار کرد. شعر سرود. تخت را خودش در چالش برد. شاهنامه اینها را ویژگی‌هایِ یکپارچه ارائه می‌دهد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "making-own-legend",
+      "category": "concept",
+      "title_en": "Making Your Own Legend",
+      "title_fa": "ساختنِ افسانه‌ی خودت",
+      "summary_en": "Bahram Gur understood something that most kings in the Shahnameh did not: that the stories told about you are a form of power, and that you can participate in their construction while you are alive. He performed for his own chronicle. He hunted in ways that would be reported. He made wagers that would be remembered. The Shahnameh is the record of this performance and simultaneously an acknowledgment that the performance was genuine — he really did hunt those lions, really did compose those poems. The legend and the life were the same thing.",
+      "summary_fa": "بهرام‌گور چیزی فهمید که بیشترِ شاهانِ شاهنامه نفهمیدند: که داستان‌هایِ روایت‌شده درباره‌ی تو شکلی از قدرت هستند و می‌توانی در ساختنشان در زمانِ حیات شرکت کنی.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "the-swamp",
+      "category": "event",
+      "title_en": "The Swamp Without a Witness",
+      "title_fa": "باتلاق بدونِ شاهد",
+      "summary_en": "Bahram Gur disappears into a swamp while hunting and is never found. The Shahnameh records this plainly: he went in, no one saw him come out, no body was found. This ending — the king who made himself a legend vanishing without a witness — is the Shahnameh's final gift to Bahram Gur: a death as unmeasurable as his life. He did not die in bed. He did not die in battle. He went hunting and was gone. The absence of a body means the legend has no endpoint. It can continue indefinitely.",
+      "summary_fa": "بهرام‌گور در حالِ شکار در باتلاقی ناپدید می‌شود. هیچ شاهدی نیست. هیچ جنازه‌ای یافت نمی‌شود. این پایان — شاهی که افسانه‌ای از خودش ساخت و بدونِ شاهد ناپدید شد — آخرین هدیه‌ی شاهنامه به اوست.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "enigma-category",
+      "category": "concept",
+      "title_en": "The King Who Is an Enigma",
+      "title_fa": "شاهی که معماست",
+      "summary_en": "The Shahnameh places kings into legible categories: the just king, the reckless king, the king consumed by pride, the king destroyed by his own virtue. Bahram Gur does not fit cleanly into any of these. He was not particularly just in the administrative sense. He was not reckless. He was not consumed by pride. He was excessive — in pleasure, in physical display, in the energy he brought to everything — but his excess did not destroy his kingdom. The Shahnameh is honest enough to include him as a category that resists its own organizing principles.",
+      "summary_fa": "شاهنامه شاهان را در دسته‌بندی‌های خوانا قرار می‌دهد. بهرام‌گور تمیز در هیچ‌کدام جا نمی‌گیرد. شاهنامه به اندازه‌ی کافی صادق است که او را به عنوانِ دسته‌ای که در برابرِ اصولِ سازمان‌دهنده‌ی خودش مقاومت می‌کند شامل کند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "poetry-and-power",
+      "category": "concept",
+      "title_en": "Poetry and Power",
+      "title_fa": "شعر و قدرت",
+      "summary_en": "Bahram Gur is credited in the Shahnameh and in tradition with introducing rhyme to Persian poetry — or at least with being the patron of the tradition that developed it. Whether historical or legendary, this attribution matters: it connects a king famous for physical prowess with the development of the art form that the Shahnameh itself exemplifies. Bahram Gur, the lion-hunter, is also the ancestor of the literary tradition that produced Ferdowsi. The Shahnameh notes this without irony because it is not ironic: strength and beauty have never been opposites.",
+      "summary_fa": "بهرام‌گور در شاهنامه و سنت با معرفیِ قافیه به شعرِ فارسی — یا حداقل با حمایت از سنتی که آن را پروراند — منتسب است. این انتساب اهمیت دارد: شاهِ معروف برای توانایی فیزیکی با هنری پیوند می‌خورد که خودِ شاهنامه نمونه‌اش است.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "ending-into-myth",
+      "category": "concept",
+      "title_en": "Converting an Ending Into Myth",
+      "title_fa": "تبدیلِ یک پایان به اسطوره",
+      "summary_en": "The swamp death of Bahram Gur became, in the tradition the Shahnameh records, not a death but a disappearance — which is a different thing. Disappearances can mean return. They leave room for the figure to persist in imagination. Alexander died with his hands open, his body visible. Bahram Gur left no body, no witnessed moment, no definite ending. In the Shahnameh's world, a king who controls his own ending — even by making it uncontrollable by others — has performed the final act of the legend he spent his lifetime building.",
+      "summary_fa": "مرگِ بهرام‌گور در باتلاق به جای مرگ ناپدید شدن است — که چیزِ متفاوتی است. ناپدید شدن می‌تواند یعنی بازگشت. شاهی که پایانِ خودش را کنترل می‌کند — حتی با کنترل‌ناپذیر ساختنِ آن برای دیگران — آخرین عملِ افسانه‌ای را انجام داده که عمرش را صرفِ ساختنش کرد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

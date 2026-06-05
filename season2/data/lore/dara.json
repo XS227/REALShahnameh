@@ -86,5 +86,66 @@
     "intro_tg": "Доро аз хам шудан саркашӣ кард. Шоҳнома ғурури ӯро бе узрхоҳӣ ва шикасташро бе таҳқир сабт мекунад. Барои рӯбарӯ шудан бо ин дарвоза бояд ҳар ду ҳақиқатро якҷо нигоҳ дорӣ.",
     "boss_name_tg": "Мавҷи Юнонӣ"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "pride-without-apology",
+      "category": "concept",
+      "title_en": "Pride Without Apology",
+      "title_fa": "غرور بدونِ عذرخواهی",
+      "summary_en": "Dara refused to negotiate with Alexander from a position of weakness. The Shahnameh records this without judging it: his pride is presented as a real quality, not a flaw. He was the descendant of Darab, the heir of four centuries of Achaemenid rule, and the legitimate king of an empire that had been larger than Alexander's at its height. His refusal to bend to the Greek tide was not vanity — it was a accurate assessment of what he was and what bending would mean. The Shahnameh does not pretend pride is always wrong. Sometimes it is the only appropriate response.",
+      "summary_fa": "داراب از مذاکره با اسکندر از موضعِ ضعف سر باز زد. شاهنامه این را بدونِ قضاوت ثبت می‌کند: غرورش به عنوانِ ویژگیِ واقعی ارائه می‌شود، نه عیب. شاهنامه وانمود نمی‌کند غرور همیشه اشتباه است.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "defeat-without-contempt",
+      "category": "concept",
+      "title_en": "Defeat Without Contempt",
+      "title_fa": "شکست بدونِ تحقیر",
+      "summary_en": "The Shahnameh records Dara's defeat without contempt. This is significant: in a chronicle written in the Iranian tradition about an Iranian king's defeat by a foreign conqueror, the temptation to find moral fault in the defeated king would have been strong and politically useful. Ferdowsi resists it. Dara lost not because he was morally inferior but because the structural conditions — exhausted empire, superior Macedonian tactics, Dara's betrayal by his own commanders — produced a defeat. The moral quality of the king and the outcome of the battle are separate things.",
+      "summary_fa": "شاهنامه شکستِ دارا را بدونِ تحقیر ثبت می‌کند. فردوسی در سراشیبیِ پیدا کردنِ عیبِ اخلاقی در شاهِ مغلوب مقاومت می‌کند. کیفیتِ اخلاقیِ شاه و نتیجه‌ی نبرد از هم جداست.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "dara-betrayed",
+      "category": "event",
+      "title_en": "Dara Betrayed by His Own Commanders",
+      "title_fa": "دارا خیانت‌دیده توسطِ سردارانِ خودش",
+      "summary_en": "Dara is killed not in battle but by his own commanders — Bessus and Nabarzanes — who saw the defeat coming and tried to bargain their way to Alexander's favour by removing the man they served. The Shahnameh records this betrayal with characteristic precision: the failure of Dara's reign is not his military defeat, which might have been recoverable, but the betrayal by the men whose loyalty was the foundation of his power. When that loyalty dissolved, the empire dissolved with it. The battle was the symptom. The betrayal was the disease.",
+      "summary_fa": "دارا در نبرد کشته نمی‌شود بلکه توسطِ سردارانِ خودش — که معامله‌ی خود را با اسکندر می‌خواستند — خیانت می‌بیند. شکستِ نظامی شاید قابلِ جبران بود. خیانت نبود.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "both-truths",
+      "category": "concept",
+      "title_en": "Holding Both Truths at Once",
+      "title_fa": "نگه داشتنِ هر دو حقیقت به طورِ همزمان",
+      "summary_en": "The Shahnameh asks its reader to hold Dara's pride without apology and his defeat without contempt simultaneously. This is the harder reading. The easy readings are: Dara's pride caused his defeat (moralistic) or Dara was a victim of superior force (apologetic). Neither of these is what the Shahnameh says. What it says is: he was proud in a way that was appropriate to who he was, and he was defeated by forces that had nothing to do with his moral quality. Both things are true. The reader who can hold both understands what the Shahnameh means by a ruler's tragedy.",
+      "summary_fa": "شاهنامه از خواننده می‌خواهد هم غرورِ دارا بدونِ عذرخواهی و هم شکستش بدونِ تحقیر را همزمان نگه دارد. این خواندنِ سخت‌تر است. هر دو چیز درست هستند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "alexander-at-the-body",
+      "category": "event",
+      "title_en": "Alexander at Dara's Body",
+      "title_fa": "اسکندر بر سرِ جنازه‌ی دارا",
+      "summary_en": "Alexander finds Dara dying — betrayed by his own men, abandoned by his army. He holds him, and the Shahnameh says he wept. Whether or not this is historically accurate, it is narratively precise: the conqueror weeping over the conquered is the Shahnameh's image of what a civilized person does when they encounter the full weight of what they have done. The weeping does not undo the conquest. But it establishes that Alexander was not indifferent to it, and that distinction — between the conqueror who cares and the conqueror who does not — is the Shahnameh's moral minimum.",
+      "summary_fa": "اسکندر دارا را در حالِ مرگ می‌یابد. او را نگه می‌دارد و شاهنامه می‌گوید گریست. فاتحِ گریان فتح را پس نمی‌گیرد — اما ثابت می‌کند که نسبت به آن بی‌تفاوت نبود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "end-of-achaemenid",
+      "category": "concept",
+      "title_en": "The End of the Achaemenid World",
+      "title_fa": "پایانِ دنیایِ هخامنشی",
+      "summary_en": "Dara's death ends the Achaemenid dynasty in the Shahnameh's chronology. What follows — the Arsacid period — is a different political structure, a different form of Iranian rule. The Shahnameh marks this transition without ceremony because the ceremony would be false: Dara does not die as the last representative of a noble tradition. He dies as a betrayed king in a ditch, killed by his own men. The Shahnameh is honest enough to record this without making it into a heroic last stand. The world that ended with Dara ended badly, and that is how the Shahnameh records it.",
+      "summary_fa": "مرگِ دارا سلسله‌ی هخامنشی را در گاه‌شماریِ شاهنامه پایان می‌دهد. شاهنامه این گذار را بدونِ تشریفات ثبت می‌کند — چون تشریفات دروغ می‌بود. دنیایی که با دارا پایان یافت بد پایان یافت.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

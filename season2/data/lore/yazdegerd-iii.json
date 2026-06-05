@@ -86,5 +86,66 @@
     "intro_tg": "Яздигурди Севум бо хазинааш гурехт ва бе сипоҳ. Солнома бе таҳқир ва бе тасалло нозири рафтанаш аст. Барои рӯбарӯ шудан бо ин дарвоза бояд андӯҳи дақиқи Шоҳнома барои охирин шоҳи Сосонии худашро нигоҳ дорӣ.",
     "boss_name_tg": "Охирин гурез ба шарқ"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "last-emperor",
+      "category": "person",
+      "title_en": "Yazdegerd III — The Last Emperor",
+      "title_fa": "یزدگردِ سوم — آخرین شاهنشاه",
+      "summary_en": "Yazdegerd III inherited the Sasanian Empire when it was already broken. He was twenty years old. The empire had survived Shapur's court, Khosrow Parviz's ambitions, then the chaos of Shiruya's murders, then a sequence of six or seven emperors in as many years, each dying or being deposed before they could consolidate anything. Yazdegerd did not lose a functioning empire. He lost the wreckage of one. The Shahnameh records this with deliberate pathos: the last emperor is young, the situation is impossible, and the chronicle does not pretend otherwise.",
+      "summary_fa": "یزدگردِ سوم امپراتوریِ ساسانی را وقتی از قبل شکسته بود به ارث برد. بیست ساله بود. آخرین شاهنشاه جوان بود، وضعیت غیرممکن بود، و شاهنامه وانمود نمی‌کند که جز این بود.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "arab-conquest-cause",
+      "category": "event",
+      "title_en": "Why the Arabs Conquered — What the Shahnameh Says",
+      "title_fa": "چرا اعراب فتح کردند — آنچه شاهنامه می‌گوید",
+      "summary_en": "The Shahnameh does not attribute the Arab conquest primarily to Arab military strength. It attributes it to the collapse of Iranian internal coherence. A series of weak or murdered emperors, a nobility that had learned to place factional interest above dynastic loyalty, a treasury exhausted by decades of Byzantine war, an army that had spent its energy on civil conflict — these are the conditions the chronicle identifies. The Arab conquest, in the Shahnameh's reading, was possible because Iran was not there to resist. External force met internal vacuum. That is what the chronicle considers the real cause.",
+      "summary_fa": "شاهنامه فتحِ اعراب را اصلاً به قدرتِ نظامیِ اعراب نسبت نمی‌دهد. آن را به فروپاشیِ انسجامِ داخلیِ ایران نسبت می‌دهد. فتحِ اعراب ممکن بود زیرا ایران برای مقاومت آنجا نبود.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "flight-of-yazdegerd",
+      "category": "event",
+      "title_en": "The Flight — What It Meant",
+      "title_fa": "فرار — معنایش چه بود",
+      "summary_en": "Yazdegerd's final years were a flight across his own empire, moving from province to province as the Arab conquest advanced and his supporters dissolved. The Shahnameh records this flight with unusual attention to geography — specific provinces, specific cities, specific lords who received him or refused him. The geographical detail is not incidental. Each city that received him bought time; each city that refused him accelerated the end. The flight is a record of how the empire disaggregated — not all at once, but province by province, loyalty by loyalty.",
+      "summary_fa": "سال‌هایِ پایانیِ یزدگرد فراری در سرتاسرِ امپراتوریِ خودش بود. شاهنامه این فرار را با توجهِ غیرمعمول به جغرافیا ثبت می‌کند. هر شهری که او را پذیرفت زمان خرید؛ هر شهری که رفض کرد پایان را تسریع کرد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "assassination-of-yazdegerd",
+      "category": "event",
+      "title_en": "Death by a Miller — The Shahnameh's Final Image",
+      "title_fa": "مرگ به دستِ آسیابان — تصویرِ پایانیِ شاهنامه",
+      "summary_en": "Yazdegerd is murdered not by an Arab soldier, not in battle, not in a dramatic last stand — but by a miller who kills him for his valuables while he sleeps. The Shahnameh records this as the final image of the Sasanian dynasty: the last emperor, alone, without his empire, killed for his possessions by a man who probably did not know who he was. The anti-climax is the point. The Shahnameh is not saying the dynasty deserved this ending. It is saying that this is what endings look like when they have been prepared by a long accumulation of failures: not dramatic, not worthy of the history that preceded them, just final.",
+      "summary_fa": "یزدگرد توسطِ یک آسیابان کشته می‌شود که در خواب او را برای اموالش می‌کشد. شاهنامه این را به عنوانِ تصویرِ پایانیِ سلسله‌ی ساسانی ثبت می‌کند. ضدِاوجِ روایی نقطه است. پایان‌ها وقتی با انباشتِ طولانیِ شکست‌ها آماده شده باشند چنین به نظر می‌رسند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "end-of-sasanian",
+      "category": "event",
+      "title_en": "The End of the Sasanian Age",
+      "title_fa": "پایانِ عصرِ ساسانی",
+      "summary_en": "The Sasanian empire lasted from 224 CE to 651 CE — four hundred and twenty-seven years. In that span it fought Rome to exhaustion, produced Anushirvan's justice and Khosrow's splendour, commissioned Ferdowsi's source material, and built administrative systems that shaped the Islamic world that followed it. The Shahnameh records its end not as tragedy but as completion: the dynasty ran its course, the qualities it embodied at its peak were real, and what came after would be different but not nothing. The chronicle's grief at the ending is honest. So is its refusal to end on grief.",
+      "summary_fa": "امپراتوریِ ساسانی از ۲۲۴ میلادی تا ۶۵۱ میلادی دوام آورد. شاهنامه پایانش را نه به عنوانِ فاجعه بلکه به عنوانِ تکمیل ثبت می‌کند. سلسله سیرِ خود را طی کرد و آنچه بعد آمد متفاوت بود اما هیچ نبود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "legacy-without-state",
+      "category": "concept",
+      "title_en": "Legacy Without a State",
+      "title_fa": "میراث بدونِ دولت",
+      "summary_en": "After 651 CE there is no Iranian state for the next two and a half centuries — the territory is administered as part of the Islamic Caliphate. Yet the Iranian cultural tradition does not disappear. It transforms: Farsi becomes a literary language again under the Samanids, Ferdowsi writes the Shahnameh, the administrative traditions of the Sasanians are absorbed into the Abbasid bureaucracy. The tradition the Shahnameh is defending does not require a state to survive. It requires people who carry it. The Shahnameh is itself the argument: written without a Persian state, in the service of preserving what the state had been.",
+      "summary_fa": "پس از ۶۵۱ میلادی برای دو و نیم قرن دولتِ ایرانی وجود ندارد. با این حال سنتِ فرهنگیِ ایرانی از بین نمی‌رود. سنتی که شاهنامه از آن دفاع می‌کند برایِ بقا به دولت نیاز ندارد. به مردمی نیاز دارد که آن را حمل کنند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

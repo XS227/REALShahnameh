@@ -86,5 +86,66 @@
     "intro_tg": "Ҳар дарборе гуфт зане наметавонад фармон ронад. Ӯ ҳар яки онҳоро нодуруст исбот кард. Барои рӯбарӯ шудан бо ин дарвоза бояд он чи Ҳумой дошт нигоҳ дорӣ: возеҳӣ дар ҷаҳоне ки аз пеш зидди ту тасмим гирифта.",
     "boss_name_tg": "Дарборҳое ки рад карданд"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "every-court-refused",
+      "category": "event",
+      "title_en": "Every Court Said No",
+      "title_fa": "هر دربار نه گفت",
+      "summary_en": "Homay's succession was contested not because she lacked the qualities of a ruler but because the courts that should have recognized her had a prior commitment — to the belief that women could not rule — that they were not willing to examine. The Shahnameh records the refusals without endorsing them. What is significant is that the refusals did not stop her. She ruled. The courts that said no are now entries in a chronicle read because of the ruler they refused to accept.",
+      "summary_fa": "جانشینیِ هُمای به خاطرِ کمبودِ ویژگی‌هایِ یک فرمانروا مورد اختلاف نبود — بلکه به خاطرِ تعهدِ قبلیِ دربارها به این باور بود که زنان نمی‌توانند حکومت کنند. او حکومت کرد. دربارهایی که نه گفتند اکنون ورودی‌هایی در سالنامه‌ای هستند که به خاطرِ فرمانروایی که رد کردند خوانده می‌شود.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "clarity-in-opposition",
+      "category": "concept",
+      "title_en": "Clarity in a World Decided Against You",
+      "title_fa": "وضوح در جهانی که علیهِ تو تصمیم گرفته",
+      "summary_en": "The Shahnameh's characterization of Homay centres on a quality it calls clarity — the capacity to see what needs to be done and to do it without being distracted by the political noise of the opposition. A world that has decided against you is a world full of signals telling you to stop, to defer, to accept the consensus. Clarity is the ability to distinguish between those signals and the actual requirements of governance. Homay had the latter and was not disabled by the former.",
+      "summary_fa": "توصیفِ شاهنامه از هُمای بر کیفیتی تمرکز می‌کند که آن را وضوح می‌نامد — ظرفیتِ دیدنِ آنچه باید انجام شود و انجام دادنش بدونِ حواس‌پرتی از سروصدایِ سیاسیِ مخالفت.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "woman-king",
+      "category": "concept",
+      "title_en": "What the Shahnameh Does With a Woman Who Rules",
+      "title_fa": "شاهنامه با زنی که حکومت می‌کند چه می‌کند",
+      "summary_en": "The Shahnameh gives Homay a reign and records it without apology and without the hedging that characterized later Islamic-period histories' treatment of ruling women. She governs. The chronicle records what she did, not the gender of who did it. This is not radical feminism in a modern sense — Ferdowsi was working within a tradition. But it is something: the Shahnameh's decision to include a woman ruler in the main sequence of Iranian kingship, and to treat her reign as equivalent in form to the male reigns around it, is a choice that carries meaning.",
+      "summary_fa": "شاهنامه به هُمای فرمانروایی می‌دهد و آن را بدونِ عذرخواهی ثبت می‌کند. او حکومت می‌کند. دفتر آنچه انجام داد را ثبت می‌کند، نه جنسیتِ آنکه انجام داد.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "holding-power",
+      "category": "concept",
+      "title_en": "How She Held Power",
+      "title_fa": "چگونه قدرت را نگه داشت",
+      "summary_en": "The Shahnameh does not give Homay an extended military narrative — she did not hold power through battle. She held it through governance: administration, judgment, the day-to-day work of ruling that the Shahnameh usually compresses into a few verses when the reign is just. This compression, which might look like dismissal, is actually the highest form of Shahnameh praise: just reign does not generate dramatic incident. Homay's reign is not eventful because she governed well. The absence of crisis is the record of competence.",
+      "summary_fa": "شاهنامه به هُمای روایتِ نظامیِ گسترده نمی‌دهد — او قدرت را از طریقِ حکمرانی نگه داشت. این فشرده‌سازی که ممکن است کوچک‌انگاری به نظر برسد در واقع بالاترین شکلِ ستایشِ شاهنامه است: فرمانروایی عادلانه رویدادِ دراماتیک تولید نمی‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "son-abandoned",
+      "category": "event",
+      "title_en": "The Son She Set in the River",
+      "title_fa": "پسری که در رودخانه گذاشت",
+      "summary_en": "Like Darab, Homay places her son in the river — the same foundling-king archetype appearing again in the Shahnameh's cycle. The Shahnameh does not judge this act harshly. In the political world the chronicle describes, a queen who gives birth to an heir while the succession is unsettled faces the same impossible calculation that Darab's mother faced: expose the child to the political world before it is safe, or preserve it by concealment. Homay chooses concealment. The son will return. The river preserves, as it always has in the Shahnameh's world.",
+      "summary_fa": "مانندِ داراب، هُمای پسرش را در رودخانه می‌گذارد — همان کهن‌الگوی شاهِ نوپا که دوباره در چرخه‌ی شاهنامه ظاهر می‌شود. رودخانه محافظت می‌کند، همانطور که همیشه در دنیایِ شاهنامه کرده.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "clarity-durable",
+      "category": "concept",
+      "title_en": "Clarity as the Most Durable Governance",
+      "title_fa": "وضوح به عنوانِ پایدارترین حکمرانی",
+      "summary_en": "The Shahnameh's implicit argument about Homay is that clarity — the quality it identifies as her defining characteristic — is more durable than any specific military or administrative achievement. Military victories are reversed. Administrative systems decay. But a ruler who can see clearly in a world that is trying to obscure her vision has a quality that cannot be taken away by a stronger army or a corrupt court. Homay's reign endures in the chronicle not because she won battles but because she governed with a quality the Shahnameh values above almost everything else: accurate perception of what is real.",
+      "summary_fa": "وضوح — ویژگیِ مشخصه‌ی هُمای — پایدارتر از هر دستاوردِ نظامی یا اداریِ خاص است. فرمانروایی که می‌تواند در جهانی که تلاش می‌کند دیدش را تیره کند با وضوح ببیند ویژگی‌ای دارد که سپاهی قوی‌تر یا دربارِ فاسد نمی‌تواند بگیرد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

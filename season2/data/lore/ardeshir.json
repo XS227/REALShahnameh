@@ -86,5 +86,66 @@
     "intro_tg": "Ситорашиноси дарбор ахтарон хонд ва писари чӯпонеро сулолаи баъдӣ номид. Ардашер империяи Сосониёнро ба пояи он пешгӯӣ ва хашмгинии худ бунёд кард. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ империяҳо чӣ гуна оғоз меёбанд.",
     "boss_name_tg": "Пешгӯии чӯпон"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "prophecy-and-force",
+      "category": "concept",
+      "title_en": "Prophecy and Force as Co-Founders",
+      "title_fa": "پیشگویی و زور به عنوانِ هم‌بنیانگذار",
+      "summary_en": "Ardeshir's empire rests on two pillars: a prophecy (the astrologer who named a herdsman's son as the next dynasty) and personal ferocity. The Shahnameh presents neither as sufficient alone. Prophecy without force produces believers but not a state. Force without prophecy produces a regime but not a dynasty. What Ardeshir understood — and what Ferdowsi credits him for — is that the legitimating story and the military capacity must be built simultaneously. The Sasanian empire began with both, which is why it lasted four hundred years.",
+      "summary_fa": "امپراتوریِ اردشیر بر دو ستون استوار است: پیشگویی و خشونت. شاهنامه هیچ‌کدام را به تنهایی کافی نمی‌داند. آنچه اردشیر فهمید این بود که داستانِ مشروعیت‌بخش و ظرفیتِ نظامی باید همزمان ساخته شوند.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "herdsmans-son",
+      "category": "concept",
+      "title_en": "The Herdsman's Son",
+      "title_fa": "پسرِ چوپان",
+      "summary_en": "The detail that Ardeshir's lineage includes a herdsman is not an embarrassment in the Shahnameh — it is a credential. The chronicle has a consistent pattern: great founders come from outside the existing order, from places where the existing order cannot corrupt them. Fereydun was raised in the mountains. Rostam was born in Zabulestan, not at court. The herdsman's son is closer to the original source of legitimacy — competence, survival, the practical knowledge of the world — than any courtier.",
+      "summary_fa": "اینکه تبارِ اردشیر چوپانی دارد در شاهنامه ننگ نیست — اعتبار است. بنیانگذارانِ بزرگ از خارجِ نظمِ موجود می‌آیند، جایی که نظمِ موجود نمی‌تواند فاسدشان کند.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "battle-with-ardavan",
+      "category": "event",
+      "title_en": "The Battle with Ardavan",
+      "title_fa": "نبرد با اردوان",
+      "summary_en": "The final confrontation between Ardeshir and Ardavan is presented in the Shahnameh as a battle between a new principle and an old one — not between good and evil, but between a system that has exhausted its generative capacity and one that has not yet exhausted its own. Ardavan fights with the authority of four centuries. Ardeshir fights with the energy of a man who has not yet been limited by his own success. The Shahnameh understands this distinction and does not pretend Ardeshir won because he was more virtuous.",
+      "summary_fa": "مقابله‌ی نهایی بین اردشیر و اردوان در شاهنامه نبردِ بین اصلِ جدید و قدیم است — نه بین خیر و شر. اردوان با اقتدارِ چهار قرن می‌جنگد. اردشیر با انرژیِ مردی که هنوز به وسیله‌ی موفقیتِ خودش محدود نشده.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "sasanian-fire",
+      "category": "artifact",
+      "title_en": "The Sasanian Sacred Fire",
+      "title_fa": "آتشِ مقدسِ ساسانی",
+      "summary_en": "One of Ardeshir's founding acts is the establishment or restoration of the sacred fire — the physical symbol of Zoroastrian legitimacy and royal authority. The Shahnameh treats the sacred fire not as a religious detail but as a political instrument: the fire marks the place where kingship and divine sanction intersect. A king who maintains the fire is a king whose authority is continuous with the cosmic order. A king whose fire goes out has lost the visible sign of that continuity. The final chapters of the Shahnameh are, among other things, a record of the fires going out.",
+      "summary_fa": "یکی از اعمالِ بنیانگذارِ اردشیر برپایی آتشِ مقدس است — نمادِ فیزیکیِ مشروعیتِ زردشتی. شاهنامه آتش را نه به عنوانِ جزئیاتِ دینی بلکه به عنوانِ ابزارِ سیاسی تلقی می‌کند.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "how-empires-begin",
+      "category": "concept",
+      "title_en": "How Empires Begin in the Shahnameh",
+      "title_fa": "چگونه امپراتوری‌ها در شاهنامه آغاز می‌شوند",
+      "summary_en": "Every major empire in the Shahnameh begins with a combination of the same elements: an outsider, a prophecy, a specific grievance against the existing order, and a first battle that proves the prophecy was not empty. Ardeshir has all four. What makes his founding distinctive is the speed: from provincial noble to undisputed empire in a remarkably short span. The Shahnameh treats this speed as evidence that the conditions for the change were already present — Ardeshir did not create the possibility, he recognized it and acted before anyone else did.",
+      "summary_fa": "هر امپراتوریِ بزرگ در شاهنامه با ترکیبِ همان عناصر آغاز می‌شود: یک بیرونی، یک پیشگویی، یک شکایتِ خاص از نظمِ موجود، و اولین نبردی که ثابت می‌کند پیشگویی خالی نبود. اردشیر هر چهار را دارد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "centralization-trap",
+      "category": "concept",
+      "title_en": "The Centralization That Would Later Break",
+      "title_fa": "تمرکزی که بعداً خواهد شکست",
+      "summary_en": "Ardeshir built the most administratively centralized empire the Iranian world had seen. This was a genuine achievement — it made the early Sasanian empire extraordinarily effective. It was also, the Shahnameh eventually reveals, a structural fragility. When the center fails — when the king is weak or the succession contested — there is no distributed network of lords to absorb the failure. The Arsacid system was messy and decentralized, but it was resilient in ways Ardeshir's cleaner system was not. The Shahnameh does not blame Ardeshir for this. But it shows the full arc.",
+      "summary_fa": "اردشیر متمرکزترین امپراتوریِ اداریِ دنیایِ ایرانی را ساخت — یک دستاوردِ واقعی که شکنندگیِ ساختاری هم در خود داشت. سیستمِ اشکانی به هم‌ریخته و غیرمتمرکز بود اما انعطاف‌پذیر بود به شکل‌هایی که سیستمِ تمیزترِ اردشیر نبود.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }

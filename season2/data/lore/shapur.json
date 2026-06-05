@@ -86,5 +86,66 @@
     "intro_tg": "Ду императори Рум асир гирифта шуданд. Номи Шопур понздаҳ аср дар санг кандааст. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома бузургиро дар мутлақтарин ҳолаташ чӣ гуна месанҷад.",
     "boss_name_tg": "Рум ба зону"
   },
-  "codex": []
+  "codex": [
+    {
+      "id": "two-emperors",
+      "category": "event",
+      "title_en": "Two Roman Emperors Captured",
+      "title_fa": "دو امپراتورِ روم به اسارت",
+      "summary_en": "Shapur I captured two Roman emperors — Philip the Arab and Valerian — in separate campaigns. This is not a literary achievement of the Shahnameh; it is a historical fact commemorated in rock reliefs that still exist at Naqsh-e Rostam near Persepolis. The Shahnameh records it as the measure of Shapur's greatness: not the number of kingdoms taken, not the extent of territory, but the quality of the opposition defeated. Capturing the ruler of the world's other great empire is a different category of achievement from any other kind of military victory.",
+      "summary_fa": "شاپورِ اول دو امپراتورِ روم — فیلیپ عرب و والریان — را در کمپین‌هایِ جداگانه اسیر کرد. این واقعیتِ تاریخی است که در نقش‌برجسته‌هایِ صخره‌ای که هنوز در نقشِ رستم وجود دارد جاودانه شده.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "stone-carved",
+      "category": "place",
+      "title_en": "The Name Carved in Stone",
+      "title_fa": "نامِ کنده‌شده در سنگ",
+      "summary_en": "Shapur had his victories carved in stone at Naqsh-e Rostam — the same site where Achaemenid kings had been buried, the place where the reliefs of Darius and Xerxes overlook the plain. The choice of site is political: Shapur is placing himself in the lineage of the greatest Iranian kings, at the site that marked their burials, with imagery that would survive in stone for fifteen centuries. The Shahnameh's record is words. Shapur's record is stone. Both have lasted.",
+      "summary_fa": "شاپور پیروزی‌هایش را در سنگ در نقشِ رستم کند — همان محلی که شاهانِ هخامنشی دفن شده بودند. انتخابِ محل سیاسی است: شاپور خودش را در نسبِ بزرگترین شاهانِ ایرانی قرار می‌دهد.",
+      "image": null,
+      "unlock_via": "scene:scene-1"
+    },
+    {
+      "id": "absolute-greatness",
+      "category": "concept",
+      "title_en": "Greatness at Its Most Absolute",
+      "title_fa": "بزرگی در مطلق‌ترین حالتش",
+      "summary_en": "The Shahnameh uses Shapur to explore what greatness looks like when there is no qualification — when the military achievement is genuine, the opposition was real, the outcome was not ambiguous. Most of the Shahnameh's great kings are qualified: Rostam is great but mortal; Kay Khosrow is righteous but chooses to vanish; Anushirvan is just but cannot reproduce his justice. Shapur is the chronicle's test case for unambiguous military greatness, which it records accurately and without inflation — and then moves on, because greatness alone is not enough to sustain a dynasty.",
+      "summary_fa": "شاهنامه از شاپور برای کاوشِ شکلِ بزرگی در بی‌قیدوشرطیِ آن استفاده می‌کند. اکثرِ شاهانِ بزرگِ شاهنامه دارایِ قید هستند. شاپور مطالعه‌ی موردیِ دفتر برای بزرگیِ نظامیِ بدونِ ابهام است.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "measuring-greatness",
+      "category": "concept",
+      "title_en": "How the Shahnameh Measures Greatness",
+      "title_fa": "چگونه شاهنامه بزرگی را می‌سنجد",
+      "summary_en": "The Shahnameh does not measure greatness by territory acquired or wealth accumulated. It measures it by the quality of opposition overcome and the quality of governance that follows. Shapur scores extremely high on the first measure. On the second — the quality of governance after the military victories — the Shahnameh is more compressed, suggesting that Shapur was a warrior-king rather than a governor-king. The distinction matters: the chronicle honours both qualities but is clear that the second outlasts the first, and that empires built only on the first eventually exhaust themselves.",
+      "summary_fa": "شاهنامه بزرگی را با کیفیتِ مخالفتی که از سر گذرانده می‌سنجد. شاپور در اندازه‌ی اول بسیار بالا می‌رود. در اندازه‌ی دوم شاهنامه فشرده‌تر است — شاپور جنگجو-شاه بود نه حاکم-شاه.",
+      "image": null,
+      "unlock_via": "scene:scene-2"
+    },
+    {
+      "id": "rome-on-knees",
+      "category": "concept",
+      "title_en": "Rome on Its Knees — What It Signified",
+      "title_fa": "رُم به زانو — چه معنایی داشت",
+      "summary_en": "The image of the Roman emperor kneeling before the Sasanian king is the Shahnameh's clearest statement about the relative position of the two empires at Shapur's peak. For the Iranian tradition, Rome was the measure of foreign power — the empire against which Iranian greatness was calibrated. When Shapur captured Valerian, he demonstrated that the Iranian empire could not only match Rome but exceed it. The Shahnameh records this because it is the moment when the Iranian political project reached its maximum external validation.",
+      "summary_fa": "تصویرِ امپراتورِ روم در برابرِ شاهِ ساسانی زانو زده اظهاریه‌ی روشنِ شاهنامه است درباره‌ی موقعیتِ نسبیِ دو امپراتوری در اوجِ شاپور. وقتی شاپور والریان را اسیر کرد ثابت کرد که امپراتوریِ ایرانی نه فقط می‌تواند با روم برابری کند بلکه از آن پیشی بگیرد.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    },
+    {
+      "id": "military-and-after",
+      "category": "concept",
+      "title_en": "Military Glory and What Comes After",
+      "title_fa": "شکوهِ نظامی و آنچه پس از آن می‌آید",
+      "summary_en": "The Shahnameh places Shapur's chapter within a sequence that reveals the limitation of military glory: after Shapur come the Arsacid age's confusion, then Ardeshir's founding, then the slow development of the Sasanian administrative system, then Anushirvan's justice. Military glory is the beginning of a story, not its end. Shapur establishes that the Sasanian empire can defeat Rome. What the chronicle then spends centuries demonstrating is whether the empire can govern itself. Shapur answered the first question conclusively. The answer to the second was never as clear.",
+      "summary_fa": "شاهنامه دفترِ شاپور را در توالی‌ای قرار می‌دهد که محدودیتِ شکوهِ نظامی را آشکار می‌کند. شاپور ثابت کرد که امپراتوریِ ساسانی می‌تواند روم را شکست دهد. آنچه دفتر بعد قرن‌ها صرفِ نشان دادنش می‌شود این است که آیا امپراتوری می‌تواند بر خودش حکومت کند.",
+      "image": null,
+      "unlock_via": "scene:scene-3"
+    }
+  ]
 }
