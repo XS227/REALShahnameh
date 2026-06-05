@@ -2154,6 +2154,19 @@
       if (e.key === "Escape") { closeFullscreen(); closeCertificate(); }
     });
 
+    /* Auto-open a specific hero card when ?open=slug is in the URL
+       (e.g. navigated from the Hero Spotlight on the home page) */
+    const autoOpenSlug = new URLSearchParams(location.search).get('open');
+    if (autoOpenSlug) {
+      const item = COLLECTION.find(c => c.id === autoOpenSlug || c.slug === autoOpenSlug);
+      if (item) {
+        // Wait one tick so cards are rendered, then open
+        setTimeout(() => openCertificate(item), 50);
+      }
+      // Clean the URL so a back-navigate doesn't re-open
+      history.replaceState(null, '', location.pathname);
+    }
+
     /* After user sync completes, refresh from server */
     if (window.RealSync) {
       window.RealSync.ready().then(async () => {
@@ -2164,6 +2177,11 @@
         buildCards(
           document.querySelector("[data-filter].active")?.getAttribute("data-filter") || "all"
         );
+        // Re-open if sync delayed the card build
+        if (autoOpenSlug && !document.getElementById("cert-backdrop")?.classList.contains("open")) {
+          const item = COLLECTION.find(c => c.id === autoOpenSlug || c.slug === autoOpenSlug);
+          if (item) openCertificate(item);
+        }
       });
     }
   };

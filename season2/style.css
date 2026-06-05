@@ -5981,35 +5981,63 @@ body::after {
   padding-bottom: 2px;
 }
 .hs-row::-webkit-scrollbar { display: none; }
+/* ── Hero Spotlight — full-cover portrait cards ──────────────────────── */
 .hs-card {
   flex: 0 0 calc(50% - 5px);
   min-width: 150px;
-  background: linear-gradient(140deg, rgba(16,22,52,.9), rgba(10,14,36,.95));
-  border: 1px solid rgba(244,197,107,.2);
   border-radius: var(--r-md);
-  padding: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(244,197,107,.25);
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(140deg, rgba(16,22,52,.9), rgba(10,14,36,.95));
+  cursor: pointer;
+  transition: transform .15s, border-color .15s;
+}
+.hs-card:active { transform: scale(.97); }
+.hs-card.hs-needs-upgrade { border-color: rgba(255,179,71,.5); }
+/* Full-cover image */
+.hs-cover-img {
+  position: absolute;
+  inset: 0;
+}
+.hs-cover-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Bottom overlay gradient + text */
+.hs-cover-overlay {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: flex-end;
+  padding: 10px;
+  background: linear-gradient(0deg, rgba(4,5,11,.92) 0%, rgba(4,5,11,.5) 50%, transparent 100%);
 }
-.hs-card .hs-portrait {
-  width: 48px; height: 48px; border-radius: 10px;
-  background: linear-gradient(140deg, rgba(244,197,107,.18), rgba(140,109,255,.14));
-  border: 1px solid var(--border-gold);
-  overflow: hidden; flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center; font-size: 20px;
+.hs-cover-badge {
+  display: inline-block;
+  font-size: 9px; font-weight: 700; letter-spacing: .6px;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 3px;
 }
-.hs-card .hs-portrait img { width: 100%; height: 100%; object-fit: cover; }
-.hs-card .hs-body { flex: 1; min-width: 0; }
-.hs-card .hs-kicker { font-size: 9px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
-.hs-card .hs-name { font-size: 13px; font-weight: 800; margin: 2px 0 5px; }
-.hs-card .hs-passive {
-  display: inline-flex; align-items: center; gap: 4px;
-  font-size: 10px; color: var(--jade); font-weight: 600;
-  background: rgba(83,215,156,.1); border: 1px solid rgba(83,215,156,.25);
-  border-radius: 20px; padding: 2px 8px;
+.hs-cover-badge.warn { color: #ffb347; }
+.hs-cover-name {
+  font-size: 13px; font-weight: 800; color: #fff;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  margin-bottom: 6px;
 }
-.hs-card .hs-right { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; flex-shrink: 0; }
+.hs-cover-meta {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.hs-cover-lvl { font-size: 10px; color: var(--gold); font-weight: 700; }
+.hs-cover-upgrade {
+  font-size: 10px; font-weight: 800; color: #fff;
+  background: rgba(140,109,255,.75);
+  border-radius: 20px; padding: 3px 10px;
+  white-space: nowrap;
+}
 .hs-lvl-lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
 .hs-lvl-num { font-size: 18px; font-weight: 800; color: var(--gold); line-height: 1.1; }
 .hs-upgrade-link { font-size: 10px; color: var(--violet); text-decoration: none; margin-top: 4px; }

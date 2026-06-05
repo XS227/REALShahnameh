@@ -448,22 +448,24 @@
       .sort((a, b) => (a.playerLevel || 1) - (b.playerLevel || 1))  // lowest first
       .slice(0, 3);
 
-    host.innerHTML = spotlightHeroes.map(h => `
-      <div class="hs-card${h.needsUpgrade ? ' hs-needs-upgrade' : ''}">
-        <div class="hs-portrait">${heroPortraitHtml(h)}</div>
-        <div class="hs-body">
+    host.innerHTML = spotlightHeroes.map(h => {
+      const imgHtml = heroPortraitHtml(h);
+      const upgradeUrl = `heroes.html?open=${encodeURIComponent(h.slug)}`;
+      return `
+      <a href="${escapeAttr(upgradeUrl)}" class="hs-card hs-card-cover${h.needsUpgrade ? ' hs-needs-upgrade' : ''}" style="text-decoration:none;">
+        <div class="hs-cover-img">${imgHtml}</div>
+        <div class="hs-cover-overlay">
           ${h.needsUpgrade
-            ? `<div class="hs-kicker hs-upgrade-warn">⚠ ${escapeHtml(t('hs_upgrade_to_progress', 'Upgrade to progress'))}</div>`
-            : `<div class="hs-kicker">${escapeHtml(t('active_hero_kicker'))}</div>`}
-          <div class="hs-name">${escapeHtml(h.name)}</div>
-          <span class="hs-passive">✦ +${fmtNum(h.zarPerHour)} ${escapeHtml(t('r_zar'))}/hr</span>
+            ? `<span class="hs-cover-badge warn">⚠ ${escapeHtml(t('hs_upgrade_to_progress','Upgrade'))}</span>`
+            : `<span class="hs-cover-badge">${escapeHtml(t('active_hero_kicker'))}</span>`}
+          <div class="hs-cover-name">${escapeHtml(h.name)}</div>
+          <div class="hs-cover-meta">
+            <span class="hs-cover-lvl">${escapeHtml(t('hs_lvl_lbl'))} ${fmtNum(h.playerLevel || 1)}</span>
+            <span class="hs-cover-upgrade">${escapeHtml(t('hero_up_link'))} ›</span>
+          </div>
         </div>
-        <div class="hs-right">
-          <div class="hs-lvl-lbl">${escapeHtml(t('hs_lvl_lbl'))}</div>
-          <div class="hs-lvl-num">${fmtNum(h.playerLevel || 1)}</div>
-          <a href="heroes.html#${escapeAttr(h.slug)}" class="hs-upgrade-link">${escapeHtml(t('hero_up_link'))}</a>
-        </div>
-      </div>`).join('');
+      </a>`;
+    }).join('');
   };
 
   /* ── Treasury info modals ─────────────────────────────────────────────── */
