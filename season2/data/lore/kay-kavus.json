@@ -15,131 +15,187 @@
   "timeline": [
     {
       "id": "mazandaran-hubris",
-      "year_label_en": "~2970 BC", "year_label_fa": "~۲۹۷۰ پ.م",
-      "title_en": "The Mazandaran Disaster", "title_fa": "فاجعه‌ی مازندران",
+      "year_label_en": "~2970 BC",
+      "year_label_fa": "~۲۹۷۰ پ.م",
+      "title_en": "The Mazandaran Disaster",
+      "title_fa": "فاجعه‌ی مازندران",
       "body_en": "A demon disguised as a musician sings the praises of Mazandaran to Kay Kavus. He leads his army into demon-land against every warning. The White Demon blinds every soldier. Kay Kavus sits in darkness until Rostam completes the Seven Labours.",
       "body_fa": "دیوی به‌شکلِ موسیقیدان مازندران را ستایش می‌کند. کی‌کاووس علیرغمِ همه هشدارها سپاهش را به سرزمینِ دیوان می‌برد. دیوِ سپید همه را کور می‌کند.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "sky-flight",
-      "year_label_en": "~2960 BC", "year_label_fa": "~۲۹۶۰ پ.م",
-      "title_en": "The Eagle Throne", "title_fa": "تختِ عقاب",
+      "year_label_en": "~2960 BC",
+      "year_label_fa": "~۲۹۶۰ پ.م",
+      "title_en": "The Eagle Throne",
+      "title_fa": "تختِ عقاب",
       "body_en": "Kay Kavus builds a throne lifted by trained eagles flying toward meat held above them. He rides it into the sky. The eagles tire; the throne falls to earth. Kay Kavus is unhurt — Rostam goes to collect him.",
       "body_fa": "کی‌کاووس تختی می‌سازد که توسطِ عقاب‌های آموزش‌دیده بالا می‌رود. سوار می‌شود. عقاب‌ها خسته می‌شوند؛ تخت سقوط می‌کند. کی‌کاووس آسیب نمی‌بیند — رستم می‌رود تا او را جمع کند.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "sohrab-refusal",
-      "year_label_en": "~2907 BC", "year_label_fa": "~۲۹۰۷ پ.م",
-      "title_en": "The Medicine Not Sent", "title_fa": "داروی نفرستاده",
+      "year_label_en": "~2907 BC",
+      "year_label_fa": "~۲۹۰۷ پ.م",
+      "title_en": "The Medicine Not Sent",
+      "title_fa": "داروی نفرستاده",
       "body_en": "Rostam begs on his knees for the medicine that heals any wound — to save Sohrab, his dying son. Kay Kavus performs the calculation: a warrior as powerful as Sohrab, healed, would upset the kingdom's balance. The medicine is not sent. Sohrab dies.",
       "body_fa": "رستم زانو می‌زند و داروی شفادهنده را می‌خواهد — برای نجاتِ سهراب، پسرِ در حالِ مرگش. کی‌کاووس محاسبه می‌کند. دارو فرستاده نمی‌شود.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "siavash-failure",
-      "year_label_en": "~2898 BC", "year_label_fa": "~۲۸۹۸ پ.م",
-      "title_en": "Failing Siavash", "title_fa": "شکستِ سیاوش",
+      "year_label_en": "~2898 BC",
+      "year_label_fa": "~۲۸۹۸ پ.م",
+      "title_en": "Failing Siavash",
+      "title_fa": "شکستِ سیاوش",
       "body_en": "Kay Kavus fails to protect Siavash from Sudabeh, fails to ratify Siavash's just peace with Afrasiab, and watches his son cross into Turan without riding after him. Every failure is a choice. The chronicle does not forget.",
       "body_fa": "کی‌کاووس در حمایت از سیاوش در برابرِ سودابه شکست می‌خورد، در تصویبِ صلحِ عادلانه شکست می‌خورد، و می‌بیند پسرش به توران می‌رود بدون اینکه دنبالش برود.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     }
   ],
   "scenes": [
     {
       "id": "musician-demon",
       "order": 1,
-      "title_en": "The Demon Who Sang of Mazandaran", "title_fa": "دیوی که از مازندران خواند",
-      "era_en": "~2970 BC", "era_fa": "~۲۹۷۰ پ.م",
+      "title_en": "The Demon Who Sang of Mazandaran",
+      "title_fa": "دیوی که از مازندران خواند",
+      "era_en": "~2970 BC",
+      "era_fa": "~۲۹۷۰ پ.م",
       "body_en": "A demon came to Kay Kavus's court disguised as a wandering musician. He was gifted: his voice was beautiful, his lute-work was extraordinary, and the court received him with the warmth courts reserve for genuine talent. He stayed a week, made himself beloved, and then sang about Mazandaran. His description was precise and designed: a land of unclaimed riches, no king to challenge Iran, forests full of prey, mountains full of iron. He sang it as the kind of place that a great king would claim if only he had the ambition to go and take it. Kay Kavus listened. He had already decided before the song was finished. Zal and Sam the warrior and Rostam all said the same thing: do not go. The demon's description was too convenient, too precise, too perfect. No one knew Mazandaran from the outside; everything about its reputation suggested demons and danger. Kay Kavus heard the warnings and was made more eager by them — as men are who confuse caution with cowardice — and marched. The demon, resuming his original shape, rode at the head of the Iranian army to show the way.",
       "body_fa": "دیوی به دربارِ کی‌کاووس آمد به شکلِ موسیقیدانِ سرگردانی. بااستعداد بود. صدایش زیبا بود. یک هفته ماند، محبوب شد، بعد از مازندران خواند. توصیفش دقیق و طراحی‌شده بود: سرزمینِ ثروت‌های ادعانشده، جنگل‌های پرشکار، کوه‌های پرآهن. کی‌کاووس گوش داد. زال و سام و رستم همه یک چیز گفتند: نرو. کی‌کاووس هشدارها را شنید و مشتاق‌تر شد — آنطور که مردان می‌شوند که احتیاط را با ترس اشتباه می‌گیرند. رفت.",
       "atmosphere": "court",
       "image": "/season2/uploads/chapters/kay-kavus.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["why-warnings-fail"]
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "why-warnings-fail"
+      ]
     },
     {
       "id": "army-blinded",
       "order": 2,
-      "title_en": "The White Demon Blinds the Army", "title_fa": "دیوِ سپید سپاه را کور می‌کند",
-      "era_en": "~2970 BC", "era_fa": "~۲۹۷۰ پ.م",
+      "title_en": "The White Demon Blinds the Army",
+      "title_fa": "دیوِ سپید سپاه را کور می‌کند",
+      "era_en": "~2970 BC",
+      "era_fa": "~۲۹۷۰ پ.م",
       "body_en": "Mazandaran was everything the warnings had said it would be: demon-held, impenetrable, and designed to destroy. The White Demon — Div-e Sepid, greatest of all the Mazandaran demons — led a counterattack at night. He did not kill the Iranian army: he blinded them. By dawn Kay Kavus and every soldier in his army were sightless in a strange land. The White Demon left them alive because living blind men in enemy territory are a greater punishment than dead ones. The Shahnameh does not dramatize Kay Kavus's shame here. It simply records the situation: the king who would not listen to warnings, sitting blind in Mazandaran, waiting for Rostam. Rostam went. The Seven Labours began. Each of the seven was a station between the Iranian camp and Div-e Sepid's fortress. Each one tried to stop Rostam. None of them did. The seventh was Div-e Sepid himself. Rostam tore out his liver and brought the blood back. Three drops in each eye: sight returned. Kay Kavus saw again. He thanked Rostam in the language kings use to thank the people who save them from their own mistakes, which does not include acknowledgment that the mistake was made.",
       "body_fa": "مازندران همه چیزی بود که هشدارها گفته بودند: دیوزده، نفوذناپذیر. دیوِ سپید — بزرگترین دیوانِ مازندران — شبانه حمله کرد. سپاهِ ایران را کور کرد. کی‌کاووس و هر سربازِ سپاهش بی‌بینایی در سرزمینِ بیگانه. شاهنامه شرمِ کی‌کاووس را دراماتیزه نمی‌کند. فقط وضعیت را ثبت می‌کند: شاهی که به هشدارها گوش نداد، کور در مازندران، منتظرِ رستم.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 90 },
-      "unlocks_codex": ["what-blinding-means", "seven-labours-purpose"]
+      "reward": {
+        "xp": 90
+      },
+      "unlocks_codex": [
+        "what-blinding-means",
+        "seven-labours-purpose"
+      ]
     },
     {
       "id": "sky-machine",
       "order": 3,
-      "title_en": "The King Who Flew", "title_fa": "شاهی که پرواز کرد",
-      "era_en": "~2960 BC", "era_fa": "~۲۹۶۰ پ.م",
+      "title_en": "The King Who Flew",
+      "title_fa": "شاهی که پرواز کرد",
+      "era_en": "~2960 BC",
+      "era_fa": "~۲۹۶۰ پ.م",
       "body_en": "After the Mazandaran disaster, the chronicle might have led a lesser king to reconsider his approach to large ambitions. Kay Kavus did not reconsider. He built a machine. The principle was simple: a throne is mounted on a frame; at each corner a trained eagle is tied; a piece of meat is held above each eagle on a rod above their reach. The eagles fly upward toward the meat; the throne rises with them. Kay Kavus rode the throne into the sky. He flew above the clouds. He looked down at Iran. He was, for a brief hour, above everything. Then the eagles tired. The meat stayed where it was but the eagles could no longer reach it and they slowed and the throne began to descend and then fall. It hit the earth somewhere in China. Kay Kavus lay in the wreckage, unhurt because the gods were not yet finished with him, and waited. Rostam was dispatched. He found the king in the field, retrieved him, and brought him back to the capital. The Shahnameh notes the incident without irony — Ferdowsi does not mock Kay Kavus. He records him exactly as he was: a man whose ambition was large enough to reach the sky and whose judgment was small enough to be surprised when gravity worked.",
       "body_fa": "بعد از فاجعه‌ی مازندران، کی‌کاووس نگرانش نشد. ماشینی ساخت. اصل ساده بود: تختی روی قابی، در هر گوشه عقابی، تکه‌ای گوشت بالایِ هر عقاب روی میله‌ای دور از دسترس. عقاب‌ها به سمتِ بالا پرواز می‌کنند؛ تخت با آن‌ها بالا می‌رود. کی‌کاووس سوار شد. بالای ابرها پرواز کرد. بعد عقاب‌ها خسته شدند. تخت افتاد. جایی در چین به زمین خورد. رستم اعزام شد. شاه را پیدا کرد و برگرداند. شاهنامه ماجرا را بدون طعنه یادداشت می‌کند — مردی با جاه‌طلبی به اندازه‌ی رسیدن به آسمان و قضاوتی به اندازه‌ی تعجب از کارکردِ جاذبه.",
       "atmosphere": "dawn",
       "image": null,
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["ambition-without-judgment"]
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "ambition-without-judgment"
+      ]
     },
     {
       "id": "rostam-serves",
       "order": 4,
-      "title_en": "What Rostam Owes", "title_fa": "آنچه رستم مدیون است",
-      "era_en": "~2960–2870 BC", "era_fa": "~۲۹۶۰–۲۸۷۰ پ.م",
+      "title_en": "What Rostam Owes",
+      "title_fa": "آنچه رستم مدیون است",
+      "era_en": "~2960–2870 BC",
+      "era_fa": "~۲۹۶۰–۲۸۷۰ پ.م",
       "body_en": "Rostam serves Kay Kavus for decades. He completes the Seven Labours to rescue him from Mazandaran. He catches him after the sky-fall. He fights Afrasiab's armies for years in the wars Kay Kavus starts. He begs for Sohrab's medicine on his knees. He never refuses an order from the king — not once, in all those years — even when obeying costs him more than disobeying would cost a lesser man. The Shahnameh does not explain why. It shows it, again and again, as a fact of the world: Rostam is the champion of Iran, and the champion of Iran serves the king of Iran regardless of the king's merit. This is not described as a virtue or a flaw — it is described as a structure, the same way gravity is a structure. What the chronicle is really asking, patient chapter after chapter, is whether a structure this costly to its greatest servant is just. It does not answer. It records.",
       "body_fa": "رستم دهه‌ها خدمتِ کی‌کاووس می‌کند. هفت خان را برای نجاتش طی می‌کند. بعد از سقوطِ آسمان می‌گیردش. سال‌ها برای جنگ‌های کی‌کاووس می‌جنگد. زانو می‌زند و داروی سهراب را التماس می‌کند. هرگز یک دستور از شاه رد نمی‌کند — حتی یک بار، در همه‌ی آن سال‌ها. شاهنامه توضیح نمی‌دهد چرا. نشان می‌دهدش. ساختاری است: رستم قهرمانِ ایران است، و قهرمانِ ایران خدمتِ شاهِ ایران می‌کند صرفِ‌نظر از شایستگیِ شاه.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 75 },
-      "unlocks_codex": ["the-champion-question", "loyalty-as-structure"]
+      "reward": {
+        "xp": 75
+      },
+      "unlocks_codex": [
+        "the-champion-question",
+        "loyalty-as-structure"
+      ]
     },
     {
       "id": "kavus-measure",
       "order": 5,
-      "title_en": "The Measure of Kay Kavus", "title_fa": "معیارِ کی‌کاووس",
-      "era_en": "~2870 BC — reign's end", "era_fa": "~۲۸۷۰ پ.م — پایانِ سلطنت",
+      "title_en": "The Measure of Kay Kavus",
+      "title_fa": "معیارِ کی‌کاووس",
+      "era_en": "~2870 BC — reign's end",
+      "era_fa": "~۲۸۷۰ پ.م — پایانِ سلطنت",
       "body_en": "Kay Kavus is not a villain. The Shahnameh does not give him that dignity. He is something more uncomfortable: a man of genuine courage who consistently applies that courage in the wrong direction. He leads from the front in Mazandaran. He personally rides the sky-throne. He reigns for decades without losing the throne to internal revolt, which takes real political skill. But he invades when he should have waited, flies when he should have walked, refuses medicine when he should have given everything. The Shahnameh measures a king by the welfare of those he rules and those who serve him. By that measure Kay Kavus fails repeatedly — and the chronicle's precision lies in recording not just the failures but the cost: Sohrab dead, Siavash dead, Rostam on his knees. These are not incidental. They are the price of a king who mistakes boldness for wisdom.",
       "body_fa": "کی‌کاووس شرور نیست. شاهنامه آن کرامت را به او نمی‌دهد. چیزِ ناراحت‌کننده‌تری است: مردِ با شجاعتِ واقعی که به‌طورِ مداوم آن شجاعت را در جهتِ غلط به کار می‌برد. شاهنامه شاه را با رفاهِ حکومت‌شوندگان و خدمتگزارانش اندازه می‌گیرد. با آن معیار کی‌کاووس بارها شکست می‌خورد.",
       "atmosphere": "court",
       "image": null,
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["courage-in-wrong-direction", "the-price-of-boldness"]
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "courage-in-wrong-direction",
+        "the-price-of-boldness"
+      ]
     }
   ],
   "characters": [
     {
       "slug": "kay-kavus",
-      "name_en": "Kay Kavus", "name_fa": "کی‌کاووس",
+      "name_en": "Kay Kavus",
+      "name_fa": "کی‌کاووس",
       "role_en": "Second Kayanian King · The Reckless · The King Rostam Could Not Stop Saving",
       "role_fa": "دومین شاهِ کیانی · بی‌پروا · شاهی که رستم نتوانست نجات دادنش را متوقف کند",
-      "rarity": "epic", "level_required": 1,
+      "rarity": "epic",
+      "level_required": 1,
       "lore_en": "Kay Kavus is the Shahnameh's most sustained portrait of a king who falls just short of greatness — not from cowardice or cruelty, but from an inability to distinguish ambition from judgment. He is brave, he is loyal to the form of kingship, and he rules Iran for decades. But he makes four catastrophic decisions: Mazandaran, the sky-machine, the Sohrab medicine, and Siavash. Each one costs more than he pays himself — each one is paid by Rostam or by a young man who deserved better. The Shahnameh records these not as character assassination but as a ledger: here is what this kind of king costs, entry by entry.",
       "lore_fa": "کی‌کاووس جامع‌ترین تصویرِ شاهنامه از شاهی است که درست کمترِ از عظمت می‌ماند — نه از بزدلی یا ظلم، بلکه از ناتوانی در تشخیصِ جاه‌طلبی از قضاوت. شجاع است، دهه‌ها ایران را اداره می‌کند. اما چهار تصمیمِ فاجعه‌بار می‌گیرد که هر کدام بیشتر از آنچه خودش می‌پردازد هزینه دارد.",
       "image": "/season2/uploads/chapters/kay-kavus.png",
-      "unlocked": true, "side": "neutral"
+      "unlocked": true,
+      "side": "neutral"
     },
     {
       "slug": "rostam-champion",
-      "name_en": "Rostam — The Champion Who Serves", "name_fa": "رستم — قهرمانِ خدمتگزار",
+      "name_en": "Rostam — The Champion Who Serves",
+      "name_fa": "رستم — قهرمانِ خدمتگزار",
       "role_en": "Champion of Iran · The One Who Pays Kay Kavus's Costs",
       "role_fa": "قهرمانِ ایران · آن‌کسی که هزینه‌های کی‌کاووس را می‌پردازد",
-      "rarity": "mythic", "level_required": 1,
+      "rarity": "mythic",
+      "level_required": 1,
       "lore_en": "In this chapter Rostam is not the protagonist — he is the answer to every question Kay Kavus's recklessness poses. The Seven Labours exist because Kay Kavus invaded Mazandaran. The sky-retrieval mission exists because Kay Kavus built the eagle-throne. The most devastating scene is the quietest: Rostam kneeling before Kay Kavus, begging for Sohrab's medicine, and being refused. The Shahnameh shows us, in that moment, the champion of Iran on his knees before the king who does not deserve his service, and the king refusing. No commentary is added. None is needed.",
       "lore_fa": "در این فصل رستم قهرمان نیست — جوابِ هر سؤالی است که بی‌پرواییِ کی‌کاووس مطرح می‌کند. هفت‌خان به این دلیل وجود دارد که کی‌کاووس به مازندران حمله کرد. دراماتیک‌ترین صحنه ساکت‌ترین است: رستم زانوزده، التماس می‌کند برای داروی سهراب، رد می‌شود.",
-      "image": null, "unlocked": false, "side": "light",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
       "unlock_via": "scene:rostam-serves"
     },
     {
       "slug": "div-e-sepid",
-      "name_en": "Div-e Sepid — The White Demon", "name_fa": "دیوِ سپید",
+      "name_en": "Div-e Sepid — The White Demon",
+      "name_fa": "دیوِ سپید",
       "role_en": "King of the Mazandaran Demons · Blinder of Armies",
       "role_fa": "شاهِ دیوانِ مازندران · کورکننده‌ی سپاه‌ها",
-      "rarity": "legendary", "level_required": 5,
+      "rarity": "legendary",
+      "level_required": 5,
       "lore_en": "Div-e Sepid does not fight the way other enemies in the Shahnameh fight. He does not kill the Iranian army — he blinds it. This is a more precise punishment: a blinded army in hostile territory is helpless in a way that a dead army is not, because a dead army is finished, while a blind one must be maintained, fed, and suffered by the king who led it there. Div-e Sepid's liver — its blood dropped into blind eyes — is the cure. Rostam brings it. The irony that the demon's own body contains the answer to the damage it caused is one Ferdowsi does not underline, because he trusts the reader to see it.",
       "lore_fa": "دیوِ سپید مثلِ دیگر دشمنانِ شاهنامه نمی‌جنگد. سپاهِ ایران را نمی‌کشد — کور می‌کند. این مجازاتِ دقیق‌تری است: سپاهِ کور در سرزمینِ دشمن به شکلی که سپاهِ مُرده نیست ناتوان است. جگرِ دیوِ سپید — خونش در چشمان — درمان است.",
-      "image": null, "unlocked": false, "side": "dark",
+      "image": null,
+      "unlocked": false,
+      "side": "dark",
       "unlock_via": "scene:army-blinded"
     }
   ],
@@ -152,7 +208,8 @@
       "kind_fa": "جایی که کی‌کاووس سپاهش را به کوری برد",
       "summary_en": "Mazandaran in the Shahnameh is not a geographical region — it is a category. It is the place where normal rules of warfare do not apply, where the enemy uses weapons of darkness rather than iron, and where no amount of conventional military strength is sufficient. It is designed to punish the specific kind of pride Kay Kavus has: the pride that takes a musical recitation as reconnaissance.",
       "summary_fa": "مازندران در شاهنامه منطقه‌ای جغرافیایی نیست — دسته‌بندی است. جایی که قوانینِ عادیِ جنگ صدق نمی‌کند. برای تنبیهِ نوعِ خاصِ غرورِ کی‌کاووس طراحی شده: غروری که اجرای موسیقی را شناسایی می‌داند.",
-      "image": null, "unlocked": true
+      "image": null,
+      "unlocked": true
     },
     {
       "slug": "the-sky",
@@ -162,7 +219,9 @@
       "kind_fa": "حدِ جاه‌طلبیِ بی‌پروا",
       "summary_en": "The sky-flight episode is the Shahnameh's most purely symbolic sequence in the Kay Kavus chapters. He literally reaches the sky. He literally falls. The circle is complete and exact: a king whose ambition has no ceiling crashes when the support beneath that ambition — his eagles, his judgment, his champions' patience — runs out. The fall does not kill him because the chronicle is not yet ready to let him die. There are still costs he has not paid.",
       "summary_fa": "ماجرای پروازِ آسمان نمادین‌ترین دنباله در فصل‌های کی‌کاووس است. واقعاً به آسمان می‌رسد. واقعاً می‌افتد. دایره کامل و دقیق است: شاهی با جاه‌طلبیِ بی‌سقف سقوط می‌کند وقتی پشتیبانیِ زیرِ آن جاه‌طلبی — عقاب‌هایش، قضاوتش، صبرِ قهرمانانش — تمام می‌شود.",
-      "image": null, "unlocked": false, "unlock_via": "scene:sky-machine"
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:sky-machine"
     }
   ],
   "battle": {
@@ -175,16 +234,29 @@
     "intro_fa": "دیوانِ مازندران هنوز در میدانند. برای مواجهه باید نه فقط بفهمی کی‌کاووس چه اشتباهی کرد بلکه چرا — چه نوع شاهی در دهه‌ها همان نوع اشتباه را می‌کند، و برای کسانی که نمی‌توانند خدمتش را متوقف کنند چه هزینه‌ای دارد.",
     "requirements": [
       {
-        "id": "level", "kind": "level", "target": 55,
-        "label_en": "Reach LVL 55", "label_fa": "رسیدن به سطحِ ۵۵", "label_tg": "Расидан ба сатҳи 55",
-        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+        "id": "level",
+        "kind": "level",
+        "target": 55,
+        "label_en": "Reach LVL 55",
+        "label_fa": "رسیدن به سطحِ ۵۵",
+        "label_tg": "Расидан ба сатҳи 55",
+        "hint_en": "Tap, complete quests, and claim daily rewards.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
+        "hint_tg": "Зарба занед."
       },
       {
-        "id": "quiz", "kind": "quiz", "target": "kay-kavus",
-        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
-        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "kay-kavus",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
       }
-    ]
+    ],
+    "intro_tg": "Девони Мозандарон ҳанӯз дар майдонанд. Барои рӯбарӯ шудан бо ин дарвоза бояд на танҳо бифаҳмӣ Кайковус чӣ иштибоҳ кард балки чаро — чӣ навъ шоҳе дар тӯли даҳҳо сол ҳамон навъ хаторо такрор мекунад, ва ба мардумоне ки наметавонанд хидматашро боздоранд чӣ арзиш дорад."
   },
   "codex": [
     {
@@ -194,7 +266,8 @@
       "title_fa": "چرا هشدارها شکست می‌خورند",
       "summary_en": "Zal, Sam, and Rostam all warn Kay Kavus against invading Mazandaran. He hears them all and goes anyway. The Shahnameh understands why warnings fail in courts: the men who give them have authority, but the king has ambition, and ambition outranks authority. A warning is an argument. Kay Kavus is not having an argument — he has already decided. The warnings do not fail because they are unclear. They fail because the king is not listening for reasons to reconsider; he is listening for permission to proceed, and when the warnings don't give him that permission, he ignores them.",
       "summary_fa": "زال، سام، و رستم همه کی‌کاووس را از تهاجم به مازندران برحذر می‌دارند. همه را می‌شنود و باز هم می‌رود. شاهنامه می‌فهمد چرا هشدارها در دربارها شکست می‌خورند: هشدار استدلال است. کی‌کاووس استدلال نمی‌کند — تصمیمش را گرفته. هشدارها شکست نمی‌خورند چون نامشخصند. شکست می‌خورند چون شاه برای دلیلی برای تجدیدنظر گوش نمی‌دهد.",
-      "image": null, "unlock_via": "scene:musician-demon"
+      "image": null,
+      "unlock_via": "scene:musician-demon"
     },
     {
       "id": "what-blinding-means",
@@ -203,7 +276,8 @@
       "title_fa": "مجازاتِ دقیقِ کوری",
       "summary_en": "Div-e Sepid blinds rather than kills the Iranian army. This is not mercy — it is precision. A dead army ends the story; a blind army in hostile territory continues it, at maximum cost. Kay Kavus must sit in darkness and wait to be rescued. He must experience, at the level of the body, what it means to be unable to see what is coming — which is exactly what his kingship has been, metaphorically, all along. The Shahnameh uses the body to literalize the soul's condition.",
       "summary_fa": "دیوِ سپید به جای کشتن سپاه را کور می‌کند. این رحمت نیست — دقت است. کی‌کاووس باید در تاریکی بنشیند و منتظرِ نجات باشد. باید در سطحِ جسم تجربه کند نتوانستنِ دیدنِ آنچه می‌آید — که دقیقاً همان چیزی است که سلطنتش استعارتاً بوده.",
-      "image": null, "unlock_via": "scene:army-blinded"
+      "image": null,
+      "unlock_via": "scene:army-blinded"
     },
     {
       "id": "seven-labours-purpose",
@@ -212,7 +286,8 @@
       "title_fa": "هفت‌خان — برای چه هستند",
       "summary_en": "The Seven Labours of Rostam are usually discussed as tests of heroism — seven obstacles between Rostam and Div-e Sepid, each requiring a different kind of courage. But they are also, structurally, the cost of Kay Kavus's mistake. Every station of the Haft Khan is a price tag on the decision Kay Kavus made when he listened to a demon's song and marched into Mazandaran. Rostam does not complain about this. The Shahnameh does not comment on it. Both the heroism and the accounting are present in the same sequence.",
       "summary_fa": "هفت‌خانِ رستم معمولاً به عنوانِ آزمون‌های قهرمانی بحث می‌شود. اما از نظرِ ساختاری هزینه‌ی اشتباهِ کی‌کاووس هم هستند. هر ایستگاهِ هفت‌خان برگِ قیمتِ تصمیمی است که کی‌کاووس گرفت. رستم شکایت نمی‌کند. شاهنامه توضیح نمی‌دهد. هر دو قهرمانی و حسابداری در یک دنباله حضور دارند.",
-      "image": null, "unlock_via": "scene:army-blinded"
+      "image": null,
+      "unlock_via": "scene:army-blinded"
     },
     {
       "id": "ambition-without-judgment",
@@ -221,7 +296,8 @@
       "title_fa": "جاه‌طلبی بدون قضاوت",
       "summary_en": "The sky-machine episode is the Shahnameh's purest image of Kay Kavus: he does not merely dream of the sky, he builds a mechanical device to reach it and rides it without testing it beyond theory. The failure is predictable — Rostam could have told him — and indeed Rostam probably did tell him, and Kay Kavus probably heard and went anyway. What makes Kay Kavus tragic rather than simply foolish is that his ambition is genuine. He does reach the sky. For one hour, no human in the chronicle has been higher. The fall is the price of the reach. He pays it, survives it, and does not appear to learn from it.",
       "summary_fa": "ماجرای آسمان خالص‌ترین تصویرِ کی‌کاووس است: فقط آرزوی آسمان نمی‌کند، دستگاهی می‌سازد و سوارش می‌شود بدون اینکه آزمایشش کند. شکست پیش‌بینی‌پذیر است. آنچه کی‌کاووس را تراژیک می‌کند — نه فقط احمق — این است که جاه‌طلبیش واقعی است. به آسمان می‌رسد. سقوط قیمتِ دستیابی است.",
-      "image": null, "unlock_via": "scene:sky-machine"
+      "image": null,
+      "unlock_via": "scene:sky-machine"
     },
     {
       "id": "the-champion-question",
@@ -230,7 +306,8 @@
       "title_fa": "سؤالِ قهرمان",
       "summary_en": "Rostam serves Kay Kavus across decades without refusing a single direct order. The Shahnameh does not explain this as blind loyalty — it presents it as a structural fact of the world Rostam inhabits. The champion of Iran serves the king of Iran. But the chronicle also shows, with mounting precision, what this service costs: the Seven Labours, Sohrab's death, the weight of Siavash's end. The question the Shahnameh is asking is not whether Rostam should have refused Kay Kavus. It is asking what kind of world requires a Rostam to exist — and what it does to him.",
       "summary_fa": "رستم دهه‌ها بدون رد کردنِ یک دستورِ مستقیم خدمتِ کی‌کاووس می‌کند. شاهنامه این را به عنوانِ وفاداریِ کور توضیح نمی‌دهد. به عنوانِ واقعیتِ ساختاریِ جهانِ رستم ارائه می‌دهد. اما نشان می‌دهد این خدمت چه هزینه‌ای دارد. سؤالی که شاهنامه می‌پرسد این نیست که آیا رستم باید رد می‌کرد.",
-      "image": null, "unlock_via": "scene:rostam-serves"
+      "image": null,
+      "unlock_via": "scene:rostam-serves"
     },
     {
       "id": "loyalty-as-structure",
@@ -239,7 +316,8 @@
       "title_fa": "وفاداری به عنوانِ ساختار",
       "summary_en": "The Shahnameh presents Rostam's service to Kay Kavus not as a choice Rostam makes but as a fact of the world he was born into. The champion of Iran serves the king of Iran. This is not questioned, not debated, not framed as a dilemma. It simply is. What is questioned — quietly, through accumulation — is whether a world structured this way is just. The Shahnameh never says it is unjust. It simply shows you what it costs, year by year, death by death, and leaves the judgment to you.",
       "summary_fa": "شاهنامه خدمتِ رستم به کی‌کاووس را نه به عنوانِ انتخابِ رستم بلکه به عنوانِ واقعیتِ جهانی که در آن به دنیا آمده ارائه می‌دهد. آنچه زیرِ سؤال است — آهسته، از طریقِ انباشت — این است که آیا جهانی با این ساختار عادلانه است.",
-      "image": null, "unlock_via": "scene:rostam-serves"
+      "image": null,
+      "unlock_via": "scene:rostam-serves"
     },
     {
       "id": "courage-in-wrong-direction",
@@ -248,7 +326,8 @@
       "title_fa": "شجاعت در جهتِ اشتباه",
       "summary_en": "The Shahnameh's sharpest observation about Kay Kavus is that his failures are not failures of courage. He is brave. He leads the Mazandaran invasion personally. He rides the sky-machine himself. He does not send others to do the dangerous things he decides — he does them. But courage applied without judgment does not become wisdom; it becomes a series of catastrophes that braver men must correct. Kay Kavus has all of a hero's raw material and none of the architecture.",
       "summary_fa": "تیزبینانه‌ترین مشاهده‌ی شاهنامه درباره‌ی کی‌کاووس این است که شکست‌هایش شکستِ شجاعت نیستند. شجاع است. شخصاً حمله را رهبری می‌کند. ماشینِ آسمانی را خودش سوار می‌شود. اما شجاعتِ بدون قضاوت عقلانی فاجعه می‌شود که مردانِ شجاع‌تر باید تصحیح کنند.",
-      "image": null, "unlock_via": "scene:kavus-measure"
+      "image": null,
+      "unlock_via": "scene:kavus-measure"
     },
     {
       "id": "the-price-of-boldness",
@@ -257,7 +336,8 @@
       "title_fa": "قیمتِ جسارت — پرداخته توسطِ دیگران",
       "summary_en": "Every catastrophic decision Kay Kavus makes is paid for primarily by someone else. The Mazandaran disaster is paid by Rostam's Seven Labours. The sky-fall is paid by the retrieval mission. Sohrab's death is paid by Rostam in grief and by Sohrab in blood. Siavash's exile and death — paid by Siavash, by Farangis, by the people of Siyavashgerd. The chronicle records this ledger with absolute precision. Kay Kavus survives all of his mistakes; it is others who do not.",
       "summary_fa": "هر تصمیمِ فاجعه‌بارِ کی‌کاووس عمدتاً توسطِ شخصِ دیگری پرداخت می‌شود. فاجعه‌ی مازندران توسطِ هفت‌خانِ رستم پرداخت می‌شود. مرگِ سهراب توسطِ رستم در اندوه. کی‌کاووس از همه‌ی اشتباهاتش جان سالم به در می‌برد؛ دیگران نمی‌برند.",
-      "image": null, "unlock_via": "scene:kavus-measure"
+      "image": null,
+      "unlock_via": "scene:kavus-measure"
     }
   ]
 }

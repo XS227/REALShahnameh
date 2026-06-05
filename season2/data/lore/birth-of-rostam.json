@@ -15,120 +15,171 @@
   "timeline": [
     {
       "id": "the-birth",
-      "year_label_en": "~3100 BC", "year_label_fa": "~۳۱۰۰ پ.م",
-      "title_en": "The Birth", "title_fa": "تولد",
+      "year_label_en": "~3100 BC",
+      "year_label_fa": "~۳۱۰۰ پ.م",
+      "title_en": "The Birth",
+      "title_fa": "تولد",
       "body_en": "Zal burns the Simorgh's feather. The great bird guides the caesarean. Rudabeh lives. Rostam enters the world large as a young lion.",
       "body_fa": "زال پرِ سیمرغ را می‌سوزاند. سیمرغ سزارین را راهنمایی می‌کند. رودابه زنده می‌ماند. رستم به بزرگیِ شیرِ جوان وارد جهان می‌شود.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "early-prodigies",
-      "year_label_en": "~3099–3088 BC", "year_label_fa": "~۳۰۹۹–۳۰۸۸ پ.م",
-      "title_en": "The Early Prodigies", "title_fa": "شگفتی‌های اولیه",
+      "year_label_en": "~3099–3088 BC",
+      "year_label_fa": "~۳۰۹۹–۳۰۸۸ پ.م",
+      "title_en": "The Early Prodigies",
+      "title_fa": "شگفتی‌های اولیه",
       "body_en": "Ten wet nurses the first week. Meat by age one. A grown man's frame by age seven. The court quietly stops treating him as a child.",
       "body_fa": "هفته‌ی اول ده دایه. یک‌ساله گوشت. هفت‌ساله هیکلِ مردِ بالغ. دربار آرام آرام از کودک انگاشتنِ او دست می‌کشد.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "rakhsh-chosen",
-      "year_label_en": "~3088 BC", "year_label_fa": "~۳۰۸۸ پ.م",
-      "title_en": "Rakhsh Is Chosen", "title_fa": "رخش انتخاب می‌شود",
+      "year_label_en": "~3088 BC",
+      "year_label_fa": "~۳۰۸۸ پ.م",
+      "title_en": "Rakhsh Is Chosen",
+      "title_fa": "رخش انتخاب می‌شود",
       "body_en": "Three thousand horses on the plains of Zabulestan. Rostam presses each back. Three thousand buckle. Rakhsh — spotted, fierce — does not move.",
       "body_fa": "سه هزار اسب در دشتِ زابلستان. رستم پشتِ هر کدام را فشار می‌دهد. سه هزار خم می‌شوند. رخش — ابلق، سرکش — تکان نمی‌خورد.",
-      "image": "/season2/uploads/heroes/rostam.png", "side": "light"
+      "image": "/season2/uploads/heroes/rostam.png",
+      "side": "light"
     },
     {
       "id": "elephant",
-      "year_label_en": "~3088 BC", "year_label_fa": "~۳۰۸۸ پ.م",
-      "title_en": "The Elephant", "title_fa": "فیل",
+      "year_label_en": "~3088 BC",
+      "year_label_fa": "~۳۰۸۸ پ.م",
+      "title_en": "The Elephant",
+      "title_fa": "فیل",
       "body_en": "A war elephant breaks loose in the palace. Guards flee. Twelve-year-old Rostam takes a mace from the wall and kills it with one blow. The world's pillar sets its first weight.",
       "body_fa": "یک فیلِ جنگی در کاخ آزاد می‌شود. نگهبانان فرار می‌کنند. دوازده‌ساله رستم گرزی از دیوار می‌گیرد و با یک ضربه آن را می‌کشد. اولین بارِ ستونِ جهان.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     }
   ],
   "scenes": [
     {
       "id": "the-feather-burns",
       "order": 1,
-      "title_en": "The Feather Burns", "title_fa": "پَر می‌سوزد",
-      "era_en": "~3100 BC", "era_fa": "~۳۱۰۰ پ.م",
+      "title_en": "The Feather Burns",
+      "title_fa": "پَر می‌سوزد",
+      "era_en": "~3100 BC",
+      "era_fa": "~۳۱۰۰ پ.م",
       "body_en": "The physicians have tried everything. Rudabeh is not dying dramatically — she is simply weakening, the way a fire weakens when the wood runs out, quietly and continuously. Zal stands at the end of the bed and understands that this is the moment the feather was always for. He has carried it since the day he descended from Alborz — through battles, through courts, through years of marriage and peace. He has never burned it. He has never needed to. He needs to now. He takes it from the cloth. He puts it to the flame. The smoke rises. The Simorgh arrives with the sound of great wings in the room above. She comes down. She guides the surgeon's hand. When the child is lifted free, Rudabeh breathes more deeply than she has in hours. The feather is ash. What it summoned is in the room, breathing, making noise.",
       "body_fa": "پزشکان همه چیز را امتحان کرده‌اند. رودابه به‌شکلی نمایشی نمی‌میرد — فقط ضعیف می‌شود، آن‌طوری که آتش ضعیف می‌شود وقتی هیزم تمام می‌شود، آرام و مداوم. زال در انتهای تخت می‌ایستد و می‌فهمد این لحظه‌ای است که پَر همیشه برایش بوده. از روزی که از البرز پایین آمد آن را حمل کرده. هرگز نسوزانده. حالا باید بسوزاند.",
       "atmosphere": "mythic",
       "image": "/season2/uploads/heroes/Farr.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["feather-ash", "simorgh-final-act"]
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "feather-ash",
+        "simorgh-final-act"
+      ]
     },
     {
       "id": "rostam-arrives",
       "order": 2,
-      "title_en": "Rostam Arrives", "title_fa": "رستم می‌رسد",
-      "era_en": "~3100 BC", "era_fa": "~۳۱۰۰ پ.م",
+      "title_en": "Rostam Arrives",
+      "title_fa": "رستم می‌رسد",
+      "era_en": "~3100 BC",
+      "era_fa": "~۳۱۰۰ پ.م",
       "body_en": "The child is lifted free and placed in the surgeon's hands and then passed to the nurse and nobody in the room says anything for a moment because the child is very large and very loud and already somehow more present than the other people in it. Zal looks at his son. He has the Simorgh's coloring — not the white hair, not exactly — but something in the quality of his stillness between cries, as if he is already listening to a wider frequency. Zal names him. The Shahnameh notes the naming and then moves immediately to the first week's feeding requirements: ten wet nurses, all insufficient. The chronicle is not sentimental about births. It is precise about capability.",
       "body_fa": "کودک آزاد می‌شود و در دستانِ جراح گذاشته می‌شود و بعد به پرستار داده می‌شود و برای لحظه‌ای هیچ‌کس در اتاق چیزی نمی‌گوید چون کودک بسیار بزرگ و بلندصدا است. زال به پسرش نگاه می‌کند.",
       "atmosphere": "dawn",
       "image": "/season2/uploads/chapters/birth-of-rostam.png",
-      "reward": { "xp": 55 },
-      "unlocks_codex": ["naming-rostam"]
+      "reward": {
+        "xp": 55
+      },
+      "unlocks_codex": [
+        "naming-rostam"
+      ]
     },
     {
       "id": "early-years",
       "order": 3,
-      "title_en": "Not Like Other Children", "title_fa": "مثلِ بچه‌های دیگر نیست",
-      "era_en": "~3099–3090 BC", "era_fa": "~۳۰۹۹–۳۰۹۰ پ.م",
+      "title_en": "Not Like Other Children",
+      "title_fa": "مثلِ بچه‌های دیگر نیست",
+      "era_en": "~3099–3090 BC",
+      "era_fa": "~۳۰۹۹–۳۰۹۰ پ.م",
       "body_en": "Ten wet nurses his first week — and still they were not enough. By his first year he was eating meat, which the court accepted as a sign of something rather than a problem. By three he was as large as a child of seven. By seven he stood eye-to-eye with Sam's guards and none of them found this comfortable. The Shahnameh catalogs these details with the neutral precision of a chronicle that has seen prodigies before and knows they are only interesting as preparation. Rostam is not being celebrated for being large. He is being measured for what the large will eventually be required to carry.",
       "body_fa": "هفته‌ی اول ده دایه — و باز هم کافی نبودند. اول‌ساله گوشت می‌خورد. سه‌ساله به اندازه‌ی کودکِ هفت‌ساله. هفت‌ساله چشم‌به‌چشمِ نگهبانانِ سام می‌ایستاد.",
       "atmosphere": "warm",
       "image": null,
-      "reward": { "xp": 50 },
-      "unlocks_codex": ["ten-nurses", "weight-of-the-pillar"]
+      "reward": {
+        "xp": 50
+      },
+      "unlocks_codex": [
+        "ten-nurses",
+        "weight-of-the-pillar"
+      ]
     },
     {
       "id": "rakhsh-scene",
       "order": 4,
-      "title_en": "Rakhsh", "title_fa": "رخش",
-      "era_en": "~3088 BC", "era_fa": "~۳۰۸۸ پ.م",
+      "title_en": "Rakhsh",
+      "title_fa": "رخش",
+      "era_en": "~3088 BC",
+      "era_fa": "~۳۰۸۸ پ.م",
       "body_en": "At twelve, Rostam walked the horse lines of Zabulestan pressing each candidate's back with his palm — not cruelly but precisely, the way a builder tests a beam. Horse after horse buckled under that hand. Three thousand horses. Three thousand failures. At the end of the line: a spotted horse, fierce-eyed, already watching him. Rostam pressed. The horse did not move. He pressed harder. The horse lowered its head and looked at him and this was also a test. Rakhsh choosing Rostam mattered as much as Rostam choosing Rakhsh. When the Shahnameh describes this moment it uses the word 'worthy' for both of them.",
       "body_fa": "دوازده‌ساله، رستم در خطِ اسب‌های زابلستان پشتِ هر نامزد را با کف دستش فشار داد. اسب به اسب زیرِ آن دست خم شد. سه هزار اسب. در انتها: اسبی ابلق، تیزنگاه، که از پیش داشت نگاهش می‌کرد. رستم فشار داد. اسب تکان نخورد.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 75 },
-      "unlocks_codex": ["rakhsh-worthy"]
+      "reward": {
+        "xp": 75
+      },
+      "unlocks_codex": [
+        "rakhsh-worthy"
+      ]
     },
     {
       "id": "elephant-scene",
       "order": 5,
-      "title_en": "The Elephant in the Corridor", "title_fa": "فیل در راهرو",
-      "era_en": "~3088 BC", "era_fa": "~۳۰۸۸ پ.م",
+      "title_en": "The Elephant in the Corridor",
+      "title_fa": "فیل در راهرو",
+      "era_en": "~3088 BC",
+      "era_fa": "~۳۰۸۸ پ.م",
       "body_en": "A war elephant in Sam's stables broke its chains during a festival — possibly from the noise, possibly from some inner calendar that animals keep about when to stop tolerating confinement. It ran into the palace corridors and the guards ran the other direction, which was the rational response. Twelve-year-old Rostam was in the corridor. He took a mace from the wall — not from the weapon rack but from a decorative mount, a display piece that he apparently considered adequate — and walked toward the elephant. He struck once. The elephant fell. The mace was bent but not broken. Rostam looked at the mace for a moment and then set it down. The corridor held the silence of a thing that has just been made clear.",
       "body_fa": "یک فیلِ جنگی زنجیرش را در جشنی شکست و وارد راهروهای کاخ شد. نگهبانان در جهتِ مخالف فرار کردند. دوازده‌ساله رستم در راهرو بود. گرزی از دیوار برداشت — نه از قفسه‌ی سلاح بلکه از دیوار — و به‌سمتِ فیل رفت. یک بار زد. فیل افتاد.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 85 },
-      "unlocks_codex": ["the-pillar-sets"]
+      "reward": {
+        "xp": 85
+      },
+      "unlocks_codex": [
+        "the-pillar-sets"
+      ]
     }
   ],
   "characters": [
     {
       "slug": "rostam-child",
-      "name_en": "Rostam", "name_fa": "رستم",
+      "name_en": "Rostam",
+      "name_fa": "رستم",
       "role_en": "The Newborn Pillar · Son of Zal and Rudabeh",
       "role_fa": "ستونِ نوزاد · پسرِ زال و رودابه",
-      "rarity": "mythic", "level_required": 1,
+      "rarity": "mythic",
+      "level_required": 1,
       "lore_en": "Rostam arrives in the chronicle already outside the ordinary categories. He is not described as a beautiful infant or a promising child — he is described as large, as loud, as hungry beyond any normal measure, and as already somehow more present than the adults around him. The Shahnameh does not waste time on his childhood; it measures him as preparation for what he will carry.",
       "lore_fa": "رستم از همان ابتدا بیرون از دسته‌بندی‌های معمولی است. به‌عنوانِ نوزادِ زیبا یا کودکِ امیدوارکننده توصیف نمی‌شود — به‌عنوانِ بزرگ، بلندصدا، گرسنه‌ای فراتر از هر معیارِ عادی توصیف می‌شود.",
       "image": "/season2/uploads/chapters/birth-of-rostam.png",
-      "unlocked": true, "side": "light"
+      "unlocked": true,
+      "side": "light"
     },
     {
       "slug": "zal-father",
-      "name_en": "Zal", "name_fa": "زال",
+      "name_en": "Zal",
+      "name_fa": "زال",
       "role_en": "The Father · Who Finally Burns the Feather",
       "role_fa": "پدر · که بالاخره پَر را می‌سوزاند",
-      "rarity": "legendary", "level_required": 3,
+      "rarity": "legendary",
+      "level_required": 3,
       "lore_en": "Zal has carried the Simorgh's feather since the day he descended from Alborz. He has been in wars, in courts, in the negotiation that won him Rudabeh against impossible odds. None of those required the feather. This does. He burns it without hesitation — not because he has no other options, but because he understands exactly what this moment is.",
       "lore_fa": "زال از روزی که از البرز پایین آمد پرِ سیمرغ را حمل کرده. این لحظه آن را نیاز دارد. بدون تردید می‌سوزاندش.",
-      "image": null, "unlocked": false, "side": "light",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
       "unlock_via": "scene:the-feather-burns"
     }
   ],
@@ -141,7 +192,8 @@
       "kind_fa": "استانِ سام · خانه‌ی بزرگترین قهرمانانِ شاهنامه",
       "summary_en": "Zabulestan is the eastern province of Iran where Sam ruled and Zal grew up. It is where Rostam is born and where he will return between every great mission. In the Shahnameh's geography, Zabulestan is the stable point — the home that persists through every dynasty's rise and fall.",
       "summary_fa": "زابلستان استانِ شرقیِ ایران است که سام در آن حکم می‌راند و زال بزرگ شد. جایی است که رستم در آن متولد می‌شود و میانِ هر مأموریتِ بزرگ به آن باز می‌گردد.",
-      "image": null, "unlocked": true
+      "image": null,
+      "unlocked": true
     }
   ],
   "battle": {
@@ -153,50 +205,70 @@
     "intro_fa": "یک فیلِ جنگیِ سرکش در راهروی کاخ — و رستمِ دوازده‌ساله با یک گرز. برای مواجهه باید بفهمی نه فقط رستم کیست، بلکه پَر چه معنایی داشت و چرا زال بدون تردید آن را سوزاند.",
     "requirements": [
       {
-        "id": "level", "kind": "level", "target": 35,
-        "label_en": "Reach LVL 35", "label_fa": "رسیدن به سطحِ ۳۵", "label_tg": "Расидан ба сатҳи 35",
+        "id": "level",
+        "kind": "level",
+        "target": 35,
+        "label_en": "Reach LVL 35",
+        "label_fa": "رسیدن به سطحِ ۳۵",
+        "label_tg": "Расидан ба сатҳи 35",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
-        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
+        "hint_tg": "Зарба занед."
       },
       {
-        "id": "quiz", "kind": "quiz", "target": "birth-of-rostam",
-        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
-        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "birth-of-rostam",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
       }
-    ]
+    ],
+    "intro_tg": "Фили ҷангии сарказ дар роҳрави кох — ва Рустами дувоздаҳсола бо гурзе. Барои рӯбарӯ шудан бо ин дарвоза бояд на танҳо бифаҳмӣ Рустам кист, балки пар чӣ маъно дошт ва чаро Зол онро бе тардид сӯзонд."
   },
   "codex": [
     {
       "id": "feather-ash",
       "category": "event",
-      "title_en": "The Feather Becomes Ash", "title_fa": "پَر تبدیل به خاکستر می‌شود",
+      "title_en": "The Feather Becomes Ash",
+      "title_fa": "پَر تبدیل به خاکستر می‌شود",
       "summary_en": "Zal burns the Simorgh's feather — the promise she gave him on the day he descended from Alborz. He has carried it through battles, through courts, through decades of Zabulestan's peace. He burns it once, for one reason: Rudabeh cannot give birth and the physicians cannot help. The feather is gone. What it called is in the room.",
       "summary_fa": "زال پرِ سیمرغ را می‌سوزاند — قراری که روزِ پایین آمدن از البرز به او داد. یک بار می‌سوزاندش، برای یک دلیل: رودابه نمی‌تواند بزاید.",
-      "image": null, "unlock_via": "scene:the-feather-burns"
+      "image": null,
+      "unlock_via": "scene:the-feather-burns"
     },
     {
       "id": "simorgh-final-act",
       "category": "event",
-      "title_en": "The Simorgh's Final Act", "title_fa": "آخرین عملِ سیمرغ",
+      "title_en": "The Simorgh's Final Act",
+      "title_fa": "آخرین عملِ سیمرغ",
       "summary_en": "The Simorgh appears in the Shahnameh three times: she raises Zal, she returns him with the feather, and she guides Rostam's birth. After this, she is gone from the chronicle — though not from the world. She appears once more at the very end, centuries later, to carry Zal from the battlefield. But in this chapter she makes her final active intervention. She came when the feather burned. She saved the mother. She guided the child into the world. The Simorgh's investment in this lineage pays out in Rostam.",
       "summary_fa": "سیمرغ سه بار در شاهنامه ظاهر می‌شود: زال را پرورش می‌دهد، با پَر باز می‌گرداند، و تولدِ رستم را راهنمایی می‌کند. پس از این دفتر، رفته است.",
-      "image": null, "unlock_via": "scene:the-feather-burns"
+      "image": null,
+      "unlock_via": "scene:the-feather-burns"
     },
     {
       "id": "naming-rostam",
       "category": "event",
-      "title_en": "The Name Rostam", "title_fa": "نامِ رستم",
+      "title_en": "The Name Rostam",
+      "title_fa": "نامِ رستم",
       "summary_en": "The name Rostam comes from the Old Iranian 'ruta staxma' — 'thick-boned' or 'strong-boned.' Rudabeh, coming out of the ordeal, reportedly said 'rahastan' — 'I am free' — and this became Rostam. Ferdowsi does not resolve this etymology; he gives both and lets the reader hold both at once. A name that means strength. A name that means liberation. Both fit.",
       "summary_fa": "نامِ رستم از فارسیِ کهن 'رتا ستخم' — 'استخوانِ محکم' — می‌آید. رودابه پس از رنجِ زایمان گفت 'رهاستن' — 'آزاد شدم' — و این تبدیل به رستم شد. فردوسی هر دو را می‌دهد.",
-      "image": null, "unlock_via": "scene:rostam-arrives"
+      "image": null,
+      "unlock_via": "scene:rostam-arrives"
     },
     {
       "id": "ten-nurses",
       "category": "concept",
-      "title_en": "Ten Wet Nurses", "title_fa": "ده دایه",
+      "title_en": "Ten Wet Nurses",
+      "title_fa": "ده دایه",
       "summary_en": "The detail that Rostam required ten wet nurses in his first week is not presented as remarkable by the Shahnameh — it is presented as a logistical fact. This is characteristic of how the chronicle treats Rostam throughout: his exceptional qualities are measured, not celebrated. He is not wonderful; he is necessary. The ten wet nurses are not a miracle. They are a requirement.",
       "summary_fa": "جزئیاتِ اینکه رستم هفته‌ی اول ده دایه نیاز داشت در شاهنامه به‌عنوانِ شگفتی ارائه نمی‌شود — به‌عنوانِ واقعیتِ لجستیکی ارائه می‌شود. ویژگی‌های استثناییِ او سنجیده می‌شوند، نه ستوده.",
-      "image": null, "unlock_via": "scene:early-years"
+      "image": null,
+      "unlock_via": "scene:early-years"
     },
     {
       "id": "rakhsh-worthy",
@@ -205,7 +277,8 @@
       "title_fa": "رخش — شایسته‌ی سوارکار",
       "summary_en": "The Shahnameh's word for the moment Rakhsh holds under Rostam's hand is significant: 'worthy.' Both horse and rider are described as worthy of the other. This is not a simple transaction — Rostam does not simply buy a horse. Two beings with equivalent qualities of endurance recognize each other. The Shahnameh marks this as a bond rather than a purchase.",
       "summary_fa": "کلمه‌ای که شاهنامه برای لحظه‌ی ایستادنِ رخش زیرِ دستِ رستم استفاده می‌کند مهم است: 'شایسته.' هر دوی اسب و سوارکار شایسته‌ی دیگری توصیف می‌شوند.",
-      "image": null, "unlock_via": "scene:rakhsh-scene"
+      "image": null,
+      "unlock_via": "scene:rakhsh-scene"
     },
     {
       "id": "weight-of-the-pillar",
@@ -214,7 +287,8 @@
       "title_fa": "اولین بارِ ستون",
       "summary_en": "When Rostam kills the elephant in the corridor, the Shahnameh marks the moment with a characteristic restraint: it records what happened, notes the silence that followed, and moves on. There is no celebration, no speech. The chronicle knows that this is not the story — it is the preparation for the story. The pillar has been set. Now the world will begin to lean.",
       "summary_fa": "وقتی رستم فیل را در راهرو می‌کشد، شاهنامه لحظه را با خودداریِ مشخص ثبت می‌کند: آنچه اتفاق افتاد را ثبت می‌کند، سکوتی که دنبال آمد را یادداشت می‌کند و پیش می‌رود. جشن نیست، سخنرانی نیست.",
-      "image": null, "unlock_via": "scene:elephant-scene"
+      "image": null,
+      "unlock_via": "scene:elephant-scene"
     }
   ]
 }

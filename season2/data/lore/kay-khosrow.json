@@ -15,150 +15,213 @@
   "timeline": [
     {
       "id": "raised-in-turan",
-      "year_label_en": "~2890 BC", "year_label_fa": "~۲۸۹۰ پ.م",
-      "title_en": "Raised as a Shepherd Boy", "title_fa": "پرورش‌یافته به عنوانِ چوپان‌زاده",
+      "year_label_en": "~2890 BC",
+      "year_label_fa": "~۲۸۹۰ پ.م",
+      "title_en": "Raised as a Shepherd Boy",
+      "title_fa": "پرورش‌یافته به عنوانِ چوپان‌زاده",
       "body_en": "Farangis flees east after Siavash's execution and gives birth to Kay Khosrow in the Turanian wilderness. He grows up tending herds, unknown, the son of two royal lines who has been given nothing except his inheritance of purpose.",
       "body_fa": "فرنگیس بعد از اعدامِ سیاوش به شرق فرار می‌کند و کی‌خسرو را در بیابانِ توران به دنیا می‌آورد. ناشناس با گله‌داری رشد می‌کند — پسرِ دو خطِ سلطنتی که چیزی جز ارثِ هدف داده نشده.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "rostam-rescues",
-      "year_label_en": "~2875 BC", "year_label_fa": "~۲۸۷۵ پ.م",
-      "title_en": "Rostam Crosses the Oxus", "title_fa": "رستم از جیحون می‌گذرد",
+      "year_label_en": "~2875 BC",
+      "year_label_fa": "~۲۸۷۵ پ.م",
+      "title_en": "Rostam Crosses the Oxus",
+      "title_fa": "رستم از جیحون می‌گذرد",
       "body_en": "Giv, one of Iran's great paladins, spends seven years in Turan searching for Kay Khosrow. He finds him. Rostam leads the mission to bring them both back across the Oxus under Afrasiab's pursuit.",
       "body_fa": "گیو، یکی از پهلوانانِ بزرگِ ایران، هفت سال در توران به دنبالِ کی‌خسرو می‌گردد. پیدایش می‌کند. رستم مأموریت را رهبری می‌کند تا هر دو را از جیحون زیرِ تعقیبِ افراسیاب برگرداند.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "succession-test",
-      "year_label_en": "~2874 BC", "year_label_fa": "~۲۸۷۴ پ.م",
-      "title_en": "The Test of the Fortress Gate", "title_fa": "آزمایشِ دروازه‌ی قلعه",
+      "year_label_en": "~2874 BC",
+      "year_label_fa": "~۲۸۷۴ پ.م",
+      "title_en": "The Test of the Fortress Gate",
+      "title_fa": "آزمایشِ دروازه‌ی قلعه",
       "body_en": "The court is divided between Fariborz (Kay Kavus's elder son) and Kay Khosrow. A test is set: each will attempt to open a great fortress gate held by one of Afrasiab's generals. Fariborz fails. Kay Khosrow opens it with prayer alone.",
       "body_fa": "دربار میانِ فریبرز (پسرِ ارشدِ کی‌کاووس) و کی‌خسرو تقسیم است. آزمایشی تعیین می‌شود: هر کدام سعی می‌کند دروازه‌ی قلعه‌ای را که یکی از سردارانِ افراسیاب نگه می‌دارد بگشاید. فریبرز شکست می‌خورد. کی‌خسرو با دعا تنها می‌گشاید.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "afrasiab-dies",
-      "year_label_en": "~2855 BC", "year_label_fa": "~۲۸۵۵ پ.م",
-      "title_en": "Afrasiab at the Lake", "title_fa": "افراسیاب کنارِ دریاچه",
+      "year_label_en": "~2855 BC",
+      "year_label_fa": "~۲۸۵۵ پ.م",
+      "title_en": "Afrasiab at the Lake",
+      "title_fa": "افراسیاب کنارِ دریاچه",
       "body_en": "The great war grinds Afrasiab's kingdom to nothing over decades. Afrasiab is finally cornered at a remote lake. Kay Khosrow confronts him personally. He executes him with his own hands. Siavash is avenged.",
       "body_fa": "جنگِ بزرگ در طولِ دهه‌ها پادشاهیِ افراسیاب را خرد می‌کند. افراسیاب در کنارِ دریاچه‌ای دورافتاده گیر می‌افتد. کی‌خسرو شخصاً روبرویش می‌شود. با دستِ خودش اعدامش می‌کند. سیاوش انتقام گرفته شد.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "the-departure",
-      "year_label_en": "~2840 BC", "year_label_fa": "~۲۸۴۰ پ.م",
-      "title_en": "The King Who Chose to Leave", "title_fa": "شاهی که انتخاب کرد برود",
+      "year_label_en": "~2840 BC",
+      "year_label_fa": "~۲۸۴۰ پ.م",
+      "title_en": "The King Who Chose to Leave",
+      "title_fa": "شاهی که انتخاب کرد برود",
       "body_en": "At the height of his reign, Kay Khosrow announces his departure. He distributes the kingdom, says his farewells, and walks into the mountains. A snowstorm rises. When it passes, he and his companions are gone. He is the only king in the Shahnameh who chose his own ending rather than being overtaken by it.",
       "body_fa": "در اوجِ سلطنتش، کی‌خسرو خداحافظی‌اش را اعلام می‌کند. پادشاهی را تقسیم می‌کند، وداع می‌گوید، و به کوه‌ها می‌رود. طوفانِ برف برمی‌خیزد. وقتی رد می‌شود او و همراهانش رفته‌اند. تنها شاهی در شاهنامه که پایانِ خودش را انتخاب کرد.",
-      "image": null, "side": "fated"
+      "image": null,
+      "side": "fated"
     }
   ],
   "scenes": [
     {
       "id": "shepherd-king",
       "order": 1,
-      "title_en": "The Shepherd Who Was a King", "title_fa": "چوپانی که شاه بود",
-      "era_en": "~2890 BC", "era_fa": "~۲۸۹۰ پ.م",
+      "title_en": "The Shepherd Who Was a King",
+      "title_fa": "چوپانی که شاه بود",
+      "era_en": "~2890 BC",
+      "era_fa": "~۲۸۹۰ پ.م",
       "body_en": "Farangis gave birth in the Turanian wilderness and raised her son in hiding. She told him who his father was. She told him what had been done to his father. Kay Khosrow grew up tending herds on the Turanian steppe, surrounded by the people who had killed Siavash, knowing exactly who he was and giving no outward sign of it. The Shahnameh observes this situation with precision: he was not hiding from shame. He was hiding because Afrasiab would kill him if he knew, and the debt his father's death required could not be paid by a dead boy. Patience here was not weakness. It was the specific quality the situation demanded. When Giv, one of Iran's great paladins, spent seven years searching for him and finally found him, Kay Khosrow was tending a flock on an open hillside. The Shahnameh does not describe Giv's first impression. It does not need to: Giv spent seven years searching, found a boy tending sheep, and immediately understood he had found what he came for.",
       "body_fa": "فرنگیس در بیابانِ توران زایمان کرد و پسرش را مخفیانه بزرگ کرد. گفت پدرش کیست. گفت با پدرش چه شد. کی‌خسرو با گله‌داری در استپِ توران، محاطِ کسانی که سیاوش را کشته بودند، رشد کرد — دقیقاً می‌دانست کیست و هیچ نشانه‌ی ظاهری‌ای نمی‌داد. صبر اینجا ضعف نبود. کیفیتِ خاصی بود که وضعیت می‌طلبید. وقتی گیو هفت سال گشت و پیدایش کرد، کی‌خسرو گله‌ای را در تپه‌ای چرانده می‌کرد. شاهنامه اولین برداشتِ گیو را توصیف نمی‌کند. نیازی نیست.",
       "atmosphere": "dawn",
       "image": "/season2/uploads/chapters/kay-khosrow.png",
-      "reward": { "xp": 65 },
-      "unlocks_codex": ["patience-as-power"]
+      "reward": {
+        "xp": 65
+      },
+      "unlocks_codex": [
+        "patience-as-power"
+      ]
     },
     {
       "id": "crossing-back",
       "order": 2,
-      "title_en": "The Return Across the Oxus", "title_fa": "بازگشت از جیحون",
-      "era_en": "~2875 BC", "era_fa": "~۲۸۷۵ پ.م",
+      "title_en": "The Return Across the Oxus",
+      "title_fa": "بازگشت از جیحون",
+      "era_en": "~2875 BC",
+      "era_fa": "~۲۸۷۵ پ.م",
       "body_en": "Giv brought Kay Khosrow and Farangis to the Oxus. Afrasiab's forces were behind them. Rostam came across to meet them. The Shahnameh describes this crossing as one of its great narrative fulcrums — the point at which the debt of Siavash's death begins its journey toward payment. Kay Khosrow crossed the Oxus for the first time moving west, toward Iran, toward the throne, toward the war that was his specific purpose. He had been raised in the land of his father's killers. He crossed the river that separated that world from the one that would eventually answer it. Farangis crossed with him. She had left Turan with nothing the first time; she returned to Iran as the mother of the future king, having preserved exactly what needed preserving. The Shahnameh does not give her a speech here. It gives her the crossing.",
       "body_fa": "گیو کی‌خسرو و فرنگیس را به جیحون رساند. نیروهای افراسیاب پشتِ سرشان بودند. رستم از آن طرف آمد تا به آن‌ها برسد. شاهنامه این عبور را یکی از لولاهای روایی‌اش توصیف می‌کند — نقطه‌ای که بدهیِ مرگِ سیاوش سفرش را به سمتِ پرداخت آغاز می‌کند. فرنگیس با او گذشت. دفعه‌ی اول با هیچ از توران رفت؛ حالا به عنوانِ مادرِ شاهِ آینده برمی‌گردد.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 75 },
-      "unlocks_codex": ["farangis-crossing"]
+      "reward": {
+        "xp": 75
+      },
+      "unlocks_codex": [
+        "farangis-crossing"
+      ]
     },
     {
       "id": "the-test",
       "order": 3,
-      "title_en": "The Gate That Only Prayer Could Open", "title_fa": "دروازه‌ای که فقط دعا می‌گشود",
-      "era_en": "~2874 BC", "era_fa": "~۲۸۷۴ پ.م",
+      "title_en": "The Gate That Only Prayer Could Open",
+      "title_fa": "دروازه‌ای که فقط دعا می‌گشود",
+      "era_en": "~2874 BC",
+      "era_fa": "~۲۸۷۴ پ.م",
       "body_en": "The court was divided. Fariborz was Kay Kavus's elder son by another wife — he had seniority, familiarity, supporters. Kay Khosrow was a boy from the Turanian wilderness who arrived with Rostam and Giv. The argument over which of them should inherit was genuine and was not resolved by persuasion. A test was set. Both princes would separately attempt to open the gates of a great fortress held by one of Afrasiab's most capable generals. The prize was the throne; the test was whether heaven would back the candidate. Fariborz led a full military assault on the fortress. He failed — not from cowardice or incompetence, but because the gate was not meant to open for him. Kay Khosrow arrived at the gate alone. He prayed. The Shahnameh records the gate opening without commentary. No army. No battering ram. No trick. The gate opened because Kay Khosrow asked it to, and the Shahnameh presents this without irony: this is how destiny expresses itself in the chronicle's world — not through spectacle but through a gate opening when the right man asks.",
       "body_fa": "دربار تقسیم بود. فریبرز پسرِ ارشدِ کی‌کاووس بود — ارشدیت، آشنایی، حامیان. کی‌خسرو پسرکی از بیابانِ توران بود. هر دو شاهزاده سعی کردند دروازه‌ی قلعه‌ای عظیم را بگشایند. فریبرز حملهی کاملِ نظامی کرد. شکست خورد. کی‌خسرو تنها آمد. دعا کرد. شاهنامه دروازه را بدونِ توضیح باز می‌کند. هیچ سپاه، هیچ قوچِ دیوار. دروازه باز شد چون کی‌خسرو خواست.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 85 },
-      "unlocks_codex": ["how-destiny-speaks", "the-fariborz-question"]
+      "reward": {
+        "xp": 85
+      },
+      "unlocks_codex": [
+        "how-destiny-speaks",
+        "the-fariborz-question"
+      ]
     },
     {
       "id": "the-great-war",
       "order": 4,
-      "title_en": "The Great War — Vengeance at the Oxus", "title_fa": "جنگِ بزرگ — انتقام در جیحون",
-      "era_en": "~2870–2855 BC", "era_fa": "~۲۸۷۰–۲۸۵۵ پ.م",
+      "title_en": "The Great War — Vengeance at the Oxus",
+      "title_fa": "جنگِ بزرگ — انتقام در جیحون",
+      "era_en": "~2870–2855 BC",
+      "era_fa": "~۲۸۷۰–۲۸۵۵ پ.م",
       "body_en": "Kay Khosrow organized the great Iran-Turan war. This was not the same as the wars Kay Kavus had fought — those were wars of ambition and recklessness and rescue. This was a war of purpose: Siavash's blood was in Turanian earth, Garsivaz still lived, Afrasiab still sat on his throne. Kay Khosrow crossed the Oxus in the way that Siavash had crossed it in the other direction — with full knowledge of what he was crossing toward. Campaign by campaign, the Iranian army reduced Turan's power. The great Turanian generals fell. Afrasiab fled — north to the shores of the great sea, west toward the mountains, doubling back and hiding. He was a king who had outlived his right to rule, running from the accumulated debt of what he had ordered done to Siavash. At the edge of a remote lake, Kay Khosrow finally cornered him. He confronted Afrasiab personally. He made the execution personal, with his own hands, because the debt was personal — it was his father's blood, and Farangis's exile, and the field outside Siyavashgerd where the mourning plant still grew. Afrasiab died at the lake. The Iran-Turan wars that had shaped the chronicle for centuries closed.",
       "body_fa": "کی‌خسرو جنگِ بزرگِ ایران-توران را سازماندهی کرد. این مثلِ جنگ‌های کی‌کاووس نبود — آن‌ها جنگ‌های جاه‌طلبی و بی‌پروایی بودند. این جنگِ هدف بود: خونِ سیاوش در خاکِ توران. کی‌خسرو از جیحون گذشت همان‌طوری که سیاوش به سمتِ دیگر گذشته بود — با کاملِ دانستنِ اینکه به سمتِ چه می‌رود. افراسیاب فرار کرد — شمال، غرب، جنوب. در کنارِ دریاچه‌ای دورافتاده گیر افتاد. کی‌خسرو شخصاً روبرویش شد. با دستِ خودش اعدامش کرد — چون بدهی شخصی بود.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["a-war-of-debt", "afrasiab-at-the-lake"]
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "a-war-of-debt",
+        "afrasiab-at-the-lake"
+      ]
     },
     {
       "id": "the-departure",
       "order": 5,
-      "title_en": "Into the Mountain", "title_fa": "به درونِ کوه",
-      "era_en": "~2840 BC", "era_fa": "~۲۸۴۰ پ.م",
+      "title_en": "Into the Mountain",
+      "title_fa": "به درونِ کوه",
+      "era_en": "~2840 BC",
+      "era_fa": "~۲۸۴۰ پ.م",
       "body_en": "Kay Khosrow called his paladins together and told them he was leaving. He had ruled for years at the height of the Kayanian dynasty. He had done what he was made for: avenged Siavash, ended the Iran-Turan wars, given Iran a generation of just governance. He said: I have watched what the throne does to those who sit on it too long. I have seen it in Kay Kavus. I will not wait for it to happen to me. He distributed the kingdom. He designated Lohrasp as his successor. He said farewell in the language of kings, which is spare and final. Then he walked into the Alborz mountains with a small company of his greatest paladins. A snowstorm came. When it cleared, he was gone. His companions who followed him into the storm were also taken — some of them, including Zov and others, simply were not found when the storm passed. The Shahnameh does not say where he went. It says only that he went, and that he was not seen again, and that he was the only king in the chronicle who walked out of his reign freely, at the height of his power, before the corruption that comes with long possession could find him.",
       "body_fa": "کی‌خسرو پهلوانانش را جمع کرد و گفت دارد می‌رود. گفت: دیده‌ام تخت با کسانی که خیلی طولانی رویش می‌نشینند چه می‌کند. در کی‌کاووس دیده‌ام. منتظر نمی‌مانم با من اتفاق بیفتد. پادشاهی را تقسیم کرد. لهراسپ را به عنوانِ جانشینش تعیین کرد. بعد به کوه‌های البرز رفت با گروهِ کوچکی از پهلوانانش. طوفانِ برف آمد. وقتی رد شد رفته بود. شاهنامه نمی‌گوید کجا رفت. فقط می‌گوید رفت، و دیده نشد، و تنها شاهِ شاهنامه بود که آزادانه از سلطنتش بیرون رفت.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 130 },
-      "unlocks_codex": ["why-he-left", "the-only-free-king"]
+      "reward": {
+        "xp": 130
+      },
+      "unlocks_codex": [
+        "why-he-left",
+        "the-only-free-king"
+      ]
     }
   ],
   "characters": [
     {
       "slug": "kay-khosrow",
-      "name_en": "Kay Khosrow", "name_fa": "کی‌خسرو",
+      "name_en": "Kay Khosrow",
+      "name_fa": "کی‌خسرو",
       "role_en": "Son of Siavash · Third Kayanian King · The Chronicle's Chosen King",
       "role_fa": "پسرِ سیاوش · سومین شاهِ کیانی · شاهِ برگزیده‌ی شاهنامه",
-      "rarity": "legendary", "level_required": 1,
+      "rarity": "legendary",
+      "level_required": 1,
       "lore_en": "Kay Khosrow is the Shahnameh's answer to the question Siavash's death posed: what happens to purity when the world tries to destroy it? The answer is Kay Khosrow — raised in the land of his father's killers, patient through an impossible childhood, arriving at the throne already formed, already purposeful, already certain. He does everything his father was prevented from doing: avenges the injustice, ends the war, rules justly. And then, at the height of his success, he does something no other king in the chronicle does: he leaves before the throne corrupts him. The Shahnameh treats this as the highest possible act of kingship — the recognition that power is a loan, not a possession.",
       "lore_fa": "کی‌خسرو پاسخِ شاهنامه به سؤالی است که مرگِ سیاوش مطرح کرد: وقتی دنیا سعی کند پاکی را نابود کند چه اتفاقی می‌افتد؟ پاسخ کی‌خسرو است — پرورش‌یافته در سرزمینِ قاتلانِ پدرش، صبور در طولِ کودکیِ غیرممکن، به تخت رسیده شکل‌گرفته، هدفمند، مطمئن. بعد، در اوجِ موفقیتش، کاری می‌کند که هیچ شاهِ دیگری نمی‌کند: می‌رود.",
       "image": "/season2/uploads/chapters/kay-khosrow.png",
-      "unlocked": true, "side": "light"
+      "unlocked": true,
+      "side": "light"
     },
     {
       "slug": "giv",
-      "name_en": "Giv", "name_fa": "گیو",
+      "name_en": "Giv",
+      "name_fa": "گیو",
       "role_en": "Paladin of Iran · Seven Years Searching · The Man Who Found Kay Khosrow",
       "role_fa": "پهلوانِ ایران · هفت سال جستجو · مردی که کی‌خسرو را پیدا کرد",
-      "rarity": "epic", "level_required": 2,
+      "rarity": "epic",
+      "level_required": 2,
       "lore_en": "Giv's seven-year search for Kay Khosrow in Turan is one of the Shahnameh's most quietly extraordinary passages. He goes alone into the land of Iran's enemies, searching for a child he has never seen, guided only by the conviction that the child exists and that finding him matters. He spends seven years. He finds a shepherd boy on a Turanian hillside. He takes him home. The Shahnameh presents this service without drama — it simply records it as an act of complete loyalty to something beyond the individual, performed over seven years, at cost.",
       "lore_fa": "هفت سالِ جستجویِ گیو برای کی‌خسرو در توران یکی از ساکت‌ترین و استثنایی‌ترین بخش‌های شاهنامه است. تنها به سرزمینِ دشمنانِ ایران می‌رود و کودکی را که هرگز ندیده می‌جوید — راهنمایی‌شده فقط توسطِ این یقین که کودک وجود دارد و پیدا کردنش اهمیت دارد. هفت سال می‌گذرد. پیدایش می‌کند.",
-      "image": null, "unlocked": false, "side": "light",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
       "unlock_via": "scene:shepherd-king"
     },
     {
       "slug": "farangis-return",
-      "name_en": "Farangis", "name_fa": "فرنگیس",
+      "name_en": "Farangis",
+      "name_fa": "فرنگیس",
       "role_en": "Mother of Kay Khosrow · The Return Across the Oxus",
       "role_fa": "مادرِ کی‌خسرو · بازگشت از جیحون",
-      "rarity": "epic", "level_required": 1,
+      "rarity": "epic",
+      "level_required": 1,
       "lore_en": "Farangis crossed the Oxus twice. The first time was east, in flight, carrying Kay Khosrow unborn. The second time was west, with Giv and Rostam, carrying the future king home. The Shahnameh measures the distance between these two crossings: the first was an escape from destruction; the second was the beginning of the answer to that destruction. She does not speak in either crossing. She is simply present, and her presence is the thread that connects Siavash's murder to Kay Khosrow's vengeance.",
       "lore_fa": "فرنگیس دو بار از جیحون گذشت. بار اول به شرق، در حالِ فرار، با کی‌خسروی نازاده. بار دوم به غرب، با گیو و رستم. شاهنامه فاصله‌ی میانِ این دو عبور را اندازه می‌گیرد.",
-      "image": null, "unlocked": false, "side": "neutral",
+      "image": null,
+      "unlocked": false,
+      "side": "neutral",
       "unlock_via": "scene:crossing-back"
     },
     {
       "slug": "afrasiab-end",
-      "name_en": "Afrasiab", "name_fa": "افراسیاب",
+      "name_en": "Afrasiab",
+      "name_fa": "افراسیاب",
       "role_en": "King of Turan · The Fugitive · The Reckoning at the Lake",
       "role_fa": "شاهِ توران · فراری · حسابِ کنارِ دریاچه",
-      "rarity": "legendary", "level_required": 4,
+      "rarity": "legendary",
+      "level_required": 4,
       "lore_en": "Afrasiab has been Iran's great enemy across the entire middle section of the Shahnameh — present since the Nozar chapter, responsible for Siavash's death, the architect of decades of war. His end at the lake is the chronicle's long-delayed reckoning. He is not killed in heroic single combat — he is run down, cornered, and executed by the man whose father he ordered killed. The Shahnameh gives Afrasiab no final speech, no dignity of last words. He is the account that is being settled. The settlement is quiet and absolute.",
       "lore_fa": "افراسیاب در تمامِ بخشِ میانیِ شاهنامه دشمنِ بزرگِ ایران بوده — از فصلِ نوذر، مسئولِ مرگِ سیاوش، معمارِ دهه‌ها جنگ. پایانش کنارِ دریاچه حسابِ دیرهنگامِ شاهنامه است. در نبردِ تن‌به‌تنِ قهرمانانه کشته نمی‌شود — دنبال می‌شود، گوشه می‌گیرد، توسطِ مردی که پدرش را اعدام دستور داد کشته می‌شود.",
-      "image": null, "unlocked": false, "side": "dark",
+      "image": null,
+      "unlocked": false,
+      "side": "dark",
       "unlock_via": "scene:the-great-war"
     }
   ],
@@ -171,7 +234,8 @@
       "kind_fa": "سرزمینی که شاهی را ساخت که نتوانست نگهش دارد",
       "summary_en": "The Turanian steppe is the land where Siavash was killed and where Kay Khosrow was raised. The same earth contains both the mourning plant of Siavash's blood and the childhood of the king who will avenge it. The Shahnameh's geography is rarely accidental. Kay Khosrow growing up in the land of his father's death is the chronicle's precise way of saying: the answer to what happened here grew here.",
       "summary_fa": "استپِ توران سرزمینی است که سیاوش در آن کشته شد و کی‌خسرو در آن بزرگ شد. همان خاک هم گیاهِ سوگواریِ خونِ سیاوش را دارد و هم کودکیِ شاهی که انتقامش را خواهد گرفت.",
-      "image": null, "unlocked": true
+      "image": null,
+      "unlocked": true
     },
     {
       "slug": "the-alborz-departure",
@@ -181,7 +245,9 @@
       "kind_fa": "جایِ پایانِ انتخابی",
       "summary_en": "Alborz appears twice in the Shahnameh at its most numinous moments: it is where the Simorgh raised Zal, and it is where Kay Khosrow disappeared. Both are moments of a human being going into the mountain and being changed — Zal came back transformed, carrying a feather; Kay Khosrow did not come back at all. The mountain in the Shahnameh is not a physical location as much as it is the place where the chronicle deposits its mysteries.",
       "summary_fa": "البرز دو بار در لحظاتِ مقدس‌ترینِ شاهنامه ظاهر می‌شود: جایی که سیمرغ زال را بزرگ کرد، و جایی که کی‌خسرو ناپدید شد. کوه در شاهنامه به همان اندازه که مکانِ فیزیکی است جایی است که شاهنامه اسرارش را در آن می‌گذارد.",
-      "image": null, "unlocked": false, "unlock_via": "scene:the-departure"
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:the-departure"
     }
   ],
   "battle": {
@@ -194,16 +260,29 @@
     "intro_fa": "افراسیاب آخرین ایستادگیش را می‌کند. برای مواجهه باید نه فقط نبردها را بفهمی بلکه وزنِ پشتِ آن‌ها را — چرا جنگِ کی‌خسرو از هر درگیریِ دیگرِ ایران-توران متفاوت است.",
     "requirements": [
       {
-        "id": "level", "kind": "level", "target": 60,
-        "label_en": "Reach LVL 60", "label_fa": "رسیدن به سطحِ ۶۰", "label_tg": "Расидан ба сатҳи 60",
-        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+        "id": "level",
+        "kind": "level",
+        "target": 60,
+        "label_en": "Reach LVL 60",
+        "label_fa": "رسیدن به سطحِ ۶۰",
+        "label_tg": "Расидан ба сатҳи 60",
+        "hint_en": "Tap, complete quests, and claim daily rewards.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
+        "hint_tg": "Зарба занед."
       },
       {
-        "id": "quiz", "kind": "quiz", "target": "kay-khosrow",
-        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
-        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "kay-khosrow",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
       }
-    ]
+    ],
+    "intro_tg": "Афросиёб охирин истодагириашро мекунад. Барои рӯбарӯ шудан бо ин дарвоза бояд на танҳо набардҳоро бифаҳмӣ балки вазни пуштиашонро — чаро ҷанги Кайхусрав аз ҳар мунозироти дигари Эрон-Турон фарқ дорад, ва абзори қарзе будан ки аз он вақте ки хуни Сиёваш ба хоки Турон расид рӯ ба афзоиш гузоштааст чӣ маъно дорад."
   },
   "codex": [
     {
@@ -213,7 +292,8 @@
       "title_fa": "صبر به عنوانِ قدرت",
       "summary_en": "Kay Khosrow grows up tending herds in the land that killed his father. He does not organize a revolt, does not attempt to flee to Iran, does not announce himself. He waits. The Shahnameh treats this patience not as passivity but as strategic clarity: the debt his father's death requires cannot be paid by a dead or captured boy. He waits until the resources arrive — until Giv finds him, until Rostam comes — and then moves decisively. The pattern is the opposite of Kay Kavus: where Kay Kavus moved before the moment, Kay Khosrow holds until it arrives.",
       "summary_fa": "کی‌خسرو در سرزمینی که پدرش را کشت گله‌داری می‌کند. انتظار می‌کشد. شاهنامه این صبر را نه به عنوانِ انفعال بلکه به عنوانِ وضوحِ استراتژیک می‌داند: بدهیِ مرگِ پدرش توسطِ پسربچه‌ی مُرده یا اسیر قابلِ پرداخت نیست. الگو عکسِ کی‌کاووس است.",
-      "image": null, "unlock_via": "scene:shepherd-king"
+      "image": null,
+      "unlock_via": "scene:shepherd-king"
     },
     {
       "id": "farangis-crossing",
@@ -222,7 +302,8 @@
       "title_fa": "فرنگیس — رشته‌ای میانِ دو مرگ",
       "summary_en": "Farangis crosses the Oxus twice: east in flight with Kay Khosrow unborn, west in return with Kay Khosrow grown. She is the living thread connecting Siavash's murder to its eventual answer. The Shahnameh gives her no great speeches, no explicit laments. Her presence is her argument: she survived, she preserved the child, she brought him home. Everything that follows from Kay Khosrow's vengeance is made possible by the choices Farangis made when she had nothing and was running east.",
       "summary_fa": "فرنگیس دو بار از جیحون می‌گذرد: شرق در فرار، غرب در بازگشت. رشته‌ی زنده‌ای است که قتلِ سیاوش را به پاسخِ نهایی‌اش متصل می‌کند. شاهنامه خطابه‌های بزرگ به او نمی‌دهد. حضورش استدلالش است.",
-      "image": null, "unlock_via": "scene:crossing-back"
+      "image": null,
+      "unlock_via": "scene:crossing-back"
     },
     {
       "id": "how-destiny-speaks",
@@ -231,7 +312,8 @@
       "title_fa": "چگونه سرنوشت در شاهنامه حرف می‌زند",
       "summary_en": "The fortress gate opens for Kay Khosrow's prayer and not for Fariborz's army. The Shahnameh presents this without elaborate theology — it simply records it as a fact of how the world works in this chronicle. Destiny does not announce itself; it expresses itself through gates opening, through prayers being answered, through a shepherd boy who looks unmistakably like a king. The chronicle's gods are not absent — they are present in every structural detail, never in speeches or miracles, always in the way things turn out when they turn out correctly.",
       "summary_fa": "دروازه‌ی قلعه برای دعایِ کی‌خسرو باز می‌شود نه برای سپاهِ فریبرز. شاهنامه این را بدون الهیاتِ پیچیده ارائه می‌دهد — فقط به عنوانِ واقعیتِ طرزِ کارکردِ دنیا ثبت می‌کند. سرنوشت خودش را اعلام نمی‌کند؛ از طریقِ باز شدنِ دروازه‌ها بیان می‌کند.",
-      "image": null, "unlock_via": "scene:the-test"
+      "image": null,
+      "unlock_via": "scene:the-test"
     },
     {
       "id": "the-fariborz-question",
@@ -240,7 +322,8 @@
       "title_fa": "فریبرز — ادعایی که انتخاب نشد",
       "summary_en": "Fariborz is not a villain. He is the elder son of Kay Kavus, with a legitimate claim to the throne. His failure to open the fortress gate is not presented as a personal failure — it is presented as a structural fact: the gate was not meant for him. The Shahnameh is careful about this. Fariborz continues to serve Iran faithfully after Kay Khosrow becomes king. The chronicle is not saying he was wrong to exist or wrong to try. It is saying: when the world has a specific purpose, it chooses the instrument for that purpose, and Fariborz was not it.",
       "summary_fa": "فریبرز شرور نیست. پسرِ ارشدِ کی‌کاووس است با ادعایِ مشروعِ تخت. شکستِ او در گشودنِ دروازه به عنوانِ شکستِ شخصی ارائه نمی‌شود — به عنوانِ واقعیتِ ساختاری: دروازه برای او نبود.",
-      "image": null, "unlock_via": "scene:the-test"
+      "image": null,
+      "unlock_via": "scene:the-test"
     },
     {
       "id": "a-war-of-debt",
@@ -249,7 +332,8 @@
       "title_fa": "جنگِ بدهی — نه جاه‌طلبی",
       "summary_en": "The great Iran-Turan war under Kay Khosrow is structurally different from every previous Iran-Turan conflict. Kay Kavus's wars were driven by ambition, pride, and recklessness. Kay Khosrow's war is driven by debt: Siavash's blood, Farangis's exile, the destruction of Siyavashgerd. The Shahnameh marks this distinction clearly — the chronicle gives Kay Khosrow's war a gravity it never gives to wars of acquisition. When the purpose is restoration of something owed, the chronicle's weight is on the side of the debtor collecting.",
       "summary_fa": "جنگِ بزرگِ ایران-توران تحتِ کی‌خسرو از نظرِ ساختاری از هر درگیریِ قبلی متفاوت است. جنگ‌های کی‌کاووس از جاه‌طلبی، غرور، بی‌پروایی بودند. جنگِ کی‌خسرو از بدهی است: خونِ سیاوش، تبعیدِ فرنگیس، نابودیِ سیاوش‌گرد.",
-      "image": null, "unlock_via": "scene:the-great-war"
+      "image": null,
+      "unlock_via": "scene:the-great-war"
     },
     {
       "id": "afrasiab-at-the-lake",
@@ -258,7 +342,8 @@
       "title_fa": "افراسیاب کنارِ دریاچه — پایانِ دشمنِ دیرین",
       "summary_en": "Afrasiab dies not in glorious battle but cornered, at the edge of a remote lake, run down by the accumulated weight of his own choices. The Shahnameh does not give him a final speech or a warrior's death. He is executed. This is precise: Siavash did not die a warrior's death either. He was taken and beheaded. Afrasiab's death mirrors the death he ordered — not in the grand symmetry of heroes, but in the quiet, complete symmetry of a debt paid exactly as it was owed.",
       "summary_fa": "افراسیاب نه در نبردِ باشکوه بلکه گوشه‌گیرشده، در کنارِ دریاچه‌ای دورافتاده، زیرِ وزنِ انباشته‌ی انتخاب‌های خودش می‌میرد. مرگِ او مرگی را که دستور داد آینه می‌کند — در تقارنِ آرامِ بدهیِ پرداخته‌شده.",
-      "image": null, "unlock_via": "scene:the-great-war"
+      "image": null,
+      "unlock_via": "scene:the-great-war"
     },
     {
       "id": "why-he-left",
@@ -267,7 +352,8 @@
       "title_fa": "چرا کی‌خسرو رفت",
       "summary_en": "Kay Khosrow gives his reason clearly: he has seen what the throne does to those who sit on it too long. He names Kay Kavus. He says: I will not wait to become that. The Shahnameh treats this not as abdication or failure but as the highest possible act of wisdom — the recognition, at the height of power, that power is a loan and that the right time to return a loan is before you have spent it on yourself. No other king in the chronicle makes this recognition. Kay Khosrow is unique in the Shahnameh precisely because he knows what he is and knows when to stop.",
       "summary_fa": "کی‌خسرو دلیلش را روشن می‌گوید: دیده است تخت با کسانی که خیلی طولانی رویش می‌نشینند چه می‌کند. کی‌کاووس را نام می‌برد. می‌گوید: منتظر نمی‌مانم آن بشوم. شاهنامه این را نه به عنوانِ استعفا بلکه به عنوانِ عالی‌ترین عملِ خرد می‌داند.",
-      "image": null, "unlock_via": "scene:the-departure"
+      "image": null,
+      "unlock_via": "scene:the-departure"
     },
     {
       "id": "the-only-free-king",
@@ -276,7 +362,8 @@
       "title_fa": "تنها شاهِ آزاد",
       "summary_en": "The Shahnameh chronicles fifty kings. Most of them die in battle, are overthrown, are murdered by relatives, or reign until old age takes them. Kay Khosrow is the only one who chooses his ending and enacts it. The snowstorm that takes him is the Shahnameh's image of this freedom: he walks into it, and the chronicle does not say he dies. It says he is not seen again. The distinction matters. Death is what the world does to you. Disappearance is what you do to the world when you are finished with it.",
       "summary_fa": "شاهنامه پنجاه شاه را روایت می‌کند. بیشترشان در نبرد می‌میرند، برکنار می‌شوند، توسطِ بستگان کشته می‌شوند. کی‌خسرو تنها کسی است که پایانش را انتخاب می‌کند و عملی می‌سازد. تمایز اهمیت دارد: مرگ آن چیزی است که دنیا با تو می‌کند. ناپدید شدن آن چیزی است که تو با دنیا می‌کنی وقتی کارت تمام شده.",
-      "image": null, "unlock_via": "scene:the-departure"
+      "image": null,
+      "unlock_via": "scene:the-departure"
     }
   ]
 }

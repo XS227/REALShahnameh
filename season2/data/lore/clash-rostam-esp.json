@@ -15,119 +15,171 @@
   "timeline": [
     {
       "id": "arrival",
-      "year_label_en": "~2770 BC", "year_label_fa": "~۲۷۷۰ پ.م",
-      "title_en": "The Arrival at Zabulestan", "title_fa": "رسیدن به زابلستان",
+      "year_label_en": "~2770 BC",
+      "year_label_fa": "~۲۷۷۰ پ.م",
+      "title_en": "The Arrival at Zabulestan",
+      "title_fa": "رسیدن به زابلستان",
       "body_en": "Esfandiyar arrives at Rostam's stronghold. Zal and Rostam receive him with full hospitality. The negotiation is extended and honest: Rostam will do anything except submit to chains.",
       "body_fa": "اسفندیار به قلعه‌ی رستم می‌رسد. زال و رستم با مهمان‌نوازیِ کامل پذیرایش می‌کنند. مذاکره گسترده و صادقانه است: رستم هر کاری می‌کند جز تسلیمِ زنجیر.",
-      "image": null, "side": "neutral"
+      "image": null,
+      "side": "neutral"
     },
     {
       "id": "two-days-fight",
-      "year_label_en": "~2770 BC", "year_label_fa": "~۲۷۷۰ پ.م",
-      "title_en": "Two Days of Combat", "title_fa": "دو روزِ نبرد",
+      "year_label_en": "~2770 BC",
+      "year_label_fa": "~۲۷۷۰ پ.م",
+      "title_en": "Two Days of Combat",
+      "title_fa": "دو روزِ نبرد",
       "body_en": "They fight. Rostam's arrows cannot penetrate Esfandiyar's brazen body. Esfandiyar's weapons wound Rostam. Rakhsh is also wounded. After two days, Rostam retreats to his stronghold, asking Esfandiyar to wait. Esfandiyar waits, which is the decision of a man who knows he has already won but cannot bring himself to press the advantage against someone he respects.",
       "body_fa": "می‌جنگند. تیرهای رستم نمی‌توانند از بدنِ روئینِ اسفندیار نفوذ کنند. سلاح‌های اسفندیار رستم را زخمی می‌کنند. بعد از دو روز، رستم به قلعه‌اش عقب‌نشینی می‌کند.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "simorgh-advises",
-      "year_label_en": "~2770 BC", "year_label_fa": "~۲۷۷۰ پ.م",
-      "title_en": "The Simorgh's Instruction", "title_fa": "دستورِ سیمرغ",
+      "year_label_en": "~2770 BC",
+      "year_label_fa": "~۲۷۷۰ پ.م",
+      "title_en": "The Simorgh's Instruction",
+      "title_fa": "دستورِ سیمرغ",
       "body_en": "Zal burns the Simorgh's feather — the same promise given when he descended from Alborz, preserved through everything. The Simorgh comes. She heals Rostam and Rakhsh. She tells Rostam: use the tamarisk wood by the river. Two-pronged arrow. Aim for the eyes. Rostam does not want to do this. She explains why he must.",
       "body_fa": "زال پرِ سیمرغ را می‌سوزاند. سیمرغ می‌آید. رستم و رخش را درمان می‌کند. می‌گوید: از چوبِ گز کنارِ رودخانه استفاده کن. تیرِ دو پیکانه. چشمان را نشانه بگیر. رستم نمی‌خواهد. سیمرغ توضیح می‌دهد چرا باید.",
-      "image": null, "side": "fated"
+      "image": null,
+      "side": "fated"
     },
     {
       "id": "esfandiyar-falls",
-      "year_label_en": "~2770 BC", "year_label_fa": "~۲۷۷۰ پ.م",
-      "title_en": "The Arrow", "title_fa": "تیر",
+      "year_label_en": "~2770 BC",
+      "year_label_fa": "~۲۷۷۰ پ.م",
+      "title_en": "The Arrow",
+      "title_fa": "تیر",
       "body_en": "The third day. Rostam returns carrying the tamarisk arrow. They fight. Rostam releases the arrow. It finds the eyes. Esfandiyar falls, mortally wounded. He dies slowly, blaming his father, absolving Rostam, cursing Goshtasp's name with his last breath.",
       "body_fa": "روزِ سوم. رستم با تیرِ گز برمی‌گردد. می‌جنگند. رستم تیر را رها می‌کند. چشمان را پیدا می‌کند. اسفندیار می‌افتد، زخمِ کاری. آهسته می‌میرد، پدرش را سرزنش می‌کند، رستم را تبرئه می‌کند، نامِ گشتاسپ را با آخرین نفسش نفرین می‌کند.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     }
   ],
   "scenes": [
     {
       "id": "the-negotiation",
       "order": 1,
-      "title_en": "Everything Except the Chains", "title_fa": "همه چیز جز زنجیر",
-      "era_en": "~2770 BC", "era_fa": "~۲۷۷۰ پ.م",
+      "title_en": "Everything Except the Chains",
+      "title_fa": "همه چیز جز زنجیر",
+      "era_en": "~2770 BC",
+      "era_fa": "~۲۷۷۰ پ.م",
       "body_en": "Rostam had been warned that Esfandiyar was coming. He received him as a guest — feasts, ceremony, the full measure of hospitality that Zabulestan could provide. He knew who Esfandiyar was. He had heard the reports of the Seven Labours, of the brazen body, of the wars against Arjasp. He treated him with the respect due to the world's second-greatest warrior. When the formal business came — the king's command, the chains — Rostam spoke plainly. He would travel to court. He would escort Esfandiyar with honour. He would swear any oath before any fire. He would acknowledge the king's authority in any form except the form of being bound. He gave reasons: a man of his age and service had never been chained; it would disgrace him in a way that could not be repaired; it was the one thing he could not do and remain himself. Esfandiyar heard every argument and agreed with most of them and said: the king's command was specific. He had no authority to modify it.",
       "body_fa": "رستم خبر داشت اسفندیار می‌آید. به عنوانِ مهمان پذیرایش کرد. وقتی کارِ رسمی آمد — فرمانِ شاه، زنجیر — رستم صادقانه صحبت کرد. به دربار سفر می‌کرد. اسفندیار را با افتخار همراهی می‌کرد. هر سوگندی یاد می‌کرد. هر شکلِ اعترافِ اقتدارِ شاه جز شکلِ بسته شدن. اسفندیار هر استدلال را شنید و با بیشترشان موافقت کرد و گفت: فرمانِ شاه مشخص بود. اختیاری برای تغییرش نداشت.",
       "atmosphere": "court",
       "image": "/season2/uploads/chapters/clash-rostam-esp.png",
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["two-immovable-things"]
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "two-immovable-things"
+      ]
     },
     {
       "id": "day-one-and-two",
       "order": 2,
-      "title_en": "Two Days Without a Result", "title_fa": "دو روز بدونِ نتیجه",
-      "era_en": "~2770 BC", "era_fa": "~۲۷۷۰ پ.م",
+      "title_en": "Two Days Without a Result",
+      "title_fa": "دو روز بدونِ نتیجه",
+      "era_en": "~2770 BC",
+      "era_fa": "~۲۷۷۰ پ.م",
       "body_en": "They fought on the plain below Zabulestan's walls. The first day established the problem precisely: Rostam's arrows hit Esfandiyar and left no mark. His brazen body turned every shaft. Esfandiyar's weapons, by contrast, cut Rostam — the first time in the chronicle that Rostam has bled in single combat from a human opponent. Rakhsh was also struck. The second day was a repetition of the first at greater intensity. Rostam fought with everything he knew and with every weapon he carried and made no progress against the brazen body. By the end of the second day he was wounded in multiple places and Rakhsh was weakened and the situation was clear: he could not win this fight without a weapon that could penetrate what no weapon could penetrate. He asked Esfandiyar to hold until morning. Esfandiyar agreed, which is the decision of a man who has won but cannot bring himself to press the advantage against someone he respects.",
       "body_fa": "در دشتِ زیرِ دیوارهای زابلستان جنگیدند. روزِ اول مشکل را دقیقاً ثابت کرد: تیرهای رستم اسفندیار را زدند و هیچ نشانه‌ای نگذاشتند. رویین‌تن هر پیکانی را رد کرد. سلاح‌های اسفندیار رستم را برید — اولین باری در شاهنامه که رستم در نبردِ تن‌به‌تن از حریفِ انسانی خونریزی کرد. روزِ دوم تکرارِ اول بود با شدتِ بیشتر. از اسفندیار خواست تا صبح صبر کند.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 90 },
-      "unlocks_codex": ["rostam-bleeds"]
+      "reward": {
+        "xp": 90
+      },
+      "unlocks_codex": [
+        "rostam-bleeds"
+      ]
     },
     {
       "id": "simorgh-comes",
       "order": 3,
-      "title_en": "The Simorgh Comes for the Last Time", "title_fa": "سیمرغ آخرین بار می‌آید",
-      "era_en": "~2770 BC", "era_fa": "~۲۷۷۰ پ.م",
+      "title_en": "The Simorgh Comes for the Last Time",
+      "title_fa": "سیمرغ آخرین بار می‌آید",
+      "era_en": "~2770 BC",
+      "era_fa": "~۲۷۷۰ پ.م",
       "body_en": "Zal burned the feather. The Simorgh had given him the feather on the day he descended from Alborz as a young man — she had said: burn it only in your greatest need. He had burned it once before, for Rudabeh's caesarean, when Rostam was being born. He burned it a second time now, for Rostam's survival. The Simorgh came. She healed Rostam and Rakhsh with her breath. She grieved — the Shahnameh records her grief directly, because she was the world's oldest witness and she understood what was about to happen and she had no way to prevent it. Then she told Rostam what he needed to know: the tamarisk tree by the river. Two-pronged arrow, aimed at the eyes — the only gap in the brazen protection. Rostam did not want to do it. He said: if I kill Esfandiyar, I will be cursed for it. The Simorgh said: you will be. She did not say it would be unjust. She said it was what the world required. She departed.",
       "body_fa": "زال پر را سوزاند. سیمرغ درمان کرد. غمگین بود — شاهنامه غمش را مستقیم ثبت می‌کند. بعد به رستم گفت. گزِ کنارِ رودخانه. تیرِ دو پیکانه. چشمان. رستم نمی‌خواست. گفت نفرین می‌شوم. سیمرغ گفت: خواهی شد. نگفت بی‌عدالت است. گفت آنچه دنیا می‌طلبد است.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["simorgh-grieves", "the-tamarisk-arrow"]
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "simorgh-grieves",
+        "the-tamarisk-arrow"
+      ]
     },
     {
       "id": "the-third-day",
       "order": 4,
-      "title_en": "The Third Day", "title_fa": "روزِ سوم",
-      "era_en": "~2770 BC", "era_fa": "~۲۷۷۰ پ.م",
+      "title_en": "The Third Day",
+      "title_fa": "روزِ سوم",
+      "era_en": "~2770 BC",
+      "era_fa": "~۲۷۷۰ پ.م",
       "body_en": "Rostam came back on the third day carrying the tamarisk arrow. He had made it himself — cut the shaft, fitted the double point — and every part of the making had been a decision he did not want to make. He returned not because he had stopped feeling the weight of what he was about to do but because there was no alternative that did not involve his own death or the permanent destruction of his name. They fought again. The tamarisk arrow was fired from Rostam's bow. It found Esfandiyar's eyes. Esfandiyar fell.",
       "body_fa": "رستم روزِ سوم با تیرِ گز برگشت. خودش ساخته بودش — شافت را برید، نوکِ دو پیکانه را نشاند — و هر بخش از ساختنش تصمیمی بود که نمی‌خواست بگیرد. برگشت نه چون احساسِ سنگینیِ کاری که می‌خواست بکند را متوقف کرده بود بلکه چون گزینه‌ای نبود. تیر رها شد. چشمانِ اسفندیار را پیدا کرد.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["the-decision-that-was-not-free"]
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "the-decision-that-was-not-free"
+      ]
     },
     {
       "id": "esfandiyar-dying",
       "order": 5,
-      "title_en": "What Esfandiyar Said Dying", "title_fa": "آنچه اسفندیار در حالِ مرگ گفت",
-      "era_en": "~2770 BC", "era_fa": "~۲۷۷۰ پ.م",
+      "title_en": "What Esfandiyar Said Dying",
+      "title_fa": "آنچه اسفندیار در حالِ مرگ گفت",
+      "era_en": "~2770 BC",
+      "era_fa": "~۲۷۷۰ پ.م",
       "body_en": "Esfandiyar did not die immediately. The Shahnameh gives him time — the time to speak, which is what the chronicle always gives its tragic figures: the last words. He said: do not blame yourself, Rostam. You did what you were forced to. The man who sent me here knowing what it would produce — that is the cause of my death. His name is Goshtasp. My father. He sent me on this mission because he was afraid of me and too cowardly to act on his fear directly, so he used me as the weapon against myself. Remember that when the grief comes. The grief for me is yours to have. The responsibility is his. He died with his head in Pashutan's arms — his brother, who had been with him through everything and could not stop it. Jamasp cursed Rostam for killing a righteous man, as he had promised. Rostam accepted the curse. He returned to Zabulestan. The Shahnameh pauses longer here than it has paused for any death since Sohrab.",
       "body_fa": "اسفندیار فوری نمرد. شاهنامه وقت به او می‌دهد. گفت: خودت را سرزنش نکن، رستم. مجبور بودی. مردی که مرا با دانستنِ نتیجه‌اش اینجا فرستاد — این علتِ مرگِ من است. اسمش گشتاسپ است. پدرم. از من می‌ترسید و خیلی بزدل بود تا مستقیم روی ترسش عمل کند. پس مرا سلاح علیهِ خودم کرد. جاماسپ رستم را نفرین کرد. رستم نفرین را پذیرفت.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 130 },
-      "unlocks_codex": ["the-absolution", "the-curse-accepted"]
+      "reward": {
+        "xp": 130
+      },
+      "unlocks_codex": [
+        "the-absolution",
+        "the-curse-accepted"
+      ]
     }
   ],
   "characters": [
     {
       "slug": "rostam-reluctant",
-      "name_en": "Rostam", "name_fa": "رستم",
+      "name_en": "Rostam",
+      "name_fa": "رستم",
       "role_en": "The Champion Who Did Not Want to Win",
       "role_fa": "قهرمانی که نمی‌خواست ببرد",
-      "rarity": "mythic", "level_required": 1,
+      "rarity": "mythic",
+      "level_required": 1,
       "lore_en": "Rostam in the Esfandiyar clash is not the triumphant champion of the Haft Khan or the grieving father of the Sohrab chapter. He is something the Shahnameh rarely shows: a hero who does not want to do what he must do, who understands the full moral weight of his action before he takes it, and who takes it anyway because the alternative is his own death or dishonour. He accepts the curse Jamasp pronounces. He does not argue. He knows what he has done, even if what he has done was forced.",
       "lore_fa": "رستم در برخوردِ اسفندیار قهرمانِ پیروزِ هفت‌خان نیست. چیزِ نادری که شاهنامه نشان می‌دهد: قهرمانی که نمی‌خواهد کاری که باید بکند را بکند، که وزنِ اخلاقیِ کاملِ عملش را قبل از انجام دادن می‌فهمد، و باز هم انجام می‌دهد.",
-      "image": null, "unlocked": true, "side": "light"
+      "image": null,
+      "unlocked": true,
+      "side": "light"
     },
     {
       "slug": "pashutan",
-      "name_en": "Pashutan", "name_fa": "پشوتن",
+      "name_en": "Pashutan",
+      "name_fa": "پشوتن",
       "role_en": "Esfandiyar's Brother · The Witness to the End",
       "role_fa": "برادرِ اسفندیار · شاهدِ پایان",
-      "rarity": "epic", "level_required": 2,
+      "rarity": "epic",
+      "level_required": 2,
       "lore_en": "Pashutan is Esfandiyar's younger brother who accompanied him throughout and could not stop what happened. He is the witness the Shahnameh needs for Esfandiyar's death — someone who loved the hero and was present for his final words, who carries the account back. The chronicle does not elaborate his grief, but his presence at the death-scene is the chronicle's gesture toward the human cost of events that have been set in motion by kings and prophecies and cannot be stopped.",
       "lore_fa": "پشوتن برادرِ کوچکترِ اسفندیار است که همراهش بود و نتوانست جلویِ آنچه اتفاق افتاد را بگیرد. شاهدِ مرگِ اسفندیار است.",
-      "image": null, "unlocked": false, "side": "light",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
       "unlock_via": "scene:esfandiyar-dying"
     }
   ],
@@ -140,7 +192,8 @@
       "kind_fa": "جایی که دو بزرگترین جنگجو ملاقات کردند",
       "summary_en": "The plain below Zabulestan's walls is where the single greatest combat in the Shahnameh takes place — not greatest in spectacle but in moral weight. Two men who have no personal quarrel, who respect each other, who are both acting from genuine principle, fight because a frightened old king has aimed them at each other. The place is unremarkable. The combat is unremarkable in its form. The content is the heaviest thing the Shahnameh has produced since Sohrab.",
       "summary_fa": "دشتِ زیرِ دیوارهای زابلستان جایی است که بزرگترین نبردِ شاهنامه رخ می‌دهد — نه بزرگترین از نظرِ تماشایی بلکه از نظرِ وزنِ اخلاقی. دو مرد که هیچ دعوای شخصی ندارند، از اصلِ واقعی عمل می‌کنند، می‌جنگند چون پیرمردِ ترسیده‌ای آن‌ها را به سمتِ هم نشانه رفته.",
-      "image": null, "unlocked": true
+      "image": null,
+      "unlocked": true
     }
   ],
   "battle": {
@@ -153,16 +206,29 @@
     "intro_fa": "تیرِ گز ساخته شده. برای مواجهه باید هر دو طرفِ این نبرد را نگه داری — ضرورتِ رستم و صداقتِ اسفندیار — بدون حل کردنِ تنشِ میانشان.",
     "requirements": [
       {
-        "id": "level", "kind": "level", "target": 92,
-        "label_en": "Reach LVL 92", "label_fa": "رسیدن به سطحِ ۹۲", "label_tg": "Расидан ба сатҳи 92",
-        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنند.", "hint_tg": "Зарба занед."
+        "id": "level",
+        "kind": "level",
+        "target": 92,
+        "label_en": "Reach LVL 92",
+        "label_fa": "رسیدن به سطحِ ۹۲",
+        "label_tg": "Расидан ба сатҳи 92",
+        "hint_en": "Tap, complete quests, and claim daily rewards.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنند.",
+        "hint_tg": "Зарба занед."
       },
       {
-        "id": "quiz", "kind": "quiz", "target": "clash-rostam-esp",
-        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
-        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "clash-rostam-esp",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
       }
-    ]
+    ],
+    "intro_tg": "Тири газ сохта шуд. Барои рӯбарӯ шудан бо ин дарвоза бояд ҳар ду тарафи ин набардро нигоҳ дорӣ — зарурати Рустам ва растгории Исфандиёр — бе ҳалли кашмакаши байниашон."
   },
   "codex": [
     {
@@ -172,7 +238,8 @@
       "title_fa": "دو چیزِ تکان‌ناپذیر",
       "summary_en": "The negotiation fails not because either man is unreasonable but because both are immovable on the one point that matters. Rostam's honour cannot survive being chained: for a man of his age, service, and standing, chains are erasure. Esfandiyar's obedience cannot survive modification of the king's command: for a man of his faith and righteousness, changing the terms would be the kind of lie that corrupts everything it touches. Neither man is wrong. Both hold to the thing they are. The clash is inevitable not because of personal enmity but because two things that cannot give way are aimed at each other.",
       "summary_fa": "مذاکره شکست می‌خورد نه چون هیچ‌کدام بی‌معقول است بلکه چون هر دو روی یک نقطه‌ی مهم تکان‌ناپذیرند. شرافتِ رستم زنجیر را تحمل نمی‌کند. اطاعتِ اسفندیار تغییرِ فرمانِ شاه را تحمل نمی‌کند. هیچ‌کدام اشتباه نیستند.",
-      "image": null, "unlock_via": "scene:the-negotiation"
+      "image": null,
+      "unlock_via": "scene:the-negotiation"
     },
     {
       "id": "rostam-bleeds",
@@ -181,7 +248,8 @@
       "title_fa": "رستم خون می‌دهد",
       "summary_en": "Rostam has bled before — from demons, from the trials of the Seven Labours, from the accumulated wear of centuries of battle. But he has not bled in single combat from a human opponent. Esfandiyar's weapons cut him. Rakhsh is wounded. This is the Shahnameh's signal that Esfandiyar is not a standard challenge to be overcome: he is Rostam's equal in a way that nothing else in the chronicle has been. The two days of inconclusive combat — Rostam's arrows making no mark, Esfandiyar's weapons drawing blood — are the precise statement of a symmetry that can only be broken by something outside normal combat.",
       "summary_fa": "رستم قبلاً هم خونریزی کرده. اما در نبردِ تن‌به‌تن از حریفِ انسانی خونریزی نکرده. سلاح‌های اسفندیار می‌برند. این سیگنالِ شاهنامه است که اسفندیار چالشِ استانداردی نیست.",
-      "image": null, "unlock_via": "scene:day-one-and-two"
+      "image": null,
+      "unlock_via": "scene:day-one-and-two"
     },
     {
       "id": "simorgh-grieves",
@@ -190,7 +258,8 @@
       "title_fa": "اندوهِ سیمرغ",
       "summary_en": "The Simorgh grieves for what is coming. She is the world's oldest witness — she has watched three destructions of the world from her nest on Alborz — and she cannot prevent this one. She tells Rostam what he must do, but she does not do it cheerfully. She mourns Esfandiyar before he dies, because she has watched enough history to know that a righteous man killed by necessity is the most wasteful form of loss. The chronicle's oldest figure weeping at the chronicle's penultimate tragedy gives it a weight that does not lift afterward.",
       "summary_fa": "سیمرغ برای آنچه می‌آید غم دارد. قدیمی‌ترین شاهدِ دنیاست و نمی‌تواند این یکی را جلوگیری کند. به رستم می‌گوید چه باید بکند، اما با شادی نمی‌گوید. قبل از مرگِ اسفندیار برایش عزا می‌گیرد.",
-      "image": null, "unlock_via": "scene:simorgh-comes"
+      "image": null,
+      "unlock_via": "scene:simorgh-comes"
     },
     {
       "id": "the-tamarisk-arrow",
@@ -199,7 +268,8 @@
       "title_fa": "تیرِ گز",
       "summary_en": "The tamarisk wood from which Rostam makes his fatal arrow has a specific quality in the Shahnameh's world: it is sacred, grown by the river, neither wholly of the material world nor wholly of the divine. The double-pronged point is designed to spread at impact — the specific shape required to damage the eyes rather than simply pierce them. Rostam makes the arrow himself. Every step of its construction is a choice he is making with full knowledge. The Shahnameh's most devastating weapon is not a divine gift — it is something Rostam builds with his own hands from a tree the Simorgh identified.",
       "summary_fa": "چوبِ گزی که رستم تیرِ کشنده‌اش را از آن می‌سازد کیفیتِ خاصی دارد. نوکِ دو پیکانه برای پخش شدن در ضربه طراحی شده. رستم تیر را خودش می‌سازد. هر قدمِ ساختنش انتخابی است که با آگاهیِ کامل می‌گیرد.",
-      "image": null, "unlock_via": "scene:simorgh-comes"
+      "image": null,
+      "unlock_via": "scene:simorgh-comes"
     },
     {
       "id": "the-decision-that-was-not-free",
@@ -208,7 +278,8 @@
       "title_fa": "تصمیمی که آزاد نبود",
       "summary_en": "Rostam makes the tamarisk arrow and returns to fight Esfandiyar. The Shahnameh presents this return as the act of a man who has made a decision he was not free to make differently — the same structure it used for Esfandiyar coming to Zabulestan knowing it would kill him. Both men are trapped: Esfandiyar by his obedience, Rostam by his honour and survival. The tragedy works not because either man made a bad choice but because the structure they were in gave them no good choice to make. Goshtasp built the trap. They are the ones who had to walk into it.",
       "summary_fa": "رستم تیرِ گز را می‌سازد و به نبرد برمی‌گردد. شاهنامه این بازگشت را به عنوانِ عملِ مردی ارائه می‌دهد که تصمیمی گرفته که آزاد نبوده متفاوت بگیرد — همان ساختاری که برای اسفندیاری که می‌دانست خواهد کشت به زابلستان آمد استفاده کرد.",
-      "image": null, "unlock_via": "scene:the-third-day"
+      "image": null,
+      "unlock_via": "scene:the-third-day"
     },
     {
       "id": "the-absolution",
@@ -217,7 +288,8 @@
       "title_fa": "تبرئه",
       "summary_en": "Esfandiyar absolves Rostam with his dying breath. This is not forgiveness in the sentimental sense — it is the Shahnameh's precise moral accounting, delivered by the only person in a position to deliver it. Esfandiyar knows who killed him, and it was not Rostam. Rostam was the instrument. Goshtasp was the cause. The dying man names both, separates them, and places the responsibility where it belongs. This is the Shahnameh at its most exact: the person who understands the tragedy most clearly is the one at its center, and his final words are an act of moral precision rather than sentiment.",
       "summary_fa": "اسفندیار رستم را با آخرین نفسش تبرئه می‌کند. این بخشش به معنایِ احساساتی نیست — حسابداریِ دقیقِ اخلاقیِ شاهنامه است. اسفندیار می‌داند چه کسی او را کشت، و رستم نبود. رستم ابزار بود. گشتاسپ علت بود. مردِ در حالِ مرگ هر دو را نام می‌برد، جدا می‌کند، مسئولیت را جایی می‌گذارد که متعلق است.",
-      "image": null, "unlock_via": "scene:esfandiyar-dying"
+      "image": null,
+      "unlock_via": "scene:esfandiyar-dying"
     },
     {
       "id": "the-curse-accepted",
@@ -226,7 +298,8 @@
       "title_fa": "نفرینِ پذیرفته‌شده",
       "summary_en": "Jamasp curses Rostam for killing a righteous man. Rostam accepts the curse without argument. This acceptance is the Shahnameh's final statement about moral responsibility in impossible situations: Rostam knows what he did, even if he was forced to do it. The curse is unjust in one sense — Goshtasp is the real cause — but in another sense it is accurate: Rostam made the arrow, aimed it, released it. The Shahnameh does not resolve this. It presents Rostam accepting the weight of the act he performed, regardless of who manufactured the situation that made the act necessary.",
       "summary_fa": "جاماسپ رستم را برای کشتنِ مردِ صادق نفرین می‌کند. رستم نفرین را بدونِ مجادله می‌پذیرد. این پذیرش آخرین اظهاریه‌ی شاهنامه درباره‌ی مسئولیتِ اخلاقی در شرایطِ غیرممکن است.",
-      "image": null, "unlock_via": "scene:esfandiyar-dying"
+      "image": null,
+      "unlock_via": "scene:esfandiyar-dying"
     }
   ]
 }

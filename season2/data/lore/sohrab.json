@@ -15,139 +15,197 @@
   "timeline": [
     {
       "id": "samangan-night",
-      "year_label_en": "~2920 BC", "year_label_fa": "~۲۹۲۰ پ.م",
-      "title_en": "The Night in Samangan", "title_fa": "شبِ سمنگان",
+      "year_label_en": "~2920 BC",
+      "year_label_fa": "~۲۹۲۰ پ.م",
+      "title_en": "The Night in Samangan",
+      "title_fa": "شبِ سمنگان",
       "body_en": "Rostam stays one night in Samangan between missions. Tahmineh comes to his chamber. She wants a son from him. He gives her his bracelet and leaves before dawn.",
       "body_fa": "رستم یک شب در سمنگان می‌ماند. تهمینه به اتاقش می‌آید. پسری از او می‌خواهد. دستبندش را می‌دهد و پیش از سپیده‌دم می‌رود.",
-      "image": null, "side": "neutral"
+      "image": null,
+      "side": "neutral"
     },
     {
       "id": "sohrab-born",
-      "year_label_en": "~2919 BC", "year_label_fa": "~۲۹۱۹ پ.م",
-      "title_en": "Sohrab Is Born", "title_fa": "سهراب متولد می‌شود",
+      "year_label_en": "~2919 BC",
+      "year_label_fa": "~۲۹۱۹ پ.م",
+      "title_en": "Sohrab Is Born",
+      "title_fa": "سهراب متولد می‌شود",
       "body_en": "Sohrab grows at three times the normal rate. At twelve he asks who his father is. Tahmineh tells him. He decides immediately to find Rostam and together reshape Iran and Turan.",
       "body_fa": "سهراب با سه برابرِ سرعتِ معمول رشد می‌کند. دوازده‌ساله از مادرش می‌پرسد پدرش کیست. تهمینه می‌گوید. فوراً تصمیم می‌گیرد رستم را پیدا کند.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "two-days-combat",
-      "year_label_en": "~2907 BC", "year_label_fa": "~۲۹۰۷ پ.م",
-      "title_en": "Two Days of Combat", "title_fa": "دو روزِ نبرد",
+      "year_label_en": "~2907 BC",
+      "year_label_fa": "~۲۹۰۷ پ.م",
+      "title_en": "Two Days of Combat",
+      "title_fa": "دو روزِ نبرد",
       "body_en": "Father and son fight in single combat over two days. Day one: Sohrab wins and releases the old warrior — something in his face. Day two: Rostam uses a trick and drives his sword in.",
       "body_fa": "پدر و پسر دو روز می‌جنگند. روزِ اول: سهراب می‌برد و مرد را آزاد می‌کند — چیزی در چهره‌اش. روزِ دوم: رستم با حیله‌ای شمشیر را وارد می‌کند.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "the-bracelet-revealed",
-      "year_label_en": "~2907 BC", "year_label_fa": "~۲۹۰۷ پ.م",
-      "title_en": "The Bracelet", "title_fa": "دستبند",
+      "year_label_en": "~2907 BC",
+      "year_label_fa": "~۲۹۰۷ پ.م",
+      "title_en": "The Bracelet",
+      "title_fa": "دستبند",
       "body_en": "Sohrab speaks from the ground: 'My father Rostam will find you.' Rostam's heart understands before his mind does. He asks to see the arm. The bracelet is there. He has known his son for exactly as long as it takes to understand he just killed him.",
       "body_fa": "سهراب از زمین می‌گوید: «پدرم رستم تو را پیدا می‌کند.» رستم می‌خواهد بازو را ببیند. دستبند آنجاست. به اندازه‌ی دانستنِ اینکه پسرش را کشته، فرزندش را شناخته.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "kavus-refusal",
-      "year_label_en": "~2907 BC", "year_label_fa": "~۲۹۰۷ پ.م",
-      "title_en": "The Medicine Not Sent", "title_fa": "داروی نفرستاده",
+      "year_label_en": "~2907 BC",
+      "year_label_fa": "~۲۹۰۷ پ.م",
+      "title_en": "The Medicine Not Sent",
+      "title_fa": "داروی نفرستاده",
       "body_en": "Rostam begs Kay Kavus on his knees for the medicine that heals any wound. Kay Kavus performs the political calculation and refuses. Sohrab dies with his head in his father's arms.",
       "body_fa": "رستم زانو می‌زند و از کی‌کاووس می‌خواهد داروی شفادهنده را بفرستد. کی‌کاووس محاسبه‌ی سیاسی می‌کند و رد می‌کند. سهراب با سر در آغوشِ پدرش می‌میرد.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     }
   ],
   "scenes": [
     {
       "id": "tahmineh",
       "order": 1,
-      "title_en": "Tahmineh", "title_fa": "تهمینه",
-      "era_en": "~2920 BC", "era_fa": "~۲۹۲۰ پ.م",
+      "title_en": "Tahmineh",
+      "title_fa": "تهمینه",
+      "era_en": "~2920 BC",
+      "era_fa": "~۲۹۲۰ پ.م",
       "body_en": "Rostam came to Samangan in the evening, between missions, and was given quarters and hospitality. In the middle of the night Tahmineh came to his room. She did not pretend this was accidental. She had heard of Rostam for years — everyone had heard of Rostam — and she wanted a son from him. She said this directly: 'I want your child. I ask nothing else from you.' Rostam was not a man who misunderstood directness. He accepted. In the morning, before the court woke, he gave her his arm bracelet. 'If the child is a daughter, put it in her hair for adornment,' he told her. 'If a son, bind it to his arm so his father can recognize him.' He left. He did not know, riding out of Samangan, that the bracelet would be the most important object in the Shahnameh.",
       "body_fa": "رستم در شب به سمنگان آمد و اتاق و مهمان‌نوازی داده شد. نیمه‌شب تهمینه به اتاقش آمد. وانمود نکرد این تصادفی است. سال‌ها از رستم شنیده بود — همه از رستم شنیده بودند — و پسری از او می‌خواست. این را مستقیماً گفت: «فرزندت را می‌خواهم. چیزِ دیگری از تو نمی‌خواهم.» رستم مردی نبود که درایت را سوءتفاهم کند. پذیرفت.",
       "atmosphere": "warm",
       "image": "/season2/uploads/chapters/sohrab.png",
-      "reward": { "xp": 60 },
-      "unlocks_codex": ["tahmineh-purpose"]
+      "reward": {
+        "xp": 60
+      },
+      "unlocks_codex": [
+        "tahmineh-purpose"
+      ]
     },
     {
       "id": "sohrab-grows",
       "order": 2,
-      "title_en": "The Boy Who Grew Too Fast", "title_fa": "پسری که خیلی سریع بزرگ شد",
-      "era_en": "~2919–2907 BC", "era_fa": "~۲۹۱۹–۲۹۰۷ پ.م",
+      "title_en": "The Boy Who Grew Too Fast",
+      "title_fa": "پسری که خیلی سریع بزرگ شد",
+      "era_en": "~2919–2907 BC",
+      "era_fa": "~۲۹۱۹–۲۹۰۷ پ.م",
       "body_en": "Sohrab grew at three times the rate of other children. By the time he was twelve he was already taller than most men and stronger than any of them in Samangan's court. He had never questioned who his father was — Tahmineh had given him a story about his father being somewhere far away, for reasons, until he was ready. At twelve he was ready. He asked. She told him. He listened to the name 'Rostam' the way a person listens when they hear a word that reorganizes everything they understand about themselves. He sat with it for a moment. Then he decided.",
       "body_fa": "سهراب با سه برابرِ سرعتِ بچه‌های دیگر رشد کرد. دوازده‌ساله از بیشترِ مردان قدبلندتر و از همه‌شان در دربارِ سمنگان قوی‌تر بود. دوازده‌ساله که شد، پرسید. تهمینه گفت. به نامِ «رستم» گوش داد آن‌طوری که یک نفر گوش می‌دهد وقتی کلمه‌ای می‌شنود که همه چیزِ فهمیده‌اش از خودش را از نو مرتب می‌کند.",
       "atmosphere": "cold",
       "image": null,
-      "reward": { "xp": 55 },
-      "unlocks_codex": ["sohrab-decision"]
+      "reward": {
+        "xp": 55
+      },
+      "unlocks_codex": [
+        "sohrab-decision"
+      ]
     },
     {
       "id": "day-one",
       "order": 3,
-      "title_en": "Day One — Sohrab Wins", "title_fa": "روزِ اول — سهراب می‌برد",
-      "era_en": "~2907 BC", "era_fa": "~۲۹۰۷ پ.م",
+      "title_en": "Day One — Sohrab Wins",
+      "title_fa": "روزِ اول — سهراب می‌برد",
+      "era_en": "~2907 BC",
+      "era_fa": "~۲۹۰۷ پ.م",
       "body_en": "Sohrab challenged Iran's champion to single combat. Rostam came out without declaring his name — he had heard too much about this young warrior and chose to protect himself with anonymity. They fought and Sohrab, who was large even by Rostam's measure, threw the old man to the ground and held his sword at his throat. Something made him stop. He looked at the old man's face — not the warrior's face but something beneath it — and there was a word forming in his mind that he could not complete. He let him live. The Shahnameh notes that Sohrab gave a reason that was a custom: the first throw does not count. He had other reasons he did not name.",
       "body_fa": "سهراب قهرمانِ ایران را به نبردِ تن‌به‌تن طلبید. رستم بدون اعلامِ نامش بیرون آمد. جنگیدند و سهراب، که حتی با معیارِ رستم هم بزرگ بود، پیرمرد را به زمین انداخت و شمشیر را به گلویش گرفت. چیزی او را متوقف کرد. به چهره‌ی پیرمرد نگاه کرد — نه چهره‌ی جنگجو بلکه چیزی زیرِ آن — و کلمه‌ای در ذهنش شکل می‌گرفت که نمی‌توانست کاملش کند.",
       "atmosphere": "fated",
       "image": null,
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["face-he-recognized"]
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "face-he-recognized"
+      ]
     },
     {
       "id": "day-two",
       "order": 4,
-      "title_en": "Day Two — The Sword Enters", "title_fa": "روزِ دوم — شمشیر وارد می‌شود",
-      "era_en": "~2907 BC", "era_fa": "~۲۹۰۷ پ.م",
+      "title_en": "Day Two — The Sword Enters",
+      "title_fa": "روزِ دوم — شمشیر وارد می‌شود",
+      "era_en": "~2907 BC",
+      "era_fa": "~۲۹۰۷ پ.م",
       "body_en": "The second day Rostam used the old custom — the trick about a second attempt. He pinned Sohrab and drove his sword into his side before Sohrab could invoke the rule again. Sohrab fell. He did not die immediately. He spoke from the ground, in that direct way he had always spoken, the way Tahmineh had spoken in the dark room in Samangan: 'This means nothing. My father Rostam will find you. When he learns what you did to his son, the world will not be large enough for you to hide in.' Rostam's heart understood the word 'son' before his mind did.",
       "body_fa": "روزِ دوم رستم از رسمِ قدیم استفاده کرد — حیله‌ی دوباره. سهراب را پین کرد و شمشیر را در پهلویش فرو کرد. سهراب افتاد. فوری نمرد. از زمین گفت، به همان شکلِ مستقیمی که همیشه گفته بود: «این چیزی نیست. پدرم رستم تو را پیدا می‌کند.» قلبِ رستم کلمه‌ی «پسر» را پیش از ذهنش فهمید.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 100 },
-      "unlocks_codex": ["the-trick", "the-bracelet-moment"]
+      "reward": {
+        "xp": 100
+      },
+      "unlocks_codex": [
+        "the-trick",
+        "the-bracelet-moment"
+      ]
     },
     {
       "id": "the-dying",
       "order": 5,
-      "title_en": "The Dying", "title_fa": "مردن",
-      "era_en": "~2907 BC", "era_fa": "~۲۹۰۷ پ.م",
+      "title_en": "The Dying",
+      "title_fa": "مردن",
+      "era_en": "~2907 BC",
+      "era_fa": "~۲۹۰۷ پ.م",
       "body_en": "Rostam asked to see the arm. The bracelet was there — the one he had given Tahmineh in the dark room in Samangan, decades ago, 'bind it to his arm so his father can recognize him.' He had given his son the means of recognition and then met him in disguise and killed him before recognition could happen. Rostam begged Kay Kavus for the medicine that heals any wound. On his knees. For the first time in the chronicle, Rostam begged. Kay Kavus did his calculation and refused. Sohrab died with his head in Rostam's arms as the sun set between the two armies. The Shahnameh says nothing to comfort the reader. It records the death, exactly as it happened, and then the chronicle continues, because the chronicle has never stopped for anything and it will not stop now.",
       "body_fa": "رستم خواست بازو را ببیند. دستبند آنجا بود — همانی که دهه‌ها پیش در اتاقِ تاریکِ سمنگان به تهمینه داده بود. رستم از کی‌کاووس داروی شفادهنده را خواست. با زانوزدن. برای اولین بار در شاهنامه، رستم التماس کرد. کی‌کاووس محاسبه کرد و رد کرد. سهراب با سر در آغوشِ رستم مُرد. شاهنامه برای تسلی چیزی نمی‌گوید.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 130 },
-      "unlocks_codex": ["what-rostam-feels", "the-chronicle-continues"]
+      "reward": {
+        "xp": 130
+      },
+      "unlocks_codex": [
+        "what-rostam-feels",
+        "the-chronicle-continues"
+      ]
     }
   ],
   "characters": [
     {
       "slug": "sohrab",
-      "name_en": "Sohrab", "name_fa": "سهراب",
+      "name_en": "Sohrab",
+      "name_fa": "سهراب",
       "role_en": "Son of Rostam · The Searching Son · The Shahnameh's Greatest Tragedy",
       "role_fa": "پسرِ رستم · پسرِ جویا · بزرگترین تراژدیِ شاهنامه",
-      "rarity": "legendary", "level_required": 1,
+      "rarity": "legendary",
+      "level_required": 1,
       "lore_en": "Sohrab is twelve years old when the story begins and he is already extraordinary. He does not pursue his father from longing — he pursues him from a plan. He wants to find Rostam and together rule Iran and Turan with justice. This is not a boy's dream; it is a political programme. He is, the Shahnameh implies, exactly what the chronicle needed. Which is why the chronicle destroys him.",
       "lore_fa": "سهراب دوازده‌ساله است وقتی داستان شروع می‌شود و از پیش استثنایی است. پدرش را از دلتنگی دنبال نمی‌کند — از یک برنامه. می‌خواهد رستم را پیدا کند و با هم ایران و توران را با عدالت اداره کنند. این آرزوی بچگانه نیست؛ برنامه‌ی سیاسی است.",
       "image": "/season2/uploads/chapters/sohrab.png",
-      "unlocked": true, "side": "light"
+      "unlocked": true,
+      "side": "light"
     },
     {
       "slug": "tahmineh",
-      "name_en": "Tahmineh", "name_fa": "تهمینه",
+      "name_en": "Tahmineh",
+      "name_fa": "تهمینه",
       "role_en": "Princess of Samangan · Mother of Sohrab · The Woman Who Asked Directly",
       "role_fa": "شاهدختِ سمنگان · مادرِ سهراب · زنی که مستقیم گفت",
-      "rarity": "epic", "level_required": 3,
+      "rarity": "epic",
+      "level_required": 3,
       "lore_en": "Tahmineh is one of the Shahnameh's most precisely drawn minor figures. She wants a child from Rostam and says so directly without pretense. She raises Sohrab alone, telling him an incomplete truth about his father for twelve years, and then telling him the complete truth when he is ready. The tragedy is not Tahmineh's fault — she did what she could with what she had. The tragedy is the structure of the world she was in.",
       "lore_fa": "تهمینه یکی از دقیق‌ترین چهره‌های فرعیِ شاهنامه است. پسری از رستم می‌خواهد و این را مستقیم و بدون تظاهر می‌گوید. سهراب را تنها بزرگ می‌کند. تراژدی تقصیرِ تهمینه نیست — آنچه می‌توانست با آنچه داشت کرد.",
-      "image": null, "unlocked": false, "side": "neutral",
+      "image": null,
+      "unlocked": false,
+      "side": "neutral",
       "unlock_via": "scene:tahmineh"
     },
     {
       "slug": "rostam-father",
-      "name_en": "Rostam", "name_fa": "رستم",
+      "name_en": "Rostam",
+      "name_fa": "رستم",
       "role_en": "The Father Who Did Not Know · Champion Who Failed the One Test That Mattered",
       "role_fa": "پدری که نمی‌دانست · قهرمانی که در تنها آزمونی که اهمیت داشت شکست خورد",
-      "rarity": "mythic", "level_required": 1,
+      "rarity": "mythic",
+      "level_required": 1,
       "lore_en": "Rostam chose not to reveal his name on the battlefield. This is presented as tactical caution — he had heard too much about the young warrior's power. It is also the Shahnameh's most precise tragic irony: Rostam took a precaution to protect himself and that precaution killed his son. He begged Kay Kavus on his knees for the medicine. Kay Kavus refused. Rostam held Sohrab as he died. The chronicle does not tell us what Rostam felt. It does not need to.",
       "lore_fa": "رستم انتخاب کرد نامش را در میدانِ نبرد آشکار نکند. این به‌عنوانِ احتیاطِ تاکتیکی ارائه می‌شود. همچنین دقیق‌ترین طنازِ تراژیکِ شاهنامه است: رستم احتیاطی کرد تا خود را محافظت کند و آن احتیاط پسرش را کشت.",
-      "image": null, "unlocked": false, "side": "light",
+      "image": null,
+      "unlocked": false,
+      "side": "light",
       "unlock_via": "scene:day-two"
     }
   ],
@@ -160,7 +218,8 @@
       "kind_fa": "جایی که داستانِ سهراب آغاز می‌شود",
       "summary_en": "Samangan is a city between missions — a stopping point, a night's rest for Rostam on his way somewhere else. He stayed one night. He gave a bracelet to a woman who asked directly for his child. He left before dawn. Everything that follows in the Sohrab chapter flows from that one night in a city the Shahnameh does not describe in any other detail.",
       "summary_fa": "سمنگان شهری میانِ مأموریت‌هاست — یک توقفگاه، استراحتِ یک شب برای رستم در راهِ جای دیگر. یک شب ماند. دستبندی به زنی داد که مستقیم فرزندش را خواست.",
-      "image": null, "unlocked": true
+      "image": null,
+      "unlocked": true
     },
     {
       "slug": "white-castle-battlefield",
@@ -170,7 +229,9 @@
       "kind_fa": "میدانِ نبردِ بزرگترین تراژدی",
       "summary_en": "The White Castle at the Iranian frontier is where Sohrab's Turanian army and Iran's forces met. It is where two days of single combat between father and son took place, neither knowing who the other was. It is where Sohrab died. The Shahnameh does not give it an elaborate description — the events that happened there do not require architectural detail.",
       "summary_fa": "دژِ سپید در مرزِ ایران جایی است که سپاهِ توران و نیروهای ایران با هم روبرو شدند. جایی است که دو روز نبردِ تن‌به‌تن میانِ پدر و پسر — هیچ‌کدام بدونِ دانستنِ هویتِ دیگری — رخ داد.",
-      "image": null, "unlocked": false, "unlock_via": "scene:day-one"
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:day-one"
     }
   ],
   "battle": {
@@ -182,16 +243,29 @@
     "intro_fa": "سپاهِ سهراب نیروهای ایران را درهم می‌شکند. برای مواجهه باید بفهمی نه فقط آنچه در دو روزِ نبرد اتفاق افتاد بلکه چرا — چرا رستم نامش را پنهان کرد، چه چیزی سهراب در چهره‌ی پیرمرد تشخیص داد، و چه چیزی رفضِ کی‌کاووس نشان می‌دهد.",
     "requirements": [
       {
-        "id": "level", "kind": "level", "target": 45,
-        "label_en": "Reach LVL 45", "label_fa": "رسیدن به سطحِ ۴۵", "label_tg": "Расидан ба сатҳи 45",
-        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+        "id": "level",
+        "kind": "level",
+        "target": 45,
+        "label_en": "Reach LVL 45",
+        "label_fa": "رسیدن به سطحِ ۴۵",
+        "label_tg": "Расидан ба сатҳи 45",
+        "hint_en": "Tap, complete quests, and claim daily rewards.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
+        "hint_tg": "Зарба занед."
       },
       {
-        "id": "quiz", "kind": "quiz", "target": "sohrab",
-        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
-        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "sohrab",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
       }
-    ]
+    ],
+    "intro_tg": "Сипоҳи Суҳроб нирӯҳои Эронро шикаст медиҳад. Барои рӯбарӯ шудан бо ин дарвоза бояд на танҳо бифаҳмӣ дар ду рӯзи набард чӣ рӯй дод балки чаро — чаро Рустам номашро пинҳон кард, Суҳроб дар чеҳраи пирмард чӣ шинохт ва рад кардани доруи Кайковус дар бораи навъи шоҳ буданаш чӣ фош мекунад."
   },
   "codex": [
     {
@@ -201,7 +275,8 @@
       "title_fa": "تهمینه — هدف پیش از احساس",
       "summary_en": "Tahmineh does not come to Rostam's room from romance or longing — she comes from a clear calculation: a child of Rostam would be extraordinary, and she wants that child. She says this directly. Rostam respects the directness. The Shahnameh presents this transaction without judgment; it simply records it. What Tahmineh does not account for is the scale of the tragedy she is setting in motion — but then, neither does anyone else in the chronicle.",
       "summary_fa": "تهمینه از رمانتیک یا دلتنگی به اتاقِ رستم نمی‌آید — از محاسبه‌ای روشن می‌آید. فرزندِ رستم استثنایی خواهد بود و آن فرزند را می‌خواهد. این را مستقیم می‌گوید.",
-      "image": null, "unlock_via": "scene:tahmineh"
+      "image": null,
+      "unlock_via": "scene:tahmineh"
     },
     {
       "id": "sohrab-decision",
@@ -210,7 +285,8 @@
       "title_fa": "تصمیمِ سهراب — در دوازده‌سالگی",
       "summary_en": "When Sohrab hears that his father is Rostam, he does not weep or dream of reunion — he makes a strategic plan. He will find Rostam. Together they will overthrow both Kay Kavus and Afrasiab and rule Iran and Turan with father-and-son justice. This is a twelve-year-old's vision, but the Shahnameh treats it seriously because the boy is serious. The tragedy is not that Sohrab was foolish. The tragedy is that he was right — and the world destroyed him for it anyway.",
       "summary_fa": "وقتی سهراب می‌شنود پدرش رستم است، گریه نمی‌کند یا آرزوی وصال نمی‌کند — برنامه‌ی استراتژیک می‌ریزد. رستم را پیدا خواهد کرد. با هم ایران و توران را با عدالتِ پدر-پسری اداره خواهند کرد. دوازده‌ساله این را می‌گوید. شاهنامه جدی می‌گیرد چون پسر جدی است.",
-      "image": null, "unlock_via": "scene:sohrab-grows"
+      "image": null,
+      "unlock_via": "scene:sohrab-grows"
     },
     {
       "id": "face-he-recognized",
@@ -219,7 +295,8 @@
       "title_fa": "چهره‌ای که سهراب شناخت",
       "summary_en": "Sohrab pins Rostam to the ground on the first day and looks at his face and does not finish the killing. The Shahnameh notes that he felt something — a word forming in his mind that he could not complete. He did not know his father's face; he had never seen it. But recognition is not always visual. He let Rostam live because he could not complete the word that was forming. The next day Rostam did not give him the same mercy.",
       "summary_fa": "سهراب روزِ اول رستم را به زمین می‌اندازد و به چهره‌اش نگاه می‌کند و کشتن را به پایان نمی‌رساند. شاهنامه یادداشت می‌کند که چیزی احساس کرد — کلمه‌ای که در ذهنش شکل می‌گرفت و نمی‌توانست کاملش کند.",
-      "image": null, "unlock_via": "scene:day-one"
+      "image": null,
+      "unlock_via": "scene:day-one"
     },
     {
       "id": "the-trick",
@@ -228,7 +305,8 @@
       "title_fa": "حیله",
       "summary_en": "The custom Rostam invokes on the second day — that the first throw does not count, and the fighter may attempt again — is a real rule in the Shahnameh's combat traditions. Rostam uses it to get a second chance. Sohrab let him live the previous day from a feeling he could not name. Rostam uses a legal technicality. The Shahnameh does not comment on this asymmetry. It records it.",
       "summary_fa": "رسمی که رستم در روزِ دوم به کار می‌برد — که اولین پرتاب حساب نمی‌شود و جنگجو می‌تواند دوباره امتحان کند — قاعده‌ی واقعیِ سنتِ نبردِ شاهنامه است. رستم از آن برای فرصتِ دوم استفاده می‌کند.",
-      "image": null, "unlock_via": "scene:day-two"
+      "image": null,
+      "unlock_via": "scene:day-two"
     },
     {
       "id": "the-bracelet-moment",
@@ -237,7 +315,8 @@
       "title_fa": "دستبند — شناختِ دیر",
       "summary_en": "The bracelet Rostam gave Tahmineh in Samangan was the means of recognition he himself put in place: 'bind it to his arm so his father can recognize him.' He met his son on the battlefield, fought him for two days, and killed him — and the recognition arrived exactly when it was too late to matter. The bracelet is the Shahnameh's most precise object of tragic irony.",
       "summary_fa": "دستبندی که رستم به تهمینه داد ابزارِ شناختی بود که خودش فراهم کرده بود: «به بازویش ببند تا پدرش بشناسد.» پسرش را در میدان ملاقات کرد، دو روز با او جنگید، کشتش — و شناخت دقیقاً وقتی رسید که دیگر فرقی نمی‌کرد.",
-      "image": null, "unlock_via": "scene:day-two"
+      "image": null,
+      "unlock_via": "scene:day-two"
     },
     {
       "id": "what-rostam-feels",
@@ -246,7 +325,8 @@
       "title_fa": "آنچه شاهنامه به ما نمی‌گوید",
       "summary_en": "The Shahnameh does not describe what Rostam felt holding his dying son. It describes what he did: he held him. It describes what Sohrab said in his final moments, which is: he understood, and he forgave, and he was not afraid. It describes the sun setting. It moves on. Ferdowsi's restraint in this scene is absolute — and that restraint is the measure of how large the grief is. Some things cannot be described. They can only be witnessed.",
       "summary_fa": "شاهنامه توصیف نمی‌کند رستم در حالِ نگه داشتنِ پسرِ در حالِ مرگش چه احساس کرد. توصیف می‌کند چه کرد: نگهش داشت. خودداریِ فردوسی در این صحنه مطلق است — و آن خودداری معیارِ بزرگیِ غم است.",
-      "image": null, "unlock_via": "scene:the-dying"
+      "image": null,
+      "unlock_via": "scene:the-dying"
     },
     {
       "id": "the-chronicle-continues",
@@ -255,7 +335,8 @@
       "title_fa": "شاهنامه ادامه می‌دهد",
       "summary_en": "After Sohrab's death, the Shahnameh does not pause. There is no coda, no period of mourning marked in the text. The next chapter begins. This is not callousness — it is the chronicle's deepest formal statement. The Shahnameh has never stopped for grief. It records grief as fully as it records anything else — exactly, precisely, without decoration. And then it moves on because the chronicle of Pars does not end with any single death, no matter how devastating. The river flows.",
       "summary_fa": "بعد از مرگِ سهراب، شاهنامه مکث نمی‌کند. درنگی نیست، دوره‌ای از عزا در متن نیست. دفترِ بعدی شروع می‌شود. این بی‌عاطفگی نیست — عمیق‌ترین گفته‌ی رسمیِ شاهنامه است. شاهنامه هرگز برای اندوه متوقف نشده.",
-      "image": null, "unlock_via": "scene:the-dying"
+      "image": null,
+      "unlock_via": "scene:the-dying"
     }
   ]
 }

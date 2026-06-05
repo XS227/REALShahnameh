@@ -15,120 +15,172 @@
   "timeline": [
     {
       "id": "haft-khan-complete",
-      "year_label_en": "~3080 BC", "year_label_fa": "~۳۰۸۰ پ.م",
-      "title_en": "The Seven Labours Complete", "title_fa": "هفت‌خان کامل می‌شود",
+      "year_label_en": "~3080 BC",
+      "year_label_fa": "~۳۰۸۰ پ.م",
+      "title_en": "The Seven Labours Complete",
+      "title_fa": "هفت‌خان کامل می‌شود",
       "body_en": "Div-e Sepid's blood cures Kay Kavus and the blind warriors. The Haft Khan is finished. Rostam brings Iran's king home. He is established as champion.",
       "body_fa": "خونِ دیوِ سپید کی‌کاووس و جنگجویانِ کور را درمان می‌کند. هفت‌خان تمام است. رستم شاهِ ایران را به خانه می‌آورد. به‌عنوانِ قهرمان مستقر می‌شود.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "five-kings",
-      "year_label_en": "~3080–2500 BC", "year_label_fa": "~۳۰۸۰–۲۵۰۰ پ.م",
-      "title_en": "Five Kings, Centuries of Service", "title_fa": "پنج شاه، قرن‌ها خدمت",
+      "year_label_en": "~3080–2500 BC",
+      "year_label_fa": "~۳۰۸۰–۲۵۰۰ پ.م",
+      "title_en": "Five Kings, Centuries of Service",
+      "title_fa": "پنج شاه، قرن‌ها خدمت",
       "body_en": "Rostam serves Kay Qobad, Kay Kavus, Kay Khosrow, Lohrasp, and finally Goshtasp's son Esfandiyar comes to command him. He outlives four kings. He is always there when Iran needs someone to hold its weight.",
       "body_fa": "رستم به کی‌قباد، کی‌کاووس، کی‌خسرو، لهراسپ خدمت می‌کند و بالاخره اسفندیار پسرِ گشتاسپ می‌آید تا دستور بدهد. از چهار شاه بیشتر عمر می‌کند.",
-      "image": null, "side": "neutral"
+      "image": null,
+      "side": "neutral"
     },
     {
       "id": "sohrab-killed",
-      "year_label_en": "~2900 BC", "year_label_fa": "~۲۹۰۰ پ.م",
-      "title_en": "Sohrab Falls", "title_fa": "سهراب می‌افتد",
+      "year_label_en": "~2900 BC",
+      "year_label_fa": "~۲۹۰۰ پ.م",
+      "title_en": "Sohrab Falls",
+      "title_fa": "سهراب می‌افتد",
       "body_en": "Rostam kills his own son on the battlefield without knowing who he is. The bracelet reveals the truth after the wound is given. Kay Kavus refuses to send the medicine. Sohrab dies.",
       "body_fa": "رستم پسرِ خودش را در میدانِ نبرد بدون دانستنِ هویتش می‌کشد. دستبند حقیقت را بعد از زخم آشکار می‌کند. کی‌کاووس دارو نمی‌فرستد. سهراب می‌میرد.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "esfandiyar-falls",
-      "year_label_en": "~2700 BC", "year_label_fa": "~۲۷۰۰ پ.م",
-      "title_en": "Esfandiyar Falls", "title_fa": "اسفندیار می‌افتد",
+      "year_label_en": "~2700 BC",
+      "year_label_fa": "~۲۷۰۰ پ.م",
+      "title_en": "Esfandiyar Falls",
+      "title_fa": "اسفندیار می‌افتد",
       "body_en": "Goshtasp sends his righteous son Esfandiyar to command Rostam in chains. Rostam refuses. They fight. Rostam, guided by the Simorgh, kills Esfandiyar with an arrow through the eyes.",
       "body_fa": "گشتاسپ پسرِ دادگرش اسفندیار را می‌فرستد تا رستم را در زنجیر دستور دهد. رستم رد می‌کند. می‌جنگند. رستم به راهنماییِ سیمرغ اسفندیار را با تیری در چشمانش می‌کشد.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     }
   ],
   "scenes": [
     {
       "id": "rakhsh-and-rostam",
       "order": 1,
-      "title_en": "The Choice", "title_fa": "انتخاب",
-      "era_en": "~3088 BC", "era_fa": "~۳۰۸۸ پ.م",
+      "title_en": "The Choice",
+      "title_fa": "انتخاب",
+      "era_en": "~3088 BC",
+      "era_fa": "~۳۰۸۸ پ.م",
       "body_en": "The horse lines of Zabulestan stretch across the plain for as far as Rostam can see. Three thousand horses. He walks them slowly, pressing each back with his palm. Three thousand failures. At the end of the line: a spotted horse, fierce-eyed, already watching him as if it knew the test was coming. Rostam pressed. The horse held. The Shahnameh notes that in this moment both of them passed something — Rostam by pressing until he found what held, Rakhsh by being the thing that held. Their years together would be as long as five kings' reigns. Rakhsh would outlive four of them.",
       "body_fa": "خطِ اسب‌های زابلستان تا آنجا که رستم می‌تواند ببیند در دشت امتداد دارد. سه هزار اسب. آرام در آن‌ها می‌گردد، پشتِ هر کدام را با کف دست فشار می‌دهد. سه هزار شکست. در انتها: اسبی ابلق، تیزنگاه، که از پیش داشت نگاهش می‌کرد انگار می‌دانست آزمون در راه است.",
       "atmosphere": "fated",
       "image": "/season2/uploads/heroes/cypres_club.png",
-      "reward": { "xp": 70 },
-      "unlocks_codex": ["rakhsh-bond"]
+      "reward": {
+        "xp": 70
+      },
+      "unlocks_codex": [
+        "rakhsh-bond"
+      ]
     },
     {
       "id": "the-seven",
       "order": 2,
-      "title_en": "The Seven Labours", "title_fa": "هفت‌خان",
-      "era_en": "~3080 BC", "era_fa": "~۳۰۸۰ پ.م",
+      "title_en": "The Seven Labours",
+      "title_fa": "هفت‌خان",
+      "era_en": "~3080 BC",
+      "era_fa": "~۳۰۸۰ پ.م",
       "body_en": "Seven trials on the road to Mazandaran: Rakhsh killing the lion while Rostam slept; the burning desert and the mystical ram that led them to water; the dragon that attacked three nights before Rostam trusted his horse's warning; the sorceress unmasked by a name of God; the warden Awlad converted from enemy to guide; Arzhang Div beheaded at the city gates; and finally the White Demon — Div-e Sepid — in the dark cave, whose blood restored sight to Kay Kavus and the blind warriors of Iran. Seven lessons: trust the loyal; accept divine mercy; patience as armor; truth against illusion; convert opposition; use overwhelming force when necessary; and know that the greatest victory is sometimes a cure rather than a killing.",
       "body_fa": "هفت آزمون در راهِ مازندران: رخش شیر را در خوابِ رستم می‌کشد؛ بیابانِ سوزان و قوچِ اسرارآمیزی که آن‌ها را به آب راهنمایی کرد؛ اژدهایی که سه شب حمله کرد پیش از آنکه رستم به هشدارِ اسبش اعتماد کند؛ جادوگری که با نامِ خدا شناخته شد؛ اولاد که از دشمن به راهنما تبدیل شد؛ ارژنگ دیو که در دروازه‌ی شهر کُشته شد؛ و بالاخره دیوِ سپید — در غارِ تاریک — که خونش بینایی را به کی‌کاووس و جنگجویانِ کورِ ایران باز داد.",
       "atmosphere": "mythic",
       "image": "/season2/uploads/chapters/rostam.png",
-      "reward": { "xp": 90 },
-      "unlocks_codex": ["seven-lessons", "div-e-sepid-cure"]
+      "reward": {
+        "xp": 90
+      },
+      "unlocks_codex": [
+        "seven-lessons",
+        "div-e-sepid-cure"
+      ]
     },
     {
       "id": "five-kings",
       "order": 3,
-      "title_en": "Five Kings", "title_fa": "پنج شاه",
-      "era_en": "~3080–2700 BC", "era_fa": "~۳۰۸۰–۲۷۰۰ پ.م",
+      "title_en": "Five Kings",
+      "title_fa": "پنج شاه",
+      "era_en": "~3080–2700 BC",
+      "era_fa": "~۳۰۸۰–۲۷۰۰ پ.م",
       "body_en": "After Kay Kavus is rescued, Rostam does not rest. He cannot. The chronicle has five kings for him to serve and each of them requires him in ways the previous one did not. Kay Kavus is reckless and proud — he flies into the sky on eagles and must be rescued from it. Kay Khosrow is wise but tragic — he sees too much and vanishes into the mountain at the end of his reign. Lohrasp is quiet and careful. And then Goshtasp, who will send his most righteous son to command Rostam in chains. Rostam serves each one as faithfully as he can manage. The chronicle does not celebrate this service; it records it, which in the Shahnameh amounts to the same thing.",
       "body_fa": "بعد از نجاتِ کی‌کاووس، رستم استراحت نمی‌کند. نمی‌تواند. شاهنامه پنج شاه برای خدمت دارد و هر کدامشان او را به شیوه‌ای نیاز دارند که شاهِ قبلی نداشت.",
       "atmosphere": "cold",
       "image": null,
-      "reward": { "xp": 75 },
-      "unlocks_codex": ["pillar-of-five-kings"]
+      "reward": {
+        "xp": 75
+      },
+      "unlocks_codex": [
+        "pillar-of-five-kings"
+      ]
     },
     {
       "id": "sohrab-scene",
       "order": 4,
-      "title_en": "Sohrab — The Weight That Broke Him", "title_fa": "سهراب — باری که شکستش",
-      "era_en": "~2900 BC", "era_fa": "~۲۹۰۰ پ.م",
+      "title_en": "Sohrab — The Weight That Broke Him",
+      "title_fa": "سهراب — باری که شکستش",
+      "era_en": "~2900 BC",
+      "era_fa": "~۲۹۰۰ پ.م",
       "body_en": "A young warrior from Turan was routing Iran's armies. Rostam came out to meet him in disguise — he had heard of this terrifying young man and chose not to reveal who he was. They fought. The first day Sohrab won and let the old warrior live — something in the man's face he recognized without understanding. The second day Rostam drove his sword in. Sohrab spoke from the ground: 'My father Rostam will find you.' Rostam's heart understood before his mind did. He asked to see the arm. The bracelet he had given Tahmineh was on the arm of the man he had just killed. The Shahnameh does not describe what Rostam felt. It describes what he did: he held his son while he died, and he did not let go until it was over.",
       "body_fa": "جنگجوی جوانی از توران داشت سپاهیانِ ایران را درهم می‌شکست. رستم مخفیانه آمد. روزِ اول سهراب برد و مرد را زنده گذاشت — چیزی در چهره‌ی پیرمرد که بدونِ فهمیدن شناخت. روزِ دوم رستم شمشیر را وارد کرد. سهراب از زمین گفت: «پدرم رستم تو را پیدا می‌کند.»",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 110 },
-      "unlocks_codex": ["the-bracelet", "kavus-refuses-medicine"]
+      "reward": {
+        "xp": 110
+      },
+      "unlocks_codex": [
+        "the-bracelet",
+        "kavus-refuses-medicine"
+      ]
     },
     {
       "id": "the-question",
       "order": 5,
-      "title_en": "The Question the Shahnameh Never Answers", "title_fa": "سؤالی که شاهنامه هرگز پاسخ نمی‌دهد",
-      "era_en": "~2700 BC", "era_fa": "~۲۷۰۰ پ.م",
+      "title_en": "The Question the Shahnameh Never Answers",
+      "title_fa": "سؤالی که شاهنامه هرگز پاسخ نمی‌دهد",
+      "era_en": "~2700 BC",
+      "era_fa": "~۲۷۰۰ پ.م",
       "body_en": "Esfandiyar is Goshtasp's righteous son — the most capable warrior in the Kayanian dynasty, brazen-bodied from the fire of the prophet Zoroaster, bound by religious duty to obey his king. Goshtasp sends him to bring Rostam in chains as a demonstration of authority. Rostam refuses. They fight for two days. Rostam consults the Simorgh one final time — she tells him to aim for the eyes. The arrow finds its mark. Esfandiyar dies. Rostam weeps. He has now killed his son and the most righteous man of his generation in the same chronicle. Ferdowsi uses both to ask, without asking it directly: what does it cost a person to be the one who holds the world together when the world will not hold itself?",
       "body_fa": "اسفندیار دادگرترین پسرِ گشتاسپ است — توانمندترین جنگجوی دودمانِ کیانی. گشتاسپ می‌فرستدش تا رستم را در زنجیر بیاورد. رستم رد می‌کند. می‌جنگند. رستم آخرین بار با سیمرغ مشورت می‌کند. تیر چشمان را می‌یابد.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 120 },
-      "unlocks_codex": ["the-pillar-question", "esfandiyar-righteous"]
+      "reward": {
+        "xp": 120
+      },
+      "unlocks_codex": [
+        "the-pillar-question",
+        "esfandiyar-righteous"
+      ]
     }
   ],
   "characters": [
     {
       "slug": "rostam-champion",
-      "name_en": "Rostam", "name_fa": "رستم",
+      "name_en": "Rostam",
+      "name_fa": "رستم",
       "role_en": "Champion of Iran · Servant of Five Kings · The Pillar",
       "role_fa": "قهرمانِ ایران · خدمتگزارِ پنج شاه · ستون",
-      "rarity": "mythic", "level_required": 1,
+      "rarity": "mythic",
+      "level_required": 1,
       "lore_en": "Rostam is not the Shahnameh's hero. He is its pillar — the structural element that holds the chronicle's weight so the kings can be as flawed as they are. He does not choose his kings; they are given to him. He does not choose his tragedies; they arrive. The Shahnameh does not explain why someone like Rostam must exist. It only shows what it costs him to.",
       "lore_fa": "رستم قهرمانِ شاهنامه نیست. ستونش است — عنصرِ ساختاری که وزنِ شاهنامه را نگه می‌دارد تا شاهان بتوانند به همان اندازه که هستند معیوب باشند.",
       "image": "/season2/uploads/chapters/rostam.png",
-      "unlocked": true, "side": "light"
+      "unlocked": true,
+      "side": "light"
     },
     {
       "slug": "kay-kavus",
-      "name_en": "Kay Kavus", "name_fa": "کی‌کاووس",
+      "name_en": "Kay Kavus",
+      "name_fa": "کی‌کاووس",
       "role_en": "The Reckless King · Rescued by Rostam · Refused the Medicine",
       "role_fa": "شاهِ بی‌پروا · نجات‌یافته توسطِ رستم · داروی نفرستاده",
-      "rarity": "epic", "level_required": 5,
+      "rarity": "epic",
+      "level_required": 5,
       "lore_en": "Kay Kavus is the Shahnameh's most complicated king. He is not evil; he is reckless. He flies into the sky on eagles and must be rescued from it. He allows himself to be blinded by Arzhang in Mazandaran. He refuses to send the medicine that could have saved Sohrab — not from cruelty but from political calculation. He is the kind of king that requires a Rostam: someone else to carry the consequences of his choices.",
       "lore_fa": "کی‌کاووس پیچیده‌ترین شاهِ شاهنامه است. بد نیست؛ بی‌پروا است. با عقاب به آسمان می‌پرد و باید از آن نجات یابد. داروی سهراب را نمی‌فرستد — نه از بی‌رحمی بلکه از محاسبه‌ی سیاسی.",
-      "image": null, "unlocked": false, "side": "neutral",
+      "image": null,
+      "unlocked": false,
+      "side": "neutral",
       "unlock_via": "scene:the-seven"
     }
   ],
@@ -141,7 +193,9 @@
       "kind_fa": "جایی که هفت‌خان به آن ختم می‌شود",
       "summary_en": "Mazandaran in the Shahnameh is the realm of the great demons — not a geographic place so much as the edge of the world where the human order runs out and something older and stranger begins. Kay Kavus was captured there. Rostam fought through seven labours to reach it. Div-e Sepid lives at its center.",
       "summary_fa": "مازندران در شاهنامه قلمروِ دیوانِ بزرگ است — نه مکانِ جغرافیایی به‌اندازه‌ی لبه‌ی جهانی که در آن نظمِ انسانی به پایان می‌رسد.",
-      "image": null, "unlocked": false, "unlock_via": "scene:the-seven"
+      "image": null,
+      "unlocked": false,
+      "unlock_via": "scene:the-seven"
     }
   ],
   "battle": {
@@ -153,16 +207,29 @@
     "intro_fa": "بزرگترین دیوِ شاهنامه‌ی میانی، در انتظار در غارِ تاریکِ قلبِ مازندران. برای مواجهه باید نه فقط قدرتِ رستم بلکه قوسِ کاملِ هفت‌خان را بفهمی.",
     "requirements": [
       {
-        "id": "level", "kind": "level", "target": 40,
-        "label_en": "Reach LVL 40", "label_fa": "رسیدن به سطحِ ۴۰", "label_tg": "Расидан ба сатҳи 40",
-        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+        "id": "level",
+        "kind": "level",
+        "target": 40,
+        "label_en": "Reach LVL 40",
+        "label_fa": "رسیدن به سطحِ ۴۰",
+        "label_tg": "Расидан ба сатҳи 40",
+        "hint_en": "Tap, complete quests, and claim daily rewards.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
+        "hint_tg": "Зарба занед."
       },
       {
-        "id": "quiz", "kind": "quiz", "target": "rostam",
-        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
-        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "rostam",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
       }
-    ]
+    ],
+    "intro_tg": "Бузургтарин деви Шоҳномаи миёна, дар ғоре торик дар қалби Мозандарон интизор. Барои рӯбарӯ шудан бо ин дарвоза бояд на танҳо қудрати Рустамро бифаҳмӣ балки қавси пурраи Ҳафт Хонро — ки ҳар кадом чӣ омӯзонд ва чаро ҳар ҳафт зарур буд."
   },
   "codex": [
     {
@@ -172,7 +239,8 @@
       "title_fa": "پیوندِ رستم و رخش",
       "summary_en": "Rostam and Rakhsh are not simply rider and horse. They are co-protagonists. Rakhsh kills the lion in the first labour. Rakhsh wakes Rostam for the dragon in the third. Rakhsh is the one whose consistency and loyalty enables Rostam's extraordinary career. When Rakhsh eventually dies at Rostam's end, the Shahnameh mourns them together — the horse's death and the hero's are simultaneous.",
       "summary_fa": "رستم و رخش فقط سوارکار و اسب نیستند. شریکِ روایتند. رخش شیر را در خانِ اول می‌کشد. رخش رستم را برای اژدها در خانِ سوم بیدار می‌کند. وقتی رخش بالاخره در پایانِ رستم می‌میرد، شاهنامه با هم برای آن‌ها عزا می‌گیرد.",
-      "image": null, "unlock_via": "scene:rakhsh-and-rostam"
+      "image": null,
+      "unlock_via": "scene:rakhsh-and-rostam"
     },
     {
       "id": "seven-lessons",
@@ -181,7 +249,8 @@
       "title_fa": "آنچه هفت‌خان می‌آموزد",
       "summary_en": "The Seven Labours are not just obstacles — they are a curriculum. Khan 1 (lion): let the loyal do their work. Khan 2 (desert): accept divine mercy. Khan 3 (dragon): trust the faithful even when you cannot see what they see. Khan 4 (sorceress): truth breaks the beautiful lie. Khan 5 (Awlad): convert opposition into resource. Khan 6 (Arzhang): direct force is sometimes the most merciful path. Khan 7 (Div-e Sepid): the greatest victory is sometimes a cure. Together they constitute the Shahnameh's complete account of what courage requires.",
       "summary_fa": "هفت‌خان فقط موانع نیستند — برنامه‌ی درسی هستند. خانِ یک: بگذار وفادار کارِ خود را بکند. خانِ دو: رحمتِ الهی را بپذیر. خانِ سه: به وفادار اعتماد کن. خانِ چهار: حقیقت دروغِ زیبا را می‌شکند. خانِ پنج: مخالفت را به منبع تبدیل کن. خانِ شش: گاهی نیروی مستقیم رحیمانه‌ترین راه است. خانِ هفت: بزرگترین پیروزی گاهی درمان است.",
-      "image": null, "unlock_via": "scene:the-seven"
+      "image": null,
+      "unlock_via": "scene:the-seven"
     },
     {
       "id": "div-e-sepid-cure",
@@ -190,7 +259,8 @@
       "title_fa": "خونی که شفا داد",
       "summary_en": "Div-e Sepid's blood is the payload of the entire Haft Khan. All seven labours exist to reach this cave and this demon and this liver. Three drops of blood dripped into blind eyes, and Kay Kavus and his warriors saw again. The Shahnameh presents this as the seventh labour's meaning: the greatest power is the one that heals rather than the one that destroys. Rostam brought back sight. That is what the pillar ultimately does.",
       "summary_fa": "خونِ دیوِ سپید محصولِ تمامِ هفت‌خان است. همه‌ی هفت خان وجود دارند تا به این غار و این دیو و این جگر برسند. سه قطره خون در چشمانِ کور، و کی‌کاووس و جنگجویانش دوباره دیدند.",
-      "image": null, "unlock_via": "scene:the-seven"
+      "image": null,
+      "unlock_via": "scene:the-seven"
     },
     {
       "id": "pillar-of-five-kings",
@@ -199,7 +269,8 @@
       "title_fa": "خدمتِ پنج شاه",
       "summary_en": "Rostam serves five kings across what the Shahnameh implies are centuries. He does not choose them. He does not quit when they disappoint him. He carries each one's failures as well as their victories. This is what the pillar does: it does not lean; it holds. The Shahnameh does not explain why Rostam was chosen for this burden. It only shows what it costs him to carry it — his son, Esfandiyar, eventually himself.",
       "summary_fa": "رستم به پنج شاه در فاصله‌ای که شاهنامه قرن‌ها را تلویحاً می‌گوید خدمت می‌کند. آن‌ها را انتخاب نمی‌کند. وقتی ناامیدش می‌کنند ترکشان نمی‌کند. شکست‌هایشان را به همان اندازه که پیروزی‌هایشان را حمل می‌کند.",
-      "image": null, "unlock_via": "scene:five-kings"
+      "image": null,
+      "unlock_via": "scene:five-kings"
     },
     {
       "id": "the-bracelet",
@@ -208,7 +279,8 @@
       "title_fa": "دستبند",
       "summary_en": "The bracelet Rostam gave Tahmineh in Samangan — 'if a son, bind it to his arm' — is the Shahnameh's most devastating dramatic irony. Rostam fights Sohrab without knowing who he is. He wins. Sohrab is dying. Rostam asks to see the arm. The bracelet is there. He has known his son for exactly as long as it takes to understand that he just killed him. The Shahnameh does not comment on this. It does not need to.",
       "summary_fa": "دستبندی که رستم در سمنگان به تهمینه داد — «اگر پسر، به بازویش ببند» — دردناک‌ترین طنازِ دراماتیکِ شاهنامه است. رستم با سهراب بدون دانستنِ هویتش می‌جنگد. می‌برد. سهراب دارد می‌میرد. رستم می‌خواهد بازو را ببیند. دستبند آنجاست.",
-      "image": null, "unlock_via": "scene:sohrab-scene"
+      "image": null,
+      "unlock_via": "scene:sohrab-scene"
     },
     {
       "id": "kavus-refuses-medicine",
@@ -217,7 +289,8 @@
       "title_fa": "کی‌کاووس داروی نفرستاده",
       "summary_en": "Kay Kavus has a medicine that can heal any wound. Rostam begs for it on his knees. Kay Kavus refuses: a warrior as capable as Sohrab, healed, would unbalance the kingdom's power dynamics. He performs the political calculation and makes the political choice and lets a boy die of a wound that could have been closed. The Shahnameh records this without judgment because it does not need to judge. The fact is judgment enough.",
       "summary_fa": "کی‌کاووس دارویی دارد که هر زخمی را درمان می‌کند. رستم زانو می‌زند و التماس می‌کند. کی‌کاووس رد می‌کند: جنگجویی به توانمندیِ سهراب، اگر درمان شود، موازنه‌ی قدرتِ پادشاهی را برهم می‌زند.",
-      "image": null, "unlock_via": "scene:sohrab-scene"
+      "image": null,
+      "unlock_via": "scene:sohrab-scene"
     },
     {
       "id": "the-pillar-question",
@@ -226,7 +299,8 @@
       "title_fa": "سؤالی که فردوسی هرگز پاسخ نمی‌دهد",
       "summary_en": "What does it cost a person to be the one who holds the world together when the world will not hold itself? Ferdowsi uses Rostam to ask this and never answers it directly. Rostam kills his son. He kills the most righteous man of his generation. He serves kings who do not deserve his service. He does all of this faithfully and without complaint and the Shahnameh records it all without offering comfort. The question hangs over every chapter that follows.",
       "summary_fa": "برایِ کسی که باید جهان را نگه دارد وقتی جهان نمی‌تواند خودش را نگه دارد چه می‌شود؟ فردوسی از رستم برای پرسیدن این سؤال استفاده می‌کند و هرگز مستقیماً پاسخ نمی‌دهد.",
-      "image": null, "unlock_via": "scene:the-question"
+      "image": null,
+      "unlock_via": "scene:the-question"
     },
     {
       "id": "esfandiyar-righteous",
@@ -235,7 +309,8 @@
       "title_fa": "اسفندیار — مردِ دادگر",
       "summary_en": "Esfandiyar is the most morally complex figure Rostam faces. He is not corrupt. He is not cruel. He is righteous — genuinely, without calculation. He is bound by religious duty to obey his king's command, even when that command is unjust. He comes to Rostam not from ambition but from obligation. Rostam kills him anyway. Both of them are right. Both of them are tragic. The Shahnameh does not resolve this. It is not the kind of book that resolves things like this.",
       "summary_fa": "اسفندیار پیچیده‌ترین چهره‌ای است که رستم با آن روبرو می‌شود. فاسد نیست. بی‌رحم نیست. دادگر است — واقعاً، بدون محاسبه. رستم او را می‌کشد. هر دو درست دارند. هر دو تراژیکند.",
-      "image": null, "unlock_via": "scene:the-question"
+      "image": null,
+      "unlock_via": "scene:the-question"
     }
   ]
 }

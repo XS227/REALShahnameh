@@ -15,107 +15,153 @@
   "timeline": [
     {
       "id": "zoroaster-arrives",
-      "year_label_en": "~2790 BC", "year_label_fa": "~۲۷۹۰ پ.م",
-      "title_en": "Zoroaster Comes to Court", "title_fa": "زرتشت به دربار می‌آید",
+      "year_label_en": "~2790 BC",
+      "year_label_fa": "~۲۷۹۰ پ.م",
+      "title_en": "Zoroaster Comes to Court",
+      "title_fa": "زرتشت به دربار می‌آید",
       "body_en": "The prophet Zoroaster arrives at Goshtasp's court from the east. He brings the Avesta — the sacred text — and the message of Ahura Mazda. He presents the Good Religion to the king and his nobles.",
       "body_fa": "پیامبر زرتشت از شرق به دربارِ گشتاسپ می‌رسد. اوستا — متنِ مقدس — و پیامِ اهورا مزدا را می‌آورد. دینِ نیک را به شاه و اشراف عرضه می‌کند.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "conversion",
-      "year_label_en": "~2788 BC", "year_label_fa": "~۲۷۸۸ پ.م",
-      "title_en": "The Conversion", "title_fa": "تبدیل",
+      "year_label_en": "~2788 BC",
+      "year_label_fa": "~۲۷۸۸ پ.م",
+      "title_en": "The Conversion",
+      "title_fa": "تبدیل",
       "body_en": "Goshtasp converts after witnessing demonstrations the court's skeptics cannot refute. He names Zoroastrianism the state faith. Fire temples are lit across Iran. His son Esfandiyar is sent to bring the faith to the unconverted kingdoms.",
       "body_fa": "گشتاسپ بعد از دیدنِ نمایش‌هایی که شکاکانِ دربار نمی‌توانند رد کنند تبدیل می‌شود. زرتشتیگری را دینِ رسمی نام می‌گذارد. آتشکده‌ها روشن می‌شوند. اسفندیار برای آوردنِ دین به ممالکِ تبدیل‌نشده فرستاده می‌شود.",
-      "image": null, "side": "light"
+      "image": null,
+      "side": "light"
     },
     {
       "id": "arjasp-war",
-      "year_label_en": "~2785 BC", "year_label_fa": "~۲۷۸۵ پ.م",
-      "title_en": "The War of Faith", "title_fa": "جنگِ دین",
+      "year_label_en": "~2785 BC",
+      "year_label_fa": "~۲۷۸۵ پ.م",
+      "title_en": "The War of Faith",
+      "title_fa": "جنگِ دین",
       "body_en": "Arjasp, king of the Hephthalites, refuses the faith and invades. He kills Lohrasp at the fire temple of Balkh and captures Goshtasp's daughters. Esfandiyar is sent to crush the invasion — beginning the chain of promises made and broken that will end in catastrophe.",
       "body_fa": "ارجاسپ، شاهِ هیاطله، دین را رد می‌کند و حمله می‌کند. لهراسپ را در آتشکده‌ی بلخ می‌کشد و دختراتِ گشتاسپ را می‌گیرد. اسفندیار برای درهم کوبیدنِ هجوم فرستاده می‌شود.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     },
     {
       "id": "promised-throne",
-      "year_label_en": "~2785–2775 BC", "year_label_fa": "~۲۷۸۵–۲۷۷۵ پ.م",
-      "title_en": "The Throne Promised and Withheld", "title_fa": "تخت وعده‌داده و نگه‌داشته",
+      "year_label_en": "~2785–2775 BC",
+      "year_label_fa": "~۲۷۸۵–۲۷۷۵ پ.م",
+      "title_en": "The Throne Promised and Withheld",
+      "title_fa": "تخت وعده‌داده و نگه‌داشته",
       "body_en": "Goshtasp promises Esfandiyar the throne if he spreads the faith and defeats Arjasp. Esfandiyar succeeds. The throne is not given. The pattern repeats. A court advisor warns Goshtasp that Esfandiyar's power is a threat. The trap is being built.",
       "body_fa": "گشتاسپ اگر اسفندیار دین را گسترش دهد و ارجاسپ را شکست دهد تخت را وعده می‌دهد. اسفندیار موفق می‌شود. تخت داده نمی‌شود. الگو تکرار می‌شود. دامی در حالِ ساختن است.",
-      "image": null, "side": "dark"
+      "image": null,
+      "side": "dark"
     }
   ],
   "scenes": [
     {
       "id": "prophet-at-court",
       "order": 1,
-      "title_en": "The Man Who Came with a Message", "title_fa": "مردی که با پیامی آمد",
-      "era_en": "~2790 BC", "era_fa": "~۲۷۹۰ پ.م",
+      "title_en": "The Man Who Came with a Message",
+      "title_fa": "مردی که با پیامی آمد",
+      "era_en": "~2790 BC",
+      "era_fa": "~۲۷۹۰ پ.م",
       "body_en": "Zoroaster came to Goshtasp's court from the east — from the region of Rai — carrying the Avesta and the testimony of a direct encounter with Ahura Mazda. Courts are skilled at receiving prophets skeptically: there were questions, contests of wisdom, challenges from the Magi and scholars who had served the old fires. Zoroaster answered each question with the precision of a man who is not performing conviction but reporting it. He demonstrated things that demonstration should not be able to produce. The Shahnameh does not describe miracles in the theatrical sense — it describes the moment when a king's court runs out of objections. Goshtasp did not convert from amazement. He converted from a recognition: this message was true in the specific way that changes what you do next, which is the only test of truth that matters.",
       "body_fa": "زرتشت از شرق به دربارِ گشتاسپ آمد — از ناحیه‌ی ری — اوستا و شهادتِ دیدارِ مستقیم با اهورا مزدا را حمل می‌کرد. دربارها در دریافتِ شکاکانه‌ی پیامبران ماهرند. زرتشت هر سؤالی را با دقتِ مردی پاسخ داد که باور را اجرا نمی‌کند بلکه گزارش می‌دهد. گشتاسپ از شگفتی تبدیل نشد. از یک تشخیص تبدیل شد.",
       "atmosphere": "fated",
       "image": "/season2/uploads/chapters/goshtasp.png",
-      "reward": { "xp": 65 },
-      "unlocks_codex": ["zoroaster-message"]
+      "reward": {
+        "xp": 65
+      },
+      "unlocks_codex": [
+        "zoroaster-message"
+      ]
     },
     {
       "id": "fire-temples-lit",
       "order": 2,
-      "title_en": "The Fire Temples", "title_fa": "آتشکده‌ها",
-      "era_en": "~2788 BC", "era_fa": "~۲۷۸۸ پ.م",
+      "title_en": "The Fire Temples",
+      "title_fa": "آتشکده‌ها",
+      "era_en": "~2788 BC",
+      "era_fa": "~۲۷۸۸ پ.م",
       "body_en": "After the conversion, Goshtasp organized the faith into the kingdom's structure. Fire temples were established at Balkh, at Istakhr, across Iran's cities and frontiers. The Avesta was written and distributed. The three great fires — Adur Gushnasp for warriors, Adur Farnbag for priests, Adur Burzen-Mihr for farmers — were housed and protected. Esfandiyar was sent to the unconverted kingdoms with an army and the specific instruction to offer the Good Religion first and impose it if it was refused. The mission was genuine: Esfandiyar believed. But it was also political: a righteous son on a holy mission is a son who is not in the court competing for the throne. Goshtasp was doing two things at once, as he often did.",
       "body_fa": "بعد از تبدیل، گشتاسپ دین را در ساختارِ پادشاهی تنظیم کرد. آتشکده‌ها در بلخ، استخر، در سراسرِ شهرها و مرزهای ایران برپا شدند. اوستا نوشته و توزیع شد. اسفندیار با سپاه به ممالکِ تبدیل‌نشده فرستاده شد. مأموریت واقعی بود: اسفندیار باور داشت. اما سیاسی هم بود.",
       "atmosphere": "dawn",
       "image": null,
-      "reward": { "xp": 70 },
-      "unlocks_codex": ["the-three-fires", "faith-and-politics"]
+      "reward": {
+        "xp": 70
+      },
+      "unlocks_codex": [
+        "the-three-fires",
+        "faith-and-politics"
+      ]
     },
     {
       "id": "arjasp-refuses",
       "order": 3,
-      "title_en": "The Hephthalite Refusal", "title_fa": "رفضِ هیاطله",
-      "era_en": "~2785 BC", "era_fa": "~۲۷۸۵ پ.م",
+      "title_en": "The Hephthalite Refusal",
+      "title_fa": "رفضِ هیاطله",
+      "era_en": "~2785 BC",
+      "era_fa": "~۲۷۸۵ پ.م",
       "body_en": "Arjasp was not philosophically opposed to Zoroastrianism — he was politically opposed to Iranian expansion that used religious conversion as its instrument. He refused the faith, organized the Hephthalite forces, and invaded. He killed Lohrasp at the fire temple of Balkh — burning the sacred fire — and captured Goshtasp's daughters Homay and Beh-Afarid. This was calculated: taking the king's daughters was a statement that Goshtasp's new religion could not protect the people who belonged to the king. Goshtasp called Esfandiyar back from his missions and gave him the task: destroy Arjasp, rescue the daughters, restore the fire. He promised the throne on completion.",
       "body_fa": "ارجاسپ مخالفتِ فلسفی با زرتشتیگری نداشت — مخالفتِ سیاسی با گسترشِ ایرانی که از تبدیلِ مذهبی به عنوانِ ابزار استفاده می‌کرد داشت. رفض کرد، نیروهای هیاطله را سازماندهی کرد، و حمله کرد. لهراسپ را در آتشکده‌ی بلخ کشت. دختراتِ گشتاسپ را اسیر کرد. گشتاسپ اسفندیار را از مأموریت‌هایش صدا کرد و وظیفه داد: ارجاسپ را نابود کن، دختران را نجات بده. تخت را برای تکمیل وعده داد.",
       "atmosphere": "dark",
       "image": null,
-      "reward": { "xp": 75 },
-      "unlocks_codex": ["why-arjasp-refused"]
+      "reward": {
+        "xp": 75
+      },
+      "unlocks_codex": [
+        "why-arjasp-refused"
+      ]
     },
     {
       "id": "goshtasp-withholds",
       "order": 4,
-      "title_en": "The Throne Not Given", "title_fa": "تخت داده‌نشده",
-      "era_en": "~2784–2775 BC", "era_fa": "~۲۷۸۴–۲۷۷۵ پ.م",
+      "title_en": "The Throne Not Given",
+      "title_fa": "تخت داده‌نشده",
+      "era_en": "~2784–2775 BC",
+      "era_fa": "~۲۷۸۴–۲۷۷۵ پ.م",
       "body_en": "Esfandiyar defeated Arjasp, rescued his sisters, restored the sacred fires. He came back with the victory Goshtasp had demanded. The throne was not given. A court advisor — Jamasp, the astrologer — had warned the king that a son with Esfandiyar's power and popularity would eventually become a threat. Goshtasp heard the warning and found it convenient. He made another promise instead: one more mission, one more task, and then the throne. Esfandiyar obeyed. This is the cycle the Shahnameh describes with quiet precision: a father who is afraid of his son's greatness, and a son too righteous to refuse his father's commands, traveling in circles that are slowly tightening toward an outcome neither of them can stop.",
       "body_fa": "اسفندیار ارجاسپ را شکست داد، خواهران را نجات داد، آتش‌های مقدس را بازگرداند. با پیروزیِ طلب‌شده برگشت. تخت داده نشد. جاماسپ، منجم، هشدار داده بود پسری با قدرت و محبوبیتِ اسفندیار تهدید می‌شود. گشتاسپ هشدار را شنید و راحت یافت. وعده‌ای دیگر داد. اسفندیار اطاعت کرد.",
       "atmosphere": "court",
       "image": null,
-      "reward": { "xp": 80 },
-      "unlocks_codex": ["jamasp-warning", "the-tightening-circle"]
+      "reward": {
+        "xp": 80
+      },
+      "unlocks_codex": [
+        "jamasp-warning",
+        "the-tightening-circle"
+      ]
     }
   ],
   "characters": [
     {
       "slug": "zoroaster",
-      "name_en": "Zoroaster", "name_fa": "زرتشت",
+      "name_en": "Zoroaster",
+      "name_fa": "زرتشت",
       "role_en": "Prophet of Ahura Mazda · Bringer of the Good Religion · The Man Who Changed the Chronicle's Faith",
       "role_fa": "پیامبرِ اهورا مزدا · آورنده‌ی دینِ نیک · مردی که ایمانِ شاهنامه را تغییر داد",
-      "rarity": "legendary", "level_required": 1,
+      "rarity": "legendary",
+      "level_required": 1,
       "lore_en": "Zoroaster's appearance in the Shahnameh is historically layered — Ferdowsi wrote in an Islamic era about a pre-Islamic prophet whose faith had shaped Iran for a thousand years. He treats Zoroaster with respect: the prophet is not a miracle-worker in the theatrical sense but a man of overwhelming moral clarity who carries a message that cannot be argued with once genuinely heard. His conversion of Goshtasp is presented as an event that changes history's direction — the faith he brings creates the wars that create Esfandiyar, and through Esfandiyar, the chronicle's final great tragedy.",
       "lore_fa": "ظهورِ زرتشت در شاهنامه از نظرِ تاریخی لایه‌دار است — فردوسی در عصرِ اسلامی درباره‌ی پیامبرِ پیش‌اسلامی نوشت که ایمانش قرنی ایران را شکل داده بود. با احترام رفتار می‌کند: نه معجزه‌گر بلکه مردِ وضوحِ اخلاقیِ غیرقابل‌تحمل.",
-      "image": null, "unlocked": true, "side": "light"
+      "image": null,
+      "unlocked": true,
+      "side": "light"
     },
     {
       "slug": "goshtasp-king",
-      "name_en": "Goshtasp", "name_fa": "گشتاسپ",
+      "name_en": "Goshtasp",
+      "name_fa": "گشتاسپ",
       "role_en": "Second Kayanid King · Converter · The Father Who Destroyed His Son",
       "role_fa": "دومین شاهِ کیانی · تبدیل‌شده · پدری که پسرش را نابود کرد",
-      "rarity": "epic", "level_required": 1,
+      "rarity": "epic",
+      "level_required": 1,
       "lore_en": "Goshtasp is not a villain. His conversion is genuine. His wars in defense of the faith are real. But the Shahnameh does not let sincerity excuse the pattern: he repeatedly promises Esfandiyar the throne and withholds it, each time finding a new task to send his son on. The mechanism is fear, dressed as piety. He is afraid of his son's greatness, and he uses the faith — the genuine faith he converted to — as the instrument to keep Esfandiyar at a useful distance. His final act of this pattern — sending Esfandiyar to bring Rostam in chains — is the one that kills his son. The Shahnameh records his grief. It also records what he did.",
       "lore_fa": "گشتاسپ شرور نیست. تبدیلش واقعی است. اما شاهنامه اجازه نمی‌دهد صداقت الگو را توجیه کند: مکرراً تخت را وعده می‌دهد و نگه می‌دارد. مکانیسم ترس است، به لباسِ تقوا. از عظمتِ پسرش می‌ترسد.",
-      "image": null, "unlocked": true, "side": "neutral"
+      "image": null,
+      "unlocked": true,
+      "side": "neutral"
     }
   ],
   "places": [
@@ -127,7 +173,8 @@
       "kind_fa": "درباری که جهتِ ایران را تغییر داد",
       "summary_en": "The court is the site of the Shahnameh's most consequential religious event: Zoroaster's conversion of Goshtasp. The chronicle's world changes register here — the wars after this chapter are wars of faith rather than wars of territory, which changes both their scale and their moral weight.",
       "summary_fa": "دربار مکانِ مهم‌ترین رویدادِ دینیِ شاهنامه است: تبدیلِ گشتاسپ توسطِ زرتشت. دنیای شاهنامه اینجا رجیستر تغییر می‌دهد — جنگ‌های بعد جنگ‌های ایمان هستند نه سرزمین.",
-      "image": null, "unlocked": true
+      "image": null,
+      "unlocked": true
     }
   ],
   "battle": {
@@ -140,16 +187,29 @@
     "intro_fa": "نیروهای ارجاسپ از مرز گذشته‌اند. برای مواجهه باید بفهمی چه چیزی این جنگ را می‌راند — نه دشمنیِ ساده بلکه برخوردِ ایمانِ جدید و ممالکی که آن را رد می‌کنند.",
     "requirements": [
       {
-        "id": "level", "kind": "level", "target": 80,
-        "label_en": "Reach LVL 80", "label_fa": "رسیدن به سطحِ ۸۰", "label_tg": "Расидан ба сатҳи 80",
-        "hint_en": "Tap, complete quests, and claim daily rewards.", "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.", "hint_tg": "Зарба занед."
+        "id": "level",
+        "kind": "level",
+        "target": 80,
+        "label_en": "Reach LVL 80",
+        "label_fa": "رسیدن به سطحِ ۸۰",
+        "label_tg": "Расидан ба сатҳи 80",
+        "hint_en": "Tap, complete quests, and claim daily rewards.",
+        "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
+        "hint_tg": "Зарба занед."
       },
       {
-        "id": "quiz", "kind": "quiz", "target": "goshtasp",
-        "label_en": "Pass the chapter quiz", "label_fa": "گذراندنِ آزمونِ دفتر", "label_tg": "Имтиҳони бобро гузаред",
-        "hint_en": "Scroll down to the Quiz section.", "hint_fa": "به بخشِ آزمون بروید.", "hint_tg": "Ба бахши Имтиҳон равед."
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "goshtasp",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
       }
-    ]
+    ],
+    "intro_tg": "Нирӯҳои Арҷосп аз марз гузаштаанд. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ чӣ ин ҷангро меронад — на душманиии содда, балки бархӯрди имони нав ва подшоҳиҳое ки онро рад мекунанд."
   },
   "codex": [
     {
@@ -159,7 +219,8 @@
       "title_fa": "آنچه زرتشت آورد",
       "summary_en": "Zoroaster's message in the Shahnameh is the Good Religion: the cosmic struggle between Ahura Mazda (the Wise Lord, the principle of truth and light) and Ahriman (the Destructive Spirit, the principle of darkness and lie). Humans choose between them with every action. The good mind, good word, and good deed (Humata, Hukhta, Hvarshta) are the instruments of alignment with Ahura Mazda. Fire is the visible symbol of truth — undying, unchanging, untainted. The Avesta records the revelation. The fire temple houses the sacred flame.",
       "summary_fa": "پیامِ زرتشت در شاهنامه دینِ نیک است: مبارزه‌ی کیهانیِ بینِ اهورا مزدا (خداوندِ خرد، اصلِ راستی و روشنایی) و اهریمن (روحِ ویرانگر). آتش نمادِ مرئیِ راستی است.",
-      "image": null, "unlock_via": "scene:prophet-at-court"
+      "image": null,
+      "unlock_via": "scene:prophet-at-court"
     },
     {
       "id": "the-three-fires",
@@ -168,7 +229,8 @@
       "title_fa": "سه آتشِ مقدس",
       "summary_en": "The three great fires of Zoroastrianism were established in Goshtasp's reign: Adur Gushnasp (the warriors' fire, at Shiz in Azerbaijan), Adur Farnbag (the priests' fire, in Khwarezm), and Adur Burzen-Mihr (the farmers' fire, in Nishapur). Each fire corresponded to one of the three great estates — warriors, priests, farmers — that the Shahnameh has used to organize society since Jamshid's time. The fires were guarded and maintained for centuries. Lohrasp had died protecting one.",
       "summary_fa": "سه آتشِ بزرگِ زرتشتیگری در سلطنتِ گشتاسپ برپا شدند: آذرِ گشنسپ برای جنگاوران، آذرِ فرنبغ برای موبدان، آذرِ برزین‌مهر برای کشاورزان.",
-      "image": null, "unlock_via": "scene:fire-temples-lit"
+      "image": null,
+      "unlock_via": "scene:fire-temples-lit"
     },
     {
       "id": "faith-and-politics",
@@ -177,7 +239,8 @@
       "title_fa": "ایمان و سیاست در یک عمل",
       "summary_en": "Goshtasp sends Esfandiyar to spread the faith and also to keep him away from court. The Shahnameh presents both motivations as simultaneously true. This is not presented as hypocrisy — kings in the chronicle often have multiple reasons for one act, and the sincerity of the religious motive does not cancel the convenience of the political one. What the Shahnameh records is the compound effect: Esfandiyar, sent on genuine holy missions, develops an authority and righteousness that makes his father more afraid of him, which produces more missions, which produces more righteousness, in a cycle that tightens until it has nowhere to go.",
       "summary_fa": "گشتاسپ اسفندیار را می‌فرستد هم برای گسترشِ دین و هم برای دور نگه داشتنش از دربار. شاهنامه هر دو انگیزه را به‌طورِ همزمان درست ارائه می‌دهد. این دورویی نیست — صداقتِ انگیزه‌ی دینی انگیزه‌ی سیاسی را کنسل نمی‌کند.",
-      "image": null, "unlock_via": "scene:fire-temples-lit"
+      "image": null,
+      "unlock_via": "scene:fire-temples-lit"
     },
     {
       "id": "why-arjasp-refused",
@@ -186,7 +249,8 @@
       "title_fa": "چرا ارجاسپ رفض کرد",
       "summary_en": "The Shahnameh does not present Arjasp as a blasphemer — it presents him as a king who saw Zoroastrianism as the religious dimension of Iranian imperial expansion. If the faith spreads, Iran expands. The fire temples are not only sacred buildings — they are administrative centers and symbols of Iranian authority. Arjasp's refusal is political resistance dressed as theological disagreement. The Shahnameh is precise about this: the wars of faith are also wars of empire, and the two registers are inseparable.",
       "summary_fa": "شاهنامه ارجاسپ را کافر نشان نمی‌دهد — شاهی نشان می‌دهد که زرتشتیگری را بُعدِ دینیِ گسترشِ امپریالیِ ایران می‌دید. مقاومتِ سیاسیِ ارجاسپ به لباسِ اختلافِ الهیاتی پوشیده شده.",
-      "image": null, "unlock_via": "scene:arjasp-refuses"
+      "image": null,
+      "unlock_via": "scene:arjasp-refuses"
     },
     {
       "id": "jamasp-warning",
@@ -195,7 +259,8 @@
       "title_fa": "جاماسپ — هشدارِ راحتِ منجم",
       "summary_en": "Jamasp is Goshtasp's court astrologer and Zoroaster's son-in-law — a man with access to both political and prophetic authority. His warning to Goshtasp about Esfandiyar's danger is accurate: an invulnerable warrior-prince with a holy mandate and popular devotion is a structural threat to any sitting king. But the warning is also convenient, and Goshtasp uses it as one uses a tool: to justify what he would have done anyway from fear.",
       "summary_fa": "جاماسپ منجمِ دربارِ گشتاسپ و دامادِ زرتشت است. هشدارش درباره‌ی خطرِ اسفندیار دقیق است: شاهزاده‌ی جنگجویِ آسیب‌ناپذیر با تفویضِ مقدس تهدیدِ ساختاری است. اما هشدار راحت هم هست، و گشتاسپ از آن استفاده می‌کند.",
-      "image": null, "unlock_via": "scene:goshtasp-withholds"
+      "image": null,
+      "unlock_via": "scene:goshtasp-withholds"
     },
     {
       "id": "the-tightening-circle",
@@ -204,7 +269,8 @@
       "title_fa": "دایره‌ی درحالِ تنگ‌شدن",
       "summary_en": "The pattern Goshtasp establishes — promise the throne, send Esfandiyar on a mission, withhold the throne on completion, invent a new mission — is presented by the Shahnameh as self-reinforcing. Each successful mission makes Esfandiyar more powerful and more popular, which makes Goshtasp more afraid, which produces a more dangerous mission. The circle tightens. The end condition is the most dangerous mission Goshtasp can find — bringing Rostam in chains — which is not a mission that can be completed without destroying either Esfandiyar or Rostam or both.",
       "summary_fa": "الگویی که گشتاسپ ایجاد می‌کند — تخت را وعده بده، اسفندیار را به مأموریت بفرست، تخت را در تکمیل نگه دار، مأموریتِ جدید اختراع کن — توسطِ شاهنامه به عنوانِ خودتقویت‌کننده ارائه می‌شود. دایره تنگ می‌شود.",
-      "image": null, "unlock_via": "scene:goshtasp-withholds"
+      "image": null,
+      "unlock_via": "scene:goshtasp-withholds"
     }
   ]
 }
