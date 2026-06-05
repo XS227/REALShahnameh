@@ -332,6 +332,9 @@ a { color: inherit; }
 
 /* ----- Return popups (offline earnings + daily strike) ------------------- */
 
+/* Must override UA [hidden]{display:none} which our display:flex would win against */
+.return-modal[hidden] { display: none !important; }
+
 .return-modal {
   position: fixed;
   inset: 0;
