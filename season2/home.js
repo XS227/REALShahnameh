@@ -359,25 +359,37 @@
     const tapCount = $("[data-daily-taps]");
     if (tapCount) tapCount.textContent = `${fmtNum(Math.min(tapsToday, TAP_GOAL))} / ${fmtNum(TAP_GOAL)}`;
 
-    /* All-complete bonus row */
-    const allDone      = states.read && states.quiz && states.tap;
-    const claimKey     = "real_daily_bonus_claimed_" + dk;
-    const alreadyClaimed = lsRead(claimKey) === "1";
-    const claimRow     = $("[data-quest-all-complete]");
+    /* All-complete bonus row — visibility only; click is wired in wireClaimButton() */
+    const allDone        = states.read && states.quiz && states.tap;
+    const alreadyClaimed = lsRead("real_daily_bonus_claimed_" + dk) === "1";
+    const claimRow       = $("[data-quest-all-complete]");
     if (claimRow) claimRow.hidden = !allDone || alreadyClaimed;
+  };
 
+  /* ── Daily bonus claim button — wired ONCE after DOM ready ─────────────
+     Kept out of hydrateQuests() so closure capture and _bound flags can't
+     interfere. Reads claimKey fresh at click time so it's always correct. */
+  const wireClaimButton = () => {
     const claimBtn = $("[data-quest-claim]");
-    if (claimBtn && !claimBtn._bound) {
-      claimBtn._bound = true;
-      claimBtn.addEventListener("click", () => {
-        try { localStorage.setItem(claimKey, "1"); } catch {}
-        if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
-        if (window.RealSync) window.RealSync.syncBalance();
-        if (claimRow) claimRow.hidden = true;
-        if (window.toast) window.toast("+200 XP — Daily Bonus claimed!");
-        else window.dispatchEvent(new CustomEvent("real:toast", { detail: { msg: "+200 XP — Daily Bonus claimed!" } }));
-      });
-    }
+    const claimRow = $("[data-quest-all-complete]");
+    if (!claimBtn) return;
+    claimBtn.addEventListener("click", () => {
+      const key = "real_daily_bonus_claimed_" + todayKey();
+      if (lsRead(key) === "1") return;           // already claimed — ignore double-tap
+      try { localStorage.setItem(key, "1"); } catch {}
+      if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
+      if (window.RealSync)   window.RealSync.syncBalance();
+      refreshTreasury();
+      if (claimRow) claimRow.hidden = true;
+      /* Show toast using the [data-toast] element directly */
+      const toastEl = document.querySelector("[data-toast]");
+      if (toastEl) {
+        toastEl.textContent = "+200 XP — Daily Bonus claimed!";
+        toastEl.classList.add("show");
+        clearTimeout(wireClaimButton._t);
+        wireClaimButton._t = setTimeout(() => toastEl.classList.remove("show"), 2000);
+      }
+    });
   };
 
   /* ── Medallion badge ─────────────────────────────────────────────────── */
@@ -817,6 +829,7 @@
     refreshTreasury();
     updateJourneyCard(null);  // immediate render from localStorage
     wireQuestClicks();
+    wireClaimButton();
     wireTreasuryModals();
     // Return popups after page has settled (600 ms)
     setTimeout(doReturnPopups, 600);
