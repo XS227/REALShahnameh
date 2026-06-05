@@ -28,7 +28,8 @@
     19: "great-war-turan", 20: "lohrasp",            21: "goshtasp",
     22: "esfandiyar",      23: "seven-labours-esp",  24: "clash-rostam-esp",
     25: "simorgh",
-    "haft-khan": "rudabeh",
+    "haft-khan":     "rudabeh",
+    "haft-khan-esp": "esfandiyar",
   };
 
   const isChapterDone = (n) => {
@@ -1167,6 +1168,179 @@
   ];
 
   /* =========================================================
+     HAFT KHAN-E ESFANDIYAR — The Seven Labours of Esfandiyar
+     ========================================================= */
+  COLLECTION.push(
+    {
+      id: "esp-wolves",
+      name: "Twin Wolves — First Labour",
+      name_fa: "دو گرگ — خانِ اول",
+      name_tg: "Ду Гург — Хони Аввал",
+      type: "creature", rarity: "rare", chapter: "haft-khan-esp",
+      emoji: "🐺",
+      role: "Khan 1 · Precision Under Charge · The First Test of Esfandiyar",
+      role_fa: "خانِ اول · دقت در حملهٔ دشمن · نخستین آزمونِ اسفندیار",
+      lore: "Two ferocious wolves blocked the road to Turan. Esfandiyar shot them both with his bow. The first labour was won by precision — the wolf's charge is fastest when it thinks you are afraid.",
+      lore_fa: "دو گرگِ درنده سرِ راهِ توران را بستند. اسفندیار هر دو را با تیر زد. خانِ اول با دقت برده شد.",
+      biography: "The twin wolves of the first labour are the Shahnameh's simplest test — brute threat met by cleaner skill. Esfandiyar does not negotiate or run. He draws his bow and shoots. The lesson is that directness, when it is sufficient, should not be complicated.",
+      biography_fa: "دو گرگِ خانِ اول ساده‌ترین آزمونِ شاهنامه است — تهدیدِ خام در برابرِ مهارتِ پاک‌تر.",
+      faction: "Creatures of the Road · Haft Khan Esfandiyar",
+      mythologyRole: "Khan 1 · Speed and precision · First labour cleared by the bow",
+      powers: ["+12% Tap Accuracy", "+50 Zar/hr", "Passive: Wolf's Speed — first tap of each session +20%"],
+      storyAppearances: ["Haft Khan Esfandiyar — First Labour: The Wolves"],
+      side: "light", season: 2, order: 70, cost: 4000, zar_per_hour: 50,
+      collectionId: "S2-ESP-001", nftReady: false,
+      unlockCondition: "Enter the Haft Khan-e Esfandiyar",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan Esfandiyar · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan_esp: true, haft_khan_esp_order: 1,
+    },
+    {
+      id: "esp-lions",
+      name: "Twin Lions — Second Labour",
+      name_fa: "دو شیر — خانِ دوم",
+      name_tg: "Ду Шер — Хони Дуввум",
+      type: "creature", rarity: "rare", chapter: "haft-khan-esp",
+      emoji: "🦁",
+      role: "Khan 2 · Strength Unmounted · Directness as Virtue",
+      role_fa: "خانِ دوم · قدرت پیاده · فضیلتِ مستقیم بودن",
+      lore: "Two lions stood guard at the second stage. Esfandiyar dismounted and fought them by hand. The second labour rewarded directness — he did not seek a tactical advantage. He stood in the path and refused to move.",
+      lore_fa: "دو شیر نگهبانِ خانِ دوم بودند. اسفندیار پیاده شد و با دست با آن‌ها جنگید. خانِ دوم شجاعتِ مستقیم را پاداش داد.",
+      biography: "The twin lions are the Shahnameh's tribute to straightforwardness. Lesser warriors seek the angle, the trick, the ambush. Esfandiyar dismounts because he trusts himself more than any tactic. That trust is the second labour's real reward.",
+      biography_fa: "دو شیر درودِ شاهنامه به صراحت است. جنگجویانِ کم‌تر زاویه، حیله و کمین می‌جویند. اسفندیار پیاده می‌شود چون به خود بیشتر از هر تاکتیکی اعتماد دارد.",
+      faction: "Creatures of the Road · Haft Khan Esfandiyar",
+      mythologyRole: "Khan 2 · Brute strength in the open · The lion met on its own terms",
+      powers: ["+18% Melee Tap Power", "+35 Zar/hr", "Passive: Unmounted — ZAR/hr +10% when offline"],
+      storyAppearances: ["Haft Khan Esfandiyar — Second Labour: The Lions"],
+      side: "light", season: 2, order: 71, cost: 5000, zar_per_hour: 35,
+      collectionId: "S2-ESP-002", nftReady: false,
+      prereq: { hero_id: "esp-wolves", level: 1 },
+      unlockCondition: "Own Twin Wolves (Khan 1)",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan Esfandiyar · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan_esp: true, haft_khan_esp_order: 2,
+    },
+    {
+      id: "esp-dragon",
+      name: "The Blade Chariot — Dragon Slayer",
+      name_fa: "ارابهٔ تیغ‌دار — اژدهاکُش",
+      name_tg: "Аробаи Тӣғдор — Аждаҳокуш",
+      type: "artifact", rarity: "epic", chapter: "haft-khan-esp",
+      emoji: "🐉",
+      role: "Khan 3 · Prepared Victory · The Dragon Fed Its Own Jaws",
+      role_fa: "خانِ سوم · پیروزیِ از پیش آماده · اژدها جلویِ دهانِ خودش را خورد",
+      lore: "A great dragon blocked the third stage. Esfandiyar had prepared a chariot fitted with long blades pointing outward in every direction. He drove it into the dragon's open jaws and the beast destroyed itself swallowing the blades. The third labour was won before it began.",
+      lore_fa: "اژدهای عظیمی خانِ سوم را بست. اسفندیار ارابه‌ای با تیغ‌های بلند در همهٔ جهات آماده کرده بود. آن را به دهانِ باز اژدها راند و جانور با بلعیدنِ تیغ‌ها خودش را نابود کرد.",
+      biography: "The blade chariot is the Shahnameh's most architectural victory — the problem is solved entirely by preparation. The dragon never had a chance to use its strength because the weapon was already inside it before the battle started. Esfandiyar's genius was not in the fight. It was in the engineering.",
+      biography_fa: "ارابهٔ تیغ‌دار معماری‌ترین پیروزیِ شاهنامه است — مسئله کاملاً با آمادگی حل می‌شود.",
+      faction: "War Machines · Haft Khan Esfandiyar",
+      mythologyRole: "Khan 3 · Victory by design · Engineering defeats brute force",
+      powers: ["+25% Tap Power vs Boss", "+70 Zar/hr", "Passive: Prepared Ground — quest completion +15%"],
+      storyAppearances: ["Haft Khan Esfandiyar — Third Labour: The Dragon"],
+      side: "light", season: 2, order: 72, cost: 7000, zar_per_hour: 70,
+      collectionId: "S2-ESP-003", nftReady: false,
+      prereq: { hero_id: "esp-lions", level: 1 },
+      unlockCondition: "Own Twin Lions (Khan 2)",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan Esfandiyar · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan_esp: true, haft_khan_esp_order: 3,
+    },
+    {
+      id: "esp-sorceress",
+      name: "The Sorceress of Turan — Fourth Labour",
+      name_fa: "جادوگرِ توران — خانِ چهارم",
+      name_tg: "Ҷодугари Турон — Хони Чорум",
+      type: "enemy", rarity: "epic", chapter: "haft-khan-esp",
+      emoji: "🧿",
+      role: "Khan 4 · The Beautiful Deception · Faith Unmasks What Power Cannot",
+      role_fa: "خانِ چهارم · فریبِ زیبا · ایمان آنچه را قدرت نمی‌تواند رو می‌کند",
+      lore: "A sorceress appeared as a beautiful woman and lured Esfandiyar with feasting and enchantment. He spoke the name of God. Her true form was revealed — hideous and old. He killed her. The fourth labour is the test of discernment: the beautiful trap is the most dangerous kind.",
+      lore_fa: "جادوگری به صورتِ زنی زیبا ظاهر شد و اسفندیار را با ضیافت و جادو فریفت. او نامِ خدا را برد. چهرهٔ واقعی‌اش آشکار شد. خانِ چهارم آزمونِ تشخیص است.",
+      biography: "The sorceress of the fourth labour is the Shahnameh's lesson that disguise fails at the name of God. Not because God intervenes — but because a man who has truly earned his faith cannot be deceived by surfaces. Esfandiyar did not need magic to defeat magic. He needed sincerity.",
+      biography_fa: "جادوگرِ خانِ چهارم درسِ شاهنامه است که تغییرِ چهره در برابرِ نامِ خدا شکست می‌خورد.",
+      faction: "Dark Illusions · Haft Khan Esfandiyar",
+      mythologyRole: "Khan 4 · Faith defeats deception · The name of God as the only weapon",
+      powers: ["+1 Quiz hint per day", "+85 Zar/hr", "Passive: Unveiled — hidden resource spawns +18%"],
+      storyAppearances: ["Haft Khan Esfandiyar — Fourth Labour: The Sorceress"],
+      side: "dark", season: 2, order: 73, cost: 9000, zar_per_hour: 85,
+      collectionId: "S2-ESP-004", nftReady: false,
+      prereq: { hero_id: "esp-dragon", level: 1 },
+      unlockCondition: "Own Blade Chariot (Khan 3)",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan Esfandiyar · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan_esp: true, haft_khan_esp_order: 4,
+    },
+    {
+      id: "esp-simorgh",
+      name: "The Shadow Simorgh — Fifth Labour",
+      name_fa: "سیمرغِ سایه — خانِ پنجم",
+      name_tg: "Симурғи Соя — Хони Панҷум",
+      type: "creature", rarity: "legend", chapter: "haft-khan-esp",
+      emoji: "🦅",
+      role: "Khan 5 · The Dark Mirror of Grace · Even Sacred Symbols Cast Shadows",
+      role_fa: "خانِ پنجم · آینهٔ تاریکِ لطف · حتی نمادهای مقدس سایه می‌اندازند",
+      lore: "The fifth labour set a great Simorgh against Esfandiyar — not the gentle guardian who raised Zal, but its dark reflection: enormous, predatory, blotting out the sun. Esfandiyar shot it from the sky. Even the most sacred symbols have shadow forms that must be faced.",
+      lore_fa: "خانِ پنجم سیمرغِ بزرگی را در برابرِ اسفندیار گذاشت — نه نگهبانِ مهربانی که زال را پرورد، بلکه بازتابِ تاریکِ او. اسفندیار او را از آسمان زد.",
+      biography: "The Simorgh of the fifth labour is among the most philosophically complex moments in the Haft Khan. Esfandiyar has to kill a creature the reader has been taught to revere. Ferdowsi's point is careful: there are dark forms of every sacred thing, and a hero must be capable of distinguishing them.",
+      biography_fa: "سیمرغِ خانِ پنجم از نظرِ فلسفی پیچیده‌ترین لحظاتِ هفت‌خان است. اسفندیار باید موجودی را بکشد که خواننده آموخته به او احترام بگذارد.",
+      faction: "Creatures of Turan · Haft Khan Esfandiyar",
+      mythologyRole: "Khan 5 · Sacred form corrupted · The shadow of the divine",
+      powers: ["+22% Energy Regen", "+100 Zar/hr", "Passive: Shadow Eye — rare card drop chance +12%"],
+      storyAppearances: ["Haft Khan Esfandiyar — Fifth Labour: The Simorgh"],
+      side: "dark", season: 2, order: 74, cost: 12000, zar_per_hour: 100,
+      collectionId: "S2-ESP-005", nftReady: false,
+      prereq: { hero_id: "esp-sorceress", level: 1 },
+      unlockCondition: "Own Sorceress of Turan (Khan 4)",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan Esfandiyar · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan_esp: true, haft_khan_esp_order: 5,
+    },
+    {
+      id: "esp-blizzard",
+      name: "The Great Blizzard — Sixth Labour",
+      name_fa: "کولاکِ بزرگ — خانِ ششم",
+      name_tg: "Буронии Бузург — Хони Шашум",
+      type: "artifact", rarity: "mythic", chapter: "haft-khan-esp",
+      emoji: "❄",
+      role: "Khan 6 · The Enemy That Cannot Be Fought · Will Over Nature",
+      role_fa: "خانِ ششم · دشمنی که نمی‌توان با او جنگید · اراده بر طبیعت",
+      lore: "No enemy came at the sixth stage — only the sky. A blizzard of such force it buried soldiers alive descended on the army. There was nothing to defeat with a sword. Esfandiyar led his army through by will alone. The sixth labour taught what cannot be fought — only outlasted.",
+      lore_fa: "در خانِ ششم هیچ دشمنی نیامد — فقط آسمان. کولاکی به قدری شدید که سربازان را زنده زیرِ خود دفن کرد. اسفندیار سپاهش را فقط با اراده عبور داد.",
+      biography: "The blizzard is the Shahnameh's most unusual labour — the enemy is the world itself. Esfandiyar cannot stab it, cannot outmanoeuvre it, cannot reason with it. He can only persist. The sixth labour is the greatest lesson of the Haft Khan: sometimes endurance is the only weapon, and it is enough.",
+      biography_fa: "کولاک غیرمعمول‌ترین خانِ شاهنامه است — دشمن خودِ جهان است. اسفندیار نمی‌تواند آن را بزند، دور بزند یا با آن استدلال کند. فقط می‌تواند پایدار بماند.",
+      faction: "Forces of Nature · Haft Khan Esfandiyar",
+      mythologyRole: "Khan 6 · Endurance as heroism · Nature's indifference defeated by will",
+      powers: ["+35% Tap Power (Endurance)", "+150 Zar/hr", "Passive: Into the Storm — daily streak bonus +25%"],
+      storyAppearances: ["Haft Khan Esfandiyar — Sixth Labour: The Blizzard"],
+      side: "light", season: 2, order: 75, cost: 18000, zar_per_hour: 150,
+      collectionId: "S2-ESP-006", nftReady: false,
+      prereq: { hero_id: "esp-simorgh", level: 1 },
+      unlockCondition: "Own Shadow Simorgh (Khan 5)",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan Esfandiyar · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan_esp: true, haft_khan_esp_order: 6,
+    },
+    {
+      id: "esp-ruyeen-dej",
+      name: "Ruyeen-Dej — The Brass Fortress",
+      name_fa: "رویین‌دژ — دژِ برنجین",
+      name_tg: "Руйиндеж — Қалъаи Биринҷӣ",
+      type: "artifact", rarity: "mythic", chapter: "haft-khan-esp",
+      emoji: "🏰",
+      role: "Khan 7 · The Brass Fortress · Sisters Freed · Intelligence Defeats the Unbreakable",
+      role_fa: "خانِ هفتم · دژِ برنجین · خواهران آزاد شدند · هوش بر شکست‌ناپذیر پیروز شد",
+      lore: "At the end of the seven labours stood Ruyeen-Dej — the Brass Fortress, impenetrable by force. Behind its walls his sisters Humay and Hamaspand were held captive. Esfandiyar had crossed six labours by sword and arrow. He crossed the seventh as a merchant. The brass walls fell without a blow.",
+      lore_fa: "در پایانِ هفت خان، رویین‌دژ ایستاده بود — دژِ برنجین که با زور نفوذناپذیر بود. پشتِ دیوارهایش خواهرانش حُمای و همسپندش اسیر بودند. اسفندیار شش خان را با شمشیر و تیر گذشته بود. هفتمین را به صورتِ بازرگانی گذشت.",
+      biography: "Ruyeen-Dej is the pinnacle of the Haft Khan-e Esfandiyar — and its final lesson. Six labours proved strength, speed, preparation, faith, judgment, and endurance. The seventh required none of those. It required intelligence. The unbreakable fortress falls to the man who stops trying to break it.",
+      biography_fa: "رویین‌دژ اوجِ هفت‌خانِ اسفندیار است — و آخرین درسِ آن. شش خان قدرت، سرعت، آمادگی، ایمان، قضاوت و استقامت را ثابت کرد. هفتمین به هیچ‌کدام از آن‌ها نیاز نداشت. به هوش نیاز داشت.",
+      faction: "Fortresses of Turan · Haft Khan Esfandiyar · Liberation",
+      mythologyRole: "Khan 7 · Brass fortress taken by wit · Sisters freed · End of the Haft Khan",
+      powers: ["+45% Tap Power (Liberation Force)", "+200 Zar/hr", "Passive: The Merchant's Gate — offline ZAR income +30%"],
+      storyAppearances: ["Haft Khan Esfandiyar — Seventh Labour: Ruyeen-Dej", "Liberation of Humay and Hamaspand"],
+      side: "light", season: 2, order: 76, cost: 25000, zar_per_hour: 200,
+      collectionId: "S2-ESP-007", nftReady: false,
+      prereq: { hero_id: "esp-blizzard", level: 1 },
+      unlockCondition: "Own The Great Blizzard (Khan 6)",
+      tonMetadata: { standard: "TEP-62", collection: "Haft Khan Esfandiyar · Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      haft_khan_esp: true, haft_khan_esp_order: 7,
+    }
+  );
+
+  /* =========================================================
      ARTIFACTS OF THE POET — Ferdowsi biographical collectibles
      ========================================================= */
   COLLECTION.push(
@@ -1420,6 +1594,8 @@
   };
 
   /* ── Haft Khan sequential view ─────────────────────────────────────── */
+  let currentHkHero = "rostam"; // tracks which sub-tab is active
+
   const KHAN_STORIES = [
     "Rostam slept in the reeds. A lion came. Rakhsh fought alone and killed it without waking his master. The first labour was the horse's victory.",
     "A waterless desert nearly killed them. Rostam prayed. A mystical ram appeared and led them to a hidden spring. Divine mercy arrives when earned.",
@@ -1430,7 +1606,20 @@
     "In the dark cave at Mazandaran's heart, Rostam wrestled the White Demon — enormous, pale as iron. Their battle shook the mountain. Rostam tore out his liver. Its blood, dripped into blind eyes, gave back sight. The seventh labour was a cure.",
   ];
 
-  const buildHaftKhanView = () => {
+  const KHAN_ESP_STORIES = [
+    "Two ferocious wolves blocked the road to Turan. Esfandiyar shot them both with his bow. The first labour was won by precision — the wolf's charge is fastest when it thinks you are afraid.",
+    "Two lions stood guard at the second stage. Esfandiyar dismounted and fought them by hand. The second labour rewarded directness — he stood in the path and refused to move.",
+    "A great dragon came at the third stage. Esfandiyar had built a chariot fitted with long blades pointing outward. He drove it into the dragon's open jaws. The beast destroyed itself swallowing the blades. The third labour was won before it began.",
+    "A sorceress appeared as a beautiful woman and set a feast. When Esfandiyar spoke the name of God, she was revealed in her true form. He killed her. The fourth labour taught: the beautiful trap is the most dangerous kind.",
+    "The fifth labour set a great Simorgh against him — not the gentle guardian who raised Zal, but its dark reflection. Esfandiyar shot it from the sky. Even the most sacred symbols have shadow forms that must be faced.",
+    "No enemy came at the sixth stage — only the sky. A blizzard of such force it buried soldiers alive descended on the army. There was nothing to defeat with a sword. Esfandiyar led his army through by will alone.",
+    "At the end of the seven labours stood Ruyeen-Dej — the Brass Fortress, impenetrable by force. His sisters Humay and Hamaspand were held inside. Esfandiyar crossed six labours by sword. He crossed the seventh as a merchant. The brass walls fell without a blow.",
+  ];
+
+  const buildHaftKhanView = (hero) => {
+    if (hero) currentHkHero = hero;
+    const isEsp = currentHkHero === "esfandiyar";
+
     const view = document.getElementById("haft-khan-view");
     const grid = document.getElementById("coll-grid");
     if (!view) return;
@@ -1439,7 +1628,10 @@
     view.style.display = "block";
     view.innerHTML = "";
 
-    const khans = COLLECTION.filter(i => i.haft_khan).sort((a,b) => a.haft_khan_order - b.haft_khan_order);
+    const khans = isEsp
+      ? COLLECTION.filter(i => i.haft_khan_esp).sort((a, b) => a.haft_khan_esp_order - b.haft_khan_esp_order)
+      : COLLECTION.filter(i => i.haft_khan).sort((a, b) => a.haft_khan_order - b.haft_khan_order);
+
     const ownedCount = khans.filter(k => ownedHeroes[k.id]).length;
     const pips = khans.map((k, i) => {
       const owned = ownedHeroes[k.id];
@@ -1447,17 +1639,34 @@
       return `<div class="${cls}"></div>`;
     }).join("");
 
+    const bannerKicker = isEsp ? "🏹 Haft Khan-e Esfandiyar" : "⚔ Haft Khan-e Rostam";
+    const bannerTitle  = isEsp ? "هفت خوان اسفندیار" : "هفت خوان رستم";
+    const bannerSub    = isEsp
+      ? "Read each labour's story · Unlock the card with REAL · Upgrade with ZAR for passive mining. All seven labours end at the Brass Fortress."
+      : "Read each labour's story · Unlock the card with REAL · Upgrade with ZAR for passive mining. Complete all seven to earn the chronicle's highest ROI.";
+    const stories = isEsp ? KHAN_ESP_STORIES : KHAN_STORIES;
+
     view.innerHTML = `
+      <div class="hk-hero-tabs">
+        <button class="hk-hero-tab${!isEsp ? " active" : ""}" data-hk-hero="rostam">⚔ هفت خوان رستم</button>
+        <button class="hk-hero-tab${isEsp ? " active" : ""}" data-hk-hero="esfandiyar">🏹 هفت خوان اسفندیار</button>
+      </div>
       <article class="hk-banner">
-        <div class="hk-banner-kicker">⚔ Haft Khan-e Rostam</div>
-        <div class="hk-banner-title">The Seven Labours</div>
-        <div class="hk-banner-sub">Read each labour's story · Unlock the card with REAL · Upgrade with ZAR for passive mining. Complete all seven to earn the chronicle's highest ROI.</div>
+        <div class="hk-banner-kicker">${bannerKicker}</div>
+        <div class="hk-banner-title">${bannerTitle}</div>
+        <div class="hk-banner-sub">${bannerSub}</div>
         <div class="hk-progress">${pips}</div>
       </article>
       <div id="hk-steps"></div>`;
 
+    /* Wire sub-tab clicks */
+    view.querySelectorAll("[data-hk-hero]").forEach(btn => {
+      btn.addEventListener("click", () => buildHaftKhanView(btn.dataset.hkHero));
+    });
+
     const stepsEl = view.querySelector("#hk-steps");
     khans.forEach((item) => {
+      const order  = item.haft_khan_order || item.haft_khan_esp_order;
       const state  = heroEconomyState(item);
       const owned  = ownedHeroes[item.id];
       const lvl    = owned ? (owned.level || 1) : 0;
@@ -1466,13 +1675,12 @@
       const stateClass = state === "owned" ? "hk-owned" : state === "available" ? "hk-available" : "hk-locked";
 
       let badge = "";
-      if (state === "owned")     badge = `<span class="hk-step-badge hk-badge-owned">Lv.${lvl} · ${fmtN(zarHr)} ZAR/hr</span>`;
-      else if (state === "available") badge = `<span class="hk-step-badge hk-badge-available">${fmtN(cost)} ${t('currency_name','REAL')}</span>`;
-      else                       badge = `<span class="hk-step-badge hk-badge-locked">🔒</span>`;
+      if (state === "owned")          badge = `<span class="hk-step-badge hk-badge-owned">Lv.${lvl} · ${fmtN(zarHr)} ZAR/hr</span>`;
+      else if (state === "available") badge = `<span class="hk-step-badge hk-badge-available">${fmtN(cost)} ${t("currency_name", "REAL")}</span>`;
+      else                            badge = `<span class="hk-step-badge hk-badge-locked">🔒</span>`;
 
-      const story = KHAN_STORIES[item.haft_khan_order - 1] || "";
-      const itemName = locF(item, 'name') || item.name;
-      const baseZar  = 50 * item.haft_khan_order; // progressive base for upgrade preview
+      const story    = stories[order - 1] || "";
+      const itemName = locF(item, "name") || item.name;
       const upgCost  = cost * Math.max(1, lvl);
 
       let econHtml = "";
@@ -1481,16 +1689,16 @@
           <div class="hk-econ">
             <div class="hk-zar-stat">🪙 ${fmtN(zarHr)} ZAR/hr at Lv.1</div>
             <button class="hk-buy-btn" data-hk-buy="${item.id}" data-cost="${cost}">
-              ${RT} ${fmtN(cost)} — ${t('hero_buy_cta_label','Buy Hero')}
+              ${RT} ${fmtN(cost)} — ${t("hero_buy_cta_label", "Buy Hero")}
             </button>
           </div>`;
       } else if (state === "owned") {
-        const nextZar = (item.zar_per_hour || 50) + 50 * item.haft_khan_order;
+        const nextZar = (item.zar_per_hour || 50) + 50 * order;
         econHtml = `
           <div class="hk-econ">
             <div class="hk-zar-stat">🪙 +${fmtN(zarHr)} ZAR/hr now</div>
             <button class="hk-upg-btn" data-hk-upgrade="${item.id}" data-cost="${upgCost}" data-next-zar="${nextZar}">
-              ↑ Lv.${lvl + 1} · +${fmtN(50 * item.haft_khan_order)}/hr · ${fmtN(upgCost)} ${t('currency_name','REAL')}
+              ↑ Lv.${lvl + 1} · +${fmtN(50 * order)}/hr · ${fmtN(upgCost)} ${t("currency_name", "REAL")}
             </button>
           </div>`;
       }
@@ -1500,10 +1708,10 @@
       step.dataset.heroId = item.id;
       step.innerHTML = `
         <div class="hk-step-head">
-          <div class="hk-num">${item.haft_khan_order}</div>
+          <div class="hk-num">${order}</div>
           <div class="hk-step-info">
             <div class="hk-step-title">${itemName}</div>
-            <div class="hk-step-sub">${locF(item,'role') || item.role}</div>
+            <div class="hk-step-sub">${locF(item, "role") || item.role}</div>
           </div>
           ${badge}
         </div>
@@ -1522,7 +1730,7 @@
         if (!item) return;
         btn.disabled = true; btn.textContent = "…";
         await handleEconomyAction(btn, item);
-        buildHaftKhanView(); // refresh the whole view
+        buildHaftKhanView();
       });
     });
 

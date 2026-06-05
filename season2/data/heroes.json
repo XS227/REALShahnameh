@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-10T01:40:09.843Z",
+  "updatedAt": "2026-06-05T09:31:00.000Z",
   "heroes": [
     {
       "slug": "rostam",
@@ -10,7 +10,7 @@
       "era": "rostam-saga",
       "category": "people",
       "description": "Pahlavan of the age — server-persisted edit at 01:32:14",
-      "image_url": "",
+      "image_url": "/season2/uploads/heroes/rostam.webp",
       "power": 980,
       "level": 12,
       "max_level": 30,
@@ -46,7 +46,7 @@
       "era": "zal-saga",
       "category": "people",
       "description": "Acceptance test edit at 014009",
-      "image_url": "/season2/uploads/heroes/zal.png",
+      "image_url": "/season2/uploads/heroes/zal.webp",
       "power": 540,
       "level": 7,
       "max_level": 20,
@@ -82,7 +82,7 @@
       "era": "zahhak-fereydun",
       "category": "people",
       "description": "Two serpents grow from his shoulders. Their daily price is two human brains.",
-      "image_url": "/season2/uploads/heroes/zahhak.jpg",
+      "image_url": "/season2/uploads/heroes/zahhak.webp",
       "power": 620,
       "level": 4,
       "max_level": 20,
@@ -100,7 +100,7 @@
       "era": "zahhak-fereydun",
       "category": "people",
       "description": "Bull-headed mace, liberator of Pars.",
-      "image_url": "/season2/uploads/heroes/fereydun.jpg",
+      "image_url": "/season2/uploads/heroes/fereydun.webp",
       "power": 700,
       "level": 5,
       "max_level": 25,

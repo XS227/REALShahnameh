@@ -455,17 +455,17 @@
       const emo     = escapeHtml(heroEmoji(slug));
       let   imgTag  = '';
       if (h.image_url) {
-        imgTag = `<img src="${escapeAttr(h.image_url)}" alt="${escapeAttr(h.name)}"
-          onerror="this.remove()">`;
+        // image_url is set (prefer webp; fall back to png then jpg if webp fails)
+        const fbPng = h.image_url.replace(/\.\w+$/, '.png');
+        const fbJpg = h.image_url.replace(/\.\w+$/, '.jpg');
+        imgTag = `<img src="${escapeAttr(h.image_url)}" alt="${escapeAttr(h.name)}" onerror="if(!this.dataset.fb1){this.dataset.fb1='1';this.src='${escapeAttr(fbPng)}';}else if(!this.dataset.fb2){this.dataset.fb2='1';this.src='${escapeAttr(fbJpg)}';}else{this.remove();}">`;
       } else {
-        // Try asset path first, then uploads fallbacks
-        const asset = `/assets/images/heroes/${slugEnc}-hero.png`;
-        const upPng = `/season2/uploads/heroes/${slugEnc}.png`;
-        const upJpg = `/season2/uploads/heroes/${slugEnc}.jpg`;
-        imgTag = `<img src="${escapeAttr(asset)}" alt="${escapeAttr(h.name)}"
-          onerror="if(!this.dataset.t1){this.dataset.t1='1';this.src='${escapeAttr(upPng)}';}
-                   else if(!this.dataset.t2){this.dataset.t2='1';this.src='${escapeAttr(upJpg)}';}
-                   else{this.remove();}">`;
+        // No image_url: try asset sprite → webp upload → png upload → jpg upload
+        const asset  = `/assets/images/heroes/${slugEnc}-hero.png`;
+        const upWebp = `/season2/uploads/heroes/${slugEnc}.webp`;
+        const upPng  = `/season2/uploads/heroes/${slugEnc}.png`;
+        const upJpg  = `/season2/uploads/heroes/${slugEnc}.jpg`;
+        imgTag = `<img src="${escapeAttr(asset)}" alt="${escapeAttr(h.name)}" onerror="if(!this.dataset.t1){this.dataset.t1='1';this.src='${escapeAttr(upWebp)}';}else if(!this.dataset.t2){this.dataset.t2='1';this.src='${escapeAttr(upPng)}';}else if(!this.dataset.t3){this.dataset.t3='1';this.src='${escapeAttr(upJpg)}';}else{this.remove();}">`;
       }
       const upgradeUrl = `heroes.html?open=${encodeURIComponent(slug)}`;
       return `

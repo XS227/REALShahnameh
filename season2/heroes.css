@@ -913,6 +913,31 @@
   border-color: rgba(255,138,61,.5);
 }
 
+/* ── Haft Khan hero sub-tabs (Rostam / Esfandiyar) ─────────────── */
+.hk-hero-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0 12px;
+}
+.hk-hero-tab {
+  flex: 1;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,138,61,.3);
+  background: rgba(255,138,61,.06);
+  color: rgba(255,255,255,.55);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.hk-hero-tab.active {
+  background: linear-gradient(135deg, rgba(255,138,61,.22), rgba(244,197,107,.15));
+  border-color: rgba(255,138,61,.55);
+  color: var(--ember, #ff8a3d);
+}
+
 /* ── Haft Khan sequential view ─────────────────────────────────── */
 #haft-khan-view {
   padding: 0 2px;
