@@ -665,24 +665,25 @@
   };
 
   const doReturnPopups = () => {
-    const now       = Date.now();
-    const lastSeen  = parseInt(lsRead(LAST_SEEN_KEY) || '0', 10);
-    const zarPerHr  = parseInt(lsRead('real_total_zar_hr') || '0', 10);
-    const msAway    = lastSeen ? Math.max(0, now - lastSeen) : 0;
-    const minAway   = msAway / 60000;
+    const now      = Date.now();
+    const today    = todayDateStr();
 
-    // Update last-seen for next visit (always)
+    // Always stamp last-seen (used to calculate offline time next visit)
     try { localStorage.setItem(LAST_SEEN_KEY, String(now)); } catch {}
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'hidden')
         try { localStorage.setItem(LAST_SEEN_KEY, String(Date.now())); } catch {}
-    });
+    }, { once: true });
 
-    // --- Offline earnings ---
+    // ── Offline earnings ─────────────────────────────────────────────────
+    const lastSeen  = parseInt(lsRead(LAST_SEEN_KEY) || '0', 10);
+    const zarPerHr  = parseInt(lsRead('real_total_zar_hr') || '0', 10);
+    const msAway    = lastSeen ? Math.max(0, now - lastSeen) : 0;
+    const minAway   = msAway / 60000;
+    const offlineCollectedKey = OFFLINE_SHOWN_KEY + '_' + today; // per-day collect flag
+
     let offlineZar = 0;
-    const shownTs = parseInt(lsRead(OFFLINE_SHOWN_KEY) || '0', 10);
-    const alreadyShownToday = shownTs && (now - shownTs) < 3 * 60 * 60 * 1000; // shown <3h ago
-    if (zarPerHr > 0 && minAway >= 10 && !alreadyShownToday) {
+    if (zarPerHr > 0 && minAway >= 10 && lsRead(offlineCollectedKey) !== '1') {
       const hoursAway = Math.min(minAway / 60, 8);
       const vipBonus  = 1 + (Math.floor(((window.Player && window.Player.getResource)
         ? (window.Player.getResource('xp') || 0) : 0) / 1000)) * 0.05;
@@ -690,57 +691,62 @@
       offlineZar = Math.max(1, Math.floor(hoursAway * zarPerHr * vipBonus * teamMult));
     }
 
-    // --- Daily strike ---
-    const today       = todayDateStr();
-    const lastVisit   = lsRead(LAST_VISIT_KEY) || '';
-    const isNewDay    = lastVisit !== today;
-    let   streak      = parseInt(lsRead(LOCAL_STREAK_KEY) || '1', 10) || 1;
+    // ── Daily strike ─────────────────────────────────────────────────────
+    // Use a per-day "claimed" key so the stamp only happens on collect,
+    // not on popup-open — prevents broken sessions from eating the reward.
+    const strikeClaimKey = 'real_strike_claimed_' + today;
+    const strikeAlreadyClaimed = lsRead(strikeClaimKey) === '1';
 
-    if (isNewDay) {
-      const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
-      if (lastVisit === yesterday) { streak += 1; }
-      else if (lastVisit && lastVisit < yesterday) { streak = 1; } // gap — reset
-      // else: first ever visit, keep streak = 1
+    const lastVisit = lsRead(LAST_VISIT_KEY) || '';
+    let streak = parseInt(lsRead(LOCAL_STREAK_KEY) || '1', 10) || 1;
+    if (!strikeAlreadyClaimed) {
+      // Recalculate streak based on last collected day
+      const yesterday = new Date(now - 86400000).toISOString().slice(0, 10);
+      if (lastVisit === yesterday)                     streak = streak + 1;
+      else if (lastVisit && lastVisit < yesterday)     streak = 1;
+      // else first-ever visit: keep streak = 1
     }
 
-    const dayIdx  = ((streak - 1) % 7);
-    const reward  = DAILY_REWARDS[dayIdx];
+    const reward = DAILY_REWARDS[((streak - 1) % 7)];
 
-    // --- Sequential show ---
-    const afterOffline = () => {
-      if (!isNewDay) return;
-      // Commit daily strike
-      try {
-        localStorage.setItem(LAST_VISIT_KEY, today);
-        localStorage.setItem(LOCAL_STREAK_KEY, String(streak));
-      } catch {}
+    // ── Sequential show ───────────────────────────────────────────────────
+    const refreshHud = () => {
+      if (window.RealResources) {
+        const hud = document.querySelector('[data-resource-hud]');
+        if (hud) window.RealResources.refreshHud(hud);
+      }
+    };
+
+    const showStrike = () => {
+      if (strikeAlreadyClaimed) return;
       showStrikePopup(streak, reward, () => {
+        // Mark claimed ONLY after collect
+        try {
+          localStorage.setItem(strikeClaimKey, '1');
+          localStorage.setItem(LAST_VISIT_KEY, today);
+          localStorage.setItem(LOCAL_STREAK_KEY, String(streak));
+        } catch {}
         if (window.Player) {
           if (reward.xp)  window.Player.addResource('xp',  reward.xp);
           if (reward.zar) window.Player.addResource('zar', reward.zar);
-          if (reward.gem) window.Player.addResource('gems', reward.gem || 0);
+          if (reward.gem) window.Player.addResource('gems', reward.gem);
         }
         if (window.RealSync) window.RealSync.syncBalance();
-        if (window.RealResources) {
-          const hud = document.querySelector('[data-resource-hud]');
-          if (hud) window.RealResources.refreshHud(hud);
-        }
+        refreshHud();
       });
     };
 
     if (offlineZar > 0) {
-      try { localStorage.setItem(OFFLINE_SHOWN_KEY, String(now)); } catch {}
       showOfflinePopup(offlineZar, msAway, () => {
+        // Mark collected ONLY after collect
+        try { localStorage.setItem(offlineCollectedKey, '1'); } catch {}
         if (window.Player) window.Player.addResource('zar', offlineZar);
         if (window.RealSync) window.RealSync.syncBalance();
-        if (window.RealResources) {
-          const hud = document.querySelector('[data-resource-hud]');
-          if (hud) window.RealResources.refreshHud(hud);
-        }
-        afterOffline();
+        refreshHud();
+        showStrike();
       });
     } else {
-      afterOffline();
+      showStrike();
     }
   };
 
