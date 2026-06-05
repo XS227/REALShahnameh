@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 69 · 1009 CE",
-      "era_fa": "1009 CE",
-      "body_en": "Ferdowsi in the last years of the poem's composition, still in poverty, watching the dynasty he had given his life to celebrate show no interest in the chronicle he had built.\n\nWriting about revenge that produces justice without producing peace. Bahman does everything right and at the end of it has a correct victory and a deeper emptiness.\n\nBahman's hundred years of correct rule feel smaller than Rostam's one impossible year. Ferdowsi was writing about what outlasts heroism and what it costs: administration outlasts heroism; it costs the things heroism built.",
-      "body_fa": "فردوسی در آخرین سال‌های نگارشِ شعر، همچنان در فقر، داشت تماشا می‌کرد که سلسله‌ای که عمرش را صرفِ ستایشش کرده شوقی به شاهنامه‌اش نشان نمی‌دهد.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "bahman-gate",
+    "boss_name_en": "Bahman's Grief Turned to Iron",
+    "boss_name_fa": "بهمن — اندوهِ آهنین",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Esfandiyar's son inherited both the throne and the wound. His reign is the shadow of his father's death. To face this gate you must understand how grief becomes policy.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "bahman",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

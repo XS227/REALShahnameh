@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 70 · 1010 CE",
-      "era_fa": "1010 CE",
-      "body_en": "Ferdowsi returned to Tus in his final years, in poverty, to die among his own. He was writing about a queen who ruled alone, without a patron or a champion, and kept the kingdom working anyway.\n\nWriting the last clear chapter of the mythological age — a queen who simply governs. The heroic age is over. The chronicle has entered a different register. Ferdowsi was writing its opening measures.\n\nHomay abandons her son to the river, rules alone, and is not condemned. Ferdowsi understood that the chronicle's survival depended on exactly this kind of choice — putting the necessary thing in the water and trusting the current. He had done the same with the poem.",
-      "body_fa": "فردوسی در آخرین سال‌هایش به طوس برگشت، در فقر. داشت درباره‌ی ملکه‌ای می‌نوشت که تنها، بدونِ حامی یا قهرمان، حکومت می‌کرد و پادشاهی را به کار می‌انداخت.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "homay-gate",
+    "boss_name_en": "The Courts That Refused Her",
+    "boss_name_fa": "دربارهایی که رد کردند",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Every court said a woman could not rule. She proved each one wrong. To face this gate you must hold what Homay held: clarity in a world that has already decided against you.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "homay",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

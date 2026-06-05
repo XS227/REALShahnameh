@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 76 · 1016 CE",
-      "era_fa": "1016 CE",
-      "body_en": "Ferdowsi was a Muslim writing in Arabic script, living under a Muslim dynasty, composing a poem about pre-Islamic Iran. The Arab conquest was not the enemy in his poem — it was the condition that made the poem necessary. If Iran had continued as a Zoroastrian empire with its own scribal tradition intact, there would have been no reason to compile the Shahnameh. The conquest created the loss, and the loss created the project. Ferdowsi understood this, and wrote the conquest chapter with the care of a man describing the fire that had burned his library and also, indirectly, motivated him to reconstruct it.\n\nWriting about the conquest without vilifying the conquerors or romanticizing the conquered required Ferdowsi to operate at a level of historical maturity that most poets do not reach. He did it by making the chapter about loss rather than blame — what was extinguished, what was scattered, what survived. The fire temples and the archives and the priesthood are the chapter's real subjects. The armies are just the mechanism. The Shahnameh mourns the fire, not the men who put it out.\n\nThe Arab Conquest chapter is the Shahnameh's most politically charged passage, because it describes the event that made the Shahnameh necessary. Every chapter before it was building toward this — the whole poem is a response to this chapter. And yet Ferdowsi does not end here. He has four more chapters to write, because the conquest of a state is not the conquest of a culture, and the poem has more to say about what Iran is than about what empire it once had.",
-      "body_fa": "فردوسی مسلمانی بود که با خط عربی می‌نوشت، زیر سلسله مسلمان زندگی می‌کرد، شعری درباره ایران پیش از اسلام می‌سرود. فتح عرب در شعرش دشمن نبود — شرطی بود که شعر را ضروری می‌کرد. اگر ایران به عنوان امپراتوری زرتشتی با سنت کاتبانه خود دست‌نخورده ادامه می‌داد، دلیلی برای تدوین شاهنامه نبود. فتح از دست دادن را ایجاد کرد و از دست دادن پروژه را ایجاد کرد. فردوسی این را می‌فهمید، و فصل فتح را با دقت مردی نوشت که کتابخانه‌اش را آتش زده بود و همچنین به طور غیرمستقیم انگیزه‌اش برای بازسازی آن.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "arab-conquest-gate",
+    "boss_name_en": "Qadisiyya and Nihavand",
+    "boss_name_fa": "قادسیه و نهاوند",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Two battles and a millennium ends. The Shahnameh does not look away. To face this gate you must understand how Ferdowsi wrote the conquest of his own civilization.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "arab-conquest",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

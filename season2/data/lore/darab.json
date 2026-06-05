@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 71 · 1011 CE",
-      "era_fa": "1011 CE",
-      "body_en": "The poem is near its end. Ferdowsi is old, in poverty, in Tus. He has outlived most of the people who knew him as a young poet. He is writing about a prince who carried a sealed document naming what he was — and did not know what it contained until someone else read it.\n\nWriting about a man who grew up as a washerman's son and discovered he was a king. Ferdowsi had grown up as a landowner's son and discovered he was a poet. Both transformations required someone else to read the letter — to confirm what the person carrying it already knew, without yet having words for it.\n\nDarab's foundling story is the Shahnameh's last great hidden-prince. Zal was left on the mountain and raised by the Simorgh. Darab was sealed in a chest and raised by a washerman. Both return. The river does not forget. The mountain does not forget. The chronicle does not forget.",
-      "body_fa": "شعر نزدیکِ پایان است. فردوسی پیر است، در فقر، در طوس. دارد درباره‌ی شاهزاده‌ای می‌نویسد که سندِ مهرشده‌ای را با خود حمل می‌کرد که می‌گفت چیست — و نمی‌دانست چه دارد تا کسی دیگر آن را خواند.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "darab-gate",
+    "boss_name_en": "The River and the Secret",
+    "boss_name_fa": "رودخانه و راز",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Darab was thrown into a river as an infant and raised by a launderer. The throne did not know it had lost an heir. To face this gate you must understand what legitimate claim costs to recover.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "darab",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

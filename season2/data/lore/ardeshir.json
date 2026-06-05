@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 73 · 1013 CE",
-      "era_fa": "1013 CE",
-      "body_en": "The Sasanian dynasty that Ardeshir founded was the direct cultural predecessor of the world Ferdowsi was trying to preserve. The Shahnameh's source texts — the Khodaynamag and the Zoroastrian priestly records — were Sasanian products. Writing Ardeshir's story meant writing the origin of his own tradition. Ferdowsi was also watching the Ghaznavid sultan attempt something similar: the forcible unification of a fragmented eastern Iranian world under a single court. The parallel was uncomfortable and probably deliberate.\n\nThe Haftvad episode gave Ferdowsi a way to talk about the thing that resists unification without naming it directly. The worm is not evil in the usual sense — it brought real prosperity to real people. What it could not do was coexist with empire. Every centrifugal force in Iranian history — every regional loyalty, every local god, every stubborn particular — is in that worm. Ardeshir kills it not because it was wicked but because empires require the elimination of alternatives.\n\nArdeshir's reign is the pivot on which the entire second half of the Shahnameh turns. Before him, the chronicle was myth layered over dim history. After him, it is history layered over myth. The Sasanian kings who follow — Shapur, Bahram, Khosrow — are figures whose names appear in Roman sources, Byzantine chronicles, and stone inscriptions. The poem enters the world of verifiable fact. Ardeshir made that transition possible by building an empire coherent enough to leave records.",
-      "body_fa": "سلسله ساسانی که اردشیر بنیان گذاشت پیشین مستقیم فرهنگی دنیایی بود که فردوسی می‌کوشید حفظ کند. متون منبع شاهنامه — خداینامه و آثار روحانیون زرتشتی — محصولات ساسانی بودند. نوشتن داستان اردشیر یعنی نوشتن خاستگاه سنت خودش. فردوسی همچنین می‌دید که سلطان غزنوی چیز مشابهی را تلاش می‌کند: اتحاد اجباری دنیای شرقی ایرانی پراکنده زیر یک دربار. تشابه ناخوشایند بود و احتمالاً عمدی.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "ardeshir-gate",
+    "boss_name_en": "The Herdsman's Prophecy",
+    "boss_name_fa": "پیشگوییِ چوپان",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "A court astrologer read the stars and named a herdsman's son as the next dynasty. Ardeshir built the Sasanian empire on that prophecy and his own ferocity. To face this gate you must understand how empires begin.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "ardeshir",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

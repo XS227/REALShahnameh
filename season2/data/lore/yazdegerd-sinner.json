@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 74 · 1014 CE",
-      "era_fa": "1014 CE",
-      "body_en": "Ferdowsi's source for Yazdegerd I was primarily the Zoroastrian priestly tradition, which had every reason to remember him harshly. The Khodaynamag, compiled under Sasanian patronage, reflected the clergy's verdict. But Ferdowsi was writing in an Islamic context where Yazdegerd's tolerance of non-Zoroastrians would not necessarily read as sinful. The tension in the chapter — between what the sources said and what Ferdowsi could see — produced one of the Shahnameh's more nuanced royal portraits: a man condemned by his own tradition for virtues another tradition would have celebrated.\n\nWriting a king whose most sympathetic qualities were the ones his own tradition condemned required Ferdowsi to let the contradiction stand without resolving it. He does not rehabilitate Yazdegerd or defend him — he simply presents the evidence and lets the reader see that 'sinner' is a word applied by people with interests. The mysterious horse at the spring is Ferdowsi's most pointed ambiguity: it could be divine judgment, a natural accident, or a conspiracy. He does not choose. Neither should we.\n\nYazdegerd the Sinner is the Shahnameh's clearest example of a king remembered by his enemies. Every other royal epithet in the poem — the Just, the Great, the Brave — was applied by admirers. This one was applied by men who feared and resented him. Ferdowsi preserved it without endorsing it, and in doing so created a space where the reader can question whose verdict history actually records. That skepticism about official memory is, quietly, one of the most radical things the Shahnameh does.",
-      "body_fa": "منبع فردوسی برای یزدگرد اول عمدتاً سنت روحانیون زرتشتی بود که هر دلیلی داشتند که او را به سختی به یاد بیاورند. خداینامه که تحت حمایت سلطنتی ساسانی تدوین شده بود، حکم روحانیون را منعکس می‌کرد. اما فردوسی در زمینه اسلامی می‌نوشت که در آن تساهل یزدگرد نسبت به غیرزرتشتیان لزوماً گناه به نظر نمی‌رسید. این تنش — بین آنچه منابع می‌گفتند و آنچه فردوسی می‌توانست ببیند — یکی از ظریف‌ترین تصویرهای سلطنتی شاهنامه را تولید کرد.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "yazdegerd-sinner-gate",
+    "boss_name_en": "The Tyrant's Mirror",
+    "boss_name_fa": "آیینه‌ی ستمکار",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "The Shahnameh gave Yazdegerd a name — Sinner — and justified it at length. His cruelty produced its own punishment. To face this gate you must understand what the chronicle means when it names a king with his crime.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "yazdegerd-sinner",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

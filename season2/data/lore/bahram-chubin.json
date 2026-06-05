@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 74 · 1014 CE",
-      "era_fa": "1014 CE",
-      "body_en": "Bahram Chubin's rebellion was one of the most dramatic moments of late Sasanian history, and his story had circulated in Persian oral tradition long before Ferdowsi. He was a figure the audience already knew and already argued about. Ferdowsi was writing for people who would have opinions about whether Bahram was a hero or a traitor — and who would bring those opinions to the text. Writing for a known controversy requires more care than writing for a blank page. Ferdowsi's sympathy for Bahram is visible but never stated directly.\n\nThe distaff is one of the most powerful objects in the Shahnameh — a small domestic item that detonates an empire. Ferdowsi understood that the insult worked because Bahram's entire identity was constructed around martial honor, and that Hormuz had found the exact pressure point. Writing that scene required Ferdowsi to make the reader feel the humiliation viscerally enough to understand why a great general abandoned everything for revenge. The object does that work that a thousand lines of motivation could not.\n\nBahram Chubin represents the last serious attempt by the old Arsacid/Parthian nobility to reclaim power from the Sasanians before the Arab conquest ended the argument permanently. His failure proved that the Sasanian house, even weakened, had resources — Byzantine allies, Farr-language, the weight of tradition — that a rebel general could not match. The chronicle mourns him anyway, because the empire that survived him was the one that would fall to the Arabs within a generation. He was the last great Iranian military figure before the end.",
-      "body_fa": "شورش بهرام چوبین یکی از دراماتیک‌ترین لحظات تاریخ دیررس ساسانی بود و داستانش در سنت شفاهی ایرانی بسیار پیش از فردوسی جریان داشت. او شخصیتی بود که مخاطب از قبل می‌شناخت و از قبل درباره‌اش بحث می‌کرد. فردوسی برای مردمی می‌نوشت که درباره اینکه آیا بهرام قهرمان بود یا خائن نظر داشتند. همدردی فردوسی با بهرام قابل مشاهده است اما هیچ‌گاه مستقیماً بیان نمی‌شود.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "bahram-chubin-gate",
+    "boss_name_en": "The General Who Dared",
+    "boss_name_fa": "سرداری که جرئت کرد",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Bahram Chubin was the greatest general of his age and he decided that was enough to make him king. He was wrong — but only barely, and only after reshaping the entire political order. To face this gate you must understand the difference between deserving and being entitled to a throne.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "bahram-chubin",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

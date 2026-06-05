@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 72 · 1012 CE",
-      "era_fa": "1012 CE",
-      "body_en": "The poem is nearly done. Ferdowsi writes about the end of the Achaemenid age — a dynasty that had been great and is now finished, replaced by something that carries its blood but not its form. He was watching the old Persian cultural dominance give way to Ghaznavid Turkish patronage, and the parallels were felt rather than stated.\n\nWriting about the moment when an old way of doing things ends — not because it was wrong but because something faster arrived. Dara was not a bad king. The old methods were not bad methods. They had simply been superseded. Ferdowsi knew this feeling intimately.\n\nTwo half-brothers who meet only when one is dying. Sekandar weeps over Dara — the conqueror mourning the conquered, revealed to be the same blood. Ferdowsi built this recognition to arrive too late. The chronicle understood that the most important truths about people arrive at the moment when they can no longer change anything.",
-      "body_fa": "شعر تقریباً تمام است. فردوسی درباره‌ی پایانِ عصرِ هخامنشی می‌نویسد — سلسله‌ای که بزرگ بود و حالا تمام شده. داشت تسلطِ فرهنگیِ کهنِ فارسی را می‌دید که جای خود را به حمایتِ ترکیِ غزنوی می‌داد.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "dara-gate",
+    "boss_name_en": "The Greek Tide",
+    "boss_name_fa": "موجِ یونانی",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Dara refused to bend. The Shahnameh records his pride without apology and his defeat without contempt. To face this gate you must hold both truths at once.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "dara",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

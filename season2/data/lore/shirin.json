@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 75 · 1015 CE",
-      "era_fa": "1015 CE",
-      "body_en": "Shirin's story was already famous in oral tradition before Ferdowsi wrote it, and would become more famous after — Nizami would dedicate an entire epic to her in the 12th century. Ferdowsi was therefore writing a version of a story his audience knew, which required him to justify his telling. His version centers on the death scene: a woman who controls the only thing left within her control. Writing at the end of a long life in a world that had not always been kind to Persian culture, Ferdowsi may have understood that choice better than most.\n\nThe Farhad subplot is the chapter's structural risk — it introduces a rival who is more sympathetic in some ways than Khosrow, and it requires Ferdowsi to hold both the king and the sculptor in the same frame without choosing between them. His solution was the mountain: Farhad's carvings remain. The lie that killed him is permanent. Shirin carries that knowledge and still chooses Khosrow's tomb over Shiruyeh's court. The Shahnameh does not explain her choice. It simply shows her making it.\n\nShirin is the Shahnameh's proof that the poem can hold women at its center without diminishing them. She is not defined by who loves her but by what she chooses. The Farhad episode shows a woman whose presence alone drives a man to impossible labor; the death scene shows a woman who defines her own ending. Nizami would build an empire of poetry on this foundation. Ferdowsi built the foundation by refusing to make her a trophy for either the king or the sculptor.",
-      "body_fa": "داستان شیرین قبل از اینکه فردوسی آن را بنویسد در سنت شفاهی مشهور بود و بعد مشهورتر می‌شد — نظامی در قرن دوازدهم یک حماسه کامل به او اختصاص می‌داد. بنابراین فردوسی نسخه‌ای از داستانی می‌نوشت که مخاطبش می‌دانست، که از او می‌خواست روایتش را توجیه کند. نسخه او روی صحنه مرگ متمرکز است: زنی که تنها چیزی را که در کنترلش مانده کنترل می‌کند. فردوسی در پایان عمر طولانی در دنیایی که همیشه با فرهنگ ایرانی مهربان نبود، شاید آن انتخاب را بهتر از اکثر مردم می‌فهمید.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "shirin-gate",
+    "boss_name_en": "The Courts of Grief",
+    "boss_name_fa": "دربارهای اندوه",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Shirin outlasted Khosrow Parviz, outlasted the wars, outlasted the dynasty. Her courage was quieter than the battles around her and more durable. To face this gate you must understand what the Shahnameh means when it follows a queen instead of a king.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "shirin",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

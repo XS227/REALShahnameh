@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 73 · 1013 CE",
-      "era_fa": "1013 CE",
-      "body_en": "The capture of Valerian at Edessa in 260 CE was one of the most celebrated events in Persian historical memory. Ferdowsi had access to this story through Sasanian royal records that had every reason to preserve it in full. He was also writing at a moment when the Islamic world's relationship with Byzantium — Rome's heir — was one of ongoing conflict. The old Persian victory over Rome carried a resonance in 1013 CE that it would not have carried in a purely academic retelling. Iran had beaten Rome. That fact still mattered.\n\nWriting a king whose greatest achievement was humiliating a foreign emperor risked becoming simple triumphalism — the kind of poetry that flatters its audience without illuminating anything. Ferdowsi avoided this by giving Shapur the spy mission first. A king who risks himself personally before he risks his army is a different kind of king than one who simply commands from behind. The capture of Valerian becomes a consequence of that earlier courage rather than a raw display of Iranian superiority.\n\nShapur's victory over Rome established a precedent the Shahnameh would return to again and again in the Sasanian chapters: Iran at its best is not merely an equal to the western empires but their superior. This is not simple chauvinism — it is a survival argument. Ferdowsi was writing for an audience living under Ghaznavid Turkish rule, and the memory of an Iran that had once made Rome kneel was not entertainment. It was evidence that the condition of subjugation they were living in was temporary, and that the Farr could move again.",
-      "body_fa": "اسارت والریان در ادسا در سال ۲۶۰ میلادی یکی از جشن‌گرفته‌ترین رویدادها در حافظه تاریخی ایرانی بود. فردوسی از طریق آثار سلطنتی ساسانی به این داستان دسترسی داشت که هر دلیلی داشتند که آن را کامل حفظ کنند. همچنین در لحظه‌ای می‌نوشت که رابطه دنیای اسلام با بیزانس — وارث روم — در تعارض مداوم بود. پیروزی قدیمی ایران بر روم در سال ۱۰۱۳ میلادی طنینی داشت که در یک بازگویی صرفاً آکادمیک نمی‌داشت.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "shapur-gate",
+    "boss_name_en": "Rome on its Knees",
+    "boss_name_fa": "رُم به زانو",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Two Roman emperors captured. Shapur's name carved in stone for fifteen centuries. To face this gate you must understand how the Shahnameh measures greatness at its most absolute.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "shapur",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

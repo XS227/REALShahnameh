@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 75 · 1015 CE",
-      "era_fa": "1015 CE",
-      "body_en": "Hormuz's reign is the Shahnameh's case study in how a great empire can be undone not by external conquest but by internal mistrust. Ferdowsi had watched the Samanid dynasty — the Persian cultural renaissance he had grown up in — collapse for similar reasons: court factionalism, rulers who could not hold the loyalty of their generals, the slow hemorrhage of competent men who decided service was no longer worth the risk. Hormuz was therefore not just history. He was a pattern Ferdowsi recognized.\n\nWriting a king who deserves no sympathy but also no contempt — just a clear-eyed account of how a man's fear destroyed everything around him. Ferdowsi did not need to condemn Hormuz. He only needed to show the distaff, the blinding, and the empty throne. The reader does the rest. The Shahnameh's restraint here is deliberate: Hormuz is less interesting as a villain than as a warning about what happens when a ruler substitutes suspicion for judgment.\n\nHormuz is the hinge between Anushirvan's peak and Khosrow Parviz's turbulent greatness. He exists in the chronicle to show that excellence does not inherit — that each generation must earn its authority fresh, and that a son who coasts on his father's reputation will eventually face a court that remembers the father more clearly than it fears the son. The blinding is the empire's judgment on a king who could not see what he had been given.",
-      "body_fa": "سلطنت هرمز مطالعه موردی شاهنامه است در مورد اینکه چگونه یک امپراتوری بزرگ نه با فتح خارجی بلکه با بی‌اعتمادی داخلی می‌تواند از بین برود. فردوسی شاهد فروپاشی سلسله سامانی — رنسانس فرهنگی ایرانی که در آن بزرگ شده بود — به دلایل مشابه بود: فرقه‌بازی دربار، حاکمانی که نتوانستند وفاداری سرداران خود را حفظ کنند، خونریزی آرام مردان شایسته‌ای که تصمیم گرفتند خدمت دیگر ارزش خطر را ندارد. بنابراین هرمز فقط تاریخ نبود. الگویی بود که فردوسی آن را می‌شناخت.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "hormuz-gate",
+    "boss_name_en": "The Crumbling Crown",
+    "boss_name_fa": "تاجِ فروریزنده",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Hormuz inherited the full machinery of his father's justice and wasted it systematically. The throne became a prize in a game among generals. To face this gate you must hold what the Shahnameh means by a king who forgot what kingship is for.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "hormuz",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

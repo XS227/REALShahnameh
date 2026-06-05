@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 72 · 1012 CE",
-      "era_fa": "1012 CE",
-      "body_en": "Ferdowsi was composing at a time when the Islamic conquest had itself disrupted the transmission of pre-Islamic Iranian history. He understood, working from Zoroastrian priestly texts and older royal archives, that the Ashkanian record had been doubly broken — first by Alexander's conquest, then by the Sasanian policy of marginalizing the Arsacid legacy to legitimize their own dynasty. The silence in the Shahnameh about the Arsacids is partly Sasanian propaganda and partly genuine loss, and Ferdowsi knew he could not always tell the difference.\n\nWriting around a gap without pretending it isn't there. Ferdowsi had spent decades reconstructing Iranian memory from scattered sources. Here the sources simply did not exist. His decision to name the kings and say plainly that their deeds were unrecorded is more honest than inventing plausible stories would have been. It is the historian's discipline overriding the poet's temptation.\n\nThe Ashkanian chapter functions as the Shahnameh's conscience. Every other king in the poem gets a story. These fourteen get names and silence. That contrast makes the silence louder than any narrative could. The reader understands that history is not just what was done but what was remembered, and that the act of remembering is fragile, contingent, and easily broken. The whole project of the Shahnameh — thirty years of reconstruction — is justified by this small admission of failure.",
-      "body_fa": "فردوسی در زمانی می‌نوشت که فتح اسلامی خود انتقال تاریخ ایران پیش از اسلام را مختل کرده بود. می‌دانست که پرونده اشکانی دوبار شکسته شده — ابتدا با فتح اسکندر، سپس با سیاست ساسانیان در به حاشیه راندن میراث اشکانی برای مشروع جلوه دادن سلسله خودشان. سکوت شاهنامه درباره اشکانیان تا حدی تبلیغات ساسانی است و تا حدی از دست رفتن واقعی، و فردوسی می‌دانست که نمی‌تواند همیشه فرق را تشخیص دهد.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "ashkanian-age-gate",
+    "boss_name_en": "The Fragmented Crowns",
+    "boss_name_fa": "تاج‌های پراکنده",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "The Arsacid era is the Shahnameh's briefest: many kings, many wars, thin chronicle. Ferdowsi names the age but does not dwell. To face this gate you must understand why the Shahnameh rushes through four centuries.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "ashkanian-age",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 76 · 1016 CE",
-      "era_fa": "1016 CE",
-      "body_en": "The rapid succession of rulers after Khosrow Parviz — eight in four years — had no parallel in Sasanian history. Ferdowsi was listing kings he could barely give a paragraph to, because there was nothing to say: they came and went before they could do anything. He had spent thirty years building the Shahnameh as a record of Iranian kingship, and here at the end the record became a list of names and deaths. The contrast with the long chapters on Anushirvan and Khosrow Parviz was not accidental. It was the poem's argument made through structure rather than words.\n\nHow do you write about eight kings in one chapter without making it feel like a list? Ferdowsi's technique was to write about the falling itself rather than the fallers — to make the chapter about the structural collapse rather than any individual within it. The crown becomes the subject, not the heads it briefly rested on. This required Ferdowsi to think at the level of institutions rather than personalities, which is not his natural register but which the situation demanded.\n\nThe Crumbling Crown chapter is the Shahnameh's pivot from biography to elegy. Every chapter before it told the story of a specific person — a king, a hero, a rebel. This chapter tells the story of an institution dying. That shift in register prepares the reader for what is coming: not a battle lost but a world ended, not a king killed but a civilization transformed. The Shahnameh is about to leave the territory it knows, and this chapter is the last moment before it does.",
-      "body_fa": "جانشینی سریع حاکمان پس از خسرو پرویز — هشت نفر در چهار سال — در تاریخ ساسانی سابقه‌ای نداشت. فردوسی شاهانی را فهرست می‌کرد که به زحمت می‌توانست یک پاراگراف به آنها بدهد، چون چیزی برای گفتن وجود نداشت: آمدند و رفتند پیش از اینکه بتوانند کاری انجام دهند. سی سال صرف ساختن شاهنامه به عنوان سابقه شاهی ایرانی کرده بود، و اینجا در پایان سابقه به فهرستی از نام‌ها و مرگ‌ها تبدیل شد. تضاد با فصل‌های طولانی درباره انوشیروان و خسرو پرویز تصادفی نبود. استدلال شعر از طریق ساختار نه کلمات بود.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "crumbling-crown-gate",
+    "boss_name_en": "Fourteen Kings, Thirty Years",
+    "boss_name_fa": "چهارده شاه، سی سال",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "The Sasanian dynasty devoured itself. Fourteen rulers in thirty years. Each one a symptom. To face this gate you must understand what it looks like when an empire decides it no longer knows how to govern itself.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "crumbling-crown",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

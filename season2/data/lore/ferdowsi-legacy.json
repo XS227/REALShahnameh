@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 77 · 1017 CE",
-      "era_fa": "1017 CE",
-      "body_en": "Ferdowsi's difficult relationship with Sultan Mahmud was not simply a personal slight — it was a cultural collision. Mahmud was a Turkic ruler who patronized Arabic and Persian poetry for prestige, but whose own cultural formation was not Persian. The Shahnameh's deep investment in Zoroastrian Iran, its ambivalence about conquest, its implicit argument that Persian civilization was superior to what had replaced it — none of this was what Mahmud was looking for. He wanted panegyric. Ferdowsi gave him a mirror. The silver was the reply.\n\nWriting about yourself — even obliquely, even in the third person of a chronicle entry — is the hardest thing a poet can do. Ferdowsi's legacy chapter required him to assess his own work honestly: to know what he had built, to know that it was not being recognized in his lifetime, and to trust that it would outlast the indifference. The garden burial was his final statement: I did this work. It exists. The rest is not mine to control. There is a kind of freedom in that, and also a kind of grief.\n\nFerdowsi's legacy is the Shahnameh itself. The poem he was not properly compensated for has been read continuously for a thousand years, translated into dozens of languages, illustrated in hundreds of manuscripts, memorized by generations of Iranians, Afghans, Tajiks, and everyone who has found themselves moved by stories of kings who held the line between fire and darkness. The silver that Mahmud sent is forgotten. The poem he sent it for is not.",
-      "body_fa": "رابطه سخت فردوسی با سلطان محمود فقط یک توهین شخصی نبود — یک برخورد فرهنگی بود. محمود یک حاکم ترک بود که شعر عربی و فارسی را برای پرستیژ حمایت می‌کرد، اما شکل‌گیری فرهنگی خودش ایرانی نبود. سرمایه‌گذاری عمیق شاهنامه در ایران زرتشتی، ابهامش درباره فتح، استدلال ضمنی‌اش که تمدن ایرانی از آنچه جایگزینش شده برتر است — هیچ‌کدام از اینها چیزی نبود که محمود دنبالش بود. او مدح می‌خواست. فردوسی یک آینه داد. نقره پاسخ بود.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "ferdowsi-legacy-gate",
+    "boss_name_en": "The Unread Patron",
+    "boss_name_fa": "حامیِ نخوانده",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Thirty years. Sixty thousand verses. A patron who paid in silver when he owed gold. Ferdowsi's legacy was built despite the court, not because of it. To face this gate you must understand how the Shahnameh survived its own creation.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "ferdowsi-legacy",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

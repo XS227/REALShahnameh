@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 77 · 1017 CE",
-      "era_fa": "1017 CE",
-      "body_en": "Ferdowsi completed the Shahnameh around 1010 CE and spent his remaining years revising it. The final chapter — whatever form it took in his mind — was always going to be a reckoning with everything the poem had been about. He had started writing when the Samanid world gave Persian culture room to breathe. He finished writing in the Ghaznavid shadow. The poem outlasted both dynasties, and every dynasty since. Writing the end of ages, Ferdowsi was writing about his own moment: the age he had lived in was also ending, and the question was whether what he had built would survive it.\n\nEnding the Shahnameh required Ferdowsi to make a claim about what the whole poem had been for. He had spent thirty years in the past — in the mythic and historical worlds of Iranian kingship. The final chapter required him to speak to the future: to the readers he would never meet, in times he could not imagine. He did it by making the ending a beginning — not a conclusion but an opening, not a door closing but the moment before the next telling starts. Every ending in the Shahnameh prepares for the next chapter. This one prepares for every reader who has not yet opened the book.\n\nThe ages end. The poem does not. That gap — between the ending of historical time and the continuation of the poem's life — is where the Shahnameh lives. It has been read for a thousand years. It will be read for a thousand more. The kings are gone. Rostam is gone. Sohrab, Siavash, Shirin, Ferdowsi himself — all gone. What remains is the story, and the story is Iran, and Iran is wherever the story is being told. The final war of ages is not over. Every telling is a battle in it. This one was yours.",
-      "body_fa": "فردوسی شاهنامه را حدود سال ۱۰۱۰ میلادی تکمیل کرد و سال‌های باقیمانده عمرش را صرف بازنگری آن کرد. فصل پایانی — هر شکلی که در ذهنش داشت — همیشه قرار بود یک محاسبه با همه آنچه شعر درباره‌اش بوده باشد. وقتی دنیای سامانی به فرهنگ ایرانی فضا برای نفس کشیدن می‌داد شروع به نوشتن کرده بود. در سایه غزنوی نوشتن را تمام کرد. شعر هر دو سلسله را پشت سر گذاشت، و هر سلسله بعد از آن. با نوشتن پایان اعصار، فردوسی درباره لحظه خودش می‌نوشت: عصری که در آن زیسته بود هم داشت پایان می‌یافت.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "ages-end-gate",
+    "boss_name_en": "The Closing of the Gates",
+    "boss_name_fa": "بستنِ دروازه‌ها",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "The chronicle closes where it began: with fire, with iron, with kings who rose and fell. To face this final gate you must hold everything the Shahnameh has given you.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "ages-end",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

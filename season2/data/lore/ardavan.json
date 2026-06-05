@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 73 · 1013 CE",
-      "era_fa": "1013 CE",
-      "body_en": "Ferdowsi's primary source material for the Sasanian period came from the Khodaynamag — the 'Book of Kings' compiled under Sasanian royal patronage. That book had every incentive to present the Sasanian founding as inevitable and righteous. Ferdowsi worked from that tradition while quietly giving Ardavan enough dignity that his fall reads as tragedy rather than justice. The Sasanian bias is there in the text, but so is Ferdowsi's instinct to complicate the official version.\n\nWriting the death of a legitimate king at the hands of a usurper and making it feel like destiny rather than theft. Ferdowsi managed it through the ram — the sign of the Farr departing. Once you accept that the divine radiance moves of its own accord, no king's fall is unjust because justice is not what the Farr measures. It measures something else: fitness, readiness, the moment. Ardavan had the throne. Ardeshir had the moment.\n\nArdavan's fall closes the long bridge between the mythic Kayanian kings and the historical Sasanian dynasty. Everything from Keyumars to Ardavan was building to this moment of transition. The Sasanian period that follows will be the most historically documented section of the Shahnameh — we are now in an era where names, dates, and events align with outside sources. The chronicle shifts register here from legend to something closer to history, and Ardavan's death is the hinge.",
-      "body_fa": "منبع اصلی فردوسی برای دوره ساسانی خداینامه بود — کتاب شاهان که تحت حمایت سلطنتی ساسانی تدوین شده بود. آن کتاب هر انگیزه‌ای داشت که تأسیس ساسانی را اجتناب‌ناپذیر و عادلانه نشان دهد. فردوسی از آن سنت کار کرد در حالی که آرام به اردوان به اندازه کافی شأن داد تا سقوطش به عنوان تراژدی خوانده شود نه عدالت. سوگیری ساسانی در متن هست، اما غریزه فردوسی برای پیچیده کردن روایت رسمی هم هست.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "ardavan-gate",
+    "boss_name_en": "The Last Arsacid",
+    "boss_name_fa": "آخرین اشکانی",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Ardavan saw the fire rising from Pars and fought it. He fought it and lost. To face this gate you must understand what it means to be the last king of a dynasty that held for four hundred years.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "ardavan",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

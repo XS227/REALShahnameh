@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 68 · 1008 CE",
-      "era_fa": "1008 CE",
-      "body_en": "Ferdowsi was writing near the end of his life, in poverty after being under-rewarded by Mahmud of Ghazni. His son had died years before. He had given thirty years to this poem and received almost nothing in return from the patron who was supposed to make the work immortal.\n\nWriting the death of the figure he had spent thirty years building. Rostam dies betrayed by a half-brother — not defeated in honest combat, not consumed by his own flaws, but murdered by treachery from within his own household. Ferdowsi understood this kind of betrayal.\n\nRostam's last act is to kill his betrayer — not to weep, not to forgive, but to reach for the bow one more time. Ferdowsi understood that for the Shahnameh's greatest champion, this was the only possible ending: agency until the last breath.",
-      "body_fa": "فردوسی در اواخرِ عمرش می‌نوشت، در فقر بعد از پاداشِ ناکافیِ محمودِ غزنوی. پسرش سال‌ها پیش مرده بود. سی سال به این شعر داده بود و از حامی‌ای که باید اثر را جاودانه می‌کرد تقریباً چیزی دریافت نکرده بود.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "rostams-end-gate",
+    "boss_name_en": "Shaghad — The Betrayer",
+    "boss_name_fa": "شاغاد — خائن",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Shaghad built the iron pit and covered it with soil. He invited his half-brother to hunt. To face this gate you must reckon with the cruelest form of betrayal: the kind that comes wrapped in family.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "rostams-end",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

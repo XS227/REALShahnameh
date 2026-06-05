@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 75 · 1015 CE",
-      "era_fa": "1015 CE",
-      "body_en": "Khosrow Parviz's reign was the last moment when Persian empire could plausibly claim dominance over the Mediterranean world. Ferdowsi was writing from the other side of the Arab conquest — from a world where that dominance was a memory, not a fact. The extravagance of Khosrow's court, the scale of his campaigns, the sheer ambition of his reign, would have read to Ferdowsi's audience as both inspiring and heartbreaking: this is what Iran had been, and this is what it lost, and the gap between the two was the space the Arab conquest had opened and never closed.\n\nThe challenge with Khosrow Parviz is scale: too much happened, too fast, in too many directions. Ferdowsi's solution was to track the arc — fugitive to conqueror to prisoner — and let the scale speak for itself through the True Cross and the Jerusalem campaign. The lesson the Shahnameh extracts is not about military genius but about the inability to manage failure: a king who only knew how to win had no resources when the winning stopped.\n\nKhosrow Parviz's reign is the last chapter where Iranian power operates at the center of world events. After him, Iran becomes reactive — defending, adjusting, surviving. His fall also sets up the Arab conquest's inevitability: the empire that followed his death was a succession of short-lived kings, coups, and collapsing institutions. The Arab armies that arrived in the 630s did not defeat a great empire. They defeated an empire that had already defeated itself.",
-      "body_fa": "سلطنت خسرو پرویز آخرین لحظه‌ای بود که امپراتوری ایرانی می‌توانست به طور قابل قبولی ادعای سلطه بر دنیای مدیترانه کند. فردوسی از آن سوی فتح عرب می‌نوشت — از دنیایی که آن سلطه خاطره بود نه واقعیت. تجمل دربار خسرو، وسعت لشکرکشی‌هایش، بلندپروازی خالص سلطنتش، برای مخاطبان فردوسی هم الهام‌بخش و هم دل‌شکننده می‌خواند: این آن چیزی بود که ایران بود، و این آن چیزی است که از دست داد.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "khosrow-parviz-gate",
+    "boss_name_en": "Pride Before the Ruin",
+    "boss_name_fa": "غرور پیش از ویرانی",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Khosrow Parviz conquered Jerusalem and collected a thousand horses and a hundred wives. Then he forgot that empires require more than conquest. To face this gate you must understand the specific shape of his downfall.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "khosrow-parviz",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }

@@ -58,25 +58,31 @@
       "reward": {
         "xp": 100
       }
-    },
-    {
-      "id": "ferdowsi-context",
-      "order": 4,
-      "title_en": "Ferdowsi Writing This Chapter",
-      "title_fa": "فردوسی این دفتر را می‌نوشت",
-      "era_en": "Age 72 · 1012 CE",
-      "era_fa": "1012 CE",
-      "body_en": "Ferdowsi was writing under a sultan who himself ruled through conquest — Mahmud of Ghazni, a Turkic warlord who had claimed the eastern Iranian world through military force. The Sekandar episode was therefore not a distant myth. It was a mirror. Ferdowsi gave the Greek conqueror Iranian blood and Iranian grief to carry, making the question of legitimacy through lineage versus legitimacy through power something every reader at the Ghaznavid court would feel without being told to.\n\nThe problem of writing about someone history remembers as a destroyer who believed himself a civilizer. Ferdowsi's solution was genealogical — make Sekandar partly Iranian, let him weep over Dara's body, and then let him ask questions that no conqueror had thought to ask before. The chronicle does not forgive him for the destruction, but it refuses to dismiss him either.\n\nSekandar is the last king in the chronicle who came from outside the Iranian tradition and was absorbed into it. After him, the kings are purely Sasanian — internal struggles, not foreign absorption. His story establishes that the Shahnameh's world can survive invasion if it can convert the invader into someone who weeps over what he has destroyed. The open hands at his burial became one of the Shahnameh's most lasting images: the conqueror who owned the world and held none of it.",
-      "body_fa": "فردوسی زیر سلطه سلطانی می‌نوشت که خود از راه فتح به قدرت رسیده بود — محمود غزنوی، جنگاوری ترک که دنیای شرقی ایران را با زور تصرف کرده بود. داستان اسکندر بنابراین داستانی دور نبود — آینه‌ای بود. فردوسی به فاتح یونانی خون ایرانی و غم ایرانی داد تا پرسش مشروعیت از طریق تبار در برابر مشروعیت از طریق قدرت را بدون گفتن صریح به هر خواننده‌ای در دربار غزنوی احساس کند.",
-      "atmosphere": "fated",
-      "image": null,
-      "reward": {
-        "xp": 120
-      }
     }
   ],
   "characters": [],
   "places": [],
-  "battle": null,
+  "battle": {
+    "boss_slug": "alexander-gate",
+    "boss_name_en": "Alexander — The Two-Horned",
+    "boss_name_fa": "اسکندر — ذوالقرنین",
+    "boss_image": null,
+    "boss_master_image": null,
+    "intro_en": "Ferdowsi's Alexander is Iranian by a twist of genealogy and world-conqueror by ambition. He is the most complicated figure in the chronicle's second half. To face this gate you must understand what the Shahnameh does with its most famous foreign king.",
+    "intro_fa": "",
+    "requirements": [
+      {
+        "id": "quiz",
+        "kind": "quiz",
+        "target": "alexander",
+        "label_en": "Pass the chapter quiz",
+        "label_fa": "گذراندنِ آزمونِ دفتر",
+        "label_tg": "Имтиҳони бобро гузаред",
+        "hint_en": "Scroll down to the Quiz section.",
+        "hint_fa": "به بخشِ آزمون بروید.",
+        "hint_tg": "Ба бахши Имтиҳон равед."
+      }
+    ]
+  },
   "codex": []
 }
