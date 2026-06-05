@@ -374,7 +374,7 @@
     btn.textContent = "✓ Claimed!";
     try { localStorage.setItem(key, "1"); } catch {}
     if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
-    if (window.RealSync)   window.RealSync.syncBalance();
+    if (window.RealSync)   { window.RealSync.syncQuest("bonus"); window.RealSync.syncBalance(); }
     refreshTreasury();
     const toastEl = document.querySelector("[data-toast]");
     if (toastEl) {
