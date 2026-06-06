@@ -787,6 +787,8 @@
       inv_tab_skins: "🎭 Пӯстаҳо",
       inv_tab_chests: "📦 Сандуқҳо",
       inv_tab_boosts: "⚡ Тақвиятҳо",
+      inv_tab_tapicon: "👆 Нишонаи зарб",
+      tapicon_unlock_ch: "Анҷом диҳед: ",
       inv_equipped: "✓ Пӯшида",
       inv_equip: "Пӯшидан",
       inv_need_real: "REAL кофӣ нест",

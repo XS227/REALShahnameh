@@ -64,9 +64,11 @@
 
   /* ── Tab management ─────────────────────────────────────────────────── */
 
+  const TABS = ['skins', 'chests', 'boosts', 'tapicon'];
+
   const showTab = (name) => {
     document.querySelectorAll('.inv-tab').forEach(b => b.classList.toggle('active', b.dataset.invTab === name));
-    ['skins', 'chests', 'boosts'].forEach(n => {
+    TABS.forEach(n => {
       const p = document.getElementById(`inv-panel-${n}`);
       if (p) p.style.display = n === name ? '' : 'none';
     });
@@ -170,6 +172,101 @@
           btn.disabled = false;
           btn.innerHTML = `${fmtNF(skin.price)} ${RT}`;
         }
+      });
+    });
+  };
+
+  /* ── Tap Icon tab ───────────────────────────────────────────────────── */
+
+  /* Chapter slug → skin id mapping, mirrors data/skins.json */
+  const CHAPTER_SKIN_UNLOCKS = {
+    keyumars: 'keyumars', hushang: 'hushang', zahhak: 'zahhak',
+    rostam: 'rostam', simorgh: 'simorgh',
+  };
+
+  const getChapterUnlockedSkins = () => {
+    try { return JSON.parse(localStorage.getItem('real_skin_unlocked_v1') || '[]'); } catch { return []; }
+  };
+
+  const checkAndGrantRetroactiveSkins = () => {
+    const stored = getChapterUnlockedSkins();
+    const granted = new Set(stored);
+    let changed = false;
+    Object.entries(CHAPTER_SKIN_UNLOCKS).forEach(([slug, skinId]) => {
+      if (!granted.has(skinId)) {
+        try {
+          if (localStorage.getItem(`real_chapter_done_${slug}`) === '1') {
+            granted.add(skinId);
+            changed = true;
+          }
+        } catch {}
+      }
+    });
+    if (changed) {
+      try { localStorage.setItem('real_skin_unlocked_v1', JSON.stringify([...granted])); } catch {}
+    }
+    return [...granted];
+  };
+
+  const buildTapIcon = (serverUnlockedSkins) => {
+    const panel = document.getElementById('inv-panel-tapicon');
+    if (!panel) return;
+
+    const chapterUnlocked = checkAndGrantRetroactiveSkins();
+    const equipped = currentSkin();
+    const owned = new Set(['real', 'keyumars', ...serverUnlockedSkins, ...chapterUnlocked]);
+
+    const TAP_SKINS = [
+      { id: 'real',     name: 'REAL Token',  emoji: '◆',  chapter_unlock: null      },
+      { id: 'keyumars', name: 'Keyumars',    emoji: '👑', chapter_unlock: 'keyumars' },
+      { id: 'hushang',  name: 'Hushang',     emoji: '🔥', chapter_unlock: 'hushang'  },
+      { id: 'zahhak',   name: 'Zahhak',      emoji: '🐍', chapter_unlock: 'zahhak'   },
+      { id: 'rostam',   name: 'Rostam',      emoji: '⚔',  chapter_unlock: 'rostam'   },
+      { id: 'simorgh',  name: 'Simorgh',     emoji: '🦅', chapter_unlock: 'simorgh', coming: true },
+      { id: 'royal',    name: 'Royal Seal',  emoji: '🔱', chapter_unlock: null,       coming: true },
+    ];
+
+    const cards = TAP_SKINS.map(skin => {
+      const isOwned    = owned.has(skin.id);
+      const isEquipped = skin.id === equipped;
+      const isComing   = !!skin.coming;
+
+      let stateClass = 'tapicon-card';
+      if (isEquipped) stateClass += ' equipped';
+      else if (isOwned) stateClass += ' owned';
+      else if (isComing) stateClass += ' coming';
+      else stateClass += ' locked';
+
+      const unlockHint = skin.chapter_unlock
+        ? `<div class="tapicon-hint">${t('tapicon_unlock_ch', 'Complete: ')}${skin.chapter_unlock}</div>`
+        : isComing ? `<div class="tapicon-hint">${t('coming_soon', 'Soon')}</div>` : '';
+
+      const action = isEquipped
+        ? `<div class="tapicon-badge">${t('inv_equipped', '✓')}</div>`
+        : isOwned
+          ? `<button class="tapicon-equip" data-tapicon-equip="${skin.id}">${t('inv_equip', 'Equip')}</button>`
+          : isComing
+            ? `<div class="tapicon-badge dim">${t('coming_soon', 'Soon')}</div>`
+            : unlockHint;
+
+      return `
+        <div class="${stateClass}">
+          <div class="tapicon-emoji">${skin.emoji}</div>
+          <div class="tapicon-name">${skin.name}</div>
+          ${isOwned || isEquipped ? '' : unlockHint}
+          ${action}
+        </div>`;
+    }).join('');
+
+    panel.innerHTML = `<div class="tapicon-grid">${cards}</div>`;
+
+    panel.querySelectorAll('[data-tapicon-equip]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.tapiconEquip;
+        try { localStorage.setItem('real_tap_skin_v1', id); } catch {}
+        window.dispatchEvent(new CustomEvent('real:skin:changed', { detail: { skin_id: id } }));
+        buildTapIcon(serverUnlockedSkins);
+        showToast(`${TAP_SKINS.find(s => s.id === id)?.name} ${t('inv_skin_equipped_toast', 'equipped!')}`);
       });
     });
   };
@@ -353,6 +450,7 @@
     buildSkins(unlockedSkins, balance);
     buildChests(openedChests);
     buildBoosts();
+    buildTapIcon(unlockedSkins);
   };
 
   if (document.readyState === 'loading') {

@@ -784,6 +784,8 @@
       inv_tab_skins: "🎭 Skins",
       inv_tab_chests: "📦 Chests",
       inv_tab_boosts: "⚡ Boosts",
+      inv_tab_tapicon: "👆 Tap Icon",
+      tapicon_unlock_ch: "Complete: ",
       inv_equipped: "✓ Equipped",
       inv_equip: "Equip",
       inv_need_real: "Not enough REAL",

@@ -788,6 +788,8 @@
       inv_tab_skins: "🎭 پوسته‌ها",
       inv_tab_chests: "📦 صندوق‌ها",
       inv_tab_boosts: "⚡ تقویت‌ها",
+      inv_tab_tapicon: "👆 آیکون ضربه",
+      tapicon_unlock_ch: "تکمیل کن: ",
       inv_equipped: "✓ پوشیده‌شده",
       inv_equip: "بپوش",
       inv_need_real: "ریال کافی نیست",

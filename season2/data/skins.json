@@ -1,0 +1,9 @@
+[
+  { "id": "real",     "name": "REAL Token", "emoji": "◆",  "chapter_unlock": null,       "always_free": true  },
+  { "id": "keyumars", "name": "Keyumars",   "emoji": "👑", "chapter_unlock": "keyumars", "always_free": true  },
+  { "id": "hushang",  "name": "Hushang",    "emoji": "🔥", "chapter_unlock": "hushang",  "always_free": false },
+  { "id": "zahhak",   "name": "Zahhak",     "emoji": "🐍", "chapter_unlock": "zahhak",   "always_free": false },
+  { "id": "rostam",   "name": "Rostam",     "emoji": "⚔",  "chapter_unlock": "rostam",   "always_free": false },
+  { "id": "simorgh",  "name": "Simorgh",    "emoji": "🦅", "chapter_unlock": "simorgh",  "always_free": false, "coming": true },
+  { "id": "royal",    "name": "Royal Seal", "emoji": "🔱", "chapter_unlock": null,        "always_free": false, "coming": true }
+]

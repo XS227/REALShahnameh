@@ -489,6 +489,24 @@
       ].filter(Boolean);
       if (parts.length) toast(`⚔ Chapter Rewards: ${parts.join(" · ")}`);
     } catch {}
+
+    /* Auto-unlock tap icon skin tied to this chapter */
+    const CHAPTER_SKIN_UNLOCKS = {
+      keyumars: "keyumars", hushang: "hushang", zahhak: "zahhak",
+      rostam: "rostam", simorgh: "simorgh",
+    };
+    const skinId = CHAPTER_SKIN_UNLOCKS[SLUG];
+    if (skinId) {
+      try {
+        const key = "real_skin_unlocked_v1";
+        const unlocked = JSON.parse(localStorage.getItem(key) || "[]");
+        if (!unlocked.includes(skinId)) {
+          unlocked.push(skinId);
+          localStorage.setItem(key, JSON.stringify(unlocked));
+          setTimeout(() => toast(`🎭 Tap icon unlocked: ${skinId}! Find it in Inventory.`), 2600);
+        }
+      } catch {}
+    }
   };
 
   /* Grant farr for completing a quiz tier — idempotent per tier per chapter */
