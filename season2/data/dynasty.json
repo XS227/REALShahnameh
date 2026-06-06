@@ -1,0 +1,239 @@
+{
+  "version": "2",
+  "trees": [
+    {
+      "id": "pishdadian",
+      "label": "Pishdadian Dynasty",
+      "era": "~7000–3500 BC",
+      "root": {
+        "id": "keyumars", "name": "Keyumars", "type": "king", "slug": "keyumars",
+        "title": "First King of the World", "era": "~7000 BC",
+        "img": "heroes/leopard_skin.png",
+        "children": [{
+          "id": "siamak", "name": "Siamak", "type": "prince", "slug": null,
+          "relation": "son", "title": "The Martyred Prince", "era": "~6950 BC",
+          "note": "Killed by Ahriman's son",
+          "img": "heroes/mount_alborz.png",
+          "children": [{
+            "id": "hushang", "name": "Hushang", "type": "king", "slug": "hushang",
+            "relation": "grandson", "title": "Discoverer of Fire", "era": "~6900 BC",
+            "img": "chapters/hushang.png",
+            "children": [{
+              "id": "tahmuras", "name": "Tahmuras", "type": "king", "slug": "tahmuras",
+              "relation": "son", "title": "Binder of Demons", "era": "~6000 BC",
+              "img": "chapters/tahmuras.png",
+              "children": [{
+                "id": "jamshid", "name": "Jamshid", "type": "king", "slug": "jamshid",
+                "relation": "son", "title": "The Golden Throne", "era": "~5500 BC",
+                "img": "chapters/jamshid.png",
+                "children": [{
+                  "id": "zahhak", "name": "Zahhak", "type": "villain", "slug": "zahhak",
+                  "relation": "usurper", "title": "The Serpent King", "era": "~5000 BC",
+                  "note": "Usurped the throne for 1000 years",
+                  "img": "chapters/zahhak.png",
+                  "children": [{
+                    "id": "fereydun", "name": "Fereydun", "type": "king", "slug": "fereydun",
+                    "relation": "liberator", "title": "The Liberator", "era": "~4500 BC",
+                    "img": "chapters/fereydun.png",
+                    "children": [
+                      {
+                        "id": "salm", "name": "Salm", "type": "villain", "slug": null,
+                        "relation": "son", "title": "King of the West", "era": "~4400 BC",
+                        "note": "Slew his brother Iraj",
+                        "img": "heroes/crystal_throne.png"
+                      },
+                      {
+                        "id": "tur", "name": "Tur", "type": "villain", "slug": null,
+                        "relation": "son", "title": "King of Turan", "era": "~4400 BC",
+                        "note": "Killed his brother Iraj",
+                        "img": "heroes/blak_demon.png"
+                      },
+                      {
+                        "id": "iraj", "name": "Iraj", "type": "prince", "slug": null,
+                        "relation": "son", "title": "The Noble Son", "era": "~4400 BC",
+                        "note": "Martyred by his brothers",
+                        "img": "heroes/farvahar.png",
+                        "children": [{
+                          "id": "manuchehr", "name": "Manuchehr", "type": "king", "slug": "manuchehr",
+                          "relation": "descendant", "title": "King of Justice", "era": "~4000 BC",
+                          "img": "chapters/manuchehr.png",
+                          "children": [{
+                            "id": "nozar", "name": "Nozar", "type": "king", "slug": "nozar",
+                            "relation": "son", "title": "The Weak King", "era": "~3800 BC",
+                            "img": "chapters/nozar.png"
+                          }]
+                        }]
+                      }
+                    ]
+                  }]
+                }]
+              }]
+            }]
+          }]
+        }]
+      }
+    },
+    {
+      "id": "house-sam",
+      "label": "House of Sam",
+      "era": "~4000–1700 BC",
+      "root": {
+        "id": "sam", "name": "Sam", "type": "hero", "slug": "zal",
+        "title": "Champion of Zabulestan", "era": "~4000 BC",
+        "img": "chapters/birth-of-rostam.png",
+        "children": [{
+          "id": "zal", "name": "Zal", "type": "hero", "slug": "zal",
+          "relation": "son", "title": "Raised by Simorgh", "era": "~2500 BC",
+          "img": "chapters/zal.png",
+          "children": [{
+            "id": "rostam", "name": "Rostam", "type": "hero", "slug": "rostam",
+            "relation": "son", "title": "Champion of Persia", "era": "~2000 BC",
+            "img": "chapters/rostam.png",
+            "children": [
+              {
+                "id": "sohrab", "name": "Sohrab", "type": "hero", "slug": "sohrab",
+                "relation": "son", "title": "Son of Rostam", "era": "~1800 BC",
+                "note": "Killed by his father in battle",
+                "img": "chapters/sohrab.png"
+              },
+              {
+                "id": "rostam-khan-1", "name": "Khan I", "type": "adventure",
+                "slug": "rostam-khan-1", "relation": "adventure",
+                "title": "The Sleeping Lion", "era": "~2000 BC",
+                "img": "heroes/leopard_skin.png", "coming_soon": true
+              },
+              {
+                "id": "rostam-khan-2", "name": "Khan II", "type": "adventure",
+                "slug": "rostam-khan-2", "relation": "adventure",
+                "title": "The Waterless Desert", "era": "~2000 BC",
+                "img": "heroes/mount_alborz.png", "coming_soon": true
+              },
+              {
+                "id": "rostam-khan-3", "name": "Khan III", "type": "adventure",
+                "slug": "rostam-khan-3", "relation": "adventure",
+                "title": "The Dragon", "era": "~2000 BC",
+                "img": "heroes/blak_demon.png", "coming_soon": true
+              },
+              {
+                "id": "rostam-khan-4", "name": "Khan IV", "type": "adventure",
+                "slug": "rostam-khan-4", "relation": "adventure",
+                "title": "The Sorceress", "era": "~2000 BC",
+                "img": "heroes/crystal_throne.png", "coming_soon": true
+              },
+              {
+                "id": "rostam-khan-5", "name": "Khan V", "type": "adventure",
+                "slug": "rostam-khan-5", "relation": "adventure",
+                "title": "The Div of Aulad", "era": "~2000 BC",
+                "img": "heroes/Farr.png", "coming_soon": true
+              },
+              {
+                "id": "rostam-khan-6", "name": "Khan VI", "type": "adventure",
+                "slug": "rostam-khan-6", "relation": "adventure",
+                "title": "The Dark Fortress", "era": "~2000 BC",
+                "img": "heroes/iron_ax_of_hushang.png", "coming_soon": true
+              },
+              {
+                "id": "rostam-khan-7", "name": "Khan VII", "type": "adventure",
+                "slug": "rostam-khan-7", "relation": "adventure",
+                "title": "The White Div", "era": "~2000 BC",
+                "img": "heroes/thirty_alphabets.png", "coming_soon": true
+              }
+            ]
+          }]
+        }]
+      }
+    },
+    {
+      "id": "kayanian",
+      "label": "Kayanian Dynasty",
+      "era": "~2000–300 BC",
+      "root": {
+        "id": "kay-qobad", "name": "Kay Qobad", "type": "king", "slug": "kay-kavus",
+        "title": "First Kayanian King", "era": "~2000 BC",
+        "img": "heroes/Farr.png",
+        "children": [{
+          "id": "kay-kavus", "name": "Kay Kavus", "type": "king", "slug": "kay-kavus",
+          "relation": "son", "title": "The Proud King", "era": "~1800 BC",
+          "img": "chapters/kay-kavus.png",
+          "children": [
+            {
+              "id": "siavash", "name": "Siavash", "type": "hero", "slug": "siavash",
+              "relation": "son", "title": "The Pure Prince", "era": "~1700 BC",
+              "note": "Martyred in Turan",
+              "img": "chapters/siavash.png",
+              "children": [{
+                "id": "kay-khosrow", "name": "Kay Khosrow", "type": "king", "slug": "kay-khosrow",
+                "relation": "son", "title": "The Just Conqueror", "era": "~1600 BC",
+                "img": "chapters/kay-khosrow.png",
+                "children": [
+                  {
+                    "id": "lohrasp", "name": "Lohrasp", "type": "king", "slug": "lohrasp",
+                    "relation": "chosen", "title": "Chosen Successor", "era": "~1500 BC",
+                    "img": "chapters/lohrasp.png",
+                    "children": [{
+                      "id": "goshtasp", "name": "Goshtasp", "type": "king", "slug": "goshtasp",
+                      "relation": "son", "title": "King of the Avesta", "era": "~1200 BC",
+                      "img": "chapters/goshtasp.png",
+                      "children": [{
+                        "id": "esfandiar", "name": "Esfandiar", "type": "hero", "slug": "esfandiyar",
+                        "relation": "son", "title": "The Invincible Hero", "era": "~1100 BC",
+                        "img": "chapters/esfandiyar.png",
+                        "children": [{
+                          "id": "bahman", "name": "Bahman", "type": "king", "slug": "bahman",
+                          "relation": "son", "title": "Son of Esfandiar", "era": "~1000 BC",
+                          "img": "chapters/bahman.png",
+                          "children": [{
+                            "id": "homay", "name": "Homay", "type": "king", "slug": "homay",
+                            "relation": "daughter", "title": "Queen of Persia", "era": "~900 BC",
+                            "img": "chapters/homay.png",
+                            "children": [{
+                              "id": "darab", "name": "Darab", "type": "king", "slug": "darab",
+                              "relation": "son", "title": "The Lost Prince", "era": "~400 BC",
+                              "img": "chapters/darab.png",
+                              "children": [{
+                                "id": "dara", "name": "Dara", "type": "king", "slug": "dara",
+                                "relation": "son", "title": "Darius III", "era": "~336 BC",
+                                "img": "chapters/dara.png",
+                                "children": [{
+                                  "id": "eskandar", "name": "Eskandar", "type": "villain",
+                                  "slug": "alexander", "relation": "conqueror",
+                                  "title": "Alexander the Great", "era": "~330 BC",
+                                  "note": "Conquered Persia",
+                                  "img": "chapters/alexander.png"
+                                }]
+                              }]
+                            }]
+                          }]
+                        }]
+                      }]
+                    }]
+                  },
+                  {
+                    "id": "bijan", "name": "Bijan", "type": "hero", "slug": "bijan-manijeh",
+                    "relation": "companion", "title": "Love Across Borders", "era": "~1550 BC",
+                    "img": "chapters/bijan-manijeh.png"
+                  }
+                ]
+              }]
+            }
+          ]
+        }]
+      }
+    },
+    {
+      "id": "arsacid",
+      "label": "Arsacid Dynasty",
+      "era": "~250 BC – 226 AD",
+      "root": {
+        "id": "ashkanian", "name": "Arsacids", "type": "king", "slug": "ashkanian-age",
+        "title": "The Ashkanian Age", "era": "~250 BC",
+        "img": "chapters/ashkanian-age.png",
+        "children": [{
+          "id": "ardavan", "name": "Ardavan", "type": "king", "slug": "ardavan",
+          "relation": "descendant", "title": "Last Arsacid King", "era": "~224 AD",
+          "img": "chapters/ardavan.png"
+        }]
+      }
+    }
+  ]
+}

@@ -879,6 +879,8 @@
       dynasty_status_open: "باز شده",
       dynasty_status_done: "تکمیل شده",
       dynasty_locked_toast: "این قسمت هنوز در دسترس نیست",
+      dynasty_coming_soon: "به زودی — این فصل در حال آماده‌سازی است",
+      dynasty_filter_all: "همه",
       timeline_kicker: "جهان · زمان‌نگار کهن",
       timeline_title: "زمان‌نگار کهن",
       timeline_sub: "سفر گاهشمارانه شاهنامه با راهنمایی حکیم",

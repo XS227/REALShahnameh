@@ -878,6 +878,8 @@
       dynasty_status_open: "Кушода",
       dynasty_status_done: "Анҷомёфта",
       dynasty_locked_toast: "Ин қисм ҳанӯз дастрас нест",
+      dynasty_coming_soon: "Ба зудӣ — ин боб дар ҳоли омодасозӣ аст",
+      dynasty_filter_all: "Ҳама",
       timeline_kicker: "Ҷаҳон · Солномаи қадим",
       timeline_title: "Солномаи қадим",
       timeline_sub: "Сафари гоҳшумории Шоҳнома бо роҳнамоии Ҳаким",

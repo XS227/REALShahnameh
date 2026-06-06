@@ -875,6 +875,8 @@
       dynasty_status_open: "Open",
       dynasty_status_done: "Complete",
       dynasty_locked_toast: "This episode is not available yet",
+      dynasty_coming_soon: "Coming soon — this chapter is in the works",
+      dynasty_filter_all: "All",
       timeline_kicker: "World · Ancient Timeline",
       timeline_title: "Ancient Timeline",
       timeline_sub: "The chronological Shahnameh journey with Hakim as guide",
