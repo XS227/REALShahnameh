@@ -717,8 +717,7 @@
 
     /* ── Nav links definition ── */
     const NAV_LINKS = [
-      { file: "regions.html",         ico: "🗺", key: "nav_regions",   section: "world" },
-      { file: "historical-sites.html",ico: "🏛", key: "nav_sites",     section: "world" },
+      { file: "historical-sites.html", ico: "🌐", key: "nav_world_persia", section: "world" },
       { file: "dynasty.html",         ico: "👑", key: "nav_dynasty",   section: "world" },
       { file: "persia-map.html",      ico: "🌍", key: "nav_map",       section: "world" },
       { file: "offerings.html",       ico: "🔥", key: "nav_offerings", section: "world" },
@@ -775,13 +774,6 @@
             <button class="hmenu-pick" data-set-lang="fa" lang="fa" dir="rtl">فارسی</button>
             <button class="hmenu-pick" data-set-lang="tg">Тоҷикӣ</button>
           </div>
-          <div class="hmenu-settings-label" style="margin-top:10px;" data-sp-path-label>Path</div>
-          <div class="hmenu-path-row">
-            <button class="hmenu-pick" data-set-path="hero">⚔ <span data-sp-hero>Hero</span></button>
-            <button class="hmenu-pick" data-set-path="heroine">♛ <span data-sp-heroine>Heroine</span></button>
-          </div>
-          <div class="hmenu-settings-label" style="margin-top:10px;" data-sp-skins-label>Tap Icon</div>
-          <div class="sp-skin-row" data-sp-skin-row style="flex-wrap:wrap; display:flex; gap:6px; margin-bottom:4px;"></div>
           <div class="hmenu-settings-label" style="margin-top:10px;" data-sp-s1-label>Demo</div>
           <button class="hmenu-pick sp-toggle" data-sp-s1-toggle style="width:100%; text-align:left; justify-content:space-between; display:flex; align-items:center;">
             <span data-sp-s1-text>Toggle Season 1 player</span>
@@ -824,13 +816,9 @@
 
       /* Settings labels */
       overlay.querySelector("[data-sp-lang-label]").textContent = tx.language || "Language";
-      overlay.querySelector("[data-sp-path-label]").textContent = tx.path || "Path";
-      overlay.querySelector("[data-sp-skins-label]").textContent = tx.tap_icon_section || "Tap Icon";
       overlay.querySelector("[data-sp-s1-label]").textContent = tx.demo || "Demo";
       overlay.querySelector("[data-sp-s1-text]").textContent = tx.toggle_s1_demo || "Toggle Season 1";
       overlay.querySelector("[data-sp-s1-state]").textContent = isS1 ? (tx.s1_demo_on || "ON") : (tx.s1_demo_off || "OFF");
-      overlay.querySelector("[data-sp-hero]").textContent = tx.hero || "Hero";
-      overlay.querySelector("[data-sp-heroine]").textContent = tx.heroine || "Heroine";
       overlay.querySelector("[data-sp-reset-title]").textContent = tx.reset_onboarding || "Reset onboarding";
       overlay.querySelector("[data-sp-reset-sub]").textContent = tx.reset_onboarding_sub || "Choose language and path again.";
       overlay.querySelector("[data-sp-audio-label]").textContent = tx.audio_section || "Ambient Sound";
@@ -845,22 +833,8 @@
         if (aLbl) aLbl.textContent = audioEnabled ? (tx.audio_on || "Sound On") : (tx.audio_off || "Sound Off");
       }
 
-      /* Skin grid */
-      const activeSkinId = Storage.read(LS.SKIN) || "real";
-      const skinRow = overlay.querySelector("[data-sp-skin-row]");
-      skinRow.innerHTML = "";
-      SKIN_CATALOGUE.forEach((s) => {
-        const b = document.createElement("button");
-        b.className = ["sp-skin-btn", s.locked ? "locked" : "", (!s.locked && s.id === activeSkinId) ? "active" : ""].filter(Boolean).join(" ");
-        b.setAttribute("data-sp-skin-id", s.id);
-        b.title = tx[s.nameKey] || s.id;
-        b.innerHTML = s.emoji + (s.locked ? "<span class='sp-skin-lock'>🔒</span>" : "");
-        skinRow.appendChild(b);
-      });
-
       /* Active states */
       $$("[data-set-lang]", overlay).forEach((b) => b.classList.toggle("active", b.getAttribute("data-set-lang") === l));
-      $$("[data-set-path]", overlay).forEach((b) => b.classList.toggle("active", b.getAttribute("data-set-path") === p));
       overlay.querySelector("[data-sp-s1-toggle]").classList.toggle("active", isS1);
     };
 
@@ -891,16 +865,6 @@
         try { window.dispatchEvent(new CustomEvent("real:lang:changed", { detail: { lang: l } })); } catch {}
       });
     });
-    $$("[data-set-path]", overlay).forEach((b) => {
-      b.addEventListener("click", () => {
-        const p = b.getAttribute("data-set-path");
-        Player.set({ path: p });
-        applyPath(p);
-        refresh();
-        toast(t("saved"));
-        haptic("success");
-      });
-    });
     overlay.querySelector("[data-sp-s1-toggle]").addEventListener("click", () => {
       const next = !Player.get().isSeason1Player;
       Player.setSeason1Demo(next);
@@ -908,18 +872,6 @@
       refresh();
       toast(next ? t("s1_demo_on") : t("s1_demo_off"));
       haptic("medium");
-    });
-    overlay.querySelector("[data-sp-skin-row]").addEventListener("click", (e) => {
-      const b = e.target.closest("[data-sp-skin-id]");
-      if (!b) return;
-      const id = b.getAttribute("data-sp-skin-id");
-      const skin = SKIN_CATALOGUE.find((s) => s.id === id);
-      if (!skin || skin.locked) { toast(t("skin_locked_toast")); return; }
-      Storage.write(LS.SKIN, id);
-      if (window.RealSkins) window.RealSkins.apply(id);
-      refresh();
-      toast(t("saved"));
-      haptic("success");
     });
     overlay.querySelector("[data-sp-reset]").addEventListener("click", () => {
       Storage.remove(LS.LANG);

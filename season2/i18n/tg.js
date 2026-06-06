@@ -814,6 +814,7 @@
       nav_hakim: "Ҳаким AI",
       nav_regions: "Минтақаҳои Порс",
       nav_sites: "Ҷойҳои таърихӣ",
+      nav_world_persia: "Ҷаҳони Форс",
       nav_world: "Ҷаҳон",
 
       /* Regions page */

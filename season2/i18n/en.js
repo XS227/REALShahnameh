@@ -811,6 +811,7 @@
       nav_hakim: "Hakim AI",
       nav_regions: "Regions of Persia",
       nav_sites: "Historical Sites",
+      nav_world_persia: "World of Persia",
       nav_world: "World",
 
       /* Regions page */

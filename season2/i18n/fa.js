@@ -815,6 +815,7 @@
       nav_hakim: "هوش مصنوعی حکیم",
       nav_regions: "مناطق پارس",
       nav_sites: "مکان‌های تاریخی",
+      nav_world_persia: "جهان پارس",
       nav_world: "جهان",
 
       /* Regions page */
