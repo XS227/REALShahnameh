@@ -2113,7 +2113,8 @@
         "lore_impact": "The Arab Conquest chapter is the Shahnameh's most politically charged passage, because it describes the event that made the Shahnameh necessary. Every chapter before it was building toward this — the whole poem is a response to this chapter. And yet Ferdowsi does not end here. He has four more chapters to write, because the conquest of a state is not the conquest of a culture, and the poem has more to say about what Iran is than about what empire it once had.",
         "lore_impact_fa": "فصل فتح عرب پرسیاست‌بارترین گذرگاه شاهنامه است، چون رویدادی را توصیف می‌کند که شاهنامه را ضروری کرد. هر فصل قبل از آن به سمت این ساخته می‌شد — کل شعر پاسخی به این فصل است. و با این حال فردوسی اینجا پایان نمی‌دهد. چهار فصل دیگر باقی دارد که بنویسد، چون فتح یک دولت فتح یک فرهنگ نیست، و شعر حرف‌های بیشتری درباره اینکه ایران چیست از اینکه چه امپراتوری‌ای یک بار داشته برای گفتن دارد.",
         "lore_impact_tg": "Боби Фатҳи Арабӣ пурсиёсатбортарин гузаргоҳи шоҳнома аст, зеро рӯйдодеро тавсиф мекунад ки шоҳномаро зарурӣ кард. Ҳар боби пеш аз он ба сӯи ин сохта мешуд — тамоми шеър посухест ба ин боб. Ва бо ин ҳол Фирдавсӣ инҷо поён намедиҳад. Чаҳор боби дигар боқист ки бинавишад, зеро фатҳи як давлат фатҳи як фарҳанг нест, ва шеър ҳарфҳои бештаре дар бораи он ки Эрон чист аз он ки чӣ империяе як бор дошт барои гуфтан дорад."
-      }
+      },
+      "type": "epilogue"
     },
     {
       "id": 47,
@@ -2151,7 +2152,8 @@
         "lore_impact": "The Mourning of Pars is the Shahnameh's acknowledgment that its real subject was never kings or heroes but the civilization they represented. Keyumars taught men to wear skins. Jamshid built the first city. Zahhak destroyed the old order. Rustam held the line for five centuries. And all of it — the glory and the tragedy — existed to produce this: a people who remember. The Parsis in India, the Zoroastrians in the mountains of Yazd, the readers of the Shahnameh in every language it has been translated into — they are what the whole poem was arguing for.",
         "lore_impact_fa": "سوگ پارس اعتراف شاهنامه است که موضوع واقعی‌اش هرگز شاهان یا قهرمانان نبود بلکه تمدنی بود که آنها نمایندگی می‌کردند. کیومرث آموخت به مردان پوست بپوشند. جمشید اولین شهر را ساخت. ضحاک نظم قدیم را نابود کرد. رستم پانصد سال خط را نگه داشت. و همه آنها — شکوه و تراژدی — برای تولید این وجود داشتند: مردمی که به یاد می‌آورند. پارسیان هند، زرتشتیان در کوهستان یزد، خوانندگان شاهنامه به هر زبانی که ترجمه شده — اینها همان چیزی هستند که کل شعر برای آن استدلال می‌کرد.",
         "lore_impact_tg": "Сӯги Порс эътирофи шоҳнома аст ки мавзӯи воқеиаш ҳаргиз подшоҳон ё қаҳрамонон набуд балки тамаддоне буд ки онҳо намояндагиаш мекарданд. Каюмарс ба мардон омӯхт пӯст бипӯшанд. Ҷамшид аввалин шаҳрро сохт. Заҳҳок тартиби қадимро нобуд кард. Рустам панҷсад сол хатро нигоҳ дошт. Ва ҳамаи онҳо — шукӯҳ ва фоҷеа — барои тавлид кардани ин вуҷуд доштанд: мардуме ки ба ёд меоваранд."
-      }
+      },
+      "type": "epilogue"
     },
     {
       "id": 48,
@@ -2189,7 +2191,8 @@
         "lore_impact": "Memory Over Sword is the Shahnameh's thesis statement, delivered near the end when the reader has lived through everything the poem has described. Every hero who held the line, every king who ruled justly, every tragedy that the poem refused to simplify — all of it was building toward this argument: that the civilization is the memory, and the memory survives as long as someone is willing to tell the story. Ferdowsi was that someone for his generation. The chapter asks who will be that someone for the next.",
         "lore_impact_fa": "حافظه بر شمشیر بیانیه پایانی شاهنامه است که نزدیک به پایان تحویل داده می‌شود وقتی خواننده همه چیزی را که شعر توصیف کرده زندگی کرده است. هر قهرمانی که خط را نگه داشت، هر شاهی که به عدالت حکومت کرد، هر تراژدی که شعر از ساده‌سازی امتناع کرد — همه آنها برای این استدلال ساخته می‌شدند: که تمدن حافظه است، و حافظه تا زمانی که کسی حاضر است داستان را تعریف کند باقی می‌ماند. فردوسی آن کسی بود برای نسلش. فصل می‌پرسد برای نسل بعد آن کسی کیست.",
         "lore_impact_tg": "Хотира бар Шамшер изҳори ниҳоии шоҳнома аст ки наздики охир таҳвил дода мешавад вақте хонанда ҳамаи чизеро ки шеър тавсиф кардааст зиндагӣ кардааст. Ҳар қаҳрамоне ки хатро нигоҳ дошт, ҳар подшоҳе ки ба адолат ҳукумат кард, ҳар фоҷеае ки шеър аз соддасозӣ имтиноъ кард — ҳамаи онҳо барои ин истдлол сохта мешуданд: ки тамаддун хотира аст, ва хотира то замоне ки касе ҳозир аст достонро нақл кунад боқӣ мемонад."
-      }
+      },
+      "type": "epilogue"
     },
     {
       "id": 49,
@@ -2227,7 +2230,8 @@
         "lore_impact": "Ferdowsi's legacy is the Shahnameh itself. The poem he was not properly compensated for has been read continuously for a thousand years, translated into dozens of languages, illustrated in hundreds of manuscripts, memorized by generations of Iranians, Afghans, Tajiks, and everyone who has found themselves moved by stories of kings who held the line between fire and darkness. The silver that Mahmud sent is forgotten. The poem he sent it for is not.",
         "lore_impact_fa": "میراث فردوسی خود شاهنامه است. شعری که جبران کافی برایش نشد هزار سال به طور مداوم خوانده شده، به ده‌ها زبان ترجمه شده، در صدها دست‌نوشته مصور شده، توسط نسل‌های ایرانیان، افغان‌ها، تاجیک‌ها و همه کسانی که داستان‌های شاهانی که خط بین آتش و تاریکی را نگه داشتند را تحت تأثیر قرار داده‌اند به حافظه سپرده شده. نقره‌ای که محمود فرستاد فراموش شده. شعری که برای آن فرستاد نه.",
         "lore_impact_tg": "Мероси Фирдавсӣ худи шоҳнома аст. Шеъре ки ба он ҷуброни кофӣ нашуд ҳазор сол ба таври мудовим хонда шудааст, ба даҳҳо забон тарҷума шудааст, дар садҳо дастнависи мусаввар шудааст, тавассути насл­ҳои Эрониён, Афғонистониён, Тоҷикон ва ҳамаи касоне ки достонҳои подшоҳоне ки хатро байни оташ ва торикӣ нигоҳ доштанд ба ёдашон андохта шудааст аз бар шудааст. Нуқраеро ки Маҳмуд фиристод фаромӯш шудааст. Шеъреро ки барои он фиристод — не."
-      }
+      },
+      "type": "epilogue"
     },
     {
       "id": 50,
@@ -2266,7 +2270,8 @@
         "lore_impact": "The ages end. The poem does not. That gap — between the ending of historical time and the continuation of the poem's life — is where the Shahnameh lives. It has been read for a thousand years. It will be read for a thousand more. The kings are gone. Rostam is gone. Sohrab, Siavash, Shirin, Ferdowsi himself — all gone. What remains is the story, and the story is Iran, and Iran is wherever the story is being told. The final war of ages is not over. Every telling is a battle in it. This one was yours.",
         "lore_impact_fa": "اعصار پایان می‌یابند. شعر پایان نمی‌یابد. آن شکاف — بین پایان زمان تاریخی و ادامه زندگی شعر — جایی است که شاهنامه در آن زندگی می‌کند. هزار سال خوانده شده. هزار سال دیگر خوانده خواهد شد. شاهان رفته‌اند. رستم رفته. سهراب، سیاوش، شیرین، خود فردوسی — همه رفته‌اند. آنچه باقی می‌ماند داستان است، و داستان ایران است، و ایران هر جایی است که داستان روایت می‌شود. آخرین جنگ اعصار تمام نشده. هر روایتی نبردی در آن است. این یکی مال شما بود.",
         "lore_impact_tg": "Аср поён меёбанд. Шеър поён намеёбад. Он шикоф — байни поёни замони таърихӣ ва идомаи ҳаёти шеър — ҷоест ки шоҳнома дар он зиндагӣ мекунад. Ҳазор сол хонда шудааст. Ҳазор соли дигар хонда хоҳад шуд. Подшоҳон рафтаанд. Рустам рафтааст. Суҳроб, Сиёваш, Ширин, худи Фирдавсӣ — ҳама рафтаанд. Он чи боқӣ мемонад достон аст, ва достон Эрон аст, ва Эрон ҳар ҷоест ки достон нақл мешавад. Ҷанги охирини аср тамом нашудааст. Ҳар нақле набарде дар он аст. Ин яке аз они шумо буд."
-      }
+      },
+      "type": "epilogue"
     }
   ]
 }
