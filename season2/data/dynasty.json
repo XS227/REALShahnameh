@@ -85,7 +85,12 @@
                                     "title": "King of the West",
                                     "era": "~4400 BC",
                                     "note": "Slew his brother Iraj",
-                                    "img": "heroes/crystal_throne.png"
+                                    "img": "heroes/crystal_throne.png",
+                                    "lore": {
+                                      "title": "Prince of the West",
+                                      "description": "Salm, eldest son of Fereydun, was granted the western kingdoms — the land of Rum and the cool seas. Yet ambition curdled into envy. He and Tur conspired against their youngest brother Iraj, committing a fratricide that seeded centuries of war between Iran and Turan.",
+                                      "badge": "Story Character"
+                                    }
                                   },
                                   {
                                     "id": "tur",
@@ -96,7 +101,12 @@
                                     "title": "King of Turan",
                                     "era": "~4400 BC",
                                     "note": "Killed his brother Iraj",
-                                    "img": "heroes/blak_demon.png"
+                                    "img": "heroes/blak_demon.png",
+                                    "lore": {
+                                      "title": "Prince of Turan",
+                                      "description": "Tur was given the vast steppes of Turan as his kingdom. When the sacred Kaviani crown went to his younger brother, jealousy overwhelmed honour. His hand delivered the blow that killed Iraj — and in doing so, gave Turan its dark destiny as Iran's eternal adversary.",
+                                      "badge": "Story Character"
+                                    }
                                   },
                                   {
                                     "id": "iraj",
@@ -131,7 +141,12 @@
                                           }
                                         ]
                                       }
-                                    ]
+                                    ],
+                                    "lore": {
+                                      "title": "Prince of Iran — The Innocent",
+                                      "description": "Iraj, the youngest and most beloved of Fereydun's sons, was given the throne of Iran and the Kaviani crown. When his brothers demanded it back, he offered to surrender everything in peace. They killed him anyway. He is the Shahnameh's first martyr — and his innocent blood calls out for vengeance across every generation that follows.",
+                                      "badge": "Story Character"
+                                    }
                                   }
                                 ]
                               }
@@ -143,7 +158,12 @@
                   }
                 ]
               }
-            ]
+            ],
+            "lore": {
+              "title": "Son of the First King",
+              "description": "Siamak was the beloved son of Keyumars, first king of the world. When Ahriman's demon army rose against the young realm, Siamak went out to fight — and fell. His death was the first grief to enter the world, the wound that turned light to mourning.",
+              "badge": "Story Character"
+            }
           }
         ]
       }

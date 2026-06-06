@@ -212,7 +212,56 @@
     .tn-coming_soon { opacity: .5; cursor: default; }
     .tn-coming_soon .tn-ring { filter: grayscale(.8) brightness(.5); }
 
-    .tn-story_only .tn-sdot { background: rgba(255,255,255,.2); }
+    .tn-story_only .tn-ring  { border-color: rgba(255,255,255,.22); border-style: dashed; }
+    .tn-story_only .tn-sdot  { background: rgba(255,255,255,.2); }
+    .tn-story_only .tn-name  { color: rgba(255,255,255,.55); font-style: italic; }
+
+    /* ── Lore card modal (story-only characters) ─────────────────────────── */
+    .lore-backdrop {
+      position: fixed; inset: 0; z-index: 1200;
+      background: rgba(0,0,0,.72);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+      opacity: 0; pointer-events: none;
+      transition: opacity .2s ease;
+    }
+    .lore-backdrop.open { opacity: 1; pointer-events: all; }
+    .lore-modal {
+      background: var(--surface, #1a1b2e);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 18px;
+      padding: 28px 22px 24px;
+      max-width: 310px; width: 100%;
+      text-align: center;
+      transform: translateY(12px);
+      transition: transform .2s ease;
+      position: relative;
+    }
+    .lore-backdrop.open .lore-modal { transform: translateY(0); }
+    .lore-close {
+      position: absolute; top: 12px; right: 14px;
+      background: none; border: none; color: rgba(255,255,255,.45);
+      font-size: 18px; cursor: pointer; padding: 4px 8px; line-height: 1;
+    }
+    .lore-ring {
+      width: 70px; height: 70px; border-radius: 50%;
+      border: 2px dashed rgba(255,255,255,.3);
+      margin: 0 auto 14px;
+      overflow: hidden; display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,.04);
+    }
+    .lore-ring img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+    .lore-ring .lore-ring-fallback { font-size: 28px; }
+    .lore-name { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .lore-title { font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 14px; }
+    .lore-desc { font-size: 13px; line-height: 1.65; color: rgba(255,255,255,.75); text-align: left; margin-bottom: 18px; }
+    .lore-badge {
+      display: inline-block; padding: 4px 12px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 20px;
+      font-size: 10px; letter-spacing: 1px; text-transform: uppercase;
+      color: rgba(255,255,255,.4);
+    }
 
     /* ── Tree section label ──────────────────────────────────────────────── */
     .dy-tree-label {
@@ -276,6 +325,18 @@
 </main>
 
 <div class="toast" data-toast></div>
+
+<!-- ── Lore card modal (story-only dynasty nodes) ──────────────── -->
+<div class="lore-backdrop" id="lore-backdrop" role="dialog" aria-modal="true">
+  <div class="lore-modal" id="lore-modal">
+    <button class="lore-close" id="lore-close" aria-label="Close">✕</button>
+    <div class="lore-ring" id="lore-ring"></div>
+    <div class="lore-name" id="lore-name"></div>
+    <div class="lore-title" id="lore-title"></div>
+    <div class="lore-desc" id="lore-desc"></div>
+    <div class="lore-badge" id="lore-badge">Story Character</div>
+  </div>
+</div>
 
 <script src="i18n/en.js?v=202606060002"></script>
 <script src="i18n/fa.js?v=202606060002"></script>
@@ -550,7 +611,7 @@
       return;
     }
     if (st === "story_only") {
-      toast(node.note || node.title || node.name);
+      openLoreModal(node);
       return;
     }
     if (st === "locked") {
@@ -564,6 +625,39 @@
     }
     window.location.href = "chapter.html?slug=" + encodeURIComponent(node.slug);
   }
+
+  /* ── Lore card modal ─────────────────────────────────────────────────── */
+  const loreBackdrop = document.getElementById("lore-backdrop");
+  const loreRing     = document.getElementById("lore-ring");
+  const loreName     = document.getElementById("lore-name");
+  const loreTitle    = document.getElementById("lore-title");
+  const loreDesc     = document.getElementById("lore-desc");
+  const loreBadge    = document.getElementById("lore-badge");
+
+  function openLoreModal(node) {
+    const lore = node.lore || {};
+    // Ring image
+    const imgSrc = node.img
+      ? (node.img.startsWith('/') ? node.img : IMG + node.img)
+      : null;
+    loreRing.innerHTML = imgSrc
+      ? `<img src="${imgSrc}" alt="${node.name}" onerror="this.outerHTML='<span class=\'lore-ring-fallback\'>👤</span>'">`
+      : `<span class="lore-ring-fallback">👤</span>`;
+    loreName.textContent  = node.name || "";
+    loreTitle.textContent = lore.title || node.title || "";
+    loreDesc.textContent  = lore.description || "";
+    loreBadge.textContent = lore.badge || "Story Character";
+    loreBackdrop.classList.add("open");
+    document.getElementById("lore-close").focus();
+  }
+
+  function closeLoreModal() {
+    loreBackdrop.classList.remove("open");
+  }
+
+  document.getElementById("lore-close").addEventListener("click", closeLoreModal);
+  loreBackdrop.addEventListener("click", e => { if (e.target === loreBackdrop) closeLoreModal(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeLoreModal(); });
 
   /* ── Pan / zoom ───────────────────────────────────────────────────────── */
   let dragging = false, tapCancelled = false;
@@ -760,7 +854,7 @@
   }
 
   /* ── Bootstrap ────────────────────────────────────────────────────────── */
-  fetch("data/dynasty.json?v=3")
+  fetch("data/dynasty.json?v=4")
     .then(r => r.json())
     .then(data => {
       allTrees = data.trees;
