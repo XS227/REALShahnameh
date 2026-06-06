@@ -520,7 +520,7 @@
 
     el.innerHTML = `
       <div class="tn-ring" style="width:${ring}px;height:${ring}px">
-        <img src="${IMG}${node.img}" alt="${node.name}" loading="lazy" draggable="false"
+        <img src="${node.img && node.img.startsWith('/') ? node.img : IMG + (node.img || '')}" alt="${node.name}" loading="lazy" draggable="false"
              onerror="this.style.display='none'">
         ${overlayHTML}
       </div>

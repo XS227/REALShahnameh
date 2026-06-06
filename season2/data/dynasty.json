@@ -8,33 +8,33 @@
       "root": {
         "id": "keyumars", "name": "Keyumars", "type": "king", "slug": "keyumars",
         "title": "First King of the World", "era": "~7000 BC",
-        "img": "heroes/leopard_skin.png",
+        "img": "/assets/images/heroes/keyumars-hero.png",
         "children": [{
           "id": "siamak", "name": "Siamak", "type": "prince", "slug": null,
           "relation": "son", "title": "The Martyred Prince", "era": "~6950 BC",
           "note": "Killed by Ahriman's son",
-          "img": "heroes/mount_alborz.png",
+          "img": "/assets/images/heroes/siamak-hero.png",
           "children": [{
             "id": "hushang", "name": "Hushang", "type": "king", "slug": "hushang",
             "relation": "grandson", "title": "Discoverer of Fire", "era": "~6900 BC",
-            "img": "chapters/hushang.png",
+            "img": "/assets/images/heroes/hushang-hero.png",
             "children": [{
               "id": "tahmuras", "name": "Tahmuras", "type": "king", "slug": "tahmuras",
               "relation": "son", "title": "Binder of Demons", "era": "~6000 BC",
-              "img": "chapters/tahmuras.png",
+              "img": "heroes/Tahmuras.png",
               "children": [{
                 "id": "jamshid", "name": "Jamshid", "type": "king", "slug": "jamshid",
                 "relation": "son", "title": "The Golden Throne", "era": "~5500 BC",
-                "img": "chapters/jamshid.png",
+                "img": "heroes/Jamshid.png",
                 "children": [{
                   "id": "zahhak", "name": "Zahhak", "type": "villain", "slug": "zahhak",
                   "relation": "usurper", "title": "The Serpent King", "era": "~5000 BC",
                   "note": "Usurped the throne for 1000 years",
-                  "img": "chapters/zahhak.png",
+                  "img": "heroes/zahhak.png",
                   "children": [{
                     "id": "fereydun", "name": "Fereydun", "type": "king", "slug": "fereydun",
                     "relation": "liberator", "title": "The Liberator", "era": "~4500 BC",
-                    "img": "chapters/fereydun.png",
+                    "img": "heroes/fereydun.png",
                     "children": [
                       {
                         "id": "salm", "name": "Salm", "type": "villain", "slug": null,
@@ -56,11 +56,11 @@
                         "children": [{
                           "id": "manuchehr", "name": "Manuchehr", "type": "king", "slug": "manuchehr",
                           "relation": "descendant", "title": "King of Justice", "era": "~4000 BC",
-                          "img": "chapters/manuchehr.png",
+                          "img": "heroes/manuchehr.png",
                           "children": [{
                             "id": "nozar", "name": "Nozar", "type": "king", "slug": "nozar",
                             "relation": "son", "title": "The Weak King", "era": "~3800 BC",
-                            "img": "chapters/nozar.png"
+                            "img": "heroes/nozar.png"
                           }]
                         }]
                       }
@@ -84,11 +84,11 @@
         "children": [{
           "id": "zal", "name": "Zal", "type": "hero", "slug": "zal",
           "relation": "son", "title": "Raised by Simorgh", "era": "~2500 BC",
-          "img": "chapters/zal.png",
+          "img": "heroes/zal.png",
           "children": [{
             "id": "rostam", "name": "Rostam", "type": "hero", "slug": "rostam",
             "relation": "son", "title": "Champion of Persia", "era": "~2000 BC",
-            "img": "chapters/rostam.png",
+            "img": "heroes/rostam.png",
             "children": [
               {
                 "id": "sohrab", "name": "Sohrab", "type": "hero", "slug": "sohrab",
@@ -150,7 +150,7 @@
       "root": {
         "id": "kay-qobad", "name": "Kay Qobad", "type": "king", "slug": "kay-kavus",
         "title": "First Kayanian King", "era": "~2000 BC",
-        "img": "heroes/Farr.png",
+        "img": "chapters/kay-kavus.png",
         "children": [{
           "id": "kay-kavus", "name": "Kay Kavus", "type": "king", "slug": "kay-kavus",
           "relation": "son", "title": "The Proud King", "era": "~1800 BC",

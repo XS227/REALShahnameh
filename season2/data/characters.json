@@ -1,0 +1,198 @@
+{
+  "version": "1",
+  "note": "Canonical portrait source. dynasty_node_img is what dynasty.html should display — portrait preferred, chapter cover as fallback. Paths starting with / are absolute; otherwise relative to /season2/uploads/.",
+  "characters": [
+    {
+      "id": "keyumars",
+      "name": "Keyumars",
+      "portrait": "/assets/images/heroes/keyumars-hero.png",
+      "dynasty_node_img": "/assets/images/heroes/keyumars-hero.png"
+    },
+    {
+      "id": "siamak",
+      "name": "Siamak",
+      "portrait": "/assets/images/heroes/siamak-hero.png",
+      "dynasty_node_img": "/assets/images/heroes/siamak-hero.png"
+    },
+    {
+      "id": "hushang",
+      "name": "Hushang",
+      "portrait": "/assets/images/heroes/hushang-hero.png",
+      "dynasty_node_img": "/assets/images/heroes/hushang-hero.png"
+    },
+    {
+      "id": "tahmuras",
+      "name": "Tahmuras",
+      "portrait": "heroes/Tahmuras.png",
+      "dynasty_node_img": "heroes/Tahmuras.png"
+    },
+    {
+      "id": "jamshid",
+      "name": "Jamshid",
+      "portrait": "heroes/Jamshid.png",
+      "dynasty_node_img": "heroes/Jamshid.png"
+    },
+    {
+      "id": "zahhak",
+      "name": "Zahhak",
+      "portrait": "heroes/zahhak.png",
+      "dynasty_node_img": "heroes/zahhak.png"
+    },
+    {
+      "id": "fereydun",
+      "name": "Fereydun",
+      "portrait": "heroes/fereydun.png",
+      "dynasty_node_img": "heroes/fereydun.png"
+    },
+    {
+      "id": "salm",
+      "name": "Salm",
+      "portrait": null,
+      "dynasty_node_img": "heroes/crystal_throne.png",
+      "note": "No portrait available; placeholder used"
+    },
+    {
+      "id": "tur",
+      "name": "Tur",
+      "portrait": null,
+      "dynasty_node_img": "heroes/blak_demon.png",
+      "note": "No portrait available; thematic placeholder"
+    },
+    {
+      "id": "iraj",
+      "name": "Iraj",
+      "portrait": null,
+      "dynasty_node_img": "heroes/farvahar.png",
+      "note": "No portrait available; farvahar is thematically appropriate"
+    },
+    {
+      "id": "manuchehr",
+      "name": "Manuchehr",
+      "portrait": "heroes/manuchehr.png",
+      "dynasty_node_img": "heroes/manuchehr.png"
+    },
+    {
+      "id": "nozar",
+      "name": "Nozar",
+      "portrait": "heroes/nozar.png",
+      "dynasty_node_img": "heroes/nozar.png"
+    },
+    {
+      "id": "sam",
+      "name": "Sam",
+      "portrait": null,
+      "dynasty_node_img": "chapters/birth-of-rostam.png",
+      "note": "Sam is featured in birth-of-rostam chapter; no dedicated portrait yet"
+    },
+    {
+      "id": "zal",
+      "name": "Zal",
+      "portrait": "heroes/zal.png",
+      "dynasty_node_img": "heroes/zal.png"
+    },
+    {
+      "id": "rostam",
+      "name": "Rostam",
+      "portrait": "heroes/rostam.png",
+      "dynasty_node_img": "heroes/rostam.png"
+    },
+    {
+      "id": "sohrab",
+      "name": "Sohrab",
+      "portrait": null,
+      "dynasty_node_img": "chapters/sohrab.png",
+      "note": "Chapter cover used; no dedicated portrait"
+    },
+    {
+      "id": "kay-qobad",
+      "name": "Kay Qobad",
+      "portrait": null,
+      "dynasty_node_img": "chapters/kay-kavus.png",
+      "note": "Shares chapter with Kay Kavus; Farr symbol replaced with chapter cover"
+    },
+    {
+      "id": "kay-kavus",
+      "name": "Kay Kavus",
+      "portrait": null,
+      "dynasty_node_img": "chapters/kay-kavus.png"
+    },
+    {
+      "id": "siavash",
+      "name": "Siavash",
+      "portrait": null,
+      "dynasty_node_img": "chapters/siavash.png"
+    },
+    {
+      "id": "kay-khosrow",
+      "name": "Kay Khosrow",
+      "portrait": null,
+      "dynasty_node_img": "chapters/kay-khosrow.png"
+    },
+    {
+      "id": "bijan",
+      "name": "Bijan",
+      "portrait": null,
+      "dynasty_node_img": "chapters/bijan-manijeh.png"
+    },
+    {
+      "id": "lohrasp",
+      "name": "Lohrasp",
+      "portrait": null,
+      "dynasty_node_img": "chapters/lohrasp.png"
+    },
+    {
+      "id": "goshtasp",
+      "name": "Goshtasp",
+      "portrait": null,
+      "dynasty_node_img": "chapters/goshtasp.png"
+    },
+    {
+      "id": "esfandiar",
+      "name": "Esfandiar",
+      "portrait": null,
+      "dynasty_node_img": "chapters/esfandiyar.png"
+    },
+    {
+      "id": "bahman",
+      "name": "Bahman",
+      "portrait": null,
+      "dynasty_node_img": "chapters/bahman.png"
+    },
+    {
+      "id": "homay",
+      "name": "Homay",
+      "portrait": null,
+      "dynasty_node_img": "chapters/homay.png"
+    },
+    {
+      "id": "darab",
+      "name": "Darab",
+      "portrait": null,
+      "dynasty_node_img": "chapters/darab.png"
+    },
+    {
+      "id": "dara",
+      "name": "Dara",
+      "portrait": null,
+      "dynasty_node_img": "chapters/dara.png"
+    },
+    {
+      "id": "eskandar",
+      "name": "Eskandar",
+      "portrait": null,
+      "dynasty_node_img": "chapters/alexander.png"
+    },
+    {
+      "id": "arsacids",
+      "name": "Arsacids",
+      "portrait": null,
+      "dynasty_node_img": "chapters/ashkanian-age.png"
+    },
+    {
+      "id": "ardavan",
+      "name": "Ardavan",
+      "portrait": null,
+      "dynasty_node_img": "chapters/ardavan.png"
+    }
+  ]
+}
