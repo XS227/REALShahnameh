@@ -719,7 +719,7 @@
     const NAV_LINKS = [
       { file: "regions.html",         ico: "🗺", key: "nav_regions",   section: "world" },
       { file: "historical-sites.html",ico: "🏛", key: "nav_sites",     section: "world" },
-      { file: "timeline.html",        ico: "⏳", key: "nav_timeline",  section: "world" },
+      { file: "dynasty.html",         ico: "👑", key: "nav_dynasty",   section: "world" },
       { file: "persia-map.html",      ico: "🌍", key: "nav_map",       section: "world" },
       { file: "offerings.html",       ico: "🔥", key: "nav_offerings", section: "world" },
       { file: "hakim.html",           ico: "🤖", key: "nav_hakim",     section: "world", cls: "hakim-link" },

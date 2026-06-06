@@ -432,7 +432,7 @@
     "بنام خداوند جان و خرد",
   ];
 
-  const WHISPER_PAGES = ["learn.html", "chapter.html", "timeline.html", "historical-sites.html"];
+  const WHISPER_PAGES = ["learn.html", "chapter.html", "dynasty.html", "historical-sites.html"];
 
   const initLoreWhispers = () => {
     const page = window.location.pathname.split("/").pop() || "";

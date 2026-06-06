@@ -862,6 +862,19 @@
 
       /* Timeline page */
       nav_timeline: "Ancient Timeline",
+
+      /* Dynasty Tree page (merged with timeline) */
+      nav_dynasty: "Mythic Lineage",
+      dynasty_kicker: "Kingdoms · Bloodlines",
+      dynasty_title: "Mythic Lineage",
+      dynasty_sub: "Tap an open episode to continue the journey",
+      dynasty_discovered: "discovered",
+      dynasty_locked: "Locked",
+      dynasty_reign_label: "Reigned",
+      dynasty_house_sam: "House of Sam · Hero Lineage",
+      dynasty_status_open: "Open",
+      dynasty_status_done: "Complete",
+      dynasty_locked_toast: "This episode is not available yet",
       timeline_kicker: "World · Ancient Timeline",
       timeline_title: "Ancient Timeline",
       timeline_sub: "The chronological Shahnameh journey with Hakim as guide",

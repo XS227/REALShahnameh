@@ -26,7 +26,7 @@
     "heroes.html":          { tip: "Ask me about any hero in your collection." },
     "regions.html":         { tip: "I know every corner of the ancient Persian world." },
     "historical-sites.html":{ tip: "These places carry millennia of stories." },
-    "timeline.html":        { tip: "Ask me about any era or king on this timeline." },
+    "dynasty.html":         { tip: "Ask me about any king or dynasty on this timeline." },
     "persia-map.html":      { tip: "I know every corner of the ancient Persian world." },
     "chapter.html":         { tip: "Ask me about this chapter's characters or events." },
     "tap.html":             { tip: "Forge well, warrior. I'll share wisdom." },

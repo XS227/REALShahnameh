@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#04050b" />
+  <title>Mythic Lineage · REAL Shahnameh</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=202606060001" />
+  <style>
+    /* ── Dynasty Tree Page ─────────────────────────────────────────────── */
+    .dynasty-page { padding: 0 0 100px; }
+
+    .dynasty-hero {
+      padding: 24px 16px 12px;
+      text-align: center;
+    }
+    .dynasty-kicker {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .dynasty-h1 {
+      font-size: 26px;
+      font-weight: 900;
+      margin: 0 0 6px;
+      background: linear-gradient(135deg, var(--gold-2) 0%, var(--gold) 60%, #e8a94f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .dynasty-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    /* Progress pill */
+    .dynasty-progress {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 16px 20px;
+      background: rgba(244,197,107,.07);
+      border: 1px solid rgba(244,197,107,.18);
+      border-radius: 30px;
+      padding: 9px 16px;
+    }
+    .dp-track {
+      flex: 1;
+      height: 4px;
+      background: rgba(255,255,255,.08);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .dp-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold-3), var(--gold-2));
+      border-radius: 2px;
+      transition: width .7s cubic-bezier(.4,0,.2,1);
+      width: 0%;
+    }
+    .dp-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      white-space: nowrap;
+    }
+
+    /* ── Tree ─────────────────────────────────────────────────────────── */
+    .dt-tree { padding: 0 14px 0 8px; }
+
+    /* Dynasty header */
+    .dt-era-header {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin: 12px 0 14px 28px;
+    }
+    .dt-era-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(244,197,107,.5), rgba(244,197,107,.08));
+    }
+    .dt-era-body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+    .dt-era-name {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 800;
+    }
+    .dt-era-span {
+      font-size: 9px;
+      color: var(--muted-2);
+      margin-top: 1px;
+    }
+    .dt-era-line-r {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(244,197,107,.08), transparent);
+    }
+
+    /* Spine (vertical connector line) */
+    .dt-spine {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 4px;
+    }
+    .dt-spine::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 8px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg,
+        rgba(244,197,107,.55) 0%,
+        rgba(244,197,107,.25) 70%,
+        rgba(244,197,107,.06) 100%
+      );
+      border-radius: 1px;
+    }
+
+    /* Node */
+    .dt-node {
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    /* Dot on spine */
+    .dt-dot {
+      position: absolute;
+      left: -24px;
+      top: 16px;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--bg-0);
+      border: 2px solid rgba(244,197,107,.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7px;
+      font-weight: 900;
+      color: var(--gold);
+      z-index: 2;
+      letter-spacing: 0;
+    }
+    .dt-node.villain .dt-dot {
+      border-color: rgba(255,82,103,.5);
+      color: var(--crimson);
+    }
+    .dt-node.completed .dt-dot {
+      background: linear-gradient(135deg, var(--gold), var(--gold-3));
+      border-color: var(--gold);
+      color: #07080f;
+      font-size: 8px;
+    }
+    .dt-node.locked .dt-dot {
+      border-color: rgba(255,255,255,.12);
+      color: var(--muted-2);
+    }
+
+    /* King card */
+    .dt-card {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      background: rgba(14,19,42,.6);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--r-md);
+      padding: 10px 12px 10px 10px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: border-color .2s;
+      user-select: none;
+    }
+    .dt-node.completed .dt-card {
+      border-color: rgba(244,197,107,.3);
+      background: rgba(16,22,46,.7);
+    }
+    .dt-node.villain .dt-card {
+      border-color: rgba(255,82,103,.2);
+      background: rgba(30,10,14,.65);
+    }
+    .dt-node.unlocked .dt-card {
+      border-color: rgba(255,255,255,.1);
+    }
+    .dt-node.locked .dt-card {
+      opacity: .45;
+      pointer-events: none;
+    }
+
+    /* Avatar */
+    .dt-ring {
+      flex-shrink: 0;
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--bg-2);
+      border: 2.5px solid rgba(244,197,107,.25);
+      position: relative;
+    }
+    .dt-node.completed .dt-ring {
+      border-color: var(--gold);
+      box-shadow: 0 0 18px rgba(244,197,107,.35);
+    }
+    .dt-node.villain .dt-ring {
+      border-color: rgba(255,82,103,.45);
+      box-shadow: 0 0 14px rgba(255,82,103,.2);
+    }
+    .dt-node.locked .dt-ring {
+      filter: grayscale(1) brightness(.4);
+      border-color: rgba(255,255,255,.08);
+    }
+    .dt-img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .dt-lock-ico {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+      background: rgba(4,5,11,.5);
+    }
+
+    /* Text block */
+    .dt-text { flex: 1; min-width: 0; }
+    .dt-name {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .dt-node.villain .dt-name { color: #ffa3b0; }
+    .dt-node.locked .dt-name { color: var(--muted-2); }
+    .dt-title-line {
+      font-size: 11px;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .dt-node.villain .dt-title-line { color: rgba(255,130,103,.9); }
+    .dt-node.locked .dt-title-line { color: var(--muted-2); }
+    .dt-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      align-items: center;
+    }
+    .dt-era-chip {
+      font-size: 9.5px;
+      color: var(--muted);
+    }
+    .dt-reign-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: rgba(244,197,107,.08);
+      border: 1px solid rgba(244,197,107,.16);
+      border-radius: 8px;
+      padding: 1.5px 7px;
+      font-size: 9px;
+      font-weight: 700;
+      color: rgba(244,197,107,.8);
+    }
+    .dt-node.villain .dt-reign-chip {
+      background: rgba(255,82,103,.08);
+      border-color: rgba(255,82,103,.18);
+      color: rgba(255,130,103,.8);
+    }
+
+    /* ── Hero branches ──────────────────────────────────────────────── */
+    .dt-heroes {
+      margin: 5px 0 5px 10px;
+      padding: 8px 8px 6px 14px;
+      border-left: 1px dashed rgba(140,109,255,.28);
+      border-bottom: 1px dashed rgba(140,109,255,.12);
+      border-radius: 0 0 0 8px;
+    }
+    .dt-heroes-label {
+      font-size: 8.5px;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: rgba(140,109,255,.55);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .dt-hero-chain {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      overflow-x: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+    .dt-hero-chain::-webkit-scrollbar { display: none; }
+
+    .dt-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      min-width: 56px;
+    }
+    .dt-hero.locked { pointer-events: none; }
+
+    .dt-hero-ring {
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--bg-2);
+      border: 2px solid rgba(140,109,255,.3);
+      position: relative;
+      flex-shrink: 0;
+    }
+    .dt-hero.completed .dt-hero-ring {
+      border-color: var(--violet);
+      box-shadow: 0 0 14px rgba(140,109,255,.35);
+    }
+    .dt-hero.unlocked .dt-hero-ring { border-color: rgba(140,109,255,.45); }
+    .dt-hero.locked .dt-hero-ring {
+      filter: grayscale(1) brightness(.35);
+      border-color: rgba(255,255,255,.07);
+    }
+    .dt-hero-img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .dt-hero-lock {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      background: rgba(4,5,11,.5);
+    }
+    .dt-hero-name {
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--muted);
+      text-align: center;
+      max-width: 56px;
+      line-height: 1.25;
+    }
+    .dt-hero.completed .dt-hero-name { color: rgba(140,109,255,.9); }
+    .dt-hero.locked .dt-hero-name { color: var(--muted-2); }
+
+    .dt-chain-arr {
+      font-size: 13px;
+      color: rgba(140,109,255,.3);
+      padding: 0 3px;
+      padding-bottom: 20px; /* visually center with avatar tops */
+      flex-shrink: 0;
+      align-self: flex-start;
+      margin-top: 18px;
+    }
+
+    /* ── Status chip + nav arrow ─────────────────────────────────────── */
+    .dt-status-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 9px;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 2px 7px;
+      margin-top: 4px;
+    }
+    .dt-status-chip.completed {
+      background: rgba(78,208,166,.12);
+      border: 1px solid rgba(78,208,166,.28);
+      color: #4ed0a6;
+    }
+    .dt-status-chip.unlocked {
+      background: rgba(244,197,107,.1);
+      border: 1px solid rgba(244,197,107,.25);
+      color: var(--gold);
+    }
+    .dt-nav-arrow {
+      flex-shrink: 0;
+      font-size: 20px;
+      color: rgba(244,197,107,.35);
+      padding-left: 4px;
+      line-height: 1;
+      align-self: center;
+    }
+    .dt-node.villain .dt-nav-arrow { color: rgba(255,82,103,.35); }
+    .dt-hero-status-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      margin: 0 auto;
+      background: rgba(140,109,255,.5);
+    }
+    .dt-hero.completed .dt-hero-status-dot { background: #4ed0a6; }
+  </style>
+</head>
+<body>
+<main class="app dynasty-page">
+
+  <div class="dynasty-hero cinematic-enter">
+    <div class="dynasty-kicker" data-i18n="dynasty_kicker">Kingdoms · Bloodlines</div>
+    <h1 class="dynasty-h1" data-i18n="dynasty_title">Mythic Lineage</h1>
+    <p class="dynasty-sub" data-i18n="dynasty_sub">Tap an open episode to continue the journey</p>
+  </div>
+
+  <div class="dynasty-progress cinematic-enter" style="animation-delay:.06s">
+    <div class="dp-track">
+      <div class="dp-fill" id="dp-fill"></div>
+    </div>
+    <span class="dp-label" id="dp-label">0 / 26 discovered</span>
+  </div>
+
+  <div class="dt-tree cinematic-enter" style="animation-delay:.12s" id="dt-tree"></div>
+
+</main>
+
+
+<div class="toast" data-toast></div>
+
+<script src="i18n/en.js?v=202606060001"></script>
+<script src="i18n/fa.js?v=202606060001"></script>
+<script src="i18n/tg.js?v=202606060001"></script>
+<script src="i18n.js?v=202605304000"></script>
+<script src="app.js?v=202606060001"></script>
+<script src="resources.js?v=202605303800"></script>
+<script src="cinematic.js?v=202605272200"></script>
+<script>
+(() => {
+  "use strict";
+
+  /* ─── i18n helper ─────────────────────────────────────────────────────── */
+  const t = (key, fallback) => {
+    try {
+      const l = localStorage.getItem("real_lang") || "en";
+      const loc = window.RealI18NLocales;
+      return (loc && loc[l] && loc[l][key]) || (loc && loc.en && loc.en[key]) || fallback || key;
+    } catch { return fallback || key; }
+  };
+
+  /* ─── Toast ────────────────────────────────────────────────────────────── */
+  const toastEl = document.querySelector("[data-toast]");
+  const toast = (msg) => {
+    if (!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => toastEl.classList.remove("show"), 2200);
+  };
+
+  /* ─── Chapter slug order (mirrors home.js) ────────────────────────────── */
+  const CHAPTER_SLUGS = [
+    "keyumars","hushang","tahmuras","jamshid","zahhak",
+    "fereydun","manuchehr","nozar","zal","rudabeh",
+    "birth-of-rostam","rostam","sohrab","siavash","kay-kavus",
+    "kay-khosrow","akvan","bijan-manijeh","great-war-turan","lohrasp",
+    "goshtasp","esfandiyar","seven-labours-esp","clash-rostam-esp","simorgh",
+    "rostams-end","bahman","homay","darab","dara",
+    "alexander","ashkanian-age","ardavan",
+  ];
+
+  const isDone = (slug) => {
+    try { return localStorage.getItem("real_chapter_done_" + slug) === "1"; } catch { return false; }
+  };
+
+  const figStatus = (slug) => {
+    if (!slug) return "locked";
+    if (isDone(slug)) return "completed";
+    const idx = CHAPTER_SLUGS.indexOf(slug);
+    if (idx < 0) return "locked";
+    if (idx <= 1) return "unlocked";
+    if (isDone(CHAPTER_SLUGS[idx - 1])) return "unlocked";
+    return "locked";
+  };
+
+  /* ─── Navigate or toast ────────────────────────────────────────────────── */
+  const navigate = (slug, status) => {
+    if (status === "locked") {
+      toast(t("dynasty_locked_toast", "This episode is not available yet"));
+      try { navigator.vibrate?.(6); } catch {}
+      return;
+    }
+    try { navigator.vibrate?.(10); } catch {}
+    window.location.href = "chapter.html?slug=" + encodeURIComponent(slug);
+  };
+
+  /* ─── Dynasty data ─────────────────────────────────────────────────────── */
+  const DYNASTIES = [
+    {
+      id: "pish",
+      name: "Pishdadian Dynasty",
+      era: "~7000 – 3500 BC",
+      kings: [
+        {
+          id: "keyumars", slug: "keyumars", type: "king",
+          name: "Keyumars", title: "First King of the World",
+          era: "~7000 BC", reign: "Age of Creation",
+          img: "/season2/uploads/heroes/leopard_skin.png",
+        },
+        {
+          id: "hushang", slug: "hushang", type: "king",
+          name: "Hushang", title: "The Spark of Fire",
+          era: "~6900 BC", reign: "700 years",
+          img: "/season2/uploads/chapters/hushang.png",
+          heroes: [],
+        },
+        {
+          id: "tahmuras", slug: "tahmuras", type: "king",
+          name: "Tahmuras", title: "Binder of Demons",
+          era: "~6000 BC", reign: "~30 years",
+          img: "/season2/uploads/chapters/tahmuras.png",
+          heroes: [],
+        },
+        {
+          id: "jamshid", slug: "jamshid", type: "king",
+          name: "Jamshid", title: "The Golden Throne",
+          era: "~5500 BC", reign: "700 years",
+          img: "/season2/uploads/chapters/jamshid.png",
+          heroes: [
+            { id: "kaveh", slug: "fereydun", type: "hero", name: "Kaveh", title: "The Blacksmith", era: "~5000 BC", img: "/season2/uploads/heroes/first_fire_forge.png" },
+          ],
+        },
+        {
+          id: "zahhak", slug: "zahhak", type: "villain",
+          name: "Zahhak", title: "The Serpent King",
+          era: "~5000 BC", reign: "1000 years",
+          img: "/season2/uploads/chapters/zahhak.png",
+          heroes: [],
+        },
+        {
+          id: "fereydun", slug: "fereydun", type: "king",
+          name: "Fereydun", title: "The Liberator",
+          era: "~4500 BC", reign: "~500 years",
+          img: "/season2/uploads/chapters/fereydun.png",
+          chainLabel: "dynasty_house_sam",
+          heroes: [
+            { id: "sam",    slug: "zal",    type: "hero", name: "Sam",    title: "Champion of Zabulestan", era: "~4000 BC", img: "/season2/uploads/chapters/birth-of-rostam.png" },
+            { id: "zal",    slug: "zal",    type: "hero", name: "Zal",    title: "Raised by Simorgh",      era: "~2500 BC", img: "/season2/uploads/chapters/zal.png" },
+            { id: "rostam", slug: "rostam", type: "hero", name: "Rostam", title: "Champion of Persia",     era: "~2000 BC", img: "/season2/uploads/chapters/rostam.png" },
+            { id: "sohrab", slug: "sohrab", type: "hero", name: "Sohrab", title: "Son of Rostam",          era: "~1800 BC", img: "/season2/uploads/chapters/sohrab.png" },
+          ],
+        },
+        {
+          id: "manuchehr", slug: "manuchehr", type: "king",
+          name: "Manuchehr", title: "King of Justice",
+          era: "~4000 BC", reign: "~120 years",
+          img: "/season2/uploads/chapters/manuchehr.png",
+          heroes: [],
+        },
+        {
+          id: "nozar", slug: "nozar", type: "king",
+          name: "Nozar", title: "The Weak King",
+          era: "~3800 BC", reign: "~7 years",
+          img: "/season2/uploads/chapters/nozar.png",
+          heroes: [],
+        },
+      ],
+    },
+    {
+      id: "kay",
+      name: "Kayanian Dynasty",
+      era: "~2000 – 300 BC",
+      kings: [
+        {
+          id: "kay-qobad", slug: "kay-kavus", type: "king",
+          name: "Kay Qobad", title: "First Kayanian King",
+          era: "~2000 BC", reign: "~100 years",
+          img: "/season2/uploads/heroes/Farr.png",
+          heroes: [],
+        },
+        {
+          id: "kay-kavus", slug: "kay-kavus", type: "king",
+          name: "Kay Kavus", title: "The Proud King",
+          era: "~1800 BC", reign: "~150 years",
+          img: "/season2/uploads/chapters/kay-kavus.png",
+          heroes: [
+            { id: "siavash", slug: "siavash", type: "hero", name: "Siavash", title: "The Pure Prince", era: "~1700 BC", img: "/season2/uploads/chapters/siavash.png" },
+          ],
+        },
+        {
+          id: "kay-khosrow", slug: "kay-khosrow", type: "king",
+          name: "Kay Khosrow", title: "The Just Conqueror",
+          era: "~1600 BC", reign: "~60 years",
+          img: "/season2/uploads/chapters/kay-khosrow.png",
+          heroes: [
+            { id: "bijan", slug: "bijan-manijeh", type: "hero", name: "Bijan & Manijeh", title: "Love Across Borders", era: "~1550 BC", img: "/season2/uploads/chapters/bijan-manijeh.png" },
+          ],
+        },
+        {
+          id: "lohrasp", slug: "lohrasp", type: "king",
+          name: "Lohrasp", title: "King of Wisdom",
+          era: "~1500 BC", reign: "~120 years",
+          img: "/season2/uploads/chapters/lohrasp.png",
+          heroes: [],
+        },
+        {
+          id: "goshtasp", slug: "goshtasp", type: "king",
+          name: "Goshtasp", title: "King of the Avesta",
+          era: "~1200 BC", reign: "~120 years",
+          img: "/season2/uploads/chapters/goshtasp.png",
+          heroes: [
+            { id: "esfandiar", slug: "esfandiyar", type: "hero", name: "Esfandiar", title: "Son of Righteousness", era: "~1100 BC", img: "/season2/uploads/chapters/esfandiyar.png" },
+          ],
+        },
+      ],
+    },
+    {
+      id: "late",
+      name: "Later Dynasties",
+      era: "~1000 BC – 226 AD",
+      kings: [
+        { id: "bahman",   slug: "bahman",   type: "king",    name: "Bahman",   title: "Son of Esfandiar",    era: "~1000 BC", reign: "~112 years", img: "/season2/uploads/chapters/bahman.png",    heroes: [] },
+        { id: "homay",    slug: "homay",    type: "king",    name: "Homay",    title: "Queen of Persia",     era: "~900 BC",  reign: "~30 years",  img: "/season2/uploads/chapters/homay.png",     heroes: [] },
+        { id: "darab",    slug: "darab",    type: "king",    name: "Darab",    title: "The Great King",      era: "~400 BC",  reign: "~12 years",  img: "/season2/uploads/chapters/darab.png",     heroes: [] },
+        { id: "dara",     slug: "dara",     type: "king",    name: "Dara",     title: "Darius III",          era: "~336 BC",  reign: "~6 years",   img: "/season2/uploads/chapters/dara.png",      heroes: [] },
+        { id: "eskandar", slug: "alexander", type: "villain", name: "Eskandar", title: "Alexander the Great", era: "~330 BC",  reign: "Conqueror",  img: "/season2/uploads/chapters/alexander.png", heroes: [] },
+        { id: "ardavan",  slug: "ardavan",  type: "king",    name: "Ardavan",  title: "Last Ashkanian",      era: "~224 AD",  reign: "~15 years",  img: "/season2/uploads/chapters/ardavan.png",   heroes: [] },
+      ],
+    },
+  ];
+
+  /* ─── Figure index ─────────────────────────────────────────────────────── */
+  const FIGS = {};
+  DYNASTIES.forEach(d => d.kings.forEach(k => {
+    FIGS[k.id] = k;
+    (k.heroes || []).forEach(h => { FIGS[h.id] = h; });
+  }));
+
+  /* ─── Render ───────────────────────────────────────────────────────────── */
+  const treeEl  = document.getElementById("dt-tree");
+  const dpFill  = document.getElementById("dp-fill");
+  const dpLabel = document.getElementById("dp-label");
+
+  let kingCounter = 0;
+
+  const render = () => {
+    treeEl.innerHTML = "";
+    kingCounter = 0;
+    let total = 0, found = 0;
+
+    DYNASTIES.forEach(dyn => {
+      const hdr = document.createElement("div");
+      hdr.className = "dt-era-header";
+      hdr.innerHTML = `
+        <div class="dt-era-line"></div>
+        <div class="dt-era-body">
+          <span class="dt-era-name">${dyn.name}</span>
+          <span class="dt-era-span">${dyn.era}</span>
+        </div>
+        <div class="dt-era-line-r"></div>
+      `;
+      treeEl.appendChild(hdr);
+
+      const spine = document.createElement("div");
+      spine.className = "dt-spine";
+      treeEl.appendChild(spine);
+
+      dyn.kings.forEach(king => {
+        const ks = figStatus(king.slug);
+        const locked = ks === "locked";
+
+        total++;
+        if (!locked) found++;
+        if (king.type === "king") kingCounter++;
+
+        const dotTxt = locked ? "?" : (king.type === "villain" ? "✕" : String(kingCounter));
+        const statusLabel = ks === "completed"
+          ? t("dynasty_status_done", "Complete")
+          : t("dynasty_status_open", "Open");
+
+        const node = document.createElement("div");
+        node.className = `dt-node ${king.type} ${ks}`;
+        node.innerHTML = `
+          <div class="dt-dot">${dotTxt}</div>
+          <div class="dt-card" data-fig="${king.id}">
+            <div class="dt-ring">
+              <img class="dt-img" src="${king.img}" alt="${king.name}" loading="lazy"
+                   onerror="this.style.display='none'">
+              ${locked ? `<div class="dt-lock-ico">🔒</div>` : ""}
+            </div>
+            <div class="dt-text">
+              <div class="dt-name">${locked ? "???" : king.name}</div>
+              <div class="dt-title-line">${locked ? t("dynasty_locked","Locked") : king.title}</div>
+              ${!locked ? `
+                <div class="dt-meta-row">
+                  <span class="dt-era-chip">${king.era}</span>
+                  <span class="dt-reign-chip">⏳ ${king.reign}</span>
+                </div>
+                <span class="dt-status-chip ${ks}">${ks === "completed" ? "✓" : "▶"} ${statusLabel}</span>
+              ` : ""}
+            </div>
+            ${!locked ? `<div class="dt-nav-arrow">›</div>` : ""}
+          </div>
+        `;
+
+        const heroes = king.heroes || [];
+        if (!locked && heroes.length > 0) {
+          const hSection = document.createElement("div");
+          hSection.className = "dt-heroes";
+
+          if (king.chainLabel) {
+            const lbl = document.createElement("div");
+            lbl.className = "dt-heroes-label";
+            lbl.textContent = t(king.chainLabel, king.chainLabel);
+            hSection.appendChild(lbl);
+          }
+
+          const chain = document.createElement("div");
+          chain.className = "dt-hero-chain";
+
+          heroes.forEach((hero, hi) => {
+            const hs = figStatus(hero.slug);
+            const hLocked = hs === "locked";
+
+            total++;
+            if (!hLocked) found++;
+
+            if (hi > 0) {
+              const arr = document.createElement("div");
+              arr.className = "dt-chain-arr";
+              arr.textContent = "→";
+              chain.appendChild(arr);
+            }
+
+            const hEl = document.createElement("div");
+            hEl.className = `dt-hero ${hs}`;
+            hEl.setAttribute("data-fig", hero.id);
+
+            hEl.innerHTML = `
+              <div class="dt-hero-ring">
+                <img class="dt-hero-img" src="${hero.img}" alt="${hero.name}"
+                     loading="lazy" onerror="this.style.display='none'">
+                ${hLocked ? `<div class="dt-hero-lock">🔒</div>` : ""}
+              </div>
+              <div class="dt-hero-name">${hLocked ? "???" : hero.name}</div>
+              ${!hLocked ? `<div class="dt-hero-status-dot"></div>` : ""}
+            `;
+
+            chain.appendChild(hEl);
+          });
+
+          hSection.appendChild(chain);
+          node.appendChild(hSection);
+        }
+
+        spine.appendChild(node);
+      });
+
+      const gap = document.createElement("div");
+      gap.style.height = "16px";
+      treeEl.appendChild(gap);
+    });
+
+    const pct = total > 0 ? Math.round((found / total) * 100) : 0;
+    dpFill.style.width = pct + "%";
+    dpLabel.textContent = `${found} / ${total} ${t("dynasty_discovered","discovered")}`;
+  };
+
+  render();
+
+  /* ─── Re-render on return to page ─────────────────────────────────────── */
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") render();
+  });
+  window.addEventListener("pageshow", render);
+  window.addEventListener("shahnama:state_sync", render);
+  window.addEventListener("balanceUpdate", render);
+
+  /* ─── Tap handler: navigate or toast ──────────────────────────────────── */
+  treeEl.addEventListener("click", e => {
+    const el = e.target.closest("[data-fig]");
+    if (!el) return;
+    const fig = FIGS[el.getAttribute("data-fig")];
+    if (!fig) return;
+    navigate(fig.slug, figStatus(fig.slug));
+  });
+
+})();
+</script>
+</body>
+</html>

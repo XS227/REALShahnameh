@@ -866,6 +866,19 @@
 
       /* Timeline page */
       nav_timeline: "زمان‌نگار کهن",
+
+      /* Dynasty Tree page (merged with timeline) */
+      nav_dynasty: "شجره‌نامه اساطیر",
+      dynasty_kicker: "سلسله‌ها · پیوند خون",
+      dynasty_title: "شجره‌نامه اساطیر",
+      dynasty_sub: "روی قسمت‌های باز شده ضربه بزنید تا ادامه دهید",
+      dynasty_discovered: "کشف شده",
+      dynasty_locked: "قفل",
+      dynasty_reign_label: "دوران پادشاهی",
+      dynasty_house_sam: "خاندان سام · نسل پهلوانان",
+      dynasty_status_open: "باز شده",
+      dynasty_status_done: "تکمیل شده",
+      dynasty_locked_toast: "این قسمت هنوز در دسترس نیست",
       timeline_kicker: "جهان · زمان‌نگار کهن",
       timeline_title: "زمان‌نگار کهن",
       timeline_sub: "سفر گاهشمارانه شاهنامه با راهنمایی حکیم",

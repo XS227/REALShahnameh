@@ -865,6 +865,19 @@
 
       /* Timeline page */
       nav_timeline: "Солномаи қадим",
+
+      /* Dynasty Tree page (merged with timeline) */
+      nav_dynasty: "Насаби аfsонавӣ",
+      dynasty_kicker: "Подшоҳиҳо · Хешовандӣ",
+      dynasty_title: "Насаби аfsонавӣ",
+      dynasty_sub: "Ба қисмҳои кушода зарба занед то идома диҳед",
+      dynasty_discovered: "кашф шуда",
+      dynasty_locked: "Қулф",
+      dynasty_reign_label: "Давраи подшоҳӣ",
+      dynasty_house_sam: "Хонадони Сом · Насли паҳлавонон",
+      dynasty_status_open: "Кушода",
+      dynasty_status_done: "Анҷомёфта",
+      dynasty_locked_toast: "Ин қисм ҳанӯз дастрас нест",
       timeline_kicker: "Ҷаҳон · Солномаи қадим",
       timeline_title: "Солномаи қадим",
       timeline_sub: "Сафари гоҳшумории Шоҳнома бо роҳнамоии Ҳаким",

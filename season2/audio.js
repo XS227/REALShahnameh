@@ -13,7 +13,7 @@
     "index.html":           "main",
     "learn.html":           "library",
     "chapter.html":         "library",
-    "timeline.html":        "ancient",
+    "dynasty.html":         "ancient",
     "regions.html":         "wind",
     "historical-sites.html":"stones",
     "hakim.html":           "hakim",
