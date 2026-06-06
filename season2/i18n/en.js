@@ -189,6 +189,7 @@
       tab_places: "Places",
       tab_enemies: "Enemies",
       tab_codex: "Codex",
+      tab_artifacts: "⚗ Artifacts",
       type_character: "Character",
       type_enemy: "Enemy",
       type_place: "Place",

@@ -1550,9 +1550,9 @@
     const counts = { common: 0, rare: 0, epic: 0, legend: 0, mythic: 0 };
     COLLECTION.forEach((it) => { counts[it.rarity] = (counts[it.rarity] || 0) + 1; });
 
-    const total      = 69;
-    const discovered = COLLECTION.length;
-    const pct        = Math.round((discovered / total) * 100);
+    const total      = COLLECTION.length;
+    const discovered = Object.keys(ownedHeroes).length;
+    const pct        = Math.round((Math.min(discovered, total) / total) * 100);
 
     const countEl = section.querySelector(".coll-ph-left");
     const pctEl   = section.querySelector(".coll-ph-right");
@@ -2094,7 +2094,7 @@
   /* ── Update stats strip from real ownership data ── */
   const updateStatsStrip = () => {
     const ownedCount = Object.keys(ownedHeroes).length;
-    const total      = 69;
+    const total      = COLLECTION.length;
 
     /* Stats strip */
     const discVal = document.querySelector(".css-cell:first-child .css-val");

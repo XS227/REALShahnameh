@@ -190,6 +190,7 @@
       tab_places: "Маконҳо",
       tab_enemies: "Душманҳо",
       tab_codex: "Кодекс",
+      tab_artifacts: "⚗ Артефактҳо",
       type_character: "Шахсият",
       type_enemy: "Душман",
       type_place: "Макон",

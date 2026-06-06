@@ -191,6 +191,7 @@
       tab_places: "مکان‌ها",
       tab_enemies: "دشمنان",
       tab_codex: "کدکس",
+      tab_artifacts: "⚗ اشیاء",
       type_character: "شخصیت",
       type_enemy: "دشمن",
       type_place: "مکان",
