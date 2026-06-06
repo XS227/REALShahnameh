@@ -319,7 +319,12 @@
               }
             ]
           }
-        ]
+        ],
+        "lore": {
+          "title": "Champion of Iran",
+          "description": "Sam was the greatest warrior of his age — commander of Iran's armies and guardian of the realm. Yet when his son Zal was born with white hair, superstition overcame him and he abandoned the infant on Mount Alborz. The Simorgh raised the child Sam had cast away. Years later, tormented by guilt and dreams, Sam reclaimed his son — too late to undo the wound, but not too late to be forgiven.",
+          "badge": "Story Character"
+        }
       }
     },
     {
