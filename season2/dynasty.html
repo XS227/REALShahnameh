@@ -240,7 +240,7 @@
       display: inline-block; width: 20px; height: 2px; border-radius: 1px;
     }
     .dy-leg-swatch.gold   { background: rgba(244,197,107,.7); }
-    .dy-leg-swatch.silver { background: rgba(190,190,210,.6); border-top: 1px dashed rgba(190,190,210,.6); height:0; }
+    .dy-leg-swatch.silver { background: none; border-top: 1.5px dashed rgba(190,190,210,.55); height:0; }
     .dy-leg-swatch.red    { background: none; border-top: 1.5px dashed rgba(255,82,103,.7); height:0; }
     .dy-leg-swatch.teal   { background: none; border-top: 1.5px dashed rgba(78,208,166,.6); height:0; }
     .dy-leg-swatch.violet { background: none; border-top: 1px dotted rgba(140,109,255,.5); height:0; }
@@ -551,9 +551,9 @@
 
   /* ── Blood / succession edge ─────────────────────────────────────────── */
   function drawEdge(parent, child) {
-    const x1 = parent._x;
+    const x1 = parent._x + nw(parent) / 2;
     const y1 = parent._y + nring(parent) + (nh(parent) - nring(parent)) / 2;
-    const x2 = child._x;
+    const x2 = child._x + nw(child) / 2;
     const y2 = child._y + (nh(child) - nring(child)) / 2;
     const my = (y1 + y2) / 2;
     const d  = `M ${x1} ${y1} C ${x1} ${my}, ${x2} ${my}, ${x2} ${y2}`;
@@ -577,9 +577,9 @@
 
   /* ── Horizontal spouse line ──────────────────────────────────────────── */
   function drawSpouseLine(mainNode, sp) {
-    const x1 = mainNode._x + NW / 2 + 2;
-    const x2 = sp._x - SW / 2 - 2;
-    const y  = mainNode._y + RING / 2;
+    const x1 = mainNode._x + NW / 2 + RING / 2 + 2;
+    const x2 = sp._x - SRING / 2 - 2;
+    const y  = mainNode._y + (RING - SRING) / 2 + SRING / 2;
     const d  = `M ${x1} ${y} L ${x2} ${y}`;
     const isRival   = sp.relation_type === "rival";
     const isSpecial = sp.relation_type === "special";
