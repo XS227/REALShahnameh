@@ -372,11 +372,15 @@
   const CHAPTER_SLUGS = [
     "keyumars","hushang","tahmuras","jamshid","zahhak",
     "fereydun","manuchehr","nozar","zal","rudabeh",
-    "birth-of-rostam","rostam","sohrab","siavash","kay-kavus",
-    "kay-khosrow","akvan","bijan-manijeh","great-war-turan","lohrasp",
-    "goshtasp","esfandiyar","seven-labours-esp","clash-rostam-esp","simorgh",
-    "rostams-end","bahman","homay","darab","dara",
-    "alexander","ashkanian-age","ardavan",
+    "birth-of-rostam","rostam","sohrab","simorgh","akvan",
+    "seven-labours-esp","siavash","kay-kavus","kay-khosrow",
+    "bijan-manijeh","great-war-turan","lohrasp",
+    "goshtasp","esfandiyar","clash-rostam-esp","rostams-end",
+    "memory-over-sword","bahman","homay","darab","dara",
+    "alexander","mourning-pars","ashkanian-age","ardavan",
+    "ardeshir","shapur","yazdegerd-sinner","bahram-gur","anushirvan",
+    "nushzad","hormuz","bahram-chubin","khosrow-parviz","shirin",
+    "yazdegerd-iii","arab-conquest","ages-end","ferdowsi-legacy",
   ];
 
   const isDone = (slug) => {
@@ -854,7 +858,7 @@
   }
 
   /* ── Bootstrap ────────────────────────────────────────────────────────── */
-  fetch("data/dynasty.json?v=4")
+  fetch("data/dynasty.json?v=5")
     .then(r => r.json())
     .then(data => {
       allTrees = data.trees;

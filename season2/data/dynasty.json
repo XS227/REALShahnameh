@@ -1,5 +1,5 @@
 {
-  "version": "2",
+  "version": "3",
   "trees": [
     {
       "id": "pishdadian",
@@ -13,24 +13,30 @@
         "title": "First King of the World",
         "era": "~7000 BC",
         "img": "/assets/images/heroes/keyumars-hero.png",
+        "rivals": ["ahriman"],
         "children": [
           {
             "id": "siamak",
             "name": "Siamak",
             "type": "prince",
             "slug": null,
-            "relation": "son",
+            "relation": "blood",
             "title": "The Martyred Prince",
             "era": "~6950 BC",
-            "note": "Killed by Ahriman's son",
             "img": "/assets/images/heroes/siamak-hero.png",
+            "rivals": ["ahriman"],
+            "lore": {
+              "title": "Son of the First King",
+              "description": "Siamak was the beloved son of Keyumars, first king of the world. When Ahriman's demon army rose against the young realm, Siamak went out to fight — and fell. His death was the first grief to enter the world, the wound that turned light to mourning.",
+              "badge": "Story Character"
+            },
             "children": [
               {
                 "id": "hushang",
                 "name": "Hushang",
                 "type": "king",
                 "slug": "hushang",
-                "relation": "grandson",
+                "relation": "blood",
                 "title": "Discoverer of Fire",
                 "era": "~6900 BC",
                 "img": "/assets/images/heroes/hushang-hero.png",
@@ -40,7 +46,7 @@
                     "name": "Tahmuras",
                     "type": "king",
                     "slug": "tahmuras",
-                    "relation": "son",
+                    "relation": "blood",
                     "title": "Binder of Demons",
                     "era": "~6000 BC",
                     "img": "heroes/Tahmuras.png",
@@ -50,10 +56,12 @@
                         "name": "Jamshid",
                         "type": "king",
                         "slug": "jamshid",
-                        "relation": "son",
+                        "relation": "blood",
                         "title": "The Golden Throne",
                         "era": "~5500 BC",
                         "img": "heroes/Jamshid.png",
+                        "rivals": ["zahhak"],
+                        "contemporaries": ["kaveh"],
                         "children": [
                           {
                             "id": "zahhak",
@@ -62,9 +70,10 @@
                             "slug": "zahhak",
                             "relation": "usurper",
                             "title": "The Serpent King",
-                            "era": "~5000 BC",
-                            "note": "Usurped the throne for 1000 years",
+                            "era": "~5000–4000 BC",
                             "img": "heroes/zahhak.png",
+                            "note": "Usurped the throne for 1000 years",
+                            "rivals": ["jamshid", "fereydun", "kaveh"],
                             "children": [
                               {
                                 "id": "fereydun",
@@ -81,7 +90,7 @@
                                     "name": "Salm",
                                     "type": "villain",
                                     "slug": null,
-                                    "relation": "son",
+                                    "relation": "blood",
                                     "title": "King of the West",
                                     "era": "~4400 BC",
                                     "note": "Slew his brother Iraj",
@@ -90,14 +99,15 @@
                                       "title": "Prince of the West",
                                       "description": "Salm, eldest son of Fereydun, was granted the western kingdoms — the land of Rum and the cool seas. Yet ambition curdled into envy. He and Tur conspired against their youngest brother Iraj, committing a fratricide that seeded centuries of war between Iran and Turan.",
                                       "badge": "Story Character"
-                                    }
+                                    },
+                                    "children": []
                                   },
                                   {
                                     "id": "tur",
                                     "name": "Tur",
                                     "type": "villain",
                                     "slug": null,
-                                    "relation": "son",
+                                    "relation": "blood",
                                     "title": "King of Turan",
                                     "era": "~4400 BC",
                                     "note": "Killed his brother Iraj",
@@ -106,18 +116,24 @@
                                       "title": "Prince of Turan",
                                       "description": "Tur was given the vast steppes of Turan as his kingdom. When the sacred Kaviani crown went to his younger brother, jealousy overwhelmed honour. His hand delivered the blow that killed Iraj — and in doing so, gave Turan its dark destiny as Iran's eternal adversary.",
                                       "badge": "Story Character"
-                                    }
+                                    },
+                                    "children": []
                                   },
                                   {
                                     "id": "iraj",
                                     "name": "Iraj",
                                     "type": "prince",
                                     "slug": null,
-                                    "relation": "son",
+                                    "relation": "blood",
                                     "title": "The Noble Son",
                                     "era": "~4400 BC",
                                     "note": "Martyred by his brothers",
                                     "img": "heroes/farvahar.png",
+                                    "lore": {
+                                      "title": "Prince of Iran — The Innocent",
+                                      "description": "Iraj, the youngest and most beloved of Fereydun's sons, was given the throne of Iran and the Kaviani crown. When his brothers demanded it back, he offered to surrender everything in peace. They killed him anyway. He is the Shahnameh's first martyr — and his innocent blood calls out for vengeance across every generation that follows.",
+                                      "badge": "Story Character"
+                                    },
                                     "children": [
                                       {
                                         "id": "manuchehr",
@@ -134,19 +150,32 @@
                                             "name": "Nozar",
                                             "type": "king",
                                             "slug": "nozar",
-                                            "relation": "son",
+                                            "relation": "blood",
                                             "title": "The Weak King",
                                             "era": "~3800 BC",
-                                            "img": "heroes/nozar.png"
+                                            "img": "heroes/nozar.png",
+                                            "children": [
+                                              {
+                                                "id": "zav",
+                                                "name": "Zav",
+                                                "type": "king",
+                                                "slug": null,
+                                                "relation": "descendant",
+                                                "title": "Transitional King",
+                                                "era": "~3700 BC",
+                                                "img": "heroes/manuchehr.png",
+                                                "lore": {
+                                                  "title": "King Zav",
+                                                  "description": "Zav ruled briefly as a transitional figure after Nozar. His reign coincided with the rise of Sam and Zal — the great warrior line of Zabulestan that would protect Iran through its darkest ages.",
+                                                  "badge": "Story Character"
+                                                },
+                                                "children": []
+                                              }
+                                            ]
                                           }
                                         ]
                                       }
-                                    ],
-                                    "lore": {
-                                      "title": "Prince of Iran — The Innocent",
-                                      "description": "Iraj, the youngest and most beloved of Fereydun's sons, was given the throne of Iran and the Kaviani crown. When his brothers demanded it back, he offered to surrender everything in peace. They killed him anyway. He is the Shahnameh's first martyr — and his innocent blood calls out for vengeance across every generation that follows.",
-                                      "badge": "Story Character"
-                                    }
+                                    ]
                                   }
                                 ]
                               }
@@ -158,12 +187,7 @@
                   }
                 ]
               }
-            ],
-            "lore": {
-              "title": "Son of the First King",
-              "description": "Siamak was the beloved son of Keyumars, first king of the world. When Ahriman's demon army rose against the young realm, Siamak went out to fight — and fell. His death was the first grief to enter the world, the wound that turned light to mourning.",
-              "badge": "Story Character"
-            }
+            ]
           }
         ]
       }
@@ -180,14 +204,22 @@
         "title": "Champion of Zabulestan",
         "era": "~4000 BC",
         "img": "chapters/birth-of-rostam.png",
+        "lore": {
+          "title": "Champion of Iran",
+          "description": "Sam was the greatest warrior of his age — commander of Iran's armies and guardian of the realm. Yet when his son Zal was born with white hair, superstition overcame him and he abandoned the infant on Mount Alborz. The Simorgh raised the child Sam had cast away. Years later, tormented by guilt and dreams, Sam reclaimed his son — too late to undo the wound, but not too late to be forgiven.",
+          "badge": "Story Character"
+        },
         "children": [
           {
             "id": "simorgh",
             "name": "Simorgh",
-            "title": "Guardian of the Mountain",
+            "type": "mythic",
             "slug": "simorgh",
+            "relation": "mentor",
+            "title": "Guardian of the Mountain",
+            "era": "Timeless",
             "img": "chapters/simorgh.png",
-            "lore_type": "mythic",
+            "note": "Raised Zal on Mount Alborz",
             "children": []
           },
           {
@@ -195,136 +227,160 @@
             "name": "Zal",
             "type": "hero",
             "slug": "zal",
-            "relation": "son",
+            "relation": "blood",
             "title": "Raised by Simorgh",
             "era": "~2500 BC",
             "img": "heroes/zal.png",
+            "contemporaries": ["simorgh"],
+            "spouses": [
+              {
+                "id": "rudabeh",
+                "name": "Rudabeh",
+                "type": "spouse",
+                "slug": "rudabeh",
+                "title": "Princess of Kabul",
+                "img": "chapters/rudabeh.png",
+                "note": "Daughter of Mehrab — granddaughter of Zahhak"
+              }
+            ],
             "children": [
+              {
+                "id": "rudabeh-node",
+                "name": "Rudabeh",
+                "type": "spouse",
+                "slug": "rudabeh",
+                "relation": "spouse",
+                "title": "Princess of Kabul",
+                "era": "~2500 BC",
+                "img": "chapters/rudabeh.png",
+                "note": "Daughter of Mehrab, granddaughter of Zahhak",
+                "children": [
+                  {
+                    "id": "birth-of-rostam",
+                    "name": "Birth of Rostam",
+                    "type": "adventure",
+                    "slug": "birth-of-rostam",
+                    "relation": "event",
+                    "title": "The Miracle Birth",
+                    "era": "~2000 BC",
+                    "img": "chapters/birth-of-rostam.png",
+                    "children": []
+                  }
+                ]
+              },
               {
                 "id": "rostam",
                 "name": "Rostam",
                 "type": "hero",
                 "slug": "rostam",
-                "relation": "son",
+                "relation": "blood",
                 "title": "Champion of Persia",
                 "era": "~2000 BC",
                 "img": "heroes/rostam.png",
+                "spouses": [
+                  {
+                    "id": "tahmineh",
+                    "name": "Tahmineh",
+                    "type": "spouse",
+                    "slug": null,
+                    "title": "Princess of Samangan",
+                    "img": "chapters/sohrab.png",
+                    "note": "Mother of Sohrab",
+                    "child_ids": ["sohrab"]
+                  }
+                ],
                 "children": [
                   {
                     "id": "sohrab",
                     "name": "Sohrab",
                     "type": "hero",
                     "slug": "sohrab",
-                    "relation": "son",
+                    "relation": "blood",
                     "title": "Son of Rostam",
                     "era": "~1800 BC",
                     "note": "Killed by his father in battle",
-                    "img": "chapters/sohrab.png"
+                    "img": "chapters/sohrab.png",
+                    "from_spouse": "tahmineh",
+                    "children": []
                   },
                   {
-                    "id": "rostam-khan-1",
-                    "name": "Khan I",
+                    "id": "faramarz",
+                    "name": "Faramarz",
+                    "type": "hero",
+                    "slug": null,
+                    "relation": "blood",
+                    "title": "Son of Rostam",
+                    "era": "~1900 BC",
+                    "img": "heroes/rostam.png",
+                    "lore": {
+                      "title": "Faramarz the Warrior",
+                      "description": "Faramarz was the valiant son of Rostam, a warrior who carried the legacy of Zabulestan into its final chapters. He fought to avenge his father's death and protect the House of Sam even as the age of heroes drew to a close.",
+                      "badge": "Story Character"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "akvan",
+                    "name": "Akvan",
+                    "type": "villain",
+                    "slug": "akvan",
+                    "relation": "rival",
+                    "title": "The Demon of Chaos",
+                    "era": "~1900 BC",
+                    "img": "heroes/blak_demon.png",
+                    "note": "Defeated by Rostam",
+                    "rivals": ["rostam"],
+                    "children": []
+                  },
+                  {
+                    "id": "seven-labours-esp",
+                    "name": "Haft Khan",
                     "type": "adventure",
-                    "slug": "rostam-khan-1",
-                    "relation": "adventure",
-                    "title": "The Sleeping Lion",
+                    "slug": "seven-labours-esp",
+                    "relation": "event",
+                    "title": "Seven Labours",
                     "era": "~2000 BC",
                     "img": "heroes/leopard_skin.png",
-                    "coming_soon": true
+                    "children": []
                   },
                   {
-                    "id": "rostam-khan-2",
-                    "name": "Khan II",
+                    "id": "clash-rostam-esp",
+                    "name": "Clash of Titans",
                     "type": "adventure",
-                    "slug": "rostam-khan-2",
-                    "relation": "adventure",
-                    "title": "The Waterless Desert",
-                    "era": "~2000 BC",
-                    "img": "heroes/mount_alborz.png",
-                    "coming_soon": true
+                    "slug": "clash-rostam-esp",
+                    "relation": "event",
+                    "title": "Rostam vs Esfandiar",
+                    "era": "~1100 BC",
+                    "img": "chapters/esfandiyar.png",
+                    "children": []
                   },
                   {
-                    "id": "rostam-khan-3",
-                    "name": "Khan III",
+                    "id": "rostams-end",
+                    "name": "Rostam's End",
                     "type": "adventure",
-                    "slug": "rostam-khan-3",
-                    "relation": "adventure",
-                    "title": "The Dragon",
-                    "era": "~2000 BC",
-                    "img": "heroes/blak_demon.png",
-                    "coming_soon": true
+                    "slug": "rostams-end",
+                    "relation": "event",
+                    "title": "The Final Battle",
+                    "era": "~1800 BC",
+                    "img": "heroes/rostam.png",
+                    "children": []
                   },
                   {
-                    "id": "rostam-khan-4",
-                    "name": "Khan IV",
+                    "id": "memory-over-sword",
+                    "name": "Memory Over Sword",
                     "type": "adventure",
-                    "slug": "rostam-khan-4",
-                    "relation": "adventure",
-                    "title": "The Sorceress",
-                    "era": "~2000 BC",
-                    "img": "heroes/crystal_throne.png",
-                    "coming_soon": true
-                  },
-                  {
-                    "id": "rostam-khan-5",
-                    "name": "Khan V",
-                    "type": "adventure",
-                    "slug": "rostam-khan-5",
-                    "relation": "adventure",
-                    "title": "The Div of Aulad",
-                    "era": "~2000 BC",
-                    "img": "heroes/Farr.png",
-                    "coming_soon": true
-                  },
-                  {
-                    "id": "rostam-khan-6",
-                    "name": "Khan VI",
-                    "type": "adventure",
-                    "slug": "rostam-khan-6",
-                    "relation": "adventure",
-                    "title": "The Dark Fortress",
-                    "era": "~2000 BC",
-                    "img": "heroes/iron_ax_of_hushang.png",
-                    "coming_soon": true
-                  },
-                  {
-                    "id": "rostam-khan-7",
-                    "name": "Khan VII",
-                    "type": "adventure",
-                    "slug": "rostam-khan-7",
-                    "relation": "adventure",
-                    "title": "The White Div",
-                    "era": "~2000 BC",
-                    "img": "heroes/thirty_alphabets.png",
-                    "coming_soon": true
-                  }
-                ]
-              },
-              {
-                "id": "rudabeh",
-                "name": "Rudabeh",
-                "title": "Princess of Kabul",
-                "slug": "rudabeh",
-                "img": "chapters/rudabeh.png",
-                "children": [
-                  {
-                    "id": "birth-of-rostam",
-                    "name": "Birth of Rostam",
-                    "title": "The Miracle Birth",
-                    "slug": "birth-of-rostam",
-                    "img": "chapters/birth-of-rostam.png",
+                    "slug": "memory-over-sword",
+                    "relation": "event",
+                    "title": "Legacy of Rostam",
+                    "era": "~1800 BC",
+                    "img": "heroes/rostam.png",
                     "children": []
                   }
                 ]
               }
             ]
           }
-        ],
-        "lore": {
-          "title": "Champion of Iran",
-          "description": "Sam was the greatest warrior of his age — commander of Iran's armies and guardian of the realm. Yet when his son Zal was born with white hair, superstition overcame him and he abandoned the infant on Mount Alborz. The Simorgh raised the child Sam had cast away. Years later, tormented by guilt and dreams, Sam reclaimed his son — too late to undo the wound, but not too late to be forgiven.",
-          "badge": "Story Character"
-        }
+        ]
       }
     },
     {
@@ -335,42 +391,106 @@
         "id": "kay-qobad",
         "name": "Kay Qobad",
         "type": "king",
-        "slug": "kay-kavus",
+        "slug": null,
         "title": "First Kayanian King",
         "era": "~2000 BC",
         "img": "chapters/kay-kavus.png",
+        "lore": {
+          "title": "Founder of the Kayanian Line",
+          "description": "Kay Qobad was summoned from Mount Alborz by Rostam himself to lead Iran after the Pishdadian line faltered. He founded the Kayanian dynasty and ruled wisely, setting the stage for the great conflicts of his descendants.",
+          "badge": "Story Character"
+        },
         "children": [
           {
             "id": "kay-kavus",
             "name": "Kay Kavus",
             "type": "king",
             "slug": "kay-kavus",
-            "relation": "son",
+            "relation": "blood",
             "title": "The Proud King",
             "era": "~1800 BC",
             "img": "chapters/kay-kavus.png",
+            "rivals": ["afrasiab"],
+            "spouses": [
+              {
+                "id": "sudabeh",
+                "name": "Sudabeh",
+                "type": "villain",
+                "slug": null,
+                "title": "Queen of Desire",
+                "img": "heroes/crystal_throne.png",
+                "note": "Falsely accused Siyavash",
+                "relation_type": "rival"
+              }
+            ],
             "children": [
               {
-                "id": "siavash",
-                "name": "Siavash",
+                "id": "siyavash",
+                "name": "Siyavash",
                 "type": "hero",
                 "slug": "siavash",
-                "relation": "son",
+                "relation": "blood",
                 "title": "The Pure Prince",
                 "era": "~1700 BC",
                 "note": "Martyred in Turan",
                 "img": "chapters/siavash.png",
+                "rivals": ["sudabeh", "afrasiab"],
+                "spouses": [
+                  {
+                    "id": "jarireh",
+                    "name": "Jarireh",
+                    "type": "spouse",
+                    "slug": null,
+                    "title": "First Wife",
+                    "img": "heroes/farvahar.png",
+                    "note": "Daughter of Piran, vizier of Afrasiab"
+                  },
+                  {
+                    "id": "farangis",
+                    "name": "Farangis",
+                    "type": "spouse",
+                    "slug": null,
+                    "title": "Princess of Turan",
+                    "img": "chapters/kay-khosrow.png",
+                    "note": "Daughter of Afrasiab — mother of Kay Khosrow",
+                    "child_ids": ["kay-khosrow"]
+                  }
+                ],
                 "children": [
                   {
                     "id": "kay-khosrow",
                     "name": "Kay Khosrow",
                     "type": "king",
                     "slug": "kay-khosrow",
-                    "relation": "son",
+                    "relation": "blood",
                     "title": "The Just Conqueror",
                     "era": "~1600 BC",
                     "img": "chapters/kay-khosrow.png",
+                    "from_spouse": "farangis",
+                    "rivals": ["afrasiab"],
                     "children": [
+                      {
+                        "id": "great-war-turan",
+                        "name": "Great War",
+                        "type": "adventure",
+                        "slug": "great-war-turan",
+                        "relation": "event",
+                        "title": "War of Turan",
+                        "era": "~1580 BC",
+                        "img": "chapters/great-war-turan.png",
+                        "children": []
+                      },
+                      {
+                        "id": "bijan",
+                        "name": "Bijan",
+                        "type": "hero",
+                        "slug": "bijan-manijeh",
+                        "relation": "companion",
+                        "title": "Love Across Borders",
+                        "era": "~1550 BC",
+                        "img": "chapters/bijan-manijeh.png",
+                        "children": []
+                      },
                       {
                         "id": "lohrasp",
                         "name": "Lohrasp",
@@ -386,17 +506,28 @@
                             "name": "Goshtasp",
                             "type": "king",
                             "slug": "goshtasp",
-                            "relation": "son",
+                            "relation": "blood",
                             "title": "King of the Avesta",
                             "era": "~1200 BC",
                             "img": "chapters/goshtasp.png",
+                            "spouses": [
+                              {
+                                "id": "katayun",
+                                "name": "Katayun",
+                                "type": "spouse",
+                                "slug": null,
+                                "title": "Queen of Persia",
+                                "img": "heroes/farvahar.png",
+                                "note": "Roman princess, devoted to Zarathustra's faith"
+                              }
+                            ],
                             "children": [
                               {
                                 "id": "esfandiar",
                                 "name": "Esfandiar",
                                 "type": "hero",
                                 "slug": "esfandiyar",
-                                "relation": "son",
+                                "relation": "blood",
                                 "title": "The Invincible Hero",
                                 "era": "~1100 BC",
                                 "img": "chapters/esfandiyar.png",
@@ -406,51 +537,102 @@
                                     "name": "Bahman",
                                     "type": "king",
                                     "slug": "bahman",
-                                    "relation": "son",
+                                    "relation": "blood",
                                     "title": "Son of Esfandiar",
                                     "era": "~1000 BC",
                                     "img": "chapters/bahman.png",
+                                    "spouses": [
+                                      {
+                                        "id": "homay-spouse",
+                                        "name": "Homay",
+                                        "type": "spouse",
+                                        "slug": "homay",
+                                        "title": "His Own Daughter",
+                                        "img": "chapters/homay.png",
+                                        "note": "⚠ Married his daughter — sin of the age",
+                                        "relation_type": "special"
+                                      }
+                                    ],
                                     "children": [
                                       {
                                         "id": "homay",
                                         "name": "Homay",
                                         "type": "king",
                                         "slug": "homay",
-                                        "relation": "daughter",
+                                        "relation": "blood",
                                         "title": "Queen of Persia",
                                         "era": "~900 BC",
                                         "img": "chapters/homay.png",
+                                        "note": "Daughter and wife of Bahman",
                                         "children": [
                                           {
                                             "id": "darab",
                                             "name": "Darab",
                                             "type": "king",
                                             "slug": "darab",
-                                            "relation": "son",
+                                            "relation": "blood",
                                             "title": "The Lost Prince",
                                             "era": "~400 BC",
                                             "img": "chapters/darab.png",
+                                            "note": "Abandoned at birth, found by a washerman",
+                                            "spouses": [
+                                              {
+                                                "id": "nahid",
+                                                "name": "Nahid",
+                                                "type": "spouse",
+                                                "slug": null,
+                                                "title": "Princess of Macedonia",
+                                                "img": "heroes/farvahar.png",
+                                                "note": "Mother of Eskandar",
+                                                "child_ids": ["eskandar"]
+                                              }
+                                            ],
                                             "children": [
                                               {
                                                 "id": "dara",
                                                 "name": "Dara",
                                                 "type": "king",
                                                 "slug": "dara",
-                                                "relation": "son",
+                                                "relation": "blood",
                                                 "title": "Darius III",
                                                 "era": "~336 BC",
                                                 "img": "chapters/dara.png",
+                                                "note": "Half-brother of Eskandar",
+                                                "children": []
+                                              },
+                                              {
+                                                "id": "eskandar",
+                                                "name": "Eskandar",
+                                                "type": "king",
+                                                "slug": "alexander",
+                                                "relation": "blood",
+                                                "title": "Alexander the Great",
+                                                "era": "~330 BC",
+                                                "img": "chapters/alexander.png",
+                                                "note": "Son of Nahid — half-brother of Dara",
+                                                "from_spouse": "nahid",
+                                                "spouses": [
+                                                  {
+                                                    "id": "roshanak",
+                                                    "name": "Roshanak",
+                                                    "type": "spouse",
+                                                    "slug": null,
+                                                    "title": "Persian Queen",
+                                                    "img": "heroes/farvahar.png",
+                                                    "note": "Daughter of Dara — married after conquest"
+                                                  }
+                                                ],
                                                 "children": [
                                                   {
-                                                    "id": "eskandar",
-                                                    "name": "Eskandar",
-                                                    "type": "villain",
-                                                    "slug": "alexander",
-                                                    "relation": "conqueror",
-                                                    "title": "Alexander the Great",
-                                                    "era": "~330 BC",
-                                                    "note": "Conquered Persia",
-                                                    "img": "chapters/alexander.png"
+                                                    "id": "mourning-pars",
+                                                    "name": "Mourning Pars",
+                                                    "type": "adventure",
+                                                    "slug": "mourning-pars",
+                                                    "relation": "event",
+                                                    "title": "The Fall of Persia",
+                                                    "era": "~326 BC",
+                                                    "img": "chapters/alexander.png",
+                                                    "children": []
                                                   }
                                                 ]
                                               }
@@ -461,20 +643,27 @@
                                     ]
                                   }
                                 ]
+                              },
+                              {
+                                "id": "pashutan",
+                                "name": "Pashutan",
+                                "type": "prince",
+                                "slug": null,
+                                "relation": "blood",
+                                "title": "The Immortal Brother",
+                                "era": "~1100 BC",
+                                "img": "chapters/goshtasp.png",
+                                "note": "Brother of Esfandiar — blessed with immortality",
+                                "lore": {
+                                  "title": "The Undying Witness",
+                                  "description": "Pashutan, son of Goshtasp and brother of Esfandiar, was said to have been blessed with immortality by Zarathustra. He watched the tragedies of his age unfold — Esfandiar's doomed mission, the clash with Rostam — and outlived them all, carrying the memory of the Kayanian age into eternity.",
+                                  "badge": "Story Character"
+                                },
+                                "children": []
                               }
                             ]
                           }
                         ]
-                      },
-                      {
-                        "id": "bijan",
-                        "name": "Bijan",
-                        "type": "hero",
-                        "slug": "bijan-manijeh",
-                        "relation": "companion",
-                        "title": "Love Across Borders",
-                        "era": "~1550 BC",
-                        "img": "chapters/bijan-manijeh.png"
                       }
                     ]
                   }
@@ -506,7 +695,8 @@
             "relation": "descendant",
             "title": "Last Arsacid King",
             "era": "~224 AD",
-            "img": "chapters/ardavan.png"
+            "img": "chapters/ardavan.png",
+            "children": []
           }
         ]
       }
@@ -514,87 +704,170 @@
     {
       "id": "sasanian",
       "label": "Sasanian Dynasty",
-      "era": "III–VII CE",
+      "era": "226–651 AD",
       "root": {
         "id": "ardeshir",
         "name": "Ardeshir I",
-        "title": "Founder of Sassan",
+        "type": "king",
         "slug": "ardeshir",
+        "title": "Founder of the Sasanians",
+        "era": "~226 AD",
         "img": "chapters/ardeshir.png",
         "children": [
           {
             "id": "shapur",
             "name": "Shapur the Great",
-            "title": "Rome Kneels",
+            "type": "king",
             "slug": "shapur",
+            "relation": "blood",
+            "title": "Rome Kneels",
+            "era": "~240–270 AD",
             "img": "chapters/shapur.png",
             "children": [
               {
                 "id": "yazdegerd-sinner",
                 "name": "Yazdegerd the Sinner",
+                "type": "king",
                 "slug": "yazdegerd-sinner",
+                "relation": "descendant",
+                "title": "The Cruel Sovereign",
+                "era": "~399–420 AD",
                 "img": "chapters/yazdegerd-sinner.png",
                 "children": [
                   {
                     "id": "bahram-gur",
                     "name": "Bahram Gur",
-                    "title": "The Lion Hunter",
+                    "type": "king",
                     "slug": "bahram-gur",
+                    "relation": "blood",
+                    "title": "The Lion Hunter",
+                    "era": "~420–438 AD",
                     "img": "chapters/bahram-gur.png",
                     "children": [
                       {
                         "id": "anushirvan",
                         "name": "Khosrow Anushirvan",
-                        "title": "The Just",
+                        "type": "king",
                         "slug": "anushirvan",
+                        "relation": "descendant",
+                        "title": "Khosrow the Just",
+                        "era": "~531–579 AD",
                         "img": "chapters/anushirvan.png",
                         "children": [
                           {
                             "id": "nushzad",
                             "name": "Nushzad",
-                            "title": "The Rebellious Prince",
+                            "type": "prince",
                             "slug": "nushzad",
+                            "relation": "blood",
+                            "title": "The Rebellious Prince",
+                            "era": "~550 AD",
                             "img": "chapters/nushzad.png",
+                            "note": "Christian rebel against his father",
+                            "rivals": ["anushirvan"],
                             "children": []
                           },
                           {
                             "id": "hormuz",
                             "name": "Hormuz IV",
-                            "title": "The Crumbling Crown",
+                            "type": "king",
                             "slug": "hormuz",
+                            "relation": "blood",
+                            "title": "The Crumbling Crown",
+                            "era": "~579–590 AD",
                             "img": "chapters/hormuz.png",
                             "children": [
                               {
                                 "id": "bahram-chubin",
                                 "name": "Bahram Chubin",
-                                "title": "The Rebel",
+                                "type": "villain",
                                 "slug": "bahram-chubin",
+                                "relation": "usurper",
+                                "title": "The Rebel General",
+                                "era": "~590–591 AD",
                                 "img": "chapters/bahram-chubin.png",
-                                "note": "usurper",
+                                "note": "Usurper — not of royal blood",
+                                "rivals": ["hormuz", "khosrow-parviz"],
                                 "children": []
                               },
                               {
                                 "id": "khosrow-parviz",
                                 "name": "Khosrow Parviz",
-                                "title": "The Conqueror",
+                                "type": "king",
                                 "slug": "khosrow-parviz",
+                                "relation": "blood",
+                                "title": "The Conqueror",
+                                "era": "~591–628 AD",
                                 "img": "chapters/khosrow-parviz.png",
-                                "children": [
+                                "spouses": [
                                   {
                                     "id": "shirin",
                                     "name": "Shirin",
-                                    "title": "Queen of Love",
+                                    "type": "spouse",
                                     "slug": "shirin",
+                                    "title": "Queen of Love",
                                     "img": "chapters/shirin.png",
+                                    "note": "Armenian princess"
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "id": "shirin-node",
+                                    "name": "Shirin",
+                                    "type": "spouse",
+                                    "slug": "shirin",
+                                    "relation": "spouse",
+                                    "title": "Queen of Love",
+                                    "era": "~590–628 AD",
+                                    "img": "chapters/shirin.png",
+                                    "note": "Armenian princess, beloved of Khosrow",
                                     "children": []
                                   },
                                   {
                                     "id": "yazdegerd-iii",
                                     "name": "Yazdegerd III",
-                                    "title": "The Last King",
+                                    "type": "king",
                                     "slug": "yazdegerd-iii",
+                                    "relation": "descendant",
+                                    "title": "The Last King",
+                                    "era": "~632–651 AD",
                                     "img": "chapters/yazdegerd-iii.png",
-                                    "children": []
+                                    "note": "Last Sasanian ruler — Arab conquest ended his reign",
+                                    "children": [
+                                      {
+                                        "id": "arab-conquest",
+                                        "name": "Arab Conquest",
+                                        "type": "adventure",
+                                        "slug": "arab-conquest",
+                                        "relation": "event",
+                                        "title": "The Final Chapter",
+                                        "era": "~651 AD",
+                                        "img": "chapters/yazdegerd-iii.png",
+                                        "children": []
+                                      },
+                                      {
+                                        "id": "ages-end",
+                                        "name": "Ages End",
+                                        "type": "adventure",
+                                        "slug": "ages-end",
+                                        "relation": "event",
+                                        "title": "End of an Era",
+                                        "era": "~651 AD",
+                                        "img": "chapters/yazdegerd-iii.png",
+                                        "children": []
+                                      },
+                                      {
+                                        "id": "ferdowsi-legacy",
+                                        "name": "Ferdowsi's Legacy",
+                                        "type": "adventure",
+                                        "slug": "ferdowsi-legacy",
+                                        "relation": "event",
+                                        "title": "The Poet's Vision",
+                                        "era": "~1000 AD",
+                                        "img": "chapters/yazdegerd-iii.png",
+                                        "children": []
+                                      }
+                                    ]
                                   }
                                 ]
                               }
@@ -611,5 +884,170 @@
         ]
       }
     }
-  ]
+  ],
+  "standalone_nodes": {
+    "ahriman": {
+      "id": "ahriman",
+      "name": "Ahriman",
+      "type": "villain",
+      "slug": null,
+      "title": "Lord of Darkness",
+      "era": "Primordial",
+      "img": "/assets/images/enemies/ahriman-boss.png",
+      "note": "Sent his son to kill Siamak",
+      "lore": {
+        "title": "The Eternal Adversary",
+        "description": "Ahriman is the spirit of evil and darkness in the Zoroastrian cosmos. He sent his demonic son against Siamak, the son of Keyumars, causing the world's first grief. His influence darkens every age of the Shahnameh — from Zahhak's serpents to the fall of great kings.",
+        "badge": "Antagonist"
+      }
+    },
+    "afrasiab": {
+      "id": "afrasiab",
+      "name": "Afrasiab",
+      "type": "villain",
+      "slug": null,
+      "title": "King of Turan",
+      "era": "~1800–1600 BC",
+      "img": "heroes/blak_demon.png",
+      "note": "Eternal enemy of Iran — slayer of Siyavash",
+      "lore": {
+        "title": "The Great Adversary",
+        "description": "Afrasiab, king of Turan, was the most feared enemy of Iran across three generations of Kayanian kings. His murder of Siyavash — the purest prince in the Shahnameh — set in motion a chain of vengeance that consumed both nations. He was finally slain by Kay Khosrow, the son of the man he murdered.",
+        "badge": "Antagonist"
+      }
+    },
+    "sudabeh": {
+      "id": "sudabeh",
+      "name": "Sudabeh",
+      "type": "villain",
+      "slug": null,
+      "title": "Queen of Desire",
+      "era": "~1700 BC",
+      "img": "heroes/crystal_throne.png",
+      "note": "Falsely accused Siyavash — drove him to his death",
+      "lore": {
+        "title": "The Fatal Queen",
+        "description": "Sudabeh was the beautiful but dangerous wife of Kay Kavus. When Siyavash, the pure prince, refused her advances, she accused him of assault. Her false accusation drove the purest soul in the Shahnameh out of Iran — and into the arms of his death in Turan.",
+        "badge": "Antagonist"
+      }
+    },
+    "kaveh": {
+      "id": "kaveh",
+      "name": "Kaveh",
+      "type": "hero",
+      "slug": null,
+      "title": "The Blacksmith of Iran",
+      "era": "~5000 BC",
+      "img": "heroes/iron_ax_of_hushang.png",
+      "note": "Raised the Derafsh Kaviani — banner of revolt",
+      "lore": {
+        "title": "The Blacksmith Who Saved Iran",
+        "description": "Kaveh was a simple blacksmith whose sons were fed to Zahhak's serpents. When he could bear it no more, he tore off his leather apron and raised it as a banner of revolt. That apron — the Derafsh Kaviani — became the sacred royal standard of Persia, and Kaveh became the eternal symbol of the people's uprising against tyranny.",
+        "badge": "Story Character"
+      }
+    },
+    "tahmineh": {
+      "id": "tahmineh",
+      "name": "Tahmineh",
+      "type": "spouse",
+      "slug": null,
+      "title": "Princess of Samangan",
+      "era": "~1800 BC",
+      "img": "chapters/sohrab.png",
+      "note": "Mother of Sohrab by Rostam",
+      "lore": {
+        "title": "The Princess of Samangan",
+        "description": "Tahmineh, princess of Samangan, came to Rostam in the night, drawn by his legend. From their single union, Sohrab was born. She raised him alone, hiding his father's identity until it was too late — when Sohrab finally rode to find Rostam, neither father nor son recognised the other until the fatal blow had already fallen.",
+        "badge": "Story Character"
+      }
+    },
+    "sindokht": {
+      "id": "sindokht",
+      "name": "Sindokht",
+      "type": "spouse",
+      "slug": null,
+      "title": "Queen of Kabul",
+      "era": "~2500 BC",
+      "img": "chapters/rudabeh.png",
+      "note": "Mother of Rudabeh — wife of Mehrab",
+      "lore": {
+        "title": "Queen of Kabul",
+        "description": "Sindokht was the wise queen of Kabul, wife of Mehrab and mother of Rudabeh. When Rudabeh's love for Zal threatened to destroy her family's alliance with the legacy of Zahhak, Sindokht navigated the dangerous political waters with courage and grace, ultimately helping broker peace between the families.",
+        "badge": "Story Character"
+      }
+    },
+    "jarireh": {
+      "id": "jarireh",
+      "name": "Jarireh",
+      "type": "spouse",
+      "slug": null,
+      "title": "First Wife of Siyavash",
+      "era": "~1700 BC",
+      "img": "heroes/farvahar.png",
+      "lore": {
+        "title": "The Loyal Wife",
+        "description": "Jarireh was the first wife of Siyavash, daughter of Piran the vizier. When Siyavash was killed at Afrasiab's command, Jarireh mourned him faithfully and raised their legacy in exile, embodying the loyal grief that the Shahnameh so often gives to women left behind by the wars of men.",
+        "badge": "Story Character"
+      }
+    },
+    "farangis": {
+      "id": "farangis",
+      "name": "Farangis",
+      "type": "spouse",
+      "slug": null,
+      "title": "Princess of Turan",
+      "era": "~1700 BC",
+      "img": "chapters/kay-khosrow.png",
+      "note": "Daughter of Afrasiab — mother of Kay Khosrow",
+      "lore": {
+        "title": "The Princess Between Two Worlds",
+        "description": "Farangis was the daughter of Afrasiab, given in marriage to Siyavash as part of a peace accord. She loved her Iranian husband truly, and when he was murdered by her own father's command, she fled with her unborn child to safety. Her son would become Kay Khosrow — the king who would avenge his father and define an age.",
+        "badge": "Story Character"
+      }
+    },
+    "katayun": {
+      "id": "katayun",
+      "name": "Katayun",
+      "type": "spouse",
+      "slug": null,
+      "title": "Queen of Persia",
+      "era": "~1200 BC",
+      "img": "heroes/farvahar.png",
+      "lore": {
+        "title": "The Foreign Queen",
+        "description": "Katayun was a Roman princess who chose Goshtasp over wealth and power, recognising in him a future great king. She stood beside him through the religious revolution of Zarathustra, converting to the new faith and helping establish Zoroastrianism as the state religion of Iran.",
+        "badge": "Story Character"
+      }
+    },
+    "nahid": {
+      "id": "nahid",
+      "name": "Nahid",
+      "type": "spouse",
+      "slug": null,
+      "title": "Princess of Macedonia",
+      "era": "~380 BC",
+      "img": "heroes/farvahar.png",
+      "note": "Mother of Eskandar by Darab",
+      "lore": {
+        "title": "The Macedonian Princess",
+        "description": "Nahid was a Macedonian princess given in marriage to Darab of Persia. The union was brief and unhappy — Darab sent her home when he found her breath unpleasant. She returned to Macedonia carrying his child. That child would grow up as Alexander, believing himself wholly Greek — until the Shahnameh reveals his Persian blood.",
+        "badge": "Story Character"
+      }
+    },
+    "roshanak": {
+      "id": "roshanak",
+      "name": "Roshanak",
+      "type": "spouse",
+      "slug": null,
+      "title": "Persian Queen",
+      "era": "~326 BC",
+      "img": "heroes/farvahar.png",
+      "note": "Daughter of Dara — married Eskandar after conquest",
+      "lore": {
+        "title": "The Persian Bride",
+        "description": "Roshanak (Roxana in Greek histories) was the daughter of Dara, the last Persian king. After Eskandar's conquest, he married Roshanak — symbolically uniting the conqueror with the conquered royal line. In the Shahnameh's telling, this marriage was both a political act and a recognition of Persian legitimacy.",
+        "badge": "Story Character"
+      }
+    }
+  }
 }
