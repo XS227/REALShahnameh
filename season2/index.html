@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#04050b" />
   <title>REAL Shahnameh — Home</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="style.css?v=202606052400" />
+  <link rel="stylesheet" href="style.css?v=202606072200" />
   <style>
     /* Home-only layout additions */
     .home-season-banner {
@@ -238,7 +238,7 @@
   <main class="app">
 
     <!-- ── Profile ─────────────────────────────────────────────────────── -->
-    <a href="profile.html" class="card gold-edge top-bar" style="text-decoration:none; display:flex;">
+    <a href="profile.html" class="card gold-edge top-bar" style="text-decoration:none;">
       <div class="avatar" data-avatar>
         <img src="/assets/images/avatars/default-male-avatar.png" alt="Avatar"
              data-avatar-img
@@ -247,19 +247,13 @@
         <span class="avatar-ring"></span>
       </div>
       <div class="who">
-        <h1 class="name"><span data-player-name>—</span> <span class="pill" data-vip-level>VIP</span></h1>
+        <h1 class="name"><span data-player-name>—</span></h1>
         <div class="rank-row">
-          <!-- Path badge: represents the player's chosen path in the Shahnameh universe -->
-          <span class="rank-tag" data-path-title title="Your path in the Shahnameh universe">⚔ Warrior of Pars</span>
+          <span class="rank-tag" data-player-level-badge title="Chronicle level"><span data-player-badge>⭐</span> Lv <span data-level>1</span></span>
+          <span class="rank-tag rank-tag--s1" data-s1-badge hidden title="Season 1 veteran">🏛 Veteran</span>
+          <span class="rank-tag rank-tag--clan" data-clan-leader-badge hidden title="Clan leader">🏅 Leader</span>
         </div>
-      </div>
-      <!-- Prestige badge: icon + level derived from XP -->
-      <div class="lvl-badge" title="Prestige rank based on Chronicle XP">
-        <span class="player-medallion" data-player-badge>⭐</span>
-        <div class="lvl-badge-right">
-          <span class="lvl-num" data-level>1</span>
-          <span class="lvl-label">Prestige</span>
-        </div>
+        <div class="profile-id" data-player-tg-id></div>
       </div>
     </a>
 
@@ -470,6 +464,6 @@
   <script src="audio.js?v=202605272200"></script>
   <script src="cinematic.js?v=202605272200"></script>
   <script src="sync.js?v=202606052600"></script>
-  <script src="home.js?v=202606052700"></script>
+  <script src="home.js?v=202606072200"></script>
 </body>
 </html>

@@ -313,12 +313,28 @@
     const vipLv   = Math.floor((player.xp || 0) / 1000);
     const levelEl = $("[data-level]");
     if (levelEl) levelEl.textContent = fmtNum(vipLv);
-    const vipPill = $("[data-vip-level]");
-    if (vipPill) {
-      vipPill.textContent = vipLv === 0 ? 'VIP' : `VIP · Level ${fmtNum(vipLv)}`;
-    }
 
     hydrateBadge(vipLv);
+
+    // Season 1 veteran badge
+    const s1Badge = $("[data-s1-badge]");
+    if (s1Badge) {
+      const isS1 = lsRead("isSeason1Player") === "true" || !!(player.isSeason1Player);
+      s1Badge.hidden = !isS1;
+    }
+
+    // Clan leader badge
+    const clanBadge = $("[data-clan-leader-badge]");
+    if (clanBadge) {
+      clanBadge.hidden = lsRead("real_is_clan_leader") !== "1";
+    }
+
+    // Player Telegram ID
+    const idEl = $("[data-player-tg-id]");
+    if (idEl) {
+      const tgId = (tgUser && tgUser.id) || (player.userId) || "";
+      idEl.textContent = tgId ? `#${tgId}` : "";
+    }
   };
 
   /* ── Chronicle banner: full on first visit, chip on return ──────────── */
@@ -396,12 +412,18 @@
 
   const claimDailyBonus = () => {
     try {
-      const key = "real_daily_bonus_claimed_" + todayKey();
+      const dk  = todayKey();
+      const key = "real_daily_bonus_claimed_" + dk;
       const btn = document.querySelector("[data-quest-claim]");
       if (lsRead(key) === "1") {
         showQuestBonusPopup(true); // already claimed — show popup without granting XP
         return;
       }
+      // All three quests must be complete before the bonus can be claimed
+      const readDone = lsRead("real_quest_read_" + dk) === "true";
+      const quizDone = lsRead("real_quest_quiz_" + dk) === "true";
+      const tapsDone = parseInt(lsRead("real_daily_taps_" + dk) || "0", 10) >= TAP_GOAL;
+      if (!readDone || !quizDone || !tapsDone) return;
       if (btn) { btn.disabled = true; btn.textContent = "✓ Claimed!"; }
       try { localStorage.setItem(key, "1"); } catch {}
       if (window.RealPlayer) window.RealPlayer.addResource("xp", 200);
@@ -572,6 +594,39 @@
         </div>
       </a>`;
     }).join('');
+  };
+
+  /* ── Beta notice (shown once per session on every app open) ─────────── */
+  const showBetaNotice = () => {
+    try { if (sessionStorage.getItem('beta_notice_shown')) return; } catch (_) {}
+    const overlay = document.createElement('div');
+    overlay.className = 'beta-notice-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.innerHTML = `
+      <div class="beta-notice-sheet">
+        <div class="beta-notice-icon">🔬</div>
+        <h2 class="beta-notice-title">Beta Testing in Progress</h2>
+        <p class="beta-notice-body">
+          You are currently using the <strong>Season 2 beta test</strong> of REAL Shahnameh.
+          Everything you see — points, balance, heroes, and progress — is for testing purposes only.
+        </p>
+        <div class="beta-notice-warn">
+          ⚠️ All data will be <strong>reset to zero</strong> when Season 2 officially opens.
+        </div>
+        <p class="beta-notice-thanks">
+          Thank you for being part of our test crew! Your feedback makes the real launch better. 🙏
+        </p>
+        <button class="beta-notice-btn">Got it — let's test!</button>
+      </div>`;
+    const dismiss = () => {
+      overlay.classList.add('beta-notice-out');
+      overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
+      try { sessionStorage.setItem('beta_notice_shown', '1'); } catch (_) {}
+    };
+    overlay.querySelector('.beta-notice-btn').addEventListener('click', dismiss);
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => requestAnimationFrame(() => overlay.classList.add('beta-notice-in')));
   };
 
   /* ── Treasury info modals ─────────────────────────────────────────────── */
@@ -868,7 +923,8 @@
     wireQuestClicks();
     wireClaimButton();
     wireTreasuryModals();
-    // Return popups after page has settled (600 ms)
+    // Beta notice first (every session), then return popups after page has settled
+    setTimeout(showBetaNotice, 400);
     setTimeout(doReturnPopups, 600);
 
     if (window.RealSync) {

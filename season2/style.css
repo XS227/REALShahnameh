@@ -6195,3 +6195,58 @@ body::after {
 }
 .lb-player-link { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; text-decoration: none; color: inherit; }
 .clan-avatar-photo { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; }
+
+/* ── Beta notice overlay ─────────────────────────────────────────────── */
+.beta-notice-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(4, 5, 11, 0.88);
+  display: flex; align-items: flex-end; justify-content: center;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  opacity: 0; transition: opacity 0.28s ease;
+}
+.beta-notice-overlay.beta-notice-in  { opacity: 1; }
+.beta-notice-overlay.beta-notice-out { opacity: 0; pointer-events: none; }
+.beta-notice-sheet {
+  background: var(--bg-1, #070a18);
+  border: 1px solid rgba(244, 197, 107, 0.22);
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+  padding: 28px 24px 32px;
+  width: 100%; max-width: 520px;
+  text-align: center;
+  transform: translateY(30px); transition: transform 0.28s ease;
+}
+.beta-notice-overlay.beta-notice-in .beta-notice-sheet { transform: translateY(0); }
+.beta-notice-icon {
+  font-size: 36px; margin-bottom: 10px; display: block;
+}
+.beta-notice-title {
+  font-size: 18px; font-weight: 700; color: var(--gold, #f4c56b);
+  margin: 0 0 12px;
+}
+.beta-notice-body {
+  font-size: 14px; color: var(--text-dim, #c2cce4);
+  line-height: 1.55; margin: 0 0 14px;
+}
+.beta-notice-warn {
+  background: rgba(255, 82, 103, 0.1);
+  border: 1px solid rgba(255, 82, 103, 0.3);
+  border-radius: 10px;
+  color: #ff8a9a;
+  font-size: 13px; font-weight: 600;
+  padding: 10px 14px; margin-bottom: 14px;
+  line-height: 1.45;
+}
+.beta-notice-thanks {
+  font-size: 13px; color: var(--muted, #8b97b8);
+  margin: 0 0 22px; line-height: 1.5;
+}
+.beta-notice-btn {
+  display: block; width: 100%;
+  background: linear-gradient(135deg, #f4c56b, #c98e2b);
+  color: #04050b; font-weight: 700; font-size: 15px;
+  border: none; border-radius: 12px;
+  padding: 14px; cursor: pointer;
+  transition: opacity 0.15s;
+}
+.beta-notice-btn:active { opacity: 0.82; }
