@@ -593,6 +593,7 @@
       viral: "رویدادها",
       your_invite_link: "لینک دعوت شما",
       share_to_telegram: "اشتراک در تلگرام",
+      open_in_telegram: "در تلگرام باز کنید",
       copy_link: "کپی لینک",
       lifetime_10: "+۱۰٪ مادام‌العمر",
       season_pts_20: "+۲۰٪ امتیاز فصل",
@@ -638,6 +639,8 @@
       top_earners: "برترین درآمدزایان",
       top_learners: "برترین دانش‌آموختگان",
       top_referrers: "برترین معرفان",
+      top_clans: "برترین قبایل",
+      refresh_btn: "بازخوانی ›",
       guilds: "اتحادیه‌ها",
       all_guilds: "همه اتحادیه‌ها ›",
       activity: "فعالیت",
@@ -1031,6 +1034,7 @@
 
       /* ── Social page ── */
       your_clan_header:      "قبیله شما",
+      clan_invites_header:   "⚔ دعوت‌نامه‌های قبیله",
       clan_leader_tag:       "رهبر",
       clan_members_lbl:      "اعضا",
       clan_earned_lbl:       "کسب‌شده",

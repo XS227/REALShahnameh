@@ -589,6 +589,7 @@
       viral: "EVENTS",
       your_invite_link: "Your invite link",
       share_to_telegram: "Share to Telegram",
+      open_in_telegram: "Open in Telegram",
       copy_link: "Copy Link",
       lifetime_10: "+10% lifetime",
       season_pts_20: "+20% Season pts",
@@ -634,6 +635,8 @@
       top_earners: "Top Earners",
       top_learners: "Top Learners",
       top_referrers: "Top Referrers",
+      top_clans: "Top Clans",
+      refresh_btn: "Refresh ›",
       guilds: "Guilds",
       all_guilds: "All guilds ›",
       activity: "Activity",
@@ -1027,6 +1030,7 @@
 
       /* ── Social page ── */
       your_clan_header:      "Your Clan",
+      clan_invites_header:   "⚔ Clan Invites",
       clan_leader_tag:       "Leader",
       clan_members_lbl:      "Members",
       clan_earned_lbl:       "Earned",
