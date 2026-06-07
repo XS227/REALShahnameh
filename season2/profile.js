@@ -13,6 +13,31 @@
   let _tg         = null;   // Telegram user object
   let _isS1       = false;  // Season 1 Founder status (fetched from legacy API)
 
+  /* Ordered chapter slugs — used to compute current chapter from localStorage */
+  const CHAPTER_SLUGS = [
+    "keyumars","hushang","tahmuras","jamshid","zahhak",
+    "fereydun","manuchehr","nozar","zal","rudabeh",
+    "birth-of-rostam","rostam","sohrab","simorgh","akvan",
+    "seven-labours-esp","siavash","kay-kavus","kay-khosrow",
+    "bijan-manijeh","great-war-turan","lohrasp",
+    "goshtasp","esfandiyar","clash-rostam-esp","rostams-end",
+    "memory-over-sword","bahman","homay","darab","dara",
+    "alexander","mourning-pars","ashkanian-age","ardavan",
+    "ardeshir","shapur","yazdegerd-sinner","bahram-gur","anushirvan",
+    "nushzad","hormuz","bahram-chubin","khosrow-parviz","shirin",
+    "yazdegerd-iii","arab-conquest","ages-end","ferdowsi-legacy",
+  ];
+
+  const currentChapterNum = () => {
+    try {
+      let last = 0;
+      CHAPTER_SLUGS.forEach((slug, i) => {
+        if (localStorage.getItem('real_chapter_done_' + slug) === '1') last = i + 1;
+      });
+      return last + 1; // current = last completed + 1 (or 1 if none done)
+    } catch { return 1; }
+  };
+
   const tgUser = () => {
     try {
       return (window.Telegram && window.Telegram.WebApp
@@ -137,6 +162,18 @@
     const pathClass = path === 'heroine' ? 'heroine' : 'hero';
     if (pathTagEl) { pathTagEl.textContent = pathLabel; pathTagEl.className = 'profile-path-tag ' + pathClass; pathTagEl.style.display = 'inline-flex'; }
     if (pathPill)  { pathPill.textContent = pathLabel;  pathPill.style.display = ''; }
+
+    // S1 Veteran badge
+    const s1El = document.getElementById('profile-s1-badge');
+    if (s1El) s1El.hidden = !_isS1;
+
+    // Clan Leader badge — compare user's telegram_id with clan's leader_id
+    const clanBadgeEl = document.getElementById('profile-clan-badge');
+    if (clanBadgeEl) {
+      const myId    = String(u.telegram_id || (tg && tg.id) || '');
+      const isLeader = !!(myId && _clanData && _clanData.leader_id && String(_clanData.leader_id) === myId);
+      clanBadgeEl.hidden = !isLeader;
+    }
   };
 
   const renderBalanceCard = (u) => {
@@ -149,20 +186,22 @@
   const renderStats = (u) => {
     const el = document.getElementById('stats-grid');
     if (!el) return;
-    const inClan = !!(u.clan_id || (_clanData && _clanData.clan_id));
-    const xp     = u.xp || 0;
-    /* Level is derived from XP — DB 'level' field is never updated from XP */
-    const level  = Math.max(1, Math.floor(xp / 1000));
-    const streak = u.daily_streak || 1;
-    const refs   = u.verified_referral_count || 0;
+    const inClan     = !!(u.clan_id || (_clanData && _clanData.clan_id));
+    const xp         = u.xp || 0;
+    const level      = Math.max(1, Math.floor(xp / 1000));
+    const streak     = u.daily_streak || 1;
+    const clanCount  = (_clanData && _clanData.member_count) || 0;
+    const chNum      = currentChapterNum();
+
     const stats = [
       { ico: '⭐', lbl: t('stat_xp_lbl'),      val: fmtN(xp),    bonus: inClan ? t('stat_clan_bonus_tag') : null },
       { ico: '🏆', lbl: t('stat_level_lbl'),    val: t('stat_level_val', { n: isFa() ? pd(level) : level }), bonus: null },
       { ico: '🔥', lbl: t('stat_daily_lbl'),    val: t('stat_daily_val', { n: isFa() ? pd(streak) : streak }), bonus: null },
-      { ico: '👥', lbl: t('stat_warriors_lbl'), val: isFa() ? pd(refs) : String(refs), bonus: null },
+      { ico: '👥', lbl: t('stat_warriors_lbl'), val: isFa() ? pd(clanCount) : String(clanCount), bonus: null },
+      { ico: '📜', lbl: 'Chapter', val: 'Ch. ' + (isFa() ? pd(chNum) : chNum), bonus: null, wide: true },
     ];
     el.innerHTML = stats.map(s => `
-      <div class="stat-card">
+      <div class="stat-card${s.wide ? ' stat-card--wide' : ''}">
         <span class="stat-ico">${s.ico}</span>
         <span class="stat-val">${s.val}</span>
         <span class="stat-lbl">${s.lbl}</span>
@@ -354,6 +393,14 @@
     renderStats(u);
     renderBadges(u);
     renderClan(_clanData, {});
+    // Refresh identity badges (S1, clan leader) which depend on _isS1 and _clanData
+    const s1El = document.getElementById('profile-s1-badge');
+    if (s1El) s1El.hidden = !_isS1;
+    const clanBadgeEl = document.getElementById('profile-clan-badge');
+    if (clanBadgeEl) {
+      const myId = String((_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
+      clanBadgeEl.hidden = !(myId && _clanData && _clanData.leader_id && String(_clanData.leader_id) === myId);
+    }
   };
 
   /* ── Mining counter ───────────────────────────────────────────────────── */

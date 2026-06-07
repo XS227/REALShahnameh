@@ -264,7 +264,8 @@ a { color: inherit; }
 }
 .rank-row {
   display: flex;
-  gap: 6px;
+  flex-wrap: wrap;
+  gap: 5px;
   margin-top: 4px;
   font-size: 11px;
   color: var(--muted);
@@ -279,6 +280,24 @@ a { color: inherit; }
   border: 1px solid var(--border-violet);
   color: #cdbcff;
   font-weight: 600;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.rank-tag--s1 {
+  background: rgba(244, 197, 107, 0.14);
+  border-color: var(--border-gold);
+  color: var(--gold);
+}
+.rank-tag--clan {
+  background: rgba(74, 216, 166, 0.14);
+  border-color: rgba(74, 216, 166, 0.35);
+  color: #4ad8a6;
+}
+.profile-id {
+  margin-top: 4px;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
 }
 .lvl-badge {
   display: inline-flex;
@@ -5334,6 +5353,9 @@ body::after {
 .stat-ico { font-size: 18px; line-height: 1; }
 .stat-val { font-size: 22px; font-weight: 800; color: var(--text); line-height: 1.1; }
 .stat-lbl { font-size: 11px; color: var(--muted); }
+.stat-card--wide { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 10px; }
+.stat-card--wide .stat-val { font-size: 18px; }
+.stat-card--wide .stat-lbl { margin-left: auto; font-size: 12px; color: var(--gold); font-weight: 600; }
 
 /* Badge grid */
 .badge-grid {
