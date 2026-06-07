@@ -2223,7 +2223,7 @@
     const bannerSub    = document.querySelector(".cb-sub");
     const bannerKicker = document.querySelector(".cb-kicker");
     const headerPill   = document.querySelector(".page-head .pill");
-    const chName = STORY_NAME[storyCh] || `Chapter ${storyCh}`;
+    const chName = t(`story_ch_${storyCh}`) !== `story_ch_${storyCh}` ? t(`story_ch_${storyCh}`) : (STORY_NAME[storyCh] || `Chapter ${storyCh}`);
     const chSlugStr = (STORY_SLUGS[storyCh - 1] || "").replace(/-/g, " ");
     if (bannerKicker) bannerKicker.textContent = storyCh > 1 ? "Chronicle Progress" : "Begin Your Journey";
     if (bannerTitle)  bannerTitle.textContent  = `Chapter ${storyCh} — ${chName}`;

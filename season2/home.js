@@ -606,18 +606,11 @@
     overlay.innerHTML = `
       <div class="beta-notice-sheet">
         <div class="beta-notice-icon">🔬</div>
-        <h2 class="beta-notice-title">Beta Testing in Progress</h2>
-        <p class="beta-notice-body">
-          You are currently using the <strong>Season 2 beta test</strong> of REAL Shahnameh.
-          Everything you see — points, balance, heroes, and progress — is for testing purposes only.
-        </p>
-        <div class="beta-notice-warn">
-          ⚠️ All data will be <strong>reset to zero</strong> when Season 2 officially opens.
-        </div>
-        <p class="beta-notice-thanks">
-          Thank you for being part of our test crew! Your feedback makes the real launch better. 🙏
-        </p>
-        <button class="beta-notice-btn">Got it — let's test!</button>
+        <h2 class="beta-notice-title">${t('beta_notice_title')}</h2>
+        <p class="beta-notice-body">${t('beta_notice_body')}</p>
+        <div class="beta-notice-warn">${t('beta_notice_warn')}</div>
+        <p class="beta-notice-thanks">${t('beta_notice_thanks')}</p>
+        <button class="beta-notice-btn">${t('beta_notice_btn')}</button>
       </div>`;
     const dismiss = () => {
       overlay.classList.add('beta-notice-out');
