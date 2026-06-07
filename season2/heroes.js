@@ -17,7 +17,7 @@
   const RARITY_COST = { common: 500, rare: 2000, epic: 5000, legend: 10000, mythic: 25000 };
   const RARITY_ZAR  = { common: 2,   rare: 8,    epic: 20,   legend: 50,    mythic: 120 };
 
-  /* Map chapter number → its localStorage slug (must match catalog API slugs) */
+  /* Map chapter number → its localStorage slug (heroes.js card-gate numbering) */
   const CH_SLUG = {
     1:  "keyumars",        2:  "hushang",           3:  "tahmuras",
     4:  "jamshid",         5:  "zahhak",             6:  "fereydun",
@@ -32,16 +32,49 @@
     "haft-khan-esp": "esfandiyar",
   };
 
-  const CH_NAME = {
-    1:  "The First King",         2:  "The Fire-Maker",       3:  "The Taming of Demons",
-    4:  "The Golden Age",         5:  "The Serpent Tyrant",   6:  "The Liberator",
-    7:  "The Long King",          8:  "The Fall of Nozar",    9:  "The White-Haired Prince",
-    10: "The Daughter of Mehrab", 11: "Birth of Rostam",      12: "The Champion of Champions",
-    13: "Rostam and Sohrab",      14: "The Tragedy of Siyavash", 15: "The Blind King",
-    16: "Kay Khosrow",            17: "The Demon of the Lake", 18: "Bijan and Manijeh",
-    19: "The Great War",          20: "Lohrasp",              21: "Goshtasp and the Faith",
-    22: "Esfandiyar",             23: "Haft Khan — Esfandiyar", 24: "Clash at the Mountain",
-    25: "The Simorgh",
+  /* Full ordered slug list matching the API's catalog chapter ordering (49 chapters) */
+  const STORY_SLUGS = [
+    "keyumars","hushang","tahmuras","jamshid","zahhak",
+    "fereydun","manuchehr","nozar","zal","rudabeh",
+    "birth-of-rostam","rostam","sohrab","simorgh","akvan",
+    "seven-labours-esp","siavash","kay-kavus","kay-khosrow",
+    "bijan-manijeh","great-war-turan","lohrasp",
+    "goshtasp","esfandiyar","clash-rostam-esp","rostams-end",
+    "memory-over-sword","bahman","homay","darab","dara",
+    "alexander","mourning-pars","ashkanian-age","ardavan",
+    "ardeshir","shapur","yazdegerd-sinner","bahram-gur","anushirvan",
+    "nushzad","hormuz","bahram-chubin","khosrow-parviz","shirin",
+    "yazdegerd-iii","arab-conquest","ages-end","ferdowsi-legacy",
+  ];
+
+  const STORY_NAME = {
+    1:"The First King",        2:"The Fire-Maker",         3:"Tahmuras",
+    4:"The Golden Age",        5:"The Serpent Tyrant",     6:"The Liberator",
+    7:"Manuchehr",             8:"Nozar",                  9:"Zal",
+    10:"Rudabeh",              11:"Birth of Rostam",       12:"Rostam",
+    13:"Rostam & Sohrab",      14:"The Simorgh",           15:"Akvan Div",
+    16:"Haft Khan — Esfandiyar", 17:"Siavash",             18:"Kay Kavus",
+    19:"Kay Khosrow",          20:"Bijan & Manijeh",       21:"The Great War",
+    22:"Lohrasp",              23:"Goshtasp",              24:"Esfandiyar",
+    25:"Clash at the Mountain",26:"Rostam's End",          27:"Memory Over Sword",
+    28:"Bahman",               29:"Homay",                 30:"Darab",
+    31:"Dara",                 32:"Alexander",             33:"Mourning Pars",
+    34:"The Ashkanian Age",    35:"Ardavan",               36:"Ardeshir",
+    37:"Shapur",               38:"Yazdegerd the Sinner",  39:"Bahram Gur",
+    40:"Anushirvan",           41:"Nushzad",               42:"Hormuz",
+    43:"Bahram Chubin",        44:"Khosrow Parviz",        45:"Shirin",
+    46:"Yazdegerd III",        47:"The Arab Conquest",     48:"Ages End",
+    49:"Ferdowsi's Legacy",
+  };
+
+  const currentStoryChapter = () => {
+    try {
+      let last = 0;
+      STORY_SLUGS.forEach((slug, i) => {
+        if (localStorage.getItem("real_chapter_done_" + slug) === "1") last = i + 1;
+      });
+      return last + 1;
+    } catch { return 1; }
   };
 
   const isChapterDone = (n) => {
@@ -1593,7 +1626,8 @@
   const heroEconomyState = (item) => {
     const owned = ownedHeroes[item.id];
     if (owned) return "owned";
-    if (!isChapterDone(item.chapter)) return "locked";
+    /* artifact_poet items unlock by prereq chain only — skip chapter gate */
+    if (item.type !== "artifact_poet" && !isChapterDone(item.chapter)) return "locked";
     if (item.prereq) {
       const prereqOwned = ownedHeroes[item.prereq.hero_id];
       if (!prereqOwned || (prereqOwned.level || 1) < item.prereq.level) return "prereq_locked";
@@ -2115,12 +2149,10 @@
     if (discVal) discVal.textContent = ownedCount;
     if (lockVal) lockVal.textContent = total - ownedCount;
 
-    /* 2. Chapters completed (unique chapters with at least one owned card) */
-    const ownedChapters = new Set(
-      COLLECTION.filter(it => ownedHeroes[it.id]).map(it => it.chapter)
-    );
+    /* 2. Current story chapter — from localStorage, same logic as profile.js */
+    const storyCh = currentStoryChapter();
     const chVal = document.querySelector(".css-cell:nth-child(3) .css-val");
-    if (chVal) chVal.textContent = ownedChapters.size || 0;
+    if (chVal) chVal.textContent = storyCh;
 
     /* 3. Avg Rarity — dominant rarity among owned cards */
     const RARITY_RANK = { common: 1, rare: 2, epic: 3, legend: 4, mythic: 5 };
@@ -2145,26 +2177,17 @@
     if (countEl) countEl.innerHTML = `<strong>${ownedCount}</strong> <span>of ${total} discovered</span>`;
     if (fillEl)  fillEl.style.width = `${pct}%`;
 
-    /* 5. Chapter banner — find highest completed chapter that has owned cards */
-    const lastCh = Math.max(0, ...Array.from(ownedChapters));
+    /* 5. Chapter banner — show user's actual story progress from localStorage */
     const bannerTitle  = document.querySelector(".cb-title");
     const bannerSub    = document.querySelector(".cb-sub");
     const bannerKicker = document.querySelector(".cb-kicker");
     const headerPill   = document.querySelector(".page-head .pill");
-    if (lastCh > 0) {
-      const chName       = CH_NAME[lastCh] || `Chapter ${lastCh}`;
-      const chCardCount  = COLLECTION.filter(it => it.chapter === lastCh && ownedHeroes[it.id]).length;
-      const chSlug       = CH_SLUG[lastCh] || "";
-      if (bannerKicker) bannerKicker.textContent = "Chapter Complete";
-      if (bannerTitle)  bannerTitle.textContent  = `Chapter ${lastCh} — ${chName}`;
-      if (bannerSub)    bannerSub.textContent    = `${chCardCount} item${chCardCount !== 1 ? "s" : ""} discovered · ${chSlug.replace(/-/g, " ")} era`;
-      if (headerPill)   headerPill.textContent   = `S2 · Ch.${lastCh}`;
-    } else if (ownedCount === 0) {
-      if (bannerKicker) bannerKicker.textContent = "Start Your Journey";
-      if (bannerTitle)  bannerTitle.textContent  = "No cards discovered yet";
-      if (bannerSub)    bannerSub.textContent    = "Complete chapters to unlock cards";
-      if (headerPill)   headerPill.textContent   = "S2 · Ch.1";
-    }
+    const chName = STORY_NAME[storyCh] || `Chapter ${storyCh}`;
+    const chSlugStr = (STORY_SLUGS[storyCh - 1] || "").replace(/-/g, " ");
+    if (bannerKicker) bannerKicker.textContent = storyCh > 1 ? "Chronicle Progress" : "Begin Your Journey";
+    if (bannerTitle)  bannerTitle.textContent  = `Chapter ${storyCh} — ${chName}`;
+    if (bannerSub)    bannerSub.textContent    = `${ownedCount} card${ownedCount !== 1 ? "s" : ""} collected · ${chSlugStr} era`;
+    if (headerPill)   headerPill.textContent   = `S2 · Ch.${storyCh}`;
   };
 
   const _doOpenCertificate = (item, backdrop, modal) => {
