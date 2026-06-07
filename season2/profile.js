@@ -95,6 +95,12 @@
     if (usernameEl) usernameEl.textContent = u.username ? '@' + u.username : '';
     if (trustBadge) trustBadge.style.display = (u.verified_referral_count || 0) > 0 ? 'inline-flex' : 'none';
 
+    const tgIdEl = document.getElementById('profile-tg-id');
+    if (tgIdEl) {
+      const tgId = (tg && tg.id) || u.telegram_id || '';
+      tgIdEl.textContent = tgId ? '#' + tgId : '';
+    }
+
     const showFallbackAvatar = () => {
       const fallbackSrc = window.RealUtils && window.RealUtils.getAvatarFallback
         ? window.RealUtils.getAvatarFallback(u.path) : null;
@@ -111,17 +117,19 @@
     };
 
     if (avatarEl) {
-      const pic = u.profile_pic || (tg && tg.photo_url) || '';
-      if (pic) {
+      const primary   = u.profile_pic || '';
+      const secondary = (tg && tg.photo_url) || '';
+      const tryLoad = (src, nextFn) => {
         const img = document.createElement('img');
-        img.src = pic;
+        img.src = src;
         img.alt = displayName;
-        img.onerror = () => { img.remove(); showFallbackAvatar(); };
+        img.onerror = () => { img.remove(); nextFn(); };
         avatarEl.innerHTML = '';
         avatarEl.appendChild(img);
-      } else {
-        showFallbackAvatar();
-      }
+      };
+      if (primary)        tryLoad(primary, () => secondary ? tryLoad(secondary, showFallbackAvatar) : showFallbackAvatar());
+      else if (secondary) tryLoad(secondary, showFallbackAvatar);
+      else                showFallbackAvatar();
     }
 
     const path = u.path || 'hero';
@@ -518,7 +526,15 @@
   /* ── Server re-fetch (every 30 s) — catches streak/referral/clan changes */
   const serverRefresh = async () => {
     const [u, clan] = await Promise.all([fetchUser(), fetchClan()]);
-    if (u)    { _serverUser = u; }
+    if (u) {
+      const nameChanged = _serverUser && (
+        u.first_name !== _serverUser.first_name ||
+        u.last_name  !== _serverUser.last_name  ||
+        u.profile_pic !== _serverUser.profile_pic
+      );
+      _serverUser = u;
+      if (nameChanged) renderIdentity(u, _tg);
+    }
     if (clan !== undefined) { _clanData = clan; }
     renderAll();
   };
