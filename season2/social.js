@@ -604,16 +604,16 @@
         });
       }
 
-      /* Show warriors below the clan card — use insertAdjacentHTML to preserve
-         the event listeners attached above (Share, Join Chat, Manage Clan).    */
-      if (refData && refData.status === 1) {
-        const members = refData.members || [];
-        const vc      = refData.verified_count || 0;
-        const tot     = refData.total_count    || 0;
-        clanEl.insertAdjacentHTML('beforeend',
-          `<div class="section-head" style="margin-top:16px;"><h3>${t('warriors_header')}</h3><span class="more">${fmtN_(vc)} / ${fmtN_(tot)} ${t('warrior_active_tag').replace('✓ ', '')}</span></div>`);
-        renderWarriorList(members, vc, tot, clanEl);
-      }
+      /* Show clan members (not personal referrals) — referrals miss members who
+         joined via direct invite / application, not through the share link.    */
+      const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: String(u.id) }));
+      const clanMembers = (membersData && membersData.status === 1) ? (membersData.members || []) : [];
+      /* Map to the format renderWarriorList expects (verified = always true for clan members) */
+      const warriorList = clanMembers.map(m => ({ ...m, verified: true }));
+      const tot = warriorList.length;
+      clanEl.insertAdjacentHTML('beforeend',
+        `<div class="section-head" style="margin-top:16px;"><h3>${t('warriors_header')}</h3><span class="more">${fmtN_(tot)} ${t('warrior_active_tag').replace('✓ ', '')}</span></div>`);
+      renderWarriorList(warriorList, tot, tot, clanEl);
       return;
     }
 
