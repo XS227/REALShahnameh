@@ -734,6 +734,7 @@
 
       /* Heroes — collection / certificate */
       type_artifact: "Ашё",
+      type_artifact_poet: "Шоир",
       coll_no_items: "Дар ин категория ҳанӯз мавзуъе вуҷуд надорад.",
       coll_locked_chapters: "Бобҳои 2 – 50",
       coll_locked_count: "55 мавзӯи дигар қулф аст · Бобҳои нав иҷро кунед",

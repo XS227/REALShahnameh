@@ -32,6 +32,18 @@
     "haft-khan-esp": "esfandiyar",
   };
 
+  const CH_NAME = {
+    1:  "The First King",         2:  "The Fire-Maker",       3:  "The Taming of Demons",
+    4:  "The Golden Age",         5:  "The Serpent Tyrant",   6:  "The Liberator",
+    7:  "The Long King",          8:  "The Fall of Nozar",    9:  "The White-Haired Prince",
+    10: "The Daughter of Mehrab", 11: "Birth of Rostam",      12: "The Champion of Champions",
+    13: "Rostam and Sohrab",      14: "The Tragedy of Siyavash", 15: "The Blind King",
+    16: "Kay Khosrow",            17: "The Demon of the Lake", 18: "Bijan and Manijeh",
+    19: "The Great War",          20: "Lohrasp",              21: "Goshtasp and the Faith",
+    22: "Esfandiyar",             23: "Haft Khan — Esfandiyar", 24: "Clash at the Mountain",
+    25: "The Simorgh",
+  };
+
   const isChapterDone = (n) => {
     try {
       return localStorage.getItem(`real_chapter_done_${CH_SLUG[n] || n}`) === "1";
@@ -1905,7 +1917,7 @@
     const state = heroEconomyState(item);
     const owned = ownedHeroes[item.id];
     const cost  = item.cost || RARITY_COST[item.rarity] || 0;
-    const baseZar = RARITY_ZAR[item.rarity] || 0;
+    const baseZar = item.zar_per_hour || RARITY_ZAR[item.rarity] || 0;
 
     if (state === "locked") {
       return `<div class="hero-econ-panel locked">
@@ -2091,23 +2103,68 @@
     }
   };
 
-  /* ── Update stats strip from real ownership data ── */
+  /* ── Update stats strip + chapter banner from real ownership data ── */
   const updateStatsStrip = () => {
-    const ownedCount = Object.keys(ownedHeroes).length;
+    const ownedIds   = Object.keys(ownedHeroes);
+    const ownedCount = ownedIds.length;
     const total      = COLLECTION.length;
 
-    /* Stats strip */
+    /* 1. Discovered / Locked counts */
     const discVal = document.querySelector(".css-cell:first-child .css-val");
     const lockVal = document.querySelector(".css-cell:nth-child(2) .css-val");
     if (discVal) discVal.textContent = ownedCount;
     if (lockVal) lockVal.textContent = total - ownedCount;
 
-    /* Progress bar */
+    /* 2. Chapters completed (unique chapters with at least one owned card) */
+    const ownedChapters = new Set(
+      COLLECTION.filter(it => ownedHeroes[it.id]).map(it => it.chapter)
+    );
+    const chVal = document.querySelector(".css-cell:nth-child(3) .css-val");
+    if (chVal) chVal.textContent = ownedChapters.size || 0;
+
+    /* 3. Avg Rarity — dominant rarity among owned cards */
+    const RARITY_RANK = { common: 1, rare: 2, epic: 3, legend: 4, mythic: 5 };
+    const RARITY_LABEL = { common: "Common", rare: "Rare", epic: "Epic", legend: "Legend", mythic: "Mythic" };
+    let totalRank = 0;
+    ownedIds.forEach(id => {
+      const item = COLLECTION.find(c => c.id === id);
+      if (item) totalRank += RARITY_RANK[item.rarity] || 1;
+    });
+    const avgRank = ownedCount > 0 ? totalRank / ownedCount : 1;
+    const avgRarity = avgRank >= 4.5 ? "mythic" : avgRank >= 3.5 ? "legend" : avgRank >= 2.5 ? "epic" : avgRank >= 1.5 ? "rare" : "common";
+    const rarityVal = document.querySelector(".css-cell:nth-child(4) .css-val");
+    if (rarityVal) {
+      rarityVal.textContent = RARITY_LABEL[avgRarity] || "Rare";
+      rarityVal.className = "css-val" + (avgRarity !== "common" ? " gold" : "");
+    }
+
+    /* 4. Progress bar */
     const countEl = document.querySelector("#coll-progress .coll-ph-left");
     const fillEl  = document.querySelector("#coll-progress .coll-progress-fill");
     const pct     = Math.round((ownedCount / total) * 100);
     if (countEl) countEl.innerHTML = `<strong>${ownedCount}</strong> <span>of ${total} discovered</span>`;
     if (fillEl)  fillEl.style.width = `${pct}%`;
+
+    /* 5. Chapter banner — find highest completed chapter that has owned cards */
+    const lastCh = Math.max(0, ...Array.from(ownedChapters));
+    const bannerTitle  = document.querySelector(".cb-title");
+    const bannerSub    = document.querySelector(".cb-sub");
+    const bannerKicker = document.querySelector(".cb-kicker");
+    const headerPill   = document.querySelector(".page-head .pill");
+    if (lastCh > 0) {
+      const chName       = CH_NAME[lastCh] || `Chapter ${lastCh}`;
+      const chCardCount  = COLLECTION.filter(it => it.chapter === lastCh && ownedHeroes[it.id]).length;
+      const chSlug       = CH_SLUG[lastCh] || "";
+      if (bannerKicker) bannerKicker.textContent = "Chapter Complete";
+      if (bannerTitle)  bannerTitle.textContent  = `Chapter ${lastCh} — ${chName}`;
+      if (bannerSub)    bannerSub.textContent    = `${chCardCount} item${chCardCount !== 1 ? "s" : ""} discovered · ${chSlug.replace(/-/g, " ")} era`;
+      if (headerPill)   headerPill.textContent   = `S2 · Ch.${lastCh}`;
+    } else if (ownedCount === 0) {
+      if (bannerKicker) bannerKicker.textContent = "Start Your Journey";
+      if (bannerTitle)  bannerTitle.textContent  = "No cards discovered yet";
+      if (bannerSub)    bannerSub.textContent    = "Complete chapters to unlock cards";
+      if (headerPill)   headerPill.textContent   = "S2 · Ch.1";
+    }
   };
 
   const _doOpenCertificate = (item, backdrop, modal) => {
@@ -2381,6 +2438,7 @@
         const fresh = await window.RealSync.syncHeroes();
         ownedHeroes = fresh;
         saveZarHr();
+        buildProgressSection();
         updateStatsStrip();
         buildCards(
           document.querySelector("[data-filter].active")?.getAttribute("data-filter") || "all"

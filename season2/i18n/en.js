@@ -731,6 +731,7 @@
 
       /* Heroes — collection / certificate */
       type_artifact: "Artifact",
+      type_artifact_poet: "Poet",
       coll_no_items: "No items in this category yet.",
       coll_locked_chapters: "Chapters 2 – 50",
       coll_locked_count: "55 more items locked · Complete new chapters to discover",

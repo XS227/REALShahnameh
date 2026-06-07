@@ -735,6 +735,7 @@
 
       /* Heroes — collection / certificate */
       type_artifact: "مصنوع",
+      type_artifact_poet: "شاعر",
       coll_no_items: "هنوز موردی در این دسته وجود ندارد.",
       coll_locked_chapters: "فصل‌های ۲ تا ۵۰",
       coll_locked_count: "۵۵ مورد دیگر قفل است · فصل‌های جدید را کامل کنید تا کشف کنید",
