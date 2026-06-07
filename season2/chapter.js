@@ -87,6 +87,7 @@
 
   /* Module-level chapter metadata — populated once the catalog fetch resolves */
   let _chapterMeta = null;
+  let _quizzes = [];
 
   /* ---------- progress (localStorage) ---------- */
   const PK = `real_chapter_progress_${SLUG}`;
@@ -288,7 +289,43 @@
       label_fa: "خواندنِ میزِ فردوسی",
       label_tg: "Мизи Фирдавсӣро хондан",
     }] : [];
-    const reqs = [...deskReq, ...(battle.requirements || [])];
+    /* Auto-inject: read all scenes */
+    const scenesReq = currentScenes.length > 0 ? [{
+      kind:     "scenes_all",
+      label_en: "Read all chapter scenes",
+      label_fa: "خواندنِ همه صحنه‌های فصل",
+      label_tg: "Хондани ҳамаи саҳнаҳои боб",
+      hint_en:  "Read every scene in this chapter — tap each scene card to open and read it.",
+      hint_fa:  "همه صحنه‌های این فصل را بخوانید — روی هر کارتِ صحنه بزنید تا باز شود.",
+      hint_tg:  "Ҳамаи саҳнаҳои ин бобро бихонед — ҳар картаи саҳнаро пахш кунед то кушода шавад.",
+    }] : [];
+
+    /* Auto-inject: progressive quiz tiers — medium required ch16+, hard ch36+ */
+    const chOrder = (_chapterMeta && _chapterMeta.order) || 1;
+    const hasMediumQs = _quizzes.some(q => q.chapter_slug === SLUG && q.difficulty === "medium");
+    const hasHardQs   = _quizzes.some(q => q.chapter_slug === SLUG && q.difficulty === "hard");
+    const mediumQuizReq = (chOrder >= 16 && hasMediumQs) ? [{
+      kind:     "quiz",
+      tier:     "medium",
+      label_en: "Pass Medium quiz tier",
+      label_fa: "گذراندنِ آزمونِ متوسط",
+      label_tg: "Гузаштани санҷиши миёна",
+      hint_en:  "Scroll to the Quiz section and complete the Medium difficulty tier.",
+      hint_fa:  "به بخش آزمون بروید و سطح متوسط را کامل کنید.",
+      hint_tg:  "Ба бахши Имтиҳон равед ва сатҳи миёнаро иҷро кунед.",
+    }] : [];
+    const hardQuizReq = (chOrder >= 36 && hasHardQs) ? [{
+      kind:     "quiz",
+      tier:     "hard",
+      label_en: "Pass Hard quiz tier",
+      label_fa: "گذراندنِ آزمونِ سخت",
+      label_tg: "Гузаштани санҷиши душвор",
+      hint_en:  "Scroll to the Quiz section and complete the Hard difficulty tier.",
+      hint_fa:  "به بخش آزمون بروید و سطح سخت را کامل کنید.",
+      hint_tg:  "Ба бахши Имтиҳон равед ва сатҳи душворро иҷро кунед.",
+    }] : [];
+
+    const reqs = [...deskReq, ...scenesReq, ...(battle.requirements || []), ...mediumQuizReq, ...hardQuizReq];
     const unlockedScenes = new Set(progress.scenes);
     const unlockedChars  = new Set(); // populated below
 
@@ -317,21 +354,29 @@
         } catch { return false; }
       }
       if (r.kind === "quiz") {
-        // New tier format: easy tier must be done
-        if (progress.quiz && progress.quiz.easy !== undefined)
-          return !!(progress.quiz.easy && progress.quiz.easy.done);
-        // Legacy flat format fallback
-        return !!(progress.quiz && progress.quiz.done);
+        const tier = r.tier || "easy";
+        if (progress.quiz && progress.quiz[tier] !== undefined)
+          return !!(progress.quiz[tier] && progress.quiz[tier].done);
+        if (tier === "easy") return !!(progress.quiz && progress.quiz.done);
+        return false;
       }
       if (r.kind === "desk") return !!progress.desk_read;
+      if (r.kind === "scenes_all") {
+        if (!currentScenes.length) return false;
+        const validIds = new Set(currentScenes.map(s => s.id));
+        const readCount = (progress.scenes || []).filter(id => validIds.has(id)).length;
+        return readCount >= currentScenes.length;
+      }
       return false;
     };
 
     const pillKey = {
-      level: "req_player_gate",
-      character: "req_recruit",
-      item: "req_item",
-      quiz: "req_knowledge",
+      level:      "req_player_gate",
+      character:  "req_recruit",
+      item:       "req_item",
+      quiz:       "req_knowledge",
+      scenes_all: "req_scenes",
+      desk:       "req_goal",
     };
 
     let metCount = 0;
@@ -378,9 +423,12 @@
            </div>
          </div>`
       : "";
-    const ctaLabel = allMet
-      ? tr("battle_challenge_tpl", { boss: bossNameMain || tr("ch_final_encounter_fallback") })
-      : tr("battle_locked");
+    const isChapterDone = localStorage.getItem(`real_chapter_done_${SLUG}`) === "1";
+    const ctaLabel = isChapterDone
+      ? tr("battle_chapter_complete")
+      : allMet
+        ? tr("battle_challenge_tpl", { boss: bossNameMain || tr("ch_final_encounter_fallback") })
+        : tr("battle_locked");
 
     const headTitle = bossNameMain || tr("ch_final_encounter_fallback");
     const introText = pick(battle, "intro");
@@ -396,7 +444,7 @@
       <p class="intro">${escapeHtml(introText)}</p>
       <ul class="req-list">${rows}</ul>
       ${masterBlock}
-      <button class="battle-cta ${allMet ? "ready" : ""}" data-battle-cta ${allMet ? "" : "disabled"}>
+      <button class="battle-cta ${isChapterDone ? "ready chapter-done" : allMet ? "ready" : ""}" data-battle-cta ${allMet || isChapterDone ? "" : "disabled"}>
         ${escapeHtml(ctaLabel)}
       </button>
     `;
@@ -404,7 +452,11 @@
     const cta = $("[data-battle-cta]", host);
     if (cta) {
       cta.addEventListener("click", () => {
-        if (!allMet) return;
+        if (!allMet && !isChapterDone) return;
+        if (allMet && !isChapterDone) {
+          markChapterComplete();
+          paintBattle(lore);
+        }
         showBattleTeaser(headTitle);
         haptic("warning");
       });
@@ -433,8 +485,6 @@
 
   /* ---------- quiz reward helper (idempotent) ---------- */
   const grantQuizRewards = (lore) => {
-    try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
-
     /* Mark the daily Quiz quest done — chapter.js is the full quiz experience
        and must set this; the home-page card quiz also sets it but users may
        only use this page. Idempotent per calendar day. */
@@ -447,6 +497,7 @@
         try { window.dispatchEvent(new CustomEvent("real:quest:quiz")); } catch {}
       }
     } catch {}
+    /* Grant items that unlock on quiz completion (e.g. fire-rune in ch1) */
     try {
       const items = JSON.parse(localStorage.getItem("real_items_v1") || "{}");
       let changed = false;
@@ -455,8 +506,12 @@
         .forEach(r => { items[r.target] = true; changed = true; });
       if (changed) localStorage.setItem("real_items_v1", JSON.stringify(items));
     } catch {}
-    /* Grant chapter completion rewards (XP, gems, Farr, REAL, energy)
-       from chapters.json — idempotent via real_chapter_rewards_done_{slug}. */
+  };
+
+  /* Called when player clicks the boss challenge CTA with all requirements met.
+     Sets the chapter-done flag and grants completion rewards (idempotent). */
+  const markChapterComplete = () => {
+    try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
     grantChapterCompletionRewards();
   };
 
@@ -1073,6 +1128,7 @@
     const chapterMeta = allChapters.find(c => c.slug === SLUG) || null;
     _chapterMeta = chapterMeta; // expose to grantChapterCompletionRewards()
     const quizzes = (quizzesBody && quizzesBody.quizzes) || [];
+    _quizzes = quizzes;
 
     /* ── Hard chapter gate ── */
     const reqPrev = chapterMeta && chapterMeta.required_previous_chapter;

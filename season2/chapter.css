@@ -498,6 +498,14 @@
   animation: pulse-red 2s ease-in-out infinite, bg-shift 4s ease infinite;
 }
 .battle-cta.ready:active { transform: scale(.97); }
+.battle-cta.chapter-done {
+  background: linear-gradient(160deg, #1a5c36 0%, #0d3d22 50%, #2e8b57 100%);
+  border-color: rgba(46, 139, 87, .8);
+  animation: none;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  cursor: pointer;
+}
 @keyframes pulse-red {
   0%, 100% { box-shadow: 0 0 0 0 rgba(255, 82, 103, .4), 0 4px 24px rgba(200,48,66,.5); }
   50%      { box-shadow: 0 0 0 10px rgba(255, 82, 103, 0), 0 4px 24px rgba(200,48,66,.2); }

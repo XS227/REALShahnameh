@@ -142,8 +142,10 @@
       if (su.adsgram)                   localStorage.setItem('real_adsgram_config',    JSON.stringify(su.adsgram));
       if (su.max_real_balance != null)  localStorage.setItem('real_max_real_balance',  String(su.max_real_balance));
       if (su.economy)                   localStorage.setItem('real_economy_config',    JSON.stringify(su.economy));
-      localStorage.setItem('real_has_clan',    su.clan_id ? '1' : '0');
-      localStorage.setItem('real_my_clan_id',  su.clan_id || '');
+      localStorage.setItem('real_has_clan',       su.clan_id ? '1' : '0');
+      localStorage.setItem('real_my_clan_id',    su.clan_id || '');
+      localStorage.setItem('real_is_clan_leader',
+        (su.clan_id && su.clan_leader_id && String(su.telegram_id) === String(su.clan_leader_id)) ? '1' : '0');
     } catch (_) {}
 
     /* Show offline mining bonus overlay if earned */
