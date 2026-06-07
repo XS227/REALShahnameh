@@ -293,6 +293,8 @@ a { color: inherit; }
   border-color: rgba(74, 216, 166, 0.35);
   color: #4ad8a6;
 }
+/* display:inline-flex on .rank-tag overrides UA hidden→display:none; restore it */
+.rank-tag[hidden] { display: none !important; }
 .profile-id {
   margin-top: 4px;
   font-size: 10px;

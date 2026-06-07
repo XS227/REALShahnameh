@@ -1404,6 +1404,15 @@
       lore_tg: "Қалами Фирдавсӣ ки дар Тус, Хуросон, соли 977 м барои навиштани аввалин байти Шоҳнома дар сиёҳӣ фурӯ бурд.",
       faction: "Artifacts of the Poet · Khorasan · 977 CE",
       mythologyRole: "The instrument that started 60,000 couplets and preserved the Persian language",
+      biography: "In 977 CE, in the city of Tus in Khorasan, an aging poet picked up a quill and began the greatest literary project in Persian history. Ferdowsi would spend 35 years writing the Shahnameh — the Book of Kings — with this instrument, preserving the Persian language and epic tradition through the Arab conquest.",
+      powers: ["+3% Tap Power", "+3 Zar/hr", "Passive: Poet's Ink — story XP +5%"],
+      storyAppearances: ["Poet Artifact: The Beginning · Tus 977 CE", "Ferdowsi Legacy: The First Verse"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-POET-001",
+      season: 2,
+      unlockCondition: "Purchase with REAL tokens",
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
       cost: 1200,
       zar_per_hour: 3,
     },
@@ -1422,6 +1431,14 @@
       lore_tg: "Даромади заминии Фирдавсӣ кам шуд. Ки ба Ғазнин бурда шуд бо нуқра ба ҷои тиллои ваъдашуда баргашт.",
       faction: "Artifacts of the Poet · Economic Hardship",
       mythologyRole: "Symbol of the broken patronage promise that defined the last decade of Ferdowsi's life",
+      biography: "Ferdowsi composed the Shahnameh without guaranteed income. His family's land revenues declined over the decades he spent writing. When he finally presented the completed poem to Sultan Mahmud, expecting 60,000 gold coins, he received 60,000 silver dirhams instead — a fraction of what was promised. The empty purse is the symbol of genius unrewarded.",
+      powers: ["+5% Story XP", "+14 Zar/hr", "Passive: Patron's Debt — quest reward +8%"],
+      storyAppearances: ["Poet Artifact: The Patron's Betrayal", "Ferdowsi Legacy: Decades Without Pay"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-POET-002",
+      season: 2,
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
       cost: 4500,
       zar_per_hour: 14,
       prereq: { hero_id: "quill-of-tus", level: 1 },
@@ -1443,6 +1460,14 @@
       lore_tg: "Писари воқеии Фирдавсӣ ҳамзамон бо навиштани фасли Суҳроб даргузашт. Падаре ки писарашро нодонсона мекушад аз ғами ҳоло тозае омад.",
       faction: "Artifacts of the Poet · Personal Tragedy · ~1000 CE",
       mythologyRole: "The chapter Ferdowsi could not soften because he was living it",
+      biography: "Around 1000 CE, as Ferdowsi was writing the Sohrab and Rostam chapter — the story of a father unknowingly killing his own son in battle — his real son died. The grief did not soften the poem. It sharpened it. Scholars believe the extraordinary emotional weight of the Sohrab chapter came from personal loss written into the verse in real time.",
+      powers: ["+8% Story XP", "+28 Zar/hr", "Passive: Grief's Clarity — chapter completion XP +12%"],
+      storyAppearances: ["Poet Artifact: The Father's Grief", "Chapter 13: Sohrab — The Real Loss Behind the Verse"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-POET-003",
+      season: 2,
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
       cost: 10000,
       zar_per_hour: 28,
       prereq: { hero_id: "empty-purse", level: 1 },
@@ -1464,6 +1489,14 @@
       lore_tg: "Маҳмуд 60,000 тангаи тилло ваъда дод — яке барои ҳар байт. 60,000 дирҳами нуқра пардохт кард. Ҷуброн ба Тус расид рӯзи ташйеъи ҷаноза.",
       faction: "Artifacts of the Poet · The Betrayal · 1010 CE",
       mythologyRole: "The broken promise that defined the end of Ferdowsi's life and became a symbol of unrecognized genius",
+      biography: "In 1010 CE, Ferdowsi presented the completed Shahnameh to Sultan Mahmud of Ghazni, expecting the promised reward of one gold coin per couplet — 60,000 dinars total. Mahmud paid in silver: 60,000 dirhams, worth a fraction of gold. Ferdowsi, furious, distributed the silver to a bathhouse worker and a beer seller, then wrote a devastating satire of Mahmud and fled Ghazni. The gold-laden caravans of atonement arrived in Tus as his funeral procession left the gates.",
+      powers: ["+12% Story XP", "+65 Zar/hr", "Passive: The Broken Oath — passive income +15%"],
+      storyAppearances: ["Poet Artifact: The Betrayal of Mahmud · 1010 CE", "Ferdowsi Legacy: The Bitter Satire"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-POET-004",
+      season: 2,
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
       cost: 22000,
       zar_per_hour: 65,
       prereq: { hero_id: "elegy-for-the-son", level: 1 },
@@ -1485,6 +1518,14 @@
       lore_tg: "60,000 байт. 35 сол. Шоҳнома дар Тус, Хуросон, ҳудуди 1010 м тамом шуд. Забони Форсӣ бақо ёфт. Шоҳнома бидуни ӯ идома дод.",
       faction: "Artifacts of the Poet · Legacy · The Chronicle",
       mythologyRole: "The completed life's work — the poem that preserved the Persian language for a thousand years",
+      biography: "The Shahnameh — Book of Kings — was completed by Ferdowsi around 1010 CE in Tus, Khorasan. It took 35 years and produced approximately 60,000 couplets of Persian verse. The poem chronicled the mythological and historical kings of Persia from the first man to the Arab conquest. It preserved the Persian language against Arabization and became the founding text of modern Persian literature. Ferdowsi did not live to see his vindication.",
+      powers: ["+20% Story XP", "+160 Zar/hr", "Passive: The Chronicle Lives — all passive income +20%"],
+      storyAppearances: ["Poet Artifact: The Finished Manuscript · Tus 1010 CE", "Ferdowsi Legacy: 60,000 Couplets Complete"],
+      side: "light",
+      nftReady: false,
+      collectionId: "SHAHNAMEH-S2-POET-005",
+      season: 2,
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
       cost: 40000,
       zar_per_hour: 160,
       prereq: { hero_id: "sultans-cold-letter", level: 1 },
@@ -2194,6 +2235,7 @@
     /* Record first discovery */
     trackDiscovery(item.id);
     const discoveredDate = getDiscoveryDate(item.id);
+    const meta = item.tonMetadata || {};
 
     const certName = locF(item, 'name') || item.name;
     let portraitInner = item.img
@@ -2307,15 +2349,15 @@
           </div>
           <div class="cert-meta-row">
             <span class="cmr-key">${t("cert_ton_std_lbl")}</span>
-            <span class="cmr-val mono">${item.tonMetadata.standard}</span>
+            <span class="cmr-val mono">${meta.standard || "TEP-62"}</span>
           </div>
           <div class="cert-meta-row">
             <span class="cmr-key">${t("cert_artwork_lbl")}</span>
-            <span class="cmr-val">v${item.tonMetadata.artworkVersion}</span>
+            <span class="cmr-val">v${meta.artworkVersion || "1.0"}</span>
           </div>
           <div class="cert-meta-row">
             <span class="cmr-key">${t("cert_mint_lbl")}</span>
-            <span class="cmr-val">${item.tonMetadata.mintStatus === "pending" ? t("cert_mint_pending") : t("cert_mint_done")}</span>
+            <span class="cmr-val">${(meta.mintStatus || "pending") === "pending" ? t("cert_mint_pending") : t("cert_mint_done")}</span>
           </div>
         </div>
 
