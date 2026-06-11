@@ -189,6 +189,140 @@
   });
   window.addEventListener('pagehide', syncBalance);
 
+  /* ══════════════════════════════════════════════════════════════════
+     Chapter progression — server is source of truth, localStorage cache.
+     Mirrors the backend merge: sets union, done flags OR, counters max,
+     so a stale device can never lose progress in either direction.
+     ══════════════════════════════════════════════════════════════════ */
+  const CH_API = {
+    get:  '/api/season2/user/chapter-progress/get',
+    save: '/api/season2/user/chapter-progress/save',
+  };
+  const CH_TIERS = ['easy', 'medium', 'hard'];
+
+  const _lsGet = (k) => { try { return localStorage.getItem(k); } catch (_) { return null; } };
+  const _lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (_) {} };
+  const _lsJSON = (k, fb) => { try { return JSON.parse(_lsGet(k) || fb); } catch (_) { return JSON.parse(fb); } };
+
+  const _union = (a, b) => [...new Set([...(Array.isArray(a) ? a : []), ...(Array.isArray(b) ? b : [])])];
+
+  const _mergeTier = (a, b, tier) => {
+    a = a || {}; b = b || {};
+    const unlocked = a.locked === false || b.locked === false || tier === 'easy';
+    return {
+      idx:     Math.max(Number(a.idx) || 0, Number(b.idx) || 0),
+      correct: _union(a.correct, b.correct),
+      wrong:   _union(a.wrong, b.wrong),
+      done:    !!a.done || !!b.done,
+      locked:  !unlocked,
+      passed:  !!a.passed || !!b.passed,
+    };
+  };
+
+  const _mergeChapter = (a, b) => {
+    a = a || {}; b = b || {};
+    const quiz = {};
+    CH_TIERS.forEach(t => { quiz[t] = _mergeTier((a.quiz || {})[t], (b.quiz || {})[t], t); });
+    return {
+      scenes:       _union(a.scenes, b.scenes),
+      codex:        _union(a.codex, b.codex),
+      quiz,
+      fragments:    Math.max(Number(a.fragments) || 0, Number(b.fragments) || 0),
+      desk_read:    !!a.desk_read || !!b.desk_read,
+      done:         !!a.done || !!b.done,
+      rewards_done: !!a.rewards_done || !!b.rewards_done,
+      scene_grants: _union(a.scene_grants, b.scene_grants),
+      farr_grants:  _union(a.farr_grants, b.farr_grants),
+    };
+  };
+
+  /* Snapshot one chapter's localStorage state in server format */
+  const chapterSnapshot = (slug) => {
+    const p = _lsJSON('real_chapter_progress_' + slug, '{}');
+    const scenes = Array.isArray(p.scenes) ? p.scenes : [];
+    return {
+      scenes,
+      codex:        Array.isArray(p.codex) ? p.codex : [],
+      quiz:         p.quiz || {},
+      fragments:    Number(p.fragments) || 0,
+      desk_read:    !!p.desk_read,
+      done:         _lsGet('real_chapter_done_' + slug) === '1',
+      rewards_done: _lsGet('real_chapter_rewards_done_' + slug) === '1',
+      scene_grants: scenes.filter(id => _lsGet('real_scene_xp_granted_' + slug + '_' + id) === '1'),
+      farr_grants:  CH_TIERS.filter(t => _lsGet('real_quiz_farr_granted_' + slug + '_' + t) === '1'),
+    };
+  };
+
+  /* Write a merged chapter snapshot back into all its localStorage keys */
+  const _applyChapter = (slug, server) => {
+    const m = _mergeChapter(chapterSnapshot(slug), server);
+    _lsSet('real_chapter_progress_' + slug, JSON.stringify({
+      scenes: m.scenes, codex: m.codex, quiz: m.quiz,
+      fragments: m.fragments, desk_read: m.desk_read,
+    }));
+    if (m.done)         _lsSet('real_chapter_done_' + slug, '1');
+    if (m.rewards_done) _lsSet('real_chapter_rewards_done_' + slug, '1');
+    m.scene_grants.forEach(id => _lsSet('real_scene_xp_granted_' + slug + '_' + id, '1'));
+    m.farr_grants.forEach(t  => _lsSet('real_quiz_farr_granted_' + slug + '_' + t, '1'));
+  };
+
+  const _localChapterSlugs = () => {
+    const slugs = new Set();
+    try {
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i) || '';
+        if (k.startsWith('real_chapter_progress_')) slugs.add(k.slice(22));
+        else if (k.startsWith('real_chapter_done_'))  slugs.add(k.slice(18));
+      }
+    } catch (_) {}
+    return [...slugs];
+  };
+
+  let _resolveChReady;
+  const _chReady = new Promise(r => { _resolveChReady = r; });
+
+  const initChapterProgress = async () => {
+    const u = tgUser();
+    if (!u || !u.id) { _resolveChReady(null); return; }
+    const data = await post(CH_API.get, { telegram_id: String(u.id) });
+    if (!data || data.status !== 1) { _resolveChReady(null); return; }
+
+    const serverChapters = data.chapters || {};
+    Object.keys(serverChapters).forEach(slug => _applyChapter(slug, serverChapters[slug]));
+
+    /* Items + tap skins (chapter artifacts) */
+    const items = _lsJSON('real_items_v1', '{}');
+    Object.keys(data.items || {}).forEach(id => { items[id] = true; });
+    _lsSet('real_items_v1', JSON.stringify(items));
+    const skins = _union(_lsJSON('real_skin_unlocked_v1', '[]'), data.skins);
+    _lsSet('real_skin_unlocked_v1', JSON.stringify(skins));
+
+    /* One-time migration: push local chapters the server doesn't know yet
+       (or knows as not-done while this device has them completed). */
+    const toPush = _localChapterSlugs().filter(s =>
+      !serverChapters[s] || (!serverChapters[s].done && _lsGet('real_chapter_done_' + s) === '1'));
+    if (toPush.length) {
+      const chapters = {};
+      toPush.forEach(s => { chapters[s] = chapterSnapshot(s); });
+      post(CH_API.save, { telegram_id: String(u.id), chapters, items, skins });
+    }
+
+    try { window.dispatchEvent(new CustomEvent('real:chapters:synced')); } catch (_) {}
+    _resolveChReady(data);
+  };
+
+  /* Push one chapter (plus items/skins) — fire-and-forget, keepalive */
+  const saveChapterProgress = (slug) => {
+    const u = tgUser();
+    if (!u || !u.id || !slug) return;
+    post(CH_API.save, {
+      telegram_id: String(u.id),
+      chapters: { [slug]: chapterSnapshot(slug) },
+      items: _lsJSON('real_items_v1', '{}'),
+      skins: _lsJSON('real_skin_unlocked_v1', '[]'),
+    });
+  };
+
   /* ── Load owned heroes and cache in localStorage ─────────────────── */
   const HEROES_LS = 'real_owned_heroes_v1';
 
@@ -207,12 +341,19 @@
     try { return JSON.parse(localStorage.getItem(HEROES_LS) || '{}'); } catch { return {}; }
   };
 
-  window.RealSync = { init, syncQuest, syncBalance, syncHeroes, getOwnedHeroes, ready: () => _ready };
+  window.RealSync = {
+    init, syncQuest, syncBalance, syncHeroes, getOwnedHeroes,
+    ready: () => _ready,
+    chapterProgressReady: () => _chReady,
+    saveChapterProgress,
+    chapterSnapshot,
+  };
 
   /* Auto-start: call init() once DOM has loaded and app.js has run */
+  const _boot = () => { init(); initChapterProgress(); };
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', _boot);
   } else {
-    init();
+    _boot();
   }
 })();
