@@ -89,6 +89,8 @@
 
   const tryFetch = (url) => fetch(url, { cache: "no-store" }).then((r) => r.ok ? r.json() : null).catch(() => null);
 
+  let _lastPayload = null;
+
   (async () => {
     let payload = await tryFetch("/api/catalog/chapters");
     if (!payload) payload = await tryFetch("/season2/data/chapters.json");
@@ -97,6 +99,13 @@
       host.innerHTML = `<div style="padding:14px; color:var(--muted, #6c7287); font-size:12px;">${t("learn_no_content")}</div>`;
       return;
     }
+    _lastPayload = payload;
     render(payload.chapters || [], payload.totalChapters || 50);
   })();
+
+  /* Re-render once sync.js merges server chapter progress into localStorage,
+     so done-checkmarks survive a cleared Telegram WebView storage. */
+  window.addEventListener("real:chapters:synced", () => {
+    if (_lastPayload) render(_lastPayload.chapters || [], _lastPayload.totalChapters || 50);
+  });
 })();
