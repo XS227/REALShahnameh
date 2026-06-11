@@ -9,7 +9,7 @@
   <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
   <link rel="stylesheet" href="style.css?v=202606051030" />
   <link rel="stylesheet" href="home.css?v=202605272200" />
-  <link rel="stylesheet" href="tap.css?v=202605272200" />
+  <link rel="stylesheet" href="tap.css?v=202606072330" />
 
 </head>
 <body>
@@ -57,29 +57,42 @@
     <section class="mint-core-section">
       <div class="mint-core-label" data-i18n="forge_core_label">⬡ The Anvil — Strike to forge Zar</div>
 
+      <!-- Solar system: sun = energy orb, planets orbit around it -->
       <div class="core-wrap" data-core>
-        <span class="ring r1"></span>
-        <span class="ring r2"></span>
-        <span class="ring r3"></span>
+        <!-- Orbital path rings (visual tracks) -->
+        <span class="ring r1 orbit-track"></span>
+        <span class="ring r2 orbit-track"></span>
+        <span class="ring r3 orbit-track"></span>
         <span class="ring r4"></span>
-        <button class="energy-orb" data-energy-orb aria-label="Tap to mint REAL">
+
+        <!-- Orbiting planets -->
+        <span class="solar-orbit orbit-1" aria-hidden="true"><span class="solar-planet p-mercury"></span></span>
+        <span class="solar-orbit orbit-2" aria-hidden="true"><span class="solar-planet p-venus"></span></span>
+        <span class="solar-orbit orbit-3" aria-hidden="true">
+          <span class="solar-planet p-earth">
+            <span class="moon-orbit"><span class="solar-moon"></span></span>
+          </span>
+        </span>
+
+        <!-- Sun (tap button) -->
+        <button class="energy-orb solar-sun" data-energy-orb aria-label="Tap to mint REAL">
           <span class="core-icon">
             <span data-skin-orb-text style="display:none;font-size:40px;line-height:1;">◆</span>
           </span>
         </button>
-        <!-- Hero image lives here — direct child of .core-wrap so CSS sizing is unambiguous -->
+        <!-- Hero image lives here — direct child of .core-wrap -->
         <img data-skin-orb
              src="/assets/images/tokens/realtoken.png"
              alt="REAL"
              onerror="this.style.display='none';document.querySelector('[data-skin-orb-text]').style.display=''">
       </div>
 
-      <!-- Energy bar -->
+      <!-- Energy bar + upgrade -->
       <div class="energy-meta" style="padding:0;margin-top:10px;">
         <div class="energy-line">
           <span>⚡ <span data-i18n="energy">Energy</span></span>
           <span>
-            <span class="e-val" data-energy>1000</span> / 1000
+            <span class="e-val" data-energy>1000</span> / <span data-energy-max-display>1000</span>
             &nbsp;·&nbsp;
             <span class="e-timer" data-refill>+1 / 3s</span>
           </span>
@@ -87,6 +100,18 @@
         <div class="bar">
           <span class="fill" data-energy-fill style="width:100%"></span>
         </div>
+      </div>
+
+      <!-- Energy upgrade row -->
+      <div class="energy-upgrade-row" id="energy-upgrade-row">
+        <div class="energy-upgrade-info">
+          <span data-i18n="energy_level_lbl">Energy Lv.</span>&nbsp;<strong id="eu-level">1</strong>
+          &nbsp;·&nbsp;
+          <span id="eu-max-label"></span>
+        </div>
+        <button class="energy-upgrade-btn" id="energy-upgrade-btn">
+          <span data-i18n="energy_upgrade_btn">Upgrade</span> · <span id="eu-cost"></span>
+        </button>
       </div>
 
       <p class="mint-hint" data-i18n="forge_hint">Each strike forges new Zar · combo deepens the seam · rare strikes drop REAL</p>
@@ -124,18 +149,6 @@
         <button class="secondary-btn btn-block" data-adsgram-energy data-i18n="watch_ad_energy">Watch ad</button>
       </div>
     </div>
-
-    <!-- ══════════════════════════════════════════════════
-         TAP SKINS
-    ══════════════════════════════════════════════════ -->
-    <section>
-      <div class="skins-section-head">
-        <h3 data-i18n="forge_skins_title">⬡ Skins of the Anvil</h3>
-        <p data-i18n="forge_skins_sub">Unlock through chapters · Bound to your court</p>
-      </div>
-      <!-- Cards injected by tap.js -->
-      <div class="skin-rail" data-skin-rail></div>
-    </section>
 
     <!-- ══════════════════════════════════════════════════
          ECOSYSTEM LAYER · REAL Market
@@ -305,18 +318,18 @@
     </div>
   </div>
 
-  <script src="app.js?v=202606060001"></script>
-  <script src="i18n/en.js?v=202606050900"></script>
-  <script src="i18n/fa.js?v=202606050900"></script>
-  <script src="i18n/tg.js?v=202606050900"></script>
+  <script src="app.js?v=202606072345"></script>
+  <script src="i18n/en.js?v=202606072300"></script>
+  <script src="i18n/fa.js?v=202606072300"></script>
+  <script src="i18n/tg.js?v=202606072300"></script>
   <script src="i18n.js?v=202605304000"></script>
   <script src="resources.js?v=202605303800"></script>
   <script src="audio.js?v=202605272200"></script>
   <script src="cinematic.js?v=202605272200"></script>
-  <script src="sync.js?v=202605303800"></script>
+  <script src="sync.js?v=202606111800"></script>
   <script src="adsgram.js?v=202605272200"></script>
   <script>window.RealMarket = { endpoint: '/api/market/real' };</script>
   <script src="market.js?v=202605304000"></script>
-  <script src="tap.js?v=202605304000"></script>
+  <script src="tap.js?v=202606072345"></script>
 </body>
 </html>

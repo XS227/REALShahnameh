@@ -108,7 +108,23 @@
     readProgress()
   );
 
-  const saveProgress = () => writeProgress(progress);
+  /* Push the chapter's full state (progress + done/reward flags + grant
+     keys + items/skins, collected from localStorage by sync.js) to the
+     server. Debounced so rapid scene/quiz updates batch into one POST. */
+  let _pushTimer = null;
+  const pushProgress = (immediate) => {
+    if (!(window.RealSync && window.RealSync.saveChapterProgress)) return;
+    clearTimeout(_pushTimer);
+    if (immediate) { window.RealSync.saveChapterProgress(SLUG); return; }
+    _pushTimer = setTimeout(() => window.RealSync.saveChapterProgress(SLUG), 1200);
+  };
+  window.addEventListener("pagehide", () => {
+    if (_pushTimer) { clearTimeout(_pushTimer); _pushTimer = null;
+      if (window.RealSync && window.RealSync.saveChapterProgress) window.RealSync.saveChapterProgress(SLUG);
+    }
+  });
+
+  const saveProgress = () => { writeProgress(progress); pushProgress(); };
 
   /* ---------- toast ---------- */
   const toast = (msg) => {
@@ -520,6 +536,7 @@
         .forEach(r => { items[r.target] = true; changed = true; });
       if (changed) localStorage.setItem("real_items_v1", JSON.stringify(items));
     } catch {}
+    pushProgress();
   };
 
   /* Called when player clicks the boss challenge CTA with all requirements met.
@@ -527,6 +544,7 @@
   const markChapterComplete = () => {
     try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
     grantChapterCompletionRewards();
+    pushProgress(true);
   };
 
   const grantChapterCompletionRewards = () => {
@@ -576,6 +594,7 @@
         }
       } catch {}
     }
+    pushProgress(true);
   };
 
   /* Grant farr for completing a quiz tier — idempotent per tier per chapter */
@@ -593,6 +612,7 @@
       try { window.dispatchEvent(new CustomEvent("shahnama:state_sync",
         { detail: window.RealPlayer.get() })); } catch {}
       toast(`✦ +${farr} Farr — ${tier === "hard" ? "Mastery" : "Scholar"} reward`);
+      pushProgress();
     }
   };
 
@@ -1132,12 +1152,24 @@
     location.href = `intro.html`;
   });
 
-  /* ---------- bootstrap: fetch all 3 sources in parallel ---------- */
+  /* ---------- bootstrap: fetch all sources in parallel ----------
+     Server chapter progress must land before the gate check + render so a
+     device with evicted localStorage sees its real journey. Capped at 4s —
+     if the API is slow/unreachable we fall back to the local cache. */
+  const progressSync = (window.RealSync && window.RealSync.chapterProgressReady)
+    ? Promise.race([window.RealSync.chapterProgressReady(), new Promise(r => setTimeout(r, 4000))])
+    : Promise.resolve(null);
+
   Promise.all([
     fetch("/season2/data/chapters.json", { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null),
     fetch(`/season2/data/lore/${encodeURIComponent(SLUG)}.json`, { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null),
-    fetch(`/season2/data/quizzes/${encodeURIComponent(SLUG)}.json`, { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null)
+    fetch(`/season2/data/quizzes/${encodeURIComponent(SLUG)}.json`, { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null),
+    progressSync
   ]).then(([chaptersBody, lore, quizzesBody]) => {
+    /* Re-read progress now that sync.js may have merged server state into
+       localStorage (the module-level object was built before that). */
+    Object.assign(progress, readProgress());
+
     const allChapters = (chaptersBody && chaptersBody.chapters) || [];
     const chapterMeta = allChapters.find(c => c.slug === SLUG) || null;
     _chapterMeta = chapterMeta; // expose to grantChapterCompletionRewards()
