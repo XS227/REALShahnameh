@@ -367,16 +367,30 @@
         const readCount = (progress.scenes || []).filter(id => validIds.has(id)).length;
         return readCount >= currentScenes.length;
       }
+      if (r.kind === "farr") {
+        try {
+          const p = window.RealPlayer ? window.RealPlayer.get() : {};
+          return (p.farr || 0) >= (r.target || 1);
+        } catch { return false; }
+      }
+      if (r.kind === "owned_heroes") {
+        try {
+          const owned = JSON.parse(localStorage.getItem("real_owned_heroes_v1") || "{}");
+          return Object.keys(owned).length >= (r.target || 1);
+        } catch { return false; }
+      }
       return false;
     };
 
     const pillKey = {
-      level:      "req_player_gate",
-      character:  "req_recruit",
-      item:       "req_item",
-      quiz:       "req_knowledge",
-      scenes_all: "req_scenes",
-      desk:       "req_goal",
+      level:        "req_player_gate",
+      character:    "req_recruit",
+      item:         "req_item",
+      quiz:         "req_knowledge",
+      scenes_all:   "req_scenes",
+      desk:         "req_goal",
+      farr:         "req_farr",
+      owned_heroes: "req_heroes",
     };
 
     let metCount = 0;
@@ -1166,6 +1180,16 @@
     modalLore = lore;
     window._modalLore = lore;
     render({ chapterMeta, lore, quizzes });
+
+    /* ── Refresh Final Encounter checks with authoritative server state ──
+       farr/owned-hero requirements read localStorage, which Telegram's
+       WebView can evict — players who met them server-side were wrongly
+       blocked. Re-paint once RealSync delivers fresh balances + heroes. */
+    if (window.RealSync) {
+      if (window.RealSync.ready)      window.RealSync.ready().then(() => paintBattle(lore));
+      if (window.RealSync.syncHeroes) window.RealSync.syncHeroes().then(() => paintBattle(lore));
+    }
+    window.addEventListener("balanceUpdate", () => paintBattle(lore));
 
     /* ── Retroactive catch-up ─────────────────────────────────────────────
        Grants XP/REAL owed from scenes and quiz questions that were completed
