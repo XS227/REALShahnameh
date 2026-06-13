@@ -6,12 +6,12 @@
       "quiz_part": 1,
       "question": "What knowledge do the demons teach Tahmuras to keep their lives?",
       "answers": [
-        "Mining iron",
-        "Falconry",
         "Sailing",
-        "The art of writing"
+        "The art of writing",
+        "Mining iron",
+        "Falconry"
       ],
-      "correct_answer": 3,
+      "correct_answer": 1,
       "explanation": "They teach thirty alphabets in exchange for mercy.",
       "reward": {
         "xp": 80,
@@ -21,16 +21,16 @@
       "question_fa": "دیوان چه دانشی را به طهمورث آموختند تا جانشان در امان بماند؟",
       "question_tg": "Девҳо барои нигоҳ доштани ҷонашон чӣ дониширо ба Таҳмурас омӯхтанд?",
       "answers_fa": [
-        "استخراج آهن",
-        "شاهین‌بازی",
         "دریانوردی",
-        "هنر نوشتن"
+        "هنر نوشتن",
+        "استخراج آهن",
+        "شاهین‌بازی"
       ],
       "answers_tg": [
-        "Истихроҷи оҳан",
-        "Шоҳинбозӣ",
         "Баҳрнавардӣ",
-        "Санъати хаттӣ"
+        "Санъати хаттӣ",
+        "Истихроҷи оҳан",
+        "Шоҳинбозӣ"
       ],
       "explanation_fa": "آن‌ها سی الفبا را در ازای بخشودگی آموختند.",
       "explanation_tg": "Онҳо си алифборо дар ивази афв омӯхтанд."
@@ -46,20 +46,20 @@
       "answers": [
         "An iron sword",
         "A cypress-wood club",
-        "A bow of the mountain ash",
-        "A golden spear"
+        "A golden spear",
+        "A bow of the mountain ash"
       ],
       "answers_fa": [
         "شمشیری آهنین",
         "چوبدستیِ سروین",
-        "کمانی از درختِ زبانِ گنجشک",
-        "نیزه‌ای زرین"
+        "نیزه‌ای زرین",
+        "کمانی از درختِ زبانِ گنجشک"
       ],
       "answers_tg": [
         "Шамшери оҳанин",
         "Чӯби сарвин",
-        "Камони дарахти забон-гунҷишк",
-        "Найзаи заррин"
+        "Найзаи заррин",
+        "Камони дарахти забон-гунҷишк"
       ],
       "correct_answer": 1,
       "explanation": "Tahmuras carries a cypress-wood club — a craftsman's weapon that becomes the symbol of his demon-binding campaign.",
@@ -80,23 +80,23 @@
       "question_tg": "Таҳмурас кӣро маҷбур мекунад, ки ҳангоми тохтан аз қаламрави девон мархабаш шавад?",
       "answers": [
         "The Black Div",
-        "A giant serpent",
         "Ahriman himself",
+        "A giant serpent",
         "A captured div-captain"
       ],
       "answers_fa": [
         "دیوِ سیاه",
-        "افعی‌ای غول‌آسا",
         "خودِ اهریمن",
+        "افعی‌ای غول‌آسا",
         "یک فرمانده‌ی دیوِ اسیر"
       ],
       "answers_tg": [
         "Деви сиёҳ",
-        "Морги ғулкалон",
         "Худи Аҳриман",
+        "Морги ғулкалон",
         "Як фармондеҳи деви асир"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "Tahmuras forces Ahriman — the lord of darkness himself — to serve as his horse, riding through the demon realm as an act of supreme mastery.",
       "explanation_fa": "تهمورث خودِ اهریمن — سرورِ تاریکی — را مجبور می‌کند مرکبش شود و از میانِ قلمروِ دیوان به‌عنوانِ عملِ برترین سیادت می‌تازد.",
       "explanation_tg": "Таҳмурас Аҳриманро — худи Аҳримани Парвардигор — маҷбур мекунад, ки асп шавад ва аз қаламрави девон ҳамчун амали олитарин сарварӣ метозад.",
@@ -111,12 +111,12 @@
       "quiz_part": 1,
       "question": "Tahmuras is known by which epithet?",
       "answers": [
-        "Div-band",
-        "The Bull-Rider",
         "Crystal-King",
-        "Star-Counter"
+        "Div-band",
+        "Star-Counter",
+        "The Bull-Rider"
       ],
-      "correct_answer": 0,
+      "correct_answer": 1,
       "explanation": "Div-band — binder of demons.",
       "reward": {
         "xp": 100,
@@ -126,16 +126,16 @@
       "question_fa": "طهمورث به کدام لقب شناخته می‌شود؟",
       "question_tg": "Таҳмурас бо кадом лақаб маъруф аст?",
       "answers_fa": [
-        "دیوبند",
-        "سوارکار گاو",
         "شاه بلور",
-        "شمارنده‌ی ستارگان"
+        "دیوبند",
+        "شمارنده‌ی ستارگان",
+        "سوارکار گاو"
       ],
       "answers_tg": [
-        "Девбанд",
-        "Гавсавор",
         "Шоҳи булӯр",
-        "Ситорашумор"
+        "Девбанд",
+        "Ситорашумор",
+        "Гавсавор"
       ],
       "explanation_fa": "دیوبند — به‌بند‌کشنده‌ی دیوان. فردوسی این لقب را برای نشان دادن تسلطِ مطلقِ تهمورث بر نیروهای تاریکی به‌کار می‌برد.",
       "explanation_tg": "Девбанд — банд кунандаи девон. Фирдавсӣ ин лақабро барои нишон додани тасаллути мутлақи Таҳмурас бар қувваҳои торикӣ истифода мебарад."
@@ -147,11 +147,11 @@
       "question": "How many alphabets do the demons teach?",
       "answers": [
         "Seven",
-        "Thirty",
+        "Seventy",
         "Twelve",
-        "Seventy"
+        "Thirty"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "Thirty — Greek, Tazi, Pahlavi, Sogdian and others.",
       "reward": {
         "xp": 120,
@@ -162,15 +162,15 @@
       "question_tg": "Девҳо чанд алифбо омӯхтанд?",
       "answers_fa": [
         "هفت",
-        "سی",
+        "هفتاد",
         "دوازده",
-        "هفتاد"
+        "سی"
       ],
       "answers_tg": [
         "Ҳафт",
-        "Си",
+        "Ҳафтод",
         "Дувоздаҳ",
-        "Ҳафтод"
+        "Си"
       ],
       "explanation_fa": "سی — یونانی، تازی، پهلوی، سغدی و دیگران. این سی الفبا اولین نوشتارِ بشری در شاهنامه را تشکیل می‌دهند.",
       "explanation_tg": "Си — юнонӣ, тозӣ, паҳлавӣ, суғдӣ ва дигарон. Ин си алифбо аввалин навиштаи башарӣ дар Шоҳномаро ташкил медиҳанд."
@@ -184,24 +184,24 @@
       "question_fa": "چه کسری از دیوان هنگامِ به‌زنجیرکشیدن توسطِ تهمورث بدونِ جنگ تسلیم می‌شوند؟",
       "question_tg": "Кадом касри девон ҳангоми банд кардан аз тарафи Таҳмурас бидуни ҷанг таслим мешаванд?",
       "answers": [
-        "One third",
-        "One half",
         "Two thirds",
-        "All of them"
+        "All of them",
+        "One third",
+        "One half"
       ],
       "answers_fa": [
-        "یک‌سوم",
-        "نیمی",
         "دوسوم",
-        "همه‌ی آن‌ها"
+        "همه‌ی آن‌ها",
+        "یک‌سوم",
+        "نیمی"
       ],
       "answers_tg": [
-        "Як сеяк",
-        "Нимаш",
         "Ду сеяк",
-        "Ҳамаашон"
+        "Ҳамаашон",
+        "Як сеяк",
+        "Нимаш"
       ],
-      "correct_answer": 2,
+      "correct_answer": 0,
       "explanation": "Two thirds submit without fighting — they have watched their lord Ahriman ridden like a horse. One third fight and die. Ferdowsi's arithmetic shows that most darkness can be negotiated with.",
       "explanation_fa": "دوسوم بدونِ جنگ تسلیم می‌شوند — دیده‌اند که اربابشان اهریمن مثلِ اسب رانده شده. یک‌سوم می‌جنگند و می‌میرند. حسابِ فردوسی نشان می‌دهد با بیشترِ تاریکی می‌توان مذاکره کرد.",
       "explanation_tg": "Ду сеяк бидуни ҷанг таслим мешаванд — дидаанд, ки арбобашон Аҳриман мисли асп ронда шудааст. Як сеяк меҷанганд ва мемиранд.",
@@ -219,24 +219,24 @@
       "question_fa": "تهمورث فراتر از شکستِ سپاهِ دیوان چگونه سیادتِ برین بر قلمروِ دیوان را نشان می‌دهد؟",
       "question_tg": "Таҳмурас берун аз шикасти лашкари девон чӣ гуна сиёдати олиро бар қаламрови девон нишон медиҳад?",
       "answers": [
+        "He forces Ahriman to carry him as his mount through the realm",
         "He builds a fortress at the centre of the demon realm",
         "He places his cypress club above the demon throne",
-        "He burns the demon forest to the roots",
-        "He forces Ahriman to carry him as his mount through the realm"
+        "He burns the demon forest to the roots"
       ],
       "answers_fa": [
+        "اهریمن را مجبور می‌کند در تمامِ قلمرو مرکبش باشد",
         "قلعه‌ای در مرکزِ قلمروِ دیوان می‌سازد",
         "چوبِ سروِ خود را بالای تختِ دیوان می‌گذارد",
-        "جنگلِ دیوان را تا ریشه می‌سوزاند",
-        "اهریمن را مجبور می‌کند در تمامِ قلمرو مرکبش باشد"
+        "جنگلِ دیوان را تا ریشه می‌سوزاند"
       ],
       "answers_tg": [
+        "Аҳриманро маҷбур мекунад дар тамоми қаламров марҳабааш бошад",
         "Қалъае дар маркази қаламрови девон месозад",
         "Чӯби сарви худро болои тахти девон мегузорад",
-        "Ҷангали девонро то реша месӯзонад",
-        "Аҳриманро маҷбур мекунад дар тамоми қаламров марҳабааш бошад"
+        "Ҷангали девонро то реша месӯзонад"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "He forces Ahriman — the lord of darkness himself — to serve as his horse and rides him through the demon realm. It is the highest symbolic act of mastery: not killing the enemy but making him carry you.",
       "explanation_fa": "اهریمن — خودِ سرورِ تاریکی — را مجبور می‌کند مرکبش شود و از میانِ قلمروِ دیوان می‌تازد. این بالاترین عملِ نمادینِ سیادت است: نه کشتنِ دشمن بلکه وادارکردنش که تو را حمل کند.",
       "explanation_tg": "Аҳриманро — худи Парвардигори торикӣ — маҷбур мекунад, ки марҳабааш шавад ва аз миёни қаламрови девон метозад.",
@@ -255,21 +255,21 @@
       "question_tg": "Ҳангоми оғози дарси навиштан, девон кадом алифборо аввал меомӯзанд?",
       "answers": [
         "Greek",
+        "Sogdian",
         "Pahlavi",
-        "Tazi",
-        "Sogdian"
+        "Tazi"
       ],
       "answers_fa": [
         "یونانی",
+        "سغدی",
         "پهلوی",
-        "تازی",
-        "سغدی"
+        "تازی"
       ],
       "answers_tg": [
         "Юнонӣ",
+        "Суғдӣ",
         "Паҳлавӣ",
-        "Тозӣ",
-        "Суғдӣ"
+        "Тозӣ"
       ],
       "correct_answer": 0,
       "explanation": "Greek first — 'angular, proud.' Then Tazi, Pahlavi, Sogdian. The Greek alphabet opens the sequence, followed by the scripts of the surrounding world.",
@@ -289,24 +289,24 @@
       "question_fa": "صحنه‌ی «دیوان بر کرانه» می‌گوید پیکان‌ها سه نشانه‌ی خاص گزارش می‌دهند. کدامیک از آن‌ها نیست؟",
       "question_tg": "Саҳнаи «Девон дар канора» мегӯяд пайкон(ҳо) се нишонаи мушаххас гузориш медиҳанд. Кадоме аз онҳо нест?",
       "answers": [
-        "Fires in the hollows",
+        "A great serpent seen crossing the road at night",
         "Sounds that are not wind",
-        "Shapes at the tree-line that do not move when looked at directly",
-        "A great serpent seen crossing the road at night"
+        "Fires in the hollows",
+        "Shapes at the tree-line that do not move when looked at directly"
       ],
       "answers_fa": [
-        "آتش در چاله‌ها",
+        "افعیِ بزرگی که شبانه از جاده می‌گذرد",
         "صداهایی که باد نیستند",
-        "شکل‌هایی در کنارِ درختان که با نگاهِ مستقیم تکان نمی‌خورند",
-        "افعیِ بزرگی که شبانه از جاده می‌گذرد"
+        "آتش در چاله‌ها",
+        "شکل‌هایی در کنارِ درختان که با نگاهِ مستقیم تکان نمی‌خورند"
       ],
       "answers_tg": [
-        "Оташ дар чоҳакҳо",
+        "Морги бузурге, ки шабона аз роҳ мегузарад",
         "Садоҳое, ки шамол нестанд",
-        "Шаклҳое дар канори дарахтон, ки бо нигоҳи мустақим ҳаракат намекунанд",
-        "Морги бузурге, ки шабона аз роҳ мегузарад"
+        "Оташ дар чоҳакҳо",
+        "Шаклҳое дар канори дарахтон, ки бо нигоҳи мустақим ҳаракат намекунанд"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "The three signs are: fires in the hollows, sounds that are not wind, and shapes at the tree-line that don't move when looked at directly. No serpent is reported — that comes from Hushang's chapter.",
       "explanation_fa": "سه نشانه عبارتند از: آتش در چاله‌ها، صداهایی که باد نیستند، و شکل‌هایی در کنارِ درختان که با نگاهِ مستقیم تکان نمی‌خورند. هیچ افعی‌ای گزارش نمی‌شود — آن از دفترِ هوشنگ است.",
       "explanation_tg": "Се нишона инҳоянд: оташ дар чоҳакҳо, садоҳое, ки шамол нестанд, ва шаклҳое дар канори дарахтон, ки бо нигоҳи мустақим ҳаракат намекунанд. Ягон мор гузориш намешавад.",
@@ -324,24 +324,24 @@
       "question_fa": "چرا تهمورث هنگامی که سه پیکانِ اول با دیدنِ دیوان برمی‌گردند، پیکانِ چهارمی نمی‌فرستد؟",
       "question_tg": "Чаро Таҳмурас вақте ки се пайкони аввал бо дидани девон бармегарданд, пайкони чоруме намефиристад?",
       "answers": [
-        "He goes himself — he wants the demons to see who holds the cypress club",
+        "He waits for Hushang's blessing before marching",
         "He has run out of scouts",
-        "He decides the report is false",
-        "He waits for Hushang's blessing before marching"
+        "He goes himself — he wants the demons to see who holds the cypress club",
+        "He decides the report is false"
       ],
       "answers_fa": [
-        "خودش می‌رود — می‌خواهد دیوان ببینند چه کسی چوبِ سرو را دارد",
+        "پیش از حرکت منتظرِ برکتِ هوشنگ می‌ماند",
         "پیکانی برایش نمانده",
-        "تصمیم می‌گیرد گزارش دروغ است",
-        "پیش از حرکت منتظرِ برکتِ هوشنگ می‌ماند"
+        "خودش می‌رود — می‌خواهد دیوان ببینند چه کسی چوبِ سرو را دارد",
+        "تصمیم می‌گیرد گزارش دروغ است"
       ],
       "answers_tg": [
-        "Худаш меравад — мехоҳад девон бубинанд ки кӣ чӯби сарвро дорад",
+        "Пеш аз ҳаракат мунтазири баракати Ҳушанг мемонад",
         "Пайконе намондааст",
-        "Тасмим мегирад, ки гузориш дурӯғ аст",
-        "Пеш аз ҳаракат мунтазири баракати Ҳушанг мемонад"
+        "Худаш меравад — мехоҳад девон бубинанд ки кӣ чӯби сарвро дорад",
+        "Тасмим мегирад, ки гузориш дурӯғ аст"
       ],
-      "correct_answer": 0,
+      "correct_answer": 2,
       "explanation": "He goes himself — carrying only the cypress club — because he wants the demons to see who holds it. Tahmuras understands that authority must be witnessed, not just reported.",
       "explanation_fa": "خودش می‌رود — تنها با چوبِ سرو — چون می‌خواهد دیوان ببینند چه کسی آن را دارد. تهمورث می‌فهمد که اقتدار باید شاهد داشته باشد، نه فقط گزارش.",
       "explanation_tg": "Худаш меравад — танҳо бо чӯби сарв — зеро мехоҳад девон бубинанд ки кӣ онро дорад. Таҳмурас мефаҳмад, ки салоҳият бояд шоҳид дошта бошад, на танҳо гузориш.",
@@ -359,24 +359,24 @@
       "question_fa": "در فرهنگنامه سه خاصیتِ مقدسِ درختِ سرو نام برده می‌شود. آن‌ها کدامند؟",
       "question_tg": "Дар кодекс се хосияти муқаддаси дарахти сарв номбар мешаванд. Онҳо кадомҳоянд?",
       "answers": [
-        "It grows tall, bears fruit in winter, and lives two thousand years",
         "It grows straight, burns clean, and outlasts almost everything planted beside it",
         "It is fragrant, speaks in wind, and marks the graves of kings",
+        "It grows tall, bears fruit in winter, and lives two thousand years",
         "It bends without breaking, roots in stone, and gives shade all year"
       ],
       "answers_fa": [
-        "بلند می‌رویید، در زمستان میوه می‌دهد و دو هزار سال عمر می‌کند",
         "مستقیم می‌رویید، پاک می‌سوزد و تقریباً از همه‌چیزی که کنارش کاشته شده دوام می‌آورد",
         "معطر است، در باد سخن می‌گوید و مزارِ شاهان را نشانه می‌گذارد",
+        "بلند می‌رویید، در زمستان میوه می‌دهد و دو هزار سال عمر می‌کند",
         "بدونِ شکستن خم می‌شود، در سنگ ریشه می‌دهد و تمامِ سال سایه می‌دهد"
       ],
       "answers_tg": [
-        "Баланд мерӯяд, дар зимистон мева медиҳад ва ду ҳазор сол умр мекунад",
         "Рост мерӯяд, пок месӯзад ва тақрибан аз ҳама чизе, ки дар канораш кошта шудааст, давом меорад",
         "Хушбӯй аст, дар шамол сухан мегӯяд ва мазори шоҳонро нишона мегузорад",
+        "Баланд мерӯяд, дар зимистон мева медиҳад ва ду ҳазор сол умр мекунад",
         "Бе шикастан хам мешавад, дар санг реша мезанад ва тамоми сол соя медиҳад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Straight growth, clean burning, lasting endurance — the cypress was sacred because it embodied the virtues Ferdowsi prizes: uprightness, purity, and permanence.",
       "explanation_fa": "رشدِ مستقیم، سوختنِ پاک، دوامِ پایدار — سرو مقدس بود چون ارزش‌هایی را که فردوسی می‌ستاید تجسم می‌بخشد: راستی، پاکی و ماندگاری.",
       "explanation_tg": "Рушди рост, сӯхтани пок, давоми устувор — сарв муқаддас буд зеро арзишҳоеро, ки Фирдавсӣ меситояд, таҷассум мебахшад: ростӣ, покӣ ва мондагорӣ.",
@@ -394,24 +394,24 @@
       "question_fa": "تهمورث بلافاصله پس از پایانِ درسِ نوشتار با لوح‌های گِلی چه می‌کند؟",
       "question_tg": "Таҳмурас фавран пас аз поёни дарси навиштан бо лавҳҳои гилин чӣ мекунад?",
       "answers": [
-        "He seals them in the mountain court for safe-keeping",
         "He orders scribes to make ten copies and distribute them across Pars",
         "He sits and copies each shape until his hands know them, then teaches his children",
-        "He burns them after memorising each letter"
+        "He burns them after memorising each letter",
+        "He seals them in the mountain court for safe-keeping"
       ],
       "answers_fa": [
-        "آن‌ها را در درگاهِ کوهستانی برای محافظت مُهر و موم می‌کند",
         "به دبیران دستور می‌دهد ده نسخه بسازند و در پارس پخش کنند",
         "می‌نشیند و هر شکل را تکرار می‌کند تا دستانش بدانند، سپس به کودکانش می‌آموزد",
-        "پس از حفظِ هر حرف آن‌ها را می‌سوزاند"
+        "پس از حفظِ هر حرف آن‌ها را می‌سوزاند",
+        "آن‌ها را در درگاهِ کوهستانی برای محافظت مُهر و موم می‌کند"
       ],
       "answers_tg": [
-        "Онҳоро дар дарвозаи кӯҳистонӣ барои ҳифозат мӯҳр мекунад",
         "Ба котибон амр медиҳад даҳ нусха созанд ва дар Порс тақсим кунанд",
         "Менишинад ва ҳар шаклро такрор мекунад то дастонаш бидонанд, сипас ба кӯдаконаш меомӯзад",
-        "Пас аз ёд кардани ҳар ҳарф онҳоро месӯзонад"
+        "Пас аз ёд кардани ҳар ҳарф онҳоро месӯзонад",
+        "Онҳоро дар дарвозаи кӯҳистонӣ барои ҳифозат мӯҳр мекунад"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "He sits with the clay tablets and copies each shape until his hands know them, then teaches his children. The king himself does the work — writing is not delegated.",
       "explanation_fa": "با لوح‌های گِلی می‌نشیند و هر شکل را تکرار می‌کند تا دستانش بدانند، سپس به کودکانش می‌آموزد. خودِ شاه کار را انجام می‌دهد — نوشتار واگذار نمی‌شود.",
       "explanation_tg": "Бо лавҳҳои гилин менишинад ва ҳар шаклро такрор мекунад то дастонаш бидонанд, сипас ба кӯдаконаш меомӯзад. Худи шоҳ корро мекунад — навиштан вогузор намешавад.",
@@ -429,21 +429,21 @@
       "question_fa": "فرهنگنامه می‌گوید «دیوبند» در فارسی دو معنا دارد. آن‌ها کدامند؟",
       "question_tg": "Кодекс мегӯяд «Девбанд» дар форсӣ ду маъно дорад. Онҳо кадомҳоянд?",
       "answers": [
-        "Demon-killer and demon-rider",
         "The one who chains and the one who is chained",
         "Darkness-destroyer and light-bringer",
+        "Demon-killer and demon-rider",
         "Demon-chainer and demon-bonder (the man who binds the world together)"
       ],
       "answers_fa": [
-        "کشنده‌ی دیو و سوارکارِ دیو",
         "آنکه زنجیر می‌زند و آنکه زنجیر می‌شود",
         "نابودکننده‌ی تاریکی و آورنده‌ی روشنایی",
+        "کشنده‌ی دیو و سوارکارِ دیو",
         "به‌زنجیرکشنده‌ی دیو و پیوندبخشِ جهان"
       ],
       "answers_tg": [
-        "Куштани дев ва савории дев",
         "Онки занҷир мезанад ва онки занҷир мешавад",
         "Нобудкунандаи торикӣ ва оварандаи равшанӣ",
+        "Куштани дев ва савории дев",
         "Банд кунандаи дев ва пайванди ҷаҳон"
       ],
       "correct_answer": 3,
@@ -464,24 +464,24 @@
       "question_fa": "صحنه‌ی پایانیِ تهمورث چه هشداری درباره‌ی جمشید و فَر می‌دهد؟",
       "question_tg": "Саҳнаи охирини Таҳмурас чӣ огоҳие дар бораи Ҷамшид ва фарр медиҳад?",
       "answers": [
-        "Jamshid will carry the farr brilliantly for three hundred years then lose it to pride",
         "Jamshid will refuse to learn the alphabets and lose the farr as punishment",
         "Jamshid will give the farr to the demons in exchange for eternal life",
+        "Jamshid will carry the farr brilliantly for three hundred years then lose it to pride",
         "Jamshid will chain Ahriman as Tahmuras did but fail to hold him"
       ],
       "answers_fa": [
-        "جمشید فَر را درخشان سیصد سال حمل خواهد کرد، سپس آن را به تکبر از دست خواهد داد",
         "جمشید از آموختنِ الفبا سر باز می‌زند و به‌عنوانِ مجازات فَر را از دست می‌دهد",
         "جمشید فَر را در ازای حیاتِ جاودانه به دیوان می‌دهد",
+        "جمشید فَر را درخشان سیصد سال حمل خواهد کرد، سپس آن را به تکبر از دست خواهد داد",
         "جمشید اهریمن را همانطور که تهمورث کرد به زنجیر می‌کشد اما نمی‌تواند نگهش دارد"
       ],
       "answers_tg": [
-        "Ҷамшид фаррро дурахшон си сад сол хоҳад бурд, сипас онро ба тавозӯъ аз даст хоҳад дод",
         "Ҷамшид аз омӯхтани алифбо саркашӣ мекунад ва ба унвони ҷазо фарр мегирад",
         "Ҷамшид фаррро дар ивази ҳаёти ҷовидон ба девон медиҳад",
+        "Ҷамшид фаррро дурахшон си сад сол хоҳад бурд, сипас онро ба тавозӯъ аз даст хоҳад дод",
         "Ҷамшид Аҳриманро мисли Таҳмурас банд мекунад аммо наметавонад нигоҳаш дорад"
       ],
-      "correct_answer": 0,
+      "correct_answer": 2,
       "explanation": "Jamshid will carry the farr brilliantly for three hundred years then lose it entirely to pride — the divine grace departs when pride replaces wisdom. This is the chronicle's first great tragedy.",
       "explanation_fa": "جمشید فَر را درخشان سیصد سال حمل خواهد کرد، سپس یکسره با تکبر از دست خواهد داد — موهبتِ الهی وقتی تکبر جایِ خرد را می‌گیرد می‌رود. این اولین تراژدیِ بزرگِ این تاریخ است.",
       "explanation_tg": "Ҷамшид фаррро дурахшон си сад сол хоҳад бурд, сипас тамоман бо кибр аз даст хоҳад дод.",
@@ -499,24 +499,24 @@
       "question_fa": "ورودیِ فرهنگنامه درباره‌ی نوشتار می‌گوید: «دانش در این تاریخ همه‌جاست — اما به‌ندرت ___ است.» جمله را کامل کنید.",
       "question_tg": "Вурудии кодекс дар бораи навиштан мегӯяд: «Дониш дар ин таърих ҳамаҷост — аммо ба‌ندрат ___ аст.» Ҷумларо пурра кунед.",
       "answers": [
-        "Safe",
-        "Free",
+        "Spoken",
         "Useful",
-        "Spoken"
+        "Free",
+        "Safe"
       ],
       "answers_fa": [
-        "امن",
-        "رایگان",
+        "گفتاری",
         "مفید",
-        "گفتاری"
+        "رایگان",
+        "امن"
       ],
       "answers_tg": [
-        "Амн",
-        "Ройгон",
+        "Гуфторӣ",
         "Муфид",
-        "Гуфторӣ"
+        "Ройгон",
+        "Амн"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "'Knowledge is everywhere in this chronicle — but it is rarely free.' The demons demand their lives; Tahmuras pays with mercy. Every acquisition of knowledge in the Shahnameh has a price.",
       "explanation_fa": "«دانش در این تاریخ همه‌جاست — اما به‌ندرت رایگان است.» دیوان جانشان را می‌طلبند؛ تهمورث با رحمت می‌پردازد. هر دستیابی به دانش در شاهنامه بهایی دارد.",
       "explanation_tg": "«Дониш дар ин таърих ҳамаҷост — аммо ба‌ндрат ройгон аст.» Девон ҷонашонро мехоҳанд; Таҳмурас бо раҳмат мепардозад.",
@@ -534,24 +534,24 @@
       "question_fa": "شاهنامه می‌گوید شاهیِ تهمورث «در این تاریخ کوتاه» است. با وجود این، چه چیزی می‌گوید که او به‌جا می‌گذارد که کوتاه نیست؟",
       "question_tg": "Шоҳнома мегӯяд подшоҳии Таҳмурас «дар ин таърих кӯтоҳ» аст. Бо вуҷуди ин, чӣ чизеро мегӯяд, ки ӯ мегузорад, ки кӯтоҳ нест?",
       "answers": [
-        "An army that will protect Pars for a thousand years",
-        "The cypress forests planted across the mountain slopes",
         "Every word written in every tongue that followed carries a debt to the bargain at the demon throne",
-        "The chain that still binds Ahriman beneath Mount Damavand"
+        "The chain that still binds Ahriman beneath Mount Damavand",
+        "The cypress forests planted across the mountain slopes",
+        "An army that will protect Pars for a thousand years"
       ],
       "answers_fa": [
-        "سپاهی که هزار سال از پارس محافظت خواهد کرد",
-        "جنگل‌های سروی که در سراسرِ دامنه‌های کوه کاشته شدند",
         "هر واژه‌ای که به هر زبانی نوشته شده وامدارِ آن معامله در تختِ دیوان است",
-        "زنجیری که هنوز اهریمن را زیرِ کوهِ دماوند می‌بندد"
+        "زنجیری که هنوز اهریمن را زیرِ کوهِ دماوند می‌بندد",
+        "جنگل‌های سروی که در سراسرِ دامنه‌های کوه کاشته شدند",
+        "سپاهی که هزار سال از پارس محافظت خواهد کرد"
       ],
       "answers_tg": [
-        "Лашкаре, ки ҳазор сол аз Порс муҳофизат хоҳад кард",
-        "Ҷангалҳои сарве, ки дар саросари доманаҳои кӯҳ кошта шуданд",
         "Ҳар вожае, ки ба ҳар забоне навишта шудааст, вомдори он муомила дар тахти девон аст",
-        "Занҷире, ки ҳоло Аҳриманро зери Кӯҳи Домовонд мебандад"
+        "Занҷире, ки ҳоло Аҳриманро зери Кӯҳи Домовонд мебандад",
+        "Ҷангалҳои сарве, ки дар саросари доманаҳои кӯҳ кошта шуданд",
+        "Лашкаре, ки ҳазор сол аз Порс муҳофизат хоҳад кард"
       ],
-      "correct_answer": 2,
+      "correct_answer": 0,
       "explanation": "Every word written in every tongue that followed carries a debt to the bargain at the demon throne. A short reign can leave a permanent world — the Shahnameh's proof that wisdom outlasts power.",
       "explanation_fa": "هر واژه‌ای که به هر زبانی نوشته شده وامدارِ آن معامله در تختِ دیوان است. شاهی کوتاه می‌تواند جهانی ماندگار بگذارد — اثباتِ شاهنامه که خرد از قدرت ماندگارتر است.",
       "explanation_tg": "Ҳар вожае, ки ба ҳар забоне навишта шудааст, вомдори он муомила дар тахти девон аст. Подшоҳии кӯтоҳ метавонад ҷаҳони мондагор бигузорад.",

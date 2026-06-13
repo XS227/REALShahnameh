@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "nsh-e1",
+      "id": "nshz-e1",
       "chapter_slug": "nushzad",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "Why did Nushzad rebel against his father Anushirvan?",
-      "question_fa": "چرا نوشزاد بر پدرش انوشیروان شورش کرد؟",
-      "question_tg": "Чаро Нушзод бар падараш Анӯшервон шӯриш кард?",
+      "question": "Who was Nushzad?",
+      "question_fa": "نوش‌زاد که بود؟",
+      "question_tg": "Нӯшзод кӣ буд?",
       "answers": [
-        "He heard rumors that Anushirvan had died during a western campaign and seized the opportunity to claim power in Khuzestan",
-        "He had been passed over for the succession in favour of a younger brother",
-        "Anushirvan had ordered Nushzad imprisoned for converting to Christianity",
-        "He was manipulated by Byzantine agents into believing Anushirvan was planning to execute him"
+        "The general who defeated the Hephthalites",
+        "Anushirvan's son by a Christian woman, who chose his mother's faith over his father's empire",
+        "Anushirvan's wise minister and advisor",
+        "A Byzantine prince held hostage at Ctesiphon"
       ],
       "answers_fa": [
-        "شنید شایعاتی که انوشیروان در طول یک کمپین غربی مُرده و از فرصت برای ادعای قدرت در خوزستان استفاده کرد",
-        "در جانشینی به نفع برادر کوچک‌تری کنار گذاشته شده بود",
-        "انوشیروان دستور زندانی کردن نوشزاد را به خاطر گروش به مسیحیت داده بود",
-        "توسط عوامل بیزانسی دستکاری شد که باور کند انوشیروان در حال برنامه‌ریزی برای اعدامش است"
+        "سرداری که هیاطله را شکست داد",
+        "پسرِ انوشیروان از زنی مسیحی، که دینِ مادرش را بر امپراتوریِ پدرش برگزید",
+        "وزیرِ خردمند و مشاورِ انوشیروان",
+        "شاهزاده‌ای بیزانسی که در تیسفون گروگان بود"
       ],
       "answers_tg": [
-        "Шунид шоеъаҳое ки Анӯшервон дар тӯли кампинияи ғарбӣ мурдааст ва аз фурсат барои даъвои қудрат дар Хузистон истифода кард",
-        "Дар ҷонишинӣ ба нафъи бародари хурдтаре канор гузошта шуда буд",
-        "Анӯшервон фармони зиндонӣ кардани Нушзодро ба хотири гузаштан ба масеҳият дода буд",
-        "Аз ҷониби агентони Визонтӣ дастаккорӣ шуд ки бовар кунад Анӯшервон дар ҳоли баpнома дар эъдоми ӯ аст"
+        "Сардоре ки Ҳайтолиёнро шикаст дод",
+        "Писари Ануширвон аз зани масеҳӣ, ки дини модарашро бар империяи падараш баргузид",
+        "Вазири хирадманд ва мушовири Ануширвон",
+        "Шоҳзодаи бизантӣ ки дар Тайсафун гаравгон буд"
       ],
-      "correct_answer": 0,
-      "explanation": "When Anushirvan fell gravely ill during a western campaign, word reached the provinces that he was dying. Nushzad, believing the news, raised his banner in Khuzestan and declared himself king. But Anushirvan recovered, and the rebellion was crushed.",
-      "explanation_fa": "وقتی انوشیروان در طول یک کمپین غربی به شدت بیمار شد، خبر به استان‌ها رسید که در حال مرگ است. نوشزاد با باور به این خبر پرچمش را در خوزستان برافراشت و خودش را شاه اعلام کرد. اما انوشیروان بهبود یافت و شورش سرکوب شد.",
-      "explanation_tg": "Вақте Анӯшервон дар тӯли кампинияи ғарбӣ ба шиддат бемор шуд, хабар ба уcтонҳо расид ки дар ҳоли марг аст. Нушзод бо бовар ба ин хабар байрақашро дар Хузистон афрошт ва худашро подшоҳ эълон кард. Аммо Анӯшервон беҳтар шуд ва шӯриш сарکӯб шуд.",
+      "correct_answer": 1,
+      "explanation": "Nushzad was Anushirvan's son by a Christian woman, and he chose her faith. That choice — conviction against inheritance — made him the Shahnameh's most personal tragedy.",
+      "explanation_fa": "نوش‌زاد پسرِ انوشیروان از زنی مسیحی بود و دینِ مادرش را برگزید — تراژدیِ شخصیِ شاهنامه.",
+      "explanation_tg": "Нӯшзод писари Ануширвон аз зани масеҳӣ буд ва дини модарашро баргузид — фоҷиаи шахсии Шоҳнома.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "nsh-m1",
+      "id": "nshz-e2",
+      "chapter_slug": "nushzad",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What news triggered Nushzad's rebellion?",
+      "question_fa": "چه خبری شورشِ نوش‌زاد را برانگیخت؟",
+      "question_tg": "Чӣ хабаре шӯриши Нӯшзодро барангехт?",
+      "answers": [
+        "Word that Anushirvan had fallen gravely ill on campaign and was dying or already dead",
+        "The execution of his Christian mother",
+        "News that the Arabs had invaded Iran",
+        "A letter from the Byzantine emperor promising him the throne"
+      ],
+      "answers_fa": [
+        "خبرِ این‌که انوشیروان در لشکرکشی سخت بیمار شده و در حالِ مرگ یا مرده است",
+        "اعدامِ مادرِ مسیحی‌اش",
+        "خبرِ حمله‌ی عرب‌ها به ایران",
+        "نامه‌ای از امپراتورِ بیزانس که تخت را به او وعده می‌داد"
+      ],
+      "answers_tg": [
+        "Хабари ин ки Ануширвон дар лашкаркашӣ сахт бемор шуда ва дар ҳоли марг ё мурдааст",
+        "Қатли модари масеҳияш",
+        "Хабари ҳамлаи арабҳо ба Эрон",
+        "Номае аз императори Бизантия ки тахтро ба ӯ ваъда медод"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Anushirvan fell gravely ill during a western campaign, word spread that the great king was dying or dead. Nushzad believed it and raised his banner in the southwest.",
+      "explanation_fa": "وقتی انوشیروان در لشکرکشیِ غربی سخت بیمار شد، شایعه‌ی مرگش پخش شد و نوش‌زاد پرچم برافراشت.",
+      "explanation_tg": "Вақте Ануширвон дар лашкаркашии ғарбӣ сахт бемор шуд, овозаи маргаш паҳн шуд ва Нӯшзод парчам барафрошт.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "nshz-e3",
+      "chapter_slug": "nushzad",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Where did Nushzad declare himself king?",
+      "question_fa": "نوش‌زاد کجا خود را شاه اعلام کرد؟",
+      "question_tg": "Нӯшзод дар куҷо худро шоҳ эълон кард?",
+      "answers": [
+        "In Ctesiphon itself, seizing the palace",
+        "In Khuzestan, in the southwest, gathering Christian soldiers and disaffected nobles",
+        "In Armenia, his mother's homeland",
+        "In Khorasan, among the eastern nobles"
+      ],
+      "answers_fa": [
+        "در خودِ تیسفون، با تصرفِ کاخ",
+        "در خوزستان، در جنوبِ غربی، با گردآوریِ سربازانِ مسیحی و اشرافِ ناراضی",
+        "در ارمنستان، زادگاهِ مادرش",
+        "در خراسان، میانِ اشرافِ شرقی"
+      ],
+      "answers_tg": [
+        "Дар худи Тайсафун, бо тасарруфи кох",
+        "Дар Хузистон, дар ҷанубу ғарб, бо гирдоварии сарбозони масеҳӣ ва ашрофи норозӣ",
+        "Дар Арманистон, зодгоҳи модараш",
+        "Дар Хуросон, байни ашрофи шарқӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "Stationed in Khuzestan, Nushzad raised his banner there, gathered Christian soldiers and disaffected nobles, and declared himself king in the southwest.",
+      "explanation_fa": "نوش‌زاد در خوزستان پرچم برافراشت و سربازانِ مسیحی و اشرافِ ناراضی را گرد آورد.",
+      "explanation_tg": "Нӯшзод дар Хузистон парчам барафрошт ва сарбозони масеҳӣ ва ашрофи норозиро гирд овард.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "nshz-m1",
       "chapter_slug": "nushzad",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "What made Nushzad's rebellion religiously significant in the Shahnameh?",
-      "question_fa": "چه چیزی شورش نوشزاد را از نظر مذهبی در شاهنامه مهم می‌کرد؟",
-      "question_tg": "Чӣ чизе шӯриши Нушзодро аз нигоҳи динӣ дар шоҳнома муҳим мекард?",
+      "question": "Whom did Anushirvan send to end his son's rebellion?",
+      "question_fa": "انوشیروان چه کسی را برای پایان دادن به شورشِ پسرش فرستاد؟",
+      "question_tg": "Ануширвон киро барои поён додан ба шӯриши писараш фиристод?",
       "answers": [
-        "He was a Sasanian prince who had converted to Christianity and gathered Christian soldiers to his cause",
-        "He claimed to have received a direct vision from Zoroastrian God ordering him to overthrow his father",
-        "He allied with the Byzantine church which declared him a martyr even before his death",
-        "He renounced all religion entirely and fought in the name of secular justice"
+        "His minister Bozorgmehr, to negotiate peace",
+        "His daughter, to appeal to family bonds",
+        "His general Ramburzin, with an army and an unambiguous order: end it",
+        "The Zoroastrian high priest, to excommunicate him"
       ],
       "answers_fa": [
-        "او شاهزاده ساسانی‌ای بود که به مسیحیت گروش کرده بود و سربازان مسیحی را به دور خود جمع کرده بود",
-        "ادعا کرد از خدای زرتشتی رؤیایی مستقیم دریافت کرده که به او دستور داده پدرش را سرنگون کند",
-        "با کلیسای بیزانس متحد شد که قبل از مرگش او را شهید اعلام کرد",
-        "کلاً از تمام ادیان دست کشید و به نام عدالت سکولار جنگید"
+        "وزیرش بزرگمهر را، برای مذاکره‌ی صلح",
+        "دخترش را، برای توسل به پیوندهای خانوادگی",
+        "سردارش رام‌برزین را، با ارتشی و فرمانی بی‌ابهام: تمامش کن",
+        "موبدِ بزرگِ زرتشتی را، برای طردِ او"
       ],
       "answers_tg": [
-        "Ӯ шаҳзодаи Сосонӣ буд ки ба масеҳият гузашта буд ва сарбозони масеҳиро ба дури худ ҷамъ карда буд",
-        "Иддаъо кард аз Худои Зардуштӣ рӯяти мустақиме гирифтааст ки ба ӯ фармон дода падарашро сарнагун кунад",
-        "Бо Калисои Визонт иттиҳод кард ки пеш аз маргаш ӯро шаҳид эълон кард",
-        "Комилан аз ҳамаи адён даст кашид ва ба номи адолати дунявӣ ҷангид"
+        "Вазираш Бузургмеҳрро, барои музокираи сулҳ",
+        "Духтарашро, барои тавассул ба пайвандҳои хонаводагӣ",
+        "Сардораш Ромбарзинро, бо лашкаре ва фармони беибҳом: тамомаш кун",
+        "Мӯбади бузурги зардуштиро, барои тарди ӯ"
       ],
-      "correct_answer": 0,
-      "explanation": "Nushzad was born of a Christian mother and had chosen her faith. When he raised his rebellion, he gathered Christian soldiers and disaffected nobles around him. This made his revolt an explicit religious challenge to the Zoroastrian Sasanian state — not just a political uprising.",
-      "explanation_fa": "نوشزاد از مادری مسیحی متولد شده بود و دین او را انتخاب کرده بود. وقتی شورشش را برپا کرد، سربازان مسیحی و اشراف ناراضی را دور خود جمع کرد. این شورشش را به یک چالش مذهبی صریح علیه دولت ساسانی زرتشتی تبدیل کرد — نه فقط یک قیام سیاسی.",
-      "explanation_tg": "Нушзод аз модари масеҳӣ таваллуд шуда буд ва дини ӯро интихоб карда буд. Вақте шӯришашро барпо кард, сарбозони масеҳӣ ва ашрофи норозиро дури худ ҷамъ кард.",
+      "correct_answer": 2,
+      "explanation": "Anushirvan recovered from his illness and sent his general Ramburzin south with an army. The message was unambiguous: end it. The battle was brief.",
+      "explanation_fa": "انوشیروان بهبود یافت و سردارش رام‌برزین را با ارتشی به جنوب فرستاد: تمامش کن.",
+      "explanation_tg": "Ануширвон беҳбуд ёфт ва сардораш Ромбарзинро бо лашкаре ба ҷануб фиристод: тамомаш кун.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "nsh-e2",
+      "id": "nshz-m2",
       "chapter_slug": "nushzad",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "What did Anushirvan send Nushzad as he lay dying from his battle wounds?",
-      "question_fa": "انوشیروان وقتی نوشزاد از زخم‌های جنگی در حال مرگ بود چه چیزی برایش فرستاد؟",
-      "question_tg": "Анӯшервон вақте Нушзод аз захмҳои ҷангӣ дар ҳоли марг буд чӣ барояш фиристод?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "How does the Shahnameh describe Nushzad's conduct in his final battle?",
+      "question_fa": "شاهنامه رفتارِ نوش‌زاد را در نبردِ آخرش چگونه توصیف می‌کند؟",
+      "question_tg": "Шоҳнома рафтори Нӯшзодро дар набарди охираш чӣ гуна тавсиф мекунад?",
       "answers": [
-        "A letter expressing grief and disappointment — that Nushzad had everything and threw it away for a faith that gave him nothing in the end",
-        "A pardon, granting him full forgiveness if he recanted his Christian faith",
-        "A physician to heal his wounds so he could be tried and judged properly",
-        "A military escort to bring him back to Ctesiphon in chains"
+        "He surrendered immediately and begged for mercy",
+        "He fought with real courage — the Shahnameh credits him that much — but was outmatched and took a mortal wound",
+        "He won the battle but was poisoned afterward",
+        "He fled the field at the first charge"
       ],
       "answers_fa": [
-        "نامه‌ای که غم و ناامیدی را بیان می‌کرد — که نوشزاد همه چیز داشت و آن را برای دینی که در نهایت هیچ چیز به او نداد از دست داد",
-        "عفو که اگر از دین مسیحی‌اش توبه می‌کرد بخشش کامل اعطا می‌شد",
-        "یک پزشک برای درمان زخم‌هایش تا بتوان به درستی محاکمه و قضاوتش کرد",
-        "یک محافظ نظامی برای بردنش به زنجیر به تیسفون"
+        "فوراً تسلیم شد و طلبِ بخشش کرد",
+        "با شجاعتِ واقعی جنگید — شاهنامه همین‌قدر را به او اعتبار می‌دهد — اما حریفش نبودند و زخمی مرگبار برداشت",
+        "نبرد را بُرد اما بعداً مسموم شد",
+        "در نخستین حمله از میدان گریخت"
       ],
       "answers_tg": [
-        "Номае ки ғам ва ноумедиро баён мекард — ки Нушзод ҳамаи чиз дошт ва онро барои дине ки дар охир ҳеҷ чиз ба ӯ надод аз даст дод",
-        "Бахшиш ки агар аз дини масеҳияш тавба мекард бахшиши комил иноят мешуд",
-        "Духтуре барои табобати захмҳояш то бо дурустӣ муҳокима ва доварӣ шавад",
-        "Ҳифозати ҳарбие барои бурдани ӯ дар занҷир ба Тайсафун"
+        "Фавран таслим шуд ва талаби бахшиш кард",
+        "Бо шуҷоати воқеӣ ҷангид — Шоҳнома ҳамин қадарро ба ӯ эътибор медиҳад — аммо ҳарифашон набуд ва захми марговар бардошт",
+        "Набардро бурд аммо баъдан масмум шуд",
+        "Дар нахустин ҳамла аз майдон гурехт"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh credits Nushzad with real courage in his brief, doomed battle. He was outmatched and mortally wounded before the day was done — brave, and wrong about his moment.",
+      "explanation_fa": "شاهنامه شجاعتِ واقعیِ نوش‌زاد را تأیید می‌کند؛ اما حریفش نبودند و زخمی مرگبار برداشت.",
+      "explanation_tg": "Шоҳнома шуҷоати воқеии Нӯшзодро таъйид мекунад; аммо ҳарифашон набуд ва захми марговар бардошт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "nshz-m3",
+      "chapter_slug": "nushzad",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What did Anushirvan send to his dying son?",
+      "question_fa": "انوشیروان برای پسرِ در حالِ مرگش چه فرستاد؟",
+      "question_tg": "Ануширвон барои писари дар ҳоли маргаш чӣ фиристод?",
+      "answers": [
+        "A letter — words of grief, disappointment and cold judgment, not soldiers or courtiers",
+        "An executioner to finish the sentence",
+        "A physician with orders to save him at any cost",
+        "A priest to convert him back to the faith"
+      ],
+      "answers_fa": [
+        "نامه‌ای — واژه‌هایی از اندوه، سرخوردگی و داوریِ سرد، نه سرباز و نه درباری",
+        "جلادی برای اجرای حکم",
+        "پزشکی با دستورِ نجاتِ او به هر قیمت",
+        "موبدی برای بازگرداندنش به دین"
+      ],
+      "answers_tg": [
+        "Номае — вожаҳое аз андӯҳ, сархӯрдагӣ ва доварии сард, на сарбоз ва на дарборӣ",
+        "Ҷаллоде барои иҷрои ҳукм",
+        "Пизишке бо дастури наҷоти ӯ ба ҳар нарх",
+        "Мӯбаде барои бозгардонданаш ба дин"
       ],
       "correct_answer": 0,
-      "explanation": "Anushirvan sent a letter rather than soldiers — expressing that Nushzad had been given everything, had inherited the greatest empire in the world, and had chosen to become its enemy for the sake of a faith that could not save him. Nushzad died without answering it. The Shahnameh closes the episode with that silence.",
-      "explanation_fa": "انوشیروان به جای سربازان نامه فرستاد — بیان کرد که به نوشزاد همه چیز داده شده بود، بزرگترین امپراتوری جهان را به ارث برده بود و انتخاب کرده بود دشمنش شود برای دینی که نمی‌توانست او را نجات دهد. نوشزاد بدون پاسخ دادن مُرد. شاهنامه اپیزود را با آن سکوت می‌بندد.",
-      "explanation_tg": "Анӯшервон ба ҷои сарбозон нома фиристод — баён кард ки ба Нушзод ҳамаи чиз дода шуда буд, бузургтарин империяи ҷаҳонро ба мерос гирифта буд ва интихоб карда буд душманаш шавад барои дине ки наметавонист ӯро наҷот диҳад.",
+      "explanation": "Anushirvan sent neither soldiers to watch an execution nor courtiers to record a defeat. He sent words: a letter carrying grief, disappointment, and the particular coldness of a father who could not understand his son.",
+      "explanation_fa": "انوشیروان نه سرباز فرستاد نه درباری — نامه‌ای فرستاد با اندوه، سرخوردگی و سردیِ پدرانه.",
+      "explanation_tg": "Ануширвон на сарбоз фиристод на дарборӣ — номае фиристод бо андӯҳ, сархӯрдагӣ ва сардии падарона.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "nshz-m4",
+      "chapter_slug": "nushzad",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Why was Nushzad's rebellion not mere opportunism, according to the chapter?",
+      "question_fa": "طبقِ این فصل، چرا شورشِ نوش‌زاد فرصت‌طلبیِ صرف نبود؟",
+      "question_tg": "Тибқи ин боб, чаро шӯриши Нӯшзод фурсатталабии сирф набуд?",
+      "answers": [
+        "He had been promised the throne by the nobles in writing",
+        "He was tricked into it by Byzantine agents",
+        "He rebelled only to protect his mother from persecution",
+        "His conviction was genuine — he had been waiting for exactly this opening and believed his father's illness was the sign he needed"
+      ],
+      "answers_fa": [
+        "اشراف کتباً تخت را به او وعده داده بودند",
+        "عاملانِ بیزانسی فریبش دادند",
+        "فقط برای محافظت از مادرش در برابرِ آزار شورید",
+        "اعتقادش واقعی بود — دقیقاً منتظرِ همین گشایش بود و باور داشت بیماریِ پدرش نشانه‌ای است که نیاز داشت"
+      ],
+      "answers_tg": [
+        "Ашроф катбан тахтро ба ӯ ваъда дода буданд",
+        "Омилони бизантӣ фиребаш доданд",
+        "Танҳо барои муҳофизат аз модараш дар баробари озор шӯрид",
+        "Эътиқодаш воқеӣ буд — дақиқан мунтазири ҳамин кушоиш буд ва бовар дошт бемории падараш нишонаест ки ниёз дошт"
+      ],
+      "correct_answer": 3,
+      "explanation": "The rebellion grew from genuine conviction, not cynicism. Nushzad had been waiting for exactly this opening, had perhaps prepared for it, and convinced himself his father's illness was the sign. That sincerity is what makes the tragedy personal rather than political.",
+      "explanation_fa": "شورش از اعتقادِ واقعی روییده بود، نه بدبینی — و همین صداقت تراژدی را شخصی می‌کند.",
+      "explanation_tg": "Шӯриш аз эътиқоди воқеӣ рӯида буд, на бадбинӣ — ва ҳамин садоқат фоҷиаро шахсӣ мекунад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "nshz-m5",
+      "chapter_slug": "nushzad",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "How does the Shahnameh close the episode of Nushzad?",
+      "question_fa": "شاهنامه ماجرای نوش‌زاد را چگونه می‌بندد؟",
+      "question_tg": "Шоҳнома моҷарои Нӯшзодро чӣ гуна мебандад?",
+      "answers": [
+        "With Anushirvan's public curse upon his son's memory",
+        "With silence — not condemnation, not forgiveness, just the space where the conversation between father and son did not happen",
+        "With the conversion of Khuzestan to Christianity",
+        "With a long funeral oration praising the prince"
+      ],
+      "answers_fa": [
+        "با نفرینِ علنیِ انوشیروان بر یادِ پسرش",
+        "با سکوت — نه محکومیت، نه بخشش، فقط فضایی که گفت‌وگوی پدر و پسر در آن رخ نداد",
+        "با گرویدنِ خوزستان به مسیحیت",
+        "با خطابه‌ی بلندِ سوگواری در ستایشِ شاهزاده"
+      ],
+      "answers_tg": [
+        "Бо нафрини ошкори Ануширвон бар ёди писараш",
+        "Бо сукут — на маҳкумият, на бахшиш, танҳо фазое ки гуфтугӯи падару писар дар он рух надод",
+        "Бо гаравидани Хузистон ба масеҳият",
+        "Бо хитобаи дарози сӯгворӣ дар ситоиши шоҳзода"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nushzad died without answering his father's letter, and the Shahnameh ends the episode there — in silence. No verdict is pronounced. The poem leaves open the space where reconciliation might have been.",
+      "explanation_fa": "نوش‌زاد بی‌پاسخ مُرد و شاهنامه همان‌جا تمام می‌کند — در سکوت، بی‌حکم.",
+      "explanation_tg": "Нӯшзод бепосух мурд ва Шоҳнома ҳамон ҷо тамом мекунад — дар сукут, беҳукм.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "nshz-h1",
+      "chapter_slug": "nushzad",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Why does the chapter call Nushzad 'the Shahnameh's most personal tragedy'?",
+      "question_fa": "چرا این فصل نوش‌زاد را «شخصی‌ترین تراژدیِ شاهنامه» می‌نامد؟",
+      "question_tg": "Чаро ин боб Нӯшзодро «шахситарин фоҷиаи Шоҳнома» меномад?",
+      "answers": [
+        "Because Ferdowsi knew his family personally",
+        "He is neither a great villain nor a great hero — just a young man who acted on a genuine conviction at the wrong moment",
+        "Because he was the only prince ever to rebel against a father",
+        "Because his death caused the fall of the Sasanian empire"
+      ],
+      "answers_fa": [
+        "چون فردوسی خانواده‌اش را شخصاً می‌شناخت",
+        "نه تبهکارِ بزرگی است نه قهرمانِ بزرگی — فقط جوانی که در لحظه‌ی اشتباه بر اساسِ اعتقادی واقعی عمل کرد",
+        "چون تنها شاهزاده‌ای بود که هرگز علیه پدری شورید",
+        "چون مرگش باعثِ سقوطِ امپراتوریِ ساسانی شد"
+      ],
+      "answers_tg": [
+        "Зеро Фирдавсӣ хонаводаашро шахсан мешинохт",
+        "На табаҳкори бузургест на қаҳрамони бузурге — танҳо ҷавоне ки дар лаҳзаи иштибоҳ бар асоси эътиқоди воқеӣ амал кард",
+        "Зеро танҳо шоҳзодае буд ки ҳаргиз алайҳи падаре шӯрид",
+        "Зеро маргаш боиси суқути империяи сосонӣ шуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Epic tragedy usually needs scale — Rostam and Sohrab, Siavash. Nushzad's tragedy is small and human: an ordinary young man, a sincere belief, a fatally mistimed decision. There is no monster and no martyr, only a family broken by conviction — which is why it cuts so personally.",
+      "explanation_fa": "تراژدیِ نوش‌زاد کوچک و انسانی است: جوانی معمولی، باوری صادقانه، تصمیمی در لحظه‌ی مرگبارِ اشتباه.",
+      "explanation_tg": "Фоҷиаи Нӯшзод хурд ва инсонист: ҷавони маъмулӣ, боваре содиқона, тасмиме дар лаҳзаи марговари иштибоҳ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "nshz-h2",
+      "chapter_slug": "nushzad",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The chapter summarizes the father's letter: 'you had everything, and you chose to become the enemy of the faith that gave you everything.' What does the letter reveal about Anushirvan?",
+      "question_fa": "این فصل نامه‌ی پدر را خلاصه می‌کند: «همه چیز داشتی و انتخاب کردی دشمنِ آیینی شوی که همه چیز به تو داد.» نامه درباره‌ی انوشیروان چه آشکار می‌کند؟",
+      "question_tg": "Ин боб номаи падарро хулоса мекунад: «ҳама чиз доштӣ ва интихоб кардӣ душмани оине шавӣ ки ҳама чиз ба ту дод.» Нома дар бораи Ануширвон чӣ ошкор мекунад?",
+      "answers": [
+        "His complete indifference to his son's death",
+        "His plan to abolish the law of succession",
+        "His secret wish to have followed Christianity himself",
+        "The limit of his understanding — the great builder of empire could not comprehend why his own child would prefer conviction over inheritance"
+      ],
+      "answers_fa": [
+        "بی‌تفاوتیِ کاملش به مرگِ پسرش",
+        "نقشه‌اش برای لغوِ قانونِ جانشینی",
+        "آرزوی پنهانش برای پیرویِ خودش از مسیحیت",
+        "مرزِ فهمش را — سازنده‌ی بزرگِ امپراتوری نمی‌توانست بفهمد چرا فرزندِ خودش اعتقاد را بر میراث ترجیح می‌دهد"
+      ],
+      "answers_tg": [
+        "Бетафовутии комилашро ба марги писараш",
+        "Нақшаашро барои лағви қонуни ҷонишинӣ",
+        "Орзуи пинҳонашро барои пайравии худаш аз масеҳият",
+        "Марзи фаҳмашро — созандаи бузурги империя наметавонист бифаҳмад чаро фарзанди худаш эътиқодро бар мерос тарҷеҳ медиҳад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The letter holds grief, disappointment, and a particular coldness — the coldness of a man who measures everything by what he built. Anushirvan can administer an empire but cannot imagine valuing belief over inheritance. The letter is the just king's one documented failure of understanding.",
+      "explanation_fa": "نامه اندوه و سردی دارد — سردیِ مردی که همه چیز را با آنچه ساخته می‌سنجد و اعتقادِ پسرش را نمی‌فهمد.",
+      "explanation_tg": "Нома андӯҳ ва сардӣ дорад — сардии марде ки ҳама чизро бо он чи сохта месанҷад ва эътиқоди писарашро намефаҳмад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "nshz-h3",
+      "chapter_slug": "nushzad",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Nushzad chose his Christian mother's faith over his father's empire. What larger conflict does this choice dramatize within the Shahnameh?",
+      "question_fa": "نوش‌زاد دینِ مادرِ مسیحی‌اش را بر امپراتوریِ پدرش برگزید. این انتخاب چه کشمکشِ بزرگ‌تری را در شاهنامه به نمایش می‌گذارد؟",
+      "question_tg": "Нӯшзод дини модари масеҳияшро бар империяи падараш баргузид. Ин интихоб чӣ кашмакаши бузургтареро дар Шоҳнома ба намоиш мегузорад?",
+      "answers": [
+        "Personal conscience against inherited identity — whether a person is what they believe or what they were born into",
+        "The military rivalry between Iran and Byzantium",
+        "The struggle between the army and the priesthood",
+        "The competition between sons for the succession"
+      ],
+      "answers_fa": [
+        "وجدانِ شخصی در برابرِ هویتِ موروثی — این‌که آیا انسان همان است که باور دارد یا همان که در آن زاده شده",
+        "رقابتِ نظامیِ ایران و بیزانس",
+        "کشمکشِ ارتش و روحانیت",
+        "رقابتِ پسران بر سرِ جانشینی"
+      ],
+      "answers_tg": [
+        "Виҷдони шахсӣ дар баробари ҳувияти меросӣ — ин ки оё инсон ҳамон аст ки бовар дорад ё ҳамон ки дар он зода шуда",
+        "Рақобати низомии Эрон ва Бизантия",
+        "Кашмакаши лашкар ва рӯҳоният",
+        "Рақобати писарон бар сари ҷонишинӣ"
+      ],
+      "correct_answer": 0,
+      "explanation": "Nushzad embodies the question of whether identity is chosen or inherited. The empire says: you are your father's son, heir to throne and faith. Nushzad answers: I am what I believe. The Shahnameh, a poem about inheritance, takes this challenge seriously enough to mourn him.",
+      "explanation_fa": "نوش‌زاد پرسشِ هویت را تجسم می‌کند: انتخابی یا موروثی؟ امپراتوری می‌گوید پسرِ پدرت هستی؛ او می‌گوید همانم که باور دارم.",
+      "explanation_tg": "Нӯшзод пурсиши ҳувиятро таҷассум мекунад: интихобӣ ё меросӣ? Империя мегӯяд писари падарат ҳастӣ; ӯ мегӯяд ҳамонам ки бовар дорам.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "nshz-h4",
+      "chapter_slug": "nushzad",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Why does the king celebrated for justice crush his own son's rebellion without hesitation?",
+      "question_fa": "چرا شاهی که به عدالت ستوده می‌شود شورشِ پسرِ خودش را بی‌درنگ سرکوب می‌کند؟",
+      "question_tg": "Чаро шоҳе ки ба адолат ситоиш мешавад шӯриши писари худашро бедиранг саркӯб мекунад?",
+      "answers": [
+        "Because the priests forced his hand against his will",
+        "Because he feared Nushzad would be a better king",
+        "Because he never loved Nushzad",
+        "Because his justice is the maintenance of order, and order cannot make exceptions — not even for a son — without ceasing to be order"
+      ],
+      "answers_fa": [
+        "چون روحانیان بر خلافِ میلش مجبورش کردند",
+        "چون می‌ترسید نوش‌زاد شاهِ بهتری شود",
+        "چون هرگز نوش‌زاد را دوست نداشت",
+        "چون عدالتِ او حفظِ نظم است و نظم نمی‌تواند استثنا قائل شود — حتی برای یک پسر — بی‌آنکه از نظم بودن بیفتد"
+      ],
+      "answers_tg": [
+        "Зеро коҳинон бар хилофи майлаш маҷбураш карданд",
+        "Зеро метарсид Нӯшзод шоҳи беҳтаре шавад",
+        "Зеро ҳаргиз Нӯшзодро дӯст надошт",
+        "Зеро адолати ӯ ҳифзи тартиб аст ва тартиб наметавонад истисно қоил шавад — ҳатто барои як писар — бе он ки аз тартиб будан бияфтад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Anushirvan's justice is systemic: fixed rules applied without exception. The system's strength is exactly that it does not bend — and its cruelty is the same property. The grief in his letter shows the man; the army he sent shows the system. He could not be both father and exception-maker.",
+      "explanation_fa": "عدلِ انوشیروان نظام‌مند است: قواعدِ ثابت بدونِ استثنا. قدرتِ نظام همین خم‌نشدن است — و بی‌رحمی‌اش نیز همان.",
+      "explanation_tg": "Адли Ануширвон низомманд аст: қоидаҳои собит бе истисно. Қудрати низом ҳамин хамнашудан аст — ва бераҳмияш низ ҳамон.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "nshz-h5",
+      "chapter_slug": "nushzad",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Nushzad dies 'without having answered' his father's letter. Why does the Shahnameh preserve this detail?",
+      "question_fa": "نوش‌زاد «بی‌آنکه پاسخ داده باشد» به نامه‌ی پدرش می‌میرد. چرا شاهنامه این جزئیات را نگه می‌دارد؟",
+      "question_tg": "Нӯшзод «бе он ки посух дода бошад» ба номаи падараш мемирад. Чаро Шоҳнома ин ҷузъиётро нигоҳ медорад?",
+      "answers": [
+        "It proves Nushzad admitted his guilt by his silence",
+        "It shows the letter arrived too late to matter",
+        "The unanswered letter is the tragedy itself — the conversation that could have explained each side to the other never happened, and the poem refuses to invent it",
+        "It suggests Nushzad could not read"
+      ],
+      "answers_fa": [
+        "سکوتش اثباتِ اعترافِ او به گناه است",
+        "نشان می‌دهد نامه دیر رسید و اهمیتی نداشت",
+        "نامه‌ی بی‌پاسخ خودِ تراژدی است — گفت‌وگویی که می‌توانست هر طرف را به دیگری بفهماند هرگز رخ نداد و شعر از جعلِ آن سر باز می‌زند",
+        "اشاره می‌کند که نوش‌زاد سواد نداشت"
+      ],
+      "answers_tg": [
+        "Сукуташ исботи эътирофи ӯ ба гуноҳ аст",
+        "Нишон медиҳад нома дер расид ва аҳамияте надошт",
+        "Номаи бепосух худи фоҷиа аст — гуфтугӯе ки метавонист ҳар тарафро ба дигаре бифаҳмонад ҳаргиз рух надод ва шеър аз ҷаъли он сар бозмезанад",
+        "Ишора мекунад ки Нӯшзод савод надошт"
+      ],
+      "correct_answer": 2,
+      "explanation": "A lesser poem would write Nushzad's reply — repentance or defiance, either would resolve the story. The Shahnameh leaves the silence intact because the silence is true: father and son never understood each other, and death made the misunderstanding permanent.",
+      "explanation_fa": "شعری کم‌تر پاسخِ نوش‌زاد را می‌نوشت. شاهنامه سکوت را دست‌نخورده می‌گذارد چون سکوت حقیقت است.",
+      "explanation_tg": "Шеъре камтар посухи Нӯшзодро менавишт. Шоҳнома сукутро дастнахӯрда мегузорад зеро сукут ҳақиқат аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "nshz-h6",
+      "chapter_slug": "nushzad",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "How does Nushzad's rebellion differ from the other great rebellions of the Shahnameh, like Bahram Chubin's?",
+      "question_fa": "شورشِ نوش‌زاد با دیگر شورش‌های بزرگِ شاهنامه، مثلِ شورشِ بهرام چوبین، چه تفاوتی دارد؟",
+      "question_tg": "Шӯриши Нӯшзод бо дигар шӯришҳои бузурги Шоҳнома, мисли шӯриши Баҳром Чӯбин, чӣ тафовуте дорад?",
+      "answers": [
+        "It was the only rebellion that succeeded",
+        "It was planned for decades with foreign backing",
+        "It had no difference — all rebellions in the Shahnameh are identical",
+        "It was driven by faith and conviction rather than ambition for the crown — he rose for what he believed, not for what he could seize"
+      ],
+      "answers_fa": [
+        "تنها شورشی بود که پیروز شد",
+        "دهه‌ها با پشتیبانیِ خارجی برنامه‌ریزی شده بود",
+        "تفاوتی نداشت — همه‌ی شورش‌های شاهنامه یکسان‌اند",
+        "از ایمان و اعتقاد برمی‌خاست نه از جاه‌طلبی برای تاج — برای باورش برخاست، نه برای آنچه می‌توانست بگیرد"
+      ],
+      "answers_tg": [
+        "Танҳо шӯрише буд ки пирӯз шуд",
+        "Даҳсолаҳо бо пуштибонии хориҷӣ барномарезӣ шуда буд",
+        "Тафовуте надошт — ҳамаи шӯришҳои Шоҳнома яксонанд",
+        "Аз имон ва эътиқод бармехост на аз ҷоҳталабӣ барои тоҷ — барои бовараш бархост, на барои он чи метавонист бигирад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Bahram Chubin rose because he was insulted and because he believed he deserved the throne. Nushzad rose for a faith that could never sit comfortably on the Sasanian throne at all. His rebellion was conviction seeking room to exist — which is why the Shahnameh grieves rather than judges.",
+      "explanation_fa": "بهرام چوبین برای تاج برخاست؛ نوش‌زاد برای ایمانی که هرگز جایی بر تختِ ساسانی نداشت.",
+      "explanation_tg": "Баҳром Чӯбин барои тоҷ бархост; Нӯшзод барои имоне ки ҳаргиз ҷое бар тахти сосонӣ надошт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "nshz-h7",
+      "chapter_slug": "nushzad",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "What does the Nushzad episode reveal about Anushirvan's golden age?",
+      "question_fa": "ماجرای نوش‌زاد درباره‌ی عصرِ طلاییِ انوشیروان چه آشکار می‌کند؟",
+      "question_tg": "Моҷарои Нӯшзод дар бораи асри тиллоии Ануширвон чӣ ошкор мекунад?",
+      "answers": [
+        "The golden age ended immediately after Nushzad's death",
+        "The golden age was a complete fabrication of later poets",
+        "Anushirvan's reforms caused the rebellion directly",
+        "Even the ideal reign contains private tragedy — the cost of empire is paid inside the royal family too, not only on battlefields"
+      ],
+      "answers_fa": [
+        "عصرِ طلایی بلافاصله پس از مرگِ نوش‌زاد پایان یافت",
+        "عصرِ طلایی جعلِ کاملِ شاعرانِ بعدی بود",
+        "اصلاحاتِ انوشیروان مستقیماً باعثِ شورش شد",
+        "حتی سلطنتِ آرمانی هم تراژدیِ خصوصی دارد — هزینه‌ی امپراتوری درونِ خانواده‌ی شاهی هم پرداخت می‌شود، نه فقط در میدان‌های نبرد"
+      ],
+      "answers_tg": [
+        "Асри тиллоӣ билофосила пас аз марги Нӯшзод поён ёфт",
+        "Асри тиллоӣ ҷаъли комили шоирони баъдӣ буд",
+        "Ислоҳоти Ануширвон мустақиман боиси шӯриш шуд",
+        "Ҳатто салтанати ормонӣ ҳам фоҷиаи хусусӣ дорад — арзиши империя даруни хонаводаи шоҳӣ ҳам пардохт мешавад, на танҳо дар майдонҳои набард"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh places Nushzad's story inside the reign it praises most, deliberately. The lesson: there is no reign so just that it costs nothing. The great king's account books balance for the empire — and run a permanent loss inside his own house.",
+      "explanation_fa": "شاهنامه داستانِ نوش‌زاد را عمداً درونِ ستوده‌ترین سلطنت می‌گذارد: هیچ سلطنتی آن‌قدر عادل نیست که هزینه‌ای نداشته باشد.",
+      "explanation_tg": "Шоҳнома достони Нӯшзодро амдан даруни ситудатарин салтанат мегузорад: ҳеҷ салтанате он қадар одил нест ки арзише надошта бошад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "nshz-h8",
+      "chapter_slug": "nushzad",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Anushirvan sent words instead of soldiers to his dying son. What does this choice of instrument mean?",
+      "question_fa": "انوشیروان به جای سرباز برای پسرِ در حالِ مرگش واژه فرستاد. این انتخابِ ابزار چه معنایی دارد؟",
+      "question_tg": "Ануширвон ба ҷои сарбоз барои писари дар ҳоли маргаш вожа фиристод. Ин интихоби абзор чӣ маъное дорад?",
+      "answers": [
+        "He wanted a written record for the imperial archive",
+        "Language is the most personal form of power — the father replaced the executioner, delivering judgment that only Nushzad could receive, as son and not as rebel",
+        "Words were cheaper than another military expedition",
+        "He was forbidden by law from visiting a rebel"
+      ],
+      "answers_fa": [
+        "سندی مکتوب برای بایگانیِ امپراتوری می‌خواست",
+        "زبان شخصی‌ترین شکلِ قدرت است — پدر جای جلاد را گرفت و حکمی فرستاد که فقط نوش‌زاد می‌توانست دریافتش کند، به عنوانِ پسر نه شورشی",
+        "واژه‌ها از لشکرکشیِ دیگری ارزان‌تر بودند",
+        "قانون او را از دیدارِ یک شورشی منع می‌کرد"
+      ],
+      "answers_tg": [
+        "Санади мактуб барои бойгонии империя мехост",
+        "Забон шахситарин шакли қудрат аст — падар ҷои ҷаллодро гирифт ва ҳукме фиристод ки танҳо Нӯшзод метавонист дарёфташ кунад, ба унвони писар на шӯришӣ",
+        "Вожаҳо аз лашкаркашии дигаре арзонтар буданд",
+        "Қонун ӯро аз дидори як шӯришӣ манъ мекард"
+      ],
+      "correct_answer": 1,
+      "explanation": "The army had already settled the political question; the letter addressed the personal one. By sending words, Anushirvan stepped out of the role of king and into the role of father — and the judgment of a father wounds deeper than any executioner. The Shahnameh knows language is the weapon that reaches where swords cannot.",
+      "explanation_fa": "ارتش مسئله‌ی سیاسی را حل کرده بود؛ نامه به مسئله‌ی شخصی پرداخت. واژه جایی می‌رسد که شمشیر نمی‌رسد.",
+      "explanation_tg": "Лашкар масъалаи сиёсиро ҳал карда буд; нома ба масъалаи шахсӣ пардохт. Вожа ҷое мерасад ки шамшер намерасад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

@@ -274,13 +274,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 50,
-        "label_en": "Reach LVL 50",
+        "target": 4,
+        "label_en": "Upgrade Jamshid to Lv.4",
         "label_fa": "رسیدن به سطحِ ۵۰",
         "label_tg": "Расидан ба сатҳи 50",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
-        "hint_tg": "Зарба занед."
+        "hint_tg": "Зарба занед.",
+        "hero_id": "jamshid"
       },
       {
         "id": "quiz",

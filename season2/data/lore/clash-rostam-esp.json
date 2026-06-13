@@ -208,13 +208,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 92,
-        "label_en": "Reach LVL 92",
+        "target": 6,
+        "label_en": "Upgrade Div E Sepid to Lv.6",
         "label_fa": "رسیدن به سطحِ ۹۲",
         "label_tg": "Расидан ба сатҳи 92",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنند.",
-        "hint_tg": "Зарба занед."
+        "hint_tg": "Зарба занед.",
+        "hero_id": "div-e-sepid"
       },
       {
         "id": "quiz",

@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "hrm-e1",
+      "id": "hrmz-e1",
       "chapter_slug": "hormuz",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "How did Hormuz IV's reign end?",
-      "question_fa": "حکومت هرمز چهارم چگونه پایان یافت؟",
-      "question_tg": "Ҳукмронии Ҳурмузи Чаҳорум чӣ тавр анҷом ёфт?",
+      "question": "Whose son was Hormuz?",
+      "question_fa": "هرمز پسرِ که بود؟",
+      "question_tg": "Ҳурмуз писари кӣ буд?",
       "answers": [
-        "His brothers-in-law Bindoe and Vistahm arrested him, had him blinded, and he was later killed in prison",
-        "He was killed in battle against Bahram Chubin's rebel army",
-        "He abdicated voluntarily and retired to a monastery in the western provinces",
-        "He was poisoned at a feast by the Zoroastrian high priest"
+        "Anushirvan the Just — he inherited the greatest throne in the world from him",
+        "Bahram Gur — he inherited the love of hunting",
+        "Yazdegerd the Sinner — he inherited the priests' hatred",
+        "Khosrow Parviz — he inherited a bankrupt empire"
       ],
       "answers_fa": [
-        "برادرشوهرانش بندوی و ویستهم او را دستگیر کردند، کورش کردند و بعداً در زندان کشته شد",
-        "در نبرد با ارتش شورشی بهرام چوبین کشته شد",
-        "داوطلبانه کنار گذاشت و به یک صومعه در استان‌های غربی رفت",
-        "در یک ضیافت توسط کاهن اعظم زرتشتی مسموم شد"
+        "انوشیروانِ دادگر — بزرگ‌ترین تختِ جهان را از او به ارث برد",
+        "بهرام گور — عشقِ شکار را به ارث برد",
+        "یزدگردِ گناهکار — نفرتِ روحانیان را به ارث برد",
+        "خسرو پرویز — امپراتوری‌ای ورشکسته را به ارث برد"
       ],
       "answers_tg": [
-        "Шавҳаробарадарҳояш Биндуй ва Виставҳм ӯро дастгир карданд, кӯр карданд ва баъдтар дар зиндон кушта шуд",
-        "Дар набард бо артиши шӯришгарони Баҳроми Чӯбин кушта шуд",
-        "Даваталабона канор гузошт ва ба хонақоҳе дар устонҳои ғарбӣ рафт",
-        "Дар зиёфате аз ҷониби коҳини аъзами Зардуштӣ заҳролуд шуд"
+        "Ануширвони Додгар — бузургтарин тахти ҷаҳонро аз ӯ ба мерос бурд",
+        "Баҳроми Гӯр — ишқи шикорро ба мерос бурд",
+        "Яздагерди Гунаҳкор — нафрати коҳинонро ба мерос бурд",
+        "Хусрав Парвиз — империяи варшикастаро ба мерос бурд"
       ],
       "correct_answer": 0,
-      "explanation": "Hormuz's brothers-in-law Bindoe and Vistahm, watching the empire fracture around them, decided the king himself was the problem. They arrested him, blinded him — the traditional Sasanian method of disqualifying a king without killing him immediately — and he was later killed in his prison.",
-      "explanation_fa": "برادرشوهران هرمز بندوی و ویستهم که می‌دیدند امپراتوری اطرافشان در حال تکه‌تکه شدن است تصمیم گرفتند خود شاه مشکل است. او را دستگیر کردند، کورش کردند — روش سنتی ساسانی برای نالایق کردن یک شاه بدون کشتن فوری او — و بعداً در زندانش کشته شد.",
-      "explanation_tg": "Шавҳаробарадарони Ҳурмуз Биндуй ва Виставҳм ки медиданд империя атрофашон дар ҳоли пора шудан аст тасмим гирифтанд худи подшоҳ мушкил аст. Ӯро дастгир карданд, кӯр карданд ва баъдтар дар зиндонаш кушта шуд.",
+      "explanation": "Hormuz was the son of Khosrow Anushirvan. He inherited the empire at its peak — intact, just, and beloved — and had none of the tools to hold it.",
+      "explanation_fa": "هرمز پسرِ انوشیروان بود و امپراتوری را در اوج به ارث برد — و هیچ ابزاری برای نگه داشتنش نداشت.",
+      "explanation_tg": "Ҳурмуз писари Ануширвон буд ва империяро дар авҷ ба мерос бурд — ва ҳеҷ абзоре барои нигоҳ доштанаш надошт.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "hrm-m1",
+      "id": "hrmz-e2",
+      "chapter_slug": "hormuz",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What insult did Hormuz send to the great general Bahram Chubin?",
+      "question_fa": "هرمز چه توهینی برای سردارِ بزرگ بهرام چوبین فرستاد؟",
+      "question_tg": "Ҳурмуз чӣ таҳқире барои сардори бузург Баҳром Чӯбин фиристод?",
+      "answers": [
+        "A letter stripping him of his name",
+        "A donkey saddled with royal silk",
+        "A distaff and a set of women's clothes — an insult so precise it could only have been designed to destroy",
+        "A broken sword and an empty scabbard"
+      ],
+      "answers_fa": [
+        "نامه‌ای که نامش را از او می‌گرفت",
+        "الاغی با زینِ ابریشمِ شاهی",
+        "دوک و دستی لباسِ زنانه — توهینی چنان دقیق که فقط می‌توانست برای نابودی طراحی شده باشد",
+        "شمشیری شکسته و نیامی خالی"
+      ],
+      "answers_tg": [
+        "Номае ки номашро аз ӯ мегирифт",
+        "Харе бо зини абрешими шоҳӣ",
+        "Дук ва даста либоси занона — таҳқире чунон дақиқ ки танҳо метавонист барои нобудӣ тарроҳӣ шуда бошад",
+        "Шамшери шикаста ва ниёми холӣ"
+      ],
+      "correct_answer": 2,
+      "explanation": "Hormuz sent Bahram Chubin a distaff and women's clothes — calling the empire's greatest general a spinning woman. The insult drove Bahram to open rebellion, which Hormuz could not stop.",
+      "explanation_fa": "هرمز برای بهرام چوبین دوک و لباسِ زنانه فرستاد — توهینی که او را به شورشِ آشکار راند.",
+      "explanation_tg": "Ҳурмуз барои Баҳром Чӯбин дук ва либоси занона фиристод — таҳқире ки ӯро ба шӯриши ошкор ронд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "hrmz-e3",
+      "chapter_slug": "hormuz",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How was Hormuz removed from the throne?",
+      "question_fa": "هرمز چگونه از تخت برکنار شد؟",
+      "question_tg": "Ҳурмуз чӣ гуна аз тахт барканор шуд?",
+      "answers": [
+        "His brothers-in-law Bindoe and Vistahm arrested him and had him blinded before the nobles",
+        "He was killed in battle against Bahram Chubin",
+        "He abdicated voluntarily in favor of his son",
+        "The Byzantine emperor deposed him by treaty"
+      ],
+      "answers_fa": [
+        "برادرزن‌هایش بندوی و بسطام دستگیرش کردند و در برابرِ اشراف کورش کردند",
+        "در نبرد با بهرام چوبین کشته شد",
+        "داوطلبانه به نفعِ پسرش کناره گرفت",
+        "امپراتورِ بیزانس با پیمان برکنارش کرد"
+      ],
+      "answers_tg": [
+        "Бародарзанҳояш Биндӯй ва Бистом дастгираш карданд ва дар баробари ашроф кӯраш карданд",
+        "Дар набард бо Баҳром Чӯбин кушта шуд",
+        "Довталабона ба нафъи писараш канора гирифт",
+        "Императори Бизантия бо паймон барканораш кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "The end came from inside the palace: his brothers-in-law Bindoe and Vistahm arrested him, led him before the nobles, and had him blinded — the traditional Sasanian way of disqualifying a king without immediately killing him.",
+      "explanation_fa": "پایان از درونِ کاخ آمد: بندوی و بسطام دستگیرش کردند و کورش کردند.",
+      "explanation_tg": "Поён аз даруни кох омад: Биндӯй ва Бистом дастгираш карданд ва кӯраш карданд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "hrmz-m1",
       "chapter_slug": "hormuz",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "The Shahnameh presents Hormuz IV as a king who destroyed his empire through one specific failure. What was it?",
-      "question_fa": "شاهنامه هرمز چهارم را به عنوان شاهی نشان می‌دهد که از طریق یک شکست مشخص امپراتوریش را نابود کرد. آن چه بود؟",
-      "question_tg": "Шоҳнома Ҳурмузи Чаҳорумро ҳамчун подшоҳе нишон медиҳад ки тавассути як шикасти мушаххас империяашро нобуд кард. Он чӣ буд?",
+      "question": "Why did Hormuz make enemies faster than any other kind of king, according to the chapter?",
+      "question_fa": "طبقِ این فصل، چرا هرمز سریع‌تر از هر نوع شاهِ دیگری دشمن می‌ساخت؟",
+      "question_tg": "Тибқи ин боб, чаро Ҳурмуз сареътар аз ҳар навъ шоҳи дигаре душман месохт?",
       "answers": [
-        "He governed through suspicion and fear rather than earned loyalty, turning potential allies into enemies",
-        "He spent all the treasury Anushirvan had built on luxury and personal entertainments",
-        "He refused to fight in battle himself, making his generals doubt his commitment",
-        "He tried to convert Iran to a new religion, alienating both priests and nobles simultaneously"
+        "He was too just and the nobles hated justice",
+        "He was suspicious, reactive, and afraid — and afraid kings make enemies faster than any other kind",
+        "He was too generous and emptied the treasury",
+        "He was a foreign usurper with no legitimacy"
       ],
       "answers_fa": [
-        "از طریق بدگمانی و ترس به جای وفاداری کسب‌شده حکومت کرد و متحدان بالقوه را به دشمنان تبدیل کرد",
-        "تمام خزانه‌ای که انوشیروان ساخته بود را برای تجمل و سرگرمی‌های شخصی خرج کرد",
-        "از جنگیدن شخصاً امتناع کرد و سردارانش را نسبت به تعهدش به تردید انداخت",
-        "تلاش کرد ایران را به یک دین جدید تبدیل کند که هم روحانیون و هم اشراف را همزمان بیگانه کرد"
+        "بیش از حد عادل بود و اشراف از عدالت بیزار بودند",
+        "بدگمان، واکنشی و ترسان بود — و شاهانِ ترسان سریع‌تر از هر نوعِ دیگری دشمن می‌سازند",
+        "بیش از حد بخشنده بود و خزانه را خالی کرد",
+        "غاصبی بیگانه بدونِ مشروعیت بود"
       ],
       "answers_tg": [
-        "Тавассути бадгумонӣ ва тарс ба ҷои вафодории касбшуда ҳукумат кард ва муттаҳидони эҳтимолиро ба душманон табдил кард",
-        "Ҳамаи хазинае ки Анӯшервон сохта буд ба исроф ва тафриҳоти шахсӣ сарф кард",
-        "Аз ҷангидани шахсӣ имтиноъ кард ва сарлашкарони худро нисбат ба ӯҳдадориаш ба тардид андохт",
-        "Кӯшид Эронро ба дини ҷадид табдил кунад ки ҳам рӯҳониён ва ҳам ашрофро ҳамзамон бегона кард"
+        "Беш аз ҳад одил буд ва ашроф аз адолат безор буданд",
+        "Бадгумон, вокунишӣ ва тарсон буд — ва шоҳони тарсон сареътар аз ҳар навъи дигаре душман месозанд",
+        "Беш аз ҳад бахшанда буд ва хазинаро холӣ кард",
+        "Ғосиби бегона бе машруият буд"
       ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh presents Hormuz's failure as structural: he governed through paralytic fear rather than earned authority. He turned nobles into enemies with harsh punishments for real or imagined offenses. The distaff sent to Bahram Chubin was the symptom, not the disease. Suspicion substituted for judgment — and everyone paid for it.",
-      "explanation_fa": "شاهنامه شکست هرمز را ساختاری نشان می‌دهد: از طریق ترس فلج‌کننده به جای اقتدار کسب‌شده حکومت کرد. اشراف را با مجازات‌های سخت برای جرائم واقعی یا خیالی به دشمنان تبدیل کرد. دوک فرستاده شده به بهرام چوبین علامت بود نه بیماری. بدگمانی جای قضاوت را گرفت — و همه برایش بها پرداختند.",
-      "explanation_tg": "Шоҳнома шикасти Ҳурмузро сохторӣ нишон медиҳад: тавассути тарси фалаҷкунанда ба ҷои салоҳияти касбшуда ҳукумат кард. Ашрофро бо ҷазоҳои сахт барои ҷиноятҳои воқеӣ ё хаёлӣ ба душманон табдил кард.",
+      "correct_answer": 1,
+      "explanation": "Anushirvan was just, measured, beloved; Hormuz was suspicious, reactive, afraid. Fear treats every strong servant as a threat — and so manufactures the very enemies it dreads.",
+      "explanation_fa": "هرمز بدگمان و ترسان بود؛ ترس هر خدمتگزارِ نیرومند را تهدید می‌بیند و دشمنانی را که از آن‌ها می‌هراسد خود می‌سازد.",
+      "explanation_tg": "Ҳурмуз бадгумон ва тарсон буд; тарс ҳар хидматгузори нерӯмандро таҳдид мебинад ва душманонеро ки аз онҳо меҳаросад худ месозад.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "hrm-e2",
+      "id": "hrmz-m2",
       "chapter_slug": "hormuz",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "What happened to Hormuz's son Khosrow when Bindoe and Vistahm seized power?",
-      "question_fa": "وقتی بندوی و ویستهم قدرت را به دست گرفتند چه اتفاقی برای پسر هرمز خسرو افتاد؟",
-      "question_tg": "Вақте Биндуй ва Виставҳм қудратро ба даст гирифтанд ба писари Ҳурмуз Хусрав чӣ рӯй дод?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "In what order did Hormuz turn on the pillars of his father's empire?",
+      "question_fa": "هرمز به چه ترتیبی به ستون‌های امپراتوریِ پدرش پشت کرد؟",
+      "question_tg": "Ҳурмуз ба чӣ тартибе ба сутунҳои империяи падараш пушт кард?",
       "answers": [
-        "He was warned in time and fled the capital before he could be captured",
-        "He was imprisoned alongside his father and remained captive for years",
-        "He was killed in the same coup that blinded his father",
-        "He submitted voluntarily and was kept under house arrest at the palace"
+        "Only the clergy — he protected nobles and army",
+        "He never attacked anyone — his enemies invented the charges",
+        "First the nobles, then the Zoroastrian clergy, then the military commanders who had served Iran for decades",
+        "First the army, then the peasants, then the merchants"
       ],
       "answers_fa": [
-        "به موقع هشدار داده شد و قبل از اینکه گرفتار شود از پایتخت گریخت",
-        "همراه با پدرش زندانی شد و سال‌ها اسیر ماند",
-        "در همان کودتایی که پدرش را کور کرد کشته شد",
-        "داوطلبانه تسلیم شد و تحت حبس خانگی در کاخ نگه داشته شد"
+        "فقط روحانیت — از اشراف و ارتش محافظت کرد",
+        "هرگز به کسی حمله نکرد — دشمنانش اتهام‌ها را ساختند",
+        "اول اشراف، سپس روحانیتِ زرتشتی، سپس فرماندهانِ نظامی که دهه‌ها به ایران خدمت کرده بودند",
+        "اول ارتش، سپس دهقانان، سپس بازرگانان"
       ],
       "answers_tg": [
-        "Ба мӯҳлат огоҳ шуд ва пеш аз он ки асир шавад аз пойтахт гурехт",
-        "Ҳамроҳ бо падараш зиндонӣ шуд ва солҳо асир монд",
-        "Дар ҳамон кудатое ки падарашро кӯр кард кушта шуд",
-        "Даваталабона таслим шуд ва таҳти ҳабси хонагӣ дар қаср нигоҳ дошта шуд"
+        "Танҳо рӯҳоният — аз ашроф ва лашкар муҳофизат кард",
+        "Ҳаргиз ба касе ҳамла накард — душманонаш иттиҳомҳоро сохтанд",
+        "Аввал ашроф, сипас рӯҳонияти зардуштӣ, сипас фармондеҳони низомӣ ки даҳсолаҳо ба Эрон хидмат карда буданд",
+        "Аввал лашкар, сипас деҳқонон, сипас тоҷирон"
+      ],
+      "correct_answer": 2,
+      "explanation": "He turned on the nobles first, then the clergy, then the commanders. One by one he converted every pillar of support into an enemy — dismantling what he had been given, one broken relationship at a time.",
+      "explanation_fa": "اول اشراف، بعد روحانیت، بعد فرماندهان — یک به یک هر ستونِ پشتیبانی را به دشمن تبدیل کرد.",
+      "explanation_tg": "Аввал ашроф, баъд рӯҳоният, баъд фармондеҳон — як ба як ҳар сутуни пуштибониро ба душман табдил кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "hrmz-m3",
+      "chapter_slug": "hormuz",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Why could Hormuz not stop Bahram Chubin's rebellion once it began?",
+      "question_fa": "چرا هرمز نتوانست شورشِ بهرام چوبین را پس از آغازش متوقف کند؟",
+      "question_tg": "Чаро Ҳурмуз натавонист шӯриши Баҳром Чӯбинро пас аз оғозаш мутаваққиф кунад?",
+      "answers": [
+        "He had only the title of king, not his father's authority — the kind built over years of actual justice",
+        "The priests declared the rebellion holy",
+        "His army had been destroyed by the Turks",
+        "Bahram Chubin had Byzantine backing from the start"
+      ],
+      "answers_fa": [
+        "فقط عنوانِ شاهی را داشت، نه اقتدارِ پدرش را — اقتداری که با سال‌ها عدالتِ واقعی ساخته شده بود",
+        "روحانیان شورش را مقدس اعلام کردند",
+        "ارتشش به دستِ ترکان نابود شده بود",
+        "بهرام چوبین از آغاز پشتیبانیِ بیزانس را داشت"
+      ],
+      "answers_tg": [
+        "Танҳо унвони шоҳиро дошт, на иқтидори падарашро — иқтидоре ки бо солҳо адолати воқеӣ сохта шуда буд",
+        "Коҳинон шӯришро муқаддас эълон карданд",
+        "Лашкараш ба дасти Туркон нобуд шуда буд",
+        "Баҳром Чӯбин аз оғоз пуштибонии Бизантияро дошт"
       ],
       "correct_answer": 0,
-      "explanation": "Khosrow was warned in time and escaped from the capital. He would eventually reach the Byzantine Emperor Maurice, return with Roman legions, defeat Bahram Chubin, and reclaim the throne as Khosrow Parviz — beginning the last great flowering of Sasanian power.",
-      "explanation_fa": "خسرو به موقع هشدار داده شد و از پایتخت فرار کرد. در نهایت به امپراتور بیزانسی موریس رسید، با لشکریان رومی بازگشت، بهرام چوبین را شکست داد و تخت را به عنوان خسرو پرویز بازپس گرفت — آغاز آخرین شکوفایی بزرگ قدرت ساسانی.",
-      "explanation_tg": "Хусрав ба мӯҳлат огоҳ шуд ва аз пойтахт гурехт. Дар охир ба императори Визонтии Маврикий расид, бо лашкариёни Румӣ баргашт, Баҳроми Чӯбинро шикаст дод ва тахтро ҳамчун Хусрави Парвез бозпас гирифт.",
+      "explanation": "Authority is not the crown; it is what years of justice deposit in people's trust. Anushirvan had earned it; Hormuz only wore the title. When the test came, the title alone commanded no one.",
+      "explanation_fa": "اقتدار تاج نیست؛ حاصلِ سال‌ها عدالت در اعتمادِ مردم است. هرمز فقط عنوان را داشت.",
+      "explanation_tg": "Иқтидор тоҷ нест; ҳосили солҳо адолат дар эътимоди мардум аст. Ҳурмуз танҳо унвонро дошт.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "hrmz-m4",
+      "chapter_slug": "hormuz",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What happened to Hormuz's son Khosrow when the palace coup began?",
+      "question_fa": "وقتی کودتای کاخ آغاز شد، چه بر سرِ خسرو پسرِ هرمز آمد؟",
+      "question_tg": "Вақте кудатои кох оғоз шуд, чӣ бар сари Хусрав писари Ҳурмуз омад?",
+      "answers": [
+        "Warned in time, he fled the capital before the same hands could reach him",
+        "He was already a hostage in Byzantium",
+        "He was blinded alongside his father",
+        "He led the coup against his father personally"
+      ],
+      "answers_fa": [
+        "به‌موقع هشدار گرفت و پیش از آن‌که همان دست‌ها به او برسند از پایتخت گریخت",
+        "از قبل در بیزانس گروگان بود",
+        "در کنارِ پدرش کور شد",
+        "شخصاً کودتا علیه پدرش را رهبری کرد"
+      ],
+      "answers_tg": [
+        "Баваққт ҳушдор гирифт ва пеш аз он ки ҳамон дастҳо ба ӯ бирасанд аз пойтахт гурехт",
+        "Аз қабл дар Бизантия гаравгон буд",
+        "Дар канори падараш кӯр шуд",
+        "Шахсан кудато алайҳи падарашро раҳбарӣ кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Khosrow — the future Khosrow Parviz — was warned in time and fled the capital before Bindoe and Vistahm's hands could reach him. His reign would begin as a fugitive's.",
+      "explanation_fa": "خسرو به‌موقع هشدار گرفت و از پایتخت گریخت — سلطنتش به‌عنوانِ یک فراری آغاز می‌شد.",
+      "explanation_tg": "Хусрав баваққт ҳушдор гирифт ва аз пойтахт гурехт — салтанаташ ба унвони як фирорӣ оғоз мешуд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "hrmz-m5",
+      "chapter_slug": "hormuz",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "How did Hormuz die?",
+      "question_fa": "هرمز چگونه مُرد؟",
+      "question_tg": "Ҳурмуз чӣ гуна мурд?",
+      "answers": [
+        "He was executed publicly by Bahram Chubin",
+        "He died of old age in exile",
+        "He took poison rather than live blind",
+        "He was killed in his prison — by whose order, the sources disagree"
+      ],
+      "answers_fa": [
+        "علناً به دستِ بهرام چوبین اعدام شد",
+        "در تبعید به مرگِ طبیعی مُرد",
+        "به جای زندگی در کوری زهر خورد",
+        "در زندانش کشته شد — به دستورِ چه کسی، منابع اختلاف دارند"
+      ],
+      "answers_tg": [
+        "Ошкоро ба дасти Баҳром Чӯбин қатл шуд",
+        "Дар бадарға ба марги табиӣ мурд",
+        "Ба ҷои зиндагӣ дар кӯрӣ заҳр хӯрд",
+        "Дар зиндонаш кушта шуд — ба дастури кӣ, манбаъҳо ихтилоф доранд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Hormuz did not survive long after his blinding. He was killed in prison, and the sources disagree about who gave the order — a fittingly murky end for a reign that dissolved into factions.",
+      "explanation_fa": "هرمز در زندان کشته شد و منابع درباره‌ی دستوردهنده اختلاف دارند — پایانی تیره برای سلطنتی تیره.",
+      "explanation_tg": "Ҳурмуз дар зиндон кушта шуд ва манбаъҳо дар бораи дастурдиҳанда ихтилоф доранд — поёне тира барои салтанате тира.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "hrmz-h1",
+      "chapter_slug": "hormuz",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Why was blinding, rather than execution, the method used against Hormuz?",
+      "question_fa": "چرا کور کردن، و نه اعدام، روشِ به‌کاررفته علیه هرمز بود؟",
+      "question_tg": "Чаро кӯр кардан, ва на қатл, равиши бакоррафта алайҳи Ҳурмуз буд?",
+      "answers": [
+        "The conspirators lacked the courage to kill him outright",
+        "It was the traditional Sasanian method of disqualifying a king without killing him — a blemished man could not wear the crown",
+        "Blinding was considered more merciful by the priests",
+        "Execution required the army's approval, which they lacked"
+      ],
+      "answers_fa": [
+        "توطئه‌گران جرئتِ کشتنِ مستقیمش را نداشتند",
+        "روشِ سنتیِ ساسانی برای سلبِ صلاحیتِ شاه بدونِ کشتنش بود — مردِ معیوب نمی‌توانست تاج بر سر بگذارد",
+        "روحانیان کور کردن را بخشاینده‌تر می‌دانستند",
+        "اعدام به تأییدِ ارتش نیاز داشت که نداشتند"
+      ],
+      "answers_tg": [
+        "Тавтиагарон ҷуръати куштани мустақимашро надоштанд",
+        "Равиши суннатии сосонӣ барои салби салоҳияти шоҳ бе куштанаш буд — марди маъюб наметавонист тоҷ бар сар гузорад",
+        "Коҳинон кӯр карданро бахшояндатар медонистанд",
+        "Қатл ба таъйиди лашкар ниёз дошт ки надоштанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Sasanian kingship required physical wholeness: a blinded man was permanently disqualified without the killers having to bear the guilt of regicide — at least not immediately. The method itself shows how legalistic even the destruction of a king had become.",
+      "explanation_fa": "سلطنتِ ساسانی به سلامتِ جسمی نیاز داشت: مردِ کورشده برای همیشه سلبِ صلاحیت می‌شد بی‌آنکه قاتلان فوراً گناهِ شاه‌کشی را بر دوش بگیرند.",
+      "explanation_tg": "Салтанати сосонӣ ба саломатии ҷисмӣ ниёз дошт: марди кӯршуда барои ҳамеша салби салоҳият мешуд бе он ки қотилон фавран гуноҳи шоҳкуширо бар дӯш гиранд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hrmz-h2",
+      "chapter_slug": "hormuz",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The chapter calls the distaff insult 'so precise it could only have been designed to destroy.' What made it so destructive?",
+      "question_fa": "این فصل توهینِ دوک را «چنان دقیق که فقط می‌توانست برای نابودی طراحی شده باشد» می‌نامد. چه چیزی آن را چنین ویرانگر کرد؟",
+      "question_tg": "Ин боб таҳқири дукро «чунон дақиқ ки танҳо метавонист барои нобудӣ тарроҳӣ шуда бошад» меномад. Чӣ чизе онро чунин вайронгар кард?",
+      "answers": [
+        "It struck exactly at a warrior's honor in a culture where honor was identity — leaving Bahram only the choice between humiliation and rebellion",
+        "It was written in Greek, the enemy's language",
+        "It revealed a state secret about Bahram's origins",
+        "It cost the treasury an enormous sum to deliver"
+      ],
+      "answers_fa": [
+        "دقیقاً به شرفِ یک جنگجو زد، در فرهنگی که شرف هویت بود — و برای بهرام فقط انتخابِ میانِ تحقیر و شورش را گذاشت",
+        "به یونانی، زبانِ دشمن، نوشته شده بود",
+        "رازی دولتی درباره‌ی اصل‌ونسبِ بهرام را فاش کرد",
+        "رساندنش هزینه‌ی هنگفتی برای خزانه داشت"
+      ],
+      "answers_tg": [
+        "Дақиқан ба шарафи як ҷангҷӯ зад, дар фарҳанге ки шараф ҳувият буд — ва барои Баҳром танҳо интихоби байни таҳқир ва шӯришро гузошт",
+        "Ба юнонӣ, забони душман, навишта шуда буд",
+        "Розе давлатӣ дар бораи аслу насаби Баҳром фош кард",
+        "Расонданаш харҷи ҳангуфте барои хазина дошт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Calling the empire's greatest general a spinning woman was not anger — it was design. In an honor culture, such an insult leaves no neutral exit: accept it and cease to exist as a warrior, or rebel. Hormuz engineered the rebellion he most feared.",
+      "explanation_fa": "خواندنِ بزرگ‌ترین سردار به نامِ زنِ ریسنده خشم نبود — طراحی بود. در فرهنگِ شرف، چنین توهینی راهِ خروجِ بی‌طرف نمی‌گذارد.",
+      "explanation_tg": "Хондани бузургтарин сардор ба номи зани ресанда хашм набуд — тарроҳӣ буд. Дар фарҳанги шараф, чунин таҳқире роҳи хурӯҷи бетараф намегузорад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hrmz-h3",
+      "chapter_slug": "hormuz",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "What does the contrast between Anushirvan and Hormuz teach about the nature of royal authority?",
+      "question_fa": "تضادِ میانِ انوشیروان و هرمز درباره‌ی سرشتِ اقتدارِ شاهی چه می‌آموزد؟",
+      "question_tg": "Тазоди байни Ануширвон ва Ҳурмуз дар бораи сиришти иқтидори шоҳӣ чӣ меомӯзад?",
+      "answers": [
+        "Authority belongs to whoever the priests endorse",
+        "Authority is purely hereditary and Hormuz simply had bad luck",
+        "Authority comes only from military victory",
+        "Authority must be earned through years of actual justice and cannot be inherited — the title passes to an heir, the authority does not"
+      ],
+      "answers_fa": [
+        "اقتدار از آنِ کسی است که روحانیان تأییدش کنند",
+        "اقتدار صرفاً موروثی است و هرمز فقط بدشانس بود",
+        "اقتدار فقط از پیروزیِ نظامی می‌آید",
+        "اقتدار باید با سال‌ها عدالتِ واقعی کسب شود و قابلِ ارث نیست — عنوان به وارث می‌رسد، اقتدار نه"
+      ],
+      "answers_tg": [
+        "Иқтидор аз они касест ки коҳинон таъйидаш кунанд",
+        "Иқтидор сирфан меросист ва Ҳурмуз танҳо бадшанс буд",
+        "Иқтидор танҳо аз пирӯзии низомӣ меояд",
+        "Иқтидор бояд бо солҳо адолати воқеӣ касб шавад ва қобили мерос нест — унвон ба ворис мерасад, иқтидор на"
+      ],
+      "correct_answer": 3,
+      "explanation": "Hormuz received everything transferable: throne, treasury, army, borders. What he could not receive was the trust his father had earned through decades of being actually just. The Shahnameh's lesson is structural: titles are inherited, authority is built — by each king, from nothing.",
+      "explanation_fa": "هرمز هر چیزِ قابل‌انتقال را گرفت؛ آنچه نتوانست بگیرد اعتمادی بود که پدرش با دهه‌ها عدالتِ واقعی کسب کرده بود.",
+      "explanation_tg": "Ҳурмуз ҳар чизи қобили интиқолро гирифт; он чи натавонист бигирад эътимоде буд ки падараш бо даҳсолаҳо адолати воқеӣ касб карда буд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hrmz-h4",
+      "chapter_slug": "hormuz",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The chapter says Hormuz 'could not trust anyone and therefore gave everyone a reason to betray him.' What political mechanism is being described?",
+      "question_fa": "این فصل می‌گوید هرمز «نمی‌توانست به کسی اعتماد کند و بنابراین به همه دلیلی برای خیانت داد.» چه سازوکارِ سیاسی‌ای توصیف می‌شود؟",
+      "question_tg": "Ин боб мегӯяд Ҳурмуз «наметавонист ба касе эътимод кунад ва бинобар ин ба ҳама далеле барои хиёнат дод.» Чӣ созукори сиёсие тавсиф мешавад?",
+      "answers": [
+        "A foreign conspiracy that no king could have survived",
+        "Simple bad luck in choosing advisors",
+        "The self-fulfilling prophecy of distrust — treating loyal servants as traitors eventually makes treason their only rational option",
+        "The inevitability of decline after any great reign"
+      ],
+      "answers_fa": [
+        "توطئه‌ای خارجی که هیچ شاهی از آن جان به در نمی‌برد",
+        "صرفاً بدشانسی در انتخابِ مشاوران",
+        "پیشگوییِ خودمحقق‌شونده‌ی بی‌اعتمادی — رفتار با خدمتگزارانِ وفادار به‌مثابهِ خائن، سرانجام خیانت را تنها گزینه‌ی عقلانی‌شان می‌کند",
+        "اجتناب‌ناپذیریِ افول پس از هر سلطنتِ بزرگ"
+      ],
+      "answers_tg": [
+        "Тавтиаи хориҷӣ ки ҳеҷ шоҳе аз он ҷон ба дар намебурд",
+        "Сирфан бадшансӣ дар интихоби мушовирон",
+        "Пешгӯии худмуҳаққақшавандаи беэътимодӣ — рафтор бо хидматгузорони вафодор ба мисоли хоин, саранҷом хиёнатро танҳо гузинаи ақлонияшон мекунад",
+        "Иҷтинобнопазирии нузул пас аз ҳар салтанати бузург"
+      ],
+      "correct_answer": 2,
+      "explanation": "Distrust is a prophecy that fulfills itself: punish loyalty as if it were treason, and loyalty stops paying. Once serving Hormuz faithfully was as dangerous as plotting against him, plotting became the safer investment. His fear built the conspiracy that destroyed him.",
+      "explanation_fa": "بی‌اعتمادی پیشگویی‌ای است که خود را محقق می‌کند: وفاداری را چون خیانت مجازات کن، و وفاداری دیگر نمی‌صرفد.",
+      "explanation_tg": "Беэътимодӣ пешгӯиест ки худро муҳаққақ мекунад: вафодориро чун хиёнат ҷазо деҳ, ва вафодорӣ дигар намесарфад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hrmz-h5",
+      "chapter_slug": "hormuz",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The chapter ends: 'The crumbling had begun. It would not stop.' Why does the Shahnameh locate the beginning of the fall here, in Hormuz's reign?",
+      "question_fa": "فصل چنین پایان می‌یابد: «فروریختن آغاز شده بود. متوقف نمی‌شد.» چرا شاهنامه آغازِ سقوط را این‌جا، در سلطنتِ هرمز، می‌گذارد؟",
+      "question_tg": "Боб чунин поён меёбад: «Фурӯрехтан оғоз шуда буд. Мутаваққиф намешуд.» Чаро Шоҳнома оғози суқутро ин ҷо, дар салтанати Ҳурмуз, мегузорад?",
+      "answers": [
+        "Because Hormuz lost the empire's richest provinces to Rome",
+        "Because the Arab invasion began during his reign",
+        "Because Hormuz abolished the army his father built",
+        "Because a single reign sufficed to break the empire's peak into factions — proving the structure now depended on the king's character, and could not survive a bad one"
+      ],
+      "answers_fa": [
+        "چون هرمز ثروتمندترین استان‌ها را به روم باخت",
+        "چون حمله‌ی عرب در سلطنتِ او آغاز شد",
+        "چون هرمز ارتشی را که پدرش ساخته بود منحل کرد",
+        "چون یک سلطنت کافی بود تا اوجِ امپراتوری به جناح‌ها بشکند — اثباتِ این‌که ساختار اکنون به شخصیتِ شاه وابسته بود و از یک شاهِ بد جان به در نمی‌برد"
+      ],
+      "answers_tg": [
+        "Зеро Ҳурмуз сарватмандтарин вилоятҳоро ба Рим бохт",
+        "Зеро ҳамлаи араб дар салтанати ӯ оғоз шуд",
+        "Зеро Ҳурмуз лашкареро ки падараш сохта буд мунҳал кард",
+        "Зеро як салтанат кофӣ буд то авҷи империя ба ҷиноҳҳо бишканад — исботи ин ки сохтор акнун ба шахсияти шоҳ вобаста буд ва аз як шоҳи бад ҷон ба дар намебурд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The fall is dated not from a lost battle but from a lost cohesion. Within one reign, the empire at its height became a bundle of factions. A system that one bad king can break was already broken in principle — the rest of the story is just the breakage becoming visible.",
+      "explanation_fa": "سقوط نه از نبردی باخته بلکه از انسجامی ازدست‌رفته تاریخ می‌خورد. نظامی که یک شاهِ بد بتواند بشکندش، در اصل از قبل شکسته است.",
+      "explanation_tg": "Суқут на аз набарде бохта балки аз инсиҷоми аздастрафта таърих мехӯрад. Низоме ки як шоҳи бад битавонад бишканадаш, дар асл аз қабл шикаста аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hrmz-h6",
+      "chapter_slug": "hormuz",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The end for Hormuz 'came from inside the palace.' What does this detail signify about how empires fail in the Shahnameh's final chapters?",
+      "question_fa": "پایانِ هرمز «از درونِ کاخ آمد.» این جزئیات درباره‌ی چگونگیِ سقوطِ امپراتوری‌ها در فصل‌های پایانیِ شاهنامه چه معنایی دارد؟",
+      "question_tg": "Поёни Ҳурмуз «аз даруни кох омад.» Ин ҷузъиёт дар бораи чигунагии суқути империяҳо дар бобҳои поёнии Шоҳнома чӣ маъное дорад?",
+      "answers": [
+        "Family members are always the most dangerous enemies",
+        "Collapse begins at the center, not the frontier — the Sasanian fall is a story of self-destruction before it is a story of conquest",
+        "Palaces were physically indefensible in Sasanian architecture",
+        "Foreign spies had infiltrated every Sasanian court"
+      ],
+      "answers_fa": [
+        "اعضای خانواده همیشه خطرناک‌ترین دشمنان‌اند",
+        "فروپاشی از مرکز آغاز می‌شود، نه از مرز — سقوطِ ساسانی پیش از آن‌که داستانِ فتح باشد داستانِ خودویرانگری است",
+        "کاخ‌ها در معماریِ ساسانی عملاً غیرقابلِ دفاع بودند",
+        "جاسوسانِ خارجی در هر دربارِ ساسانی نفوذ کرده بودند"
+      ],
+      "answers_tg": [
+        "Аъзои хонавода ҳамеша хатарноктарин душманонанд",
+        "Фурӯпошӣ аз марказ оғоз мешавад, на аз марз — суқути сосонӣ пеш аз он ки достони фатҳ бошад достони худвайронгарист",
+        "Кохҳо дар меъмории сосонӣ амалан ғайриқобили дифоъ буданд",
+        "Ҷосусони хориҷӣ дар ҳар дарбори сосонӣ нуфуз карда буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "No Arab army existed yet that could threaten Ctesiphon; the threat sat at the king's own table. The Shahnameh's account of the fall consistently shows the empire defeating itself first — the conquest later merely collects what self-destruction has already paid for.",
+      "explanation_fa": "هنوز هیچ ارتشِ عربی تیسفون را تهدید نمی‌کرد؛ تهدید بر سرِ سفره‌ی خودِ شاه نشسته بود.",
+      "explanation_tg": "Ҳанӯз ҳеҷ лашкари арабӣ Тайсафунро таҳдид намекард; таҳдид бар сари суфраи худи шоҳ нишаста буд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hrmz-h7",
+      "chapter_slug": "hormuz",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "What does Hormuz's reign demonstrate about fear as a mode of kingship?",
+      "question_fa": "سلطنتِ هرمز درباره‌ی ترس به‌عنوانِ شیوه‌ی پادشاهی چه نشان می‌دهد؟",
+      "question_tg": "Салтанати Ҳурмуз дар бораи тарс ба унвони шеваи подшоҳӣ чӣ нишон медиҳад?",
+      "answers": [
+        "An empire is a web of relationships, and a fearful king burns them one by one until nothing holds the structure up",
+        "Fear is acceptable in wartime but not in peace",
+        "Fear only matters if the king shows it publicly",
+        "Fear keeps subordinates obedient and is therefore effective"
+      ],
+      "answers_fa": [
+        "امپراتوری شبکه‌ای از روابط است و شاهِ ترسان آن‌ها را یکی‌یکی می‌سوزاند تا دیگر چیزی ساختار را نگه ندارد",
+        "ترس در زمانِ جنگ پذیرفتنی است اما در صلح نه",
+        "ترس فقط وقتی مهم است که شاه علنی نشانش دهد",
+        "ترس زیردستان را مطیع نگه می‌دارد و بنابراین مؤثر است"
+      ],
+      "answers_tg": [
+        "Империя шабакае аз равобит аст ва шоҳи тарсон онҳоро як-як месӯзонад то дигар чизе сохторро нигоҳ надорад",
+        "Тарс дар замони ҷанг пазируфтанист аммо дар сулҳ на",
+        "Тарс танҳо вақте муҳим аст ки шоҳ ошкоро нишонаш диҳад",
+        "Тарс зердастонро мутеъ нигоҳ медорад ва бинобар ин муассир аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "Hormuz spent his reign 'dismantling what he had been given, one broken relationship at a time.' The phrase is exact: an empire is not land or gold but relationships — king to noble, king to priest, king to general. Fear severs them faster than any enemy could.",
+      "explanation_fa": "امپراتوری زمین و طلا نیست بلکه روابط است — و ترس آن‌ها را سریع‌تر از هر دشمنی قطع می‌کند.",
+      "explanation_tg": "Империя замин ва тилло нест балки равобит аст — ва тарс онҳоро сареътар аз ҳар душмане қатъ мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "hrmz-h8",
+      "chapter_slug": "hormuz",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "How does Hormuz's failure reframe the meaning of his father's golden age?",
+      "question_fa": "شکستِ هرمز معنای عصرِ طلاییِ پدرش را چگونه بازتعریف می‌کند؟",
+      "question_tg": "Шикасти Ҳурмуз маънои асри тиллоии падарашро чӣ гуна бозтаъриф мекунад?",
+      "answers": [
+        "It reveals the golden age was personal rather than institutional — Anushirvan's justice died with him because it had not been built into anything that could survive him",
+        "It proves the golden age never really happened",
+        "It makes the golden age seem even longer in retrospect",
+        "It shows Anushirvan deliberately sabotaged his heir"
+      ],
+      "answers_fa": [
+        "آشکار می‌کند عصرِ طلایی شخصی بود نه نهادی — عدلِ انوشیروان با او مُرد چون در چیزی که از او جان به در ببرد ساخته نشده بود",
+        "ثابت می‌کند عصرِ طلایی هرگز واقعاً رخ نداد",
+        "در نگاهِ به گذشته عصرِ طلایی را حتی طولانی‌تر جلوه می‌دهد",
+        "نشان می‌دهد انوشیروان عمداً وارثش را خراب کرد"
+      ],
+      "answers_tg": [
+        "Ошкор мекунад асри тиллоӣ шахсӣ буд на ниҳодӣ — адли Ануширвон бо ӯ мурд зеро дар чизе ки аз ӯ ҷон ба дар барад сохта нашуда буд",
+        "Исбот мекунад асри тиллоӣ ҳаргиз воқеан рух надод",
+        "Дар нигоҳ ба гузашта асри тиллоиро ҳатто тӯлонитар ҷилва медиҳад",
+        "Нишон медиҳад Ануширвон амдан ворисашро хароб кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "This is the bitter irony: Anushirvan, the great institution-builder, could not institutionalize the one thing that mattered — his own character. The surveys and salaries survived; the justice that animated them did not. One generation later, nothing remained but the title 'king' on a frightened man.",
+      "explanation_fa": "طنزِ تلخ: انوشیروانِ نهادساز نتوانست تنها چیزِ مهم را نهادینه کند — شخصیتِ خودش را.",
+      "explanation_tg": "Танзи талх: Ануширвони ниҳодсоз натавонист танҳо чизи муҳимро ниҳодина кунад — шахсияти худашро.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

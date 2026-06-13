@@ -1,143 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "anu-e1",
+      "id": "ansh-e1",
       "chapter_slug": "anushirvan",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "What lesson did Khosrow Anushirvan learn from overhearing two owls on a ruined rooftop?",
-      "question_fa": "خسرو انوشیروان از شنیدن اتفاقی دو جغد بر بام خرابه‌ای چه درسی یاد گرفت؟",
-      "question_tg": "Хусрав Анӯшервон аз шунидани тасодуфии ду бӯм бар боми хaробае чӣ дарсе гирифт?",
+      "question": "What title did Khosrow Anushirvan earn in the Shahnameh?",
+      "question_fa": "خسرو انوشیروان در شاهنامه چه لقبی به دست آورد؟",
+      "question_tg": "Хусрав Ануширвон дар Шоҳнома чӣ унвоне ба даст овард?",
       "answers": [
-        "The owls were negotiating marriages demanding ruined villages as dowry — showing an unjust king creates endless ruins",
-        "The owls were mourning a great king, showing that even animals grieve for just rulers",
-        "The owls were warning of an invasion from the north that only a just king could repel",
-        "The owls were arguing over property, showing even animals fight when law is weak"
+        "'The Blacksmith' — for his humble origins",
+        "'The Just' — the king held up as proof that ideal kingship is achievable",
+        "'The Sinner' — for defying the priests",
+        "'The Conqueror' — for his victories over Rome"
       ],
       "answers_fa": [
-        "جغدها داشتند برای ازدواج مذاکره می‌کردند و روستاهای ویران را به عنوان مهریه می‌خواستند — نشان می‌داد یک شاه ناعادل خرابه‌های بی‌پایان ایجاد می‌کند",
-        "جغدها داشتند برای یک شاه بزرگ عزاداری می‌کردند که نشان می‌داد حتی حیوانات هم برای حاکمان عادل عزا می‌گیرند",
-        "جغدها داشتند از تهاجمی از شمال هشدار می‌دادند که فقط یک شاه عادل می‌توانست آن را دفع کند",
-        "جغدها داشتند بر سر ملک بحث می‌کردند که نشان می‌داد حتی حیوانات هم وقتی قانون ضعیف است می‌جنگند"
+        "«آهنگر» — برای ریشه‌های فروتنانه‌اش",
+        "«دادگر» — شاهی که به عنوانِ اثباتِ دست‌یافتنی بودنِ سلطنتِ آرمانی ارائه می‌شود",
+        "«گناهکار» — برای مخالفت با روحانیان",
+        "«فاتح» — برای پیروزی‌هایش بر روم"
       ],
       "answers_tg": [
-        "Бӯмҳо барои издивоҷ музокира мекарданд ва деҳаҳои харобро ҳамчун маҳр мехостанд — нишон медод подшоҳи нодил харобаҳои бепоён эҷод мекунад",
-        "Бӯмҳо барои подшоҳи бузурге азо медоштанд ки нишон медод ҳатто ҳайвонот ҳам барои ҳокимони одил ғам мехӯранд",
-        "Бӯмҳо аз ҳамлаи аз шимол огоҳ мекарданд ки танҳо подшоҳи одил метавонист онро дафъ кунад",
-        "Бӯмҳо бар сари мулк баҳс мекарданд ки нишон медод ҳатто ҳайвонот ҳам вақти қонун заиф аст меҷанганд"
+        "«Оҳангар» — барои решаҳои фурӯтанонааш",
+        "«Додгар» — шоҳе ки ба унвони исботи дастёфтании шоҳии ормонӣ пешкаш мешавад",
+        "«Гунаҳкор» — барои мухолифат бо коҳинон",
+        "«Фотеҳ» — барои пирӯзиҳояш бар Рим"
       ],
-      "correct_answer": 0,
-      "explanation": "Anushirvan overheard two owls negotiating their children's marriages on a ruin. His interpreter said each side was demanding ruined villages as dowry, and there would be no shortage under an unjust king. Anushirvan understood — he returned to court and began the reforms that would make him a legend of justice.",
-      "explanation_fa": "انوشیروان دو جغد را شنید که بر یک خرابه برای ازدواج فرزندانشان مذاکره می‌کردند. مترجمش گفت هر طرف روستاهای ویران را به عنوان مهریه می‌خواست و تا وقتی شاه ناعادلی باشد کمبودی نخواهد بود. انوشیروان فهمید — به دربار بازگشت و اصلاحاتی را شروع کرد که او را افسانه عدالت کرد.",
-      "explanation_tg": "Анӯшервон ду бӯмро шунид ки бар харобае барои издивоҷи фарзандонашон музокира мекарданд. Мутарҷимаш гуфт ҳар тараф деҳаҳои харобро ҳамчун маҳр мехост ва то вақте подшоҳи нодиле бошад камбуде нахоҳад буд.",
+      "correct_answer": 1,
+      "explanation": "Khosrow Anushirvan — 'Immortal Soul' — is remembered as 'the Just' (Dadgar). The Shahnameh holds him up as proof that the standard it measured every king against could, once, actually be met by a historical ruler.",
+      "explanation_fa": "خسرو انوشیروان به عنوانِ «دادگر» به یاد می‌ماند — اثباتِ این‌که معیارِ شاهنامه یک بار واقعاً برآورده شد.",
+      "explanation_tg": "Хусрав Ануширвон ба унвони «Додгар» дар ёд мемонад — исботи он ки меъёри Шоҳнома як бор воқеан бароварда шуд.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "anu-m1",
+      "id": "ansh-e2",
       "chapter_slug": "anushirvan",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "What did Anushirvan do when the Byzantine Emperor Justinian closed the Academy in Athens?",
-      "question_fa": "انوشیروان وقتی امپراتور بیزانسی یوستینیانوس آکادمی آتن را بست چه کرد؟",
-      "question_tg": "Анӯшервон вақте императори Визонтии Юстиниан Академияи Афинаро баст чӣ кард?",
-      "answers": [
-        "He invited the Greek philosophers to his court at Ctesiphon and had Plato translated into Persian",
-        "He sent gold to rebuild the Academy in a new location outside Byzantine territory",
-        "He recruited the displaced scholars to teach in newly built schools across Iran",
-        "He had the philosophers' works smuggled into Iran before Justinian could destroy them"
-      ],
-      "answers_fa": [
-        "فیلسوفان یونانی را به دربارش در تیسفون دعوت کرد و افلاطون را به فارسی ترجمه کرد",
-        "طلا فرستاد تا آکادمی را در مکانی جدید خارج از قلمرو بیزانس بازسازی کنند",
-        "دانشمندان آواره را استخدام کرد تا در مدارس تازه ساخته شده در سراسر ایران تدریس کنند",
-        "آثار فیلسوفان را قبل از اینکه یوستینیانوس بتواند آنها را نابود کند به ایران قاچاق کرد"
-      ],
-      "answers_tg": [
-        "Файласуфони Юнониро ба дарбораш дар Тайсафун даъват кард ва Афлотунро ба Форсӣ тарҷума кард",
-        "Тилло фиристод то Академияро дар ҷои ҷадиде берун аз қаламрави Визонт барқарор созанд",
-        "Олимони ҷиловарону ба хизмат гирифт то дар мактабҳои тозасохташуда дар саросари Эрон дарс диҳанд",
-        "Осори файласуфонро пеш аз он ки Юстиниан тавонад онҳоро нобуд кунад ба Эрон қочоқ кард"
-      ],
-      "correct_answer": 0,
-      "explanation": "When Emperor Justinian closed the Neoplatonic Academy at Athens in 529 CE, Anushirvan invited the displaced Greek philosophers to his court at Ctesiphon. He had Plato and other philosophical works translated. Iran became a refuge for the intellectual tradition that Byzantium was expelling.",
-      "explanation_fa": "وقتی امپراتور یوستینیانوس آکادمی نئوافلاطونی آتن را در سال ۵۲۹ میلادی بست، انوشیروان فیلسوفان یونانی آواره را به دربارش در تیسفون دعوت کرد. افلاطون و آثار فلسفی دیگر را ترجمه کرد. ایران پناهگاه سنت فکری‌ای شد که بیزانس آن را می‌راند.",
-      "explanation_tg": "Вақте Юстиниан Академияи Неоафлотунии Афинаро дар соли 529 милодӣ баст, Анӯшервон файласуфони Юнонии ҷиловарону ба дарбораш дар Тайсафун даъват кард.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "anu-m2",
-      "chapter_slug": "anushirvan",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "What major board game came to Iran from India during Anushirvan's reign, and what did his minister Bozorgmehr invent in return?",
-      "question_fa": "چه بازی تخته‌ای بزرگی در دوران حکومت انوشیروان از هند به ایران آمد و وزیرش بزرگمهر در عوض چه اختراع کرد؟",
-      "question_tg": "Кадом бозии тахтаборди бузурге дар давраи ҳукмронии Анӯшервон аз Ҳинд ба Эрон омад ва вазираш Бузургмеҳр дар иваз чӣ ихтироъ кард?",
-      "answers": [
-        "Chess came from India — Bozorgmehr deciphered it and invented backgammon (nard) to send back",
-        "Go came from China — Bozorgmehr invented polo as a strategic game to send in return",
-        "Dice games came from Arabia — Bozorgmehr invented the astrolabe in response",
-        "Draughts came from Egypt — Bozorgmehr invented the water clock in exchange"
-      ],
-      "answers_fa": [
-        "شطرنج از هند آمد — بزرگمهر آن را رمزگشایی کرد و نرد را برای فرستادن برگشت اختراع کرد",
-        "گو از چین آمد — بزرگمهر چوگان را به عنوان بازی استراتژیک برای فرستادن در جواب اختراع کرد",
-        "بازی‌های تاس از عربستان آمد — بزرگمهر در پاسخ اسطرلاب را اختراع کرد",
-        "چکر از مصر آمد — بزرگمهر در عوض ساعت آبی اختراع کرد"
-      ],
-      "answers_tg": [
-        "Шатранҷ аз Ҳинд омад — Бузургмеҳр онро рамзкушоӣ кард ва нардро барои фиристодан барқ ихтироъ кард",
-        "Го аз Чин омад — Бузургмеҳр чавгонро ҳамчун бозии стратегӣ барои фиристодан дар ҷавоб ихтироъ кард",
-        "Бозиҳои тос аз Арабистон омад — Бузургмеҳр дар ҷавоб астурлобро ихтироъ кард",
-        "Шашки аз Миср омад — Бузургмеҳр дар иваз соати обиро ихтироъ кард"
-      ],
-      "correct_answer": 0,
-      "explanation": "A brahmin brought chess from India to challenge Anushirvan's court. Bozorgmehr, the great minister, deciphered the game's rules and sent it back solved. He then invented the game of nard (backgammon) as Iran's counter-challenge to India. Both exchanges reflect Anushirvan's court as a center of intellectual competition.",
-      "explanation_fa": "یک برهمن شطرنج را از هند برای به چالش کشیدن دربار انوشیروان آورد. بزرگمهر وزیر بزرگ قوانین بازی را رمزگشایی کرد و حل‌شده آن را برگرداند. سپس بازی نرد را به عنوان چالش پاسخ ایران به هند اختراع کرد.",
-      "explanation_tg": "Барҳамине шатранҷро аз Ҳинд барои ба мубориза талабидани дарбори Анӯшервон овард. Бузургмеҳр вазири бузург қоидаҳои бозиро рамзкушоӣ кард ва ҳалшудаашро баргардонд. Сипас бозии нардро ҳамчун мубориза ҷавоби Эрон ба Ҳинд ихтироъ кард.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "anu-e2",
-      "chapter_slug": "anushirvan",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "What title is Khosrow Anushirvan most famous for in Persian tradition?",
-      "question_fa": "خسرو انوشیروان در سنت ایرانی بیشتر به چه لقبی معروف است؟",
-      "question_tg": "Хусрав Анӯшервон дар анъанаи Эронӣ бештар ба кадом лақаб машҳур аст?",
+      "question": "Which game did a brahmin bring from India to Anushirvan's court?",
+      "question_fa": "یک برهمن چه بازی‌ای را از هند به دربارِ انوشیروان آورد؟",
+      "question_tg": "Як браҳман чӣ бозиеро аз Ҳинд ба дарбори Ануширвон овард?",
       "answers": [
-        "The Just (Dadgar) — the standard against which all rulers have been measured for fifteen centuries",
-        "The Great (Bozorg) — for expanding the Sasanian empire to its largest extent",
-        "The Wise (Daneshvar) — for his sponsorship of Greek and Indian philosophy",
-        "The Eternal (Javid) — for establishing laws that lasted unchanged for three hundred years"
+        "Go — which no one at court could master",
+        "Dice — which the court rejected as gambling",
+        "Polo — which became the royal sport of Iran",
+        "Chess — and his minister Bozorgmehr deciphered it and invented backgammon in return"
       ],
       "answers_fa": [
-        "دادگر — معیاری که تمام حاکمان برای پانزده قرن با آن سنجیده شده‌اند",
-        "بزرگ — برای گسترش امپراتوری ساسانی به بزرگترین حد خود",
-        "دانشور — برای حمایتش از فلسفه یونانی و هندی",
-        "جاوید — برای وضع قوانینی که سیصد سال بدون تغییر باقی ماند"
+        "گو — که هیچ‌کس در دربار نتوانست بر آن مسلط شود",
+        "تاس — که دربار آن را به عنوانِ قمار رد کرد",
+        "چوگان — که ورزشِ شاهانه‌ی ایران شد",
+        "شطرنج — و وزیرش بزرگمهر آن را رمزگشایی کرد و در مقابل نرد را اختراع کرد"
       ],
       "answers_tg": [
-        "Додгар — меъёре ки ҳамаи ҳокимон барои понздаҳ аср бо он санҷида шудаанд",
-        "Бузург — барои тавсеаи империяи Сосонӣ то бузургтарин ҳадди худ",
-        "Донишвар — барои ҳимояташ аз фалсафаи Юнонӣ ва Ҳиндӣ",
-        "Ҷовид — барои вазъи қонунҳое ки сесад сол бидуни тағйир боқӣ монданд"
+        "Го — ки ҳеҷ кас дар дарбор натавонист бар он мусаллат шавад",
+        "Тос — ки дарбор онро ба унвони қимор рад кард",
+        "Чавгон — ки варзиши шоҳонаи Эрон шуд",
+        "Шоҳмот — ва вазираш Бузургмеҳр онро рамзкушоӣ кард ва дар муқобил нардро ихтироъ кард"
+      ],
+      "correct_answer": 3,
+      "explanation": "A brahmin brought chess from India as a challenge. Bozorgmehr, Anushirvan's wise minister, worked out its rules — and invented backgammon to send back as Iran's counter-riddle.",
+      "explanation_fa": "برهمنی شطرنج را از هند آورد. بزرگمهر قواعدش را کشف کرد و در مقابل نرد را اختراع کرد.",
+      "explanation_tg": "Браҳмане шоҳмотро аз Ҳинд овард. Бузургмеҳр қоидаҳояшро кашф кард ва дар муқобил нардро ихтироъ кард.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ansh-e3",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How did Anushirvan deal with the Mazdakite movement at the start of his reign?",
+      "question_fa": "انوشیروان در آغازِ سلطنتش با جنبشِ مزدکی چگونه برخورد کرد؟",
+      "question_tg": "Ануширвон дар оғози салтанаташ бо ҷунбиши маздакӣ чӣ гуна бархӯрд кард?",
+      "answers": [
+        "He debated them publicly and won them over with argument",
+        "He exiled them peacefully to India",
+        "He invited the Mazdakite leaders to a great assembly and had them executed",
+        "He converted to their teaching and redistributed the royal treasury"
+      ],
+      "answers_fa": [
+        "علناً با آنان مناظره کرد و با استدلال آنان را قانع کرد",
+        "آنان را به آرامی به هند تبعید کرد",
+        "رهبرانِ مزدکی را به یک مجلسِ بزرگ دعوت کرد و آنان را اعدام کرد",
+        "به آموزه‌ی آنان گروید و خزانه‌ی شاهی را بازتوزیع کرد"
+      ],
+      "answers_tg": [
+        "Ошкоро бо онҳо мунозара кард ва бо далел онҳоро қонеъ кард",
+        "Онҳоро ба оромӣ ба Ҳинд бадарға кард",
+        "Раҳбарони маздакиро ба маҷлиси бузург даъват кард ва онҳоро қатл кард",
+        "Ба таълимоти онҳо гаравид ва хазинаи шоҳиро бозтақсим кард"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Mazdakite movement, which demanded redistribution of wealth, had spread under his father Kavadh. Anushirvan invited its leaders to a great assembly and had them executed. The chronicle does not flinch: a just king still needs order, and order has a cost.",
+      "explanation_fa": "انوشیروان رهبرانِ مزدکی را به مجلسی دعوت کرد و اعدامشان کرد. شاهنامه نمی‌گریزد: نظم هزینه دارد.",
+      "explanation_tg": "Ануширвон раҳбарони маздакиро ба маҷлисе даъват кард ва қатлашон кард. Шоҳнома намегурезад: тартиб арзиш дорад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ansh-m1",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How did Anushirvan reform the tax system?",
+      "question_fa": "انوشیروان نظامِ مالیاتی را چگونه اصلاح کرد؟",
+      "question_tg": "Ануширвон низоми андозро чӣ гуна ислоҳ кард?",
+      "answers": [
+        "He abolished all taxes on farmers and taxed only merchants",
+        "He let each province set its own rates without royal oversight",
+        "He fixed tax rates to land surveys instead of annual harvests, so one bad year could not ruin a farmer",
+        "He doubled taxes to fund his professional army"
+      ],
+      "answers_fa": [
+        "همه‌ی مالیات‌های کشاورزان را لغو کرد و فقط از بازرگانان مالیات گرفت",
+        "به هر استان اجازه داد نرخ‌های خود را بدونِ نظارتِ شاهی تعیین کند",
+        "نرخ‌های مالیات را به نقشه‌برداریِ زمین به جای برداشتِ سالانه ثابت کرد تا یک سالِ بد کشاورزی را ویران نکند",
+        "مالیات‌ها را برای تأمینِ ارتشِ حرفه‌ای‌اش دو برابر کرد"
+      ],
+      "answers_tg": [
+        "Ҳамаи андозҳои деҳқононро бекор кард ва танҳо аз тоҷирон андоз гирифт",
+        "Ба ҳар вилоят иҷозат дод нархҳои худро бе назорати шоҳӣ муайян кунад",
+        "Нархҳои андозро ба андозагирии замин ба ҷои ҳосили солона собит кард то як соли бад деҳқонро вайрон накунад",
+        "Андозҳоро барои таъмини лашкари касбияш ду баробар кард"
+      ],
+      "correct_answer": 2,
+      "explanation": "By tying taxes to land surveys rather than each year's harvest, farmers were no longer ruined by a single bad season. This is what the Shahnameh means by justice as administration: predictable rules instead of arbitrary demands.",
+      "explanation_fa": "با بستنِ مالیات به نقشه‌برداریِ زمین، کشاورزان دیگر با یک فصلِ بد ویران نمی‌شدند — عدالت به عنوانِ اداره.",
+      "explanation_tg": "Бо бастани андоз ба андозагирии замин, деҳқонон дигар бо як фасли бад вайрон намешуданд — адолат ба унвони идора.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ansh-m2",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What did Anushirvan do when Emperor Justinian closed the Academy in Athens?",
+      "question_fa": "وقتی امپراتور ژوستینین آکادمیِ آتن را بست، انوشیروان چه کرد؟",
+      "question_tg": "Вақте император Юстиниан Академияи Афинаро баст, Ануширвон чӣ кард?",
+      "answers": [
+        "He closed Iran's own schools in imitation",
+        "He ignored it — Greek philosophy was forbidden in Iran",
+        "He invited the Greek philosophers to his court at Ctesiphon and had Plato translated",
+        "He declared war on Byzantium to reopen it"
+      ],
+      "answers_fa": [
+        "مدارسِ خودِ ایران را به تقلید بست",
+        "آن را نادیده گرفت — فلسفه‌ی یونانی در ایران ممنوع بود",
+        "فیلسوفانِ یونانی را به دربارش در تیسفون دعوت کرد و افلاطون را به ترجمه رساند",
+        "برای بازگشاییِ آن به بیزانس اعلانِ جنگ کرد"
+      ],
+      "answers_tg": [
+        "Мактабҳои худи Эронро ба тақлид баст",
+        "Онро нодида гирифт — фалсафаи юнонӣ дар Эрон мамнӯъ буд",
+        "Файласуфони юнониро ба дарбораш дар Тайсафун даъват кард ва Платонро тарҷума кунонд",
+        "Барои бозкушоии он ба Бизантия эълони ҷанг кард"
+      ],
+      "correct_answer": 2,
+      "explanation": "When Justinian closed the Academy, Anushirvan opened his court to the displaced Greek philosophers and had Plato translated. The just king's greatness included absorbing the world's knowledge, not shutting it out.",
+      "explanation_fa": "انوشیروان فیلسوفانِ یونانیِ آواره را به تیسفون پذیرفت و افلاطون را ترجمه کرد — بزرگی شاملِ جذبِ دانشِ جهان بود.",
+      "explanation_tg": "Ануширвон файласуфони юнонии оворароро ба Тайсафун пазируфт ва Платонро тарҷума кард — бузургӣ шомили ҷазби дониши ҷаҳон буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ansh-m3",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "In the story of the owls, what did the interpreter tell Anushirvan the two owls were negotiating?",
+      "question_fa": "در داستانِ جغدها، مترجم به انوشیروان گفت دو جغد بر سرِ چه مذاکره می‌کنند؟",
+      "question_tg": "Дар достони бумҳо, тарҷумон ба Ануширвон гуфт ду бум бар сари чӣ музокира мекунанд?",
+      "answers": [
+        "Their children's marriage — each side demanding ruined villages as dowry, since there would be no shortage under an unjust king",
+        "The division of the king's treasury after his death",
+        "The price of grain in the coming famine",
+        "Which kingdom they would fly to when Iran fell"
+      ],
+      "answers_fa": [
+        "ازدواجِ فرزندانشان — هر طرف روستاهای ویران را به عنوانِ مهریه می‌خواست، چون زیرِ شاهِ بیدادگر کمبودی نخواهد بود",
+        "تقسیمِ خزانه‌ی شاه پس از مرگش",
+        "قیمتِ غله در قحطیِ پیشِ رو",
+        "این‌که وقتی ایران سقوط کند به کدام پادشاهی پرواز کنند"
+      ],
+      "answers_tg": [
+        "Издивоҷи фарзандонашон — ҳар тараф деҳаҳои вайронро ба унвони маҳр металабид, зеро зери шоҳи бедодгар камбуде нахоҳад буд",
+        "Тақсими хазинаи шоҳ пас аз маргаш",
+        "Нархи ғалла дар қаҳтии пешистода",
+        "Ин ки вақте Эрон суқут кунад ба кадом подшоҳӣ парвоз кунанд"
       ],
       "correct_answer": 0,
-      "explanation": "Anushirvan is called 'the Just' (Dadgar in Persian) — a title so attached to his name that even today a Persian speaker who wants to call a ruler genuinely good will reach for his name. Islamic tradition preserved the saying 'I was born in the time of the just king' attributed to the Prophet Mohammad.",
-      "explanation_fa": "انوشیروان 'دادگر' نامیده می‌شود — لقبی که آنقدر به نامش وابسته است که امروزه هم یک فارسی‌زبان که می‌خواهد یک حاکم را واقعاً خوب بنامد به نامش دست می‌رسد. سنت اسلامی حدیث 'در زمان شاه عادل به دنیا آمدم' منسوب به پیامبر اسلام را حفظ کرده است.",
-      "explanation_tg": "Анӯшервон 'Додгар' номида мешавад — лақабе ки он қадар ба номаш вобаста аст ки имрӯз ҳам форсизабоне ки мехоҳад ҳокимеро воқеан хуб номад ба номаш даст мерасад.",
+      "explanation": "The owls were marrying off their children and demanding ruined villages as dowry — confident that under an unjust king there would be no shortage of ruins. Anushirvan understood, returned to court, and began his reforms. The kingdom's margins reveal the truth about its center.",
+      "explanation_fa": "جغدها روستاهای ویران را مهریه می‌خواستند — زیرِ شاهِ بیدادگر کمبودی نیست. انوشیروان فهمید و اصلاحات را آغاز کرد.",
+      "explanation_tg": "Бумҳо деҳаҳои вайронро маҳр металабиданд — зери шоҳи бедодгар камбуде нест. Ануширвон фаҳмид ва ислоҳотро оғоз кард.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ansh-m4",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Who was Bozorgmehr?",
+      "question_fa": "بزرگمهر که بود؟",
+      "question_tg": "Бузургмеҳр кӣ буд?",
+      "answers": [
+        "Anushirvan's wise minister, who deciphered chess and invented backgammon",
+        "The general who crushed the Mazdakite revolt",
+        "The Byzantine ambassador at Ctesiphon",
+        "Anushirvan's rebellious son who chose Christianity"
+      ],
+      "answers_fa": [
+        "وزیرِ خردمندِ انوشیروان، که شطرنج را رمزگشایی کرد و نرد را اختراع کرد",
+        "سرداری که شورشِ مزدکیان را سرکوب کرد",
+        "سفیرِ بیزانس در تیسفون",
+        "پسرِ شورشیِ انوشیروان که مسیحیت را برگزید"
+      ],
+      "answers_tg": [
+        "Вазири хирадманди Ануширвон, ки шоҳмотро рамзкушоӣ кард ва нардро ихтироъ кард",
+        "Сардоре ки шӯриши маздакиёнро саркӯб кард",
+        "Сафири Бизантия дар Тайсафун",
+        "Писари шӯришии Ануширвон ки масеҳиятро баргузид"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bozorgmehr is the great minister of Anushirvan's court — the figure of wisdom beside the figure of justice. Deciphering India's chess and answering with backgammon made him the emblem of Iranian intellect meeting the world as an equal.",
+      "explanation_fa": "بزرگمهر وزیرِ بزرگِ دربار بود — چهره‌ی خرد در کنارِ چهره‌ی عدل، که شطرنجِ هند را گشود و با نرد پاسخ داد.",
+      "explanation_tg": "Бузургмеҳр вазири бузурги дарбор буд — чеҳраи хирад дар канори чеҳраи адл, ки шоҳмоти Ҳиндро кушод ва бо нард посух дод.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ansh-m5",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Why does the Shahnameh's chronicle 'need' Anushirvan, according to the chapter?",
+      "question_fa": "طبقِ این فصل، چرا شاهنامه به انوشیروان «نیاز» دارد؟",
+      "question_tg": "Тибқи ин боб, чаро Шоҳнома ба Ануширвон «ниёз» дорад?",
+      "answers": [
+        "To show that the standard it measured kings against could, once, actually be met — by a real historical man, not a myth",
+        "To fill the gap between the Kayanian legends and the Arab conquest",
+        "Because his reign produced the most battles to narrate",
+        "To glorify the Sasanian dynasty above the Kayanians"
+      ],
+      "answers_fa": [
+        "تا نشان دهد معیاری که شاهان را با آن می‌سنجید یک بار واقعاً برآورده شد — توسطِ انسانی تاریخی، نه اسطوره",
+        "تا شکاف میانِ افسانه‌های کیانی و فتحِ عرب را پر کند",
+        "چون سلطنتش بیشترین نبردها را برای روایت تولید کرد",
+        "تا دودمانِ ساسانی را بالاتر از کیانیان بستاید"
+      ],
+      "answers_tg": [
+        "То нишон диҳад меъёре ки шоҳонро бо он месанҷид як бор воқеан бароварда шуд — тавассути инсони таърихӣ, на устура",
+        "То шикофи байни афсонаҳои каёнӣ ва фатҳи арабро пур кунад",
+        "Зеро салтанаташ бештарин набардҳоро барои ривоят тавлид кард",
+        "То дудмони сосониро болотар аз каёниён ситояд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Anushirvan is not a legend from the distant Kayanian age but a historical man who actually governed justly. The chronicle needs him as proof: the ideal it had been holding over every king's head was achievable.",
+      "explanation_fa": "انوشیروان اسطوره نیست بلکه انسانی تاریخی که عادلانه حکومت کرد — اثباتِ این‌که آرمان دست‌یافتنی بود.",
+      "explanation_tg": "Ануширвон устура нест балки инсони таърихӣ ки одилона ҳукумат кард — исботи он ки ормон дастёфтанӣ буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ansh-h1",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "The Shahnameh 'does not flinch' at Anushirvan's execution of the Mazdakite leaders. What does this acceptance reveal about its concept of just kingship?",
+      "question_fa": "شاهنامه از اعدامِ رهبرانِ مزدکی توسطِ انوشیروان «نمی‌گریزد». این پذیرش درباره‌ی مفهومِ سلطنتِ عادلانه‌اش چه آشکار می‌کند؟",
+      "question_tg": "Шоҳнома аз қатли раҳбарони маздакӣ тавассути Ануширвон «намегурезад». Ин пазириш дар бораи мафҳуми шоҳии одилонааш чӣ ошкор мекунад?",
+      "answers": [
+        "The executions prove that justice and kingship are incompatible",
+        "The Shahnameh secretly condemns Anushirvan as a tyrant",
+        "The Shahnameh considers religious dissent the worst of all crimes",
+        "Justice in the Shahnameh is not innocence — a just king still needs order, and the chronicle accepts that order has a cost"
+      ],
+      "answers_fa": [
+        "اعدام‌ها ثابت می‌کنند که عدالت و سلطنت ناسازگارند",
+        "شاهنامه پنهانی انوشیروان را به عنوانِ ستمگر محکوم می‌کند",
+        "شاهنامه ناهمرأییِ دینی را بدترینِ جرایم می‌داند",
+        "عدالت در شاهنامه بی‌گناهی نیست — شاهِ دادگر همچنان به نظم نیاز دارد و شاهنامه می‌پذیرد که نظم هزینه دارد"
+      ],
+      "answers_tg": [
+        "Қатлҳо исбот мекунанд ки адолат ва шоҳӣ носозгоранд",
+        "Шоҳнома пинҳонӣ Ануширвонро ба унвони ситамгар маҳкум мекунад",
+        "Шоҳнома нораъйии диниро бадтарини ҷароим медонад",
+        "Адолат дар Шоҳнома бегуноҳӣ нест — шоҳи додгар ҳамчунон ба тартиб ниёз дорад ва Шоҳнома мепазирад ки тартиб арзиш дорад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The golden age begins with blood, and the chronicle records it without apology. The Shahnameh's justice is not moral purity but the maintenance of an order in which ordinary life can flourish — and it is honest that building that order required destruction first.",
+      "explanation_fa": "عصرِ طلایی با خون آغاز می‌شود و شاهنامه بی‌عذرخواهی ثبتش می‌کند — عدالت پاکیِ اخلاقی نیست بلکه حفظِ نظم است.",
+      "explanation_tg": "Асри тиллоӣ бо хун оғоз мешавад ва Шоҳнома беузрхоҳӣ сабташ мекунад — адолат покии ахлоқӣ нест балки ҳифзи тартиб аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ansh-h2",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The chapter describes Anushirvan's justice as 'administrative' — land reform, fixed taxes, regular army pay. Why does the Shahnameh value this over spontaneous acts of royal mercy?",
+      "question_fa": "این فصل عدلِ انوشیروان را «اداری» توصیف می‌کند — اصلاحِ زمین، مالیاتِ ثابت، حقوقِ منظمِ ارتش. چرا شاهنامه این را بر اعمالِ خودجوشِ بخششِ شاهانه ترجیح می‌دهد؟",
+      "question_tg": "Ин боб адли Ануширвонро «идорӣ» тавсиф мекунад — ислоҳи замин, андози собит, маоши мунтазами лашкар. Чаро Шоҳнома инро бар аъмоли худҷӯши бахшиши шоҳона тарҷеҳ медиҳад?",
+      "answers": [
+        "Because administrative justice is cheaper for the treasury",
+        "Because mercy is a weakness the Shahnameh never praises in kings",
+        "Because the priests demanded written law over royal discretion",
+        "Because systematic justice is predictable and outlives the king's moods — it protects people whether or not the king happens to be feeling merciful"
+      ],
+      "answers_fa": [
+        "چون عدالتِ اداری برای خزانه ارزان‌تر است",
+        "چون بخشش ضعفی است که شاهنامه هرگز در شاهان نمی‌ستاید",
+        "چون روحانیان قانونِ مکتوب را بر صلاحدیدِ شاهی می‌خواستند",
+        "چون عدالتِ نظام‌مند پیش‌بینی‌پذیر است و از خلق‌وخوی شاه فراتر می‌رود — مردم را محافظت می‌کند چه شاه اهلِ بخشش باشد چه نباشد"
+      ],
+      "answers_tg": [
+        "Зеро адолати идорӣ барои хазина арзонтар аст",
+        "Зеро бахшиш заъфест ки Шоҳнома ҳаргиз дар шоҳон намеситояд",
+        "Зеро коҳинон қонуни мактубро бар салоҳдиди шоҳӣ мехостанд",
+        "Зеро адолати низомманд пешбинипазир аст ва аз хулқу хӯи шоҳ фаротар меравад — мардумро муҳофизат мекунад чи шоҳ аҳли бахшиш бошад чи набошад"
+      ],
+      "correct_answer": 3,
+      "explanation": "A king's mood dies with the moment; a system survives it. Anushirvan is 'the Just' because his justice was built into institutions — surveys, fixed rates, regular pay — that protected people reliably. The Shahnameh understands that real justice is what happens when the king is not watching.",
+      "explanation_fa": "خلق‌وخوی شاه با لحظه می‌میرد؛ نظام از آن جان به در می‌برد. عدلِ انوشیروان در نهادها ساخته شده بود.",
+      "explanation_tg": "Хулқу хӯи шоҳ бо лаҳза мемирад; низом аз он ҷон ба дар мебарад. Адли Ануширвон дар ниҳодҳо сохта шуда буд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ansh-h3",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Why does it matter that Anushirvan is a historical man and not a Kayanian legend?",
+      "question_fa": "چرا مهم است که انوشیروان انسانی تاریخی است و نه افسانه‌ای کیانی؟",
+      "question_tg": "Чаро муҳим аст ки Ануширвон инсони таърихист ва на афсонаи каёнӣ?",
+      "answers": [
+        "It shows that the legendary kings never really existed",
+        "Historical kings are easier to date precisely",
+        "Because only historical kings could be criticized safely",
+        "A legend meeting the ideal proves nothing; a real man meeting it proves the ideal is possible inside actual history"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد شاهانِ افسانه‌ای هرگز واقعاً وجود نداشتند",
+        "شاهانِ تاریخی را راحت‌تر می‌توان تاریخ‌گذاری کرد",
+        "چون فقط شاهانِ تاریخی را می‌شد بی‌خطر نقد کرد",
+        "افسانه‌ای که آرمان را برآورده کند چیزی ثابت نمی‌کند؛ انسانی واقعی که برآورده‌اش کند ثابت می‌کند آرمان درونِ تاریخِ واقعی ممکن است"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад шоҳони афсонавӣ ҳаргиз воқеан вуҷуд надоштанд",
+        "Шоҳони таърихиро роҳаттар метавон таърихгузорӣ кард",
+        "Зеро танҳо шоҳони таърихиро мешуд бехатар нақд кард",
+        "Афсонае ки ормонро бароварда кунад чизе исбот намекунад; инсони воқеӣ ки барорадааш исбот мекунад ормон даруни таърихи воқеӣ мумкин аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "Anyone can write a perfect king into a myth. The force of Anushirvan's example is that he governed in datable, documented history — reformed real taxes, paid a real army — and was still recorded as just. The ideal stops being a dream and becomes a precedent.",
+      "explanation_fa": "هر کسی می‌تواند شاهی کامل در اسطوره بنویسد. قدرتِ انوشیروان این است که در تاریخِ واقعی حکومت کرد و عادل ماند.",
+      "explanation_tg": "Ҳар касе метавонад шоҳи комил дар устура нависад. Қудрати Ануширвон ин аст ки дар таърихи воқеӣ ҳукумат кард ва одил монд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ansh-h4",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The owl story is called Anushirvan's 'founding lesson.' What is the deeper principle it teaches about how a king should read his kingdom?",
+      "question_fa": "داستانِ جغدها «درسِ بنیادینِ» انوشیروان خوانده می‌شود. اصلِ عمیق‌تری که درباره‌ی چگونگیِ خواندنِ پادشاهی به شاه می‌آموزد چیست؟",
+      "question_tg": "Достони бумҳо «дарси бунёдии» Ануширвон хонда мешавад. Асли амиқтаре ки дар бораи чигунагии хондани подшоҳӣ ба шоҳ меомӯзад чист?",
+      "answers": [
+        "A king should never travel outside his capital",
+        "Omens and superstition should guide royal policy",
+        "The truth about a reign is read in its margins — ruined villages testify to injustice more honestly than any courtier's report",
+        "Kings should learn the language of birds to gain mystical knowledge"
+      ],
+      "answers_fa": [
+        "شاه هرگز نباید بیرون از پایتختش سفر کند",
+        "فال و خرافه باید سیاستِ شاهی را هدایت کنند",
+        "حقیقتِ یک سلطنت در حاشیه‌هایش خوانده می‌شود — روستاهای ویران صادقانه‌تر از گزارشِ هر درباری به بیداد شهادت می‌دهند",
+        "شاهان باید زبانِ پرندگان را بیاموزند تا دانشِ عرفانی به دست آورند"
+      ],
+      "answers_tg": [
+        "Шоҳ ҳаргиз набояд берун аз пойтахташ сафар кунад",
+        "Фол ва хурофот бояд сиёсати шоҳиро ҳидоят кунанд",
+        "Ҳақиқати як салтанат дар ҳошияҳояш хонда мешавад — деҳаҳои вайрон содиқонатар аз гузориши ҳар дарборӣ ба бедод шаҳодат медиҳанд",
+        "Шоҳон бояд забони парандагонро омӯзанд то дониши ирфонӣ ба даст оваранд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Courtiers tell the king what he wants to hear; ruins do not lie. The owls' dowry of ruined villages is data the palace would never report. The lesson is epistemological: a just king must find ways to see his kingdom that bypass the flattery of his own court.",
+      "explanation_fa": "درباریان آنچه شاه می‌خواهد می‌گویند؛ ویرانه‌ها دروغ نمی‌گویند. شاهِ دادگر باید راهی برای دیدنِ کشور ورای چاپلوسیِ دربار بیابد.",
+      "explanation_tg": "Дарбориён он чи шоҳ мехоҳад мегӯянд; вайронаҳо дурӯғ намегӯянд. Шоҳи додгар бояд роҳе барои дидани кишвар варои чоплусии дарбор ёбад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ansh-h5",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Anushirvan reorganized the army into a professional force with regular pay. Within the Shahnameh's longer story, why is this reform so consequential?",
+      "question_fa": "انوشیروان ارتش را به نیرویی حرفه‌ای با حقوقِ منظم بازسازماندهی کرد. در داستانِ بلندترِ شاهنامه، چرا این اصلاح این‌قدر پیامددار است؟",
+      "question_tg": "Ануширвон лашкарро ба нерӯи касбӣ бо маоши мунтазам бозсозмондеҳӣ кард. Дар достони дарозтари Шоҳнома, чаро ин ислоҳ ин қадар паёмаддор аст?",
+      "answers": [
+        "It transferred military power to the Zoroastrian priesthood",
+        "It ended the need for heroes like Rostam forever",
+        "It allowed Iran to conquer Byzantium permanently",
+        "It made the army loyal to the state's institutions rather than to individual nobles — strength that later kings squandered when the institutions failed"
+      ],
+      "answers_fa": [
+        "قدرتِ نظامی را به روحانیتِ زرتشتی منتقل کرد",
+        "نیاز به پهلوانانی مثلِ رستم را برای همیشه پایان داد",
+        "به ایران اجازه داد بیزانس را برای همیشه فتح کند",
+        "ارتش را به نهادهای دولت وفادار کرد نه به اشرافِ منفرد — قدرتی که شاهانِ بعدی وقتی نهادها فروپاشیدند بر باد دادند"
+      ],
+      "answers_tg": [
+        "Қудрати низомиро ба рӯҳонияти зардуштӣ мунтақил кард",
+        "Ниёз ба паҳлавононе мисли Рустамро барои ҳамеша поён дод",
+        "Ба Эрон иҷозат дод Бизантияро барои ҳамеша фатҳ кунад",
+        "Лашкарро ба ниҳодҳои давлат вафодор кард на ба ашрофи мунфарид — қудрате ки шоҳони баъдӣ вақте ниҳодҳо фурӯпошиданд барбод доданд"
+      ],
+      "correct_answer": 3,
+      "explanation": "A professional, regularly paid army serves the system, not a strongman. This was the height of Sasanian institutional strength — and the later chapters show its inversion: unpaid, scattered soldiers loyal to no one as the dynasty collapses. The reform measures both the peak and, by contrast, the fall.",
+      "explanation_fa": "ارتشِ حرفه‌ایِ با حقوقِ منظم به نظام خدمت می‌کند نه به زورمند. فصل‌های بعدی وارونه‌اش را نشان می‌دهند: سربازانِ بی‌مزدِ پراکنده.",
+      "explanation_tg": "Лашкари касбии бо маоши мунтазам ба низом хидмат мекунад на ба зӯрманд. Бобҳои баъдӣ воружаашро нишон медиҳанд: сарбозони бемузди пароканда.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ansh-h6",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Anushirvan welcomed Greek philosophy, Indian chess, and translated Plato. What does this openness say about the Shahnameh's idea of a civilization at its height?",
+      "question_fa": "انوشیروان فلسفه‌ی یونانی و شطرنجِ هندی را پذیرفت و افلاطون را ترجمه کرد. این گشودگی درباره‌ی تصورِ شاهنامه از یک تمدن در اوجش چه می‌گوید؟",
+      "question_tg": "Ануширвон фалсафаи юнонӣ ва шоҳмоти ҳиндиро пазируфт ва Платонро тарҷума кард. Ин кушодагӣ дар бораи тасаввури Шоҳнома аз як тамаддун дар авҷаш чӣ мегӯяд?",
+      "answers": [
+        "It proves Anushirvan secretly preferred foreign ways to Iranian ones",
+        "Openness was a diplomatic trick to spy on rival empires",
+        "A civilization at its height absorbs the world's knowledge confidently — strength is shown by openness, not by walls",
+        "It shows Iran had no original culture of its own"
+      ],
+      "answers_fa": [
+        "ثابت می‌کند انوشیروان پنهانی راه‌های بیگانه را بر ایرانی ترجیح می‌داد",
+        "گشودگی ترفندی دیپلماتیک برای جاسوسی از امپراتوری‌های رقیب بود",
+        "تمدنی در اوج، دانشِ جهان را با اعتماد جذب می‌کند — قدرت با گشودگی نشان داده می‌شود، نه با دیوارها",
+        "نشان می‌دهد ایران فرهنگِ اصیلی از خود نداشت"
+      ],
+      "answers_tg": [
+        "Исбот мекунад Ануширвон пинҳонӣ роҳҳои бегонаро бар эронӣ тарҷеҳ медод",
+        "Кушодагӣ найранги дипломатӣ барои ҷосусӣ аз империяҳои рақиб буд",
+        "Тамаддуне дар авҷ дониши ҷаҳонро бо эътимод ҷазб мекунад — қудрат бо кушодагӣ нишон дода мешавад, на бо деворҳо",
+        "Нишон медиҳад Эрон фарҳанги асиле аз худ надошт"
+      ],
+      "correct_answer": 2,
+      "explanation": "The court that deciphers chess and answers with backgammon is not threatened by foreign genius — it converses with it. The Shahnameh's golden age is defined as much by confidence toward the world's wisdom as by victories in war. Fear closes doors; greatness opens them.",
+      "explanation_fa": "درباری که شطرنج را می‌گشاید و با نرد پاسخ می‌دهد از نبوغِ بیگانه نمی‌ترسد — با آن گفت‌وگو می‌کند.",
+      "explanation_tg": "Дарборе ки шоҳмотро мекушояд ва бо нард посух медиҳад аз нубуғи бегона наметарсад — бо он гуфтугӯ мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ansh-h7",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The golden age of 'the Just' king was founded on the execution of the Mazdakites — a movement that itself demanded redistribution and equality. What tension does the Shahnameh leave unresolved here?",
+      "question_fa": "عصرِ طلاییِ شاهِ «دادگر» بر اعدامِ مزدکیان بنا شد — جنبشی که خود بازتوزیع و برابری می‌خواست. شاهنامه چه تنشی را این‌جا حل‌نشده می‌گذارد؟",
+      "question_tg": "Асри тиллоии шоҳи «Додгар» бар қатли маздакиён бино шуд — ҷунбише ки худ бозтақсим ва баробарӣ металабид. Шоҳнома чӣ танишеро ин ҷо ҳалнашуда мегузорад?",
+      "answers": [
+        "The tension is that Anushirvan secretly believed in Mazdak's teaching",
+        "The king famous for justice destroyed a movement that claimed to want justice — order and equality competed, and order won by force",
+        "The Shahnameh resolves it by showing the Mazdakites returning to power later",
+        "There is no tension — the Mazdakites were simply bandits"
+      ],
+      "answers_fa": [
+        "تنش این است که انوشیروان پنهانی به آموزه‌ی مزدک باور داشت",
+        "شاهِ مشهور به عدالت جنبشی را نابود کرد که ادعای عدالت‌خواهی داشت — نظم و برابری رقابت کردند و نظم با زور پیروز شد",
+        "شاهنامه آن را با نشان دادنِ بازگشتِ مزدکیان به قدرت حل می‌کند",
+        "تنشی نیست — مزدکیان صرفاً راهزن بودند"
+      ],
+      "answers_tg": [
+        "Таниш ин аст ки Ануширвон пинҳонӣ ба таълимоти Маздак бовар дошт",
+        "Шоҳи машҳур ба адолат ҷунбишеро нобуд кард ки даъвои адолатхоҳӣ дошт — тартиб ва баробарӣ рақобат карданд ва тартиб бо зӯр пирӯз шуд",
+        "Шоҳнома онро бо нишон додани бозгашти маздакиён ба қудрат ҳал мекунад",
+        "Танише нест — маздакиён сирфан роҳзан буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Both sides claimed justice: Mazdak's levelling and Anushirvan's order. The chronicle records the executions without moralizing, leaving the reader to weigh whether the golden age justified its founding violence. The Shahnameh trusts its reader with unresolved questions — that is its method.",
+      "explanation_fa": "هر دو سو مدعیِ عدالت بودند: برابریِ مزدک و نظمِ انوشیروان. شاهنامه قضاوت را به خواننده می‌سپارد.",
+      "explanation_tg": "Ҳар ду сӯ муддаии адолат буданд: баробарии Маздак ва тартиби Ануширвон. Шоҳнома қазоватро ба хонанда месупорад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ansh-h8",
+      "chapter_slug": "anushirvan",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "A thousand years after his death, 'Anushirvan' is still the name a Persian speaker reaches for to describe a genuinely good ruler. What does this say about where the Shahnameh locates a king's final reward?",
+      "question_fa": "هزار سال پس از مرگش، «انوشیروان» همچنان نامی است که فارسی‌زبان برای توصیفِ حاکمی واقعاً نیک به آن می‌رسد. این درباره‌ی جایی که شاهنامه پاداشِ نهاییِ شاه را می‌نهد چه می‌گوید؟",
+      "question_tg": "Ҳазор сол пас аз маргаш, «Ануширвон» ҳамчунон номест ки форсизабон барои тавсифи ҳокими воқеан нек ба он мерасад. Ин дар бораи ҷое ки Шоҳнома подоши ниҳоии шоҳро мениҳад чӣ мегӯяд?",
+      "answers": [
+        "The final reward is the size of the empire he leaves behind",
+        "The final reward is divine judgment in the afterlife",
+        "The final reward is memory — a king's true verdict is what the language itself remembers of him after the throne, treasury and empire are gone",
+        "The final reward is a peaceful death in old age"
+      ],
+      "answers_fa": [
+        "پاداشِ نهایی اندازه‌ی امپراتوری‌ای است که به جا می‌گذارد",
+        "پاداشِ نهایی داوریِ الهی در آخرت است",
+        "پاداشِ نهایی حافظه است — حکمِ راستینِ شاه آن است که خودِ زبان پس از رفتنِ تخت و خزانه و امپراتوری از او به یاد می‌آورد",
+        "پاداشِ نهایی مرگی آرام در پیری است"
+      ],
+      "answers_tg": [
+        "Подоши ниҳоӣ андозаи империяест ки ба ҷо мегузорад",
+        "Подоши ниҳоӣ доварии илоҳӣ дар охират аст",
+        "Подоши ниҳоӣ ҳофиза аст — ҳукми ростини шоҳ он аст ки худи забон пас аз рафтани тахту хазина ва империя аз ӯ ба ёд меоварад",
+        "Подоши ниҳоӣ марги ором дар пирист"
+      ],
+      "correct_answer": 2,
+      "explanation": "His empire fell within a century of his death; his name did not. The Shahnameh's deepest currency is memory: thrones pass, treasuries empty, but what a people's language keeps saying about a king is the only verdict that survives. Anushirvan won that verdict.",
+      "explanation_fa": "امپراتوری‌اش یک قرن پس از مرگش سقوط کرد؛ نامش نه. ژرف‌ترین ارزِ شاهنامه حافظه است.",
+      "explanation_tg": "Империяаш як қарн пас аз маргаш суқут кард; номаш на. Жарфтарин арзи Шоҳнома ҳофиза аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

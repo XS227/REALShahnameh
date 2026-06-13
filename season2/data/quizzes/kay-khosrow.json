@@ -9,22 +9,22 @@
       "question_fa": "چرا دربار کی‌خسرو را به جای فریبرز، که پسرِ ارشدِ کی‌کاووس بود، به عنوانِ شاه می‌پذیرد؟",
       "question_tg": "Чаро дарбор Кай Хусравро ба ҷои Фарибурз ҳамчун подшоҳ мепазирад?",
       "answers": [
-        "Rostam supports Kay Khosrow publicly and the court follows Rostam's endorsement",
-        "A test is set: both princes attempt to open a great fortress gate. Fariborz fails with a full army; Kay Khosrow opens it with prayer alone",
         "Kay Kavus names Kay Khosrow as his heir before dying, overriding normal succession",
-        "Kay Khosrow is older than Fariborz — the chroniclers had confused their ages"
+        "A test is set: both princes attempt to open a great fortress gate. Fariborz fails with a full army; Kay Khosrow opens it with prayer alone",
+        "Kay Khosrow is older than Fariborz — the chroniclers had confused their ages",
+        "Rostam supports Kay Khosrow publicly and the court follows Rostam's endorsement"
       ],
       "answers_fa": [
-        "رستم علناً از کی‌خسرو حمایت می‌کند و دربار از تأییدِ رستم پیروی می‌کند",
-        "آزمایشی تعیین می‌شود: هر دو شاهزاده سعی می‌کنند دروازه‌ی قلعه‌ای عظیم را بگشایند. فریبرز با سپاهِ کامل شکست می‌خورد؛ کی‌خسرو با دعا تنها می‌گشاید",
         "کی‌کاووس قبل از مرگ کی‌خسرو را جانشینش نام می‌برد",
-        "کی‌خسرو از فریبرز مسن‌تر است — مورخان سن‌هایشان را گیج کرده بودند"
+        "آزمایشی تعیین می‌شود: هر دو شاهزاده سعی می‌کنند دروازه‌ی قلعه‌ای عظیم را بگشایند. فریبرز با سپاهِ کامل شکست می‌خورد؛ کی‌خسرو با دعا تنها می‌گشاید",
+        "کی‌خسرو از فریبرز مسن‌تر است — مورخان سن‌هایشان را گیج کرده بودند",
+        "رستم علناً از کی‌خسرو حمایت می‌کند و دربار از تأییدِ رستم پیروی می‌کند"
       ],
       "answers_tg": [
-        "Рустам ошкоро аз Кай Хусрав дастгирӣ мекунад ва дарбор аз тасдиқи Рустам пайравӣ мекунад",
-        "Озмоише таъин мешавад: ҳар ду шаҳзода мекӯшанд дарвозаи қалъаи азимеро кушоянд. Фарибурз бо сипоҳи пур шикаст мехӯрад; Кай Хусрав бо дуо танҳо мекушояд",
         "Кай Кову пеш аз марг Кай Хусравро ворис мегирад",
-        "Кай Хусрав аз Фарибурз калонтар аст"
+        "Озмоише таъин мешавад: ҳар ду шаҳзода мекӯшанд дарвозаи қалъаи азимеро кушоянд. Фарибурз бо сипоҳи пур шикаст мехӯрад; Кай Хусрав бо дуо танҳо мекушояд",
+        "Кай Хусрав аз Фарибурз калонтар аст",
+        "Рустам ошкоро аз Кай Хусрав дастгирӣ мекунад ва дарбор аз тасдиқи Рустам пайравӣ мекунад"
       ],
       "correct_answer": 1,
       "explanation": "The court is genuinely divided — Fariborz has seniority and supporters, Kay Khosrow has the backing of Giv and Rostam. Neither argument settles it. A test is proposed: both princes separately attempt to open a great fortress held by one of Afrasiab's generals. Fariborz mounts a full military assault and fails. Kay Khosrow arrives alone, prays, and the gate opens. The Shahnameh presents this as a structural fact: the gate was not meant for Fariborz. Heaven's choice is expressed through gates opening, not through proclamations.",
@@ -44,100 +44,30 @@
       "question_fa": "کی‌خسرو کجا بزرگ شد، و گیو چطور او را پیدا کرد؟",
       "question_tg": "Кай Хусрав дар куҷо калон шуд, ва Гев чӣ тавр ӯро ёфт?",
       "answers": [
-        "He was hidden in a mountain monastery in Iran, discovered when the abbot reported him to Kay Kavus",
-        "He was raised in Kabul by Zal, who recognized Siavash's bloodline in him immediately",
+        "He lived disguised as a Turanian noble until Afrasiab's general Piran revealed him",
         "He was raised in Turan as a shepherd boy in hiding — Giv spent seven years searching and found him tending a flock on a hillside",
-        "He lived disguised as a Turanian noble until Afrasiab's general Piran revealed him"
+        "He was hidden in a mountain monastery in Iran, discovered when the abbot reported him to Kay Kavus",
+        "He was raised in Kabul by Zal, who recognized Siavash's bloodline in him immediately"
       ],
       "answers_fa": [
-        "در دیری کوهستانی در ایران پنهان شد و وقتی راهبِ اعظم او را به کی‌کاووس گزارش داد کشف شد",
-        "در کابل پیشِ زال پرورش یافت که نسبِ سیاوش را در او فوری شناخت",
+        "تا زمانی که سردارِ افراسیاب پیران او را آشکار کرد به عنوانِ نجیبزاده‌ی توران ناشناخته زندگی کرد",
         "در توران به عنوانِ چوپان‌زاده در مخفیانگی پرورش یافت — گیو هفت سال گشت و او را در حالِ چرانیدنِ گله در تپه‌ای پیدا کرد",
-        "تا زمانی که سردارِ افراسیاب پیران او را آشکار کرد به عنوانِ نجیبزاده‌ی توران ناشناخته زندگی کرد"
+        "در دیری کوهستانی در ایران پنهان شد و وقتی راهبِ اعظم او را به کی‌کاووس گزارش داد کشف شد",
+        "در کابل پیشِ زال پرورش یافت که نسبِ سیاوش را در او فوری شناخت"
       ],
       "answers_tg": [
-        "Дар як монастири кӯҳистонӣ дар Эрон пинҳон шуда буд",
-        "Дар Кобул пеши Зол калон шуд",
+        "То вақте ки саркардаи Афросиёб Пирон ӯро ошкор кард ҳамчун нажодзодаи Туронӣ зиндагӣ кард",
         "Дар Турон ҳамчун чӯпонзода дар пинҳонӣ калон шуд — Гев ҳафт сол ҷустуҷӯ кард ва ӯро дар ҳоли чарондани рама дар теппаае ёфт",
-        "То вақте ки саркардаи Афросиёб Пирон ӯро ошкор кард ҳамчун нажодзодаи Туронӣ зиндагӣ кард"
+        "Дар як монастири кӯҳистонӣ дар Эрон пинҳон шуда буд",
+        "Дар Кобул пеши Зол калон шуд"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "Farangis fled east after Siavash's execution and gave birth in the Turanian wilderness. She raised Kay Khosrow in hiding, tending herds on the Turanian steppe — the same land where Siavash was killed. He grew up knowing exactly who he was and giving no outward sign of it. Giv, one of Iran's great paladins, spent seven years searching for him alone in Turan before finding him as a shepherd on a hillside. When Giv found the boy, the Shahnameh notes that there was no mistaking what he had found.",
       "explanation_fa": "فرنگیس بعد از اعدامِ سیاوش فرار کرد و در بیابانِ توران زایمان کرد. کی‌خسرو را مخفیانه پرورش داد. گیو هفت سال تنها در توران جستجو کرد. وقتی پسرک را در تپه پیدا کرد، اشتباهی در آنچه یافته نبود.",
       "explanation_tg": "Фарнгис пас аз иҷрои Сиёвуш гурехт ва дар биёбони Турон зоид. Кай Хусравро пинҳонӣ калон кард. Гев ҳафт сол дар Турон ҷустуҷӯ кард. Вақте писаракро дар теппа ёфт, дар он чи ёфт шубҳае набуд.",
       "reward": {
         "xp": 100,
         "real": 40
-      }
-    },
-    {
-      "id": "kkh-m1",
-      "chapter_slug": "kay-khosrow",
-      "quiz_part": 3,
-      "difficulty": "medium",
-      "question": "Kay Khosrow announces his departure at the height of his reign, citing his fear of becoming like Kay Kavus. What does this decision reveal about how the Shahnameh defines ideal kingship?",
-      "question_fa": "کی‌خسرو در اوجِ سلطنتش رفتنش را اعلام می‌کند و ترسش از تبدیل شدن به کی‌کاووس را عنوان می‌کند. این تصمیم چه چیزی درباره‌ی تعریفِ شاهنامه از پادشاهیِ ایده‌آل آشکار می‌کند؟",
-      "question_tg": "Кай Хусрав рафтанашро дар авҷи салтанаташ эълон мекунад. Ин қарор дар бораи таърифи Шоҳнома аз подшоҳии идеалӣ чӣ ошкор мекунад?",
-      "answers": [
-        "Ideal kingship means knowing when to delegate — Kay Khosrow leaves because he has found better administrators than himself",
-        "Ideal kingship requires recognizing that power is a loan, not a possession — leaving at the height of power, before corruption arrives, is the highest act of wisdom the chronicle records",
-        "The Shahnameh presents Kay Khosrow's departure as a failure of nerve — great kings stay and endure what the throne demands",
-        "His departure shows that the Shahnameh values religious devotion over governance — he leaves to pursue spiritual life"
-      ],
-      "answers_fa": [
-        "پادشاهیِ ایده‌آل یعنی دانستنِ زمانِ واگذاری — کی‌خسرو می‌رود چون مدیرانِ بهتری از خودش پیدا کرده",
-        "پادشاهیِ ایده‌آل مستلزمِ تشخیصِ این است که قدرت وام است نه مِلک — رفتن در اوجِ قدرت، پیش از رسیدنِ فساد، عالی‌ترین عملِ خردی است که شاهنامه ثبت می‌کند",
-        "شاهنامه رفتنِ کی‌خسرو را شکستِ شجاعت نشان می‌دهد — شاهانِ بزرگ می‌مانند",
-        "رفتنش نشان می‌دهد شاهنامه تقوا را بر حکومت مقدم می‌داند"
-      ],
-      "answers_tg": [
-        "Подшоҳии идеалӣ яъне донистани вақти вогузорӣ",
-        "Подшоҳии идеалӣ талаб мекунад тан диҳед, ки қудрат қарз аст, на мулк — рафтан дар авҷи қудрат, пеш аз расидани фасод, олитарин амали ақлест ки Шоҳнома сабт мекунад",
-        "Шоҳнома рафтани Кай Хусравро шикасти далерӣ нишон медиҳад",
-        "Рафтанаш нишон медиҳад Шоҳнома тақворо бар ҳукумат муқаддам медонад"
-      ],
-      "correct_answer": 1,
-      "explanation": "Kay Khosrow's departure is the Shahnameh's most explicit statement about the nature of ideal kingship. He names Kay Kavus as the warning — a king who sat on the throne too long and was corrupted by it. He says: I will not wait. The chronicle treats this not as abdication but as the highest possible act of wisdom: recognizing that power is a loan, that its proper holder returns it before spending it on himself. No other king in the Shahnameh makes this choice. Kay Khosrow is unique precisely because he knows what he is and knows when to stop — and the chronicle marks his uniqueness by having him walk into the mountain and not return.",
-      "explanation_fa": "رفتنِ کی‌خسرو صریح‌ترین اظهاریه‌ی شاهنامه درباره‌ی ماهیتِ پادشاهیِ ایده‌آل است. کی‌کاووس را به عنوانِ هشدار نام می‌برد. می‌گوید: منتظر نمی‌مانم. شاهنامه این را نه به عنوانِ استعفا بلکه به عنوانِ عالی‌ترین عملِ ممکنِ خرد می‌داند: تشخیصِ اینکه قدرت وام است.",
-      "explanation_tg": "Рафтани Кай Хусрав возеҳтарин баёнияи Шоҳнома дар бораи моҳияти подшоҳии идеалӣ аст. Кай Ковусро ҳамчун огоҳӣ ном мебарад. Мегӯяд: интизор намемонам. Шоҳнома ин қарорро ҳамчун олитарин амали ақл медонад.",
-      "reward": {
-        "xp": 150,
-        "real": 65
-      }
-    },
-    {
-      "id": "kkh-h1",
-      "chapter_slug": "kay-khosrow",
-      "quiz_part": 4,
-      "difficulty": "hard",
-      "question": "The Shahnameh gives Kay Khosrow a specific background — raised in Turan in the land of his father's killers — rather than having him raised in Iran under protection. What does this choice of biography achieve in the chronicle's larger argument?",
-      "question_fa": "شاهنامه به کی‌خسرو زمینه‌ی خاصی می‌دهد — پرورش‌یافته در توران در سرزمینِ قاتلانِ پدرش — به جای اینکه زیرِ حفاظت در ایران بزرگ شود. این انتخابِ زندگی‌نامه چه چیزی در استدلالِ بزرگ‌ترِ شاهنامه محقق می‌کند؟",
-      "question_tg": "Шоҳнома ба Кай Хусрав замина медиҳад — дар Турон дар сарзамини қотилони падараш калон шудааст. Ин чӣ мефаҳмонад?",
-      "answers": [
-        "It establishes that the answer to Siavash's death grew in the same soil as the death itself — the land that destroyed Siavash also produced the instrument of his vengeance, which is the chronicle's most precise structural symmetry",
-        "It proves that Kay Khosrow had no help from Iran, making his rise entirely self-made and thus more legitimately heroic",
-        "It makes his later vengeance more dramatic — he has personal knowledge of Turan's terrain and commanders",
-        "It explains his neutrality in the succession dispute — having grown up in Turan, he has no Iranian faction loyalties"
-      ],
-      "answers_fa": [
-        "ثابت می‌کند پاسخ به مرگِ سیاوش در همان خاکی رویید که مرگ در آن اتفاق افتاد — سرزمینی که سیاوش را نابود کرد ابزارِ انتقامش را هم تولید کرد، که دقیق‌ترین تقارنِ ساختاریِ شاهنامه است",
-        "ثابت می‌کند کی‌خسرو هیچ کمکی از ایران نداشت، که صعودش را کاملاً دستِ‌خودش و از این رو مشروع‌تر قهرمانانه‌تر می‌کند",
-        "انتقامِ بعدی‌اش را دراماتیک‌تر می‌کند — آشنایی شخصی با زمین و فرماندهانِ توران دارد",
-        "بی‌طرفیِ او در دعوای جانشینی را توضیح می‌دهد — در توران بزرگ شده، وفاداریِ فراکسیونی ایرانی ندارد"
-      ],
-      "answers_tg": [
-        "Исбот мекунад, ки ҷавоб ба марги Сиёвуш дар ҳамон хоке рӯид, ки марг дар он рух дод — сарзамине ки Сиёвушро нобуд кард абзори интиқомашро низ тавлид кард",
-        "Исбот мекунад Кай Хусрав ҳеҷ кумаке аз Эрон надошт",
-        "Интиқоми баъдиашро дарматиктар мекунад",
-        "Бетарафии ӯро дар баҳси ворисӣ тавзеҳ медиҳад"
-      ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh's most precise structural symmetry in the Kay Khosrow chapters is geographical. Siavash was killed in Turan. His blood fell on Turanian earth and grew a mourning plant. Kay Khosrow grew up on that same Turanian earth — tended herds, perhaps walked past the field where his father died, was shaped by the landscape that shaped his father's death. The chronicle is saying: the answer grew in the same place as the question. The destruction of Siavash produced, in the same soil, the instrument of its own undoing. This is not dramatic irony — it is the Shahnameh's deepest formal statement about how justice works in its world.",
-      "explanation_fa": "دقیق‌ترین تقارنِ ساختاریِ شاهنامه در فصل‌های کی‌خسرو جغرافیایی است. سیاوش در توران کشته شد. خونش روی خاکِ توران افتاد. کی‌خسرو روی همان خاکِ توران بزرگ شد. شاهنامه می‌گوید: پاسخ در همان جایی رویید که سؤال مطرح شد. این طنازِ دراماتیک نیست — عمیق‌ترین اظهاریه‌ی رسمیِ شاهنامه درباره‌ی طرزِ کارکردِ عدالت در دنیایش است.",
-      "explanation_tg": "Дақиқтарин тақорнии сохторӣ дар боб-ҳои Кай Хусрав ҷуғрофист. Сиёвуш дар Турон куштa шуд. Хунаш дар хоки Турон рехт. Кай Хусрав дар ҳамон хоки Турон калон шуд. Шоҳнома мегӯяд: ҷавоб дар ҳамон ҷое рӯид, ки савол матраҳ шуд.",
-      "reward": {
-        "xp": 180,
-        "real": 80
       }
     },
     {
@@ -149,24 +79,24 @@
       "question_fa": "کی‌خسرو چگونه در آزمونِ جانشینی دروازه‌های قلعه را گشود؟",
       "question_tg": "Кай Хусрав чӣ тавр дар озмони вориси дарвозаҳои қалъаро кушод?",
       "answers": [
-        "He led a military assault of fifty warriors",
+        "He used Rostam's strength to break the doors",
         "He bribed the garrison commander",
-        "He arrived alone, prayed, and the gate opened",
-        "He used Rostam's strength to break the doors"
+        "He led a military assault of fifty warriors",
+        "He arrived alone, prayed, and the gate opened"
       ],
       "answers_fa": [
-        "حمله‌ی نظامیِ پنجاه جنگجو را رهبری کرد",
+        "از قدرتِ رستم برای شکستنِ درها استفاده کرد",
         "فرمانده‌ی پادگان را رشوه داد",
-        "تنها آمد، دعا کرد، و دروازه باز شد",
-        "از قدرتِ رستم برای شکستنِ درها استفاده کرد"
+        "حمله‌ی نظامیِ پنجاه جنگجو را رهبری کرد",
+        "تنها آمد، دعا کرد، و دروازه باز شد"
       ],
       "answers_tg": [
-        "Ҳамлаи ҳарбии панҷоҳ ҷангиро роҳбарӣ кард",
+        "Аз қудрати Рустам барои шикастани дарҳо истифода кард",
         "Фармондеҳи гарнизонро ришва дод",
-        "Танҳо омад, дуо кард, ва дарвоза кушода шуд",
-        "Аз қудрати Рустам барои шикастани дарҳо истифода кард"
+        "Ҳамлаи ҳарбии панҷоҳ ҷангиро роҳбарӣ кард",
+        "Танҳо омад, дуо кард, ва дарвоза кушода шуд"
       ],
-      "correct_answer": 2,
+      "correct_answer": 3,
       "explanation": "Fariborz led a full military assault and failed. Kay Khosrow arrived alone, prayed, and the gate opened. The Shahnameh records this without commentary.",
       "explanation_fa": "فریبرز حمله‌ی نظامیِ کاملی را رهبری کرد و شکست خورد. کی‌خسرو تنها آمد، دعا کرد، و دروازه باز شد. شاهنامه این را بدونِ تفسیر ثبت می‌کند.",
       "explanation_tg": "Фарибурз ҳамлаи ҳарбии пурра роҳбарӣ кард ва шикаст хӯрд. Кай Хусрав танҳо омад, дуо кард, ва дарвоза кушода шуд. Шоҳнома инро бидуни тафсир сабт мекунад.",
@@ -184,30 +114,65 @@
       "question_fa": "چه کسی هفت سال در جستجوی کی‌خسروِ پنهان در توران بود؟",
       "question_tg": "Кӣ ҳафт сол дар ҷустуҷӯи Кай Хусрави пинҳон дар Турон буд?",
       "answers": [
+        "Giv",
         "Rostam",
         "Tus",
-        "Gudarz",
-        "Giv"
+        "Gudarz"
       ],
       "answers_fa": [
+        "گیو",
         "رستم",
         "طوس",
-        "گودرز",
-        "گیو"
+        "گودرز"
       ],
       "answers_tg": [
+        "Гев",
         "Рустам",
         "Тус",
-        "Гударз",
-        "Гев"
+        "Гударз"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "Giv, one of Iran's great paladins, spent seven years searching for Kay Khosrow in Turan. He found a shepherd boy on an open hillside.",
       "explanation_fa": "گیو، یکی از پالادین‌های بزرگِ ایران، هفت سال در جستجوی کی‌خسرو در توران بود. چوپان‌بچه‌ای را روی تپه‌ای در فضای باز پیدا کرد.",
       "explanation_tg": "Гев, яке аз паладинҳои бузурги Эрон, ҳафт сол дар ҷустуҷӯи Кай Хусрав дар Турон буд. Писарбачаи чӯпоне ёфт дар тепаи кушоде.",
       "reward": {
         "xp": 210,
         "real": 95
+      }
+    },
+    {
+      "id": "kkh-m1",
+      "chapter_slug": "kay-khosrow",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Kay Khosrow announces his departure at the height of his reign, citing his fear of becoming like Kay Kavus. What does this decision reveal about how the Shahnameh defines ideal kingship?",
+      "question_fa": "کی‌خسرو در اوجِ سلطنتش رفتنش را اعلام می‌کند و ترسش از تبدیل شدن به کی‌کاووس را عنوان می‌کند. این تصمیم چه چیزی درباره‌ی تعریفِ شاهنامه از پادشاهیِ ایده‌آل آشکار می‌کند؟",
+      "question_tg": "Кай Хусрав рафтанашро дар авҷи салтанаташ эълон мекунад. Ин қарор дар бораи таърифи Шоҳнома аз подшоҳии идеалӣ чӣ ошкор мекунад?",
+      "answers": [
+        "His departure shows that the Shahnameh values religious devotion over governance — he leaves to pursue spiritual life",
+        "Ideal kingship means knowing when to delegate — Kay Khosrow leaves because he has found better administrators than himself",
+        "Ideal kingship requires recognizing that power is a loan, not a possession — leaving at the height of power, before corruption arrives, is the highest act of wisdom the chronicle records",
+        "The Shahnameh presents Kay Khosrow's departure as a failure of nerve — great kings stay and endure what the throne demands"
+      ],
+      "answers_fa": [
+        "رفتنش نشان می‌دهد شاهنامه تقوا را بر حکومت مقدم می‌داند",
+        "پادشاهیِ ایده‌آل یعنی دانستنِ زمانِ واگذاری — کی‌خسرو می‌رود چون مدیرانِ بهتری از خودش پیدا کرده",
+        "پادشاهیِ ایده‌آل مستلزمِ تشخیصِ این است که قدرت وام است نه مِلک — رفتن در اوجِ قدرت، پیش از رسیدنِ فساد، عالی‌ترین عملِ خردی است که شاهنامه ثبت می‌کند",
+        "شاهنامه رفتنِ کی‌خسرو را شکستِ شجاعت نشان می‌دهد — شاهانِ بزرگ می‌مانند"
+      ],
+      "answers_tg": [
+        "Рафтанаш нишон медиҳад Шоҳнома тақворо бар ҳукумат муқаддам медонад",
+        "Подшоҳии идеалӣ яъне донистани вақти вогузорӣ",
+        "Подшоҳии идеалӣ талаб мекунад тан диҳед, ки қудрат қарз аст, на мулк — рафтан дар авҷи қудрат, пеш аз расидани фасод, олитарин амали ақлест ки Шоҳнома сабт мекунад",
+        "Шоҳнома рафтани Кай Хусравро шикасти далерӣ нишон медиҳад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Kay Khosrow's departure is the Shahnameh's most explicit statement about the nature of ideal kingship. He names Kay Kavus as the warning — a king who sat on the throne too long and was corrupted by it. He says: I will not wait. The chronicle treats this not as abdication but as the highest possible act of wisdom: recognizing that power is a loan, that its proper holder returns it before spending it on himself. No other king in the Shahnameh makes this choice. Kay Khosrow is unique precisely because he knows what he is and knows when to stop — and the chronicle marks his uniqueness by having him walk into the mountain and not return.",
+      "explanation_fa": "رفتنِ کی‌خسرو صریح‌ترین اظهاریه‌ی شاهنامه درباره‌ی ماهیتِ پادشاهیِ ایده‌آل است. کی‌کاووس را به عنوانِ هشدار نام می‌برد. می‌گوید: منتظر نمی‌مانم. شاهنامه این را نه به عنوانِ استعفا بلکه به عنوانِ عالی‌ترین عملِ ممکنِ خرد می‌داند: تشخیصِ اینکه قدرت وام است.",
+      "explanation_tg": "Рафтани Кай Хусрав возеҳтарин баёнияи Шоҳнома дар бораи моҳияти подшоҳии идеалӣ аст. Кай Ковусро ҳамчун огоҳӣ ном мебарад. Мегӯяд: интизор намемонам. Шоҳнома ин қарорро ҳамчун олитарин амали ақл медонад.",
+      "reward": {
+        "xp": 150,
+        "real": 65
       }
     },
     {
@@ -219,24 +184,24 @@
       "question_fa": "چرا جانشینیِ تختِ کی‌کاووس مورد مجادله بود؟",
       "question_tg": "Чаро вориси тахти Кай Ковус мавриди баҳс буд?",
       "answers": [
-        "Kay Kavus had declared no successor",
         "Fariborz was the elder son with supporters, while Kay Khosrow had stronger divine selection",
+        "Kay Kavus had declared no successor",
         "The paladins wanted to choose the king by military tournament",
         "Kay Kavus had five sons with equal claims"
       ],
       "answers_fa": [
-        "کی‌کاووس جانشینی اعلام نکرده بود",
         "فریبرز پسرِ بزرگ‌تر با حامیان بود، در حالی که کی‌خسرو انتخابِ الهیِ قوی‌تری داشت",
+        "کی‌کاووس جانشینی اعلام نکرده بود",
         "پالادین‌ها می‌خواستند شاه را از طریقِ مسابقه‌ی نظامی انتخاب کنند",
         "کی‌کاووس پنج پسر با ادعاهای مساوی داشت"
       ],
       "answers_tg": [
-        "Кай Ковус ворисе эълон накарда буд",
         "Фарибурз писари калонтар бо ҳомиён буд, дар ҳоле ки Кай Хусрав интихоби илоҳии қавитаре дошт",
+        "Кай Ковус ворисе эълон накарда буд",
         "Паладинҳо мехостанд подшоҳро тавассути мусобиқаи ҳарбӣ интихоб кунанд",
         "Кай Ковус панҷ писар бо иддаоҳои баробар дошт"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "'The succession question was not obvious: Fariborz was the elder son, familiar, with supporters.' The test at the fortress resolved the contest.",
       "explanation_fa": "«سؤالِ جانشینی واضح نبود: فریبرز پسرِ بزرگ‌تر، آشنا، با حامیان بود.» آزمونِ قلعه مجادله را حل کرد.",
       "explanation_tg": "«Масъалаи вориси равшан набуд: Фарибурз писари калонтар, ошно, бо ҳомиён буд.» Озмони қалъа мунозираро ҳал кард.",
@@ -254,21 +219,21 @@
       "question_fa": "فصل چرا می‌گوید جنگِ بزرگ علیهِ افراسیاب «نه از روی جاه‌طلبی بلکه از روی بدهی» سازماندهی شد؟",
       "question_tg": "Фасл чаро мегӯяд ҷанги бузург бар зидди Афросиёб «на аз рӯи ҳирс балки аз рӯи қарз» ташкил шуд?",
       "answers": [
-        "Iran owed tribute to Turan from a previous treaty",
-        "The war was a moral settlement — fought to repay the specific debt of Siavash's blood in Turanian earth",
         "Kay Khosrow had promised Farangis to avenge Siavash",
+        "The war was a moral settlement — fought to repay the specific debt of Siavash's blood in Turanian earth",
+        "Iran owed tribute to Turan from a previous treaty",
         "Iran needed Turanian territory for its own survival"
       ],
       "answers_fa": [
-        "ایران از معاهده‌ی قبلی به توران خراج بدهکار بود",
-        "جنگ یک تسویه‌حسابِ اخلاقی بود — برای پرداختِ بدهیِ خاصِ خونِ سیاوش در خاکِ توران",
         "کی‌خسرو به فرنگیس وعده داده بود که از سیاوش انتقام بگیرد",
+        "جنگ یک تسویه‌حسابِ اخلاقی بود — برای پرداختِ بدهیِ خاصِ خونِ سیاوش در خاکِ توران",
+        "ایران از معاهده‌ی قبلی به توران خراج بدهکار بود",
         "ایران برای بقای خودش به سرزمینِ توران نیاز داشت"
       ],
       "answers_tg": [
-        "Эрон аз шартномаи қаблӣ ба Турон хироҷ қарздор буд",
-        "Ҷанг як тасфияи ахлоқӣ буд — барои пардохти қарзи хоссаи хуни Сиёвуш дар хоки Турон",
         "Кай Хусрав ба Фарангис ваъда дода буд ки аз Сиёвуш интиқом гирад",
+        "Ҷанг як тасфияи ахлоқӣ буд — барои пардохти қарзи хоссаи хуни Сиёвуш дар хоки Турон",
+        "Эрон аз шартномаи қаблӣ ба Турон хироҷ қарздор буд",
         "Эрон барои бақои худаш ба сарзамини Турон ниёз дошт"
       ],
       "correct_answer": 1,
@@ -289,24 +254,24 @@
       "question_fa": "کی‌خسرو چگونه تخت را ترک کرد؟",
       "question_tg": "Кай Хусрав чӣ тавр тахтро тарк кард?",
       "answers": [
-        "He was killed in the final battle against Afrasiab",
         "He abdicated and his son succeeded him",
-        "He named a successor, distributed the kingdom, said his farewells, and walked into the Alborz mountains — never seen again",
-        "He was deposed by the paladins after a long reign"
+        "He was deposed by the paladins after a long reign",
+        "He was killed in the final battle against Afrasiab",
+        "He named a successor, distributed the kingdom, said his farewells, and walked into the Alborz mountains — never seen again"
       ],
       "answers_fa": [
-        "در نبردِ نهاییِ بر ضدِ افراسیاب کشته شد",
         "تخت را واگذار کرد و پسرش جانشینش شد",
-        "جانشین معرفی کرد، قلمرو را توزیع کرد، خداحافظی کرد، و به کوه‌های البرز رفت — هرگز دیده نشد",
-        "پس از عمرِ طولانی توسطِ پالادین‌ها از تخت برانداخته شد"
+        "پس از عمرِ طولانی توسطِ پالادین‌ها از تخت برانداخته شد",
+        "در نبردِ نهاییِ بر ضدِ افراسیاب کشته شد",
+        "جانشین معرفی کرد، قلمرو را توزیع کرد، خداحافظی کرد، و به کوه‌های البرز رفت — هرگز دیده نشد"
       ],
       "answers_tg": [
-        "Дар набарди ниҳоии бар зидди Афросиёб кушта шуд",
         "Тахтро вогузор кард ва писараш вориссаш шуд",
-        "Ворис муаррифӣ кард, қаламравро тақсим кард, хайрбодӣ гуфт, ва ба кӯҳҳои Алборз рафт — ҳаргиз дида нашуд",
-        "Пас аз умри дароз аз ҷониби паладинҳо аз тахт сарнагун шуд"
+        "Пас аз умри дароз аз ҷониби паладинҳо аз тахт сарнагун шуд",
+        "Дар набарди ниҳоии бар зидди Афросиёб кушта шуд",
+        "Ворис муаррифӣ кард, қаламравро тақсим кард, хайрбодӣ гуфт, ва ба кӯҳҳои Алборз рафт — ҳаргиз дида нашуд"
       ],
-      "correct_answer": 2,
+      "correct_answer": 3,
       "explanation": "At his zenith, Kay Khosrow announced he was leaving. He distributed the kingdom, said farewells, and walked into the Alborz mountains. He was not seen again.",
       "explanation_fa": "در اوجِ خود، کی‌خسرو اعلام کرد که می‌رود. قلمرو را توزیع کرد، خداحافظی کرد، و به کوه‌های البرز رفت. دیگر دیده نشد.",
       "explanation_tg": "Дар авҷи худ, Кай Хусрав эълон кард ки меравад. Қаламравро тақсим кард, хайрбодӣ гуфт, ва ба кӯҳҳои Алборз рафт. Дигар дида нашуд.",
@@ -325,23 +290,23 @@
       "question_tg": "Кай Хусрав дар Турон бо чаронии рамаҳо калон шуд. Ин кӯдакӣ чӣ тавр рӯйкарди ӯро нисбат ба ҷанги бузург шакл дод?",
       "answers": [
         "It gave him a network of informants in Turan",
+        "It gave him knowledge of the Turanian language to negotiate",
         "He pursued Afrasiab with the patience of someone raised in this landscape — in no hurry because he knew there was nowhere to go",
-        "It made him sympathetic to the Turanian people",
-        "It gave him knowledge of the Turanian language to negotiate"
+        "It made him sympathetic to the Turanian people"
       ],
       "answers_fa": [
         "شبکه‌ای از خبرچینان در توران به او داد",
+        "دانشِ زبانِ تورانی برای مذاکره به او داد",
         "افراسیاب را با صبرِ کسی که در این چشم‌انداز بزرگ شده تعقیب کرد — عجله‌ای نداشت چون می‌دانست جایی برای رفتن وجود ندارد",
-        "او را نسبت به مردمِ توران دلسوز کرد",
-        "دانشِ زبانِ تورانی برای مذاکره به او داد"
+        "او را نسبت به مردمِ توران دلسوز کرد"
       ],
       "answers_tg": [
         "Шабакаи хабарчинон дар Турон ба ӯ дод",
+        "Дониши забони Туронӣ барои музокира ба ӯ дод",
         "Афросиёбро бо сабри касе ки дар ин манзара калон шудааст пайгирӣ кард — шитобе надошт зеро медонист ҷое барои рафтан нест",
-        "Ӯро нисбат ба мардуми Турон дилсӯз кард",
-        "Дониши забони Туронӣ барои музокира ба ӯ дод"
+        "Ӯро нисбат ба мардуми Турон дилсӯз кард"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "'Kay Khosrow followed with the patience of someone raised in this landscape, in no hurry because there was no longer anywhere to go.'",
       "explanation_fa": "«کی‌خسرو با صبرِ کسی که در این چشم‌انداز بزرگ شده تعقیب کرد، بی‌عجله چون دیگر جایی برای رفتن وجود نداشت.»",
       "explanation_tg": "«Кай Хусрав бо сабри касе ки дар ин манзара калон шудааст пайгирӣ кард, бетаъҷил зеро дигар ҷое барои рафтан набуд.»",
@@ -386,6 +351,41 @@
       }
     },
     {
+      "id": "kkh-h1",
+      "chapter_slug": "kay-khosrow",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The Shahnameh gives Kay Khosrow a specific background — raised in Turan in the land of his father's killers — rather than having him raised in Iran under protection. What does this choice of biography achieve in the chronicle's larger argument?",
+      "question_fa": "شاهنامه به کی‌خسرو زمینه‌ی خاصی می‌دهد — پرورش‌یافته در توران در سرزمینِ قاتلانِ پدرش — به جای اینکه زیرِ حفاظت در ایران بزرگ شود. این انتخابِ زندگی‌نامه چه چیزی در استدلالِ بزرگ‌ترِ شاهنامه محقق می‌کند؟",
+      "question_tg": "Шоҳнома ба Кай Хусрав замина медиҳад — дар Турон дар сарзамини қотилони падараш калон шудааст. Ин чӣ мефаҳмонад?",
+      "answers": [
+        "It makes his later vengeance more dramatic — he has personal knowledge of Turan's terrain and commanders",
+        "It proves that Kay Khosrow had no help from Iran, making his rise entirely self-made and thus more legitimately heroic",
+        "It explains his neutrality in the succession dispute — having grown up in Turan, he has no Iranian faction loyalties",
+        "It establishes that the answer to Siavash's death grew in the same soil as the death itself — the land that destroyed Siavash also produced the instrument of his vengeance, which is the chronicle's most precise structural symmetry"
+      ],
+      "answers_fa": [
+        "انتقامِ بعدی‌اش را دراماتیک‌تر می‌کند — آشنایی شخصی با زمین و فرماندهانِ توران دارد",
+        "ثابت می‌کند کی‌خسرو هیچ کمکی از ایران نداشت، که صعودش را کاملاً دستِ‌خودش و از این رو مشروع‌تر قهرمانانه‌تر می‌کند",
+        "بی‌طرفیِ او در دعوای جانشینی را توضیح می‌دهد — در توران بزرگ شده، وفاداریِ فراکسیونی ایرانی ندارد",
+        "ثابت می‌کند پاسخ به مرگِ سیاوش در همان خاکی رویید که مرگ در آن اتفاق افتاد — سرزمینی که سیاوش را نابود کرد ابزارِ انتقامش را هم تولید کرد، که دقیق‌ترین تقارنِ ساختاریِ شاهنامه است"
+      ],
+      "answers_tg": [
+        "Интиқоми баъдиашро дарматиктар мекунад",
+        "Исбот мекунад Кай Хусрав ҳеҷ кумаке аз Эрон надошт",
+        "Бетарафии ӯро дар баҳси ворисӣ тавзеҳ медиҳад",
+        "Исбот мекунад, ки ҷавоб ба марги Сиёвуш дар ҳамон хоке рӯид, ки марг дар он рух дод — сарзамине ки Сиёвушро нобуд кард абзори интиқомашро низ тавлид кард"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's most precise structural symmetry in the Kay Khosrow chapters is geographical. Siavash was killed in Turan. His blood fell on Turanian earth and grew a mourning plant. Kay Khosrow grew up on that same Turanian earth — tended herds, perhaps walked past the field where his father died, was shaped by the landscape that shaped his father's death. The chronicle is saying: the answer grew in the same place as the question. The destruction of Siavash produced, in the same soil, the instrument of its own undoing. This is not dramatic irony — it is the Shahnameh's deepest formal statement about how justice works in its world.",
+      "explanation_fa": "دقیق‌ترین تقارنِ ساختاریِ شاهنامه در فصل‌های کی‌خسرو جغرافیایی است. سیاوش در توران کشته شد. خونش روی خاکِ توران افتاد. کی‌خسرو روی همان خاکِ توران بزرگ شد. شاهنامه می‌گوید: پاسخ در همان جایی رویید که سؤال مطرح شد. این طنازِ دراماتیک نیست — عمیق‌ترین اظهاریه‌ی رسمیِ شاهنامه درباره‌ی طرزِ کارکردِ عدالت در دنیایش است.",
+      "explanation_tg": "Дақиқтарин тақорнии сохторӣ дар боб-ҳои Кай Хусрав ҷуғрофист. Сиёвуш дар Турон куштa шуд. Хунаш дар хоки Турон рехт. Кай Хусрав дар ҳамон хоки Турон калон шуд. Шоҳнома мегӯяд: ҷавоб дар ҳамон ҷое рӯид, ки савол матраҳ шуд.",
+      "reward": {
+        "xp": 180,
+        "real": 80
+      }
+    },
+    {
       "id": "kkh-h4",
       "chapter_slug": "kay-khosrow",
       "quiz_part": 4,
@@ -394,24 +394,24 @@
       "question_fa": "فصل صبرِ کی‌خسروِ کودک را «ویژگی‌ای که موقعیت طلب می‌کرد» توصیف می‌کند. چه چیزی این صبر را از ضعف یا ترسویی متمایز می‌کند؟",
       "question_tg": "Фасл сабри Кай Хусрави кӯдакро «сифате ки вазъ талаб мекард» тавсиф мекунад. Чӣ чиз ин сабрро аз заъф ё тарсутиш фарқ мекунад?",
       "answers": [
-        "He was too young to act otherwise",
         "He knew exactly who he was and gave no outward sign of it — the patience was strategic, not resigned",
-        "He did not know about his father's murder yet",
-        "He was protected by Afrasiab's affection and could not leave"
+        "He was too young to act otherwise",
+        "He was protected by Afrasiab's affection and could not leave",
+        "He did not know about his father's murder yet"
       ],
       "answers_fa": [
-        "خیلی جوان بود که غیر از آن عمل کند",
         "دقیقاً می‌دانست کیست و هیچ نشانه‌ای بیرونی از آن نداد — صبر استراتژیک بود، نه تسلیم‌طلبانه",
-        "هنوز از قتلِ پدرش باخبر نشده بود",
-        "توسطِ محبتِ افراسیاب حفاظت می‌شد و نمی‌توانست برود"
+        "خیلی جوان بود که غیر از آن عمل کند",
+        "توسطِ محبتِ افراسیاب حفاظت می‌شد و نمی‌توانست برود",
+        "هنوز از قتلِ پدرش باخبر نشده بود"
       ],
       "answers_tg": [
-        "Хеле ҷавон буд ки ғайр аз он амал кунад",
         "Дақиқан медонист кист ва ҳеҷ нишонаи беруние аз он надод — сабр стратегӣ буд, на таслимшударона",
-        "Ҳанӯз аз қатли падараш огоҳ нашуда буд",
-        "Аз ҷониби меҳри Афросиёб ҳимоят мешуд ва наметавонист барад"
+        "Хеле ҷавон буд ки ғайр аз он амал кунад",
+        "Аз ҷониби меҳри Афросиёб ҳимоят мешуд ва наметавонист барад",
+        "Ҳанӯз аз қатли падараш огоҳ нашуда буд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "'He grew up knowing exactly who he was, giving no outward sign of it. Patience here was not weakness — it was the quality the situation demanded.'",
       "explanation_fa": "«دقیقاً می‌دانست کیست، و هیچ نشانه‌ای بیرونی از آن نشان نمی‌داد. صبر اینجا ضعف نبود — ویژگی‌ای بود که موقعیت طلب می‌کرد.»",
       "explanation_tg": "«Дақиқан медонист кист ва ҳеҷ нишонаи беруние аз он надод. Сабр ин ҷо заъф набуд — сифате буд ки вазъ талаб мекард.»",
@@ -429,22 +429,22 @@
       "question_fa": "کی‌خسرو شخصاً افراسیاب را اعدام کرد. چرا؟",
       "question_tg": "Кай Хусрав шахсан Афросиёбро иҷро кард. Чаро?",
       "answers": [
-        "He wanted to demonstrate his personal courage",
+        "Afrasiab demanded to be killed by the king himself",
         "He made it personal with his own hands because the debt was personal — his father's blood",
-        "No paladin was willing to execute a king",
-        "Afrasiab demanded to be killed by the king himself"
+        "He wanted to demonstrate his personal courage",
+        "No paladin was willing to execute a king"
       ],
       "answers_fa": [
-        "می‌خواست شجاعتِ شخصی‌اش را نشان دهد",
+        "افراسیاب خواست که شخصِ شاه او را بکشد",
         "با دستانِ خودش شخصی کرد چون بدهی شخصی بود — خونِ پدرش",
-        "هیچ پالادینی حاضر به اعدامِ شاه نبود",
-        "افراسیاب خواست که شخصِ شاه او را بکشد"
+        "می‌خواست شجاعتِ شخصی‌اش را نشان دهد",
+        "هیچ پالادینی حاضر به اعدامِ شاه نبود"
       ],
       "answers_tg": [
-        "Мехост ҷасурии шахсиашро нишон диҳад",
+        "Афросиёб хост ки шахси подшоҳ ӯро бикушад",
         "Бо дастони худаш шахсӣ кард, зеро қарз шахсӣ буд — хуни падараш",
-        "Ҳеҷ паладине ҳозир нашуд подшоҳро иҷро кунад",
-        "Афросиёб хост ки шахси подшоҳ ӯро бикушад"
+        "Мехост ҷасурии шахсиашро нишон диҳад",
+        "Ҳеҷ паладине ҳозир нашуд подшоҳро иҷро кунад"
       ],
       "correct_answer": 1,
       "explanation": "'He made the execution personal, with his own hands, because the debt was personal.' This is the chapter's key observation about Kay Khosrow's character.",
@@ -464,22 +464,22 @@
       "question_fa": "فصل کی‌خسرو را در شاهنامه منحصربه‌فرد توصیف می‌کند. چرا؟",
       "question_tg": "Фасл Кай Хусравро дар Шоҳнома беназир тавсиф мекунад. Чаро?",
       "answers": [
-        "He was the only king never defeated in battle",
+        "He was the only king who refused to make war",
         "He was the only king who walked out of his reign freely at the height of his power, before corruption could find him",
-        "He was the only king born in exile",
-        "He was the only king who refused to make war"
+        "He was the only king never defeated in battle",
+        "He was the only king born in exile"
       ],
       "answers_fa": [
-        "تنها شاهی بود که هرگز در نبرد شکست نخورد",
+        "تنها شاهی بود که از جنگ خودداری کرد",
         "تنها شاهی بود که در اوجِ قدرت و آزادانه از سلطنتش خارج شد، پیش از اینکه فساد او را پیدا کند",
-        "تنها شاهی بود که در تبعید متولد شد",
-        "تنها شاهی بود که از جنگ خودداری کرد"
+        "تنها شاهی بود که هرگز در نبرد شکست نخورد",
+        "تنها شاهی بود که در تبعید متولد شد"
       ],
       "answers_tg": [
-        "Ягона подшоҳе буд ки ҳаргиз дар ҷанг мағлуб нашуд",
+        "Ягона подшоҳе буд ки аз ҷанг худдорӣ кард",
         "Ягона подшоҳе буд ки дар авҷи қудрат ва озодона аз салтанаташ баромад, пеш аз он ки фасод ӯро пайдо кунад",
-        "Ягона подшоҳе буд ки дар табъид таваллуд шуд",
-        "Ягона подшоҳе буд ки аз ҷанг худдорӣ кард"
+        "Ягона подшоҳе буд ки ҳаргиз дар ҷанг мағлуб нашуд",
+        "Ягона подшоҳе буд ки дар табъид таваллуд шуд"
       ],
       "correct_answer": 1,
       "explanation": "'He was the only king in the chronicle who walked out of his reign freely, at the height of his power, before corruption could find him.'",
@@ -499,24 +499,24 @@
       "question_fa": "کی‌خسرو دلیلِ مشخصی برای رفتن در اوجش داد. آن دلیل چه بود؟",
       "question_tg": "Кай Хусрав сабаби мушаххасе барои рафтан дар авҷаш дод. Он сабаб чӣ буд?",
       "answers": [
-        "Zoroaster appeared to him and commanded it",
         "He had seen what the throne does to those who sit on it too long and would not wait for corruption to reach him",
-        "He was gravely ill and could not continue ruling",
-        "He believed his son was now ready to rule"
+        "Zoroaster appeared to him and commanded it",
+        "He believed his son was now ready to rule",
+        "He was gravely ill and could not continue ruling"
       ],
       "answers_fa": [
-        "زرتشت به او ظاهر شد و دستور داد",
         "دیده بود که تخت با کسانی که خیلی بر آن می‌نشینند چه می‌کند و صبر نمی‌کرد که فساد به او برسد",
-        "خیلی بیمار بود و نمی‌توانست به حکومت ادامه دهد",
-        "باور داشت که پسرش حالا آماده‌ی حکومت است"
+        "زرتشت به او ظاهر شد و دستور داد",
+        "باور داشت که پسرش حالا آماده‌ی حکومت است",
+        "خیلی بیمار بود و نمی‌توانست به حکومت ادامه دهد"
       ],
       "answers_tg": [
-        "Зардушт ба ӯ зоҳир шуд ва дастур дод",
         "Дида буд ки тахт бо касоне ки хеле бар он менишинанд чӣ мекунад ва интизор намешуд ки фасод ба ӯ расад",
-        "Хеле бемор буд ва наметавонист ба ҳукумат идома диҳад",
-        "Бовар дошт ки писараш ҳоло омодаи ҳукумат аст"
+        "Зардушт ба ӯ зоҳир шуд ва дастур дод",
+        "Бовар дошт ки писараш ҳоло омодаи ҳукумат аст",
+        "Хеле бемор буд ва наметавонист ба ҳукумат идома диҳад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "'He had seen what the throne does to those who sit on it too long. He said: I will not wait.' He left before corruption could find him.",
       "explanation_fa": "«دیده بود که تخت با کسانی که خیلی بر آن می‌نشینند چه می‌کند. گفت: صبر نمی‌کنم.» پیش از اینکه فساد او را پیدا کند رفت.",
       "explanation_tg": "«Дида буд ки тахт бо касоне ки хеле бар он менишинанд чӣ мекунад. Гуфт: интизор намешавам.» Пеш аз он ки фасод ӯро пайдо кунад рафт.",
@@ -535,23 +535,23 @@
       "question_tg": "Шоҳнома намегӯяд Кай Хусрав ба куҷо дар кӯҳҳои Алборз рафт. Ин хомӯшӣ чӣ маъно дорад?",
       "answers": [
         "Ferdowsi did not know the historical record",
-        "It leaves the question open — he is neither dead nor documented; he simply departed, which is stranger and more complete than a reported death",
         "It implies he returned to the Simorgh's nest on Alborz",
-        "It is a deliberate mystery that later chapters resolve"
+        "It is a deliberate mystery that later chapters resolve",
+        "It leaves the question open — he is neither dead nor documented; he simply departed, which is stranger and more complete than a reported death"
       ],
       "answers_fa": [
         "فردوسی سابقه‌ی تاریخی را نمی‌دانست",
-        "سؤال را باز می‌گذارد — او نه مرده نه مستند شده؛ فقط رفت، که از مرگِ گزارش‌شده غریب‌تر و کامل‌تر است",
         "این یعنی به آشیانه‌ی سیمرغ در البرز برگشت",
-        "رازِ عمدی است که فصل‌های بعدی آن را حل می‌کنند"
+        "رازِ عمدی است که فصل‌های بعدی آن را حل می‌کنند",
+        "سؤال را باز می‌گذارد — او نه مرده نه مستند شده؛ فقط رفت، که از مرگِ گزارش‌شده غریب‌تر و کامل‌تر است"
       ],
       "answers_tg": [
         "Фирдавсӣ сабти таърихиро намедонист",
-        "Саволро кушода мегузорад — ӯ на мурдааст на сабт шудааст; танҳо рафт, ки аз марги гузоришшуда аҷибтар ва комилтар аст",
         "Ин яъне ба лонаи Симурғ дар Алборз баргашт",
-        "Рози умдест ки фаслҳои баъдӣ онро ҳал мекунанд"
+        "Рози умдест ки фаслҳои баъдӣ онро ҳал мекунанд",
+        "Саволро кушода мегузорад — ӯ на мурдааст на сабт шудааст; танҳо рафт, ки аз марги гузоришшуда аҷибтар ва комилтар аст"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "'It says only that he was not seen again.' No death, no destination, no explanation. The departure is the ending — complete precisely because it is unexplained.",
       "explanation_fa": "«فقط می‌گوید که دیگر دیده نشد.» نه مرگ، نه مقصد، نه توضیح. رفتن همان پایان است — دقیقاً به این دلیل که توضیح داده نشده کامل است.",
       "explanation_tg": "«Танҳо мегӯяд ки дигар дида нашуд.» На марг, на мақсад, на тавзеҳ. Рафтан ҳамон поён аст — дақиқан ба ин далел ки тавзеҳ дода нашудааст, комил аст.",

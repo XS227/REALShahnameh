@@ -235,13 +235,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 72,
-        "label_en": "Reach LVL 72",
+        "target": 6,
+        "label_en": "Upgrade Keyumars to Lv.6",
         "label_fa": "رسیدن به سطحِ ۷۲",
         "label_tg": "Расидан ба сатҳи 72",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
-        "hint_tg": "Зарба занед."
+        "hint_tg": "Зарба занед.",
+        "hero_id": "keyumars"
       },
       {
         "id": "quiz",

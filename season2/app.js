@@ -1085,19 +1085,45 @@
   if (orb && coreWrap && energyEl && fillEl) {
     const _tapEc = (() => { try { return JSON.parse(localStorage.getItem('real_economy_config') || '{}'); } catch { return {}; } })();
     const _heroZarBonus = (() => { try { return Math.floor(parseInt(localStorage.getItem('real_total_zar_hr') || '0', 10) / 200); } catch { return 0; } })();
+
+    /* Energy upgrade: each level adds 500 energy cap */
+    const ENERGY_BASE  = 1000;
+    const ENERGY_STEP  = 500;
+    const _energyLevel = (() => { try { return Math.min(5, parseInt(localStorage.getItem('real_energy_level') || '0', 10)); } catch { return 0; } })();
+
     const state = {
-      max: 1000,
-      energy: Player.get().energy || 1000,
+      max: ENERGY_BASE + _energyLevel * ENERGY_STEP,
+      energy: Math.min(Player.get().energy || ENERGY_BASE, ENERGY_BASE + _energyLevel * ENERGY_STEP),
       balance: Player.getResource("zar") || 0,
       combo: 1,
       lastTap: 0,
       tapCost: 1,
       base: Math.max(1, Number(_tapEc.tap_base_zar) || 5) + _heroZarBonus,
     };
+    /* Publish correct energyMax so tap.js hydrateFromPlayer reads it */
+    Player.set({ energyMax: state.max });
+
+    /* Anti-external-clicker: rolling window of the last 6 tap timestamps */
+    const _tapLog = [];
+    const _isExternalTap = (event) => {
+      /* The game's own auto-clicker sets this flag before firing orb.click() */
+      if (window._realAutoTapping) return false;
+      /* Untrusted click that isn't from our clicker = external bot */
+      if (event && event.isTrusted === false) return true;
+      /* Rate guard: >5 taps in 500 ms without auto-clicker = suspicious */
+      const now = Date.now();
+      _tapLog.push(now);
+      if (_tapLog.length > 6) _tapLog.shift();
+      if (_tapLog.length === 6 && now - _tapLog[0] < 500) return true;
+      return false;
+    };
 
     const renderEnergy = () => {
       energyEl.textContent = state.energy;
       fillEl.style.width = `${(state.energy / state.max) * 100}%`;
+      /* Sync the static /max display in the HTML */
+      const maxEl = document.querySelector('[data-energy-max-display]');
+      if (maxEl) maxEl.textContent = state.max;
     };
     const renderBalance = () => {
       if (!balanceEl) return;
@@ -1144,6 +1170,9 @@
 
     /* tap */
     const tap = (event) => {
+      /* Reject external auto-clicker / bot taps silently */
+      if (_isExternalTap(event)) return;
+
       if (state.energy < state.tapCost) {
         toast("Out of energy — wait for regen or use Boost");
         haptic("warning");
@@ -1230,7 +1259,7 @@
         { transform: "scale(1)" }
       ], { duration: 220, easing: "ease-out" });
 
-      haptic(crit ? "heavy" : "light");
+      if (!window._realAutoTapping) haptic(crit ? "heavy" : "light");
 
       coreWrap.classList.add("tapped");
       setTimeout(() => coreWrap.classList.remove("tapped"), 200);

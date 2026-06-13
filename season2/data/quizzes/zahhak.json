@@ -6,12 +6,12 @@
       "quiz_part": 1,
       "question": "Where do Zahhak's serpents grow from?",
       "answers": [
-        "His crown",
-        "His shoulders",
         "His belt",
-        "His shadow"
+        "His shadow",
+        "His shoulders",
+        "His crown"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "From the kiss of Iblis, on his shoulders.",
       "reward": {
         "xp": 110,
@@ -21,124 +21,19 @@
       "question_fa": "مارهای ضحاک از کجا می‌رویند؟",
       "question_tg": "Морҳои Заҳҳок аз куҷо месабзанд?",
       "answers_fa": [
-        "تاجش",
-        "شانه‌هایش",
         "کمربندش",
-        "سایه‌اش"
+        "سایه‌اش",
+        "شانه‌هایش",
+        "تاجش"
       ],
       "answers_tg": [
-        "Тоҷаш",
-        "Шонаҳояш",
         "Камарбандаш",
-        "Сояаш"
+        "Сояаш",
+        "Шонаҳояш",
+        "Тоҷаш"
       ],
       "explanation_fa": "از بوسه‌ی ابلیس، بر شانه‌هایش.",
       "explanation_tg": "Аз бӯсаи Иблис, бар шонаҳояш."
-    },
-    {
-      "id": "zahhak-2",
-      "chapter_slug": "zahhak",
-      "quiz_part": 1,
-      "question": "What daily price do the serpents demand?",
-      "answers": [
-        "Seven jars of wine",
-        "A bull",
-        "Two human brains",
-        "A child of nobles"
-      ],
-      "correct_answer": 2,
-      "explanation": "Two brains drawn from the youth of Pars.",
-      "reward": {
-        "xp": 130,
-        "real": 55
-      },
-      "difficulty": "medium",
-      "question_fa": "مارها هر روز چه بهایی مطالبه می‌کنند؟",
-      "question_tg": "Морҳо ҳар рӯз чӣ нарх мехоҳанд?",
-      "answers_fa": [
-        "هفت خمره‌ی شراب",
-        "یک گاو",
-        "دو مغز انسان",
-        "فرزند اشراف"
-      ],
-      "answers_tg": [
-        "Ҳафт хум шароб",
-        "Як гов",
-        "Ду мағзи инсон",
-        "Фарзанди ашроф"
-      ],
-      "explanation_fa": "دو مغز از جوانان پارس.",
-      "explanation_tg": "Ду мағз аз ҷавонони Порс."
-    },
-    {
-      "id": "zahhak-3",
-      "chapter_slug": "zahhak",
-      "quiz_part": 2,
-      "question": "Who first kisses Zahhak's shoulders?",
-      "answers": [
-        "A demon cook",
-        "A wandering minstrel",
-        "His mother",
-        "Iblis in disguise"
-      ],
-      "correct_answer": 3,
-      "explanation": "Iblis disguised as a cook.",
-      "reward": {
-        "xp": 150,
-        "real": 65
-      },
-      "difficulty": "medium",
-      "question_fa": "اول چه کسی شانه‌های ضحاک را بوسید؟",
-      "question_tg": "Аввал кӣ шонаҳои Заҳҳокро бӯсид?",
-      "answers_fa": [
-        "آشپز دیو",
-        "مطرب دوره‌گرد",
-        "مادرش",
-        "ابلیس در لباس مبدل"
-      ],
-      "answers_tg": [
-        "Ошпази дев",
-        "Муғаннии гарданагард",
-        "Модараш",
-        "Иблис дар либоси мабдал"
-      ],
-      "explanation_fa": "ابلیس در لباس آشپز.",
-      "explanation_tg": "Иблис дар либоси ошпаз."
-    },
-    {
-      "id": "zahhak-4",
-      "chapter_slug": "zahhak",
-      "quiz_part": 1,
-      "question": "How many years does darkness last?",
-      "answers": [
-        "A thousand",
-        "Three hundred",
-        "Seven hundred",
-        "A hundred"
-      ],
-      "correct_answer": 0,
-      "explanation": "A thousand years.",
-      "reward": {
-        "xp": 170,
-        "real": 75
-      },
-      "difficulty": "hard",
-      "question_fa": "تاریکی چه مدت طول کشید؟",
-      "question_tg": "Торикӣ чанд сол давом кард?",
-      "answers_fa": [
-        "یک هزار سال",
-        "سیصد سال",
-        "هفتصد سال",
-        "یک صد سال"
-      ],
-      "answers_tg": [
-        "Ҳазор сол",
-        "Сесад сол",
-        "Ҳафтсад сол",
-        "Як сад сол"
-      ],
-      "explanation_fa": "یک هزار سال.",
-      "explanation_tg": "Ҳазор сол."
     },
     {
       "id": "zahhak-e2",
@@ -149,24 +44,24 @@
       "question_fa": "نامِ پدرِ متدینِ ضحاک چیست؟",
       "question_tg": "Номи падари мӯтадини Заҳҳок чист?",
       "answers": [
-        "Kaveh",
+        "Mardas",
         "Tahmuras",
-        "Siamak",
-        "Mardas"
+        "Kaveh",
+        "Siamak"
       ],
       "answers_fa": [
-        "کاوه",
+        "مرداس",
         "تهمورث",
-        "سیامک",
-        "مرداس"
+        "کاوه",
+        "سیامک"
       ],
       "answers_tg": [
-        "Кова",
+        "Мардос",
         "Таҳмурас",
-        "Сиёмак",
-        "Мардос"
+        "Кова",
+        "Сиёмак"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "Mardas — a just man who prayed at dawn and tended his garden. Ferdowsi introduces him so his murder by Ahriman carries full weight.",
       "explanation_fa": "مرداس — مردِ عادلی که سپیده‌دم نماز می‌خواند. فردوسی او را معرفی می‌کند تا قتلش وزن داشته باشد.",
       "explanation_tg": "Мардос — марди одиле ки субҳдам намоз мехонд. Фирдавсӣ ӯро муаррифӣ мекунад то қатлаш вазн дошта бошад.",
@@ -186,20 +81,20 @@
       "answers": [
         "Kaveh the Blacksmith",
         "A general of Pars",
-        "Fereydun",
-        "Jamshid's son"
+        "Jamshid's son",
+        "Fereydun"
       ],
       "answers_fa": [
         "کاوه‌ی آهنگر",
         "سردارِ پارس",
-        "فریدون",
-        "پسرِ جمشید"
+        "پسرِ جمشید",
+        "فریدون"
       ],
       "answers_tg": [
         "Коваи Оҳангар",
         "Сарлашкари Порс",
-        "Фаридун",
-        "Писари Ҷамшид"
+        "Писари Ҷамшид",
+        "Фаридун"
       ],
       "correct_answer": 0,
       "explanation": "Kaveh the Blacksmith — after losing sixteen sons to the serpents, he tears the court's consent document and raises his leather apron as the Derafsh Kaviani.",
@@ -211,6 +106,76 @@
       }
     },
     {
+      "id": "zahhak-2",
+      "chapter_slug": "zahhak",
+      "quiz_part": 1,
+      "question": "What daily price do the serpents demand?",
+      "answers": [
+        "Seven jars of wine",
+        "A child of nobles",
+        "A bull",
+        "Two human brains"
+      ],
+      "correct_answer": 3,
+      "explanation": "Two brains drawn from the youth of Pars.",
+      "reward": {
+        "xp": 130,
+        "real": 55
+      },
+      "difficulty": "medium",
+      "question_fa": "مارها هر روز چه بهایی مطالبه می‌کنند؟",
+      "question_tg": "Морҳо ҳар рӯз чӣ нарх мехоҳанд?",
+      "answers_fa": [
+        "هفت خمره‌ی شراب",
+        "فرزند اشراف",
+        "یک گاو",
+        "دو مغز انسان"
+      ],
+      "answers_tg": [
+        "Ҳафт хум шароб",
+        "Фарзанди ашроф",
+        "Як гов",
+        "Ду мағзи инсон"
+      ],
+      "explanation_fa": "دو مغز از جوانان پارس.",
+      "explanation_tg": "Ду мағз аз ҷавонони Порс."
+    },
+    {
+      "id": "zahhak-3",
+      "chapter_slug": "zahhak",
+      "quiz_part": 2,
+      "question": "Who first kisses Zahhak's shoulders?",
+      "answers": [
+        "Iblis in disguise",
+        "A demon cook",
+        "A wandering minstrel",
+        "His mother"
+      ],
+      "correct_answer": 0,
+      "explanation": "Iblis disguised as a cook.",
+      "reward": {
+        "xp": 150,
+        "real": 65
+      },
+      "difficulty": "medium",
+      "question_fa": "اول چه کسی شانه‌های ضحاک را بوسید؟",
+      "question_tg": "Аввал кӣ шонаҳои Заҳҳокро бӯсид?",
+      "answers_fa": [
+        "ابلیس در لباس مبدل",
+        "آشپز دیو",
+        "مطرب دوره‌گرد",
+        "مادرش"
+      ],
+      "answers_tg": [
+        "Иблис дар либоси мабдал",
+        "Ошпази дев",
+        "Муғаннии гарданагард",
+        "Модараш"
+      ],
+      "explanation_fa": "ابلیس در لباس آشپز.",
+      "explanation_tg": "Иблис дар либоси ошпаз."
+    },
+    {
       "id": "zahhak-m3",
       "chapter_slug": "zahhak",
       "quiz_part": 3,
@@ -219,24 +184,24 @@
       "question_fa": "اهریمن پیش از آنکه هیچ نیتِ تاریکی را آشکار کند اول چگونه به ضحاک نزدیک می‌شود؟",
       "question_tg": "Аҳриман пеш аз он ки ягон нияти торикеро ошкор созад аввал чӣ гуна ба Заҳҳок наздик мешавад?",
       "answers": [
-        "As a companion who flatters every decision",
         "As an enemy warrior demanding tribute",
+        "As a companion who flatters every decision",
         "As a physician who heals Zahhak's illness",
         "As a prophet bearing divine warnings"
       ],
       "answers_fa": [
-        "به‌عنوانِ همدمی که هر تصمیمی را تملق می‌گوید",
         "به‌عنوانِ جنگجویِ دشمن که باج می‌طلبد",
+        "به‌عنوانِ همدمی که هر تصمیمی را تملق می‌گوید",
         "به‌عنوانِ پزشکی که بیماری ضحاک را درمان می‌کند",
         "به‌عنوانِ پیامبری که هشدارهای الهی می‌آورد"
       ],
       "answers_tg": [
-        "Ҳамчун ҳамдаме ки ҳар тасмимро тамаллуқ мегӯяд",
         "Ҳамчун ҷанговари душман ки бочу мехоҳад",
+        "Ҳамчун ҳамдаме ки ҳар тасмимро тамаллуқ мегӯяд",
         "Ҳамчун табибе ки бемории Заҳҳокро даво мекунад",
         "Ҳамчун пайғамбаре ки огоҳиҳои илоҳӣ меорад"
       ],
-      "correct_answer": 0,
+      "correct_answer": 1,
       "explanation": "As a companion — agreeing with everything Zahhak says, flattering every decision, filling every silence with praise. This is Ahriman's method when force is not available: patience and accumulated gratitude.",
       "explanation_fa": "به‌عنوانِ همدم — با همه چیز موافق، تملق‌گوی هر تصمیم. روشِ اهریمن وقتی زور در دسترس نیست: صبر و انباشتِ قدردانی.",
       "explanation_tg": "Ҳамчун ҳамдам — бо ҳама чиз мувофиқ, ҳар тасмимро тамаллуқ мегӯяд. Усули Аҳриман вақте зӯр дастрас нест: сабр ва ҷамъшавии қадрдонӣ.",
@@ -254,24 +219,24 @@
       "question_fa": "اهریمن — در لباسِ آشپز — چه چیزی به ضحاک می‌دهد تا طبیعتش را به‌تدریج تغییر دهد؟",
       "question_tg": "Аҳриман — дар либоси ошпаз — ба Заҳҳок чӣ медиҳад то табиаташ оҳиста тағйир кунад?",
       "answers": [
-        "Wine and dark poetry",
-        "Increasingly rich meat dishes — starting with egg, progressing to game",
         "Sacred fire and wild herbs",
-        "Dreams and visions of conquest"
+        "Wine and dark poetry",
+        "Dreams and visions of conquest",
+        "Increasingly rich meat dishes — starting with egg, progressing to game"
       ],
       "answers_fa": [
-        "شراب و شعرِ تاریک",
-        "وعده‌های گوشتیِ روز‌به‌روز غنی‌تر — از زرده تخم‌مرغ شروع شده تا شکار",
         "آتشِ مقدس و گیاهانِ وحشی",
-        "رؤیاها و تصوراتِ تسخیر"
+        "شراب و شعرِ تاریک",
+        "رؤیاها و تصوراتِ تسخیر",
+        "وعده‌های گوشتیِ روز‌به‌روز غنی‌تر — از زرده تخم‌مرغ شروع شده تا شکار"
       ],
       "answers_tg": [
-        "Шаробу шеъри торик",
-        "Хӯришҳои гӯштии рӯз ба рӯз ғанитар — аз зардаи тухм оғоз то шикор",
         "Оташи муқаддас ва гиёҳони ваҳшӣ",
-        "Орзу ва тасвирҳои забт"
+        "Шаробу шеъри торик",
+        "Орзу ва тасвирҳои забт",
+        "Хӯришҳои гӯштии рӯз ба рӯз ғанитар — аз зардаи тухм оғоз то шикор"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "Increasingly rich meat dishes — starting with egg yolk, then birds, then game. Each meal changes Zahhak slightly. He does not notice because the change is gradual. Then Ahriman asks to kiss his shoulders as gratitude.",
       "explanation_fa": "وعده‌های گوشتیِ روز‌به‌روز غنی‌تر — از زرده‌ی تخم‌مرغ، بعد پرندگان، بعد شکار. هر وعده ضحاک را کمی تغییر می‌دهد. متوجه نمی‌شود چون به‌تدریج می‌آید.",
       "explanation_tg": "Хӯришҳои гӯштии рӯз ба рӯз ғанитар — аз зардаи тухм, баъд паррандагон, баъд шикор. Ҳар хӯриш Заҳҳокро каме тағйир медиҳад.",
@@ -289,24 +254,24 @@
       "question_fa": "آشپزهای کاخ ارمایل و گرمایل مخفیانه چه می‌کنند تا قربانیانِ ماران را نجات دهند؟",
       "question_tg": "Ошпазони қаср Армойил ва Гармойил пинҳонӣ чӣ мекунанд то қурбониёни морҳоро наҷот диҳанд?",
       "answers": [
-        "They poison the serpents",
         "They hide the victims inside the palace walls",
         "They mix sheep brain with human brain to satisfy the serpents at half the real price",
-        "They bribe the guards to let prisoners escape"
+        "They bribe the guards to let prisoners escape",
+        "They poison the serpents"
       ],
       "answers_fa": [
-        "ماران را مسموم می‌کنند",
         "قربانیان را داخلِ دیوارهای کاخ پنهان می‌کنند",
         "مغزِ گوسفند را با مغزِ انسانی مخلوط می‌کنند",
-        "نگهبانان را رشوه می‌دهند"
+        "نگهبانان را رشوه می‌دهند",
+        "ماران را مسموم می‌کنند"
       ],
       "answers_tg": [
-        "Морҳоро заҳролуд мекунанд",
         "Қурбониёнро дар дохили деворҳои қаср пинҳон мекунанд",
         "Мағзи гӯсфандро бо мағзи инсон мехалт мекунанд",
-        "Нигаҳбонҳоро ришва медиҳанд"
+        "Нигаҳбонҳоро ришва медиҳанд",
+        "Морҳоро заҳролуд мекунанд"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "They mix sheep brain with human brain — saving half the victims by satisfying the serpents with a substitute. The saved youth are sent to the mountains. Later tradition says they became the ancestors of the Kurdish people.",
       "explanation_fa": "مغزِ گوسفند را با مغزِ انسانی مخلوط می‌کنند — نیمِ قربانیان را با جانشین نجات می‌دهند. جوانانِ نجات‌یافته به کوه‌ها فرستاده می‌شوند.",
       "explanation_tg": "Мағзи гӯсфандро бо мағзи инсон мехалт мекунанд — нисфи қурбониёнро бо ивазкунанда наҷот медиҳанд.",
@@ -314,6 +279,41 @@
         "xp": 125,
         "real": 52
       }
+    },
+    {
+      "id": "zahhak-4",
+      "chapter_slug": "zahhak",
+      "quiz_part": 1,
+      "question": "How many years does darkness last?",
+      "answers": [
+        "A hundred",
+        "A thousand",
+        "Seven hundred",
+        "Three hundred"
+      ],
+      "correct_answer": 1,
+      "explanation": "A thousand years.",
+      "reward": {
+        "xp": 170,
+        "real": 75
+      },
+      "difficulty": "hard",
+      "question_fa": "تاریکی چه مدت طول کشید؟",
+      "question_tg": "Торикӣ чанд сол давом кард?",
+      "answers_fa": [
+        "یک صد سال",
+        "یک هزار سال",
+        "هفتصد سال",
+        "سیصد سال"
+      ],
+      "answers_tg": [
+        "Як сад сол",
+        "Ҳазор сол",
+        "Ҳафтсад сол",
+        "Сесад сол"
+      ],
+      "explanation_fa": "یک هزار سال.",
+      "explanation_tg": "Ҳазор сол."
     },
     {
       "id": "zahhak-h2",
@@ -325,23 +325,23 @@
       "question_tg": "Номи гови илоҳие ки фариидуни навзодро дар кӯҳҳо ғизо медиҳад чист?",
       "answers": [
         "Rakhsh",
-        "Simorgh",
         "Birmaya",
+        "Simorgh",
         "Gao Shir"
       ],
       "answers_fa": [
         "رخش",
-        "سیمرغ",
         "برمایه",
+        "سیمرغ",
         "گاوِ شیر"
       ],
       "answers_tg": [
         "Рахш",
-        "Симурғ",
         "Бирмоя",
+        "Симурғ",
         "Гов Шер"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "Birmaya — the divine bull of the mountains of Alborz who nurtures Fereydun. Zahhak hunts Birmaya when he comes searching for the prophesied child, but Fereydun is already gone.",
       "explanation_fa": "برمایه — گاوِ الهیِ کوه‌های البرز که فریدون را تغذیه می‌کند. ضحاک برمایه را شکار می‌کند اما فریدون از پیش رفته است.",
       "explanation_tg": "Бирмоя — гови илоҳии кӯҳҳои Албурз ки Фаридунро ғизо медиҳад. Заҳҳок Бирмояро шикор мекунад аммо Фаридун аз пеш рафтааст.",
@@ -359,21 +359,21 @@
       "question_fa": "کاوه چند پسر دارد و پیش از آنکه اقدام کند چندتا برای تغذیه‌ی ماران برده شده‌اند؟",
       "question_tg": "Кова чанд писар дорад ва пеш аз он ки амал кунад чандтоашон барои ғизои морҳо бурда шудаанд?",
       "answers": [
-        "Ten sons, nine taken",
-        "Twenty sons, eighteen taken",
         "Twelve sons, eleven taken",
+        "Twenty sons, eighteen taken",
+        "Ten sons, nine taken",
         "Seventeen sons, sixteen taken"
       ],
       "answers_fa": [
-        "ده پسر، نُه تا برده شده",
-        "بیست پسر، هجده تا برده شده",
         "دوازده پسر، یازده تا برده شده",
+        "بیست پسر، هجده تا برده شده",
+        "ده پسر، نُه تا برده شده",
         "هفده پسر، شانزده تا برده شده"
       ],
       "answers_tg": [
-        "Даҳ писар, нӯҳ бурда шуда",
-        "Бист писар, ҳаждаҳ бурда шуда",
         "Дувоздаҳ писар, ёздаҳ бурда шуда",
+        "Бист писар, ҳаждаҳ бурда шуда",
+        "Даҳ писар, нӯҳ бурда шуда",
         "Ҳабдаҳ писар, шонздаҳ бурда шуда"
       ],
       "correct_answer": 3,
@@ -430,23 +430,23 @@
       "question_tg": "Шоҳнома мегӯяд Заҳҳок «дар ҷавонӣ бахшанда ва далер буд.» Фирдавсӣ чаро бобашро чунин оғоз мекунад?",
       "answers": [
         "To show Zahhak was cursed by the gods from birth",
+        "To show that all Persian kings began as good men",
         "Ahriman needed a vessel with genuine qualities — a simple monster wouldn't last a thousand years on a throne",
-        "To contrast him with Jamshid's arrogance",
-        "To show that all Persian kings began as good men"
+        "To contrast him with Jamshid's arrogance"
       ],
       "answers_fa": [
         "نشان می‌دهد ضحاک از تولد توسطِ خدایان لعنت شده بود",
+        "نشان می‌دهد همه‌ی شاهانِ ایرانی خوب آغاز کردند",
         "اهریمن به ظرفی با کیفیاتِ واقعی نیاز داشت — هیولای ساده هزار سال دوام نمی‌آورد",
-        "برای تضاد با تکبرِ جمشید",
-        "نشان می‌دهد همه‌ی شاهانِ ایرانی خوب آغاز کردند"
+        "برای تضاد با تکبرِ جمشید"
       ],
       "answers_tg": [
         "Нишон медиҳад ки Заҳҳок аз таввалуд аз тарафи худоён лаънат шудааст",
+        "Нишон медиҳад ки ҳамаи шоҳони эронӣ хуб оғоз карданд",
         "Аҳриман ба зарфе бо сифатҳои воқеӣ ниёз дошт — ҳайвони одӣ ҳазор сол давом намеорд",
-        "Барои муқоиса бо кибри Ҷамшид",
-        "Нишон медиҳад ки ҳамаи шоҳони эронӣ хуб оғоз карданд"
+        "Барои муқоиса бо кибри Ҷамшид"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "Ahriman needed a vessel with genuine qualities — a simple monster would not last a thousand years on a throne. Ferdowsi shows that the worst tyrannies are built on what was once genuinely good.",
       "explanation_fa": "اهریمن به ظرفی با کیفیاتِ واقعی نیاز داشت — هیولای ساده هزار سال دوام نمی‌آورد. فردوسی نشان می‌دهد که بدترین ستمگری‌ها بر آنچه روزی واقعاً خوب بود ساخته می‌شوند.",
       "explanation_tg": "Аҳриман ба зарфе бо сифатҳои воқеӣ ниёз дошт — ҳайвони одӣ ҳазор сол давом намеорад.",
@@ -464,24 +464,24 @@
       "question_fa": "«روشِ تو خالی‌کردنِ» اهریمن چیست — چگونه مرداس را می‌کشد بدونِ آنکه ظاهر را دست بزند؟",
       "question_tg": "«Усули тохолии» Аҳриман чист — чӣ гуна Мардосро мекушад бидуни он ки зоҳирро дастзад?",
       "answers": [
-        "He sends the Black Div to attack Mardas in his home",
         "He poisons the garden's water",
         "He digs a pit in the garden path Mardas walks each dawn — the garden stays beautiful",
-        "He replaces Mardas with a demon duplicate"
+        "He replaces Mardas with a demon duplicate",
+        "He sends the Black Div to attack Mardas in his home"
       ],
       "answers_fa": [
-        "دیوِ سیاه می‌فرستد تا در خانه به مرداس حمله کند",
         "آبِ باغ را مسموم می‌کند",
         "در مسیر باغِ مرداس که هر سپیده‌دم طی می‌کند چاهی می‌کَند — باغ زیبا می‌ماند",
-        "مرداس را با دوقلوی دیوانه‌ای جایگزین می‌کند"
+        "مرداس را با دوقلوی دیوانه‌ای جایگزین می‌کند",
+        "دیوِ سیاه می‌فرستد تا در خانه به مرداس حمله کند"
       ],
       "answers_tg": [
-        "Диви Сиёҳ мефиристад то дар хона ба Мардос ҳуҷум кунад",
         "Оби боғро заҳролуд мекунад",
         "Дар масири бoghi Мардос чоҳе мекананд — боғ зебо мемонад",
-        "Мардосро бо дубликати деве ивазмекунад"
+        "Мардосро бо дубликати деве ивазмекунад",
+        "Диви Сиёҳ мефиристад то дар хона ба Мардос ҳуҷум кунад"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "He digs a pit in the path Mardas walks each dawn to pray — the garden stays beautiful. Leave the surface undisturbed and hollow out everything beneath it. This is the Shahnameh's quietest horror.",
       "explanation_fa": "در مسیری که مرداس هر سپیده‌دم طی می‌کند چاهی می‌کند — باغ زیبا می‌ماند. سطح را دست‌نخورده بگذار و همه چیز را زیرش تو خالی کن.",
       "explanation_tg": "Дар масире ки Мардос ҳар субҳ мегузарад чоҳе мекананд — боғ зебо мемонад.",
@@ -499,24 +499,24 @@
       "question_fa": "شاهنامه می‌گوید فریدون معرفی می‌شود «در حالی که هزار سال هنوز در جریان است.» این انتخابِ ساختاری چه معنایی دارد؟",
       "question_tg": "Шоҳнома мегӯяд Фаридун муаррифӣ мешавад «дар ҳоле ки ҳазор сол ҳанӯз дар ҷараён аст.» Ин интихоби сохторӣ чӣ маъно дорад?",
       "answers": [
-        "It shows Ferdowsi made a continuity error",
-        "It shows that all hope was lost during Zahhak's reign",
+        "The answer to tyranny is always born inside the tyranny's own time",
         "It means Zahhak will be defeated immediately",
-        "The answer to tyranny is always born inside the tyranny's own time"
+        "It shows that all hope was lost during Zahhak's reign",
+        "It shows Ferdowsi made a continuity error"
       ],
       "answers_fa": [
-        "نشان می‌دهد فردوسی اشتباهِ پیوستگی داشته",
-        "نشان می‌دهد همه‌ی امید در دورانِ ضحاک از دست رفت",
+        "پاسخِ ستمگری همیشه درونِ زمانِ خودِ ستمگری متولد می‌شود",
         "یعنی ضحاک فوری شکست خواهد خورد",
-        "پاسخِ ستمگری همیشه درونِ زمانِ خودِ ستمگری متولد می‌شود"
+        "نشان می‌دهد همه‌ی امید در دورانِ ضحاک از دست رفت",
+        "نشان می‌دهد فردوسی اشتباهِ پیوستگی داشته"
       ],
       "answers_tg": [
-        "Нишон медиҳад Фирдавсӣ хатои пайдарҳамӣ дошта",
-        "Нишон медиҳад ки ҳама умед дар давраи Заҳҳок аз даст рафт",
+        "Ҷавоби зулм ҳамеша дар дохили вақти худи зулм таваллуд мешавад",
         "Яъне Заҳҳок фавран шикаст хоҳад хӯрд",
-        "Ҷавоби зулм ҳамеша дар дохили вақти худи зулм таваллуд мешавад"
+        "Нишон медиҳад ки ҳама умед дар давраи Заҳҳок аз даст рафт",
+        "Нишон медиҳад Фирдавсӣ хатои пайдарҳамӣ дошта"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "The answer to tyranny is always born inside the tyranny's own time. Ferdowsi's structure: the thousand years are not over yet, but the thing that will end them is already alive.",
       "explanation_fa": "پاسخِ ستمگری همیشه درونِ زمانِ خودِ ستمگری متولد می‌شود. ساختارِ فردوسی: هزار سال هنوز تمام نشده، اما آنچه پایانش خواهد داد از پیش زنده است.",
       "explanation_tg": "Ҷавоби зулм ҳамеша дар дохили вақти худи зулм таваллуд мешавад.",
@@ -534,24 +534,24 @@
       "question_fa": "وقتی کاوه با پیش‌بندِ چرمی‌اش بر نیزه از دربارِ ضحاک بیرون می‌رود، نگهبانان چرا جلویش را نمی‌گیرند؟",
       "question_tg": "Вақте Кова бо пешбанди чарминааш бар найза аз дарбори Заҳҳок мебарояд, нигаҳбонон чаро ӯро намегиранд?",
       "answers": [
+        "Zahhak orders them to let him go",
         "Some things carry their own authority — the act of righteous refusal cannot be stopped by force",
         "He is disguised as a palace official",
-        "Zahhak orders them to let him go",
         "He escapes through a secret passage"
       ],
       "answers_fa": [
+        "ضحاک دستور می‌دهد بگذارندش برود",
         "برخی چیزها اقتدارِ خودشان را دارند — عملِ امتناعِ راستین با زور متوقف نمی‌شود",
         "در لباسِ مقامِ کاخ است",
-        "ضحاک دستور می‌دهد بگذارندش برود",
         "از راهِ گذرِ پنهانی فرار می‌کند"
       ],
       "answers_tg": [
+        "Заҳҳок амр медиҳад ки ройгон бигузоранд",
         "Баъзе чизҳо салоҳияти худашонро доранд — амали имтинои роститнро бо зӯр наметавон боздошт",
         "Дар либоси масъули қаср аст",
-        "Заҳҳок амр медиҳад ки ройгон бигузоранд",
         "Аз гузаргоҳи пинҳонӣ мегурезад"
       ],
-      "correct_answer": 0,
+      "correct_answer": 1,
       "explanation": "Some things carry their own authority. The Shahnameh's lesson: a single act of principled refusal — done openly, in public — has a moral weight that force cannot answer without destroying the legitimacy that force depends on.",
       "explanation_fa": "برخی چیزها اقتدارِ خودشان را دارند. درسِ شاهنامه: یک عملِ واحدِ امتناعِ اصولی — آشکارا، در ملاءِ عام — وزنِ اخلاقی‌ای دارد که زور بدون از دست دادنِ مشروعیتی که به آن وابسته است نمی‌تواند پاسخش دهد.",
       "explanation_tg": "Баъзе чизҳо салоҳияти худашонро доранд. Дарси Шоҳнома: як амали имтинои аслӣ вазни ахлоқие дорад ки зӯр натавонад ҷавобаш диҳад.",

@@ -81,6 +81,26 @@
         "hint_en": "Scroll down to the Quiz section.",
         "hint_fa": "به بخشِ آزمون بروید.",
         "hint_tg": "Ба бахши Имтиҳон равед."
+      },
+      {
+        "kind": "farr",
+        "target": 18,
+        "label_en": "Accumulate 18 Farr",
+        "label_fa": "گردآوریِ 18 فرّ",
+        "label_tg": "Ҷамъ кардани 18 Фарр",
+        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
+        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+      },
+      {
+        "kind": "owned_heroes",
+        "target": 20,
+        "label_en": "Own 20 Hero Cards",
+        "label_fa": "داشتنِ 20 کارتِ قهرمان",
+        "label_tg": "Доштани 20 Картаи Қаҳрамон",
+        "hint_en": "Collect hero cards from the Hero Collection. Each purchase counts toward your roster.",
+        "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید. هر خرید به تعداد شما می‌افزاید.",
+        "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
       }
     ],
     "intro_tg": "Си сол. Шасттарин ҳазор байт. Ҳомие ки нуқра пардохт дар ҳоле ки тилло қарздор буд. Мероси Фирдавсӣ алирағми дарбор сохта шуд, на ба хотири он. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома чӣ гуна аз офаринаш ҷон ба дар бурд.",

@@ -9,24 +9,24 @@
       "question_fa": "سیمرغ در چهار لحظه‌ی قطعیِ شاهنامه ظاهر می‌شود. آنچه چهار مداخله مشترک دارند چیست؟",
       "question_tg": "Симурғ дар чор лаҳзаи қатъии Шоҳнома зоҳир мешавад. Чаҳор мудохила чӣ мушторак доранд?",
       "answers": [
-        "All four occur when the Shahnameh's narrative would stop without her: Zal would die on the mountain, Rostam would never be born, Rostam would die or submit — each time she provides the minimum necessary for the story to continue",
         "All four involve battles — she only intervenes in military conflicts",
+        "All four result in the immediate death of the threat — she always resolves conflicts with violence",
         "All four are preceded by prayer from Zal — she only responds to Zal personally",
-        "All four result in the immediate death of the threat — she always resolves conflicts with violence"
+        "All four occur when the Shahnameh's narrative would stop without her: Zal would die on the mountain, Rostam would never be born, Rostam would die or submit — each time she provides the minimum necessary for the story to continue"
       ],
       "answers_fa": [
-        "همه‌ی چهار وقتی رخ می‌دهند که روایتِ شاهنامه بدونِ او متوقف می‌شد: زال در کوه می‌مُرد، رستم متولد نمی‌شد، رستم می‌مُرد یا تسلیم می‌شد — هر بار حداقلِ ضروری برای ادامه‌ی داستان را فراهم می‌کند",
         "همه‌ی چهار شاملِ نبردها هستند",
+        "همه‌ی چهار با مرگِ فوریِ تهدید نتیجه می‌شوند",
         "همه‌ی چهار با دعای زال مقدم هستند",
-        "همه‌ی چهار با مرگِ فوریِ تهدید نتیجه می‌شوند"
+        "همه‌ی چهار وقتی رخ می‌دهند که روایتِ شاهنامه بدونِ او متوقف می‌شد: زال در کوه می‌مُرد، رستم متولد نمی‌شد، رستم می‌مُرد یا تسلیم می‌شد — هر بار حداقلِ ضروری برای ادامه‌ی داستان را فراهم می‌کند"
       ],
       "answers_tg": [
-        "Ҳамаи чаҳор вақте рух медиҳанд ки равояти Шоҳнома бидуни ӯ қатъ мешуд: Зол дар кӯҳ мемурд, Рустам таваллуд намешуд, Рустам мемурд ё таслим мешуд — ҳар дафъа ҳадди ақалли зарурӣ барои идомаи достонро фароҳам мекунад",
         "Ҳамаи чаҳор ҷангҳоро дар бар мегиранд",
+        "Ҳамаи чаҳор бо марги фории таҳдид натиҷа мешаванд",
         "Ҳамаи чаҳор бо дуои Зол пеш аз онҳо ҳастанд",
-        "Ҳамаи чаҳор бо марги фории таҳдид натиҷа мешаванд"
+        "Ҳамаи чаҳор вақте рух медиҳанд ки равояти Шоҳнома бидуни ӯ қатъ мешуд: Зол дар кӯҳ мемурд, Рустам таваллуд намешуд, Рустам мемурд ё таслим мешуд — ҳар дафъа ҳадди ақалли зарурӣ барои идомаи достонро фароҳам мекунад"
       ],
-      "correct_answer": 0,
+      "correct_answer": 3,
       "explanation": "The structural feature shared by all four Simorgh interventions is that each occurs at the exact moment when the chronicle would stop without it. Zal abandoned on Alborz would die; Rostam would never exist; Rostam wounded beyond recovery would die or submit to chains. She does not intervene in ordinary difficulties — only in moments of impossible need where the story's continuation requires something that cannot be produced by human means. This is what distinguishes the Simorgh from other divine figures in the Shahnameh: she is not a regular protector but a last resort.",
       "explanation_fa": "ویژگیِ ساختاریِ مشترکِ چهار مداخله این است که هر کدام در لحظه‌ی دقیقی رخ می‌دهند که شاهنامه بدونش متوقف می‌شد. در مشکلاتِ عادی مداخله نمی‌کند — فقط در لحظاتِ نیازِ غیرممکن. این چیزی است که سیمرغ را از دیگر چهره‌های الهیِ شاهنامه متمایز می‌کند.",
       "explanation_tg": "Вижагии сохторие ки чаҳор мудохила мушторак доранд ин аст ки ҳар яке дар лаҳзаи дақиқе рух медиҳад ки Шоҳнома бидуни он қатъ мешуд. Дар мушкилоти муқаррарӣ мудохила намекунад.",
@@ -45,134 +45,29 @@
       "question_tg": "Зол пари Симурғро ду дафъа дар Шоҳнома месӯзонад. Ду муносибат чистанд ва чӣ муштораканд?",
       "answers": [
         "He burns it in battle against Afrasiab and in battle against Arjasp — both are military crises",
-        "He burns it when Rudabeh's labour fails and Rostam cannot be born (saving Rudabeh and producing Rostam), and when Rostam is wounded by Esfandiyar and cannot continue (saving Rostam and arming him for the final clash) — both times he burns it specifically for Rostam",
         "He burns it to summon rain during a drought and to cure a plague — both are natural disasters",
-        "He burns it when Zabulestan is invaded and when Sam is dying — both are family crises"
+        "He burns it when Zabulestan is invaded and when Sam is dying — both are family crises",
+        "He burns it when Rudabeh's labour fails and Rostam cannot be born (saving Rudabeh and producing Rostam), and when Rostam is wounded by Esfandiyar and cannot continue (saving Rostam and arming him for the final clash) — both times he burns it specifically for Rostam"
       ],
       "answers_fa": [
         "در نبردِ با افراسیاب و در نبردِ با ارجاسپ می‌سوزاند",
-        "وقتی زایمانِ رودابه متوقف می‌شود و رستم نمی‌تواند متولد شود می‌سوزاند (نجاتِ رودابه و تولیدِ رستم)، و وقتی رستم توسطِ اسفندیار زخمی می‌شود می‌سوزاند (نجاتِ رستم و مسلح کردنِ او) — هر دو بار مشخصاً برای رستم می‌سوزاند",
         "برای فراخوانیِ باران و برای درمانِ وبا می‌سوزاند",
-        "وقتی زابلستان مورد تهاجم قرار می‌گیرد و وقتی سام دارد می‌میرد"
+        "وقتی زابلستان مورد تهاجم قرار می‌گیرد و وقتی سام دارد می‌میرد",
+        "وقتی زایمانِ رودابه متوقف می‌شود و رستم نمی‌تواند متولد شود می‌سوزاند (نجاتِ رودابه و تولیدِ رستم)، و وقتی رستم توسطِ اسفندیار زخمی می‌شود می‌سوزاند (نجاتِ رستم و مسلح کردنِ او) — هر دو بار مشخصاً برای رستم می‌سوزاند"
       ],
       "answers_tg": [
         "Дар ҷанги бо Афросиёб ва дар ҷанги бо Арҷосп месӯзонад",
-        "Вақте зоиши Рӯдоба қатъ мешавад ва Рустам таваллуд шуда наметавонад (наҷоти Рӯдоба ва тавлиди Рустам) месӯзонад, ва вақте Рустам аз Исфандиёр захмӣ мешавад (наҷоти Рустам ва мусаллаҳ кардани ӯ) — ҳар ду дафъа мушаххасан барои Рустам месӯзонад",
         "Барои даъвати борон ва барои табобати вабо месӯзонад",
-        "Вақте Зобулистон мавриди ҳуҷум аст ва вақте Сом мемирад"
+        "Вақте Зобулистон мавриди ҳуҷум аст ва вақте Сом мемирад",
+        "Вақте зоиши Рӯдоба қатъ мешавад ва Рустам таваллуд шуда наметавонад (наҷоти Рӯдоба ва тавлиди Рустам) месӯзонад, ва вақте Рустам аз Исфандиёр захмӣ мешавад (наҷоти Рустам ва мусаллаҳ кардани ӯ) — ҳар ду дафъа мушаххасан барои Рустам месӯзонад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "Zal burns the feather twice: once for Rudabeh's caesarean (which saved Rudabeh and produced Rostam), once for Rostam's wounds from Esfandiyar (which saved Rostam and gave him the tamarisk counsel). Both times the burning is specifically for Rostam — the first to enable his existence, the second to enable his survival. The feather is, in this precise sense, the instrument of Rostam's life: it made him possible and it kept him possible at the moment when both were threatened.",
       "explanation_fa": "زال دو بار می‌سوزاند: یک بار برای سزارینِ رودابه، یک بار برای زخم‌هایِ رستم از اسفندیار. هر دو بار به‌طورِ مشخص برای رستم — اولی برای ممکن کردنِ وجودش، دومی برای حفظِ بقایش. پر ابزارِ زندگیِ رستم است.",
       "explanation_tg": "Зол ду дафъа месӯзонад: бор барои сезарияи Рӯдоба, бор барои захмҳои Рустам аз Исфандиёр. Ҳар ду дафъа мушаххасан барои Рустам — аввалӣ барои имконпазир кардани вуҷудаш, дуюмӣ барои ҳифзи бақояш.",
       "reward": {
         "xp": 100,
         "real": 40
-      }
-    },
-    {
-      "id": "sim-m1",
-      "chapter_slug": "simorgh",
-      "quiz_part": 3,
-      "difficulty": "medium",
-      "question": "The Simorgh grieves when she comes to heal Rostam before the Esfandiyar clash. What does this grief reveal about her nature and her relationship to the Shahnameh's world?",
-      "question_fa": "سیمرغ وقتی برای شفایِ رستم قبل از برخوردِ اسفندیار می‌آید غمگین است. این غم چه چیزی درباره‌ی طبیعتِ او و رابطه‌اش با دنیایِ شاهنامه آشکار می‌کند؟",
-      "question_tg": "Симурғ вақте барои шифои Рустам меояд ғамгин аст. Ин ғам дар бораи табиати ӯ ва рабтааш бо дунёи Шоҳнома чӣ мегӯяд?",
-      "answers": [
-        "Her grief reveals that she is a fully knowing witness: she has seen three destructions of the world, she knows what is about to happen, she cannot prevent it, and she helps anyway. Her sorrow is the grief of complete knowledge combined with limited power to prevent what knowledge reveals",
-        "Her grief shows she is limited — she cannot heal Rostam completely and grieves her failure",
-        "She grieves because she is being used against her will — she did not want to come",
-        "Her grief is a formal ceremony — all divine beings in the Shahnameh grieve before giving gifts"
-      ],
-      "answers_fa": [
-        "غمش آشکار می‌کند که شاهدِ کاملاً آگاه است: سه نابودیِ دنیا را دیده، می‌داند چه می‌شود، نمی‌تواند جلویش را بگیرد، و باز هم کمک می‌کند. اندوهش غمِ دانشِ کامل ترکیب شده با قدرتِ محدود برای جلوگیری از آنچه دانش آشکار می‌کند است",
-        "غمش نشان می‌دهد محدود است",
-        "غم می‌خورد چون علیرغمِ خواسته‌اش استفاده می‌شود",
-        "غمش مراسمِ رسمی است"
-      ],
-      "answers_tg": [
-        "Ғамаш ошкор мекунад ки шоҳиди пурдонш аст: се нобудии дунёро дидааст, медонад чӣ мешавад, наметавонад пешгирӣ кунад, ва бо ин ҳол кӯмак мекунад. Андӯҳаш ғами дониши комил бо қудрати маҳдуд барои пешгирии он чи дониш ошкор мекунад аст",
-        "Ғамаш нишон медиҳад маҳдуд аст",
-        "Ғам мехӯрад чун зидди хоҳишаш истифода мешавад",
-        "Ғамаш маросими расмист"
-      ],
-      "correct_answer": 0,
-      "explanation": "The Simorgh's grief is the Shahnameh's most affecting image of what complete knowledge costs. She has watched three destructions of the world from her nest. She knows that helping Rostam will lead to Esfandiyar's death, that Esfandiyar is the most righteous man in the chronicle, that his death will be the chronicle's penultimate great tragedy, and that none of it can be stopped because a frightened king built a trap that two innocent men are walking into. She helps anyway. She tells Rostam what he needs to know. She grieves. The combination — full knowledge, limited power, continued help — is the Shahnameh's definition of compassion.",
-      "explanation_fa": "غمِ سیمرغ عاطفه‌انگیزترین تصویرِ شاهنامه از هزینه‌ی دانشِ کامل است. می‌داند کمک به رستم به مرگِ اسفندیار منجر می‌شود. هیچ‌کدام را نمی‌شود متوقف کرد. باز هم کمک می‌کند. ترکیب — دانشِ کامل، قدرتِ محدود، کمکِ ادامه‌دار — تعریفِ شاهنامه از رحمت است.",
-      "explanation_tg": "Ғами Симурғ таъсирангезтарин тасвири Шоҳнома аз арзиши дониши комил аст. Медонад кӯмак ба Рустам ба марги Исфандиёр оварда мешавад. Ҳеҷ коро нигоҳ дошта наметавонад. Бо ин ҳол кӯмак мекунад. Таркиб — дониши комил, қудрати маҳдуд, кӯмаки идома — таърифи Шоҳнома аз раҳм аст.",
-      "reward": {
-        "xp": 150,
-        "real": 65
-      }
-    },
-    {
-      "id": "sim-m2",
-      "chapter_slug": "simorgh",
-      "quiz_part": 4,
-      "difficulty": "medium",
-      "question": "The Shahnameh says the Simorgh was not seen again after leaving Rostam before the Esfandiyar clash. Why is this departure significant?",
-      "question_fa": "شاهنامه می‌گوید سیمرغ بعد از ترکِ رستم قبل از برخوردِ اسفندیار دیده نشد. چرا این رفتن مهم است؟",
-      "question_tg": "Шоҳнома мегӯяд Симурғ пас аз тарки Рустам дигар дида нашуд. Чаро ин рафтан муҳим аст?",
-      "answers": [
-        "It means she died — the Esfandiyar clash was too much for her and she could not survive it",
-        "It marks the end of the Simorgh's involvement with the line of Zal: the feather has been burned twice, both promises kept, and the great stories of Zal's family — Rostam's labours, Sohrab, Esfandiyar — are ending. Her departure is the chronicle's quiet signal that an era is closing",
-        "It shows the Simorgh was angry at Rostam for killing Esfandiyar and withdrew her protection",
-        "She returned to the east and became associated with a different kingdom's mythology"
-      ],
-      "answers_fa": [
-        "یعنی مُرد",
-        "پایانِ دخالتِ سیمرغ با خطِ زال را نشانه می‌گذارد: پر دو بار سوخته، هر دو وعده نگه داشته، و داستان‌های بزرگِ خانواده‌ی زال — خان‌های رستم، سهراب، اسفندیار — دارند تمام می‌شوند. رفتنش سیگنالِ آرامِ شاهنامه است که دورانی دارد می‌بندد",
-        "نشان می‌دهد سیمرغ از رستم برای کشتنِ اسفندیار ناراحت بود",
-        "به شرق برگشت"
-      ],
-      "answers_tg": [
-        "Яъне мурд",
-        "Поёни дахолати Симурғ бо хатти Золро нишон медиҳад: пар ду дафъа сӯхта, ҳарду ваъда нигоҳ дошта, ва достонҳои бузурги оилаи Зол тамом мешаванд. Рафтанаш сигнали ором аст ки давра дорад мебандад",
-        "Нишон медиҳад Симурғ аз Рустам барои куштани Исфандиёр нороҳат буд",
-        "Ба шарқ баргашт"
-      ],
-      "correct_answer": 1,
-      "explanation": "The Simorgh's disappearance after the tamarisk counsel is the Shahnameh's most understated structural signal. The feather Zal received on Alborz has been burned twice — both times the promise was kept. There is no feather left. The great stories of Zal's family — Rostam's Seven Labours, Sohrab, Esfandiyar — are at their final chapter. The line of Zal as the chronicle has known it is ending. The Simorgh's absence from everything that follows is the chronicle's way of marking a before and after: before, the world had its oldest witness actively present; after, it does not.",
-      "explanation_fa": "ناپدید شدنِ سیمرغ ساکت‌ترین سیگنالِ ساختاریِ شاهنامه است. پر دو بار سوخته. داستان‌های بزرگِ خانواده‌ی زال در آخرین فصلشان هستند. غیابِ سیمرغ از همه چیزِ بعدش شیوه‌ی شاهنامه است برای علامت‌گذاریِ یک قبل و بعد.",
-      "explanation_tg": "Ғайб шудани Симурғ ороситарин сигнали сохтории Шоҳнома аст. Пар ду дафъа сӯхтааст. Достонҳои бузурги оилаи Зол дар охирин бобашон ҳастанд. Ғайбати Симурғ аз ҳамаи он чи бо он пайвандашавад роҳи Шоҳнома аст барои нишонгузории пеш ва пас.",
-      "reward": {
-        "xp": 150,
-        "real": 65
-      }
-    },
-    {
-      "id": "sim-h1",
-      "chapter_slug": "simorgh",
-      "quiz_part": 5,
-      "difficulty": "hard",
-      "question": "The Simorgh enables the continuation of the Shahnameh's story at each intervention but never prevents its griefs. What does this distinction reveal about how Ferdowsi understood wisdom and power?",
-      "question_fa": "سیمرغ در هر مداخله ادامه‌ی داستانِ شاهنامه را ممکن می‌کند اما هرگز از غم‌هایش جلوگیری نمی‌کند. این تمایز چه چیزی درباره‌ی فهمِ فردوسی از خرد و قدرت آشکار می‌کند؟",
-      "question_tg": "Симурғ дар ҳар мудохила идомаи достонро имконпазир мекунад аммо ҳеҷ гоҳ аз ғамҳояш пешгирӣ намекунад. Ин тафовут дар бораи фаҳми Фирдавсӣ аз хирад ва қудрат чӣ мегӯяд?",
-      "answers": [
-        "It reveals that Ferdowsi believed in predestination — the Simorgh cannot change what is fated",
-        "It shows the Simorgh was bound by the feather contract and could only act when summoned, with no independent will",
-        "It reveals Ferdowsi's pessimism — wisdom is useless in the face of the world's suffering",
-        "It reveals that in Ferdowsi's world, the highest form of wisdom is not the power to prevent grief but the willingness to help anyway — to keep one's promises, to provide what is needed, while fully knowing the cost. The Simorgh's grief combined with her continued action is Ferdowsi's definition of what true compassion looks like"
-      ],
-      "answers_fa": [
-        "نشان می‌دهد فردوسی به تقدیر باور داشت",
-        "نشان می‌دهد سیمرغ توسطِ قراردادِ پر محدود شده بود",
-        "بدبینیِ فردوسی را نشان می‌دهد",
-        "نشان می‌دهد در دنیایِ فردوسی، عالی‌ترین شکلِ خرد نه قدرتِ جلوگیری از غم بلکه آمادگی برای کمک با وجودِ همه چیز است — وعده‌ها را نگه داشتن، آنچه نیاز است را فراهم کردن، در حالی که هزینه را کاملاً می‌داند. غمِ سیمرغ ترکیب شده با عملِ ادامه‌دارش تعریفِ فردوسی از رحمتِ واقعی است"
-      ],
-      "answers_tg": [
-        "Нишон медиҳад Фирдавсӣ ба тақдир бовар дошт",
-        "Нишон медиҳад Симурғ тавассути шартномаи пар маҳдуд шуда буд",
-        "Бадбинии Фирдавсиро нишон медиҳад",
-        "Нишон медиҳад дар дунёи Фирдавсӣ, олитарин шакли хирад на қудрати пешгирии ғам балки омодагии кӯмак бо вуҷуди ҳама чиз аст — ваъдаҳоро нигоҳ доштан, он чи ниёз аст фароҳам кардан, дар ҳоле ки арзишро пурра медонад. Ғами Симурғ якҷо бо амали идома таърифи Фирдавсӣ аз раҳмати воқеист"
-      ],
-      "correct_answer": 3,
-      "explanation": "Ferdowsi's Simorgh is the Shahnameh's most developed image of wisdom: she knows everything, she cannot stop everything, and she acts anyway. She knows Esfandiyar will die from her tamarisk counsel. She gives the counsel. She grieves before, during, and presumably after. This combination — full knowledge, limited preventive power, continued engagement — is the specific form of wisdom Ferdowsi presents as highest: not omnipotence, not resignation, but the choice to help with full awareness of what that help will cost. The Shahnameh's world contains grief that cannot be prevented. The question it asks is: what do you do when you know the grief is coming and cannot stop it? The Simorgh's answer is: you help anyway, and you grieve honestly, and you keep your promises.",
-      "explanation_fa": "سیمرغِ فردوسی پیشرفته‌ترین تصویرِ شاهنامه از خرد است: همه چیز می‌داند، همه چیز را نمی‌تواند متوقف کند، و باز هم عمل می‌کند. ترکیبِ دانشِ کامل، قدرتِ محدودِ پیشگیری، درگیریِ ادامه‌دار — شکلِ خاصِ خردی که فردوسی عالی‌ترین می‌داند. پاسخِ سیمرغ: باز هم کمک کن، صادقانه غم بخور، وعده‌هایت را نگه دار.",
-      "explanation_tg": "Симурғи Фирдавсӣ пешрафтатарин тасвири Шоҳнома аз хирад аст: ҳамаро медонад, ҳамаро нигоҳ дошта наметавонад, ва боз ҳам амал мекунад. Таркиби дониши комил, қудрати маҳдуди пешгирӣ, дарудии идома — шакли мушаххаси хирад аст ки Фирдавсӣ олитарин медонад.",
-      "reward": {
-        "xp": 180,
-        "real": 80
       }
     },
     {
@@ -184,30 +79,65 @@
       "question_fa": "طبقِ فصل، سیمرغ در کدام درخت لانه دارد؟",
       "question_tg": "Тибқи фасл, Симурғ дар кадом дарахт лона дорад?",
       "answers": [
-        "The sacred cedar of Balkh",
-        "The tamarisk by the Oxus",
         "The world-tree Vourukasha on Alborz",
-        "The cypress of Damavand"
+        "The cypress of Damavand",
+        "The sacred cedar of Balkh",
+        "The tamarisk by the Oxus"
       ],
       "answers_fa": [
-        "سروِ مقدسِ بلخ",
-        "گزِ کنارِ جیحون",
         "درختِ جهانیِ وروکشا در البرز",
-        "سروِ دماوند"
+        "سروِ دماوند",
+        "سروِ مقدسِ بلخ",
+        "گزِ کنارِ جیحون"
       ],
       "answers_tg": [
-        "Арзи муқаддаси Балх",
-        "Гази канори Ҷайҳун",
         "Дарахти ҷаҳонии Ворукаша дар Алборз",
-        "Арзи Дамованд"
+        "Арзи Дамованд",
+        "Арзи муқаддаси Балх",
+        "Гази канори Ҷайҳун"
       ],
-      "correct_answer": 2,
+      "correct_answer": 0,
       "explanation": "'She nests on the world-tree Vourukasha on Alborz and has watched three cycles of the world's destruction and renewal.'",
       "explanation_fa": "«در درختِ جهانیِ وروکشا در البرز لانه دارد و سه چرخه از نابودی و نوسازیِ دنیا را تماشا کرده.»",
       "explanation_tg": "«Дар дарахти ҷаҳонии Ворукаша дар Алборз лона дорад ва се давраи нобудӣ ва навсозии дунёро тамошо кардааст.»",
       "reward": {
         "xp": 170,
         "real": 75
+      }
+    },
+    {
+      "id": "sim-m1",
+      "chapter_slug": "simorgh",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Simorgh grieves when she comes to heal Rostam before the Esfandiyar clash. What does this grief reveal about her nature and her relationship to the Shahnameh's world?",
+      "question_fa": "سیمرغ وقتی برای شفایِ رستم قبل از برخوردِ اسفندیار می‌آید غمگین است. این غم چه چیزی درباره‌ی طبیعتِ او و رابطه‌اش با دنیایِ شاهنامه آشکار می‌کند؟",
+      "question_tg": "Симурғ вақте барои шифои Рустам меояд ғамгин аст. Ин ғам дар бораи табиати ӯ ва рабтааш бо дунёи Шоҳнома чӣ мегӯяд?",
+      "answers": [
+        "Her grief shows she is limited — she cannot heal Rostam completely and grieves her failure",
+        "Her grief is a formal ceremony — all divine beings in the Shahnameh grieve before giving gifts",
+        "Her grief reveals that she is a fully knowing witness: she has seen three destructions of the world, she knows what is about to happen, she cannot prevent it, and she helps anyway. Her sorrow is the grief of complete knowledge combined with limited power to prevent what knowledge reveals",
+        "She grieves because she is being used against her will — she did not want to come"
+      ],
+      "answers_fa": [
+        "غمش نشان می‌دهد محدود است",
+        "غمش مراسمِ رسمی است",
+        "غمش آشکار می‌کند که شاهدِ کاملاً آگاه است: سه نابودیِ دنیا را دیده، می‌داند چه می‌شود، نمی‌تواند جلویش را بگیرد، و باز هم کمک می‌کند. اندوهش غمِ دانشِ کامل ترکیب شده با قدرتِ محدود برای جلوگیری از آنچه دانش آشکار می‌کند است",
+        "غم می‌خورد چون علیرغمِ خواسته‌اش استفاده می‌شود"
+      ],
+      "answers_tg": [
+        "Ғамаш нишон медиҳад маҳдуд аст",
+        "Ғамаш маросими расмист",
+        "Ғамаш ошкор мекунад ки шоҳиди пурдонш аст: се нобудии дунёро дидааст, медонад чӣ мешавад, наметавонад пешгирӣ кунад, ва бо ин ҳол кӯмак мекунад. Андӯҳаш ғами дониши комил бо қудрати маҳдуд барои пешгирии он чи дониш ошкор мекунад аст",
+        "Ғам мехӯрад чун зидди хоҳишаш истифода мешавад"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Simorgh's grief is the Shahnameh's most affecting image of what complete knowledge costs. She has watched three destructions of the world from her nest. She knows that helping Rostam will lead to Esfandiyar's death, that Esfandiyar is the most righteous man in the chronicle, that his death will be the chronicle's penultimate great tragedy, and that none of it can be stopped because a frightened king built a trap that two innocent men are walking into. She helps anyway. She tells Rostam what he needs to know. She grieves. The combination — full knowledge, limited power, continued help — is the Shahnameh's definition of compassion.",
+      "explanation_fa": "غمِ سیمرغ عاطفه‌انگیزترین تصویرِ شاهنامه از هزینه‌ی دانشِ کامل است. می‌داند کمک به رستم به مرگِ اسفندیار منجر می‌شود. هیچ‌کدام را نمی‌شود متوقف کرد. باز هم کمک می‌کند. ترکیب — دانشِ کامل، قدرتِ محدود، کمکِ ادامه‌دار — تعریفِ شاهنامه از رحمت است.",
+      "explanation_tg": "Ғами Симурғ таъсирангезтарин тасвири Шоҳнома аз арзиши дониши комил аст. Медонад кӯмак ба Рустам ба марги Исфандиёр оварда мешавад. Ҳеҷ коро нигоҳ дошта наметавонад. Бо ин ҳол кӯмак мекунад. Таркиб — дониши комил, қудрати маҳдуд, кӯмаки идома — таърифи Шоҳнома аз раҳм аст.",
+      "reward": {
+        "xp": 150,
+        "real": 65
       }
     },
     {
@@ -220,29 +150,64 @@
       "question_tg": "Фасл мегӯяд Симурғ «чаҳор бор бо таъсири қатъӣ» зоҳир шуд. Аввалин зуҳур чӣ буд?",
       "answers": [
         "Guiding the caesarean at Rostam's birth",
-        "She raised Zal on the mountain when Sam abandoned him",
+        "She appeared to Manuchehr in a dream",
         "Healing Rostam before the Esfandiyar clash",
-        "She appeared to Manuchehr in a dream"
+        "She raised Zal on the mountain when Sam abandoned him"
       ],
       "answers_fa": [
         "راهنمایی سزارین در تولدِ رستم",
-        "زال را روی کوه پرورش داد وقتی سام او را رها کرد",
+        "به منوچهر در خواب ظاهر شد",
         "شفا دادنِ رستم قبل از رویارویی با اسفندیار",
-        "به منوچهر در خواب ظاهر شد"
+        "زال را روی کوه پرورش داد وقتی سام او را رها کرد"
       ],
       "answers_tg": [
         "Роҳнамоии кесария дар таваллуди Рустам",
-        "Золро бар кӯҳ парвариш дод вақте Сом ӯро тарк кард",
+        "Ба Манӯчеҳр дар хоб зоҳир шуд",
         "Шифо додани Рустам пеш аз рӯёрӯйи бо Исфандиёр",
-        "Ба Манӯчеҳр дар хоб зоҳир шуд"
+        "Золро бар кӯҳ парвариш дод вақте Сом ӯро тарк кард"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The first appearance: she raised Zal after Sam abandoned him on Mount Alborz, educated him, and returned him with a feather and a promise.",
       "explanation_fa": "اولین ظهور: زال را بعد از اینکه سام او را در کوهِ البرز رها کرد پرورش داد، آموزشش داد، و با پر و وعده بازگرداند.",
       "explanation_tg": "Аввалин зуҳур: Золро пас аз ин ки Сом ӯро дар Кӯҳи Алборз тарк кард, парвариш дод, омӯзишаш дод ва бо пар ва ваъда баргардонд.",
       "reward": {
         "xp": 230,
         "real": 105
+      }
+    },
+    {
+      "id": "sim-m2",
+      "chapter_slug": "simorgh",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "The Shahnameh says the Simorgh was not seen again after leaving Rostam before the Esfandiyar clash. Why is this departure significant?",
+      "question_fa": "شاهنامه می‌گوید سیمرغ بعد از ترکِ رستم قبل از برخوردِ اسفندیار دیده نشد. چرا این رفتن مهم است؟",
+      "question_tg": "Шоҳнома мегӯяд Симурғ пас аз тарки Рустам дигар дида нашуд. Чаро ин рафтан муҳим аст?",
+      "answers": [
+        "It shows the Simorgh was angry at Rostam for killing Esfandiyar and withdrew her protection",
+        "It means she died — the Esfandiyar clash was too much for her and she could not survive it",
+        "It marks the end of the Simorgh's involvement with the line of Zal: the feather has been burned twice, both promises kept, and the great stories of Zal's family — Rostam's labours, Sohrab, Esfandiyar — are ending. Her departure is the chronicle's quiet signal that an era is closing",
+        "She returned to the east and became associated with a different kingdom's mythology"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد سیمرغ از رستم برای کشتنِ اسفندیار ناراحت بود",
+        "یعنی مُرد",
+        "پایانِ دخالتِ سیمرغ با خطِ زال را نشانه می‌گذارد: پر دو بار سوخته، هر دو وعده نگه داشته، و داستان‌های بزرگِ خانواده‌ی زال — خان‌های رستم، سهراب، اسفندیار — دارند تمام می‌شوند. رفتنش سیگنالِ آرامِ شاهنامه است که دورانی دارد می‌بندد",
+        "به شرق برگشت"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад Симурғ аз Рустам барои куштани Исфандиёр нороҳат буд",
+        "Яъне мурд",
+        "Поёни дахолати Симурғ бо хатти Золро нишон медиҳад: пар ду дафъа сӯхта, ҳарду ваъда нигоҳ дошта, ва достонҳои бузурги оилаи Зол тамом мешаванд. Рафтанаш сигнали ором аст ки давра дорад мебандад",
+        "Ба шарқ баргашт"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Simorgh's disappearance after the tamarisk counsel is the Shahnameh's most understated structural signal. The feather Zal received on Alborz has been burned twice — both times the promise was kept. There is no feather left. The great stories of Zal's family — Rostam's Seven Labours, Sohrab, Esfandiyar — are at their final chapter. The line of Zal as the chronicle has known it is ending. The Simorgh's absence from everything that follows is the chronicle's way of marking a before and after: before, the world had its oldest witness actively present; after, it does not.",
+      "explanation_fa": "ناپدید شدنِ سیمرغ ساکت‌ترین سیگنالِ ساختاریِ شاهنامه است. پر دو بار سوخته. داستان‌های بزرگِ خانواده‌ی زال در آخرین فصلشان هستند. غیابِ سیمرغ از همه چیزِ بعدش شیوه‌ی شاهنامه است برای علامت‌گذاریِ یک قبل و بعد.",
+      "explanation_tg": "Ғайб шудани Симурғ ороситарин сигнали сохтории Шоҳнома аст. Пар ду дафъа сӯхтааст. Достонҳои бузурги оилаи Зол дар охирин бобашон ҳастанд. Ғайбати Симурғ аз ҳамаи он чи бо он пайвандашавад роҳи Шоҳнома аст барои нишонгузории пеш ва пас.",
+      "reward": {
+        "xp": 150,
+        "real": 65
       }
     },
     {
@@ -254,24 +219,24 @@
       "question_fa": "فصل سیمرغ را «مکانیزمی که شاهنامه را در حرکت نگه می‌دارد وقتی که در غیر این صورت متوقف می‌شد» می‌نامد. این یعنی چه؟",
       "question_tg": "Фасл Симурғро «механизме ки Шоҳномаро дар ҳаракат нигоҳ медорад вақте ки дар ғайр аз ин нагусашт» меномад. Ин яъне чӣ?",
       "answers": [
+        "She is the only character who appears in every part of the chronicle",
         "She provides narrative exposition between chapters",
         "Each intervention saves a life the story needs to continue — without her, the bloodline and its stories end",
-        "She is the only character who appears in every part of the chronicle",
         "She serves as a bridge between human and divine worlds"
       ],
       "answers_fa": [
+        "تنها شخصیتی است که در هر قسمتِ شاهنامه ظاهر می‌شود",
         "توضیحِ روایی بین فصل‌ها ارائه می‌دهد",
         "هر مداخله جانی را نجات می‌دهد که داستان برای ادامه به آن نیاز دارد — بدونِ او، دودمان و داستان‌هایش پایان می‌یابند",
-        "تنها شخصیتی است که در هر قسمتِ شاهنامه ظاهر می‌شود",
         "پلی بین دنیاهای انسانی و الهی است"
       ],
       "answers_tg": [
+        "Ягона шахсест ки дар ҳар қисми Шоҳнома зоҳир мешавад",
         "Тавзеҳи ривоятӣ байни фасл ҳо пешкаш мекунад",
         "Ҳар дахолат ҷоне ро наҷот медиҳад ки ривоят барои идома ба он ниёз дорад — бидуни ӯ, нажод ва ҳикоятҳояш ба поён мерасанд",
-        "Ягона шахсест ки дар ҳар қисми Шоҳнома зоҳир мешавад",
         "Пуле байни дунёҳои инсонӣ ва илоҳӣ аст"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "Without the Simorgh: Zal would have died on Alborz; Rostam would never have been born; Esfandiyar would have killed Rostam. Three critical points where the chronicle would have stopped.",
       "explanation_fa": "بدونِ سیمرغ: زال در البرز می‌مُرد؛ رستم هرگز متولد نمی‌شد؛ اسفندیار رستم را می‌کشت. سه نقطه‌ی حیاتی که شاهنامه متوقف می‌شد.",
       "explanation_tg": "Бидуни Симурғ: Зол дар Алборз мемурд; Рустам ҳаргиз таваллуд намешуд; Исфандиёр Рустамро мекушт. Се нуқтаи ҳаётии ки Шоҳнома нагусашт.",
@@ -289,24 +254,24 @@
       "question_fa": "فصل می‌گوید هر مداخله «داستان را قادر می‌سازد ادامه دهد اما هزینه‌اش را کمتر نمی‌کند.» یک مثالِ خاص بدهید.",
       "question_tg": "Фасл мегӯяд ҳар дахолат «ривоятро қодир месозад идома диҳад аммо ҳазинааш ро камтар намекунад.» Мисоли мушаhhасе диҳед.",
       "answers": [
+        "All of the above are examples",
         "She healed Rudabeh but the first feather was consumed",
-        "She saved Rostam at the Esfandiyar clash — but Esfandiyar died for it, and Rostam was cursed",
         "She raised Zal but he was separated from his family",
-        "All of the above are examples"
+        "She saved Rostam at the Esfandiyar clash — but Esfandiyar died for it, and Rostam was cursed"
       ],
       "answers_fa": [
+        "همه‌ی موارد بالا مثال هستند",
         "رودابه را شفا داد اما پرِ اولی مصرف شد",
-        "رستم را در رویارویی با اسفندیار نجات داد — اما اسفندیار برای آن مُرد و رستم نفرین شد",
         "زال را پرورش داد اما از خانواده‌اش جدا شد",
-        "همه‌ی موارد بالا مثال هستند"
+        "رستم را در رویارویی با اسفندیار نجات داد — اما اسفندیار برای آن مُرد و رستم نفرین شد"
       ],
       "answers_tg": [
+        "Ҳамаи мисолҳои боло мисол ҳастанд",
         "Рӯдобаро шифо дод аммо пари аввалӣ сарф шуд",
-        "Рустамро дар рӯёрӯйи бо Исфандиёр наҷот дод — аммо Исфандиёр барои он мурд ва Рустам лаъна шуд",
         "Золро парвариш дод аммо аз оилааш ҷудо шуд",
-        "Ҳамаи мисолҳои боло мисол ҳастанд"
+        "Рустамро дар рӯёрӯйи бо Исфандиёр наҷот дод — аммо Исфандиёр барои он мурд ва Рустам лаъна шуд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The clearest example: she saved Rostam so he could kill Esfandiyar. Esfandiyar died. Rostam was cursed. The story continued — at that cost.",
       "explanation_fa": "روشن‌ترین مثال: رستم را نجات داد تا بتواند اسفندیار را بکشد. اسفندیار مُرد. رستم نفرین شد. داستان ادامه یافت — با آن هزینه.",
       "explanation_tg": "Равшантарин мисол: Рустамро наҷот дод то Исфандиёрро бикушад. Исфандиёр мурд. Рустам лаъна шуд. Ривоят идома ёфт — бо он ҳазина.",
@@ -324,24 +289,24 @@
       "question_fa": "فصل می‌گوید سیمرغ «سه چرخه از نابودی و نوسازیِ دنیا را تماشا کرده.» این بازه‌ی زمانیِ زمین‌شناختی چگونه بر روابطِ او با شخصیت‌های انسانی تأثیر می‌گذارد؟",
       "question_tg": "Фасл мегӯяд Симурғ «се давраи нобудӣ ва навсозии дунёро тамошо кардааст.» Ин боздаи замонии заминшиносӣ чӣ тавр бар муносибати ӯ бо шахсиятҳои инсонӣ таъсир мегузорад?",
       "answers": [
+        "She treats every human as equally important to her because she can see across all of time",
         "She is indifferent because human events are trivial compared to what she has seen",
-        "She is not part of the chronicle's world — she witnesses it from a position that encompasses all of human history as a single episode, yet she still grieves",
         "She has become emotionally exhausted and helps without caring",
-        "She treats every human as equally important to her because she can see across all of time"
+        "She is not part of the chronicle's world — she witnesses it from a position that encompasses all of human history as a single episode, yet she still grieves"
       ],
       "answers_fa": [
+        "هر انسانی را به یکسان مهم می‌داند چون می‌تواند در همه‌ی زمان بنگرد",
         "بی‌تفاوت است چون رویدادهای انسانی در مقایسه با آنچه دیده ناچیز هستند",
-        "بخشی از دنیای شاهنامه نیست — آن را از مواضعی شاهد است که کلِّ تاریخِ انسانی را به عنوانِ یک قسمتِ واحد احاطه می‌کند، با این حال هنوز غم می‌خورد",
         "از نظرِ احساسی خسته شده و بدونِ اهمیت دادن کمک می‌کند",
-        "هر انسانی را به یکسان مهم می‌داند چون می‌تواند در همه‌ی زمان بنگرد"
+        "بخشی از دنیای شاهنامه نیست — آن را از مواضعی شاهد است که کلِّ تاریخِ انسانی را به عنوانِ یک قسمتِ واحد احاطه می‌کند، با این حال هنوز غم می‌خورد"
       ],
       "answers_tg": [
+        "Ҳар инсонеро ба яксон муҳим меҳисобад зеро метавонад дар тамоми замон нигарад",
         "Беэҳтиёт аст зеро рӯйдодҳои инсонӣ нисбат ба он чи дидааст нотавон ҳастанд",
-        "Қисмати дунёи Шоҳнома нест — онро аз мавзеъе шоҳид аст ки тамоми таърихи инсониро ҳамчун як қисмати ягона иҳота мекунад, бо ин ҳол ҳанӯз ғам мехӯрад",
         "Аз назари эҳсосот хаста шудааст ва бидуни эҳтиёт кӯмак мекунад",
-        "Ҳар инсонеро ба яксон муҳим меҳисобад зеро метавонад дар тамоми замон нигарад"
+        "Қисмати дунёи Шоҳнома нест — онро аз мавзеъе шоҳид аст ки тамоми таърихи инсониро ҳамчун як қисмати ягона иҳота мекунад, бо ин ҳол ҳанӯз ғам мехӯрад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The chapter says she grieved when she came before the Esfandiyar clash. She is not indifferent. But her frame of reference transcends the chronicle entirely — she is the world's memory, not its participant.",
       "explanation_fa": "فصل می‌گوید قبل از رویارویی با اسفندیار غم خورد. بی‌تفاوت نیست. اما چارچوبِ مرجعِ او کاملاً از شاهنامه فراتر می‌رود — حافظه‌ی دنیا است، نه شرکت‌کننده‌اش.",
       "explanation_tg": "Фасл мегӯяд пеш аз рӯёрӯйи бо Исфандиёр ғам хӯрд. Беэҳтиёт нест. Аммо чаҳорчӯби марҷаъи ӯ комилан аз Шоҳнома фаротар мерад — хотираи дунё аст, на иштирокчиаш.",
@@ -359,24 +324,24 @@
       "question_fa": "طبقِ فصل، پر چند بار سوزانده شد؟",
       "question_tg": "Тибқи фасл, пар чанд бор сӯзонда шуд?",
       "answers": [
-        "Once",
-        "Twice — at Rostam's birth and before the Esfandiyar clash",
         "Three times — also when Zal descended from Alborz",
-        "The chapter does not specify the total number"
+        "The chapter does not specify the total number",
+        "Once",
+        "Twice — at Rostam's birth and before the Esfandiyar clash"
       ],
       "answers_fa": [
-        "یک بار",
-        "دوبار — در تولدِ رستم و قبل از رویارویی با اسفندیار",
         "سه بار — همچنین وقتی زال از البرز پایین آمد",
-        "فصل تعدادِ کل را مشخص نمی‌کند"
+        "فصل تعدادِ کل را مشخص نمی‌کند",
+        "یک بار",
+        "دوبار — در تولدِ رستم و قبل از رویارویی با اسفندیار"
       ],
       "answers_tg": [
-        "Як бор",
-        "Ду бор — дар таваллуди Рустам ва пеш аз рӯёрӯйи бо Исфандиёр",
         "Се бор — ҳамчунин вақте Зол аз Алборз поён омад",
-        "Фасл шумораи умумиро мушаhhас намекунад"
+        "Фасл шумораи умумиро мушаhhас намекунад",
+        "Як бор",
+        "Ду бор — дар таваллуди Рустам ва пеш аз рӯёрӯйи бо Исфандиёр"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "'When Zal burned the feather for the first time' (Rostam's birth) and 'when Zal burned the feather for the last time' (before Esfandiyar). First and last = two.",
       "explanation_fa": "«وقتی زال پر را برای اولین بار سوزاند» (تولدِ رستم) و «وقتی زال پر را برای آخرین بار سوزاند» (پیش از اسفندیار). اول و آخر = دو.",
       "explanation_tg": "«Вақте Зол парро барои аввалин бор сӯзонд» (таваллуди Рустам) ва «вақте Зол парро барои охирин бор сӯзонд» (пеш аз Исфандиёр). Аввал ва охир = ду.",
@@ -394,30 +359,65 @@
       "question_fa": "سیمرغ وسایلِ کشتنِ اسفندیار را فراهم کرد «چون جایگزین متوقف شدنِ داستان بود.» چه چیزی داستان را متوقف می‌کرد؟",
       "question_tg": "Симурғ воситаи куштани Исфандиёрро фароҳам кард «зеро ҷойгузин нагусашти ривоят буд.» Чӣ чиз ривоятро нагусашт?",
       "answers": [
+        "Kay Khosrow would have intervened and stopped the fight",
         "Rostam refusing to fight would have dishonored Iran",
         "Esfandiyar would have killed Rostam — ending Rostam's story before Rostam's End, leaving events after Esfandiyar without their central figure",
-        "Kay Khosrow would have intervened and stopped the fight",
         "The chronicle would have continued but with a different hero"
       ],
       "answers_fa": [
+        "کی‌خسرو دخالت می‌کرد و نبرد را متوقف می‌کرد",
         "امتناعِ رستم از جنگ ایران را بی‌شرف می‌کرد",
         "اسفندیار رستم را می‌کشت — پایانِ داستانِ رستم را قبل از «پایانِ رستم» رقم می‌زد، رویدادهای بعد از اسفندیار را بدونِ شخصیتِ محوری‌شان می‌گذاشت",
-        "کی‌خسرو دخالت می‌کرد و نبرد را متوقف می‌کرد",
         "شاهنامه ادامه می‌یافت اما با قهرمانِ دیگری"
       ],
       "answers_tg": [
+        "Кай Хусрав дахолат мекард ва набардро мебаст",
         "Худдории Рустам аз ҷанг Эронро беномус мекард",
         "Исфандиёр Рустамро мекушт — поёни ҳикояти Рустамро пеш аз «Поёни Рустам» рақам мезад, рӯйдодҳои баъди Исфандиёрро бидуни шахсияти марказиашон мегузошт",
-        "Кай Хусрав дахолат мекард ва набардро мебаст",
         "Шоҳнома идома меёфт аммо бо қаҳрамони дигаре"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "Without the arrow, Esfandiyar wins and Rostam dies. Rostam's End — and everything that depends on Rostam — cannot happen. The chronicle needs Rostam to continue.",
       "explanation_fa": "بدونِ تیر، اسفندیار می‌برد و رستم می‌میرد. پایانِ رستم — و هر چیزی که به رستم وابسته است — نمی‌تواند اتفاق بیفتد. شاهنامه به رستم برای ادامه نیاز دارد.",
       "explanation_tg": "Бидуни тир, Исфандиёр мебарад ва Рустам мемирад. Поёни Рустам — ва ҳама чизе ки ба Рустам вобаста аст — наметавонад рӯй диҳад. Шоҳнома ба Рустам барои идома ниёз дорад.",
       "reward": {
         "xp": 350,
         "real": 165
+      }
+    },
+    {
+      "id": "sim-h1",
+      "chapter_slug": "simorgh",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The Simorgh enables the continuation of the Shahnameh's story at each intervention but never prevents its griefs. What does this distinction reveal about how Ferdowsi understood wisdom and power?",
+      "question_fa": "سیمرغ در هر مداخله ادامه‌ی داستانِ شاهنامه را ممکن می‌کند اما هرگز از غم‌هایش جلوگیری نمی‌کند. این تمایز چه چیزی درباره‌ی فهمِ فردوسی از خرد و قدرت آشکار می‌کند؟",
+      "question_tg": "Симурғ дар ҳар мудохила идомаи достонро имконпазир мекунад аммо ҳеҷ гоҳ аз ғамҳояш пешгирӣ намекунад. Ин тафовут дар бораи фаҳми Фирдавсӣ аз хирад ва қудрат чӣ мегӯяд?",
+      "answers": [
+        "It reveals Ferdowsi's pessimism — wisdom is useless in the face of the world's suffering",
+        "It reveals that Ferdowsi believed in predestination — the Simorgh cannot change what is fated",
+        "It reveals that in Ferdowsi's world, the highest form of wisdom is not the power to prevent grief but the willingness to help anyway — to keep one's promises, to provide what is needed, while fully knowing the cost. The Simorgh's grief combined with her continued action is Ferdowsi's definition of what true compassion looks like",
+        "It shows the Simorgh was bound by the feather contract and could only act when summoned, with no independent will"
+      ],
+      "answers_fa": [
+        "بدبینیِ فردوسی را نشان می‌دهد",
+        "نشان می‌دهد فردوسی به تقدیر باور داشت",
+        "نشان می‌دهد در دنیایِ فردوسی، عالی‌ترین شکلِ خرد نه قدرتِ جلوگیری از غم بلکه آمادگی برای کمک با وجودِ همه چیز است — وعده‌ها را نگه داشتن، آنچه نیاز است را فراهم کردن، در حالی که هزینه را کاملاً می‌داند. غمِ سیمرغ ترکیب شده با عملِ ادامه‌دارش تعریفِ فردوسی از رحمتِ واقعی است",
+        "نشان می‌دهد سیمرغ توسطِ قراردادِ پر محدود شده بود"
+      ],
+      "answers_tg": [
+        "Бадбинии Фирдавсиро нишон медиҳад",
+        "Нишон медиҳад Фирдавсӣ ба тақдир бовар дошт",
+        "Нишон медиҳад дар дунёи Фирдавсӣ, олитарин шакли хирад на қудрати пешгирии ғам балки омодагии кӯмак бо вуҷуди ҳама чиз аст — ваъдаҳоро нигоҳ доштан, он чи ниёз аст фароҳам кардан, дар ҳоле ки арзишро пурра медонад. Ғами Симурғ якҷо бо амали идома таърифи Фирдавсӣ аз раҳмати воқеист",
+        "Нишон медиҳад Симурғ тавассути шартномаи пар маҳдуд шуда буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Ferdowsi's Simorgh is the Shahnameh's most developed image of wisdom: she knows everything, she cannot stop everything, and she acts anyway. She knows Esfandiyar will die from her tamarisk counsel. She gives the counsel. She grieves before, during, and presumably after. This combination — full knowledge, limited preventive power, continued engagement — is the specific form of wisdom Ferdowsi presents as highest: not omnipotence, not resignation, but the choice to help with full awareness of what that help will cost. The Shahnameh's world contains grief that cannot be prevented. The question it asks is: what do you do when you know the grief is coming and cannot stop it? The Simorgh's answer is: you help anyway, and you grieve honestly, and you keep your promises.",
+      "explanation_fa": "سیمرغِ فردوسی پیشرفته‌ترین تصویرِ شاهنامه از خرد است: همه چیز می‌داند، همه چیز را نمی‌تواند متوقف کند، و باز هم عمل می‌کند. ترکیبِ دانشِ کامل، قدرتِ محدودِ پیشگیری، درگیریِ ادامه‌دار — شکلِ خاصِ خردی که فردوسی عالی‌ترین می‌داند. پاسخِ سیمرغ: باز هم کمک کن، صادقانه غم بخور، وعده‌هایت را نگه دار.",
+      "explanation_tg": "Симурғи Фирдавсӣ пешрафтатарин тасвири Шоҳнома аз хирад аст: ҳамаро медонад, ҳамаро нигоҳ дошта наметавонад, ва боз ҳам амал мекунад. Таркиби дониши комил, қудрати маҳдуди пешгирӣ, дарудии идома — шакли мушаххаси хирад аст ки Фирдавсӣ олитарин медонад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
       }
     },
     {
@@ -429,22 +429,22 @@
       "question_fa": "بعد از ترکِ رستم در شبِ رویارویی با اسفندیار، سیمرغ دیگر دیده نشد. فصل غیابش را چگونه توصیف می‌کند؟",
       "question_tg": "Пас аз тарки Рустам дар шаби рӯёрӯйи бо Исфандиёр, Симурғ дигар дида нашуд. Фасл ғиёбашро чӣ тавр тавсиф мекунад?",
       "answers": [
-        "She died from grief after enabling Esfandiyar's death",
+        "She was destroyed by the force of Esfandiyar's death",
         "She does not die — she is older than death — she simply goes and does not return, the feather is ash, the promise has been kept",
         "She transformed into a mortal bird",
-        "She was destroyed by the force of Esfandiyar's death"
+        "She died from grief after enabling Esfandiyar's death"
       ],
       "answers_fa": [
-        "از اندوه پس از فراهم کردنِ مرگِ اسفندیار مُرد",
+        "توسطِ نیروی مرگِ اسفندیار نابود شد",
         "نمی‌میرد — از مرگ هم کهن‌تر است — فقط می‌رود و برنمی‌گردد، پر خاکستر است، وعده اجرا شده",
         "به یک پرنده‌ی فانی تبدیل شد",
-        "توسطِ نیروی مرگِ اسفندیار نابود شد"
+        "از اندوه پس از فراهم کردنِ مرگِ اسفندیار مُرد"
       ],
       "answers_tg": [
-        "Аз ғам пас аз фароҳам кардани марги Исфандиёр мурд",
+        "Аз ҷониби қуввати марги Исфандиёр нобуд шуд",
         "Намемирад — аз марг ҳам куҳантар аст — танҳо меравад ва барнамегардад, пар хокистар аст, ваъда иҷро шудааст",
         "Ба паррандаи фониро табдил шуд",
-        "Аз ҷониби қуввати марги Исфандиёр нобуд шуд"
+        "Аз ғам пас аз фароҳам кардани марги Исфандиёр мурд"
       ],
       "correct_answer": 1,
       "explanation": "'She does not die — she is older than death. She does not announce a permanent departure. She goes, and does not return. The feather is ash. The promise has been kept.'",
@@ -464,24 +464,24 @@
       "question_fa": "فصل از کلمه‌ی «باز هم» استفاده می‌کند — «باز هم وسایل را فراهم کرد.» کلمه‌ی «باز هم» در این جمله چه کاری انجام می‌دهد؟",
       "question_tg": "Фасл аз калимаи «боз ҳам» истифода мекунад — «боз ҳам воситаҳоро фароҳам кард.» Калимаи «боз ҳам» дар ин ҷумла чӣ мекунад?",
       "answers": [
+        "It suggests the Simorgh had no choice herself",
         "It shows the Simorgh was reluctant but ultimately complied",
         "It holds the grief and the action simultaneously — full knowledge of the cost and action taken despite it",
-        "It suggests the Simorgh had no choice herself",
         "It indicates she disagreed with Rostam but respected his autonomy"
       ],
       "answers_fa": [
+        "می‌رساند که سیمرغ خودش هم چاره‌ای نداشت",
         "نشان می‌دهد سیمرغ مردد بود اما در نهایت پیروی کرد",
         "اندوه و عمل را به طورِ همزمان نگه می‌دارد — دانشِ کامل از هزینه و عملِ انجام‌شده علی‌رغمِ آن",
-        "می‌رساند که سیمرغ خودش هم چاره‌ای نداشت",
         "نشان می‌دهد با رستم مخالف بود اما به استقلالِ او احترام گذاشت"
       ],
       "answers_tg": [
+        "Мерасонад ки Симурғ худаш ҳам чораеро надошт",
         "Нишон медиҳад Симурғ дудила буд аммо дар ниҳоят пайравӣ кард",
         "Ғам ва амалро ба таври ҳамзамон нигоҳ медорад — дониши комили ҳазина ва амали анҷомшуда бар хилофи он",
-        "Мерасонад ки Симурғ худаш ҳам чораеро надошт",
         "Нишон медиҳад бо Рустам мухолиф буд аммо ба истиқлоли ӯ эҳтиром гузошт"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "'She told Rostam he would be cursed. He would be. She provided the means anyway.' 'Anyway' is where grief and agency exist simultaneously.",
       "explanation_fa": "«به رستم گفت نفرین خواهی شد. خواهی شد. باز هم وسایل را فراهم کرد.» «باز هم» جایی است که اندوه و اختیار به طورِ همزمان وجود دارند.",
       "explanation_tg": "«Ба Рустам гуфт лаъна хоҳӣ шуд. Хоҳӣ шуд. Боз ҳам воситаҳоро фароҳам кард.» «Боз ҳам» ҷоест ки ғам ва иктиёр ба таври ҳамзамон вуҷуд доранд.",
@@ -499,24 +499,24 @@
       "question_fa": "فصل سه داستان را در «خطِّ داستان‌های بزرگِ زال» که دارند به پایان می‌رسند فهرست می‌کند. آن‌ها چه هستند؟",
       "question_tg": "Фасл се ҳикоятро дар «хати ҳикоятҳои бузурги Зол» ки дар ҳоли поён ёфтан ҳастанд рӯйхат мекунад. Онҳо чӣ ҳастанд?",
       "answers": [
-        "Zal, Rudabeh, and Rostam",
         "The Seven Labours, Sohrab, and Esfandiyar",
-        "Keyumars, Fereydun, and Kay Khosrow",
-        "Siavash, Kay Khosrow, and the Great War"
+        "Zal, Rudabeh, and Rostam",
+        "Siavash, Kay Khosrow, and the Great War",
+        "Keyumars, Fereydun, and Kay Khosrow"
       ],
       "answers_fa": [
-        "زال، رودابه و رستم",
         "هفت خان، سهراب و اسفندیار",
-        "کیومرث، فریدون و کی‌خسرو",
-        "سیاوش، کی‌خسرو و جنگِ بزرگ"
+        "زال، رودابه و رستم",
+        "سیاوش، کی‌خسرو و جنگِ بزرگ",
+        "کیومرث، فریدون و کی‌خسرو"
       ],
       "answers_tg": [
-        "Зол, Рӯдоба ва Рустам",
         "Ҳафтхон, Суҳроб ва Исфандиёр",
-        "Киюмарс, Фаридун ва Кай Хусрав",
-        "Сиёвуш, Кай Хусрав ва Ҷанги бузург"
+        "Зол, Рӯдоба ва Рустам",
+        "Сиёвуш, Кай Хусрав ва Ҷанги бузург",
+        "Киюмарс, Фаридун ва Кай Хусрав"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "'The line of Zal's great stories — the Seven Labours, Sohrab, Esfandiyar — are ending.' These are the three defining arcs of Rostam's story.",
       "explanation_fa": "«خطِّ داستان‌های بزرگِ زال — هفت خان، سهراب، اسفندیار — دارند به پایان می‌رسند.» این‌ها سه قوسِ تعریف‌کننده‌ی داستانِ رستم هستند.",
       "explanation_tg": "«Хати ҳикоятҳои бузурги Зол — Ҳафтхон, Суҳроб, Исфандиёр — дар ҳоли поён ёфтан ҳастанд.» Инҳо се қавси таърифкунандаи ҳикояти Рустам ҳастанд.",
@@ -534,24 +534,24 @@
       "question_fa": "رفتنِ سیمرغ چیزی درباره‌ی شاهنامه به عنوانِ کل نشان می‌دهد. فصل می‌گوید «شاهنامه بدونِ او ادامه می‌دهد.» این عبارت چه وزنی دارد؟",
       "question_tg": "Рафтани Симурғ чизеро дар бораи Шоҳнома ҳамчун кул нишон медиҳад. Фасл мегӯяд «Шоҳнома бидуни ӯ идома медиҳад.» Ин ибора чӣ вазне дорад?",
       "answers": [
-        "The chronicle is ending — no more great stories remain",
-        "The greatest arc has closed and the oldest witness has withdrawn — the chronicle continues but changed, having lost the figure who kept it alive at its most critical moments",
+        "The chronicle will now shift to purely historical events",
         "The Simorgh was only important in early chapters",
-        "The chronicle will now shift to purely historical events"
+        "The greatest arc has closed and the oldest witness has withdrawn — the chronicle continues but changed, having lost the figure who kept it alive at its most critical moments",
+        "The chronicle is ending — no more great stories remain"
       ],
       "answers_fa": [
-        "شاهنامه دارد تمام می‌شود — داستان‌های بزرگِ بیشتری باقی نمانده",
-        "بزرگ‌ترین قوس بسته شده و کهن‌ترین شاهد کنار رفته — شاهنامه ادامه می‌دهد اما تغییریافته، چیزی را از دست داده که در حیاتی‌ترین لحظاتش آن را زنده نگه داشت",
+        "شاهنامه از این به بعد به رویدادهای کاملاً تاریخی منتقل می‌شود",
         "سیمرغ فقط در فصل‌های اولیه مهم بود",
-        "شاهنامه از این به بعد به رویدادهای کاملاً تاریخی منتقل می‌شود"
+        "بزرگ‌ترین قوس بسته شده و کهن‌ترین شاهد کنار رفته — شاهنامه ادامه می‌دهد اما تغییریافته، چیزی را از دست داده که در حیاتی‌ترین لحظاتش آن را زنده نگه داشت",
+        "شاهنامه دارد تمام می‌شود — داستان‌های بزرگِ بیشتری باقی نمانده"
       ],
       "answers_tg": [
-        "Шоҳнома дар ҳоли тамом шудан аст — ҳикоятҳои бузурги бештаре боқӣ намондаанд",
-        "Бузургтарин қавс баста шудааст ва куҳантарин шоҳид канор рафтааст — Шоҳнома идома медиҳад аммо тағйирёфта, чизеро аз даст додааст ки дар ҳаётитарин лаҳзоташ онро зинда нигоҳ дошт",
+        "Шоҳнома аз ин ба баъд ба рӯйдодҳои комилан таърихӣ мунтақил мешавад",
         "Симурғ танҳо дар фасл ҳои аввалия муҳим буд",
-        "Шоҳнома аз ин ба баъд ба рӯйдодҳои комилан таърихӣ мунтақил мешавад"
+        "Бузургтарин қавс баста шудааст ва куҳантарин шоҳид канор рафтааст — Шоҳнома идома медиҳад аммо тағйирёфта, чизеро аз даст додааст ки дар ҳаётитарин лаҳзоташ онро зинда нигоҳ дошт",
+        "Шоҳнома дар ҳоли тамом шудан аст — ҳикоятҳои бузурги бештаре боқӣ намондаанд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "The Shahnameh continues through many more kings and centuries. But it continues without the oldest witness to its most intense arc. That loss is what the chapter communicates.",
       "explanation_fa": "شاهنامه از طریقِ شاهانِ بیشتر و قرن‌های بیشتر ادامه می‌دهد. اما بدونِ کهن‌ترین شاهدِ فشرده‌ترین قوسش ادامه می‌دهد. آن از دست رفتن همان چیزی است که فصل منتقل می‌کند.",
       "explanation_tg": "Шоҳнома тавассути подшоҳони бештар ва асрҳои бештар идома медиҳад. Аммо бидуни куҳантарин шоҳиди зичтарин қавсаш идома медиҳад. Он аз даст рафтан ҳамон чизест ки фасл мунтақил мекунад.",

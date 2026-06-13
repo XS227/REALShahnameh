@@ -116,7 +116,8 @@
       "reward": {
         "xp": 25
       },
-      "unlocks_codex": []
+      "unlocks_codex": [],
+      "video_url": "https://drive.google.com/file/d/1hzfEhRJ3CJ95xfZ01eqq5dCoI0pg5cYI/view"
     },
     {
       "id": "virtue-of-wisdom",
@@ -132,7 +133,8 @@
       "reward": {
         "xp": 30
       },
-      "unlocks_codex": []
+      "unlocks_codex": [],
+      "video_url": "https://drive.google.com/file/d/1sNcF8vbNj5rclpplTCO3kxjzDTyC1LK1/view"
     },
     {
       "id": "preservation-of-chronicle",
@@ -148,7 +150,8 @@
       "reward": {
         "xp": 35
       },
-      "unlocks_codex": []
+      "unlocks_codex": [],
+      "video_url": "https://drive.google.com/file/d/1BkwYsIZ9tpO12QxNydgxGN9E_yzpfAEt/view"
     },
     {
       "id": "humans-learn-order",
@@ -168,7 +171,8 @@
         "leopard-skin",
         "mount-damavand",
         "persian-calendar"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/1z5TK1_rVfn-yHItjF03KVjod9m2QScRo/view"
     },
     {
       "id": "beasts-bow",
@@ -186,7 +190,8 @@
       },
       "unlocks_codex": [
         "royal-mountain-court"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/1mo5X87dO0SZLpjDL_otjf4153iKSDqR6/view"
     },
     {
       "id": "darkness-stirs",
@@ -204,7 +209,8 @@
       },
       "unlocks_codex": [
         "demon-forest"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/1QUd-E34uZTVfuP0E-wjrWnt0i0i5v-No/view"
     },
     {
       "id": "ahriman-awakens",
@@ -222,7 +228,8 @@
       },
       "unlocks_codex": [
         "ahriman-codex"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/1YjZ-5IhBhNKsvvxk1TYujvtBnAbptQwF/view"
     },
     {
       "id": "siamak-rises",
@@ -240,7 +247,8 @@
       },
       "unlocks_codex": [
         "sade-foreshadow"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/16Bmw6cFSl1DlEV4Hwyj9deYYhDzFD0fM/view"
     },
     {
       "id": "black-div-appears",
@@ -258,7 +266,8 @@
       },
       "unlocks_codex": [
         "black-div-codex"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/12WDWM00U58XS5dmh9iH4lmE1Pf39HTpF/view"
     },
     {
       "id": "battle-against-darkness",
@@ -274,7 +283,8 @@
       "reward": {
         "xp": 70
       },
-      "unlocks_codex": []
+      "unlocks_codex": [],
+      "video_url": "https://drive.google.com/file/d/1eUHEd5I-ATEgquZrfrOsVmkIJPxP63RQ/view"
     },
     {
       "id": "chapter-complete",
@@ -292,7 +302,8 @@
       },
       "unlocks_codex": [
         "ferdowsi"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/11nIhA7pvEnyfHTv8r_5RfiJqzhdlgL9H/view"
     }
   ],
   "characters": [
@@ -429,28 +440,6 @@
     "intro_en": "Before the chapter closes, the king's son must face the first dark thing. The fight is not yours yet — finish what is asked, and Siamak's banner will rise.",
     "intro_fa": "پیش از پایانِ دفتر، پسرِ شاه باید با نخستین تاریکی روبه‌رو شود. نبرد هنوز از آنِ تو نیست — آنچه خواسته شده به پایان رسان، تا درفشِ سیامک برخیزد.",
     "requirements": [
-      {
-        "id": "level",
-        "kind": "level",
-        "target": 5,
-        "label_en": "Reach Keyumars LVL 5",
-        "label_fa": "رسیدن به سطحِ ۵ کیومرث",
-        "label_tg": "Расидан ба сатҳи 5 Каюмарс",
-        "hint_en": "Upgrade Keyumars in the Hero Collection tab. Each upgrade costs REAL tokens — earn more by tapping and completing scenes.",
-        "hint_fa": "کیومرث را در بخش مجموعه‌ی قهرمانان ارتقا دهید. هر ارتقا به توکن REAL نیاز دارد — با ضربه زدن و تماشای صحنه‌ها بیشتر کسب کنید.",
-        "hint_tg": "Каюмарсро дар бахши Қаҳрамонон баланд баред. Ҳар баланд бардоштан ба токени REAL ниёз дорад — бо зарба задан ва тамошои саҳнаҳо бештар ба даст оред."
-      },
-      {
-        "id": "siamak",
-        "kind": "character",
-        "target": "siamak",
-        "label_en": "Recruit Siamak",
-        "label_fa": "همراه‌کردنِ سیامک",
-        "label_tg": "Сиёмакро ҷалб кунед",
-        "hint_en": "Buy Siamak in the Hero Collection. He becomes available after Chapter 1 is unlocked and you own Keyumars Lv.1.",
-        "hint_fa": "سیامک را در بخش مجموعه‌ی قهرمانان بخرید. پس از باز شدن فصل ۱ و داشتن کیومرث سطح ۱ در دسترس است.",
-        "hint_tg": "Сиёмакро дар бахши Қаҳрамонон харед. Баъд аз кушода шудани Боби 1 ва доштани Каюмарси сатҳи 1 дастрас аст."
-      },
       {
         "id": "fire-rune",
         "kind": "item",

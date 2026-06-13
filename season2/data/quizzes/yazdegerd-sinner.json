@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "yds-e1",
+      "id": "yzds-e1",
       "chapter_slug": "yazdegerd-sinner",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "Why did the Zoroastrian clergy give Yazdegerd I the title 'the Sinner' (al-Athim)?",
-      "question_fa": "چرا روحانیون زرتشتی به یزدگرد اول لقب 'گناهکار' (الأثیم) دادند؟",
-      "question_tg": "Чаро рӯҳониёни Зардуштӣ ба Яздегарди Аввал лақаби 'Гунаҳкор' (ал-Асим) доданд?",
+      "question": "Why did Yazdegerd earn the title 'the Sinner'?",
+      "question_fa": "چرا یزدگرد لقبِ «گناهکار» را به دست آورد؟",
+      "question_tg": "Чаро Яздагерд унвони «Гунаҳкор»-ро ба даст овард?",
       "answers": [
-        "He gave Christians permission to build churches and refused to let the priests dominate the court",
-        "He converted to Christianity himself late in his reign",
-        "He burned the sacred fires in several provinces as a political punishment",
-        "He married a Roman Christian woman and adopted her faith publicly"
+        "He defied the Zoroastrian priests and gave freedom to Christians and Jews, earning their hatred",
+        "He converted to Christianity against Zoroastrian law",
+        "He refused to fight Rome and lost Iranian territory",
+        "He committed murder against innocent nobles"
       ],
       "answers_fa": [
-        "به مسیحیان اجازه داد کلیسا بسازند و از اجازه دادن به روحانیون برای تسلط بر دربار امتناع کرد",
-        "در اواخر حکومتش خودش به مسیحیت تبدیل شد",
-        "به عنوان مجازات سیاسی آتش‌های مقدس را در چندین استان سوزاند",
-        "با یک زن مسیحی رومی ازدواج کرد و آشکارا دینش را پذیرفت"
+        "با روحانیانِ زرتشتی مخالفت کرد و به مسیحیان و یهودیان آزادی داد و نفرتشان را کسب کرد",
+        "بر خلافِ قانونِ زرتشتی به مسیحیت تبدیل شد",
+        "از جنگ با روم امتناع کرد و قلمروِ ایران را از دست داد",
+        "در برابرِ اشرافِ بی‌گناه مرتکبِ قتل شد"
       ],
       "answers_tg": [
-        "Ба масеҳиён иҷозат дод калисо бисозанд ва аз иҷозат додан ба рӯҳониён барои тасаллут бар дарбор имтиноъ кард",
-        "Дар авохири ҳукмронияш худаш ба масеҳият табдил шуд",
-        "Ба сифати ҷазои сиёсӣ оташҳои муқаддасро дар чанд устон сӯзонд",
-        "Бо зани масеҳии Румӣ издивоҷ кард ва ошкоро динашро пазируфт"
+        "Бо коҳинони зардуштӣ мухолифат кард ва ба масеҳиён ва яҳудиён озодӣ дод ва нафрати онҳоро касб кард",
+        "Бар хилофи қонуни зардуштӣ ба масеҳия мубаддал шуд",
+        "Аз ҷанг бо Рим имтиноъ кард ва қаламрови Эронро аз даст дод",
+        "Дар баробари ашрофи бегуноҳ мурдор содир кард"
       ],
       "correct_answer": 0,
-      "explanation": "Yazdegerd I gave Christians permission to build churches and allowed Jewish communities to govern under their own laws. By the standards of his time, he was unusually pluralist — and the Zoroastrian religious establishment hated him for refusing to let them dominate court affairs.",
-      "explanation_fa": "یزدگرد اول به مسیحیان اجازه داد کلیسا بسازند و به جوامع یهودی اجازه داد تحت قوانین خودشان حکومت کنند. براساس معیارهای زمانش، او به طور غیرمعمولی پلورالیست بود — و روحانیون زرتشتی از امتناعش از اجازه دادن به آنها برای سلطه بر امور دربار از او متنفر بودند.",
-      "explanation_tg": "Яздегарди Аввал ба масеҳиён иҷозат дод калисо бисозанд ва ба ҷамоатҳои яҳудӣ иҷозат дод тибқи қонунҳои худашон идора шаванд. Тибқи меъёрҳои замонаш, ӯ ба таври ғайриоддӣ плюралист буд — ва рӯҳониёни Зардуштӣ аз имтиноъи ӯ аз иҷозат додан ба онҳо барои тасаллут бар корҳои дарбор аз ӯ нафрат доштанд.",
+      "explanation": "Yazdegerd I was labelled 'the Sinner' by Zoroastrian priests and nobles because he challenged priestly power and extended tolerance to religious minorities. His title reveals that the verdict came from those he defied, not from objective judgment.",
+      "explanation_fa": "یزدگردِ اول توسطِ روحانیانِ زرتشتی و اشراف «گناهکار» نامیده شد چون قدرتِ روحانی را به چالش کشید و تسامح را به اقلیت‌های دینی گسترش داد.",
+      "explanation_tg": "Яздагерди Аввал аз ҷониби коҳинони зардуштӣ ва ашроф «Гунаҳкор» ном гирифт зеро қудрати коҳиниро ба чолиш кашид.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "yds-m1",
+      "id": "yzds-e2",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "How did Yazdegerd die?",
+      "question_fa": "یزدگرد چگونه مُرد؟",
+      "question_tg": "Яздагерд чӣ тавр мурд?",
+      "answers": [
+        "Kicked to death by a mysterious unknown horse near a spring, which then vanished",
+        "Drowned in the Oxus river during a campaign",
+        "Assassinated in his palace by a Zoroastrian priest",
+        "Killed in battle against the Hephthalites"
+      ],
+      "answers_fa": [
+        "توسطِ یک اسبِ ناشناسِ رازآلود نزدیکِ یک چشمه با لگد کشته شد که سپس ناپدید شد",
+        "در رودخانه‌ی آمودریا در یک لشکرکشی غرق شد",
+        "در کاخش توسطِ یک روحانیِ زرتشتی ترور شد",
+        "در نبرد با هپتالیان کشته شد"
+      ],
+      "answers_tg": [
+        "Аз ҷониби аспи ношинохтаи розомезе дар наздики чашмае бо лагад кушта шуд ки баъд ғайб зад",
+        "Дар дарёи Ому дар ҷараёни лашкаркашие ғарқ шуд",
+        "Дар кохаш аз ҷониби коҳини зардуштӣ суиқасд кунонида шуд",
+        "Дар набард бо Хайтолиён кушта шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Yazdegerd was killed by a mysterious horse near a spring outside Tus. The horse struck him with its hooves and disappeared. The priests called it divine punishment — but it is just as likely that the 'horse' was a human agent.",
+      "explanation_fa": "یزدگرد توسطِ یک اسبِ رازآلود نزدیکِ یک چشمه بیرونِ توس کشته شد. اسب با سُم‌هایش به او ضربه زد و ناپدید شد.",
+      "explanation_tg": "Яздагерд аз ҷониби аспи розомезе дар наздики чашмае берун аз Тус кушта шуд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "yzds-e3",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What was unusual about Yazdegerd's religious policy compared to other Sasanian kings?",
+      "question_fa": "چه چیزی درباره‌ی سیاستِ دینیِ یزدگرد در مقایسه با سایرِ شاهانِ ساسانی غیرمعمول بود؟",
+      "question_tg": "Чӣ чиз дар бораи сиёсати динии Яздагерд дар муқоиса бо дигар шоҳони Сосонӣ ғайримаъмул буд?",
+      "answers": [
+        "He extended tolerance to Christians and Jews — most Sasanian kings enforced strict Zoroastrian orthodoxy",
+        "He converted the entire court to Christianity",
+        "He imported Hindu religious practices from India",
+        "He abolished all temples and demanded conversion to Zoroastrianism"
+      ],
+      "answers_fa": [
+        "تسامح را به مسیحیان و یهودیان گسترش داد — اکثرِ شاهانِ ساسانی ارتدکسیِ زرتشتیِ سختی اعمال می‌کردند",
+        "کلِ دربار را به مسیحیت تبدیل کرد",
+        "رفتارهای دینیِ هندو را از هند وارد کرد",
+        "همه‌ی معابد را لغو کرد و خواستِ تبدیل به زرتشتی‌گری شد"
+      ],
+      "answers_tg": [
+        "Таҳаммулро ба масеҳиён ва яҳудиён тавсеа дод — аксари шоҳони Сосонӣ ортодоксии зардуштии сахтро иҷро мекарданд",
+        "Кулли дарборро ба масеҳия табдил кард",
+        "Рафторҳои дини Ҳиндуро аз Ҳинд ворид кард",
+        "Ҳамаи маъбадҳоро лағв кард ва табдили ба зардуштияро талаб кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Yazdegerd I was one of the few Sasanian kings who permitted Christian churches and Jewish synagogues to operate. His tolerance made him deeply unpopular with the Zoroastrian establishment.",
+      "explanation_fa": "یزدگردِ اول یکی از معدود شاهانِ ساسانی بود که به کلیساهای مسیحی و کنیسه‌های یهودی اجازه داد فعالیت کنند.",
+      "explanation_tg": "Яздагерди Аввал яке аз шоҳони камшумори Сосонӣ буд ки ба калисоҳои масеҳӣ ва канисаҳои яҳудӣ иҷозат дод фаъолият кунанд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "yzds-m1",
       "chapter_slug": "yazdegerd-sinner",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "How did Yazdegerd I die, according to the Shahnameh's account?",
-      "question_fa": "یزدگرد اول طبق روایت شاهنامه چگونه مُرد؟",
-      "question_tg": "Яздегарди Аввал тибқи ривояти шоҳнома чӣ тавр мурд?",
+      "question": "Yazdegerd is called 'the Sinner' but he gave religious minorities freedom. What does this contradiction reveal about how reputations are made in the Shahnameh?",
+      "question_fa": "یزدگرد «گناهکار» نامیده می‌شود اما به اقلیت‌های دینی آزادی داد. این تناقض درباره‌ی نحوه‌ی ساخته شدنِ اعتبار در شاهنامه چه چیزی نشان می‌دهد؟",
+      "question_tg": "Яздагерд «Гунаҳкор» ном гирифтааст аммо ба ақаллиятҳои динӣ озодӣ дод. Ин тазод дар бораи нахваи сохта шудани эътибор дар Шоҳнома чиро нишон медиҳад?",
       "answers": [
-        "A horse of unearthly beauty appeared from nowhere near Tus, kicked him once in the chest, and vanished",
-        "His nobles poisoned his wine at a feast celebrating twenty years of his reign",
-        "He was struck by lightning while inspecting a fire temple he had ordered restored",
-        "He was killed by an assassin hired by the Zoroastrian high priest"
+        "Reputations in the Shahnameh are always accurate reflections of true character",
+        "A king who defies priests always earns a bad reputation because priests are always right",
+        "Reputations are made by those who have the power to name — the priests who called him 'Sinner' were the ones he defied; their verdict was biased but it stuck",
+        "The Shahnameh confirms that Yazdegerd was genuinely sinful"
       ],
       "answers_fa": [
-        "اسبی با زیبایی ماورای طبیعی از هیچ‌جایی نزدیک طوس ظاهر شد، یک بار به قفسه سینه‌اش لگد زد و ناپدید شد",
-        "اشرافش در جشن بیست سالگی حکومتش شرابش را مسموم کردند",
-        "در حین بازرسی از آتشکده‌ای که دستور احیایش را داده بود با صاعقه کشته شد",
-        "توسط قاتلی که کاهن اعظم زرتشتی استخدام کرده بود کشته شد"
+        "اعتبارها در شاهنامه همیشه بازتابِ دقیقِ شخصیتِ واقعی هستند",
+        "شاهی که با روحانیون مخالفت می‌کند همیشه اعتبارِ بدی به دست می‌آورد چون روحانیون همیشه درست هستند",
+        "اعتبارها توسطِ کسانی ساخته می‌شوند که قدرتِ نام‌گذاری دارند — روحانیانی که او را «گناهکار» نامیدند کسانی بودند که با آنها مخالفت کرد؛ حکمشان جانبدارانه بود اما ماندگار شد",
+        "شاهنامه تأیید می‌کند که یزدگرد واقعاً گناهکار بود"
       ],
       "answers_tg": [
-        "Аспе бо зебоии фавқулода аз ҳеҷ ҷое наздики Тӯс зоҳир шуд, як бор ба синаи ӯ лагад зад ва ғайб шуд",
-        "Ашрофаш дар ҷашни бисту солагии ҳукмронияш шаробашро заҳролуд карданд",
-        "Ҳангоми тафтиши оташкадае ки фармон барқарорияшро дода буд бо барқ кушта шуд",
-        "Аз ҷониби қотиле ки коҳини аъзами Зардуштӣ ба хизмат гирифта буд кушта шуд"
+        "Эътиборҳо дар Шоҳнома ҳамеша бозтоби дақиқи шахсияти воқеӣ ҳастанд",
+        "Шоҳе ки бо коҳинон мухолифат мекунад ҳамеша эътибори бад ба даст меорад",
+        "Эътиборҳо аз ҷониби онҳое сохта мешаванд ки қудрати номгузорӣ доранд — коҳинони ки ӯро «Гунаҳкор» номиданд онҳое буданд ки бо онҳо мухолифат кард؛ ҳукмашон тарафгиронаанд аммо мондагор шуд",
+        "Шоҳнома тасдиқ мекунад ки Яздагерд воқеан гунаҳкор буд"
       ],
-      "correct_answer": 0,
-      "explanation": "Near the city of Tus, at a spring, a horse of unearthly beauty appeared from nowhere. Yazdegerd approached it and it kicked him once in the chest and vanished. He died where he fell. The clergy declared it divine punishment. The Shahnameh leaves the cause deliberately ambiguous.",
-      "explanation_fa": "نزدیک شهر طوس، در یک چشمه، اسبی با زیبایی ماورای طبیعی از هیچ‌جایی ظاهر شد. یزدگرد به سمتش رفت و اسب یک بار به قفسه سینه‌اش لگد زد و ناپدید شد. همانجا که افتاد مُرد. روحانیون آن را مجازات الهی اعلام کردند. شاهنامه علت را عمداً مبهم می‌گذارد.",
-      "explanation_tg": "Наздики шаҳри Тӯс, дар чашмае, аспе бо зебоии фавқулода аз ҳеҷ ҷое зоҳир шуд. Яздегард ба сӯяш рафт ва асп як бор ба синаи ӯ лагад зад ва ғайб шуд. Ҳамон ҷое ки афтод мурд.",
+      "correct_answer": 2,
+      "explanation": "Yazdegerd's chapter is the Shahnameh's sharpest study in contested reputation. The name 'Sinner' was given by his enemies — the priestly establishment he defied. The text allows the reader to see both sides and question whether the verdict was just.",
+      "explanation_fa": "فصلِ یزدگرد تیزترین مطالعه‌ی شاهنامه در اعتبارِ متنازعه است. نامِ «گناهکار» توسطِ دشمنانش داده شد.",
+      "explanation_tg": "Фасли Яздагерд тезтарин омӯзиши Шоҳнома дар эътибори мутанозеъ аст.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "yds-e2",
+      "id": "yzds-m2",
       "chapter_slug": "yazdegerd-sinner",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "Who was Yazdegerd I's son, raised abroad and famous for lion-hunting?",
-      "question_fa": "پسر یزدگرد اول که در خارج بزرگ شده بود و به خاطر شیرشکاری مشهور بود کی بود؟",
-      "question_tg": "Писари Яздегарди Аввал ки дар хориҷ бузург шуда буд ва ба хотири шершикорӣ машҳур буд кӣ буд?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "The mysterious horse that killed Yazdegerd then vanished. Why does the Shahnameh include this supernatural element in his death?",
+      "question_fa": "اسبِ رازآلودی که یزدگرد را کشت سپس ناپدید شد. چرا شاهنامه این عنصرِ ماورایی را در مرگش گنجانده است؟",
+      "question_tg": "Аспи розомезе ки Яздагердро кушт баъд ғайб зад. Чаро Шоҳнома ин унсури фавқуттабиъиро дар марги ӯ гунҷонидааст?",
       "answers": [
-        "Bahram Gur, raised at the Arab court of Nu'man in the southern lands",
-        "Shapur, raised by Byzantine nobles at the court of Constantinople",
-        "Hormuz, raised in exile by Zoroastrian priests in the east",
-        "Nushzad, raised in Armenia by his Christian mother's family"
+        "To show that supernatural forces always intervene in royal deaths",
+        "To confirm that the priests were right and God punished Yazdegerd for his tolerance",
+        "To allow the reader to interpret the death as either divine punishment or human conspiracy — the ambiguity is the point",
+        "Because Ferdowsi believed the horse was genuinely supernatural"
       ],
       "answers_fa": [
-        "بهرام گور که در دربار عرب نعمان در سرزمین‌های جنوبی بزرگ شده بود",
-        "شاپور که توسط اشراف بیزانسی در دربار قسطنطنیه بزرگ شده بود",
-        "هرمز که توسط روحانیون زرتشتی در تبعید در شرق بزرگ شده بود",
-        "نوشزاد که توسط خانواده مادر مسیحی‌اش در ارمنستان بزرگ شده بود"
+        "برای نشان دادنِ اینکه نیروهای ماورایی همیشه در مرگ‌های سلطنتی دخالت می‌کنند",
+        "برای تأیید اینکه روحانیون درست بودند و خداوند یزدگرد را برای تسامحش مجازات کرد",
+        "برای اینکه به خواننده اجازه دهد مرگ را هم به عنوانِ مجازاتِ الهی و هم توطئه‌ی انسانی تفسیر کند — ابهام نکته است",
+        "چون فردوسی باور داشت که اسب واقعاً ماورایی بود"
       ],
       "answers_tg": [
-        "Баҳроми Гӯр ки дар дарбори Арабии Нӯъмон дар сарзаминҳои ҷанубӣ бузург шуда буд",
-        "Шопур ки аз ҷониби ашрофзодагони Визонтӣ дар дарбори Константинопол бузург шуда буд",
-        "Ҳурмуз ки аз ҷониби рӯҳониёни Зардуштӣ дар табъид дар шарқ бузург шуда буд",
-        "Нушзод ки аз ҷониби оилаи модари масеҳиаш дар Арманистон бузург шуда буд"
+        "Барои нишон додани ин ки нирӯҳои фавқуттабиъӣ ҳамеша дар мургҳои шоҳонӣ дахолат мекунанд",
+        "Барои тасдиқ ин ки коҳинон дуруст буданд ва Худо Яздагердро барои таҳаммули ӯ ҷазо дод",
+        "Барои ин ки ба хонанда иҷозат диҳад марги ро ҳам ба унвони ҷазои илоҳӣ ва ҳам тӯтияи инсонӣ шарҳ диҳад — ибҳом нуктааст",
+        "Зеро Фирдавсӣ бовар дошт ки асп воқеан фавқуттабиъӣ буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "The mystery horse is perfect narrative ambiguity: it could be divine punishment (the priests' interpretation) or it could be a human assassin working in darkness (the political interpretation). The Shahnameh does not decide — it preserves both possibilities.",
+      "explanation_fa": "اسبِ رازآلود ابهامِ روایی کامل است: می‌تواند مجازاتِ الهی باشد یا یک قاتلِ انسانی.",
+      "explanation_tg": "Аспи розомез ибҳоми ривоии комил аст: метавонад ҷазои илоҳӣ бошад ё қотили инсоние ки дар торикӣ кор мекунад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yzds-m3",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Yazdegerd challenged both the nobles and the priests. Why is this double opposition significant in the Shahnameh's political analysis?",
+      "question_fa": "یزدگرد هم اشراف و هم روحانیان را به چالش کشید. چرا این مخالفتِ دوگانه در تحلیلِ سیاسیِ شاهنامه مهم است؟",
+      "question_tg": "Яздагерд ҳам ашроф ва ҳам коҳинонро ба чолиш кашид. Чаро ин мухолифати дугона дар таҳлили сиёсии Шоҳнома муҳим аст?",
+      "answers": [
+        "The Shahnameh approves of kings who challenge institutional power",
+        "A king strong enough to fight both nobles and priests is the most powerful kind of king",
+        "Challenging both groups shows Yazdegerd was morally superior to both",
+        "A king who fights both power centres simultaneously has no institutional allies — he rules alone against the two pillars of Sasanian society"
+      ],
+      "answers_fa": [
+        "شاهنامه شاهانی را که با قدرتِ نهادی مخالفت می‌کنند تأیید می‌کند",
+        "شاهی که به اندازه‌ی کافی قوی است که با هم اشراف و هم روحانیان بجنگد قدرتمندترین نوعِ شاه است",
+        "به چالش کشیدنِ هر دو گروه نشان می‌دهد یزدگرد از نظرِ اخلاقی برتر از هر دو بود",
+        "شاهی که هم‌زمان با هر دو مرکزِ قدرت می‌جنگد هیچ متحدِ نهادی ندارد — تنها در برابرِ دو ستونِ جامعه‌ی ساسانی حکومت می‌کند"
+      ],
+      "answers_tg": [
+        "Шоҳнома шоҳонеро ки бо қудрати ниҳодӣ мухолифат мекунанд тасдиқ мекунад",
+        "Шоҳе ки ба қадри кофӣ қавӣ аст ки ҳам бо ашроф ва ҳам бо коҳинон бистезад қудратмандтарин навъи шоҳ аст",
+        "Ба чолиш кашидани ҳарду гурӯҳ нишон медиҳад Яздагерд аз назари ахлоқӣ аз ҳарду бартар буд",
+        "Шоҳе ки ҳамзамон бо ҳарду марказии қудрат меҷангад ҳеч муттаҳиди ниҳодӣ надорад — танҳо дар баробари ду рукни ҷомеаи Сосонӣ ҳукумат мекунад"
+      ],
+      "correct_answer": 3,
+      "explanation": "A Sasanian king who alienated both the priestly class and the nobility was fundamentally isolated. The Sasanian system required the king to be the third point of a triangle with these two powers — challenge both and the triangle collapses on you.",
+      "explanation_fa": "یک شاهِ ساسانی که هم روحانیان و هم اشراف را از خود بیگانه کرد اساساً منزوی بود.",
+      "explanation_tg": "Шоҳи Сосонӣ ки ҳам синфи коҳинӣ ва ҳам ашрофро аз худ бегона кард аслан маъзул буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yzds-m4",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Yazdegerd is the father of Bahram Gur. How does this father-son contrast function in the Shahnameh?",
+      "question_fa": "یزدگرد پدرِ بهرام گور است. این تضادِ پدر-پسر در شاهنامه چگونه عمل می‌کند؟",
+      "question_tg": "Яздагерд падари Баҳром Гӯр аст. Ин тазоди падар-писар дар Шоҳнома чӣ тавр кор мекунад?",
+      "answers": [
+        "It shows the Bahram Gur was wiser than his father",
+        "It proves that sons always differ from their fathers in the Shahnameh",
+        "The contrast shows that religious tolerance always leads to children who are better rulers",
+        "The hated father produces the beloved son — this contrast shows that individual character, not dynasty, determines reputation"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد بهرام گور از پدرش خردمندتر بود",
+        "ثابت می‌کند که پسران همیشه در شاهنامه از پدرانشان متفاوت هستند",
+        "تضاد نشان می‌دهد که تسامحِ دینی همیشه به کودکانی منجر می‌شود که حاکمانِ بهتری هستند",
+        "پدرِ مورد نفرت پسرِ محبوب را تولید می‌کند — این تضاد نشان می‌دهد که شخصیتِ فردی نه سلسله، اعتبار را تعیین می‌کند"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад Баҳром Гӯр аз падараш хирадмандтар буд",
+        "Исбот мекунад ки писарон ҳамеша дар Шоҳнома аз падаронашон фарқ мекунанд",
+        "Тазод нишон медиҳад ки таҳаммули динӣ ҳамеша ба фарзандоне мунҷар мешавад ки ҳокимони беҳтаранд",
+        "Падари нафратшуда писари маҳбубро тавлид мекунад — ин тазод нишон медиҳад ки шахсияти фардӣ, на сулола, эътиборро муайян мекунад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Yazdegerd-Bahram Gur contrast shows the Shahnameh at its most sophisticated: the 'Sinner' father produces the beloved hero-king son. Reputation and character are individual, not dynastic.",
+      "explanation_fa": "تضادِ یزدگرد-بهرام گور شاهنامه را در پیچیده‌ترین حالتش نشان می‌دهد: پدرِ «گناهکار» پسرِ پهلوان-شاهِ محبوب را تولید می‌کند.",
+      "explanation_tg": "Тазоди Яздагерд-Баҳром Гӯр Шоҳномаро дар мураккабтарин ҳолаташ нишон медиҳад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yzds-m5",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Yazdegerd gave Christians freedom to build churches. The Shahnameh records this as part of his controversial reign. What does this religious tolerance say about his kingship?",
+      "question_fa": "یزدگرد به مسیحیان آزادیِ ساختنِ کلیسا داد. شاهنامه این را به عنوانِ بخشی از سلطنتِ بحث‌برانگیزش ثبت می‌کند. این تسامحِ دینی درباره‌ی شاهنشاهی‌اش چه می‌گوید؟",
+      "question_tg": "Яздагерд ба масеҳиён озодии сохтани калисо дод. Шоҳнома инро ба унвони бахше аз ҳукмронии баҳснокаш сабт мекунад. Ин таҳаммули динӣ дар бораи шоҳаншоҳии ӯ чӣ мегӯяд?",
+      "answers": [
+        "The Shahnameh says his tolerance was wrong because it weakened Zoroastrianism",
+        "Religious tolerance proved Yazdegerd was spiritually superior to the priests",
+        "His tolerance was purely pragmatic with no political dimensions",
+        "He prioritised broader political stability over priestly favour — a calculation that failed because he misjudged how much power the priests had"
+      ],
+      "answers_fa": [
+        "شاهنامه می‌گوید تسامحش اشتباه بود چون زرتشتی‌گری را ضعیف کرد",
+        "تسامحِ دینی ثابت کرد که یزدگرد از نظرِ روحانی برتر از روحانیان بود",
+        "تسامحش صرفاً عملگرایانه بود بدون ابعادِ سیاسی",
+        "ثباتِ سیاسیِ گسترده‌تر را بر لطفِ روحانیان ترجیح داد — محاسبه‌ای که شکست خورد چون اشتباه سنجیده بود که روحانیان چقدر قدرت دارند"
+      ],
+      "answers_tg": [
+        "Шоҳнома мегӯяд таҳаммули ӯ хато буд зеро зардуштияро заиф кард",
+        "Таҳаммули динӣ исбот кард ки Яздагерд аз назари рӯҳонӣ аз коҳинон бартар буд",
+        "Таҳаммули ӯ танҳо амалгаройона буд бидуни абъоди сиёсӣ",
+        "Субот сиёсии васеътарро аз лутфи коҳинон афзал донист — ҳисоби ки шикаст хӯрд зеро нодуруст санҷид ки коҳинон чӣ қадар қудрат доранд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Yazdegerd's tolerance was a political calculation: by not fully backing the priestly establishment, he aimed to diversify his support base. But the Sasanian system required the priest-king alliance to function — he miscalculated how embedded the priestly power was.",
+      "explanation_fa": "تسامحِ یزدگرد یک محاسبه‌ی سیاسی بود: با عدمِ حمایتِ کاملِ از نهادِ روحانی، هدفش تنوع‌بخشی به پایگاهِ حمایتی‌اش بود.",
+      "explanation_tg": "Таҳаммули Яздагерд ҳисоби сиёсӣ буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yzds-h1",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "The title 'Sinner' was given by enemies. The Shahnameh preserves both the title and the evidence that contradicts it. What does this dual preservation reveal about the text's method?",
+      "question_fa": "لقبِ «گناهکار» توسطِ دشمنان داده شد. شاهنامه هم لقب و هم مدرکی که آن را رد می‌کند را حفظ می‌کند. این حفظِ دوگانه درباره‌ی روشِ متن چه چیزی نشان می‌دهد؟",
+      "question_tg": "Унвони «Гунаҳкор» аз ҷониби душманон дода шуд. Шоҳнома ҳам унвонро ва ҳам далеле ки онро рад мекунад ҳифз мекунад. Ин ҳифзи дугона дар бораи усули матн чиро нишон медиҳад?",
+      "answers": [
+        "The Shahnameh is an archive, not a verdict — it preserves conflicting evidence and allows the reader to judge; this is more honest than resolving the contradiction artificially",
+        "The Shahnameh accepts the 'Sinner' title as historically accurate",
+        "The dual preservation shows Ferdowsi was confused about Yazdegerd",
+        "Keeping both the title and the contradictory evidence is an error in the text"
+      ],
+      "answers_fa": [
+        "شاهنامه آرشیو است نه حکم — مدارکِ متضاد را حفظ می‌کند و به خواننده اجازه می‌دهد قضاوت کند؛ این از حلِ مصنوعیِ تناقض صادقانه‌تر است",
+        "شاهنامه لقبِ «گناهکار» را از نظرِ تاریخی دقیق می‌پذیرد",
+        "حفظِ دوگانه نشان می‌دهد فردوسی درباره‌ی یزدگرد گیج بود",
+        "نگه داشتنِ هم لقب و هم مدرکِ متضاد خطایی در متن است"
+      ],
+      "answers_tg": [
+        "Шоҳнома архив аст на ҳукм — далелҳои мутазодро ҳифз мекунад ва ба хонанда иҷозат медиҳад доварӣ кунад؛ ин аз ҳалли сунъии тазод ростонатар аст",
+        "Шоҳнома унвони «Гунаҳкор»-ро аз назари таърихӣ дақиқ мепазирад",
+        "Ҳифзи дугона нишон медиҳад Фирдавсӣ дар бораи Яздагерд гум шуда буд",
+        "Нигоҳ доштани ҳам унвон ва ҳам далели мутазод хатоест дар матн"
       ],
       "correct_answer": 0,
-      "explanation": "Bahram Gur was Yazdegerd I's son, sent as a child to the Arab court of Nu'man in the southern lands where he grew up mastering horses and desert skills. He would return to claim the throne by killing two lions placed to guard the crown.",
-      "explanation_fa": "بهرام گور پسر یزدگرد اول بود که در کودکی به دربار عرب نعمان در سرزمین‌های جنوبی فرستاده شد که در آن با مهارت بر اسب‌ها و مهارت‌های بیابانی بزرگ شد. او بازمی‌گشت تا با کشتن دو شیری که برای نگهبانی از تاج قرار داده شده بودند ادعای تخت کند.",
-      "explanation_tg": "Баҳроми Гӯр писари Яздегарди Аввал буд ки дар кӯдакӣ ба дарбори Арабии Нӯъмон дар сарзаминҳои ҷанубӣ фиристода шуд ки дар он ҷо бо маҳорат бар аспҳо ва маҳоратҳои биёбонӣ бузург шуд.",
+      "explanation": "The Yazdegerd chapter shows the Shahnameh functioning as an archive rather than a court. By preserving the hostile title alongside the tolerant acts, it creates a record that is more trustworthy than one that decided the verdict in advance.",
+      "explanation_fa": "فصلِ یزدگرد شاهنامه را نشان می‌دهد که به عنوانِ آرشیو نه دادگاه عمل می‌کند.",
+      "explanation_tg": "Фасли Яздагерд Шоҳномаро нишон медиҳад ки ба унвони архив на додгоҳ кор мекунад.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yzds-h2",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Yazdegerd's tolerance toward Christians came at a time when the Roman Empire was becoming Christian. Was his policy a political calculation about Rome?",
+      "question_fa": "تسامحِ یزدگرد نسبت به مسیحیان در زمانی بود که امپراتوریِ روم داشت مسیحی می‌شد. آیا سیاستش یک محاسبه‌ی سیاسی درباره‌ی روم بود؟",
+      "question_tg": "Таҳаммули Яздагерд нисбат ба масеҳиён дар замоне буд ки Империяи Рум Масеҳӣ мешуд. Оё сиёсати ӯ ҳисоби сиёсие дар бораи Рум буд?",
+      "answers": [
+        "Yazdegerd was hostile to Rome — the tolerance had nothing to do with Roman relations",
+        "No, the tolerance was purely a personal religious preference with no political calculation",
+        "Almost certainly — allowing Christians to worship freely reduced hostility from Christian Rome on the western frontier; it was both humanitarian and strategically rational",
+        "The Shahnameh says the tolerance was divinely inspired and therefore beyond politics"
+      ],
+      "answers_fa": [
+        "یزدگرد به روم خصومت داشت — تسامح هیچ ارتباطی به روابطِ رومی نداشت",
+        "نه، تسامح صرفاً ترجیحِ دینیِ شخصی بدون محاسبه‌ی سیاسی بود",
+        "تقریباً قطعاً — اجازه دادن به مسیحیان برای عبادتِ آزاد خصومت را از رومِ مسیحی در مرزِ غربی کاهش داد؛ هم انسانی و هم از نظرِ استراتژیک منطقی بود",
+        "شاهنامه می‌گوید تسامح از نظرِ الهی الهام گرفته بود و بنابراین فراتر از سیاست بود"
+      ],
+      "answers_tg": [
+        "Яздагерд ба Рум адоват дошт — таҳаммул ҳеч иртиботе ба муносибатҳои Румӣ надошт",
+        "Не, таҳаммул танҳо тарҷеҳи динии шахсӣ буд бидуни ҳисоби сиёсӣ",
+        "Қариб дар ҳамаи ҳолатҳо — иҷозат додан ба масеҳиён барои ибодати озод хусуматро аз Руми Масеҳӣ дар марзи ғарбӣ кам кард؛ ҳам инсонӣ ва ҳам аз назари стратегик мантиқӣ буд",
+        "Шоҳнома мегӯяд таҳаммул аз назари илоҳӣ илҳом гирифта буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "The political calculation is plausible and the Shahnameh's record supports it. Yazdegerd needed to manage the western frontier with a now-Christian Rome. His tolerance toward Iranian Christians was simultaneously humanitarian and diplomatically useful.",
+      "explanation_fa": "محاسبه‌ی سیاسی محتمل است و ثبتِ شاهنامه آن را تأیید می‌کند.",
+      "explanation_tg": "Ҳисоби сиёсӣ муҳтамал аст ва сабти Шоҳнома онро тасдиқ мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yzds-h3",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Yazdegerd defied institutional power (priests and nobles) and was given a hostile label by those same institutions. How does the Shahnameh position the reader relative to this dynamic?",
+      "question_fa": "یزدگرد با قدرتِ نهادی (روحانیان و اشراف) مخالفت کرد و همان نهادها به او لقبِ خصمانه دادند. شاهنامه خواننده را در رابطه با این پویایی کجا قرار می‌دهد؟",
+      "question_tg": "Яздагерд бо қудрати ниҳодӣ (коҳинон ва ашроф) мухолифат кард ва ҳамон ниҳодҳо ба ӯ унвони хасмонаанд доданд. Шоҳнома хонандаро дар иртибот бо ин пуёиӣ куҷо ҷой медиҳад?",
+      "answers": [
+        "Outside the partisan struggle — by showing both the hostile verdict and the tolerant actions, the Shahnameh invites the reader to judge independently of institutional propaganda",
+        "Firmly on the side of Yazdegerd — his tolerance was obviously superior",
+        "The Shahnameh refuses to let the reader judge at all",
+        "Firmly on the side of the priests — they were the keepers of Iranian tradition"
+      ],
+      "answers_fa": [
+        "خارج از مبارزه‌ی جانبدارانه — با نشان دادنِ هم حکمِ خصمانه و هم اعمالِ متساهل، شاهنامه خواننده را دعوت می‌کند مستقل از تبلیغاتِ نهادی قضاوت کند",
+        "قاطعانه در کنارِ یزدگرد — تسامحش آشکارا برتر بود",
+        "شاهنامه اصلاً اجازه نمی‌دهد خواننده قضاوت کند",
+        "قاطعانه در کنارِ روحانیان — آنها نگهبانانِ سنتِ ایرانی بودند"
+      ],
+      "answers_tg": [
+        "Берун аз мубориза тарафгиронаанд — бо нишон додани ҳам ҳукми хасмонаанд ва ҳам амалҳои таҳаммулкорона, Шоҳнома хонандаро даъват мекунад мустақил аз таблиғоти ниҳодӣ доварӣ кунад",
+        "Қатъиян дар канори Яздагерд — таҳаммули ӯ ошкоро бартар буд",
+        "Шоҳнома асlan иҷозат намедиҳад хонанда доварӣ кунад",
+        "Қатъиян дар канори коҳинон — онҳо нигаҳбонони суннати эронӣ буданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's method here is its most sophisticated: by presenting Yazdegerd's acts and the hostile title without explicit editorial judgment, it places the reader in the position of independent judge. This is more powerful than simply declaring the priests wrong.",
+      "explanation_fa": "روشِ شاهنامه اینجا پیچیده‌ترین است: با ارائه‌ی اعمالِ یزدگرد و لقبِ خصمانه بدون قضاوتِ تحریریِ صریح.",
+      "explanation_tg": "Усули Шоҳнома инҷо мураккабтарин аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yzds-h4",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The mysterious horse killing raises the question: was it divine punishment or human assassination? What does the Shahnameh's refusal to resolve this ambiguity accomplish?",
+      "question_fa": "کشتنِ اسبِ رازآلود این سؤال را مطرح می‌کند: آیا مجازاتِ الهی بود یا ترورِ انسانی؟ امتناعِ شاهنامه از حلِ این ابهام چه چیزی به دست می‌آورد؟",
+      "question_tg": "Куштани аспи розомез ин савол ро мегузорад: оё ҷазои илоҳӣ буд ё суиқасди инсонӣ? Имтиноъи Шоҳнома аз ҳалли ин ибҳом чиро ба даст меорад?",
+      "answers": [
+        "It preserves both the religious interpretation (priests were right) and the political one (they arranged his death) — both are historically plausible and neither should be erased",
+        "The Shahnameh resolves the ambiguity in the text — it is just difficult to find the resolution",
+        "The ambiguity was a mistake — Ferdowsi should have decided which was true",
+        "The mystery proves the death was genuinely supernatural"
+      ],
+      "answers_fa": [
+        "هم تفسیرِ دینی (روحانیان درست بودند) و هم سیاسی (مرگش را ترتیب دادند) را حفظ می‌کند — هر دو از نظرِ تاریخی محتمل هستند و هیچ‌کدام نباید حذف شوند",
+        "شاهنامه ابهام را در متن حل می‌کند — فقط یافتنِ راه‌حل دشوار است",
+        "ابهام یک اشتباه بود — فردوسی باید تصمیم می‌گرفت کدام درست است",
+        "راز ثابت می‌کند که مرگ واقعاً ماورایی بود"
+      ],
+      "answers_tg": [
+        "ҳам тафсири динӣ (коҳинон дуруст буданд) ва ҳам сиёсиро (марги ӯро тартиб доданд) ҳифз мекунад — ҳарду аз назари таърихӣ муҳтамал ҳастанд",
+        "Шоҳнома ибҳомро дар матн ҳал мекунад — танҳо ёфтани роҳҳал душвор аст",
+        "Ибҳом хато буд — Фирдавсӣ бояд қарор мегирифт кадом дуруст аст",
+        "Роз исбот мекунад ки марг воқеан фавқуттабиъӣ буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Preserving the ambiguity is the honest scholarly choice: Ferdowsi could not verify whether the death was divine punishment or political assassination. By not deciding, he preserves the uncertainty that actually existed — rather than imposing a false clarity.",
+      "explanation_fa": "حفظِ ابهام انتخابِ علمیِ صادقانه است: فردوسی نمی‌توانست تأیید کند که آیا مرگ مجازاتِ الهی بود یا ترورِ سیاسی.",
+      "explanation_tg": "Ҳифзи ибҳом интихоби илмии ростона аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yzds-h5",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Yazdegerd ruled for 21 years without major military defeat yet was vilified. What does this suggest about the relationship between administrative success and political reputation in the Shahnameh?",
+      "question_fa": "یزدگرد ۲۱ سال بدون شکستِ نظامیِ مهمی حکومت کرد اما بدنام شد. این درباره‌ی رابطه‌ی بینِ موفقیتِ اداری و اعتبارِ سیاسی در شاهنامه چه چیزی نشان می‌دهد؟",
+      "question_tg": "Яздагерд 21 сол бидуни шикасти низомии муҳиме ҳукумат кард аммо бадном шуд. Ин дар бораи муносибати байни муваффақияти маъмурӣ ва эътибори сиёсӣ дар Шоҳнома чиро нишон медиҳад?",
+      "answers": [
+        "Good reputation requires only personal bravery, not institutional support",
+        "Reputation is made by institutional gatekeepers, not by objective achievement — those who control the historical narrative determine how kings are remembered",
+        "Administrative success always produces good reputation in the Shahnameh",
+        "Military defeat is the only thing that produces bad reputation"
+      ],
+      "answers_fa": [
+        "اعتبارِ خوب فقط به شجاعتِ شخصی نیاز دارد نه حمایتِ نهادی",
+        "اعتبار توسطِ دربانانِ نهادی ساخته می‌شود نه دستاوردِ عینی — آنهایی که روایتِ تاریخی را کنترل می‌کنند تعیین می‌کنند شاهان چگونه به یاد آورده می‌شوند",
+        "موفقیتِ اداری همیشه اعتبارِ خوب در شاهنامه تولید می‌کند",
+        "شکستِ نظامی تنها چیزی است که اعتبارِ بد تولید می‌کند"
+      ],
+      "answers_tg": [
+        "Эътибори хуб танҳо ба шуҷоати шахсӣ ниёз дорад",
+        "Эътибор аз ҷониби нигаҳбонони ниҳодӣ сохта мешавад, на дастоварди объективӣ — онҳое ки ривояти таърихиро назорат мекунанд муайян мекунанд шоҳон чӣ тавр ба ёд оварда мешаванд",
+        "Муваффақияти маъмурӣ ҳамеша дар Шоҳнома эътибори хуб тавлид мекунад",
+        "Шикасти низомӣ ягона чизест ки эътибори бад тавлид мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Yazdegerd chapter is the Shahnameh's most precise lesson about the politics of historical memory. He ruled effectively and peacefully, but the two institutions that controlled Persian historical narrative — priests and nobles — had reason to vilify him.",
+      "explanation_fa": "فصلِ یزدگرد دقیق‌ترین درسِ شاهنامه درباره‌ی سیاستِ حافظه‌ی تاریخی است.",
+      "explanation_tg": "Фасли Яздагерд дақиқтарин дарси Шоҳнома дар бораи сиёсати хотираи таърихист.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yzds-h6",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The Shahnameh places Yazdegerd between Bahram Gur's father role and the sympathetic Bahram Gur narrative. How does this structural placement affect how the reader receives the 'Sinner' label?",
+      "question_fa": "شاهنامه یزدگرد را بینِ نقشِ پدریِ بهرام گور و روایتِ همدلانه‌ی بهرام گور قرار می‌دهد. این موقعیت‌یابیِ ساختاری چگونه بر نحوه‌ی دریافتِ خواننده از لقبِ «گناهکار» تأثیر می‌گذارد؟",
+      "question_tg": "Шоҳнома Яздагердро байни нақши падарии Баҳром Гӯр ва ривояти ҳамдардонаи Баҳром Гӯр ҷой медиҳад. Ин ҷойгузинии сохторӣ чӣ тавр бар нахваи дарёфти хонанда аз унвони «Гунаҳкор» таъсир мегузорад?",
+      "answers": [
+        "The Shahnameh deliberately places Yazdegerd away from his son to keep the narratives separate",
+        "A father who produces a beloved son cannot be simply wicked — the structural placement makes the 'Sinner' label harder to accept without question",
+        "Structural placement has no effect on how readers receive character labels",
+        "The placement reinforces the 'Sinner' label by showing his son was better than him"
+      ],
+      "answers_fa": [
+        "شاهنامه عمداً یزدگرد را دور از پسرش قرار می‌دهد تا روایت‌ها را جدا نگه دارد",
+        "پدری که پسرِ محبوب تولید می‌کند نمی‌تواند صرفاً شرور باشد — موقعیت‌یابیِ ساختاری قبول کردنِ لقبِ «گناهکار» را بدون سؤال سخت‌تر می‌کند",
+        "موقعیت‌یابیِ ساختاری هیچ تأثیری بر نحوه‌ی دریافتِ خوانندگان از لیبل‌های شخصیت ندارد",
+        "موقعیت‌یابی لقبِ «گناهکار» را با نشان دادنِ اینکه پسرش از او بهتر بود تقویت می‌کند"
+      ],
+      "answers_tg": [
+        "Шоҳнома қасдан Яздагердро дур аз писараш ҷой медиҳад",
+        "Падаре ки писари маҳбуб тавлид мекунад наметавонад танҳо бад бошад — ҷойгузинии сохторӣ қабули унвони «Гунаҳкор»-ро бидуни савол душвортар мекунад",
+        "Ҷойгузинии сохторӣ ҳеч таъсире ба нахваи дарёфти хонандагон аз унвонҳои шахсият надорад",
+        "Ҷойгузинӣ унвони «Гунаҳкор»-ро бо нишон додани ин ки писараш аз ӯ беҳтар буд мустаҳкам мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "By placing Yazdegerd immediately before his beloved son Bahram Gur, the Shahnameh creates a narrative proximity that complicates the 'Sinner' label. A father capable of producing Bahram Gur could not have been entirely wicked.",
+      "explanation_fa": "با قرار دادنِ یزدگرد بلافاصله قبل از پسرِ محبوبش بهرام گور، شاهنامه یک نزدیکیِ رواییِ ایجاد می‌کند که لقبِ «گناهکار» را پیچیده‌تر می‌کند.",
+      "explanation_tg": "Бо ҷой додани Яздагерд бевосита пеш аз писари маҳбубаш Баҳром Гӯр, Шоҳнома наздикии ривоие месозад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yzds-h7",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The Shahnameh gives Yazdegerd the name his enemies gave him. What does this acceptance of a hostile label reveal about Ferdowsi's relationship to his sources?",
+      "question_fa": "شاهنامه به یزدگرد نامی که دشمنانش به او دادند را می‌دهد. این پذیرشِ لقبِ خصمانه درباره‌ی رابطه‌ی فردوسی با منابعش چه چیزی نشان می‌دهد؟",
+      "question_tg": "Шоҳнома ба Яздагерд номеро ки душманонаш ба ӯ доданд медиҳад. Ин пазириши унвони хасмонаанд дар бораи муносибати Фирдавсӣ бо манобеаш чиро нишон медиҳад?",
+      "answers": [
+        "Ferdowsi followed his sources even when they reflected institutional bias — he was a transmitter of tradition, not its editor; he preserves the label while also preserving what contradicts it",
+        "The hostile label proves Ferdowsi was opposed to religious tolerance",
+        "Ferdowsi personally agreed that Yazdegerd was sinful",
+        "Accepting the label means the Shahnameh endorses institutional verdicts"
+      ],
+      "answers_fa": [
+        "فردوسی از منابعش پیروی کرد حتی وقتی تعصبِ نهادی را منعکس می‌کردند — او انتقال‌دهنده‌ی سنت بود نه ویراستارش؛ لقب را حفظ می‌کند در حالی که آنچه با آن تناقض دارد را هم حفظ می‌کند",
+        "لقبِ خصمانه ثابت می‌کند فردوسی با تسامحِ دینی مخالف بود",
+        "فردوسی شخصاً موافق بود که یزدگرد گناهکار است",
+        "پذیرشِ لقب به این معناست که شاهنامه احکامِ نهادی را تأیید می‌کند"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ аз манобеаш пайравӣ кард ҳатто вақте тааccуби ниҳодиро инъикос мекарданд — ӯ интиқолдиҳандаи суннат буд на вироишгари он؛ унвонро ҳифз мекунад дар ҳоле ки он чи бо он тазод дорад ро ҳам ҳифз мекунад",
+        "Унвони хасмонаанд исбот мекунад Фирдавсӣ бо таҳаммули динӣ мухолиф буд",
+        "Фирдавсӣ шахсан розӣ буд ки Яздагерд гунаҳкор аст",
+        "Пазириши унвон маъно дорад ки Шоҳнома ҳукмҳои ниҳодиро тасдиқ мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ferdowsi is a transmitter of tradition, not its judge. He uses the name his sources used — 'the Sinner' — while also preserving the evidence that the name was politically motivated. His faithfulness to sources includes their biases, which he also allows to be visible.",
+      "explanation_fa": "فردوسی انتقال‌دهنده‌ی سنت است نه قاضی‌اش. نامی که منابعش استفاده کردند — «گناهکار» — را استفاده می‌کند در حالی که شواهدی را هم که نشان می‌دهد نام از نظرِ سیاسی انگیزه داشت حفظ می‌کند.",
+      "explanation_tg": "Фирдавсӣ интиқолдиҳандаи суннат аст на доварии он.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yzds-h8",
+      "chapter_slug": "yazdegerd-sinner",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Yazdegerd I showed religious tolerance; Yazdegerd III (the last Sasanian) was murdered. The Shahnameh uses both kings with the same name to bookend the Sasanian era. What does this framing achieve?",
+      "question_fa": "یزدگردِ اول تسامحِ دینی نشان داد؛ یزدگردِ سوم (آخرین ساسانی) کشته شد. شاهنامه از هر دو شاهی با یک نام برای کتاب‌بند کردنِ دورانِ ساسانی استفاده می‌کند. این قاب‌بندی چه چیزی به دست می‌آورد؟",
+      "question_tg": "Яздагерди Аввал таҳаммули динӣ нишон дод؛ Яздагерди Сеюм (охирин Сосонӣ) кушта шуд. Шоҳнома аз ҳарду шоҳе бо ҳамон ном барои китобгузории давраи Сосонӣ истифода мекунад. Ин чорчӯбгузорӣ чиро ба даст меорад?",
+      "answers": [
+        "The two Yazdegerds frame a dynasty that began with contested legitimacy (the Sinner) and ended with complete collapse (the murdered fugitive) — the name echoes across the arc of decline",
+        "The shared name is coincidental and carries no structural meaning",
+        "Using the same name twice proves the Shahnameh's source materials were confused",
+        "The two Yazdegerds are used to show the Sasanian era was uniformly successful"
+      ],
+      "answers_fa": [
+        "دو یزدگرد سلسله‌ای را قاب می‌کنند که با مشروعیتِ متنازعه (گناهکار) شروع شد و با فروپاشیِ کامل (فراری کشته‌شده) پایان یافت — نام در کمانِ افول طنین‌انداز می‌شود",
+        "نامِ مشترک تصادفی است و معنایِ ساختاری ندارد",
+        "استفاده از همان نام دو بار ثابت می‌کند که مادهِ منبعِ شاهنامه گیج بود",
+        "دو یزدگرد برای نشان دادنِ اینکه دوره‌ی ساسانی به طورِ یکنواخت موفق بود استفاده می‌شوند"
+      ],
+      "answers_tg": [
+        "Ду Яздагерд сулолаеро чорчӯб мекунанд ки бо машруияти мутанозеъ (Гунаҳкор) оғоз шуд ва бо фурӯпошии комил (фирории кушташуда) поён ёфт — ном дар камони инҳироф таъкид мешавад",
+        "Номи муштарак тасодуфист ва маъноии сохторӣ надорад",
+        "Истифодаи ҳамон ном ду бор исбот мекунад ки маводи манбаи Шоҳнома гум шуда буд",
+        "Ду Яздагерд барои нишон додани ин ки давраи Сосонӣ якнавохт муваффақ буд истифода мешаванд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Yazdegerd bookends are structurally elegant: the first Yazdegerd opens the mature Sasanian era with contested legitimacy; the last closes it with complete defeat. The shared name creates a resonance across the span of the dynasty.",
+      "explanation_fa": "قاب‌های یزدگرد از نظرِ ساختاری زیبا هستند: اولین یزدگرد دوره‌ی بالغِ ساسانی را با مشروعیتِ متنازعه می‌گشاید؛ آخرین آن را با شکستِ کامل می‌بندد.",
+      "explanation_tg": "Чорчӯбҳои Яздагерд аз назари сохторӣ зебо ҳастанд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

@@ -5,31 +5,31 @@
       "chapter_slug": "rostams-end",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "Who was Shaghad, and what was his relationship to Rostam?",
-      "question_fa": "شاغاد کی بود و چه نسبتی با رستم داشت؟",
-      "question_tg": "Шоғод кӣ буд ва чӣ нисбате бо Рустам дошт?",
+      "question": "Who killed Rostam?",
+      "question_fa": "چه کسی رستم را کشت؟",
+      "question_tg": "Рустамро кӣ кушт?",
       "answers": [
-        "Rostam's half-brother — born of a different mother, raised at the court of Kabul",
-        "Rostam's full brother, who had been exiled from Zabulestan years earlier",
-        "A Kabulistani general who envied Rostam's fame and sought a blood price",
-        "Rostam's nephew through his sister, sent to Kabul as a diplomatic hostage"
+        "Esfandiyar, the Kayanian prince",
+        "Sohrab, his own son",
+        "Pashang, a Turanian warrior",
+        "Shaghad, his half-brother"
       ],
       "answers_fa": [
-        "ناتنی‌برادرِ رستم — از مادری دیگر زاده، در دربارِ کابل پرورش یافته",
-        "برادرِ تنیِ رستم که سال‌ها پیش از زابلستان تبعید شده بود",
-        "سردارِ کابلی که به شهرتِ رستم حسادت می‌کرد و خون‌بها می‌طلبید",
-        "برادرزاده‌ی رستم از طریقِ خواهرش، که به عنوانِ گروگانِ دیپلماتیک به کابل فرستاده شده بود"
+        "اسفندیار، شاهزاده‌ی کیانی",
+        "سهراب، پسرِ خودش",
+        "پشنگ، جنگجویِ توران",
+        "شغاد، برادرِ ناتنی‌اش"
       ],
       "answers_tg": [
-        "Бародари ногатании Рустам — аз модари дигар зода, дар дарбори Кобул парвариш ёфта",
-        "Бародари тании Рустам ки солҳо пеш аз Забулистон тарди шуда буд",
-        "Саркардаи Кобулӣ ки ба шӯҳрати Рустам ҳасад мебурд",
-        "Бародарзодаи Рустам аз тариқи хоҳараш, ки ҳамчун гаравгони дипломатӣ ба Кобул фиристода шуда буд"
+        "Исфандиёр, шаҳзодаи Каёнӣ",
+        "Суҳроб, писари худаш",
+        "Пашанг, ҷангҷӯи Турон",
+        "Шағод, бародари нотании ӯ"
       ],
-      "correct_answer": 0,
-      "explanation": "Shaghad was Rostam's half-brother, born of a different mother and raised at the court of Kabul, where he eventually married into the ruling household. The Shahnameh does not trace what turned him against Rostam — it presents the betrayal as already complete, arrived at before the reader can trace its origin.",
-      "explanation_fa": "شاغاد ناتنی‌برادرِ رستم بود، از مادری دیگر زاده شده و در دربارِ کابل پرورش یافته بود، جایی که در نهایت در خانواده‌ی حاکم ازدواج کرد. شاهنامه ردِّ خیانت را نمی‌گیرد — آن را به عنوانِ واقعیتی که قبل از اینکه خواننده بتواند منشأش را بیابد به وجود آمده، عرضه می‌کند.",
-      "explanation_tg": "Шоғод бародари ногатании Рустам буд, аз модари дигар зода шуда ва дар дарбори Кобул парвариш ёфта буд, ки дар он ҷо дар оилаи ҳоким издивоҷ кард. Шоҳнома ришаи хиёнатро пайгирӣ намекунад — онро ҳамчун ҳақиқате муаррифӣ мекунад ки пеш аз он ки хонанда манбаашро бёбад, ба вуҷуд омада.",
+      "correct_answer": 3,
+      "explanation": "Shaghad was Rostam's half-brother. He dug a pit filled with iron spikes and lured Rostam to it — the Shahnameh's most devastating betrayal by family.",
+      "explanation_fa": "شغاد برادرِ ناتنیِ رستم بود. چاهی پر از میخ‌های آهنی کند و رستم را به سمتش کشید — خیانتکارانه‌ترین خیانتِ خانوادگی در شاهنامه.",
+      "explanation_tg": "Шағод бародари нотании Рустам буд. Чоҳе пур аз мехҳои оҳанӣ канд ва Рустамро ба сӯяш кашид — хиёнаткорона‌тарин хиёнати оилавӣ дар Шоҳнома.",
       "reward": {
         "xp": 100,
         "real": 40
@@ -40,31 +40,66 @@
       "chapter_slug": "rostams-end",
       "quiz_part": 2,
       "difficulty": "easy",
-      "question": "How did Shaghad and the King of Kabul prepare the trap for Rostam?",
-      "question_fa": "شاغاد و شاهِ کابل چگونه تله را برای رستم آماده کردند؟",
-      "question_tg": "Шоғод ва подшоҳи Кобул чӣ гуна доми Рустамро омода карданд?",
+      "question": "How did Shaghad trap Rostam?",
+      "question_fa": "شغاد چگونه رستم را به دام انداخت؟",
+      "question_tg": "Шағод чӣ тавр Рустамро ба дом андохт?",
       "answers": [
-        "They dug pits in the hunting plains, lined them with iron stakes, and covered the openings with branches and thin soil to look like ordinary ground",
-        "They poisoned the water sources along Rostam's hunting route into the mountains",
-        "They hired a band of assassins to ambush Rostam at a narrow pass outside the city",
-        "They presented Rostam with a gift of a hunting bow laced with slow-acting poison"
+        "Poison in his food",
+        "A pit filled with iron spikes, covered with leaves",
+        "A false treaty meeting",
+        "An ambush during the night"
       ],
       "answers_fa": [
-        "در دشتِ شکار چاه‌هایی کندند، آن‌ها را با میخ‌های آهنی پوشاندند، و دهانه‌ها را با شاخ و برگ و خاکِ نازک پوشاندند تا مثلِ زمینِ عادی به نظر برسد",
-        "منابعِ آبی را در مسیرِ شکارِ رستم در کوه‌ها مسموم کردند",
-        "یک دسته از قاتلان استخدام کردند که در گردنه‌ای تنگ بیرونِ شهر رستم را کمین کنند",
-        "به رستم هدیه‌ای کمانِ شکار دادند که با زهرِ کند آغشته شده بود"
+        "سمی در غذایش",
+        "چاهی پر از میخ‌های آهنی که با برگ پوشانده شده",
+        "جلسه‌ای با پیمانِ دروغ",
+        "کمینی در شب"
       ],
       "answers_tg": [
-        "Дар дашти шикор чоҳҳо канданд, онҳоро бо мехҳои оҳанӣ пӯшонданд ва даҳонашонро бо шоху барг ва хоки нозук пӯшонданд то монанди замини муқаррарӣ ба назар расад",
-        "Манобеи обиро дар масири шикори Рустам дар кӯҳҳо заҳролуд карданд",
-        "Гурӯҳе аз қотилонро иҷора карданд ки дар гузари танге берун аз шаҳр Рустамро камин кунанд",
-        "Ба Рустам ҳадияи камони шикор доданд ки бо заҳри оҳиста олуда шуда буд"
+        "Заҳре дар хӯрокаш",
+        "Чоҳе пур аз мехҳои оҳанӣ ки бо барг пӯшонда шуд",
+        "Ҷаласае бо аҳди дурӯғ",
+        "Камине дар шаб"
       ],
-      "correct_answer": 0,
-      "explanation": "Shaghad and the King of Kabul had pits dug in the hunting plains — deep, lined with sharpened iron stakes, covered with branches and thin soil to pass as ordinary ground. A single familiar hunting path ran across them. Shaghad then sent Rostam an invitation framed as brotherly peace.",
-      "explanation_fa": "شاغاد و شاهِ کابل در دشتِ شکار چاه‌هایی حفر کردند — عمیق، با میخ‌های آهنیِ تیز پوشیده، با شاخه‌ها و خاکِ نازک پوشانده‌شده تا به عنوانِ زمینِ عادی ظاهر شوند. یک مسیرِ شکارِ آشنای واحد از روی آن‌ها می‌گذشت. سپس شاغاد دعوت‌نامه‌ای برای رستم فرستاد که به عنوانِ صلحِ برادرانه قاب شده بود.",
-      "explanation_tg": "Шоғод ва подшоҳи Кобул дар дашти шикор чоҳҳо кофтанд — амиқ, бо мехҳои оҳанини тез пӯшонда, бо шохаҳо ва хоки нозук рӯй пӯшонда то замини муқаррарӣ ба назар расанд. Як мasири шикори шинои ягона аз болои онҳо мегузашт. Сипас Шоғод даъватномае барои Рустам фиристод.",
+      "correct_answer": 1,
+      "explanation": "Shaghad dug a pit, planted iron spikes at the bottom, covered the surface with soil and leaves, then arranged a hunt to bring Rostam to that exact location.",
+      "explanation_fa": "شغاد چاهی کند، در ته آن میخ‌های آهنی کاشت، سطح را با خاک و برگ پوشاند، سپس شکاری ترتیب داد تا رستم را به آن مکانِ دقیق بکشاند.",
+      "explanation_tg": "Шағод чоҳе канд, дар поёнаш мехҳои оҳанӣ кошт, сатҳро бо хок ва барг пӯшонд, сипас шикоре тартиб дод то Рустамро ба он ҷои дақиқ бикашонад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "re-e3",
+      "chapter_slug": "rostams-end",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What did Rostam do with his final arrow as he lay dying in the pit?",
+      "question_fa": "رستم در حالی که در چاه جان می‌داد با آخرین تیرش چه کرد؟",
+      "question_tg": "Рустам дар ҳоле ки дар чоҳ ҷон медод бо охирин тираш чӣ кард?",
+      "answers": [
+        "Threw it at the pit walls",
+        "Shot Shaghad through a tree, killing him",
+        "Shot it into the sky as a final salute",
+        "Gave it to his son Farāmarz"
+      ],
+      "answers_fa": [
+        "آن را به دیوارهای چاه پرتاب کرد",
+        "شغاد را از پشتِ درخت با آن زد و کشت",
+        "آن را به آسمان شلیک کرد به عنوانِ آخرین تعظیم",
+        "آن را به پسرش فرامرز داد"
+      ],
+      "answers_tg": [
+        "Онро ба деворҳои чоҳ партофт",
+        "Шағодро аз паси дарахт бо он зад ва кушт",
+        "Онро ба осмон шут кард ба унвони охирин таъзим",
+        "Онро ба писараш Фаромарз дод"
+      ],
+      "correct_answer": 1,
+      "explanation": "Dying, Rostam asked Shaghad for his bow — pretending he wanted to shoot animals circling overhead. Shaghad, satisfied, gave it. Rostam shot him through a tree trunk. The dying man was more clever than the living traitor.",
+      "explanation_fa": "رستمِ در حالِ مرگ از شغاد کمانش را خواست — وانمود کرد می‌خواهد حیوانات دورزننده را بزند. شغاد راضی آن را داد. رستم او را از پشتِ تنه‌ی درختی زد. مرد در حالِ مرگ از خائنِ زنده باهوش‌تر بود.",
+      "explanation_tg": "Рустами дар ҳоли марг аз Шағод камонашро хост — вонамуд кард мехоҳад ҳайвоноти давразананда бизанад. Шағод розӣ онро дод. Рустам ӯро аз паси танаи дарахте зад. Мурд дар ҳоли марг аз хоини зинда зирактар буд.",
       "reward": {
         "xp": 100,
         "real": 40
@@ -73,208 +108,138 @@
     {
       "id": "re-m1",
       "chapter_slug": "rostams-end",
-      "quiz_part": 3,
+      "quiz_part": 1,
       "difficulty": "medium",
-      "question": "When Rakhsh reached the edge of the covered pit, what did he do — and what does the Shahnameh say about why?",
-      "question_fa": "وقتی رخش به لبه‌ی چاهِ مخفی رسید چه کرد — و شاهنامه درباره‌ی چرایش چه می‌گوید؟",
-      "question_tg": "Вақте Рахш ба канори чоҳи пинҳон расид чӣ кард — ва Шоҳнома дар бораи сабабаш чӣ мегӯяд?",
+      "question": "The Shahnameh calls Shaghad's betrayal the cruelest in the chronicle. What combination of factors makes it worse than comparable betrayals?",
+      "question_fa": "شاهنامه خیانتِ شغاد را خیانت‌کارانه‌ترین در شاهنامه می‌نامد. چه ترکیبی از عوامل آن را بدتر از خیانت‌های قابل‌مقایسه می‌کند؟",
+      "question_tg": "Шоҳнома хиёнати Шағодро хиёнаткорона‌тарин дар Шоҳнома меномад. Кадом омилҳои муштарак онро аз хиёнатҳои монанд бадтар мекунанд?",
       "answers": [
-        "He stopped without explanation — the Shahnameh does not attribute his hesitation to sight, smell, or training; it presents it as a horse's knowledge of the ground",
-        "He stopped because he smelled blood from a previous failed trap left untended",
-        "He stopped because Rostam pulled hard on his reins at the moment of approach",
-        "He stopped because the thin soil cracked visibly at the edge, warning them both"
+        "Shaghad was acting under foreign orders, making it also an act of treason",
+        "It is the only betrayal in the Shahnameh that the chronicle directly condemns",
+        "It combines family relationship, premeditation, and the victim being the greatest hero — each element makes it worse",
+        "Rostam had previously saved Shaghad's life, making it an act of ingratitude"
       ],
       "answers_fa": [
-        "بدونِ توضیح ایستاد — شاهنامه توقفش را به بینایی، بوییدن، یا آموزش نسبت نمی‌دهد؛ آن را به عنوانِ دانشِ اسب از زمین عرضه می‌کند",
-        "ایستاد چون از دامِ ناموفقِ قبلی که رها شده بود خونِ بو به مشامش رسیده بود",
-        "ایستاد چون رستم در لحظه‌ی نزدیک شدن با شدت افسارش را کشید",
-        "ایستاد چون خاکِ نازک در لبه به وضوح ترک خورد و هر دو را هشدار داد"
+        "شغاد تحتِ دستوراتِ خارجی عمل می‌کرد و آن را به عملِ خیانت هم تبدیل می‌کرد",
+        "این تنها خیانتی در شاهنامه است که شاهنامه مستقیماً محکوم می‌کند",
+        "ترکیبی از رابطه‌ی خانوادگی، از پیش اندیشیده‌شدن، و قربانی بودنِ بزرگ‌ترین قهرمان — هر عنصر آن را بدتر می‌کند",
+        "رستم قبلاً جانِ شغاد را نجات داده بود و آن را به عملِ ناسپاسی تبدیل می‌کرد"
       ],
       "answers_tg": [
-        "Бидуни тавзеҳ истод — Шоҳнома таваккуфашро ба биноӣ, бӯйидан ё омӯзиш нисбат намедиҳад; онро ҳамчун донишии асп аз замин муаррифӣ мекунад",
-        "Истод зеро аз домини ноком пештара ки рахо шуда буд хуни бӯй ба машомаш расида буд",
-        "Истод зеро Рустам дар лаҳзаи наздик шудан бо шиддат ифсораш кашид",
-        "Истод зеро хоки нозук дар канор ба ошкоро тарк хӯрд ва ҳар дуйро огоҳ кард"
+        "Шағод таҳти дастурҳои хориҷӣ амал мекард ва онро ба амали хиёнат ҳам табдил мекард",
+        "Ин танҳо хиёнате дар Шоҳнома аст ки Шоҳнома мустақиман маҳкум мекунад",
+        "Омезиши муносибати оилавӣ, аз пеш андешидашудан, ва қурбонӣ будани бузургтарин қаҳрамон — ҳар унсур онро бадтар мекунад",
+        "Рустам қаблан ҷони Шағодро наҷот дода буд ва онро ба амали ношукрӣ табдил мекард"
       ],
-      "correct_answer": 0,
-      "explanation": "Rakhsh stopped at the edge. He had never balked without reason across decades of impossible campaigns. The Shahnameh presents his hesitation without explanation — not smell, not sight, not training. It calls it a horse's knowledge of the ground. Rostam spurred him forward anyway.",
-      "explanation_fa": "رخش در لبه ایستاد. در طولِ دهه‌ها لشکرکشی‌های غیرممکن هرگز بدونِ دلیل ایستاده نبود. شاهنامه توقفش را بدونِ توضیح عرضه می‌کند — نه بو، نه دیدن، نه آموزش. آن را دانشِ اسب از زمین می‌نامد. رستم با این حال مهمیز زد.",
-      "explanation_tg": "Рахш дар канор истод. Дар тӯли даҳ‌солаҳои лашкаркашиҳои ғайриимкон ҳеч гоҳ бидуни сабаб намеистод. Шоҳнома таваккуфашро бидуни тавзеҳ муаррифӣ мекунад — на бӯй, на биноӣ, на омӯзиш. Онро донишии асп аз замин мехонад. Рустам бо ин ҳол тозиёна зад.",
+      "correct_answer": 2,
+      "explanation": "The Shahnameh's gallery of betrayals — Garsivaz against Siavash, Gorgin against Bijan — are terrible. Shaghad's is the worst because it combines all three elements: it is by family, it is premeditated, and the victim is the chronicle's greatest hero.",
+      "explanation_fa": "مجموعه‌ی خیانت‌های شاهنامه — گرسیوز علیهِ سیاوش، گرگین علیهِ بیژن — وحشتناک هستند. شغاد بدترین است چون هر سه عنصر را ترکیب می‌کند: توسطِ خانواده، از پیش اندیشیده شده، و قربانی بزرگ‌ترین قهرمانِ شاهنامه است.",
+      "explanation_tg": "Маҷмӯи хиёнатҳои Шоҳнома — Гарсеваз зидди Сиёвуш, Гӯргин зидди Бижан — даҳшатноканд. Шағод бадтарин аст зеро ҳар се унсурро омезиш мекунад.",
       "reward": {
-        "xp": 150,
-        "real": 65
+        "xp": 250,
+        "real": 115
       }
     },
     {
       "id": "re-m2",
       "chapter_slug": "rostams-end",
-      "quiz_part": 4,
+      "quiz_part": 2,
       "difficulty": "medium",
-      "question": "After falling into the pit, what was Rostam's final act?",
-      "question_fa": "بعد از افتادن در چاه، آخرین عملِ رستم چه بود؟",
-      "question_tg": "Пас аз афтидан дар чоҳ, охирин амали Рустам чӣ буд?",
+      "question": "Rostam asked Shaghad for his bow while dying. What false reason did he give for wanting it?",
+      "question_fa": "رستم در حالِ مرگ از شغاد کمانش را خواست. چه دلیلِ دروغی برای خواستنش داد؟",
+      "question_tg": "Рустам дар ҳоли марг аз Шағод камонашро хост. Кадом сабаби дурӯғ барои хостанаш дод?",
       "answers": [
-        "He steadied himself, found Shaghad watching from behind a tree, drew his bow one last time, and shot an arrow that pinned Shaghad to the tree — then he died",
-        "He called out to Zal and Faramarz, warning them of the trap before his wounds overcame him",
-        "He attempted to climb out of the pit, reaching the edge before collapsing from his wounds",
-        "He forgave Shaghad aloud, then died without further action, leaving the vengeance to Faramarz"
+        "To shoot animals circling overhead",
+        "To lean on it for support",
+        "To send a signal arrow for help",
+        "To pass it to his son as a final gift"
       ],
       "answers_fa": [
-        "خود را راست نگه داشت، شاغاد را یافت که پشتِ درختی تماشا می‌کرد، آخرین بار کمانش را کشید و تیری انداخت که شاغاد را به درخت دوخت — سپس مُرد",
-        "به زال و فرامرز فریاد زد و آن‌ها را قبل از اینکه زخم‌هایش بر او غلبه کنند از دام آگاه کرد",
-        "تلاش کرد از چاه بالا بیاید، به لبه رسید اما از زخم‌هایش فروپاشید",
-        "شاغاد را بلندبلند بخشید، سپس بدونِ اقدامِ بیشتر مُرد و انتقام را به فرامرز سپرد"
+        "برای زدنِ حیواناتی که بالای سرش می‌چرخیدند",
+        "برای تکیه‌کردن بهش به عنوانِ پشتیبان",
+        "برای شلیکِ تیرِ کمک‌خواهی",
+        "برای دادنش به پسرش به عنوانِ آخرین هدیه"
       ],
       "answers_tg": [
-        "Худро рост нигоҳ дошт, Шоғодро пайдо кард ки аз пушти дарахте тамошо мекард, охирин бор камонашро кашид ва тире андохт ки Шоғодро ба дарахт дӯхт — сипас мурд",
-        "Ба Зол ва Фаромарз нидо кард ва онҳоро пеш аз он ки захмҳояш бар ӯ ғолиб оянд аз дом огоҳ кард",
-        "Кӯшид аз чоҳ боло биёяд, ба канор расид аммо аз захмҳояш фурӯ рехт",
-        "Шоғодро баландбаланд бахшид, сипас бидуни амали бештар мурд ва интиқомро ба Фаромарз сипурд"
+        "Барои задани ҳайвоноте ки болои сараш мечархиданд",
+        "Барои такя кардан бо он ба унвони такягоҳ",
+        "Барои шути тири кӯмакхоҳӣ",
+        "Барои додани ба писараш ба унвони охирин тӯҳфа"
       ],
       "correct_answer": 0,
-      "explanation": "Rostam steadied himself upright with what he had left, found Shaghad watching from behind a tree at what he believed was a safe distance, reached for his bow, and drew it one final time. The arrow went through Shaghad and through the bark behind him, pinning him to the tree where he died. Then Rostam died.",
-      "explanation_fa": "رستم با آنچه داشت خود را راست نگه داشت، شاغاد را یافت که از پشتِ درختی از فاصله‌ای که ایمن می‌پنداشت تماشا می‌کرد، به کمانش دست زد و آخرین بار آن را کشید. تیر از شاغاد گذشت و از پشتِ پوستِ درخت، شاغاد را به درخت دوخت و همان‌جا مُرد. سپس رستم مُرد.",
-      "explanation_tg": "Рустам бо он чи дошт худро рост нигоҳ дошт, Шоғодро пайдо кард ки аз пушти дарахте аз фосилае ки ба назараш бехатар буд тамошо мекард, дасти камонаш расид ва охирин бор онро кашид. Тир аз Шоғод гузашт ва аз пушти пӯсти дарахт, Шоғодро ба дарахт дӯхт ва ҳамон ҷо мурд. Сипас Рустам мурд.",
+      "explanation": "Rostam pretended he wanted his bow to shoot the wild animals circling overhead. It was a ruse. Shaghad, satisfied that his dying brother posed no threat, gave him the bow. Rostam used it to kill him.",
+      "explanation_fa": "رستم وانمود کرد می‌خواهد کمانش را برای زدنِ حیوانات وحشیِ دورزننده. حیله بود. شغاد، راضی از اینکه برادرِ در حالِ مرگش تهدیدی ندارد، کمان را داد. رستم آن را برای کشتنش استفاده کرد.",
+      "explanation_tg": "Рустам вонамуд кард мехоҳад камонашро барои задани ҳайвоноти ваҳшии давразананда. Найранг буд. Шағод, розӣ аз ин ки бародари дар ҳоли маргаш таҳдиде надорад, камонро дод. Рустам онро барои куштанаш истифода кард.",
       "reward": {
-        "xp": 150,
-        "real": 65
-      }
-    },
-    {
-      "id": "re-h1",
-      "chapter_slug": "rostams-end",
-      "quiz_part": 5,
-      "difficulty": "hard",
-      "question": "Rostam is not defeated in honest combat, nor consumed by a personal flaw. He falls into a half-brother's trap. Why does the Shahnameh choose this specific form of ending for its greatest champion?",
-      "question_fa": "رستم در مبارزه‌ی شرافتمندانه شکست نمی‌خورد و عیبی شخصی او را نابود نمی‌کند. در تله‌ی ناتنی‌برادرش می‌افتد. چرا شاهنامه این شکلِ خاص از پایان را برای بزرگترین پهلوانش انتخاب می‌کند؟",
-      "question_tg": "Рустам дар мубориза шикаст намехӯрад ва айби шахсӣ ӯро нобуд намекунад. Дар домини бародари ногатанияш меафтад. Чаро Шоҳнома ин шакли хоси поёнро барои бузургтарин паҳлавонаш интихоб мекунад?",
-      "answers": [
-        "Because treachery from within the household is the one thing the chronicle had not used against Rostam — every external threat had failed, so only an internal one could succeed",
-        "Because Ferdowsi wanted to show that even heroes die, and the manner of death is irrelevant to the warrior's greatness",
-        "Because the original oral tradition prescribed this death, and Ferdowsi had no authority to change it",
-        "Because Rostam's pride — shown in overriding Rakhsh's warning — is the flaw that kills him"
-      ],
-      "answers_fa": [
-        "زیرا خیانتِ از داخلِ خانواده تنها چیزی است که شاهنامه علیهِ رستم به کار نبرده بود — هر تهدیدِ بیرونی شکست خورده بود، پس فقط یکِ داخلی می‌توانست موفق شود",
-        "زیرا فردوسی می‌خواست نشان دهد که حتی قهرمانان هم می‌میرند و طریقه‌ی مرگ برای عظمتِ جنگجو بی‌اهمیت است",
-        "زیرا سنتِ شفاهیِ اصلی این مرگ را مشخص کرده بود و فردوسی اختیارِ تغییرش را نداشت",
-        "زیرا غرورِ رستم — که در نادیده گرفتنِ هشدارِ رخش نشان داده می‌شود — عیبی است که او را می‌کشد"
-      ],
-      "answers_tg": [
-        "Зеро хиёнат аз дохили хонавода тanha чизест ки Шоҳнома бар зидди Рустам истифода накарда буд — ҳар таҳдиди беруна шикаст хӯрда буд, пас танҳо таҳдиди дохилӣ метавонист муваффақ шавад",
-        "Зеро Фирдавсӣ мехост нишон диҳад ки ҳатто қаҳрамонон ҳам мемиранд ва тарзи марг барои азамати ҷанговар бе аҳамият аст",
-        "Зеро суннати шифоҳии аслӣ ин маргро муайян карда буд ва Фирдавсӣ ихтиёри тағйираш надошт",
-        "Зеро ғурури Рустам — ки дар нодида гирифтани огоҳии Рахш нишон дода мешавад — айбест ки ӯро мекушад"
-      ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh had tested Rostam against every external form of destruction — labours, monsters, Sohrab, Esfandiyar's brass body — and each time the narrative found a way through. The only remaining vector was the household itself. Treachery from a half-brother is not a test of strength or even wisdom; it is a test Rostam cannot prepare for, because it arrives disguised as a peace invitation.",
-      "explanation_fa": "شاهنامه رستم را در برابرِ هر شکلِ بیرونیِ نابودی آزمایش کرده بود — هفت‌خان، هیولاها، سهراب، تنِ برنجیِ اسفندیار — و هر بار روایت راهی برای ادامه یافته بود. تنها بردارِ باقی‌مانده خودِ خانواده بود. خیانتِ ناتنی‌برادر آزمونِ قدرت یا حتی خرد نیست؛ آزمونی است که رستم نمی‌تواند برایش آماده شود، زیرا در قالبِ دعوتِ صلح می‌رسد.",
-      "explanation_tg": "Шоҳнома Рустамро дар муқобили ҳар шакли берунии нобудӣ озмуда буд — ҳафтхон, ҳайвоноти ваҳшӣ, Суҳроб, тани биринҷии Исфандиёр — ва ҳар бор равоят роҳе барои идома ёфта буд. Танҳо вектори боқимонда худи хонавода буд. Хиёнати бародари ногатанӣ озмуни қувват ё ҳатто хирад нест; озмунест ки Рустам наметавонад барояш омода шавад, зеро дар қолаби даъвати сулҳ мерасад.",
-      "reward": {
-        "xp": 180,
-        "real": 80
-      }
-    },
-    {
-      "id": "re-e3",
-      "chapter_slug": "rostams-end",
-      "quiz_part": 6,
-      "difficulty": "easy",
-      "question": "What invitation did Shaghad use to lure Rostam to the hunting grounds?",
-      "question_fa": "شاغاد از چه دعوتی برای فریبِ رستم به دشتِ شکار استفاده کرد؟",
-      "question_tg": "Шоғод аз кадом даъват барои фиреби Рустам ба дашти шикор истифода кард?",
-      "answers": [
-        "An invitation framed as brotherly peace — come hunt with us, let there be peace between families",
-        "A royal summons from the King of Kabul demanding Rostam pay tribute",
-        "A distress message claiming Shaghad's household was under attack and needed Rostam's protection",
-        "An offer to show Rostam new hunting grounds with abundant game that no one had discovered"
-      ],
-      "answers_fa": [
-        "دعوتی که به عنوانِ صلحِ برادرانه قاب شده بود — بیا با ما شکار کن، بگذار میانِ خانواده‌ها صلح باشد",
-        "فراخوانِ سلطنتیِ شاهِ کابل که از رستم خواست خراج بپردازد",
-        "پیامِ اضطراری که ادعا می‌کرد خانواده‌ی شاغاد مورد حمله قرار گرفته و نیازِ حمایتِ رستم دارد",
-        "پیشنهادِ نشان دادنِ دشت‌های شکارِ تازه با شکارِ فراوان که هیچ‌کس کشف نکرده بود"
-      ],
-      "answers_tg": [
-        "Даъвате ки дар қолаби сулҳи бародарона қаб шуда буд — биё бо мо шикор кун, гузор миёни оилаҳо сулҳ бошад",
-        "Фарохони шоҳонаи подшоҳи Кобул ки аз Рустам хост хирој бипардозад",
-        "Паёми изтирорӣ ки иддао мекард хонаводаи Шоғод мавриди ҳуҷум қарор гирифтааст",
-        "Пешниҳоди нишон додани дашти шикори тоза бо шикори фаровон ки ҳеч кас кашф накарда буд"
-      ],
-      "correct_answer": 0,
-      "explanation": "Shaghad sent word to Zabulestan with an invitation framed as brotherhood: come hunt with us, let there be peace between families. Rostam packed his gear and rode west — walking into the trap because the invitation looked like reconciliation.",
-      "explanation_fa": "شاغاد به زابلستان پیام فرستاد با دعوتی که به عنوانِ برادری قاب شده بود: بیا با ما شکار کن، بگذار میانِ خانواده‌ها صلح باشد. رستم ساز و برگش را بست و سوار به غرب رفت — به دام افتاد چون دعوت شبیهِ آشتی به نظر می‌رسید.",
-      "explanation_tg": "Шоғод ба Забулистон паём фиристод бо даъвате ки дар қолаби бародарӣ қаб шуда буд: биё бо мо шикор кун, гузор миёни оилаҳо сулҳ бошад. Рустам асбобашро баст ва саворӣ ба ғарб рафт — ба дом афтод зеро даъват монанди осоиш ба назар мерасид.",
-      "reward": {
-        "xp": 170,
-        "real": 75
+        "xp": 250,
+        "real": 115
       }
     },
     {
       "id": "re-m3",
       "chapter_slug": "rostams-end",
-      "quiz_part": 7,
+      "quiz_part": 3,
       "difficulty": "medium",
-      "question": "What does the Shahnameh tell us about why Shaghad turned against Rostam?",
-      "question_fa": "شاهنامه درباره‌ی اینکه چرا شاغاد علیهِ رستم برگشت چه می‌گوید؟",
-      "question_tg": "Шоҳнома дар бораи сабаби рӯйгардонии Шоғод аз Рустам чӣ мегӯяд?",
+      "question": "The Shahnameh says the chronicle 'goes quiet' after Rostam's death. What is lost when Rostam dies?",
+      "question_fa": "شاهنامه می‌گوید شاهنامه پس از مرگِ رستم «ساکت می‌شود.» وقتی رستم می‌میرد چه چیزی از دست می‌رود؟",
+      "question_tg": "Шоҳнома мегӯяд Шоҳнома пас аз марги Рустам «хомӯш мешавад.» Вақте Рустам мемирад чӣ гум мешавад?",
       "answers": [
-        "Nothing — the Shahnameh states the betrayal as a fact, without explaining what curdled in Shaghad during his years in Kabul",
-        "Jealousy of Rostam's fame and the rewards Rostam received from the Kayanian kings",
-        "Resentment at being sent away from Zabulestan as a boy while Rostam inherited everything",
-        "The King of Kabul offered Shaghad the kingdom of Zabulestan in exchange for Rostam's death"
+        "The main line of story — the Shahnameh ends with Rostam",
+        "The bond between Iran and Zabolestan",
+        "The chronicle's largest physical and moral presence — its pillar of heroism",
+        "The last connection to the mythic age of kings"
       ],
       "answers_fa": [
-        "هیچ — شاهنامه خیانت را به عنوانِ واقعیت بیان می‌کند، بدونِ توضیحِ آنچه در طولِ سال‌هایش در کابل در شاغاد تغییر کرد",
-        "حسادت به شهرتِ رستم و پاداش‌هایی که رستم از شاهانِ کیانی دریافت می‌کرد",
-        "کینه از اینکه به عنوانِ پسر از زابلستان فرستاده شده بود درحالی‌که رستم همه چیز را به ارث برد",
-        "شاهِ کابل پادشاهیِ زابلستان را در قبالِ مرگِ رستم به شاغاد پیشنهاد داد"
+        "خطِ اصلیِ داستان — شاهنامه با رستم پایان می‌یابد",
+        "پیوند بینِ ایران و زابلستان",
+        "بزرگ‌ترین حضورِ فیزیکی و اخلاقیِ شاهنامه — ستونِ پهلوانی آن",
+        "آخرین ارتباط با عصرِ اسطوره‌ایِ شاهان"
       ],
       "answers_tg": [
-        "Ҳеч — Шоҳнома хиёнатро ҳамчун ҳақиқат баён мекунад, бидуни тавзеҳи он чи дар тӯли солҳояш дар Кобул дар Шоғод тағйир кард",
-        "Ҳасад ба шӯҳрати Рустам ва подошҳое ки Рустам аз подшоҳони Каёнӣ мегирифт",
-        "Кина аз он ки ҳамчун бача аз Забулистон фиристода шуда буд дар ҳоле ки Рустам ҳама чизро ба мерос гирифт",
-        "Подшоҳи Кобул подшоҳии Забулистонро дар бадали марги Рустам ба Шоғод пешниҳод дод"
+        "Хатти асосии достон — Шоҳнома бо Рустам поён меёбад",
+        "Иртибот байни Эрон ва Зобулистон",
+        "Бузургтарин ҳузури ҷисмонӣ ва ахлоқии Шоҳнома — ситуни паҳлавонии он",
+        "Охирин иртибот бо асри афсонавии шоҳон"
       ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh does not explain what curdled in Shaghad during his years in Kabul. It states the betrayal as a fact, the way certain treacheries arrive already complete before anyone traces their origin. This silence is deliberate — the narrative treats the conspiracy as something that simply happened, not something that needs psychological accounting.",
-      "explanation_fa": "شاهنامه توضیح نمی‌دهد که در طولِ سال‌هایش در کابل چه چیزی در شاغاد تغییر کرد. خیانت را به عنوانِ واقعیت بیان می‌کند، همان‌طور که برخی خیانت‌ها قبل از اینکه کسی منشأشان را ردیابی کند کامل رسیده. این سکوت عمدی است — روایت توطئه را به عنوانِ چیزی می‌انگارد که ساده اتفاق افتاد، نه چیزی که نیازِ حسابرسیِ روان‌شناختی داشته باشد.",
-      "explanation_tg": "Шоҳнома тавзеҳ намедиҳад ки дар тӯли солҳояш дар Кобул дар Шоғод чӣ тағйир кард. Хиёнатро ҳамчун ҳақиқат баён мекунад, ҳамон тавр ки баъзе хиёнатҳо пеш аз он ки касе манбаашонро пайгирӣ кунад, комил расидаанд. Ин хомӯшӣ қасдӣ аст — равоят тавтиаро ҳамчун чизе мешуморад ки ба садоқат рух дод.",
+      "correct_answer": 2,
+      "explanation": "The Shahnameh continues after Rostam's death — Sasanian chapters, Arab conquest, the final closing. But the chronicle's relationship to the world changes. Rostam was its largest presence — physically unmatched, morally committed, always the last resort. When he dies, that presence is simply gone.",
+      "explanation_fa": "شاهنامه پس از مرگِ رستم ادامه می‌یابد — فصل‌های ساسانی، فتحِ عرب، بستنِ نهایی. اما رابطه‌ی شاهنامه با دنیا تغییر می‌کند. رستم بزرگ‌ترین حضورش بود — از نظرِ جسمانی بی‌نظیر، از نظرِ اخلاقی متعهد، همیشه آخرین راهِ چاره. وقتی می‌میرد آن حضور به سادگی رفته.",
+      "explanation_tg": "Шоҳнома пас аз марги Рустам идома меёбад — боб-ҳои Сосонӣ, фатҳи арабӣ, бастани ниҳоӣ. Аммо муносибати Шоҳнома бо дунё тағйир мекунад. Рустам бузургтарин ҳузурашро дошт. Вақте мемирад он ҳузур соддагӣ рафтааст.",
       "reward": {
-        "xp": 230,
-        "real": 105
+        "xp": 250,
+        "real": 115
       }
     },
     {
       "id": "re-m4",
       "chapter_slug": "rostams-end",
-      "quiz_part": 8,
+      "quiz_part": 4,
       "difficulty": "medium",
-      "question": "How does the Shahnameh describe the scene when Zal, Faramarz, and the warriors arrived at the pit after Rostam's death?",
-      "question_fa": "شاهنامه صحنه‌ای که زال، فرامرز، و جنگجویان پس از مرگِ رستم به چاه رسیدند را چگونه توصیف می‌کند؟",
-      "question_tg": "Шоҳнома саҳнае ки Зол, Фаромарз ва ҷанговарон пас аз марги Рустам ба чоҳ расиданд чӣ гуна тавсиф мекунад?",
+      "question": "Where did Shaghad hide to protect himself from Rostam's dying rage after giving him the bow?",
+      "question_fa": "شغاد پس از دادنِ کمان به رستم برای محافظت از خودش در برابرِ خشمِ مرگ‌آسای رستم کجا پنهان شد؟",
+      "question_tg": "Шағод пас аз додани камон ба Рустам барои ҳимояи худ дар баробари қаҳри марговари Рустам куҷо пинҳон шуд?",
       "answers": [
-        "With restraint — they stood in silence, lifted what remained, and the chronicle marked the place without lingering there",
-        "With a long lamentation — Zal tore his garments and Faramarz swore vengeance for seven days",
-        "With immediate action — Faramarz pursued and killed the King of Kabul before returning to bury Rostam",
-        "With ceremony — a state funeral was held and a monument erected on the hunting plain"
+        "In a riverbed",
+        "Behind a tree trunk",
+        "Behind a boulder",
+        "Inside a cave"
       ],
       "answers_fa": [
-        "با خویشتن‌داری — در سکوت ایستادند، آنچه مانده را برداشتند، و شاهنامه مکان را بدونِ درنگیدن نشان کرد",
-        "با شیون و زاری طولانی — زال جامه‌اش را درید و فرامرز هفت روز انتقام‌خواهی سوگند خورد",
-        "با اقدامِ فوری — فرامرز شاهِ کابل را تعقیب و کشت قبل از اینکه برگردد رستم را دفن کند",
-        "با مراسم — مراسمِ دولتی برگزار شد و یادگاری در دشتِ شکار ساخته شد"
+        "در بستрِ رودخانه",
+        "پشتِ تنه‌ی درخت",
+        "پشتِ صخره",
+        "داخلِ غار"
       ],
       "answers_tg": [
-        "Бо худдорӣ — дар хомӯшӣ истоданд, он чи монда буд бардоштанд ва Шоҳнома маконро бидуни таваккуф нишон кард",
-        "Бо нолаву зори тӯлонӣ — Зол ҷомааш дарид ва Фаромарз ҳафт рӯз савганди интиқомхоҳӣ хӯрд",
-        "Бо амали фаврӣ — Фаромарз подшоҳи Кобулро таъқиб ва кушт пеш аз он ки баргарда Рустамро дафн кунад",
-        "Бо маросим — маросими давлатӣ баргузор шуд ва ёдгоре дар дашти шикор сохта шуд"
+        "Дар бистари дарё",
+        "Паси танаи дарахт",
+        "Паси харсанг",
+        "Дохили ғор"
       ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh does not describe a long ceremony. Zal came, Faramarz came, the warriors came and stood around the pit in silence. They lifted what remained. The chronicle marks the place where the weight was set down and does not linger there. The brevity of the burial is part of the elegy.",
-      "explanation_fa": "شاهنامه مراسمِ طولانی توصیف نمی‌کند. زال آمد، فرامرز آمد، جنگجویان آمدند و در سکوت دورِ چاه ایستادند. آنچه مانده بود برداشتند. شاهنامه مکانی را که بارِ سنگین بر زمین گذاشته شد نشان می‌کند و بدونِ درنگیدن ادامه می‌دهد. اختصارِ دفن بخشی از مرثیه است.",
-      "explanation_tg": "Шоҳнома маросими тӯлониро тавсиф намекунад. Зол омад, Фаромарз омад, ҷанговарон омаданд ва дар хомӯшӣ гирди чоҳ истоданд. Он чи монда буд бардоштанд. Шоҳнома маконеро ки борати гарон ба замин гузошта шуд нишон медиҳад ва бидуни таваккуф идома медиҳад. Ихтисори дафн бахше аз марсия аст.",
+      "correct_answer": 1,
+      "explanation": "Shaghad put a tree trunk between himself and Rostam, believing it was sufficient protection. Rostam, dying, shot his arrow clean through the tree trunk, pinning Shaghad to it.",
+      "explanation_fa": "شغاد تنه‌ی درختی بینِ خودش و رستم قرار داد، باور کرد که حفاظتِ کافی است. رستمِ در حالِ مرگ تیرش را کاملاً از میانِ تنه‌ی درخت شلیک کرد و شغاد را به آن کوبید.",
+      "explanation_tg": "Шағод танаи дарахте байни худ ва Рустам гузошт, бовар кард ки ҳимояи кофист. Рустами дар ҳоли марг тирашро комилан аз миёни танаи дарахт шут кард ва Шағодро ба он кӯфт.",
       "reward": {
         "xp": 250,
         "real": 115
@@ -283,103 +248,138 @@
     {
       "id": "re-m5",
       "chapter_slug": "rostams-end",
-      "quiz_part": 9,
+      "quiz_part": 5,
       "difficulty": "medium",
-      "question": "The Shahnameh says Rostam was 'the force that held the kingdom together when its kings could not hold themselves together' across five generations. Which five are named?",
-      "question_fa": "شاهنامه می‌گوید رستم 'نیرویی بود که پادشاهی را نگه می‌داشت وقتی شاهانش نمی‌توانستند خود را نگه دارند' در طولِ پنج نسل. کدام پنج نفر نام برده می‌شوند؟",
-      "question_tg": "Шоҳнома мегӯяд Рустам 'нерӯе буд ки подшоҳиро нигоҳ медошт вақте ки подшоҳонаш худашонро нигоҳ дошта наметавонистанд' дар тӯли панҷ насл. Кадом панҷ нафар ном бурда мешаванд?",
+      "question": "Rostam's homeland Zabolestan faced destruction after his death. Who destroyed it?",
+      "question_fa": "زابلستانِ وطنِ رستم پس از مرگش با نابودی روبرو شد. چه کسی آن را نابود کرد؟",
+      "question_tg": "Зобулистони ватани Рустам пас аз маргаш бо нобудӣ рӯбарӯ шуд. Кӣ онро нобуд кард?",
       "answers": [
-        "Keyumars, Manuchehr, Kay Kavus, Kay Khosrow, and Goshtasp — the lineage spanning the chronicle's mythological and heroic ages",
-        "Sam, Zal, Rostam, Faramarz, and Darab — the house of Nariman across generations",
-        "Kay Kavus, Sohrab, Siavash, Kay Khosrow, and Esfandiyar — the Shahnameh's great tragic figures",
-        "Hushang, Tahmuras, Jamshid, Fereydun, and Manuchehr — the early kings of the chronicle"
+        "Afrasiab's successors",
+        "The Arab conquest",
+        "Bahman, son of Esfandiyar",
+        "Arjasp, king of Turan"
       ],
       "answers_fa": [
-        "کیومرث، منوچهر، کی‌کاووس، کی‌خسرو، و گشتاسپ — نسب‌نامه‌ای که عصرِ اساطیری و قهرمانیِ شاهنامه را در بر می‌گیرد",
-        "سام، زال، رستم، فرامرز، و داراب — خانه‌ی نریمان در طولِ نسل‌ها",
-        "کی‌کاووس، سهراب، سیاوش، کی‌خسرو، و اسفندیار — چهره‌های تراژیکِ بزرگِ شاهنامه",
-        "هوشنگ، طهمورث، جمشید، فریدون، و منوچهر — شاهانِ اولیه‌ی شاهنامه"
+        "جانشینانِ افراسیاب",
+        "فتحِ عرب",
+        "بهمن، پسرِ اسفندیار",
+        "ارجاسپ، شاهِ توران"
       ],
       "answers_tg": [
-        "Каюмарс, Манучеҳр, Кайковус, Кай Хусрав ва Гуштосп — ансоби ки асри асотирӣ ва қаҳрамонии Шоҳномаро дар бар мегирад",
-        "Сом, Зол, Рустам, Фаромарз ва Дороб — хонаи Наримон дар тӯли наслҳо",
-        "Кайковус, Суҳроб, Сиёвуш, Кай Хусрав ва Исфандиёр — чеҳраҳои трагикии бузурги Шоҳнома",
-        "Ҳушанг, Таҳмурос, Ҷамшед, Фаридун ва Манучеҳр — подшоҳони аввалаи Шоҳнома"
+        "Вориёни Афросиёб",
+        "Фатҳи арабӣ",
+        "Баҳман, писари Исфандиёр",
+        "Арҷосп, шоҳи Турон"
       ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh's account of Rostam's death explicitly names five generations through whom he served as the kingdom's structural guarantee: Keyumars at the chronicle's opening, Manuchehr during the Zahhak aftermath, Kay Kavus whose recklessness required constant rescue, Kay Khosrow, and the Goshtasp-Esfandiyar era that ended with Rostam's own mortal wounding and now his death.",
-      "explanation_fa": "روایتِ شاهنامه از مرگِ رستم صریحاً پنج نسلی را نام می‌برد که رستم در طولِ آن‌ها به عنوانِ ضمانتِ ساختاریِ پادشاهی خدمت کرد: کیومرث در ابتدای شاهنامه، منوچهر در دوران پسازِ ضحاک، کی‌کاووس که بی‌احتیاطی‌اش به نجاتِ مداوم نیاز داشت، کی‌خسرو، و دورانِ گشتاسپ-اسفندیار که با زخمِ کشنده‌ی خودِ رستم و حالا مرگش پایان یافت.",
-      "explanation_tg": "Равояти Шоҳнома аз марги Рустам صарехан панҷ наслеро ном мебарад ки Рустам дар тӯли онҳо ҳамчун кафолати сохторӣ хидмат кард: Каюмарс дар оғози Шоҳнома, Манучеҳр дар давраи пас аз Заҳҳок, Кайковус ки бе эҳтиётиаш ба наҷоти мудовим ниёз дошт, Кай Хусрав, ва давраи Гуштосп-Исфандиёр ки бо захми ҳалокатовари Рустам ва ҳоло марги ӯ поён ёфт.",
+      "correct_answer": 2,
+      "explanation": "Bahman, Esfandiyar's son, destroyed Zabolestan as an act of grief converted to policy — punishing the land of the man who killed his father. What was destroyed was not just a place but a lineage that had sustained Iranian kingship.",
+      "explanation_fa": "بهمن، پسرِ اسفندیار، زابلستان را به عنوانِ عملی از اندوهِ تبدیل‌شده به سیاست نابود کرد — مجازاتِ سرزمینِ مردی که پدرش را کشته. آنچه نابود شد نه فقط یک مکان بلکه یک سلاله بود.",
+      "explanation_tg": "Баҳман, писари Исфандиёр, Зобулистонро ба унвони амале аз андӯҳи табдилшуда ба сиёсат нобуд кард — мазозоти сарзамини марде ки падарашро куштааст. Он чи нобуд шуд на танҳо як ҷой балки як сулола буд.",
       "reward": {
-        "xp": 270,
-        "real": 125
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "re-h1",
+      "chapter_slug": "rostams-end",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "The Shahnameh gives Shaghad minimal characterisation — he is defined almost entirely by his act. What does this deliberate choice signal?",
+      "question_fa": "شاهنامه به شغاد مشخصه‌پردازیِ کم‌حجمی می‌دهد — او تقریباً کاملاً توسطِ عملش تعریف می‌شود. این انتخابِ عمدی چه چیزی نشان می‌دهد؟",
+      "question_tg": "Шоҳнома ба Шағод мушаххасасозии камҳаҷмие медиҳад — ӯ қариб комилан тавассути амалаш таърифмешавад. Ин интихоби қасдӣ чиро нишон медиҳад?",
+      "answers": [
+        "Ferdowsi lacked historical information about Shaghad",
+        "Shaghad's inner life is deliberately left ambiguous for the reader to imagine",
+        "Minor characters always receive less characterisation in epic poetry",
+        "Betrayal needs no complex motivation — what matters is the act and its consequences, not the betrayer's inner life"
+      ],
+      "answers_fa": [
+        "فردوسی اطلاعاتِ تاریخی درباره‌ی شغاد نداشت",
+        "زندگیِ درونیِ شغاد عمداً برای تصوراتِ خواننده مبهم گذاشته شده",
+        "شخصیت‌های فرعی همیشه در شعرِ حماسی مشخصه‌پردازیِ کمتری دریافت می‌کنند",
+        "خیانت به انگیزه‌ی پیچیده‌ای نیاز ندارد — آنچه مهم است عمل و پیامدهایش است، نه زندگیِ درونیِ خائن"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ маълумоти таърихӣ дар бораи Шағод надошт",
+        "Зиндагии дарунии Шағод қасдан барои тасаввуроти хонанда мубҳам гузошта шудааст",
+        "Персонажҳои фаръӣ ҳамеша дар шеъри ҳамосӣ мушаххасасозии камтаре мегиранд",
+        "Хиёнат ба ангезаи мураккабе ниёз надорад — он чи муҳим аст амал ва оқибатҳояш аст, на зиндагии дарунии хоин"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh deliberately minimises Shaghad's inner life because the chronicle's judgment is already complete. What Shaghad did is all that needs recording. The act defines the man; the man does not complicate the act. This is the Shahnameh's way of delivering its harshest moral verdict.",
+      "explanation_fa": "شاهنامه عمداً زندگیِ درونیِ شغاد را به حداقل می‌رساند چون حکمِ شاهنامه قبلاً کامل است. آنچه شغاد کرد تمام چیزی است که باید ثبت شود. عمل مرد را تعریف می‌کند؛ مرد عمل را پیچیده نمی‌کند.",
+      "explanation_tg": "Шоҳнома қасдан зиндагии дарунии Шағодро ба ҳадди ақал мерасонад зеро ҳукми Шоҳнома қаблан комил аст. Он чи Шағод кард ҳамаи чизест ки бояд сабт шавад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     },
     {
       "id": "re-h2",
       "chapter_slug": "rostams-end",
-      "quiz_part": 10,
+      "quiz_part": 2,
       "difficulty": "hard",
-      "question": "Rostam's last act — shooting the arrow that pins Shaghad to a tree — is presented without moral commentary. What does the Shahnameh's silence about whether this is justice or vengeance accomplish?",
-      "question_fa": "آخرین عملِ رستم — انداختنِ تیری که شاغاد را به درخت می‌دوزد — بدونِ نظرِ اخلاقی عرضه می‌شود. سکوتِ شاهنامه درباره‌ی اینکه آیا این عدالت است یا انتقام چه می‌کند؟",
-      "question_tg": "Охирин амали Рустам — андохтани тире ки Шоғодро ба дарахт медӯзад — бидуни назари ахлоқӣ муаррифӣ мешавад. Хомӯшии Шоҳнома дар бораи ин ки оё ин адолат аст ё интиқом чӣ мекунад?",
+      "question": "Rostam kills Shaghad with his last arrow through a tree. The Shahnameh calls the dying man 'more clever than the living traitor.' What does this reversal prove?",
+      "question_fa": "رستم شغاد را با آخرین تیرش از پشتِ درخت می‌کشد. شاهنامه مردِ در حالِ مرگ را «از خائنِ زنده باهوش‌تر» می‌نامد. این وارونگی چه چیزی ثابت می‌کند؟",
+      "question_tg": "Рустам Шағодро бо охирин тираш аз паси дарахт мекушад. Шоҳнома мурди дар ҳоли маргро «аз хоини зинда зирактар» меномад. Ин ваворонагӣ чиро исбот мекунад?",
       "answers": [
-        "It preserves Rostam's agency without requiring the reader to judge it — his last act is neither condemned nor endorsed; it simply is what a man like Rostam does with the last thing he has",
-        "It suggests that the Shahnameh considers all killing in this sequence morally equivalent — the trap and the arrow are symmetrical acts",
-        "It reflects Ferdowsi's uncertainty about how to frame extrajudicial killing in a text that endorses royal authority",
-        "It leaves the question open for the reader to answer, which is the Shahnameh's standard technique for unresolved moral situations"
+        "Treachery requires superiority — Shaghad could only defeat Rostam through a pit, never through cunning or strength, and even dying Rostam outmanoeuvred him",
+        "Rostam was immortal and could not truly die",
+        "Dying heroes always get a final act of revenge in Persian epic poetry",
+        "The Shahnameh rewards physical strength above all other qualities"
       ],
       "answers_fa": [
-        "اختیارِ رستم را حفظ می‌کند بدونِ اینکه خواننده را مجبور به قضاوت کند — آخرین عملش نه محکوم می‌شود نه تأیید؛ صرفاً چیزی است که مردی مثلِ رستم با آخرین چیزی که دارد انجام می‌دهد",
-        "نشان می‌دهد که شاهنامه همه‌ی کشتن در این توالی را اخلاقاً معادل می‌داند — تله و تیر اعمالِ متقارن هستند",
-        "بی‌اطمینانیِ فردوسی را درباره‌ی اینکه چگونه کشتنِ خارج از قانون را در متنی که اقتدارِ سلطنتی را تأیید می‌کند قاب‌بندی کند، بازتاب می‌دهد",
-        "سؤال را برای پاسخِ خواننده باز می‌گذارد، که تکنیکِ استاندارداِ شاهنامه برای موقعیت‌های اخلاقیِ حل‌نشده است"
+        "خیانت به برتری نیاز دارد — شغاد فقط از طریقِ چاه می‌توانست رستم را شکست دهد، نه با حیله یا قدرت، و حتی رستمِ در حالِ مرگ از او بهتر بازی کرد",
+        "رستم جاودانه بود و نمی‌توانست واقعاً بمیرد",
+        "قهرمانانِ در حالِ مرگ همیشه در شعرِ حماسیِ فارسی یک عملِ نهاییِ انتقام دریافت می‌کنند",
+        "شاهنامه قدرتِ جسمانی را بالاتر از هر ویژگیِ دیگری پاداش می‌دهد"
       ],
       "answers_tg": [
-        "Ихтиёри Рустамро ҳифз мекунад бидуни ин ки хонандаро маҷбур ба доварӣ кунад — охирин амалаш на маҳкум мешавад на тасдиқ; садоқатан чизест ки марде монанди Рустам бо охирин чизе ки дорад анҷом медиҳад",
-        "Нишон медиҳад ки Шоҳнома ҳамаи куштан дар ин тавалиро аз назари ахлоқӣ баробар меҳисобад",
-        "Нонимуинии Фирдавсӣро дар бораи тарзи қаббандии куштани берун аз қонун инъикос мекунад",
-        "Масъаларо барои посухи хонанда боз мегузорад, ки услуби стандарти Шоҳнома барои мавзӯоти ахлоқии ҳалнашуда аст"
+        "Хиёнат ба бартарӣ ниёз дорад — Шағод танҳо тавассути чоҳ метавонист Рустамро шикаст диҳад, на бо найранг ё қудрат, ва ҳатто Рустами дар ҳоли марг аз ӯ беҳтар бозӣ кард",
+        "Рустам ҷовидон буд ва наметавонист воқеан бимирад",
+        "Қаҳрамонони дар ҳоли марг ҳамеша дар шеъри ҳамосии форсӣ як амали ниҳоии интиқом мегиранд",
+        "Шоҳнома қудрати ҷисмониро аз ҳама сифатҳои дигар баландтар мукофот медиҳад"
       ],
       "correct_answer": 0,
-      "explanation": "The Shahnameh presents Rostam reaching for the bow and shooting as an extension of who he is, not as a decision requiring justification. The absence of moral commentary is itself the statement: this is what agency looks like at the end of everything. Rostam does not repent, forgive, or reflect — he acts, one last time, because acting is what he has always done.",
-      "explanation_fa": "شاهنامه رستم را در حالِ دست بردن به کمان و تیر انداختن به عنوانِ امتدادِ هویتش عرضه می‌کند، نه به عنوانِ تصمیمی که نیازِ توجیه داشته باشد. غیابِ نظرِ اخلاقی خودش بیانیه است: اختیار در پایانِ همه چیز این شکل دارد. رستم توبه نمی‌کند، نمی‌بخشد، و تأمل نمی‌کند — عمل می‌کند، آخرین بار، چون عمل کردن همیشه کارِ او بوده است.",
-      "explanation_tg": "Шоҳнома Рустамро дар ҳоли дасти камон бурдан ва тир андохтан ҳамчун идомаи ҳувияташ муаррифӣ мекунад, на ҳамчун тасмиме ки ниёзи тасвиб дошта бошад. Ғиёби назари ахлоқӣ худаш баёния аст: ихтиёр дар поёни ҳама чиз ин шакл дорад. Рустам тавба намекунад, намебахшад ва тааммул намекунад — амал мекунад, охирин бор, зеро амал кардан ҳамеша кори ӯ будааст.",
+      "explanation": "Shaghad's entire strategy depended on avoiding a direct confrontation. He could not defeat Rostam in open combat, in cleverness, or in moral standing. Even in the pit, dying, Rostam used guile — the pretence of shooting animals — to obtain his weapon. The reversal is the chronicle's verdict: betrayal is not superiority.",
+      "explanation_fa": "تمامِ استراتژیِ شغاد به اجتنابِ از رویاروییِ مستقیم بستگی داشت. نمی‌توانست رستم را در نبردِ باز، در زیرکی، یا در موقعیتِ اخلاقی شکست دهد. حتی در چاه، در حالِ مرگ، رستم از حیله استفاده کرد تا سلاحش را به دست آورد. این وارونگی حکمِ شاهنامه است: خیانت برتری نیست.",
+      "explanation_tg": "Тамоми стратегии Шағод ба иҷтиноб аз рӯёрӯии мустақим вобаста буд. Наметавонист Рустамро дар набарди боз, дар зиракӣ, ё дар мавқеи ахлоқӣ шикаст диҳад. Ҳатто дар чоҳ, дар ҳоли марг, Рустам аз найранг истифода кард то силоҳашро ба даст орад.",
       "reward": {
-        "xp": 310,
-        "real": 145
+        "xp": 330,
+        "real": 155
       }
     },
     {
       "id": "re-h3",
       "chapter_slug": "rostams-end",
-      "quiz_part": 11,
+      "quiz_part": 3,
       "difficulty": "hard",
-      "question": "Rakhsh had carried Rostam through the seven labours, through Sohrab, through Esfandiyar. His hesitation at the edge of the covered pit is the last thing he does before both fall. What does the Shahnameh make of his final warning?",
-      "question_fa": "رخش رستم را از هفت‌خان، از سهراب، از اسفندیار گذراند. توقفش در لبه‌ی چاهِ مخفی آخرین چیزی است که انجام می‌دهد قبل از اینکه هر دو بیفتند. شاهنامه از هشدارِ نهاییش چه می‌سازد؟",
-      "question_tg": "Рахш Рустамро аз ҳафтхон, аз Суҳроб, аз Исфандиёр гузаронд. Таваккуфаш дар канори чоҳи пинҳон охирин чизест ки анҷом медиҳад пеш аз он ки ҳарду биафтанд. Шоҳнома аз огоҳии ниҳоияш чӣ месозад?",
+      "question": "The Shahnameh describes Shaghad's preparation as methodical. Why is this specific detail — premeditation — so important to the chronicle's moral judgement?",
+      "question_fa": "شاهنامه آمادگیِ شغاد را روشمند توصیف می‌کند. چرا این جزئیتِ خاص — از پیش اندیشیده‌شدن — برای حکمِ اخلاقیِ شاهنامه اینقدر مهم است؟",
+      "question_tg": "Шоҳнома омодагии Шағодро методикӣ тавсиф мекунад. Чаро ин тафсилоти хос — аз пеш андешидашудан — барои ҳукми ахлоқии Шоҳнома инқадар муҳим аст?",
       "answers": [
-        "It treats the hesitation as real knowledge that Rostam overrides — the horse was right, and the rider's authority to spur him forward becomes the act that ends both their lives",
-        "It treats the hesitation as instinctual fear that Rakhsh's training eventually overcomes when spurred",
-        "It suggests the hesitation was a divine sign that Rostam correctly interpreted as a test of courage",
-        "It presents the hesitation ambiguously, leaving open whether Rakhsh actually sensed the trap or was simply startled"
+        "It demonstrates that Shaghad received help from Turan in planning the betrayal",
+        "Methodical preparation shows Shaghad was a capable military strategist",
+        "The Shahnameh rewards detailed planning regardless of its moral context",
+        "It proves this was planned murder, not a crime of passion — removing any possible mitigation"
       ],
       "answers_fa": [
-        "توقف را دانشِ واقعی می‌انگارد که رستم نادیده می‌گیرد — اسب درست می‌دانست، و اقتدارِ سوارکار برای مهمیز زدن به او تبدیل به عملی می‌شود که زندگیِ هر دو را پایان می‌دهد",
-        "توقف را ترسِ غریزی می‌انگارد که آموزشِ رخش سرانجام وقتی مهمیز می‌خورد بر آن غلبه می‌کند",
-        "نشان می‌دهد توقف نشانه‌ای الهی بود که رستم درست به عنوانِ آزمونِ شجاعت تفسیر کرد",
-        "توقف را مبهم عرضه می‌کند، این سؤال را باز می‌گذارد که آیا رخش واقعاً دام را حس کرد یا فقط ترسید"
+        "نشان می‌دهد شغاد در برنامه‌ریزیِ خیانت از توران کمک گرفت",
+        "آمادگیِ روشمند نشان می‌دهد شغاد یک استراتژیستِ نظامیِ توانا بود",
+        "شاهنامه صرف‌نظر از زمینه‌ی اخلاقی‌اش به برنامه‌ریزیِ دقیق پاداش می‌دهد",
+        "ثابت می‌کند این قتلِ از پیش اندیشیده بود، نه جرمِ عاطفی — هر تخفیفِ احتمالی را حذف می‌کند"
       ],
       "answers_tg": [
-        "Таваккуфро донишии воқеӣ меҳисобад ки Рустам нодида мегирад — асп дуруст медонист ва ихтиёри саворкор барои тозиёна задан ба ӯ табдил ба амале мешавад ки зиндагии ҳар дуйро поён медиҳад",
-        "Таваккуфро тарси ғаризӣ меҳисобад ки омӯзиши Рахш дар ниҳоят вақти тозиёна хӯрдан бар он ғолиб меояд",
-        "Нишон медиҳад таваккуф нишонае илоҳӣ буд ки Рустам дуруст ҳамчун озмуни шуҷоат тафсир кард",
-        "Таваккуфро мубҳам муаррифӣ мекунад, ин масъаларо боз мегузорад ки оё Рахш воқеан домро ҳис кард ё танҳо тарсид"
+        "Нишон медиҳад Шағод дар банднакшии хиёнат аз Турон кӯмак гирифт",
+        "Омодагии методикӣ нишон медиҳад Шағод стратеги нظами тавоное буд",
+        "Шоҳнома сарфи назар аз заминаи ахлоқии он ба банднакшии дақиқ мукофот медиҳад",
+        "Исбот мекунад ки ин қатли аз пеш андешида буд, на ҷинояти эҳсосотӣ — ҳар тахфифи эҳтимолиро ҳазф мекунад"
       ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh says Rakhsh's hesitation was not animal fear. It had carried Rostam through seven labours, through Sohrab, through Esfandiyar — through every crisis the chronicle had constructed. This was a horse's knowledge of the ground. Rostam spurred him forward anyway. The act of overriding that knowledge is what kills them both — not a failure of courage, but a failure of the hierarchical relationship to recognize that this time the horse was right.",
-      "explanation_fa": "شاهنامه می‌گوید توقفِ رخش ترسِ حیوانی نبود. رستم را از هفت‌خان، از سهراب، از اسفندیار گذرانده بود — از هر بحرانی که شاهنامه ساخته بود. این دانشِ اسب از زمین بود. رستم با این حال مهمیز زد. عملِ نادیده گرفتنِ آن دانش چیزی است که هر دو را می‌کشد — نه شکستِ شجاعت، بلکه شکستِ رابطه‌ی سلسله‌مراتبی در تشخیصِ این نکته که این بار اسب درست می‌دانست.",
-      "explanation_tg": "Шоҳнома мегӯяд таваккуфи Рахш тарси ҳайвонӣ набуд. Рустамро аз ҳафтхон, аз Суҳроб, аз Исфандиёр гузаронда буд — аз ҳар буҳроне ки Шоҳнома сохта буд. Ин донишии асп аз замин буд. Рустам бо ин ҳол тозиёна зад. Амали нодида гирифтани он дониш чизест ки ҳар дуйро мекушад.",
+      "correct_answer": 3,
+      "explanation": "The Shahnameh specifies that Shaghad's preparation was methodical — every step deliberate — because methodical preparation removes the one possible mitigation: that the act was impulsive, driven by a moment of weakness or rage. This was not. This was chosen, planned, and executed. The moral verdict is therefore complete.",
+      "explanation_fa": "شاهنامه مشخص می‌کند که آمادگیِ شغاد روشمند بود — هر گامِ عمدی — چون آمادگیِ روشمند تنها تخفیفِ احتمالی را حذف می‌کند: که عمل بی‌تدبیرانه بود، ناشی از لحظه‌ای از ضعف یا خشم. این‌گونه نبود. این انتخاب، برنامه‌ریزی، و اجرا شد.",
+      "explanation_tg": "Шоҳнома мушаххас мекунад ки омодагии Шағод методикӣ буд — ҳар гоми қасдӣ — зеро омодагии методикӣ ягона тахфифи эҳтимолиро ҳазф мекунад: ки амал беандеша буд. Ин гуна набуд. Ин интихоб, банднакшӣ, ва иҷро шуд.",
       "reward": {
         "xp": 330,
         "real": 155
@@ -388,176 +388,176 @@
     {
       "id": "re-h4",
       "chapter_slug": "rostams-end",
-      "quiz_part": 12,
+      "quiz_part": 4,
       "difficulty": "hard",
-      "question": "Both Sohrab and Rostam die without the understanding they needed — Sohrab without knowing his killer is his father, Rostam without suspecting his half-brother's trap. What structural pattern does the Shahnameh use in both deaths?",
-      "question_fa": "هم سهراب و هم رستم بدونِ درکی که نیاز داشتند می‌میرند — سهراب بدونِ اینکه بداند قاتلش پدرش است، رستم بدونِ اینکه به تله‌ی ناتنی‌برادرش شک کند. شاهنامه در هر دو مرگ از چه الگوی ساختاری استفاده می‌کند؟",
-      "question_tg": "Ҳам Суҳроб ва ҳам Рустам бидуни дарке ки ниёз доштанд мемиранд — Суҳроб бидуни ин ки бидонад қотилаш падараш аст, Рустам бидуни ин ки ба дамони бародари ногатанияш гумон кунад. Шоҳнома дар ҳар ду марг аз кадом намунаи сохторӣ истифода мекунад?",
+      "question": "The Shahnameh continues after Rostam's death through the Sasanian chapters and Arab conquest. What is the chronicle's relationship to the world AFTER Rostam compared to before?",
+      "question_fa": "شاهنامه پس از مرگِ رستم از طریقِ فصل‌های ساسانی و فتحِ عرب ادامه می‌یابد. رابطه‌ی شاهنامه با دنیا پس از رستم در مقایسه با قبل چیست؟",
+      "question_tg": "Шоҳнома пас аз марги Рустам тавассути боб-ҳои Сосонӣ ва фатҳи арабӣ идома меёбад. Муносибати Шоҳнома бо дунё пас аз Рустам дар муқоиса бо пеш чист?",
       "answers": [
-        "Both deaths turn on information that arrives too late — in each case, a relationship is the weapon, and the person being killed cannot defend against what he cannot see in the person attacking him",
-        "Both deaths involve Rostam directly — he kills Sohrab and is killed by Shaghad in the same generation",
-        "Both deaths are preceded by a divine warning that is ignored — Sohrab's by an omen, Rostam's by Rakhsh",
-        "Both deaths are followed by extended lamentations that the Shahnameh uses to slow the narrative"
+        "The chronicle improves — the Sasanian chapters are Ferdowsi's finest writing",
+        "The chronicle's grandest physical presence is simply absent — what follows is history rather than heroism at its fullest",
+        "The chronicle becomes more political and less about individual greatness",
+        "The world becomes safer — without Rostam to attract danger, fewer catastrophes happen"
       ],
       "answers_fa": [
-        "هر دو مرگ به اطلاعاتی وابسته‌اند که دیر می‌رسد — در هر مورد، رابطه سلاح است، و شخصی که دارد کشته می‌شود نمی‌تواند در برابرِ آنچه در مهاجم نمی‌بیند دفاع کند",
-        "هر دو مرگ مستقیماً شاملِ رستم می‌شوند — او سهراب را می‌کشد و توسطِ شاغاد در همان نسل کشته می‌شود",
-        "هر دو مرگ با هشدارِ الهی‌ای که نادیده گرفته می‌شود پیش می‌روند — مرگِ سهراب با فالِ بد، مرگِ رستم با رخش",
-        "هر دو مرگ با شیون و زاری‌های طولانی دنبال می‌شوند که شاهنامه برای کند کردنِ روایت استفاده می‌کند"
+        "شاهنامه بهبود می‌یابد — فصل‌های ساسانی بهترین نوشته‌های فردوسی هستند",
+        "بزرگ‌ترین حضورِ فیزیکیِ شاهنامه صرفاً غایب است — آنچه دنبال می‌آید تاریخ است نه پهلوانی در کامل‌ترین حالتش",
+        "شاهنامه سیاسی‌تر می‌شود و کمتر درباره‌ی عظمتِ فردی است",
+        "دنیا امن‌تر می‌شود — بدون رستم که خطر را جذب کند، فاجعه‌های کمتری اتفاق می‌افتد"
       ],
       "answers_tg": [
-        "Ҳар ду марг ба маълумоте вобастаанд ки дер мерасад — дар ҳар мавред, рабита аст ки силоҳ аст ва шахсе ки дар ҳоли кушта шудан аст наметавонад дар муқобили он чи дар мухолиф намебинад дифоъ кунад",
-        "Ҳар ду марг мустақиман Рустамро дар бар мегиранд — ӯ Суҳробро мекушад ва аз Шоғод дар ҳамон насл кушта мешавад",
-        "Ҳар ду марг бо огоҳии илоҳие ки нодида гирифта мешавад пеш мераванд",
-        "Ҳар ду марг бо нолаҳои тӯлонӣ дунбол мешаванд ки Шоҳнома барои сусткунии равоят истифода мекунад"
+        "Шоҳнома беҳтар мешавад — боб-ҳои Сосонӣ беҳтарин навиштаҳои Фирдавсӣ ҳастанд",
+        "Бузургтарин ҳузури ҷисмонии Шоҳнома соддагӣ ғоиб аст — он чи дунбол меояд таърих аст на паҳлавонӣ дар комилтарин ҳолаташ",
+        "Шоҳнома сиёситар мешавад ва камтар дар бораи азамати фардӣ аст",
+        "Дунё амнтар мешавад — бидуни Рустам ки хатарро ҷалб кунад, фоҷиаҳои камтаре иттифоқ меафтад"
       ],
-      "correct_answer": 0,
-      "explanation": "In Sohrab's death, Rostam cannot see his son in the enemy — the relationship is hidden. In Rostam's death, Rostam cannot see his enemy in his half-brother — the relationship is weaponized. Both deaths use the same device: a bond that should protect instead destroys, and the destruction is complete because the bond was invisible or disguised.",
-      "explanation_fa": "در مرگِ سهراب، رستم نمی‌تواند فرزندش را در دشمن ببیند — رابطه پنهان است. در مرگِ رستم، رستم نمی‌تواند دشمنش را در ناتنی‌برادرش ببیند — رابطه به سلاح تبدیل شده. هر دو مرگ از همان ابزار استفاده می‌کنند: پیوندی که باید حفاظت کند در عوض نابود می‌کند، و نابودی کامل است چون پیوند نادیده یا پنهان بود.",
-      "explanation_tg": "Дар марги Суҳроб, Рустам писарашро дар душман намебинад — рабита пинҳон аст. Дар марги Рустам, Рустам душманашро дар бародари ногатанияш намебинад — рабита ба силоҳ табдил шудааст. Ҳар ду марг аз ҳамон абзор истифода мекунанд: пайванде ки бояд ҳифозат кунад балки нобуд мекунад.",
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's relationship to the world changes with Rostam's death. He was the chronicle's largest presence — physically and morally unmatched, always the final resort when the world needed saving. The Sasanian chapters are excellent, but they operate in a different register: kings and courts and historical process, not the kind of individual heroic force that moved mountains.",
+      "explanation_fa": "رابطه‌ی شاهنامه با دنیا با مرگِ رستم تغییر می‌کند. او بزرگ‌ترین حضورِ شاهنامه بود — از نظرِ جسمانی و اخلاقی بی‌نظیر، همیشه آخرین راهِ چاره وقتی دنیا نیاز به نجات داشت. فصل‌های ساسانی عالی هستند، اما در طرزِ بیانِ متفاوتی کار می‌کنند.",
+      "explanation_tg": "Муносибати Шоҳнома бо дунё бо марги Рустам тағйир мекунад. Ӯ бузургтарин ҳузури Шоҳнома буд — аз назари ҷисмонӣ ва ахлоқӣ бемонанд, ҳамеша охирин роҳи чора вақте дунё ба наҷот ниёз дошт.",
       "reward": {
-        "xp": 350,
-        "real": 165
+        "xp": 330,
+        "real": 155
       }
     },
     {
       "id": "re-h5",
       "chapter_slug": "rostams-end",
-      "quiz_part": 13,
+      "quiz_part": 5,
       "difficulty": "hard",
-      "question": "The Shahnameh 'does not describe a long ceremony' for Rostam's burial and 'does not linger' at the place where he is laid. What does this extreme restraint accomplish that an elaborate elegy could not?",
-      "question_fa": "شاهنامه 'مراسمِ طولانی توصیف نمی‌کند' برای دفنِ رستم و 'درنگ نمی‌کند' در مکانی که او را می‌گذارند. این خویشتن‌داریِ شدید چه چیزی می‌کند که مرثیه‌ی پیچیده نمی‌توانست؟",
-      "question_tg": "Шоҳнома 'маросими тӯлониро тавсиф намекунад' барои дафни Рустам ва 'таваккуф намекунад' дар маконе ки ӯро мегузоранд. Ин худдории шадид чӣ мекунад ки мarsiyai мукаммал карда наметавонист?",
+      "question": "Rostam has survived battles with demons, dragons, white whales, and the greatest warriors of Turan. Why is it significant that he dies to a pit dug by a half-brother rather than in open combat?",
+      "question_fa": "رستم از نبردها با دیوها، اژدهاها، نهنگ‌های سفید، و بزرگ‌ترین جنگجویانِ توران جان سالم به در برده. چرا اهمیت دارد که او به چاهی که توسطِ برادرِ ناتنی‌اش کنده شده می‌میرد نه در نبردِ باز؟",
+      "question_tg": "Рустам аз набардҳо бо девон, аждаҳоҳо, наҳангҳои сафед, ва бузургтарин ҷангҷӯёни Турон ҷон салим ба дар бурдааст. Чаро аҳамият дорад ки ӯ ба чоҳе ки тавассути бародари нотании ӯ кандашуда мемирад на дар набарди боз?",
       "answers": [
-        "The silence enacts the loss rather than describing it — after five generations of the Shahnameh built around Rostam, the chronicle simply cannot continue at that place, and moving forward quickly is its only honest response to what has ended",
-        "It reflects the warriors' inability to grieve openly, which the Shahnameh presents as the proper masculine response to loss",
-        "It shows that the Shahnameh considered elaborate funerals inappropriate for a man who died by treachery rather than in battle",
-        "The brevity is a technical choice driven by the poem's meter — extended lamentations in this section were metrically difficult"
+        "No enemy strong enough to defeat him in open combat existed — only treachery could reach him, showing where the Shahnameh believes real danger comes from",
+        "The Shahnameh uses the pit to symbolise the underworld claiming Rostam",
+        "Dying to treachery was considered more honourable than dying in battle in Persian culture",
+        "It shows Rostam's physical powers were failing in his old age"
       ],
       "answers_fa": [
-        "سکوت از دست دادن را به جای توصیف کردن، تجسم می‌بخشد — پس از پنج نسلِ شاهنامه که حولِ رستم ساخته شده بود، شاهنامه صرفاً نمی‌تواند در آن مکان ادامه دهد، و سریع ادامه دادن تنها پاسخِ صادقانه‌اش به آنچه پایان یافته است",
-        "بی‌توانیِ جنگجویان را برای سوگواریِ آشکار بازتاب می‌دهد، که شاهنامه آن را به عنوانِ پاسخِ مردانه‌ی مناسب به از دست دادن عرضه می‌کند",
-        "نشان می‌دهد که شاهنامه مراسمِ دفنِ گسترده را برای مردی که از طریقِ خیانت به جای نبرد مُرد نامناسب می‌دانست",
-        "اختصار یک انتخابِ فنی است که توسطِ وزنِ شعر هدایت می‌شود — زاری‌های طولانی در این بخش از نظرِ وزنی دشوار بودند"
+        "هیچ دشمنی به اندازه‌ی کافی قوی برای شکست دادنش در نبردِ باز وجود نداشت — فقط خیانت می‌توانست به او برسد، که نشان می‌دهد شاهنامه باور دارد خطرِ واقعی از کجا می‌آید",
+        "شاهنامه از چاه استفاده می‌کند تا جهانِ زیرین را نمادسازی کند که رستم را می‌گیرد",
+        "مردن از خیانت در فرهنگِ فارسی شرافتمندانه‌تر از مردن در نبرد محسوب می‌شد",
+        "نشان می‌دهد قدرت‌های جسمانیِ رستم در پیریِ او در حالِ کاهش بود"
       ],
       "answers_tg": [
-        "Хомӯшӣ аз даст додан рo ба ҷои тавсиф кардан, таҷассум мебахшад — пас аз панҷ насли Шоҳнома ки гирди Рустам сохта шуда буд, Шоҳнома садоқатан дар он макон идома дода наметавонад ва зуд идома додан ягона посухи ростини он ба он чи поён ёфтааст",
-        "Ноқудратии ҷанговаронро барои сӯгвории ошкоро инъикос мекунад, ки Шоҳнома онро ҳамчун посухи мардонаи муносиб ба аз даст додан муаррифӣ мекунад",
-        "Нишон медиҳад ки Шоҳнома маросими дафни васеъро барои марде ки тавассути хиёнат ба ҷои ҷанг мурд номуносиб меҳисобид",
-        "Ихтисор як интихоби техникӣ аст ки аз вазни шеър раҳнамоӣ мешавад"
+        "Ҳеч душмани ба қадри кофӣ қавӣ барои шикаст додани ӯ дар набарди боз вуҷуд надошт — танҳо хиёнат метавонист ба ӯ бирасад, ки нишон медиҳад Шоҳнома бовар дорад хатари воқеӣ аз куҷо меояд",
+        "Шоҳнома аз чоҳ истифода мекунад то ҷаҳони зеринро рамзсозӣ кунад ки Рустамро мегирад",
+        "Мурдан аз хиёнат дар фарҳанги форсӣ шарафмандонатар аз мурдан дар набард ҳисоб мешуд",
+        "Нишон медиҳад қудратҳои ҷисмонии Рустам дар пирии ӯ дар ҳоли коҳиш буд"
       ],
       "correct_answer": 0,
-      "explanation": "The Shahnameh's terse treatment of Rostam's burial is the elegy. Five generations of narrative had been organized around this figure — his birth required the Simorgh, his adolescence opened the heroic age, his campaigns sustained every king from Kay Kavus onward. The chronicle cannot produce language adequate to his absence. Moving on quickly, marking the place and continuing, is the only honest response it has.",
-      "explanation_fa": "برخوردِ مختصرِ شاهنامه با دفنِ رستم خودِ مرثیه است. پنج نسل از روایت حولِ این شخصیت سازمان‌دهی شده بود — تولدش به سیمرغ نیاز داشت، نوجوانی‌اش عصرِ قهرمانی را گشود، لشکرکشی‌هایش هر شاهی از کی‌کاووس به بعد را نگه داشت. شاهنامه نمی‌تواند زبانِ کافی برای غیابش بیاورد. ادامه دادنِ سریع، نشان دادنِ مکان و ادامه دادن، تنها پاسخِ صادقانه‌ای است که دارد.",
-      "explanation_tg": "Муомилаи мухтасари Шоҳнома бо дафни Рустам худ марсия аст. Панҷ насли равоят гирди ин шахсият ташкил шуда буд — таваллудаш ба Симурғ ниёз дошт, ҷавониаш асри қаҳрамониро кушод, лашкаркашиҳояш ҳар подшоҳеро аз Кайковус ба баъд нигоҳ дошт. Шоҳнома забони кофӣ барои ғиёбаш пайдо карда наметавонад. Зуд идома додан, нишон додани макон ва давом кардан, ягона посухи ростинест ки дорад.",
+      "explanation": "The Shahnameh's point is precise: no force in the world could match Rostam in open confrontation. The chronicle has demonstrated this for chapters. The only way to destroy Rostam was to avoid confronting him — to use treachery. This tells the reader that the real danger to the heroic world was never external force but internal betrayal.",
+      "explanation_fa": "نکته‌ی شاهنامه دقیق است: هیچ نیرویی در دنیا نمی‌توانست در رویاروییِ باز با رستم برابری کند. شاهنامه این را در طول فصل‌ها نشان داده. تنها راهِ نابودیِ رستم اجتنابِ از رویارویی با او بود — استفاده از خیانت. این به خواننده می‌گوید خطرِ واقعی برای دنیای پهلوانی هرگز نیروی خارجی بلکه خیانتِ داخلی بود.",
+      "explanation_tg": "Нукта‌и Шоҳнома дақиқ аст: ҳеч нирӯе дар дунё наметавонист дар рӯёрӯии боз бо Рустам баробарӣ кунад. Шоҳнома инро дар тӯли боб-ҳо нишон додааст. Танҳо роҳи нобудии Рустам иҷтиноб аз рӯёрӯие бо ӯ буд — истифода аз хиёнат.",
       "reward": {
-        "xp": 370,
-        "real": 175
+        "xp": 330,
+        "real": 155
       }
     },
     {
       "id": "re-h6",
       "chapter_slug": "rostams-end",
-      "quiz_part": 14,
+      "quiz_part": 6,
       "difficulty": "hard",
-      "question": "Shaghad's motivations are left completely unexplained. The Shahnameh simply notes that something 'curdled in him' over his years in Kabul, without saying what. What does this narrative choice accomplish?",
-      "question_fa": "انگیزه‌های شاغاد کاملاً ناتوضیح‌داده‌شده می‌مانند. شاهنامه صرفاً اشاره می‌کند که چیزی در طولِ سال‌هایش در کابل 'در او تغییر کرد'، بدونِ اینکه بگوید چه. این انتخابِ روایی چه می‌کند؟",
-      "question_tg": "Ангезаҳои Шоғод пурра бетавзеҳ мемонанд. Шоҳнома садоқатан ишора мекунад ки чизе дар тӯли солҳояш дар Кобул 'дар ӯ тағйир кард', бидуни ин ки бигӯяд чӣ. Ин интихоби равоятӣ чӣ мекунад?",
+      "question": "Rostam was born with the help of the Simorgh, raised in Zabolestan, and made Iran's greatest warrior. When he dies to a family betrayal, what does the Shahnameh suggest about the structure of tragedy?",
+      "question_fa": "رستم با کمکِ سیمرغ به دنیا آمد، در زابلستان بزرگ شد، و بزرگ‌ترین جنگجویِ ایران شد. وقتی در اثرِ خیانتِ خانوادگی می‌میرد، شاهنامه درباره‌ی ساختارِ تراژدی چه چیزی نشان می‌دهد؟",
+      "question_tg": "Рустам бо кӯмаки Симурғ ба дунё омад, дар Зобулистон калон шуд, ва бузургтарин ҷангҷӯи Эрон шуд. Вақте дар асари хиёнати оилавӣ мемирад, Шоҳнома дар бораи сохтори фоҷиа чиро нишон медиҳад?",
       "answers": [
-        "It makes the betrayal feel like a fact of the world rather than a personal failing — treachery arrives complete, not assembled from comprehensible motives, which is more frightening and more honest",
-        "It suggests that the Shahnameh considers Shaghad's motives to be obvious — any half-brother sent away from home would naturally seek revenge",
-        "It reflects a gap in Ferdowsi's sources — the oral tradition did not preserve Shaghad's perspective",
-        "It allows the audience to project their own understanding of jealousy and resentment onto the narrative"
+        "Supernatural assistance (the Simorgh) ultimately cannot protect against human treachery",
+        "The greatest threats come from inside, not outside — the world's greatest warrior was brought down not by any external enemy but by his own family",
+        "The Shahnameh presents Rostam's death as divine punishment for his hubris",
+        "Great heroes are always destined to die young"
       ],
       "answers_fa": [
-        "خیانت را مثلِ واقعیتِ جهان احساس می‌کند تا شکستِ شخصی — خیانت کامل می‌رسد، نه از انگیزه‌های قابلِ درک تجمیع شده، که هم ترسناک‌تر است و هم صادق‌تر",
-        "نشان می‌دهد که شاهنامه انگیزه‌های شاغاد را بدیهی می‌داند — هر ناتنی‌برادری که از خانه فرستاده شده باشد طبیعتاً انتقام می‌طلبد",
-        "شکافی را در منابعِ فردوسی بازتاب می‌دهد — سنتِ شفاهی دیدگاهِ شاغاد را حفظ نکرده بود",
-        "به مخاطب اجازه می‌دهد درکِ خودش را از حسادت و کینه بر روایت فرافکنی کند"
+        "کمکِ فراطبیعی (سیمرغ) در نهایت نمی‌تواند در برابرِ خیانتِ انسانی حفاظت کند",
+        "بزرگ‌ترین تهدیدها از درون می‌آیند، نه از بیرون — بزرگ‌ترین جنگجویِ دنیا نه توسطِ هیچ دشمنِ خارجی بلکه توسطِ خانواده‌ی خودش سرنگون شد",
+        "شاهنامه مرگِ رستم را به عنوانِ مجازاتِ الهی برای غرورش ارائه می‌دهد",
+        "قهرمانانِ بزرگ همیشه محکوم هستند که جوان بمیرند"
       ],
       "answers_tg": [
-        "Хиёнатро монанди ҳақиқати ҷаҳон ҳис мекунад то шикасти шахсӣ — хиёнат комил мерасад, на аз ангезаҳои қобили дарк ҷамъ оварда шуда, ки ҳам тарсноктар аст ва ҳам ростинтар",
-        "Нишон медиҳад ки Шоҳнома ангезаҳои Шоғодро бадиҳӣ меҳисобад — ҳар бародари ногатание ки аз хона фиристода шуда бошад табиатан интиқом металабад",
-        "Шикофро дар манобеи Фирдавсӣ инъикос мекунад — суннати шифоҳӣ дидгоҳи Шоғодро ҳифз накарда буд",
-        "Ба мухотаб иҷоза медиҳад дарки худашро аз ҳасад ва кина ба равоят фаро афканад"
+        "Кӯмаки фавқуттабиӣ (Симурғ) дар ниҳоят наметавонад дар баробари хиёнати инсонӣ ҳимоя кунад",
+        "Бузургтарин таҳдидҳо аз дарун меоянд, на аз берун — бузургтарин ҷангҷӯи дунё на тавассути ҳеч душмани хориҷӣ балки тавассути оилаи худаш сарнагун шуд",
+        "Шоҳнома марги Рустамро ба унвони ҷазои илоҳӣ барои такаббури ӯ пешкаш мекунад",
+        "Қаҳрамонони бузург ҳамеша маҳкуманд ки ҷавон бимиранд"
       ],
-      "correct_answer": 0,
-      "explanation": "The most frightening treacheries are the ones that cannot be traced to a legible motive. Shaghad's unexplained corruption is more disturbing than a clearly jealous or ambitious villain, because it cannot be predicted or prevented. The Shahnameh treats his betrayal as something that simply happened — a fact of the world, not a comprehensible psychological process that Rostam might have seen coming if he had been more attentive.",
-      "explanation_fa": "ترسناک‌ترین خیانت‌ها آن‌هایی هستند که نمی‌توان به انگیزه‌ی خوانایی نسبت داد. فسادِ ناتوضیح‌داده‌شده‌ی شاغاد آشوبناک‌تر از یک شرور آشکارا حسود یا جاه‌طلب است، چون نمی‌توان پیش‌بینی یا جلوگیری از آن کرد. شاهنامه خیانتش را به عنوانِ چیزی که صرفاً اتفاق افتاد عرضه می‌کند — واقعیتِ جهان، نه فرآیندِ روان‌شناختیِ قابلِ فهم که رستم اگر دقیق‌تر بود می‌توانست پیش‌بینی کند.",
-      "explanation_tg": "Тарсноктарин хиёнатҳо онҳоест ки наметавон ба ангезаи хонандест нисбат дод. Фасоди бетавзеҳи Шоғод آшوбناктар аз як шарири ошкоро ҳасуд ё ҷоҳталаб аст, зеро наметавон онро пешгӯӣ кард ё пешгирӣ намуд. Шоҳнома хиёнаташро ҳамчун чизе муаррифӣ мекунад ки садоқатан рух дод — ҳақиқати ҷаҳон.",
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's construction of Rostam's death is a statement about where danger truly lives. Every external enemy — demon, dragon, the armies of Turan — failed to destroy him. His half-brother succeeded. The chronicle's implicit argument: the world's greatest warrior could be destroyed by what was closest to him.",
+      "explanation_fa": "ساختارِ شاهنامه از مرگِ رستم بیانیه‌ای درباره‌ی اینکه خطر واقعاً کجا زندگی می‌کند است. هر دشمنِ خارجی — دیو، اژدها، ارتشهای توران — در نابودیِ او شکست خورد. برادرِ ناتنی‌اش موفق شد.",
+      "explanation_tg": "Сохтори Шоҳнома аз марги Рустам баёние дар бораи ин ки хатар воқеан куҷо зиндагӣ мекунад аст. Ҳар душмани хориҷӣ — дев, аждаҳо, артишҳои Турон — дар нобудии ӯ шикаст хӯрд. Бародари нотании ӯ муваффақ шуд.",
       "reward": {
-        "xp": 390,
-        "real": 185
+        "xp": 330,
+        "real": 155
       }
     },
     {
       "id": "re-h7",
       "chapter_slug": "rostams-end",
-      "quiz_part": 15,
+      "quiz_part": 7,
       "difficulty": "hard",
-      "question": "The Shahnameh says that after Rostam's death, 'the chapter that followed would be different in kind.' What specifically changes about the Shahnameh's world when Rostam is gone?",
-      "question_fa": "شاهنامه می‌گوید که پس از مرگِ رستم، 'فصلی که پیش می‌آمد از نوعی متفاوت بود'. وقتی رستم می‌رود چه چیزی خاصاً در دنیای شاهنامه تغییر می‌کند؟",
-      "question_tg": "Шоҳнома мегӯяд ки пас аз марги Рустам, 'фасле ки пеш меомад аз навъи дигар буд'. Вақте Рустам мерод чӣ мушаххасан дар ҷаҳони Шоҳнома тағйир мекунад?",
+      "question": "Rostam's horse Rakhsh has been his constant companion through seven labours, the death of Sohrab, and decades of war. What happens to Rakhsh when Rostam falls into the pit?",
+      "question_fa": "اسبِ رستم، رخش، از طریقِ هفت خان، مرگِ سهراب، و دهه‌ها جنگ همراهِ ثابتِ او بوده. وقتی رستم در چاه می‌افتد با رخش چه اتفاقی می‌افتد؟",
+      "question_tg": "Асби Рустам, Рахш, тавассути ҳафт хон, марги Суҳроб, ва даҳҳо ҷанг ҳамроҳи доими ӯ будааст. Вақте Рустам дар чоҳ меафтад бо Рахш чӣ мешавад?",
       "answers": [
-        "The kings must now bear consequences without rescue — the figure who could repair their worst decisions is gone, and the chronicle enters a world that is nakedly political rather than heroically salvageable",
-        "The Shahnameh becomes focused on religion rather than warfare, reflecting the arrival of Zoroastrian themes",
-        "Iran's military capacity collapses without Rostam, leading directly to Sekandar's conquest",
-        "The chronicle's narrative pace slows dramatically, as there is no longer a hero to carry the action forward"
+        "Rakhsh escapes and is captured by the king of Kabul",
+        "Rakhsh returns to Zabolestan without his rider",
+        "Rakhsh also falls into the pit and dies alongside Rostam — they end together",
+        "Rakhsh is killed by Shaghad before the ambush begins"
       ],
       "answers_fa": [
-        "شاهان حالا باید بدونِ نجات با پیامدها روبرو شوند — شخصیتی که می‌توانست بدترین تصمیماتشان را جبران کند رفته، و شاهنامه وارد دنیایی می‌شود که به جای قهرمانانه قابلِ نجات بودن، آشکارا سیاسی است",
-        "شاهنامه به جای جنگ بر دین متمرکز می‌شود، که بازتابِ ورودِ مضامینِ زرتشتی است",
-        "توانِ نظامیِ ایران بدونِ رستم فرو می‌پاشد، که مستقیماً به فتحِ اسکندر منجر می‌شود",
-        "شتابِ رواییِ شاهنامه به طورِ چشمگیری کُند می‌شود، زیرا دیگر قهرمانی برای پیش بردنِ اقدام وجود ندارد"
+        "رخش فرار می‌کند و توسطِ شاهِ کابل گرفتار می‌شود",
+        "رخش بدون سوارکارش به زابلستان برمی‌گردد",
+        "رخش هم در چاه می‌افتد و در کنارِ رستم می‌میرد — با هم پایان می‌یابند",
+        "رخش توسطِ شغاد قبل از شروعِ کمین کشته می‌شود"
       ],
       "answers_tg": [
-        "Подшоҳон ҳоло бояд бидуни наҷот бо оқибатҳо рӯ ба рӯ шаванд — шахсияте ки метавонист бадтарин тасмимҳоянашонро ҷуброн кунад рафтааст ва Шоҳнома ба ҷаҳоне ворид мешавад ки ба ҷои қаҳрамонона қобили наҷот будан, ошкоро сиёсист",
-        "Шоҳнома ба ҷои ҷанг ба дин тамаркуз мекунад, ки инъикоси воридшавии мавзӯоти зардуштӣ аст",
-        "қудрати низомии Эрон бидуни Рустам фурӯ мепошад, ки мустақиман ба фатҳи Искандар мунҷар мешавад",
-        "Суръати равоятии Шоҳнома ба таври назаррас суст мешавад"
+        "Рахш мегурезад ва тавассути шоҳи Кобул гирифтор мешавад",
+        "Рахш бидуни саворкораш ба Зобулистон бармегардад",
+        "Рахш ҳам дар чоҳ меафтад ва дар канори Рустам мемирад — бо ҳам поён меёбанд",
+        "Рахш тавассути Шағод пеш аз оғози камин кушта мешавад"
       ],
-      "correct_answer": 0,
-      "explanation": "For five generations, Rostam was the structural guarantee behind the throne — the figure who could compensate for a king's recklessness, retrieve what had been lost, hold a border that the court had conceded. Without him, the kings are exposed. The chronicle's later sections deal with kingdoms that rise and fall without anyone able to serve as backstop. This is what 'different in kind' means: not worse necessarily, but nakedly political, without the heroic insurance the chronicle had always had.",
-      "explanation_fa": "برای پنج نسل، رستم ضمانتِ ساختاریِ پشتِ تخت بود — شخصیتی که می‌توانست برای بی‌احتیاطیِ شاه جبران کند، آنچه از دست رفته بود را پس بگیرد، مرزی را نگه دارد که دربار از آن گذشته بود. بدونِ او، شاهان در معرض‌اند. بخش‌های بعدیِ شاهنامه با پادشاهی‌هایی سروکار دارند که بدونِ کسی که بتواند به عنوانِ ضمانت عمل کند، ظهور و سقوط می‌کنند.",
-      "explanation_tg": "Барои панҷ насл, Рустам кафолати сохторӣ дар паси тахт буд — шахсияте ки метавонист барои бе эҳтиётии подшоҳ ҷуброн кунад, он чи аз даст рафта буд бозгардонад, марзеро нигоҳ дорад ки дарбор аз он гузашта буд. Бидуни ӯ, подшоҳон дар маъруз ҳастанд. Бахшҳои баъдии Шоҳнома бо подшоҳиҳое сарукор доранд ки бидуни касе ки тавонад ҳамчун кафолат амал кунад, зуҳур ва суқут мекунанд.",
+      "correct_answer": 2,
+      "explanation": "Rakhsh falls into the pit alongside Rostam and dies there. The Shahnameh records this as part of the total ending — horse and hero, inseparable in life, inseparable in death. The world loses them both in the same moment.",
+      "explanation_fa": "رخش در کنارِ رستم در چاه می‌افتد و همانجا می‌میرد. شاهنامه این را به عنوانِ بخشی از پایانِ کامل ثبت می‌کند — اسب و قهرمان، جدایی‌ناپذیر در زندگی، جدایی‌ناپذیر در مرگ.",
+      "explanation_tg": "Рахш дар канори Рустам дар чоҳ меафтад ва ҳамонҷо мемирад. Шоҳнома инро ба унвони бахше аз поёни комил сабт мекунад — асп ва қаҳрамон, ҷудонашаванда дар зиндагӣ, ҷудонашаванда дар марг.",
       "reward": {
-        "xp": 410,
-        "real": 195
+        "xp": 330,
+        "real": 155
       }
     },
     {
       "id": "re-h8",
       "chapter_slug": "rostams-end",
-      "quiz_part": 16,
+      "quiz_part": 8,
       "difficulty": "hard",
-      "question": "Ferdowsi was writing near the end of his life, in poverty, after giving thirty years to a poem that his patron rewarded poorly. His son had died. What parallel does the Shahnameh draw — or allow the reader to draw — between Ferdowsi's situation and Rostam's end?",
-      "question_fa": "فردوسی نزدیکِ پایانِ عمرش می‌نوشت، در فقر، بعد از اینکه سی سال به شعری داد که حامیِ او ناکافی پاداش داد. پسرش مرده بود. شاهنامه چه مشابهتی را — یا اجازه می‌دهد خواننده بکشاند — بینِ وضعیتِ فردوسی و پایانِ رستم می‌کشاند؟",
-      "question_tg": "Фирдавсӣ дар наздикии поёни умраш менавишт, дар фақр, пас аз ин ки си сол ба шеъре дод ки ҳомияш нокифо подош дод. Писараш мурда буд. Шоҳнома кадом шабоҳатеро — ё ба хонанда иҷоза медиҳад бикашад — байни вазъияти Фирдавсӣ ва поёни Рустам мекашад?",
+      "question": "After Rostam's death, his son Farāmarz carries on the line for a time. But the destruction of Zabolestan by Bahman means what, according to the Shahnameh?",
+      "question_fa": "پس از مرگِ رستم، پسرش فرامرز برای مدتی خط را ادامه می‌دهد. اما نابودیِ زابلستان توسطِ بهمن به معنای چیست، طبقِ شاهنامه؟",
+      "question_tg": "Пас аз марги Рустам, писараш Фаромарз барои муддате хатро идома медиҳад. Аммо нобудии Зобулистон тавассути Баҳман ба маънои чист, мувофиқи Шоҳнома?",
       "answers": [
-        "Both gave everything to a patron who betrayed them — Rostam to kings who consumed his service without protecting him from the final threat, Ferdowsi to Mahmud who consumed thirty years of poetry without adequate return",
-        "Both died before their work was recognized — Rostam died without knowing his legacy, Ferdowsi died before the Shahnameh achieved fame",
-        "Both were abandoned by their families at the moment of crisis — Rostam by Faramarz, Ferdowsi by his patrons at Tus",
-        "The parallel is not between Ferdowsi and Rostam but between Ferdowsi and Shaghad — both chose betrayal when they could have chosen loyalty"
+        "Not just a place is destroyed but a lineage — the family whose military capacity had sustained Iranian kingship is gone",
+        "The Shahnameh treats the destruction as a historical accident with no deeper meaning",
+        "The destruction is a necessary correction — Zabolestan had become too powerful",
+        "It completes Rostam's story by eliminating everything connected to him"
       ],
       "answers_fa": [
-        "هر دو همه چیز را به حامی‌ای دادند که خیانت کرد — رستم به شاهانی که خدمتش را مصرف کردند بدونِ اینکه از او در برابرِ تهدیدِ نهایی محافظت کنند، فردوسی به محمود که سی سال شعر را مصرف کرد بدونِ پاداشِ کافی",
-        "هر دو قبل از اینکه کارشان شناخته شود مُردند — رستم بدونِ اینکه میراثش را بشناسد مُرد، فردوسی قبل از اینکه شاهنامه به شهرت برسد مُرد",
-        "هر دو در لحظه‌ی بحران توسطِ خانواده‌هایشان رها شدند — رستم توسطِ فرامرز، فردوسی توسطِ حامیانش در طوس",
-        "موازات بینِ فردوسی و رستم نیست بلکه بینِ فردوسی و شاغاد است — هر دو خیانت را انتخاب کردند وقتی می‌توانستند وفاداری را انتخاب کنند"
+        "نه فقط یک مکان نابود می‌شود بلکه یک سلاله — خانواده‌ای که ظرفیتِ نظامی‌اش سلطنتِ ایرانی را حفظ کرده بود رفته است",
+        "شاهنامه نابودی را به عنوانِ یک حادثه‌ی تاریخی بدون معنای عمیق‌تری می‌بیند",
+        "نابودی یک اصلاحِ ضروری است — زابلستان خیلی قدرتمند شده بود",
+        "داستانِ رستم را با حذفِ همه چیزِ مرتبط با او کامل می‌کند"
       ],
       "answers_tg": [
-        "Ҳар ду ҳама чизро ба ҳомие доданд ки хиёнат кард — Рустам ба подшоҳоне ки хидматашро масруф карданд бидуни ин ки аз ӯ дар муқобили таҳдиди ниҳоӣ ҳифозат кунанд, Фирдавсӣ ба Маҳмуд ки си сол шеърро масруф кард бидуни подоши кофӣ",
-        "Ҳар ду пеш аз он ки корашон шинохта шавад мурданд — Рустам бидуни шинохтани мероси худ мурд, Фирдавсӣ пеш аз он ки Шоҳнома ба шӯҳрат бирасад мурд",
-        "Ҳар ду дар лаҳзаи буҳрон аз оилаҳояшон тарк шуданд",
-        "Монандӣ байни Фирдавсӣ ва Рустам нест балки байни Фирдавсӣ ва Шоғод аст"
+        "На танҳо як ҷой нобуд мешавад балки як сулола — оилае ки қобилияти низомии он шоҳаншоҳии эрониро ҳифз карда буд рафтааст",
+        "Шоҳнома нобудиро ба унвони ҳодисаи таърихии бе маънои амиқтаре мебинад",
+        "Нобудӣ ислоҳи зарурист — Зобулистон хеле қудратманд шуда буд",
+        "Достони Рустамро бо ҳазфи ҳар чизи марбут ба ӯ комил мекунад"
       ],
       "correct_answer": 0,
-      "explanation": "Rostam served Iran's kings faithfully for five generations, and the system failed to protect him from a threat that came from within his own household. Ferdowsi served the Shahnameh — and through it, the Persian language — for thirty years, and his patron Mahmud failed to protect the work with adequate reward. Both figures gave more than the institution could return. This parallel is not stated in the poem; it belongs to the reading.",
-      "explanation_fa": "رستم برای پنج نسل به شاهانِ ایران وفادارانه خدمت کرد، و سیستم از محافظت از او در برابرِ تهدیدی که از داخلِ خانواده‌اش آمد ناتوان بود. فردوسی سی سال به شاهنامه — و از طریقِ آن به زبانِ فارسی — خدمت کرد، و حامیش محمود از حفاظتِ اثر با پاداشِ کافی ناتوان بود. هر دو شخصیت بیشتر از آنچه نهاد می‌توانست بازگرداند دادند. این موازات در شعر بیان نمی‌شود؛ به خواندن تعلق دارد.",
-      "explanation_tg": "Рустам барои панҷ насл ба подшоҳони Эрон содиқона хидмат кард ва система аз ҳифозати ӯ дар муқобили таҳдиде ки аз дохили хонаводааш омад ноқодир буд. Фирдавсӣ си сол ба Шоҳнома — ва тавассути он ба забони форсӣ — хидмат кард ва ҳомияш Маҳмуд аз ҳифозати асар бо подоши кофӣ ноқодир буд. Ҳар ду шахсият бештар аз он чи ниҳод метавонист баргардонад доданд. Ин монандӣ дар шеър баён намешавад.",
+      "explanation": "The destruction of Zabolestan under Bahman eliminates the lineage that produced Rostam. What is destroyed is not just geography but the family — Rostam, his fathers, his son — whose martial capacity had, for generations, been the actual foundation of Iranian military power. The world does not just lose Rostam; it loses the system that made him possible.",
+      "explanation_fa": "نابودیِ زابلستان تحتِ بهمن سلاله‌ای که رستم را تولید کرده نابود می‌کند. آنچه نابود می‌شود نه فقط جغرافیا بلکه خانواده است — رستم، پدرانش، پسرش — که ظرفیتِ نظامی‌شان برای نسل‌ها پایه‌ی واقعیِ قدرتِ نظامیِ ایران بوده.",
+      "explanation_tg": "Нобудии Зобулистон таҳти Баҳман суолаеро ки Рустамро тавлид карда нобуд мекунад. Он чи нобуд мешавад на танҳо ҷуғрофия балки оила аст — Рустам, падаронаш, писараш — ки қобилияти низомии онҳо барои насл-ҳо пояи воқеии қудрати низомии Эрон буда.",
       "reward": {
-        "xp": 430,
-        "real": 205
+        "xp": 330,
+        "real": 155
       }
     }
   ]

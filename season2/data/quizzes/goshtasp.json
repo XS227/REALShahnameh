@@ -9,100 +9,30 @@
       "question_fa": "چرا گشتاسپ اسفندیار را می‌فرستد تا دینِ زرتشتی را به ممالکِ تبدیل‌نشده گسترش دهد — و دلیلِ دوم، سیاسی، پشتِ این مأموریت چیست؟",
       "question_tg": "Чаро Гуштосп Исфандиёрро мефиристад ва далели дуюми сиёсӣ чист?",
       "answers": [
-        "The mission is purely religious — Esfandiyar volunteered to spread the faith and Goshtasp simply agreed",
         "Genuinely: Esfandiyar believed in Zoroastrianism and Goshtasp needed the faith spread. Politically: a righteous son on a holy mission is not at court competing for the throne Goshtasp will not give him",
+        "Goshtasp sent Esfandiyar to weaken him — the kingdoms were so powerful that even Esfandiyar would likely fail",
         "The mission was ordered by Zoroaster himself, not Goshtasp",
-        "Goshtasp sent Esfandiyar to weaken him — the kingdoms were so powerful that even Esfandiyar would likely fail"
+        "The mission is purely religious — Esfandiyar volunteered to spread the faith and Goshtasp simply agreed"
       ],
       "answers_fa": [
-        "مأموریت کاملاً دینی است — اسفندیار داوطلبانه گفت دین را گسترش می‌دهد",
         "واقعی: اسفندیار به زرتشتیگری باور داشت و گشتاسپ نیاز به گسترشِ دین داشت. سیاسی: پسرِ صادق روی مأموریتِ مقدس در دربار نیست تا برای تختی که گشتاسپ نمی‌دهد رقابت کند",
+        "گشتاسپ اسفندیار را فرستاد تا ضعیفش کند",
         "مأموریت توسطِ خودِ زرتشت دستور داده شد",
-        "گشتاسپ اسفندیار را فرستاد تا ضعیفش کند"
+        "مأموریت کاملاً دینی است — اسفندیار داوطلبانه گفت دین را گسترش می‌دهد"
       ],
       "answers_tg": [
-        "Мӯъҷиза танҳо динӣ аст",
         "Воқеӣ: Исфандиёр ба зардуштӣ боварӣ дошт. Сиёсӣ: писари содиқ дар сафари муқаддас дар дарбор нест то барои тахте ки Гуштосп намедиҳад рақобат кунад",
+        "Гуштосп Исфандиёрро фиристод то заифаш кунад",
         "Мӯъҷиза аз Зардушт худ дастур дода шуд",
-        "Гуштосп Исфандиёрро фиристод то заифаш кунад"
+        "Мӯъҷиза танҳо динӣ аст"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "The Shahnameh presents both motivations as simultaneously true. Esfandiyar genuinely believed in Zoroastrianism and the missions were real acts of faith-spreading. But Goshtasp also feared his son's growing power and popularity — Jamasp the astrologer had warned him about this — and a righteous son sent on holy missions is also a son kept at a useful distance from the court. The Shahnameh does not call this hypocrisy; it records compound motivation as a fact of how kings act.",
       "explanation_fa": "شاهنامه هر دو انگیزه را به‌طورِ همزمان درست ارائه می‌دهد. اسفندیار واقعاً ایمان داشت. اما گشتاسپ هم از قدرتِ رو به رشدِ پسرش می‌ترسید. شاهنامه این را دورویی نمی‌نامد؛ انگیزه‌ی مرکب را به عنوانِ واقعیتِ طرزِ عملکردِ شاهان ثبت می‌کند.",
       "explanation_tg": "Шоҳнома ҳарду ангезаро ҳамзамон дуруст нишон медиҳад. Исфандиёр воқеан имон дошт. Аммо Гуштосп аз қудрати афзояндаи писараш метарсид.",
       "reward": {
         "xp": 100,
         "real": 40
-      }
-    },
-    {
-      "id": "gsh-m1",
-      "chapter_slug": "goshtasp",
-      "quiz_part": 2,
-      "difficulty": "medium",
-      "question": "Arjasp refuses Zoroastrianism and invades Iran. The Shahnameh implies his refusal is political as much as theological. What specifically was he resisting?",
-      "question_fa": "ارجاسپ زرتشتیگری را رد می‌کند و به ایران حمله می‌کند. شاهنامه نشان می‌دهد رفضِ او به همان اندازه سیاسی است که الهیاتی. او چه چیزِ خاصی را مقاومت می‌کرد؟",
-      "question_tg": "Арҷосп Зардуштиро рад мекунад ва ба Эрон ҳамла мекунад. Шоҳнома нишон медиҳад рафзи ӯ ҳам сиёсист. Ӯ ба чӣ муқовимат мекард?",
-      "answers": [
-        "He was resisting Zoroaster personally — Arjasp had a prior dispute with the prophet",
-        "He was resisting the use of religious conversion as an instrument of Iranian imperial expansion — fire temples are not only sacred buildings but symbols of Iranian authority and administrative control",
-        "He refused because his kingdom had its own prophet who had recently given a competing revelation",
-        "Arjasp's refusal was purely military — he saw the faith-conversion missions as a pretext for Iranian military infiltration"
-      ],
-      "answers_fa": [
-        "شخصاً در برابرِ زرتشت مقاومت می‌کرد — اختلافِ قبلی با پیامبر داشت",
-        "در برابرِ استفاده از تبدیلِ مذهبی به عنوانِ ابزارِ گسترشِ امپریالیِ ایران مقاومت می‌کرد — آتشکده‌ها نه فقط ساختمان‌های مقدس بلکه نماد‌های اقتدار و کنترلِ اداریِ ایران هستند",
-        "رد کرد چون پادشاهیش پیامبرِ خودش را داشت",
-        "رفضِ ارجاسپ کاملاً نظامی بود"
-      ],
-      "answers_tg": [
-        "Шахсан дар баробари Зардушт муқовимат мекард",
-        "Дар баробари истифодаи табдили мазҳабӣ ҳамчун абзори тавсеаи империялии Эрон муқовимат мекард — оташкадаҳо на танҳо биноҳои муқаддас балки нишонаҳои ҳокимияти Эрон ҳастанд",
-        "Рад кард чун подшоҳиаш паёмбари худашро дошт",
-        "Рафзи Арҷосп тамоман ҳарбӣ буд"
-      ],
-      "correct_answer": 1,
-      "explanation": "The Shahnameh is precise about this: the wars of faith in the Goshtasp era are also wars of empire, and the two registers are inseparable. Fire temples function as administrative centers and symbols of Iranian authority — their establishment in a foreign kingdom is not only a religious act but a political one. Arjasp understood this, which is why his response was military. He was not refusing a prophet; he was refusing the expansion of a rival power that used the prophet's message as its instrument.",
-      "explanation_fa": "شاهنامه درباره‌ی این دقیق است: جنگ‌های ایمان هم جنگ‌های امپریالی هستند. آتشکده‌ها به عنوانِ مراکزِ اداری و نماد‌های اقتدارِ ایرانی کار می‌کنند. ارجاسپ این را فهمید. پیامبر را رد نمی‌کرد؛ گسترشِ قدرتِ رقیب را رد می‌کرد.",
-      "explanation_tg": "Шоҳнома дар ин бора дақиқ аст: ҷангҳои имон дар давраи Гуштосп ҳам ҷангҳои империялӣ ҳастанд. Оташкадаҳо ҳамчун маркази маъмурӣ ва нишонаҳои ҳокимияти Эрон кор мекунанд.",
-      "reward": {
-        "xp": 140,
-        "real": 60
-      }
-    },
-    {
-      "id": "gsh-h1",
-      "chapter_slug": "goshtasp",
-      "quiz_part": 3,
-      "difficulty": "hard",
-      "question": "Goshtasp repeatedly promises Esfandiyar the throne and withholds it each time. Jamasp warns Goshtasp that Esfandiyar is a threat. How does the Shahnameh present the relationship between Goshtasp's genuine religious faith and his political fear?",
-      "question_fa": "گشتاسپ مکرراً تخت را به اسفندیار وعده می‌دهد و هر بار نگه می‌دارد. جاماسپ هشدار می‌دهد اسفندیار تهدید است. شاهنامه رابطه‌ی بینِ ایمانِ دینیِ واقعیِ گشتاسپ و ترسِ سیاسیِ او را چگونه ارائه می‌دهد؟",
-      "question_tg": "Гуштосп борҳо тахтро ваъда медиҳад ва нигоҳ медорад. Шоҳнома рабтаи байни имони динии воқеии Гуштосп ва тарси сиёсии ӯро чӣ тавр пешкаш мекунад?",
-      "answers": [
-        "The Shahnameh presents both as simultaneously true and mutually reinforcing: the genuine faith provides the language and authority for the political fear to operate through. Goshtasp uses piety — the holy mission, the sacred duty — as the socially acceptable instrument for doing what fear demands",
-        "The Shahnameh suggests Goshtasp's faith was never genuine — the conversion was purely political from the start",
-        "The faith and the fear are treated as separate compartments of Goshtasp's character — one does not affect the other",
-        "The Shahnameh condemns Goshtasp explicitly and sides with Esfandiyar's claim to the throne"
-      ],
-      "answers_fa": [
-        "شاهنامه هر دو را به‌طورِ همزمان درست و متقابلاً تقویت‌کننده ارائه می‌دهد: ایمانِ واقعی زبان و اقتدار را برای عملکردِ ترسِ سیاسی فراهم می‌کند. گشتاسپ از تقوا — مأموریتِ مقدس، وظیفه‌ی مقدس — به عنوانِ ابزارِ قابلِ قبولِ اجتماعی برای انجامِ آنچه ترس می‌طلبد استفاده می‌کند",
-        "شاهنامه نشان می‌دهد ایمانِ گشتاسپ هرگز واقعی نبود — تبدیل از ابتدا کاملاً سیاسی بود",
-        "ایمان و ترس به عنوانِ بخش‌های جداگانه‌ای از شخصیتِ گشتاسپ ارائه می‌شوند",
-        "شاهنامه به‌طورِ صریح گشتاسپ را محکوم می‌کند"
-      ],
-      "answers_tg": [
-        "Шоҳнома ҳарду ро ҳамзамон дуруст ва муштараки тақвиятдиҳанда нишон медиҳад: имони воқеӣ забон ва ҳокимиятро барои амалкарди тарси сиёсӣ фароҳам мекунад",
-        "Шоҳнома нишон медиҳад имони Гуштосп ҳеҷ гоҳ воқеӣ набуд",
-        "Имон ва тарс ҳамчун бахшҳои ҷудогонаи шахсияти Гуштосп нишон дода мешаванд",
-        "Шоҳнома Гуштоспро ошкоро маҳкум мекунад"
-      ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh's most sophisticated observation about Goshtasp is that his faith and his fear are not separate — they work together. The faith provides the framework: a holy mission, a sacred duty, the spread of the Good Religion. The fear provides the need: keep Esfandiyar away from court. Together they produce a system where Goshtasp can do what fear demands (deny the throne, send his son away) while appearing to do what faith demands (spreading Zoroastrianism). The Shahnameh does not call this hypocrisy because both motivations are genuine. It calls it the specific way that power works when it has two registers to operate in simultaneously.",
-      "explanation_fa": "دقیق‌ترین مشاهده‌ی شاهنامه درباره‌ی گشتاسپ این است که ایمان و ترسش جدا نیستند — با هم کار می‌کنند. ایمان چارچوب فراهم می‌کند. ترس نیاز را فراهم می‌کند. با هم سیستمی می‌سازند که گشتاسپ می‌تواند آنچه ترس می‌طلبد انجام دهد در حالی که به نظر می‌رسد آنچه ایمان می‌طلبد انجام می‌دهد.",
-      "explanation_tg": "Дақиқтарин мушоҳидаи Шоҳнома дар бораи Гуштосп ин аст ки имон ва тарсаш ҷудо нестанд — бо ҳам кор мекунанд. Имон чорчӯб фароҳам мекунад. Тарс ниёзро фароҳам мекунад.",
-      "reward": {
-        "xp": 160,
-        "real": 70
       }
     },
     {
@@ -114,24 +44,24 @@
       "question_fa": "زرتشت هنگامِ ورود به دربارِ گشتاسپ چه چیزی حمل می‌کرد؟",
       "question_tg": "Зардушт ҳангоми ворид шудан ба дарбори Гуштосп чӣ чиз ҳамл мекард?",
       "answers": [
-        "Sacred fire and a golden throne",
-        "The Avesta and testimony of a direct encounter with Ahura Mazda",
         "Prophecies about the end of the Kayanian dynasty",
-        "Letters from eastern kingdoms already converted"
+        "Sacred fire and a golden throne",
+        "Letters from eastern kingdoms already converted",
+        "The Avesta and testimony of a direct encounter with Ahura Mazda"
       ],
       "answers_fa": [
-        "آتشِ مقدس و تختِ طلایی",
-        "اوستا و شهادتِ برخوردِ مستقیم با اهورا مزدا",
         "پیشگویی‌هایی درباره‌ی پایانِ سلسله‌ی کیانی",
-        "نامه‌هایی از قلمروهای شرقیِ از پیش تبدیل‌شده"
+        "آتشِ مقدس و تختِ طلایی",
+        "نامه‌هایی از قلمروهای شرقیِ از پیش تبدیل‌شده",
+        "اوستا و شهادتِ برخوردِ مستقیم با اهورا مزدا"
       ],
       "answers_tg": [
-        "Оташи муқаддас ва тахти тиллоӣ",
-        "Авасто ва шаҳодати вохӯрди мустақим бо Аҳура Мазда",
         "Пешгӯйиҳо дар бораи поёни сулолаи Кёния",
-        "Номаҳое аз қаламравҳои шарқие ки аллакай табдил ёфта буданд"
+        "Оташи муқаддас ва тахти тиллоӣ",
+        "Номаҳое аз қаламравҳои шарқие ки аллакай табдил ёфта буданд",
+        "Авасто ва шаҳодати вохӯрди мустақим бо Аҳура Мазда"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "Zoroaster arrived at Goshtasp's court from the east, carrying the Avesta and testimony of a direct encounter with Ahura Mazda.",
       "explanation_fa": "زرتشت از شرق به دربارِ گشتاسپ رسید، اوستا و شهادتِ برخوردِ مستقیم با اهورا مزدا را حمل می‌کرد.",
       "explanation_tg": "Зардушт аз шарқ ба дарбори Гуштосп расид, Авасто ва шаҳодати вохӯрди мустақим бо Аҳура Маздоро ҳамл мекард.",
@@ -149,30 +79,65 @@
       "question_fa": "چرا فرستادنِ اسفندیار به مأموریت‌ها از نظرِ سیاسی برای گشتاسپ مناسب بود؟",
       "question_tg": "Чаро фиристодани Исфандиёр ба мӯҳимиятҳо аз назари сиёсӣ барои Гуштосп мувофиқ буд?",
       "answers": [
-        "Esfandiyar was better suited to diplomacy than court life",
-        "A righteous son on a holy mission is not at court competing for the throne",
         "Esfandiyar had asked to go on missions",
-        "The eastern kingdoms specifically required Esfandiyar"
+        "The eastern kingdoms specifically required Esfandiyar",
+        "A righteous son on a holy mission is not at court competing for the throne",
+        "Esfandiyar was better suited to diplomacy than court life"
       ],
       "answers_fa": [
-        "اسفندیار برای دیپلماسی مناسب‌تر از زندگیِ درباری بود",
-        "پسرِ پرهیزکار در مأموریتِ مقدس در دربار نیست که برای تخت رقابت کند",
         "اسفندیار خودش خواسته بود که در مأموریت‌ها شرکت کند",
-        "قلمروهای شرقی به طورِ مشخص اسفندیار را می‌خواستند"
+        "قلمروهای شرقی به طورِ مشخص اسفندیار را می‌خواستند",
+        "پسرِ پرهیزکار در مأموریتِ مقدس در دربار نیست که برای تخت رقابت کند",
+        "اسفندیار برای دیپلماسی مناسب‌تر از زندگیِ درباری بود"
       ],
       "answers_tg": [
-        "Исфандиёр барои дипломасӣ мувофиқтар аз зиндагии дарборӣ буд",
-        "Писари парезгор дар мӯҳимияти муқаддас дар дарбор нест ки барои тахт рақобат кунад",
         "Исфандиёр худаш хоҳиш карда буд ки дар мӯҳимиятҳо ширкат кунад",
-        "Қаламравҳои шарқӣ мушаххасан Исфандиёрро мехостанд"
+        "Қаламравҳои шарқӣ мушаххасан Исфандиёрро мехостанд",
+        "Писари парезгор дар мӯҳимияти муқаддас дар дарбор нест ки барои тахт рақобат кунад",
+        "Исфандиёр барои дипломасӣ мувофиқтар аз зиндагии дарборӣ буд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "'A righteous son on a holy mission is not at court competing for the throne.' Genuine purpose and political convenience aligned.",
       "explanation_fa": "«پسرِ پرهیزکار در مأموریتِ مقدس در دربار نیست که برای تخت رقابت کند.» هدفِ واقعی و مناسبتِ سیاسی همسو شدند.",
       "explanation_tg": "«Писари парезгор дар мӯҳимияти муқаддас дар дарбор нест ки барои тахт рақобат кунад.» Ҳадафи воқеӣ ва мувофиқати сиёсӣ ҳамосу шуданд.",
       "reward": {
         "xp": 170,
         "real": 75
+      }
+    },
+    {
+      "id": "gsh-m1",
+      "chapter_slug": "goshtasp",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "Arjasp refuses Zoroastrianism and invades Iran. The Shahnameh implies his refusal is political as much as theological. What specifically was he resisting?",
+      "question_fa": "ارجاسپ زرتشتیگری را رد می‌کند و به ایران حمله می‌کند. شاهنامه نشان می‌دهد رفضِ او به همان اندازه سیاسی است که الهیاتی. او چه چیزِ خاصی را مقاومت می‌کرد؟",
+      "question_tg": "Арҷосп Зардуштиро рад мекунад ва ба Эрон ҳамла мекунад. Шоҳнома нишон медиҳад рафзи ӯ ҳам сиёсист. Ӯ ба чӣ муқовимат мекард?",
+      "answers": [
+        "He was resisting Zoroaster personally — Arjasp had a prior dispute with the prophet",
+        "Arjasp's refusal was purely military — he saw the faith-conversion missions as a pretext for Iranian military infiltration",
+        "He refused because his kingdom had its own prophet who had recently given a competing revelation",
+        "He was resisting the use of religious conversion as an instrument of Iranian imperial expansion — fire temples are not only sacred buildings but symbols of Iranian authority and administrative control"
+      ],
+      "answers_fa": [
+        "شخصاً در برابرِ زرتشت مقاومت می‌کرد — اختلافِ قبلی با پیامبر داشت",
+        "رفضِ ارجاسپ کاملاً نظامی بود",
+        "رد کرد چون پادشاهیش پیامبرِ خودش را داشت",
+        "در برابرِ استفاده از تبدیلِ مذهبی به عنوانِ ابزارِ گسترشِ امپریالیِ ایران مقاومت می‌کرد — آتشکده‌ها نه فقط ساختمان‌های مقدس بلکه نماد‌های اقتدار و کنترلِ اداریِ ایران هستند"
+      ],
+      "answers_tg": [
+        "Шахсан дар баробари Зардушт муқовимат мекард",
+        "Рафзи Арҷосп тамоман ҳарбӣ буд",
+        "Рад кард чун подшоҳиаш паёмбари худашро дошт",
+        "Дар баробари истифодаи табдили мазҳабӣ ҳамчун абзори тавсеаи империялии Эрон муқовимат мекард — оташкадаҳо на танҳо биноҳои муқаддас балки нишонаҳои ҳокимияти Эрон ҳастанд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh is precise about this: the wars of faith in the Goshtasp era are also wars of empire, and the two registers are inseparable. Fire temples function as administrative centers and symbols of Iranian authority — their establishment in a foreign kingdom is not only a religious act but a political one. Arjasp understood this, which is why his response was military. He was not refusing a prophet; he was refusing the expansion of a rival power that used the prophet's message as its instrument.",
+      "explanation_fa": "شاهنامه درباره‌ی این دقیق است: جنگ‌های ایمان هم جنگ‌های امپریالی هستند. آتشکده‌ها به عنوانِ مراکزِ اداری و نماد‌های اقتدارِ ایرانی کار می‌کنند. ارجاسپ این را فهمید. پیامبر را رد نمی‌کرد؛ گسترشِ قدرتِ رقیب را رد می‌کرد.",
+      "explanation_tg": "Шоҳнома дар ин бора дақиқ аст: ҷангҳои имон дар давраи Гуштосп ҳам ҷангҳои империялӣ ҳастанд. Оташкадаҳо ҳамчун маркази маъмурӣ ва нишонаҳои ҳокимияти Эрон кор мекунанд.",
+      "reward": {
+        "xp": 140,
+        "real": 60
       }
     },
     {
@@ -184,21 +149,21 @@
       "question_fa": "دربارِ گشتاسپ در ابتدا زرتشت را چگونه پذیرفت؟",
       "question_tg": "Дарбори Гуштосп дар ибтидо Зардуштро чӣ тавр пазируфт?",
       "answers": [
-        "With immediate conversion led by Goshtasp",
-        "With the standard skepticism of courts — contests of wisdom, questions from the Magi, challenges from scholars",
         "With an attempt to expel him",
+        "With the standard skepticism of courts — contests of wisdom, questions from the Magi, challenges from scholars",
+        "With immediate conversion led by Goshtasp",
         "With a formal ceremony at the fire temple"
       ],
       "answers_fa": [
-        "با تبدیلِ فوریِ رهبری‌شده توسطِ گشتاسپ",
-        "با شک‌وتردیدِ استانداردِ دربارها — مسابقاتِ خرد، سؤالات از موبدان، چالش‌هایی از علما",
         "با تلاشی برای اخراجش",
+        "با شک‌وتردیدِ استانداردِ دربارها — مسابقاتِ خرد، سؤالات از موبدان، چالش‌هایی از علما",
+        "با تبدیلِ فوریِ رهبری‌شده توسطِ گشتاسپ",
         "با مراسمِ رسمی در آتشکده"
       ],
       "answers_tg": [
-        "Бо табдили фории роҳбаришудаи Гуштосп",
-        "Бо шубҳаи стандарди дарборҳо — мусобиқаҳои хирад, саволот аз муведон, мунозираҳои олимон",
         "Бо кӯшише барои берон кардани ӯ",
+        "Бо шубҳаи стандарди дарборҳо — мусобиқаҳои хирад, саволот аз муведон, мунозираҳои олимон",
+        "Бо табдили фории роҳбаришудаи Гуштосп",
         "Бо маросими расмӣ дар оташкада"
       ],
       "correct_answer": 1,
@@ -219,24 +184,24 @@
       "question_fa": "گشتاسپ چرا تبدیل شد — از شگفتی از معجزات، یا چیزِ دیگری؟",
       "question_tg": "Гуштосп чаро табдил шуд — аз ҳайрат аз мӯъҷизаҳо, ё чизи дигаре?",
       "answers": [
-        "He was amazed by Zoroaster's miraculous powers",
-        "He converted from recognition — the message was true in the specific way that changes what you do next",
+        "He had a vision of Ahura Mazda himself",
         "He was politically pressured by the eastern kingdoms",
-        "He had a vision of Ahura Mazda himself"
+        "He was amazed by Zoroaster's miraculous powers",
+        "He converted from recognition — the message was true in the specific way that changes what you do next"
       ],
       "answers_fa": [
-        "از قدرت‌های معجزه‌آسای زرتشت حیرت‌زده شد",
-        "از شناخت تبدیل شد — پیام به شیوه‌ی خاصی درست بود که تغییر می‌دهد بعد چه می‌کنی",
+        "رؤیایی از خودِ اهورا مزدا داشت",
         "از فشارِ سیاسیِ قلمروهای شرقی",
-        "رؤیایی از خودِ اهورا مزدا داشت"
+        "از قدرت‌های معجزه‌آسای زرتشت حیرت‌زده شد",
+        "از شناخت تبدیل شد — پیام به شیوه‌ی خاصی درست بود که تغییر می‌دهد بعد چه می‌کنی"
       ],
       "answers_tg": [
-        "Аз қудратҳои мӯъҷизаосои Зардушт ҳайрат зад шуд",
-        "Аз шиносоӣ табдил шуд — паём ба тарзи хоссе дуруст буд ки тағйир медиҳад баъд чӣ мекунӣ",
+        "Рӯъёе аз худи Аҳура Мазда дид",
         "Аз фишори сиёсии қаламравҳои шарқӣ",
-        "Рӯъёе аз худи Аҳура Мазда дид"
+        "Аз қудратҳои мӯъҷизаосои Зардушт ҳайрат зад шуд",
+        "Аз шиносоӣ табдил шуд — паём ба тарзи хоссе дуруст буд ки тағйир медиҳад баъд чӣ мекунӣ"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "'Goshtasp converted not from amazement but from recognition: this message was true in the specific way that changes what you do next.'",
       "explanation_fa": "«گشتاسپ نه از شگفتی بلکه از شناخت تبدیل شد: این پیام به شیوه‌ی خاصی درست بود که تغییر می‌دهد بعد چه می‌کنی.»",
       "explanation_tg": "«Гуштосп на аз ҳайрат балки аз шиносоӣ табдил шуд: ин паём ба тарзи хоссе дуруст буд ки тағйир медиҳад баъд чӣ мекунӣ.»",
@@ -254,24 +219,24 @@
       "question_fa": "ارجاسپ هنگامِ تهاجم چه اعمالی انجام داد؟",
       "question_tg": "Арҷосп ҳангоми ҳамла чӣ корҳо анҷом дод?",
       "answers": [
-        "He burned the Avesta and occupied Iran's capital",
         "He killed Lohrasp at the fire temple of Balkh, extinguished the sacred fire, and captured Goshtasp's daughters",
+        "He burned all of Khorasan's fire temples",
         "He killed Esfandiyar in single combat",
-        "He burned all of Khorasan's fire temples"
+        "He burned the Avesta and occupied Iran's capital"
       ],
       "answers_fa": [
-        "اوستا را سوزاند و پایتختِ ایران را اشغال کرد",
         "لهراسپ را در آتشکده‌ی بلخ کشت، آتشِ مقدس را خاموش کرد و دختران گشتاسپ را به اسارت گرفت",
+        "تمامِ آتشکده‌های خراسان را سوزاند",
         "اسفندیار را در مبارزه‌ی تن‌به‌تن کشت",
-        "تمامِ آتشکده‌های خراسان را سوزاند"
+        "اوستا را سوزاند و پایتختِ ایران را اشغال کرد"
       ],
       "answers_tg": [
-        "Авасторо сӯзонд ва пойтахти Эронро ишғол кард",
         "Луҳроспро дар оташкадаи Балх кушт, оташи муқаддасро хомӯш кард ва духтарони Гуштоспро асир гирифт",
+        "Тамоми оташкадаҳои Хуросонро сӯзонд",
         "Исфандиёрро дар мубориза кушт",
-        "Тамоми оташкадаҳои Хуросонро сӯзонд"
+        "Авасторо сӯзонд ва пойтахти Эронро ишғол кард"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Arjasp killed Lohrasp at the fire temple of Balkh, extinguishing the sacred fire, and captured Goshtasp's daughters.",
       "explanation_fa": "ارجاسپ لهراسپ را در آتشکده‌ی بلخ کشت، آتشِ مقدس را خاموش کرد، و دختران گشتاسپ را به اسارت گرفت.",
       "explanation_tg": "Арҷосп Луҳроспро дар оташкадаи Балх кушт, оташи муқаддасро хомӯш кард, ва духтарони Гуштоспро асир гирифт.",
@@ -289,22 +254,22 @@
       "question_fa": "گشتاسپ در ازای شکستِ ارجاسپ و نجاتِ دختران، چه وعده‌ای به اسفندیار داد؟",
       "question_tg": "Гуштосп дар иваз шикасти Арҷосп ва наҷоти духтарон, чӣ ваъдаеро ба Исфандиёр дод?",
       "answers": [
-        "Freedom to convert any kingdom he chose",
+        "Command of the entire Iranian army permanently",
         "Marriage to any princess in the empire",
         "The throne on completion of the mission",
-        "Command of the entire Iranian army permanently"
+        "Freedom to convert any kingdom he chose"
       ],
       "answers_fa": [
-        "آزادی برای تبدیلِ هر قلمروی که انتخاب کند",
+        "فرماندهیِ دائمِ تمامِ لشکرِ ایران",
         "ازدواج با هر شاهزاده‌ای در امپراتوری",
         "تخت پس از اتمامِ مأموریت",
-        "فرماندهیِ دائمِ تمامِ لشکرِ ایران"
+        "آزادی برای تبدیلِ هر قلمروی که انتخاب کند"
       ],
       "answers_tg": [
-        "Озодӣ барои табдили ҳар қаламрове ки интихоб кунад",
+        "Фармондеҳии доимии тамоми лашкари Эрон",
         "Издивоҷ бо ҳар шоҳдухтаре дар империя",
         "Тахт пас аз анҷоми мӯҳимият",
-        "Фармондеҳии доимии тамоми лашкари Эрон"
+        "Озодӣ барои табдили ҳар қаламрове ки интихоб кунад"
       ],
       "correct_answer": 2,
       "explanation": "Goshtasp promised the throne on completion. Esfandiyar went, succeeded. The throne was not given.",
@@ -324,21 +289,21 @@
       "question_fa": "جاماسپ به گشتاسپ هشدار داد که اسفندیار «تهدیدِ ساختاری برای هر شاهِ نشسته‌ای» است. «ساختاری» اینجا چه معنایی دارد؟",
       "question_tg": "Ҷомосп ба Гуштосп ҳушдор дод ки Исфандиёр «таҳдиди сохторӣ барои ҳар подшоҳи нишастаест». «Сохторӣ» ин ҷо чӣ маъно дорад?",
       "answers": [
-        "He had built fortifications that threatened the palace",
-        "His power and popularity create an inherent tension with any king — not from treachery but simply from existing",
         "He had a claim to the throne by birth",
+        "His power and popularity create an inherent tension with any king — not from treachery but simply from existing",
+        "He had built fortifications that threatened the palace",
         "His army was larger than the king's"
       ],
       "answers_fa": [
-        "استحکاماتی ساخته بود که کاخ را تهدید می‌کرد",
-        "قدرت و محبوبیتش با هر شاهی تنشِ ذاتی ایجاد می‌کند — نه از خیانت بلکه صرفاً از وجود داشتن",
         "از روی تولد ادعایی به تخت داشت",
+        "قدرت و محبوبیتش با هر شاهی تنشِ ذاتی ایجاد می‌کند — نه از خیانت بلکه صرفاً از وجود داشتن",
+        "استحکاماتی ساخته بود که کاخ را تهدید می‌کرد",
         "لشکرش از شاه بزرگ‌تر بود"
       ],
       "answers_tg": [
-        "Истеҳкоматҳое сохта буд ки қасрро таҳдид мекард",
-        "Қудрат ва маҳбубияташ бо ҳар подшоҳе таназзуи зотӣ ба вуҷуд меоварад — на аз хиёнат балки танҳо аз вуҷуд доштан",
         "Аз рӯи таваллуд иддаъое ба тахт дошт",
+        "Қудрат ва маҳбубияташ бо ҳар подшоҳе таназзуи зотӣ ба вуҷуд меоварад — на аз хиёнат балки танҳо аз вуҷуд доштан",
+        "Истеҳкоматҳое сохта буд ки қасрро таҳдид мекард",
         "Лашкараш аз подшоҳ бузургтар буд"
       ],
       "correct_answer": 1,
@@ -351,6 +316,41 @@
       }
     },
     {
+      "id": "gsh-h1",
+      "chapter_slug": "goshtasp",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Goshtasp repeatedly promises Esfandiyar the throne and withholds it each time. Jamasp warns Goshtasp that Esfandiyar is a threat. How does the Shahnameh present the relationship between Goshtasp's genuine religious faith and his political fear?",
+      "question_fa": "گشتاسپ مکرراً تخت را به اسفندیار وعده می‌دهد و هر بار نگه می‌دارد. جاماسپ هشدار می‌دهد اسفندیار تهدید است. شاهنامه رابطه‌ی بینِ ایمانِ دینیِ واقعیِ گشتاسپ و ترسِ سیاسیِ او را چگونه ارائه می‌دهد؟",
+      "question_tg": "Гуштосп борҳо тахтро ваъда медиҳад ва нигоҳ медорад. Шоҳнома рабтаи байни имони динии воқеии Гуштосп ва тарси сиёсии ӯро чӣ тавр пешкаш мекунад?",
+      "answers": [
+        "The Shahnameh presents both as simultaneously true and mutually reinforcing: the genuine faith provides the language and authority for the political fear to operate through. Goshtasp uses piety — the holy mission, the sacred duty — as the socially acceptable instrument for doing what fear demands",
+        "The faith and the fear are treated as separate compartments of Goshtasp's character — one does not affect the other",
+        "The Shahnameh suggests Goshtasp's faith was never genuine — the conversion was purely political from the start",
+        "The Shahnameh condemns Goshtasp explicitly and sides with Esfandiyar's claim to the throne"
+      ],
+      "answers_fa": [
+        "شاهنامه هر دو را به‌طورِ همزمان درست و متقابلاً تقویت‌کننده ارائه می‌دهد: ایمانِ واقعی زبان و اقتدار را برای عملکردِ ترسِ سیاسی فراهم می‌کند. گشتاسپ از تقوا — مأموریتِ مقدس، وظیفه‌ی مقدس — به عنوانِ ابزارِ قابلِ قبولِ اجتماعی برای انجامِ آنچه ترس می‌طلبد استفاده می‌کند",
+        "ایمان و ترس به عنوانِ بخش‌های جداگانه‌ای از شخصیتِ گشتاسپ ارائه می‌شوند",
+        "شاهنامه نشان می‌دهد ایمانِ گشتاسپ هرگز واقعی نبود — تبدیل از ابتدا کاملاً سیاسی بود",
+        "شاهنامه به‌طورِ صریح گشتاسپ را محکوم می‌کند"
+      ],
+      "answers_tg": [
+        "Шоҳнома ҳарду ро ҳамзамон дуруст ва муштараки тақвиятдиҳанда нишон медиҳад: имони воқеӣ забон ва ҳокимиятро барои амалкарди тарси сиёсӣ фароҳам мекунад",
+        "Имон ва тарс ҳамчун бахшҳои ҷудогонаи шахсияти Гуштосп нишон дода мешаванд",
+        "Шоҳнома нишон медиҳад имони Гуштосп ҳеҷ гоҳ воқеӣ набуд",
+        "Шоҳнома Гуштоспро ошкоро маҳкум мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's most sophisticated observation about Goshtasp is that his faith and his fear are not separate — they work together. The faith provides the framework: a holy mission, a sacred duty, the spread of the Good Religion. The fear provides the need: keep Esfandiyar away from court. Together they produce a system where Goshtasp can do what fear demands (deny the throne, send his son away) while appearing to do what faith demands (spreading Zoroastrianism). The Shahnameh does not call this hypocrisy because both motivations are genuine. It calls it the specific way that power works when it has two registers to operate in simultaneously.",
+      "explanation_fa": "دقیق‌ترین مشاهده‌ی شاهنامه درباره‌ی گشتاسپ این است که ایمان و ترسش جدا نیستند — با هم کار می‌کنند. ایمان چارچوب فراهم می‌کند. ترس نیاز را فراهم می‌کند. با هم سیستمی می‌سازند که گشتاسپ می‌تواند آنچه ترس می‌طلبد انجام دهد در حالی که به نظر می‌رسد آنچه ایمان می‌طلبد انجام می‌دهد.",
+      "explanation_tg": "Дақиқтарин мушоҳидаи Шоҳнома дар бораи Гуштосп ин аст ки имон ва тарсаш ҷудо нестанд — бо ҳам кор мекунанд. Имон чорчӯб фароҳам мекунад. Тарс ниёзро фароҳам мекунад.",
+      "reward": {
+        "xp": 160,
+        "real": 70
+      }
+    },
+    {
       "id": "gsh-h3",
       "chapter_slug": "goshtasp",
       "quiz_part": 3,
@@ -359,24 +359,24 @@
       "question_fa": "فصل می‌گوید گشتاسپ «هشدار را شنید و آن را مناسب یافت.» «مناسب یافتن» یعنی چه؟",
       "question_tg": "Фасл мегӯяд Гуштосп «ҳушдорро шунид ва онро мувофиқ ёфт.» «Мувофиқ ёфтан» яъне чӣ?",
       "answers": [
-        "He was glad to have divine justification",
-        "Jamasp's warning matched and gave language to a political fear Goshtasp already had — he found it convenient because it confirmed what he wanted to believe",
         "He was relieved to have a simple solution",
-        "He found the warning useful for propaganda purposes"
+        "He was glad to have divine justification",
+        "He found the warning useful for propaganda purposes",
+        "Jamasp's warning matched and gave language to a political fear Goshtasp already had — he found it convenient because it confirmed what he wanted to believe"
       ],
       "answers_fa": [
-        "خوشحال بود که توجیهِ الهی دارد",
-        "هشدارِ جاماسپ با ترسِ سیاسی‌ای که گشتاسپ از پیش داشت هم‌خوانی داشت و زبانی به آن داد — آن را مناسب یافت چون آنچه می‌خواست باور کند را تأیید کرد",
         "از داشتنِ راه‌حلِ ساده آرام گرفت",
-        "هشدار را برای اهدافِ تبلیغاتی مفید یافت"
+        "خوشحال بود که توجیهِ الهی دارد",
+        "هشدار را برای اهدافِ تبلیغاتی مفید یافت",
+        "هشدارِ جاماسپ با ترسِ سیاسی‌ای که گشتاسپ از پیش داشت هم‌خوانی داشت و زبانی به آن داد — آن را مناسب یافت چون آنچه می‌خواست باور کند را تأیید کرد"
       ],
       "answers_tg": [
-        "Хурсанд буд ки тавҷеҳи илоҳӣ дорад",
-        "Ҳушдори Ҷомосп бо тарси сиёсие ки Гуштосп аз пеш дошт ҳамоҳанг буд ва ба он забон дод — онро мувофиқ ёфт зеро он чиро ки мехост бовар кунад тасдиқ кард",
         "Аз доштани роҳ-ҳалли сода ором гирифт",
-        "Ҳушдорро барои мақсадҳои таблиғотӣ судманд ёфт"
+        "Хурсанд буд ки тавҷеҳи илоҳӣ дорад",
+        "Ҳушдорро барои мақсадҳои таблиғотӣ судманд ёфт",
+        "Ҳушдори Ҷомосп бо тарси сиёсие ки Гуштосп аз пеш дошт ҳамоҳанг буд ва ба он забон дод — онро мувофиқ ёфт зеро он чиро ки мехост бовар кунад тасдиқ кард"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "Goshtasp's fear of Esfandiyar predated the warning. Jamasp's words gave him permission to act on a fear that was already there.",
       "explanation_fa": "ترسِ گشتاسپ از اسفندیار پیش از هشدار وجود داشت. کلماتِ جاماسپ به او اجازه داد بر اساسِ ترسی که از پیش داشت عمل کند.",
       "explanation_tg": "Тарси Гуштосп аз Исфандиёр пеш аз ҳушдор вуҷуд дошт. Суханони Ҷомосп ба ӯ иҷозат дод бар асоси тарсе ки аллакай дошт амал кунад.",
@@ -394,24 +394,24 @@
       "question_fa": "چه کسی شهادتِ دروغ علیهِ اسفندیار داد که منجر به زندانی‌اش در گنبدان شد؟",
       "question_tg": "Кӣ шаҳодати дурӯғ бар зидди Исфандиёр дод ки ба зиндонии ӯ дар Гунбадан оварда шуд?",
       "answers": [
-        "Jamasp the astrologer",
-        "A courtier named Gurz-Ahmar",
         "Arjasp's ambassador",
-        "An unnamed general who feared Esfandiyar"
+        "An unnamed general who feared Esfandiyar",
+        "Jamasp the astrologer",
+        "A courtier named Gurz-Ahmar"
       ],
       "answers_fa": [
-        "جاماسپ ستاره‌شناس",
-        "درباریِ به نامِ گرزِ احمر",
         "سفیرِ ارجاسپ",
-        "سردارِ بی‌نامی که از اسفندیار می‌ترسید"
+        "سردارِ بی‌نامی که از اسفندیار می‌ترسید",
+        "جاماسپ ستاره‌شناس",
+        "درباریِ به نامِ گرزِ احمر"
       ],
       "answers_tg": [
-        "Ҷомосп ситорашинос",
-        "Дарборие ба номи Гурзи Аҳмар",
         "Сафири Арҷосп",
-        "Сардори безоме ки аз Исфандиёр метарсид"
+        "Сардори безоме ки аз Исфандиёр метарсид",
+        "Ҷомосп ситорашинос",
+        "Дарборие ба номи Гурзи Аҳмар"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "'When a courtier named Gurz-Ahmar provided false testimony against him, Goshtasp had him imprisoned at Gumbadan without trial.'",
       "explanation_fa": "«وقتی درباریِ به نامِ گرزِ احمر علیهش شهادتِ دروغ داد، گشتاسپ او را بدونِ محاکمه در گنبدان زندانی کرد.»",
       "explanation_tg": "«Вақте дарборие ба номи Гурзи Аҳмар бар зиддаш шаҳодати дурӯғ дод, Гуштосп ӯро бидуни муҳокима дар Гунбадан зиндонӣ кард.»",
@@ -429,24 +429,24 @@
       "question_fa": "فصل توصیف می‌کند که زرتشت به سؤالاتِ دربار «با دقتِ مردی که اعتقاد را گزارش می‌کرد نه اجرا می‌کرد» پاسخ داد. چه چیزی گزارش کردن را از اجرا کردن متمایز می‌کند؟",
       "question_tg": "Фасл тавсиф мекунад ки Зардушт ба саволоти дарбор «бо дақиқати марде ки эътиқодро гузориш мекард на иҷро» ҷавоб дод. Чӣ чиз гузориш карданро аз иҷро кардан фарқ мекунад?",
       "answers": [
-        "Reporting is quieter and uses fewer words",
-        "He spoke as someone testifying to what is true rather than arguing for it — the difference between conviction and persuasion",
+        "He used only Avestan language to prove authenticity",
         "Reporting requires evidence, performance requires rhetoric",
-        "He used only Avestan language to prove authenticity"
+        "Reporting is quieter and uses fewer words",
+        "He spoke as someone testifying to what is true rather than arguing for it — the difference between conviction and persuasion"
       ],
       "answers_fa": [
-        "گزارش آرام‌تر است و کلماتِ کمتری استفاده می‌کند",
-        "به عنوانِ کسی صحبت کرد که از آنچه درست است شهادت می‌دهد نه استدلال می‌کند — تفاوتِ بین اعتقاد و متقاعدسازی",
+        "فقط از زبانِ اوستایی برای اثباتِ اصالت استفاده کرد",
         "گزارش به شاهد نیاز دارد، اجرا به بلاغت",
-        "فقط از زبانِ اوستایی برای اثباتِ اصالت استفاده کرد"
+        "گزارش آرام‌تر است و کلماتِ کمتری استفاده می‌کند",
+        "به عنوانِ کسی صحبت کرد که از آنچه درست است شهادت می‌دهد نه استدلال می‌کند — تفاوتِ بین اعتقاد و متقاعدسازی"
       ],
       "answers_tg": [
-        "Гузориш оромтар аст ва калимаҳои камтар истифода мекунад",
-        "Ҳамчун касе гап зад ки ба он чи дуруст аст гувоҳӣ медиҳад на далел меоварад — тафовути байни эътиқод ва мутақоидсозӣ",
+        "Танҳо аз забони Авастоӣ барои исботи аслият истифода кард",
         "Гузориш ба шоҳид ниёз дорад, иҷро ба балоғат",
-        "Танҳо аз забони Авастоӣ барои исботи аслият истифода кард"
+        "Гузориш оромтар аст ва калимаҳои камтар истифода мекунад",
+        "Ҳамчун касе гап зад ки ба он чи дуруст аст гувоҳӣ медиҳад на далел меоварад — тафовути байни эътиқод ва мутақоидсозӣ"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "A performer is uncertain and needs to convince. A reporter is certain and merely describes. Zoroaster's answers had the quality of certainty, not persuasion.",
       "explanation_fa": "اجراکننده نامطمئن است و باید متقاعد کند. گزارش‌دهنده مطمئن است و صرفاً توصیف می‌کند. پاسخ‌های زرتشت ویژگیِ قطعیت داشت، نه متقاعدسازی.",
       "explanation_tg": "Иҷрокунанда номутмаин аст ва бояд мутақоид кунад. Гузоришдиҳанда мутмаин аст ва танҳо тавсиф мекунад. Ҷавобҳои Зардушт сифати қатъиятро дошт, на мутақоидсозӣ.",
@@ -464,24 +464,24 @@
       "question_fa": "فصل رابطه‌ی گشتاسپ و اسفندیار را «دوایری که به آرامی تنگ می‌شوند» توصیف می‌کند. پیامدی که این دوایر به سمتِ آن همگرا می‌شوند چیست؟",
       "question_tg": "Фасл муносибати Гуштосп ва Исфандиёрро «доираҳое ки оҳиста танг мешаванд» тавсиф мекунад. Оқибате ки ин доираҳо ба сӯи он ҳамгиро мешаванд чист?",
       "answers": [
-        "Esfandiyar will eventually kill his father",
-        "Goshtasp will send Esfandiyar on a mission he knows will kill him — the clash with Rostam",
         "Esfandiyar will refuse his father and be exiled permanently",
-        "The two will reconcile once Goshtasp dies"
+        "Esfandiyar will eventually kill his father",
+        "The two will reconcile once Goshtasp dies",
+        "Goshtasp will send Esfandiyar on a mission he knows will kill him — the clash with Rostam"
       ],
       "answers_fa": [
-        "اسفندیار در نهایت پدرش را خواهد کشت",
-        "گشتاسپ اسفندیار را به مأموریتی می‌فرستد که می‌داند او را خواهد کشت — رویارویی با رستم",
         "اسفندیار پدرش را رد خواهد کرد و برای همیشه تبعید می‌شود",
-        "وقتی گشتاسپ می‌میرد آشتی خواهند کرد"
+        "اسفندیار در نهایت پدرش را خواهد کشت",
+        "وقتی گشتاسپ می‌میرد آشتی خواهند کرد",
+        "گشتاسپ اسفندیار را به مأموریتی می‌فرستد که می‌داند او را خواهد کشت — رویارویی با رستم"
       ],
       "answers_tg": [
-        "Исфандиёр дар ниҳоят падарашро мекушад",
-        "Гуштосп Исфандиёрро ба мӯҳимияте мефиристад ки медонад ӯро мекушад — рӯёрӯйи бо Рустам",
         "Исфандиёр падарашро рад мекунад ва барои ҳамеша табъид мешавад",
-        "Вақте Гуштосп мемирад осоиш мебинанд"
+        "Исфандиёр дар ниҳоят падарашро мекушад",
+        "Вақте Гуштосп мемирад осоиш мебинанд",
+        "Гуштосп Исфандиёрро ба мӯҳимияте мефиристад ки медонад ӯро мекушад — рӯёрӯйи бо Рустам"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The circles tighten to a final command: bring Rostam in chains. Jamasp said it would kill Esfandiyar. Goshtasp gave the command anyway.",
       "explanation_fa": "دوایر به فرمانِ نهایی تنگ می‌شوند: رستم را با زنجیر بیاور. جاماسپ گفت اسفندیار را می‌کشد. گشتاسپ باز هم فرمان داد.",
       "explanation_tg": "Доираҳо ба фармони ниҳоӣ танг мешаванд: Рустамро бо занҷир биёр. Ҷомосп гуфт Исфандиёрро мекушад. Гуштосп боз ҳам фармон дод.",
@@ -499,22 +499,22 @@
       "question_fa": "اسفندیار واقعاً به گسترشِ دین اعتقاد داشت. فصل مأموریت را هم «واقعی» هم «از نظرِ سیاسی مناسب» می‌نامد. چگونه می‌تواند هر دو باشد؟",
       "question_tg": "Исфандиёр воқеан ба паҳни дин эътиқод дошт. Фасл мӯҳимиятро ҳам «воқеӣ» ҳам «аз назари сиёсӣ мувофиқ» меномад. Чӣ тавр метавонад ҳарду бошад?",
       "answers": [
-        "Ferdowsi is being ironic — the mission was not actually genuine",
+        "The missions were genuine but their timing was politically manipulated",
         "A person's sincere motivation and a ruler's political calculation can align perfectly on the same action — the faith spread genuinely while Esfandiyar was also kept away from the throne",
         "Goshtasp converted Esfandiyar to serve his political purposes",
-        "The missions were genuine but their timing was politically manipulated"
+        "Ferdowsi is being ironic — the mission was not actually genuine"
       ],
       "answers_fa": [
-        "فردوسی کنایه می‌زند — مأموریت در واقع واقعی نبود",
+        "مأموریت‌ها واقعی بودند اما زمان‌بندی‌شان از نظرِ سیاسی دستکاری شده بود",
         "انگیزه‌ی صادقانه‌ی یک شخص و محاسبه‌ی سیاسیِ یک حاکم می‌توانند بر روی یک عمل کاملاً هم‌راستا شوند — دین به صورتِ واقعی گسترش یافت در حالی که اسفندیار هم از تخت دور نگه داشته شد",
         "گشتاسپ اسفندیار را برای اهدافِ سیاسی‌اش تبدیل کرده بود",
-        "مأموریت‌ها واقعی بودند اما زمان‌بندی‌شان از نظرِ سیاسی دستکاری شده بود"
+        "فردوسی کنایه می‌زند — مأموریت در واقع واقعی نبود"
       ],
       "answers_tg": [
-        "Фирдавсӣ киноя мезанад — мӯҳимият дар асл воқеӣ набуд",
+        "Мӯҳимиятҳо воқеӣ буданд аммо вақтбандиашон аз назари сиёсӣ дастакорӣ шуда буд",
         "Нияти ростини як шахс ва ҳисоби сиёсии як ҳоким метавонанд дар як амал комилан ҳамосу шаванд — дин воқеан паҳн шуд дар ҳоле ки Исфандиёр ҳам аз тахт дур нигоҳ дошта шуд",
         "Гуштосп Исфандиёрро барои мақсадҳои сиёсиаш табдил карда буд",
-        "Мӯҳимиятҳо воқеӣ буданд аммо вақтбандиашон аз назари сиёсӣ дастакорӣ шуда буд"
+        "Фирдавсӣ киноя мезанад — мӯҳимият дар асл воқеӣ набуд"
       ],
       "correct_answer": 1,
       "explanation": "The mission was both: genuinely holy for Esfandiyar, politically convenient for Goshtasp. The chapter doesn't force a choice — both things were true simultaneously.",
@@ -535,23 +535,23 @@
       "question_tg": "Пас аз он ки Гуштосп динро дар қаламрав ташкил кард, фасл се амали мушаххасро рӯйхат мекунад. Онҳо чӣ буданд?",
       "answers": [
         "A new calendar, new laws, new courts based on the Avesta",
-        "Fire temples established across Iran, the Avesta distributed, Esfandiyar sent to spread the Good Religion",
         "Zoroaster made chief minister, all other faiths outlawed, sacred fires lit in every city",
-        "All Magi replaced, old fires extinguished, new temples built"
+        "All Magi replaced, old fires extinguished, new temples built",
+        "Fire temples established across Iran, the Avesta distributed, Esfandiyar sent to spread the Good Religion"
       ],
       "answers_fa": [
         "تقویمِ جدید، قوانینِ جدید، دادگاه‌های جدید بر اساسِ اوستا",
-        "آتشکده‌ها در سراسرِ ایران برقرار شدند، اوستا توزیع شد، اسفندیار برای گسترشِ دینِ نیک فرستاده شد",
         "زرتشت وزیرِ اعظم شد، همه‌ی ادیانِ دیگر ممنوع شدند، آتش‌های مقدس در هر شهری روشن شدند",
-        "تمامِ موبدان جایگزین شدند، آتش‌های قدیمی خاموش شدند، معابدِ جدید ساخته شدند"
+        "تمامِ موبدان جایگزین شدند، آتش‌های قدیمی خاموش شدند، معابدِ جدید ساخته شدند",
+        "آتشکده‌ها در سراسرِ ایران برقرار شدند، اوستا توزیع شد، اسفندیار برای گسترشِ دینِ نیک فرستاده شد"
       ],
       "answers_tg": [
         "Тақвими нав, қонунҳои нав, додгоҳҳои нав бар асоси Авасто",
-        "Оташкадаҳо дар саросари Эрон барқарор шуданд, Авасто тақсим шуд, Исфандиёр барои паҳни дини Нек фиристода шуд",
         "Зардушт вазири аъзам шуд, ҳама адёни дигар манъ шуданд, оташҳои муқаддас дар ҳар шаҳре равшан шуданд",
-        "Тамоми муведон иваз шуданд, оташҳои кӯҳна хомӯш шуданд, маъбадҳои нав сохта шуданд"
+        "Тамоми муведон иваз шуданд, оташҳои кӯҳна хомӯш шуданд, маъбадҳои нав сохта шуданд",
+        "Оташкадаҳо дар саросари Эрон барқарор шуданд, Авасто тақсим шуд, Исфандиёр барои паҳни дини Нек фиристода шуд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "'Fire temples were established across Iran. The Avesta was distributed. Esfandiyar was sent to bring the Good Religion to the unconverted kingdoms.'",
       "explanation_fa": "«آتشکده‌ها در سراسرِ ایران برقرار شدند. اوستا توزیع شد. اسفندیار برای آوردنِ دینِ نیک به قلمروهای تبدیل‌نشده فرستاده شد.»",
       "explanation_tg": "«Оташкадаҳо дар саросари Эрон барқарор шуданд. Авасто тақсим шуд. Исфандиёр барои овардани дини Нек ба қаламравҳои табдилнашуда фиристода шуд.»",

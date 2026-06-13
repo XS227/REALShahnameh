@@ -6,12 +6,12 @@
       "quiz_part": 1,
       "question": "How many labours (Haft Khan) does Rostam complete?",
       "answers": [
-        "Seven",
         "Five",
+        "Seven",
         "Three",
         "Twelve"
       ],
-      "correct_answer": 0,
+      "correct_answer": 1,
       "explanation": "Haft Khan — seven labours.",
       "reward": {
         "xp": 150,
@@ -21,14 +21,14 @@
       "question_fa": "رستم چند مرحله از هفت‌خان را پشت سر گذاشت؟",
       "question_tg": "Рустам чанд марҳалаи Ҳафтхонро паси сар гузошт?",
       "answers_fa": [
-        "هفت",
         "پنج",
+        "هفت",
         "سه",
         "دوازده"
       ],
       "answers_tg": [
-        "Ҳафт",
         "Панҷ",
+        "Ҳафт",
         "Се",
         "Дувоздаҳ"
       ],
@@ -42,11 +42,11 @@
       "question": "What is the name of Rostam's horse?",
       "answers": [
         "Borak",
+        "Tahmeh",
         "Rakhsh",
-        "Asbi",
-        "Tahmeh"
+        "Asbi"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "Rakhsh, the storm-coloured stallion.",
       "reward": {
         "xp": 170,
@@ -57,123 +57,18 @@
       "question_tg": "Номи аспи Рустам чист?",
       "answers_fa": [
         "برق",
+        "تهمه",
         "رخش",
-        "اسبی",
-        "تهمه"
+        "اسبی"
       ],
       "answers_tg": [
         "Барқ",
+        "Таҳма",
         "Рахш",
-        "Асбӣ",
-        "Таҳма"
+        "Асбӣ"
       ],
       "explanation_fa": "رخش، اسب طوفان‌رنگ.",
       "explanation_tg": "Рахш, аспи тӯфонранг."
-    },
-    {
-      "id": "rostam-3",
-      "chapter_slug": "rostam",
-      "quiz_part": 3,
-      "question": "Which div does Rostam slay in his last great labour?",
-      "answers": [
-        "Akvan Div",
-        "Arzhang",
-        "White Div",
-        "Bid"
-      ],
-      "correct_answer": 2,
-      "explanation": "The White Div of Mazandaran.",
-      "reward": {
-        "xp": 190,
-        "real": 85
-      },
-      "difficulty": "medium",
-      "question_fa": "رستم در آخرین مرحله‌ی بزرگش کدام دیو را کشت؟",
-      "question_tg": "Рустам дар охирин марҳалаи бузургаш кадом девро кушт?",
-      "answers_fa": [
-        "اکوان دیو",
-        "ارژنگ",
-        "دیو سفید",
-        "بید"
-      ],
-      "answers_tg": [
-        "Аквон-дев",
-        "Аржанг",
-        "Диви Сафед",
-        "Бид"
-      ],
-      "explanation_fa": "دیو سفید مازندران.",
-      "explanation_tg": "Диви Сафеди Мозандарон."
-    },
-    {
-      "id": "rostam-4",
-      "chapter_slug": "rostam",
-      "quiz_part": 4,
-      "question": "From what land is Rostam's mother?",
-      "answers": [
-        "Samangan",
-        "Turan",
-        "Mazandaran",
-        "Kabul"
-      ],
-      "correct_answer": 3,
-      "explanation": "Rudabeh of Kabul.",
-      "reward": {
-        "xp": 210,
-        "real": 95
-      },
-      "difficulty": "medium",
-      "question_fa": "مادر رستم از کدام سرزمین است؟",
-      "question_tg": "Модари Рустам аз кадом сарзамин аст?",
-      "answers_fa": [
-        "سمنگان",
-        "توران",
-        "مازندران",
-        "کابل"
-      ],
-      "answers_tg": [
-        "Самангон",
-        "Турон",
-        "Мозандарон",
-        "Кобул"
-      ],
-      "explanation_fa": "رودابه‌ی کابلی.",
-      "explanation_tg": "Рӯдобаи Кобулӣ."
-    },
-    {
-      "id": "rostam-5",
-      "chapter_slug": "rostam",
-      "quiz_part": 5,
-      "question": "How is Rostam finally killed?",
-      "answers": [
-        "By a pit of spears",
-        "By a serpent",
-        "By an arrow",
-        "By poison"
-      ],
-      "correct_answer": 0,
-      "explanation": "Trapped in a pit of spears by his half-brother Shaghad.",
-      "reward": {
-        "xp": 230,
-        "real": 105
-      },
-      "difficulty": "hard",
-      "question_fa": "رستم سرانجام چگونه کشته شد؟",
-      "question_tg": "Рустам дар охир чӣ тавр кушта шуд?",
-      "answers_fa": [
-        "در چاه نیزه",
-        "توسط مار",
-        "با تیر",
-        "با زهر"
-      ],
-      "answers_tg": [
-        "Дар чоҳи найза",
-        "Тавассути мор",
-        "Бо тир",
-        "Бо заҳр"
-      ],
-      "explanation_fa": "در چاهی از نیزه به دام افتاد توسط برادر ناتنی‌اش شغاد.",
-      "explanation_tg": "Дар чоҳи найза ба дом афтод ба дасти бародари нотании ӯ Шағод."
     },
     {
       "id": "rostam-e3",
@@ -184,24 +79,24 @@
       "question_fa": "کدام حیوان را رخش در حالی که رستم خوابیده بود در طولِ هفت خان کشت؟",
       "question_tg": "Кадом ҳайвонро Рахш дар ҳоле ки Рустам хобида буд дар тӯли Ҳафтхон кушт?",
       "answers": [
-        "A dragon",
         "A wolf",
         "A lion",
-        "A boar"
+        "A boar",
+        "A dragon"
       ],
       "answers_fa": [
-        "اژدها",
         "گرگ",
         "شیر",
-        "گراز"
+        "گراز",
+        "اژدها"
       ],
       "answers_tg": [
-        "Аждаҳо",
         "Гург",
         "Шер",
-        "Гурӯз"
+        "Гурӯз",
+        "Аждаҳо"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "The first of Rostam's Seven Labours: Rakhsh killed a lion while Rostam slept, then woke him.",
       "explanation_fa": "اولین خانِ هفت‌خانِ رستم: رخش شیری را در حالی که رستم خوابیده بود کشت، سپس او را بیدار کرد.",
       "explanation_tg": "Аввалин хони Ҳафтхони Рустам: Рахш шере ки дар ҳоле ки Рустам хобида буд кушт, сипас ӯро бедор кард.",
@@ -209,6 +104,41 @@
         "xp": 170,
         "real": 75
       }
+    },
+    {
+      "id": "rostam-3",
+      "chapter_slug": "rostam",
+      "quiz_part": 3,
+      "question": "Which div does Rostam slay in his last great labour?",
+      "answers": [
+        "White Div",
+        "Arzhang",
+        "Akvan Div",
+        "Bid"
+      ],
+      "correct_answer": 0,
+      "explanation": "The White Div of Mazandaran.",
+      "reward": {
+        "xp": 190,
+        "real": 85
+      },
+      "difficulty": "medium",
+      "question_fa": "رستم در آخرین مرحله‌ی بزرگش کدام دیو را کشت؟",
+      "question_tg": "Рустам дар охирин марҳалаи бузургаш кадом девро кушт?",
+      "answers_fa": [
+        "دیو سفید",
+        "ارژنگ",
+        "اکوان دیو",
+        "بید"
+      ],
+      "answers_tg": [
+        "Диви Сафед",
+        "Аржанг",
+        "Аквон-дев",
+        "Бид"
+      ],
+      "explanation_fa": "دیو سفید مازندران.",
+      "explanation_tg": "Диви Сафеди Мозандарон."
     },
     {
       "id": "rostam-m3",
@@ -219,24 +149,24 @@
       "question_fa": "فصل می‌گوید فردوسی از رستم برای پرسیدنِ چه سؤالی استفاده می‌کند؟",
       "question_tg": "Фасл мегӯяд Фирдавсӣ аз Рустам барои пурсидани кадом савол истифода мекунад?",
       "answers": [
-        "What does it mean to be the strongest warrior in history?",
         "What does it cost to be the one who holds the world together when the world will not hold itself?",
         "Is loyalty to a corrupt king still loyalty?",
+        "What does it mean to be the strongest warrior in history?",
         "How does a man survive immortality?"
       ],
       "answers_fa": [
-        "قوی‌ترین جنگجوی تاریخ بودن چه معنایی دارد؟",
         "هزینه‌ی اینکه کسی باشی که دنیا را کنار هم نگه می‌دارد وقتی دنیا نمی‌خواهد خودش را نگه دارد چیست؟",
         "وفاداری به شاهِ فاسد هنوز وفاداری است؟",
+        "قوی‌ترین جنگجوی تاریخ بودن چه معنایی دارد؟",
         "یک مرد چگونه جاودانگی را تحمل می‌کند؟"
       ],
       "answers_tg": [
-        "Қавитарин ҷангӣ дар таърих будан чӣ маъно дорад?",
         "Ҳазинаи ин ки касе бошӣ ки дунёро якҷо нигоҳ медорад вақте дунё намехоҳад худашро нигоҳ дорад чист?",
         "Вафодорӣ ба подшоҳи фосид ҳанӯз вафодорӣ аст?",
+        "Қавитарин ҷангӣ дар таърих будан чӣ маъно дорад?",
         "Як мард чӣ тавр ҷовидонагиро таҳаммул мекунад?"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "'Ferdowsi uses Rostam to ask a question the Shahnameh never answers directly: what does it cost to be the one who holds the world together when the world will not hold itself?'",
       "explanation_fa": "«فردوسی از رستم برای پرسیدنِ سؤالی استفاده می‌کند که شاهنامه هرگز مستقیماً پاسخ نمی‌دهد: هزینه‌ی اینکه کسی باشی که دنیا را کنار هم نگه می‌دارد وقتی دنیا نمی‌خواهد خودش را نگه دارد چیست؟»",
       "explanation_tg": "«Фирдавсӣ аз Рустам барои пурсидани саволе истифода мекунад ки Шоҳнома ҳаргиз мустақиман ҷавоб намедиҳад: ҳазинаи ин ки касе бошӣ ки дунёро якҷо нигоҳ медорад чист?»",
@@ -244,6 +174,41 @@
         "xp": 230,
         "real": 105
       }
+    },
+    {
+      "id": "rostam-4",
+      "chapter_slug": "rostam",
+      "quiz_part": 4,
+      "question": "From what land is Rostam's mother?",
+      "answers": [
+        "Mazandaran",
+        "Samangan",
+        "Kabul",
+        "Turan"
+      ],
+      "correct_answer": 2,
+      "explanation": "Rudabeh of Kabul.",
+      "reward": {
+        "xp": 210,
+        "real": 95
+      },
+      "difficulty": "medium",
+      "question_fa": "مادر رستم از کدام سرزمین است؟",
+      "question_tg": "Модари Рустам аз кадом сарзамин аст?",
+      "answers_fa": [
+        "مازندران",
+        "سمنگان",
+        "کابل",
+        "توران"
+      ],
+      "answers_tg": [
+        "Мозандарон",
+        "Самангон",
+        "Кобул",
+        "Турон"
+      ],
+      "explanation_fa": "رودابه‌ی کابلی.",
+      "explanation_tg": "Рӯдобаи Кобулӣ."
     },
     {
       "id": "rostam-m4",
@@ -254,22 +219,22 @@
       "question_fa": "در هفت خان، رستم جادوگر را در چهارمین خان چگونه شکست داد؟",
       "question_tg": "Дар Ҳафтхон, Рустам ҷодугарро дар чаҳорумин хон чӣ тавр шикаст дод?",
       "answers": [
-        "He cut her in half with his sword",
         "He trapped her in a circle of fire",
+        "Rakhsh trampled her before Rostam woke",
         "He spoke a name of God and her false form dissolved",
-        "Rakhsh trampled her before Rostam woke"
+        "He cut her in half with his sword"
       ],
       "answers_fa": [
-        "با شمشیر نصفش کرد",
         "در حلقه‌ای از آتش به دام انداخت",
+        "رخش قبل از اینکه رستم بیدار شود او را لگدمال کرد",
         "نامِ خداوند را گفت و شکلِ دروغینش از هم پاشید",
-        "رخش قبل از اینکه رستم بیدار شود او را لگدمال کرد"
+        "با شمشیر نصفش کرد"
       ],
       "answers_tg": [
-        "Бо шамшер нисфаш кард",
         "Дар доираи оташ ба дом андохт",
+        "Рахш пеш аз он ки Рустам бедор шавад лагадмолаш кард",
         "Номи Худоро гуфт ва шакли дурӯғинаш аз ҳам пошид",
-        "Рахш пеш аз он ки Рустам бедор шавад лагадмолаш кард"
+        "Бо шамшер нисфаш кард"
       ],
       "correct_answer": 2,
       "explanation": "The fourth labour: a sorceress appeared as a beautiful young woman. Rostam spoke a name of God; the false form dissolved.",
@@ -289,22 +254,22 @@
       "question_fa": "رستم از چه چیزی برای بازگرداندنِ بیناییِ تمامِ لشکرِ کورشده‌ی کی‌کاووس استفاده کرد؟",
       "question_tg": "Рустам аз чӣ барои баргардонидани биноии тамоми лашкари кӯрши Кай Ковус истифода кард?",
       "answers": [
-        "Holy water from a sacred spring in Mazandaran",
-        "Three drops of the White Demon's liver-blood dripped into each eye",
         "The Simorgh's healing breath, brought in a vessel",
-        "A root found in the Mazandaran forest"
+        "Three drops of the White Demon's liver-blood dripped into each eye",
+        "A root found in the Mazandaran forest",
+        "Holy water from a sacred spring in Mazandaran"
       ],
       "answers_fa": [
-        "آبِ مقدس از چشمه‌ای مقدس در مازندران",
-        "سه قطره خونِ جگرِ دیوِ سپید که در هر چشمی چکانده شد",
         "نفسِ شفابخشِ سیمرغ که در ظرفی آورده شد",
-        "ریشه‌ای که در جنگلِ مازندران پیدا شد"
+        "سه قطره خونِ جگرِ دیوِ سپید که در هر چشمی چکانده شد",
+        "ریشه‌ای که در جنگلِ مازندران پیدا شد",
+        "آبِ مقدس از چشمه‌ای مقدس در مازندران"
       ],
       "answers_tg": [
-        "Оби муқаддас аз чашмаи муқаддас дар Мозандарон",
-        "Се қатра хуни ҷигари Деви Сапед ки дар ҳар чашме чаконда шуд",
         "Нафаси шифобахши Симурғ ки дар зарфе оварда шуд",
-        "Решае ки дар ҷангали Мозандарон ёфта шуд"
+        "Се қатра хуни ҷигари Деви Сапед ки дар ҳар чашме чаконда шуд",
+        "Решае ки дар ҷангали Мозандарон ёфта шуд",
+        "Оби муқаддас аз чашмаи муқаддас дар Мозандарон"
       ],
       "correct_answer": 1,
       "explanation": "Rostam tore out Div-e Sepid's liver, brought the blood back, and dropped three drops into each blinded eye. Sight returned.",
@@ -325,23 +290,23 @@
       "question_tg": "Фасл мегӯяд куштанҳои Рустам бо гузашти вақт «вазнинтар» мешавад. Кадом ду марг мушаххасан ҳамчун вазнинтарин зикр шудаанд?",
       "answers": [
         "Div-e Sepid and the warden of Mazandaran",
-        "Sohrab his own son and Esfandiyar the righteous man his equal",
+        "Akvan the Div and Piran Wiseh",
         "Kay Kavus's guard and Afrasiab's general",
-        "Akvan the Div and Piran Wiseh"
+        "Sohrab his own son and Esfandiyar the righteous man his equal"
       ],
       "answers_fa": [
         "دیوِ سپید و نگهبانِ مازندران",
-        "سهراب پسرش و اسفندیار مردِ پرهیزکاری که برابرش بود",
+        "اکوان دیو و پیرانِ ویسه",
         "نگهبانِ کی‌کاووس و سرداری از افراسیاب",
-        "اکوان دیو و پیرانِ ویسه"
+        "سهراب پسرش و اسفندیار مردِ پرهیزکاری که برابرش بود"
       ],
       "answers_tg": [
         "Деви Сапед ва посбони Мозандарон",
-        "Суҳроб писараш ва Исфандиёр марди парезгоре ки ба ӯ баробар буд",
+        "Аквон дев ва Пирони Виса",
         "Посбони Кай Ковус ва сардоре аз Афросиёб",
-        "Аквон дев ва Пирони Виса"
+        "Суҳроб писараш ва Исфандиёр марди парезгоре ки ба ӯ баробар буд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The chapter says 'He meets his own son Sohrab on the battlefield and kills him. He meets Esfandiyar, the righteous man his equal, and is forced to destroy him too. Each killing is heavier than the one before.'",
       "explanation_fa": "فصل می‌گوید «با پسرِ خودش سهراب روبرو می‌شود و او را می‌کشد. با اسفندیار، مردِ پرهیزکاری که برابرش بود، روبرو می‌شود و مجبور است او را هم نابود کند. هر کشتنی از قبلی سنگین‌تر است.»",
       "explanation_tg": "Фасл мегӯяд «Бо писари худаш Суҳроб рӯ ба рӯ мешавад ва ӯро мекушад. Бо Исфандиёр, марди парезгоре ки ба ӯ баробар буд, рӯ ба рӯ мешавад ва маҷбур аст ӯро ҳам нобуд кунад. Ҳар куштан аз қаблӣ вазнинтар аст.»",
@@ -360,23 +325,23 @@
       "question_tg": "Ҳафтхон ҳамчун «таълим» тавсиф шудааст, на пирӯзӣ. Чаҳорумин хон — посбон — мушаххасан чӣ омӯхт?",
       "answers": [
         "That physical strength can defeat any guardian",
-        "That a captured opponent can become a guide — enemies are not all to be destroyed",
         "That god's name dissolves illusion",
-        "That patience outlasts any test"
+        "That patience outlasts any test",
+        "That a captured opponent can become a guide — enemies are not all to be destroyed"
       ],
       "answers_fa": [
         "که قدرتِ جسمانی می‌تواند هر نگهبانی را شکست دهد",
-        "که دشمنِ اسیرشده می‌تواند راهنما شود — همه‌ی دشمنان نباید نابود شوند",
         "که نامِ خداوند توهم را از بین می‌برد",
-        "که صبر هر آزمونی را پشت سر می‌گذارد"
+        "که صبر هر آزمونی را پشت سر می‌گذارد",
+        "که دشمنِ اسیرشده می‌تواند راهنما شود — همه‌ی دشمنان نباید نابود شوند"
       ],
       "answers_tg": [
         "Ки қудрати ҷисмонӣ метавонад ҳар посбонеро шикаст диҳад",
-        "Ки душмани асирши метавонад роҳнамо шавад — ҳама душманон набояд нобуд шаванд",
         "Ки номи Худо тавҳумро аз байн мебарад",
-        "Ки сабр ҳар озмонеро паси сар мегузарад"
+        "Ки сабр ҳар озмонеро паси сар мегузарад",
+        "Ки душмани асирши метавонад роҳнамо шавад — ҳама душманон набояд нобуд шаванд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The warden was 'captured and converted into a guide.' Of all seven labours, this is the one where the opponent becomes an ally — a lesson that not every confrontation requires destruction.",
       "explanation_fa": "نگهبان «اسیر شد و به راهنما تبدیل شد.» از هر هفت خان، این تنها خانی است که حریف به متحد تبدیل می‌شود — درسی که هر رویارویی نیاز به نابودی ندارد.",
       "explanation_tg": "Посбон «асир шуд ва ба роҳнамо табдил шуд.» Аз ҳама ҳафт хон, ин ягона хонест ки рақиб ба муттаҳид табдил мешавад.",
@@ -394,24 +359,24 @@
       "question_fa": "کی‌کاووس با عقاب‌ها تختِ پروازی ساخت. تخت وقتی افتاد کجا فرود آمد؟",
       "question_tg": "Кай Ковус бо уқобон тахти парвозӣ сохт. Тахт вақте афтод дар куҷо фуруд омад?",
       "answers": [
-        "In the Caspian Sea",
         "In the desert of Turan",
         "Somewhere in China",
+        "In the Caspian Sea",
         "On Mount Alborz"
       ],
       "answers_fa": [
-        "در دریای خزر",
         "در بیابانِ توران",
         "جایی در چین",
+        "در دریای خزر",
         "بر کوهِ البرز"
       ],
       "answers_tg": [
-        "Дар Баҳри Хазар",
         "Дар биёбони Турон",
         "Ҷое дар Чин",
+        "Дар Баҳри Хазар",
         "Бар Кӯҳи Алборз"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "The throne fell and hit the earth somewhere in China. Kay Kavus lay in the wreckage, unhurt, waiting for Rostam to be dispatched again.",
       "explanation_fa": "تخت افتاد و جایی در چین به زمین خورد. کی‌کاووس در میانِ ویرانه‌ها، دست‌نخورده، دراز کشید و منتظرِ اعزامِ دوباره‌ی رستم ماند.",
       "explanation_tg": "Тахт афтод ва ҷое дар Чин ба замин расид. Кай Ковус дар миёни харобаҳо, дастнахурда, хобид ва интизори фиристодани дубораи Рустам монд.",
@@ -419,6 +384,41 @@
         "xp": 350,
         "real": 165
       }
+    },
+    {
+      "id": "rostam-5",
+      "chapter_slug": "rostam",
+      "quiz_part": 5,
+      "question": "How is Rostam finally killed?",
+      "answers": [
+        "By an arrow",
+        "By a serpent",
+        "By a pit of spears",
+        "By poison"
+      ],
+      "correct_answer": 2,
+      "explanation": "Trapped in a pit of spears by his half-brother Shaghad.",
+      "reward": {
+        "xp": 230,
+        "real": 105
+      },
+      "difficulty": "hard",
+      "question_fa": "رستم سرانجام چگونه کشته شد؟",
+      "question_tg": "Рустам дар охир чӣ тавр кушта шуд?",
+      "answers_fa": [
+        "با تیر",
+        "توسط مار",
+        "در چاه نیزه",
+        "با زهر"
+      ],
+      "answers_tg": [
+        "Бо тир",
+        "Тавассути мор",
+        "Дар чоҳи найза",
+        "Бо заҳр"
+      ],
+      "explanation_fa": "در چاهی از نیزه به دام افتاد توسط برادر ناتنی‌اش شغاد.",
+      "explanation_tg": "Дар чоҳи найза ба дом афтод ба дасти бародари нотании ӯ Шағод."
     },
     {
       "id": "rostam-h5",
@@ -429,24 +429,24 @@
       "question_fa": "سومین خانِ رستم نیاز به اعتماد به «وفادار» داشت. این وفادار که بود — و وفاداری چه نتیجه‌ای داد؟",
       "question_tg": "Сеюмин хони Рустам ниёз ба боварӣ ба «вафодор» дошт. Ин вафодор кӣ буд — ва вафодорӣ чӣ натиҷае дод?",
       "answers": [
-        "A converted demon who showed the safe path",
-        "Rakhsh, who fought the dragon when Rostam could not use conventional weapons",
         "A Zoroastrian priest who guided him through the dark",
-        "A warden who revealed the demon's weakness"
+        "A warden who revealed the demon's weakness",
+        "A converted demon who showed the safe path",
+        "Rakhsh, who fought the dragon when Rostam could not use conventional weapons"
       ],
       "answers_fa": [
-        "دیوِ به‌اسلام‌آمده‌ای که راهِ امن را نشان داد",
-        "رخش که اژدها را زمانی که رستم نمی‌توانست از سلاح‌های معمول استفاده کند جنگید",
         "کاهنِ زرتشتی که او را در تاریکی راهنمایی کرد",
-        "نگهبانی که ضعفِ دیو را فاش کرد"
+        "نگهبانی که ضعفِ دیو را فاش کرد",
+        "دیوِ به‌اسلام‌آمده‌ای که راهِ امن را نشان داد",
+        "رخش که اژدها را زمانی که رستم نمی‌توانست از سلاح‌های معمول استفاده کند جنگید"
       ],
       "answers_tg": [
-        "Деви ба дин гаштае ки роҳи амнро нишон дод",
-        "Рахш ки аждаҳоро вақте Рустам наметавонист аз силоҳҳои муқаррарӣ истифода кунад ҷангид",
         "Коҳини Зардуштие ки ӯро дар торикӣ роҳнамоӣ кард",
-        "Посбоне ки заъфи девро фош кард"
+        "Посбоне ки заъфи девро фош кард",
+        "Деви ба дин гаштае ки роҳи амнро нишон дод",
+        "Рахш ки аждаҳоро вақте Рустам наметавонист аз силоҳҳои муқаррарӣ истифода кунад ҷангид"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "'A dragon defeated by learning to trust the loyal.' Rakhsh's action was essential to the third labour — trusting the horse's judgment rather than acting alone.",
       "explanation_fa": "«اژدهایی که با آموختنِ اعتماد به وفادار شکست خورد.» عملِ رخش برای سومین خان ضروری بود — اعتماد به قضاوتِ اسب به جای تنها عمل کردن.",
       "explanation_tg": "«Аждаҳое ки бо омӯхтани боварӣ ба вафодор мағлуб шуд.» Амали Рахш барои сеюмин хон зарурӣ буд.",
@@ -464,24 +464,24 @@
       "question_fa": "فصل می‌گوید هر کشتنی که رستم می‌کند «از قبلی سنگین‌تر» می‌شود. این تجمع چه چیزی درباره‌ی تجربه‌ی رستم از قهرمانی نشان می‌دهد؟",
       "question_tg": "Фасл мегӯяд ҳар куштане ки Рустам мекунад «аз қаблӣ вазнинтар» мешавад. Ин тадриҷ чӣ дар бораи таҷрибаи Рустам аз қаҳрамонӣ нишон медиҳад?",
       "answers": [
-        "Rostam loses his skill gradually over time",
-        "Heroism in the Shahnameh accumulates cost — each act of power leaves a residue that cannot be undone",
         "Rostam becomes more powerful with each opponent",
-        "The Shahnameh presents heroism as joyful accomplishment"
+        "The Shahnameh presents heroism as joyful accomplishment",
+        "Heroism in the Shahnameh accumulates cost — each act of power leaves a residue that cannot be undone",
+        "Rostam loses his skill gradually over time"
       ],
       "answers_fa": [
-        "رستم به تدریج مهارتش را از دست می‌دهد",
-        "قهرمانی در شاهنامه هزینه جمع می‌کند — هر عملِ قدرت باقی‌مانده‌ای به جا می‌گذارد که نمی‌توان آن را بازگشت داد",
         "رستم با هر حریفی قدرتمندتر می‌شود",
-        "شاهنامه قهرمانی را به عنوانِ موفقیتِ شادمانه نشان می‌دهد"
+        "شاهنامه قهرمانی را به عنوانِ موفقیتِ شادمانه نشان می‌دهد",
+        "قهرمانی در شاهنامه هزینه جمع می‌کند — هر عملِ قدرت باقی‌مانده‌ای به جا می‌گذارد که نمی‌توان آن را بازگشت داد",
+        "رستم به تدریج مهارتش را از دست می‌دهد"
       ],
       "answers_tg": [
-        "Рустам тадриҷан маҳоратро аз даст медиҳад",
-        "Қаҳрамонӣ дар Шоҳнома ҳазина ҷамъ мекунад — ҳар амали қудрат боқимондае мегузорад ки баргашт надорад",
         "Рустам бо ҳар рақибе қавитар мешавад",
-        "Шоҳнома қаҳрамониро ҳамчун муваффақияти шодмона нишон медиҳад"
+        "Шоҳнома қаҳрамониро ҳамчун муваффақияти шодмона нишон медиҳад",
+        "Қаҳрамонӣ дар Шоҳнома ҳазина ҷамъ мекунад — ҳар амали қудрат боқимондае мегузорад ки баргашт надорад",
+        "Рустам тадриҷан маҳоратро аз даст медиҳад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "The chapter traces a trajectory — each major killing is heavier than the last. This is Ferdowsi's quiet answer to the chapter's question about cost.",
       "explanation_fa": "فصل یک مسیر را ردیابی می‌کند — هر کشتنِ اصلی از قبلی سنگین‌تر است. این پاسخِ آرامِ فردوسی به سؤالِ فصل درباره‌ی هزینه است.",
       "explanation_tg": "Фасл як масиреро пайгирӣ мекунад — ҳар куштани асосӣ аз қаблӣ вазнинтар аст. Ин ҷавоби ороми Фирдавсӣ ба саволи фасл дар бораи ҳазина аст.",
@@ -499,22 +499,22 @@
       "question_fa": "کدام یک از هفت خانِ رستم هفتمین و اوجِ نهایی بود؟",
       "question_tg": "Кадом яке аз Ҳафтхони Рустам ҳафтумин ва авҷи ниҳоии набард буд?",
       "answers": [
-        "The sorceress who offered rest",
+        "The demon general at the gates of Mazandaran",
         "The killing cold of a frozen pass",
         "Div-e Sepid the White Demon, whose liver-blood restored sight to the blinded army",
-        "The demon general at the gates of Mazandaran"
+        "The sorceress who offered rest"
       ],
       "answers_fa": [
-        "جادوگری که استراحت پیشنهاد داد",
+        "سردارِ دیو در دروازه‌های مازندران",
         "سرمای کشنده‌ی گردنه‌ای منجمد",
         "دیوِ سپید که خونِ جگرش بینایی را به لشکرِ کورشده برگرداند",
-        "سردارِ دیو در دروازه‌های مازندران"
+        "جادوگری که استراحت پیشنهاد داد"
       ],
       "answers_tg": [
-        "Ҷодугаре ки истироҳат пешниҳод дод",
+        "Сардори дев дар дарвозаҳои Мозандарон",
         "Сармои кушандаи гардании яхбаста",
         "Деви Сапед ки хуни ҷигараш биноиро ба лашкари кӯр баргардонд",
-        "Сардори дев дар дарвозаҳои Мозандарон"
+        "Ҷодугаре ки истироҳат пешниҳод дод"
       ],
       "correct_answer": 2,
       "explanation": "The seventh and climactic labour was Div-e Sepid. Rostam killed him and used his liver-blood to restore sight to Kay Kavus's entire blinded army.",

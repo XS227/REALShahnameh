@@ -64,7 +64,8 @@
       },
       "unlocks_codex": [
         "leopard-skin-lineage"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/1uQpbQCjTtM8vu_z7Ug1aVMSadBNcRqVF/view"
     },
     {
       "id": "army-of-light",
@@ -82,7 +83,8 @@
       },
       "unlocks_codex": [
         "hushang-army-codex"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/1akS-ObH1wZXgdcgjNcQhucPA3gfWZ8XN/view"
     },
     {
       "id": "into-the-demon-forest",
@@ -100,7 +102,8 @@
       },
       "unlocks_codex": [
         "black-div-codex"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/1Cm2XvEsEsALq52_A8IwqAdCMjh4MvaXP/view"
     },
     {
       "id": "fall-of-the-black-div",
@@ -118,7 +121,8 @@
       },
       "unlocks_codex": [
         "vengeance-complete"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/1y4XfklN7lILVOiaNMMJqYlHVeZVFZ3t9/view"
     },
     {
       "id": "a-world-reborn",
@@ -137,7 +141,8 @@
       "unlocks_codex": [
         "first-plough",
         "first-channel"
-      ]
+      ],
+      "video_url": "https://drive.google.com/file/d/19XVWAU6ZHcyJWXDYBTjqW2dHmq4pgTor/view"
     },
     {
       "id": "serpent-in-the-pass",
@@ -318,13 +323,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 8,
-        "label_en": "Reach Hushang LVL 8",
+        "target": 3,
+        "label_en": "Upgrade Hushang to Lv.3",
         "label_fa": "رسیدن به سطحِ ۸ هوشنگ",
         "label_tg": "Расидан ба сатҳи 8 Ҳушанг",
         "hint_en": "Upgrade Hushang in the Hero Collection tab. Each upgrade costs REAL tokens — tap and complete scenes to earn more.",
         "hint_fa": "هوشنگ را در بخش مجموعه‌ی قهرمانان ارتقا دهید. هر ارتقا به توکن REAL نیاز دارد — با ضربه زدن و صحنه‌ها بیشتر کسب کنید.",
-        "hint_tg": "Ҳушангро дар бахши Қаҳрамонон баланд баред. Ҳар баланд бардоштан ба токени REAL ниёз дорад — бо зарба задан ва саҳнаҳо бештар ба даст оред."
+        "hint_tg": "Ҳушангро дар бахши Қаҳрамонон баланд баред. Ҳар баланд бардоштан ба токени REAL ниёз дорад — бо зарба задан ва саҳнаҳо бештар ба даст оред.",
+        "hero_id": "hushang"
       },
       {
         "id": "iron-axe",

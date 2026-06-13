@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "mpr-e1",
+      "id": "mprs-e1",
       "chapter_slug": "mourning-pars",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "Who are the Parsis and how are they connected to the Arab conquest of Iran?",
-      "question_fa": "پارسیان چه کسانی هستند و چه ارتباطی با فتح عرب ایران دارند؟",
-      "question_tg": "Порсиён кистанд ва чӣ иртиботе бо фатҳи Арабии Эрон доранд?",
+      "question": "Who are the Parsis?",
+      "question_fa": "پارسیان (پارسیانِ هند) چه کسانی‌اند؟",
+      "question_tg": "Порсиён (Порсиёни Ҳинд) чӣ касонеанд?",
       "answers": [
-        "Zoroastrians who left Iran after the conquest, sailed to India, and still practice the ancient faith there today",
-        "Persian merchants who settled in Arab territory before the conquest and adopted Islam early",
-        "Iranian soldiers who converted to Islam and became the first Persian Muslim community",
-        "Descendants of the Sasanian royal family who fled to China and kept the old customs alive"
+        "Arab settlers who adopted Persian customs",
+        "Zoroastrians who refused to convert, took ships to Gujarat in India, and still practice the old faith there",
+        "The royal guard of the last Sasanian king",
+        "Persian-speaking Muslims of Baghdad"
       ],
       "answers_fa": [
-        "زرتشتیانی که پس از فتح از ایران رفتند، به هند کشتی سوار شدند و هنوز هم امروزه دین باستانی را در آنجا عبادت می‌کنند",
-        "تجار ایرانی که قبل از فتح در قلمرو عرب ساکن شدند و زود اسلام آوردند",
-        "سربازان ایرانی که به اسلام گروش کردند و اولین جامعه مسلمان ایرانی شدند",
-        "اعقاب خانواده سلطنتی ساسانی که به چین گریختند و آداب قدیمی را زنده نگه داشتند"
+        "مهاجرانِ عربی که آدابِ ایرانی گرفتند",
+        "زرتشتیانی که حاضر به تغییرِ دین نشدند، با کشتی به گجراتِ هند رفتند و هنوز آن‌جا آیینِ کهن را به جا می‌آورند",
+        "گاردِ شاهیِ واپسین شاهِ ساسانی",
+        "مسلمانانِ فارسی‌زبانِ بغداد"
       ],
       "answers_tg": [
-        "Зардуштиёне ки пас аз фатҳ аз Эрон рафтанд, ба Ҳинд киштӣ савор шуданд ва ҳанӯз ҳам имрӯз дини қадимиро дар он ҷо ибодат мекунанд",
-        "Тоҷирони Эронӣ ки пеш аз фатҳ дар қаламрови Арабӣ маскан гирифтанд ва зуд Ислом овардад",
-        "Сарбозони Эронӣ ки ба Ислом гузаштанд ва аввалин ҷамоати мусулмонони Эронӣ шуданд",
-        "Авлоди оилаи шоҳонаи Сосонӣ ки ба Чин гурехтанд ва одоби қадимиро зинда нигоҳ доштанд"
+        "Муҳоҷирони арабӣ ки одоби эронӣ гирифтанд",
+        "Зардуштиёне ки ҳозир ба тағйири дин нашуданд, бо киштӣ ба Гуҷароти Ҳинд рафтанд ва ҳанӯз он ҷо оини куҳанро ба ҷо меоваранд",
+        "Гарди шоҳии вопасин шоҳи сосонӣ",
+        "Мусулмонони форсизабони Бағдод"
       ],
-      "correct_answer": 0,
-      "explanation": "After the Arab conquest, a community of Zoroastrians who would not convert took ships from the Iranian coast and landed in Gujarat, India. Their descendants — the Parsis — still practice the Zoroastrian faith there today, still speak fragments of Middle Persian in their rituals. They are a living archive of what Pars was before the conquest.",
-      "explanation_fa": "پس از فتح عرب، جامعه‌ای از زرتشتیانی که تبدیل نمی‌شدند از ساحل ایران کشتی سوار شدند و در گجرات هند پیاده شدند. اعقابشان — پارسیان — هنوز هم امروزه در آنجا دین زرتشتی را عبادت می‌کنند، هنوز هم تکه‌هایی از فارسی میانه را در آیین‌هایشان صحبت می‌کنند. آنها آرشیو زنده‌ای از آنچه پارس قبل از فتح بود هستند.",
-      "explanation_tg": "Пас аз фатҳи Арабӣ, ҷамоате аз Зардуштиёне ки табдил намешуданд аз соҳили Эрон киштӣ савор шуданд ва дар Гуҷарот Ҳинд фаромаданд. Авлодашон — Порсиён — ҳанӯз ҳам имрӯз дар он ҷо дини Зардуштиро ибодат мекунанд.",
+      "correct_answer": 1,
+      "explanation": "The Parsis — the Persians of India — are Zoroastrians who would not convert. They took ships from the Iranian coast, landed in Gujarat, and are still there, a living archive of what Pars was.",
+      "explanation_fa": "پارسیان زرتشتیانی‌اند که تغییرِ دین را نپذیرفتند، به گجرات رفتند و هنوز آن‌جا هستند — بایگانیِ زنده‌ی پارس.",
+      "explanation_tg": "Порсиён зардуштиёнеанд ки тағйири динро напазируфтанд, ба Гуҷарот рафтанд ва ҳанӯз он ҷо ҳастанд — бойгонии зиндаи Порс.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "mpr-m1",
+      "id": "mprs-e2",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What did priests do with the sacred texts before the conquering army arrived?",
+      "question_fa": "موبدان پیش از رسیدنِ ارتشِ فاتح با متن‌های مقدس چه کردند؟",
+      "question_tg": "Мӯбадон пеш аз расидани лашкари фотеҳ бо матнҳои муқаддас чӣ карданд?",
+      "answers": [
+        "Sold them to Byzantine merchants",
+        "Burned them so no enemy could touch them",
+        "Translated them into Arabic for safety",
+        "Buried them under floors to hide them"
+      ],
+      "answers_fa": [
+        "به بازرگانانِ بیزانسی فروختندشان",
+        "سوزاندندشان تا دستِ هیچ دشمنی نرسد",
+        "برای امنیت به عربی ترجمه‌شان کردند",
+        "زیرِ کف‌ها دفنشان کردند تا پنهان بمانند"
+      ],
+      "answers_tg": [
+        "Ба тоҷирони бизантӣ фурӯхтандашон",
+        "Сӯзонданд то дасти ҳеҷ душмане нарасад",
+        "Барои амният ба арабӣ тарҷумаашон карданд",
+        "Зери фаршҳо дафнашон карданд то пинҳон бимонанд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The chronicles do not record the priest who buried the sacred texts under a floor before the army arrived — but that unrecorded act is exactly the kind of quiet preservation this chapter mourns and honors.",
+      "explanation_fa": "موبدی متن‌های مقدس را پیش از رسیدنِ ارتش زیرِ کف دفن کرد — کاری ثبت‌نشده که این فصل ارجش می‌نهد.",
+      "explanation_tg": "Мӯбаде матнҳои муқаддасро пеш аз расидани лашкар зери фарш дафн кард — коре сабтнашуда ки ин боб арҷаш мениҳад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "mprs-e3",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Which province 'had given its name to the whole civilization'?",
+      "question_fa": "کدام استان «نامش را به کلِ تمدن داده بود»؟",
+      "question_tg": "Кадом вилоят «номашро ба кулли тамаддун дода буд»?",
+      "answers": [
+        "Pars — the heartland, which became Fars under the caliphate",
+        "Khorasan — land of the rising sun",
+        "Mazandaran — the land of demons",
+        "Khuzestan — the land of sugar"
+      ],
+      "answers_fa": [
+        "پارس — قلبِ سرزمین، که زیرِ خلافت «فارس» شد",
+        "خراسان — سرزمینِ برآمدنِ خورشید",
+        "مازندران — سرزمینِ دیوان",
+        "خوزستان — سرزمینِ شکر"
+      ],
+      "answers_tg": [
+        "Порс — қалби сарзамин, ки зери хилофат «Форс» шуд",
+        "Хуросон — сарзамини баромадани хуршед",
+        "Мозандарон — сарзамини девон",
+        "Хузистон — сарзамини шакар"
+      ],
+      "correct_answer": 0,
+      "explanation": "Pars, the heartland province, gave its name to the whole civilization — Persia, Persian. Under the caliphate it became Fars, a province of someone else's empire.",
+      "explanation_fa": "پارس نامش را به کلِ تمدن داد — و زیرِ خلافت «فارس»، استانی از امپراتوریِ دیگران شد.",
+      "explanation_tg": "Порс номашро ба кулли тамаддун дод — ва зери хилофат «Форс», вилояте аз империяи дигарон шуд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "mprs-m1",
       "chapter_slug": "mourning-pars",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "The Shahnameh argues that the mourning of Pars produced something the Arab conquest could not destroy. What?",
-      "question_fa": "شاهنامه استدلال می‌کند که سوگ پارس چیزی تولید کرد که فتح عرب نتوانست نابود کند. چه چیزی؟",
-      "question_tg": "Шоҳнома истдлол мекунад ки сӯги Порс чизеро тавлид кард ки фатҳи Арабӣ натавонист нобуд кунад. Чӣ?",
+      "question": "How did conversion come to those who stayed in Iran?",
+      "question_fa": "تغییرِ دین برای آنان که در ایران ماندند چگونه آمد؟",
+      "question_tg": "Тағйири дин барои онон ки дар Эрон монданд чӣ гуна омад?",
       "answers": [
-        "The Shahnameh itself — a monument made of language and memory, harder to conquer than stone",
-        "A chain of fortified monasteries that preserved Zoroastrian texts in the mountains",
-        "A network of secret Zoroastrian communities that operated beneath Islamic rule for centuries",
-        "A hidden Sasanian prince who became the spiritual king of all Persians in exile"
+        "Instantly, by decree, within one year",
+        "Never — Iran remained Zoroastrian until modern times",
+        "Only at sword point, in a single great massacre",
+        "Slowly, generation by generation — through pressure, incentive, marriage, and the erosion of a world without institutions to sustain itself"
       ],
       "answers_fa": [
-        "خود شاهنامه — یادبودی ساخته شده از زبان و حافظه، سخت‌تر برای فتح از سنگ",
-        "زنجیره‌ای از صومعه‌های مستحکم که متون زرتشتی را در کوه‌ها حفظ کردند",
-        "شبکه‌ای از جوامع مخفی زرتشتی که برای قرن‌ها زیر حاکمیت اسلامی فعالیت کردند",
-        "یک شاهزاده مخفی ساسانی که شاه روحانی تمام ایرانیان در تبعید شد"
+        "فوری، با فرمان، در یک سال",
+        "هرگز — ایران تا دورانِ مدرن زرتشتی ماند",
+        "فقط به زورِ شمشیر، در یک کشتارِ بزرگ",
+        "آهسته، نسل به نسل — از راهِ فشار، مشوق، ازدواج و فرسایشِ جهانی که دیگر نهادی برای نگهداریِ خود نداشت"
       ],
       "answers_tg": [
-        "Худи шоҳнома — ёдбуде сохташуда аз забон ва хотира, душвортар барои фатҳ аз санг",
-        "Силсилаи хонақоҳҳои мустаҳкаме ки матнҳои Зардуштиро дар кӯҳҳо ҳифз карданд",
-        "Шабакае аз ҷамоатҳои пинҳонии Зардуштӣ ки барои садсолаҳо зери ҳукмронии Исломӣ фаъолият карданд",
-        "Шаҳзодаи пинҳонии Сосонӣ ки подшоҳи рӯҳонии тамоми Эрониёни дар табъид шуд"
+        "Фаврӣ, бо фармон, дар як сол",
+        "Ҳаргиз — Эрон то даврони модерн зардуштӣ монд",
+        "Танҳо ба зӯри шамшер, дар як куштори бузург",
+        "Оҳиста, насл ба насл — аз роҳи фишор, мушавviq, издивоҷ ва фарсоиши ҷаҳоне ки дигар ниҳоде барои нигаҳдории худ надошт"
       ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh is the Shahnameh's own answer to this question. Grief that cannot speak directly finds its way into story. The poem Ferdowsi spent thirty years writing is the monument that the conquest could not tear down — because it was made of language and memory, and those are harder to conquer than stone.",
-      "explanation_fa": "شاهنامه پاسخ خود شاهنامه به این سوال است. غمی که نمی‌تواند مستقیم صحبت کند راهش را به داستان پیدا می‌کند. شعری که فردوسی سی سال نوشتن آن صرف کرد یادبودی است که فتح نتوانست آن را خراب کند — چون از زبان و حافظه ساخته شده، و اینها سخت‌تر از سنگ برای فتح هستند.",
-      "explanation_tg": "Шоҳнома ҷавоби худи шоҳнома ба ин савол аст. Ғаме ки наметавонад мустақим сухан гӯяд роҳашро ба достон меёбад. Шеъре ки Фирдавсӣ сӣ сол навиштани онро сарф кард ёдбудест ки фатҳ натавонист онро хароб кунад.",
+      "correct_answer": 3,
+      "explanation": "Conversion came slowly, generation by generation, through pressure and incentive and marriage and the simple erosion of a world that no longer had institutions to sustain itself. Not one dramatic moment — a long fading.",
+      "explanation_fa": "تغییرِ دین آهسته آمد، نسل به نسل — فشار، مشوق، ازدواج و فرسایش؛ نه یک لحظه‌ی دراماتیک، یک محوشدنِ طولانی.",
+      "explanation_tg": "Тағйири дин оҳиста омад, насл ба насл — фишор, мушавviq, издивоҷ ва фарсоиш; на як лаҳзаи драматикӣ, як маҳвшудани тӯлонӣ.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "mpr-e2",
+      "id": "mprs-m2",
       "chapter_slug": "mourning-pars",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "What Iranian cultural elements survived the Arab conquest by persisting in daily life rather than in official religion?",
-      "question_fa": "چه عناصر فرهنگی ایرانی از فتح عرب با ماندن در زندگی روزمره به جای دین رسمی جان سالم به در بردند؟",
-      "question_tg": "Кадом унсурҳои фарҳангии Эронӣ аз фатҳи Арабӣ бо мондан дар зиндагии ҳаррӯза ба ҷои дини расмӣ ҷон солим ба дар бурданд?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What persisted in Iran long after the Zoroastrian faith faded from the cities?",
+      "question_fa": "چه چیزی در ایران تا مدت‌ها پس از محو شدنِ دینِ زرتشتی از شهرها پایید؟",
+      "question_tg": "Чӣ чизе дар Эрон то муддатҳо пас аз маҳв шудани дини зардуштӣ аз шаҳрҳо поид?",
       "answers": [
-        "Persian names, the Zoroastrian agricultural calendar, and old ritual practices that outlasted official conversion",
-        "The Zoroastrian priesthood, who simply changed their titles to Islamic religious terms",
-        "The Sasanian court hierarchy, which the Arab governors adopted unchanged",
-        "The Persian monetary system, which replaced the Arabic dinar across the entire former empire"
+        "The Zoroastrian calendar in agricultural practice, and names like Mehr, Azar, Farrokh and Rostam in families",
+        "The Sasanian tax system, unchanged until today",
+        "The fire temples, fully staffed for centuries",
+        "The royal court in exile at Merv"
       ],
       "answers_fa": [
-        "اسامی ایرانی، تقویم کشاورزی زرتشتی، و اعمال آیینی قدیمی که از تبدیل دین رسمی بیشتر عمر کردند",
-        "روحانیون زرتشتی که صرفاً عناوینشان را به اصطلاحات مذهبی اسلامی تغییر دادند",
-        "سلسله مراتب دربار ساسانی که فرمانداران عربی آن را بدون تغییر پذیرفتند",
-        "سیستم پولی ایرانی که دینار عربی را در سراسر امپراتوری سابق جایگزین کرد"
+        "گاه‌شماریِ زرتشتی در کارِ کشاورزی، و نام‌هایی چون مهر، آذر، فرخ و رستم در خانواده‌ها",
+        "نظامِ مالیاتیِ ساسانی، بی‌تغییر تا امروز",
+        "آتشکده‌ها، با موبدانِ کامل تا قرن‌ها",
+        "دربارِ شاهی در تبعید در مرو"
       ],
       "answers_tg": [
-        "Номҳои Эронӣ, тақвими кишоварзии Зардуштӣ ва амалҳои оинии қадимӣ ки аз табдили динии расмӣ бештар умр карданд",
-        "Рӯҳониёни Зардуштӣ ки танҳо унвонҳояшонро ба истилоҳоти мазҳабии Исломӣ тағйир доданд",
-        "Меросхӯрии дарбори Сосонӣ ки фармондорони Арабӣ онро бидуни тағйир пазируфтанд",
-        "Системаи пулии Эронӣ ки динори Арабиро дар саросари империяи собиқ ҷойгузин кард"
+        "Гоҳшумории зардуштӣ дар кори кишоварзӣ, ва номҳое чун Меҳр, Озар, Фаррух ва Рустам дар хонаводаҳо",
+        "Низоми андози сосонӣ, бетағйир то имрӯз",
+        "Оташкадаҳо, бо мӯбадони комил то қарнҳо",
+        "Дарбори шоҳӣ дар бадарға дар Марв"
       ],
       "correct_answer": 0,
-      "explanation": "After the conquest, Persian names like Mehr, Azar, Farrokh, and Rostam persisted in families who no longer remembered why they were beautiful names. The Zoroastrian agricultural calendar persisted in farming practice long after the faith faded from cities. Things that survived the conversion carry the grief of the conversion most clearly.",
-      "explanation_fa": "پس از فتح، اسامی ایرانی مانند مهر، آذر، فرخ و رستم در خانواده‌هایی که دیگر یادشان نبود چرا اسامی زیبایی هستند باقی ماندند. تقویم کشاورزی زرتشتی در عمل کشاورزی مدت‌ها بعد از اینکه دین از شهرها محو شد باقی ماند. چیزهایی که از تبدیل دین جان سالم به در بردند غم تبدیل دین را واضح‌تر از هر چیز دیگری حمل می‌کنند.",
-      "explanation_tg": "Пас аз фатҳ, номҳои Эронии мисли Меҳр, Озар, Фаррух ва Рустам дар оилаҳое ки дигар ёдашон набуд чаро номҳои зебое ҳастанд боқӣ монданд.",
+      "explanation": "The Zoroastrian calendar persisted in agricultural practice long after the faith faded, and the names — Mehr, Azar, Farrokh, Rostam — persisted in families who no longer remembered why they were beautiful.",
+      "explanation_fa": "گاه‌شماری در کشاورزی ماند و نام‌ها — مهر، آذر، فرخ، رستم — در خانواده‌هایی که دیگر نمی‌دانستند چرا زیبایند.",
+      "explanation_tg": "Гоҳшуморӣ дар кишоварзӣ монд ва номҳо — Меҳр, Озар, Фаррух, Рустам — дар хонаводаҳое ки дигар намедонистанд чаро зебоянд.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "mprs-m3",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Why does the mourning of Pars 'not appear in chronicles'?",
+      "question_fa": "چرا سوگِ پارس «در وقایع‌نامه‌ها نمی‌آید»؟",
+      "question_tg": "Чаро сӯги Порс «дар вақоеъномаҳо намеояд»?",
+      "answers": [
+        "Because no one in Pars could write",
+        "Because mourning was legally forbidden",
+        "Chronicles record battles, capitals and successions — not the priest hiding texts or the family walking east; private grief leaves no official record",
+        "Because the chronicles were all destroyed"
+      ],
+      "answers_fa": [
+        "چون در پارس کسی نوشتن نمی‌دانست",
+        "چون سوگواری قانوناً ممنوع بود",
+        "وقایع‌نامه‌ها نبردها، پایتخت‌ها و جانشینی‌ها را ثبت می‌کنند — نه موبدی که متن پنهان می‌کند یا خانواده‌ای که پیاده به شرق می‌رود؛ اندوهِ خصوصی سندِ رسمی نمی‌گذارد",
+        "چون همه‌ی وقایع‌نامه‌ها نابود شدند"
+      ],
+      "answers_tg": [
+        "Зеро дар Порс касе навиштан намедонист",
+        "Зеро сӯгворӣ қонунан мамнӯъ буд",
+        "Вақоеъномаҳо набардҳо, пойтахтҳо ва ҷонишиниҳоро сабт мекунанд — на мӯбаде ки матн пинҳон мекунад ё хонаводае ки пиёда ба шарқ меравад; андӯҳи хусусӣ санади расмӣ намегузорад",
+        "Зеро ҳамаи вақоеъномаҳо нобуд шуданд"
+      ],
+      "correct_answer": 2,
+      "explanation": "History's official instruments are tuned to power: battles, capitals, successions. The mourning of a civilization happens below that register — in buried texts, packed bags, names whispered to children. This chapter is written precisely to record what chronicles cannot.",
+      "explanation_fa": "ابزارهای رسمیِ تاریخ به قدرت کوک شده‌اند؛ سوگِ تمدن زیرِ آن ثبت رخ می‌دهد — و این فصل برای ثبتِ همان نوشته شده.",
+      "explanation_tg": "Абзорҳои расмии таърих ба қудрат кӯк шудаанд; сӯги тамаддун зери он сабт рух медиҳад — ва ин боб барои сабти ҳамон навишта шуда.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "mprs-m4",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What do the Parsis of Gujarat preserve in their rituals?",
+      "question_fa": "پارسیانِ گجرات در آیین‌هایشان چه چیزی را نگه می‌دارند؟",
+      "question_tg": "Порсиёни Гуҷарот дар оинҳояшон чӣ чизеро нигоҳ медоранд?",
+      "answers": [
+        "The complete Sasanian legal code",
+        "Maps of pre-conquest Ctesiphon",
+        "Fragments of Middle Persian — making them a living archive of what Pars was before it became Fars",
+        "The crown jewels of Yazdegerd III"
+      ],
+      "answers_fa": [
+        "قانون‌نامه‌ی کاملِ ساسانی",
+        "نقشه‌های تیسفونِ پیش از فتح",
+        "پاره‌هایی از فارسیِ میانه — که آنان را بایگانیِ زنده‌ی پارسِ پیش از فارس‌شدن می‌کند",
+        "جواهراتِ سلطنتیِ یزدگردِ سوم"
+      ],
+      "answers_tg": [
+        "Қонунномаи комили сосонӣ",
+        "Нақшаҳои Тайсафуни пеш аз фатҳ",
+        "Пораҳое аз форсии миёна — ки ононро бойгонии зиндаи Порси пеш аз Форсшудан мекунад",
+        "Ҷавоҳироти салтанатии Яздагерди Севум"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Parsis still speak fragments of Middle Persian in their rituals — a living archive of what Pars was before it became Fars and Fars became a province of a caliphate.",
+      "explanation_fa": "پارسیان هنوز پاره‌هایی از فارسیِ میانه را در آیین‌هایشان می‌گویند — بایگانیِ زنده‌ی پارس.",
+      "explanation_tg": "Порсиён ҳанӯз пораҳое аз форсии миёнаро дар оинҳояшон мегӯянд — бойгонии зиндаи Порс.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "mprs-m5",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "According to the chapter, what did the mourning of Pars eventually produce?",
+      "question_fa": "طبقِ این فصل، سوگِ پارس سرانجام چه چیزی پدید آورد؟",
+      "question_tg": "Тибқи ин боб, сӯги Порс саранҷом чӣ чизе падид овард?",
+      "answers": [
+        "The reconquest of Iran by Zoroastrian armies",
+        "A formal peace treaty with the caliphate",
+        "The Shahnameh — grief that cannot speak directly finds its way into story",
+        "Nothing — the mourning faded without trace"
+      ],
+      "answers_fa": [
+        "بازپس‌گیریِ ایران به دستِ ارتش‌های زرتشتی",
+        "پیمانِ صلحِ رسمی با خلافت",
+        "شاهنامه را — اندوهی که نمی‌تواند مستقیم سخن بگوید راهش را به داستان می‌یابد",
+        "هیچ — سوگ بی‌نشان محو شد"
+      ],
+      "answers_tg": [
+        "Бозпасгирии Эрон ба дасти лашкарҳои зардуштӣ",
+        "Паймони сулҳи расмӣ бо хилофат",
+        "Шоҳномаро — андӯҳе ки наметавонад мустақим сухан бигӯяд роҳашро ба достон меёбад",
+        "Ҳеҷ — сӯг бенишон маҳв шуд"
+      ],
+      "correct_answer": 2,
+      "explanation": "What the mourning of Pars produced, eventually, was the Shahnameh. Grief that cannot speak directly finds its way into story — the poem is the monument the conquest could not tear down.",
+      "explanation_fa": "سوگِ پارس سرانجام شاهنامه را پدید آورد — اندوه راهش را به داستان یافت.",
+      "explanation_tg": "Сӯги Порс саранҷом Шоҳномаро падид овард — андӯҳ роҳашро ба достон ёфт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "mprs-h1",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "'Grief that cannot speak directly finds its way into story.' How does this principle explain the Shahnameh's character?",
+      "question_fa": "«اندوهی که نمی‌تواند مستقیم سخن بگوید راهش را به داستان می‌یابد.» این اصل خصلتِ شاهنامه را چگونه توضیح می‌دهد؟",
+      "question_tg": "«Андӯҳе ки наметавонад мустақим сухан бигӯяд роҳашро ба достон меёбад.» Ин асл хислати Шоҳномаро чӣ гуна тавзеҳ медиҳад?",
+      "answers": [
+        "The poem contains no grief at all",
+        "The poem is light entertainment to distract from grief",
+        "The poem openly calls for rebellion on every page",
+        "The poem is displaced mourning — unable to lament the conquest openly in the conquest's own world, the grief poured itself into remembering everything that came before"
+      ],
+      "answers_fa": [
+        "شعر هیچ اندوهی ندارد",
+        "شعر سرگرمیِ سبکی برای حواس‌پرتی از اندوه است",
+        "شعر در هر صفحه آشکارا به شورش فرامی‌خواند",
+        "شعر سوگِ جابه‌جاشده است — اندوهی که نمی‌توانست در جهانِ خودِ فتح آشکارا بر فتح بگرید، خود را در یادآوریِ همه‌ی آنچه پیش‌تر بود ریخت"
+      ],
+      "answers_tg": [
+        "Шеър ҳеҷ андӯҳе надорад",
+        "Шеър саргармии сабуке барои ҳавоспартӣ аз андӯҳ аст",
+        "Шеър дар ҳар сафҳа ошкоро ба шӯриш faromехонад",
+        "Шеър сӯги ҷобаҷошуда аст — андӯҳе ки наметавонист дар ҷаҳони худи фатҳ ошкоро бар фатҳ бигиряд, худро дар ёдоварии ҳамаи он чи пештар буд рехт"
+      ],
+      "correct_answer": 3,
+      "explanation": "Ferdowsi lived inside the world the conquest made; direct lament was neither possible nor useful. So the grief became method: sixty thousand verses of loving reconstruction. Every glowing description of a court, a hero, a fire temple is the mourning, spoken the only way it could be spoken.",
+      "explanation_fa": "سوگِ مستقیم نه ممکن بود نه مفید؛ پس اندوه روش شد — شصت‌هزار بیت بازسازیِ عاشقانه. هر توصیفِ درخشان، خودِ سوگواری است.",
+      "explanation_tg": "Сӯги мустақим на мумкин буд на муфид; пас андӯҳ равиш шуд — шастҳазор байт бозсозии ошиқона. Ҳар тавсифи дурахшон, худи сӯгворист.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mprs-h2",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The chapter traces 'Pars' becoming 'Fars.' What does this small phonetic shift encode?",
+      "question_fa": "این فصل تبدیلِ «پارس» به «فارس» را دنبال می‌کند. این دگرگونیِ کوچکِ آوایی چه چیزی را رمزگذاری می‌کند؟",
+      "question_tg": "Ин боб табдили «Порс» ба «Форс»-ро дунбол мекунад. Ин дигаргунии хурди овоӣ чӣ чизеро рамзгузорӣ мекунад?",
+      "answers": [
+        "A natural sound change with no historical meaning",
+        "A clerical error in early maps",
+        "An ancient dialect difference older than the conquest",
+        "The conquest written into language itself — the heartland renamed in the conqueror's phonology, so that every utterance of the new name repeats the change of hands"
+      ],
+      "answers_fa": [
+        "تغییری آواییِ طبیعی بدونِ معنای تاریخی",
+        "خطای کاتبان در نقشه‌های نخستین",
+        "تفاوتی گویشیِ کهن‌تر از فتح",
+        "فتحِ نوشته‌شده در خودِ زبان — قلبِ سرزمین در واج‌شناسیِ فاتح بازنامیده شد، چنان‌که هر بار گفتنِ نامِ نو، دست‌به‌دست‌شدن را تکرار می‌کند"
+      ],
+      "answers_tg": [
+        "Тағйире овоии табиӣ бе маънои таърихӣ",
+        "Хатои котибон дар нақшаҳои нахустин",
+        "Тафовуте гӯишии куҳантар аз фатҳ",
+        "Фатҳи навишташуда дар худи забон — қалби сарзамин дар воҷшиносии фотеҳ бозномида шуд, чунон ки ҳар бор гуфтани номи нав, даст ба даст шуданро такрор мекунад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Arabic has no 'p', so Pars became Fars — the homeland's own name refiltered through the conqueror's mouth. The chapter uses the shift as the conquest in miniature: not the destruction of the thing, but its renaming, so that even remembering it now passes through the change. The Shahnameh, written in Persian, keeps the 'p'.",
+      "explanation_fa": "عربی «پ» ندارد، پس پارس فارس شد — نامِ خودِ میهن از دهانِ فاتح بازصافی شد. شاهنامه «پ» را نگه می‌دارد.",
+      "explanation_tg": "Арабӣ «п» надорад, пас Порс Форс шуд — номи худи меҳан аз даҳони фотеҳ бозсофӣ шуд. Шоҳнома «п»-ро нигоҳ медорад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mprs-h3",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The Shahnameh is 'made of language and memory and those are harder to conquer than stone.' Why are they harder to conquer?",
+      "question_fa": "شاهنامه «از زبان و حافظه ساخته شده و فتحِ این‌ها از سنگ دشوارتر است.» چرا فتحشان دشوارتر است؟",
+      "question_tg": "Шоҳнома «аз забон ва ҳофиза сохта шуда ва фатҳи инҳо аз санг душвортар аст.» Чаро фатҳашон душвортар аст?",
+      "answers": [
+        "They are not harder — the metaphor exaggerates",
+        "Stone stands in one place and can be torn down once; language and memory live in every speaker, copied with each telling — to conquer them you would have to conquer every mouth",
+        "Because stone erodes faster than parchment",
+        "Because armies were forbidden to attack poems"
+      ],
+      "answers_fa": [
+        "دشوارتر نیستند — استعاره اغراق می‌کند",
+        "سنگ در یک جا ایستاده و یک بار می‌توان ویرانش کرد؛ زبان و حافظه در هر گوینده زنده‌اند و با هر بازگفت کپی می‌شوند — برای فتحشان باید همه‌ی دهان‌ها را فتح کرد",
+        "چون سنگ زودتر از پوست‌نوشته می‌فرساید",
+        "چون ارتش‌ها از حمله به شعرها منع شده بودند"
+      ],
+      "answers_tg": [
+        "Душвортар нестанд — истиора иғроқ мекунад",
+        "Санг дар як ҷо истода ва як бор метавон вайронаш кард; забон ва ҳофиза дар ҳар гӯянда зиндаанд ва бо ҳар бозгуфт нусха мешаванд — барои фатҳашон бояд ҳамаи даҳонҳоро фатҳ кард",
+        "Зеро санг зудтар аз пӯстнавишта мефарсояд",
+        "Зеро лашкарҳо аз ҳамла ба шеърҳо манъ шуда буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "A monument has an address; an army can find it. A poem's address is every memory that holds it — distributed, self-copying, carried in school recitations and wedding toasts. Each generation that memorizes a verse rebuilds the monument. Stone is conquered once; language must be conquered in every speaker, forever, and never is.",
+      "explanation_fa": "بنا نشانی دارد و ارتش پیدایش می‌کند؛ نشانیِ شعر هر حافظه‌ای است که نگهش می‌دارد — هر نسل که بیتی از بر کند، بنا را از نو می‌سازد.",
+      "explanation_tg": "Бино нишонӣ дорад ва лашкар пайдояш мекунад; нишонии шеър ҳар ҳофизаест ки нигаҳаш медорад — ҳар насл ки байте аз бар кунад, биноро аз нав месозад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mprs-h4",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The names — Mehr, Azar, Farrokh, Rostam — persisted 'in families who no longer remembered why they were beautiful names.' What kind of survival is this?",
+      "question_fa": "نام‌ها — مهر، آذر، فرخ، رستم — «در خانواده‌هایی پاییدند که دیگر به یاد نداشتند چرا نام‌های زیبایی‌اند.» این چه نوع بقایی است؟",
+      "question_tg": "Номҳо — Меҳр, Озар, Фаррух, Рустам — «дар хонаводаҳое поиданд ки дигар ба ёд надоштанд чаро номҳои зебоянд.» Ин чӣ навъ бақоест?",
+      "answers": [
+        "Complete survival — nothing was lost",
+        "Latent survival — meaning sleeping inside form, waiting for something like the Shahnameh to wake it and tell the families what they had been carrying",
+        "Accidental survival with no cultural significance",
+        "False survival — the names had become meaningless sounds forever"
+      ],
+      "answers_fa": [
+        "بقای کامل — هیچ چیزی از دست نرفت",
+        "بقای نهفته — معنا درونِ صورت خفته است و منتظرِ چیزی چون شاهنامه تا بیدارش کند و به خانواده‌ها بگوید چه چیزی را حمل می‌کرده‌اند",
+        "بقای تصادفی بدونِ اهمیتِ فرهنگی",
+        "بقای دروغین — نام‌ها برای همیشه آواهای بی‌معنا شده بودند"
+      ],
+      "answers_tg": [
+        "Бақои комил — ҳеҷ чизе аз даст нарафт",
+        "Бақои нуҳуфта — маъно даруни сурат хуфта аст ва мунтазири чизе чун Шоҳнома то бедораш кунад ва ба хонаводаҳо бигӯяд чӣ чизеро ҳамл мекардаанд",
+        "Бақои тасодуфӣ бе аҳамияти фарҳангӣ",
+        "Бақои дурӯғин — номҳо барои ҳамеша овоҳои бемаъно шуда буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "A name given without knowing its story is a sealed envelope passed down unopened. The contents — the god Mehr, the sacred fire Azar, the hero Rostam — sleep but do not die. When the Shahnameh arrives, the envelopes open: families discover their own children's names were the old world, hiding in plain sound.",
+      "explanation_fa": "نامِ بی‌داستان پاکتِ مهروموم است که نسل به نسل ناگشوده می‌رسد. شاهنامه که می‌رسد، پاکت‌ها باز می‌شوند.",
+      "explanation_tg": "Номи бедостон пакети муҳрумӯм аст ки насл ба насл нокушода мерасад. Шоҳнома ки мерасад, пакетҳо боз мешаванд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mprs-h5",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The chapter describes two modes of survival: leaving (the Parsis) and staying (slow conversion). How does it weigh them?",
+      "question_fa": "این فصل دو شیوه‌ی بقا را توصیف می‌کند: رفتن (پارسیان) و ماندن (تغییرِ دینِ آهسته). آن‌ها را چگونه می‌سنجد؟",
+      "question_tg": "Ин боб ду шеваи бақоро тавсиф мекунад: рафтан (Порсиён) ва мондан (тағйири дини оҳиста). Онҳоро чӣ гуна месанҷад?",
+      "answers": [
+        "Leaving was heroic; staying was cowardly",
+        "Neither mattered, since the culture died anyway",
+        "Staying was loyal; leaving was treason",
+        "Both are forms of mourning, not betrayal — exile preserved the faith intact at the price of the land; staying kept the land at the price of slow transformation"
+      ],
+      "answers_fa": [
+        "رفتن قهرمانانه بود؛ ماندن بزدلانه",
+        "هیچ‌کدام مهم نبود، چون فرهنگ به هر حال مُرد",
+        "ماندن وفادارانه بود؛ رفتن خیانت",
+        "هر دو شکلِ سوگ‌اند، نه خیانت — تبعید دین را به بهای سرزمین سالم نگه داشت؛ ماندن سرزمین را به بهای دگرگونیِ آهسته نگه داشت"
+      ],
+      "answers_tg": [
+        "Рафтан қаҳрамонона буд; мондан тарсуёна",
+        "Ҳеҷ кадом муҳим набуд, зеро фарҳанг ба ҳар ҳол мурд",
+        "Мондан вафодорона буд; рафтан хиёнат",
+        "Ҳар ду шакли сӯганд, на хиёнат — бадарға динро ба баҳои сарзамин солим нигоҳ дошт; мондан сарзаминро ба баҳои дигаргунии оҳиста нигоҳ дошт"
+      ],
+      "correct_answer": 3,
+      "explanation": "The chapter refuses to rank the two griefs. The Parsis kept the fire and lost the homeland; those who stayed kept the soil and watched the fire fade. Each path preserved something the other surrendered. Together — the ritual archive abroad, the names and calendar at home — they kept enough for Ferdowsi to work with.",
+      "explanation_fa": "فصل دو اندوه را رتبه‌بندی نمی‌کند: پارسیان آتش را نگه داشتند و سرزمین را باختند؛ ماندگان خاک را نگه داشتند و محوِ آتش را دیدند.",
+      "explanation_tg": "Боб ду андӯҳро рутбабандӣ намекунад: Порсиён оташро нигоҳ доштанд ва сарзаминро бохтанд; мондагон хокро нигоҳ доштанд ва маҳви оташро диданд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mprs-h6",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Why is the Shahnameh 'their poem too' — the poem of the Parsis who left?",
+      "question_fa": "چرا شاهنامه «شعرِ آنان نیز هست» — شعرِ پارسیانی که رفتند؟",
+      "question_tg": "Чаро Шоҳнома «шеъри онон низ ҳаст» — шеъри Порсиёне ки рафтанд?",
+      "answers": [
+        "Because it describes their voyage to India in detail",
+        "It is the book that remembers the world they left — exiles keep a homeland in ritual, and the poem keeps the same homeland in story",
+        "Because the Parsis paid for its composition",
+        "Because Ferdowsi wrote it in Gujarat"
+      ],
+      "answers_fa": [
+        "چون سفرشان به هند را با جزئیات وصف می‌کند",
+        "کتابی است که جهانی را که ترک کردند به یاد می‌آورد — تبعیدیان میهن را در آیین نگه می‌دارند و شعر همان میهن را در داستان",
+        "چون پارسیان هزینه‌ی سرایشش را دادند",
+        "چون فردوسی آن را در گجرات نوشت"
+      ],
+      "answers_tg": [
+        "Зеро сафарашонро ба Ҳинд бо ҷузъиёт васф мекунад",
+        "Китобест ки ҷаҳонеро ки тарк карданд ба ёд меоварад — табъидиён меҳанро дар оин нигоҳ медоранд ва шеър ҳамон меҳанро дар достон",
+        "Зеро Порсиён харҷи сароишашро доданд",
+        "Зеро Фирдавсӣ онро дар Гуҷарот навишт"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Parsis and the Shahnameh are parallel archives of the same lost world: they preserve its rites in practice, the poem preserves its story in words. An exile community and a poem turn out to be the same kind of thing — a homeland made portable. That kinship is why the book belongs to them too.",
+      "explanation_fa": "پارسیان و شاهنامه دو بایگانیِ موازیِ یک جهانِ ازدست‌رفته‌اند: آنان آیین را زنده نگه می‌دارند، شعر داستان را — هر دو میهنِ قابل‌حمل.",
+      "explanation_tg": "Порсиён ва Шоҳнома ду бойгонии мувозии як ҷаҳони аздастрафтаанд: онон оинро зинда нигоҳ медоранд, шеър достонро — ҳар ду меҳани қобили ҳамл.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mprs-h7",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The world of those who stayed 'no longer had institutions to sustain itself.' What does this detail reveal about how faiths survive or fade?",
+      "question_fa": "جهانِ ماندگان «دیگر نهادهایی برای نگهداریِ خود نداشت.» این جزئیات درباره‌ی چگونگیِ بقا یا محوِ دین‌ها چه آشکار می‌کند؟",
+      "question_tg": "Ҷаҳони мондагон «дигар ниҳодҳое барои нигаҳдории худ надошт.» Ин ҷузъиёт дар бораи чигунагии бақо ё маҳви динҳо чӣ ошкор мекунад?",
+      "answers": [
+        "Only persecution, never erosion, can end a religion",
+        "Faith is purely individual and needs no institutions",
+        "Institutions corrupt faith and their loss purifies it",
+        "Belief needs structure — temples, priests, calendars, schools — and when the structures go, even sincere faith fades within generations, not from persecution but from having nothing to stand on"
+      ],
+      "answers_fa": [
+        "فقط آزار، و هرگز فرسایش، می‌تواند دینی را پایان دهد",
+        "ایمان کاملاً فردی است و به نهاد نیازی ندارد",
+        "نهادها ایمان را فاسد می‌کنند و فقدانشان پالایشش می‌دهد",
+        "باور به ساختار نیاز دارد — معبد، موبد، گاه‌شماری، مدرسه — و وقتی ساختارها بروند، حتی ایمانِ صادقانه طیِ نسل‌ها محو می‌شود؛ نه از آزار، بلکه از بی‌تکیه‌گاهی"
+      ],
+      "answers_tg": [
+        "Танҳо озор, ва ҳаргиз фарсоиш, метавонад динеро поён диҳад",
+        "Имон комилан фардист ва ба ниҳод ниёзе надорад",
+        "Ниҳодҳо имонро фосид мекунанд ва фуқдонашон полоишаш медиҳад",
+        "Бовар ба сохтор ниёз дорад — маъбад, мӯбад, гоҳшуморӣ, мактаб — ва вақте сохторҳо раванд, ҳатто имони содиқона тайи наслҳо маҳв мешавад; на аз озор, балки аз бетакягоҳӣ"
+      ],
+      "correct_answer": 3,
+      "explanation": "No decree abolished Zoroastrianism in the villages; it starved. A faith lives through its scaffolding — the temple that gathers, the priest who teaches, the calendar that structures the year. Remove the scaffolding and each generation inherits a little less, until only names and habits remain. Erosion, not edict, is how worlds actually end.",
+      "explanation_fa": "هیچ فرمانی دین را در روستاها لغو نکرد؛ از گرسنگی مُرد. ایمان با داربستش زنده است — داربست که برود، هر نسل کمی کمتر ارث می‌برد.",
+      "explanation_tg": "Ҳеҷ фармоне динро дар деҳаҳо лағв накард; аз гуруснагӣ мурд. Имон бо дорбасташ зинда аст — дорбаст ки биравад, ҳар насл каме камтар мерос мебарад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mprs-h8",
+      "chapter_slug": "mourning-pars",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "What kind of history is the 'Mourning of Pars' chapter itself attempting to write?",
+      "question_fa": "فصلِ «سوگِ پارس» خود می‌کوشد چه نوع تاریخی بنویسد؟",
+      "question_tg": "Боби «Сӯги Порс» худ мекӯшад чӣ навъ таърихе нависад?",
+      "answers": [
+        "A military history of the conquest's battles",
+        "A history of the unrecorded — recovering the buried texts, the walking families and the quiet grief that official chronicles structurally cannot see",
+        "A dynastic history of the last Sasanian heirs",
+        "A legal history of the caliphate's tax codes"
+      ],
+      "answers_fa": [
+        "تاریخِ نظامیِ نبردهای فتح",
+        "تاریخِ ثبت‌نشده‌ها — بازیابیِ متن‌های دفن‌شده، خانواده‌های در راه و اندوهِ خاموشی که وقایع‌نامه‌های رسمی ساختاراً نمی‌توانند ببینند",
+        "تاریخِ دودمانیِ واپسین وارثانِ ساسانی",
+        "تاریخِ حقوقیِ قوانینِ مالیاتیِ خلافت"
+      ],
+      "answers_tg": [
+        "Таърихи низомии набардҳои фатҳ",
+        "Таърихи сабтнашудаҳо — бозёбии матнҳои дафншуда, хонаводаҳои дар роҳ ва андӯҳи хомӯше ки вақоеъномаҳои расмӣ сохторан наметавонанд бубинанд",
+        "Таърихи дудмонии вопасин ворисони сосонӣ",
+        "Таърихи ҳуқуқии қонунҳои андози хилофат"
+      ],
+      "correct_answer": 1,
+      "explanation": "The chapter announces its own method: the chronicles record battles and successions, so it will record what they omit — the priest at the floorboards, the family walking to the sea, the names that outlived their meanings. It is history written from the inside of the loss, where the real ending of a civilization happens.",
+      "explanation_fa": "فصل روشش را اعلام می‌کند: وقایع‌نامه‌ها نبرد ثبت می‌کنند، پس این فصل حذف‌شده‌ها را ثبت می‌کند — تاریخ از درونِ فقدان.",
+      "explanation_tg": "Боб равишашро эълон мекунад: вақоеъномаҳо набард сабт мекунанд, пас ин боб ҳазфшудаҳоро сабт мекунад — таърих аз даруни фуқдон.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

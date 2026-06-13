@@ -81,6 +81,26 @@
         "hint_en": "Scroll down to the Quiz section.",
         "hint_fa": "به بخشِ آزمون بروید.",
         "hint_tg": "Ба бахши Имтиҳон равед."
+      },
+      {
+        "kind": "farr",
+        "target": 2,
+        "label_en": "Accumulate 2 Farr",
+        "label_fa": "گردآوریِ 2 فرّ",
+        "label_tg": "Ҷамъ кардани 2 Фарр",
+        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
+        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+      },
+      {
+        "kind": "owned_heroes",
+        "target": 5,
+        "label_en": "Own 5 Hero Cards",
+        "label_fa": "داشتنِ 5 کارتِ قهرمان",
+        "label_tg": "Доштани 5 Картаи Қаҳрамон",
+        "hint_en": "Collect hero cards from the Hero Collection. Each purchase counts toward your roster.",
+        "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید. هر خرید به تعداد شما می‌افزاید.",
+        "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
       }
     ],
     "intro_tg": "Шағод чоҳи оҳанинро канд ва бо хок пӯшонд. Бародари ноянии худро ба шикор даъват кард. Барои рӯбарӯ шудан бо ин дарвоза бояд бо бераҳмонатарин шакли хиёнат ҳисоб кунӣ: он навъе ки дар либоси оила меояд.",

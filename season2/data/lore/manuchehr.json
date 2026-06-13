@@ -317,13 +317,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 20,
-        "label_en": "Reach Manuchehr LVL 20",
+        "target": 5,
+        "label_en": "Upgrade Keyumars to Lv.5",
         "label_fa": "رسیدن به سطحِ ۲۰ منوچهر",
         "label_tg": "Расидан ба сатҳи 20 Манучеҳр",
         "hint_en": "Upgrade Manuchehr in the Hero Collection.",
         "hint_fa": "منوچهر را در بخشِ مجموعه‌ی قهرمانان ارتقا دهید.",
-        "hint_tg": "Манучеҳрро дар бахши Қаҳрамонон баланд баред."
+        "hint_tg": "Манучеҳрро дар бахши Қаҳрамонон баланд баред.",
+        "hero_id": "keyumars"
       },
       {
         "id": "iraj-crown",

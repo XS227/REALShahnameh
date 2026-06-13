@@ -245,13 +245,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 45,
-        "label_en": "Reach LVL 45",
+        "target": 4,
+        "label_en": "Upgrade Div E Sepid to Lv.4",
         "label_fa": "رسیدن به سطحِ ۴۵",
         "label_tg": "Расидан ба сатҳи 45",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
-        "hint_tg": "Зарба занед."
+        "hint_tg": "Зарба занед.",
+        "hero_id": "div-e-sepid"
       },
       {
         "id": "quiz",

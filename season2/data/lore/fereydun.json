@@ -319,13 +319,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 18,
-        "label_en": "Reach Fereydun LVL 18",
+        "target": 4,
+        "label_en": "Upgrade Black Div to Lv.4",
         "label_fa": "رسیدن به سطحِ ۱۸ فریدون",
         "label_tg": "Расидан ба сатҳи 18 Фаридун",
         "hint_en": "Upgrade Fereydun in the Hero Collection.",
         "hint_fa": "فریدون را در بخشِ مجموعه‌ی قهرمانان ارتقا دهید.",
-        "hint_tg": "Фаридунро дар бахши Қаҳрамонон баланд баред."
+        "hint_tg": "Фаридунро дар бахши Қаҳрамонон баланд баред.",
+        "hero_id": "black-div"
       },
       {
         "id": "bull-mace",

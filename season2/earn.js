@@ -190,7 +190,7 @@
         box-shadow:0 0 70px rgba(244,197,107,.15),0 28px 72px rgba(0,0,0,.7);
         animation:trm-in .38s cubic-bezier(.2,.9,.2,1) both;">
         <div style="font-size:52px;line-height:1;margin-bottom:14px;filter:drop-shadow(0 0 24px rgba(244,197,107,.7));">⚔</div>
-        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(244,197,107,.6);margin-bottom:6px;">${t('reward_secured_lbl','Reward Secured')}</div>`;
+        <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(244,197,107,.6);margin-bottom:6px;">${t('reward_secured_lbl','Reward Secured')}</div>
         <h3 style="margin:0 0 8px;font-size:17px;font-weight:900;
           background:linear-gradient(118deg,#fff 0%,#ffe8c0 55%,#f4c56b 100%);
           -webkit-background-clip:text;background-clip:text;color:transparent;">

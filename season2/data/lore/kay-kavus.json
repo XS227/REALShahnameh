@@ -236,13 +236,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 55,
-        "label_en": "Reach LVL 55",
+        "target": 5,
+        "label_en": "Upgrade Jamshid to Lv.5",
         "label_fa": "رسیدن به سطحِ ۵۵",
         "label_tg": "Расидан ба сатҳи 55",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
-        "hint_tg": "Зарба занед."
+        "hint_tg": "Зарба занед.",
+        "hero_id": "jamshid"
       },
       {
         "id": "quiz",

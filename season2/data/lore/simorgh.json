@@ -181,13 +181,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 96,
-        "label_en": "Reach LVL 96",
+        "target": 5,
+        "label_en": "Upgrade Fravahar to Lv.5",
         "label_fa": "رسیدن به سطحِ ۹۶",
         "label_tg": "Расидан ба сатҳи 96",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
-        "hint_tg": "Зарба занед."
+        "hint_tg": "Зарба занед.",
+        "hero_id": "fravahar"
       },
       {
         "id": "quiz",

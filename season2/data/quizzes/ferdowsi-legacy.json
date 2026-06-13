@@ -1,143 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "frl-e1",
+      "id": "frdl-e1",
       "chapter_slug": "ferdowsi-legacy",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "How long did Ferdowsi spend writing the Shahnameh?",
-      "question_fa": "فردوسی چقدر زمان صرف نوشتن شاهنامه کرد؟",
-      "question_tg": "Фирдавсӣ чӣ қадар вақт сарфи навиштани шоҳнома кард?",
+      "question": "Where was Ferdowsi from?",
+      "question_fa": "فردوسی اهلِ کجا بود؟",
+      "question_tg": "Фирдавсӣ аҳли куҷо буд?",
       "answers": [
-        "Approximately thirty years",
-        "Seven years",
-        "Fifteen years",
-        "Forty-five years"
+        "Ctesiphon, on the Tigris",
+        "Shiraz, in Pars",
+        "Ghazni, in the sultan's court",
+        "Tus, in Khorasan — a landowner by birth, a poet by vocation"
       ],
       "answers_fa": [
-        "تقریباً سی سال",
-        "هفت سال",
-        "پانزده سال",
-        "چهل و پنج سال"
+        "تیسفون، کنارِ دجله",
+        "شیراز، در پارس",
+        "غزنه، در دربارِ سلطان",
+        "توس، در خراسان — زمین‌داری به تولد، شاعری به رسالت"
       ],
       "answers_tg": [
-        "Тақрибан сӣ сол",
-        "Ҳафт сол",
-        "Понздаҳ сол",
-        "Чилу панҷ сол"
+        "Тайсафун, канори Даҷла",
+        "Шероз, дар Порс",
+        "Ғазна, дар дарбори султон",
+        "Тус, дар Хуросон — заминдоре ба таваллуд, шоире ба рисолат"
       ],
-      "correct_answer": 0,
-      "explanation": "Ferdowsi spent approximately thirty years writing the Shahnameh — beginning under the Samanid dynasty when Persian cultural patronage flourished, and completing it under Sultan Mahmud of Ghazni. The poem contains around sixty thousand couplets, making it the longest poem ever composed by a single poet.",
-      "explanation_fa": "فردوسی تقریباً سی سال صرف نوشتن شاهنامه کرد — آغاز در زمان سلسله سامانی که حمایت فرهنگی ایرانی شکوفا بود، و تکمیل در زمان سلطان محمود غزنوی. شعر حدود شصت هزار بیت دارد که آن را طولانی‌ترین شعر تاریخ سروده شده توسط یک شاعر می‌کند.",
-      "explanation_tg": "Фирдавсӣ тақрибан сӣ сол сарфи навиштани шоҳнома кард — оғоз дар замони сулолаи Сомонӣ ки ҳимояти фарҳангии Эронӣ шукуфон буд, ва тамом кардан дар замони Султон Маҳмуди Ғазнавӣ. Шеър тақрибан шаст ҳазор байт дорад.",
+      "correct_answer": 3,
+      "explanation": "Ferdowsi was from Tus, in Khorasan — a landowner by birth, a poet by vocation, and a man who spent thirty years writing a poem no one had asked him to write.",
+      "explanation_fa": "فردوسی اهلِ توسِ خراسان بود — زمین‌دار به تولد، شاعر به رسالت.",
+      "explanation_tg": "Фирдавсӣ аҳли Туси Хуросон буд — заминдор ба таваллуд, шоир ба рисолат.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "frl-m1",
+      "id": "frdl-e2",
       "chapter_slug": "ferdowsi-legacy",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "What was the famous insult Sultan Mahmud paid Ferdowsi when he received the completed Shahnameh?",
-      "question_fa": "سلطان محمود وقتی شاهنامه تکمیل‌شده را دریافت کرد چه توهین مشهوری به فردوسی پرداخت؟",
-      "question_tg": "Султон Маҳмуд вақте шоҳномаи тамомшударо дарёфт кард чӣ таҳқири машҳуре ба Фирдавсӣ пардохт?",
-      "answers": [
-        "He sent silver coins instead of the promised gold — the same kind of calibrated insult the Shahnameh itself knew how to recognize",
-        "He returned the manuscript unread with a note saying the subject matter was too old to be useful",
-        "He paid only half the agreed amount, citing the poem's treatment of Zoroastrian themes as inappropriate",
-        "He gave the reward to a court poet who had plagiarized sections of the Shahnameh"
-      ],
-      "answers_fa": [
-        "سکه‌های نقره به جای طلای وعده‌داده شده فرستاد — همان نوع توهین حساب‌شده‌ای که خود شاهنامه بلد بود تشخیص دهد",
-        "نسخه خطی را ناخوانده برگرداند با یادداشتی که موضوع خیلی قدیمی است تا مفید باشد",
-        "فقط نیمی از مبلغ توافق‌شده پرداخت کرد و به عنوان دلیل به رفتار شعر با موضوعات زرتشتی اشاره کرد",
-        "جایزه را به شاعر دربار داد که از بخش‌هایی از شاهنامه سرقت ادبی کرده بود"
-      ],
-      "answers_tg": [
-        "Тангаҳои нуқра ба ҷои тиллои ваъдашуда фиристод — ҳамон навъи таҳқири ҳисобшудае ки худи шоҳнома блад ташхис доданро медонист",
-        "Дастнависро нахонда баргардонд бо хатте ки мавзӯъ хеле қадим аст то муфид бошад",
-        "Танҳо нисфи маблағи тавофуқшударо пардохт кард ва ба сифати далел ба муносибати шеър бо мавзӯоти Зардуштӣ ишора кард",
-        "Мукофотро ба шоири дарбор дод ки аз қисматҳои шоҳнома дуздии адабӣ карда буд"
-      ],
-      "correct_answer": 0,
-      "explanation": "According to tradition, when Ferdowsi presented the completed Shahnameh — sixty thousand couplets, thirty years of work — Mahmud sent silver dirhams instead of the promised gold dinars. Ferdowsi recognized the insult instantly: it was precise, calculated, designed to wound. He wrote a savage satire against the sultan and fled.",
-      "explanation_fa": "طبق سنت، وقتی فردوسی شاهنامه تکمیل‌شده را — شصت هزار بیت، سی سال کار — ارائه داد، محمود درهم‌های نقره به جای دینارهای طلای وعده‌داده‌شده فرستاد. فردوسی فوراً توهین را تشخیص داد: دقیق، حساب‌شده، طراحی‌شده برای آسیب. طعنه وحشتناکی علیه سلطان نوشت و فرار کرد.",
-      "explanation_tg": "Тибқи анъана, вақте Фирдавсӣ шоҳномаи тамомшударо — шаст ҳазор байт, сӣ соли кор — пешниҳод дод, Маҳмуд дирҳамҳои нуқра ба ҷои динорҳои тиллои ваъдашуда фиристод. Фирдавсӣ таҳқирро фавран шинохт.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "frl-e2",
-      "chapter_slug": "ferdowsi-legacy",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "Where was Ferdowsi buried — and why was this location significant?",
-      "question_fa": "فردوسی کجا دفن شد — و چرا این مکان اهمیت داشت؟",
-      "question_tg": "Фирдавсӣ куҷо дафн шуд — ва чаро ин маҳал аҳамият дошт?",
+      "question": "How long did Ferdowsi work on the Shahnameh, and how large is it?",
+      "question_fa": "فردوسی چه مدت بر شاهنامه کار کرد و حجمش چقدر است؟",
+      "question_tg": "Фирдавсӣ чӣ муддат бар Шоҳнома кор кард ва ҳаҷмаш чӣ қадар аст?",
       "answers": [
-        "In his own garden in Tus — because religious authorities objected to burying him in the main cemetery",
-        "In the great mosque of Nishapur — as a final honour from the Ghaznavid court",
-        "In the royal cemetery of Ctesiphon alongside the Sasanian kings he had celebrated",
-        "In an unmarked grave outside the city walls — to hide the location from those who feared his satire"
+        "Five years — ten thousand couplets",
+        "Thirty years — sixty thousand couplets, the longest poem ever composed by a single poet",
+        "Three years — dictated from memory",
+        "His whole life — but it remained unfinished at half size"
       ],
       "answers_fa": [
-        "در باغ خودش در طوس — چون مقامات مذهبی به دفنش در قبرستان اصلی اعتراض کردند",
-        "در مسجد جامع نیشابور — به عنوان آخرین افتخار از دربار غزنوی",
-        "در قبرستان سلطنتی تیسفون در کنار شاهان ساسانی که جشن آنها را گرفته بود",
-        "در گوری بی‌نشان خارج از دیوارهای شهر — برای پنهان کردن مکان از کسانی که از طعنه‌اش می‌ترسیدند"
+        "پنج سال — ده هزار بیت",
+        "سی سال — شصت هزار بیت، بلندترین شعری که یک شاعرِ واحد سروده",
+        "سه سال — از حفظ املا شد",
+        "تمامِ عمر — اما در نیمه ناتمام ماند"
       ],
       "answers_tg": [
-        "Дар боғи худаш дар Тӯс — зеро мақомоти динӣ ба дафнаш дар қабристони асосӣ эътироз карданд",
-        "Дар масҷиди ҷомеи Нишопур — ҳамчун охирин эҳтирому аз дарбори Ғазнавӣ",
-        "Дар қабристони шоҳонаи Тайсафун дар паҳлӯи подшоҳони Сосонии ки ҷашни онҳоро гирифта буд",
-        "Дар қабри бенишоне берун аз деворҳои шаҳр — барои пинҳон кардани маҳал аз касоне ки аз ҳаҷваш метарсиданд"
+        "Панҷ сол — даҳ ҳазор байт",
+        "Сӣ сол — шаст ҳазор байт, баландтарин шеъре ки як шоири воҳид суруда",
+        "Се сол — аз ҳифз имло шуд",
+        "Тамоми умр — аммо дар нима нотамом монд"
       ],
-      "correct_answer": 0,
-      "explanation": "Ferdowsi asked to be buried in his own garden in Tus because religious authorities objected to burying him in the main cemetery — the Shahnameh's Zoroastrian themes made him controversial in some clerical eyes. He was buried in his garden. Today his tomb there is one of Iran's most visited monuments.",
-      "explanation_fa": "فردوسی خواست در باغ خودش در طوس دفن شود چون مقامات مذهبی به دفنش در قبرستان اصلی اعتراض کردند — موضوعات زرتشتی شاهنامه او را در برخی چشم‌های روحانی جنجالی کرد. در باغش دفن شد. امروزه آرامگاهش در آنجا یکی از بازدیدشده‌ترین بناهای ایران است.",
-      "explanation_tg": "Фирдавсӣ хост дар боғи худаш дар Тӯс дафн шавад зеро мақомоти динӣ ба дафнаш дар қабристони асосӣ эътироз карданд — мавзӯоти Зардуштии шоҳнома ӯро дар баъзе чашмони рӯҳонӣ ҷанҷолӣ карда буд.",
+      "correct_answer": 1,
+      "explanation": "Thirty years of work, sixty thousand couplets — the longest poem ever composed by a single poet. He finished it as an old man, under a court that did not understand what it had been given.",
+      "explanation_fa": "سی سال کار، شصت هزار بیت — بلندترین شعرِ یک شاعرِ واحد.",
+      "explanation_tg": "Сӣ сол кор, шаст ҳазор байт — баландтарин шеъри як шоири воҳид.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "frl-m2",
+      "id": "frdl-e3",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What did Sultan Mahmud send Ferdowsi instead of the promised gold?",
+      "question_fa": "سلطان محمود به جای طلای وعده‌داده چه برای فردوسی فرستاد؟",
+      "question_tg": "Султон Маҳмуд ба ҷои тиллои ваъдадода чӣ барои Фирдавсӣ фиристод?",
+      "answers": [
+        "A robe of honor but no money",
+        "Silver — an insult calibrated to wound exactly",
+        "Copper coins",
+        "Nothing at all"
+      ],
+      "answers_fa": [
+        "خلعتی اما بی‌پول",
+        "نقره — توهینی که دقیقاً برای زخم زدن اندازه شده بود",
+        "سکه‌های مسی",
+        "هیچ چیز"
+      ],
+      "answers_tg": [
+        "Хилъате аммо бепул",
+        "Нуқра — таҳқире ки дақиқан барои захм задан андоза шуда буд",
+        "Саккаҳои мисӣ",
+        "Ҳеҷ чиз"
+      ],
+      "correct_answer": 1,
+      "explanation": "Mahmud had promised gold for each verse; when the completed poem arrived, he sent silver. The chapter compares it to the distaff sent to Bahram Chubin — disrespect calibrated to wound exactly.",
+      "explanation_fa": "محمود طلا وعده داده بود؛ نقره فرستاد — توهینی اندازه‌شده، چون دوکِ بهرام چوبین.",
+      "explanation_tg": "Маҳмуд тилло ваъда дода буд; нуқра фиристод — таҳқире андозашуда, чун дуки Баҳром Чӯбин.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "frdl-m1",
       "chapter_slug": "ferdowsi-legacy",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "The famous story about Mahmud's gold arriving at Tus on the day of Ferdowsi's funeral — what does it represent in the Shahnameh's tradition?",
-      "question_fa": "داستان مشهور درباره طلای محمود که روز تشییع جنازه فردوسی به طوس رسید — این در سنت شاهنامه نمایانگر چیست؟",
-      "question_tg": "Достони машҳур дар бораи тиллои Маҳмуд ки рӯзи таъзияи Фирдавсӣ ба Тӯс расид — ин дар анъанаи шоҳнома нишондиҳандаи чист?",
+      "question": "What did Ferdowsi do after receiving Mahmud's silver?",
+      "question_fa": "فردوسی پس از دریافتِ نقره‌ی محمود چه کرد؟",
+      "question_tg": "Фирдавсӣ пас аз дарёфти нуқраи Маҳмуд чӣ кард?",
       "answers": [
-        "That great work is never properly recognized in its own time — the reward always arrives too late for the one who deserved it",
-        "That Mahmud eventually repented and was a just ruler after all",
-        "That fate always punishes kings who insult their poets with appropriate irony",
-        "That the Shahnameh was actually well-rewarded by Mahmud and the story is a later invention"
+        "He accepted it gratefully and wrote a praise poem",
+        "He returned the silver politely and asked again for gold",
+        "He burned the Shahnameh in protest",
+        "He wrote a bitter satire against the sultan, was warned his life was in danger, and fled into years of exile"
       ],
       "answers_fa": [
-        "اینکه کار بزرگ هرگز در زمان خودش به درستی شناخته نمی‌شود — جایزه همیشه خیلی دیر برای کسی که سزاوارش بود می‌رسد",
-        "اینکه محمود در نهایت پشیمان شد و بالاخره یک حاکم عادل بود",
-        "اینکه سرنوشت همیشه شاهانی را که به شاعرانشان توهین می‌کنند با طعنه مناسب مجازات می‌کند",
-        "اینکه شاهنامه در واقع توسط محمود به خوبی پاداش داده شد و داستان اختراعی دیرتر است"
+        "با سپاس پذیرفت و مدیحه‌ای نوشت",
+        "نقره را مؤدبانه پس داد و دوباره طلا خواست",
+        "شاهنامه را در اعتراض سوزاند",
+        "هجونامه‌ای تلخ علیه سلطان نوشت، هشدارش دادند جانش در خطر است و به سال‌ها تبعید گریخت"
       ],
       "answers_tg": [
-        "Ин ки кори бузург ҳаргиз дар замони худаш ба дурустӣ шинохта намешавад — мукофот ҳамеша хеле дер барои касе ки шоистаи он буд мерасад",
-        "Ин ки Маҳмуд дар охир пушаймон шуд ва дар охир ҳокими одил буд",
-        "Ин ки тақдир ҳамеша подшоҳоне ки ба шоиронашон таҳқир мекунанд бо таъна муносиб ҷазо медиҳад",
-        "Ин ки шоҳнома дар воқеъ аз ҷониби Маҳмуд хуб мукофот дода шуд ва достон ихтироъи дертари аст"
+        "Бо сипос пазируфт ва мадеҳае навишт",
+        "Нуқраро муаддабона пас дод ва дубора тилло хост",
+        "Шоҳномаро дар эътироз сӯзонд",
+        "Ҳаҷвномае талх алайҳи султон навишт, ҳушдораш доданд ҷонаш дар хатар аст ва ба солҳо бадарға гурехт"
+      ],
+      "correct_answer": 3,
+      "explanation": "Ferdowsi answered the insult with a bitter satire against Mahmud, was warned his life was in danger, and fled. He spent years in exile — the author of the era's greatest monument, hiding from its most powerful court.",
+      "explanation_fa": "با هجونامه‌ای تلخ پاسخ داد، جانش به خطر افتاد و به تبعید گریخت.",
+      "explanation_tg": "Бо ҳаҷвномае талх посух дод, ҷонаш ба хатар афтод ва ба бадарға гурехт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "frdl-m2",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "In the famous story, what happened when Mahmud finally sent the gold?",
+      "question_fa": "در داستانِ مشهور، وقتی محمود سرانجام طلا را فرستاد چه رخ داد؟",
+      "question_tg": "Дар достони машҳур, вақте Маҳмуд саранҷом тиллоро фиристод чӣ рух дод?",
+      "answers": [
+        "The camel train of gold arrived at Tus the same day Ferdowsi's funeral procession was leaving through another gate of the city",
+        "Ferdowsi sent it back unopened from his sickbed",
+        "Ferdowsi accepted it and built a school",
+        "The gold was stolen by bandits on the road"
+      ],
+      "answers_fa": [
+        "کاروانِ شترِ طلا همان روزی به توس رسید که تشییعِ جنازه‌ی فردوسی از دروازه‌ی دیگرِ شهر بیرون می‌رفت",
+        "فردوسی از بسترِ بیماری ناگشوده پسش فرستاد",
+        "فردوسی پذیرفت و مدرسه‌ای ساخت",
+        "طلا در راه به دستِ راهزنان افتاد"
+      ],
+      "answers_tg": [
+        "Корвони шутури тилло ҳамон рӯзе ба Тус расид ки ташйеи ҷанозаи Фирдавсӣ аз дарвозаи дигари шаҳр берун мерафт",
+        "Фирдавсӣ аз бистари беморӣ нокушода пасаш фиристод",
+        "Фирдавсӣ пазируфт ва мактабе сохт",
+        "Тилло дар роҳ ба дасти роҳзанон афтод"
       ],
       "correct_answer": 0,
-      "explanation": "Whether or not the story is literally true, it represents a truth about artistic recognition: the people who do the great work rarely live to see it properly honored. Ferdowsi gave thirty years to a poem that his own age could not fully receive. The gold arriving as the funeral procession left is the Shahnameh's own lesson turned back on its creator.",
-      "explanation_fa": "چه داستان از نظر تحت‌اللفظی درست باشد چه نه، حقیقتی را درباره شناخت هنری نشان می‌دهد: افرادی که کار بزرگ را انجام می‌دهند به ندرت زندگی می‌کنند تا ببینند به درستی ارج گذاشته می‌شود. فردوسی سی سال به شعری داد که عصر خودش نمی‌توانست کاملاً دریافتش کند. طلا که هنگام خروج تشییع جنازه می‌رسد درس خود شاهنامه است که به سازنده‌اش بازگردانده می‌شود.",
-      "explanation_tg": "Хоҳ достон аз нигоҳи тахтулаллафзӣ дуруст бошад хоҳ не, ҳақиқатеро дар бораи шиносоии бадеӣ нишон медиҳад: одамоне ки кори бузург мекунанд ба надрат зиндагӣ мекунанд то бубинанд ба дурустӣ арҷгузорӣ мешавад.",
+      "explanation": "By some accounts Mahmud repented and sent a camel train of gold — and it arrived at Tus the same day Ferdowsi's funeral procession was leaving through one gate of the city as the gold came in another. Recognition arrived exactly too late.",
+      "explanation_fa": "کاروانِ طلا همان روز رسید که تشییعِ جنازه از دروازه‌ی دیگر بیرون می‌رفت — قدردانی دقیقاً دیر رسید.",
+      "explanation_tg": "Корвони тилло ҳамон рӯз расид ки ташйеи ҷаноза аз дарвозаи дигар берун мерафт — қадрдонӣ дақиқан дер расид.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "frdl-m3",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Under which dynasty did Ferdowsi begin the Shahnameh, and under whose rule did he finish it?",
+      "question_fa": "فردوسی شاهنامه را زیرِ کدام دودمان آغاز کرد و زیرِ فرمانِ که تمامش کرد؟",
+      "question_tg": "Фирдавсӣ Шоҳномаро зери кадом дудмон оғоз кард ва зери фармони кӣ тамомаш кард?",
+      "answers": [
+        "He began and finished under the Samanids",
+        "He began under the Abbasids and finished under the Seljuks",
+        "He began under the Samanids, who supported Persian culture, and finished under Sultan Mahmud of Ghazni, a Turkic ruler whose court spoke Arabic",
+        "He wrote it entirely at Mahmud's court in Ghazni"
+      ],
+      "answers_fa": [
+        "زیرِ سامانیان آغاز و تمام کرد",
+        "زیرِ عباسیان آغاز و زیرِ سلجوقیان تمام کرد",
+        "زیرِ سامانیان آغاز کرد، که از فرهنگِ فارسی پشتیبانی می‌کردند، و زیرِ سلطان محمودِ غزنوی تمام کرد — فرمانروایی ترک که دربارش عربی می‌گفت",
+        "تمامش را در دربارِ محمود در غزنه نوشت"
+      ],
+      "answers_tg": [
+        "Зери Сомониён оғоз ва тамом кард",
+        "Зери Аббосиён оғоз ва зери Салҷуқиён тамом кард",
+        "Зери Сомониён оғоз кард, ки аз фарҳанги форсӣ пуштибонӣ мекарданд, ва зери Султон Маҳмуди Ғазнавӣ тамом кард — фармонравое турк ки дарбораш арабӣ мегуфт",
+        "Тамомашро дар дарбори Маҳмуд дар Ғазна навишт"
+      ],
+      "correct_answer": 2,
+      "explanation": "He began while the Samanid dynasty still gave Persian culture institutional support, and finished under Sultan Mahmud of Ghazni — a Turkic ruler whose court spoke Arabic and who had little feel for what he had been given.",
+      "explanation_fa": "زیرِ سامانیان آغاز کرد و زیرِ محمودِ غزنوی تمام — درباری که قدرِ هدیه را نمی‌دانست.",
+      "explanation_tg": "Зери Сомониён оғоз кард ва зери Маҳмуди Ғазнавӣ тамом — дарборе ки қадри ҳадяро намедонист.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "frdl-m4",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Why was Ferdowsi buried in his own garden?",
+      "question_fa": "چرا فردوسی در باغِ خودش به خاک سپرده شد؟",
+      "question_tg": "Чаро Фирдавсӣ дар боғи худаш ба хок супурда шуд?",
+      "answers": [
+        "Floods had destroyed the city cemetery",
+        "Cemetery ground in Tus was too expensive",
+        "Sultan Mahmud forbade a public burial",
+        "He asked to be buried outside the main cemetery, since the Shahnameh contained material a strict religious authority might find objectionable"
+      ],
+      "answers_fa": [
+        "سیل گورستانِ شهر را ویران کرده بود",
+        "زمینِ گورستان در توس بسیار گران بود",
+        "سلطان محمود تدفینِ عمومی را ممنوع کرد",
+        "خواست بیرونِ گورستانِ اصلی به خاک سپرده شود، چون شاهنامه مطالبی داشت که مرجعِ دینیِ سخت‌گیر ممکن بود ناپسند بداند"
+      ],
+      "answers_tg": [
+        "Сел гӯристони шаҳрро вайрон карда буд",
+        "Замини гӯристон дар Тус бисёр гарон буд",
+        "Султон Маҳмуд тадфини умумиро мамнӯъ кард",
+        "Хост беруни гӯристони аслӣ ба хок супурда шавад, зеро Шоҳнома матолибе дошт ки марҷаи динии сахтгир мумкин буд нописанд донад"
+      ],
+      "correct_answer": 3,
+      "explanation": "He asked to be buried outside the main cemetery because the Shahnameh contained material a strict religious authority might have found objectionable. He was buried in his own garden — slightly outside orthodoxy, like his poem.",
+      "explanation_fa": "خواست بیرونِ گورستانِ اصلی باشد — در باغِ خودش، کمی بیرون از قاعده، مثلِ شعرش.",
+      "explanation_tg": "Хост беруни гӯристони аслӣ бошад — дар боғи худаш, каме берун аз қоида, мисли шеъраш.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "frdl-m5",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "To what earlier insult does the chapter compare Mahmud's silver?",
+      "question_fa": "این فصل نقره‌ی محمود را با کدام توهینِ پیشین مقایسه می‌کند؟",
+      "question_tg": "Ин боб нуқраи Маҳмудро бо кадом таҳқири пешин муқоиса мекунад?",
+      "answers": [
+        "The miller's knife at Merv",
+        "The lie sent to Farhad at the mountain",
+        "The distaff sent to Bahram Chubin — the same precise, calibrated disrespect the Shahnameh itself knew how to recognize",
+        "The blinding of Hormuz"
+      ],
+      "answers_fa": [
+        "چاقوی آسیابان در مرو",
+        "دروغِ فرستاده‌شده برای فرهاد در کوه",
+        "دوکِ فرستاده‌شده برای بهرام چوبین — همان بی‌حرمتیِ دقیق و اندازه‌شده که خودِ شاهنامه می‌دانست چگونه بشناسد",
+        "کور کردنِ هرمز"
+      ],
+      "answers_tg": [
+        "Корди осиёбон дар Марв",
+        "Дурӯғи фиристодашуда барои Фарҳод дар кӯҳ",
+        "Дуки фиристодашуда барои Баҳром Чӯбин — ҳамон беҳурматии дақиқ ва андозашуда ки худи Шоҳнома медонист чӣ гуна бишносад",
+        "Кӯр кардани Ҳурмуз"
+      ],
+      "correct_answer": 2,
+      "explanation": "The chapter calls the silver 'the same kind of precise insult the Shahnameh itself knew how to recognize: the distaff sent to Bahram Chubin.' Life repeated the poem — the poet received the kind of wound he had spent thirty years describing.",
+      "explanation_fa": "نقره همان نوع توهینِ دقیق بود که شاهنامه می‌شناخت: دوکِ بهرام چوبین — زندگی شعر را تکرار کرد.",
+      "explanation_tg": "Нуқра ҳамон навъ таҳқири дақиқ буд ки Шоҳнома мешинохт: дуки Баҳром Чӯбин — зиндагӣ шеърро такрор кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "frdl-h1",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Why could Mahmud's court not receive the Shahnameh, according to the chapter?",
+      "question_fa": "طبقِ این فصل، چرا دربارِ محمود نمی‌توانست شاهنامه را دریافت کند؟",
+      "question_tg": "Тибқи ин боб, чаро дарбори Маҳмуд наметавонист Шоҳномаро дарёфт кунад?",
+      "answers": [
+        "The court could not read Persian script at all",
+        "The poem was too large, too honest, too rooted in a world the Ghaznavid court was not interested in — a Turkic dynasty with an Arabic-speaking court had no use for Iran's deep memory",
+        "Mahmud preferred shorter lyric poetry on technical grounds",
+        "The poem was legally banned by the caliph"
+      ],
+      "answers_fa": [
+        "دربار اصلاً خطِ فارسی نمی‌توانست بخواند",
+        "شعر بسیار بزرگ، بسیار صادق و بسیار ریشه‌دار در جهانی بود که دربارِ غزنوی به آن علاقه‌ای نداشت — دودمانی ترک با درباری عربی‌زبان نیازی به حافظه‌ی ژرفِ ایران نداشت",
+        "محمود به دلایلِ فنی غزلِ کوتاه را ترجیح می‌داد",
+        "شعر قانوناً توسطِ خلیفه ممنوع شده بود"
+      ],
+      "answers_tg": [
+        "Дарбор аслан хатти форсӣ наметавонист бихонад",
+        "Шеър бисёр бузург, бисёр содиқ ва бисёр решадор дар ҷаҳоне буд ки дарбори ғазнавӣ ба он алоқае надошт — дудмоне турк бо дарборе арабизабон ниёзе ба ҳофизаи жарфи Эрон надошт",
+        "Маҳмуд ба далоили фаннӣ ғазали кӯтоҳро тарҷеҳ медод",
+        "Шеър қонунан тавассути халифа мамнӯъ шуда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Reception requires readiness: the Shahnameh assumes a reader who wants Iran's memory whole. Mahmud's court — Turkic in blood, Arabic in speech, imperial in appetite — had no slot for such a gift. The mismatch was structural, not aesthetic: the poem was addressed to a civilization, and the court was merely a government.",
+      "explanation_fa": "دریافت آمادگی می‌خواهد: شاهنامه خواننده‌ای می‌خواهد که حافظه‌ی کاملِ ایران را بخواهد — و دربارِ غزنوی فقط حکومت بود، نه تمدن.",
+      "explanation_tg": "Дарёфт омодагӣ мехоҳад: Шоҳнома хонандае мехоҳад ки ҳофизаи комили Эронро бихоҳад — ва дарбори ғазнавӣ танҳо ҳукумат буд, на тамаддун.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "frdl-h2",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "'Whether that story is precisely true matters less than what it preserves.' What is the chapter saying about the gold-at-the-funeral legend?",
+      "question_fa": "«این‌که آن داستان دقیقاً راست باشد کم‌اهمیت‌تر از چیزی است که نگه می‌دارد.» فصل درباره‌ی افسانه‌ی طلا-در-تشییع چه می‌گوید؟",
+      "question_tg": "«Ин ки он достон дақиқан рост бошад камаҳамияттар аз чизест ки нигоҳ медорад.» Боб дар бораи афсонаи тилло-дар-ташйеъ чӣ мегӯяд?",
+      "answers": [
+        "All legends should be discarded as falsehood",
+        "Legend can be a vehicle of truth — the story preserves the real image of a man who gave everything to a work his own age could not fully receive, whatever the documentary facts",
+        "Historical truth and legendary truth are identical",
+        "The story was definitely fabricated by Mahmud's enemies"
+      ],
+      "answers_fa": [
+        "همه‌ی افسانه‌ها باید چون دروغ دور ریخته شوند",
+        "افسانه می‌تواند حاملِ حقیقت باشد — داستان تصویرِ واقعیِ مردی را نگه می‌دارد که همه چیز را به اثری داد که روزگارش نمی‌توانست کامل دریافتش کند، فارغ از واقعیت‌های اسنادی",
+        "حقیقتِ تاریخی و حقیقتِ افسانه‌ای یکسان‌اند",
+        "داستان قطعاً ساخته‌ی دشمنانِ محمود بود"
+      ],
+      "answers_tg": [
+        "Ҳамаи афсонаҳо бояд чун дурӯғ дур рехта шаванд",
+        "Афсона метавонад ҳомили ҳақиқат бошад — достон тасвири воқеии мардеро нигоҳ медорад ки ҳама чизро ба асаре дод ки рӯзгораш наметавонист комил дарёфташ кунад, фориғ аз воқеиятҳои аснодӣ",
+        "Ҳақиқати таърихӣ ва ҳақиқати афсонавӣ яксонанд",
+        "Достон қатъан сохтаи душманони Маҳмуд буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The camel train may never have existed; the truth it carries did. Genius unrecognized until the day of the funeral — that is what Ferdowsi's age actually did to him, compressed into one perfect image. The chapter applies the Shahnameh's own method to its author: story as the form truth takes when it wants to survive.",
+      "explanation_fa": "کاروان شاید نبوده؛ حقیقتش بوده. نبوغِ ناشناخته تا روزِ تشییع — روزگار با فردوسی همین کرد، فشرده در یک تصویر.",
+      "explanation_tg": "Корвон шояд набуда; ҳақиқаташ буда. Нубуғи ношинохта то рӯзи ташйеъ — рӯзгор бо Фирдавсӣ ҳамин кард, фушурда дар як тасвир.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "frdl-h3",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Where did the Shahnameh eventually find its audience?",
+      "question_fa": "شاهنامه سرانجام مخاطبش را کجا یافت؟",
+      "question_tg": "Шоҳнома саранҷом мухотабашро куҷо ёфт?",
+      "answers": [
+        "In the Seljuk courts, the Persian diaspora, the illustrated manuscripts of the Timurid and Safavid eras, and the living rooms of Iranian families across fifteen centuries",
+        "In Mahmud's court, immediately after his death",
+        "Only in modern universities",
+        "Only outside Iran, never within it"
+      ],
+      "answers_fa": [
+        "در دربارهای سلجوقی، دیاسپورای ایرانی، نسخه‌های مصورِ دوره‌ی تیموری و صفوی و اتاق‌های نشیمنِ خانواده‌های ایرانی در پانزده قرن",
+        "در دربارِ محمود، بلافاصله پس از مرگش",
+        "فقط در دانشگاه‌های مدرن",
+        "فقط بیرون از ایران، هرگز درونش"
+      ],
+      "answers_tg": [
+        "Дар дарборҳои салҷуқӣ, диаспораи эронӣ, нусхаҳои мусаввари давраи темурӣ ва сафавӣ ва утоқҳои нишастани хонаводаҳои эронӣ дар понздаҳ қарн",
+        "Дар дарбори Маҳмуд, билофосила пас аз маргаш",
+        "Танҳо дар донишгоҳҳои модерн",
+        "Танҳо берун аз Эрон, ҳаргиз дарунаш"
+      ],
+      "correct_answer": 0,
+      "explanation": "The poem found its audience later — Seljuk courts, the diaspora, Timurid and Safavid illustrated manuscripts, and above all the living rooms of Iranian families across fifteen centuries. The work outlived the court that snubbed it by a millennium and counting.",
+      "explanation_fa": "مخاطب بعدها آمد — دربارهای سلجوقی، نسخه‌های مصور و بالاتر از همه اتاق‌های نشیمنِ خانواده‌ها در پانزده قرن.",
+      "explanation_tg": "Мухотаб баъдҳо омад — дарборҳои салҷуқӣ, нусхаҳои мусаввар ва болотар аз ҳама утоқҳои нишастани хонаводаҳо дар понздаҳ қарн.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "frdl-h4",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "What does the image of the gold arriving as the funeral leaves say about recognition and genius?",
+      "question_fa": "تصویرِ رسیدنِ طلا هم‌زمان با خروجِ تشییع، درباره‌ی قدردانی و نبوغ چه می‌گوید؟",
+      "question_tg": "Тасвири расидани тилло ҳамзамон бо хурӯҷи ташйеъ, дар бораи қадрдонӣ ва нубуғ чӣ мегӯяд?",
+      "answers": [
+        "Gold was the wrong currency; land would have arrived faster",
+        "Patience is always rewarded within a lifetime",
+        "Recognition is meaningless and should not be wanted",
+        "Recognition moves slower than the life it owes — the age pays its debt to the dead, and the artist must do the work without expecting the payment to arrive in time"
+      ],
+      "answers_fa": [
+        "طلا ارزِ غلطی بود؛ زمین زودتر می‌رسید",
+        "صبر همیشه در طولِ عمر پاداش می‌گیرد",
+        "قدردانی بی‌معناست و نباید خواستش",
+        "قدردانی کندتر از زندگی‌ای حرکت می‌کند که به آن بدهکار است — روزگار بدهی‌اش را به مردگان می‌پردازد و هنرمند باید کار را بی‌انتظارِ رسیدنِ به‌موقعِ مزد انجام دهد"
+      ],
+      "answers_tg": [
+        "Тилло арзи ғалате буд; замин зудтар мерасид",
+        "Сабр ҳамеша дар тӯли умр подош мегирад",
+        "Қадрдонӣ бемаъност ва набояд хосташ",
+        "Қадрдонӣ кундтар аз зиндагие ҳаракат мекунад ки ба он бидеҳкор аст — рӯзгор бидеҳияшро ба мурдагон мепардозад ва ҳунарманд бояд корро беинтизори расидани баваққти музд анҷом диҳад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The two processions — gold in one gate, coffin out the other — are the timeline of genius drawn as geometry: the world's payment and the artist's life, passing without meeting. The lesson is not bitterness but a working condition: do the thirty years anyway. The Shahnameh exists because Ferdowsi did not wait for the gold to start.",
+      "explanation_fa": "دو کاروان — طلا از یک دروازه، تابوت از دیگری — هندسه‌ی زمانِ نبوغ است: مزدِ جهان و عمرِ هنرمند، بی‌دیدار از هم می‌گذرند.",
+      "explanation_tg": "Ду корвон — тилло аз як дарвоза, тобут аз дигаре — ҳандасаи замони нубуғ аст: музди ҷаҳон ва умри ҳунарманд, бедидор аз ҳам мегузаранд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "frdl-h5",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Ferdowsi spent thirty years on 'a poem no one had asked him to write.' How does this connect him to the theme of the Memory-over-Sword chapter?",
+      "question_fa": "فردوسی سی سال بر «شعری که کسی از او نخواسته بود» کار کرد. این چگونه او را به درون‌مایه‌ی فصلِ «حافظه بر شمشیر» پیوند می‌دهد؟",
+      "question_tg": "Фирдавсӣ сӣ сол бар «шеъре ки касе аз ӯ нахоста буд» кор кард. Ин чӣ гуна ӯро ба дарунмояи боби «Ҳофиза бар шамшер» пайванд медиҳад?",
+      "answers": [
+        "He is the supreme case of the unpaid keeper of memory — the one who decides remembering is worth doing even when no court asks; the theory of that chapter made flesh",
+        "It shows he was independently wealthy and needed no theme",
+        "It contradicts that chapter, since he demanded payment",
+        "There is no connection; the chapters are unrelated"
+      ],
+      "answers_fa": [
+        "او والاترین نمونه‌ی نگهبانِ بی‌مزدِ حافظه است — کسی که تصمیم می‌گیرد یادآوری ارزشش را دارد حتی وقتی هیچ درباری نمی‌خواهد؛ نظریه‌ی آن فصل، گوشت و خون شده",
+        "نشان می‌دهد مستقلاً ثروتمند بود و نیازی به درون‌مایه نداشت",
+        "با آن فصل تناقض دارد، چون او مزد طلب کرد",
+        "پیوندی نیست؛ فصل‌ها بی‌ربط‌اند"
+      ],
+      "answers_tg": [
+        "Ӯ волотарин намунаи нигаҳбони бемузди ҳофиза аст — касе ки тасмим мегирад ёдоварӣ арзишашро дорад ҳатто вақте ҳеҷ дарборе намехоҳад; назарияи он боб, гӯшту хун шуда",
+        "Нишон медиҳад мустақилан сарватманд буд ва ниёзе ба дарунмоя надошт",
+        "Бо он боб таноқуз дорад, зеро ӯ музд талаб кард",
+        "Пайванде нест; бобҳо берабтанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Memory-over-Sword says memory survives only if someone tends it unpaid and unasked. Ferdowsi is that someone, at maximum scale: thirty unsolicited years, the commission coming from nowhere but his own conviction that the work mattered. Mahmud's silver only proves the point — the poem was never really for him.",
+      "explanation_fa": "آن فصل می‌گوید حافظه فقط با مراقبتِ بی‌مزد می‌ماند؛ فردوسی همان مراقب است در بزرگ‌ترین مقیاس — سی سالِ ناخواسته.",
+      "explanation_tg": "Он боб мегӯяд ҳофиза танҳо бо муроқибати бемузд мемонад; Фирдавсӣ ҳамон муроқиб аст дар бузургтарин миқёс — сӣ соли нохоста.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "frdl-h6",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "What does the sheer scale of the Shahnameh — the longest poem by a single poet — itself signify?",
+      "question_fa": "خودِ مقیاسِ شاهنامه — بلندترین شعرِ یک شاعرِ واحد — نشانه‌ی چیست؟",
+      "question_tg": "Худи миқёси Шоҳнома — баландтарин шеъри як шоири воҳид — нишонаи чист?",
+      "answers": [
+        "The size of what had to be saved — a whole civilization's memory required a container of unprecedented scale, and the poem's length is the measure of the loss it answered",
+        "The requirements of the meter he chose",
+        "The verbosity fashionable in his era",
+        "A poet's vanity about output"
+      ],
+      "answers_fa": [
+        "اندازه‌ی آنچه باید نجات می‌یافت — حافظه‌ی یک تمدنِ کامل ظرفی در مقیاسی بی‌سابقه می‌خواست و درازای شعر اندازه‌ی فقدانی است که به آن پاسخ داد",
+        "الزاماتِ وزنی که برگزید",
+        "پرگوییِ مُدِ روزگارش",
+        "خودپسندیِ شاعر درباره‌ی حجمِ کار"
+      ],
+      "answers_tg": [
+        "Андозаи он чи бояд наҷот меёфт — ҳофизаи як тамаддуни комил зарфе дар миқёси бесобиқа мехост ва дарозои шеър андозаи фуқдонест ки ба он посух дод",
+        "Илзомоти вазне ки баргузид",
+        "Пургӯии мӯди рӯзгораш",
+        "Худписандии шоир дар бораи ҳаҷми кор"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sixty thousand couplets is not ambition; it is inventory. Fifty kings, hundreds of heroes, the whole arc from creation to conquest — the poem is exactly as long as the civilization it had to hold. Its scale is the truest record of how much was nearly lost.",
+      "explanation_fa": "شصت هزار بیت جاه‌طلبی نیست؛ صورت‌برداری است — شعر دقیقاً به درازای تمدنی است که باید نگهش می‌داشت.",
+      "explanation_tg": "Шаст ҳазор байт ҷоҳталабӣ нест; суратбардорист — шеър дақиқан ба дарозои тамаддунест ки бояд нигаҳаш медошт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "frdl-h7",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "What makes the burial in his own garden a fitting final image for Ferdowsi?",
+      "question_fa": "چرا خاکسپاری در باغِ خودش تصویرِ پایانیِ برازنده‌ای برای فردوسی است؟",
+      "question_tg": "Чаро хоксупорӣ дар боғи худаш тасвири поёнии барозандае барои Фирдавсист?",
+      "answers": [
+        "Gardens were the standard burial place for poets",
+        "It proves he died wealthy after all",
+        "It shows the city had rejected him completely",
+        "He rests in his own ground, slightly outside orthodoxy — exactly where his poem stands: rooted, independent, and owned by no court or creed"
+      ],
+      "answers_fa": [
+        "باغ‌ها جای معمولِ خاکسپاریِ شاعران بودند",
+        "ثابت می‌کند به هر حال ثروتمند مُرد",
+        "نشان می‌دهد شهر به‌کلی طردش کرده بود",
+        "در زمینِ خودش آرمیده، کمی بیرون از قاعده‌ی رسمی — دقیقاً همان‌جا که شعرش ایستاده: ریشه‌دار، مستقل و از آنِ هیچ دربار و مذهبی نیست"
+      ],
+      "answers_tg": [
+        "Боғҳо ҷои маъмули хоксупории шоирон буданд",
+        "Исбот мекунад ба ҳар ҳол сарватманд мурд",
+        "Нишон медиҳад шаҳр ба куллӣ тардаш карда буд",
+        "Дар замини худаш орамида, каме берун аз қоидаи расмӣ — дақиқан ҳамон ҷо ки шеъраш истода: решадор, мустақил ва аз они ҳеҷ дарбору мазҳабе нест"
+      ],
+      "correct_answer": 3,
+      "explanation": "Excluded from the cemetery, he was buried in soil he owned — and the exclusion reads today as emblem, not disgrace. The poem too is rooted in its own ground, slightly outside the orthodoxies of its age, sustained by no institution. Tus's most visited grave is the one the official ground refused.",
+      "explanation_fa": "از گورستان کنار گذاشته شد و در خاکِ خودش آرمید — طرد امروز نشان است، نه ننگ؛ شعرش هم در زمینِ خودش ریشه دارد.",
+      "explanation_tg": "Аз гӯристон канор гузошта шуд ва дар хоки худаш орамид — тард имрӯз нишон аст, на нанг; шеъраш ҳам дар замини худаш реша дорад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "frdl-h8",
+      "chapter_slug": "ferdowsi-legacy",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh is 'still recited at weddings and funerals and at the moment when an Iranian wants to reach for the deepest thing in the language.' What final claim does this make about the poem?",
+      "question_fa": "شاهنامه «هنوز در عروسی‌ها و سوگواری‌ها و در لحظه‌ای که ایرانی می‌خواهد به ژرف‌ترین چیزِ زبان دست ببرد خوانده می‌شود.» این چه ادعای نهایی‌ای درباره‌ی شعر می‌کند؟",
+      "question_tg": "Шоҳнома «ҳанӯз дар арӯсиҳо ва сӯгвориҳо ва дар лаҳзае ки эронӣ мехоҳад ба жарфтарин чизи забон даст барад хонда мешавад.» Ин чӣ даъвои ниҳоие дар бораи шеър мекунад?",
+      "answers": [
+        "The poem became the language's memory of itself — not a book on a shelf but the place where Persian keeps its own depth, touched at every threshold of life",
+        "Its use is limited to formal scholarly occasions",
+        "It survives only as nostalgia for emigrants",
+        "It is merely a popular entertainment for ceremonies"
+      ],
+      "answers_fa": [
+        "شعر حافظه‌ی خودِ زبان شد — نه کتابی در قفسه بلکه جایی که فارسی ژرفای خود را در آن نگه می‌دارد و در هر آستانه‌ی زندگی لمسش می‌کند",
+        "کاربردش به مناسبت‌های رسمیِ علمی محدود است",
+        "فقط چون دلتنگی برای مهاجران زنده است",
+        "صرفاً سرگرمی‌ای محبوب برای مراسم است"
+      ],
+      "answers_tg": [
+        "Шеър ҳофизаи худи забон шуд — на китобе дар раф балки ҷое ки форсӣ жарфои худро дар он нигоҳ медорад ва дар ҳар остонаи зиндагӣ ламсаш мекунад",
+        "Корбурдаш ба муносибатҳои расмии илмӣ маҳдуд аст",
+        "Танҳо чун дилтангӣ барои муҳоҷирон зинда аст",
+        "Сирфан саргармие маҳбуб барои маросим аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "Books are read; this poem is reached for — at weddings, funerals, the moments when ordinary words fall short. That is the final transformation: the Shahnameh stopped being literature about the Persian world and became part of the Persian language's own depth. Ferdowsi's monument is not in Tus; it is in every sentence that goes deep.",
+      "explanation_fa": "کتاب‌ها خوانده می‌شوند؛ به این شعر دست برده می‌شود — شاهنامه از ادبیات درباره‌ی جهانِ ایرانی به ژرفای خودِ زبان بدل شد.",
+      "explanation_tg": "Китобҳо хонда мешаванд; ба ин шеър даст бурда мешавад — Шоҳнома аз адабиёт дар бораи ҷаҳони эронӣ ба жарфои худи забон бадал шуд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

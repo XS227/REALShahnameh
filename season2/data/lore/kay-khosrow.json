@@ -262,13 +262,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 60,
-        "label_en": "Reach LVL 60",
+        "target": 5,
+        "label_en": "Upgrade Hushang to Lv.5",
         "label_fa": "رسیدن به سطحِ ۶۰",
         "label_tg": "Расидан ба сатҳи 60",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
-        "hint_tg": "Зарба занед."
+        "hint_tg": "Зарба занед.",
+        "hero_id": "hushang"
       },
       {
         "id": "quiz",

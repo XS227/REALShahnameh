@@ -189,13 +189,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 80,
-        "label_en": "Reach LVL 80",
+        "target": 7,
+        "label_en": "Upgrade Keyumars to Lv.7",
         "label_fa": "رسیدن به سطحِ ۸۰",
         "label_tg": "Расидан ба сатҳи 80",
         "hint_en": "Tap, complete quests, and claim daily rewards.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
-        "hint_tg": "Зарба занед."
+        "hint_tg": "Зарба занед.",
+        "hero_id": "keyumars"
       },
       {
         "id": "quiz",

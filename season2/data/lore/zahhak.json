@@ -318,13 +318,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 15,
-        "label_en": "Reach Zahhak LVL 15",
+        "target": 3,
+        "label_en": "Upgrade Zahhak Shadow to Lv.3",
         "label_fa": "رسیدن به سطحِ ۱۵ ضحاک",
         "label_tg": "Расидан ба сатҳи 15 Заҳҳок",
         "hint_en": "Upgrade Zahhak in the Hero Collection. Each upgrade costs REAL tokens.",
         "hint_fa": "ضحاک را در بخشِ مجموعه‌ی قهرمانان ارتقا دهید.",
-        "hint_tg": "Заҳҳокро дар бахши Қаҳрамонон баланд баред."
+        "hint_tg": "Заҳҳокро дар бахши Қаҳрамонон баланд баред.",
+        "hero_id": "zahhak-shadow"
       },
       {
         "id": "derafsh-kaviani",

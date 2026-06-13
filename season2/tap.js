@@ -78,17 +78,6 @@
   /* ---- i18n helper (graceful: falls back to key if runtime not ready) ---- */
   const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
 
-  /* Map hardcoded unlock strings to i18n keys */
-  const UNLOCK_KEYS = {
-    "Story · Ch. 1": "skin_unlock_ch1",
-    "Story · Ch. 2": "skin_unlock_ch2",
-    "500 REAL":      "skin_unlock_500",
-    "1,000 REAL":    "skin_unlock_1000",
-    "Season drop":   "skin_unlock_season",
-    "Legendary":     "skin_unlock_legendary",
-  };
-  const unlockLabel = (s) => s ? (t(UNLOCK_KEYS[s] || s)) : t("locked_label");
-
   /* ---- Helpers ---- */
   const getSavedSkin = () => {
     try { return localStorage.getItem(SKIN_LS) || "real"; } catch { return "real"; }
@@ -105,6 +94,7 @@
     clearTimeout(showToast._t);
     showToast._t = setTimeout(() => el.classList.remove("show"), 2200);
   };
+  window._tapShowToast = showToast;
 
   /* ---- Apply skin to orb ---- */
   const applyOrbSkin = (skin) => {
@@ -131,94 +121,6 @@
       orbText.textContent   = skin.emoji || skin.name[0];
       orbText.style.display = "";
     }
-  };
-
-  /* ---- Build skin rail ---- */
-  const buildSkinRail = () => {
-    const rail = document.querySelector("[data-skin-rail]");
-    if (!rail) return;
-
-    const savedId = getSavedSkin();
-
-    SKINS.forEach((skin) => {
-      const btn = document.createElement("button");
-      const rc  = `r-${skin.rarity}`;
-
-      btn.className = [
-        "skin-card",
-        skin.locked ? "locked" : "",
-        (!skin.locked && skin.id === savedId) ? "selected" : ""
-      ].filter(Boolean).join(" ");
-
-      btn.setAttribute("data-skin-id", skin.id);
-      btn.setAttribute("aria-label", skin.name + (skin.locked ? " — locked" : ""));
-
-      /* Portrait inner HTML */
-      let portInner = "";
-      if (skin.img) {
-        portInner = `<img src="${skin.img}" alt="${skin.name}" loading="lazy"
-          onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<span>${skin.emoji || ""}</span>')">`;
-      } else {
-        portInner = `<span>${skin.emoji || "?"}</span>`;
-      }
-      if (skin.locked) {
-        portInner += `<span class="skin-lock-overlay">🔒</span>`;
-      } else if (skin.id === savedId) {
-        portInner += `<span class="skin-selected-check">✓</span>`;
-      }
-
-      const rarityLabel = ({
-        default: t("rarity_default"),
-        common:  t("rarity_common"),
-        rare:    t("rarity_rare"),
-        epic:    t("rarity_epic"),
-        legend:  t("rarity_legend"),
-        mythic:  t("rarity_mythic"),
-      })[skin.rarity] || skin.rarity;
-
-      btn.innerHTML = `
-        <div class="skin-portrait ${rc}">${portInner}</div>
-        <div class="skin-name">${t('skin_' + skin.id) || skin.name}</div>
-        <div class="skin-sub ${rc}">${skin.locked ? unlockLabel(skin.unlock) : rarityLabel}</div>
-      `;
-
-      btn.addEventListener("click", () => {
-        if (skin.locked) {
-          const cond = unlockLabel(skin.unlock);
-          const msg = cond.includes('REAL')
-            ? `🔒 ${skin.name} — Cost: ${cond}`
-            : `🔒 ${skin.name} — ${cond}`;
-          showToast(msg);
-          if (navigator.vibrate) navigator.vibrate(6);
-          return;
-        }
-        /* Deselect all, re-mark selected */
-        document.querySelectorAll(".skin-card").forEach((c) => {
-          c.classList.remove("selected");
-          const chk = c.querySelector(".skin-selected-check");
-          if (chk) chk.remove();
-        });
-        btn.classList.add("selected");
-        /* Add checkmark */
-        const portrait = btn.querySelector(".skin-portrait");
-        if (portrait && !portrait.querySelector(".skin-selected-check")) {
-          const chk = document.createElement("span");
-          chk.className = "skin-selected-check";
-          chk.textContent = "✓";
-          portrait.appendChild(chk);
-        }
-        saveSkin(skin.id);
-        applyOrbSkin(skin);
-        if (navigator.vibrate) navigator.vibrate(8);
-        showToast(`${skin.name} — ${t("skin_equipped_toast")}`);
-      });
-
-      rail.appendChild(btn);
-    });
-
-    /* Apply saved skin to orb immediately */
-    const current = SKINS.find((s) => s.id === savedId) || SKINS[0];
-    applyOrbSkin(current);
   };
 
   /* ============================================================
@@ -425,6 +327,248 @@
     getActive: getSavedSkin,
   };
 
+  /* ---- Energy upgrade ---- */
+  const setupEnergyUpgrade = () => {
+    const btn    = document.getElementById('energy-upgrade-btn');
+    const lvlEl  = document.getElementById('eu-level');
+    const costEl = document.getElementById('eu-cost');
+    const maxLbl = document.getElementById('eu-max-label');
+    if (!btn) return;
+
+    const t = (k, fb) => (window.RealI18N && window.RealI18N.t(k) !== k ? window.RealI18N.t(k) : fb) || fb || k;
+
+    const ENERGY_BASE = 1000;
+    const ENERGY_STEP = 500;
+    const MAX_LEVEL   = 5;
+    /* REAL cost per level (economy-balanced: 2K / 5K / 12K / 25K / 50K) */
+    const COSTS = [2_000, 5_000, 12_000, 25_000, 50_000];
+
+    const fmtReal = (n) => {
+      if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + 'M ◆';
+      if (n >= 1_000)     return (n / 1_000).toFixed(0) + 'K ◆';
+      return n + ' ◆';
+    };
+
+    const getLevel = () => { try { return Math.min(MAX_LEVEL, parseInt(localStorage.getItem('real_energy_level') || '0', 10)); } catch { return 0; } };
+    const getReal  = () => {
+      try {
+        const fromPlayer = window.RealPlayer ? (window.RealPlayer.get().balance || 0) : 0;
+        const ls = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
+        return Math.max(fromPlayer, ls.balance || 0);
+      } catch { return 0; }
+    };
+
+    const refresh = () => {
+      const level = getLevel();
+      if (lvlEl)  lvlEl.textContent  = level + 1;    // display as 1-based
+
+      if (level >= MAX_LEVEL) {
+        if (maxLbl) maxLbl.textContent = t('energy_upgrade_max', 'Max level reached');
+        if (costEl) costEl.textContent = '';
+        btn.disabled = true;
+        return;
+      }
+
+      const cost      = COSTS[level];
+      const real      = getReal();
+      const canAfford = real >= cost;
+      if (maxLbl) maxLbl.textContent = `${ENERGY_BASE + level * ENERGY_STEP} → ${ENERGY_BASE + (level + 1) * ENERGY_STEP}`;
+      if (costEl) costEl.textContent = fmtReal(cost);
+      btn.disabled = false;
+      btn.style.opacity = canAfford ? '1' : '.4';
+      btn.title = canAfford ? '' : `Need ${fmtReal(cost)}`;
+    };
+
+    /* Inject one-time confirm modal styles */
+    if (!document.getElementById('eu-confirm-style')) {
+      const s = document.createElement('style');
+      s.id = 'eu-confirm-style';
+      s.textContent = `
+        @keyframes eu-fade-in { from { opacity:0; transform:scale(.93) } to { opacity:1; transform:scale(1) } }
+        #eu-confirm-overlay {
+          position:fixed; inset:0; z-index:9999;
+          background:rgba(0,0,0,.72);
+          display:flex; align-items:center; justify-content:center; padding:20px;
+          animation:eu-fade-in .16s ease;
+        }
+        #eu-confirm-box {
+          background:linear-gradient(145deg,#0c1530,#0a0e22);
+          border:1px solid rgba(94,162,255,.35); border-radius:18px;
+          padding:24px 20px 20px; max-width:300px; width:100%;
+          box-shadow:0 20px 60px rgba(0,0,0,.6); text-align:center;
+        }
+        #eu-confirm-box .eu-icon { font-size:34px; margin-bottom:10px; }
+        #eu-confirm-box .eu-title { font-size:15px; font-weight:800; color:#e8e8f0; margin-bottom:8px; }
+        #eu-confirm-box .eu-desc { font-size:12px; color:rgba(180,185,210,.7); margin-bottom:16px; line-height:1.6; }
+        #eu-confirm-box .eu-desc strong { color:#5ea2ff; }
+        #eu-confirm-box .eu-cost-box {
+          background:rgba(94,162,255,.09); border:1px solid rgba(94,162,255,.25);
+          border-radius:10px; padding:10px 14px; margin-bottom:20px;
+        }
+        #eu-confirm-box .eu-cost-lbl { font-size:10px; color:rgba(180,185,210,.55); text-transform:uppercase; letter-spacing:.5px; margin-bottom:3px; }
+        #eu-confirm-box .eu-cost-val { font-size:22px; font-weight:900; color:#f4c56b; }
+        #eu-confirm-box .eu-btns { display:flex; gap:10px; }
+        #eu-btn-cancel {
+          flex:1; padding:11px; border-radius:10px;
+          border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.06);
+          color:rgba(200,205,225,.7); font-size:13px; font-weight:700; cursor:pointer;
+        }
+        #eu-btn-confirm {
+          flex:1; padding:11px; border-radius:10px;
+          border:1px solid rgba(94,162,255,.45);
+          background:linear-gradient(135deg,rgba(94,162,255,.22),rgba(94,162,255,.12));
+          color:#5ea2ff; font-size:13px; font-weight:700; cursor:pointer;
+        }
+        #eu-btn-cancel:active { opacity:.7; }
+        #eu-btn-confirm:active { opacity:.7; }
+      `;
+      document.head.appendChild(s);
+    }
+
+    const showUpgradeConfirm = (cost, fromMax, toMax, onConfirm) => {
+      document.getElementById('eu-confirm-overlay')?.remove();
+      const overlay = document.createElement('div');
+      overlay.id = 'eu-confirm-overlay';
+      overlay.innerHTML = `
+        <div id="eu-confirm-box">
+          <div class="eu-icon">⚡</div>
+          <div class="eu-title">${t('energy_upgrade_lbl','Energy Upgrade')}</div>
+          <div class="eu-desc">
+            Max energy: <strong>${fromMax}</strong> → <strong>${toMax}</strong>
+          </div>
+          <div class="eu-cost-box">
+            <div class="eu-cost-lbl">Cost</div>
+            <div class="eu-cost-val">${fmtReal(cost)} REAL</div>
+          </div>
+          <div class="eu-btns">
+            <button id="eu-btn-cancel">Cancel</button>
+            <button id="eu-btn-confirm">Upgrade ◆</button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(overlay);
+      overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+      overlay.querySelector('#eu-btn-cancel').addEventListener('click', () => overlay.remove());
+      overlay.querySelector('#eu-btn-confirm').addEventListener('click', () => {
+        overlay.remove();
+        onConfirm();
+      });
+      if (navigator.vibrate) navigator.vibrate(6);
+    };
+
+    btn.addEventListener('click', () => {
+      const level = getLevel();
+      if (level >= MAX_LEVEL) return;
+      const cost     = COSTS[level];
+      const real     = getReal();
+      const fromMax  = ENERGY_BASE + level * ENERGY_STEP;
+      const toMax    = ENERGY_BASE + (level + 1) * ENERGY_STEP;
+      if (real < cost) {
+        const showToastFn = window._tapShowToast || ((m) => alert(m));
+        showToastFn(`Need ${fmtReal(cost)} REAL to upgrade energy`);
+        return;
+      }
+      showUpgradeConfirm(cost, fromMax, toMax, () => {
+        /* Deduct REAL locally */
+        try {
+          const ls = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
+          ls.balance = Math.max(0, (ls.balance || 0) - cost);
+          localStorage.setItem('real_player_state_v1', JSON.stringify(ls));
+          if (window.RealPlayer) window.RealPlayer.set({ balance: ls.balance });
+        } catch {}
+        /* Increment level */
+        try { localStorage.setItem('real_energy_level', String(level + 1)); } catch {}
+        /* Reload so app.js re-reads real_energy_level and recalculates state.max */
+        window.location.reload();
+      });
+    });
+
+    refresh();
+    /* Re-check affordability whenever balances change */
+    window.addEventListener('real:zar:updated', refresh);
+  };
+
+  /* ---- Auto-Clicker ---- */
+  const setupAutoClicker = () => {
+    const orb = document.querySelector('[data-energy-orb]');
+    if (!orb) return;
+
+    const t = (k, fb) => (window.RealI18N && window.RealI18N.t(k)) || fb || k;
+
+    /* Inject badge into the tap orb area */
+    const coreWrap = document.querySelector('[data-core]');
+    let badge = null;
+    const showBadge = (active) => {
+      if (badge) badge.remove();
+      if (!active) return;
+      badge = document.createElement('div');
+      badge.id = 'ac-active-badge';
+      badge.textContent = '🤖 ' + t('ac_badge_label', 'Auto-Clicker ON');
+      badge.style.cssText = [
+        'position:absolute;top:-32px;left:50%;transform:translateX(-50%)',
+        'background:linear-gradient(90deg,rgba(83,215,156,.18),rgba(94,162,255,.15))',
+        'border:1px solid rgba(83,215,156,.4)',
+        'color:var(--jade,#53d79c)',
+        'font-size:10px;font-weight:700;letter-spacing:.06em',
+        'padding:4px 10px;border-radius:20px',
+        'animation:ac-pulse 1.8s ease-in-out infinite',
+        'pointer-events:none;white-space:nowrap',
+      ].join(';');
+      if (coreWrap) coreWrap.style.position = 'relative';
+      if (coreWrap) coreWrap.appendChild(badge);
+    };
+
+    /* Inject CSS for badge pulse */
+    if (!document.getElementById('ac-style')) {
+      const s = document.createElement('style');
+      s.id = 'ac-style';
+      s.textContent = '@keyframes ac-pulse{0%,100%{opacity:.7;box-shadow:0 0 0 0 rgba(83,215,156,.0)}50%{opacity:1;box-shadow:0 0 0 5px rgba(83,215,156,.15)}}';
+      document.head.appendChild(s);
+    }
+
+    let _acInterval = null;
+
+    const stopAC = () => {
+      if (_acInterval) { clearInterval(_acInterval); _acInterval = null; }
+      showBadge(false);
+    };
+
+    const startAC = (expiresAt) => {
+      if (_acInterval) return; /* already running */
+      showBadge(true);
+      _acInterval = setInterval(() => {
+        if (Date.now() >= expiresAt) { stopAC(); return; }
+        /* Suppress haptic, then simulate tap */
+        window._realAutoTapping = true;
+        try { orb.click(); } catch (_) {}
+        window._realAutoTapping = false;
+      }, 1000);
+    };
+
+    /* Check on load */
+    const acExp = (() => {
+      try { return parseInt(localStorage.getItem('real_autoclicker_expires_at') || '0', 10); } catch { return 0; }
+    })();
+    if (acExp > Date.now()) startAC(acExp);
+
+    /* React to purchase from inventory page */
+    window.addEventListener('real:autoclicker:started', (e) => {
+      const exp = e.detail && e.detail.expires_at;
+      if (!exp) return;
+      stopAC();
+      startAC(exp);
+    });
+
+    /* Also re-check when page becomes visible (bfcache / tab switch) */
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden || _acInterval) return;
+      const exp = (() => {
+        try { return parseInt(localStorage.getItem('real_autoclicker_expires_at') || '0', 10); } catch { return 0; }
+      })();
+      if (exp > Date.now()) startAC(exp);
+    });
+  };
+
   /* ---- Live forge history ---- */
   let _historyReady = false;
   const addHistoryRow = (event, gain, time) => {
@@ -472,8 +616,15 @@
     /* ZAR balance — compact K notation */
     if (balEl) balEl.innerHTML = `<span class="zar-ico">🪙</span> ${fmtCompact(p.zar || 0)}`;
 
-    if (energyEl) energyEl.textContent = fmtNum(p.energy != null ? p.energy : 1000);
-    if (fillEl)   fillEl.style.width   = ((p.energy != null ? p.energy : 1000) / (p.energyMax || 1000) * 100) + '%';
+    /* energyMax: prefer Player state (set by app.js after reading localStorage),
+       fall back to computing it directly so hydrateFromPlayer is always correct */
+    const _emLvl = (() => { try { return Math.min(5, parseInt(localStorage.getItem('real_energy_level')||'0',10)); } catch { return 0; } })();
+    const _emMax = p.energyMax > 1000 ? p.energyMax : 1000 + _emLvl * 500;
+    const _emCur = p.energy != null ? p.energy : _emMax;
+    if (energyEl) energyEl.textContent = fmtNum(_emCur);
+    if (fillEl)   fillEl.style.width   = `${(_emCur / _emMax) * 100}%`;
+    const _emMaxEl = document.querySelector('[data-energy-max-display]');
+    if (_emMaxEl) _emMaxEl.textContent = _emMax;
 
     const streak = p.dailyStreak || 1;
     if (streakVal) streakVal.textContent = t('streak_days_tpl', { n: fmtNum(streak) });
@@ -635,8 +786,12 @@
 
   /* ---- Init ---- */
   const init = () => {
-    buildSkinRail();
+    /* Apply saved skin to orb on load (skin rail removed — managed via inventory) */
+    const _currentSkin = SKINS.find(s => s.id === getSavedSkin()) || SKINS[0];
+    applyOrbSkin(_currentSkin);
     setupEnhancedTapFX();
+    setupAutoClicker();
+    setupEnergyUpgrade();
     setupContractCopy();
     setupClaim();
     setupAdsgramRefill();

@@ -1,143 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "kpr-e1",
+      "id": "khpv-e1",
       "chapter_slug": "khosrow-parviz",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "What was the greatest military achievement of Khosrow Parviz's reign?",
-      "question_fa": "بزرگترین دستاورد نظامی دوران حکومت خسرو پرویز چه بود؟",
-      "question_tg": "Бузургтарин дастоварди ҳарбии давраи ҳукмронии Хусрави Парвез чӣ буд?",
+      "question": "Which holy city did Khosrow Parviz's armies take in 614, and what did they carry away?",
+      "question_fa": "ارتش‌های خسرو پرویز در ۶۱۴ کدام شهرِ مقدس را گرفتند و چه چیزی را با خود بردند؟",
+      "question_tg": "Лашкарҳои Хусрав Парвиз дар 614 кадом шаҳри муқаддасро гирифтанд ва чӣ чизеро бо худ бурданд?",
       "answers": [
-        "Capturing Jerusalem in 614 CE and taking the True Cross — the holiest relic of Christianity — to Ctesiphon",
-        "Defeating the Byzantine army at Constantinople and besieging the city for three years",
-        "Conquering all of Arabia and converting the Arab tribes to Zoroastrianism",
-        "Extending Sasanian rule to the banks of the Nile and the shores of the Caspian simultaneously"
+        "Jerusalem — carrying the True Cross, the holiest relic of Christendom, to Ctesiphon",
+        "Mecca — carrying the black stone",
+        "Constantinople — carrying the imperial crown of Byzantium",
+        "Alexandria — carrying the great library"
       ],
       "answers_fa": [
-        "فتح اورشلیم در سال ۶۱۴ میلادی و بردن صلیب واقعی — مقدس‌ترین آثار مسیحیت — به تیسفون",
-        "شکست دادن ارتش بیزانس در قسطنطنیه و محاصره شهر به مدت سه سال",
-        "فتح تمام عربستان و تبدیل قبایل عرب به زرتشتی",
-        "گسترش سلطه ساسانی به کرانه‌های نیل و سواحل خزر به طور همزمان"
+        "اورشلیم — صلیبِ راستین، مقدس‌ترین یادگارِ مسیحیت، را به تیسفون بردند",
+        "مکه — سنگِ سیاه را بردند",
+        "قسطنطنیه — تاجِ امپراتوریِ بیزانس را بردند",
+        "اسکندریه — کتابخانه‌ی بزرگ را بردند"
       ],
       "answers_tg": [
-        "Фатҳи Урусалим дар соли 614 милодӣ ва бурдани Салиби Воқеӣ — муқаддастарин осори масеҳият — ба Тайсафун",
-        "Шикаст додани артиши Визонт дар Константинопол ва муҳосираи шаҳр барои се сол",
-        "Фатҳи тамоми Арабистон ва табдили қабилаҳои Арабӣ ба Зардуштӣ",
-        "Тавсеаи ҳукмронии Сосонӣ ба соҳилҳои Нил ва соҳилҳои Хазар ҳамзамон"
+        "Ерусалим — Салиби Ростин, муқаддастарин ёдгори масеҳиятро ба Тайсафун бурданд",
+        "Макка — санги сиёҳро бурданд",
+        "Константинопол — тоҷи империяи Бизантияро бурданд",
+        "Искандария — китобхонаи бузургро бурданд"
       ],
       "correct_answer": 0,
-      "explanation": "In 614 CE, Khosrow's general Shahrbaraz captured Jerusalem. The True Cross — Christianity's most sacred relic, believed to be the cross on which Jesus was crucified — was taken to Ctesiphon. The Sasanian empire was at its greatest extent, stretching from the Nile to the Oxus.",
-      "explanation_fa": "در سال ۶۱۴ میلادی، سردار خسرو شهربراز اورشلیم را فتح کرد. صلیب واقعی — مقدس‌ترین آثار مسیحیت که اعتقاد بر این است صلیبی است که عیسی بر آن مصلوب شد — به تیسفون برده شد. امپراتوری ساسانی در بزرگترین حد خود بود که از نیل تا آمودریا امتداد داشت.",
-      "explanation_tg": "Дар соли 614 милодӣ, сарлашкари Хусрав Шаҳрбароз Урусалимро фатҳ кард. Салиби Воқеӣ — муқаддастарин осори масеҳият — ба Тайсафун бурда шуд.",
+      "explanation": "In 614 a Sasanian army took Jerusalem and carried the True Cross — Christendom's holiest relic — back to Ctesiphon. It was the high-water mark of the last great Persian-Byzantine war.",
+      "explanation_fa": "در ۶۱۴ ارتشِ ساسانی اورشلیم را گرفت و صلیبِ راستین را به تیسفون برد — اوجِ آخرین جنگِ بزرگِ ایران و بیزانس.",
+      "explanation_tg": "Дар 614 лашкари сосонӣ Ерусалимро гирифт ва Салиби Ростинро ба Тайсафун бурд — авҷи охирин ҷанги бузурги Эрон ва Бизантия.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "kpr-m1",
+      "id": "khpv-e2",
       "chapter_slug": "khosrow-parviz",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "What caused the dramatic reversal of Khosrow Parviz's military successes?",
-      "question_fa": "چه چیزی باعث واژگونی دراماتیک موفقیت‌های نظامی خسرو پرویز شد؟",
-      "question_tg": "Чӣ чизе боиси тағйири дарамотикии муваффақиятҳои ҳарбии Хусрави Парвез шуд?",
-      "answers": [
-        "Byzantine Emperor Heraclius remade his army and launched a brilliant counter-offensive — and Khosrow replaced losing generals with men who lost faster",
-        "The army mutinied after years of campaigning without adequate pay or supplies",
-        "A plague wiped out a third of the Sasanian army during the Egyptian campaign",
-        "Arab tribes united under a new king and cut off the Sasanian supply lines from the south"
-      ],
-      "answers_fa": [
-        "امپراتور بیزانسی هراکلیوس ارتشش را بازسازی کرد و یک ضدحمله درخشان راه انداخت — و خسرو سرداران بازنده را با مردانی جایگزین کرد که سریع‌تر می‌باختند",
-        "ارتش پس از سال‌ها لشکرکشی بدون دستمزد یا آذوقه کافی شورش کرد",
-        "طاعون یک سوم ارتش ساسانی را در طول کمپین مصر از بین برد",
-        "قبایل عرب زیر یک شاه جدید متحد شدند و خطوط تدارکاتی ساسانی از جنوب را قطع کردند"
-      ],
-      "answers_tg": [
-        "Императори Визонтии Ҳераклиус артушашро барқарор кард ва зарбаи ҷавоби дурахшоне сар дод — ва Хусрав сарлашкарони бозандаро бо мардоне иваз кард ки сариктар мебохтанд",
-        "Артиш пас аз солҳои лашкаркашӣ бидуни маош ё захираи кофӣ шӯриш кард",
-        "Тоун сеяки артиши Сосониро дар тӯли кампинияи Миср нест кард",
-        "Қабилаҳои Арабӣ зери подшоҳи ҷадиде муттаҳид шуданд ва хатҳои таъминотии Сосониро аз ҷануб қатъ карданд"
-      ],
-      "correct_answer": 0,
-      "explanation": "Heraclius rebuilt the Byzantine army and launched a series of campaigns directly into Sasanian heartlands. Khosrow, who had only known how to manage success, responded by stripping commanders of their posts and replacing them with men who had no experience — accelerating the collapse rather than stopping it.",
-      "explanation_fa": "هراکلیوس ارتش بیزانس را بازسازی کرد و سلسله‌ای از کمپین‌ها مستقیماً به قلب سرزمین‌های ساسانی راه انداخت. خسرو که فقط بلد بود با موفقیت کنار بیاید با جدا کردن فرماندهان از پست‌هایشان و جایگزینی آنها با مردانی بدون تجربه پاسخ داد — فروپاشی را تسریع کرد نه توقف.",
-      "explanation_tg": "Ҳераклиус артиши Визонтро барқарор кард ва силсилаи кампинияҳоро мустақиман ба дили сарзаминҳои Сосонӣ сар дод. Хусрав ки танҳо бо муваффақият кор карданро медонист бо ҷудо кардани фармондеҳон аз вазифаҳояшон ва иваз кардани онҳо бо мардони бетаҷриба ҷавоб дод.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "kpr-m2",
-      "chapter_slug": "khosrow-parviz",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "How did Khosrow Parviz's reign end?",
-      "question_fa": "حکومت خسرو پرویز چگونه پایان یافت؟",
-      "question_tg": "Ҳукмронии Хусрави Парвез чӣ тавр анҷом ёфт?",
-      "answers": [
-        "His son Shiruyeh imprisoned and then killed him — and the True Cross was returned to Byzantium",
-        "He was captured by Heraclius and held as a prisoner of war in Constantinople",
-        "He abdicated in favour of his son and retired, dying peacefully years later",
-        "He was killed in battle during Heraclius's final campaign into the Sasanian heartland"
-      ],
-      "answers_fa": [
-        "پسرش شیرویه او را زندانی کرد و سپس کشت — و صلیب واقعی به بیزانس بازگردانده شد",
-        "توسط هراکلیوس دستگیر شد و به عنوان اسیر جنگی در قسطنطنیه نگه داشته شد",
-        "به نفع پسرش کنار گذاشت و بازنشسته شد و سال‌ها بعد به آرامی مُرد",
-        "در نبرد در طول آخرین کمپین هراکلیوس به قلب سرزمین ساسانی کشته شد"
-      ],
-      "answers_tg": [
-        "Писараш Шируяҳ ӯро зиндонӣ кард ва сипас кушт — ва Салиби Воқеӣ ба Визонт баргардонда шуд",
-        "Аз ҷониби Ҳераклиус дастгир шуд ва ҳамчун асири ҷангӣ дар Константинопол нигоҳ дошта шуд",
-        "Ба нафъи писарш канор гузошт ва нафақа гирифт ва солҳо баъд ба оромӣ мурд",
-        "Дар набард дар тӯли охирин кампинияи Ҳераклиус ба дили сарзамини Сосонӣ кушта шуд"
-      ],
-      "correct_answer": 0,
-      "explanation": "Khosrow Parviz was overthrown and killed by his own son Shiruyeh (Kavadh II) in 628 CE. Shiruyeh then died of plague within months. The True Cross, taken from Jerusalem in 614, was returned to Heraclius. The treasury Khosrow had built over thirty years emptied within two.",
-      "explanation_fa": "خسرو پرویز توسط پسرش شیرویه (قباد دوم) در سال ۶۲۸ میلادی سرنگون و کشته شد. شیرویه سپس در عرض چند ماه از طاعون مُرد. صلیب واقعی که در سال ۶۱۴ از اورشلیم گرفته شده بود به هراکلیوس بازگردانده شد. خزانه‌ای که خسرو در طول سی سال ساخته بود در عرض دو سال خالی شد.",
-      "explanation_tg": "Хусрави Парвез аз ҷониби писараш Шируяҳ (Қубоди Дуюм) дар соли 628 милодӣ сарнагун ва кушта шуд. Сипас Шируяҳ зарфи чанд моҳ аз тоун мурд.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "kpr-e2",
-      "chapter_slug": "khosrow-parviz",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "How did Khosrow Parviz first reclaim his throne after his father Hormuz was deposed?",
-      "question_fa": "خسرو پرویز اولین بار چگونه تختش را پس از بی‌تختی پدرش هرمز بازپس گرفت؟",
-      "question_tg": "Хусрави Парвез бори аввал чӣ тавр тахташро пас аз ба тахт нашиниши падараш Ҳурмуз бозпас гирифт?",
+      "question": "Which Byzantine emperor turned the tide against Khosrow Parviz?",
+      "question_fa": "کدام امپراتورِ بیزانس ورق را علیه خسرو پرویز برگرداند؟",
+      "question_tg": "Кадом императори Бизантия варақро алайҳи Хусрав Парвиз баргардонд?",
       "answers": [
-        "He fled to the Byzantine Emperor Maurice and returned with Roman legions to defeat Bahram Chubin",
-        "He raised an army from loyal eastern provinces and fought his way back to Ctesiphon alone",
-        "He negotiated with Bahram Chubin to share power before eventually betraying him",
-        "He was smuggled back into the capital by Bindoe who then switched sides"
+        "Constantine — who founded Constantinople",
+        "Heraclius — who remade his army and came east with everything he had",
+        "Theodosius — who divided the empire",
+        "Justinian — who closed the Academy of Athens"
       ],
       "answers_fa": [
-        "نزد امپراتور بیزانسی موریس گریخت و با لشکریان رومی برای شکست دادن بهرام چوبین بازگشت",
-        "از استان‌های وفادار شرقی ارتشی گرد آورد و به تنهایی راهش را به تیسفون کوبید",
-        "با بهرام چوبین مذاکره کرد تا قدرت را تقسیم کنند قبل از اینکه در نهایت به او خیانت کند",
-        "به طور مخفیانه توسط بندوی که سپس طرف را عوض کرد به پایتخت بازگردانده شد"
+        "کنستانتین — که قسطنطنیه را بنیان نهاد",
+        "هراکلیوس — که ارتشش را از نو ساخت و با همه‌ی آنچه داشت به شرق آمد",
+        "تئودوسیوس — که امپراتوری را تقسیم کرد",
+        "ژوستینین — که آکادمیِ آتن را بست"
       ],
       "answers_tg": [
-        "Назди императори Визонтии Маврикий гурехт ва бо лашкариёни Румӣ барои шикаст додани Баҳроми Чӯбин баргашт",
-        "Аз устонҳои вафодори шарқӣ артише ҷамъ кард ва танҳо роҳашро ба Тайсафун кӯфт",
-        "Бо Баҳроми Чӯбин музокира кард то қудратро тақсим кунанд пеш аз он ки дар охир ба ӯ хиёнат кунад",
-        "Пинҳонона аз ҷониби Биндуй ки сипас тараф иваз кард ба пойтахт баргардонда шуд"
+        "Константин — ки Константинополро бунён ниҳод",
+        "Ҳераклиус — ки лашкарашро аз нав сохт ва бо ҳамаи он чи дошт ба шарқ омад",
+        "Феодосий — ки империяро тақсим кард",
+        "Юстиниан — ки Академияи Афинаро баст"
+      ],
+      "correct_answer": 1,
+      "explanation": "Emperor Heraclius rebuilt the Byzantine army and counterattacked with everything he had. The tide turned with a speed that still seems impossible — province after province fell back.",
+      "explanation_fa": "هراکلیوس ارتشِ بیزانس را بازسازی کرد و با تمامِ توان ضدحمله زد — ورق با سرعتی باورنکردنی برگشت.",
+      "explanation_tg": "Ҳераклиус лашкари Бизантияро бозсозӣ кард ва бо тамоми тавон зидди ҳамла зад — варақ бо суръате боварнакарданӣ баргашт.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "khpv-e3",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Who imprisoned and killed Khosrow Parviz?",
+      "question_fa": "چه کسی خسرو پرویز را زندانی و کشت؟",
+      "question_tg": "Кӣ Хусрав Парвизро зиндонӣ ва кушт?",
+      "answers": [
+        "His own son Shiruyeh, raised in his shadow",
+        "The Byzantine emperor Heraclius, after capturing Ctesiphon",
+        "His general Shahrbaraz, returning from Egypt",
+        "Bahram Chubin, returning from exile"
+      ],
+      "answers_fa": [
+        "پسرِ خودش شیرویه، که در سایه‌اش بزرگ شده بود",
+        "امپراتورِ بیزانس هراکلیوس، پس از تصرفِ تیسفون",
+        "سردارش شهربراز، در بازگشت از مصر",
+        "بهرام چوبین، در بازگشت از تبعید"
+      ],
+      "answers_tg": [
+        "Писари худаш Шерӯя, ки дар сояаш бузург шуда буд",
+        "Императори Бизантия Ҳераклиус, пас аз тасарруфи Тайсафун",
+        "Сардораш Шаҳрбароз, дар бозгашт аз Миср",
+        "Баҳром Чӯбин, дар бозгашт аз бадарға"
       ],
       "correct_answer": 0,
-      "explanation": "After his father was blinded and Bahram Chubin seized the throne, Khosrow fled to the Byzantine Empire. Emperor Maurice provided Roman legions, and Khosrow returned to defeat Bahram Chubin in a decisive battle, reclaiming the Sasanian throne as Khosrow Parviz — 'the Victorious.'",
-      "explanation_fa": "پس از کور شدن پدرش و تصرف تخت توسط بهرام چوبین، خسرو به امپراتوری بیزانس گریخت. امپراتور موریس لشکریان رومی فراهم کرد و خسرو برگشت تا در یک نبرد قاطع بهرام چوبین را شکست دهد و تخت ساسانی را به عنوان خسرو پرویز — 'پیروز' — بازپس بگیرد.",
-      "explanation_tg": "Пас аз кӯр шудани падараш ва тасарруфи тахт аз ҷониби Баҳроми Чӯбин, Хусрав ба империяи Визонт гурехт. Императори Маврикий лашкариёни Румӣ фароҳам овард ва Хусрав баргашт то Баҳроми Чӯбинро дар набарди қатъие шикаст диҳад.",
+      "explanation": "His son Shiruyeh, raised in his shadow, imprisoned him and then had him killed. The king who began as a fugitive from his father's fallen court ended as his son's prisoner.",
+      "explanation_fa": "پسرش شیرویه زندانی‌اش کرد و سپس به قتلش رساند — آغاز فراری، پایان زندانی.",
+      "explanation_tg": "Писараш Шерӯя зиндонияш кард ва сипас ба қатлаш расонд — оғоз фирорӣ, поён зиндонӣ.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "khpv-m1",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "How did Khosrow Parviz's reign begin?",
+      "question_fa": "سلطنتِ خسرو پرویز چگونه آغاز شد؟",
+      "question_tg": "Салтанати Хусрав Парвиз чӣ гуна оғоз шуд?",
+      "answers": [
+        "As a fugitive — he fled his blinded father's court and returned with Byzantine soldiers to defeat Bahram Chubin",
+        "As a hostage released by the Turks",
+        "As a child-king under a regency council",
+        "As a conqueror — he seized the throne in battle from his uncle"
+      ],
+      "answers_fa": [
+        "به‌عنوانِ فراری — از دربارِ پدرِ کورشده‌اش گریخت و با سربازانِ بیزانسی بازگشت تا بهرام چوبین را شکست دهد",
+        "به‌عنوانِ گروگانی که ترکان آزادش کردند",
+        "به‌عنوانِ شاه‌کودک زیرِ شورای نیابت",
+        "به‌عنوانِ فاتح — تخت را در نبرد از عمویش گرفت"
+      ],
+      "answers_tg": [
+        "Ба унвони фирорӣ — аз дарбори падари кӯршудааш гурехт ва бо сарбозони бизантӣ баргашт то Баҳром Чӯбинро шикаст диҳад",
+        "Ба унвони гаравгоне ки Туркон озодаш карданд",
+        "Ба унвони шоҳкӯдак зери шӯрои ниёбат",
+        "Ба унвони фотеҳ — тахтро дар набард аз амуяш гирифт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Khosrow fled the court when his father was blinded, sought Byzantine help, and returned with foreign soldiers at his back to defeat Bahram Chubin and claim the throne.",
+      "explanation_fa": "خسرو پس از کور شدنِ پدرش گریخت، از بیزانس کمک گرفت و با سربازانِ بیگانه بازگشت و تخت را پس گرفت.",
+      "explanation_tg": "Хусрав пас аз кӯр шудани падараш гурехт, аз Бизантия кӯмак гирифт ва бо сарбозони бегона баргашт ва тахтро пас гирифт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "khpv-m2",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What did Khosrow Parviz do to the men who had mutilated his father?",
+      "question_fa": "خسرو پرویز با مردانی که پدرش را ناقص کرده بودند چه کرد؟",
+      "question_tg": "Хусрав Парвиз бо мардоне ки падарашро нокис карда буданд чӣ кард?",
+      "answers": [
+        "He executed them — including the brothers-in-law Bindoe and Vistahm, who had thought themselves kingmakers",
+        "He pardoned them to win the nobles' support",
+        "He forced them to serve as his bodyguards",
+        "He exiled them to Byzantium"
+      ],
+      "answers_fa": [
+        "اعدامشان کرد — از جمله برادرزن‌ها بندوی و بسطام، که خود را شاه‌ساز می‌پنداشتند",
+        "بخشیدشان تا حمایتِ اشراف را به دست آورد",
+        "مجبورشان کرد محافظانش شوند",
+        "به بیزانس تبعیدشان کرد"
+      ],
+      "answers_tg": [
+        "Қатлашон кард — аз ҷумла бародарзанҳо Биндӯй ва Бистом, ки худро шоҳсоз мепиндоштанд",
+        "Бахшидашон то ҳимояти ашрофро ба даст оварад",
+        "Маҷбурашон кард муҳофизонаш шаванд",
+        "Ба Бизантия бадарғаашон кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "He was methodical about revenge: the men who blinded Hormuz, including Bindoe and Vistahm, were executed. Those who make kings, the lesson ran, can also be unmade by them.",
+      "explanation_fa": "در انتقام روشمند بود: بندوی و بسطام و دیگران اعدام شدند — شاه‌سازان به دستِ شاه برانداخته شدند.",
+      "explanation_tg": "Дар интиқом равишманд буд: Биндӯй ва Бистом ва дигарон қатл шуданд — шоҳсозон ба дасти шоҳ барандохта шуданд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "khpv-m3",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Which general won Syria and Egypt for Khosrow Parviz?",
+      "question_fa": "کدام سردار سوریه و مصر را برای خسرو پرویز فتح کرد؟",
+      "question_tg": "Кадом сардор Сурия ва Мисрро барои Хусрав Парвиз фатҳ кард?",
+      "answers": [
+        "Rostam son of Farrokh-Hormozd",
+        "Shahrbaraz",
+        "Bozorgmehr",
+        "Ramburzin"
+      ],
+      "answers_fa": [
+        "رستم پسرِ فرخ‌هرمزد",
+        "شهربراز",
+        "بزرگمهر",
+        "رام‌برزین"
+      ],
+      "answers_tg": [
+        "Рустам писари Фаррух-Ҳурмузд",
+        "Шаҳрбароз",
+        "Бузургмеҳр",
+        "Ромбарзин"
+      ],
+      "correct_answer": 1,
+      "explanation": "Shahrbaraz led the campaigns that took Syria and then Egypt — the largest Iranian conquests since the Achaemenids, stretching the empire from the Nile to the Oxus.",
+      "explanation_fa": "شهربراز سوریه و سپس مصر را گرفت — بزرگ‌ترین فتوحاتِ ایرانی از زمانِ هخامنشیان.",
+      "explanation_tg": "Шаҳрбароз Сурия ва сипас Мисрро гирифт — бузургтарин футӯҳоти эронӣ аз замони Ҳахоманишиён.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "khpv-m4",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What fatal flaw did Khosrow Parviz show when the war turned against him?",
+      "question_fa": "وقتی جنگ علیه‌اش برگشت، خسرو پرویز چه نقصِ مرگباری نشان داد؟",
+      "question_tg": "Вақте ҷанг алайҳаш баргашт, Хусрав Парвиз чӣ нуқси марговаре нишон дод?",
+      "answers": [
+        "He fled to China and abandoned the army",
+        "He converted to Christianity and lost the priests",
+        "He had never learned that a king who only rewards success cannot hold an army through failure — he stripped losing generals and replaced them with men who lost faster",
+        "He refused to spend any money on defense"
+      ],
+      "answers_fa": [
+        "به چین گریخت و ارتش را رها کرد",
+        "به مسیحیت گروید و روحانیان را از دست داد",
+        "هرگز نیاموخته بود شاهی که فقط موفقیت را پاداش می‌دهد نمی‌تواند ارتش را در شکست نگه دارد — سردارانِ بازنده را عزل کرد و مردانی گذاشت که سریع‌تر می‌باختند",
+        "حاضر نشد هیچ پولی صرفِ دفاع کند"
+      ],
+      "answers_tg": [
+        "Ба Чин гурехт ва лашкарро раҳо кард",
+        "Ба масеҳият гаравид ва коҳинонро аз даст дод",
+        "Ҳаргиз наомӯхта буд шоҳе ки танҳо муваффақиятро подош медиҳад наметавонад лашкарро дар шикаст нигоҳ дорад — сардорони бозандаро азл кард ва мардоне гузошт ки сареътар мебохтанд",
+        "Ҳозир нашуд ҳеҷ пуле сарфи дифоъ кунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "When Heraclius advanced, Khosrow stripped command from the generals who had won everything — because they were now losing — and replaced them with men who lost faster. Loyalty under failure was a currency he had never minted.",
+      "explanation_fa": "وقتی هراکلیوس پیش آمد، خسرو سردارانِ بازنده را عزل کرد و بدتر گذاشت — وفاداری در شکست ارزی بود که هرگز ضرب نکرده بود.",
+      "explanation_tg": "Вақте Ҳераклиус пеш омад, Хусрав сардорони бозандаро азл кард ва бадтар гузошт — вафодорӣ дар шикаст арзе буд ки ҳаргиз зарб накарда буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "khpv-m5",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What happened to the True Cross and Khosrow's treasury after his fall?",
+      "question_fa": "پس از سقوطِ خسرو، صلیبِ راستین و خزانه‌اش چه شدند؟",
+      "question_tg": "Пас аз суқути Хусрав, Салиби Ростин ва хазинааш чӣ шуданд?",
+      "answers": [
+        "Both were captured by the Arab armies",
+        "The Cross was returned to Heraclius, and the treasury filled over thirty years was empty within two",
+        "Both were sent to China for safekeeping",
+        "The Cross was destroyed and the treasury buried in the desert"
+      ],
+      "answers_fa": [
+        "هر دو به دستِ ارتش‌های عرب افتادند",
+        "صلیب به هراکلیوس بازگردانده شد و خزانه‌ای که سی سال پر شده بود در دو سال خالی شد",
+        "هر دو برای نگهداری به چین فرستاده شدند",
+        "صلیب نابود شد و خزانه در بیابان دفن شد"
+      ],
+      "answers_tg": [
+        "Ҳар ду ба дасти лашкарҳои араб афтоданд",
+        "Салиб ба Ҳераклиус бозгардонда шуд ва хазинае ки сӣ сол пур шуда буд дар ду сол холӣ шуд",
+        "Ҳар ду барои нигаҳдорӣ ба Чин фиристода шуданд",
+        "Салиб нобуд шуд ва хазина дар биёбон дафн шуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "After Shiruyeh's coup, the True Cross went back to Heraclius and the treasury Khosrow had spent thirty years filling was empty within two. Every gain of the great war was reversed.",
+      "explanation_fa": "صلیب به هراکلیوس بازگشت و خزانه‌ی سی‌ساله در دو سال خالی شد — همه‌ی دستاوردها وارونه شد.",
+      "explanation_tg": "Салиб ба Ҳераклиус бозгашт ва хазинаи сисола дар ду сол холӣ шуд — ҳамаи дастовардҳо воружа шуд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "khpv-h1",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Khosrow Parviz 'began his reign as a fugitive and ended it as a prisoner.' What does this arc reveal about the Shahnameh's view of fortune?",
+      "question_fa": "خسرو پرویز «سلطنتش را فراری آغاز کرد و زندانی پایان داد.» این قوس درباره‌ی نگاهِ شاهنامه به بخت چه آشکار می‌کند؟",
+      "question_tg": "Хусрав Парвиз «салтанаташро фирорӣ оғоз кард ва зиндонӣ поён дод.» Ин қавс дар бораи нигоҳи Шоҳнома ба бахт чӣ ошкор мекунад?",
+      "answers": [
+        "Fortune is a wheel, not a ladder — the higher the rise, the harder the fall, and no conquest can fix a man's position on it",
+        "Fortune in the Shahnameh always favors Iran over its enemies",
+        "Fortune rewards only the patient",
+        "Fortune is fully controlled by royal merit"
+      ],
+      "answers_fa": [
+        "بخت چرخ است، نه نردبان — هر چه صعود بلندتر، سقوط سخت‌تر، و هیچ فتحی جای انسان را روی آن ثابت نمی‌کند",
+        "بخت در شاهنامه همیشه ایران را بر دشمنانش ترجیح می‌دهد",
+        "بخت فقط به صبوران پاداش می‌دهد",
+        "بخت کاملاً در اختیارِ شایستگیِ شاهانه است"
+      ],
+      "answers_tg": [
+        "Бахт чарх аст, на нардбон — ҳар чи суъуд баландтар, суқут сахттар, ва ҳеҷ фатҳе ҷои инсонро рӯи он собит намекунад",
+        "Бахт дар Шоҳнома ҳамеша Эронро бар душманонаш тарҷеҳ медиҳад",
+        "Бахт танҳо ба сабурон подош медиҳад",
+        "Бахт комилан дар ихтиёри шоистагии шоҳона аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "From fugitive to master of the Nile-to-Oxus world to his son's prisoner: the arc is the wheel of fortune in its purest form. The Shahnameh's old lesson returns at the dynasty's end — no height is secure, and the swing down is proportional to the swing up.",
+      "explanation_fa": "از فراری تا فرمانروای نیل‌تا‌جیحون تا زندانیِ پسرش: چرخِ بخت در ناب‌ترین شکلش.",
+      "explanation_tg": "Аз фирорӣ то фармонравои Нил-то-Ҷайҳун то зиндонии писараш: чархи бахт дар нобтарин шаклаш.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "khpv-h2",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Why was beginning his reign 'with Byzantine soldiers at his back' a poisoned foundation?",
+      "question_fa": "چرا آغازِ سلطنت «با سربازانِ بیزانسی پشتِ سرش» بنیادی زهرآگین بود؟",
+      "question_tg": "Чаро оғози салтанат «бо сарбозони бизантӣ пушти сараш» бунёде заҳролуд буд?",
+      "answers": [
+        "It made the Turks permanent enemies of Iran",
+        "It set the precedent that the Sasanian crown could be won with foreign armies — admitting the system could no longer sustain itself from within",
+        "It obligated Iran to convert to Christianity",
+        "Byzantine soldiers refused to leave Iran afterward"
+      ],
+      "answers_fa": [
+        "ترکان را دشمنِ دائمیِ ایران کرد",
+        "این سابقه را گذاشت که تاجِ ساسانی با ارتش‌های خارجی به دست می‌آید — اعترافی به این‌که نظام دیگر از درون خود را نگه نمی‌داشت",
+        "ایران را به گرویدن به مسیحیت متعهد کرد",
+        "سربازانِ بیزانسی بعداً حاضر به ترکِ ایران نشدند"
+      ],
+      "answers_tg": [
+        "Турконро душмани доимии Эрон кард",
+        "Ин собиқаро гузошт ки тоҷи сосонӣ бо лашкарҳои хориҷӣ ба даст меояд — эътирофе ба ин ки низом дигар аз дарун худро нигоҳ намедошт",
+        "Эронро ба гаравидан ба масеҳият мутааҳҳид кард",
+        "Сарбозони бизантӣ баъдан ҳозир ба тарки Эрон нашуданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Legitimacy bought with foreign spears is a confession: the farr system can no longer produce and defend its own kings. Once the precedent existed, every claimant could seek a foreign patron — and the empire's independence became negotiable. The fall of the dynasty is implicit in the way its last great king gained the throne.",
+      "explanation_fa": "مشروعیتِ خریداری‌شده با نیزه‌ی بیگانه اعتراف است: نظامِ فرّ دیگر شاهانِ خود را نمی‌سازد و نمی‌پاید.",
+      "explanation_tg": "Машруияти харидоришуда бо найзаи бегона эътироф аст: низоми фарр дигар шоҳони худро намесозад ва намепояд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "khpv-h3",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The campaigns of Khosrow Parviz were 'the largest Iran had fielded since the Achaemenids,' yet they preceded total collapse. What relationship between expansion and fragility does the chapter suggest?",
+      "question_fa": "لشکرکشی‌های خسرو پرویز «بزرگ‌ترین از زمانِ هخامنشیان» بودند، اما پیش از فروپاشیِ کامل آمدند. این فصل چه رابطه‌ای میانِ گسترش و شکنندگی پیشنهاد می‌کند؟",
+      "question_tg": "Лашкаркашиҳои Хусрав Парвиз «бузургтарин аз замони Ҳахоманишиён» буданд, аммо пеш аз фурӯпошии комил омаданд. Ин боб чӣ робитае байни густариш ва шиканандагӣ пешниҳод мекунад?",
+      "answers": [
+        "Fragility was caused by too little expansion, not too much",
+        "Expansion always guarantees a century of security afterward",
+        "The empire collapsed only because of bad weather and plague",
+        "Maximum extension was maximum exposure — the empire stretched past what its institutions could hold, so victory itself manufactured the conditions of collapse"
+      ],
+      "answers_fa": [
+        "شکنندگی از کمیِ گسترش بود، نه زیادی‌اش",
+        "گسترش همیشه یک قرن امنیت را تضمین می‌کند",
+        "امپراتوری فقط به‌خاطرِ بدیِ هوا و طاعون فروپاشید",
+        "بیشینه‌ی گسترش بیشینه‌ی آسیب‌پذیری بود — امپراتوری فراتر از توانِ نهادهایش کشیده شد و خودِ پیروزی شرایطِ فروپاشی را ساخت"
+      ],
+      "answers_tg": [
+        "Шиканандагӣ аз камии густариш буд, на зиёдияш",
+        "Густариш ҳамеша як қарн амниятро тазмин мекунад",
+        "Империя танҳо ба хотири бадии ҳаво ва тоъун фурӯпошид",
+        "Бешинаи густариш бешинаи осебпазирӣ буд — империя фаротар аз тавони ниҳодҳояш кашида шуд ва худи пирӯзӣ шароити фурӯпоширо сохт"
+      ],
+      "correct_answer": 3,
+      "explanation": "From the Nile to the Oxus, every new province demanded garrisons, governors, and gold the center could not spare. When Heraclius struck back, the over-stretched structure snapped everywhere at once. The Shahnameh shows conquest and collapse as one continuous motion — the reach that exceeded the grasp.",
+      "explanation_fa": "از نیل تا جیحون، هر استانِ تازه پادگان و طلا می‌خواست که مرکز نداشت. فتح و فروپاشی یک حرکتِ پیوسته بودند.",
+      "explanation_tg": "Аз Нил то Ҷайҳун, ҳар вилояти тоза подгон ва тилло мехост ки марказ надошт. Фатҳ ва фурӯпошӣ як ҳаракати пайваста буданд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "khpv-h4",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "'He was magnificent and he was catastrophic, and the Shahnameh does not try to separate the two.' Why does the poem refuse the separation?",
+      "question_fa": "«او باشکوه بود و فاجعه‌بار، و شاهنامه نمی‌کوشد این دو را جدا کند.» چرا شعر از این جداسازی سر باز می‌زند؟",
+      "question_tg": "«Ӯ бошукӯҳ буд ва фоҷиабор, ва Шоҳнома намекӯшад ин дуро ҷудо кунад.» Чаро шеър аз ин ҷудосозӣ сар бозмезанад?",
+      "answers": [
+        "Because they were the same qualities — the ambition, certainty and scale that built the conquests are exactly what produced the catastrophe; separating them would falsify the man",
+        "Because the poem never judges any king",
+        "Because magnificence always outweighs catastrophe in epic",
+        "Because Ferdowsi lacked sources to judge between them"
+      ],
+      "answers_fa": [
+        "چون همان ویژگی‌ها بودند — جاه‌طلبی، یقین و مقیاسی که فتوحات را ساخت دقیقاً همان بود که فاجعه را تولید کرد؛ جداسازی‌شان مرد را جعل می‌کرد",
+        "چون شعر هرگز هیچ شاهی را داوری نمی‌کند",
+        "چون در حماسه شکوه همیشه بر فاجعه می‌چربد",
+        "چون فردوسی منابعی برای داوری میانشان نداشت"
+      ],
+      "answers_tg": [
+        "Зеро ҳамон вижагиҳо буданд — ҷоҳталабӣ, яқин ва миқёсе ки футӯҳотро сохт дақиқан ҳамон буд ки фоҷиаро тавлид кард; ҷудосозияшон мардро ҷаъл мекард",
+        "Зеро шеър ҳаргиз ҳеҷ шоҳеро доварӣ намекунад",
+        "Зеро дар ҳамоса шукӯҳ ҳамеша бар фоҷиа мечарбад",
+        "Зеро Фирдавсӣ манбаъҳое барои доварӣ байнашон надошт"
+      ],
+      "correct_answer": 0,
+      "explanation": "The drive that took Jerusalem is the same drive that could not tolerate failing generals; the certainty that built the treasury is the certainty that emptied it. The Shahnameh's honesty is to present one man, one reign, one swing of fortune — not a good king who later became bad.",
+      "explanation_fa": "همان رانه‌ای که اورشلیم را گرفت سردارانِ شکست‌خورده را تحمل نکرد. شاهنامه یک مرد را نشان می‌دهد، نه شاهی خوب که بد شد.",
+      "explanation_tg": "Ҳамон ронае ки Ерусалимро гирифт сардорони шикастхӯрдаро таҳаммул накард. Шоҳнома як мардро нишон медиҳад, на шоҳе хуб ки бад шуд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "khpv-h5",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "What leadership principle does Khosrow's treatment of his losing generals illustrate?",
+      "question_fa": "رفتارِ خسرو با سردارانِ بازنده‌اش چه اصلی از رهبری را نشان می‌دهد؟",
+      "question_tg": "Рафтори Хусрав бо сардорони бозандааш чӣ асле аз раҳбариро нишон медиҳад?",
+      "answers": [
+        "Generals should be rotated frequently regardless of results",
+        "Punishment of failure always improves performance",
+        "A king should command all armies personally",
+        "An army held only by reward dissolves at the first defeat — durable loyalty must be able to survive failure, or it is not loyalty at all"
+      ],
+      "answers_fa": [
+        "سرداران باید صرف‌نظر از نتایج مرتب جابه‌جا شوند",
+        "مجازاتِ شکست همیشه عملکرد را بهتر می‌کند",
+        "شاه باید همه‌ی ارتش‌ها را شخصاً فرماندهی کند",
+        "ارتشی که فقط با پاداش نگه داشته شود با نخستین شکست از هم می‌پاشد — وفاداریِ پایدار باید از شکست جان به در ببرد وگرنه اصلاً وفاداری نیست"
+      ],
+      "answers_tg": [
+        "Сардорон бояд сарфи назар аз натоиҷ мураттаб ҷобаҷо шаванд",
+        "Ҷазои шикаст ҳамеша амалкардро беҳтар мекунад",
+        "Шоҳ бояд ҳамаи лашкарҳоро шахсан фармондеҳӣ кунад",
+        "Лашкаре ки танҳо бо подош нигоҳ дошта шавад бо нахустин шикаст аз ҳам мепошад — вафодории пойдор бояд аз шикаст ҷон ба дар барад вагарна аслан вафодорӣ нест"
+      ],
+      "correct_answer": 3,
+      "explanation": "Reward-only loyalty is fair-weather loyalty. When defeat arrived, Khosrow's generals knew their service counted for nothing — so the rational ones stopped fighting for him. The army that conquers the world for you must also be allowed to lose a battle for you; otherwise it is rented, not yours.",
+      "explanation_fa": "وفاداریِ فقط‌پاداشی وفاداریِ روزِ آفتابی است. ارتشی که اجازه‌ی باختن ندارد، اجاره‌ای است نه از آنِ تو.",
+      "explanation_tg": "Вафодории танҳоподошӣ вафодории рӯзи офтобист. Лашкаре ки иҷозаи бохтан надорад, иҷораист на аз они ту.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "khpv-h6",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Shiruyeh was 'raised in his shadow' before killing him. How does this fit the recurring pattern of fathers and sons in the Shahnameh?",
+      "question_fa": "شیرویه «در سایه‌ی او بزرگ شده بود» پیش از آن‌که بکشدش. این چگونه با الگوی تکرارشونده‌ی پدران و پسران در شاهنامه می‌خواند؟",
+      "question_tg": "Шерӯя «дар сояи ӯ бузург шуда буд» пеш аз он ки бикушадаш. Ин чӣ гуна бо улгуи такроршавандаи падарон ва писарон дар Шоҳнома мехонад?",
+      "answers": [
+        "It proves the Shahnameh has no consistent patterns",
+        "It inverts Rostam and Sohrab — where once a father unknowingly killed his son, now a son knowingly kills his father; the tragedy has curdled into crime as the world declines",
+        "It shows sons are always justified against fathers",
+        "It repeats Rostam and Sohrab exactly"
+      ],
+      "answers_fa": [
+        "ثابت می‌کند شاهنامه الگوی منسجمی ندارد",
+        "رستم و سهراب را وارونه می‌کند — جایی که زمانی پدری ندانسته پسرش را کشت، حالا پسری دانسته پدرش را می‌کشد؛ با افولِ جهان، تراژدی به جنایت بدل شده",
+        "نشان می‌دهد پسران همیشه در برابرِ پدران محق‌اند",
+        "رستم و سهراب را عیناً تکرار می‌کند"
+      ],
+      "answers_tg": [
+        "Исбот мекунад Шоҳнома улгуи мунсаҷиме надорад",
+        "Рустам ва Суҳробро воружа мекунад — ҷое ки замоне падаре надониста писарашро кушт, ҳоло писаре дониста падарашро мекушад; бо нузули ҷаҳон, фоҷиа ба ҷиноят бадал шуда",
+        "Нишон медиҳад писарон ҳамеша дар баробари падарон муҳиққанд",
+        "Рустам ва Суҳробро айнан такрор мекунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rostam killed Sohrab in ignorance and was destroyed by grief; Shiruyeh kills Khosrow with full knowledge and for the throne. The same family wound recurs, but stripped of innocence. The decline of the Iranian world is measured precisely in this: what was once tragic fate is now deliberate parricide.",
+      "explanation_fa": "رستم در ناآگاهی کشت و از اندوه ویران شد؛ شیرویه با آگاهیِ کامل و برای تخت می‌کشد — تراژدی به جنایت بدل شده.",
+      "explanation_tg": "Рустам дар ноогоҳӣ кушт ва аз андӯҳ вайрон шуд; Шерӯя бо огоҳии комил ва барои тахт мекушад — фоҷиа ба ҷиноят бадал шуда.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "khpv-h7",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The collapse after Heraclius's counterattack came 'with a speed that still seems impossible.' What does this speed reveal about the empire Khosrow built?",
+      "question_fa": "فروپاشی پس از ضدحمله‌ی هراکلیوس «با سرعتی که هنوز ناممکن می‌نماید» آمد. این سرعت درباره‌ی امپراتوری‌ای که خسرو ساخت چه آشکار می‌کند؟",
+      "question_tg": "Фурӯпошӣ пас аз зидди ҳамлаи Ҳераклиус «бо суръате ки ҳанӯз номумкин менамояд» омад. Ин суръат дар бораи империяе ки Хусрав сохт чӣ ошкор мекунад?",
+      "answers": [
+        "The provinces had secretly been Byzantine all along",
+        "Speed of collapse is random and reveals nothing",
+        "The Byzantine army was simply ten times larger",
+        "The conquests were held by momentum, not roots — success had masked a hollow structure that only needed one hard push to reveal itself"
+      ],
+      "answers_fa": [
+        "استان‌ها از همان اول پنهانی بیزانسی بودند",
+        "سرعتِ فروپاشی تصادفی است و چیزی آشکار نمی‌کند",
+        "ارتشِ بیزانس صرفاً ده برابر بزرگ‌تر بود",
+        "فتوحات با شتاب نگه داشته می‌شدند، نه با ریشه — موفقیت ساختاری توخالی را پنهان کرده بود که فقط یک فشارِ سخت می‌خواست تا آشکار شود"
+      ],
+      "answers_tg": [
+        "Вилоятҳо аз ҳамон аввал пинҳонӣ бизантӣ буданд",
+        "Суръати фурӯпошӣ тасодуфист ва чизе ошкор намекунад",
+        "Лашкари Бизантия сирфан даҳ баробар бузургтар буд",
+        "Футӯҳот бо шитоб нигоҳ дошта мешуданд, на бо реша — муваффақият сохтори тӯхолиро пинҳон карда буд ки танҳо як фишори сахт мехост то ошкор шавад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Empires rooted in administration lose slowly; empires held by momentum lose all at once. Twenty years of conquest unraveled in two or three campaigning seasons because nothing beneath the victories — no loyalty, no integration, no reserve — had been built to absorb a single sustained defeat.",
+      "explanation_fa": "امپراتوریِ ریشه‌دار آهسته می‌بازد؛ امپراتوریِ شتابی یک‌جا. زیرِ پیروزی‌ها هیچ چیزی برای جذبِ یک شکستِ پیوسته ساخته نشده بود.",
+      "explanation_tg": "Империяи решадор оҳиста мебозад; империяи шитобӣ якҷо. Зери пирӯзиҳо ҳеҷ чизе барои ҷазби як шикасти пайваста сохта нашуда буд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "khpv-h8",
+      "chapter_slug": "khosrow-parviz",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "What is the symbolic weight of the True Cross being carried to Ctesiphon and later returned?",
+      "question_fa": "وزنِ نمادینِ بردنِ صلیبِ راستین به تیسفون و بازگرداندنِ بعدی‌اش چیست؟",
+      "question_tg": "Вазни намодини бурдани Салиби Ростин ба Тайсафун ва бозгардондани баъдияш чист?",
+      "answers": [
+        "It showed relics have no power in the Shahnameh's world",
+        "It proved Khosrow had secretly become Christian",
+        "Taking it claimed mastery over a rival civilization's holiest meaning; returning it conceded that the claim had failed — the relic's journey maps the empire's whole rise and reversal",
+        "It was merely a valuable object of gold and jewels"
+      ],
+      "answers_fa": [
+        "نشان می‌داد یادگارها در جهانِ شاهنامه قدرتی ندارند",
+        "ثابت می‌کرد خسرو پنهانی مسیحی شده",
+        "گرفتنش ادعای چیرگی بر مقدس‌ترین معنای تمدنی رقیب بود؛ بازگرداندنش اعتراف به شکستِ آن ادعا — سفرِ یادگار، تمامِ صعود و وارونگیِ امپراتوری را ترسیم می‌کند",
+        "صرفاً شیئی گران‌بها از طلا و جواهر بود"
+      ],
+      "answers_tg": [
+        "Нишон медод ёдгорҳо дар ҷаҳони Шоҳнома қудрате надоранд",
+        "Исбот мекард Хусрав пинҳонӣ масеҳӣ шуда",
+        "Гирифтанаш даъвои чирагӣ бар муқаддастарин маънои тамаддуни рақиб буд; бозгардонданаш эътироф ба шикасти он даъво — сафари ёдгор, тамоми суъуд ва воружагии империяро тарсим мекунад",
+        "Сирфан шайъе гаронбаҳо аз тилло ва ҷавоҳир буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Relics are meaning made portable. Holding Christendom's holiest object in Ctesiphon said: your civilization's center now sits inside ours. Giving it back said the opposite. One object, carried east then west, traces the entire arc — apex and undoing — of the last Sasanian bid for the world.",
+      "explanation_fa": "یادگارها معنای قابل‌حمل‌اند. نگه داشتنِ صلیب در تیسفون یعنی مرکزِ تمدنِ تو درونِ ماست؛ پس دادنش یعنی عکسِ آن.",
+      "explanation_tg": "Ёдгорҳо маънои қобили ҳамланд. Нигоҳ доштани Салиб дар Тайсафун яъне маркази тамаддуни ту даруни мост; пас доданаш яъне акси он.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

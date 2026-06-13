@@ -9,22 +9,22 @@
       "question_fa": "وقتی طوس پیشاهنگِ ایرانی را از کنارِ قلعه‌ی فرود در ابتدایِ جنگِ بزرگ رد می‌کند چه اتفاقی می‌افتد؟",
       "question_tg": "Вақте Тус пешоҳанги Эрониро аз канори қалъаи Фаруд мегузаронад чӣ рух медиҳад?",
       "answers": [
-        "Frud joins the Iranian army, providing crucial intelligence about Turanian defenses",
+        "Afrasiab uses Frud's castle as bait to ambush Tus's vanguard",
         "Tus ignores Kay Khosrow's orders not to approach Frud's territory — Frud, Siavash's own half-brother and loyal to Iran, is killed",
         "Frud refuses to acknowledge the Iranian army and Tus bypasses him without incident",
-        "Afrasiab uses Frud's castle as bait to ambush Tus's vanguard"
+        "Frud joins the Iranian army, providing crucial intelligence about Turanian defenses"
       ],
       "answers_fa": [
-        "فرود به سپاهِ ایران می‌پیوندد و اطلاعاتِ حیاتی درباره‌ی دفاع‌های توران می‌دهد",
+        "افراسیاب از قلعه‌ی فرود به عنوانِ طعمه برای کمینِ پیشاهنگِ طوس استفاده می‌کند",
         "طوس دستوراتِ کی‌خسرو مبنی بر نزدیک نشدن به قلمروِ فرود را نادیده می‌گیرد — فرود، برادرِ ناتنیِ سیاوش و وفادار به ایران، کشته می‌شود",
         "فرود از شناختنِ سپاهِ ایران رد می‌کند و طوس بدونِ حادثه از کنارش رد می‌شود",
-        "افراسیاب از قلعه‌ی فرود به عنوانِ طعمه برای کمینِ پیشاهنگِ طوس استفاده می‌کند"
+        "فرود به سپاهِ ایران می‌پیوندد و اطلاعاتِ حیاتی درباره‌ی دفاع‌های توران می‌دهد"
       ],
       "answers_tg": [
-        "Фарӯд ба сипоҳи Эрон мепайвандад",
+        "Афросиёб аз қалъаи Фарӯд ҳамчун тӯма истифода мекунад",
         "Тус дастурҳои Кай Хусравро нодида мегирад — Фарӯд, бародари ноаббовии Сиёвуш ва вафодор ба Эрон, кушта мешавад",
         "Фарӯд аз эътирофи сипоҳи Эрон рад мекунад",
-        "Афросиёб аз қалъаи Фарӯд ҳамчун тӯма истифода мекунад"
+        "Фарӯд ба сипоҳи Эрон мепайвандад"
       ],
       "correct_answer": 1,
       "explanation": "Kay Khosrow had sent specific instructions to Tus before the war: do not approach Frud's territory. Frud was Kay Khosrow's own half-brother — son of Siavash by a Turanian mother, living in a castle on the Iranian march, loyal to Iran. He was not the enemy. Tus ignored the order — from poor judgment or the arrogance of a general who knew the king was far behind — and led his forces past the castle. Frud came out to parley. The meeting went badly. He was killed. The war organized to avenge Siavash killed Siavash's son in its opening days.",
@@ -45,99 +45,29 @@
       "question_tg": "Чаро Пирони Виса чеҳраи фоҷиавӣ дар ҷанги бузург аст?",
       "answers": [
         "He is tragic because he is old and fighting for a cause his own body can no longer support",
-        "He is tragic because he secretly wanted Iran to win and sabotaged Turan's defenses",
         "He is the Turanian general who tried hardest to save Siavash — argued against Garsivaz, pleaded with Afrasiab, failed — and then spent decades faithfully serving the cause that his own honour had already invalidated",
-        "His tragedy is that he never knew the full truth of what Garsivaz had done to Siavash"
+        "His tragedy is that he never knew the full truth of what Garsivaz had done to Siavash",
+        "He is tragic because he secretly wanted Iran to win and sabotaged Turan's defenses"
       ],
       "answers_fa": [
         "تراژیک است چون پیر است و برای هدفی می‌جنگد که جسمش دیگر نمی‌تواند حمایتش کند",
-        "تراژیک است چون در خفا می‌خواست ایران برنده شود و دفاع‌های توران را خراب کرد",
         "سردارِ توران است که سخت‌ترین تلاش را برای نجاتِ سیاوش کرد — علیهِ گرسیوز استدلال کرد، با افراسیاب التماس کرد، شکست خورد — بعد دهه‌ها صادقانه خدمتِ هدفی کرد که شرافتِ خودش از پیش باطلش کرده بود",
-        "تراژدیِ او این است که هرگز حقیقتِ کاملِ کارِ گرسیوز با سیاوش را نمی‌دانست"
+        "تراژدیِ او این است که هرگز حقیقتِ کاملِ کارِ گرسیوز با سیاوش را نمی‌دانست",
+        "تراژیک است چون در خفا می‌خواست ایران برنده شود و دفاع‌های توران را خراب کرد"
       ],
       "answers_tg": [
         "Фоҷиавӣ аст чун пир аст",
-        "Фоҷиавӣ аст чун пинҳонӣ мехост Эрон барнда шавад",
         "Ӯ саркардаи Туронист ки сахттарин кӯшишро барои наҷоти Сиёвуш кард — зидди Гарсевоз далел овард, аз Афросиёб илтимос кард, шикаст хӯрд — баъд даҳсолаҳо садоқатмандона хидмати сабабе кард ки шарафи худаш аз пеш ботилаш карда буд",
-        "Фоҷиааш ин аст ки ҳеҷ гоҳ ҳақиқати пури кори Гарсевозро надонист"
+        "Фоҷиааш ин аст ки ҳеҷ гоҳ ҳақиқати пури кори Гарсевозро надонист",
+        "Фоҷиавӣ аст чун пинҳонӣ мехост Эрон барнда шавад"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "Piran Wiseh is the Shahnameh's most fully realized enemy. He had genuinely tried to save Siavash — he argued against Garsivaz, pleaded with Afrasiab to spare the prince, and failed. He then continued to serve Afrasiab faithfully through all the wars that followed Siavash's death — wars that were, at their root, a consequence of that death. He fought against the Iran that came to avenge Siavash. His final single combat with Gudarz is the war's human center: two old generals who respect each other, who have fought each other for decades, who cannot stop because the causes they serve cannot stop. Piran falls with more dignity than many of the Shahnameh's heroes.",
       "explanation_fa": "پیرانِ ویسه دقیق‌ترین دشمنِ شاهنامه است. واقعاً سعی کرده بود سیاوش را نجات دهد و شکست خورده بود. بعد صادقانه خدمتِ افراسیاب کرد. نبردِ تن‌به‌تنش با گودرز مرکزِ انسانیِ جنگ است.",
       "explanation_tg": "Пирони Виса дақиқтарин душмани Шоҳнома аст. Воқеан кӯшиш карда буд Сиёвушро наҷот диҳад ва шикаст хӯрда буд. Баъд садоқатмандона хидмат кард. Нишасти якка-яккаш бо Гударз маркази инсонии ҷанг аст.",
       "reward": {
         "xp": 110,
         "real": 45
-      }
-    },
-    {
-      "id": "gwt-m1",
-      "chapter_slug": "great-war-turan",
-      "quiz_part": 3,
-      "difficulty": "medium",
-      "question": "The great war ends Afrasiab's life at a remote lake rather than on a celebrated battlefield. What does this choice of setting reveal about the Shahnameh's understanding of how debts are paid?",
-      "question_fa": "جنگِ بزرگ زندگیِ افراسیاب را در دریاچه‌ای دورافتاده به جای در میدانِ نبردِ مشهوری تمام می‌کند. این انتخابِ محیط چه چیزی درباره‌ی فهمِ شاهنامه از طرزِ پرداختِ بدهی آشکار می‌کند؟",
-      "question_tg": "Ҷанги бузург зиндагии Афросиёбро дар дарёчаи дурдасте тамом мекунад. Ин интихоби ҷой чӣ мегӯяд?",
-      "answers": [
-        "The remote lake setting shows that Kay Khosrow was forced to improvise — the final battle he had planned never materialized",
-        "Afrasiab's death at a remote lake mirrors Siavash's death at an unremarkable field — both die not in celebrated combat but in quiet, final acts of power. The symmetry says the debt was paid in the same register as it was owed",
-        "The lake is symbolic of the Turanian homeland's natural boundary — the war ends at the edge of the world Afrasiab ruled",
-        "The setting is unremarkable to emphasize that Kay Khosrow did not seek glory from the killing — he sought only completion"
-      ],
-      "answers_fa": [
-        "محیطِ دریاچه‌ی دورافتاده نشان می‌دهد کی‌خسرو مجبور به بداهه‌پردازی شد",
-        "مرگِ افراسیاب در دریاچه‌ای دورافتاده مرگِ سیاوش در مزرعه‌ای ساده را آینه می‌کند — هر دو نه در نبردِ مشهور بلکه در اعمالِ قدرتِ آرام، نهایی می‌میرند. تقارن می‌گوید بدهی در همان رجیستری پرداخت شد که بدهکاری در آن بود",
-        "دریاچه نمادِ مرزِ طبیعیِ وطنِ توران است",
-        "محیط ناقابل‌توجه است تا تأکید کند کی‌خسرو افتخار نمی‌جست — فقط تکمیل"
-      ],
-      "answers_tg": [
-        "Ҷои дарёчаи дурдаст нишон медиҳад Кай Хусрав маҷбур ба бедаҳа шуд",
-        "Марги Афросиёб дар дарёчаи дурдаст марги Сиёвушро дар майдони оддӣ оина мекунад — ҳарду на дар набарди маъруф балки дар амали оҳисту ниҳоии қудрат мемиранд. Тақорун мегӯяд қарз дар ҳамон регистри пардохта шуд ки дар он қарздор буд",
-        "Дарёча рамзи марзи табиии ватани Турон аст",
-        "Ҷой намояна нест то таъкид кунад Кай Хусрав шӯҳрат намеҷуст"
-      ],
-      "correct_answer": 1,
-      "explanation": "Siavash was killed in an unremarkable field outside his own city, beheaded without ceremony. Afrasiab is cornered and killed in an unremarkable location — a remote lake at the edge of the world — without ceremony. The parallel is exact: the death was ordered without ceremony, and it is paid without ceremony. A celebrated battlefield death would give Afrasiab a warrior's dignity he did not extend to Siavash. The lake gives him exactly what he gave Siavash — an unglamorous end in an unremarkable place. The Shahnameh's symmetry here is quiet and absolute.",
-      "explanation_fa": "سیاوش در مزرعه‌ای ناقابل‌توجه بیرونِ شهرش کشته شد. افراسیاب در جایِ ناقابل‌توجهی گیر می‌افتد و کشته می‌شود — بدونِ مراسم. تقارن دقیق است: بدهی در همان رجیستری پرداخت می‌شود که بدهکاری در آن بود. مرگِ میدانِ نبردِ مشهور به افراسیاب کرامتِ جنگجو می‌داد که به سیاوش نداد. دریاچه دقیقاً همان چیزی می‌دهد که به سیاوش داد.",
-      "explanation_tg": "Сиёвуш дар майдони оддӣ берун аз шаҳраш кушта шуд. Афросиёб дар ҷои оддие гир меафтад ва кушта мешавад. Тақорун дақиқ аст: қарз дар ҳамон регистр пардохта мешавад ки дар он қарздор буд.",
-      "reward": {
-        "xp": 150,
-        "real": 65
-      }
-    },
-    {
-      "id": "gwt-h1",
-      "chapter_slug": "great-war-turan",
-      "quiz_part": 4,
-      "difficulty": "hard",
-      "question": "The Shahnameh notes that after the great war ends, the paladins who won it face a different kind of difficulty. What does this observation reveal about how the chronicle understands identity formed by conflict?",
-      "question_fa": "شاهنامه یادداشت می‌کند که بعد از پایانِ جنگِ بزرگ، پهلوانانی که آن را بردند با نوع متفاوتی از سختی مواجه می‌شوند. این مشاهده چه چیزی درباره‌ی فهمِ شاهنامه از هویتی که توسطِ درگیری شکل گرفته آشکار می‌کند؟",
-      "question_tg": "Шоҳнома қайд мекунад, ки пас аз анҷоми ҷанг, паҳлавонон бо навъи дигаре аз душворӣ рӯ ба рӯ мешаванд. Ин мушоҳида чӣ мегӯяд?",
-      "answers": [
-        "The paladins were formed by the Iran-Turan wars — their purpose, identity, and skills were shaped for that specific conflict. When the wars end, the kingdom no longer needs them for the thing they were built to do, which is a crisis of purpose that military victory cannot resolve",
-        "It shows that the paladins were ungrateful — after the victory they immediately began competing for land and titles",
-        "The observation explains why Kay Khosrow chose to leave — he was too old to govern after the long campaign",
-        "It demonstrates that Turan's generals had infiltrated the Iranian court, creating instability after the war"
-      ],
-      "answers_fa": [
-        "پهلوانان توسطِ جنگ‌های ایران-توران شکل گرفتند — هدف، هویت، و مهارت‌هایشان برای آن درگیریِ خاص شکل گرفت. وقتی جنگ‌ها تمام می‌شوند، پادشاهی دیگر برای کاری که ساخته شدند نیازشان ندارد — بحرانِ هدفی که پیروزیِ نظامی نمی‌تواند حلش کند",
-        "نشان می‌دهد پهلوانان ناسپاس بودند — بعد از پیروزی فوری برای زمین و عنوان رقابت شروع کردند",
-        "مشاهده توضیح می‌دهد چرا کی‌خسرو انتخاب کرد برود — خیلی پیر بود",
-        "نشان می‌دهد سردارانِ توران به دربارِ ایران نفوذ کرده بودند"
-      ],
-      "answers_tg": [
-        "Паҳлавонон аз ҷангҳои Эрон-Турон шакл гирифтанд — ҳадаф, ҳувият ва маҳорати онҳо барои он задухӯрди мушаххас шакл гирифт. Вақте ҷангҳо тамом мешаванд, подшоҳӣ дигар барои кори онҳо ниёз надорад — бӯҳрони ҳадафе ки ғалабаи ҳарбӣ наметавонад ҳалаш кунад",
-        "Нишон медиҳад паҳлавонон ношукр буданд",
-        "Мушоҳида тавзеҳ медиҳад чаро Кай Хусрав интихоб кард биравад",
-        "Нишон медиҳад саркардагони Турон вориди дарбори Эрон шуданд"
-      ],
-      "correct_answer": 0,
-      "explanation": "Gudarz, Tus, Giv, and the great paladins were shaped by the Iran-Turan wars across their entire adult lives. The wars gave them identity, purpose, and the specific skills that made them extraordinary. When the wars end, the kingdom is at peace — which is the correct condition — but the paladins are now people whose entire self-understanding was organized around a conflict that no longer exists. This is why Kay Khosrow's departure decision is also about the kingdom's future: he leaves before the paladins' surplus energy turns inward. The Shahnameh does not solve this problem. It names it with characteristic precision: after the great wars, the people who won them must find a different reason to be.",
-      "explanation_fa": "گودرز، طوس، گیو در طولِ تمامِ بزرگسالی‌شان توسطِ جنگ‌های ایران-توران شکل گرفتند. جنگ‌ها به آن‌ها هویت، هدف، و مهارت‌های خاصی دادند. وقتی جنگ‌ها تمام می‌شوند، پادشاهی در صلح است — شرطِ درست — اما پهلوانان حالا آدم‌هایی هستند که تمامِ خودفهمی‌شان حولِ درگیری‌ای سازماندهی شده که دیگر وجود ندارد.",
-      "explanation_tg": "Гударз, Тус, Гев дар тамоми калонсолӣ аз ҷангҳо шакл гирифтанд. Ҷангҳо ба онҳо ҳувият, ҳадаф ва маҳоратҳои мушаххас доданд. Вақте ҷангҳо тамом мешаванд, паҳлавонон одамоне ҳастанд ки тамоми худфаҳмии онҳо дар атрофи задухӯрде ташкил ёфтааст ки дигар вуҷуд надорад.",
-      "reward": {
-        "xp": 180,
-        "real": 80
       }
     },
     {
@@ -150,23 +80,23 @@
       "question_tg": "Тавономандтарин зеҳни ҳарбии ташкилдиҳандаи муқовимати Турон кӣ буд?",
       "answers": [
         "Afrasiab himself",
+        "Arjasp",
         "Garsivaz",
-        "Piran Wiseh",
-        "Arjasp"
+        "Piran Wiseh"
       ],
       "answers_fa": [
         "خودِ افراسیاب",
+        "ارجاسپ",
         "گرسیوز",
-        "پیرانِ ویسه",
-        "ارجاسپ"
+        "پیرانِ ویسه"
       ],
       "answers_tg": [
         "Худи Афросиёб",
+        "Арҷосп",
         "Гарсевоз",
-        "Пирони Виса",
-        "Арҷосп"
+        "Пирони Виса"
       ],
-      "correct_answer": 2,
+      "correct_answer": 3,
       "explanation": "Piran Wiseh was the most capable military mind in Turan. He organized the resistance campaign by campaign.",
       "explanation_fa": "پیرانِ ویسه توانمندترین ذهنِ نظامی در توران بود. مقاومت را لشکرکشی به لشکرکشی سازماندهی کرد.",
       "explanation_tg": "Пирони Виса тавономандтарин зеҳни ҳарбӣ дар Турон буд. Муқовиматро лашкаркашӣ ба лашкаркашӣ ташкил кард.",
@@ -185,29 +115,64 @@
       "question_tg": "Кӣ пешқадами лашкари Эронро дар ҷанги бузург фармондеҳӣ кард?",
       "answers": [
         "Rostam",
-        "Gudarz",
         "Tus",
+        "Gudarz",
         "Giv"
       ],
       "answers_fa": [
         "رستم",
-        "گودرز",
         "طوس",
+        "گودرز",
         "گیو"
       ],
       "answers_tg": [
         "Рустам",
-        "Гударз",
         "Тус",
+        "Гударз",
         "Гев"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "Kay Khosrow named the commanders: Tus led the vanguard, Gudarz the center, Rostam the decisive force.",
       "explanation_fa": "کی‌خسرو فرماندهان را نام برد: طوس طلایه‌دار را رهبری کرد، گودرز مرکز را، رستم نیروی قاطع را.",
       "explanation_tg": "Кай Хусрав фармондеҳонро ном бурд: Тус пешқадамро роҳбарӣ кард, Гударз марказро, Рустам қуввати қатъиро.",
       "reward": {
         "xp": 210,
         "real": 95
+      }
+    },
+    {
+      "id": "gwt-m1",
+      "chapter_slug": "great-war-turan",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The great war ends Afrasiab's life at a remote lake rather than on a celebrated battlefield. What does this choice of setting reveal about the Shahnameh's understanding of how debts are paid?",
+      "question_fa": "جنگِ بزرگ زندگیِ افراسیاب را در دریاچه‌ای دورافتاده به جای در میدانِ نبردِ مشهوری تمام می‌کند. این انتخابِ محیط چه چیزی درباره‌ی فهمِ شاهنامه از طرزِ پرداختِ بدهی آشکار می‌کند؟",
+      "question_tg": "Ҷанги бузург зиндагии Афросиёбро дар дарёчаи дурдасте тамом мекунад. Ин интихоби ҷой чӣ мегӯяд?",
+      "answers": [
+        "The remote lake setting shows that Kay Khosrow was forced to improvise — the final battle he had planned never materialized",
+        "The setting is unremarkable to emphasize that Kay Khosrow did not seek glory from the killing — he sought only completion",
+        "Afrasiab's death at a remote lake mirrors Siavash's death at an unremarkable field — both die not in celebrated combat but in quiet, final acts of power. The symmetry says the debt was paid in the same register as it was owed",
+        "The lake is symbolic of the Turanian homeland's natural boundary — the war ends at the edge of the world Afrasiab ruled"
+      ],
+      "answers_fa": [
+        "محیطِ دریاچه‌ی دورافتاده نشان می‌دهد کی‌خسرو مجبور به بداهه‌پردازی شد",
+        "محیط ناقابل‌توجه است تا تأکید کند کی‌خسرو افتخار نمی‌جست — فقط تکمیل",
+        "مرگِ افراسیاب در دریاچه‌ای دورافتاده مرگِ سیاوش در مزرعه‌ای ساده را آینه می‌کند — هر دو نه در نبردِ مشهور بلکه در اعمالِ قدرتِ آرام، نهایی می‌میرند. تقارن می‌گوید بدهی در همان رجیستری پرداخت شد که بدهکاری در آن بود",
+        "دریاچه نمادِ مرزِ طبیعیِ وطنِ توران است"
+      ],
+      "answers_tg": [
+        "Ҷои дарёчаи дурдаст нишон медиҳад Кай Хусрав маҷбур ба бедаҳа шуд",
+        "Ҷой намояна нест то таъкид кунад Кай Хусрав шӯҳрат намеҷуст",
+        "Марги Афросиёб дар дарёчаи дурдаст марги Сиёвушро дар майдони оддӣ оина мекунад — ҳарду на дар набарди маъруф балки дар амали оҳисту ниҳоии қудрат мемиранд. Тақорун мегӯяд қарз дар ҳамон регистри пардохта шуд ки дар он қарздор буд",
+        "Дарёча рамзи марзи табиии ватани Турон аст"
+      ],
+      "correct_answer": 2,
+      "explanation": "Siavash was killed in an unremarkable field outside his own city, beheaded without ceremony. Afrasiab is cornered and killed in an unremarkable location — a remote lake at the edge of the world — without ceremony. The parallel is exact: the death was ordered without ceremony, and it is paid without ceremony. A celebrated battlefield death would give Afrasiab a warrior's dignity he did not extend to Siavash. The lake gives him exactly what he gave Siavash — an unglamorous end in an unremarkable place. The Shahnameh's symmetry here is quiet and absolute.",
+      "explanation_fa": "سیاوش در مزرعه‌ای ناقابل‌توجه بیرونِ شهرش کشته شد. افراسیاب در جایِ ناقابل‌توجهی گیر می‌افتد و کشته می‌شود — بدونِ مراسم. تقارن دقیق است: بدهی در همان رجیستری پرداخت می‌شود که بدهکاری در آن بود. مرگِ میدانِ نبردِ مشهور به افراسیاب کرامتِ جنگجو می‌داد که به سیاوش نداد. دریاچه دقیقاً همان چیزی می‌دهد که به سیاوش داد.",
+      "explanation_tg": "Сиёвуш дар майдони оддӣ берун аз шаҳраш кушта шуд. Афросиёб дар ҷои оддие гир меафтад ва кушта мешавад. Тақорун дақиқ аст: қарз дар ҳамон регистр пардохта мешавад ки дар он қарздор буд.",
+      "reward": {
+        "xp": 150,
+        "real": 65
       }
     },
     {
@@ -219,24 +184,24 @@
       "question_fa": "فرود کی بود و در روزهای اولِ جنگ چه بر سرش آمد؟",
       "question_tg": "Фаруд кӣ буд ва дар рӯзҳои аввали ҷанг чӣ ба сари ӯ омад?",
       "answers": [
+        "A young Iranian paladin killed in the first battle",
         "A Turanian general who defected to Iran",
         "Kay Khosrow's half-brother — Siavash's son by a Turanian mother — killed by Tus who ignored the king's specific order to avoid his territory",
-        "A young Iranian paladin killed in the first battle",
         "Afrasiab's son who surrendered to Kay Khosrow"
       ],
       "answers_fa": [
+        "پالادینِ جوانِ ایرانی که در اولین نبرد کشته شد",
         "سردارِ تورانی که به ایران پیوست",
         "نیمه‌برادرِ کی‌خسرو — پسرِ سیاوش از مادری تورانی — کشته شد توسطِ طوس که دستورِ مشخصِ شاه برای اجتناب از قلمرویش را نادیده گرفت",
-        "پالادینِ جوانِ ایرانی که در اولین نبرد کشته شد",
         "پسرِ افراسیاب که تسلیمِ کی‌خسرو شد"
       ],
       "answers_tg": [
+        "Паладини ҷавони Эронӣ ки дар аввалин набард кушта шуд",
         "Сардори Туронӣ ки ба Эрон пайваст",
         "Нимабародари Кай Хусрав — писари Сиёвуш аз модари Туронӣ — кушта шуд аз ҷониби Тус ки дастури мушаххаси подшоҳро барои дурӣ аз қаламравашро нодида гирифт",
-        "Паладини ҷавони Эронӣ ки дар аввалин набард кушта шуд",
         "Писари Афросиёб ки таслими Кай Хусрав шуд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "Frud was loyal to Iran. Tus ignored the king's orders not to approach his castle. Frud was killed. The war organized to avenge Siavash killed Siavash's own son in its opening days.",
       "explanation_fa": "فرود به ایران وفادار بود. طوس دستورِ شاه برای نزدیک نشدن به قلعه‌اش را نادیده گرفت. فرود کشته شد. جنگی که برای انتقامِ سیاوش سازماندهی شده بود، پسرِ خودِ سیاوش را در روزهای اولش کشت.",
       "explanation_tg": "Фаруд ба Эрон вафодор буд. Тус дастури подшоҳро барои наздик нашудан ба қалъааш нодида гирифт. Фаруд кушта шуд. Ҷанге ки барои интиқоми Сиёвуш ташкил шуда буд, писари худи Сиёвушро дар рӯзҳои аввалаш кушт.",
@@ -254,24 +219,24 @@
       "question_fa": "بعد از اینکه پیرانِ ویسه در نبردِ تن‌به‌تن با گودرز افتاد، لشکرِ توران چه شد؟",
       "question_tg": "Пас аз он ки Пирони Виса дар набарди танба танно бо Гударз афтод, лашкари Турон чӣ шуд?",
       "answers": [
-        "It surrendered immediately",
-        "It lost its organizing intelligence — it did not collapse at once but the quality was gone",
         "It regrouped under Arjasp's command",
-        "Afrasiab executed the remaining generals"
+        "Afrasiab executed the remaining generals",
+        "It lost its organizing intelligence — it did not collapse at once but the quality was gone",
+        "It surrendered immediately"
       ],
       "answers_fa": [
-        "بلافاصله تسلیم شد",
-        "ذهنِ سازمانیِ خود را از دست داد — یکباره فروپاشیده نشد اما کیفیت رفت",
         "تحتِ فرمانده‌ی ارجاسپ دوباره سازماندهی شد",
-        "افراسیاب سردارانِ باقی‌مانده را اعدام کرد"
+        "افراسیاب سردارانِ باقی‌مانده را اعدام کرد",
+        "ذهنِ سازمانیِ خود را از دست داد — یکباره فروپاشیده نشد اما کیفیت رفت",
+        "بلافاصله تسلیم شد"
       ],
       "answers_tg": [
-        "Фавран таслим шуд",
-        "Зеҳни ташкилии худро аз даст дод — дарҳол фурӯ напошид аммо сифат рафт",
         "Зери фармондеҳии Арҷосп дубора ташкил шуд",
-        "Афросиёб сардорони боқимондаро иҷро кард"
+        "Афросиёб сардорони боқимондаро иҷро кард",
+        "Зеҳни ташкилии худро аз даст дод — дарҳол фурӯ напошид аммо сифат рафт",
+        "Фавран таслим шуд"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "'The Turanian army lost its organizing intelligence. It did not collapse immediately, but the quality was gone from it.'",
       "explanation_fa": "«لشکرِ توران ذهنِ سازمانیِ خود را از دست داد. بلافاصله فروپاشیده نشد، اما کیفیت از آن رفت.»",
       "explanation_tg": "«Лашкари Турон зеҳни ташкилии худро аз даст дод. Дарҳол фурӯ напошид, аммо сифат аз он рафт.»",
@@ -289,24 +254,24 @@
       "question_fa": "افراسیاب بعد از مرگِ پیران چگونه فرار کرد؟",
       "question_tg": "Афросиёб пас аз марги Пирон чӣ тавр гурехт?",
       "answers": [
-        "He sailed across the Caspian Sea",
         "He retreated north, west, east — running with the exhausted cunning of a king who has outlived his justification",
+        "He fled to the Brazen Fortress",
         "He surrendered at the Oxus",
-        "He fled to the Brazen Fortress"
+        "He sailed across the Caspian Sea"
       ],
       "answers_fa": [
-        "از دریای خزر گذشت",
         "شمال، غرب، شرق عقب‌نشینی کرد — با زیرکیِ خسته‌ی شاهی که از توجیهش پیشی گرفته فرار کرد",
+        "به دژِ رویین گریخت",
         "در جیحون تسلیم شد",
-        "به دژِ رویین گریخت"
+        "از دریای خزر گذشت"
       ],
       "answers_tg": [
-        "Аз Баҳри Хазар гузашт",
         "Шимол, ғарб, шарқ ақибнишинӣ кард — бо зиракии хастаи подшоҳе ки аз тавҷеҳаш пеш гузаштааст гурехт",
+        "Ба Деҷи Руин гурехт",
         "Дар Ҷайҳун таслим шуд",
-        "Ба Деҷи Руин гурехт"
+        "Аз Баҳри Хазар гузашт"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "'He had ruled Turan for a century and he ran with the exhausted cunning of a king who has outlived his justification.'",
       "explanation_fa": "«یک سده بر توران حکومت کرده بود و با زیرکیِ خسته‌ی شاهی که از توجیهش پیشی گرفته بود فرار کرد.»",
       "explanation_tg": "«Як аср бар Турон ҳукумат карда буд ва бо зиракии хастаи подшоҳе ки аз тавҷеҳаш пеш гузаштааст гурехт.»",
@@ -324,21 +289,21 @@
       "question_fa": "فصل این جنگ را چگونه از تهاجمِ کی‌کاووس به مازندران متمایز می‌کند؟",
       "question_tg": "Фасл ин ҷангро чӣ тавр аз ҳамлаи Кай Ковус ба Мозандарон фарқ мекунад?",
       "answers": [
-        "This war had better commanders and tactics",
-        "This was a war of debt organized around moral purpose, while Kay Kavus's invasions were reckless and purposeless",
         "The Iranian army was larger this time",
+        "This was a war of debt organized around moral purpose, while Kay Kavus's invasions were reckless and purposeless",
+        "This war had better commanders and tactics",
         "Kay Khosrow had divine approval that Kay Kavus lacked"
       ],
       "answers_fa": [
-        "این جنگ فرماندهان و تاکتیک‌های بهتری داشت",
-        "این جنگِ بدهی بود که حول هدفِ اخلاقی سازماندهی شده بود، در حالی که تهاجمات کی‌کاووس بی‌پروا و بی‌هدف بودند",
         "لشکرِ ایرانی این بار بزرگ‌تر بود",
+        "این جنگِ بدهی بود که حول هدفِ اخلاقی سازماندهی شده بود، در حالی که تهاجمات کی‌کاووس بی‌پروا و بی‌هدف بودند",
+        "این جنگ فرماندهان و تاکتیک‌های بهتری داشت",
         "کی‌خسرو تأییدِ الهی داشت که کی‌کاووس نداشت"
       ],
       "answers_tg": [
-        "Ин ҷанг фармондеҳон ва тактикаҳои беҳтаре дошт",
-        "Ин ҷанги қарзе буд ки атрофи ҳадафи ахлоқӣ ташкил шуда буд, дар ҳоле ки ҳамлаҳои Кай Ковус бепарво ва бе ҳадаф буданд",
         "Лашкари Эрон ин бор бузургтар буд",
+        "Ин ҷанги қарзе буд ки атрофи ҳадафи ахлоқӣ ташкил шуда буд, дар ҳоле ки ҳамлаҳои Кай Ковус бепарво ва бе ҳадаф буданд",
+        "Ин ҷанг фармондеҳон ва тактикаҳои беҳтаре дошт",
         "Кай Хусрав тасвиби илоҳӣ дошт ки Кай Ковус надошт"
       ],
       "correct_answer": 1,
@@ -359,30 +324,65 @@
       "question_fa": "فصل اشاره می‌کند که پیرانِ ویسه «سخت‌ترین تلاش را برای نجاتِ سیاوش کرده بود.» چرا این جزئیت در فصلی درباره‌ی انتقامِ سیاوش اهمیت دارد؟",
       "question_tg": "Фасл қайд мекунад ки Пирони Виса «сахттарин кӯшишро барои наҷоти Сиёвуш карда буд.» Чаро ин ҷузъият дар фасле дар бораи интиқоми Сиёвуш аҳамият дорад?",
       "answers": [
-        "It explains why Piran was not executed after the war",
         "Even Turan's greatest general had opposed what happened to Siavash — the war avenges a crime that even the enemy's best man had tried to prevent",
+        "It explains why Piran was not executed after the war",
         "It makes Piran's death less tragic",
         "It establishes Piran as a secret ally"
       ],
       "answers_fa": [
-        "توضیح می‌دهد چرا پیران بعد از جنگ اعدام نشد",
         "حتی بزرگ‌ترین سردارِ توران با آنچه بر سرِ سیاوش آمد مخالف بود — جنگ جنایتی را انتقام می‌گیرد که حتی بهترین مردِ دشمن تلاش کرده بود از آن جلوگیری کند",
+        "توضیح می‌دهد چرا پیران بعد از جنگ اعدام نشد",
         "مرگِ پیران را کمتر دردناک می‌کند",
         "پیران را به عنوانِ متحدِ پنهان تثبیت می‌کند"
       ],
       "answers_tg": [
-        "Тавзеҳ медиҳад чаро Пиронро пас аз ҷанг иҷро накарданд",
         "Ҳатто бузургтарин сардори Турон бо он чи ба Сиёвуш омад мухолиф буд — ҷанг ҷиноятеро интиқом мегирад ки ҳатто беҳтарин марди душман кӯшиш кардааст аз он ҷилавгирӣ кунад",
+        "Тавзеҳ медиҳад чаро Пиронро пас аз ҷанг иҷро накарданд",
         "Марги Пиронро камтар дарднок мекунад",
         "Пиронро ҳамчун муттаҳиди пинҳонӣ таъсис мекунад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Piran's death is the war's most complex tragedy: the best man on the losing side tried to stop the original injustice and failed. Now the war that avenges that injustice kills him.",
       "explanation_fa": "مرگِ پیران پیچیده‌ترین تراژدیِ جنگ است: بهترین مردِ طرفِ بازنده تلاش کرد بی‌عدالتیِ اصلی را متوقف کند و شکست خورد. حالا جنگی که آن بی‌عدالتی را انتقام می‌گیرد او را می‌کشد.",
       "explanation_tg": "Марги Пирон мураккабтарин фоҷиаи ҷанг аст: беҳтарин марди тарафи бознда кӯшиш кард бебандубории аслиро боздорад ва шикаст хӯрд. Ҳоло ҷанге ки он бебандубориро интиқом мегирад ӯро мекушад.",
       "reward": {
         "xp": 330,
         "real": 155
+      }
+    },
+    {
+      "id": "gwt-h1",
+      "chapter_slug": "great-war-turan",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The Shahnameh notes that after the great war ends, the paladins who won it face a different kind of difficulty. What does this observation reveal about how the chronicle understands identity formed by conflict?",
+      "question_fa": "شاهنامه یادداشت می‌کند که بعد از پایانِ جنگِ بزرگ، پهلوانانی که آن را بردند با نوع متفاوتی از سختی مواجه می‌شوند. این مشاهده چه چیزی درباره‌ی فهمِ شاهنامه از هویتی که توسطِ درگیری شکل گرفته آشکار می‌کند؟",
+      "question_tg": "Шоҳнома қайд мекунад, ки пас аз анҷоми ҷанг, паҳлавонон бо навъи дигаре аз душворӣ рӯ ба рӯ мешаванд. Ин мушоҳида чӣ мегӯяд?",
+      "answers": [
+        "It demonstrates that Turan's generals had infiltrated the Iranian court, creating instability after the war",
+        "The paladins were formed by the Iran-Turan wars — their purpose, identity, and skills were shaped for that specific conflict. When the wars end, the kingdom no longer needs them for the thing they were built to do, which is a crisis of purpose that military victory cannot resolve",
+        "The observation explains why Kay Khosrow chose to leave — he was too old to govern after the long campaign",
+        "It shows that the paladins were ungrateful — after the victory they immediately began competing for land and titles"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد سردارانِ توران به دربارِ ایران نفوذ کرده بودند",
+        "پهلوانان توسطِ جنگ‌های ایران-توران شکل گرفتند — هدف، هویت، و مهارت‌هایشان برای آن درگیریِ خاص شکل گرفت. وقتی جنگ‌ها تمام می‌شوند، پادشاهی دیگر برای کاری که ساخته شدند نیازشان ندارد — بحرانِ هدفی که پیروزیِ نظامی نمی‌تواند حلش کند",
+        "مشاهده توضیح می‌دهد چرا کی‌خسرو انتخاب کرد برود — خیلی پیر بود",
+        "نشان می‌دهد پهلوانان ناسپاس بودند — بعد از پیروزی فوری برای زمین و عنوان رقابت شروع کردند"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад саркардагони Турон вориди дарбори Эрон шуданд",
+        "Паҳлавонон аз ҷангҳои Эрон-Турон шакл гирифтанд — ҳадаф, ҳувият ва маҳорати онҳо барои он задухӯрди мушаххас шакл гирифт. Вақте ҷангҳо тамом мешаванд, подшоҳӣ дигар барои кори онҳо ниёз надорад — бӯҳрони ҳадафе ки ғалабаи ҳарбӣ наметавонад ҳалаш кунад",
+        "Мушоҳида тавзеҳ медиҳад чаро Кай Хусрав интихоб кард биравад",
+        "Нишон медиҳад паҳлавонон ношукр буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Gudarz, Tus, Giv, and the great paladins were shaped by the Iran-Turan wars across their entire adult lives. The wars gave them identity, purpose, and the specific skills that made them extraordinary. When the wars end, the kingdom is at peace — which is the correct condition — but the paladins are now people whose entire self-understanding was organized around a conflict that no longer exists. This is why Kay Khosrow's departure decision is also about the kingdom's future: he leaves before the paladins' surplus energy turns inward. The Shahnameh does not solve this problem. It names it with characteristic precision: after the great wars, the people who won them must find a different reason to be.",
+      "explanation_fa": "گودرز، طوس، گیو در طولِ تمامِ بزرگسالی‌شان توسطِ جنگ‌های ایران-توران شکل گرفتند. جنگ‌ها به آن‌ها هویت، هدف، و مهارت‌های خاصی دادند. وقتی جنگ‌ها تمام می‌شوند، پادشاهی در صلح است — شرطِ درست — اما پهلوانان حالا آدم‌هایی هستند که تمامِ خودفهمی‌شان حولِ درگیری‌ای سازماندهی شده که دیگر وجود ندارد.",
+      "explanation_tg": "Гударз, Тус, Гев дар тамоми калонсолӣ аз ҷангҳо шакл гирифтанд. Ҷангҳо ба онҳо ҳувият, ҳадаф ва маҳоратҳои мушаххас доданд. Вақте ҷангҳо тамом мешаванд, паҳлавонон одамоне ҳастанд ки тамоми худфаҳмии онҳо дар атрофи задухӯрде ташкил ёфтааст ки дигар вуҷуд надорад.",
+      "reward": {
+        "xp": 180,
+        "real": 80
       }
     },
     {
@@ -394,24 +394,24 @@
       "question_fa": "حادثه‌ی فرود — طوس که پسرِ وفادارِ سیاوش را در روزهای اولِ جنگ کشت — چه چیزی درباره‌ی جنگ نشان می‌دهد؟",
       "question_tg": "Ҳодисаи Фаруд — Тус ки писари вафодори Сиёвушро дар рӯзҳои аввали ҷанг кушт — чӣ дар бораи ҷанг нишон медиҳад?",
       "answers": [
-        "Tus was a traitor working for Afrasiab",
-        "War organized around moral purpose still produces its own injustices — even a justified campaign destroys what it set out to honor",
         "Kay Khosrow was secretly complicit in Frud's death",
-        "Disobeying royal orders always produces tragedy"
+        "Tus was a traitor working for Afrasiab",
+        "Disobeying royal orders always produces tragedy",
+        "War organized around moral purpose still produces its own injustices — even a justified campaign destroys what it set out to honor"
       ],
       "answers_fa": [
-        "طوس خائنی بود که برای افراسیاب کار می‌کرد",
-        "جنگِ سازماندهی‌شده حولِ هدفِ اخلاقی هنوز بی‌عدالتی‌های خودش را تولید می‌کند — حتی کمپینِ موجّه آنچه را که برای احترام به آن آمده ویران می‌کند",
         "کی‌خسرو به طورِ پنهانی در مرگِ فرود دست داشت",
-        "نافرمانی از دستوراتِ شاهانه همیشه تراژدی به بار می‌آورد"
+        "طوس خائنی بود که برای افراسیاب کار می‌کرد",
+        "نافرمانی از دستوراتِ شاهانه همیشه تراژدی به بار می‌آورد",
+        "جنگِ سازماندهی‌شده حولِ هدفِ اخلاقی هنوز بی‌عدالتی‌های خودش را تولید می‌کند — حتی کمپینِ موجّه آنچه را که برای احترام به آن آمده ویران می‌کند"
       ],
       "answers_tg": [
-        "Тус хоине буд ки барои Афросиёб кор мекард",
-        "Ҷанги ташкилшуда атрофи ҳадафи ахлоқӣ ҳанӯз бебандубориҳои худашро тавлид мекунад — ҳатто кампейни мавзун он чиро ки барои эҳтиром ба он омадааст вайрон мекунад",
         "Кай Хусрав пинҳонӣ дар марги Фаруд дахл дошт",
-        "Нофармонӣ аз дастурҳои шоҳона ҳамеша фоҷиа ба бор меоварад"
+        "Тус хоине буд ки барои Афросиёб кор мекард",
+        "Нофармонӣ аз дастурҳои шоҳона ҳамеша фоҷиа ба бор меоварад",
+        "Ҷанги ташкилшуда атрофи ҳадафи ахлоқӣ ҳанӯз бебандубориҳои худашро тавлид мекунад — ҳатто кампейни мавзун он чиро ки барои эҳтиром ба он омадааст вайрон мекунад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The war avenging Siavash killed Siavash's own son. This is the chapter's structural irony: a war of debt accrues new debt in its opening days.",
       "explanation_fa": "جنگِ انتقامِ سیاوش، پسرِ خودِ سیاوش را کشت. این طعنه‌ی ساختاریِ فصل است: جنگِ بدهی در روزهای اولش بدهیِ جدید انباشته می‌کند.",
       "explanation_tg": "Ҷанги интиқоми Сиёвуш писари худи Сиёвушро кушт. Ин иронияи сохторӣ аст: ҷанги қарзе дар рӯзҳои аввалаш қарзи нав ҷамъ мекунад.",
@@ -429,21 +429,21 @@
       "question_fa": "فصل می‌گوید جنگ‌ها «در کنارِ دریاچه بدونِ تشریفات» بسته شدند. پایانِ کم‌رنگ چه معنایی دارد؟",
       "question_tg": "Фасл мегӯяд ҷангҳо «дар канори кӯл бидуни расму оин» баста шуданд. Поёни сабуктавсифшуда чӣ маъно дорад?",
       "answers": [
-        "Kay Khosrow felt no pride in the victory",
-        "The end of a century of warfare came with a single personal execution at a remote lake — the scale of the ending didn't match the scale of what had ended",
         "There was no time for ceremony during the pursuit",
+        "The end of a century of warfare came with a single personal execution at a remote lake — the scale of the ending didn't match the scale of what had ended",
+        "Kay Khosrow felt no pride in the victory",
         "Iranian custom forbade ceremony after war"
       ],
       "answers_fa": [
-        "کی‌خسرو از پیروزی غروری احساس نکرد",
-        "پایانِ یک سده جنگ با یک اعدامِ شخصی در دریاچه‌ای دورافتاده آمد — مقیاسِ پایان با مقیاسِ آنچه به پایان رسیده بود هم‌خوانی نداشت",
         "در طولِ تعقیب وقتی برای تشریفات نبود",
+        "پایانِ یک سده جنگ با یک اعدامِ شخصی در دریاچه‌ای دورافتاده آمد — مقیاسِ پایان با مقیاسِ آنچه به پایان رسیده بود هم‌خوانی نداشت",
+        "کی‌خسرو از پیروزی غروری احساس نکرد",
         "رسومِ ایرانی تشریفات بعد از جنگ را ممنوع می‌کرد"
       ],
       "answers_tg": [
-        "Кай Хусрав аз пирӯзӣ ифтихоре ҳис накард",
-        "Поёни як аср ҷанг бо як иҷрои шахсӣ дар кӯле дурافтода омад — миқёси поён бо миқёси он чи ба поён расид мутобиқ набуд",
         "Дар тӯли пайгирӣ вақте барои маросим набуд",
+        "Поёни як аср ҷанг бо як иҷрои шахсӣ дар кӯле дурافтода омад — миқёси поён бо миқёси он чи ба поён расид мутобиқ набуд",
+        "Кай Хусрав аз пирӯзӣ ифтихоре ҳис накард",
         "Русуми Эронӣ маросимро пас аз ҷанг манъ мекард"
       ],
       "correct_answer": 1,
@@ -464,22 +464,22 @@
       "question_fa": "طبقِ فصل، افراسیاب چه مدتی بر توران حکومت کرده بود؟",
       "question_tg": "Тибқи фасл, Афросиёб чӣ муддат бар Турон ҳукумат карда буд?",
       "answers": [
-        "Fifty years",
+        "Three hundred years",
         "Seventy years",
         "A century",
-        "Three hundred years"
+        "Fifty years"
       ],
       "answers_fa": [
-        "پنجاه سال",
+        "سیصد سال",
         "هفتاد سال",
         "یک سده",
-        "سیصد سال"
+        "پنجاه سال"
       ],
       "answers_tg": [
-        "Панҷоҳ сол",
+        "Сесад сол",
         "Ҳафтод сол",
         "Як аср",
-        "Сесад сол"
+        "Панҷоҳ сол"
       ],
       "correct_answer": 2,
       "explanation": "'He had ruled Turan for a century and he ran with the exhausted cunning of a king who has outlived his justification.'",
@@ -499,24 +499,24 @@
       "question_fa": "مسابقه‌ی قهرمانان «بخشی از» جنگ را حل کرد. «بخشی از» چه چیزی را نشان می‌دهد؟",
       "question_tg": "Мусобиқаи қаҳрамонон «қисмате аз» ҷангро ҳал кард. «Қисмате аз» чӣ нишон медиҳад?",
       "answers": [
-        "The contest was not taken seriously by either side",
         "The champion contest was significant but not definitive — the war still required the generals to meet personally to resolve",
+        "The contest was not taken seriously by either side",
         "The rest of the war was decided by cavalry separately",
         "Twelve is a sacred number limiting the scope"
       ],
       "answers_fa": [
-        "مسابقه توسطِ هیچ‌یک از طرفین جدی گرفته نشد",
         "مسابقه‌ی قهرمانان مهم اما قطعی نبود — جنگ هنوز نیاز داشت که سرداران شخصاً روبرو شوند",
+        "مسابقه توسطِ هیچ‌یک از طرفین جدی گرفته نشد",
         "بقیه‌ی جنگ به طورِ جداگانه با سواره‌نظام تصمیم گرفته شد",
         "دوازده عدد مقدسی است که دامنه را محدود می‌کند"
       ],
       "answers_tg": [
-        "Мусобиқа аз ҷониби ҳеҷ як тараф ҷиддӣ гирифта нашуд",
         "Мусобиқаи қаҳрамонон муҳим аммо қатъӣ набуд — ҷанг ҳанӯз ниёз дошт ки сардорон шахсан рӯ ба рӯ шаванд",
+        "Мусобиқа аз ҷониби ҳеҷ як тараф ҷиддӣ гирифта нашуд",
         "Боқии ҷанг ба таври алоҳида бо савораи ҷангӣ қарор гирифт",
         "Дувоздаҳ рақами муқаддасест ки доманаро маҳдуд мекунад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Iran won the champion contest. Then Gudarz and Piran still had to meet personally. The champion contest was a significant but incomplete resolution.",
       "explanation_fa": "ایران مسابقه‌ی قهرمانان را برد. بعد گودرز و پیران هنوز باید شخصاً روبرو می‌شدند. مسابقه‌ی قهرمانان رزولوشنِ مهم اما ناتمامی بود.",
       "explanation_tg": "Эрон мусобиқаи қаҳрамононро бурд. Баъд Гударз ва Пирон ҳанӯз бояд шахсан рӯ ба рӯ мешуданд. Мусобиқаи қаҳрамонон ҳалли муҳим аммо нокомиле буд.",
@@ -534,24 +534,24 @@
       "question_fa": "فصل افراسیاب را «شاهی که از توجیهش پیشی گرفته» توصیف می‌کند. این عبارت چه معنایی دارد؟",
       "question_tg": "Фасл Афросиёбро «подшоҳе ки аз тавҷеҳаш пеш гузаштааст» тавсиф мекунад. Ин ибора чӣ маъно дорад?",
       "answers": [
+        "He was overthrown because he could no longer protect Turan",
         "He ruled too long and became senile",
         "Whatever reason once justified his power has been spent — he now rules by inertia rather than by any legitimate purpose",
-        "He never had justification for ruling Turan",
-        "He was overthrown because he could no longer protect Turan"
+        "He never had justification for ruling Turan"
       ],
       "answers_fa": [
+        "برانداخته شد چون دیگر نمی‌توانست از توران دفاع کند",
         "خیلی طولانی حکومت کرد و کهنسال شد",
         "هر دلیلی که زمانی قدرتش را توجیه می‌کرد به پایان رسیده — حالا با اینرسی حکومت می‌کند نه با هدفِ مشروع",
-        "هرگز دلیلی برای حکومت بر توران نداشت",
-        "برانداخته شد چون دیگر نمی‌توانست از توران دفاع کند"
+        "هرگز دلیلی برای حکومت بر توران نداشت"
       ],
       "answers_tg": [
+        "Сарнагун шуд зеро дигар наметавонист аз Турон ҳимоят кунад",
         "Хеле дароз ҳукумат кард ва сола шуд",
         "Ҳар сабабе ки замоне қудраташро тавҷеҳ мекард ба поён расидааст — ҳоло бо инерция ҳукумат мекунад на бо ҳадафи машруъ",
-        "Ҳаргиз сабабе барои ҳукумат бар Турон надошт",
-        "Сарнагун шуд зеро дигар наметавонист аз Турон ҳимоят кунад"
+        "Ҳаргиз сабабе барои ҳукумат бар Турон надошт"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "A king can outlive the purpose that justified his power. Afrasiab's power was once built on military capacity and fear; both had eroded. He kept running because he had been running for a century.",
       "explanation_fa": "یک شاه می‌تواند از هدفی که قدرتش را توجیه می‌کرد پیشی بگیرد. قدرتِ افراسیاب زمانی بر ظرفیتِ نظامی و ترس بنا شده بود؛ هر دو فرسوده شده بودند. فرار کرد چون یک سده فرار می‌کرد.",
       "explanation_tg": "Подшоҳ метавонад аз ҳадафе ки қудраташро тавҷеҳ мекард пеш гузарад. Қудрати Афросиёб замоне бар зарфияти ҳарбӣ ва тарс бино шуда буд; ҳарду фарсуда шуда буданд.",

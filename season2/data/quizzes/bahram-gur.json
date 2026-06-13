@@ -1,143 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "brg-e1",
+      "id": "bgur-e1",
       "chapter_slug": "bahram-gur",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "How did Bahram Gur reclaim his crown when the Persian nobles refused him the throne?",
-      "question_fa": "بهرام گور چگونه تاجش را پس گرفت وقتی اشراف ایرانی از دادن تخت به او امتناع کردند؟",
-      "question_tg": "Баҳроми Гӯр чӣ тавр тоҷашро пас гирифт вақте ашрофи Эронӣ аз додани тахт ба ӯ имтиноъ карданд?",
+      "question": "How did Bahram Gur reclaim his throne from the nobles who refused to give it to him?",
+      "question_fa": "بهرام گور چگونه تختِ خود را از اشرافی که از دادنش به او امتناع کردند پس گرفت؟",
+      "question_tg": "Баҳром Гӯр чӣ тавр тахти худашро аз ашрофе ки аз додани он ба ӯ имтиноъ карданд пас гирифт?",
       "answers": [
-        "He walked forward and killed two lions that were placed guarding his crown, then put it on his own head",
-        "He challenged the rival king to single combat and defeated him in front of the assembled court",
-        "He gathered an Arab army from Nu'man's kingdom and seized the capital by force",
-        "He produced a prophecy from Zoroastrian priests confirming his divine right to rule"
+        "By raising an army and defeating the nobles in battle",
+        "By placing his crown between two lions and taking it back — proving his courage before the nobles",
+        "By getting the Zoroastrian priests to declare him the legitimate king",
+        "By marrying the daughter of the most powerful noble"
       ],
       "answers_fa": [
-        "به جلو رفت و دو شیری را که از تاجش نگهبانی می‌کردند کشت سپس آن را بر سر خود گذاشت",
-        "رقیبش را به نبرد تن به تن دعوت کرد و او را در برابر دربار مجتمع شکست داد",
-        "از پادشاهی نعمان ارتش عربی جمع کرد و با زور پایتخت را تصرف کرد",
-        "پیشگویی از روحانیون زرتشتی تولید کرد که حق الهی او برای حکومت را تأیید می‌کرد"
+        "با جمع آوریِ ارتش و شکست دادنِ اشراف در نبرد",
+        "با قرار دادنِ تاجش بینِ دو شیر و پس گرفتنش — شجاعتش را قبل از اشراف ثابت کرد",
+        "با اینکه روحانیانِ زرتشتی او را شاهِ مشروع اعلام کنند",
+        "با ازدواج با دخترِ قدرتمندترین اشراف"
       ],
       "answers_tg": [
-        "Ба пеш рафт ва ду шере ки аз тоҷаш посбонӣ мекарданд кушт сипас онро бар сари худ гузошт",
-        "Рақибашро ба муборизаи тан ба тан даъват кард ва ӯро дар назди дарбори мунъақид шикаст дод",
-        "Аз подшоҳии Нӯъмон артиши Арабӣ ҷамъ кард ва бо зӯр пойтахтро тасарруф кард",
-        "Пешгӯие аз рӯҳониёни Зардуштӣ истеҳсол кард ки ҳаққи илоҳии ӯро барои ҳукмронӣ тасдиқ мекард"
+        "Бо ҷамъ кардани лашкар ва шикаст додани ашроф дар набард",
+        "Бо ҷой гузоштани тоҷи худ байни ду шер ва пас гирифтани он — шуҷоаташро пеш аз ашроф исбот кард",
+        "Бо ин ки коҳинони зардуштӣ ӯро шоҳи машруъ эълон кунанд",
+        "Бо издивоҷ бо духтари ашрофи қудратмандтарин"
       ],
-      "correct_answer": 0,
-      "explanation": "Two lions had been placed guarding Bahram's crown in an open field. The nobles said whoever could take the crown was worthy of it. Bahram walked forward, killed both lions with his club, and put the crown on his own head. The nobles found no further objections.",
-      "explanation_fa": "دو شیر برای نگهبانی از تاج بهرام در یک میدان باز قرار داده شده بودند. اشراف گفتند هر کس می‌تواند تاج را بگیرد شایسته آن است. بهرام به جلو رفت، هر دو شیر را با چماقش کشت و تاج را بر سر خود گذاشت. اشراف هیچ اعتراض بیشتری نداشتند.",
-      "explanation_tg": "Ду шер барои посбонии тоҷи Баҳром дар майдони кушоде гузошта шуда буданд. Ашроф гуфтанд ҳар кас метавонад тоҷро бигирад шоистаи он аст. Баҳром ба пеш рафт, ҳар ду шерро бо гурзаш кушт ва тоҷро бар сари худ гузошт.",
+      "correct_answer": 1,
+      "explanation": "Bahram Gur was raised in an Arab court and the Persian nobles refused to recognise him. He placed his crown between two lions and personally retrieved it — proving physical bravery was sufficient to establish his claim.",
+      "explanation_fa": "بهرام گور در دربارِ عرب بزرگ شده بود و اشرافِ ایرانی از شناختنش امتناع کردند. تاجش را بینِ دو شیر گذاشت و شخصاً پس گرفت.",
+      "explanation_tg": "Баҳром Гӯр дар дарбори Арабӣ калон шуда буд ва ашрофи Эронӣ аз шинохтани ӯ имтиноъ карданд. Тоҷашро байни ду шер гузошт ва шахсан пас гирифт.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "brg-m1",
+      "id": "bgur-e2",
       "chapter_slug": "bahram-gur",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "What did the slave girl Fitna challenge Bahram Gur to prove, and why did she call him 'habit' rather than 'skill'?",
-      "question_fa": "کنیز فتنه بهرام گور را به اثبات چه چیزی به چالش کشید و چرا کارش را 'عادت' به جای 'مهارت' نامید؟",
-      "question_tg": "Канизи Фитна Баҳроми Гӯрро ба исботи чӣ ба мубориза талабид ва чаро корашро 'одат' ба ҷои 'маҳорат' номид?",
-      "answers": [
-        "He pinned a gazelle's hoof to its ear with a single arrow at full gallop — she said habit, not skill, produces such results after endless repetition",
-        "He split a hair at a hundred paces — she said any practiced archer could do the same given enough tries",
-        "He leapt between two galloping horses — she said warriors learn such tricks in training without true courage",
-        "He shot an arrow through a ring thrown into the air — she said it was luck dressed as mastery"
-      ],
-      "answers_fa": [
-        "با یک تیر در حین تاختن کامل سم آهو را به گوشش دوخت — او گفت عادت نه مهارت چنین نتایجی را پس از تکرار بی‌پایان تولید می‌کند",
-        "موی را از صد قدم دو نیمه کرد — او گفت هر کمانداری که تمرین کرده با تلاش کافی می‌تواند همین کار را بکند",
-        "بین دو اسب در حال تاختن پرید — او گفت جنگجویان چنین ترفندهایی را در تمرین بدون شجاعت واقعی یاد می‌گیرند",
-        "تیری را از میان حلقه‌ای که در هوا پرتاب شده بود عبور داد — او گفت شانس بود که به عنوان مهارت ظاهر شد"
-      ],
-      "answers_tg": [
-        "Бо як тир ҳангоми тохтани комил нохуни оҳуро ба гӯшаш дӯхт — ӯ гуфт одат на маҳорат чунин натиҷаро пас аз такрори бепоён тавлид мекунад",
-        "Мӯеро аз сад қадам ду нима кард — ӯ гуфт ҳар камондоре ки машқ карда бо кӯшиши кофӣ метавонад ҳамин корро кунад",
-        "Байни ду аспи дар ҳоли тохтан парид — ӯ гуфт ҷангиён чунин найрангҳоро дар машқ бидуни шуҷоати воқеӣ ёд мегиранд",
-        "Тиреро аз миёни ҳалқае ки ба ҳаво партоб шуда буд гузаронд — ӯ гуфт шонс буд ки ҳамчун маҳорат зоҳир шуд"
-      ],
-      "correct_answer": 0,
-      "explanation": "Bahram pinned a gazelle's hoof to its ear with a single arrow at full gallop. Fitna called it 'habit' — arguing that what seems miraculous is only the result of endless repetition. She spent years training a calf to prove her point. The chronicle uses their argument to ask what separates talent from discipline.",
-      "explanation_fa": "بهرام با یک تیر در حین تاختن کامل سم آهو را به گوشش دوخت. فتنه آن را 'عادت' نامید — استدلال کرد که آنچه معجزه‌آسا به نظر می‌رسد فقط نتیجه تکرار بی‌پایان است. سال‌ها طول کشید تا یک گوساله را برای اثبات حرفش تربیت کند.",
-      "explanation_tg": "Баҳром бо як тир ҳангоми тохтани комил нохуни оҳуро ба гӯшаш дӯхт. Фитна онро 'одат' номид — истдлол кард ки он чи мӯъҷизавор ба назар мерасад танҳо натиҷаи такрори бепоён аст.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "brg-e2",
-      "chapter_slug": "bahram-gur",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "How did Bahram Gur die?",
-      "question_fa": "بهرام گور چطور مُرد؟",
-      "question_tg": "Баҳроми Гӯр чӣ тавр мурд?",
+      "question": "What was the mystery surrounding Bahram Gur's death?",
+      "question_fa": "رازِ احاطه‌کننده‌ی مرگِ بهرام گور چه بود؟",
+      "question_tg": "Рози иҳотакунандаи марги Баҳром Гӯр чӣ буд?",
       "answers": [
-        "He rode into a marsh chasing an onager while hunting and never came back — his body was never found",
-        "He was assassinated by a courtier jealous of his reputation with the Arab tribes",
-        "He died peacefully in his bed at an advanced age after a long and celebrated reign",
-        "He was killed in battle against a Roman army that invaded during the last years of his reign"
+        "He died in battle against the Romans",
+        "He drowned crossing the Tigris river",
+        "He rode into a swamp while hunting and vanished — as if the earth swallowed him",
+        "He was assassinated by a noble while sleeping"
       ],
       "answers_fa": [
-        "در حین شکار سوار بر مرداب شد در تعقیب یک گورخر و هرگز بازنگشت — جسدش هرگز پیدا نشد",
-        "توسط یک درباری که از شهرتش نزد قبایل عرب حسادت می‌کرد ترور شد",
-        "در سنین پیری در بستر خود به آرامی مُرد پس از یک دوران طولانی و مشهور",
-        "در نبرد با ارتش رومی که در سال‌های آخر حکومتش تهاجم کرد کشته شد"
+        "در نبرد با رومیان کشته شد",
+        "در هنگامِ عبور از رودخانه‌ی دجله غرق شد",
+        "در حینِ شکار وارد یک باتلاق شد و ناپدید شد — انگار زمین او را بلعید",
+        "در حینِ خواب توسطِ یک اشراف ترور شد"
       ],
       "answers_tg": [
-        "Ҳангоми шикор ба ботлоқ рафт дар таъқиби хаpе ва ҳаргиз баргашт — ҷасадаш ҳаргиз ёфта нашуд",
-        "Аз ҷониби дарборие ки аз шӯҳраташ назди қабилаҳои Арабӣ ҳасадаш меомад суиқасд шуд",
-        "Дар пирӣ дар бистараш ба оромӣ мурд пас аз давраи тӯлонӣ ва машҳур",
-        "Дар набард бо артиши Румие ки дар солҳои охири ҳукмронияш ҳамла кард кушта шуд"
+        "Дар набард бо Румиён кушта шуд",
+        "Дар ҳини убури дарёи Даҷла ғарқ шуд",
+        "Дар ҳини шикор ба ботлоқ ворид шуд ва ғайб зад — гӯё замин ӯро фурӯ бурд",
+        "Дар ҳини хоб аз ҷониби ашрофе суиқасд кунонида шуд"
       ],
-      "correct_answer": 0,
-      "explanation": "Bahram Gur was hunting onagers — his own namesake quarry — in the marshes. He rode in after one and did not come back. No body was ever found. The earth took him the same way it takes a story: completely, leaving only the shape of where he had been.",
-      "explanation_fa": "بهرام گور داشت در مردابی گورخر — شکار هم‌نامش — شکار می‌کرد. در پی یکی سوار شد و دیگر باز نگشت. جسدش هرگز پیدا نشد. زمین او را همان‌طور که یک داستان را می‌گیرد برد: کاملاً، فقط شکل محلی را که بوده باقی گذاشت.",
-      "explanation_tg": "Баҳроми Гӯр дар ботлоқе хар — шикори ҳамноми худаш — шикор мекард. Ба таъқиби яке рафт ва дигар баргашт. Ҷасадаш ҳаргиз ёфта нашуд.",
+      "correct_answer": 2,
+      "explanation": "Bahram Gur rode into a swamp while hunting and never returned. The Shahnameh treats this as a mysterious disappearance — 'as if the earth swallowed him.' His enigmatic end became part of his legend.",
+      "explanation_fa": "بهرام گور در حینِ شکار وارد یک باتلاق شد و هرگز برنگشت. شاهنامه این را به عنوانِ ناپدید شدنِ رازآلود تلقی می‌کند.",
+      "explanation_tg": "Баҳром Гӯр дар ҳини шикор ба ботлоқ ворид шуд ва ҳеч гоҳ барнагашт. Шоҳнома инро ба унвони ғайб задани розомез тлақӣ мекунад.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "brg-m2",
+      "id": "bgur-e3",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Besides hunting, what else was Bahram Gur famous for?",
+      "question_fa": "بهرام گور علاوه بر شکار، به چه دیگری مشهور بود؟",
+      "question_tg": "Баҳром Гӯр ғайр аз шикор, ба чӣ дигаре машҳур буд?",
+      "answers": [
+        "Zoroastrian religious scholarship",
+        "Military campaigns to the far east",
+        "Poetry, music, and disguising himself to go among ordinary people",
+        "Architecture and building great monuments"
+      ],
+      "answers_fa": [
+        "پژوهشِ دینیِ زرتشتی",
+        "لشکرکشی‌های نظامی به شرقِ دور",
+        "شعر، موسیقی، و ظاهر شدن با لباسِ مبدل در میانِ مردمِ عادی",
+        "معماری و ساختنِ یادبودهای بزرگ"
+      ],
+      "answers_tg": [
+        "Тадқиқоти дини зардуштӣ",
+        "Лашкаркашиҳои низомӣ ба шарқи дур",
+        "Шеър, мусиқӣ, ва дар либоси мубаддал дар байни мардуми оддӣ рафтан",
+        "Меъморӣ ва сохтани ёдгорҳои бузург"
+      ],
+      "correct_answer": 2,
+      "explanation": "Bahram Gur was the romantic poet-hunter king: famous for poetry, music, love affairs, and travelling in disguise among his people to hear the truth. He is one of the most colourful characters in the Shahnameh.",
+      "explanation_fa": "بهرام گور شاهِ شاعرِ شکارچیِ رمانتیک بود: به شعر، موسیقی، ماجراهای عاشقانه، و سفرِ با لباسِ مبدل در میانِ مردمش مشهور بود.",
+      "explanation_tg": "Баҳром Гӯр шоҳи шоири шикорчии романтик буд: ба шеър, мусиқӣ, таҷрибаҳои ошиқона, ва сафари бо либоси мубаддал дар байни мардумаш машҳур буд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "bgur-m1",
       "chapter_slug": "bahram-gur",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "What was distinctive about Bahram Gur's style of kingship that the Shahnameh celebrates?",
-      "question_fa": "چه چیزی در سبک پادشاهی بهرام گور بود که شاهنامه آن را جشن می‌گیرد؟",
-      "question_tg": "Дар услуби подшоҳии Баҳроми Гӯр чӣ буд ки шоҳнома онро ҷашн мегирад?",
+      "question": "Bahram Gur went among the people in disguise. What does the Shahnameh suggest this practice represents about good kingship?",
+      "question_fa": "بهرام گور با لباسِ مبدل در میانِ مردم می‌رفت. شاهنامه چه چیزی نشان می‌دهد که این رفتار درباره‌ی شاهنشاهیِ خوب نشان می‌دهد؟",
+      "question_tg": "Баҳром Гӯр бо либоси мубаддал дар байни мардум мерафт. Шоҳнома чиро нишон медиҳад ки ин рафтор дар бораи шоҳаншоҳии хуб нишон медиҳад?",
       "answers": [
-        "He went among his subjects in disguise to hear what they truly said about him and judge without being judged",
-        "He held open court every Friday where any subject could bring grievances directly to him",
-        "He rejected all military campaigns during his reign preferring diplomacy and trade",
-        "He built the first public schools in Iran so common people could learn to read"
+        "Going among people was merely a form of entertainment for Bahram Gur",
+        "A king must know his people's actual condition — the court insulates rulers from truth; direct contact, even in disguise, provides genuine knowledge",
+        "Kings should never disguise themselves — it undermines their dignity",
+        "The disguise habit proves Bahram Gur was an irresponsible ruler who neglected state affairs"
       ],
       "answers_fa": [
-        "با لباس مبدل بین رعایایش می‌رفت تا بشنود آنها واقعاً درباره‌اش چه می‌گویند و بدون قضاوت شدن قضاوت کند",
-        "هر جمعه دادگاه عمومی برگزار می‌کرد که هر رعیتی می‌توانست شکایاتش را مستقیماً به او بیاورد",
-        "تمام لشکرکشی‌های نظامی را در دوران حکومتش رد کرد و دیپلماسی و تجارت را ترجیح داد",
-        "اولین مدارس عمومی در ایران را ساخت تا مردم عادی بتوانند خواندن یاد بگیرند"
+        "رفتن در میانِ مردم صرفاً نوعی سرگرمی برای بهرام گور بود",
+        "یک شاه باید وضعیتِ واقعیِ مردمش را بداند — دربار حاکمان را از حقیقت عایق می‌کند؛ تماسِ مستقیم، حتی با لباسِ مبدل، دانشِ واقعی فراهم می‌کند",
+        "شاهان هرگز نباید خودشان را پنهان کنند — این به شأنشان آسیب می‌زند",
+        "عادتِ لباسِ مبدل ثابت می‌کند بهرام گور حاکمِ غیرمسئولی بود که امورِ دولتی را نادیده گرفت"
       ],
       "answers_tg": [
-        "Бо либоси мубаддал дар миёни рaъиятияш мерафт то бишнавад онҳо воқеан дар бораи ӯ чӣ мегӯянд ва бидуни доварӣ шудан доварӣ кунад",
-        "Ҳар ҷумъа додгоҳи умумӣ баргузор мекард ки ҳар раъиятие метавонист шикоятҳояшро мустақиман ба ӯ биёрад",
-        "Ҳамаи лашкаркашиҳои ҳарбиро дар давраи ҳукмронияш рад кард ва дипломасия ва тиҷоратро тарҷеҳ дод",
-        "Аввалин мактабҳои умумиро дар Эрон сохт то мардуми оддӣ хондан ёд гиранд"
+        "Рафтан дар байни мардум танҳо шакли сирҷунбонӣ барои Баҳром Гӯр буд",
+        "Шоҳ бояд вазъи воқеии мардумашро донад — дарбор ҳокимонро аз ҳақиқат ҷудо мекунад؛ тамоси мустақим, ҳатто бо либоси мубаддал, дониши воқеӣ таъмин мекунад",
+        "Шоҳон ҳеч гоҳ набояд худашонро пинҳон кунанд — ин ба шаъни онҳо осеб мезанад",
+        "Одати либоси мубаддал исбот мекунад Баҳром Гӯр ҳокими ғайримасъул буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The disguise motif is a classic testing-the-real-world narrative: a king who only sees his court sees a curated version of reality. Bahram Gur's disguises are the Shahnameh's image of a king who insists on unmediated knowledge.",
+      "explanation_fa": "موتیفِ لباسِ مبدل یک روایتِ کلاسیکِ آزمونِ دنیای واقعی است: شاهی که فقط دربارش را می‌بیند، نسخه‌ی مقطّعِ واقعیت را می‌بیند.",
+      "explanation_tg": "Мотиви либоси мубаддал ривояти классикии санҷиши ҷаҳони воқеист: шоҳе ки танҳо дарборашро мебинад, нусхаи ороишёфтаи воқеиятро мебинад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bgur-m2",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "Bahram Gur composed poetry and music. How does the Shahnameh integrate these artistic qualities into his kingship, rather than presenting them as frivolous hobbies?",
+      "question_fa": "بهرام گور شعر و موسیقی می‌نوشت. شاهنامه چگونه این ویژگی‌های هنری را در شاهنشاهی‌اش ادغام می‌کند به جای اینکه آنها را به عنوانِ سرگرمی‌های بی‌معنی ارائه دهد؟",
+      "question_tg": "Баҳром Гӯр шеър ва мусиқӣ менавишт. Шоҳнома чӣ тавр ин сифатҳои ҳунариро дар шоҳаншоҳии ӯ ҳамгиро мекунад ба ҷои ин ки онҳоро ба унвони машғулиятҳои беарзиш пешкаш кунад?",
+      "answers": [
+        "The Shahnameh separates artistic and kingly qualities — one does not enhance the other",
+        "Poetry is presented as a distraction that prevented Bahram Gur from being a better administrator",
+        "Artistic refinement is a mark of the complete king — a ruler who can make beauty is also capable of seeing beauty in justice and governance",
+        "Artistic talent is only valuable in poets, not kings"
+      ],
+      "answers_fa": [
+        "شاهنامه ویژگی‌های هنری و شاهانه را جدا می‌کند — هیچ‌کدام دیگری را تقویت نمی‌کند",
+        "شعر به عنوانِ حواس‌پرتی ارائه می‌شود که مانعِ بهتر بودنِ بهرام گور به عنوانِ مدیر شد",
+        "پالایشِ هنری نشانه‌ی شاهِ کامل است — حاکمی که می‌تواند زیبایی بسازد همچنین قادر است زیبایی را در عدالت و حکمرانی ببیند",
+        "استعدادِ هنری فقط در شاعران ارزشمند است نه شاهان"
+      ],
+      "answers_tg": [
+        "Шоҳнома сифатҳои ҳунарӣ ва шоҳиро ҷудо мекунад — ҳеч кадоме дигарро мустаҳкам намекунад",
+        "Шеър ба унвони ҳавасгардонӣ пешкаш мешавад ки монеъи беҳтар будани Баҳром Гӯр ба унвони маъмур шуд",
+        "Тазҳиби ҳунарӣ нишонаи шоҳи комил аст — ҳокиме ки метавонад зебоӣ бисозад ҳамчунин қодир аст зебоиро дар адолат ва ҳукуматдорӣ бубинад",
+        "Истеъдоди ҳунарӣ танҳо дар шоирон арзишманд аст на шоҳон"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh's ideal of complete kingship includes cultural patronage and artistic sensibility. Bahram Gur's poetry is not a distraction from ruling — it is evidence of the sensitivity that makes him a better ruler.",
+      "explanation_fa": "ایده‌آلِ شاهنامه از شاهنشاهیِ کامل شامل حمایتِ فرهنگی و حساسیتِ هنری است.",
+      "explanation_tg": "Идеали Шоҳнома аз шоҳаншоҳии комил ҳимояти фарҳангӣ ва ҳассосияти ҳунариро дар бар мегирад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bgur-m3",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The nobles initially refused Bahram Gur the throne. Why does the Shahnameh present this conflict between king and nobility?",
+      "question_fa": "اشراف ابتدا از دادنِ تخت به بهرام گور امتناع کردند. چرا شاهنامه این تعارض بینِ شاه و اشراف را ارائه می‌دهد؟",
+      "question_tg": "Ашроф дар ибтидо аз додани тахт ба Баҳром Гӯр имтиноъ карданд. Чаро Шоҳнома ин тазодро байни шоҳ ва ашроф пешкаш мекунад?",
+      "answers": [
+        "To argue that democracy is better than hereditary monarchy",
+        "To celebrate the nobility's wisdom in testing their king",
+        "To show the nobility were wicked and should be punished",
+        "To show that legitimacy must be proven through personal action, not just inherited — Bahram Gur earns the throne by demonstrating courage, not by claiming it"
+      ],
+      "answers_fa": [
+        "برای استدلالِ اینکه دموکراسی از سلطنتِ موروثی بهتر است",
+        "برای تجلیل از خردِ اشراف در آزمودنِ شاهشان",
+        "برای نشان دادنِ اینکه اشراف شرور بودند و باید مجازات می‌شدند",
+        "برای نشان دادنِ اینکه مشروعیت باید از طریقِ عملِ شخصی ثابت شود نه فقط به ارث رسید — بهرام گور با نشان دادنِ شجاعت تخت را به دست می‌آورد نه با ادعایش"
+      ],
+      "answers_tg": [
+        "Барои истидлоли ин ки демократия аз подшоҳии меросӣ беҳтар аст",
+        "Барои ҷашн гирифтани хирадмандии ашроф дар санҷидани шоҳашон",
+        "Барои нишон додани ин ки ашроф бад буданд ва бояд ҷазо мегирифтанд",
+        "Барои нишон додани ин ки машруият бояд тавассути амали шахсӣ исбот шавад, на танҳо мерос гирифта шавад — Баҳром Гӯр бо нишон додани шуҷоат тахтро ба даст меорад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The noble resistance episode creates a legitimation challenge that Bahram Gur must resolve through personal action. The crown between two lions is the test — not one of birth but of character. The throne must be earned.",
+      "explanation_fa": "اپیزودِ مقاومتِ اشراف یک چالشِ مشروعیت‌بخشی ایجاد می‌کند که بهرام گور باید از طریقِ عملِ شخصی حل کند.",
+      "explanation_tg": "Эпизоди муқовимати ашроф чолиши машруъсозие месозад ки Баҳром Гӯр бояд тавассути амали шахсӣ ҳал кунад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bgur-m4",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Bahram Gur rhymed his own legend — meaning he actively participated in shaping how he would be remembered. What does this self-mythologising suggest?",
+      "question_fa": "بهرام گور افسانه‌ی خودش را به شعر درآورد — یعنی فعالانه در شکل‌دادنِ اینکه چگونه به یاد آورده می‌شود شرکت کرد. این اسطوره‌سازیِ خود چه چیزی نشان می‌دهد؟",
+      "question_tg": "Баҳром Гӯр афсонаи худашро ба шеър даровард — яъне фаъолона дар шакл додани ин ки чӣ тавр ба ёд оварда мешавад иштирок кард. Ин худафсоназии чиро нишон медиҳад?",
+      "answers": [
+        "A king who controls narrative controls how he is judged — Bahram Gur understood that legend outlasts political achievement",
+        "Kings who write poetry are distracted from governing",
+        "It shows Bahram Gur lacked confidence and needed to promote himself",
+        "Self-mythologising is always dishonest and the Shahnameh criticises it"
+      ],
+      "answers_fa": [
+        "شاهی که روایت را کنترل می‌کند کنترل می‌کند که چگونه قضاوت می‌شود — بهرام گور درک کرد که افسانه از دستاوردِ سیاسی بیشتر دوام می‌آورد",
+        "شاهانی که شعر می‌نویسند از حکمرانی حواسشان پرت می‌شود",
+        "نشان می‌دهد بهرام گور اعتماد به نفس نداشت و نیاز داشت خودش را تبلیغ کند",
+        "اسطوره‌سازیِ خود همیشه نادرست است و شاهنامه آن را انتقاد می‌کند"
+      ],
+      "answers_tg": [
+        "Шоҳе ки ривоятро назорат мекунад назорат мекунад ки чӣ тавр доварӣ мешавад — Баҳром Гӯр фаҳмид ки афсона аз дастоварди сиёсӣ бештар давом меорад",
+        "Шоҳоне ки шеър менависанд аз ҳукуматдорӣ ҳаваспарташон мешавад",
+        "Нишон медиҳад Баҳром Гӯр эътимод ба нафс надошт ва ниёз дошт худашро таблиғ кунад",
+        "Худафсоназӣ ҳамеша нодурустона аст ва Шоҳнома онро интиқод мекунад"
       ],
       "correct_answer": 0,
-      "explanation": "Bahram Gur was known for going among his subjects in disguise to hear what they actually thought — not the polished answers given to a known king. This habit of direct, hidden observation is part of what made him the Shahnameh's most beloved Sasanian king.",
-      "explanation_fa": "بهرام گور به رفتن بین رعایایش با لباس مبدل برای شنیدن نظر واقعی آنها شناخته می‌شد — نه پاسخ‌های صیقلی‌شده‌ای که به یک شاه شناخته‌شده داده می‌شود. این عادت مشاهده مستقیم و پنهانی بخشی از آن چیزی است که او را محبوب‌ترین شاه ساسانی شاهنامه کرده است.",
-      "explanation_tg": "Баҳроми Гӯр ба рафтан дар миёни раъиятияш бо либоси мубаддал барои шунидани назари воқеии онҳо маъруф буд — на ҷавобҳои мусаqqаи ба подшоҳи шинохташуда дода мешавад.",
+      "explanation": "Bahram Gur's self-mythologising is the Shahnameh's earliest reflection on the relationship between power and narrative. A king who shapes his own legend participates in the same act of cultural preservation that Ferdowsi himself is performing.",
+      "explanation_fa": "خودافسانه‌سازیِ بهرام گور اولین بازتابِ شاهنامه بر رابطه‌ی بینِ قدرت و روایت است.",
+      "explanation_tg": "Худафсоназии Баҳром Гӯр аввалин бозтоби Шоҳнома дар бораи муносибати байни қудрат ва ривоят аст.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bgur-m5",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "The Shahnameh says Bahram Gur 'vanished into the earth.' Why is this ending appropriate for his character?",
+      "question_fa": "شاهنامه می‌گوید بهرام گور «به درونِ زمین ناپدید شد.» چرا این پایان برای شخصیتش مناسب است؟",
+      "question_tg": "Шоҳнома мегӯяд Баҳром Гӯр «ба дарунии замин ғайб зад.» Чаро ин поён барои персонажаш мувофиқ аст?",
+      "answers": [
+        "It shows the earth claimed Bahram Gur as punishment for his excess",
+        "A mysterious king deserves a mysterious end — his life was defined by magic, adventure, and the inexplicable; his death should be too",
+        "The ending is inappropriate — Bahram Gur should have died heroically in battle",
+        "The mysterious ending was invented to avoid recording how he actually died"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد زمین بهرام گور را به عنوانِ مجازاتِ افراطش مطالبه کرد",
+        "یک شاهِ رازآلود شایسته‌ی پایانِ رازآلود است — زندگی‌اش با جادو، ماجراجویی، و توضیح‌ناپذیر تعریف شد؛ مرگش هم باید همینطور باشد",
+        "پایان نامناسب است — بهرام گور باید در نبرد قهرمانانه می‌مرد",
+        "پایانِ رازآلود برای اجتناب از ثبتِ اینکه واقعاً چگونه مرد ابداع شد"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад замин Баҳром Гӯрро ба унвони ҷазои افроти ӯ талаб кард",
+        "Шоҳи розомез шоистаи поёни розомез аст — зиндагии ӯ бо ҷоду, саргузашт, ва тавзеҳнопазир таъриф шуд؛ марги ӯ ҳам бояд ҳамин тавр бошад",
+        "Поён номувофиқ аст — Баҳром Гӯр бояд дар набард паҳлавонона мемурд",
+        "Поёни розомез барои парҳез аз сабти ин ки воқеан чӣ тавр мурд ихтироъ шуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The mysterious disappearance is perfect for Bahram Gur because his entire life was marked by the inexplicable: lions, disguises, poetry, vanishing. A king who lived beyond ordinary limits disappears beyond ordinary death.",
+      "explanation_fa": "ناپدید شدنِ رازآلود برای بهرام گور کامل است چون کلِ زندگی‌اش با توضیح‌ناپذیر مشخص شده بود.",
+      "explanation_tg": "Ғайб задани розомез барои Баҳром Гӯр комил аст зеро кулли зиндагии ӯ бо тавзеҳнопазир мушаххас шуда буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bgur-h1",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Bahram Gur's lion test is the Shahnameh's most compact image of royal legitimacy. What makes physical courage between lions sufficient proof of the right to rule?",
+      "question_fa": "آزمونِ شیرِ بهرام گور فشرده‌ترین تصویرِ شاهنامه از مشروعیتِ سلطنتی است. چه چیزی شجاعتِ فیزیکی در بینِ شیرها را اثباتِ کافی از حقِ حکمرانی می‌کند؟",
+      "question_tg": "Санҷиши шери Баҳром Гӯр фишурдатарин тасвири Шоҳнома аз машруияти шоҳонаст. Чӣ чиз шуҷоати физикӣ дар байни шерон ро исботи кофии ҳаққи ҳукумат мекунад?",
+      "answers": [
+        "The test was designed by the Zoroastrian priests as a religious initiation",
+        "The lion test is arbitrary — the nobles invented it to humiliate Bahram Gur",
+        "Physical bravery proves military competence — a king who can face lions can face armies",
+        "In the heroic tradition, the crown belongs to the person who can hold it — not the person born to it; the lions test whether Bahram Gur is strong enough to be king"
+      ],
+      "answers_fa": [
+        "آزمایش توسطِ روحانیانِ زرتشتی به عنوانِ آیینِ دینیِ آغازین طراحی شده بود",
+        "آزمونِ شیر دلبخواهی است — اشراف آن را برای تحقیرِ بهرام گور ابداع کرد",
+        "شجاعتِ فیزیکی صلاحیتِ نظامی را ثابت می‌کند — شاهی که می‌تواند با شیر روبرو شود می‌تواند با ارتش روبرو شود",
+        "در سنتِ پهلوانی، تاج متعلق به کسی است که می‌تواند آن را نگه دارد — نه کسی که به آن متولد شده؛ شیرها آزمایش می‌کنند آیا بهرام گور به اندازه‌ی کافی قوی است تا شاه باشد"
+      ],
+      "answers_tg": [
+        "Санҷиш аз ҷониби коҳинони зардуштӣ ба унвони маросими дини ибтидоӣ тарроҳӣ шуда буд",
+        "Санҷиши шер худсарона аст — ашроф онро барои таҳқири Баҳром Гӯр ихтироъ кард",
+        "Шуҷоати физикӣ қобилияти низомиро исбот мекунад — шоҳе ки метавонад бо шер рӯбарӯ шавад метавонад бо лашкар рӯбарӯ шавад",
+        "Дар суннати паҳлавонӣ, тоҷ ба шахсе тааллуқ дорад ки метавонад онро нигоҳ дорад — на шахсе ки ба он таваллуд шудааст؛ шерон месанҷанд оё Баҳром Гӯр ба қадри кофӣ қавӣ аст то шоҳ бошад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The heroic worldview holds that legitimate rule requires the capacity to hold power against all challenges. The lion test is the most extreme version of this principle: even against supernatural-level physical danger, the rightful king does not flinch.",
+      "explanation_fa": "جهان‌بینیِ پهلوانی معتقد است که حکمرانیِ مشروع به ظرفیتِ نگه داشتنِ قدرت در برابرِ همه‌ی چالش‌ها نیاز دارد.",
+      "explanation_tg": "Ҷаҳонбинии паҳлавонӣ бовар дорад ки ҳукумати машруъ ба қобилияти нигоҳ доштани қудрат дар баробари ҳамаи чолишҳо ниёз дорад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bgur-h2",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Bahram Gur's reign is remembered through his persona (hunter, lover, poet) more than through his political achievements. What does this tell us about how the Shahnameh values different kinds of legacy?",
+      "question_fa": "سلطنتِ بهرام گور از طریقِ شخصیتش (شکارچی، عاشق، شاعر) بیشتر از از طریقِ دستاوردهای سیاسی‌اش به یاد آورده می‌شود. این درباره‌ی نحوه‌ی ارزش‌گذاریِ شاهنامه به انواعِ مختلفِ میراث چه چیزی به ما می‌گوید؟",
+      "question_tg": "Ҳукмронии Баҳром Гӯр тавассути персонажи ӯ (шикорчӣ, ошиқ, шоир) бештар аз тавассути дастовардҳои сиёсии ӯ ба ёд оварда мешавад. Ин дар бораи нахваи арзишгузории Шоҳнома ба навъҳои гуногуни мерос чиро ба мо мегӯяд?",
+      "answers": [
+        "The Shahnameh is biased toward entertainment — persona is emphasised over achievement for literary reasons only",
+        "Cultural and personal legend outlasts political administration — what people remember of a king is the story of who he was, not the policies he enacted",
+        "Political achievement is always more valued than cultural persona in the Shahnameh",
+        "Bahram Gur's political achievements were so great they speak for themselves without narrative emphasis"
+      ],
+      "answers_fa": [
+        "شاهنامه به سرگرمی تعصب دارد — شخصیت بیشتر از دستاورد برای دلایلِ صرفاً ادبی تأکید می‌شود",
+        "افسانه‌ی فرهنگی و شخصی از اداره‌ی سیاسی دوام می‌آورد — آنچه مردم از یک شاه به یاد می‌آورند داستانِ اینکه که بود است نه سیاست‌هایی که اجرا کرد",
+        "دستاوردِ سیاسی همیشه در شاهنامه از شخصیتِ فرهنگی بیشتر ارزش‌گذاری می‌شود",
+        "دستاوردهای سیاسیِ بهرام گور خیلی بزرگ بودند که به خودی خود بدون تأکیدِ روایی صحبت می‌کنند"
+      ],
+      "answers_tg": [
+        "Шоҳнома ба сирҷунбонӣ тааccуб дорад — персонаж бештар аз дастовард ба сабабҳои танҳо адабӣ таъкид мешавад",
+        "Афсонаи фарҳангӣ ва шахсӣ аз маъмурияти сиёсӣ давом меорад — он чи мардум аз шоҳ ба ёд меоваранд достони ин ки кӣ буд аст",
+        "Дастоварди сиёсӣ ҳамеша дар Шоҳнома аз персонажи фарҳангӣ бештар арзишгузорӣ мешавад",
+        "Дастовардҳои сиёсии Баҳром Гӯр хеле бузург буданд ки аз худ бидуни таъкиди ривоӣ сухан мегӯянд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Bahram Gur's chapter teaches that cultural legend is more durable than political record. The Shahnameh itself is the proof: it preserves Bahram Gur's persona with detail that no administrative archive could match.",
+      "explanation_fa": "فصلِ بهرام گور یاد می‌دهد که افسانه‌ی فرهنگی از ثبتِ سیاسی ماندگارتر است.",
+      "explanation_tg": "Фасли Баҳром Гӯр мефаҳмонад ки афсонаи фарҳангӣ аз сабти сиёсӣ мондагортар аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bgur-h3",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Bahram Gur was raised in an Arab court. The Shahnameh presents his foreign upbringing as neither advantage nor disadvantage but as neutral background. What does this say about the text's view of cultural origin?",
+      "question_fa": "بهرام گور در دربارِ عرب بزرگ شد. شاهنامه تربیتِ خارجی‌اش را نه مزیت نه عیب بلکه به عنوانِ پسزمینه‌ی بی‌طرف ارائه می‌دهد. این درباره‌ی نگاهِ متن به ریشه‌ی فرهنگی چه می‌گوید؟",
+      "question_tg": "Баҳром Гӯр дар дарбори Арабӣ калон шуд. Шоҳнома тарбияти хориҷии ӯро на бартарӣ на айб балки ба унвони замина беторафона пешкаш мекунад. Ин дар бораи нигоҳи матн ба пайдоиши фарҳангӣ чӣ мегӯяд?",
+      "answers": [
+        "The Shahnameh judges kings by what they do, not where they grew up — Bahram Gur becomes Persian/Iranian through his actions, not his childhood location",
+        "The Shahnameh is hostile to Arab culture and criticises Bahram Gur for his upbringing",
+        "The Arab upbringing is presented as a deficiency that Bahram Gur had to overcome",
+        "Foreign upbringing always improves a king because it broadens his perspective"
+      ],
+      "answers_fa": [
+        "شاهنامه شاهان را بر اساسِ آنچه انجام می‌دهند قضاوت می‌کند نه جایی که بزرگ شدند — بهرام گور از طریقِ اعمالش نه مکانِ کودکی‌اش ایرانی می‌شود",
+        "شاهنامه به فرهنگِ عربی خصومت دارد و بهرام گور را برای تربیتش انتقاد می‌کند",
+        "تربیتِ عربی به عنوانِ کمبودی ارائه می‌شود که بهرام گور باید بر آن غلبه می‌کرد",
+        "تربیتِ خارجی همیشه یک شاه را بهتر می‌کند چون دیدگاهش را گسترش می‌دهد"
+      ],
+      "answers_tg": [
+        "Шоҳнома шоҳонро дар асоси он чи анҷом медиҳанд доварӣ мекунад на дар куҷо калон шуданд — Баҳром Гӯр тавассути амалҳояш эронӣ мешавад",
+        "Шоҳнома ба фарҳанги Арабӣ адоват дорад ва Баҳром Гӯрро барои тарбияташ интиқод мекунад",
+        "Тарбияти Арабӣ ба унвони норасоие пешкаш мешавад ки Баҳром Гӯр бояд бар он чира мешуд",
+        "Тарбияти хориҷӣ ҳамеша шоҳро беҳтар мекунад зеро дидгоҳашро тавсеа медиҳад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahram Gur's Arab upbringing is treated as morally neutral by the Shahnameh. The lion test and subsequent kingship establish him as Iranian not by birth-location but by deed — he is Iranian because he performs Iranian kingship.",
+      "explanation_fa": "تربیتِ عربیِ بهرام گور توسطِ شاهنامه اخلاقاً بی‌طرف تلقی می‌شود.",
+      "explanation_tg": "Тарбияти Арабии Баҳром Гӯр аз ҷониби Шоҳнома аз назари ахлоқӣ беторафона тлақӣ мешавад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bgur-h4",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Bahram Gur 'rhymed his own legend' — he shaped narratives about himself. How does this self-authorship relate to the Shahnameh's own project of cultural preservation?",
+      "question_fa": "بهرام گور «افسانه‌ی خودش را به شعر درآورد» — او روایت‌هایی درباره‌ی خودش شکل داد. این خود-نویسندگی چه ارتباطی با پروژه‌ی خودِ شاهنامه از حفاظتِ فرهنگی دارد؟",
+      "question_tg": "Баҳром Гӯр «афсонаи худашро ба шеър даровард» — ӯ ривоятҳое дар бораи худаш шакл дод. Ин худнависандагӣ чӣ иртиботе бо лоиҳаи худи Шоҳнома аз ҳифзи фарҳангӣ дорад?",
+      "answers": [
+        "Self-authorship and cultural preservation are completely unrelated activities",
+        "Bahram Gur's self-mythology is criticism of Ferdowsi's own project",
+        "The Shahnameh does not make this connection — it simply records what happened",
+        "Both Bahram Gur and Ferdowsi are doing the same thing — shaping how the past will be remembered; the king who makes legend and the poet who preserves it are partners in cultural transmission"
+      ],
+      "answers_fa": [
+        "خود-نویسندگی و حفاظتِ فرهنگی فعالیت‌های کاملاً نامرتبط هستند",
+        "خودافسانه‌ی بهرام گور انتقادِ پروژه‌ی خودِ فردوسی است",
+        "شاهنامه این ارتباط را برقرار نمی‌کند — صرفاً آنچه اتفاق افتاد را ثبت می‌کند",
+        "هم بهرام گور و هم فردوسی یک کار انجام می‌دهند — شکل دادنِ اینکه چگونه گذشته به یاد آورده می‌شود؛ شاهی که افسانه می‌سازد و شاعری که آن را حفظ می‌کند شرکایِ انتقالِ فرهنگی هستند"
+      ],
+      "answers_tg": [
+        "Худнависандагӣ ва ҳифзи фарҳангӣ фаъолиятҳои комилан нобарбатанд",
+        "Худафсонаи Баҳром Гӯр интиқоди лоиҳаи худи Фирдавсист",
+        "Шоҳнома ин иртиботро барқарор намекунад — танҳо он чи иттифоқ афтод ро сабт мекунад",
+        "ҳам Баҳром Гӯр ва ҳам Фирдавсӣ як кор анҷом медиҳанд — шакл додани ин ки чӣ тавр гузашта ба ёд оварда мешавад؛ шоҳе ки афсона месозад ва шоире ки онро ҳифз мекунад шарикони интиқоли фарҳангӣ ҳастанд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Bahram Gur's self-authoring prefigures Ferdowsi's own act of cultural preservation. The king who composed verses about his own deeds is doing on a small scale what Ferdowsi does on a grand scale — ensuring that what happened is not lost.",
+      "explanation_fa": "خودنویسندگیِ بهرام گور از عملِ حفاظتِ فرهنگیِ خودِ فردوسی پیش‌بینی می‌کند.",
+      "explanation_tg": "Худнависандагии Баҳром Гӯр амали ҳифзи фарҳангии худи Фирдавсиро пешзабон мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bgur-h5",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Bahram Gur's chapter has three distinct registers: lion-king (legitimation), poet-hunter (cultural), mysterious death (legend). How does this three-part structure reflect Shahnameh narrative architecture?",
+      "question_fa": "فصلِ بهرام گور سه ثبتِ متمایز دارد: شاهِ شیر (مشروع‌سازی)، شاعرِ شکارچی (فرهنگی)، مرگِ رازآلود (افسانه). این ساختارِ سه‌بخشی معماریِ رواییِ شاهنامه را چگونه نشان می‌دهد؟",
+      "question_tg": "Фасли Баҳром Гӯр се сабти ҷудогона дорад: шоҳи шер (машруъсозӣ), шоири шикорчӣ (фарҳангӣ), марги розомез (афсона). Ин сохтори себахшӣ меъмории ривоии Шоҳномаро чӣ тавр нишон медиҳад?",
+      "answers": [
+        "The three parts are unrelated episodes that simply happen to concern the same king",
+        "Only the legitimation part matters — the other two are decorative additions",
+        "The structure is imposed by Ferdowsi's source material, not a deliberate choice",
+        "Each great king needs a founding act, a reign persona, and a memorable end — these three narrative beats constitute a complete royal biography in the Shahnameh's tradition"
+      ],
+      "answers_fa": [
+        "سه بخش اپیزودهای نامرتبطی هستند که صرفاً اتفاق می‌افتد درباره‌ی یک شاه باشند",
+        "فقط بخشِ مشروع‌سازی اهمیت دارد — دو بخشِ دیگر اضافه‌های تزئینی هستند",
+        "ساختار توسطِ مادهِ منبعِ فردوسی تحمیل شده نه یک انتخابِ عمدی",
+        "هر شاهِ بزرگ به یک عملِ پایه‌گذاری، یک شخصیتِ سلطنتی، و یک پایانِ به‌یادماندنی نیاز دارد — این سه نقطه‌ی روایی زندگی‌نامه‌ی سلطنتیِ کامل را در سنتِ شاهنامه تشکیل می‌دهند"
+      ],
+      "answers_tg": [
+        "Се бахш эпизодҳои нобарбатанд ки танҳо тасодуфан дар бораи як шоҳ мебошанд",
+        "Танҳо бахши машруъсозӣ аҳамият дорад — ду бахши дигар иловаҳои ороиши ҳастанд",
+        "Сохтор аз ҷониби маводи манбаи Фирдавсӣ таҳмил шуда",
+        "Ҳар шоҳи бузург ба амали бунёнгузорӣ, персонажи ҳукмронӣ, ва поёни дар хотирамондание ниёз дорад — ин се нуқтаи ривоӣ тарҷумаи ҳоли шоҳонаи комилро дар суннати Шоҳнома ташкил медиҳанд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's complete royal biography requires three elements: how the king established his right to rule (lion test), who he was during his reign (poet-hunter), and how he is remembered at the end (mysterious disappearance). Together they form a complete portrait.",
+      "explanation_fa": "زندگی‌نامه‌ی سلطنتیِ کاملِ شاهنامه به سه عنصر نیاز دارد: چگونگیِ ثابت کردنِ شاه از حقش برای حکمرانی، اینکه در دورانِ سلطنتش کی بود، و اینکه چگونه در پایان به یاد آورده می‌شود.",
+      "explanation_tg": "Тарҷумаи ҳоли шоҳонаи комили Шоҳнома ба се унсур ниёз дорад: чӣ тавур شоҳ ҳаққи ҳукматашро исбот кард, дар давраи ҳукмронии худ кӣ буд, ва чӣ тавр дар поён ба ёд оварда мешавад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bgur-h6",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Bahram Gur disguised himself to hear what people truly thought. Compare this to the Shahnameh's own position as a text that claims to preserve what truly happened. What parallel is being drawn?",
+      "question_fa": "بهرام گور خودش را پنهان کرد تا بشنود مردم واقعاً چه فکر می‌کنند. این را با موضعِ خودِ شاهنامه به عنوانِ متنی که ادعا می‌کند آنچه واقعاً اتفاق افتاد را حفظ کرده مقایسه کن. چه موازی‌ای ترسیم می‌شود؟",
+      "question_tg": "Баҳром Гӯр худашро пинҳон кард то бишнавад мардум воқеан чӣ фикр мекунанд. Инро бо мавзеи худи Шоҳнома ба унвони матне ки иддаъо мекунад он чи воқеан иттифоқ афтод ро ҳифз кардааст муқоиса кун. Кадом мавозие тасвир мешавад?",
+      "answers": [
+        "Both bypass official narratives to reach the truth — the disguised king bypasses court protocol; the Shahnameh bypasses political history to reach cultural memory",
+        "Bahram Gur's disguises are criticised by the Shahnameh as undignified",
+        "The Shahnameh positions itself as equivalent to royal authority, not to humble truth-seeking",
+        "The parallel is coincidental — the Shahnameh is not commenting on its own method through Bahram Gur"
+      ],
+      "answers_fa": [
+        "هر دو از روایت‌های رسمی برای رسیدن به حقیقت می‌گذرند — شاهِ ملبس پروتکلِ دربار را دور می‌زند؛ شاهنامه تاریخِ سیاسی را برای رسیدن به حافظه‌ی فرهنگی دور می‌زند",
+        "لباس‌های مبدلِ بهرام گور توسطِ شاهنامه به عنوانِ بی‌شأن انتقاد می‌شوند",
+        "شاهنامه خودش را معادلِ اقتدارِ سلطنتی قرار می‌دهد نه جست‌وجوی فروتنانه‌ی حقیقت",
+        "موازی تصادفی است — شاهنامه از طریقِ بهرام گور در موردِ روشِ خودش اظهار نمی‌کند"
+      ],
+      "answers_tg": [
+        "Ҳарду аз ривоятҳои расмӣ барои расидан ба ҳақиқат мегузаранд — шоҳи либосмубаддал протоколи дарборро дур мезанад؛ Шоҳнома таърихи сиёсиро барои расидан ба хотираи фарҳангӣ дур мезанад",
+        "Либосҳои мубаддали Баҳром Гӯр аз ҷониби Шоҳнома ба унвони бешаъна интиқод мешаванд",
+        "Шоҳнома худашро баробари аутории шоҳонӣ ҷой медиҳад",
+        "Мавозӣ тасодуфист — Шоҳнома тавассути Баҳром Гӯр дар мавриди усули худаш изҳор намекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The parallel is subtle but structural: disguised Bahram Gur and Ferdowsi's Shahnameh both seek unmediated reality — one by removing the barrier of royal protocol, the other by preserving the unfiltered tradition below the political surface.",
+      "explanation_fa": "موازی ظریف اما ساختاری است: بهرام گورِ ملبس و شاهنامه‌ی فردوسی هر دو واقعیتِ بی‌واسطه می‌جویند.",
+      "explanation_tg": "Мавозӣ нозук аммо сохторист: Баҳром Гӯри либосмубаддал ва Шоҳномаи Фирдавсӣ ҳарду воқеияти беваситаро меҷӯянд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bgur-h7",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Bahram Gur's chapter is the Shahnameh's most romantic. How does the text prevent this romanticism from undermining the serious political narrative?",
+      "question_fa": "فصلِ بهرام گور رمانتیک‌ترینِ شاهنامه است. متن چگونه مانع از این می‌شود که این رمانتیسم روایتِ سیاسیِ جدی را تضعیف کند؟",
+      "question_tg": "Фасли Баҳром Гӯр романтиктарини Шоҳнома аст. Матн чӣ тавр монеъ аз ин мешавад ки ин романтизм ривояти сиёсии ҷиддиро заиф кунад?",
+      "answers": [
+        "The romantic episodes are so brief they never threaten the political narrative",
+        "By anchoring the romantic persona to the legitimation narrative — Bahram Gur earns the throne through physical courage before his romantic adventures; his king-status is established first",
+        "Romanticism is always separated from political narrative in the Shahnameh",
+        "The Shahnameh does not prevent this — it allows romance to undermine political seriousness"
+      ],
+      "answers_fa": [
+        "اپیزودهای رمانتیک خیلی کوتاه هستند که هرگز روایتِ سیاسی را تهدید نمی‌کنند",
+        "با لنگر انداختنِ شخصیتِ رمانتیک به روایتِ مشروع‌سازی — بهرام گور از طریقِ شجاعتِ فیزیکی قبل از ماجراهای رمانتیکش تخت را به دست می‌آورد؛ وضعیتِ شاهش اول تثبیت می‌شود",
+        "رمانتیسم همیشه از روایتِ سیاسی در شاهنامه جدا می‌شود",
+        "شاهنامه از این جلوگیری نمی‌کند — به رمانس اجازه می‌دهد جدیتِ سیاسی را تضعیف کند"
+      ],
+      "answers_tg": [
+        "Эпизодҳои романтик хеле кӯтоҳ ҳастанд ки ҳеч гоҳ ривояти сиёсиро таҳдид намекунанд",
+        "Бо лангар андохтани персонажи романтик ба ривояти машруъсозӣ — Баҳром Гӯр тавассути шуҷоати физикӣ пеш аз саргузаштҳои романтикии худ тахтро ба даст меорад؛ мавзеъи шоҳи ӯ аввал тасбит мешавад",
+        "Романтизм ҳамеша аз ривояти сиёсӣ дар Шоҳнома ҷудо мешавад",
+        "Шоҳнома аз ин пешгирӣ намекунад — ба романс иҷозат медиҳад ҷиддияти сиёсиро заиф кунад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The lion test comes before the romantic adventures. Once Bahram Gur's legitimacy is established through the most demanding physical test, his subsequent romanticism cannot undermine his kingship — the foundation was already laid.",
+      "explanation_fa": "آزمونِ شیر قبل از ماجراهای رمانتیک می‌آید. وقتی مشروعیتِ بهرام گور از طریقِ سخت‌ترین آزمونِ فیزیکی تثبیت شد، رمانتیسمِ بعدی‌اش نمی‌تواند شاهنشاهی‌اش را تضعیف کند.",
+      "explanation_tg": "Санҷиши шер пеш аз саргузаштҳои романтик меояд. Вақте машруияти Баҳром Гӯр тавассути сахттарин санҷиши физикӣ тасбит шуд, романтизми баъдии ӯ наметавонад шоҳаншоҳии ӯро заиф кунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bgur-h8",
+      "chapter_slug": "bahram-gur",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh calls Bahram Gur's vanishing 'as if the earth swallowed him.' How does this image connect to the Shahnameh's cosmology of the relationship between kings and the earth?",
+      "question_fa": "شاهنامه ناپدید شدنِ بهرام گور را «انگار زمین او را بلعید» می‌نامد. این تصویر چه ارتباطی به جهان‌شناسیِ شاهنامه از رابطه‌ی شاهان و زمین دارد؟",
+      "question_tg": "Шоҳнома ғайб задани Баҳром Гӯрро «гӯё замин ӯро фурӯ бурд» меномад. Ин тасвир чӣ иртиботе ба ҷаҳоншиносии Шоҳнома аз муносибати шоҳон ва замин дорад?",
+      "answers": [
+        "The image means Bahram Gur was buried in the earth, described poetically",
+        "Kings come from the earth and return to it — the farr rises from the earth, passes through the king, and returns when the king is gone; Bahram Gur's return to the earth is a cosmological completion",
+        "The image is purely poetic metaphor with no cosmological significance",
+        "The earth swallowing him is a punishment for his romantic excess"
+      ],
+      "answers_fa": [
+        "تصویر به این معنا است که بهرام گور در زمین دفن شد، به صورتِ شاعرانه توصیف شد",
+        "شاهان از زمین می‌آیند و به آن باز می‌گردند — فرّ از زمین برمی‌خیزد، از شاه عبور می‌کند، و وقتی شاه رفت باز می‌گردد؛ بازگشتِ بهرام گور به زمین یک تکمیلِ جهان‌شناختی است",
+        "تصویر صرفاً استعاره‌ی شعری بدون اهمیتِ جهان‌شناختی است",
+        "زمین بلعیدنش مجازاتی برای افراطِ رمانتیکش است"
+      ],
+      "answers_tg": [
+        "Тасвир маъно дорад ки Баҳром Гӯр дар замин дафн шуд, ба сурати шоиронаанд тавсиф шуд",
+        "Шоҳон аз замин меоянд ва ба он бармегарданд — фарр аз замин хест мекунад, аз шоҳ мегузарад, ва вақте шоҳ рафт бармегардад؛ бозгашти Баҳром Гӯр ба замин такмили ҷаҳоншиносист",
+        "Тасвир танҳо истиораи шеърӣ бидуни аҳамияти ҷаҳоншиносист",
+        "Замин фурӯ бурданаш ҷазост барои افроти романтикии ӯ"
+      ],
+      "correct_answer": 1,
+      "explanation": "The earth-swallowing image echoes the Shahnameh's cosmology of farr: divine kingship descends from the cosmic order, passes through specific kings, and returns when the king's time is done. Bahram Gur's disappearance into the earth is a return to the source.",
+      "explanation_fa": "تصویرِ زمین بلعیدن جهان‌شناسیِ شاهنامه از فرّ را بازتاب می‌دهد: شاهنشاهیِ الهی از نظمِ کیهانی فرود می‌آید.",
+      "explanation_tg": "Тасвири زамин фурӯ бурдан ҷаҳоншиносии Шоҳномаро аз фарр бозтоб мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

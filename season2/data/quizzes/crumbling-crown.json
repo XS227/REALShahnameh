@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "crc-e1",
+      "id": "ccrw-e1",
       "chapter_slug": "crumbling-crown",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "How many Sasanian rulers came to power in the four years after Shiruyeh killed Khosrow Parviz?",
-      "question_fa": "چند حاکم ساسانی در چهار سال پس از کشتن خسرو پرویز توسط شیرویه به قدرت رسیدند؟",
-      "question_tg": "Чанд ҳокими Сосонӣ дар чаҳор сол пас аз куштани Хусрави Парвез аз ҷониби Шируяҳ ба қудрат расиданд?",
+      "question": "How long did Shiruyeh reign after killing his father, and how did he die?",
+      "question_fa": "شیرویه پس از کشتنِ پدرش چه مدت سلطنت کرد و چگونه مُرد؟",
+      "question_tg": "Шерӯя пас аз куштани падараш чӣ муддат салтанат кард ва чӣ гуна мурд?",
       "answers": [
-        "Eight",
-        "Three",
-        "Twelve",
-        "Five"
+        "Five years — he died hunting",
+        "One week — he was assassinated by guards",
+        "Eight months — then plague took him",
+        "Twenty years — he died in battle"
       ],
       "answers_fa": [
-        "هشت",
-        "سه",
-        "دوازده",
-        "پنج"
+        "پنج سال — در شکار مُرد",
+        "یک هفته — به دستِ نگهبانان کشته شد",
+        "هشت ماه — سپس طاعون او را برد",
+        "بیست سال — در نبرد مُرد"
       ],
       "answers_tg": [
-        "Ҳашт",
-        "Се",
-        "Дувоздаҳ",
-        "Панҷ"
+        "Панҷ сол — дар шикор мурд",
+        "Як ҳафта — ба дасти нигаҳбонон кушта шуд",
+        "Ҳашт моҳ — сипас тоъун ӯро бурд",
+        "Бист сол — дар набард мурд"
       ],
-      "correct_answer": 0,
-      "explanation": "After Shiruyeh died of plague within months of killing his father, Iran had eight rulers in four years: Ardeshir III (a child), Shahrbaraz (a general), Boran (the first Sasanian queen), Azarmidokht, and others. The Shahnameh watches this with the eye of a chronicler who knows how it ends.",
-      "explanation_fa": "پس از اینکه شیرویه ظرف چند ماه از کشتن پدرش از طاعون مُرد، ایران هشت حاکم در چهار سال داشت: اردشیر سوم (یک کودک)، شهربراز (یک سردار)، بوران (اولین ملکه ساسانی)، آذرمیدخت و دیگران. شاهنامه این را با چشم وقایع‌نگاری که می‌داند چه می‌شود می‌بیند.",
-      "explanation_tg": "Пас аз он ки Шируяҳ зарфи чанд моҳ аз куштани падараш аз тоун мурд, Эрон ҳашт ҳоким дар чаҳор сол дошт: Ардашери Сеюм (кӯдак), Шаҳрбороз (сарлашкар), Буron (аввалин маликаи Сосонӣ) ва дигарон.",
+      "correct_answer": 2,
+      "explanation": "Shiruyeh lasted eight months on the throne he had taken by parricide before plague killed him. The crime bought him almost nothing.",
+      "explanation_fa": "شیرویه هشت ماه بر تختی که با پدرکشی گرفته بود دوام آورد؛ طاعون بردش.",
+      "explanation_tg": "Шерӯя ҳашт моҳ бар тахте ки бо падаркушӣ гирифта буд давом овард; тоъун бурдаш.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "crc-m1",
+      "id": "ccrw-e2",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Who was the first woman to rule Sasanian Iran?",
+      "question_fa": "نخستین زنی که بر ایرانِ ساسانی فرمان راند که بود؟",
+      "question_tg": "Нахустин зане ки бар Эрони сосонӣ фармон ронд кӣ буд?",
+      "answers": [
+        "Boran, daughter of Khosrow Parviz",
+        "Shirin, widow of Khosrow Parviz",
+        "Azarmidokht's mother",
+        "Gordiya, sister of Bahram Chubin"
+      ],
+      "answers_fa": [
+        "پوران‌دخت، دخترِ خسرو پرویز",
+        "شیرین، بیوه‌ی خسرو پرویز",
+        "مادرِ آزرمی‌دخت",
+        "گردیه، خواهرِ بهرام چوبین"
+      ],
+      "answers_tg": [
+        "Пурондухт, духтари Хусрав Парвиз",
+        "Ширин, бевазани Хусрав Парвиз",
+        "Модари Озармидухт",
+        "Гурдия, хоҳари Баҳром Чӯбин"
+      ],
+      "correct_answer": 0,
+      "explanation": "Boran, daughter of Khosrow Parviz, was crowned queen — the first woman to rule Sasanian Iran. She reigned about a year, trying to negotiate peace with Byzantium.",
+      "explanation_fa": "پوران‌دخت، دخترِ خسرو پرویز — نخستین زنِ فرمانروای ایرانِ ساسانی.",
+      "explanation_tg": "Пурондухт, духтари Хусрав Парвиз — нахустин зани фармонравои Эрони сосонӣ.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ccrw-e3",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How many rulers did Iran have in the four years after Shiruyeh's death?",
+      "question_fa": "ایران در چهار سالِ پس از مرگِ شیرویه چند فرمانروا داشت؟",
+      "question_tg": "Эрон дар чаҳор соли пас аз марги Шерӯя чанд фармонраво дошт?",
+      "answers": [
+        "Three",
+        "Eight",
+        "Two",
+        "Fifteen"
+      ],
+      "answers_fa": [
+        "سه",
+        "هشت",
+        "دو",
+        "پانزده"
+      ],
+      "answers_tg": [
+        "Се",
+        "Ҳашт",
+        "Ду",
+        "Понздаҳ"
+      ],
+      "correct_answer": 1,
+      "explanation": "In four years Iran had eight rulers — Ardeshir III, Boran, Azarmidokht, Hormuzd VI, Khosrow III and more. Generals killed kings; kings lasted seasons.",
+      "explanation_fa": "در چهار سال هشت فرمانروا — سرداران شاه می‌کشتند؛ شاهان فصلی دوام می‌آوردند.",
+      "explanation_tg": "Дар чаҳор сол ҳашт фармонраво — сардорон шоҳ мекуштанд; шоҳон фасле давом меоварданд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ccrw-m1",
       "chapter_slug": "crumbling-crown",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "What was happening outside Iran while the Sasanian dynasty was destroying itself through rapid succession?",
-      "question_fa": "در حالی که سلسله ساسانی با جانشینی سریع در حال نابود کردن خودش بود، در خارج از ایران چه اتفاقی می‌افتاد؟",
-      "question_tg": "Дар ҳоле ки сулолаи Сосонӣ бо ҷонишинии зуд дар ҳоли нобуд кардани худаш буд, берун аз Эрон чӣ мегузашт?",
+      "question": "What did Queen Boran try to achieve during her year on the throne?",
+      "question_fa": "شهبانو پوران‌دخت در سالِ سلطنتش کوشید به چه دست یابد؟",
+      "question_tg": "Шаҳбону Пурондухт дар соли салтанаташ кӯшид ба чӣ даст ёбад?",
       "answers": [
-        "The Arab tribes were unifying under Islam and beginning to move with coherence that exhausted Iran could not match",
-        "The Byzantine empire was launching a new invasion to capitalize on the Sasanian collapse",
-        "The Turkish khagan was building an army to sweep across Central Asia into Persia",
-        "China's Tang dynasty was expanding westward along the Silk Road toward Iranian territory"
+        "Peace with Byzantium — negotiating and returning the True Cross in exchange for a peace she could not enforce",
+        "The restoration of the Mazdakite movement",
+        "An alliance with the Arab tribes against Byzantium",
+        "The reconquest of Egypt and Syria"
       ],
       "answers_fa": [
-        "قبایل عرب زیر اسلام متحد می‌شدند و با انسجامی شروع به حرکت کرده بودند که ایران خسته نمی‌توانست با آن برابری کند",
-        "امپراتوری بیزانس حمله جدیدی برای استفاده از فروپاشی ساسانی راه می‌انداخت",
-        "خاقان ترک داشت ارتشی می‌ساخت برای جارو کردن آسیای مرکزی به سمت ایران",
-        "سلسله تانگ چین داشت در امتداد جاده ابریشم به سمت غرب به سوی قلمرو ایران گسترش می‌یافت"
+        "صلح با بیزانس — مذاکره و بازگرداندنِ صلیبِ راستین در ازای صلحی که نمی‌توانست اجرایش کند",
+        "احیای جنبشِ مزدکی",
+        "اتحاد با قبایلِ عرب علیه بیزانس",
+        "بازپس‌گیریِ مصر و سوریه"
       ],
       "answers_tg": [
-        "Қабилаҳои Арабӣ зери Ислом муттаҳид мешуданд ва бо ҳамоҳангие шурӯъ ба ҳаракат карда буданд ки Эрони хаста бо он баробарӣ карда наметавонист",
-        "Империяи Визонт ҳамлаи ҷадиде барои истифода аз фурӯпошии Сосонӣ сар медод",
-        "Хоқони Турк артише месохт барои ҷору кардани Осиёи Миёна ба сӯи Эрон",
-        "Сулолаи Тан Чин дар тӯли Роҳи Абрешим ба самти ғарб ба сӯи қаламрави Эрон тавсеа меёфт"
+        "Сулҳ бо Бизантия — музокира ва бозгардондани Салиби Ростин дар ивази сулҳе ки наметавонист иҷрояш кунад",
+        "Эҳёи ҷунбиши маздакӣ",
+        "Иттиҳод бо қабилаҳои араб алайҳи Бизантия",
+        "Бозпасгирии Миср ва Сурия"
       ],
       "correct_answer": 0,
-      "explanation": "The Arab tribes had found a unifying force in Islam. They were moving with a coherence — a belief in their moment and their cause — that the exhausted, factional Sasanian court could not match or understand. The crumbling crown was not waiting to be knocked off. It had simply lost the strength to hold itself up.",
-      "explanation_fa": "قبایل عرب نیروی متحدکننده‌ای در اسلام پیدا کرده بودند. با انسجامی حرکت می‌کردند — باور به لحظه و دلیل خود — که دربار ساسانی خسته و فرقه‌ای نمی‌توانست با آن برابری یا آن را درک کند. تاج در حال فروپاشی منتظر نبود که کنار زده شود. فقط قدرت نگه داشتن خودش را از دست داده بود.",
-      "explanation_tg": "Қабилаҳои Арабӣ нерӯи муттаҳидкунандае дар Ислом ёфта буданд. Бо ҳамоҳангие ҳаракат мекарданд — бовар ба лаҳзаи худ ва сабаби худ — ки дарбори Сосонии хаста ва фирқаӣ бо он баробарӣ карда ё дарк карда наметавонист.",
+      "explanation": "Boran tried to stop the bleeding: she negotiated with Byzantium and returned the True Cross in exchange for peace. The policy was right; the state to enforce it no longer existed.",
+      "explanation_fa": "پوران‌دخت با بیزانس مذاکره کرد و صلیب را بازگرداند — سیاستِ درست، اما دولتی برای اجرایش نمانده بود.",
+      "explanation_tg": "Пурондухт бо Бизантия музокира кард ва Салибро бозгардонд — сиёсати дуруст, аммо давлате барои иҷрояш намонда буд.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "crc-e2",
+      "id": "ccrw-m2",
       "chapter_slug": "crumbling-crown",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "Who was the notable queen who ruled the Sasanian empire during this period of rapid succession?",
-      "question_fa": "ملکه قابل توجهی که در این دوره جانشینی سریع بر امپراتوری ساسانی حکومت کرد کی بود؟",
-      "question_tg": "Маликаи қобили таваҷҷӯҳе ки дар ин давраи ҷонишинии зуд бар империяи Сосонӣ ҳукумат кард кӣ буд?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "While the Sasanian court consumed itself, what was happening in the western desert?",
+      "question_fa": "وقتی دربارِ ساسانی خود را می‌خورد، در بیابانِ غربی چه می‌گذشت؟",
+      "question_tg": "Вақте дарбори сосонӣ худро мехӯрд, дар биёбони ғарбӣ чӣ мегузашт?",
       "answers": [
-        "Boran, daughter of Khosrow Parviz — the first woman to rule the Sasanian empire",
-        "Shirin, who claimed the throne after Shiruyeh's death using her status as queen",
-        "Azarmidokht, who ruled for three years and stabilized the western frontier",
-        "Gordafarid, a warrior princess from the eastern provinces who took power by force"
+        "Byzantium was massing for a final invasion of Iran",
+        "Nothing — the desert was empty until decades later",
+        "The Turks were building a new empire in Arabia",
+        "The Arab tribes had found a unifying force in Islam and were moving with a coherence the fractured court could not match"
       ],
       "answers_fa": [
-        "بوران، دختر خسرو پرویز — اولین زنی که بر امپراتوری ساسانی حکومت کرد",
-        "شیرین که پس از مرگ شیرویه با استفاده از موقعیتش به عنوان ملکه ادعای تخت کرد",
-        "آذرمیدخت که سه سال حکومت کرد و مرز غربی را ثابت کرد",
-        "گردآفرید، شاهزاده‌خانم جنگجو از استان‌های شرقی که با زور قدرت را به دست گرفت"
+        "بیزانس برای حمله‌ی نهایی به ایران نیرو جمع می‌کرد",
+        "هیچ — بیابان تا دهه‌ها بعد خالی بود",
+        "ترکان امپراتوریِ تازه‌ای در عربستان می‌ساختند",
+        "قبایلِ عرب در اسلام نیرویی وحدت‌بخش یافته بودند و با انسجامی حرکت می‌کردند که دربارِ ازهم‌گسیخته توانِ برابری‌اش را نداشت"
       ],
       "answers_tg": [
-        "Бурон, духтари Хусрави Парвез — аввалин занест ки бар империяи Сосонӣ ҳукумат кард",
-        "Ширин ки пас аз марги Шируяҳ бо истифода аз мавқеияш ҳамчун малика даъвои тахт кард",
-        "Озармедохт ки се сол ҳукумат кард ва сарҳади ғарбиро устувор кард",
-        "Гурдофарид, шаҳзодахонуми ҷангии аз устонҳои шарқӣ ки бо зӯр қудратро ба даст гирифт"
+        "Бизантия барои ҳамлаи ниҳоӣ ба Эрон нерӯ ҷамъ мекард",
+        "Ҳеҷ — биёбон то даҳсолаҳо баъд холӣ буд",
+        "Туркон империяи тозае дар Арабистон месохтанд",
+        "Қабилаҳои араб дар ислом нерӯе ваҳдатбахш ёфта буданд ва бо инсиҷоме ҳаракат мекарданд ки дарбори азҳамгусехта тавони баробариашро надошт"
+      ],
+      "correct_answer": 3,
+      "explanation": "Out in the western desert something was organizing: the Arab tribes, long mere raiders and traders on the border, had found a unifying force in Islam. Not yet an empire — but moving with a coherence the Sasanian court had lost.",
+      "explanation_fa": "قبایلِ عرب در اسلام وحدت یافته بودند و با انسجامی حرکت می‌کردند که تیسفون از دست داده بود.",
+      "explanation_tg": "Қабилаҳои араб дар ислом ваҳдат ёфта буданд ва бо инсиҷоме ҳаракат мекарданд ки Тайсафун аз даст дода буд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ccrw-m3",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What happened to the child-king Ardeshir III?",
+      "question_fa": "بر سرِ شاه‌کودک اردشیرِ سوم چه آمد؟",
+      "question_tg": "Бар сари шоҳкӯдак Ардашери Севум чӣ омад?",
+      "answers": [
+        "He fled to Byzantium and died in exile",
+        "He abdicated and became a priest",
+        "He ruled forty years and restored the empire",
+        "He lasted eighteen months before a general murdered him and sat on the throne himself for two"
+      ],
+      "answers_fa": [
+        "به بیزانس گریخت و در تبعید مُرد",
+        "کناره گرفت و موبد شد",
+        "چهل سال فرمان راند و امپراتوری را احیا کرد",
+        "هجده ماه دوام آورد تا سرداری کشتش و خود دو ماه بر تخت نشست"
+      ],
+      "answers_tg": [
+        "Ба Бизантия гурехт ва дар бадарға мурд",
+        "Канора гирифт ва мӯбад шуд",
+        "Чиҳил сол фармон ронд ва империяро эҳё кард",
+        "Ҳаждаҳ моҳ давом овард то сардоре кушташ ва худ ду моҳ бар тахт нишаст"
+      ],
+      "correct_answer": 3,
+      "explanation": "After Shiruyeh came Ardeshir III, a child, who lasted eighteen months before a general murdered him and took the throne for two months himself. The cycle of murder had become the constitution.",
+      "explanation_fa": "اردشیرِ سوم، کودکی، هجده ماه دوام آورد؛ سرداری کشتش و خود دو ماه نشست.",
+      "explanation_tg": "Ардашери Севум, кӯдаке, ҳаждаҳ моҳ давом овард; сардоре кушташ ва худ ду моҳ нишаст.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ccrw-m4",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What was the state of the army and treasury during the years of the crumbling crown?",
+      "question_fa": "در سال‌های فروریختنِ تاج، وضعِ ارتش و خزانه چه بود؟",
+      "question_tg": "Дар солҳои фурӯрехтани тоҷ, вазъи лашкар ва хазина чӣ буд?",
+      "answers": [
+        "The treasury had nothing left, and the army that had taken Jerusalem was scattered, unpaid, and loyal to no one",
+        "The army was strong but stationed too far east",
+        "The treasury was full but the army refused to fight",
+        "Both were intact but poorly led"
+      ],
+      "answers_fa": [
+        "خزانه چیزی نداشت و ارتشی که اورشلیم را گرفته بود پراکنده، بی‌مزد و بی‌وفادار به هیچ‌کس بود",
+        "ارتش نیرومند بود اما بیش از حد در شرق مستقر بود",
+        "خزانه پر بود اما ارتش از جنگ سر باز می‌زد",
+        "هر دو سالم اما بدرهبری‌شده بودند"
+      ],
+      "answers_tg": [
+        "Хазина чизе надошт ва лашкаре ки Ерусалимро гирифта буд пароканда, бемузд ва бевафодор ба ҳеҷ кас буд",
+        "Лашкар нерӯманд буд аммо беш аз ҳад дар шарқ мустақар буд",
+        "Хазина пур буд аммо лашкар аз ҷанг сар бозмезад",
+        "Ҳар ду солим аммо бадраҳбаришуда буданд"
       ],
       "correct_answer": 0,
-      "explanation": "Boran, daughter of Khosrow Parviz, was crowned queen — the first woman to sit on the Sasanian throne. She tried to negotiate with Byzantium and even offered to return the True Cross. She lasted about a year before the factional violence that was consuming the dynasty claimed her too.",
-      "explanation_fa": "بوران، دختر خسرو پرویز، به عنوان ملکه تاجگذاری شد — اولین زنی که بر تخت ساسانی نشست. تلاش کرد با بیزانس مذاکره کند و حتی پیشنهاد داد صلیب واقعی را برگرداند. حدود یک سال دوام آورد قبل از اینکه خشونت فرقه‌ای که سلسله را می‌بلعید او را هم بگیرد.",
-      "explanation_tg": "Бурон, духтари Хусрави Парвез, ҳамчун малика тоҷгузорӣ шуд — аввалин зане ки бар тахти Сосонӣ нишаст. Кӯшид бо Визонт музокира кунад ва ҳатто пешниҳод дод Салиби Воқеиро баргардонад.",
+      "explanation": "The treasury Khosrow had spent thirty years filling and two years emptying had nothing left. The army that had taken Jerusalem was scattered, unpaid, loyal to no one — Anushirvan's professional force inverted into its opposite.",
+      "explanation_fa": "خزانه خالی، ارتشِ فاتحِ اورشلیم پراکنده و بی‌مزد — وارونه‌ی ارتشِ حرفه‌ایِ انوشیروان.",
+      "explanation_tg": "Хазина холӣ, лашкари фотеҳи Ерусалим пароканда ва бемузд — воружаи лашкари касбии Ануширвон.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ccrw-m5",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Who was crowned in 632 CE, at the end of this chapter's events?",
+      "question_fa": "در پایانِ رویدادهای این فصل، در ۶۳۲ میلادی چه کسی تاج‌گذاری کرد؟",
+      "question_tg": "Дар поёни рӯйдодҳои ин боб, дар соли 632 мелодӣ кӣ тоҷгузорӣ кард?",
+      "answers": [
+        "Khosrow Parviz — restored after exile",
+        "Bahram Chubin's grandson",
+        "A Byzantine governor appointed by Heraclius",
+        "Yazdegerd III — a boy, the last of the blood, given a throne that had already lost its legs"
+      ],
+      "answers_fa": [
+        "خسرو پرویز — بازگردانده از تبعید",
+        "نوه‌ی بهرام چوبین",
+        "والی‌ای بیزانسی منصوبِ هراکلیوس",
+        "یزدگردِ سوم — پسری، آخرینِ خون، با تختی که از پیش پایه‌هایش را از دست داده بود"
+      ],
+      "answers_tg": [
+        "Хусрав Парвиз — бозгардонда аз бадарға",
+        "Набераи Баҳром Чӯбин",
+        "Волии бизантӣ мансуби Ҳераклиус",
+        "Яздагерди Севум — писаре, охирини хун, бо тахте ки аз пеш пояҳояшро аз даст дода буд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Yazdegerd III was crowned in 632 — a boy, the last of the Sasanian blood anyone could find, given a throne that had already lost its legs.",
+      "explanation_fa": "یزدگردِ سوم در ۶۳۲ تاج گرفت — پسری، آخرینِ خون، با تختی بی‌پایه.",
+      "explanation_tg": "Яздагерди Севум дар 632 тоҷ гирифт — писаре, охирини хун, бо тахте бепоя.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ccrw-h1",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "'The crumbling crown was not waiting to be knocked off. It was simply no longer attached to anything that could support its weight.' What claim about the fall of empires is made here?",
+      "question_fa": "«تاجِ فروریزنده منتظرِ سرنگونی نبود. صرفاً دیگر به چیزی متصل نبود که بتواند وزنش را نگه دارد.» چه ادعایی درباره‌ی سقوطِ امپراتوری‌ها این‌جا می‌شود؟",
+      "question_tg": "«Тоҷи фурӯрезанда мунтазири сарнагунӣ набуд. Сирфан дигар ба чизе муттасил набуд ки битавонад вазнашро нигоҳ дорад.» Чӣ даъвое дар бораи суқути империяҳо ин ҷо мешавад?",
+      "answers": [
+        "The crown was literally too heavy for the young king",
+        "Conquest does not topple healthy states — the empire had already destroyed its own foundations, and the Arabs arrived to find the work done",
+        "External enemies are always the true cause of collapse",
+        "Empires only fall to superior military technology"
+      ],
+      "answers_fa": [
+        "تاج عملاً برای شاهِ جوان بیش از حد سنگین بود",
+        "فتح دولت‌های سالم را سرنگون نمی‌کند — امپراتوری از پیش بنیادهای خود را نابود کرده بود و عرب‌ها رسیدند و کار را انجام‌شده یافتند",
+        "دشمنانِ خارجی همیشه علتِ راستینِ فروپاشی‌اند",
+        "امپراتوری‌ها فقط در برابرِ فناوریِ نظامیِ برتر سقوط می‌کنند"
+      ],
+      "answers_tg": [
+        "Тоҷ амалан барои шоҳи ҷавон беш аз ҳад сангин буд",
+        "Фатҳ давлатҳои солимро сарнагун намекунад — империя аз пеш бунёдҳои худро нобуд карда буд ва арабҳо расиданд ва корро анҷомшуда ёфтанд",
+        "Душманони хориҷӣ ҳамеша иллати ростини фурӯпошианд",
+        "Империяҳо танҳо дар баробари фанновариии низомии бартар суқут мекунанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The image removes the conqueror from the causal chain: nobody needed to knock the crown off, because nothing held it up. Legitimacy, army, treasury, succession — every support had been consumed from within. The Arab conquest, when it comes, is the occasion of the fall, not its cause.",
+      "explanation_fa": "تصویر فاتح را از زنجیره‌ی علّی حذف می‌کند: کسی لازم نبود تاج را بیندازد، چون چیزی نگهش نمی‌داشت.",
+      "explanation_tg": "Тасвир фотеҳро аз занҷираи иллӣ ҳазф мекунад: касе лозим набуд тоҷро андозад, зеро чизе нигаҳаш намедошт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ccrw-h2",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The Shahnameh watches these years 'with the eye of a chronicler who knows how it ends.' How does this foreknowledge shape the chapter's tone?",
+      "question_fa": "شاهنامه این سال‌ها را «با چشمِ تاریخ‌نگاری که می‌داند چگونه تمام می‌شود» می‌نگرد. این پیش‌آگاهی لحنِ فصل را چگونه شکل می‌دهد؟",
+      "question_tg": "Шоҳнома ин солҳоро «бо чашми таърихнигоре ки медонад чӣ гуна тамом мешавад» менигарад. Ин пешогоҳӣ лаҳни бобро чӣ гуна шакл медиҳад?",
+      "answers": [
+        "It removes all sympathy for the dying dynasty",
+        "It turns the chapter into pure invention, free of facts",
+        "Every event reads as symptom rather than drama — the poem narrates not 'what will happen?' but 'this is how an ending looks while it is happening'",
+        "It makes the chapter triumphant and celebratory"
+      ],
+      "answers_fa": [
+        "همه‌ی همدلی با دودمانِ در حالِ مرگ را می‌زداید",
+        "فصل را به جعلِ ناب، تهی از واقعیت، بدل می‌کند",
+        "هر رویداد نشانه خوانده می‌شود نه درام — شعر روایت نمی‌کند «چه خواهد شد؟» بلکه «پایان در حالِ رخ دادن چنین می‌نماید»",
+        "فصل را پیروزمندانه و جشن‌گونه می‌کند"
+      ],
+      "answers_tg": [
+        "Ҳамаи ҳамдилӣ бо дудмони дар ҳоли маргро мезудояд",
+        "Бобро ба ҷаъли ноб, тиҳӣ аз воқеият, бадал мекунад",
+        "Ҳар рӯйдод нишона хонда мешавад на драма — шеър ривоят намекунад «чӣ хоҳад шуд?» балки «поён дар ҳоли рух додан чунин менамояд»",
+        "Бобро пирӯзмандона ва ҷашнгуна мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Suspense requires an open future; the chronicler of 632 has none to offer. So each coup and plague-death is presented as a symptom of one disease. The tone — weary, precise, unsurprised — teaches the reader how collapse actually feels: not climactic, just accelerating.",
+      "explanation_fa": "تعلیق آینده‌ی گشوده می‌خواهد؛ تاریخ‌نگارِ ۶۳۲ ندارد. هر کودتا نشانه‌ی یک بیماری است — لحن: خسته، دقیق، بی‌شگفتی.",
+      "explanation_tg": "Таълиқ ояндаи кушода мехоҳад; таърихнигори 632 надорад. Ҳар кудато нишонаи як бемории аст — лаҳн: хаста, дақиқ, бешигифтӣ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ccrw-h3",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "'Generals killed kings. Kings lasted seasons.' What had broken at the structural level?",
+      "question_fa": "«سرداران شاه می‌کشتند. شاهان فصلی دوام می‌آوردند.» در سطحِ ساختاری چه شکسته بود؟",
+      "question_tg": "«Сардорон шоҳ мекуштанд. Шоҳон фасле давом меоварданд.» Дар сатҳи сохторӣ чӣ шикаста буд?",
+      "answers": [
+        "The machinery of legitimacy itself — once the throne could be taken by murder, the farr no longer marked anyone, and force became the only argument",
+        "Only the postal system had failed",
+        "The priests had withdrawn from politics",
+        "The dynasty had simply run out of male heirs"
+      ],
+      "answers_fa": [
+        "خودِ سازوکارِ مشروعیت — وقتی تخت با قتل گرفتنی شد، فرّ دیگر کسی را نشان نمی‌کرد و زور تنها استدلال شد",
+        "فقط نظامِ پستی از کار افتاده بود",
+        "روحانیان از سیاست کناره گرفته بودند",
+        "دودمان صرفاً وارثِ مذکر کم آورده بود"
+      ],
+      "answers_tg": [
+        "Худи созукори машруият — вақте тахт бо қатл гирифтанӣ шуд, фарр дигар касеро нишон намекард ва зӯр танҳо далел шуд",
+        "Танҳо низоми почта аз кор афтода буд",
+        "Коҳинон аз сиёсат канора гирифта буданд",
+        "Дудмон сирфан вориси музаккар кам оварда буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The farr system worked because everyone agreed the throne could not simply be seized. Shiruyeh's parricide broke the agreement; every general after him drew the obvious conclusion. Once legitimacy is shown to be takeable, it ceases to exist — what remains is an auction settled by knives.",
+      "explanation_fa": "نظامِ فرّ کار می‌کرد چون همه قبول داشتند تخت گرفتنی نیست. پدرکشیِ شیرویه توافق را شکست؛ مشروعیتِ گرفتنی دیگر مشروعیت نیست.",
+      "explanation_tg": "Низоми фарр кор мекард зеро ҳама қабул доштанд тахт гирифтанӣ нест. Падаркушии Шерӯя тавофуқро шикаст; машруияти гирифтанӣ дигар машруият нест.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ccrw-h4",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Yazdegerd III 'deserves' his own chapter, yet this chapter 'belongs to the falling.' What distinction is the Shahnameh drawing?",
+      "question_fa": "یزدگردِ سوم «سزاوارِ» فصلِ خودش است، اما این فصل «به فروافتادن تعلق دارد.» شاهنامه چه تمایزی می‌گذارد؟",
+      "question_tg": "Яздагерди Севум «сазовори» боби худаш аст, аммо ин боб «ба фурӯафтодан тааллуқ дорад.» Шоҳнома чӣ тамоюзе мегузорад?",
+      "answers": [
+        "Between legend and history",
+        "Between a process and a person — the falling is a structural event with its own narrative weight, separate from the fate of the boy who inherited its end",
+        "Between long reigns and short ones",
+        "Between Persian and Arab sources"
+      ],
+      "answers_fa": [
+        "میانِ افسانه و تاریخ",
+        "میانِ یک فرایند و یک شخص — فروافتادن رویدادی ساختاری با وزنِ روایی خودش است، جدا از سرنوشتِ پسری که پایانش را به ارث برد",
+        "میانِ سلطنت‌های بلند و کوتاه",
+        "میانِ منابعِ فارسی و عربی"
+      ],
+      "answers_tg": [
+        "Байни афсона ва таърих",
+        "Байни як фароянд ва як шахс — фурӯафтодан рӯйдоди сохторӣ бо вазни ривоии худаш аст, ҷудо аз сарнавишти писаре ки поёнашро ба мерос бурд",
+        "Байни салтанатҳои баланд ва кӯтоҳ",
+        "Байни манбаъҳои форсӣ ва арабӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh separates the collapse from its inheritor. The falling — eight rulers, civil war, an emptied center — is one story; the boy crowned at its end is another, and he deserves to be judged as a person, not as a symptom. The chapter division is itself an act of fairness.",
+      "explanation_fa": "شاهنامه فروپاشی را از وارثش جدا می‌کند: فروافتادن یک داستان است؛ پسری که در پایانش تاج گرفت داستانی دیگر.",
+      "explanation_tg": "Шоҳнома фурӯпоширо аз ворисаш ҷудо мекунад: фурӯафтодан як достон аст; писаре ки дар поёнаш тоҷ гирифт достоне дигар.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ccrw-h5",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The chapter invokes the whole line — 'built by Ardeshir, steadied by Shapur, brought to its peak by Anushirvan, stretched to its limits by Khosrow Parviz' — before saying the empire 'was now consuming itself.' Why rehearse the lineage at this moment?",
+      "question_fa": "این فصل پیش از گفتنِ این‌که امپراتوری «اکنون خود را می‌خورد»، کلِ سلسله را برمی‌شمارد — «ساخته‌ی اردشیر، استوارشده‌ی شاپور، به‌اوج‌رسیده‌ی انوشیروان، تا مرزها کشیده‌ی خسرو پرویز.» چرا در این لحظه تبارنامه مرور می‌شود؟",
+      "question_tg": "Ин боб пеш аз гуфтани ин ки империя «акнун худро мехӯрад», кулли силсиларо бармешуморад. Чаро дар ин лаҳза таборнома мурур мешавад?",
+      "answers": [
+        "To prove the early kings were responsible for the fall",
+        "To weigh the fall by everything being lost — four centuries of accumulated building are placed on the scale so the reader feels the full mass of what is being consumed",
+        "To pad the chapter to its required length",
+        "To argue the empire deserved its collapse"
+      ],
+      "answers_fa": [
+        "تا ثابت شود شاهانِ نخستین مسئولِ سقوط بودند",
+        "تا سقوط با همه‌ی آنچه از دست می‌رود سنجیده شود — چهار قرن ساختنِ انباشته بر ترازو گذاشته می‌شود تا خواننده تمامِ جرمِ آنچه را خورده می‌شود حس کند",
+        "تا فصل به درازای لازم برسد",
+        "تا استدلال شود امپراتوری سزاوارِ فروپاشی‌اش بود"
+      ],
+      "answers_tg": [
+        "То исбот шавад шоҳони нахустин масъули суқут буданд",
+        "То суқут бо ҳамаи он чи аз даст меравад санҷида шавад — чаҳор қарн сохтани анбошта бар тарозу гузошта мешавад то хонанда тамоми ҷирми он чиро хӯрда мешавад ҳис кунад",
+        "То боб ба дарозои лозим бирасад",
+        "То истидлол шавад империя сазовори фурӯпошияш буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "A fall is measured by the height. By naming each builder — founder, steadier, perfecter, overreacher — the chronicle stacks four centuries onto the scale before letting it crash. The lineage recital turns an administrative collapse into a felt bereavement.",
+      "explanation_fa": "سقوط با ارتفاع سنجیده می‌شود. نام بردنِ هر سازنده چهار قرن را بر ترازو می‌گذارد تا خواننده وزنِ ازدست‌رفته را حس کند.",
+      "explanation_tg": "Суқут бо иртифоъ санҷида мешавад. Ном бурдани ҳар созанда чаҳор қарнро бар тарозу мегузорад то хонанда вазни аздастрафтаро ҳис кунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ccrw-h6",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The Arabs were 'not yet an empire — not yet an army in the formal sense.' Why does the chapter stress this, while the Sasanians still nominally had both?",
+      "question_fa": "عرب‌ها «هنوز امپراتوری نبودند — هنوز ارتشی به معنای رسمی نبودند.» چرا فصل بر این تأکید می‌کند، در حالی که ساسانیان اسماً هر دو را داشتند؟",
+      "question_tg": "Арабҳо «ҳанӯз империя набуданд — ҳанӯз лашкаре ба маънои расмӣ набуданд.» Чаро боб бар ин таъкид мекунад, дар ҳоле ки сосониён исман ҳар дуро доштанд?",
+      "answers": [
+        "Because coherence beats inheritance — a moving, unified purpose outweighs the empty forms of state and army that the fractured court still owned on paper",
+        "Because the chapter doubts the conquest really happened",
+        "Because empires always defeat non-empires",
+        "Because the Arabs' informality made them militarily weak"
+      ],
+      "answers_fa": [
+        "چون انسجام بر میراث می‌چربد — مقصودی یگانه و در حرکت بر قالب‌های تهیِ دولت و ارتش که دربارِ ازهم‌گسیخته هنوز روی کاغذ داشت، برتری دارد",
+        "چون فصل در وقوعِ واقعیِ فتح تردید دارد",
+        "چون امپراتوری‌ها همیشه غیرامپراتوری‌ها را شکست می‌دهند",
+        "چون بی‌رسمیِ عرب‌ها از نظرِ نظامی ضعیفشان می‌کرد"
+      ],
+      "answers_tg": [
+        "Зеро инсиҷом бар мерос мечарбад — мақсуде ягона ва дар ҳаракат бар қолабҳои тиҳии давлат ва лашкар ки дарбори азҳамгусехта ҳанӯз рӯи коғаз дошт, бартарӣ дорад",
+        "Зеро боб дар вуқӯи воқеии фатҳ тардид дорад",
+        "Зеро империяҳо ҳамеша ғайриимперияҳоро шикаст медиҳанд",
+        "Зеро берасмии арабҳо аз назари низомӣ заъифашон мекард"
+      ],
+      "correct_answer": 0,
+      "explanation": "On paper the contest was absurd: a four-century empire against tribes without a state. The chapter inverts the paper: the Arabs had the one thing that cannot be inherited — coherence, a shared direction — and the Sasanians had everything except that. Institutions are stored power; coherence is live power.",
+      "explanation_fa": "روی کاغذ نبرد مضحک بود: امپراتوریِ چهارقرنه در برابرِ قبایل. اما عرب‌ها یگانه چیزِ ارث‌نگرفتنی را داشتند: انسجام.",
+      "explanation_tg": "Рӯи коғаз набард музҳик буд: империяи чаҳорқарна дар баробари қабилаҳо. Аммо арабҳо ягона чизи меросногирифтаниро доштанд: инсиҷом.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ccrw-h7",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Boran's peace policy was sensible, yet she failed. What does her year on the throne demonstrate?",
+      "question_fa": "سیاستِ صلحِ پوران‌دخت عاقلانه بود، اما شکست خورد. سالِ سلطنتش چه نشان می‌دهد؟",
+      "question_tg": "Сиёсати сулҳи Пурондухт оқилона буд, аммо шикаст хӯрд. Соли салтанаташ чӣ нишон медиҳад?",
+      "answers": [
+        "Right policy is worthless without a state to enforce it — by her time, no ruler could deliver what they signed",
+        "That the True Cross should never have been returned",
+        "That Byzantium never wanted peace at any price",
+        "That women could not rule in Sasanian law"
+      ],
+      "answers_fa": [
+        "سیاستِ درست بدونِ دولتی که اجرایش کند بی‌ارزش است — در روزگارِ او هیچ فرمانروایی نمی‌توانست آنچه را امضا می‌کرد تحویل دهد",
+        "این‌که صلیبِ راستین هرگز نباید بازگردانده می‌شد",
+        "این‌که بیزانس به هیچ قیمتی صلح نمی‌خواست",
+        "این‌که زنان در قانونِ ساسانی نمی‌توانستند فرمان برانند"
+      ],
+      "answers_tg": [
+        "Сиёсати дуруст бе давлате ки иҷрояш кунад беарзиш аст — дар рӯзгори ӯ ҳеҷ фармонравое наметавонист он чиро имзо мекард таҳвил диҳад",
+        "Ин ки Салиби Ростин ҳаргиз набояд бозгардонда мешуд",
+        "Ин ки Бизантия ба ҳеҷ қимате сулҳ намехост",
+        "Ин ки занон дар қонуни сосонӣ наметавонистанд фармон ронанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Boran diagnosed correctly and prescribed correctly — peace, retrenchment, the Cross returned. But a signature binds only when a state stands behind it, and hers had dissolved. Her failure isolates the tragedy of the period: by 630, wisdom had no instrument left to work with.",
+      "explanation_fa": "پوران‌دخت درست تشخیص داد و درست تجویز کرد — اما امضا فقط با دولتی پشتش الزام‌آور است، و دولتِ او حل شده بود.",
+      "explanation_tg": "Пурондухт дуруст ташхис дод ва дуруст таҷвиз кард — аммо имзо танҳо бо давлате пушташ илзомовар аст, ва давлати ӯ ҳал шуда буд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ccrw-h8",
+      "chapter_slug": "crumbling-crown",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The fall 'began with Shiruyeh's knife and ended in a miller's hut near Merv.' Why does the chronicle trace the empire's collapse to a single moral crime?",
+      "question_fa": "سقوط «با چاقوی شیرویه آغاز شد و در کلبه‌ی آسیابانی نزدیکِ مرو پایان یافت.» چرا تاریخ‌نگاری فروپاشیِ امپراتوری را به یک جنایتِ اخلاقیِ واحد بازمی‌گرداند؟",
+      "question_tg": "Суқут «бо корди Шерӯя оғоз шуд ва дар кулбаи осиёбоне наздики Марв поён ёфт.» Чаро таърихнигорӣ фурӯпошии империяро ба як ҷинояти ахлоқии воҳид бозмегардонад?",
+      "answers": [
+        "Because in the Shahnameh's moral physics, parricide poisons the source of legitimacy itself — every later disaster flows from the moment the dynasty turned its knife inward",
+        "Because Shiruyeh personally lost every later battle",
+        "Because the miller was Shiruyeh's descendant",
+        "Because single causes make better poetry than complex ones, even when false"
+      ],
+      "answers_fa": [
+        "چون در فیزیکِ اخلاقیِ شاهنامه، پدرکشی سرچشمه‌ی مشروعیت را مسموم می‌کند — هر فاجعه‌ی بعدی از لحظه‌ای جاری می‌شود که دودمان چاقویش را به درون چرخاند",
+        "چون شیرویه شخصاً همه‌ی نبردهای بعدی را باخت",
+        "چون آسیابان از نسلِ شیرویه بود",
+        "چون علت‌های واحد شعرِ بهتری می‌سازند، حتی وقتی نادرست‌اند"
+      ],
+      "answers_tg": [
+        "Зеро дар физикаи ахлоқии Шоҳнома, падаркушӣ сарчашмаи машруиятро масмум мекунад — ҳар фоҷиаи баъдӣ аз лаҳзае ҷорӣ мешавад ки дудмон кордашро ба дарун чархонд",
+        "Зеро Шерӯя шахсан ҳамаи набардҳои баъдиро бохт",
+        "Зеро осиёбон аз насли Шерӯя буд",
+        "Зеро иллатҳои воҳид шеъри беҳтаре месозанд, ҳатто вақте нодурустанд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh reads history morally: the dynasty did not die of plague or Arabs but of the moment a son killed his father for a crown. After that, no oath, succession or throne could be trusted — and twenty years later the last king died alone, the poison fully spread. The knife and the hut are one event, separated by time.",
+      "explanation_fa": "شاهنامه تاریخ را اخلاقی می‌خواند: دودمان از طاعون یا عرب نمرد، از لحظه‌ای مُرد که پسری پدر را برای تاج کشت.",
+      "explanation_tg": "Шоҳнома таърихро ахлоқӣ мехонад: дудмон аз тоъун ё араб намурд, аз лаҳзае мурд ки писаре падарро барои тоҷ кушт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

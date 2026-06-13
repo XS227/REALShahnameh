@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "mos-e1",
+      "id": "mosw-e1",
       "chapter_slug": "memory-over-sword",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "Which Iranian dynasty in the 9th–10th centuries deliberately revived Persian as a literary and administrative language?",
-      "question_fa": "کدام سلسله ایرانی در قرن‌های نهم و دهم عمداً فارسی را به عنوان زبان ادبی و اداری احیا کرد؟",
-      "question_tg": "Кадом сулолаи Эронӣ дар асрҳои нӯҳум ва даҳум қасдан Форсиро ҳамчун забони адабӣ ва идорӣ эҳё кард?",
+      "question": "Which dynasty deliberately patronized Persian poetry in the ninth and tenth centuries?",
+      "question_fa": "کدام دودمان در سده‌های نهم و دهم آگاهانه از شعرِ فارسی پشتیبانی کرد؟",
+      "question_tg": "Кадом дудмон дар садаҳои нӯҳум ва даҳум огоҳона аз шеъри форсӣ пуштибонӣ кард?",
       "answers": [
-        "The Samanids of Khorasan, who patronized Persian poetry as a deliberate political and cultural act",
-        "The Buyids of Fars, who restored Zoroastrian temples as a symbol of Sasanian continuity",
-        "The Tahirids of Khorasan, who compiled the first post-conquest Persian dictionary",
-        "The Saffarids of Sistan, who built the first new Persian-language library since the conquest"
+        "The Byzantine emperors",
+        "The Samanid rulers of Khorasan",
+        "The Ghaznavid sultans alone",
+        "The Abbasid caliphs of Baghdad"
       ],
       "answers_fa": [
-        "سامانیان خراسان که شعر فارسی را به عنوان یک کنش سیاسی و فرهنگی عمدی حمایت کردند",
-        "آل بویه پارس که آتشکده‌های زرتشتی را به عنوان نمادی از تداوم ساسانی احیا کردند",
-        "طاهریان خراسان که اولین فرهنگ‌لغت فارسی پس از فتح را تدوین کردند",
-        "صفاریان سیستان که اولین کتابخانه به زبان فارسی را از زمان فتح ساختند"
+        "امپراتورانِ بیزانس",
+        "فرمانروایانِ سامانیِ خراسان",
+        "فقط سلطان‌های غزنوی",
+        "خلفای عباسیِ بغداد"
       ],
       "answers_tg": [
-        "Сомониёни Хуросон ки шеъри Форсиро ҳамчун амали сиёсӣ ва фарҳангии қасдӣ ҳимоят карданд",
-        "Буяҳиёни Порс ки оташкадаҳои Зардуштиро ҳамчун рамзи идомаи Сосонӣ эҳё карданд",
-        "Тоҳириёни Хуросон ки аввалин луғати Форсии баъд аз фатҳро тадвин карданд",
-        "Саффориёни Сиистон ки аввалин китобхонаи ба забони Форсиро аз замони фатҳ сохтанд"
+        "Императорони Бизантия",
+        "Фармонравоёни сомонии Хуросон",
+        "Танҳо султонҳои ғазнавӣ",
+        "Халифаҳои аббосии Бағдод"
       ],
-      "correct_answer": 0,
-      "explanation": "The Samanid rulers of Khorasan in the 9th and 10th centuries patronized Persian poetry deliberately as a political and cultural act — asserting Iranian identity within the Islamic world. Ferdowsi was born into this Samanid revival and the Shahnameh was its crowning achievement.",
-      "explanation_fa": "حاکمان سامانی خراسان در قرن‌های نهم و دهم عمداً شعر فارسی را به عنوان کنش سیاسی و فرهنگی حمایت کردند — تأکید بر هویت ایرانی در دنیای اسلامی. فردوسی در این احیای سامانی متولد شد و شاهنامه برجسته‌ترین دستاورد آن بود.",
-      "explanation_tg": "Ҳокимони Сомонии Хуросон дар асрҳои нӯҳум ва даҳум қасдан шеъри Форсиро ҳамчун амали сиёсӣ ва фарҳангӣ ҳимоят карданд. Фирдавсӣ дар ин эҳёи Сомонӣ таваллуд шуд ва шоҳнома дастоварди авҷи он буд.",
+      "correct_answer": 1,
+      "explanation": "The Samanid rulers of Khorasan patronized Persian poetry deliberately in the ninth and tenth centuries, as a political and cultural act. The language returned to courts and chanceries.",
+      "explanation_fa": "سامانیانِ خراسان آگاهانه از شعرِ فارسی پشتیبانی کردند — اقدامی سیاسی و فرهنگی.",
+      "explanation_tg": "Сомониёни Хуросон огоҳона аз шеъри форсӣ пуштибонӣ карданд — иқдоме сиёсӣ ва фарҳангӣ.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "mos-m1",
+      "id": "mosw-e2",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Where did Persian retreat to after the Arab conquest?",
+      "question_fa": "فارسی پس از فتحِ عرب به کجا عقب نشست؟",
+      "question_tg": "Форсӣ пас аз фатҳи араб ба куҷо ақиб нишаст?",
+      "answers": [
+        "Into the mosques and official chanceries",
+        "Into Byzantine territory",
+        "Into households, oral poetry, the mountains and the eastern provinces",
+        "It vanished entirely for two centuries"
+      ],
+      "answers_fa": [
+        "به مسجدها و دیوان‌های رسمی",
+        "به قلمروِ بیزانس",
+        "به خانه‌ها، شعرِ شفاهی، کوه‌ها و استان‌های شرقی",
+        "برای دو قرن به‌کلی ناپدید شد"
+      ],
+      "answers_tg": [
+        "Ба масҷидҳо ва девонҳои расмӣ",
+        "Ба қаламрави Бизантия",
+        "Ба хонаҳо, шеъри шифоҳӣ, кӯҳҳо ва вилоятҳои шарқӣ",
+        "Барои ду қарн ба куллӣ нопадид шуд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Persian did not disappear — it retreated into households, oral poetry, the mountains and the eastern provinces where Arabic administration had arrived but not yet taken root in the culture.",
+      "explanation_fa": "فارسی ناپدید نشد — به خانه‌ها، شعرِ شفاهی، کوه‌ها و شرق عقب نشست.",
+      "explanation_tg": "Форсӣ нопадид нашуд — ба хонаҳо, шеъри шифоҳӣ, кӯҳҳо ва шарқ ақиб нишаст.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "mosw-e3",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What was Ferdowsi's relationship to the Persian revival, according to the chapter?",
+      "question_fa": "طبقِ این فصل، نسبتِ فردوسی با احیای فارسی چه بود؟",
+      "question_tg": "Тибқи ин боб, нисбати Фирдавсӣ бо эҳёи форсӣ чӣ буд?",
+      "answers": [
+        "He did not invent the recovery — he completed it",
+        "He arrived a century after it ended",
+        "He opposed it in favor of Arabic",
+        "He started it alone from nothing"
+      ],
+      "answers_fa": [
+        "او بازیابی را اختراع نکرد — کاملش کرد",
+        "یک قرن پس از پایانش رسید",
+        "به سودِ عربی با آن مخالفت کرد",
+        "به‌تنهایی از هیچ آغازش کرد"
+      ],
+      "answers_tg": [
+        "Ӯ бозёбиро ихтироъ накард — комилаш кард",
+        "Як қарн пас аз поёнаш расид",
+        "Ба суди арабӣ бо он мухолифат кард",
+        "Ба танҳоӣ аз ҳеҷ оғозаш кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ferdowsi was born into a Persian revival that had been building for a hundred years. He did not invent the recovery; he completed it — the Shahnameh was the culmination of the Samanid project.",
+      "explanation_fa": "فردوسی در میانه‌ی احیایی صدساله زاده شد؛ بازیابی را اختراع نکرد — کاملش کرد.",
+      "explanation_tg": "Фирдавсӣ дар миёнаи эҳёе садсола зода шуд; бозёбиро ихтироъ накард — комилаш кард.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "mosw-m1",
       "chapter_slug": "memory-over-sword",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "The Shahnameh argues that memory won over the sword after the Arab conquest. What specific mechanism made this possible?",
-      "question_fa": "شاهنامه استدلال می‌کند که حافظه پس از فتح عرب بر شمشیر پیروز شد. چه مکانیزم خاصی این را ممکن کرد؟",
-      "question_tg": "Шоҳнома истдлол мекунад ки хотира пас аз фатҳи Арабӣ бар шамшер ғолиб шуд. Кадом механизми мушаххас инро имконпазир кард?",
+      "question": "Why did the Samanids patronize Persian poetry?",
+      "question_fa": "چرا سامانیان از شعرِ فارسی پشتیبانی کردند؟",
+      "question_tg": "Чаро Сомониён аз шеъри форсӣ пуштибонӣ карданд?",
       "answers": [
-        "Specific people in each generation chose to carry the language and stories forward — oral poets, families, scribes — until Persian re-emerged as a literary language",
-        "The Zoroastrian priests encoded the Avesta in secret symbols that Arab authorities could not decipher",
-        "Persian merchants kept their language alive in trade documents that looked like Arabic from the outside",
-        "The mountainous terrain of Iran physically prevented Arab armies from reaching all communities"
+        "Purely for entertainment at feasts",
+        "Because Arabic poetry had been banned",
+        "Because the caliph ordered it",
+        "As a deliberate political and cultural act — regional dynasties looking for ways to express their own identities"
       ],
       "answers_fa": [
-        "افراد خاصی در هر نسل انتخاب کردند زبان و داستان‌ها را به جلو حمل کنند — شاعران شفاهی، خانواده‌ها، کاتبان — تا اینکه فارسی دوباره به عنوان زبان ادبی ظهور کرد",
-        "روحانیون زرتشتی اوستا را در نمادهای مخفی رمزنگاری کردند که مقامات عربی نمی‌توانستند آن را رمزگشایی کنند",
-        "تجار ایرانی زبانشان را در اسناد تجاری زنده نگه داشتند که از خارج شبیه عربی به نظر می‌رسید",
-        "زمین کوهستانی ایران فیزیکی از رسیدن سپاه عرب به همه جوامع جلوگیری کرد"
+        "صرفاً برای سرگرمی در بزم‌ها",
+        "چون شعرِ عربی ممنوع شده بود",
+        "چون خلیفه فرمان داد",
+        "به‌مثابهِ اقدامی آگاهانه‌ی سیاسی و فرهنگی — دودمان‌های منطقه‌ای در پیِ راه‌هایی برای بیانِ هویتِ خود"
       ],
       "answers_tg": [
-        "Одамони мушаххасе дар ҳар насл интихоб карданд забон ва достонҳоро ба пеш ҳамл кунанд — шоирони шифоҳӣ, оилаҳо, котибон — то Форсӣ дубора ҳамчун забони адабӣ зоҳир шуд",
-        "Рӯҳониёни Зардуштӣ Авесторо дар рамзҳои пинҳонӣ рамзбандӣ карданд ки мақомоти Арабӣ натавонистанд онро рамзкушоӣ кунанд",
-        "Тоҷирони Эронӣ забонашонро дар ҳуҷҷатҳои тиҷоратӣ зинда нигоҳ доштанд ки аз берун монанди Арабӣ ба назар мерасид",
-        "Замини кӯҳии Эрон физикӣ аз расидани артишҳои Арабӣ ба ҳамаи ҷамоатҳо пешгирӣ кард"
+        "Сирфан барои саргармӣ дар базмҳо",
+        "Зеро шеъри арабӣ мамнӯъ шуда буд",
+        "Зеро халифа фармон дод",
+        "Ба мисоли иқдоме огоҳонаи сиёсӣ ва фарҳангӣ — дудмонҳои минтақавӣ дар паи роҳҳое барои баёни ҳувияти худ"
       ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh insists memory does not automatically survive — it survives because specific people made specific choices to carry it forward. The oral poets who kept stories alive, the families who preserved old names and customs, the Samanid rulers who funded Persian poetry: each link in the chain was a choice, not an inevitability.",
-      "explanation_fa": "شاهنامه اصرار دارد حافظه به طور خودکار باقی نمی‌ماند — به این دلیل باقی می‌ماند که افراد خاصی انتخاب‌های خاصی برای حمل آن به جلو کردند. شاعران شفاهی که داستان‌ها را زنده نگه داشتند، خانواده‌هایی که اسامی و آداب قدیمی را حفظ کردند، حاکمان سامانی که شعر فارسی را تأمین مالی کردند: هر حلقه در زنجیر یک انتخاب بود نه یک اجتناب‌ناپذیری.",
-      "explanation_tg": "Шоҳнома исрор мекунад хотира ба таври худкор боқӣ намемонад — ба ин далел боқӣ мемонад ки одамони мушаххасе интихобҳои мушаххасе барои ҳамл кардани он ба пеш карданд.",
+      "correct_answer": 3,
+      "explanation": "When the Abbasid caliphate gave way to regional dynasties, those dynasties began looking for ways to express their own identities. The Samanids patronized Persian deliberately — language as a political and cultural act.",
+      "explanation_fa": "دودمان‌های منطقه‌ای در پیِ بیانِ هویتِ خود بودند — پشتیبانی از فارسی اقدامی سیاسی و فرهنگی بود.",
+      "explanation_tg": "Дудмонҳои минтақавӣ дар паи баёни ҳувияти худ буданд — пуштибонӣ аз форсӣ иқдоме сиёсӣ ва фарҳангӣ буд.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "mos-e2",
+      "id": "mosw-m2",
       "chapter_slug": "memory-over-sword",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "The Shahnameh was the culmination of a broader Persian cultural revival. What was the name of this revival period?",
-      "question_fa": "شاهنامه اوج یک احیای فرهنگی گسترده‌تر ایرانی بود. نام این دوره احیا چه بود؟",
-      "question_tg": "Шоҳнома авҷи эҳёи фарҳангии густурдатари Эронӣ буд. Номи ин давраи эҳё чӣ буд?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What did the Shahnameh prove about the Persian language?",
+      "question_fa": "شاهنامه درباره‌ی زبانِ فارسی چه چیزی را ثابت کرد؟",
+      "question_tg": "Шоҳнома дар бораи забони форсӣ чӣ чизеро исбот кард?",
       "answers": [
-        "The Samanid renaissance — when Persian re-emerged as a literary language under Iranian rulers in Khorasan",
-        "The Abbasid golden age — when Arabic and Persian scholars worked together in Baghdad",
-        "The Buyid restoration — when Shia Islam gave Persians political power in western Iran",
-        "The Seljuk flowering — when Turkish rulers funded Persian poetry as court entertainment"
+        "That Persian needed Arabic loanwords to function",
+        "That Persian could sustain a monument on the scale that Arabic had achieved in the Quran — and that the old stories had not been forgotten",
+        "That Persian was older than every other language",
+        "That Persian poetry required royal patronage to exist"
       ],
       "answers_fa": [
-        "رنسانس سامانی — وقتی فارسی تحت حاکمان ایرانی در خراسان دوباره به عنوان زبان ادبی ظهور کرد",
-        "عصر طلایی عباسی — وقتی دانشمندان عربی و ایرانی در بغداد با هم کار کردند",
-        "احیای آل بویه — وقتی اسلام شیعه به ایرانیان قدرت سیاسی در غرب ایران داد",
-        "شکوفایی سلجوقی — وقتی حاکمان ترک شعر فارسی را به عنوان سرگرمی دربار تأمین مالی کردند"
+        "که فارسی برای کار کردن به وام‌واژه‌های عربی نیاز داشت",
+        "که فارسی می‌تواند بنایی در مقیاسی که عربی در قرآن به آن رسیده بود نگه دارد — و داستان‌های کهن فراموش نشده بودند",
+        "که فارسی از هر زبانِ دیگری کهن‌تر بود",
+        "که شعرِ فارسی بدونِ حمایتِ شاهی نمی‌توانست وجود داشته باشد"
       ],
       "answers_tg": [
-        "Эҳёи Сомонӣ — вақте Форсӣ зери ҳокимони Эронӣ дар Хуросон дубора ҳамчун забони адабӣ зоҳир шуд",
-        "Асри тиллоии Аббосӣ — вақте олимони Арабӣ ва Эронӣ дар Бағдод якҷо кор карданд",
-        "Эҳёи Буяҳӣ — вақте Исломи Шиа ба Эрониён қудрати сиёсӣ дар ғарби Эрон дод",
-        "Шукуфоии Салҷуқӣ — вақте ҳокимони Турк шеъри Форсиро ҳамчун тафриҳи дарбор маблағгузорӣ карданд"
+        "Ки форсӣ барои кор кардан ба вомвожаҳои арабӣ ниёз дошт",
+        "Ки форсӣ метавонад биное дар миқёсе ки арабӣ дар Қуръон ба он расида буд нигоҳ дорад — ва достонҳои куҳан фаромӯш нашуда буданд",
+        "Ки форсӣ аз ҳар забони дигаре куҳантар буд",
+        "Ки шеъри форсӣ бе ҳимояти шоҳӣ наметавонист вуҷуд дошта бошад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh proved Persian could sustain a monument of the scale Arabic had achieved in the Quran — that the civilization interrupted by the conquest was still present in the language and memory of its speakers.",
+      "explanation_fa": "شاهنامه ثابت کرد فارسی می‌تواند بنایی در مقیاسِ قرآنِ عربی نگه دارد — و تمدن هنوز در زبان زنده است.",
+      "explanation_tg": "Шоҳнома исбот кард форсӣ метавонад биное дар миқёси Қуръони арабӣ нигоҳ дорад — ва тамаддун ҳанӯз дар забон зинда аст.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "mosw-m3",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Under what condition does memory outlast swords and empires, according to the chapter's opening?",
+      "question_fa": "طبقِ آغازِ این فصل، حافظه در چه شرایطی از شمشیرها و امپراتوری‌ها بیشتر می‌پاید؟",
+      "question_tg": "Тибқи оғози ин боб, ҳофиза дар чӣ шароите аз шамшерҳо ва империяҳо бештар мепояд?",
+      "answers": [
+        "Only when an empire sponsors it",
+        "Automatically — memory always survives by itself",
+        "Only if someone tends it — if in each generation someone decides the work of remembering is worth doing even unpaid and unasked",
+        "Only when it is carved in stone"
+      ],
+      "answers_fa": [
+        "فقط وقتی امپراتوری‌ای حمایتش کند",
+        "خودکار — حافظه همیشه خودبه‌خود می‌ماند",
+        "فقط اگر کسی از آن مراقبت کند — اگر در هر نسل کسی تصمیم بگیرد کارِ یادآوری ارزشش را دارد، حتی بی‌مزد و بی‌سفارش",
+        "فقط وقتی در سنگ حک شود"
+      ],
+      "answers_tg": [
+        "Танҳо вақте империяе ҳимояташ кунад",
+        "Худкор — ҳофиза ҳамеша худ ба худ мемонад",
+        "Танҳо агар касе аз он муроқибат кунад — агар дар ҳар насл касе тасмим бигирад кори ёдоварӣ арзишашро дорад, ҳатто бемузд ва бесупориш",
+        "Танҳо вақте дар санг ҳак шавад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Swords rust, empires end, armies forget — memory is more durable than all of them, but only if someone tends it, in each generation, even when no one is paying and no court is asking.",
+      "explanation_fa": "شمشیر زنگ می‌زند، امپراتوری تمام می‌شود — حافظه می‌ماند، اما فقط اگر در هر نسل کسی از آن مراقبت کند.",
+      "explanation_tg": "Шамшер занг мезанад, империя тамом мешавад — ҳофиза мемонад, аммо танҳо агар дар ҳар насл касе аз он муроқибат кунад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "mosw-m4",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What did Persian carry with it when it returned to courts and chanceries?",
+      "question_fa": "وقتی فارسی به دربارها و دیوان‌ها بازگشت، چه چیزی را با خود آورد؟",
+      "question_tg": "Вақте форсӣ ба дарборҳо ва девонҳо баргашт, чӣ чизеро бо худ овард?",
+      "answers": [
+        "Everything that had been stored in it during the two centuries of official Arabic dominance",
+        "Only religious terminology",
+        "Nothing — it returned empty and had to be rebuilt",
+        "Only administrative vocabulary"
+      ],
+      "answers_fa": [
+        "همه‌ی آنچه در دو قرنِ چیرگیِ رسمیِ عربی در آن اندوخته شده بود",
+        "فقط اصطلاحاتِ دینی",
+        "هیچ — تهی بازگشت و باید از نو ساخته می‌شد",
+        "فقط واژگانِ دیوانی"
+      ],
+      "answers_tg": [
+        "Ҳамаи он чи дар ду қарни чирагии расмии арабӣ дар он андӯхта шуда буд",
+        "Танҳо истилоҳоти динӣ",
+        "Ҳеҷ — тиҳӣ баргашт ва бояд аз нав сохта мешуд",
+        "Танҳо вожагони девонӣ"
       ],
       "correct_answer": 0,
-      "explanation": "The Samanid dynasty of Khorasan (819–999 CE) created the first Iranian-ruled state after the Arab conquest that deliberately used Persian as a language of power and culture. This Samanid renaissance gave birth to a tradition of Persian poetry that the Shahnameh both continued and culminated.",
-      "explanation_fa": "سلسله سامانی خراسان (۸۱۹-۹۹۹ م.) اولین دولت با حاکمان ایرانی پس از فتح عرب را ایجاد کرد که عمداً از فارسی به عنوان زبان قدرت و فرهنگ استفاده کرد. این رنسانس سامانی سنتی از شعر فارسی را که شاهنامه هم ادامه و هم اوج آن بود به وجود آورد.",
-      "explanation_tg": "Сулолаи Сомонии Хуросон (819–999 милодӣ) аввалин давлати ҳокимони Эрониро пас аз фатҳи Арабӣ эҷод кард ки қасдан аз Форсӣ ҳамчун забони қудрат ва фарҳанг истифода кард.",
+      "explanation": "When Persian came back to courts and chanceries, it carried with it everything that had been stored in it during the two centuries of official Arabic dominance — the stories, the memory, the identity.",
+      "explanation_fa": "فارسی با همه‌ی آنچه در دو قرن در آن اندوخته شده بود بازگشت — داستان‌ها، حافظه، هویت.",
+      "explanation_tg": "Форсӣ бо ҳамаи он чи дар ду қарн дар он андӯхта шуда буд баргашт — достонҳо, ҳофиза, ҳувият.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "mosw-m5",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "How did memory 'win,' in the chapter's closing image?",
+      "question_fa": "در تصویرِ پایانیِ فصل، حافظه چگونه «پیروز شد»؟",
+      "question_tg": "Дар тасвири поёнии боб, ҳофиза чӣ гуна «пирӯз шуд»?",
+      "answers": [
+        "By raising armies against the caliphate",
+        "By erasing all trace of Arabic from Iran",
+        "By converting the conquerors to Zoroastrianism",
+        "Not by fighting — by being told again and again until the telling became the tradition, the tradition became the identity, and the identity became stronger than any army"
+      ],
+      "answers_fa": [
+        "با بسیجِ ارتش‌ها علیه خلافت",
+        "با زدودنِ هر نشانی از عربی از ایران",
+        "با گرواندنِ فاتحان به دینِ زرتشتی",
+        "نه با جنگ — با بازگفته شدن دوباره و دوباره تا بازگفت سنت شد، سنت هویت شد و هویت از هر ارتشی نیرومندتر شد"
+      ],
+      "answers_tg": [
+        "Бо басиҷи лашкарҳо алайҳи хилофат",
+        "Бо зудудани ҳар нишоне аз арабӣ аз Эрон",
+        "Бо гаравондани фотеҳон ба дини зардуштӣ",
+        "На бо ҷанг — бо бозгуфта шудан дубора ва дубора то бозгуфт суннат шуд, суннат ҳувият шуд ва ҳувият аз ҳар лашкаре нерӯмандтар шуд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Memory won not by fighting — the swords were gone — but by the simple act of being told again, and again, until the telling became the tradition and the tradition became the identity, stronger than any army that ever tried to replace it.",
+      "explanation_fa": "حافظه با جنگ پیروز نشد — با بازگفته شدن، تا بازگفت سنت شد و سنت هویت.",
+      "explanation_tg": "Ҳофиза бо ҷанг пирӯз нашуд — бо бозгуфта шудан, то бозгуфт суннат шуд ва суннат ҳувият.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "mosw-h1",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "'Swords rust... Memory is more durable than any of these, but only if someone tends it.' What makes this claim about durability conditional rather than triumphant?",
+      "question_fa": "«شمشیرها زنگ می‌زنند... حافظه از همه‌ی این‌ها پاینده‌تر است، اما فقط اگر کسی از آن مراقبت کند.» چه چیزی این ادعای پایندگی را مشروط می‌کند نه پیروزمندانه؟",
+      "question_tg": "«Шамшерҳо занг мезананд... Ҳофиза аз ҳамаи инҳо пояндатар аст, аммо танҳо агар касе аз он муроқибат кунад.» Чӣ чизе ин даъвои пояндагиро машрут мекунад на пирӯзмандона?",
+      "answers": [
+        "Memory is actually weaker than swords",
+        "The condition is rhetorical; memory survives regardless",
+        "Memory's durability is not a property but a labor — it survives only through continuous human choice, which means it can always still be lost",
+        "Durability depends only on writing technology"
+      ],
+      "answers_fa": [
+        "حافظه در واقع از شمشیرها ضعیف‌تر است",
+        "شرط بلاغی است؛ حافظه به هر حال می‌ماند",
+        "پایندگیِ حافظه ویژگی نیست بلکه کار است — فقط با انتخابِ پیوسته‌ی انسانی می‌ماند، یعنی همیشه هنوز می‌تواند از دست برود",
+        "پایندگی فقط به فناوریِ نوشتن بسته است"
+      ],
+      "answers_tg": [
+        "Ҳофиза дар воқеъ аз шамшерҳо заъифтар аст",
+        "Шарт балоғист; ҳофиза ба ҳар ҳол мемонад",
+        "Пояндагии ҳофиза вижагӣ нест балки кор аст — танҳо бо интихоби пайвастаи инсонӣ мемонад, яъне ҳамеша ҳанӯз метавонад аз даст биравад",
+        "Пояндагӣ танҳо ба фанноварии навиштан баста аст"
+      ],
+      "correct_answer": 2,
+      "explanation": "Stone endures by nature; memory endures by decision — renewed in every generation or lost in one. The 'only if' keeps the chapter honest: nothing about survival was automatic. The Shahnameh exists because specific people, in each century, chose the unpaid work. The same condition still applies — including to the reader.",
+      "explanation_fa": "سنگ به طبع می‌ماند؛ حافظه به تصمیم — در هر نسل تازه می‌شود یا در یکی گم. «فقط اگر» فصل را صادق نگه می‌دارد.",
+      "explanation_tg": "Санг ба табъ мемонад; ҳофиза ба тасмим — дар ҳар насл тоза мешавад ё дар яке гум. «Танҳо агар» бобро содиқ нигоҳ медорад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mosw-h2",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Why does the chapter stress that the Persian revival 'had been building for a hundred years' before Ferdowsi?",
+      "question_fa": "چرا فصل تأکید می‌کند که احیای فارسی پیش از فردوسی «صد سال در حالِ ساخته شدن بود»؟",
+      "question_tg": "Чаро боб таъкид мекунад ки эҳёи форсӣ пеш аз Фирдавсӣ «сад сол дар ҳоли сохта шудан буд»?",
+      "answers": [
+        "To prove the Samanids wrote most of the Shahnameh",
+        "To correct the lone-genius myth — cultural rescue is a relay of many hands, and Ferdowsi's greatness was to run the final leg, not the whole race",
+        "To date the poem more precisely",
+        "To diminish Ferdowsi's achievement"
+      ],
+      "answers_fa": [
+        "برای اثباتِ این‌که سامانیان بیشترِ شاهنامه را نوشتند",
+        "برای تصحیحِ اسطوره‌ی نابغه‌ی تنها — نجاتِ فرهنگی امدادی از دستانِ بسیار است و بزرگیِ فردوسی دویدنِ واپسین پاره بود، نه کلِ مسابقه",
+        "برای تاریخ‌گذاریِ دقیق‌ترِ شعر",
+        "برای کوچک کردنِ دستاوردِ فردوسی"
+      ],
+      "answers_tg": [
+        "Барои исботи ин ки Сомониён бештари Шоҳномаро навиштанд",
+        "Барои тасҳеҳи устураи нобиғаи танҳо — наҷоти фарҳангӣ имдоде аз дастони бисёр аст ва бузургии Фирдавсӣ давидани вопасин пора буд, на кулли мусобиқа",
+        "Барои таърихгузории дақиқтари шеър",
+        "Барои хурд кардани дастоварди Фирдавсӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "The myth of one man saving a language flatters genius but falsifies how survival works. Before Ferdowsi there were the households that kept speaking, the poets the Samanids paid, the compilers of prose Shahnamehs. He completed a structure whose foundations others had laid — which dignifies rather than diminishes him: completion was the hardest leg.",
+      "explanation_fa": "اسطوره‌ی یک مردِ نجات‌بخش نبوغ را می‌ستاید اما سازوکارِ بقا را جعل می‌کند — فردوسی واپسین پاره‌ی امداد را دوید.",
+      "explanation_tg": "Устураи як марди наҷотбахш нубуғро меситояд аммо созукори бақоро ҷаъл мекунад — Фирдавсӣ вопасин пораи имдодро давид.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mosw-h3",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The chapter describes things being 'stored in' the Persian language during two centuries of Arabic dominance. What does it mean for a language to store a civilization?",
+      "question_fa": "این فصل از چیزهایی می‌گوید که در دو قرنِ چیرگیِ عربی «در زبانِ فارسی اندوخته شدند». این‌که زبانی تمدنی را بیندوزد یعنی چه؟",
+      "question_tg": "Ин боб аз чизҳое мегӯяд ки дар ду қарни чирагии арабӣ «дар забони форсӣ андӯхта шуданд». Ин ки забоне тамаддунеро бияндӯзад яъне чӣ?",
+      "answers": [
+        "Only formal poetry can store anything",
+        "It means the language was written down and locked in vaults",
+        "Languages physically contain written archives",
+        "A language carries worldview in its words, stories in its idioms, memory in its names — speak it and the civilization rides along, even with the state long gone"
+      ],
+      "answers_fa": [
+        "فقط شعرِ رسمی می‌تواند چیزی بیندوزد",
+        "یعنی زبان نوشته و در گنجینه‌ها قفل شد",
+        "زبان‌ها بایگانی‌های مکتوب را عملاً درونِ خود دارند",
+        "زبان جهان‌بینی را در واژه‌ها، داستان‌ها را در اصطلاح‌ها و حافظه را در نام‌ها حمل می‌کند — آن را بگو و تمدن همراهش می‌آید، حتی وقتی دولت دیری است رفته"
+      ],
+      "answers_tg": [
+        "Танҳо шеъри расмӣ метавонад чизе бияндӯзад",
+        "Яъне забон навишта ва дар ганҷинаҳо қуфл шуд",
+        "Забонҳо бойгониҳои мактубро амалан даруни худ доранд",
+        "Забон ҷаҳонбиниро дар вожаҳо, достонҳоро дар истилоҳҳо ва ҳофизаро дар номҳо ҳамл мекунад — онро бигӯ ва тамаддун ҳамроҳаш меояд, ҳатто вақте давлат дерест рафта"
+      ],
+      "correct_answer": 3,
+      "explanation": "A language is a civilization's most compact archive: every proverb assumes a history, every name carries a story, every metaphor encodes a way of seeing. For two centuries Persian had no state, no court, no chancery — but everyone who spoke it at home was, unknowingly, maintaining the vault. The revival simply unlocked it.",
+      "explanation_fa": "زبان فشرده‌ترین بایگانیِ تمدن است: هر مثل تاریخی فرض می‌کند، هر نام داستانی دارد. دو قرن هر فارسی‌گو ندانسته گنجینه را نگه داشت.",
+      "explanation_tg": "Забон фушурдатарин бойгонии тамаддун аст: ҳар масал таърихеро фарз мекунад, ҳар ном достоне дорад. Ду қарн ҳар форсигӯ надониста ганҷинаро нигоҳ дошт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mosw-h4",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Why did the Persian revival need the rise of regional dynasties to take off?",
+      "question_fa": "چرا احیای فارسی برای اوج گرفتن به برآمدنِ دودمان‌های منطقه‌ای نیاز داشت؟",
+      "question_tg": "Чаро эҳёи форсӣ барои авҷ гирифтан ба баромадани дудмонҳои минтақавӣ ниёз дошт?",
+      "answers": [
+        "Because only kings can speak languages into existence",
+        "Memory needs patrons as well as keepers — when dynasties sought identities distinct from the caliphate, Persian was the identity waiting to be funded",
+        "It did not need them; the dating is coincidence",
+        "Because the caliphate had made Persian illegal until then"
+      ],
+      "answers_fa": [
+        "چون فقط شاهان می‌توانند زبان‌ها را به هستی بیاورند",
+        "حافظه علاوه بر نگهبان به حامی هم نیاز دارد — وقتی دودمان‌ها هویتی جدا از خلافت می‌جستند، فارسی همان هویتِ آماده‌ی حمایت بود",
+        "نیازی نداشت؛ هم‌زمانی تصادفی است",
+        "چون خلافت تا آن زمان فارسی را غیرقانونی کرده بود"
+      ],
+      "answers_tg": [
+        "Зеро танҳо шоҳон метавонанд забонҳоро ба ҳастӣ биёваранд",
+        "Ҳофиза илова бар нигаҳбон ба ҳомӣ ҳам ниёз дорад — вақте дудмонҳо ҳувияте ҷудо аз хилофат меҷустанд, форсӣ ҳамон ҳувияти омодаи ҳимоят буд",
+        "Ниёзе надошт; ҳамзамонӣ тасодуфист",
+        "Зеро хилофат то он замон форсиро ғайриқонунӣ карда буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Households kept Persian alive, but revival — courts, chanceries, paid poets, monumental projects — requires resources. The Samanids needed to be something other than provincial Arabs; Persian needed funding to scale from survival to monument. The need was mutual, and the Shahnameh is what the bargain ultimately purchased.",
+      "explanation_fa": "خانه‌ها زبان را زنده نگه داشتند، اما احیا منابع می‌خواهد. سامانیان هویت می‌خواستند؛ فارسی حامی — معامله دوسویه بود.",
+      "explanation_tg": "Хонаҳо забонро зинда нигоҳ доштанд, аммо эҳё манобеъ мехоҳад. Сомониён ҳувият мехостанд; форсӣ ҳомӣ — муомала дусӯя буд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mosw-h5",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "'The telling became the tradition and the tradition became the identity and the identity became stronger than any army.' What chain of transformation is described here?",
+      "question_fa": "«بازگفت سنت شد و سنت هویت شد و هویت از هر ارتشی نیرومندتر شد.» چه زنجیره‌ی دگرگونی‌ای این‌جا توصیف می‌شود؟",
+      "question_tg": "«Бозгуфт суннат шуд ва суннат ҳувият шуд ва ҳувият аз ҳар лашкаре нерӯмандтар шуд.» Чӣ занҷираи дигаргуние ин ҷо тавсиф мешавад?",
+      "answers": [
+        "A purely literary process with no political consequence",
+        "The corruption of true history into legend",
+        "Repetition hardens into custom, custom into selfhood — once a story is who a people are, destroying it would require destroying the people, which no army achieves",
+        "The replacement of religion by literature"
+      ],
+      "answers_fa": [
+        "فرایندی صرفاً ادبی بدونِ پیامدِ سیاسی",
+        "فسادِ تاریخِ راستین به افسانه",
+        "تکرار به رسم سخت می‌شود و رسم به خویشتن — وقتی داستان همان است که مردمی هستند، نابودی‌اش نیازمندِ نابودیِ مردم است، که هیچ ارتشی به آن نمی‌رسد",
+        "جایگزینیِ دین با ادبیات"
+      ],
+      "answers_tg": [
+        "Фарояндe сирфан адабӣ бе паёмади сиёсӣ",
+        "Фасоди таърихи ростин ба афсона",
+        "Такрор ба расм сахт мешавад ва расм ба хештан — вақте достон ҳамон аст ки мардуме ҳастанд, нобудияш ниёзманди нобудии мардум аст, ки ҳеҷ лашкаре ба он намерасад",
+        "Ҷойгузинии дин бо адабиёт"
+      ],
+      "correct_answer": 2,
+      "explanation": "Each link raises the stakes of erasure. A telling can be silenced; a tradition must be uprooted; an identity can only be killed with its people. By reciting the Shahnameh at weddings and funerals for centuries, Iranians moved their past up this chain — from story to self — beyond any sword's reach. That is the precise meaning of the chapter's title.",
+      "explanation_fa": "هر حلقه بهای پاک‌سازی را بالا می‌برد: بازگفت را می‌توان خاموش کرد؛ هویت را فقط با مردمش می‌توان کشت — معنای دقیقِ «حافظه بر شمشیر».",
+      "explanation_tg": "Ҳар ҳалқа баҳои поксозиро боло мебарад: бозгуфтро метавон хомӯш кард; ҳувиятро танҳо бо мардумаш метавон кушт — маънои дақиқи «ҳофиза бар шамшер».",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mosw-h6",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "What was at stake in proving Persian could match 'the scale that Arabic had achieved in the Quran'?",
+      "question_fa": "در اثباتِ این‌که فارسی می‌تواند با «مقیاسی که عربی در قرآن به آن رسید» برابری کند، چه چیزی در میان بود؟",
+      "question_tg": "Дар исботи ин ки форсӣ метавонад бо «миқёсе ки арабӣ дар Қуръон ба он расид» баробарӣ кунад, чӣ чизе дар миён буд?",
+      "answers": [
+        "Civilizational parity — a language with a monument of that scale cannot be dismissed as a household dialect; it claims a permanent seat among the languages that define worlds",
+        "A commercial rivalry between book markets",
+        "A theological contest over which scripture was true",
+        "Nothing — the comparison is anachronistic"
+      ],
+      "answers_fa": [
+        "برابریِ تمدنی — زبانی با بنایی در آن مقیاس را نمی‌توان گویشِ خانگی شمرد؛ جایگاهی دائمی میانِ زبان‌هایی که جهان‌ها را تعریف می‌کنند طلب می‌کند",
+        "رقابتی تجاری میانِ بازارهای کتاب",
+        "نزاعی الهیاتی بر سرِ این‌که کدام کتابِ آسمانی راست است",
+        "هیچ — مقایسه نابهنگام است"
+      ],
+      "answers_tg": [
+        "Баробарии тамаддунӣ — забоне бо биное дар он миқёсро наметавон гӯиши хонагӣ шумурд; ҷойгоҳе доимӣ байни забонҳое ки ҷаҳонҳоро таъриф мекунанд талаб мекунад",
+        "Рақобате тиҷорӣ байни бозорҳои китоб",
+        "Низоъе илоҳиётӣ бар сари ин ки кадом китоби осмонӣ рост аст",
+        "Ҳеҷ — муқоиса нобаҳангом аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "After two centuries as the language of homes while Arabic held scripture, law and science, the question was whether Persian was a vessel for civilization or merely for conversation. A sixty-thousand-verse monument answered it structurally: the language could carry the heaviest cargo there is. After the Shahnameh, Persian's standing was no longer arguable.",
+      "explanation_fa": "پرسش این بود: فارسی ظرفِ تمدن است یا فقط گفت‌وگو؟ بنای شصت‌هزاربیتی پاسخ داد — پس از شاهنامه، جایگاهِ فارسی بحث‌پذیر نبود.",
+      "explanation_tg": "Пурсиш ин буд: форсӣ зарфи тамаддун аст ё танҳо гуфтугӯ? Бинои шастҳазорбайтӣ посух дод — пас аз Шоҳнома, ҷойгоҳи форсӣ баҳспазир набуд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mosw-h7",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Why is 'Memory Over Sword' a fitting title for the entire final movement of the Shahnameh's story?",
+      "question_fa": "چرا «حافظه بر شمشیر» عنوانی برازنده برای کلِ پرده‌ی پایانیِ داستانِ شاهنامه است؟",
+      "question_tg": "Чаро «Ҳофиза бар шамшер» унвоне барозанда барои кулли пардаи поёнии достони Шоҳнома аст?",
+      "answers": [
+        "Because Persian armies eventually defeated the caliphate in battle",
+        "Because the swords lost on every side — the Sasanian sword fell, the conquering sword could not finish its work — and what finally prevailed and endured was the act of remembering",
+        "Because the title refers to a specific duel",
+        "Because swords are never mentioned after the conquest"
+      ],
+      "answers_fa": [
+        "چون ارتش‌های ایرانی سرانجام خلافت را در نبرد شکست دادند",
+        "چون شمشیرها در هر سو باختند — شمشیرِ ساسانی افتاد، شمشیرِ فاتح نتوانست کارش را تمام کند — و آنچه سرانجام چیره شد و پایید، عملِ یادآوری بود",
+        "چون عنوان به دوئلی خاص اشاره دارد",
+        "چون پس از فتح دیگر نامی از شمشیر نیست"
+      ],
+      "answers_tg": [
+        "Зеро лашкарҳои эронӣ саранҷом хилофатро дар набард шикаст доданд",
+        "Зеро шамшерҳо дар ҳар сӯ бохтанд — шамшери сосонӣ афтод, шамшери фотеҳ натавонист корашро тамом кунад — ва он чи саранҷом чира шуд ва поид, амали ёдоварӣ буд",
+        "Зеро унвон ба дуэле хос ишора дорад",
+        "Зеро пас аз фатҳ дигар номе аз шамшер нест"
+      ],
+      "correct_answer": 1,
+      "explanation": "Read the ending as a contest of swords and everyone lost: the Sasanian sword broke at Qadisiyyah, and the conquering sword, for all it took, could not take the language or the stories. The only force in the final chapters that achieves its whole aim is memory — tended in households, funded by Samanids, completed by Ferdowsi. The title is the scoreboard.",
+      "explanation_fa": "اگر پایان را مسابقه‌ی شمشیرها بخوانیم، همه باختند؛ تنها نیرویی که به تمامِ هدفش رسید حافظه بود — عنوان همان جدولِ امتیازهاست.",
+      "explanation_tg": "Агар поёнро мусобиқаи шамшерҳо бихонем, ҳама бохтанд; танҳо нерӯе ки ба тамоми ҳадафаш расид ҳофиза буд — унвон ҳамон ҷадвали имтиёзҳост.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "mosw-h8",
+      "chapter_slug": "memory-over-sword",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The chapter honors those who remember 'even when no one is paying for it and no court is asking for it.' Who is the true hero of this chapter?",
+      "question_fa": "این فصل کسانی را ارج می‌نهد که به یاد می‌آورند «حتی وقتی کسی برایش نمی‌پردازد و هیچ درباری طلبش نمی‌کند.» قهرمانِ راستینِ این فصل کیست؟",
+      "question_tg": "Ин боб касонеро арҷ мениҳад ки ба ёд меоваранд «ҳатто вақте касе барояш намепардозад ва ҳеҷ дарборе талабаш намекунад.» Қаҳрамони ростини ин боб кист?",
+      "answers": [
+        "The anonymous keeper of memory — the unpaid reciter, the parent telling the old stories — a new kind of hero for a world where the warrior heroes are gone",
+        "The Abbasid translators of Greek philosophy",
+        "The last Sasanian generals",
+        "Sultan Mahmud, the great patron"
+      ],
+      "answers_fa": [
+        "نگهبانِ گمنامِ حافظه — راویِ بی‌مزد، پدر و مادری که داستان‌های کهن را می‌گویند — قهرمانی از گونه‌ای نو برای جهانی که پهلوانانِ جنگاورش رفته‌اند",
+        "مترجمانِ عباسیِ فلسفه‌ی یونانی",
+        "واپسین سردارانِ ساسانی",
+        "سلطان محمود، حامیِ بزرگ"
+      ],
+      "answers_tg": [
+        "Нигаҳбони гумноми ҳофиза — ровии бемузд, падару модаре ки достонҳои куҳанро мегӯянд — қаҳрамоне аз гунае нав барои ҷаҳоне ки паҳлавонони ҷанговараш рафтаанд",
+        "Тарҷумонони аббосии фалсафаи юнонӣ",
+        "Вопасин сардорони сосонӣ",
+        "Султон Маҳмуд, ҳомии бузург"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's earlier heroes carried maces; this chapter's hero carries a story and asks no fee. The epic quietly redefines heroism for the post-conquest world: not the strength to defend the land, which failed, but the stubbornness to keep telling — the quality that actually saved Iran. Every reader who passes the stories on joins this lineage.",
+      "explanation_fa": "پهلوانانِ پیشین گرز داشتند؛ قهرمانِ این فصل داستانی دارد و مزدی نمی‌خواهد — حماسه قهرمانی را بازتعریف می‌کند.",
+      "explanation_tg": "Паҳлавонони пешин гурз доштанд; қаҳрамони ин боб достоне дорад ва музде намехоҳад — ҳамоса қаҳрамониро бозтаъриф мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

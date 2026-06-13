@@ -5,34 +5,104 @@
       "chapter_slug": "shapur",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "What happened to the Roman Emperor Valerian at the Battle of Edessa in 260 CE?",
-      "question_fa": "امپراتور رومی والریان در نبرد ادسا در سال ۲۶۰ میلادی چه اتفاقی برایش افتاد؟",
-      "question_tg": "Ба императори Румии Валериан дар набарди Эдесса дар соли 260 милодӣ чӣ рӯй дод?",
+      "question": "What unique achievement is Shapur famous for in Roman history?",
+      "question_fa": "شاپور به چه دستاوردِ منحصربه‌فردی در تاریخِ روم مشهور است؟",
+      "question_tg": "Шопур ба кадом дастоварди беназир дар таърихи Рим машҳур аст?",
       "answers": [
-        "He was captured and brought before Shapur in chains — the only Roman emperor ever taken prisoner in battle",
-        "He was killed on the battlefield and his body displayed at the city gates",
-        "He escaped but died of his wounds during the retreat to Rome",
-        "He surrendered voluntarily to avoid a massacre of his troops"
+        "Capturing a living Roman emperor — Valerian — on the battlefield",
+        "Conquering Rome itself",
+        "Defeating three Roman emperors in a single day",
+        "Destroying the entire Roman eastern army"
       ],
       "answers_fa": [
-        "در زنجیر به حضور شاپور آورده شد — تنها امپراتور رومی که تا به حال در نبرد اسیر شد",
-        "در میدان نبرد کشته شد و جسدش بر دروازه‌های شهر به نمایش گذاشته شد",
-        "فرار کرد اما در حین عقب‌نشینی به روم از زخم‌هایش مُرد",
-        "داوطلبانه تسلیم شد تا از کشتار سربازانش جلوگیری کند"
+        "اسیر کردنِ یک امپراتورِ زنده‌ی رومی — والریان — در میدانِ جنگ",
+        "فتحِ خودِ روم",
+        "شکست دادنِ سه امپراتورِ رومی در یک روز",
+        "نابود کردنِ کلِ ارتشِ شرقیِ روم"
       ],
       "answers_tg": [
-        "Дар занҷир ба ҳузури Шопур оварда шуд — ягона императори Румие ки то ба ҳол дар набард асир шуд",
-        "Дар майдони набард кушта шуд ва ҷасадаш бар дарвозаҳои шаҳр ба намоиш гузошта шуд",
-        "Гурехт аммо ҳангоми ақибнишинӣ ба Рум аз захмҳояш мурд",
-        "Даваталабона таслим шуд то аз куштори сарбозонаш пешгирӣ кунад"
+        "Асир кардани императори зиндаи Румӣ — Валериан — дар майдони ҷанг",
+        "Фатҳи худи Рим",
+        "Шикаст додани се императори Румӣ дар як рӯз",
+        "Нобуд кардани кулли лашкари шарқии Рим"
       ],
       "correct_answer": 0,
-      "explanation": "Valerian led his legions east to halt the Sasanian advance and was defeated and captured at Edessa in 260 CE. No Roman emperor had ever been taken prisoner in battle before. He died in captivity — no ransom was paid.",
-      "explanation_fa": "والریان لشکریانش را به شرق فرستاد تا پیشروی ساسانی را متوقف کند و در ادسا در سال ۲۶۰ میلادی شکست خورد و اسیر شد. هیچ امپراتور رومی تا آن زمان در نبرد اسیر نشده بود. در اسارت مُرد — هیچ فدیه‌ای پرداخت نشد.",
-      "explanation_tg": "Валериан лашкариёнашро ба шарқ фиристод то пешрафти Сосониро боздорад ва дар Эдесса дар соли 260 милодӣ шикаст хӯрд ва асир шуд. Ҳеҷ императори Румие то он замон дар набард асир нашуда буд. Дар асорат мурд — ҳеҷ фидяе пардохта нашуд.",
+      "explanation": "At the Battle of Edessa (260 CE), Shapur I captured Emperor Valerian — the only time in history that a Roman emperor was taken prisoner in battle. Ferdowsi marks this as one of the greatest moments of Sasanian glory.",
+      "explanation_fa": "در نبردِ ادسا (۲۶۰ میلادی)، شاپورِ اول امپراتور والریان را اسیر کرد — تنها باری در تاریخ که یک امپراتورِ رومی در جنگ به اسارت درآمد.",
+      "explanation_tg": "Дар набарди Эдесса (260 мелодӣ), Шопури Аввал Императори Валерианро асир кард — ягона бор дар таърих ки императори Румӣ дар ҷанг ба асорат дарآмад.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "shp-e2",
+      "chapter_slug": "shapur",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Where did Shapur immortalise his victory over Rome?",
+      "question_fa": "شاپور پیروزی‌اش بر روم را کجا جاودانه کرد؟",
+      "question_tg": "Шопур ғалабаи худашро бар Рим дар куҷо ҷовидона кард?",
+      "answers": [
+        "In a mosaic in the royal palace",
+        "In a manuscript composed by court poets",
+        "In a great victory column in Ctesiphon",
+        "In rock reliefs at Naqsh-e Rostam — Valerian is shown kneeling forever"
+      ],
+      "answers_fa": [
+        "در یک موزاییک در کاخِ سلطنتی",
+        "در یک دست‌نوشته که توسطِ شاعرانِ دربار نوشته شد",
+        "در یک ستونِ پیروزیِ بزرگ در تیسفون",
+        "در نقش‌برجسته‌های سنگی در نقشِ رستم — والریان برای همیشه زانوزده نشان داده می‌شود"
+      ],
+      "answers_tg": [
+        "Дар мӯзаике дар кохи шоҳонӣ",
+        "Дар дастнависе ки аз ҷониби шоирони дарбор навишта шуд",
+        "Дар ситуни ғалабаи бузурге дар Тесифон",
+        "Дар нақшбарҷастаҳои санг дар Нақши Рустам — Валериан барои ҳамеша зонузада нишон дода мешавад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Shapur carved his victory at Naqsh-e Rostam — the site of Achaemenid royal tombs. Valerian is depicted kneeling in submission before Shapur. These rock reliefs survive to this day.",
+      "explanation_fa": "شاپور پیروزی‌اش را در نقشِ رستم — مکانِ آرامگاه‌های شاهانه‌ی هخامنشی — حک کرد.",
+      "explanation_tg": "Шопур ғалабаашро дар Нақши Рустам — ҷойи оромгоҳҳои шоҳонаи Ҳахоманишӣ — ҳак кард.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "shp-e3",
+      "chapter_slug": "shapur",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Before becoming king, what dangerous mission did Shapur undertake?",
+      "question_fa": "قبل از شدنِ شاه، شاپور چه مأموریتِ خطرناکی انجام داد؟",
+      "question_tg": "Пеш аз шудани шоҳ, Шопур кадом мисияти хатарнокеро анҷом дод?",
+      "answers": [
+        "A diplomatic mission to India",
+        "A pilgrimage to Mecca disguised as a pilgrim",
+        "A secret spy mission to Rome disguised as a merchant",
+        "A solo raid against the Kushans"
+      ],
+      "answers_fa": [
+        "یک مأموریتِ دیپلماتیک به هند",
+        "یک سفرِ حجِ زیارتی به مکه با لباسِ زیارتگر",
+        "یک مأموریتِ جاسوسیِ مخفی به روم با لباسِ تاجر",
+        "یک حمله‌ی تنها علیهِ کوشانیان"
+      ],
+      "answers_tg": [
+        "Мисияти дипломатик ба Ҳинд",
+        "Зиёрати ҳаҷ ба Макка дар либоси зиёраткунанда",
+        "Мисияти ҷосусии пинҳонӣ ба Рим дар либоси тоҷир",
+        "Як ҳамлаи танҳо зидди Кушониён"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh tells of Shapur going to Rome in disguise as a merchant to spy on the enemy — a classic heroic adventure narrative establishing his personal bravery before his great military victories.",
+      "explanation_fa": "شاهنامه از رفتنِ شاپور به روم با لباسِ مبدل به عنوانِ یک تاجر برای جاسوسی از دشمن می‌گوید.",
+      "explanation_tg": "Шоҳнома аз рафтани Шопур ба Рим бо либоси мубаддал ба унвони тоҷир барои ҷосусӣ аз душман мегӯяд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
       }
     },
     {
@@ -40,104 +110,454 @@
       "chapter_slug": "shapur",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "What did Shapur do before his campaigns against Rome that distinguished him from other kings?",
-      "question_fa": "شاپور قبل از لشکرکشی‌هایش علیه روم چه کاری کرد که او را از دیگر شاهان متمایز می‌کرد؟",
-      "question_tg": "Шопур пеш аз лашкаркашиҳояш бар зидди Рум чӣ коре кард ки ӯро аз дигар подшоҳон мумтоз мекард?",
+      "question": "Shapur carved his victory at Naqsh-e Rostam — the site of Achaemenid tombs. What does this choice of location communicate?",
+      "question_fa": "شاپور پیروزی‌اش را در نقشِ رستم — محلِ آرامگاه‌های هخامنشی — حک کرد. این انتخابِ مکان چه چیزی می‌رساند؟",
+      "question_tg": "Шопур ғалабаашро дар Нақши Рустам — ҷои оромгоҳҳои Ҳахоманишӣ — ҳак кард. Ин интихоби ҷой чиро мерасонад?",
       "answers": [
-        "He traveled to Rome in disguise to spy on the imperial court firsthand",
-        "He spent three years in prayer and fasting to receive divine guidance",
-        "He sent ambassadors offering peace to avoid unnecessary bloodshed",
-        "He recruited Roman defectors to teach his army new battle formations"
+        "Naqsh-e Rostam was the most accessible stone surface near the battle",
+        "It signals Shapur wanted to build his tomb there too",
+        "The Sasanians placed themselves in the lineage of the Achaemenids — Shapur's glory stands beside Darius and Xerxes",
+        "The location was chosen purely for artistic reasons"
       ],
       "answers_fa": [
-        "با لباس مبدل به روم رفت تا شخصاً از دربار امپراتوری جاسوسی کند",
-        "سه سال به دعا و روزه پرداخت تا هدایت الهی بگیرد",
-        "سفیرانی فرستاد که صلح پیشنهاد دادند تا از خونریزی غیرضروری جلوگیری کند",
-        "منشقان رومی را برای آموزش تشکیلات جنگی جدید به ارتشش استخدام کرد"
+        "نقشِ رستم نزدیک‌ترین سطحِ سنگیِ قابلِ دسترس نزدیکِ نبرد بود",
+        "نشان می‌دهد شاپور می‌خواست آرامگاهش را هم آنجا بسازد",
+        "ساسانیان خودشان را در نسبِ هخامنشیان قرار دادند — شکوهِ شاپور در کنارِ داریوش و خشایارشا قرار می‌گیرد",
+        "مکان صرفاً به دلایلِ هنری انتخاب شد"
       ],
       "answers_tg": [
-        "Бо либоси мубаддал ба Рум рафт то дарбори императориро ба таври шахсӣ ҷосусӣ кунад",
-        "Се сол ба дуо ва рӯза машғул шуд то ҳидояти илоҳӣ бигирад",
-        "Сафиронеро фиристод ки сулҳ пешниҳод доданд то аз хунрезии бегараз пешгирӣ кунад",
-        "Мунҳарифони Румиро барои омӯзиши ташкилоти ҷангии ҷадид ба артушаш ба хизмат гирифт"
+        "Нақши Рустам наздиктарин сатҳи санги дастнорас дар наздики набард буд",
+        "Нишон медиҳад Шопур мехост оромгоҳашро ҳам онҷо бисозад",
+        "Сосониён худашонро дар насаби Ҳахоманишиён ҷой доданд — шуҳурати Шопур дар канори Дориюш ва Хашаёрша меистад",
+        "Ҷой танҳо ба сабабҳои ҳунарӣ интихоб шуд"
       ],
-      "correct_answer": 0,
-      "explanation": "According to the Shahnameh, Shapur traveled west in disguise — as a merchant or ambassador — to observe the Roman court before his campaigns. He was recognized and imprisoned but escaped, gathering intelligence at personal risk before returning to lead his armies.",
-      "explanation_fa": "بنابر شاهنامه، شاپور با لباس مبدل — به عنوان تاجر یا سفیر — به غرب رفت تا قبل از لشکرکشی‌هایش دربار رومی را مشاهده کند. او شناخته شد و زندانی شد اما گریخت، اطلاعات را با خطر شخصی جمع کرد قبل از اینکه بازگردد و ارتشش را رهبری کند.",
-      "explanation_tg": "Тибқи шоҳнома, Шопур бо либоси мубаддал — ҳамчун тоҷир ё сафир — ба ғарб рафт то пеш аз лашкаркашиҳояш дарбори Румиро мушоҳида кунад. Ӯ шинохта шуд ва зиндонӣ шуд аммо гурехт, иттилоотро бо хатари шахсӣ ҷамъ кард пеш аз он ки бозгардад ва артушашро роҳбарӣ кунад.",
+      "correct_answer": 2,
+      "explanation": "Carving at Naqsh-e Rostam, the sacred site of Achaemenid kings, declared Sasanian continuity with ancient Iranian royal tradition. Shapur's victory relief stands beside those of Darius — a deliberate claim of dynastic legitimacy through place.",
+      "explanation_fa": "حک کردن در نقشِ رستم، مکانِ مقدسِ شاهانِ هخامنشی، پیوستگیِ ساسانی را با سنتِ شاهانه‌ی ایرانیِ باستان اعلام کرد.",
+      "explanation_tg": "Ҳак кардан дар Нақши Рустам, ҷойи муқаддаси шоҳони Ҳахоманишӣ, пайвастагии Сосонӣ ро бо суннати шоҳонаи ирониии қадим эълон кард.",
       "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "shp-e2",
-      "chapter_slug": "shapur",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "Where did Shapur commemorate his victories over Rome in permanent stone?",
-      "question_fa": "شاپور پیروزی‌هایش بر روم را کجا به صورت دائمی در سنگ یادبود ساخت؟",
-      "question_tg": "Шопур пирӯзиҳояшро бар Рум дар куҷо ба таври доимӣ дар санг ёдбуд сохт?",
-      "answers": [
-        "At Naqsh-e Rostam, in enormous rock reliefs showing Valerian kneeling",
-        "At the gates of Ctesiphon, in a great triumphal arch",
-        "In the city of Edessa itself, where the battle had been won",
-        "At the ruins of Persepolis, reclaiming the Achaemenid sacred site"
-      ],
-      "answers_fa": [
-        "در نقش رستم، در نقش‌برجسته‌های سنگی عظیم که والریان را زانو زده نشان می‌دهند",
-        "در دروازه‌های تیسفون، در یک طاق پیروزی بزرگ",
-        "در خود شهر ادسا، جایی که نبرد در آن برده شده بود",
-        "در ویرانه‌های تخت جمشید، با بازپس‌گیری محل مقدس هخامنشی"
-      ],
-      "answers_tg": [
-        "Дар Нақши Рустам, дар нақшбарҷастаҳои сангии азим ки Валерианро зонузада нишон медиҳанд",
-        "Дар дарвозаҳои Тайсафун, дар тоқи зафари бузург",
-        "Дар худи шаҳри Эдесса, ки дар он ҷо набард бурда шуда буд",
-        "Дар харобаҳои Тахти Ҷамшед, бо бозпас гирифтани маҳали муқаддаси Ҳахоманишӣ"
-      ],
-      "correct_answer": 0,
-      "explanation": "Shapur commemorated his victories in enormous rock reliefs carved at Naqsh-e Rostam, the ancient site near Persepolis where Achaemenid kings had long carved their monuments. Valerian is shown forever kneeling before the mounted Shapur in stone that is still visible today.",
-      "explanation_fa": "شاپور پیروزی‌هایش را در نقش‌برجسته‌های سنگی عظیم حک‌شده در نقش رستم، محل باستانی نزدیک تخت جمشید که شاهان هخامنشی مدت‌ها یادبودهایشان را در آن حک کرده بودند، یادبود ساخت. والریان برای همیشه در حال زانو زدن در برابر شاپور سواره در سنگی که امروزه هنوز قابل مشاهده است نشان داده شده است.",
-      "explanation_tg": "Шопур пирӯзиҳояшро дар нақшбарҷастаҳои сангии азим дар Нақши Рустам, маҳали қадимаи наздики Тахти Ҷамшед ки подшоҳони Ҳахоманишӣ муддате ёдбудҳояшонро дар он ҳак карда буданд, ёдбуд сохт.",
-      "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
       }
     },
     {
       "id": "shp-m2",
       "chapter_slug": "shapur",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "medium",
-      "question": "How did Shapur treat Valerian after capturing him — according to the Persian tradition?",
-      "question_fa": "شاپور طبق سنت ایرانی با والریان پس از اسارتش چگونه رفتار کرد؟",
-      "question_tg": "Шопур тибқи анъанаи Эронӣ бо Валериан пас аз асирии ӯ чӣ гуна рафтор кард?",
+      "question": "Shapur captured Valerian but did not execute him. What was the significance of keeping an emperor alive as a prisoner?",
+      "question_fa": "شاپور والریان را اسیر کرد اما او را اعدام نکرد. اهمیتِ نگه داشتنِ یک امپراتور زنده به عنوانِ زندانی چه بود؟",
+      "question_tg": "Шопур Валерианро асир кард аммо ӯро эъдом накард. Аҳамияти нигоҳ доштани императоре зинда ба унвони зиндонӣ чӣ буд?",
       "answers": [
-        "Kept him as a mounting block — using the emperor as a step when Shapur mounted his horse",
-        "Treated him with full royal honours as a fellow king, allowing him to live in comfort",
-        "Executed him publicly in Ctesiphon as a sacrifice to the Zoroastrian sacred fire",
-        "Returned him to Rome after extracting a massive war indemnity"
+        "Valerian converted to Zoroastrianism and was therefore protected",
+        "Shapur intended to ransom Valerian back to Rome",
+        "It was against Zoroastrian law to execute a foreign king",
+        "A living captive emperor was a greater political symbol than a dead one — it demonstrated ongoing Sasanian supremacy every day he lived"
       ],
       "answers_fa": [
-        "او را به عنوان سکوی اسب‌سواری نگه داشت — از امپراتور به عنوان پله‌ای استفاده کرد که شاپور بر اسبش سوار شود",
-        "با تمام افتخارات سلطنتی مانند یک شاه هم‌رتبه با او رفتار کرد و به او اجازه داد راحت زندگی کند",
-        "او را به طور عمومی در تیسفون به عنوان قربانی برای آتش مقدس زرتشتی اعدام کرد",
-        "پس از اخذ غرامت جنگی بزرگ او را به روم بازگرداند"
+        "والریان به زرتشتی‌گری تبدیل شد و بنابراین محافظت شد",
+        "شاپور قصد داشت والریان را به روم بازخرید کند",
+        "اعدامِ یک شاهِ خارجی بر خلافِ قانونِ زرتشتی بود",
+        "یک امپراتورِ زنده‌ی اسیر نمادِ سیاسیِ بزرگ‌تری از یک امپراتورِ مرده بود — هر روز که زندگی می‌کرد برتریِ پیوسته‌ی ساسانیان را نشان می‌داد"
       ],
       "answers_tg": [
-        "Ӯро ҳамчун зинапояи аспсаворӣ нигоҳ дошт — аз императорро ҳамчун зинае истифода кард ки Шопур бар аспаш савор шавад",
-        "Бо тамоми эҳтиромоти шоҳона ҳамчун подшоҳи ҳамруҷба бо ӯ рафтор кард",
-        "Ӯро дар Тайсафун ба таври умумӣ ҳамчун қурбонӣ барои оташи муқаддаси Зардуштӣ эъдом кард",
-        "Пас аз гирифтани ғарамати ҷангии бузург ӯро ба Рум баргардонд"
+        "Валериан ба зардуштия мубаддал шуд ва аз ин рӯ ҳимоят шуд",
+        "Шопур қасд дошт Валерианро ба Рим бозхарид кунад",
+        "Эъдоми шоҳи хориҷӣ хилофи қонуни зардуштӣ буд",
+        "Императори зиндаи асиршуда рамзи сиёсии бузургтаре аз марда буд — ҳар рӯзе ки зиндагӣ мекард бартарии пайвастаи Сосониёнро нишон медод"
+      ],
+      "correct_answer": 3,
+      "explanation": "A live captive emperor was a permanent propaganda victory — the most powerful man in the Western world, kneeling to Shapur. Death would have ended the symbol; captivity extended it indefinitely.",
+      "explanation_fa": "یک امپراتورِ زنده‌ی اسیر یک پیروزیِ تبلیغاتیِ دائمی بود — قدرتمندترین مردِ دنیای غربی، زانو زده در برابرِ شاپور.",
+      "explanation_tg": "Императори зиндаи асиршуда ғалабаи таблиғотии доимӣ буд — қудратмандтарин марди ҷаҳони ғарбӣ, зонузада дар баробари Шопур.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "shp-m3",
+      "chapter_slug": "shapur",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Shapur is presented in the Shahnameh as both a military genius and a king who administered his empire. How does this balance reflect the ideal Iranian king?",
+      "question_fa": "شاپور در شاهنامه هم به عنوانِ نابغه‌ی نظامی و هم شاهی که امپراتوریش را اداره کرد ارائه می‌شود. این تعادل ایده‌آلِ شاهِ ایرانی را چگونه نشان می‌دهد؟",
+      "question_tg": "Шопур дар Шоҳнома ҳам ба унвони нобиғаи низомӣ ва ҳам шоҳе ки империяашро идора кард пешкаш мешавад. Ин тавозун идеали шоҳи эрониро чӣ тавр нишон медиҳад?",
+      "answers": [
+        "Military victory secures the realm; administration sustains it — a king who can only fight but not govern destroys what he builds",
+        "The ideal king only needs religious piety — war and administration are secondary",
+        "Military genius is sufficient — administration can be delegated to ministers",
+        "Administration is more important than military achievement in the Shahnameh"
+      ],
+      "answers_fa": [
+        "پیروزیِ نظامی قلمرو را تأمین می‌کند؛ اداره آن را پایدار می‌کند — شاهی که فقط می‌تواند بجنگد اما نه حکمرانی کند، آنچه می‌سازد را نابود می‌کند",
+        "شاهِ ایده‌آل فقط به تقواِ دینی نیاز دارد — جنگ و اداره ثانوی هستند",
+        "نبوغِ نظامی کافی است — اداره می‌تواند به وزرا واگذار شود",
+        "اداره در شاهنامه از دستاوردِ نظامی مهم‌تر است"
+      ],
+      "answers_tg": [
+        "Ғалабаи низомӣ қаламравро таъмин мекунад؛ маъмурият онро устувор мекунад — шоҳе ки танҳо меҷанад аммо на ҳукумат намекунад, он чи месозад ро нобуд мекунад",
+        "Шоҳи идеалӣ танҳо ба парҳезгории динӣ ниёз дорад — ҷанг ва маъмурият дуюмдараҷаанд",
+        "Нобиғаи низомӣ кофист — маъмурият метавонад ба вазирон вогузор шавад",
+        "Маъмурият дар Шоҳнома аз дастоварди низомӣ муҳимтар аст"
       ],
       "correct_answer": 0,
-      "explanation": "Persian tradition records that Shapur used Valerian as a mounting block — the captured emperor served as a living step for Shapur to mount his horse. This deliberate humiliation was architectural as well as personal, forever memorialized in the Naqsh-e Rostam reliefs.",
-      "explanation_fa": "سنت ایرانی ثبت می‌کند که شاپور از والریان به عنوان سکوی اسب‌سواری استفاده کرد — امپراتور اسیر به عنوان پله زنده‌ای برای سوار شدن شاپور بر اسبش خدمت می‌کرد. این تحقیر عمدی به همان اندازه معماری بود که شخصی، برای همیشه در نقش‌برجسته‌های نقش رستم یادبود شد.",
-      "explanation_tg": "Анъанаи Эронӣ сабт мекунад ки Шопур Валерианро ҳамчун зинапояи аспсаворӣ истифода кард — императори асир ҳамчун зинаи зиндае барои савор шудани Шопур бар аспаш хидмат мекард.",
+      "explanation": "The Shahnameh's ideal king is complete: he fights when necessary and governs when at peace. Pure warriors without administrative capacity create empires they cannot hold; pure administrators without military capacity cannot defend what they have built.",
+      "explanation_fa": "شاهِ ایده‌آلِ شاهنامه کامل است: وقتِ لازم می‌جنگد و در صلح حکمرانی می‌کند.",
+      "explanation_tg": "Шоҳи идеалии Шоҳнома комил аст: вақти лозим меҷанад ва дар сулҳ ҳукумат мекунад.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "shp-m4",
+      "chapter_slug": "shapur",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What does Shapur's victory over Rome represent in the context of the Shahnameh's larger story of Iran vs. foreign powers?",
+      "question_fa": "پیروزیِ شاپور بر روم در زمینه‌ی داستانِ بزرگ‌ترِ شاهنامه از ایران در برابرِ قدرت‌های خارجی چه چیزی نشان می‌دهد؟",
+      "question_tg": "Ғалабаи Шопур бар Рим дар заминаи достони бузургтари Шоҳнома аз Эрон дар баробари қудратҳои хориҷӣ чиро нишон медиҳад?",
+      "answers": [
+        "The defeat of a former ally who turned against Iran",
+        "The beginning of the end for Sasanian Iran",
+        "The height of Sasanian power — Iran at its most confident and dominant against the Western world",
+        "A rare military success that masks deeper political weakness"
+      ],
+      "answers_fa": [
+        "شکستِ یک متحدِ سابق که علیهِ ایران چرخید",
+        "آغازِ پایانِ ایرانِ ساسانی",
+        "اوجِ قدرتِ ساسانی — ایران در مطمئن‌ترین و غالب‌ترین حالتش در برابرِ دنیای غربی",
+        "یک موفقیتِ نظامیِ نادر که ضعفِ سیاسیِ عمیق‌تر را پنهان می‌کند"
+      ],
+      "answers_tg": [
+        "Шикасти мутаҳиди собиқе ки зидди Эрон чархид",
+        "Оғози поёни Эрони Сосонӣ",
+        "Авҷи қудрати Сосонӣ — Эрон дар боэтимодтарин ва ғолибтарин ҳолаташ дар баробари ҷаҳони ғарбӣ",
+        "Муваффақияти низомии нодире ки заъфи сиёсии амиқтарро пинҳон мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Shapur's capture of Valerian represents the peak of Sasanian Iran's power and confidence. It sits at the narrative high point of the Sasanian section — after Ardeshir's founding and before the long decline that ends with the Arab conquest.",
+      "explanation_fa": "اسارتِ والریان توسطِ شاپور اوجِ قدرت و اعتمادِ ایرانِ ساسانی را نشان می‌دهد.",
+      "explanation_tg": "Асирии Валериан аз ҷониби Шопур авҷи қудрат ва боэтимодии Эрони Сосониро нишон медиҳад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "shp-m5",
+      "chapter_slug": "shapur",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Shapur also fought the Kushans in the east. Why does the Shahnameh give equal importance to both western (Roman) and eastern (Kushan) fronts?",
+      "question_fa": "شاپور همچنین با کوشانیان در شرق جنگید. چرا شاهنامه به هر دو جبهه‌ی غربی (رومی) و شرقی (کوشانی) اهمیتِ مساوی می‌دهد؟",
+      "question_tg": "Шопур инчунин бо Кушониён дар шарқ ҷангид. Чаро Шоҳнома ба ҳарду ҷабҳаи ғарбӣ (Румӣ) ва шарқӣ (Кушонӣ) аҳамияти баробар медиҳад?",
+      "answers": [
+        "The Kushan wars were actually more important than the Roman wars militarily",
+        "The Shahnameh prioritises the east over the west throughout",
+        "Because Iran in the Shahnameh faces threats from all directions — mastery requires defending all frontiers, not just the prestigious western one",
+        "Shapur only fought the Kushans for economic trade route reasons"
+      ],
+      "answers_fa": [
+        "جنگ‌های کوشانی از نظرِ نظامی در واقع از جنگ‌های رومی مهم‌تر بودند",
+        "شاهنامه در سراسر از شرق بر غرب اولویت می‌دهد",
+        "چون ایران در شاهنامه با تهدیداتی از همه‌ی جهات روبرو است — تسلط به دفاع از همه‌ی مرزها نیاز دارد نه فقط مرزِ غربیِ معتبر",
+        "شاپور فقط به دلایلِ مسیرِ تجاریِ اقتصادی با کوشانیان جنگید"
+      ],
+      "answers_tg": [
+        "Ҷангҳои Кушонӣ аз назари низомӣ воқеан аз ҷангҳои Румӣ муҳимтар буданд",
+        "Шоҳнома дар саросар аз шарқ бар ғарб афзалиятдиҳӣ мекунад",
+        "Зеро Эрон дар Шоҳнома бо таҳдидот аз ҳамаи самтҳо рӯбарӯ аст — тасалут ба дифоъ аз ҳамаи марзҳо ниёз дорад",
+        "Шопур танҳо ба сабабҳои масири тиҷории иқтисодӣ бо Кушониён ҷангид"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh's Iran is a universal empire that must maintain authority in all directions. Shapur's dual campaigns — west against Rome, east against the Kushans — demonstrate that the Sasanian empire was genuinely pan-Iranian in ambition.",
+      "explanation_fa": "ایرانِ شاهنامه یک امپراتوریِ جهانی است که باید در همه‌ی جهات اقتدار حفظ کند.",
+      "explanation_tg": "Эрони Шоҳнома империяи ҷаҳонист ки бояд дар ҳамаи самтҳо авторитет ҳифз кунад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "shp-h1",
+      "chapter_slug": "shapur",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Shapur carved his triumph at the sacred Achaemenid site of Naqsh-e Rostam. What political statement was this making about Sasanian legitimacy?",
+      "question_fa": "شاپور پیروزی‌اش را در مکانِ مقدسِ هخامنشیِ نقشِ رستم حک کرد. این درباره‌ی مشروعیتِ ساسانی چه بیانیه‌ی سیاسی‌ای می‌کرد؟",
+      "question_tg": "Шопур ғалабаашро дар ҷойи муқаддаси Ҳахоманишии Нақши Рустам ҳак кард. Ин дар бораи машруияти Сосонӣ чӣ баёнияи сиёсие мекард?",
+      "answers": [
+        "It was simply the nearest available rock face with no political meaning",
+        "The site was chosen because Zoroastrian law required royal inscriptions there",
+        "Shapur chose the location to mock the Achaemenids for being weaker than Rome",
+        "The Sasanians are the rightful heirs of the Achaemenids — Shapur stands in the same tradition as Darius and Xerxes, confirmed by equal conquest"
+      ],
+      "answers_fa": [
+        "صرفاً نزدیک‌ترین صخره‌ی سنگیِ موجود بدون معنایِ سیاسی بود",
+        "مکان انتخاب شد چون قانونِ زرتشتی کتیبه‌های شاهانه را آنجا الزامی می‌کرد",
+        "شاپور مکان را انتخاب کرد تا هخامنشیان را به دلیلِ ضعیف‌تر بودن از روم مسخره کند",
+        "ساسانیان وارثانِ حقیقیِ هخامنشیان هستند — شاپور در همان سنتِ داریوش و خشایارشا قرار می‌گیرد، که توسطِ فتحِ مساوی تأیید شده"
+      ],
+      "answers_tg": [
+        "Танҳо наздиктарин санги дастнорас бидуни маъноии сиёсӣ буд",
+        "Ҷой интихоб шуд зеро қонуни зардуштӣ китобаҳои шоҳиро дар он ҷо лозим мекард",
+        "Шопур ҷоро интихоб кард то Ҳахоманишиёнро барои заифтар будан аз Рим масхара кунад",
+        "Сосониён вориси ҳақиқии Ҳахоманишиён ҳастанд — Шопур дар ҳамон суннати Дориюш ва Хашаёрша меистад, ки аз ҷониби фатҳи баробар тасдиқ шудааст"
+      ],
+      "correct_answer": 3,
+      "explanation": "Selecting Naqsh-e Rostam was a deliberate act of political memory: Sasanian kings belong to the same royal tradition as the Achaemenids. Shapur's victory over Rome is placed in the same register as Darius's victories — a 700-year claim of Iranian royal continuity.",
+      "explanation_fa": "انتخابِ نقشِ رستم یک عملِ عمدیِ حافظه‌ی سیاسی بود: شاهانِ ساسانی به همان سنتِ شاهانه‌ی هخامنشیان تعلق دارند.",
+      "explanation_tg": "Интихоби Нақши Рустам амали қасдии хотираи сиёсӣ буд: шоҳони Сосонӣ ба ҳамон суннати шоҳонаи Ҳахоманишиён тааллуқ доранд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shp-h2",
+      "chapter_slug": "shapur",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Shapur's victory over Valerian was unprecedented. Why does the Shahnameh make this the defining moment of Shapur's chapter rather than his administrative achievements?",
+      "question_fa": "پیروزیِ شاپور بر والریان بی‌سابقه بود. چرا شاهنامه این را لحظه‌ی تعریف‌کننده‌ی فصلِ شاپور می‌کند نه دستاوردهای اداری‌اش؟",
+      "question_tg": "Ғалабаи Шопур бар Валериан беназир буд. Чаро Шоҳнома инро лаҳзаи таъйинкунандаи фасли Шопур мекунад на дастовардҳои маъмурии ӯ?",
+      "answers": [
+        "The Shahnameh gives equal emphasis to administrative and military achievements",
+        "The capture is emphasised because Ferdowsi personally admired Rome",
+        "Epic narratives crystallise around extreme, unprecedented events — Valerian's capture is a story that proves Shapur's greatness better than any administrative reform",
+        "Administrative achievements are always more important in the Shahnameh than battles"
+      ],
+      "answers_fa": [
+        "شاهنامه توجهِ مساوی به دستاوردهای اداری و نظامی می‌دهد",
+        "اسارت تأکید می‌شود چون فردوسی شخصاً روم را تحسین می‌کرد",
+        "روایت‌های حماسی حول رویدادهای شدید و بی‌سابقه متبلور می‌شوند — اسارتِ والریان داستانی است که عظمتِ شاپور را بهتر از هر اصلاحِ اداری ثابت می‌کند",
+        "دستاوردهای اداری همیشه در شاهنامه از نبردها مهم‌تر هستند"
+      ],
+      "answers_tg": [
+        "Шоҳнома таваҷҷӯҳи баробар ба дастовардҳои маъмурӣ ва низомӣ медиҳад",
+        "Асирӣ таъкид мешавад зеро Фирдавсӣ шахсан Румро таҳсин мекард",
+        "Ривоятҳои ҳамосӣ гирди рӯйдодҳои шадид ва беназир метабаллур мешаванд — асирии Валериан достонест ки бузургии Шопурро беҳтар аз ҳар ислоҳи маъмурӣ исбот мекунад",
+        "Дастовардҳои маъмурӣ ҳамеша дар Шоҳнома аз набардҳо муҳимтар ҳастанд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Epic tradition favours the singular, memorable event over sustained competence. Valerian's capture is singular — it happened once in all of Roman history. Administrative reforms, however excellent, do not generate the same narrative force.",
+      "explanation_fa": "سنتِ حماسی رویدادِ منحصر و به‌یادماندنی را بر صلاحیتِ پایدار ترجیح می‌دهد. اسارتِ والریان منحصر است.",
+      "explanation_tg": "Суннати ҳамосӣ рӯйдоди беназир ва дар хотирамонданиро аз кобилияти пойдор афзалтар медонад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shp-h3",
+      "chapter_slug": "shapur",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Shapur twice defeated Roman armies. The Shahnameh uses this to argue something about the relative status of Iran and Rome. What is that argument?",
+      "question_fa": "شاپور دو بار ارتش‌های رومی را شکست داد. شاهنامه از این برای استدلالِ چیزی درباره‌ی وضعیتِ نسبیِ ایران و روم استفاده می‌کند. آن استدلال چیست؟",
+      "question_tg": "Шопур ду бор лашкарҳои Румиро шикаст дод. Шоҳнома аз ин барои истидлол кардани чизе дар бораи вазъи нисбии Эрон ва Рим истифода мекунад. Он истидлол чист?",
+      "answers": [
+        "Iran's victories over Rome are presented as surprising flukes",
+        "The Shahnameh is neutral about Iran versus Rome — it records both sides' victories equally",
+        "Iran is not the lesser power — it can meet and defeat the greatest empire in the West; the Shahnameh positions Iran as Rome's equal or superior",
+        "The defeats prove Rome was always the stronger power and Shapur was simply lucky"
+      ],
+      "answers_fa": [
+        "پیروزی‌های ایران بر روم به عنوانِ تصادفِ شگفت‌انگیز ارائه می‌شوند",
+        "شاهنامه درباره‌ی ایران در برابرِ روم بی‌طرف است",
+        "ایران قدرتِ کمتر نیست — می‌تواند با بزرگ‌ترین امپراتوریِ غرب روبرو شود و آن را شکست دهد؛ شاهنامه ایران را مساوی یا برتر از روم قرار می‌دهد",
+        "شکست‌ها ثابت می‌کنند روم همیشه قدرتِ قوی‌تر بود و شاپور فقط خوش‌شانس بود"
+      ],
+      "answers_tg": [
+        "Ғалабаҳои Эрон бар Рим ба унвони тасодуфи шигифтовар пешкаш мешаванд",
+        "Шоҳнома дар бораи Эрон дар баробари Рим беторафона аст",
+        "Эрон қудрати камтар нест — метавонад бо бузургтарин империяи ғарб рӯбарӯ шавад ва онро шикаст диҳад؛ Шоҳнома Эронро баробар ё бартар аз Рим ҷой медиҳад",
+        "Шикастҳо исбот мекунанд Рим ҳамеша қудрати қавитар буд ва Шопур танҳо бахтёр буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh uses Shapur's Roman victories as evidence of Iranian civilisational parity with Rome. In an era when Rome was considered the dominant Western power, the Shahnameh's claim that an Iranian king could capture a Roman emperor is an assertion of Iranian greatness.",
+      "explanation_fa": "شاهنامه از پیروزی‌های رومیِ شاپور به عنوانِ مدرکِ تساویِ تمدنیِ ایران با روم استفاده می‌کند.",
+      "explanation_tg": "Шоҳнома аз ғалабаҳои Румии Шопур ба унвони далели баробарии тамаддунии Эрон бо Рим истифода мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shp-h4",
+      "chapter_slug": "shapur",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The spy mission to Rome is inserted before Shapur's military campaigns. What narrative function does this adventure serve?",
+      "question_fa": "مأموریتِ جاسوسی به روم قبل از لشکرکشی‌های نظامیِ شاپور درج می‌شود. این ماجراجویی چه کارکردِ روایی دارد؟",
+      "question_tg": "Мисияти ҷосусӣ ба Рим пеш аз лашкаркашиҳои низомии Шопур илова мешавад. Ин саргузашт кадом кори ривоӣ дорад?",
+      "answers": [
+        "It shows Shapur was humble enough to need to spy on Rome",
+        "It establishes Shapur's personal courage and intelligence before his military victories — he did not win by numbers alone but by knowing his enemy",
+        "It suggests Rome was so powerful that Iran had to spy on it",
+        "It is a purely fictional addition with no narrative function"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد شاپور به اندازه‌ی کافی فروتن بود که نیاز داشت از روم جاسوسی کند",
+        "شجاعت و هوشِ شخصیِ شاپور را قبل از پیروزی‌های نظامی‌اش ثابت می‌کند — نه فقط با تعداد بلکه با شناختِ دشمنش برنده شد",
+        "نشان می‌دهد روم خیلی قدرتمند بود که ایران مجبور بود از آن جاسوسی کند",
+        "یک اضافه‌ی صرفاً داستانی بدون کارکردِ روایی است"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад Шопур ба қадри кофӣ фурӯтан буд ки ниёз дошт аз Рим ҷосусӣ кунад",
+        "Шуҷоат ва зираки шахсии Шопурро пеш аз ғалабаҳои низомии ӯ исбот мекунад — на танҳо бо теъдод балки бо донистани душманаш бурд",
+        "Нишон медиҳад Рим хеле қудратманд буд ки Эрон маҷбур буд аз он ҷосусӣ кунад",
+        "Иловаи танҳо достонӣ бидуни кори ривоист"
+      ],
+      "correct_answer": 1,
+      "explanation": "The spy mission is a hero-establishing episode: before we see Shapur win large battles, we see him act alone, in disguise, in enemy territory. This personal courage narrative primes the reader to understand that Shapur's military victories were not merely the result of Persian numbers.",
+      "explanation_fa": "مأموریتِ جاسوسی یک اپیزودِ قهرمان‌محوری است: قبل از اینکه شاپور نبردهای بزرگ ببرد، او را می‌بینیم که تنها، با لباسِ مبدل، در خاکِ دشمن عمل می‌کند.",
+      "explanation_tg": "Мисияти ҷосусӣ эпизоди қаҳрамонтаъсисест: пеш аз ин ки Шопур набардҳои бузург бебарад, ӯро мебинем ки танҳо, бо либоси мубаддал, дар хоки душман амал мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shp-h5",
+      "chapter_slug": "shapur",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Shapur's chapter shows Iran at its military peak. Given that the chronicle ends with the Arab conquest, what tragic dimension does this peak carry?",
+      "question_fa": "فصلِ شاپور ایران را در اوجِ نظامی‌اش نشان می‌دهد. با توجه به اینکه شاهنامه با فتحِ عرب پایان می‌یابد، این اوج چه بعدِ تراژیکی حمل می‌کند؟",
+      "question_tg": "Фасли Шопур Эронро дар авҷи низомии худ нишон медиҳад. Бо назардошти ин ки Шоҳнома бо фатҳи арабӣ поён меёбад, ин авҷ кадом баъди фоҷиавиро мебарад?",
+      "answers": [
+        "The peak shows that Iran should have been able to resist the Arab conquest",
+        "There is no tragic dimension — the chronicle is neutral about the Arab conquest",
+        "The tragic dimension is that Shapur himself caused the later decline by his pride",
+        "The peak makes the fall more painful — knowing what Iran achieves under Shapur makes the Arab conquest four centuries later feel like the loss of something genuinely great"
+      ],
+      "answers_fa": [
+        "اوج نشان می‌دهد که ایران باید می‌توانست در برابرِ فتحِ عرب مقاومت کند",
+        "هیچ بعدِ تراژیکی وجود ندارد — شاهنامه درباره‌ی فتحِ عرب بی‌طرف است",
+        "بعدِ تراژیک این است که شاپور خودش با غرورش باعثِ افولِ بعدی شد",
+        "اوج سقوط را دردناک‌تر می‌کند — دانستنِ آنچه ایران زیرِ شاپور به دست می‌آورد باعث می‌شود فتحِ عرب چهار قرن بعد مثلِ از دست دادنِ چیزِ واقعاً بزرگی احساس شود"
+      ],
+      "answers_tg": [
+        "Авҷ нишон медиҳад ки Эрон бояд метавонист дар баробари фатҳи арабӣ муқовимат кунад",
+        "Ҳеч баъди фоҷиавие вуҷуд надорад — Шоҳнома дар бораи фатҳи арабӣ беторафона аст",
+        "Баъди фоҷиавӣ ин аст ки Шопур худаш бо такаббури худ боиси инҳирофи баъдӣ шуд",
+        "Авҷ афтоданро дардноктар мекунад — донистани он чи Эрон зери Шопур ба даст меорад боис мешавад фатҳи арабӣ чаҳор аср баъдтар монанди аз даст додани чизи воқеан бузурге ҳис шавад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's narrative arc requires Shapur's peak to make sense of the later fall. The reader who knows how great Iran was under Shapur will feel the Arab conquest as genuine tragedy rather than mere political change. Peak and fall together constitute the Shahnameh's central elegy.",
+      "explanation_fa": "کمانِ رواییِ شاهنامه به اوجِ شاپور نیاز دارد تا سقوطِ بعدی معنا پیدا کند.",
+      "explanation_tg": "Камони ривоии Шоҳнома ба авҷи Шопур ниёз дорад то афтодани баъдӣ маъно пайдо кунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shp-h6",
+      "chapter_slug": "shapur",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Shapur captured Valerian at Edessa in 260 CE. The Shahnameh elevates this into a moment of cosmic significance. What technique does it use?",
+      "question_fa": "شاپور والریان را در ادسا در ۲۶۰ میلادی اسیر کرد. شاهنامه این را به لحظه‌ای از اهمیتِ کیهانی ارتقا می‌دهد. از چه تکنیکی استفاده می‌کند؟",
+      "question_tg": "Шопур Валерианро дар Эдесса дар 260 мелодӣ асир кард. Шоҳнома инро ба лаҳзаи аҳамияти кайҳонӣ баланд мебарад. Аз кадом техника истифода мекунад?",
+      "answers": [
+        "By quoting Valerian's own words as he surrenders",
+        "By describing the battle as a punishment for Rome's earlier attacks on Iran",
+        "By including detailed military analysis of why the Roman army failed",
+        "By framing it as proof of the farr's favour — Iran wins this impossible victory because the divine order supports Iranian kingship at this moment"
+      ],
+      "answers_fa": [
+        "با نقلِ کلماتِ خودِ والریان در هنگامِ تسلیم",
+        "با توصیفِ نبرد به عنوانِ مجازاتی برای حملاتِ قبلیِ روم به ایران",
+        "با گنجاندنِ تحلیلِ نظامیِ دقیق از اینکه چرا ارتشِ رومی شکست خورد",
+        "با قاب‌بندیِ آن به عنوانِ اثباتِ لطفِ فرّ — ایران این پیروزیِ غیرممکن را به دست می‌آورد چون نظمِ الهی در این لحظه شاهنشاهیِ ایرانی را حمایت می‌کند"
+      ],
+      "answers_tg": [
+        "Бо нақли калимоти худи Валериан ҳангоми таслим",
+        "Бо тавсифи набард ба унвони ҷазои ҳуҷумҳои қаблии Рим ба Эрон",
+        "Бо гунҷонидани таҳлили низомии дақиқ аз ин ки чаро лашкари Румӣ шикаст хӯрд",
+        "Бо чорчӯбгузории он ба унвони исботи марҳамати фарр — Эрон ин ғалабаи ғайримумкинро ба даст меорад зеро тартиби илоҳӣ дар ин лаҳза шоҳаншоҳии эрониро ҳимоят мекунад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh frames all great military victories as expressions of the farr. Valerian's capture is not just good tactics — it is the moment when the cosmic order asserts Iranian supremacy over Rome through Shapur's person.",
+      "explanation_fa": "شاهنامه همه‌ی پیروزی‌های نظامیِ بزرگ را به عنوانِ بیانِ فرّ قاب‌بندی می‌کند. اسارتِ والریان فقط تاکتیکِ خوب نیست.",
+      "explanation_tg": "Шоҳнома ҳамаи ғалабаҳои низомии бузургро ба унвони баёни фарр чорчӯбгузорӣ мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shp-h7",
+      "chapter_slug": "shapur",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Shapur built an empire from Mesopotamia to Central Asia. The Shahnameh records this expansion as consolidation rather than aggression. What distinction does the text draw?",
+      "question_fa": "شاپور امپراتوری‌ای از بین‌النهرین تا آسیای مرکزی ساخت. شاهنامه این گسترش را تثبیت می‌نامد نه تهاجم. متن چه تمایزی می‌کشد؟",
+      "question_tg": "Шопур аз Байнаннаҳрайн то Осиёи Марказӣ империя сохт. Шоҳнома ин тавсеаро таҳким меномад на таҷовуз. Матн кадом тафовутро мекашад?",
+      "answers": [
+        "Shapur's campaigns were genuinely defensive responses to Roman aggression",
+        "The Shahnameh makes no distinction — all expansion is treated the same way",
+        "Iranian expansion restores what belongs to Iran by right of tradition — it is consolidation of the ancient Iranian world, not conquest of foreign lands",
+        "The distinction between consolidation and aggression depends entirely on who wins"
+      ],
+      "answers_fa": [
+        "لشکرکشی‌های شاپور واقعاً پاسخ‌های دفاعی به تهاجمِ رومی بودند",
+        "شاهنامه هیچ تمایزی نمی‌کند — همه‌ی گسترش‌ها یکسان رفتار می‌شوند",
+        "گسترشِ ایرانی آنچه را که از نظرِ سنت به ایران تعلق دارد بازمی‌گرداند — تثبیتِ دنیای ایرانیِ باستان است نه فتحِ سرزمین‌های خارجی",
+        "تمایز بینِ تثبیت و تهاجم کاملاً به اینکه چه کسی برنده می‌شود بستگی دارد"
+      ],
+      "answers_tg": [
+        "Лашкаркашиҳои Шопур воқеан посухҳои дифоъии ба таҷовузи Рум буданд",
+        "Шоҳнома ҳеч тафовуте намекунад — ҳамаи тавсеаҳо якхела рафтор мешаванд",
+        "Тавсеаи эронӣ он чиро ки аз назари суннат ба Эрон тааллуқ дорад барқарор мекунад — таҳкими ҷаҳони ирониии қадим аст на фатҳи сарзаминҳои хориҷӣ",
+        "Тафовути байни таҳким ва таҷовуз комилан ба ин ки кӣ бурд вобаста аст"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh's political geography treats the Iranian world as a coherent space with natural boundaries. Iranian expansion into Central Asia is framed as restoring the natural Iranian sphere, not aggression against foreign peoples.",
+      "explanation_fa": "جغرافیایِ سیاسیِ شاهنامه دنیای ایرانی را به عنوانِ یک فضایِ منسجم با مرزهای طبیعی تلقی می‌کند.",
+      "explanation_tg": "Ҷуғрофиёи сиёсии Шоҳнома ҷаҳони эрониро ба унвони фазои мунсаҷим бо марзҳои табиӣ тлақӣ мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shp-h8",
+      "chapter_slug": "shapur",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh gives Shapur the title 'Great' through its narrative emphasis. By what criteria does the text measure greatness for a Sasanian king?",
+      "question_fa": "شاهنامه از طریقِ تأکیدِ روایی به شاپور لقبِ «بزرگ» می‌دهد. متن عظمت را برای یک شاهِ ساسانی با چه معیارهایی می‌سنجد؟",
+      "question_tg": "Шоҳнома тавассути таъкиди ривоӣ ба Шопур унвони «Бузург»-ро медиҳад. Матн бузургиро барои шоҳи Сосонӣ бо кадом меъёрҳо мекашад?",
+      "answers": [
+        "Piety and religious patronage are the only criteria for greatness",
+        "Longevity of reign is the primary measure — the longer a king rules, the greater he was",
+        "Military achievement against worthy enemies + consolidation of the realm + acts that leave permanent marks (inscriptions, cities) — all three are required",
+        "Military victory alone qualifies a king as great in the Shahnameh"
+      ],
+      "answers_fa": [
+        "تقوا و حمایتِ دینی تنها معیارهای عظمت هستند",
+        "طولِ سلطنت معیارِ اصلی است — هر چه شاهی طولانی‌تر حکومت کند، بزرگ‌تر است",
+        "دستاوردِ نظامی در برابرِ دشمنانِ شایسته + تثبیتِ قلمرو + اعمالی که آثارِ دائمی بجا می‌گذارند (کتیبه‌ها، شهرها) — هر سه با هم لازم هستند",
+        "پیروزیِ نظامی به تنهایی یک شاه را در شاهنامه بزرگ می‌کند"
+      ],
+      "answers_tg": [
+        "Парҳезгорӣ ва ҳимояти динӣ ягона меъёрҳои бузургианд",
+        "Тӯли ҳукмронӣ меъёри асосист — ҳар чи шоҳе тӯлонитар ҳукумат кунад, бузургтар аст",
+        "Дастоварди низомӣ дар баробари душманони шоиста + таҳкими қаламрав + амалҳое ки осори доимӣ мегузоранд (китобаҳо, шаҳрҳо) — ҳамаи се бо ҳам лозиманд",
+        "Ғалабаи низомӣ ба танҳоӣ шоҳро дар Шоҳнома бузург мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh's Shapur chapter uses three criteria for greatness: military achievement (Valerian's capture), realm consolidation (defeating Kushans and securing borders), and permanent legacy (Naqsh-e Rostam reliefs). A king who achieves all three earns the chronicle's highest register.",
+      "explanation_fa": "فصلِ شاپورِ شاهنامه سه معیار برای عظمت استفاده می‌کند: دستاوردِ نظامی، تثبیتِ قلمرو، و میراثِ دائمی.",
+      "explanation_tg": "Фасли Шопури Шоҳнома се меъёр барои бузургӣ истифода мекунад: дастоварди низомӣ, таҳкими қаламрав, ва мероси доимӣ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

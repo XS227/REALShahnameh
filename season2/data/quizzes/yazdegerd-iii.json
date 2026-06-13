@@ -1,143 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "yd3-e1",
+      "id": "yz3-e1",
       "chapter_slug": "yazdegerd-iii",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "How old was Yazdegerd III when he was crowned the last Sasanian king?",
-      "question_fa": "یزدگرد سوم وقتی به عنوان آخرین شاه ساسانی تاجگذاری کرد چند ساله بود؟",
-      "question_tg": "Яздегарди Сеюм вақте ҳамчун охирин подшоҳи Сосонӣ тоҷгузорӣ кард чанд сола буд?",
+      "question": "How old was Yazdegerd III when he was crowned in 632 CE?",
+      "question_fa": "یزدگردِ سوم هنگامِ تاج‌گذاری در ۶۳۲ میلادی چند ساله بود؟",
+      "question_tg": "Яздагерди Севум ҳангоми тоҷгузорӣ дар соли 632 мелодӣ чандсола буд?",
       "answers": [
-        "Fourteen",
-        "Twenty-five",
-        "Thirty",
-        "Eight"
+        "Fourteen — the last male of the Sasanian line anyone could find",
+        "Forty — a seasoned general",
+        "Seven — an infant under regents",
+        "Twenty-five — fresh from commanding armies"
       ],
       "answers_fa": [
-        "چهارده",
-        "بیست و پنج",
-        "سی",
-        "هشت"
+        "چهارده — آخرین مردِ تبارِ ساسانی که کسی توانست بیابد",
+        "چهل — سرداری کارکشته",
+        "هفت — کودکی زیرِ دستِ نایبان",
+        "بیست‌وپنج — تازه از فرماندهیِ ارتش‌ها"
       ],
       "answers_tg": [
-        "Чордаҳ",
-        "Бисту панҷ",
-        "Си",
-        "Ҳашт"
+        "Чаҳордаҳ — охирин марди табори сосонӣ ки касе тавонист биёбад",
+        "Чиҳил — сардоре коркашта",
+        "Ҳафт — кӯдаке зери дасти ноибон",
+        "Бисту панҷ — тоза аз фармондеҳии лашкарҳо"
       ],
       "correct_answer": 0,
-      "explanation": "Yazdegerd III was fourteen years old when the last surviving nobles crowned him in 632 CE — the last male of the Sasanian line anyone could find after four years of rapid succession. He inherited an empty treasury, a scattered army, and an empire already half-gone.",
-      "explanation_fa": "یزدگرد سوم ۱۴ ساله بود که آخرین اشراف بازمانده در سال ۶۳۲ میلادی او را تاجگذاری کردند — آخرین مذکر خط ساسانی که بعد از چهار سال جانشینی سریع کسی می‌توانست پیدا کند. خزانه خالی، ارتش پراکنده و امپراتوری نیمه رفته را به ارث برد.",
-      "explanation_tg": "Яздегарди Сеюм 14 сола буд вақте охирин ашрофони бозмонда ӯро дар соли 632 милодӣ тоҷгузорӣ карданд — охирин нари хатти Сосонӣ ки пас аз чаҳор соли ҷонишинии зуд касе ёфта метавонист.",
+      "explanation": "Yazdegerd III was fourteen when they crowned him in 632 — the last male of the Sasanian line anyone could find after four years of chaos. The empire he inherited was already half-gone.",
+      "explanation_fa": "یزدگردِ سوم چهارده‌ساله بود — آخرین مردِ تبارِ ساسانی که پس از چهار سال آشوب یافتند.",
+      "explanation_tg": "Яздагерди Севум чаҳордаҳсола буд — охирин марди табори сосонӣ ки пас аз чаҳор сол ошӯб ёфтанд.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "yd3-m1",
+      "id": "yz3-e2",
       "chapter_slug": "yazdegerd-iii",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "Which two battles sealed the fate of Sasanian Iran against the Arab armies?",
-      "question_fa": "کدام دو نبرد سرنوشت ایران ساسانی را در برابر سپاه عرب مهر کرد؟",
-      "question_tg": "Кадом ду набард тақдири Эрони Сосониро дар баробари артишҳои Арабӣ муҳр кард?",
-      "answers": [
-        "Qadisiyyah (636 CE) which broke the Sasanian army, and Nahavand (642 CE) called 'the Conquest of Conquests'",
-        "Hormozdgan (636 CE) which took Ctesiphon, and Yarmouk (638 CE) which ended the eastern campaigns",
-        "Nihawand (638 CE) which killed Yazdegerd, and Marv (645 CE) which scattered the last loyalists",
-        "Edessa (634 CE) which blocked the retreat west, and Merv (650 CE) where Yazdegerd was killed"
-      ],
-      "answers_fa": [
-        "قادسیه (۶۳۶ م.) که ارتش ساسانی را شکست داد و نهاوند (۶۴۲ م.) که 'فتح الفتوح' نامیده شد",
-        "هرمزدگان (۶۳۶ م.) که تیسفون را گرفت و یرموک (۶۳۸ م.) که کمپین‌های شرقی را پایان داد",
-        "نهاوند (۶۳۸ م.) که یزدگرد را کشت و مرو (۶۴۵ م.) که آخرین وفاداران را پراکنده کرد",
-        "ادسا (۶۳۴ م.) که عقب‌نشینی غرب را مسدود کرد و مرو (۶۵۰ م.) جایی که یزدگرد کشته شد"
-      ],
-      "answers_tg": [
-        "Қодисия (636 м.) ки артиши Сосониро шикаст дод ва Наҳованд (642 м.) ки 'Фатҳ-ул-Футуҳ' номида шуд",
-        "Ҳурмузагон (636 м.) ки Тайсафунро гирифт ва Ярмук (638 м.) ки кампинияҳои шарқиро поён дод",
-        "Наҳованд (638 м.) ки Яздегардро кушт ва Марв (645 м.) ки охирин вафодоронро пароканда кард",
-        "Эдесса (634 м.) ки ақибнишинии ғарбро масдуд кард ва Марв (650 м.) ки Яздегард кушта шуд"
-      ],
-      "correct_answer": 0,
-      "explanation": "The Battle of Qadisiyyah in 636 CE broke the core Sasanian army. The Battle of Nahavand in 642 CE — which Arab sources called 'Fatah al-Futuh' (Conquest of Conquests) — ended the last organized resistance. After Nahavand, Yazdegerd had no army left, only the road east.",
-      "explanation_fa": "نبرد قادسیه در سال ۶۳۶ میلادی هسته ارتش ساسانی را شکست. نبرد نهاوند در سال ۶۴۲ میلادی — که منابع عربی آن را 'فتح الفتوح' نامیدند — آخرین مقاومت سازمان‌یافته را پایان داد. پس از نهاوند، یزدگرد دیگر ارتشی نداشت، فقط راه به سمت شرق.",
-      "explanation_tg": "Набарди Қодисия дар соли 636 милодӣ ядрои артиши Сосониро шикаст дод. Набарди Наҳованд дар соли 642 милодӣ — ки манбаъҳои Арабӣ онро 'Фатҳ-ул-Футуҳ' номиданд — охирин муқовимати созмонёфтаро поён дод.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "yd3-m2",
-      "chapter_slug": "yazdegerd-iii",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "How did Yazdegerd III die — and why does the Shahnameh present this as the fitting end of an empire?",
-      "question_fa": "یزدگرد سوم چگونه مُرد — و چرا شاهنامه این را به عنوان پایان شایسته یک امپراتوری نشان می‌دهد؟",
-      "question_tg": "Яздегарди Сеюм чӣ тавр мурд — ва чаро шоҳнома инро ҳамчун поёни шоистаи як империя нишон медиҳад?",
-      "answers": [
-        "He was killed by a miller in a hut near Merv for his jewels — the smallness of the death matches the smallness of what remained",
-        "He was captured by Arab soldiers and executed publicly in Ctesiphon",
-        "He died of illness and exhaustion in a mountain fortress in Khorasan",
-        "He was betrayed by his Turkish hosts who handed him to the Arab general for a ransom"
-      ],
-      "answers_fa": [
-        "توسط یک آسیابان در یک کلبه نزدیک مرو برای جواهراتش کشته شد — کوچکی مرگ با کوچکی آنچه مانده بود مطابقت دارد",
-        "توسط سربازان عربی اسیر شد و در تیسفون به طور علنی اعدام شد",
-        "از بیماری و خستگی در یک قلعه کوهستانی در خراسان مُرد",
-        "توسط میزبانان ترکش خیانت دید که او را برای فدیه به سردار عرب تسلیم کردند"
-      ],
-      "answers_tg": [
-        "Аз ҷониби осиёбоне дар кулбае наздики Марв барои зевараташ кушта шуд — хурдии марг бо хурдии он чи мондааст мутобиқат дорад",
-        "Аз ҷониби сарбозони Арабӣ асир шуд ва дар Тайсафун ба таври ошкоро эъдом шуд",
-        "Аз беморӣ ва хастагӣ дар қалъаи кӯҳии дар Хуросон мурд",
-        "Аз ҷониби мизбонони туркаш хиёнат шуд ки ӯро барои фидя ба сарлашкари Арабӣ таслим карданд"
-      ],
-      "correct_answer": 0,
-      "explanation": "Near Merv, a miller killed Yazdegerd for his jewels — not knowing or not caring who he was. The Shahnameh marks this as the end the empire had come to: not a great last stand but a king alone in the dark, killed for what he was carrying, by someone who saw only the jewels and not the man who wore them.",
-      "explanation_fa": "نزدیک مرو، آسیابانی یزدگرد را برای جواهراتش کشت — نه می‌دانست و نه اهمیت می‌داد که او کیست. شاهنامه این را به عنوان پایانی که امپراتوری به آن رسیده بود نشان می‌دهد: نه یک آخرین ایستادگی بزرگ بلکه شاهی تنها در تاریکی، کشته شده برای آنچه حمل می‌کرد، توسط کسی که فقط جواهرات را می‌دید نه مردی که آنها را می‌پوشید.",
-      "explanation_tg": "Наздики Марв, осиёбоне Яздегардро барои зевараташ кушт — на медонист ва на аҳамият медод ки ӯ кист. Шоҳнома инро ҳамчун поёне ки империя ба он расида буд нишон медиҳад.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "yd3-e2",
-      "chapter_slug": "yazdegerd-iii",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "What did Yazdegerd III do for nineteen years after the Arab armies invaded?",
-      "question_fa": "یزدگرد سوم بعد از تهاجم سپاه عرب نوزده سال چه کرد؟",
-      "question_tg": "Яздегарди Сеюм пас аз ҳамлаи артишҳои Арабӣ нӯздаҳ сол чӣ кард?",
+      "question": "How did Yazdegerd III die?",
+      "question_fa": "یزدگردِ سوم چگونه مُرد؟",
+      "question_tg": "Яздагерди Севум чӣ гуна мурд?",
       "answers": [
-        "He retreated east — always further east — appealing for help that never came in the form of armies",
-        "He fought a guerrilla campaign from mountain fortresses, winning small victories",
-        "He sought refuge with the Byzantine emperor who provided a small garrison",
-        "He surrendered to the Arab general at Qadisiyyah and was given a province to govern"
+        "Poisoned by his own court",
+        "A miller killed him for his jewels, in a hut by a river near Merv",
+        "He drowned crossing the Oxus",
+        "In a great last battle against the Arabs"
       ],
       "answers_fa": [
-        "به سمت شرق عقب‌نشینی کرد — همیشه بیشتر به سمت شرق — برای کمکی التماس کرد که هرگز به صورت ارتش نیامد",
-        "از قلعه‌های کوهستانی یک کمپین چریکی راه انداخت و پیروزی‌های کوچکی کسب کرد",
-        "نزد امپراتور بیزانسی پناه برد که یک پادگان کوچک فراهم کرد",
-        "در قادسیه به سردار عرب تسلیم شد و یک استان برای حکومت داده شد"
+        "به دستِ دربارِ خودش مسموم شد",
+        "آسیابانی برای جواهراتش کشتش، در کلبه‌ای کنارِ رودی نزدیکِ مرو",
+        "هنگامِ گذر از جیحون غرق شد",
+        "در واپسین نبردِ بزرگ با عرب‌ها"
       ],
       "answers_tg": [
-        "Ба самти шарқ ақибнишинӣ кард — ҳамеша бештар ба самти шарқ — барои кӯмаке илтимос кард ки ҳаргиз ба шакли артиш наомад",
-        "Аз қалъаҳои кӯҳӣ кампинияи партизонӣ сар дод ва пирӯзиҳои хурде ба даст овард",
-        "Назди императори Визонт паноҳ бурд ки гарнизони хурде фароҳам овард",
-        "Дар Қодисия ба сарлашкари Арабӣ таслим шуд ва устоне барои ҳукмронӣ дода шуд"
+        "Ба дасти дарбори худаш масмум шуд",
+        "Осиёбоне барои ҷавоҳироташ кушташ, дар кулбае канори рӯде наздики Марв",
+        "Ҳангоми гузар аз Ҷайҳун ғарқ шуд",
+        "Дар вопасин набарди бузург бо арабҳо"
+      ],
+      "correct_answer": 1,
+      "explanation": "He died near Merv, in a miller's hut by a river. The miller killed him for his jewels, not knowing or not caring who he was — no last stand, no heroic battle, a king alone in the dark.",
+      "explanation_fa": "نزدیکِ مرو، در کلبه‌ی آسیابانی مُرد — آسیابان برای جواهراتش کشتش، بی‌آنکه بداند یا اهمیت دهد که او کیست.",
+      "explanation_tg": "Наздики Марв, дар кулбаи осиёбоне мурд — осиёбон барои ҷавоҳироташ кушташ, бе он ки бидонад ё аҳамият диҳад ки ӯ кист.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "yz3-e3",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Which battle in 636 CE broke the core of the Sasanian army?",
+      "question_fa": "کدام نبرد در ۶۳۶ میلادی هسته‌ی ارتشِ ساسانی را در هم شکست؟",
+      "question_tg": "Кадом набард дар соли 636 мелодӣ ҳастаи лашкари сосониро дарҳам шикаст?",
+      "answers": [
+        "Qadisiyyah",
+        "Merv",
+        "Nahavand",
+        "Ctesiphon"
+      ],
+      "answers_fa": [
+        "قادسیه",
+        "مرو",
+        "نهاوند",
+        "تیسفون"
+      ],
+      "answers_tg": [
+        "Қодисия",
+        "Марв",
+        "Наҳованд",
+        "Тайсафун"
       ],
       "correct_answer": 0,
-      "explanation": "Yazdegerd spent nineteen years retreating east — to Media, Khorasan, Merv — always seeking help that came in promises and delegations but never in armies. Each city weighed the cost of sheltering a king the tide had passed. He was still king; he simply had no kingdom left.",
-      "explanation_fa": "یزدگرد نوزده سال صرف عقب‌نشینی به سمت شرق کرد — به ماد، خراسان، مرو — همیشه کمکی می‌جست که در قالب وعده‌ها و هیئت‌ها می‌آمد اما هرگز به صورت ارتش نیامد. هر شهری هزینه پناه دادن به شاهی که موج از او گذشته را حساب کرد. هنوز شاه بود؛ فقط دیگر هیچ پادشاهی نداشت.",
-      "explanation_tg": "Яздегард нӯздаҳ сол сарф кард ақибнишинӣ ба самти шарқ — ба Мод, Хуросон, Марв — ҳамеша кӯмак металабид ки ба шакли ваъдаҳо ва ҳайъатҳо меомад аммо ҳаргиз ба шакли артиш наомад.",
+      "explanation": "At Qadisiyyah in 636 the core of the Sasanian army was broken by the Arab forces — armies with ideology, momentum, and a willingness to die that the exhausted Sasanian levies could not match.",
+      "explanation_fa": "در قادسیه (۶۳۶) هسته‌ی ارتشِ ساسانی شکست — برابرِ ارتشی با ایدئولوژی و شتاب.",
+      "explanation_tg": "Дар Қодисия (636) ҳастаи лашкари сосонӣ шикаст — баробари лашкаре бо идеология ва шитоб.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "yz3-m1",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "What did the Arab sources call the battle of Nahavand in 642, and why?",
+      "question_fa": "منابعِ عربی نبردِ نهاوند در ۶۴۲ را چه نامیدند و چرا؟",
+      "question_tg": "Манбаъҳои арабӣ набарди Наҳованд дар 642-ро чӣ номиданд ва чаро?",
+      "answers": [
+        "The 'Day of Thirst' — because both armies ran out of water",
+        "The 'Conquest of Conquests' — because there the last organized Sasanian resistance ended",
+        "The 'False Victory' — because the Persians escaped intact",
+        "The 'Battle of the Bridge' — because it was fought over the Tigris"
+      ],
+      "answers_fa": [
+        "«روزِ تشنگی» — چون آبِ هر دو ارتش تمام شد",
+        "«فتح‌الفتوح» — چون در آن‌جا واپسین مقاومتِ سازمان‌یافته‌ی ساسانی پایان یافت",
+        "«پیروزیِ دروغین» — چون ایرانیان سالم گریختند",
+        "«نبردِ پل» — چون بر سرِ دجله جنگیده شد"
+      ],
+      "answers_tg": [
+        "«Рӯзи ташнагӣ» — зеро оби ҳар ду лашкар тамом шуд",
+        "«Фатҳ-ул-футӯҳ» — зеро дар он ҷо вопасин муқовимати созмонёфтаи сосонӣ поён ёфт",
+        "«Пирӯзии дурӯғин» — зеро эрониён солим гурехтанд",
+        "«Набарди пул» — зеро бар сари Даҷла ҷангида шуд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nahavand in 642 was called the 'Conquest of Conquests' by the Arab sources: there the last organized Sasanian resistance ended. After it, no army stood between the conquerors and the Iranian plateau.",
+      "explanation_fa": "نهاوند را «فتح‌الفتوح» نامیدند: واپسین مقاومتِ سازمان‌یافته همان‌جا پایان یافت.",
+      "explanation_tg": "Наҳовандро «Фатҳ-ул-футӯҳ» номиданд: вопасин муқовимати созмонёфта ҳамон ҷо поён ёфт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yz3-m2",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "To whom did Yazdegerd appeal for help during his long retreat, and what did he receive?",
+      "question_fa": "یزدگرد در عقب‌نشینیِ طولانی‌اش از چه کسانی کمک خواست و چه دریافت کرد؟",
+      "question_tg": "Яздагерд дар ақибнишинии тӯлонияш аз чӣ касоне кӯмак хост ва чӣ дарёфт кард?",
+      "answers": [
+        "No one — he was too proud to ask",
+        "Byzantium — which sent three legions too late",
+        "The eastern nobles, the King of the Turks, the Emperor of China — and help came in promises and delegations, never in armies",
+        "The Arab caliph — who offered him a governorship"
+      ],
+      "answers_fa": [
+        "هیچ‌کس — مغرورتر از آن بود که بخواهد",
+        "بیزانس — که سه لژیون فرستاد اما دیر",
+        "اشرافِ شرقی، خاقانِ ترکان، امپراتورِ چین — و کمک در قالبِ وعده‌ها و هیئت‌ها آمد، هرگز در قالبِ ارتش",
+        "خلیفه‌ی عرب — که به او ولایتی پیشنهاد داد"
+      ],
+      "answers_tg": [
+        "Ҳеҷ кас — мағруртар аз он буд ки бихоҳад",
+        "Бизантия — ки се легион фиристод аммо дер",
+        "Ашрофи шарқӣ, хоқони Туркон, императори Чин — ва кӯмак дар қолаби ваъдаҳо ва ҳайатҳо омад, ҳаргиз дар қолаби лашкар",
+        "Халифаи араб — ки ба ӯ вилояте пешниҳод дод"
+      ],
+      "correct_answer": 2,
+      "explanation": "He appealed to the eastern nobles, the King of the Turks, even the Emperor of China. Help came in promises and delegations and never in armies — the network of obligation that once sustained the throne had dissolved.",
+      "explanation_fa": "به اشرافِ شرقی، خاقانِ ترکان و امپراتورِ چین رو زد — وعده‌ها آمدند، ارتش‌ها هرگز.",
+      "explanation_tg": "Ба ашрофи шарқӣ, хоқони Туркон ва императори Чин рӯ зад — ваъдаҳо омаданд, лашкарҳо ҳаргиз.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yz3-m3",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Why did the cities of the east refuse to shelter the fleeing king?",
+      "question_fa": "چرا شهرهای شرق از پناه دادن به شاهِ گریزان سر باز زدند؟",
+      "question_tg": "Чаро шаҳрҳои шарқ аз паноҳ додан ба шоҳи гурезон сар бозазаданд?",
+      "answers": [
+        "They believed he was an impostor, not the real king",
+        "Each weighed the cost and decided it was not worth defending a king the tide had already passed",
+        "Religious law forbade sheltering a defeated king",
+        "The Arabs had already garrisoned every city"
+      ],
+      "answers_fa": [
+        "باور داشتند او بدلی است، نه شاهِ واقعی",
+        "هر یک هزینه را سنجید و تصمیم گرفت دفاع از شاهی که موج از او گذشته بود نمی‌ارزد",
+        "قانونِ دینی پناه دادن به شاهِ شکست‌خورده را منع می‌کرد",
+        "عرب‌ها از پیش در هر شهری پادگان گذاشته بودند"
+      ],
+      "answers_tg": [
+        "Бовар доштанд ӯ бадалист, на шоҳи воқеӣ",
+        "Ҳар як харҷро санҷид ва тасмим гирифт дифоъ аз шоҳе ки мавҷ аз ӯ гузашта буд намеарзад",
+        "Қонуни динӣ паноҳ додан ба шоҳи шикастхӯрдаро манъ мекард",
+        "Арабҳо аз пеш дар ҳар шаҳре подгон гузошта буданд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Each city that might have sheltered him did the arithmetic: defending a king whose tide had passed would cost everything and buy nothing. Loyalty had become a transaction, and Yazdegerd had nothing left to pay with.",
+      "explanation_fa": "هر شهر حساب کرد: دفاع از شاهی که موج از او گذشته همه چیز می‌بَرد و هیچ نمی‌دهد.",
+      "explanation_tg": "Ҳар шаҳр ҳисоб кард: дифоъ аз шоҳе ки мавҷ аз ӯ гузашта ҳама чизро мебарад ва ҳеҷ намедиҳад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yz3-m4",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "How long did Yazdegerd III spend retreating east ahead of armies he could not defeat?",
+      "question_fa": "یزدگردِ سوم چه مدت پیشاپیشِ ارتش‌هایی که نمی‌توانست شکست دهد به شرق عقب نشست؟",
+      "question_tg": "Яздагерди Севум чӣ муддат пешопеши лашкарҳое ки наметавонист шикаст диҳад ба шарқ ақиб нишаст?",
+      "answers": [
+        "Five years",
+        "Nineteen years",
+        "Three months",
+        "Forty years"
+      ],
+      "answers_fa": [
+        "پنج سال",
+        "نوزده سال",
+        "سه ماه",
+        "چهل سال"
+      ],
+      "answers_tg": [
+        "Панҷ сол",
+        "Нуздаҳ сол",
+        "Се моҳ",
+        "Чиҳил сол"
+      ],
+      "correct_answer": 1,
+      "explanation": "He spent nineteen years running east — from his crowning in 632 to his death near Merv in 651. Nearly two decades of being king of a kingdom that no longer existed.",
+      "explanation_fa": "نوزده سال به شرق گریخت — از تاج‌گذاری در ۶۳۲ تا مرگ نزدیکِ مرو در ۶۵۱.",
+      "explanation_tg": "Нуздаҳ сол ба шарқ гурехт — аз тоҷгузорӣ дар 632 то марг наздики Марв дар 651.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yz3-m5",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What happened to Ctesiphon, the great Sasanian capital?",
+      "question_fa": "بر سرِ تیسفون، پایتختِ بزرگِ ساسانی، چه آمد؟",
+      "question_tg": "Бар сари Тайсафун, пойтахти бузурги сосонӣ, чӣ омад?",
+      "answers": [
+        "It withstood a ten-year siege",
+        "It surrendered and became the Arab capital forever",
+        "It was taken and stripped",
+        "It was burned to the ground with no survivors"
+      ],
+      "answers_fa": [
+        "ده سال در برابرِ محاصره ایستاد",
+        "تسلیم شد و برای همیشه پایتختِ عرب شد",
+        "گرفته و غارت شد",
+        "با خاک یکسان شد و کسی زنده نماند"
+      ],
+      "answers_tg": [
+        "Даҳ сол дар баробари муҳосира истод",
+        "Таслим шуд ва барои ҳамеша пойтахти араб шуд",
+        "Гирифта ва ғорат шуд",
+        "Бо хок яксон шуд ва касе зинда намонд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Ctesiphon, the great capital, was taken and stripped after the defeats at Qadisiyyah. The seat of Anushirvan's courts and Khosrow's treasury became plunder.",
+      "explanation_fa": "تیسفون گرفته و غارت شد — تختگاهِ انوشیروان و خزانه‌ی خسرو، تاراج شد.",
+      "explanation_tg": "Тайсафун гирифта ва ғорат шуд — тахтгоҳи Ануширвон ва хазинаи Хусрав, тороҷ шуд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "yz3-h1",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "The Shahnameh marks Yazdegerd's death as 'the end the empire deserved.' What makes this ending fitting in the poem's eyes?",
+      "question_fa": "شاهنامه مرگِ یزدگرد را «پایانی که امپراتوری سزاوارش بود» می‌داند. چرا این پایان در چشمِ شعر برازنده است؟",
+      "question_tg": "Шоҳнома марги Яздагердро «поёне ки империя сазовораш буд» медонад. Чаро ин поён дар чашми шеър барозанда аст?",
+      "answers": [
+        "Because Yazdegerd was personally evil and deserved punishment",
+        "Because the empire should have fallen centuries earlier",
+        "No heroic last stand was possible because nothing heroic remained — a king alone in the dark, with no one left to defend him, is the honest image of what the empire had become",
+        "Because millers represented the oppressed classes taking revenge"
+      ],
+      "answers_fa": [
+        "چون یزدگرد شخصاً پلید بود و سزاوارِ مجازات",
+        "چون امپراتوری باید قرن‌ها زودتر سقوط می‌کرد",
+        "هیچ ایستادگیِ قهرمانانه‌ای ممکن نبود چون چیزِ قهرمانانه‌ای نمانده بود — شاهی تنها در تاریکی، بی‌هیچ مدافعی، تصویرِ صادقانه‌ی آن چیزی است که امپراتوری شده بود",
+        "چون آسیابان‌ها نمادِ انتقامِ طبقاتِ ستمدیده بودند"
+      ],
+      "answers_tg": [
+        "Зеро Яздагерд шахсан палид буд ва сазовори ҷазо",
+        "Зеро империя бояд қарнҳо зудтар суқут мекард",
+        "Ҳеҷ истодагии қаҳрамононае мумкин набуд зеро чизи қаҳрамононае намонда буд — шоҳе танҳо дар торикӣ, бе ҳеҷ мудофеъе, тасвири содиқонаи он чизест ки империя шуда буд",
+        "Зеро осиёбонҳо намоди интиқоми табақаҳои ситамдида буданд"
+      ],
+      "correct_answer": 2,
+      "explanation": "An empire that had consumed its own legitimacy, army and loyalty could not produce a heroic ending — there was nothing left to produce one with. The miller's hut is not cruelty on the poem's part but accuracy: the death matches the condition. Endings, in the Shahnameh, diagnose what came before them.",
+      "explanation_fa": "امپراتوری‌ای که مشروعیت و ارتش و وفاداری‌اش را خورده بود نمی‌توانست پایانی قهرمانانه بسازد — کلبه‌ی آسیابان دقت است، نه بی‌رحمی.",
+      "explanation_tg": "Империяе ки машруият ва лашкар ва вафодориашро хӯрда буд наметавонист поёне қаҳрамонона бисозад — кулбаи осиёбон диққат аст, на бераҳмӣ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yz3-h2",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "'The Farr had moved on. Iran had not ended. It had changed hands.' What crucial distinction is drawn in these closing lines?",
+      "question_fa": "«فرّ کوچیده بود. ایران پایان نیافته بود. دست به دست شده بود.» چه تمایزِ حیاتی‌ای در این سطرهای پایانی ترسیم می‌شود؟",
+      "question_tg": "«Фарр кӯчида буд. Эрон поён наёфта буд. Даст ба даст шуда буд.» Чӣ тамоюзи ҳаётие дар ин сатрҳои поёнӣ тарсим мешавад?",
+      "answers": [
+        "Between state and civilization — the dynasty and its throne died, but Iran as a people, language and memory continued under new rulers",
+        "Between legend and verifiable history",
+        "Between religious and secular authority",
+        "Between the eastern and western halves of the empire"
+      ],
+      "answers_fa": [
+        "میانِ دولت و تمدن — دودمان و تختش مُردند، اما ایران به‌مثابهِ مردم و زبان و حافظه زیرِ فرمانروایانِ تازه ادامه یافت",
+        "میانِ افسانه و تاریخِ اثبات‌پذیر",
+        "میانِ اقتدارِ دینی و دنیوی",
+        "میانِ نیمه‌های شرقی و غربیِ امپراتوری"
+      ],
+      "answers_tg": [
+        "Байни давлат ва тамаддун — дудмон ва тахташ мурданд, аммо Эрон ба мисоли мардум ва забон ва ҳофиза зери фармонравоёни тоза идома ёфт",
+        "Байни афсона ва таърихи исботпазир",
+        "Байни иқтидори динӣ ва дунявӣ",
+        "Байни нимаҳои шарқӣ ва ғарбии империя"
+      ],
+      "correct_answer": 0,
+      "explanation": "The lines refuse the equation of dynasty with nation. A state is an arrangement of power; a civilization is a people's language, memory and self-understanding. The first ended at Merv. The second — as the rest of the Shahnameh's own existence proves — survived the change of hands.",
+      "explanation_fa": "این سطرها دودمان را با ملت یکی نمی‌گیرند: دولت در مرو پایان یافت؛ تمدن — چنان‌که خودِ شاهنامه ثابت می‌کند — ماند.",
+      "explanation_tg": "Ин сатрҳо дудмонро бо миллат яке намегиранд: давлат дар Марв поён ёфт; тамаддун — чунон ки худи Шоҳнома исбот мекунад — монд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yz3-h3",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "What made the Arab armies fundamentally different from the raiders the Sasanians had managed for generations?",
+      "question_fa": "چه چیزی ارتش‌های عرب را بنیادی‌تر از مهاجمانی که ساسانیان نسل‌ها مهارشان کرده بودند متفاوت می‌کرد؟",
+      "question_tg": "Чӣ чизе лашкарҳои арабро бунёдитар аз муҳоҷимоне ки сосониён наслҳо маҳорашон карда буданд мутафовит мекард?",
+      "answers": [
+        "They knew the Persian roads from years as merchants",
+        "They had superior siege engines from China",
+        "They were far more numerous than any previous enemy",
+        "They came with ideology, momentum, and a willingness to die that exhausted levies could not match — belief had turned raiders into a force of history"
+      ],
+      "answers_fa": [
+        "از سال‌ها بازرگانی راه‌های ایران را می‌شناختند",
+        "ماشین‌های محاصره‌ی برتری از چین داشتند",
+        "از هر دشمنِ پیشین بسیار پرشمارتر بودند",
+        "با ایدئولوژی، شتاب و آمادگی برای مرگ می‌آمدند که سربازگیری‌های فرسوده توانِ برابری‌اش را نداشتند — باور، مهاجمان را به نیرویی تاریخی بدل کرده بود"
+      ],
+      "answers_tg": [
+        "Аз солҳо бозаргонӣ роҳҳои Эронро мешинохтанд",
+        "Мошинҳои муҳосираи бартаре аз Чин доштанд",
+        "Аз ҳар душмани пешин бисёр пуршумортар буданд",
+        "Бо идеология, шитоб ва омодагӣ барои марг меомаданд ки сарбозгириҳои фарсуда тавони баробариашро надоштанд — бовар, муҳоҷимонро ба нерӯе таърихӣ бадал карда буд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Raiders want loot and go home; these armies wanted a world. Ideology gave them momentum, momentum gave them victories, and victories fed the ideology. Against soldiers willing to die for a certainty, the exhausted Sasanian levies — fighting for a state that no longer paid or inspired them — had no answer.",
+      "explanation_fa": "مهاجم غنیمت می‌خواهد و برمی‌گردد؛ این ارتش‌ها جهانی می‌خواستند. در برابرِ یقین، سربازگیریِ فرسوده پاسخی نداشت.",
+      "explanation_tg": "Муҳоҷим ғанимат мехоҳад ва бармегардад; ин лашкарҳо ҷаҳоне мехостанд. Дар баробари яқин, сарбозгирии фарсуда посухе надошт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yz3-h4",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "'He was still the king. He simply had no kingdom left.' What does this paradox expose about the nature of kingship?",
+      "question_fa": "«او همچنان شاه بود. صرفاً دیگر پادشاهی‌ای نداشت.» این تناقض درباره‌ی سرشتِ پادشاهی چه چیزی را برملا می‌کند؟",
+      "question_tg": "«Ӯ ҳамчунон шоҳ буд. Сирфан дигар подшоҳие надошт.» Ин таноқуз дар бораи сиришти подшоҳӣ чӣ чизеро барамало мекунад?",
+      "answers": [
+        "Kingship is a relationship, not a possession — a title without people who answer to it is a word, and Yazdegerd spent nineteen years as a word",
+        "The title should have passed to his daughters",
+        "Kingship is sacred and survives all circumstances",
+        "A king without a kingdom is freer than one with it"
+      ],
+      "answers_fa": [
+        "پادشاهی رابطه است، نه دارایی — لقبی بدونِ مردمی که پاسخش گویند فقط واژه است، و یزدگرد نوزده سال یک واژه بود",
+        "لقب باید به دخترانش می‌رسید",
+        "پادشاهی مقدس است و از هر شرایطی جان به در می‌برد",
+        "شاهِ بی‌پادشاهی آزادتر از شاهِ باپادشاهی است"
+      ],
+      "answers_tg": [
+        "Подшоҳӣ робита аст, на дороӣ — лақабе бе мардуме ки посухаш гӯянд танҳо вожа аст, ва Яздагерд нуздаҳ сол як вожа буд",
+        "Лақаб бояд ба духтаронаш мерасид",
+        "Подшоҳӣ муқаддас аст ва аз ҳар шароите ҷон ба дар мебарад",
+        "Шоҳи беподшоҳӣ озодтар аз шоҳи боподшоҳист"
+      ],
+      "correct_answer": 0,
+      "explanation": "Nothing was ever formally taken from Yazdegerd: no abdication, no rival coronation. Yet each year fewer people answered when the king commanded — and a king no one obeys is a category error walking. The Shahnameh strips kingship to its true substance: not blood or crown, but the living web of people who respond.",
+      "explanation_fa": "هیچ‌چیز رسماً از یزدگرد گرفته نشد؛ فقط هر سال کسانِ کمتری به فرمانش پاسخ دادند — و شاهی که کسی اطاعتش نکند فقط واژه است.",
+      "explanation_tg": "Ҳеҷ чиз расман аз Яздагерд гирифта нашуд; танҳо ҳар сол касони камтаре ба фармонаш посух доданд — ва шоҳе ки касе итоаташ накунад танҳо вожа аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yz3-h5",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The miller killed Yazdegerd 'for his jewels, not knowing or not caring who he was.' Why is this anonymity the cruelest stroke?",
+      "question_fa": "آسیابان یزدگرد را «برای جواهراتش کشت، بی‌آنکه بداند یا اهمیت دهد که او کیست.» چرا این گمنامی بی‌رحمانه‌ترین ضربه است؟",
+      "question_tg": "Осиёбон Яздагердро «барои ҷавоҳироташ кушт, бе он ки бидонад ё аҳамият диҳад ки ӯ кист.» Чаро ин гумномӣ бераҳмонатарин зарба аст?",
+      "answers": [
+        "Because a king should only be killed by another king",
+        "The empire's last king died as an anonymous robbery victim — history had become so indifferent to the Sasanian name that even his killer did not bother with it",
+        "Because the jewels were fake and the murder pointless",
+        "Because the miller escaped without punishment"
+      ],
+      "answers_fa": [
+        "چون شاه را فقط شاهی دیگر باید بکشد",
+        "واپسین شاهِ امپراتوری همچون قربانیِ گمنامِ یک سرقت مُرد — تاریخ چنان به نامِ ساسانی بی‌اعتنا شده بود که حتی قاتلش زحمتِ دانستنش را نکشید",
+        "چون جواهرات بدلی بودند و قتل بیهوده",
+        "چون آسیابان بی‌مجازات گریخت"
+      ],
+      "answers_tg": [
+        "Зеро шоҳро танҳо шоҳе дигар бояд бикушад",
+        "Вопасин шоҳи империя ҳамчун қурбонии гумноми як сирқат мурд — таърих чунон ба номи сосонӣ беэътино шуда буд ки ҳатто қотилаш заҳмати донистанашро накашид",
+        "Зеро ҷавоҳирот бадалӣ буданд ва қатл беҳуда",
+        "Зеро осиёбон беҷазо гурехт"
+      ],
+      "correct_answer": 1,
+      "explanation": "To be killed by Heraclius or the caliph would still be history — an event between powers. To be killed for pocket contents by a man who didn't ask your name is to have fallen out of history entirely. The indifference, not the violence, is the final measurement of how far the dynasty had fallen.",
+      "explanation_fa": "کشته شدن به دستِ خلیفه هنوز تاریخ بود؛ کشته شدن برای محتویاتِ جیب، سقوطِ کامل از تاریخ است.",
+      "explanation_tg": "Кушта шудан ба дасти халифа ҳанӯз таърих буд; кушта шудан барои муҳтавиёти ҷайб, суқути комил аз таърих аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yz3-h6",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Why does the Shahnameh give the boy-king his own chapter, when his reign was nineteen years of retreat?",
+      "question_fa": "چرا شاهنامه به شاهِ نوجوان فصلِ خودش را می‌دهد، وقتی سلطنتش نوزده سال عقب‌نشینی بود؟",
+      "question_tg": "Чаро Шоҳнома ба шоҳи наврас боби худашро медиҳад, вақте салтанаташ нуздаҳ сол ақибнишинӣ буд?",
+      "answers": [
+        "Because his military genius nearly saved the empire",
+        "Because chapters were assigned by length of reign",
+        "Because the poem needed an even number of kings",
+        "Because he deserves it — he carried the crown's burden through its worst years without choosing any of the failures that created them, and dignity in witness is worth a chapter"
+      ],
+      "answers_fa": [
+        "چون نبوغِ نظامی‌اش نزدیک بود امپراتوری را نجات دهد",
+        "چون فصل‌ها بر اساسِ طولِ سلطنت تقسیم می‌شدند",
+        "چون شعر به تعدادِ زوجِ شاهان نیاز داشت",
+        "چون سزاوارش است — بارِ تاج را در بدترین سال‌هایش حمل کرد بی‌آنکه هیچ‌یک از شکست‌هایی را که آن‌ها را ساختند خودش رقم زده باشد، و وقار در شاهدبودن فصلی می‌ارزد"
+      ],
+      "answers_tg": [
+        "Зеро нубуғи низомияш наздик буд империяро наҷот диҳад",
+        "Зеро фаслҳо бар асоси тӯли салтанат тақсим мешуданд",
+        "Зеро шеър ба теъдоди завҷи шоҳон ниёз дошт",
+        "Зеро сазовораш аст — бори тоҷро дар бадтарин солҳояш ҳамл кард бе он ки ҳеҷ яке аз шикастҳоеро ки онҳоро сохтанд худаш рақам зада бошад, ва виқор дар шоҳидбудан фасле меарзад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Yazdegerd inherited an ending he did not author: the treasury emptied before his birth, the legitimacy broken by other men's knives. He carried the crown anyway, for nineteen years, to the last hut. The Shahnameh's chapter is an act of justice — separating the man from the collapse he was handed.",
+      "explanation_fa": "یزدگرد پایانی را به ارث برد که خود ننوشته بود — و با این حال تاج را نوزده سال تا واپسین کلبه حمل کرد. فصلِ او عملِ انصاف است.",
+      "explanation_tg": "Яздагерд поёнеро ба мерос бурд ки худ нанавишта буд — ва бо ин ҳол тоҷро нуздаҳ сол то вопасин кулба ҳамл кард. Боби ӯ амали инсоф аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yz3-h7",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Help came to Yazdegerd 'in promises and delegations and never in armies.' What had collapsed beneath this diplomatic theater?",
+      "question_fa": "کمک به یزدگرد «در قالبِ وعده‌ها و هیئت‌ها آمد و هرگز در قالبِ ارتش.» زیرِ این نمایشِ دیپلماتیک چه فروریخته بود؟",
+      "question_tg": "Кӯмак ба Яздагерд «дар қолаби ваъдаҳо ва ҳайатҳо омад ва ҳаргиз дар қолаби лашкар.» Зери ин намоиши дипломатӣ чӣ фурӯрехта буд?",
+      "answers": [
+        "Nothing collapsed; the allies simply never existed",
+        "The roads — armies physically could not reach him",
+        "The translation corps — his appeals were misunderstood",
+        "The network of obligation — alliances pay out only when backed by belief in your future, and no one believed in a Sasanian future anymore"
+      ],
+      "answers_fa": [
+        "چیزی فرونریخت؛ متحدان اصلاً وجود نداشتند",
+        "راه‌ها — ارتش‌ها عملاً نمی‌توانستند به او برسند",
+        "سپاهِ مترجمان — درخواست‌هایش بد فهمیده شدند",
+        "شبکه‌ی تعهد — اتحادها فقط وقتی پرداخت می‌شوند که به آینده‌ات باور باشد، و دیگر هیچ‌کس به آینده‌ی ساسانی باور نداشت"
+      ],
+      "answers_tg": [
+        "Чизе фурӯнарехт; муттаҳидон аслан вуҷуд надоштанд",
+        "Роҳҳо — лашкарҳо амалан наметавонистанд ба ӯ бирасанд",
+        "Сипоҳи тарҷумонон — дархостҳояш бад фаҳмида шуданд",
+        "Шабакаи тааҳҳуд — иттиҳодҳо танҳо вақте пардохт мешаванд ки ба ояндаат бовар бошад, ва дигар ҳеҷ кас ба ояндаи сосонӣ бовар надошт"
+      ],
+      "correct_answer": 3,
+      "explanation": "Diplomacy is credit, and credit is belief in repayment. The Turks and China sent delegations — politeness costs nothing — but armies are an investment in someone's future, and the Sasanian future had stopped being credible. The promises were condolences in advance.",
+      "explanation_fa": "دیپلماسی اعتبار است و اعتبار باور به بازپرداخت. هیئت‌ها ادب بودند؛ ارتش سرمایه‌گذاری است — و آینده‌ی ساسانی دیگر باورپذیر نبود.",
+      "explanation_tg": "Дипломатия эътибор аст ва эътибор бовар ба бозпардохт. Ҳайатҳо адаб буданд; лашкар сармоягузорист — ва ояндаи сосонӣ дигар боварпазир набуд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "yz3-h8",
+      "chapter_slug": "yazdegerd-iii",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Yazdegerd's nineteen years trace a geography: always east, city after city, to a hut near Merv. What does this map of retreat represent?",
+      "question_fa": "نوزده سالِ یزدگرد جغرافیایی ترسیم می‌کند: همیشه به شرق، شهر به شهر، تا کلبه‌ای نزدیکِ مرو. این نقشه‌ی عقب‌نشینی نمایانگرِ چیست؟",
+      "question_tg": "Нуздаҳ соли Яздагерд ҷуғрофиёе тарсим мекунад: ҳамеша ба шарқ, шаҳр ба шаҳр, то кулбае наздики Марв. Ин нақшаи ақибнишинӣ намоёнгари чист?",
+      "answers": [
+        "The traditional pilgrimage route of Sasanian kings",
+        "The empire's map dissolving in real time — each city that closed its gates subtracted itself from Iranshahr, until the realm was exactly the size of wherever the king stood",
+        "His desire to reach his ancestral homeland in the east",
+        "A military strategy of trading space for time that nearly worked"
+      ],
+      "answers_fa": [
+        "مسیرِ سنتیِ زیارتِ شاهانِ ساسانی",
+        "نقشه‌ی امپراتوری که در زمانِ واقعی حل می‌شود — هر شهری که دروازه بست خود را از ایرانشهر کم کرد، تا قلمرو دقیقاً به اندازه‌ی جایی شد که شاه ایستاده بود",
+        "آرزویش برای رسیدن به سرزمینِ نیاکانی‌اش در شرق",
+        "راهبردِ نظامیِ مبادله‌ی زمین با زمان که نزدیک بود جواب دهد"
+      ],
+      "answers_tg": [
+        "Масири суннатии зиёрати шоҳони сосонӣ",
+        "Нақшаи империя ки дар замони воқеӣ ҳал мешавад — ҳар шаҳре ки дарвоза баст худро аз Эроншаҳр кам кард, то қаламрав дақиқан ба андозаи ҷое шуд ки шоҳ истода буд",
+        "Орзуяш барои расидан ба сарзамини ниёгониаш дар шарқ",
+        "Роҳбурди низомии мубодилаи замин бо замон ки наздик буд ҷавоб диҳад"
+      ],
+      "correct_answer": 1,
+      "explanation": "Iranshahr was never a line on the ground; it was the set of places that acknowledged the king. Each refusal redrew the map smaller. By Merv, the empire that had reached the Nile measured a few paces of hut — and then, with one knife, zero. The retreat is the cartography of dissolution.",
+      "explanation_fa": "ایرانشهر خط روی زمین نبود؛ مجموعه‌ی جاهایی بود که شاه را می‌پذیرفتند. هر امتناع نقشه را کوچک‌تر کشید — تا مرو، تا کلبه، تا هیچ.",
+      "explanation_tg": "Эроншаҳр хат рӯи замин набуд; маҷмӯаи ҷойҳое буд ки шоҳро мепазируфтанд. Ҳар имтиноъ нақшаро хурдтар кашид — то Марв, то кулба, то ҳеҷ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

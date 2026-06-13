@@ -1,143 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "brc-e1",
+      "id": "bchu-e1",
       "chapter_slug": "bahram-chubin",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "What insult did King Hormuz IV send Bahram Chubin that triggered the great rebellion?",
-      "question_fa": "شاه هرمز چهارم چه توهینی به بهرام چوبین فرستاد که شورش بزرگ را برانگیخت؟",
-      "question_tg": "Подшоҳи Ҳурмузи Чаҳорум чӣ таҳқире ба Баҳроми Чӯбин фиристод ки шӯриши бузургро барангехт?",
+      "question": "What insult caused Bahram Chubin to rebel against his king?",
+      "question_fa": "چه توهینی باعث شد بهرام چوبین علیهِ شاهش شورش کند؟",
+      "question_tg": "Кадом таҳқир боис шуд Баҳром Чӯбин зидди шоҳаш шӯриш кунад?",
       "answers": [
-        "A distaff and a set of women's clothes, implying Bahram had behaved dishonourably",
-        "A broken sword, indicating his military command was revoked",
-        "A dead fish wrapped in a burial cloth, threatening his life",
-        "A bag of copper coins instead of gold, publicly underpaying his troops"
+        "He was passed over for the position of chief minister",
+        "He was denied his military pay after a successful campaign",
+        "Hormuz IV sent him a spindle and women's clothing — implying he was not man enough to be a general",
+        "He was accused of treason without evidence"
       ],
       "answers_fa": [
-        "یک دوک و دست لباس زنانه که نشان می‌داد بهرام بی‌شرفانه رفتار کرده",
-        "یک شمشیر شکسته که نشان می‌داد فرماندهی نظامی‌اش لغو شده",
-        "یک ماهی مُرده پیچیده در یک پارچه کفن، تهدید جانش",
-        "کیسه‌ای از سکه‌های مسی به جای طلا، علناً کمتر از حد لازم به سربازانش پرداخت"
+        "از مقامِ وزیرِ اعظم نادیده گرفته شد",
+        "بعد از یک لشکرکشیِ موفق حقوقِ نظامی‌اش انکار شد",
+        "هرمز چهارم یک دوک و لباسِ زنانه برایش فرستاد — که نشان می‌داد به اندازه‌ی کافی مرد نیست تا سردار باشد",
+        "بدون شواهد به خیانت متهم شد"
       ],
       "answers_tg": [
-        "Дӯк ва дасти либоси занона ки нишон медод Баҳром беобрӯёна рафтор кардааст",
-        "Шамшери шикаста ки нишон медод фармондеҳии ҳарбиаш бекор шудааст",
-        "Моҳии мурда дар дар матои кафан печонидашуда, таҳдиди ҷонаш",
-        "Тӯрбаи тангаҳои мисӣ ба ҷои тилло, ошкоро камтар аз ҳад лозим ба сарбозонаш пардохт"
+        "Аз мансаби вазири аъзам нодида гирифта шуд",
+        "Пас аз лашкаркашии муваффақ маоши низомии ӯ инкор шуд",
+        "Ҳурмузи Чорум ба ӯ дӯк ва либоси занонаро фиристод — ки нишон медод ба қадри кофӣ мард нест то сардор бошад",
+        "Бидуни шоҳид ба хиёнат айбдор шуд"
       ],
-      "correct_answer": 0,
-      "explanation": "Hormuz sent Bahram a distaff and women's clothes — the most devastating insult possible to a warrior culture, implying Bahram had conducted himself dishonourably. Bahram held the distaff up before his army and asked what they thought of a king who sent such things. The rebellion began that day.",
-      "explanation_fa": "هرمز دوک و لباس زنانه به بهرام فرستاد — توهین‌آمیزترین چیز ممکن برای یک فرهنگ جنگجو، که نشان می‌داد بهرام بی‌شرفانه رفتار کرده. بهرام دوک را در برابر ارتشش بالا برد و پرسید آنها درباره پادشاهی که چنین چیزهایی می‌فرستد چه فکری می‌کنند. شورش همان روز شروع شد.",
-      "explanation_tg": "Ҳурмуз дӯк ва либоси занона ба Баҳром фиристод — таҳқиркунандатарин чизи имконпазир барои фарҳанги ҷангӣ ки нишон медод Баҳром беобрӯёна рафтор кардааст. Баҳром дӯкро дар назди артушаш боло бурд ва пурсид онҳо дар бораи подшоҳе ки чунин чизҳо мефиристад чӣ фикр доранд.",
+      "correct_answer": 2,
+      "explanation": "Hormuz IV publicly humiliated Bahram Chubin, his best general, by sending him a spindle and female garments — a profound insult to a military commander. Bahram Chubin's rebellion followed immediately.",
+      "explanation_fa": "هرمزِ چهارم بهرام چوبین، بهترین سردارش، را با فرستادنِ یک دوک و لباسِ زنانه به طورِ عمومی تحقیر کرد.",
+      "explanation_tg": "Ҳурмузи Чорум Баҳром Чӯбин, беҳтарин сардорашро, бо фиристодани дӯк ва либоси занона ба таври ошкоро таҳқир кард.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "brc-m1",
+      "id": "bchu-e2",
       "chapter_slug": "bahram-chubin",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "What made Bahram Chubin's claim to the throne historically significant beyond simple rebellion?",
-      "question_fa": "چه چیزی ادعای بهرام چوبین نسبت به تخت را فراتر از شورش ساده از نظر تاریخی مهم می‌کرد؟",
-      "question_tg": "Чӣ чизе даъвои Баҳроми Чӯбинро нисбат ба тахт аз шӯриши оддӣ аз нигоҳи таърихӣ муҳим мекард?",
-      "answers": [
-        "He was from the Mihran clan with real Arsacid/Parthian lineage — the first non-Sasanian claimant since Ardeshir founded the dynasty",
-        "He had the support of the Byzantine emperor who publicly recognized his kingship",
-        "He possessed a sacred Zoroastrian relic that the priests declared transferred the Farr to him",
-        "He was the only general who had never lost a battle, giving him unchallenged military legitimacy"
-      ],
-      "answers_fa": [
-        "او از قبیله مهران با نسب واقعی اشکانی/پارتی بود — اولین ادعاکننده غیر ساسانی از زمانی که اردشیر سلسله را تأسیس کرد",
-        "حمایت امپراتور بیزانسی را داشت که آشکارا پادشاهی‌اش را به رسمیت شناخت",
-        "یک آثار مقدس زرتشتی در اختیار داشت که روحانیون اعلام کردند فره را به او منتقل می‌کند",
-        "تنها سردار بود که هرگز در نبرد شکست نخورده بود که مشروعیت نظامی بی‌چالشی به او می‌داد"
-      ],
-      "answers_tg": [
-        "Ӯ аз қабилаи Меҳрон бо насаби воқеии Ашконӣ/Порт буд — аввалин даъвогари ғайри Сосонӣ аз замоне ки Ардашер сулоларо таъсис дод",
-        "Ҳимояти императори Визонтиро дошт ки ошкоро подшоҳияшро эътироф кард",
-        "Асаре аз осори муқаддаси Зардуштиро дар ихтиёр дошт ки рӯҳониён эълон карданд фаррро ба ӯ интиқол медиҳад",
-        "Ягона сарлашкар буд ки ҳаргиз дар набард шикаст нахӯрда буд ки машрӯиати ҳарбии бечолишеро ба ӯ медод"
-      ],
-      "correct_answer": 0,
-      "explanation": "Bahram Chubin came from the Mihran clan, one of the great Arsacid/Parthian noble houses. His claim to the throne was not just a general's grievance — it was a serious dynastic challenge backed by real lineage from the pre-Sasanian royal tradition. He was the first non-Sasanian to claim Iran's throne since Ardeshir.",
-      "explanation_fa": "بهرام چوبین از قبیله مهران، یکی از خانه‌های اشرافی بزرگ اشکانی/پارتی بود. ادعایش نسبت به تخت فقط شکایت یک سردار نبود — یک چالش سلسله‌ای جدی بود که با نسب واقعی از سنت شاهی پیش از ساسانی پشتیبانی می‌شد.",
-      "explanation_tg": "Баҳроми Чӯбин аз қабилаи Меҳрон, яке аз хонаҳои бузурги Ашконӣ/Порт буд. Даъвояш нисбат ба тахт танҳо шикоятти сарлашкар набуд — як мубориза ҷиддии сулолавӣ буд ки бо насаби воқеии анъанаи шоҳии пеш аз Сосонӣ пуштибонӣ мешуд.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "brc-e2",
-      "chapter_slug": "bahram-chubin",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "How was Bahram Chubin finally defeated after Khosrow Parviz fled to Byzantium?",
-      "question_fa": "بهرام چوبین چگونه نهایتاً شکست خورد بعد از اینکه خسرو پرویز به بیزانس گریخت؟",
-      "question_tg": "Баҳроми Чӯбин чӣ тавр дар охир шикаст хӯрд пас аз он ки Хусрави Парвез ба Визонт гурехт?",
+      "question": "Bahram Chubin was defeated. By whom and with what help?",
+      "question_fa": "بهرام چوبین شکست خورد. توسطِ چه کسی و با چه کمکی؟",
+      "question_tg": "Баҳром Чӯбин шикаст хӯрд. Аз ҷониби кӣ ва бо кадом кӯмак?",
       "answers": [
-        "Khosrow returned with Roman legions and defeated Bahram's army in a decisive battle",
-        "Bahram's own commanders betrayed him and handed him to Khosrow in exchange for pardons",
-        "The Zoroastrian priesthood declared a curse on anyone who fought for Bahram, causing mass desertion",
-        "Bahram was killed during a siege of Ctesiphon when a stray arrow struck him"
+        "By the Arab tribes who supported Sasanian legitimacy",
+        "By Khosrow Parviz, with Byzantine military support",
+        "By a Turkic alliance that Hormuz secretly organised",
+        "By Hormuz IV, using the Zoroastrian priests"
       ],
       "answers_fa": [
-        "خسرو با لشکریان رومی بازگشت و در یک نبرد قاطع ارتش بهرام را شکست داد",
-        "فرماندهان خود بهرام به او خیانت کردند و در ازای بخشش او را به خسرو تسلیم کردند",
-        "روحانیون زرتشتی نفرین‌ای بر هر کسی که برای بهرام می‌جنگید اعلام کردند که باعث فرار انبوه شد",
-        "در حین محاصره تیسفون با تیری گمشده بهرام کشته شد"
+        "توسطِ قبایلِ عرب که از مشروعیتِ ساسانی حمایت می‌کردند",
+        "توسطِ خسرو پرویز، با حمایتِ نظامیِ بیزانس",
+        "توسطِ یک اتحادِ ترکی که هرمز مخفیانه سازماندهی کرد",
+        "توسطِ هرمزِ چهارم، با استفاده از روحانیانِ زرتشتی"
       ],
       "answers_tg": [
-        "Хусрав бо лашкариёни Румӣ баргашт ва дар набарди қатъие артиши Баҳромро шикаст дод",
-        "Фармондеҳони худи Баҳром ба ӯ хиёнат карданд ва дар иваз бахшиш ӯро ба Хусрав таслим карданд",
-        "Рӯҳониёни Зардуштӣ нафрине бар ҳар касе ки барои Баҳром меҷангид эълон карданд ки сабаби фирори оммавӣ шуд",
-        "Ҳангоми муҳосираи Тайсафун бо тире гумшуда Баҳром кушта шуд"
+        "Аз ҷониби қабилаҳои Арабе ки аз машруияти Сосонӣ ҳимоят мекарданд",
+        "Аз ҷониби Хусрав Парвиз, бо дастгирии низомии Бизантия",
+        "Аз ҷониби иттиҳоди туркие ки Ҳурмуз пинҳонона ташкил кард",
+        "Аз ҷониби Ҳурмузи Чорум, бо истифода аз коҳинони зардуштӣ"
       ],
-      "correct_answer": 0,
-      "explanation": "Khosrow Parviz fled to the Byzantine Emperor Maurice and returned with Roman legions at his back. The decisive battle broke Bahram's army. Bahram escaped east into the steppes, found refuge among the Turks, and was eventually assassinated there by an agent from Khosrow's court.",
-      "explanation_fa": "خسرو پرویز نزد امپراتور بیزانسی موریس گریخت و با لشکریان رومی پشتش بازگشت. نبرد قاطع ارتش بهرام را شکست. بهرام به سمت شرق به دشت‌ها گریخت، در بین ترکان پناه پیدا کرد و در نهایت توسط فرستاده‌ای از دربار خسرو در آنجا ترور شد.",
-      "explanation_tg": "Хусрави Парвез назди императори Визонтии Маврикий гурехт ва бо лашкариёни Румӣ пушташ баргашт. Набарди қатъие артиши Баҳромро шикаст дод. Баҳром ба самти шарқ ба дашт гурехт, дар байни туркон паноҳ пайдо кард ва дар охир аз ҷониби фиристодае аз дарбори Хусрав дар он ҷо суиқасд шуд.",
+      "correct_answer": 1,
+      "explanation": "Khosrow Parviz, Hormuz IV's son, fled to Constantinople and returned with Byzantine military backing to defeat Bahram Chubin. This was the first time a Sasanian king needed foreign military help to reclaim his throne.",
+      "explanation_fa": "خسرو پرویز، پسرِ هرمزِ چهارم، به قسطنطنیه فرار کرد و با پشتیبانیِ نظامیِ بیزانس برگشت تا بهرام چوبین را شکست دهد.",
+      "explanation_tg": "Хусрав Парвиз, писари Ҳурмузи Чорум, ба Константинопол гурехт ва бо дастгирии низомии Бизантия баргашт.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "brc-m2",
+      "id": "bchu-e3",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Where did Bahram Chubin flee after his defeat and how did he die?",
+      "question_fa": "بهرام چوبین بعد از شکستش به کجا فرار کرد و چگونه مُرد؟",
+      "question_tg": "Баҳром Чӯбин пас аз шикасти худ ба куҷо гурехт ва чӣ тавр мурд?",
+      "answers": [
+        "He fled to the Turkic lands and was assassinated by an agent sent from Khosrow Parviz's court",
+        "He was killed in the final battle at the Araxes river",
+        "He committed suicide rather than be captured",
+        "He was captured and publicly executed in Ctesiphon"
+      ],
+      "answers_fa": [
+        "به سرزمین‌های ترکی فرار کرد و توسطِ فرستاده‌ای از دربارِ خسرو پرویز ترور شد",
+        "در آخرین نبرد در رودخانه‌ی ارس کشته شد",
+        "به جای اسیر شدن دست به خودکشی زد",
+        "در تیسفون دستگیر و به طورِ عمومی اعدام شد"
+      ],
+      "answers_tg": [
+        "Ба сарзаминҳои туркӣ гурехт ва аз ҷониби фиристодаи аз дарбори Хусрав Парвиз суиқасд кунонида шуд",
+        "Дар охирин набард дар дарёи Аракс кушта шуд",
+        "Ба ҷои асир шудан худкушӣ кард",
+        "Дар Тесифон дастгир ва ба таври ошкоро эъдом шуд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Bahram Chubin fled to the Turkic lands where he was given refuge. He was later killed by an assassin sent by Khosrow Parviz — a final reminder that no general, however brilliant, can permanently challenge the Sasanian system from outside it.",
+      "explanation_fa": "بهرام چوبین به سرزمین‌های ترکی فرار کرد که در آنجا پناه داده شد. بعداً توسطِ یک قاتل فرستاده‌ی خسرو پرویز کشته شد.",
+      "explanation_tg": "Баҳром Чӯбин ба сарзаминҳои туркӣ гурехт ки дар он ҷо паноҳ дода шуд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "bchu-m1",
       "chapter_slug": "bahram-chubin",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "The Shahnameh treats Bahram Chubin with unusual sympathy for a rebel. What primarily earns him this treatment?",
-      "question_fa": "شاهنامه با بهرام چوبین همدردی غیرمعمولی برای یک شورشی نشان می‌دهد. چه چیزی عمدتاً این رفتار را برایش می‌آورد؟",
-      "question_tg": "Шоҳнома бо Баҳроми Чӯбин ҳамдардии ғайриоддие барои шӯришгар нишон медиҳад. Чӣ асосан ин муносибатро барояш меовард?",
+      "question": "Bahram Chubin was the greatest Sasanian general. Why does this greatness make his rebellion more dangerous than ordinary revolts?",
+      "question_fa": "بهرام چوبین بزرگ‌ترین سردارِ ساسانی بود. چرا این عظمت شورشش را از شورش‌های معمولی خطرناک‌تر می‌کند؟",
+      "question_tg": "Баҳром Чӯбин бузургтарин сардори Сосонӣ буд. Чаро ин бузургӣ шӯришаш ро аз шӯришҳои оддӣ хатарнокатар мекунад?",
       "answers": [
-        "He was a magnificent warrior driven to rebellion by a king's deliberate cruelty, and the empire that survived him was the one that soon fell to the Arabs",
-        "He eventually repented and offered to submit to Khosrow before he was killed",
-        "The priests confirmed he had genuine Farr and would have been a just ruler if he had succeeded",
-        "He protected the Zoroastrian temples throughout his rebellion and never harmed priests"
+        "Any rebellion is equally dangerous regardless of who leads it",
+        "A great general who rebels takes the army with him and has the tactical knowledge to defeat the state that trained him",
+        "A great general's rebellion is less dangerous because he has more to lose",
+        "Military excellence never translates into political legitimacy in the Shahnameh"
       ],
       "answers_fa": [
-        "او یک جنگجوی باشکوه بود که توسط ظلم عمدی یک شاه به شورش کشانده شد و امپراتوری‌ای که از دستش جان سالم به در برد به زودی به اعراب سقوط کرد",
-        "در نهایت پشیمان شد و قبل از کشته شدن پیشنهاد تسلیم به خسرو را داد",
-        "روحانیون تأیید کردند که او فره واقعی داشت و اگر موفق می‌شد حاکم عادلی می‌بود",
-        "در طول شورشش از آتشکده‌های زرتشتی محافظت کرد و هرگز به روحانیون آسیب نزد"
+        "هر شورشی بدون توجه به اینکه چه کسی رهبری می‌کند به یک اندازه خطرناک است",
+        "یک سردارِ بزرگ که شورش می‌کند ارتش را با خود می‌برد و دانشِ تاکتیکیِ شکست دادنِ دولتی که او را آموزش داد را دارد",
+        "شورشِ یک سردارِ بزرگ کمتر خطرناک است چون بیشتر برای از دست دادن دارد",
+        "برتریِ نظامی هرگز در شاهنامه به مشروعیتِ سیاسی تبدیل نمی‌شود"
       ],
       "answers_tg": [
-        "Ӯ ҷанговари боҳашамате буд ки аз ҷониби зулми қасдии подшоҳе ба шӯриш кашонида шуда буд ва империяе ки аз дасташ ҷон солим ба дар бурд ба зудӣ ба Арабҳо суқут кард",
-        "Дар охир пушаймон шуд ва пеш аз кушта шудан пешниҳоди таслим ба Хусравро дод",
-        "Рӯҳониён тасдиқ карданд ки ӯ фарри воқеӣ дошт ва агар муваффақ мешуд ҳокими одил мебуд",
-        "Дар тӯли шӯришаш аз оташкадаҳои Зардуштӣ ҳимоят кард ва ҳаргиз ба рӯҳониён осеб назад"
+        "Ҳар шӯриш бе назардошти ин ки кӣ рабарӣ мекунад ба як андоза хатарнок аст",
+        "Сардори бузурге ки шӯриш мекунад лашкарро бо худ мебарад ва донишу тактикии шикаст додани давлате ки ӯро омӯзонид ро дорад",
+        "Шӯриши сардори бузург камтар хатарнок аст зеро бештар барои аз даст додан дорад",
+        "Бартарии низомӣ ҳеч гоҳ дар Шоҳнома ба машруияти сиёсӣ табдил намешавад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The greatest general rebellion is uniquely dangerous because it turns the state's own military capacity against itself. Bahram Chubin knew Sasanian tactics, commanded loyal troops, and had proven ability — everything a rebel needs except the farr.",
+      "explanation_fa": "شورشِ بزرگ‌ترین سردار به طورِ منحصربه‌فردی خطرناک است چون ظرفیتِ نظامیِ دولت را علیهِ خودش برمی‌گرداند.",
+      "explanation_tg": "Шӯриши бузургтарин сардор беназирона хатарнок аст зеро қобилияти низомии давлатро зидди худаш бармегардонад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bchu-m2",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "Bahram Chubin claimed the throne but could not hold it. What did he lack according to the Shahnameh?",
+      "question_fa": "بهرام چوبین ادعایِ تخت کرد اما نتوانست آن را نگه دارد. بر اساسِ شاهنامه چه چیزی کم داشت؟",
+      "question_tg": "Баҳром Чӯбин иддаъои тахт кард аммо наметавонист онро нигоҳ дорад. Бар асоси Шоҳнома аз чӣ маҳрум буд?",
+      "answers": [
+        "Military capacity — he was not actually a great enough commander",
+        "Religious approval — the Zoroastrian priests refused to crown him",
+        "Noble support — the aristocracy never accepted him",
+        "The farr — divine legitimacy that makes a king more than a military commander; without it, even the greatest general is only a usurper"
+      ],
+      "answers_fa": [
+        "ظرفیتِ نظامی — در واقع فرمانده‌ی خوب‌کافی نبود",
+        "تأییدِ دینی — روحانیانِ زرتشتی از تاج‌گذاریِ او امتناع کردند",
+        "حمایتِ اشراف — اشراف هرگز او را نپذیرفتند",
+        "فرّ — مشروعیتِ الهی که شاه را بیشتر از یک فرمانده‌ی نظامی می‌کند؛ بدون آن، حتی بزرگ‌ترین سردار فقط یک غاصب است"
+      ],
+      "answers_tg": [
+        "Қобилияти низомӣ — воқеан фармондеҳи кофии хуб набуд",
+        "Тасдиқи динӣ — коҳинони зардуштӣ аз тоҷгузории ӯ имтиноъ карданд",
+        "Дастгирии ашроф — ашроф ҳеч гоҳ ӯро напазируфт",
+        "Фарр — машруияти илоҳие ки шоҳро аз фармондеҳи низомӣ бештар мекунад؛ бидуни он, ҳатто бузургтарин сардор танҳо ғосиб аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "Bahram Chubin is the Shahnameh's clearest case study of military genius without divine legitimacy. He was the greatest general of his age but without the farr, his kingship could not stabilise. The system rejected him.",
+      "explanation_fa": "بهرام چوبین واضح‌ترین مطالعه‌ی موردیِ شاهنامه از نبوغِ نظامی بدون مشروعیتِ الهی است.",
+      "explanation_tg": "Баҳром Чӯбин равшантарин мутолиаи мавридии Шоҳнома аз нобиғаи низомӣ бидуни машруияти илоҳист.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bchu-m3",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Khosrow Parviz needed Byzantine help to defeat Bahram Chubin. What does this dependency say about the state of Sasanian power?",
+      "question_fa": "خسرو پرویز به کمکِ بیزانس نیاز داشت تا بهرام چوبین را شکست دهد. این وابستگی درباره‌ی وضعیتِ قدرتِ ساسانی چه می‌گوید؟",
+      "question_tg": "Хусрав Парвиз ба кӯмаки Бизантия ниёз дошт то Баҳром Чӯбинро шикаст диҳад. Ин вобастагӣ дар бораи вазъи қудрати Сосонӣ чӣ мегӯяд?",
+      "answers": [
+        "It shows Khosrow Parviz was diplomatically sophisticated",
+        "The Byzantine help was so minor it barely affected the outcome",
+        "The Sasanian crown had become dependent on foreign support to survive internal challenges — a sign of structural weakness",
+        "Needing help from Byzantium was a normal and routine occurrence in Sasanian politics"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد خسرو پرویز از نظرِ دیپلماتیک پیچیده بود",
+        "کمکِ بیزانس آن‌قدر ناچیز بود که به ندرت بر نتیجه تأثیر گذاشت",
+        "تاجِ ساسانی برای زنده ماندن از چالش‌های داخلی به حمایتِ خارجی وابسته شده بود — نشانه‌ای از ضعفِ ساختاری",
+        "نیاز به کمک از بیزانس یک وقوعِ معمولی و روتین در سیاستِ ساسانی بود"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад Хусрав Парвиз аз назари дипломатӣ мураккаб буд",
+        "Кӯмаки Бизантия он қадар ночиз буд ки ба ندрат бар натиҷа таъсир гузошт",
+        "Тоҷи Сосонӣ барои зиндамонии чолишҳои дохилӣ ба дастгирии хориҷӣ вобаста шуда буд — нишонаи заъфи сохторӣ",
+        "Ниёз ба кӯмак аз Бизантия вуқӯи маъмулӣ ва руутиние дар сиёсати Сосонӣ буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "When a dynasty needs a foreign army to defeat an internal rebel, it signals that the internal bonds holding the system together have weakened. Khosrow Parviz's Byzantine deal was a symptom of Sasanian structural decline.",
+      "explanation_fa": "وقتی یک سلسله به ارتشِ خارجی نیاز دارد تا یک شورشیِ داخلی را شکست دهد، نشان می‌دهد که پیوندهای داخلیِ نگه‌دارنده‌ی سیستم ضعیف شده‌اند.",
+      "explanation_tg": "Вақте сулолае ба лашкари хориҷӣ ниёз дорад то шӯришии дохилиро шикаст диҳад, нишон медиҳад ки пайвандҳои дохилии нگоҳдорандаи система заиф шудаанд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bchu-m4",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Hormuz IV insulted Bahram Chubin publicly. The Shahnameh implies this single act triggered a civil war. What does this say about the relationship between honour and political stability?",
+      "question_fa": "هرمزِ چهارم بهرام چوبین را به طورِ عمومی تحقیر کرد. شاهنامه نشان می‌دهد این عملِ واحد یک جنگِ داخلی برانگیخت. این درباره‌ی رابطه‌ی بینِ شرف و ثباتِ سیاسی چه می‌گوید؟",
+      "question_tg": "Ҳурмузи Чорум Баҳром Чӯбинро ба таври ошкоро таҳқир кард. Шоҳнома нишон медиҳад ин амали ягона ҷанги дохилиро барангехт. Ин дар бораи муносибати байни шараф ва субботи сиёсӣ чӣ мегӯяд?",
+      "answers": [
+        "Honour is the currency of the military elite — a king who publicly humiliates his best general destroys the social contract that makes loyal service possible",
+        "The Shahnameh condemns Bahram Chubin for rebelling over a minor insult",
+        "Political stability depends only on military force, not on honour",
+        "A general who rebels over an insult was already planning to rebel"
+      ],
+      "answers_fa": [
+        "شرف ارزِ نخبگانِ نظامی است — شاهی که بهترین سردارش را به طورِ عمومی تحقیر می‌کند قراردادِ اجتماعی‌ای را که خدمتِ وفادارانه را ممکن می‌کند نابود می‌کند",
+        "شاهنامه بهرام چوبین را برای شورش بر سرِ توهینِ جزئی محکوم می‌کند",
+        "ثباتِ سیاسی فقط به نیروی نظامی وابسته است نه به شرف",
+        "سردارِی که بر سرِ توهین شورش می‌کند از قبل برنامه‌ریزیِ شورش داشت"
+      ],
+      "answers_tg": [
+        "Шараф асъори нахбагони низомист — шоҳе ки беҳтарин сардорашро ба таври ошкоро таҳқир мекунад шартномаи иҷтимоиеро ки хидмати вафодорона ро мумкин мекунад нобуд мекунад",
+        "Шоҳнома Баҳром Чӯбинро барои шӯриш бар сари таҳқири ҷузъӣ маҳкум мекунад",
+        "Субботи сиёсӣ танҳо ба нирӯи низомӣ вобаста аст",
+        "Сардоре ки бар сари таҳқир шӯриш мекунад аз пеш барномарезии шӯриш дошт"
       ],
       "correct_answer": 0,
-      "explanation": "Ferdowsi mourns Bahram Chubin because he was magnificent and because the empire that destroyed him was the one that would fall to the Arabs within a generation. His story establishes that Iran's last great military figure before the conquest was brought down not by weakness but by a king's calculated insult.",
-      "explanation_fa": "فردوسی برای بهرام چوبین ماتم می‌گیرد چون او باشکوه بود و چون امپراتوری‌ای که او را نابود کرد همانی بود که ظرف یک نسل به اعراب سقوط کرد. داستانش ثابت می‌کند که آخرین چهره نظامی بزرگ ایران قبل از فتح نه به خاطر ضعف بلکه به خاطر توهین حساب‌شده یک شاه سرنگون شد.",
-      "explanation_tg": "Фирдавсӣ барои Баҳроми Чӯбин мотам мегирад зеро ӯ боҳашам буд ва зеро империяе ки ӯро нобуд кард ҳамане буд ки зарфи як насл ба Арабҳо суқут кард.",
+      "explanation": "In a military culture, public humiliation of a commander is a betrayal of the fundamental bond between king and general. Hormuz IV shattered this bond with a spindle and female clothing — and paid for it with civil war.",
+      "explanation_fa": "در یک فرهنگِ نظامی، تحقیرِ عمومیِ یک فرمانده خیانت به پیوندِ بنیادین بینِ شاه و سردار است.",
+      "explanation_tg": "Дар фарҳанги низомӣ, таҳқири ошкорои фармондеҳ хиёнат ба пайванди бунёдин байни шоҳ ва сардор аст.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bchu-m5",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Bahram Chubin's chapter shows a civil war triggered by royal incompetence. How does the Shahnameh position the reader's sympathy?",
+      "question_fa": "فصلِ بهرام چوبین جنگِ داخلی‌ای را نشان می‌دهد که توسطِ ناشایستگیِ سلطنتی برانگیخته شد. شاهنامه همدردیِ خواننده را کجا قرار می‌دهد؟",
+      "question_tg": "Фасли Баҳром Чӯбин ҷанги дохилиеро нишон медиҳад ки аз ҷониби нокобилии шоҳонӣ барангехта шуд. Шоҳнома ҳамдардии хонандаро куҷо ҷой медиҳад?",
+      "answers": [
+        "Split — between a general with legitimate grievance and a royal system that needs to be preserved; Bahram Chubin was wronged but his rebellion was still dangerous",
+        "Fully with Bahram Chubin — he was justified in rebelling",
+        "With Hormuz IV — the insult was necessary to test Bahram Chubin's loyalty",
+        "Fully with the Sasanian crown — rebellion is always wrong"
+      ],
+      "answers_fa": [
+        "تقسیم‌شده — بینِ سردارِ دارایِ شکایتِ مشروع و سیستمِ سلطنتی که نیاز به حفاظت دارد؛ بهرام چوبین مظلوم بود اما شورشش همچنان خطرناک بود",
+        "کاملاً با بهرام چوبین — در شورش کردن موجه بود",
+        "با هرمزِ چهارم — توهین برای آزمونِ وفاداریِ بهرام چوبین ضروری بود",
+        "کاملاً با تاجِ ساسانی — شورش همیشه اشتباه است"
+      ],
+      "answers_tg": [
+        "Тақсимшуда — байни сардори дорои шикояти машруъ ва системи шоҳонае ки ниёз ба ҳифзат дорад؛ Баҳром Чӯбин мазлум буд аммо шӯришаш ҳамон тавр хатарнок буд",
+        "Комилан бо Баҳром Чӯбин — дар шӯриш кардан мавзун буд",
+        "Бо Ҳурмузи Чорум — таҳқир барои санҷиши вафодории Баҳром Чӯбин зарур буд",
+        "Комилан бо тоҷи Сосонӣ — шӯриш ҳамеша хато аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh creates genuine moral complexity: Hormuz IV was incompetent and his insult was unjust; but Bahram Chubin lacked the farr and his rebellion nearly destroyed the Sasanian state. The text does not resolve this by making either man simply right.",
+      "explanation_fa": "شاهنامه پیچیدگیِ اخلاقیِ واقعی ایجاد می‌کند: هرمزِ چهارم ناشایسته بود و توهینش ناعادلانه بود؛ اما بهرام چوبین فرّ نداشت.",
+      "explanation_tg": "Шоҳнома мураккабии ахлоқии воқеӣ месозад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "bchu-h1",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Bahram Chubin almost succeeded in taking the throne. What separated him from the legitimate Sasanian kings in the Shahnameh's framework?",
+      "question_fa": "بهرام چوبین تقریباً موفق شد تخت را بگیرد. در چارچوبِ شاهنامه چه چیزی او را از شاهانِ مشروعِ ساسانی جدا می‌کرد؟",
+      "question_tg": "Баҳром Чӯбин қариб муваффақ шуд тахтро бигирад. Дар чорчӯби Шоҳнома чӣ чиз ӯро аз шоҳони машруъи Сосонӣ ҷудо мекард?",
+      "answers": [
+        "He lacked military genius — his campaigns were not impressive enough",
+        "He had not ruled long enough to establish legitimacy",
+        "He was not Zoroastrian enough",
+        "Blood — he was not of Sasanian lineage; the farr follows the Sasanian blood line, and no amount of military success can substitute for that legitimacy"
+      ],
+      "answers_fa": [
+        "نبوغِ نظامی نداشت — لشکرکشی‌هایش به اندازه‌ی کافی تأثیرگذار نبودند",
+        "به اندازه‌ی کافی طولانی حکمرانی نکرده بود تا مشروعیت ثابت کند",
+        "به اندازه‌ی کافی زرتشتی نبود",
+        "خون — از نسبِ ساسانی نبود؛ فرّ از خطِ خونیِ ساسانی پیروی می‌کند، و هیچ مقدار از موفقیتِ نظامی نمی‌تواند جایگزینِ آن مشروعیت شود"
+      ],
+      "answers_tg": [
+        "Нобиғаи низомӣ надошт — лашкаркашиҳояш ба қадри кофӣ таъсиргузор набуданд",
+        "Ба қадри кофӣ тӯлонӣ ҳукмронӣ накарда буд то машруият исбот кунад",
+        "Ба қадри кофӣ зардуштӣ набуд",
+        "Хун — از насаби Сосонӣ набуд؛ фарр аз хати хунии Сосонӣ пайравӣ мекунад, ва ҳеч қадар аз муваффақияти низомӣ наметавонад ҷойгузини он машруият шавад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's farr system is blood-based: it passes through the Sasanian lineage. Bahram Chubin, however brilliant as a general, was not Sasanian. The system could not absorb him as a legitimate king because the farr had no channel to reach him.",
+      "explanation_fa": "نظامِ فرّ در شاهنامه مبتنی بر خون است: از نسبِ ساسانی می‌گذرد. بهرام چوبین، هرچقدر هم به عنوانِ سردار درخشان بود، ساسانی نبود.",
+      "explanation_tg": "Системи фарри Шоҳнома хунмабнӣ аст: аз насаби Сосонӣ мегузарад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bchu-h2",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Hormuz IV's incompetence triggered Bahram Chubin's rebellion. The Shahnameh shows incompetent kings creating the conditions for their own overthrow. What structural lesson does this teach?",
+      "question_fa": "ناشایستگیِ هرمزِ چهارم شورشِ بهرام چوبین را برانگیخت. شاهنامه نشان می‌دهد شاهانِ ناشایسته شرایطِ سرنگونیِ خودشان را ایجاد می‌کنند. این چه درسِ ساختاری‌ای می‌دهد؟",
+      "question_tg": "Нокобилии Ҳурмузи Чорум шӯриши Баҳром Чӯбинро барангехт. Шоҳнома нишон медиҳад шоҳони нокобил шароити сарнагунии худашонро эҷод мекунанд. Ин кадом дарси сохториеро меомӯзонад?",
+      "answers": [
+        "The Shahnameh teaches that all systems eventually collapse regardless of leadership quality",
+        "Systems decay from within when incompetent leaders make avoidable errors — the Arab conquest at the end of the Shahnameh is not foreign invasion alone; it is also the product of decades of self-inflicted Sasanian weakening",
+        "Foreign invasion is always stronger than internal stability",
+        "Good generals will always rebel against bad kings — this is presented as natural and inevitable"
+      ],
+      "answers_fa": [
+        "شاهنامه یاد می‌دهد که همه‌ی سیستم‌ها بدون توجه به کیفیتِ رهبری سرانجام فرو می‌پاشند",
+        "سیستم‌ها از درون وقتی رهبرانِ ناشایسته اشتباهاتِ قابلِ اجتناب می‌کنند پوسیده می‌شوند — فتحِ عرب در پایانِ شاهنامه تنها تهاجمِ خارجی نیست؛ همچنین محصولِ دهه‌ها ضعیفِ کردنِ خودساخته‌ی ساسانی است",
+        "تهاجمِ خارجی همیشه قوی‌تر از ثباتِ داخلی است",
+        "سردارانِ خوب همیشه علیهِ شاهانِ بد شورش می‌کنند — این طبیعی و اجتناب‌ناپذیر ارائه می‌شود"
+      ],
+      "answers_tg": [
+        "Шоҳнома мефаҳмонад ки ҳамаи системаҳо бе назардошти сифати рабарӣ охиран фурӯ мепошанд",
+        "Системаҳо аз дарун вақте рабарони нокобил хатоҳои пешгирӣшаванда мекунанд мепӯсанд — фатҳи арабӣ дар поёни Шоҳнома танҳо таҷовузи хориҷӣ нест؛ инчунин маҳсули даҳсолаҳои заиф кардани худсохтаи Сосонист",
+        "Таҷовузи хориҷӣ ҳамеша аз субботи дохилӣ қавитар аст",
+        "Сардорони хуб ҳамеша зидди шоҳони бад шӯриш мекунанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Bahram Chubin episode is part of the Shahnameh's long arc of self-inflicted Sasanian decline. Each civil war, each incompetent king, each unnecessary humiliation weakened the system incrementally. The Arab conquest was the final blow to a structure already fractured.",
+      "explanation_fa": "اپیزودِ بهرام چوبین بخشی از کمانِ طولانیِ افولِ خودساخته‌ی ساسانیِ شاهنامه است.",
+      "explanation_tg": "Эпизоди Баҳром Чӯбин бахше аз камони тӯлонии инҳирофи худсохтаи Сосонии Шоҳнома аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bchu-h3",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The spindle insult sent by Hormuz IV is one of the most precisely targeted humiliations in the Shahnameh. Why was this particular insult so devastating?",
+      "question_fa": "توهینِ دوک فرستاده‌شده توسطِ هرمزِ چهارم یکی از دقیق‌ترین تحقیرات در شاهنامه است. چرا این توهینِ خاص این‌قدر ویران‌کننده بود؟",
+      "question_tg": "Таҳқири дӯки фиристодашуда аз ҷониби Ҳурмузи Чорум яке аз дақиқтарин таҳқиротҳо дар Шоҳнома аст. Чаро ин таҳқири хос ин қадар вайронкор буд?",
+      "answers": [
+        "It attacked the foundation of Bahram Chubin's identity — his military masculinity; calling a warrior feminine is the deepest possible insult in a warrior culture",
+        "The spindle carried specific Zoroastrian religious meaning that condemned Bahram Chubin",
+        "It cost Hormuz IV a great deal of money and this was the real insult",
+        "The insult was mild — Bahram Chubin overreacted"
+      ],
+      "answers_fa": [
+        "به پایه‌ی هویتِ بهرام چوبین حمله کرد — مردانگیِ نظامی‌اش؛ نامیدنِ یک جنگجو زنانه عمیق‌ترین توهینِ ممکن در یک فرهنگِ جنگجویی است",
+        "دوک معنایِ خاصِ دینیِ زرتشتی داشت که بهرام چوبین را محکوم می‌کرد",
+        "هزینه‌ی زیادی برای هرمزِ چهارم داشت و این توهینِ واقعی بود",
+        "توهین خفیف بود — بهرام چوبین بیش از حد واکنش نشان داد"
+      ],
+      "answers_tg": [
+        "Ба пояи ҳувияти Баҳром Чӯбин ҳуҷум кард — мардонагии низомии ӯ؛ номидани ҷангҷӯ занона амиқтарин таҳқири мумкин дар фарҳанги ҷангҷӯист",
+        "Дӯк маънои хоси дини зардуштие дошт ки Баҳром Чӯбинро маҳкум мекард",
+        "Барои Ҳурмузи Чорум хароҷоти зиёде дошт ва ин таҳқири воқеӣ буд",
+        "Таҳқир сабук буд — Баҳром Чӯбин аз ҳад зиёд вокуниш нишон дод"
+      ],
+      "correct_answer": 0,
+      "explanation": "Hormuz IV's spindle attack was surgical: he chose the insult that would hurt a military commander most. Calling a soldier feminine questions not just his competence but his entire social standing. In a society where warrior identity was central, this could not be ignored.",
+      "explanation_fa": "حملهٴ دوکِ هرمزِ چهارم دقیق بود: توهینی را انتخاب کرد که بیشتر به یک فرمانده‌ی نظامی آسیب می‌زند.",
+      "explanation_tg": "Ҳуҷуми дӯки Ҳурмузи Чорум дақиқ буд: таҳқиреро интихоб кард ки бештар ба фармондеҳи низомӣ осеб мерасонад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bchu-h4",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Bahram Chubin represents 'the general who dared to call himself king.' Why does the Shahnameh present this figure as both admirable and ultimately illegitimate?",
+      "question_fa": "بهرام چوبین «سردارِی که جرأت کرد خودش را شاه بنامد» را نشان می‌دهد. چرا شاهنامه این شخصیت را هم تحسین‌برانگیز و هم در نهایت غیرمشروع ارائه می‌دهد؟",
+      "question_tg": "Баҳром Чӯбин «сардореро ки ҷасорат кард худашро шоҳ бихонад» нишон медиҳад. Чаро Шоҳнома ин персонажро ҳам таҳсинбарангез ва ҳам дар ниҳоят ғайримашруъ пешкаш мекунад?",
+      "answers": [
+        "The Shahnameh refuses to take a position on Bahram Chubin",
+        "He is admirable but his legitimacy is never questioned",
+        "Admirable for excellence, illegitimate for lineage — the Shahnameh honours his ability while insisting that ability alone cannot confer the right to rule",
+        "He is presented as only illegitimate, never admirable"
+      ],
+      "answers_fa": [
+        "شاهنامه از موضع‌گیری درباره‌ی بهرام چوبین امتناع می‌کند",
+        "او تحسین‌برانگیز است اما مشروعیتش هرگز زیرِ سؤال نمی‌رود",
+        "تحسین‌برانگیز از نظرِ برتری، غیرمشروع از نظرِ نسب — شاهنامه توانایی‌اش را می‌ستاید در حالی که اصرار دارد که توانایی به تنهایی نمی‌تواند حقِ حکمرانی بدهد",
+        "او فقط به عنوانِ غیرمشروع ارائه می‌شود، هرگز تحسین‌برانگیز نیست"
+      ],
+      "answers_tg": [
+        "Шоҳнома аз мавзеъгирӣ дар бораи Баҳром Чӯбин имтиноъ мекунад",
+        "Ӯ таҳсинбарангез аст аммо машруияташ ҳеч гоҳ зери савол намеравад",
+        "Таҳсинбарангез аз назари бартарӣ, ғайримашруъ аз назари насаб — Шоҳнома қобилияташро месутояд дар ҳоле ки исрор дорад ки қобилият ба танҳоӣ наметавонад ҳаққи ҳукматро бидиҳад",
+        "Ӯ танҳо ба унвони ғайримашруъ пешкаш мешавад, ҳеч гоҳ таҳсинбарангез нест"
+      ],
+      "correct_answer": 2,
+      "explanation": "Bahram Chubin is the Shahnameh's most complex anti-hero: genuinely great as a commander, genuinely outside the legitimate system. His greatness makes his story tragic — the best soldier of his age could not become king because the cosmological order did not allow it.",
+      "explanation_fa": "بهرام چوبین پیچیده‌ترین ضدقهرمانِ شاهنامه است: واقعاً بزرگ به عنوانِ یک فرمانده، واقعاً خارج از سیستمِ مشروع.",
+      "explanation_tg": "Баҳром Чӯбин мураккабтарин зиддиқаҳрамони Шоҳнома аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bchu-h5",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The Bahram Chubin episode exposes the Sasanian succession as vulnerable to military revolt. How does this vulnerability connect to the later Arab conquest?",
+      "question_fa": "اپیزودِ بهرام چوبین نشانِ آسیب‌پذیریِ جانشینیِ ساسانی در برابرِ شورشِ نظامی است. این آسیب‌پذیری چه ارتباطی به فتحِ بعدیِ عرب دارد؟",
+      "question_tg": "Эпизоди Баҳром Чӯбин осебпазирии вориссозии Сосониро дар баробари шӯриши низомӣ нишон медиҳад. Ин осебпазирӣ чӣ иртиботе ба фатҳи баъдии арабӣ дорад?",
+      "answers": [
+        "The connection is coincidental — civil war and external conquest are independent events",
+        "Bahram Chubin's rebellion actually strengthened the Sasanian state by proving it could survive civil war",
+        "The Arab conquest was purely a military event unrelated to internal Sasanian weakness",
+        "Each civil war weakened the institutional bonds of the Sasanian state; by the time of the Arab conquest, the military and administrative cohesion had been fractured by decades of internal conflict"
+      ],
+      "answers_fa": [
+        "ارتباط تصادفی است — جنگِ داخلی و فتحِ خارجی رویدادهای مستقل هستند",
+        "شورشِ بهرام چوبین در واقع دولتِ ساسانی را با اثباتِ اینکه می‌توانست از جنگِ داخلی جان سالم به در برد تقویت کرد",
+        "فتحِ عرب کاملاً یک رویدادِ نظامی بود که هیچ ارتباطی به ضعفِ داخلیِ ساسانی نداشت",
+        "هر جنگِ داخلی پیوندهای نهادیِ دولتِ ساسانی را ضعیف کرد؛ تا زمانِ فتحِ عرب، انسجامِ نظامی و اداری توسطِ دهه‌ها تعارضِ داخلی شکسته شده بود"
+      ],
+      "answers_tg": [
+        "Иртибот тасодуфист — ҷанги дохилӣ ва фатҳи хориҷӣ рӯйдодҳои мустақил ҳастанд",
+        "Шӯриши Баҳром Чӯбин воқеан давлати Сосониро бо исботи ин ки метавонист аз ҷанги дохилӣ ҷон сало ба дар барад мустаҳкам кард",
+        "Фатҳи арабӣ комилан рӯйдоди низомӣ буд ки ҳеч иртиботе ба заъфи дохилии Сосонӣ надошт",
+        "Ҳар ҷанги дохилӣ пайвандҳои ниҳодии давлати Сосониро заиф кард؛ то вақти фатҳи арабӣ, ҳамбастагии низомӣ ва маъмурӣ аз ҷониби даҳсолаҳои тазоди дохилӣ шикаста шуда буд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's narrative arc is explicit: the Sasanian state declines through self-inflicted wounds. Bahram Chubin's rebellion, Hormuz IV's blinding, Khosrow Parviz's overreach — each weakens the structure that the Arab army will eventually dismantle.",
+      "explanation_fa": "کمانِ رواییِ شاهنامه صریح است: دولتِ ساسانی از طریقِ زخم‌های خودساخته افول می‌کند.",
+      "explanation_tg": "Камони ривоии Шоҳнома равшан аст: давлати Сосонӣ тавассути захмҳои худсохта инҳироф мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bchu-h6",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Bahram Chubin fought for the Shahnameh's values (military excellence, honour, just cause) yet the text ultimately sides with the Sasanian system against him. How does the Shahnameh resolve this tension?",
+      "question_fa": "بهرام چوبین برای ارزش‌های شاهنامه (برتریِ نظامی، شرف، علتِ عادلانه) جنگید اما متن در نهایت علیهِ او از سیستمِ ساسانی حمایت می‌کند. شاهنامه این تنش را چگونه حل می‌کند؟",
+      "question_tg": "Баҳром Чӯбин барои арзишҳои Шоҳнома (бартарии низомӣ, шараф, сабаби адолатона) ҷангид аммо матн дар ниҳоят зидди ӯ аз системи Сосонӣ ҳимоят мекунад. Шоҳнома ин тазодро чӣ тавр ҳал мекунад?",
+      "answers": [
+        "The Shahnameh avoids the tension by giving Bahram Chubin a redemptive ending",
+        "It resolves by declaring Bahram Chubin simply wrong in every way",
+        "It resolves by declaring the Sasanian system simply right in every way",
+        "It does not resolve it fully — the tension is preserved as tragedy; Bahram Chubin is wrong in terms of the cosmic order but right in terms of immediate justice; both are true simultaneously"
+      ],
+      "answers_fa": [
+        "شاهنامه از تنش با دادنِ پایانِ باز‌خرید‌کننده به بهرام چوبین اجتناب می‌کند",
+        "با اعلامِ اینکه بهرام چوبین در همه چیز صرفاً اشتباه بود حل می‌شود",
+        "با اعلامِ اینکه سیستمِ ساسانی در همه چیز صرفاً درست بود حل می‌شود",
+        "کاملاً حل نمی‌شود — تنش به عنوانِ تراژدی حفظ می‌شود؛ بهرام چوبین از نظرِ نظمِ کیهانی اشتباه اما از نظرِ عدالتِ فوری درست است؛ هر دو هم‌زمان درست هستند"
+      ],
+      "answers_tg": [
+        "Шоҳнома аз тазод бо додани поёни базхаридоранде ба Баҳром Чӯбин парҳез мекунад",
+        "Бо эълони ин ки Баҳром Чӯбин дар ҳама чиз танҳо хато буд ҳал мешавад",
+        "Бо эълони ин ки системи Сосонӣ дар ҳама чиз танҳо дуруст буд ҳал мешавад",
+        "Комилан ҳал намешавад — тазод ба унвони фоҷеа ҳифз мешавад؛ Баҳром Чӯбин аз назари тартиби кайҳонӣ хато аммо аз назари адолати форие дуруст аст؛ ҳарду ҳамзамон дуруст ҳастанд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Bahram Chubin chapter is preserved as tragedy precisely because the tension is not resolved. He was in the right about the insult; the system was in the right about lineage. The Shahnameh's greatness is that it can hold both of these truths simultaneously.",
+      "explanation_fa": "فصلِ بهرام چوبین دقیقاً به این دلیل به عنوانِ تراژدی حفظ می‌شود که تنش حل نمی‌شود.",
+      "explanation_tg": "Фасли Баҳром Чӯбин дақиқан аз ин ҷиҳат ба унвони фоҷеа ҳифз мешавад ки тазод ҳал намешавад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bchu-h7",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "After his defeat, Bahram Chubin found refuge among the Turks. What does this exile say about the boundaries of the Iranian world in the Shahnameh?",
+      "question_fa": "بهرام چوبین بعد از شکستش در میانِ ترکان پناه یافت. این تبعید درباره‌ی مرزهای دنیای ایرانی در شاهنامه چه می‌گوید؟",
+      "question_tg": "Баҳром Чӯбин пас аз шикасти худ дар байни Туркон паноҳ ёфт. Ин таҳкими тахтнишинӣ дар бораи марзҳои ҷаҳони эронӣ дар Шоҳнома чӣ мегӯяд?",
+      "answers": [
+        "Exile to the Turks was the standard punishment for defeated Iranian generals",
+        "Beyond the Iranian world lies a space where Iranian rules don't apply — the Turks are outside the farr system and can shelter someone the system has rejected",
+        "Bahram Chubin betrayed Iran by going to the Turks",
+        "The Turkic lands are presented as part of the Iranian world in the Shahnameh"
+      ],
+      "answers_fa": [
+        "تبعید به ترکان مجازاتِ معمولی برای سردارانِ ایرانیِ شکست‌خورده بود",
+        "ورای دنیای ایرانی فضایی است که قوانینِ ایرانی اعمال نمی‌شوند — ترکان خارج از سیستمِ فرّ هستند و می‌توانند کسی را که سیستم رد کرده پناه دهند",
+        "بهرام چوبین با رفتن به ترکان به ایران خیانت کرد",
+        "سرزمین‌های ترکی به عنوانِ بخشی از دنیای ایرانی در شاهنامه ارائه می‌شوند"
+      ],
+      "answers_tg": [
+        "Таҳкими тахтнишинӣ ба Туркон ҷазои маъмулӣ барои сардорони эрониии шикастхӯрда буд",
+        "Ворои ҷаҳони эронӣ фазоест ки қонунҳои эронӣ татбиқ намешаванд — Туркон берун аз системи фарр ҳастанд ва метавонанд кесеро ки система рад кардааст паноҳ диҳанд",
+        "Баҳром Чӯбин бо рафтан ба Туркон ба Эрон хиёнат кард",
+        "Сарзаминҳои туркӣ ба унвони бахше аз ҷаҳони эронӣ дар Шоҳнома пешкаш мешаванд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's political geography has a clear centre (Iran, the farr) and a periphery (the Turkic lands, beyond the system). Bahram Chubin's exile to the Turks places him outside the Iranian cosmological order — neither rewarded nor punished by it, simply beyond it.",
+      "explanation_fa": "جغرافیایِ سیاسیِ شاهنامه یک مرکزِ روشن دارد (ایران، فرّ) و یک حاشیه (سرزمین‌های ترکی، ورای سیستم).",
+      "explanation_tg": "Ҷуғрофиёи сиёсии Шоҳнома марказии равшан дорад (Эрон, фарр) ва ҳошия (сарзаминҳои туркӣ, ворои система).",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "bchu-h8",
+      "chapter_slug": "bahram-chubin",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Bahram Chubin's rebellion reshapes the Sasanian world by forcing Khosrow Parviz to seek Byzantine help. How does this external dependency change the political landscape for the coming Arab conquest?",
+      "question_fa": "شورشِ بهرام چوبین دنیای ساسانی را با مجبور کردنِ خسرو پرویز به جست‌وجوی کمکِ بیزانس دوباره شکل می‌دهد. این وابستگیِ خارجی چشم‌اندازِ سیاسی را برای فتحِ آتیِ عربی چگونه تغییر می‌دهد؟",
+      "question_tg": "Шӯриши Баҳром Чӯбин ҷаҳони Сосониро бо маҷбур кардани Хусрав Парвиз ба ҷустуҷӯи кӯмаки Бизантия дубора шакл медиҳад. Ин вобастагии хориҷӣ манзараи сиёсиро барои фатҳи оятии арабӣ чӣ тавр тағйир медиҳад?",
+      "answers": [
+        "The external dependency was actually a sign of Sasanian sophistication in alliance-building",
+        "The Byzantine alliance strengthened the Sasanians permanently",
+        "It had no long-term effect — the Arab conquest came from a completely different direction",
+        "It establishes a precedent that Sasanian legitimacy can be bought with foreign armies — which means the system is no longer self-sustaining; by the Arab conquest it is too depleted to defend itself"
+      ],
+      "answers_fa": [
+        "وابستگیِ خارجی در واقع نشانه‌ی پیچیدگیِ ساسانیان در ساختِ اتحاد بود",
+        "اتحادِ بیزانس ساسانیان را دائماً تقویت کرد",
+        "تأثیرِ بلندمدت نداشت — فتحِ عرب از یک جهتِ کاملاً متفاوت آمد",
+        "سابقه‌ای ایجاد می‌کند که مشروعیتِ ساسانی می‌تواند با ارتش‌های خارجی خریداری شود — که به این معناست که سیستم دیگر خودپایدار نیست؛ تا فتحِ عرب آن‌قدر تحلیل رفته است که نمی‌تواند از خودش دفاع کند"
+      ],
+      "answers_tg": [
+        "Вобастагии хориҷӣ воқеан нишонаи мураккабии Сосониён дар сохти иттиҳод буд",
+        "Иттиҳоди Бизантия Сосониёнро доимӣ мустаҳкам кард",
+        "Таъсири дарозмуддат надошт — фатҳи арабӣ аз самти комилан гуногун омад",
+        "Собиқаеро ايجод мекунад ки машруияти Сосонӣ бо лашкарҳои хориҷӣ хариданӣ аст — ки маъно дорад система дигар худнигаҳдор нест؛ то фатҳи арабӣ он қадар сарф шудааст ки наметавонад аз худаш ҳимоят кунад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The precedent set by Khosrow Parviz's Byzantine deal is that the Sasanian crown can be won and held with foreign soldiers. This normalises the idea that external support is required — and removes the internal self-sufficiency that made the Sasanian system robust.",
+      "explanation_fa": "سابقه‌ای که توسطِ معامله‌ی بیزانسِ خسرو پرویز تعیین شد این است که تاجِ ساسانی می‌تواند با سربازانِ خارجی به دست آمد و نگه داشته شود.",
+      "explanation_tg": "Сабиқае ки аз ҷониби аҳди Бизантии Хусрав Парвиз муайян шуд ин аст ки тоҷи Сосонӣ метавонад бо сарбозони хориҷӣ ба даст оварда ва нигоҳ дошта шавад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

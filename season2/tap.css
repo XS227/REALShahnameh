@@ -111,37 +111,128 @@
 .mint-core-section .core-wrap {
   max-width: 360px;
   margin: 0 auto;
-  /* Isolate particle/ring-burst compositing to this layer */
   will-change: contents;
   contain: layout style;
 }
 
-/* r4 glow disk stays but feels bigger through the larger wrap */
-.mint-core-section .ring.r4 {
-  box-shadow:
-    0 0 80px rgba(244, 197, 107, .65),
-    inset 0 0 80px rgba(255, 220, 160, .45);
+/* ── Solar system ────────────────────────────────────────────────────────── */
+
+/* Orbital path rings — subtle, glowing tracks */
+.mint-core-section .ring.orbit-track {
+  border-style: solid;
+  opacity: .45;
+}
+.mint-core-section .ring.r1.orbit-track {
+  border: 1px solid rgba(244,197,107,.22);
+  animation: none;
+}
+.mint-core-section .ring.r2.orbit-track {
+  border: 1px solid rgba(94,162,255,.20);
+  box-shadow: none;
+  animation: none;
+}
+.mint-core-section .ring.r3.orbit-track {
+  border: 1px solid rgba(83,215,156,.18);
+  box-shadow: none;
 }
 
-/* Bigger orb — was inset:33%, now 22% → ~200 px tap target on 360px wrap */
-.mint-core-section .energy-orb {
+/* r4 = the solar corona / inner glow disk */
+.mint-core-section .ring.r4 {
+  box-shadow:
+    0 0 90px rgba(244,197,107,.7),
+    inset 0 0 90px rgba(255,220,160,.5);
+}
+
+/* Orbiting planet wrappers — zero-size pivot at center, rotates */
+.solar-orbit {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 0; height: 0;
+  pointer-events: none;
+}
+.orbit-1 { animation: solar-spin  7s linear infinite; }
+.orbit-2 { animation: solar-spin 14s linear infinite reverse; }
+.orbit-3 { animation: solar-spin 24s linear infinite; }
+
+@keyframes solar-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Planet base */
+.solar-planet {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Mercury — tiny, fast, reddish-orange. Orbit at r3 edge (~20% inset = 72px from edge → ~108px from center on 360px) */
+.p-mercury {
+  width: 9px; height: 9px;
+  top: 0; left: -108px;
+  background: radial-gradient(circle at 35% 30%, #e8956d, #8b3d1e);
+  box-shadow: 0 0 6px rgba(232,149,109,.7);
+}
+
+/* Venus — warm cream, slower, orbit at r2 (~135px from center) */
+.p-venus {
+  width: 13px; height: 13px;
+  top: 0; left: -135px;
+  background: radial-gradient(circle at 35% 30%, #f5e09a, #c8950a);
+  box-shadow: 0 0 8px rgba(245,224,154,.65);
+}
+
+/* Earth — blue, with orbiting moon, at r1 (~162px from center) */
+.p-earth {
+  width: 14px; height: 14px;
+  top: 0; left: -162px;
+  background: radial-gradient(circle at 30% 35%, #6dd5fa, #1a6bb0 55%, #0d3b6e);
+  box-shadow: 0 0 8px rgba(109,213,250,.55);
+}
+
+/* Moon pivot — orbits around earth */
+.moon-orbit {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 0; height: 0;
+  animation: solar-spin 2.4s linear infinite;
+}
+.solar-moon {
+  position: absolute;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  top: 0; left: -14px;
+  transform: translate(-50%, -50%);
+  background: rgba(210,218,235,.85);
+  box-shadow: 0 0 4px rgba(210,218,235,.5);
+}
+
+/* Sun — the tap orb gets solar corona treatment */
+.mint-core-section .solar-sun {
   inset: 22%;
-  /* Promote to its own compositor layer to eliminate transform glitch on rapid taps */
   will-change: transform;
   transform: translateZ(0);
+  background:
+    radial-gradient(circle at 32% 28%,
+      rgba(255,255,220,.98) 0%,
+      rgba(255,215,80,.92)  18%,
+      rgba(244,140,20,.88)  42%,
+      rgba(160,60,10,.95)   68%,
+      rgba(20,8,2,1)       100%);
   box-shadow:
-    inset 0 0 44px rgba(255, 220, 160, .65),
-    0 0 70px rgba(244, 197, 107, .7),
-    0 0 140px rgba(244, 197, 107, .2);
+    inset 0 0 50px rgba(255,230,120,.7),
+    0 0 80px  rgba(244,197,107,.85),
+    0 0 160px rgba(244,140,20,.35),
+    0 0 260px rgba(200,80,10,.15);
+  border-color: rgba(255,230,140,.5);
 }
-.mint-core-section .energy-orb:active {
+.mint-core-section .solar-sun:active {
   transform: translateZ(0) scale(.91);
   box-shadow:
-    inset 0 0 65px rgba(255, 220, 160, .95),
-    0 0 120px rgba(244, 197, 107, 1),
-    0 0 220px rgba(244, 197, 107, .4);
-  /* Use opacity instead of filter:brightness to avoid repaint on every tap */
-  opacity: 0.88;
+    inset 0 0 70px rgba(255,230,120,1),
+    0 0 120px rgba(255,180,30,1),
+    0 0 240px rgba(244,197,107,.6);
+  opacity: .88;
 }
 
 /* Bigger inner icon ring */
@@ -150,17 +241,53 @@
   height: 66%;
 }
 
-/* Skin image inside orb */
-.mint-core-section .energy-orb .core-icon [data-skin-orb] {
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
+/* Skin image — constrain to solar-sun orb boundary.
+   .solar-sun has inset:22% → width = 56% of core-wrap.
+   The base [data-skin-orb] is 65%, so we tighten it here. */
+.mint-core-section [data-skin-orb] {
+  width: 54%;
+  height: 54%;
 }
 .mint-core-section .energy-orb .core-icon [data-skin-orb-text] {
   font-size: 40px;
   line-height: 1;
+}
+
+/* ── Energy upgrade row ─────────────────────────────────────────────────── */
+.energy-upgrade-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: rgba(94,162,255,.07);
+  border: 1px solid rgba(94,162,255,.18);
+  border-radius: 10px;
+}
+.energy-upgrade-info {
+  font-size: 11px;
+  color: var(--muted);
+}
+.energy-upgrade-info strong {
+  color: var(--azure, #5ea2ff);
+}
+.energy-upgrade-btn {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(94,162,255,.4);
+  background: rgba(94,162,255,.12);
+  color: var(--azure, #5ea2ff);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity .15s;
+}
+.energy-upgrade-btn:active { opacity: .7; }
+.energy-upgrade-btn:disabled {
+  opacity: .35;
+  cursor: default;
 }
 
 /* Keyumars — sovereign of the first court — royal gold + leopard warmth */
@@ -257,124 +384,6 @@
   color: var(--muted);
   line-height: 1.4;
 }
-
-/* ============================================================
-   TAP SKINS
-   ============================================================ */
-.skins-section-head { margin-bottom: 10px; }
-.skins-section-head h3 {
-  margin: 0 0 4px;
-  font-size: 14px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  color: var(--text-dim);
-}
-.skins-section-head p {
-  margin: 0;
-  font-size: 11px;
-  color: var(--muted);
-  line-height: 1.4;
-}
-
-.skin-rail {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding: 4px 2px 12px;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
-.skin-rail::-webkit-scrollbar { display: none; }
-
-.skin-card {
-  flex-shrink: 0;
-  width: 82px;
-  background: rgba(14, 18, 44, .8);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 10px 8px 9px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease, transform .15s ease;
-  -webkit-tap-highlight-color: transparent;
-}
-.skin-card:active { transform: scale(.96); }
-.skin-card.selected {
-  border-color: var(--gold);
-  box-shadow: 0 0 22px rgba(244,197,107,.32);
-  background: rgba(244,197,107,.07);
-}
-.skin-card.locked { opacity: .62; cursor: default; }
-.skin-card.locked:active { transform: none; }
-
-.skin-portrait {
-  width: 54px;
-  height: 54px;
-  border-radius: 12px;
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.04);
-  font-size: 26px;
-  position: relative;
-}
-.skin-portrait img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.skin-portrait.r-default { border-color: rgba(244,197,107,.45); background: rgba(244,197,107,.07); }
-.skin-portrait.r-rare    { border-color: var(--azure); }
-.skin-portrait.r-epic    { border-color: var(--violet); animation: glow-epic 2.8s ease-in-out infinite; }
-.skin-portrait.r-legend  { border-color: var(--gold); animation: glow-legend 2.4s ease-in-out infinite; }
-.skin-portrait.r-mythic  { border-color: var(--crimson); animation: glow-mythic 2s ease-in-out infinite; }
-
-.skin-lock-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,.52);
-  display: grid;
-  place-items: center;
-  font-size: 15px;
-  border-radius: inherit;
-}
-.skin-selected-check {
-  position: absolute;
-  top: 3px;
-  right: 4px;
-  font-size: 11px;
-  color: var(--gold);
-  font-weight: 900;
-  text-shadow: 0 0 6px rgba(244,197,107,.8);
-}
-
-.skin-name {
-  font-size: 11px;
-  font-weight: 700;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-}
-.skin-sub {
-  font-size: 9px;
-  letter-spacing: .4px;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-align: center;
-}
-.skin-sub.r-default { color: var(--gold); }
-.skin-sub.r-rare    { color: var(--azure); }
-.skin-sub.r-epic    { color: var(--violet); }
-.skin-sub.r-legend  { color: var(--gold); }
-.skin-sub.r-mythic  { color: var(--crimson); }
 
 /* ============================================================
    REAL MARKET SECTION

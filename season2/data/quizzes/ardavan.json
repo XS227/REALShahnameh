@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "ard-e1",
+      "id": "ardv-e1",
       "chapter_slug": "ardavan",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "Who did Ardeshir take with him when he fled Ardavan's court?",
-      "question_fa": "اردشیر وقتی از دربار اردوان گریخت چه کسی را با خود برد؟",
-      "question_tg": "Ардашер ҳангоми гурез аз дарбори Ардавон бо худ кӣро бурд?",
+      "question": "Who defeated Ardavan, the last Parthian king?",
+      "question_fa": "چه کسی اردوان، آخرین شاه اشکانی را شکست داد؟",
+      "question_tg": "Кӣ Ардавонро, охирин шоҳи Ашконӣ, шикаст дод?",
       "answers": [
-        "A slave woman named Gulnar who chose his future over her master's",
-        "His personal bodyguard of fifty warriors",
-        "A Zoroastrian high priest who gave him legitimacy",
-        "His childhood companion from the province of Pars"
+        "Ardeshir, son of Papak",
+        "Bahram Chubin",
+        "Alexander the Great",
+        "Shapur, the Sasanian general"
       ],
       "answers_fa": [
-        "زن برده‌ای به نام گلنار که آینده او را بر سرورش ترجیح داد",
-        "محافظ شخصی‌اش از پنجاه جنگجو",
-        "یک کاهن اعظم زرتشتی که به او مشروعیت داد",
-        "همبازی دوران کودکیش از استان پارس"
+        "اردشیر پسر پاپک",
+        "بهرام چوبین",
+        "اسکندرِ کبیر",
+        "شاپور سردار ساسانی"
       ],
       "answers_tg": [
-        "Зани кӯниз бо номи Гулнор ки оянда Ардашерро бар соҳибаш тарҷеҳ дод",
-        "Посбони шахсии ӯ аз панҷоҳ ҷангавар",
-        "Як коҳини аъзами Зардуштӣ ки ба ӯ машрӯиат дод",
-        "Ҳамбозии давраи кӯдакиаш аз устони Порс"
+        "Ардашер, писари Попак",
+        "Баҳром Чӯбин",
+        "Искандари Бузург",
+        "Шопур, сардори Сосонӣ"
       ],
       "correct_answer": 0,
-      "explanation": "When Ardeshir fled Ardavan's court rather than submit to confinement in the stables, he took with him a slave woman named Gulnar. She had chosen his future over her master's loyalty — and her decision proved correct.",
-      "explanation_fa": "وقتی اردشیر به جای تسلیم شدن به حبس در اصطبل‌ها از دربار اردوان گریخت، زن برده‌ای به نام گلنار را با خود برد. او آینده اردشیر را بر وفاداری به سرورش ترجیح داده بود — و تصمیمش درست از آب درآمد.",
-      "explanation_tg": "Вақте Ардашер ба ҷои таслим шудан ба ҳабс дар истабл аз дарбори Ардавон гурехт, зани кӯнизе бо номи Гулнорро бо худ бурд. Ӯ оянда Ардашерро бар вафодорӣ ба соҳибаш тарҷеҳ дода буд — ва қарораш дуруст баромад.",
+      "explanation": "Ardeshir, son of Papak — who was raised at the Parthian court — rebelled, defeated Ardavan at the Battle of Hormizdagan, and ended 500 years of Arsacid rule.",
+      "explanation_fa": "اردشیر پسر پاپک — که در دربار اشکانی بزرگ شده بود — شورش کرد، اردوان را در نبرد هرمزدگان شکست داد و ۵۰۰ سال حکومت اشکانی را پایان داد.",
+      "explanation_tg": "Ардашер писари Попак — ки дар дарбори Ашконӣ калон шуда буд — шӯриш кард, Ардавонро дар набарди Ҳурмузгон шикаст дод ва ۵۰۰ соли ҳукмронии Ашкониёнро поён дод.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "ard-m1",
+      "id": "ardv-e2",
+      "chapter_slug": "ardavan",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What was Ardavan's mistake in the Shahnameh's account?",
+      "question_fa": "اشتباهِ اردوان در روایتِ شاهنامه چه بود؟",
+      "question_tg": "Хатои Ардавон дар ривояти Шоҳнома чӣ буд?",
+      "answers": [
+        "Keeping Ardeshir at his court, allowing him to observe royal power up close",
+        "Attacking Rome without sufficient forces",
+        "Failing to reform the Arsacid confederation",
+        "Appointing a Zoroastrian priest as his chief minister"
+      ],
+      "answers_fa": [
+        "نگه داشتنِ اردشیر در دربارش و اجازه دادن به او برای مشاهده‌ی قدرتِ سلطنتی از نزدیک",
+        "حمله به روم بدون نیروی کافی",
+        "ناتوانی در اصلاحِ کنفدراسیونِ اشکانی",
+        "انتصابِ یک روحانیِ زرتشتی به عنوانِ وزیرِ اعظم"
+      ],
+      "answers_tg": [
+        "Нигоҳ доштани Ардашер дар дарбораш ва иҷозат додан ба ӯ барои мушоҳидаи қудрати шоҳонаи аз наздик",
+        "Ҳуҷум ба Рим бидуни нирӯи кофӣ",
+        "Ноκомии ислоҳи конфедератсиявии Ашконӣ",
+        "Таъин кардани коҳини зардуштӣ ба сифати вазири аъзам"
+      ],
+      "correct_answer": 0,
+      "explanation": "Ardavan kept Ardeshir at his court as a ward. This allowed Ardeshir to learn how power worked and then use that knowledge to overthrow the system from within.",
+      "explanation_fa": "اردوان اردشیر را به عنوانِ سرپرست در دربارش نگه داشت. این به اردشیر اجازه داد یاد بگیرد که قدرت چگونه کار می‌کند و سپس از آن دانش برای سرنگون کردنِ سیستم از درون استفاده کند.",
+      "explanation_tg": "Ардавон Ардашерро ба унвони сарпараст дар дарбораш нигоҳ дошт. Ин ба Ардашер иҷозат дод ёд бигирад ки қудрат чӣ тавр кор мекунад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ardv-e3",
+      "chapter_slug": "ardavan",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "Which battle ended Arsacid rule and began the Sasanian era?",
+      "question_fa": "کدام نبرد حکومتِ اشکانی را پایان داد و دورانِ ساسانی را آغاز کرد؟",
+      "question_tg": "Кадом набард ҳукмронии Ашкониёнро поён дод ва давраи Сосониёнро оғоз кард?",
+      "answers": [
+        "The Battle of Carrhae",
+        "The Battle of Nihavand",
+        "The Battle of Qadisiyya",
+        "The Battle of Hormizdagan"
+      ],
+      "answers_fa": [
+        "نبردِ ورها",
+        "نبردِ نهاوند",
+        "نبردِ قادسیه",
+        "نبردِ هرمزدگان"
+      ],
+      "answers_tg": [
+        "Набарди Карра",
+        "Набарди Наҳованд",
+        "Набарди Қодисия",
+        "Набарди Ҳурмузгон"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Battle of Hormizdagan (around 224 CE) was the decisive confrontation where Ardeshir killed Ardavan. It marks the transition from Arsacid to Sasanian rule.",
+      "explanation_fa": "نبردِ هرمزدگان (حدود ۲۲۴ میلادی) رویاروییِ قطعی‌ای بود که در آن اردشیر اردوان را کشت. این نقطه‌ی انتقال از حکومتِ اشکانی به ساسانی را نشان می‌دهد.",
+      "explanation_tg": "Набарди Ҳурмузгон (тақрибан 224 мелодӣ) рӯйорӯии қатъие буд ки Ардашер Ардавонро дар он кушт.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ardv-m1",
       "chapter_slug": "ardavan",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "What sign indicated the divine Farr was moving from Ardavan to Ardeshir?",
-      "question_fa": "چه نشانه‌ای نشان داد که فره الهی از اردوان به اردشیر در حال انتقال است؟",
-      "question_tg": "Чӣ нишонае нишон дод ки фарри илоҳӣ аз Ардавон ба Ардашер дар ҳоли интиқол аст?",
+      "question": "The Shahnameh says a new fire rose from Pars before Ardavan fell. What is this fire symbolising?",
+      "question_fa": "شاهنامه می‌گوید قبل از سقوطِ اردوان آتشِ جدیدی از پارس برخاست. این آتش چه چیزی را نشان می‌دهد؟",
+      "question_tg": "Шоҳнома мегӯяд пеш аз афтодани Ардавон оташи ҷадиде аз Порс хест. Ин оташ чиро нишон медиҳад?",
       "answers": [
-        "A great white ram seen bounding toward Ardeshir as he fled",
-        "A fire that burned without fuel for seven days in the province of Pars",
-        "An eagle that settled on Ardeshir's shoulder and refused to leave",
-        "A bright star appeared over the city of Ctesiphon at the moment Ardavan died"
+        "The Zoroastrian holy flame that blessed Ardeshir's coronation",
+        "The divine glory (farr) of the Sasanian dynasty rising to replace the Arsacids",
+        "A literal fire that Ardavan saw as an omen",
+        "The burning of the Arsacid treasury by Ardeshir's forces"
       ],
       "answers_fa": [
-        "یک قوچ سفید بزرگ که در حین فرار اردشیر به سمت او می‌دوید دیده شد",
-        "آتشی که هفت روز بدون سوخت در استان پارس می‌سوخت",
-        "عقابی که بر شانه اردشیر نشست و رفتن را امتناع کرد",
-        "ستاره درخشانی بر فراز شهر تیسفون در لحظه‌ای که اردوان مُرد ظاهر شد"
+        "شعله‌ی مقدسِ زرتشتی که تاج‌گذاریِ اردشیر را متبرک کرد",
+        "فرّه‌ی الهیِ سلسله‌ی ساسانی که برای جایگزینیِ اشکانیان می‌خیزد",
+        "آتشِ تحت‌اللفظی‌ای که اردوان آن را به عنوانِ فال بد دید",
+        "سوزاندنِ خزانه‌ی اشکانی توسطِ نیروهای اردشیر"
       ],
       "answers_tg": [
-        "Қӯчи сафеди бузурге ки ҳангоми гурези Ардашер ба сӯи ӯ медавид дида шуд",
-        "Оташе ки ҳафт рӯз бидуни сӯзишворӣ дар устони Порс месӯхт",
-        "Уқобе ки бар китфи Ардашер нишаст ва рафтан имтиноъ кард",
-        "Ситораи дурахшоне бар фарози шаҳри Тайсафун дар лаҳзаи марги Ардавон зоҳир шуд"
+        "Шӯлаи муқаддаси зардуштӣ ки тоҷгузории Ардашерро мутаборрак кард",
+        "Фарри илоҳии сулолаи Сосонӣ ки барои иваз кардани Ашкониён хест",
+        "Оташи тахтуллафзие ки Ардавон онро ба унвони фоли бад дид",
+        "Сӯзондани хазинаи Ашконӣ аз ҷониби нирӯҳои Ардашер"
       ],
-      "correct_answer": 0,
-      "explanation": "As Ardeshir fled, a great white ram was seen bounding toward him — a sign in the Shahnameh's symbolic language that the Farr, the divine radiance of kingship, was departing the Arsacid line and attaching itself to Ardeshir.",
-      "explanation_fa": "در حین فرار اردشیر، یک قوچ سفید بزرگ دیده شد که به سمت او می‌دوید — نشانه‌ای در زبان نمادین شاهنامه که فره، شعاع الهی پادشاهی، از خط اشکانی جدا شده و به اردشیر وابسته می‌شود.",
-      "explanation_tg": "Дар ҳоли гурези Ардашер, қӯчи сафеди бузурге дида шуд ки ба сӯи ӯ медавид — нишонае дар забони рамзии шоҳнома ки фарр, шуъоаи илоҳии шоҳӣ, аз хатти Ашконӣ ҷудо шуда ва ба Ардашер вобаста мешавад.",
+      "correct_answer": 1,
+      "explanation": "In the Shahnameh's symbolic language, a new fire rising from Pars represents the farr (divine glory/kingship) transferring from the Arsacids to the Sasanians. The farr determines who holds legitimate royal power.",
+      "explanation_fa": "در زبانِ نمادینِ شاهنامه، آتشِ جدیدی که از پارس می‌خیزد نشان‌دهنده‌ی انتقالِ فرّ از اشکانیان به ساسانیان است.",
+      "explanation_tg": "Дар забони рамзии Шоҳнома, оташи ҷадиде ки аз Порс хест нишонаи интиқоли фарр аз Ашкониён ба Сосониён аст.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "ard-e2",
+      "id": "ardv-m2",
       "chapter_slug": "ardavan",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "Where did Ardavan's final battle against Ardeshir take place?",
-      "question_fa": "آخرین نبرد اردوان علیه اردشیر کجا رخ داد؟",
-      "question_tg": "Охирин набарди Ардавон бар зидди Ардашер куҷо рӯй дод?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What made Ardeshir's rebellion different from ordinary revolts in the Shahnameh?",
+      "question_fa": "چه چیزی شورشِ اردشیر را از شورش‌های معمولی در شاهنامه متمایز می‌کند؟",
+      "question_tg": "Чӣ чиз шӯриши Ардашерро аз шӯришҳои оддӣ дар Шоҳнома ҷудо мекунад?",
       "answers": [
-        "At the plain of Hormozdgan",
-        "At the gates of Ctesiphon",
-        "Near the city of Tus in Khorasan",
-        "On the banks of the Euphrates river"
+        "He had divine legitimacy (farr) — astrologers prophesied his rise and he survived attempts to destroy him",
+        "He had a larger army than Ardavan",
+        "He was supported by the Zoroastrian priesthood from the beginning",
+        "He was the legitimate heir to the Arsacid throne"
       ],
       "answers_fa": [
-        "در دشت هرمزدگان",
-        "در دروازه‌های تیسفون",
-        "نزدیک شهر طوس در خراسان",
-        "بر ساحل رود فرات"
+        "مشروعیتِ الهی داشت (فرّ) — منجمان ظهورش را پیش‌بینی کردند و از تلاش‌ها برای نابودی‌اش جان سالم به در برد",
+        "ارتشِ بزرگ‌تری از اردوان داشت",
+        "از ابتدا توسطِ روحانیتِ زرتشتی حمایت شد",
+        "وارثِ مشروعِ تختِ اشکانی بود"
       ],
       "answers_tg": [
-        "Дар даштаки Ҳурмузагон",
-        "Дар дарвозаҳои Тайсафун",
-        "Наздики шаҳри Тӯс дар Хуросон",
-        "Дар соҳилҳои дарёи Фурот"
+        "Машруияти илоҳӣ дошт (фарр) — мунаҷҷимон баромадашро пешгӯӣ карданд ва аз кӯшишҳо барои нобуд кардани ӯ ҷон бардошт",
+        "Лашкари бузургтаре аз Ардавон дошт",
+        "Аз ибтидо аз ҷониби руҳонияти зардуштӣ ҳимоят шуд",
+        "Вориси машрӯи тахти Ашконӣ буд"
       ],
       "correct_answer": 0,
-      "explanation": "Ardavan mustered his forces for a final campaign and met Ardeshir at the plain of Hormozdgan. Ardavan fought well but was killed in the battle, ending the Arsacid dynasty and beginning the Sasanian age on the same day.",
-      "explanation_fa": "اردوان نیروهایش را برای آخرین کمپین گرد آورد و اردشیر را در دشت هرمزدگان ملاقات کرد. اردوان خوب جنگید اما در نبرد کشته شد و سلسله اشکانی را پایان داد و دوران ساسانی را همان روز آغاز کرد.",
-      "explanation_tg": "Ардавон нерӯҳояшро барои охирин кампания гирд овард ва Ардашерро дар даштаки Ҳурмузагон вохӯрд. Ардавон хуб ҷангид аммо дар набард кушта шуд ва сулолаи Ашкониро поён дод ва давраи Сосониро ҳамон рӯз оғоз кард.",
+      "explanation": "The Shahnameh presents Ardeshir's rise as divinely ordained: astrologers prophesied it, he survived assassination attempts, and the farr (divine glory) was with him. This legitimacy narrative distinguishes a dynasty-founding rebellion from mere treason.",
+      "explanation_fa": "شاهنامه ظهورِ اردشیر را به عنوانِ دیوانه‌مقرر نشان می‌دهد: منجمان آن را پیش‌بینی کردند، او از تلاش‌های ترور جان سالم برد، و فرّ با او بود.",
+      "explanation_tg": "Шоҳнома баромади Ардашерро ба унвони аз ҷониби Худо муқаррар нишон медиҳад: мунаҷҷимон онро пешгӯӣ карданд, ӯ аз кӯшишҳои암суд ҷон бардошт, ва фарр бо ӯ буд.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ardv-m3",
+      "chapter_slug": "ardavan",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "How long had Arsacid rule lasted when Ardavan fell, and why does this duration matter to the Shahnameh?",
+      "question_fa": "وقتی اردوان افتاد حکومتِ اشکانی چه مدت طول کشیده بود و چرا این مدت برای شاهنامه اهمیت دارد؟",
+      "question_tg": "Вақте Ардавон афтод ҳукмронии Ашконӣ чӣ қадар тӯл кашида буд ва чаро ин мудат барои Шоҳнома аҳамият дорад?",
+      "answers": [
+        "About 100 years",
+        "About 300 years",
+        "About 500 years — a dynasty's fall after five centuries marks the depth of the transition",
+        "About 200 years"
+      ],
+      "answers_fa": [
+        "حدود ۱۰۰ سال",
+        "حدود ۳۰۰ سال",
+        "حدود ۵۰۰ سال — سقوطِ یک سلسله پس از پنج قرن عمقِ گذار را نشان می‌دهد",
+        "حدود ۲۰۰ سال"
+      ],
+      "answers_tg": [
+        "Тақрибан ۱۰۰ сол",
+        "Тақрибан ۳۰۰ сол",
+        "Тақрибан ۵۰۰ сол — афтодани сулола пас аз панҷ аср ژарфии гузорро нишон медиҳад",
+        "Тақрибан ۲۰۰ сол"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Arsacid dynasty ruled for approximately 500 years. Its fall is therefore a major civilisational transition, not merely a change of dynasty. The Shahnameh marks it as the end of an age and the beginning of a new one.",
+      "explanation_fa": "سلسله‌ی اشکانی تقریباً ۵۰۰ سال حکومت کرد. سقوطش بنابراین یک گذارِ مهمِ تمدنی است نه صرفاً تغییرِ سلسله.",
+      "explanation_tg": "Сулолаи Ашконӣ тақрибан ۵۰۰ сол ҳукмронӣ кард. Афтоданаш бинобар ин гузори муҳими тамаддунист.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ardv-m4",
+      "chapter_slug": "ardavan",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "The Shahnameh frames Ardavan's fall as inevitable once Ardeshir received divine favour. What does this determinism say about how the text views power transitions?",
+      "question_fa": "شاهنامه سقوطِ اردوان را وقتی اردشیر لطفِ الهی دریافت کرد اجتناب‌ناپذیر می‌نماید. این جبرگرایی درباره‌ی نگاهِ متن به گذارهای قدرت چه می‌گوید؟",
+      "question_tg": "Шоҳнома афтодани Ардавонро вақте Ардашер марҳамати илоҳӣ гирифт ногузир нишон медиҳад. Ин ҷабргарои дар бораи нигоҳи матн ба гузорҳои қудрат чӣ мегӯяд?",
+      "answers": [
+        "Astrologers determine who rules — kings simply execute fate",
+        "Power follows divine favour (farr) — when farr moves, kingdoms must follow; resistance is futile once the divine mandate shifts",
+        "Human military skill alone determines political outcomes",
+        "The strong always defeat the weak in the Shahnameh"
+      ],
+      "answers_fa": [
+        "منجمان تعیین می‌کنند چه کسی حکومت کند — شاهان فقط سرنوشت را اجرا می‌کنند",
+        "قدرت از فرّ پیروی می‌کند — وقتی فرّ حرکت می‌کند، پادشاهی‌ها باید پیروی کنند؛ مقاومت وقتی مأموریتِ الهی جابجا می‌شود بیهوده است",
+        "مهارتِ نظامیِ انسانی به تنهایی پیامدهای سیاسی را تعیین می‌کند",
+        "قوی همیشه ضعیف را در شاهنامه شکست می‌دهد"
+      ],
+      "answers_tg": [
+        "Мунаҷҷимон муайян мекунанд кӣ ҳукумат кунад — шоҳон танҳо тақдирро иҷро мекунанд",
+        "Қудрат аз фарр пайравӣ мекунад — вақте фарр ҳаракат мекунад, подшоҳиҳо бояд пайравӣ кунанд؛ муқовимат вақте мأмуриёти илоҳӣ ҷобаҷо мешавад беҳуда аст",
+        "Малакаи низомии инсонӣ ба танҳоӣ натиҷаҳои сиёсиро муайян мекунад",
+        "Қавӣ ҳамеша заъифро дар Шоҳнома шикаст медиҳад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh views farr as the mechanism of legitimate power transfer. When the farr leaves a king, his fall is predetermined — not because he cannot fight, but because the universe has already determined the outcome. Ardavan was competent; he simply no longer held the farr.",
+      "explanation_fa": "شاهنامه فرّ را مکانیزمِ انتقالِ قدرتِ مشروع می‌بیند. وقتی فرّ یک شاه را ترک می‌کند، سقوطش از پیش تعیین شده است.",
+      "explanation_tg": "Шоҳнома фаррро механизми интиқоли қудрати машруъ мебинад. Вақте фарр шоҳеро тарк мекунад, афтоданаш аз пеш муайян шудааст.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ardv-m5",
+      "chapter_slug": "ardavan",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Ardavan represents the end of a political era. What does the Shahnameh suggest happens to kings who fail to recognise when an era is ending?",
+      "question_fa": "اردوان نمایانگرِ پایانِ یک عصرِ سیاسی است. شاهنامه چه چیزی درباره‌ی آنچه برای شاهانی که نمی‌توانند تشخیص دهند وقتی عصری پایان می‌یابد اتفاق می‌افتد نشان می‌دهد؟",
+      "question_tg": "Ардавон нишондиҳандаи поёни як асри сиёсист. Шоҳнома чиро дар бораи он чи барои шоҳоне ки наметавонанд ташхис диҳанд вақте асре поён меёбад иттифоқ меафтад нишон медиҳад?",
+      "answers": [
+        "Good governance can prevent any dynasty from falling",
+        "They can always survive if they have a strong enough army",
+        "The Shahnameh suggests all dynasties end the same way regardless of what kings do",
+        "They are swept away by the change they failed to recognise — resistance without understanding the tide is futile"
+      ],
+      "answers_fa": [
+        "حکمرانیِ خوب می‌تواند از سقوطِ هر سلسله‌ای جلوگیری کند",
+        "اگر ارتشِ قوی‌کافی داشته باشند همیشه می‌توانند زنده بمانند",
+        "شاهنامه نشان می‌دهد همه‌ی سلسله‌ها صرف‌نظر از آنچه شاهان انجام می‌دهند به یک شکل پایان می‌یابند",
+        "توسطِ تغییری که نتوانستند تشخیص دهند برده می‌شوند — مقاومت بدون درکِ موج بیهوده است"
+      ],
+      "answers_tg": [
+        "Ҳукуматдории хуб метавонад аз афтодани ҳар сулолае пешгирӣ кунад",
+        "Агар лашкари кофии қавӣ дошта бошанд ҳамеша метавонанд зинда бимонанд",
+        "Шоҳнома нишон медиҳад ҳамаи сулолаҳо сарфи назар аз он чи шоҳон анҷом медиҳанд ба як шакл поён меёбанд",
+        "Аз ҷониби тағйире ки натавонистанд ташхис диҳанд бурда мешаванд — муқовимат бидуни фаҳмидани мавҷ беҳуда аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "Ardavan's story is the Shahnameh's lesson about recognising the moment of change. He saw the signs — the prophecies, Ardeshir's flight — but he treated them as manageable threats rather than as the end of his era.",
+      "explanation_fa": "داستانِ اردوان درسِ شاهنامه درباره‌ی شناختنِ لحظه‌ی تغییر است. نشانه‌ها را دید اما آنها را به عنوانِ تهدیداتِ قابلِ کنترل تلقی کرد نه پایانِ عصرش.",
+      "explanation_tg": "Достони Ардавон дарси Шоҳнома дар бораи шинохтани лаҳзаи тағйир аст. Нишонаҳоро дид аммо онҳоро ба унвони таҳдидоти идорашаванда тлақӣ кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ardv-h1",
+      "chapter_slug": "ardavan",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Ardavan kept Ardeshir at court and this was his undoing. What does this dynamic reveal about power and proximity?",
+      "question_fa": "اردوان اردشیر را در دربار نگه داشت و این سرنگونی‌اش بود. این پویایی درباره‌ی قدرت و قرابت چه چیزی نشان می‌دهد؟",
+      "question_tg": "Ардавон Ардашерро дар дарбор нигоҳ дошт ва ин нобудии ӯ буд. Ин пуёиӣ дар бораи қудрат ва наздикӣ чиро нишон медиҳад?",
+      "answers": [
+        "Rivals kept at court always become loyal because they see the king's greatness",
+        "A king who fears rebellion should execute rivals rather than keep them",
+        "Proximity to power is dangerous for those who hold it — keeping rivals close teaches them how to take what you have",
+        "Loyalty is best secured by keeping dangerous people close under surveillance"
+      ],
+      "answers_fa": [
+        "رقبای نگه‌داشته‌شده در دربار همیشه وفادار می‌شوند چون عظمتِ شاه را می‌بینند",
+        "شاهی که از شورش می‌ترسد باید رقبا را اعدام کند به جای نگه داشتن‌شان",
+        "نزدیکی به قدرت برای آنهایی که آن را دارند خطرناک است — نگه داشتنِ رقبا نزدیک به آنها یاد می‌دهد چگونه آنچه را که داری بگیرند",
+        "وفاداری با نگه داشتنِ افرادِ خطرناک در نزدیکی زیرِ نظارت بهتر تأمین می‌شود"
+      ],
+      "answers_tg": [
+        "Рақибони нигоҳдоштшуда дар дарбор ҳамеша вафодор мешаванд зеро бузургии шоҳро мебинанд",
+        "Шоҳе ки аз шӯриш метарсад бояд рақибонро эъдом кунад ба ҷои нигоҳ доштанашон",
+        "Наздикӣ ба қудрат барои онҳое ки онро доранд хатарнок аст — нигоҳ доштани рақибон дар наздикӣ ба онҳо мефаҳмонад чӣ тавр он чиро ки дорӣ бигиранд",
+        "Вафодорӣ бо нигоҳ доштани афроди хатарнок дар наздикӣ зери назорат беҳтар таъмин мешавад"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh repeatedly shows that proximity to power educates rivals in the mechanics of taking that power. Ardavan's mistake is a specific version of this: keeping a future king at your court teaches him everything he needs to overthrow you.",
+      "explanation_fa": "شاهنامه بارها نشان می‌دهد که نزدیکی به قدرت رقبا را در مکانیکِ گرفتنِ آن قدرت آموزش می‌دهد.",
+      "explanation_tg": "Шоҳнома борҳо нишон медиҳад ки наздикӣ ба қудрат рақибонро дар механикаи гирифтани он қудрат таълим медиҳад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ardv-h2",
+      "chapter_slug": "ardavan",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The Shahnameh portrays Ardavan as neither villain nor fool — just a king whose time had passed. What does this nuanced portrayal accomplish?",
+      "question_fa": "شاهنامه اردوان را نه شرور نه احمق نشان می‌دهد — فقط شاهی که وقتش گذشته. این تصویرِ ظریف چه چیزی انجام می‌دهد؟",
+      "question_tg": "Шоҳнома Ардавонро на бадкор на аҳмақ нишон медиҳад — танҳо шоҳе ки вақташ гузаштааст. Ин тасвири нозук чиро анҷом медиҳад?",
+      "answers": [
+        "It shows that historical change is not about individual virtue or vice — even good kings fall when the farr moves on",
+        "It critiques Ardeshir by showing his victory was undeserved",
+        "It makes Ardavan sympathetic so readers support his resistance",
+        "It demonstrates that the Arsacid dynasty was morally superior to the Sasanians"
+      ],
+      "answers_fa": [
+        "نشان می‌دهد که تغییرِ تاریخی درباره‌ی فضیلت یا رذیلتِ فردی نیست — حتی شاهانِ خوب هم وقتی فرّ جابجا می‌شود سقوط می‌کنند",
+        "اردشیر را با نشان دادنِ اینکه پیروزی‌اش ناشایسته بود انتقاد می‌کند",
+        "اردوان را دلسوزی‌برانگیز می‌کند تا خوانندگان از مقاومتش حمایت کنند",
+        "نشان می‌دهد که سلسله‌ی اشکانی از نظرِ اخلاقی برتر از ساسانیان بود"
+      ],
+      "answers_tg": [
+        "Нишон медиҳад ки тағйири таърихӣ дар бораи фазилат ё разолати фардӣ нест — ҳатто шоҳони хуб ҳам вақте фарр ҷобаҷо мешавад меафтанд",
+        "Ардашерро бо нишон додани ин ки ғалабааш нашоистана буд интиқод мекунад",
+        "Ардавонро ҳамдардиовар мекунад то хонандагон аз муқовиматаш ҳимоят кунанд",
+        "Нишон медиҳад ки сулолаи Ашконӣ аз назари ахлоқӣ аз Сосониён бартар буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "By portraying Ardavan fairly — not as a villain who deserved to fall — the Shahnameh makes its analysis of power transfer more sophisticated. The fall of an era is not God punishing a bad king; it is the natural cycle of farr moving through history.",
+      "explanation_fa": "با نشان دادنِ اردوان به عدالت — نه به عنوانِ شروری که شایسته‌ی سقوط بود — شاهنامه تحلیلش از انتقالِ قدرت را پیچیده‌تر می‌کند.",
+      "explanation_tg": "Бо нишон додани Ардавон ба адолат، Шоҳнома таҳлили интиқоли қудратро мураккабтар мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ardv-h3",
+      "chapter_slug": "ardavan",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Ardavan's end marks the closing of one era and the opening of another in a single battle. What structural role does this double function serve in the Shahnameh?",
+      "question_fa": "پایانِ اردوان با یک نبرد هم بستنِ یک عصر و هم گشایشِ عصرِ دیگری را نشان می‌دهد. این کارکردِ دوگانه چه نقشِ ساختاری‌ای در شاهنامه دارد؟",
+      "question_tg": "Поёни Ардавон бо як набард ҳам бастани як аср ва ҳам кушодани асри дигарро нишон медиҳад. Ин кори дугона чӣ нақши сохториеро дар Шоҳнома иҷро мекунад?",
+      "answers": [
+        "It creates a hinge moment — a single event that simultaneously closes one chapter and opens the next, maintaining narrative continuity",
+        "It shows the Shahnameh believes dynasties always end and begin in the same way",
+        "It demonstrates that war is always the mechanism of political change",
+        "It is a coincidence of timing that Ferdowsi records without structural intent"
+      ],
+      "answers_fa": [
+        "یک لحظه‌ی لولا می‌سازد — یک رویدادِ واحدی که هم‌زمان یک فصل را می‌بندد و بعدی را باز می‌کند و پیوستگیِ روایی را حفظ می‌کند",
+        "نشان می‌دهد شاهنامه معتقد است سلسله‌ها همیشه به یک شکل پایان می‌یابند و شروع می‌شوند",
+        "نشان می‌دهد که جنگ همیشه مکانیزمِ تغییرِ سیاسی است",
+        "تصادفِ زمانی است که فردوسی بدون قصدِ ساختاری ثبت می‌کند"
+      ],
+      "answers_tg": [
+        "Лаҳзаи лӯлоеро месозад — рӯйдоди ягонае ки ҳамзамон як фаслро мебандад ва дигарро мекушояд ва пайвастагии ривоиро ҳифз мекунад",
+        "Нишон медиҳад Шоҳнома бовар дорад сулолаҳо ҳамеша ба як шакл поён меёбанд ва оғоз мешаванд",
+        "Нишон медиҳад ки ҷанг ҳамеша механизми тағйири сиёсист",
+        "Тасодуфи замонист ки Фирдавсӣ бидуни қасди сохторӣ сабт мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Battle of Hormizdagan is the Shahnameh's structural hinge between its Arsacid and Sasanian sections. A single battle serves as both ending and beginning — a narrative technique that maintains continuity while marking transformation.",
+      "explanation_fa": "نبردِ هرمزدگان لولایِ ساختاریِ شاهنامه بینِ بخش‌های اشکانی و ساسانی‌اش است.",
+      "explanation_tg": "Набарди Ҳурмузгон лӯлои сохтории Шоҳнома байни бахшҳои Ашконӣ ва Сосониии он аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ardv-h4",
+      "chapter_slug": "ardavan",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The Shahnameh connects Ardeshir's rise to both genealogy (Papak's lineage) and astrology (prophecy). Why does the text use both simultaneously?",
+      "question_fa": "شاهنامه ظهورِ اردشیر را هم به نسب (نسبِ پاپک) و هم به ستاره‌شناسی (پیش‌گویی) متصل می‌کند. چرا متن هر دو را به طورِ هم‌زمان استفاده می‌کند؟",
+      "question_tg": "Шоҳнома баромади Ардашерро ҳам ба насаб (насаби Попак) ва ҳам ба ситорашиносӣ (пешгӯӣ) мепайвандад. Чаро матн ҳарду ро ҳамзамон истифода мекунад?",
+      "answers": [
+        "Using both confuses enemies who don't know which to disprove first",
+        "Ferdowsi was combining different source traditions that gave different legitimations",
+        "Genealogy and prophecy are always combined in Shahnameh founding narratives by convention",
+        "Legitimacy requires multiple layers of justification — blood alone or prophecy alone is insufficient; together they make a claim that cannot be easily dismissed"
+      ],
+      "answers_fa": [
+        "استفاده از هر دو دشمنان را گیج می‌کند که نمی‌دانند اول کدام را دروغ ثابت کنند",
+        "فردوسی سنت‌های مختلفِ منبع را با هم ترکیب می‌کرد که توجیه‌های متفاوتی ارائه می‌دادند",
+        "نسب و پیش‌گویی در روایت‌های پایه‌گذاریِ شاهنامه همیشه به طورِ قراردادی ترکیب می‌شوند",
+        "مشروعیت به لایه‌های متعددِ توجیه نیاز دارد — خون به تنهایی یا پیش‌گویی به تنهایی کافی نیست؛ با هم ادعایی می‌سازند که به سادگی نمی‌توان رد کرد"
+      ],
+      "answers_tg": [
+        "Истифодаи ҳарду душманонро гум мекунад ки намедонанд аввал кадомро дурӯғ исбот кунанд",
+        "Фирдавсӣ суннатҳои гуногуни манбаро бо ҳам омезиш медод ки асоснокҳои гуногун медоданд",
+        "Насаб ва пешгӯӣ дар ривоятҳои бунёнгузории Шоҳнома ҳамеша мувофиқи анъана омехта мешаванд",
+        "Машруият ба қабатҳои гуногуни асоснок кардан ниёз дорад — хун ба танҳоӣ ё пешгӯӣ ба танҳоӣ кофӣ нест؛ бо ҳам иддаъое месозанд ки ба осонӣ рад кардан мушкил аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "Multiple legitimation layers create a more resilient political claim. Blood alone can be challenged by rivals with equal blood; prophecy alone can be dismissed as coincidence. Together they create a claim that is simultaneously natural (birth) and cosmic (destiny).",
+      "explanation_fa": "لایه‌های متعددِ مشروع‌سازی ادعایِ سیاسیِ مقاوم‌تری می‌سازند. خون به تنهایی می‌تواند توسطِ رقبا با خونِ مساوی به چالش کشیده شود؛ پیش‌گویی به تنهایی می‌تواند به عنوانِ تصادف رد شود.",
+      "explanation_tg": "Қабатҳои гуногуни машруъсозӣ иддаъои сиёсии устувортаре месозанд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ardv-h5",
+      "chapter_slug": "ardavan",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Ardavan's defeat at Hormizdagan ends the Arsacid confederacy. How does the Shahnameh's narrative handle the abruptness of this 500-year era's end?",
+      "question_fa": "شکستِ اردوان در هرمزدگان کنفدراسیونِ اشکانی را پایان می‌دهد. روایتِ شاهنامه با ناگهانی بودنِ پایانِ این عصرِ ۵۰۰ ساله چگونه کنار می‌آید؟",
+      "question_tg": "Шикасти Ардавон дар Ҳурмузгон конфедератсиявии Ашконӣро поён медиҳад. Ривояти Шоҳнома бо ногаҳонӣ будани поёни ин асри ۵۰۰ солаи чӣ тавр кинор меояд?",
+      "answers": [
+        "By presenting the transition as tragic and mourning the loss of the Arsacid system",
+        "By framing the end as cosmically prepared — prophecies, farr-signs, and inevitability make the abrupt transition feel fated rather than sudden",
+        "By rushing past it and pretending it was not a significant transition",
+        "By dwelling at length on the last Arsacid kings to give them narrative justice"
+      ],
+      "answers_fa": [
+        "با ارائه‌ی گذار به عنوانِ تراژیک و سوگواری برای از دست دادنِ سیستمِ اشکانی",
+        "با قاب‌بندیِ پایان به عنوانِ آماده‌شده‌ی کیهانی — پیش‌گویی‌ها، نشانه‌های فرّ، و اجتناب‌ناپذیری گذارِ ناگهانی را احساسِ مقدر می‌کنند نه ناگهانی",
+        "با گذشتن از آن و وانمود کردن که گذارِ مهمی نبود",
+        "با ماندن طولانی بر آخرین شاهانِ اشکانی برای دادنِ عدالتِ روایی به آنها"
+      ],
+      "answers_tg": [
+        "Бо пешкаш кардани гузор ба унвони фоҷиавӣ ва мотам гирифтан барои аз даст додани системи Ашконӣ",
+        "Бо чорчӯбгузории поён ба унвони аз назари кайҳонӣ омодашуда — пешгӯиҳо, нишонаҳои фарр, ва ногузирӣ гузори ногаҳонро ҳисси тақдирӣ мекунанд на ногаҳон",
+        "Бо гузаштан аз он ва вонамуд кардан ки гузори муҳиме набуд",
+        "Бо монданд тӯлонӣ бар охирин шоҳони Ашконӣ барои додани адолати ривоӣ ба онҳо"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh uses the mechanism of farr and prophecy to make inevitable what is historically abrupt. By showing that the cosmic forces were already aligned before the battle, the text transforms a military coup into a cosmically predetermined transition — less shocking, more fated.",
+      "explanation_fa": "شاهنامه از مکانیزمِ فرّ و پیش‌گویی استفاده می‌کند تا آنچه از نظرِ تاریخی ناگهانی است را اجتناب‌ناپذیر نشان دهد.",
+      "explanation_tg": "Шоҳнома аз механизми фарр ва пешгӯӣ истифода мекунад то он чи аз назари таърихӣ ногаҳон аст ро ногузир нишон диҳад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ardv-h6",
+      "chapter_slug": "ardavan",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "How does the Ardavan chapter function as a bridge between the Arsacid section (where the chronicle was thin) and the much richer Sasanian section?",
+      "question_fa": "فصلِ اردوان چگونه به عنوانِ پلی بینِ بخشِ اشکانی (که شاهنامه در آن نازک بود) و بخشِ ساسانیِ بسیار غنی‌تر عمل می‌کند؟",
+      "question_tg": "Фасли Ардавон чӣ тавр ба унвони пуле байни бахши Ашконӣ (ки Шоҳнома дар он нозук буд) ва бахши Сосонии хеле ғанитар кор мекунад?",
+      "answers": [
+        "The Ardavan chapter is longer than other Arsacid chapters because Ferdowsi liked him",
+        "It marks the geographical shift from eastern to western Iran",
+        "It provides narrative transition — the story gains energy as the chronicle moves from a thin period into a richly documented one; Ardavan's fall is the pivot point",
+        "It serves primarily as historical filler between the two main sections"
+      ],
+      "answers_fa": [
+        "فصلِ اردوان طولانی‌تر از سایرِ فصل‌های اشکانی است چون فردوسی از او خوشش می‌آمد",
+        "گذارِ جغرافیایی از ایرانِ شرقی به غربی را نشان می‌دهد",
+        "گذارِ روایی فراهم می‌کند — داستان وقتی شاهنامه از یک دوره‌ی نازک به یک دوره‌ی غنیِ مستند انتقال می‌یابد انرژی می‌گیرد؛ سقوطِ اردوان نقطه‌ی محوری است",
+        "اساساً به عنوانِ محتوایِ تاریخیِ پُرکننده بینِ دو بخشِ اصلی عمل می‌کند"
+      ],
+      "answers_tg": [
+        "Фасли Ардавон аз дигар фасл-ҳои Ашконӣ тӯлонитар аст зеро Фирдавсӣ аз ӯ хуш меомад",
+        "Гузори ҷуғрофиёиро аз Эрони шарқӣ ба ғарбӣ нишон медиҳад",
+        "Гузори ривоиро таъмин мекунад — достон вақте Шоҳнома аз давраи нозук ба давраи ғании мустанад интиқол меёбад қувват мегирад؛ афтодани Ардавон нуқтаи маҳварист",
+        "Асосан ба унвони мӯҳтавои таърихии пуркунанда байни ду бахши асосӣ кор мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Ardavan chapter functions as the doorway between the Shahnameh's thin Arsacid section and its rich Sasanian section. As the chronicle crosses this threshold, it gains momentum — more sources, more stories, more detailed court culture.",
+      "explanation_fa": "فصلِ اردوان به عنوانِ دروازه‌ای بینِ بخشِ نازکِ اشکانی و بخشِ غنیِ ساسانیِ شاهنامه عمل می‌کند.",
+      "explanation_tg": "Фасли Ардавон ба унвони дарвозае байни бахши нозуки Ашконӣ ва бахши ғании Сосонии Шоҳнома кор мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ardv-h7",
+      "chapter_slug": "ardavan",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Ardavan's fall ends 500 years of Arsacid rule. The Shahnameh does not celebrate this — it simply records it. What does this neutral tone achieve?",
+      "question_fa": "سقوطِ اردوان ۵۰۰ سال حکومتِ اشکانی را پایان می‌دهد. شاهنامه این را جشن نمی‌گیرد — فقط ثبت می‌کند. این لحنِ بی‌طرفانه چه چیزی به دست می‌آورد؟",
+      "question_tg": "Афтодани Ардавон ۵۰۰ соли ҳукмронии Ашкониёнро поён медиҳад. Шоҳнома инро ҷашн намегирад — танҳо сабт мекунад. Ин оҳанги беторафона чиро ба даст меорад?",
+      "answers": [
+        "It preserves the chronicle's historical authority — a chronicle that gloats over fallen dynasties loses credibility as a recorder of all Iranian history",
+        "It shows Ferdowsi personally mourned the Arsacids",
+        "It allows the reader to celebrate Ardeshir's victory without complexity",
+        "It proves Ferdowsi was writing under Arsacid patronage that required neutrality"
+      ],
+      "answers_fa": [
+        "اقتدارِ تاریخیِ شاهنامه را حفظ می‌کند — شاهنامه‌ای که بر سلسله‌های سقوط‌کرده شادمانی می‌کند به عنوانِ ضبط‌کننده‌ی تمامِ تاریخِ ایرانی اعتبار از دست می‌دهد",
+        "نشان می‌دهد فردوسی شخصاً برای اشکانیان عزاداری کرد",
+        "به خواننده اجازه می‌دهد بدون پیچیدگی پیروزیِ اردشیر را جشن بگیرد",
+        "ثابت می‌کند فردوسی تحتِ حمایتِ اشکانی می‌نوشت که به بی‌طرفی نیاز داشت"
+      ],
+      "answers_tg": [
+        "Ауторитети таърихии Шоҳномаро ҳифз мекунад — Шоҳномае ки бар сулолаҳои афтода шодмонӣ мекунад ба унвони сабткунандаи тамоми таърихи эронӣ эҳтибор аз даст медиҳад",
+        "Нишон медиҳад Фирдавсӣ шахсан барои Ашкониён мотам гирифт",
+        "Ба хонанда иҷозат медиҳад бидуни мураккабӣ ғалабаи Ардашерро ҷашн бигирад",
+        "Исбот мекунад Фирдавсӣ зери ҳимояти Ашконӣ менавишт ки ба беторафӣ ниёз дошт"
+      ],
+      "correct_answer": 0,
+      "explanation": "The neutral tone of the Ardavan chapter reflects the Shahnameh's status as a chronicle of all Iranian kingship, not a partisan document. Ferdowsi serves all kings equally — to mourn or celebrate one dynasty over another would compromise his role as the keeper of the tradition.",
+      "explanation_fa": "لحنِ بی‌طرفانه‌ی فصلِ اردوان وضعیتِ شاهنامه را به عنوانِ شاهنامه‌ای از تمامِ شاهنشاهیِ ایرانی نشان می‌دهد.",
+      "explanation_tg": "Оҳанги беторафонаи фасли Ардавон ҳолати Шоҳномаро ба унвони Шоҳномаи тамоми шоҳаншоҳии эронӣ нишон медиҳад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ardv-h8",
+      "chapter_slug": "ardavan",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Battle of Hormizdagan is a historical event. Yet the Shahnameh embeds it in cosmic symbolism (farr, prophecy). How does this embedding change its meaning?",
+      "question_fa": "نبردِ هرمزدگان یک رویدادِ تاریخی است. با این حال شاهنامه آن را در نمادپردازیِ کیهانی (فرّ، پیش‌گویی) قرار می‌دهد. این جاسازی معنایش را چگونه تغییر می‌دهد؟",
+      "question_tg": "Набарди Ҳурмузгон рӯйдоди таърихист. Аммо Шоҳнома онро дар рамзпардозии кайҳонӣ (фарр, пешгӯӣ) ҷой медиҳад. Ин ҷойгузинӣ маъноашро чӣ тавр тағйир медиҳад?",
+      "answers": [
+        "It proves the Shahnameh is mythology, not history",
+        "It elevates a military outcome into a cosmic verdict — the battle is not just about who won but about what the universe determined should happen",
+        "It obscures the real political and economic causes of the Sasanian rise",
+        "It makes the history more entertaining without changing its meaning"
+      ],
+      "answers_fa": [
+        "ثابت می‌کند شاهنامه اسطوره است نه تاریخ",
+        "یک نتیجه‌ی نظامی را به یک حکمِ کیهانی ارتقا می‌دهد — نبرد فقط درباره‌ی اینکه چه کسی برنده شد نیست بلکه درباره‌ی آن چیزی است که کیهان تعیین کرد باید اتفاق می‌افتاد",
+        "علل‌های واقعیِ سیاسی و اقتصادیِ ظهورِ ساسانی را پنهان می‌کند",
+        "تاریخ را سرگرم‌کننده‌تر می‌کند بدون تغییرِ معنایش"
+      ],
+      "answers_tg": [
+        "Исбот мекунад Шоҳнома асотир аст на таърих",
+        "Натиҷаи низомиро ба ҳукми кайҳонӣ баланд мебарад — набард танҳо дар бораи ин ки кӣ бурд нест балки дар бораи он чизест ки коинот муайян кард бояд иттифоқ меафтод",
+        "Сабабҳои воқеии сиёсӣ ва иқтисодии баромади Сосониёнро пинҳон мекунад",
+        "Таърихро сирҷунбонтар мекунад бидуни тағйири маъноаш"
+      ],
+      "correct_answer": 1,
+      "explanation": "Embedding a historical battle in cosmic symbolism gives it meaning beyond its immediate military result. The Shahnameh is not trying to explain who won in terms of logistics — it is explaining why it was right that Ardeshir won, in terms of the larger cosmic order it is tracing.",
+      "explanation_fa": "جاسازی یک نبردِ تاریخی در نمادپردازیِ کیهانی به آن معنایی فراتر از نتیجه‌ی نظامیِ فوریش می‌دهد.",
+      "explanation_tg": "Ҷойгузинии набарди таърихӣ дар рамзпардозии кайҳонӣ ба он маъное фаротар аз натиҷаи низомии фориаш медиҳад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

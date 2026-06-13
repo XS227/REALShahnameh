@@ -9,22 +9,22 @@
       "question_fa": "منوچهر توسطِ فریدون برای یک هدفِ واحد پرورش می‌یابد. هدف چیست؟",
       "question_tg": "Манучеҳр аз тарафи Фаридун барои як мақсади ягона парвариш меёбад. Мақсад чист?",
       "answers": [
+        "To bind Zahhak's remaining demons",
         "To defend Iran against Turan forever",
-        "To rebuild the crystal throne",
         "To avenge the murder of Iraj",
-        "To bind Zahhak's remaining demons"
+        "To rebuild the crystal throne"
       ],
       "answers_fa": [
+        "به زنجیر کشیدنِ دیوانِ باقیمانده‌ی ضحاک",
         "دفاع ابدی از ایران در برابرِ توران",
-        "بازسازیِ تختِ بلورین",
         "انتقام‌گیری برای قتلِ ایرج",
-        "به زنجیر کشیدنِ دیوانِ باقیمانده‌ی ضحاک"
+        "بازسازیِ تختِ بلورین"
       ],
       "answers_tg": [
+        "Банд кардани девони боқимондаи Заҳҳок",
         "Ҳифзи абадии Эрон дар муқобили Турон",
-        "Барқарор кардани тахти булурин",
         "Интиқоми қатли Эраҷ",
-        "Банд кардани девони боқимондаи Заҳҳок"
+        "Барқарор кардани тахти булурин"
       ],
       "correct_answer": 2,
       "explanation": "Manuchehr is Iraj's grandson, raised by Fereydun specifically to bring justice for Iraj's murder by Tur and Salm.",
@@ -44,21 +44,21 @@
       "question_fa": "سلم چگونه کوشش می‌کند از سپاهِ منوچهر فرار کند؟",
       "question_tg": "Салм чӣ гуна кӯшиш мекунад аз лашкари Манучеҳр бигурезад?",
       "answers": [
-        "He hides in the mountains",
-        "He surrenders and begs mercy",
         "He disguises himself as a merchant",
+        "He surrenders and begs mercy",
+        "He hides in the mountains",
         "He flees to the sea on his ships"
       ],
       "answers_fa": [
-        "در کوه‌ها پنهان می‌شود",
-        "تسلیم می‌شود و طلبِ عفو می‌کند",
         "خود را به شکلِ بازرگانی درمی‌آورد",
+        "تسلیم می‌شود و طلبِ عفو می‌کند",
+        "در کوه‌ها پنهان می‌شود",
         "با کشتی‌هایش به دریا می‌گریزد"
       ],
       "answers_tg": [
-        "Дар кӯҳҳо пинҳон мешавад",
-        "Таслим мешавад ва бахшиш мехоҳад",
         "Худро ба шакли тоҷире дармеоварад",
+        "Таслим мешавад ва бахшиш мехоҳад",
+        "Дар кӯҳҳо пинҳон мешавад",
         "Бо киштиҳояш ба дарё мегурезад"
       ],
       "correct_answer": 3,
@@ -79,24 +79,24 @@
       "question_fa": "پهلوانِ جنگاورِ منوچهر کیست و اهمیتِ او برای آینده چیست؟",
       "question_tg": "Паҳлавони ҷанговари Манучеҳр кист ва аҳамияти ӯ барои оянда чист?",
       "answers": [
-        "Sam — whose white-haired son Zal will father Rostam",
-        "Fereydun — who will train the next king",
         "Kaveh — who still carries the Derafsh Kaviani",
-        "Tahmuras — returned from the age of writing"
+        "Tahmuras — returned from the age of writing",
+        "Sam — whose white-haired son Zal will father Rostam",
+        "Fereydun — who will train the next king"
       ],
       "answers_fa": [
-        "سام — که پسرِ سپیدمویش زال پدرِ رستم خواهد شد",
-        "فریدون — که شاهِ بعدی را آموزش خواهد داد",
         "کاوه — که هنوز درفشِ کاویانی را حمل می‌کند",
-        "تهمورث — بازگشته از عصرِ نوشتار"
+        "تهمورث — بازگشته از عصرِ نوشتار",
+        "سام — که پسرِ سپیدمویش زال پدرِ رستم خواهد شد",
+        "فریدون — که شاهِ بعدی را آموزش خواهد داد"
       ],
       "answers_tg": [
-        "Сом — ки писари сапедмӯяш Зол падари Рустам хоҳад шуд",
-        "Фаридун — ки подшоҳи навбатиро таълим хоҳад дод",
         "Кова — ки ҳанӯз Дарафши Кавориро мебарад",
-        "Таҳмурас — баргашта аз асри навиштан"
+        "Таҳмурас — баргашта аз асри навиштан",
+        "Сом — ки писари сапедмӯяш Зол падари Рустам хоҳад шуд",
+        "Фаридун — ки подшоҳи навбатиро таълим хоҳад дод"
       ],
-      "correct_answer": 0,
+      "correct_answer": 2,
       "explanation": "Sam son of Nariman — Manuchehr's greatest warrior. His son Zal will be born white-haired, raised by Simorgh, and from Zal and Rudabeh, Rostam will eventually be born.",
       "explanation_fa": "سام پسرِ نریمان — بزرگ‌ترین جنگاورِ منوچهر. پسرش زال با موهای سفید متولد خواهد شد، توسطِ سیمرغ پرورش خواهد یافت، و از زال و رودابه رستم سرانجام متولد خواهد شد.",
       "explanation_tg": "Сом писари Наримон — бузургтарин ҷанговари Манучеҳр. Писараш Зол бо мӯи сапед таваллуд хоҳад шуд, аз тарафи Симурғ парвариш хоҳад ёфт.",
@@ -114,24 +114,24 @@
       "question_fa": "فریدون چه مدت پس از شنیدنِ خبرِ قتلِ ایرج صبر می‌کند تا منوچهر را بخواهد؟",
       "question_tg": "Фаридун чанд муддат пас аз шунидани хабари қатли Эраҷ сабр мекунад то Манучеҳрро бихоҳад?",
       "answers": [
-        "One hour",
         "One year",
-        "Three days",
-        "A decade"
+        "One hour",
+        "A decade",
+        "Three days"
       ],
       "answers_fa": [
-        "یک ساعت",
         "یک سال",
-        "سه روز",
-        "یک دهه"
+        "یک ساعت",
+        "یک دهه",
+        "سه روز"
       ],
       "answers_tg": [
-        "Як соат",
         "Як сол",
-        "Се рӯз",
-        "Як даҳа"
+        "Як соат",
+        "Як даҳа",
+        "Се рӯз"
       ],
-      "correct_answer": 2,
+      "correct_answer": 3,
       "explanation": "Three days alone — then he calls for Manuchehr. Some griefs are too large for immediate expression. Fereydun's silence is the Shahnameh's measure of the scale of this sorrow.",
       "explanation_fa": "سه روز تنها — بعد منوچهر را می‌خواهد. برخی اندوه‌ها برای ابراز سریع بیش از اندازه بزرگند. سکوتِ فریدون معیارِ شاهنامه برای اندازه‌ی این غم است.",
       "explanation_tg": "Се рӯз танҳо — баъд Манучеҳрро мехоҳад. Баъзе ғамҳо барои ифодаи зуд хеле бузурганд.",
@@ -149,24 +149,24 @@
       "question_fa": "شاهنامه می‌گوید تور خوب می‌جنگد اما می‌بازد. چرا؟",
       "question_tg": "Шоҳнома мегӯяд Тур хуб меҷангад аммо мебозад. Чаро?",
       "answers": [
+        "He has spent years ruling but not training — and he is fighting someone prepared since childhood for this exact moment",
         "He is outnumbered by Manuchehr's larger army",
-        "Manuchehr uses magical powers Tur cannot counter",
         "He refuses to use weapons against his own family",
-        "He has spent years ruling but not training — and he is fighting someone prepared since childhood for this exact moment"
+        "Manuchehr uses magical powers Tur cannot counter"
       ],
       "answers_fa": [
+        "سال‌ها حکم رانده اما آموزش ندیده — و دارد با کسی می‌جنگد که از کودکی برای دقیقاً این لحظه آماده شده",
         "از نظرِ تعداد در برابرِ سپاهِ بزرگ‌ترِ منوچهر کم می‌آورد",
-        "منوچهر از قدرت‌های جادویی استفاده می‌کند که تور نمی‌تواند مقابله کند",
         "از به‌کارگیریِ سلاح علیه خانواده‌اش امتناع می‌کند",
-        "سال‌ها حکم رانده اما آموزش ندیده — و دارد با کسی می‌جنگد که از کودکی برای دقیقاً این لحظه آماده شده"
+        "منوچهر از قدرت‌های جادویی استفاده می‌کند که تور نمی‌تواند مقابله کند"
       ],
       "answers_tg": [
+        "Солҳо ҳукм ронда аммо таълим надидааст — ва дорад бо касе меҷангад ки аз кӯдакӣ барои дақиқан ин лаҳза омода шудааст",
         "Аз нظري шумора дар баробари лашкари бузургтари Манучеҳр кам меоварад",
-        "Манучеҳр аз қудратҳои ҷодугарӣ истифода мекунад ки Тур наметавонад муқовимат кунад",
         "Аз истифодаи аслиҳа бар зидди оилааш саркашӣ мекунад",
-        "Солҳо ҳукм ронда аммо таълим надидааст — ва дорад бо касе меҷангад ки аз кӯдакӣ барои дақиқан ин лаҳза омода шудааст"
+        "Манучеҳр аз қудратҳои ҷодугарӣ истифода мекунад ки Тур наметавонад муқовимат кунад"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "Tur has spent years ruling and not training for a fight he must have known was coming. Manuchehr has been prepared since childhood for this single moment.",
       "explanation_fa": "تور سال‌ها حکم رانده و برای نبردی که باید می‌دانسته می‌آید آموزش ندیده. منوچهر از کودکی برای این لحظه‌ی واحد آماده شده.",
       "explanation_tg": "Тур солҳо ҳукм ронда ва барои набарде ки бояд медонист меояд таълим надида. Манучеҳр аз кӯдакӣ барои ин лаҳзаи ягона омода шудааст.",
@@ -184,24 +184,24 @@
       "question_fa": "چرا شاهنامه می‌گوید منوچهر باید شخصاً با تور بجنگد نه اینکه دیگران را بفرستد؟",
       "question_tg": "Чаро Шоҳнома мегӯяд Манучеҳр бояд шахсан бо Тур биҷангад на ин ки дигаронро бифиристад?",
       "answers": [
-        "The debt is personal — Iraj died at Tur's hands, so the payment must be personal",
-        "Because Manuchehr has no trust in his generals",
         "Because single combat is required by the law of the four orders",
+        "Because Manuchehr has no trust in his generals",
+        "The debt is personal — Iraj died at Tur's hands, so the payment must be personal",
         "Because the army refused to fight"
       ],
       "answers_fa": [
-        "وام شخصی است — ایرج به دستِ تور کشته شد پس پرداختش هم باید شخصی باشد",
-        "چون منوچهر اعتمادی به سردارانش ندارد",
         "چون نبردِ تن‌به‌تن طبقِ قانونِ چهار طبقه الزامی است",
+        "چون منوچهر اعتمادی به سردارانش ندارد",
+        "وام شخصی است — ایرج به دستِ تور کشته شد پس پرداختش هم باید شخصی باشد",
         "چون سپاه از جنگیدن سر باز زد"
       ],
       "answers_tg": [
-        "Қарз шахсӣ аст — Эраҷ ба дасти Тур кушта шуд пас пардохташ ҳам бояд шахсӣ бошад",
-        "Зеро Манучеҳр ба сарлашкаронаш боварӣ надорад",
         "Зеро набарди тан ба тан мувофиқи қонуни чаҳор табақа ҳатмист",
+        "Зеро Манучеҳр ба сарлашкаронаш боварӣ надорад",
+        "Қарз шахсӣ аст — Эраҷ ба дасти Тур кушта шуд пас пардохташ ҳам бояд шахсӣ бошад",
         "Зеро лашкар аз ҷангидан саркашӣ кард"
       ],
-      "correct_answer": 0,
+      "correct_answer": 2,
       "explanation": "The debt is personal. Iraj died at Tur's hands directly. The Shahnameh insists justice must match the scale of the wrong — personal murder answered by personal combat.",
       "explanation_fa": "وام شخصی است. ایرج مستقیماً به دستِ تور کشته شد. شاهنامه اصرار دارد عدالت باید با مقیاسِ جنایت تطابق داشته باشد — قتلِ شخصی با نبردِ تن‌به‌تن پاسخ داده می‌شود.",
       "explanation_tg": "Қарз шахсӣ аст. Эраҷ мустақиман ба дасти Тур кушта шуд. Шоҳнома иҷрор дорад адолат бояд бо миқёси ҷиноят мувофиқ бошад.",
@@ -219,24 +219,24 @@
       "question_fa": "پس از مرگِ تور و سلم، چرا فریدون برای آن‌ها هم گریه می‌کند — با وجود اینکه منوچهر را برای کشتنشان پرورش داد؟",
       "question_tg": "Пас аз марги Тур ва Салм, чаро Фаридун барои онҳо ҳам гиряд — бо вуҷуди он ки Манучеҳрро барои куштани онҳо парвариш дод?",
       "answers": [
-        "He regrets raising Manuchehr and wishes Tur had won",
         "He weeps not for their act but for the sons they were before the act — grief and justice are not the same",
-        "He is afraid of what the world will say about him",
-        "He only pretends to grieve for political appearances"
+        "He regrets raising Manuchehr and wishes Tur had won",
+        "He only pretends to grieve for political appearances",
+        "He is afraid of what the world will say about him"
       ],
       "answers_fa": [
-        "از پرورشِ منوچهر پشیمان است و آرزو می‌کند تور پیروز شده بود",
         "نه برای عملشان که برای پسرانی که پیش از آن عمل بودند گریه می‌کند — اندوه و عدالت یکی نیستند",
-        "می‌ترسد جهان درباره‌اش چه خواهد گفت",
-        "فقط برای اهدافِ سیاسی تظاهر به عزاداری می‌کند"
+        "از پرورشِ منوچهر پشیمان است و آرزو می‌کند تور پیروز شده بود",
+        "فقط برای اهدافِ سیاسی تظاهر به عزاداری می‌کند",
+        "می‌ترسد جهان درباره‌اش چه خواهد گفت"
       ],
       "answers_tg": [
-        "Аз парваришии Манучеҳр пашаймон аст ва орзу мекунад Тур ғалаба мекард",
         "На барои амалашон, балки барои писаронеки ки пеш аз он амал буданд гиряд — ғам ва адолат яке нестанд",
-        "Аз он ки ҷаҳон дар бораи ӯ чӣ хоҳад гуфт метарсад",
-        "Танҳо барои мақсадҳои сиёсӣ тазоҳур ба мотам мекунад"
+        "Аз парваришии Манучеҳр пашаймон аст ва орзу мекунад Тур ғалаба мекард",
+        "Танҳо барои мақсадҳои сиёсӣ тазоҳур ба мотам мекунад",
+        "Аз он ки ҷаҳон дар бораи ӯ чӣ хоҳад гуфт метарсад"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Grief and justice are not the same. Fereydun weeps for his sons — not for their murder of Iraj, but for who they were before that choice. The Shahnameh holds both truths at once.",
       "explanation_fa": "اندوه و عدالت یکی نیستند. فریدون برای پسرانش گریه می‌کند — نه برای قتلِ ایرج، بلکه برای کسانی که پیش از آن انتخاب بودند. شاهنامه هر دو حقیقت را با هم نگه می‌دارد.",
       "explanation_tg": "Ғам ва адолат яке нестанд. Фаридун барои писаронаш гиряд — на барои қатли Эраҷ, балки барои кесоне ки пеш аз он интихоб буданд.",
@@ -254,24 +254,24 @@
       "question_fa": "پایانِ دفترِ هفتم با سام و کوهِ شمال چه رویدادِ آینده‌ای را پیش‌نما می‌کند؟",
       "question_tg": "Поёни бобои ҳафтум бо Сом ва кӯҳи шимол чӣ рӯйдоди оянде пешнамо мекунад?",
       "answers": [
+        "Sam's white-haired son Zal will be cast from the mountain — leading to Simorgh and eventually Rostam",
         "Manuchehr's future battle against a new invasion from Turan",
         "Sam will defeat a demon army in the northern passes",
-        "Sam's white-haired son Zal will be cast from the mountain — leading to Simorgh and eventually Rostam",
         "The binding of the last serpent-creatures of Zahhak's age"
       ],
       "answers_fa": [
+        "پسرِ سپیدمویِ سام زال از کوه انداخته خواهد شد — که به سیمرغ و سرانجام رستم ختم می‌شود",
         "نبردِ آینده‌ی منوچهر علیه تهاجمِ جدیدی از توران",
         "سام سپاهِ دیوی را در گذرگاه‌های شمالی شکست خواهد داد",
-        "پسرِ سپیدمویِ سام زال از کوه انداخته خواهد شد — که به سیمرغ و سرانجام رستم ختم می‌شود",
         "به زنجیر کشیدنِ آخرین موجوداتِ ماری از عصرِ ضحاک"
       ],
       "answers_tg": [
+        "Писари сапедмӯии Сом Зол аз кӯҳ партофта хоҳад шуд — ки ба Симурғ ва охиран Рустам хатм мешавад",
         "Набарди оянда Манучеҳр бар зидди ҳуҷуми нав аз Турон",
         "Сом лашкари девиро дар гузаргоҳҳои шимолӣ шикаст хоҳад дод",
-        "Писари сапедмӯии Сом Зол аз кӯҳ партофта хоҳад шуд — ки ба Симурғ ва охиран Рустам хатм мешавад",
         "Банд кардани охирин мавҷудоти мори аз асри Заҳҳок"
       ],
-      "correct_answer": 2,
+      "correct_answer": 0,
       "explanation": "Sam will have a white-haired son (Zal) whom he casts from the mountain in fear of the omen. Simorgh will raise Zal. Zal will marry Rudabeh. Their son Rostam — the Shahnameh's greatest hero — is the distant destination this chapter points toward.",
       "explanation_fa": "سام پسرِ سپیدمویی (زال) خواهد داشت که از ترسِ فال از کوه می‌اندازد. سیمرغ زال را پرورش می‌دهد. زال با رودابه ازدواج می‌کند. پسرشان رستم — بزرگ‌ترین قهرمانِ شاهنامه — مقصدِ دوری است که این دفتر به‌سویش اشاره می‌کند.",
       "explanation_tg": "Сом писари сапедмӯе (Зол) хоҳад дошт ки аз тарси фол аз кӯҳ меандозад. Симурғ Золро парвариш медиҳад.",
@@ -289,22 +289,22 @@
       "question_fa": "چه چیزی منوچهر را انتقام‌گیرِ عادل می‌کند نه ستمگرِ جدید؟",
       "question_tg": "Чӣ чиз Манучеҳрро интиқомгирани одил мекунад на ситамгари нав?",
       "answers": [
-        "He uses less violence than Tur and Salm used",
+        "He consults the Mobeds before every battle",
         "He understands not just how to win but what he is winning for — and afterward rules justly",
-        "He is given divine approval from Fereydun's mace",
-        "He consults the Mobeds before every battle"
+        "He uses less violence than Tur and Salm used",
+        "He is given divine approval from Fereydun's mace"
       ],
       "answers_fa": [
-        "از خشونتِ کمتری نسبت به تور و سلم استفاده می‌کند",
+        "پیش از هر نبرد با موبدان مشورت می‌کند",
         "نه فقط چگونه بُردن بلکه برای چه می‌برد را می‌فهمد — و بعد از آن با عدل حکم می‌راند",
-        "از گرزِ فریدون تأییدِ الهی دریافت می‌کند",
-        "پیش از هر نبرد با موبدان مشورت می‌کند"
+        "از خشونتِ کمتری نسبت به تور و سلم استفاده می‌کند",
+        "از گرزِ فریدون تأییدِ الهی دریافت می‌کند"
       ],
       "answers_tg": [
-        "Аз хушунати камтаре нисбат ба Тур ва Салм истифода мекунад",
+        "Пеш аз ҳар набард бо Мӯбадон машварат мекунад",
         "На танҳо чӣ гуна бурданро, балки барои чӣ меборад — ва пас аз он бо адл ҳукм меронад",
-        "Аз гурзи Фаридун тасдиқи илоҳӣ мегирад",
-        "Пеш аз ҳар набард бо Мӯбадон машварат мекунад"
+        "Аз хушунати камтаре нисбат ба Тур ва Салм истифода мекунад",
+        "Аз гурзи Фаридун тасдиқи илоҳӣ мегирад"
       ],
       "correct_answer": 1,
       "explanation": "He knows what he is winning for — the specific settlement of a specific wrong. That understanding, plus ruling justly afterward, is what separates him from becoming the thing he fought against.",
@@ -324,24 +324,24 @@
       "question_fa": "شاهنامه پرورشِ منوچهر را «محبتِ پیچیده‌شده با هدف» توصیف می‌کند. این چه معنایی دارد؟",
       "question_tg": "Шоҳнома тарбияти Манучеҳрро «меҳри мушаккалшуда бо мақсад» тавсиф мекунад. Ин чӣ маъно дорад?",
       "answers": [
-        "Fereydun did not truly love Manuchehr — it was only strategic",
-        "Manuchehr was raised without affection to make him a better fighter",
+        "The love was conditional on Manuchehr succeeding in his mission",
         "Fereydun genuinely loves Manuchehr but every lesson carries the weight of Iraj's death — affection and grief are inseparable in his training",
-        "The love was conditional on Manuchehr succeeding in his mission"
+        "Manuchehr was raised without affection to make him a better fighter",
+        "Fereydun did not truly love Manuchehr — it was only strategic"
       ],
       "answers_fa": [
-        "فریدون منوچهر را واقعاً دوست نداشت — فقط استراتژیک بود",
-        "منوچهر بدونِ محبت پرورش یافت تا جنگجوی بهتری بشود",
+        "محبت مشروط به موفقیتِ منوچهر در مأموریتش بود",
         "فریدون منوچهر را واقعاً دوست دارد اما هر درس سنگینیِ مرگِ ایرج را دارد — محبت و غم در آموزشش جدانشدنی‌اند",
-        "محبت مشروط به موفقیتِ منوچهر در مأموریتش بود"
+        "منوچهر بدونِ محبت پرورش یافت تا جنگجوی بهتری بشود",
+        "فریدون منوچهر را واقعاً دوست نداشت — فقط استراتژیک بود"
       ],
       "answers_tg": [
-        "Фаридун Манучеҳрро воқеан дӯст намедошт — танҳо стратегик буд",
-        "Манучеҳр бе меҳр парвариш ёфт то ҷанговари беҳтаре шавад",
+        "Меҳр ба муваффақияти Манучеҳр дар вазифааш шарт буд",
         "Фаридун Манучеҳрро воқеан дӯст медорад аммо ҳар дарс вазни марги Эраҷро дорад — меҳр ва ғам дар таълимаш ҷудонашуданианд",
-        "Меҳр ба муваффақияти Манучеҳр дар вазифааш шарт буд"
+        "Манучеҳр бе меҳр парвариш ёфт то ҷанговари беҳтаре шавад",
+        "Фаридун Манучеҳрро воқеан дӯст намедошт — танҳо стратегик буд"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "Fereydun loves Manuchehr genuinely — but every lesson in swordsmanship is also about Iraj, every lesson in statecraft is about why Tur and Salm chose wrong. Love and grief cannot be separated in this upbringing.",
       "explanation_fa": "فریدون منوچهر را واقعاً دوست دارد — اما هر درسِ شمشیرزنی درباره‌ی ایرج هم هست، هر درسِ کشورداری درباره‌ی اینکه چرا تور و سلم اشتباه انتخاب کردند. محبت و غم در این پرورش جدانشدنی‌اند.",
       "explanation_tg": "Фаридун Манучеҳрро воқеан дӯст медорад — аммо ҳар дарси шамширзанӣ дар бораи Эраҷ ҳам ҳаст. Меҳр ва ғам дар ин тарбия ҷудонашуданианд.",
@@ -359,24 +359,24 @@
       "question_fa": "درفشِ کاویانی سپاهِ منوچهر را رهبری می‌کند همان‌طور که سپاهِ فریدون را رهبری کرد. حضورِ مستمرش چه چیزی را نشان می‌دهد؟",
       "question_tg": "Дарафши Каворӣ лашкари Манучеҳрро раҳбарӣ мекунад ҳамон тавр ки лашкари Фаридунро раҳбарӣ мекард. Ҳузури доимии он чӣ чизро нишон медиҳад?",
       "answers": [
-        "That Kaveh is still alive and fighting",
         "That the banner protects its bearer from injury in battle",
-        "That Manuchehr is a descendant of Kaveh",
-        "That the authority to fight for Iran is inherited from the people who first suffered under tyranny — it cannot be claimed by any single king alone"
+        "That the authority to fight for Iran is inherited from the people who first suffered under tyranny — it cannot be claimed by any single king alone",
+        "That Kaveh is still alive and fighting",
+        "That Manuchehr is a descendant of Kaveh"
       ],
       "answers_fa": [
-        "که کاوه هنوز زنده است و می‌جنگد",
         "که درفش حاملش را در نبرد از آسیب محافظت می‌کند",
-        "که منوچهر از نسلِ کاوه است",
-        "که اقتدارِ جنگیدن برای ایران از مردمی به ارث رسیده که اول از ستمگری رنج بردند — هیچ شاهِ واحدی به تنهایی نمی‌تواند ادعایش کند"
+        "که اقتدارِ جنگیدن برای ایران از مردمی به ارث رسیده که اول از ستمگری رنج بردند — هیچ شاهِ واحدی به تنهایی نمی‌تواند ادعایش کند",
+        "که کاوه هنوز زنده است و می‌جنگد",
+        "که منوچهر از نسلِ کاوه است"
       ],
       "answers_tg": [
-        "Ки Кова ҳанӯз зинда аст ва меҷангад",
         "Ки дарафш ҳомилашро дар набард аз осеб муҳофизат мекунад",
-        "Ки Манучеҳр аз насли Кова аст",
-        "Ки салоҳияти ҷангидан барои Эрон аз мардуме ба мерос расида ки аввал аз зулм ранҷ бурданд — ягон шоҳи ягона ба танҳоӣ наметавонад иддаъояш кунад"
+        "Ки салоҳияти ҷангидан барои Эрон аз мардуме ба мерос расида ки аввал аз зулм ранҷ бурданд — ягон шоҳи ягона ба танҳоӣ наметавонад иддаъояш кунад",
+        "Ки Кова ҳанӯз зинда аст ва меҷангад",
+        "Ки Манучеҳр аз насли Кова аст"
       ],
-      "correct_answer": 3,
+      "correct_answer": 1,
       "explanation": "The Derafsh Kaviani carries the authority of the people who first stood against tyranny — Kaveh's personal act of refusing. No king possesses this alone. Each generation inherits it and must justify the inheritance by ruling well.",
       "explanation_fa": "درفشِ کاویانی اقتدارِ مردمی را دارد که اول علیه ستمگری ایستادند — عملِ شخصیِ امتناعِ کاوه. هیچ شاهی به تنهایی این را ندارد. هر نسلی آن را به ارث می‌برد و باید آن ارث را با حکمِ خوب توجیه کند.",
       "explanation_tg": "Дарафши Каворӣ салоҳияти мардумеро дорад ки аввал бар зидди зулм истоданд. Ҳеч шоҳе ба танҳоӣ инро надорад.",
@@ -395,21 +395,21 @@
       "question_tg": "Шоҳнома мегӯяд парвози гунаҳкорона «ҳеч вақт ба қадри кофӣ зуд нест.» Марги Салм кадом ҳақиқати бузургтареро нишон медиҳад?",
       "answers": [
         "The army chasing guilt has purpose on its side; geography cannot outrun moral debt",
+        "That the gods ensured Salm could not escape his punishment",
         "That sea travel was slower than land travel in ancient Persia",
-        "That Salm's ships were inferior to Manuchehr's cavalry",
-        "That the gods ensured Salm could not escape his punishment"
+        "That Salm's ships were inferior to Manuchehr's cavalry"
       ],
       "answers_fa": [
         "سپاهی که گناه را تعقیب می‌کند هدف را در کنار خود دارد؛ جغرافیا نمی‌تواند از بدهیِ اخلاقی سبقت بگیرد",
+        "که خدایان اطمینان حاصل کردند سلم نتواند از مجازاتش فرار کند",
         "که سفرِ دریایی در پارسِ باستان از سفرِ زمینی کندتر بود",
-        "که کشتی‌های سلم از سوارانِ منوچهر پست‌تر بودند",
-        "که خدایان اطمینان حاصل کردند سلم نتواند از مجازاتش فرار کند"
+        "که کشتی‌های سلم از سوارانِ منوچهر پست‌تر بودند"
       ],
       "answers_tg": [
         "Лашкаре ки гуноҳро таъқиб мекунад мақсадро дар канори худ дорад; ҷуғрофия наметавонад аз қарзи ахлоқӣ пешӣ гирад",
+        "Ки худоён мутмаин шуданд Салм наметавонад аз ҷазояш бигурезад",
         "Ки сафари дарёӣ дар Порси қадим аз сафари заминӣ оҳистатар буд",
-        "Ки киштиҳои Салм аз савораҳои Манучеҳр поинтар буданд",
-        "Ки худоён мутмаин шуданд Салм наметавонад аз ҷазояш бигурезад"
+        "Ки киштиҳои Салм аз савораҳои Манучеҳр поинтар буданд"
       ],
       "correct_answer": 0,
       "explanation": "The army pursuing justice has purpose; guilt-driven flight has only fear. In the Shahnameh, moral weight is not metaphorical — it materially slows the one who carries it wrongly.",
@@ -464,24 +464,24 @@
       "question_fa": "زنجیرِ منوچهر ← سام ← زال ← رستم چهار نسل را در بر می‌گیرد. صبرِ شاهنامه با این زنجیر به ما چه می‌گوید؟",
       "question_tg": "Занҷири Манучеҳр ← Сом ← Зол ← Рустам чаҳор насл дарбар мегирад. Сабри Шоҳнома бо ин занҷир ба мо чӣ мегӯяд?",
       "answers": [
-        "That Rostam was not important enough to introduce earlier",
         "That the Shahnameh was written over many years and the author forgot the earlier chapters",
         "The greatest heroes are not suddenly born — they are prepared across generations; preparation is as important as the hero",
-        "That Persian history requires long genealogies to establish royal legitimacy"
+        "That Persian history requires long genealogies to establish royal legitimacy",
+        "That Rostam was not important enough to introduce earlier"
       ],
       "answers_fa": [
-        "که رستم به‌اندازه‌ی کافی مهم نبود تا زودتر معرفی شود",
         "که شاهنامه طیِ سال‌های زیادی نوشته شده و نویسنده دفترهای قبلی را فراموش کرد",
         "بزرگ‌ترین قهرمانان ناگهان متولد نمی‌شوند — در طولِ نسل‌ها آماده می‌شوند؛ آمادگی به‌اندازه‌ی قهرمان مهم است",
-        "که تاریخِ پارسی برای اثباتِ مشروعیتِ شاهی نسب‌نامه‌های طولانی نیاز دارد"
+        "که تاریخِ پارسی برای اثباتِ مشروعیتِ شاهی نسب‌نامه‌های طولانی نیاز دارد",
+        "که رستم به‌اندازه‌ی کافی مهم نبود تا زودتر معرفی شود"
       ],
       "answers_tg": [
-        "Ки Рустам ба қадри кофӣ муҳим набуд то зудтар муаррифӣ шавад",
         "Ки Шоҳнома дар тӯли солҳои зиёде навишта шудааст ва муаллиф бобҳои қаблиро фаромӯш кард",
         "Бузургтарин қаҳрамонон ногаҳон таваллуд намешаванд — дар тӯли насл‌ҳо омода мешаванд; омодагӣ ба андозаи қаҳрамон муҳим аст",
-        "Ки таърихи Форс барои исботи машрӯияти шоҳӣ насабномаҳои дарозе лозим дорад"
+        "Ки таърихи Форс барои исботи машрӯияти шоҳӣ насабномаҳои дарозе лозим дорад",
+        "Ки Рустам ба қадри кофӣ муҳим набуд то зудтар муаррифӣ шавад"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "The greatest heroes are not sudden arrivals — they are prepared by generations of choices made before them. Sam's courage, Zal's wisdom (learned from Simorgh), and Rudabeh's love all had to exist before Rostam could. The preparation is part of the heroism.",
       "explanation_fa": "بزرگ‌ترین قهرمانان آمدنِ ناگهانی ندارند — توسطِ نسل‌هایی از انتخاب‌هایی که پیش از آن‌ها شده آماده می‌شوند. شجاعتِ سام، خردِ زال (از سیمرغ آموخته)، و محبتِ رودابه همه باید وجود می‌داشتند تا رستم می‌توانست. آمادگی بخشی از قهرمانی است.",
       "explanation_tg": "Бузургтарин қаҳрамонон омадани ногаҳон надоранд — аз тарафи насл‌ҳое аз интихобҳое ки пеш аз онҳо шуда омода мешаванд.",
@@ -501,22 +501,22 @@
       "answers": [
         "Because Ferdowsi didn't know its name",
         "Because the sea was mythological and did not exist historically",
-        "Because naming it would have required a diplomatic note about the Caspian",
-        "A guilty man's death does not deserve a geographic landmark — anonymity is the punishment"
+        "A guilty man's death does not deserve a geographic landmark — anonymity is the punishment",
+        "Because naming it would have required a diplomatic note about the Caspian"
       ],
       "answers_fa": [
         "چون فردوسی نامش را نمی‌دانست",
         "چون دریا اسطوره‌ای بود و از نظرِ تاریخی وجود نداشت",
-        "چون نامیدنش نیاز به یادداشتِ دیپلماتیک درباره‌ی دریای خزر داشت",
-        "مرگِ مردِ گناهکار لایقِ یادمانِ جغرافیایی نیست — بی‌نامی مجازات است"
+        "مرگِ مردِ گناهکار لایقِ یادمانِ جغرافیایی نیست — بی‌نامی مجازات است",
+        "چون نامیدنش نیاز به یادداشتِ دیپلماتیک درباره‌ی دریای خزر داشت"
       ],
       "answers_tg": [
         "Зеро Фирдавсӣ номашро намедонист",
         "Зеро дарё асотирӣ буд ва аз нظри таърихӣ вуҷуд надошт",
-        "Зеро номбар кардани он ба ёддошти дипломатикӣ дар бораи Баҳри Хазар ниёз дошт",
-        "Марги марди гунаҳкор лоиқи ёдмони ҷуғрофӣ нест — бенномӣ ҷазо аст"
+        "Марги марди гунаҳкор лоиқи ёдмони ҷуғрофӣ нест — бенномӣ ҷазо аст",
+        "Зеро номбар кардани он ба ёддошти дипломатикӣ дар бораи Баҳри Хазар ниёз дошт"
       ],
-      "correct_answer": 3,
+      "correct_answer": 2,
       "explanation": "A guilty man's death does not deserve a landmark. The Shahnameh's deliberate anonymity here is a statement about historical memory — not every death warrants a named place. Salm's death gets water and silence.",
       "explanation_fa": "مرگِ مردِ گناهکار لایقِ یادمان نیست. بی‌نامیِ عمدیِ شاهنامه اینجا بیانیه‌ای درباره‌ی حافظه‌ی تاریخی است — نه هر مرگی لایقِ مکانِ نامگذاری‌شده است. مرگِ سلم آب و سکوت می‌گیرد.",
       "explanation_tg": "Марги марди гунаҳкор лоиқи ёдмон нест. Бенномии қасдии Шоҳнома инҷо изҳоре дар бораи хотираи таърихист.",
@@ -535,20 +535,20 @@
       "question_tg": "Боб бо Сом ва ишорае ба шимол поён меёбад. Усули Шоҳнома дар поён додани бобҳо бо пешнамо чӣ мекунад?",
       "answers": [
         "It shows the chronicle has no ending — each closure is also an opening; the Shahnameh moves like a river, not a series of separate lakes",
-        "It reminds readers where the story paused",
         "It is a poetic convention with no structural meaning",
+        "It reminds readers where the story paused",
         "It signals which chapter to read next"
       ],
       "answers_fa": [
         "نشان می‌دهد این تاریخ پایانی ندارد — هر بستنی آغازی هم هست؛ شاهنامه مثلِ رودخانه حرکت می‌کند نه مجموعه‌ای از دریاچه‌های جداگانه",
-        "به خوانندگان یادآوری می‌کند داستان کجا متوقف شد",
         "قراردادِ شاعرانه‌ای است بدونِ معنایِ ساختاری",
+        "به خوانندگان یادآوری می‌کند داستان کجا متوقف شد",
         "نشان می‌دهد بعدی کدام دفتر را بخوانی"
       ],
       "answers_tg": [
         "Нишон медиҳад ин таърих пояне надорад — ҳар бастани ҳам оғозест; Шоҳнома мисли дарё ҳаракат мекунад на маҷмӯаи кӯлҳои ҷудогона",
-        "Ба хонандагон ёдрас мекунад ки ҳикоя куҷо қатъ шуд",
         "Қарордоди шоиронаест бе маъноии сохторӣ",
+        "Ба хонандагон ёдрас мекунад ки ҳикоя куҷо қатъ шуд",
         "Нишон медиҳад баъдӣ кадом бобро бихонӣ"
       ],
       "correct_answer": 0,

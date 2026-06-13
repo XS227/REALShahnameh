@@ -315,13 +315,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 10,
-        "label_en": "Reach Tahmuras LVL 10",
+        "target": 2,
+        "label_en": "Upgrade Tahmuras Hero to Lv.2",
         "label_fa": "رسیدن به سطحِ ۱۰ تهمورث",
         "label_tg": "Расидан ба сатҳи 10 Таҳмурас",
         "hint_en": "Upgrade Tahmuras in the Hero Collection tab. Each upgrade costs REAL tokens — complete scenes and quizzes to earn more.",
         "hint_fa": "تهمورث را در بخشِ مجموعه‌ی قهرمانان ارتقا دهید. هر ارتقا به توکن REAL نیاز دارد — با صحنه‌ها و آزمون‌ها بیشتر کسب کنید.",
-        "hint_tg": "Таҳмурасро дар бахши Қаҳрамонон баланд баред. Ҳар баланд бардоштан ба токени REAL ниёз дорад — бо саҳнаҳо ва имтиҳонҳо бештар ба даст оред."
+        "hint_tg": "Таҳмурасро дар бахши Қаҳрамонон баланд баред. Ҳар баланд бардоштан ба токени REAL ниёз дорад — бо саҳнаҳо ва имтиҳонҳо бештар ба даст оред.",
+        "hero_id": "tahmuras-hero"
       },
       {
         "id": "cypress-club",

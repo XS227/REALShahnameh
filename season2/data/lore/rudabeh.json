@@ -282,13 +282,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 35,
-        "label_en": "Reach LVL 35",
+        "target": 4,
+        "label_en": "Upgrade Hushang to Lv.4",
         "label_fa": "رسیدن به سطحِ ۳۵",
         "label_tg": "Расидан ба сатҳи 35",
         "hint_en": "Tap, complete quests, and claim daily rewards to earn XP.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید.",
-        "hint_tg": "Зарба занед, вазифаҳоро иҷро кунед."
+        "hint_tg": "Зарба занед, вазифаҳоро иҷро кунед.",
+        "hero_id": "hushang"
       },
       {
         "id": "quiz",

@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "ards-e1",
+      "id": "ard-e1",
       "chapter_slug": "ardeshir",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "What made Haftvad so powerful that Ardeshir failed to defeat him militarily — twice?",
-      "question_fa": "چه چیزی هفتواد را آنقدر قدرتمند کرد که اردشیر دو بار نتوانست او را به صورت نظامی شکست دهد؟",
-      "question_tg": "Чӣ Ҳафтводро он қадар қудратманд кард ки Ардашер ду бор натавонист ӯро ба таври ҳарбӣ шикаст диҳад?",
+      "question": "Who was Ardeshir's father?",
+      "question_fa": "پدرِ اردشیر چه کسی بود؟",
+      "question_tg": "Падари Ардашер кӣ буд?",
       "answers": [
-        "A magical worm his daughter had found in an apple that brought luck and fortune",
-        "A sacred fire that could not be extinguished and protected his fortress",
-        "An alliance with the King of China who sent him a thousand war elephants",
-        "A Zoroastrian curse placed on his land that made attackers forget their purpose"
+        "Papak, a Zoroastrian priest-king of Pars",
+        "Dara, the Achaemenid king",
+        "Ardavan, the last Arsacid king",
+        "Shapur, a Sasanian general"
       ],
       "answers_fa": [
-        "کرمی جادویی که دخترش در یک سیب پیدا کرده بود و خوش‌شانسی و ثروت می‌آورد",
-        "آتش مقدسی که خاموش نمی‌شد و قلعه‌اش را حفاظت می‌کرد",
-        "اتحادی با پادشاه چین که هزار فیل جنگی برایش فرستاد",
-        "نفرین زرتشتی روی سرزمینش که مهاجمان را از هدفشان فراموش می‌کرد"
+        "پاپک، یک شاه-روحانیِ زرتشتیِ پارس",
+        "دارا، شاهِ هخامنشی",
+        "اردوان، آخرین شاهِ اشکانی",
+        "شاپور، سردارِ ساسانی"
       ],
       "answers_tg": [
-        "Кирми ҷодуие ки духтараш дар себ ёфта буд ва хушбахтӣ ва сарват меовард",
-        "Оташи муқаддасе ки хомӯш намешуд ва қалъаашро ҳимоя мекард",
-        "Иттиҳодие бо подшоҳи Чин ки ҳазор фили ҷангӣ барояш фиристод",
-        "Нафрини Зардуштӣ бар сарзаминаш ки ҳамлакунандагонро аз мақсадашон фаромӯш мекард"
+        "Попак, шоҳ-коҳини зардуштии Порс",
+        "Доро, шоҳи Ҳахоманишӣ",
+        "Ардавон, охирин шоҳи Ашконӣ",
+        "Шопур, сардори Сосонӣ"
       ],
       "correct_answer": 0,
-      "explanation": "A spinning girl had found a small worm in an apple and kept it. Wherever the worm went, her thread grew fine and abundant. Her father Haftvad grew rich, then powerful, then a king. The worm had grown enormous and was the source of everything Haftvad had.",
-      "explanation_fa": "دختری نخ‌ریسنده یک کرم کوچک در سیبی پیدا کرده و نگه داشته بود. هر کجا کرم می‌رفت نخش ظریف و فراوان می‌شد. پدرش هفتواد ثروتمند، سپس قدرتمند، سپس یک شاه شد. کرم بزرگ شده بود و منبع همه چیزی بود که هفتواد داشت.",
-      "explanation_tg": "Духтаре ришта мерезид кирми хурде дар себе ёфта ва нигоҳ дошта буд. Ҳар ҷо кирм мерафт ришта фаровон ва нафис мешуд. Падараш Ҳафтвод сарватманд, сипас қудратманд, сипас подшоҳ шуд. Кирм калон шуда буд ва манбаи ҳамаи чизе буд ки Ҳафтвод дошт.",
+      "explanation": "Ardeshir was the son of Papak, a local ruler of the Pars region with Zoroastrian priestly connections. His rise began in Pars and spread from there.",
+      "explanation_fa": "اردشیر پسرِ پاپک بود، یک حاکمِ محلیِ منطقه‌ی پارس با پیوندهای روحانیِ زرتشتی.",
+      "explanation_tg": "Ардашер писари Попак буд, ҳокими маҳаллии минтақаи Порс бо пайвандҳои коҳинии зардуштӣ.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "ards-m1",
+      "id": "ard-e2",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "What did Ardeshir build to symbolise Sasanian royal power and religious devotion?",
+      "question_fa": "اردشیر چه چیزی برای نشان دادنِ قدرتِ سلطنتیِ ساسانی و تقواِ دینی ساخت؟",
+      "question_tg": "Ардашер чиро барои нишон додани қудрати шоҳонаи Сосонӣ ва парҳезгории динӣ сохт?",
+      "answers": [
+        "He built the great wall of Derbent",
+        "He constructed a grand palace at Persepolis",
+        "He refounded Pars and revived Zoroastrian fire temples",
+        "He founded a new capital city in the east"
+      ],
+      "answers_fa": [
+        "دیوارِ بزرگِ دربند را ساخت",
+        "یک کاخِ بزرگ در تخت جمشید ساخت",
+        "پارس را بازسازی کرد و آتشکده‌های زرتشتی را احیا کرد",
+        "یک پایتختِ جدید در شرق بنا کرد"
+      ],
+      "answers_tg": [
+        "Девори бузурги Дарбандро сохт",
+        "Кохи бузурге дар Тахти Ҷамшед сохт",
+        "Порсро аз нав бунёд кард ва оташкадаҳои зардуштиро эҳё кард",
+        "Пойтахти наверо дар шарқ таъсис дод"
+      ],
+      "correct_answer": 2,
+      "explanation": "Ardeshir refounded Pars as the heartland of his new empire and actively revived Zoroastrian fire temples, establishing the link between royal legitimacy and Zoroastrian religion that would define the Sasanian dynasty.",
+      "explanation_fa": "اردشیر پارس را به عنوانِ قلبِ امپراتوریِ جدیدش بازسازی کرد و فعالانه آتشکده‌های زرتشتی را احیا کرد.",
+      "explanation_tg": "Ардашер Порсро ба унвони қалби империяи ҷадиди худ аз нав бунёд кард ва фаъолона оташкадаҳои зардуштиро эҳё кард.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ard-e3",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What is the story of the Worm of Haftvadd about?",
+      "question_fa": "داستانِ کرمِ هفتواد درباره‌ی چیست؟",
+      "question_tg": "Достони Кирми Ҳафтвод дар бораи чист?",
+      "answers": [
+        "A story about how Ardeshir won his first battle against Ardavan",
+        "A legend about the founding of silk production in Pars",
+        "A worm that eats the roots of the world tree",
+        "A magical worm that grants power to a local lord — Ardeshir must destroy it to unify Iran"
+      ],
+      "answers_fa": [
+        "داستانی درباره‌ی اینکه اردشیر چگونه اولین جنگش را با اردوان برنده شد",
+        "افسانه‌ای درباره‌ی پایه‌گذاریِ تولیدِ ابریشم در پارس",
+        "کرمی که ریشه‌های درختِ جهانی را می‌خورد",
+        "کرمی جادویی که به یک ارباب محلی قدرت می‌بخشد — اردشیر باید آن را نابود کند تا ایران را متحد کند"
+      ],
+      "answers_tg": [
+        "Достоне дар бораи ин ки Ардашер чӣ тавр аввалин ҷангашро бо Ардавон бурд",
+        "Афсонае дар бораи бунёди истеҳсоли абрешим дар Порс",
+        "Кирме ки решаҳои дарахти ҷаҳониро мехӯрад",
+        "Кирми ҷодуие ки ба ардибеги маҳаллӣ қудрат медиҳад — Ардашер бояд онро нобуд кунад то Эронро муттаҳид кунад"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Worm of Haftvadd is a legend unique to the Shahnameh: a magical worm gives power to a local ruler. Ardeshir must destroy this supernatural obstacle to complete his unification of Iran.",
+      "explanation_fa": "کرمِ هفتواد افسانه‌ای منحصر به فردِ شاهنامه است: یک کرمِ جادویی به یک حاکمِ محلی قدرت می‌دهد. اردشیر باید این مانعِ ماورایی را نابود کند تا توحیدِ ایران را کامل کند.",
+      "explanation_tg": "Кирми Ҳафтвод афсонаи беназири Шоҳнома аст: кирми ҷодуие ба ҳокими маҳаллӣ қудрат медиҳад. Ардашер бояд ин монеъаи фавқуттабиъиро нобуд кунад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ard-m1",
       "chapter_slug": "ardeshir",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "How did Ardeshir finally kill Haftvad's worm after two military failures?",
-      "question_fa": "اردشیر چگونه بالاخره کرم هفتواد را پس از دو شکست نظامی کشت؟",
-      "question_tg": "Ардашер чӣ тавр дар охир кирми Ҳафтводро пас аз ду шикасти ҳарбӣ кушт?",
+      "question": "Ardeshir defeated both Ardavan's military and Haftvadd's supernatural worm. What does this double victory mean in the Shahnameh?",
+      "question_fa": "اردشیر هم نیروی نظامیِ اردوان و هم کرمِ ماورایی‌ای هفتواد را شکست داد. این پیروزیِ مضاعف در شاهنامه چه معنایی دارد؟",
+      "question_tg": "Ардашер ҳам нирӯи низомии Ардавон ва ҳам Кирми фавқуттабиъии Ҳафтводро шикаст дод. Ин ғалабаи дугона дар Шоҳнома чӣ маъно дорад?",
       "answers": [
-        "Sent a man disguised as a merchant with molten lead hidden in the cargo, poured down the worm's throat",
-        "Poisoned the worm's food supply using crushed plants mixed into its milk",
-        "Starved the fortress into surrender then stabbed the worm with a sacred Zoroastrian lance",
-        "Diverted the river feeding the fortress until the worm's chamber dried out"
+        "Military victory is more important than defeating supernatural enemies",
+        "A founding king must overcome both political/military threats AND supernatural obstacles — total legitimacy requires mastery on all levels",
+        "The worm story is inserted for entertainment and carries no symbolic weight",
+        "It shows Ardeshir was the strongest military commander in Sasanian history"
       ],
       "answers_fa": [
-        "مردی را با لباس مبدل به عنوان تاجر با سرب مذاب پنهان در محموله فرستاد که در گلوی کرم ریخته شد",
-        "آذوقه کرم را با گیاهان له‌شده مخلوط در شیرش مسموم کرد",
-        "قلعه را با محاصره گرسنگی به تسلیم واداشت سپس با نیزه مقدس زرتشتی کرم را از بین برد",
-        "رودخانه تغذیه‌کننده قلعه را منحرف کرد تا اتاق کرم خشک شود"
+        "پیروزیِ نظامی از شکست دادنِ دشمنانِ ماورایی مهم‌تر است",
+        "یک شاهِ پایه‌گذار باید هم تهدیداتِ سیاسی/نظامی و هم موانعِ ماورایی را شکست دهد — مشروعیتِ کامل به تسلط بر همه‌ی سطوح نیاز دارد",
+        "داستانِ کرم برای سرگرمی درج شده و هیچ وزنِ نمادینی ندارد",
+        "نشان می‌دهد اردشیر قوی‌ترین فرمانده‌ی نظامی در تاریخِ ساسانی بود"
       ],
       "answers_tg": [
-        "Мардеро бо либоси тоҷирона бо сурби гудохта пинҳон дар бор фиристод ки ба гулӯи кирм резонда шуд",
-        "Захираи хӯроки кирмро бо набототи коӯфташуда омехта дар шираш заҳролуд кард",
-        "Қалъаро бо муҳосираи гуруснагӣ ба таслим водошт сипас бо найзаи муқаддаси Зардуштӣ кирмро нобуд кард",
-        "Дарёи ғизодиҳандаи қалъаро мунҳариф кард то утоқи кирм хушк шавад"
+        "Ғалабаи низомӣ аз шикаст додани душманони фавқуттабиъӣ муҳимтар аст",
+        "Шоҳи бунёнгузор бояд ҳам таҳдидоти сиёсӣ/низомӣ ва ҳам монеъаҳои фавқуттабиъиро шикаст диҳад — машруияти комил ба тасалут дар ҳамаи сатҳҳо ниёз дорад",
+        "Достони кирм барои сирҷунбонӣ илова шудааст ва ҳеч вазни рамзе надорад",
+        "Нишон медиҳад Ардашер қавитарин фармондеҳи низомӣ дар таърихи Сосонӣ буд"
       ],
-      "correct_answer": 0,
-      "explanation": "Ardeshir sent a trusted man disguised as a merchant carrying sesame and honey, with molten lead hidden in the cargo. The merchant gained access under pretense of feeding the worm and poured the metal down its throat. The worm died, and Haftvad's fortress fell the next morning.",
-      "explanation_fa": "اردشیر مرد مورد اعتمادی را با لباس مبدل تاجر که کنجد و عسل حمل می‌کرد با سرب مذاب پنهان در محموله فرستاد. تاجر با بهانه تغذیه کرم وارد شد و فلز را در گلوی کرم ریخت. کرم مُرد و قلعه هفتواد صبح روز بعد سقوط کرد.",
-      "explanation_tg": "Ардашер марди мавриди эътимоде бо либоси тоҷирона ки кунҷут ва асал ҳамл мекард бо сурби гудохта пинҳон дар бор фиристод. Тоҷир бо баҳонаи ғизо додан ба кирм ворид шуд ва металлро ба гулӯи кирм рехт. Кирм мурд ва қалъаи Ҳафтвод субҳи рӯзи дигар суқут кард.",
+      "correct_answer": 1,
+      "explanation": "In Shahnameh founding narratives, a new king must establish himself on multiple fronts. Ardeshir defeats Ardavan (political legitimacy) and the worm (supernatural legitimacy). Both victories are required for a complete founding myth.",
+      "explanation_fa": "در روایت‌های پایه‌گذاریِ شاهنامه، یک شاهِ جدید باید خودش را در چندین جبهه ثابت کند.",
+      "explanation_tg": "Дар ривоятҳои бунёнгузории Шоҳнома, шоҳи ҷадид бояд худашро дар якчанд ҷабҳа исбот кунад.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "ards-e2",
+      "id": "ard-m2",
       "chapter_slug": "ardeshir",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "What did Ardeshir do after consolidating his empire to restore Iranian culture?",
-      "question_fa": "اردشیر بعد از تحکیم امپراتوریش برای احیای فرهنگ ایرانی چه کرد؟",
-      "question_tg": "Ардашер пас аз мустаҳкам кардани империяаш барои эҳёи фарҳанги Эронӣ чӣ кард?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "How did Ardeshir unify the fragmented Iran left after the Arsacid confederation collapsed?",
+      "question_fa": "اردشیر چگونه ایرانِ پراکنده‌ای که پس از فروپاشیِ کنفدراسیونِ اشکانی بجا مانده بود را متحد کرد؟",
+      "question_tg": "Ардашер чӣ тавр Эрони пароканда‌ае ки пас аз фурӯпошии конфедератсиявии Ашконӣ боқӣ монда буд ро муттаҳид кард?",
       "answers": [
-        "Restored the Zoroastrian fire temples and established Ctesiphon as his capital",
-        "Rebuilt the palace of Persepolis exactly as it had stood under Darius",
-        "Translated the Avesta into Greek so the conquered peoples could read it",
-        "Returned the royal treasuries stolen by Alexander to Pars province"
+        "Through a series of military campaigns against regional lords, eliminating rival power centres one by one",
+        "By peaceful diplomacy and marriage alliances with all regional lords",
+        "By inviting all lords to a feast and having them arrested simultaneously",
+        "Through a decree that all lords must submit or be taxed heavily"
       ],
       "answers_fa": [
-        "آتشکده‌های زرتشتی را احیا کرد و تیسفون را به عنوان پایتختش تأسیس کرد",
-        "کاخ تخت جمشید را دقیقاً همان‌طور که در زمان داریوش بوده بازسازی کرد",
-        "اوستا را به یونانی ترجمه کرد تا مردم تسخیر شده بتوانند آن را بخوانند",
-        "خزانه‌های سلطنتی که اسکندر دزدیده بود را به استان پارس برگرداند"
+        "از طریقِ یک سری لشکرکشی‌های نظامی علیهِ ارباب‌های منطقه‌ای، از بینِ بردنِ مراکزِ قدرتِ رقیب یکی یکی",
+        "از طریقِ دیپلماسیِ صلح‌آمیز و اتحادهای ازدواجی با همه‌ی ارباب‌های منطقه‌ای",
+        "با دعوت از همه‌ی ارباب‌ها به یک ضیافت و دستگیریِ هم‌زمانِ آنها",
+        "از طریقِ فرمانی که همه‌ی ارباب‌ها باید تسلیم شوند یا سنگین مالیات بدهند"
       ],
       "answers_tg": [
-        "Оташкадаҳои Зардуштиро эҳё кард ва Тайсафунро ҳамчун пойтахташ таъсис дод",
-        "Қасри Тахти Ҷамшедро дақиқан ҳамон тавр ки дар замони Дориюш истода буд барқарор кард",
-        "Авесторо ба Юнонӣ тарҷума кард то мардуми фатҳшуда онро хонда тавонанд",
-        "Хазинаҳои шоҳоне ки Искандар дуздида буд ба устони Порс баргардонд"
+        "Тавассути як силсила лашкаркашиҳои низомӣ зидди ардибегони минтақавӣ, аз байн бурдани марказҳои қудрати рақиб яке яке",
+        "Тавассути дипломатияи сулҳомез ва иттиҳодҳои издивоҷӣ бо ҳамаи ардибегони минтақавӣ",
+        "Бо даъват кардани ҳамаи ардибегон ба зиёфат ва дастгири ҳамзамони онҳо",
+        "Тавассути фармоне ки ҳамаи ардибегон бояд таслим шаванд ё андози сангин диҳанд"
       ],
       "correct_answer": 0,
-      "explanation": "After defeating his enemies, Ardeshir restored the Zoroastrian fire temples that had been neglected since Alexander's conquest, and established Ctesiphon on the Tigris as the great Sasanian capital. He was rebuilding not just an empire but a civilization.",
-      "explanation_fa": "پس از شکست دشمنانش، اردشیر آتشکده‌های زرتشتی را که از زمان فتح اسکندر غفلت شده بودند احیا کرد و تیسفون بر رود دجله را به عنوان پایتخت بزرگ ساسانی تأسیس کرد. او نه تنها یک امپراتوری بلکه یک تمدن را بازسازی می‌کرد.",
-      "explanation_tg": "Пас аз шикаст додани душманонаш, Ардашер оташкадаҳои Зардуштиро ки аз замони фатҳи Искандар беэтиноӣ шуда буданд эҳё кард ва Тайсафунро бар дарёи Даҷла ҳамчун пойтахти бузурги Сосонӣ таъсис дод.",
+      "explanation": "Ardeshir's unification was a military project — he fought a succession of campaigns against regional lords across Iran. The Shahnameh records this as the necessary work of founding a centralised empire from what had been a loose confederation.",
+      "explanation_fa": "توحیدِ اردشیر یک پروژه‌ی نظامی بود — او یک توالی از لشکرکشی‌ها علیهِ ارباب‌های منطقه‌ای در سرتاسرِ ایران جنگید.",
+      "explanation_tg": "Иттиҳоди Ардашер лоиҳаи низомӣ буд — ӯ як таволи лашкаркашиҳо зидди ардибегони минтақавӣ дар саросари Эрон ҷангид.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ard-m3",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh says Ardeshir revived Zoroastrian fire temples. What did this revival accomplish politically?",
+      "question_fa": "شاهنامه می‌گوید اردشیر آتشکده‌های زرتشتی را احیا کرد. این احیا از نظرِ سیاسی چه چیزی به دست آورد؟",
+      "question_tg": "Шоҳнома мегӯяд Ардашер оташкадаҳои зардуштиро эҳё кард. Ин эҳё аз назари сиёсӣ чиро ба даст овард?",
+      "answers": [
+        "It showed Ardeshir's personal piety but had no effect on governance",
+        "It linked royal legitimacy to religious orthodoxy — the king is legitimate because the priests validate him, and the priests are valid because the king protects them",
+        "It replaced the military power of regional lords with priestly power",
+        "It was purely a religious act with no political dimensions"
+      ],
+      "answers_fa": [
+        "تقواِ شخصیِ اردشیر را نشان داد اما هیچ تأثیری بر حکمرانی نداشت",
+        "مشروعیتِ سلطنتی را به ارتدکسیِ دینی متصل کرد — شاه مشروع است چون روحانیون او را تأیید می‌کنند، و روحانیون معتبر هستند چون شاه از آنها محافظت می‌کند",
+        "قدرتِ نظامیِ ارباب‌های منطقه‌ای را با قدرتِ روحانی جایگزین کرد",
+        "صرفاً یک عمل دینی بود بدون ابعادِ سیاسی"
+      ],
+      "answers_tg": [
+        "Парҳезгории шахсии Ардашерро нишон дод аммо ҳеч таъсире ба ҳукуматдорӣ надошт",
+        "Машруияти шоҳиро ба ортодоксии динӣ пайванд кард — шоҳ машруъ аст зеро коҳинон ӯро тасдиқ мекунанд, ва коҳинон муъбаранд зеро шоҳ аз онҳо муҳофизат мекунад",
+        "Қудрати низомии ардибегони минтақавиро бо қудрати коҳинӣ иваз кард",
+        "Танҳо амали динӣ буд бидуни абъоди сиёсӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "The revival of fire temples established the Sasanian formula: king + Zoroastrian priesthood together make legitimate rule. This became the defining feature of Sasanian ideology — royal power and religious orthodoxy are co-dependent.",
+      "explanation_fa": "احیایِ آتشکده‌ها فرمولِ ساسانی را تثبیت کرد: شاه + روحانیتِ زرتشتی با هم حکومتِ مشروع می‌سازند.",
+      "explanation_tg": "Эҳёи оташкадаҳо формулаи Сосониро тасбит кард: шоҳ + руҳонияти зардуштӣ бо ҳам ҳукуматдории машруъ месозанд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ard-m4",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "The Shahnameh describes Ardeshir founding Ctesiphon as his capital. What does the choice of a new capital represent?",
+      "question_fa": "شاهنامه اردشیر را در حالِ تأسیسِ تیسفون به عنوانِ پایتختش توصیف می‌کند. انتخابِ یک پایتختِ جدید چه چیزی را نشان می‌دهد؟",
+      "question_tg": "Шоҳнома Ардашерро ҳангоми таъсиси Тесифон ба унвони пойтахташ тавсиф мекунад. Интихоби пойтахти ҷадид чиро нишон медиҳад?",
+      "answers": [
+        "A new dynasty requires a new centre of power — Ardeshir is not merely continuing what the Arsacids built, he is founding something new",
+        "The capital was actually relocated from a previous Arsacid city with no symbolic change",
+        "It was chosen for purely practical strategic reasons with no symbolic dimension",
+        "It shows Ardeshir wanted to be close to the Arsacid legacy"
+      ],
+      "answers_fa": [
+        "یک سلسله‌ی جدید به یک مرکزِ قدرتِ جدید نیاز دارد — اردشیر فقط ادامه‌ی آنچه اشکانیان ساختند نیست، بلکه چیزِ جدیدی پایه‌گذاری می‌کند",
+        "پایتخت در واقع از یک شهرِ قبلیِ اشکانی بدون تغییرِ نمادین انتقال یافت",
+        "برای دلایلِ صرفاً عملیِ استراتژیک بدون بعدِ نمادین انتخاب شد",
+        "نشان می‌دهد اردشیر می‌خواست به میراثِ اشکانی نزدیک باشد"
+      ],
+      "answers_tg": [
+        "Сулолаи ҷадид ба марказии қудрати ҷадид ниёз дорад — Ардашер танҳо идомадиҳандаи он чи Ашкониён сохтанд нест, балки чизи навеберо бунёд мегузорад",
+        "Пойтахт воқеан аз шаҳри қаблии Ашконие бидуни тағйири рамзӣ интиқол ёфт",
+        "Барои сабабҳои танҳо амалии стратегик бидуни баъди рамзӣ интихоб шуд",
+        "Нишон медиҳад Ардашер мехост ба мероси Ашконӣ наздик бошад"
+      ],
+      "correct_answer": 0,
+      "explanation": "A new capital is a statement of new rule. Ardeshir's founding of Ctesiphon declares that the Sasanian dynasty is a new beginning, not a continuation of the Arsacid system.",
+      "explanation_fa": "یک پایتختِ جدید بیانیه‌ای از حکومتِ جدید است. تأسیسِ تیسفون توسطِ اردشیر اعلام می‌کند که سلسله‌ی ساسانی یک آغازِ جدید است.",
+      "explanation_tg": "Пойтахти ҷадид баёнияи ҳукумати ҷадид аст. Таъсиси Тесифон аз ҷониби Ардашер эълон мекунад ки сулолаи Сосонӣ оғози ҷадид аст.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ard-m5",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "An astrologer's prophecy preceded Ardeshir's rise. How does the Shahnameh use astrology as a narrative tool?",
+      "question_fa": "پیش‌گوییِ یک منجم قبل از ظهورِ اردشیر بود. شاهنامه چگونه ستاره‌شناسی را به عنوانِ ابزارِ روایی استفاده می‌کند؟",
+      "question_tg": "Пешгӯии мунаҷҷим пеш аз баромади Ардашер буд. Шоҳнома чӣ тавр ситорашиносиро ба унвони асбоби ривоӣ истифода мекунад?",
+      "answers": [
+        "Astrology predicts the outcome so the reader understands the event as cosmically correct — not just politically successful but fated",
+        "Prophecy by astrologers is always wrong in the Shahnameh, teaching readers not to trust them",
+        "Astrology is used only in stories involving villains — Ardeshir's astrologer is a sign he was not truly virtuous",
+        "Astrology simply sets the time of day when key battles should begin"
+      ],
+      "answers_fa": [
+        "ستاره‌شناسی نتیجه را پیش‌بینی می‌کند تا خواننده رویداد را به عنوانِ کیهانی درست درک کند — نه فقط از نظرِ سیاسی موفق بلکه مقدر",
+        "پیش‌گویی توسطِ منجمان همیشه در شاهنامه اشتباه است، به خوانندگان یاد می‌دهد که به آنها اعتماد نکنند",
+        "ستاره‌شناسی فقط در داستان‌هایی که شامل شروران هستند استفاده می‌شود — منجمِ اردشیر نشانه‌ای است که واقعاً فضیلتمند نبود",
+        "ستاره‌شناسی فقط زمانِ روز را تعیین می‌کند که نبردهای کلیدی باید شروع شوند"
+      ],
+      "answers_tg": [
+        "Ситорашиносӣ натиҷаро пешгӯӣ мекунад то хонанда рӯйдодро ба унвони аз назари кайҳонӣ дуруст дарк кунад — на танҳо аз назари сиёсӣ муваффақ балки тақдирӣ",
+        "Пешгӯии мунаҷҷимон ҳамеша дар Шоҳнома хато аст",
+        "Ситорашиносӣ танҳо дар достонҳое ки бадкоронро шомиланд истифода мешавад",
+        "Ситорашиносӣ танҳо вақти рӯзро муайян мекунад ки набардҳои калидӣ бояд оғоз шаванд"
+      ],
+      "correct_answer": 0,
+      "explanation": "Astrology in the Shahnameh functions as a cosmic confirmation system. When astrologers correctly predict a great king's rise, they validate that the rise was destined — not just lucky or powerful. The stars confirm the farr.",
+      "explanation_fa": "ستاره‌شناسی در شاهنامه به عنوانِ سیستمِ تأییدِ کیهانی عمل می‌کند. وقتی منجمان ظهورِ یک شاهِ بزرگ را صحیح پیش‌بینی می‌کنند، تأیید می‌کنند که ظهور مقدر بوده.",
+      "explanation_tg": "Ситорашиносӣ дар Шоҳнома ба унвони системи тасдиқи кайҳонӣ кор мекунад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ard-h1",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Ardeshir transitions from 'herdsman's son' to 'dynasty founder.' Why does the Shahnameh begin his story from such humble origins?",
+      "question_fa": "اردشیر از «پسرِ گله‌دار» به «پایه‌گذارِ سلسله» تبدیل می‌شود. چرا شاهنامه داستانش را از چنین خاستگاهِ فروتنانه‌ای آغاز می‌کند؟",
+      "question_tg": "Ардашер аз «писари чӯпон» ба «бунёнгузори сулола» табдил мешавад. Чаро Шоҳнома достонашро аз чунин пайдоиши фурӯтанона оғоз мекунад?",
+      "answers": [
+        "Humble origins make the rise more powerful — a king who starts from nothing and achieves everything demonstrates that farr, not birth, determines legitimate kingship",
+        "Low birth is always the starting point of villain figures in the Shahnameh",
+        "Ardeshir was historically a herdsman before becoming king",
+        "The humble origins narrative was required by the Shahnameh's source traditions"
+      ],
+      "answers_fa": [
+        "خاستگاهِ فروتنانه ظهور را قدرتمندتر می‌کند — شاهی که از هیچ شروع می‌کند و همه چیز به دست می‌آورد ثابت می‌کند که فرّ، نه تولد، شاهنشاهیِ مشروع را تعیین می‌کند",
+        "تولدِ پایین همیشه نقطه‌ی شروعِ شخصیت‌های شرور در شاهنامه است",
+        "اردشیر از نظرِ تاریخی قبل از شدنِ شاه گله‌دار بود",
+        "روایتِ خاستگاهِ فروتنانه توسطِ سنت‌های منبعِ شاهنامه ملزم شده بود"
+      ],
+      "answers_tg": [
+        "Пайдоиши фурӯтнона баромадро қудратмандтар мекунад — шоҳе ки аз ҳеч шурӯъ мекунад ва ҳама чизро ба даст меорад исбот мекунад ки фарр, на таваллуд, шоҳаншоҳии машруъро муайян мекунад",
+        "Таваллуди пасттар ҳамеша нуқтаи оғози персонажҳои бадкор дар Шоҳнома аст",
+        "Ардашер аз назари таърихӣ пеш аз шудани шоҳ чӯпон буд",
+        "Ривояти пайдоиши фурӯтнона аз ҷониби суннатҳои манбаи Шоҳнома лозим шуда буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The humble-origins narrative is a classic legitimation pattern: the greatest kings prove their legitimacy through achievement rather than birth alone. Ardeshir's rise from herdsman's son demonstrates that the farr seeks its vessel regardless of station.",
+      "explanation_fa": "روایتِ خاستگاهِ فروتنانه یک الگوی مشروع‌سازیِ کلاسیک است: بزرگترین شاهان مشروعیتشان را از طریقِ دستاورد نه صرفاً تولد اثبات می‌کنند.",
+      "explanation_tg": "Ривояти пайдоиши фурӯтнона намунаи классики машруъсозист: бузургтарин шоҳон машруияташонро тавассути дастовард исбот мекунанд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ard-h2",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Ardeshir established the formula of 'king and priest together.' How does the Shahnameh present the risks of this formula?",
+      "question_fa": "اردشیر فرمولِ «شاه و روحانی با هم» را تثبیت کرد. شاهنامه خطراتِ این فرمول را چگونه نشان می‌دهد؟",
+      "question_tg": "Ардашер формулаи «шоҳ ва коҳин бо ҳам» ро тасбит кард. Шоҳнома хатарҳои ин формуларо чӣ тавр нишон медиҳад?",
+      "answers": [
+        "When king and priest disagree, the formula breaks — later Sasanian history shows kings weakened by priestly interference and priests corrupted by royal patronage",
+        "The formula always produces good governance because both sides check each other",
+        "The risk is that enemies can attack either the king or the priest to destabilise the whole system",
+        "The formula is presented as perfect and without risks"
+      ],
+      "answers_fa": [
+        "وقتی شاه و روحانی اختلاف نظر دارند، فرمول می‌شکند — تاریخِ بعدیِ ساسانی نشان می‌دهد شاهانی که توسطِ دخالتِ روحانی ضعیف شدند و روحانیانی که توسطِ حمایتِ سلطنتی فاسد شدند",
+        "فرمول همیشه حکمرانیِ خوب تولید می‌کند چون هر دو طرف یکدیگر را بررسی می‌کنند",
+        "خطر این است که دشمنان می‌توانند به شاه یا روحانی حمله کنند تا کلِ سیستم را بی‌ثبات کنند",
+        "فرمول کامل و بدون خطر ارائه می‌شود"
+      ],
+      "answers_tg": [
+        "Вақте шоҳ ва коҳин ихтилоф доранд, формула мешикад — таърихи баъдии Сосонӣ нишон медиҳад шоҳоне ки аз ҷониби мудохилаи коҳинӣ заиф шуданд ва коҳиноне ки аз ҷониби ҳимояти шоҳонӣ фосид шуданд",
+        "Формула ҳамеша ҳукуматдории хуб тавлид мекунад зеро ҳарду тараф якдигарро санҷид мекунанд",
+        "Хатар ин аст ки душманон метавонанд ба шоҳ ё коҳин ҳуҷум кунанд",
+        "Формула комил ва бе хатар пешкаш мешавад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The king-priest formula that Ardeshir established was brilliant as a founding ideology but contained a structural tension: royal power and priestly authority are both legitimate, but when they conflict, neither has a clear mechanism to override the other.",
+      "explanation_fa": "فرمولِ شاه-روحانیِ اردشیر به عنوانِ یک ایدئولوژیِ پایه‌گذاری درخشان بود اما یک تنشِ ساختاری داشت.",
+      "explanation_tg": "Формулаи шоҳ-коҳини Ардашер ба унвони идеологияи бунёнгузорӣ дурахшон буд аммо тазоди сохторӣ дошт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ard-h3",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The Worm of Haftvadd represents local supernatural power that resists central authority. Why does Ardeshir's legitimacy require destroying it?",
+      "question_fa": "کرمِ هفتواد قدرتِ ماورایی محلی را نشان می‌دهد که در برابرِ اقتدارِ مرکزی مقاومت می‌کند. چرا مشروعیتِ اردشیر به نابود کردنِ آن نیاز دارد؟",
+      "question_tg": "Кирми Ҳафтвод қудрати фавқуттабиъии маҳаллиро нишон медиҳад ки дар баробари аутории марказӣ муқовимат мекунад. Чаро машруияти Ардашер ба нобуд кардани он ниёз дорад?",
+      "answers": [
+        "The worm is a military threat that Ardeshir must eliminate for safety reasons",
+        "Destroying the worm is required by Zoroastrian religious law",
+        "A new central authority cannot allow any alternative supernatural legitimacy to exist — Haftvadd's worm represents exactly the kind of local power that would undermine universal imperial rule",
+        "The story teaches that supernatural powers are always evil and should be destroyed"
+      ],
+      "answers_fa": [
+        "کرم یک تهدیدِ نظامی است که اردشیر باید به دلایلِ امنیتی حذف کند",
+        "نابود کردنِ کرم توسطِ قانونِ دینیِ زرتشتی الزامی است",
+        "یک اقتدارِ مرکزیِ جدید نمی‌تواند هیچ مشروعیتِ ماورایی جایگزینی را وجود داشته باشد — کرمِ هفتواد دقیقاً نوعِ قدرتِ محلی‌ای را نشان می‌دهد که حکومتِ امپراتوریِ جهانی را تضعیف می‌کند",
+        "داستان یاد می‌دهد که قدرت‌های ماورایی همیشه شرور هستند و باید نابود شوند"
+      ],
+      "answers_tg": [
+        "Кирм таҳдиди низомист ки Ардашер бояд ба сабабҳои амниятӣ ҳазф кунад",
+        "Нобуд кардани кирм аз ҷониби қонуни дини зардуштӣ лозим аст",
+        "Аутории марказии ҷадид наметавонад ҳеч машруияти фавқуттабиъии ҷойгузинеро мавҷуд бошад — Кирми Ҳафтвод дақиқан навъи қудрати маҳаллиеро нишон медиҳад ки ҳукуматдории империалии ҷаҳониро заиф мекунад",
+        "Достон мефаҳмонад ки қудратҳои фавқуттабиъӣ ҳамеша бад ҳастанд ва бояд нобуд шаванд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Centralised imperial authority and local supernatural power are incompatible. Haftvadd's worm provides an alternative legitimation for a local lord — which means as long as it exists, Ardeshir's universal claim is incomplete. He must be the only source of valid power.",
+      "explanation_fa": "اقتدارِ امپراتوریِ متمرکز و قدرتِ ماورایی محلی ناسازگار هستند. کرمِ هفتواد یک مشروعیت‌بخشیِ جایگزین برای یک ارباب محلی فراهم می‌کند.",
+      "explanation_tg": "Аутории империалии марказигар ва қудрати фавқуттабиъии маҳаллӣ носозгоранд. Кирми Ҳафтвод машруъсозии ҷойгузине барои ардибеги маҳаллӣ таъмин мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ard-h4",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Ardeshir's dynasty lasted 400 years. What does the Shahnameh's extensive coverage of the Sasanian era (compared to the thin Arsacid section) reveal about how it values different kinds of rule?",
+      "question_fa": "سلسله‌ی اردشیر ۴۰۰ سال دوام آورد. پوششِ گسترده‌ی شاهنامه از دوره‌ی ساسانی (در مقایسه با بخشِ نازکِ اشکانی) درباره‌ی نحوه‌ی ارزش‌گذاریِ آن به انواعِ مختلفِ حکمرانی چه چیزی نشان می‌دهد؟",
+      "question_tg": "Сулолаи Ардашер ۴۰۰ сол давом кард. Пӯшиши васеъи Шоҳнома аз давраи Сосонӣ (дар муқоиса бо бахши нозуки Ашконӣ) дар бораи нахваи арзишгузории он ба навъҳои гуногуни ҳукуматдорӣ чиро нишон медиҳад?",
+      "answers": [
+        "Centralisation is always morally superior to confederation in the text",
+        "Centralised court culture that generates literary records is more visible in the chronicle — the Sasanians built palaces, patronised poets, and wrote histories; the Arsacids were resilient but culturally thinner",
+        "Military success is the Shahnameh's primary criterion for coverage",
+        "The Shahnameh values the Sasanians more because Ferdowsi was himself Sasanian"
+      ],
+      "answers_fa": [
+        "تمرکز همیشه از نظرِ اخلاقی از کنفدراسیون در متن برتر است",
+        "فرهنگِ دربارِ متمرکز که ثبتِ ادبی تولید می‌کند در شاهنامه قابلِ دیدتر است — ساسانیان کاخ ساختند، شاعران را حمایت کردند، و تاریخ نوشتند؛ اشکانیان انعطاف‌پذیر اما از نظرِ فرهنگی نازک‌تر بودند",
+        "موفقیتِ نظامی معیارِ اصلیِ شاهنامه برای پوشش است",
+        "شاهنامه ساسانیان را بیشتر ارزش‌گذاری می‌کند چون فردوسی خودش ساسانی بود"
+      ],
+      "answers_tg": [
+        "Марказигарӣ ҳамеша аз назари ахлоқӣ аз конфедератсия дар матн бартар аст",
+        "Фарҳанги дарбори марказигар ки сабти адабӣ тавлид мекунад дар Шоҳнома намоёнтар аст — Сосониён кох сохтанд, шоирон ро ҳимоят карданд, ва таърих навиштанд؛ Ашкониён устувор аммо аз назари фарҳангӣ нозуктар буданд",
+        "Муваффақияти низомӣ меъёри асосии Шоҳнома барои пӯшиш аст",
+        "Шоҳнома Сосониёнро бештар арзишгузорӣ мекунад зеро Фирдавсӣ худаш Сосонӣ буд"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Shahnameh's differential coverage reflects what its sources preserved. Sasanian court culture produced oral traditions, written histories, and artistic records that fed Ferdowsi's sources. The Arsacid confederation's distributed structure produced less centrally-preserved court culture.",
+      "explanation_fa": "پوششِ متفاوتِ شاهنامه منعکس‌کننده‌ی آن چیزی است که منابعش حفظ کردند. فرهنگِ دربارِ ساسانی سنت‌های شفاهی، تاریخ‌های مکتوب، و ثبت‌های هنری تولید کرد.",
+      "explanation_tg": "Пӯшиши гуногуни Шоҳнома инъикоскунандаи он чизест ки манобеаш ҳифз карданд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ard-h5",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Ardeshir is the Shahnameh's archetypal 'founding king.' What specific combination of qualities does the text require for this role?",
+      "question_fa": "اردشیر شاهِ «پایه‌گذار» نمونه‌ای در شاهنامه است. ترکیبِ خاصِ چه ویژگی‌هایی متن برای این نقش نیاز دارد؟",
+      "question_tg": "Ардашер шоҳи «бунёнгузор»-и намунавӣ дар Шоҳнома аст. Омезиши хоси кадом сифатҳоро матн барои ин нақш талаб мекунад?",
+      "answers": [
+        "Divine favour alone makes a king — military and political work is unnecessary",
+        "Military victory alone is sufficient to found a dynasty",
+        "Military capacity + divine legitimacy (farr/astrology) + religious patronage + political will to centralise — all four are required together",
+        "A founding king requires only that he comes from a noble bloodline"
+      ],
+      "answers_fa": [
+        "لطفِ الهی به تنهایی یک شاه می‌سازد — کارِ نظامی و سیاسی ضروری نیست",
+        "پیروزیِ نظامی به تنهایی برای پایه‌گذاریِ یک سلسله کافی است",
+        "ظرفیتِ نظامی + مشروعیتِ الهی (فرّ/ستاره‌شناسی) + حمایتِ دینی + اراده‌ی سیاسی برای تمرکز — هر چهار با هم لازم هستند",
+        "یک شاهِ پایه‌گذار فقط به این نیاز دارد که از یک سلالهٔ اشرافی آمده باشد"
+      ],
+      "answers_tg": [
+        "Марҳамати илоҳӣ ба танҳоӣ шоҳ месозад — кори низомӣ ва сиёсӣ зарур нест",
+        "Ғалабаи низомӣ ба танҳоӣ барои бунёд гузоштани сулола кофист",
+        "Қобилияти низомӣ + машруияти илоҳӣ (фарр/ситорашиносӣ) + ҳимояти динӣ + иродаи сиёсӣ барои марказигарӣ — ҳамаи чаҳор бо ҳам лозиманд",
+        "Шоҳи бунёнгузор танҳо ба ин ниёз дорад ки аз насли ашрофонзода омада бошад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Ardeshir's founding narrative in the Shahnameh requires all four components: military capacity (defeating Ardavan), divine legitimacy (farr and prophecy), religious patronage (fire temples), and political centralisation (defeating regional lords including Haftvadd). Each alone is insufficient.",
+      "explanation_fa": "روایتِ پایه‌گذاریِ اردشیر در شاهنامه به هر چهار جزء نیاز دارد: ظرفیتِ نظامی، مشروعیتِ الهی، حمایتِ دینی، و تمرکزِ سیاسی. هر کدام به تنهایی کافی نیست.",
+      "explanation_tg": "Ривояти бунёнгузории Ардашер дар Шоҳнома ба ҳамаи чаҳор ҷузъ ниёз дорад: қобилияти низомӣ, машруияти илоҳӣ, ҳимояти динӣ, ва марказигарии сиёсӣ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ard-h6",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Ardeshir destroyed the Arsacid lords one by one. The Shahnameh records this as 'unification.' What does this word choice reveal about the chronicle's political values?",
+      "question_fa": "اردشیر ارباب‌های اشکانی را یکی یکی نابود کرد. شاهنامه این را «توحید» می‌نامد. این انتخابِ واژه درباره‌ی ارزش‌های سیاسیِ شاهنامه چه چیزی نشان می‌دهد؟",
+      "question_tg": "Ардашер ардибегони Ашкониро яке яке нобуд кард. Шоҳнома инро «иттиҳод» меномад. Ин интихоби вожа дар бораи арзишҳои сиёсии Шоҳнома чиро нишон медиҳад?",
+      "answers": [
+        "The Shahnameh values unified central kingship over distributed autonomy — what looks like conquest from below looks like unification from the royal centre",
+        "Ferdowsi was paid by Ardeshir's descendants to portray the conquest positively",
+        "The word 'unification' is ironic — the text is criticising Ardeshir's violence",
+        "The chronicle uses 'unification' simply as a neutral description with no evaluative content"
+      ],
+      "answers_fa": [
+        "شاهنامه شاهنشاهیِ مرکزیِ متحد را بر خودمختاریِ توزیع‌شده ارزش‌گذاری می‌کند — آنچه از پایین مثلِ فتح به نظر می‌رسد از مرکزِ سلطنتی مثلِ توحید به نظر می‌رسد",
+        "فردوسی توسطِ نوادگانِ اردشیر برای تصویرِ مثبتِ فتح پرداخت شد",
+        "واژه‌ی «توحید» طنزآمیز است — متن دارد خشونتِ اردشیر را انتقاد می‌کند",
+        "شاهنامه «توحید» را فقط به عنوانِ توصیفِ بی‌طرف بدون محتوایِ ارزشیابی استفاده می‌کند"
+      ],
+      "answers_tg": [
+        "Шоҳнома шоҳаншоҳии марказии муттаҳидро аз худмухториии тақсимшуда арзишгузорӣ мекунад — он чи аз поён монанди фатҳ менамояд аз марказии шоҳонӣ монанди иттиҳод менамояд",
+        "Фирдавсӣ аз ҷониби авлодони Ардашер барои тасвири мусбати фатҳ пардохт шуд",
+        "Вожаи «иттиҳод» ирониявист — матн хушунати Ардашерро интиқод мекунад",
+        "Шоҳнома «иттиҳод»-ро танҳо ба унвони тавсифи беторафона бе мӯҳтавои арзишёбӣ истифода мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's preference for centralised royal authority means Ardeshir's conquest of regional lords is framed as a civilising project — bringing dispersed Iran under one authority. This framing reveals the chronicle's political preference for strong centralised kingship.",
+      "explanation_fa": "ترجیحِ شاهنامه برای اقتدارِ سلطنتیِ متمرکز به این معناست که فتحِ اردشیر از ارباب‌های منطقه‌ای به عنوانِ یک پروژه‌ی متمدن‌کننده قاب‌بندی می‌شود.",
+      "explanation_tg": "Афзалиятдиҳии Шоҳнома барои аутории шоҳонаи марказигар маъно дорад ки фатҳи Ардашер аз ардибегони минтақавӣ ба унвони лоиҳаи тамаддуннок чорчӯбгузорӣ мешавад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ard-h7",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Ardeshir is credited with founding Ctesiphon and reviving fire temples in a single reign. What does this combination reveal about the Sasanian founding ideology?",
+      "question_fa": "اردشیر با تأسیسِ تیسفون و احیایِ آتشکده‌ها در یک دورانِ سلطنت شناخته می‌شود. این ترکیب درباره‌ی ایدئولوژیِ پایه‌گذاریِ ساسانی چه چیزی نشان می‌دهد؟",
+      "question_tg": "Ардашер бо таъсиси Тесифон ва эҳёи оташкадаҳо дар як даврони ҳукмронӣ шинохта мешавад. Ин омезиш дар бораи идеологияи бунёнгузории Сосонӣ чиро нишон медиҳад?",
+      "answers": [
+        "Political centre (capital) and religious centre (fire temples) are both required to found a legitimate Sasanian empire — neither alone is sufficient",
+        "The capital and fire temples were built at different times with no ideological connection",
+        "Fire temples were more important than the capital for Sasanian legitimacy",
+        "The capital was built for military reasons and the temples for personal religious reasons"
+      ],
+      "answers_fa": [
+        "مرکزِ سیاسی (پایتخت) و مرکزِ دینی (آتشکده‌ها) هر دو برای پایه‌گذاریِ یک امپراتوریِ ساسانیِ مشروع لازم هستند — هیچ‌کدام به تنهایی کافی نیست",
+        "پایتخت و آتشکده‌ها در زمان‌های متفاوت بدون پیوندِ ایدئولوژیکی ساخته شدند",
+        "آتشکده‌ها برای مشروعیتِ ساسانی از پایتخت مهم‌تر بودند",
+        "پایتخت به دلایلِ نظامی ساخته شد و معابد به دلایلِ دینیِ شخصی"
+      ],
+      "answers_tg": [
+        "Марказии сиёсӣ (пойтахт) ва марказии динӣ (оташкадаҳо) ҳарду барои бунёд гузоштани империяи Сосонии машруъ лозиманд — ҳеч кадоме ба танҳоӣ кофӣ нест",
+        "Пойтахт ва оташкадаҳо дар вақтҳои гуногун бидуни пайванди идеологӣ сохта шуданд",
+        "Оташкадаҳо барои машруияти Сосонӣ аз пойтахт муҳимтар буданд",
+        "Пойтахт ба сабабҳои низомӣ ва маъбадҳо ба сабабҳои динии шахсӣ сохта шуданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Sasanian founding ideology required both political legitimacy (established by the capital, courts, and administration) and religious legitimacy (established by fire temples and Zoroastrian patronage). Ardeshir built both because both were necessary components of the formula he was founding.",
+      "explanation_fa": "ایدئولوژیِ پایه‌گذاریِ ساسانی به هم مشروعیتِ سیاسی و هم مشروعیتِ دینی نیاز داشت.",
+      "explanation_tg": "Идеологияи бунёнгузории Сосонӣ ба ҳарду машруияти сиёсӣ ва динӣ ниёз дошт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ard-h8",
+      "chapter_slug": "ardeshir",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh uses the Worm of Haftvadd to show that unification involves more than military conquest. What does this supernatural episode add to the founding narrative that a purely military account would lack?",
+      "question_fa": "شاهنامه از کرمِ هفتواد استفاده می‌کند تا نشان دهد توحید بیشتر از فتحِ نظامی است. این اپیزودِ ماورایی چه چیزی به روایتِ پایه‌گذاری اضافه می‌کند که یک روایتِ صرفاً نظامی فاقدش می‌بود؟",
+      "question_tg": "Шоҳнома аз Кирми Ҳафтвод истифода мекунад то нишон диҳад иттиҳод аз фатҳи низомӣ бештар аст. Ин эпизоди фавқуттабиъӣ чиро ба ривояти бунёнгузорӣ илова мекунад ки ривояти танҳо низомӣ аз он маҳрум мебуд?",
+      "answers": [
+        "It provides an example of Zoroastrian magic in the Shahnameh",
+        "It shows Ardeshir was personally brave enough to fight supernatural enemies",
+        "It adds entertainment value that keeps readers engaged",
+        "It shows that legitimate power must overcome not just rival armies but rival cosmologies — Ardeshir must be the source of all power, material and supernatural"
+      ],
+      "answers_fa": [
+        "مثالی از جادوی زرتشتی در شاهنامه فراهم می‌کند",
+        "نشان می‌دهد اردشیر به اندازه‌ی کافی شجاع بود که با دشمنانِ ماورایی بجنگد",
+        "ارزشِ سرگرمی اضافه می‌کند که خوانندگان را درگیر نگه می‌دارد",
+        "نشان می‌دهد که قدرتِ مشروع باید نه فقط ارتش‌های رقیب بلکه جهان‌بینی‌های رقیب را هم شکست دهد — اردشیر باید منبعِ تمامِ قدرت باشد، مادی و ماورایی"
+      ],
+      "answers_tg": [
+        "Мисоли ҷодуи зардуштӣ дар Шоҳнома таъмин мекунад",
+        "Нишон медиҳад Ардашер ба қадри кофӣ шуҷоъ буд ки бо душманони фавқуттабиъӣ бистезад",
+        "Арзиши сирҷунбонӣ илова мекунад ки хонандагонро дарбанд нигоҳ медорад",
+        "Нишон медиҳад ки қудрати машруъ бояд на танҳо лашкарҳои рақибро балки ҷаҳонбинии рақибро ҳам шикаст диҳад — Ардашер бояд манбаи тамоми қудрат бошад, моддӣ ва фавқуттабиъӣ"
+      ],
+      "correct_answer": 3,
+      "explanation": "A purely military founding narrative would show Ardeshir unifying Iran by defeating rival armies. The Worm adds an additional dimension: there are also supernatural sources of rival legitimacy. By defeating the worm, Ardeshir shows his kingship encompasses the entire cosmos, not just the military-political sphere.",
+      "explanation_fa": "یک روایتِ صرفاً نظامیِ پایه‌گذاری اردشیر را با شکست دادنِ ارتش‌های رقیب نشان می‌داد. کرم بعدِ دیگری اضافه می‌کند.",
+      "explanation_tg": "Ривояти танҳо низомии бунёнгузорӣ Ардашерро бо шикаст додани лашкарҳои рақиб нишон медод. Кирм баъди дигарро илова мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

@@ -8,7 +8,15 @@
 
   /* ── Helpers ─────────────────────────────────────────────────────────── */
 
-  const t    = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
+  /* t(key, fallback?) — proper fallback: if key not found RealI18N returns the
+     key string itself (truthy), so || k won't help. Compare the result instead. */
+  const t = (k, fallback) => {
+    if (!window.RealI18N) return fallback || k;
+    const r = typeof fallback === 'object'
+      ? window.RealI18N.t(k, fallback)   // variable substitution
+      : window.RealI18N.t(k);
+    return r !== k ? r : (fallback && typeof fallback === 'string' ? fallback : k);
+  };
   const fmtN = (n)   => (window.RealI18N && window.RealI18N.compactNumber)
     ? window.RealI18N.compactNumber(n) : String(Number(n) || 0);
   const fmtNF = (n)  => (window.RealI18N && window.RealI18N.formatNumber)
@@ -45,13 +53,13 @@
   /* ── Skin catalogue (mirrors tap.js) ─────────────────────────────────── */
 
   const SKINS = [
-    { id: 'real',     name: 'REAL Token', rarity: 'default', emoji: '◆',  img: '/assets/images/tokens/realtoken.png', price: null },
-    { id: 'keyumars', name: 'Keyumars',   rarity: 'rare',    emoji: '👑', img: null,                                  price: null },
-    { id: 'hushang',  name: 'Hushang',    rarity: 'epic',    emoji: '🔥', img: '/season2/uploads/chapters/hushang.png', price: 2500 },
-    { id: 'zahhak',   name: 'Zahhak',     rarity: 'legend',  emoji: '🐍', img: '/season2/uploads/chapters/zahhak.jpg',  price: 5000 },
-    { id: 'rostam',   name: 'Rostam',     rarity: 'legend',  emoji: '⚔',  img: '/season2/uploads/chapters/rostam.png',  price: 10000 },
-    { id: 'simorgh',  name: 'Simorgh',    rarity: 'mythic',  emoji: '🦅', img: '/season2/uploads/chapters/simorgh.png', price: null, coming: true },
-    { id: 'royal',    name: 'Royal Seal', rarity: 'mythic',  emoji: '🔱', img: null,                                    price: null, coming: true },
+    { id: 'real',     name: 'REAL Token', rarity: 'default', emoji: '◆',  img: '/assets/images/tokens/realtoken.png', price: null,  chapter_unlock: null },
+    { id: 'keyumars', name: 'Keyumars',   rarity: 'rare',    emoji: '👑', img: null,                                  price: null,  chapter_unlock: 'keyumars' },
+    { id: 'hushang',  name: 'Hushang',    rarity: 'epic',    emoji: '🔥', img: '/season2/uploads/chapters/hushang.png', price: 2500,  chapter_unlock: 'hushang' },
+    { id: 'zahhak',   name: 'Zahhak',     rarity: 'legend',  emoji: '🐍', img: '/season2/uploads/chapters/zahhak.jpg',  price: 5000,  chapter_unlock: 'zahhak' },
+    { id: 'rostam',   name: 'Rostam',     rarity: 'legend',  emoji: '⚔',  img: '/season2/uploads/chapters/rostam.png',  price: 10000, chapter_unlock: 'rostam' },
+    { id: 'simorgh',  name: 'Simorgh',    rarity: 'mythic',  emoji: '🦅', img: '/season2/uploads/chapters/simorgh.png', price: null,  chapter_unlock: 'simorgh', coming: true },
+    { id: 'royal',    name: 'Royal Seal', rarity: 'mythic',  emoji: '🔱', img: null,                                    price: null,  chapter_unlock: null,      coming: true },
   ];
 
   const CHEST_DEFS = {
@@ -64,7 +72,7 @@
 
   /* ── Tab management ─────────────────────────────────────────────────── */
 
-  const TABS = ['skins', 'chests', 'boosts', 'tapicon'];
+  const TABS = ['skins', 'chests', 'boosts'];
 
   const showTab = (name) => {
     document.querySelectorAll('.inv-tab').forEach(b => b.classList.toggle('active', b.dataset.invTab === name));
@@ -74,14 +82,35 @@
     });
   };
 
-  /* ── Skins tab ───────────────────────────────────────────────────────── */
+  /* ── Skins tab (unified: purchase + chapter unlock + equip) ─────────── */
 
-  const buildSkins = (unlockedSkins, playerBalance) => {
-    const panel    = document.getElementById('inv-panel-skins');
+  const CHAPTER_SKIN_UNLOCKS = {
+    keyumars: 'keyumars', hushang: 'hushang', zahhak: 'zahhak',
+    rostam: 'rostam', simorgh: 'simorgh',
+  };
+
+  const checkAndGrantRetroactiveSkins = () => {
+    try {
+      const stored  = JSON.parse(localStorage.getItem('real_skin_unlocked_v1') || '[]');
+      const granted = new Set(stored);
+      let changed   = false;
+      Object.entries(CHAPTER_SKIN_UNLOCKS).forEach(([slug, skinId]) => {
+        if (!granted.has(skinId) && localStorage.getItem(`real_chapter_done_${slug}`) === '1') {
+          granted.add(skinId); changed = true;
+        }
+      });
+      if (changed) localStorage.setItem('real_skin_unlocked_v1', JSON.stringify([...granted]));
+      return [...granted];
+    } catch { return []; }
+  };
+
+  const buildSkins = (serverUnlockedSkins, playerBalance) => {
+    const panel = document.getElementById('inv-panel-skins');
     if (!panel) return;
+
+    const chapterUnlocked = checkAndGrantRetroactiveSkins();
     const equipped = currentSkin();
-    /* Owned = always-free skins + server-unlocked */
-    const owned    = new Set(['real', 'keyumars', ...unlockedSkins]);
+    const owned    = new Set(['real', 'keyumars', ...serverUnlockedSkins, ...chapterUnlocked]);
 
     const cards = SKINS.map(skin => {
       const isOwned    = owned.has(skin.id);
@@ -94,10 +123,10 @@
         : `<span>${skin.emoji}</span>`;
 
       let cardClass = 'skin-card';
-      if (isEquipped) cardClass += ' equipped';
+      if (isEquipped)   cardClass += ' equipped';
       else if (isOwned) cardClass += ' owned';
       else if (skin.coming) cardClass += ' coming';
-      else cardClass += ' locked';
+      else              cardClass += ' locked';
 
       let actionHtml = '';
       if (isEquipped) {
@@ -106,19 +135,22 @@
         actionHtml = `<button class="skin-action equip" data-equip="${skin.id}">${t('inv_equip','Equip')}</button>`;
       } else if (skin.coming) {
         actionHtml = `<div class="skin-action coming-soon">${t('coming_soon','Soon')}</div>`;
-      } else {
+      } else if (skin.price) {
         actionHtml = `<button class="skin-action buy" data-buy="${skin.id}"
           ${!canAfford ? 'style="opacity:.5;"' : ''}
           title="${canAfford ? '' : t('inv_need_real','Not enough REAL')}">
           ${fmtNF(skin.price)} ${RT}
         </button>`;
+        if (skin.chapter_unlock) {
+          actionHtml += `<div class="tapicon-hint" style="margin-top:4px;">${t('tapicon_unlock_ch','Complete: ')}<em>${skin.chapter_unlock}</em></div>`;
+        }
+      } else if (skin.chapter_unlock) {
+        actionHtml = `<div class="tapicon-hint">${t('tapicon_unlock_ch','Complete: ')}<em>${skin.chapter_unlock}</em></div>`;
       }
-
-      const ringHtml = isEquipped ? `<div class="skin-equipped-ring">✓</div>` : '';
 
       return `
         <div class="${cardClass}">
-          ${ringHtml}
+          ${isEquipped ? '<div class="skin-equipped-ring">✓</div>' : ''}
           <div class="${orbClass}">${imgHtml}</div>
           <div class="skin-name">${skin.name}</div>
           <div class="skin-rarity r-${skin.rarity}">${skin.rarity}</div>
@@ -128,24 +160,22 @@
 
     panel.innerHTML = `<div class="skin-grid">${cards}</div>`;
 
-    /* Wire equip buttons */
     panel.querySelectorAll('[data-equip]').forEach(btn => {
       btn.addEventListener('click', () => {
         const id = btn.dataset.equip;
         try { localStorage.setItem('real_tap_skin_v1', id); } catch (_) {}
         window.dispatchEvent(new CustomEvent('real:skin:changed', { detail: { skin_id: id } }));
-        buildSkins(unlockedSkins, localPlayer().balance || 0);
+        buildSkins(serverUnlockedSkins, localPlayer().balance || 0);
         showToast(`${SKINS.find(s => s.id === id)?.name} ${t('inv_skin_equipped_toast', 'equipped!')}`);
       });
     });
 
-    /* Wire buy buttons */
     panel.querySelectorAll('[data-buy]').forEach(btn => {
       btn.addEventListener('click', async () => {
         const u = tgUser();
         if (!u?.id) { showToast(t('open_in_telegram', 'Open via Telegram.')); return; }
-        const skin   = SKINS.find(s => s.id === btn.dataset.buy);
-        const bal    = localPlayer().balance || 0;
+        const skin = SKINS.find(s => s.id === btn.dataset.buy);
+        const bal  = localPlayer().balance || 0;
         if (!skin || bal < skin.price) {
           showToast(t('inv_need_real', `Need ${fmtNF(skin?.price || 0)} REAL.`));
           return;
@@ -153,16 +183,15 @@
         btn.disabled = true; btn.innerHTML = '…';
         const res = await post('/api/season2/inventory/buy-skin', { telegram_id: String(u.id), skin_id: skin.id });
         if (res?.status === 1) {
-          /* Update local balance */
           try {
             const ps = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
             ps.balance = res.new_balance;
             localStorage.setItem('real_player_state_v1', JSON.stringify(ps));
             window.dispatchEvent(new CustomEvent('shahnama:state_sync'));
           } catch (_) {}
-          unlockedSkins.push(skin.id);
+          serverUnlockedSkins.push(skin.id);
           showToast(`${skin.name} ${t('inv_skin_unlocked_toast', 'unlocked!')}`);
-          buildSkins(unlockedSkins, res.new_balance);
+          buildSkins(serverUnlockedSkins, res.new_balance);
         } else {
           const msg = {
             insufficient_balance: t('inv_need_real', 'Not enough REAL.'),
@@ -172,101 +201,6 @@
           btn.disabled = false;
           btn.innerHTML = `${fmtNF(skin.price)} ${RT}`;
         }
-      });
-    });
-  };
-
-  /* ── Tap Icon tab ───────────────────────────────────────────────────── */
-
-  /* Chapter slug → skin id mapping, mirrors data/skins.json */
-  const CHAPTER_SKIN_UNLOCKS = {
-    keyumars: 'keyumars', hushang: 'hushang', zahhak: 'zahhak',
-    rostam: 'rostam', simorgh: 'simorgh',
-  };
-
-  const getChapterUnlockedSkins = () => {
-    try { return JSON.parse(localStorage.getItem('real_skin_unlocked_v1') || '[]'); } catch { return []; }
-  };
-
-  const checkAndGrantRetroactiveSkins = () => {
-    const stored = getChapterUnlockedSkins();
-    const granted = new Set(stored);
-    let changed = false;
-    Object.entries(CHAPTER_SKIN_UNLOCKS).forEach(([slug, skinId]) => {
-      if (!granted.has(skinId)) {
-        try {
-          if (localStorage.getItem(`real_chapter_done_${slug}`) === '1') {
-            granted.add(skinId);
-            changed = true;
-          }
-        } catch {}
-      }
-    });
-    if (changed) {
-      try { localStorage.setItem('real_skin_unlocked_v1', JSON.stringify([...granted])); } catch {}
-    }
-    return [...granted];
-  };
-
-  const buildTapIcon = (serverUnlockedSkins) => {
-    const panel = document.getElementById('inv-panel-tapicon');
-    if (!panel) return;
-
-    const chapterUnlocked = checkAndGrantRetroactiveSkins();
-    const equipped = currentSkin();
-    const owned = new Set(['real', 'keyumars', ...serverUnlockedSkins, ...chapterUnlocked]);
-
-    const TAP_SKINS = [
-      { id: 'real',     name: 'REAL Token',  emoji: '◆',  chapter_unlock: null      },
-      { id: 'keyumars', name: 'Keyumars',    emoji: '👑', chapter_unlock: 'keyumars' },
-      { id: 'hushang',  name: 'Hushang',     emoji: '🔥', chapter_unlock: 'hushang'  },
-      { id: 'zahhak',   name: 'Zahhak',      emoji: '🐍', chapter_unlock: 'zahhak'   },
-      { id: 'rostam',   name: 'Rostam',      emoji: '⚔',  chapter_unlock: 'rostam'   },
-      { id: 'simorgh',  name: 'Simorgh',     emoji: '🦅', chapter_unlock: 'simorgh', coming: true },
-      { id: 'royal',    name: 'Royal Seal',  emoji: '🔱', chapter_unlock: null,       coming: true },
-    ];
-
-    const cards = TAP_SKINS.map(skin => {
-      const isOwned    = owned.has(skin.id);
-      const isEquipped = skin.id === equipped;
-      const isComing   = !!skin.coming;
-
-      let stateClass = 'tapicon-card';
-      if (isEquipped) stateClass += ' equipped';
-      else if (isOwned) stateClass += ' owned';
-      else if (isComing) stateClass += ' coming';
-      else stateClass += ' locked';
-
-      const unlockHint = skin.chapter_unlock
-        ? `<div class="tapicon-hint">${t('tapicon_unlock_ch', 'Complete: ')}${skin.chapter_unlock}</div>`
-        : isComing ? `<div class="tapicon-hint">${t('coming_soon', 'Soon')}</div>` : '';
-
-      const action = isEquipped
-        ? `<div class="tapicon-badge">${t('inv_equipped', '✓')}</div>`
-        : isOwned
-          ? `<button class="tapicon-equip" data-tapicon-equip="${skin.id}">${t('inv_equip', 'Equip')}</button>`
-          : isComing
-            ? `<div class="tapicon-badge dim">${t('coming_soon', 'Soon')}</div>`
-            : unlockHint;
-
-      return `
-        <div class="${stateClass}">
-          <div class="tapicon-emoji">${skin.emoji}</div>
-          <div class="tapicon-name">${skin.name}</div>
-          ${isOwned || isEquipped ? '' : unlockHint}
-          ${action}
-        </div>`;
-    }).join('');
-
-    panel.innerHTML = `<div class="tapicon-grid">${cards}</div>`;
-
-    panel.querySelectorAll('[data-tapicon-equip]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const id = btn.dataset.tapiconEquip;
-        try { localStorage.setItem('real_tap_skin_v1', id); } catch {}
-        window.dispatchEvent(new CustomEvent('real:skin:changed', { detail: { skin_id: id } }));
-        buildTapIcon(serverUnlockedSkins);
-        showToast(`${TAP_SKINS.find(s => s.id === id)?.name} ${t('inv_skin_equipped_toast', 'equipped!')}`);
       });
     });
   };
@@ -352,17 +286,32 @@
 
   /* ── Boosts tab ─────────────────────────────────────────────────────── */
 
-  const buildBoosts = () => {
+  const AUTOCLICKER_PRICE = 50000;
+
+  const getAutoclickerExpiry = () => {
+    try { return parseInt(localStorage.getItem('real_autoclicker_expires_at') || '0', 10); } catch { return 0; }
+  };
+
+  const buildBoosts = (serverAutoclickerExpiry) => {
     const panel = document.getElementById('inv-panel-boosts');
     if (!panel) return;
 
     const p      = localPlayer();
     const streak = p.daily_streak || p.dailyStreak || 1;
+    const bal    = p.balance || 0;
 
     /* Tap boost — stored as boost_expires_at in player state */
     const boostExp  = p.boost_expires_at || 0;
     const boostLeft = Math.max(0, Math.floor((boostExp - Date.now()) / 1000));
     const boostActive = boostLeft > 0;
+
+    /* Auto-clicker expiry — trust server if provided, else use localStorage */
+    if (serverAutoclickerExpiry) {
+      try { localStorage.setItem('real_autoclicker_expires_at', String(serverAutoclickerExpiry)); } catch {}
+    }
+    const acExp    = getAutoclickerExpiry();
+    const acLeft   = Math.max(0, Math.floor((acExp - Date.now()) / 1000));
+    const acActive = acLeft > 0;
 
     /* Hero ZAR/hr from sync */
     const heroMap = (() => {
@@ -378,9 +327,11 @@
       return `${m}m ${s % 60}s`;
     };
 
+    const canAffordAC = bal >= AUTOCLICKER_PRICE;
+
     panel.innerHTML = `
       <div>
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px;">Active Boosts</div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px;">${t('inv_active_boosts','Active Boosts')}</div>
         <div class="boost-card">
           <div class="boost-icon${boostActive ? ' active' : ''}">⚡</div>
           <div class="boost-info">
@@ -392,7 +343,38 @@
           </div>
         </div>
       </div>
-      <div>
+
+      <div style="margin-top:18px;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px;">${t('inv_shop','Shop')}</div>
+
+        <div class="boost-card ac-shop-card" style="flex-direction:column;align-items:stretch;gap:10px;padding:14px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="boost-icon${acActive ? ' active' : ''}" style="font-size:24px;">🤖</div>
+            <div class="boost-info" style="flex:1;">
+              <div class="boost-name">${t('inv_autoclicker_name','Auto-Clicker')}</div>
+              <div class="boost-sub">${acActive
+                ? t('inv_autoclicker_active','Tapping for you — runs out of energy naturally')
+                : t('inv_autoclicker_desc','Taps automatically for 1 hour · uses energy like real taps')}</div>
+            </div>
+            <div class="boost-val${acActive ? '' : ' inactive'}" id="ac-timer">
+              ${acActive ? fmtDuration(acLeft) : '—'}
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+            <div style="font-size:11px;color:var(--muted);">
+              ${fmtNF(AUTOCLICKER_PRICE)} ${RT} ${t('inv_autoclicker_per_hour','/ 1 hr')}
+              ${acActive ? `· <span style="color:var(--jade);">${t('inv_autoclicker_stackable','stackable')}</span>` : ''}
+            </div>
+            <button class="skin-action buy" id="ac-buy-btn"
+              style="white-space:nowrap;${!canAffordAC ? 'opacity:.45;' : ''}"
+              ${!canAffordAC ? `title="${t('inv_need_real','Not enough REAL')}"` : ''}>
+              ${acActive ? t('inv_autoclicker_extend','+1 hr') : t('inv_autoclicker_buy','Activate · 50K')} ${RT}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;">
         <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px;">${t('inv_passive','Passive Income')}</div>
         <div class="boost-card">
           <div class="boost-icon active">⚔</div>
@@ -422,6 +404,52 @@
       };
       setTimeout(tick, 1000);
     }
+
+    /* Live auto-clicker timer countdown */
+    if (acActive) {
+      const acTimerEl = document.getElementById('ac-timer');
+      const acTick = () => {
+        const left = Math.max(0, Math.floor((getAutoclickerExpiry() - Date.now()) / 1000));
+        if (acTimerEl) acTimerEl.textContent = left > 0 ? fmtDuration(left) : '—';
+        if (left > 0) setTimeout(acTick, 1000);
+      };
+      setTimeout(acTick, 1000);
+    }
+
+    /* Buy / extend button */
+    const acBtn = document.getElementById('ac-buy-btn');
+    if (acBtn) {
+      acBtn.addEventListener('click', async () => {
+        const u = tgUser();
+        if (!u?.id) { showToast(t('open_in_telegram', 'Open via Telegram.')); return; }
+        const curBal = localPlayer().balance || 0;
+        if (curBal < AUTOCLICKER_PRICE) {
+          showToast(t('inv_need_real', `Need ${fmtNF(AUTOCLICKER_PRICE)} REAL.`));
+          return;
+        }
+        acBtn.disabled = true; acBtn.innerHTML = '…';
+        const res = await post('/api/season2/inventory/buy-autoclicker', { telegram_id: String(u.id) });
+        if (res?.status === 1) {
+          try {
+            const ps = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
+            ps.balance = res.new_balance;
+            localStorage.setItem('real_player_state_v1', JSON.stringify(ps));
+            localStorage.setItem('real_autoclicker_expires_at', String(res.autoclicker_expires_at));
+            window.dispatchEvent(new CustomEvent('shahnama:state_sync'));
+            window.dispatchEvent(new CustomEvent('real:autoclicker:started', { detail: { expires_at: res.autoclicker_expires_at } }));
+          } catch (_) {}
+          showToast(t('inv_autoclicker_toast', '🤖 Auto-Clicker activated!'));
+          buildBoosts(res.autoclicker_expires_at);
+        } else {
+          const msg = {
+            insufficient_balance: t('inv_need_real', 'Not enough REAL.'),
+          }[res?.error] || t('inv_buy_failed', 'Purchase failed.');
+          showToast(msg);
+          acBtn.disabled = false;
+          acBtn.innerHTML = `${acActive ? t('inv_autoclicker_extend','+1 hr') : t('inv_autoclicker_buy','Activate · 50K')} ${RT}`;
+        }
+      });
+    }
   };
 
   /* ── Init ────────────────────────────────────────────────────────────── */
@@ -435,13 +463,15 @@
     const u = tgUser();
 
     /* Fetch server inventory (owned skins, opened chests) */
-    let unlockedSkins = [];
-    let openedChests  = [];
+    let unlockedSkins  = [];
+    let openedChests   = [];
+    let serverACExpiry = null;
     if (u?.id) {
       const inv = await get('/api/season2/inventory?' + new URLSearchParams({ telegram_id: String(u.id) }));
       if (inv?.status === 1) {
-        unlockedSkins = inv.unlocked_skins || [];
-        openedChests  = inv.opened_chests  || [];
+        unlockedSkins  = inv.unlocked_skins        || [];
+        openedChests   = inv.opened_chests          || [];
+        serverACExpiry = inv.autoclicker_expires_at || null;
       }
     }
 
@@ -449,8 +479,7 @@
 
     buildSkins(unlockedSkins, balance);
     buildChests(openedChests);
-    buildBoosts();
-    buildTapIcon(unlockedSkins);
+    buildBoosts(serverACExpiry);
   };
 
   if (document.readyState === 'loading') {

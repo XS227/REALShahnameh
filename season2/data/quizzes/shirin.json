@@ -1,108 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "shr-e1",
+      "id": "shrn-e1",
       "chapter_slug": "shirin",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "What impossible task did Khosrow set for Farhad the sculptor to keep him away from Shirin?",
-      "question_fa": "خسرو چه وظیفه غیرممکنی برای فرهاد تراشکار تعیین کرد تا او را از شیرین دور نگه دارد؟",
-      "question_tg": "Хусрав чӣ вазифаи ғайриимконеро барои Фарҳоди тарош муайян кард то ӯро аз Ширин дур нигоҳ дорад?",
+      "question": "Who was Shirin?",
+      "question_fa": "شیرین که بود؟",
+      "question_tg": "Ширин кӣ буд?",
       "answers": [
-        "Cut a channel through Mount Bisotun — and you may have her",
-        "Build a road from Ctesiphon to Jerusalem in seven years using only stone",
-        "Carve a likeness of Shirin in marble taller than any statue ever made",
-        "Dig a canal from the Euphrates to the Caspian Sea alone and unaided"
+        "The daughter of Bahram Chubin",
+        "A Byzantine princess sent to seal a treaty",
+        "An Armenian Christian woman — Khosrow Parviz's great queen and great love",
+        "A Turkic warrior queen who invaded Iran"
       ],
       "answers_fa": [
-        "کانالی از کوه بیستون بکن — و می‌توانی او را داشته باشی",
-        "جاده‌ای از تیسفون به اورشلیم در هفت سال با استفاده از سنگ بساز",
-        "شبیه‌ای از شیرین را در مرمر بتراش که بلندتر از هر مجسمه‌ای باشد که تا به حال ساخته شده",
-        "کانالی از فرات به دریای خزر به تنهایی و بدون کمک حفر کن"
+        "دخترِ بهرام چوبین",
+        "شاهدختی بیزانسی که برای مهر کردنِ پیمانی فرستاده شد",
+        "زنی مسیحیِ ارمنی — شهبانوی بزرگ و عشقِ بزرگِ خسرو پرویز",
+        "شهبانوی جنگجوی ترک که به ایران حمله کرد"
       ],
       "answers_tg": [
-        "Канале аз кӯҳи Бесутун каф — ва метавонӣ ӯро дошта бошӣ",
-        "Роҳеро аз Тайсафун ба Урусалим дар ҳафт сол бо истифода аз санг бисоз",
-        "Шабеҳи Ширинро дар мармар битарош ки баландтар аз ҳар муҷассамае бошад ки то ба ҳол сохта шуда",
-        "Канале аз Фурот ба Дарёи Хазар танҳо ва бе кӯмак ҳафр кун"
+        "Духтари Баҳром Чӯбин",
+        "Шоҳдухти бизантӣ ки барои муҳр кардани паймоне фиристода шуд",
+        "Зани масеҳии арманӣ — шаҳбонуи бузург ва ишқи бузурги Хусрав Парвиз",
+        "Шаҳбонуи ҷангҷӯи турк ки ба Эрон ҳамла кард"
       ],
-      "correct_answer": 0,
-      "explanation": "Khosrow gave Farhad an impossible condition: cut a channel through Mount Bisotun, and you may have Shirin. Farhad went to the mountain and began cutting. He worked so long and so precisely that the task began to look possible. The mountain still bears his carvings.",
-      "explanation_fa": "خسرو به فرهاد شرطی غیرممکن داد: کانالی از کوه بیستون بکن و می‌توانی شیرین را داشته باشی. فرهاد به کوه رفت و شروع به کندن کرد. آنقدر طولانی و دقیق کار کرد که کار داشت ممکن به نظر می‌رسید. آثار حکاکی‌هایش هنوز بر کوه وجود دارد.",
-      "explanation_tg": "Хусрав ба Фарҳод шарти ғайриимконе дод: канале аз кӯҳи Бесутун каф ва метавонӣ Ширинро дошта бошӣ. Фарҳод ба кӯҳ рафт ва шурӯъ ба кофтан кард. Он қадар дӯлонӣ ва дақиқ кор кард ки кор доштааст имконпазир ба назар мерасид.",
+      "correct_answer": 2,
+      "explanation": "Shirin was an Armenian Christian woman, Khosrow Parviz's great queen and his great love. She outlived his glory, witnessed his fall, and chose how she died.",
+      "explanation_fa": "شیرین زنی مسیحیِ ارمنی بود، شهبانو و عشقِ بزرگِ خسرو پرویز — که شکوه و سقوطش را دید و مرگِ خود را برگزید.",
+      "explanation_tg": "Ширин зани масеҳии арманӣ буд, шаҳбону ва ишқи бузурги Хусрав Парвиз — ки шукӯҳ ва суқуташро дид ва марги худро баргузид.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "shr-m1",
+      "id": "shrn-e2",
+      "chapter_slug": "shirin",
+      "quiz_part": 2,
+      "difficulty": "easy",
+      "question": "Who was Farhad?",
+      "question_fa": "فرهاد که بود؟",
+      "question_tg": "Фарҳод кӣ буд?",
+      "answers": [
+        "Khosrow's chief general in the Byzantine wars",
+        "A sculptor and engineer who fell in love with Shirin and was set to cut a channel through Mount Bisotun",
+        "The court poet who recorded Shirin's story",
+        "Shirin's brother and protector"
+      ],
+      "answers_fa": [
+        "سردارِ اصلیِ خسرو در جنگ‌های بیزانس",
+        "سنگ‌تراش و مهندسی که عاشقِ شیرین شد و مأمور شد آبراهی از کوهِ بیستون بِبُرد",
+        "شاعرِ درباری که داستانِ شیرین را ثبت کرد",
+        "برادر و پشتیبانِ شیرین"
+      ],
+      "answers_tg": [
+        "Сардори аслии Хусрав дар ҷангҳои Бизантия",
+        "Сангтарош ва муҳандисе ки ошиқи Ширин шуд ва маъмур шуд оброҳе аз кӯҳи Бесутун бибурад",
+        "Шоири дарборӣ ки достони Ширинро сабт кард",
+        "Бародар ва пуштибони Ширин"
+      ],
+      "correct_answer": 1,
+      "explanation": "Farhad was a sculptor and engineer who loved Shirin. Khosrow, unwilling to share, set him an impossible condition: cut a channel through Mount Bisotun, and you may have her.",
+      "explanation_fa": "فرهاد سنگ‌تراشی بود که عاشقِ شیرین شد؛ خسرو شرطی ناممکن گذاشت: کوهِ بیستون را بشکاف.",
+      "explanation_tg": "Фарҳод сангтароше буд ки ошиқи Ширин шуд; Хусрав шарте номумкин гузошт: кӯҳи Бесутунро бишкоф.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "shrn-e3",
+      "chapter_slug": "shirin",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How did Shirin's life end?",
+      "question_fa": "زندگیِ شیرین چگونه پایان یافت؟",
+      "question_tg": "Зиндагии Ширин чӣ гуна поён ёфт?",
+      "answers": [
+        "She refused Shiruyeh, went to Khosrow's tomb, and died there — by her own hand or by grief",
+        "She was executed by Shiruyeh for treason",
+        "She fled to Armenia and ruled there as queen",
+        "She entered a convent and outlived all the kings"
+      ],
+      "answers_fa": [
+        "شیرویه را پس زد، به آرامگاهِ خسرو رفت و همان‌جا مُرد — به دستِ خود یا از اندوه",
+        "به جرمِ خیانت به دستِ شیرویه اعدام شد",
+        "به ارمنستان گریخت و آن‌جا به‌عنوانِ شهبانو فرمان راند",
+        "به صومعه رفت و از همه‌ی شاهان بیشتر زیست"
+      ],
+      "answers_tg": [
+        "Шерӯяро пас зад, ба оромгоҳи Хусрав рафт ва ҳамон ҷо мурд — ба дасти худ ё аз андӯҳ",
+        "Ба ҷурми хиёнат ба дасти Шерӯя қатл шуд",
+        "Ба Арманистон гурехт ва он ҷо ба унвони шаҳбону фармон ронд",
+        "Ба савмаа рафт ва аз ҳамаи шоҳон бештар зист"
+      ],
+      "correct_answer": 0,
+      "explanation": "When Shiruyeh sent for her, she refused. She went instead to Khosrow's tomb and there she died — by her own hand, some versions say; by grief, others. Both are probably true.",
+      "explanation_fa": "شیرویه را پس زد، به آرامگاهِ خسرو رفت و همان‌جا مُرد — به دستِ خود یا از اندوه؛ شاید هر دو.",
+      "explanation_tg": "Шерӯяро пас зад, ба оромгоҳи Хусрав рафт ва ҳамон ҷо мурд — ба дасти худ ё аз андӯҳ; шояд ҳар ду.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "shrn-m1",
       "chapter_slug": "shirin",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "How did Khosrow end Farhad's work on Mount Bisotun?",
-      "question_fa": "خسرو چگونه کار فرهاد بر کوه بیستون را پایان داد؟",
-      "question_tg": "Хусрав чӣ тавр кори Фарҳодро бар кӯҳи Бесутун поён дод?",
+      "question": "What condition did Khosrow set for Farhad to win Shirin?",
+      "question_fa": "خسرو برای رسیدنِ فرهاد به شیرین چه شرطی گذاشت؟",
+      "question_tg": "Хусрав барои расидани Фарҳод ба Ширин чӣ шарте гузошт?",
       "answers": [
-        "He sent a messenger to lie to Farhad that Shirin had died — Farhad threw himself off the cliff in grief",
-        "He convinced Shirin herself to go to the mountain and tell Farhad she did not love him",
-        "He had Farhad arrested before the channel was complete and executed as a traitor",
-        "He offered Farhad a kingdom of his own if he would abandon the work and leave Iran"
+        "Defeat the champion of Byzantium in single combat",
+        "Bring the True Cross from Jerusalem",
+        "Cut a channel through Mount Bisotun — a task meant to be impossible",
+        "Build a palace of black stone in one year"
       ],
       "answers_fa": [
-        "قاصدی فرستاد که به فرهاد دروغ بگوید که شیرین مُرده — فرهاد از غم از صخره خودش را پرت کرد",
-        "خود شیرین را متقاعد کرد که به کوه برود و به فرهاد بگوید دوستش ندارد",
-        "فرهاد را قبل از اتمام کانال دستگیر کرد و به عنوان خائن اعدام کرد",
-        "به فرهاد یک پادشاهی مخصوص خودش پیشنهاد داد اگر کار را رها کند و ایران را ترک کند"
+        "پهلوانِ بیزانس را در نبردِ تن‌به‌تن شکست دهد",
+        "صلیبِ راستین را از اورشلیم بیاورد",
+        "آبراهی از کوهِ بیستون بِبُرد — کاری که قرار بود ناممکن باشد",
+        "در یک سال کاخی از سنگِ سیاه بسازد"
       ],
       "answers_tg": [
-        "Паёмбаре фиристод то ба Фарҳод дурӯғ гӯяд ки Ширин мурдааст — Фарҳод аз ғам аз харсанг худашро партоб кард",
-        "Худи Ширинро қонеъ кард ки ба кӯҳ равад ва ба Фарҳод бигӯяд ӯро дӯст надорад",
-        "Фарҳодро пеш аз тамоми канал дастгир кард ва ҳамчун хоин эъдом кард",
-        "Ба Фарҳод подшоҳии махсуси худашро пешниҳод дод агар корро раҳо кунад ва Эронро тарк кунад"
+        "Паҳлавони Бизантияро дар набарди тан ба тан шикаст диҳад",
+        "Салиби Ростинро аз Ерусалим биёварад",
+        "Оброҳе аз кӯҳи Бесутун бибурад — коре ки қарор буд номумкин бошад",
+        "Дар як сол кохе аз санги сиёҳ бисозад"
       ],
-      "correct_answer": 0,
-      "explanation": "When Farhad's work began looking possible, Khosrow sent a messenger to lie to him that Shirin had died. Farhad threw himself from the cliff. He died for a lie. The mountain still bears his carvings — permanent evidence of what love and discipline can build, and what a king's deception can destroy.",
-      "explanation_fa": "وقتی کار فرهاد داشت ممکن به نظر می‌رسید، خسرو قاصدی فرستاد که به او دروغ بگوید شیرین مُرده. فرهاد از صخره خودش را پرت کرد. برای یک دروغ مُرد. آثار حکاکی‌هایش هنوز بر کوه وجود دارد — شواهد دائمی از آنچه عشق و انضباط می‌تواند بسازد و آنچه فریب یک شاه می‌تواند نابود کند.",
-      "explanation_tg": "Вақте кори Фарҳод доштааст имконпазир ба назар мерасид, Хусрав паёмбаре фиристод то ба ӯ дурӯғ гӯяд ки Ширин мурдааст. Фарҳод аз харсанг худашро партоб кард. Барои дурӯғе мурд.",
+      "correct_answer": 2,
+      "explanation": "Khosrow gave Farhad an impossible condition: cut a channel through Mount Bisotun and you may have her. Farhad went to the mountain and began cutting — and worked so long and so precisely that the impossible began to look possible.",
+      "explanation_fa": "شرط: شکافتنِ بیستون. فرهاد چنان کار کرد که ناممکن ممکن می‌نمود.",
+      "explanation_tg": "Шарт: шикофтани Бесутун. Фарҳод чунон кор кард ки номумкин мумкин менамуд.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
       }
     },
     {
-      "id": "shr-e2",
+      "id": "shrn-m2",
       "chapter_slug": "shirin",
-      "quiz_part": 1,
-      "difficulty": "easy",
-      "question": "What did Shirin do after Khosrow was killed by his son Shiruyeh?",
-      "question_fa": "شیرین بعد از کشته شدن خسرو توسط پسرش شیرویه چه کرد؟",
-      "question_tg": "Ширин пас аз куштани Хусрав аз ҷониби писараш Шируяҳ чӣ кард?",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "How did Farhad die?",
+      "question_fa": "فرهاد چگونه مُرد؟",
+      "question_tg": "Фарҳод чӣ гуна мурд?",
       "answers": [
-        "She refused Shiruyeh's demand to become his queen and died at Khosrow's tomb — by her own hand or by grief",
-        "She fled to Armenia, her homeland, and lived the rest of her life in exile",
-        "She accepted Shiruyeh's offer to preserve the peace and avoid further bloodshed",
-        "She entered a monastery and spent the rest of her life in prayer for Khosrow's soul"
+        "Khosrow sent a messenger with the lie that Shirin had died, and Farhad threw himself from the cliff",
+        "He was crushed by falling rock in the channel",
+        "Khosrow's soldiers killed him at the mountain",
+        "He finished the channel and died of exhaustion"
       ],
       "answers_fa": [
-        "درخواست شیرویه برای ملکه شدنش را رد کرد و بر مزار خسرو مُرد — به دست خودش یا از غم",
-        "به ارمنستان، زادگاهش، گریخت و بقیه عمرش را در تبعید گذراند",
-        "پیشنهاد شیرویه را برای حفظ صلح و جلوگیری از خونریزی بیشتر قبول کرد",
-        "به یک صومعه رفت و بقیه عمرش را در دعا برای روح خسرو گذراند"
+        "خسرو پیکی با این دروغ فرستاد که شیرین مرده است، و فرهاد خود را از صخره پایین انداخت",
+        "زیرِ سنگِ فروریخته در آبراه له شد",
+        "سربازانِ خسرو در کوه کشتندش",
+        "آبراه را تمام کرد و از فرسودگی مُرد"
       ],
       "answers_tg": [
-        "Хоҳиши Шируяҳро барои маликашавии худро рад кард ва бар мазори Хусрав мурд — ба дасти худ ё аз ғам",
-        "Ба Арманистон, зодгоҳаш, гурехт ва бақияи умрашро дар табъид гузаронд",
-        "Пешниҳоди Шируяҳро барои ҳифзи сулҳ ва пешгирии хунрезии бештар қабул кард",
-        "Ба хонақоҳе даромад ва бақияи умрашро дар дуо барои рӯҳи Хусрав гузаронд"
+        "Хусрав пайке бо ин дурӯғ фиристод ки Ширин мурдааст, ва Фарҳод худро аз сахра поён андохт",
+        "Зери санги фурӯрехта дар оброҳ лиҳ шуд",
+        "Сарбозони Хусрав дар кӯҳ куштандаш",
+        "Оброҳро тамом кард ва аз фарсудагӣ мурд"
       ],
       "correct_answer": 0,
-      "explanation": "When Shiruyeh demanded Shirin as his queen, she refused. A king who murders his own father to take his crown was not one she would ornament. She went to Khosrow's tomb, and there she died. The Shahnameh does not force a single interpretation — it was her choice, and she made it.",
-      "explanation_fa": "وقتی شیرویه از شیرین به عنوان ملکه‌اش خواست، امتناع کرد. شاهی که پدر خودش را برای گرفتن تاجش می‌کشد کسی نبود که او زینتش می‌داد. به مزار خسرو رفت و در آنجا مُرد. شاهنامه یک تفسیر واحد تحمیل نمی‌کند — انتخاب او بود و آن را کرد.",
-      "explanation_tg": "Вақте Шируяҳ Ширинро ҳамчун маликааш хост, имтиноъ кард. Подшоҳе ки падари худашро барои гирифтани тоҷаш мекушад касе набуд ки ӯ зинаташ мекард. Ба мазори Хусрав рафт ва дар он ҷо мурд.",
+      "explanation": "When the task began to look achievable, Khosrow sent a messenger to tell Farhad that Shirin had died. Farhad threw himself from the cliff. The mountain still bears his carvings — and the lie that killed him is in every one of them.",
+      "explanation_fa": "وقتی کار ممکن می‌نمود، خسرو پیامِ دروغِ مرگِ شیرین را فرستاد؛ فرهاد خود را از صخره انداخت.",
+      "explanation_tg": "Вақте кор мумкин менамуд, Хусрав паёми дурӯғи марги Ширинро фиристод; Фарҳод худро аз сахра андохт.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "shrn-m3",
+      "chapter_slug": "shirin",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Why did Shiruyeh send for Shirin after killing his father?",
+      "question_fa": "چرا شیرویه پس از کشتنِ پدرش به دنبالِ شیرین فرستاد؟",
+      "question_tg": "Чаро Шерӯя пас аз куштани падараш ба дунболи Ширин фиристод?",
+      "answers": [
+        "He wanted to execute the last witness of his father's reign",
+        "She had promised to marry him before Khosrow",
+        "She was a queen — wealthy, known — and he wanted the legitimacy her presence would provide",
+        "He needed her wealth to pay the Byzantine indemnity"
+      ],
+      "answers_fa": [
+        "می‌خواست آخرین شاهدِ سلطنتِ پدرش را اعدام کند",
+        "شیرین پیش از خسرو به او وعده‌ی ازدواج داده بود",
+        "او شهبانو بود — ثروتمند و نام‌آور — و شیرویه مشروعیتی را می‌خواست که حضورش فراهم می‌کرد",
+        "ثروتش را برای پرداختِ غرامتِ بیزانس نیاز داشت"
+      ],
+      "answers_tg": [
+        "Мехост охирин шоҳиди салтанати падарашро қатл кунад",
+        "Ширин пеш аз Хусрав ба ӯ ваъдаи издивоҷ дода буд",
+        "Ӯ шаҳбону буд — сарватманд ва номовар — ва Шерӯя машруиятеро мехост ки ҳузураш фароҳам мекард",
+        "Сарваташро барои пардохти ғаромати Бизантия ниёз дошт"
+      ],
+      "correct_answer": 2,
+      "explanation": "Shiruyeh wanted what Shirin's presence would lend him: legitimacy. A famous queen at the new king's side would suggest continuity. She refused to provide it.",
+      "explanation_fa": "شیرویه مشروعیت می‌خواست — حضورِ شهبانویی نام‌آور در کنارِ شاهِ نو، تداوم القا می‌کرد. شیرین نپذیرفت.",
+      "explanation_tg": "Шерӯя машруият мехост — ҳузури шаҳбонуе номовар дар канори шоҳи нав, تадовум илқо мекард. Ширин напазируфт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "shrn-m4",
+      "chapter_slug": "shirin",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "On what grounds did Shirin refuse Shiruyeh?",
+      "question_fa": "شیرین بر چه پایه‌ای شیرویه را پس زد؟",
+      "question_tg": "Ширин бар чӣ поя Шерӯяро пас зад?",
+      "answers": [
+        "Her Christian faith forbade remarriage",
+        "She had sworn an oath to Byzantium",
+        "He was too young for her to marry",
+        "A king who murders his own father to take his crown is not a king she would ornament"
+      ],
+      "answers_fa": [
+        "دینِ مسیحی‌اش ازدواجِ دوباره را منع می‌کرد",
+        "به بیزانس سوگند خورده بود",
+        "برای ازدواج با او بیش از حد جوان بود",
+        "شاهی که پدرِ خود را برای تاج می‌کشد، شاهی نیست که او زینتش شود"
+      ],
+      "answers_tg": [
+        "Дини масеҳияш издивоҷи дубораро манъ мекард",
+        "Ба Бизантия савганд хӯрда буд",
+        "Барои издивоҷ бо ӯ беш аз ҳад ҷавон буд",
+        "Шоҳе ки падари худро барои тоҷ мекушад, шоҳе нест ки ӯ зинаташ шавад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Her refusal was a verdict: a parricide is not a king she would ornament. By withholding her presence she withheld the legitimacy Shiruyeh wanted — the one thing his knife could not take.",
+      "explanation_fa": "پس زدنش حکم بود: پدرکُش شاهی نیست که او زینتش شود — و مشروعیتی را که چاقوی شیرویه نمی‌توانست بگیرد، دریغ کرد.",
+      "explanation_tg": "Пас заданаш ҳукм буд: падаркуш шоҳе нест ки ӯ зинаташ шавад — ва машруиятеро ки корди Шерӯя наметавонист бигирад, дареғ кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "shrn-m5",
+      "chapter_slug": "shirin",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "Why does Shirin appear in the Shahnameh at all, if the poem 'is not a romance and does not want to be one'?",
+      "question_fa": "اگر شاهنامه «عاشقانه نیست و نمی‌خواهد باشد»، چرا شیرین اصلاً در آن ظاهر می‌شود؟",
+      "question_tg": "Агар Шоҳнома «ошиқона нест ва намехоҳад бошад», чаро Ширин аслан дар он зоҳир мешавад?",
+      "answers": [
+        "Because Byzantium demanded her inclusion in the chronicle",
+        "Because Ferdowsi was paid extra for love stories",
+        "Because every epic requires a romance by convention",
+        "Because she cannot be left out — her life and chosen death are part of the dynasty's truth"
+      ],
+      "answers_fa": [
+        "چون بیزانس گنجاندنش در تاریخ را طلب کرد",
+        "چون به فردوسی برای داستان‌های عاشقانه پولِ بیشتری می‌دادند",
+        "چون هر حماسه‌ای طبقِ قاعده به عاشقانه‌ای نیاز دارد",
+        "چون نمی‌توان حذفش کرد — زندگی و مرگِ برگزیده‌اش بخشی از حقیقتِ دودمان است"
+      ],
+      "answers_tg": [
+        "Зеро Бизантия гунҷонданашро дар таърих талаб кард",
+        "Зеро ба Фирдавсӣ барои достонҳои ошиқона пули бештаре медоданд",
+        "Зеро ҳар ҳамосае тибқи қоида ба ошиқонае ниёз дорад",
+        "Зеро наметавон ҳазфаш кард — зиндагӣ ва марги баргузидааш бахше аз ҳақиқати дудмон аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh is a chronicle, not a romance — but Shirin forced her way in because the dynasty's story is incomplete without her. Her refusal of Shiruyeh and her death at Khosrow's tomb are historical and moral facts the chronicle cannot omit.",
+      "explanation_fa": "شاهنامه عاشقانه نیست، اما داستانِ دودمان بدونِ شیرین ناقص است — پس او راهش را به درون گشود.",
+      "explanation_tg": "Шоҳнома ошиқона нест, аммо достони дудмон бе Ширин ноқис аст — пас ӯ роҳашро ба дарун кушод.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "shrn-h1",
+      "chapter_slug": "shirin",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "'The mountain still bears his carvings. The lie that killed him is in every one of them.' What is this image saying about art and betrayal?",
+      "question_fa": "«کوه هنوز کنده‌کاری‌هایش را دارد. دروغی که او را کشت در تک‌تکِ آن‌هاست.» این تصویر درباره‌ی هنر و خیانت چه می‌گوید؟",
+      "question_tg": "«Кӯҳ ҳанӯз кандакориҳояшро дорад. Дурӯғе ки ӯро кушт дар як-яки онҳост.» Ин тасвир дар бораи ҳунар ва хиёнат чӣ мегӯяд?",
+      "answers": [
+        "The artwork outlives both lover and king, preserving the devotion and the crime together — stone remembers what power wanted forgotten",
+        "The mountain itself was responsible for Farhad's death",
+        "Art is worthless when its maker dies unhappy",
+        "The carvings should have been destroyed to erase the shame"
+      ],
+      "answers_fa": [
+        "اثرِ هنری از عاشق و شاه هر دو بیشتر می‌پاید و وفاداری و جنایت را با هم نگه می‌دارد — سنگ آنچه را قدرت می‌خواست فراموش شود به یاد می‌آورد",
+        "خودِ کوه مسئولِ مرگِ فرهاد بود",
+        "هنر وقتی سازنده‌اش ناشاد بمیرد بی‌ارزش است",
+        "کنده‌کاری‌ها باید نابود می‌شدند تا ننگ پاک شود"
+      ],
+      "answers_tg": [
+        "Асари ҳунарӣ аз ошиқ ва шоҳ ҳар ду бештар мепояд ва вафодорӣ ва ҷиноятро бо ҳам нигоҳ медорад — санг он чиро қудрат мехост фаромӯш шавад ба ёд меоварад",
+        "Худи кӯҳ масъули марги Фарҳод буд",
+        "Ҳунар вақте созандааш ношод бимирад беарзиш аст",
+        "Кандакориҳо бояд нобуд мешуданд то нанг пок шавад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Khosrow's lie was spoken once and meant to vanish; Farhad's carvings were cut into rock and cannot. The image reverses the power relation: the king controlled the message, but the artisan controls the memory. Whoever stands at Bisotun now reads both the love and the lie.",
+      "explanation_fa": "دروغِ خسرو یک بار گفته شد و باید محو می‌شد؛ کنده‌کاریِ فرهاد در سنگ ماند. شاه پیام را کنترل کرد، هنرمند حافظه را.",
+      "explanation_tg": "Дурӯғи Хусрав як бор гуфта шуд ва бояд маҳв мешуд; кандакории Фарҳод дар санг монд. Шоҳ паёмро контрол кард, ҳунарманд ҳофизаро.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shrn-h2",
+      "chapter_slug": "shirin",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The chapter says Shirin 'chose her ending rather than accept one she had not written.' Why is this framed as her defining act?",
+      "question_fa": "این فصل می‌گوید شیرین «پایانش را برگزید نه آن‌که پایانی را بپذیرد که خود ننوشته بود.» چرا این به‌عنوانِ عملِ تعیین‌کننده‌اش قاب می‌شود؟",
+      "question_tg": "Ин боб мегӯяд Ширин «поёнашро баргузид на он ки поёнеро бипазирад ки худ нанавишта буд.» Чаро ин ба унвони амали таъйинкунандааш қоб мешавад?",
+      "answers": [
+        "Because she had no other options available",
+        "Because the Shahnameh praises death over life in all cases",
+        "In a world where kings, armies and fortune decide everyone's fate, authorship of one's own ending is the last and purest form of sovereignty",
+        "Because suicide was customary for Sasanian queens"
+      ],
+      "answers_fa": [
+        "چون هیچ گزینه‌ی دیگری نداشت",
+        "چون شاهنامه در همه حال مرگ را بر زندگی می‌ستاید",
+        "در جهانی که شاهان و ارتش‌ها و بخت سرنوشتِ همه را تعیین می‌کنند، نویسندگیِ پایانِ خود واپسین و ناب‌ترین شکلِ فرمانروایی است",
+        "چون خودکشی برای شهبانوهای ساسانی مرسوم بود"
+      ],
+      "answers_tg": [
+        "Зеро ҳеҷ гузинаи дигаре надошт",
+        "Зеро Шоҳнома дар ҳама ҳол маргро бар зиндагӣ меситояд",
+        "Дар ҷаҳоне ки шоҳон ва лашкарҳо ва бахт сарнавишти ҳамаро таъйин мекунанд, нависандагии поёни худ вопасин ва нобтарин шакли фармонравоист",
+        "Зеро худкушӣ барои шаҳбонуҳои сосонӣ марсум буд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Everyone else in the falling dynasty is written by events: blinded, deposed, murdered, swept away. Shirin alone composes her final scene — place, meaning, and manner. The Shahnameh, a poem about how little of fate we control, honors the one character who took back the pen.",
+      "explanation_fa": "همه را رویدادها می‌نویسند: کور، خلع، کشته. تنها شیرین صحنه‌ی پایانیِ خود را می‌نویسد — و شاهنامه این را ارج می‌نهد.",
+      "explanation_tg": "Ҳамаро рӯйдодҳо менависанд: кӯр, халъ, кушта. Танҳо Ширин саҳнаи поёнии худро менависад — ва Шоҳнома инро арҷ мениҳад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shrn-h3",
+      "chapter_slug": "shirin",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "What later masterpiece grew from Shirin's story, and what does the chapter claim about her portrayal in the Shahnameh itself?",
+      "question_fa": "چه شاهکارِ بعدی از داستانِ شیرین رویید، و این فصل درباره‌ی تصویرش در خودِ شاهنامه چه ادعایی دارد؟",
+      "question_tg": "Чӣ шоҳкори баъдӣ аз достони Ширин рӯид, ва ин боб дар бораи тасвираш дар худи Шоҳнома чӣ даъвое дорад?",
+      "answers": [
+        "Sa'di's Golestan — which retells it as comedy",
+        "Rumi's Masnavi — which corrected the Shahnameh's hostile portrait",
+        "Nizami's romance — yet she is already complete in the Shahnameh: a woman who made two men immortal and chose her own ending",
+        "Omar Khayyam's quatrains — which mock her story"
+      ],
+      "answers_fa": [
+        "گلستانِ سعدی — که آن را به کمدی بازمی‌گوید",
+        "مثنویِ مولوی — که تصویرِ خصمانه‌ی شاهنامه را اصلاح کرد",
+        "عاشقانه‌ی نظامی — اما او در شاهنامه از پیش کامل است: زنی که دو مرد را جاودانه کرد و پایانِ خود را برگزید",
+        "رباعیاتِ خیام — که داستانش را ریشخند می‌کند"
+      ],
+      "answers_tg": [
+        "Гулистони Саъдӣ — ки онро ба комедия бозмегӯяд",
+        "Маснавии Мавлавӣ — ки тасвири хасмонаи Шоҳномаро ислоҳ кард",
+        "Ошиқонаи Низомӣ — аммо ӯ дар Шоҳнома аз пеш комил аст: зане ки ду мардро ҷовидона кард ва поёни худро баргузид",
+        "Рубоиёти Хайём — ки достонашро решханд мекунад"
+      ],
+      "correct_answer": 2,
+      "explanation": "Persian literature built a whole tradition on her — above all Nizami's 'Khosrow and Shirin.' But the chapter insists she needs no expansion: in the Shahnameh she is already complete, a woman who made two men immortal through loving one and refusing the other.",
+      "explanation_fa": "نظامی سنتی کامل بر او بنا کرد؛ اما شیرین در شاهنامه از پیش کامل است.",
+      "explanation_tg": "Низомӣ суннате комил бар ӯ бино кард; аммо Ширин дар Шоҳнома аз пеш комил аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shrn-h4",
+      "chapter_slug": "shirin",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "How does Shirin's refusal of Shiruyeh function politically, beyond the personal?",
+      "question_fa": "پس زدنِ شیرویه توسطِ شیرین، فراتر از امرِ شخصی، از نظرِ سیاسی چگونه عمل می‌کند؟",
+      "question_tg": "Пас задани Шерӯя тавассути Ширин, фаротар аз амри шахсӣ, аз назари сиёсӣ чӣ гуна амал мекунад?",
+      "answers": [
+        "It is a public denial of legitimacy — the throne can be taken by murder, but recognition must be freely given, and she refuses to give it",
+        "It had no political meaning — it was purely private grief",
+        "It triggered a Byzantine invasion on her behalf",
+        "It transferred her wealth to the Zoroastrian temples"
+      ],
+      "answers_fa": [
+        "انکارِ علنیِ مشروعیت است — تخت را می‌توان با قتل گرفت، اما به‌رسمیت‌شناسی باید آزادانه داده شود، و او از دادنش سر باز می‌زند",
+        "معنای سیاسی نداشت — صرفاً اندوهِ خصوصی بود",
+        "حمله‌ی بیزانس به نامِ او را برانگیخت",
+        "ثروتش را به آتشکده‌های زرتشتی منتقل کرد"
+      ],
+      "answers_tg": [
+        "Инкори ошкори машруият аст — тахтро метавон бо қатл гирифт, аммо барасмиятшиносӣ бояд озодона дода шавад, ва ӯ аз доданаш сар бозмезанад",
+        "Маънои сиёсӣ надошт — сирфан андӯҳи хусусӣ буд",
+        "Ҳамлаи Бизантия ба номи ӯро барангехт",
+        "Сарваташро ба оташкадаҳои зардуштӣ мунтақил кард"
+      ],
+      "correct_answer": 0,
+      "explanation": "Shiruyeh had the palace, the army, the crown — everything force can seize. What he lacked was recognition, which only others can grant. Shirin's refusal, sealed by her death at the old king's tomb, declared before the whole court that the new reign was founded on a crime. No executioner can reverse that verdict.",
+      "explanation_fa": "شیرویه هر چه را زور می‌گیرد داشت؛ آنچه نداشت به‌رسمیت‌شناسی بود که فقط دیگران می‌بخشند — و شیرین دریغش کرد.",
+      "explanation_tg": "Шерӯя ҳар чиро зӯр мегирад дошт; он чи надошт барасмиятшиносӣ буд ки танҳо дигарон мебахшанд — ва Ширин дареғаш кард.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shrn-h5",
+      "chapter_slug": "shirin",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "'A woman who made two men immortal through loving one and refusing the other.' How does this line define Shirin's power?",
+      "question_fa": "«زنی که دو مرد را جاودانه کرد، با دوست داشتنِ یکی و پس زدنِ دیگری.» این جمله قدرتِ شیرین را چگونه تعریف می‌کند؟",
+      "question_tg": "«Зане ки ду мардро ҷовидона кард, бо дӯст доштани яке ва пас задани дигаре.» Ин ҷумла қудрати Ширинро чӣ гуна таъриф мекунад?",
+      "answers": [
+        "Her love and her refusal are both verdicts that history keeps — men enter memory through her judgment of them, not through their own deeds alone",
+        "The line is ironic — she actually destroyed both men's reputations",
+        "She had magical powers of immortality",
+        "Her power came entirely from her wealth"
+      ],
+      "answers_fa": [
+        "عشق و انکارش هر دو حکم‌هایی‌اند که تاریخ نگه می‌دارد — مردان از راهِ داوریِ او واردِ حافظه می‌شوند، نه فقط از راهِ کرده‌های خود",
+        "جمله طعنه‌آمیز است — در واقع آبروی هر دو مرد را بر باد داد",
+        "قدرتِ جادوییِ جاودانگی داشت",
+        "قدرتش تماماً از ثروتش می‌آمد"
+      ],
+      "answers_tg": [
+        "Ишқ ва инкораш ҳар ду ҳукмҳоеанд ки таърих нигоҳ медорад — мардон аз роҳи доварии ӯ вориди ҳофиза мешаванд, на танҳо аз роҳи кардаҳои худ",
+        "Ҷумла таънаомез аст — дар воқеъ обрӯи ҳар ду мардро барбод дод",
+        "Қудрати ҷодуии ҷовидонагӣ дошт",
+        "Қудраташ тамоман аз сарваташ меомад"
+      ],
+      "correct_answer": 0,
+      "explanation": "Khosrow is remembered as the man Shirin loved and mourned; Shiruyeh as the man she refused. Her judgment became their epitaph. The Shahnameh grants her the historian's power: not to wield armies, but to fix forever how men are remembered.",
+      "explanation_fa": "خسرو مردی است که شیرین دوستش داشت؛ شیرویه مردی که پسش زد. داوریِ او سنگِ قبرِ هر دو شد.",
+      "explanation_tg": "Хусрав мардест ки Ширин дӯсташ дошт; Шерӯя марде ки пасаш зад. Доварии ӯ санги қабри ҳар ду шуд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shrn-h6",
+      "chapter_slug": "shirin",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The chapter says of Shirin's death: 'by her own hand, some versions say; by grief, others say. Both are probably true.' What does this acceptance of double truth show about the Shahnameh's method?",
+      "question_fa": "این فصل درباره‌ی مرگِ شیرین می‌گوید: «به دستِ خود، به روایتی؛ از اندوه، به روایتی دیگر. احتمالاً هر دو راست‌اند.» این پذیرشِ حقیقتِ دوگانه درباره‌ی روشِ شاهنامه چه نشان می‌دهد؟",
+      "question_tg": "Ин боб дар бораи марги Ширин мегӯяд: «ба дасти худ, ба ривояте; аз андӯҳ, ба ривояти дигар. Эҳтимолан ҳар ду ростанд.» Ин пазириши ҳақиқати дугона дар бораи равиши Шоҳнома чӣ нишон медиҳад?",
+      "answers": [
+        "It reflects censorship by later copyists",
+        "The poem prefers human truth to forensic certainty — the hand and the grief are the same cause described at different depths",
+        "It shows the chronicle is careless with facts",
+        "It proves there were two different women named Shirin"
+      ],
+      "answers_fa": [
+        "بازتابِ سانسورِ نسخه‌نویسانِ بعدی است",
+        "شعر حقیقتِ انسانی را بر یقینِ پزشکی‌قانونی ترجیح می‌دهد — دست و اندوه یک علت‌اند که در ژرفاهای متفاوت توصیف شده",
+        "نشان می‌دهد تاریخ‌نگاری با واقعیت‌ها بی‌دقت است",
+        "ثابت می‌کند دو زنِ متفاوت به نامِ شیرین وجود داشتند"
+      ],
+      "answers_tg": [
+        "Бозтоби сензураи нусханависони баъдист",
+        "Шеър ҳақиқати инсониро бар яқини тиббӣ-қонунӣ тарҷеҳ медиҳад — даст ва андӯҳ як иллатанд ки дар жарфоҳои мутафовит тавсиф шуда",
+        "Нишон медиҳад таърихнигорӣ бо воқеиятҳо бедиққат аст",
+        "Исбот мекунад ду зани мутафовит ба номи Ширин вуҷуд доштанд"
+      ],
+      "correct_answer": 1,
+      "explanation": "Did the hand act, or the grief? The question dissolves: the grief moved the hand. By keeping both versions, the Shahnameh records the event at two depths — the physical and the emotional — and declines to pretend that one excludes the other. That is its characteristic honesty.",
+      "explanation_fa": "دست عمل کرد یا اندوه؟ پرسش حل می‌شود: اندوه دست را جنباند. شاهنامه رویداد را در دو ژرفا ثبت می‌کند.",
+      "explanation_tg": "Даст амал кард ё андӯҳ? Пурсиш ҳал мешавад: андӯҳ дастро ҷунбонд. Шоҳнома рӯйдодро дар ду жарфо сабт мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shrn-h7",
+      "chapter_slug": "shirin",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "Farhad's story 'belongs to Shirin's chapter even though it is not about her directly.' Why is she its true center?",
+      "question_fa": "داستانِ فرهاد «به فصلِ شیرین تعلق دارد هرچند مستقیماً درباره‌ی او نیست.» چرا او مرکزِ راستینِ آن است؟",
+      "question_tg": "Достони Фарҳод «ба боби Ширин тааллуқ дорад ҳарчанд мустақиман дар бораи ӯ нест.» Чаро ӯ маркази ростини он аст?",
+      "answers": [
+        "She is the gravitational center the story orbits — Farhad's labor, Khosrow's jealousy and the fatal lie all take their meaning from her worth",
+        "Because she ordered Farhad to cut the mountain",
+        "Because she secretly loved Farhad more than Khosrow",
+        "Because she invented the story herself"
+      ],
+      "answers_fa": [
+        "او مرکزِ گرانشی است که داستان به گردش می‌چرخد — رنجِ فرهاد، حسادتِ خسرو و دروغِ مرگبار همه معنای خود را از ارزشِ او می‌گیرند",
+        "چون او به فرهاد فرمان داد کوه را بشکافد",
+        "چون پنهانی فرهاد را بیش از خسرو دوست داشت",
+        "چون داستان را خودش ساخت"
+      ],
+      "answers_tg": [
+        "Ӯ маркази гаронишест ки достон ба гирдаш мечархад — ранҷи Фарҳод, ҳасодати Хусрав ва дурӯғи марговар ҳама маънои худро аз арзиши ӯ мегиранд",
+        "Зеро ӯ ба Фарҳод фармон дод кӯҳро бишкофад",
+        "Зеро пинҳонӣ Фарҳодро беш аз Хусрав дӯст дошт",
+        "Зеро достонро худаш сохт"
+      ],
+      "correct_answer": 0,
+      "explanation": "Farhad cuts, Khosrow lies, the messenger rides — and every action is priced in one currency: Shirin. A mountain is carved because of what she is worth; a lie is told because that worth cannot be shared. She acts in none of the scenes and causes all of them.",
+      "explanation_fa": "فرهاد می‌تراشد، خسرو دروغ می‌گوید — و بهای هر عمل به یک ارز است: شیرین. در هیچ صحنه‌ای عمل نمی‌کند و علتِ همه‌ی آن‌هاست.",
+      "explanation_tg": "Фарҳод метарошад, Хусрав дурӯғ мегӯяд — ва баҳои ҳар амал ба як арз аст: Ширин. Дар ҳеҷ саҳнае амал намекунад ва иллати ҳамаи онҳост.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "shrn-h8",
+      "chapter_slug": "shirin",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "Amid the chronicle of falling kings, what counter-model does Shirin offer?",
+      "question_fa": "در میانه‌ی تاریخِ شاهانِ در حالِ سقوط، شیرین چه الگوی متقابلی عرضه می‌کند؟",
+      "question_tg": "Дар миёнаи таърихи шоҳони дар ҳоли суқут, Ширин чӣ улгуи мутақобиле арза мекунад?",
+      "answers": [
+        "Withdrawal from politics into pure privacy",
+        "Integrity when power is gone — kings cling to thrones and lose everything; she gives up everything and keeps herself",
+        "The superiority of Christian over Zoroastrian ethics",
+        "Successful military resistance to usurpers"
+      ],
+      "answers_fa": [
+        "کناره‌گیری از سیاست به خلوتِ ناب",
+        "درستکاری وقتی قدرت رفته است — شاهان به تخت می‌چسبند و همه چیز را می‌بازند؛ او همه چیز را وامی‌گذارد و خود را نگه می‌دارد",
+        "برتریِ اخلاقِ مسیحی بر زرتشتی",
+        "مقاومتِ نظامیِ موفق در برابرِ غاصبان"
+      ],
+      "answers_tg": [
+        "Каноргирӣ аз сиёсат ба хилвати ноб",
+        "Дурусткорӣ вақте қудрат рафтааст — шоҳон ба тахт мечаспанд ва ҳама чизро мебозанд; ӯ ҳама чизро вомегузорад ва худро нигоҳ медорад",
+        "Бартарии ахлоқи масеҳӣ бар зардуштӣ",
+        "Муқовимати низомии муваффақ дар баробари ғосибон"
+      ],
+      "correct_answer": 1,
+      "explanation": "The dynasty's last kings trade everything — sons, fathers, honor — to keep power, and lose it anyway. Shirin reverses the trade: she surrenders wealth, safety and life, and keeps the one thing the others lost — herself. In the falling world, she is the only victory the chronicle records.",
+      "explanation_fa": "شاهانِ آخر همه چیز را برای قدرت می‌دهند و می‌بازند؛ شیرین همه چیز را وامی‌گذارد و خود را نگه می‌دارد — تنها پیروزیِ ثبت‌شده.",
+      "explanation_tg": "Шоҳони охир ҳама чизро барои қудрат медиҳанд ва мебозанд; Ширин ҳама чизро вомегузорад ва худро нигоҳ медорад — танҳо пирӯзии сабтшуда.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

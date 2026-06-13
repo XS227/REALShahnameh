@@ -1,143 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "alx-e1",
+      "id": "alex-e1",
       "chapter_slug": "alexander",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "What secret about Alexander's birth was revealed when Dara lay dying?",
-      "question_fa": "چه رازی درباره تولد اسکندر وقتی دارا در حال مرگ بود آشکار شد؟",
-      "question_tg": "Ҳангоми марги Доро чӣ рози зодани Искандар ошкор шуд?",
+      "question": "How does the Shahnameh give Alexander Iranian identity?",
+      "question_fa": "شاهنامه چگونه هویتِ ایرانی به اسکندر می‌دهد؟",
+      "question_tg": "Шоҳнома чӣ тавр ҳувияти эронӣ ба Искандар медиҳад?",
       "answers": [
-        "He was the half-brother of Dara — his mother was Darab's daughter sent away to Macedonia",
-        "He was the son of a Persian nobleman exiled by Dara's father",
-        "He had been adopted by Philip of Macedon but was fully Greek by blood",
-        "He was the son of Zahhak's last surviving descendant"
+        "By having him convert to Zoroastrianism",
+        "By marrying him to an Iranian princess",
+        "By making him the son of Darab and a Greek princess — half-Iranian by blood",
+        "By adopting him into the Kayanian royal family"
       ],
       "answers_fa": [
-        "او نیمه‌برادر دارا بود — مادرش دختر داراب بود که به مقدونیه فرستاده شده بود",
-        "او پسر یک نجیب‌زاده ایرانی بود که توسط پدر دارا تبعید شده بود",
-        "او توسط فیلیپ مقدونی به فرزندخواندگی پذیرفته شده بود اما از نظر خون کاملاً یونانی بود",
-        "او پسر آخرین بازمانده نسل ضحاک بود"
+        "با داشتنش که به زرتشتی‌گری تبدیل می‌شود",
+        "با ازدواجِ او با یک شاهزادهخانمِ ایرانی",
+        "با پسرِ داراب و یک شاهزادهخانمِ یونانی معرفی کردنش — از نظرِ خونی نیمه‌ایرانی",
+        "با پذیرفتنش در خانواده‌ی سلطنتیِ کیانی"
       ],
       "answers_tg": [
-        "Ӯ бародари нотании Доро буд — модараш духтари Дороб буд ки ба Мақдуния фиристода шуда буд",
-        "Ӯ писари ашрофзодаи Эроние буд ки аз ҷониби падари Доро табъид шуда буд",
-        "Ӯ аз ҷониби Филиппи Мақдунӣ фарзандхонда шуда буд аммо аз нигоҳи хун комилан Юнонӣ буд",
-        "Ӯ писари охирин бозмондаи насли Заҳҳок буд"
+        "Бо доштани ӯ ки ба зардуштия мубаддал мешавад",
+        "Бо издивоҷи ӯ бо шаҳзодахонуми эронӣ",
+        "Бо муаррифии ӯ ба унвони писари Дороб ва як шаҳзодахонуми юнонӣ — аз назари хунӣ нимэронӣ",
+        "Бо қабули ӯ дар оилаи шоҳии Каёнӣ"
       ],
-      "correct_answer": 0,
-      "explanation": "The Shahnameh carries the tradition that Alexander's mother was Darab's daughter, sent away because Darab found her breath disagreeable. Philip of Macedon married her, and Sekandar was born — making him Dara's half-brother, a fact neither knew until Dara lay dying.",
-      "explanation_fa": "شاهنامه این سنت را حمل می‌کند که مادر اسکندر دختر داراب بود که به خاطر نفس ناخوشایندش دور فرستاده شد. فیلیپ مقدونی با او ازدواج کرد و اسکندر متولد شد — که او را نیمه‌برادر دارا می‌کرد، واقعیتی که هیچ‌کدام نمی‌دانستند تا اینکه دارا در حال مرگ بود.",
-      "explanation_tg": "Шоҳнома ин анъанаро ҳамл мекунад ки модари Искандар духтари Дороб буд ки аз сабаби нафаси нохушояндаш дур фиристода шуд. Филиппи Мақдунӣ бо ӯ издивоҷ кард ва Искандар таваллуд шуд — ки ӯро бародари нотании Доро мекард, воқеияте ки ҳеҷ кадоме намедонист то марги Доро.",
+      "correct_answer": 2,
+      "explanation": "Ferdowsi makes Alexander the son of Darab and a Greek princess — sent home before Alexander's birth. This gives him Iranian lineage and makes him Dara's half-brother.",
+      "explanation_fa": "فردوسی اسکندر را پسرِ داراب و یک شاهزادهخانمِ یونانی می‌کند — قبل از تولدِ اسکندر به خانه فرستاده شده. این به او نسبِ ایرانی می‌دهد.",
+      "explanation_tg": "Фирдавсӣ Искандарро писари Дороб ва як шаҳзодахонуми юнонӣ мекунад — пеш аз таваллуди Искандар ба хона фиристода шудааст.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "alx-m1",
+      "id": "alex-e2",
       "chapter_slug": "alexander",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "What happened when Alexander's cook went ahead into the Land of Darkness to prepare food?",
-      "question_fa": "وقتی آشپز اسکندر برای آماده کردن غذا به سرزمین ظلمات پیش رفت چه اتفاقی افتاد؟",
-      "question_tg": "Вақте ошпази Искандар барои омода кардани хӯрок ба Замини Торикӣ пеш рафт чӣ рӯй дод?",
-      "answers": [
-        "He accidentally drank from the spring of immortality when a dried fish came back to life in his hands",
-        "He was turned to stone by a guardian spirit guarding the water",
-        "He found the water but was forbidden from bringing it back by a divine voice",
-        "He drank the water knowingly and fled, hiding from Alexander for the rest of his life"
-      ],
-      "answers_fa": [
-        "به طور تصادفی از چشمه جاودانگی نوشید وقتی یک ماهی خشک‌شده در دستانش زنده شد",
-        "توسط روح نگهبان آب به سنگ تبدیل شد",
-        "آب را پیدا کرد اما توسط صدایی الهی از بردنش منع شد",
-        "آگاهانه آب را نوشید و فرار کرد، برای بقیه عمرش از اسکندر پنهان شد"
-      ],
-      "answers_tg": [
-        "Тасодуфан аз чашмаи ҷовидонагӣ нӯшид вақте моҳии хушкшуда дар дастонаш зинда шуд",
-        "Аз ҷониби рӯҳи посбони об ба санг табдил шуд",
-        "Обро ёфт аммо аз ҷониби садои илоҳӣ аз бурданаш манъ шуд",
-        "Огоҳона обро нӯшид ва фирор кард, дар тӯли бақияи умр аз Искандар пинҳон шуд"
-      ],
-      "correct_answer": 0,
-      "explanation": "In the Shahnameh's account, Alexander sent his cook ahead with food supplies. A dried fish fell into one of the springs and came back to life — the cook, realizing what had happened, drank from it. Alexander came close to immortality but never reached the spring himself.",
-      "explanation_fa": "در روایت شاهنامه، اسکندر آشپزش را با آذوقه جلو فرستاد. یک ماهی خشک‌شده در یکی از چشمه‌ها افتاد و زنده شد — آشپز با درک اینکه چه اتفاقی افتاده از آن نوشید. اسکندر نزدیک به جاودانگی آمد اما هرگز خودش به چشمه نرسید.",
-      "explanation_tg": "Дар ривояти шоҳнома, Искандар ошпазашро бо захираи хӯрок пеш фиристод. Моҳии хушкшуда ба яке аз чашмаҳо афтод ва зинда шуд — ошпаз бо дарки он чи рӯй дода нӯшид. Искандар наздик ба ҷовидонагӣ омад аммо ҳаргиз худаш ба чашма нарасид.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "alx-m2",
-      "chapter_slug": "alexander",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "Why is Alexander called 'Two-Horned' (Dhul-Qarnayn) in the Shahnameh?",
-      "question_fa": "چرا اسکندر در شاهنامه 'ذوالقرنین' (دو شاخ) نامیده می‌شود؟",
-      "question_tg": "Чаро Искандар дар шоҳнома 'Дузарна' номида мешавад?",
-      "answers": [
-        "The Shahnameh does not settle on one reason — it could mean he ruled East and West, a helmet, or a divine mark",
-        "Because he wore a helmet with two golden horns as his battle standard",
-        "Because he was born under a twin-horned moon that the Persian astrologers took as a sign",
-        "Because he conquered both Iran and Turan, the two horned lands of the world"
-      ],
-      "answers_fa": [
-        "شاهنامه یک دلیل مشخص نمی‌دهد — می‌تواند به معنای حکومت بر شرق و غرب، یک کلاه‌خود، یا نشانه الهی باشد",
-        "چون در نبرد کلاه‌خودی با دو شاخ طلایی به عنوان پرچمش می‌پوشید",
-        "چون زیر ماه دو شاخه‌ای متولد شد که منجمان ایرانی آن را نشانه‌ای گرفتند",
-        "چون هم ایران و هم توران، دو سرزمین شاخ‌دار جهان را فتح کرد"
-      ],
-      "answers_tg": [
-        "Шоҳнома як далили мушаххас намедиҳад — метавонад ба маънои ҳукмронӣ бар Шарқ ва Ғарб, кулоҳхуд, ё нишонаи илоҳӣ бошад",
-        "Зеро дар набард кулоҳхӯде бо ду шохи тиллоӣ ҳамчун байрақаш мепӯшид",
-        "Зеро зери моҳи дошохае таваллуд шуд ки ситорашиносони Эронӣ онро нишонае гирифтанд",
-        "Зеро ҳам Эрон ва ҳам Туронро, ду сарзамини шохдори ҷаҳон, фатҳ кард"
-      ],
-      "correct_answer": 0,
-      "explanation": "Ferdowsi deliberately leaves the epithet ambiguous. The Shahnameh does not choose between the explanations — ruling East and West, a distinctive helmet, or divine marking. The ambiguity is the point. Ferdowsi was not interested in resolving it.",
-      "explanation_fa": "فردوسی عمداً لقب را مبهم می‌گذارد. شاهنامه بین توضیحات انتخاب نمی‌کند — حکومت بر شرق و غرب، کلاه‌خود متمایز، یا نشانه‌گذاری الهی. ابهام همان نکته است. فردوسی علاقه‌ای به حل آن نداشت.",
-      "explanation_tg": "Фирдавсӣ қасдан лақабро муғлақ мегузорад. Шоҳнома байни тавзеҳот интихоб намекунад — ҳукмронӣ бар Шарқ ва Ғарб, кулоҳхӯди мумтоз, ё нишонагузории илоҳӣ. Абҳомият ҳамон нуқта аст. Фирдавсӣ ба ҳалли он таваҷҷӯҳ надошт.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "alx-e2",
-      "chapter_slug": "alexander",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "What did Alexander request for his own burial?",
-      "question_fa": "اسکندر چه درخواستی برای دفن خودش داشت؟",
-      "question_tg": "Искандар барои дафни худаш чӣ хоҳиш кард?",
+      "question": "What symbolic act did Alexander request regarding his burial?",
+      "question_fa": "اسکندر درباره‌ی دفنش چه عملِ نمادینی درخواست کرد؟",
+      "question_tg": "Искандар дар бораи дафни худ кадом амали рамзиеро дархост кард?",
       "answers": [
-        "To be carried to his tomb with his hands outside the shroud, open and empty",
-        "To be buried standing upright, wearing his full battle armour",
-        "To be laid beside Dara's grave as a sign of their brotherhood",
-        "To be cremated and his ashes scattered over the lands he had conquered"
+        "His hands to be left open outside his shroud, showing he holds nothing",
+        "His horse to be sacrificed at his tomb",
+        "His sword to be buried with him, showing he remains a warrior",
+        "His treasury to be distributed to the poor"
       ],
       "answers_fa": [
-        "با دستانش بیرون از کفن، باز و خالی به مقبره‌اش برده شود",
-        "ایستاده و با زره کامل جنگیش دفن شود",
-        "کنار مزار دارا به عنوان نشانه برادری‌شان دفن شود",
-        "سوزانده و خاکسترش بر سرزمین‌هایی که فتح کرده پاشیده شود"
+        "دست‌هایش بیرون از کفنش رها شوند، که نشان می‌دهد هیچ ندارد",
+        "اسبش در آرامگاهش قربانی شود",
+        "شمشیرش با او دفن شود، که نشان می‌دهد جنگجو می‌ماند",
+        "خزانه‌اش بینِ فقرا تقسیم شود"
       ],
       "answers_tg": [
-        "Бо дастонаш берун аз кафан, кушода ва холӣ ба мақбарааш бурда шавад",
-        "Истода ва бо зиреҳи комили ҷангаш дафн шавад",
-        "Дар паҳлӯи мазори Доро ҳамчун нишонаи бародарии онҳо дафн шавад",
-        "Сӯзонда ва хокистараш бар сарзаминҳое ки фатҳ карда пошида шавад"
+        "Дастонаш берун аз кафани ӯ раҳо шаванд, ки нишон медиҳад ҳеч надорад",
+        "Аспаш дар оромгоҳаш қурбон шавад",
+        "Шамшераш бо ӯ дафн шавад, ки нишон медиҳад ҷангҷӯ мемонад",
+        "Хазинааш байни фақирон тақсим шавад"
       ],
       "correct_answer": 0,
-      "explanation": "Alexander asked to be carried to his tomb with his hands outside the shroud, open and empty. He had conquered the world and was taking nothing out of it. The image of the conqueror's empty open hands became one of the Shahnameh's most lasting symbols of mortality.",
-      "explanation_fa": "اسکندر خواست با دستانش بیرون از کفن، باز و خالی به مقبره‌اش برده شود. دنیا را فتح کرده بود و هیچ‌چیز از آن نمی‌برد. تصویر دستان باز خالی فاتح یکی از ماندگارترین نمادهای مرگ در شاهنامه شد.",
-      "explanation_tg": "Искандар хост бо дастонаш берун аз кафан, кушода ва холӣ ба мақбарааш бурда шавад. Ҷаҳонро фатҳ карда буд ва ҳеҷ чиз аз он намебурд. Тасвири дастони кушодаи холии фотеҳ яке аз мондагортарин рамзҳои марг дар шоҳнома шуд.",
+      "explanation": "Alexander asked to be buried with his hands open and extended outside his shroud — showing the world that he who owned everything holds nothing. Ferdowsi's most quoted image.",
+      "explanation_fa": "اسکندر خواست با دست‌های باز و بیرون از کفنش دفن شود — به دنیا نشان می‌دهد آنکه همه چیز داشت هیچ ندارد.",
+      "explanation_tg": "Искандар хост бо дастони боз ва берун аз кафани ӯ дафн шавад — ба дунё нишон медиҳад онки ҳама чиз дошт ҳеч надорад.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "alex-e3",
+      "chapter_slug": "alexander",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "What did Alexander search for at the edge of the world?",
+      "question_fa": "اسکندر در لبه‌ی دنیا دنبالِ چه بود؟",
+      "question_tg": "Искандар дар лаби дунё дунболи чӣ буд?",
+      "answers": [
+        "The source of the Oxus river",
+        "A passage to the underworld",
+        "The lost city of Shambhala",
+        "The Water of Life"
+      ],
+      "answers_fa": [
+        "سرچشمه‌ی رودخانه‌ی آمودریا",
+        "گذری به دنیای زیرین",
+        "شهرِ گمشده‌ی شامبالا",
+        "آبِ حیات"
+      ],
+      "answers_tg": [
+        "Сарчашмаи дарёи Ому",
+        "Гузаре ба ҷаҳони зерин",
+        "Шаҳри гумшудаи Шамбала",
+        "Оби ҳаёт"
+      ],
+      "correct_answer": 3,
+      "explanation": "Alexander reaches the edge of the world and searches for the Water of Life. He does not find it. This quest is the Shahnameh's statement about the limits of worldly power.",
+      "explanation_fa": "اسکندر به لبه‌ی دنیا می‌رسد و آبِ حیات را می‌جوید. پیدا نمی‌کند. این جست‌وجو بیانیه‌ی شاهنامه درباره‌ی محدودیت‌های قدرتِ دنیوی است.",
+      "explanation_tg": "Искандар ба лаби дунё мерасад ва Оби ҳаётро меҷӯяд. Пайдо намекунад. Ин ҷустуҷӯ баёнияи Шоҳнома дар бораи маҳдудиятҳои қудрати дунявист.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "alex-m1",
+      "chapter_slug": "alexander",
+      "quiz_part": 1,
+      "difficulty": "medium",
+      "question": "The Shahnameh says Alexander 'weeps' at Dara's death. What distinguishes this from simple sentiment?",
+      "question_fa": "شاهنامه می‌گوید اسکندر با مرگِ دارا «می‌گرید.» چه چیزی این را از احساسِ ساده متمایز می‌کند؟",
+      "question_tg": "Шоҳнома мегӯяд Искандар бо марги Доро «мегирйад.» Чӣ чиз инро аз ҳисси одди тафовут медиҳад?",
+      "answers": [
+        "It proves he understood the value of what he destroyed — grief for an enemy is the hardest kind of grief",
+        "It is a literary convention — all conquerors weep in epic poetry",
+        "It is merely diplomatic — Alexander wept to impress the Persians",
+        "It shows Alexander's military defeat of Dara was unjust"
+      ],
+      "answers_fa": [
+        "ثابت می‌کند که ارزشِ آنچه نابود کرده را درک کرده — اندوه برای دشمن سخت‌ترین نوعِ اندوه است",
+        "یک قراردادِ ادبی است — همه‌ی فاتحان در شعرِ حماسی می‌گریند",
+        "صرفاً دیپلماتیک است — اسکندر برای تحت‌تأثیر قرار دادنِ ایرانیان گریست",
+        "نشان می‌دهد شکستِ نظامیِ اسکندر از دارا ناعادلانه بود"
+      ],
+      "answers_tg": [
+        "Исбот мекунад ки арзиши он чи нобуд кардааст ро фаҳмидааст — андӯҳ барои душман сахттарин навъи андӯҳ аст",
+        "Созишномаи адабист — ҳамаи фотеҳон дар шеъри ҳамосӣ мегирянд",
+        "Танҳо дипломатик аст — Искандар барои таъсир гузоштан ба эрониён гирист",
+        "Нишон медиҳад шикасти низомии Искандар аз Доро ноадилона буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "A conqueror who grieves for his fallen enemy proves he understood what he was destroying. This is what separates Alexander from villains in the Shahnameh — he knew the value of what he took, which means he was not merely a destroyer.",
+      "explanation_fa": "فاتحی که برای دشمنِ سرنگون‌شده‌اش اندوه می‌خورد ثابت می‌کند که آنچه را که نابود می‌کرده درک کرده است.",
+      "explanation_tg": "Фотеҳе ки барои душмани сарнагуншудааш андӯҳ мехӯрад исбот мекунад ки он чиро нобуд мекардааст фаҳмидааст.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "alex-m2",
+      "chapter_slug": "alexander",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "Alexander is buried with hands open. What is the Shahnameh's philosophical statement in this image?",
+      "question_fa": "اسکندر با دست‌های باز دفن می‌شود. بیانیه‌ی فلسفیِ شاهنامه در این تصویر چیست؟",
+      "question_tg": "Искандар бо дастони боз дафн мешавад. Баёнияи фалсафии Шоҳнома дар ин тасвир чист?",
+      "answers": [
+        "The image shows Alexander is reaching toward heaven after death",
+        "Alexander wants people to see how much he gave to others during his life",
+        "It is a traditional Zoroastrian burial practice, not a philosophical statement",
+        "Even the greatest conqueror leaves the world with nothing — worldly power is temporary and possession is illusion"
+      ],
+      "answers_fa": [
+        "تصویر نشان می‌دهد اسکندر پس از مرگ به سمتِ بهشت دراز می‌کشد",
+        "اسکندر می‌خواهد مردم ببینند در طولِ زندگی‌اش چقدر به دیگران داد",
+        "یک رسمِ دفنِ سنتیِ زرتشتی است نه بیانیه‌ی فلسفی",
+        "حتی بزرگ‌ترین فاتح دنیا را با هیچ ترک می‌کند — قدرتِ دنیوی موقتی است و تملک توهم است"
+      ],
+      "answers_tg": [
+        "Тасвир нишон медиҳад Искандар пас аз марг ба самти биҳишт дароз мекашад",
+        "Искандар мехоҳад мардум бубинанд дар тӯли зиндагии худ чӣ қадар ба дигарон дод",
+        "Расми дафни анъанавии зардуштист на баёнияи фалсафӣ",
+        "Ҳатто бузургтарин фотеҳ дунёро бо ҳеч тарк мекунад — қудрати дунявӣ муваққат аст ва тасаррут хаёл аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "Open hands at burial is Ferdowsi's most precise image: he who owned the world holds nothing at the end. It is the Shahnameh's argument against the value of accumulation — what you gather you will leave, so what you do matters more than what you have.",
+      "explanation_fa": "دست‌های باز در دفن دقیق‌ترین تصویرِ فردوسی است: آنکه دنیا را داشت در پایان هیچ ندارد.",
+      "explanation_tg": "Дастони боз дар дафн дақиқтарин тасвири Фирдавсист: онки дунёро дошт дар поён ҳеч надорад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "alex-m3",
+      "chapter_slug": "alexander",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "The Shahnameh calls Alexander 'the last foreign figure the chronicle absorbs into its Iranian world.' What does this absorption require?",
+      "question_fa": "شاهنامه اسکندر را «آخرین شخصیتِ خارجی‌ای که شاهنامه در دنیای ایرانی‌اش جذب می‌کند» می‌نامد. این جذب چه چیزی می‌طلبد؟",
+      "question_tg": "Шоҳнома Искандарро «охирин персонажи хориҷие ки Шоҳнома дар дунёи эронии худ ҷаббида мекунад» меномад. Ин ҷаббидан чиро металабад?",
+      "answers": [
+        "Marrying an Iranian queen and converting to Zoroastrianism",
+        "Military defeat of all Iranian enemies before being accepted",
+        "Simply having Iranian blood is sufficient",
+        "Iranian blood (provided by Darab genealogy) AND governance that shows understanding of what he destroyed"
+      ],
+      "answers_fa": [
+        "ازدواج با یک ملکه‌ی ایرانی و تبدیل به زرتشتی‌گری",
+        "شکستِ نظامیِ همه‌ی دشمنانِ ایرانی قبل از پذیرفته شدن",
+        "داشتنِ خونِ ایرانی به تنهایی کافی است",
+        "خونِ ایرانی (فراهم‌شده توسطِ نسبِ داراب) و حکمرانی که نشان می‌دهد آنچه را نابود کرده درک می‌کند"
+      ],
+      "answers_tg": [
+        "Издивоҷ бо маликаи эронӣ ва мубаддал шудан ба зардуштия",
+        "Шикасти низомии ҳамаи душманони эронӣ пеш аз қабул шудан",
+        "Танҳо доштани хуни эронӣ кофист",
+        "Хуни эронӣ (таъминшуда аз ҷониби насаби Дороб) ВА ҳукуматдорие ки нишон медиҳад он чиро нобуд кардааст фаҳмида"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's absorption requires two things: the narrative fiction of Iranian blood (Darab's son), plus the emotional proof of humanity (weeping over Dara). Either alone is insufficient.",
+      "explanation_fa": "جذبِ شاهنامه دو چیز می‌طلبد: داستانِ خونِ ایرانی (پسرِ داراب)، بعلاوه‌ی اثباتِ احساساتیِ انسانیت (گریه بر دارا).",
+      "explanation_tg": "Ҷаббидани Шоҳнома ду чизро металабад: достони хуни эронӣ (писари Дороб), бо иловаи исботи эҳсосотии инсоният (гирйа бар Доро).",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "alex-m4",
+      "chapter_slug": "alexander",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "Alexander reaches the edge of the world and does not find the Water of Life. What does this failed quest represent in the Shahnameh?",
+      "question_fa": "اسکندر به لبه‌ی دنیا می‌رسد و آبِ حیات را پیدا نمی‌کند. این جست‌وجوی ناموفق در شاهنامه چه چیزی را نشان می‌دهد؟",
+      "question_tg": "Искандар ба лаби дунё мерасад ва Оби ҳаётро пайдо намекунад. Ин ҷустуҷӯи ноком дар Шоҳнома чиро нишон медиҳад?",
+      "answers": [
+        "It represents the boundary between the human world and the divine",
+        "The quest is metaphorical — Alexander was looking for meaning, not literal water",
+        "The limits of worldly power — even the greatest conqueror cannot transcend mortality",
+        "It shows Alexander's ambition went too far — a divine punishment for hubris"
+      ],
+      "answers_fa": [
+        "مرزِ بینِ دنیایِ انسانی و الهی را نشان می‌دهد",
+        "جست‌وجو استعاری است — اسکندر دنبالِ معنا بود نه آبِ تحت‌اللفظی",
+        "محدودیت‌های قدرتِ دنیوی — حتی بزرگ‌ترین فاتح نمی‌تواند بر مرگ‌پذیری فائق آید",
+        "نشان می‌دهد جاه‌طلبیِ اسکندر خیلی پیش رفت — مجازاتِ الهی برای غرور"
+      ],
+      "answers_tg": [
+        "Марзи байни ҷаҳони инсонӣ ва илоҳиро нишон медиҳад",
+        "Ҷустуҷӯ истиоравист — Искандар дунболи маъно буд на оби тахтуллафзӣ",
+        "Маҳдудиятҳои қудрати дунявӣ — ҳатто бузургтарин фотеҳ наметавонад бар мирандагӣ фоиқ ояд",
+        "Нишон медиҳад баландпарвозии Искандар хеле пеш рафт — ҷазои илоҳӣ барои такаббур"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Water of Life quest is the Shahnameh's cleanest statement about the limit of power: Alexander conquered the world and could not buy immortality. The boundary between what power can achieve and what it cannot is the boundary of mortality.",
+      "explanation_fa": "جست‌وجوی آبِ حیات بیان‌ترین بیانیه‌ی شاهنامه درباره‌ی محدودیتِ قدرت است: اسکندر دنیا را فتح کرد و نتوانست جاودانگی بخرد.",
+      "explanation_tg": "Ҷустуҷӯи Оби ҳаёт тозатарин баёнияи Шоҳнома дар бораи маҳдудияти қудрат аст: Искандар дунёро фатҳ кард ва наметавонист ҷовидонагӣ бхарад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "alex-m5",
+      "chapter_slug": "alexander",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "After Alexander, the Shahnameh's kings are all Sasanian — internal conflicts, no more foreign figures absorbed. What does this structural choice say about the Iranian tradition?",
+      "question_fa": "پس از اسکندر، شاهانِ شاهنامه همه ساسانی هستند — تعارضاتِ داخلی، دیگر هیچ شخصیتِ خارجی جذب نمی‌شود. این انتخابِ ساختاری درباره‌ی سنتِ ایرانی چه می‌گوید؟",
+      "question_tg": "Пас аз Искандар, шоҳони Шоҳнома ҳама Сосониянд — тазодҳои дохилӣ, дигар ҳеч персонажи хориҷие ҷаббида намешавад. Ин интихоби сохторӣ дар бораи суннати эронӣ чӣ мегӯяд?",
+      "answers": [
+        "Ferdowsi ran out of foreign heroes to include",
+        "Alexander was the last conqueror because he conquered everything",
+        "The tradition closed itself — after Alexander was absorbed, the narrative became internally focused, the world-conquering phase was over",
+        "The Sasanian kings expelled all foreigners and kept the tradition pure"
+      ],
+      "answers_fa": [
+        "فردوسی قهرمانانِ خارجی‌ای که بگنجاند تمام کرد",
+        "اسکندر آخرین فاتح بود چون همه چیز را فتح کرد",
+        "سنت خودش را بست — پس از جذبِ اسکندر، روایت بر خودش متمرکز شد، مرحله‌ی دنیافتح‌کنی تمام شد",
+        "شاهانِ ساسانی همه‌ی خارجیان را اخراج کردند و سنت را خالص نگه داشتند"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ қаҳрамонони хориҷие ки ворид кунад тамом кард",
+        "Искандар охирин фотеҳ буд зеро ҳама чизро фатҳ кард",
+        "Суннат худашро баст — пас аз ҷаббидани Искандар, ривоят бар худаш мутамарказ шуд, марҳалаи дунёфатҳкунӣ тамом шуд",
+        "Шоҳони Сосонӣ ҳамаи хориҷиёнро бероn карданд ва суннатро холис нигоҳ доштанд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Alexander marks the end of the world-conquering phase of the Shahnameh's history. After him, the narrative turns inward: Sasanian kings, internal court politics, and the long deterioration that ends with the Arab conquest.",
+      "explanation_fa": "اسکندر پایانِ مرحله‌ی دنیافتح‌کنیِ تاریخِ شاهنامه را نشان می‌دهد. پس از او روایت به سمتِ درون می‌چرخد.",
+      "explanation_tg": "Искандар поёни марҳалаи дунёфатҳкунии таърихи Шоҳномаро нишон медиҳад. Пас аз ӯ ривоят ба самти дарун мечархад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "alex-h1",
+      "chapter_slug": "alexander",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "Alexander is described as both a philosopher and a conqueror in the Shahnameh. What is the significance of combining these two roles?",
+      "question_fa": "اسکندر در شاهنامه هم به عنوانِ فیلسوف و هم فاتح توصیف می‌شود. اهمیتِ ترکیبِ این دو نقش چیست؟",
+      "question_tg": "Искандар дар Шоҳнома ҳам ба унвони файласуф ва ҳам фотеҳ тавсиф мешавад. Аҳамияти омезиши ин ду нақш чист?",
+      "answers": [
+        "It means he conquered knowing the value of what he took — a philosopher-conqueror is more responsible for what he destroys than an ignorant one",
+        "Combining both roles makes him the greatest figure in the chronicle",
+        "Philosophy makes conquest more efficient — strategic thinking enhances military power",
+        "The combination is impossible — Ferdowsi presents them as contradictory traits"
+      ],
+      "answers_fa": [
+        "یعنی با دانستنِ ارزشِ آنچه گرفت فتح کرد — فاتحِ فیلسوف بیشتر از یک فاتحِ جاهل مسئولِ آنچه نابود می‌کند است",
+        "ترکیبِ هر دو نقش او را بزرگ‌ترین شخصیتِ شاهنامه می‌کند",
+        "فلسفه فتح را کارآمدتر می‌کند — تفکرِ استراتژیک قدرتِ نظامی را تقویت می‌کند",
+        "ترکیب غیرممکن است — فردوسی آنها را به عنوانِ ویژگی‌های متناقض ارائه می‌دهد"
+      ],
+      "answers_tg": [
+        "Яъне бо донистани арзиши он чи гирифт фатҳ кард — фотеҳи файласуф аз фотеҳи ҷоҳил бештар масъули он чи нобуд мекунад аст",
+        "Омезиши ҳарду нақш ӯро бузургтарин персонажи Шоҳнома мекунад",
+        "Фалсафа фатҳро самараноктар мекунад — тафаккури стратегик қудрати низомиро мустаҳкам мекунад",
+        "Омезиш ғайримумкин аст — Фирдавсӣ онҳоро ба унвони сифатҳои зиддӣ пешкаш мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "A philosopher-conqueror is held to higher responsibility than a mere conqueror because he knows the value of what he destroys. Alexander's grief over Dara is the proof that he was the philosopher as well as the conqueror — he understood what he was doing, which makes him both greater and more culpable.",
+      "explanation_fa": "فاتحِ فیلسوف به مسئولیتِ بالاتری از یک فاتحِ صِرف نگه داشته می‌شود چون ارزشِ آنچه نابود می‌کند را می‌داند.",
+      "explanation_tg": "Фотеҳи файласуф ба масъулияти баландтаре аз фотеҳи муҷаррад нигоҳ дошта мешавад зеро ارзиши он чи нобуд мекунад ро медонад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "alex-h2",
+      "chapter_slug": "alexander",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The Shahnameh positions Alexander's chapter between the Achaemenid collapse (Dara) and the Arsacid fragmentation. What does his role as a transitional figure accomplish?",
+      "question_fa": "شاهنامه فصلِ اسکندر را بینِ فروپاشیِ هخامنشی (دارا) و پراکندگیِ اشکانی قرار می‌دهد. نقشش به عنوانِ شخصیتِ انتقالی چه چیزی انجام می‌دهد؟",
+      "question_tg": "Шоҳнома фасли Искандарро байни фурӯпошии Ҳахоманишӣ (Доро) ва пароканда шудани Ашконӣ ҷой медиҳад. Нақши ӯ ба унвони персонажи гузорӣ чиро анҷом медиҳад?",
+      "answers": [
+        "He establishes that foreign rule is always inferior to Iranian rule",
+        "He bridges the collapse — rather than a gap between great eras, his chapter fills the transition with a figure who earns inclusion through blood and humanity",
+        "He shows the Arsacid era was superior to both Achaemenid and Sasanian",
+        "His chapter is purely historical filler between more important periods"
+      ],
+      "answers_fa": [
+        "ثابت می‌کند که حکومتِ خارجی همیشه از حکومتِ ایرانی پایین‌تر است",
+        "فروپاشی را پل می‌زند — به جای شکافِ بینِ عصرهای بزرگ، فصلش گذار را با شخصیتی پر می‌کند که از طریقِ خون و انسانیت حضورش را کسب می‌کند",
+        "نشان می‌دهد عصرِ اشکانی از هر دوی هخامنشی و ساسانی برتر بود",
+        "فصلش صرفاً محتوای تاریخیِ پُرکننده بینِ دوره‌های مهم‌تر است"
+      ],
+      "answers_tg": [
+        "Исбот мекунад ки ҳукумати хориҷӣ ҳамеша аз ҳукумати эронӣ пасттар аст",
+        "Фурӯпоширо пул мезанад — ба ҷои шикофи байни асрҳои бузург, фасли ӯ гузорро бо персонаже пур мекунад ки тавассути хун ва инсоният ҳузурашро касб мекунад",
+        "Нишон медиҳад асри Ашконӣ аз ҳарду Ҳахоманишӣ ва Сосонӣ бартар буд",
+        "Фасли ӯ танҳо мӯҳтавои таърихии пуркунанда байни давраҳои муҳимтар аст"
+      ],
+      "correct_answer": 1,
+      "explanation": "Without Alexander, the Shahnameh would have an unexplained gap between the Achaemenid collapse and the Sasanian rise. His chapter fills that gap with a figure who is legible in the Iranian tradition — not a foreign invader but a half-Iranian king completing a cycle.",
+      "explanation_fa": "بدون اسکندر، شاهنامه یک شکافِ توضیح‌ناپذیر بینِ فروپاشیِ هخامنشی و برخاستنِ ساسانی می‌داشت.",
+      "explanation_tg": "Бидуни Искандар, Шоҳнома шикофи тавзеҳнопазире байни фурӯпошии Ҳахоманишӣ ва баромади Сосонӣ медошт.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "alex-h3",
+      "chapter_slug": "alexander",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Ferdowsi gives Alexander Iranian blood through Darab. This is historically false. Why does the Shahnameh make this choice, and what does it accomplish?",
+      "question_fa": "فردوسی از طریقِ داراب به اسکندر خونِ ایرانی می‌دهد. این از نظرِ تاریخی نادرست است. شاهنامه چرا این انتخاب را می‌کند و چه چیزی انجام می‌دهد؟",
+      "question_tg": "Фирдавсӣ тавассути Дороб ба Искандар хуни эронӣ медиҳад. Ин аз назари таърихӣ нодурустоа. Шоҳнома чаро ин интихобро мекунад ва чиро анҷом медиҳад?",
+      "answers": [
+        "It transforms Alexander from a foreign conqueror who ended Iranian civilization into a king who restored what was his by blood — making the conquest comprehensible within the Iranian framework",
+        "Ferdowsi believed it was historically true based on his sources",
+        "It makes Alexander more interesting as a narrative character",
+        "It is a political choice to please Alexander's historical admirers"
+      ],
+      "answers_fa": [
+        "اسکندر را از فاتحِ خارجی‌ای که تمدنِ ایرانی را پایان داد به شاهی تبدیل می‌کند که آنچه را که از نظرِ خونی مالش بود بازگرداند — فتح را در چارچوبِ ایرانی قابلِ فهم می‌کند",
+        "فردوسی بر اساسِ منابعش آن را از نظرِ تاریخی درست می‌دانست",
+        "اسکندر را به عنوانِ شخصیتِ روایی جالب‌تر می‌کند",
+        "انتخابِ سیاسی برای راضی کردنِ طرفدارانِ تاریخیِ اسکندر است"
+      ],
+      "answers_tg": [
+        "Искандарро аз фотеҳи хориҷие ки тамаддуни эрониро поён дод ба шоҳе табдил мекунад ки он чиро аз назари хунӣ мали ӯ буд барқарор кард — фатҳро дар чорчӯби эронӣ қобили фаҳм мекунад",
+        "Фирдавсӣ дар асоси манобеаш онро аз назари таърихӣ дуруст мешуморид",
+        "Искандарро ба унвони персонажи ривоии ҷолибтар мекунад",
+        "Интихоби сиёсӣ барои розӣ кардани тарафдорони таърихии Искандар аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "The genealogical fiction is an interpretive solution to a narrative problem: how do you include the man who ended Achaemenid Iran in a chronicle celebrating Iranian civilization? You make him Iranian. The solution allows the chronicle to acknowledge Alexander's greatness without treating the conquest as simply a defeat.",
+      "explanation_fa": "داستانِ نسبِ اسطوره‌ای راه‌حلِ تفسیریِ مشکلِ روایی است: چگونه مردی که ایرانِ هخامنشی را پایان داد را در شاهنامه‌ای که تمدنِ ایرانی را جشن می‌گیرد بگنجانی؟ ایرانی‌اش می‌کنی.",
+      "explanation_tg": "Достони насаби асотирӣ роҳҳалли тафсирии мушкили ривоист: чӣ тавр мардеро ки Эрони Ҳахоманиширо поён дод дар Шоҳномае ки тамаддуни эрониро ҷашн мегирад ворид кунӣ? Эрониаш мекунӣ.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "alex-h4",
+      "chapter_slug": "alexander",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The Shahnameh says legitimacy comes from 'lineage vs. power.' Dara had lineage but lost power. Alexander had power but claimed lineage. What is the Shahnameh's verdict?",
+      "question_fa": "شاهنامه می‌گوید مشروعیت از «نسب در مقابلِ قدرت» می‌آید. دارا نسب داشت اما قدرت را از دست داد. اسکندر قدرت داشت اما ادعایِ نسب کرد. حکمِ شاهنامه چیست؟",
+      "question_tg": "Шоҳнома мегӯяд машруият аз «насаб дар баробари қудрат» меояд. Доро насаб дошт аммо қудратро аз даст дод. Искандар қудрат дошт аммо иддаъои насаб кард. Ҳукми Шоҳнома чист?",
+      "answers": [
+        "The Shahnameh refuses to decide — it presents both without verdict",
+        "Power is what matters — Alexander's victory proves he was the legitimate king",
+        "Neither alone is sufficient — Dara's lineage without power failed; Alexander needed the fiction of lineage to supplement his power; both components are required",
+        "Lineage is what matters — Dara's defeat was tragic because his legitimate claim could not overcome military force"
+      ],
+      "answers_fa": [
+        "شاهنامه از تصمیم‌گیری امتناع می‌کند — هر دو را بدون حکم ارائه می‌دهد",
+        "قدرت چیزی است که اهمیت دارد — پیروزیِ اسکندر ثابت می‌کند که شاهِ مشروع بود",
+        "هیچکدام به تنهایی کافی نیست — نسبِ دارا بدون قدرت شکست خورد؛ اسکندر به داستانِ نسب نیاز داشت تا قدرتش را تکمیل کند؛ هر دو جزء لازم هستند",
+        "نسب چیزی است که اهمیت دارد — شکستِ دارا تراژیک بود چون ادعایِ مشروعش نمی‌توانست بر نیروی نظامی غلبه کند"
+      ],
+      "answers_tg": [
+        "Шоҳнома аз қарор гирифтан имтиноъ мекунад — ҳарду ро бе ҳукм пешкаш мекунад",
+        "Қудрат чизест ки аҳамият дорад — ғалабаи Искандар исбот мекунад ки шоҳи машруъ буд",
+        "Ҳеч кадоме ба танҳоӣ кофӣ нест — насаби Доро бидуни қудрат шикаст хӯрд؛ Искандар ба достони насаб ниёз дошт то қудратро такмил кунад؛ ҳарду ҷузъ лозиманд",
+        "Насаб чизест ки аҳамият дорад — шикасти Доро фоҷиавӣ буд зеро иддаъои машруи ӯ наметавонист бар нирӯи низомӣ чира шавад"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh's Alexander chapter is its fullest exploration of what makes a ruler legitimate. Dara had lineage but lost power — lineage alone is insufficient. Alexander had power but needed the genealogical fiction to be legitimate — power alone is insufficient. Both are required. This is the Shahnameh's verdict.",
+      "explanation_fa": "فصلِ اسکندرِ شاهنامه کامل‌ترین کاوشِ آن است درباره‌ی اینکه چه چیزی یک حاکم را مشروع می‌کند.",
+      "explanation_tg": "Фасли Искандари Шоҳнома комилтарин ковиши он аст дар бораи ин ки чӣ чиз ҳокимро машруъ мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "alex-h5",
+      "chapter_slug": "alexander",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Alexander searches for the Water of Life and fails. The Shahnameh places this at the edge of the world. What does 'the edge of the world' represent in its symbolic geography?",
+      "question_fa": "اسکندر آبِ حیات را می‌جوید و شکست می‌خورد. شاهنامه این را در لبه‌ی دنیا قرار می‌دهد. «لبه‌ی دنیا» در جغرافیایِ نمادینِ آن چه چیزی را نشان می‌دهد؟",
+      "question_tg": "Искандар Оби ҳаётро меҷӯяд ва шикаст мехӯрад. Шоҳнома инро дар лаби дунё ҷой медиҳад. «Лаби дунё» дар ҷуғрофиёи рамзии он чиро нишон медиҳад?",
+      "answers": [
+        "The eastern frontier of the Iranian world, beyond which lies only chaos",
+        "The physical end of the map — Alexander literally ran out of world to conquer",
+        "The limit of what human power can achieve — beyond the edge of the world is the domain of the divine, which is not accessible to conquerors",
+        "The boundary between the living and the dead"
+      ],
+      "answers_fa": [
+        "مرزِ شرقیِ دنیای ایرانی که ورایش فقط هرج‌ومرج است",
+        "پایانِ فیزیکیِ نقشه — اسکندر تحت‌اللفظی دنیایی که فتح کند تمام کرد",
+        "محدودیتِ آنچه قدرتِ انسانی می‌تواند به دست آورد — ورای لبه‌ی دنیا حوزه‌ی الهی است که برای فاتحان دسترس‌پذیر نیست",
+        "مرزِ بینِ زندگان و مردگان"
+      ],
+      "answers_tg": [
+        "Марзи шарқии дунёи эронӣ ки ворои он танҳо ҳарҷу марҷ аст",
+        "Поёни физикии харита — Искандар тахтуллафзӣ дунёе ки фатҳ кунад тамом кард",
+        "Маҳдудияти он чи қудрати инсонӣ метавонад ба даст орад — ворои лаби дунё ҳавзаи илоҳист ки барои фотеҳон дастнорас аст",
+        "Марзи байни зиндагон ва мурдагон"
+      ],
+      "correct_answer": 2,
+      "explanation": "The edge of the world is where human capacity ends and divine capacity begins. No amount of military power or philosophical wisdom can purchase immortality. The Water of Life is specifically unavailable to conquerors — it belongs to the domain that power cannot reach.",
+      "explanation_fa": "لبه‌ی دنیا جایی است که ظرفیتِ انسانی پایان می‌یابد و ظرفیتِ الهی آغاز می‌شود. هیچ مقدار از قدرتِ نظامی یا خردِ فلسفی نمی‌تواند جاودانگی بخرد.",
+      "explanation_tg": "Лаби дунё ҷойест ки қобилияти инсонӣ поён меёбад ва қобилияти илоҳӣ оғоз мешавад. Ҳеч қадар аз қудрати низомӣ ё хираду фалсафӣ наметавонад ҷовидонагӣ бхарад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "alex-h6",
+      "chapter_slug": "alexander",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Alexander is the last 'absorbed foreigner' in the Shahnameh. After him, the chronicle is internally focused. What does this shift from external to internal narrative signal?",
+      "question_fa": "اسکندر آخرین «خارجیِ جذب‌شده» در شاهنامه است. پس از او شاهنامه بر خودش متمرکز است. این تغییر از روایتِ خارجی به داخلی چه چیزی نشان می‌دهد؟",
+      "question_tg": "Искандар охирин «хориҷии ҷаббидашуда» дар Шоҳнома аст. Пас аз ӯ Шоҳнома бар худаш мутамарказ аст. Ин тағйир аз ривояти хориҷӣ ба дохилӣ чиро нишон медиҳад?",
+      "answers": [
+        "Iran finally achieved dominance — no more foreign threats were possible",
+        "The Shahnameh becomes more historically accurate as it approaches its own era",
+        "The text became too difficult for foreign material after Alexander's complexity",
+        "The world-stage has closed — the chronicle enters its long decline, where the greatest threats are internal: court politics, successions, and the self-consuming dynamics of empire"
+      ],
+      "answers_fa": [
+        "ایران نهایتاً به سلطه رسید — دیگر هیچ تهدیدِ خارجی ممکن نبود",
+        "شاهنامه وقتی به عصرِ خودش نزدیک می‌شود از نظرِ تاریخی دقیق‌تر می‌شود",
+        "متن پس از پیچیدگیِ اسکندر برای مادهِ خارجی خیلی دشوار شد",
+        "صحنه‌ی جهانی بسته شده — شاهنامه وارد افولِ طولانی‌اش می‌شود، جایی که بزرگ‌ترین تهدیدها داخلی هستند: سیاستِ دربار، جانشینی‌ها، و پویاییِ امپراتوری‌های خودخوری"
+      ],
+      "answers_tg": [
+        "Эрон ниҳоят ба ҳукмронӣ расид — дигар ҳеч таҳдиди хориҷие мумкин набуд",
+        "Шоҳнома вақте ба асри худаш наздик мешавад аз назари таърихӣ дақиқтар мешавад",
+        "Матн пас аз мураккабии Искандар барои мода‌и хориҷӣ хеле душвор шуд",
+        "Сахнаи ҷаҳонӣ баста шудааст — Шоҳнома ба инхирофи тӯлонии худ ворид мешавад, ки бузургтарин таҳдидҳо дохилӣ ҳастанд: сиёсати дарбор, вориссозиҳо, ва пуёиии империяҳои худхӯранда"
+      ],
+      "correct_answer": 3,
+      "explanation": "After Alexander, the Shahnameh becomes a chronicle of internal dynamics: the Sasanian kings fighting each other, being overthrown by generals, failing to govern, and ultimately falling to the Arab conquest. The shift from external to internal marks the beginning of the chronicle's long, documented decline.",
+      "explanation_fa": "پس از اسکندر، شاهنامه شاهنامه‌ی پویاییِ داخلی می‌شود: شاهانِ ساسانی که با هم می‌جنگند، توسطِ ژنرال‌ها سرنگون می‌شوند، در حکمرانی شکست می‌خورند.",
+      "explanation_tg": "Пас аз Искандар, Шоҳнома Шоҳномаи пуёиии дохилӣ мешавад: шоҳони Сосонӣ ки бо ҳам меҷанганд, аз ҷониби генералҳо сарнагун мешаванд, дар ҳукуматдорӣ шикаст мехӯранд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "alex-h7",
+      "chapter_slug": "alexander",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "The Shahnameh emphasises Alexander's search for wisdom and philosophy alongside conquest. What does the text suggest happens when a conqueror also seeks wisdom?",
+      "question_fa": "شاهنامه به جست‌وجوی اسکندر برای خرد و فلسفه در کنارِ فتح تأکید می‌کند. متن چه چیزی نشان می‌دهد وقتی یک فاتح هم دنبالِ خرد است؟",
+      "question_tg": "Шоҳнома ба ҷустуҷӯи Искандар барои хирад ва фалсафа дар канори фатҳ таъкид мекунад. Матн чиро нишон медиҳад вақте фотеҳ ҳам дунболи хирад аст?",
+      "answers": [
+        "Wisdom makes conquest more effective by improving strategic planning",
+        "Wisdom gives the conqueror divine approval, making his conquest legitimate",
+        "Wisdom and conquest are incompatible — a true philosopher cannot also be a conqueror",
+        "Wisdom makes the conqueror aware of the cost — Alexander's grief over Dara is only possible because he was also a philosopher who understood loss"
+      ],
+      "answers_fa": [
+        "خرد فتح را با بهبودِ برنامه‌ریزیِ استراتژیک کارآمدتر می‌کند",
+        "خرد به فاتح تأییدِ الهی می‌دهد و فتحش را مشروع می‌کند",
+        "خرد و فتح ناسازگار هستند — یک فیلسوفِ واقعی نمی‌تواند هم فاتح باشد",
+        "خرد فاتح را از هزینه آگاه می‌کند — اندوهِ اسکندر بر دارا فقط به این دلیل ممکن است که او هم فیلسوفی بود که از دست دادن را درک می‌کرد"
+      ],
+      "answers_tg": [
+        "Хирад фатҳро бо беҳтар кардани банднакшии стратегик самараноктар мекунад",
+        "Хирад ба фотеҳ тасдиқи илоҳӣ медиҳад ва фатҳашро машруъ мекунад",
+        "Хирад ва фатҳ носозгоранд — файласуфи воқеӣ наметавонад ҳам фотеҳ бошад",
+        "Хирад фотеҳро аз арзиши хабардор мекунад — андӯҳи Искандар бар Доро танҳо аз ин ҷиҳат мумкин аст ки ӯ ҳам файласуфе буд ки аз даст доданро фаҳмида"
+      ],
+      "correct_answer": 3,
+      "explanation": "The philosopher-conqueror combination is what makes Alexander morally interesting in the Shahnameh. If he were only a conqueror, he would be a villain. Because he also sought wisdom and grieved over what he destroyed, the chronicle can include him. Wisdom creates moral awareness; moral awareness creates grief; grief proves humanity.",
+      "explanation_fa": "ترکیبِ فیلسوف-فاتح چیزی است که اسکندر را از نظرِ اخلاقی در شاهنامه جالب می‌کند. اگر فقط یک فاتح بود، شرور می‌بود.",
+      "explanation_tg": "Омезиши файласуф-фотеҳ чизест ки Искандарро аз назари ахлоқӣ дар Шоҳнома ҷолиб мекунад. Агар танҳо фотеҳ буд, бадкор мебуд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "alex-h8",
+      "chapter_slug": "alexander",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The Shahnameh says Alexander 'weeps' and 'grieves' — unusual emotional language for an epic chronicle about a foreign conqueror. What does this emotional vocabulary accomplish in the text?",
+      "question_fa": "شاهنامه می‌گوید اسکندر «می‌گرید» و «عزاداری می‌کند» — زبانِ احساساتیِ غیرمعمول برای یک شاهنامه‌ی حماسی درباره‌ی یک فاتحِ خارجی. این واژگانِ احساسی در متن چه چیزی انجام می‌دهند؟",
+      "question_tg": "Шоҳнома мегӯяд Искандар «мегирйад» ва «матам медорад» — забони эҳсосотии ғайримаъмул барои Шоҳномаи ҳамосӣ дар бораи фотеҳи хориҷӣ. Ин вожагони эҳсосотӣ дар матн чиро анҷом медиҳанд?",
+      "answers": [
+        "They humanise Alexander enough to make him sympathetic within the Iranian tradition — an enemy who grieves is no longer a pure enemy",
+        "They show Ferdowsi's emotional identification with Alexander",
+        "They are conventional epic language and carry no specific meaning",
+        "They are deliberate irony — the reader is meant to distrust Alexander's grief"
+      ],
+      "answers_fa": [
+        "اسکندر را به اندازه‌ی کافی انسانی می‌کنند تا در سنتِ ایرانی جذاب باشد — دشمنی که اندوه می‌خورد دیگر دشمنِ خالص نیست",
+        "همانندسازیِ احساساتیِ فردوسی با اسکندر را نشان می‌دهند",
+        "زبانِ حماسیِ متعارف هستند و معنایِ خاصی ندارند",
+        "کنایه‌ی عمدی هستند — خواننده قرار است به اندوهِ اسکندر اعتماد نکند"
+      ],
+      "answers_tg": [
+        "Искандарро ба қадри кофӣ инсонӣ мекунанд то дар суннати эронӣ дилпазир бошад — душмане ки андӯҳ мехӯрад дигар душмани холис нест",
+        "ҳамонандсозии эҳсосотии Фирдавсӣ бо Искандарро нишон медиҳанд",
+        "Забони ҳамосии маъмул ҳастанд ва маънои хосе надоранд",
+        "Кинояи қасдӣ ҳастанд — хонанда қарор аст ба андӯҳи Искандар боvar накунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "The emotional vocabulary is the Shahnameh's mechanism for inclusion. An enemy who grieves cannot be simply rejected — grief is the universal human response that crosses cultural and political lines. By making Alexander weep, Ferdowsi makes him legible as a human being before making any other claim about him.",
+      "explanation_fa": "واژگانِ احساسی مکانیزمِ شاهنامه برای جذب است. دشمنی که اندوه می‌خورد نمی‌تواند صرفاً رد شود — اندوه پاسخِ جهانیِ انسانی است که از خطوطِ فرهنگی و سیاسی عبور می‌کند.",
+      "explanation_tg": "Вожагони эҳсосотӣ механизми Шоҳнома барои ҷаббидан аст. Душмане ки андӯҳ мехӯрад наметавонад танҳо рад шавад — андӯҳ посухи ҷаҳонии инсонист.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

@@ -6,12 +6,12 @@
       "quiz_part": 1,
       "question": "Who is the legendary author of the Shahnameh?",
       "answers": [
-        "Rumi",
-        "Hafez",
         "Ferdowsi",
+        "Hafez",
+        "Rumi",
         "Saadi"
       ],
-      "correct_answer": 2,
+      "correct_answer": 0,
       "explanation": "Ferdowsi of Tus, over 30+ years of work.",
       "reward": {
         "xp": 250,
@@ -21,19 +21,89 @@
       "question_fa": "نویسنده‌ی افسانه‌ای شاهنامه کیست؟",
       "question_tg": "Муаллифи афсонавии Шоҳнома кист?",
       "answers_fa": [
-        "رومی",
-        "حافظ",
         "فردوسی",
+        "حافظ",
+        "رومی",
         "سعدی"
       ],
       "answers_tg": [
-        "Румӣ",
-        "Ҳофиз",
         "Фирдавсӣ",
+        "Ҳофиз",
+        "Румӣ",
         "Саъдӣ"
       ],
       "explanation_fa": "فردوسی توسی، در طول بیش از ۳۰ سال کار.",
       "explanation_tg": "Фирдавсии Тусӣ, дар тӯли беш аз 30 соли кор."
+    },
+    {
+      "id": "ages-end-e2",
+      "chapter_slug": "ages-end",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "What element opens AND closes the Shahnameh, framing the entire chronicle?",
+      "question_fa": "کدام عنصر هم آغاز و هم پایانِ شاهنامه را قاب می‌کند؟",
+      "question_tg": "Кадом унсур ҳам оғоз ва ҳам поёни Шоҳномаро қоб мекунад?",
+      "answers": [
+        "Fire",
+        "Iron",
+        "Wind",
+        "Water"
+      ],
+      "answers_fa": [
+        "آتش",
+        "آهن",
+        "باد",
+        "آب"
+      ],
+      "answers_tg": [
+        "Оташ",
+        "Оҳан",
+        "Бод",
+        "Об"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh opens with fire — the first serpent, Mardas's garden, Ahriman. It closes with fire — the fire temples going dark. Fire is the chronicle's frame.",
+      "explanation_fa": "شاهنامه با آتش آغاز می‌شود — مار اول، باغِ مرداس، اهریمن. با آتش پایان می‌یابد — آتشکده‌هایی که تاریک می‌شوند. آتش قابِ شاهنامه است.",
+      "explanation_tg": "Шоҳнома бо оташ оғоз мешавад — мори аввал, боғи Мардос, Аҳриман. Бо оташ поён меёбад — оташкадаҳое ки торик мешаванд. Оташ қоби Шоҳнома аст.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ages-end-e3",
+      "chapter_slug": "ages-end",
+      "quiz_part": 1,
+      "difficulty": "easy",
+      "question": "Who was the last Sassanian king described in the Shahnameh?",
+      "question_fa": "آخرین شاهِ ساسانی که در شاهنامه توصیف می‌شود کیست؟",
+      "question_tg": "Охирин шоҳи Сосонии ки дар Шоҳнома тавсиф мешавад кист?",
+      "answers": [
+        "Bahram Chubin",
+        "Khosrow Parviz",
+        "Yazdegerd III",
+        "Hormuz"
+      ],
+      "answers_fa": [
+        "بهرامِ چوبین",
+        "خسرو پرویز",
+        "یزدگردِ سوم",
+        "هرمز"
+      ],
+      "answers_tg": [
+        "Баҳроми Чӯбин",
+        "Хусрав Парвиз",
+        "Яздигерди III",
+        "Ҳурмуз"
+      ],
+      "correct_answer": 2,
+      "explanation": "Yazdegerd III was the last Sassanian king. He fled east as the Arab conquest advanced and was murdered by a miller — a humble, unheroic end for the last king of a great dynasty.",
+      "explanation_fa": "یزدگردِ سوم آخرین شاهِ ساسانی بود. با پیشروی فتحِ عرب به سمتِ شرق گریخت و توسطِ یک آسیابان کشته شد — پایانی ساده و غیرقهرمانانه برای آخرین شاهِ یک سلسله‌ی بزرگ.",
+      "explanation_tg": "Яздигерди III охирин шоҳи Сосонӣ буд. Бо пешрафти фатҳи арабӣ ба самти шарқ гурехт ва аз ҷониби як осиёбон кушта шуд.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
     },
     {
       "id": "ages-end-2",
@@ -41,12 +111,12 @@
       "quiz_part": 2,
       "question": "How many verses does the Shahnameh contain (approx)?",
       "answers": [
-        "10,000",
-        "30,000",
+        "60,000",
         "120,000",
-        "60,000"
+        "30,000",
+        "10,000"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "About 60,000 couplets.",
       "reward": {
         "xp": 280,
@@ -56,19 +126,124 @@
       "question_fa": "شاهنامه تقریباً چند بیت دارد؟",
       "question_tg": "Шоҳнома тақрибан чанд байт дорад?",
       "answers_fa": [
-        "۱۰٬۰۰۰",
-        "۳۰٬۰۰۰",
+        "۶۰٬۰۰۰",
         "۱۲۰٬۰۰۰",
-        "۶۰٬۰۰۰"
+        "۳۰٬۰۰۰",
+        "۱۰٬۰۰۰"
       ],
       "answers_tg": [
-        "10,000",
-        "30,000",
+        "60,000",
         "120,000",
-        "60,000"
+        "30,000",
+        "10,000"
       ],
       "explanation_fa": "حدود ۶۰٬۰۰۰ بیت.",
       "explanation_tg": "Тақрибан 60,000 байт."
+    },
+    {
+      "id": "ages-end-m2",
+      "chapter_slug": "ages-end",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What image does the Shahnameh use to summarise the Arab conquest's effect on Persian culture?",
+      "question_fa": "شاهنامه از چه تصویری برای خلاصه‌کردنِ اثرِ فتحِ اعراب بر فرهنگِ ایرانی استفاده می‌کند؟",
+      "question_tg": "Шоҳнома аз кадом тасвир барои хулосакардани таъсири фатҳи арабӣ бар фарҳанги эронӣ истифода мекунад?",
+      "answers": [
+        "A broken sword",
+        "Fire temples going dark",
+        "A fallen throne",
+        "An empty crown"
+      ],
+      "answers_fa": [
+        "شمشیری شکسته",
+        "آتشکده‌هایی که تاریک می‌شوند",
+        "تختی که سقوط می‌کند",
+        "تاجی خالی"
+      ],
+      "answers_tg": [
+        "Шамшери шикаста",
+        "Оташкадаҳое ки торик мешаванд",
+        "Тахте ки меафтад",
+        "Тоҷи холӣ"
+      ],
+      "correct_answer": 1,
+      "explanation": "The fire temples going dark is the Shahnameh's summary image of the Arab conquest — not the battles or political change, but the extinguishing of the sacred fires that had defined Iranian civilization.",
+      "explanation_fa": "آتشکده‌هایی که تاریک می‌شوند تصویرِ خلاصه‌ی شاهنامه از فتحِ عرب است — نه نبردها یا تغییرِ سیاسی، بلکه خاموش‌شدنِ آتش‌های مقدسی که تمدنِ ایرانی را تعریف می‌کردند.",
+      "explanation_tg": "Оташкадаҳое ки торик мешаванд тасвири хулосаи Шоҳнома аз фатҳи арабист — на набардҳо ё тағйири сиёсӣ, балки хомӯшшавии оташҳои муқаддасе ки тамаддуни эрониро муайян мекарданд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ages-end-m3",
+      "chapter_slug": "ages-end",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "In the Shahnameh's final chapter, what role does the reader take on in the absence of a hero who can restore what was lost?",
+      "question_fa": "در فصلِ پایانیِ شاهنامه، در غیابِ قهرمانی که بتواند آنچه از دست رفته را بازگرداند، خواننده چه نقشی می‌گیرد؟",
+      "question_tg": "Дар боби охирини Шоҳнома, дар ғиёби қаҳрамоне ки тавонад чизи гумшударо баргардонад, хонанда кадом нақшро мегирад?",
+      "answers": [
+        "Final witness",
+        "Judge",
+        "Heir to the throne",
+        "Avenger"
+      ],
+      "answers_fa": [
+        "شاهدِ نهایی",
+        "قاضی",
+        "وارثِ تخت",
+        "انتقام‌گیرنده"
+      ],
+      "answers_tg": [
+        "Шоҳиди ниҳоӣ",
+        "Доvar",
+        "Вориси тахт",
+        "Интиқомгиранда"
+      ],
+      "correct_answer": 0,
+      "explanation": "Rostam is dead, Kay Khosrow is gone. The Shahnameh's final chapter has no hero who can fix things. What it has instead is a reader — the final witness who carries the memory forward.",
+      "explanation_fa": "رستم مُرده، کیخسرو رفته. فصلِ پایانیِ شاهنامه هیچ قهرمانی ندارد که چیزی را درست کند. در عوض خواننده دارد — شاهدِ نهایی که حافظه را به پیش می‌برد.",
+      "explanation_tg": "Рустам мурдааст, Кайхусрав рафтааст. Боби охирини Шоҳнома ҳеч қаҳрамоне надорад ки чизеро ислоҳ кунад. Дар иваз хонанда дорад — шоҳиди ниҳоӣ ки хотираро ба пеш мебарад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ages-end-m4",
+      "chapter_slug": "ages-end",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "The Shahnameh 'closes where it began.' Besides fire, which two other elements frame the whole chronicle?",
+      "question_fa": "شاهنامه «آنجا پایان می‌یابد که آغاز کرد.» علاوه بر آتش، کدام دو عنصرِ دیگر کلِ شاهنامه را قاب می‌کنند؟",
+      "question_tg": "Шоҳнома «онҷо поён меёбад ки оғоз кард.» Ғайр аз оташ, кадом ду унсури дигар тамоми Шоҳномаро қоб мекунанд?",
+      "answers": [
+        "Mountains and rivers",
+        "Swords and horses",
+        "Water and blood",
+        "Iron and kings"
+      ],
+      "answers_fa": [
+        "کوه‌ها و رودخانه‌ها",
+        "شمشیرها و اسبان",
+        "آب و خون",
+        "آهن و شاهان"
+      ],
+      "answers_tg": [
+        "Кӯҳҳо ва дарёҳо",
+        "Шамшерҳо ва аспон",
+        "Об ва хун",
+        "Оҳан ва шоҳон"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's chronicle says it 'closes where it began: with fire, with iron, with kings.' Iron appears with Hushang's first forge; kings are the chronicle's subjects throughout.",
+      "explanation_fa": "شاهنامه می‌گوید «آنجا پایان می‌یابد که آغاز کرد: با آتش، با آهن، با شاهان.» آهن با اولین کوره‌ی هوشنگ ظاهر می‌شود؛ شاهان در طول شاهنامه موضوعِ آن هستند.",
+      "explanation_tg": "Шоҳнома мегӯяд «онҷо поён меёбад ки оғоз кард: бо оташ, бо оҳан, бо шоҳон.» Оҳан бо кӯраи аввали Ҳушанг зоҳир мешавад; шоҳон дар тӯли Шоҳнома мавзӯи он ҳастанд.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
     },
     {
       "id": "ages-end-3",
@@ -76,12 +251,12 @@
       "quiz_part": 3,
       "question": "From what city is Ferdowsi?",
       "answers": [
-        "Tus",
         "Shiraz",
-        "Isfahan",
-        "Nishapur"
+        "Tus",
+        "Nishapur",
+        "Isfahan"
       ],
-      "correct_answer": 0,
+      "correct_answer": 1,
       "explanation": "Tus, in Khorasan.",
       "reward": {
         "xp": 310,
@@ -91,19 +266,194 @@
       "question_fa": "فردوسی از کدام شهر است؟",
       "question_tg": "Фирдавсӣ аз кадом шаҳр аст?",
       "answers_fa": [
-        "توس",
         "شیراز",
-        "اصفهان",
-        "نیشابور"
+        "توس",
+        "نیشابور",
+        "اصفهان"
       ],
       "answers_tg": [
-        "Тус",
         "Шероз",
-        "Исфаҳон",
-        "Нишопур"
+        "Тус",
+        "Нишопур",
+        "Исфаҳон"
       ],
       "explanation_fa": "توس، در خراسان.",
       "explanation_tg": "Тус, дар Хуросон."
+    },
+    {
+      "id": "ages-end-h2",
+      "chapter_slug": "ages-end",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Iron is used for Hushang's first forge at the Shahnameh's opening and for the iron stakes that kill Rostam. What does the chronicle suggest by placing iron at these two pivotal moments?",
+      "question_fa": "آهن در اولین کوره‌ی هوشنگ در آغازِ شاهنامه و در میخ‌های آهنی که رستم را می‌کشند استفاده می‌شود. شاهنامه با قراردادنِ آهن در این دو لحظه‌ی محوری چه چیزی نشان می‌دهد؟",
+      "question_tg": "Оҳан дар кӯраи аввали Ҳушанг дар оғози Шоҳнома ва дар мехҳои оҳанине ки Рустамро мекушанд истифода мешавад. Шоҳнома бо гузоштани оҳан дар ин ду лаҳзаи маҳварӣ чиро нишон медиҳад?",
+      "answers": [
+        "Iron symbolises the Turanians, who are both the first enemies and the last",
+        "The Shahnameh uses iron to show that weapons are always the most important element of any civilization",
+        "Iron is what civilization made from nature — the same human achievement that built the world is what ultimately destroys the world's greatest defender",
+        "Iron represents Zoroastrian sacred fire — both forge and spike are symbols of divine power"
+      ],
+      "answers_fa": [
+        "آهن نمادِ توران است که هم اولین دشمنان و هم آخرین هستند",
+        "شاهنامه از آهن استفاده می‌کند تا نشان دهد سلاح‌ها همیشه مهم‌ترین عنصرِ هر تمدنی هستند",
+        "آهن چیزی است که تمدن از طبیعت ساخت — همان دستاوردِ انسانی که دنیا را ساخت همان چیزی است که در نهایت بزرگ‌ترین مدافعِ دنیا را نابود می‌کند",
+        "آهن نمادِ آتشِ مقدسِ زرتشتی است — هم کوره و هم میخ نمادِ قدرتِ الهی هستند"
+      ],
+      "answers_tg": [
+        "Оҳан рамзи Турон аст ки ҳам аввалин душманон ва ҳам охирин ҳастанд",
+        "Шоҳнома аз оҳан истифода мекунад то нишон диҳад силоҳ ҳамеша муҳимтарин унсури ҳар тамаддунест",
+        "Оҳан чизест ки тамаддун аз табиат сохт — ҳамон дастоварди инсонӣ ки дунёро сохт ҳамон чизест ки дар ниҳоят бузургтарин мудофеи дунёро нобуд мекунад",
+        "Оҳан рамзи оташи муқаддаси зардуштӣ аст"
+      ],
+      "correct_answer": 2,
+      "explanation": "Iron is the Shahnameh's symbol of human civilization — specifically the capacity to shape the hardest natural material. Hushang's forge is the beginning of civilized power. The iron stakes of Shaghad's pit turn that same civilizational achievement against civilization's greatest protector.",
+      "explanation_fa": "آهن نمادِ تمدنِ انسانی در شاهنامه است — به‌خصوص توانایی شکل‌دادن به سخت‌ترین ماده‌ی طبیعی. کوره‌ی هوشنگ آغازِ قدرتِ متمدن است. میخ‌های آهنیِ چاهِ شغاد همان دستاوردِ تمدنی را علیهِ بزرگ‌ترین حامیِ تمدن به‌کار می‌برد.",
+      "explanation_tg": "Оҳан рамзи тамаддуни инсонист дар Шоҳнома. Кӯраи Ҳушанг оғози қудрати мутамаддин аст. Мехҳои оҳании чоҳи Шағод ҳамон дастоварди тамаддуниро зидди бузургтарин ҳомии тамаддун ба кор мебарад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ages-end-h3",
+      "chapter_slug": "ages-end",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The Shahnameh contains both kinds of king — those who rise and those who fall. What is the chronicle's implicit argument about which kind is more common?",
+      "question_fa": "شاهنامه هر دو نوع شاه دارد — آنانی که طلوع می‌کنند و آنانی که سقوط می‌کنند. استدلالِ ضمنیِ شاهنامه درباره‌ی اینکه کدام نوع رایج‌تر است چیست؟",
+      "question_tg": "Шоҳнома ҳарду навъи шоҳро дорад — онҳое ки тулӯъ мекунанд ва онҳое ки меафтанд. Далели зимниии Шоҳнома дар бораи он ки кадом навъ маъмултар аст чист?",
+      "answers": [
+        "Kings who rise are more common, because the Shahnameh shows civilization always progresses",
+        "Both kinds are exactly equal — the chronicle is balanced in its judgement",
+        "Kings who fall are more common — the rising ones are the exceptions worth remembering, which is why they are named",
+        "The Shahnameh does not distinguish — all kings are equal in the chronicle's eyes"
+      ],
+      "answers_fa": [
+        "شاهانی که طلوع می‌کنند رایج‌ترند، چون شاهنامه نشان می‌دهد تمدن همیشه پیشرفت می‌کند",
+        "هر دو نوع دقیقاً برابرند — شاهنامه در قضاوتش متوازن است",
+        "شاهانی که سقوط می‌کنند رایج‌ترند — آنانی که طلوع می‌کنند استثناهایی هستند که ارزش یادآوری دارند، به همین دلیل نام‌برده می‌شوند",
+        "شاهنامه تمایز قائل نمی‌شود — همه‌ی شاهان در چشمِ شاهنامه برابرند"
+      ],
+      "answers_tg": [
+        "Шоҳоне ки тулӯъ мекунанд маъмултаранд, зеро Шоҳнома нишон медиҳад тамаддун ҳамеша пешрафт мекунад",
+        "Ҳарду навъ дақиқан баробаранд — Шоҳнома дар доварии худ мутаносиб аст",
+        "Шоҳоне ки меафтанд маъмултаранд — онҳое ки тулӯъ мекунанд истиснохое ҳастанд ки арзиши ёдоварӣ доранд",
+        "Шоҳнома тафовут намегузорад — ҳамаи шоҳон дар чашми Шоҳнома баробаранд"
+      ],
+      "correct_answer": 2,
+      "explanation": "Keyumars, Hushang, Fereydun, Kay Khosrow — kings whose rise the chronicle records with pride. But the chronicle does not pretend the rising kind is more common. The falling kind — reckless, cruel, corrupted — outnumber them. The rising ones are named because they are remarkable exceptions.",
+      "explanation_fa": "کیومرث، هوشنگ، فریدون، کیخسرو — شاهانی که طلوعشان را شاهنامه با افتخار ثبت می‌کند. اما شاهنامه وانمود نمی‌کند که نوعِ طلوع‌کننده رایج‌تر است. نوعِ سقوط‌کننده — بی‌ملاحظه، ظالم، فاسد — از آنها بیشتر است. نوعِ طلوع‌کننده نام‌برده می‌شود چون استثناهای قابلِ توجهی هستند.",
+      "explanation_tg": "Кайюмарс, Ҳушанг, Фаридун, Кайхусрав — шоҳоне ки тулӯъашонро Шоҳнома бо ифтихор сабт мекунад. Аммо Шоҳнома вонамуд намекунад ки навъи тулӯъкунанда маъмултар аст. Навъи афтанда — бебок, золим, фосид — аз онҳо бештар аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ages-end-h4",
+      "chapter_slug": "ages-end",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "Ferdowsi ends the Shahnameh knowing he will not see the civilization he described restored. The chapter calls this 'spending thirty years building a monument to a world that is gone.' What kind of act does this make the Shahnameh?",
+      "question_fa": "فردوسی شاهنامه را پایان می‌دهد در حالی که می‌داند تمدنی را که توصیف کرده بازگردانده نخواهد شد. فصل این را «سی سال صرفِ ساختنِ یادبودی برای دنیایی که رفته» می‌نامد. این چه نوع عملی از شاهنامه می‌سازد؟",
+      "question_tg": "Фирдавсӣ Шоҳномаро поён медиҳад дониста ки тамаддунеро ки тавсиф кардааст барнагардонида нахоҳад шуд. Фасл инро «сӣ сол сарф кардани сохтани ёдгоре барои дунёе ки рафтааст» меномад. Ин кадом навъ амале аз Шоҳнома месозад?",
+      "answers": [
+        "An act of defiance — refusing to let what mattered disappear simply because power had moved on",
+        "An act of mourning — the Shahnameh is primarily a lament for the Persian world",
+        "An act of politics — Ferdowsi wrote to influence the rulers of his time",
+        "An act of religion — the Shahnameh is a Zoroastrian scripture in poetic form"
+      ],
+      "answers_fa": [
+        "عملِ سرکشی — امتناع از اینکه آنچه مهم بود ناپدید شود صرفاً به این دلیل که قدرت جابجا شده",
+        "عملِ سوگواری — شاهنامه اساساً مرثیه‌ای برای دنیای ایرانی است",
+        "عملِ سیاسی — فردوسی برای تأثیر بر حاکمانِ زمانش نوشت",
+        "عملِ دینی — شاهنامه متنِ مقدسِ زرتشتی به شکلِ شعری است"
+      ],
+      "answers_tg": [
+        "Амали саркашӣ — имтиноъ аз ин ки он чи муҳим буд нопадид шавад танҳо аз сабаби он ки қудрат ҷобаҷо шудааст",
+        "Амали мотам — Шоҳнома асосан марсияест барои дунёи эронӣ",
+        "Амали сиёсӣ — Фирдавсӣ барои таъсир ба ҳокимони замонаш навишт",
+        "Амали динӣ — Шоҳнома матни муқаддаси зардуштӣ ба шакли шеърист"
+      ],
+      "correct_answer": 0,
+      "explanation": "Writing a monument to a lost world knowing it cannot be restored is not mourning — mourning looks backward. It is defiance: refusing to let what mattered disappear. The Shahnameh argues with the future, insisting that what was real and beautiful must be remembered even when the political structures that produced it are gone.",
+      "explanation_fa": "نوشتنِ یادبودی برای دنیای ازدست‌رفته با علمِ به اینکه بازگردانده نخواهد شد، سوگواری نیست — سوگواری به عقب نگاه می‌کند. سرکشی است: امتناع از اینکه آنچه مهم بود ناپدید شود. شاهنامه با آینده بحث می‌کند و اصرار دارد که آنچه واقعی و زیبا بود باید به یاد آورده شود.",
+      "explanation_tg": "Навиштани ёдгоре барои дунёи гумшуда бо донистани он ки барнагардонида нахоҳад шуд, мотам нест — мотам ба қафо нигоҳ мекунад. Саркашист: имтиноъ аз ин ки он чи муҳим буд нопадид шавад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ages-end-h5",
+      "chapter_slug": "ages-end",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The Shahnameh's final chapters do not resolve the story. Why not?",
+      "question_fa": "فصل‌های پایانیِ شاهنامه داستان را حل‌وفصل نمی‌کنند. چرا؟",
+      "question_tg": "Боб-ҳои охирини Шоҳнома достонро ҳалу фасл намекунанд. Чаро?",
+      "answers": [
+        "Because the Shahnameh is a religious text and resolution belongs to God",
+        "Because the Arab conquest made a proper ending politically dangerous to write",
+        "Because Ferdowsi died before he could finish the ending",
+        "Because the story has not resolved — the world described is still contested, and Ferdowsi is honest about that"
+      ],
+      "answers_fa": [
+        "چون شاهنامه یک متنِ دینی است و حل‌وفصل به خدا تعلق دارد",
+        "چون فتحِ عرب نوشتنِ پایانِ مناسب را از نظرِ سیاسی خطرناک کرد",
+        "چون فردوسی قبل از اینکه بتواند پایان را تمام کند مُرد",
+        "چون داستان حل‌وفصل نشده — دنیایی که توصیف می‌شود هنوز مورد اختلاف است، و فردوسی در این مورد صادق است"
+      ],
+      "answers_tg": [
+        "Зеро Шоҳнома матни динист ва ҳалу фасл ба Худо тааллуқ дорад",
+        "Зеро фатҳи арабӣ навиштани поёни муносибро аз назари сиёсӣ хатарнок кард",
+        "Зеро Фирдавсӣ пеш аз он ки тавонад поёнро тамом кунад мурд",
+        "Зеро достон ҳалу фасл нашудааст — дунёе ки тавсиф мешавад ҳанӯз баҳсталаб аст, ва Фирдавсӣ дар ин бора рост аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's final chapters have 'the structure of record. Something happened. Here is what happened.' The story has not resolved because history has not resolved. The Iranian world Ferdowsi loved is gone but not forgotten. Ferdowsi is honest: he does not invent a reconciliation the facts do not support.",
+      "explanation_fa": "فصل‌های پایانیِ شاهنامه «ساختارِ ثبت دارند. چیزی اتفاق افتاد. اینجاست که اتفاق افتاد.» داستان حل‌وفصل نشده چون تاریخ حل‌وفصل نشده. دنیای ایرانیِ موردِ علاقه‌ی فردوسی رفته اما فراموش نشده.",
+      "explanation_tg": "Боб-ҳои охирини Шоҳнома «сохтори сабт доранд. Чизе иттифоқ афтод. Инҷост ки иттифоқ афтод.» Достон ҳалу фасл нашудааст зеро таърих ҳалу фасл нашудааст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ages-end-h6",
+      "chapter_slug": "ages-end",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The chapter on Ages End says the Shahnameh argues with the future. What exactly is it arguing?",
+      "question_fa": "فصلِ «پایانِ عصرها» می‌گوید شاهنامه با آینده بحث می‌کند. دقیقاً چه چیزی را ادعا می‌کند؟",
+      "question_tg": "Фасли «Поёни Асрҳо» мегӯяд Шоҳнома бо оянда баҳс мекунад. Дақиқан чиро иддаъо мекунад?",
+      "answers": [
+        "That what was real and beautiful in Iranian civilization must be remembered regardless of who holds political power",
+        "That Persian poetry is the highest achievement of world civilization",
+        "That the Arab conquest was unjust and Iran will reclaim its empire",
+        "That Zoroastrianism is superior to Islam"
+      ],
+      "answers_fa": [
+        "که آنچه در تمدنِ ایرانی واقعی و زیبا بود باید به یاد آورده شود صرف‌نظر از اینکه قدرتِ سیاسی در دستِ کیست",
+        "که شعرِ فارسی بزرگ‌ترین دستاوردِ تمدنِ جهانی است",
+        "که فتحِ عرب ناعادلانه بود و ایران امپراتوری‌اش را پس خواهد گرفت",
+        "که زرتشتی‌گری برتر از اسلام است"
+      ],
+      "answers_tg": [
+        "Ки он чи дар тамаддуни эронӣ воқеӣ ва зебо буд бояд ба ёд оварда шавад сарфи назар аз он ки қудрати сиёсӣ дар дасти кист",
+        "Ки шеъри форсӣ бузургтарин дастоварди тамаддуни ҷаҳонист",
+        "Ки фатҳи арабӣ ноадилона буд ва Эрон империяашро пас хоҳад гирифт",
+        "Ки зардуштия аз ислом бартар аст"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh's argument with the future is not political or religious. It is cultural: what was real and beautiful must be preserved in memory regardless of who governs. This is why Ferdowsi wrote in Persian under patrons who derived legitimacy from the Arab-Islamic tradition — the language itself was the argument.",
+      "explanation_fa": "بحثِ شاهنامه با آینده سیاسی یا دینی نیست. فرهنگی است: آنچه واقعی و زیبا بود باید در حافظه حفظ شود صرف‌نظر از اینکه چه کسی حاکم است. به همین دلیل فردوسی به فارسی نوشت — زبان خود استدلال بود.",
+      "explanation_tg": "Баҳси Шоҳнома бо оянда сиёсӣ ё динӣ нест. Фарҳангист: он чи воқеӣ ва зебо буд бояд дар хотира ҳифз шавад сарфи назар аз он ки кӣ ҳоким аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
     },
     {
       "id": "ages-end-4",
@@ -113,8 +463,8 @@
       "answers": [
         "Achaemenid",
         "Kayanian",
-        "Sassanid",
-        "Pishdadian"
+        "Pishdadian",
+        "Sassanid"
       ],
       "correct_answer": 1,
       "explanation": "The Kayanian dynasty — Kay Kavus, Kay Khosrow, Goshtasp.",
@@ -128,14 +478,14 @@
       "answers_fa": [
         "هخامنشی",
         "کیانی",
-        "ساسانی",
-        "پیشدادی"
+        "پیشدادی",
+        "ساسانی"
       ],
       "answers_tg": [
         "Ҳахоманишӣ",
         "Кёниён",
-        "Сосонӣ",
-        "Пешдодиён"
+        "Пешдодиён",
+        "Сосонӣ"
       ],
       "explanation_fa": "سلسله‌ی کیانی — کیکاووس، کیخسرو، گشتاسپ.",
       "explanation_tg": "Сулолаи Кёниён — Кайковус, Кайхусрав, Гуштосп."
@@ -147,9 +497,9 @@
       "question": "How many books make up the Shahnameh?",
       "answers": [
         "Three",
-        "Five",
+        "Seven",
         "Fifty",
-        "Seven"
+        "Five"
       ],
       "correct_answer": 2,
       "explanation": "Approximately fifty separate stories/sections.",
@@ -162,15 +512,15 @@
       "question_tg": "Шоҳнома аз чанд китоб иборат аст?",
       "answers_fa": [
         "سه",
-        "پنج",
+        "هفت",
         "پنجاه",
-        "هفت"
+        "پنج"
       ],
       "answers_tg": [
         "Се",
-        "Панҷ",
+        "Ҳафт",
         "Панҷоҳ",
-        "Ҳафт"
+        "Панҷ"
       ],
       "explanation_fa": "تقریباً پنجاه داستان/بخش جداگانه.",
       "explanation_tg": "Тақрибан панҷоҳ ҳикоя/қисмати алоҳида."
@@ -181,9 +531,9 @@
       "quiz_part": 6,
       "question": "What is Ferdowsi's most famous boast at the poem's close?",
       "answers": [
-        "I have made a kingdom",
         "I have built a palace of words",
         "I shall live by what I wrote",
+        "I have made a kingdom",
         "All of the above are paraphrases"
       ],
       "correct_answer": 3,
@@ -196,15 +546,15 @@
       "question_fa": "مشهورترین افتخار فردوسی در پایان شعر چیست؟",
       "question_tg": "Машҳуртарин ифтихори Фирдавсӣ дар поёни шеър чист?",
       "answers_fa": [
-        "من پادشاهی ساختم",
         "من قصری از کلمات ساختم",
         "با آنچه نوشتم زنده خواهم ماند",
+        "من پادشاهی ساختم",
         "همه‌ی موارد بالا تعابیر هستند"
       ],
       "answers_tg": [
-        "Ман шоҳӣ сохтам",
         "Ман қасре аз калима сохтам",
         "Бо он чи навиштам зинда хоҳам монд",
+        "Ман шоҳӣ сохтам",
         "Ҳамаи мавриди боло тафсирҳоянд"
       ],
       "explanation_fa": "همه ترجمان مصراع پایانی — «زنده ماندم بدان‌چه نوشتم».",

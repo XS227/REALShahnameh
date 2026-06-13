@@ -5,69 +5,104 @@
       "chapter_slug": "ashkanian-age",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "How many Ashkanian kings does Ferdowsi name in the Shahnameh?",
-      "question_fa": "فردوسی چند شاه اشکانی را در شاهنامه نام می‌برد؟",
-      "question_tg": "Фирдавсӣ чанд подшоҳи Ашкониро дар шоҳнома ном мебарад?",
+      "question": "What is another name for the Arsacid dynasty described in the Ashkanian-Age chapter?",
+      "question_fa": "نامِ دیگرِ سلسله‌ی اشکانی که در فصلِ دورانِ اشکانی توصیف می‌شود چیست؟",
+      "question_tg": "Номи дигари сулолаи Ашконӣ ки дар фасли Давраи Ашконӣ тавсиф мешавад чист?",
       "answers": [
-        "Fourteen",
-        "Seven",
-        "Twenty-two",
-        "Four"
+        "The Sasanians",
+        "The Achaemenids",
+        "The Ghaznavids",
+        "The Parthians"
       ],
       "answers_fa": [
-        "چهارده",
-        "هفت",
-        "بیست و دو",
-        "چهار"
+        "ساسانیان",
+        "هخامنشیان",
+        "غزنویان",
+        "پارتیان"
       ],
       "answers_tg": [
-        "Чордаҳ",
-        "Ҳафт",
-        "Бисту ду",
-        "Чаҳор"
+        "Сосониён",
+        "Ҳахоманишиён",
+        "Ғазнавиён",
+        "Порсиён"
       ],
-      "correct_answer": 0,
-      "explanation": "Ferdowsi lists fourteen Ashkanian kings by name but gives almost no detail about any of them. He explains that their stories were not written down or the records did not reach him — the chronicle of four centuries fits in a few pages.",
-      "explanation_fa": "فردوسی چهارده شاه اشکانی را با نام فهرست می‌کند اما تقریباً هیچ جزئیاتی درباره هیچ‌کدام از آنها نمی‌دهد. توضیح می‌دهد که داستان‌هایشان نوشته نشده یا پرونده‌ها به دستش نرسیده — روایت چهار قرن در چند صفحه جا می‌گیرد.",
-      "explanation_tg": "Фирдавсӣ чордаҳ подшоҳи Ашкониро бо ном феҳрист мекунад аммо тақрибан ҳеҷ тафсилоте дар бораи ҳеҷ кадоме аз онҳо намедиҳад. Тавзеҳ медиҳад ки достонҳояшон навишта нашуда ё паpвандаҳо ба дасташ нарасида — ривояти чаҳор аср дар чанд саҳифа ҷо мегирад.",
+      "correct_answer": 3,
+      "explanation": "The Arsacid dynasty is also called the Parthian dynasty. The Shahnameh calls them the Ashkanians.",
+      "explanation_fa": "سلسله‌ی اشکانی را سلسله‌ی پارتی هم می‌نامند. شاهنامه آنها را اشکانیان می‌نامد.",
+      "explanation_tg": "Сулолаи Ашконӣ инчунин Сулолаи Порсӣ ном дорад. Шоҳнома онҳоро Ашкониён меномад.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
       "id": "ash-e2",
       "chapter_slug": "ashkanian-age",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "What does Ferdowsi explicitly admit about the Ashkanian historical records?",
-      "question_fa": "فردوسی صراحتاً درباره پرونده‌های تاریخی اشکانیان چه اعتراف می‌کند؟",
-      "question_tg": "Фирдавсӣ صادиqона дар бораи пaрвандаҳои таърихии Ашконӣ чӣ эътироф мекунад?",
+      "question": "How does the Shahnameh treat the Arsacid (Ashkanian) period compared to other eras?",
+      "question_fa": "شاهنامه دوره‌ی اشکانی را در مقایسه با سایرِ عصرها چگونه می‌بیند؟",
+      "question_tg": "Шоҳнома давраи Ашконӣ ро дар муқоиса бо дигар асрҳо чӣ тавр мебинад?",
       "answers": [
-        "That the records were lost or never reached him — he cannot tell their stories",
-        "That the Ashkanians destroyed their own records out of shame",
-        "That the Arab conquest burned all Ashkanian archives",
-        "That Ferdowsi chose to omit them to keep the poem to a manageable length"
+        "It rushes through it — many kings, few events, little chronicle",
+        "It treats it as the height of Iranian military power",
+        "It completely omits it as historically unimportant",
+        "It dwells on it as a golden age of Iranian civilization"
       ],
       "answers_fa": [
-        "پرونده‌ها گم شده یا هرگز به دستش نرسیده — نمی‌تواند داستان‌هایشان را تعریف کند",
-        "اشکانیان از روی شرم پرونده‌های خود را نابود کردند",
-        "فتح عرب تمام آرشیوهای اشکانی را سوزاند",
-        "فردوسی انتخاب کرد آنها را حذف کند تا شعر قابل مدیریت باشد"
+        "از آن می‌گذرد — شاهانِ بسیار، رویدادهایِ کمتر، شاهنامه‌ی اندک",
+        "به آن به عنوانِ اوجِ قدرتِ نظامیِ ایرانی می‌نگرد",
+        "کاملاً به عنوانِ بی‌اهمیتِ تاریخی آن را حذف می‌کند",
+        "بر آن به عنوانِ عصرِ طلاییِ تمدنِ ایرانی تأمل می‌کند"
       ],
       "answers_tg": [
-        "Парвандаҳо гум шуда ё ҳаргиз ба дасташ нарасида — натавонист достонҳояшонро нақл кунад",
-        "Ашкониён аз рӯи шарм парвандаҳои худро нобуд карданд",
-        "Фатҳи Арабӣ ҳамаи архивҳои Ашкониро сӯзонд",
-        "Фирдавсӣ интихоб кард онҳоро ҳазф кунад то шеър идорашаванда бошад"
+        "Аз он мегузарад — шоҳони бисёр, рӯйдодҳои камтар, Шоҳномаи андак",
+        "Ба он ба унвони авҷи қудрати низомии эронӣ менигарад",
+        "Онро комилан ба унвони аз назари таърихӣ бе‌аҳамият ҳазф мекунад",
+        "Бар он ба унвони асри тиллоии тамаддуни эронӣ тафаккур мекунад"
       ],
       "correct_answer": 0,
-      "explanation": "Ferdowsi stops and openly admits that the Ashkanian records were not written down or did not reach him. This is one of the most honest moments in the poem — a historian's discipline overriding the poet's temptation to invent.",
-      "explanation_fa": "فردوسی می‌ایستد و آشکارا اعتراف می‌کند که پرونده‌های اشکانی نوشته نشده یا به دستش نرسیده. این یکی از صادقانه‌ترین لحظات در شعر است — انضباط مورخ که بر وسوسه شاعر غالب می‌شود.",
-      "explanation_tg": "Фирдавсӣ мемонад ва ошкоро эътироф мекунад ки парвандаҳои Ашконӣ навишта нашуда ё ба дасташ нарасида. Ин яке аз صадиqонатарин лаҳзаҳо дар шеър аст — интизоми муаррих ки бар васвасаи шоир ғолиб меояд.",
+      "explanation": "The Arsacid era is the Shahnameh's briefest section — many kings, little chronicle. Ferdowsi names the age but does not dwell on it because he lacked sufficient source material.",
+      "explanation_fa": "دوره‌ی اشکانی کوتاه‌ترین بخشِ شاهنامه است — شاهانِ بسیار، شاهنامه‌ی اندک. فردوسی عصر را می‌نامد اما بر آن تأمل نمی‌کند چون مادهِ منبعِ کافی نداشت.",
+      "explanation_tg": "Давраи Ашконӣ кӯтоҳтарин бахши Шоҳнома аст — шоҳони бисёр, Шоҳномаи андак. Фирдавсӣ асрро меномад аммо бар он тафаккур намекунад зеро маводи манбаи кофӣ надошт.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "ash-e3",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "The Arsacid political system was not a single empire but what kind of structure?",
+      "question_fa": "نظامِ سیاسیِ اشکانی یک امپراتوریِ واحد نبود بلکه چه نوع ساختاری بود؟",
+      "question_tg": "Системи сиёсии Ашконӣ як империяи ягона набуд балки кадом навъи сохтор буд?",
+      "answers": [
+        "A strict centralised monarchy with one absolute ruler",
+        "A theocracy governed by Zoroastrian priests",
+        "A democracy of noble families with a rotating throne",
+        "A confederation of semi-autonomous lords acknowledging a paramount king"
+      ],
+      "answers_fa": [
+        "یک سلطنتِ متمرکزِ سختِ با یک حاکمِ مطلق",
+        "یک تئوکراسی که توسطِ کاهنانِ زرتشتی اداره می‌شد",
+        "یک دموکراسیِ خانواده‌های اشرافی با تختِ دورانی",
+        "کنفدراسیونی از اربابانِ نیمه‌مستقل که یک شاهِ اعلا را می‌شناختند"
+      ],
+      "answers_tg": [
+        "Подшоҳии сахти мутамарказе бо як ҳокими мутлақ",
+        "Теократияе ки аз ҷониби коҳинони зардуштӣ идора мешуд",
+        "Демократияи оилаҳои ашрофӣ бо тахти гардон",
+        "Конфедератсияи ардибеги нимемустақиле ки шоҳи олиро мешинохтанд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Arsacid system was a confederation of semi-autonomous lords. This gave it distributed resilience — when one part was weakened, the others could maintain the system.",
+      "explanation_fa": "نظامِ اشکانی کنفدراسیونی از اربابانِ نیمه‌مستقل بود. این به آن انعطاف‌پذیریِ توزیع‌شده می‌داد.",
+      "explanation_tg": "Системи Ашконӣ конфедератсияи ардибеги нимемустақил буд. Ин ба он устувории тақсимшуда медод.",
+      "reward": {
+        "xp": 100,
+        "real": 40
       }
     },
     {
@@ -75,34 +110,454 @@
       "chapter_slug": "ashkanian-age",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "What was the Ashkanian dynasty's most celebrated military achievement?",
-      "question_fa": "بزرگ‌ترین دستاورد نظامی سلسله اشکانی چه بود؟",
-      "question_tg": "Бузургтарин дастоварди ҳарбии сулолаи Ашконӣ чӣ буд?",
+      "question": "Why does the Shahnameh rush through four centuries of Arsacid rule? What is Ferdowsi's editorial choice revealing?",
+      "question_fa": "چرا شاهنامه از چهار قرنِ حکومتِ اشکانی می‌گذرد؟ انتخابِ تحریریِ فردوسی چه چیزی نشان می‌دهد؟",
+      "question_tg": "Чаро Шоҳнома аз чаҳор асри ҳукмронии Ашконӣ мегузарад? Интихоби таҳририяти Фирдавсӣ чиро нишон медиҳад?",
       "answers": [
-        "Defeating Rome at Carrhae and holding back Roman expansion for centuries",
-        "Reconquering Egypt from the Ptolemaic dynasty",
-        "Destroying the Seleucid empire that followed Alexander",
-        "Repelling a major invasion from China's Han dynasty"
+        "He lacked sufficient source material — the Arsacid period left fewer literary records in the Iranian tradition than the mythic or Sasanian eras",
+        "He deliberately omitted it because it was a period of Iranian weakness",
+        "He was politically required to minimise the Arsacid era by his Ghaznavid patrons",
+        "The Arsacid era was too peaceful to generate good narrative material"
       ],
       "answers_fa": [
-        "شکست دادن روم در کارهه و جلوگیری از گسترش روم برای قرن‌ها",
-        "بازپس‌گیری مصر از سلسله بطلمیوسی",
-        "نابود کردن امپراتوری سلوکی که پس از اسکندر آمد",
-        "دفع تهاجم بزرگ از سلسله هان چین"
+        "مادهِ منبعِ کافی نداشت — دوره‌ی اشکانی در مقایسه با عصرهای اسطوره‌ای یا ساسانی ثبتِ ادبیِ کمتری در سنتِ ایرانی بجا گذاشت",
+        "عمداً آن را به این دلیل که دوره‌ای از ضعفِ ایرانی بود حذف کرد",
+        "از نظرِ سیاسی توسطِ حامیانِ غزنویدی‌اش ملزم بود دوره‌ی اشکانی را به حداقل برساند",
+        "دوره‌ی اشکانی خیلی صلح‌آمیز بود تا مادهِ روایی خوبی تولید کند"
       ],
       "answers_tg": [
-        "Шикаст додани Рум дар Карра ва боздоштани тавсеаи Рум барои садсолаҳо",
-        "Бозпас гирифтани Миср аз сулолаи Птолемайӣ",
-        "Нобуд кардани империяи Салавкӣ ки пас аз Искандар омад",
-        "Дафъи ҳамлаи бузурги сулолаи Хани Чин"
+        "Маводи манбаи кофӣ надошт — давраи Ашконӣ дар муқоиса бо асрҳои афсонавӣ ё Сосонӣ сабти адабии камтаре дар суннати эронӣ боқӣ гузошт",
+        "Онро қасдан аз ин ки давраи заъфи эронӣ буд ҳазф кард",
+        "Аз назари сиёсӣ аз ҷониби ҳомиёни Ғазнавии ӯ мавзум буд давраи Ашконӣро ба ҳадди ақал бирасонад",
+        "Давраи Ашконӣ хеле сулҳомез буд то маводи ривоии хуб тавлид кунад"
       ],
       "correct_answer": 0,
-      "explanation": "The Ashkanian (Arsacid/Parthian) dynasty famously defeated Rome at the Battle of Carrhae in 53 BCE, killing the Roman general Crassus. They held back Roman expansion for centuries while the old Persian culture slowly reasserted itself.",
-      "explanation_fa": "سلسله اشکانی (اشکانی/پارتی) به طور مشهوری روم را در نبرد کارهه در سال ۵۳ قبل از میلاد شکست داد و سردار رومی کراسوس را کشت. آنها برای قرن‌ها گسترش روم را مهار کردند در حالی که فرهنگ قدیم ایرانی به آرامی دوباره ظهور کرد.",
-      "explanation_tg": "Сулолаи Ашконӣ (Ашконӣ/Порт) машҳурона Румро дар набарди Карра дар соли 53 пеш аз милод шикаст дод ва сарлашкари Румии Красусро кушт. Онҳо тавсеаи Румро барои садсолаҳо боздоштанд дар ҳоле ки фарҳанги қадими Эронӣ ба оромӣ дубора зоҳир мешуд.",
+      "explanation": "The Shahnameh acknowledges its own limitation here. Ferdowsi names the Arsacid age and even acknowledges the gap in his knowledge — a rare moment of the chronicle's self-awareness about its own sources.",
+      "explanation_fa": "شاهنامه اینجا محدودیتِ خودش را می‌پذیرد. فردوسی دوره‌ی اشکانی را می‌نامد و حتی شکافِ در دانشش را می‌پذیرد — لحظه‌ی نادری از آگاهیِ خودِ شاهنامه درباره‌ی منابعِ خودش.",
+      "explanation_tg": "Шоҳнома инҷо маҳдудияти худашро мепазирад. Фирдавسӣ давраи Ашконӣро меномад ва ҳатто шикофи дар донишашро мепазирад.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ash-m2",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "What advantage did the Arsacid confederation system have over the later Sasanian centralisation?",
+      "question_fa": "نظامِ کنفدراسیونیِ اشکانی چه مزیتی نسبت به تمرکزِ ساسانیِ بعدی داشت؟",
+      "question_tg": "Системи конфедератсиявии Ашконӣ چӣ бартарие нисбат ба марказигарии Сосонии баъдӣ дошт?",
+      "answers": [
+        "Stronger religious legitimacy through Zoroastrian fire temples",
+        "More efficient taxation that produced greater revenues",
+        "Greater military strength through unified command",
+        "Distributed resilience — when one lord was weak or killed, the network absorbed the shock without losing the whole system"
+      ],
+      "answers_fa": [
+        "مشروعیتِ دینیِ قوی‌تر از طریقِ آتشکده‌های زرتشتی",
+        "مالیاتِ کارآمدتر که درآمدِ بیشتری تولید کرد",
+        "قدرتِ نظامیِ بیشتر از طریقِ فرماندهیِ متحد",
+        "انعطاف‌پذیریِ توزیع‌شده — وقتی یک ارباب ضعیف بود یا کشته شد، شبکه ضربه را بدون از دست دادنِ کلِ سیستم جذب کرد"
+      ],
+      "answers_tg": [
+        "Машруияти динии мустаҳкамтар тавассути оташкадаҳои зардуштӣ",
+        "Андозатарошии самаранокатар ки даромади бештаре тавлид кард",
+        "Қудрати низомии бештар тавассути фармондеҳии муттаҳид",
+        "Устувории тақсимшуда — вақте یک ардибег заиф буд ё кушта шуд, шабака зарбаро бидуни аз даст додани кулли система ҷаббида кард"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Arsacid confederation's distributed resilience meant it survived setbacks that would have ended a centralised empire. When an Arsacid king was killed, the lords maintained the system. The Sasanian centralisation that followed was more powerful but more brittle.",
+      "explanation_fa": "انعطاف‌پذیریِ توزیع‌شده‌ی کنفدراسیونِ اشکانی به این معنا بود که شکست‌هایی را که یک امپراتوریِ متمرکز را پایان می‌داد تحمل کرد.",
+      "explanation_tg": "Устувории тақсимшудаи конфедератсиявии Ашконӣ маъно дошт ки шикастҳоеро ки империяи марказигарро поён медод таҳаммул кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ash-m3",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "Ferdowsi 'names' the Arsacid age even without sufficient material to fill it. Why is this naming act significant?",
+      "question_fa": "فردوسی دوره‌ی اشکانی را حتی بدون مادهِ کافی برای پر کردنش «نام‌گذاری» می‌کند. چرا این عملِ نام‌گذاری اهمیت دارد؟",
+      "question_tg": "Фирдавсӣ давраи Ашконӣро ҳатто бидуни маводи кофӣ барои пур кардани он «ном мегузорад». Чаро ин амали номгузорӣ аҳамият дорад?",
+      "answers": [
+        "Naming is mere formality — the Ashkanian chapter has no real content",
+        "Naming signals that the Arsacid period was shameful and not worth recording",
+        "Ferdowsi names it to criticise the Arsacids for leaving so few records",
+        "Naming establishes that the age existed and was Iranian — it preserves the continuity of the tradition even where the chronicle cannot fill it"
+      ],
+      "answers_fa": [
+        "نام‌گذاری صرفاً تشریفاتی است — فصلِ اشکانی محتوایِ واقعی ندارد",
+        "نام‌گذاری نشان می‌دهد که دوره‌ی اشکانی شرم‌آور بود و ارزشِ ثبت نداشت",
+        "فردوسی آن را نام می‌برد تا اشکانیان را برای بجا گذاشتنِ ثبتِ اندک انتقاد کند",
+        "نام‌گذاری ثابت می‌کند که عصر وجود داشت و ایرانی بود — پیوستگیِ سنت را حفظ می‌کند حتی جایی که شاهنامه نمی‌تواند آن را پر کند"
+      ],
+      "answers_tg": [
+        "Номгузорӣ танҳо маросимӣ аст — фасли Ашконӣ мӯҳтавои воқеӣ надорад",
+        "Номгузорӣ нишон медиҳад ки давраи Ашконӣ шармовар буд ва арзиши сабт надошт",
+        "Фирдавсӣ онро ном мебарад то Ашкониёнро барои боқӣ гузоштани сабти андак интиқод кунад",
+        "Номгузорӣ исбот мекунад ки аср вуҷуд дошт ва эронӣ буд — пайвастагии суннатро ҳифз мекунад ҳатто ҷое ки Шоҳнома наметавонад онро пур кунад"
+      ],
+      "correct_answer": 3,
+      "explanation": "By naming the Arsacid age, Ferdowsi places it in the chronicle's continuity of Iranian history. The gap in records does not mean the period did not exist — it means the records were lost. The naming preserves the claim that the Iranian tradition was unbroken.",
+      "explanation_fa": "با نام‌گذاریِ دوره‌ی اشکانی، فردوسی آن را در پیوستگیِ شاهنامه‌ی تاریخِ ایرانی قرار می‌دهد.",
+      "explanation_tg": "Бо номгузории давраи Ашконӣ, Фирдавсӣ онро дар пайвастагии Шоҳномаи таърихи эронӣ ҷой медиҳад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ash-m4",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "What does the Shahnameh say the Arsacid period lacked that made the chronicle hard to write?",
+      "question_fa": "شاهنامه می‌گوید دوره‌ی اشکانی فاقدِ چه چیزی بود که نوشتنِ شاهنامه را سخت می‌کرد؟",
+      "question_tg": "Шоҳнома мегӯяд давраи Ашконӣ аз чӣ маҳрум буд ки навиштани Шоҳномаро душвор мекард?",
+      "answers": [
+        "Literary records — the Arsacid era left fewer written accounts than the mythic age or the Sasanian era",
+        "Royal palaces — the Arsacid kings built no monuments",
+        "A royal language — the Arsacids used Greek rather than Persian",
+        "Military heroes — the Arsacids produced no great warriors"
+      ],
+      "answers_fa": [
+        "ثبتِ ادبی — دوره‌ی اشکانی حساب‌های مکتوبِ کمتری نسبت به عصرِ اسطوره‌ای یا ساسانی بجا گذاشت",
+        "کاخ‌های شاهانه — شاهانِ اشکانی هیچ یادبودی نساختند",
+        "زبانِ شاهانه — اشکانیان از یونانی به جای فارسی استفاده می‌کردند",
+        "قهرمانانِ نظامی — اشکانیان هیچ جنگجویِ بزرگی تولید نکردند"
+      ],
+      "answers_tg": [
+        "Сабти адабӣ — давраи Ашконӣ ҳисобҳои хаттии камтаре нисбат ба асри афсонавӣ ё Сосонӣ боқӣ гузошт",
+        "Кохонаҳои шоҳонае — шоҳони Ашконӣ ҳеч ёдгоре насохтанд",
+        "Забони шоҳонае — Ашкониён аз юнонӣ ба ҷои форсӣ истифода мекарданд",
+        "Қаҳрамонони низомӣ — Ашкониён ҳеч ҷангҷӯи бузурге тавлид накарданд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Arsacid era is the Shahnameh's 'gap in memory' — Ferdowsi acknowledges that he lacked sufficient material. The oral and written traditions that fed the Shahnameh were stronger for the mythic and Sasanian eras than for the Arsacid period.",
+      "explanation_fa": "دوره‌ی اشکانی «شکافِ حافظه» در شاهنامه است — فردوسی می‌پذیرد که مادهِ کافی نداشت.",
+      "explanation_tg": "Давраи Ашконӣ «шикофи хотира» дар Шоҳнома аст — Фирдавсӣ мепазирад ки маводи кофӣ надошт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ash-m5",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "The Shahnameh acknowledges its own limitations in the Arsacid chapter. What does this self-awareness reveal about how Ferdowsi understood his role as a chronicler?",
+      "question_fa": "شاهنامه محدودیت‌هایش را در فصلِ اشکانی می‌پذیرد. این خودآگاهی درباره‌ی اینکه فردوسی چگونه نقشش را به عنوانِ شاهنامه‌نویس درک کرد چه چیزی نشان می‌دهد؟",
+      "question_tg": "Шоҳнома маҳдудиятҳояшро дар фасли Ашконӣ мепазирад. Ин худогоҳӣ дар бораи ин ки Фирдавсӣ нақши худашро ба унвони Шоҳноманавис чӣ тавр фаҳмид чиро нишон медиҳад?",
+      "answers": [
+        "He considered himself the sole authority on Iranian history",
+        "He believed himself to be divinely inspired and infallible",
+        "He was primarily an entertainer rather than a historian",
+        "He understood his role as dependent on sources — he could not fabricate what was not there; the chronicle is only as complete as the tradition it inherits"
+      ],
+      "answers_fa": [
+        "خودش را تنها مرجعِ تاریخِ ایرانی می‌دانست",
+        "باور داشت از نظرِ الهی الهام گرفته و معصوم است",
+        "اساساً سرگرم‌کننده بود نه مورخ",
+        "درک کرد که نقشش به منابع وابسته است — نمی‌توانست چیزی را که آنجا نبود جعل کند؛ شاهنامه فقط به اندازه‌ی سنتی که از آن ارث می‌برد کامل است"
+      ],
+      "answers_tg": [
+        "Худашро ягона марҷаи таърихи эронӣ мешуморид",
+        "Бовар дошт аз назари илоҳӣ илҳом гирифта ва маъсум аст",
+        "Асосан сирҷунбон буд на муаррих",
+        "Дарк кард ки нақши ӯ ба манобе вобаста аст — наметавонист чизеро ки он ҷо набуд ҷаъл кунад; Шоҳнома танҳо ба андозаи суннате ки аз он мерос мебарад комил аст"
+      ],
+      "correct_answer": 3,
+      "explanation": "Ferdowsi's acknowledgment of the gap in his Arsacid sources is a rare moment of historical self-awareness in medieval epic poetry. It reveals that he understood the Shahnameh was a transmission of tradition rather than a fabrication — he could only record what the tradition had preserved.",
+      "explanation_fa": "پذیرشِ فردوسی از شکاف در منابعِ اشکانی‌اش لحظه‌ی نادری از خودآگاهیِ تاریخی در شعرِ حماسیِ قرونِ وسطایی است.",
+      "explanation_tg": "Пазириши Фирдавсӣ аз шикоф дар манобеи Ашконии ӯ лаҳзаи нодири худогоҳии таърихӣ дар шеъри ҳамосии асримиёнагист.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "ash-h1",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "The Arsacid period lasted four centuries — longer than the Achaemenids or Sasanians. Yet the Shahnameh rushes through it. What does this inversion of attention and importance reveal about how chronicles work?",
+      "question_fa": "دوره‌ی اشکانی چهار قرن طول کشید — طولانی‌تر از هخامنشیان یا ساسانیان. با این حال شاهنامه از آن می‌گذرد. این واژگونیِ توجه و اهمیت درباره‌ی نحوه‌ی کارکردِ شاهنامه‌ها چه چیزی نشان می‌دهد؟",
+      "question_tg": "Давраи Ашконӣ чаҳор аср тӯл кашид — тӯлонитар аз Ҳахоманишиён ё Сосониён. Аммо Шоҳнома аз он мегузарад. Ин вожгуниии таваҷҷӯҳ ва аҳамият дар бораи чӣ тавр кор кардани Шоҳномаҳо чиро нишон медиҳад?",
+      "answers": [
+        "Chronicles record what stories survive, not what actually happened — historical significance and narrative survival are independent variables",
+        "Ferdowsi deliberately minimised the Arsacid period for political reasons",
+        "The Arsacid period was genuinely less significant than other eras",
+        "More important events always get more space in chronicles"
+      ],
+      "answers_fa": [
+        "شاهنامه‌ها آنچه داستان‌ها زنده می‌ماند را ثبت می‌کنند نه آنچه واقعاً اتفاق افتاد — اهمیتِ تاریخی و بقایِ روایی متغیرهای مستقل هستند",
+        "فردوسی عمداً دوره‌ی اشکانی را به دلایلِ سیاسی به حداقل رساند",
+        "دوره‌ی اشکانی واقعاً از سایرِ عصرها کم‌اهمیت‌تر بود",
+        "رویدادهایِ مهم‌تر همیشه در شاهنامه‌ها فضای بیشتری می‌گیرند"
+      ],
+      "answers_tg": [
+        "Шоҳномаҳо он чиро ки достонҳо зинда мемонад сабт мекунанд, на он чи воқеан иттифоқ афтод — аҳамияти таърихӣ ва бақои ривоӣ тағйирёбандаҳои мустақил ҳастанд",
+        "Фирдавсӣ қасдан давраи Ашконӣ ро ба сабабҳои сиёсӣ ба ҳадди ақал расонид",
+        "Давраи Ашконӣ воқеан аз дигар асрҳо бе‌аҳамияттар буд",
+        "Рӯйдодҳои муҳимтар ҳамеша дар Шоҳномаҳо ҷои бештаре мегиранд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Arsacid section reveals something important about the nature of historical chronicles: they record what survived in collective memory and narrative tradition, not necessarily what was most historically significant. Four centuries of Arsacid rule produced less narrative material than a few generations of Sasanian kings because the Sasanian era left more literary records.",
+      "explanation_fa": "بخشِ اشکانی چیزِ مهمی درباره‌ی ماهیتِ شاهنامه‌های تاریخی نشان می‌دهد: آنها آنچه در حافظه‌ی جمعی و سنتِ روایی بجا ماند را ثبت می‌کنند.",
+      "explanation_tg": "Бахши Ашконӣ чизи муҳиме дар бораи моҳияти Шоҳномаҳои таърихӣ нишон медиҳад: онҳо он чиро ки дар хотираи ҷамъӣ ва суннати ривоӣ боқӣ монд сабт мекунанд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ash-h2",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "The Arsacid confederation gave Iran resilience the Sasanians lacked. Yet the Shahnameh clearly prefers the Sasanian chapters. What does this preference reveal about the Shahnameh's values?",
+      "question_fa": "کنفدراسیونِ اشکانی به ایران انعطاف‌پذیری‌ای داد که ساسانیان فاقدش بودند. با این حال شاهنامه آشکارا فصل‌های ساسانی را ترجیح می‌دهد. این ترجیح درباره‌ی ارزش‌های شاهنامه چه چیزی نشان می‌دهد؟",
+      "question_tg": "Конфедератсиявии Ашконӣ ба Эрон устуворее дод ки Сосониён надоштанд. Аммо Шоҳнома ошкоро фасл-ҳои Сосониро афзалтар медонад. Ин афзалиятдиҳӣ дар бораи арзишҳои Шоҳнома чиро нишон медиҳад?",
+      "answers": [
+        "The preference for Sasanians is because Ferdowsi was himself a Sasanian supporter",
+        "Resilience is the Shahnameh's highest political value",
+        "The Shahnameh has no consistent values — it simply records what happened",
+        "The Shahnameh values centralised royal authority and cultural achievement over distributed resilience — it celebrates kings who built, administered, and produced culture"
+      ],
+      "answers_fa": [
+        "ترجیح برای ساسانیان به این دلیل است که فردوسی خودش از حامیانِ ساسانی بود",
+        "انعطاف‌پذیری بالاترین ارزشِ سیاسیِ شاهنامه است",
+        "شاهنامه ارزش‌های ثابتی ندارد — صرفاً آنچه اتفاق افتاد را ثبت می‌کند",
+        "شاهنامه اقتدارِ سلطنتیِ متمرکز و دستاوردِ فرهنگی را بر انعطاف‌پذیریِ توزیع‌شده ارزش‌گذاری می‌کند — شاهانی را جشن می‌گیرد که ساختند، اداره کردند، و فرهنگ تولید کردند"
+      ],
+      "answers_tg": [
+        "Афзалиятдиҳӣ барои Сосониён аз ин ҷиҳат аст ки Фирдавсӣ худаш аз ҳомиёни Сосонӣ буд",
+        "Устуворӣ баландтарин арзиши сиёсии Шоҳнома аст",
+        "Шоҳнома арзишҳои устувор надорад — танҳо он чи иттифоқ афтод ро сабт мекунад",
+        "Шоҳнома аутории шоҳаншоҳии марказигар ва дастоварди фарҳангиро аз устувории тақсимшуда арзишгузорӣ мекунад — шоҳонеро ҷашн мегирад ки сохтанд, идора карданд, ва фарҳанг тавлид карданд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh is a chronicle of royal court culture — it celebrates kings who built administrations, patronised culture, and defined eras. The Arsacid confederation, for all its resilience, produced less court culture than the Sasanian centralisation. The Shahnameh's values are biased toward the kind of achievement that leaves records.",
+      "explanation_fa": "شاهنامه شاهنامه‌ی فرهنگِ دربارِ شاهانه است — شاهانی را جشن می‌گیرد که ادارات ساختند، فرهنگ را حمایت کردند، و عصرها را تعریف کردند.",
+      "explanation_tg": "Шоҳнома Шоҳномаи фарҳанги дарбори шоҳонаест — шоҳонеро ҷашн мегирад ки маъмуриятҳо сохтанд, фарҳангро ҳимоят карданд, ва асрҳоро таъриф карданд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ash-h3",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "The Shahnameh's Arsacid section is where 'the reader feels the chronicle's own awareness of its limitations.' What is significant about a chronicle that knows what it doesn't know?",
+      "question_fa": "بخشِ اشکانیِ شاهنامه جایی است که «خواننده آگاهیِ خودِ شاهنامه از محدودیت‌هایش را احساس می‌کند.» چه چیزی در موردِ شاهنامه‌ای اهمیت دارد که می‌داند چه نمی‌داند؟",
+      "question_tg": "Бахши Ашконии Шоҳнома ҷоест ки «хонанда огоҳии худи Шоҳномаро аз маҳдудиятҳояш ҳис мекунад.» Чӣ чиз дар мавриди Шоҳномае аҳамият дорад ки медонад чиро намедонад?",
+      "answers": [
+        "It is honest — it does not fabricate to fill gaps; its admissions of ignorance are more valuable than confident confabulations",
+        "A chronicle that admits ignorance is less authoritative",
+        "The awareness of limitation proves the chronicle was not divinely inspired",
+        "Admissions of ignorance undermine the chronicle's claim to historical accuracy"
+      ],
+      "answers_fa": [
+        "صادق است — برای پر کردنِ شکاف‌ها جعل نمی‌کند؛ اعترافاتِ جهلش از تأییداتِ مطمئنِ ساختگی ارزشمندتر است",
+        "شاهنامه‌ای که جهل را می‌پذیرد کمتر معتبر است",
+        "آگاهی از محدودیت ثابت می‌کند که شاهنامه از نظرِ الهی الهام نگرفته",
+        "اعترافاتِ جهل ادعایِ شاهنامه به دقتِ تاریخی را تضعیف می‌کند"
+      ],
+      "answers_tg": [
+        "Рост аст — барои пур кардани шикофҳо ҷаъл намекунад; эътирофоти ҷаҳлаш аз тасдиқоти боэтимоди сохтагӣ арзандатаранд",
+        "Шоҳномае ки ҷаҳлро мепазирад камтар муътабар аст",
+        "Огоҳӣ аз маҳдудият исбот мекунад ки Шоҳнома аз назари илоҳӣ илҳом нагирифтааст",
+        "Эътирофоти ҷаҳл иддаъои Шоҳномаро ба дақиқати таърихӣ заиф мекунад"
+      ],
+      "correct_answer": 0,
+      "explanation": "A chronicle that admits 'I do not have sufficient material for this period' is being epistemically honest. It is more trustworthy in what it does record precisely because it acknowledges where it cannot. The Shahnameh's Arsacid section is evidence of Ferdowsi's intellectual integrity.",
+      "explanation_fa": "شاهنامه‌ای که اعتراف می‌کند «مادهِ کافی برای این دوره ندارم» از نظرِ معرفت‌شناختی صادق است. در آنچه ثبت می‌کند دقیقاً به این دلیل قابلِ اعتمادتر است که می‌پذیرد کجا نمی‌تواند.",
+      "explanation_tg": "Шоҳномае ки эътироф мекунад «маводи кофӣ барои ин давра надорам» аз назари маърифатшиносӣ рост аст. Дар он чи сабт мекунад дақиқан аз ин ҷиҳат қобили боварутар аст ки мепазирад дар куҷо наметавонад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ash-h4",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "The Arsacid system of distributed power was eventually replaced by Sasanian centralisation. The Shahnameh records that the centralisation 'would later break.' What does this observation suggest about governance?",
+      "question_fa": "نظامِ اشکانیِ قدرتِ توزیع‌شده در نهایت توسطِ تمرکزِ ساسانی جایگزین شد. شاهنامه ثبت می‌کند که تمرکز «بعداً می‌شکست.» این مشاهده درباره‌ی حکمرانی چه چیزی نشان می‌دهد؟",
+      "question_tg": "Системи Ашконии қудрати тақсимшуда дар ниҳоят аз ҷониби марказигарии Сосонӣ иваз шуд. Шоҳнома сабт мекунад ки марказигарӣ «баъдтар мешикаст.» Ин мушоҳода дар бораи ҳукуматдорӣ чиро нишон медиҳад?",
+      "answers": [
+        "The Sasanian collapse was caused by external pressure, not internal structural weakness",
+        "Centralisation is always superior to distributed power in the long run",
+        "Strong central authority is the only system that can produce cultural achievement",
+        "Centralisation and resilience are in tension — the most efficient systems are often the most brittle, while distributed systems are less efficient but absorb shocks better"
+      ],
+      "answers_fa": [
+        "فروپاشیِ ساسانی توسطِ فشارِ خارجی ایجاد شد نه ضعفِ ساختاریِ داخلی",
+        "تمرکز در دراز‌مدت همیشه بر قدرتِ توزیع‌شده برتری دارد",
+        "اقتدارِ مرکزیِ قوی تنها سیستمی است که می‌تواند دستاوردِ فرهنگی تولید کند",
+        "تمرکز و انعطاف‌پذیری در تنش هستند — کارآمدترین سیستم‌ها اغلب شکننده‌ترین هستند، در حالی که سیستم‌های توزیع‌شده کمتر کارآمد اما ضربه را بهتر جذب می‌کنند"
+      ],
+      "answers_tg": [
+        "Фурӯпошии Сосонӣ аз ҷониби фишори хориҷӣ эҷод шуд на заъфи сохтории дохилӣ",
+        "Марказигарӣ дар дарозмуддат ҳамеша аз қудрати тақсимшуда бартар аст",
+        "Аутории марказии қавӣ ягона системаест ки метавонад дастоварди фарҳангӣ тавлид кунад",
+        "Марказигарӣ ва устуворӣ дар таззод ҳастанд — самарарнокантарин системаҳо аксар вақт шикананда‌тарин ҳастанд, дар ҳоле ки системаҳои тақсимшуда камтар самаранок аммо зарбаро беҳтар ҷаббида мекунанд"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's observation about the Sasanian centralisation 'that would later break' is a structural critique embedded in the narrative: systems optimised for efficiency sacrifice resilience; systems built for resilience sacrifice efficiency. Neither is perfect. The Arsacid confederation was resilient but culturally thin; the Sasanian empire was productive but brittle.",
+      "explanation_fa": "مشاهده‌ی شاهنامه از تمرکزِ ساسانی «که بعداً می‌شکست» یک انتقادِ ساختاری است که در روایت گنجانده شده.",
+      "explanation_tg": "Мушоҳидаи Шоҳнома аз марказигарии Сосонии «ки баъдтар мешикаст» интиқоди сохторист ки дар ривоят гунҷонида шудааст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ash-h5",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "Ferdowsi compresses four centuries of Arsacid history into a few pages. Medieval readers would have found this unusual. What does his willingness to compress signal about his priorities for the Shahnameh?",
+      "question_fa": "فردوسی چهار قرن تاریخِ اشکانی را در چند صفحه فشرده می‌کند. خوانندگانِ قرونِ وسطایی این را غیرعادی می‌یافتند. تمایلش برای فشرده‌سازی چه چیزی درباره‌ی اولویت‌هایش برای شاهنامه نشان می‌دهد؟",
+      "question_tg": "Фирдавсӣ чаҳор асри таърихи Ашкониро ба чанд саҳифа фишурда мекунад. Хонандагони асримиёнагӣ инро ғайримаъмул меёфтанд. Тамоюли ӯ барои фишурдасозӣ дар бораи авлавиятҳояш барои Шоҳнома чиро нишон медиҳад?",
+      "answers": [
+        "He was building a cultural monument, not writing comprehensive history — completeness mattered less than the quality of what he included",
+        "He was ordered by his patrons to keep the Arsacid section brief",
+        "He believed the Arsacid kings were unworthy of inclusion",
+        "He was lazy about historical research"
+      ],
+      "answers_fa": [
+        "یادبودِ فرهنگی می‌ساخت نه تاریخِ جامع — کامل بودن از کیفیتِ آنچه گنجاند کمتر اهمیت داشت",
+        "از حامیانش دستور داشت که بخشِ اشکانی را کوتاه نگه دارد",
+        "باور داشت که شاهانِ اشکانی شایستگیِ ورود نداشتند",
+        "درباره‌ی تحقیقِ تاریخی تنبل بود"
+      ],
+      "answers_tg": [
+        "Ёдгори фарҳангӣ месохт, на таърихи ҷомеъ — комилият аз сифати он чи ворид кард камтар аҳамият дошт",
+        "Аз ҳомиёнаш дастур дошт бахши Ашкониро кӯтоҳ нигоҳ дорад",
+        "Бовар дошт ки шоҳони Ашконӣ шоистагии ворудро надоштанд",
+        "Дар бораи таҳқиқи таърихӣ танбал буд"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Shahnameh is a monument of Iranian civilization, not a history textbook. Ferdowsi's priorities were the mythic age (the deepest cultural memory), the heroic age (Rostam and the great wars), and the Sasanian era (the closest to his own time). The Arsacid period fell between his strongest source materials.",
+      "explanation_fa": "شاهنامه یادبودِ تمدنِ ایرانی است نه کتابِ درسیِ تاریخ. اولویت‌های فردوسی عصرِ اسطوره‌ای، عصرِ پهلوانی، و دوره‌ی ساسانی بودند.",
+      "explanation_tg": "Шоҳнома ёдгори тамаддуни эронист, на китоби дарсии таърих. Авлавиятҳои Фирдавсӣ асри афсонавӣ, асри паҳлавонӣ, ва давраи Сосонӣ буданд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ash-h6",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "The Shahnameh names the Arsacid age to 'establish that it was Iranian.' Why is the Iranianness of the Arsacid period important to the chronicle's argument?",
+      "question_fa": "شاهنامه دوره‌ی اشکانی را می‌نامد تا «ثابت کند که ایرانی بود.» چرا ایرانی بودنِ دوره‌ی اشکانی برای استدلالِ شاهنامه اهمیت دارد؟",
+      "question_tg": "Шоҳнома давраи Ашконӣро меномад то «исбот кунад ки эронӣ буд.» Чаро эронии будани давраи Ашконӣ барои далели Шоҳнома аҳамият дорад?",
+      "answers": [
+        "The Arsacids were not actually Iranian and the Shahnameh is trying to claim them retrospectively",
+        "The Iranianness of each dynasty is irrelevant — legitimacy comes from governance quality alone",
+        "The naming is merely to fill space between the Achaemenid and Sasanian sections",
+        "The Shahnameh argues for unbroken Iranian cultural continuity — a gap of four centuries without an Iranian king would undermine the claim of continuity it makes"
+      ],
+      "answers_fa": [
+        "اشکانیان در واقع ایرانی نبودند و شاهنامه تلاش می‌کند آنها را به صورتِ گذشته‌نگرانه ادعا کند",
+        "ایرانی بودنِ هر سلسله نامرتبط است — مشروعیت فقط از کیفیتِ حکمرانی می‌آید",
+        "نام‌گذاری صرفاً برای پر کردنِ فضا بینِ بخش‌های هخامنشی و ساسانی است",
+        "شاهنامه برای پیوستگیِ فرهنگیِ ایرانیِ بی‌انقطاع استدلال می‌کند — شکافِ چهار قرنه بدون یک شاهِ ایرانی ادعایِ پیوستگی را که مطرح می‌کند تضعیف می‌کرد"
+      ],
+      "answers_tg": [
+        "Ашкониён воқеан эронӣ набуданд ва Шоҳнома тлош мекунад онҳоро ба сурати гузаштанигарона иддаъо кунад",
+        "Эронии будани ҳар сулола нобарбат аст — машруият танҳо аз сифати ҳукуматдорӣ меояд",
+        "Номгузорӣ танҳо барои пур кардани ҷой байни бахшҳои Ҳахоманишӣ ва Сосонӣ аст",
+        "Шоҳнома барои пайвастагии фарҳангии эронии беинқитоъ далел мекунад — шикофи чаҳор асра бидуни шоҳи эронӣ иддаъои пайвастагиеро ки мекунад заиф мекард"
+      ],
+      "correct_answer": 3,
+      "explanation": "The Shahnameh's central claim is that Iranian civilisation is continuous — from Keyumars to the Arab conquest, there is one tradition, not a series of disconnected eras. Every named dynasty, including the Arsacid, is part of establishing that claim. The Arsacid naming prevents a four-century gap from appearing in the chronicle's argument.",
+      "explanation_fa": "ادعایِ مرکزیِ شاهنامه این است که تمدنِ ایرانی پیوسته است — از کیومرث تا فتحِ عرب، یک سنت وجود دارد نه مجموعه‌ای از عصرهای قطع‌شده.",
+      "explanation_tg": "Иддаъои марказии Шоҳнома ин аст ки тамаддуни эронӣ пайваста аст — аз Кайюмарс то фатҳи арабӣ, як суннат вуҷуд дорад на маҷмӯаи асрҳои ҷудо.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ash-h7",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "What does the Shahnameh's own admission that it lacks sufficient Arsacid material tell us about the relationship between historical events and cultural memory?",
+      "question_fa": "اعترافِ خودِ شاهنامه به اینکه مادهِ اشکانیِ کافی ندارد درباره‌ی رابطه‌ی بینِ رویدادهایِ تاریخی و حافظه‌ی فرهنگی چه چیزی به ما می‌گوید؟",
+      "question_tg": "Эътирофи худи Шоҳнома ба ин ки маводи кофии Ашкониро надорад дар бораи муносибати байни рӯйдодҳои таърихӣ ва хотираи фарҳангӣ чиро ба мо мегӯяд?",
+      "answers": [
+        "Persian court culture preserved all events equally through written records",
+        "Important events always generate strong cultural memory automatically",
+        "Events only persist in cultural memory if they generated stories — historical significance and narrative transmission are independent; the Arsacids governed but did not generate an oral tradition strong enough to survive",
+        "Cultural memory is more reliable than written history"
+      ],
+      "answers_fa": [
+        "فرهنگِ دربارِ ایرانی همه‌ی رویدادها را به طورِ مساوی از طریقِ ثبتِ مکتوب حفظ کرد",
+        "رویدادهای مهم همیشه به طورِ خودکار حافظه‌ی فرهنگیِ قوی تولید می‌کنند",
+        "رویدادها فقط در حافظه‌ی فرهنگی باقی می‌مانند اگر داستان تولید کرده باشند — اهمیتِ تاریخی و انتقالِ روایی مستقل هستند؛ اشکانیان حکومت کردند اما سنتِ شفاهیِ قوی‌کافی برای بقا تولید نکردند",
+        "حافظه‌ی فرهنگی قابلِ اعتمادتر از تاریخِ مکتوب است"
+      ],
+      "answers_tg": [
+        "Фарҳанги дарбори эронӣ ҳамаи рӯйдодҳоро баробар тавассути сабти хаттӣ ҳифз кард",
+        "Рӯйдодҳои муҳим ҳамеша ба таври худкор хотираи фарҳангии қавӣ тавлид мекунанд",
+        "Рӯйдодҳо танҳо дар хотираи фарҳангӣ боқӣ мемонанд агар достон тавлид карда бошанд — аҳамияти таърихӣ ва интиқоли ривоӣ мустақил ҳастанд؛ Ашкониён ҳукумат карданд аммо суннати шифоҳии кофии қавие барои бақо тавлид накарданд",
+        "Хотираи фарҳангӣ аз таърихи хаттӣ қобили боваттар аст"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Arsacid period lasted four centuries and governed effectively. Yet it left thin narrative records. This shows that historical importance and narrative transmission are distinct — events persist in cultural memory not because they were important but because they generated compelling stories. The Arsacid confederation was resilient but not particularly story-generating.",
+      "explanation_fa": "دوره‌ی اشکانی چهار قرن دوام آورد و به‌طور مؤثری حکومت کرد. با این حال ثبتِ روایی نازکی بجا گذاشت. این نشان می‌دهد که اهمیتِ تاریخی و انتقالِ روایی متمایز هستند.",
+      "explanation_tg": "Давраи Ашконӣ чаҳор аср давом кард ва самаранок ҳукумат кард. Аммо сабти ривоии нозуке боқӣ гузошт. Ин нишон медиҳад ки аҳамияти таърихӣ ва интиқоли ривоӣ ҷудоганаанд.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "ash-h8",
+      "chapter_slug": "ashkanian-age",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "What does the Shahnameh's positioning of the Arsacid era between Alexander and Ardeshir accomplish structurally?",
+      "question_fa": "موقعیت‌یابیِ شاهنامه از دوره‌ی اشکانی بینِ اسکندر و اردشیر از نظرِ ساختاری چه چیزی انجام می‌دهد؟",
+      "question_tg": "Ҷойгузинии Шоҳнома аз давраи Ашконӣ байни Искандар ва Ардашер аз назари сохторӣ чиро анҷом медиҳад?",
+      "answers": [
+        "It provides chronological continuity between the Greek interlude and the Sasanian renaissance — without it there would be an unexplained four-century gap",
+        "It demonstrates that the Sasanian rise required the Arsacid failure as a precondition",
+        "It shows the Arsacid period was a golden age between two great dynasties",
+        "It is purely chronological placement with no structural significance"
+      ],
+      "answers_fa": [
+        "پیوستگیِ زمانی بینِ دورانِ یونانی و رنسانسِ ساسانی فراهم می‌کند — بدون آن شکافِ توضیح‌ناپذیرِ چهارقرنی وجود می‌داشت",
+        "نشان می‌دهد که برخاستنِ ساسانی به شکستِ اشکانی به عنوانِ پیش‌شرط نیاز داشت",
+        "نشان می‌دهد دوره‌ی اشکانی عصرِ طلاییِ بینِ دو سلسله‌ی بزرگ بود",
+        "موقعیت‌یابیِ صرفاً زمانی است بدون اهمیتِ ساختاری"
+      ],
+      "answers_tg": [
+        "Пайвастагии замонӣ байни давраи юнонӣ ва эҳёи Сосонӣ таъмин мекунад — бидуни он шикофи тавзеҳнопазири чаҳораср وجуд мешуд",
+        "Нишон медиҳад ки баромади Сосонӣ ба шикасти Ашконӣ ба унвони пешшарт ниёз дошт",
+        "Нишон медиҳад давраи Ашконӣ асри тиллоии байни ду сулолаи бузург буд",
+        "Ҷойгузинии танҳо замонист бе аҳамияти сохторӣ"
+      ],
+      "correct_answer": 0,
+      "explanation": "Structurally, the Arsacid era prevents a gap in the Iranian tradition between Alexander's conquest and the Sasanian founding. The Shahnameh argues for continuous Iranian kingship — the Arsacids, however briefly treated, maintain that argument. Without them, the Sasanian Ardeshir would appear to be creating something new rather than restoring something continuous.",
+      "explanation_fa": "از نظرِ ساختاری، دوره‌ی اشکانی از شکافی در سنتِ ایرانی بینِ فتحِ اسکندر و پایه‌گذاریِ ساسانی جلوگیری می‌کند.",
+      "explanation_tg": "Аз назари сохторӣ, давраи Ашконӣ аз шикофе дар суннати эронӣ байни фатҳи Искандар ва таъсиси Сосонӣ пешгирӣ мекунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]

@@ -261,13 +261,14 @@
       {
         "id": "level",
         "kind": "level",
-        "target": 25,
-        "label_en": "Reach LVL 25",
+        "target": 3,
+        "label_en": "Upgrade Siamak to Lv.3",
         "label_fa": "رسیدن به سطحِ ۲۵",
         "label_tg": "Расидан ба сатҳи 25",
         "hint_en": "Tap, complete quests, and claim daily rewards to earn XP.",
         "hint_fa": "ضربه بزنید، مأموریت‌ها را کامل کنید و پاداش‌های روزانه بگیرید.",
-        "hint_tg": "Зарба занед, вазифаҳоро иҷро кунед ва мукофотҳои рӯзонаро гиред."
+        "hint_tg": "Зарба занед, вазифаҳоро иҷро кунед ва мукофотҳои рӯзонаро гиред.",
+        "hero_id": "siamak"
       },
       {
         "id": "quiz",

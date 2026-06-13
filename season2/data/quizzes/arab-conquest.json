@@ -1,143 +1,563 @@
 {
   "quizzes": [
     {
-      "id": "arb-e1",
+      "id": "arbc-e1",
       "chapter_slug": "arab-conquest",
       "quiz_part": 1,
       "difficulty": "easy",
-      "question": "What gave the Arab armies their decisive advantage over the exhausted Sasanian forces?",
-      "question_fa": "چه چیزی به سپاه عرب برتری قطعی‌شان را بر نیروهای ساسانی خسته داد؟",
-      "question_tg": "Чӣ ба артишҳои Арабӣ бартарии қатъии онҳоро бар нерӯҳои Сосонии хаста дод?",
+      "question": "According to the chapter, what did the armies out of Arabia have that the Sasanians 'could not manufacture quickly enough to matter'?",
+      "question_fa": "طبقِ این فصل، ارتش‌های برآمده از عربستان چه چیزی داشتند که ساسانیان «نمی‌توانستند به‌موقع تولیدش کنند»؟",
+      "question_tg": "Тибқи ин боб, лашкарҳои баромада аз Арабистон чӣ чизе доштанд ки сосониён «наметавонистанд баваққт тавлидаш кунанд»?",
       "answers": [
-        "Unified belief and certainty in their moment — a coherence the factional Sasanian court could not match",
-        "Superior cavalry tactics learned from fighting the Byzantines in the western campaigns",
-        "A chain of fortresses along the Euphrates that allowed rapid resupply during campaigns",
-        "An alliance with the remaining Arsacid nobles who guided them through Sasanian territory"
+        "Gold — the caliphate paid better wages",
+        "Cavalry — Arabia bred the fastest horses",
+        "Belief — the certainty of men convinced their moment had arrived",
+        "Steel — their swords were unbreakable"
       ],
       "answers_fa": [
-        "باور متحد و یقین به لحظه‌شان — انسجامی که دربار ساسانی فرقه‌ای نمی‌توانست با آن برابری کند",
-        "تاکتیک‌های سواره‌نظام برتر که از جنگ با بیزانس در کمپین‌های غربی آموخته بودند",
-        "زنجیره‌ای از دژها در امتداد فرات که در طول کمپین‌ها تدارکات سریع را ممکن می‌کرد",
-        "اتحاد با اشراف باقیمانده اشکانی که آنها را از طریق قلمرو ساسانی راهنمایی کردند"
+        "طلا — خلافت مزدِ بهتری می‌داد",
+        "سواره‌نظام — عربستان تندروترین اسب‌ها را پرورش می‌داد",
+        "باور — یقینِ مردانی که مطمئن بودند لحظه‌شان فرا رسیده",
+        "فولاد — شمشیرهایشان نشکستنی بود"
       ],
       "answers_tg": [
-        "Бовари муттаҳид ва яқин ба лаҳзаи онҳо — ҳамоҳангие ки дарбори Сосонии фирқаӣ бо он баробарӣ карда наметавонист",
-        "Тактикаҳои бартари савора ки аз ҷангидан бо Визонт дар кампинияҳои ғарбӣ омӯхта буданд",
-        "Силсилаи қалъаҳо дар тӯли Фурот ки дар тӯли кампинияҳо таъминоти зуд имконпазир мекард",
-        "Иттиҳоде бо ашрофони боқимондаи Ашконӣ ки онҳоро тавассути қаламрови Сосонӣ раҳнамоӣ карданд"
+        "Тилло — хилофат музди беҳтаре медод",
+        "Саворанизом — Арабистон тездавтарин аспҳоро парвариш медод",
+        "Бовар — яқини мардоне ки мутмаин буданд лаҳзаашон фаро расида",
+        "Пӯлод — шамшерҳояшон нашикастанӣ буд"
       ],
-      "correct_answer": 0,
-      "explanation": "The Arab armies had something the Sasanians could not manufacture quickly: belief. They moved with the coherence of men who were certain their moment had arrived. The Sasanian court — eight rulers in four years, empty treasury, scattered army — had lost exactly that kind of coherent purpose.",
-      "explanation_fa": "سپاه عرب چیزی داشت که ساسانیان نمی‌توانستند به سرعت تولید کنند: باور. با انسجام مردانی حرکت می‌کردند که یقین داشتند لحظه‌شان رسیده. دربار ساسانی — هشت حاکم در چهار سال، خزانه خالی، ارتش پراکنده — دقیقاً همان نوع هدف منسجم را از دست داده بود.",
-      "explanation_tg": "Артишҳои Арабӣ чизе доштанд ки Сосониён натавонистанд зуд истеҳсол кунанд: бовар. Бо ҳамоҳангии мардоне ҳаракат мекарданд ки яқин доштанд лаҳзаи онҳо расидааст.",
+      "correct_answer": 2,
+      "explanation": "What they had was belief — not only religious belief, but the certainty of men who had been marginal and were now inside the great empires, watching them struggle. Belief was the one weapon Ctesiphon could not forge.",
+      "explanation_fa": "آنچه داشتند باور بود — یقینِ مردمانی حاشیه‌ای که حالا درونِ امپراتوری‌ها بودند.",
+      "explanation_tg": "Он чи доштанд бовар буд — яқини мардумони ҳошияӣ ки ҳоло даруни империяҳо буданд.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "arb-m1",
+      "id": "arbc-e2",
       "chapter_slug": "arab-conquest",
-      "quiz_part": 1,
-      "difficulty": "medium",
-      "question": "How does the Shahnameh approach writing about the Arab conquest — given that Ferdowsi was himself a Muslim writing in the Islamic world?",
-      "question_fa": "شاهنامه با توجه به اینکه فردوسی خودش یک مسلمان بود که در دنیای اسلامی می‌نوشت، با موضوع فتح عرب چگونه برخورد می‌کند؟",
-      "question_tg": "Шоҳнома бо назардошти он ки Фирдавсӣ худаш мусулмоне буд ки дар ҷаҳони Исломӣ менавишт, ба мавзӯи фатҳи Арабӣ чӣ гуна муносибат мекунад?",
-      "answers": [
-        "Without hatred and without apology — focusing on what was lost (fire temples, archives, priesthood) rather than blaming the conquerors",
-        "With explicit condemnation of the Arab armies as destroyers of a superior civilization",
-        "As a divine punishment for the sins of the last Sasanian kings who failed their people",
-        "By presenting the conquest as a beneficial transformation that brought justice and equality to Iran"
-      ],
-      "answers_fa": [
-        "بدون نفرت و بدون عذرخواهی — با تمرکز بر آنچه از دست رفت (آتشکده‌ها، آرشیوها، روحانیون) به جای سرزنش فاتحان",
-        "با محکومیت صریح سپاه عرب به عنوان نابودگران تمدنی برتر",
-        "به عنوان مجازات الهی برای گناهان آخرین شاهان ساسانی که مردمشان را رها کردند",
-        "با نشان دادن فتح به عنوان تحولی سودمند که عدالت و برابری را به ایران آورد"
-      ],
-      "answers_tg": [
-        "Бидуни нафрат ва бидуни узрхоҳӣ — бо тамарказ бар он чи гум шуд (оташкадаҳо, архивҳо, рӯҳониён) ба ҷои сарзаниши фотеҳон",
-        "Бо маҳкумияти صадиqa артишҳои Арабӣ ҳамчун нобудкунандагони тамаддуни бартар",
-        "Ҳамчун ҷазои илоҳӣ барои гуноҳҳои охирин подшоҳони Сосонӣ ки мардумашонро тарк карданд",
-        "Бо нишон додани фатҳ ҳамчун тағйироти судманде ки адолат ва баробариро ба Эрон овард"
-      ],
-      "correct_answer": 0,
-      "explanation": "Ferdowsi was a Muslim living in the Islamic world. He did not write the conquest with hatred. He focused on loss — the fire temples extinguished, the archives scattered, the priesthood dispersed. The Arabs are the mechanism; the extinguished fires are the subject. This restraint is one of the poem's most mature achievements.",
-      "explanation_fa": "فردوسی یک مسلمان بود که در دنیای اسلامی زندگی می‌کرد. فتح را با نفرت ننوشت. روی از دست دادن تمرکز کرد — آتشکده‌های خاموش شده، آرشیوهای پراکنده، روحانیون منتشرشده. اعراب مکانیزم هستند؛ آتش‌های خاموش موضوع هستند. این خویشتن‌داری یکی از بالغانه‌ترین دستاوردهای شعر است.",
-      "explanation_tg": "Фирдавсӣ мусулмоне буд ки дар ҷаҳони Исломӣ зиндагӣ мекард. Фатҳро бо нафрат ننавишт. Бар аз даст доданро тамарказ кард — оташкадаҳои хомӯшшуда, архивҳои пароканда, рӯҳониёни паршударо. Арабҳо механизманд; оташҳои хомӯш мавзӯанд.",
-      "reward": {
-        "xp": 90,
-        "real": 35
-      }
-    },
-    {
-      "id": "arb-e2",
-      "chapter_slug": "arab-conquest",
-      "quiz_part": 1,
+      "quiz_part": 2,
       "difficulty": "easy",
-      "question": "What three things does the Shahnameh specifically identify as lost in the Arab conquest?",
-      "question_fa": "شاهنامه مشخصاً چه سه چیزی را به عنوان آنچه در فتح عرب از دست رفت شناسایی می‌کند؟",
-      "question_tg": "Шоҳнома мушаххасан чӣ се чизеро ҳамчун он чи дар фатҳи Арабӣ гум шуд муайян мекунад?",
+      "question": "What happened to the fire temples during the conquest?",
+      "question_fa": "در جریانِ فتح بر سرِ آتشکده‌ها چه آمد؟",
+      "question_tg": "Дар ҷараёни фатҳ бар сари оташкадаҳо чӣ омад?",
       "answers": [
-        "The fire temples extinguished, the royal archives lost or scattered, and the Zoroastrian priesthood dispersed",
-        "The Sasanian cavalry, the Persian language, and the royal bloodline of the Kayanian kings",
-        "The city of Ctesiphon, the treasury of Khosrow, and the agricultural system of lower Iraq",
-        "The trade routes to India, the canal system of Mesopotamia, and the Silk Road connections to China"
+        "Fires that had burned for centuries were extinguished",
+        "They were moved stone by stone to India",
+        "They were left untouched by treaty",
+        "They were all converted into fortresses"
       ],
       "answers_fa": [
-        "آتشکده‌های خاموش شده، آرشیوهای سلطنتی گم شده یا پراکنده، و روحانیون زرتشتی پراکنده شده",
-        "سواره‌نظام ساسانی، زبان فارسی، و خط سلطنتی شاهان کیانی",
-        "شهر تیسفون، خزانه خسرو، و سیستم کشاورزی عراق پایین",
-        "مسیرهای تجاری به هند، سیستم کانالی بین‌النهرین، و ارتباطات جاده ابریشم با چین"
+        "آتش‌هایی که قرن‌ها سوخته بودند خاموش شدند",
+        "سنگ به سنگ به هند منتقل شدند",
+        "طبقِ پیمان دست‌نخورده ماندند",
+        "همه به دژ تبدیل شدند"
       ],
       "answers_tg": [
-        "Оташкадаҳои хомӯшшуда, архивҳои шоҳонаи гумшуда ё пароканда, ва рӯҳониёни Зардуштии пароканда",
-        "Савораи Сосонӣ, забони Форсӣ, ва хатти шоҳонаи подшоҳони Каёнӣ",
-        "Шаҳри Тайсафун, хазинаи Хусрав, ва системаи кишоварзии ироқи поён",
-        "Роҳҳои тиҷоратии ба Ҳинд, системаи каналии Байнулнаҳрайн, ва иртибототи Роҳи Абрешим бо Чин"
+        "Оташҳое ки қарнҳо сӯхта буданд хомӯш шуданд",
+        "Санг ба санг ба Ҳинд мунтақил шуданд",
+        "Тибқи паймон дастнахӯрда монданд",
+        "Ҳама ба диж табдил шуданд"
       ],
       "correct_answer": 0,
-      "explanation": "The Shahnameh identifies three specific losses: the fire temples that had burned for centuries were extinguished; the royal archives at Ctesiphon — centuries of Sasanian records — were lost, burned, or scattered as the court fled; and the Zoroastrian priesthood that had preserved Iranian royal memory for a thousand years was dispersed.",
-      "explanation_fa": "شاهنامه سه از دست دادن مشخص را شناسایی می‌کند: آتشکده‌هایی که قرن‌ها سوخته بودند خاموش شدند؛ آرشیوهای سلطنتی در تیسفون — قرن‌ها پرونده‌های ساسانی — چون دربار فرار کرد گم، سوخته یا پراکنده شدند؛ و روحانیون زرتشتی که حافظه سلطنتی ایرانی را هزار سال حفظ کرده بودند پراکنده شدند.",
-      "explanation_tg": "Шоҳнома се аз даст додани мушаххасро муайян мекунад: оташкадаҳое ки садсолаҳо сӯхта буданд хомӯш шуданд; архивҳои шоҳона дар Тайсафун — садсолаҳо парвандаҳои Сосонӣ — вақте дарбор гурехт гум, сӯхта ё пароканда шуданд; ва рӯҳониёни Зардуштӣ ки хотираи шоҳонаи Эрониро ҳазор сол ҳифз карда буданд пароканда шуданд.",
+      "explanation": "The fire temples that had burned for centuries were extinguished. The record of what the conquest covered is specific: fires, archives, the priesthood that had preserved royal memory for a thousand years.",
+      "explanation_fa": "آتش‌هایی که قرن‌ها سوخته بودند خاموش شدند — فهرستِ آنچه موج پوشاند دقیق است.",
+      "explanation_tg": "Оташҳое ки қарнҳо сӯхта буданд хомӯш шуданд — феҳристи он чи мавҷ пӯшонд дақиқ аст.",
       "reward": {
-        "xp": 80,
-        "real": 30
+        "xp": 100,
+        "real": 40
       }
     },
     {
-      "id": "arb-m2",
+      "id": "arbc-e3",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 3,
+      "difficulty": "easy",
+      "question": "How does the Shahnameh record the Arab commanders of the conquest?",
+      "question_fa": "شاهنامه فرماندهانِ عربِ فتح را چگونه ثبت می‌کند؟",
+      "question_tg": "Шоҳнома фармондеҳони араби фатҳро чӣ гуна сабт мекунад?",
+      "answers": [
+        "With invented Persian names",
+        "As demons in disguise",
+        "Without names or speeches — as a force of nature, the tide coming in, rather than a narrative of individuals",
+        "With full genealogies, like Iranian heroes"
+      ],
+      "answers_fa": [
+        "با نام‌های ساختگیِ فارسی",
+        "به‌صورتِ دیوانی در لباسِ مبدل",
+        "بی‌نام و بی‌خطابه — همچون نیرویی طبیعی، موجی که می‌آید، نه روایتی از افراد",
+        "با تبارنامه‌های کامل، مانندِ پهلوانانِ ایرانی"
+      ],
+      "answers_tg": [
+        "Бо номҳои сохтагии форсӣ",
+        "Ба сурати девоне дар либоси мубаддал",
+        "Беном ва бехитоба — ҳамчун нерӯе табиӣ, мавҷе ки меояд, на ривояте аз афрод",
+        "Бо таборномаҳои комил, монанди паҳлавонони эронӣ"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Shahnameh does not give the Arab commanders names or speeches the way it gives them to Iranian heroes. It records the conquest as a force of nature — the tide coming in, indifferent to what it covers.",
+      "explanation_fa": "شاهنامه به فرماندهانِ عرب نام و خطابه نمی‌دهد — فتح را چون موجِ طبیعت ثبت می‌کند.",
+      "explanation_tg": "Шоҳнома ба фармондеҳони араб ном ва хитоба намедиҳад — фатҳро чун мавҷи табиат сабт мекунад.",
+      "reward": {
+        "xp": 100,
+        "real": 40
+      }
+    },
+    {
+      "id": "arbc-m1",
       "chapter_slug": "arab-conquest",
       "quiz_part": 1,
       "difficulty": "medium",
-      "question": "What is the Shahnameh's implicit argument about the Arab conquest and Persian cultural survival?",
-      "question_fa": "استدلال ضمنی شاهنامه درباره فتح عرب و بقای فرهنگی ایرانی چیست؟",
-      "question_tg": "Истдлоли зимнии шоҳнома дар бораи фатҳи Арабӣ ва бақои фарҳангии Эронӣ чист?",
+      "question": "What happened to the great archive at Ctesiphon?",
+      "question_fa": "بر سرِ بایگانیِ بزرگِ تیسفون چه آمد؟",
+      "question_tg": "Бар сари бойгонии бузурги Тайсафун чӣ омад?",
       "answers": [
-        "Conquering a state is not the same as conquering a culture — memory survives if someone is willing to carry it forward",
-        "Political defeat inevitably destroys a civilization unless it has military allies to restore it",
-        "A conquered people can only survive by fully adopting the conqueror's customs and faith",
-        "Cultural survival depends on maintaining a royal bloodline even in exile"
+        "It was carried intact to Damascus",
+        "It was lost — some sources say burned, some scattered, some simply abandoned as the court fled",
+        "It was hidden in the mountains and later recovered whole",
+        "It survives today in Baghdad"
       ],
       "answers_fa": [
-        "فتح یک دولت به معنای فتح یک فرهنگ نیست — اگر کسی حاضر به حمل آن باشد حافظه باقی می‌ماند",
-        "شکست سیاسی ناگزیر یک تمدن را نابود می‌کند مگر اینکه متحدان نظامی برای احیایش داشته باشد",
-        "مردم تسخیرشده تنها با پذیرش کامل آداب و ایمان فاتح می‌توانند بقا داشته باشند",
-        "بقای فرهنگی به حفظ یک خط سلطنتی حتی در تبعید بستگی دارد"
+        "سالم به دمشق منتقل شد",
+        "از دست رفت — برخی منابع می‌گویند سوخت، برخی پراکنده شد، برخی صرفاً در گریزِ دربار رها شد",
+        "در کوه‌ها پنهان شد و بعدها کامل بازیافت شد",
+        "امروز در بغداد نگهداری می‌شود"
       ],
       "answers_tg": [
-        "Фатҳи давлат ба маънои фатҳи фарҳанг нест — агар касе ҳозир ба ҳамл кардан бошад хотира боқӣ мемонад",
-        "Шикасти сиёсӣ ногузир тамаддунро нобуд мекунад магар ин ки муттаҳидони ҳарбӣ барои эҳёяш дошта бошад",
-        "Мардуми фатҳшуда танҳо бо пазируфтани комили одоб ва имони фотеҳ метавонанд бақо дошта бошанд",
-        "Бақои фарҳангӣ ба ҳифзи хатти шоҳона ҳатто дар табъид вобаста аст"
+        "Солим ба Димишқ мунтақил шуд",
+        "Аз даст рафт — бархе манбаъҳо мегӯянд сӯхт, бархе пароканда шуд, бархе сирфан дар гурези дарбор раҳо шуд",
+        "Дар кӯҳҳо пинҳон шуд ва баъдҳо комил бозёфт шуд",
+        "Имрӯз дар Бағдод нигаҳдорӣ мешавад"
+      ],
+      "correct_answer": 1,
+      "explanation": "The great archive at Ctesiphon — where the records of Sasanian rule were kept — was lost: burned, scattered, or simply abandoned as the court fled. The sources disagree on the manner; the loss is certain.",
+      "explanation_fa": "بایگانیِ بزرگِ تیسفون از دست رفت — سوخته، پراکنده یا رهاشده؛ منابع اختلاف دارند، فقدان قطعی است.",
+      "explanation_tg": "Бойгонии бузурги Тайсафун аз даст рафт — сӯхта, пароканда ё раҳошуда; манбаъҳо ихтилоф доранд, фуқдон қатъист.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "arbc-m2",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 2,
+      "difficulty": "medium",
+      "question": "How did the old Iranian texts and traditions survive the conquest?",
+      "question_fa": "متن‌ها و سنت‌های کهنِ ایرانی چگونه از فتح جان به در بردند؟",
+      "question_tg": "Матнҳо ва суннатҳои куҳани эронӣ чӣ гуна аз фатҳ ҷон ба дар бурданд?",
+      "answers": [
+        "They were engraved on mountain cliffs",
+        "They were preserved by the caliphate's official scribes",
+        "People carried them east and north, over the mountains into Central Asia and India",
+        "They survived only in Byzantine translations"
+      ],
+      "answers_fa": [
+        "بر صخره‌های کوه حک شدند",
+        "کاتبانِ رسمیِ خلافت حفظشان کردند",
+        "مردم آن‌ها را به شرق و شمال بردند، از کوه‌ها به آسیای میانه و هند",
+        "فقط در ترجمه‌های بیزانسی ماندند"
+      ],
+      "answers_tg": [
+        "Бар сахраҳои кӯҳ ҳак шуданд",
+        "Котибони расмии хилофат ҳифзашон карданд",
+        "Мардум онҳоро ба шарқ ва шимол бурданд, аз кӯҳҳо ба Осиёи Миёна ва Ҳинд",
+        "Танҳо дар тарҷумаҳои бизантӣ монданд"
+      ],
+      "correct_answer": 2,
+      "explanation": "The texts Ferdowsi would draw on survived precisely because people carried them east and north and over the mountains into Central Asia and India. The conquest destroyed a state; the culture traveled.",
+      "explanation_fa": "متن‌ها ماندند چون مردم آن‌ها را به شرق و شمال بردند — دولت نابود شد؛ فرهنگ سفر کرد.",
+      "explanation_tg": "Матнҳо монданд зеро мардум онҳоро ба шарқ ва шимол бурданд — давлат нобуд шуд; фарҳанг сафар кард.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "arbc-m3",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 3,
+      "difficulty": "medium",
+      "question": "What sources did Ferdowsi draw on for the Shahnameh?",
+      "question_fa": "فردوسی برای شاهنامه از چه منابعی بهره گرفت؟",
+      "question_tg": "Фирдавсӣ барои Шоҳнома аз чӣ манбаъҳое баҳра гирифт?",
+      "answers": [
+        "The Khodaynamag, the priestly records, and the oral traditions that had kept the old stories alive",
+        "Arabic court chronicles of the conquest",
+        "Greek histories translated at Baghdad",
+        "His own invention — no sources existed"
+      ],
+      "answers_fa": [
+        "خدای‌نامگ، اسنادِ موبدان و سنت‌های شفاهی‌ای که داستان‌های کهن را زنده نگه داشته بودند",
+        "وقایع‌نامه‌های دربارِ عربی از فتح",
+        "تاریخ‌های یونانیِ ترجمه‌شده در بغداد",
+        "ابداعِ خودش — هیچ منبعی وجود نداشت"
+      ],
+      "answers_tg": [
+        "Худойномаг, аснодi мӯбадон ва суннатҳои шифоҳие ки достонҳои куҳанро зинда нигоҳ дошта буданд",
+        "Вақоеъномаҳои дарбори арабӣ аз фатҳ",
+        "Таърихҳои юнонии тарҷумашуда дар Бағдод",
+        "Ибдои худаш — ҳеҷ манбае вуҷуд надошт"
       ],
       "correct_answer": 0,
-      "explanation": "The Shahnameh's entire existence is the argument: the Arab conquest destroyed the Sasanian state but not Persian culture, because specific people made the choice to carry the language, the stories, and the memory forward. Ferdowsi's thirty-year project is both the evidence and the proof of this argument.",
-      "explanation_fa": "کل وجود شاهنامه استدلال است: فتح عرب دولت ساسانی را نابود کرد اما فرهنگ ایرانی را نه، چون افراد خاصی انتخاب کردند زبان، داستان‌ها و حافظه را به جلو حمل کنند. پروژه سی ساله فردوسی هم دلیل و هم اثبات این استدلال است.",
-      "explanation_tg": "Тамоми вуҷуди шоҳнома истдлол аст: фатҳи Арабӣ давлати Сосониро нобуд кард аммо фарҳанги Эрониро не, зеро одамони мушаххасе интихоб карданд забон, достонҳо ва хотираро ба пеш ҳамл кунанд.",
+      "explanation": "Ferdowsi drew on the Khodaynamag ('Book of Lords'), the priestly records, and oral traditions — material that survived because the dispersal carried it beyond the conquest's reach.",
+      "explanation_fa": "خدای‌نامگ، اسنادِ موبدان و سنتِ شفاهی — موادی که چون پراکنده شدند، ماندند.",
+      "explanation_tg": "Худойномаг, асноди мӯбадон ва суннати шифоҳӣ — маводе ки чун пароканда шуданд, монданд.",
       "reward": {
-        "xp": 90,
-        "real": 35
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "arbc-m4",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 4,
+      "difficulty": "medium",
+      "question": "In what spirit does Ferdowsi write about the conquest?",
+      "question_fa": "فردوسی با چه روحیه‌ای درباره‌ی فتح می‌نویسد؟",
+      "question_tg": "Фирдавсӣ бо чӣ рӯҳияе дар бораи фатҳ менависад?",
+      "answers": [
+        "With celebration of the new order",
+        "With open calls for revenge and restoration",
+        "Without hatred and without apology — he needed only to remember what was there before it, clearly enough that the memory survived",
+        "With deliberate vagueness to avoid offending anyone"
+      ],
+      "answers_fa": [
+        "با جشن گرفتنِ نظمِ نو",
+        "با فراخوان‌های آشکار به انتقام و بازگشت",
+        "بی‌نفرت و بی‌عذرخواهی — فقط لازم داشت آنچه را پیش از آن بود چنان روشن به یاد آورد که حافظه بماند",
+        "با ابهامِ عمدی برای نرنجاندنِ هیچ‌کس"
+      ],
+      "answers_tg": [
+        "Бо ҷашн гирифтани низоми нав",
+        "Бо фарохонҳои ошкор ба интиқом ва бозгашт",
+        "Бенафрат ва беузрхоҳӣ — танҳо лозим дошт он чиро пеш аз он буд чунон равшан ба ёд оварад ки ҳофиза бимонад",
+        "Бо ибҳоми амдӣ барои наранҷондани ҳеҷ кас"
+      ],
+      "correct_answer": 2,
+      "explanation": "Ferdowsi had grown up in the world the conquest made — prayed in its mosques, written in its language's shadow. He did not need to condemn what he could not undo. He needed only to remember, clearly enough that the memory survived.",
+      "explanation_fa": "فردوسی در جهانِ پس از فتح بزرگ شده بود؛ محکوم نکرد — فقط چنان روشن به یاد آورد که حافظه بماند.",
+      "explanation_tg": "Фирдавсӣ дар ҷаҳони пас аз фатҳ бузург шуда буд; маҳкум накард — танҳо чунон равшан ба ёд овард ки ҳофиза бимонад.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "arbc-m5",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 5,
+      "difficulty": "medium",
+      "question": "What happened to the Zoroastrian priesthood after the conquest?",
+      "question_fa": "پس از فتح بر سرِ روحانیتِ زرتشتی چه آمد؟",
+      "question_tg": "Пас аз фатҳ бар сари рӯҳонияти зардуштӣ чӣ омад?",
+      "answers": [
+        "It converted en masse on the first day",
+        "It seized political power in the mountains",
+        "The priesthood that had preserved Iranian royal memory for a thousand years dispersed",
+        "It moved intact to Byzantium"
+      ],
+      "answers_fa": [
+        "در روزِ نخست دسته‌جمعی تغییرِ دین داد",
+        "در کوه‌ها قدرتِ سیاسی را به دست گرفت",
+        "روحانیتی که هزار سال حافظه‌ی شاهیِ ایران را نگه داشته بود پراکنده شد",
+        "سالم به بیزانس کوچید"
+      ],
+      "answers_tg": [
+        "Дар рӯзи нахуст дастаҷамъӣ тағйири дин дод",
+        "Дар кӯҳҳо қудрати сиёсиро ба даст гирифт",
+        "Рӯҳонияте ки ҳазор сол ҳофизаи шоҳии Эронро нигоҳ дошта буд пароканда шуд",
+        "Солим ба Бизантия кӯчид"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Zoroastrian priesthood that had preserved Iranian royal memory for a thousand years dispersed. With it went the institutional channel of memory — which is why the dispersal of texts and people mattered so much.",
+      "explanation_fa": "روحانیتی که هزار سال حافظه‌ی شاهی را نگه داشته بود پراکنده شد — و مجرای نهادیِ حافظه با آن رفت.",
+      "explanation_tg": "Рӯҳонияте ки ҳазор сол ҳофизаи шоҳиро нигоҳ дошта буд пароканда шуд — ва маҷрои ниҳодии ҳофиза бо он рафт.",
+      "reward": {
+        "xp": 250,
+        "real": 115
+      }
+    },
+    {
+      "id": "arbc-h1",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 1,
+      "difficulty": "hard",
+      "question": "'The conquest destroyed a state. It did not destroy a culture, though it tried.' What distinction is doing the work in this sentence?",
+      "question_fa": "«فتح یک دولت را نابود کرد. یک فرهنگ را نابود نکرد، هرچند کوشید.» چه تمایزی در این جمله کار می‌کند؟",
+      "question_tg": "«Фатҳ як давлатро нобуд кард. Як фарҳангро нобуд накард, ҳарчанд кӯшид.» Чӣ тамоюзе дар ин ҷумла кор мекунад?",
+      "answers": [
+        "States and cultures are actually identical",
+        "States live in institutions that can be seized; culture lives in language, story and practice, which scatter and regrow — the conquest could take the first but only chase the second",
+        "Culture only survives when a state protects it",
+        "The conquest never intended to touch the culture"
+      ],
+      "answers_fa": [
+        "دولت و فرهنگ در واقع یکی‌اند",
+        "دولت در نهادهایی زندگی می‌کند که تصرف‌شدنی‌اند؛ فرهنگ در زبان و داستان و آیین، که می‌پراکنند و از نو می‌رویند — فتح اولی را توانست بگیرد و دومی را فقط دنبال کرد",
+        "فرهنگ فقط وقتی می‌ماند که دولتی محافظتش کند",
+        "فتح هرگز قصدِ دست زدن به فرهنگ نداشت"
+      ],
+      "answers_tg": [
+        "Давлат ва фарҳанг дар воқеъ якеанд",
+        "Давлат дар ниҳодҳое зиндагӣ мекунад ки тасарруфшуданианд; фарҳанг дар забон ва достон ва оин, ки мепароканданд ва аз нав мерӯянд — фатҳ аввалиро тавонист бигирад ва дувумиро танҳо дунбол кард",
+        "Фарҳанг танҳо вақте мемонад ки давлате муҳофизаташ кунад",
+        "Фатҳ ҳаргиз қасди даст задан ба фарҳанг надошт"
+      ],
+      "correct_answer": 1,
+      "explanation": "A state is centralized and therefore mortal: take the capital, the archive, the treasury, and it dies. A culture has no single address — it lives wherever its language is spoken and its stories told. The clause 'though it tried' concedes the intent; the sentence's verdict is that culture's distributed nature defeated it.",
+      "explanation_fa": "دولت متمرکز و بنابراین میراست؛ فرهنگ نشانیِ واحد ندارد — هر جا زبانش گفته شود زنده است.",
+      "explanation_tg": "Давлат мутамарказ ва бинобар ин мирост; фарҳанг нишонии воҳид надорад — ҳар ҷо забонаш гуфта шавад зинда аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "arbc-h2",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 2,
+      "difficulty": "hard",
+      "question": "Why does the Shahnameh deny the Arab commanders the names and speeches it grants Iranian heroes?",
+      "question_fa": "چرا شاهنامه به فرماندهانِ عرب نام‌ها و خطابه‌هایی را که به پهلوانانِ ایرانی می‌بخشد نمی‌دهد؟",
+      "question_tg": "Чаро Шоҳнома ба фармондеҳони араб номҳо ва хитобаҳоеро ки ба паҳлавонони эронӣ мебахшад намедиҳад?",
+      "answers": [
+        "Ferdowsi did not know any Arab names",
+        "He feared the caliphate would punish accurate portraits",
+        "Arabic names could not fit Persian meter",
+        "Narrative individuality is the poem's highest gift, and it reserves that gift for the world it is preserving — the conquerors enter as weather, not as persons worth remembering"
+      ],
+      "answers_fa": [
+        "فردوسی هیچ نامِ عربی‌ای نمی‌دانست",
+        "می‌ترسید خلافت تصویرهای دقیق را مجازات کند",
+        "نام‌های عربی در وزنِ فارسی نمی‌گنجیدند",
+        "فردیتِ روایی والاترین هدیه‌ی شعر است و آن را برای جهانی که حفظ می‌کند نگه می‌دارد — فاتحان چون آب‌وهوا وارد می‌شوند، نه چون اشخاصی شایسته‌ی یادآوری"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ ҳеҷ номи арабиеро намедонист",
+        "Метарсид хилофат тасвирҳои дақиқро ҷазо кунад",
+        "Номҳои арабӣ дар вазни форсӣ намегунҷиданд",
+        "Фардияти ривоӣ волотарин ҳадяи шеър аст ва онро барои ҷаҳоне ки ҳифз мекунад нигоҳ медорад — фотеҳон чун обу ҳаво ворид мешаванд, на чун ашхосе шоистаи ёдоварӣ"
+      ],
+      "correct_answer": 3,
+      "explanation": "In the Shahnameh, to be named is to be admitted into memory — the poem's only durable currency. Withholding names from the conquerors is not ignorance but allocation: the poem spends its memory on what was lost, and lets the wave that covered it remain a wave. It is the subtlest revenge available to a chronicler.",
+      "explanation_fa": "در شاهنامه نام یعنی ورود به حافظه. دریغِ نام از فاتحان تخصیص است، نه نادانی — ظریف‌ترین انتقامِ ممکن برای تاریخ‌نگار.",
+      "explanation_tg": "Дар Шоҳнома ном яъне вуруд ба ҳофиза. Дареғи ном аз фотеҳон тахсис аст, на нодонӣ — зарифтарин интиқоми мумкин барои таърихнигор.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "arbc-h3",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 3,
+      "difficulty": "hard",
+      "question": "In what sense is the Shahnameh 'itself a consequence of this dispersal'?",
+      "question_fa": "شاهنامه به چه معنا «خود پیامدِ این پراکندگی» است؟",
+      "question_tg": "Шоҳнома ба чӣ маъно «худ паёмади ин парокандагӣ» аст?",
+      "answers": [
+        "Ferdowsi wrote it while traveling with the refugees",
+        "It was first composed in India and brought back",
+        "The caliphate commissioned it to document what was destroyed",
+        "The poem exists because the texts and traditions it needed were carried out of the conquest's reach — scattering, meant as destruction, became preservation"
+      ],
+      "answers_fa": [
+        "فردوسی آن را در سفر با پناهندگان نوشت",
+        "نخست در هند سروده شد و بازگردانده شد",
+        "خلافت سفارشش داد تا نابودشده‌ها را مستند کند",
+        "شعر وجود دارد چون متن‌ها و سنت‌هایی که نیاز داشت از دسترسِ فتح بیرون برده شدند — پراکندگی، که قرار بود نابودی باشد، نگهداری شد"
+      ],
+      "answers_tg": [
+        "Фирдавсӣ онро дар сафар бо паноҳандагон навишт",
+        "Нахуст дар Ҳинд суруда шуд ва бозгардонда шуд",
+        "Хилофат супоришаш дод то нобудшудаҳоро мустанад кунад",
+        "Шеър вуҷуд дорад зеро матнҳо ва суннатҳое ки ниёз дошт аз дастраси фатҳ берун бурда шуданд — парокандагӣ, ки қарор буд нобудӣ бошад, нигаҳдорӣ шуд"
+      ],
+      "correct_answer": 3,
+      "explanation": "Had the Khodaynamag and the priestly traditions stayed concentrated at Ctesiphon, they would have died with the archive. They survived because they fled. Three centuries later Ferdowsi gathered the scattered pieces — so the poem is the dispersal's harvest: destruction's intended victims, reassembled as a monument.",
+      "explanation_fa": "اگر متن‌ها در تیسفون مانده بودند با بایگانی می‌مردند؛ چون گریختند ماندند — و فردوسی پراکنده‌ها را گرد آورد.",
+      "explanation_tg": "Агар матнҳо дар Тайсафун монда буданд бо бойгонӣ мемурданд; чун гурехтанд монданд — ва Фирдавсӣ парокандаҳоро гирд овард.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "arbc-h4",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 4,
+      "difficulty": "hard",
+      "question": "Ferdowsi 'did not need to condemn what he could not undo.' What stance toward catastrophe does this define?",
+      "question_fa": "فردوسی «نیازی نداشت آنچه را نمی‌توانست واگرداند محکوم کند.» این چه موضعی در برابرِ فاجعه تعریف می‌کند؟",
+      "question_tg": "Фирдавсӣ «ниёзе надошт он чиро наметавонист вогардонад маҳкум кунад.» Ин чӣ мавзеъе дар баробари фоҷиа таъриф мекунад?",
+      "answers": [
+        "Indifference — the conquest did not really matter",
+        "Forgiveness of the conquerors as religious duty",
+        "Memory as the mature response — cursing the irreversible spends the energy that remembering needs; the work is to preserve what was, not to litigate what happened",
+        "Secret approval of the new order"
+      ],
+      "answers_fa": [
+        "بی‌تفاوتی — فتح در واقع اهمیتی نداشت",
+        "بخشایشِ فاتحان به‌مثابهِ تکلیفِ دینی",
+        "حافظه به‌مثابهِ پاسخِ بالغ — نفرین بر بازگشت‌ناپذیر انرژی‌ای را می‌سوزاند که یادآوری لازم دارد؛ کار حفظِ آن چیزی است که بود، نه محاکمه‌ی آنچه رخ داد",
+        "تأییدِ پنهانِ نظمِ نو"
+      ],
+      "answers_tg": [
+        "Бетафовутӣ — фатҳ дар воқеъ аҳамияте надошт",
+        "Бахшоиши фотеҳон ба мисоли таклифи динӣ",
+        "Ҳофиза ба мисоли посухи болиғ — нафрин бар бозгаштнопазир энержиеро месӯзонад ки ёдоварӣ лозим дорад; кор ҳифзи он чизест ки буд, на муҳокимаи он чи рух дод",
+        "Таъйиди пинҳони низоми нав"
+      ],
+      "correct_answer": 2,
+      "explanation": "Rage looks backward at the blow; memory looks backward at what stood before it. Ferdowsi chose the second: thirty years spent rebuilding the lost world in verse, not prosecuting its destroyers. The stance is neither forgiveness nor indifference — it is triage, by a man who knew which task only he could do.",
+      "explanation_fa": "خشم به ضربه می‌نگرد؛ حافظه به آنچه پیش از ضربه ایستاده بود. فردوسی دومی را برگزید — سی سال بازسازی، نه محاکمه.",
+      "explanation_tg": "Хашм ба зарба менигарад; ҳофиза ба он чи пеш аз зарба истода буд. Фирдавсӣ дувумиро баргузид — сӣ сол бозсозӣ, на муҳокима.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "arbc-h5",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 5,
+      "difficulty": "hard",
+      "question": "The conquerors had been 'marginal, desert people looking at the great empires from the outside.' What does the chapter suggest about the power of this marginality?",
+      "question_fa": "فاتحان «مردمانی حاشیه‌ای و بیابانی بودند که از بیرون به امپراتوری‌های بزرگ می‌نگریستند.» این فصل درباره‌ی قدرتِ این حاشیه‌ای بودن چه پیشنهاد می‌کند؟",
+      "question_tg": "Фотеҳон «мардумоне ҳошияӣ ва биёбонӣ буданд ки аз берун ба империяҳои бузург менигаристанд.» Ин боб дар бораи қудрати ин ҳошиявӣ будан чӣ пешниҳод мекунад?",
+      "answers": [
+        "The empires deliberately invited the invasion",
+        "Desert peoples are inherently better soldiers",
+        "The margin sees the center's weakness before the center does — and people with nothing invested in the old order fight with a freedom its defenders cannot afford",
+        "Marginality is always a permanent disadvantage"
+      ],
+      "answers_fa": [
+        "امپراتوری‌ها عمداً تهاجم را دعوت کردند",
+        "مردمانِ بیابانی ذاتاً سربازانِ بهتری‌اند",
+        "حاشیه ضعفِ مرکز را پیش از خودِ مرکز می‌بیند — و مردمی که هیچ سرمایه‌ای در نظمِ کهن ندارند با آزادی‌ای می‌جنگند که مدافعانش از عهده‌اش برنمی‌آیند",
+        "حاشیه‌ای بودن همیشه زیانی دائمی است"
+      ],
+      "answers_tg": [
+        "Империяҳо амдан таҳоҷумро даъват карданд",
+        "Мардумони биёбонӣ зотан сарбозони беҳтареанд",
+        "Ҳошия заъфи марказро пеш аз худи марказ мебинад — ва мардуме ки ҳеҷ сармояе дар низоми куҳан надоранд бо озодие меҷанганд ки мудофеонаш аз уҳдааш барнамеоянд",
+        "Ҳошиявӣ будан ҳамеша зиёне доимист"
+      ],
+      "correct_answer": 2,
+      "explanation": "Insiders defend a system because their wealth, rank and identity are stored in it — which makes them cautious. The marginal carry nothing and so can bet everything. Watching from outside, they also see what insiders cannot admit: that the colossus is hollow. The conquest is the margin's clarity plus the margin's freedom.",
+      "explanation_fa": "درونی‌ها محتاط‌اند چون دارایی‌شان در نظام است؛ حاشیه چیزی ندارد و همه را شرط می‌بندد — و از بیرون، پوکیِ غول را می‌بیند.",
+      "explanation_tg": "Дарунӣ-ҳо эҳтиёткоранд зеро дороияшон дар низом аст; ҳошия чизе надорад ва ҳамаро шарт мебандад — ва аз берун, пӯкии ғӯлро мебинад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "arbc-h6",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 6,
+      "difficulty": "hard",
+      "question": "Beyond religion, what does the extinguishing of the fire temples symbolize?",
+      "question_fa": "فراتر از دین، خاموشیِ آتشکده‌ها نمادِ چیست؟",
+      "question_tg": "Фаротар аз дин, хомӯшии оташкадаҳо намоди чист?",
+      "answers": [
+        "A purely military tactic to demoralize garrisons",
+        "The transition to more efficient heating",
+        "The end of all light in Iranian cities",
+        "The severing of continuity itself — a fire kept burning for centuries is an unbroken chain of tending, and putting it out breaks a thousand-year thread that cannot simply be relit"
+      ],
+      "answers_fa": [
+        "ترفندی صرفاً نظامی برای تضعیفِ روحیه‌ی پادگان‌ها",
+        "گذار به گرمایشِ بهینه‌تر",
+        "پایانِ همه‌ی روشنایی در شهرهای ایران",
+        "گسستنِ خودِ پیوستگی — آتشی که قرن‌ها روشن نگه داشته شده زنجیره‌ی ناگسسته‌ی مراقبت است و خاموش کردنش رشته‌ای هزارساله را می‌بُرد که نمی‌توان دوباره روشنش کرد"
+      ],
+      "answers_tg": [
+        "Найранге сирфан низомӣ барои тазъифи рӯҳияи подгонҳо",
+        "Гузор ба гармоиши беҳинатар",
+        "Поёни ҳамаи равшанӣ дар шаҳрҳои Эрон",
+        "Гусастани худи пайвастагӣ — оташе ки қарнҳо равшан нигоҳ дошта шуда занҷираи ногусастаи муроқибат аст ва хомӯш карданаш риштаи ҳазорсоларо мебурад ки наметавон дубора равшанаш кард"
+      ],
+      "correct_answer": 3,
+      "explanation": "The sacred fire was less an object than a verb: centuries of uninterrupted tending, each generation handing the flame to the next. Relighting a fire produces flame but not continuity — the chain, once cut, is cut. The image stands for everything the conquest ended that no restoration could ever resume.",
+      "explanation_fa": "آتشِ مقدس شیء نبود، فعل بود: قرن‌ها مراقبتِ ناگسسته. بازافروختن شعله می‌دهد، پیوستگی نه.",
+      "explanation_tg": "Оташи муқаддас шайъ набуд, феъл буд: қарнҳо муроқибати ногусаста. Бозафрӯхтан шуъла медиҳад, пайвастагӣ на.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "arbc-h7",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 7,
+      "difficulty": "hard",
+      "question": "'He needed only to remember what was there before it, clearly enough that the memory survived.' Why is clear memory presented as a form of resistance?",
+      "question_fa": "«فقط لازم داشت آنچه را پیش از آن بود چنان روشن به یاد آورد که حافظه بماند.» چرا حافظه‌ی روشن به‌مثابهِ شکلی از مقاومت عرضه می‌شود؟",
+      "question_tg": "«Танҳо лозим дошт он чиро пеш аз он буд чунон равшан ба ёд оварад ки ҳофиза бимонад.» Чаро ҳофизаи равшан ба мисоли шакле аз муқовимат арза мешавад?",
+      "answers": [
+        "It is not resistance — the chapter calls it surrender",
+        "Because memory makes exiles wealthy",
+        "Because remembering provokes new wars of liberation",
+        "Conquest is complete only when the conquered forget there was ever anything else — a clear record of the before defeats the erasure that force began"
+      ],
+      "answers_fa": [
+        "مقاومت نیست — فصل آن را تسلیم می‌نامد",
+        "چون حافظه تبعیدیان را ثروتمند می‌کند",
+        "چون یادآوری جنگ‌های آزادی‌بخشِ تازه برمی‌انگیزد",
+        "فتح فقط وقتی کامل است که شکست‌خوردگان فراموش کنند چیزِ دیگری هم بود — ثبتِ روشنِ «پیش از آن» پاک‌سازی‌ای را که زور آغاز کرد شکست می‌دهد"
+      ],
+      "answers_tg": [
+        "Муқовимат нест — боб онро таслим меномад",
+        "Зеро ҳофиза табъидиёнро сарватманд мекунад",
+        "Зеро ёдоварӣ ҷангҳои озодибахши тоза барменгезад",
+        "Фатҳ танҳо вақте комил аст ки шикастхӯрдагон фаромӯш кунанд чизи дигаре ҳам буд — сабти равшани «пеш аз он» поксозиеро ки зӯр оғоз кард шикаст медиҳад"
+      ],
+      "correct_answer": 3,
+      "explanation": "Armies take territory; only forgetting takes the past. As long as someone can say clearly what stood here before — the kings, the fires, the language — the conquest remains incomplete, a change of rulers rather than a change of reality. The Shahnameh is that clarity, sustained for sixty thousand verses.",
+      "explanation_fa": "ارتش سرزمین می‌گیرد؛ گذشته را فقط فراموشی می‌گیرد. تا کسی روشن بگوید پیش‌تر این‌جا چه بود، فتح ناتمام است.",
+      "explanation_tg": "Лашкар сарзамин мегирад; гузаштаро танҳо фаромӯшӣ мегирад. То касе равшан бигӯяд пештар ин ҷо чӣ буд, фатҳ нотамом аст.",
+      "reward": {
+        "xp": 330,
+        "real": 155
+      }
+    },
+    {
+      "id": "arbc-h8",
+      "chapter_slug": "arab-conquest",
+      "quiz_part": 8,
+      "difficulty": "hard",
+      "question": "The chapter renders the conquest as 'the tide coming in, indifferent to what it covers' — yet lists exactly what was covered. What effect does this combination produce?",
+      "question_fa": "این فصل فتح را «موجی که می‌آید، بی‌اعتنا به آنچه می‌پوشاند» تصویر می‌کند — اما دقیقاً فهرست می‌کند چه پوشانده شد. این ترکیب چه اثری می‌سازد؟",
+      "question_tg": "Ин боб фатҳро «мавҷе ки меояд, беэътино ба он чи мепӯшонад» тасвир мекунад — аммо дақиқан феҳрист мекунад чӣ пӯшонда шуд. Ин таркиб чӣ асаре месозад?",
+      "answers": [
+        "The combination is a contradiction the poet failed to notice",
+        "It proves the losses were exaggerated",
+        "It softens the conquest into a gentle natural process",
+        "The nature metaphor and the specific losses sharpen each other — the tide cannot be blamed or argued with, but the named fires, archive and priesthood insist the loss was real and particular"
+      ],
+      "answers_fa": [
+        "ترکیب تناقضی است که شاعر متوجهش نشد",
+        "ثابت می‌کند فقدان‌ها اغراق‌آمیز بودند",
+        "فتح را به فرایندی طبیعی و ملایم نرم می‌کند",
+        "استعاره‌ی طبیعت و فقدان‌های مشخص یکدیگر را تیز می‌کنند — با موج نمی‌توان جدل کرد یا سرزنشش کرد، اما آتش‌ها و بایگانی و روحانیتِ نام‌برده اصرار دارند که فقدان واقعی و مشخص بود"
+      ],
+      "answers_tg": [
+        "Таркиб таноқузест ки шоир мутаваҷҷеҳаш нашуд",
+        "Исбот мекунад фуқдонҳо иғроқомез буданд",
+        "Фатҳро ба фарояндe табиӣ ва мулоим нарм мекунад",
+        "Истиораи табиат ва фуқдонҳои мушаххас якдигарро тез мекунанд — бо мавҷ наметавон ҷадал кард ё сарзанишаш кард, аммо оташҳо ва бойгонӣ ва рӯҳонияти номбурда исрор доранд ки фуқдон воқеӣ ва мушаххас буд"
+      ],
+      "correct_answer": 3,
+      "explanation": "A tide has no villain — that is the metaphor's mercy, and its despair: there is no one to argue with. But the chapter refuses to let indifference blur the loss; it names the fires, the archive, the dispersed priesthood. Together they produce grief without melodrama: an unanswerable force, and an exact bill of what it took.",
+      "explanation_fa": "موج تبهکار ندارد — این رحمتِ استعاره است و نومیدی‌اش. اما فهرستِ دقیقِ فقدان‌ها نمی‌گذارد بی‌اعتناییِ موج، واقعیتِ خسارت را محو کند.",
+      "explanation_tg": "Мавҷ табаҳкор надорад — ин раҳмати истиора аст ва навмедияш. Аммо феҳристи дақиқи фуқдонҳо намегузорад беэътиноии мавҷ, воқеияти хисоратро маҳв кунад.",
+      "reward": {
+        "xp": 330,
+        "real": 155
       }
     }
   ]
