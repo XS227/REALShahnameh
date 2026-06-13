@@ -207,6 +207,19 @@
 
   /* ── Chests tab ─────────────────────────────────────────────────────── */
 
+  const OPENED_CHESTS_KEY = 'real_opened_chests_v1';
+
+  const lsOpenedChests = () => {
+    try { return JSON.parse(localStorage.getItem(OPENED_CHESTS_KEY) || '[]'); } catch { return []; }
+  };
+
+  const lsMarkChestOpened = (id) => {
+    try {
+      const arr = lsOpenedChests();
+      if (!arr.includes(id)) { arr.push(id); localStorage.setItem(OPENED_CHESTS_KEY, JSON.stringify(arr)); }
+    } catch {}
+  };
+
   const buildChests = (openedChests) => {
     const panel = document.getElementById('inv-panel-chests');
     if (!panel) return;
@@ -272,6 +285,7 @@
               </div>`;
           }
           openedChests.push(chestId);
+          lsMarkChestOpened(chestId);
         } else {
           const msg = res?.error === 'already_opened'
             ? t('inv_already_opened', 'This chest was already opened.')
@@ -305,13 +319,12 @@
     const boostLeft = Math.max(0, Math.floor((boostExp - Date.now()) / 1000));
     const boostActive = boostLeft > 0;
 
-    /* Auto-clicker expiry — trust server if provided, else use localStorage */
+    /* Auto-clicker — trust server if provided, else use localStorage */
     if (serverAutoclickerExpiry) {
       try { localStorage.setItem('real_autoclicker_expires_at', String(serverAutoclickerExpiry)); } catch {}
     }
     const acExp    = getAutoclickerExpiry();
-    const acLeft   = Math.max(0, Math.floor((acExp - Date.now()) / 1000));
-    const acActive = acLeft > 0;
+    const acActive = acExp > Date.now();
 
     /* Hero ZAR/hr from sync */
     const heroMap = (() => {
@@ -353,22 +366,23 @@
             <div class="boost-info" style="flex:1;">
               <div class="boost-name">${t('inv_autoclicker_name','Auto-Clicker')}</div>
               <div class="boost-sub">${acActive
-                ? t('inv_autoclicker_active','Tapping for you — runs out of energy naturally')
-                : t('inv_autoclicker_desc','Taps automatically for 1 hour · uses energy like real taps')}</div>
+                ? t('inv_autoclicker_active','Tapping for you all season · uses energy like real taps')
+                : t('inv_autoclicker_desc','Taps automatically for the whole season · uses energy like real taps')}</div>
             </div>
-            <div class="boost-val${acActive ? '' : ' inactive'}" id="ac-timer">
-              ${acActive ? fmtDuration(acLeft) : '—'}
+            <div class="boost-val${acActive ? '' : ' inactive'}">
+              ${acActive ? `<span style="color:var(--jade);font-size:11px;font-weight:700;">${t('inv_autoclicker_owned','OWNED')}</span>` : '—'}
             </div>
           </div>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
             <div style="font-size:11px;color:var(--muted);">
-              ${fmtNF(AUTOCLICKER_PRICE)} ${RT} ${t('inv_autoclicker_per_hour','/ 1 hr')}
-              ${acActive ? `· <span style="color:var(--jade);">${t('inv_autoclicker_stackable','stackable')}</span>` : ''}
+              ${acActive
+                ? t('inv_autoclicker_season_item','Season item — active for the rest of Season 2')
+                : `${fmtNF(AUTOCLICKER_PRICE)} ${RT} · ${t('inv_autoclicker_one_time','one-time purchase')}`}
             </div>
             <button class="skin-action buy" id="ac-buy-btn"
-              style="white-space:nowrap;${!canAffordAC ? 'opacity:.45;' : ''}"
-              ${!canAffordAC ? `title="${t('inv_need_real','Not enough REAL')}"` : ''}>
-              ${acActive ? t('inv_autoclicker_extend','+1 hr') : t('inv_autoclicker_buy','Activate · 50K')} ${RT}
+              style="white-space:nowrap;${acActive ? 'opacity:.45;cursor:default;' : !canAffordAC ? 'opacity:.45;' : ''}"
+              ${acActive ? 'disabled' : !canAffordAC ? `title="${t('inv_need_real','Not enough REAL')}"` : ''}>
+              ${acActive ? t('inv_autoclicker_owned_btn','Owned') : t('inv_autoclicker_buy','Activate · 50K')} ${acActive ? '' : RT}
             </button>
           </div>
         </div>
@@ -405,18 +419,7 @@
       setTimeout(tick, 1000);
     }
 
-    /* Live auto-clicker timer countdown */
-    if (acActive) {
-      const acTimerEl = document.getElementById('ac-timer');
-      const acTick = () => {
-        const left = Math.max(0, Math.floor((getAutoclickerExpiry() - Date.now()) / 1000));
-        if (acTimerEl) acTimerEl.textContent = left > 0 ? fmtDuration(left) : '—';
-        if (left > 0) setTimeout(acTick, 1000);
-      };
-      setTimeout(acTick, 1000);
-    }
-
-    /* Buy / extend button */
+    /* Buy button */
     const acBtn = document.getElementById('ac-buy-btn');
     if (acBtn) {
       acBtn.addEventListener('click', async () => {
@@ -438,7 +441,14 @@
             window.dispatchEvent(new CustomEvent('shahnama:state_sync'));
             window.dispatchEvent(new CustomEvent('real:autoclicker:started', { detail: { expires_at: res.autoclicker_expires_at } }));
           } catch (_) {}
-          showToast(t('inv_autoclicker_toast', '🤖 Auto-Clicker activated!'));
+          showToast(t('inv_autoclicker_toast', '🤖 Auto-Clicker activated for the season!'));
+          buildBoosts(res.autoclicker_expires_at);
+        } else if (res?.error === 'already_owned') {
+          /* Sync the expiry locally if somehow out of date */
+          if (res.autoclicker_expires_at) {
+            try { localStorage.setItem('real_autoclicker_expires_at', String(res.autoclicker_expires_at)); } catch {}
+            window.dispatchEvent(new CustomEvent('real:autoclicker:started', { detail: { expires_at: res.autoclicker_expires_at } }));
+          }
           buildBoosts(res.autoclicker_expires_at);
         } else {
           const msg = {
@@ -446,7 +456,7 @@
           }[res?.error] || t('inv_buy_failed', 'Purchase failed.');
           showToast(msg);
           acBtn.disabled = false;
-          acBtn.innerHTML = `${acActive ? t('inv_autoclicker_extend','+1 hr') : t('inv_autoclicker_buy','Activate · 50K')} ${RT}`;
+          acBtn.innerHTML = `${t('inv_autoclicker_buy','Activate · 50K')} ${RT}`;
         }
       });
     }
@@ -464,14 +474,17 @@
 
     /* Fetch server inventory (owned skins, opened chests) */
     let unlockedSkins  = [];
-    let openedChests   = [];
+    let openedChests   = lsOpenedChests(); /* start with local cache so chests stay hidden on refresh */
     let serverACExpiry = null;
     if (u?.id) {
       const inv = await get('/api/season2/inventory?' + new URLSearchParams({ telegram_id: String(u.id) }));
       if (inv?.status === 1) {
         unlockedSkins  = inv.unlocked_skins        || [];
-        openedChests   = inv.opened_chests          || [];
         serverACExpiry = inv.autoclicker_expires_at || null;
+        /* Merge server list into local cache (server is authoritative, union wins) */
+        const serverOpened = inv.opened_chests || [];
+        serverOpened.forEach(id => lsMarkChestOpened(id));
+        openedChests = lsOpenedChests();
       }
     }
 

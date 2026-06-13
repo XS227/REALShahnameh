@@ -104,6 +104,21 @@
         energyMax:   su.energy_max   || 1000,
         dailyStreak: su.daily_streak || 1,
       });
+      // Derive energy level from server energy_max and persist to localStorage
+      // so app.js (which reads real_energy_level) stays in sync across devices
+      if (su.energy_max && su.energy_max > 1000) {
+        const derivedLevel = Math.min(5, Math.round((su.energy_max - 1000) / 500));
+        try { localStorage.setItem('real_energy_level', String(derivedLevel)); } catch {}
+      }
+      // Persist opened chests so inventory.js can hide them immediately on load
+      // without waiting for the separate /api/season2/inventory fetch
+      if (Array.isArray(su.opened_chests) && su.opened_chests.length) {
+        try {
+          const existing = JSON.parse(localStorage.getItem('real_opened_chests_v1') || '[]');
+          const merged = Array.from(new Set([...existing, ...su.opened_chests]));
+          localStorage.setItem('real_opened_chests_v1', JSON.stringify(merged));
+        } catch {}
+      }
       // Notify all pages that authoritative balances have landed
       try { window.dispatchEvent(new CustomEvent('balanceUpdate')); } catch (_) {}
       // Push corrected balance back to server immediately

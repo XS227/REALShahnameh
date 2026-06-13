@@ -118,10 +118,15 @@
     if (immediate) { window.RealSync.saveChapterProgress(SLUG); return; }
     _pushTimer = setTimeout(() => window.RealSync.saveChapterProgress(SLUG), 1200);
   };
-  window.addEventListener("pagehide", () => {
+  const _flushPendingPush = () => {
     if (_pushTimer) { clearTimeout(_pushTimer); _pushTimer = null;
       if (window.RealSync && window.RealSync.saveChapterProgress) window.RealSync.saveChapterProgress(SLUG);
     }
+  };
+  window.addEventListener("pagehide", _flushPendingPush);
+  /* visibilitychange:hidden fires more reliably on iOS (app-switch / memory kill) */
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") _flushPendingPush();
   });
 
   const saveProgress = () => { writeProgress(progress); pushProgress(); };
@@ -594,7 +599,8 @@
         }
       } catch {}
     }
-    pushProgress(true);
+    /* pushProgress intentionally omitted here — markChapterComplete calls it
+       once after all localStorage writes (done flag + rewards + skins) are done. */
   };
 
   /* Grant farr for completing a quiz tier — idempotent per tier per chapter */

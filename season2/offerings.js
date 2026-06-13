@@ -23,6 +23,21 @@
     toast._t = setTimeout(() => el.classList.remove("show"), 2600);
   };
 
+  const post = async (url, body) => {
+    try {
+      const r = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      return r.ok ? r.json() : null;
+    } catch { return null; }
+  };
+
+  const tgId = () => {
+    try { return String(window.Telegram?.WebApp?.initDataUnsafe?.user?.id || ""); } catch { return ""; }
+  };
+
   /* ── Offering state ───────────────────────────────────────────────────── */
   const STATE_KEY = "real_offerings_v1";
 
@@ -33,17 +48,85 @@
     try { localStorage.setItem(STATE_KEY, JSON.stringify(s)); } catch {}
   };
 
-  /* ── Player resources (from existing store) ───────────────────────────── */
-  const getPlayerState = () => {
-    try { return JSON.parse(localStorage.getItem("real_player_state_v1") || "{}"); } catch { return {}; }
+  /* ── Player resource helpers ──────────────────────────────────────────── */
+  const getRes = (kind) => {
+    if (!window.RealPlayer) return 0;
+    if (kind === "energy") return window.RealPlayer.get().energy || 0;
+    if (kind === "real")   return window.RealPlayer.get().balance || 0;
+    return window.RealPlayer.getResource ? (window.RealPlayer.getResource(kind) || 0) : (window.RealPlayer.get()[kind] || 0);
+  };
+
+  const deductRes = (kind, amount) => {
+    if (!window.RealPlayer) return;
+    if (kind === "energy") {
+      const cur = window.RealPlayer.get().energy || 0;
+      window.RealPlayer.set({ energy: Math.max(0, cur - amount) });
+      return;
+    }
+    if (kind === "real") {
+      const cur = window.RealPlayer.get().balance || 0;
+      window.RealPlayer.set({ balance: Math.max(0, cur - amount) });
+      return;
+    }
+    if (window.RealPlayer.addResource) {
+      window.RealPlayer.addResource(kind, -amount);
+    } else {
+      const cur = window.RealPlayer.get()[kind] || 0;
+      window.RealPlayer.set({ [kind]: Math.max(0, cur - amount) });
+    }
+  };
+
+  /* Today's tap count (daily counter, not a balance — spending it resets progress) */
+  const getTapsToday = () => {
+    try {
+      const dk = new Date().toISOString().slice(0, 10);
+      return parseInt(localStorage.getItem("real_daily_taps_" + dk) || "0", 10);
+    } catch { return 0; }
+  };
+
+  const deductTaps = (amount) => {
+    try {
+      const dk = new Date().toISOString().slice(0, 10);
+      const key = "real_daily_taps_" + dk;
+      const cur = parseInt(localStorage.getItem(key) || "0", 10);
+      localStorage.setItem(key, String(Math.max(0, cur - amount)));
+    } catch {}
+  };
+
+  /* Push updated balances to server (fire-and-forget, non-blocking) */
+  const syncToServer = () => {
+    const id = tgId();
+    if (!id || !window.RealPlayer) return;
+    const p = window.RealPlayer.get();
+    post("/api/season2/user/sync-balance", {
+      telegram_id:     id,
+      real_balance:    p.balance  || 0,
+      current_energy:  p.energy   || 0,
+      farr:            p.farr     || 0,
+      zar:             p.zar      || 0,
+      gems:            p.gems     || 0,
+      xp:              p.xp       || 0,
+    });
   };
 
   /* ── Offering definitions ─────────────────────────────────────────────── */
+  /*
+   * cost.kind  — resource type
+   * cost.amount — how much to deduct
+   * For "taps": we check daily taps and deduct from that counter
+   */
   const OFFERINGS = {
-    zar:  { cost: { energy: 500 },  rewardMsg: "The Zar offering has been accepted. Your chronicle bond grows." },
-    fire: { cost: { taps: 1000 },   rewardMsg: "The flame breathes stronger. The chronicle remembers your offering." },
-    lore: { cost: { lore: 3 },      rewardMsg: "A forgotten memory awakens from the depths of the chronicle." },
-    real: { cost: { real: 100 },    rewardMsg: "Your name is sealed in the chronicle. A true Keeper of the Flame." },
+    zar:  { cost: { kind: "energy", amount: 500  } },
+    fire: { cost: { kind: "taps",   amount: 1000 } },
+    lore: { cost: { kind: "farr",   amount: 3    } },
+    real: { cost: { kind: "real",   amount: 100  } },
+  };
+
+  const INSUFFICIENT_MSG = {
+    energy: () => t("offering_need_energy",  `Need 500 ⚡ Energy to make this offering.`),
+    taps:   () => t("offering_need_taps",    `Need 1,000 taps today to make this offering.`),
+    farr:   () => t("offering_need_farr",    `Need 3 ✦ Farr to make this offering. Complete chapters to earn Farr.`),
+    real:   () => t("offering_need_real",    `Need 100 REAL to make this offering.`),
   };
 
   /* ── Candle flame reward animation ───────────────────────────────────── */
@@ -77,23 +160,41 @@
   /* ── Attempt an offering ──────────────────────────────────────────────── */
   const makeOffering = (type) => {
     const state = getState();
-    const player = getPlayerState();
     const def = OFFERINGS[type];
     if (!def) return;
 
-    /* For demo mode: all offerings are accepted freely (resources are simulated).
-       In production wire real resource checks here. */
-    const DEMO = true;
+    const { kind, amount } = def.cost;
 
-    if (!DEMO) {
-      // TODO: real resource deduction
-      toast(t("offering_insufficient", "You do not yet carry enough to make this offering."));
-      return;
+    /* Check resources */
+    if (kind === "taps") {
+      if (getTapsToday() < amount) {
+        toast(INSUFFICIENT_MSG.taps());
+        return;
+      }
+    } else {
+      if (getRes(kind) < amount) {
+        toast((INSUFFICIENT_MSG[kind] || INSUFFICIENT_MSG.real)());
+        return;
+      }
     }
 
+    /* Deduct */
+    if (kind === "taps") {
+      deductTaps(amount);
+    } else {
+      deductRes(kind, amount);
+    }
+
+    /* Persist count */
     const countKey = `${type}_count`;
     state[countKey] = (state[countKey] || 0) + 1;
     saveState(state);
+
+    /* Sync updated balances to server */
+    syncToServer();
+
+    /* Notify the rest of the app that resources changed */
+    try { window.dispatchEvent(new CustomEvent("shahnama:state_sync")); } catch {}
 
     if (window.RealAudio) window.RealAudio.sounds.loreUnlock?.();
 

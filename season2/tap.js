@@ -463,29 +463,54 @@
       const real     = getReal();
       const fromMax  = ENERGY_BASE + level * ENERGY_STEP;
       const toMax    = ENERGY_BASE + (level + 1) * ENERGY_STEP;
+      const showToastFn = window._tapShowToast || ((m) => alert(m));
       if (real < cost) {
-        const showToastFn = window._tapShowToast || ((m) => alert(m));
         showToastFn(`Need ${fmtReal(cost)} REAL to upgrade energy`);
         return;
       }
-      showUpgradeConfirm(cost, fromMax, toMax, () => {
-        /* Deduct REAL locally */
+      showUpgradeConfirm(cost, fromMax, toMax, async () => {
+        btn.disabled = true;
+        const tgUser = (() => { try { return window.Telegram?.WebApp?.initDataUnsafe?.user; } catch { return null; } })();
+        if (!tgUser?.id) { showToastFn('Open via Telegram to upgrade.'); btn.disabled = false; return; }
+
         try {
-          const ls = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
-          ls.balance = Math.max(0, (ls.balance || 0) - cost);
-          localStorage.setItem('real_player_state_v1', JSON.stringify(ls));
-          if (window.RealPlayer) window.RealPlayer.set({ balance: ls.balance });
-        } catch {}
-        /* Increment level */
-        try { localStorage.setItem('real_energy_level', String(level + 1)); } catch {}
-        /* Reload so app.js re-reads real_energy_level and recalculates state.max */
-        window.location.reload();
+          const res = await fetch('/api/season2/inventory/upgrade-energy', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ telegram_id: String(tgUser.id) }),
+          }).then(r => r.ok ? r.json() : null);
+
+          if (res?.status === 1) {
+            /* Server confirmed — now update local state and reload */
+            try {
+              const ls = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
+              ls.balance = res.new_balance;
+              localStorage.setItem('real_player_state_v1', JSON.stringify(ls));
+              if (window.RealPlayer) window.RealPlayer.set({ balance: res.new_balance });
+            } catch {}
+            try { localStorage.setItem('real_energy_level', String(res.new_level)); } catch {}
+            window.location.reload();
+          } else {
+            const msg = {
+              insufficient_balance: `Need ${fmtReal(cost)} REAL to upgrade energy`,
+              max_level:            'Energy is already at max level.',
+            }[res?.error] || 'Upgrade failed. Please try again.';
+            showToastFn(msg);
+            btn.disabled = false;
+          }
+        } catch {
+          showToastFn('Upgrade failed. Please try again.');
+          btn.disabled = false;
+        }
       });
     });
 
     refresh();
-    /* Re-check affordability whenever balances change */
+    /* Re-check affordability and level display whenever balances change.
+       balanceUpdate fires after server sync (which also writes real_energy_level),
+       so refresh() picks up the correct level on first load from a new device. */
     window.addEventListener('real:zar:updated', refresh);
+    window.addEventListener('balanceUpdate', refresh);
   };
 
   /* ---- Auto-Clicker ---- */
