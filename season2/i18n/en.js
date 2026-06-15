@@ -117,18 +117,14 @@
       /* Ad overlay */
       ad_loading: "Ad loading…",
 
-      /* Earn page */
-      watch_earn: "Watch & Earn",
-      ad_remaining: "5 / 5 today",
-      ad_energy_h: "+25 Energy",
-      ad_energy_copy: "Top up your energy to keep tapping.",
-      ad_energy_btn: "Watch ad · +25 ⚡",
-      ad_gems_h: "+10 Gems",
-      ad_gems_copy: "Stockpile gems for hero upgrades.",
-      ad_gems_btn: "Watch ad · +10 💎",
-      ad_real_h: "+100 REAL",
-      ad_real_copy: "Quick boost to your balance. Daily limit applies.",
-      ad_real_btn: "Watch ad · +100 REAL",
+      /* Earn page — Watch & Earn */
+      watch_earn:     "Watch & Earn",
+      ad_per_day:     "per day",
+      ad_ready_in:    "Ready in",
+      we_gem_bonus:   "5th watch gives 💎 bonus!",
+      watch_earn_done: "All 5 done for today ✓",
+      ads_unavailable: "Ads not available yet. Check back soon!",
+      ad_sdk_missing: "Ad SDK not loaded. Try refreshing.",
       invite_3_h: "Invite 3 friends",
       invite_3_copy: "3 / 3 — Reward chest claimed.",
       invite_10_h: "Invite 10 friends",

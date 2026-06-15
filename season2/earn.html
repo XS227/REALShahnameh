@@ -7,7 +7,7 @@
   <title>REAL Shahnameh — Earn</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
-  <link rel="stylesheet" href="style.css?v=202606051030" />
+  <link rel="stylesheet" href="style.css?v=202606151900" />
 </head>
 <body>
   <main class="app">
@@ -190,41 +190,23 @@
       <h3 data-i18n="watch_earn">Watch &amp; Earn</h3>
       <span class="more" style="cursor:default; font-size:10px; opacity:.6;">powered by Adsgram</span>
     </div>
-    <section class="adsgram-grid" id="adsgram-grid">
-      <article class="card adsgram-tier bronze-tier" data-ad-tier="bronze">
-        <div class="adt-left">
-          <div class="adt-badge bronze-badge">BRONZE</div>
-          <div class="adt-reward">⚡ Energy</div>
-          <div class="adt-duration" data-i18n="ad_dur_10">~10 sec</div>
+    <article class="card watch-earn-card" id="watch-earn-card">
+      <div class="we-header">
+        <div class="we-info">
+          <div class="we-dots" id="we-dots"></div>
+          <div class="we-progress">
+            <span id="we-used">0</span><span class="we-sep">/5</span>
+            <span class="we-perlabel" data-i18n="ad_per_day">per day</span>
+          </div>
         </div>
-        <div class="adt-right">
-          <button class="adt-btn bronze-btn" data-ad-trigger="bronze">Watch</button>
-          <div class="adt-cooldown" id="cd-bronze" hidden></div>
-        </div>
-      </article>
-      <article class="card adsgram-tier silver-tier" data-ad-tier="silver">
-        <div class="adt-left">
-          <div class="adt-badge silver-badge">SILVER</div>
-          <div class="adt-reward">+1 💎</div>
-          <div class="adt-duration" data-i18n="ad_dur_20">~20 sec</div>
-        </div>
-        <div class="adt-right">
-          <button class="adt-btn silver-btn" data-ad-trigger="silver">Watch</button>
-          <div class="adt-cooldown" id="cd-silver" hidden></div>
-        </div>
-      </article>
-      <article class="card adsgram-tier gold-tier" data-ad-tier="gold">
-        <div class="adt-left">
-          <div class="adt-badge gold-badge">GOLD</div>
-          <div class="adt-reward">+5,000 <img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML='◆'"></div>
-          <div class="adt-duration" data-i18n="ad_dur_30">~30 sec</div>
-        </div>
-        <div class="adt-right">
-          <button class="adt-btn gold-btn" data-ad-trigger="gold">Watch</button>
-          <div class="adt-cooldown" id="cd-gold" hidden></div>
-        </div>
-      </article>
-    </section>
+        <button class="primary-btn we-btn" id="we-btn" data-i18n="btn_watch">Watch Now</button>
+      </div>
+      <div class="we-reward-row">
+        <span class="we-reward-amount">+100 <img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML='◆'"> REAL</span>
+        <span class="we-gem-hint" id="we-gem-hint" hidden data-i18n="we_gem_bonus">5th watch gives 💎 bonus!</span>
+      </div>
+      <div class="we-cooldown" id="we-cooldown" hidden></div>
+    </article>
 
     <!-- Season standing — live score (syncs via shahnama:state_sync) -->
     <div class="section-head"><h3 data-i18n="airdrop_score">Season standing</h3></div>
@@ -290,7 +272,7 @@
   <script src="resources.js?v=202605303800"></script>
   <script src="audio.js?v=202605272200"></script>
   <script src="sync.js?v=202606111800"></script>
-  <script src="adsgram.js?v=202605272200"></script>
-  <script src="earn.js?v=202606072200"></script>
+  <script src="adsgram.js?v=202606151900"></script>
+  <script src="earn.js?v=202606151900"></script>
 </body>
 </html>

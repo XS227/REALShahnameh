@@ -256,8 +256,14 @@
       btn.disabled = true;
       btn.textContent = isRetry ? t('btn_connecting_ton') : t('btn_loading_ad');
 
-      window.RealAdService.showAd('bronze')
+      window.RealAdService.showAd()
         .then(() => {
+          /* Fill energy as a bonus for watching from the Tap page */
+          if (window.RealPlayer) {
+            const p   = window.RealPlayer.get();
+            const add = (p.energyMax || 1000) - (p.energy || 0);
+            if (add > 0) window.RealPlayer.addResource('energy', add);
+          }
           hydrateFromPlayer();
           showToast(t('energy_filled'));
           try { window.dispatchEvent(new CustomEvent('real:burst', { detail: { label: '⚡ Energy filled!' } })); } catch (_) {}
@@ -266,7 +272,7 @@
           btn.removeAttribute('data-orig-text');
         })
         .catch(err => {
-          if (err.type === 'cooldown') {
+          if (err.type === 'cooldown' || err.type === 'daily_limit') {
             showToast(t('ad_cooldown_msg'));
             btn.disabled = false;
             btn.textContent = origText;

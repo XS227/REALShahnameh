@@ -973,112 +973,104 @@
     }
   };
 
-  /* ── Adsgram Watch & Earn ────────────────────────────────────────────── */
-  const AD_TIERS = ['bronze', 'silver', 'gold'];
+  /* ── Watch & Earn (single-tier) ─────────────────────────────────────── */
+  let _adCdInterval = null;
 
-  /* Countdown timers per tier (for the cooldown display) */
-  const adCdIntervals = {};
-
-  const updateAdButton = (tier) => {
-    const btn = document.querySelector(`[data-ad-trigger="${tier}"]`);
-    const cdEl = document.getElementById('cd-' + tier);
-    if (!btn) return;
+  const updateWatchBtn = () => {
+    const btn     = document.getElementById('we-btn');
+    const cdEl    = document.getElementById('we-cooldown');
+    const usedEl  = document.getElementById('we-used');
+    const dotsEl  = document.getElementById('we-dots');
+    const gemHint = document.getElementById('we-gem-hint');
 
     const svc = window.RealAdService;
-    if (!svc) {
+    const ws  = svc ? svc.getWatchState() : { used: 0, remaining: 5, cooldownSecs: 0, nextIsGem: false, configured: false };
+
+    if (usedEl) usedEl.textContent = ws.used;
+
+    if (dotsEl) {
+      dotsEl.innerHTML = Array.from({ length: 5 }, (_, i) => {
+        const cls = i < ws.used
+          ? 'we-dot we-dot-done'
+          : (i === ws.used && ws.remaining > 0 ? 'we-dot we-dot-next' : 'we-dot');
+        return `<span class="${cls}"></span>`;
+      }).join('');
+    }
+
+    if (gemHint) gemHint.hidden = !(ws.nextIsGem && ws.remaining > 0);
+
+    if (!btn) return;
+
+    if (ws.remaining <= 0) {
       btn.disabled = true;
-      btn.textContent = t('loading_text');
+      btn.textContent = t('watch_earn_done', 'All 5 done for today ✓');
+      if (cdEl) cdEl.hidden = true;
+      clearInterval(_adCdInterval);
+      _adCdInterval = null;
       return;
     }
 
-    const cfg = svc.getTierConfig();
-    const tierCfg = cfg && cfg[tier];
-
-    /* Not configured yet — grey out silently */
-    if (!tierCfg || !tierCfg.blockId) {
+    if (ws.cooldownSecs > 0) {
       btn.disabled = true;
-      btn.textContent = t('btn_soon');
-      if (cdEl) { cdEl.hidden = true; cdEl.textContent = ''; }
-      return;
-    }
-
-    const remaining = svc.getCooldowns()[tier] || 0;
-    if (remaining > 0) {
-      btn.disabled = true;
-      btn.textContent = t('btn_watch');
+      btn.textContent = t('btn_watch', 'Watch Now');
       if (cdEl) {
         cdEl.hidden = false;
-        const mins = Math.floor(remaining / 60);
-        const secs = remaining % 60;
-        cdEl.textContent = 'Ready in ' + (mins > 0 ? mins + 'm ' : '') + secs + 's';
+        const m = Math.floor(ws.cooldownSecs / 60);
+        const s = ws.cooldownSecs % 60;
+        cdEl.textContent = t('ad_ready_in', 'Ready in') + ' ' + (m > 0 ? m + 'm ' : '') + s + 's';
       }
-    } else {
-      btn.disabled = false;
-      btn.textContent = t('btn_watch');
-      if (cdEl) { cdEl.hidden = true; cdEl.textContent = ''; }
+      if (!_adCdInterval) {
+        _adCdInterval = setInterval(() => {
+          const rem = window.RealAdService ? window.RealAdService.getWatchState().cooldownSecs : 0;
+          updateWatchBtn();
+          if (rem <= 0) { clearInterval(_adCdInterval); _adCdInterval = null; }
+        }, 1000);
+      }
+      return;
     }
+
+    btn.disabled = !ws.configured;
+    btn.textContent = ws.configured
+      ? (ws.nextIsGem ? '💎 ' + t('btn_watch', 'Watch Now') : t('btn_watch', 'Watch Now'))
+      : t('btn_soon', 'Soon');
+    if (cdEl) cdEl.hidden = true;
   };
 
-  const startCooldownTick = (tier) => {
-    clearInterval(adCdIntervals[tier]);
-    adCdIntervals[tier] = setInterval(() => {
-      const rem = (window.RealAdService && window.RealAdService.getCooldowns()[tier]) || 0;
-      updateAdButton(tier);
-      if (rem <= 0) clearInterval(adCdIntervals[tier]);
-    }, 1000);
-  };
-
-  const handleAdResult = (tier, result) => {
-    const r = result.rewards || {};
+  const handleAdResult = (result) => {
+    const r     = result.rewards || {};
     const parts = [];
-    if (r.real)   parts.push('+' + r.real + ' ' + RT);
-    if (r.gems)   parts.push('+' + r.gems + ' 💎');
-    if (r.farr)   parts.push('+' + r.farr + ' ✦');
-    if (r.energy) parts.push('⚡ Energy filled!');
+    if (r.real) parts.push('+' + r.real + ' ' + RT + ' REAL');
+    if (r.gems) parts.push('+' + r.gems + ' 💎');
     const label = parts.join(' · ') || 'Reward earned!';
+    const btn   = document.getElementById('we-btn');
     showToast(label);
     fireBurst(label);
-    startCooldownTick(tier);
-    updateAdButton(tier);
+    if (r.real) spawnCoinBurst(btn, r.real);
+    updateWatchBtn();
   };
 
-  const handleAdError = (tier, err) => {
-    if (err.type === 'cooldown') {
-      showToast('Please wait before watching another ad.');
-      startCooldownTick(tier);
-    } else if (err.type === 'not_configured') {
-      showToast('Ads not available yet.');
-    } else if (err.type === 'sdk_missing') {
-      showToast('Ad SDK not loaded. Try refreshing.');
-    } else if (err.type === 'skipped') {
-      showToast('Ad skipped — no reward.');
-    } else {
-      showToast('Ad unavailable. Try again later.');
-    }
-    updateAdButton(tier);
+  const handleAdError = (err) => {
+    if (err.type === 'cooldown')       showToast(t('ad_cooldown_msg', 'Cooldown — come back soon!'));
+    else if (err.type === 'daily_limit') showToast(t('watch_earn_done', 'All 5 ads watched for today!'));
+    else if (err.type === 'not_configured') showToast(t('ads_unavailable', 'Ads not available yet.'));
+    else if (err.type === 'sdk_missing')    showToast(t('ad_sdk_missing', 'Ad SDK not loaded. Try refreshing.'));
+    else if (err.type === 'skipped')        showToast(t('ad_skipped_msg', 'Ad skipped — no reward.'));
+    else                                    showToast(t('ad_unavailable_msg', 'Ad unavailable. Try again later.'));
+    updateWatchBtn();
   };
 
   const bootAdsgram = () => {
-    /* Initial state update */
-    AD_TIERS.forEach(tier => {
-      updateAdButton(tier);
-      /* If already in cooldown from a previous session, tick it */
-      const rem = (window.RealAdService && window.RealAdService.getCooldowns()[tier]) || 0;
-      if (rem > 0) startCooldownTick(tier);
-    });
+    updateWatchBtn();
 
-    /* Wire click handlers */
-    AD_TIERS.forEach(tier => {
-      const btn = document.querySelector(`[data-ad-trigger="${tier}"]`);
-      if (!btn) return;
-      btn.addEventListener('click', () => {
-        if (!window.RealAdService) { showToast('Ad service not ready.'); return; }
-        btn.disabled = true;
-        btn.textContent = t('btn_loading_ad');
-        window.RealAdService.showAd(tier)
-          .then(result => handleAdResult(tier, result))
-          .catch(err   => handleAdError(tier, err));
-      });
+    const btn = document.getElementById('we-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      if (!window.RealAdService) { showToast('Ad service not ready.'); return; }
+      btn.disabled = true;
+      btn.textContent = t('btn_loading_ad', 'Loading…');
+      window.RealAdService.showAd()
+        .then(result => handleAdResult(result))
+        .catch(err   => handleAdError(err));
     });
   };
 

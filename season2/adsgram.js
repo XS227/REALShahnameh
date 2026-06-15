@@ -1,132 +1,143 @@
 /* ==========================================================================
    REAL Shahnameh — Season 2 AdService (adsgram.js)
-   Wraps the Adsgram SDK. Exposes window.RealAdService.showAd(tier).
-   Requires Adsgram SDK: https://sad.adsgram.ai/js/sad.min.js
+   Single rewarded-ad type: 100 REAL/watch · 30 min cooldown · 5/day cap.
+   5th watch of the day also gives 1 Gem.
+   Block ID pushed from server via sync → localStorage('real_ad_block_id').
    ========================================================================== */
 (function () {
   'use strict';
 
-  /* Default tier config — overwritten at runtime from localStorage (sync.js
-     caches the server's adsgram block IDs from /user/sync response).       */
-  const DEFAULT_CONFIG = {
-    bronze: { blockId: '', real: 0,    gems: 0, farr: 0, energy: true,  cooldown: 300  },
-    silver: { blockId: '', real: 0,    gems: 1, farr: 0, energy: false, cooldown: 600  },
-    gold:   { blockId: '', real: 5000, gems: 0, farr: 0, energy: false, cooldown: 1800 },
-  };
+  const AD_REAL         = 100;
+  const AD_COOLDOWN_SEC = 1800;  /* 30 minutes */
+  const AD_DAILY_LIMIT  = 5;
+  const AD_GEM_FIFTH    = 1;     /* bonus gem on the 5th watch */
+  const LS_KEY          = 'real_ads_watch';
 
-  const getConfig = () => {
+  const todayStr = () => new Date().toISOString().slice(0, 10);
+
+  /* State persisted in localStorage: { date, used, lastTs } */
+  const readState = () => {
     try {
-      const raw = localStorage.getItem('real_adsgram_config');
+      const raw = localStorage.getItem(LS_KEY);
       if (raw) {
-        const saved = JSON.parse(raw);
-        const merge = (tier) => {
-          const merged = Object.assign({}, DEFAULT_CONFIG[tier], saved[tier]);
-          /* Always fall back to hardcoded blockId if server config has none */
-          if (!merged.blockId) merged.blockId = DEFAULT_CONFIG[tier].blockId;
-          return merged;
-        };
-        return { bronze: merge('bronze'), silver: merge('silver'), gold: merge('gold') };
+        const s = JSON.parse(raw);
+        if (s.date === todayStr()) return s;
       }
     } catch (_) {}
-    return DEFAULT_CONFIG;
+    return { date: todayStr(), used: 0, lastTs: 0 };
   };
 
-  /* Cooldown state — tracks last ad start time per tier in this session.
-     Server is authoritative; this is just a local UI guard.               */
-  const cooldownEnds = {};
-
-  const getCooldownRemaining = (tier) => {
-    const ends = cooldownEnds[tier] || 0;
-    return Math.max(0, Math.ceil((ends - Date.now()) / 1000));
+  const saveState = (s) => {
+    try { localStorage.setItem(LS_KEY, JSON.stringify(s)); } catch (_) {}
   };
 
-  /* ── Core: show an Adsgram ad for a given tier ───────────────────────── */
-  const showAd = (tier) => {
-    return new Promise((resolve, reject) => {
-      const cfg     = getConfig();
-      const tierCfg = cfg[tier];
+  const getBlockId = () => localStorage.getItem('real_ad_block_id') || '';
 
-      if (!tierCfg) {
-        reject({ type: 'error', error: 'unknown_tier' });
+  const tgUserId = () => {
+    try {
+      const u = window.Telegram
+        && window.Telegram.WebApp
+        && window.Telegram.WebApp.initDataUnsafe
+        && window.Telegram.WebApp.initDataUnsafe.user;
+      return u ? String(u.id) : null;
+    } catch (_) { return null; }
+  };
+
+  /* Public: current watch state for UI rendering */
+  const getWatchState = () => {
+    const s           = readState();
+    const now         = Date.now();
+    const msSinceLast = s.lastTs ? (now - s.lastTs) : AD_COOLDOWN_SEC * 1000;
+    const cooldownMs  = Math.max(0, AD_COOLDOWN_SEC * 1000 - msSinceLast);
+    const remaining   = Math.max(0, AD_DAILY_LIMIT - s.used);
+    return {
+      used:        s.used,
+      remaining,
+      cooldownSecs: Math.ceil(cooldownMs / 1000),
+      nextIsGem:   remaining === 1,  /* next watch will be the 5th */
+      configured:  !!getBlockId(),
+    };
+  };
+
+  /* Public: show an ad, resolve with { rewards } on success */
+  const showAd = () => new Promise((resolve, reject) => {
+    const ws = getWatchState();
+
+    if (ws.remaining <= 0) {
+      reject({ type: 'daily_limit' });
+      return;
+    }
+    if (ws.cooldownSecs > 0) {
+      reject({ type: 'cooldown', wait_seconds: ws.cooldownSecs });
+      return;
+    }
+
+    const blockId = getBlockId();
+    if (!blockId) {
+      reject({ type: 'not_configured' });
+      return;
+    }
+    if (!window.Adsgram) {
+      reject({ type: 'sdk_missing' });
+      return;
+    }
+
+    let controller;
+    try {
+      controller = window.Adsgram.init({ blockId });
+    } catch (e) {
+      reject({ type: 'error', error: String(e) });
+      return;
+    }
+
+    controller.show().then(async (result) => {
+      if (!result || !result.done) {
+        reject({ type: 'skipped' });
         return;
       }
 
-      /* Local cooldown guard */
-      const remaining = getCooldownRemaining(tier);
-      if (remaining > 0) {
-        reject({ type: 'cooldown', wait_seconds: remaining });
-        return;
-      }
+      /* Update local state immediately so cooldown ticks without waiting for server */
+      const s = readState();
+      s.used++;
+      s.lastTs = Date.now();
+      saveState(s);
 
-      /* No blockId configured yet */
-      if (!tierCfg.blockId) {
-        reject({ type: 'not_configured' });
-        return;
-      }
-
-      /* Adsgram SDK must be loaded */
-      if (!window.Adsgram) {
-        reject({ type: 'sdk_missing' });
-        return;
-      }
-
-      let controller;
-      try {
-        controller = window.Adsgram.init({ blockId: String(tierCfg.blockId) });
-      } catch (e) {
-        reject({ type: 'error', error: String(e) });
-        return;
-      }
-
-      controller.show().then((result) => {
-        if (!result || !result.done) {
-          reject({ type: 'skipped' });
-          return;
-        }
-
-        cooldownEnds[tier] = Date.now() + tierCfg.cooldown * 1000;
-
-        /* Credit locally from tierCfg — server-side double-verification will
-           be wired via /api/ads/callback in the Adsgram dashboard later.    */
-        const rewards = {
-          real:   tierCfg.real   || 0,
-          gems:   tierCfg.gems   || 0,
-          farr:   tierCfg.farr   || 0,
-          energy: !!tierCfg.energy,
-        };
-
-        if (window.RealPlayer) {
-          if (rewards.real)   window.RealPlayer.addResource('real', rewards.real);
-          if (rewards.gems)   window.RealPlayer.addResource('gems', rewards.gems);
-          if (rewards.farr)   window.RealPlayer.addResource('farr', rewards.farr);
-          if (rewards.energy) {
-            const p   = window.RealPlayer.get();
-            const max = p.energyMax || 1000;
-            const cur = p.energy    || 0;
-            const add = max - cur;
-            if (add > 0) window.RealPlayer.addResource('energy', add);
-            rewards.energyFilled = max;
+      /* Call backend to log claim and get authoritative gem-on-fifth */
+      let gems = 0;
+      const uid = tgUserId();
+      if (uid) {
+        try {
+          const resp = await fetch('/api/season2/ads/verify-reward', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ telegram_id: uid, tier: 'watch' }),
+            keepalive: true,
+          });
+          if (resp.ok) {
+            const data = await resp.json();
+            if (data.status === 1 && data.rewards && data.rewards.gems) {
+              gems = data.rewards.gems;
+            }
           }
-          if (window.RealSync) window.RealSync.syncBalance();
-        }
+        } catch (_) {}
+      } else {
+        /* Offline: compute gem from local count */
+        if (s.used === AD_DAILY_LIMIT) gems = AD_GEM_FIFTH;
+      }
 
-        resolve({ tier, rewards });
-      }).catch((err) => {
-        reject({ type: 'ad_error', error: err });
-      });
+      const rewards = { real: AD_REAL, gems };
+
+      if (window.RealPlayer) {
+        window.RealPlayer.addResource('real', AD_REAL);
+        if (gems) window.RealPlayer.addResource('gems', gems);
+        if (window.RealSync) window.RealSync.syncBalance();
+      }
+
+      resolve({ rewards });
+    }).catch((err) => {
+      reject({ type: 'ad_error', error: err });
     });
-  };
+  });
 
-  /* ── Cooldown query ──────────────────────────────────────────────────── */
-  const getCooldowns = () => {
-    const cfg = getConfig();
-    return Object.fromEntries(
-      Object.keys(cfg).map(tier => [tier, getCooldownRemaining(tier)])
-    );
-  };
-
-  /* ── Config query ────────────────────────────────────────────────────── */
-  const getTierConfig = () => getConfig();
-
-  window.RealAdService = { showAd, getCooldowns, getTierConfig };
+  window.RealAdService = { showAd, getWatchState };
 })();

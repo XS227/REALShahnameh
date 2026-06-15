@@ -154,7 +154,12 @@
         /* Notify earn.js so it can re-render tasks with the authoritative server list */
         try { window.dispatchEvent(new CustomEvent('shahnama:tasks:synced', { detail: su.completed_tasks })); } catch (_) {}
       }
-      if (su.adsgram)                   localStorage.setItem('real_adsgram_config',    JSON.stringify(su.adsgram));
+      if (su.adsgram) {
+        localStorage.setItem('real_adsgram_config', JSON.stringify(su.adsgram));
+        if (su.adsgram.watch && su.adsgram.watch.blockId) {
+          localStorage.setItem('real_ad_block_id', su.adsgram.watch.blockId);
+        }
+      }
       if (su.max_real_balance != null)  localStorage.setItem('real_max_real_balance',  String(su.max_real_balance));
       if (su.economy)                   localStorage.setItem('real_economy_config',    JSON.stringify(su.economy));
       localStorage.setItem('real_has_clan',       su.clan_id ? '1' : '0');

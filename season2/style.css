@@ -5157,100 +5157,81 @@ body::after {
 .skel-sub  { width: 70px;  height: 10px; margin-top: 4px; }
 .skel-pts  { width: 60px;  height: 12px; }
 
-/* ── Adsgram Watch & Earn ────────────────────────────────────────────── */
-.adsgram-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* ── Watch & Earn single card ────────────────────────────────────────── */
+.watch-earn-card {
+  padding: 16px;
   margin-bottom: 8px;
 }
-.adsgram-tier {
+.we-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  padding: 12px 14px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
-.adt-left { flex: 1; min-width: 0; }
-.adt-badge {
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: .8px;
-  border-radius: 5px;
-  padding: 2px 8px;
-  display: inline-block;
-  margin-bottom: 4px;
+.we-info { flex: 1; min-width: 0; }
+.we-dots {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 7px;
 }
-.bronze-badge {
-  background: rgba(205,127,50,.22);
-  border: 1px solid rgba(205,127,50,.45);
-  color: #cd7f32;
+.we-dot {
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.16);
+  transition: background .2s, border-color .2s, box-shadow .2s;
 }
-.silver-badge {
-  background: rgba(192,192,192,.18);
-  border: 1px solid rgba(192,192,192,.4);
-  color: #c0c0c0;
+.we-dot-done {
+  background: var(--gold);
+  border-color: var(--gold);
+  box-shadow: 0 0 7px rgba(244,197,107,.6);
 }
-.gold-badge {
-  background: rgba(244,197,107,.18);
-  border: 1px solid var(--border-gold);
-  color: var(--gold);
+.we-dot-next {
+  background: rgba(244,197,107,.2);
+  border-color: var(--border-gold);
+  box-shadow: 0 0 6px rgba(244,197,107,.22);
 }
-.adt-reward {
-  font-size: 17px;
-  font-weight: 800;
+.we-progress {
+  font-size: 13px;
+  font-weight: 600;
   color: var(--text);
   line-height: 1.2;
 }
-.adt-duration {
-  font-size: 11px;
-  color: var(--muted);
-  margin-top: 2px;
+#we-used {
+  color: var(--gold);
+  font-weight: 900;
+  font-size: 16px;
 }
-.adt-right {
+.we-sep    { color: var(--muted); margin: 0 2px; }
+.we-perlabel { font-size: 11px; color: var(--muted); font-weight: 400; margin-left: 5px; }
+.we-btn { flex-shrink: 0; white-space: nowrap; }
+.we-reward-row {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 5px;
-  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-.adt-btn {
-  font-size: 13px;
-  font-weight: 800;
-  border: none;
-  border-radius: 10px;
-  padding: 8px 20px;
-  cursor: pointer;
-  letter-spacing: .3px;
-  transition: opacity .2s, transform .1s;
-  white-space: nowrap;
+.we-reward-amount {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--gold);
+  text-shadow: 0 0 12px rgba(244,197,107,.3);
 }
-.adt-btn:disabled {
-  opacity: .45;
-  cursor: not-allowed;
-  transform: none !important;
-}
-.adt-btn:not(:disabled):active { transform: scale(.96); }
-.bronze-btn {
-  background: linear-gradient(135deg, #8b5e30, #cd7f32);
-  color: #fff;
-}
-.silver-btn {
-  background: linear-gradient(135deg, #6e6e6e, #c0c0c0);
-  color: #111;
-}
-.gold-btn {
-  background: linear-gradient(135deg, var(--gold), #f5a623);
-  color: #1a1200;
-}
-.adt-cooldown {
+.we-gem-hint {
   font-size: 11px;
-  color: var(--muted);
-  text-align: right;
+  font-weight: 600;
+  color: #cdbcff;
+  background: rgba(205,188,255,.1);
+  border: 1px solid rgba(205,188,255,.28);
+  border-radius: 8px;
+  padding: 3px 9px;
 }
-.bronze-tier { border-left: 2px solid #cd7f32; }
-.silver-tier { border-left: 2px solid #c0c0c0; }
-.gold-tier   { border-left: 2px solid var(--gold); }
+.we-cooldown {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+}
 
 /* ── Global economy icon helpers ─────────────────────────────────────── */
 /* REAL token — use actual token image wherever supported */
