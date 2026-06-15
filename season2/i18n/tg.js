@@ -727,6 +727,8 @@
       /* Learn page */
       coming_soon: "Ба зудӣ",
       unlocks_when_ready: "Ҳангоме ки мундариҷа омода шавад кушода мешавад",
+      quiz_gate_chip: "Имтиҳон лозим аст",
+      quiz_gate_msg: "Барои идома додан, ҳамаи имтиҳонҳои боби қаблиро гузаред",
       open_level: "Кушодани сатҳ ›",
       learn_level_tpl: "Сатҳ {level} · {title}",
       learn_stories_done_tpl: "{done} аз {total} ҳикоя анҷом ёфт",

@@ -5,6 +5,11 @@
    status="available" or status="completed" render full detail. Everything
    else renders as a "Coming soon" placeholder — no rewards, no story,
    no quiz teasers — until the content is actually authored.
+
+   §7.9 (Dr. Dadashi): Chapter N is also quiz-gated — players must pass all
+   three quiz tiers (easy + medium + hard) of chapter N-1 before chapter N
+   becomes accessible, even if its content is ready. Backward-compat: chapters
+   already marked done by the player are never retroactively re-locked.
    ========================================================================== */
 (() => {
   "use strict";
@@ -24,7 +29,19 @@
 
   const isReady = (c) => c && (c.status === "available" || c.status === "completed");
 
-  const chapterHref = (c) => isReady(c) ? `chapter.html?slug=${encodeURIComponent(c.slug)}` : null;
+  /* §7.9 — true if all three quiz tiers for this chapter slug are passed.
+     A chapter already marked done by the player counts as quiz-cleared
+     (backward-compat: old completions predating the quiz gate). */
+  const allQuizPassed = (slug) => {
+    try {
+      if (localStorage.getItem(`real_chapter_done_${slug}`) === "1") return true;
+      return (
+        localStorage.getItem(`real_quiz_${slug}_easy`)   === "passed" &&
+        localStorage.getItem(`real_quiz_${slug}_medium`) === "passed" &&
+        localStorage.getItem(`real_quiz_${slug}_hard`)   === "passed"
+      );
+    } catch { return false; }
+  };
 
   const render = (chapters, totalChapters) => {
     if (!Array.isArray(chapters) || chapters.length === 0) {
@@ -45,23 +62,33 @@
     if (pctEl)  pctEl.textContent  = ((window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(pct) : fmtNum(pct)) + "%";
     if (fillEl) fillEl.style.width = `${Math.max(2, pct)}%`;
 
-    host.innerHTML = chapters.map((c) => {
+    host.innerHTML = chapters.map((c, idx) => {
       const level = c.level || c.order || c.id;
       const localDone = (typeof localStorage !== "undefined") &&
                         localStorage.getItem(`real_chapter_done_${c.slug}`) === "1";
-      const ready = isReady(c) || localDone;
+      const contentReady = isReady(c) || localDone;
+
+      /* §7.9 sequential gate: previous chapter's quizzes must all be passed.
+         Gate is skipped for: the very first chapter, chapters the player already
+         finished, and chapters whose previous chapter has no ready content yet. */
+      const prevChapter = idx > 0 ? chapters[idx - 1] : null;
+      const prevContentReady = prevChapter && isReady(prevChapter);
+      const quizGated = contentReady && !localDone && prevContentReady && !allQuizPassed(prevChapter.slug);
+
+      const ready = contentReady && !quizGated;
       const done  = c.status === "completed" || localDone;
       const cls   = done ? "done" : ready ? "active" : "locked";
       const href  = ready ? `chapter.html?slug=${encodeURIComponent(c.slug)}` : null;
 
       if (!ready) {
+        const isQuizGate = quizGated;
         return `
           <article class="card chapter locked" data-chapter="${esc(level)}" data-slug="${esc(c.slug)}">
             <span class="node">${esc(fmtNum(level))}</span>
             <h4>${esc(t("learn_level_tpl", { level, title: locF(c, "title") }))}</h4>
             <div class="meta">
-              <span class="chip">${t("coming_soon")}</span>
-              <span class="reward" style="color:var(--muted);">${t("unlocks_when_ready")}</span>
+              <span class="chip">${isQuizGate ? esc(t("quiz_gate_chip")) : esc(t("coming_soon"))}</span>
+              <span class="reward" style="color:var(--muted);">${isQuizGate ? esc(t("quiz_gate_msg")) : esc(t("unlocks_when_ready"))}</span>
             </div>
           </article>`;
       }

@@ -724,6 +724,8 @@
       /* Learn page */
       coming_soon: "Coming soon",
       unlocks_when_ready: "Unlocks when content is ready",
+      quiz_gate_chip: "Quiz Required",
+      quiz_gate_msg: "Pass all quizzes in the previous chapter to continue",
       open_level: "Open level ›",
       learn_level_tpl: "Level {level} · {title}",
       learn_stories_done_tpl: "{done} of {total} stories completed",

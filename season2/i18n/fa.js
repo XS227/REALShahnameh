@@ -728,6 +728,8 @@
       /* Learn page */
       coming_soon: "به زودی",
       unlocks_when_ready: "زمانی که محتوا آماده شود باز می‌شود",
+      quiz_gate_chip: "آزمون لازم است",
+      quiz_gate_msg: "برای ادامه، همه آزمون‌های فصل قبلی را با موفقیت بگذرانید",
       open_level: "باز کردن سطح ›",
       learn_level_tpl: "سطح {level} · {title}",
       learn_stories_done_tpl: "{done} از {total} داستان تکمیل شد",

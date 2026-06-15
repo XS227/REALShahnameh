@@ -321,11 +321,21 @@
       hint_tg:  "Ҳамаи саҳнаҳои ин бобро бихонед — ҳар картаи саҳнаро пахш кунед то кушода шавад.",
     }] : [];
 
-    /* Auto-inject: progressive quiz tiers — medium required ch16+, hard ch36+ */
-    const chOrder = (_chapterMeta && _chapterMeta.order) || 1;
+    /* Auto-inject: all three quiz tiers required for every chapter (§7.9 — Dr. Dadashi) */
+    const hasEasyQs   = _quizzes.some(q => q.chapter_slug === SLUG && q.difficulty === "easy");
     const hasMediumQs = _quizzes.some(q => q.chapter_slug === SLUG && q.difficulty === "medium");
     const hasHardQs   = _quizzes.some(q => q.chapter_slug === SLUG && q.difficulty === "hard");
-    const mediumQuizReq = (chOrder >= 16 && hasMediumQs) ? [{
+    const easyQuizReq = hasEasyQs ? [{
+      kind:     "quiz",
+      tier:     "easy",
+      label_en: "Pass Easy quiz tier",
+      label_fa: "گذراندنِ آزمونِ آسان",
+      label_tg: "Гузаштани санҷиши осон",
+      hint_en:  "Scroll to the Quiz section and complete the Easy difficulty tier.",
+      hint_fa:  "به بخش آزمون بروید و سطح آسان را کامل کنید.",
+      hint_tg:  "Ба бахши Имтиҳон равед ва сатҳи осонро иҷро кунед.",
+    }] : [];
+    const mediumQuizReq = hasMediumQs ? [{
       kind:     "quiz",
       tier:     "medium",
       label_en: "Pass Medium quiz tier",
@@ -335,7 +345,7 @@
       hint_fa:  "به بخش آزمون بروید و سطح متوسط را کامل کنید.",
       hint_tg:  "Ба бахши Имтиҳон равед ва сатҳи миёнаро иҷро кунед.",
     }] : [];
-    const hardQuizReq = (chOrder >= 36 && hasHardQs) ? [{
+    const hardQuizReq = hasHardQs ? [{
       kind:     "quiz",
       tier:     "hard",
       label_en: "Pass Hard quiz tier",
@@ -346,7 +356,7 @@
       hint_tg:  "Ба бахши Имтиҳон равед ва сатҳи душворро иҷро кунед.",
     }] : [];
 
-    const reqs = [...deskReq, ...scenesReq, ...(battle.requirements || []), ...mediumQuizReq, ...hardQuizReq];
+    const reqs = [...deskReq, ...scenesReq, ...(battle.requirements || []), ...easyQuizReq, ...mediumQuizReq, ...hardQuizReq];
     const unlockedScenes = new Set(progress.scenes);
     const unlockedChars  = new Set(); // populated below
 
@@ -376,8 +386,9 @@
       }
       if (r.kind === "quiz") {
         const tier = r.tier || "easy";
-        if (progress.quiz && progress.quiz[tier] !== undefined)
-          return !!(progress.quiz[tier] && progress.quiz[tier].done);
+        const state = progress.quiz && progress.quiz[tier];
+        // Require passed (≥ 60%) not just done; undefined passed = legacy save, treat as passed
+        if (state) return !!(state.done && state.passed !== false);
         if (tier === "easy") return !!(progress.quiz && progress.quiz.done);
         return false;
       }
