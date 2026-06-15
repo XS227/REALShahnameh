@@ -33,6 +33,19 @@
 
   const getBlockId = () => localStorage.getItem('real_ad_block_id') || '';
 
+  /* Fetch block ID from server if localStorage is empty (e.g. first load
+     before sync.js has run, or non-Telegram browser test). */
+  const ensureBlockId = async () => {
+    if (getBlockId()) return;
+    try {
+      const r = await fetch('/api/season2/ads/config', { cache: 'no-store' });
+      if (!r.ok) return;
+      const d = await r.json();
+      const id = d && d.adsgram && d.adsgram.watch && d.adsgram.watch.blockId;
+      if (id) localStorage.setItem('real_ad_block_id', id);
+    } catch (_) {}
+  };
+
   const tgUserId = () => {
     try {
       const u = window.Telegram
@@ -60,7 +73,8 @@
   };
 
   /* Public: show an ad, resolve with { rewards } on success */
-  const showAd = () => new Promise((resolve, reject) => {
+  const showAd = () => new Promise(async (resolve, reject) => {
+    await ensureBlockId();
     const ws = getWatchState();
 
     if (ws.remaining <= 0) {
@@ -137,6 +151,11 @@
     }).catch((err) => {
       reject({ type: 'ad_error', error: err });
     });
+  });
+
+  /* Pre-fetch block ID on load so the Watch button shows immediately */
+  ensureBlockId().then(() => {
+    try { window.dispatchEvent(new CustomEvent('real:adservice:ready')); } catch (_) {}
   });
 
   window.RealAdService = { showAd, getWatchState };

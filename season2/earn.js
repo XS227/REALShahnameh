@@ -1061,6 +1061,7 @@
 
   const bootAdsgram = () => {
     updateWatchBtn();
+    window.addEventListener('real:adservice:ready', updateWatchBtn);
 
     const btn = document.getElementById('we-btn');
     if (!btn) return;
