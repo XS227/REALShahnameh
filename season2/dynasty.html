@@ -304,6 +304,30 @@
       pointer-events: none;
     }
 
+    /* ── World milestone chips ───────────────────────────────────────────── */
+    .dy-milestone-strip {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      pointer-events: none;
+    }
+    .dy-milestone-chip {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-size: 8px;
+      font-weight: 700;
+      white-space: nowrap;
+      letter-spacing: .3px;
+    }
+    .dy-milestone-chip.cat-world  { background: rgba(80,120,200,.18); border: 1px solid rgba(80,120,200,.35); color: rgba(140,180,255,.85); }
+    .dy-milestone-chip.cat-persia { background: rgba(244,197,107,.12); border: 1px solid rgba(244,197,107,.35); color: rgba(244,197,107,.9); }
+    .dy-milestone-chip.cat-faith  { background: rgba(74,208,166,.12); border: 1px solid rgba(74,208,166,.35); color: rgba(74,208,166,.9); }
+    .dy-milestone-chip .ms-year   { opacity: .65; }
+
     /* ── FABs ────────────────────────────────────────────────────────────── */
     .dy-fabs {
       position: absolute;
@@ -610,6 +634,23 @@
       lbl.style.left = curX + "px";
       lbl.style.top  = "6px";
       canvas.appendChild(lbl);
+
+      /* World milestone chips — positioned below tree label */
+      const events = tree.world_events || [];
+      if (events.length) {
+        const strip = document.createElement("div");
+        strip.className = "dy-milestone-strip";
+        strip.style.left  = curX + "px";
+        strip.style.top   = "22px";
+        strip.style.width = w + "px";
+        events.forEach(ev => {
+          const chip = document.createElement("div");
+          chip.className = `dy-milestone-chip cat-${ev.cat || "world"}`;
+          chip.innerHTML = `<span class="ms-year">${ev.year}</span><span>${ev.label}</span>`;
+          strip.appendChild(chip);
+        });
+        canvas.appendChild(strip);
+      }
 
       curX += w + TGAP;
     });
@@ -974,7 +1015,7 @@
   }
 
   /* ── Bootstrap ────────────────────────────────────────────────────────── */
-  fetch("data/dynasty.json?v=5")
+  fetch("data/dynasty.json?v=6")
     .then(r => r.json())
     .then(data => {
       allTrees       = data.trees;

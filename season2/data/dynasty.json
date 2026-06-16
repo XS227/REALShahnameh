@@ -13,7 +13,9 @@
         "title": "First King of the World",
         "era": "~7000 BC",
         "img": "/assets/images/heroes/keyumars-hero.png",
-        "rivals": ["ahriman"],
+        "rivals": [
+          "ahriman"
+        ],
         "children": [
           {
             "id": "siamak",
@@ -24,7 +26,9 @@
             "title": "The Martyred Prince",
             "era": "~6950 BC",
             "img": "/assets/images/heroes/siamak-hero.png",
-            "rivals": ["ahriman"],
+            "rivals": [
+              "ahriman"
+            ],
             "lore": {
               "title": "Son of the First King",
               "description": "Siamak was the beloved son of Keyumars, first king of the world. When Ahriman's demon army rose against the young realm, Siamak went out to fight — and fell. His death was the first grief to enter the world, the wound that turned light to mourning.",
@@ -60,8 +64,12 @@
                         "title": "The Golden Throne",
                         "era": "~5500 BC",
                         "img": "heroes/Jamshid.png",
-                        "rivals": ["zahhak"],
-                        "contemporaries": ["kaveh"],
+                        "rivals": [
+                          "zahhak"
+                        ],
+                        "contemporaries": [
+                          "kaveh"
+                        ],
                         "children": [
                           {
                             "id": "zahhak",
@@ -73,7 +81,11 @@
                             "era": "~5000–4000 BC",
                             "img": "heroes/zahhak.png",
                             "note": "Usurped the throne for 1000 years",
-                            "rivals": ["jamshid", "fereydun", "kaveh"],
+                            "rivals": [
+                              "jamshid",
+                              "fereydun",
+                              "kaveh"
+                            ],
                             "children": [
                               {
                                 "id": "fereydun",
@@ -190,7 +202,19 @@
             ]
           }
         ]
-      }
+      },
+      "world_events": [
+        {
+          "year": "~3500 BC",
+          "label": "Writing invented (Sumer)",
+          "cat": "world"
+        },
+        {
+          "year": "~3100 BC",
+          "label": "Egypt unified",
+          "cat": "world"
+        }
+      ]
     },
     {
       "id": "house-sam",
@@ -231,7 +255,9 @@
             "title": "Raised by Simorgh",
             "era": "~2500 BC",
             "img": "heroes/zal.png",
-            "contemporaries": ["simorgh"],
+            "contemporaries": [
+              "simorgh"
+            ],
             "spouses": [
               {
                 "id": "rudabeh",
@@ -286,7 +312,9 @@
                     "title": "Princess of Samangan",
                     "img": "chapters/sohrab.png",
                     "note": "Mother of Sohrab",
-                    "child_ids": ["sohrab"]
+                    "child_ids": [
+                      "sohrab"
+                    ]
                   }
                 ],
                 "children": [
@@ -329,7 +357,9 @@
                     "era": "~1900 BC",
                     "img": "heroes/blak_demon.png",
                     "note": "Defeated by Rostam",
-                    "rivals": ["rostam"],
+                    "rivals": [
+                      "rostam"
+                    ],
                     "children": []
                   },
                   {
@@ -381,7 +411,24 @@
             ]
           }
         ]
-      }
+      },
+      "world_events": [
+        {
+          "year": "~2100 BC",
+          "label": "Epic of Gilgamesh",
+          "cat": "world"
+        },
+        {
+          "year": "~1894 BC",
+          "label": "Rise of Babylon",
+          "cat": "world"
+        },
+        {
+          "year": "~1200 BC",
+          "label": "Trojan War",
+          "cat": "world"
+        }
+      ]
     },
     {
       "id": "kayanian",
@@ -410,7 +457,9 @@
             "title": "The Proud King",
             "era": "~1800 BC",
             "img": "chapters/kay-kavus.png",
-            "rivals": ["afrasiab"],
+            "rivals": [
+              "afrasiab"
+            ],
             "spouses": [
               {
                 "id": "sudabeh",
@@ -434,7 +483,10 @@
                 "era": "~1700 BC",
                 "note": "Martyred in Turan",
                 "img": "chapters/siavash.png",
-                "rivals": ["sudabeh", "afrasiab"],
+                "rivals": [
+                  "sudabeh",
+                  "afrasiab"
+                ],
                 "spouses": [
                   {
                     "id": "jarireh",
@@ -453,7 +505,9 @@
                     "title": "Princess of Turan",
                     "img": "chapters/kay-khosrow.png",
                     "note": "Daughter of Afrasiab — mother of Kay Khosrow",
-                    "child_ids": ["kay-khosrow"]
+                    "child_ids": [
+                      "kay-khosrow"
+                    ]
                   }
                 ],
                 "children": [
@@ -467,7 +521,9 @@
                     "era": "~1600 BC",
                     "img": "chapters/kay-khosrow.png",
                     "from_spouse": "farangis",
-                    "rivals": ["afrasiab"],
+                    "rivals": [
+                      "afrasiab"
+                    ],
                     "children": [
                       {
                         "id": "great-war-turan",
@@ -584,7 +640,9 @@
                                                 "title": "Princess of Macedonia",
                                                 "img": "heroes/farvahar.png",
                                                 "note": "Mother of Eskandar",
-                                                "child_ids": ["eskandar"]
+                                                "child_ids": [
+                                                  "eskandar"
+                                                ]
                                               }
                                             ],
                                             "children": [
@@ -672,7 +730,29 @@
             ]
           }
         ]
-      }
+      },
+      "world_events": [
+        {
+          "year": "~800 BC",
+          "label": "Homer writes Iliad",
+          "cat": "world"
+        },
+        {
+          "year": "~550 BC",
+          "label": "Persian Empire founded (Cyrus)",
+          "cat": "persia"
+        },
+        {
+          "year": "~500 BC",
+          "label": "Greek–Persian Wars",
+          "cat": "world"
+        },
+        {
+          "year": "~330 BC",
+          "label": "Alexander conquers Persia",
+          "cat": "world"
+        }
+      ]
     },
     {
       "id": "arsacid",
@@ -699,7 +779,29 @@
             "children": []
           }
         ]
-      }
+      },
+      "world_events": [
+        {
+          "year": "~247 BC",
+          "label": "Silk Road opens",
+          "cat": "world"
+        },
+        {
+          "year": "~63 BC",
+          "label": "Rome conquers Jerusalem",
+          "cat": "world"
+        },
+        {
+          "year": "~4 BC",
+          "label": "Birth of Jesus",
+          "cat": "faith"
+        },
+        {
+          "year": "70 AD",
+          "label": "Destruction of Jerusalem",
+          "cat": "world"
+        }
+      ]
     },
     {
       "id": "sasanian",
@@ -764,7 +866,9 @@
                             "era": "~550 AD",
                             "img": "chapters/nushzad.png",
                             "note": "Christian rebel against his father",
-                            "rivals": ["anushirvan"],
+                            "rivals": [
+                              "anushirvan"
+                            ],
                             "children": []
                           },
                           {
@@ -787,7 +891,10 @@
                                 "era": "~590–591 AD",
                                 "img": "chapters/bahram-chubin.png",
                                 "note": "Usurper — not of royal blood",
-                                "rivals": ["hormuz", "khosrow-parviz"],
+                                "rivals": [
+                                  "hormuz",
+                                  "khosrow-parviz"
+                                ],
                                 "children": []
                               },
                               {
@@ -882,7 +989,34 @@
             ]
           }
         ]
-      }
+      },
+      "world_events": [
+        {
+          "year": "330 AD",
+          "label": "Constantinople founded",
+          "cat": "world"
+        },
+        {
+          "year": "476 AD",
+          "label": "Fall of Rome",
+          "cat": "world"
+        },
+        {
+          "year": "~570 AD",
+          "label": "Muhammad born",
+          "cat": "faith"
+        },
+        {
+          "year": "610 AD",
+          "label": "Rise of Islam",
+          "cat": "faith"
+        },
+        {
+          "year": "651 AD",
+          "label": "Arab conquest of Persia",
+          "cat": "persia"
+        }
+      ]
     }
   ],
   "standalone_nodes": {
