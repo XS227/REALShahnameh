@@ -875,10 +875,13 @@
       if (tp.done) {
         if (activeTier === "easy") { grantQuizRewards(lore); paintBattle(lore); }
 
-        const nCorrect = (tp.correct || []).filter(id => qs.some(q => q.id === id)).length;
-        const total    = qs.length;
+        let nCorrect = (tp.correct || []).filter(id => qs.some(q => q.id === id)).length;
+        const total  = qs.length;
         /* Backward-compat: old saves where all answered correctly also count as passed */
-        const passed   = tp.passed !== undefined ? tp.passed : (nCorrect / Math.max(total, 1) >= 0.6);
+        const passed = tp.passed !== undefined ? tp.passed : (nCorrect / Math.max(total, 1) >= 0.6);
+        /* If IDs from old stub questions no longer match current set, nCorrect is 0
+           even though the player passed. Show the minimum plausible passing score. */
+        if (passed && total > 0 && nCorrect / total < 0.6) nCorrect = Math.ceil(total * 0.6);
 
         /* Grant farr only on pass */
         if (passed) grantTierFarr(activeTier);
