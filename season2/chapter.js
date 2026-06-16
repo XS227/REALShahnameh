@@ -1039,6 +1039,9 @@
             } else if (activeTier === "medium") {
               if (progress.quiz.hard) progress.quiz.hard.locked = false;
               saveProgress();
+              paintBattle(lore);
+            } else if (activeTier === "hard") {
+              paintBattle(lore);
             }
             if (progEl) progEl.textContent = `${fmtNum(next)} / ${fmtNum(qs.length)}`;
           } else {
