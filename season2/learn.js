@@ -29,6 +29,68 @@
 
   const isReady = (c) => c && (c.status === "available" || c.status === "completed");
 
+  /* World-history milestones shown between chapter cards (keyed by the slug
+     of the chapter they appear AFTER in the narrative sequence). */
+  const MILESTONES = {
+    'alexander': {
+      year: '~323 BC',
+      label:    'Death of Alexander the Great — his empire fractures',
+      label_fa: 'مرگ اسکندر کبیر — امپراتوری او تکه‌تکه می‌شود',
+      label_tg: 'Марги Искандари Кабир — Империяи ӯ пора мешавад',
+      icon: '⚔',
+    },
+    'ashkanian-age': {
+      year: '~4 BC',
+      label:    'Birth of Jesus Christ — during the Arsacid reign',
+      label_fa: 'تولد حضرت عیسی مسیح — در دوران حکومت اشکانیان',
+      label_tg: 'Таваллуди Исо Масеҳ — дар замони ҳукмронии Аршакиён',
+      icon: '✦',
+    },
+    'anushirvan': {
+      year: '~570 CE',
+      label:    'Birth of Prophet Muhammad — during the reign of Anushirvan',
+      label_fa: 'تولد پیامبر اسلام محمد (ص) — در دوران سلطنت انوشیروان',
+      label_tg: 'Таваллуди Паёмбари Ислом Муҳаммад (с) — дар замони салтанати Анӯшервон',
+      icon: '✦',
+    },
+    'hormuz': {
+      year: '~610 CE',
+      label:    'First revelation of the Quran — rise of Islam',
+      label_fa: 'اولین وحی قرآن — آغاز اسلام',
+      label_tg: 'Аввалин ваҳйи Қуръон — оғози Ислом',
+      icon: '✦',
+    },
+    'shirin': {
+      year: '~632 CE',
+      label:    'Death of Prophet Muhammad — the Islamic Caliphate expands',
+      label_fa: 'رحلت پیامبر محمد (ص) — خلافت اسلامی گسترش می‌یابد',
+      label_tg: 'Вафоти Паёмбар Муҳаммад (с) — Хилофати Исломӣ густариш меёбад',
+      icon: '✦',
+    },
+    'arab-conquest': {
+      year: '~651 CE',
+      label:    'End of the Sasanian Empire — Iran enters a new age',
+      label_fa: 'پایان امپراتوری ساسانی — ایران به عصر جدیدی پا می‌گذارد',
+      label_tg: 'Охири Империяи Сосонӣ — Эрон ба асри нав қадам мегузорад',
+      icon: '✦',
+    },
+  };
+
+  const renderMilestone = (m) => {
+    const lang = window.RealI18N && window.RealI18N.getLang ? window.RealI18N.getLang() : 'en';
+    const label = (lang === 'fa' && m.label_fa) ? m.label_fa
+                : (lang === 'tg' && m.label_tg) ? m.label_tg
+                : m.label;
+    return `
+      <div class="tm-marker" aria-hidden="true">
+        <span class="tm-dot">${esc(m.icon)}</span>
+        <div>
+          <span class="tm-year">${esc(m.year)}</span>
+          <span class="tm-label">${esc(label)}</span>
+        </div>
+      </div>`;
+  };
+
   /* §7.9 — true if all three quiz tiers for this chapter slug are passed.
      A chapter already marked done by the player counts as quiz-cleared
      (backward-compat: old completions predating the quiz gate). */
@@ -115,11 +177,13 @@
       const cls   = done ? "done" : ready ? "active" : "locked";
       const href  = ready ? `chapter.html?slug=${encodeURIComponent(c.slug)}` : null;
 
+      const _ms = MILESTONES[c.slug] ? renderMilestone(MILESTONES[c.slug]) : '';
+
       /* ── Finale gate for ch50 (ages-end) ── */
       if (c.slug === 'ages-end' && !localDone) {
-        if (!ready) return finaleGateCard(level, c);          // ch49 not done yet
+        if (!ready) return finaleGateCard(level, c) + _ms;    // ch49 not done yet
         const { allMet } = finaleReqs();
-        if (!allMet) return finaleGateCard(level, c);         // rites not completed
+        if (!allMet) return finaleGateCard(level, c) + _ms;   // rites not completed
       }
 
       if (!ready) {
@@ -132,7 +196,7 @@
               <span class="chip">${isQuizGate ? esc(t("quiz_gate_chip")) : esc(t("coming_soon"))}</span>
               <span class="reward" style="color:var(--muted);">${isQuizGate ? esc(t("quiz_gate_msg")) : esc(t("unlocks_when_ready"))}</span>
             </div>
-          </article>`;
+          </article>${_ms}`;
       }
 
       const rewardLine = c.rewards ? `
@@ -150,9 +214,10 @@
           ${rewardLine}
         </div>`;
 
-      return href
+      const card = href
         ? `<a class="card chapter ${cls}" data-chapter="${esc(level)}" data-slug="${esc(c.slug)}" href="${esc(href)}" style="text-decoration:none; color:inherit; display:block;">${inner}</a>`
         : `<article class="card chapter ${cls}" data-chapter="${esc(level)}" data-slug="${esc(c.slug)}">${inner}</article>`;
+      return card + _ms;
     }).join("");
   };
 
