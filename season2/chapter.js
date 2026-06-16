@@ -565,6 +565,32 @@
 
   /* Hero cards granted for free upon beating a chapter's Final Encounter */
   const CHAPTER_CARD_REWARDS = {
+    /* ch1–25 (retroactive: also granted on page-load for already-completed chapters) */
+    'keyumars':          { id: 'keyumars-king',        zar: 12,  name: 'Keyumars — The First King' },
+    'hushang':           { id: 'hushang-smith',         zar: 15,  name: 'Hushang — Lord of the Forge' },
+    'tahmuras':          { id: 'tahmuras-binder',       zar: 18,  name: 'Tahmuras — Binder of Demons' },
+    'jamshid':           { id: 'jamshid-splendor',      zar: 22,  name: 'Jamshid — Bearer of the Farr' },
+    'zahhak':            { id: 'zahhak-tyrant',         zar: 28,  name: 'Zahhak — The Serpent Throne' },
+    'fereydun':          { id: 'fereydun-liberator',    zar: 32,  name: 'Fereydun — The Liberator' },
+    'manuchehr':         { id: 'manuchehr-avenger',     zar: 35,  name: 'Manuchehr — The Avenger' },
+    'nozar':             { id: 'nozar-king',            zar: 30,  name: 'Nozar — The Divided Crown' },
+    'zal':               { id: 'zal-albino',            zar: 38,  name: 'Zal — The White-Haired Prince' },
+    'rudabeh':           { id: 'rudabeh-princess',      zar: 40,  name: 'Rudabeh — Princess of Kabul' },
+    'birth-of-rostam':   { id: 'sam-champion',          zar: 42,  name: 'Sam — Champion of Zabolestan' },
+    'rostam':            { id: 'rostam-pahlavan',       zar: 55,  name: 'Rostam — Pahlavan of the Age' },
+    'sohrab':            { id: 'sohrab-storm',          zar: 50,  name: 'Sohrab — Son of the Storm' },
+    'siavash':           { id: 'siavash-pure',          zar: 58,  name: 'Siavash — The Pure Prince' },
+    'kay-kavus':         { id: 'kay-kavus-king',        zar: 45,  name: 'Kay Kavus — The Reckless King' },
+    'kay-khosrow':       { id: 'kay-khosrow-chosen',    zar: 62,  name: 'Kay Khosrow — The Chosen King' },
+    'akvan':             { id: 'akvan-div',             zar: 48,  name: 'Akvan Div — Demon of the Lake' },
+    'bijan-manijeh':     { id: 'bijan-hero',            zar: 55,  name: 'Bijan — Prisoner of Pashang' },
+    'great-war-turan':   { id: 'piran-wisah',           zar: 60,  name: 'Piran Wisah — General of Turan' },
+    'lohrasp':           { id: 'lohrasp-king',          zar: 45,  name: 'Lohrasp — The Humble King' },
+    'goshtasp':          { id: 'goshtasp-king',         zar: 55,  name: 'Goshtasp — Champion of the Faith' },
+    'esfandiyar':        { id: 'esfandiyar-brazen',     zar: 68,  name: 'Esfandiyar — The Brazen-Bodied' },
+    'seven-labours-esp': { id: 'esfandiyar-hero',       zar: 70,  name: 'Esfandiyar — Champion of Seven' },
+    'clash-rostam-esp':  { id: 'rostam-elder',          zar: 75,  name: 'Rostam — The Ageing Champion' },
+    'simorgh':           { id: 'simorgh-guide',         zar: 80,  name: 'Simorgh — Guide of Champions' },
     /* ch26 */
     'rostams-end':       { id: 'rostam-champion',    zar: 185, name: 'Rostam — Champion of Iran' },
     /* ch27–42 (existing) */
@@ -593,6 +619,37 @@
     'memory-over-sword': { id: 'daqiqi-bard',            zar: 68,  name: 'Daqiqi — First Singer of Heroes' },
     'ferdowsi-legacy':   { id: 'ferdowsi-sage',          zar: 180, name: 'Ferdowsi — Sage of a Thousand Years' },
     'ages-end':          { id: 'simorgh-eternal',        zar: 250, name: 'Simorgh — The Eternal' },
+  };
+
+  /* Grant the chapter's hero card reward — uses its own key so it can be
+     called retroactively for chapters completed before this reward existed. */
+  const grantChapterCard = () => {
+    const cardReward = CHAPTER_CARD_REWARDS[SLUG];
+    if (!cardReward) return;
+    const cardKey = `real_chapter_card_done_${SLUG}`;
+    try { if (localStorage.getItem(cardKey) === "1") return; } catch {}
+    try {
+      const owned = JSON.parse(localStorage.getItem("real_owned_heroes_v1") || "{}");
+      if (!owned[cardReward.id]) {
+        owned[cardReward.id] = { level: 1, zar_per_hour: cardReward.zar };
+        localStorage.setItem("real_owned_heroes_v1", JSON.stringify(owned));
+        setTimeout(() => toast(`🃏 Hero Card Earned: ${cardReward.name}!`), 3200);
+        try {
+          const u = window.Telegram && window.Telegram.WebApp
+            && window.Telegram.WebApp.initDataUnsafe
+            && window.Telegram.WebApp.initDataUnsafe.user;
+          if (u && u.id) {
+            fetch("/api/season2/user/grant-hero", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ telegram_id: String(u.id), hero_id: cardReward.id, zar_per_hour: cardReward.zar, source: "chapter_reward" }),
+              keepalive: true,
+            });
+          }
+        } catch (_) {}
+      }
+      localStorage.setItem(cardKey, "1");
+    } catch (_) {}
   };
 
   const grantChapterCompletionRewards = () => {
@@ -642,31 +699,8 @@
         }
       } catch {}
     }
-    /* Hero card chapter reward — grant free card and server-persist */
-    const cardReward = CHAPTER_CARD_REWARDS[SLUG];
-    if (cardReward) {
-      try {
-        const owned = JSON.parse(localStorage.getItem("real_owned_heroes_v1") || "{}");
-        if (!owned[cardReward.id]) {
-          owned[cardReward.id] = { level: 1, zar_per_hour: cardReward.zar };
-          localStorage.setItem("real_owned_heroes_v1", JSON.stringify(owned));
-          setTimeout(() => toast(`🃏 Hero Card Earned: ${cardReward.name}!`), 3200);
-          try {
-            const u = window.Telegram && window.Telegram.WebApp
-              && window.Telegram.WebApp.initDataUnsafe
-              && window.Telegram.WebApp.initDataUnsafe.user;
-            if (u && u.id) {
-              fetch("/api/season2/user/grant-hero", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ telegram_id: String(u.id), hero_id: cardReward.id, zar_per_hour: cardReward.zar, source: "chapter_reward" }),
-                keepalive: true,
-              });
-            }
-          } catch (_) {}
-        }
-      } catch (_) {}
-    }
+    /* Hero card chapter reward */
+    grantChapterCard();
     /* pushProgress intentionally omitted here — markChapterComplete calls it
        once after all localStorage writes (done flag + rewards + skins) are done. */
   };
@@ -1355,6 +1389,11 @@
         && _chapterMeta && _chapterMeta.rewards && _chapterMeta.rewards.farr) {
       retroFarr += _chapterMeta.rewards.farr;
       try { localStorage.setItem(chapterFarrKey, "1"); } catch {}
+    }
+
+    // Hero card for chapters completed before this reward existed
+    if (localStorage.getItem(`real_chapter_rewards_done_${SLUG}`) === "1") {
+      grantChapterCard();
     }
 
     if ((retroXp || retroReal || retroFarr) && window.RealPlayer) {
