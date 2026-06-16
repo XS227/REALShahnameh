@@ -563,6 +563,19 @@
     pushProgress(true);
   };
 
+  /* Hero cards granted for free upon beating a chapter's Final Encounter */
+  const CHAPTER_CARD_REWARDS = {
+    'bahman':         { id: 'bahman-avenger',  zar: 30,  name: 'Bahman — The Avenger' },
+    'homay':          { id: 'homay-queen',      zar: 58,  name: 'Homay — The Warrior Queen' },
+    'darab':          { id: 'darab-foundling',  zar: 32,  name: 'Darab — The Foundling Prince' },
+    'alexander':      { id: 'eskandar',         zar: 105, name: 'Eskandar — The Two-Horned' },
+    'ardeshir':       { id: 'ardeshir-founder', zar: 88,  name: 'Ardeshir — Founder of Sassan' },
+    'shapur':         { id: 'shapur-great',     zar: 100, name: 'Shapur the Great' },
+    'bahram-gur':     { id: 'bahram-gur',       zar: 105, name: 'Bahram Gur — The Lion Hunter' },
+    'anushirvan':     { id: 'anushirvan',       zar: 155, name: 'Anushirvan — The Just' },
+    'khosrow-parviz': { id: 'khosrow-parviz',  zar: 120, name: 'Khosrow Parviz — The Conqueror' },
+  };
+
   const grantChapterCompletionRewards = () => {
     const doneKey = `real_chapter_rewards_done_${SLUG}`;
     try { if (localStorage.getItem(doneKey) === "1") return; } catch {}
@@ -609,6 +622,31 @@
           setTimeout(() => toast(`🎭 Tap icon unlocked: ${skinId}! Find it in Inventory.`), 2600);
         }
       } catch {}
+    }
+    /* Hero card chapter reward — grant free card and server-persist */
+    const cardReward = CHAPTER_CARD_REWARDS[SLUG];
+    if (cardReward) {
+      try {
+        const owned = JSON.parse(localStorage.getItem("real_owned_heroes_v1") || "{}");
+        if (!owned[cardReward.id]) {
+          owned[cardReward.id] = { level: 1, zar_per_hour: cardReward.zar };
+          localStorage.setItem("real_owned_heroes_v1", JSON.stringify(owned));
+          setTimeout(() => toast(`🃏 Hero Card Earned: ${cardReward.name}!`), 3200);
+          try {
+            const u = window.Telegram && window.Telegram.WebApp
+              && window.Telegram.WebApp.initDataUnsafe
+              && window.Telegram.WebApp.initDataUnsafe.user;
+            if (u && u.id) {
+              fetch("/api/season2/user/grant-hero", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ telegram_id: String(u.id), hero_id: cardReward.id, zar_per_hour: cardReward.zar, source: "chapter_reward" }),
+                keepalive: true,
+              });
+            }
+          } catch (_) {}
+        }
+      } catch (_) {}
     }
     /* pushProgress intentionally omitted here — markChapterComplete calls it
        once after all localStorage writes (done flag + rewards + skins) are done. */
