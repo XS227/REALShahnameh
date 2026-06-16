@@ -1317,6 +1317,23 @@
     applyRegenGap(); // immediate catch-up on load
     const regenTimer = setInterval(applyRegenGap, 1000);
 
+    /* When sync.js delivers server state it updates real_energy_level in
+       localStorage and fires balanceUpdate. Re-derive state.max so a player
+       who upgraded on another device (or first visit on a fresh device) sees
+       the correct energy cap without needing a second page reload. */
+    window.addEventListener('balanceUpdate', () => {
+      try {
+        const lvl    = Math.min(5, parseInt(localStorage.getItem('real_energy_level') || '0', 10));
+        const newMax = ENERGY_BASE + lvl * ENERGY_STEP;
+        if (newMax !== state.max) {
+          state.max    = newMax;
+          state.energy = Math.min(state.energy, state.max);
+          renderEnergy();
+          Player.set({ energyMax: state.max });
+        }
+      } catch {}
+    });
+
     document.addEventListener("visibilitychange", () => {
       if (!document.hidden) applyRegenGap();
     });
