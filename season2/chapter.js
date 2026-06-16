@@ -565,15 +565,34 @@
 
   /* Hero cards granted for free upon beating a chapter's Final Encounter */
   const CHAPTER_CARD_REWARDS = {
-    'bahman':         { id: 'bahman-avenger',  zar: 30,  name: 'Bahman — The Avenger' },
-    'homay':          { id: 'homay-queen',      zar: 58,  name: 'Homay — The Warrior Queen' },
-    'darab':          { id: 'darab-foundling',  zar: 32,  name: 'Darab — The Foundling Prince' },
-    'alexander':      { id: 'eskandar',         zar: 105, name: 'Eskandar — The Two-Horned' },
-    'ardeshir':       { id: 'ardeshir-founder', zar: 88,  name: 'Ardeshir — Founder of Sassan' },
-    'shapur':         { id: 'shapur-great',     zar: 100, name: 'Shapur the Great' },
-    'bahram-gur':     { id: 'bahram-gur',       zar: 105, name: 'Bahram Gur — The Lion Hunter' },
-    'anushirvan':     { id: 'anushirvan',       zar: 155, name: 'Anushirvan — The Just' },
-    'khosrow-parviz': { id: 'khosrow-parviz',  zar: 120, name: 'Khosrow Parviz — The Conqueror' },
+    /* ch26 */
+    'rostams-end':       { id: 'rostam-champion',    zar: 185, name: 'Rostam — Champion of Iran' },
+    /* ch27–42 (existing) */
+    'bahman':            { id: 'bahman-avenger',      zar: 30,  name: 'Bahman — The Avenger' },
+    'homay':             { id: 'homay-queen',          zar: 58,  name: 'Homay — The Warrior Queen' },
+    'darab':             { id: 'darab-foundling',      zar: 32,  name: 'Darab — The Foundling Prince' },
+    'dara':              { id: 'dara-achaemenid',      zar: 72,  name: 'Dara — Last of the Achaemenids' },
+    'alexander':         { id: 'eskandar',             zar: 105, name: 'Eskandar — The Two-Horned' },
+    'ashkanian-age':     { id: 'arsaces-founder',      zar: 80,  name: 'Arsaces — Founder of Arsacids' },
+    'ardavan':           { id: 'ardavan-last',          zar: 82,  name: 'Ardavan — The Last Arsacid' },
+    'ardeshir':          { id: 'ardeshir-founder',     zar: 88,  name: 'Ardeshir — Founder of Sassan' },
+    'shapur':            { id: 'shapur-great',          zar: 100, name: 'Shapur the Great' },
+    'bahram-gur':        { id: 'bahram-gur',            zar: 105, name: 'Bahram Gur — The Lion Hunter' },
+    'yazdegerd-sinner':  { id: 'yazdegerd-sinner',     zar: 88,  name: 'Yazdegerd — The Tolerant King' },
+    'bahram-chubin':     { id: 'bahram-chubin',         zar: 95,  name: 'Bahram Chubin — The Rebel General' },
+    'anushirvan':        { id: 'anushirvan',             zar: 155, name: 'Anushirvan — The Just' },
+    'nushzad':           { id: 'nushzad-rebel',          zar: 65,  name: 'Nushzad — The Rebel Prince' },
+    'hormuz':            { id: 'hormuz-iv',              zar: 75,  name: 'Hormuz — The Crumbling Crown' },
+    'khosrow-parviz':    { id: 'khosrow-parviz',        zar: 120, name: 'Khosrow Parviz — The Conqueror' },
+    /* ch43–50 */
+    'shirin':            { id: 'shirin-beloved',         zar: 88,  name: 'Shirin — Queen of Love' },
+    'crumbling-crown':   { id: 'kavad-avenger',          zar: 70,  name: 'Kavad — The Final Avenger' },
+    'yazdegerd-iii':     { id: 'yazdegerd-last',         zar: 98,  name: 'Yazdegerd III — The Last King' },
+    'arab-conquest':     { id: 'rostam-farrokhzad',      zar: 112, name: 'Rostam Farrokhzad — Lion of Qadisiyyah' },
+    'mourning-pars':     { id: 'pirouz-defender',        zar: 82,  name: 'Pirouz — Defender of Pars' },
+    'memory-over-sword': { id: 'daqiqi-bard',            zar: 68,  name: 'Daqiqi — First Singer of Heroes' },
+    'ferdowsi-legacy':   { id: 'ferdowsi-sage',          zar: 180, name: 'Ferdowsi — Sage of a Thousand Years' },
+    'ages-end':          { id: 'simorgh-eternal',        zar: 250, name: 'Simorgh — The Eternal' },
   };
 
   const grantChapterCompletionRewards = () => {
