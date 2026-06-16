@@ -62,6 +62,41 @@
     if (pctEl)  pctEl.textContent  = ((window.RealI18N && window.RealI18N.compactNumber) ? window.RealI18N.compactNumber(pct) : fmtNum(pct)) + "%";
     if (fillEl) fillEl.style.width = `${Math.max(2, pct)}%`;
 
+    /* ── Finale gate helpers ── */
+    const finaleReqs = () => {
+      try {
+        const hasClan    = localStorage.getItem('real_has_clan') === '1';
+        const hasWallet  = !!localStorage.getItem('real_ton_wallet');
+        const offs       = JSON.parse(localStorage.getItem('real_offerings_v1') || '{}');
+        const totalOffs  = (offs.zar_count || 0) + (offs.fire_count || 0) + (offs.lore_count || 0);
+        return { hasClan, hasWallet, totalOffs, allMet: hasClan && hasWallet && totalOffs >= 3 };
+      } catch { return { hasClan: false, hasWallet: false, totalOffs: 0, allMet: false }; }
+    };
+    const finaleGateCard = (level, c) => {
+      const { hasClan, hasWallet, totalOffs } = finaleReqs();
+      const row = (met, label, link, linkLabel) => `
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+          <span style="font-size:16px;line-height:1;">${met ? '✅' : '🔒'}</span>
+          <span style="flex:1;color:${met ? 'rgba(200,210,230,.9)' : 'var(--muted)'};">${esc(label)}</span>
+          ${!met && link ? `<a href="${esc(link)}" style="font-size:11px;color:#5ea2ff;text-decoration:none;white-space:nowrap;">${esc(linkLabel)} →</a>` : ''}
+        </div>`;
+      return `
+        <article class="card chapter locked" data-chapter="${esc(fmtNum(level))}" data-slug="${esc(c.slug)}"
+          style="border-color:rgba(244,197,107,.35);background:linear-gradient(145deg,rgba(12,15,32,.98),rgba(10,8,20,.98));">
+          <span class="node" style="background:linear-gradient(135deg,#c8922a,#f4c56b);color:#0a0813;">50</span>
+          <h4 style="color:#f4c56b;">${esc(locF(c, 'title'))}</h4>
+          <p style="font-size:11px;color:var(--muted);margin:4px 0 10px;">Complete all three rites to enter the Final Age</p>
+          <div style="margin-bottom:10px;">
+            ${row(hasClan,   'Join or create a Clan',              'guild.html',  'Guild')}
+            ${row(hasWallet, 'Link your TON wallet for the airdrop','hakim.html', 'Link wallet')}
+            ${row(totalOffs >= 3, `Make at least 3 offerings (${totalOffs}/3 done)`, 'offerings.html', 'Offerings')}
+          </div>
+          <div class="meta">
+            <span class="chip" style="background:rgba(244,197,107,.15);color:#f4c56b;border-color:rgba(244,197,107,.3);">⚔ Finale</span>
+          </div>
+        </article>`;
+    };
+
     host.innerHTML = chapters.map((c, idx) => {
       const level = c.level || c.order || c.id;
       const localDone = (typeof localStorage !== "undefined") &&
@@ -79,6 +114,13 @@
       const done  = c.status === "completed" || localDone;
       const cls   = done ? "done" : ready ? "active" : "locked";
       const href  = ready ? `chapter.html?slug=${encodeURIComponent(c.slug)}` : null;
+
+      /* ── Finale gate for ch50 (ages-end) ── */
+      if (c.slug === 'ages-end' && !localDone) {
+        if (!ready) return finaleGateCard(level, c);          // ch49 not done yet
+        const { allMet } = finaleReqs();
+        if (!allMet) return finaleGateCard(level, c);         // rites not completed
+      }
 
       if (!ready) {
         const isQuizGate = quizGated;

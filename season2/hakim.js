@@ -594,6 +594,8 @@
             if (!wallet) return;
             const addr = wallet.account && wallet.account.address;
             if (!addr) return;
+            /* Persist so other pages (e.g. ch50 finale gate) know wallet is linked */
+            try { localStorage.setItem('real_ton_wallet', addr); } catch {}
             const statusEl = block.querySelector('[data-wallet-status]');
             if (statusEl) { statusEl.style.display = ''; statusEl.textContent = T('legacy_connected'); }
             await verifyWallet(addr, block);
