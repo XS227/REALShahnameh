@@ -973,6 +973,71 @@
     }
   };
 
+  /* ── Airdrop eligibility checklist ─────────────────────────────────── */
+  const updateAirdropEligibility = async (telegramId) => {
+    const el = document.getElementById('airdrop-eligibility-list');
+    if (!el) return;
+
+    /* read client-side state */
+    const hasWallet      = !!localStorage.getItem('real_ton_wallet');
+    const offs           = (() => { try { return JSON.parse(localStorage.getItem('real_offerings_v1') || '{}'); } catch { return {}; } })();
+    const totalOfferings = (offs.zar_count || 0) + (offs.fire_count || 0) + (offs.lore_count || 0);
+
+    let checks = null;
+    let daysLeft = null;
+
+    if (telegramId) {
+      try {
+        const r = await fetch('/api/season2/user/airdrop-eligibility', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ telegram_id: String(telegramId), has_wallet: hasWallet, total_offerings: totalOfferings }),
+        });
+        if (r.ok) {
+          const d = await r.json();
+          if (d.status === 1) { checks = d.checks; daysLeft = d.days_until_age_gate; }
+        }
+      } catch (_) {}
+    }
+
+    /* fallback: client-only render if backend unavailable */
+    const ch50Done = localStorage.getItem('real_chapter_done_ages-end') === '1';
+    const hasClan  = localStorage.getItem('real_has_clan') === '1';
+    const c = checks || {
+      account_age: { met: false, days: 0,              required: 120 },
+      ch50_done:   { met: ch50Done },
+      clan:        { met: hasClan },
+      wallet:      { met: hasWallet },
+      offerings:   { met: totalOfferings >= 3, count: totalOfferings, required: 3 },
+      no_abuse:    { met: true },
+    };
+
+    const row = (met, label, link, linkLabel) => {
+      const icon  = met ? '✅' : '🔒';
+      const color = met ? 'rgba(200,210,230,.9)' : 'var(--muted)';
+      const linkHtml = (!met && link)
+        ? `<a href="${link}" style="font-size:11px;color:#5ea2ff;text-decoration:none;white-space:nowrap;">${linkLabel} →</a>`
+        : '';
+      return `<div style="display:flex;align-items:center;gap:8px;font-size:12px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06);">
+        <span style="font-size:15px;line-height:1;">${icon}</span>
+        <span style="flex:1;color:${color};">${label}</span>${linkHtml}
+      </div>`;
+    };
+
+    const ageLabel = c.account_age.met
+      ? `Account age: ${c.account_age.days}d ✓ (min ${c.account_age.required}d)`
+      : `Account age: ${c.account_age.days}d / ${c.account_age.required}d required${daysLeft ? ` — ${daysLeft} days left` : ''}`;
+    const offsLabel = `Offerings: ${c.offerings.count || totalOfferings}/${c.offerings.required || 3} made`;
+
+    el.innerHTML =
+      row(c.account_age.met, ageLabel, null, '') +
+      row(c.ch50_done.met,   'Chapter 50 (Ages-End) completed', 'learn.html', 'Learn') +
+      row(c.clan.met,        'Clan joined', 'guild.html', 'Guild') +
+      row(c.wallet.met,      'TON wallet linked', 'hakim.html', 'Link wallet') +
+      row(c.offerings.met,   offsLabel, 'offerings.html', 'Offerings') +
+      row(c.no_abuse.met,    'Account standing: clean', null, '');
+  };
+
   /* ── Watch & Earn (single-tier) ─────────────────────────────────────── */
   let _adCdInterval = null;
 
@@ -1091,6 +1156,8 @@
     const cachedClaimed  = (() => { try { return JSON.parse(localStorage.getItem('real_milestones_claimed') || '[]'); } catch { return []; } })();
     applyTeamMultUI(cachedVerified);
     renderMilestones(cachedVerified, cachedClaimed);
+
+    updateAirdropEligibility(u ? u.id : null);
 
     if (!u || !u.id) return;
 
