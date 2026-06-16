@@ -1103,18 +1103,27 @@
     /* Publish correct energyMax so tap.js hydrateFromPlayer reads it */
     Player.set({ energyMax: state.max });
 
-    /* Anti-external-clicker: rolling window of the last 6 tap timestamps */
+    /* Anti-external-clicker: rolling log + cooldown penalty */
     const _tapLog = [];
+    let _tapBlockedUntil = 0;
     const _isExternalTap = (event) => {
-      /* The game's own auto-clicker sets this flag before firing orb.click() */
       if (window._realAutoTapping) return false;
-      /* Untrusted click that isn't from our clicker = external bot */
       if (event && event.isTrusted === false) return true;
-      /* Rate guard: >5 taps in 500 ms without auto-clicker = suspicious */
       const now = Date.now();
+      /* Once suspicious rate detected, block all taps for 3 s */
+      if (now < _tapBlockedUntil) return true;
       _tapLog.push(now);
-      if (_tapLog.length > 6) _tapLog.shift();
-      if (_tapLog.length === 6 && now - _tapLog[0] < 500) return true;
+      if (_tapLog.length > 12) _tapLog.shift();
+      /* Short-burst guard: 6 taps within 600 ms → >10 taps/sec */
+      if (_tapLog.length >= 6 && now - _tapLog[_tapLog.length - 6] < 600) {
+        _tapBlockedUntil = now + 3000;
+        return true;
+      }
+      /* Sustained guard: 10 taps within 2 s → >5 taps/sec */
+      if (_tapLog.length >= 10 && now - _tapLog[_tapLog.length - 10] < 2000) {
+        _tapBlockedUntil = now + 3000;
+        return true;
+      }
       return false;
     };
 
