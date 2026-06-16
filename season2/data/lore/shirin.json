@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 12,
-        "label_en": "Accumulate 12 Farr",
-        "label_fa": "گردآوریِ 12 فرّ",
-        "label_tg": "Ҷамъ кардани 12 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 100,
+        "label_en": "Accumulate 100 Farr",
+        "label_fa": "گردآوریِ 100 فرّ",
+        "label_tg": "Ҷамъ кардани 100 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",
@@ -101,6 +101,39 @@
         "hint_en": "Collect hero cards from the Hero Collection. Each purchase counts toward your roster.",
         "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید. هر خرید به تعداد شما می‌افزاید.",
         "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "khosrow-parviz",
+        "target": 2,
+        "label_en": "Khosrow Parviz — The Conqueror — Hero Card at Lv.2",
+        "label_fa": "خسرویِ پرویز — فاتح — کارتِ قهرمان در سطح 2",
+        "label_tg": "Хусрави Парвез — Фотеҳ — Картаи қаҳрамон дар сатҳи 2",
+        "hint_en": "Open Heroes, find Khosrow Parviz and upgrade to Level 2.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و خسرویِ پرویز را به سطح 2 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Хусрави Парвез-ро ба сатҳи 2 баланд кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "bahram-gur",
+        "target": 5,
+        "label_en": "Bahram Gur — The Lion Hunter — Hero Card at Lv.5",
+        "label_fa": "بهرامِ گور — شیرشکار — کارتِ قهرمان در سطح 5",
+        "label_tg": "Баҳроми Гӯр — Шершикор — Картаи қаҳрамон дар сатҳи 5",
+        "hint_en": "Open Heroes, find Bahram Gur and upgrade to Level 5.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و بهرامِ گور را به سطح 5 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Баҳроми Гӯр-ро ба сатҳи 5 баланд кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "bahram-chubin",
+        "target": 4,
+        "label_en": "Bahram Chubin — The Rebel General — Hero Card at Lv.4",
+        "label_fa": "بهرامِ چوبین — سردارِ شورشی — کارتِ قهرمان در سطح 4",
+        "label_tg": "Баҳроми Чӯбин — Сардори Шӯришгар — Картаи қаҳрамон дар сатҳи 4",
+        "hint_en": "Open Heroes, find Bahram Chubin and upgrade to Level 4.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و بهرامِ چوبین را به سطح 4 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Баҳроми Чӯбин-ро ба сатҳи 4 баланд кунед."
       }
     ],
     "intro_tg": "Ширин аз Хусрав Парвиз баланд истод, аз ҷангҳо баланд, аз сулола баланд. Шуҷоаташ аз набардҳои атрофаш оромтар ва мондагартар буд. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома вақте ки ба ҷои шоҳ маликаро пайравӣ мекунад чӣ мурод дорад.",

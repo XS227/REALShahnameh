@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 5,
-        "label_en": "Accumulate 5 Farr",
-        "label_fa": "گردآوریِ 5 فرّ",
-        "label_tg": "Ҷамъ кардани 5 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 34,
+        "label_en": "Accumulate 34 Farr",
+        "label_fa": "گردآوریِ 34 فرّ",
+        "label_tg": "Ҷамъ кардани 34 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",
@@ -101,6 +101,17 @@
         "hint_en": "Collect hero cards from the Hero Collection. Each purchase counts toward your roster.",
         "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید. هر خرید به تعداد شما می‌افزاید.",
         "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "darab-foundling",
+        "target": 2,
+        "label_en": "Darab — The Foundling Prince — Hero Card at Lv.2",
+        "label_fa": "داراب — شاهزاده‌ی سرگردان — کارتِ قهرمان در سطح 2",
+        "label_tg": "Дороб — Шаҳзодаи Саргардон — Картаи қаҳрамон дар сатҳи 2",
+        "hint_en": "Open Heroes, find Darab and upgrade to Level 2.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و داراب را به سطح 2 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Дороб-ро ба сатҳи 2 баланд кунед."
       }
     ],
     "intro_tg": "Доро аз хам шудан саркашӣ кард. Шоҳнома ғурури ӯро бе узрхоҳӣ ва шикасташро бе таҳқир сабт мекунад. Барои рӯбарӯ шудан бо ин дарвоза бояд ҳар ду ҳақиқатро якҷо нигоҳ дорӣ.",

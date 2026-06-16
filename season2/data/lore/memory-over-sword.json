@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 15,
-        "label_en": "Accumulate 15 Farr",
-        "label_fa": "گردآوریِ 15 فرّ",
-        "label_tg": "Ҷамъ кардани 15 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 130,
+        "label_en": "Accumulate 130 Farr",
+        "label_fa": "گردآوریِ 130 فرّ",
+        "label_tg": "Ҷамъ кардани 130 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",
@@ -101,6 +101,28 @@
         "hint_en": "Collect hero cards from the Hero Collection.",
         "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید.",
         "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "anushirvan",
+        "target": 6,
+        "label_en": "Anushirvan — The Just — Hero Card at Lv.6",
+        "label_fa": "انوشیروانِ عادل — کارتِ قهرمان در سطح 6",
+        "label_tg": "Анӯшервони Одил — Картаи қаҳрамон дар сатҳи 6",
+        "hint_en": "Open Heroes, find Anushirvan and upgrade to Level 6.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و انوشیروانِ عادل را به سطح 6 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Анӯшервони Одил-ро ба сатҳи 6 баланд кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "shirin",
+        "target": 4,
+        "label_en": "Shirin — Queen of Love — Hero Card at Lv.4",
+        "label_fa": "شیرین — ملکه‌ی عشق — کارتِ قهرمان در سطح 4",
+        "label_tg": "Ширин — Маликаи Ишқ — Картаи қаҳрамон дар сатҳи 4",
+        "hint_en": "Open Heroes, find Shirin and upgrade to Level 4.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و شیرین را به سطح 4 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Ширин-ро ба сатҳи 4 баланд кунед."
       }
     ],
     "intro_tg": "Шамшер империяҳоро мегирад. Калимот тамаддунҳоро нигоҳ медоранд. Барои рӯбарӯ шудан бо ин дарвоза бояд далели марказии Фирдавсӣро нигоҳ дорӣ: ки худи Шоҳнома амали нигоҳдорист.",

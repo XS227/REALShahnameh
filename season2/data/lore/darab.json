@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 4,
-        "label_en": "Accumulate 4 Farr",
-        "label_fa": "گردآوریِ 4 فرّ",
-        "label_tg": "Ҷамъ кардани 4 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 31,
+        "label_en": "Accumulate 31 Farr",
+        "label_fa": "گردآوریِ 31 فرّ",
+        "label_tg": "Ҷамъ кардани 31 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",
@@ -101,6 +101,17 @@
         "hint_en": "Collect hero cards from the Hero Collection. Each purchase counts toward your roster.",
         "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید. هر خرید به تعداد شما می‌افزاید.",
         "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "homay-queen",
+        "target": 2,
+        "label_en": "Homay — The Warrior Queen — Hero Card at Lv.2",
+        "label_fa": "همای — ملکه‌ی جنگاور — کارتِ قهرمان در سطح 2",
+        "label_tg": "Ҳумои Малика — Маликаи Ҷангавар — Картаи қаҳрамон дар сатҳи 2",
+        "hint_en": "Open Heroes, find Homay and upgrade to Level 2.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و همای را به سطح 2 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Ҳумои Малика-ро ба сатҳи 2 баланд кунед."
       }
     ],
     "intro_tg": "Дороб дар кӯдакӣ ба дарё андохта шуд ва дар хонаи рахтшӯе парвариш ёфт. Тахт намедонист ки ворисеро гум кардааст. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ барқарор кардани иддаои машрӯъ чӣ арзиш дорад.",

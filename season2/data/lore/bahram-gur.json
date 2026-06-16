@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 9,
-        "label_en": "Accumulate 9 Farr",
-        "label_fa": "گردآوریِ 9 فرّ",
-        "label_tg": "Ҷамъ кардани 9 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 65,
+        "label_en": "Accumulate 65 Farr",
+        "label_fa": "گردآوریِ 65 فرّ",
+        "label_tg": "Ҷамъ кардани 65 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",
@@ -101,6 +101,28 @@
         "hint_en": "Collect hero cards from the Hero Collection. Each purchase counts toward your roster.",
         "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید. هر خرید به تعداد شما می‌افزاید.",
         "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "ardeshir-founder",
+        "target": 3,
+        "label_en": "Ardeshir — Founder of Sassan — Hero Card at Lv.3",
+        "label_fa": "اردشیر — بنیان‌گذارِ ساسانیان — کارتِ قهرمان در سطح 3",
+        "label_tg": "Ардашер — Бунёдгузори Сосониён — Картаи қаҳрамон дар сатҳи 3",
+        "hint_en": "Open Heroes, find Ardeshir and upgrade to Level 3.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و اردشیر را به سطح 3 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Ардашер-ро ба сатҳи 3 баланд кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "shapur-great",
+        "target": 2,
+        "label_en": "Shapur the Great — Hero Card at Lv.2",
+        "label_fa": "شاپورِ بزرگ — کارتِ قهرمان در سطح 2",
+        "label_tg": "Шопури Бузург — Картаи қаҳрамон дар сатҳи 2",
+        "hint_en": "Open Heroes, find Shapur the Great and upgrade to Level 2.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و شاپورِ بزرگ را به سطح 2 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Шопури Бузург-ро ба сатҳи 2 баланд кунед."
       }
     ],
     "intro_tg": "Баҳромгӯр бо дастони худ шер шикор кард, афсонаи худро ба қофия овард ва бидуни шоҳиде дар ботлоқе нопадид шуд. Барои рӯбарӯ шудан бо ин дарвоза бояд муаммои шоҳеро нигоҳ дорӣ ки поёни худро ба асотир табдил кард.",

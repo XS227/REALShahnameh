@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 2,
-        "label_en": "Accumulate 2 Farr",
-        "label_fa": "گردآوریِ 2 فرّ",
-        "label_tg": "Ҷамъ кардани 2 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 20,
+        "label_en": "Accumulate 20 Farr",
+        "label_fa": "گردآوریِ 20 فرّ",
+        "label_tg": "Ҷамъ кардани 20 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",

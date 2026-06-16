@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 4,
-        "label_en": "Accumulate 4 Farr",
-        "label_fa": "گردآوریِ 4 فرّ",
-        "label_tg": "Ҷамъ кардани 4 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 28,
+        "label_en": "Accumulate 28 Farr",
+        "label_fa": "گردآوریِ 28 فرّ",
+        "label_tg": "Ҷамъ кардани 28 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",
@@ -101,6 +101,28 @@
         "hint_en": "Collect hero cards from the Hero Collection. Each purchase counts toward your roster.",
         "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید. هر خرید به تعداد شما می‌افزاید.",
         "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "rostam-champion",
+        "target": 3,
+        "label_en": "Rostam — Champion of Iran — Hero Card at Lv.3",
+        "label_fa": "رستم — قهرمانِ ایران — کارتِ قهرمان در سطح 3",
+        "label_tg": "Рустам — Қаҳрамони Эрон — Картаи қаҳрамон дар сатҳи 3",
+        "hint_en": "Open Heroes, find Rostam and upgrade to Level 3.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و رستم را به سطح 3 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Рустам-ро ба сатҳи 3 баланд кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "bahman-avenger",
+        "target": 2,
+        "label_en": "Bahman — The Avenger — Hero Card at Lv.2",
+        "label_fa": "بهمن — انتقام‌گیر — کارتِ قهرمان در سطح 2",
+        "label_tg": "Баҳмон — Интиқомгир — Картаи қаҳрамон дар сатҳи 2",
+        "hint_en": "Open Heroes, find Bahman and upgrade to Level 2.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و بهمن را به سطح 2 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Баҳмон-ро ба сатҳи 2 баланд кунед."
       }
     ],
     "intro_tg": "Ҳар дарборе гуфт зане наметавонад фармон ронад. Ӯ ҳар яки онҳоро нодуруст исбот кард. Барои рӯбарӯ шудан бо ин дарвоза бояд он чи Ҳумой дошт нигоҳ дорӣ: возеҳӣ дар ҷаҳоне ки аз пеш зидди ту тасмим гирифта.",

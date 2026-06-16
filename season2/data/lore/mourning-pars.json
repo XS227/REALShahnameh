@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 14,
-        "label_en": "Accumulate 14 Farr",
-        "label_fa": "گردآوریِ 14 فرّ",
-        "label_tg": "Ҷамъ кардани 14 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 124,
+        "label_en": "Accumulate 124 Farr",
+        "label_fa": "گردآوریِ 124 فرّ",
+        "label_tg": "Ҷамъ кардани 124 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",
@@ -101,6 +101,28 @@
         "hint_en": "Collect hero cards from the Hero Collection.",
         "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید.",
         "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "khosrow-parviz",
+        "target": 4,
+        "label_en": "Khosrow Parviz — The Conqueror — Hero Card at Lv.4",
+        "label_fa": "خسرویِ پرویز — فاتح — کارتِ قهرمان در سطح 4",
+        "label_tg": "Хусрави Парвез — Фотеҳ — Картаи қаҳрамон дар сатҳи 4",
+        "hint_en": "Open Heroes, find Khosrow Parviz and upgrade to Level 4.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و خسرویِ پرویز را به سطح 4 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Хусрави Парвез-ро ба сатҳи 4 баланд кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "rustam-farrokhzad",
+        "target": 2,
+        "label_en": "Rustam Farrokhzad — The Last Wall — Hero Card at Lv.2",
+        "label_fa": "رستمِ فرخزاد — آخرین دیوار — کارتِ قهرمان در سطح 2",
+        "label_tg": "Рустами Фаррухзод — Охирин Девор — Картаи қаҳрамон дар сатҳи 2",
+        "hint_en": "Open Heroes, find Rustam Farrokhzad and upgrade to Level 2.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و رستمِ فرخزاد را به سطح 2 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Рустами Фаррухзод-ро ба сатҳи 2 баланд кунед."
       }
     ],
     "intro_tg": "Фирдавсӣ андӯҳро бе нармкунӣ ном мебарад. Оташкадаҳо торикандр. Аммо забони Порс месӯзад ва мемонад. Барои рӯбарӯ шудан бо ин дарвоза бояд бифаҳмӣ Шоҳнома дар бобҳои охирш чӣ мекунад.",

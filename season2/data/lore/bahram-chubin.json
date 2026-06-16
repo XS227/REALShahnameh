@@ -84,13 +84,13 @@
       },
       {
         "kind": "farr",
-        "target": 11,
-        "label_en": "Accumulate 11 Farr",
-        "label_fa": "گردآوریِ 11 فرّ",
-        "label_tg": "Ҷамъ кардани 11 Фарр",
-        "hint_en": "Earn Farr by completing Medium and Hard quiz tiers in earlier chapters.",
-        "hint_fa": "با گذراندنِ سطح‌های متوسط و سخت آزمون در فصل‌های پیشین، فرّ کسب کنید.",
-        "hint_tg": "Бо иҷрои санҷишҳои миёна ва душвор дар бобҳои қаблӣ Фарр пайдо кунед."
+        "target": 75,
+        "label_en": "Accumulate 75 Farr",
+        "label_fa": "گردآوریِ 75 فرّ",
+        "label_tg": "Ҷамъ кардани 75 Фарр",
+        "hint_en": "Earn Farr by passing Medium (+1) and Hard (+2) quiz tiers in each chapter.",
+        "hint_fa": "با گذراندنِ سطح‌های متوسط (+۱) و سخت (+۲) آزمون در هر فصل، فرّ کسب کنید.",
+        "hint_tg": "Бо гузаштани санҷишҳои миёна (+1) ва душвор (+2) дар ҳар боб Фарр пайдо кунед."
       },
       {
         "kind": "owned_heroes",
@@ -101,6 +101,39 @@
         "hint_en": "Collect hero cards from the Hero Collection. Each purchase counts toward your roster.",
         "hint_fa": "کارت‌های قهرمان را از بخش مجموعه‌ی قهرمانان جمع کنید. هر خرید به تعداد شما می‌افزاید.",
         "hint_tg": "Картаҳои қаҳрамонро аз бахши Маҷмӯаи Қаҳрамонон ҷамъ кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "ardeshir-founder",
+        "target": 4,
+        "label_en": "Ardeshir — Founder of Sassan — Hero Card at Lv.4",
+        "label_fa": "اردشیر — بنیان‌گذارِ ساسانیان — کارتِ قهرمان در سطح 4",
+        "label_tg": "Ардашер — Бунёдгузори Сосониён — Картаи қаҳрамон дар сатҳи 4",
+        "hint_en": "Open Heroes, find Ardeshir and upgrade to Level 4.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و اردشیر را به سطح 4 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Ардашер-ро ба сатҳи 4 баланд кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "shapur-great",
+        "target": 3,
+        "label_en": "Shapur the Great — Hero Card at Lv.3",
+        "label_fa": "شاپورِ بزرگ — کارتِ قهرمان در سطح 3",
+        "label_tg": "Шопури Бузург — Картаи қаҳрамон дар сатҳи 3",
+        "hint_en": "Open Heroes, find Shapur the Great and upgrade to Level 3.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و شاپورِ بزرگ را به سطح 3 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Шопури Бузург-ро ба сатҳи 3 баланд кунед."
+      },
+      {
+        "kind": "level",
+        "hero_id": "rostam-champion",
+        "target": 5,
+        "label_en": "Rostam — Champion of Iran — Hero Card at Lv.5",
+        "label_fa": "رستم — قهرمانِ ایران — کارتِ قهرمان در سطح 5",
+        "label_tg": "Рустам — Қаҳрамони Эрон — Картаи қаҳрамон дар сатҳи 5",
+        "hint_en": "Open Heroes, find Rostam and upgrade to Level 5.",
+        "hint_fa": "بخشِ قهرمانان را باز کنید و رستم را به سطح 5 ارتقا دهید.",
+        "hint_tg": "Қаҳрамононро кушоед ва Рустам-ро ба сатҳи 5 баланд кунед."
       }
     ],
     "intro_tg": "Баҳром Чӯбин бузургтарин сипаҳсолори рӯзгори худ буд ва тасмим гирифт ин барои шоҳ шудан кофист. Иштибоҳ мекард — аммо фақат ба сахтӣ, ва танҳо пас аз бознигории тамоми низоми сиёсӣ. Барои рӯбарӯ шудан бо ин дарвоза бояд фарқи шоистагӣ ва ҳаққи иддаошуда бар тахтро бифаҳмӣ.",
