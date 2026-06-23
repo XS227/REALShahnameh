@@ -1543,11 +1543,53 @@
     }
   );
 
-  /* ── Chapter Hero Cards — chapters 8–50 (one primary card per chapter) ───
+  /* ── Chapter Hero Cards — chapters 6–50 (one primary card per chapter) ───
      Unlock rule: card available after chapter is done (all quiz tiers passed).
      Cost scales with rarity. Zar/hr gives passive income incentive to collect.
      owned_heroes gate (ch 26–50) makes collection mandatory for progression.  */
   COLLECTION.push(
+
+    /* ═══ PISHDADIAN RESTORATION — Ch 6–7 ════════════════════════════════ */
+    {
+      id: "fereydun-liberator", name: "Fereydun — The Liberator",
+      name_fa: "فریدون — رهاننده", name_tg: "Фаридун — Озодкунанда",
+      type: "character", rarity: "legend", chapter: 6, emoji: "⚡",
+      img: "/season2/uploads/heroes/fereydun.png",
+      role: "Sixth King · Slayer of Zahhak · Restorer of the Crown",
+      role_fa: "ششمین شاه · کشنده‌ی ضحاک · بازگرداننده‌ی تاج",
+      lore: "Hidden from Zahhak's hunters as an infant and raised by a holy cow, Fereydun returned a man with a cow-headed mace and broke a thousand years of tyranny in a single blow.",
+      lore_fa: "فریدون که در کودکی از شکارچیان ضحاک پنهان شد و با گاوی مقدس پرورش یافت، با گرزی گاوسر بازگشت و هزار سال ستم را با یک ضربه شکست.",
+      lore_tg: "Фаридун, ки дар кӯдакӣ аз шикорчиёни Заҳҳок пинҳон шуд, бо гурзи говсар баргашт ва ҳазор сол зулмро шикаст.",
+      biography: "Born while Zahhak's spies searched every cradle in the land, Fereydun survived because his mother fled to the wilderness and gave him to the keeper of a sacred cow, Barmayeh, to nurse. He grew in secret, trained by the smith Kaveh — whose leather apron became the banner of revolt — and returned to Iran wielding a mace shaped like a bull's head. He struck down Zahhak at Mount Damavand, chained him in a cave rather than killing him outright, and was crowned king by the will of the people.",
+      biography_fa: "فریدون در زمانی به دنیا آمد که جاسوسانِ ضحاک هر گهواره را می‌کاویدند. مادرش به بیابان گریخت و او را به نگهبانِ گاوِ مقدس، برمایه، سپرد. زیرِ تعلیمِ کاوه‌ی آهنگر — که پیشبندِ چرمی‌اش پرچمِ قیام شد — بزرگ شد و با گرزی به شکلِ سرِ گاو به ایران بازگشت و ضحاک را در دامنه‌ی دماوند بر زمین زد.",
+      powers: ["+10% Tap Power", "+60 Zar/hr", "Passive: Kaveh's Banner — quiz hard-tier reward +10%"],
+      side: "light", nftReady: false, season: 2, order: 298,
+      collectionId: "S2-CH06-001",
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      cost: 16000, zar_per_hour: 60, prereq: null,
+      unlockCondition: "Complete Chapter 6 · Fereydun",
+      unlockCondition_fa: "فصلِ ۶ (فریدون) را کامل کنید",
+    },
+    {
+      id: "manuchehr-avenger", name: "Manuchehr — The Avenger",
+      name_fa: "منوچهر — انتقام‌گیر", name_tg: "Манучеҳр — Интиқомгиранда",
+      type: "character", rarity: "epic", chapter: 7, emoji: "🗡",
+      img: "/season2/uploads/heroes/manuchehr.png",
+      role: "Grandson of Fereydun · King of Iran · Punisher of Salm and Tur",
+      role_fa: "نوادهٔ فریدون · شاهِ ایران · مجازات‌کننده‌ی سلم و تور",
+      lore: "When Fereydun's elder sons murdered their younger brother Iraj out of envy, the crime did not go unanswered. Manuchehr, Iraj's grandson, was raised for one purpose: to balance the scale his grandfather's sons had broken.",
+      lore_fa: "وقتی پسرانِ بزرگِ فریدون برادرِ کوچک‌شان ایرج را از سرِ حسادت کشتند، آن جرم بی‌پاسخ نماند. منوچهر، نوه‌ی ایرج، برای یک هدف پرورش یافت: ترازویی را که پسرانِ پدربزرگش شکسته بودند برابر کند.",
+      lore_tg: "Вақте писарони калони Фаридун бародари хурдиашон Иражро аз ҳасад куштанд, ин ҷиноят бе ҷавоб намонд.",
+      biography: "Iraj, the gentlest of Fereydun's three sons, was given the best portion of the kingdom and murdered for it by his jealous brothers Salm and Tur. Fereydun raised Iraj's posthumous grandson Manuchehr as heir and instrument of justice. When Manuchehr came of age, he marched against his great-uncles, defeated both in battle, and sent their heads to Fereydun before the old king died in peace.",
+      biography_fa: "ایرج، آرام‌ترینِ سه پسرِ فریدون، بهترین بخشِ پادشاهی را گرفت و به همین خاطر به دستِ برادرانِ حسودش، سلم و تور، کشته شد. فریدون نوه‌ی پس از مرگِ ایرج، منوچهر، را به‌عنوانِ وارث و ابزارِ عدالت پرورش داد. وقتی منوچهر بالغ شد، بر عموبزرگ‌هایش تاخت، هر دو را در نبرد شکست داد و سرهایشان را پیش از مرگِ آرامِ فریدون برایش فرستاد.",
+      powers: ["+7% Tap Power", "+45 Zar/hr", "Passive: Scale of Iraj — chapter unlock farr cost –1"],
+      side: "light", nftReady: false, season: 2, order: 299,
+      collectionId: "S2-CH07-001",
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      cost: 7000, zar_per_hour: 45, prereq: null,
+      unlockCondition: "Complete Chapter 7 · Manuchehr",
+      unlockCondition_fa: "فصلِ ۷ (منوچهر) را کامل کنید",
+    },
 
     /* ═══ PISHDADIAN LATE ERA — Ch 8–12 ══════════════════════════════════ */
     {
@@ -1640,6 +1682,25 @@
       unlockCondition: "Complete Chapter 12 · Rostam",
       unlockCondition_fa: "فصلِ ۱۲ (رستم) را کامل کنید",
     },
+    {
+      id: "sohrab-storm", name: "Sohrab — Son of the Storm",
+      name_fa: "سهراب — فرزندِ توفان", name_tg: "Суҳроб — Фарзанди Тӯфон",
+      type: "character", rarity: "legend", chapter: 13, emoji: "💔",
+      role: "Son of Rostam · Champion of Turan · The Duel That Broke a Father",
+      role_fa: "پسرِ رستم · پهلوانِ توران · نبردی که پدر را شکست",
+      lore: "Sohrab grew up in Turan never knowing his father's face, searching every battlefield for a man he was told to recognize by a token. He found him at the end of a sword, and recognized him one breath too late.",
+      lore_fa: "سهراب در توران بزرگ شد بدون آنکه چهره‌ی پدرش را بشناسد و در هر میدانِ جنگ به دنبالِ مردی بود که نشانی برای شناختنش داشت. در پایانِ شمشیری او را یافت، و یک نفس دیر شناختش.",
+      lore_tg: "Суҳроб дар Турон бузург шуд бе он ки чеҳраи падарашро бишносад.",
+      biography: "Born from Rostam's brief union with the Turanian princess Tahmineh, Sohrab grew into a warrior of his father's scale without ever meeting him. Tahmineh gave him an armband as a token of recognition, but pride and a fog of misdirection from both kings kept Rostam from learning who he faced on the battlefield. Father and son fought twice. On the second day, Rostam — using a forbidden wrestling trick — struck the fatal blow, and only then saw the armband on his dying son's arm.",
+      biography_fa: "سهراب از پیوندی کوتاهِ رستم با شاهزاده‌ی تورانی تهمینه زاده شد و بدون دیدنِ پدرش به اندازه‌ی او پهلوان شد. تهمینه بازوبندی به او داد تا نشانِ بازشناسی باشد، اما غرور و سردرگمی هر دو شاه رستم را از شناختنِ حریفش بازداشت. پدر و فرزند دو روز جنگیدند. در روزِ دوم، رستم با ترفندی ممنوع ضربه‌ی مرگبار را زد و تنها آن‌گاه بازوبند را بر بازویِ فرزندِ رو به مرگش دید.",
+      powers: ["+12% Tap Power", "+70 Zar/hr", "Passive: Token of Tahmineh — quiz wrong-answer penalty –10%"],
+      side: "neutral", nftReady: false, season: 2, order: 305,
+      collectionId: "S2-CH13-001",
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      cost: 12000, zar_per_hour: 70, prereq: null,
+      unlockCondition: "Complete Chapter 13 · Sohrab",
+      unlockCondition_fa: "فصلِ ۱۳ (سهراب) را کامل کنید",
+    },
 
     /* ═══ EARLY KAYANID ERA — Ch 14–19 ════════════════════════════════════ */
     {
@@ -1659,6 +1720,25 @@
       cost: 14000, zar_per_hour: 80, prereq: null,
       unlockCondition: "Complete Chapter 14 · Siavash",
       unlockCondition_fa: "فصلِ ۱۴ (سیاوش) را کامل کنید",
+    },
+    {
+      id: "kay-kavus-king", name: "Kay Kavus — The Reckless King",
+      name_fa: "کیکاووس — شاهِ بی‌پروا", name_tg: "Кайковус — Шоҳи Бепарво",
+      type: "character", rarity: "rare", chapter: 15, emoji: "👑",
+      role: "King of Iran · Father of Siavash · A Throne Built on Bad Decisions",
+      role_fa: "شاهِ ایران · پدرِ سیاوش · تختی بر تصمیماتِ نادرست",
+      lore: "He tried to fly to heaven on a throne carried by eagles baited with meat. He marched into Hamavaran and got himself captured. Kay Kavus is what happens when courage forgets to bring wisdom along.",
+      lore_fa: "تلاش کرد با تختی که عقاب‌ها با گوشت به آسمان می‌بردند به بهشت پرواز کند. به هاماوران تاخت و اسیر شد. کیکاووس یعنی شجاعتی که خرد را همراه نبرد.",
+      lore_tg: "Кӯшид бо тахте ки уқобҳо ба осмон мебурданд ба биҳишт парвоз кунад.",
+      biography: "Kay Kavus inherited the Kayanid throne and spent much of his reign proving that royal ambition without judgment is dangerous to everyone around it: invading Mazandaran and getting blinded by demons until Rostam rescued him, building a flying throne out of vanity that crashed in the wilderness, and later believing the false accusations of his wife Sudabeh against his own son Siavash — a decision that would cost the kingdom dearly. He reigned long and survived only because heroes like Rostam kept cleaning up after him.",
+      biography_fa: "کیکاووس تختِ کیانی را به ارث برد و بخشِ بزرگی از فرمانروایی‌اش را صرفِ ثابت‌کردنِ این کرد که بلندپروازیِ شاهانه بدونِ خرد برای همه خطرناک است: حمله به مازندران که با کوریِ او به دستِ دیوان پایان یافت تا رستم نجاتش داد، ساختنِ تختِ پرنده از سرِ غرور که در بیابان سقوط کرد، و بعدها باور کردنِ دروغ‌های سودابه علیه پسرش سیاوش — تصمیمی که قلمرو را به سختی به‌خود هزینه داد.",
+      powers: ["+5% Tap Power", "+30 Zar/hr", "Passive: Rostam's Patience — battle gate energy cost –5%"],
+      side: "neutral", nftReady: false, season: 2, order: 310.5,
+      collectionId: "S2-CH15-001",
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      cost: 5000, zar_per_hour: 30, prereq: null,
+      unlockCondition: "Complete Chapter 15 · Kay Kavus",
+      unlockCondition_fa: "فصلِ ۱۵ (کیکاووس) را کامل کنید",
     },
     {
       id: "kay-khosrow", name: "Kay Khosrow — The Chosen King",
@@ -1695,6 +1775,25 @@
       cost: 7500, zar_per_hour: 42, prereq: null,
       unlockCondition: "Complete Chapter 17 · Akvan Div",
       unlockCondition_fa: "فصلِ ۱۷ (اکوان دیو) را کامل کنید",
+    },
+    {
+      id: "bijan-hero", name: "Bijan — Prisoner of Pashang",
+      name_fa: "بیژن — اسیرِ پشنگ", name_tg: "Бижан — Маҳбуси Пашанг",
+      type: "character", rarity: "epic", chapter: 18, emoji: "⛓",
+      role: "Iranian Hero · Lover of Manijeh · The Pit Beneath the Boulder",
+      role_fa: "پهلوانِ ایرانی · معشوقِ منیژه · چاهِ زیرِ تخته‌سنگ",
+      lore: "Sent to hunt wild boars at the border, Bijan instead fell in love with Turan's princess — and paid for it with chains, a sealed pit, and years of darkness, until Rostam came looking with a magic cup.",
+      lore_fa: "بیژن که برای شکارِ گرازهای مرزی فرستاده شده بود، به‌جای آن عاشقِ شاهزاده‌ی تورانی شد — و بهای آن را با زنجیر، چاهی مهرشده و سال‌ها تاریکی پرداخت، تا رستم با جامی جادویی به سراغش آمد.",
+      lore_tg: "Бижан, ки барои шикори гӯроз фиристода шуда буд, ба ҷои он ошиқи шаҳзодаи турониро шуд.",
+      biography: "Bijan was a young Iranian hero sent across the border to deal with wild boars ravaging Turanian farmland — a routine mission that turned into the most dangerous love story in the Shahnameh. He met and fell for Manijeh, daughter of king Afrasiab, and was discovered, drugged, and thrown into a sealed pit to die slowly. Manijeh, stripped of her status, kept him alive with stolen scraps for years. Rostam found him only by scrying through a magic cup that revealed Bijan's location, then crossed into enemy territory disguised as a merchant to lift the boulder and pull him free.",
+      biography_fa: "بیژن پهلوانِ جوانِ ایرانی بود که برای مقابله با گرازهایی که به مزارعِ تورانی آسیب می‌زدند به آن سو فرستاده شد — ماموریتی معمولی که به خطرناک‌ترین داستانِ عشقِ شاهنامه بدل شد. او عاشقِ منیژه، دخترِ افراسیاب، شد و کشف، بیهوش و در چاهی مهرشده برای مردنِ آرام افتاد. منیژه با لقمه‌های دزدیده سال‌ها او را زنده نگه داشت. رستم تنها با نگاه‌کردن در جامی جادویی او را یافت.",
+      powers: ["+9% Story XP", "+52 Zar/hr", "Passive: The Boulder Lifted — pairs with Manijeh: +5% Zar/hr when both owned"],
+      side: "light", nftReady: false, season: 2, order: 312.5,
+      collectionId: "S2-CH18-002",
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      cost: 8500, zar_per_hour: 52, prereq: null,
+      unlockCondition: "Complete Chapter 18 · Bijan and Manijeh",
+      unlockCondition_fa: "فصلِ ۱۸ (بیژن و منیژه) را کامل کنید",
     },
     {
       id: "manijeh", name: "Manijeh — Love That Fed a Prisoner",
@@ -1751,6 +1850,25 @@
       cost: 4500, zar_per_hour: 28, prereq: null,
       unlockCondition: "Complete Chapter 20 · Lohrasp",
       unlockCondition_fa: "فصلِ ۲۰ (لهراسب) را کامل کنید",
+    },
+    {
+      id: "goshtasp-king", name: "Goshtasp — Champion of the Faith",
+      name_fa: "گشتاسب — قهرمانِ ایمان", name_tg: "Гуштосп — Қаҳрамони Имон",
+      type: "character", rarity: "legend", chapter: 21, emoji: "👑",
+      role: "King of Iran · First Royal Convert · Father of Esfandiyar",
+      role_fa: "شاهِ ایران · اولین حامیِ شاهانه‌ی دینِ تازه · پدرِ اسفندیار",
+      lore: "When a prophet walked into his court promising fire instead of proof, Goshtasp made the one decision that outlasted every army he ever raised: he chose to believe.",
+      lore_fa: "وقتی پیامبری به دربارش آمد و به‌جای دلیل آتش پیشنهاد کرد، گشتاسب تنها تصمیمی گرفت که از هر سپاهی که برافراشت ماندگارتر بود: باور کردن را انتخاب کرد.",
+      lore_tg: "Вақте паёмбаре ба дарбораш омад, Гуштосп тасмим гирифт ки бовар кунад.",
+      biography: "Son of Lohrasp and impatient for the throne, Goshtasp spent years in exile and adventure abroad before finally inheriting Iran. His reign would have been one king among many had Zarathustra not arrived at his court and converted him to the new faith of Ahura Mazda. Goshtasp became the religion's first royal patron, building fire temples and defending the faith in war against Turan's Arjasp — wars in which his son Esfandiyar, made invulnerable by a prophet's blessing, did most of the fighting.",
+      biography_fa: "گشتاسب پسرِ لهراسب بود و برای رسیدن به تخت بی‌حوصله، سال‌ها در تبعید و ماجراجویی در سرزمین‌های بیگانه گذراند پیش از آنکه سرانجام ایران را به ارث برد. فرمانروایی‌اش تنها یکی از فرمانروایی‌های بی‌شمار بود اگر زرتشت به دربارش نمی‌آمد و او را به دینِ تازه‌ی اهورامزدا نمی‌گرواند. گشتاسب اولین حامیِ شاهانه‌ی این دین شد، آتشکده‌ها ساخت و در جنگ با ارجاسبِ تورانی از ایمان دفاع کرد.",
+      powers: ["+10% Story XP", "+85 Zar/hr", "Passive: Royal Patron — Zoroaster card synergy: +8% farr gain when both owned"],
+      side: "light", nftReady: false, season: 2, order: 320.5,
+      collectionId: "S2-CH21-002",
+      tonMetadata: { standard: "TEP-62", collection: "Shahnameh Season 2", artworkVersion: "1.0", mintStatus: "pending" },
+      cost: 15000, zar_per_hour: 85, prereq: null,
+      unlockCondition: "Complete Chapter 21 · Goshtasp and Zoroaster",
+      unlockCondition_fa: "فصلِ ۲۱ (گشتاسب و زرتشت) را کامل کنید",
     },
     {
       id: "zoroaster", name: "Zoroaster — The Prophet of Fire",

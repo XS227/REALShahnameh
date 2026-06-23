@@ -284,6 +284,13 @@
     if (m.rewards_done) _lsSet('real_chapter_rewards_done_' + slug, '1');
     m.scene_grants.forEach(id => _lsSet('real_scene_xp_granted_' + slug + '_' + id, '1'));
     m.farr_grants.forEach(t  => _lsSet('real_quiz_farr_granted_' + slug + '_' + t, '1'));
+    /* §7.9 quiz-gate (learn.js allQuizPassed) reads these flat per-tier keys,
+       not the nested quiz object above — keep them in sync with the merged
+       server snapshot so the gate is correct even before the whole chapter
+       (scenes/codex) is marked done on this device. */
+    CH_TIERS.forEach(tier => {
+      if (m.quiz[tier] && m.quiz[tier].passed) _lsSet('real_quiz_' + slug + '_' + tier, 'passed');
+    });
   };
 
   const _localChapterSlugs = () => {
