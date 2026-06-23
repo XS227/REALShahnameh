@@ -430,7 +430,8 @@
   };
 
   /* ══════════════════════════════════════════════════════════════════════
-     LEGACY TAB — Season 1 record + TON Connect wallet verification
+     LEGACY TAB — Season 1 record only.
+     TON wallet linking lives on its own page: wallet.html (see wallet.js).
      ════════════════════════════════════════════════════════════════════ */
   const initLegacyTab = () => {
     const tab = document.querySelector('[data-tab="legacy"]');
@@ -438,7 +439,6 @@
 
     const T = (key, vars) => (window.RealI18N ? window.RealI18N.t(key, vars) : (vars ? key : key));
     let loaded = false;
-    let _tc = null; // TonConnectUI singleton
 
     /* ── helpers ── */
     const show = (sel) => {
@@ -461,150 +461,17 @@
       window.Telegram.WebApp.initDataUnsafe &&
       window.Telegram.WebApp.initDataUnsafe.user;
 
-    /* ── TON Connect singleton ── */
-    const getTonConnect = () => {
-      if (_tc) return _tc;
-      try {
-        let Cls = null;
-        if (typeof window.TonConnectUI === 'function') {
-          Cls = window.TonConnectUI;
-        } else if (window.TONConnectUI) {
-          if (typeof window.TONConnectUI === 'function') Cls = window.TONConnectUI;
-          else if (typeof window.TONConnectUI.TonConnectUI === 'function') Cls = window.TONConnectUI.TonConnectUI;
-        }
-        if (!Cls) return null;
-        _tc = new Cls({ manifestUrl: 'https://shahnameh.setaei.com/tonconnect-manifest.json' });
-        return _tc;
-      } catch (_) { return null; }
-    };
-
-    /* ── After TON Connect: verify token balance on backend ── */
-    const verifyWallet = async (addr, block) => {
-      const statusEl = block.querySelector('[data-wallet-status]');
-      const tierEl   = block.querySelector('[data-wallet-tier]');
-      if (statusEl) statusEl.textContent = T('legacy_verifying');
-
-      const u = tgUser();
-      const chatId = u ? String(u.id) : null;
-      const initData = (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) || '';
-
-      try {
-        const body = { walletAddress: addr, ...(chatId ? { chatId } : {}), ...(initData ? { initData } : {}) };
-        const resp = await fetch('/api/basic/wallet-verify', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(body)
-        });
-        const j = await resp.json();
-        if (!j.status) throw new Error('api error');
-
-        block.classList.toggle('verified', j.holder);
-        block.classList.toggle('elite', j.tier === 'elite' || j.tier === 'legend');
-
-        if (statusEl) {
-          statusEl.innerHTML = j.holder
-            ? `<strong style="color:var(--gold)">${T('legacy_verified_holder')}</strong>
-               <br><span style="font-size:12px;color:var(--text-muted)">${T('legacy_balance',{n:j.balance.toLocaleString()})}</span>`
-            : T('legacy_no_tokens');
-        }
-
-        if (tierEl && j.tier !== 'none') {
-          const tierKeys = { legend:'legacy_tier_legend', elite:'legacy_tier_elite',
-                             holder:'legacy_tier_holder', supporter:'legacy_tier_supporter' };
-          tierEl.innerHTML = `<span class="wallet-tier-badge tier-${j.tier}">${T(tierKeys[j.tier]||j.tier)}</span>`;
-          if (j.trustBonus > 0) {
-            tierEl.innerHTML += `<div style="font-size:12px;color:var(--gold);margin-top:6px;">${T('legacy_honour_awarded',{n:j.trustBonus})}</div>`;
-          }
-        }
-      } catch (_) {
-        if (statusEl) statusEl.textContent = T('legacy_wallet_error');
-      }
-    };
-
-    /* ── Render wallet block (no text input — TON Connect only) ── */
-    const renderWalletBlock = (container, existingAddr) => {
-      container.innerHTML = '';
-      const block = document.createElement('div');
-      block.className = 'wallet-block';
-
-      if (existingAddr) {
-        /* Already linked — show address + check balance */
-        block.innerHTML = `
-          <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;letter-spacing:.06em;text-transform:uppercase;">${T('legacy_wallet_addr')}</div>
-          <div style="font-size:12px;color:var(--text);word-break:break-all;font-family:monospace;">${existingAddr.slice(0,14)}…${existingAddr.slice(-8)}</div>
-          <div data-wallet-status style="margin-top:10px;font-size:13px;color:var(--text-muted);">${T('legacy_verifying')}</div>
-          <div data-wallet-tier></div>
-        `;
-        container.appendChild(block);
-        verifyWallet(existingAddr, block);
-        return;
-      }
-
-      const TON_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 56 56" fill="none"><path d="M37.56 15.63H18.44c-3.46 0-5.64 3.68-3.91 6.67L26.28 42.5 28 45.5l1.72-3 11.75-20.2c1.74-2.99-.44-6.67-3.91-6.67ZM26.26 38.79l-3.05-5.17-6.26-10.8c-.57-.99.14-2.24 1.5-2.24h7.81v18.21Zm12.79-15.97-6.26 10.8-3.05 5.17V20.58h7.82c1.36 0 2.06 1.25 1.49 2.24Z" fill="white"/></svg>`;
-
-      /* No wallet yet — show TON Connect button */
-      block.innerHTML = `
-        <div style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">${T('legacy_wallet_sub')}</div>
-        <div id="ton-connect-btn">
-          <button id="ton-connect-open-btn" style="background:#0098EA;color:#fff;border:none;border-radius:12px;padding:12px 20px;font-weight:700;font-size:14px;cursor:pointer;width:100%;letter-spacing:.04em;display:flex;align-items:center;justify-content:center;gap:10px;">${TON_ICON}${T('legacy_connect_btn')}</button>
-        </div>
-        <div data-wallet-status style="margin-top:10px;font-size:13px;color:var(--text-muted);display:none;"></div>
-        <div data-wallet-tier></div>
-      `;
-      container.appendChild(block);
-
-      /* Retry SDK init — CDN may not be ready when the tab first renders */
-      let statusListenerAdded = false;
-      const tryInit = (attemptsLeft) => {
-        const tc = getTonConnect();
-        if (!tc) {
-          if (attemptsLeft > 0) { setTimeout(() => tryInit(attemptsLeft - 1), 400); return; }
-          /* SDK truly unavailable */
-          const btn = block.querySelector('#ton-connect-open-btn');
-          if (btn) {
-            const inTelegram = !!(window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData);
-            /* If inside Telegram, the SDK should load — offer a manual retry instead of "open the bot" */
-            btn.textContent = inTelegram ? T('legacy_sdk_reload') : T('legacy_veteran_unavail');
-            if (inTelegram) {
-              btn.style.background = '#0098EA';
-              btn.style.color = '#fff';
-              btn.disabled = false;
-              btn.onclick = () => { btn.disabled = true; tryInit(8); };
-            } else {
-              btn.style.cssText = 'background:transparent;color:var(--text-muted);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 16px;font-size:12px;font-weight:400;width:100%;text-align:center;cursor:default;display:block;';
-              btn.disabled = true;
-            }
-          }
-          return;
-        }
-
-        /* Wire up click → openModal */
-        const openBtn = block.querySelector('#ton-connect-open-btn');
-        if (openBtn) {
-          openBtn.addEventListener('click', () => {
-            try { tc.openModal(); }
-            catch (e) { console.error('[TON] openModal error:', e); }
-          });
-        }
-
-        /* Watch for connection — guard against duplicate listeners on the singleton */
-        if (!statusListenerAdded) {
-          statusListenerAdded = true;
-          tc.onStatusChange(async (wallet) => {
-            if (!wallet) return;
-            const addr = wallet.account && wallet.account.address;
-            if (!addr) return;
-            /* Persist so other pages (e.g. ch50 finale gate) know wallet is linked */
-            try { localStorage.setItem('real_ton_wallet', addr); } catch {}
-            const statusEl = block.querySelector('[data-wallet-status]');
-            if (statusEl) { statusEl.style.display = ''; statusEl.textContent = T('legacy_connected'); }
-            await verifyWallet(addr, block);
-            setTimeout(() => renderWalletBlock(container, addr), 2000);
-          });
-        }
-      };
-
-      tryInit(8); // up to 8 × 400 ms = 3.2 s before giving up
+    /* ── Read-only wallet status with a link to the dedicated wallet page ── */
+    const renderWalletStatus = (container, addr) => {
+      container.innerHTML = addr
+        ? `<div class="wallet-block verified">
+             <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;letter-spacing:.06em;text-transform:uppercase;">${T('legacy_wallet_addr')}</div>
+             <div style="font-size:12px;color:var(--text);word-break:break-all;font-family:monospace;">${addr.slice(0,14)}…${addr.slice(-8)}</div>
+           </div>`
+        : `<div class="wallet-block">
+             <div style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">${T('legacy_wallet_sub')}</div>
+             <a href="wallet.html" class="wallet-connect-btn" style="display:block; text-align:center; text-decoration:none;">${T('legacy_connect_btn')}</a>
+           </div>`;
     };
 
     /* ── Main loader ── */
@@ -620,7 +487,7 @@
       if (!chatId) {
         show('[data-legacy-empty]');
         const wBlock = document.querySelector('[data-legacy-empty] [data-legacy-wallet-block]');
-        if (wBlock) renderWalletBlock(wBlock, null);
+        if (wBlock) renderWalletStatus(wBlock, null);
         return;
       }
 
@@ -633,7 +500,7 @@
         if (!j.status || !j.legacy || !j.legacy.isSeason1) {
           show('[data-legacy-empty]');
           const wBlock = document.querySelector('[data-legacy-empty] [data-legacy-wallet-block]');
-          if (wBlock) renderWalletBlock(wBlock, j.legacy && j.legacy.walletAddress);
+          if (wBlock) renderWalletStatus(wBlock, j.legacy && j.legacy.walletAddress);
           return;
         }
 
@@ -666,7 +533,7 @@
         show('[data-legacy-card]');
 
         const wBlock = document.querySelector('[data-legacy-card] [data-legacy-wallet-block]');
-        if (wBlock) renderWalletBlock(wBlock, lg.walletAddress);
+        if (wBlock) renderWalletStatus(wBlock, lg.walletAddress);
 
       } catch (_) {
         show('[data-legacy-empty]');

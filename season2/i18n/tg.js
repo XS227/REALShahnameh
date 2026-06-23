@@ -120,6 +120,7 @@
 
       /* Earn page */
       watch_earn: "Тамошо кун ва даромад гир",
+      ad_per_day: "дар як рӯз",
       ad_remaining: "5 / 5 имрӯз",
       ad_energy_h: "+25 Энергия",
       ad_energy_copy: "Энергияатро пур кун то зарб зада тавонӣ.",
@@ -606,6 +607,20 @@
       real_utility: "Ҷойгоҳи REAL",
       airdrop_score: "Ҷойгоҳи фаслӣ",
       airdrop_eligible: "Ҷойгоҳ боло меравад",
+      season_score_label: "Холи фасл:",
+      pts_suffix: "хол",
+      airdrop_account_age_met: "Синни ҳисоб: {days}р ✓ (ҳадди ақал {required}р)",
+      airdrop_account_age_unmet: "Синни ҳисоб: {days}р / {required}р лозим — {daysLeft} рӯз боқӣ",
+      airdrop_ch50_done: "Боби 50 (Анҷоми Асрҳо) анҷом ёфт",
+      airdrop_clan_joined: "Ба иттиҳод пайваст шуд",
+      airdrop_wallet_linked: "Ҷайби TON пайваст шуд",
+      airdrop_offerings_made: "Қурбониҳо: {count}/{required} карда шуд",
+      airdrop_account_standing: "Ҳолати ҳисоб: тоза",
+      airdrop_link_learn: "Омӯзиш",
+      airdrop_link_guild: "Иттиҳод",
+      airdrop_link_wallet: "Пайваст кардани ҷайб",
+      airdrop_link_offerings: "Қурбониҳо",
+      ad_powered_by: "бо қудрати Adsgram",
       team_rewards: "Ҷоизаҳои даста",
       view_contest: "Дидани мусобиқа",
       live: "ЗИНДА",
@@ -733,6 +748,10 @@
       learn_level_tpl: "Сатҳ {level} · {title}",
       learn_stories_done_tpl: "{done} аз {total} ҳикоя анҷом ёфт",
       learn_no_chapters: "Ягон боб бор нашуд.",
+      finale_gate_sub: "Ҳар се маросимро анҷом деҳ, то ба Асри Поён дароӣ",
+      finale_gate_clan: "Ба иттиҳод ҳамроҳ шав ё созед",
+      finale_gate_wallet: "Ҷайби TON-ро барои airdrop пайваст кун",
+      finale_gate_offerings: "Ҳадди ақал 3 қурбонӣ кун ({count}/3 шуд)",
       learn_no_content: "Бобҳо бор нашуданд.",
 
       /* Home page */
@@ -1012,6 +1031,14 @@
       profile_stats:         "Омори фасл",
       profile_achievements:  "Дастовардҳо",
       profile_back:          "← Бозгашт",
+
+      /* ── Standalone wallet page ── */
+      wallet_back:           "← Бозгашт",
+      wallet_page_title:     "Пайваст кардани ҷайби TON",
+      wallet_page_sub:       "Ҷайбатро пайваст кун, то дороии REAL тасдиқ шавад ва ба airdrop ҳуқуқ ёбӣ.",
+      wallet_disconnect:     "Канда кардан",
+      wallet_switch:         "Пайваст кардани ҷайби дигар",
+      wallet_disconnect_confirm: "Ҷайби ҷории шуморо кандан?",
 
       rbc_label:             "Мавҷудии REAL",
       rbc_clan_bonus:        "+5% Подоши клан фаъол аст",

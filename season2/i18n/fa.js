@@ -121,6 +121,8 @@
 
       /* Earn page */
       watch_earn: "ببین و کسب کن",
+      ad_powered_by: "قدرت‌گرفته از Adsgram",
+      ad_per_day: "در روز",
       ad_remaining: "۵ / ۵ امروز",
       ad_energy_h: "+۲۵ انرژی",
       ad_energy_copy: "انرژی‌ات را پر کن تا به ضرب ادامه دهی.",
@@ -607,6 +609,19 @@
       real_utility: "جایگاهِ ریال",
       airdrop_score: "جایگاهِ فصلی",
       airdrop_eligible: "جایگاه در حالِ صعود",
+      season_score_label: "امتیازِ فصل:",
+      pts_suffix: "امتیاز",
+      airdrop_account_age_met: "سنِ حساب: {days} روز ✓ (حداقل {required} روز)",
+      airdrop_account_age_unmet: "سنِ حساب: {days} از {required} روز لازم — {daysLeft} روز باقی‌مانده",
+      airdrop_ch50_done: "تکمیلِ فصل ۵۰ (پایانِ اعصار)",
+      airdrop_clan_joined: "پیوستن به اتحادیه",
+      airdrop_wallet_linked: "اتصالِ کیف‌پولِ TON",
+      airdrop_offerings_made: "نیازِ نذورات: {count}/{required}",
+      airdrop_account_standing: "وضعیتِ حساب: پاک",
+      airdrop_link_learn: "یادگیری",
+      airdrop_link_guild: "اتحادیه",
+      airdrop_link_wallet: "اتصالِ کیف‌پول",
+      airdrop_link_offerings: "نذورات",
       team_rewards: "پاداش تیمی",
       view_contest: "مشاهده مسابقه",
       live: "زنده",
@@ -734,6 +749,10 @@
       learn_level_tpl: "سطح {level} · {title}",
       learn_stories_done_tpl: "{done} از {total} داستان تکمیل شد",
       learn_no_chapters: "هیچ فصلی بارگذاری نشد.",
+      finale_gate_sub: "هر سه آیین را کامل کن تا وارد عصرِ پایانی شوی",
+      finale_gate_clan: "پیوستن یا ساختنِ یک اتحادیه",
+      finale_gate_wallet: "اتصالِ کیف‌پولِ TON برای ایردراپ",
+      finale_gate_offerings: "حداقل ۳ نذر انجام بده ({count}/۳ شده)",
       learn_no_content: "فصل‌ها بارگذاری نشدند.",
 
       /* Home page */
@@ -1095,6 +1114,14 @@
       profile_achievements:  "دستاوردها",
       profile_back:          "← بازگشت",
 
+      /* ── Standalone wallet page ── */
+      wallet_back:           "← بازگشت",
+      wallet_page_title:     "اتصالِ کیف‌پولِ TON",
+      wallet_page_sub:       "کیف‌پولت را وصل کن تا دارایی ریال تأیید شود و واجد شرایطِ ایردراپ شوی.",
+      wallet_disconnect:     "قطعِ اتصال",
+      wallet_switch:         "اتصال به کیف‌پولِ دیگر",
+      wallet_disconnect_confirm: "کیف‌پولِ فعلی قطع شود؟",
+
       rbc_label:             "موجودی ریال",
       rbc_clan_bonus:        "+۵٪ پاداش کلان فعال است",
 
@@ -1146,7 +1173,7 @@
       btn_apply:             "⚔ درخواست",
       btn_save:              "ذخیره",
       btn_retry:             "تلاش مجدد",
-      btn_watch:             "مشاهده",
+      btn_watch:             "تماشا",
       no_clan_yet:           "هنوز عضو هیچ قبیله‌ای نیست",
       invite_sent_label:     "دعوت‌نامه ارسال شد ✓",
       error_prefix:          "خطا",

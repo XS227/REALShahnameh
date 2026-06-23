@@ -12,4 +12,5 @@ venv/
 *.db
 node_modules/
 dist/
+season2/data/ad-callback.log
 

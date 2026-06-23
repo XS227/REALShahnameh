@@ -147,11 +147,11 @@
           style="border-color:rgba(244,197,107,.35);background:linear-gradient(145deg,rgba(12,15,32,.98),rgba(10,8,20,.98));">
           <span class="node" style="background:linear-gradient(135deg,#c8922a,#f4c56b);color:#0a0813;">50</span>
           <h4 style="color:#f4c56b;">${esc(locF(c, 'title'))}</h4>
-          <p style="font-size:11px;color:var(--muted);margin:4px 0 10px;">Complete all three rites to enter the Final Age</p>
+          <p style="font-size:11px;color:var(--muted);margin:4px 0 10px;">${t('finale_gate_sub','Complete all three rites to enter the Final Age')}</p>
           <div style="margin-bottom:10px;">
-            ${row(hasClan,   'Join or create a Clan',              'guild.html',  'Guild')}
-            ${row(hasWallet, 'Link your TON wallet for the airdrop','hakim.html', 'Link wallet')}
-            ${row(totalOffs >= 3, `Make at least 3 offerings (${totalOffs}/3 done)`, 'offerings.html', 'Offerings')}
+            ${row(hasClan,   t('finale_gate_clan','Join or create a Clan'),              'guild.html',  t('airdrop_link_guild','Guild'))}
+            ${row(hasWallet, t('finale_gate_wallet','Link your TON wallet for the airdrop'),'wallet.html', t('airdrop_link_wallet','Link wallet'))}
+            ${row(totalOffs >= 3, t('finale_gate_offerings', { count: totalOffs }), 'offerings.html', t('airdrop_link_offerings','Offerings'))}
           </div>
           <div class="meta">
             <span class="chip" style="background:rgba(244,197,107,.15);color:#f4c56b;border-color:rgba(244,197,107,.3);">⚔ Finale</span>

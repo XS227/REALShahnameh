@@ -966,7 +966,7 @@
     const meter    = document.querySelector('.airdrop-meter');
 
     if (pctEl) pctEl.textContent = pct + '%';
-    if (valEl) valEl.textContent = score.toLocaleString() + ' pts';
+    if (valEl) valEl.textContent = score.toLocaleString() + ' ' + t('pts_suffix', 'pts');
     if (meter) {
       meter.style.background =
         `conic-gradient(var(--gold) ${pct * 3.6}deg, rgba(255,255,255,.06) 0deg)`;
@@ -1025,17 +1025,17 @@
     };
 
     const ageLabel = c.account_age.met
-      ? `Account age: ${c.account_age.days}d ✓ (min ${c.account_age.required}d)`
-      : `Account age: ${c.account_age.days}d / ${c.account_age.required}d required${daysLeft ? ` — ${daysLeft} days left` : ''}`;
-    const offsLabel = `Offerings: ${c.offerings.count || totalOfferings}/${c.offerings.required || 3} made`;
+      ? t('airdrop_account_age_met', { days: c.account_age.days, required: c.account_age.required })
+      : t('airdrop_account_age_unmet', { days: c.account_age.days, required: c.account_age.required, daysLeft: daysLeft || 0 });
+    const offsLabel = t('airdrop_offerings_made', { count: c.offerings.count || totalOfferings, required: c.offerings.required || 3 });
 
     el.innerHTML =
       row(c.account_age.met, ageLabel, null, '') +
-      row(c.ch50_done.met,   'Chapter 50 (Ages-End) completed', 'learn.html', 'Learn') +
-      row(c.clan.met,        'Clan joined', 'guild.html', 'Guild') +
-      row(c.wallet.met,      'TON wallet linked', 'hakim.html', 'Link wallet') +
-      row(c.offerings.met,   offsLabel, 'offerings.html', 'Offerings') +
-      row(c.no_abuse.met,    'Account standing: clean', null, '');
+      row(c.ch50_done.met,   t('airdrop_ch50_done', 'Chapter 50 (Ages-End) completed'), 'learn.html', t('airdrop_link_learn', 'Learn')) +
+      row(c.clan.met,        t('airdrop_clan_joined', 'Clan joined'), 'guild.html', t('airdrop_link_guild', 'Guild')) +
+      row(c.wallet.met,      t('airdrop_wallet_linked', 'TON wallet linked'), 'wallet.html', t('airdrop_link_wallet', 'Link wallet')) +
+      row(c.offerings.met,   offsLabel, 'offerings.html', t('airdrop_link_offerings', 'Offerings')) +
+      row(c.no_abuse.met,    t('airdrop_account_standing', 'Account standing: clean'), null, '');
   };
 
   /* ── Watch & Earn (single-tier) ─────────────────────────────────────── */
