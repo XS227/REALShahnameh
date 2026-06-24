@@ -11,6 +11,7 @@
     updateQuests: '/api/season2/user/update-quests',
     syncBalance:  '/api/season2/user/sync-balance',
     userHeroes:   '/api/season2/user/heroes',
+    reconcileChapterRewards: '/api/season2/user/reconcile-chapter-rewards',
   };
 
   const tgUser = () => {
@@ -332,6 +333,15 @@
       const chapters = {};
       toPush.forEach(s => { chapters[s] = chapterSnapshot(s); });
       post(CH_API.save, { telegram_id: String(u.id), chapters, items, skins });
+    }
+
+    /* Forward-fix for the chapter-card-reward gap: grantChapterCard() in
+       chapter.js only fires for the page currently open, so chapters that
+       arrived via the migration above (or from another device) never get
+       their hero card without this sweep. Cheap no-op once nothing's missing. */
+    const reconcile = await post(API.reconcileChapterRewards, { telegram_id: String(u.id) });
+    if (reconcile && reconcile.status === 1 && reconcile.granted && reconcile.granted.length) {
+      await syncHeroes();
     }
 
     try { window.dispatchEvent(new CustomEvent('real:chapters:synced')); } catch (_) {}
