@@ -326,6 +326,7 @@
       quiz_passed: "Гузашт ✓",
       quiz_failed: "Ҳоло не — Дубора кӯшиш кун",
       quiz_retry_btn: "Дубора кӯшиш кун",
+      quiz_network_error: "Хатои пайвастшавӣ — дубора кӯшиш кунед",
       difficulty_easy: "ОСОН",
       difficulty_medium: "МИЁНА",
       difficulty_hard: "ДУШВОР",

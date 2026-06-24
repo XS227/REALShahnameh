@@ -328,6 +328,7 @@
       quiz_passed: "قبول شد ✓",
       quiz_failed: "هنوز نه — دوباره امتحان کن",
       quiz_retry_btn: "دوباره امتحان کن",
+      quiz_network_error: "خطای اتصال — دوباره تلاش کنید",
       difficulty_easy: "آسان",
       difficulty_medium: "متوسط",
       difficulty_hard: "دشوار",

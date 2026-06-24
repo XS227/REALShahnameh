@@ -320,6 +320,7 @@
       quiz_passed: "Passed ✓",
       quiz_failed: "Not Yet — Try Again",
       quiz_retry_btn: "Try Again",
+      quiz_network_error: "Connection error — try again",
       difficulty_easy: "EASY",
       difficulty_medium: "MEDIUM",
       difficulty_hard: "HARD",

@@ -85,6 +85,47 @@
     catch { /* nop */ }
   };
 
+  const tgId = () => {
+    try {
+      const u = tg && tg.initDataUnsafe && tg.initDataUnsafe.user;
+      return (u && u.id) ? String(u.id) : null;
+    } catch { return null; }
+  };
+
+  /* Grade one answer server-side (lib/quizCatalog.js on the backend is the
+     source of truth now — see SECURITY note on /user/quiz/answer). Returns
+     null on network failure so the caller can refuse to advance rather than
+     fall back to trusting the client's own correctness check. */
+  const submitQuizAnswer = async (questionId, pickedIndex) => {
+    const id = tgId();
+    if (!id) return null;
+    try {
+      const r = await fetch("/season2/user/quiz/answer", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ telegram_id: id, slug: SLUG, question_id: questionId, picked_index: pickedIndex }),
+      });
+      if (!r.ok) return null;
+      const data = await r.json();
+      return (data && data.status === 1) ? data : null;
+    } catch { return null; }
+  };
+
+  const resetQuizTier = async (tier) => {
+    const id = tgId();
+    if (!id) return false;
+    try {
+      const r = await fetch("/season2/user/quiz/reset-tier", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ telegram_id: id, slug: SLUG, tier }),
+      });
+      if (!r.ok) return false;
+      const data = await r.json();
+      return !!(data && data.status === 1);
+    } catch { return false; }
+  };
+
   /* Module-level chapter metadata — populated once the catalog fetch resolves */
   let _chapterMeta = null;
   let _quizzes = [];
@@ -991,8 +1032,15 @@
           render();
         });
         const retryBtn = $(".quiz-retry-btn", host);
-        if (retryBtn) retryBtn.addEventListener("click", () => {
-          progress.quiz[activeTier] = { idx: 0, correct: [], wrong: [], done: false, locked: activeTier !== "easy" };
+        if (retryBtn) retryBtn.addEventListener("click", async () => {
+          retryBtn.disabled = true;
+          const ok = await resetQuizTier(activeTier);
+          if (!ok) {
+            retryBtn.disabled = false;
+            toast(tr("quiz_network_error"));
+            return;
+          }
+          progress.quiz[activeTier] = { idx: 0, correct: [], wrong: [], done: false, locked: progress.quiz[activeTier].locked };
           saveProgress();
           syncProgEl();
           render();
@@ -1037,12 +1085,23 @@
       wireTierTabs();
 
       $$(".quiz-opt", host).forEach(btn => {
-        btn.addEventListener("click", () => {
+        btn.addEventListener("click", async () => {
           /* Prevent double-answer */
           $$(".quiz-opt", host).forEach(b => { b.disabled = true; });
 
-          const picked  = parseInt(btn.getAttribute("data-opt"), 10);
-          const correct = picked === q.correct_answer;
+          const picked = parseInt(btn.getAttribute("data-opt"), 10);
+
+          /* Server grades the answer now (lib/quizCatalog.js) — the client
+             no longer self-reports correctness/done/passed. On network
+             failure, re-enable the buttons and let the player retry the
+             click rather than silently falling back to local trust. */
+          const result = await submitQuizAnswer(q.id, picked);
+          if (!result) {
+            $$(".quiz-opt", host).forEach(b => { b.disabled = false; });
+            toast(tr("quiz_network_error"));
+            return;
+          }
+          const { correct } = result;
 
           if (correct) {
             tp.correct = Array.from(new Set([...(tp.correct || []), q.id]));
@@ -1060,13 +1119,13 @@
             haptic("warning");
           }
 
-          /* Always advance — no per-answer colour feedback */
-          const next = (tp.idx || 0) + 1;
-          if (next >= qs.length) {
-            tp.done  = true;
-            tp.idx   = next;
-            const nC = (tp.correct || []).filter(id => qs.some(x => x.id === id)).length;
-            tp.passed = nC / qs.length >= 0.6;
+          /* Always advance — no per-answer colour feedback. done/passed/idx
+             come from the server's verdict, not a local recomputation. */
+          tp.idx    = result.idx;
+          tp.done   = result.done;
+          tp.passed = result.passed;
+          const next = tp.idx;
+          if (tp.done) {
             saveProgress();
             try { localStorage.setItem(`real_quiz_${SLUG}_${activeTier}`, tp.passed ? "passed" : "attempted"); } catch {}
             if (activeTier === "easy") {
@@ -1083,7 +1142,6 @@
             }
             if (progEl) progEl.textContent = `${fmtNum(next)} / ${fmtNum(qs.length)}`;
           } else {
-            tp.idx = next;
             saveProgress();
             if (progEl) progEl.textContent = `${fmtNum(next)} / ${fmtNum(qs.length)}`;
           }
