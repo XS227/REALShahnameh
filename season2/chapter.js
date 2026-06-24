@@ -113,10 +113,11 @@
      server. Debounced so rapid scene/quiz updates batch into one POST. */
   let _pushTimer = null;
   const pushProgress = (immediate) => {
-    if (!(window.RealSync && window.RealSync.saveChapterProgress)) return;
+    if (!(window.RealSync && window.RealSync.saveChapterProgress)) return Promise.resolve();
     clearTimeout(_pushTimer);
-    if (immediate) { window.RealSync.saveChapterProgress(SLUG); return; }
+    if (immediate) return window.RealSync.saveChapterProgress(SLUG);
     _pushTimer = setTimeout(() => window.RealSync.saveChapterProgress(SLUG), 1200);
+    return Promise.resolve();
   };
   const _flushPendingPush = () => {
     if (_pushTimer) { clearTimeout(_pushTimer); _pushTimer = null;
@@ -556,11 +557,14 @@
   };
 
   /* Called when player clicks the boss challenge CTA with all requirements met.
-     Sets the chapter-done flag and grants completion rewards (idempotent). */
-  const markChapterComplete = () => {
+     Sets the chapter-done flag and grants completion rewards (idempotent).
+     Pushes done:true to the server BEFORE granting rewards: grant-hero now
+     requires the server to already see this chapter as done (security fix
+     2026-06-24), so the card request must not race ahead of the save. */
+  const markChapterComplete = async () => {
     try { localStorage.setItem(`real_chapter_done_${SLUG}`, "1"); } catch {}
+    await pushProgress(true);
     grantChapterCompletionRewards();
-    pushProgress(true);
   };
 
   /* Hero cards granted for free upon beating a chapter's Final Encounter */

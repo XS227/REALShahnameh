@@ -348,11 +348,14 @@
     _resolveChReady(data);
   };
 
-  /* Push one chapter (plus items/skins) — fire-and-forget, keepalive */
+  /* Push one chapter (plus items/skins). Returns the request promise so
+     callers that need the server to have committed done:true first (e.g.
+     before requesting a chapter's hero-card reward, which the backend now
+     validates against ChapterProgress) can await it. */
   const saveChapterProgress = (slug) => {
     const u = tgUser();
-    if (!u || !u.id || !slug) return;
-    post(CH_API.save, {
+    if (!u || !u.id || !slug) return Promise.resolve(null);
+    return post(CH_API.save, {
       telegram_id: String(u.id),
       chapters: { [slug]: chapterSnapshot(slug) },
       items: _lsJSON('real_items_v1', '{}'),
