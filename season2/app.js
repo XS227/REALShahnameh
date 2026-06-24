@@ -136,6 +136,7 @@
     get en() { return (window.RealI18NLocales && window.RealI18NLocales.en) || {}; },
     get fa() { return (window.RealI18NLocales && window.RealI18NLocales.fa) || {}; },
     get tg() { return (window.RealI18NLocales && window.RealI18NLocales.tg) || {}; },
+    get ru() { return (window.RealI18NLocales && window.RealI18NLocales.ru) || {}; },
   }
 
   const LS = {
@@ -499,10 +500,11 @@
         username: tgUser.username || tgUser.first_name || null
       });
       // Honor Telegram's UI language hint when the user hasn't picked one yet.
-      // Telegram uses "fa" for Persian and "tg" for Tajik (per ISO 639-1).
+      // Telegram uses "fa" for Persian, "tg" for Tajik, "ru" for Russian (ISO 639-1).
       if (!Storage.read(LS.LANG)) {
         if (tgUser.language_code === "fa") Player.set({ language: "fa" });
         else if (tgUser.language_code === "tg") Player.set({ language: "tg" });
+        else if (tgUser.language_code === "ru") Player.set({ language: "ru" });
       }
     }
   } catch (err) {
@@ -511,7 +513,7 @@
 
   const getLang = () => {
     const l = Storage.read(LS.LANG);
-    return (l === "fa" || l === "en" || l === "tg") ? l : null;
+    return (l === "fa" || l === "en" || l === "tg" || l === "ru") ? l : null;
   };
   const getPath = () => {
     const p = Storage.read(LS.PATH);
@@ -529,8 +531,8 @@
 
   const applyLang = (lang) => {
     const html = document.documentElement;
-    // Persian is RTL; Tajik is Cyrillic LTR; English is LTR.
-    html.setAttribute("lang", lang === "fa" ? "fa" : (lang === "tg" ? "tg" : "en"));
+    // Persian is RTL; Tajik and Russian are Cyrillic LTR; English is LTR.
+    html.setAttribute("lang", lang === "fa" ? "fa" : (lang === "tg" ? "tg" : (lang === "ru" ? "ru" : "en")));
     html.setAttribute("dir",  lang === "fa" ? "rtl" : "ltr");
 
     // text content
@@ -605,6 +607,11 @@
               <span class="ob-flag">🇹🇯</span>
               <span class="ob-card-title">Тоҷикӣ</span>
               <span class="ob-card-sub">Идома бо забони тоҷикӣ</span>
+            </button>
+            <button class="ob-card" data-pick-lang="ru">
+              <span class="ob-flag">🇷🇺</span>
+              <span class="ob-card-title">Русский</span>
+              <span class="ob-card-sub">Продолжить на русском</span>
             </button>
           </div>
         </div>
@@ -773,6 +780,7 @@
             <button class="hmenu-pick" data-set-lang="en">English</button>
             <button class="hmenu-pick" data-set-lang="fa" lang="fa" dir="rtl">فارسی</button>
             <button class="hmenu-pick" data-set-lang="tg">Тоҷикӣ</button>
+            <button class="hmenu-pick" data-set-lang="ru">Русский</button>
           </div>
           <div class="hmenu-settings-label" style="margin-top:10px;" data-sp-s1-label>Demo</div>
           <button class="hmenu-pick sp-toggle" data-sp-s1-toggle style="width:100%; text-align:left; justify-content:space-between; display:flex; align-items:center;">

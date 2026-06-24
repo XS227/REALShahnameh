@@ -37,6 +37,7 @@
       label:    'Death of Alexander the Great — his empire fractures',
       label_fa: 'مرگ اسکندر کبیر — امپراتوری او تکه‌تکه می‌شود',
       label_tg: 'Марги Искандари Кабир — Империяи ӯ пора мешавад',
+      label_ru: 'Смерть Александра Великого — его империя распадается',
       icon: '⚔',
     },
     'ashkanian-age': {
@@ -44,6 +45,7 @@
       label:    'Birth of Jesus Christ — during the Arsacid reign',
       label_fa: 'تولد حضرت عیسی مسیح — در دوران حکومت اشکانیان',
       label_tg: 'Таваллуди Исо Масеҳ — дар замони ҳукмронии Аршакиён',
+      label_ru: 'Рождение Иисуса Христа — во времена правления Аршакидов',
       icon: '✦',
     },
     'anushirvan': {
@@ -51,6 +53,7 @@
       label:    'Birth of Prophet Muhammad — during the reign of Anushirvan',
       label_fa: 'تولد پیامبر اسلام محمد (ص) — در دوران سلطنت انوشیروان',
       label_tg: 'Таваллуди Паёмбари Ислом Муҳаммад (с) — дар замони салтанати Анӯшервон',
+      label_ru: 'Рождение пророка Мухаммада — во времена правления Ануширвана',
       icon: '✦',
     },
     'hormuz': {
@@ -58,6 +61,7 @@
       label:    'First revelation of the Quran — rise of Islam',
       label_fa: 'اولین وحی قرآن — آغاز اسلام',
       label_tg: 'Аввалин ваҳйи Қуръон — оғози Ислом',
+      label_ru: 'Первое откровение Корана — зарождение ислама',
       icon: '✦',
     },
     'shirin': {
@@ -65,6 +69,7 @@
       label:    'Death of Prophet Muhammad — the Islamic Caliphate expands',
       label_fa: 'رحلت پیامبر محمد (ص) — خلافت اسلامی گسترش می‌یابد',
       label_tg: 'Вафоти Паёмбар Муҳаммад (с) — Хилофати Исломӣ густариш меёбад',
+      label_ru: 'Смерть пророка Мухаммада — расширение Исламского халифата',
       icon: '✦',
     },
     'arab-conquest': {
@@ -72,6 +77,7 @@
       label:    'End of the Sasanian Empire — Iran enters a new age',
       label_fa: 'پایان امپراتوری ساسانی — ایران به عصر جدیدی پا می‌گذارد',
       label_tg: 'Охири Империяи Сосонӣ — Эрон ба асри нав қадам мегузорад',
+      label_ru: 'Конец империи Сасанидов — Иран вступает в новую эпоху',
       icon: '✦',
     },
   };
@@ -80,6 +86,7 @@
     const lang = window.RealI18N && window.RealI18N.getLang ? window.RealI18N.getLang() : 'en';
     const label = (lang === 'fa' && m.label_fa) ? m.label_fa
                 : (lang === 'tg' && m.label_tg) ? m.label_tg
+                : (lang === 'ru' && m.label_ru) ? m.label_ru
                 : m.label;
     return `
       <div class="tm-marker" aria-hidden="true">

@@ -121,7 +121,7 @@
   const getLang = () => {
     try {
       const v = localStorage.getItem("real_lang") || localStorage.getItem("shahnameh_lang");
-      return (v === "fa" || v === "tg" || v === "en") ? v : "en";
+      return (v === "fa" || v === "tg" || v === "en" || v === "ru") ? v : "en";
     } catch { return "en"; }
   };
 

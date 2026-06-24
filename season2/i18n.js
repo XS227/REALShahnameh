@@ -1,19 +1,20 @@
 /* ==========================================================================
    REAL Shahnameh — i18n RUNTIME
-   Translation DATA lives in season2/i18n/{en,fa,tg}.js (each registers
+   Translation DATA lives in season2/i18n/{en,fa,tg,ru}.js (each registers
    window.RealI18NLocales[lang] = { key: value, ... } synchronously).
    This file is the runtime: t(), applyLocale(), getLang(), formatNumber().
    Load order on every page:
        <script src="i18n/en.js"></script>
        <script src="i18n/fa.js"></script>
        <script src="i18n/tg.js"></script>
+       <script src="i18n/ru.js"></script>
        <script src="i18n.js"></script>            ← (this file)
    ========================================================================== */
 (() => {
   "use strict";
 
   const LANG_LS = "real_lang";
-  const SUPPORTED = ["en", "fa", "tg"];
+  const SUPPORTED = ["en", "fa", "tg", "ru"];
   const isSupported = (l) => SUPPORTED.indexOf(l) !== -1;
 
   const getLang = () => {
@@ -50,7 +51,7 @@
     const lang  = getLang();
     const dict  = (LOCALES()[lang] || (LOCALES().en) || {});
     const isFaLang = lang === "fa";
-    const useFull  = lang === "fa" || lang === "tg"; // word suffix with space
+    const useFull  = lang === "fa" || lang === "tg" || lang === "ru"; // word suffix with space
 
     let val, sfx;
     if (n >= 1_000_000) {
@@ -102,13 +103,13 @@
     const dicts = LOCALES();
     const dict = dicts[lang] || dicts.en || {};
     const isFa = (lang === "fa");
-    const isRtl = isFa; // Tajik is Cyrillic LTR
+    const isRtl = isFa; // Tajik and Russian are Cyrillic LTR
 
     /* Sync <html lang>/<html dir>. app.js also does this, but pages that
        only load i18n.js (e.g. intro.html) rely on us. */
     const htmlEl = document.documentElement;
     if (htmlEl) {
-      htmlEl.setAttribute("lang", isFa ? "fa" : (lang === "tg" ? "tg" : "en"));
+      htmlEl.setAttribute("lang", isFa ? "fa" : (lang === "tg" ? "tg" : (lang === "ru" ? "ru" : "en")));
       htmlEl.setAttribute("dir", isRtl ? "rtl" : "ltr");
     }
 
@@ -199,6 +200,19 @@
         "intro.html":  "REAL Шоҳнома",
         "chapter.html":"REAL Шоҳнома — Боб",
       },
+      ru: {
+        "tap.html":    "REAL Шахнаме — Кузница Парса",
+        "learn.html":  "REAL Шахнаме — Обучение",
+        "heroes.html": "REAL Шахнаме — Герои",
+        "earn.html":   "REAL Шахнаме — Задания и награды",
+        "social.html": "REAL Шахнаме — Сообщество",
+        "hakim.html":          "REAL Шахнаме — Хаким",
+        "regions.html":        "REAL Шахнаме — Области Парса",
+        "historical-sites.html": "REAL Шахнаме — Исторические места",
+        "index.html":  "REAL Шахнаме",
+        "intro.html":  "REAL Шахнаме",
+        "chapter.html":"REAL Шахнаме — Глава",
+      },
     };
     if (titleByLang[lang] && titleByLang[lang][page]) {
       document.title = titleByLang[lang][page];
@@ -212,6 +226,7 @@
     get en()  { return (LOCALES().en) || {}; },
     get fa()  { return (LOCALES().fa) || {}; },
     get tg()  { return (LOCALES().tg) || {}; },
+    get ru()  { return (LOCALES().ru) || {}; },
   };
 
   /* pickLocalized(val) — val may be a plain string OR an {en,fa,tg} object.
