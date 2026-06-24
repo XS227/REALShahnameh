@@ -7,6 +7,17 @@
 (() => {
   "use strict";
 
+  /* Lightweight ru-only lookup helpers. This file predates the i18n system
+     and renders everything via hardcoded English strings; rather than
+     re-architect it, we add `_ru` fields next to the English ones and use
+     these two helpers to pick the right one. en/fa/tg behavior is unchanged. */
+  const cLang = () => (window.RealI18N && window.RealI18N.getLang) ? window.RealI18N.getLang() : "en";
+  const cT = (en, ru) => (cLang() === "ru" && ru) ? ru : en;
+  const cF = (obj, field) => {
+    if (cLang() === "ru" && obj[field + "_ru"] != null) return obj[field + "_ru"];
+    return obj[field];
+  };
+
   /* ══════════════════════════════════════════════════════════════
      DUST PARTICLE CANVAS — ambient floating motes
      Subtle: 14 particles max, every-other-frame, pauses when hidden
@@ -94,16 +105,26 @@
      ══════════════════════════════════════════════════════════════ */
 
   const REVEALS = {
-    1:  { num: "I",    title: "Keyumars — The First King",       quote: "From the mountain top, a man looked down and saw what civilization could be." },
-    2:  { num: "II",   title: "Hushang — The Spark of Fire",     quote: "When darkness is struck against itself, light is born." },
-    3:  { num: "III",  title: "Tahmuras — Binder of Demons",     quote: "Even the darkest knowledge, wielded with justice, becomes civilization." },
-    4:  { num: "IV",   title: "Jamshid — The Golden Throne",     quote: "Power without humility invites the shadow." },
-    5:  { num: "V",    title: "Zahhak — The Serpent King",       quote: "A tyrant must feed on his people to keep himself alive." },
-    6:  { num: "VI",   title: "Fereydun — The Liberator",        quote: "A blacksmith's apron became the banner of a nation's freedom." },
-    7:  { num: "VII",  title: "Zal — The Albino Prince",         quote: "The Simorgh raised what the mountain had cast away." },
-    8:  { num: "VIII", title: "Rostam — Champion of Pars",       quote: "Strength carries its own burden. The greatest bear it silently." },
-    9:  { num: "IX",   title: "Sohrab — Son of the Storm",       quote: "The cruelest battles are fought without knowing who stands before us." },
-    10: { num: "X",    title: "Esfandiyar — The Brazen-Bodied",  quote: "Invulnerability is not strength. The eyes remain open always." },
+    1:  { num: "I",    title: "Keyumars — The First King",       quote: "From the mountain top, a man looked down and saw what civilization could be.",
+          title_ru: "Кеюмарс — Первый царь",            quote_ru: "С вершины горы человек посмотрел вниз и увидел, чем могла бы стать цивилизация." },
+    2:  { num: "II",   title: "Hushang — The Spark of Fire",     quote: "When darkness is struck against itself, light is born.",
+          title_ru: "Хушанг — Искра огня",               quote_ru: "Когда тьма ударяется о саму себя, рождается свет." },
+    3:  { num: "III",  title: "Tahmuras — Binder of Demons",     quote: "Even the darkest knowledge, wielded with justice, becomes civilization.",
+          title_ru: "Тахмурас — Связыватель демонов",   quote_ru: "Даже самое тёмное знание, направленное справедливостью, становится цивилизацией." },
+    4:  { num: "IV",   title: "Jamshid — The Golden Throne",     quote: "Power without humility invites the shadow.",
+          title_ru: "Джамшид — Золотой трон",             quote_ru: "Власть без смирения приглашает тень." },
+    5:  { num: "V",    title: "Zahhak — The Serpent King",       quote: "A tyrant must feed on his people to keep himself alive.",
+          title_ru: "Заххак — Царь-змей",                  quote_ru: "Тиран должен питаться своим народом, чтобы оставаться в живых." },
+    6:  { num: "VI",   title: "Fereydun — The Liberator",        quote: "A blacksmith's apron became the banner of a nation's freedom.",
+          title_ru: "Феридун — Освободитель",             quote_ru: "Кузнечный передник стал знаменем свободы народа." },
+    7:  { num: "VII",  title: "Zal — The Albino Prince",         quote: "The Simorgh raised what the mountain had cast away.",
+          title_ru: "Заль — Принц-альбинос",              quote_ru: "Симург вырастил то, что гора отвергла." },
+    8:  { num: "VIII", title: "Rostam — Champion of Pars",       quote: "Strength carries its own burden. The greatest bear it silently.",
+          title_ru: "Рустам — Чемпион Парса",             quote_ru: "Сила несёт собственное бремя. Величайшие несут его молча." },
+    9:  { num: "IX",   title: "Sohrab — Son of the Storm",       quote: "The cruelest battles are fought without knowing who stands before us.",
+          title_ru: "Сухраб — Сын бури",                  quote_ru: "Самые жестокие битвы ведутся, не зная, кто стоит перед нами." },
+    10: { num: "X",    title: "Esfandiyar — The Brazen-Bodied",  quote: "Invulnerability is not strength. The eyes remain open always.",
+          title_ru: "Эсфандияр — Медянотелый",            quote_ru: "Неуязвимость — не сила. Глаза всегда остаются открытыми." },
   };
 
   const showChapterReveal = (id, onDone) => {
@@ -117,11 +138,11 @@
     el.innerHTML = `
       <div class="co-bg" aria-hidden="true"></div>
       <div class="co-content">
-        <div class="co-kicker">Chapter ${data.num}</div>
+        <div class="co-kicker">${cT("Chapter", "Глава")} ${data.num}</div>
         <div class="co-rule" aria-hidden="true"></div>
-        <div class="co-title">${data.title}</div>
-        <div class="co-quote">"${data.quote}"</div>
-        <button class="co-skip">Continue ›</button>
+        <div class="co-title">${cF(data, "title")}</div>
+        <div class="co-quote">"${cF(data, "quote")}"</div>
+        <button class="co-skip">${cT("Continue ›", "Далее ›")}</button>
       </div>
     `;
     document.body.appendChild(el);
@@ -166,7 +187,7 @@
       <canvas class="ha-canvas" aria-hidden="true"></canvas>
       <div class="ha-content">
         <div class="ha-verse">بنام خداوند جان و خرد</div>
-        <div class="ha-verse-trans">In the name of the Lord of life and wisdom</div>
+        <div class="ha-verse-trans">${cT("In the name of the Lord of life and wisdom", "Во имя Господа жизни и разума")}</div>
         <div class="ha-orb-wrap">
           <div class="ha-orb">
             <img src="/assets/hakim.png" alt="" onerror="this.style.display='none'">
@@ -175,7 +196,7 @@
         </div>
         <div class="ha-name">Hakim</div>
         <div class="ha-quote"></div>
-        <button class="ha-skip">Enter the Chronicle ›</button>
+        <button class="ha-skip">${cT("Enter the Chronicle ›", "Войти в летопись ›")}</button>
       </div>
     `;
     document.body.appendChild(el);
@@ -217,7 +238,8 @@
     requestAnimationFrame(() => el.classList.add("ha-visible"));
 
     const opening = window.HakimPersonality ? window.HakimPersonality.getOpening()
-      : "Sixty thousand verses, and still the chronicle has room for your question. I am listening.";
+      : cT("Sixty thousand verses, and still the chronicle has room for your question. I am listening.",
+           "Шестьдесят тысяч стихов, и летопись всё ещё находит место для твоего вопроса. Я слушаю.");
 
     const quoteEl = el.querySelector(".ha-quote");
     let charIdx = 0;
@@ -256,13 +278,13 @@
       <canvas class="ld-canvas" aria-hidden="true"></canvas>
       <div class="ld-content">
         <div class="ld-glow" aria-hidden="true"></div>
-        <div class="ld-kicker">✦ Memory Recovered</div>
-        <div class="ld-title">${title || "Ancient Lore"}</div>
+        <div class="ld-kicker">✦ ${cT("Memory Recovered", "Память восстановлена")}</div>
+        <div class="ld-title">${title || cT("Ancient Lore", "Древнее знание")}</div>
         <div class="ld-hakim">
           <span class="ld-hakim-name">Hakim</span>
           <span class="ld-hakim-words"></span>
         </div>
-        <button class="ld-skip">Preserve This Memory ›</button>
+        <button class="ld-skip">${cT("Preserve This Memory ›", "Сохранить эту память ›")}</button>
       </div>
     `;
     document.body.appendChild(el);
@@ -301,7 +323,8 @@
 
     requestAnimationFrame(() => el.classList.add("ld-visible"));
 
-    const whisper = "A forgotten memory awakens. The chronicle grows stronger within you.";
+    const whisper = cT("A forgotten memory awakens. The chronicle grows stronger within you.",
+                        "Забытая память пробуждается. Летопись становится сильнее внутри тебя.");
     const wordsEl = el.querySelector(".ld-hakim-words");
     let wIdx = 0;
     const typeWhisper = () => {
@@ -343,10 +366,10 @@
       <div class="dm-mountain" aria-hidden="true"></div>
       <div class="dm-fog-layer" aria-hidden="true"></div>
       <div class="dm-content">
-        <div class="dm-kicker">Mount Damavand</div>
-        <div class="dm-subtitle">The World's Prison</div>
+        <div class="dm-kicker">${cT("Mount Damavand", "Гора Дамаванд")}</div>
+        <div class="dm-subtitle">${cT("The World's Prison", "Тюрьма мира")}</div>
         <div class="dm-narration"></div>
-        <button class="dm-skip">The mountain remembers ›</button>
+        <button class="dm-skip">${cT("The mountain remembers ›", "Гора помнит ›")}</button>
       </div>
     `;
     document.body.appendChild(el);
@@ -388,9 +411,10 @@
 
     requestAnimationFrame(() => el.classList.add("dm-visible"));
 
-    const narration = window.HakimPersonality && window.HakimPersonality.WISDOM.damavand
+    const narration = (window.HakimPersonality && window.HakimPersonality.WISDOM.damavand && cLang() !== "ru")
       ? window.HakimPersonality.WISDOM.damavand[0]
-      : "Damavand is the world's conscience — it imprisons what cannot be destroyed. Zahhak lives still, chained within the volcanic rock. Every eruption is his fury. Every long silence is the mountain holding him.";
+      : cT("Damavand is the world's conscience — it imprisons what cannot be destroyed. Zahhak lives still, chained within the volcanic rock. Every eruption is his fury. Every long silence is the mountain holding him.",
+           "Дамаванд — совесть мира: он заключает то, что нельзя уничтожить. Заххак всё ещё жив, закован в вулканической скале. Каждое извержение — его гнев. Каждое долгое молчание — гора, что его держит.");
 
     const narEl = el.querySelector(".dm-narration");
     let nIdx = 0;
@@ -432,6 +456,19 @@
     "بنام خداوند جان و خرد",
   ];
 
+  const LORE_WHISPERS_RU = [
+    "توانا بود هر که دانا بود",
+    "Огонь не умер. Он ждёт.",
+    "Царь без памяти — царство без стен.",
+    "Шестьдесят тысяч стихов. Каждое слово — камень в стене цивилизации.",
+    "Симург наблюдает с мирового древа.",
+    "Фарр не принадлежит царю. Царь принадлежит Фарру.",
+    "Даже Рустам плакал.",
+    "Власть без смирения — меч, обращённый внутрь.",
+    "Летопись помнит то, что забывает время.",
+    "بنام خداوند جان و خرد",
+  ];
+
   const WHISPER_PAGES = ["learn.html", "chapter.html", "dynasty.html", "historical-sites.html"];
 
   const initLoreWhispers = () => {
@@ -443,7 +480,8 @@
     el.setAttribute("aria-hidden", "true");
     document.body.appendChild(el);
 
-    let idx = Math.floor(Math.random() * LORE_WHISPERS.length);
+    const whispers = cLang() === "ru" ? LORE_WHISPERS_RU : LORE_WHISPERS;
+    let idx = Math.floor(Math.random() * whispers.length);
     let visible = false;
 
     const cycle = () => {
@@ -452,11 +490,11 @@
         el.classList.add("lore-whisper-out");
         setTimeout(() => {
           visible = false;
-          idx = (idx + 1) % LORE_WHISPERS.length;
+          idx = (idx + 1) % whispers.length;
           setTimeout(cycle, 18000 + Math.random() * 12000);
         }, 1800);
       } else {
-        el.textContent = LORE_WHISPERS[idx];
+        el.textContent = whispers[idx];
         el.classList.remove("lore-whisper-out");
         el.classList.add("lore-whisper-in");
         visible = true;
@@ -491,52 +529,67 @@
 
   const HERO_REVEALS = {
     zahhak: {
-      name: "Zahhak",
-      era: "The Serpent King",
+      name: "Zahhak", name_ru: "Заххак",
+      era: "The Serpent King", era_ru: "Царь-змей",
       silhouette: "🐍",
       quote: "Some kings are crowned by fear.",
+      quote_ru: "Некоторых царей коронует страх.",
       subQuote: "A thousand years of darkness. And the world forgot what light tasted like.",
+      subQuote_ru: "Тысяча лет тьмы. И мир забыл вкус света.",
       hakimComment: "Zahhak did not begin as evil. He began as a man who made one choice, then another, and then one more. Study this king carefully.",
+      hakimComment_ru: "Заххак не начинался злом. Он начинался человеком, что сделал один выбор, потом другой, потом ещё один. Изучи этого царя внимательно.",
       color: "crimson",
       accent: "rgba(255,82,103,.35)",
     },
     fereydun: {
-      name: "Fereydun",
-      era: "The Liberator",
+      name: "Fereydun", name_ru: "Феридун",
+      era: "The Liberator", era_ru: "Освободитель",
       silhouette: "⚖",
       quote: "Even darkness remembers the coming of justice.",
+      quote_ru: "Даже тьма помнит приход справедливости.",
       subQuote: "He was raised in hiding. He emerged as a reckoning.",
+      subQuote_ru: "Он рос в укрытии. Он явился как расплата.",
       hakimComment: "Fereydun teaches patience. The world was not freed in a single moment — it was prepared for over years of silence and endurance.",
+      hakimComment_ru: "Феридун учит терпению. Мир не был освобождён в один момент — он был подготовлен годами молчания и стойкости.",
       color: "jade",
       accent: "rgba(83,215,156,.3)",
     },
     rostam: {
-      name: "Rostam",
-      era: "Champion of Pars",
+      name: "Rostam", name_ru: "Рустам",
+      era: "Champion of Pars", era_ru: "Чемпион Парса",
       silhouette: "⚔",
       quote: "The burden of strength is heavier than iron.",
+      quote_ru: "Бремя силы тяжелее железа.",
       subQuote: "He carried the world. He asked for nothing in return. He lost everything.",
+      subQuote_ru: "Он нёс мир. Он не просил ничего в ответ. Он потерял всё.",
       hakimComment: "Rostam is not a story of victory. He is the chronicle's greatest question: what does strength cost a man when the world will not let him rest?",
+      hakimComment_ru: "Рустам — не история победы. Он величайший вопрос летописи: чего стоит сила человеку, когда мир не даёт ему покоя?",
       color: "gold",
       accent: "rgba(244,197,107,.35)",
     },
     zal: {
-      name: "Zal",
-      era: "The Albino Prince",
+      name: "Zal", name_ru: "Заль",
+      era: "The Albino Prince", era_ru: "Принц-альбинос",
       silhouette: "🪶",
       quote: "What the mountain casts away, the Simorgh raises.",
+      quote_ru: "То, что гора отвергает, Симург воспитывает.",
       subQuote: "Born white as snow. Cast into the wilderness. Raised by the world's wisest bird.",
+      subQuote_ru: "Рождён белым, как снег. Брошен в дикую местность. Воспитан мудрейшей птицей мира.",
       hakimComment: "Zal is proof that the chronicle does not abandon the abandoned. He who is cast aside becomes the father of the greatest warrior in Persian history.",
+      hakimComment_ru: "Заль — доказательство, что летопись не оставляет оставленных. Тот, кого отвергли, становится отцом величайшего воина персидской истории.",
       color: "violet",
       accent: "rgba(140,109,255,.35)",
     },
     jamshid: {
-      name: "Jamshid",
-      era: "The Golden Throne",
+      name: "Jamshid", name_ru: "Джамшид",
+      era: "The Golden Throne", era_ru: "Золотой трон",
       silhouette: "👑",
       quote: "Seven hundred years of light — then one breath of pride.",
+      quote_ru: "Семьсот лет света — затем один вздох гордыни.",
       subQuote: "Farr is patient. But it does not forgive.",
+      subQuote_ru: "Фарр терпелив. Но он не прощает.",
       hakimComment: "Jamshid's tragedy is not weakness. He was the greatest king in an age of kings. His fall teaches what no victory can: the gods are watching for the moment pride erases humility.",
+      hakimComment_ru: "Трагедия Джамшида не слабость. Он был величайшим царём в эпоху царей. Его падение учит тому, чему не может научить никакая победа: боги наблюдают за моментом, когда гордыня стирает смирение.",
       color: "gold",
       accent: "rgba(244,197,107,.3)",
     },
@@ -566,17 +619,17 @@
     el.innerHTML = `
       <div class="hr-bg" style="--hr-accent:${hero.accent};" aria-hidden="true"></div>
       <div class="hr-content">
-        <div class="hr-era">${hero.era}</div>
+        <div class="hr-era">${cF(hero, "era")}</div>
         <div class="hr-silhouette" aria-hidden="true">${hero.silhouette}</div>
-        <div class="hr-name" style="color:${accentColor};">${hero.name}</div>
-        <div class="hr-quote">"${hero.quote}"</div>
-        <div class="hr-sub-quote">${hero.subQuote}</div>
+        <div class="hr-name" style="color:${accentColor};">${cF(hero, "name")}</div>
+        <div class="hr-quote">"${cF(hero, "quote")}"</div>
+        <div class="hr-sub-quote">${cF(hero, "subQuote")}</div>
         <div class="hr-hakim-block">
           <span class="hr-hakim-label">Hakim</span>
           <span class="hr-hakim-text"></span>
         </div>
         <button class="hr-enter" style="border-color:${accentColor}40; color:${accentColor};">
-          Enter Chronicle ›
+          ${cT("Enter Chronicle ›", "Войти в летопись ›")}
         </button>
       </div>
     `;
@@ -585,10 +638,11 @@
     requestAnimationFrame(() => el.classList.add("hr-visible"));
 
     const hakimEl = el.querySelector(".hr-hakim-text");
+    const hakimText = cF(hero, "hakimComment");
     let hIdx = 0;
     const typeHakim = () => {
-      if (hIdx < hero.hakimComment.length) {
-        hakimEl.textContent += hero.hakimComment[hIdx++];
+      if (hIdx < hakimText.length) {
+        hakimEl.textContent += hakimText[hIdx++];
         setTimeout(typeHakim, 18);
       }
     };
