@@ -77,7 +77,7 @@
 
     /* Localized title */
     const title = cat
-      ? (fa ? (cat.title_fa || cat.title) : cat.title)
+      ? locF(cat, "title")
       : (fa ? fb.title_fa : fb.title_en) || activeSlug;
 
     /* Best image: catalog image_url → uploads path → fallback asset */
@@ -547,7 +547,7 @@
         const lv     = data.level || 1;
         return {
           slug:        hero_id,
-          name:        (fa && nameFa) ? nameFa : nameEn,
+          name:        cat ? locF(cat, "name") : ((fa && nameFa) ? nameFa : nameEn),
           image_url:   HERO_IMGS[hero_id] || (cat && (cat.image_url || cat.img)) || null,
           rarity:      (cat && cat.rarity)    || "",
           playerLevel: lv,

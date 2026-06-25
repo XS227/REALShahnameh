@@ -200,11 +200,11 @@
     const cover = (meta && meta.image_url) ||
                   (lore && lore.cover) ||
                   `/assets/images/chapters/chapter-1-${SLUG}-cover.png`;
-    // FA title comes from chapters.json title_fa; EN title from meta.title.
+    // Localized title comes from chapters.json title_<lang>; EN title from meta.title.
     const isFa = curLang() === "fa";
     const titleEn = (meta && meta.title) || (lore && lore.lore_summary && SLUG) || tr("ch_loading");
     const titleFa = (meta && meta.title_fa) || "";
-    const title = (isFa && titleFa) ? titleFa : titleEn;
+    const title = meta ? pick(meta, "title") : titleEn;
     const era = pick(lore && lore.era, "label");
 
     const heroCover = $("[data-hero-cover]");
@@ -1200,9 +1200,7 @@
 
     const isFa = curLang() === "fa";
     eraEl.textContent   = "🕰 " + pick(s, "era");
-    titleEl.textContent = isFa
-      ? (s.title_fa || s.title_en || "")
-      : (s.title_en || "");
+    titleEl.textContent = pick(s, "title") || s.title_en || "";
     // Show the parallel-language title underneath; in FA mode show EN underneath, otherwise FA.
     titleFa.textContent = isFa
       ? (s.title_en || "")
@@ -1356,8 +1354,7 @@
     const reqPrev = chapterMeta && chapterMeta.required_previous_chapter;
     if (reqPrev && localStorage.getItem(`real_chapter_done_${reqPrev}`) !== "1") {
       const prevMeta = allChapters.find(c => c.slug === reqPrev);
-      const prevTitle = (curLang() === "fa" && prevMeta && prevMeta.title_fa)
-        ? prevMeta.title_fa : (prevMeta && prevMeta.title) || reqPrev;
+      const prevTitle = prevMeta ? pick(prevMeta, "title") : reqPrev;
       const gate = document.getElementById("chapter-gate");
       if (gate) {
         gate.hidden = false;
