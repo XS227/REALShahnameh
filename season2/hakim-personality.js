@@ -7,6 +7,8 @@
 (() => {
   "use strict";
 
+  const getLang = () => (window.RealI18N && window.RealI18N.getLang) ? window.RealI18N.getLang() : "en";
+
   /* ── Hakim's voice — opening lines ───────────────────────────── */
   const OPENINGS = [
     "The fire burns low tonight. The verses remain. Ask what you carry.",
@@ -19,12 +21,31 @@
     "In the time of Keyumars, the lions lay down at his feet without being commanded. Speak freely — you are welcome.",
   ];
 
+  const OPENINGS_RU = [
+    "Огонь горит низко этой ночью. Стихи остаются. Спроси, что ты несёшь.",
+    "Тысяча лет прошла с тех пор, как эти цари ходили по земле. Но вот ты здесь — и вот я здесь. Говори.",
+    "Гора хранит молчание, пока её не спросят. Я делаю то же самое.",
+    "Подойди. Даже у Рустама были вопросы, на которые он не мог ответить один.",
+    "Шестьдесят тысяч стихов, и летопись всё ещё находит место для твоего вопроса. Я слушаю.",
+    "Каждое путешествие через Шахнаме начинается с одного вопроса. Задай свой.",
+    "Симург ждёт на мировом древе. Я жду здесь. Мы оба терпеливы. Мы оба готовы.",
+    "Во времена Кеюмарса львы ложились у его ног без приказа. Говори свободно — тебе здесь рады.",
+  ];
+
   const REFLECTIONS = [
     "The Shahnameh always asks: where does power end and wisdom begin?",
     "Consider: what does this story ask of you — not just of the king?",
     "Ferdowsi did not write this scene by accident. What did he see that others missed?",
     "Which figure in this story do you recognize in yourself — and which do you wish you recognized less?",
     "Every cycle in the chronicle returns. Where do you stand in this one?",
+  ];
+
+  const REFLECTIONS_RU = [
+    "Шахнаме всегда спрашивает: где власть заканчивается, и где начинается мудрость?",
+    "Подумай: чего эта история просит от тебя — не только от царя?",
+    "Фирдоуси не написал эту сцену случайно. Что он увидел, что другие упустили?",
+    "Какую фигуру в этой истории ты узнаёшь в себе — и какую ты бы хотел узнавать меньше?",
+    "Каждый цикл в летописи возвращается. Где ты стоишь в этом?",
   ];
 
   /* ── Deep wisdom by topic ─────────────────────────────────────── */
@@ -77,19 +98,68 @@
     ],
   };
 
+  const WISDOM_RU = {
+    farr: [
+      "Фарр — божественный огонь, сделанный видимым — он обитает в достойном царе и уходит с первым актом гордыни. Никакой придворный волшебник не может его восстановить. Лишь праведные деяния призывают его обратно.",
+      "Фарр не принадлежит царю. Царь принадлежит Фарру. Когда Джамшид забыл это, свет выбрал нового носителя прежде, чем сменился сезон.",
+      "Ты не можешь захватить божественное сияние. Ты можешь лишь жить так, чтобы оно нашло тебя достойным обитания.",
+    ],
+    fire: [
+      "Огонь в Шахнаме не разрушение — это откровение. Огонь Хушанга возник из удара по самой тьме. Каждая цивилизация рождается так же.",
+      "Персы хранили огонь священным не для тепла, а для истины. Пламя нельзя скрыть. Оно освещает именно то, что есть, без милосердия и без предпочтения.",
+      "Когда Хушанг ударил змея, и огонь родился, знак был ясен: путь через тьму — не обойти её, а бить, пока она не уступит свет.",
+    ],
+    zahhak: [
+      "Заххак учит этому: тирания требует пищи. Она не может отдыхать. Каждый день она требует больше — пока сам народ не станет ценой покоя правителя.",
+      "Змеи на плечах Заххака не наказания с небес. Они естественное следствие души, что выбрала власть над честью. Ариман лишь показал ему, кем он уже стал.",
+      "Каждый тиран начинается с малого компромисса. Потом другого. Ариман не приходит полностью сформированным — он растёт медленно, питаемый каждым выбором, что царь отказывается рассмотреть.",
+    ],
+    rostam: [
+      "Рустам несёт бремя мира, потому что никто другой не может. Но Фирдоуси тихо спрашивает: чего это стоит человеку? Даже величайший воин плакал над Сухрабом в пыли.",
+      "Сила без самопознания — меч без ножен, опасный для всех, включая его носителя. Трагедия Рустама в том, что он понимал это и не мог остановить себя.",
+      "Шахнаме не книга побед. Это книга того, чего стоят победы. Рустам выигрывает каждую битву и теряет каждого человека, что любит.",
+    ],
+    simorgh: [
+      "Симург древен за пределами памяти. Он засвидетельствовал восход и крах каждой династии. Когда он выбрал вырастить Заля, он увидел потенциал, стоящий веков инвестиций.",
+      "Мудрость в Шахнаме никогда не кричит. Она садится высоко на мировом древе, ждёт и спускается лишь когда зовёт подлинная нужда. Симург учитель — не слуга.",
+      "Перо, что Симург дал Залю — сожги его, и я приду — есть обещание: мудрость всегда доступна тем, кто заслужил её через тяготы. Никогда тем, кто просто её хочет.",
+    ],
+    damavand: [
+      "Дамаванд — совесть мира — он заключает то, что нельзя уничтожить. Заххак всё ещё жив, закован в вулканической скале. Каждое извержение — его гнев. Каждое долгое молчание — гора, что его держит.",
+      "Персы выбрали Дамаванд не произвольно. Высочайшая гора — ближайшая точка между человеческой порочностью и божественным судом. Некоторые истины требуют такой высоты.",
+      "Ничто не убито в Шахнаме. Лишь связано, похоронено или преображено. Тьма никогда не исчезает из мира — она лишь удерживается тем, кто готов нести вес клетки.",
+    ],
+    jamshid: [
+      "Джамшид правил справедливо триста лет. Затем он потребовал, чтобы его почитали как бога. Фарр улетел, как испуганная птица — и Заххак восстал в течение одного сезона. Такова цена одного момента гордыни.",
+      "Падение Джамшида не история провала. Это предупреждение, встроенное в архитектуру Шахнаме: сколь бы долгим ни было правление добра, гордыня может уничтожить века в одно дыхание.",
+    ],
+    keyumars: [
+      "Кеюмарс не строил свой двор в дворце. Он построил его на горе, одетый в леопардовую шкуру, окружённый зверями, что склонялись не его власти, а его присутствию. Первый урок Шахнаме: авторитет течёт из характера, не из положения.",
+      "У первого царя не было ничего — ни армии, ни золота, ни каменных стен. У него были лишь ветер и молчание после того, как он говорил. И всё же львы спустились с высоких пастбищ и легли у его ног. Хаким спрашивает: что он нёс, что заставило их склониться?",
+    ],
+    fereydun: [
+      "Феридун рос в укрытии, пока тиран питался детьми мира. Летопись учит: иногда освободитель должен ждать — не из трусости, а потому что огонь, зажжённый слишком рано, гаснет прежде, чем может кого-то согреть.",
+      "Булава с бычьей головой, что закончила правление Заххака, не была выкована царём. Она была поднята кузнечным передником и народом, что наконец решил, что хватит. Власть возвращается к народу, когда он перестаёт ждать разрешения.",
+    ],
+    kaveh: [
+      "Кузнец Каве не ждал, чтобы герой восстал. Он сорвал знак подчинения и поднял его как знамя. Шахнаме записывает это: обычный человек, что говорит «довольно», меняет историю столь же верно, как любой царь.",
+      "Кожаный передник Каве стал Дерафш Кавиани — самым священным знаменем персидской истории. Символ революции, носимый каждым законным царём Персии. Достоинство всегда было сильнее цепей.",
+    ],
+  };
+
   /* ── Topic detection ──────────────────────────────────────────── */
   const detectTopic = (text) => {
     const s = (text || "").toLowerCase();
-    if (s.includes("farr") || s.includes("divine grace") || s.includes("radiance") || s.includes("glory")) return "farr";
-    if (s.includes("fire") || s.includes("flame") || s.includes("hushang") || s.includes("sadeh")) return "fire";
-    if (s.includes("zahhak") || s.includes("serpent") || s.includes("tyrant") || s.includes("ahriman")) return "zahhak";
-    if (s.includes("rostam") || s.includes("sohrab") || s.includes("rakhsh") || s.includes("seven labours") || s.includes("pahlavan")) return "rostam";
-    if (s.includes("simorgh") || s.includes("zal") || s.includes("alborz") || s.includes("great bird")) return "simorgh";
-    if (s.includes("damavand") || s.includes("mountain") || s.includes("volcano") || s.includes("chained")) return "damavand";
-    if (s.includes("jamshid") || s.includes("golden throne") || s.includes("crystal") || s.includes("pride")) return "jamshid";
-    if (s.includes("keyumars") || s.includes("first king") || s.includes("leopard")) return "keyumars";
-    if (s.includes("fereydun") || s.includes("liberator") || s.includes("feridun")) return "fereydun";
-    if (s.includes("kaveh") || s.includes("blacksmith") || s.includes("kaviani") || s.includes("apron")) return "kaveh";
+    if (s.includes("farr") || s.includes("divine grace") || s.includes("radiance") || s.includes("glory") || s.includes("фарр")) return "farr";
+    if (s.includes("fire") || s.includes("flame") || s.includes("hushang") || s.includes("sadeh") || s.includes("огон") || s.includes("хушанг")) return "fire";
+    if (s.includes("zahhak") || s.includes("serpent") || s.includes("tyrant") || s.includes("ahriman") || s.includes("заххак") || s.includes("ариман")) return "zahhak";
+    if (s.includes("rostam") || s.includes("sohrab") || s.includes("rakhsh") || s.includes("seven labours") || s.includes("pahlavan") || s.includes("рустам") || s.includes("сухраб")) return "rostam";
+    if (s.includes("simorgh") || s.includes("zal") || s.includes("alborz") || s.includes("great bird") || s.includes("симург") || s.includes("заль")) return "simorgh";
+    if (s.includes("damavand") || s.includes("mountain") || s.includes("volcano") || s.includes("chained") || s.includes("дамаванд") || s.includes("гора")) return "damavand";
+    if (s.includes("jamshid") || s.includes("golden throne") || s.includes("crystal") || s.includes("pride") || s.includes("джамшид")) return "jamshid";
+    if (s.includes("keyumars") || s.includes("first king") || s.includes("leopard") || s.includes("кеюмарс")) return "keyumars";
+    if (s.includes("fereydun") || s.includes("liberator") || s.includes("feridun") || s.includes("феридун")) return "fereydun";
+    if (s.includes("kaveh") || s.includes("blacksmith") || s.includes("kaviani") || s.includes("apron") || s.includes("каве")) return "kaveh";
     return null;
   };
 
@@ -99,14 +169,17 @@
   const wrapResponse = (text, question) => {
     let result = text;
     const topic = detectTopic(question);
+    const isRu = getLang() === "ru";
+    const wisdomSet = isRu ? WISDOM_RU : WISDOM;
+    const reflectionSet = isRu ? REFLECTIONS_RU : REFLECTIONS;
 
     // Prepend topic wisdom (25% chance) — feels like Hakim leading with memory
-    if (topic && WISDOM[topic] && Math.random() < 0.25) {
-      result = pick(WISDOM[topic]) + "\n\n" + result;
+    if (topic && wisdomSet[topic] && Math.random() < 0.25) {
+      result = pick(wisdomSet[topic]) + "\n\n" + result;
     }
     // Append reflection (15% chance) — Hakim turning question back on the reader
     if (Math.random() < 0.15) {
-      result += "\n\n— " + pick(REFLECTIONS);
+      result += "\n\n— " + pick(reflectionSet);
     }
     return result;
   };
@@ -144,10 +217,11 @@ You always remain within the world of the Shahnameh.`;
   /* ── Expose globally ─────────────────────────────────────────── */
   window.HakimPersonality = {
     wrapResponse,
-    getOpening: () => pick(OPENINGS),
-    getReflection: () => pick(REFLECTIONS),
+    getOpening: () => pick(getLang() === "ru" ? OPENINGS_RU : OPENINGS),
+    getReflection: () => pick(getLang() === "ru" ? REFLECTIONS_RU : REFLECTIONS),
     detectTopic,
     WISDOM,
+    WISDOM_RU,
     SYSTEM_PROMPT,
   };
 })();

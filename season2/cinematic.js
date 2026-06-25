@@ -411,8 +411,9 @@
 
     requestAnimationFrame(() => el.classList.add("dm-visible"));
 
-    const narration = (window.HakimPersonality && window.HakimPersonality.WISDOM.damavand && cLang() !== "ru")
-      ? window.HakimPersonality.WISDOM.damavand[0]
+    const hakimWisdom = window.HakimPersonality && (cLang() === "ru" ? window.HakimPersonality.WISDOM_RU : window.HakimPersonality.WISDOM);
+    const narration = (hakimWisdom && hakimWisdom.damavand)
+      ? hakimWisdom.damavand[0]
       : cT("Damavand is the world's conscience — it imprisons what cannot be destroyed. Zahhak lives still, chained within the volcanic rock. Every eruption is his fury. Every long silence is the mountain holding him.",
            "Дамаванд — совесть мира: он заключает то, что нельзя уничтожить. Заххак всё ещё жив, закован в вулканической скале. Каждое извержение — его гнев. Каждое долгое молчание — гора, что его держит.");
 
