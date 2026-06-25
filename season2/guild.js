@@ -51,11 +51,11 @@
   /* ── Guild tier logic ────────────────────────────────────────────────── */
 
   const GUILD_TIERS = [
-    { min: 0,  label: 'Lone Warrior',      icon: '⚔' },
-    { min: 3,  label: 'Warband',            icon: '🛡' },
-    { min: 10, label: 'Clan',               icon: '🏹' },
-    { min: 25, label: 'War Council',        icon: '🦁' },
-    { min: 50, label: "Shah's Vanguard",    icon: '👑' },
+    { min: 0,  labelKey: 'guild_tier_lone',     icon: '⚔' },
+    { min: 3,  labelKey: 'guild_tier_warband',  icon: '🛡' },
+    { min: 10, labelKey: 'guild_tier_clan',     icon: '🏹' },
+    { min: 25, labelKey: 'guild_tier_council',  icon: '🦁' },
+    { min: 50, labelKey: 'guild_tier_vanguard', icon: '👑' },
   ];
 
   const tierFor = (memberCount) => {
@@ -104,10 +104,10 @@
     if (mottoEl) mottoEl.textContent = clan.motto ? `"${clan.motto}"` : '';
 
     const metaEl = document.getElementById('guild-hero-meta');
-    if (metaEl) metaEl.textContent = isLeader ? '⚔ Clan Leader' : 'Member';
+    if (metaEl) metaEl.textContent = isLeader ? t('guild_role_leader') : t('guild_role_member');
 
     const tierLabelEl = document.getElementById('guild-tier-label');
-    if (tierLabelEl) tierLabelEl.textContent = tier.label;
+    if (tierLabelEl) tierLabelEl.textContent = t(tier.labelKey);
 
     const tierIconEl = document.querySelector('.guild-tier-icon');
     if (tierIconEl) tierIconEl.textContent = tier.icon;
@@ -147,9 +147,9 @@
 
     /* Action row */
     let actionsHtml = `<div class="guild-actions-row">`;
-    if (tgLink) actionsHtml += `<button class="secondary-btn" id="guild-chat-btn">💬 Clan Chat</button>`;
-    actionsHtml += `<button class="secondary-btn" id="guild-share-btn">📢 Share Clan</button>`;
-    if (isLeader) actionsHtml += `<button class="secondary-btn" id="guild-manage-btn">⚙ Manage</button>`;
+    if (tgLink) actionsHtml += `<button class="secondary-btn" id="guild-chat-btn">${t('guild_btn_chat')}</button>`;
+    actionsHtml += `<button class="secondary-btn" id="guild-share-btn">${t('guild_btn_share')}</button>`;
+    if (isLeader) actionsHtml += `<button class="secondary-btn" id="guild-manage-btn">${t('guild_btn_manage')}</button>`;
     actionsHtml += `</div>`;
 
     panel.innerHTML = `
@@ -158,7 +158,7 @@
       <div>
         <div class="guild-section-head">
           <h4>${t('guild_overview_members','Members')}</h4>
-          <span id="guild-member-count">${fmtNF(clan.member_count || 1)} warriors</span>
+          <span id="guild-member-count">${t('guild_warriors_suffix', { n: fmtNF(clan.member_count || 1) })}</span>
         </div>
         <article class="card" style="padding:0 16px;" id="guild-member-list">
           <p class="guild-empty">${t('loading_text','Loading…')}</p>
@@ -171,7 +171,7 @@
     /* Wire Share button — also marks the daily invite quest */
     document.getElementById('guild-share-btn')?.addEventListener('click', () => {
       const botUrl   = `https://t.me/shahnameh_bot?start=clan_${clan.clan_id}`;
-      const text     = `Join my clan ${clan.clan_name} in Shahnameh! We earn REAL together. ⚔️`;
+      const text     = t('guild_share_text', { name: clan.clan_name });
       const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(botUrl)}&text=${encodeURIComponent(text)}`;
       if (window.Telegram?.WebApp?.openLink) window.Telegram.WebApp.openLink(shareUrl);
       else window.open(shareUrl, '_blank');
@@ -191,7 +191,7 @@
         if (!panel) return;
         manageOpen = !manageOpen;
         panel.style.display = manageOpen ? '' : 'none';
-        document.getElementById('guild-manage-btn').textContent = manageOpen ? '✖ Close' : '⚙ Manage';
+        document.getElementById('guild-manage-btn').textContent = manageOpen ? t('guild_btn_manage_close') : t('guild_btn_manage');
         if (manageOpen && !manageLoaded) {
           manageLoaded = true;
           buildManagePanel(clan, String(u.id), panel);
@@ -208,7 +208,7 @@
     const members = (membersData?.status === 1) ? (membersData.members || []) : [];
 
     if (!members.length) {
-      listEl.innerHTML = '<p class="guild-empty">No warriors yet. Share your invite link.</p>';
+      listEl.innerHTML = `<p class="guild-empty">${t('guild_no_warriors')}</p>`;
       return;
     }
 
@@ -221,15 +221,15 @@
         ? `<div class="guild-member-avatar"><img src="${m.profile_pic}" alt="" onerror="this.parentElement.textContent='${init}'"></div>`
         : `<div class="guild-member-avatar">${init}</div>`;
       const tag = m.is_leader
-        ? `<span class="guild-member-tag guild-tag-leader">Leader</span>`
-        : `<span class="guild-member-tag guild-tag-member">⚔ Member</span>`;
+        ? `<span class="guild-member-tag guild-tag-leader">${t('guild_tag_leader')}</span>`
+        : `<span class="guild-member-tag guild-tag-member">${t('guild_tag_member')}</span>`;
       const uid = m.telegram_id ? String(m.telegram_id) : '';
       return `<div class="guild-member-row">
         ${uid ? `<a href="profile.html?uid=${uid}" style="display:contents;">` : ''}
         ${avatar}
         <div class="guild-member-info">
           <div class="guild-member-name">${name}</div>
-          <div class="guild-member-sub">LVL ${level} · ${fmtN(m.xp || 0)} XP</div>
+          <div class="guild-member-sub">${t('guild_lvl_xp', { lvl: level, xp: fmtN(m.xp || 0) })}</div>
         </div>
         ${uid ? `</a>` : ''}
         ${tag}
@@ -242,15 +242,15 @@
   const buildManagePanel = async (clan, leaderId, container) => {
     container.innerHTML = `
       <div style="margin-bottom:12px;">
-        <div class="guild-section-head"><h4>⚙ Clan Settings</h4></div>
+        <div class="guild-section-head"><h4>${t('guild_settings_title')}</h4></div>
         <article class="card" style="padding:14px 16px;">
-          <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;">💬 Telegram Group Link</div>
-          <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">Share your group link with all clan members.</div>
+          <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;">${t('guild_tg_link_label')}</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">${t('guild_tg_link_desc')}</div>
           <div style="display:flex;gap:8px;">
             <input type="url" id="gm-tg-link" class="guild-contrib-input"
               style="flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:9px 10px;font-size:12px;"
               placeholder="https://t.me/joinchat/…" value="${(clan.telegram_group_link || '').replace(/"/g,'&quot;')}" />
-            <button class="secondary-btn" id="gm-tg-save" style="padding:9px 14px;flex:none;font-size:12px;">Save</button>
+            <button class="secondary-btn" id="gm-tg-save" style="padding:9px 14px;flex:none;font-size:12px;">${t('guild_btn_save')}</button>
           </div>
           <div id="gm-tg-msg" style="font-size:11px;margin-top:5px;min-height:16px;"></div>
         </article>
@@ -265,21 +265,21 @@
       const msgEl  = document.getElementById('gm-tg-msg');
       const btn    = document.getElementById('gm-tg-save');
       if (link && !link.startsWith('https://t.me/') && !link.startsWith('https://telegram.me/')) {
-        if (msgEl) { msgEl.textContent = 'Must start with https://t.me/…'; msgEl.style.color = 'var(--ember)'; }
+        if (msgEl) { msgEl.textContent = t('guild_tg_invalid_prefix'); msgEl.style.color = 'var(--ember)'; }
         return;
       }
       btn.disabled = true; btn.textContent = '…';
       const res = await post('/api/season2/clan/set-telegram-link', { telegram_id: leaderId, telegram_group_link: link });
       if (res?.status === 1) {
-        if (msgEl) { msgEl.textContent = link ? '✓ Saved!' : '✓ Cleared.'; msgEl.style.color = 'var(--gold)'; }
+        if (msgEl) { msgEl.textContent = link ? t('guild_tg_saved') : t('guild_tg_cleared'); msgEl.style.color = 'var(--gold)'; }
         clan.telegram_group_link = link;
         /* Update chat button visibility */
         const chatBtn = document.getElementById('guild-chat-btn');
         if (chatBtn) { chatBtn.style.display = link ? '' : 'none'; chatBtn.dataset.link = link; }
       } else {
-        if (msgEl) { msgEl.textContent = res?.error === 'invalid_link' ? 'Invalid Telegram link.' : 'Could not save.'; msgEl.style.color = 'var(--ember)'; }
+        if (msgEl) { msgEl.textContent = res?.error === 'invalid_link' ? t('guild_tg_invalid_link') : t('guild_could_not_save'); msgEl.style.color = 'var(--ember)'; }
       }
-      btn.disabled = false; btn.textContent = 'Save';
+      btn.disabled = false; btn.textContent = t('guild_btn_save');
     });
 
     /* Load applications */
@@ -291,8 +291,8 @@
     if (!apps.length) {
       appsWrap.innerHTML = `
         <article class="card" style="padding:14px 16px;margin-top:10px;">
-          <div class="guild-section-head" style="margin-bottom:6px;"><h4>Applications</h4></div>
-          <p class="guild-empty" style="padding:4px 0;">No pending applications.</p>
+          <div class="guild-section-head" style="margin-bottom:6px;"><h4>${t('guild_applications_title')}</h4></div>
+          <p class="guild-empty" style="padding:4px 0;">${t('guild_no_applications')}</p>
         </article>`;
       return;
     }
@@ -301,20 +301,20 @@
       <div class="guild-member-row" id="gm-app-${a.applicant_id}">
         <div class="guild-member-avatar">${(a.name || 'W').charAt(0).toUpperCase()}</div>
         <div class="guild-member-info">
-          <div class="guild-member-name">${a.name || 'Warrior'}</div>
-          <div class="guild-member-sub">LVL ${Math.max(1, Math.floor((a.xp || 0) / 1000))} · ${fmtN(a.xp || 0)} XP</div>
+          <div class="guild-member-name">${a.name || t('fallback_username', 'Warrior')}</div>
+          <div class="guild-member-sub">${t('guild_lvl_xp', { lvl: Math.max(1, Math.floor((a.xp || 0) / 1000)), xp: fmtN(a.xp || 0) })}</div>
         </div>
         <div style="display:flex;gap:6px;flex-shrink:0;">
           <button class="guild-upgrade-btn" style="background:rgba(83,215,156,.12);border-color:rgba(83,215,156,.4);color:#53d79c;"
-            data-accept="${a.applicant_id}">✓ Accept</button>
+            data-accept="${a.applicant_id}">${t('guild_btn_accept')}</button>
           <button class="guild-upgrade-btn" style="background:rgba(255,80,80,.1);border-color:rgba(255,80,80,.3);color:#ff5050;"
-            data-reject="${a.applicant_id}">✗ Reject</button>
+            data-reject="${a.applicant_id}">${t('guild_btn_reject')}</button>
         </div>
       </div>`).join('');
 
     appsWrap.innerHTML = `
       <div class="guild-section-head" style="margin-top:10px;">
-        <h4>Applications</h4><span>${apps.length} pending</span>
+        <h4>${t('guild_applications_title')}</h4><span>${t('guild_pending_count', { n: apps.length })}</span>
       </div>
       <article class="card" style="padding:0 16px;">${rows}</article>`;
 
@@ -324,7 +324,7 @@
         btn.disabled = true; btn.textContent = '…';
         const res = await post('/api/season2/clan/accept-application', { telegram_id: leaderId, applicant_id: id });
         if (res?.status === 1) {
-          showToast('Warrior accepted!');
+          showToast(t('guild_warrior_accepted'));
           document.getElementById(`gm-app-${id}`)?.remove();
           /* Refresh member list */
           const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: leaderId }));
@@ -332,24 +332,24 @@
           if (listEl && membersData?.status === 1) {
             const count = (membersData.members || []).length;
             const countEl = document.getElementById('guild-member-count');
-            if (countEl) countEl.textContent = `${fmtNF(count)} warriors`;
+            if (countEl) countEl.textContent = t('guild_warriors_suffix', { n: fmtNF(count) });
             listEl.innerHTML = (membersData.members || []).map(m => {
-              const name  = m.first_name || 'Warrior';
+              const name  = m.first_name || t('fallback_username', 'Warrior');
               const init  = name.charAt(0).toUpperCase();
               const level = Math.max(1, Math.floor((m.xp || 0) / 1000));
               const avatar = m.profile_pic
                 ? `<div class="guild-member-avatar"><img src="${m.profile_pic}" alt="" onerror="this.parentElement.textContent='${init}'"></div>`
                 : `<div class="guild-member-avatar">${init}</div>`;
               const tag = m.is_leader
-                ? `<span class="guild-member-tag guild-tag-leader">Leader</span>`
-                : `<span class="guild-member-tag guild-tag-member">⚔ Member</span>`;
+                ? `<span class="guild-member-tag guild-tag-leader">${t('guild_tag_leader')}</span>`
+                : `<span class="guild-member-tag guild-tag-member">${t('guild_tag_member')}</span>`;
               const uid = m.telegram_id ? String(m.telegram_id) : '';
               return `<div class="guild-member-row">
                 ${uid ? `<a href="profile.html?uid=${uid}" style="display:contents;">` : ''}
                 ${avatar}
                 <div class="guild-member-info">
                   <div class="guild-member-name">${name}</div>
-                  <div class="guild-member-sub">LVL ${level} · ${fmtN(m.xp || 0)} XP</div>
+                  <div class="guild-member-sub">${t('guild_lvl_xp', { lvl: level, xp: fmtN(m.xp || 0) })}</div>
                 </div>
                 ${uid ? `</a>` : ''}
                 ${tag}
@@ -357,9 +357,9 @@
             }).join('');
           }
         } else {
-          const msg = { clan_full: 'Clan is full.', applicant_already_in_clan: 'Already in a clan.' }[res?.error] || 'Could not accept.';
+          const msg = { clan_full: t('guild_err_clan_full'), applicant_already_in_clan: t('guild_err_already_in_clan') }[res?.error] || t('guild_err_could_not_accept');
           showToast(msg);
-          btn.disabled = false; btn.textContent = '✓ Accept';
+          btn.disabled = false; btn.textContent = t('guild_btn_accept');
         }
       });
     });
@@ -370,11 +370,11 @@
         btn.disabled = true; btn.textContent = '…';
         const res = await post('/api/season2/clan/reject-application', { telegram_id: leaderId, applicant_id: id });
         if (res?.status === 1) {
-          showToast('Application rejected.');
+          showToast(t('guild_app_rejected'));
           document.getElementById(`gm-app-${id}`)?.remove();
         } else {
-          showToast('Could not reject. Try again.');
-          btn.disabled = false; btn.textContent = '✗ Reject';
+          showToast(t('guild_err_could_not_reject'));
+          btn.disabled = false; btn.textContent = t('guild_btn_reject');
         }
       });
     });
@@ -383,10 +383,10 @@
   /* ── Treasury tab ────────────────────────────────────────────────────── */
 
   const UPGRADES = [
-    { id: 'forge',    icon: '⚒',  name: 'War Forge',       desc: '+5% ZAR/hr for all members',   cost: 25000  },
-    { id: 'banner',   icon: '🏹',  name: 'Battle Banner',   desc: '+10% hero XP gain',             cost: 50000  },
-    { id: 'vault',    icon: '🏛',  name: 'Royal Vault',     desc: 'Treasury cap ×2',               cost: 100000 },
-    { id: 'siege',    icon: '🛡',  name: 'Siege Engines',   desc: '+15% in guild wars',            cost: 200000 },
+    { id: 'forge',    icon: '⚒',  nameKey: 'guild_upgrade_forge_name',  descKey: 'guild_upgrade_forge_desc',  cost: 25000  },
+    { id: 'banner',   icon: '🏹',  nameKey: 'guild_upgrade_banner_name', descKey: 'guild_upgrade_banner_desc', cost: 50000  },
+    { id: 'vault',    icon: '🏛',  nameKey: 'guild_upgrade_vault_name',  descKey: 'guild_upgrade_vault_desc',  cost: 100000 },
+    { id: 'siege',    icon: '🛡',  nameKey: 'guild_upgrade_siege_name',  descKey: 'guild_upgrade_siege_desc',  cost: 200000 },
   ];
 
   const buildTreasury = (clan) => {
@@ -401,11 +401,11 @@
         <div class="guild-upgrade-card">
           <div class="guild-upgrade-icon">${u.icon}</div>
           <div class="guild-upgrade-info">
-            <div class="guild-upgrade-name">${u.name}</div>
-            <div class="guild-upgrade-desc">${u.desc}</div>
-            <div class="guild-upgrade-cost">${fmtN(u.cost)} ${RT} required</div>
+            <div class="guild-upgrade-name">${t(u.nameKey)}</div>
+            <div class="guild-upgrade-desc">${t(u.descKey)}</div>
+            <div class="guild-upgrade-cost">${fmtN(u.cost)} ${RT} ${t('guild_required_suffix')}</div>
           </div>
-          <button class="guild-upgrade-btn" disabled>${canAfford ? 'Unlock' : 'Locked'}</button>
+          <button class="guild-upgrade-btn" disabled>${canAfford ? t('guild_btn_unlock') : t('guild_btn_locked')}</button>
         </div>`;
     }).join('');
 
@@ -421,8 +421,8 @@
       </button>
       <div>
         <div class="guild-section-head">
-          <h4>Guild Upgrades</h4>
-          <span>Coming Soon</span>
+          <h4>${t('guild_upgrades_title')}</h4>
+          <span>${t('guild_coming_soon')}</span>
         </div>
         ${upgradesHtml}
       </div>`;
@@ -442,27 +442,27 @@
     const weeklyQuests = [
       {
         icon: '📜',
-        title: 'Chapter Readers',
-        desc: 'Guild members complete chapters this week',
+        titleKey: 'guild_quest_chapter_title',
+        descKey: 'guild_quest_chapter_desc',
         target: 50,
         progress: Math.min(50, members * 2),
-        reward: '5,000 REAL each',
+        rewardKey: 'guild_quest_chapter_reward',
       },
       {
         icon: '⚔',
-        title: 'Warriors Recruited',
-        desc: 'Grow the clan by inviting new warriors',
+        titleKey: 'guild_quest_recruit_title',
+        descKey: 'guild_quest_recruit_desc',
         target: 10,
         progress: Math.min(10, Math.max(0, members - 1)),
-        reward: '2,500 REAL each',
+        rewardKey: 'guild_quest_recruit_reward',
       },
       {
         icon: '💎',
-        title: 'Gem Tithe',
-        desc: 'Clan members earn gems through heroes',
+        titleKey: 'guild_quest_gem_title',
+        descKey: 'guild_quest_gem_desc',
         target: 100,
         progress: Math.min(100, members * 4),
-        reward: '1,000 REAL each',
+        rewardKey: 'guild_quest_gem_reward',
       },
     ];
 
@@ -472,14 +472,14 @@
         <div class="guild-quest-card">
           <div class="guild-quest-header">
             <div class="guild-quest-icon">${q.icon}</div>
-            <div class="guild-quest-title">${q.title}</div>
-            <div class="guild-quest-reward">+${q.reward}</div>
+            <div class="guild-quest-title">${t(q.titleKey)}</div>
+            <div class="guild-quest-reward">+${t(q.rewardKey)}</div>
           </div>
           <div class="guild-quest-progress-wrap">
             <div class="guild-quest-progress-fill" style="width:${pct}%;"></div>
           </div>
           <div class="guild-quest-meta">
-            <span>${q.desc}</span>
+            <span>${t(q.descKey)}</span>
             <span>${fmtNF(q.progress)} / ${fmtNF(q.target)}</span>
           </div>
         </div>`;
@@ -488,10 +488,10 @@
     panel.innerHTML = `
       <div class="guild-section-head">
         <h4>${t('guild_quest_weekly','Weekly Guild Quests')}</h4>
-        <span>Resets Sunday</span>
+        <span>${t('guild_resets_sunday')}</span>
       </div>
       ${cardsHtml}
-      <p class="guild-empty" style="margin-top:8px;font-size:11px;">Daily tasks and seasonal campaigns — coming soon.</p>`;
+      <p class="guild-empty" style="margin-top:8px;font-size:11px;">${t('guild_daily_soon')}</p>`;
   };
 
   /* ── Wars tab ────────────────────────────────────────────────────────── */
@@ -522,7 +522,7 @@
           ${badge}
           <div class="guild-war-info">
             <div class="guild-war-name">${c.clan_name}${isMe ? ' ⚔' : ''}</div>
-            <div class="guild-war-sub">👥 ${c.member_count || 1} warriors</div>
+            <div class="guild-war-sub">👥 ${t('guild_warriors_suffix', { n: c.member_count || 1 })}</div>
           </div>
           <div class="guild-war-score">${fmtN(c.total_real_earned)} ${RT}</div>
         </div>`;
@@ -531,10 +531,10 @@
     panel.innerHTML = `
       <div class="guild-section-head">
         <h4>${t('guild_wars_standings','War Standings')}</h4>
-        <span>by REAL earned</span>
+        <span>${t('guild_by_real_earned')}</span>
       </div>
       <article class="card" style="padding:0 16px;">${rows}</article>
-      <p class="guild-empty" style="font-size:11px;margin-top:4px;">Live guild battles — coming soon.</p>`;
+      <p class="guild-empty" style="font-size:11px;margin-top:4px;">${t('guild_wars_soon')}</p>`;
   };
 
   /* ── No-clan state ───────────────────────────────────────────────────── */
@@ -575,7 +575,7 @@
     if (!modal) return;
 
     const bal = localPlayer().balance || 0;
-    if (balEl) balEl.textContent = `Your balance: ${fmtN(bal)} REAL`;
+    if (balEl) balEl.textContent = t('guild_your_balance', { bal: fmtN(bal) });
     if (inp)   inp.value = '';
     document.querySelectorAll('.guild-amount-btn').forEach(b => b.classList.remove('active'));
 
@@ -616,12 +616,12 @@
 
       if (!u || !u.id) {
         closeContribModal();
-        showToast('Open via Telegram to contribute.');
+        showToast(t('guild_open_telegram'));
         return;
       }
       if (!amount || amount < 100) {
         closeContribModal();
-        showToast('Minimum contribution: 100 REAL.');
+        showToast(t('guild_min_contrib'));
         return;
       }
 
@@ -645,7 +645,7 @@
           window.dispatchEvent(new CustomEvent('shahnama:state_sync'));
         } catch (_) {}
 
-        showToast(`✓ Contributed ${fmtN(amount)} REAL to the treasury!`);
+        showToast(t('guild_contributed', { amount: fmtN(amount) }));
 
         /* Refresh treasury display */
         const tp    = document.getElementById('guild-panel-treasury');
@@ -658,10 +658,10 @@
         }
       } else {
         const msg = {
-          insufficient_balance: 'Not enough REAL in your balance.',
-          not_in_clan:          'You are not in a clan.',
-          minimum_100:          'Minimum is 100 REAL.',
-        }[res?.error] || 'Failed to contribute. Try again.';
+          insufficient_balance: t('guild_err_insufficient'),
+          not_in_clan:          t('guild_err_not_in_clan'),
+          minimum_100:          t('guild_err_minimum_100'),
+        }[res?.error] || t('guild_err_failed_contribute');
         showToast(msg);
       }
     });
