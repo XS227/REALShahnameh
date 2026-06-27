@@ -8,6 +8,9 @@
 
   const RT = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">';
 
+  /* Cached guild state — used to re-render panels on language change. */
+  let _gc = null; /* { clan, u, browseData } */
+
   /* ── Helpers ─────────────────────────────────────────────────────────── */
 
   const t   = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
@@ -723,12 +726,25 @@
         buildWars(clan.clan_id, browseData);
       }
 
+      _gc = { clan, u, browseData: browseData?.status === 1 ? browseData : null };
+
     } catch (err) {
       console.error('[guild] init error', err);
       /* Show no-clan rather than staying stuck on loading */
       showNoClan();
     }
   };
+
+  /* Re-render guild panels when the user switches language mid-session. */
+  window.addEventListener('real:lang:changed', () => {
+    if (!_gc) { showNoClan(); return; }
+    const { clan, u, browseData } = _gc;
+    populateHero(clan, u);
+    buildTreasury(clan);
+    buildQuests(clan);
+    buildOverview(clan, u);
+    if (browseData) buildWars(clan.clan_id, browseData);
+  });
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

@@ -249,4 +249,9 @@
   window.addEventListener("real:chapters:synced", () => {
     if (_lastPayload) render(_lastPayload.chapters || [], _lastPayload.totalChapters || 50);
   });
+
+  /* Re-render chapter map when the user switches language mid-session. */
+  window.addEventListener("real:lang:changed", () => {
+    if (_lastPayload) render(_lastPayload.chapters || [], _lastPayload.totalChapters || 50);
+  });
 })();

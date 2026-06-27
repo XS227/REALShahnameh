@@ -684,11 +684,17 @@
   color: var(--muted, #8a7fc4);
   text-transform: uppercase;
   letter-spacing: .06em;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .guild-section-head span {
   font-size: 12px;
   color: var(--muted, #8a7fc4);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* ── Empty state ─────────────────────────────────────────────────────────── */

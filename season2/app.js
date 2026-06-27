@@ -1989,6 +1989,7 @@
     }
     window.addEventListener("real:quest:quiz",      renderFinalEncounter);
     window.addEventListener("real:referral:update", renderFinalEncounter);
+    window.addEventListener("real:lang:changed",    renderFinalEncounter);
   }
 
   /* unlock burst overlay */
