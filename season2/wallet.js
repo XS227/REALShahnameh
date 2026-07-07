@@ -35,8 +35,12 @@
     }
   };
 
-  /* ── After TON Connect: verify token balance on backend ── */
-  const verifyWallet = async (addr, block) => {
+  /* ── After TON Connect: verify token balance on backend ──
+     proofData, when present (fresh connect only — session restores don't
+     carry one), is { publicKey, tonProof } so the server can cryptographically
+     confirm we actually control this wallet before binding it to the
+     account / granting the trust-score bonus. See legacy.js verifyTonProof(). */
+  const verifyWallet = async (addr, block, proofData) => {
     const statusEl = block.querySelector('[data-wallet-status]');
     const tierEl   = block.querySelector('[data-wallet-tier]');
     if (statusEl) statusEl.textContent = T('legacy_verifying');
@@ -46,7 +50,13 @@
     const initData = (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) || '';
 
     try {
-      const body = { walletAddress: addr, ...(chatId ? { chatId } : {}), ...(initData ? { initData } : {}) };
+      const body = {
+        walletAddress: addr,
+        ...(chatId ? { chatId } : {}),
+        ...(initData ? { initData } : {}),
+        ...(proofData && proofData.publicKey ? { publicKey: proofData.publicKey } : {}),
+        ...(proofData && proofData.tonProof  ? { tonProof: proofData.tonProof }   : {}),
+      };
       const resp = await fetch('/api/basic/wallet-verify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -187,12 +197,32 @@
         return;
       }
 
-      /* Wire up click → openModal */
+      /* Wire up click → openModal. Request a single-use proof payload first
+         and attach it as a tonProof connect request so the wallet signs it
+         on connect — that signature is what lets the backend verify we
+         actually control the address (see verifyTonProof in legacy.js)
+         instead of just trusting whatever address the client reports. */
       const openBtn = block.querySelector('#ton-connect-open-btn');
       if (openBtn) {
-        openBtn.addEventListener('click', () => {
-          try { tc.openModal(); }
-          catch (e) { console.error('[TON] openModal error:', e); }
+        openBtn.addEventListener('click', async () => {
+          const canSetParams = typeof tc.setConnectRequestParameters === 'function';
+          try {
+            if (canSetParams) {
+              tc.setConnectRequestParameters({ state: 'loading' });
+              try {
+                const resp = await fetch('/api/basic/wallet-proof-payload');
+                const j = await resp.json();
+                if (j && j.status && j.payload) {
+                  tc.setConnectRequestParameters({ state: 'ready', value: { tonProof: j.payload } });
+                } else {
+                  tc.setConnectRequestParameters(null);
+                }
+              } catch (_) {
+                tc.setConnectRequestParameters(null);
+              }
+            }
+            tc.openModal();
+          } catch (e) { console.error('[TON] openModal error:', e); }
         });
       }
 
@@ -207,7 +237,21 @@
           try { localStorage.setItem('real_ton_wallet', addr); } catch {}
           const statusEl = block.querySelector('[data-wallet-status]');
           if (statusEl) { statusEl.style.display = ''; statusEl.textContent = T('legacy_connected'); }
-          await verifyWallet(addr, block);
+
+          /* Only a FRESH connect carries a signed tonProof — session
+             restores on later page loads won't have one, which is fine:
+             the backend trusts a same-address re-check once it's already
+             recorded a verified proof for this account. */
+          let proofData = null;
+          try {
+            const tonProofItem = wallet.connectItems && wallet.connectItems.tonProof;
+            const publicKey = wallet.account && wallet.account.publicKey;
+            if (publicKey && tonProofItem && tonProofItem.proof) {
+              proofData = { publicKey, tonProof: tonProofItem.proof };
+            }
+          } catch (_) {}
+
+          await verifyWallet(addr, block, proofData);
           setTimeout(() => renderWalletBlock(container, addr), 2000);
         });
       }
