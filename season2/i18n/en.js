@@ -1175,6 +1175,10 @@
       profile_sub:           "Your legend unfolds",
       profile_stats:         "Season Stats",
       profile_achievements:  "Achievements",
+      profile_numerology:    "Your Numbers",
+      numerology_id_number:  "Call number",
+      numerology_name_number:"Name number",
+      numerology_learn_more: "What do your numbers mean? →",
       profile_back:          "← Back",
 
       /* ── Standalone wallet page ── */

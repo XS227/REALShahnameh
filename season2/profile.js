@@ -570,6 +570,54 @@
     return (resp && resp.status === 1) ? resp.clan : null;
   };
 
+  /* ── Numerology card — powered by numerologist.setai.no's public
+     /numbers/profile/ endpoint (id-vibration + name-vibration, no birth
+     date needed). Fetched once per profile view, not on the 30s refresh —
+     these numbers don't change. Renders the VIEWED player's numbers (self
+     or, in visitor mode, whoever's profile is open — a friend's numbers
+     are part of the discovery hook). Fails silently: the card just stays
+     hidden if the cross-origin call doesn't come back. */
+  const renderNumerology = async (user) => {
+    const card = document.getElementById('numerology-card');
+    if (!card || !user) return;
+    const id = user.telegram_id;
+    const name = [user.first_name, user.last_name].filter(Boolean).join(' ');
+    if (!id && !name) return;
+
+    try {
+      const qs = new URLSearchParams();
+      if (id) qs.set('id', String(id));
+      if (name) qs.set('name', name);
+      const resp = await fetch('https://numerologist.setai.no/numbers/profile/?' + qs.toString(), { cache: 'no-store' })
+        .then(r => r.ok ? r.json() : null).catch(() => null);
+      if (!resp || !resp.ok || !resp.numbers) return;
+
+      const rows = [];
+      if (resp.numbers.id_number) {
+        rows.push({ label: t('numerology_id_number', 'Call number'), n: resp.numbers.id_number });
+      }
+      if (resp.numbers.name_number) {
+        rows.push({ label: t('numerology_name_number', 'Name number'), n: resp.numbers.name_number });
+      }
+      if (!rows.length) return;
+
+      card.innerHTML = rows.map(r => `
+        <div style="display:flex;align-items:center;gap:12px;padding:6px 0;">
+          <div style="font-size:28px;font-weight:800;min-width:44px;text-align:center;">${escHtml(String(r.n.value))}</div>
+          <div>
+            <div style="font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;">${escHtml(r.label)}</div>
+            <div style="font-size:13px;">${escHtml(r.n.meaning || '')}</div>
+          </div>
+        </div>
+      `).join('') + `
+        <a href="${escHtml(resp.learn_more_url || 'https://numerologist.setai.no/articles/')}" target="_blank" rel="noopener"
+           style="display:inline-block;margin-top:8px;font-size:12px;color:var(--accent,inherit);text-decoration:underline;">
+          ${escHtml(t('numerology_learn_more', 'What do your numbers mean? →'))}
+        </a>`;
+      card.style.display = '';
+    } catch (_) { /* keep card hidden on any failure */ }
+  };
+
   /* ── Server re-fetch (every 30 s) — catches streak/referral/clan changes */
   const serverRefresh = async () => {
     const [u, clan] = await Promise.all([fetchUser(), fetchClan()]);
@@ -699,6 +747,7 @@
 
       /* Show visitor's identity — pass null as tg so we use DB name/pic */
       renderIdentity(visitedUser, null);
+      renderNumerology(visitedUser);
       /* Show read-only stats, badges, clan — no live updates for visitor view */
       renderStats(mergeUser());
       renderBadges(mergeUser());
@@ -784,6 +833,7 @@
     } catch (_) {}
 
     renderIdentity(u, _tg);
+    renderNumerology(u);
     renderInviter();
 
     /* Start mining counter */

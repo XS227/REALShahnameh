@@ -1107,6 +1107,7 @@
       profile_sub:           "Афсонаи ту шакл мегирад",
       profile_stats:         "Омори фасл",
       profile_achievements:  "Дастовардҳо",
+      profile_numerology:    "Рақамҳои шумо",
       profile_back:          "← Бозгашт",
 
       /* ── Standalone wallet page ── */

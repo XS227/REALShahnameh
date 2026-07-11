@@ -1174,6 +1174,7 @@
       profile_sub:           "Ваша легенда разворачивается",
       profile_stats:         "Статистика сезона",
       profile_achievements:  "Достижения",
+      profile_numerology:    "Ваши числа",
       profile_back:          "← Назад",
 
       /* ── Standalone wallet page ── */

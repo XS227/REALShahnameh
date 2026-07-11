@@ -1189,6 +1189,10 @@
       profile_sub:           "افسانه‌ات شکل می‌گیرد",
       profile_stats:         "آمار فصل",
       profile_achievements:  "دستاوردها",
+      profile_numerology:    "اعداد شما",
+      numerology_id_number:  "عدد شناسه",
+      numerology_name_number:"عدد نام",
+      numerology_learn_more: "اعداد شما چه می‌گویند؟ ←",
       profile_back:          "← بازگشت",
 
       /* ── Standalone wallet page ── */
