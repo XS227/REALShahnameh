@@ -38,6 +38,18 @@
   let _resolveReady;
   const _ready = new Promise(r => { _resolveReady = r; });
 
+  /* Set once init() completes a successful SSO login (server-verified
+     telegram_id, not the raw token) — every other sync call in this file
+     falls back to this when there's no Telegram WebApp context, so an
+     SSO session stays authenticated for balance/quest/chapter/hero syncs
+     too, not just the initial login ping. */
+  let _ssoTelegramId = '';
+  const currentTelegramId = () => {
+    const u = tgUser();
+    if (u && u.id) return String(u.id);
+    return _ssoTelegramId || '';
+  };
+
   /* ── Offline bonus banner ──────────────────────────────────────────── */
   const _showOfflineBonus = (zarEarned) => {
     if (document.getElementById('real-offline-bonus')) return;
@@ -58,10 +70,23 @@
     setTimeout(() => { if (el.parentNode) el.remove(); }, 8000);
   };
 
+  /* Ecosystem SSO entry (task B-8/B-12): when opened from outside Telegram
+     — e.g. the SetaLink/RealGram panel deep-links here with
+     ?sso=<jwt>&src=realink — there is no window.Telegram.WebApp context to
+     read a user from. Pull the token out of the URL and let the backend
+     verify it; we never trust anything else in the URL as identity. */
+  const ssoTokenFromUrl = () => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('sso') || '';
+    } catch (_) { return ''; }
+  };
+
   /* ── init: call once on every page load ──────────────────────────── */
   const init = async () => {
     const u = tgUser();
-    if (!u || !u.id) { _resolveReady(null); return; }
+    const ssoToken = !u || !u.id ? ssoTokenFromUrl() : '';
+    if ((!u || !u.id) && !ssoToken) { _resolveReady(null); return; }
 
     let startParam = '';
     try {
@@ -69,7 +94,9 @@
         && window.Telegram.WebApp.initDataUnsafe.start_param) || '';
     } catch (_) {}
 
-    const data = await post(API.userSync, {
+    const data = await post(API.userSync, ssoToken ? {
+      sso_token: ssoToken,
+    } : {
       telegram_id:   String(u.id),
       first_name:    u.first_name    || '',
       last_name:     u.last_name     || '',
@@ -85,6 +112,7 @@
     }
 
     const su = data.user;
+    if (ssoToken && su.telegram_id) _ssoTelegramId = String(su.telegram_id);
 
     /* Merge authoritative server values into Player localStorage state.
        Take the higher of server and local for ZAR and balance to prevent
@@ -180,20 +208,20 @@
 
   /* ── Quest sync — called immediately on completion ──────────────── */
   const syncQuest = (quest, tapCount) => {
-    const u = tgUser();
-    if (!u || !u.id) return;
-    const body = { telegram_id: String(u.id), quest };
+    const tid = currentTelegramId();
+    if (!tid) return;
+    const body = { telegram_id: tid, quest };
     if (quest === 'tap' && tapCount != null) body.tap_count = tapCount;
     post(API.updateQuests, body);
   };
 
   /* ── Balance sync — called every 30 s and on page leave ─────────── */
   const syncBalance = () => {
-    const u = tgUser();
-    if (!u || !u.id) return;
+    const tid = currentTelegramId();
+    if (!tid) return;
     const p = (window.RealPlayer && window.RealPlayer.get) ? window.RealPlayer.get() : {};
     post(API.syncBalance, {
-      telegram_id:    String(u.id),
+      telegram_id:    tid,
       real_balance:   p.balance  || 0,
       current_energy: p.energy   || 0,
       farr:           p.farr     || 0,
@@ -310,9 +338,9 @@
   const _chReady = new Promise(r => { _resolveChReady = r; });
 
   const initChapterProgress = async () => {
-    const u = tgUser();
-    if (!u || !u.id) { _resolveChReady(null); return; }
-    const data = await post(CH_API.get, { telegram_id: String(u.id) });
+    const tid = currentTelegramId();
+    if (!tid) { _resolveChReady(null); return; }
+    const data = await post(CH_API.get, { telegram_id: tid });
     if (!data || data.status !== 1) { _resolveChReady(null); return; }
 
     const serverChapters = data.chapters || {};
@@ -332,14 +360,14 @@
     if (toPush.length) {
       const chapters = {};
       toPush.forEach(s => { chapters[s] = chapterSnapshot(s); });
-      post(CH_API.save, { telegram_id: String(u.id), chapters, items, skins });
+      post(CH_API.save, { telegram_id: tid, chapters, items, skins });
     }
 
     /* Forward-fix for the chapter-card-reward gap: grantChapterCard() in
        chapter.js only fires for the page currently open, so chapters that
        arrived via the migration above (or from another device) never get
        their hero card without this sweep. Cheap no-op once nothing's missing. */
-    const reconcile = await post(API.reconcileChapterRewards, { telegram_id: String(u.id) });
+    const reconcile = await post(API.reconcileChapterRewards, { telegram_id: tid });
     if (reconcile && reconcile.status === 1 && reconcile.granted && reconcile.granted.length) {
       await syncHeroes();
     }
@@ -353,10 +381,10 @@
      before requesting a chapter's hero-card reward, which the backend now
      validates against ChapterProgress) can await it. */
   const saveChapterProgress = (slug) => {
-    const u = tgUser();
-    if (!u || !u.id || !slug) return Promise.resolve(null);
+    const tid = currentTelegramId();
+    if (!tid || !slug) return Promise.resolve(null);
     return post(CH_API.save, {
-      telegram_id: String(u.id),
+      telegram_id: tid,
       chapters: { [slug]: chapterSnapshot(slug) },
       items: _lsJSON('real_items_v1', '{}'),
       skins: _lsJSON('real_skin_unlocked_v1', '[]'),
@@ -367,9 +395,9 @@
   const HEROES_LS = 'real_owned_heroes_v1';
 
   const syncHeroes = async () => {
-    const u = tgUser();
-    if (!u || !u.id) return {};
-    const data = await post(API.userHeroes, { telegram_id: String(u.id) });
+    const tid = currentTelegramId();
+    if (!tid) return {};
+    const data = await post(API.userHeroes, { telegram_id: tid });
     if (!data || data.status !== 1) return {};
     const map = {};
     (data.heroes || []).forEach(h => { map[h.hero_id] = { level: h.level, zar_per_hour: h.zar_per_hour }; });
