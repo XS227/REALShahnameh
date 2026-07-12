@@ -19,6 +19,25 @@
   const fmtNF = (n)  => (window.RealI18N && window.RealI18N.formatNumber)
     ? window.RealI18N.formatNumber(Number(n) || 0) : String(Number(n) || 0);
 
+  /* SECURITY (2026-07-12): every name/photo field below (clan_name, motto,
+     first_name, profile_pic, clan_photo, applicant name) is player-set —
+     Telegram lets any user pick an arbitrary display name/photo URL, and
+     clan_name/motto are set by whoever founded the guild. This file used to
+     interpolate all of these straight into innerHTML with no escaping —
+     stored XSS reachable just by viewing a guild's member list, war
+     standings, or pending applications. Inside a Telegram Mini App this is
+     worse than typical stored XSS: injected JS can read
+     Telegram.WebApp.initData, the same signed proof
+     /season2/link-real-proof relies on for REAL wallet linking, so a
+     successful hit isn't just page defacement — it can impersonate another
+     player server-side. escHtml() below is for text content; escAttr() is
+     for values placed inside an HTML attribute (e.g. img src) — both are
+     needed because attribute context has one extra character (") to
+     neutralize that text content doesn't. */
+  const escHtml = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (m) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+  const escAttr = escHtml; // same escaping covers both contexts here
+
   const get = (url) =>
     fetch(url, { cache: 'no-store' })
       .then(r => r.ok ? r.json() : null)
@@ -94,7 +113,7 @@
     const badgeEl = document.getElementById('guild-hero-badge');
     if (badgeEl) {
       if (clan.clan_photo) {
-        badgeEl.innerHTML = `<img src="${clan.clan_photo}" alt="" onerror="this.outerHTML='${initial}'">`;
+        badgeEl.innerHTML = `<img src="${escAttr(clan.clan_photo)}" alt="" data-fallback="${escAttr(initial)}" onerror="this.replaceWith(document.createTextNode(this.dataset.fallback))">`;
       } else {
         badgeEl.textContent = initial;
       }
@@ -216,17 +235,18 @@
     }
 
     listEl.innerHTML = members.map(m => {
-      const name   = m.first_name || t('fallback_username', 'Warrior');
-      const init   = name.charAt(0).toUpperCase();
+      const rawName = m.first_name || t('fallback_username', 'Warrior');
+      const name   = escHtml(rawName);
+      const init   = escAttr(rawName.charAt(0).toUpperCase());
       /* Level is computed from XP — DB field is not reliably updated */
       const level  = Math.max(1, Math.floor((m.xp || 0) / 1000));
       const avatar = m.profile_pic
-        ? `<div class="guild-member-avatar"><img src="${m.profile_pic}" alt="" onerror="this.parentElement.textContent='${init}'"></div>`
+        ? `<div class="guild-member-avatar"><img src="${escAttr(m.profile_pic)}" alt="" data-fallback="${init}" onerror="this.parentElement.textContent=this.dataset.fallback"></div>`
         : `<div class="guild-member-avatar">${init}</div>`;
       const tag = m.is_leader
         ? `<span class="guild-member-tag guild-tag-leader">${t('guild_tag_leader')}</span>`
         : `<span class="guild-member-tag guild-tag-member">${t('guild_tag_member')}</span>`;
-      const uid = m.telegram_id ? String(m.telegram_id) : '';
+      const uid = m.telegram_id ? escAttr(String(m.telegram_id)) : '';
       return `<div class="guild-member-row">
         ${uid ? `<a href="profile.html?uid=${uid}" style="display:contents;">` : ''}
         ${avatar}
@@ -301,17 +321,17 @@
     }
 
     const rows = apps.map(a => `
-      <div class="guild-member-row" id="gm-app-${a.applicant_id}">
-        <div class="guild-member-avatar">${(a.name || 'W').charAt(0).toUpperCase()}</div>
+      <div class="guild-member-row" id="gm-app-${escAttr(a.applicant_id)}">
+        <div class="guild-member-avatar">${escHtml((a.name || 'W').charAt(0).toUpperCase())}</div>
         <div class="guild-member-info">
-          <div class="guild-member-name">${a.name || t('fallback_username', 'Warrior')}</div>
+          <div class="guild-member-name">${escHtml(a.name || t('fallback_username', 'Warrior'))}</div>
           <div class="guild-member-sub">${t('guild_lvl_xp', { lvl: Math.max(1, Math.floor((a.xp || 0) / 1000)), xp: fmtN(a.xp || 0) })}</div>
         </div>
         <div style="display:flex;gap:6px;flex-shrink:0;">
           <button class="guild-upgrade-btn" style="background:rgba(83,215,156,.12);border-color:rgba(83,215,156,.4);color:#53d79c;"
-            data-accept="${a.applicant_id}">${t('guild_btn_accept')}</button>
+            data-accept="${escAttr(a.applicant_id)}">${t('guild_btn_accept')}</button>
           <button class="guild-upgrade-btn" style="background:rgba(255,80,80,.1);border-color:rgba(255,80,80,.3);color:#ff5050;"
-            data-reject="${a.applicant_id}">${t('guild_btn_reject')}</button>
+            data-reject="${escAttr(a.applicant_id)}">${t('guild_btn_reject')}</button>
         </div>
       </div>`).join('');
 
@@ -337,16 +357,17 @@
             const countEl = document.getElementById('guild-member-count');
             if (countEl) countEl.textContent = t('guild_warriors_suffix', { n: fmtNF(count) });
             listEl.innerHTML = (membersData.members || []).map(m => {
-              const name  = m.first_name || t('fallback_username', 'Warrior');
-              const init  = name.charAt(0).toUpperCase();
+              const rawName = m.first_name || t('fallback_username', 'Warrior');
+              const name  = escHtml(rawName);
+              const init  = escAttr(rawName.charAt(0).toUpperCase());
               const level = Math.max(1, Math.floor((m.xp || 0) / 1000));
               const avatar = m.profile_pic
-                ? `<div class="guild-member-avatar"><img src="${m.profile_pic}" alt="" onerror="this.parentElement.textContent='${init}'"></div>`
+                ? `<div class="guild-member-avatar"><img src="${escAttr(m.profile_pic)}" alt="" data-fallback="${init}" onerror="this.parentElement.textContent=this.dataset.fallback"></div>`
                 : `<div class="guild-member-avatar">${init}</div>`;
               const tag = m.is_leader
                 ? `<span class="guild-member-tag guild-tag-leader">${t('guild_tag_leader')}</span>`
                 : `<span class="guild-member-tag guild-tag-member">${t('guild_tag_member')}</span>`;
-              const uid = m.telegram_id ? String(m.telegram_id) : '';
+              const uid = m.telegram_id ? escAttr(String(m.telegram_id)) : '';
               return `<div class="guild-member-row">
                 ${uid ? `<a href="profile.html?uid=${uid}" style="display:contents;">` : ''}
                 ${avatar}
@@ -515,16 +536,17 @@
 
     const rows = data.clans.map((c, i) => {
       const isMe   = c.clan_id === myClanId;
+      const clanInit = escAttr(String(c.clan_name || '?').charAt(0).toUpperCase());
       const badge  = c.clan_photo
-        ? `<div class="guild-war-badge"><img src="${c.clan_photo}" alt="" onerror="this.parentElement.textContent='${c.clan_name.charAt(0)}'"></div>`
-        : `<div class="guild-war-badge">${c.clan_name.charAt(0).toUpperCase()}</div>`;
+        ? `<div class="guild-war-badge"><img src="${escAttr(c.clan_photo)}" alt="" data-fallback="${clanInit}" onerror="this.parentElement.textContent=this.dataset.fallback"></div>`
+        : `<div class="guild-war-badge">${clanInit}</div>`;
       const rankCls = ['guild-war-rank-1','guild-war-rank-2','guild-war-rank-3'][i] || '';
       return `
         <div class="guild-war-row${isMe ? ' guild-war-you' : ''}">
           <div class="guild-war-rank ${rankCls}">${i + 1}</div>
           ${badge}
           <div class="guild-war-info">
-            <div class="guild-war-name">${c.clan_name}${isMe ? ' ⚔' : ''}</div>
+            <div class="guild-war-name">${escHtml(c.clan_name)}${isMe ? ' ⚔' : ''}</div>
             <div class="guild-war-sub">👥 ${t('guild_warriors_suffix', { n: c.member_count || 1 })}</div>
           </div>
           <div class="guild-war-score">${fmtN(c.total_real_earned)} ${RT}</div>
