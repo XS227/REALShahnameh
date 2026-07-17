@@ -2,6 +2,7 @@
 """Hakim Bot — Shahnameh AI Guardian (Telegram)"""
 
 import logging
+import time
 from telegram import Update
 from telegram.error import BadRequest, Forbidden, NetworkError, TelegramError
 from telegram.ext import (
@@ -72,10 +73,25 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     # Try primary provider; on quota/auth failure fall back to Anthropic
     primary_name = cfg.get("ai_provider", "openai")
     provider = get_provider(primary_name)
+    t0 = time.monotonic()
     response = await provider.respond(user_text, relevant, lang, cfg)
-    if response in (_quota_response(lang), _error_response(lang), _no_key_response(lang)):
+    used_name = primary_name
+    fallback_used = False
+    failure_markers = (_quota_response(lang), _error_response(lang), _no_key_response(lang))
+    primary_failed = response in failure_markers
+    if primary_failed:
         fallback_name = "anthropic" if primary_name == "openai" else "openai"
         response = await get_provider(fallback_name).respond(user_text, relevant, lang, cfg)
+        used_name = fallback_name
+        fallback_used = True
+    latency_ms = int((time.monotonic() - t0) * 1000)
+    succeeded = response not in failure_markers
+    # Instrumentation added 2026-07-17 for the admin Hakim page (§8.11) --
+    # real success/failure and timing per request, not a guessed metric.
+    chat_logger.log_request(
+        chat_id, used_name, fallback_used, succeeded, latency_ms,
+        error="" if succeeded else "provider_failure_after_fallback" if fallback_used else "provider_failure"
+    )
 
     chat_logger.log_message(chat_id, username, "out", response)
     await update.message.reply_text(response)
