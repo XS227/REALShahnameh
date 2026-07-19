@@ -601,7 +601,7 @@
       viral: "ЧОРАБИНИҲО",
       your_invite_link: "Пайванди даъвати шумо",
       share_to_telegram: "Мубодила дар Telegram",
-      open_in_telegram: "Дар Telegram кушоед",
+      open_in_telegram: "Ҳисоби шумо муайян нашуд. Барномаро аз нав кушоед.",
       copy_link: "Нусхаи пайванд",
       lifetime_10: "+10% умри ҳамеша",
       season_pts_20: "+20% холҳои мавсим",

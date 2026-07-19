@@ -29,6 +29,24 @@
     } catch (_) { return null; }
   };
 
+  // Resolved "who is asking" — live Telegram context first, otherwise the
+  // server-verified bridge RealSync exposes for REAL-ID-only accounts.
+  // Fixes "Open via Telegram" for every RealGram-only user (Khabat,
+  // 2026-07-19 — same fix already applied across profile.js/guild.js/
+  // inventory.js/social.js/tap.js).
+  const resolveMyId = async () => {
+    const tg = tgUser();
+    if (tg && tg.id) return String(tg.id);
+    if (window.RealSync && window.RealSync.ready) {
+      try { await window.RealSync.ready(); } catch (_) {}
+    }
+    if (window.RealSync && window.RealSync.currentTelegramId) {
+      const bridged = window.RealSync.currentTelegramId();
+      if (bridged) return bridged;
+    }
+    return '';
+  };
+
   const showToast = (msg) => {
     const el = document.querySelector('[data-toast]');
     if (!el) return;
@@ -408,11 +426,18 @@
   };
 
   const doCheckin = async () => {
-    const u = tgUser();
+    // Was gated on live Telegram context, falling back to a purely local,
+    // never-server-verified checkin for every RealGram-only user — their
+    // streak lived only in this device's localStorage, with no way to
+    // survive a reinstall or show up on another device. Now uses the same
+    // real_id/sso bridge every other server-synced action already does
+    // (Khabat, 2026-07-19), so a RealGram-only player's checkin is exactly
+    // as durable as a Telegram player's.
+    const myId = await resolveMyId();
     const btn = document.getElementById('ci-btn');
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
 
-    if (!u || !u.id) {
+    if (!myId) {
       const streak   = parseInt(localStorage.getItem('real_checkin_streak') || '0', 10);
       const newStreak = streak + 1;
       const idx       = Math.min(newStreak, 7) - 1;
@@ -429,7 +454,7 @@
       return;
     }
 
-    const data = await post('/api/season2/earn/checkin', { telegram_id: String(u.id) });
+    const data = await post('/api/season2/earn/checkin', { telegram_id: myId });
 
     if (!data || data.status !== 1) {
       if (data && data.error === 'already_claimed') {
@@ -560,8 +585,8 @@
     const btn = art ? art.querySelector('.task-check, .task-go') : null;
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
 
-    const u = tgUser();
-    if (!u || !u.id) {
+    const myId = await resolveMyId();
+    if (!myId) {
       /* Offline credit */
       const done = completedTasks();
       if (!done.includes(taskId)) {
@@ -582,7 +607,7 @@
     }
 
     const data = await post('/api/season2/earn/complete-task', {
-      telegram_id: String(u.id),
+      telegram_id: myId,
       task_id: taskId,
     });
 
@@ -726,8 +751,8 @@
     const btn = art ? art.querySelector('.task-check') : null;
     if (btn) { btn.disabled = true; btn.textContent = '…'; }
 
-    const u = tgUser();
-    if (!u || !u.id) {
+    const myId = await resolveMyId();
+    if (!myId) {
       const done = completedTasks();
       if (!done.includes(partnerId)) {
         const p = PARTNERS().find(x => x.id === partnerId);
@@ -746,7 +771,7 @@
     }
 
     const data = await post('/api/season2/earn/complete-task', {
-      telegram_id: String(u.id),
+      telegram_id: myId,
       task_id: partnerId,
     });
 
@@ -870,11 +895,11 @@
   };
 
   const claimMilestone = async (threshold) => {
-    const u = tgUser();
-    if (!u || !u.id) { showToast('Open via Telegram to claim'); return; }
+    const myId = await resolveMyId();
+    if (!myId) { showToast('Could not identify your account. Try reopening the app.'); return; }
 
     const data = await post('/api/season2/social/claim-milestone', {
-      telegram_id: String(u.id), milestone: threshold,
+      telegram_id: myId, milestone: threshold,
     });
 
     if (!data || data.status !== 1) {
@@ -1157,9 +1182,13 @@
     applyTeamMultUI(cachedVerified);
     renderMilestones(cachedVerified, cachedClaimed);
 
-    updateAirdropEligibility(u ? u.id : null);
+    // real_id/sso bridge fallback (Khabat, 2026-07-19) — was u?.id only,
+    // so airdrop eligibility + Pass 2's authoritative server fetch below
+    // silently never ran for any RealGram-only player.
+    const myId = await resolveMyId();
+    updateAirdropEligibility(myId || null);
 
-    if (!u || !u.id) return;
+    if (!myId) return;
 
     /* Pass 2 — fetch authoritative server state directly.
        Do NOT rely on sync.js or RealSync.ready() for task state because:
@@ -1168,9 +1197,9 @@
        Instead, earn.js fetches completed_tasks directly from /user/me and
        re-renders. This is the authoritative source of truth. */
     const [meData, refData] = await Promise.all([
-      fetch('/api/season2/user/me?' + new URLSearchParams({ telegram_id: String(u.id) }), { cache: 'no-store' })
+      fetch('/api/season2/user/me?' + new URLSearchParams({ telegram_id: myId }), { cache: 'no-store' })
         .then(r => r.ok ? r.json() : null).catch(() => null),
-      post('/api/season2/social/referrals', { telegram_id: String(u.id) }),
+      post('/api/season2/social/referrals', { telegram_id: myId }),
     ]);
 
     /* Update completed tasks from authoritative server response */

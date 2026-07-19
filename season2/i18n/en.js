@@ -588,7 +588,7 @@
       viral: "EVENTS",
       your_invite_link: "Your invite link",
       share_to_telegram: "Share to Telegram",
-      open_in_telegram: "Open in Telegram",
+      open_in_telegram: "Could not identify your account. Try reopening the app.",
       copy_link: "Copy Link",
       lifetime_10: "+10% lifetime",
       season_pts_20: "+20% Season pts",

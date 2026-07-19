@@ -32,6 +32,23 @@
     try { return window.Telegram?.WebApp?.initDataUnsafe?.user || null; } catch { return null; }
   };
 
+  // Resolved "who is asking" — live Telegram context first, otherwise the
+  // server-verified bridge RealSync exposes for REAL-ID-only accounts.
+  // Fixes "Open via Telegram" for every RealGram-only user (Khabat,
+  // 2026-07-19 — same fix already applied to profile.js/guild.js).
+  const resolveMyId = async () => {
+    const tg = tgUser();
+    if (tg && tg.id) return String(tg.id);
+    if (window.RealSync && window.RealSync.ready) {
+      try { await window.RealSync.ready(); } catch (_) {}
+    }
+    if (window.RealSync && window.RealSync.currentTelegramId) {
+      const bridged = window.RealSync.currentTelegramId();
+      if (bridged) return bridged;
+    }
+    return '';
+  };
+
   const localPlayer = () => {
     try { return JSON.parse(localStorage.getItem('real_player_state_v1') || '{}'); }
     catch { return {}; }
@@ -172,8 +189,8 @@
 
     panel.querySelectorAll('[data-buy]').forEach(btn => {
       btn.addEventListener('click', async () => {
-        const u = tgUser();
-        if (!u?.id) { showToast(t('open_in_telegram', 'Open via Telegram.')); return; }
+        const myId = await resolveMyId();
+        if (!myId) { showToast(t('open_in_telegram', 'Could not identify your account. Try reopening the app.')); return; }
         const skin = SKINS.find(s => s.id === btn.dataset.buy);
         const bal  = localPlayer().balance || 0;
         if (!skin || bal < skin.price) {
@@ -181,7 +198,7 @@
           return;
         }
         btn.disabled = true; btn.innerHTML = '…';
-        const res = await post('/api/season2/inventory/buy-skin', { telegram_id: String(u.id), skin_id: skin.id });
+        const res = await post('/api/season2/inventory/buy-skin', { telegram_id: myId, skin_id: skin.id });
         if (res?.status === 1) {
           try {
             const ps = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
@@ -256,12 +273,12 @@
 
     panel.querySelectorAll('[data-open-chest]').forEach(btn => {
       btn.addEventListener('click', async () => {
-        const u = tgUser();
-        if (!u?.id) { showToast(t('open_in_telegram', 'Open via Telegram.')); return; }
+        const myId = await resolveMyId();
+        if (!myId) { showToast(t('open_in_telegram', 'Could not identify your account. Try reopening the app.')); return; }
         const chestId = btn.dataset.openChest;
         btn.disabled = true; btn.textContent = '…';
 
-        const res = await post('/api/season2/inventory/open-chest', { telegram_id: String(u.id), chest_id: chestId });
+        const res = await post('/api/season2/inventory/open-chest', { telegram_id: myId, chest_id: chestId });
 
         if (res?.status === 1) {
           /* Update local balance + XP */
@@ -423,15 +440,15 @@
     const acBtn = document.getElementById('ac-buy-btn');
     if (acBtn) {
       acBtn.addEventListener('click', async () => {
-        const u = tgUser();
-        if (!u?.id) { showToast(t('open_in_telegram', 'Open via Telegram.')); return; }
+        const myId = await resolveMyId();
+        if (!myId) { showToast(t('open_in_telegram', 'Could not identify your account. Try reopening the app.')); return; }
         const curBal = localPlayer().balance || 0;
         if (curBal < AUTOCLICKER_PRICE) {
           showToast(t('inv_need_real', `Need ${fmtNF(AUTOCLICKER_PRICE)} REAL.`));
           return;
         }
         acBtn.disabled = true; acBtn.innerHTML = '…';
-        const res = await post('/api/season2/inventory/buy-autoclicker', { telegram_id: String(u.id) });
+        const res = await post('/api/season2/inventory/buy-autoclicker', { telegram_id: myId });
         if (res?.status === 1) {
           try {
             const ps = JSON.parse(localStorage.getItem('real_player_state_v1') || '{}');
@@ -470,14 +487,14 @@
       btn.addEventListener('click', () => showTab(btn.dataset.invTab));
     });
 
-    const u = tgUser();
+    const myId = await resolveMyId();
 
     /* Fetch server inventory (owned skins, opened chests) */
     let unlockedSkins  = [];
     let openedChests   = lsOpenedChests(); /* start with local cache so chests stay hidden on refresh */
     let serverACExpiry = null;
-    if (u?.id) {
-      const inv = await get('/api/season2/inventory?' + new URLSearchParams({ telegram_id: String(u.id) }));
+    if (myId) {
+      const inv = await get('/api/season2/inventory?' + new URLSearchParams({ telegram_id: myId }));
       if (inv?.status === 1) {
         unlockedSkins  = inv.unlocked_skins        || [];
         serverACExpiry = inv.autoclicker_expires_at || null;

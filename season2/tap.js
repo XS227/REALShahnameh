@@ -476,14 +476,23 @@
       }
       showUpgradeConfirm(cost, fromMax, toMax, async () => {
         btn.disabled = true;
+        // Live Telegram context first, otherwise the server-verified bridge
+        // RealSync exposes for REAL-ID-only accounts (Khabat, 2026-07-19 —
+        // same fix already applied across profile.js/guild.js/inventory.js/
+        // social.js).
         const tgUser = (() => { try { return window.Telegram?.WebApp?.initDataUnsafe?.user; } catch { return null; } })();
-        if (!tgUser?.id) { showToastFn('Open via Telegram to upgrade.'); btn.disabled = false; return; }
+        let myId = tgUser?.id ? String(tgUser.id) : '';
+        if (!myId && window.RealSync) {
+          try { await window.RealSync.ready(); } catch (_) {}
+          if (window.RealSync.currentTelegramId) myId = window.RealSync.currentTelegramId() || '';
+        }
+        if (!myId) { showToastFn('Could not identify your account. Try reopening the app.'); btn.disabled = false; return; }
 
         try {
           const res = await fetch('/api/season2/inventory/upgrade-energy', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ telegram_id: String(tgUser.id) }),
+            body: JSON.stringify({ telegram_id: myId }),
           }).then(r => r.ok ? r.json() : null);
 
           if (res?.status === 1) {
@@ -742,7 +751,12 @@
       const tgUser = window.Telegram && window.Telegram.WebApp &&
                      window.Telegram.WebApp.initDataUnsafe &&
                      window.Telegram.WebApp.initDataUnsafe.user;
-      if (!tgUser || !tgUser.id) { setSwapError(t('swap_tg_required')); return; }
+      let myId = tgUser?.id ? String(tgUser.id) : '';
+      if (!myId && window.RealSync) {
+        try { await window.RealSync.ready(); } catch (_) {}
+        if (window.RealSync.currentTelegramId) myId = window.RealSync.currentTelegramId() || '';
+      }
+      if (!myId) { setSwapError(t('swap_could_not_identify', 'Could not identify your account. Try reopening the app.')); return; }
       swapBtn.disabled = true;
       swapBtn.textContent = t('swap_ing');
       if (swapNote) { swapNote.textContent = ''; swapNote.style.color = ''; }
@@ -752,7 +766,7 @@
         const res = await fetch('/api/season2/user/zar-swap', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ telegram_id: String(tgUser.id), amount_real: realOut }),
+          body: JSON.stringify({ telegram_id: myId, amount_real: realOut }),
           signal: ctrl.signal,
         });
         clearTimeout(timeout);

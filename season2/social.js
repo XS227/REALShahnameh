@@ -32,6 +32,25 @@
     } catch (_) { return null; }
   };
 
+  // Resolved once at boot, referenced everywhere else in this file
+  // synchronously — live Telegram context first, otherwise the
+  // server-verified bridge RealSync exposes for REAL-ID-only accounts.
+  // Fixes "Open via Telegram" for every RealGram-only user (Khabat,
+  // 2026-07-19 — same fix already applied to profile.js/guild.js/inventory.js).
+  let _myId = '';
+  const resolveMyId = async () => {
+    const tg = tgUser();
+    if (tg && tg.id) return String(tg.id);
+    if (window.RealSync && window.RealSync.ready) {
+      try { await window.RealSync.ready(); } catch (_) {}
+    }
+    if (window.RealSync && window.RealSync.currentTelegramId) {
+      const bridged = window.RealSync.currentTelegramId();
+      if (bridged) return bridged;
+    }
+    return '';
+  };
+
   const t = (k, v) => (window.RealI18N && window.RealI18N.t(k, v)) || k;
   const fmtN_ = (n) => (window.RealI18N && window.RealI18N.formatNumber)
     ? window.RealI18N.formatNumber(Number(n) || 0) : String(Number(n) || 0);
@@ -98,8 +117,7 @@
     }
 
     const rows   = data.rows || [];
-    const u      = tgUser();
-    const myId   = u ? String(u.id) : null;
+    const myId   = _myId || null;
     const rankCls = (i) => ['top1', 'top2', 'top3'][i] || '';
 
     let html = rows.map((r, i) => {
@@ -148,7 +166,7 @@
           <span class="lb-pts">${scoreOf(type, myUser)}</span>
         </div>`;
     } else if (!myId) {
-      html += '<p class="clan-empty" style="margin:10px 16px 4px;font-size:12px;">Open via Telegram to see your rank.</p>';
+      html += '<p class="clan-empty" style="margin:10px 16px 4px;font-size:12px;">Could not identify your account. Try reopening the app.</p>';
     }
 
     panel.innerHTML = html;
@@ -166,9 +184,8 @@
 
     panel.innerHTML = lbSkeleton();
 
-    const u  = tgUser();
     const qs = new URLSearchParams({ type });
-    if (u && u.id) qs.set('telegram_id', String(u.id));
+    if (_myId) qs.set('telegram_id', _myId);
     const data = await get('/api/season2/social/leaderboard?' + qs.toString());
     lbCache[type] = data;
     renderLb(panel, type, data);
@@ -215,8 +232,7 @@
     if (headEl) headEl.style.display = '';
     container.innerHTML = "<p class=\"clan-empty\" style=\"padding:12px 0;\">" + t('loading_text','Loading…') + "</p>";
 
-    const u    = tgUser();
-    const myId = u ? String(u.id) : null;
+    const myId = _myId || null;
     const qs   = new URLSearchParams();
     if (myId) qs.set('telegram_id', myId);
 
@@ -271,7 +287,7 @@
     /* Wire Apply buttons */
     container.querySelectorAll('.clan-apply-btn').forEach(btn => {
       btn.addEventListener('click', async () => {
-        if (!myId) { showToast('Open via Telegram to apply.'); return; }
+        if (!myId) { showToast('Could not identify your account. Try reopening the app.'); return; }
         const clanId   = btn.dataset.clanId;
         const clanName = btn.dataset.clanName;
         btn.disabled   = true;
@@ -475,9 +491,8 @@
     const clanEl = document.getElementById('my-clan');
     if (!clanEl) return;
 
-    const u = tgUser();
-    if (!u || !u.id) {
-      clanEl.innerHTML = '<p class="clan-empty">Open via Telegram to see your clan.</p>';
+    if (!_myId) {
+      clanEl.innerHTML = '<p class="clan-empty">Could not identify your account. Try reopening the app.</p>';
       return;
     }
 
@@ -485,8 +500,8 @@
 
     /* Fetch clan membership and referral list in parallel */
     const [clanData, refData] = await Promise.all([
-      get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: String(u.id) })),
-      post('/api/season2/social/referrals', { telegram_id: String(u.id) }),
+      get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: _myId })),
+      post('/api/season2/social/referrals', { telegram_id: _myId }),
     ]);
 
     clanEl.innerHTML = '';
@@ -510,7 +525,7 @@
     /* ── Has a clan: show clan card ── */
     if (myClan) {
       const initial   = myClan.clan_name.charAt(0).toUpperCase();
-      const isLeader  = u && myClan.leader_id === String(u.id);
+      const isLeader  = myClan.leader_id === _myId;
       const tgLink    = myClan.telegram_group_link || '';
       const zarHr     = myClan.total_zar_per_hour  || 0;
 
@@ -591,7 +606,7 @@
           if (!dashboardOpen) {
             if (!dashboardLoaded) {
               dashboardLoaded = true;
-              loadLeaderDashboard(String(u.id), myClan.clan_id, manageClanEl, tgLink);
+              loadLeaderDashboard(_myId, myClan.clan_id, manageClanEl, tgLink);
             }
             manageClanEl.classList.add('open');
             dashboardOpen = true;
@@ -606,7 +621,7 @@
 
       /* Show clan members (not personal referrals) — referrals miss members who
          joined via direct invite / application, not through the share link.    */
-      const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: String(u.id) }));
+      const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: _myId }));
       const clanMembers = (membersData && membersData.status === 1) ? (membersData.members || []) : [];
       /* Map to the format renderWarriorList expects (verified = always true for clan members) */
       const warriorList = clanMembers.map(m => ({ ...m, verified: true }));
@@ -729,15 +744,14 @@
     });
 
     createBtn?.addEventListener('click', async () => {
-      const u = tgUser();
-      if (!u || !u.id) return;
+      if (!_myId) return;
       const name  = document.getElementById('clan-name-input')?.value.trim()  || '';
       const motto = document.getElementById('clan-motto-input')?.value.trim() || '';
 
       createBtn.disabled = true;
       createBtn.textContent = 'Creating…';
 
-      const data = await post('/api/season2/clan/create', { telegram_id: String(u.id), clan_name: name, motto });
+      const data = await post('/api/season2/clan/create', { telegram_id: _myId, clan_name: name, motto });
 
       if (!data || data.status !== 1) {
         const msg = {
@@ -928,9 +942,8 @@
 
     container.innerHTML = '<p class="clan-empty" style="padding:12px 0;">' + t('loading_text','Loading…') + '</p>';
 
-    const u  = tgUser();
     const qs = new URLSearchParams();
-    if (u && u.id) qs.set('telegram_id', String(u.id));
+    if (_myId) qs.set('telegram_id', _myId);
 
     const data = await get('/api/season2/events?' + qs.toString());
 
@@ -1009,6 +1022,7 @@
   /* ── INIT ─────────────────────────────────────────────────────────────── */
 
   const init = async () => {
+    _myId = await resolveMyId();
     setLive(false);
     wireTabs();
     wireClanModal();

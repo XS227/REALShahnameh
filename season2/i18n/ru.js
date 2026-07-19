@@ -587,7 +587,7 @@
       viral: "СОБЫТИЯ",
       your_invite_link: "Ваша ссылка-приглашение",
       share_to_telegram: "Поделиться в Telegram",
-      open_in_telegram: "Открыть в Telegram",
+      open_in_telegram: "Не удалось определить аккаунт. Попробуйте перезапустить приложение.",
       copy_link: "Копировать ссылку",
       lifetime_10: "+10% навсегда",
       season_pts_20: "+20% очков сезона",

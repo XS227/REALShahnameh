@@ -603,7 +603,7 @@
       viral: "رویدادها",
       your_invite_link: "لینک دعوت شما",
       share_to_telegram: "اشتراک در تلگرام",
-      open_in_telegram: "در تلگرام باز کنید",
+      open_in_telegram: "حساب شما شناسایی نشد. لطفاً برنامه را دوباره باز کنید.",
       copy_link: "کپی لینک",
       lifetime_10: "+۱۰٪ مادام‌العمر",
       season_pts_20: "+۲۰٪ امتیاز فصل",
