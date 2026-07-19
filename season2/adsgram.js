@@ -56,6 +56,22 @@
     } catch (_) { return null; }
   };
 
+  /* Diagnostic-only beacon (2026-07-19): showAd() can fail at several
+     points (SDK not loaded, no fill, ad skipped, cooldown) with nothing
+     reaching the server — from admin's side that looks identical to "no
+     signal at all", indistinguishable from the user never trying. Fired
+     best-effort, never blocks/throws into the caller. */
+  const logEvent = (event, detail) => {
+    try {
+      fetch('/api/season2/ads/client-event', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ telegram_id: tgUserId() || '', event, detail: detail || '' }),
+        keepalive: true,
+      }).catch(() => {});
+    } catch (_) {}
+  };
+
   /* Public: current watch state for UI rendering */
   const getWatchState = () => {
     const s           = readState();
@@ -78,34 +94,41 @@
     const ws = getWatchState();
 
     if (ws.remaining <= 0) {
+      logEvent('ad_reject', 'daily_limit');
       reject({ type: 'daily_limit' });
       return;
     }
     if (ws.cooldownSecs > 0) {
+      logEvent('ad_reject', 'cooldown:' + ws.cooldownSecs + 's');
       reject({ type: 'cooldown', wait_seconds: ws.cooldownSecs });
       return;
     }
 
     const blockId = getBlockId();
     if (!blockId) {
+      logEvent('ad_reject', 'not_configured');
       reject({ type: 'not_configured' });
       return;
     }
     if (!window.Adsgram) {
+      logEvent('ad_reject', 'sdk_missing');
       reject({ type: 'sdk_missing' });
       return;
     }
 
     let controller;
     try {
+      logEvent('ad_attempt', 'blockId:' + blockId);
       controller = window.Adsgram.init({ blockId });
     } catch (e) {
+      logEvent('ad_reject', 'init_error:' + String(e).slice(0, 120));
       reject({ type: 'error', error: String(e) });
       return;
     }
 
     controller.show().then(async (result) => {
       if (!result || !result.done) {
+        logEvent('ad_reject', 'skipped');
         reject({ type: 'skipped' });
         return;
       }
@@ -129,12 +152,27 @@
           });
           if (resp.ok) {
             const data = await resp.json();
-            if (data.status === 1 && data.rewards && data.rewards.gems) {
-              gems = data.rewards.gems;
+            if (data.status === 1) {
+              if (data.rewards && data.rewards.gems) gems = data.rewards.gems;
+            } else {
+              /* Server explicitly denied the credit (cooldown/limit out of
+                 sync with local state, etc.) — the UI below still shows the
+                 reward, so this is the case that most looks like "the ad
+                 worked but nothing shows up server-side". */
+              logEvent('ad_credit_denied', String(data.error || 'unknown'));
             }
+          } else {
+            logEvent('ad_credit_http_error', 'status:' + resp.status);
           }
-        } catch (_) {}
+        } catch (e) {
+          /* Network/fetch failure — reward still granted client-side below,
+             so the user sees the coin animation but the server never
+             recorded it. This is the exact "no AdsGram signal in admin"
+             symptom when it happens silently. */
+          logEvent('ad_credit_fetch_failed', String(e).slice(0, 120));
+        }
       } else {
+        logEvent('ad_credit_skipped', 'no_telegram_uid');
         /* Offline: compute gem from local count */
         if (s.used === AD_DAILY_LIMIT) gems = AD_GEM_FIFTH;
       }
@@ -147,8 +185,10 @@
         if (window.RealSync) window.RealSync.syncBalance();
       }
 
+      logEvent('ad_success', 'gems:' + gems);
       resolve({ rewards });
     }).catch((err) => {
+      logEvent('ad_reject', 'show_promise_rejected:' + String(err).slice(0, 120));
       reject({ type: 'ad_error', error: err });
     });
   });
