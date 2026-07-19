@@ -6,6 +6,38 @@
 (function () {
   'use strict';
 
+  /* ── Debug bridge ──────────────────────────────────────────────────
+     2026-07-19, Khabat's black-spinner report: sync.js/home.js had zero
+     logging, making on-device root-causing impossible. This tracks the
+     last init step reached + any runtime error, logs to console, and
+     (when running inside the RealGram WebView) posts to RN via
+     ReactNativeWebView.postMessage so a future RN-side error screen can
+     read it. Never logs the raw sso token, only its presence/length. */
+  const REALDBG = (() => {
+    const state = { lastStep: 'sync.js:evaluating', errors: [] };
+    const emit = (payload) => {
+      try {
+        console.log('[S2DBG]', payload.step || ('error: ' + payload.error), payload);
+        if (window.ReactNativeWebView && window.ReactNativeWebView.postMessage) {
+          window.ReactNativeWebView.postMessage(JSON.stringify(Object.assign({ source: 'season2debug' }, payload)));
+        }
+      } catch (_) {}
+    };
+    return {
+      step(name, extra) { state.lastStep = name; emit(Object.assign({ step: name }, extra)); },
+      error(err, extra) {
+        const msg = (err && err.message) || String(err);
+        state.errors.push(msg);
+        emit(Object.assign({ error: msg }, extra));
+      },
+      get state() { return state; },
+    };
+  })();
+  window.__realDebug = REALDBG;
+  window.addEventListener('error', (e) => REALDBG.error(e.error || e.message, { via: 'window.onerror' }));
+  window.addEventListener('unhandledrejection', (e) => REALDBG.error(e.reason, { via: 'unhandledrejection' }));
+  REALDBG.step('sync.js:parsed');
+
   const API = {
     userSync:     '/api/season2/user/sync',
     updateQuests: '/api/season2/user/update-quests',
@@ -96,9 +128,18 @@
 
   /* ── init: call once on every page load ──────────────────────────── */
   const init = async () => {
+    REALDBG.step('sync.js:init:start');
     const u = tgUser();
     const ssoToken = !u || !u.id ? ssoTokenFromUrl() : '';
-    if ((!u || !u.id) && !ssoToken) { _resolveReady(null); return; }
+    REALDBG.step('sync.js:init:identity-resolved', {
+      hasTelegramUser: !!(u && u.id),
+      sso: ssoToken ? ('present (' + ssoToken.length + ' chars)') : 'missing',
+    });
+    if ((!u || !u.id) && !ssoToken) {
+      REALDBG.step('sync.js:init:no-identity-abort');
+      _resolveReady(null);
+      return;
+    }
 
     let startParam = '';
     try {
@@ -106,6 +147,7 @@
         && window.Telegram.WebApp.initDataUnsafe.start_param) || '';
     } catch (_) {}
 
+    REALDBG.step('sync.js:init:posting-user-sync');
     const data = await post(API.userSync, ssoToken ? {
       sso_token: ssoToken,
     } : {
@@ -119,9 +161,11 @@
     });
 
     if (!data || data.status !== 1 || !data.user) {
+      REALDBG.step('sync.js:init:user-sync-failed', { status: data && data.status });
       _resolveReady(null);
       return;
     }
+    REALDBG.step('sync.js:init:user-sync-ok');
 
     const su = data.user;
     if (ssoToken && su.telegram_id) _ssoTelegramId = String(su.telegram_id);
@@ -134,8 +178,12 @@
        forever, silently. 2026-07-19, Khabat's black-spinner report. */
     try {
       hydrateLocalStateFrom(su);
-    } catch (_) { /* su itself is still valid — resolveReady below regardless */ }
+    } catch (err) {
+      REALDBG.error(err, { via: 'hydrateLocalStateFrom' });
+      /* su itself is still valid — resolveReady below regardless */
+    }
 
+    REALDBG.step('sync.js:init:ready');
     _resolveReady(su);
   };
 

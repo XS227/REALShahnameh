@@ -4,6 +4,7 @@
    the page never blanks out. */
 (() => {
   "use strict";
+  if (window.__realDebug) window.__realDebug.step('home.js:parsed');
   const RT = '<img src="/assets/images/tokens/realtoken.png" alt="REAL" class="real-tok-img" onerror="this.outerHTML=\'◆\'">';
 
   const $ = (s, r = document) => r.querySelector(s);
@@ -908,6 +909,7 @@
 
   /* ── Boot ────────────────────────────────────────────────────────────── */
   const bootHomeHydration = () => {
+    if (window.__realDebug) window.__realDebug.step('home.js:boot:start');
     hydrateProfile();
     hydrateBanner();
     hydrateQuests();
@@ -920,8 +922,11 @@
     setTimeout(showBetaNotice, 400);
     setTimeout(doReturnPopups, 600);
 
+    if (window.__realDebug) window.__realDebug.step('home.js:boot:sync-render-done');
+
     if (window.RealSync) {
       window.RealSync.ready().then(async (su) => {
+        if (window.__realDebug) window.__realDebug.step('home.js:boot:realsync-ready', { hasUser: !!su });
         hydrateProfile();
         hydrateQuests(su);
         hydrateBadge((window.RealPlayer && window.RealPlayer.get)
