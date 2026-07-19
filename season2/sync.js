@@ -509,6 +509,13 @@
     chapterProgressReady: () => _chReady,
     saveChapterProgress,
     chapterSnapshot,
+    // Exposed 2026-07-19 (Khabat: remove Telegram remnants from profile.js/
+    // guild.js) so pages other than this one can resolve "who is asking"
+    // the same way init() already does internally: live Telegram context
+    // first, falling back to the server-verified telegram_id bridged onto
+    // a REAL-ID-only account by /user/sync. Await ready() first — this is
+    // only populated once that call has actually completed.
+    currentTelegramId,
   };
 
   /* Auto-start: call init() once DOM has loaded and app.js has run */

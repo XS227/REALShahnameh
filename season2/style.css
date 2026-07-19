@@ -124,7 +124,13 @@ a { color: inherit; }
   z-index: 1;
   width: min(460px, 100%);
   margin: 0 auto;
-  padding: 56px 16px calc(72px + env(safe-area-inset-bottom, 0px));
+  /* --realgram-bottom-nav-height: injected by ShahnamehEmbed.tsx
+     (RealGram's own native tab bar sits as a sibling native view outside
+     this page, so there's no OS-level safe-area for it — this CSS var is
+     the only way this stylesheet can know about it). 0px no-op in any
+     other context (plain browser, Telegram Mini App). Fixes RealGram's
+     nav covering the bottom of every season2 page (Khabat, 2026-07-19). */
+  padding: 56px 16px calc(72px + env(safe-area-inset-bottom, 0px) + var(--realgram-bottom-nav-height, 0px));
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -2284,7 +2290,15 @@ body.ob-open { overflow: hidden; }
 }
 .hmenu-close:hover { background: rgba(255,82,103,0.14); color: var(--crimson); border-color: rgba(255,82,103,0.3); }
 
-.hmenu-body { flex: 1; padding: 10px 0 20px; }
+/* min-height:0 override needed: flex items default to min-height:auto,
+   which stops a flex child from shrinking below its own content size —
+   that silently prevented .hmenu-panel's own overflow-y:auto from ever
+   engaging, so .hmenu-settings (language/audio/Season 1/reset) was
+   unreachable below the fold (Khabat, 2026-07-19). Also reserve space for
+   RealGram's native bottom nav, which this absolutely-positioned panel
+   would otherwise run underneath (var set by ShahnamehEmbed.tsx via
+   injectedJavaScriptBeforeContentLoaded; 0px no-op outside the app). */
+.hmenu-body { flex: 1; min-height: 0; padding: 10px 0 calc(20px + var(--realgram-bottom-nav-height, 0px)); }
 
 .hmenu-section-label {
   font-size: 9px;

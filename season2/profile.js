@@ -12,6 +12,27 @@
   let _clanData   = null;   // latest /clan/my-clan response
   let _tg         = null;   // Telegram user object
   let _isS1       = false;  // Season 1 Founder status (fetched from legacy API)
+  // Resolved "who is asking" for every telegram_id-keyed API call below —
+  // live Telegram context when present, otherwise the server-verified
+  // bridge RealSync.currentTelegramId() exposes for REAL-ID-only accounts.
+  // Set once in load(), after awaiting RealSync.ready(). Fixes "Open via
+  // Telegram" showing for every non-Telegram RealGram user (Khabat,
+  // 2026-07-19, A->B(38) item 3) — profile.js/guild.js were the only
+  // season2 pages that never read the bridge sync.js already provides.
+  let _myId       = '';
+
+  const resolveMyId = async () => {
+    const tg = tgUser();
+    if (tg && tg.id) return String(tg.id);
+    if (window.RealSync && window.RealSync.ready) {
+      try { await window.RealSync.ready(); } catch (_) {}
+    }
+    if (window.RealSync && window.RealSync.currentTelegramId) {
+      const bridged = window.RealSync.currentTelegramId();
+      if (bridged) return bridged;
+    }
+    return '';
+  };
 
   /* Ordered chapter slugs — used to compute current chapter from localStorage */
   const CHAPTER_SLUGS = [
@@ -170,7 +191,7 @@
     // Clan Leader badge — compare user's telegram_id with clan's leader_id
     const clanBadgeEl = document.getElementById('profile-clan-badge');
     if (clanBadgeEl) {
-      const myId    = String(u.telegram_id || (tg && tg.id) || '');
+      const myId    = String(_myId || u.telegram_id || (tg && tg.id) || '');
       const isLeader = !!(myId && _clanData && _clanData.leader_id && String(_clanData.leader_id) === myId);
       clanBadgeEl.hidden = !isLeader;
     }
@@ -248,8 +269,8 @@
         _clanUploadInput.value = ''; // reset so same file can be reselected
         if (!file) return;
 
-        const myId = String((_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
-        if (!myId) { _showToast('Could not identify user. Open via Telegram.'); return; }
+        const myId = String(_myId || (_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
+        if (!myId) { _showToast(t('profile_could_not_identify', 'Could not identify your account. Try reopening the app.')); return; }
 
         /* Show loading state on the upload button */
         const uploadLabel = document.getElementById('clan-upload-label');
@@ -320,7 +341,7 @@
       return;
     }
 
-    const myId      = String((_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
+    const myId      = String(_myId || (_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
     const isLeader  = !!(clan.leader_id && myId && clan.leader_id === myId);
     const memberCount = clan.member_count || 1;
     const zarHr     = clan.total_zar_per_hour || 0;
@@ -398,7 +419,7 @@
     if (s1El) s1El.hidden = !_isS1;
     const clanBadgeEl = document.getElementById('profile-clan-badge');
     if (clanBadgeEl) {
-      const myId = String((_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
+      const myId = String(_myId || (_serverUser && _serverUser.telegram_id) || (_tg && _tg.id) || '');
       clanBadgeEl.hidden = !(myId && _clanData && _clanData.leader_id && String(_clanData.leader_id) === myId);
     }
   };
@@ -555,17 +576,15 @@
 
   /* ── Fetch helpers ────────────────────────────────────────────────────── */
   const fetchUser = async () => {
-    const tg = _tg;
-    if (!tg || !tg.id) return null;
-    const qs = new URLSearchParams({ telegram_id: String(tg.id) });
+    if (!_myId) return null;
+    const qs = new URLSearchParams({ telegram_id: _myId });
     const resp = await apiGet('/api/season2/user/me?' + qs.toString());
     return (resp && resp.status === 1) ? resp.user : null;
   };
 
   const fetchClan = async () => {
-    const tg = _tg;
-    if (!tg || !tg.id) return null;
-    const qs = new URLSearchParams({ telegram_id: String(tg.id) });
+    if (!_myId) return null;
+    const qs = new URLSearchParams({ telegram_id: _myId });
     const resp = await apiGet('/api/season2/clan/my-clan?' + qs.toString());
     return (resp && resp.status === 1) ? resp.clan : null;
   };
@@ -695,14 +714,14 @@
 
   /* ── Main load ────────────────────────────────────────────────────────── */
   const load = async () => {
-    _tg = tgUser();
+    _tg   = tgUser();
+    _myId = await resolveMyId();
 
     /* ── Visitor mode: viewing another player's profile ── */
     if (_isVisitor) {
       applyVisitorMode();
       const visitedQs = new URLSearchParams({ telegram_id: _visitUid });
-      const myTg      = tgUser();
-      const myQs      = myTg ? new URLSearchParams({ telegram_id: String(myTg.id) }) : null;
+      const myQs      = _myId ? new URLSearchParams({ telegram_id: _myId }) : null;
 
       const [resp, clanResp, myClanResp, s1] = await Promise.all([
         fetch('/api/season2/user/me?' + visitedQs.toString(), { cache: 'no-store' })
@@ -734,7 +753,7 @@
 
       /* Determine if the current viewer is a clan leader who can invite */
       const myClan = myClanResp && myClanResp.status === 1 ? myClanResp.clan : null;
-      const myId   = myTg ? String(myTg.id) : '';
+      const myId   = _myId;
       const amLeader = !!(myClan && myClan.leader_id && myId && myClan.leader_id === myId);
       const targetHasNoClan = !_clanData;
 
@@ -804,10 +823,10 @@
     }
 
     /* ── Own profile ── */
-    if (!_tg || !_tg.id) {
+    if (!_myId) {
       renderFallback(null);
       const nameEl = document.getElementById('profile-name');
-      if (nameEl) nameEl.textContent = 'Open via Telegram';
+      if (nameEl) nameEl.textContent = t('profile_could_not_identify', 'Could not identify your account. Try reopening the app.');
       return;
     }
 
@@ -815,7 +834,7 @@
     const [u, clan, s1Own] = await Promise.all([
       fetchUser(),
       fetchClan(),
-      fetchLegacyS1(String(_tg.id)),
+      fetchLegacyS1(_myId),
     ]);
 
     if (!u) {
@@ -850,7 +869,7 @@
     renderAll();
 
     /* Load pending clan invites (only shown when player has no clan yet) */
-    if (!clan) loadClanInvites(String(_tg.id));
+    if (!clan) loadClanInvites(_myId);
 
     /* Live update on client-side state changes (instant) */
     window.addEventListener('balanceUpdate',       renderAll);

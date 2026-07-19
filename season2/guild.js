@@ -57,6 +57,25 @@
     } catch { return null; }
   };
 
+  // Resolved "who is asking" for every telegram_id-keyed clan API call —
+  // live Telegram context first, otherwise the server-verified bridge
+  // sync.js's RealSync exposes for REAL-ID-only accounts. Fixes the guild
+  // page treating every non-Telegram RealGram user as clanless (Khabat,
+  // 2026-07-19, A->B(38) item 3 — same fix as profile.js).
+  let _myId = '';
+  const resolveMyId = async () => {
+    const tg = tgUser();
+    if (tg && tg.id) return String(tg.id);
+    if (window.RealSync && window.RealSync.ready) {
+      try { await window.RealSync.ready(); } catch (_) {}
+    }
+    if (window.RealSync && window.RealSync.currentTelegramId) {
+      const bridged = window.RealSync.currentTelegramId();
+      if (bridged) return bridged;
+    }
+    return '';
+  };
+
   const localPlayer = () => {
     try { return JSON.parse(localStorage.getItem('real_player_state_v1') || '{}'); }
     catch { return {}; }
@@ -108,7 +127,7 @@
   const populateHero = (clan, u) => {
     const tier    = tierFor(clan.member_count || 1);
     const initial = clan.clan_name.charAt(0).toUpperCase();
-    const isLeader = u && clan.leader_id === String(u.id);
+    const isLeader = _myId && clan.leader_id === _myId;
 
     const badgeEl = document.getElementById('guild-hero-badge');
     if (badgeEl) {
@@ -159,7 +178,7 @@
     const panel = document.getElementById('guild-panel-overview');
     if (!panel) return;
 
-    const isLeader = u && clan.leader_id === String(u.id);
+    const isLeader = _myId && clan.leader_id === _myId;
     const tgLink   = clan.telegram_group_link || '';
 
     const openLink = (url) => {
@@ -216,14 +235,14 @@
         document.getElementById('guild-manage-btn').textContent = manageOpen ? t('guild_btn_manage_close') : t('guild_btn_manage');
         if (manageOpen && !manageLoaded) {
           manageLoaded = true;
-          buildManagePanel(clan, String(u.id), panel);
+          buildManagePanel(clan, _myId, panel);
         }
       });
     }
 
     /* Load member list */
-    if (!u || !u.id) return;
-    const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: String(u.id) }));
+    if (!_myId) return;
+    const membersData = await get('/api/season2/clan/members?' + new URLSearchParams({ telegram_id: _myId }));
     const listEl      = document.getElementById('guild-member-list');
     if (!listEl) return;
 
@@ -634,14 +653,13 @@
     });
 
     document.getElementById('contrib-confirm-btn')?.addEventListener('click', async () => {
-      const u      = tgUser();
       const inp    = document.getElementById('contrib-amount');
       const amount = Math.floor(Number(inp?.value || 0));
       const btn    = document.getElementById('contrib-confirm-btn');
 
-      if (!u || !u.id) {
+      if (!_myId) {
         closeContribModal();
-        showToast(t('guild_open_telegram'));
+        showToast(t('guild_could_not_identify', 'Could not identify your account. Try reopening the app.'));
         return;
       }
       if (!amount || amount < 100) {
@@ -654,7 +672,7 @@
       btn.textContent = '…';
 
       const res = await post('/api/season2/clan/contribute', {
-        telegram_id: String(u.id),
+        telegram_id: _myId,
         amount,
       });
 
@@ -676,7 +694,7 @@
         const tp    = document.getElementById('guild-panel-treasury');
         const amtEl = tp?.querySelector('.guild-treasury-amount');
         if (amtEl) {
-          const cd = await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: String(u.id) }));
+          const cd = await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: _myId }));
           if (cd?.status === 1 && cd.clan) {
             amtEl.innerHTML = `${fmtN(cd.clan.treasury || 0)} ${RT}`;
           }
@@ -701,14 +719,15 @@
 
     try {
       const u = tgUser();
+      _myId = await resolveMyId();
 
-      if (!u || !u.id) {
+      if (!_myId) {
         const cachedClanId = localStorage.getItem('real_my_clan_id') || '';
         if (!cachedClanId) { showNoClan(); return; }
       }
 
-      const clanData = u
-        ? await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: String(u.id) }))
+      const clanData = _myId
+        ? await get('/api/season2/clan/my-clan?' + new URLSearchParams({ telegram_id: _myId }))
         : null;
 
       const clan = (clanData?.status === 1) ? clanData.clan : null;
