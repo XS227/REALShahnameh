@@ -23,14 +23,26 @@
     } catch (_) { return null; }
   };
 
+  const POST_TIMEOUT_MS = 10000;
+
+  /* Never hangs: fetch() has no default timeout, and a stalled connection
+     (not a fail — a hang) would otherwise leave the caller's Promise
+     pending forever with nothing to catch. Always resolves (null on any
+     failure/timeout), never rejects. */
   const post = (url, body) => {
     try {
+      const ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+      const tid  = ctrl ? setTimeout(() => ctrl.abort(), POST_TIMEOUT_MS) : null;
       return fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
         keepalive: true,
-      }).then(r => r.ok ? r.json() : null).catch(() => null);
+        signal: ctrl ? ctrl.signal : undefined,
+      })
+        .then(r => r.ok ? r.json() : null)
+        .catch(() => null)
+        .finally(() => { if (tid) clearTimeout(tid); });
     } catch (_) { return Promise.resolve(null); }
   };
 
@@ -114,6 +126,20 @@
     const su = data.user;
     if (ssoToken && su.telegram_id) _ssoTelegramId = String(su.telegram_id);
 
+    /* Everything below this point is best-effort local-state hydration —
+       none of it should ever be able to stop _resolveReady(su) from firing.
+       Before this fix, an uncaught throw anywhere here (e.g. RealPlayer.set
+       hitting a full localStorage quota) would leave RealSync.ready() —
+       a bare `new Promise` with no reject path or timeout — pending
+       forever, silently. 2026-07-19, Khabat's black-spinner report. */
+    try {
+      hydrateLocalStateFrom(su);
+    } catch (_) { /* su itself is still valid — resolveReady below regardless */ }
+
+    _resolveReady(su);
+  };
+
+  function hydrateLocalStateFrom(su) {
     /* Merge authoritative server values into Player localStorage state.
        Take the higher of server and local for ZAR and balance to prevent
        a stale-DB value from overwriting client-side earnings. */
@@ -202,9 +228,7 @@
     if (offlineZar >= 1) {
       _showOfflineBonus(offlineZar);
     }
-
-    _resolveReady(su);
-  };
+  }
 
   /* ── Quest sync — called immediately on completion ──────────────── */
   const syncQuest = (quest, tapCount) => {
@@ -343,36 +367,42 @@
     const data = await post(CH_API.get, { telegram_id: tid });
     if (!data || data.status !== 1) { _resolveChReady(null); return; }
 
-    const serverChapters = data.chapters || {};
-    Object.keys(serverChapters).forEach(slug => _applyChapter(slug, serverChapters[slug]));
+    /* Same guarantee as init() above: nothing past this point may prevent
+       _resolveChReady(data) from firing — chapterProgressReady() must
+       always settle so a caller awaiting it can always proceed. */
+    try {
+      const serverChapters = data.chapters || {};
+      Object.keys(serverChapters).forEach(slug => _applyChapter(slug, serverChapters[slug]));
 
-    /* Items + tap skins (chapter artifacts) */
-    const items = _lsJSON('real_items_v1', '{}');
-    Object.keys(data.items || {}).forEach(id => { items[id] = true; });
-    _lsSet('real_items_v1', JSON.stringify(items));
-    const skins = _union(_lsJSON('real_skin_unlocked_v1', '[]'), data.skins);
-    _lsSet('real_skin_unlocked_v1', JSON.stringify(skins));
+      /* Items + tap skins (chapter artifacts) */
+      const items = _lsJSON('real_items_v1', '{}');
+      Object.keys(data.items || {}).forEach(id => { items[id] = true; });
+      _lsSet('real_items_v1', JSON.stringify(items));
+      const skins = _union(_lsJSON('real_skin_unlocked_v1', '[]'), data.skins);
+      _lsSet('real_skin_unlocked_v1', JSON.stringify(skins));
 
-    /* One-time migration: push local chapters the server doesn't know yet
-       (or knows as not-done while this device has them completed). */
-    const toPush = _localChapterSlugs().filter(s =>
-      !serverChapters[s] || (!serverChapters[s].done && _lsGet('real_chapter_done_' + s) === '1'));
-    if (toPush.length) {
-      const chapters = {};
-      toPush.forEach(s => { chapters[s] = chapterSnapshot(s); });
-      post(CH_API.save, { telegram_id: tid, chapters, items, skins });
-    }
+      /* One-time migration: push local chapters the server doesn't know yet
+         (or knows as not-done while this device has them completed). */
+      const toPush = _localChapterSlugs().filter(s =>
+        !serverChapters[s] || (!serverChapters[s].done && _lsGet('real_chapter_done_' + s) === '1'));
+      if (toPush.length) {
+        const chapters = {};
+        toPush.forEach(s => { chapters[s] = chapterSnapshot(s); });
+        post(CH_API.save, { telegram_id: tid, chapters, items, skins });
+      }
 
-    /* Forward-fix for the chapter-card-reward gap: grantChapterCard() in
-       chapter.js only fires for the page currently open, so chapters that
-       arrived via the migration above (or from another device) never get
-       their hero card without this sweep. Cheap no-op once nothing's missing. */
-    const reconcile = await post(API.reconcileChapterRewards, { telegram_id: tid });
-    if (reconcile && reconcile.status === 1 && reconcile.granted && reconcile.granted.length) {
-      await syncHeroes();
-    }
+      /* Forward-fix for the chapter-card-reward gap: grantChapterCard() in
+         chapter.js only fires for the page currently open, so chapters that
+         arrived via the migration above (or from another device) never get
+         their hero card without this sweep. Cheap no-op once nothing's missing. */
+      const reconcile = await post(API.reconcileChapterRewards, { telegram_id: tid });
+      if (reconcile && reconcile.status === 1 && reconcile.granted && reconcile.granted.length) {
+        await syncHeroes();
+      }
 
-    try { window.dispatchEvent(new CustomEvent('real:chapters:synced')); } catch (_) {}
+      window.dispatchEvent(new CustomEvent('real:chapters:synced'));
+    } catch (_) { /* data itself is still valid — resolveChReady below regardless */ }
+
     _resolveChReady(data);
   };
 
