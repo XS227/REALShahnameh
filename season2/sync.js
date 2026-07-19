@@ -21,6 +21,22 @@
         if (window.ReactNativeWebView && window.ReactNativeWebView.postMessage) {
           window.ReactNativeWebView.postMessage(JSON.stringify(Object.assign({ source: 'season2debug' }, payload)));
         }
+        /* Server-side beacon (2026-07-19): no device/adb access from the
+           backend side, so mirror every step/error to the existing
+           ads client-event log via the already-live /ads/client-event
+           endpoint (no backend redeploy needed) — readable straight off
+           disk while a real device is being tested. */
+        const name = payload.step || ('error:' + payload.error);
+        fetch('/api/season2/ads/client-event', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          keepalive: true,
+          body: JSON.stringify({
+            telegram_id: 's2dbg',
+            event: String(name).slice(0, 40),
+            detail: JSON.stringify(payload).slice(0, 200),
+          }),
+        }).catch(() => {});
       } catch (_) {}
     };
     return {
