@@ -452,11 +452,19 @@
         const tgU = window.Telegram && window.Telegram.WebApp &&
                     window.Telegram.WebApp.initDataUnsafe &&
                     window.Telegram.WebApp.initDataUnsafe.user;
-        if (!tgU || !tgU.id) { close(); return; }
+        // Bridge fallback (Khabat, 2026-07-19): was Telegram-only, silently
+        // closing this prompt for every RealGram-only player instead of
+        // letting them apply. Same fix already applied throughout season2.
+        let myId = (tgU && tgU.id) ? String(tgU.id) : '';
+        if (!myId && window.RealSync) {
+          try { await window.RealSync.ready(); } catch (_) {}
+          if (window.RealSync.currentTelegramId) myId = window.RealSync.currentTelegramId() || '';
+        }
+        if (!myId) { close(); return; }
         const r = await fetch('/api/season2/clan/apply', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ telegram_id: String(tgU.id), clan_id: clanId }),
+          body: JSON.stringify({ telegram_id: myId, clan_id: clanId }),
           keepalive: true,
         }).then(res => res.ok ? res.json() : null).catch(() => null);
         toast(r && r.status === 1

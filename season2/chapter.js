@@ -85,11 +85,23 @@
     catch { /* nop */ }
   };
 
-  const tgId = () => {
+  const tgId = async () => {
     try {
       const u = tg && tg.initDataUnsafe && tg.initDataUnsafe.user;
-      return (u && u.id) ? String(u.id) : null;
-    } catch { return null; }
+      if (u && u.id) return String(u.id);
+    } catch (_) {}
+    // Bridge fallback for REAL-ID-only accounts (Khabat, 2026-07-19) —
+    // quiz grading/chapter progress was silently refusing to advance for
+    // any non-Telegram player. Same fix already applied across
+    // profile.js/guild.js/inventory.js/social.js/tap.js/earn.js/heroes.js.
+    if (window.RealSync && window.RealSync.ready) {
+      try { await window.RealSync.ready(); } catch (_) {}
+    }
+    if (window.RealSync && window.RealSync.currentTelegramId) {
+      const bridged = window.RealSync.currentTelegramId();
+      if (bridged) return bridged;
+    }
+    return null;
   };
 
   /* Grade one answer server-side (lib/quizCatalog.js on the backend is the
@@ -97,7 +109,7 @@
      null on network failure so the caller can refuse to advance rather than
      fall back to trusting the client's own correctness check. */
   const submitQuizAnswer = async (questionId, pickedIndex) => {
-    const id = tgId();
+    const id = await tgId();
     if (!id) return null;
     try {
       const r = await fetch("/season2/user/quiz/answer", {
@@ -112,7 +124,7 @@
   };
 
   const resetQuizTier = async (tier) => {
-    const id = tgId();
+    const id = await tgId();
     if (!id) return false;
     try {
       const r = await fetch("/season2/user/quiz/reset-tier", {
@@ -683,11 +695,16 @@
           const u = window.Telegram && window.Telegram.WebApp
             && window.Telegram.WebApp.initDataUnsafe
             && window.Telegram.WebApp.initDataUnsafe.user;
-          if (u && u.id) {
+          // Bridge fallback (Khabat, 2026-07-19): was Telegram-only, so a
+          // RealGram-only player's hero-card reward stayed client-side
+          // forever, never reaching the server.
+          const grantId = (u && u.id) ? String(u.id)
+            : ((window.RealSync && window.RealSync.currentTelegramId && window.RealSync.currentTelegramId()) || '');
+          if (grantId) {
             fetch("/api/season2/user/grant-hero", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ telegram_id: String(u.id), hero_id: cardReward.id, zar_per_hour: cardReward.zar, source: "chapter_reward" }),
+              body: JSON.stringify({ telegram_id: grantId, hero_id: cardReward.id, zar_per_hour: cardReward.zar, source: "chapter_reward" }),
               keepalive: true,
             });
           }

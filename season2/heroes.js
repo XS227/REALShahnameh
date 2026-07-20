@@ -117,6 +117,24 @@
     } catch { return null; }
   };
 
+  // Live Telegram context first, otherwise the server-verified bridge
+  // RealSync exposes for REAL-ID-only accounts. Fixes "Telegram session
+  // required" blocking hero purchases/upgrades for every RealGram-only
+  // user (Khabat, 2026-07-19 — same fix already applied across
+  // profile.js/guild.js/inventory.js/social.js/tap.js/earn.js).
+  const resolveMyId = async () => {
+    const id = tgUserId();
+    if (id) return id;
+    if (window.RealSync && window.RealSync.ready) {
+      try { await window.RealSync.ready(); } catch (_) {}
+    }
+    if (window.RealSync && window.RealSync.currentTelegramId) {
+      const bridged = window.RealSync.currentTelegramId();
+      if (bridged) return bridged;
+    }
+    return '';
+  };
+
   const apiPost = (url, body) =>
     fetch(url, {
       method: "POST",
@@ -3267,9 +3285,9 @@
     const action    = btn.getAttribute("data-action");
     const heroId    = item.id;
     const cost      = parseInt(btn.getAttribute("data-cost"), 10) || 0;
-    const tid       = tgUserId();
+    const tid       = await resolveMyId();
 
-    if (!tid) { showToast("Telegram session required"); return; }
+    if (!tid) { showToast("Could not identify your account. Try reopening the app."); return; }
 
     /* Always take the max of in-memory and localStorage — guards against
        stale bfcache state after a ZAR→REAL swap done on another page. */

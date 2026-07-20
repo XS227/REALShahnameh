@@ -11,6 +11,26 @@
     window.Telegram.WebApp.initDataUnsafe &&
     window.Telegram.WebApp.initDataUnsafe.user;
 
+  // Resolved "who is asking" — live Telegram context first, otherwise the
+  // server-verified bridge RealSync exposes for REAL-ID-only accounts. Same
+  // fix already applied across profile.js/guild.js/inventory.js/social.js/
+  // tap.js/earn.js (Khabat, 2026-07-19) — wallet.js was missed in that pass,
+  // so a RealGram-only user (no Telegram at all) could never link, verify,
+  // or restore a TON wallet: every call site here gated on tgUser() with no
+  // fallback (2026-07-20).
+  const resolveMyId = async () => {
+    const tg = tgUser();
+    if (tg && tg.id) return String(tg.id);
+    if (window.RealSync && window.RealSync.ready) {
+      try { await window.RealSync.ready(); } catch (_) {}
+    }
+    if (window.RealSync && window.RealSync.currentTelegramId) {
+      const bridged = window.RealSync.currentTelegramId();
+      if (bridged) return bridged;
+    }
+    return '';
+  };
+
   /* ── TON Connect singleton ── */
   const getTonConnect = () => {
     if (_tc) return _tc;
@@ -45,8 +65,8 @@
     const tierEl   = block.querySelector('[data-wallet-tier]');
     if (statusEl) statusEl.textContent = T('legacy_verifying');
 
-    const u = tgUser();
-    const chatId = u ? String(u.id) : null;
+    const myId = await resolveMyId();
+    const chatId = myId || null;
     const initData = (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) || '';
 
     try {
@@ -121,14 +141,14 @@
         } catch (_) {}
         try { localStorage.removeItem('real_ton_wallet'); } catch {}
 
-        const u = tgUser();
-        if (u) {
+        const myId = await resolveMyId();
+        if (myId) {
           try {
             const initData = (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) || '';
             await fetch('/api/basic/wallet-unlink', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ chatId: String(u.id), ...(initData ? { initData } : {}) })
+              body: JSON.stringify({ chatId: myId, ...(initData ? { initData } : {}) })
             });
           } catch (_) {}
         }
@@ -270,11 +290,11 @@
 
     /* Prefer the server record (covers Season 1 veterans whose wallet was
        linked before this device's localStorage existed). */
-    const u = tgUser();
-    if (!existingAddr && u) {
+    const myId = await resolveMyId();
+    if (!existingAddr && myId) {
       try {
         const initData = (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) || '';
-        const profileUrl = `/api/basic/legacy-profile?chatId=${encodeURIComponent(String(u.id))}`
+        const profileUrl = `/api/basic/legacy-profile?chatId=${encodeURIComponent(myId)}`
           + (initData ? `&initData=${encodeURIComponent(initData)}` : '');
         const resp = await fetch(profileUrl);
         const j = await resp.json();

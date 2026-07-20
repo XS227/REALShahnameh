@@ -35,7 +35,15 @@
   };
 
   const tgId = () => {
-    try { return String(window.Telegram?.WebApp?.initDataUnsafe?.user?.id || ""); } catch { return ""; }
+    try {
+      const raw = String(window.Telegram?.WebApp?.initDataUnsafe?.user?.id || "");
+      if (raw) return raw;
+      // Bridge fallback for REAL-ID-only accounts (Khabat, 2026-07-19) —
+      // by the time a player is interacting with offerings, RealSync's
+      // own /user/sync has almost always already resolved, so this
+      // synchronous read is safe without awaiting ready() here too.
+      return (window.RealSync && window.RealSync.currentTelegramId && window.RealSync.currentTelegramId()) || "";
+    } catch { return ""; }
   };
 
   /* ── Offering state ───────────────────────────────────────────────────── */
