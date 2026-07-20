@@ -5,7 +5,12 @@
 /* ── Layout ──────────────────────────────────────────────────────────────── */
 
 .guild-app {
-  padding: 0 0 80px;
+  /* Was a flat 80px — didn't account for the OS safe area or RealGram's
+     native bottom nav (--realgram-bottom-nav-height, injected by
+     ShahnamehEmbed.tsx; 0px no-op outside the app), so RealGram's nav
+     covered the bottom of this page same as chapter.html (Khabat,
+     2026-07-20). Same pattern as style.css's .app / .hmenu-body. */
+  padding: 0 0 calc(80px + env(safe-area-inset-bottom, 0px) + var(--realgram-bottom-nav-height, 0px));
   min-height: 100vh;
 }
 

@@ -104,7 +104,12 @@
 .chapter-body { background: #04050b; color: #e9e3d0; }
 
 .chapter-app {
-  padding: 0 0 calc(110px + env(safe-area-inset-bottom, 0px));
+  /* --realgram-bottom-nav-height: injected by ShahnamehEmbed.tsx (RealGram's
+     native tab bar, no OS-level safe-area for it) — 0px no-op outside the
+     app. chapter.html never picked up style.css's .app fix for this
+     because it uses its own top-level container; same fix, applied here
+     (Khabat, 2026-07-20). */
+  padding: 0 0 calc(110px + env(safe-area-inset-bottom, 0px) + var(--realgram-bottom-nav-height, 0px));
   min-height: 100vh;
   background:
     radial-gradient(120% 60% at 50% -10%, rgba(244, 197, 107, .08), transparent 65%),
