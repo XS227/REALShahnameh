@@ -56,6 +56,16 @@
     } catch (_) { return null; }
   };
 
+  /* Raw signed initData (NOT initDataUnsafe) — the server verifies this
+     cryptographically before crediting, so a client can't name someone
+     else's telegram_id and steal their reward. See season2.js
+     /ads/verify-reward and lib/telegramAuth.js. */
+  const tgInitData = () => {
+    try {
+      return (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) || '';
+    } catch (_) { return ''; }
+  };
+
   /* Diagnostic-only beacon (2026-07-19): showAd() can fail at several
      points (SDK not loaded, no fill, ad skipped, cooldown) with nothing
      reaching the server — from admin's side that looks identical to "no
@@ -139,17 +149,47 @@
       s.lastTs = Date.now();
       saveState(s);
 
-      /* Call backend to log claim and get authoritative gem-on-fifth */
+      /* Call backend to log claim and get authoritative gem-on-fifth.
+         Exactly one of init_data/sso_token, matching /ads/verify-reward's
+         contract — initData for a real Telegram Mini App context, else the
+         sso_token sync.js cached from its own server-verified login (2026-
+         07-21: this used to fall through to a purely local, unverified
+         reward for every non-Telegram — i.e. every RealGram — user, never
+         reaching the server at all; see B->A(63) in TASK_SPLIT.md). */
       let gems = 0;
-      const uid = tgUserId();
-      if (uid) {
+      const initData = tgInitData();
+      let ssoToken = !initData && window.RealSync && window.RealSync.currentSsoToken
+        ? window.RealSync.currentSsoToken() : '';
+
+      if (initData || ssoToken) {
+        const body = initData
+          ? { init_data: initData, tier: 'watch' }
+          : { sso_token: ssoToken, tier: 'watch' };
         try {
-          const resp = await fetch('/api/season2/ads/verify-reward', {
+          let resp = await fetch('/api/season2/ads/verify-reward', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ telegram_id: uid, tier: 'watch' }),
+            body: JSON.stringify(body),
             keepalive: true,
           });
+
+          /* sso_token is short-lived (15 min, ad cooldown is 30) — a 401
+             here most likely means it outlived its TTL, not a real auth
+             failure, so re-mint once via the same device_id fallback
+             sync.js's own init() uses and retry before giving up. */
+          if (resp.status === 401 && ssoToken && window.RealSync.refreshSsoToken) {
+            logEvent('ad_credit_sso_expired', 'retrying_with_fresh_token');
+            const fresh = await window.RealSync.refreshSsoToken();
+            if (fresh) {
+              resp = await fetch('/api/season2/ads/verify-reward', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sso_token: fresh, tier: 'watch' }),
+                keepalive: true,
+              });
+            }
+          }
+
           if (resp.ok) {
             const data = await resp.json();
             if (data.status === 1) {
@@ -172,8 +212,10 @@
           logEvent('ad_credit_fetch_failed', String(e).slice(0, 120));
         }
       } else {
-        logEvent('ad_credit_skipped', 'no_telegram_uid');
-        /* Offline: compute gem from local count */
+        logEvent('ad_credit_skipped', 'no_init_data_or_sso_token');
+        /* No verifiable identity available at all (very old app build that
+           never passed sso/device_id, or a bare browser tab with neither) —
+           last-resort local-only reward, same as before this fix. */
         if (s.used === AD_DAILY_LIMIT) gems = AD_GEM_FIFTH;
       }
 

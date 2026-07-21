@@ -110,6 +110,29 @@
     return _ssoTelegramId || '';
   };
 
+  /* Raw sso_token from the successful init() call, kept around (2026-07-21)
+     so other same-page modules with no Telegram WebApp context — currently
+     adsgram.js — can authenticate their own economy-value server calls
+     instead of trusting an unverified client-local value. Deliberately
+     reusing the same token rather than minting one per caller: it's a
+     15-min-TTL signed JWT (lib/ssoJwt.js, "re-minted per app-open"), and
+     /ads/verify-reward already verifies it fresh against the JWKS on every
+     call — this is the identical trust posture the Telegram path already
+     has by reusing initData for the same page session, not a weaker one. */
+  let _ssoToken = '';
+  const currentSsoToken = () => _ssoToken || '';
+
+  /* Re-mint via the same device_id fallback init() itself uses, for a
+     caller whose cached token has outlived its 15-min TTL (ad cooldown is
+     30 min, so this matters from a session's very first ad onward). */
+  const refreshSsoToken = async () => {
+    const deviceId = deviceIdFromUrl();
+    if (!deviceId) return '';
+    const fresh = await mintSsoFromDeviceId(deviceId);
+    if (fresh) _ssoToken = fresh;
+    return fresh;
+  };
+
   /* ── Offline bonus banner ──────────────────────────────────────────── */
   const _showOfflineBonus = (zarEarned) => {
     if (document.getElementById('real-offline-bonus')) return;
@@ -236,6 +259,7 @@
 
     const su = data.user;
     if (ssoToken && su.telegram_id) _ssoTelegramId = String(su.telegram_id);
+    if (ssoToken) _ssoToken = ssoToken;
 
     /* Everything below this point is best-effort local-state hydration —
        none of it should ever be able to stop _resolveReady(su) from firing.
@@ -567,6 +591,12 @@
     // a REAL-ID-only account by /user/sync. Await ready() first — this is
     // only populated once that call has actually completed.
     currentTelegramId,
+    // Exposed 2026-07-21 (B->A(63) fix: adsgram.js's non-Telegram fallback
+    // was crediting a purely local, unverified reward that never reached
+    // the server) so any same-page module can send an already-verified,
+    // still-live sso_token instead of an unverified client value.
+    currentSsoToken,
+    refreshSsoToken,
   };
 
   /* Auto-start: call init() once DOM has loaded and app.js has run */
