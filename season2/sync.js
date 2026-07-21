@@ -142,15 +142,66 @@
     } catch (_) { return ''; }
   };
 
+  /* device_id from the URL (always present when opened from the RealGram
+     app — ShahnamehEmbed.tsx always sets it, whether or not it managed to
+     get an sso token too). Root cause of Khabat's 2026-07-21
+     "profile_could_not_identify" report: when the app's own sso-token fetch
+     fails/times out, ShahnamehEmbed still opens the page — with real_id and
+     device_id in the URL, but NO sso param — because it deliberately never
+     blocks the page on that fetch. sync.js had no fallback for that case at
+     all: no Telegram user, no sso -> straight to no-identity-abort below,
+     forever, even though a perfectly good device_id was sitting right in
+     the URL the whole time. */
+  const deviceIdFromUrl = () => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('device_id') || '';
+    } catch (_) { return ''; }
+  };
+
+  /* Mint our own sso token straight from the panel, keyed on device_id —
+     the same trusted lookup key and the same endpoint the RN app itself
+     uses (services/ssoService.ts). The panel's api.php sends
+     Access-Control-Allow-Origin: * (checked 2026-07-21), so this fetch
+     works fine from season2's own origin. This is a second, independent
+     attempt at the same mint the app already tried — not a lower-trust
+     path — the backend still verifies the resulting JWT exactly like any
+     other sso_token in /user/sync above. */
+  const mintSsoFromDeviceId = async (deviceId) => {
+    try {
+      const qs = new URLSearchParams({
+        mobile: '1', action: 'sso-token', _token: 'setalink-mobile-diag-v1',
+        device_id: deviceId, game: '1',
+      });
+      const resp = await fetch('https://setalink.no/api.php?' + qs.toString(), { cache: 'no-store' });
+      if (!resp.ok) return '';
+      const data = await resp.json();
+      return (data && data.status === 'ok' && data.token) ? data.token : '';
+    } catch (err) {
+      REALDBG.error(err, { via: 'mintSsoFromDeviceId' });
+      return '';
+    }
+  };
+
   /* ── init: call once on every page load ──────────────────────────── */
   const init = async () => {
     REALDBG.step('sync.js:init:start');
     const u = tgUser();
-    const ssoToken = !u || !u.id ? ssoTokenFromUrl() : '';
+    let ssoToken = !u || !u.id ? ssoTokenFromUrl() : '';
     REALDBG.step('sync.js:init:identity-resolved', {
       hasTelegramUser: !!(u && u.id),
       sso: ssoToken ? ('present (' + ssoToken.length + ' chars)') : 'missing',
     });
+
+    if ((!u || !u.id) && !ssoToken) {
+      const deviceId = deviceIdFromUrl();
+      if (deviceId) {
+        REALDBG.step('sync.js:init:no-sso-trying-device-id-fallback', { deviceId });
+        ssoToken = await mintSsoFromDeviceId(deviceId);
+        REALDBG.step('sync.js:init:device-id-fallback-result', { minted: !!ssoToken });
+      }
+    }
+
     if ((!u || !u.id) && !ssoToken) {
       REALDBG.step('sync.js:init:no-identity-abort');
       _resolveReady(null);
