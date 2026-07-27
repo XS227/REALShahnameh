@@ -15,6 +15,23 @@
 
   const todayStr = () => new Date().toISOString().slice(0, 10);
 
+  /* AdsGram's controller.show() rejects with a plain object, not an Error —
+     String(err) on that always yields the useless literal "[object Object]"
+     (2026-07-27 finding: every logged ad_reject:show_promise_rejected entry
+     in ad-client-events.log has this exact non-value, hiding whatever
+     AdsGram actually said went wrong). JSON.stringify surfaces the real
+     shape instead. */
+  function describeError(err) {
+    if (err instanceof Error) return (err.message || String(err)).slice(0, 120);
+    if (err && typeof err === 'object') {
+      try {
+        const json = JSON.stringify(err);
+        if (json && json !== '{}') return json.slice(0, 120);
+      } catch (_) { /* circular or non-serializable — fall through */ }
+    }
+    return String(err).slice(0, 120);
+  }
+
   /* State persisted in localStorage: { date, used, lastTs } */
   const readState = () => {
     try {
@@ -131,7 +148,7 @@
       logEvent('ad_attempt', 'blockId:' + blockId);
       controller = window.Adsgram.init({ blockId });
     } catch (e) {
-      logEvent('ad_reject', 'init_error:' + String(e).slice(0, 120));
+      logEvent('ad_reject', 'init_error:' + describeError(e));
       reject({ type: 'error', error: String(e) });
       return;
     }
@@ -230,7 +247,7 @@
       logEvent('ad_success', 'gems:' + gems);
       resolve({ rewards });
     }).catch((err) => {
-      logEvent('ad_reject', 'show_promise_rejected:' + String(err).slice(0, 120));
+      logEvent('ad_reject', 'show_promise_rejected:' + describeError(err));
       reject({ type: 'ad_error', error: err });
     });
   });
