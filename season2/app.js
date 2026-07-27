@@ -1513,86 +1513,22 @@
       .catch(() => { /* offline — keep static markup */ });
   })();
 
-  /* ===========================================================
-     EARN: rewarded ad placeholder.
-     Buttons opt-in via [data-ad="energy|gems|real"]. The flow shows
-     a fullscreen "Ad loading…" stage, then on completion calls the
-     server /api/ads/claim endpoint which enforces the daily limit
-     and writes to ad-rewards.json. No real ad SDK is wired — the
-     stub provider is intentional and visible in the audit log.
-     =========================================================== */
-  (() => {
-    const buttons = $$("[data-ad]");
-    if (buttons.length === 0) return;
-    const overlay = $("[data-ad-overlay]");
-    const stage   = $("[data-ad-stage]");
-    const label   = $("[data-ad-label]");
-    const close   = $("[data-ad-close]");
-    const remEl   = $("[data-ad-remaining]");
-    if (!overlay || !stage) return;
-
-    const tgUserId = (window.Telegram && window.Telegram.WebApp
-      && window.Telegram.WebApp.initDataUnsafe
-      && window.Telegram.WebApp.initDataUnsafe.user
-      && window.Telegram.WebApp.initDataUnsafe.user.id) || null;
-    const localId = (() => {
-      let s = localStorage.getItem("real_local_id");
-      if (!s) { s = "u_" + Math.random().toString(36).slice(2, 10); try { localStorage.setItem("real_local_id", s); } catch {} }
-      return s;
-    })();
-
-    const refreshStatus = async () => {
-      try {
-        const url = "/api/ads/status" + (tgUserId ? "?telegram_id=" + tgUserId : "");
-        const r = await fetch(url);
-        const j = await r.json();
-        if (remEl && j && j.status) {
-          remEl.textContent = `${j.remaining} / ${j.dailyLimit} today`;
-          buttons.forEach(b => { b.disabled = j.remaining <= 0; });
-        }
-      } catch {}
-    };
-    refreshStatus();
-
-    const closeOverlay = () => { overlay.classList.remove("open"); overlay.setAttribute("aria-hidden", "true"); stage.classList.remove("success"); };
-    if (close) close.addEventListener("click", closeOverlay);
-    overlay.addEventListener("click", (e) => { if (e.target === overlay) closeOverlay(); });
-
-    const grant = async (type) => {
-      // Show "Ad loading…" stub for ~1.5s, then claim.
-      stage.classList.remove("success");
-      label.textContent = "Ad loading…";
-      overlay.classList.add("open"); overlay.setAttribute("aria-hidden", "false");
-      await new Promise(r => setTimeout(r, 1500));
-      try {
-        const body = { reward_type: type, user_id: localId };
-        if (tgUserId) body.telegram_id = String(tgUserId);
-        const r = await fetch("/api/ads/claim", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body)
-        });
-        const j = await r.json();
-        if (!r.ok || !j.status) {
-          label.textContent = (j && j.error) || "Reward unavailable";
-          toast(label.textContent);
-          return;
-        }
-        stage.classList.add("success");
-        const amt = j.claim && j.claim.reward_amount;
-        const labelMap = { energy: amt + " ⚡ added", gems: amt + " 💎 added", real: "+" + amt + " " + RT + " REAL" };
-        label.innerHTML = labelMap[type] || "Reward granted";
-        toast(label.textContent);
-        refreshStatus();
-        setTimeout(closeOverlay, 1400);
-      } catch (e) {
-        label.textContent = "Network error";
-        toast("Could not reach reward server");
-      }
-    };
-
-    buttons.forEach(b => b.addEventListener("click", () => grant(b.dataset.ad)));
-  })();
+  /* Removed 2026-07-27 (B->A(102)/(109) follow-up): this was the old
+     "EARN: rewarded ad placeholder" stub ([data-ad="energy|gems|real"]
+     buttons -> /api/ads/claim -> ad-rewards.json, never a real ad SDK,
+     by its own comment). Confirmed dead before removing, not just
+     unclear: grepped every .html in this directory for `data-ad="` (the
+     literal selector this block required) and found zero matches — the
+     real watch-ad flow everywhere in the current UI (main game, Tap
+     page, Earn page) goes through adsgram.js's window.RealAdService
+     instead. The overlay markup (data-ad-overlay/-stage/-label/-close)
+     is still present in tap.html/earn.html but is orphaned CSS/DOM
+     structure at this point, not wired to anything live; left it alone
+     since removing markup is a different, lower-value cleanup than
+     removing this dead 80-line handler. Server-side /api/ads/claim
+     (routes/adminApi/ads.js, shahnameh-backend) is now fully
+     unreachable from the UI too — not touched here, flagged separately.
+  */
 
   /* ===========================================================
      LEARN: hydrate chapters from server catalog + show Season 2
